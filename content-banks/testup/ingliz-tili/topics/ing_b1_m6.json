@@ -1,0 +1,1306 @@
+{
+  "nom": "Past Perfect (had + V3)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "When I got to the platform, the train ___ already ___. (leave)",
+      "v": [
+        "had / left",
+        "has / left",
+        "had / leave",
+        "was / left"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ish: kelishim (Past Simple) va undan OLDINGI ketish → had left.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#bd231dad"
+    },
+    {
+      "q": "She ___ the film before, so she knew the ending.",
+      "v": [
+        "has seen",
+        "had seen",
+        "had saw",
+        "saw already"
+      ],
+      "t": 1,
+      "izoh": "Bilishdan OLDINGI ish → had seen (see → saw → seen).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#8d6006d7"
+    },
+    {
+      "q": "By the time we arrived at the airport, the plane ___.",
+      "v": [
+        "has taken off",
+        "took off already",
+        "had taken off",
+        "had took off"
+      ],
+      "t": 2,
+      "izoh": "«By the time» + kelish → undan oldingi ish: had taken off.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7cfdfed5"
+    },
+    {
+      "q": "I ___ my passport, so they didn't let me in.",
+      "v": [
+        "have forgotten",
+        "forgot had",
+        "had forgot",
+        "had forgotten"
+      ],
+      "t": 3,
+      "izoh": "Kiritmaslikdan oldingi ish: had forgotten (forget → forgot → forgotten).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c310bcef"
+    },
+    {
+      "q": "We ___ in Samarkand in 2019. (bitta voqea, boshqa nuqta yo'q)",
+      "v": [
+        "were",
+        "had been",
+        "had were",
+        "have been"
+      ],
+      "t": 0,
+      "izoh": "Faqat bitta o'tmish nuqtasi — Past Simple: were. «had been» faqat BOSHQA o'tmish ishidan oldin (#95).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#d7fa4cac"
+    },
+    {
+      "q": "When she called, I ___ the email yet.",
+      "v": [
+        "haven't sent",
+        "hadn't sent",
+        "didn't send yet",
+        "hadn't send"
+      ],
+      "t": 1,
+      "izoh": "Inkor: hadn't + V3. Qo'ng'iroq (o'tmish nuqtasi) dan oldin yuborilmagan.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#efa0a297"
+    },
+    {
+      "q": "___ you ___ to the sea before that summer?",
+      "v": [
+        "Did / been",
+        "Have / been",
+        "Had / been",
+        "Had / be"
+      ],
+      "t": 2,
+      "izoh": "«before that summer» — o'tmish nuqtasi; undan oldingi tajriba: Had you been…?",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c058c878"
+    },
+    {
+      "q": "After we ___ our luggage, we went to the hotel.",
+      "v": [
+        "have collected",
+        "collect",
+        "had collect",
+        "had collected"
+      ],
+      "t": 3,
+      "izoh": "After + oldingi ish: had collected, keyin Past Simple.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#300ace03"
+    },
+    {
+      "q": "Choose the correct sentence about dinner.",
+      "v": [
+        "By the time she called, we had already eaten.",
+        "By the time she called, we have already eaten.",
+        "By the time she called, we had already eat.",
+        "By the time she had called, we already ate."
+      ],
+      "t": 0,
+      "izoh": "Qo'ng'iroq — Past Simple (nuqta), undan oldingi ovqat — had eaten.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#684cf6cc"
+    },
+    {
+      "q": "Which word is in the wrong form? 'They had took the wrong bus before we found them.'",
+      "v": [
+        "had",
+        "took",
+        "before",
+        "found"
+      ],
+      "t": 1,
+      "izoh": "had + V3: taken, «took» emas (#91).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7a5d3327"
+    },
+    {
+      "q": "He was tired because he ___ all night.",
+      "v": [
+        "has worked",
+        "works",
+        "hadn't worked",
+        "had worked"
+      ],
+      "t": 3,
+      "izoh": "Charchash (o'tmish) dan oldingi sabab: had worked.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#8a01cad2"
+    },
+    {
+      "q": "I ___ such a big crowd before that day.",
+      "v": [
+        "never saw",
+        "have never seen",
+        "had never seen",
+        "had never saw"
+      ],
+      "t": 2,
+      "izoh": "«before that day» — o'tmish nuqtasidan oldingi tajriba: had never seen.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7e14e5b1"
+    },
+    {
+      "q": "By the time he called, she ___ already cooked dinner.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#4fd30355"
+    },
+    {
+      "q": "By the time the class ended, he ___ already read the whole book.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f12c0c5e"
+    },
+    {
+      "q": "Before the bell rang, the rain ___ already stopped by then.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#5ab9b14e"
+    },
+    {
+      "q": "After the storm passed, the game ___ already ended.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#e6675690"
+    },
+    {
+      "q": "Before I could speak, she ___ already taken the medicine.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#b97c829d"
+    },
+    {
+      "q": "When I got home, they ___ already done all the work.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#de7e8164"
+    },
+    {
+      "q": "When she woke up, the train ___ just left the station.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#fb6a7e79"
+    },
+    {
+      "q": "When we reached the station, the film ___ just started.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#a39a851a"
+    },
+    {
+      "q": "By the time we arrived, she ___ just finished her homework.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#5a6dbbbb"
+    },
+    {
+      "q": "By the time the guests came, he ___ just eaten his breakfast.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#1530f01d"
+    },
+    {
+      "q": "By the time he called, the shop ___ just closed for the night.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#b20346c2"
+    },
+    {
+      "q": "By the time the class ended, they ___ just gone home.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#12817db6"
+    },
+    {
+      "q": "Before the bell rang, the guests ___ just arrived at the party.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#05a0da23"
+    },
+    {
+      "q": "After the storm passed, she ___ just written the letter.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#634f6948"
+    },
+    {
+      "q": "Before I could speak, he ___ just lost his keys.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c6ff00f3"
+    },
+    {
+      "q": "When I got home, we ___ just built the house.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#466f8630"
+    },
+    {
+      "q": "When she woke up, the plane ___ just landed safely.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#ad768833"
+    },
+    {
+      "q": "When we reached the station, the meeting ___ just begun without me.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f7b87fb1"
+    },
+    {
+      "q": "By the time we arrived, she ___ just cooked dinner.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#aa26890c"
+    },
+    {
+      "q": "By the time the guests came, he ___ just read the whole book.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#fbd4f762"
+    },
+    {
+      "q": "By the time he called, the rain ___ just stopped by then.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#66c41667"
+    },
+    {
+      "q": "By the time the class ended, the game ___ just ended.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f160afbe"
+    },
+    {
+      "q": "Before the bell rang, she ___ just taken the medicine.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl (past participle). Oldinroq bo'lgan ish uchun.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#aee1f69c"
+    },
+    {
+      "q": "After she ___ eaten her lunch, she washed the plates.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#6a2feb4c"
+    },
+    {
+      "q": "After he ___ finished his work, he watched TV.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#fc240370"
+    },
+    {
+      "q": "After they ___ closed the shop, the lights went off.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c71b4ddd"
+    },
+    {
+      "q": "After I ___ written the letter, I posted it.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#b169ccd1"
+    },
+    {
+      "q": "After she ___ cooked the dinner, the guests arrived.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#a8c9f448"
+    },
+    {
+      "q": "After he ___ lost his money, he felt worried.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#cc4315a4"
+    },
+    {
+      "q": "After we ___ built the wall, we painted it.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7c1a5ad0"
+    },
+    {
+      "q": "After the team ___ won the match, they celebrated.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#1a79b012"
+    },
+    {
+      "q": "After she ___ read the book, she returned it.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#807e97bc"
+    },
+    {
+      "q": "After they ___ seen the film, they discussed it.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7d586853"
+    },
+    {
+      "q": "After I ___ done my homework, I went out.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#10a8530a"
+    },
+    {
+      "q": "After he ___ sent the email, he called me.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#def173f6"
+    },
+    {
+      "q": "After the rain ___ stopped, we went outside.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#401bd34d"
+    },
+    {
+      "q": "After she ___ learnt the words, she took the test.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7c9ade3c"
+    },
+    {
+      "q": "After we ___ paid the bill, we left the cafe.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#031e536d"
+    },
+    {
+      "q": "After he ___ broken the window, he ran away.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#e892cba8"
+    },
+    {
+      "q": "After the guests ___ left, she cleaned the room.",
+      "v": [
+        "has",
+        "have",
+        "was",
+        "had"
+      ],
+      "t": 3,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#396f09b7"
+    },
+    {
+      "q": "After the plane ___ landed, we got our bags.",
+      "v": [
+        "had",
+        "has",
+        "have",
+        "was"
+      ],
+      "t": 0,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#481c0971"
+    },
+    {
+      "q": "After she ___ spoken, she sat down.",
+      "v": [
+        "has",
+        "had",
+        "have",
+        "was"
+      ],
+      "t": 1,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#41b6c13b"
+    },
+    {
+      "q": "After he ___ gone out, we locked the door.",
+      "v": [
+        "has",
+        "have",
+        "had",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "Ikki o'tmish ishidan oldinrog'i 'had + III shakl' bilan beriladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#017d49ca"
+    },
+    {
+      "q": "Which sentence is correct? [1]",
+      "v": [
+        "When we arrived, the film has already started.",
+        "When we arrived, the film had already start.",
+        "When we arrived, the film have already started.",
+        "When we arrived, the film had already started."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#92677b12"
+    },
+    {
+      "q": "Which sentence is correct? [2]",
+      "v": [
+        "By the time he came, the train had already left.",
+        "By the time he came, the train has already left.",
+        "By the time he came, the train had already leave.",
+        "By the time he came, the train have already left."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7f0e9a25"
+    },
+    {
+      "q": "Which sentence is correct? [3]",
+      "v": [
+        "When she woke up, the sun has already risen.",
+        "When she woke up, the sun had already risen.",
+        "When she woke up, the sun had already rise.",
+        "When she woke up, the sun have already risen."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c487bbc6"
+    },
+    {
+      "q": "Which sentence is correct? [4]",
+      "v": [
+        "Before we called, they has already gone.",
+        "Before we called, they had already go.",
+        "Before we called, they had already gone.",
+        "Before we called, they have already gone."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#12f41e3c"
+    },
+    {
+      "q": "Which sentence is correct? [5]",
+      "v": [
+        "When I got there, the shop has already closed.",
+        "When I got there, the shop had already close.",
+        "When I got there, the shop have already closed.",
+        "When I got there, the shop had already closed."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#a851638c"
+    },
+    {
+      "q": "Which sentence is correct? [6]",
+      "v": [
+        "By the time it stopped, the road had already flooded.",
+        "By the time it stopped, the road has already flooded.",
+        "By the time it stopped, the road had already flood.",
+        "By the time it stopped, the road have already flooded."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#3960040f"
+    },
+    {
+      "q": "Which sentence is correct? [7]",
+      "v": [
+        "When the teacher entered, the pupils has already sat.",
+        "When the teacher entered, the pupils had already sat.",
+        "When the teacher entered, the pupils had already sit.",
+        "When the teacher entered, the pupils have already sat."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#2f68ff7d"
+    },
+    {
+      "q": "Which sentence is correct? [8]",
+      "v": [
+        "By the time we finished, everyone has already left.",
+        "By the time we finished, everyone had already leave.",
+        "By the time we finished, everyone had already left.",
+        "By the time we finished, everyone have already left."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#ce07d38a"
+    },
+    {
+      "q": "Which sentence is correct? [9]",
+      "v": [
+        "When he arrived, the meeting has already begun.",
+        "When he arrived, the meeting had already begin.",
+        "When he arrived, the meeting have already begun.",
+        "When he arrived, the meeting had already begun."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#e21e907a"
+    },
+    {
+      "q": "Which sentence is correct? [10]",
+      "v": [
+        "Before she spoke, he had already guessed.",
+        "Before she spoke, he has already guessed.",
+        "Before she spoke, he had already guess.",
+        "Before she spoke, he have already guessed."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#ad9ae723"
+    },
+    {
+      "q": "Which sentence is correct? [11]",
+      "v": [
+        "When we met, I has already forgotten.",
+        "When we met, I had already forgotten.",
+        "When we met, I had already forget.",
+        "When we met, I have already forgotten."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#0525d1ff"
+    },
+    {
+      "q": "Which sentence is correct? [12]",
+      "v": [
+        "By the time lunch came, she has already eaten.",
+        "By the time lunch came, she had already eat.",
+        "By the time lunch came, she had already eaten.",
+        "By the time lunch came, she have already eaten."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#22acc518"
+    },
+    {
+      "q": "Which sentence is correct? [13]",
+      "v": [
+        "When they returned, the guests has already gone.",
+        "When they returned, the guests had already go.",
+        "When they returned, the guests have already gone.",
+        "When they returned, the guests had already gone."
+      ],
+      "t": 3,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c32eb96c"
+    },
+    {
+      "q": "Which sentence is correct? [14]",
+      "v": [
+        "Before the exam, we had already studied.",
+        "Before the exam, we has already studied.",
+        "Before the exam, we had already study.",
+        "Before the exam, we have already studied."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c1cfbf36"
+    },
+    {
+      "q": "Which sentence is correct? [15]",
+      "v": [
+        "When I looked, the cat has already hidden.",
+        "When I looked, the cat had already hidden.",
+        "When I looked, the cat had already hide.",
+        "When I looked, the cat have already hidden."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri shakl: had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#153ba5e8"
+    },
+    {
+      "q": "Which word is WRONG? \"She had went home before we called.\"",
+      "v": [
+        "had",
+        "before",
+        "went",
+        "called"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#1cb793ae"
+    },
+    {
+      "q": "Which word is WRONG? \"They has left before the rain started.\"",
+      "v": [
+        "left",
+        "before",
+        "started",
+        "has"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#4f4d24e0"
+    },
+    {
+      "q": "Which word is WRONG? \"He had eat dinner when I arrived.\"",
+      "v": [
+        "eat",
+        "had",
+        "when",
+        "arrived"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#4c05097a"
+    },
+    {
+      "q": "Which word is WRONG? \"We had finish the work by six o'clock.\"",
+      "v": [
+        "had",
+        "finish",
+        "by",
+        "six"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f4bc1bc7"
+    },
+    {
+      "q": "Which word is WRONG? \"The train have left before we got there.\"",
+      "v": [
+        "left",
+        "before",
+        "have",
+        "got"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#e922704e"
+    },
+    {
+      "q": "Which word is WRONG? \"She had wrote the letter before lunch.\"",
+      "v": [
+        "had",
+        "before",
+        "lunch",
+        "wrote"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#25f24f7d"
+    },
+    {
+      "q": "Which word is WRONG? \"By the time he came, we had already ate.\"",
+      "v": [
+        "ate",
+        "had",
+        "already",
+        "time"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#0acf0cb1"
+    },
+    {
+      "q": "Which word is WRONG? \"I had saw the film before you told me.\"",
+      "v": [
+        "had",
+        "saw",
+        "before",
+        "told"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#b93f18d6"
+    },
+    {
+      "q": "Which word is WRONG? \"They had took the bus before it rained.\"",
+      "v": [
+        "had",
+        "before",
+        "took",
+        "rained"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7dcba10a"
+    },
+    {
+      "q": "Which word is WRONG? \"She has already gone when I phoned her.\"",
+      "v": [
+        "already",
+        "gone",
+        "when",
+        "has"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#6dfc73b6"
+    },
+    {
+      "q": "Which word is WRONG? \"We had began the meeting before he arrived.\"",
+      "v": [
+        "began",
+        "had",
+        "before",
+        "arrived"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#60737379"
+    },
+    {
+      "q": "Which word is WRONG? \"He had broke the window before we came.\"",
+      "v": [
+        "had",
+        "broke",
+        "before",
+        "came"
+      ],
+      "t": 1,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#63964e4b"
+    },
+    {
+      "q": "Which word is WRONG? \"The shop had close before we reached it.\"",
+      "v": [
+        "had",
+        "before",
+        "close",
+        "reached"
+      ],
+      "t": 2,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#ba40f1f4"
+    },
+    {
+      "q": "Which word is WRONG? \"I had did my homework before dinner.\"",
+      "v": [
+        "had",
+        "before",
+        "dinner",
+        "did"
+      ],
+      "t": 3,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#557ebae0"
+    },
+    {
+      "q": "Which word is WRONG? \"They had spoke to her before the class.\"",
+      "v": [
+        "spoke",
+        "had",
+        "before",
+        "class"
+      ],
+      "t": 0,
+      "izoh": "Past Perfect: had + III shakl; 'has/have' emas, 'had' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_b1_m6#612cb36c"
+    },
+    {
+      "q": "Put the words in the correct order: she / had / already / left / when I arrived",
+      "v": [
+        "She had already leave when I arrived.",
+        "She had already left when I arrived.",
+        "She has already left when I arrived.",
+        "She left had already when I arrived."
+      ],
+      "t": 1,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#2ad4625d"
+    },
+    {
+      "q": "Put the words in the correct order: the train / had / gone / before / we got there",
+      "v": [
+        "The train had go before we got there.",
+        "The train has gone before we got there.",
+        "The train had gone before we got there.",
+        "The train gone had before we got there."
+      ],
+      "t": 2,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c5a9a942"
+    },
+    {
+      "q": "Put the words in the correct order: he / had / finished / his work / by six",
+      "v": [
+        "He had finish his work by six.",
+        "He has finished his work by six.",
+        "He finished had his work by six.",
+        "He had finished his work by six."
+      ],
+      "t": 3,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#3953a1ad"
+    },
+    {
+      "q": "Put the words in the correct order: they / had / eaten / before / we came",
+      "v": [
+        "They had eaten before we came.",
+        "They had eat before we came.",
+        "They has eaten before we came.",
+        "They eaten had before we came."
+      ],
+      "t": 0,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#6a36b5ad"
+    },
+    {
+      "q": "Put the words in the correct order: I / had / never / seen / such a thing",
+      "v": [
+        "I had never saw such a thing.",
+        "I had never seen such a thing.",
+        "I have never seen such a thing.",
+        "I never seen had such a thing."
+      ],
+      "t": 1,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#ba0e22dd"
+    },
+    {
+      "q": "Put the words in the correct order: we / had / studied / before / the exam started",
+      "v": [
+        "We had study before the exam started.",
+        "We has studied before the exam started.",
+        "We had studied before the exam started.",
+        "We studied had before the exam started."
+      ],
+      "t": 2,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f986c5d1"
+    },
+    {
+      "q": "Put the words in the correct order: the film / had / begun / when / we sat down",
+      "v": [
+        "The film had begin when we sat down.",
+        "The film has begun when we sat down.",
+        "The film begun had when we sat down.",
+        "The film had begun when we sat down."
+      ],
+      "t": 3,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#07d231b0"
+    },
+    {
+      "q": "Put the words in the correct order: she / had / written / the letter / by noon",
+      "v": [
+        "She had written the letter by noon.",
+        "She had wrote the letter by noon.",
+        "She has written the letter by noon.",
+        "She written had the letter by noon."
+      ],
+      "t": 0,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#bdb77851"
+    },
+    {
+      "q": "Put the words in the correct order: he / had / lost / his keys / before lunch",
+      "v": [
+        "He had lose his keys before lunch.",
+        "He had lost his keys before lunch.",
+        "He has lost his keys before lunch.",
+        "He lost had his keys before lunch."
+      ],
+      "t": 1,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#1aba63e7"
+    },
+    {
+      "q": "Put the words in the correct order: they / had / built / the house / by 2020",
+      "v": [
+        "They had build the house by 2020.",
+        "They has built the house by 2020.",
+        "They had built the house by 2020.",
+        "They built had the house by 2020."
+      ],
+      "t": 2,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7f302675"
+    },
+    {
+      "q": "Put the words in the correct order: the guests / had / left / before / midnight",
+      "v": [
+        "The guests had leave before midnight.",
+        "The guests has left before midnight.",
+        "The guests left had before midnight.",
+        "The guests had left before midnight."
+      ],
+      "t": 3,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#7c3ee6d2"
+    },
+    {
+      "q": "Put the words in the correct order: I / had / done / my homework / before dinner",
+      "v": [
+        "I had done my homework before dinner.",
+        "I had did my homework before dinner.",
+        "I have done my homework before dinner.",
+        "I done had my homework before dinner."
+      ],
+      "t": 0,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#de3023bc"
+    },
+    {
+      "q": "Put the words in the correct order: we / had / met / before / that day",
+      "v": [
+        "We had meet before that day.",
+        "We had met before that day.",
+        "We has met before that day.",
+        "We met had before that day."
+      ],
+      "t": 1,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#973ddc22"
+    },
+    {
+      "q": "Put the words in the correct order: the shop / had / closed / when / we arrived",
+      "v": [
+        "The shop had close when we arrived.",
+        "The shop has closed when we arrived.",
+        "The shop had closed when we arrived.",
+        "The shop closed had when we arrived."
+      ],
+      "t": 2,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#f2506715"
+    },
+    {
+      "q": "Put the words in the correct order: she / had / forgotten / my name / by then",
+      "v": [
+        "She had forget my name by then.",
+        "She has forgotten my name by then.",
+        "She forgotten had my name by then.",
+        "She had forgotten my name by then."
+      ],
+      "t": 3,
+      "izoh": "So'z tartibi: Ega + had + III shakl (past participle).",
+      "qiy": "orta",
+      "id": "ing_b1_m6#c55f0845"
+    }
+  ]
+}

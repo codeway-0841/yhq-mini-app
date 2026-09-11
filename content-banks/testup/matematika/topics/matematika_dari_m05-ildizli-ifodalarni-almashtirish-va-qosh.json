@@ -1,0 +1,1609 @@
+{
+  "nom": "Ildizli ifodalarni almashtirish va qo'sh radikallar",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar test yechimini 12/√3 ko'rinishida yozib qo'ydi, lekin o'qituvchi maxrajda ildiz qolmasligini talab qildi. To'g'ri shakl qaysi?",
+      "v": [
+        "4√3/3",
+        "12√3",
+        "4√3",
+        "√3/4"
+      ],
+      "t": 2,
+      "izoh": "Kasrning surat va maxrajini √3 ga ko'paytiramiz: 12·√3/(√3·√3) = 12√3/3. Endi 12 ni 3 ga bo'lsak 4 chiqadi, ya'ni natija 4√3 bo'ladi. Javob: 4√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-bir-hadli-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#8a0bdbae"
+    },
+    {
+      "q": "Fizika masalasining javobi 20/√5 ko'rinishida chiqdi. Dilnoza uni maxrajida ildiz bo'lmagan shaklga keltirmoqchi. Natija nima bo'ladi?",
+      "v": [
+        "20√5",
+        "4√5/5",
+        "4√5",
+        "√5/4"
+      ],
+      "t": 2,
+      "izoh": "Surat va maxrajni √5 ga ko'paytiramiz: 20√5/(√5·√5) = 20√5/5. 20 ni 5 ga bo'lganda 4 qoladi, demak natija 4√5. Javob: 4√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-bir-hadli-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#410af5d1"
+    },
+    {
+      "q": "Nazorat ishida 15/√6 qiymati chiqqan bo'lsa, uni maxrajidagi irratsionallikdan qutqarib, qisqartirilgan ko'rinishda yozing.",
+      "v": [
+        "15√6",
+        "2√6/5",
+        "5√6/12",
+        "5√6/2"
+      ],
+      "t": 3,
+      "izoh": "Kasrni √6 ga kengaytiramiz: 15·√6/(√6·√6) = 15√6/6. 15 va 6 ning umumiy bo'luvchisi 3, shuning uchun kasr 5√6/2 ko'rinishga keladi. Javob: 5√6/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-bir-hadli-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ac4ab37a"
+    },
+    {
+      "q": "Bekzod uy vazifasida 7/√7 ifodaning eng sodda ko'rinishini topishi kerak. U qaysi javobni daftariga yozadi?",
+      "v": [
+        "7",
+        "√7",
+        "√7/7",
+        "49"
+      ],
+      "t": 1,
+      "izoh": "7/√7 kasrini √7 ga kengaytiramiz: 7√7/7 = √7. Buni boshqacha ham ko'rish mumkin: 7 = √7·√7 bo'lgani uchun kasr √7 ga qisqaradi. Javob: √7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-bir-hadli-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#6a46330f"
+    },
+    {
+      "q": "Laboratoriya hisobida 9/(2√3) qiymati chiqdi. Nodira uni maxrajida ildiz qolmagan shaklga keltirdi. U qanday ifoda oldi?",
+      "v": [
+        "3√3/2",
+        "9√3/2",
+        "3√3",
+        "2√3/3"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxrajni √3 ga ko'paytiramiz: 9√3/(2·3) = 9√3/6. 9 va 6 ni 3 ga qisqartirsak 3√3/2 hosil bo'ladi. Javob: 3√3/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-bir-hadli-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3e4631f6"
+    },
+    {
+      "q": "Sirtqi imtihon javobida 5/√20 ko'rinishidagi kasr uchradi. Uni avval soddalashtirib, keyin maxrajidagi ildizdan qutqaring.",
+      "v": [
+        "5√5",
+        "√5/4",
+        "√5/2",
+        "2/√5"
+      ],
+      "t": 2,
+      "izoh": "Avval maxrajni soddalashtiramiz: √20 = 2√5. Endi 5/(2√5) kasrini √5 ga kengaytiramiz va 5√5/10 = √5/2 hosil bo'ladi. Javob: √5/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-soddalashtirib-ratsionallashtirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b2bd62fa"
+    },
+    {
+      "q": "Sardorning chizmasida kesma uzunligi 6/√8 dm deb belgilangan. Bu qiymatning maxrajida ildiz qolmasligi uchun uni qanday yozish kerak?",
+      "v": [
+        "3√2/4",
+        "2√2/3",
+        "3√2",
+        "3√2/2"
+      ],
+      "t": 3,
+      "izoh": "√8 = 2√2 bo'lgani uchun kasr 6/(2√2) = 3/√2 ko'rinishga keladi. Uni √2 ga kengaytiramiz: 3√2/2. Javob: 3√2/2 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-soddalashtirib-ratsionallashtirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#98a1f98d"
+    },
+    {
+      "q": "Quyidagi kasrni soddalashtiring va maxrajni irratsionallikdan qutqaring: 21/√7 ifodasining natijasi qanday bo'ladi?",
+      "v": [
+        "21√7",
+        "7√3",
+        "3√7",
+        "3√7/7"
+      ],
+      "t": 2,
+      "izoh": "Kasrni √7 ga kengaytiramiz: 21√7/(√7·√7) = 21√7/7. 21 ni 7 ga bo'lsak 3 qoladi, demak natija 3√7. Javob: 3√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxrajni-soddalashtirib-ratsionallashtirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#1090c6cb"
+    },
+    {
+      "q": "Kamola 10/√50 kasrini imkon qadar sodda ko'rinishga keltirmoqchi. Maxrajida ildiz qolmagan javob qanday bo'ladi?",
+      "v": [
+        "2√2",
+        "√2/2",
+        "5√2",
+        "√2"
+      ],
+      "t": 3,
+      "izoh": "√50 = 5√2 bo'lgani uchun kasr 10/(5√2) = 2/√2 ko'rinishga keladi. 2 = √2·√2 bo'lgani uchun natija √2 ga teng. Javob: √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxrajni-soddalashtirib-ratsionallashtirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#89df3e68"
+    },
+    {
+      "q": "5/∛5 ifodaning maxrajini irratsionallikdan qutqaring va uning eng sodda shaklini toping.",
+      "v": [
+        "∛5",
+        "5∛5",
+        "∛25",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni ∛25 ga ko'paytiramiz, chunki ∛5·∛25 = ∛125 = 5 bo'ladi. Shunda kasr 5·∛25/5 ko'rinishga keladi va ∛25 qoladi. Javob: ∛25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "maxraj-kub-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#76ffa54f"
+    },
+    {
+      "q": "Muhandisning hisob varag'ida 2/∛4 nisbati uchradi. Uni maxrajida ildiz qolmaydigan ko'rinishga keltiring.",
+      "v": [
+        "2∛2",
+        "∛2",
+        "∛8",
+        "∛4/2"
+      ],
+      "t": 1,
+      "izoh": "∛4 ni ∛2 ga ko'paytirsak ∛8 = 2 hosil bo'ladi. Shuning uchun kasrni ∛2 ga kengaytiramiz: 2∛2/2 = ∛2. Javob: ∛2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-kub-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#c10c634c"
+    },
+    {
+      "q": "Quyidagi 9/∛3 ifodani maxrajida ildiz qolmaydigan shaklga keltiring va olingan natijani ko'rsating.",
+      "v": [
+        "9∛9",
+        "3∛3",
+        "∛9",
+        "3∛9"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ∛9 ga ko'paytiramiz, chunki ∛3·∛9 = ∛27 = 3. Kasr 9∛9/3 ko'rinishga keladi va qisqartirilgach 3∛9 qoladi. Javob: 3∛9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-kub-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#30ad1376"
+    },
+    {
+      "q": "Sherzod 1/∛2 sonni kalkulyatorsiz baholash uchun avval maxrajni ratsionallashtirdi. U qanday ifodaga keldi?",
+      "v": [
+        "∛2/2",
+        "∛4/2",
+        "∛2",
+        "2∛4"
+      ],
+      "t": 1,
+      "izoh": "Surat va maxrajni ∛4 ga ko'paytiramiz, chunki ∛2·∛4 = ∛8 = 2 bo'ladi. Natijada ∛4/2 hosil bo'ladi. Javob: ∛4/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "maxraj-kub-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#06d9c029"
+    },
+    {
+      "q": "6/(3 + √3) kasrining maxrajini qo'shma ifodaga ko'paytirib, uni irratsionallikdan qutqaring.",
+      "v": [
+        "3 + √3",
+        "18 − 6√3",
+        "(3 − √3)/2",
+        "3 − √3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajning qo'shmasi 3 − √3. Kasrni unga kengaytiramiz: 6(3 − √3)/(3² − 3) = 6(3 − √3)/6. Oltiliklar qisqarib 3 − √3 qoladi. Javob: 3 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshma-butun-va-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#f6d4a234"
+    },
+    {
+      "q": "Nodirbek 4/(3 − √5) ifodani qo'shma ko'paytuvchi yordamida soddalashtirdi. To'g'ri natija qaysi variantda berilgan?",
+      "v": [
+        "(3 + √5)/4",
+        "4(3 + √5)",
+        "3 + √5",
+        "3 − √5"
+      ],
+      "t": 2,
+      "izoh": "Qo'shma ifoda 3 + √5 bo'ladi. Kengaytirsak 4(3 + √5)/(9 − 5) = 4(3 + √5)/4 hosil bo'ladi va to'rtliklar qisqaradi. Javob: 3 + √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-butun-va-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#1e5ddc93"
+    },
+    {
+      "q": "Kvadrat shaklidagi maydonning bir tomoni 14/(4 + √2) m ga teng. Bu uzunlikni maxrajida ildizsiz shaklda yozing.",
+      "v": [
+        "4 + √2",
+        "(4 − √2)/14",
+        "4 − √2",
+        "14(4 − √2)"
+      ],
+      "t": 2,
+      "izoh": "Maxrajning qo'shmasi 4 − √2 bo'lgani uchun kasrni unga kengaytiramiz. Maxraj 16 − 2 = 14 ga aylanadi va 14 lar qisqaradi. Natija 4 − √2 m. Javob: 4 − √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-butun-va-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#a43a6138"
+    },
+    {
+      "q": "8/(5 + √17) ifodaning eng sodda ko'rinishi qaysi? Maxrajni qo'shma ifodaga ko'paytirib tekshiring.",
+      "v": [
+        "√17 − 5",
+        "5 + √17",
+        "(5 − √17)/8",
+        "5 − √17"
+      ],
+      "t": 3,
+      "izoh": "Qo'shma ifoda 5 − √17, maxraj esa 25 − 17 = 8 bo'ladi. Sakkizliklar qisqarib 5 − √17 qoladi. Bu son musbat, chunki √17 soni 5 dan kichik. Javob: 5 − √17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-butun-va-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#d9c8d06e"
+    },
+    {
+      "q": "Oltin kesim masalasida 2/(√5 + 1) kasr uchraydi. Uni ratsionallashtirgandan keyin qanday ifoda hosil bo'ladi?",
+      "v": [
+        "√5 − 1",
+        "(√5 − 1)/2",
+        "(√5 + 1)/2",
+        "2(√5 − 1)"
+      ],
+      "t": 1,
+      "izoh": "Kasrni √5 − 1 ga kengaytiramiz: 2(√5 − 1)/(5 − 1) = 2(√5 − 1)/4. 2 va 4 qisqarib (√5 − 1)/2 hosil bo'ladi. Javob: (√5 − 1)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-butun-va-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#c65af003"
+    },
+    {
+      "q": "6/(√7 − √5) ifodani maxrajida ildiz qolmaydigan ko'rinishga keltiring va qavslarni oching.",
+      "v": [
+        "6√7 + 6√5",
+        "(√7 + √5)/3",
+        "3√7 − 3√5",
+        "3√7 + 3√5"
+      ],
+      "t": 3,
+      "izoh": "Qo'shma ifoda √7 + √5 bo'ladi. Maxraj 7 − 5 = 2 ga aylanadi: 6(√7 + √5)/2 = 3(√7 + √5). Qavsni ochsak 3√7 + 3√5 chiqadi. Javob: 3√7 + 3√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshma-ikki-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#7f81d269"
+    },
+    {
+      "q": "Zilola 4/(√5 + √3) kasrni soddalashtirmoqchi va maxrajda ildiz qoldirmasligi kerak. Qaysi javob to'g'ri?",
+      "v": [
+        "4√5 − 4√3",
+        "2√5 + 2√3",
+        "(√5 − √3)/2",
+        "2√5 − 2√3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni √5 − √3 ga ko'paytiramiz, u holda maxraj 5 − 3 = 2 bo'ladi. 4(√5 − √3)/2 = 2(√5 − √3), qavs ochilsa 2√5 − 2√3. Javob: 2√5 − 2√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshma-ikki-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#0d19228c"
+    },
+    {
+      "q": "1/(√6 − √5) kasr maxrajidagi irratsionallikdan qutqarilsa, natija qanday ifoda bo'ladi?",
+      "v": [
+        "√6 − √5",
+        "√6 + √5",
+        "√11",
+        "(√6 + √5)/11"
+      ],
+      "t": 1,
+      "izoh": "Kasrni √6 + √5 ga kengaytiramiz. Maxraj (√6)² − (√5)² = 6 − 5 = 1 bo'ladi, ya'ni butunlay yo'qoladi. Demak natija √6 + √5. Javob: √6 + √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoshma-ikki-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ee7a970d"
+    },
+    {
+      "q": "Qurilish loyihasida 10/(√11 + √6) nisbati uchradi. Muhandis uni maxrajida ildizsiz shaklda yozdi. Natijani toping.",
+      "v": [
+        "2√11 − 2√6",
+        "10√11 − 10√6",
+        "(√11 − √6)/5",
+        "2√11 + 2√6"
+      ],
+      "t": 0,
+      "izoh": "Qo'shma ifoda √11 − √6, maxraj esa 11 − 6 = 5 bo'ladi. 10(√11 − √6)/5 = 2(√11 − √6) va qavs ochilsa 2√11 − 2√6. Javob: 2√11 − 2√6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-ikki-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#6a9ae9e2"
+    },
+    {
+      "q": "12/(√10 − √7) ifodani ratsionallashtiring va uning sodda ko'rinishini variantlar orasidan tanlang.",
+      "v": [
+        "4√10 − 4√7",
+        "12√10 + 12√7",
+        "4√10 + 4√7",
+        "(√10 + √7)/4"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni √10 + √7 ga ko'paytirsak 10 − 7 = 3 hosil bo'ladi. 12(√10 + √7)/3 = 4(√10 + √7), qavs ochilgach 4√10 + 4√7. Javob: 4√10 + 4√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-ikki-ildiz",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#5b6412d7"
+    },
+    {
+      "q": "1/(√3 + √2) + 1/(√3 − √2) yig'indisining qiymati qanday ifodaga teng bo'ladi?",
+      "v": [
+        "√3 + √2",
+        "2√2",
+        "2√3",
+        "2√6"
+      ],
+      "t": 2,
+      "izoh": "Har bir kasrni alohida ratsionallashtiramiz: 1/(√3 + √2) = √3 − √2 va 1/(√3 − √2) = √3 + √2. Ularni qo'shsak √2 lar yo'qoladi va 2√3 qoladi. Javob: 2√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildizli-kasr-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#456bbb05"
+    },
+    {
+      "q": "Amirbek 1/(√5 − √2) − 1/(√5 + √2) ayirmasini hisobladi. U qanday natija olishi kerak edi?",
+      "v": [
+        "2√5/3",
+        "0",
+        "2√2",
+        "2√2/3"
+      ],
+      "t": 3,
+      "izoh": "Maxrajlar o'zaro qo'shma, ko'paytmasi 5 − 2 = 3 ga teng. Ayirmani umumiy maxrajga keltiramiz: [(√5 + √2) − (√5 − √2)]/3 = 2√2/3. Javob: 2√2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildizli-kasr-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#57776910"
+    },
+    {
+      "q": "Quyidagi 1/(4 + √13) + 1/(4 − √13) ifodaning qiymati qaysi ratsional songa teng bo'ladi?",
+      "v": [
+        "8",
+        "3/8",
+        "8/3",
+        "2√13/3"
+      ],
+      "t": 2,
+      "izoh": "Umumiy maxraj (4 + √13)(4 − √13) = 16 − 13 = 3 bo'ladi. Surat esa (4 − √13) + (4 + √13) = 8 ga teng. Demak qiymat 8/3. Javob: 8/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildizli-kasr-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#4e22bbc1"
+    },
+    {
+      "q": "3/(√10 − 3) + 3/(√10 + 3) ifodani hisoblang va olingan natijani variantlar ichidan belgilang.",
+      "v": [
+        "2√10",
+        "6",
+        "6√10",
+        "6√10 + 18"
+      ],
+      "t": 2,
+      "izoh": "Maxrajlar ko'paytmasi (√10)² − 3² = 10 − 9 = 1 bo'ladi. Surat 3(√10 + 3) + 3(√10 − 3) = 6√10 chiqadi. Maxraj bir bo'lgani uchun javob 6√10. Javob: 6√10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildizli-kasr-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#90d6d521"
+    },
+    {
+      "q": "1/(√1 + √2) + 1/(√2 + √3) + 1/(√3 + √4) yig'indisi qanday songa teng bo'ladi?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "√3 − 1"
+      ],
+      "t": 1,
+      "izoh": "Har bir had ratsionallashtirilganda 1/(√k + √(k+1)) = √(k+1) − √k ko'rinishini oladi. Yig'indi (√2 − 1) + (√3 − √2) + (2 − √3) bo'lib siqiladi. O'rtadagi hadlar qisqarib 2 − 1 = 1 qoladi. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teleskopik-ildiz-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#619461fa"
+    },
+    {
+      "q": "Karim 1/(√1 + √2) dan boshlab 1/(√15 + √16) gacha bo'lgan barcha kasrlarni ketma-ket qo'shdi. U qanday son oldi?",
+      "v": [
+        "4",
+        "15",
+        "3",
+        "√15 − 1"
+      ],
+      "t": 2,
+      "izoh": "Har bir had √(k+1) − √k ga aylanadi va qo'shni hadlar bir-birini yo'qotadi. Yig'indidan faqat chetki hadlar qoladi: √16 − √1 = 4 − 1 = 3. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teleskopik-ildiz-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#f998dd91"
+    },
+    {
+      "q": "1/(√5 + √7) + 1/(√7 + √9) + 1/(√9 + √11) yig'indisini soddalashtiring va natijani tanlang.",
+      "v": [
+        "√11 − √5",
+        "√6",
+        "(√11 + √5)/2",
+        "(√11 − √5)/2"
+      ],
+      "t": 3,
+      "izoh": "Har bir kasrda maxrajlar ayirmasi 2 ga teng: 1/(√5 + √7) = (√7 − √5)/2. Uchala hadni qo'shganda o'rtadagilar qisqaradi va (√11 − √5)/2 qoladi. Javob: (√11 − √5)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teleskopik-ildiz-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#8400bda3"
+    },
+    {
+      "q": "Olimpiadada Aziza 1/(√1 + √2) dan 1/(√24 + √25) gacha bo'lgan hadlar yig'indisini eng tez hisoblab berdi. Uning javobi qaysi?",
+      "v": [
+        "5",
+        "4",
+        "24",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Har bir kasr ratsionallashtirilganda √(k+1) − √k ko'rinishini oladi. Barcha o'rta hadlar qisqarib faqat √25 − √1 qoladi, ya'ni 5 − 1 = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teleskopik-ildiz-yigindisi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#8b547f6c"
+    },
+    {
+      "q": "√(9 − 2√14) qo'sh radikalni to'la kvadrat usuli bilan soddalashtiring va natijani ko'rsating.",
+      "v": [
+        "√7 − √2",
+        "√7 + √2",
+        "3 − √14",
+        "√9 − √14"
+      ],
+      "t": 0,
+      "izoh": "Yig'indisi 9, ko'paytmasi 14 bo'lgan ikki sonni izlaymiz: bular 7 va 2. Shunda 9 − 2√14 = (√7 − √2)² bo'ladi. Ildiz olsak √7 − √2 chiqadi, u musbat son. Javob: √7 − √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-ayirma",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#0062b3fa"
+    },
+    {
+      "q": "Qo'sh radikal √(12 − 2√35) ni ikkita sodda ildizning ayirmasi ko'rinishida yozib bering.",
+      "v": [
+        "√7 + √5",
+        "√12 − √35",
+        "6 − √35",
+        "√7 − √5"
+      ],
+      "t": 3,
+      "izoh": "12 = 7 + 5 va 35 = 7·5 bo'lgani uchun 12 − 2√35 = (√7 − √5)² bo'ladi. Ildiz olganda kattaroq ildiz oldinda turadi va natija musbat chiqadi. Javob: √7 − √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-ayirma",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#d23fb172"
+    },
+    {
+      "q": "Quyidagi √(8 − 2√15) ifodaning qiymatini eng sodda ko'rinishda yozib toping.",
+      "v": [
+        "√5 + √3",
+        "4 − √15",
+        "√5 − √3",
+        "√8 − √15"
+      ],
+      "t": 2,
+      "izoh": "Yig'indisi 8, ko'paytmasi 15 bo'lgan sonlar 5 va 3. Demak 8 − 2√15 = (√5 − √3)² ko'rinishga keladi. Ildizdan chiqarsak √5 − √3 hosil bo'ladi. Javob: √5 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-ayirma",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#d015ff08"
+    },
+    {
+      "q": "Malika √(6 − 2√5) ifodani hisoblab, uni butun son va ildiz orqali yozdi. U qanday natija oldi?",
+      "v": [
+        "√5 + 1",
+        "√5 − 1",
+        "3 − √5",
+        "1 − √5"
+      ],
+      "t": 1,
+      "izoh": "6 = 5 + 1 va 5 = 5·1 bo'lgani uchun 6 − 2√5 = (√5 − 1)² bo'ladi. Ildiz olsak √5 − 1 chiqadi, chunki √5 soni 1 dan katta. Javob: √5 − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-ayirma",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#e1acc793"
+    },
+    {
+      "q": "O'qituvchi doskaga √(10 − 2√21) ifodani yozdi va uni to'la kvadrat orqali soddalashtirishni so'radi. To'g'ri javob qaysi?",
+      "v": [
+        "5 − √21",
+        "√7 + √3",
+        "√10 − √21",
+        "√7 − √3"
+      ],
+      "t": 3,
+      "izoh": "21 = 7·3 va 10 = 7 + 3 bo'lgani uchun 10 − 2√21 = (√7 − √3)² ko'rinishga keladi. Ildiz olsak √7 − √3 hosil bo'ladi. Javob: √7 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-ayirma",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#d9991137"
+    },
+    {
+      "q": "√(11 + 2√30) qo'sh radikalni ikkita sodda ildizning yig'indisi sifatida yozing va javobni tanlang.",
+      "v": [
+        "√11 + √30",
+        "√6 − √5",
+        "√6 + √5",
+        "5 + √30"
+      ],
+      "t": 2,
+      "izoh": "Yig'indisi 11, ko'paytmasi 30 bo'lgan sonlar 6 va 5. Demak 11 + 2√30 = (√6 + √5)² bo'ladi. Ildiz olsak √6 + √5 hosil bo'ladi. Javob: √6 + √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-yigindi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#63b9a68f"
+    },
+    {
+      "q": "Ustoz sinfda √(7 + 2√10) ifodani yozib, uni soddalashtirishni topshiriq qilib berdi. To'g'ri javob qaysi?",
+      "v": [
+        "√7 + √10",
+        "5 + √2",
+        "√5 − √2",
+        "√5 + √2"
+      ],
+      "t": 3,
+      "izoh": "7 ni 5 + 2 ko'rinishida, 10 ni esa 5·2 ko'rinishida yozamiz. U holda 7 + 2√10 = (√5 + √2)² bo'ladi. Ildizdan chiqsak √5 + √2. Javob: √5 + √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-yigindi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#bf46f5e4"
+    },
+    {
+      "q": "√(13 + 2√42) ifodaning eng sodda shakli quyidagi variantlarning qaysi birida to'g'ri berilgan?",
+      "v": [
+        "√13 + √42",
+        "√7 − √6",
+        "√7 + √6",
+        "6 + √7"
+      ],
+      "t": 2,
+      "izoh": "42 = 7·6 va 13 = 7 + 6 bo'lgani uchun ifoda (√7 + √6)² ning ildizi bo'ladi. Demak natija √7 + √6 ga teng. Javob: √7 + √6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-yigindi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b4b058de"
+    },
+    {
+      "q": "Quyidagi √(4 + 2√3) qo'sh radikalni butun son va ildiz yig'indisi ko'rinishida yozing.",
+      "v": [
+        "2 + √3",
+        "√3 + 1",
+        "√3 − 1",
+        "1 + 2√3"
+      ],
+      "t": 1,
+      "izoh": "4 = 3 + 1 va 3 = 3·1 bo'lgani uchun 4 + 2√3 = (√3 + 1)² bo'ladi. Ildiz olsak √3 + 1 chiqadi. Javob: √3 + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-yigindi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#fad80a84"
+    },
+    {
+      "q": "Shahnoza √(9 + 2√20) ifodani soddalashtirishga urindi va ikki xil javob oldi. Uning to'g'ri javobi qanday bo'lishi kerak?",
+      "v": [
+        "3 + 2√5",
+        "√5 − 2",
+        "√5 + 2",
+        "√9 + √20"
+      ],
+      "t": 2,
+      "izoh": "9 ni 5 + 4, 20 ni esa 5·4 deb yozamiz. Shunda 9 + 2√20 = (√5 + √4)² = (√5 + 2)² bo'ladi. Ildiz olsak √5 + 2. Javob: √5 + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qosh-radikal-yigindi",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#f5d7959e"
+    },
+    {
+      "q": "√(7 + 4√3) ifodani soddalashtiring. Buning uchun avval 4√3 ni 2√12 ko'rinishiga keltirib oling.",
+      "v": [
+        "2 + √3",
+        "2 − √3",
+        "√7 + 2√3",
+        "√4 + √12"
+      ],
+      "t": 0,
+      "izoh": "4√3 = 2·2√3 = 2√12 bo'ladi, ya'ni ifoda √(7 + 2√12) ko'rinishga keladi. 7 = 4 + 3 va 12 = 4·3 bo'lgani uchun (√4 + √3)² = (2 + √3)². Javob: 2 + √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-kattaroq-koeffitsient",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#83c360d7"
+    },
+    {
+      "q": "Quyidagi √(14 − 6√5) ifodaning eng sodda ko'rinishini toping va javobni belgilang.",
+      "v": [
+        "3 + √5",
+        "7 − 3√5",
+        "√5 − 3",
+        "3 − √5"
+      ],
+      "t": 3,
+      "izoh": "6√5 ni 2√45 ko'rinishida yozamiz. 14 = 9 + 5 va 45 = 9·5 bo'lgani uchun 14 − 6√5 = (3 − √5)². √5 soni 3 dan kichik bo'lgani uchun natija musbat: 3 − √5. Javob: 3 − √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-kattaroq-koeffitsient",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#bd61d3a4"
+    },
+    {
+      "q": "Test topshirig'ining javobi √(11 + 6√2) ko'rinishida chiqdi. Uni imkon qadar sodda shaklda yozib bering.",
+      "v": [
+        "√11 + 3√2",
+        "9 + √2",
+        "3 + √2",
+        "3 − √2"
+      ],
+      "t": 2,
+      "izoh": "6√2 ni 2√18 deb yozamiz. 11 = 9 + 2 va 18 = 9·2 bo'lgani uchun ifoda (3 + √2)² ning ildizi bo'ladi. Javob: 3 + √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-kattaroq-koeffitsient",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3c88b9a4"
+    },
+    {
+      "q": "√(19 − 8√3) qo'sh radikalni to'la kvadrat orqali soddalashtirilgan holda ko'rsating.",
+      "v": [
+        "√3 − 4",
+        "4 − √3",
+        "4 + √3",
+        "16 − √3"
+      ],
+      "t": 1,
+      "izoh": "8√3 ni 2√48 ko'rinishiga keltiramiz. 19 = 16 + 3 va 48 = 16·3 bo'lgani uchun 19 − 8√3 = (4 − √3)². Ildiz olsak 4 − √3 chiqadi. Javob: 4 − √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-kattaroq-koeffitsient",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ba1513fe"
+    },
+    {
+      "q": "Dilshod uzoq hisobdan keyin √(28 + 10√3) ifodani soddalashtirdi. U qaysi natijani olgan bo'lishi kerak?",
+      "v": [
+        "25 + √3",
+        "5 − √3",
+        "√28 + 5√3",
+        "5 + √3"
+      ],
+      "t": 3,
+      "izoh": "10√3 = 2√75 bo'ladi. 28 = 25 + 3 va 75 = 25·3 bo'lgani uchun (5 + √3)² = 28 + 10√3. Demak ildiz 5 + √3 ga teng. Javob: 5 + √3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-kattaroq-koeffitsient",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#36d63e4d"
+    },
+    {
+      "q": "√(9 + 2√14) + √(9 − 2√14) yig'indisining qiymatini hisoblang va to'g'ri javobni tanlang.",
+      "v": [
+        "2√7",
+        "2√2",
+        "3√2",
+        "√14"
+      ],
+      "t": 0,
+      "izoh": "9 ± 2√14 = (√7 ± √2)² bo'lgani uchun ildizlar √7 + √2 va √7 − √2 ga teng. Ularni qo'shsak √2 lar qisqarib 2√7 qoladi. Javob: 2√7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-ustida-amal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#291fd001"
+    },
+    {
+      "q": "Quyidagi √(8 + 2√7) − √(8 − 2√7) ayirmasi qanday songa teng bo'lishini aniqlang.",
+      "v": [
+        "2√7",
+        "4√7",
+        "0",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "8 = 7 + 1 va 7 = 7·1 bo'lgani uchun 8 ± 2√7 = (√7 ± 1)². Ildizlar √7 + 1 va √7 − 1 bo'ladi. Ularning ayirmasi (√7 + 1) − (√7 − 1) = 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-ustida-amal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#a2b203c1"
+    },
+    {
+      "q": "√(7 + 4√3) · √(7 − 4√3) ko'paytmasini hisoblang va olingan javobni variantlar orasidan toping.",
+      "v": [
+        "7",
+        "1",
+        "√7",
+        "4√3"
+      ],
+      "t": 1,
+      "izoh": "Ikki ildizni bitta ildiz ostiga birlashtiramiz: √((7 + 4√3)(7 − 4√3)). Kvadratlar ayirmasi 49 − 48 = 1 beradi, uning ildizi ham 1. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qosh-radikal-ustida-amal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#cb51894a"
+    },
+    {
+      "q": "Abror (√(12 + 2√35) − √(12 − 2√35))² ifodani bosqichma-bosqich hisobladi. U qanday son olgan?",
+      "v": [
+        "2√5",
+        "28",
+        "20",
+        "4√35"
+      ],
+      "t": 2,
+      "izoh": "12 ± 2√35 = (√7 ± √5)² bo'lgani uchun ildizlar √7 + √5 va √7 − √5. Ularning ayirmasi 2√5, uning kvadrati esa 4·5 = 20. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-ustida-amal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#70ba630e"
+    },
+    {
+      "q": "Quyidagi (√12 + √27)/√3 kasrni qisqartiring va uning sodda qiymatini toping.",
+      "v": [
+        "5√3",
+        "5",
+        "√13",
+        "15"
+      ],
+      "t": 1,
+      "izoh": "√12 = 2√3 va √27 = 3√3 bo'ladi. Surat 2√3 + 3√3 = 5√3 ga teng. Uni √3 ga bo'lsak 5 chiqadi. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kasrni-qisqartirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b4ceb32e"
+    },
+    {
+      "q": "Nazorat ishida (√98 + √50)/√2 ifodaning qiymati so'raldi. U qanday songa teng bo'ladi?",
+      "v": [
+        "2√2",
+        "24",
+        "√74",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "√98 = 7√2 va √50 = 5√2 bo'ladi. Yig'indi 7√2 + 5√2 = 12√2. Uni √2 ga bo'lsak 12 qoladi. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-kasrni-qisqartirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#164295d1"
+    },
+    {
+      "q": "(x − 5)/(√x − √5) ifodani x > 0 va x ≠ 5 shartida qisqartirib, sodda ko'rinishini yozing.",
+      "v": [
+        "√x − √5",
+        "√x + √5",
+        "x + 5",
+        "√(x − 5)"
+      ],
+      "t": 1,
+      "izoh": "Suratni ikki kvadrat ayirmasi deb qaraymiz: x − 5 = (√x)² − (√5)² = (√x − √5)(√x + √5). Maxraj bilan qisqartirsak √x + √5 qoladi. Javob: √x + √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kasrni-qisqartirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#52706f33"
+    },
+    {
+      "q": "Nigora (a − 4)/(√a + 2) kasrni a ≥ 0 shartida qisqartirdi. Uning to'g'ri natijasi qanday bo'ladi?",
+      "v": [
+        "a − 2",
+        "√a + 2",
+        "√a − 2",
+        "√(a − 4)"
+      ],
+      "t": 2,
+      "izoh": "a − 4 = (√a)² − 2² = (√a − 2)(√a + 2) ko'rinishida yoyiladi. Maxrajdagi √a + 2 bilan qisqargach √a − 2 qoladi. Javob: √a − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-kasrni-qisqartirish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#1318dcaf"
+    },
+    {
+      "q": "(√7 − √5)/2 ifodaning maxrajini emas, balki suratini irratsionallikdan qutqaring.",
+      "v": [
+        "1/(√7 + √5)",
+        "2/(√7 + √5)",
+        "1/(√7 − √5)",
+        "(√7 + √5)/2"
+      ],
+      "t": 0,
+      "izoh": "Surat va maxrajni √7 + √5 ga ko'paytiramiz. Surat (√7)² − (√5)² = 2 bo'ladi, maxraj esa 2(√7 + √5). Ikkiliklar qisqarib 1/(√7 + √5) qoladi. Javob: 1/(√7 + √5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suratni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#1c0e2b4f"
+    },
+    {
+      "q": "(√x − 3)/(x − 9) kasrni x > 0 va x ≠ 9 shartida soddalashtirib, sodda ko'rinishini tanlang.",
+      "v": [
+        "1/(√x − 3)",
+        "1/(x + 3)",
+        "√x + 3",
+        "1/(√x + 3)"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ko'paytuvchilarga ajratamiz: x − 9 = (√x − 3)(√x + 3). Surat bilan qisqartirilgach 1/(√x + 3) qoladi. Javob: 1/(√x + 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suratni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#37f678fd"
+    },
+    {
+      "q": "Ilmiy hisoblarda √(n+1) − √n ayirma tez-tez uchraydi. Uni surati ratsional bo'lgan kasr ko'rinishida yozing.",
+      "v": [
+        "1/(√(n+1) − √n)",
+        "√(n+1) + √n",
+        "1/(√(n+1) + √n)",
+        "1/(2n + 1)"
+      ],
+      "t": 2,
+      "izoh": "Ifodani √(n+1) + √n ga ko'paytirib, o'sha ifodaning o'ziga bo'lamiz. Surat (n + 1) − n = 1 bo'ladi. Demak ayirma 1/(√(n+1) + √n) ga teng. Javob: 1/(√(n+1) + √n).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suratni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#8288e880"
+    },
+    {
+      "q": "(√11 − 3)/2 ifodaning suratidagi ildizdan qutuling va hosil bo'lgan kasrni ko'rsating.",
+      "v": [
+        "2/(√11 + 3)",
+        "1/(√11 + 3)",
+        "1/(√11 − 3)",
+        "(√11 + 3)/2"
+      ],
+      "t": 1,
+      "izoh": "Kasrni √11 + 3 ga kengaytiramiz. Surat (√11)² − 3² = 11 − 9 = 2, maxraj esa 2(√11 + 3) bo'ladi. Ikkiliklar qisqargach 1/(√11 + 3) qoladi. Javob: 1/(√11 + 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suratni-irratsionallikdan-qutqarish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#8d29945f"
+    },
+    {
+      "q": "√2 ≈ 1,414 deb olinsa, 1/√2 kasrning taqribiy qiymati nechaga teng bo'ladi?",
+      "v": [
+        "0,707",
+        "1,414",
+        "0,5",
+        "2,828"
+      ],
+      "t": 0,
+      "izoh": "1/√2 ni √2 ga kengaytiramiz va √2/2 hosil bo'ladi. Endi 1,414 ni 2 ga bo'lamiz, natijada 0,707 chiqadi. Javob: 0,707.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-hisoblash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#f7ea67d3"
+    },
+    {
+      "q": "Anvarjon √3 ≈ 1,732 qiymatidan foydalanib 6/√3 ifodani hisoblamoqchi. U qanday taqribiy son oladi?",
+      "v": [
+        "1,732",
+        "0,289",
+        "10,392",
+        "3,464"
+      ],
+      "t": 3,
+      "izoh": "Avval ratsionallashtiramiz: 6/√3 = 6√3/3 = 2√3. Endi 2·1,732 amalini bajaramiz va 3,464 hosil bo'ladi. Javob: 3,464.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-hisoblash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b1fb1198"
+    },
+    {
+      "q": "√5 ≈ 2,236 bo'lsa, 10/√5 ifodaning taqribiy qiymatini hisoblab toping.",
+      "v": [
+        "22,36",
+        "2,236",
+        "4,472",
+        "0,447"
+      ],
+      "t": 2,
+      "izoh": "10/√5 kasrini √5 ga kengaytiramiz: 10√5/5 = 2√5. So'ng 2·2,236 = 4,472 hosil bo'ladi. Javob: 4,472.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "taqribiy-qiymat-hisoblash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b5ab120f"
+    },
+    {
+      "q": "√2 ≈ 1,414 va √3 ≈ 1,732 bo'lsa, 1/(√3 − √2) ifodaning taqribiy qiymati qanchaga teng?",
+      "v": [
+        "0,318",
+        "3,146",
+        "0,629",
+        "6,292"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni √3 + √2 ga ko'paytiramiz, u holda maxraj 3 − 2 = 1 bo'ladi. Demak ifoda √3 + √2 ga teng va 1,732 + 1,414 = 3,146. Javob: 3,146.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "taqribiy-qiymat-hisoblash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3903b781"
+    },
+    {
+      "q": "√7 − √6 va √6 − √5 sonlaridan qaysi biri katta va bu xulosa qanday asoslanadi?",
+      "v": [
+        "√6 − √5 katta, chunki uning maxraji kichikroq",
+        "√7 − √6 katta, chunki 7 soni kattaroq",
+        "Ikkala ayirma o'zaro teng",
+        "Bunday sonlarni taqqoslab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Har bir ayirmani ratsionallashtiramiz: √7 − √6 = 1/(√7 + √6) va √6 − √5 = 1/(√6 + √5). Surati bir xil kasrlarda maxraji kichigi katta bo'ladi, √6 + √5 esa √7 + √6 dan kichik. Javob: √6 − √5 katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-ifodalarni-taqqoslash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#50306eb1"
+    },
+    {
+      "q": "1/(√8 + √7) va 1/(√5 + √3) kasrlarini taqqoslang va ulardan qaysi biri kichik ekanini aniqlang.",
+      "v": [
+        "1/(√5 + √3)",
+        "Ikkalasi ham 1 dan katta",
+        "Ular o'zaro teng",
+        "1/(√8 + √7)"
+      ],
+      "t": 3,
+      "izoh": "Ikkala kasrning surati bir xil, shuning uchun maxraji katta bo'lgani kichik bo'ladi. √8 + √7 ≈ 5,47 va √5 + √3 ≈ 3,97. Demak 1/(√8 + √7) kichikroq. Javob: 1/(√8 + √7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-ifodalarni-taqqoslash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ee5de151"
+    },
+    {
+      "q": "Sinf musobaqasida o'quvchilardan √10 − 3 va 1/(√10 + 3) ifodalarni taqqoslash so'raldi. To'g'ri xulosa qaysi?",
+      "v": [
+        "Ular aynan teng",
+        "√10 − 3 kattaroq",
+        "1/(√10 + 3) kattaroq",
+        "√10 − 3 manfiy son"
+      ],
+      "t": 0,
+      "izoh": "√10 − 3 ni kasr deb yozib, uni √10 + 3 ga kengaytiramiz: (10 − 9)/(√10 + 3) = 1/(√10 + 3). Demak ikki ifoda bir xil qiymatga ega. Javob: ular aynan teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-ifodalarni-taqqoslash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#4737e03a"
+    },
+    {
+      "q": "3/√5 va √5/2 sonlaridan qaysi biri kattaroq ekanini ratsionallashtirish yordamida aniqlang.",
+      "v": [
+        "√5/2",
+        "3/√5",
+        "Ular o'zaro teng",
+        "Taqqoslash uchun ma'lumot yetarli emas"
+      ],
+      "t": 1,
+      "izoh": "3/√5 ni ratsionallashtiramiz: 3√5/5, ya'ni 0,6·√5. Ikkinchi son esa √5/2 = 0,5·√5. 0,6 soni 0,5 dan katta bo'lgani uchun 3/√5 kattaroq. Javob: 3/√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-ifodalarni-taqqoslash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#6d09d843"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning diagonali 10 dm ga teng. Uning tomoni uzunligini maxrajida ildizsiz ko'rinishda yozing.",
+      "v": [
+        "10√2",
+        "5√2",
+        "5",
+        "2√5"
+      ],
+      "t": 1,
+      "izoh": "Kvadratda d = a√2 bo'lgani uchun a = 10/√2. Kasrni √2 ga kengaytiramiz: 10√2/2 = 5√2. Javob: 5√2 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olchov-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#fcf18328"
+    },
+    {
+      "q": "Teng tomonli uchburchakning balandligi 9 sm. Uning tomoni uzunligini maxrajida ildiz qolmagan ko'rinishda toping.",
+      "v": [
+        "9√3",
+        "18√3",
+        "6√3",
+        "3√3"
+      ],
+      "t": 2,
+      "izoh": "Teng tomonli uchburchakda h = a√3/2, bundan a = 2h/√3 = 18/√3. Kasrni √3 ga kengaytiramiz: 18√3/3 = 6√3. Javob: 6√3 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-olchov-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#6a9d9891"
+    },
+    {
+      "q": "Kvadratning tomoni 7 sm ga teng. Tomonning diagonalga nisbatini maxrajida ildizsiz kasr ko'rinishida yozing.",
+      "v": [
+        "√2",
+        "2√2",
+        "7√2/2",
+        "√2/2"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning diagonali 7√2 sm ga teng bo'ladi. Nisbat 7/(7√2) = 1/√2 ko'rinishga keladi. Uni √2 ga kengaytirsak √2/2 chiqadi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-olchov-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#cbf6b2d3"
+    },
+    {
+      "q": "Kubning qirrasi 4 sm. Uning yon yog'i diagonalining kub diagonaliga nisbatini ildizsiz maxraj bilan yozing.",
+      "v": [
+        "√6/3",
+        "√6/2",
+        "2/3",
+        "3/2"
+      ],
+      "t": 0,
+      "izoh": "Yon yog' diagonali 4√2, kub diagonali esa 4√3 sm ga teng. Nisbat √2/√3 bo'ladi, uni √3 ga kengaytiramiz va √6/3 hosil bo'ladi. Javob: √6/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-olchov-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#4769ef37"
+    },
+    {
+      "q": "√(7 + 4√3) = a + b√3 tenglikda a va b butun sonlar bo'lsa, ularning yig'indisi nechaga teng?",
+      "v": [
+        "5",
+        "2",
+        "4",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "4√3 = 2√12 bo'lgani uchun 7 + 4√3 = (2 + √3)² ko'rinishga keladi. Demak a = 2 va b = 1. Ularning yig'indisi 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-parametr-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#d72d2a64"
+    },
+    {
+      "q": "√(17 − 12√2) ifoda a − b√2 ko'rinishida yozilsa, a·b ko'paytmaning qiymatini hisoblang.",
+      "v": [
+        "6",
+        "5",
+        "1",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "12√2 ni 2√72 deb yozamiz. 17 = 9 + 8 va 72 = 9·8 bo'lgani uchun ifoda (3 − √8)² ning ildizi, ya'ni 3 − 2√2. Demak a = 3, b = 2 va a·b = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-parametr-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#27c1dad4"
+    },
+    {
+      "q": "√(a + 2√15) = √5 + √3 tenglik o'rinli bo'lishi uchun a soni nechaga teng bo'lishi kerak?",
+      "v": [
+        "15",
+        "8",
+        "2",
+        "16"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomonni kvadratga ko'taramiz: (√5 + √3)² = 5 + 3 + 2√15 = 8 + 2√15. Chap tomon bilan taqqoslasak a = 8 kelib chiqadi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-parametr-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#86bbe232"
+    },
+    {
+      "q": "√(19 − 2√b) ifoda √13 − √6 ko'rinishida yozilishi uchun b soni qanday qiymatga ega bo'lishi kerak?",
+      "v": [
+        "7",
+        "19",
+        "78",
+        "39"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomonni kvadratga ko'taramiz: (√13 − √6)² = 13 + 6 − 2√78 = 19 − 2√78. Ildiz ostidagi ifodalarni taqqoslasak b = 78 chiqadi. Javob: 78.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qosh-radikal-parametr-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#20f7f0fa"
+    },
+    {
+      "q": "Uch hadli maxrajga ega 1/(1 + √2 + √3) kasrni maxrajida ildiz qolmaydigan shaklga keltiring.",
+      "v": [
+        "(2 + √2 − √6)/4",
+        "(1 + √2 − √3)/2",
+        "(√2 + √3 − 1)/4",
+        "1/(1 + √6)"
+      ],
+      "t": 0,
+      "izoh": "Avval kasrni 1 + √2 − √3 ga kengaytiramiz, u holda maxraj (1 + √2)² − 3 = 2√2 bo'ladi. So'ng yana √2 ga kengaytiramiz: maxraj 4 ga, surat esa √2 + 2 − √6 ga aylanadi. Javob: (2 + √2 − √6)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3dd5c185"
+    },
+    {
+      "q": "1/(√2 + √3 + √5) ifodani ratsional maxrajli kasr ko'rinishida yozing va javobni tanlang.",
+      "v": [
+        "(3√2 + 2√3 − √30)/12",
+        "(√2 + √3 − √5)/6",
+        "(√2 + √3 + √5)/10",
+        "(3√2 + 2√3 + √30)/12"
+      ],
+      "t": 0,
+      "izoh": "Kasrni √2 + √3 − √5 ga kengaytiramiz, maxraj (√2 + √3)² − 5 = 2√6 bo'ladi. So'ng √6 ga kengaytirsak maxraj 12, surat esa 3√2 + 2√3 − √30 chiqadi. Javob: (3√2 + 2√3 − √30)/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b0b3db62"
+    },
+    {
+      "q": "Aziz 2/(√5 + √3 + 2) kasrni ratsionallashtirmoqchi. Birinchi qadamda u qaysi ifodaga ko'paytirishi kerak?",
+      "v": [
+        "√5 + √3 − 2",
+        "√5 − √3 + 2",
+        "√5 − √3 − 2",
+        "√5 + √3 + 2"
+      ],
+      "t": 0,
+      "izoh": "Uch hadli maxrajni ikki guruhga ajratamiz: (√5 + √3) va 2. Kvadratlar ayirmasi formulasini qo'llash uchun (√5 + √3) − 2 ifodaga ko'paytiriladi. Shunda maxraj (√5 + √3)² − 4 = 4 + 2√15 bo'lib soddalashadi. Javob: √5 + √3 − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-hadli-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#60c27af5"
+    },
+    {
+      "q": "√(3/7) ifodani maxrajida ildiz qolmaydigan ko'rinishda yozing va to'g'ri variantni belgilang.",
+      "v": [
+        "√21/7",
+        "√21/3",
+        "√3/7",
+        "3/√7"
+      ],
+      "t": 0,
+      "izoh": "√(3/7) = √3/√7 ko'rinishida yoziladi. Kasrni √7 ga kengaytiramiz: √3·√7/7 = √21/7. Javob: √21/7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-ichidagi-kasr",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#97aa1ba1"
+    },
+    {
+      "q": "Kimyo tajribasida eritma komponentlari nisbati √(5/12) ko'rinishida chiqdi. Uni maxrajida ildizsiz shaklda ifodalang.",
+      "v": [
+        "√15/2",
+        "√5/12",
+        "√15/12",
+        "√15/6"
+      ],
+      "t": 3,
+      "izoh": "√(5/12) = √5/√12 = √5/(2√3) ko'rinishga keladi. Kasrni √3 ga kengaytiramiz: √15/(2·3) = √15/6. Javob: √15/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichidagi-kasr",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#10f3090c"
+    },
+    {
+      "q": "Quyidagi √(2/45) ifodani sodda va maxrajida ildiz qolmagan ko'rinishga keltiring.",
+      "v": [
+        "√10/15",
+        "√10/45",
+        "√10/3",
+        "√2/45"
+      ],
+      "t": 0,
+      "izoh": "√45 = 3√5 bo'lgani uchun ifoda √2/(3√5) ko'rinishga keladi. Uni √5 ga kengaytiramiz: √10/(3·5) = √10/15. Javob: √10/15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichidagi-kasr",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ac6e9a15"
+    },
+    {
+      "q": "Gulnora √(7/50) qiymatni maxrajida ildiz qolmagan holda yozdi. Uning to'g'ri natijasi qaysi variantda?",
+      "v": [
+        "√14/50",
+        "√14/10",
+        "√14/5",
+        "√7/50"
+      ],
+      "t": 1,
+      "izoh": "√50 = 5√2 bo'lgani uchun ifoda √7/(5√2) ko'rinishga keladi. √2 ga kengaytirsak √14/(5·2) = √14/10 hosil bo'ladi. Javob: √14/10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichidagi-kasr",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#b8b85ea3"
+    },
+    {
+      "q": "x ≥ 2 bo'lganda √(x + 2√(x−1)) + √(x − 2√(x−1)) ifodani soddalashtiring va natijani tanlang.",
+      "v": [
+        "2√(x − 1)",
+        "2",
+        "2√x",
+        "√(x − 1)"
+      ],
+      "t": 0,
+      "izoh": "t = √(x − 1) deb belgilaymiz, u holda x = t² + 1 bo'ladi. Ildiz ostidagilar (t + 1)² va (t − 1)² ko'rinishga keladi. x ≥ 2 da t ≥ 1 bo'lgani uchun yig'indi (t + 1) + (t − 1) = 2t = 2√(x − 1). Javob: 2√(x − 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchili-qosh-radikal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3bfedf9e"
+    },
+    {
+      "q": "x = 10 bo'lganda √(x + 2√(x−1)) + √(x − 2√(x−1)) ifodaning son qiymatini hisoblang.",
+      "v": [
+        "6",
+        "2",
+        "8",
+        "2√10"
+      ],
+      "t": 0,
+      "izoh": "x = 10 bo'lsa √(x − 1) = 3 bo'ladi. Ildiz ostidagilar 10 + 6 = 16 va 10 − 6 = 4. Yig'indi √16 + √4 = 4 + 2 = 6. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ozgaruvchili-qosh-radikal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#c7cdab51"
+    },
+    {
+      "q": "1 ≤ x < 2 oraliqda √(x + 2√(x−1)) + √(x − 2√(x−1)) ifoda qanday qiymatga teng bo'ladi?",
+      "v": [
+        "2√(x − 1)",
+        "2",
+        "2√x",
+        "2 − 2√(x − 1)"
+      ],
+      "t": 1,
+      "izoh": "t = √(x − 1) belgilashda bu oraliq uchun 0 ≤ t < 1 bo'ladi. Ikkinchi ildiz √((t − 1)²) = 1 − t ga teng, chunki t soni birdan kichik. Yig'indi (t + 1) + (1 − t) = 2 chiqadi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ozgaruvchili-qosh-radikal",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#4227a173"
+    },
+    {
+      "q": "x = 1/(2 − √3) bo'lsa, x + 1/x ifodaning qiymatini ratsionallashtirish yordamida hisoblang.",
+      "v": [
+        "2√3",
+        "8",
+        "1",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni ratsionallashtiramiz: x = (2 + √3)/(4 − 3) = 2 + √3. U holda 1/x = 2 − √3 bo'ladi. Yig'indi (2 + √3) + (2 − √3) = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-orqali-ifoda-qiymati",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#06e355ab"
+    },
+    {
+      "q": "y = 1/(√6 − √5) bo'lsa, y − 1/y ayirmasi qanday ifodaga teng bo'lishini aniqlang.",
+      "v": [
+        "2√5",
+        "2√6",
+        "2",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "y = (√6 + √5)/(6 − 5) = √6 + √5 bo'ladi. Uning teskarisi 1/y = √6 − √5. Ayirma (√6 + √5) − (√6 − √5) = 2√5 ga teng. Javob: 2√5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-orqali-ifoda-qiymati",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#805f767e"
+    },
+    {
+      "q": "Berilgan a = 3 + 2√2 son uchun a + 1/a yig'indisining qiymatini toping.",
+      "v": [
+        "4√2",
+        "1",
+        "6",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "1/a kasrni 3 − 2√2 ga kengaytiramiz: (3 − 2√2)/(9 − 8) = 3 − 2√2. Yig'indi (3 + 2√2) + (3 − 2√2) = 6 bo'ladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshma-orqali-ifoda-qiymati",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#59730664"
+    },
+    {
+      "q": "Doniyor m = 1/(√7 + √3) qiymatni topib, so'ng 1/m − m ayirmasini hisobladi. Uning natijasi qanday?",
+      "v": [
+        "(√7 + √3)/4",
+        "(3√7 + 5√3)/4",
+        "2√3",
+        "(5√7 + 3√3)/4"
+      ],
+      "t": 1,
+      "izoh": "m = (√7 − √3)/(7 − 3) = (√7 − √3)/4 va 1/m = √7 + √3. Ayirmani umumiy maxrajga keltiramiz: (4√7 + 4√3 − √7 + √3)/4 = (3√7 + 5√3)/4. Javob: (3√7 + 5√3)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshma-orqali-ifoda-qiymati",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#e810479c"
+    },
+    {
+      "q": "O'quvchi 8/√2 kasrni 8√2/2 = 4√2 deb yozdi. Uning yechimi to'g'rimi va nima uchun?",
+      "v": [
+        "To'g'ri, chunki √2·√2 = 2 va 8 ni 2 ga bo'lsak 4 chiqadi",
+        "Xato, natija 8√2 bo'lishi kerak edi",
+        "Xato, natija 2√2 bo'lishi kerak edi",
+        "Xato, chunki √2·√2 = 4 bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Kasrni √2 ga kengaytirganda maxraj √2·√2 = 2 bo'ladi. Surat 8√2 ni 2 ga bo'lsak 4√2 chiqadi. Demak o'quvchi barcha qadamlarni to'g'ri bajargan. Javob: yechim to'g'ri.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#258d0890"
+    },
+    {
+      "q": "O'quvchi √(9 + 16) ni √9 + √16 = 3 + 4 = 7 deb hisobladi. Bu yechimdagi asosiy xato nimada?",
+      "v": [
+        "Yig'indidan ildizni hadlab ajratib bo'lmaydi, to'g'ri javob 5",
+        "Hisobda 3 + 4 amali noto'g'ri bajarilgan",
+        "√9 = 4 bo'lgani uchun javob 8 chiqadi",
+        "Xato yo'q, javob 7 to'g'ri hisoblangan"
+      ],
+      "t": 0,
+      "izoh": "√(a + b) ifodani √a + √b ko'rinishida ajratib bo'lmaydi, bu qoida mavjud emas. Avval qavs ichini hisoblaymiz: 9 + 16 = 25, so'ng √25 = 5. Javob: to'g'ri natija 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#3667dfd2"
+    },
+    {
+      "q": "O'quvchi 1/(√5 − 2) kasrni √5 + 2 ga kengaytirib, maxrajni 5 + 4 = 9 deb oldi. Xatoni ko'rsating.",
+      "v": [
+        "Maxraj 5 + 2 = 7 bo'lishi kerak edi",
+        "Maxraj 5 − 4 = 1 bo'lishi kerak edi",
+        "Suratni ham ko'paytirish shart emas edi",
+        "Kasrni √5 − 2 ga kengaytirish kerak edi"
+      ],
+      "t": 1,
+      "izoh": "Qo'shma ifodalar ko'paytmasi kvadratlar ayirmasini beradi: (√5 − 2)(√5 + 2) = (√5)² − 2² = 5 − 4 = 1. O'quvchi ayirish o'rniga qo'shish amalini bajargan. Javob: maxraj 1 bo'lishi kerak edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#1ebe51c4"
+    },
+    {
+      "q": "O'quvchi √(11 − 2√30) ifodani √11 − √30 deb yozdi. To'g'ri javob va xatoning sababi qaysi variantda?",
+      "v": [
+        "√6 − √5, chunki 11 = 6 + 5 va 30 = 6·5",
+        "√11 − √30, yechim aslida to'g'ri",
+        "√30 − √11, faqat ishorani almashtirish kerak",
+        "√5 − √6, kichik ildiz oldinda turadi"
+      ],
+      "t": 0,
+      "izoh": "Qo'sh radikalda ildiz ostini to'la kvadratga keltirish kerak, uni hadlab ajratib bo'lmaydi. Yig'indisi 11, ko'paytmasi 30 bo'lgan sonlar 6 va 5, demak 11 − 2√30 = (√6 − √5)². Javob: √6 − √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimdagi-xatoni-topish",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#09f39bdb"
+    },
+    {
+      "q": "Matematik mayatnik davri T = 2π√(L/g) formula bilan topiladi. L = 5 m va g = 10 m/s² bo'lsa, √(L/g) ni ildizsiz maxraj bilan yozing.",
+      "v": [
+        "√2",
+        "√5/10",
+        "1/2",
+        "√2/2"
+      ],
+      "t": 3,
+      "izoh": "L/g nisbati 5/10 = 1/2 ga teng bo'ladi. √(1/2) = 1/√2 ni √2 ga kengaytiramiz va √2/2 hosil bo'ladi. Javob: √2/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fizik-formulada-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#cfe05223"
+    },
+    {
+      "q": "Erkin tushish vaqti t = √(2h/g) formuladan topiladi. h = 12 m va g = 10 m/s² bo'lsa, t ni ildizsiz maxraj bilan ifodalang.",
+      "v": [
+        "2√15/5",
+        "2√15",
+        "√15/5",
+        "2√3/5"
+      ],
+      "t": 0,
+      "izoh": "2h/g nisbati 24/10 = 12/5 bo'ladi. √(12/5) = 2√3/√5 ni √5 ga kengaytiramiz: 2√15/5. Javob: 2√15/5 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fizik-formulada-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#23d19249"
+    },
+    {
+      "q": "Dumaloq stolning yuzasi 3 m². Uning radiusi r = √(S/π) formuladan topiladi, r ni ildizsiz maxraj bilan yozing.",
+      "v": [
+        "√(3π)/π",
+        "√3/π",
+        "π√3/3",
+        "3√π"
+      ],
+      "t": 0,
+      "izoh": "r = √(3/π) = √3/√π ko'rinishida yoziladi. Kasrni √π ga kengaytiramiz: √3·√π/π = √(3π)/π. Javob: √(3π)/π m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fizik-formulada-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#6c1ab096"
+    },
+    {
+      "q": "Kinetik energiya formulasidan v = √(2E/m) kelib chiqadi. E = 5 J va m = 12 kg bo'lsa, v ni ildizsiz maxraj bilan yozing.",
+      "v": [
+        "√30",
+        "√30/6",
+        "√5/6",
+        "√30/12"
+      ],
+      "t": 1,
+      "izoh": "2E/m nisbati 10/12 = 5/6 ga teng. √(5/6) = √5/√6 ni √6 ga kengaytiramiz: √30/6. Javob: √30/6 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fizik-formulada-maxraj",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#ac1d925c"
+    },
+    {
+      "q": "Quyidagi ifodalardan qaysi biri 1/(√5 − √3) kasrga aynan teng qiymatga ega bo'ladi?",
+      "v": [
+        "(√5 + √3)/2",
+        "(√5 − √3)/2",
+        "√5 + √3",
+        "(√5 + √3)/8"
+      ],
+      "t": 0,
+      "izoh": "Kasrni √5 + √3 ga kengaytiramiz, maxraj esa 5 − 3 = 2 bo'ladi. Demak ifoda (√5 + √3)/2 ga teng. Javob: (√5 + √3)/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniy-teng-shaklni-tanlash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#bd6fb894"
+    },
+    {
+      "q": "√(6 + 4√2) ifoda quyidagi variantlarning qaysi biriga aynan teng bo'ladi?",
+      "v": [
+        "√6 + 2√2",
+        "2 + √2",
+        "2 − √2",
+        "4 + √2"
+      ],
+      "t": 1,
+      "izoh": "4√2 ni 2√8 ko'rinishida yozamiz. 6 = 4 + 2 va 8 = 4·2 bo'lgani uchun 6 + 4√2 = (2 + √2)². Ildiz olsak 2 + √2 chiqadi. Javob: 2 + √2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniy-teng-shaklni-tanlash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#96caeccc"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri 3/(√7 + 2) ifoda bilan bir xil qiymatga ega ekanini aniqlang.",
+      "v": [
+        "3(√7 − 2)",
+        "√7 + 2",
+        "(√7 − 2)/3",
+        "√7 − 2"
+      ],
+      "t": 3,
+      "izoh": "Kasrni √7 − 2 ga kengaytiramiz. Maxraj (√7)² − 2² = 7 − 4 = 3 bo'ladi va uchliklar qisqaradi. Natija √7 − 2 ga teng. Javob: √7 − 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayniy-teng-shaklni-tanlash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#aa0ecaf9"
+    },
+    {
+      "q": "1/(√6 + √2) kasrga teng bo'lgan ifodani quyidagi variantlar orasidan tanlang.",
+      "v": [
+        "(√6 − √2)/2",
+        "(√6 − √2)/4",
+        "√6 − √2",
+        "(√6 + √2)/4"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni √6 − √2 ga ko'paytiramiz, u holda maxraj 6 − 2 = 4 bo'ladi. Natija (√6 − √2)/4 ko'rinishga keladi. Javob: (√6 − √2)/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniy-teng-shaklni-tanlash",
+      "id": "matematika_dari_m05-ildizli-ifodalarni-almashtirish-va-qosh#f5580305"
+    }
+  ]
+}

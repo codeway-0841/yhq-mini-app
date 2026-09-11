@@ -1,0 +1,546 @@
+{
+  "nom": "04-mavzu. Organik birikmalarining sinflanishi. Organik birikmalarga xos reaksiya turlari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Organik birikmalar tarkibiga ko'ra qanday sinflarga bo'linadi?",
+      "v": [
+        "Uglevodorodlar, kislorodli organik birikmalar, azotli organik birikmalar",
+        "Kislotalar, asoslar, tuzlar",
+        "Oksidlar, gidroksidlar, tuzlar",
+        "Metallar, nometallar, birikmalar"
+      ],
+      "t": 0,
+      "izoh": "Organik birikmalar tarkibiga ko'ra uglevodorodlar, kislorodli va azotli organik birikmalarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#555550a2"
+    },
+    {
+      "q": "Uglevodorodlar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Tarkibida faqat uglerod va vodorod atomlari bo'lgan birikmalarga",
+        "Tarkibida kislorod ham bo'lgan birikmalarga",
+        "Tarkibida azot ham bo'lgan birikmalarga",
+        "Tarkibida faqat uglerod bo'lgan moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Uglevodorodlar tarkibida faqat uglerod va vodorod atomlari bo'lgan birikmalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#118fe5c2"
+    },
+    {
+      "q": "Kislorodli organik birikmalar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Tarkibida uglerod va vodorod bilan bir qatorda kislorod atomi ham bo'lgan birikmalarga",
+        "Tarkibida faqat kislorod bo'lgan birikmalarga",
+        "Tarkibida azot va kislorod bo'lgan birikmalarga",
+        "Tarkibida faqat uglerod va vodorod bo'lgan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Kislorodli organik birikmalar tarkibida uglerod va vodorod bilan bir qatorda kislorod atomi ham bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#858f3350"
+    },
+    {
+      "q": "Azotli organik birikmalar haqida qaysi fikr to'g'ri?",
+      "v": [
+        "Tarkibida azot atomi saqlovchi bo'lib, ularda kislorod atomi ham bo'lishi mumkin",
+        "Tarkibida faqat azot va uglerod bo'ladi",
+        "Tarkibida kislorod hech qachon bo'lmaydi",
+        "Tarkibida vodorod bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Azot saqlovchi organik birikmalar tarkibida kislorod atomi ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#48d688df"
+    },
+    {
+      "q": "Uglevodorodlar uglerod atomlari orasidagi bog'lanishlarning turiga qarab qanday guruhlarga bo'linadi?",
+      "v": [
+        "To'yingan va to'yinmagan uglevodorodlarga",
+        "Ochiq va yopiq zanjirli birikmalarga",
+        "Bir atomli va ko'p atomli birikmalarga",
+        "Oddiy va murakkab birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Uglevodorodlar bog'lanish turiga qarab to'yingan va to'yinmagan uglevodorodlarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#341023c7"
+    },
+    {
+      "q": "To'yingan uglevodorodlarga qaysi sinflar kiradi?",
+      "v": [
+        "Alkanlar va sikloalkanlar",
+        "Alkenlar va alkinlar",
+        "Alkadiyenlar va alkenlar",
+        "Aromatik birikmalar va alkinlar"
+      ],
+      "t": 0,
+      "izoh": "To'yingan uglevodorodlarga alkanlar va sikloalkanlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#fc472b15"
+    },
+    {
+      "q": "To'yinmagan uglevodorodlarga qaysi sinflar kiradi?",
+      "v": [
+        "Alkenlar, alkadiyenlar, alkinlar va aromatik uglevodorodlar",
+        "Alkanlar va sikloalkanlar",
+        "Faqat alkenlar",
+        "Spirtlar va fenollar"
+      ],
+      "t": 0,
+      "izoh": "To'yinmagan uglevodorodlarga alkenlar, alkadiyenlar, alkinlar va aromatik uglevodorodlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#f390a60c"
+    },
+    {
+      "q": "Darslikdagi sxemada alkanlarga misol qilib qaysi modda, sikloalkanlarga misol qilib qaysi modda keltirilgan?",
+      "v": [
+        "Metan va siklopropan",
+        "Etan va siklobutan",
+        "Metan va benzol",
+        "Eten va siklopropan"
+      ],
+      "t": 0,
+      "izoh": "Sxemada alkanlarga metan, sikloalkanlarga siklopropan misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#4b896ffc"
+    },
+    {
+      "q": "Darslikdagi sxemada alkenlarga, alkadiyenlarga va alkinlarga misol qilib qaysi moddalar keltirilgan?",
+      "v": [
+        "Eten, butadiyen-1,3, atsetilen",
+        "Metan, pentan, benzol",
+        "Eten, buten, propen",
+        "Atsetilen, benzol, etan"
+      ],
+      "t": 0,
+      "izoh": "Sxemada alkenlarga eten, alkadiyenlarga butadiyen-1,3, alkinlarga atsetilen keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#07605438"
+    },
+    {
+      "q": "Aromatik birikmalarga darslikdagi sxemada qaysi modda misol qilingan?",
+      "v": [
+        "Benzol",
+        "Toluol",
+        "Fenol",
+        "Anilin"
+      ],
+      "t": 0,
+      "izoh": "Sxemada aromatik birikmalarga benzol misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#7e50e2d2"
+    },
+    {
+      "q": "Ochiq zanjirli uglevodorodlarga qaysi sinflar kiradi?",
+      "v": [
+        "Alkanlar, alkenlar, alkadiyenlar va alkinlar",
+        "Sikloalkanlar va aromatik uglevodorodlar",
+        "Faqat alkanlar",
+        "Faqat alkenlar va alkinlar"
+      ],
+      "t": 0,
+      "izoh": "Ochiq zanjirli uglevodorodlarga alkanlar, alkenlar, alkadiyenlar va alkinlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#a5c64831"
+    },
+    {
+      "q": "Yopiq zanjirli uglevodorodlarga qaysi sinflar kiradi?",
+      "v": [
+        "Sikloalkanlar va aromatik uglevodorodlar",
+        "Alkanlar va alkenlar",
+        "Alkinlar va alkadiyenlar",
+        "Alkenlar va sikloalkanlar"
+      ],
+      "t": 0,
+      "izoh": "Yopiq zanjirli uglevodorodlarga sikloalkanlar va aromatik uglevodorodlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#6531e52e"
+    },
+    {
+      "q": "Spirtlar qanday hosil bo'ladi?",
+      "v": [
+        "Gidroksil guruh alkil radikallari bilan bog'lansa",
+        "Gidroksil guruh benzol yadrosi bilan bevosita bog'lansa",
+        "Karbonil guruh vodorod bilan bog'lansa",
+        "Amino guruh alkil bilan bog'lansa"
+      ],
+      "t": 0,
+      "izoh": "Gidroksil guruh alkil radikallari bilan bog'lansa spirtlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#b7cd6de0"
+    },
+    {
+      "q": "Fenollar qanday hosil bo'ladi?",
+      "v": [
+        "Gidroksil guruh benzol yadrosi bilan bevosita bog'langan bo'lsa",
+        "Gidroksil guruh alkil radikali bilan bog'lansa",
+        "Karboksil guruh benzol bilan bog'lansa",
+        "Nitro guruh benzol bilan bog'lansa"
+      ],
+      "t": 0,
+      "izoh": "Gidroksil guruh benzol yadrosi bilan bevosita bog'langan bo'lsa fenollar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#9954d110"
+    },
+    {
+      "q": "Spirtlar va fenollar o'z navbatida qanday xillarga bo'linadi?",
+      "v": [
+        "Bir atomli va ko'p atomli xillarga",
+        "Birlamchi va ikkilamchi xillarga",
+        "To'yingan va to'yinmagan xillarga",
+        "Oddiy va murakkab xillarga"
+      ],
+      "t": 0,
+      "izoh": "Spirtlar va fenollar bir atomli va ko'p atomli xillarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#41d32f61"
+    },
+    {
+      "q": "Darslikdagi sxemada bir atomli spirtdan qaysi modda, ko'p atomli spirtdan qaysi modda misol qilingan?",
+      "v": [
+        "Metanol (CH3-OH) va etandiol-1,2",
+        "Etanol va glitserin",
+        "Metanol va fenol",
+        "Etanol va etandiol-1,2"
+      ],
+      "t": 0,
+      "izoh": "Sxemada bir atomli spirtdan metanol, ko'p atomli spirtdan etandiol-1,2 keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#42e807b3"
+    },
+    {
+      "q": "Tarkibida karbonil guruh (C=O) bor bo'lgan birikmalarni nima deyiladi?",
+      "v": [
+        "Oksobirikmalar",
+        "Karbon kislotalar",
+        "Spirtlar",
+        "Oddiy efirlar"
+      ],
+      "t": 0,
+      "izoh": "Tarkibida karbonil guruh bor birikmalar oksobirikmalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#99cd1975"
+    },
+    {
+      "q": "Oksobirikmalarga qaysi sinflar kiradi?",
+      "v": [
+        "Aldegidlar va ketonlar",
+        "Spirtlar va fenollar",
+        "Karbon kislotalar va yog'lar",
+        "Aminlar va nitrobirikmalar"
+      ],
+      "t": 0,
+      "izoh": "Oksobirikmalarga aldegidlar va ketonlar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#caa373fe"
+    },
+    {
+      "q": "Tarkibida karboksil guruh (COOH) bor bo'lgan birikmalarni nima deyiladi?",
+      "v": [
+        "Karbon kislotalar",
+        "Oksobirikmalar",
+        "Murakkab efirlar",
+        "Aldegidlar"
+      ],
+      "t": 0,
+      "izoh": "Tarkibida karboksil guruh bor birikmalar karbon kislotalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#f5a6eb22"
+    },
+    {
+      "q": "Yog'lar qaysi sinfga kiradi va qanday hosil bo'ladi?",
+      "v": [
+        "Murakkab efirlar sinfiga; uch atomli spirt (glitserin)ning yuqori yog' kislotalari bilan hosil qilgan murakkab efiri",
+        "Oddiy efirlar sinfiga; metanol va sirka kislota hosil qiladi",
+        "Uglevodlar sinfiga; glyukoza parchalanishidan hosil bo'ladi",
+        "Spirtlar sinfiga; etanol oksidlanishidan hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yog'lar glitserinning yuqori yog' kislotalari bilan hosil qilgan murakkab efiridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#d5431146"
+    },
+    {
+      "q": "Uglevodlar tuzilishiga ko'ra qanday guruhlarga bo'linadi?",
+      "v": [
+        "Monosaxaridlar, disaxaridlar va polisaxaridlarga",
+        "Bir atomli va ko'p atomli guruhlarga",
+        "To'yingan va to'yinmagan guruhlarga",
+        "Oddiy va murakkab efirlarga"
+      ],
+      "t": 0,
+      "izoh": "Uglevodlar tuzilishiga ko'ra monosaxaridlar, disaxaridlar va polisaxaridlarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#ae79e876"
+    },
+    {
+      "q": "Azot saqlovchi organik birikmalarga qaysi sinflar kiradi?",
+      "v": [
+        "Nitrobirikmalar, aminlar, aromatik aminlar va aminokislotalar",
+        "Aldegidlar, ketonlar, karbon kislotalar",
+        "Spirtlar, fenollar, yog'lar",
+        "Alkanlar, alkenlar, alkinlar"
+      ],
+      "t": 0,
+      "izoh": "Azotli birikmalarga nitrobirikmalar, aminlar, aromatik aminlar va aminokislotalar kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#91cd4a05"
+    },
+    {
+      "q": "Nitrobirikmalar deb qanday birikmalarga aytiladi?",
+      "v": [
+        "Tarkibida -NO2 guruh saqlagan birikmalarga",
+        "Tarkibida -NH2 guruh saqlagan birikmalarga",
+        "Tarkibida -COOH guruh saqlagan birikmalarga",
+        "Tarkibida -OH guruh saqlagan birikmalarga"
+      ],
+      "t": 0,
+      "izoh": "Tarkibida -NO2 guruh saqlagan birikmalarga nitrobirikmalar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#dd4dd1c8"
+    },
+    {
+      "q": "Nitrobirikmalarga darslikdagi sxemada qaysi moddalar misol qilingan?",
+      "v": [
+        "Nitrometan (CH3-NO2) va nitrobenzol",
+        "Metilamin va anilin",
+        "Sirka kislota va fenol",
+        "Metanol va etandiol"
+      ],
+      "t": 0,
+      "izoh": "Sxemada nitrobirikmalarga nitrometan va nitrobenzol misol qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#ae5bdd92"
+    },
+    {
+      "q": "Aminlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Ammiak molekulasidagi bitta yoki bir nechta vodorod atomlarining o'rnini alkil radikallari egallashi natijasida hosil bo'lgan moddalarga",
+        "Ammiakning vodorodlari aromatik radikallarga almashinib hosil bo'lgan moddalarga",
+        "Tarkibida nitro guruh bo'lgan moddalarga",
+        "Karboksil va amino guruhli moddalarga"
+      ],
+      "t": 0,
+      "izoh": "Ammiak vodorodlarining o'rnini alkil radikallari egallashi natijasida aminlar hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#dcef9ade"
+    },
+    {
+      "q": "Aminlarni qanday turlarga bo'lish mumkin?",
+      "v": [
+        "Birlamchi, ikkilamchi va uchlamchi aminlarga",
+        "Bir atomli va ko'p atomli aminlarga",
+        "Oddiy va murakkab aminlarga",
+        "To'yingan va to'yinmagan aminlarga"
+      ],
+      "t": 0,
+      "izoh": "Aminlarni birlamchi, ikkilamchi va uchlamchi aminlarga bo'lish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#baba8489"
+    },
+    {
+      "q": "Aromatik aminlar qanday hosil bo'ladi va ularga darslikda qaysi modda misol qilingan?",
+      "v": [
+        "Ammiak vodorodlarining aromatik radikallarga almashinishi natijasida; anilin",
+        "Ammiak vodorodlarining alkil radikallarga almashinishi natijasida; metilamin",
+        "Nitro guruhning benzolga birikishi natijasida; nitrobenzol",
+        "Gidroksil guruhning benzolga birikishi natijasida; fenol"
+      ],
+      "t": 0,
+      "izoh": "Aromatik aminlar ammiak vodorodlarining aromatik radikallarga almashinishidan hosil bo'ladi; misol — anilin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#24475bda"
+    },
+    {
+      "q": "Aminokislotalar deb qanday birikmalarga aytiladi va ularning ahamiyati nimada?",
+      "v": [
+        "Tarkibida karboksil va amino guruhlar bor birikmalarga; ular oqsillarning monomerlari hisoblanadi",
+        "Tarkibida faqat amino guruh bor birikmalarga; ular yog'lar monomerlari",
+        "Tarkibida faqat karboksil guruh bor birikmalarga; ular uglevodlar monomerlari",
+        "Tarkibida nitro guruh bor birikmalarga; ular efirlar monomerlari"
+      ],
+      "t": 0,
+      "izoh": "Aminokislotalar tarkibida karboksil va amino guruhlar bor bo'lib, oqsillarning monomerlari hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#1438c7d8"
+    },
+    {
+      "q": "Almashinish reaksiyalari deb qanday reaksiyalarga aytiladi?",
+      "v": [
+        "Organik molekula tarkibidagi atom(lar)ning boshqa molekula tarkibidagi atomlar bilan almashinishi orqali boradigan reaksiyalarga",
+        "Organik moddalarning boshqa molekulalar bilan birikishi orqali boradigan reaksiyalarga",
+        "Bitta birikmaning bir necha molekulaga parchalanishiga",
+        "Monomerlarning polimerga aylanishiga"
+      ],
+      "t": 0,
+      "izoh": "Almashinish reaksiyalari molekula tarkibidagi atomlarning boshqa molekula atomlari bilan almashinishi orqali boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#736ba4ae"
+    },
+    {
+      "q": "Benzolning xlor bilan reaksiyasida (C6H6 + Cl2 → C6H5Cl + HCl) qanday sharoit ko'rsatilgan va asosiy mahsulot nima?",
+      "v": [
+        "FeCl3 va harorat; xlorbenzol",
+        "H2SO4 va harorat; nitrobenzol",
+        "Katalizator; etilbenzol",
+        "Yorug'lik; geksaxloran"
+      ],
+      "t": 0,
+      "izoh": "Benzol xlor bilan FeCl3 qatnashida qizdirilganda xlorbenzol va vodorod xlorid hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#f53f8fe7"
+    },
+    {
+      "q": "Benzolning nitrat kislota bilan reaksiyasida (C6H6 + HNO3 → C6H5NO2 + H2O) asosiy mahsulot va sharoit qanday?",
+      "v": [
+        "Nitrobenzol; H2SO4 qatnashida qizdirilganda",
+        "Xlorbenzol; FeCl3 qatnashida",
+        "Anilin; katalizator qatnashida",
+        "Fenol; bosim ostida"
+      ],
+      "t": 0,
+      "izoh": "Benzol nitrat kislota bilan H2SO4 qatnashida qizdirilganda nitrobenzol va suv hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#17b1ac10"
+    },
+    {
+      "q": "Etilenga suv birikkanda (katalizator qatnashida) qanday modda hosil bo'ladi?",
+      "v": [
+        "Etanol (CH3-CH2OH)",
+        "Etan (CH3-CH3)",
+        "Dibrometan (BrCH2-CH2Br)",
+        "Atsetilen"
+      ],
+      "t": 0,
+      "izoh": "CH2=CH2 + HOH → CH3-CH2OH reaksiyasida etanol hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#e03f6e46"
+    },
+    {
+      "q": "Etilenga brom birikkanda qanday modda hosil bo'ladi?",
+      "v": [
+        "BrCH2-CH2Br",
+        "CH3-CH3",
+        "CH3-CH2OH",
+        "CH3-CH2Br"
+      ],
+      "t": 0,
+      "izoh": "CH2=CH2 + Br2 → BrCH2-CH2Br reaksiyasi birikish reaksiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#587bf8ef"
+    },
+    {
+      "q": "Etan molekulasi yuqori temperaturada qizdirilganda qanday moddalar hosil bo'ladi va bu qanday reaksiya turi?",
+      "v": [
+        "Etilen va vodorod; ajralish reaksiyasi",
+        "Etanol va suv; almashinish reaksiyasi",
+        "Etan va vodorod; birikish reaksiyasi",
+        "Etilen va suv; almashinish reaksiyasi"
+      ],
+      "t": 0,
+      "izoh": "C2H6 → CH2=CH2 + H2 — bu ajralish reaksiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#1a8788e5"
+    },
+    {
+      "q": "Etilbromidning yuqori temperaturada qizdirilishi natijasida qanday moddalar hosil bo'ladi?",
+      "v": [
+        "Etilen va vodorod bromid",
+        "Etan va brom",
+        "Etilen va vodorod",
+        "Etanol va brom"
+      ],
+      "t": 0,
+      "izoh": "CH3-CH2-Br → CH2=CH2 + HBr reaksiyasida etilen va vodorod bromid hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#e184149a"
+    },
+    {
+      "q": "Faqat organik birikmalarga xos bo'lgan reaksiya turlari qaysilar?",
+      "v": [
+        "Polimerlanish va polikondensatlanish",
+        "Almashinish va birikish",
+        "Birikish va ajralish",
+        "Almashinish va ajralish"
+      ],
+      "t": 0,
+      "izoh": "Faqat organik birikmalarga xos reaksiya turlari — polimerlanish va polikondensatlanish reaksiyalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_10_ozb_m04-sinflanish-reaksiya-turlari#877f6c8f"
+    }
+  ]
+}

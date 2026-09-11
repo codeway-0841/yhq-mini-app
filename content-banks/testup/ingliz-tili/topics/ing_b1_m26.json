@@ -1,0 +1,1306 @@
+{
+  "nom": "Work & careers (Kasb)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "\"employer\" so'zining ma'nosi qaysi?",
+      "v": [
+        "ish beruvchi",
+        "tajriba",
+        "yarim stavka",
+        "xodimlar jamoasi"
+      ],
+      "t": 0,
+      "izoh": "'employer' = ish beruvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#783fcfdc"
+    },
+    {
+      "q": "\"employee\" so'zining ma'nosi qaysi?",
+      "v": [
+        "boshliq",
+        "tajriba",
+        "xodim",
+        "ishsiz"
+      ],
+      "t": 2,
+      "izoh": "'employee' = xodim.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#e42aa812"
+    },
+    {
+      "q": "\"salary\" so'zining ma'nosi qaysi?",
+      "v": [
+        "maosh",
+        "boshliq",
+        "ish beruvchi",
+        "xodim"
+      ],
+      "t": 0,
+      "izoh": "'salary' = maosh.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#7770db1d"
+    },
+    {
+      "q": "\"colleague\" so'zining ma'nosi qaysi?",
+      "v": [
+        "maosh",
+        "hamkasb",
+        "xodim",
+        "ish beruvchi"
+      ],
+      "t": 1,
+      "izoh": "'colleague' = hamkasb.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#e07d6dbd"
+    },
+    {
+      "q": "\"boss\" so'zining ma'nosi qaysi?",
+      "v": [
+        "tajriba",
+        "yarim stavka",
+        "ish beruvchi",
+        "boshliq"
+      ],
+      "t": 3,
+      "izoh": "'boss' = boshliq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#04a78895"
+    },
+    {
+      "q": "\"apply for a job\" so'zining ma'nosi qaysi?",
+      "v": [
+        "karyera",
+        "ish suhbati",
+        "xodimlar jamoasi",
+        "ishga ariza bermoq"
+      ],
+      "t": 3,
+      "izoh": "'apply for a job' = ishga ariza bermoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#f542eceb"
+    },
+    {
+      "q": "\"interview\" so'zining ma'nosi qaysi?",
+      "v": [
+        "ko'nikmalar",
+        "oxirgi muddat",
+        "hamkasb",
+        "ish suhbati"
+      ],
+      "t": 3,
+      "izoh": "'interview' = ish suhbati.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#8dcd5f46"
+    },
+    {
+      "q": "\"CV\" so'zining ma'nosi qaysi?",
+      "v": [
+        "to'liq stavka",
+        "rezyume",
+        "ishsiz",
+        "xodimlar jamoasi"
+      ],
+      "t": 1,
+      "izoh": "'CV' = rezyume.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c7c89083"
+    },
+    {
+      "q": "\"part-time\" so'zining ma'nosi qaysi?",
+      "v": [
+        "tajriba",
+        "yarim stavka",
+        "ko'nikmalar",
+        "oxirgi muddat"
+      ],
+      "t": 1,
+      "izoh": "'part-time' = yarim stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#d02f54a2"
+    },
+    {
+      "q": "\"full-time\" so'zining ma'nosi qaysi?",
+      "v": [
+        "yarim stavka",
+        "ish suhbati",
+        "nafaqaga chiqmoq",
+        "to'liq stavka"
+      ],
+      "t": 3,
+      "izoh": "'full-time' = to'liq stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#bbbbeeb0"
+    },
+    {
+      "q": "\"promotion\" so'zining ma'nosi qaysi?",
+      "v": [
+        "ishga ariza bermoq",
+        "to'liq stavka",
+        "yig'ilish",
+        "lavozimda ko'tarilish"
+      ],
+      "t": 3,
+      "izoh": "'promotion' = lavozimda ko'tarilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c4863a13"
+    },
+    {
+      "q": "\"retire\" so'zining ma'nosi qaysi?",
+      "v": [
+        "tajriba",
+        "to'liq stavka",
+        "maosh",
+        "nafaqaga chiqmoq"
+      ],
+      "t": 3,
+      "izoh": "'retire' = nafaqaga chiqmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#d98ab614"
+    },
+    {
+      "q": "\"unemployed\" so'zining ma'nosi qaysi?",
+      "v": [
+        "rezyume",
+        "ishsiz",
+        "xodimlar jamoasi",
+        "maosh"
+      ],
+      "t": 1,
+      "izoh": "'unemployed' = ishsiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#24578a6d"
+    },
+    {
+      "q": "\"staff\" so'zining ma'nosi qaysi?",
+      "v": [
+        "ishga ariza bermoq",
+        "xodimlar jamoasi",
+        "nafaqaga chiqmoq",
+        "yarim stavka"
+      ],
+      "t": 1,
+      "izoh": "'staff' = xodimlar jamoasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#e6aa36f1"
+    },
+    {
+      "q": "\"career\" so'zining ma'nosi qaysi?",
+      "v": [
+        "yig'ilish",
+        "karyera",
+        "xodimlar jamoasi",
+        "tajriba"
+      ],
+      "t": 1,
+      "izoh": "'career' = karyera.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c67511ee"
+    },
+    {
+      "q": "\"experience\" so'zining ma'nosi qaysi?",
+      "v": [
+        "tajriba",
+        "yig'ilish",
+        "oxirgi muddat",
+        "ish suhbati"
+      ],
+      "t": 0,
+      "izoh": "'experience' = tajriba.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#a6fc5d3b"
+    },
+    {
+      "q": "\"skills\" so'zining ma'nosi qaysi?",
+      "v": [
+        "lavozimda ko'tarilish",
+        "hamkasb",
+        "ish beruvchi",
+        "ko'nikmalar"
+      ],
+      "t": 3,
+      "izoh": "'skills' = ko'nikmalar.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#506e3986"
+    },
+    {
+      "q": "\"deadline\" so'zining ma'nosi qaysi?",
+      "v": [
+        "oxirgi muddat",
+        "ish suhbati",
+        "xodimlar jamoasi",
+        "yarim stavka"
+      ],
+      "t": 0,
+      "izoh": "'deadline' = oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c6ccb72b"
+    },
+    {
+      "q": "\"meeting\" so'zining ma'nosi qaysi?",
+      "v": [
+        "xodim",
+        "yig'ilish",
+        "ishsiz",
+        "lavozimda ko'tarilish"
+      ],
+      "t": 1,
+      "izoh": "'meeting' = yig'ilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#821471ba"
+    },
+    {
+      "q": "\"ish beruvchi\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "employer",
+        "boss",
+        "experience",
+        "colleague"
+      ],
+      "t": 0,
+      "izoh": "'ish beruvchi' inglizcha 'employer'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#75516c6b"
+    },
+    {
+      "q": "\"xodim\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "staff",
+        "employee",
+        "career",
+        "skills"
+      ],
+      "t": 1,
+      "izoh": "'xodim' inglizcha 'employee'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#f7ba3d63"
+    },
+    {
+      "q": "\"maosh\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "unemployed",
+        "experience",
+        "interview",
+        "salary"
+      ],
+      "t": 3,
+      "izoh": "'maosh' inglizcha 'salary'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9568a3b7"
+    },
+    {
+      "q": "\"hamkasb\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "boss",
+        "staff",
+        "colleague",
+        "CV"
+      ],
+      "t": 2,
+      "izoh": "'hamkasb' inglizcha 'colleague'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#5ffe7252"
+    },
+    {
+      "q": "\"boshliq\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "boss",
+        "CV",
+        "employee",
+        "interview"
+      ],
+      "t": 0,
+      "izoh": "'boshliq' inglizcha 'boss'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#54dffb1b"
+    },
+    {
+      "q": "\"ishga ariza bermoq\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "employer",
+        "apply for a job",
+        "part-time",
+        "retire"
+      ],
+      "t": 1,
+      "izoh": "'ishga ariza bermoq' inglizcha 'apply for a job'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#22d96424"
+    },
+    {
+      "q": "\"ish suhbati\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "apply for a job",
+        "skills",
+        "interview",
+        "employee"
+      ],
+      "t": 2,
+      "izoh": "'ish suhbati' inglizcha 'interview'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#70cbe420"
+    },
+    {
+      "q": "\"rezyume\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "full-time",
+        "interview",
+        "CV",
+        "promotion"
+      ],
+      "t": 2,
+      "izoh": "'rezyume' inglizcha 'CV'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9284bbb1"
+    },
+    {
+      "q": "\"yarim stavka\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "employer",
+        "part-time",
+        "colleague",
+        "employee"
+      ],
+      "t": 1,
+      "izoh": "'yarim stavka' inglizcha 'part-time'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#5cf6abbd"
+    },
+    {
+      "q": "\"to'liq stavka\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "skills",
+        "full-time",
+        "meeting",
+        "interview"
+      ],
+      "t": 1,
+      "izoh": "'to'liq stavka' inglizcha 'full-time'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#97a2a38f"
+    },
+    {
+      "q": "\"lavozimda ko'tarilish\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "promotion",
+        "apply for a job",
+        "deadline",
+        "staff"
+      ],
+      "t": 0,
+      "izoh": "'lavozimda ko'tarilish' inglizcha 'promotion'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#517555b7"
+    },
+    {
+      "q": "\"nafaqaga chiqmoq\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "full-time",
+        "interview",
+        "deadline",
+        "retire"
+      ],
+      "t": 3,
+      "izoh": "'nafaqaga chiqmoq' inglizcha 'retire'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#7457ba0c"
+    },
+    {
+      "q": "\"ishsiz\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "salary",
+        "experience",
+        "staff",
+        "unemployed"
+      ],
+      "t": 3,
+      "izoh": "'ishsiz' inglizcha 'unemployed'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#75ed14d5"
+    },
+    {
+      "q": "\"xodimlar jamoasi\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "career",
+        "staff",
+        "meeting",
+        "colleague"
+      ],
+      "t": 1,
+      "izoh": "'xodimlar jamoasi' inglizcha 'staff'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#98ad68b8"
+    },
+    {
+      "q": "\"karyera\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "skills",
+        "meeting",
+        "boss",
+        "career"
+      ],
+      "t": 3,
+      "izoh": "'karyera' inglizcha 'career'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#d88a9e39"
+    },
+    {
+      "q": "\"tajriba\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "boss",
+        "deadline",
+        "experience",
+        "retire"
+      ],
+      "t": 2,
+      "izoh": "'tajriba' inglizcha 'experience'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#ef63cca8"
+    },
+    {
+      "q": "\"ko'nikmalar\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "skills",
+        "colleague",
+        "unemployed",
+        "CV"
+      ],
+      "t": 0,
+      "izoh": "'ko'nikmalar' inglizcha 'skills'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#1cf01c9b"
+    },
+    {
+      "q": "\"oxirgi muddat\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "unemployed",
+        "deadline",
+        "employer",
+        "full-time"
+      ],
+      "t": 1,
+      "izoh": "'oxirgi muddat' inglizcha 'deadline'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c58b3d5c"
+    },
+    {
+      "q": "\"yig'ilish\" — bu qaysi inglizcha so'z?",
+      "v": [
+        "boss",
+        "career",
+        "staff",
+        "meeting"
+      ],
+      "t": 3,
+      "izoh": "'yig'ilish' inglizcha 'meeting'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#871e0c94"
+    },
+    {
+      "q": "Which word means: \"a person or company that pays people to work\"?",
+      "v": [
+        "meeting",
+        "employer",
+        "employee",
+        "CV"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'employer' so'ziga mos: ish beruvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#d7853c56"
+    },
+    {
+      "q": "Which word means: \"someone who is paid to work for a person or company\"?",
+      "v": [
+        "unemployed",
+        "full-time",
+        "employee",
+        "promotion"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'employee' so'ziga mos: xodim.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#77ebbcd8"
+    },
+    {
+      "q": "Which word means: \"the money you receive for your work every month\"?",
+      "v": [
+        "salary",
+        "employer",
+        "deadline",
+        "interview"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'salary' so'ziga mos: maosh.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#2ba3b003"
+    },
+    {
+      "q": "Which word means: \"a person who works with you\"?",
+      "v": [
+        "retire",
+        "interview",
+        "colleague",
+        "meeting"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'colleague' so'ziga mos: hamkasb.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#eb2d3341"
+    },
+    {
+      "q": "Which word means: \"the person who is in charge of you at work\"?",
+      "v": [
+        "deadline",
+        "boss",
+        "part-time",
+        "full-time"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'boss' so'ziga mos: boshliq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#6d948d9d"
+    },
+    {
+      "q": "Which word means: \"to formally ask to be given a job\"?",
+      "v": [
+        "apply for a job",
+        "meeting",
+        "experience",
+        "salary"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'apply for a job' so'ziga mos: ishga ariza bermoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#3792d3d5"
+    },
+    {
+      "q": "Which word means: \"a formal meeting where you try to get a job\"?",
+      "v": [
+        "salary",
+        "staff",
+        "employee",
+        "interview"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'interview' so'ziga mos: ish suhbati.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#95097aea"
+    },
+    {
+      "q": "Which word means: \"a document about your education and work history\"?",
+      "v": [
+        "boss",
+        "colleague",
+        "CV",
+        "employer"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'CV' so'ziga mos: rezyume.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#b972bd83"
+    },
+    {
+      "q": "Which word means: \"working only for part of the usual hours\"?",
+      "v": [
+        "skills",
+        "staff",
+        "unemployed",
+        "part-time"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'part-time' so'ziga mos: yarim stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#45405fc9"
+    },
+    {
+      "q": "Which word means: \"working the full standard number of hours\"?",
+      "v": [
+        "employer",
+        "boss",
+        "part-time",
+        "full-time"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'full-time' so'ziga mos: to'liq stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#42fb65b5"
+    },
+    {
+      "q": "Which word means: \"a move to a higher and better position at work\"?",
+      "v": [
+        "staff",
+        "apply for a job",
+        "salary",
+        "promotion"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'promotion' so'ziga mos: lavozimda ko'tarilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#3664b877"
+    },
+    {
+      "q": "Which word means: \"to stop working, usually because of your age\"?",
+      "v": [
+        "promotion",
+        "part-time",
+        "retire",
+        "CV"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'retire' so'ziga mos: nafaqaga chiqmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c5e177ba"
+    },
+    {
+      "q": "Which word means: \"not having a paid job\"?",
+      "v": [
+        "deadline",
+        "retire",
+        "unemployed",
+        "boss"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'unemployed' so'ziga mos: ishsiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#cbc02c55"
+    },
+    {
+      "q": "Which word means: \"all the people who work in a company\"?",
+      "v": [
+        "staff",
+        "boss",
+        "colleague",
+        "apply for a job"
+      ],
+      "t": 0,
+      "izoh": "Bu ta'rif 'staff' so'ziga mos: xodimlar jamoasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#620132d2"
+    },
+    {
+      "q": "Which word means: \"your working life and profession over many years\"?",
+      "v": [
+        "employee",
+        "meeting",
+        "salary",
+        "career"
+      ],
+      "t": 3,
+      "izoh": "Bu ta'rif 'career' so'ziga mos: karyera.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#32905596"
+    },
+    {
+      "q": "Which word means: \"knowledge and skill you get from doing a job\"?",
+      "v": [
+        "employer",
+        "salary",
+        "experience",
+        "staff"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'experience' so'ziga mos: tajriba.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#90851cb1"
+    },
+    {
+      "q": "Which word means: \"the abilities you have to do something well\"?",
+      "v": [
+        "employer",
+        "skills",
+        "deadline",
+        "meeting"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'skills' so'ziga mos: ko'nikmalar.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#1b939f15"
+    },
+    {
+      "q": "Which word means: \"the latest time by which you must finish something\"?",
+      "v": [
+        "employee",
+        "deadline",
+        "employer",
+        "colleague"
+      ],
+      "t": 1,
+      "izoh": "Bu ta'rif 'deadline' so'ziga mos: oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9677f64a"
+    },
+    {
+      "q": "Which word means: \"when people come together to discuss work\"?",
+      "v": [
+        "part-time",
+        "boss",
+        "meeting",
+        "skills"
+      ],
+      "t": 2,
+      "izoh": "Bu ta'rif 'meeting' so'ziga mos: yig'ilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#ff2ab098"
+    },
+    {
+      "q": "What is the opposite of \"employer\"?",
+      "v": [
+        "employee",
+        "full-time",
+        "cruel",
+        "career"
+      ],
+      "t": 0,
+      "izoh": "'employer' teskarisi — 'employee'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#2891ddaf"
+    },
+    {
+      "q": "What is the opposite of \"employee\"?",
+      "v": [
+        "career",
+        "retire",
+        "employer",
+        "unemployed"
+      ],
+      "t": 2,
+      "izoh": "'employee' teskarisi — 'employer'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#0bae1ed7"
+    },
+    {
+      "q": "What is the opposite of \"part-time\"?",
+      "v": [
+        "mean",
+        "employed",
+        "full-time",
+        "career"
+      ],
+      "t": 2,
+      "izoh": "'part-time' teskarisi — 'full-time'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#fe4faa30"
+    },
+    {
+      "q": "What is the opposite of \"full-time\"?",
+      "v": [
+        "full-time",
+        "experience",
+        "unemployed",
+        "part-time"
+      ],
+      "t": 3,
+      "izoh": "'full-time' teskarisi — 'part-time'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#84d82a4b"
+    },
+    {
+      "q": "What is the opposite of \"unemployed\"?",
+      "v": [
+        "employed",
+        "unfriendly",
+        "interview",
+        "unemployed"
+      ],
+      "t": 0,
+      "izoh": "'unemployed' teskarisi — 'employed'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#722013c4"
+    },
+    {
+      "q": "What is the opposite of \"boss\"?",
+      "v": [
+        "employee",
+        "part-time",
+        "miserable",
+        "unkind"
+      ],
+      "t": 0,
+      "izoh": "'boss' teskarisi — 'employee'.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9b91ff2e"
+    },
+    {
+      "q": "My ___ pays me at the end of every month.",
+      "v": [
+        "apply for a job",
+        "boss",
+        "deadline",
+        "employer"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'employer' — ma'nosi: ish beruvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c971e536"
+    },
+    {
+      "q": "Every ___ in the company must sign the contract.",
+      "v": [
+        "interview",
+        "unemployed",
+        "employee",
+        "apply for a job"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'employee' — ma'nosi: xodim.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#3f7cd300"
+    },
+    {
+      "q": "Her monthly ___ is enough to live well.",
+      "v": [
+        "career",
+        "apply for a job",
+        "experience",
+        "salary"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'salary' — ma'nosi: maosh.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#354eb0de"
+    },
+    {
+      "q": "I discussed the project with my ___ at the next desk.",
+      "v": [
+        "colleague",
+        "staff",
+        "apply for a job",
+        "unemployed"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'colleague' — ma'nosi: hamkasb.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#0a01234c"
+    },
+    {
+      "q": "My ___ told me to finish the report today.",
+      "v": [
+        "interview",
+        "employer",
+        "employee",
+        "boss"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'boss' — ma'nosi: boshliq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c33dd666"
+    },
+    {
+      "q": "When you see a good position, you should ___.",
+      "v": [
+        "promotion",
+        "unemployed",
+        "apply for a job",
+        "employer"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'apply for a job' — ma'nosi: ishga ariza bermoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#af9f5e35"
+    },
+    {
+      "q": "I was very nervous before my job ___ yesterday.",
+      "v": [
+        "employee",
+        "part-time",
+        "interview",
+        "career"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'interview' — ma'nosi: ish suhbati.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#943e768e"
+    },
+    {
+      "q": "Please send your ___ with your education and work history.",
+      "v": [
+        "experience",
+        "CV",
+        "apply for a job",
+        "unemployed"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'CV' — ma'nosi: rezyume.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#2526ab91"
+    },
+    {
+      "q": "She works only in the mornings; she has a ___ job.",
+      "v": [
+        "part-time",
+        "promotion",
+        "skills",
+        "deadline"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'part-time' — ma'nosi: yarim stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#b3ff9475"
+    },
+    {
+      "q": "He works forty hours a week; it is a ___ job.",
+      "v": [
+        "full-time",
+        "apply for a job",
+        "colleague",
+        "meeting"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'full-time' — ma'nosi: to'liq stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#bb16b5ce"
+    },
+    {
+      "q": "After five years of good work, she got a ___.",
+      "v": [
+        "apply for a job",
+        "promotion",
+        "employee",
+        "experience"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'promotion' — ma'nosi: lavozimda ko'tarilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#6f245f33"
+    },
+    {
+      "q": "My grandfather will ___ when he is sixty-five.",
+      "v": [
+        "meeting",
+        "promotion",
+        "deadline",
+        "retire"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'retire' — ma'nosi: nafaqaga chiqmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#acbaacf3"
+    },
+    {
+      "q": "He lost his job and is now ___.",
+      "v": [
+        "salary",
+        "unemployed",
+        "retire",
+        "deadline"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'unemployed' — ma'nosi: ishsiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#2adcc503"
+    },
+    {
+      "q": "All the ___ received a bonus this year.",
+      "v": [
+        "staff",
+        "deadline",
+        "skills",
+        "retire"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'staff' — ma'nosi: xodimlar jamoasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#cbfc6065"
+    },
+    {
+      "q": "She has had a long and successful ___ in medicine.",
+      "v": [
+        "boss",
+        "career",
+        "apply for a job",
+        "CV"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'career' — ma'nosi: karyera.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#91dd8eb8"
+    },
+    {
+      "q": "He has ten years of ___ in teaching.",
+      "v": [
+        "promotion",
+        "employer",
+        "part-time",
+        "experience"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'experience' — ma'nosi: tajriba.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9a83361d"
+    },
+    {
+      "q": "Good computer ___ are important for this job.",
+      "v": [
+        "boss",
+        "career",
+        "salary",
+        "skills"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'skills' — ma'nosi: ko'nikmalar.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#266ad829"
+    },
+    {
+      "q": "We must finish the work before the ___ on Friday.",
+      "v": [
+        "experience",
+        "deadline",
+        "career",
+        "meeting"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'deadline' — ma'nosi: oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#a5e8224f"
+    },
+    {
+      "q": "There is a team ___ at ten o'clock.",
+      "v": [
+        "retire",
+        "boss",
+        "interview",
+        "meeting"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'meeting' — ma'nosi: yig'ilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#b0db4885"
+    },
+    {
+      "q": "The ___ interviewed five people for the position.",
+      "v": [
+        "apply for a job",
+        "employer",
+        "salary",
+        "staff"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'employer' — ma'nosi: ish beruvchi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#234d0de1"
+    },
+    {
+      "q": "A hard-working ___ often gets a promotion.",
+      "v": [
+        "employee",
+        "meeting",
+        "colleague",
+        "deadline"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'employee' — ma'nosi: xodim.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#6121d305"
+    },
+    {
+      "q": "My ___ is not enough to pay all my bills.",
+      "v": [
+        "meeting",
+        "skills",
+        "deadline",
+        "salary"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'salary' — ma'nosi: maosh.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c2a32acf"
+    },
+    {
+      "q": "I get on well with every ___ in my office.",
+      "v": [
+        "staff",
+        "promotion",
+        "colleague",
+        "apply for a job"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'colleague' — ma'nosi: hamkasb.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#bad80527"
+    },
+    {
+      "q": "The ___ signed all the important documents.",
+      "v": [
+        "retire",
+        "boss",
+        "employee",
+        "salary"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'boss' — ma'nosi: boshliq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#efcea943"
+    },
+    {
+      "q": "You should prepare your answers before an ___.",
+      "v": [
+        "interview",
+        "staff",
+        "part-time",
+        "deadline"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'interview' — ma'nosi: ish suhbati.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#9a007bec"
+    },
+    {
+      "q": "A short, clear ___ helps you get an interview.",
+      "v": [
+        "meeting",
+        "salary",
+        "skills",
+        "CV"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'CV' — ma'nosi: rezyume.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#af98cd47"
+    },
+    {
+      "q": "Students often look for ___ jobs to earn a little money.",
+      "v": [
+        "full-time",
+        "colleague",
+        "interview",
+        "part-time"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'part-time' — ma'nosi: yarim stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#31e926a5"
+    },
+    {
+      "q": "A ___ worker usually gets more benefits than a part-time one.",
+      "v": [
+        "colleague",
+        "unemployed",
+        "CV",
+        "full-time"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'full-time' — ma'nosi: to'liq stavka.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#626f2fc5"
+    },
+    {
+      "q": "She hopes to get a ___ to manager next year.",
+      "v": [
+        "deadline",
+        "employee",
+        "employer",
+        "promotion"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'promotion' — ma'nosi: lavozimda ko'tarilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#c002a3d4"
+    },
+    {
+      "q": "Many people ___ and then travel around the world.",
+      "v": [
+        "retire",
+        "experience",
+        "employer",
+        "unemployed"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'retire' — ma'nosi: nafaqaga chiqmoq.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#d2d51d5a"
+    },
+    {
+      "q": "The number of ___ people rose last year.",
+      "v": [
+        "unemployed",
+        "part-time",
+        "apply for a job",
+        "full-time"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javob 'unemployed' — ma'nosi: ishsiz.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#e323d993"
+    },
+    {
+      "q": "Our company has a ___ of fifty people.",
+      "v": [
+        "full-time",
+        "staff",
+        "deadline",
+        "apply for a job"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'staff' — ma'nosi: xodimlar jamoasi.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#e092579d"
+    },
+    {
+      "q": "Teaching is a rewarding ___ for many people.",
+      "v": [
+        "part-time",
+        "CV",
+        "unemployed",
+        "career"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'career' — ma'nosi: karyera.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#ba781e3d"
+    },
+    {
+      "q": "Work ___ is sometimes more useful than a diploma.",
+      "v": [
+        "staff",
+        "employer",
+        "experience",
+        "skills"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'experience' — ma'nosi: tajriba.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#5aa4c3b6"
+    },
+    {
+      "q": "Communication ___ help you work well with others.",
+      "v": [
+        "boss",
+        "skills",
+        "unemployed",
+        "staff"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javob 'skills' — ma'nosi: ko'nikmalar.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#cc2dd7ee"
+    },
+    {
+      "q": "The report has a strict ___; don't be late.",
+      "v": [
+        "staff",
+        "employer",
+        "deadline",
+        "interview"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javob 'deadline' — ma'nosi: oxirgi muddat.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#031d964d"
+    },
+    {
+      "q": "The ___ lasted two hours and we made many decisions.",
+      "v": [
+        "experience",
+        "skills",
+        "boss",
+        "meeting"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javob 'meeting' — ma'nosi: yig'ilish.",
+      "qiy": "orta",
+      "id": "ing_b1_m26#48fc697a"
+    }
+  ]
+}

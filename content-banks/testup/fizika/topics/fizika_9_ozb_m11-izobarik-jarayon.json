@@ -1,0 +1,486 @@
+{
+  "nom": "11-mavzu. Izobarik Jarayon",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ideal gazning massasi (m = const) va bosimi (p = const) o'zgarmas bo'lgandagi gaz holatining o'zgarish jarayoniga nima deyiladi?",
+      "v": [
+        "Izobarik jarayon",
+        "Izotermik jarayon",
+        "Izoxorik jarayon",
+        "Adiabatik jarayon"
+      ],
+      "t": 0,
+      "izoh": "m = const va p = const bo'lgandagi jarayon izobarik jarayon deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#d134cea3"
+    },
+    {
+      "q": "Grekcha «baros» so'zi qanday ma'noni anglatadi?",
+      "v": [
+        "Bosim",
+        "Teng",
+        "Hajm",
+        "Issiq"
+      ],
+      "t": 0,
+      "izoh": "Grekcha «baros» — bosim degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#dcfd4b76"
+    },
+    {
+      "q": "Izobarik jarayonda berilgan gaz massasining qaysi kattaligi temperaturaga bog'liq ravishda o'zgaradi?",
+      "v": [
+        "Hajmi (V)",
+        "Bosimi (p)",
+        "Molyar massasi",
+        "Molekulalar soni"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda berilgan gaz massasining hajmi (V) uning temperaturasi (T) ga bog'liq ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#8829a8a1"
+    },
+    {
+      "q": "Izobarik jarayonda gazning hajmi bilan temperaturasi orasidagi bog'lanish qaysi tenglamadan foydalanib keltirib chiqariladi?",
+      "v": [
+        "Gazning holat tenglamasi (Mendeleyev-Klapeyron) dan",
+        "Boyl-Mariott qonunidan",
+        "Maksvell taqsimotidan",
+        "Shtern tajribasidan"
+      ],
+      "t": 0,
+      "izoh": "Bog'lanish gazning holat tenglamasidan (Mendeleyev-Klapeyron) foydalanib keltirib chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#04b718fd"
+    },
+    {
+      "q": "Gey-Lyussak qonunining matematik ifodasi qanday?",
+      "v": [
+        "V₁/V₂ = T₁/T₂ yoki V₁/T₁ = V₂/T₂",
+        "p₁V₁ = p₂V₂",
+        "p₁/T₁ = p₂/T₂",
+        "V₁T₁ = V₂T₂"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda V₁/V₂ = T₁/T₂ yoki V₁/T₁ = V₂/T₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#563e7730"
+    },
+    {
+      "q": "Izobarik jarayonda qanday kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Gaz hajmining absolyut temperaturaga nisbati (V/T = const)",
+        "Gaz bosimining hajmga ko'paytmasi",
+        "Gaz bosimining temperaturaga nisbati",
+        "Gaz hajmining kvadrati"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda berilgan massali gaz hajmining absolyut temperaturaga nisbati o'zgarmas kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#3acd4c38"
+    },
+    {
+      "q": "Gey-Lyussak qonuni qachon va kim tomonidan tajribada topilgan?",
+      "v": [
+        "1802-yilda fransuz fizigi Gey-Lyussak tomonidan",
+        "1662-yilda R. Boyl tomonidan",
+        "1787-yilda Jak Sharl tomonidan",
+        "1676-yilda E. Mariott tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Bu qonun 1802-yilda fransuz fizigi Gey-Lyussak tomonidan tajribada topilganligi uchun Gey-Lyussak qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#be50bf84"
+    },
+    {
+      "q": "V/T = const tenglikni umumiy maxrajga keltirib qanday yozish mumkin?",
+      "v": [
+        "V = const·T",
+        "V = const/T",
+        "T = const·V²",
+        "V·T = 0"
+      ],
+      "t": 0,
+      "izoh": "Tenglikni umumiy maxrajga keltirib V = const·T ko'rinishda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#0bdf3467"
+    },
+    {
+      "q": "Izobarik jarayonda berilgan massali gaz hajmi uning absolyut temperaturasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda berilgan massali gaz hajmi uning absolyut temperaturasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#791b074e"
+    },
+    {
+      "q": "Izobarik jarayonda gazning hajmi bilan temperaturasi orasidagi munosabatni ifodalovchi chiziq nima deyiladi?",
+      "v": [
+        "Izobara chizig'i",
+        "Izoterma chizig'i",
+        "Izoxora chizig'i",
+        "Giperbola"
+      ],
+      "t": 0,
+      "izoh": "Bu munosabatni ifodalovchi chiziq izobara chizig'i deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#a821cb8c"
+    },
+    {
+      "q": "Izobara chizig'i qanday chiziqdan iborat?",
+      "v": [
+        "Koordinata boshidan chiquvchi to'g'ri chiziqdan",
+        "Giperboladan",
+        "Gorizontal to'g'ri chiziqdan",
+        "Paraboladan"
+      ],
+      "t": 0,
+      "izoh": "Izobara chizig'i koordinata boshidan chiquvchi to'g'ri chiziqdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#0ab0badf"
+    },
+    {
+      "q": "Izobara grafigi qaysi koordinatalarda chiziladi?",
+      "v": [
+        "V-T koordinatalarda",
+        "p-V koordinatalarda",
+        "p-T koordinatalarda",
+        "ρ-V koordinatalarda"
+      ],
+      "t": 0,
+      "izoh": "Izobara chizig'i V-T koordinatalarda p = const uchun chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#c53a19d0"
+    },
+    {
+      "q": "O'zgarmas bosimda berilgan massali gazning hajmi temperaturaga qanday o'zgaradi?",
+      "v": [
+        "Temperaturaga to'g'ri proporsional ravishda",
+        "Temperaturaga teskari proporsional ravishda",
+        "O'zgarmaydi",
+        "Kvadratik ravishda"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas bosimda berilgan massali gazning hajmi temperaturaga to'g'ri proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#6e813a75"
+    },
+    {
+      "q": "Izobarik qizdirishda gaz hajmi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "V = const·T ga ko'ra, temperatura oshganda hajm ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#274c87dd"
+    },
+    {
+      "q": "Izobarik jarayonda gaz sovitilsa, uning hajmi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura pasayganda hajm ham kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#018d4614"
+    },
+    {
+      "q": "Izobarik jarayonda gazning absolyut temperaturasi 2 marta ortsa, hajmi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "V = const·T ga ko'ra, hajm ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#8f6fc46c"
+    },
+    {
+      "q": "Izobarik jarayonda gaz hajmini 2 marta kamaytirish uchun absolyut temperaturani qanday o'zgartirish kerak?",
+      "v": [
+        "2 marta kamaytirish",
+        "2 marta oshirish",
+        "4 marta kamaytirish",
+        "O'zgartirmaslik"
+      ],
+      "t": 0,
+      "izoh": "V₁/T₁ = V₂/T₂ ga ko'ra, hajm 2 marta kamaysa, temperatura ham 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#e11c173d"
+    },
+    {
+      "q": "Gey-Lyussak qonunida temperatura qaysi shkalada ifodalanishi shart?",
+      "v": [
+        "Kelvin (absolyut) shkalada",
+        "Selsiy shkalada",
+        "Farengeyt shkalada",
+        "Istalgan shkalada"
+      ],
+      "t": 0,
+      "izoh": "Qonunda absolyut temperatura T ishtirok etadi, u kelvinda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#a740d0c6"
+    },
+    {
+      "q": "67 °C temperatura kelvinda qanchaga teng?",
+      "v": [
+        "340 K",
+        "67 K",
+        "206 K",
+        "273 K"
+      ],
+      "t": 0,
+      "izoh": "T = 67 + 273 = 340 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#50d8d60a"
+    },
+    {
+      "q": "Izobarik jarayonda V₂ ni topish formulasi qanday?",
+      "v": [
+        "V₂ = V₁T₂/T₁",
+        "V₂ = V₁T₁/T₂",
+        "V₂ = T₂/(V₁T₁)",
+        "V₂ = V₁·T₁·T₂"
+      ],
+      "t": 0,
+      "izoh": "V₁/T₁ = V₂/T₂ dan V₂ = V₁T₂/T₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#af90141f"
+    },
+    {
+      "q": "Izobarik jarayonda T₂ ni topish formulasi qanday?",
+      "v": [
+        "T₂ = V₂T₁/V₁",
+        "T₂ = V₁T₁/V₂",
+        "T₂ = V₁V₂/T₁",
+        "T₂ = T₁V₁V₂"
+      ],
+      "t": 0,
+      "izoh": "V₁/T₁ = V₂/T₂ dan T₂ = V₂T₁/V₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#c1688ba6"
+    },
+    {
+      "q": "Gey-Lyussak qonuni gazning ikki holati uchun holat tenglamalari yozilib, qanday usul bilan olingan?",
+      "v": [
+        "Tenglamalarni hadma-had bo'lish yo'li bilan",
+        "Tenglamalarni qo'shish yo'li bilan",
+        "Grafik chizish yo'li bilan",
+        "Differensiallash yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Bosim o'zgarmas (p₁ = p₂) bo'lgan ikki holat tenglamalari hadma-had bo'linib, V₁/V₂ = T₁/T₂ hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#a67a5c1d"
+    },
+    {
+      "q": "Izobarik jarayonda gaz hajmi 25 l dan 10 l ga kamayishi uchun temperatura qanday o'zgarishi kerak (boshlang'ich T₁ = 340 K)?",
+      "v": [
+        "136 K gacha kamayishi kerak",
+        "340 K da qolishi kerak",
+        "850 K gacha oshishi kerak",
+        "273 K gacha kamayishi kerak"
+      ],
+      "t": 0,
+      "izoh": "T₂ = V₂T₁/V₁ = (10·10⁻³·340)/(25·10⁻³) = 136 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#2d7e9ebd"
+    },
+    {
+      "q": "Yuqoridagi holatda gazni qancha sovitish kerak (ΔT)?",
+      "v": [
+        "204 K",
+        "136 K",
+        "340 K",
+        "100 K"
+      ],
+      "t": 0,
+      "izoh": "ΔT = T₁ − T₂ = 340 K − 136 K = 204 K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#1ee88570"
+    },
+    {
+      "q": "Izobarik jarayonda V-T grafikdagi izobara chizig'ining qiyaligi nimaga bog'liq?",
+      "v": [
+        "Gaz bosimiga",
+        "Gaz rangiga",
+        "Idish shakliga",
+        "Molekula hajmiga"
+      ],
+      "t": 0,
+      "izoh": "V = (mR/Mp)·T ga ko'ra, izobara qiyaligi bosimga bog'liq: bosim kichik bo'lsa, qiyalik katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#2c10407d"
+    },
+    {
+      "q": "V-T grafikda ikki xil bosim uchun chizilgan izobaralardan qaysi biri tikroq joylashadi?",
+      "v": [
+        "Kichikroq bosimga mos izobara",
+        "Kattaroq bosimga mos izobara",
+        "Ikkalasi bir xil qiyalikda",
+        "Izobaralar kesishmaydi"
+      ],
+      "t": 0,
+      "izoh": "V = (mR/Mp)·T dan ko'rinadiki, p kichik bo'lsa, V/T nisbat katta, ya'ni chiziq tikroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#191f4b98"
+    },
+    {
+      "q": "Izobarik jarayonda gazning massasi va bosimi o'zgarmas bo'lsa, hajm bilan temperatura nisbati qanday bo'ladi?",
+      "v": [
+        "O'zgarmas (const)",
+        "O'zgaruvchan",
+        "Nolga teng",
+        "Cheksiz katta"
+      ],
+      "t": 0,
+      "izoh": "V/T = const.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#4885926d"
+    },
+    {
+      "q": "Izobarik jarayon qaysi izojarayon turiga kiradi?",
+      "v": [
+        "Bosim o'zgarmas bo'lgan izojarayon",
+        "Temperatura o'zgarmas bo'lgan izojarayon",
+        "Hajm o'zgarmas bo'lgan izojarayon",
+        "Massa o'zgaruvchan jarayon"
+      ],
+      "t": 0,
+      "izoh": "Izobarik jarayonda bosim (p = const) o'zgarmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#8a017f92"
+    },
+    {
+      "q": "Izobarik jarayon uchun holat tenglamasining ikki holat ko'rinishi qanday?",
+      "v": [
+        "p₁V₁ = (m/M)RT₁ va p₂V₂ = (m/M)RT₂",
+        "p₁V₁ = p₂V₂",
+        "p₁/T₁ = p₂/T₂",
+        "V₁T₁ = V₂T₂"
+      ],
+      "t": 0,
+      "izoh": "Gazning holat tenglamasi ikki holat uchun p₁V₁ = (m/M)RT₁ va p₂V₂ = (m/M)RT₂ ko'rinishda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#608a3032"
+    },
+    {
+      "q": "Gaz izobarik qizdirilganda uning zichligi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi, chunki hajm ortadi",
+        "Ortadi, chunki hajm ortadi",
+        "O'zgarmaydi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "ρ = m/V: massa o'zgarmas, hajm ortadi, demak zichlik kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#275299a0"
+    },
+    {
+      "q": "Masala yechishda ΔT = T₁ − T₂ ifodaning o'lchov birligi nima?",
+      "v": [
+        "K (kelvin)",
+        "J (joul)",
+        "Pa (paskal)",
+        "m³"
+      ],
+      "t": 0,
+      "izoh": "Temperatura ayirmasi kelvinda o'lchanadi: [ΔT] = K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#a5898184"
+    },
+    {
+      "q": "25 l hajm SI sistemasida qanday ifodalanadi?",
+      "v": [
+        "25·10⁻³ m³",
+        "25·10³ m³",
+        "0,25 m³",
+        "2,5 m³"
+      ],
+      "t": 0,
+      "izoh": "1 l = 10⁻³ m³, demak 25 l = 25·10⁻³ m³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m11-izobarik-jarayon#3a757658"
+    }
+  ]
+}

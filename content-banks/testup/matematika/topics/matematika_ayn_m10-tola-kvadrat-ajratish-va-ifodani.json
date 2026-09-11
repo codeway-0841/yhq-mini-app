@@ -1,0 +1,1609 @@
+{
+  "nom": "To'la kvadrat ajratish va ifodani baholash",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Malika daftarida x² + 10x + 21 ifodasini to'la kvadrat ajratib yozmoqchi. U qaysi ko'rinishni olishi kerak?",
+      "v": [
+        "(x + 5)² + 4",
+        "(x + 5)² − 4",
+        "(x + 10)² − 79",
+        "(x + 5)² + 21"
+      ],
+      "t": 1,
+      "izoh": "x² + 10x ni to'ldirish uchun (10 : 2)² = 25 kerak bo'ladi. Shunda x² + 10x + 21 = (x² + 10x + 25) − 25 + 21 = (x + 5)² − 4. Javob: (x + 5)² − 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-shakl-a1",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#7c30656d"
+    },
+    {
+      "q": "x² − 14x + 40 ko'phadini (x + m)² + n ko'rinishida yozganda hosil bo'ladigan ifodani belgilang.",
+      "v": [
+        "(x − 7)² + 9",
+        "(x + 7)² − 9",
+        "(x − 7)² − 9",
+        "(x − 14)² − 156"
+      ],
+      "t": 2,
+      "izoh": "Koeffitsientning yarmi 14 : 2 = 7 ga teng. x² − 14x + 49 = (x − 7)² bo'lgani uchun 40 ni 49 − 9 deb yozamiz. Demak ifoda (x − 7)² − 9 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-shakl-a1",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#5b8236f6"
+    },
+    {
+      "q": "Bekzod x² + 6x + 13 ifodasini to'la kvadrat ajratish usuli bilan almashtirdi va to'g'ri natijani oldi. Bu qaysi ifoda?",
+      "v": [
+        "(x + 3)² − 4",
+        "(x + 6)² − 23",
+        "(x + 3)² + 13",
+        "(x + 3)² + 4"
+      ],
+      "t": 3,
+      "izoh": "Ifodani (x² + 6x + 9) + 4 ko'rinishida guruhlaymiz. Birinchi qavs (x + 3)² ga teng, qolgan qism esa 13 − 9 = 4. Demak natija (x + 3)² + 4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-shakl-a1",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#1732f4de"
+    },
+    {
+      "q": "x² − 5x + 9 uchhadini to'la kvadrat ajratib yozing va to'g'ri javobni tanlang.",
+      "v": [
+        "(x − 5/2)² + 11/4",
+        "(x − 5/2)² − 11/4",
+        "(x − 5/2)² + 29/4",
+        "(x − 5)² − 16"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient yarmi 5/2, uning kvadrati 25/4 ga teng. Shunda x² − 5x + 25/4 = (x − 5/2)² bo'ladi. Ozod had 9 − 25/4 = 36/4 − 25/4 = 11/4 bo'lib qoladi, ya'ni (x − 5/2)² + 11/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-shakl-a1",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#98fd79fc"
+    },
+    {
+      "q": "2x² + 12x + 23 ifodasini a(x + m)² + n ko'rinishiga keltirganda qaysi natija hosil bo'ladi?",
+      "v": [
+        "2(x + 3)² + 23",
+        "2(x + 6)² − 49",
+        "2(x + 3)² + 5",
+        "2(x + 3)² − 5"
+      ],
+      "t": 2,
+      "izoh": "Avval bosh koeffitsient 2 ni qavsdan chiqaramiz: 2(x² + 6x) + 23. Qavs ichida (x + 3)² − 9 hosil qilamiz va 2 ga ko'paytiramiz. Shunda 2(x + 3)² − 18 + 23 = 2(x + 3)² + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-shakl-a-boshqa",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#cae6ead6"
+    },
+    {
+      "q": "Ustoz taxtaga 3x² − 18x + 35 ifodasini yozib, uni to'la kvadrat orqali qayta yozishni so'radi. To'g'ri yozuv qaysi?",
+      "v": [
+        "3(x − 3)² + 26",
+        "3(x − 3)² + 8",
+        "3(x − 6)² + 8",
+        "3(x − 3)² − 8"
+      ],
+      "t": 1,
+      "izoh": "3 ni qavsdan chiqaramiz: 3(x² − 6x) + 35. Qavsda (x − 3)² − 9 hosil bo'ladi, u 3 ga ko'paytirilsa −27 chiqadi. Demak 3(x − 3)² − 27 + 35 = 3(x − 3)² + 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-shakl-a-boshqa",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9f12ef86"
+    },
+    {
+      "q": "Bosh koeffitsienti manfiy bo'lgan −x² + 8x − 11 ifodasini to'la kvadrat ajratib yozing.",
+      "v": [
+        "−(x − 4)² − 5",
+        "−(x + 4)² + 5",
+        "−(x − 4)² + 27",
+        "−(x − 4)² + 5"
+      ],
+      "t": 3,
+      "izoh": "Minusni qavsdan chiqaramiz: −(x² − 8x + 11). Qavs ichida x² − 8x = (x − 4)² − 16 bo'ladi. Demak −[(x − 4)² − 16 + 11] = −(x − 4)² + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-shakl-a-boshqa",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#348a72b3"
+    },
+    {
+      "q": "5x² + 20x + 9 uchhadi uchun a(x + m)² + n yoyilmasi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "5(x + 2)² − 11",
+        "5(x + 2)² + 5",
+        "5(x + 2)² − 31",
+        "5(x + 4)² − 71"
+      ],
+      "t": 0,
+      "izoh": "Ifodani 5(x² + 4x) + 9 ko'rinishiga keltiramiz. Qavsda (x + 2)² − 4 hosil bo'ladi, 5 ga ko'paytirilsa −20 chiqadi. Shunda 5(x + 2)² − 20 + 9 = 5(x + 2)² − 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-shakl-a-boshqa",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#e4aae81e"
+    },
+    {
+      "q": "x² − 12x + 45 ifodasi (x + m)² + n ko'rinishiga keltirildi. m va n sonlarining yig'indisi nechaga teng?",
+      "v": [
+        "15",
+        "3",
+        "75",
+        "−15"
+      ],
+      "t": 1,
+      "izoh": "To'la kvadrat ajratsak x² − 12x + 36 + 9 = (x − 6)² + 9 hosil bo'ladi. Demak m = −6 va n = 9. Ularning yig'indisi −6 + 9 = 3 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-koeffitsient-topish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#acfbceea"
+    },
+    {
+      "q": "4x² + 4x + 7 ifodasi 4(x + m)² + n shaklida yozilsa, n ning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "7",
+        "3",
+        "6",
+        "6,75"
+      ],
+      "t": 2,
+      "izoh": "Bosh koeffitsientni chiqaramiz: 4(x² + x) + 7. Qavsda (x + 1/2)² − 1/4 bo'ladi, 4 ga ko'paytirilsa −1 chiqadi. Demak n = 7 − 1 = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-koeffitsient-topish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#068276f8"
+    },
+    {
+      "q": "2x² − 10x + 3 uchhadini 2(x + m)² + n ko'rinishiga keltirganda m qanday qiymat oladi?",
+      "v": [
+        "−5/2",
+        "−5",
+        "5/2",
+        "−25/4"
+      ],
+      "t": 0,
+      "izoh": "Ifodani 2(x² − 5x) + 3 deb yozamiz. Qavs ichidagi koeffitsientning yarmi 5/2 bo'lgani uchun (x − 5/2)² hosil bo'ladi. Demak m = −5/2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-koeffitsient-topish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#e1550b1f"
+    },
+    {
+      "q": "Nodira x² + 7x + 20 ifodasini to'la kvadrat ajratdi va qavsdan tashqaridagi ozod hadni daftariga yozdi. U qanday son yozgan?",
+      "v": [
+        "129/4",
+        "31/4",
+        "−31/4",
+        "20"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient yarmi 7/2, uning kvadrati 49/4 ga teng. Ozod had 20 − 49/4 = 80/4 − 49/4 = 31/4 bo'ladi. Demak ifoda (x + 7/2)² + 31/4 ko'rinishida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tola-kvadrat-koeffitsient-topish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9170fe8f"
+    },
+    {
+      "q": "x² − 8x + 21 ifodasi qabul qila oladigan eng kichik qiymatni toping.",
+      "v": [
+        "−5",
+        "21",
+        "37",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadrat ajratamiz: x² − 8x + 16 + 5 = (x − 4)² + 5. Kvadratning eng kichik qiymati nolga teng, shuning uchun butun ifodaning eng kichik qiymati 5 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#168fa64d"
+    },
+    {
+      "q": "Sinov ishida 3x² + 12x + 20 ifodasining eng kichik qiymatini topish talab qilingan. To'g'ri javob qaysi?",
+      "v": [
+        "20",
+        "−8",
+        "8",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ifodani 3(x² + 4x) + 20 = 3(x + 2)² − 12 + 20 ko'rinishiga keltiramiz, ya'ni 3(x + 2)² + 8. Kvadrat nolga aylanganda ifoda eng kichik bo'ladi, u 8 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#32028845"
+    },
+    {
+      "q": "2x² − 14x + 30 ifodasining eng kichik qiymati qanday songa teng?",
+      "v": [
+        "11/2",
+        "30",
+        "−11/2",
+        "7/2"
+      ],
+      "t": 0,
+      "izoh": "Ifodani 2(x² − 7x) + 30 ko'rinishiga keltiramiz. Qavsda (x − 7/2)² − 49/4 bo'ladi, 2 ga ko'paytirilsa −49/2 chiqadi. Demak 30 − 49/2 = 60/2 − 49/2 = 11/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#93b2b8ae"
+    },
+    {
+      "q": "Toshkentlik o'quvchi x² + 9x + 4 ifodasining eng kichik qiymatini hisoblamoqchi. U qanday natijaga kelishi kerak?",
+      "v": [
+        "65/4",
+        "−65/4",
+        "−81/4",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Koeffitsient yarmi 9/2, uning kvadrati 81/4. Ifoda (x + 9/2)² + 4 − 81/4 ga teng bo'ladi. Bunda 4 − 81/4 = 16/4 − 81/4 = −65/4, bu esa eng kichik qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-kichik-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#e3429623"
+    },
+    {
+      "q": "−x² + 6x + 4 ifodasining eng katta qiymatini aniqlang.",
+      "v": [
+        "13",
+        "4",
+        "−13",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Minusni chiqaramiz: −(x² − 6x − 4). Qavsda (x − 3)² − 9 − 4 = (x − 3)² − 13 bo'ladi, demak ifoda −(x − 3)² + 13 ga teng. Eng katta qiymat 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#592813dd"
+    },
+    {
+      "q": "−2x² + 16x − 25 ifodasi eng katta qiymatga erishganda u qanday songa teng bo'ladi?",
+      "v": [
+        "−25",
+        "32",
+        "7",
+        "−7"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −2(x² − 8x) − 25 deb yozamiz. Qavsda (x − 4)² − 16 hosil bo'ladi, −2 ga ko'paytirilsa +32 chiqadi. Demak −2(x − 4)² + 32 − 25 va eng katta qiymat 7 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#120223f4"
+    },
+    {
+      "q": "12 − x² − 10x ifodasining eng katta qiymati qanday songa teng bo'lishini toping.",
+      "v": [
+        "12",
+        "37",
+        "−37",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Ifodani −(x² + 10x − 12) deb yozamiz. Qavsda (x + 5)² − 25 − 12 = (x + 5)² − 37 bo'ladi. Demak ifoda −(x + 5)² + 37 ga teng va eng katta qiymat 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#8a99913c"
+    },
+    {
+      "q": "Amaliy mashg'ulotda −3x² + 18x − 4 ifodasining eng katta qiymati so'raldi. Qaysi son to'g'ri javob bo'ladi?",
+      "v": [
+        "−4",
+        "27",
+        "−23",
+        "23"
+      ],
+      "t": 3,
+      "izoh": "Ifodani −3(x² − 6x) − 4 = −3[(x − 3)² − 9] − 4 ko'rinishiga keltiramiz. Bundan −3(x − 3)² + 27 − 4 hosil bo'ladi. Eng katta qiymat 23 bo'lib, u x = 3 da erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "eng-katta-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#307239ea"
+    },
+    {
+      "q": "x² − 6x + 11 ifodasi eng kichik qiymatga erishadigan x ni toping.",
+      "v": [
+        "x = 3",
+        "x = −3",
+        "x = 6",
+        "x = 2"
+      ],
+      "t": 0,
+      "izoh": "Ifoda (x − 3)² + 2 ko'rinishiga keladi. Kvadrat nolga teng bo'lganda ifoda eng kichik bo'ladi, ya'ni x − 3 = 0 shart bajariladi. Demak x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "erishiladigan-x-nuqta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#00a3c445"
+    },
+    {
+      "q": "2x² + 20x + 7 ifodasi eng kichik qiymatini qaysi x nuqtada qabul qiladi?",
+      "v": [
+        "x = 5",
+        "x = −5",
+        "x = −10",
+        "x = −20"
+      ],
+      "t": 1,
+      "izoh": "Ifodani 2(x² + 10x) + 7 = 2(x + 5)² − 50 + 7 ko'rinishiga keltiramiz. Kvadrat nol bo'lishi uchun x + 5 = 0 bo'lishi kerak. Demak x = −5 nuqtada eng kichik qiymat olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "erishiladigan-x-nuqta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#2a38ec0c"
+    },
+    {
+      "q": "Anvar −x² + 14x − 33 ifodasi eng katta qiymatga erishadigan nuqtani izlamoqda. U qaysi x ni topishi kerak?",
+      "v": [
+        "x = −7",
+        "x = 16",
+        "x = 7",
+        "x = 14"
+      ],
+      "t": 2,
+      "izoh": "Ifoda −(x − 7)² + 16 ko'rinishiga keladi, chunki 49 − 33 = 16. Eng katta qiymat kvadrat nolga aylanganda, ya'ni x = 7 da erishiladi. 16 esa qiymatning o'zi, nuqta emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "erishiladigan-x-nuqta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#151ef632"
+    },
+    {
+      "q": "5x² − 9x + 2 uchhadining eng kichik qiymati qaysi x da erishilishini aniqlang.",
+      "v": [
+        "x = −9/10",
+        "x = 9/5",
+        "x = 5/9",
+        "x = 9/10"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 5(x² − 9x/5) + 2 deb yozamiz. Qavsdagi koeffitsientning yarmi 9/10, demak 5(x − 9/10)² ko'rinishi hosil bo'ladi. Eng kichik qiymat x = 9/10 da olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "erishiladigan-x-nuqta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a81c6582"
+    },
+    {
+      "q": "x² − 6x + 10 ifodasining ishorasi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Har qanday x da manfiy",
+        "Har qanday x da musbat",
+        "x = 3 da nolga teng, qolganida musbat",
+        "x > 3 da musbat, x < 3 da manfiy"
+      ],
+      "t": 1,
+      "izoh": "Ifodani (x − 3)² + 1 ko'rinishiga keltiramiz. Kvadrat manfiy bo'lmaydi, unga 1 qo'shilgani uchun natija hech qachon 1 dan kichik emas. Demak ifoda har qanday x da musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#4281444f"
+    },
+    {
+      "q": "Har qanday haqiqiy x uchun −x² + 4x − 9 ifodasi qanday qiymat qabul qiladi?",
+      "v": [
+        "Doim musbat",
+        "x = 2 da nolga teng",
+        "Doim manfiy",
+        "Ishorasi x ga bog'liq"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −(x − 2)² − 5 ko'rinishiga keltiramiz. Kvadrat manfiy emas, uning qarama-qarshisi musbat emas, undan yana 5 ayiriladi. Demak ifoda −5 dan katta bo'lmaydi va doim manfiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#ded16cc5"
+    },
+    {
+      "q": "Karim x² + 5x + 7 ifodasi nolga aylanadigan x bor-yo'qligini tekshirmoqda. To'g'ri xulosa qaysi?",
+      "v": [
+        "x = −5 da nolga aylanadi",
+        "Ikkita nuqtada nolga aylanadi",
+        "x = 0 da nolga aylanadi",
+        "Hech qanday x da nolga aylanmaydi"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadrat ajratamiz: (x + 5/2)² + 3/4, chunki 7 − 25/4 = 3/4. Kvadrat nolga teng bo'lganda ham ifoda 3/4 ga teng bo'ladi. Demak ifoda hech qachon nolga aylanmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#b30a84d4"
+    },
+    {
+      "q": "4x² − 12x + 9 ifodasi qanday qiymatlarni qabul qilishi va qachon nolga aylanishini aniqlang.",
+      "v": [
+        "Manfiy emas, x = 3/2 da nolga teng",
+        "Doim musbat, nolga aylanmaydi",
+        "Manfiy emas, x = 2/3 da nolga teng",
+        "Doim manfiy"
+      ],
+      "t": 0,
+      "izoh": "Ifoda (2x − 3)² ga teng, chunki 4x² − 12x + 9 to'la kvadratdir. Kvadrat manfiy bo'lmaydi va faqat 2x − 3 = 0, ya'ni x = 3/2 nuqtada nolga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifoda-ishorasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9c3d6e6c"
+    },
+    {
+      "q": "Har qanday haqiqiy x uchun x² + 5 va 4x ifodalarni solishtiring.",
+      "v": [
+        "4x doim katta",
+        "x² + 5 doim katta",
+        "x = 2 da ular teng bo'ladi",
+        "Solishtirib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani qaraymiz: x² + 5 − 4x = (x − 2)² + 1. Bu ifoda har doim musbat, chunki kvadratga 1 qo'shilgan. Demak x² + 5 ifodasi 4x dan doim katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodalarni-solishtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#fb1732ef"
+    },
+    {
+      "q": "x² + 9 va 6x ifodalari orasidagi munosabatni barcha haqiqiy x lar uchun aniqlang.",
+      "v": [
+        "x² + 9 doim qat'iy katta",
+        "6x doim katta",
+        "x² + 9 ≥ 6x, tenglik x = 3 da",
+        "x² + 9 ≥ 6x, tenglik x = 9 da"
+      ],
+      "t": 2,
+      "izoh": "Ayirma x² − 6x + 9 = (x − 3)² ga teng. Kvadrat manfiy emas, demak x² + 9 ifodasi 6x dan kichik emas. Tenglik faqat x − 3 = 0, ya'ni x = 3 bo'lganda bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodalarni-solishtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#998608bf"
+    },
+    {
+      "q": "Guruh musobaqasida 2x² + 3 va 4x − 1 ifodalarni taqqoslash topshirig'i berildi. To'g'ri javob qaysi?",
+      "v": [
+        "4x − 1 doim katta",
+        "x = 1 da ular teng",
+        "Taqqoslash x ga bog'liq",
+        "2x² + 3 doim katta"
+      ],
+      "t": 3,
+      "izoh": "Ayirmani hisoblaymiz: 2x² + 3 − 4x + 1 = 2x² − 4x + 4. Uni 2(x − 1)² + 2 ko'rinishiga keltiramiz, bu esa doim musbat. Demak 2x² + 3 ifodasi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ifodalarni-solishtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#c3cf1d05"
+    },
+    {
+      "q": "x² + 2x va 3x − 2 ifodalarining qaysi biri har qanday x uchun katta ekanini aniqlang.",
+      "v": [
+        "x² + 2x doim katta",
+        "3x − 2 doim katta",
+        "x = 1/2 da teng bo'ladi",
+        "x > 2 da x² + 2x katta"
+      ],
+      "t": 0,
+      "izoh": "Ayirma x² + 2x − 3x + 2 = x² − x + 2 bo'ladi. To'la kvadrat ajratsak (x − 1/2)² + 7/4 hosil bo'ladi, bu doim musbat. Demak x² + 2x ifodasi kattaroq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ifodalarni-solishtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#0353b714"
+    },
+    {
+      "q": "y = x² − 4x + 7 funksiyaning qiymatlar sohasini toping.",
+      "v": [
+        "[3; +∞)",
+        "(−∞; 3]",
+        "[2; +∞)",
+        "[7; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Funksiyani y = (x − 2)² + 3 ko'rinishiga keltiramiz. Kvadrat noldan boshlab o'sadi, shuning uchun y ning eng kichik qiymati 3 ga teng. Qiymatlar sohasi [3; +∞) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a5d67885"
+    },
+    {
+      "q": "Grafigi pastga yo'nalgan y = −x² − 2x + 8 funksiyaning qiymatlar sohasi qanday bo'ladi?",
+      "v": [
+        "[9; +∞)",
+        "(−∞; 9]",
+        "(−∞; 8]",
+        "(−∞; −1]"
+      ],
+      "t": 1,
+      "izoh": "Ifodani −(x² + 2x) + 8 = −(x + 1)² + 1 + 8 shaklida yozamiz. Eng katta qiymat 9 ga teng, undan pastga qiymatlar cheksiz davom etadi. Demak soha (−∞; 9] bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#46493c9e"
+    },
+    {
+      "q": "Dilshod y = 2x² + 8x + 1 funksiyaning qiymatlar sohasini daftariga yozishi kerak. To'g'ri yozuv qaysi?",
+      "v": [
+        "[−7; +∞)",
+        "[7; +∞)",
+        "[1; +∞)",
+        "[−2; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Ifodani 2(x² + 4x) + 1 = 2(x + 2)² − 8 + 1 ko'rinishiga keltiramiz, ya'ni 2(x + 2)² − 7. Eng kichik qiymat −7 bo'lgani uchun soha [−7; +∞) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#03a5c058"
+    },
+    {
+      "q": "y = 3 − 4x − x² funksiya qanday qiymatlarni qabul qila oladi?",
+      "v": [
+        "(−∞; 3]",
+        "[7; +∞)",
+        "(−∞; 7]",
+        "(−∞; −2]"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −(x² + 4x) + 3 = −(x + 2)² + 4 + 3 shaklida yozamiz. Eng katta qiymat 7 bo'lib, undan kichik hamma qiymat qabul qilinadi. Demak qiymatlar sohasi (−∞; 7].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#970b7de3"
+    },
+    {
+      "q": "y = x² + 4x − 1 parabolaning uchi qaysi nuqtada joylashganini toping.",
+      "v": [
+        "(−2; −5)",
+        "(2; −5)",
+        "(−2; 5)",
+        "(−4; −1)"
+      ],
+      "t": 0,
+      "izoh": "Funksiyani y = (x + 2)² − 4 − 1 = (x + 2)² − 5 ko'rinishiga keltiramiz. Uch nuqtaning abssissasi −2, ordinatasi esa −5. Demak uch (−2; −5) nuqtada joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-uchi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a1dbf113"
+    },
+    {
+      "q": "Aziza y = 2x² − 12x + 25 parabolaning uchini topish uchun to'la kvadrat ajratdi. U qaysi nuqtani yozgan?",
+      "v": [
+        "(−3; 7)",
+        "(3; 7)",
+        "(3; 25)",
+        "(6; 7)"
+      ],
+      "t": 1,
+      "izoh": "Ifodani 2(x² − 6x) + 25 = 2(x − 3)² − 18 + 25 ko'rinishiga keltiramiz, ya'ni 2(x − 3)² + 7. Demak uch abssissasi 3, ordinatasi 7 va nuqta (3; 7) bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-uchi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#5897eb14"
+    },
+    {
+      "q": "y = −x² + 10x − 21 parabolaning uchi koordinatalarini aniqlang.",
+      "v": [
+        "(−5; 4)",
+        "(5; −4)",
+        "(5; 4)",
+        "(5; −21)"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −(x² − 10x) − 21 = −(x − 5)² + 25 − 21 ko'rinishiga keltiramiz. Demak y = −(x − 5)² + 4 bo'ladi va uch nuqta (5; 4) ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-uchi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#f2da23ff"
+    },
+    {
+      "q": "y = 4x² + 4x − 5 parabolaning uch nuqtasi koordinatalarini to'la kvadrat ajratish orqali toping.",
+      "v": [
+        "(1/2; −6)",
+        "(−1/2; −5)",
+        "(−2; −6)",
+        "(−1/2; −6)"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 4(x² + x) − 5 = 4(x + 1/2)² − 1 − 5 ko'rinishiga keltiramiz, ya'ni 4(x + 1/2)² − 6. Uch abssissasi −1/2, ordinatasi −6, demak nuqta (−1/2; −6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-uchi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#c1fb0a00"
+    },
+    {
+      "q": "y = 12/(x² − 6x + 13) kasrning eng katta qiymatini toping.",
+      "v": [
+        "4",
+        "3",
+        "12",
+        "12/13"
+      ],
+      "t": 1,
+      "izoh": "Maxrajni to'la kvadratga keltiramiz: (x − 3)² + 4. Uning eng kichik qiymati 4 ga teng. Kasr maxraj eng kichik bo'lganda eng katta bo'ladi: 12 : 4 = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-eng-katta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#60e6ed84"
+    },
+    {
+      "q": "Kompyuter modelida 20/(x² + 4x + 9) kasrning qiymati kuzatilmoqda. Uning eng katta qiymati qanday?",
+      "v": [
+        "4",
+        "5",
+        "20",
+        "20/9"
+      ],
+      "t": 0,
+      "izoh": "Maxraj (x + 2)² + 5 ko'rinishida bo'lib, uning eng kichik qiymati 5 ga teng. Kasr shu paytda eng katta bo'ladi: 20 : 5 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-eng-katta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9d551223"
+    },
+    {
+      "q": "6/(2x² − 8x + 11) ifodaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "3",
+        "6",
+        "6/11",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Maxrajni 2(x − 2)² + 3 ko'rinishiga keltiramiz, uning eng kichigi 3 ga teng. Demak kasrning eng katta qiymati 6 : 3 = 2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-ifoda-eng-katta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#b9b44d62"
+    },
+    {
+      "q": "Zilola 30/(x² + 10x + 34) kasrning eng katta qiymatini izlamoqda. U qanday natijaga kelishi kerak?",
+      "v": [
+        "9",
+        "15/17",
+        "10/3",
+        "3/10"
+      ],
+      "t": 2,
+      "izoh": "Maxraj (x + 5)² + 9 ga teng bo'lib, eng kichik qiymati 9. Kasrning eng kattasi 30 : 9 = 10/3 bo'ladi. 15/17 esa faqat x = 0 dagi qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-ifoda-eng-katta",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a13ed6e1"
+    },
+    {
+      "q": "√(x² − 10x + 41) ifodaning eng kichik qiymatini hisoblang.",
+      "v": [
+        "4",
+        "16",
+        "41",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifoda (x − 5)² + 16 ga teng, uning eng kichigi 16. Demak ildizning eng kichik qiymati √16 = 4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ifoda-eng-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#8b943dc9"
+    },
+    {
+      "q": "Ildiz ostida x² + 12x + 61 uchhadi turibdi. √(x² + 12x + 61) eng kami qanday songa teng?",
+      "v": [
+        "25",
+        "5",
+        "√61",
+        "−6"
+      ],
+      "t": 1,
+      "izoh": "Uchhadni almashtiramiz: x² + 12x + 61 = (x + 6)² + 25, eng kichik qiymati 25. Ildiz olsak √25 = 5 hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ifoda-eng-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#b3fac802"
+    },
+    {
+      "q": "Muhandis hisobida √(2x² − 4x + 51) ifodasi uchraydi. Uning eng kichik qiymatini toping.",
+      "v": [
+        "49",
+        "51",
+        "1",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifoda 2x² − 4x + 51 = 2(x − 1)² + 49 ko'rinishiga keladi. Eng kichik qiymat 49 bo'lib, uning ildizi √49 = 7 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ifoda-eng-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#41d015cc"
+    },
+    {
+      "q": "√(x² + 8x + 116) ifodaning eng kichik qiymati qaysi songa teng bo'lishini aniqlang.",
+      "v": [
+        "100",
+        "116",
+        "10",
+        "−4"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostida (x + 4)² + 100 hosil bo'ladi. Kvadrat nolga aylanganda ifoda 100 ga teng bo'ladi. Demak eng kichik qiymat √100 = 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ifoda-eng-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#42a0778a"
+    },
+    {
+      "q": "2^(x² − 6x + 11) ifodaning eng kichik qiymatini toping.",
+      "v": [
+        "4",
+        "2",
+        "8",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Ko'rsatkichni to'la kvadratga keltiramiz: (x − 3)² + 2, uning eng kichigi 2. Asos birdan katta bo'lgani uchun ifoda ko'rsatkich eng kichik bo'lganda eng kichik: 2² = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-ifoda-baholash",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#88c1dd63"
+    },
+    {
+      "q": "3^(−x² + 4x − 1) ko'rinishdagi ifoda eng katta qanday qiymat qabul qiladi?",
+      "v": [
+        "9",
+        "27",
+        "3",
+        "1/27"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkich −x² + 4x − 1 = −(x − 2)² + 3 bo'lib, uning eng kattasi 3. Asos birdan katta, demak ifodaning eng katta qiymati 3³ = 27 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-ifoda-baholash",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#6d64a343"
+    },
+    {
+      "q": "Ma'lumot uzatish tezligi 5^(x² + 2x + 4) formulasi bilan berilgan. Uning eng kichik qiymatini toping.",
+      "v": [
+        "25",
+        "5",
+        "125",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "Ko'rsatkich (x + 1)² + 3 ga teng, uning eng kichigi 3. Asos birdan katta bo'lgani uchun eng kichik qiymat 5³ = 125 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "darajali-ifoda-baholash",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#2e48dc44"
+    },
+    {
+      "q": "Asosi birdan kichik bo'lgan (1/2)^(x² − 8x + 20) ifodaning eng katta qiymatini aniqlang.",
+      "v": [
+        "16",
+        "1/4",
+        "4",
+        "1/16"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkich (x − 4)² + 4 ga teng, eng kichigi 4. Asos birdan kichik bo'lgani uchun ko'rsatkich eng kichik bo'lganda ifoda eng katta bo'ladi: (1/2)⁴ = 1/16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "darajali-ifoda-baholash",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#756fd961"
+    },
+    {
+      "q": "x² + y² − 6x + 8y + 30 ifodaning eng kichik qiymatini toping.",
+      "v": [
+        "5",
+        "30",
+        "−5",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Har bir o'zgaruvchi bo'yicha to'la kvadrat ajratamiz: x² − 6x = (x − 3)² − 9 va y² + 8y = (y + 4)² − 16. Demak ifoda (x − 3)² + (y + 4)² + 5 ga teng, eng kichigi 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ozgaruvchili-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a3de0c90"
+    },
+    {
+      "q": "Ikki o'zgaruvchili x² + y² + 10x − 2y + 40 ifodasi eng kichik qanday qiymat qabul qiladi?",
+      "v": [
+        "40",
+        "14",
+        "−14",
+        "26"
+      ],
+      "t": 1,
+      "izoh": "Ajratamiz: x² + 10x = (x + 5)² − 25 va y² − 2y = (y − 1)² − 1. Yig'indi (x + 5)² + (y − 1)² + 14 bo'ladi, chunki 40 − 26 = 14. Demak eng kichik qiymat 14.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ozgaruvchili-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#115005ca"
+    },
+    {
+      "q": "2x² + y² − 12x + 6y + 35 ifodaning eng kichik qiymatini hisoblang.",
+      "v": [
+        "35",
+        "−8",
+        "8",
+        "27"
+      ],
+      "t": 2,
+      "izoh": "Ajratamiz: 2x² − 12x = 2(x − 3)² − 18 va y² + 6y = (y + 3)² − 9. Demak ifoda 2(x − 3)² + (y + 3)² + 8 ga teng, chunki 35 − 27 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ozgaruvchili-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#2b452ea7"
+    },
+    {
+      "q": "Loyiha hisobida x² + 4y² + 2x − 16y + 30 ifodasi eng kichik qiymatga erishishi kerak. U qanday son?",
+      "v": [
+        "30",
+        "−13",
+        "17",
+        "13"
+      ],
+      "t": 3,
+      "izoh": "Ajratamiz: x² + 2x = (x + 1)² − 1 va 4y² − 16y = 4(y − 2)² − 16. Ifoda (x + 1)² + 4(y − 2)² + 13 ga teng, chunki 30 − 17 = 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ozgaruvchili-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#f7b6c412"
+    },
+    {
+      "q": "f(x) = x² − 6x + 5 funksiyaning [0; 2] kesmadagi eng kichik qiymatini toping.",
+      "v": [
+        "−3",
+        "−4",
+        "5",
+        "−5"
+      ],
+      "t": 0,
+      "izoh": "Uch nuqta x = 3 da joylashgan, u kesmadan tashqarida. Kesmada funksiya kamayadi, shuning uchun eng kichik qiymat o'ng chetda: f(2) = 4 − 12 + 5 = −3. Uchdagi −4 bu kesmaga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#639d59bd"
+    },
+    {
+      "q": "f(x) = x² − 4x + 1 funksiyaning [3; 6] kesmadagi eng katta qiymati qanday bo'ladi?",
+      "v": [
+        "−2",
+        "13",
+        "−3",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Uch x = 2 da bo'lib, u kesmadan chapda qoladi, demak kesmada funksiya o'sadi. Eng katta qiymat o'ng chetda olinadi: f(6) = 36 − 24 + 1 = 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#afeed6e9"
+    },
+    {
+      "q": "f(x) = −x² + 8x − 7 funksiyaning [1; 3] kesmadagi eng katta qiymatini aniqlang.",
+      "v": [
+        "9",
+        "0",
+        "8",
+        "1"
+      ],
+      "t": 2,
+      "izoh": "Uch x = 4 da, u kesmadan o'ngda qoladi. Kesmada funksiya o'sadi, shuning uchun eng katta qiymat f(3) = −9 + 24 − 7 = 8. Uchdagi 9 kesmaga kirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#8aa3f56f"
+    },
+    {
+      "q": "f(x) = 3x² − 6x + 4 funksiyaning [2; 5] kesmadagi eng katta va eng kichik qiymatlari yig'indisini toping.",
+      "v": [
+        "50",
+        "49",
+        "4",
+        "53"
+      ],
+      "t": 3,
+      "izoh": "Uch x = 1 da, kesmadan chapda qoladi, demak funksiya kesmada o'sadi. Chekka qiymatlar f(2) = 12 − 12 + 4 = 4 va f(5) = 75 − 30 + 4 = 49. Ularning yig'indisi 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesmada-eng-katta-kichik",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#34b35365"
+    },
+    {
+      "q": "x² − 8x + c ifodaning eng kichik qiymati 3 ga teng bo'lsa, c ni toping.",
+      "v": [
+        "19",
+        "−13",
+        "7",
+        "67"
+      ],
+      "t": 0,
+      "izoh": "Ifoda (x − 4)² + c − 16 ko'rinishiga keladi, uning eng kichigi c − 16 ga teng. Shart bo'yicha c − 16 = 3, demak c = 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-berilgan-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#3ca3f1a7"
+    },
+    {
+      "q": "x² + 10x + c ifodaning eng kichik qiymati −4 bo'lishi uchun c qanday bo'lishi kerak?",
+      "v": [
+        "29",
+        "21",
+        "−21",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "Ifoda (x + 5)² + c − 25 ga teng, uning eng kichigi c − 25. Uni −4 ga tenglaymiz: c − 25 = −4, bundan c = 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-berilgan-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9f733690"
+    },
+    {
+      "q": "2x² + bx + 5 ifoda eng kichik qiymatini x = 3 da qabul qilsa, b nechaga teng?",
+      "v": [
+        "12",
+        "−6",
+        "−12",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "2x² + bx = 2(x + b/4)² − b²/8 bo'lgani uchun eng kichik qiymat x = −b/4 nuqtada olinadi. Shart bo'yicha −b/4 = 3, demak b = −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-berilgan-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#8d9a98be"
+    },
+    {
+      "q": "x² + bx + 18 ifodaning eng kichik qiymati 2 ga teng va b musbat son. b ni toping.",
+      "v": [
+        "4",
+        "16",
+        "64",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Ifoda (x + b/2)² + 18 − b²/4 ko'rinishiga keladi. Shart bo'yicha 18 − b²/4 = 2, ya'ni b²/4 = 16 va b² = 64. Musbat ildiz b = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-berilgan-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#d45aed00"
+    },
+    {
+      "q": "x² + 6x + k ifoda barcha x lar uchun musbat bo'lishi uchun k qanday shartni qanoatlantirsin?",
+      "v": [
+        "k > 9",
+        "k < 9",
+        "k > 3",
+        "k > −9"
+      ],
+      "t": 0,
+      "izoh": "Ifoda (x + 3)² + k − 9 ga teng, uning eng kichigi k − 9. Bu qiymat musbat bo'lishi uchun k − 9 > 0 shart bajarilishi kerak. Demak k > 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-doimiy-ishora",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#3e20dd18"
+    },
+    {
+      "q": "Qaysi k larda x² − 10x + k uchhad har qanday haqiqiy x uchun noldan katta bo'ladi?",
+      "v": [
+        "k ≥ 25",
+        "k > 25",
+        "k > 5",
+        "k < 25"
+      ],
+      "t": 1,
+      "izoh": "To'la kvadrat ajratsak (x − 5)² + k − 25 hosil bo'ladi. Eng kichik qiymat k − 25 bo'lib, u qat'iy musbat bo'lishi kerak. Demak k > 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-doimiy-ishora",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#673c5bee"
+    },
+    {
+      "q": "x² + 4x + m ifoda barcha x lar uchun manfiy bo'lmasligi uchun m ning qiymatlar to'plamini toping.",
+      "v": [
+        "m > 4",
+        "m ≥ 2",
+        "m ≥ 4",
+        "m ≤ 4"
+      ],
+      "t": 2,
+      "izoh": "Ifoda (x + 2)² + m − 4 ko'rinishida yoziladi. Eng kichik qiymat m − 4 bo'lib, u noldan kichik bo'lmasligi kerak. Demak m ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-doimiy-ishora",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#285f5d51"
+    },
+    {
+      "q": "−x² + 8x + p ifoda har qanday haqiqiy x uchun manfiy bo'lishi uchun p qanday bo'lsin?",
+      "v": [
+        "p > −16",
+        "p < 16",
+        "p < −8",
+        "p < −16"
+      ],
+      "t": 3,
+      "izoh": "Ifodani −(x − 4)² + 16 + p ko'rinishiga keltiramiz. Eng katta qiymat 16 + p bo'lib, u manfiy bo'lishi kerak. Demak 16 + p < 0, ya'ni p < −16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-doimiy-ishora",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#34bc5124"
+    },
+    {
+      "q": "f(x) = x² + bx + c funksiya uchun f(1) = f(7) ekani ma'lum. Funksiya eng kichik qiymatni qaysi x da oladi?",
+      "v": [
+        "x = 4",
+        "x = 3",
+        "x = 8",
+        "x = 6"
+      ],
+      "t": 0,
+      "izoh": "Parabolaning simmetriya o'qi teng qiymatli ikki nuqtaning o'rtasidan o'tadi. Bunda (1 + 7) : 2 = 4, demak simmetriya o'qi x = 4 chiziq. Eng kichik qiymat aynan shu nuqtada olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#932b6265"
+    },
+    {
+      "q": "2x² + bx + 9 ifoda uchun x = −2 va x = 6 dagi qiymatlar teng. b nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "−8",
+        "−4",
+        "−2"
+      ],
+      "t": 1,
+      "izoh": "Teng qiymatli nuqtalarning o'rtasi simmetriya o'qi bo'ladi: (−2 + 6) : 2 = 2. Uch nuqta abssissasi −b/4 ga teng, demak −b/4 = 2 va b = −8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetriya-oqi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#b7b307fd"
+    },
+    {
+      "q": "f(x) = x² − 12x + 40 funksiyada qaysi ikki nuqtadagi qiymatlar o'zaro teng bo'ladi?",
+      "v": [
+        "f(2) va f(12)",
+        "f(3) va f(10)",
+        "f(2) va f(10)",
+        "f(1) va f(12)"
+      ],
+      "t": 2,
+      "izoh": "Simmetriya o'qi x = 6 chiziqda, chunki 12 : 2 = 6. Undan bir xil uzoqlikdagi nuqtalar teng qiymat beradi: 6 − 4 = 2 va 6 + 4 = 10. Demak f(2) = f(10) = 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a194864d"
+    },
+    {
+      "q": "Bosh koeffitsienti musbat kvadrat uchhadning nollari 3 va 9 ga teng. U eng kichik qiymatni qaysi nuqtada oladi?",
+      "v": [
+        "x = 12",
+        "x = 3",
+        "x = 4,5",
+        "x = 6"
+      ],
+      "t": 3,
+      "izoh": "Parabola o'z nollariga nisbatan simmetrik, uch nuqta esa ular o'rtasida yotadi. O'rtasi (3 + 9) : 2 = 6 ga teng. Demak eng kichik qiymat x = 6 nuqtada erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetriya-oqi",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#fd92e20a"
+    },
+    {
+      "q": "Malika daftar sotadi. Bitta daftar narxi p ming so'm bo'lganda kuniga (60 − 2p) ta daftar sotiladi. Kunlik tushum eng ko'pi bilan qancha bo'ladi?",
+      "v": [
+        "900 ming so'm",
+        "450 ming so'm",
+        "15 ming so'm",
+        "225 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Tushum D = p·(60 − 2p) = −2p² + 60p ga teng. To'la kvadrat ajratsak −2(p − 15)² + 450 hosil bo'ladi. Eng katta tushum 450 ming so'm bo'lib, narx 15 ming so'm bo'lganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-daromad-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#c1ae52fc"
+    },
+    {
+      "q": "Nonvoyxonaning kunlik foydasi F(x) = −x² + 24x − 80 ming so'mga teng, bunda x — sotilgan non soni. Foyda eng katta bo'lishi uchun kuniga nechta non sotilishi kerak?",
+      "v": [
+        "12 ta",
+        "24 ta",
+        "64 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Foydani −(x² − 24x) − 80 = −(x − 12)² + 144 − 80 ko'rinishiga keltiramiz. Kvadrat nolga aylanganda foyda eng katta bo'ladi, ya'ni x = 12. Demak kuniga 12 ta non sotiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-daromad-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#cda8ed93"
+    },
+    {
+      "q": "Sardorning kunlik daromadi D(x) = −5x² + 80x + 100 ming so'm formulasi bilan hisoblanadi. Uning eng katta kunlik daromadini toping.",
+      "v": [
+        "500 ming so'm",
+        "420 ming so'm",
+        "320 ming so'm",
+        "80 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Ifodani −5(x² − 16x) + 100 = −5(x − 8)² + 320 + 100 ko'rinishida yozamiz. Eng katta daromad 420 ming so'mga teng bo'lib, u x = 8 bo'lganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-daromad-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#d1489dd9"
+    },
+    {
+      "q": "Teatr bileti narxi p ming so'm bo'lganda tomoshabinlar soni (200 − 4p) ta bo'ladi. Tushum eng ko'p bo'lishi uchun bilet narxi qanday belgilanishi kerak?",
+      "v": [
+        "50 ming so'm",
+        "20 ming so'm",
+        "25 ming so'm",
+        "100 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Tushum T = p(200 − 4p) = −4p² + 200p ga teng. To'la kvadrat ajratsak −4(p − 25)² + 2500 hosil bo'ladi. Demak narx 25 ming so'm bo'lganda tushum eng katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-daromad-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#4f67236f"
+    },
+    {
+      "q": "Anvarning do'konida n ta mahsulot sotilganda foyda 90n − 3n² − 300 ming so'mga teng bo'ladi. Eng katta foyda qanchani tashkil etadi?",
+      "v": [
+        "675 ming so'm",
+        "300 ming so'm",
+        "15 ming so'm",
+        "375 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Foydani −3(n² − 30n) − 300 = −3(n − 15)² + 675 − 300 ko'rinishiga keltiramiz. Eng katta foyda 375 ming so'm bo'lib, 15 ta mahsulot sotilganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-daromad-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#75142263"
+    },
+    {
+      "q": "Fermer 84 metr to'r bilan to'rtburchak shaklidagi maydonni o'rab olmoqchi. Maydon yuzasi eng ko'pi bilan qancha bo'lishi mumkin?",
+      "v": [
+        "441 m²",
+        "882 m²",
+        "420 m²",
+        "168 m²"
+      ],
+      "t": 0,
+      "izoh": "Perimetr 84 m bo'lgani uchun tomonlar x va 42 − x ga teng. Yuza S = x(42 − x) = −(x − 21)² + 441. Eng katta yuza 441 m² bo'lib, tomoni 21 m li kvadratda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#1b6c97fa"
+    },
+    {
+      "q": "Bog'ning bir tomoni devorga tegib turadi, qolgan uch tomoni uchun 72 metr panjara bor. O'ralgan yuzaning eng katta qiymatini toping.",
+      "v": [
+        "1296 m²",
+        "648 m²",
+        "324 m²",
+        "576 m²"
+      ],
+      "t": 1,
+      "izoh": "Devorga perpendikulyar tomonlar y bo'lsa, uchinchi tomon 72 − 2y ga teng. Yuza S = y(72 − 2y) = −2(y − 18)² + 648. Eng katta yuza 648 m² bo'lib, y = 18 m bo'lganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yuza-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#6835d57c"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 30 ga teng ekani ma'lum. Bu sonlarning ko'paytmasi eng katta qanday qiymatga erishishi mumkin?",
+      "v": [
+        "900",
+        "15",
+        "225",
+        "125"
+      ],
+      "t": 2,
+      "izoh": "Sonlarni x va 30 − x deb olamiz. Ko'paytma x(30 − x) = −(x − 15)² + 225 ko'rinishiga keladi. Eng katta ko'paytma 225 bo'lib, ikkala son 15 ga teng bo'lganda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-yuza-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#e20c2522"
+    },
+    {
+      "q": "Maktab hovlisidagi gulzorning bir tomoni x metr, ikkinchisi (26 − x) metr. Yuza eng katta bo'lganda tomonlar farqi nechaga teng bo'ladi?",
+      "v": [
+        "26 m",
+        "13 m",
+        "6,5 m",
+        "0 m"
+      ],
+      "t": 3,
+      "izoh": "Yuza S = x(26 − x) = −(x − 13)² + 169 ko'rinishiga keladi. Eng katta yuza x = 13 m da, u holda ikkinchi tomon ham 26 − 13 = 13 m. Tomonlar teng, demak farqi 0 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-yuza-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#a8046025"
+    },
+    {
+      "q": "Ikki sonning ayirmasi 8 ga teng. Ularning ko'paytmasi eng kichik qanday qiymat qabul qilishi mumkin?",
+      "v": [
+        "−16",
+        "16",
+        "−8",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Sonlarni x va x − 8 deb olamiz. Ko'paytma x(x − 8) = x² − 8x = (x − 4)² − 16 ga teng. Eng kichik qiymat −16 bo'lib, sonlar 4 va −4 bo'lganda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-yuza-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#be55fc6d"
+    },
+    {
+      "q": "Sexda x dona mahsulot ishlab chiqarish xarajati x² − 40x + 900 ming so'mga teng. Eng kam xarajat qanchani tashkil qiladi?",
+      "v": [
+        "900 ming so'm",
+        "500 ming so'm",
+        "400 ming so'm",
+        "20 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Xarajatni (x − 20)² + 900 − 400 ko'rinishiga keltiramiz, ya'ni (x − 20)² + 500. Eng kam xarajat 500 ming so'm bo'lib, u 20 dona mahsulot ishlab chiqarilganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#cfb55ec5"
+    },
+    {
+      "q": "Avtomobilning 100 km yo'lga sarflaydigan yoqilg'isi 0,02v² − 2v + 90 litrga teng, bunda v — tezlik. Yoqilg'i eng kam bo'ladigan tezlikni toping.",
+      "v": [
+        "40 km/soat",
+        "100 km/soat",
+        "50 km/soat",
+        "60 km/soat"
+      ],
+      "t": 2,
+      "izoh": "Ifodani 0,02(v² − 100v) + 90 ko'rinishida yozamiz. Qavsda (v − 50)² − 2500 hosil bo'ladi, demak 0,02(v − 50)² − 50 + 90. Eng kam sarf v = 50 km/soat tezlikda kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#50a5da4a"
+    },
+    {
+      "q": "Omborda n ta idish saqlanganda birlik xarajat 2n² − 36n + 200 ming so'm bo'ladi. Eng kam birlik xarajatni hisoblang.",
+      "v": [
+        "200 ming so'm",
+        "162 ming so'm",
+        "9 ming so'm",
+        "38 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 2(n² − 18n) + 200 = 2(n − 9)² − 162 + 200 ko'rinishiga keltiramiz. Demak 2(n − 9)² + 38 va eng kam xarajat 38 ming so'm, u n = 9 bo'lganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#04240226"
+    },
+    {
+      "q": "Yuk tashish xarajati 3t² − 24t + 70 ming so'mga teng, bunda t — yo'lda o'tgan soat. Xarajat eng kam bo'ladigan vaqtni toping.",
+      "v": [
+        "4 soat",
+        "8 soat",
+        "3 soat",
+        "22 soat"
+      ],
+      "t": 0,
+      "izoh": "Xarajatni 3(t² − 8t) + 70 = 3(t − 4)² − 48 + 70 ko'rinishiga keltiramiz. Kvadrat nolga aylanganda xarajat eng kam bo'ladi, ya'ni t = 4 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#20693c09"
+    },
+    {
+      "q": "Qadoqlash materiali narxi x² + 14x + 60 ming so'm formula bilan hisoblanadi va x manfiy bo'la olmaydi. Eng kam narxni toping.",
+      "v": [
+        "11 ming so'm",
+        "60 ming so'm",
+        "74 ming so'm",
+        "39 ming so'm"
+      ],
+      "t": 1,
+      "izoh": "Ifoda (x + 7)² + 11 ko'rinishiga keladi, uning uchi x = −7 da. Lekin x ≥ 0 bo'lgani uchun bu nuqta yaroqsiz. Yarim o'qda funksiya o'sadi, demak eng kam narx x = 0 dagi 60 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-xarajat-minimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#d9a60882"
+    },
+    {
+      "q": "Yuqoriga otilgan koptokning balandligi h(t) = −5t² + 30t + 2 metr formula bilan beriladi. Koptok ko'tarila oladigan eng katta balandlikni toping.",
+      "v": [
+        "45 m",
+        "32 m",
+        "47 m",
+        "3 m"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −5(t² − 6t) + 2 = −5(t − 3)² + 45 + 2 ko'rinishiga keltiramiz. Eng katta balandlik 47 m bo'lib, u 3 soniyada erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-balandlik-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#dd98db41"
+    },
+    {
+      "q": "Raketa modelining balandligi h(t) = −5t² + 40t metrga teng. U eng yuqori nuqtaga necha soniyadan keyin chiqadi?",
+      "v": [
+        "8 s",
+        "80 s",
+        "2 s",
+        "4 s"
+      ],
+      "t": 3,
+      "izoh": "Balandlikni −5(t² − 8t) = −5(t − 4)² + 80 ko'rinishiga keltiramiz. Kvadrat nolga aylanganda balandlik eng katta bo'ladi, ya'ni t = 4 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-balandlik-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#37b011a1"
+    },
+    {
+      "q": "Balandligi 25 metrli qoyadan yuqoriga tashlangan tosh uchun h(t) = 25 + 20t − 5t² formulasi o'rinli. Toshning eng katta balandligi qancha?",
+      "v": [
+        "45 m",
+        "25 m",
+        "40 m",
+        "20 m"
+      ],
+      "t": 0,
+      "izoh": "Ifodani −5(t² − 4t) + 25 = −5(t − 2)² + 20 + 25 shaklida yozamiz. Eng katta balandlik 45 m bo'lib, u 2 soniyadan keyin kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-balandlik-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#79e8d8dc"
+    },
+    {
+      "q": "Dronning balandligi h(t) = −2t² + 24t + 5 metr qonuniyat bilan o'zgaradi. Dron eng yuqori nuqtaga qaysi soniyada yetadi?",
+      "v": [
+        "12 s",
+        "6 s",
+        "77 s",
+        "3 s"
+      ],
+      "t": 1,
+      "izoh": "Ifodani −2(t² − 12t) + 5 = −2(t − 6)² + 72 + 5 ko'rinishiga keltiramiz. Kvadrat nolga aylanganda balandlik eng katta bo'ladi, demak t = 6 soniya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-balandlik-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#f4341a77"
+    },
+    {
+      "q": "Favvora suvi tarnovining shakli h(x) = −x² + 12x − 11 tenglama bilan tavsiflanadi. Suv ko'tariladigan eng katta balandlikni aniqlang.",
+      "v": [
+        "36 m",
+        "11 m",
+        "25 m",
+        "6 m"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −(x² − 12x) − 11 = −(x − 6)² + 36 − 11 ko'rinishida yozamiz. Eng katta balandlik 25 m bo'lib, u x = 6 m masofada kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-balandlik-maksimum",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#4bb2e65a"
+    },
+    {
+      "q": "Ikki qayiq orasidagi masofa kvadrati S(t) = 25t² − 150t + 250 formula bilan o'zgaradi. Ular bir-biriga eng yaqin kelganda masofa qancha bo'ladi?",
+      "v": [
+        "25 km",
+        "3 km",
+        "10 km",
+        "5 km"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 25(t² − 6t) + 250 = 25(t − 3)² − 225 + 250 ko'rinishiga keltiramiz. Masofa kvadratining eng kichigi 25, demak masofa √25 = 5 km ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-eng-past-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#31272ad4"
+    },
+    {
+      "q": "Kun davomida havo harorati T(t) = t² − 10t + 18 gradus qonuniyat bilan o'zgardi. Eng past harorat necha gradus bo'lgan?",
+      "v": [
+        "−7 °C",
+        "7 °C",
+        "18 °C",
+        "−5 °C"
+      ],
+      "t": 0,
+      "izoh": "Ifodani (t − 5)² + 18 − 25 = (t − 5)² − 7 ko'rinishiga keltiramiz. Eng past harorat −7 °C bo'lib, u t = 5 soatda kuzatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-eng-past-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#c6efb30c"
+    },
+    {
+      "q": "Suv omboridagi suv sathi h(t) = 0,5t² − 6t + 30 metr formulasiga ko'ra o'zgaradi. Sathning eng past qiymatini toping.",
+      "v": [
+        "30 m",
+        "12 m",
+        "18 m",
+        "6 m"
+      ],
+      "t": 1,
+      "izoh": "Ifodani 0,5(t² − 12t) + 30 = 0,5(t − 6)² − 18 + 30 ko'rinishiga keltiramiz. Demak 0,5(t − 6)² + 12 va eng past sath 12 m ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-eng-past-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9d101057"
+    },
+    {
+      "q": "Pech ichidagi bosim P(t) = 4t² − 24t + 50 birlik qonuniyat bo'yicha o'zgaradi. Bosim eng past bo'lgan vaqtni aniqlang.",
+      "v": [
+        "6 soat",
+        "12 soat",
+        "3 soat",
+        "14 soat"
+      ],
+      "t": 2,
+      "izoh": "Ifodani 4(t² − 6t) + 50 = 4(t − 3)² − 36 + 50 ko'rinishiga keltiramiz. Kvadrat nolga aylanganda bosim eng past bo'ladi, ya'ni t = 3 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-eng-past-qiymat",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#c623bedd"
+    },
+    {
+      "q": "Stanokni sozlashda yo'l qo'yiladigan xatolik E(x) = 2x² − 20x + 63 birlikka teng. Xatolik eng kam bo'lganda u qanday qiymatga ega bo'ladi?",
+      "v": [
+        "63 birlik",
+        "5 birlik",
+        "50 birlik",
+        "13 birlik"
+      ],
+      "t": 3,
+      "izoh": "Ifodani 2(x² − 10x) + 63 = 2(x − 5)² − 50 + 63 ko'rinishiga keltiramiz. Demak 2(x − 5)² + 13 va eng kam xatolik 13 birlik, u x = 5 da erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-olchov-optimallashtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#fe6ba780"
+    },
+    {
+      "q": "Uchta o'lchov natijasi 4, 8 va 12 ni berdi. Ulardan chetlanishlar kvadratlari yig'indisi eng kichik bo'ladigan x sonini toping.",
+      "v": [
+        "8",
+        "24",
+        "32",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Yig'indi (x − 4)² + (x − 8)² + (x − 12)² = 3x² − 48x + 224 ga teng. Uni 3(x − 8)² + 32 ko'rinishiga keltiramiz. Eng kichik qiymat x = 8 da, ya'ni o'lchovlar o'rtachasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olchov-optimallashtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#9a89ed27"
+    },
+    {
+      "q": "Zavodda bir soatda x dona detal tayyorlanganda brak ulushi 0,1x² − 4x + 55 foizni tashkil qiladi. Eng kam brak ulushini toping.",
+      "v": [
+        "55%",
+        "15%",
+        "35%",
+        "20%"
+      ],
+      "t": 1,
+      "izoh": "Ifodani 0,1(x² − 40x) + 55 = 0,1(x − 20)² − 40 + 55 ko'rinishiga keltiramiz. Demak 0,1(x − 20)² + 15 va eng kam brak 15%, u soatiga 20 dona tayyorlanganda erishiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olchov-optimallashtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#365b032f"
+    },
+    {
+      "q": "Bir gektarga n kg o'g'it solinganda hosil −0,5n² + 12n + 40 tsentnerni tashkil etadi. Eng yuqori hosilni aniqlang.",
+      "v": [
+        "72 tsentner",
+        "40 tsentner",
+        "112 tsentner",
+        "12 tsentner"
+      ],
+      "t": 2,
+      "izoh": "Ifodani −0,5(n² − 24n) + 40 = −0,5(n − 12)² + 72 + 40 ko'rinishiga keltiramiz. Eng yuqori hosil 112 tsentner bo'lib, gektariga 12 kg o'g'it solinganda olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-olchov-optimallashtirish",
+      "id": "matematika_ayn_m10-tola-kvadrat-ajratish-va-ifodani#7f7fadce"
+    }
+  ]
+}

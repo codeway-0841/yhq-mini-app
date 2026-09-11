@@ -1,0 +1,411 @@
+{
+  "nom": "17-mavzu. Laboratoriya Erkin Tushish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "\"Matematik mayatnik yordamida erkin tushish tezlanishini aniqlash\" laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Erkin tushish tezlanishini matematik mayatnik yordamida aniqlash usulini o'rganish",
+        "Mayatnikning massasini aniqlash",
+        "Prujina bikrligini o'lchash",
+        "Tovush tezligini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi — erkin tushish tezlanishini matematik mayatnik yordamida aniqlash usulini o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#47d18756"
+    },
+    {
+      "q": "Ushbu laboratoriya ishida qaysi asbob-uskunalar kerak?",
+      "v": [
+        "Universal shtativ, cho'zilmas ip, sharcha, sekundomer, o'lchov lentasi",
+        "Dinamometr, tarozi, prujina",
+        "Ampermetr, voltmetr, reostat",
+        "Termometr, barometr, menzurka"
+      ],
+      "t": 0,
+      "izoh": "Kerakli asboblar: laboratoriya universal shtativi, cho'zilmas ip, sharcha, sekundomer, o'lchov lentasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#3e4186b1"
+    },
+    {
+      "q": "Tajribada ipni shtativga qanday mahkamlash tavsiya etiladi?",
+      "v": [
+        "Imkon boricha uzunroq holda",
+        "Imkon boricha qisqaroq holda",
+        "Gorizontal holatda",
+        "Ikki qavatlab"
+      ],
+      "t": 0,
+      "izoh": "Ipni shtativga imkon boricha uzunroq holda mahkamlash kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#ebb9eb5c"
+    },
+    {
+      "q": "Ip uzunligini o'lchashda shar radiusini hisobga olmaslik mumkin, chunki...",
+      "v": [
+        "Shar radiusi mayatnik ipining uzunligidan juda kichik",
+        "Shar radiusi ip uzunligiga teng",
+        "Shar massasi hisobga olinmaydi",
+        "O'lchov lentasi aniq o'lchamaydi"
+      ],
+      "t": 0,
+      "izoh": "Shar radiusi ip uzunligidan juda kichik bo'lgani uchun uni hisobga olmasak ham bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#a7d336a0"
+    },
+    {
+      "q": "Sharchani muvozanat vaziyatidan qancha burchakka og'dirish tavsiya etiladi?",
+      "v": [
+        "Uncha katta bo'lmagan 6°–8° burchakka",
+        "45° burchakka",
+        "90° burchakka",
+        "180° burchakka"
+      ],
+      "t": 0,
+      "izoh": "Sharchani uncha katta bo'lmagan (6°–8°) burchakka og'dirib, qo'yib yuborish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#58e08b5b"
+    },
+    {
+      "q": "Nima uchun mayatnikni kichik burchakka og'dirish kerak?",
+      "v": [
+        "Kichik og'ishlarda tebranishlar garmonik bo'lib, Gyuygens formulasi to'g'ri ishlaydi",
+        "Katta burchakda ip uzunlashadi",
+        "Katta burchakda sekundomer ishlamaydi",
+        "Kichik burchakda havo qarshiligi yo'q bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Faqat kichik og'ishlarda matematik mayatnik garmonik tebranadi va T = 2π√(l/g) formulasi qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#6b8ed413"
+    },
+    {
+      "q": "Tajribada tebranishlar sonini oldindan qanday belgilash mumkinligi keltirilgan?",
+      "v": [
+        "Masalan, 20 marta",
+        "Faqat 1 marta",
+        "Faqat 100 marta",
+        "Aynan 2 marta"
+      ],
+      "t": 0,
+      "izoh": "Oldindan aniq belgilangan (masalan, 20 marta) tebranishlar sonining to'liq tebranishi uchun ketgan vaqt o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#3578ae4e"
+    },
+    {
+      "q": "Tebranish davri tajribada qaysi formula bilan topiladi?",
+      "v": [
+        "T = t/N",
+        "T = N/t",
+        "T = 2πN/t",
+        "T = t·N"
+      ],
+      "t": 0,
+      "izoh": "T = t/N formuladan tebranish davri topiladi; t — N ta tebranishga ketgan vaqt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#7fcbad3a"
+    },
+    {
+      "q": "Erkin tushish tezlanishining son qiymati qaysi formula bilan hisoblanadi?",
+      "v": [
+        "g = 4π²l/T²",
+        "g = T²/(4π²l)",
+        "g = 2π√(l/T)",
+        "g = l/T"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g) dan g = 4π²l/T².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#e6727d40"
+    },
+    {
+      "q": "Tajribani takrorlashda ip uzunligi o'zgartirilmay, nima o'zgartiriladi?",
+      "v": [
+        "Tebranishlar soni N₂ = 30 va N₃ = 40 taga yetkaziladi",
+        "Sharchaning massasi",
+        "Og'dirish burchagi 90° gacha oshiriladi",
+        "Shtativning balandligi"
+      ],
+      "t": 0,
+      "izoh": "Ip uzunligini o'zgartirmagan holda tebranishlar sonini N₂ = 30 va N₃ = 40 ga yetkazib tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#f455ca11"
+    },
+    {
+      "q": "Laboratoriya ishida o'lchanadigan bevosita kattaliklar qaysilar?",
+      "v": [
+        "Ip uzunligi l va N ta tebranishga ketgan vaqt t",
+        "Yukning massasi va hajmi",
+        "Kuch va tezlanish",
+        "Tezlik va yo'l"
+      ],
+      "t": 0,
+      "izoh": "Tajribada ip uzunligi l o'lchov lentasi bilan, vaqt t esa sekundomer bilan bevosita o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#401b5cf4"
+    },
+    {
+      "q": "Ish yakunida qanday xatoliklar hisoblanadi?",
+      "v": [
+        "Absolyut va nisbiy xatoliklar",
+        "Faqat sistematik xatolik",
+        "Faqat tasodifiy xatolik",
+        "Hech qanday xatolik hisoblanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ishning 10-bandida absolyut va nisbiy xatoliklarni topish ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#0bd98386"
+    },
+    {
+      "q": "Jadvalda nisbiy xatolik qanday ifodalanadi?",
+      "v": [
+        "ε = Δg/g_o'rt · 100%",
+        "ε = g·100%",
+        "ε = t/N",
+        "ε = l/g"
+      ],
+      "t": 0,
+      "izoh": "Nisbiy xatolik ε = Δg/g_o'rt · 100% ko'rinishda hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#14f994af"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish davri mayatnik sharchasining massasiga bog'liq emas, sababi nima?",
+      "v": [
+        "Davr formulasida (T = 2π√(l/g)) massa kirmaydi",
+        "Sharcha massasi juda kichik",
+        "Ip massasiz bo'lgani uchun",
+        "Amplituda kichik bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Gyuygens formulasida massa ishtirok etmaydi, shuning uchun davr massaga bog'liq emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#ad806366"
+    },
+    {
+      "q": "Yerdan boshqa planetada shu tajriba o'tkazilsa, natijalar farq qiladimi?",
+      "v": [
+        "Ha, chunki har planetada erkin tushish tezlanishi g har xil",
+        "Yo'q, g hamma joyda bir xil",
+        "Faqat davr o'zgaradi, g o'zgarmaydi",
+        "Faqat ip uzunligi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Boshqa planetalarda g boshqacha bo'lgani uchun o'lchov natijalari farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#e863528d"
+    },
+    {
+      "q": "Matematik mayatnik tebranish davri uning o'lchamlariga bog'liqmi?",
+      "v": [
+        "Ha, davr mayatnik uzunligining kvadrat ildiziga proporsional",
+        "Yo'q, mutlaqo bog'liq emas",
+        "Faqat sharcha radiusiga bog'liq",
+        "Faqat ip qalinligiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "T = 2π√(l/g) bo'lgani uchun davr mayatnik uzunligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#ae0ba329"
+    },
+    {
+      "q": "Yerning ekvatori va qutbida matematik mayatnikning tebranish davri bir xil bo'la oladimi?",
+      "v": [
+        "Yo'q, chunki ekvator va qutbda g ning qiymati har xil",
+        "Ha, hamma joyda bir xil",
+        "Ha, chunki davr g ga bog'liq emas",
+        "Faqat ip uzunligi bir xil bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Ekvator va qutbda erkin tushish tezlanishi turlicha bo'lgani uchun davr ham farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#2ef3e022"
+    },
+    {
+      "q": "Mayatnik 20 ta to'liq tebranishni 40 sekundda bajardi. Tebranish davri qancha?",
+      "v": [
+        "2 s",
+        "0,5 s",
+        "20 s",
+        "4 s"
+      ],
+      "t": 0,
+      "izoh": "T = t/N = 40/20 = 2 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#5017acaa"
+    },
+    {
+      "q": "Mayatnik uzunligi 1 m, tebranish davri 2 s bo'lsa, erkin tushish tezlanishi taxminan qancha chiqadi? (π² ≈ 9,86)",
+      "v": [
+        "9,86 m/s²",
+        "4,93 m/s²",
+        "19,7 m/s²",
+        "2 m/s²"
+      ],
+      "t": 0,
+      "izoh": "g = 4π²l/T² = 4·9,86·1/4 = 9,86 m/s².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#1ebf898f"
+    },
+    {
+      "q": "Tajribada o'lchangan vaqt t kam o'lchansa (haqiqiysidan kichik chiqsa), hisoblangan g qiymati qanday chiqadi?",
+      "v": [
+        "Haqiqiysidan katta",
+        "Haqiqiysidan kichik",
+        "O'zgarmaydi",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "g = 4π²lN²/t²; t kichik o'lchansa, g katta chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#29e2cb23"
+    },
+    {
+      "q": "Ip uzunligi haqiqiysidan katta o'lchansa, hisoblangan g qanday chiqadi?",
+      "v": [
+        "Haqiqiysidan katta",
+        "Haqiqiysidan kichik",
+        "O'zgarmaydi",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "g = 4π²l/T² formulada l katta o'lchansa, g ham katta chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#9c26bccf"
+    },
+    {
+      "q": "Tajribada sekundomer nima uchun ishlatiladi?",
+      "v": [
+        "Belgilangan tebranishlar soniga ketgan vaqtni o'lchash uchun",
+        "Ip uzunligini o'lchash uchun",
+        "Sharcha massasini o'lchash uchun",
+        "Og'ish burchagini o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Sekundomer bilan N ta to'liq tebranish uchun ketgan vaqt t o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#a6a35ad9"
+    },
+    {
+      "q": "O'lchov lentasi tajribada nima uchun kerak?",
+      "v": [
+        "Mayatnik ipining uzunligini o'lchash uchun",
+        "Vaqt o'lchash uchun",
+        "Burchak o'lchash uchun",
+        "Massani o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Ip uzunligi o'lchov lentasi yordamida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#dfd95117"
+    },
+    {
+      "q": "Tajribada cho'zilmas ip ishlatilishining sababi nima?",
+      "v": [
+        "Cho'ziladigan ipda mayatnik uzunligi o'zgarib, o'lchov natijalari buziladi",
+        "Cho'zilmas ip arzonroq",
+        "Cho'zilmas ip yengilroq",
+        "Cho'zilmas ip mustahkamroq"
+      ],
+      "t": 0,
+      "izoh": "Matematik mayatnik modelida ip cho'zilmaydigan bo'lishi kerak, aks holda uzunlik o'zgarib natija buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#159c0386"
+    },
+    {
+      "q": "Ushbu laboratoriya ishida g ni aniqlash usulining g'oyasi nimaga asoslangan?",
+      "v": [
+        "Gyuygens formulasidan (T = 2π√(l/g)) g ni ifodalashga",
+        "Guk qonuniga",
+        "Arximed qonuniga",
+        "Nyutonning birinchi qonuniga"
+      ],
+      "t": 0,
+      "izoh": "Usul Gyuygens formulasidan g = 4π²l/T² ifodani olishga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#8a2b8c0a"
+    },
+    {
+      "q": "Tajribada sharchani qo'yib yuborgan onda bir vaqtning o'zida nima qilish kerak?",
+      "v": [
+        "Sekundomerni ishga tushirish kerak",
+        "Ipni kesish kerak",
+        "O'lchov lentasini olib tashlash kerak",
+        "Shtativni silkitish kerak"
+      ],
+      "t": 0,
+      "izoh": "Sharchani og'dirib qo'yib yuborgan onda sekundomerni ham ishga tushirish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#c1472fea"
+    },
+    {
+      "q": "Bir xil mayatnik bilan turli N (20, 30, 40) qiymatlarda o'lchangan davrlar qanday bo'lishi kerak?",
+      "v": [
+        "Taxminan bir xil, chunki davr tebranishlar soniga bog'liq emas",
+        "Har safar kattalashib boradi",
+        "Har safar kichrayib boradi",
+        "Mutlaqo tasodifiy"
+      ],
+      "t": 0,
+      "izoh": "Davr N ga bog'liq emas, shuning uchun natijalar taxminan bir xil chiqishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m17-laboratoriya-erkin-tushish#2245e84b"
+    }
+  ]
+}

@@ -1,0 +1,1609 @@
+{
+  "nom": "Qisqa ko'paytirish formulalari",
+  "bolim": "Ayniy (algebraik shakl) almashtirishlar",
+  "blok": "ayn",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Anvar algebra daftariga (3x + 5)² ifodasini yoyilgan ko'rinishda ko'chirib yozdi. Uning natijasi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "9x² + 30x + 25",
+        "9x² + 15x + 25",
+        "9x² + 25",
+        "3x² + 30x + 25"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² = a² + 2ab + b² formulasida a = 3x, b = 5 deb olamiz. a² = 9x², o'rta had 2ab = 2 · 3x · 5 = 30x, oxirgisi b² = 25. Demak natija 9x² + 30x + 25 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#ca4faa1f"
+    },
+    {
+      "q": "Quyidagi (4a − 7b)² ifodani yoyib, hosil bo'ladigan uch hadli ko'phadni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "16a² + 56ab + 49b²",
+        "16a² − 28ab + 49b²",
+        "16a² − 56ab + 49b²",
+        "16a² − 56ab − 49b²"
+      ],
+      "t": 2,
+      "izoh": "Formula: (m − n)² = m² − 2mn + n². Bu yerda m = 4a, n = 7b. m² = 16a², 2mn = 2 · 4a · 7b = 56ab, n² = 49b². Ayirmaning kvadratida faqat o'rta had manfiy bo'ladi: 16a² − 56ab + 49b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d59d3f61"
+    },
+    {
+      "q": "Kvadrat shaklidagi tomorqaning tomoni (x + 6) metrga teng. Uning yuzasini x orqali ifodalovchi to'g'ri ko'phadni tanlang.",
+      "v": [
+        "x² + 36",
+        "x² + 12x + 36",
+        "x² + 6x + 36",
+        "x² + 12x + 12"
+      ],
+      "t": 1,
+      "izoh": "Kvadratning yuzasi tomonining kvadratiga teng: S = (x + 6)². (a + b)² = a² + 2ab + b² formulasiga ko'ra S = x² + 2 · x · 6 + 36 = x² + 12x + 36 kvadrat metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#674c89e6"
+    },
+    {
+      "q": "Dilnoza (5 − 2y)² ifodani yoyganda o'rta hadning ishorasida xatoga yo'l qo'ydi. To'g'ri yoyilma qaysi variantda?",
+      "v": [
+        "25 − 20y + 4y²",
+        "25 + 20y + 4y²",
+        "25 − 10y + 4y²",
+        "25 − 20y − 4y²"
+      ],
+      "t": 0,
+      "izoh": "(a − b)² = a² − 2ab + b² bo'yicha a = 5, b = 2y deb olamiz. a² = 25, 2ab = 2 · 5 · 2y = 20y, b² = 4y². O'rta had manfiy, oxirgi had esa musbat: 25 − 20y + 4y².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#09e7ca84"
+    },
+    {
+      "q": "Quyidagi (x² + 3)² ifodani yoyilgan holda yozganda hosil bo'ladigan ko'phad qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "x⁴ + 9",
+        "x⁴ + 3x² + 9",
+        "x⁴ + 6x² + 9",
+        "x⁴ + 6x² + 6"
+      ],
+      "t": 2,
+      "izoh": "a = x², b = 3 deb (a + b)² = a² + 2ab + b² formulasini qo'llaymiz. a² = (x²)² = x⁴, o'rta had 2ab = 2 · x² · 3 = 6x², b² = 9. Natija: x⁴ + 6x² + 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#dcab78c4"
+    },
+    {
+      "q": "Quyidagi 9x² − 24xy + 16y² ifodani qisqa ko'paytirish formulasi yordamida to'la kvadrat ko'rinishida yozing.",
+      "v": [
+        "(3x − 4y)²",
+        "(3x + 4y)²",
+        "(9x − 16y)²",
+        "(3x − 4y)(3x + 4y)"
+      ],
+      "t": 0,
+      "izoh": "Chekka hadlar kvadrat: 9x² = (3x)² va 16y² = (4y)². O'rta hadni tekshiramiz: 2 · 3x · 4y = 24xy, u manfiy ishora bilan kelgan. Demak ifoda (3x − 4y)² ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#042f3b21"
+    },
+    {
+      "q": "Ko'phad m² + 14m + 49 ni ikki hadning kvadrati sifatida yozganda qaysi natija hosil bo'ladi?",
+      "v": [
+        "(m + 49)²",
+        "(m + 7)²",
+        "(m − 7)²",
+        "(m + 7)(m − 7)"
+      ],
+      "t": 1,
+      "izoh": "49 = 7² ekanini ko'ramiz. O'rta hadni tekshiramiz: 2 · m · 7 = 14m, bu shartdagi had bilan mos keldi. Barcha hadlar musbat bo'lgani uchun natija (m + 7)² bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#23f916d2"
+    },
+    {
+      "q": "Kvadrat gilamning yuzasi 25a² + 20a + 4 kvadrat metrga teng ekani ma'lum. Gilamning tomoni nechaga teng?",
+      "v": [
+        "5a + 2",
+        "5a + 4",
+        "25a + 4",
+        "5a − 2"
+      ],
+      "t": 0,
+      "izoh": "Yuza to'la kvadrat ko'rinishida: 25a² = (5a)², 4 = 2², o'rta had esa 2 · 5a · 2 = 20a. Demak S = (5a + 2)². Kvadratning tomoni yuzaning kvadrat ildiziga teng, ya'ni 5a + 2 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#b4eeaaa9"
+    },
+    {
+      "q": "Quyidagi 4x⁴ + 12x² + 9 ifodasini to'la kvadrat ko'rinishiga keltiring va to'g'ri javobni belgilang.",
+      "v": [
+        "(4x² + 3)²",
+        "(2x² + 9)²",
+        "(2x + 3)²",
+        "(2x² + 3)²"
+      ],
+      "t": 3,
+      "izoh": "4x⁴ = (2x²)² va 9 = 3². O'rta hadni tekshiramiz: 2 · 2x² · 3 = 12x², bu berilgan had bilan bir xil. Shuning uchun ifoda (2x² + 3)² ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#a8592e63"
+    },
+    {
+      "q": "Ifoda 49x² − 64y² ni ikki ko'phadning ko'paytmasi ko'rinishida yozing va to'g'ri javobni tanlang.",
+      "v": [
+        "(7x − 8y)(7x + 8y)",
+        "(7x − 8y)²",
+        "(49x − 64y)(49x + 64y)",
+        "(7x + 8y)²"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlar ayirmasi formulasi: a² − b² = (a − b)(a + b). Bu yerda a = 7x, chunki 49x² = (7x)², va b = 8y, chunki 64y² = (8y)². Demak natija (7x − 8y)(7x + 8y).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c9d82be4"
+    },
+    {
+      "q": "Quyidagi x⁴ − 16 ifodani chiziqli va kvadratik ko'paytuvchilarga oxirigacha ajratib, to'g'ri yozilgan variantni tanlang.",
+      "v": [
+        "(x² − 4)(x² + 4)",
+        "(x − 4)(x + 4)",
+        "(x − 2)(x + 2)(x² + 4)",
+        "(x − 2)²(x + 2)²"
+      ],
+      "t": 2,
+      "izoh": "Avval x⁴ − 16 = (x²)² − 4² = (x² − 4)(x² + 4). Birinchi ko'paytuvchi yana kvadratlar ayirmasi: x² − 4 = (x − 2)(x + 2). Ikkinchisi haqiqiy sonlar ustida ajralmaydi. Natija: (x − 2)(x + 2)(x² + 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#bfc7b9c8"
+    },
+    {
+      "q": "Farrux daftarida 25 − 9m² ifodani ko'paytuvchilarga ajratmoqchi va natijani tekshirmoqchi. U qaysi javobni olishi kerak?",
+      "v": [
+        "(5 − 3m)²",
+        "(25 − 9m)(25 + 9m)",
+        "(5 − 9m)(5 + 9m)",
+        "(5 − 3m)(5 + 3m)"
+      ],
+      "t": 3,
+      "izoh": "25 = 5² va 9m² = (3m)² ekanini ko'ramiz. a² − b² = (a − b)(a + b) formulasiga ko'ra 25 − 9m² = (5 − 3m)(5 + 3m). Bu yerda a = 5, b = 3m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#058d38eb"
+    },
+    {
+      "q": "Quyidagi (a + 3)² − (a − 1)² ifodani soddalashtirsak, natijada qanday ifoda hosil bo'ladi?",
+      "v": [
+        "4a + 4",
+        "8a + 8",
+        "8a + 10",
+        "2a + 2"
+      ],
+      "t": 1,
+      "izoh": "Kvadratlar ayirmasi sifatida qaraymiz: [(a + 3) − (a − 1)] · [(a + 3) + (a − 1)]. Birinchi qavs 4 ga, ikkinchisi 2a + 2 ga teng. Ko'paytmasi 4 · (2a + 2) = 8a + 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#10d6c303"
+    },
+    {
+      "q": "Hisob-kitobni tezlashtirish uchun 87² − 13² ifodaning qiymatini qisqa ko'paytirish formulasi yordamida toping.",
+      "v": [
+        "740",
+        "5476",
+        "7400",
+        "10000"
+      ],
+      "t": 2,
+      "izoh": "a² − b² = (a − b)(a + b) formulasini qo'llaymiz: 87² − 13² = (87 − 13) · (87 + 13). Bu 74 · 100 ga teng, ya'ni 7400. Har bir kvadratni alohida hisoblash shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-ayirmasi-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#2aa3ea11"
+    },
+    {
+      "q": "Do'konda 49 ta qutining har birida 51 tadan olma bor. Olmalarning umumiy sonini qisqa ko'paytirish formulasi bilan toping.",
+      "v": [
+        "2500",
+        "2499",
+        "2501",
+        "2450"
+      ],
+      "t": 1,
+      "izoh": "49 · 51 ni (50 − 1)(50 + 1) ko'rinishida yozamiz. Kvadratlar ayirmasi formulasiga ko'ra bu 50² − 1² = 2500 − 1 = 2499. Demak do'konda 2499 ta olma bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d8309982"
+    },
+    {
+      "q": "Zalda 103 qator bo'lib, har bir qatorda 97 tadan o'rindiq bor. O'rindiqlarning umumiy sonini formuladan foydalanib hisoblang.",
+      "v": [
+        "10009",
+        "10000",
+        "9991",
+        "9700"
+      ],
+      "t": 2,
+      "izoh": "103 · 97 ni (100 + 3)(100 − 3) deb yozamiz. Bu kvadratlar ayirmasi: 100² − 3² = 10000 − 9 = 9991. Demak zalda 9991 ta o'rindiq bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#abe2673d"
+    },
+    {
+      "q": "Statistik hisobotda 2025² − 2024² ifodaning qiymati kerak bo'ldi. Uni qisqa ko'paytirish formulasi bilan toping.",
+      "v": [
+        "1",
+        "4048",
+        "4049",
+        "4050"
+      ],
+      "t": 2,
+      "izoh": "2025² − 2024² = (2025 − 2024)(2025 + 2024) ko'rinishiga keltiramiz. Birinchi qavs 1 ga, ikkinchisi 4049 ga teng. Ko'paytma 1 · 4049 = 4049 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-ayirmasi-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#7d50a1a3"
+    },
+    {
+      "q": "Sardor 102² ni og'zaki hisoblash uchun (100 + 2)² yoyilmasidan foydalandi. U qanday son oldi?",
+      "v": [
+        "10004",
+        "10204",
+        "10404",
+        "10400"
+      ],
+      "t": 2,
+      "izoh": "(100 + 2)² = 100² + 2 · 100 · 2 + 2² formulasini qo'llaymiz. Bu 10000 + 400 + 4 = 10404 ga teng. O'rta had 2ab = 400 ekanini unutmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#abd25760"
+    },
+    {
+      "q": "Ismoil 98² ning qiymatini (100 − 2)² ko'rinishida hisobladi. Uning to'g'ri javobi qaysi variantda?",
+      "v": [
+        "9996",
+        "9604",
+        "9204",
+        "9600"
+      ],
+      "t": 1,
+      "izoh": "(100 − 2)² = 100² − 2 · 100 · 2 + 2² = 10000 − 400 + 4 bo'ladi. Amallarni bajaramiz: 10000 − 400 = 9600, so'ng 9600 + 4 = 9604.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadrat-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#589a098c"
+    },
+    {
+      "q": "Kvadrat shaklidagi hovlining tomoni 25 metr edi. Tomonini 2 metrga uzaytirsa, yuzasi necha kvadrat metrga ortadi?",
+      "v": [
+        "4",
+        "104",
+        "100",
+        "52"
+      ],
+      "t": 1,
+      "izoh": "Yangi yuza (25 + 2)² = 625 + 2 · 25 · 2 + 4 = 625 + 100 + 4 = 729 kvadrat metr. Ortish 729 − 625 = 104 kvadrat metr. Faqat 2² = 4 ni olish xato, chunki 2ab = 100 ham qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#9b877dbe"
+    },
+    {
+      "q": "Nazorat ishida 37² + 2 · 37 · 13 + 13² ifodaning qiymatini tez topish talab qilingan. Javob nechaga teng?",
+      "v": [
+        "50",
+        "576",
+        "1538",
+        "2500"
+      ],
+      "t": 3,
+      "izoh": "Ifoda a² + 2ab + b² ko'rinishida, ya'ni u (a + b)² ga teng. a = 37, b = 13 bo'lgani uchun (37 + 13)² = 50² = 2500. Har bir kvadratni alohida hisoblash shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-tez-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#8e9ba39b"
+    },
+    {
+      "q": "Quyidagi (x + 2)³ ifodani yoyilgan ko'rinishda yozing va to'g'ri natijani tanlang.",
+      "v": [
+        "x³ + 6x² + 12x + 8",
+        "x³ + 8",
+        "x³ + 2x² + 4x + 8",
+        "x³ + 6x² + 6x + 8"
+      ],
+      "t": 0,
+      "izoh": "(a + b)³ = a³ + 3a²b + 3ab² + b³ formulasida a = x, b = 2. Demak 3a²b = 3 · x² · 2 = 6x², 3ab² = 3 · x · 4 = 12x, b³ = 8. Natija x³ + 6x² + 12x + 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#011d02ce"
+    },
+    {
+      "q": "Ifoda (2a − 3)³ ko'rinishida berilgan. Uni yoyganda hosil bo'ladigan ko'phad qaysi variantda to'g'ri?",
+      "v": [
+        "8a³ − 27",
+        "8a³ − 18a² + 27a − 27",
+        "8a³ − 36a² + 54a − 27",
+        "8a³ − 36a² + 54a + 27"
+      ],
+      "t": 2,
+      "izoh": "(m − n)³ = m³ − 3m²n + 3mn² − n³ bo'lib, m = 2a, n = 3. Demak m³ = 8a³, 3m²n = 3 · 4a² · 3 = 36a², 3mn² = 3 · 2a · 9 = 54a, n³ = 27. Ishoralar navbatma-navbat: 8a³ − 36a² + 54a − 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#997c022b"
+    },
+    {
+      "q": "Kub shaklidagi qutining qirrasi (y + 1) dm ga teng. Qutining hajmini y orqali ifodalovchi ko'phadni toping.",
+      "v": [
+        "y³ + 1",
+        "y³ + 3y² + 3y + 1",
+        "y³ + 3y + 1",
+        "y³ + y² + y + 1"
+      ],
+      "t": 1,
+      "izoh": "Kubning hajmi qirrasining kubiga teng: V = (y + 1)³. Yoyilma (a + b)³ = a³ + 3a²b + 3ab² + b³ bo'yicha y³ + 3y² + 3y + 1 kub detsimetr chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#116b8fb9"
+    },
+    {
+      "q": "Ayirmaning kubi (a − b)³ yoyilganda to'rtta hadning ishoralari qanday ketma-ketlikda joylashadi?",
+      "v": [
+        "+, +, +, +",
+        "+, −, −, +",
+        "+, +, −, −",
+        "+, −, +, −"
+      ],
+      "t": 3,
+      "izoh": "(a − b)³ = a³ − 3a²b + 3ab² − b³ yoyilmasiga qaraymiz. Birinchi had musbat, keyingi hadlarda ishora navbatma-navbat almashadi. Demak ishoralar tartibi +, −, +, − bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-yoyish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c651b575"
+    },
+    {
+      "q": "Ko'phad x³ + 9x² + 27x + 27 ko'rinishida berilgan. Uni ikki hadning kubi sifatida yozing.",
+      "v": [
+        "(x + 9)³",
+        "(x + 3)³",
+        "(x + 3)²",
+        "(x − 3)³"
+      ],
+      "t": 1,
+      "izoh": "Chekka hadlar kub: x³ va 27 = 3³. Yoyilmani tekshiramiz: 3 · x² · 3 = 9x² va 3 · x · 9 = 27x, ikkalasi ham mos keldi. Demak ifoda (x + 3)³ ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d8deb615"
+    },
+    {
+      "q": "Ifoda 8m³ − 12m² + 6m − 1 ko'rinishida. Uni qisqa ko'paytirish formulasi yordamida ixchamlashtiring.",
+      "v": [
+        "(2m + 1)³",
+        "(8m − 1)³",
+        "(2m − 1)³",
+        "(2m − 1)²"
+      ],
+      "t": 2,
+      "izoh": "8m³ = (2m)³ va 1 = 1³. Ishoralarning navbatma-navbat almashishi ayirmaning kubini bildiradi. Tekshiramiz: 3 · (2m)² · 1 = 12m² va 3 · 2m · 1 = 6m, mos keldi. Javob (2m − 1)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#bee19e50"
+    },
+    {
+      "q": "Ko'phad 27 + 27a + 9a² + a³ ko'rinishida yozilgan. U qaysi ikki hadning kubiga teng ekanini aniqlang.",
+      "v": [
+        "(a + 27)³",
+        "(a + 3)²",
+        "(a − 3)³",
+        "(a + 3)³"
+      ],
+      "t": 3,
+      "izoh": "Hadlarni kamayuvchi tartibda yozamiz: a³ + 9a² + 27a + 27. Chekkalari a³ va 3³ ga teng. Tekshiruv: 3 · a² · 3 = 9a² va 3 · a · 9 = 27a. Demak natija (a + 3)³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#abbb4f94"
+    },
+    {
+      "q": "Kubning hajmi x³ − 6x² + 12x − 8 kub santimetrga teng. Kubning qirrasi qanday ifoda bilan beriladi?",
+      "v": [
+        "x − 2",
+        "x + 2",
+        "x − 8",
+        "x − 6"
+      ],
+      "t": 0,
+      "izoh": "Hajm ifodasi to'la kub ko'rinishida: chekka hadlar x³ va 8 = 2³. Tekshiramiz: 3 · x² · 2 = 6x² va 3 · x · 4 = 12x, ishoralar esa almashib boradi. Demak V = (x − 2)³ va qirra x − 2 santimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kub-teskari-yigish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#7b9a7f80"
+    },
+    {
+      "q": "Ifoda x³ + 64 ko'rinishida berilgan. Uni ko'paytuvchilarga ajratganda qanday natija hosil bo'ladi?",
+      "v": [
+        "(x + 4)(x² + 4x + 16)",
+        "(x + 4)(x² − 8x + 16)",
+        "(x + 4)³",
+        "(x + 4)(x² − 4x + 16)"
+      ],
+      "t": 3,
+      "izoh": "a³ + b³ = (a + b)(a² − ab + b²) formulasini qo'llaymiz. Bu yerda a = x, b = 4, chunki 64 = 4³. Demak x³ + 64 = (x + 4)(x² − 4x + 16), o'rta had manfiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-yigindisi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#4d00da54"
+    },
+    {
+      "q": "Berilgan 8a³ + 27b³ yig'indini ko'paytuvchilarga ajrating va to'g'ri yozilgan variantni belgilang.",
+      "v": [
+        "(2a + 3b)(4a² + 6ab + 9b²)",
+        "(2a + 3b)(2a² − 6ab + 3b²)",
+        "(2a + 3b)(4a² − 12ab + 9b²)",
+        "(2a + 3b)(4a² − 6ab + 9b²)"
+      ],
+      "t": 3,
+      "izoh": "8a³ = (2a)³ va 27b³ = (3b)³. a³ + b³ = (a + b)(a² − ab + b²) formulasiga ko'ra birinchi ko'paytuvchi 2a + 3b bo'ladi. Ikkinchisi (2a)² − 2a · 3b + (3b)² = 4a² − 6ab + 9b².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-yigindisi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c93391ef"
+    },
+    {
+      "q": "Kasr (x³ + 125)/(x + 5) ko'rinishida berilgan. Uni qisqartirgandan keyin qanday ifoda qoladi?",
+      "v": [
+        "x² + 5x + 25",
+        "x² − 5x + 25",
+        "x² − 25",
+        "x² − 10x + 25"
+      ],
+      "t": 1,
+      "izoh": "Suratni ajratamiz: x³ + 125 = (x + 5)(x² − 5x + 25), chunki 125 = 5³. Surat va maxrajdagi x + 5 ko'paytuvchi qisqaradi. Qoladigan ifoda x² − 5x + 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-yigindisi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#b9d1f2e7"
+    },
+    {
+      "q": "Anvarning masalasida 1000 + y³ ifodani ko'paytuvchilarga ajratish talab qilingan. Uning to'g'ri javobi qaysi variantda?",
+      "v": [
+        "(10 + y)(100 − 10y + y²)",
+        "(10 + y)(100 + 10y + y²)",
+        "(10 + y)(100 − 20y + y²)",
+        "(10 + y)³"
+      ],
+      "t": 0,
+      "izoh": "1000 = 10³ ekanini ko'ramiz, demak ifoda 10³ + y³ ko'rinishida. a³ + b³ = (a + b)(a² − ab + b²) formulasi bo'yicha (10 + y)(100 − 10y + y²) hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-yigindisi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#054984f6"
+    },
+    {
+      "q": "Quyidagi 27x³ − 8 ifodani ko'paytuvchilarga ajrating va to'g'ri yozilgan variantni tanlang.",
+      "v": [
+        "(3x − 2)(9x² + 6x + 4)",
+        "(3x − 2)(9x² − 6x + 4)",
+        "(3x − 2)(3x² + 6x + 2)",
+        "(3x − 2)³"
+      ],
+      "t": 0,
+      "izoh": "27x³ = (3x)³ va 8 = 2³ ekanini ko'ramiz. a³ − b³ = (a − b)(a² + ab + b²) formulasiga ko'ra a = 3x, b = 2. Ikkinchi ko'paytuvchi 9x² + 6x + 4 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#7895491e"
+    },
+    {
+      "q": "Berilgan 125m³ − 64n³ ayirmani ko'paytuvchilarga ajratgan o'quvchi to'g'ri javobni qaysi variantda topadi?",
+      "v": [
+        "(5m − 4n)(25m² − 20mn + 16n²)",
+        "(5m − 4n)(25m² + 40mn + 16n²)",
+        "(5m − 4n)(25m² + 20mn + 16n²)",
+        "(5m + 4n)(25m² + 20mn + 16n²)"
+      ],
+      "t": 2,
+      "izoh": "125m³ = (5m)³ va 64n³ = (4n)³. Kublar ayirmasi formulasi a³ − b³ = (a − b)(a² + ab + b²). Demak (5m − 4n)(25m² + 20mn + 16n²) hosil bo'ladi, o'rta had musbat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#cd347e75"
+    },
+    {
+      "q": "Kasr (x³ − 27)/(x² + 3x + 9) ko'rinishida yozilgan. Uni qisqartirgandan so'ng qanday ifoda qoladi?",
+      "v": [
+        "x + 3",
+        "x − 27",
+        "x − 9",
+        "x − 3"
+      ],
+      "t": 3,
+      "izoh": "Suratni ajratamiz: x³ − 27 = (x − 3)(x² + 3x + 9). Maxraj aynan ikkinchi ko'paytuvchi bilan bir xil, shuning uchun u qisqaradi. Natijada faqat x − 3 qoladi. Diqqat: 27 dan kub ildiz olinmasa x − 27, xato ravishda kvadrat ildiz olinsa x − 9 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d4228453"
+    },
+    {
+      "q": "Omborda kub shaklidagi ikki yashik bor: kattasining qirrasi 7 dm, kichigining qirrasi 3 dm. Ularning hajmlari ayirmasi nechaga teng?",
+      "v": [
+        "148",
+        "316",
+        "40",
+        "370"
+      ],
+      "t": 1,
+      "izoh": "Hajmlar ayirmasi 7³ − 3³ ga teng. Kublar ayirmasi formulasiga ko'ra (7 − 3)(49 + 21 + 9) = 4 · 79 = 316. Demak farq 316 kub detsimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-ayirmasi-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d0171e6d"
+    },
+    {
+      "q": "Nazorat ishida 13³ − 3³ ifodaning qiymati so'ralgan. Uni ko'paytuvchilarga ajratish yo'li bilan hisoblang.",
+      "v": [
+        "1000",
+        "2224",
+        "2170",
+        "217"
+      ],
+      "t": 2,
+      "izoh": "13³ − 3³ = (13 − 3)(13² + 13 · 3 + 3²) = 10 · (169 + 39 + 9). Qavs ichidagi yig'indi 217 ga teng, demak natija 10 · 217 = 2170.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-son-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#149dbdea"
+    },
+    {
+      "q": "Kasr (52³ + 48³)/(52² − 52 · 48 + 48²) ko'rinishida berilgan. Uning qiymatini hisoblang va javobni tanlang.",
+      "v": [
+        "4",
+        "100",
+        "2496",
+        "10000"
+      ],
+      "t": 1,
+      "izoh": "Surat a³ + b³ = (a + b)(a² − ab + b²) ko'rinishida ajraladi, bunda a = 52, b = 48. Maxraj aynan a² − ab + b² ga teng, shuning uchun u qisqaradi. Qoladi a + b = 52 + 48 = 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-son-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#a820727d"
+    },
+    {
+      "q": "Ikki sonning kublari yig'indisi 6³ + 4³ ga teng. Bu yig'indining qiymatini ko'paytuvchilarga ajratish yo'li bilan hisoblang.",
+      "v": [
+        "280",
+        "1000",
+        "760",
+        "152"
+      ],
+      "t": 0,
+      "izoh": "6³ + 4³ = (6 + 4)(36 − 24 + 16) = 10 · 28 = 280. Ikkinchi qavsdagi o'rta had manfiy ekanini unutmaslik kerak, aks holda xato 760 javobi chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kublar-son-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#73280ab1"
+    },
+    {
+      "q": "Do'konda kub shaklidagi ikki quti bor: kattasining qirrasi 10 sm, kichigining qirrasi 6 sm. Ularning hajmlari yig'indisi nechaga teng?",
+      "v": [
+        "4096",
+        "784",
+        "1600",
+        "1216"
+      ],
+      "t": 3,
+      "izoh": "Yig'indi 10³ + 6³ ga teng. Formulaga ko'ra (10 + 6)(100 − 60 + 36) = 16 · 76 = 1216. Demak hajmlar yig'indisi 1216 kub santimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kublar-son-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#b9c12a42"
+    },
+    {
+      "q": "Shartga ko'ra a + b = 9 va ab = 14 ga teng. Bunda a² + b² ifodaning qiymatini toping.",
+      "v": [
+        "53",
+        "109",
+        "81",
+        "67"
+      ],
+      "t": 0,
+      "izoh": "(a + b)² = a² + 2ab + b² ayniyatidan a² + b² = (a + b)² − 2ab kelib chiqadi. Qiymatlarni qo'yamiz: 81 − 2 · 14 = 81 − 28 = 53.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-kvadratlar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#f4495de8"
+    },
+    {
+      "q": "Masalada ikki sonning yig'indisi 12, ko'paytmasi esa 20 ga teng deb berilgan. Bu sonlar kvadratlarining yig'indisini toping.",
+      "v": [
+        "184",
+        "124",
+        "104",
+        "144"
+      ],
+      "t": 2,
+      "izoh": "a + b = 12 va ab = 20 deb belgilaymiz. U holda a² + b² = (a + b)² − 2ab = 144 − 40 = 104. Ko'paytmani ikkilantirmaslik keng tarqalgan xato, u 124 javobiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-kvadratlar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#2f8bfd2f"
+    },
+    {
+      "q": "Ikki son uchun a − b = 5 va ab = 6 ekani ma'lum. Bunda a² + b² yig'indi nechaga teng?",
+      "v": [
+        "13",
+        "31",
+        "37",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "(a − b)² = a² − 2ab + b² ayniyatidan a² + b² = (a − b)² + 2ab. Demak 25 + 2 · 6 = 25 + 12 = 37. Ayirma berilganda 2ab qo'shiladi, ayirilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "simmetrik-kvadratlar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#ddb3e592"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning perimetri 28 sm, yuzasi esa 40 sm² ga teng. Uning diagonalining kvadrati nechaga teng?",
+      "v": [
+        "276",
+        "156",
+        "196",
+        "116"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar a va b bo'lsin: 2(a + b) = 28 dan a + b = 14, yuzadan esa ab = 40. Pifagor teoremasiga ko'ra d² = a² + b² = (a + b)² − 2ab = 196 − 80 = 116.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-kvadratlar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#9457f430"
+    },
+    {
+      "q": "Berilgan shartga ko'ra a + b = 5 va ab = 6. Bunda a³ + b³ ifodaning qiymatini hisoblang.",
+      "v": [
+        "35",
+        "125",
+        "95",
+        "215"
+      ],
+      "t": 0,
+      "izoh": "a³ + b³ = (a + b)³ − 3ab(a + b) ayniyatidan foydalanamiz. Qiymatlarni qo'yamiz: 125 − 3 · 6 · 5 = 125 − 90 = 35. Sonlar 2 va 3 ekanini tekshirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kublar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#8aaabf12"
+    },
+    {
+      "q": "Ikki sonning yig'indisi 4, ko'paytmasi esa 3 ga teng. Shu sonlarning kublari yig'indisi nechaga teng?",
+      "v": [
+        "64",
+        "55",
+        "28",
+        "100"
+      ],
+      "t": 2,
+      "izoh": "a + b = 4 va ab = 3 deb olamiz. a³ + b³ = (a + b)³ − 3ab(a + b) = 64 − 3 · 3 · 4 = 64 − 36 = 28. Sonlar 1 va 3, ularning kublari 1 va 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kublar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#e660a740"
+    },
+    {
+      "q": "Berilgan a + b = 6 va a² + b² = 26 bo'lsa, a³ + b³ ifodaning qiymatini toping.",
+      "v": [
+        "156",
+        "126",
+        "216",
+        "96"
+      ],
+      "t": 1,
+      "izoh": "Avval ko'paytmani topamiz: (a + b)² = a² + 2ab + b² dan 36 = 26 + 2ab, ya'ni ab = 5. So'ng a³ + b³ = (a + b)(a² − ab + b²) = 6 · (26 − 5) = 6 · 21 = 126.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-kublar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#2de3f2a1"
+    },
+    {
+      "q": "Anvar va Bekzod yig'ib olgan olmalar sonining yig'indisi 10 ta, ko'paytmasi esa 21 ga teng. Ularning kublari yig'indisini toping.",
+      "v": [
+        "1000",
+        "937",
+        "1630",
+        "370"
+      ],
+      "t": 3,
+      "izoh": "a + b = 10 va ab = 21 deb olamiz. a³ + b³ = (a + b)³ − 3ab(a + b) = 1000 − 3 · 21 · 10 = 1000 − 630 = 370. Sonlar 3 va 7, ularning kublari 27 va 343.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-kublar-yigindisi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#42b8a424"
+    },
+    {
+      "q": "Ikki musbat son uchun a + b = 12 va ab = 32 ekani ma'lum. Ularning ayirmasi a − b nechaga teng?",
+      "v": [
+        "16",
+        "4",
+        "80",
+        "144"
+      ],
+      "t": 1,
+      "izoh": "(a − b)² = (a + b)² − 4ab formulasidan foydalanamiz: 144 − 4 · 32 = 144 − 128 = 16. Sonlar musbat va a > b bo'lgani uchun a − b = √16 = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-ayirma-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#ebfd74a6"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning perimetri 34 sm, yuzasi 60 sm² ga teng. Uning uzun va qisqa tomonlari farqi nechaga teng?",
+      "v": [
+        "49",
+        "17",
+        "7",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Perimetrdan a + b = 17, yuzadan ab = 60. (a − b)² = (a + b)² − 4ab = 289 − 240 = 49, demak a − b = 7 sm. Tomonlar 12 sm va 5 sm ekanini tekshirib ko'rish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ayirma-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c971f7b4"
+    },
+    {
+      "q": "Berilgan a − b = 3 va a² + b² = 29 bo'lsa, ab ko'paytma nechaga teng?",
+      "v": [
+        "20",
+        "10",
+        "19",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "(a − b)² = a² − 2ab + b² ayniyatiga qiymatlarni qo'yamiz: 9 = 29 − 2ab. Bundan 2ab = 20, ya'ni ab = 10. Sonlar 5 va 2 ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "simmetrik-ayirma-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#17e1ec47"
+    },
+    {
+      "q": "Ikki sonning kvadratlari yig'indisi 74, ko'paytmasi esa 35 ga teng. Bu sonlarning yig'indisi musbat qiymatda nechaga teng?",
+      "v": [
+        "144",
+        "109",
+        "39",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "(a + b)² = a² + 2ab + b² = 74 + 2 · 35 = 74 + 70 = 144. Demak a + b = √144 = 12. Kvadrat ildizni olishni unutmaslik kerak, aks holda 144 xato javobi qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "simmetrik-ayirma-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#11a1ccef"
+    },
+    {
+      "q": "Shartga ko'ra x + 1/x = 5 ga teng. Bunda x² + 1/x² ifodaning qiymati nechaga teng?",
+      "v": [
+        "23",
+        "27",
+        "25",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomonni kvadratga ko'taramiz: (x + 1/x)² = x² + 2 · x · (1/x) + 1/x² = x² + 2 + 1/x². Demak 25 = x² + 1/x² + 2, bundan x² + 1/x² = 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son-ifodasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#5c8c5279"
+    },
+    {
+      "q": "Berilgan shartga ko'ra x − 1/x = 3. Bunda x² + 1/x² ifodaning qiymatini toping.",
+      "v": [
+        "7",
+        "11",
+        "9",
+        "13"
+      ],
+      "t": 1,
+      "izoh": "(x − 1/x)² = x² − 2 + 1/x² bo'ladi, chunki o'rta had 2 · x · (1/x) = 2 ga teng. Demak 9 = x² + 1/x² − 2, bundan x² + 1/x² = 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son-ifodasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#9797f102"
+    },
+    {
+      "q": "Shartga ko'ra x + 1/x = 4 ga teng. Bunda x³ + 1/x³ ifodaning qiymatini toping.",
+      "v": [
+        "64",
+        "76",
+        "52",
+        "48"
+      ],
+      "t": 2,
+      "izoh": "a³ + b³ = (a + b)³ − 3ab(a + b) ayniyatini a = x, b = 1/x uchun qo'llaymiz. Bu yerda ab = 1 bo'lgani uchun x³ + 1/x³ = 4³ − 3 · 1 · 4 = 64 − 12 = 52.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-son-ifodasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#f57d1010"
+    },
+    {
+      "q": "Berilgan x² + 1/x² = 7 bo'lsa, x + 1/x ifodaning musbat qiymati nechaga teng?",
+      "v": [
+        "9",
+        "5",
+        "7",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "(x + 1/x)² = x² + 2 + 1/x² ekanidan foydalanamiz. Demak (x + 1/x)² = 7 + 2 = 9, bundan x + 1/x = 3 (musbat qiymat olindi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-son-ifodasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#7ed18826"
+    },
+    {
+      "q": "Shartga ko'ra a + 1/a = 3 ga teng. Bunda a⁴ + 1/a⁴ ifodaning qiymatini hisoblang.",
+      "v": [
+        "49",
+        "47",
+        "45",
+        "51"
+      ],
+      "t": 1,
+      "izoh": "Avval a² + 1/a² = (a + 1/a)² − 2 = 9 − 2 = 7 ni topamiz. So'ng shu qadamni takrorlaymiz: a⁴ + 1/a⁴ = (a² + 1/a²)² − 2 = 49 − 2 = 47.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-son-ifodasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#35b9f864"
+    },
+    {
+      "q": "Kasr (x² − 9)/(x + 3) ko'rinishida berilgan. x ≠ −3 bo'lganda uni qisqartiring.",
+      "v": [
+        "x + 3",
+        "x − 9",
+        "x² − 3",
+        "x − 3"
+      ],
+      "t": 3,
+      "izoh": "Suratni kvadratlar ayirmasi sifatida ajratamiz: x² − 9 = (x − 3)(x + 3). Maxrajdagi x + 3 bilan qisqartiramiz. Natijada x − 3 qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#a29b61cd"
+    },
+    {
+      "q": "Kasr (a² − b²)/(a² − 2ab + b²) ni qisqartirgandan keyin qanday ifoda hosil bo'ladi?",
+      "v": [
+        "(a − b)/(a + b)",
+        "a + b",
+        "(a + b)/(a − b)",
+        "1/(a − b)"
+      ],
+      "t": 2,
+      "izoh": "Suratni ajratamiz: a² − b² = (a − b)(a + b). Maxraj to'la kvadrat: a² − 2ab + b² = (a − b)². Umumiy (a − b) ko'paytuvchi qisqaradi va (a + b)/(a − b) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kasr-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d4647eee"
+    },
+    {
+      "q": "Kasr (x³ − 8)/(x² − 4) ko'rinishida. x ≠ 2 va x ≠ −2 bo'lganda uni soddalashtiring.",
+      "v": [
+        "(x² + 2x + 4)/(x + 2)",
+        "(x² − 2x + 4)/(x + 2)",
+        "(x + 2)/(x² + 2x + 4)",
+        "x² + 2x + 4"
+      ],
+      "t": 0,
+      "izoh": "Surat kublar ayirmasi: x³ − 8 = (x − 2)(x² + 2x + 4). Maxraj kvadratlar ayirmasi: x² − 4 = (x − 2)(x + 2). Umumiy x − 2 qisqargach (x² + 2x + 4)/(x + 2) qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kasr-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#8a267d99"
+    },
+    {
+      "q": "Ifoda (4a² − 25b²)/(2a + 5b) ni soddalashtirganda hosil bo'ladigan natijani ko'rsating.",
+      "v": [
+        "2a + 5b",
+        "2a − 5b",
+        "4a − 25b",
+        "(2a − 5b)²"
+      ],
+      "t": 1,
+      "izoh": "Suratni ajratamiz: 4a² − 25b² = (2a − 5b)(2a + 5b), chunki 4a² = (2a)² va 25b² = (5b)². Maxraj bilan qisqartirsak, 2a − 5b qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kasr-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#94396267"
+    },
+    {
+      "q": "Ifoda (a + b)² − (a − b)² soddalashtirilganda qanday natijaga teng bo'lishini aniqlang.",
+      "v": [
+        "4ab",
+        "2ab",
+        "2a² + 2b²",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Ikkala kvadratni yoyamiz: (a² + 2ab + b²) − (a² − 2ab + b²). Bir xil hadlar qisqaradi, qolgani esa 2ab + 2ab = 4ab bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#63f8ecb0"
+    },
+    {
+      "q": "Ifoda (a + b)² + (a − b)² ning soddalashtirilgan ko'rinishi qaysi variantda to'g'ri berilgan?",
+      "v": [
+        "4ab",
+        "2a² + 2b²",
+        "a² + b²",
+        "2a² − 2b²"
+      ],
+      "t": 1,
+      "izoh": "Yoyilmalarni qo'shamiz: (a² + 2ab + b²) + (a² − 2ab + b²). O'rta hadlar bir-birini yo'qotadi, qolgani esa 2a² + 2b² bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#85d3666e"
+    },
+    {
+      "q": "Sinfda o'quvchi (x + 3)(x − 3) − (x − 3)² ifodani soddalashtirdi. To'g'ri natija qaysi variantda?",
+      "v": [
+        "6x",
+        "−18",
+        "6x + 18",
+        "6x − 18"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ko'paytma kvadratlar ayirmasi: x² − 9. Ikkinchisi to'la kvadrat: x² − 6x + 9. Ayiramiz: (x² − 9) − (x² − 6x + 9) = 6x − 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#aff87a0d"
+    },
+    {
+      "q": "Har qanday a va b uchun (a + b)² − 4ab ifoda nimaga teng bo'ladi?",
+      "v": [
+        "(a + b)²",
+        "a² + b²",
+        "(a − b)²",
+        "2ab"
+      ],
+      "t": 2,
+      "izoh": "(a + b)² = a² + 2ab + b² ni yozamiz va undan 4ab ni ayiramiz: a² + 2ab + b² − 4ab = a² − 2ab + b². Bu esa (a − b)² ning yoyilmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-soddalashtirish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#e826ee87"
+    },
+    {
+      "q": "Kvadrat shaklidagi bog'ning tomoni 20 metr. Uning bir tomoni 3 metrga uzaytirilib, ikkinchisi 3 metrga qisqartirildi. Yuza qanday o'zgardi?",
+      "v": [
+        "9 m² ga kamaydi",
+        "9 m² ga ortdi",
+        "o'zgarmadi",
+        "6 m² ga kamaydi"
+      ],
+      "t": 0,
+      "izoh": "Yangi yuza (20 + 3)(20 − 3) = 20² − 3² = 400 − 9 = 391 kvadrat metr. Eski yuza 400 kvadrat metr edi. Demak yuza 9 kvadrat metrga kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-kontekst-yuza",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#49be85cc"
+    },
+    {
+      "q": "Kvadrat shaklidagi xonaning tomoni a metrga teng. Har bir tomoni 1 metrga qisqartirilsa, yuza necha kvadrat metrga kamayadi?",
+      "v": [
+        "1",
+        "2a + 1",
+        "a − 1",
+        "2a − 1"
+      ],
+      "t": 3,
+      "izoh": "Yangi yuza (a − 1)² = a² − 2a + 1 bo'ladi. Kamayish a² − (a² − 2a + 1) = 2a − 1 kvadrat metr. Faqat 1 kvadrat metr deb javob berish keng tarqalgan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "geometrik-kontekst-yuza",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#aacf15e3"
+    },
+    {
+      "q": "Tomoni 15 sm bo'lgan kvadrat kartondan tomoni 2 sm kichik bo'lgan kvadrat kesib olindi. Qolgan qismning yuzasi nechaga teng?",
+      "v": [
+        "4",
+        "56",
+        "169",
+        "28"
+      ],
+      "t": 1,
+      "izoh": "Kichik kvadratning tomoni 15 − 2 = 13 sm. Qolgan yuza 15² − 13² = (15 − 13)(15 + 13) = 2 · 28 = 56 kvadrat santimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "geometrik-kontekst-yuza",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#f01153f8"
+    },
+    {
+      "q": "Kub shaklidagi idishning qirrasi 10 sm dan 1 sm ga uzaytirildi. Idishning hajmi necha kub santimetrga ortdi?",
+      "v": [
+        "1",
+        "301",
+        "331",
+        "300"
+      ],
+      "t": 2,
+      "izoh": "(10 + 1)³ = 10³ + 3 · 10² · 1 + 3 · 10 · 1 + 1 = 1000 + 300 + 30 + 1 = 1331. Ortish 1331 − 1000 = 331 kub santimetr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-kontekst-yuza",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#8067ee3d"
+    },
+    {
+      "q": "Yer uchastkasi kvadrat shaklida bo'lib, tomoni 40 metr. Uzunligi 5 metrga oshirilib, eni 5 metrga kamaytirilsa, yuza qancha kamayadi?",
+      "v": [
+        "25 m²",
+        "10 m²",
+        "0",
+        "50 m²"
+      ],
+      "t": 0,
+      "izoh": "Yangi yuza (40 + 5)(40 − 5) = 40² − 5² = 1600 − 25 = 1575 kvadrat metr. Dastlabki yuza 1600 kvadrat metr edi, demak u 25 kvadrat metrga kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "geometrik-kontekst-yuza",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#8a9501bd"
+    },
+    {
+      "q": "Ko'phad (2x + 5)² yoyilganda x oldidagi koeffitsient nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "4",
+        "25",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "(2x + 5)² = 4x² + 2 · 2x · 5 + 25 = 4x² + 20x + 25 bo'ladi. Demak x oldidagi koeffitsient 20 ga teng. Ikkilangan ko'paytmadagi 2 ni tushirib qoldirish 10 xato javobini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma-koeffitsienti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#db78a983"
+    },
+    {
+      "q": "Yoyilma (x − 4)³ da x² oldidagi koeffitsient qanday qiymatga ega bo'ladi?",
+      "v": [
+        "12",
+        "−4",
+        "−12",
+        "48"
+      ],
+      "t": 2,
+      "izoh": "(a − b)³ = a³ − 3a²b + 3ab² − b³ formulasida a = x, b = 4. x² li had −3 · x² · 4 = −12x² ko'rinishida. Demak koeffitsient −12 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma-koeffitsienti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#bf1d5529"
+    },
+    {
+      "q": "Ifoda (3a + 2b)³ yoyilganda ab² ko'paytma oldidagi koeffitsient nechaga teng bo'ladi?",
+      "v": [
+        "12",
+        "18",
+        "36",
+        "24"
+      ],
+      "t": 2,
+      "izoh": "(m + n)³ yoyilmasining uchinchi hadi 3mn² ko'rinishida. Bu yerda m = 3a va n = 2b, shuning uchun 3 · 3a · (2b)² = 3 · 3a · 4b² = 36ab². Koeffitsient 36 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-koeffitsienti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#fed2ea1c"
+    },
+    {
+      "q": "Ko'phad (x + 7)² − (x − 7)² yoyilganda x ga bog'liq bo'lmagan erkin had nechaga teng?",
+      "v": [
+        "0",
+        "28",
+        "98",
+        "49"
+      ],
+      "t": 0,
+      "izoh": "(x + 7)² − (x − 7)² = (x² + 14x + 49) − (x² − 14x + 49) = 28x. Bu ifodada x ga bog'liq bo'lmagan had umuman yo'q, demak erkin had 0 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma-koeffitsienti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#9b0864ff"
+    },
+    {
+      "q": "Ko'phad x² + 16x + c to'la kvadrat bo'lishi uchun c ning qiymati qanday bo'lishi kerak?",
+      "v": [
+        "64",
+        "32",
+        "16",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "To'la kvadratda x² + 2 · x · k + k² ko'rinish bo'ladi. O'rta haddan 2k = 16, ya'ni k = 8. Demak c = k² = 64 va ifoda (x + 8)² ga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-sharti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#e2af7d1f"
+    },
+    {
+      "q": "Ifoda 9x² + mx + 25 to'la kvadrat bo'lishi uchun m ning musbat qiymati nechaga teng bo'lishi kerak?",
+      "v": [
+        "15",
+        "30",
+        "225",
+        "45"
+      ],
+      "t": 1,
+      "izoh": "9x² = (3x)² va 25 = 5². To'la kvadratda o'rta had 2 · 3x · 5 = 30x bo'lishi shart. Demak m ning musbat qiymati 30 ga teng va ifoda (3x + 5)² ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-kvadrat-sharti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c49e3f33"
+    },
+    {
+      "q": "Ko'phad 4a² − 20a + k biror ikki hadning kvadratiga teng bo'lsa, k nechaga teng bo'ladi?",
+      "v": [
+        "10",
+        "100",
+        "25",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "4a² = (2a)² ekanini ko'ramiz. O'rta had −20a = −2 · 2a · t bo'lsin, bundan t = 5. Demak k = t² = 25 va ifoda (2a − 5)² ko'rinishini oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-kvadrat-sharti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#08d52ee4"
+    },
+    {
+      "q": "Ustoz x² + px + 36 ko'phadni to'la kvadratga aylantirmoqchi. p ning qanday ikki qiymati bunga mos keladi?",
+      "v": [
+        "6 yoki −6",
+        "36 yoki −36",
+        "faqat 12",
+        "12 yoki −12"
+      ],
+      "t": 3,
+      "izoh": "36 = 6² bo'lgani uchun o'rta had 2 · x · 6 = 12x yoki −12x bo'lishi mumkin. Birinchi holda (x + 6)², ikkinchisida (x − 6)² hosil bo'ladi. Demak p = 12 yoki p = −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tola-kvadrat-sharti",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#17d05383"
+    },
+    {
+      "q": "Ifoda a⁴ − b⁴ ni ko'paytuvchilarga to'liq ajratganda qanday natija hosil bo'ladi?",
+      "v": [
+        "(a² − b²)(a² + b²)",
+        "(a − b)(a + b)(a² + b²)",
+        "(a − b)²(a + b)²",
+        "(a − b)(a³ + b³)"
+      ],
+      "t": 1,
+      "izoh": "Avval a⁴ − b⁴ = (a²)² − (b²)² = (a² − b²)(a² + b²). Birinchi ko'paytuvchi yana kvadratlar ayirmasi: a² − b² = (a − b)(a + b). Ikkinchisi ajralmaydi, natija (a − b)(a + b)(a² + b²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuqori-daraja-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#07304222"
+    },
+    {
+      "q": "Ifoda x⁶ − y⁶ ni oxirigacha ko'paytuvchilarga ajratganda qaysi ko'rinish hosil bo'ladi?",
+      "v": [
+        "(x − y)(x + y)(x² + xy + y²)(x² − xy + y²)",
+        "(x³ − y³)(x³ + y³)",
+        "(x² − y²)³",
+        "(x − y)⁶"
+      ],
+      "t": 0,
+      "izoh": "x⁶ − y⁶ = (x³)² − (y³)² = (x³ − y³)(x³ + y³). Endi har bir qavsni kublar formulalari bilan yoyamiz: x³ − y³ = (x − y)(x² + xy + y²) va x³ + y³ = (x + y)(x² − xy + y²). Natijada to'rtta ko'paytuvchi qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yuqori-daraja-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#651c53af"
+    },
+    {
+      "q": "Ifoda 16 − a⁴ ni ko'paytuvchilarga oxirigacha ajrating va to'g'ri javobni tanlang.",
+      "v": [
+        "(4 − a²)(4 + a²)",
+        "(2 − a)(2 + a)(4 + a²)",
+        "(2 − a)²(2 + a)²",
+        "(4 − a)(4 + a)"
+      ],
+      "t": 1,
+      "izoh": "16 − a⁴ = 4² − (a²)² = (4 − a²)(4 + a²). Birinchi qavs yana kvadratlar ayirmasi: 4 − a² = (2 − a)(2 + a). Ikkinchisi ajralmaydi, shuning uchun natija (2 − a)(2 + a)(4 + a²).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuqori-daraja-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#e2d0c1ad"
+    },
+    {
+      "q": "Son 3⁴ − 2⁴ ning qiymatini kvadratlar ayirmasi formulasi bilan hisoblang va javobni tanlang.",
+      "v": [
+        "65",
+        "1",
+        "5",
+        "97"
+      ],
+      "t": 0,
+      "izoh": "3⁴ − 2⁴ = (3²)² − (2²)² = (9 − 4)(9 + 4) = 5 · 13 = 65. To'g'ridan-to'g'ri hisoblasak ham 81 − 16 = 65 chiqadi, ya'ni natija bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuqori-daraja-ajratish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#d8099ae7"
+    },
+    {
+      "q": "Son 7⁴ − 1 quyidagi sonlarning qaysi biriga qoldiqsiz bo'linadi?",
+      "v": [
+        "11",
+        "13",
+        "9",
+        "48"
+      ],
+      "t": 3,
+      "izoh": "7⁴ − 1 = (7²)² − 1² = (7² − 1)(7² + 1) = 48 · 50 = 2400. Ko'paytuvchilardan biri 48 bo'lgani uchun son 48 ga qoldiqsiz bo'linadi, chunki 2400 : 48 = 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-orqali-bolinuvchanlik",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#260fd9ba"
+    },
+    {
+      "q": "Ravshan 5³ + 3³ sonini oxirigacha hisoblamasdan uning bo'luvchisini aytdi. U qaysi songa bo'linishini bilgan?",
+      "v": [
+        "15",
+        "9",
+        "8",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "a³ + b³ = (a + b)(a² − ab + b²) bo'lgani uchun kublar yig'indisi har doim a + b ga bo'linadi. Bu yerda a + b = 5 + 3 = 8. Haqiqatan 125 + 27 = 152 va 152 : 8 = 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-orqali-bolinuvchanlik",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#1948e68c"
+    },
+    {
+      "q": "Ikki ketma-ket toq sonning kvadratlari ayirmasi har doim qaysi songa bo'linadi?",
+      "v": [
+        "3",
+        "5",
+        "6",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Toq sonlarni 2k + 1 va 2k + 3 deb olamiz. Kvadratlari ayirmasi (2k + 3 − 2k − 1)(2k + 3 + 2k + 1) = 2 · (4k + 4) = 8(k + 1). Demak ayirma har doim 8 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-orqali-bolinuvchanlik",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#15bb7b91"
+    },
+    {
+      "q": "Ayirma 12³ − 5³ ning qiymati quyidagi sonlarning qaysi biriga qoldiqsiz bo'linadi?",
+      "v": [
+        "7",
+        "11",
+        "13",
+        "17"
+      ],
+      "t": 0,
+      "izoh": "a³ − b³ = (a − b)(a² + ab + b²) formulasiga ko'ra ayirma a − b ga bo'linadi. Bu yerda a − b = 12 − 5 = 7. Tekshiramiz: 1728 − 125 = 1603 va 1603 : 7 = 229.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-orqali-bolinuvchanlik",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#0b7c871a"
+    },
+    {
+      "q": "Dehqon bozorda 1 kg olmani (n + 5) ming so'mdan sotdi va jami (n − 5) kg olma sotdi. U qancha pul oldi?",
+      "v": [
+        "(n² − 25) ming so'm",
+        "(n² + 25) ming so'm",
+        "(n² − 10n − 25) ming so'm",
+        "(n² − 5) ming so'm"
+      ],
+      "t": 0,
+      "izoh": "Tushum narx bilan miqdorning ko'paytmasiga teng: (n + 5)(n − 5). Bu kvadratlar ayirmasi formulasi bo'yicha n² − 25 ga teng. Demak dehqon (n² − 25) ming so'm oldi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kontekst-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#fa2e3bd1"
+    },
+    {
+      "q": "Ustaxonada birinchi oyda 2026 ta, ikkinchi oyda 2024 ta detal ishlab chiqarildi. Ularning kvadratlari ayirmasi nechaga teng?",
+      "v": [
+        "4",
+        "8100",
+        "4050",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "2026² − 2024² = (2026 − 2024)(2026 + 2024) = 2 · 4050 = 8100. Har bir kvadratni alohida hisoblash shart emas, formula ishni ancha yengillashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kontekst-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#b41e7397"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki xonadonning tomonlari yig'indisi 30 m, yuzalari ayirmasi esa 120 m² ga teng. Tomonlar farqi nechaga teng?",
+      "v": [
+        "90 m",
+        "150 m",
+        "8 m",
+        "4 m"
+      ],
+      "t": 3,
+      "izoh": "a² − b² = (a − b)(a + b) formulasiga ko'ra 120 = (a − b) · 30. Bundan a − b = 120 : 30 = 4 metr. Tomonlar 17 m va 13 m ekanini tekshirib ko'rish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kontekst-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#2d18417e"
+    },
+    {
+      "q": "Ikki ishchining bir kunda tayyorlagan buyumlari sonining yig'indisi 15 ta, ko'paytmasi esa 56 ga teng. Har biri nechtadan tayyorlagan?",
+      "v": [
+        "8 va 7",
+        "9 va 6",
+        "10 va 5",
+        "11 va 4"
+      ],
+      "t": 0,
+      "izoh": "(a − b)² = (a + b)² − 4ab = 225 − 224 = 1, demak a − b = 1. a + b = 15 va a − b = 1 sistemasidan a = 8, b = 7 chiqadi. Tekshiramiz: 8 · 7 = 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kontekst-hisob",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#f6d069fd"
+    },
+    {
+      "q": "Ifoda (a + b + c)² yoyilganda qanday ko'phad hosil bo'lishini to'g'ri ko'rsatgan variantni tanlang.",
+      "v": [
+        "a² + b² + c² + 2ab + 2bc + 2ca",
+        "a² + b² + c²",
+        "a² + b² + c² + ab + bc + ca",
+        "a² + b² + c² + 2abc"
+      ],
+      "t": 0,
+      "izoh": "Ifodani ((a + b) + c)² deb qaraymiz: (a + b)² + 2(a + b)c + c². Yoyib yozsak a² + 2ab + b² + 2ac + 2bc + c² hosil bo'ladi. Ya'ni har bir hadning kvadrati va har juftlikning ikkilangan ko'paytmasi qo'shiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-kombinatsiyasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#acb63ca4"
+    },
+    {
+      "q": "Ifoda (x + y)³ − (x − y)³ soddalashtirilganda qanday natijaga teng bo'ladi?",
+      "v": [
+        "6x²y + 2y³",
+        "2y³",
+        "6x²y",
+        "2x³ + 2y³"
+      ],
+      "t": 0,
+      "izoh": "Ikkala kubni yoyamiz: (x³ + 3x²y + 3xy² + y³) − (x³ − 3x²y + 3xy² − y³). x³ va 3xy² hadlari qisqaradi, qolgan ikkitasi esa ikkilanadi: 6x²y + 2y³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-kombinatsiyasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#97970251"
+    },
+    {
+      "q": "Ifoda x⁴ + 4 ni ko'paytuvchilarga ajratish uchun unga 4x² qo'shib, so'ng ayirish usuli qo'llaniladi. Natija qanday bo'ladi?",
+      "v": [
+        "(x² + 2)²",
+        "(x² − 2)(x² + 2)",
+        "(x² + 2x + 2)²",
+        "(x² − 2x + 2)(x² + 2x + 2)"
+      ],
+      "t": 3,
+      "izoh": "x⁴ + 4 = x⁴ + 4x² + 4 − 4x² = (x² + 2)² − (2x)². Kvadratlar ayirmasiga ko'ra bu (x² + 2 − 2x)(x² + 2 + 2x), ya'ni (x² − 2x + 2)(x² + 2x + 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayniyat-kombinatsiyasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#67f73790"
+    },
+    {
+      "q": "Ifoda (a + b)³ − 3ab(a + b) qanday ixcham ko'rinishga ega bo'ladi?",
+      "v": [
+        "a³ − b³",
+        "a³ + b³",
+        "(a − b)³",
+        "a³ + 3a²b"
+      ],
+      "t": 1,
+      "izoh": "(a + b)³ = a³ + 3a²b + 3ab² + b³ ni yozamiz, so'ng 3ab(a + b) = 3a²b + 3ab² ni ayiramiz. O'rta hadlar qisqaradi va a³ + b³ qoladi — bu kublar yig'indisi formulasining boshqa ko'rinishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayniyat-kombinatsiyasi",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#ebf4adfc"
+    },
+    {
+      "q": "Berilgan a + b = 6 va a³ + b³ = 72 bo'lsa, ab ko'paytmaning qiymati nechaga teng?",
+      "v": [
+        "18",
+        "8",
+        "24",
+        "12"
+      ],
+      "t": 1,
+      "izoh": "a³ + b³ = (a + b)³ − 3ab(a + b) ayniyatiga qiymatlarni qo'yamiz: 72 = 216 − 18ab. Bundan 18ab = 144, ya'ni ab = 8. Sonlar 2 va 4 ekanini tekshirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartdan-koupaytmani-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#177878ec"
+    },
+    {
+      "q": "Ifodalar x² + y² = 34 va (x + y)² = 64 bo'lsa, xy ko'paytmaning qiymati nechaga teng?",
+      "v": [
+        "30",
+        "98",
+        "15",
+        "17"
+      ],
+      "t": 2,
+      "izoh": "(x + y)² = x² + 2xy + y² ayniyatidan 64 = 34 + 2xy. Bundan 2xy = 30, ya'ni xy = 15. Sonlar 3 va 5 ekanini tekshirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartdan-koupaytmani-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#ecac79cc"
+    },
+    {
+      "q": "Berilgan m − n = 4 va m³ − n³ = 208 bo'lsa, mn ko'paytma nechaga teng bo'ladi?",
+      "v": [
+        "16",
+        "24",
+        "36",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "m³ − n³ = (m − n)³ + 3mn(m − n) ayniyatidan foydalanamiz: 208 = 64 + 3mn · 4. Bundan 12mn = 144, ya'ni mn = 12. Sonlar 6 va 2 ekan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartdan-koupaytmani-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#c1c5b349"
+    },
+    {
+      "q": "Ikki sonning ayirmasi 6, kvadratlari ayirmasi esa 96 ga teng. Bu sonlarning yig'indisi nechaga teng?",
+      "v": [
+        "90",
+        "102",
+        "16",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "a² − b² = (a − b)(a + b) formulasiga ko'ra 96 = 6 · (a + b). Bundan a + b = 96 : 6 = 16. Sonlar 11 va 5 ekanini tekshirib ko'rish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shartdan-yigindini-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#2d1526e8"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki xonaning tomonlari farqi 2 m, yuzalari ayirmasi esa 60 m² ga teng. Kichik xonaning tomoni nechaga teng?",
+      "v": [
+        "14 m",
+        "16 m",
+        "15 m",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "a² − b² = (a − b)(a + b) dan 60 = 2 · (a + b), demak a + b = 30. a − b = 2 sharti bilan birga a = 16 va b = 14 chiqadi. Kichik xonaning tomoni 14 metr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shartdan-yigindini-topish",
+      "id": "matematika_ayn_m02-qisqa-kopaytirish-formulalari#12726815"
+    }
+  ]
+}

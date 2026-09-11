@@ -1,0 +1,456 @@
+{
+  "nom": "12-mavzu. Izoxorik Jarayon",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ideal gazning massasi (m = const) va hajmi (V = const) o'zgarmas bo'lgandagi gaz holatining o'zgarish jarayoniga nima deyiladi?",
+      "v": [
+        "Izoxorik jarayon",
+        "Izotermik jarayon",
+        "Izobarik jarayon",
+        "Adiabatik jarayon"
+      ],
+      "t": 0,
+      "izoh": "m = const va V = const bo'lgandagi jarayon izoxorik jarayon deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#5ca77df4"
+    },
+    {
+      "q": "Yunoncha «xoros» so'zi qanday ma'noni anglatadi?",
+      "v": [
+        "Hajm",
+        "Bosim",
+        "Teng",
+        "Issiq"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha «xoros» — hajm degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#1dffa660"
+    },
+    {
+      "q": "Izoxorik jarayonda berilgan massali gazning qaysi kattaligi temperaturaga bog'liq ravishda o'zgaradi?",
+      "v": [
+        "Bosimi (p)",
+        "Hajmi (V)",
+        "Molyar massasi",
+        "Zichligi"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda berilgan massali gaz bosimi (p) uning temperaturasi (T) ga bog'liq ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#bb63c7c1"
+    },
+    {
+      "q": "Sharl qonunining matematik ifodasi qanday?",
+      "v": [
+        "p₁/p₂ = T₁/T₂ yoki p₁/T₁ = p₂/T₂",
+        "p₁V₁ = p₂V₂",
+        "V₁/T₁ = V₂/T₂",
+        "p₁T₁ = p₂T₂"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda p₁/p₂ = T₁/T₂ yoki p₁/T₁ = p₂/T₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#727fd43d"
+    },
+    {
+      "q": "Izoxorik jarayonda qanday kattalik o'zgarmas bo'ladi?",
+      "v": [
+        "Gaz bosimining absolyut temperaturaga nisbati (p/T = const)",
+        "Gaz bosimining hajmga ko'paytmasi",
+        "Gaz hajmining temperaturaga nisbati",
+        "Gaz zichligi o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda berilgan massali gaz bosimining absolyut temperaturaga nisbati o'zgarmas kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#22508427"
+    },
+    {
+      "q": "Izoxorik jarayon qonuni qachon va kim tomonidan tajribada topilgan?",
+      "v": [
+        "1787-yilda fransuz fizigi Jak Sharl tomonidan",
+        "1802-yilda Gey-Lyussak tomonidan",
+        "1662-yilda R. Boyl tomonidan",
+        "1676-yilda E. Mariott tomonidan"
+      ],
+      "t": 0,
+      "izoh": "Bu qonun 1787-yilda fransuz fizigi Jak Sharl tomonidan tajribada topilganligi uchun Sharl qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#21ebd31b"
+    },
+    {
+      "q": "Izoxorik jarayon qonuni nima deb ataladi?",
+      "v": [
+        "Sharl qonuni",
+        "Gey-Lyussak qonuni",
+        "Boyl-Mariott qonuni",
+        "Klapeyron tenglamasi"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayon qonuni Sharl qonuni deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#8ad53d16"
+    },
+    {
+      "q": "p/T = const tenglikni umumiy maxrajga keltirib qanday yozish mumkin?",
+      "v": [
+        "p = const·T",
+        "p = const/T",
+        "T = const·p²",
+        "p·T = 0"
+      ],
+      "t": 0,
+      "izoh": "Tenglik p = const·T ko'rinishda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#0de48ed6"
+    },
+    {
+      "q": "Izoxorik jarayonda berilgan massali gaz bosimi uning absolyut temperaturasiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik proporsional",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda berilgan massali gaz bosimi uning absolyut temperaturasiga to'g'ri proporsionaldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#851bbd79"
+    },
+    {
+      "q": "Izoxorik jarayonda gazning bosimi bilan temperaturasi orasidagi munosabatni ifodalovchi chiziq nima deyiladi?",
+      "v": [
+        "Izoxora chizig'i",
+        "Izobara chizig'i",
+        "Izoterma chizig'i",
+        "Giperbola"
+      ],
+      "t": 0,
+      "izoh": "Bu munosabatni ifodalovchi chiziq izoxora chizig'i deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#200f8f98"
+    },
+    {
+      "q": "Izoxora chizig'i qanday chiziqdan iborat?",
+      "v": [
+        "Koordinata boshidan chiquvchi to'g'ri chiziqdan",
+        "Giperboladan",
+        "Gorizontal to'g'ri chiziqdan",
+        "Paraboladan"
+      ],
+      "t": 0,
+      "izoh": "Izoxora chizig'i koordinata boshidan chiquvchi to'g'ri chiziqdan iborat bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#20e389ba"
+    },
+    {
+      "q": "Izoxora grafigi qaysi koordinatalarda chiziladi?",
+      "v": [
+        "p-T koordinatalarda",
+        "p-V koordinatalarda",
+        "V-T koordinatalarda",
+        "ρ-T koordinatalarda"
+      ],
+      "t": 0,
+      "izoh": "Izoxora chizig'i p-T koordinatalarda V = const uchun chiziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#717f3dee"
+    },
+    {
+      "q": "O'zgarmas hajmda berilgan massali gazning bosimi temperaturaga qanday o'zgaradi?",
+      "v": [
+        "Temperaturaga to'g'ri proporsional ravishda",
+        "Temperaturaga teskari proporsional ravishda",
+        "O'zgarmaydi",
+        "Kvadratik ravishda"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas hajmda berilgan massali gazning bosimi temperaturaga to'g'ri proporsional ravishda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#ddb65b95"
+    },
+    {
+      "q": "Qanday amaliy holatlar izoxorik jarayonga misol bo'ladi?",
+      "v": [
+        "Germetik yopiq idishda yoki elektr lampochkasida isitilgan gaz bosimining ortishi",
+        "Porshen bilan siqilayotgan gaz",
+        "Termostatdagi gazning kengayishi",
+        "Ochiq idishdagi gazning bug'lanishi"
+      ],
+      "t": 0,
+      "izoh": "Har qanday germetik yopiq idishda yoki elektr lampochkasida isitilgan gaz bosimining ortishi izoxorik jarayon hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#0d38a80f"
+    },
+    {
+      "q": "Izoxorik qizdirishda gaz bosimi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga tushadi"
+      ],
+      "t": 0,
+      "izoh": "p = const·T ga ko'ra, temperatura oshganda bosim ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#ad880f81"
+    },
+    {
+      "q": "Izoxorik jarayonda gaz sovitilsa, uning bosimi qanday o'zgaradi?",
+      "v": [
+        "Kamayadi",
+        "Ortadi",
+        "O'zgarmaydi",
+        "Ikki marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura pasayganda bosim ham kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#30743eb0"
+    },
+    {
+      "q": "Izoxorik jarayonda gazning absolyut temperaturasi 2 marta ortsa, bosimi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "p = const·T ga ko'ra, bosim ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#53066de9"
+    },
+    {
+      "q": "Izoxorik jarayonda gaz bosimini 3 marta oshirish uchun absolyut temperaturani qanday o'zgartirish kerak?",
+      "v": [
+        "3 marta oshirish",
+        "3 marta kamaytirish",
+        "9 marta oshirish",
+        "O'zgartirmaslik"
+      ],
+      "t": 0,
+      "izoh": "p₁/T₁ = p₂/T₂ ga ko'ra, bosim 3 marta ortsa, temperatura ham 3 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#6efad5cb"
+    },
+    {
+      "q": "Sharl qonunida temperatura qaysi shkalada ifodalanishi shart?",
+      "v": [
+        "Kelvin (absolyut) shkalada",
+        "Selsiy shkalada",
+        "Farengeyt shkalada",
+        "Istalgan shkalada"
+      ],
+      "t": 0,
+      "izoh": "Qonunda absolyut temperatura ishtirok etadi, u kelvinda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#d22cc5f1"
+    },
+    {
+      "q": "Sharl qonuni gazning holat tenglamasidan qanday keltirib chiqariladi?",
+      "v": [
+        "Hajm o'zgarmas (V₁ = V₂) bo'lgan ikki holat tenglamalarini hadma-had bo'lish yo'li bilan",
+        "Ikki tenglamani qo'shish yo'li bilan",
+        "Grafik chizish yo'li bilan",
+        "Zichlik formulasi yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "V₁ = V₂ bo'lgan ikki holat tenglamalari hadma-had bo'linib, p₁/p₂ = T₁/T₂ hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#0c7ad5d5"
+    },
+    {
+      "q": "Izoxorik jarayonda p₂ ni topish formulasi qanday?",
+      "v": [
+        "p₂ = p₁T₂/T₁",
+        "p₂ = p₁T₁/T₂",
+        "p₂ = T₂/(p₁T₁)",
+        "p₂ = p₁·T₁·T₂"
+      ],
+      "t": 0,
+      "izoh": "p₁/T₁ = p₂/T₂ dan p₂ = p₁T₂/T₁.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#b2931c4f"
+    },
+    {
+      "q": "Gaz 280 K dan 540 K gacha izoxorik qizdirilganda bosimi 39 kPa ga ortgan bo'lsa, dastlabki bosimi qanday topiladi?",
+      "v": [
+        "p = Δp·T₁/(T₂ − T₁)",
+        "p = Δp·(T₂ − T₁)/T₁",
+        "p = Δp·T₂/T₁",
+        "p = Δp·T₁·T₂"
+      ],
+      "t": 0,
+      "izoh": "Masala namunasiga ko'ra p = Δp·T₁/(T₂ − T₁) = 39·10³·280/(540−280) = 42·10³ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#54d3fdee"
+    },
+    {
+      "q": "Yuqoridagi masalada gazning dastlabki bosimi qanchaga teng?",
+      "v": [
+        "42 kPa",
+        "39 kPa",
+        "81 kPa",
+        "280 kPa"
+      ],
+      "t": 0,
+      "izoh": "p = 39·10³·280/260 = 42·10³ Pa = 42 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#dc7ef7ef"
+    },
+    {
+      "q": "Elektr lampochkasi yonganda uning ichidagi gaz bosimi qanday o'zgaradi?",
+      "v": [
+        "Ortadi, chunki temperatura ko'tariladi va hajm o'zgarmaydi",
+        "Kamayadi, chunki gaz kengayadi",
+        "O'zgarmaydi",
+        "Avval kamayib, keyin ortadi"
+      ],
+      "t": 0,
+      "izoh": "Lampochka ichidagi gaz hajmi o'zgarmas, temperatura ko'tariladi, demak bosim ortadi — izoxorik jarayon.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#32620d1e"
+    },
+    {
+      "q": "p-T grafikda ikki xil hajm uchun chizilgan izoxoralardan qaysi biri tikroq joylashadi?",
+      "v": [
+        "Kichikroq hajmga mos izoxora",
+        "Kattaroq hajmga mos izoxora",
+        "Ikkalasi bir xil qiyalikda",
+        "Izoxoralar kesishmaydi"
+      ],
+      "t": 0,
+      "izoh": "p = (mR/MV)·T dan ko'rinadiki, V kichik bo'lsa, p/T nisbat katta, ya'ni chiziq tikroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#6e10d710"
+    },
+    {
+      "q": "Izoxorik jarayon qaysi izojarayon turiga kiradi?",
+      "v": [
+        "Hajm o'zgarmas bo'lgan izojarayon",
+        "Temperatura o'zgarmas bo'lgan izojarayon",
+        "Bosim o'zgarmas bo'lgan izojarayon",
+        "Massa o'zgaruvchan jarayon"
+      ],
+      "t": 0,
+      "izoh": "Izoxorik jarayonda hajm (V = const) o'zgarmas bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#91b010c3"
+    },
+    {
+      "q": "Izoxorik jarayonda gaz massasi va hajmi o'zgarmas bo'lsa, uning zichligi qanday bo'ladi?",
+      "v": [
+        "O'zgarmas qoladi",
+        "Ortadi",
+        "Kamayadi",
+        "Avval ortib, keyin kamayadi"
+      ],
+      "t": 0,
+      "izoh": "ρ = m/V: massa va hajm o'zgarmas bo'lsa, zichlik ham o'zgarmas qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#bb51cd1a"
+    },
+    {
+      "q": "Sharl qonunida p/T = const bo'lishi uchun qanday shartlar bajarilishi kerak?",
+      "v": [
+        "m = const va V = const",
+        "m = const va T = const",
+        "m = const va p = const",
+        "Faqat V = const"
+      ],
+      "t": 0,
+      "izoh": "Sharl qonuni massa va hajm o'zgarmas bo'lgan izoxorik jarayon uchun o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#5165210f"
+    },
+    {
+      "q": "Izoxorik jarayon uchun holat tenglamasining ikki holat ko'rinishi qanday?",
+      "v": [
+        "p₁V₁ = (m/M)RT₁ va p₂V₂ = (m/M)RT₂",
+        "p₁V₁ = p₂V₂",
+        "V₁/T₁ = V₂/T₂",
+        "p₁V₁T₁ = p₂V₂T₂"
+      ],
+      "t": 0,
+      "izoh": "Holat tenglamasi ikki holat uchun p₁V₁ = (m/M)RT₁ va p₂V₂ = (m/M)RT₂ ko'rinishda yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#215ecfe0"
+    },
+    {
+      "q": "Ballondagi gazning temperaturasi ko'tarilsa, uning bosimi qanday o'zgaradi (ballon hajmi o'zgarmas deb olinsin)?",
+      "v": [
+        "Temperaturaga to'g'ri proporsional ortadi",
+        "Temperaturaga teskari proporsional kamayadi",
+        "O'zgarmaydi",
+        "Kvadratik ortadi"
+      ],
+      "t": 0,
+      "izoh": "Ballon hajmi o'zgarmas, demak jarayon izoxorik: bosim temperaturaga to'g'ri proporsional ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m12-izoxorik-jarayon#1864fc58"
+    }
+  ]
+}

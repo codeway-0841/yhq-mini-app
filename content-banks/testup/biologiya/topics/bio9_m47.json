@@ -1,0 +1,666 @@
+{
+  "nom": "Biologiya-9, 47-§. Genetikaning rivojlanish tarixi, 127-bet",
+  "bolim": "VII BOB. Genetika asoslari",
+  "savollar": [
+    {
+      "q": "\"Genetika\" atamasi qaysi tildan olingan?",
+      "v": [
+        "Yunoncha",
+        "Lotincha",
+        "Arabcha",
+        "Nemischa"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika yunoncha \"genetikos\" soʻzidan olingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#f7df9e19"
+    },
+    {
+      "q": "Yunoncha \"genetikos\" soʻzi qanday maʼnoni anglatadi?",
+      "v": [
+        "Tugʻilish, kelib chiqish",
+        "Oʻzgarish, taraqqiyot",
+        "Irsiylanish, saralanish",
+        "Koʻpayish, boʻlinish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra \"genetikos\" \"tugʻilish, kelib chiqish\" degan maʼnoni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#a049928e"
+    },
+    {
+      "q": "Genetika atamasi fanga qaysi yilda kiritilgan?",
+      "v": [
+        "1906- yilda",
+        "1865- yilda",
+        "1900- yilda",
+        "1926- yilda"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika atamasi fanga 1906- yilda kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#781e4fae"
+    },
+    {
+      "q": "Genetika atamasini fanga kim kiritgan?",
+      "v": [
+        "V.Betson",
+        "G.Mendel",
+        "T.Morgan",
+        "K.Ber"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika atamasi fanga angliyalik olim V.Betson tomonidan kiritilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#65cf7b9f"
+    },
+    {
+      "q": "Genetika atamasini fanga kiritgan olim qaysi mamlakatdan boʻlgan?",
+      "v": [
+        "Angliya",
+        "Chexiya",
+        "Germaniya",
+        "AQSh"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika atamasini angliyalik olim V.Betson kiritgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#d50a3b18"
+    },
+    {
+      "q": "Genetika organizmlarning qaysi ikki xususiyatini oʻrganadi?",
+      "v": [
+        "Irsiyat va oʻzgaruvchanlik",
+        "Irsiyat va tabiiy tanlanish",
+        "Oʻzgaruvchanlik va evolutsiya",
+        "Genotip va fenotip"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika organizmlarning irsiyat va oʻzgaruvchanlik xususiyatlarini oʻrganadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#d7ea356b"
+    },
+    {
+      "q": "Irsiyat deb nimaga aytiladi?",
+      "v": [
+        "Belgi va xususiyatlarni kelgusi avlodlarga qoldirish xossasi",
+        "Yangi belgilarni namoyon etish qobiliyati",
+        "Individlarning bir-biridan farq qilishi",
+        "Genlarning tashqi muhitga moslashishi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiyat — belgi va xususiyatlarni kelgusi avlodlarga, nasldan-naslga berish xossasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#ab63c39a"
+    },
+    {
+      "q": "Irsiyat tufayli tur doirasidagi hamma individlar qanday boʻladi?",
+      "v": [
+        "Oʻxshash",
+        "Har xil",
+        "Bir-biridan farqli",
+        "Oʻzgaruvchan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiyat tufayli tur doirasidagi hamma individlar oʻxshash boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#fbea05b6"
+    },
+    {
+      "q": "Irsiyat qanday xarakterli belgilarni avloddan avlodga saqlab beradi?",
+      "v": [
+        "Tur, zot, nav, shtammning belgilarini",
+        "Faqat tur belgilarini",
+        "Faqat nav va shtamm belgilarini",
+        "Faqat zot belgilarini"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiyat tur, zot, nav, shtammning xarakterli belgilarini avloddan avlodga saqlab beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#dfd11442"
+    },
+    {
+      "q": "Oʻzgaruvchanlik deb nimaga aytiladi?",
+      "v": [
+        "Yangi belgi va xususiyatlarni namoyon etish qobiliyatiga",
+        "Belgilarni avlodga qoldirish xossasiga",
+        "Individlarning oʻxshashligiga",
+        "Turning bir xilligini saqlashga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik — organizmlarning yangi belgilari va xususiyatlarini namoyon etish qobiliyatidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#19751e08"
+    },
+    {
+      "q": "Oʻzgaruvchanlik tufayli tur doirasidagi individlar qanday boʻladi?",
+      "v": [
+        "Bir-biridan farq qiladi",
+        "Bir-biriga oʻxshaydi",
+        "Bir xil boʻladi",
+        "Oʻzgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik tufayli tur doirasidagi individlar bir-biridan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#87da3a46"
+    },
+    {
+      "q": "Irsiyat bilan oʻzgaruvchanlik organizmning qanday xossalari hisoblanadi?",
+      "v": [
+        "Bir-biriga qarama-qarshi, ammo oʻzaro bogʻlangan",
+        "Bir-biriga oʻxshash va mustaqil",
+        "Bir-biridan butunlay ajralgan",
+        "Faqat oʻzaro bogʻliq boʻlmagan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiyat bilan oʻzgaruvchanlik bir-biriga qarama-qarshi, ammo oʻzaro bogʻlangan xossalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#d72fa0ef"
+    },
+    {
+      "q": "Bir tur individlari oʻrtasidagi tafovutlar nimaning oʻzgarishiga bogʻliq boʻlishi mumkin?",
+      "v": [
+        "Organizm genotipining",
+        "Organizm fenotipining",
+        "Tashqi muhitning",
+        "Xromosomalar sonining"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bir tur individlari oʻrtasidagi tafovutlar organizm genotipining oʻzgarishiga bogʻliq boʻlishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#5f1e6e59"
+    },
+    {
+      "q": "Oʻzgaruvchanlik genotip bilan bir qatorda yana nima bilan belgilanadi?",
+      "v": [
+        "Tashqi sharoitlar bilan",
+        "Faqat irsiyat bilan",
+        "Faqat genlar soni bilan",
+        "Hujayralar oʻlchami bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra oʻzgaruvchanlik tashqi sharoitlar bilan ham belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#9857a6f6"
+    },
+    {
+      "q": "Belgi va xususiyatlarning nasldan-naslga berilishini taʼminlovchi irsiy birlik nima deb ataladi?",
+      "v": [
+        "Gen",
+        "Genotip",
+        "Fenotip",
+        "Xromosoma"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiy birlik \"gen\" deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#df84f087"
+    },
+    {
+      "q": "Organizmning barcha genlarining yigʻindisi nima deb ataladi?",
+      "v": [
+        "Genotip",
+        "Fenotip",
+        "Genofond",
+        "Genom"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra maʼlum organizmning barcha genlarining yigʻindisi genotip deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#e1bb6bbd"
+    },
+    {
+      "q": "Organizmning barcha belgi va xususiyatlarining yigʻindisi nima deb ataladi?",
+      "v": [
+        "Fenotip",
+        "Genotip",
+        "Genom",
+        "Kariotip"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmning barcha belgi va xususiyatlarining yigʻindisi fenotip deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#b9fd3391"
+    },
+    {
+      "q": "Tirik organizm fenotipining qanday boʻlishi nimalarga bogʻliq?",
+      "v": [
+        "Genotipiga hamda tashqi sharoit omillariga",
+        "Faqat genotipiga",
+        "Faqat tashqi sharoitga",
+        "Faqat genlar soniga"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra fenotipning qanday boʻlishi uning genotipiga hamda maʼlum darajada tashqi sharoit omillariga bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#d8bfeb8a"
+    },
+    {
+      "q": "Organizmdagi genlar kelgusi avlodlarga qanday yoʻl bilan beriladi?",
+      "v": [
+        "Koʻpayish orqali",
+        "Ovqatlanish orqali",
+        "Nafas olish orqali",
+        "Harakat orqali"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra organizmdagi genlar kelgusi avlodlarga koʻpayish orqali beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#8f88c964"
+    },
+    {
+      "q": "Genetikada irsiyatning moddiy asosi boʻlib nima xizmat qiladi?",
+      "v": [
+        "Xromosomalar",
+        "Ribosomalar",
+        "Mitoxondriyalar",
+        "Lizosomalar"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra irsiyatning moddiy asoslari — xromosomalar, genlarning strukturasi va funksiyasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#1f884e6f"
+    },
+    {
+      "q": "Duragaylash usulining mohiyati nimadan iborat?",
+      "v": [
+        "Chatishtirish natijasidagi avlodlarda ota-ona belgilarining irsiylanishini oʻrganish",
+        "Xromosomalarni mikroskopda oʻrganish",
+        "DNK va RNK strukturasini oʻrganish",
+        "Tashqi muhitning genga taʼsirini oʻrganish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra duragaylash usuli chatishtirish natijasida olingan avlodlarda ota-ona belgilarining irsiylanishini oʻrganishdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#06d588f4"
+    },
+    {
+      "q": "Qaysi genetik usulda xromosomalarning holati maxsus mikroskoplar yordamida oʻrganiladi?",
+      "v": [
+        "Sitogenetik usul",
+        "Duragaylash usuli",
+        "Molekular genetik usul",
+        "Ontogenetik usul"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra sitogenetik usulda ota-ona belgilarining irsiylanishi bilan birga xromosomalarning holati maxsus mikroskoplar yordamida oʻrganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#ebcb7dcf"
+    },
+    {
+      "q": "Qaysi genetik usul orqali DNK va RNKning strukturasi va vazifasi oʻrganiladi?",
+      "v": [
+        "Molekular genetik usul",
+        "Sitogenetik usul",
+        "Ontogenetik usul",
+        "Duragaylash usuli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra molekular genetik usul orqali irsiyatning moddiy asosi boʻlgan DNK va RNKning strukturasi va vazifasi oʻrganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#a875dfb7"
+    },
+    {
+      "q": "Qaysi genetik usulda genotip va tashqi muhit omillarining fenotip namoyon boʻlishiga taʼsiri oʻrganiladi?",
+      "v": [
+        "Ontogenetik usul",
+        "Molekular genetik usul",
+        "Sitogenetik usul",
+        "Duragaylash usuli"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ontogenetik usulda organizmning shaxsiy rivojlanishida genotip va tashqi muhit omillarining fenotip namoyon boʻlishiga taʼsiri oʻrganiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#86e3cdb8"
+    },
+    {
+      "q": "Bir organizmning noyob genlarini ikkinchi organizmga koʻchirib oʻtkazish qaysi usul yordamida amalga oshiriladi?",
+      "v": [
+        "Genetik injeneriya",
+        "Sitogenetik usul",
+        "Duragaylash usuli",
+        "Ontogenetik usul"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetik injeneriya usuli yordamida bir organizmning noyob genlari ikkinchi organizmga koʻchirib oʻtkaziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#51962a71"
+    },
+    {
+      "q": "Genetika fani inson ehtiyoji uchun nimalarni yaratish usullarini ishlab chiqadi?",
+      "v": [
+        "Sermahsul oʻsimlik navlari, hayvon zotlari, mikroorganizm shtammlarini",
+        "Faqat yangi oʻsimlik navlarini",
+        "Faqat kasalliklarga qarshi dorilarni",
+        "Faqat mikroorganizmlarni"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika inson ehtiyoji uchun sermahsul oʻsimlik navlari, hayvon zotlari, mikroorganizm shtammlarini yaratish usullarini ishlab chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#fbb4c9df"
+    },
+    {
+      "q": "Genetika fani odamlardagi irsiy kasalliklar boʻyicha qanday vazifani hal etadi?",
+      "v": [
+        "Paydo boʻlish sabablarini oʻrganish, oldini olish va davolash usullarini topish",
+        "Faqat kasallikni davolash",
+        "Faqat kasallikni yuqtirmaslik",
+        "Faqat kasallik belgilarini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra genetika odamlarda turli irsiy kasalliklarning paydo boʻlish sabablarini oʻrganish, ularning oldini olish va davolashning samarali usullarini izlab topish vazifasini bajaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#8df74fef"
+    },
+    {
+      "q": "Organizmlarda irsiy oʻzgaruvchanlik qanday omillar taʼsirida paydo boʻladi?",
+      "v": [
+        "Turli fizik va kimyoviy omillar taʼsirida",
+        "Faqat ovqatlanish taʼsirida",
+        "Faqat harorat taʼsirida",
+        "Faqat yorugʻlik taʼsirida"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra turli fizik va kimyoviy omillar taʼsirida organizmlarda irsiy oʻzgaruvchanlik paydo boʻladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#45a59ea4"
+    },
+    {
+      "q": "Genetika rivojlanishining 1- bosqichi nima bilan bogʻliq?",
+      "v": [
+        "G.Mendel va izdoshlari irsiyat qonunlarini kashf etishi bilan",
+        "T.Morgan xromosoma nazariyasini yaratishi bilan",
+        "Elektron mikroskopiya qoʻllanilishi bilan",
+        "Genetik injeneriyaning rivojlanishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 1- bosqich G.Mendel va uning izdoshlari tomonidan irsiyat va irsiylanish qonunlarining kashf etilishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#04f5c189"
+    },
+    {
+      "q": "Genetika rivojlanishining 2- bosqichi nima bilan bogʻliq?",
+      "v": [
+        "T.Morganning xromosoma nazariyasini yaratishi bilan",
+        "G.Mendel qonunlarining kashf etilishi bilan",
+        "Kibernetika yutuqlarining tatbiq etilishi bilan",
+        "V.Betson tomonidan atama kiritilishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 2- bosqich T.Morganning xromosoma nazariyasining yaratilishi va rivojlantirilishidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#5723c748"
+    },
+    {
+      "q": "Genetika rivojlanishining 3- bosqichida qaysi fanlar yutuqlari genetikaga tatbiq etilgan?",
+      "v": [
+        "Kimyo, fizika, kibernetika",
+        "Tarix, geografiya, adabiyot",
+        "Botanika, zoologiya, anatomiya",
+        "Astronomiya, geologiya, matematika"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 3- bosqichda genetik tadqiqotlarga kimyo, fizika, kibernetika kabi fanlarning yutuqlari tatbiq etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#32c254ee"
+    },
+    {
+      "q": "Genetika rivojlanishining 3- bosqichi asosan qaysi usullardan foydalanish bilan bogʻliq?",
+      "v": [
+        "Elektron mikroskopiya va rentgenostruktur tashxis",
+        "Duragaylash va chatishtirish",
+        "Oddiy mikroskopiya va kuzatish",
+        "Anatomik va morfologik tahlil"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra 3- bosqich asosan elektron mikroskopiya, rentgenostruktur tashxis kabi usullardan foydalanish bilan bogʻliq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#8976b46a"
+    },
+    {
+      "q": "Quyidagi olimlardan qaysi biri Oʻzbekistonda genetika sohasida ilmiy tadqiqot olib borgan?",
+      "v": [
+        "J.A.Musayev",
+        "G.Mendel",
+        "T.Morgan",
+        "V.Betson"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra Oʻzbekistonda genetika sohasida J.A.Musayev, O.Jalilov, N.Nazirov, S.Mirahmedov, A.Abdukarimov kabi akademiklar ishlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#1c165285"
+    },
+    {
+      "q": "Genetik simvollarda chatishtirish qaysi belgi bilan ifodalanadi?",
+      "v": [
+        "\"x\" belgisi bilan",
+        "\"P\" harfi bilan",
+        "\"G\" harfi bilan",
+        "\"F\" harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra chatishtirish \"x\" belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#92c82757"
+    },
+    {
+      "q": "Genetik simvollarda ona organizm qaysi belgi bilan ifodalanadi?",
+      "v": [
+        "Venera (Zuhro) koʻzgusi belgisi bilan",
+        "Mars qalqoni va nayzasi belgisi bilan",
+        "\"P\" harfi bilan",
+        "\"x\" belgisi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ona organizm Venera-Zuhroning koʻzgusi belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#8f1fcba5"
+    },
+    {
+      "q": "Genetik simvollarda ota organizm qaysi belgi bilan ifodalanadi?",
+      "v": [
+        "Mars qalqoni va nayzasi belgisi bilan",
+        "Venera koʻzgusi belgisi bilan",
+        "\"G\" harfi bilan",
+        "\"x\" belgisi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ota organizm Mars qalqoni va nayzasi belgisi bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#2f12e3d4"
+    },
+    {
+      "q": "Genetik simvollarda ota-ona organizmlar qaysi harf bilan belgilanadi?",
+      "v": [
+        "\"P\" harfi bilan",
+        "\"G\" harfi bilan",
+        "\"F\" harfi bilan",
+        "\"x\" belgisi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ota-ona organizmlar oldiga lotincha \"P\" harfi qoʻyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#b9c3ba83"
+    },
+    {
+      "q": "Genetik simvollardagi \"P\" harfi qaysi soʻzdan olingan va qanday maʼnoni anglatadi?",
+      "v": [
+        "Lotincha \"Parents\" — ota-ona",
+        "Lotincha \"Filio\" — bolalar",
+        "Yunoncha \"genetikos\" — kelib chiqish",
+        "Lotincha \"Gameta\" — jinsiy hujayra"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra \"P\" harfi lotincha \"Parents\" — ota-ona degan maʼnoni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#439f7235"
+    },
+    {
+      "q": "Ota-ona organizm va duragaylarda hosil boʻladigan gametalar qaysi harf bilan belgilanadi?",
+      "v": [
+        "\"G\" harfi bilan",
+        "\"P\" harfi bilan",
+        "\"F\" harfi bilan",
+        "\"x\" belgisi bilan"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra gametalar \"G\" harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "bio9_m47#97925381"
+    },
+    {
+      "q": "Duragaylash natijasida olingan birinchi avlod duragay qanday belgilanadi?",
+      "v": [
+        "F1",
+        "F2",
+        "Fb",
+        "P"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra birinchi avlod duragay F1 simvoli bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#3999b0a6"
+    },
+    {
+      "q": "Duragaylash natijasida olingan ikkinchi avlod duragay qanday belgilanadi?",
+      "v": [
+        "F2",
+        "F1",
+        "Fb",
+        "G"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra ikkinchi avlod duragay F2 simvoli bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "bio9_m47#0c5f22fe"
+    },
+    {
+      "q": "Genetik simvollardagi \"F\" harfi qaysi soʻzdan olingan va qanday maʼnoni anglatadi?",
+      "v": [
+        "Lotincha \"Filio\" — bolalar",
+        "Lotincha \"Parents\" — ota-ona",
+        "Yunoncha \"genetikos\" — tugʻilish",
+        "Lotincha \"Gameta\" — jinsiy hujayra"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra \"F\" harfi lotincha \"Filio\" soʻzidan olingan boʻlib, bolalar degan maʼnoni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#021f6828"
+    },
+    {
+      "q": "Birinchi avlod (F1) duragaylarni dominant yoki retsessiv gomozigotali organizmlar bilan chatishtirish nima deb ataladi?",
+      "v": [
+        "Qayta-tahliliy chatishtirish (bekkross)",
+        "Monoduragay chatishtirish",
+        "Digibrid chatishtirish",
+        "Oʻz-oʻzidan changlanish"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra F1 duragaylarni gomozigotali organizmlar bilan chatishtirish qayta-tahliliy chatishtirish yoki bekkross deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#633ce0e4"
+    },
+    {
+      "q": "Bekkross (qayta-tahliliy chatishtirish) natijasida olingan avlod qanday belgilanadi?",
+      "v": [
+        "Fb",
+        "F1",
+        "F2",
+        "G"
+      ],
+      "t": 0,
+      "izoh": "Darslikka koʻra bekkrossdan olingan avlod Fb tarzida belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "bio9_m47#02b3f16b"
+    }
+  ]
+}

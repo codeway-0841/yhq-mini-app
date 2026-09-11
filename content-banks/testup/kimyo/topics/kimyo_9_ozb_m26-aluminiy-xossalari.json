@@ -1,0 +1,546 @@
+{
+  "nom": "26-mavzu. Aluminiy xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Aluminiyning rangi qanday?",
+      "v": [
+        "Kumushsimon oq",
+        "Qizil",
+        "Sariq",
+        "Qora"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy — kumushsimon oq rangli yengil metall.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#fff75499"
+    },
+    {
+      "q": "Aluminiyning zichligi qancha?",
+      "v": [
+        "2698 kg/m3",
+        "1738 kg/m3",
+        "8960 kg/m3",
+        "1550 kg/m3"
+      ],
+      "t": 0,
+      "izoh": "Aluminiyning zichligi 2698 kg/m3 (2,698 g/cm3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#940245ea"
+    },
+    {
+      "q": "Aluminiyning suyuqlanish harorati qancha?",
+      "v": [
+        "660,5 °C",
+        "651 °C",
+        "1083 °C",
+        "850 °C"
+      ],
+      "t": 0,
+      "izoh": "Al suyuqlanish harorati 660,5 °C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#b4d2be8a"
+    },
+    {
+      "q": "Aluminiy elektr tokini va issiqlikni qanday o'tkazadi?",
+      "v": [
+        "Juda yaxshi",
+        "Yomon",
+        "O'rtacha",
+        "Umuman o'tkazmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy elektr tokini va issiqlikni juda yaxshi o'tkazadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#5dd26d3e"
+    },
+    {
+      "q": "Aluminiydan qanday qalinlikda folga tayyorlash mumkin?",
+      "v": [
+        "0,01 mm",
+        "0,1 mm",
+        "1 mm",
+        "10 mm"
+      ],
+      "t": 0,
+      "izoh": "Aluminiydan qalinligi 0,01 mm bo'lgan yupqa folga tayyorlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#53d10192"
+    },
+    {
+      "q": "Odatdagi haroratda aluminiy havoda nima uchun o'zgarmaydi?",
+      "v": [
+        "U yupqa, mustahkam oksid pardasi bilan himoyalangan",
+        "U havoda umuman oksidlanmaydi",
+        "U kislota bilan qoplangan",
+        "U namlik sevmaydi"
+      ],
+      "t": 0,
+      "izoh": "Aluminiy tez oksidlanib, oksid pardasi uni himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#344f8491"
+    },
+    {
+      "q": "Aluminiy kislorod bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "4Al + 3O2 → 2Al2O3",
+        "2Al + O2 → 2AlO",
+        "Al + O2 → AlO2",
+        "2Al + 3O2 → 2AlO3"
+      ],
+      "t": 0,
+      "izoh": "4Al + 3O2 → 2Al2O3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#cccd2661"
+    },
+    {
+      "q": "Oksid pardasi olib tashlansa, aluminiy suv bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "2Al + 6H2O → 2Al(OH)3 + 3H2",
+        "2Al + 3H2O → Al2O3 + 3H2",
+        "Al + H2O → AlOH + H2",
+        "2Al + 2H2O → 2AlO + 2H2"
+      ],
+      "t": 0,
+      "izoh": "2Al + 6H2O → 2Al(OH)3 + 3H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#75f30d3e"
+    },
+    {
+      "q": "Aluminiy xlorid kislota bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "2Al + 6HCl → 2AlCl3 + 3H2",
+        "Al + HCl → AlCl + H2",
+        "2Al + 6HCl → 2AlCl3 + 3H2O",
+        "Al + 3HCl → AlCl3 + 3H"
+      ],
+      "t": 0,
+      "izoh": "2Al + 6HCl → 2AlCl3 + 3H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#5b5d942c"
+    },
+    {
+      "q": "Konsentrlangan nitrat kislota bilan aluminiy odatdagi haroratda qanday munosabatda bo'ladi?",
+      "v": [
+        "Ta'sirlashmaydi",
+        "Shiddatli reaksiyaga kirishadi",
+        "Sekin reaksiyaga kirishadi",
+        "Eritiladi"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan HNO3 bilan odatdagi haroratda ta'sirlashmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#16c2f5e5"
+    },
+    {
+      "q": "Konsentrlangan nitrat kislota qanday idishlarda saqlanadi?",
+      "v": [
+        "Aluminiy idishlarda",
+        "Temir idishlarda",
+        "Shisha idishlarda",
+        "Plastik idishlarda"
+      ],
+      "t": 0,
+      "izoh": "Konsentrlangan HNO3 aluminiy idishlarda saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#5e0b8073"
+    },
+    {
+      "q": "Aluminiy ishqorlarning suvli eritmalari bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "2Al + 2NaOH + 6H2O → 2Na[Al(OH)4] + 3H2",
+        "2Al + 2NaOH → 2NaAlO2 + H2",
+        "Al + NaOH → NaAlO2 + H2",
+        "2Al + 6NaOH → 2Al(OH)3 + 6Na"
+      ],
+      "t": 0,
+      "izoh": "2Al + 2NaOH + 6H2O → 2Na[Al(OH)4] + 3H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#2046c767"
+    },
+    {
+      "q": "Na[Al(OH)4] moddasining nomi qanday?",
+      "v": [
+        "Natriy tetragidroksoaluminat",
+        "Natriy aluminat",
+        "Natriy gidroksid",
+        "Aluminiy gidroksid"
+      ],
+      "t": 0,
+      "izoh": "Na[Al(OH)4] — natriy tetragidroksoaluminat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#f31cacc5"
+    },
+    {
+      "q": "Aluminiy azot bilan qizdirilganda qanday modda hosil bo'ladi?",
+      "v": [
+        "AlN aluminiy nitrid",
+        "Al(NO3)3",
+        "Al2N3",
+        "Al3N2"
+      ],
+      "t": 0,
+      "izoh": "2Al + N2 → 2AlN aluminiy nitrid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#32f81cea"
+    },
+    {
+      "q": "Aluminiy fosfor bilan qizdirilganda qanday modda hosil bo'ladi?",
+      "v": [
+        "AlP aluminiy fosfid",
+        "AlPO4",
+        "Al2P3",
+        "Al3P"
+      ],
+      "t": 0,
+      "izoh": "Al + P → AlP aluminiy fosfid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#1c4ff22e"
+    },
+    {
+      "q": "Aluminiy oltingugurt bilan qizdirilganda qanday modda hosil bo'ladi?",
+      "v": [
+        "Al2S3 aluminiy sulfid",
+        "AlS",
+        "Al2S",
+        "AlS2"
+      ],
+      "t": 0,
+      "izoh": "2Al + 3S → Al2S3 aluminiy sulfid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#834b9b9a"
+    },
+    {
+      "q": "Aluminiy uglerod bilan qizdirilganda qanday modda hosil bo'ladi?",
+      "v": [
+        "Al4C3 aluminiy karbid",
+        "AlC",
+        "Al2C3",
+        "Al3C4"
+      ],
+      "t": 0,
+      "izoh": "4Al + 3C → Al4C3 aluminiy karbid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#0a8505ac"
+    },
+    {
+      "q": "Aluminiy xlor bilan qanday reaksiyaga kirishadi?",
+      "v": [
+        "2Al + 3Cl2 → 2AlCl3",
+        "Al + Cl2 → AlCl2",
+        "2Al + Cl2 → 2AlCl",
+        "Al + 3Cl → AlCl3"
+      ],
+      "t": 0,
+      "izoh": "2Al + 3Cl2 → 2AlCl3 aluminiy xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#7f658380"
+    },
+    {
+      "q": "Termit deganda nima tushuniladi?",
+      "v": [
+        "Aluminiy bilan temir kuyundisining aralashmasi",
+        "Aluminiy va mis aralashmasi",
+        "Aluminiy va magniy aralashmasi",
+        "Aluminiy va kumush aralashmasi"
+      ],
+      "t": 0,
+      "izoh": "Termit — aluminiy bilan temir kuyundisining aralashmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#f20fdd38"
+    },
+    {
+      "q": "Termit reaksiyasida aralashma qancha haroratgacha qizib ketadi?",
+      "v": [
+        "3500 °C gacha",
+        "1000 °C gacha",
+        "2000 °C gacha",
+        "5000 °C gacha"
+      ],
+      "t": 0,
+      "izoh": "Reaksiya natijasida aralashma 3500 °C gacha qizib ketadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#f12f717d"
+    },
+    {
+      "q": "Aluminotermiya deganda nima tushuniladi?",
+      "v": [
+        "Metall oksidlarini aluminiy bilan qaytarib, metall olish usuli",
+        "Aluminiyni elektroliz qilish usuli",
+        "Aluminiyni kislota bilan eritish usuli",
+        "Aluminiy qotishmalarini tayyorlash usuli"
+      ],
+      "t": 0,
+      "izoh": "Aluminotermiya — metall oksidlarini aluminiy bilan qaytarib metall olish usuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#90ffb1a7"
+    },
+    {
+      "q": "Aluminotermiyani kim ochgan?",
+      "v": [
+        "N.N.Beketov",
+        "X.K.Ersted",
+        "F.Vyoler",
+        "G.Devi"
+      ],
+      "t": 0,
+      "izoh": "Aluminotermiyani rus olimi N.N.Beketov ochgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#190cac56"
+    },
+    {
+      "q": "Aluminotermiya qaysi metallarni olishda ishlatiladi?",
+      "v": [
+        "Xrom, marganes, vanadiy, sirkoniy, titan",
+        "Natriy, kaliy, kalsiy",
+        "Mis, kumush, oltin",
+        "Rux, qo'rg'oshin, qalay"
+      ],
+      "t": 0,
+      "izoh": "Aluminotermiya xrom, marganes, vanadiy, sirkoniy, titan olishda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#91cfef94"
+    },
+    {
+      "q": "8Al + 3Fe3O4 reaksiyasida qancha issiqlik ajralib chiqadi?",
+      "v": [
+        "3300 kJ",
+        "3000 kJ",
+        "3500 kJ",
+        "2800 kJ"
+      ],
+      "t": 0,
+      "izoh": "8Al + 3Fe3O4 → 4Al2O3 + 9Fe + 3300 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#88ac58bb"
+    },
+    {
+      "q": "Namunaviy misolda 5,4 g 3 valentli metall qizdirilganda 10,2 g oksid olingan. Bu qaysi metall?",
+      "v": [
+        "Aluminiy",
+        "Temir",
+        "Magniy",
+        "Xrom"
+      ],
+      "t": 0,
+      "izoh": "A = 27, bu aluminiyga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#185626eb"
+    },
+    {
+      "q": "Namunaviy misolda 270 g qotishmaning 20 % i mis bo'lsa, qancha aluminiy bor?",
+      "v": [
+        "216 g",
+        "54 g",
+        "200 g",
+        "180 g"
+      ],
+      "t": 0,
+      "izoh": "m(Al) = 270.0,8 = 216 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#bdbad933"
+    },
+    {
+      "q": "Namunaviy misolda 216 g Al dan qancha hajm vodorod hosil bo'ladi (n.sh.)?",
+      "v": [
+        "268,8 l",
+        "67,2 l",
+        "22,4 l",
+        "134,4 l"
+      ],
+      "t": 0,
+      "izoh": "216:54 = x:67,2 dan x = 268,8 l H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#209fc31e"
+    },
+    {
+      "q": "Al kristallgidratida 51,35 % aluminiy sulfat bo'lsa, formulasi qanday?",
+      "v": [
+        "Al2(SO4)3.18H2O",
+        "Al2(SO4)3.6H2O",
+        "Al2(SO4)3.12H2O",
+        "Al2(SO4)3.24H2O"
+      ],
+      "t": 0,
+      "izoh": "n = 18, ya'ni Al2(SO4)3.18H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#694c8030"
+    },
+    {
+      "q": "Aluminiy qizdirilganda qaysi moddalar bilan reaksiyaga kirishadi?",
+      "v": [
+        "Galogenlar, fosfor, oltingugurt, azot, uglerod",
+        "Faqat kislorod",
+        "Faqat galogenlar",
+        "Faqat azot"
+      ],
+      "t": 0,
+      "izoh": "Al qizdirilganda galogenlar, P, S, N2, C bilan reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#3dac70e7"
+    },
+    {
+      "q": "Aluminiy va temir (II, III)-oksid aralashmasiga cho'g'langan sim tekkizilsa nima sodir bo'ladi?",
+      "v": [
+        "Juda shiddatli ekzotermik reaksiya",
+        "Endotermik reaksiya",
+        "Sekin reaksiya",
+        "Umuman reaksiya bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Juda shiddatli ekzotermik reaksiya sodir bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#cc0123b0"
+    },
+    {
+      "q": "Aluminiyning suyultirilgan sulfat kislota bilan reaksiyasida qanday gaz ajralib chiqadi?",
+      "v": [
+        "Vodorod",
+        "Kislorod",
+        "Oltingugurt dioksid",
+        "Azot"
+      ],
+      "t": 0,
+      "izoh": "Al qizdirilgan holda suyultirilgan H2SO4 bilan ta'sirlashib H2 ajratib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#41882765"
+    },
+    {
+      "q": "Suyultirilgan nitrat kislota bilan aluminiy qanday reaksiyaga kirishadi?",
+      "v": [
+        "Al + 4HNO3 = Al(NO3)3 + NO + 2H2O",
+        "Al + 4HNO3 = Al(NO3)3 + NO2 + 2H2O",
+        "2Al + 6HNO3 = 2Al(NO3)3 + 3H2",
+        "Al + 3HNO3 = Al(NO3)3 + 3H"
+      ],
+      "t": 0,
+      "izoh": "Al + 4HNO3 = Al(NO3)3 + NO + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#dd168649"
+    },
+    {
+      "q": "Aluminiy ishqorlar bilan reaksiyaga kirishganda qanday gaz ajralib chiqadi?",
+      "v": [
+        "Vodorod",
+        "Kislorod",
+        "Ammiak",
+        "Karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Al ishqorlar bilan ta'sirlashib vodorod ajratib chiqaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#2738dc98"
+    },
+    {
+      "q": "Aluminiydan nimalar tayyorlash mumkin?",
+      "v": [
+        "Ingichka sim va yupqa folga",
+        "Faqat qattiq quyma",
+        "Faqat kukun",
+        "Faqat suyuqlik"
+      ],
+      "t": 0,
+      "izoh": "Aluminiydan ingichka sim yoki 0,01 mm yupqa folga tayyorlash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#f9cc9d81"
+    },
+    {
+      "q": "Aluminiy asosida olingan qotishmalar xalq xo'jaligi uchun qanday ahamiyatga ega?",
+      "v": [
+        "Qimmatbaho xomashyo",
+        "Arzon chiqindi",
+        "Zararli modda",
+        "Oddiy materiallar"
+      ],
+      "t": 0,
+      "izoh": "Al qotishmalari xalq xo'jaligida qimmatbaho xomashyodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#d2f27ccb"
+    },
+    {
+      "q": "Aluminiy ancha faol metall bo'lsa-da, buyumlari suv bilan reaksiyaga kirishmaydi. Nima uchun?",
+      "v": [
+        "Oksid pardasi himoya qiladi",
+        "Aluminiy passiv metall",
+        "Suv juda sovuq",
+        "Aluminiy zichligi katta"
+      ],
+      "t": 0,
+      "izoh": "Oksid pardasi aluminiy buyumlarni suv bilan reaksiyadan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m26-aluminiy-xossalari#e5ba529b"
+    }
+  ]
+}

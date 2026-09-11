@@ -1,0 +1,1609 @@
+{
+  "nom": "Irratsional tenglamalar",
+  "bolim": "Tenglamalar va ularning sistemalari",
+  "blok": "teng",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "√(3x + 4) = 5 irratsional tenglamani yeching va topilgan ildizni ko'rsating.",
+      "v": [
+        "21",
+        "7",
+        "25",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "Ildiz allaqachon yakkalangan, shuning uchun ikkala tomonni kvadratga ko'taramiz: 3x + 4 = 25. Bundan 3x = 21 va x = 7. Tekshiramiz: √(3·7 + 4) = √25 = 5 — tenglik bajarildi. 21 — 3 ga bo'lish unutilgan, 25 — kvadratga ko'targandan keyin to'xtab qolingan, 2 — kvadratga ko'tarish o'rniga 2 ga ko'paytirilgan. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ildiz-yakkalash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#891d0a85"
+    },
+    {
+      "q": "√(2x − 7) = 3 tenglamaning ildizini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "1",
+        "16",
+        "5",
+        "8"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomonni kvadratga ko'taramiz: 2x − 7 = 9. Demak 2x = 16 va x = 8. Tekshiruv: √(2·8 − 7) = √9 = 3. 1 — 7 ni qo'shish o'rniga ayirilgan, 16 — 2 ga bo'lish tashlab ketilgan, 5 — kvadratga ko'tarilmay (3 + 7) : 2 hisoblangan. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ildiz-yakkalash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#7172a780"
+    },
+    {
+      "q": "2√(x + 5) = 10 tenglamada avval ildiz yakkalanadi. Tenglamaning yechimini toping.",
+      "v": [
+        "95",
+        "5",
+        "20",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomonni 2 ga bo'lamiz: √(x + 5) = 5. Endi kvadratga ko'taramiz: x + 5 = 25, bundan x = 20. Tekshiruv: 2·√25 = 10. 95 — 2 ga bo'lmasdan kvadratga ko'tarilgan (x + 5 = 100), 5 — kvadratga ko'tarish unutilgan, 25 — 5 ni ayirish tashlab ketilgan. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ildiz-yakkalash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c8908d6e"
+    },
+    {
+      "q": "Zilola daftariga √(5x − 1) = 7 tenglamani yozdi va uni yechishga kirishdi. Tenglamaning ildizi qanday qiymatga teng?",
+      "v": [
+        "10",
+        "50",
+        "9,6",
+        "1,6"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga ko'taramiz: 5x − 1 = 49. Bundan 5x = 50 va x = 10. Tekshiruv: √(5·10 − 1) = √49 = 7. 50 — 5 ga bo'lish unutilgan, 9,6 — 1 ni qo'shish o'rniga ayirilgan, 1,6 — kvadratga ko'tarilmagan. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-ildiz-yakkalash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#764bc50a"
+    },
+    {
+      "q": "√x − 4 = 3 tenglamani yechishda avval ildiz yakkalanadi. Tenglamaning ildizini toping.",
+      "v": [
+        "13",
+        "49",
+        "14",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Avval ildizni yakkalaymiz: √x = 3 + 4 = 7. Endi kvadratga ko'taramiz: x = 49. Tekshiruv: √49 − 4 = 7 − 4 = 3. 13 — ildiz belgisi e'tiborga olinmay x − 4 = 9 deb yozilgan, 14 — 7 ni kvadratga ko'tarish o'rniga 2 ga ko'paytirilgan, 7 — √x qiymatida to'xtab qolingan. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-yakkalash-ozod-had",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#8abfb0d7"
+    },
+    {
+      "q": "Anvar o'ylagan sonning kvadrat ildizidan 6 ni ayirganda 5 hosil bo'ldi. Anvar o'ylagan son qaysi?",
+      "v": [
+        "31",
+        "22",
+        "11",
+        "121"
+      ],
+      "t": 3,
+      "izoh": "Shartni tenglama qilib yozamiz: √x − 6 = 5. Ildizni yakkalaymiz: √x = 11, so'ng kvadratga ko'taramiz: x = 121. Tekshiruv: √121 − 6 = 11 − 6 = 5. 31 — ildiz e'tiborsiz qoldirilib x − 6 = 25 deb olingan, 22 — 11 ikkiga ko'paytirilgan, 11 — √x qiymatida to'xtalgan. Javob: 121.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-yakkalash-ozod-had",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4826e2be"
+    },
+    {
+      "q": "3√(x − 2) + 1 = 10 tenglamani yeching va uning ildizini ko'rsating.",
+      "v": [
+        "11",
+        "83",
+        "5",
+        "29"
+      ],
+      "t": 0,
+      "izoh": "Avval 1 ni o'ng tomonga o'tkazamiz: 3√(x − 2) = 9, so'ng 3 ga bo'lamiz: √(x − 2) = 3. Kvadratga ko'tarsak x − 2 = 9, ya'ni x = 11. Tekshiruv: 3·√9 + 1 = 10. 83 — 3 ga bo'lmasdan kvadratga ko'tarilgan (x − 2 = 81), 5 — kvadratga ko'tarish unutilgan, 29 — kvadratga ko'tarishda 3 koeffitsienti kvadratlanmagan. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-yakkalash-ozod-had",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#8804fc5b"
+    },
+    {
+      "q": "Bahodir mashq daftarida 5 + √(2x + 1) = 12 tenglamani ko'rdi. Bu tenglamaning yechimi qaysi son ekanini aniqlang.",
+      "v": [
+        "71,5",
+        "3",
+        "24",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Ildizni yakkalaymiz: √(2x + 1) = 12 − 5 = 7. Kvadratga ko'tarsak 2x + 1 = 49, bundan 2x = 48 va x = 24. Tekshiruv: 5 + √49 = 12. 71,5 — 5 o'tkazilmay 2x + 1 = 144 deb olingan, 3 — kvadratga ko'tarilmagan, 25 — 1 ni ayirish o'rniga qo'shilgan. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-yakkalash-ozod-had",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#7fd8acf8"
+    },
+    {
+      "q": "√(x − 3) = √(2x − 8) tenglamaning aniqlanish sohasini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x ≥ 3",
+        "x ≥ 4",
+        "x ≥ 8",
+        "3 ≤ x ≤ 4"
+      ],
+      "t": 1,
+      "izoh": "Ikkala ildiz ostidagi ifoda manfiy bo'lmasligi kerak: x − 3 ≥ 0 dan x ≥ 3, 2x − 8 ≥ 0 dan x ≥ 4. Ikki shart bir vaqtda bajarilishi kerak, ya'ni kuchliroq shart olinadi: x ≥ 4. x ≥ 3 — faqat birinchi shart hisobga olingan, x ≥ 8 — 2x − 8 ≥ 0 da 2 ga bo'lish unutilgan, 3 ≤ x ≤ 4 — kesishma o'rniga oraliq olingan. Javob: x ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#7e65077c"
+    },
+    {
+      "q": "Muallim doskaga √(12 − 3x) + √(x + 2) = 4 tenglamani yozdi va o'quvchilardan uning aniqlanish sohasini so'radi. To'g'ri javobni tanlang.",
+      "v": [
+        "−2 ≤ x ≤ 4",
+        "x ≤ 4",
+        "x ≥ −2",
+        "−4 ≤ x ≤ 2"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildiz uchun 12 − 3x ≥ 0, ya'ni 3x ≤ 12 va x ≤ 4. Ikkinchi ildiz uchun x + 2 ≥ 0, ya'ni x ≥ −2. Ikkala shart birga bajarilgani uchun −2 ≤ x ≤ 4 kesma hosil bo'ladi. x ≤ 4 va x ≥ −2 — faqat bitta shart olingan, −4 ≤ x ≤ 2 — chegaralar o'rni almashtirilgan. Javob: −2 ≤ x ≤ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4c4a2998"
+    },
+    {
+      "q": "√(x² − 25) = 3 tenglamaning aniqlanish sohasi qanday to'plamdan iborat bo'ladi?",
+      "v": [
+        "x ≥ 5",
+        "−5 ≤ x ≤ 5",
+        "x ≤ −5 yoki x ≥ 5",
+        "barcha haqiqiy sonlar"
+      ],
+      "t": 2,
+      "izoh": "Shart: x² − 25 ≥ 0, ya'ni x² ≥ 25. Bu tengsizlik modul orqali |x| ≥ 5 ko'rinishga keladi, demak x ≤ −5 yoki x ≥ 5. x ≥ 5 — manfiy tarmoq unutilgan, −5 ≤ x ≤ 5 — tengsizlik ishorasi teskari olingan, barcha haqiqiy sonlar — ildiz ostidagi shart umuman tekshirilmagan. Javob: x ≤ −5 yoki x ≥ 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#93e5533f"
+    },
+    {
+      "q": "Nodira (√(x − 1))/(x − 6) = 2 ko'rinishidagi tenglamani yechishga kirishdi. Bu tenglamaning aniqlanish sohasi qanday yoziladi?",
+      "v": [
+        "x ≥ 1",
+        "x > 1",
+        "x ≥ 6",
+        "x ≥ 1 va x ≠ 6"
+      ],
+      "t": 3,
+      "izoh": "Ikki shart bor: ildiz ostidagi ifoda manfiy bo'lmasin, ya'ni x − 1 ≥ 0 va x ≥ 1; maxraj nolga aylanmasin, ya'ni x − 6 ≠ 0 va x ≠ 6. Ikkalasini birlashtiramiz. x ≥ 1 — maxraj sharti unutilgan, x > 1 — ildiz ostidagi ifoda nolga teng bo'lishi mumkinligi inkor etilgan, x ≥ 6 — maxrajga ham ildiz sharti qo'llanilgan. Javob: x ≥ 1 va x ≠ 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#386dbd69"
+    },
+    {
+      "q": "√(x + 7) = x + 1 tenglamani yeching va faqat haqiqiy ildizni ko'rsating.",
+      "v": [
+        "x = 2",
+        "x = −3",
+        "x = 2 va x = −3",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga ko'taramiz: x + 7 = x² + 2x + 1, bundan x² + x − 6 = 0 va x = 2 yoki x = −3. Endi tekshiramiz: x = 2 da √9 = 3 hamda 2 + 1 = 3 — mos keladi; x = −3 da √4 = 2, lekin −3 + 1 = −2 manfiy, ildiz esa manfiy bo'lolmaydi. Demak x = −3 chetki ildiz. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildiz-yuzaga-kelishi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#152accc7"
+    },
+    {
+      "q": "√(2x + 3) = x tenglamaning ildizlarini toping va tekshirishdan o'tganini belgilang.",
+      "v": [
+        "x = 3 va x = −1",
+        "x = −1",
+        "x = 3",
+        "x = 1"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga ko'targanda 2x + 3 = x², ya'ni x² − 2x − 3 = 0 bo'ladi va x = 3 yoki x = −1 chiqadi. Tekshiramiz: x = 3 da √9 = 3 — to'g'ri; x = −1 da √1 = 1, lekin o'ng tomon −1, ya'ni tenglik buziladi. Chap tomon hech qachon manfiy bo'lmaydi. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildiz-yuzaga-kelishi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#00aa381f"
+    },
+    {
+      "q": "Dilshod √(x + 12) = x tenglamani kvadratga ko'tarib ikkita son topdi va ikkalasini ham javob deb yozdi. Ular ichida qaysi biri chetki ildiz?",
+      "v": [
+        "4",
+        "ikkala ildiz ham to'g'ri",
+        "chetki ildiz yo'q",
+        "−3"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga ko'tarsak x + 12 = x², ya'ni x² − x − 12 = 0 va x = 4 yoki x = −3. Tekshiramiz: x = 4 da √16 = 4 — tenglik bajariladi; x = −3 da √9 = 3, o'ng tomon esa −3, ya'ni tenglik bajarilmaydi. Kvadratga ko'tarish manfiy o'ng tomonni ham musbatga aylantirgani uchun aynan shu ildiz ortiqcha paydo bo'lgan. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-yuzaga-kelishi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#389c5943"
+    },
+    {
+      "q": "√(3x + 1) = x − 1 tenglamaning haqiqiy yechimini toping va javobni belgilang.",
+      "v": [
+        "x = 0",
+        "x = 5",
+        "x = 0 va x = 5",
+        "x = 4"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'taramiz: 3x + 1 = x² − 2x + 1, bundan x² − 5x = 0 va x = 0 yoki x = 5. Tekshiramiz: x = 0 da chap tomon √1 = 1, o'ng tomon −1 — mos emas; x = 5 da √16 = 4 va 5 − 1 = 4 — mos keladi. Demak faqat bitta ildiz qoladi. Javob: x = 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildiz-yuzaga-kelishi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#2d59e5e5"
+    },
+    {
+      "q": "√(x − 2) = x − 4 tenglamani kvadratga ko'targanda ikkita ildiz chiqadi. Ulardan qaysi biri tenglamani qanoatlantiradi?",
+      "v": [
+        "x = 3",
+        "x = 3 va x = 6",
+        "x = 6",
+        "x = 2"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga ko'tarsak x − 2 = x² − 8x + 16, ya'ni x² − 9x + 18 = 0 va x = 3 yoki x = 6. O'ng tomon manfiy bo'lmasligi kerak: x − 4 ≥ 0 sharti x ≥ 4 ni beradi, shuning uchun x = 3 tushib qoladi. Tekshiruv: x = 6 da √4 = 2 va 6 − 4 = 2. Javob: x = 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildizni-ajratish",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#fd13ec7c"
+    },
+    {
+      "q": "√(2x + 6) = x + 1 tenglamaning haqiqiy yechimini aniqlang.",
+      "v": [
+        "x = √5",
+        "x = −√5",
+        "x = √5 va x = −√5",
+        "yechimi yo'q"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga ko'taramiz: 2x + 6 = x² + 2x + 1, bundan x² = 5 va x = √5 yoki x = −√5. O'ng tomon manfiy bo'lmasligi shartidan x + 1 ≥ 0, ya'ni x ≥ −1. −√5 ≈ −2,24 bu shartni buzadi, √5 ≈ 2,24 esa qanoatlantiradi. Javob: x = √5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chetki-ildizni-ajratish",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#832f3ead"
+    },
+    {
+      "q": "√(x + 4) = 2 − x tenglamada o'ng tomon manfiy bo'lmasligi kerak. Tenglamaning ildizini toping.",
+      "v": [
+        "x = 5",
+        "x = 0 va x = 5",
+        "x = −4",
+        "x = 0"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga ko'tarsak x + 4 = 4 − 4x + x², ya'ni x² − 5x = 0 va x = 0 yoki x = 5. O'ng tomon sharti 2 − x ≥ 0, ya'ni x ≤ 2. Shuning uchun x = 5 tushib qoladi. Tekshiruv: x = 0 da √4 = 2 va 2 − 0 = 2 — tenglik bajariladi. Javob: x = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildizni-ajratish",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c32f6fd1"
+    },
+    {
+      "q": "Jasur √(5 − x) = x + 1 tenglamani kvadratga ko'tarib ikkita ildiz topdi, lekin ularni tekshirmadi. Qaysi ildiz chetki ekanini aniqlang.",
+      "v": [
+        "1",
+        "−4",
+        "ikkala ildiz to'g'ri",
+        "chetki ildiz yo'q"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'tarsak 5 − x = x² + 2x + 1, ya'ni x² + 3x − 4 = 0 va x = 1 yoki x = −4. Tekshiramiz: x = 1 da √4 = 2 va 1 + 1 = 2 — to'g'ri; x = −4 da √9 = 3, o'ng tomon esa −3 — tenglik buziladi. Demak −4 chetki ildiz. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chetki-ildizni-ajratish",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#a1e2ff71"
+    },
+    {
+      "q": "√(3x − 5) = √(x + 7) tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "1",
+        "12",
+        "6",
+        "−6"
+      ],
+      "t": 2,
+      "izoh": "Ikkala tomon ham kvadrat ildiz bo'lgani uchun ildiz ostidagi ifodalarni tenglashtiramiz: 3x − 5 = x + 7. Bundan 2x = 12 va x = 6. Aniqlanish sohasi tekshiriladi: 3·6 − 5 = 13 ≥ 0. 1 — 5 ni o'ng tomonga o'tkazishda ishora saqlanib qolgan, 12 — 2 ga bo'lish unutilgan, −6 — ikkala had ishorasi teskari olingan. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildiz-tenglik",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4d1f6946"
+    },
+    {
+      "q": "Feruza √(4x + 1) = √(2x + 9) tenglamani ildiz ostidagi ifodalarni tenglashtirib yechdi. U qanday ildiz olgan?",
+      "v": [
+        "4",
+        "8",
+        "5",
+        "−4"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifodalarni tenglashtiramiz: 4x + 1 = 2x + 9. Bundan 2x = 8 va x = 4. Tekshiruv: √17 = √17 — tenglik bajariladi. 8 — 2 ga bo'lish unutilgan, 5 — 1 ni ayirish o'rniga qo'shilgan (2x = 10), −4 — noma'lumlar bir tomonga noto'g'ri ishora bilan yig'ilgan. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildiz-tenglik",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#51244609"
+    },
+    {
+      "q": "√(x² − 3x) = √(2x + 6) tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "x = 6",
+        "x = −1",
+        "x = 6 va x = −1",
+        "x = 5"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifodalarni tenglashtiramiz: x² − 3x = 2x + 6, ya'ni x² − 5x − 6 = 0 va x = 6 yoki x = −1. Ikkalasini ham tekshiramiz: x = 6 da ikkala ildiz osti 18 ga teng, x = −1 da ikkalasi 4 ga teng — har ikkisi manfiy emas. Demak ikkala ildiz ham yaroqli. x = 5 — ildizlar yig'indisi bilan chalkashtirilgan. Javob: x = 6 va x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildiz-tenglik",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d1f69e06"
+    },
+    {
+      "q": "Shirin √(5x + 4) = √(x + 24) tenglamani yechishda ikkala ildiz ostidagi ifodani o'zaro tenglashtirdi. U qanday qiymat olishi kerak?",
+      "v": [
+        "20",
+        "7",
+        "4",
+        "5"
+      ],
+      "t": 3,
+      "izoh": "Tenglashtiramiz: 5x + 4 = x + 24. Noma'lumlarni bir tomonga yig'amiz: 4x = 20, demak x = 5. Tekshiruv: √29 = √29. 20 — 4 ga bo'lish tashlab ketilgan, 7 — 4 ni ayirish o'rniga qo'shilgan (4x = 28), 4 — 20 ni x oldidagi koeffitsient o'rniga 5 ga bo'lingan. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-tenglik",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#28b34bc9"
+    },
+    {
+      "q": "√(x + 5) + √x = 5 tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "4",
+        "9",
+        "16",
+        "25"
+      ],
+      "t": 0,
+      "izoh": "Bir ildizni yakkalaymiz: √(x + 5) = 5 − √x. Kvadratga ko'taramiz: x + 5 = 25 − 10√x + x, bundan 10√x = 20 va √x = 2, ya'ni x = 4. Tekshiruv: √9 + √4 = 3 + 2 = 5. 9 — √(x + 5) qiymatining kvadrati olingan, 16 — √x = 4 deb xato olingan, 25 — o'ng tomon (5) kvadratga ko'tarilib, javob deb yozilgan. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildiz-yigindi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e5bcad94"
+    },
+    {
+      "q": "Kamola √(x + 1) + √(x + 8) = 7 tenglamani ikki bosqichda kvadratga ko'tarib yechdi. Uning to'g'ri javobi qaysi?",
+      "v": [
+        "41",
+        "3",
+        "8",
+        "48"
+      ],
+      "t": 2,
+      "izoh": "Yakkalaymiz: √(x + 8) = 7 − √(x + 1) va kvadratga ko'taramiz: x + 8 = 49 − 14√(x + 1) + x + 1. Bundan 14√(x + 1) = 42, ya'ni √(x + 1) = 3 va x = 8. Tekshiruv: √9 + √16 = 3 + 4 = 7. 41 — √(x + 8) = 7 deb olingan, 3 — √(x + 1) qiymatida to'xtalgan, 48 — x + 1 = 49 deb yozilgan. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildiz-yigindi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4be99bd4"
+    },
+    {
+      "q": "√(x + 7) + √(x + 2) = 5 tenglamaning yechimini toping.",
+      "v": [
+        "4",
+        "2",
+        "18",
+        "23"
+      ],
+      "t": 1,
+      "izoh": "√(x + 7) = 5 − √(x + 2) deb yozib kvadratga ko'taramiz: x + 7 = 25 − 10√(x + 2) + x + 2. Bundan 10√(x + 2) = 20, ya'ni √(x + 2) = 2 va x = 2. Tekshiruv: √9 + √4 = 3 + 2 = 5. 4 — √(x + 2) = 2 dan x = 2² deb olingan, 18 — x + 7 = 25 deb yozilgan, 23 — x + 2 = 25 deb yozilgan. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-yigindi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#5f825105"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki maydonchaning yuzalari x m² va (x + 20) m². Ularning tomonlari yig'indisi 10 m bo'lsa, birinchi maydonchaning yuzasini toping.",
+      "v": [
+        "16 m²",
+        "4 m²",
+        "36 m²",
+        "25 m²"
+      ],
+      "t": 0,
+      "izoh": "Tomonlar √x va √(x + 20), shart: √x + √(x + 20) = 10. Yakkalab kvadratga ko'taramiz: x + 20 = 100 − 20√x + x, bundan 20√x = 80 va √x = 4, ya'ni x = 16. Tomonlar 4 m va 6 m, yig'indisi 10 m. 4 m² — tomon qiymati yuza deb olingan, 36 m² — ikkinchi maydoncha yuzasi, 25 m² — tomonlar teng deb 5 m va 5 m olingan. Javob: 16 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildiz-yigindi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#8d43f033"
+    },
+    {
+      "q": "√(x + 5) − √(x − 3) = 2 tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "1",
+        "4",
+        "7",
+        "yechimi yo'q"
+      ],
+      "t": 1,
+      "izoh": "√(x + 5) = 2 + √(x − 3) deb yozib kvadratga ko'taramiz: x + 5 = 4 + 4√(x − 3) + x − 3. Bundan 4√(x − 3) = 4, ya'ni √(x − 3) = 1 va x = 4. Tekshiruv: √9 − √1 = 3 − 1 = 2. 1 — √(x − 3) qiymatida to'xtalgan, 7 — x − 3 = 4 deb olingan, yechimi yo'q — har bir ildiz alohida kvadratlanib (x + 5) − (x − 3) = 4 degan noto'g'ri tenglik chiqarilgan. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-ayirma",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#f699e710"
+    },
+    {
+      "q": "√(2x + 3) − √(x − 2) = 2 tenglamani yeching va uning barcha ildizlarini ko'rsating.",
+      "v": [
+        "x = 3",
+        "x = 11",
+        "x = 3 va x = 11",
+        "x = 11 va x = −3"
+      ],
+      "t": 2,
+      "izoh": "√(2x + 3) = 2 + √(x − 2) ni kvadratga ko'tarsak 2x + 3 = 4 + 4√(x − 2) + x − 2, ya'ni x + 1 = 4√(x − 2). Yana kvadratga ko'tarsak x² + 2x + 1 = 16x − 32, bundan x² − 14x + 33 = 0 va x = 3 yoki x = 11. Tekshiramiz: x = 3 da 3 − 1 = 2, x = 11 da 5 − 3 = 2 — ikkalasi ham to'g'ri. Javob: x = 3 va x = 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildiz-ayirma",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#059f4e21"
+    },
+    {
+      "q": "Rustam √(x + 4) − √(x − 4) = 2 tenglamani yechishga kirishdi. Tenglamaning yagona ildizi qaysi son?",
+      "v": [
+        "5",
+        "1",
+        "3",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "√(x + 4) = 2 + √(x − 4) ni kvadratga ko'taramiz: x + 4 = 4 + 4√(x − 4) + x − 4. Bundan 4√(x − 4) = 4, ya'ni √(x − 4) = 1 va x = 5. Tekshiruv: √9 − √1 = 3 − 1 = 2. 1 — √(x − 4) qiymatida to'xtalgan, 3 — √(x + 4) qiymati javob deb olingan, 8 — x − 4 = 4 deb yozilgan. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-ayirma",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#f8d523ec"
+    },
+    {
+      "q": "Kvadrat shaklidagi ikki gilamning yuzalari x m² va (x + 24) m². Ikkinchisining tomoni birinchisinikidan 2 m uzun bo'lsa, birinchi gilamning yuzasini toping.",
+      "v": [
+        "5 m²",
+        "49 m²",
+        "36 m²",
+        "25 m²"
+      ],
+      "t": 3,
+      "izoh": "Tomonlar √x va √(x + 24), shart: √(x + 24) − √x = 2. Kvadratga ko'tarsak x + 24 = 4 + 4√x + x, bundan 4√x = 20 va √x = 5, ya'ni x = 25. Tomonlar 5 m va 7 m. 5 m² — tomon uzunligi yuza deb olingan, 49 m² — ikkinchi gilam yuzasi, 36 m² — tomonlar 6 m va 8 m deb tanlangan, lekin bunda yuzalar farqi 28 chiqadi. Javob: 25 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildiz-ayirma",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#3636a459"
+    },
+    {
+      "q": "x − 5√x + 6 = 0 tenglamani yangi o'zgaruvchi kiritib yeching va ildizlarini ko'rsating.",
+      "v": [
+        "x = 4 va x = 9",
+        "x = 2 va x = 3",
+        "x = 4",
+        "x = 9"
+      ],
+      "t": 0,
+      "izoh": "t = √x deb belgilaymiz, bunda t ≥ 0 va x = t². Tenglama t² − 5t + 6 = 0 ko'rinishga keladi, uning ildizlari t = 2 va t = 3. Endi orqaga qaytamiz: √x = 2 dan x = 4, √x = 3 dan x = 9. Ikkalasi ham manfiy emas, demak yaroqli. x = 2 va x = 3 — t qiymatlarida to'xtab qolingan. Javob: x = 4 va x = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-sodda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#31733a3b"
+    },
+    {
+      "q": "x − 7√x + 12 = 0 tenglamaning ildizlari yig'indisini hisoblang.",
+      "v": [
+        "7",
+        "25",
+        "12",
+        "144"
+      ],
+      "t": 1,
+      "izoh": "t = √x almashtirishdan keyin t² − 7t + 12 = 0 bo'ladi, ildizlari t = 3 va t = 4. Demak x = 9 va x = 16, ularning yig'indisi 9 + 16 = 25. 7 — t larning yig'indisi olingan, 12 — t larning ko'paytmasi olingan, 144 — x larning ko'paytmasi hisoblangan. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-sodda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#9b5fff8b"
+    },
+    {
+      "q": "Sanjar 2x − 9√x + 4 = 0 tenglamani t = √x almashtirish bilan yechdi. U qanday ildizlar juftini olgan?",
+      "v": [
+        "x = 4 va x = 0,5",
+        "x = 16",
+        "x = 0,25",
+        "x = 16 va x = 0,25"
+      ],
+      "t": 3,
+      "izoh": "t = √x deb olsak 2t² − 9t + 4 = 0 bo'ladi. Diskriminant D = 81 − 32 = 49, demak t = (9 + 7) : 4 = 4 yoki t = (9 − 7) : 4 = 0,5. Ikkalasi ham manfiy emas. Orqaga qaytamiz: x = 16 va x = 0,25. x = 4 va x = 0,5 — t qiymatlari javob deb yozilgan, qolgan ikkitasida ildizning bittasi tashlab ketilgan. Javob: x = 16 va x = 0,25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-sodda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c89621a3"
+    },
+    {
+      "q": "x + 3√x − 10 = 0 tenglama nechta haqiqiy ildizga ega va u qaysi son?",
+      "v": [
+        "Ikkita ildiz, x = 4 va x = 25",
+        "Bitta ildiz, x = 2",
+        "Bitta ildiz, x = 4",
+        "Ikkita ildiz, x = 2 va x = −5"
+      ],
+      "t": 2,
+      "izoh": "t = √x almashtirishdan t² + 3t − 10 = 0 hosil bo'ladi, ildizlari t = 2 va t = −5. Kvadrat ildiz manfiy qiymat qabul qilmaydi, shuning uchun t = −5 tashlab yuboriladi. Faqat t = 2 qoladi va x = 4 bo'ladi. Ikkita ildiz varianti aynan shu shartni unutgan o'quvchining javobi. Javob: bitta ildiz, x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-sodda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#fe84c241"
+    },
+    {
+      "q": "√x · √(x + 5) = 6 tenglamaning haqiqiy ildizini toping va javobni belgilang.",
+      "v": [
+        "x = −9",
+        "x = 4",
+        "x = 4 va x = −9",
+        "x = 6"
+      ],
+      "t": 1,
+      "izoh": "Ildizlar ko'paytmasini bitta ildiz ostiga yig'amiz: √(x² + 5x) = 6, so'ng kvadratga ko'taramiz: x² + 5x − 36 = 0. Ildizlari x = 4 va x = −9. Aniqlanish sohasi x ≥ 0 bo'lgani uchun x = −9 yaroqsiz. Tekshiruv: √4·√9 = 2·3 = 6. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kopaytmali-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#98f63200"
+    },
+    {
+      "q": "√(x + 6) · √(x − 6) = 8 tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "2 ta",
+        "ildizi yo'q",
+        "3 ta",
+        "1 ta"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytmani bitta ildiz ostiga olamiz: √(x² − 36) = 8, kvadratga ko'tarsak x² − 36 = 64, ya'ni x² = 100 va x = 10 yoki x = −10. Aniqlanish sohasi x − 6 ≥ 0 shartidan x ≥ 6 ni beradi, shuning uchun x = −10 tushib qoladi. Demak faqat bitta ildiz qoladi. 2 ta — aniqlanish sohasi tekshirilmagan javob. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytmali-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c1483984"
+    },
+    {
+      "q": "To'g'ri to'rtburchak shaklidagi gulzorning tomonlari √(x + 3) m va √(x + 10) m. Uning yuzasi 12 m² bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "−19",
+        "12",
+        "3",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Yuza tomonlar ko'paytmasiga teng: √(x + 3)·√(x + 10) = 12, ya'ni √(x² + 13x + 30) = 12. Kvadratga ko'tarsak x² + 13x − 114 = 0, diskriminant D = 169 + 456 = 625 va x = 6 yoki x = −19. x = −19 da ildiz osti manfiy, shuning uchun yaroqsiz. Tekshiruv: tomonlar √9 = 3 m va √16 = 4 m, yuza 12 m². Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-kopaytmali-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#63650261"
+    },
+    {
+      "q": "Aziz √(x − 2)·√(x + 2) ko'paytmani √(x² − 4) ga aylantirib, √(x² − 4) = 3 tenglamani yechdi. Uning musbat ildizi qaysi?",
+      "v": [
+        "13",
+        "√13",
+        "√5",
+        "3"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'taramiz: x² − 4 = 9, bundan x² = 13 va x = √13 yoki x = −√13. Aniqlanish sohasi x ≥ 2 bo'lgani uchun musbat ildiz qoladi: x = √13 ≈ 3,6. 13 — oxirida kvadrat ildiz olish unutilgan, √5 — 4 ni qo'shish o'rniga ayirilgan (x² = 5), 3 — tenglamaning o'ng tomoni javob deb ko'chirilgan. Javob: √13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-kopaytmali-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#72dde8f3"
+    },
+    {
+      "q": "x² + 3x + √(x² + 3x + 5) = 7 tenglamani yangi o'zgaruvchi kiritib yeching.",
+      "v": [
+        "x = 1 va x = −4",
+        "x = 1",
+        "x = −4",
+        "x = 3"
+      ],
+      "t": 0,
+      "izoh": "t = √(x² + 3x + 5) deb belgilaymiz, u holda x² + 3x = t² − 5 bo'ladi. Tenglama t² − 5 + t = 7, ya'ni t² + t − 12 = 0 ko'rinishga keladi va t = 3 yoki t = −4 chiqadi. Ildiz manfiy bo'lmagani uchun t = 3 qoladi: x² + 3x + 5 = 9, bundan x² + 3x − 4 = 0 va x = 1 yoki x = −4. Ikkalasi ham tekshiruvdan o'tadi. Javob: x = 1 va x = −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-ifoda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#129c242c"
+    },
+    {
+      "q": "x² − 4x + √(x² − 4x + 11) = 9 tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "x = 4 va x = −5",
+        "x = 5",
+        "x = 5 va x = −1",
+        "x = −1"
+      ],
+      "t": 2,
+      "izoh": "t = √(x² − 4x + 11) deb olsak, x² − 4x = t² − 11 bo'ladi va tenglama t² − 11 + t = 9 ko'rinishga keladi. Bundan t² + t − 20 = 0, ya'ni t = 4 yoki t = −5. Manfiy qiymat tashlanadi, t = 4 dan x² − 4x + 11 = 16 va x² − 4x − 5 = 0, demak x = 5 yoki x = −1. x = 4 va x = −5 — t qiymatlari javob deb yozilgan. Javob: x = 5 va x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yangi-ozgaruvchi-ifoda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#662c2f93"
+    },
+    {
+      "q": "x² + √(x² + 5) = 7 tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "x = 2",
+        "x = 2 va x = −2",
+        "x = 4",
+        "x = 3 va x = −3"
+      ],
+      "t": 1,
+      "izoh": "t = √(x² + 5) almashtirishda x² = t² − 5 bo'ladi va tenglama t² + t − 12 = 0 ko'rinishini oladi. Ildizlari t = 3 va t = −4, lekin ildiz manfiy bo'lmaydi, shuning uchun t = 3. Bundan x² + 5 = 9, ya'ni x² = 4 va x = 2 yoki x = −2. x = 4 — x² qiymatida to'xtab qolingan. Javob: x = 2 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-ifoda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#78ca1428"
+    },
+    {
+      "q": "Otabek 3x² + √(3x² + 7) = 13 tenglamani yangi o'zgaruvchi kiritish usuli bilan yechdi. U qanday ildizlar juftini olishi kerak?",
+      "v": [
+        "x = 3 va x = −3",
+        "x = √7 va x = −√7",
+        "x = 3",
+        "x = √3 va x = −√3"
+      ],
+      "t": 3,
+      "izoh": "t = √(3x² + 7) deb belgilaymiz, bunda 3x² = t² − 7. Tenglama t² − 7 + t = 13, ya'ni t² + t − 20 = 0 bo'ladi va t = 4 yoki t = −5 chiqadi. Manfiy ildiz tashlanadi. t = 4 dan 3x² + 7 = 16, demak 3x² = 9 va x² = 3, ya'ni x = √3 yoki x = −√3. x = 3 va x = −3 — oxirida kvadrat ildiz olish unutilgan. Javob: x = √3 va x = −√3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yangi-ozgaruvchi-ifoda",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d3a89ca4"
+    },
+    {
+      "q": "∛(2x + 5) = 3 tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "11",
+        "22",
+        "2",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Kub ildizdan qutulish uchun ikkala tomonni kubga ko'taramiz: 2x + 5 = 27. Bundan 2x = 22 va x = 11. Tekshiruv: ∛(2·11 + 5) = ∛27 = 3. 22 — 2 ga bo'lish unutilgan, 2 — kub o'rniga kvadratga ko'tarilgan (2x + 5 = 9), 16 — 5 ni ayirish o'rniga qo'shilgan. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ildiz-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e452ba21"
+    },
+    {
+      "q": "∛(x − 4) = −2 tenglamaning ildizini toping va javobni belgilang.",
+      "v": [
+        "12",
+        "4",
+        "yechimi yo'q",
+        "−4"
+      ],
+      "t": 3,
+      "izoh": "Kub ildiz manfiy qiymat qabul qila oladi, shuning uchun tenglamaning yechimi bor. Kubga ko'taramiz: x − 4 = (−2)³ = −8, bundan x = −4. Tekshiruv: ∛(−4 − 4) = ∛(−8) = −2. 12 — o'ng tomon ishorasi tashlab yuborilgan, 4 — ildiz osti nolga tenglashtirilgan, yechimi yo'q — kvadrat ildiz qoidasi kub ildizga ham qo'llanilgan. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ildiz-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#1731a3f2"
+    },
+    {
+      "q": "Kub shaklidagi qutining qirrasi ∛(5x + 7) sm ga teng. Qirra uzunligi 3 sm bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "20",
+        "4",
+        "0,4",
+        "6,8"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra ∛(5x + 7) = 3. Ikkala tomonni kubga ko'taramiz: 5x + 7 = 27, bundan 5x = 20 va x = 4. Tekshiruv: ∛(5·4 + 7) = ∛27 = 3 sm. 20 — 5 ga bo'lish tashlab ketilgan, 0,4 — kubga emas kvadratga ko'tarilgan, 6,8 — 7 ni ayirish o'rniga qo'shilgan. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kub-ildiz-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4f48bd7d"
+    },
+    {
+      "q": "∛(x³ − 19) = x − 1 tenglamaning barcha haqiqiy ildizlarini toping.",
+      "v": [
+        "x = 3",
+        "x = −2",
+        "x = 3 va x = −2",
+        "yechimi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Kubga ko'taramiz: x³ − 19 = x³ − 3x² + 3x − 1. x³ qisqaradi va 3x² − 3x − 18 = 0, ya'ni x² − x − 6 = 0 qoladi, bundan x = 3 yoki x = −2. Kub ildizda aniqlanish sohasi cheklanmagani uchun chetki ildiz paydo bo'lmaydi. Tekshiruv: x = 3 da ∛8 = 2 va x = −2 da ∛(−27) = −3 — ikkalasi ham to'g'ri. Javob: x = 3 va x = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kub-ildiz-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#0bec7711"
+    },
+    {
+      "q": "√(x + 10) = x − 2 tenglamaning barcha haqiqiy ildizlari yig'indisini toping.",
+      "v": [
+        "5",
+        "6",
+        "−1",
+        "7"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'taramiz: x + 10 = x² − 4x + 4, bundan x² − 5x − 6 = 0 va x = 6 yoki x = −1. Tekshiramiz: x = 6 da √16 = 4 va 6 − 2 = 4 — to'g'ri; x = −1 da o'ng tomon manfiy, demak chetki ildiz. Faqat bitta ildiz qolgani uchun yig'indi 6 ga teng. 5 — tekshirilmagan ikki ildizning Viyet bo'yicha yig'indisi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#6add466d"
+    },
+    {
+      "q": "x − 4√x + 3 = 0 tenglama ildizlarining ko'paytmasini hisoblang.",
+      "v": [
+        "9",
+        "3",
+        "10",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "t = √x almashtirishdan t² − 4t + 3 = 0 hosil bo'ladi, ildizlari t = 1 va t = 3. Demak x = 1 va x = 9, ularning ko'paytmasi 1·9 = 9. 3 — t larning ko'paytmasi olingan, 10 — x larning yig'indisi hisoblangan, 4 — t larning yig'indisi olingan. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#3e06b110"
+    },
+    {
+      "q": "Nilufar √(3x + 4) = x tenglamani kvadratga ko'tarib ikkita son oldi. Tekshiruvdan o'tgan ildizlarning yig'indisi nechaga teng?",
+      "v": [
+        "3",
+        "−1",
+        "−4",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga ko'tarsak 3x + 4 = x², ya'ni x² − 3x − 4 = 0 va x = 4 yoki x = −1. Chap tomon manfiy bo'lmagani uchun o'ng tomon ham manfiy bo'lolmaydi: x = −1 chetki ildiz. Faqat x = 4 qoladi, demak yig'indi 4. 3 — Viyet teoremasi bo'yicha tekshirilmagan yig'indi, −4 — ikki ildizning ko'paytmasi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#279cd0f7"
+    },
+    {
+      "q": "Dilorom x − 9√x + 20 = 0 tenglamani yechdi va ikkita ildiz topdi. Katta ildiz kichigidan qanchaga farq qiladi?",
+      "v": [
+        "1",
+        "41",
+        "9",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "t = √x almashtirishdan t² − 9t + 20 = 0 chiqadi, ildizlari t = 4 va t = 5. Demak x = 16 va x = 25, ularning farqi 25 − 16 = 9. 1 — t qiymatlarining farqi olingan, 41 — ildizlar yig'indisi hisoblangan, 20 — t larning ko'paytmasi ko'chirilgan. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-yigindisi-kopaytmasi",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#2ef635c1"
+    },
+    {
+      "q": "√(x − 1) = 3 − x tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "ildizi yo'q",
+        "cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga ko'taramiz: x − 1 = 9 − 6x + x², bundan x² − 7x + 10 = 0 va x = 2 yoki x = 5. O'ng tomon manfiy bo'lmasligi kerak: 3 − x ≥ 0, ya'ni x ≤ 3. Shuning uchun x = 5 tushib qoladi. Tekshiruv: x = 2 da √1 = 1 va 3 − 2 = 1. 2 ta — tekshiruv o'tkazilmagan javob. Javob: 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#b305cda7"
+    },
+    {
+      "q": "Muhammad √(x + 3) = −2 tenglamani kvadratga ko'tarib x = 1 deb javob berdi. Bu tenglama haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Yagona ildizi x = 1",
+        "Yagona ildizi x = −3",
+        "Ikkita ildizi bor",
+        "Tenglamaning haqiqiy ildizi yo'q"
+      ],
+      "t": 3,
+      "izoh": "Arifmetik kvadrat ildiz hech qachon manfiy qiymat qabul qilmaydi, o'ng tomon esa −2 ga teng. Demak tenglama umuman yechimga ega emas. Kvadratga ko'targanda x + 3 = 4 va x = 1 chiqadi, lekin tekshiruvda √4 = 2 ≠ −2 bo'ladi, ya'ni bu chetki ildiz. Javob: tenglamaning haqiqiy ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4b20ffe0"
+    },
+    {
+      "q": "√(x² + 4) = x − 2 tenglama nechta haqiqiy ildizga ega ekanini aniqlang.",
+      "v": [
+        "Bitta ildiz",
+        "Ikkita ildiz",
+        "Ildizi yo'q",
+        "Uchta ildiz"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga ko'taramiz: x² + 4 = x² − 4x + 4. x² va 4 qisqaradi, qoladi 4x = 0, ya'ni x = 0. Endi shartni tekshiramiz: o'ng tomon x − 2 manfiy bo'lmasligi kerak, x = 0 da esa u −2 ga teng. Demak bu ildiz chetki va tenglamaning yechimi yo'q. Bitta ildiz — tekshiruv o'tkazilmagan javob. Javob: ildizi yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#1cfb825a"
+    },
+    {
+      "q": "Ozoda √(x − 3) + √(3 − x) = 0 tenglamaga duch keldi va uni yechimsiz deb o'yladi. To'g'ri xulosani tanlang.",
+      "v": [
+        "Ildizi yo'q",
+        "Bitta ildiz, x = 3",
+        "Ikkita ildiz",
+        "Barcha x lar yechim"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasini yozamiz: x − 3 ≥ 0 dan x ≥ 3, 3 − x ≥ 0 dan x ≤ 3. Ikki shart faqat x = 3 da bir vaqtda bajariladi, ya'ni soha bitta nuqtadan iborat. Shu nuqtada tenglama √0 + √0 = 0 ko'rinishga keladi va tenglik bajariladi. Ikki manfiy bo'lmagan sonning yig'indisi nolga teng bo'lsa, ikkalasi ham nolga teng. Javob: bitta ildiz, x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizlar-soni-tahlili",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#7f7e7b77"
+    },
+    {
+      "q": "√(x + 5) = x − 1 tenglama quyidagi sistemalardan qaysi biriga teng kuchli bo'ladi?",
+      "v": [
+        "x + 5 = (x − 1)²",
+        "x + 5 = (x − 1)² va x ≥ −5",
+        "x + 5 = (x − 1)² va x ≥ 1",
+        "x + 5 = x² − 1 va x ≥ 1"
+      ],
+      "t": 2,
+      "izoh": "Chap tomon arifmetik ildiz bo'lgani uchun manfiy emas, demak o'ng tomon ham manfiy bo'lmasligi kerak: x − 1 ≥ 0, ya'ni x ≥ 1. Bu shart bajarilganda kvadratga ko'tarish teng kuchli almashtirish bo'ladi va x + 5 = (x − 1)² yoziladi. Ildiz ostidagi shart alohida yozilmaydi, chunki u tenglikdan o'z-o'zidan kelib chiqadi. x + 5 = x² − 1 — kvadrat noto'g'ri yoyilgan. Javob: x + 5 = (x − 1)² va x ≥ 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-sistema",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#cc48eff9"
+    },
+    {
+      "q": "√(x² − 3x) = √(2x − 6) tenglamaga teng kuchli sistemani to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "x² − 3x = 2x − 6",
+        "x² − 3x = 2x − 6 va x ≥ 3",
+        "x² − 3x = 2x − 6 va x ≤ 2",
+        "x² − 3x = 2x − 6 va x ≥ 0"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomon ham arifmetik ildiz bo'lgani uchun ildiz ostidagi ifodalarni tenglashtiramiz, lekin ildiz ostilari manfiy bo'lmasligi shart. 2x − 6 ≥ 0 dan x ≥ 3 kelib chiqadi; tenglik bajarilganda x² − 3x ≥ 0 sharti o'z-o'zidan bajariladi, shuning uchun bitta shart yetarli. Shartsiz variantda x² − 5x + 6 = 0 dan x = 2 ham chiqadi, u yerda ildiz osti −2 ga teng, ya'ni chetki ildiz. x ≤ 2 sharti aksincha faqat o'sha chetki ildizni qoldiradi, x ≥ 0 esa ikkala ildizni ham o'tkazib yuboradi. Javob: x² − 3x = 2x − 6 va x ≥ 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-sistema",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#8b4b4c07"
+    },
+    {
+      "q": "Muallim √(9 − x²) = x + 1 tenglamani kvadratga ko'tarishdan oldin qaysi sistemaga o'tish kerakligini so'radi. To'g'ri javobni tanlang.",
+      "v": [
+        "9 − x² = (x + 1)² va x ≥ −1",
+        "9 − x² = (x + 1)²",
+        "9 − x² = (x + 1)² va x ≤ 3",
+        "9 − x² = x² + 1 va x ≥ −1"
+      ],
+      "t": 0,
+      "izoh": "Chap tomon arifmetik ildiz bo'lgani uchun manfiy emas, demak o'ng tomonga x + 1 ≥ 0 sharti qo'yiladi, ya'ni x ≥ −1. Shu shart ostida kvadratga ko'tarish teng kuchli almashtirish bo'ladi: 9 − x² = (x + 1)². Kvadratlangan tenglama x² + x − 4 = 0 ikkita ildiz beradi va ulardan manfiysi asl tenglamani qanoatlantirmaydi, shuning uchun shartsiz variant ham, x ≤ 3 sharti ham o'sha chetki ildizni to'sa olmaydi. 9 − x² = x² + 1 — yig'indining kvadrati noto'g'ri yoyilgan. Javob: 9 − x² = (x + 1)² va x ≥ −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekvivalent-sistema",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c2a2dd94"
+    },
+    {
+      "q": "√(x − 4)·√(x + 4) = √(x² − 16) ayniyati qanday shartda o'rinli bo'ladi?",
+      "v": [
+        "x ≤ −4 yoki x ≥ 4",
+        "x ≥ −4",
+        "barcha haqiqiy x uchun",
+        "x ≥ 4"
+      ],
+      "t": 3,
+      "izoh": "Chap tomondagi har bir ildiz alohida aniqlangan bo'lishi kerak: x − 4 ≥ 0 va x + 4 ≥ 0, ya'ni x ≥ 4. O'ng tomon x ≤ −4 da ham aniqlangan, lekin u yerda chap tomon mavjud emas, demak ayniyat u yerda o'rinli emas. Ikki ildizning ko'paytmasini bitta ildiz ostiga faqat ikkala ifoda manfiy bo'lmaganda yig'ish mumkin. Javob: x ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekvivalent-sistema",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d6776391"
+    },
+    {
+      "q": "Yo'l nazoratchisi avtomobilning tormozlanishdan oldingi tezligini v = 12√s km/soat formula bilan baholaydi, bunda s — tormoz izi uzunligi (metr). Tezlik 60 km/soat bo'lsa, tormoz izi qanday uzunlikda?",
+      "v": [
+        "25 m",
+        "5 m",
+        "720 m",
+        "3600 m"
+      ],
+      "t": 0,
+      "izoh": "Formulaga qiymatni qo'yamiz: 12√s = 60. Ikkala tomonni 12 ga bo'lamiz: √s = 5, so'ng kvadratga ko'taramiz: s = 25 m. Tekshiruv: 12·√25 = 12·5 = 60. 5 m — √s qiymatida to'xtab qolingan, 720 m — 12 ni 60 ga ko'paytirilgan, 3600 m — 12 koeffitsienti hisobga olinmay 60 kvadratga ko'tarilgan. Javob: 25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-va-masofa",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#74b0982b"
+    },
+    {
+      "q": "Dengiz qirg'og'idagi mayoqdan ko'rinish masofasi d = 4√h km formula bilan hisoblanadi, bunda h — mayoq balandligi (metr). Ko'rinish masofasi 24 km bo'lsa, mayoq balandligini toping.",
+      "v": [
+        "6 m",
+        "36 m",
+        "20 m",
+        "96 m"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra 4√h = 24. Ikkala tomonni 4 ga bo'lamiz: √h = 6, kvadratga ko'tarsak h = 36 m. Tekshiruv: 4·√36 = 4·6 = 24 km. 6 m — √h qiymatida to'xtab qolingan, 20 m — 24 dan 4 ayirilgan, 96 m — 24 ni 4 ga ko'paytirilgan. Javob: 36 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-tezlik-va-masofa",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#3621730d"
+    },
+    {
+      "q": "Yuk mashinasining tezligi v = √(200s) km/soat formula bilan topiladi, bunda s — tormoz yo'li uzunligi (metr). Tezlik 80 km/soat bo'lsa, tormoz yo'li qancha bo'ladi?",
+      "v": [
+        "6400 m",
+        "16 m",
+        "32 m",
+        "0,4 m"
+      ],
+      "t": 2,
+      "izoh": "Formulaga qiymatni qo'yamiz: √(200s) = 80. Ikkala tomonni kvadratga ko'taramiz: 200s = 6400, bundan s = 32 m. Tekshiruv: √(200·32) = √6400 = 80 km/soat. 6400 m — kvadratga ko'targandan keyin 200 ga bo'lish unutilgan, 16 m — 200 o'rniga 400 ga bo'lingan, 0,4 m — kvadratga ko'tarilmay 80 to'g'ridan 200 ga bo'lingan. Javob: 32 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-va-masofa",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#b446dded"
+    },
+    {
+      "q": "Velosipedchi 90 km yo'lni 6 soatda bosib o'tdi. Uning o'rtacha tezligi √x km/soat ko'rinishida yozilsa, x ning qiymatini toping.",
+      "v": [
+        "15",
+        "540",
+        "30",
+        "225"
+      ],
+      "t": 3,
+      "izoh": "O'rtacha tezlik masofani vaqtga bo'lish orqali topiladi: 90 : 6 = 15 km/soat. Demak √x = 15, ikkala tomonni kvadratga ko'tarsak x = 225. Tekshiruv: √225 = 15 km/soat. 15 — tezlik qiymatida to'xtab qolingan, 540 — masofa vaqtga ko'paytirilgan, 30 — 15 ikkiga ko'paytirilgan. Javob: 225.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-tezlik-va-masofa",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#134f7d7e"
+    },
+    {
+      "q": "Kvadrat shaklidagi bog'ning yuzasi x m². Uning tomoni 3 m ga uzaytirilgach, yangi kvadratning tomoni 11 m bo'ldi. Bog'ning dastlabki yuzasini toping.",
+      "v": [
+        "8 m²",
+        "64 m²",
+        "121 m²",
+        "112 m²"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki tomon √x ga teng, shart: √x + 3 = 11. Ildizni yakkalaymiz: √x = 8, kvadratga ko'tarsak x = 64 m². Tekshiruv: 8 + 3 = 11 m. 8 m² — tomon uzunligi yuza deb olingan, 121 m² — yangi kvadratning yuzasi, 112 m² — yuzalar ayirmasi 121 − 9 deb noto'g'ri hisoblangan. Javob: 64 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e4a4558f"
+    },
+    {
+      "q": "Kvadrat shaklidagi plitkaning tomoni 5 sm, diagonali esa √(2x + 18) sm ga teng. x ning qiymatini toping.",
+      "v": [
+        "32",
+        "3,5",
+        "16",
+        "25"
+      ],
+      "t": 2,
+      "izoh": "Kvadratning diagonali tomonni √2 ga ko'paytirish bilan topiladi: d = 5√2, uning kvadrati 50. Demak 2x + 18 = 50, bundan 2x = 32 va x = 16. Tekshiruv: √(2·16 + 18) = √50 = 5√2. 32 — 2 ga bo'lish unutilgan, 3,5 — diagonal tomonga teng deb olingan, 25 — tomonning kvadrati javob deb yozilgan. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#440578c1"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning bir kateti 6 sm, ikkinchisi x sm, gipotenuzasi esa √(x² + 36) sm. Uchburchakning perimetri 24 sm bo'lsa, x ni toping.",
+      "v": [
+        "10 sm",
+        "12 sm",
+        "6 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Perimetr shartini yozamiz: 6 + x + √(x² + 36) = 24, ya'ni √(x² + 36) = 18 − x. Kvadratga ko'tarsak x² + 36 = 324 − 36x + x², bundan 36x = 288 va x = 8. Tekshiruv: gipotenuza √(64 + 36) = 10, perimetr 6 + 8 + 10 = 24 sm. 10 sm — gipotenuza qiymati, 12 sm — perimetrning yarmi, 6 sm — berilgan katet takrorlangan. Javob: 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#acfc964d"
+    },
+    {
+      "q": "Otabekning to'g'ri to'rtburchak shaklidagi tomorqasining tomonlari 4 m va √(x + 7) m. Tomorqa yuzasi 20 m² bo'lsa, x ning qiymatini toping.",
+      "v": [
+        "18",
+        "25",
+        "13",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Yuza tomonlar ko'paytmasiga teng: 4·√(x + 7) = 20, bundan √(x + 7) = 5. Kvadratga ko'tarsak x + 7 = 25, ya'ni x = 18. Tekshiruv: 4·√25 = 20 m². 25 — 7 ni ayirish unutilgan, 13 — kvadratga ko'tarilmay x + 7 = 20 deb olingan, 5 — noma'lum tomon uzunligi javob deb yozilgan. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-geometrik-olcham",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#29a8feab"
+    },
+    {
+      "q": "Muzeydagi Fuko mayatnigining tebranish davri T = 2√L soniya formula bilan o'lchanadi, bunda L — ip uzunligi (metr). Davr 6 soniya bo'lsa, ip uzunligini toping.",
+      "v": [
+        "3 m",
+        "36 m",
+        "9 m",
+        "12 m"
+      ],
+      "t": 2,
+      "izoh": "Formulaga qiymatni qo'yamiz: 2√L = 6. Ikkala tomonni 2 ga bo'lamiz: √L = 3, kvadratga ko'tarsak L = 9 m. Tekshiruv: 2·√9 = 2·3 = 6 soniya. 3 m — √L qiymatida to'xtab qolingan, 36 m — 2 koeffitsienti hisobga olinmay 6 kvadratga ko'tarilgan, 12 m — 6 ni 2 ga ko'paytirilgan. Javob: 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-fizika-formula",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e52a277a"
+    },
+    {
+      "q": "Balandlikdan tashlangan jism yerga t = √(h/5) soniyada yetib boradi, bunda h — balandlik (metr). Tushish vaqti 4 soniya bo'lsa, jism qanday balandlikdan tashlangan?",
+      "v": [
+        "16 m",
+        "20 m",
+        "3,2 m",
+        "80 m"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra √(h/5) = 4. Kvadratga ko'taramiz: h/5 = 16, bundan h = 80 m. Tekshiruv: √(80 : 5) = √16 = 4 soniya. 16 m — kasrni 5 ga ko'paytirish unutilgan, 20 m — 4 ni 5 ga ko'paytirilgan, 3,2 m — 16 ni 5 ga ko'paytirish o'rniga bo'lingan. Javob: 80 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-fizika-formula",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#b8bf758c"
+    },
+    {
+      "q": "Elektr zanjirida qarshilik 5 om bo'lganda tok kuchi I = √(P/5) amper formula bilan topiladi. Tok kuchi 6 A bo'lsa, zanjirdagi quvvat qanday?",
+      "v": [
+        "180 vatt",
+        "36 vatt",
+        "30 vatt",
+        "7,2 vatt"
+      ],
+      "t": 0,
+      "izoh": "Shartga ko'ra √(P/5) = 6. Kvadratga ko'taramiz: P/5 = 36, bundan P = 180 vatt. Tekshiruv: √(180 : 5) = √36 = 6 A. 36 vatt — 5 ga ko'paytirish unutilgan, 30 vatt — tok kuchi kvadratga ko'tarilmay 5 ga ko'paytirilgan, 7,2 vatt — 36 ni 5 ga ko'paytirish o'rniga bo'lingan. Javob: 180 vatt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fizika-formula",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#2a9a7ba5"
+    },
+    {
+      "q": "Suv omborining tubidagi teshikdan suv v = √(20h) m/s tezlik bilan otilib chiqadi, bunda h — teshik ustidagi suv ustuni balandligi (metr). Tezlik 30 m/s bo'lsa, h ni toping.",
+      "v": [
+        "900 m",
+        "45 m",
+        "15 m",
+        "90 m"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra √(20h) = 30. Kvadratga ko'taramiz: 20h = 900, bundan h = 45 m. Tekshiruv: √(20·45) = √900 = 30 m/s. 900 m — 20 ga bo'lish unutilgan, 15 m — tezlik ikkiga bo'lingan, 90 m — 900 ni 20 ga emas 10 ga bo'lingan. Javob: 45 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-fizika-formula",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#2b6d1a45"
+    },
+    {
+      "q": "Do'kon egasi mahsulot narxi p ming so'm bo'lganda kunlik sotuv soni n = 60 − 4√p ta bo'lishini aniqladi. Kunlik sotuv 36 ta bo'lsa, mahsulot narxi qancha?",
+      "v": [
+        "6 ming so'm",
+        "24 ming so'm",
+        "144 ming so'm",
+        "36 ming so'm"
+      ],
+      "t": 3,
+      "izoh": "Shartni yozamiz: 60 − 4√p = 36. Ildizni yakkalaymiz: 4√p = 24, ya'ni √p = 6 va p = 36 ming so'm. Tekshiruv: 60 − 4·6 = 36 ta. 6 ming so'm — √p qiymatida to'xtalgan, 24 ming so'm — 4√p qiymati javob deb olingan, 144 ming so'm — 4√p = 24 dan 16p = 576 hosil qilingan, lekin 16 ga emas 4 ga bo'lingan. Javob: 36 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-iqtisod",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e7b73912"
+    },
+    {
+      "q": "Kichik korxonaning oylik foydasi F = 5√x million so'm formula bilan baholanadi, bunda x — tayyorlangan buyumlar soni. Foyda 45 million so'm bo'lsa, nechta buyum tayyorlangan?",
+      "v": [
+        "81 ta",
+        "9 ta",
+        "2025 ta",
+        "40 ta"
+      ],
+      "t": 0,
+      "izoh": "Shartga ko'ra 5√x = 45. Ikkala tomonni 5 ga bo'lamiz: √x = 9, kvadratga ko'tarsak x = 81 ta. Tekshiruv: 5·√81 = 5·9 = 45 million so'm. 9 ta — √x qiymatida to'xtalgan, 2025 ta — 5 koeffitsienti hisobga olinmay 45 kvadratga ko'tarilgan, 40 ta — 45 dan 5 ayirilgan. Javob: 81 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-iqtisod",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d54f7cec"
+    },
+    {
+      "q": "Firma reklamaga x million so'm sarflaganda mijozlar soni 200 + 25√x ta bo'ladi. Mijozlar soni 450 taga yetishi uchun reklamaga qancha mablag' sarflash kerak?",
+      "v": [
+        "10 million so'm",
+        "100 million so'm",
+        "250 million so'm",
+        "18 million so'm"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani yozamiz: 200 + 25√x = 450. Ildizni yakkalaymiz: 25√x = 250, ya'ni √x = 10 va x = 100 million so'm. Tekshiruv: 200 + 25·10 = 450 ta. 10 million so'm — √x qiymatida to'xtalgan, 250 million so'm — 25√x qiymati javob deb olingan, 18 million so'm — 450 ni 25 ga bo'lib 200 ni ayirish tartibi buzilgan. Javob: 100 million so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-narx-va-iqtisod",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4b49204e"
+    },
+    {
+      "q": "Ustaxonada buyum tannarxi t ming so'm bo'lganda uni tayyorlash vaqti √(3t + 4) soatga teng. Tayyorlash 7 soat davom etsa, tannarx qanchaga teng?",
+      "v": [
+        "45 ming so'm",
+        "1 ming so'm",
+        "15 ming so'm",
+        "49 ming so'm"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra √(3t + 4) = 7. Kvadratga ko'taramiz: 3t + 4 = 49, bundan 3t = 45 va t = 15 ming so'm. Tekshiruv: √(3·15 + 4) = √49 = 7 soat. 45 ming so'm — 3 ga bo'lish unutilgan, 1 ming so'm — kvadratga ko'tarilmay 3t + 4 = 7 deb olingan, 49 ming so'm — kvadratga ko'targandan keyin to'xtab qolingan. Javob: 15 ming so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-narx-va-iqtisod",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#e2e0ff31"
+    },
+    {
+      "q": "Test natijalari tahlilida standart chetlanish dispersiyaning kvadrat ildiziga teng. Dispersiya 5x − 6 ga, standart chetlanish esa 7 ga teng bo'lsa, x ni toping.",
+      "v": [
+        "11",
+        "55",
+        "49",
+        "8,6"
+      ],
+      "t": 0,
+      "izoh": "Shartni tenglama qilib yozamiz: √(5x − 6) = 7. Kvadratga ko'taramiz: 5x − 6 = 49, bundan 5x = 55 va x = 11. Tekshiruv: √(5·11 − 6) = √49 = 7. 55 — 5 ga bo'lish unutilgan, 49 — dispersiya qiymati javob deb olingan, 8,6 — 6 ni qo'shish o'rniga ayirilgan. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov-va-statistika",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#17f8f41b"
+    },
+    {
+      "q": "Sport maktabida guruh ko'rsatkichi k = √(2n + 7) formula bilan hisoblanadi, bunda n — guruhdagi bolalar soni. Ko'rsatkich 9 ga teng bo'lsa, guruhda nechta bola bor?",
+      "v": [
+        "74 ta",
+        "44 ta",
+        "37 ta",
+        "81 ta"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra √(2n + 7) = 9. Kvadratga ko'taramiz: 2n + 7 = 81, bundan 2n = 74 va n = 37 ta. Tekshiruv: √(2·37 + 7) = √81 = 9. 74 ta — 2 ga bo'lish unutilgan, 44 ta — 7 ni ayirish o'rniga qo'shilgan, 81 ta — kvadratga ko'targandan keyin to'xtab qolingan. Javob: 37 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hayotiy-olchov-va-statistika",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#1ca82c81"
+    },
+    {
+      "q": "Suv omborining o'rtacha chuqurligi √(4h + 9) metr ko'rsatkich bilan baholanadi, bunda h — yillik yog'ingarchilik indeksi. Chuqurlik 11 m bo'lsa, indeksni toping.",
+      "v": [
+        "112",
+        "28",
+        "32,5",
+        "121"
+      ],
+      "t": 1,
+      "izoh": "Shartga ko'ra √(4h + 9) = 11. Kvadratga ko'taramiz: 4h + 9 = 121, bundan 4h = 112 va h = 28. Tekshiruv: √(4·28 + 9) = √121 = 11. 112 — 4 ga bo'lish unutilgan, 32,5 — 9 ni ayirish o'rniga qo'shilgan, 121 — kvadratga ko'targandan keyin to'xtab qolingan. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olchov-va-statistika",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#a539380e"
+    },
+    {
+      "q": "Ombordagi bug'doyning saqlash muddati √(400 − 16n) oy bilan baholanadi, bunda n — donning namlik foizi. Muddat 12 oy bo'lsa, namlik foizini toping.",
+      "v": [
+        "256 foiz",
+        "34 foiz",
+        "144 foiz",
+        "16 foiz"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra √(400 − 16n) = 12. Kvadratga ko'taramiz: 400 − 16n = 144, bundan 16n = 256 va n = 16 foiz. Tekshiruv: √(400 − 16·16) = √144 = 12 oy. 256 foiz — 16 ga bo'lish unutilgan, 34 foiz — 400 va 144 qo'shilib bo'lingan, 144 foiz — kvadratga ko'targandan keyin to'xtab qolingan. Javob: 16 foiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olchov-va-statistika",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#9e5492d3"
+    },
+    {
+      "q": "√(5 + √x) = 3 tenglamani yeching, bunda ildiz ichida yana ildiz turgani e'tiborga olinsin.",
+      "v": [
+        "16",
+        "4",
+        "9",
+        "81"
+      ],
+      "t": 0,
+      "izoh": "Tashqi ildizdan boshlaymiz: ikkala tomonni kvadratga ko'taramiz va 5 + √x = 9 hosil bo'ladi. Bundan √x = 4, yana kvadratga ko'tarsak x = 16. Tekshiruv: √(5 + √16) = √(5 + 4) = √9 = 3. 4 — √x qiymatida to'xtab qolingan, 9 — birinchi kvadratga ko'tarishdan keyin to'xtalgan, 81 — 9 qiymati ikkinchi marta kvadratga ko'tarilgan. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#42f85897"
+    },
+    {
+      "q": "∛(√x + 1) = 2 tenglamada tashqi ildiz kub, ichkisi kvadrat ildizdir. Tenglamaning yechimini toping.",
+      "v": [
+        "7",
+        "49",
+        "64",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Tashqi kub ildizdan qutulish uchun ikkala tomonni kubga ko'taramiz: √x + 1 = 8. Bundan √x = 7 va kvadratga ko'tarsak x = 49. Tekshiruv: ∛(√49 + 1) = ∛8 = 2. 7 — √x qiymatida to'xtalgan, 64 — 8 qiymati kubga ko'tarilgan, 9 — kubga emas, kvadratga ko'tarilib √x = 3 olingan. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#f0e46cbd"
+    },
+    {
+      "q": "Zebo √(2 + √(x − 1)) = 3 tenglamani ikki bosqichda kvadratga ko'tarib yechdi. Uning to'g'ri javobi qaysi son?",
+      "v": [
+        "49",
+        "7",
+        "50",
+        "82"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kvadratga ko'tarishda 2 + √(x − 1) = 9 hosil bo'ladi, bundan √(x − 1) = 7. Ikkinchi kvadratga ko'tarishda x − 1 = 49, ya'ni x = 50. Tekshiruv: √(2 + √49) = √9 = 3. 49 — 1 ni qo'shish unutilgan, 7 — ichki ildiz qiymatida to'xtalgan, 82 — 2 ni ayirmasdan √(x − 1) = 9 deb olingan. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#f3dca8b7"
+    },
+    {
+      "q": "√(x·√x) = 27 tenglamani yeching, bunda x musbat son deb qaraladi.",
+      "v": [
+        "9",
+        "729",
+        "3",
+        "81"
+      ],
+      "t": 3,
+      "izoh": "Kvadratga ko'taramiz: x·√x = 729. Endi ikkala tomonni yana kvadratga ko'tarsak x²·x = 729², ya'ni x³ = 531441 va x = 81. Tekshirish osonroq: x = 81 da x·√x = 81·9 = 729, uning ildizi 27. 9 — √x qiymati, 729 — birinchi kvadratga ko'tarishdan keyin to'xtalgan, 3 — 27 dan kub ildiz olingan. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-ichida-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#18b74fc9"
+    },
+    {
+      "q": "√(x²) ifoda |x| ga teng ekanini hisobga olib, √(x²) = 5 tenglamaning barcha ildizlarini toping.",
+      "v": [
+        "x = 5",
+        "x = 5 va x = −5",
+        "x = 25",
+        "x = −5"
+      ],
+      "t": 1,
+      "izoh": "√(x²) = |x| bo'lgani uchun tenglama |x| = 5 ko'rinishga keladi. Modul tenglamasi ikkita yechim beradi: x = 5 va x = −5. Ikkalasini ham tekshiramiz: (−5)² = 25 va √25 = 5, demak manfiy ildiz ham to'g'ri. x = 25 — kvadratga ko'targandan keyin to'xtab qolingan, qolgan ikki variantda bittasi tushib qolgan. Javob: x = 5 va x = −5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-va-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#04766cde"
+    },
+    {
+      "q": "√(x² − 6x + 9) = 4 tenglamada ildiz ostidagi ifoda to'la kvadratga yig'iladi. Tenglamaning ildizlarini toping.",
+      "v": [
+        "x = 7",
+        "x = 4 va x = −4",
+        "x = 7 va x = −1",
+        "x = 1 va x = 5"
+      ],
+      "t": 2,
+      "izoh": "Ildiz ostidagi ifoda (x − 3)² ko'rinishida yig'iladi, demak tenglama |x − 3| = 4 bo'ladi. Bundan x − 3 = 4 yoki x − 3 = −4, ya'ni x = 7 yoki x = −1. Tekshiruv: x = −1 da 1 + 6 + 9 = 16 va √16 = 4. x = 4 va x = −4 — to'la kvadrat e'tibordan qolib x² = 16 deb olingan, x = 1 va x = 5 — o'ng tomonda 4 o'rniga √4 = 2 ishlatilgan. Javob: x = 7 va x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#4235c742"
+    },
+    {
+      "q": "√((x − 5)²) = 2x − 1 tenglamani yeching va o'ng tomonning ishorasini albatta tekshiring.",
+      "v": [
+        "x = −4",
+        "x = 2 va x = −4",
+        "yechimi yo'q",
+        "x = 2"
+      ],
+      "t": 3,
+      "izoh": "Chap tomon |x − 5| ga teng, demak |x − 5| = 2x − 1. O'ng tomon manfiy bo'lmasligi kerak: 2x − 1 ≥ 0. Agar x ≥ 5 bo'lsa, x − 5 = 2x − 1 dan x = −4 chiqadi va bu shartga zid. Agar x < 5 bo'lsa, 5 − x = 2x − 1 dan 3x = 6 va x = 2, bu esa shartni qanoatlantiradi. Tekshiruv: |2 − 5| = 3 va 2·2 − 1 = 3. Javob: x = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-va-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#38389bfb"
+    },
+    {
+      "q": "Kamron √(x² + 10x + 25) = 6 tenglamada ildiz ostidagi ifoda to'la kvadrat ekanini payqadi. Tenglamaning ildizlari qanday?",
+      "v": [
+        "x = 1 va x = −11",
+        "x = 1",
+        "x = 6 va x = −6",
+        "x = −11"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifoda (x + 5)² ga teng, shuning uchun tenglama |x + 5| = 6 ko'rinishga keladi. Bundan x + 5 = 6 yoki x + 5 = −6, ya'ni x = 1 yoki x = −11. Tekshiruv: x = −11 da 121 − 110 + 25 = 36 va √36 = 6. x = 6 va x = −6 — to'la kvadrat e'tibordan qolib x² = 36 deb olingan, qolgan ikkitasida ildizning biri tushirib qoldirilgan. Javob: x = 1 va x = −11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-va-ildiz",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#cc7b59a0"
+    },
+    {
+      "q": "Amir 15/√x = 3 tenglamani yechishga kirishdi va avval maxrajdan qutulishni rejalashtirdi. U qanday ildiz olishi kerak?",
+      "v": [
+        "5",
+        "225",
+        "25",
+        "45"
+      ],
+      "t": 2,
+      "izoh": "Maxrajni yo'qotamiz: 15 = 3√x, bundan √x = 5. Endi kvadratga ko'taramiz: x = 25. Aniqlanish sohasi x > 0 sharti bajariladi. Tekshiruv: 15 : √25 = 15 : 5 = 3. 5 — √x qiymatida to'xtab qolingan, 225 — 15 kvadratga ko'tarilib 3 ga bo'lish unutilgan, 45 — 15 ni 3 ga ko'paytirilgan. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kasr-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#02d5f5e7"
+    },
+    {
+      "q": "18/(√x − 1) = 3 tenglamani yeching va maxraj nolga aylanmasligini tekshiring.",
+      "v": [
+        "7",
+        "36",
+        "6",
+        "49"
+      ],
+      "t": 3,
+      "izoh": "Kasrni yo'qotamiz: 18 = 3(√x − 1), bundan √x − 1 = 6 va √x = 7. Kvadratga ko'tarsak x = 49, bunda maxraj 7 − 1 = 6 ≠ 0. Tekshiruv: 18 : (√49 − 1) = 18 : 6 = 3. 7 — √x qiymatida to'xtalgan, 36 — maxrajdagi −1 e'tibordan qolib √x = 6 deb olingan, 6 — maxrajning qiymati javob deb olingan. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildizli-kasr-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#c34cd39e"
+    },
+    {
+      "q": "(x − 9)/√(x − 5) = 0 tenglamaning ildizini toping va aniqlanish sohasini tekshiring.",
+      "v": [
+        "9",
+        "5",
+        "14",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Kasr faqat surat nolga teng bo'lganda nolga aylanadi, shuning uchun x − 9 = 0 va x = 9. Maxraj esa noldan farqli va aniqlangan bo'lishi kerak: x − 5 > 0, ya'ni x > 5. x = 9 bu shartni qanoatlantiradi. 5 — maxrajni nolga tenglashtirish natijasi, u aksincha taqiqlangan qiymat. 14 — 9 va 5 qo'shilgan, 3 — √(x − 5) qiymati bilan chalkashtirilgan. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildizli-kasr-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#09acd9f8"
+    },
+    {
+      "q": "Muhandis hisob-kitobida 24/√(x + 3) = 4 nisbatga duch keldi. Bu tenglikdan x ning qiymatini toping.",
+      "v": [
+        "6",
+        "33",
+        "36",
+        "0"
+      ],
+      "t": 1,
+      "izoh": "Kasrdan qutulamiz: 24 = 4√(x + 3), bundan √(x + 3) = 6. Kvadratga ko'tarsak x + 3 = 36, ya'ni x = 33. Tekshiruv: 24 : √36 = 24 : 6 = 4. 6 — ildizning qiymatida to'xtab qolingan, 36 — 3 ni ayirish unutilgan, 0 — x + 3 = 3 deb noto'g'ri yozilgan. Javob: 33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildizli-kasr-tenglama",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#398da155"
+    },
+    {
+      "q": "√(x + a) = 4 tenglamaning yagona ildizi x = 7 ekani ma'lum. a ning qiymatini toping.",
+      "v": [
+        "3",
+        "23",
+        "16",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Ildizni tenglamaga qo'yamiz: √(7 + a) = 4. Kvadratga ko'taramiz: 7 + a = 16, bundan a = 9. Tekshiruv: √(7 + 9) = √16 = 4. 3 — kvadratga ko'tarilmay 7 + a = 4 deb olingan, 23 — 16 va 7 qo'shilgan, 16 — kvadratga ko'targandan keyin to'xtab qolingan. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilgan-ildizdan-koeffitsient",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#cf26fc46"
+    },
+    {
+      "q": "√(2x − b) = 5 tenglamaning ildizi x = 8 bo'lsa, b parametr qanday qiymatga ega?",
+      "v": [
+        "−9",
+        "9",
+        "41",
+        "−41"
+      ],
+      "t": 0,
+      "izoh": "Ildizni qo'yamiz: √(16 − b) = 5. Kvadratga ko'taramiz: 16 − b = 25, bundan −b = 9 va b = −9. Tekshiruv: √(16 + 9) = √25 = 5. 9 — b oldidagi minus ishorasi hisobga olinmagan, 41 — 16 va 25 qo'shilgan, −41 — qo'shishdan keyin ishora ham almashtirilgan. Javob: −9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-ildizdan-koeffitsient",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#cd1136b0"
+    },
+    {
+      "q": "Muallim doskaga √(kx + 1) = 3 tenglamani yozdi va uning ildizi x = 4 ekanini aytdi. k ning qiymati qancha?",
+      "v": [
+        "8",
+        "2",
+        "2,5",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Ildizni qo'yamiz: √(4k + 1) = 3. Kvadratga ko'taramiz: 4k + 1 = 9, bundan 4k = 8 va k = 2. Tekshiruv: √(2·4 + 1) = √9 = 3. 8 — 4 ga bo'lish unutilgan, 2,5 — 1 ni ayirish o'rniga qo'shilgan, 0,5 — 4k = 8 da bo'lish teskari bajarilgan: 8 : 4 o'rniga 4 : 8 hisoblangan. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-ildizdan-koeffitsient",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#12c1191b"
+    },
+    {
+      "q": "Sardor √(x − 1) + c = 7 ko'rinishidagi tenglamani tuzdi va uning ildizi x = 37 bo'lishini xohladi. c qanday bo'lishi kerak?",
+      "v": [
+        "6",
+        "7",
+        "1",
+        "−1"
+      ],
+      "t": 2,
+      "izoh": "Ildizni qo'yamiz: √(37 − 1) + c = 7, ya'ni √36 + c = 7. Bundan 6 + c = 7 va c = 1. Tekshiruv: √36 + 1 = 6 + 1 = 7. 6 — ildizning qiymatida to'xtab qolingan, 7 — tenglamaning o'ng tomoni ko'chirilgan, −1 — 6 ni o'ng tomonga o'tkazishda ishora chalkashtirilgan. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "berilgan-ildizdan-koeffitsient",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d1a41e84"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri √(2x + 7) = x − 4 tenglamaning ildizi bo'ladi: 3, 6, 9, 12?",
+      "v": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Kvadratga ko'tarsak 2x + 7 = x² − 8x + 16, ya'ni x² − 10x + 9 = 0 va x = 1 yoki x = 9. O'ng tomon manfiy bo'lmasligi kerak: x ≥ 4, shuning uchun x = 1 tushib qoladi. Berilgan sonlar orasida faqat 9 mos keladi. Tekshiruv: √(2·9 + 7) = √25 = 5 va 9 − 4 = 5. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirib-tanlash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#8b17d3fa"
+    },
+    {
+      "q": "Berilgan 1, 4, 16 va 25 sonlaridan qaysi biri x − 3√x − 4 = 0 tenglamani qanoatlantiradi?",
+      "v": [
+        "1",
+        "4",
+        "25",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "t = √x almashtirishdan t² − 3t − 4 = 0 hosil bo'ladi, uning ildizlari t = 4 va t = −1. Kvadrat ildiz manfiy bo'lmagani uchun t = 4 qoladi va x = 16 bo'ladi. Tekshiruv: 16 − 3·√16 − 4 = 16 − 12 − 4 = 0. Boshqa sonlar tenglamani qanoatlantirmaydi, masalan x = 4 da 4 − 6 − 4 = −6. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirib-tanlash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#7c9cdc34"
+    },
+    {
+      "q": "Vali √(5x − 4) = x tenglamaning ildizlarini izlamoqda. Berilgan 1, 2, 4 va 5 sonlaridan qaysilari bu tenglamani qanoatlantiradi?",
+      "v": [
+        "Faqat 1",
+        "1 va 4",
+        "Faqat 4",
+        "2 va 5"
+      ],
+      "t": 1,
+      "izoh": "Kvadratga ko'tarsak 5x − 4 = x², ya'ni x² − 5x + 4 = 0 va x = 1 yoki x = 4. O'ng tomon manfiy emas, chunki ikkala ildiz ham musbat. Tekshiramiz: x = 1 da √1 = 1, x = 4 da √16 = 4 — ikkalasi ham to'g'ri. x = 2 da √6 ≈ 2,45, x = 5 da √21 ≈ 4,58 — mos kelmaydi. Javob: 1 va 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yechimni-tekshirib-tanlash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#d3bc4539"
+    },
+    {
+      "q": "Quyidagi tenglamalardan qaysi birining ildizi x = 9 ga teng: √(x − 5) = 2, √(x + 7) = 5, √(2x − 3) = 4, √(3x + 1) = 6?",
+      "v": [
+        "√(x − 5) = 2",
+        "√(x + 7) = 5",
+        "√(2x − 3) = 4",
+        "√(3x + 1) = 6"
+      ],
+      "t": 0,
+      "izoh": "Har bir tenglamaga x = 9 ni qo'yib tekshiramiz. Birinchisida √(9 − 5) = √4 = 2 — tenglik bajariladi. Ikkinchisida √16 = 4, lekin o'ng tomon 5. Uchinchisida √15 ≈ 3,87, o'ng tomon esa 4. To'rtinchisida √28 ≈ 5,29, o'ng tomon 6. Demak faqat birinchi tenglama mos keladi. Javob: √(x − 5) = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechimni-tekshirib-tanlash",
+      "id": "matematika_teng_m08-irratsional-tenglamalar#9a84a8b0"
+    }
+  ]
+}

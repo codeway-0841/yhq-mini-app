@@ -1,0 +1,396 @@
+{
+  "nom": "13-mavzu. Molekula Olchamini Baholash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "13-§ dagi amaliy mashg'ulotning maqsadi nima?",
+      "v": [
+        "Eng katta yuzaga yoyilganda moy qatlamining qalinligi bitta molekula diametriga yaqin degan gipotezani mexanik model asosida tekshirish",
+        "Gaz bosimini o'lchash",
+        "Maksvell taqsimotini chizish",
+        "Ideal gaz holat tenglamasini isbotlash"
+      ],
+      "t": 0,
+      "izoh": "Maqsad: moy qatlami qalinligi bitta molekula diametriga yaqin degan tasavvurni (gipotezani) mexanik model asosida tekshirish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#eecba2f1"
+    },
+    {
+      "q": "Molekulalarning o'lchamini baholash mashg'ulotida qaysi jihozlar kerak?",
+      "v": [
+        "Chizg'ich, oq qog'oz, no'xat donalari, menzurka",
+        "Aneroid barometr va termometr",
+        "Silindrlar va platina sim",
+        "Porshen va manometr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: chizg'ich, oq qog'oz, no'xat donalari, menzurka.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#e6f08a15"
+    },
+    {
+      "q": "Mashg'ulotning birinchi bosqichida nima qilinadi?",
+      "v": [
+        "Oq qog'ozga to'g'ri to'rtburchak chizilib, o'lchamlari chizg'ich yordamida o'lchanadi",
+        "No'xat donalari menzurkaga solinadi",
+        "No'xatlar qatorga teriladi",
+        "Moy qatlami yoyiladi"
+      ],
+      "t": 0,
+      "izoh": "1-bosqich: oq qog'ozga to'g'ri to'rtburchak chizish, uning o'lchamlarini (bo'yi va eni) chizg'ich yordamida o'lchash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#818c91f2"
+    },
+    {
+      "q": "Chizilgan to'rtburchak yuzasi qanday belgilanadi va qanday aniqlanadi?",
+      "v": [
+        "S — bo'yi va eni ko'paytmasi orqali",
+        "V — menzurka orqali",
+        "d — d = V/S orqali",
+        "ρ — massa orqali"
+      ],
+      "t": 0,
+      "izoh": "To'rtburchak yuzasi S belgilanib, bo'yi va eni o'lchanib aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#40e6319e"
+    },
+    {
+      "q": "Mashg'ulotning ikkinchi bosqichida chizilgan to'rtburchak ustiga nima qilinadi?",
+      "v": [
+        "Bir tekis qilib (zich holatda) no'xat donalari bilan to'ldiriladi",
+        "Suv quyiladi",
+        "Moy tomiziladi",
+        "Qog'oz yopishtiriladi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri to'rtburchak ustini bir tekis qilib (zich holatda) no'xat donalari bilan to'ldirish kerak; donalar chiziqdan tashqariga chiqib ketmasligi lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#1980103a"
+    },
+    {
+      "q": "No'xat donalari bilan to'ldirishda qanday shartga rioya qilish kerak?",
+      "v": [
+        "No'xat donalari chizilgan to'rtburchakdan tashqariga chiqib ketmasligi kerak",
+        "Donalar ikki qatlam qilib solinishi kerak",
+        "Donalar orasida katta bo'shliq qolishi kerak",
+        "Donalar suvga botirilishi kerak"
+      ],
+      "t": 0,
+      "izoh": "No'xat donalari chizilgan to'rtburchakdan tashqariga chiqib ketmasligi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#4dd57884"
+    },
+    {
+      "q": "To'rtburchak ichidagi no'xat donalarining hajmi qanday o'lchanadi?",
+      "v": [
+        "Donalar menzurkaga solinib, hajmi V o'lchanadi",
+        "Chizg'ich bilan tortiladi",
+        "Tarozida tortiladi",
+        "Termometr bilan o'lchanadi"
+      ],
+      "t": 0,
+      "izoh": "Donalar menzurkaga solinib, menzurkaga solingan no'xatlarning hajmi V o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#00f318ce"
+    },
+    {
+      "q": "No'xatning chiziqli o'lchamini topish uchun qaysi ifodadan foydalaniladi?",
+      "v": [
+        "d = V/S",
+        "d = S/V",
+        "d = V·S",
+        "d = V + S"
+      ],
+      "t": 0,
+      "izoh": "d = V/S ifodaga ko'ra no'xatning chiziqli o'lchami topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#29943268"
+    },
+    {
+      "q": "d = V/S ifodada d nimani bildiradi?",
+      "v": [
+        "No'xat donasining chiziqli o'lchamini (diametrini)",
+        "To'rtburchakning yuzasini",
+        "Donalarning umumiy hajmini",
+        "Qatlamning yuzasini"
+      ],
+      "t": 0,
+      "izoh": "d — bitta no'xat donasining chiziqli o'lchami (qatlam qalinligi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#ae2d63ab"
+    },
+    {
+      "q": "Bitta no'xatning chiziqli o'lchamini tekshirish uchun mashg'ulotda qanday usul qo'llaniladi?",
+      "v": [
+        "10 dona no'xat donasini zich qilib bir to'g'ri chiziq ustiga qo'yib, uzunlikni o'lchab 10 ga bo'lish",
+        "Donani menzurka bilan tortish",
+        "Donaning massasini o'lchash",
+        "Donani mikroskop ostida ko'rish"
+      ],
+      "t": 0,
+      "izoh": "10 dona no'xat donasi zich qilib bir to'g'ri chiziq ustiga qo'yilib, uzunlik o'lchanadi va 10 ga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#872bdc77"
+    },
+    {
+      "q": "10 dona no'xat qatorining uzunligini 10 ga bo'lish nimani beradi?",
+      "v": [
+        "Bitta no'xatning chiziqli o'lchamini",
+        "Donalarning umumiy hajmini",
+        "To'rtburchakning yuzasini",
+        "Qatlamning zichligini"
+      ],
+      "t": 0,
+      "izoh": "O'lchangan uzunlikni 10 ga bo'lsak, bitta no'xatning chiziqli o'lchami kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#0798edbd"
+    },
+    {
+      "q": "Mashg'ulotning oxirgi bosqichida nima qilinadi?",
+      "v": [
+        "Olingan natijalar asosida o'z xulosasi yoziladi",
+        "Jihozlar yuviladi",
+        "Qog'oz kuydiriladi",
+        "Hisobot o'qituvchiga og'zaki aytiladi"
+      ],
+      "t": 0,
+      "izoh": "6-bosqich: olingan natijalar asosida o'z xulosangizni yozing.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#a175cc31"
+    },
+    {
+      "q": "Moy qatlami usulida moy qatlamining qalinligi nimaga yaqin deb qilingan?",
+      "v": [
+        "Bitta molekula diametriga",
+        "Mingta molekula diametriga",
+        "Molekula massasiga",
+        "Molekula tezligiga"
+      ],
+      "t": 0,
+      "izoh": "Gipotezaga ko'ra, eng katta yuzaga yoyilganda moy qatlamining qalinligi bitta molekula diametriga yaqin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#f11d7b5b"
+    },
+    {
+      "q": "Menzurka nima uchun ishlatiladi?",
+      "v": [
+        "No'xat donalarining hajmini o'lchash uchun",
+        "Temperaturani o'lchash uchun",
+        "Bosimni o'lchash uchun",
+        "Massani o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Menzurka no'xat donalarining hajmi V ni o'lchash uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#02973379"
+    },
+    {
+      "q": "Qo'shimcha amaliy mashg'ulotning mavzusi nima?",
+      "v": [
+        "Sinf xonasidagi havoning zichligini, xonadagi gaz molekularining konsentratsiyasi va sonini hisoblash",
+        "No'xat donasining diametrini o'lchash",
+        "Maksvell taqsimotini tekshirish",
+        "Shtern tajribasini takrorlash"
+      ],
+      "t": 0,
+      "izoh": "Qo'shimcha mashg'ulot: sinf xonasidagi havoning zichligini, xonadagi gaz molekulalarining konsentratsiyasi va sonini hisoblash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#9f7b6c28"
+    },
+    {
+      "q": "Qo'shimcha mashg'ulotda qanday jihozlar kerak?",
+      "v": [
+        "Aneroid barometr va o'lchov chizg'ichi (1 m)",
+        "Chizg'ich va no'xat donalari",
+        "Menzurka va oq qog'oz",
+        "Termostat va porshen"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: aneroid barometr va o'lchov chizg'ichi (1 m).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#fbd84ce0"
+    },
+    {
+      "q": "Qo'shimcha mashg'ulotda xona ichidagi havoning temperaturasi qanday aniqlanadi?",
+      "v": [
+        "Barometr ichidagi termometrning ko'rsatishiga qaralib",
+        "Aneroid barometrning strelkasiga qaralib",
+        "Chizg'ich yordamida",
+        "Hisoblash yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Barometr ichidagi termometrning ko'rsatishiga qarab xona ichidagi havoning temperaturasi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#1fbc4d8a"
+    },
+    {
+      "q": "Xona ichidagi havoning bosimi qaysi asbob yordamida o'lchanadi?",
+      "v": [
+        "Aneroid barometr yordamida",
+        "Menzurka yordamida",
+        "Chizg'ich yordamida",
+        "Termometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Aneroid barometr yordamida xona ichidagi havoning bosimi o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#9f4d216a"
+    },
+    {
+      "q": "Qo'shimcha mashg'ulotda xona o'lchamlari qanday o'lchanadi?",
+      "v": [
+        "O'lchov chizg'ichi yordamida bo'yi, eni va balandligi o'lchanadi",
+        "Aneroid barometr yordamida",
+        "Qadamlab o'lchanadi",
+        "Hisoblash yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "O'lchov chizg'ichi yordamida xona o'lchamlari: bo'yi, eni va balandligi o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#144b1742"
+    },
+    {
+      "q": "Hisoblashda temperatura qaysi birlikda, bosim qaysi birlikda ifodalanadi?",
+      "v": [
+        "Temperatura kelvinda (K), bosim paskalda (Pa)",
+        "Temperatura Selsiyda, bosim mm simob ustunida",
+        "Temperatura Farengeytda, bosim kPa da",
+        "Temperatura kelvinda, bosim atm da"
+      ],
+      "t": 0,
+      "izoh": "Temperaturaning qiymati kelvinda (K), bosimning qiymati paskalda (Pa) ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#ff947247"
+    },
+    {
+      "q": "Xona hajmi qanday aniqlanadi?",
+      "v": [
+        "V = a·b·c",
+        "V = a + b + c",
+        "V = a·b/2",
+        "V = πr²h"
+      ],
+      "t": 0,
+      "izoh": "Xona hajmi V = a·b·c ifoda orqali aniqlanadi (a — bo'yi, b — eni, c — balandligi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#4b98f1fc"
+    },
+    {
+      "q": "Xonadagi havoning zichligi qaysi ifoda bo'yicha hisoblanadi?",
+      "v": [
+        "ρ = pM/(RT) — Mendeleyev-Klapeyron tenglamasiga asosan",
+        "ρ = m·V",
+        "ρ = RT/(pM)",
+        "ρ = p·V·T"
+      ],
+      "t": 0,
+      "izoh": "Mendeleyev-Klapeyron tenglamasiga asosan xonadagi havoning zichligi ρ = pM/(RT) ifodaga ko'ra hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#86aab1e5"
+    },
+    {
+      "q": "d = V/S formulada V va S birliklari mos bo'lsa, d ning birligi qanday chiqadi?",
+      "v": [
+        "Uzunlik birligi (masalan, mm yoki m)",
+        "Yuzasi birligi (m²)",
+        "Hajm birligi (m³)",
+        "Birliksiz kattalik"
+      ],
+      "t": 0,
+      "izoh": "d = V/S: hajmni yuzaga bo'lsak, uzunlik birligi chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#87ccecf3"
+    },
+    {
+      "q": "Mashg'ulotda no'xat donalari mexanik model sifatida nimani ifodalaydi?",
+      "v": [
+        "Molekulalarni",
+        "Atomlarning yadrosini",
+        "Elektronlarni",
+        "Ionlarni"
+      ],
+      "t": 0,
+      "izoh": "No'xat donalari mexanik model asosida molekulalarning o'lchamini baholashda model sifatida ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#88dd9c96"
+    },
+    {
+      "q": "Xonadagi havo molekulalari sonini hisoblash uchun avval qanday kattaliklar aniqlanishi kerak?",
+      "v": [
+        "Xonaning temperaturasi, bosimi va hajmi",
+        "Faqat xonaning yuzasi",
+        "Faqat havo bosimi",
+        "Faqat havo temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalar soni va konsentratsiyasini hisoblash uchun temperatura, bosim va xona hajmi aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#e41b3d0f"
+    },
+    {
+      "q": "Aneroid barometr nima uchun ishlatiladi?",
+      "v": [
+        "Havo bosimini o'lchash uchun",
+        "Hajmni o'lchash uchun",
+        "Temperaturani o'lchash uchun",
+        "Zichlikni to'g'ridan-to'g'ri o'lchash uchun"
+      ],
+      "t": 0,
+      "izoh": "Aneroid barometr xona ichidagi havo bosimini o'lchash uchun ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m13-molekula-olchamini-baholash#13ce6fb3"
+    }
+  ]
+}

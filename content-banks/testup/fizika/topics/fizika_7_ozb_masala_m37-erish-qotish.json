@@ -1,0 +1,216 @@
+{
+  "nom": "37-mavzu. Masala. Erish Qotish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "0 °C temperaturadagi 4 kg muzni eritish uchun qancha issiqlik miqdori kerak? (λ = 330 kJ/kg)",
+      "v": [
+        "1,32 MJ",
+        "132 kJ",
+        "13,2 MJ",
+        "330 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = λ·m = 330·4 = 1320 kJ = 1,32 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#9e744f18"
+    },
+    {
+      "q": "Erish temperaturasidagi, massasi 2 g bo'lgan qo'rg'oshin bo'lakni eritish uchun qancha issiqlik miqdori kerak? (λ = 25 kJ/kg)",
+      "v": [
+        "50 J",
+        "500 J",
+        "5 J",
+        "50 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,002 kg; Q = λ·m = 25 000·0,002 = 50 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#e11a76a5"
+    },
+    {
+      "q": "162 kJ issiqlik miqdori erish temperaturasida bo'lgan qancha massali misni eritadi? (λ = 200 kJ/kg)",
+      "v": [
+        "0,81 kg",
+        "8,1 kg",
+        "81 kg",
+        "32 400 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/λ = 162/200 = 0,81 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#99387bb0"
+    },
+    {
+      "q": "Erish temperaturasida turgan 2 kg muzni suvga aylantirish uchun unga qancha issiqlik miqdori berish kerak? (λ = 330 kJ/kg)",
+      "v": [
+        "660 kJ",
+        "66 kJ",
+        "6,6 MJ",
+        "165 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = λ·m = 330·2 = 660 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#8812a45a"
+    },
+    {
+      "q": "Erish temperaturasida turgan oltinni to'liq eritishga 12,8 kJ issiqlik miqdori sarflandi. Eritilgan oltinning massasini toping. (λ = 64 kJ/kg)",
+      "v": [
+        "200 g",
+        "20 g",
+        "2 kg",
+        "819,2 g"
+      ],
+      "t": 0,
+      "izoh": "m = Q/λ = 12,8/64 = 0,2 kg = 200 g",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#470eed89"
+    },
+    {
+      "q": "Erish temperaturasida turgan 300 g qalayni suyultirish uchun unga qancha issiqlik miqdori berish kerak? (λ = 60 kJ/kg)",
+      "v": [
+        "18 kJ",
+        "1,8 kJ",
+        "180 kJ",
+        "60 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,3 kg; Q = λ·m = 60·0,3 = 18 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#87dd47d7"
+    },
+    {
+      "q": "Massasi 2 kg, temperaturasi 0 °C bo'lgan muz suvga aylanganda va hosil bo'lgan suv 30 °C gacha isiganda qancha issiqlik oladi? (λ = 330 kJ/kg, c = 4200 J/(kg·°C))",
+      "v": [
+        "912 kJ",
+        "660 kJ",
+        "252 kJ",
+        "91,2 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = λ·m + m·c·Δt = 330·2 + 2·4200·30/1000 = 660 + 252 = 912 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#b7f9a610"
+    },
+    {
+      "q": "Massasi 2 kg, temperaturasi 0 °C bo'lgan muz dastlab eriydi, so'ng hosil bo'lgan suv 40 °C gacha isiydi. Umumiy issiqlik miqdorini toping. (λ = 330 kJ/kg, c = 4200 J/(kg·°C))",
+      "v": [
+        "996 kJ",
+        "660 kJ",
+        "336 kJ",
+        "99,6 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 330·2 + 2·4200·40/1000 = 660 + 336 = 996 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#f458286d"
+    },
+    {
+      "q": "0 °C dagi 1 kg suv to'liq muzga aylanganda qancha issiqlik ajraladi? (λ = 330 kJ/kg)",
+      "v": [
+        "330 kJ",
+        "33 kJ",
+        "3,3 MJ",
+        "660 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = λ·m = 330·1 = 330 kJ (ajraladi)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#2c7f5820"
+    },
+    {
+      "q": "Erish temperaturasidagi 500 g suyuq qalay to'liq qotganda qancha issiqlik ajraladi? (λ = 60 kJ/kg)",
+      "v": [
+        "30 kJ",
+        "3 kJ",
+        "300 kJ",
+        "120 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,5 kg; Q = λ·m = 60·0,5 = 30 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#cb95f396"
+    },
+    {
+      "q": "Hajmi 1 l bo'lgan idishdagi 10 °C temperaturali suv muzlatkichga qo'yilgan. Suv butunlay muzlaguncha o'zidan qancha issiqlik chiqaradi? (c = 4200 J/(kg·°C), λ = 330 kJ/kg)",
+      "v": [
+        "372 kJ",
+        "330 kJ",
+        "42 kJ",
+        "37,2 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 1 kg; Q = m·c·Δt + λ·m = 1·4200·10/1000 + 330·1 = 42 + 330 = 372 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#4a145d16"
+    },
+    {
+      "q": "40 °C temperaturadagi 8 kg suvga 0 °C temperaturali muz solindi. Muz butunlay erib ketishi uchun uning massasi ko'pi bilan qanday bo'lishi kerak? (c = 4200 J/(kg·°C), λ = 330 kJ/kg)",
+      "v": [
+        "≈ 4 kg",
+        "≈ 0,4 kg",
+        "≈ 40 kg",
+        "≈ 10 kg"
+      ],
+      "t": 0,
+      "izoh": "m₂ = m₁·c·Δt/λ = 8·4200·40/330 000 ≈ 4 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#b5d5c79c"
+    },
+    {
+      "q": "Erish temperaturasidagi 0,5 kg alyuminiyni eritish uchun qancha issiqlik kerak? (λ = 380 kJ/kg)",
+      "v": [
+        "190 kJ",
+        "19 kJ",
+        "1,9 MJ",
+        "760 kJ"
+      ],
+      "t": 0,
+      "izoh": "Q = λ·m = 380·0,5 = 190 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#6d0d5965"
+    },
+    {
+      "q": "Temperaturasi 33 °C bo'lgan 2 kg suvga 0 °C temperaturali qancha massali muz solinsa, u to'liq eriydi (suv 0 °C gacha soviydi)? (c = 4200 J/(kg·°C), λ = 330 kJ/kg)",
+      "v": [
+        "840 g",
+        "84 g",
+        "8,4 kg",
+        "330 g"
+      ],
+      "t": 0,
+      "izoh": "m = m₁·c·Δt/λ = 2·4200·33/330 000 = 0,84 kg = 840 g",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m37-erish-qotish#47aa86d5"
+    }
+  ]
+}

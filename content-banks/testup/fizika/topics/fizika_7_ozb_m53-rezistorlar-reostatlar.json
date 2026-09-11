@@ -1,0 +1,546 @@
+{
+  "nom": "53-mavzu. Rezistorlar Reostatlar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Rezistor nima?",
+      "v": [
+        "Elektr zanjirda tokni va kuchlanishni rostlash uchun qo'llanadigan ma'lum qarshilikli elektr asbob",
+        "Tok kuchini o'lchaydigan asbob",
+        "Kuchlanishni o'lchaydigan asbob",
+        "Elektr zaryadini saqlovchi qurilma"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi rezistor ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#70726f68"
+    },
+    {
+      "q": "Rezistor so'zi lotincha qaysi so'zdan olingan?",
+      "v": [
+        "resisto – \"qarshilik\"",
+        "reos – \"oqim\"",
+        "statos – \"qo'zg'almas\"",
+        "volt – \"kuchlanish\""
+      ],
+      "t": 0,
+      "izoh": "Resisto — \"qarshilik\" degan ma'noni anglatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#d4ff7a7a"
+    },
+    {
+      "q": "Rezistor qaysi qismlardan iborat?",
+      "v": [
+        "Karkas, sim va qoplamadan",
+        "Sterjen, surgich va qisqichdan",
+        "Karkas, kalit va lampochkadan",
+        "Sim, ampermetr va voltmetrdan"
+      ],
+      "t": 0,
+      "izoh": "Rezistor karkas, sim va qoplamadan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#4e31637f"
+    },
+    {
+      "q": "Rezistorning karkasi va qoplamasi qanday materialdan tayyorlanadi?",
+      "v": [
+        "Yonmaydigan va tok o'tkazmaydigan materialdan, masalan, chinnidan",
+        "Solishtirma qarshiligi katta metall simdan",
+        "Mis simdan",
+        "Metall sterjendan"
+      ],
+      "t": 0,
+      "izoh": "Karkas va qoplama yonmaydigan, tok o'tkazmaydigan materialdan (chinnidan) tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#24d2c566"
+    },
+    {
+      "q": "Rezistorning simi qanday materialdan tayyorlanadi?",
+      "v": [
+        "Solishtirma qarshiligi katta materialdan",
+        "Solishtirma qarshiligi kichik materialdan",
+        "Dielektrikdan",
+        "Yarimo'tkazgichdan"
+      ],
+      "t": 0,
+      "izoh": "Sim solishtirma qarshiligi katta materialdan tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#cc6532d8"
+    },
+    {
+      "q": "Reostat nima?",
+      "v": [
+        "Elektr zanjirdagi tok kuchi va kuchlanishni rostlash, ya'ni o'zgartirish uchun qo'llanadigan elektr asbob",
+        "Ma'lum qarshilikli o'zgarmas elektr asbob",
+        "Tok kuchini o'lchaydigan asbob",
+        "Zaryadni saqlovchi qurilma"
+      ],
+      "t": 0,
+      "izoh": "Darslikdagi reostat ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#a4e3e9ac"
+    },
+    {
+      "q": "Reostat so'zi yunoncha qaysi so'zlardan olingan?",
+      "v": [
+        "reos – \"oqim\" va statos – \"qo'zg'almas\"",
+        "resisto – \"qarshilik\" va volt – \"kuch\"",
+        "elektron – \"kehrbo\" va statos – \"turuvchi\"",
+        "amper – \"tok\" va metron – \"o'lchov\""
+      ],
+      "t": 0,
+      "izoh": "Reostat — reos \"oqim\" va statos \"qo'zg'almas\" so'zlaridan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#15a4c337"
+    },
+    {
+      "q": "Rezistordan farqli o'laroq reostat qanday xususiyatga ega?",
+      "v": [
+        "Qarshiligini bir me'yorda (uzluksiz) o'zgartirib bo'ladi",
+        "Qarshiligi butunlay o'zgarmaydi",
+        "Zanjirdagi tokni o'lchaydi",
+        "Kuchlanishni doimiy saqlaydi"
+      ],
+      "t": 0,
+      "izoh": "Reostat o'zgaruvchan qarshilikli qurilma.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#d49d908a"
+    },
+    {
+      "q": "Nima uchun tok kuchini bir me'yorda o'zgartirishda rezistor yetarli emas?",
+      "v": [
+        "Chunki rezistor ma'lum qarshilikka ega bo'lib, uning qiymatini o'zgartirib bo'lmaydi",
+        "Chunki rezistor tokni o'tkazmaydi",
+        "Chunki rezistor kuchlanishni oshiradi",
+        "Chunki rezistor faqat o'lchash uchun ishlatiladi"
+      ],
+      "t": 0,
+      "izoh": "Rezistor qarshiligi o'zgarmas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#45f3eda1"
+    },
+    {
+      "q": "Darslikda keltirilganidek, kinoteatr zali chiroqlarini asta-sekin o'chirish uchun nima qilinadi?",
+      "v": [
+        "Zanjirdagi tok bir me'yorda kamaytiriladi",
+        "Zanjirga katta kuchlanish beriladi",
+        "Zanjir uzilib qo'yiladi",
+        "Chiroqlar parallel ulanadi"
+      ],
+      "t": 0,
+      "izoh": "Tok bir me'yorda kamaytiriladi, buning uchun reostat ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#cbff01a5"
+    },
+    {
+      "q": "Elektropoyezd tezligini asta-sekin oshirish uchun nima qilinadi?",
+      "v": [
+        "Elektr dvigateldagi tok bir me'yorda oshiriladi",
+        "Dvigatel zanjirdan uziladi",
+        "Kuchlanish nolga tushiriladi",
+        "Dvigatelga rezistor ulanadi va o'zgartirilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tok bir me'yorda oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#87befac5"
+    },
+    {
+      "q": "Eng oddiy reostatni qanday materialdan yasash mumkin?",
+      "v": [
+        "Solishtirma qarshiligi katta materialdan, masalan, nikelin yoki nixrom simdan",
+        "Mis simdan",
+        "Alyuminiy simdan",
+        "Chinni yoki sopol materialdan"
+      ],
+      "t": 0,
+      "izoh": "Nikelin yoki nixrom simdan reostat yasash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#e5015379"
+    },
+    {
+      "q": "Maktab reostatida nikelin sim nima ustiga o'ralgan bo'ladi?",
+      "v": [
+        "Sopol silindrga",
+        "Metall sterjenga",
+        "Mis karkasga",
+        "Shisha trubkaga"
+      ],
+      "t": 0,
+      "izoh": "Nikelin sim sopol silindrga o'ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#58a88596"
+    },
+    {
+      "q": "Maktab reostatidagi sim qanday qoplangan?",
+      "v": [
+        "Yupqa izolyatsiya qatlami bilan",
+        "Qalin metall qatlam bilan",
+        "Mis folga bilan",
+        "Hech qanday qoplama yo'q"
+      ],
+      "t": 0,
+      "izoh": "Sim yupqa izolyatsiya qatlami bilan qoplangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#35164b48"
+    },
+    {
+      "q": "Reostatdagi metall sterjendagi surgich qanday vazifa bajaradi?",
+      "v": [
+        "Sim o'ramlari bilan sterjenni bir-biriga kontaktga keltiradi",
+        "Simning qarshiligini o'lchaydi",
+        "Zanjirni uzadi",
+        "Tok manbaiga kuchlanish beradi"
+      ],
+      "t": 0,
+      "izoh": "Surgich o'ramlar bilan sterjenni kontaktga keltiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#aaa53081"
+    },
+    {
+      "q": "Reostat surgichining o'ramlarga ishqalanishi natijasida nima sodir bo'ladi?",
+      "v": [
+        "Surgich kontakti ostidagi izolyatsiyalangan qatlam yediriladi",
+        "Simning qarshiligi nolga teng bo'ladi",
+        "Sterjen eriydi",
+        "Sim uzilib ketadi"
+      ],
+      "t": 0,
+      "izoh": "Kontakt ostidagi izolyatsiya qatlami yedirilib, tok o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#247ceb68"
+    },
+    {
+      "q": "Reostatda (1) qisqichga kelayotgan tok qanday yo'l bilan sterjenga o'tadi?",
+      "v": [
+        "O'ram va surgich kontakti orqali",
+        "To'g'ridan-to'g'ri sim orqali",
+        "Sopol silindr orqali",
+        "Havo orqali"
+      ],
+      "t": 0,
+      "izoh": "Tok o'ram va surgich kontakti orqali sterjenga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#ca58ccfb"
+    },
+    {
+      "q": "Reostatda tok sterjen uchidagi qaysi qisqich orqali zanjir bo'ylab o'z oqimini davom ettiradi?",
+      "v": [
+        "(2) qisqich orqali",
+        "(1) qisqich orqali",
+        "(3) surgich orqali",
+        "(1') qisqich orqali"
+      ],
+      "t": 0,
+      "izoh": "Tok sterjen uchidagi (2) qisqich orqali davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#0b5a5c08"
+    },
+    {
+      "q": "Reostat surgichini sterjen bo'ylab surish nima imkonini beradi?",
+      "v": [
+        "Reostatning qarshiligini va zanjirdagi tok kuchini bir me'yorda o'zgartirish",
+        "Kuchlanishni o'lchash",
+        "Tok manbaini almashtirish",
+        "Zanjirni butunlay uzish"
+      ],
+      "t": 0,
+      "izoh": "Surgichni surish bilan qarshilik va tok bir me'yorda o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#1c277096"
+    },
+    {
+      "q": "Reostat surgichi surilganda zanjirdagi tok kuchi nima sababdan o'zgaradi?",
+      "v": [
+        "Zanjirga kiritilgan sim qismining uzunligi, ya'ni qarshiligi o'zgaradi",
+        "Tok manbai kuchlanishi o'zgaradi",
+        "Ampermetr qarshiligi o'zgaradi",
+        "Simning solishtirma qarshiligi o'zgaradi"
+      ],
+      "t": 0,
+      "izoh": "Surgich surilganda zanjirdagi sim uzunligi o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#63d50ea1"
+    },
+    {
+      "q": "Elektr zanjirdagi tok kuchining o'tkazgich qarshiligiga bog'liqligidan qayerda keng foydalaniladi?",
+      "v": [
+        "Elektrotexnikada",
+        "Optikada",
+        "Mexanikada",
+        "Termodinamikada"
+      ],
+      "t": 0,
+      "izoh": "Elektrotexnikada keng foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#0ec8b060"
+    },
+    {
+      "q": "Rezistorning qarshiligini qaysi asbob yordamida o'lchash mumkin?",
+      "v": [
+        "Ommetr yordamida",
+        "Ampermetr yordamida",
+        "Voltmetr yordamida",
+        "Dinamometr yordamida"
+      ],
+      "t": 0,
+      "izoh": "Amaliy topshiriqda qarshilik ommetr bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#d682e835"
+    },
+    {
+      "q": "Ko'p hollarda rezistorning ustki qismiga uning qarshiligi qanday ko'rsatiladi?",
+      "v": [
+        "Ranglar bilan",
+        "Harflar bilan",
+        "Faqat raqamlar bilan",
+        "Chiziqlar bilan"
+      ],
+      "t": 0,
+      "izoh": "Qarshilik ranglar bilan ko'rsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#fc6f82fd"
+    },
+    {
+      "q": "Rezistordagi qora rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 1 Ω",
+        "x 10 Ω",
+        "x 100 Ω",
+        "x 1000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Qora — x 1 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#dc5cb213"
+    },
+    {
+      "q": "Rezistordagi jigarrang rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 10 Ω",
+        "x 1 Ω",
+        "x 100 Ω",
+        "x 10 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Jigarrang — x 10 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#e8f3d7e6"
+    },
+    {
+      "q": "Rezistordagi qizil rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 100 Ω",
+        "x 10 Ω",
+        "x 1000 Ω",
+        "x 1 Ω"
+      ],
+      "t": 0,
+      "izoh": "Qizil — x 100 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#23371741"
+    },
+    {
+      "q": "Rezistordagi to'q sariq rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 1 000 Ω",
+        "x 100 Ω",
+        "x 10 000 Ω",
+        "x 10 Ω"
+      ],
+      "t": 0,
+      "izoh": "To'q sariq — x 1000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#563fe14d"
+    },
+    {
+      "q": "Rezistordagi sariq rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 10 000 Ω",
+        "x 1 000 Ω",
+        "x 100 000 Ω",
+        "x 100 Ω"
+      ],
+      "t": 0,
+      "izoh": "Sariq — x 10 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#0e861ad0"
+    },
+    {
+      "q": "Rezistordagi yashil rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 100 000 Ω",
+        "x 10 000 Ω",
+        "x 1 000 000 Ω",
+        "x 1 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Yashil — x 100 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#e96a4604"
+    },
+    {
+      "q": "Rezistordagi ko'k rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 1 000 000 Ω",
+        "x 100 000 Ω",
+        "x 10 000 000 Ω",
+        "x 10 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Ko'k — x 1 000 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#9d655a96"
+    },
+    {
+      "q": "Rezistordagi siyohrang rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 10 000 000 Ω",
+        "x 1 000 000 Ω",
+        "x 100 000 000 Ω",
+        "x 100 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Siyohrang — x 10 000 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#29e38879"
+    },
+    {
+      "q": "Rezistordagi oq rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 1 000 000 000 Ω",
+        "x 100 000 000 Ω",
+        "x 10 000 000 Ω",
+        "x 1 000 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Oq — x 1 000 000 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#e64d708e"
+    },
+    {
+      "q": "Rezistordagi kulrang rang qarshilikning qanday qiymatini bildiradi?",
+      "v": [
+        "x 100 000 000 Ω",
+        "x 10 000 000 Ω",
+        "x 1 000 000 000 Ω",
+        "x 1 000 000 Ω"
+      ],
+      "t": 0,
+      "izoh": "Kulrang — x 100 000 000 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#1befd4f8"
+    },
+    {
+      "q": "Zanjirdagi tokni boshqarish uchun turli qarshilikli o'tkazgichlarni tanlab, elektrotexnikada qaysi asboblar ishlatiladi?",
+      "v": [
+        "Rezistorlar",
+        "Ampermetrlar",
+        "Voltmetrlar",
+        "Kalitlar"
+      ],
+      "t": 0,
+      "izoh": "Shu maqsadda rezistorlar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#9c9961a7"
+    },
+    {
+      "q": "Reostatning zanjirdagi asosiy vazifasi nimadan iborat?",
+      "v": [
+        "Qarshilikni uzluksiz kamaytirish yoki ko'paytirish orqali tok kuchini rostlash",
+        "Tok kuchini aniq o'lchash",
+        "Kuchlanishni o'lchash",
+        "Zanjirni himoya qilish"
+      ],
+      "t": 0,
+      "izoh": "Reostat qarshilikni bir me'yorda o'zgartiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#869ff302"
+    },
+    {
+      "q": "Mavzu yakunidagi mulohazaga ko'ra, reostat qanday materiallardan yasaladi?",
+      "v": [
+        "Solishtirma qarshiligi katta bo'lgan materiallardan",
+        "Solishtirma qarshiligi kichik materiallardan",
+        "Dielektriklardan",
+        "Faqat misdan"
+      ],
+      "t": 0,
+      "izoh": "Reostat solishtirma qarshiligi katta materiallardan yasaladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m53-rezistorlar-reostatlar#d6e764c0"
+    }
+  ]
+}

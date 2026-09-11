@@ -1,0 +1,396 @@
+{
+  "nom": "18-mavzu. Laboratoriya Zichlik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Laboratoriya ishining maqsadi nima?",
+      "v": [
+        "To'g'ri va to'g'ri bo'lmagan geometrik shakldagi jismlarning zichligini aniqlash",
+        "Jism tezligini aniqlash",
+        "Kuchni o'lchash",
+        "Bosimni o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Jismlar zichligini aniqlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#588a80d4"
+    },
+    {
+      "q": "Laboratoriya ishida jism massasi qanday o'lchanadi?",
+      "v": [
+        "Tarozida",
+        "Chizg'ich bilan",
+        "Menzurka bilan",
+        "Dinamometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Massa tarozida o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#846c683c"
+    },
+    {
+      "q": "Parallelepiped asosining uzunligi, eni va balandligi qanday o'lchanadi?",
+      "v": [
+        "Chizg'ich bilan",
+        "Tarozi bilan",
+        "Areometr bilan",
+        "Sekundomer bilan"
+      ],
+      "t": 0,
+      "izoh": "Chizg'ich bilan o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#470fe2cd"
+    },
+    {
+      "q": "Parallelepiped hajmini hisoblash formulasi qanday?",
+      "v": [
+        "V = a·b·h",
+        "V = a + b + h",
+        "V = a/b",
+        "V = m/ρ"
+      ],
+      "t": 0,
+      "izoh": "V = a·b·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#37dbbbb0"
+    },
+    {
+      "q": "Laboratoriya ishida zichlik qanday formulada hisoblanadi?",
+      "v": [
+        "ρ = m/V",
+        "ρ = m·V",
+        "ρ = V/m",
+        "ρ = F/S"
+      ],
+      "t": 0,
+      "izoh": "ρ = m/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#03284017"
+    },
+    {
+      "q": "Laboratoriya ishida qaysi jismlar ishlatiladi?",
+      "v": [
+        "Plastmassa, yog'och va metall brusoklar",
+        "Faqat metall",
+        "Faqat suv",
+        "Shishalar"
+      ],
+      "t": 0,
+      "izoh": "Plastmassa, yog'och va metall brusoklar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#fcbac5e7"
+    },
+    {
+      "q": "To'g'ri geometrik shaklga ega bo'lmagan jism (vint) hajmini aniqlashda qaysi asbob ishlatiladi?",
+      "v": [
+        "Menzurka",
+        "Chizg'ich",
+        "Termometr",
+        "Barometr"
+      ],
+      "t": 0,
+      "izoh": "Menzurka ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#8ca72038"
+    },
+    {
+      "q": "Vintning hajmi qanday formula bilan topiladi?",
+      "v": [
+        "V = V2 – V1",
+        "V = V1 + V2",
+        "V = V1·V2",
+        "V = m/V1"
+      ],
+      "t": 0,
+      "izoh": "V = V2 – V1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#ace194e2"
+    },
+    {
+      "q": "Vintni suvga tushirishdan oldin menzurkadagi suv hajmi qanday belgilanadi?",
+      "v": [
+        "V1",
+        "V2",
+        "V",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich hajm V1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#a0213408"
+    },
+    {
+      "q": "Vint suvga tushirilgandan keyingi suv hajmi qanday belgilanadi?",
+      "v": [
+        "V2",
+        "V1",
+        "V",
+        "ρ"
+      ],
+      "t": 0,
+      "izoh": "Keyingi hajm V2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#6b4fe335"
+    },
+    {
+      "q": "Vint suvga tushirishda u ipga nima qilinadi?",
+      "v": [
+        "Bog'lanadi",
+        "Yelimlanadi",
+        "Qoyiladi",
+        "Aralashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Vint ipga bog'lab suvga tushiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#8382c838"
+    },
+    {
+      "q": "Zichligi o'lchanadigan jism suvga qanday botishi kerak?",
+      "v": [
+        "To'liq",
+        "Yarim",
+        "Ustida qolishi",
+        "Quruq qolishi"
+      ],
+      "t": 0,
+      "izoh": "Jism suvga to'liq botishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#5ffa93e9"
+    },
+    {
+      "q": "Amaliy topshiriqda loy va plastilin g'isht qaysi buyumdan foydalanib yasaladi?",
+      "v": [
+        "Gugurt qutisidan",
+        "Chashkadan",
+        "Stakandan",
+        "Idishdan"
+      ],
+      "t": 0,
+      "izoh": "Gugurt qutisidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#6418a3e9"
+    },
+    {
+      "q": "Loy g'isht yasalganidan keyin nima qilinadi?",
+      "v": [
+        "Issiq joyga qo'yib quritiladi",
+        "Suvga solinadi",
+        "Muzlatiladi",
+        "Eziladi"
+      ],
+      "t": 0,
+      "izoh": "Loy g'isht quritiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#4925da18"
+    },
+    {
+      "q": "Amaliy topshiriqda 0,5 l plastik idishlarga nimalar solinadi?",
+      "v": [
+        "Tuz, guruch, suv",
+        "Qum, suv, neft",
+        "Asal, suv, spirt",
+        "Suv, muz, yog'"
+      ],
+      "t": 0,
+      "izoh": "Tuz, guruch, suv solinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#493fafcc"
+    },
+    {
+      "q": "Jadvalda plastmassa brusok uchun qaysi kattaliklar yoziladi?",
+      "v": [
+        "m, a, b, h, V, ρ",
+        "Faqat m",
+        "Faqat V",
+        "m va F"
+      ],
+      "t": 0,
+      "izoh": "Massa, o'lchamlar, hajm va zichlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#bf4254eb"
+    },
+    {
+      "q": "1 l o'simlik yog'i 1 l ichimlik suvdan nega yengil?",
+      "v": [
+        "Yog'ning zichligi kichikroq",
+        "Yog'ning hajmi kichik",
+        "Suv og'irroq rangli",
+        "Yog' tez bug'lanadi"
+      ],
+      "t": 0,
+      "izoh": "Yog' zichligi 0,93 g/cm³ < suv 1 g/cm³.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#229142fd"
+    },
+    {
+      "q": "To'g'ri geometrik shaklga ega bo'lmagan jismning zichligini aniqlashda avval nima o'lchanadi?",
+      "v": [
+        "Menzurkadagi suv hajmi va jismning massasi",
+        "Jismning rangi",
+        "Havo harorati",
+        "Ip uzunligi"
+      ],
+      "t": 0,
+      "izoh": "Suv hajmi V1 va massa o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#9fd9350e"
+    },
+    {
+      "q": "Laboratoriya ishida qo'shimcha jihoz sifatida qaysi buyum keltirilgan?",
+      "v": [
+        "Vint",
+        "G'isht",
+        "Shar",
+        "Stakan"
+      ],
+      "t": 0,
+      "izoh": "Vint keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#97ab8a7a"
+    },
+    {
+      "q": "Parallelepiped shaklidagi jismning zichligini aniqlash uchun qanday o'lchovlar kerak?",
+      "v": [
+        "Massa va uchta chiziqli o'lcham",
+        "Faqat massa",
+        "Faqat hajm",
+        "Faqat eni"
+      ],
+      "t": 0,
+      "izoh": "Massa, uzunlik, eni va balandlik o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#d9a10c61"
+    },
+    {
+      "q": "Laboratoriya ishida hajm qaysi birlikda ifodalanadi?",
+      "v": [
+        "cm³",
+        "m³",
+        "litr",
+        "dm³"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda hajm cm³ da beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#4640a38d"
+    },
+    {
+      "q": "Laboratoriya ishida massa qaysi birlikda o'lchanadi?",
+      "v": [
+        "g",
+        "kg",
+        "mg",
+        "t"
+      ],
+      "t": 0,
+      "izoh": "Massa gramm (g) da o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#e4795b2e"
+    },
+    {
+      "q": "Laboratoriya ishida ishlatiladigan tarozi turi qaysi?",
+      "v": [
+        "Elektron tarozi",
+        "Pallali",
+        "Prujinali",
+        "Shayinli"
+      ],
+      "t": 0,
+      "izoh": "Elektron tarozi keltirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#7147873c"
+    },
+    {
+      "q": "Vintning zichligini hisoblash uchun qanday formula ishlatiladi?",
+      "v": [
+        "ρ = m/V",
+        "ρ = V/m",
+        "ρ = m·V",
+        "ρ = F/S"
+      ],
+      "t": 0,
+      "izoh": "ρ = m/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#bf6b9428"
+    },
+    {
+      "q": "Menzurka nima uchun ishlatiladi?",
+      "v": [
+        "Suyuqlik hajmini o'lchash",
+        "Massani o'lchash",
+        "Haroratni o'lchash",
+        "Kuchni o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Menzurka suyuqlik hajmini o'lchaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#02973379"
+    },
+    {
+      "q": "To'g'ri geometrik shakldagi va to'g'ri bo'lmagan jismlarning zichligini aniqlashda farq nimada?",
+      "v": [
+        "Hajm topish usuli turlicha: birida chizg'ich, ikkinchisida menzurka",
+        "Farq yo'q",
+        "Tarozi turlicha",
+        "Formulalar turlicha"
+      ],
+      "t": 0,
+      "izoh": "Hajm aniqlash usuli farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m18-laboratoriya-zichlik#de426976"
+    }
+  ]
+}

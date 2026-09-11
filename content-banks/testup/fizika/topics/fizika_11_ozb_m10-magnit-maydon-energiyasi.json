@@ -1,0 +1,456 @@
+{
+  "nom": "10-mavzu. Magnit Maydon Energiyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Tokli o'tkazgich atrofida hosil bo'lgan magnit maydon qanday xossaga ega?",
+      "v": [
+        "Energiyaga ega",
+        "Massaga ega emas",
+        "Zaryadga ega",
+        "Haroratga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Zaryadlangan jism elektr maydon energiyasiga ega bo'lgani kabi, tokli o'tkazgichning magnit maydoni ham energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#7bb0ef76"
+    },
+    {
+      "q": "Tokli konturning magnit maydon energiyasi qanday formula bilan hisoblanadi?",
+      "v": [
+        "W = L·I²/2",
+        "W = L·I/2",
+        "W = L²·I/2",
+        "W = L·I²"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydon energiyasi W = L·I²/2 — induktivlik bilan tok kuchi kvadrati ko'paytmasining yarmiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#90a74624"
+    },
+    {
+      "q": "Magnit maydon energiyasining yana bir ifodasi qaysi?",
+      "v": [
+        "W = I·Ф/2",
+        "W = I²·Ф/2",
+        "W = Ф/(2·I)",
+        "W = I·Ф²/2"
+      ],
+      "t": 0,
+      "izoh": "W = A = I·Ф/2 = L·I²/2, chunki Ф = L·I.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#20714ead"
+    },
+    {
+      "q": "Magnit maydon energiyasining XBSdagi birligi nima?",
+      "v": [
+        "Joul",
+        "Vatt",
+        "Genri",
+        "Veber"
+      ],
+      "t": 0,
+      "izoh": "Energiya birligi — joul (J).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#8d13d8cb"
+    },
+    {
+      "q": "Energiyaning saqlanish qonuniga ko'ra, g'altakdan o'tayotgan tok hosil qilgan energiya nimaga teng?",
+      "v": [
+        "Magnit induksiya oqimini hosil qilish uchun sarflangan ishga",
+        "Kontur issiqlik energiyasiga",
+        "Lampaning yorug'lik energiyasiga",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Energiya saqlanish qonuniga ko'ra tok hosil qilgan energiya magnit oqimini hosil qilish uchun sarflangan ishga teng: W = A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#0888eb99"
+    },
+    {
+      "q": "G'altakdan o'tayotgan tok energiyasining bir qismi nimaga sarflanadi?",
+      "v": [
+        "Unda magnit maydonni hosil qilishga",
+        "Simni magnitlashga",
+        "Kalitni isitishga",
+        "Galvanometrni harakatlantirishga"
+      ],
+      "t": 0,
+      "izoh": "Tok energiyasining bir qismi g'altakda magnit maydonni hosil qilishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#299c65cb"
+    },
+    {
+      "q": "Magnit maydon energiyasi formulasini kinetik energiya formulasi bilan taqqoslaganda induktivlik nimaga o'xshatiladi?",
+      "v": [
+        "Jismning massasiga",
+        "Jismning tezligiga",
+        "Jismning impulsiga",
+        "Jismning zaryadiga"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 va Ek = m·v²/2 taqqoslanganda induktivlik massaga, tok esa tezlikka o'xshatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#3f3e8f48"
+    },
+    {
+      "q": "Kinetik energiya formulasidagi tezlik magnit maydon energiyasi formulasida qaysi kattalikka mos keladi?",
+      "v": [
+        "Tok kuchiga",
+        "Magnit oqimiga",
+        "Induktivlikka",
+        "Kuchlanishga"
+      ],
+      "t": 0,
+      "izoh": "L massaga, I esa tezlikka mos keladi: W = L·I²/2 ↔ Ek = m·v²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#b54e0788"
+    },
+    {
+      "q": "Tok kuchi 2 marta oshirilsa, g'altakning magnit maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 ga ko'ra energiya tok kvadratiga proporsional: tok 2 marta ortsa, energiya 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#4f01eacb"
+    },
+    {
+      "q": "G'altakning induktivligi 2 marta oshirilsa (tok o'zgarmasa), magnit maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "4 marta ortadi",
+        "2 marta kamayadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "W induktivlikka to'g'ri proporsional: L 2 marta ortsa, W ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#3fc6ffad"
+    },
+    {
+      "q": "Elektromagnitning asosini nima tashkil qiladi?",
+      "v": [
+        "Solenoid g'altagi",
+        "Doimiy magnit",
+        "Kondansator",
+        "Reostat"
+      ],
+      "t": 0,
+      "izoh": "Elektromagnitning asosini solenoid g'altagi tashkil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#3d863272"
+    },
+    {
+      "q": "Solenoid ichiga kiritilgan ferromagnit o'zak uning induktivligini qanday o'zgartiradi?",
+      "v": [
+        "Keskin oshiradi",
+        "Kamaytiradi",
+        "O'zgartirmaydi",
+        "Nolga tushiradi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnit o'zak solenoidning induktivligini keskin oshiradi, natijada magnit maydon kuchayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#80a1f967"
+    },
+    {
+      "q": "Elektromagnit kranlar qanday fizik hodisa asosida ishlaydi?",
+      "v": [
+        "Tokli g'altak atrofida magnit maydon hosil bo'lishi asosida",
+        "Nurlanish bosimi asosida",
+        "Issiqlik kengayishi asosida",
+        "Elektroliz asosida"
+      ],
+      "t": 0,
+      "izoh": "Tokli g'altak atrofida magnit maydon hosil bo'lishiga asoslangan elektromagnit kranlar yuklarni ko'taradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#b59d4984"
+    },
+    {
+      "q": "G'altakdan o'tayotgan tokni tekis oshirish uchun zanjirga nima ulangan?",
+      "v": [
+        "Reostat",
+        "Kondansator",
+        "Diod",
+        "Transformator"
+      ],
+      "t": 0,
+      "izoh": "Induktivligi L bo'lgan g'altak tok manbayiga reostat orqali ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#9961e9a8"
+    },
+    {
+      "q": "Ф–I grafigidagi uchburchak yuzining geometrik ma'nosi nimani izohlaydi?",
+      "v": [
+        "Bajarilgan ishni",
+        "Tok kuchini",
+        "Vaqt oralig'ini",
+        "Qarshilikni"
+      ],
+      "t": 0,
+      "izoh": "G'altakdagi magnit oqimi tokka to'g'ri proporsional bo'lgani uchun chizmada keltirilgan uchburchak yuzi bajarilgan ishni izohlaydi: A = I·Ф/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#528b70b6"
+    },
+    {
+      "q": "G'altakda hosil bo'lgan magnit oqimi tok ortgan sari qanday o'zgaradi?",
+      "v": [
+        "Chiziqli ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmay qoladi",
+        "Kvadratik kamayadi"
+      ],
+      "t": 0,
+      "izoh": "Ф = L·I bo'lgani uchun tok ortgan sari magnit oqimi chiziqli ortib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#7919d249"
+    },
+    {
+      "q": "Induktivligi 0,2 H bo'lgan g'altakda magnit maydon energiyasi 4 mJ bo'lishi uchun tok kuchi qancha bo'lishi kerak?",
+      "v": [
+        "0,2 A",
+        "0,1 A",
+        "2 A",
+        "0,4 A"
+      ],
+      "t": 0,
+      "izoh": "I = √(2W/L) = √(2·4·10⁻³/0,2) = √0,04 = 0,2 A.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#773aaa4f"
+    },
+    {
+      "q": "Induktivligi 30 mH bo'lgan g'altakdan 0,8 A tok o'tmoqda. G'altakning magnit maydon energiyasi qancha?",
+      "v": [
+        "9,6 mJ",
+        "1,2 mJ",
+        "4 mJ",
+        "2 mJ"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 = 0,03·0,64/2 = 0,0096 J = 9,6 mJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#90cf8c82"
+    },
+    {
+      "q": "G'altakdan 2 A tok o'tganda uning magnit maydon energiyasi 40 mJ ga teng bo'lsa, induktivligi qancha?",
+      "v": [
+        "20 mH",
+        "40 mH",
+        "10 mH",
+        "25 mH"
+      ],
+      "t": 0,
+      "izoh": "L = 2W/I² = 2·0,04/4 = 0,02 H = 20 mH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#556d41a8"
+    },
+    {
+      "q": "1 H·A² qaysi fizik kattalikning birligiga teng?",
+      "v": [
+        "Joulga",
+        "Vattga",
+        "Veberga",
+        "Voltga"
+      ],
+      "t": 0,
+      "izoh": "W = L·I²/2 formuladan [W] = H·A² = J kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#f5cecb71"
+    },
+    {
+      "q": "Magnit maydon energiyasi konturning induktivligi va tok kuchiga qanday bog'liq?",
+      "v": [
+        "Induktivlik bilan tok kuchi kvadrati ko'paytmasining yarmiga teng",
+        "Tok kuchiga teskari proporsional",
+        "Induktivlik kvadratiga to'g'ri proporsional",
+        "Tok kuchining kubiga teng"
+      ],
+      "t": 0,
+      "izoh": "Tokli kontur magnit maydon energiyasi induktivlik bilan tok kuchi kvadrati ko'paytmasining yarmiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#b318a553"
+    },
+    {
+      "q": "Elektromagnit g'altagi atrofidagi magnit maydon kuchayishi natijasida u nima qila oladi?",
+      "v": [
+        "Og'ir yuklarni bemalol ko'taradi",
+        "Yorug'lik nurlanadi",
+        "Tovush chiqaradi",
+        "Sovuq havo hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Ferromagnit o'zak tufayli maydon kuchayib, elektromagnit og'ir yuklarni bemalol ko'taradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#b201df13"
+    },
+    {
+      "q": "Elektromagnit kranlar qaysi sohalarda keng qo'llaniladi?",
+      "v": [
+        "Xalq xo'jaligining turli sohalarida",
+        "Faqat qishloq xo'jaligida",
+        "Faqat tibbiyotda",
+        "Faqat kosmik texnikada"
+      ],
+      "t": 0,
+      "izoh": "Yuklarni ko'tara oladigan elektromagnit kranlar xalq xo'jaligining turli sohalarida keng qo'llanilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#a7313399"
+    },
+    {
+      "q": "Magnit maydon energiyasi formulasidagi L·I ko'paytma nimani bildiradi?",
+      "v": [
+        "Magnit oqimini Ф ni",
+        "Kuchlanishni",
+        "Qarshilikni",
+        "Quvvatni"
+      ],
+      "t": 0,
+      "izoh": "Ф = L·I — g'altak hosil qilgan magnit oqimi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#67ab933c"
+    },
+    {
+      "q": "Tok kuchi 3 marta kamaytirilsa, g'altakning magnit maydon energiyasi qanday o'zgaradi?",
+      "v": [
+        "9 marta kamayadi",
+        "3 marta kamayadi",
+        "9 marta ortadi",
+        "3 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "W ~ I² bo'lgani uchun tok 3 marta kamaysa, energiya 9 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#a2ccaf74"
+    },
+    {
+      "q": "Induktivlik mexanikadagi massaga o'xshatiladi. Bu o'xshatish nimani anglatadi?",
+      "v": [
+        "Massa tezlik o'zgarishida qanday rol o'ynasa, induktivlik tok kuchi o'zgarishida shunday rol o'ynaydi",
+        "Induktivlik ham massa kabi tortishish kuchiga ega",
+        "Massa va induktivlik bir xil birlikda o'lchanadi",
+        "Induktivlik katta bo'lsa, g'altak og'irroq bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Jism massasi uning tezligini o'zgartirishda qanday rol o'ynasa, induktivlik ham konturda tok kuchining o'zgarishida shunday rol o'ynaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#1063104e"
+    },
+    {
+      "q": "G'altakdan 0,4 A tok o'tganda magnit maydon energiyasi 0,8 mJ bo'lsa, g'altakning induktivligi qancha?",
+      "v": [
+        "10 mH",
+        "5 mH",
+        "20 mH",
+        "2 mH"
+      ],
+      "t": 0,
+      "izoh": "L = 2W/I² = 2·0,8·10⁻³/0,16 = 0,01 H = 10 mH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#3b0d1b34"
+    },
+    {
+      "q": "Tokli g'altakning magnit maydon energiyasi uning magnit oqimi Ф va tok kuchi I orqali qanday ifodalanadi?",
+      "v": [
+        "W = I·Ф/2",
+        "W = I·Ф",
+        "W = 2·I·Ф",
+        "W = Ф/(2I)"
+      ],
+      "t": 0,
+      "izoh": "W = A = I·Ф/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#e139d21b"
+    },
+    {
+      "q": "Ikki bir xil g'altakdan birinchisida tok 2 marta katta bo'lsa, birinchi g'altakning magnit maydon energiyasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "4 marta",
+        "2 marta",
+        "8 marta",
+        "Bir xil"
+      ],
+      "t": 0,
+      "izoh": "W ~ I², demak tok 2 marta katta bo'lsa, energiya 4 marta katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#c6eb7185"
+    },
+    {
+      "q": "Magnit maydon energiyasining kinetik energiyaga o'xshatilishi qaysi jihatdan muhim?",
+      "v": [
+        "Induktivlikning fizik ma'nosini — tok o'zgarishiga qarshilik xususiyatini tushunishga yordam beradi",
+        "Energiya birliklarini o'zgartirishga yordam beradi",
+        "Magnit oqimini hisoblashni soddalashtiradi",
+        "Hech qanday amaliy ahamiyatga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Bu o'xshatish induktivlik massaga o'xshash fizik kattalik ekanligini — tok o'zgarishiga inersiya kabi qarshilik ko'rsatishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m10-magnit-maydon-energiyasi#2a950b28"
+    }
+  ]
+}

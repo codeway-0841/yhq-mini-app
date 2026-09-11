@@ -1,0 +1,3166 @@
+{
+  "nom": "Gap turlarini izoh bilan moslashtirish",
+  "bolim": "Moslashtirish",
+  "savollar": [
+    {
+      "id": "sert_thl_m90-gap-moslash#75c71126",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "B",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "C",
+          "atov gap"
+        ],
+        [
+          "D",
+          "sodda yoyiq gap"
+        ],
+        [
+          "E",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "F",
+          "shaxsi noma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/nomalum",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#9bf9d293",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "sodda yig'iq gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/boglangan",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#2a898a4c",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "C",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "D",
+          "shaxssiz gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "atov gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/malum",
+        "gap-turi/umumlashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#5f651fc8",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "D"
+        },
+        {
+          "n": 34,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "sodda yoyiq gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "shaxssiz gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/malum",
+        "gap-turi/umumlashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#dfed80a0",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "B",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "so'z-gap"
+        ],
+        [
+          "F",
+          "atov gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#3eabc9e7",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "shaxssiz gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "ergashgan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/umumlashgan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#d1e24a04",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "B"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "D"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "C",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "D",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "E",
+          "shaxssiz gap"
+        ],
+        [
+          "F",
+          "so'z-gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglangan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#a050ee2c",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "B",
+          "sodda yoyiq gap"
+        ],
+        [
+          "C",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "D",
+          "sodda yig'iq gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi umumlashgan gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 35 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/boglovchisiz",
+        "gap-turi/umumlashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#2491590b",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "D"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "so'z-gap"
+        ],
+        [
+          "B",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "C",
+          "sodda yig'iq gap"
+        ],
+        [
+          "D",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "bog'langan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/boglovchisiz",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#c1a50006",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "so'z-gap"
+        ],
+        [
+          "B",
+          "sodda yig'iq gap"
+        ],
+        [
+          "C",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "bog'lovchisiz qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/malum",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#20cb1995",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "so'z-gap"
+        ],
+        [
+          "B",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "shaxssiz gap"
+        ],
+        [
+          "E",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "F",
+          "bog'lovchisiz qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglovchisiz",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#2e5a8b14",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "sodda yig'iq gap"
+        ],
+        [
+          "B",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "C",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "D",
+          "atov gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "sodda yoyiq gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/ergashgan",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#e1ba5031",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "B"
+        },
+        {
+          "n": 35,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "D"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "atov gap"
+        ],
+        [
+          "B",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "C",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "F",
+          "sodda yig'iq gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 35 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/boglovchisiz",
+        "gap-turi/umumlashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#778449f5",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "atov gap"
+        ],
+        [
+          "B",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "C",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "D",
+          "shaxssiz gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/ergashgan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#1cc72267",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "D"
+        },
+        {
+          "n": 34,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxssiz gap"
+        ],
+        [
+          "B",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "C",
+          "so'z-gap"
+        ],
+        [
+          "D",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "E",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "F",
+          "bog'langan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/malum",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#880fd66a",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "D"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "atov gap"
+        ],
+        [
+          "B",
+          "shaxssiz gap"
+        ],
+        [
+          "C",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/boglangan",
+        "gap-turi/umumlashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#97f47c51",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "D"
+        },
+        {
+          "n": 34,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "sodda yoyiq gap"
+        ],
+        [
+          "F",
+          "atov gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 35 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/nomalum",
+        "gap-turi/ergashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#7af3983a",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "E",
+          "sodda yig'iq gap"
+        ],
+        [
+          "F",
+          "ergashgan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglangan",
+        "gap-turi/ergashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#5ae7c4f9",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "B"
+        },
+        {
+          "n": 35,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "sodda yig'iq gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "ergashgan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/malum",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#c0eb1726",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "D"
+        },
+        {
+          "n": 34,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "so'z-gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "atov gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "F",
+          "bog'lovchisiz qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/malum",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#e1af6982",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "B"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "sodda yig'iq gap"
+        ],
+        [
+          "D",
+          "sodda yoyiq gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi noma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/nomalum",
+        "gap-turi/malum",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#1082695f",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "B"
+        },
+        {
+          "n": 34,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "atov gap"
+        ],
+        [
+          "B",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxssiz gap"
+        ],
+        [
+          "D",
+          "sodda yig'iq gap"
+        ],
+        [
+          "E",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "F",
+          "shaxsi umumlashgan gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/umumlashgan",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#2eb26d5c",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "F"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "shaxssiz gap"
+        ],
+        [
+          "E",
+          "atov gap"
+        ],
+        [
+          "F",
+          "bog'langan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#e4a1de34",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "so'z-gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/ergashgan",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#c4f61ce3",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "sodda yoyiq gap"
+        ],
+        [
+          "B",
+          "shaxssiz gap"
+        ],
+        [
+          "C",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "D",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi umumlashgan gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/umumlashgan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#d97c1301",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "A"
+        },
+        {
+          "n": 34,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "D"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "sodda yoyiq gap"
+        ],
+        [
+          "C",
+          "atov gap"
+        ],
+        [
+          "D",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "E",
+          "shaxssiz gap"
+        ],
+        [
+          "F",
+          "shaxsi noma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/nomalum",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#faa7cf9e",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "B"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "C",
+          "so'z-gap"
+        ],
+        [
+          "D",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "bog'langan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/boglangan",
+        "gap-turi/ergashgan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#df1bd125",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "D"
+        },
+        {
+          "n": 35,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "B",
+          "atov gap"
+        ],
+        [
+          "C",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "D",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "E",
+          "sodda yig'iq gap"
+        ],
+        [
+          "F",
+          "shaxsi noma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/umumlashgan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#1ce1dce9",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "C",
+          "sodda yig'iq gap"
+        ],
+        [
+          "D",
+          "atov gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "bog'langan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 34 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 35 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/ergashgan",
+        "gap-turi/boglangan",
+        "gap-turi/nomalum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#2d26d432",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "B"
+        },
+        {
+          "n": 34,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "D"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "so'z-gap"
+        ],
+        [
+          "B",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "atov gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/malum",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#5bc4b978",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "B"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "sodda yoyiq gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "bog'lovchisiz qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/ergashgan",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#75873b0e",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "B"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "D",
+          "sodda yoyiq gap"
+        ],
+        [
+          "E",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "F",
+          "so'z-gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/nomalum",
+        "gap-turi/ergashgan",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#a9ae098e",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "D"
+        },
+        {
+          "n": 34,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "C",
+          "sodda yoyiq gap"
+        ],
+        [
+          "D",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "E",
+          "so'z-gap"
+        ],
+        [
+          "F",
+          "ergashgan qo'shma gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/ergashgan",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#77522c95",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Bu bino o'tgan asrning boshlarida pishiq g'ishtdan qurilgan.",
+          "javob": "C"
+        },
+        {
+          "n": 35,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxssiz gap"
+        ],
+        [
+          "B",
+          "sodda yoyiq gap"
+        ],
+        [
+          "C",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/nomalum",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#dc67c4ec",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Kim mehnatni sevsa, o'sha kishi hayotda hech qachon kam bo'lmaydi.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "B"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "B",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "C",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "D",
+          "so'z-gap"
+        ],
+        [
+          "E",
+          "sodda yoyiq gap"
+        ],
+        [
+          "F",
+          "sodda yig'iq gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan. 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglangan",
+        "gap-turi/ergashgan",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#85307479",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "C"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor erta kelgani uchun dehqonlar ekin ishlarini o'n kun oldin boshlashdi.",
+          "javob": "E"
+        },
+        {
+          "n": 35,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "D"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi noma'lum gap"
+        ],
+        [
+          "B",
+          "sodda yoyiq gap"
+        ],
+        [
+          "C",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "D",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "E",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "F",
+          "so'z-gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 34 — ergashgan qo'shma gap: ergash gap bosh gapga ergashtiruvchi vosita orqali bog'langan. 35 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/umumlashgan",
+        "gap-turi/ergashgan",
+        "gap-turi/malum"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#054cb3ae",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Bahor keldi, havo isidi, dala-dashtlar ko'm-ko'k maysaga burkandi.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "E"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "B",
+          "so'z-gap"
+        ],
+        [
+          "C",
+          "shaxssiz gap"
+        ],
+        [
+          "D",
+          "atov gap"
+        ],
+        [
+          "E",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/boglovchisiz",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#294a92ef",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Erta tongda uyg'onib, bog'dagi daraxtlarga suv quydim va shoshilmasdan ishga otlandim.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Ekkaningni o'rasan, mehnat qilmasang, hech qachon natijaga erishmaysan.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Yomg'ir to'xtadi, ammo osmonni qoplagan bulutlar hamon tarqamagan edi.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "B",
+          "sodda yig'iq gap"
+        ],
+        [
+          "C",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "D",
+          "so'z-gap"
+        ],
+        [
+          "E",
+          "shaxsi ma'lum gap"
+        ],
+        [
+          "F",
+          "shaxsi umumlashgan gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#09b6ebb5",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "E"
+        },
+        {
+          "n": 34,
+          "matn": "Bizning qishloqda non azaldan xamirturushsiz, qizib turgan tandirda yopiladi.",
+          "javob": "F"
+        },
+        {
+          "n": 35,
+          "matn": "Bahor keldi va uzoq kutilgan iliq kunlar nihoyat boshlandi.",
+          "javob": "A"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "B",
+          "atov gap"
+        ],
+        [
+          "C",
+          "so'z-gap"
+        ],
+        [
+          "D",
+          "sodda yig'iq gap"
+        ],
+        [
+          "E",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "F",
+          "shaxsi noma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan. 34 — shaxsi noma'lum gap: ish-harakatni kim bajarayotgani noma'lum, kesim majhul nisbatda. 35 — bog'langan qo'shma gap: sodda gaplar teng bog'lovchi («va», «ammo») bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/boglovchisiz",
+        "gap-turi/nomalum",
+        "gap-turi/boglangan"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    },
+    {
+      "id": "sert_thl_m90-gap-moslash#c8472b5b",
+      "q": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "v": null,
+      "t": null,
+      "tur": "Y-2",
+      "kirish": "Gaplar (33, 34, 35) va ularga oid izohlar (A–F) ni o'zaro to'g'ri moslashtiring.",
+      "bandlar": [
+        {
+          "n": 33,
+          "matn": "Kecha kechqurun barcha darslarimni tugatib, ertalabki mashg'ulotga puxta tayyorgarlik ko'rdim.",
+          "javob": "F"
+        },
+        {
+          "n": 34,
+          "matn": "Yaxshilik qilsang, uni albatta bir kun qaytib olasan, deydi donishmand xalqimiz.",
+          "javob": "A"
+        },
+        {
+          "n": 35,
+          "matn": "Quyosh botdi, atrofni qorong'ilik qopladi, uzoqdan chiroqlar ko'rina boshladi.",
+          "javob": "C"
+        }
+      ],
+      "yorliqlar": [
+        [
+          "A",
+          "shaxsi umumlashgan gap"
+        ],
+        [
+          "B",
+          "ergashgan qo'shma gap"
+        ],
+        [
+          "C",
+          "bog'lovchisiz qo'shma gap"
+        ],
+        [
+          "D",
+          "bog'langan qo'shma gap"
+        ],
+        [
+          "E",
+          "so'z-gap"
+        ],
+        [
+          "F",
+          "shaxsi ma'lum gap"
+        ]
+      ],
+      "guruh": [
+        33,
+        34,
+        35
+      ],
+      "izoh": "33 — shaxsi ma'lum gap: kesimdagi shaxs-son qo'shimchasi egani aniq ko'rsatadi. 34 — shaxsi umumlashgan gap: harakat har qanday shaxsga birdek taalluqli (maqol shaklidagi gap). 35 — bog'lovchisiz qo'shma gap: sodda gaplar faqat ohang va vergul bilan bog'langan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "orin": [
+        33,
+        34,
+        35
+      ],
+      "bolim": "thl",
+      "mavzu": "sert_thl_m90-gap-moslash",
+      "teg": [
+        "tahlil/moslashtirish",
+        "gap-turi/malum",
+        "gap-turi/umumlashgan",
+        "gap-turi/boglovchisiz"
+      ],
+      "ball": 1.7,
+      "tip": "yopiq4",
+      "sahna": null,
+      "javob": null,
+      "manba": "TestUp — rasmiy spetsifikatsiya asosida",
+      "ishonch": "B1"
+    }
+  ]
+}

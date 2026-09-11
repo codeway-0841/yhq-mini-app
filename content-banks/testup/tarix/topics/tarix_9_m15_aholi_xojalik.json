@@ -1,0 +1,681 @@
+{
+  "nom": "15-mavzu. Aholi_xojalik",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Buxoro va Qarshi atroflarida yashagan qabilani aniqlang.",
+      "v": [
+        "Mangitlar",
+        "Xitoylar",
+        "Qipchoqlar",
+        "Naymanlar"
+      ],
+      "t": 0,
+      "izoh": "Buxoro va Qarshi atroflarida mangitlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#ff179339"
+    },
+    {
+      "q": "Buxoro va Karmanada yashagan qabilani belgilang.",
+      "v": [
+        "Xitoylar",
+        "Mangitlar",
+        "Qipchoqlar",
+        "Naymanlar"
+      ],
+      "t": 0,
+      "izoh": "Buxoro va Karmanada xitoylar qabilasi yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#5b88fed6"
+    },
+    {
+      "q": "Ziyovuddinda yashagan qabilani aniqlang.",
+      "v": [
+        "Naymanlar",
+        "Xitoylar",
+        "Mangitlar",
+        "Qipchoqlar"
+      ],
+      "t": 0,
+      "izoh": "Ziyovuddinda naymanlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#9eaa6c34"
+    },
+    {
+      "q": "Kattaqorgon va Samarqandda yashagan qabilani belgilang.",
+      "v": [
+        "Qipchoqlar",
+        "Xitoylar",
+        "Mangitlar",
+        "Naymanlar"
+      ],
+      "t": 0,
+      "izoh": "Kattaqorgon va Samarqandda qipchoqlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#5df1731e"
+    },
+    {
+      "q": "Mirzacholda yashagan qabila nomini aniqlang.",
+      "v": [
+        "Saroylar",
+        "Qongirotlar",
+        "Dormonlar",
+        "Burgutlar"
+      ],
+      "t": 0,
+      "izoh": "Mirzacholda saroylar qabilasi yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#c3f4a2bd"
+    },
+    {
+      "q": "Samarqanddan Qarshiga boruvchi yol boylab, Qarshi va uning ortasidagi toglarda yashagan qabila nomini aniqlang.",
+      "v": [
+        "Qongirotlar",
+        "Saroylar",
+        "Dormonlar",
+        "Burgutlar"
+      ],
+      "t": 0,
+      "izoh": "Samarqand-Qarshi yoli boyidagi toglarda qongirotlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#da1afc68"
+    },
+    {
+      "q": "Gijduvon atrofida yashagan qabila nomini aniqlang.",
+      "v": [
+        "Dormonlar",
+        "Qongirotlar",
+        "Saroylar",
+        "Burgutlar"
+      ],
+      "t": 0,
+      "izoh": "Gijduvon atrofida dormonlar qabilasi yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#f32b2f98"
+    },
+    {
+      "q": "Nurda yashagan qabila nomini aniqlang.",
+      "v": [
+        "Burgutlar",
+        "Qongirotlar",
+        "Kenagaslar",
+        "Dormonlar"
+      ],
+      "t": 0,
+      "izoh": "Nurda burgutlar qabilasi yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#3396f5a7"
+    },
+    {
+      "q": "Shahrisabzda yashagan qabila nomini aniqlang.",
+      "v": [
+        "Kenagaslar",
+        "Qongirotlar",
+        "Dormonlar",
+        "Burgutlar"
+      ],
+      "t": 0,
+      "izoh": "Shahrisabzda kenagaslar qabilasi yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#6036f7ee"
+    },
+    {
+      "q": "Quyidagi qabilalar orasidan yarimkochmanchi hayot tarzini kechirib, dehqonchilik va chorvachilik bilan shugullangan qabilalarni aniqlang. 1.Qipchoq 2.Qangli 3.Abdal 4.Yuz 5.Qarluq 6.Qalmoq 7.Nayman 8.Barlos 9.Jaloir",
+      "v": [
+        "2,3,5,8,9",
+        "1,2,4,7,9",
+        "1,2,4,8,9",
+        "2,3,6,8,9"
+      ],
+      "t": 0,
+      "izoh": "Yarimkochmanchi hayot kechirgan qabilalar: Qangli, Abdal, Qarluq, Barlos, Jaloir (2,3,5,8,9).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#81e70635"
+    },
+    {
+      "q": "Bozorlarga qora va kulrang qorakol yetkazib bergan arablarning yashagan hududlarini aniqlang.",
+      "v": [
+        "Vardanza, Samarqand, Qarshi",
+        "Panjikent, Sheroz, Urgut va Samarqand",
+        "Miyonqol va Shahrisabz",
+        "Samarqand, Buxoro, Shahrisabz, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "Qorakol yetkazib bergan arablar Vardanza, Samarqand, Qarshida yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#ea944fde"
+    },
+    {
+      "q": "Marvlik oilalar quyidagi qaysi hududga kochib kelib ornashadi.",
+      "v": [
+        "Samarqand",
+        "Zarafshon vohasi",
+        "Fargona vodiysi",
+        "Buxoro"
+      ],
+      "t": 0,
+      "izoh": "Marvlik oilalar Samarqandga kochib kelib ornashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#5aac1a09"
+    },
+    {
+      "q": "Buxoro xonligida dasht yerlari va mamlakatning shimolida yashagan xalqlarni aniqlang.",
+      "v": [
+        "Forslar, turkmanlar",
+        "Qoraqalpoqlar",
+        "Kichik va Orta Juz qozoqlari",
+        "Tatar, afgon, hindlar"
+      ],
+      "t": 0,
+      "izoh": "Dasht yerlari va shimolda forslar, turkmanlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#4e6ab35e"
+    },
+    {
+      "q": "Mangitlar davrida Zarafshon vodiysida yashagan xalqlarni aniqlang.",
+      "v": [
+        "Qoraqalpoqlar",
+        "Forslar, turkmanlar",
+        "Kichik va Orta Juz qozoqlari",
+        "Tatar, afgon, hindlar"
+      ],
+      "t": 0,
+      "izoh": "Mangitlar davrida Zarafshon vodiysida qoraqalpoqlar yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#da8fb31a"
+    },
+    {
+      "q": "Mangitlar davrida mamlakatning shimoli-sharqida yashagan xalqlarni aniqlang.",
+      "v": [
+        "Kichik va Orta Juz qozoqlari",
+        "Qoraqalpoqlar",
+        "Forslar, turkmanlar",
+        "Tatar, afgon, hindlar"
+      ],
+      "t": 0,
+      "izoh": "Mamlakatning shimoli-sharqida Kichik va Orta Juz qozoqlari yashagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#f9b1a640"
+    },
+    {
+      "q": "Aleksandr Byorns Buxoroda qachon bolganini aniqlang.",
+      "v": [
+        "1832-yil",
+        "1863-yil",
+        "1783-yil",
+        "1785-yil"
+      ],
+      "t": 0,
+      "izoh": "Aleksandr Byorns Buxoroda 1832-yilda bolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#5039adda"
+    },
+    {
+      "q": "A.Byorns Buxoro qovunlarini qaysi xalq qovunlari bilan qiyoslab bolmasligini aytgan.",
+      "v": [
+        "Hind va fors",
+        "Hind va afgon",
+        "Turk va fors",
+        "Hind va turk"
+      ],
+      "t": 0,
+      "izoh": "A.Byorns Buxoro qovunlarini hind va fors qovunlari bilan qiyoslab bolmasligini aytgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#a03e9fc2"
+    },
+    {
+      "q": "Quyidagi qaysi hududda suniy sugorish tizimlarining bunyod etilishi faol tarzda olib borilgan.",
+      "v": [
+        "Zarafshon vohasi",
+        "Samarqand",
+        "Fargona vodiysi",
+        "Buxoro"
+      ],
+      "t": 0,
+      "izoh": "Suniy sugorish tizimlari Zarafshon vohasida faol bunyod etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#b9a214fa"
+    },
+    {
+      "q": "XVIII asrning 50-yillarida quyidagi qaysi hududlarda Oqdaryo va Qoradaryodan qazilgan ariqlar tozalanadi.",
+      "v": [
+        "Panjikent, Sheroz, Urgut va Samarqand",
+        "Miyonqol va Shahrisabz",
+        "Samarqand, Buxoro, Shahrisabz, Qarshi",
+        "Vardanza, Samarqand, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "XVIII asr 50-yillarida Panjikent, Sheroz, Urgut va Samarqandda ariqlar tozalangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#2085c48d"
+    },
+    {
+      "q": "Quyidagi qaysi hududlarda yetishtirilgan sholi nihoyatda yuqori baholangan.",
+      "v": [
+        "Miyonqol va Shahrisabz",
+        "Panjikent, Sheroz, Urgut va Samarqand",
+        "Samarqand, Buxoro, Shahrisabz, Qarshi",
+        "Vardanza, Samarqand, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "Miyonqol va Shahrisabzda yetishtirilgan sholi yuqori baholangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#6a48bc24"
+    },
+    {
+      "q": "Buxoro amirligida quyidagi qaysi hududda bedona nomli anorlar yetishtirilgan.",
+      "v": [
+        "Shahrisabz",
+        "Samarqand",
+        "Buxoro",
+        "Marv"
+      ],
+      "t": 0,
+      "izoh": "Buxoro amirligida bedona nomli anorlar Shahrisabzda yetishtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#1a126124"
+    },
+    {
+      "q": "Buxoro amirligida quyidagi qaysi hududda yetishtirilgan shaftoli juda mashhur edi.",
+      "v": [
+        "Samarqand",
+        "Shahrisabz",
+        "Buxoro",
+        "Marv"
+      ],
+      "t": 0,
+      "izoh": "Buxoro amirligida Samarqand shaftolisi mashhur edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#ec1676a6"
+    },
+    {
+      "q": "Quyidagi qaysi hudud yaqinidagi toglarda bodom yetishtirilgan.",
+      "v": [
+        "Shahrisabz",
+        "Samarqand",
+        "Buxoro",
+        "Marv"
+      ],
+      "t": 0,
+      "izoh": "Shahrisabz yaqinidagi toglarda bodom yetishtirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#981fd9be"
+    },
+    {
+      "q": "Buxoro amirligida aholi quyidagi qaysi sohalar bilan shugullanganini aniqlang.",
+      "v": [
+        "Kaklik va baliq ovlash",
+        "Dehqonchilik va baliq ovlash",
+        "Dehqonchilik va chorvachilik",
+        "Kaklik ovlash va chorvachilik"
+      ],
+      "t": 0,
+      "izoh": "Buxoro amirligida aholi kaklik va baliq ovlash bilan ham shugullangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#f6fdc404"
+    },
+    {
+      "q": "Savdo taraqqiyoti natijasida iqtisodiy qudrati osgan hududlarni aniqlang.",
+      "v": [
+        "Samarqand, Buxoro, Shahrisabz, Qarshi",
+        "Panjikent, Sheroz, Urgut va Samarqand",
+        "Miyonqol va Shahrisabz",
+        "Vardanza, Samarqand, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "Savdo tufayli Samarqand, Buxoro, Shahrisabz, Qarshining iqtisodiy qudrati osgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#3540e670"
+    },
+    {
+      "q": "Buxoro amirlari tomonidan rus podshosiga hadya sifatida yuborilgan harbiy chodir hozirda qayerda saqlanmoqda.",
+      "v": [
+        "Ermitaj",
+        "Tretyakov galereyasi",
+        "Davlat Rus muzeyi",
+        "Moskva Kremlining Tarix muzeyi"
+      ],
+      "t": 0,
+      "izoh": "Buxoro amirlari yuborgan harbiy chodir Ermitajda saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#6af98e9d"
+    },
+    {
+      "q": "Quyidagi qaysi hududlar paxta yetishtirishga ixtisoslashgan edi.",
+      "v": [
+        "Buxoro, Shahrisabz, Kattaqorgon",
+        "Qarshi, Urgut, Kattaqorgon",
+        "Samarqand, Buxoro, Shahrisabz, Qarshi",
+        "Vardanza, Samarqand, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "Buxoro, Shahrisabz, Kattaqorgon paxta yetishtirishga ixtisoslashgan edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#fde02e8f"
+    },
+    {
+      "q": "Oq va qizgish navli hisoblangan va biroz qizgish tusga ega bolgan gozaga quyidagi qaysi davlatda talab katta edi.",
+      "v": [
+        "Rossiya",
+        "Eron",
+        "Hindiston",
+        "Turkiya"
+      ],
+      "t": 0,
+      "izoh": "Qizgish navli gozaga Rossiyada talab katta edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#7a71649b"
+    },
+    {
+      "q": "Quyidagi qaysi hududlarda yetishtirilgan tamaki yuqori baholangan.",
+      "v": [
+        "Qarshi, Urgut, Kattaqorgon",
+        "Buxoro, Shahrisabz, Kattaqorgon",
+        "Samarqand, Buxoro, Shahrisabz, Qarshi",
+        "Vardanza, Samarqand, Qarshi"
+      ],
+      "t": 0,
+      "izoh": "Qarshi, Urgut, Kattaqorgonda yetishtirilgan tamaki yuqori baholangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "tarix_9_m15_aholi_xojalik#c95d633f"
+    },
+    {
+      "q": "Buxorodan Hirotga olib borilgan turli boyoq beruvchi osimlik nomini aniqlang.",
+      "v": [
+        "Buzgunch",
+        "Royon",
+        "Tamaki",
+        "Isparak"
+      ],
+      "t": 0,
+      "izoh": "Buxorodan Hirotga boyoq beruvchi buzgunch osimligi olib borilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#0cb1a4de"
+    },
+    {
+      "q": "Buxoro amirligida pul muomalasi borasidagi tartibsizliklarga barham beruvchi islohot otkazilgan vaqtni aniqlang.",
+      "v": [
+        "1785-yil",
+        "1863-yil",
+        "1783-yil",
+        "1832-yil"
+      ],
+      "t": 0,
+      "izoh": "Buxoro amirligida pul islohoti 1785-yilda otkazilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#287d9d5b"
+    },
+    {
+      "q": "Qachonga kelib kumush tangalar kichkina, yumaloq shaklda bolib, yuqori soflik darajasiga ega edi.",
+      "v": [
+        "1785-yil",
+        "1863-yil",
+        "1783-yil",
+        "1832-yil"
+      ],
+      "t": 0,
+      "izoh": "1785-yilda kumush tangalar kichkina, yumaloq va yuqori soflik darajasiga ega bolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#9723a232"
+    },
+    {
+      "q": "Buxoro amirligida 1753-1758-yillarda quyidagi qaysi hukmdor tomonidan chiqarilgan tanga-miri muomalada qoldiriladi.",
+      "v": [
+        "Muhammad Rahim",
+        "Doniyolbiy",
+        "Shohmurod",
+        "Amir Haydar"
+      ],
+      "t": 0,
+      "izoh": "1753-1758-yillarda Muhammad Rahim chiqargan tanga-miri muomalada qoldirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#f10f37d7"
+    },
+    {
+      "q": "Turk elchisi Olamgir Mehmed quyidagi qaysi hukmdordan rus hukumatiga qarshi chiqishni soraydi.",
+      "v": [
+        "Shohmurod",
+        "Muhammad Rahim",
+        "Doniyolbiy",
+        "Amir Haydar"
+      ],
+      "t": 0,
+      "izoh": "Turk elchisi Olamgir Mehmed Shohmuroddan rus hukumatiga qarshi chiqishni soragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#384de449"
+    },
+    {
+      "q": "Olamgir Mehmed Buxoro hukmdoridan quyidagi qaysi hududda yashovchi qirgizlar va qozoqlar orasida ruslarga qarshi gazavot goyasini targib qilishni soraydi.",
+      "v": [
+        "Qipchoq dashti",
+        "Yettisuv",
+        "Xorazm",
+        "Orolboyi"
+      ],
+      "t": 0,
+      "izoh": "Olamgir Mehmed Qipchoq dashtidagi qirgiz va qozoqlar orasida gazavot targib qilishni soragan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#d35b76d4"
+    },
+    {
+      "q": "Mangitlar tomonidan ondan ortiq elchilar quyidagi qaysi hududga yuborilganini aniqlang.",
+      "v": [
+        "Istanbul",
+        "Tabriz",
+        "Dehli",
+        "Pekin"
+      ],
+      "t": 0,
+      "izoh": "Mangitlar ondan ortiq elchini Istanbulga yuborgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#0a064c67"
+    },
+    {
+      "q": "Quyidagi shaxslardan qaysi biri Ost-Indiya kompaniyasining maxfiy topshirishlarini bajargan shaxs hisoblanmaydi.",
+      "v": [
+        "A.Vamberi",
+        "D.Trebek",
+        "A.Konolli",
+        "U.Murkroft"
+      ],
+      "t": 0,
+      "izoh": "A.Vamberi Ost-Indiya kompaniyasining maxfiy topshiriqlarini bajarmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#0581158b"
+    },
+    {
+      "q": "“Mahalliy mahsulotlarning hammasi juda arzondir va shuning uchun Buxoroning koylak bozori serhasham kiyim bilan Xitoy Tatariyasiga qadar barcha musulmonlarni taminlaydi”. Bu malumotning kimga tegishli ekanini aniqlang.",
+      "v": [
+        "A.Vamberi",
+        "D.Trebek",
+        "A.Konolli",
+        "U.Murkroft"
+      ],
+      "t": 0,
+      "izoh": "Ushbu malumot A.Vamberiga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#ba1610ba"
+    },
+    {
+      "q": "Arminiy Vamberining qachon Turkistonda bolganini aniqlang.",
+      "v": [
+        "1863-yil",
+        "1783-yil",
+        "1785-yil",
+        "1791-yil"
+      ],
+      "t": 0,
+      "izoh": "Arminiy Vamberi Turkistonda 1863-yilda bolgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#94ee6600"
+    },
+    {
+      "q": "Qrim Rossiya tarkibiga dastlab qachon otganini aniqlang.",
+      "v": [
+        "1783-yil",
+        "1792-yil",
+        "1785-yil",
+        "1791-yil"
+      ],
+      "t": 0,
+      "izoh": "Qrim Rossiya tarkibiga dastlab 1783-yilda otgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#e1e4613b"
+    },
+    {
+      "q": "Qrim rasmiy ravishda qachon Rossiya tarkibiga otadi.",
+      "v": [
+        "1791-yil",
+        "1792-yil",
+        "1783-yil",
+        "1785-yil"
+      ],
+      "t": 0,
+      "izoh": "Qrim rasmiy ravishda 1791-yilda Rossiya tarkibiga otgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#1ff211a2"
+    },
+    {
+      "q": "Yassi tinchlik shartnomasi imzolangan vaqtni aniqlang.",
+      "v": [
+        "1792-yil",
+        "1783-yil",
+        "1785-yil",
+        "1791-yil"
+      ],
+      "t": 0,
+      "izoh": "Yassi tinchlik shartnomasi 1792-yilda imzolangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#537bebf7"
+    },
+    {
+      "q": "Rossiyaning Qrimda mustahkam ornashib olishga qaratilgan birinchi urinishi qaysi hukmdor davriga togri keladi.",
+      "v": [
+        "Pyotr I",
+        "Yekaterina I",
+        "Anna Ioannovna",
+        "Yekaterina II"
+      ],
+      "t": 0,
+      "izoh": "Rossiyaning Qrimga birinchi urinishi Pyotr I davriga togri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#3cfe25e0"
+    },
+    {
+      "q": "Azov kampaniyasi qaysi hukmdor davrida amalga oshirilgan.",
+      "v": [
+        "Pyotr I",
+        "Yekaterina I",
+        "Anna Ioannovna",
+        "Yekaterina II"
+      ],
+      "t": 0,
+      "izoh": "Azov kampaniyasi Pyotr I davrida amalga oshirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#5027f07a"
+    },
+    {
+      "q": "Qrimni qoshib olish qaysi hukmdor davrida amalga oshirilgan.",
+      "v": [
+        "Yekaterina II",
+        "Yekaterina I",
+        "Pyotr I",
+        "Anna Ioannovna"
+      ],
+      "t": 0,
+      "izoh": "Qrimni qoshib olish Yekaterina II davrida amalga oshirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "tarix_9_m15_aholi_xojalik#aad7cbaa"
+    }
+  ]
+}

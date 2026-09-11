@@ -1,0 +1,1609 @@
+{
+  "nom": "Irratsional tengsizliklar",
+  "bolim": "Tengsizliklar",
+  "blok": "tngs",
+  "rasmiyBolim": 3,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Mahmud √(3x − 12) ifodasi qatnashgan tengsizlikni yechishga kirishdi. Ildiz ostidagi ifoda manfiy bo'lmasligi uchun x qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "x ≥ 12",
+        "x ≥ 4",
+        "x > 4",
+        "x ≥ −4"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildiz ostidagi ifoda manfiy bo'la olmaydi, shuning uchun 3x − 12 ≥ 0 deb yozamiz. Bundan 3x ≥ 12, ya'ni x ≥ 4 kelib chiqadi. Tenglik holida ildiz nolga teng bo'ladi, demak x = 4 ham sohaga kiradi. Javob: x ≥ 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#d84bbb7b"
+    },
+    {
+      "q": "√(25 − x²) ifodasi haqiqiy son bo'lishi uchun x qaysi oraliqda yotishi kerakligini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "(−5; 5)",
+        "(−∞; −5] ∪ [5; +∞)",
+        "[−5; 5]",
+        "[−25; 25]"
+      ],
+      "t": 2,
+      "izoh": "Shart 25 − x² ≥ 0 ko'rinishida yoziladi, ya'ni x² ≤ 25. Bundan |x| ≤ 5, demak −5 ≤ x ≤ 5. Chegaralarda ildiz nolga teng bo'lgani uchun ular ham sohaga kiradi. Javob: [−5; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#f44c6b12"
+    },
+    {
+      "q": "Diyora daftariga √(x² − 9x + 20) ifodasini yozdi. Bu ifodaning aniqlanish sohasi qanday to'plamdan iborat bo'ladi?",
+      "v": [
+        "[4; 5]",
+        "(−∞; 4) ∪ (5; +∞)",
+        "(−∞; −5] ∪ [−4; +∞)",
+        "(−∞; 4] ∪ [5; +∞)"
+      ],
+      "t": 3,
+      "izoh": "x² − 9x + 20 ≥ 0 tengsizligini yechamiz. Kvadrat uchhadning ildizlari 4 va 5, parabola tarmoqlari yuqoriga qaragan. Shuning uchun ifoda ildizlardan tashqarida manfiy bo'lmaydi: x ≤ 4 yoki x ≥ 5. Javob: (−∞; 4] ∪ [5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#d699a47f"
+    },
+    {
+      "q": "Bitta tengsizlikda √(8 − 2x) va √(x + 1) ildizlari birga qatnashgan. Ikkala ildiz ham bir vaqtda ma'noga ega bo'ladigan x larni toping.",
+      "v": [
+        "[−1; 4]",
+        "[−1; 8]",
+        "[1; 4]",
+        "(−∞; 4]"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildiz uchun 8 − 2x ≥ 0 shartidan x ≤ 4 chiqadi. Ikkinchi ildiz uchun x + 1 ≥ 0 shartidan x ≥ −1 chiqadi. Ikkala shart birga bajarilishi kerak, shuning uchun −1 ≤ x ≤ 4. Javob: [−1; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#4975a144"
+    },
+    {
+      "q": "Nodira √(x + 3) < x − 1 tengsizligini sistemaga o'tkazmoqchi. Quyidagilardan qaysi biri unga teng kuchli sistema bo'lishini aniqlang.",
+      "v": [
+        "x + 3 ≥ 0, x + 3 < (x − 1)²",
+        "x − 1 > 0, x + 3 > (x − 1)²",
+        "x + 3 ≥ 0, x − 1 > 0, x + 3 < (x − 1)²",
+        "x + 3 > 0, x − 1 ≥ 0, x + 3 < x² − 1"
+      ],
+      "t": 2,
+      "izoh": "√f(x) < g(x) ko'rinishida uchta shart birga yoziladi: ildiz osti manfiy emas, o'ng tomon qat'iy musbat va kvadratga ko'tarilgan tengsizlik saqlanadi. Demak x + 3 ≥ 0, x − 1 > 0 va x + 3 < (x − 1)². O'ng tomonning musbatligi tekshirilmasa, kvadratga ko'tarish teng kuchli almashtirish bo'lmaydi. Javob: x + 3 ≥ 0, x − 1 > 0, x + 3 < (x − 1)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tanlash-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#d4720218"
+    },
+    {
+      "q": "√(2x − 6) ≤ 3 − x tengsizligini yechish uchun o'quvchi teng kuchli sistemani tuzishi kerak. To'g'ri tuzilgan sistemani ko'rsating.",
+      "v": [
+        "2x − 6 ≥ 0, 3 − x > 0, 2x − 6 ≤ (3 − x)²",
+        "2x − 6 ≥ 0, 3 − x ≥ 0, 2x − 6 ≤ (3 − x)²",
+        "2x − 6 ≥ 0, 2x − 6 ≤ (3 − x)²",
+        "3 − x ≥ 0, 2x − 6 ≤ (3 − x)²"
+      ],
+      "t": 1,
+      "izoh": "Tengsizlik nokat'iy bo'lgani uchun o'ng tomon nolga teng bo'lishiga yo'l qo'yiladi — ildizning o'zi ham nol bo'la oladi, shuning uchun 3 − x ≥ 0 deb yoziladi. Agar qat'iy 3 − x > 0 yozilsa, x = 3 yechimi yo'qoladi: u yerda 2·3 − 6 = 0 va √0 = 0 ≤ 0 bajariladi. Bunga ildiz osti sharti 2x − 6 ≥ 0 va kvadratga ko'tarilgan 2x − 6 ≤ (3 − x)² qo'shiladi; ularsiz ortiqcha yechimlar paydo bo'ladi. Javob: 2x − 6 ≥ 0, 3 − x ≥ 0, 2x − 6 ≤ (3 − x)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tanlash-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#0ecf1b7b"
+    },
+    {
+      "q": "√f(x) < g(x) ko'rinishidagi qat'iy tengsizlikni kvadratga ko'tarishdan oldin o'ng tomondagi g(x) uchun qanday shart albatta yozilishi kerak?",
+      "v": [
+        "g(x) ≥ 0",
+        "g(x) > 0",
+        "g(x) ≠ 0",
+        "g(x) uchun shart kerak emas"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat ildizning qiymati hech qachon manfiy bo'lmaydi. Agar √f(x) < g(x) o'rinli bo'lsa, g(x) manfiy bo'lmagan sondan katta, demak u albatta noldan katta. Ildiz noldan kichik bo'la olmagani uchun g(x) = 0 holi ham yaramaydi. Javob: g(x) > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-tanlash-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#345c8eba"
+    },
+    {
+      "q": "Bekzod √(7 − x) < 2 tengsizligini sistemaga aylantirdi. Uning ishi to'g'ri chiqishi uchun qanday ikki shart yozilishi lozim?",
+      "v": [
+        "7 − x > 0 va 7 − x < 2",
+        "7 − x ≥ 0 va 7 − x < 2",
+        "7 − x ≤ 0 va 7 − x < 4",
+        "7 − x ≥ 0 va 7 − x < 4"
+      ],
+      "t": 3,
+      "izoh": "O'ng tomondagi 2 soni musbat, shuning uchun uning musbatligini alohida shart qilib yozish shart emas. Ildiz osti manfiy bo'lmasin degan shart 7 − x ≥ 0 ko'rinishida yoziladi. Ikkala tomonni kvadratga ko'tarsak 7 − x < 4 hosil bo'ladi. Javob: 7 − x ≥ 0 va 7 − x < 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sistema-tanlash-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#2c34b460"
+    },
+    {
+      "q": "√(x + 5) > x − 1 tengsizligining yechimini topish uchun uni ikki holatga ajratish talab qilinadi. To'g'ri ajratilgan variantni belgilang.",
+      "v": [
+        "x + 5 ≥ 0, x − 1 > 0, x + 5 > (x − 1)²",
+        "x + 5 > (x − 1)² shartining o'zi yetarli",
+        "x − 1 < 0, x + 5 ≥ 0 yoki x − 1 ≥ 0, x + 5 > (x − 1)²",
+        "x − 1 > 0, x + 5 < (x − 1)² yoki x − 1 ≤ 0"
+      ],
+      "t": 2,
+      "izoh": "√f(x) > g(x) da o'ng tomon manfiy bo'lsa, ildizning mavjudligi o'zi yetarli: x − 1 < 0 va x + 5 ≥ 0. O'ng tomon manfiy bo'lmasa, ikkala tomonni kvadratga ko'tarish mumkin: x − 1 ≥ 0 va x + 5 > (x − 1)². Ikki holatning birlashmasi to'liq yechimni beradi. Javob: x − 1 < 0, x + 5 ≥ 0 yoki x − 1 ≥ 0, x + 5 > (x − 1)².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sistema-tanlash-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c3a0fe85"
+    },
+    {
+      "q": "√f(x) > g(x) tengsizligida o'ng tomondagi g(x) manfiy qiymat qabul qilgan holni ko'ramiz. Bu holda yechim uchun qanday shartning o'zi yetarli bo'ladi?",
+      "v": [
+        "f(x) > g(x)² bo'lishi",
+        "f(x) ≥ 0 bo'lishi",
+        "f(x) ≤ 0 bo'lishi",
+        "bunday holda yechim umuman bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ildizning qiymati doim manfiy emas, manfiy sondan esa har doim katta bo'ladi. Shuning uchun g(x) < 0 bo'lgan joyda tengsizlik ildiz mavjud bo'lgan barcha nuqtalarda bajariladi. Demak f(x) ≥ 0 shartining o'zi kifoya qiladi. Javob: f(x) ≥ 0 bo'lishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tanlash-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#ebbb59d2"
+    },
+    {
+      "q": "√(3x + 1) > 2 − x tengsizligini yechishda birinchi holat sifatida qanday sistema yozilishini aniqlang.",
+      "v": [
+        "2 − x < 0, 3x + 1 > (2 − x)²",
+        "2 − x ≥ 0, 3x + 1 ≥ 0",
+        "3x + 1 ≥ 0, 3x + 1 > (2 − x)²",
+        "2 − x < 0, 3x + 1 ≥ 0"
+      ],
+      "t": 3,
+      "izoh": "Birinchi holatda o'ng tomon manfiy deb olinadi: 2 − x < 0. Bunda ildiz manfiy sondan katta bo'lgani uchun faqat ildiz osti sharti qoladi: 3x + 1 ≥ 0. Kvadratga ko'tarish bu holatda umuman talab qilinmaydi. Javob: 2 − x < 0, 3x + 1 ≥ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tanlash-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c6b53d28"
+    },
+    {
+      "q": "Quyida to'rtta irratsional tengsizlik berilgan. Ularning qaysi birini yechishda ikkita alohida holatga bo'lish umuman talab qilinmaydi?",
+      "v": [
+        "√(x − 2) > x − 4",
+        "√(x + 1) > 3",
+        "√(2x) > x − 5",
+        "√(x² − 1) > x"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomon musbat o'zgarmas son bo'lganda uning ishorasi bo'yicha holatlarga bo'lish kerak emas. √(x + 1) > 3 da o'ng tomon doim musbat, shuning uchun darrov x + 1 > 9 deb yozish mumkin. Qolgan uchtasida o'ng tomon x ga bog'liq va ishorasi o'zgarib turadi. Javob: √(x + 1) > 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sistema-tanlash-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#e926fcc2"
+    },
+    {
+      "q": "√(2x − 6) < 4 tengsizligining barcha yechimlaridan tashkil topgan to'plamni toping va to'g'ri javobni tanlang.",
+      "v": [
+        "(−∞; 11)",
+        "(3; 11)",
+        "[3; 11)",
+        "[3; 11]"
+      ],
+      "t": 2,
+      "izoh": "Ildiz osti manfiy bo'lmasin: 2x − 6 ≥ 0, bundan x ≥ 3. O'ng tomondagi 4 musbat bo'lgani uchun kvadratga ko'taramiz: 2x − 6 < 16, ya'ni x < 11. Ikkala shartni birlashtiramiz va 3 ≤ x < 11 hosil bo'ladi. Javob: [3; 11).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kichik-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#263514f1"
+    },
+    {
+      "q": "Zebo √(5x + 10) ≤ 5 tengsizligini yechdi. Uning to'g'ri javobi qanday oraliq ko'rinishida yozilishi kerak?",
+      "v": [
+        "[−2; 3]",
+        "(−2; 3)",
+        "(−∞; 3]",
+        "[−2; 5]"
+      ],
+      "t": 0,
+      "izoh": "5x + 10 ≥ 0 shartidan x ≥ −2 kelib chiqadi. Ikkala tomonni kvadratga ko'tarsak 5x + 10 ≤ 25, ya'ni 5x ≤ 15 va x ≤ 3. Ikkala shartni birga olsak −2 ≤ x ≤ 3 chiqadi. Javob: [−2; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kichik-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#85256c72"
+    },
+    {
+      "q": "√(9 − x) < 3 tengsizligi qanday x lar uchun o'rinli ekanligini aniqlang va yechimlar to'plamini ko'rsating.",
+      "v": [
+        "(0; 9)",
+        "[0; 9]",
+        "(−∞; 9]",
+        "(0; 9]"
+      ],
+      "t": 3,
+      "izoh": "Ildiz osti sharti 9 − x ≥ 0 dan x ≤ 9 kelib chiqadi. Kvadratga ko'tarsak 9 − x < 9, bundan −x < 0 va x > 0. Ikkalasini birlashtirsak 0 < x ≤ 9 bo'ladi. x = 9 da ildiz nolga teng va 0 < 3 tengsizlik o'rinli. Javob: (0; 9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-kichik-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#0e20ee7c"
+    },
+    {
+      "q": "Quyidagi tengsizlik berilgan: √(x + 6) ≤ 4. Uning yechimlar to'plamining chegaralarini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[−6; 10]",
+        "[−6; 16]",
+        "(−6; 10)",
+        "[−4; 10]"
+      ],
+      "t": 0,
+      "izoh": "x + 6 ≥ 0 shartidan x ≥ −6 chiqadi. Kvadratga ko'tarsak x + 6 ≤ 16, ya'ni x ≤ 10. Demak yechim −6 ≤ x ≤ 10 oralig'idan iborat. Tengsizlik nokat'iy bo'lgani uchun ikkala chegara ham kiradi. Javob: [−6; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-kichik-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#8e7c3b32"
+    },
+    {
+      "q": "√(3x − 5) > 4 tengsizligini yeching. Yechimlar to'plami qaysi nur bilan ifodalanishini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "[7; +∞)",
+        "(3; +∞)",
+        "(7; +∞)",
+        "(−∞; 7)"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomondagi 4 musbat bo'lgani uchun ikkala tomonni kvadratga ko'tarish mumkin: 3x − 5 > 16. Bundan 3x > 21 va x > 7 kelib chiqadi. Bu qiymatlarda 3x − 5 avtomatik musbat, shuning uchun qo'shimcha shart qo'shilmaydi. Javob: (7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-katta-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#426498ea"
+    },
+    {
+      "q": "Sanjar √(x + 2) ≥ 5 tengsizligini yechayotib, x uchun ruxsat etilgan eng kichik qiymatni topmoqchi. Bu qiymat nechaga teng?",
+      "v": [
+        "23",
+        "27",
+        "3",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Ikkala tomon ham manfiy emas, shuning uchun kvadratga ko'taramiz: x + 2 ≥ 25. Bundan x ≥ 23 kelib chiqadi. Yechimlar to'plami [23; +∞) nurdan iborat va undagi eng kichik son 23. Javob: 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sodda-katta-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#99f94426"
+    },
+    {
+      "q": "√(20 − 4x) > 2 tengsizligining yechimini toping. Bunda aniqlanish sohasi javobga qo'shimcha cheklov qo'yadimi yoki yo'qmi?",
+      "v": [
+        "(−∞; 5), aniqlanish sohasi cheklaydi",
+        "(4; 5]",
+        "(4; +∞)",
+        "(−∞; 4), qo'shimcha cheklov yo'q"
+      ],
+      "t": 3,
+      "izoh": "20 − 4x > 4 dan −4x > −16 chiqadi, manfiy songa bo'lganda ishora almashadi va x < 4 bo'ladi. Aniqlanish sohasi 20 − 4x ≥ 0, ya'ni x ≤ 5. x < 4 to'plami x ≤ 5 ichida to'liq yotgani uchun qo'shimcha cheklov qo'shmaydi. Javob: (−∞; 4), qo'shimcha cheklov yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-katta-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#a3fb5978"
+    },
+    {
+      "q": "√(7 − 2x) ≥ 3 tengsizligini qanoatlantiruvchi barcha x larning to'plami quyidagi javoblardan qaysi biri bo'ladi?",
+      "v": [
+        "[−1; +∞)",
+        "(−∞; −1]",
+        "(−∞; 1]",
+        "[−1; 3,5]"
+      ],
+      "t": 1,
+      "izoh": "Ikkala tomon manfiy emas, shuning uchun kvadratga ko'taramiz: 7 − 2x ≥ 9. Bundan −2x ≥ 2 va manfiy songa bo'lganda ishora almashadi, ya'ni x ≤ −1. Aniqlanish sohasi x ≤ 3,5 bo'lib, topilgan to'plamni cheklamaydi. Javob: (−∞; −1].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sodda-katta-son",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#600a4523"
+    },
+    {
+      "q": "Jasur √(x + 5) < x − 1 tengsizligini to'liq sistemaga o'tkazib yechdi. U olgan to'g'ri yechimlar to'plamini ko'rsating.",
+      "v": [
+        "(4; +∞)",
+        "(1; 4)",
+        "[−1; 4]",
+        "(−5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Uchta shart yoziladi: x + 5 ≥ 0, x − 1 > 0 va x + 5 < (x − 1)². Uchinchi shartdan x + 5 < x² − 2x + 1, ya'ni x² − 3x − 4 > 0 va (x − 4)(x + 1) > 0. Bundan x < −1 yoki x > 4. Ikkinchi shart x > 1 bilan kesishtirsak faqat x > 4 qoladi. Javob: (4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-chiziqli-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#9e7aad35"
+    },
+    {
+      "q": "√(x + 7) < x + 1 tengsizligining yechimlar to'plamini toping va uni to'g'ri ko'rsatgan javobni belgilang.",
+      "v": [
+        "(−3; 2)",
+        "(2; +∞)",
+        "[−7; 2)",
+        "(−1; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Shartlar: x + 7 ≥ 0, x + 1 > 0 va x + 7 < (x + 1)². Oxirgisidan x + 7 < x² + 2x + 1, ya'ni x² + x − 6 > 0 va (x + 3)(x − 2) > 0. Bundan x < −3 yoki x > 2. x > −1 sharti bilan birga faqat x > 2 qoladi. Javob: (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-chiziqli-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#9504a773"
+    },
+    {
+      "q": "Shahnoza √(12 − x) < x tengsizligini yechishda o'ng tomonning musbatligini ham hisobga oldi. Uning yakuniy javobi qanday bo'ladi?",
+      "v": [
+        "(3; 12)",
+        "[−4; 3)",
+        "(3; 12]",
+        "(0; 12]"
+      ],
+      "t": 2,
+      "izoh": "Shartlar: 12 − x ≥ 0, x > 0 va 12 − x < x². Uchinchisidan x² + x − 12 > 0, ya'ni (x + 4)(x − 3) > 0, bundan x < −4 yoki x > 3. Qolgan shartlar bilan kesishtirsak 3 < x ≤ 12 hosil bo'ladi. x = 12 da √0 = 0 < 12 bo'lib, tengsizlik o'rinli. Javob: (3; 12].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-chiziqli-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#ccccd0c9"
+    },
+    {
+      "q": "√(x + 4) ≤ x + 2 tengsizligini sistemaga o'tkazib yeching va yechimlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[−2; +∞)",
+        "[−4; +∞)",
+        "[−3; 0]",
+        "[0; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Shartlar: x + 4 ≥ 0, x + 2 ≥ 0 va x + 4 ≤ (x + 2)². Oxirgisidan x + 4 ≤ x² + 4x + 4, ya'ni x² + 3x ≥ 0 va x(x + 3) ≥ 0. Bundan x ≤ −3 yoki x ≥ 0. x ≥ −2 sharti bilan birga faqat x ≥ 0 qoladi. Javob: [0; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-chiziqli-kichik",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#1ccdb5e0"
+    },
+    {
+      "q": "√(x + 3) > x + 1 tengsizligini ikki holatga bo'lib yeching. Ikkala holat birlashtirilgandan keyin qanday to'plam hosil bo'ladi?",
+      "v": [
+        "[−3; 1)",
+        "(−1; 1)",
+        "[−3; +∞)",
+        "(−2; 1)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x ≥ −3. Birinchi holat: x + 1 < 0, ya'ni −3 ≤ x < −1, bunda ildiz manfiy sondan katta. Ikkinchi holat: x + 1 ≥ 0 va x + 3 > (x + 1)², bundan x² + x − 2 < 0, ya'ni −2 < x < 1, demak −1 ≤ x < 1. Ikki to'plamning birlashmasi −3 ≤ x < 1. Javob: [−3; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-chiziqli-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#7e7ea7ad"
+    },
+    {
+      "q": "Karim √(x + 2) > x tengsizligini yechayotib manfiy x lar ham yechim bo'lishi mumkinligini payqadi. To'liq yechimlar to'plami qanday?",
+      "v": [
+        "(0; 2)",
+        "[−2; 2)",
+        "[−2; +∞)",
+        "(−1; 2)"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x ≥ −2. O'ng tomon manfiy bo'lgan −2 ≤ x < 0 oralig'ida tengsizlik o'z-o'zidan bajariladi. x ≥ 0 holida kvadratga ko'taramiz: x + 2 > x², bundan x² − x − 2 < 0 va (x − 2)(x + 1) < 0, ya'ni −1 < x < 2, demak 0 ≤ x < 2. Birlashma −2 ≤ x < 2. Javob: [−2; 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-chiziqli-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#bbc6657f"
+    },
+    {
+      "q": "√(5 − x) > x + 1 tengsizligining barcha yechimlarini toping. Javobni oraliq ko'rinishida to'g'ri yozgan variantni tanlang.",
+      "v": [
+        "(−1; 1)",
+        "(−∞; 5]",
+        "(−∞; 1)",
+        "(−4; 1)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi 5 − x ≥ 0, ya'ni x ≤ 5. Birinchi holat: x + 1 < 0, ya'ni x < −1, bu qiymatlar sohaga kiradi. Ikkinchi holat: x ≥ −1 va 5 − x > (x + 1)², bundan x² + 3x − 4 < 0 va (x + 4)(x − 1) < 0, ya'ni −4 < x < 1, demak −1 ≤ x < 1. Birlashma x < 1. Javob: (−∞; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-chiziqli-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#bcc82f98"
+    },
+    {
+      "q": "Nigora daftarida √(x + 6) ≥ x nokat'iy tengsizligi berilgan. Uning yechimlar to'plamini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "[0; 3]",
+        "[−6; +∞)",
+        "[−2; 3]",
+        "[−6; 3]"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x ≥ −6. x < 0 bo'lganda o'ng tomon manfiy, ildiz esa manfiy emas, shuning uchun −6 ≤ x < 0 to'liq yechim bo'ladi. x ≥ 0 da kvadratga ko'taramiz: x + 6 ≥ x², bundan x² − x − 6 ≤ 0 va (x − 3)(x + 2) ≤ 0, ya'ni −2 ≤ x ≤ 3, demak 0 ≤ x ≤ 3. Birlashma −6 ≤ x ≤ 3. Javob: [−6; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ildiz-chiziqli-katta",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#06baa83e"
+    },
+    {
+      "q": "√(2x − 6) < √(x + 1) tengsizligida ikkala tomon ham ildiz ostida turibdi. Uning yechimlar to'plamini to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "[3; 7)",
+        "(3; 7)",
+        "[−1; 7)",
+        "[3; 7]"
+      ],
+      "t": 0,
+      "izoh": "Chap tomondagi ildiz osti manfiy bo'lmasin: 2x − 6 ≥ 0, ya'ni x ≥ 3. Ikkala tomon manfiy emas, shuning uchun kvadratga ko'tarish teng kuchli: 2x − 6 < x + 1, bundan x < 7. Chap ildiz osti manfiy bo'lmasa, o'ng ildiz osti undan ham katta bo'ladi. Javob: [3; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-taqqoslash",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#b7ab8c0a"
+    },
+    {
+      "q": "Ikkala tomoni ildizdan iborat √(9 − x) < √(x + 3) tengsizligi berilgan. Uni qanoatlantiruvchi x larning to'plamini toping.",
+      "v": [
+        "(3; 9)",
+        "(3; 9]",
+        "[−3; 9]",
+        "(3; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Chap ildiz osti sharti 9 − x ≥ 0 dan x ≤ 9 kelib chiqadi. Ikkala tomon manfiy emas, kvadratga ko'taramiz: 9 − x < x + 3, bundan 6 < 2x va x > 3. Bu qiymatlarda x + 3 ham musbat bo'ladi. Ikki shartni birlashtirsak 3 < x ≤ 9. Javob: (3; 9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-taqqoslash",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#41d4f773"
+    },
+    {
+      "q": "√(x² − 4) < √(3x) tengsizligini yechishda aniqlanish sohasi javobni sezilarli darajada qisqartiradi. Yakuniy yechim qanday bo'ladi?",
+      "v": [
+        "(−1; 4)",
+        "[2; 4]",
+        "[2; 4)",
+        "(2; 4)"
+      ],
+      "t": 2,
+      "izoh": "Chap ildiz osti x² − 4 ≥ 0 dan x ≤ −2 yoki x ≥ 2 kelib chiqadi. Kvadratga ko'tarsak x² − 4 < 3x, ya'ni x² − 3x − 4 < 0 va (x − 4)(x + 1) < 0, bundan −1 < x < 4. Ikki to'plamning kesishmasi 2 ≤ x < 4 bo'lib, bu qiymatlarda 3x ham musbat. Javob: [2; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildiz-taqqoslash",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#d52e07d7"
+    },
+    {
+      "q": "√f(x) < √g(x) ko'rinishidagi tengsizlikni yechish uchun qanday shartlar to'plamini yozish yetarli bo'lishini aniqlang.",
+      "v": [
+        "g(x) ≥ 0 va f(x) < g(x)",
+        "faqat f(x) < g(x)",
+        "f(x) > 0 va g(x) > 0",
+        "f(x) ≥ 0 va f(x) < g(x)"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomon ildiz bo'lgani uchun chap ildiz osti manfiy bo'lmasligi shart: f(x) ≥ 0. Shundan keyin kvadratga ko'tarish teng kuchli almashtirish bo'ladi: f(x) < g(x). Bu ikki shartdan g(x) > 0 avtomatik kelib chiqadi, shuning uchun uni alohida yozish shart emas. Javob: f(x) ≥ 0 va f(x) < g(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildiz-taqqoslash",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#0dd97ccb"
+    },
+    {
+      "q": "√(x² − 3x) < 2 tengsizligining yechimi ikkita ajralgan oraliqdan iborat bo'ladi. Bu oraliqlarni to'g'ri ko'rsatgan javobni tanlang.",
+      "v": [
+        "(−1; 0] ∪ [3; 4)",
+        "(−1; 4)",
+        "[0; 3]",
+        "(−1; 0) ∪ (3; 4)"
+      ],
+      "t": 0,
+      "izoh": "Aniqlanish sohasi x² − 3x ≥ 0, ya'ni x ≤ 0 yoki x ≥ 3. Kvadratga ko'tarsak x² − 3x < 4, bundan x² − 3x − 4 < 0 va (x − 4)(x + 1) < 0, ya'ni −1 < x < 4. Sohani hisobga olib kesishmani olamiz: −1 < x ≤ 0 va 3 ≤ x < 4. Javob: (−1; 0] ∪ [3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-ostida",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#4c4c3d21"
+    },
+    {
+      "q": "Ozod daftariga √(x² − 16) > 3 tengsizligini ko'chirib yozdi. Uning yechimlar to'plamini to'g'ri ko'rsatgan variantni belgilang.",
+      "v": [
+        "(−∞; −4) ∪ (4; +∞)",
+        "(−∞; −5) ∪ (5; +∞)",
+        "(−5; 5)",
+        "[−5; 5]"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi x² − 16 ≥ 0, ya'ni |x| ≥ 4. O'ng tomon musbat bo'lgani uchun kvadratga ko'taramiz: x² − 16 > 9, bundan x² > 25 va |x| > 5. Bu shart |x| ≥ 4 dan kuchliroq, shuning uchun javob faqat undan iborat bo'ladi. Javob: (−∞; −5) ∪ (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadrat-ildiz-ostida",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#ad974582"
+    },
+    {
+      "q": "√(x² + 3x) ≤ 2 tengsizligini yechishda aniqlanish sohasi javobni ikki bo'lakka ajratib yuboradi. To'g'ri javobni tanlang.",
+      "v": [
+        "[−4; 1]",
+        "[−3; 0]",
+        "[−4; −3] ∪ [0; 1]",
+        "(−4; −3) ∪ (0; 1)"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi x² + 3x ≥ 0, ya'ni x ≤ −3 yoki x ≥ 0. Kvadratga ko'tarsak x² + 3x ≤ 4, bundan x² + 3x − 4 ≤ 0 va (x + 4)(x − 1) ≤ 0, ya'ni −4 ≤ x ≤ 1. Soha bilan kesishtirsak −4 ≤ x ≤ −3 va 0 ≤ x ≤ 1 qoladi. Javob: [−4; −3] ∪ [0; 1].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-ostida",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#08e75b34"
+    },
+    {
+      "q": "√(x² − 2x − 8) > 4 tengsizligini qanoatlantiruvchi x larning to'plamini toping va to'g'ri javobni ko'rsating.",
+      "v": [
+        "(−∞; −2) ∪ (4; +∞)",
+        "(−4; 6)",
+        "(−∞; −4] ∪ [6; +∞)",
+        "(−∞; −4) ∪ (6; +∞)"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x² − 2x − 8 ≥ 0, ya'ni (x − 4)(x + 2) ≥ 0 va x ≤ −2 yoki x ≥ 4. O'ng tomon musbat, kvadratga ko'taramiz: x² − 2x − 8 > 16, bundan x² − 2x − 24 > 0 va (x − 6)(x + 4) > 0, ya'ni x < −4 yoki x > 6. Bu shart aniqlanish sohasidan kuchliroq. Javob: (−∞; −4) ∪ (6; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kvadrat-ildiz-ostida",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#805aa8ed"
+    },
+    {
+      "q": "Karim √(x − 3) < −2 tengsizligini yechishga urinib, uzoq hisoblashlarni bajardi. Bu tengsizlikning yechimlar to'plami qanday bo'ladi?",
+      "v": [
+        "Yechim yo'q",
+        "x ≥ 3",
+        "x > 7",
+        "(3; 7)"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat ildizning qiymati hech qachon manfiy bo'lmaydi, u doim noldan katta yoki teng. Manfiy son −2 dan kichik bo'lish esa faqat manfiy qiymatlarda mumkin. Shuning uchun hech qanday x bu tengsizlikni qanoatlantira olmaydi. Javob: yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-ong-tomon",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#ff0bfbf0"
+    },
+    {
+      "q": "√(2x + 8) > −5 tengsizligining yechimlar to'plami nimadan iborat bo'lishini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "(−4; +∞)",
+        "[−4; +∞)",
+        "Barcha haqiqiy sonlar",
+        "[−8; +∞)"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomon manfiy, ildizning qiymati esa manfiy emas, shuning uchun ildiz mavjud bo'lgan hamma joyda tengsizlik bajariladi. Faqat aniqlanish sohasi yoziladi: 2x + 8 ≥ 0, bundan x ≥ −4. Kvadratga ko'tarish bu yerda umuman kerak emas. Javob: [−4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "manfiy-ong-tomon",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#0419713b"
+    },
+    {
+      "q": "√(x² − 1) ≥ −3 tengsizligining yechimi qaysi to'plamdan iborat bo'lishini aniqlang va to'g'ri variantni belgilang.",
+      "v": [
+        "(−1; 1)",
+        "Yechim yo'q",
+        "(−∞; −1] ∪ [1; +∞)",
+        "(−∞; −3] ∪ [3; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Ildizning qiymati manfiy emas, shuning uchun u −3 dan doim katta bo'ladi. Demak tengsizlik ildiz aniqlangan barcha nuqtalarda o'rinli. Aniqlanish sohasini topamiz: x² − 1 ≥ 0, ya'ni |x| ≥ 1. Javob: (−∞; −1] ∪ [1; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-ong-tomon",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#72de30d1"
+    },
+    {
+      "q": "Quyida to'rtta irratsional tengsizlik keltirilgan. Ularning qaysi birining yechimlar to'plami bo'sh to'plam bo'ladi?",
+      "v": [
+        "√(x − 1) > −4",
+        "√(x − 5) ≥ 0",
+        "√(2x) < 7",
+        "√(x + 3) ≤ −2"
+      ],
+      "t": 3,
+      "izoh": "Ildizning qiymati manfiy emas, shuning uchun u −2 dan kichik yoki unga teng bo'la olmaydi. Demak √(x + 3) ≤ −2 hech qachon bajarilmaydi. Qolgan uchtasida yechim bor: birinchisida x ≥ 1, ikkinchisida x ≥ 5, uchinchisida 0 ≤ x < 24,5. Javob: √(x + 3) ≤ −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "manfiy-ong-tomon",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#3bb61b1d"
+    },
+    {
+      "q": "√(3x + 1) < 5 tengsizligi nechta butun yechimga ega ekanligini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "7 ta",
+        "8 ta",
+        "9 ta",
+        "25 ta"
+      ],
+      "t": 1,
+      "izoh": "Aniqlanish sohasi 3x + 1 ≥ 0, ya'ni x ≥ −1/3. Bu chegara −1 dan katta bo'lgani uchun birorta manfiy butun son sohaga tushmaydi. Kvadratga ko'tarsak 3x + 1 < 25, bundan 3x < 24, ya'ni x < 8. Demak butun yechimlar 0, 1, 2, 3, 4, 5, 6, 7 bo'lib, ular sakkizta. Javob: 8 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#b49fa379"
+    },
+    {
+      "q": "Muhammad √(x − 2) ≤ 4 tengsizligining butun yechimlarini sanab chiqmoqchi. Bunday butun sonlar nechta bo'ladi?",
+      "v": [
+        "17 ta",
+        "16 ta",
+        "18 ta",
+        "15 ta"
+      ],
+      "t": 0,
+      "izoh": "Ildiz osti sharti x − 2 ≥ 0 dan x ≥ 2 chiqadi. Kvadratga ko'tarsak x − 2 ≤ 16, ya'ni x ≤ 18. Demak butun yechimlar 2 dan 18 gacha bo'lgan sonlar. Ularning soni 18 − 2 + 1 = 17 ta. Javob: 17 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#69475a32"
+    },
+    {
+      "q": "√(20 − x) > 3 tengsizligini qanoatlantiruvchi natural sonlar nechta ekanligini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "11 ta",
+        "9 ta",
+        "10 ta",
+        "20 ta"
+      ],
+      "t": 2,
+      "izoh": "O'ng tomon musbat bo'lgani uchun kvadratga ko'taramiz: 20 − x > 9, bundan x < 11. Aniqlanish sohasi x ≤ 20 bu to'plamni cheklamaydi. Natural sonlar 1 dan boshlanadi, demak 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 mos keladi. Javob: 10 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#e36ce342"
+    },
+    {
+      "q": "√(x² − 9) < 4 tengsizligi nechta butun yechimga ega ekanligini aniqlang. Aniqlanish sohasini e'tibordan qochirmang.",
+      "v": [
+        "9 ta",
+        "6 ta",
+        "2 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Aniqlanish sohasi x² − 9 ≥ 0, ya'ni |x| ≥ 3. Kvadratga ko'tarsak x² − 9 < 16, bundan x² < 25 va −5 < x < 5. Kesishma −5 < x ≤ −3 va 3 ≤ x < 5 bo'ladi. Butun yechimlar −4, −3, 3, 4, ya'ni to'rtta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "butun-yechim-soni",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#47d352d1"
+    },
+    {
+      "q": "√(4x − 7) ≤ 5 tengsizligining eng kichik butun yechimini toping. Aniqlanish sohasi bu yerda hal qiluvchi rol o'ynaydi.",
+      "v": [
+        "2",
+        "1",
+        "0",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Ildiz osti sharti 4x − 7 ≥ 0 dan 4x ≥ 7, ya'ni x ≥ 1,75 kelib chiqadi. Kvadratga ko'tarsak 4x − 7 ≤ 25, bundan x ≤ 8. Yechimlar 1,75 ≤ x ≤ 8 oralig'ida yotadi va undagi eng kichik butun son 2. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#8014c5b4"
+    },
+    {
+      "q": "Feruza √(30 − 2x) > 4 tengsizligini yechdi va eng katta butun yechimni topmoqchi. Bu son nechaga teng bo'ladi?",
+      "v": [
+        "7",
+        "6",
+        "15",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomon musbat, shuning uchun kvadratga ko'taramiz: 30 − 2x > 16. Bundan 2x < 14 va x < 7. Aniqlanish sohasi x ≤ 15 bu to'plamni cheklamaydi. Qat'iy tengsizlik bo'lgani uchun 7 kirmaydi, eng kattasi 6 bo'ladi. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#62520298"
+    },
+    {
+      "q": "√(x − 4) < 6 tengsizligini qanoatlantiruvchi eng katta butun sonni toping va to'g'ri javobni belgilang.",
+      "v": [
+        "40",
+        "36",
+        "39",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Ildiz osti sharti x − 4 ≥ 0 dan x ≥ 4 chiqadi. Kvadratga ko'tarsak x − 4 < 36, ya'ni x < 40. Qat'iy tengsizlik bo'lgani uchun 40 yechim emas. Demak eng katta butun yechim 39 ga teng. Javob: 39.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#16bc573f"
+    },
+    {
+      "q": "Ulug'bek √(9x + 7) ≥ 8 tengsizligini yechib, unga mos keladigan eng kichik butun sonni aniqlamoqchi. Bu son nechaga teng?",
+      "v": [
+        "6",
+        "64",
+        "8",
+        "7"
+      ],
+      "t": 3,
+      "izoh": "Ikkala tomon manfiy emas, kvadratga ko'taramiz: 9x + 7 ≥ 64. Bundan 9x ≥ 57, ya'ni x ≥ 19/3 ≈ 6,33. Eng kichik butun son 7: x = 7 da 9·7 + 7 = 70 va √70 ≈ 8,37 ≥ 8 bajariladi. x = 6 da esa 9·6 + 7 = 61 va √61 ≈ 7,81 < 8, shart bajarilmaydi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chekka-butun-yechim",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c0275f3b"
+    },
+    {
+      "q": "√(x + 1) ≤ 6 tengsizligining yechimlar to'plami kesma bo'ladi. Shu kesmaning uzunligi nechaga teng?",
+      "v": [
+        "36",
+        "35",
+        "37",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "Ildiz osti sharti x + 1 ≥ 0 dan x ≥ −1 chiqadi. Kvadratga ko'tarsak x + 1 ≤ 36, ya'ni x ≤ 35. Yechim [−1; 35] kesmasi bo'ladi. Uzunlik 35 − (−1) = 36 ga teng. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#0bb8388f"
+    },
+    {
+      "q": "Zilola √(2x − 4) < 6 tengsizligini yechdi va yechimlar oralig'ining uzunligini o'lchamoqchi. Bu uzunlik nechaga teng?",
+      "v": [
+        "20",
+        "18",
+        "16",
+        "9"
+      ],
+      "t": 1,
+      "izoh": "Ildiz osti sharti 2x − 4 ≥ 0 dan x ≥ 2 chiqadi. Kvadratga ko'tarsak 2x − 4 < 36, bundan 2x < 40 va x < 20. Yechim [2; 20) oralig'i bo'ladi. Uning uzunligi 20 − 2 = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#a52c1e7d"
+    },
+    {
+      "q": "√(40 − 2x) < 4 tengsizligining yechimlar to'plami chekli oraliq bo'ladi. Bu oraliqning uzunligini toping.",
+      "v": [
+        "12",
+        "20",
+        "8",
+        "4"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi 40 − 2x ≥ 0 dan x ≤ 20 chiqadi. Kvadratga ko'tarsak 40 − 2x < 16, bundan 2x > 24 va x > 12. Yechim (12; 20] oralig'i bo'ladi. Uzunlik 20 − 12 = 8 ga teng. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#dea3b797"
+    },
+    {
+      "q": "Diyor √(3x + 6) ≤ 9 tengsizligini yechib, hosil bo'lgan kesmaning uzunligini hisoblamoqchi. Bu uzunlik nechaga teng bo'ladi?",
+      "v": [
+        "25",
+        "23",
+        "81",
+        "27"
+      ],
+      "t": 3,
+      "izoh": "Ildiz osti sharti 3x + 6 ≥ 0 dan x ≥ −2 chiqadi. Kvadratga ko'tarsak 3x + 6 ≤ 81, bundan 3x ≤ 75 va x ≤ 25. Yechim [−2; 25] kesmasi bo'ladi. Uzunlik 25 − (−2) = 27. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yechim-oraligi-uzunligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#be542a1d"
+    },
+    {
+      "q": "Quyidagi sonlardan qaysi biri √(2x − 1) < x − 2 tengsizligini qanoatlantirishini tekshirib aniqlang.",
+      "v": [
+        "7",
+        "5",
+        "3",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Har bir sonni bevosita qo'yib ko'ramiz. x = 1 da ildiz 1 ga, o'ng tomon esa −1 ga teng, tengsizlik bajarilmaydi. x = 3 da √5 ≈ 2,24 va o'ng tomon 1, bajarilmaydi. x = 5 da √9 = 3 va o'ng tomon 3, qat'iy tengsizlik bajarilmaydi. x = 7 da √13 ≈ 3,61 bo'lib, 5 dan kichik, demak bajariladi. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtani-tekshirish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c1f4565f"
+    },
+    {
+      "q": "Berilgan sonlardan qaysi biri √(x + 6) > x tengsizligini qanoatlantirmasligini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "−5",
+        "4",
+        "0",
+        "2"
+      ],
+      "t": 1,
+      "izoh": "x = −5 da o'ng tomon manfiy, ildiz esa manfiy emas, demak tengsizlik bajariladi. x = 0 da √6 ≈ 2,45 noldan katta, bajariladi. x = 2 da √8 ≈ 2,83 ikkidan katta, bajariladi. x = 4 da √10 ≈ 3,16 bo'lib, 4 dan kichik, demak bajarilmaydi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtani-tekshirish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#10986b93"
+    },
+    {
+      "q": "Quyidagi to'rtta sondan qaysi biri √(3x − 8) ≥ x − 3 tengsizligini qanoatlantirmaydi? Har birini alohida tekshirib ko'ring.",
+      "v": [
+        "6",
+        "4",
+        "8",
+        "3"
+      ],
+      "t": 2,
+      "izoh": "x = 3 da √1 = 1 va o'ng tomon 0 ga teng, tengsizlik bajariladi. x = 4 da √4 = 2 va o'ng tomon 1, bajariladi. x = 6 da √10 ≈ 3,16 va o'ng tomon 3, bajariladi. x = 8 da √16 = 4 bo'lib, o'ng tomon 5 ga teng, demak bajarilmaydi. Javob: 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqtani-tekshirish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#9a6f5d7e"
+    },
+    {
+      "q": "Sevara √(x + 3) < 2x tengsizligiga bir nechta sonni qo'yib ko'rdi. Quyidagilardan qaysi biri uning yechimi bo'la oladi?",
+      "v": [
+        "0",
+        "1",
+        "−1",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "x = −1 da o'ng tomon manfiy, ildiz esa manfiy emas, bajarilmaydi. x = 0 da √3 ≈ 1,73 va o'ng tomon 0, bajarilmaydi. x = 1 da √4 = 2 va o'ng tomon 2, qat'iy tengsizlik bajarilmaydi. x = 2 da √5 ≈ 2,24 bo'lib, 4 dan kichik, demak bajariladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqtani-tekshirish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#df7c18a1"
+    },
+    {
+      "q": "Aziz √(x − 2) < 3 tengsizligini yechib, javob sifatida x < 11 ni oldi. Uning yechimidagi asosiy kamchilik nimada?",
+      "v": [
+        "Aniqlanish sohasi hisobga olinmagan, to'g'ri javob 2 ≤ x < 11",
+        "Kvadratga ko'tarish noto'g'ri bajarilgan, o'ng tomon 6 bo'lishi kerak",
+        "Tengsizlik ishorasi teskarisiga almashishi kerak edi",
+        "Javob x > 11 ko'rinishida yozilishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Kvadratga ko'tarish to'g'ri bajarilgan: x − 2 < 9, bundan x < 11. Lekin ildiz ostidagi ifoda manfiy bo'lmasligi sharti yozilmay qolgan: x − 2 ≥ 0, ya'ni x ≥ 2. Ikkala shartni birlashtirsak 2 ≤ x < 11 hosil bo'ladi. Javob: aniqlanish sohasi hisobga olinmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#e55c4172"
+    },
+    {
+      "q": "Malika √(x + 1) > x − 5 tengsizligini yechishda darhol ikkala tomonni kvadratga ko'tardi. Bu qadamning asosiy xavfi nimada?",
+      "v": [
+        "Ildiz osti sharti ikki marta hisobga olinadi",
+        "O'ng tomon manfiy bo'lgan holdagi yechimlar yo'qoladi",
+        "Tengsizlik ishorasi teskarisiga o'zgarib ketadi",
+        "Hech qanday xavfi yo'q, bu doim to'g'ri usul"
+      ],
+      "t": 1,
+      "izoh": "O'ng tomon x − 5 manfiy bo'lgan qiymatlar ham yechim bo'ladi, chunki manfiy bo'lmagan ildiz manfiy sondan katta. To'g'ridan-to'g'ri kvadratga ko'tarish aynan shu holatni yo'qotadi va javob chala chiqadi. Shuning uchun avval ikki holatga bo'lish kerak. Javob: o'ng tomon manfiy bo'lgan holdagi yechimlar yo'qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#e9ee4e0f"
+    },
+    {
+      "q": "Bir o'quvchi √(x − 4) ≤ −1 tengsizligini kvadratga ko'tarib x − 4 ≤ 1, ya'ni x ≤ 5 deb javob berdi. Xato qayerda?",
+      "v": [
+        "Aniqlanish sohasi qo'shilsa, javob 4 ≤ x ≤ 5 bo'ladi",
+        "Javob x ≥ 5 ko'rinishida yozilishi kerak edi",
+        "Manfiy son bilan kvadratga ko'tarish mumkin emas, aslida yechim yo'q",
+        "Kvadratga ko'tarishda −1 ning kvadrati −1 ga teng bo'ladi"
+      ],
+      "t": 2,
+      "izoh": "Ildizning qiymati manfiy emas, shuning uchun u −1 dan kichik yoki unga teng bo'la olmaydi. Ikkala tomon bir xil ishorada bo'lmagani uchun kvadratga ko'tarish teng kuchli almashtirish emas. Tengsizlikning yechimi umuman mavjud emas. Javob: manfiy son bilan kvadratga ko'tarish mumkin emas, aslida yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#412a3b10"
+    },
+    {
+      "q": "√(9 − x²) > 0 tengsizligini yechgan o'quvchi javobni −3 ≤ x ≤ 3 deb yozdi. Uning xatosi nimadan iborat?",
+      "v": [
+        "Javob x ≤ −3 yoki x ≥ 3 bo'lishi kerak",
+        "Aniqlanish sohasi butunlay noto'g'ri topilgan",
+        "Yechimlar to'plami aslida bo'sh to'plam bo'ladi",
+        "Chegaralarda ildiz nolga teng bo'lib qoladi, javob −3 < x < 3"
+      ],
+      "t": 3,
+      "izoh": "x = 3 va x = −3 nuqtalarida ildiz ostidagi ifoda nolga teng, demak ildizning o'zi ham nolga teng. Nol esa noldan katta emas, shuning uchun bu ikki nuqta yechim bo'la olmaydi. Qat'iy tengsizlik uchun 9 − x² > 0 deb yozish kerak edi. Javob: chegaralarda ildiz nolga teng, javob −3 < x < 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xato-topish",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#5d521a2f"
+    },
+    {
+      "q": "Yo'l xavfsizligi qo'llanmasida avtomobil tezligi v = 12√S km/soat deb baholanadi, bunda S — tormoz yo'li uzunligi (metrda). Tezlik 60 km/soat dan oshmasligi uchun tormoz yo'li qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ S ≤ 25 m",
+        "0 ≤ S ≤ 5 m",
+        "0 ≤ S ≤ 60 m",
+        "S ≥ 25 m"
+      ],
+      "t": 0,
+      "izoh": "Shart 12√S ≤ 60 ko'rinishida yoziladi. Ikkala tomonni 12 ga bo'lsak √S ≤ 5 hosil bo'ladi. Ikkala tomon manfiy emas, shuning uchun kvadratga ko'tarsak S ≤ 25. Masofa manfiy bo'lmagani uchun S ≥ 0 sharti ham qo'shiladi. Javob: 0 ≤ S ≤ 25 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#61508b61"
+    },
+    {
+      "q": "Poyezdning harakat vaqti t soat bilan bosib o'tgan yo'li s = 200√t km sifatida bog'langan. Yo'l 1000 km dan ortiq bo'lishi uchun harakat necha soatdan ko'p davom etishi kerak?",
+      "v": [
+        "t > 5 soat",
+        "t > 25 soat",
+        "t > 80 soat",
+        "t > 100 soat"
+      ],
+      "t": 1,
+      "izoh": "200√t > 1000 tengsizligini yozamiz va ikkala tomonni 200 ga bo'lamiz: √t > 5. O'ng tomon musbat bo'lgani uchun kvadratga ko'tarish mumkin: t > 25. Aniqlanish sohasi t ≥ 0 bu javobni cheklamaydi. Tekshirish: 25 soatda 1000 km, ya'ni o'rtacha tezlik 40 km/soat. Javob: t > 25 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c5c5ce56"
+    },
+    {
+      "q": "Qayiqning oqim bo'ylab tezligi u = √(4h + 9) km/soat formula bilan hisoblanadi, bunda h — daryodagi suv sathi (dm). Tezlik 7 km/soat dan katta bo'lishi uchun sath qanday bo'lishi kerak?",
+      "v": [
+        "h > 40 dm",
+        "h > 49 dm",
+        "h > 10 dm",
+        "h > 7 dm"
+      ],
+      "t": 2,
+      "izoh": "√(4h + 9) > 7 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'tarish mumkin: 4h + 9 > 49. Bundan 4h > 40 va h > 10 kelib chiqadi. Ildiz osti sharti bu qiymatlarda o'z-o'zidan bajariladi. Javob: h > 10 dm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-harakat",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#922f5041"
+    },
+    {
+      "q": "Murabbiy yuguruvchining tezligini v = 2√(t + 4) m/s deb baholaydi, bunda t — mashg'ulot haftalari soni. Tezlik 6 m/s ga yetishi uchun kamida necha hafta shug'ullanish kerak?",
+      "v": [
+        "9 hafta",
+        "3 hafta",
+        "36 hafta",
+        "5 hafta"
+      ],
+      "t": 3,
+      "izoh": "2√(t + 4) ≥ 6 tengsizligini ikkiga bo'lamiz: √(t + 4) ≥ 3. Ikkala tomon manfiy emas, kvadratga ko'tarsak t + 4 ≥ 9. Bundan t ≥ 5 kelib chiqadi, ya'ni kamida besh hafta mashg'ulot kerak. Javob: 5 hafta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-harakat",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#d6e7e9ef"
+    },
+    {
+      "q": "Kvadrat shaklidagi gilamning yuzasi S m² bo'lsa, uning tomoni a = √S m ga teng bo'ladi. Tomoni 4 m dan kichik bo'lishi uchun yuza qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ S < 16 m²",
+        "0 ≤ S < 4 m²",
+        "0 ≤ S < 8 m²",
+        "S > 16 m²"
+      ],
+      "t": 0,
+      "izoh": "√S < 4 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: S < 16. Yuza manfiy bo'lmagani uchun S ≥ 0 sharti ham qo'shiladi. Demak yuza noldan 16 gacha bo'lgan qiymatlarni oladi. Javob: 0 ≤ S < 16 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#63f7be03"
+    },
+    {
+      "q": "To'g'ri burchakli uchburchakning bir kateti 6 sm, ikkinchisi x sm, gipotenuzasi esa √(36 + x²) sm ga teng. Gipotenuza 10 sm dan katta bo'lishi uchun ikkinchi katet qanday bo'lishi kerak?",
+      "v": [
+        "x > 64 sm",
+        "x > 8 sm",
+        "x > 4 sm",
+        "x > 10 sm"
+      ],
+      "t": 1,
+      "izoh": "√(36 + x²) > 10 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: 36 + x² > 100. Bundan x² > 64 kelib chiqadi. Kesma uzunligi musbat bo'lgani uchun faqat x > 8 qoladi. Javob: x > 8 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#b4d20a68"
+    },
+    {
+      "q": "Kvadrat yer maydonining diagonali d = √(2S) m formula bilan topiladi, bunda S — maydon yuzasi. Diagonal 20 m dan oshmasligi uchun yuza qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ S ≤ 400 m²",
+        "0 ≤ S ≤ 100 m²",
+        "0 ≤ S ≤ 200 m²",
+        "S ≥ 200 m²"
+      ],
+      "t": 2,
+      "izoh": "√(2S) ≤ 20 tengsizligining ikkala tomoni manfiy emas, shuning uchun kvadratga ko'taramiz: 2S ≤ 400. Bundan S ≤ 200 kelib chiqadi. Yuza manfiy bo'lmagani uchun S ≥ 0 sharti qo'shiladi. Javob: 0 ≤ S ≤ 200 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#4e83c47a"
+    },
+    {
+      "q": "Konusning balandligi h = √(l² − 81) sm formula bilan hisoblanadi, bunda l — yasovchining uzunligi. Balandlik 12 sm dan katta bo'lishi uchun yasovchi qanday bo'lishi kerak?",
+      "v": [
+        "l > 144 sm",
+        "l > 12 sm",
+        "l > 9 sm",
+        "l > 15 sm"
+      ],
+      "t": 3,
+      "izoh": "√(l² − 81) > 12 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: l² − 81 > 144. Bundan l² > 225 kelib chiqadi va uzunlik musbat bo'lgani uchun l > 15. Aniqlanish sohasi l ≥ 9 bu javobni cheklamaydi. Javob: l > 15 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-geometrik-olcham",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#6b6bb87c"
+    },
+    {
+      "q": "Matematik mayatnikning tebranish davri T = 2√L soniya deb olinadi, bunda L — ipning uzunligi (metrda). Davr 6 soniyadan katta bo'lishi uchun ip qanday uzunlikda bo'lishi kerak?",
+      "v": [
+        "L > 9 m",
+        "L > 3 m",
+        "L > 36 m",
+        "L > 12 m"
+      ],
+      "t": 0,
+      "izoh": "2√L > 6 tengsizligini ikkiga bo'lamiz: √L > 3. Ikkala tomon manfiy emas, shuning uchun kvadratga ko'tarsak L > 9. Uzunlik manfiy bo'lmagani uchun qo'shimcha cheklov talab qilinmaydi. Javob: L > 9 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-fizika-formula",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#fea87906"
+    },
+    {
+      "q": "Erkin tushayotgan jism h metr balandlikdan taxminan t = √(h/5) soniyada yerga yetadi. Tushish vaqti 4 soniyadan kam bo'lishi uchun balandlik qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ h < 20 m",
+        "0 ≤ h < 80 m",
+        "0 ≤ h < 16 m",
+        "h > 80 m"
+      ],
+      "t": 1,
+      "izoh": "√(h/5) < 4 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: h/5 < 16. Bundan h < 80 kelib chiqadi. Balandlik manfiy bo'lmagani uchun h ≥ 0 sharti qo'shiladi. Javob: 0 ≤ h < 80 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-fizika-formula",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#63d176ce"
+    },
+    {
+      "q": "Qarshiligi 4 Om bo'lgan zanjirdagi tok kuchi I = √(P/4) amper, bunda P — iste'mol qilinayotgan quvvat. Tok kuchi 3 amperdan oshmasligi uchun quvvat qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ P ≤ 12 Vt",
+        "0 ≤ P ≤ 9 Vt",
+        "0 ≤ P ≤ 36 Vt",
+        "P ≥ 36 Vt"
+      ],
+      "t": 2,
+      "izoh": "√(P/4) ≤ 3 tengsizligining ikkala tomoni manfiy emas, shuning uchun kvadratga ko'taramiz: P/4 ≤ 9. Bundan P ≤ 36 kelib chiqadi. Quvvat manfiy bo'lmagani uchun P ≥ 0 sharti ham yoziladi. Javob: 0 ≤ P ≤ 36 Vt.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-fizika-formula",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#97ba32d3"
+    },
+    {
+      "q": "Sayoz suvda to'lqin tezligi v = √(10h) m/s formula bilan baholanadi, bunda h — suv chuqurligi. Tezlik 20 m/s dan kam bo'lishi uchun chuqurlik qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ h < 2 m",
+        "0 ≤ h < 400 m",
+        "h > 40 m",
+        "0 ≤ h < 40 m"
+      ],
+      "t": 3,
+      "izoh": "√(10h) < 20 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: 10h < 400. Bundan h < 40 kelib chiqadi. Chuqurlik manfiy bo'lmagani uchun h ≥ 0 sharti qo'shiladi. Javob: 0 ≤ h < 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-fizika-formula",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#fe2595a6"
+    },
+    {
+      "q": "Do'kon foydasi F = 5√(x − 20) mln so'm formula bilan hisoblanadi, bunda x — sotilgan mahsulot soni. Foyda 30 mln so'mdan ortiq bo'lishi uchun kamida nechta mahsulot sotilishi kerak?",
+      "v": [
+        "57 ta",
+        "56 ta",
+        "26 ta",
+        "36 ta"
+      ],
+      "t": 0,
+      "izoh": "5√(x − 20) > 30 tengsizligini beshga bo'lamiz: √(x − 20) > 6. O'ng tomon musbat, kvadratga ko'tarsak x − 20 > 36, bundan x > 56. Mahsulot soni butun bo'lgani uchun eng kichik mos qiymat 57 ta. Javob: 57 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-iqtisod",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#1f0bd95c"
+    },
+    {
+      "q": "Kichik korxonaning oylik xarajati X = 40√(n + 9) mln so'm, bunda n — ishchilar soni. Xarajat 200 mln so'mdan oshmasligi uchun ko'pi bilan nechta ishchi olish mumkin?",
+      "v": [
+        "25 ta",
+        "16 ta",
+        "5 ta",
+        "34 ta"
+      ],
+      "t": 1,
+      "izoh": "40√(n + 9) ≤ 200 tengsizligini 40 ga bo'lamiz: √(n + 9) ≤ 5. Ikkala tomon manfiy emas, kvadratga ko'tarsak n + 9 ≤ 25. Bundan n ≤ 16 kelib chiqadi va ishchilar soni butun bo'lgani uchun eng kattasi 16 ta. Tekshirish: n = 16 da 40√25 = 200 mln so'm, shart bajariladi. Javob: 16 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-iqtisod",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#12414b5d"
+    },
+    {
+      "q": "Reklamaga q mln so'm sarflanganda do'kon mijozlari soni M = 100√q + 200 ga teng bo'ladi. Mijozlar soni 500 tadan ko'p bo'lishi uchun sarf qanday bo'lishi kerak?",
+      "v": [
+        "q > 3 mln so'm",
+        "q > 5 mln so'm",
+        "q > 9 mln so'm",
+        "q > 49 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "100√q + 200 > 500 tengsizligidan 100√q > 300 chiqadi. Ikkala tomonni 100 ga bo'lsak √q > 3 hosil bo'ladi. O'ng tomon musbat, kvadratga ko'tarsak q > 9. Sarf manfiy bo'lmagani uchun qo'shimcha cheklov kerak emas. Javob: q > 9 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-iqtisod",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#808b9f82"
+    },
+    {
+      "q": "Fermer hosildorlikni H = 8√(s + 1) sentner deb baholaydi, bunda s — gektarga solingan o'g'it miqdori (kilogrammda). Hosildorlik 40 sentnerdan kam bo'lmasligi uchun kamida qancha o'g'it kerak?",
+      "v": [
+        "5 kg",
+        "25 kg",
+        "4 kg",
+        "24 kg"
+      ],
+      "t": 3,
+      "izoh": "8√(s + 1) ≥ 40 tengsizligini sakkizga bo'lamiz: √(s + 1) ≥ 5. Ikkala tomon manfiy emas, kvadratga ko'tarsak s + 1 ≥ 25. Bundan s ≥ 24 kelib chiqadi, ya'ni kamida yigirma to'rt kilogramm o'g'it solinadi. Javob: 24 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-iqtisod",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#1c3e7524"
+    },
+    {
+      "q": "Statistikada standart chetlanish σ = √D formula bilan topiladi, bunda D — dispersiya. Chetlanish 6 dan kichik bo'lishi uchun dispersiya qanday qiymatlarni olishi mumkin?",
+      "v": [
+        "0 ≤ D < 36",
+        "0 ≤ D < 6",
+        "D > 36",
+        "0 ≤ D < 12"
+      ],
+      "t": 0,
+      "izoh": "√D < 6 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'tarish mumkin: D < 36. Dispersiya ta'rifiga ko'ra u manfiy bo'lmaydi, demak D ≥ 0. Ikkala shartni birlashtiramiz. Javob: 0 ≤ D < 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#2e16c1c4"
+    },
+    {
+      "q": "Sotsiologik so'rovda xatolik chegarasi 50/√n foiz deb olinadi, bunda n — so'ralganlar soni. Xatolik 5 foizdan oshmasligi uchun kamida necha kishi so'ralishi kerak?",
+      "v": [
+        "10 kishi",
+        "100 kishi",
+        "250 kishi",
+        "25 kishi"
+      ],
+      "t": 1,
+      "izoh": "50/√n ≤ 5 tengsizligida n musbat, shuning uchun ikkala tomonni √n ga ko'paytiramiz: 50 ≤ 5√n. Beshga bo'lsak √n ≥ 10 hosil bo'ladi. Ikkala tomon manfiy emas, kvadratga ko'tarsak n ≥ 100. Javob: 100 kishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#286cd701"
+    },
+    {
+      "q": "Zavodda detalning o'lchov og'ishi √(2t + 1) mm formula bilan baholanadi, bunda t — uzluksiz ish soati. Og'ish 5 mm dan kam bo'lishi uchun ish soati qanday bo'lishi kerak?",
+      "v": [
+        "0 ≤ t < 24 soat",
+        "0 ≤ t < 25 soat",
+        "0 ≤ t < 12 soat",
+        "t > 12 soat"
+      ],
+      "t": 2,
+      "izoh": "√(2t + 1) < 5 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: 2t + 1 < 25. Bundan 2t < 24 va t < 12 kelib chiqadi. Ish soati manfiy bo'lmagani uchun t ≥ 0 sharti qo'shiladi. Javob: 0 ≤ t < 12 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#76d48ad9"
+    },
+    {
+      "q": "Laboratoriyada eritma konsentratsiyasi √(3m − 2) foiz bilan ifodalanadi, bunda m — qo'shilgan modda massasi (grammda). Konsentratsiya 7 foizdan katta bo'lishi uchun massa qanday bo'lishi kerak?",
+      "v": [
+        "m > 49 g",
+        "m > 3 g",
+        "m > 15 g",
+        "m > 17 g"
+      ],
+      "t": 3,
+      "izoh": "√(3m − 2) > 7 tengsizligining o'ng tomoni musbat, shuning uchun kvadratga ko'taramiz: 3m − 2 > 49. Bundan 3m > 51 va m > 17 kelib chiqadi. Aniqlanish sohasi 3m − 2 ≥ 0 bu javobni cheklamaydi. Javob: m > 17 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kontekst-statistika-olchov",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#5509fba8"
+    },
+    {
+      "q": "∛(2x − 5) < 3 tengsizligini yeching. Toq darajali ildizda aniqlanish sohasi qo'shimcha cheklov qo'yadimi yoki yo'qmi?",
+      "v": [
+        "(−∞; 16), qo'shimcha shart kerak emas",
+        "[2,5; 16), soha cheklaydi",
+        "(−∞; 16], chegara ham kiradi",
+        "(16; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi darajali ildiz har qanday haqiqiy sonda aniqlangan, shuning uchun ildiz osti sharti umuman yozilmaydi. Funksiya o'suvchi bo'lgani uchun ikkala tomonni kubga ko'tarish teng kuchli almashtirish: 2x − 5 < 27. Bundan 2x < 32 va x < 16 kelib chiqadi. Javob: (−∞; 16), qo'shimcha shart kerak emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-darajali-ildiz",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#e3913af9"
+    },
+    {
+      "q": "Anvar ∛(x + 4) ≥ 2 tengsizligini yechishga kirishdi. Uning to'g'ri javobi qanday to'plamdan iborat bo'ladi?",
+      "v": [
+        "[−4; +∞)",
+        "[4; +∞)",
+        "[0; +∞)",
+        "(4; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Toq darajali ildiz butun son o'qida aniqlangan, shuning uchun aniqlanish sohasi cheklanmaydi. Ikkala tomonni kubga ko'taramiz: x + 4 ≥ 8. Bundan x ≥ 4 kelib chiqadi. Tengsizlik nokat'iy bo'lgani uchun 4 soni ham yechimlar orasiga kiradi. Javob: [4; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-darajali-ildiz",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#9bdba84d"
+    },
+    {
+      "q": "∛(x − 1) > −2 tengsizligining o'ng tomoni manfiy bo'lishiga qaramay yechim mavjud. Yechimlar to'plamini toping.",
+      "v": [
+        "(−1; +∞)",
+        "(7; +∞)",
+        "(−7; +∞)",
+        "(1; +∞)"
+      ],
+      "t": 2,
+      "izoh": "Toq darajali ildiz manfiy qiymatlarni ham qabul qiladi, shuning uchun o'ng tomonning manfiyligi to'siq bo'lmaydi. Ikkala tomonni kubga ko'taramiz: x − 1 > −8. Bundan x > −7 kelib chiqadi. Javob: (−7; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "toq-darajali-ildiz",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#8126a78f"
+    },
+    {
+      "q": "Toq darajali ildiz qatnashgan tengsizlikni kubga ko'targanda nima uchun qo'shimcha shart yozilmasligini quyidagilardan qaysi biri to'g'ri tushuntiradi?",
+      "v": [
+        "Kubga ko'tarish tengsizlik ishorasini teskarisiga o'zgartiradi",
+        "Toq darajali ildiz faqat musbat sonlarda aniqlangan",
+        "Qo'shimcha shart aslida kerak, lekin ko'pincha unutiladi",
+        "Toq darajali ildiz butun son o'qida aniqlangan va o'suvchi funksiya"
+      ],
+      "t": 3,
+      "izoh": "Uchinchi, beshinchi kabi toq darajali ildizlar har qanday haqiqiy son uchun aniqlangan, shuning uchun ildiz osti ifodasiga cheklov qo'yilmaydi. Bundan tashqari bu funksiya butun o'qda o'suvchi, demak kubga ko'tarish tengsizlik ishorasini saqlaydi. Shu ikki sabab qo'shimcha shartni ortiqcha qiladi. Javob: toq darajali ildiz butun son o'qida aniqlangan va o'suvchi funksiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "toq-darajali-ildiz",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#b337a2aa"
+    },
+    {
+      "q": "√(x − 1) < a tengsizligi hech bo'lmaganda bitta yechimga ega bo'lishi uchun a parametri qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "a > 0",
+        "a ≥ 0",
+        "a > 1",
+        "a ixtiyoriy son bo'lishi mumkin"
+      ],
+      "t": 0,
+      "izoh": "Ildizning qiymatlari nol va undan katta sonlardan iborat, eng kichigi x = 1 da nolga teng. Tengsizlik hech bo'lmaganda bitta yechimga ega bo'lishi uchun a shu eng kichik qiymatdan katta bo'lishi shart. a ≤ 0 bo'lganda hech bir x mos kelmaydi. Javob: a > 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parametr-yechim-mavjudligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#019bfdc2"
+    },
+    {
+      "q": "√(x + 2) > a tengsizligi aniqlanish sohasidagi barcha x lar uchun o'rinli bo'lishi uchun a parametri qanday bo'lishi kerak?",
+      "v": [
+        "a > 0",
+        "a < 0",
+        "a ≤ 0",
+        "a ≥ 2"
+      ],
+      "t": 1,
+      "izoh": "Ildizning eng kichik qiymati x = −2 nuqtada nolga teng bo'ladi. Barcha nuqtalarda tengsizlik bajarilishi uchun shu eng kichik qiymat ham a dan katta bo'lishi kerak, ya'ni 0 > a. a = 0 bo'lsa, x = −2 da 0 > 0 bajarilmay qoladi. Javob: a < 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-mavjudligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#1b2b39bf"
+    },
+    {
+      "q": "√(9 − x²) ≥ a tengsizligi aniqlanish sohasidagi har bir x uchun bajarilishi kerak. a ning eng katta mumkin bo'lgan qiymati nechaga teng?",
+      "v": [
+        "3",
+        "−3",
+        "0",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi 9 − x² ≥ 0 dan −3 ≤ x ≤ 3 chiqadi. Bu oraliqda ildizning qiymatlari 0 dan 3 gacha o'zgaradi, chegaraviy nuqtalarda esa nolga teng. Barcha nuqtalarda tengsizlik bajarilishi uchun a eng kichik qiymatdan oshmasligi kerak, ya'ni a ≤ 0. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-mavjudligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c1610030"
+    },
+    {
+      "q": "√(x − 3) < a tengsizligining yechimlar to'plami uzunligi 16 ga teng bo'lsa, musbat a parametrining qiymatini toping.",
+      "v": [
+        "16",
+        "8",
+        "2",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "a musbat bo'lgani uchun sistema x − 3 ≥ 0 va x − 3 < a² ko'rinishida yoziladi. Bundan yechim 3 ≤ x < 3 + a² oralig'i bo'lib, uning uzunligi a² ga teng. Shart bo'yicha a² = 16, demak musbat a uchun a = 4. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parametr-yechim-mavjudligi",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#492e2e75"
+    },
+    {
+      "q": "Sardor y = 1/√(x − 5) funksiyaning aniqlanish sohasini topmoqchi. Maxrajdagi ildiz qanday qo'shimcha shart qo'yishini hisobga oling.",
+      "v": [
+        "(5; +∞)",
+        "[5; +∞)",
+        "(−∞; 5)",
+        "[−5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Ildiz ostidagi ifoda manfiy bo'lmasligi kerak, lekin maxraj nolga teng bo'lib qolmasligi ham shart. Shuning uchun x − 5 ≥ 0 emas, balki x − 5 > 0 deb yoziladi. Bundan x > 5 kelib chiqadi. Javob: (5; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-maxrajda-soha",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#73cd4ea8"
+    },
+    {
+      "q": "y = √(x + 3)/(x − 2) funksiyaning aniqlanish sohasini toping. Bunda ikkita alohida shartni birga hisobga olish talab qilinadi.",
+      "v": [
+        "[−3; +∞)",
+        "[−3; 2) ∪ (2; +∞)",
+        "(−3; 2) ∪ (2; +∞)",
+        "(2; +∞)"
+      ],
+      "t": 1,
+      "izoh": "Suratdagi ildiz uchun x + 3 ≥ 0, ya'ni x ≥ −3 sharti yoziladi. Maxraj nolga aylanmasligi uchun x ≠ 2 bo'lishi kerak. Ikkala shartni birlashtirsak −3 ≤ x < 2 va x > 2 qoladi. Javob: [−3; 2) ∪ (2; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-maxrajda-soha",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#48c180b3"
+    },
+    {
+      "q": "Nazira y = 1/√(16 − x²) funksiyaning aniqlanish sohasini daftariga yozmoqchi. To'g'ri yozilgan javobni tanlang.",
+      "v": [
+        "[−4; 4]",
+        "(−∞; −4) ∪ (4; +∞)",
+        "(−4; 4)",
+        "[−16; 16]"
+      ],
+      "t": 2,
+      "izoh": "Ildiz maxrajda turgani uchun ildiz ostidagi ifoda qat'iy musbat bo'lishi shart: 16 − x² > 0. Bundan x² < 16 va |x| < 4 kelib chiqadi. Chegaraviy nuqtalarda maxraj nolga aylanadi, shuning uchun ular sohaga kirmaydi. Javob: (−4; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ildiz-maxrajda-soha",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#39612958"
+    },
+    {
+      "q": "y = √(x − 1) + 1/√(6 − x) funksiyaning aniqlanish sohasini aniqlang. Ikki ildiz ikki xil shart qo'yishiga alohida e'tibor bering.",
+      "v": [
+        "(1; 6)",
+        "[1; 6]",
+        "(1; 6]",
+        "[1; 6)"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ildiz alohida had sifatida turgani uchun x − 1 ≥ 0, ya'ni x ≥ 1 sharti yoziladi. Ikkinchi ildiz maxrajda bo'lgani uchun 6 − x > 0, ya'ni x < 6 bo'lishi kerak. Ikkala shartni birga olsak 1 ≤ x < 6 hosil bo'ladi. Javob: [1; 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ildiz-maxrajda-soha",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#458eaadf"
+    },
+    {
+      "q": "Bir tengsizlikning chap tomoni √(x − 2) + √(5 − x) ifodasidan iborat. Bu ifoda ma'noga ega bo'ladigan x lar to'plamini toping.",
+      "v": [
+        "[2; 5]",
+        "(2; 5)",
+        "[−5; 2]",
+        "(−∞; 2] ∪ [5; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi ildiz uchun x − 2 ≥ 0, ya'ni x ≥ 2 sharti yoziladi. Ikkinchi ildiz uchun 5 − x ≥ 0, ya'ni x ≤ 5 sharti kerak. Ikkala shart bir vaqtda bajarilishi lozim, demak 2 ≤ x ≤ 5. Javob: [2; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-ildizli-ifoda",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#107353e3"
+    },
+    {
+      "q": "√(x + 1) + √(3 − x) ≥ 0 tengsizligining yechimlar to'plami qanday bo'lishini aniqlang va to'g'ri javobni tanlang.",
+      "v": [
+        "Yechim yo'q",
+        "[−1; 3]",
+        "Barcha haqiqiy sonlar",
+        "(−1; 3)"
+      ],
+      "t": 1,
+      "izoh": "Ikkala ildizning qiymati ham manfiy emas, shuning uchun ularning yig'indisi doim noldan katta yoki teng bo'ladi. Demak tengsizlik ifoda ma'noga ega bo'lgan barcha nuqtalarda bajariladi. Aniqlanish sohasi x ≥ −1 va x ≤ 3 shartlaridan topiladi. Javob: [−1; 3].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildizli-ifoda",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#fef4eeb7"
+    },
+    {
+      "q": "√(x − 4) − √(x + 1) > 0 tengsizligini yechishga urinib ko'ring. Uning yechimlar to'plami qanday bo'lib chiqadi?",
+      "v": [
+        "[4; +∞)",
+        "(4; +∞)",
+        "Yechim yo'q",
+        "[−1; 4)"
+      ],
+      "t": 2,
+      "izoh": "Tengsizlikni √(x − 4) > √(x + 1) ko'rinishida yozamiz. Aniqlanish sohasi x ≥ 4 bo'lib, u yerda ikkala tomon manfiy emas. Kvadratga ko'tarsak x − 4 > x + 1, ya'ni −4 > 1 hosil bo'ladi, bu esa hech qachon o'rinli emas. Javob: yechim yo'q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-ildizli-ifoda",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#649f6bda"
+    },
+    {
+      "q": "√(x + 5) · √(2 − x) ≥ 0 tengsizligi qaysi to'plamda o'rinli bo'lishini aniqlang va to'g'ri javobni belgilang.",
+      "v": [
+        "(−5; 2)",
+        "Yechim yo'q",
+        "(−∞; −5] ∪ [2; +∞)",
+        "[−5; 2]"
+      ],
+      "t": 3,
+      "izoh": "Ikkala ko'paytuvchi ham ildiz bo'lgani uchun manfiy emas, demak ularning ko'paytmasi ham manfiy bo'lmaydi. Shuning uchun tengsizlik ifoda aniqlangan barcha nuqtalarda bajariladi. Aniqlanish sohasi x + 5 ≥ 0 va 2 − x ≥ 0 shartlaridan −5 ≤ x ≤ 2 chiqadi. Javob: [−5; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-ildizli-ifoda",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#c2057faf"
+    },
+    {
+      "q": "Ikki tengsizlik bir vaqtda bajarilishi kerak: √(x + 2) < √(2x − 1) va √(x + 2) > 2. Ularning umumiy yechimini toping.",
+      "v": [
+        "(3; +∞)",
+        "(2; +∞)",
+        "(2; 3)",
+        "[3; +∞)"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tengsizlikda chap ildiz osti manfiy bo'lmasin: x ≥ −2. Ikkala tomon manfiy emas, kvadratga ko'tarsak x + 2 < 2x − 1, bundan x > 3. Ikkinchi tengsizlikda o'ng tomon musbat, kvadratga ko'tarsak x + 2 > 4, ya'ni x > 2. Ikki to'plamning kesishmasi x > 3 bo'ladi. Javob: (3; +∞).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-shart-tahlil",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#90dcf7b1"
+    },
+    {
+      "q": "Ikkita shart berilgan: √(x − 1) ≤ 3 va √(x + 2) ≥ 2. Ikkalasini bir vaqtda qanoatlantiruvchi x lar to'plamini toping.",
+      "v": [
+        "[1; 10]",
+        "[2; 10]",
+        "[2; +∞)",
+        "[1; 2]"
+      ],
+      "t": 1,
+      "izoh": "Birinchi shartdan x − 1 ≥ 0 va x − 1 ≤ 9, ya'ni 1 ≤ x ≤ 10 kelib chiqadi. Ikkinchi shartdan x + 2 ≥ 4, ya'ni x ≥ 2. Ikki to'plamning kesishmasini olamiz va 2 ≤ x ≤ 10 hosil bo'ladi. Javob: [2; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralash-shart-tahlil",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#081918b7"
+    },
+    {
+      "q": "√(25 − x²) ≤ 3 tengsizligini yechishda aniqlanish sohasi javobni ikkita kesmaga bo'lib yuboradi. To'g'ri javobni tanlang.",
+      "v": [
+        "[−4; 4]",
+        "(−∞; −4] ∪ [4; +∞)",
+        "[−5; −4] ∪ [4; 5]",
+        "[−5; 5]"
+      ],
+      "t": 2,
+      "izoh": "Aniqlanish sohasi 25 − x² ≥ 0, ya'ni −5 ≤ x ≤ 5. Ikkala tomon manfiy emas, kvadratga ko'tarsak 25 − x² ≤ 9. Bundan x² ≥ 16 va |x| ≥ 4 kelib chiqadi. Soha bilan kesishtirsak −5 ≤ x ≤ −4 va 4 ≤ x ≤ 5 qoladi. Javob: [−5; −4] ∪ [4; 5].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-shart-tahlil",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#377c027b"
+    },
+    {
+      "q": "√(x² − 4x + 4) < 3 tengsizligini yechishda ildiz ostidagi ifodani to'la kvadratga keltirish katta qulaylik tug'diradi. Yechimni toping.",
+      "v": [
+        "(2; 5)",
+        "(−∞; −1) ∪ (5; +∞)",
+        "[−1; 5]",
+        "(−1; 5)"
+      ],
+      "t": 3,
+      "izoh": "Ildiz ostidagi ifodani to'la kvadratga keltiramiz: x² − 4x + 4 = (x − 2)². Kvadratning kvadrat ildizi modulga teng, shuning uchun chap tomon |x − 2| ga aylanadi. Tengsizlik |x − 2| < 3 ko'rinishini oladi, bundan −3 < x − 2 < 3 va −1 < x < 5. Javob: (−1; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aralash-shart-tahlil",
+      "id": "matematika_tngs_m08-irratsional-tengsizliklar#f251efda"
+    }
+  ]
+}

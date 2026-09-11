@@ -1,0 +1,216 @@
+{
+  "nom": "36-mavzu. Masala. Buglanish Qaynash",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qaynash temperaturasida bo'lgan 1,5 kg suvni butunlay bug'ga aylantirish uchun qancha issiqlik miqdori kerak? (r = 2,3 MJ/kg)",
+      "v": [
+        "3,45 MJ",
+        "1,53 MJ",
+        "34,5 MJ",
+        "0,345 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = r·m = 2,3·1,5 = 3,45 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#e53154bc"
+    },
+    {
+      "q": "Qaynash temperaturasida bo'lgan 500 g ruxni to'liq bug'ga aylantirish uchun qancha issiqlik miqdori sarflanadi? (r = 1,8 MJ/kg)",
+      "v": [
+        "900 kJ",
+        "90 kJ",
+        "3,6 MJ",
+        "9 MJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,5 kg; Q = r·m = 1,8·10⁶·0,5 = 900 000 J = 900 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#24acadb9"
+    },
+    {
+      "q": "Massasi 150 g suv bug'i suyuqlikka aylanganda qancha issiqlik miqdori ajraladi? (r = 2,3 MJ/kg)",
+      "v": [
+        "345 kJ",
+        "34,5 kJ",
+        "3,45 MJ",
+        "15,3 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,15 kg; Q = r·m = 2,3·10⁶·0,15 = 345 000 J = 345 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#3c046f98"
+    },
+    {
+      "q": "Choynakda boshlang'ich temperaturasi 20 °C, hajmi 0,7 l bo'lgan suv dastlab qaynagan, so'ng to'la bug'ga aylangan. Suv qancha issiqlik miqdori olgan? (c = 4200 J/(kg·°C), r = 2,3 MJ/kg)",
+      "v": [
+        "≈ 1,84 MJ",
+        "1,61 MJ",
+        "0,24 MJ",
+        "18,4 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = m·c·Δt + m·r = 0,7·4200·80 + 0,7·2,3·10⁶ = 235 200 + 1 610 000 ≈ 1,84 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#3dd9c10e"
+    },
+    {
+      "q": "Qaynash temperaturasidagi 2 kg suvni to'liq bug'ga aylantirish uchun qancha issiqlik kerak? (r = 2,3 MJ/kg)",
+      "v": [
+        "4,6 MJ",
+        "2,3 MJ",
+        "46 MJ",
+        "0,46 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = r·m = 2,3·2 = 4,6 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#fe26eb70"
+    },
+    {
+      "q": "Qaynash temperaturasidagi 200 g spirtni to'liq bug'ga aylantirish uchun qancha issiqlik sarflanadi? (r = 0,85 MJ/kg)",
+      "v": [
+        "170 kJ",
+        "17 kJ",
+        "1,7 MJ",
+        "425 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,2 kg; Q = r·m = 0,85·10⁶·0,2 = 170 000 J = 170 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#1e64b08c"
+    },
+    {
+      "q": "Temperaturasi 10 °C va massasi 2 kg bo'lgan suv to'la bug'ga aylangan. Bu jarayonlarda suv qancha issiqlik miqdori olgan? (c = 4200 J/(kg·°C), r = 2,3 MJ/kg)",
+      "v": [
+        "5,356 MJ",
+        "4,6 MJ",
+        "0,756 MJ",
+        "53,56 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = m·c·Δt + m·r = 2·4200·90 + 2·2,3·10⁶ = 756 000 + 4 600 000 = 5 356 000 J = 5,356 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#656ef389"
+    },
+    {
+      "q": "Qaynash temperaturasidagi qancha massali suvni bug'ga aylantirish uchun 6,9 MJ issiqlik kerak? (r = 2,3 MJ/kg)",
+      "v": [
+        "3 kg",
+        "0,3 kg",
+        "30 kg",
+        "15,87 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/r = 6,9/2,3 = 3 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#592ba07c"
+    },
+    {
+      "q": "Qaynash temperaturasidagi 1 kg ruxni to'liq bug'ga aylantirish uchun qancha issiqlik kerak? (r = 1,8 MJ/kg)",
+      "v": [
+        "1,8 MJ",
+        "0,8 MJ",
+        "18 MJ",
+        "2,8 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = r·m = 1,8·1 = 1,8 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#a166d352"
+    },
+    {
+      "q": "0,5 kg suv bug'i kondensatsiyalanganda qancha issiqlik ajraladi? (r = 2,3 MJ/kg)",
+      "v": [
+        "1,15 MJ",
+        "115 kJ",
+        "11,5 MJ",
+        "0,46 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = r·m = 2,3·0,5 = 1,15 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#b2e4a61b"
+    },
+    {
+      "q": "Temperaturasi 30 °C bo'lgan 3 kg suv dastlab qaynatildi, so'ng to'liq bug'ga aylantirildi. Jami qancha issiqlik sarflangan? (c = 4200 J/(kg·°C), r = 2,3 MJ/kg)",
+      "v": [
+        "7,782 MJ",
+        "6,9 MJ",
+        "0,882 MJ",
+        "77,82 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 3·4200·70 + 3·2,3·10⁶ = 882 000 + 6 900 000 = 7 782 000 J = 7,782 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#f80d2e79"
+    },
+    {
+      "q": "Qaynash temperaturasida 145 kJ issiqlik sarflab qancha benzilni bug'ga aylantirish mumkin? (r = 0,29 MJ/kg)",
+      "v": [
+        "0,5 kg",
+        "5 kg",
+        "0,05 kg",
+        "42 kg"
+      ],
+      "t": 0,
+      "izoh": "m = Q/r = 145 000/(0,29·10⁶) = 0,5 kg",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#fb29c5c7"
+    },
+    {
+      "q": "Qaynash temperaturasidagi 100 g simobni to'liq bug'ga aylantirish uchun qancha issiqlik kerak? (r = 0,29 MJ/kg)",
+      "v": [
+        "29 kJ",
+        "2,9 kJ",
+        "290 kJ",
+        "0,29 kJ"
+      ],
+      "t": 0,
+      "izoh": "m = 0,1 kg; Q = r·m = 0,29·10⁶·0,1 = 29 000 J = 29 kJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#22c28eb0"
+    },
+    {
+      "q": "Temperaturasi 40 °C bo'lgan 1,5 kg suv qaynatilib, to'liq bug'ga aylantirildi. Suv olgan umumiy issiqlik miqdorini toping. (c = 4200 J/(kg·°C), r = 2,3 MJ/kg)",
+      "v": [
+        "3,828 MJ",
+        "3,45 MJ",
+        "0,378 MJ",
+        "38,28 MJ"
+      ],
+      "t": 0,
+      "izoh": "Q = 1,5·4200·60 + 1,5·2,3·10⁶ = 378 000 + 3 450 000 = 3 828 000 J = 3,828 MJ",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m36-buglanish-qaynash#8102cb2f"
+    }
+  ]
+}

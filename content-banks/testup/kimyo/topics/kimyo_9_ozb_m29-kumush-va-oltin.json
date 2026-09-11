@@ -1,0 +1,501 @@
+{
+  "nom": "29-mavzu. Kumush va oltin. Xossalari. Ishlatilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kumush qanday rangga ega metall?",
+      "v": [
+        "Oq rangli, yaltiroq",
+        "Sariq rangli, yaltiroq",
+        "Qizil rangli, mat",
+        "Qora rangli"
+      ],
+      "t": 0,
+      "izoh": "Kumush yaltiroq, oq rangdagi yumshoq metall.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#e2426336"
+    },
+    {
+      "q": "Kumush qotishmalari tayyorlashda unga qaysi metallar aralashtiriladi?",
+      "v": [
+        "Mis yoki rux",
+        "Oltin yoki platina",
+        "Temir yoki qo'rg'oshin",
+        "Marganes yoki xrom"
+      ],
+      "t": 0,
+      "izoh": "Kumush yumshoq bo'lgani uchun uning mis yoki rux bilan qotishmalari ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#a07cee18"
+    },
+    {
+      "q": "Kumushning qaysi ioni tutgan suv uzoq vaqt buzilmasdan saqlanadi?",
+      "v": [
+        "Ag+",
+        "Cu2+",
+        "Fe3+",
+        "Zn2+"
+      ],
+      "t": 0,
+      "izoh": "Kumush ioni [Ag+] tutgan suv uzoq vaqt buzilmasdan saqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#7f93a03a"
+    },
+    {
+      "q": "Kumush tuzlari qanday xususiyatga ega bo'lganligi uchun dori vositalari tayyorlanadi?",
+      "v": [
+        "Mikroorganizmlarni o'ldirish",
+        "Rang berish",
+        "Hidli bo'lish",
+        "Neytrallash xususiyati"
+      ],
+      "t": 0,
+      "izoh": "Kumush tuzlari mikroorganizmlarni o'ldirish xususiyatiga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#3fcd7ab4"
+    },
+    {
+      "q": "Kumush kimyoviy jihatdan qanday?",
+      "v": [
+        "Juda passiv",
+        "Juda faol",
+        "Amfoter",
+        "Asosli"
+      ],
+      "t": 0,
+      "izoh": "Kumush kimyoviy jihatdan juda ham passiv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#5790febc"
+    },
+    {
+      "q": "Kumush qaysi kislota bilan erib, kumush nitratni hosil qiladi?",
+      "v": [
+        "Konsentrlangan nitrat kislota",
+        "Suyultirilgan xlorid kislota",
+        "Suyultirilgan sulfat kislota",
+        "Sirka kislota"
+      ],
+      "t": 0,
+      "izoh": "Ag + 2HNO3 = AgNO3 + NO2 + H2O (konsentrlangan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#7d9a5b84"
+    },
+    {
+      "q": "Kumush bilan konsentrlangan HNO3 reaksiyasida qaysi gaz ajralib chiqadi?",
+      "v": [
+        "NO2",
+        "NO",
+        "H2",
+        "N2O"
+      ],
+      "t": 0,
+      "izoh": "Ag + 2HNO3 = AgNO3 + NO2 + H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#bfd6b3e6"
+    },
+    {
+      "q": "Kumush qizdirilganda quyidagilardan qaysi birlari bilan reaksiyaga kirishadi?",
+      "v": [
+        "Xlor, brom, yod va oltingugurt",
+        "Kislorod, suv va uglekisil gaz",
+        "Azot, geliy va argon",
+        "Faqat suv bug'i bilan"
+      ],
+      "t": 0,
+      "izoh": "Qizdirilganda kumush xlor, brom, yod va oltingugurt bilan reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#d6f877fc"
+    },
+    {
+      "q": "Kumushning eng ko'p ishlatiladigan birikmasi qaysi?",
+      "v": [
+        "AgNO3",
+        "AgCl",
+        "AgBr",
+        "Ag2O"
+      ],
+      "t": 0,
+      "izoh": "Kumush nitrat kumushning eng ko'p ishlatiladigan birikmasidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#ea5b1a64"
+    },
+    {
+      "q": "Galogenid ionlarini (xlorid, bromid, yodid) aniqlashda qaysi modda reaktiv sifatida ishlatiladi?",
+      "v": [
+        "Kumush nitrat",
+        "Kumush bromid",
+        "Oltin xlorid",
+        "Rux sulfat"
+      ],
+      "t": 0,
+      "izoh": "Kumush nitrat galogenidlar uchun reaktivdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#a7775c14"
+    },
+    {
+      "q": "Foto va kinoplyonkalar tayyorlashda kumushning qaysi tuzi ishlatiladi?",
+      "v": [
+        "AgBr",
+        "AgNO3",
+        "AgCl",
+        "AgI"
+      ],
+      "t": 0,
+      "izoh": "AgBr yorug'likni o'ta sezuvchi bo'lganligi uchun foto va kinoplyonkalar tayyorlashda ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#dafeb25a"
+    },
+    {
+      "q": "Kumush nitrat ko'zgu tayyorlashdan tashqari yana nimada ishlatiladi?",
+      "v": [
+        "Kumushning boshqa birikmalarini olishda",
+        "Oltin tozalashda",
+        "Po'lat ishlab chiqarishda",
+        "Payvandlashda"
+      ],
+      "t": 0,
+      "izoh": "AgNO3 dan kumushning boshqa birikmalari olinadi, ko'zgu tayyorlashda ham ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#5a602755"
+    },
+    {
+      "q": "Oltinning Moss shkalasi bo'yicha qattiqligi nechaga teng?",
+      "v": [
+        "2,5",
+        "4,5",
+        "6,5",
+        "8,5"
+      ],
+      "t": 0,
+      "izoh": "Moss shkalasi bo'yicha oltinning qattiqligi 2,5 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#321f0986"
+    },
+    {
+      "q": "Oltindan qalinligi qancha bo'lgan yupqa zar qog'ozlar tayyorlash mumkin?",
+      "v": [
+        "0,0002 mm",
+        "0,002 mm",
+        "0,02 mm",
+        "0,2 mm"
+      ],
+      "t": 0,
+      "izoh": "Oltindan qalinligi 0,0002 mm gacha bo'lgan yupqa zar qog'ozlar tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#e9d27806"
+    },
+    {
+      "q": "1 g oltindan qancha uzunlikdagi juda ingichka sim tayyorlash mumkin?",
+      "v": [
+        "3,5 km",
+        "0,35 km",
+        "35 km",
+        "350 km"
+      ],
+      "t": 0,
+      "izoh": "1 g oltindan 3,5 km li juda ingichka sim tayyorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#a2e27a48"
+    },
+    {
+      "q": "Oltinning zichligi necha g/cm3?",
+      "v": [
+        "19,32",
+        "10,5",
+        "7,87",
+        "8,96"
+      ],
+      "t": 0,
+      "izoh": "Oltinning zichligi 19,32 g/cm3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#462de8f1"
+    },
+    {
+      "q": "Oltin tabiatda asosan qanday holda uchraydi?",
+      "v": [
+        "Sof (tug'ma) holda",
+        "Oksidlar holida",
+        "Sulfidlar holida",
+        "Suvda erigan holda"
+      ],
+      "t": 0,
+      "izoh": "Oltin tabiatda, asosan, sof holda (tug'ma) uchraydigan metall.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#064f12c6"
+    },
+    {
+      "q": "Dengiz suvining 1 m3 da qancha oltin uchraydi?",
+      "v": [
+        "0,008 g",
+        "0,08 g",
+        "0,8 g",
+        "8 g"
+      ],
+      "t": 0,
+      "izoh": "Dengiz suvining 1 m3 da 0,008 g oltin uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#b5d16d2f"
+    },
+    {
+      "q": "Oltin rudasidan oltinni ajratib olish uchun rudani qanday usuldan foydalaniladi?",
+      "v": [
+        "Yuvish usulidan",
+        "Elektroliz usulidan",
+        "Distillash usulidan",
+        "Kristallash usulidan"
+      ],
+      "t": 0,
+      "izoh": "Rudadan oltinni ajratib olish uchun rudani yuvish usulidan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#f03a5c61"
+    },
+    {
+      "q": "Sanoatda oltinni olishning asosiy usuli qanday ataladi?",
+      "v": [
+        "Sianlash usuli",
+        "Yuvish usuli",
+        "Aluminotermiya",
+        "Elektroliz"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda asosiy usul — oltinning sianidli kompleks tuzini ajratib olish, ya'ni sianlash usuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#74756c85"
+    },
+    {
+      "q": "Sianlash usulida oltin bilan KCN, O2 va suv reaksiyasida qaysi kompleks tuz hosil bo'ladi?",
+      "v": [
+        "K[Au(CN)2]",
+        "K[AuCl4]",
+        "K2[Zn(CN)4]",
+        "K3[Fe(CN)6]"
+      ],
+      "t": 0,
+      "izoh": "4Au + 8KCN + O2 + 2H2O = 4K[Au(CN)2] + 4KOH.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#7418073f"
+    },
+    {
+      "q": "K[Au(CN)2] kompleks tuziga qaysi metall ta'sir ettirilganda oltin siqib chiqadi?",
+      "v": [
+        "Rux",
+        "Temir",
+        "Mis",
+        "Kumush"
+      ],
+      "t": 0,
+      "izoh": "2K[Au(CN)2] + Zn = K2[Zn(CN)4] + 2Au.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#f6ecfc8a"
+    },
+    {
+      "q": "Zar suvi nimalardan tarkib topgan?",
+      "v": [
+        "Nitrat kislota va xlorid kislotadan",
+        "Sulfat kislota va suvdan",
+        "Nitrat kislota va sirka kislotadan",
+        "Xlorid kislota va ammonakdan"
+      ],
+      "t": 0,
+      "izoh": "Zar suvi — nitrat kislota bilan xlorid kislotaning aralashmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#b761f290"
+    },
+    {
+      "q": "Zar suvidagi nitrat kislota va xlorid kislotaning mol nisbati qanday?",
+      "v": [
+        "1:3",
+        "3:1",
+        "1:1",
+        "2:1"
+      ],
+      "t": 0,
+      "izoh": "Zar suvi — nitrat kislota bilan xlorid kislotani 1:3 mol nisbatdagi aralashmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#7df13368"
+    },
+    {
+      "q": "Oltin zar suvida eriganda dastlab qaysi birikma hosil bo'ladi?",
+      "v": [
+        "AuCl3",
+        "AuNO3",
+        "Au2O3",
+        "AuOH"
+      ],
+      "t": 0,
+      "izoh": "Au + HNO3 + 3HCl = AuCl3 + NO + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#bcca3f19"
+    },
+    {
+      "q": "AuCl3 ortiqcha olingan HCl bilan birikib qaysi kompleks birikmani hosil qiladi?",
+      "v": [
+        "H[AuCl4]",
+        "H[AuCl2]",
+        "AuCl4",
+        "HAu"
+      ],
+      "t": 0,
+      "izoh": "AuCl3 + HCl = H[AuCl4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#592ff705"
+    },
+    {
+      "q": "Oltin kukunlari qanday sharoitda xlor bilan reaksiyaga kirishadi?",
+      "v": [
+        "Xlorli suvda yoki 150 °C da",
+        "Faqat qaynash haroratida",
+        "Faqat muzlash haroratida",
+        "Hech qanday sharoitda kirishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Oltin kukunlari xlorli suv yoki 150 °C da xlor bilan reaksiyaga kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#a84fc3ab"
+    },
+    {
+      "q": "2Au + 3Cl2 = 2AuCl3 reaksiyasida hosil bo'luvchi modda nima deb ataladi?",
+      "v": [
+        "Oltin (III)-xlorid",
+        "Oltin (I)-xlorid",
+        "Oltin nitrat",
+        "Oltin oksid"
+      ],
+      "t": 0,
+      "izoh": "2Au + 3Cl2 = 2AuCl3 — oltin (III)-xlorid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#0fca9fb0"
+    },
+    {
+      "q": "Oltindan tayyorlangan buyumdagi tamg'a (proba) nimani bildiradi?",
+      "v": [
+        "Buyumdagi oltinning foiz miqdorini",
+        "Buyumning narxini",
+        "Buyum tayyorlangan yilni",
+        "Zargarning familiyasini"
+      ],
+      "t": 0,
+      "izoh": "Proba buyumdagi oltinning foiz miqdorini bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#e12b635a"
+    },
+    {
+      "q": "583 probali buyumda oltinning miqdori necha foizni tashkil qiladi?",
+      "v": [
+        "58,3 %",
+        "5,83 %",
+        "83,5 %",
+        "95,8 %"
+      ],
+      "t": 0,
+      "izoh": "583 proba o'sha buyumda oltin 58,3 % ni tashkil qiladi deganidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#b3e75b74"
+    },
+    {
+      "q": "Zargarlik va texnik buyumlar uchun oltin qanday ko'rinishda ishlatiladi?",
+      "v": [
+        "Kumush yoki mis bilan qotishma holida",
+        "Sof holda",
+        "Oksid holida",
+        "Sulfid holida"
+      ],
+      "t": 0,
+      "izoh": "Oltin yumshoq bo'lgani uchun kumush yoki mis bilan qotishmalari ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#80e493f1"
+    },
+    {
+      "q": "Oltin qonda va hujayralarda qanday miqdorda uchraydi?",
+      "v": [
+        "0,01—0,05 mg/kg",
+        "1—5 mg/kg",
+        "10—50 mg/kg",
+        "0,1—0,5 g/kg"
+      ],
+      "t": 0,
+      "izoh": "Hujayralarda va qonda oltin 0,01—0,05 mg/kg uchraydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#14656023"
+    },
+    {
+      "q": "Darslikka ko'ra oltin qaysi o'simlikda ham uchraydi?",
+      "v": [
+        "Makkajo'xori doni va popugida",
+        "Bug'doy doni va piyozida",
+        "Olma va uzumda",
+        "Sabzi va kartoshkada"
+      ],
+      "t": 0,
+      "izoh": "Makkajo'xori doni va popugida ham oltin bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m29-kumush-va-oltin#9091426c"
+    }
+  ]
+}

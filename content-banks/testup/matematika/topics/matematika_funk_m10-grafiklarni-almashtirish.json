@@ -1,0 +1,1609 @@
+{
+  "nom": "Grafiklarni almashtirish",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "y = x² funksiyaning grafigi y = x² + 5 grafigiga aylanishi uchun uni qanday siljitish kerakligini aniqlang.",
+      "v": [
+        "Ox o'qi bo'ylab 5 birlik o'ngga",
+        "Oy o'qi bo'ylab 5 birlik yuqoriga",
+        "Oy o'qi bo'ylab 5 birlik pastga",
+        "Ox o'qi bo'ylab 5 birlik chapga"
+      ],
+      "t": 1,
+      "izoh": "y = f(x) + a ko'rinishida a > 0 bo'lsa, grafik Oy o'qi bo'ylab a birlik yuqoriga siljiydi. Bu yerda a = 5, chunki har bir x uchun ordinata 5 birlikka ortadi. Tekshirish: cho'qqi (0; 0) nuqtadan (0; 5) nuqtaga ko'chadi. Javob: Oy o'qi bo'ylab 5 birlik yuqoriga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4edb1f3b"
+    },
+    {
+      "q": "Toshkentdagi do'konda kunlik daromad D(t) funksiya bilan berilgan. Egasi har kuni qo'shimcha 40 ming so'mlik ijara haqi ola boshladi va yangi daromad E(t) = D(t) + 40 bo'ldi. E grafigi D grafigiga nisbatan qanday joylashadi?",
+      "v": [
+        "40 birlik o'ngga siljigan",
+        "40 birlik pastga siljigan",
+        "40 birlik yuqoriga siljigan",
+        "Ox o'qiga nisbatan simmetrik"
+      ],
+      "t": 2,
+      "izoh": "E(t) = D(t) + 40 ifodasida qo'shiluvchi funksiya qiymatiga qo'shilgan, argumentga emas. Demak har bir t uchun ordinata 40 birlikka ortadi va grafik Oy o'qi bo'ylab 40 birlik yuqoriga ko'chadi. Argument o'zgarmagani uchun o'ngga yoki chapga siljish yuz bermaydi. Javob: 40 birlik yuqoriga siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4d5d838a"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qi bo'ylab 7 birlik pastga siljitildi. Hosil bo'lgan yangi funksiyaning formulasini tanlang.",
+      "v": [
+        "y = f(x + 7)",
+        "y = f(x − 7)",
+        "y = f(x) + 7",
+        "y = f(x) − 7"
+      ],
+      "t": 3,
+      "izoh": "Pastga siljish har bir nuqtaning ordinatasini kamaytiradi, ya'ni funksiya qiymatidan 7 ayiriladi. Bu bevosita y = f(x) − 7 formulasini beradi. Argumentni o'zgartiruvchi f(x + 7) va f(x − 7) esa gorizontal siljishga mos keladi. Javob: y = f(x) − 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#0f203e2d"
+    },
+    {
+      "q": "Suv omborida sath h(t) funksiya bilan qayd etiladi. O'lchov asbobi noto'g'ri sozlangani uchun uning ko'rsatkichi har doim haqiqiy sathdan 3 metr kam chiqmoqda. Asbob grafigi haqiqiy grafikka nisbatan qanday joylashgan?",
+      "v": [
+        "3 birlik yuqoriga siljigan",
+        "3 birlik chapga siljigan",
+        "3 birlik pastga siljigan",
+        "Oy o'qiga nisbatan simmetrik"
+      ],
+      "t": 2,
+      "izoh": "Asbob ko'rsatkichi p(t) = h(t) − 3 ko'rinishida bo'ladi, chunki har bir vaqtda qiymat 3 metrga kam chiqadi. Funksiya qiymatidan o'zgarmas son ayirilganda grafik Oy o'qi bo'ylab pastga siljiydi. Siljish kattaligi aynan 3 birlik. Javob: 3 birlik pastga siljigan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#de66ed44"
+    },
+    {
+      "q": "y = f(x) grafigini Ox o'qi bo'ylab 4 birlik o'ngga siljitsak, natijada qanday funksiya hosil bo'ladi?",
+      "v": [
+        "y = f(x − 4)",
+        "y = f(x + 4)",
+        "y = f(x) − 4",
+        "y = f(x) + 4"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal siljishda argument o'zgaradi: o'ngga a birlik siljish y = f(x − a) formulasini beradi. Bu yerda a = 4, demak yangi funksiya y = f(x − 4) bo'ladi. Ishorani chalkashtirish eng ko'p uchraydigan xato, chunki f(x + 4) grafikni aksincha chapga suradi. Javob: y = f(x − 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#5f21db7d"
+    },
+    {
+      "q": "Bekat orqali o'tuvchi yo'lovchilar soni P(t) funksiya bilan berilgan, bu yerda t — sutkadagi soat. Yangi jadvalda barcha reyslar 2 soatga kechiktirildi. Yangi yo'lovchilar oqimi qanday formula bilan yoziladi?",
+      "v": [
+        "P(t + 2)",
+        "P(t − 2)",
+        "P(t) + 2",
+        "P(t) − 2"
+      ],
+      "t": 1,
+      "izoh": "Hodisa kechroq sodir bo'lsa, grafik vaqt o'qi bo'ylab o'ngga siljiydi. O'ngga 2 birlik siljish argumentdan 2 ni ayirish demak, ya'ni P(t − 2) hosil bo'ladi. Tekshirish: ilgari t = 8 da bo'lgan cho'qqi endi t = 10 da bo'ladi, chunki P(10 − 2) = P(8). Javob: P(t − 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#ae115d1a"
+    },
+    {
+      "q": "y = √x funksiya grafigini qaysi yo'nalishda va necha birlik siljitsak, y = √(x + 3) grafigi hosil bo'ladi?",
+      "v": [
+        "3 birlik o'ngga",
+        "3 birlik yuqoriga",
+        "3 birlik chapga",
+        "3 birlik pastga"
+      ],
+      "t": 2,
+      "izoh": "√(x + 3) ifodasida argument x o'rniga x + 3 turibdi. y = f(x + a) ko'rinishida a > 0 bo'lganda grafik a birlik chapga siljiydi. Tekshiramiz: asl grafik x = 0 dan boshlanadi, yangisi esa x = −3 dan boshlanadi, ya'ni chapga surilgan. Javob: 3 birlik chapga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#328cd190"
+    },
+    {
+      "q": "Zilola quyosh yoritilganligi grafigini L(t) ko'rinishida chizdi. Soat mintaqasi o'zgargach barcha hodisalar bir soat oldin ro'y beradigan bo'ldi. Yangi yoritilganlik funksiyasini ko'rsating.",
+      "v": [
+        "L(t) + 1",
+        "L(t) − 1",
+        "L(t − 1)",
+        "L(t + 1)"
+      ],
+      "t": 3,
+      "izoh": "Hodisa oldinroq sodir bo'lsa, grafik vaqt o'qi bo'ylab chapga siljiydi. Chapga bir birlik siljish argumentga 1 ni qo'shish orqali beriladi: L(t + 1). Tekshiring: ilgari t = 6 da bo'lgan hodisa endi t = 5 da ro'y beradi, chunki L(5 + 1) = L(6). Javob: L(t + 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-siljish-aniqlash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#40cdbc64"
+    },
+    {
+      "q": "y = x² parabola avval 3 birlik o'ngga, keyin 2 birlik yuqoriga siljitildi. Hosil bo'lgan funksiyani toping.",
+      "v": [
+        "y = (x + 3)² + 2",
+        "y = (x − 3)² + 2",
+        "y = (x − 3)² − 2",
+        "y = (x − 2)² + 3"
+      ],
+      "t": 1,
+      "izoh": "O'ngga 3 birlik siljish x ni x − 3 ga almashtiradi va y = (x − 3)² hosil bo'ladi. Keyingi 2 birlik yuqoriga siljish butun ifodaga 2 ni qo'shadi. Natijada y = (x − 3)² + 2 chiqadi, cho'qqi esa (3; 2) nuqtaga ko'chadi. Javob: y = (x − 3)² + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlashgan-siljish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#814dc5be"
+    },
+    {
+      "q": "y = (x + 4)² − 7 parabolani y = x² grafigidan hosil qilish uchun qanday almashtirishlar bajarish kerak?",
+      "v": [
+        "4 birlik o'ngga va 7 birlik pastga",
+        "4 birlik chapga va 7 birlik yuqoriga",
+        "4 birlik chapga va 7 birlik pastga",
+        "7 birlik chapga va 4 birlik pastga"
+      ],
+      "t": 2,
+      "izoh": "x + 4 argumenti grafikni 4 birlik chapga suradi, chunki f(x + a) da siljish manfiy yo'nalishda bo'ladi. Oxiridagi −7 esa butun grafikni 7 birlik pastga tushiradi. Shunday qilib cho'qqi (0; 0) nuqtadan (−4; −7) nuqtaga o'tadi. Javob: 4 birlik chapga va 7 birlik pastga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlashgan-siljish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#556bb862"
+    },
+    {
+      "q": "Zavodda oylik xarajat C(x) funksiya bilan hisoblanadi. Yangi shartnomaga ko'ra ishlab chiqarish 20 dona kechroq boshlanadi va har oyga o'zgarmas 15 mln so'm ijara qo'shiladi. Yangi xarajat funksiyasi qaysi?",
+      "v": [
+        "C(x + 20) + 15",
+        "C(x − 20) − 15",
+        "C(x + 20) − 15",
+        "C(x − 20) + 15"
+      ],
+      "t": 3,
+      "izoh": "Ishlab chiqarish kechroq boshlansa, grafik o'ngga 20 birlik siljiydi va argument x − 20 ko'rinishini oladi. O'zgarmas ijara esa har bir qiymatga 15 ni qo'shadi, ya'ni vertikal siljish yuzaga keladi. Ikkala almashtirish birga C(x − 20) + 15 ni beradi. Javob: C(x − 20) + 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlashgan-siljish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#a83fdd13"
+    },
+    {
+      "q": "Dastlab y = f(x) grafigi 2 birlik chapga surildi, so'ngra hosil bo'lgan grafik 5 birlik pastga tushirildi. Natijaviy g(x) ni f orqali ifodalang.",
+      "v": [
+        "g(x) = f(x + 2) − 5",
+        "g(x) = f(x − 2) − 5",
+        "g(x) = f(x + 2) + 5",
+        "g(x) = f(x − 5) + 2"
+      ],
+      "t": 0,
+      "izoh": "Chapga 2 birlik siljish argumentga 2 ni qo'shadi va f(x + 2) hosil bo'ladi. So'ngra 5 birlik pastga tushirish butun ifodadan 5 ni ayiradi. Shunday qilib g(x) = f(x + 2) − 5 kelib chiqadi. Javob: g(x) = f(x + 2) − 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlashgan-siljish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#769cfa00"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qi bo'ylab 3 marta cho'zilsa, hosil bo'ladigan funksiya qanday yoziladi?",
+      "v": [
+        "y = 3f(x)",
+        "y = f(3x)",
+        "y = f(x/3)",
+        "y = f(x) + 3"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qi bo'ylab k marta cho'zishda har bir ordinata k ga ko'paytiriladi, abssissa esa o'zgarishsiz qoladi. Demak yangi funksiya y = 3f(x) bo'ladi. f(3x) ko'rinishi esa gorizontal siqishga mos keladi va bu butunlay boshqa almashtirish. Javob: y = 3f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "vertikal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#75cbc86d"
+    },
+    {
+      "q": "Fermer xo'jaligida hosildorlik H(x) grafigi bilan tasvirlangan. Yangi o'g'it qo'llangach har bir maydondan olingan hosil aynan 2 barobar ortdi. Grafik bilan nima sodir bo'ladi?",
+      "v": [
+        "Grafik Oy o'qi bo'ylab 2 marta siqiladi",
+        "Grafik Oy o'qi bo'ylab 2 marta cho'ziladi",
+        "Grafik 2 birlik yuqoriga siljiydi",
+        "Grafik Ox o'qi bo'ylab 2 marta cho'ziladi"
+      ],
+      "t": 1,
+      "izoh": "Har bir maydon uchun qiymat ikki barobar ortsa, yangi funksiya 2H(x) ko'rinishida bo'ladi. Bu ordinatalarni 2 ga ko'paytirish, ya'ni Oy o'qi bo'ylab 2 marta cho'zish demakdir. Qo'shish emas, ko'paytirish bajarilgani uchun siljish yuz bermaydi. Javob: Oy o'qi bo'ylab 2 marta cho'ziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#ce3945f3"
+    },
+    {
+      "q": "y = 0,5·f(x) funksiyaning grafigi berilgan y = f(x) grafigidan qanday almashtirish yordamida hosil qilinishini aniqlang.",
+      "v": [
+        "Oy o'qi bo'ylab 2 marta siqish bilan",
+        "Oy o'qi bo'ylab 2 marta cho'zish bilan",
+        "Ox o'qi bo'ylab 2 marta siqish bilan",
+        "2 birlik pastga siljitish bilan"
+      ],
+      "t": 0,
+      "izoh": "Koeffitsient 0,5 birdan kichik, shuning uchun barcha ordinatalar ikki barobar kamayadi. Bu Ox o'qiga tomon yaqinlashish, ya'ni Oy o'qi bo'ylab 2 marta siqish deb ataladi. Abssissalar o'zgarmagani uchun gorizontal almashtirish bo'lmaydi. Javob: Oy o'qi bo'ylab 2 marta siqish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#16ff739a"
+    },
+    {
+      "q": "Konsert zalida tovush balandligi S(t) funksiya bilan o'lchanadi. Kuchaytirgich har bir vaqt momentida balandlikni 4 barobar oshiradi, vaqt oqimi esa o'zgarmaydi. Kuchaytirilgan tovush funksiyasi qaysi?",
+      "v": [
+        "S(4t)",
+        "4S(t)",
+        "S(t/4)",
+        "S(t) + 4"
+      ],
+      "t": 1,
+      "izoh": "Balandlik qiymati 4 barobar ortadi, ya'ni funksiya qiymati 4 ga ko'paytiriladi. Bu 4S(t) ni beradi va grafik Oy o'qi bo'ylab 4 marta cho'ziladi. S(4t) bo'lganda vaqt o'qi siqilardi, lekin shartda vaqt o'zgarmagan. Javob: 4S(t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "vertikal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#ce46be22"
+    },
+    {
+      "q": "Berilgan y = f(2x) funksiya grafigi y = f(x) grafigidan qanday almashtirish bilan hosil qilinishini ko'rsating.",
+      "v": [
+        "Oy o'qi bo'ylab 2 marta siqish",
+        "Oy o'qi bo'ylab 2 marta cho'zish",
+        "Ox o'qi bo'ylab 2 marta cho'zish",
+        "Ox o'qi bo'ylab 2 marta siqish"
+      ],
+      "t": 3,
+      "izoh": "Argument oldidagi 2 koeffitsienti abssissalarni ikki barobar kichraytiradi: ilgari x = 6 da olingan qiymat endi x = 3 da olinadi. Demak grafik Ox o'qi bo'ylab 2 marta siqiladi. Ordinatalar o'zgarmagani uchun vertikal almashtirish yuz bermaydi. Javob: Ox o'qi bo'ylab 2 marta siqish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "gorizontal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#7b756927"
+    },
+    {
+      "q": "y = f(x/3) grafigini chizish uchun y = f(x) grafigi ustida qanday amal bajarish kerakligini aniqlang.",
+      "v": [
+        "Ox o'qi bo'ylab 3 marta siqish",
+        "Oy o'qi bo'ylab 3 marta cho'zish",
+        "Ox o'qi bo'ylab 3 marta cho'zish",
+        "3 birlik o'ngga siljitish"
+      ],
+      "t": 2,
+      "izoh": "Argument x/3 ko'rinishida bo'lsa, oldingi x = 2 dagi qiymat endi x = 6 nuqtada olinadi, chunki 6/3 = 2. Demak barcha abssissalar 3 barobar ortadi va grafik Ox o'qi bo'ylab 3 marta cho'ziladi. Argument oldidagi koeffitsient birdan kichik bo'lganda doim cho'zilish yuz beradi. Javob: Ox o'qi bo'ylab 3 marta cho'zish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#044b3b19"
+    },
+    {
+      "q": "Videotahrirlash dasturida yozuv 5 barobar tezlashtirildi. Asl harakat grafigi y = f(t) bo'lsa, tezlashtirilgan yozuvning grafigi qanday ko'rinish oladi?",
+      "v": [
+        "y = 5f(t), Oy bo'ylab 5 marta cho'ziladi",
+        "y = f(t/5), Ox bo'ylab 5 marta cho'ziladi",
+        "y = f(t) − 5, 5 birlik pastga siljiydi",
+        "y = f(5t), Ox bo'ylab 5 marta siqiladi"
+      ],
+      "t": 3,
+      "izoh": "Tezlashtirishda ilgari 5 soniyada ro'y bergan hodisa endi 1 soniyada tugaydi, ya'ni vaqt o'qi 5 marta siqiladi. Bunga y = f(5t) formulasi mos keladi. Funksiya qiymatlari o'zgarmagani uchun Oy bo'ylab cho'zish yoki vertikal siljish bo'lmaydi. Javob: y = f(5t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "gorizontal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#dcbfc98a"
+    },
+    {
+      "q": "Laboratoriyada bakteriyalar soni N(t) funksiya bilan qayd etiladi. Harorat oshirilgach jarayon 3 marta tezlashdi: ilgari 3 soatda ro'y bergan o'zgarish endi 1 soatda sodir bo'ladi. Yangi funksiyani toping.",
+      "v": [
+        "N(t/3)",
+        "3N(t)",
+        "N(3t)",
+        "N(t) + 3"
+      ],
+      "t": 2,
+      "izoh": "Jarayon tezlashsa vaqt o'qi siqiladi: yangi funksiyaning t = 1 dagi qiymati eski funksiyaning t = 3 dagi qiymatiga teng bo'lishi kerak. Bunga N(3t) formulasi mos keladi, chunki N(3·1) = N(3). Ko'paytuvchi argument ichida turgani uchun bu gorizontal siqishdir. Javob: N(3t).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "gorizontal-chozish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#99632e71"
+    },
+    {
+      "q": "y = f(x) grafigi Ox o'qiga nisbatan simmetrik akslantirilsa, qanday funksiya hosil bo'lishini ko'rsating.",
+      "v": [
+        "y = f(−x)",
+        "y = −f(−x)",
+        "y = |f(x)|",
+        "y = −f(x)"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga nisbatan simmetriya har bir nuqtaning ordinatasi ishorasini almashtiradi, abssissa esa o'zgarmaydi. Ya'ni (x; y) nuqta (x; −y) nuqtaga o'tadi va yangi funksiya y = −f(x) bo'ladi. f(−x) esa argument ishorasini o'zgartirgani uchun Oy o'qiga nisbatan simmetriyani beradi. Javob: y = −f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "Ox-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#e8df797d"
+    },
+    {
+      "q": "Sardor tog' cho'qqisining balandlik profilini y = f(x) funksiya bilan chizdi. Xuddi shu profil ko'l suvida aks etgan ko'rinishini tasvirlash uchun qaysi funksiya grafigi chiziladi?",
+      "v": [
+        "y = −f(x)",
+        "y = f(−x)",
+        "y = |f(x)|",
+        "y = f(x) − 1"
+      ],
+      "t": 0,
+      "izoh": "Suv yuzasi gorizontal chiziq, ya'ni bu masalada Ox o'qi vazifasini bajaradi. Unga nisbatan aks har bir balandlikni qarama-qarshi ishora bilan oladi: (x; y) nuqta (x; −y) ga o'tadi. Demak suvda aks etgan profil y = −f(x) funksiya bilan beriladi. Javob: y = −f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "Ox-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#e068ac63"
+    },
+    {
+      "q": "y = x² − 5 parabola Ox o'qiga nisbatan akslantirildi. Hosil bo'lgan funksiyaning tenglamasini yozing.",
+      "v": [
+        "y = −x² − 5",
+        "y = −x² + 5",
+        "y = x² + 5",
+        "y = x² − 5"
+      ],
+      "t": 1,
+      "izoh": "Ox o'qiga nisbatan akslantirishda butun funksiya minus ishora bilan olinadi: y = −(x² − 5). Qavsni ochsak y = −x² + 5 hosil bo'ladi, ya'ni o'zgarmas had ham ishorasini almashtiradi. Oxirgi variant Oy o'qiga nisbatan akslantirish natijasi, chunki (−x)² = x² tenglik bajariladi. Javob: y = −x² + 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "Ox-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#19d7d9a0"
+    },
+    {
+      "q": "y = f(x) funksiya grafigi Ox o'qini x = 2 va x = 7 nuqtalarda kesib o'tadi. y = −f(x) grafigi bu o'qni qaysi nuqtalarda kesadi?",
+      "v": [
+        "x = −2 va x = −7",
+        "Ox o'qi bilan umuman kesishmaydi",
+        "x = 2 va x = 7",
+        "x = 2 va x = −7"
+      ],
+      "t": 2,
+      "izoh": "y = −f(x) tenglamada f(x) = 0 bo'lgan joyda −f(x) ham nolga teng bo'ladi. Demak grafikning nollari o'zgarmaydi va u Ox o'qini yana x = 2 hamda x = 7 nuqtalarda kesadi. Akslantirishda faqat o'qdan yuqori va past qismlar o'rin almashadi, kesish nuqtalari qo'zg'almaydi. Javob: x = 2 va x = 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "Ox-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#598f1363"
+    },
+    {
+      "q": "Berilgan y = f(−x) funksiya grafigi y = f(x) grafigidan qanday almashtirish yordamida hosil qilinishini toping.",
+      "v": [
+        "Ox o'qiga nisbatan akslantirish orqali",
+        "Oy o'qiga nisbatan akslantirish orqali",
+        "Koordinata boshiga nisbatan burish orqali",
+        "Bissektrisaga nisbatan akslantirish orqali"
+      ],
+      "t": 1,
+      "izoh": "f(−x) da argumentning ishorasi almashgan, funksiya qiymati esa tegilmagan. Bunda (x; y) nuqta (−x; y) nuqtaga o'tadi, ya'ni faqat abssissa qarama-qarshi songa aylanadi. Bu esa aynan Oy o'qiga nisbatan akslantirish demakdir. Javob: Oy o'qiga nisbatan akslantirish orqali.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "Oy-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#1c30b74a"
+    },
+    {
+      "q": "Shahnoza kompyuterda logotip chizig'ini y = f(x) ko'rinishida yasadi va uni vertikal o'qqa nisbatan oyna aksi qilib almashtirdi. Yangi chiziqning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = f(x) + 1",
+        "y = −f(x)",
+        "y = f(−x)",
+        "y = |f(x)|"
+      ],
+      "t": 2,
+      "izoh": "Oyna aksi vertikal o'qqa, ya'ni Oy o'qiga nisbatan bajarilgan. Bunday akslantirishda har bir nuqtaning abssissasi qarama-qarshi songa almashadi, ordinata esa saqlanadi. Formulada bu argument ishorasini o'zgartirish orqali beriladi: y = f(−x). Javob: y = f(−x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "Oy-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#7460ba4f"
+    },
+    {
+      "q": "y = 2^x ko'rsatkichli funksiyaning grafigi Oy o'qiga nisbatan akslantirildi. Hosil bo'lgan yangi funksiyani ko'rsating.",
+      "v": [
+        "y = −2^x",
+        "y = (−2)^x",
+        "y = 2^x",
+        "y = 2^(−x)"
+      ],
+      "t": 3,
+      "izoh": "Oy o'qiga nisbatan akslantirishda x o'rniga −x qo'yiladi, natijada y = 2^(−x) hosil bo'ladi. Asosning ishorasini o'zgartirib (−2)^x deb yozish xato, chunki almashtirish ko'rsatkichga tegishli. y = −2^x esa Ox o'qiga nisbatan akslantirishga mos keladi. Javob: y = 2^(−x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "Oy-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#2dd60bf1"
+    },
+    {
+      "q": "f(x) toq funksiya bo'lsin. Bunday holda y = f(−x) grafigi quyidagi qaysi funksiya grafigi bilan aynan ustma-ust tushadi?",
+      "v": [
+        "y = f(x)",
+        "y = |f(x)|",
+        "y = −f(x)",
+        "y = f(x) + 1"
+      ],
+      "t": 2,
+      "izoh": "Toq funksiya ta'rifiga ko'ra f(−x) = −f(x) tenglik aniqlanish sohasidagi barcha x lar uchun bajariladi. Demak y = f(−x) grafigi ayni y = −f(x) grafigi bilan bir xil chiqadi. Geometrik jihatdan toq funksiyaning Oy o'qiga nisbatan aksi uning Ox o'qiga nisbatan aksiga teng. Javob: y = −f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "Oy-simmetriya",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#55466294"
+    },
+    {
+      "q": "y = |f(x)| grafigini hosil qilish uchun y = f(x) grafigining qaysi qismi bilan nima qilinadi?",
+      "v": [
+        "Ox o'qidan yuqoridagi qism pastga akslantiriladi",
+        "Ox o'qidan pastdagi qism yuqoriga akslantiriladi",
+        "Oy o'qidan chapdagi qism o'ngga akslantiriladi",
+        "Butun grafik Oy o'qiga nisbatan akslantiriladi"
+      ],
+      "t": 1,
+      "izoh": "Modul funksiya qiymatini hech qachon manfiy qoldirmaydi. Shuning uchun grafikning Ox o'qidan yuqoridagi qismi o'z joyida qoladi, pastdagi qismi esa Ox o'qiga nisbatan yuqoriga akslantiriladi. Natijada hosil bo'lgan grafik Ox o'qidan pastga umuman tushmaydi. Javob: Ox o'qidan pastdagi qism yuqoriga akslantiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tashqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#9c4da3db"
+    },
+    {
+      "q": "y = x − 4 to'g'ri chiziqdan y = |x − 4| grafigi hosil qilindi. Yangi grafikning eng kichik qiymati va u erishiladigan nuqtani ko'rsating.",
+      "v": [
+        "Eng kichik qiymat 0, x = 4 da",
+        "Eng kichik qiymat 4, x = 0 da",
+        "Eng kichik qiymat −4, x = 0 da",
+        "Eng kichik qiymat 0, x = −4 da"
+      ],
+      "t": 0,
+      "izoh": "Modul ifodasi manfiy qiymat qabul qila olmaydi, shuning uchun eng kichik qiymat 0 ga teng. Bu qiymat modul ichidagi ifoda nolga aylanganda erishiladi: x − 4 = 0 dan x = 4. Grafik shu nuqtada Ox o'qiga tegib, ikki tomonga ko'tariladi. Javob: eng kichik qiymat 0, x = 4 da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-tashqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#170aa3ef"
+    },
+    {
+      "q": "Do'konning kunlik moliyaviy natijasi P(x) = 3x − 60 formula bilan hisoblanadi (ming so'mda). Buxgalter zararni ham musbat son sifatida ko'rsatish uchun y = |3x − 60| grafigini chizdi. Bu grafik Ox o'qiga qaysi nuqtada tegadi?",
+      "v": [
+        "x = 60",
+        "x = 180",
+        "x = −20",
+        "x = 20"
+      ],
+      "t": 3,
+      "izoh": "Grafik Ox o'qiga tegadigan nuqta modul ichidagi ifoda nolga aylangan joyda bo'ladi. 3x − 60 = 0 tenglamadan 3x = 60, demak x = 20 kelib chiqadi. Ya'ni 20 dona sotilganda do'kon na foyda na zarar ko'radi. Javob: x = 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-tashqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#79896f43"
+    },
+    {
+      "q": "y = |x² − 9| funksiya grafigi Ox o'qi bilan nechta umumiy nuqtaga ega va uning eng past qiymati qanchaga teng?",
+      "v": [
+        "2 ta nuqta, eng past qiymat 0",
+        "2 ta nuqta, eng past qiymat −9",
+        "1 ta nuqta, eng past qiymat 0",
+        "3 ta nuqta, eng past qiymat 9"
+      ],
+      "t": 0,
+      "izoh": "Avval modul ichidagi ifodaning nollari topiladi: x² − 9 = 0 dan x = 3 va x = −3. Shu ikki nuqtada |x² − 9| nolga teng, qolgan joylarda esa qat'iy musbat, demak Ox o'qi bilan 2 ta umumiy nuqta bor. Modul manfiy qiymatni yuqoriga akslantirgani uchun eng past qiymat −9 emas, 0 bo'ladi. Javob: 2 ta nuqta, eng past qiymat 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-tashqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#ff557bcf"
+    },
+    {
+      "q": "Berilgan grafik asosida y = f(|x|) ko'rinishdagi funksiya grafigini yasashda qanday qoidaga amal qilinishi kerakligini tanlang.",
+      "v": [
+        "Grafikning Ox o'qidan pastdagi qismi yuqoriga akslantiriladi",
+        "Butun grafik koordinata boshiga nisbatan buriladi",
+        "Grafikning Oy o'qidan o'ngdagi qismi saqlanib, chapga akslantiriladi",
+        "Grafikning Oy o'qidan chapdagi qismi saqlanib, o'ngga akslantiriladi"
+      ],
+      "t": 2,
+      "izoh": "f(|x|) da argumentning moduli olingani uchun manfiy x dagi qiymat mos musbat x dagi qiymatga teng bo'ladi. Shuning uchun grafikning Oy o'qidan o'ngdagi qismi o'zgarishsiz qoladi va u Oy o'qiga nisbatan chapga akslantiriladi. Eski chap qism esa butunlay tashlab yuboriladi. Javob: Oy o'qidan o'ngdagi qismi saqlanib, chapga akslantiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ichki",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#930991e1"
+    },
+    {
+      "q": "Ixtiyoriy y = f(x) funksiyadan y = f(|x|) grafigi yasaldi. Hosil bo'lgan grafik qanday simmetriya xossasiga ega bo'lishini aniqlang.",
+      "v": [
+        "Oy o'qiga nisbatan simmetrik bo'ladi",
+        "Ox o'qiga nisbatan simmetrik bo'ladi",
+        "Koordinata boshiga nisbatan simmetrik bo'ladi",
+        "Hech qanday simmetriyaga ega bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "g(x) = f(|x|) deb belgilaymiz va manfiy argumentni tekshiramiz. U holda g(−x) = f(|−x|) = f(|x|) = g(x), chunki modul ishorani hisobga olmaydi. Bu tenglik funksiyaning juftligini bildiradi, juft funksiya grafigi esa Oy o'qiga nisbatan simmetrik joylashadi. Javob: Oy o'qiga nisbatan simmetrik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ichki",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#9417e977"
+    },
+    {
+      "q": "y = f(x) funksiya grafigi Ox o'qini faqat x = 5 nuqtada kesib o'tadi. U holda y = f(|x|) grafigi Ox o'qini necha nuqtada kesadi?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 1,
+      "izoh": "f(|x|) = 0 bo'lishi uchun |x| soni f ning noliga teng bo'lishi kerak, ya'ni |x| = 5. Bu tenglama ikkita yechim beradi: x = 5 va x = −5. Demak yangi grafik Ox o'qini ikkita nuqtada kesadi va ular Oy o'qiga nisbatan simmetrik joylashadi. Javob: 2 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "modul-ichki",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#7d8f5e9f"
+    },
+    {
+      "q": "f(x) = x² − 6x + 8 funksiya berilgan. y = f(|x|) grafigi Ox o'qi bilan nechta umumiy nuqtaga ega ekanligini aniqlang.",
+      "v": [
+        "2 ta",
+        "3 ta",
+        "6 ta",
+        "4 ta"
+      ],
+      "t": 3,
+      "izoh": "Avval f ning nollari topiladi: x² − 6x + 8 = 0 tenglamadan Viyet teoremasi bo'yicha x = 2 va x = 4. f(|x|) = 0 bo'lishi uchun |x| = 2 yoki |x| = 4 bo'lishi kerak. Har bir tenglama ikkitadan yechim beradi: x = ±2 va x = ±4, jami to'rtta nuqta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ichki",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#97b055e0"
+    },
+    {
+      "q": "y = f(x) grafigida A(3; −2) nuqta yotadi. y = f(x) + 6 grafigida bu nuqtaning tasviri qaysi nuqta bo'ladi?",
+      "v": [
+        "(9; −2)",
+        "(3; 4)",
+        "(3; −8)",
+        "(−3; 4)"
+      ],
+      "t": 1,
+      "izoh": "y = f(x) + 6 almashtirishi grafikni 6 birlik yuqoriga suradi va faqat ordinatani o'zgartiradi. A nuqtaning abssissasi 3 bo'lib qoladi, ordinatasi esa −2 + 6 = 4 ga aylanadi. Demak tasvir (3; 4) nuqta bo'ladi. Javob: (3; 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-tasviri",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#2781df06"
+    },
+    {
+      "q": "M(−4; 7) nuqta y = f(x) grafigiga tegishli. y = f(x + 5) grafigida unga mos keladigan nuqtani toping.",
+      "v": [
+        "(1; 7)",
+        "(−4; 12)",
+        "(−4; 2)",
+        "(−9; 7)"
+      ],
+      "t": 3,
+      "izoh": "y = f(x + 5) grafigida ordinata f ning argumenti −4 bo'lgan joyda 7 ga teng bo'ladi. Shuning uchun x + 5 = −4 tenglamani yechamiz va x = −9 ni olamiz. Almashtirish faqat gorizontal bo'lgani uchun ordinata 7 bo'lib qoladi. Javob: (−9; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-tasviri",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#7de28607"
+    },
+    {
+      "q": "Nilufar y = f(x) grafigida B(6; −5) nuqtani belgiladi. Grafik Ox o'qiga nisbatan akslantirilgach bu nuqta qayerga tushadi?",
+      "v": [
+        "(−6; −5)",
+        "(−6; 5)",
+        "(6; 5)",
+        "(5; 6)"
+      ],
+      "t": 2,
+      "izoh": "Ox o'qiga nisbatan akslantirishda abssissa saqlanadi, ordinata esa qarama-qarshi songa almashadi. B nuqtaning abssissasi 6 bo'lib qoladi, ordinatasi −5 dan 5 ga o'tadi. Koordinatalarni o'rin almashtirish bu almashtirishga umuman aloqador emas. Javob: (6; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-tasviri",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#6503397f"
+    },
+    {
+      "q": "y = f(x) grafigida K(2; 9) nuqta bor. y = 3f(x − 1) grafigida qaysi nuqta albatta yotishini aniqlang.",
+      "v": [
+        "(3; 27)",
+        "(1; 27)",
+        "(3; 9)",
+        "(6; 27)"
+      ],
+      "t": 0,
+      "izoh": "Avval gorizontal siljishni hisobga olamiz: f(x − 1) ifodasida argument 2 ga teng bo'lishi uchun x = 3 bo'lishi kerak. Shu nuqtada f(2) = 9 qiymat olinadi, so'ngra oldidagi 3 koeffitsienti ordinatani uch barobar oshiradi: 3·9 = 27. Demak yangi grafikda (3; 27) nuqta yotadi. Javob: (3; 27).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nuqta-tasviri",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#1d9edf94"
+    },
+    {
+      "q": "Grafikni almashtirish qoidasidan foydalanib y = (x − 6)² + 1 parabolaning cho'qqisi qaysi nuqtada joylashganini aniqlang.",
+      "v": [
+        "(6; 1)",
+        "(−6; 1)",
+        "(6; −1)",
+        "(1; 6)"
+      ],
+      "t": 0,
+      "izoh": "y = (x − a)² + b ko'rinishi y = x² parabolaning a birlik gorizontal va b birlik vertikal siljishini bildiradi. Bu yerda x − 6 ifodasi 6 birlik o'ngga siljishni, +1 esa 1 birlik yuqoriga ko'tarilishni beradi. Demak cho'qqi (0; 0) dan (6; 1) nuqtaga ko'chadi. Javob: (6; 1).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parabola-choqqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#c0f90be5"
+    },
+    {
+      "q": "y = x² parabolaning cho'qqisi koordinata boshida joylashgan. Grafik 5 birlik chapga va 8 birlik pastga surilgach cho'qqi qayerda bo'ladi va funksiya qanday yoziladi?",
+      "v": [
+        "(5; −8), y = (x − 5)² − 8",
+        "(−5; 8), y = (x + 5)² + 8",
+        "(−5; −8), y = (x + 5)² − 8",
+        "(−8; −5), y = (x + 8)² − 5"
+      ],
+      "t": 2,
+      "izoh": "Chapga 5 birlik siljish argumentga 5 ni qo'shadi, ya'ni (x + 5)² hosil bo'ladi va cho'qqining abssissasi −5 bo'ladi. Pastga 8 birlik siljish esa butun ifodadan 8 ni ayiradi, ordinata −8 ga tushadi. Shunday qilib cho'qqi (−5; −8) nuqtada, funksiya esa y = (x + 5)² − 8 ko'rinishida bo'ladi. Javob: (−5; −8), y = (x + 5)² − 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-choqqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#bb46a66f"
+    },
+    {
+      "q": "Bog'dagi purkagichdan otilgan suv tomchisining yo'li y = −x² + 4 parabola bilan tasvirlanadi. Purkagich 3 metr o'ngga ko'chirilsa, yangi yo'lning tenglamasi qanday bo'ladi?",
+      "v": [
+        "y = −(x + 3)² + 4",
+        "y = −(x − 3)² + 4",
+        "y = −x² + 7",
+        "y = −x² + 1"
+      ],
+      "t": 1,
+      "izoh": "Purkagichning o'ngga ko'chishi butun egri chiziqni Ox o'qi bo'ylab o'ngga suradi. O'ngga siljishda x o'rniga x − 3 qo'yiladi, ordinataga esa tegilmaydi. Natijada y = −(x − 3)² + 4 hosil bo'ladi, cho'qqi (0; 4) dan (3; 4) ga ko'chadi. Javob: y = −(x − 3)² + 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parabola-choqqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#71252f61"
+    },
+    {
+      "q": "y = x² − 8x + 11 funksiyani to'la kvadratga keltirib, uning grafigi y = x² parabolaning qanday siljishi natijasida hosil bo'lishini aniqlang.",
+      "v": [
+        "4 birlik chapga va 5 birlik pastga",
+        "8 birlik o'ngga va 11 birlik yuqoriga",
+        "4 birlik o'ngga va 11 birlik pastga",
+        "4 birlik o'ngga va 5 birlik pastga"
+      ],
+      "t": 3,
+      "izoh": "To'la kvadratga keltiramiz: x² − 8x + 11 = (x² − 8x + 16) − 16 + 11 = (x − 4)² − 5. Endi ko'rinib turibdi, argument x − 4 bo'lgani uchun grafik 4 birlik o'ngga suriladi. Oxiridagi −5 esa uni 5 birlik pastga tushiradi, cho'qqi (4; −5) nuqtada bo'ladi. Javob: 4 birlik o'ngga va 5 birlik pastga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parabola-choqqi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#c2f0c5ed"
+    },
+    {
+      "q": "y = √x funksiyaning aniqlanish sohasi x ≥ 0 edi. Endi y = √(x − 7) funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "x ≥ 7",
+        "x ≥ −7",
+        "x ≥ 0",
+        "x ≤ 7"
+      ],
+      "t": 0,
+      "izoh": "Kvadrat ildiz ostidagi ifoda manfiy bo'lmasligi kerak, shuning uchun x − 7 ≥ 0 shartni yozamiz. Bundan x ≥ 7 kelib chiqadi. Bu natija grafik 7 birlik o'ngga surilganini ham tasdiqlaydi, chunki boshlanish nuqtasi x = 0 dan x = 7 ga ko'chgan. Javob: x ≥ 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#0231c83a"
+    },
+    {
+      "q": "f(x) funksiyaning aniqlanish sohasi [−2; 6] kesmadan iborat. y = f(x + 4) funksiyaning aniqlanish sohasini aniqlang.",
+      "v": [
+        "[2; 10]",
+        "[−2; 6]",
+        "[−6; 2]",
+        "[−6; 10]"
+      ],
+      "t": 2,
+      "izoh": "Yangi funksiya ma'noga ega bo'lishi uchun uning ichidagi argument eski sohada yotishi kerak: −2 ≤ x + 4 ≤ 6. Har bir qismdan 4 ni ayiramiz va −6 ≤ x ≤ 2 ni olamiz. Demak soha 4 birlik chapga siljigan, chunki f(x + a) grafikni chapga suradi. Javob: [−6; 2].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#58d94e4e"
+    },
+    {
+      "q": "y = f(x) funksiya [0; 12] oraliqda aniqlangan. y = f(2x) funksiya qaysi oraliqda aniqlangan bo'ladi?",
+      "v": [
+        "[0; 24]",
+        "[0; 6]",
+        "[0; 12]",
+        "[0; 3]"
+      ],
+      "t": 1,
+      "izoh": "Argument 2x eski sohaga tushishi shart: 0 ≤ 2x ≤ 12. Bu qo'sh tengsizlikni 2 ga bo'lsak 0 ≤ x ≤ 6 hosil bo'ladi. Oraliq ikki barobar qisqargan, bu esa grafikning Ox o'qi bo'ylab 2 marta siqilishiga to'liq mos keladi. Javob: [0; 6].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#8df83128"
+    },
+    {
+      "q": "y = f(x) funksiyaning aniqlanish sohasi [−3; 9] kesmadan iborat. Shu holda y = f(|x|) funksiyaning aniqlanish sohasini toping.",
+      "v": [
+        "[−3; 9]",
+        "[0; 9]",
+        "[−3; 3]",
+        "[−9; 9]"
+      ],
+      "t": 3,
+      "izoh": "Yangi funksiyada argument sifatida |x| turibdi, u hech qachon manfiy bo'lmaydi, shuning uchun pastki chegara −3 hech qanday cheklov bermaydi. Qolgan shart |x| ≤ 9 bo'lib, undan −9 ≤ x ≤ 9 kelib chiqadi. Demak soha Oy o'qiga nisbatan simmetrik [−9; 9] kesma bo'ladi. Javob: [−9; 9].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aniqlanish-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#e73ffe4e"
+    },
+    {
+      "q": "y = f(x) funksiyaning qiymatlar sohasi [1; 5] kesma. y = f(x) + 3 funksiyaning qiymatlar sohasi qanday bo'ladi?",
+      "v": [
+        "[4; 8]",
+        "[1; 5]",
+        "[3; 15]",
+        "[−2; 2]"
+      ],
+      "t": 0,
+      "izoh": "Vertikal siljishda har bir funksiya qiymatiga 3 qo'shiladi, ya'ni kesmaning ikkala chekkasi ham 3 ga ortadi. Quyi chegara 1 + 3 = 4, yuqori chegara 5 + 3 = 8 bo'ladi. Kesmaning uzunligi o'zgarmaydi, chunki siljish shaklni buzmaydi. Javob: [4; 8].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#3fd65f77"
+    },
+    {
+      "q": "g(x) funksiyaning qiymatlar sohasi [−4; 2] kesmadan iborat. y = −g(x) funksiyaning qiymatlar sohasini ko'rsating.",
+      "v": [
+        "[−4; 2]",
+        "[−4; −2]",
+        "[−2; 4]",
+        "[2; 4]"
+      ],
+      "t": 2,
+      "izoh": "Ox o'qiga nisbatan akslantirishda har bir qiymat qarama-qarshi songa aylanadi, shu bilan birga chegaralar o'rin almashadi. Eng kichik qiymat −4 edi, u endi eng katta qiymat 4 bo'ladi; eng katta 2 esa eng kichik −2 ga aylanadi. Demak yangi soha [−2; 4] kesma. Javob: [−2; 4].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#da089a1f"
+    },
+    {
+      "q": "Kunlik havo harorati T(t) funksiya bilan berilgan va uning qiymatlar sohasi [12; 30] daraja. Har bir o'lchovni 4 daraja kam ko'rsatadigan asbob ko'rsatkichining qiymatlar sohasi qanday bo'ladi?",
+      "v": [
+        "[16; 34]",
+        "[8; 26]",
+        "[12; 30]",
+        "[8; 34]"
+      ],
+      "t": 1,
+      "izoh": "Asbob ko'rsatkichi p(t) = T(t) − 4 ko'rinishida, ya'ni grafik 4 birlik pastga siljigan. Vertikal siljishda kesmaning ikkala chekkasi bir xil kamayadi: 12 − 4 = 8 va 30 − 4 = 26. Oraliqning kengligi 18 daraja bo'lib qolaveradi. Javob: [8; 26].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#d501f334"
+    },
+    {
+      "q": "y = f(x) funksiyaning qiymatlar sohasi [−6; 10] kesma. Shunga ko'ra y = |f(x)| funksiyaning qiymatlar sohasini aniqlang.",
+      "v": [
+        "[6; 10]",
+        "[0; 16]",
+        "[−6; 10]",
+        "[0; 10]"
+      ],
+      "t": 3,
+      "izoh": "Modul barcha manfiy qiymatlarni musbatga aylantiradi, shuning uchun natija hech qachon manfiy bo'lmaydi. Funksiya −6 dan 10 gacha barcha qiymatlarni oladi, demak u nolni ham qabul qiladi va eng kichik modul 0 ga teng. Eng kattasi esa 10 va |−6| = 6 sonlarining kattarog'i, ya'ni 10. Javob: [0; 10].",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qiymatlar-sohasi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#6ff1631f"
+    },
+    {
+      "q": "y = f(x) funksiya x = −1 va x = 4 nuqtalarda nolga aylanadi. y = f(x − 5) funksiyaning nollarini toping.",
+      "v": [
+        "x = 4 va x = 9",
+        "x = −6 va x = −1",
+        "x = −1 va x = 4",
+        "x = 5 va x = 9"
+      ],
+      "t": 0,
+      "izoh": "Yangi funksiya nolga aylanishi uchun uning ichidagi x − 5 ifodasi eski nollarga teng bo'lishi kerak. x − 5 = −1 dan x = 4, x − 5 = 4 dan esa x = 9 chiqadi. Demak har ikkala nol 5 birlik o'ngga siljigan. Javob: x = 4 va x = 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nollar-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#b517fc20"
+    },
+    {
+      "q": "Korxonaning zarar funksiyasi Z(x) x = 30 va x = 80 nuqtalarda nolga aylanadi. Reja o'zgargach yangi funksiya Z(x + 10) ko'rinishini oldi. Yangi nollar qayerda joylashadi?",
+      "v": [
+        "x = 40 va x = 90",
+        "x = 20 va x = 70",
+        "x = 30 va x = 80",
+        "x = 3 va x = 8"
+      ],
+      "t": 1,
+      "izoh": "Z(x + 10) nolga aylanishi uchun x + 10 soni eski nollarga teng bo'lishi kerak. x + 10 = 30 dan x = 20, x + 10 = 80 dan x = 70 topiladi. Argumentga son qo'shilgani uchun grafik o'ngga emas, chapga 10 birlik surilgan. Javob: x = 20 va x = 70.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nollar-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#3172f6c2"
+    },
+    {
+      "q": "y = f(x) grafigi Ox o'qini x = 12 nuqtada kesadi. y = f(3x) grafigi bu o'qni qaysi nuqtada kesishini toping.",
+      "v": [
+        "x = 36",
+        "x = 12",
+        "x = 4",
+        "x = 9"
+      ],
+      "t": 2,
+      "izoh": "Yangi grafik nolga aylanadigan joyda 3x argumenti eski nolga teng bo'ladi: 3x = 12. Bundan x = 4 kelib chiqadi, ya'ni kesishish nuqtasi koordinata boshiga uch marta yaqinlashgan. Bu gorizontal siqishning tabiiy natijasi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nollar-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#8bec8db6"
+    },
+    {
+      "q": "y = f(x) funksiya faqat x = 6 nuqtada nolga aylanadi. y = f(|x|) va y = |f(x)| grafiklarining har biri Ox o'qini necha nuqtada kesishini solishtiring.",
+      "v": [
+        "f(|x|) uchun 2 ta, |f(x)| uchun 1 ta",
+        "f(|x|) uchun 1 ta, |f(x)| uchun 2 ta",
+        "Ikkalasi uchun ham 2 ta",
+        "Ikkalasi uchun ham 1 ta"
+      ],
+      "t": 0,
+      "izoh": "f(|x|) = 0 sharti |x| = 6 ni beradi, undan x = 6 va x = −6 ikki yechim chiqadi. |f(x)| = 0 sharti esa f(x) = 0 bilan bir xil, ya'ni yagona x = 6 nuqta qoladi. Tashqi modul nollarni ko'paytirmaydi, ichki modul esa ularni Oy o'qiga nisbatan takrorlaydi. Javob: f(|x|) uchun 2 ta, |f(x)| uchun 1 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nollar-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#0f0cd1e7"
+    },
+    {
+      "q": "y = f(x) funksiyaning eng katta qiymati 9 ga teng. y = f(x) − 5 funksiyaning eng katta qiymatini toping.",
+      "v": [
+        "14",
+        "9",
+        "45",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Vertikal siljish grafikning shaklini o'zgartirmaydi, faqat uni 5 birlik pastga tushiradi. Shu sababli maksimum ham xuddi shu miqdorda kamayadi: 9 − 5 = 4. Maksimum erishiladigan nuqtaning abssissasi esa o'zgarmay qoladi. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-ozgarishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#d92d0350"
+    },
+    {
+      "q": "y = f(x) funksiyaning eng kichik qiymati −3 ga teng. y = 4f(x) funksiyaning eng kichik qiymati qanday bo'ladi?",
+      "v": [
+        "−12",
+        "12",
+        "1",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qi bo'ylab 4 marta cho'zishda har bir qiymat 4 ga ko'paytiriladi. Eng kichik qiymat manfiy bo'lgani uchun u yanada kichrayadi: −3·4 = −12. Koeffitsientni qo'shib 1 ni olish eng ko'p uchraydigan xato. Javob: −12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ekstremum-ozgarishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#7bbb36b4"
+    },
+    {
+      "q": "Zavodning kunlik ishlab chiqarish grafigi eng yuqori nuqtasida 240 dona edi. Yangi smena joriy etilgach barcha ko'rsatkichlar 1,5 barobar oshdi. Yangi grafikning eng yuqori qiymatini toping.",
+      "v": [
+        "241,5",
+        "480",
+        "360",
+        "160"
+      ],
+      "t": 2,
+      "izoh": "Barcha qiymatlarning 1,5 barobar ortishi grafikni Oy o'qi bo'ylab 1,5 marta cho'zish demakdir. Maksimum ham shu koeffitsientga ko'paytiriladi: 240·1,5 = 360 dona. Koeffitsientni qo'shish yoki aksincha bo'lish esa noto'g'ri natijaga olib keladi. Javob: 360 dona.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ekstremum-ozgarishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#5b504e52"
+    },
+    {
+      "q": "y = f(x) funksiyaning eng katta qiymati 7, eng kichik qiymati esa −2 ga teng. y = |f(x)| funksiyaning eng katta qiymati nechaga teng bo'ladi?",
+      "v": [
+        "2",
+        "7",
+        "9",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Modul olingach manfiy qiymatlar musbatga aylanadi, ya'ni −2 qiymat 2 ga o'tadi. Endi eng katta qiymat 7 va 2 sonlarining kattarog'i sifatida topiladi. 7 > 2 bo'lgani uchun maksimum o'zgarmaydi va 7 bo'lib qoladi. Chegaralarni qo'shib 9 olish yoki ayirib 5 olish xato. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ekstremum-ozgarishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#3d5e8cce"
+    },
+    {
+      "q": "y = 1/x giperbolaning asimptotalari koordinata o'qlari edi. y = 1/x + 4 funksiyaning gorizontal asimptotasi qaysi to'g'ri chiziq bo'ladi?",
+      "v": [
+        "y = 4",
+        "x = 4",
+        "y = 0",
+        "y = −4"
+      ],
+      "t": 0,
+      "izoh": "Ifodaga qo'shilgan 4 soni butun grafikni 4 birlik yuqoriga suradi, chunki u funksiya qiymatiga qo'shilgan. Ilgari gorizontal asimptota y = 0 to'g'ri chiziq edi, u ham xuddi shu miqdorda ko'tariladi. Demak yangi gorizontal asimptota y = 4 bo'ladi, vertikal asimptota esa x = 0 bo'lib qolaveradi. Javob: y = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asimptota-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#5780009b"
+    },
+    {
+      "q": "y = 1/(x − 3) funksiyaning vertikal asimptotasini toping va uni y = 1/x grafigining siljishi bilan izohlang.",
+      "v": [
+        "x = −3",
+        "x = 3",
+        "y = 3",
+        "x = 0"
+      ],
+      "t": 1,
+      "izoh": "Maxraj nolga aylanadigan nuqtada funksiya aniqlanmaydi: x − 3 = 0 dan x = 3. Bu qiymat vertikal asimptotani beradi. Almashtirish nuqtai nazaridan y = 1/x grafigi 3 birlik o'ngga surilgan, shu bilan birga Oy o'qidagi asimptota ham x = 3 chizig'iga ko'chgan. Javob: x = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptota-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#f1c6c5b9"
+    },
+    {
+      "q": "Xonada turgan issiq choy harorati T(t) = 20 + 1/t modeli bilan tasvirlangan edi. Konditsioner yoqilib xona sovitilgach model T(t) = 15 + 1/t ko'rinishini oldi. Grafikning gorizontal asimptotasi qanday o'zgardi?",
+      "v": [
+        "y = 20 dan y = 25 ga ko'tarildi",
+        "x = 20 dan x = 15 ga tushdi",
+        "y = 20 dan y = 15 ga tushdi",
+        "O'zgarmadi va y = 0 bo'lib qoldi"
+      ],
+      "t": 2,
+      "izoh": "Modeldagi o'zgarmas qo'shiluvchi grafikning gorizontal asimptotasini belgilaydi, chunki t katta bo'lganda 1/t nolga intiladi. Birinchi modelda asimptota y = 20, ikkinchisida esa y = 15 chizig'i bo'ladi. Demak grafik 5 birlik pastga siljigan. Javob: y = 20 dan y = 15 ga tushdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asimptota-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#2ac962cb"
+    },
+    {
+      "q": "y = 2^x funksiyaning grafigi 3 birlik pastga surildi. Hosil bo'lgan grafikning gorizontal asimptotasini va Ox o'qi bilan kesishish nuqtasini toping.",
+      "v": [
+        "Asimptota y = 0, kesishish x = 3",
+        "Asimptota y = 3, kesishish x = log₃2",
+        "Asimptota y = −3, kesishish x = 8",
+        "Asimptota y = −3, kesishish x = log₂3"
+      ],
+      "t": 3,
+      "izoh": "Yangi funksiya y = 2^x − 3 ko'rinishida bo'ladi. Asl grafikning asimptotasi y = 0 edi, u 3 birlik pastga tushib y = −3 chizig'iga aylanadi. Kesishish nuqtasi uchun 2^x − 3 = 0, ya'ni 2^x = 3 tenglamani yechamiz va logarifm ta'rifiga ko'ra x = log₂3 ni olamiz. Javob: asimptota y = −3, kesishish x = log₂3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asimptota-siljishi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#da03083f"
+    },
+    {
+      "q": "Grafik avval Oy o'qiga nisbatan akslantirilgan, so'ngra 2 birlik yuqoriga ko'tarilgan. Bunga qaysi formula mos keladi?",
+      "v": [
+        "y = f(−x) + 2",
+        "y = −f(x) + 2",
+        "y = f(−x) − 2",
+        "y = f(−x + 2)"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qiga nisbatan akslantirish argumentning ishorasini almashtiradi va f(−x) ni beradi. Keyingi 2 birlik yuqoriga ko'tarilish esa butun ifodaga 2 ni qo'shadi. Natijada y = f(−x) + 2 hosil bo'ladi. Qo'shiluvchini qavs ichiga kiritish gorizontal siljishga aylanib qolgan bo'lardi. Javob: y = f(−x) + 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tavsifdan-formula",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#241b71a8"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qi bo'ylab 2 marta siqildi va so'ngra 6 birlik o'ngga surildi. Natijaviy funksiyani yozing.",
+      "v": [
+        "y = 2f(x − 6)",
+        "y = 0,5·f(x + 6)",
+        "y = 0,5·f(x − 6)",
+        "y = f(0,5x − 6)"
+      ],
+      "t": 2,
+      "izoh": "Oy o'qi bo'ylab 2 marta siqish barcha ordinatalarni ikki barobar kamaytiradi, ya'ni funksiya 0,5·f(x) ko'rinishini oladi. Keyin 6 birlik o'ngga siljish argumentdan 6 ni ayiradi. Ikkalasini birlashtirsak y = 0,5·f(x − 6) chiqadi. Javob: y = 0,5·f(x − 6).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tavsifdan-formula",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#50e21174"
+    },
+    {
+      "q": "Muhandis y = h(x) ko'rinishida ko'prik profilini chizdi. Yangi loyihada profil balandligi 3 barobar oshiriladi va butun ko'prik 12 metr o'ngga suriladi. Yangi profil formulasi qaysi?",
+      "v": [
+        "y = 3h(x + 12)",
+        "y = 3h(x − 12)",
+        "y = h(3x − 12)",
+        "y = 3h(x) − 12"
+      ],
+      "t": 1,
+      "izoh": "Balandlikning 3 barobar oshishi ordinatalarni 3 ga ko'paytiradi va 3h(x) ni beradi. O'ngga 12 metr siljish esa argumentdan 12 ni ayiradi. Ikkala almashtirish birga y = 3h(x − 12) formulasini hosil qiladi. Koeffitsientni qavs ichiga kiritish gorizontal siqishga olib kelgan bo'lardi. Javob: y = 3h(x − 12).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tavsifdan-formula",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#3b302136"
+    },
+    {
+      "q": "Yangi grafik y = f(x) dan avval Ox o'qiga nisbatan akslantirish, keyin 4 birlik chapga siljitish, oxirida 1 birlik pastga tushirish bilan hosil qilindi. Uning formulasini toping.",
+      "v": [
+        "y = −f(x − 4) − 1",
+        "y = −f(x + 4) + 1",
+        "y = f(−x + 4) − 1",
+        "y = −f(x + 4) − 1"
+      ],
+      "t": 3,
+      "izoh": "Ox o'qiga nisbatan akslantirish butun funksiyani minus ishora bilan oladi: −f(x). Chapga 4 birlik siljish argumentga 4 ni qo'shadi va −f(x + 4) hosil bo'ladi. Nihoyat 1 birlik pastga tushirish yana 1 ni ayiradi. Javob: y = −f(x + 4) − 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tavsifdan-formula",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#601bc22c"
+    },
+    {
+      "q": "y = f(x) grafigini avval 3 birlik o'ngga surib, keyin uni Oy o'qiga nisbatan akslantirsak, natijada qanday funksiya hosil bo'ladi?",
+      "v": [
+        "y = f(−x + 3)",
+        "y = f(x + 3)",
+        "y = f(−x − 3)",
+        "y = −f(x − 3)"
+      ],
+      "t": 2,
+      "izoh": "Birinchi qadamdan keyin g(x) = f(x − 3) hosil bo'ladi. Oy o'qiga nisbatan akslantirish x ni −x ga almashtiradi, ya'ni g(−x) = f(−x − 3) ni beramiz. Demak yakuniy funksiya y = f(−x − 3) bo'ladi. Javob: y = f(−x − 3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirishlar-tartibi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#1c8fba34"
+    },
+    {
+      "q": "y = f(x) grafigini avval Oy o'qiga nisbatan akslantirib, so'ng hosil bo'lgan grafikni 3 birlik o'ngga sursak, qaysi funksiya chiqadi?",
+      "v": [
+        "y = f(−x − 3)",
+        "y = f(3 − x)",
+        "y = f(x − 3)",
+        "y = −f(x − 3)"
+      ],
+      "t": 1,
+      "izoh": "Avvalgi qadamda g(x) = f(−x) hosil bo'ladi. O'ngga 3 birlik siljish argumentdan 3 ni ayiradi: g(x − 3) = f(−(x − 3)) = f(3 − x). Bu natija oldingi masaladagi f(−x − 3) dan farq qiladi, ya'ni almashtirishlar tartibi muhim. Javob: y = f(3 − x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-tartibi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4b1aed33"
+    },
+    {
+      "q": "y = f(x) grafigi avval Oy o'qi bo'ylab 2 marta cho'zilib, keyin 5 birlik yuqoriga surildi. Agar tartib teskari bo'lsa, ya'ni avval siljitilib keyin cho'zilsa, natijalar qanday farq qiladi?",
+      "v": [
+        "Ikkinchi natija birinchisidan 5 birlik yuqorida bo'ladi",
+        "Natijalar aynan bir xil bo'ladi",
+        "Ikkinchi natija birinchisidan 5 birlik pastda bo'ladi",
+        "Ikkinchi natija birinchisining ikki barobari bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tartibda avval 2f(x), so'ng qo'shish bajariladi va 2f(x) + 5 hosil bo'ladi. Ikkinchi tartibda avval f(x) + 5, keyin cho'zish qo'llanadi: 2·(f(x) + 5) = 2f(x) + 10. Ikki natijaning ayirmasi 10 − 5 = 5 birlikni tashkil qiladi. Javob: ikkinchi natija birinchisidan 5 birlik yuqorida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "almashtirishlar-tartibi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#e7c3131d"
+    },
+    {
+      "q": "Do'konda narxlar avval har bir mahsulot uchun 20 ming so'mga oshirildi, keyin esa hamma narx 2 barobar qimmatlashdi. Boshlang'ich narx N(x) bo'lsa, yakuniy narx funksiyasi qanday bo'ladi?",
+      "v": [
+        "2N(x) + 20",
+        "2N(x) + 40",
+        "N(x) + 40",
+        "2N(x + 20)"
+      ],
+      "t": 1,
+      "izoh": "Birinchi bosqichdan keyin narx N(x) + 20 bo'ladi, chunki o'zgarmas qo'shimcha vertikal siljish beradi. Ikkinchi bosqichda bu ifodaning hammasi 2 ga ko'paytiriladi: 2·(N(x) + 20). Qavsni ochsak 2N(x) + 40 hosil bo'ladi, ya'ni qo'shimcha ham ikki barobar oshadi. Javob: 2N(x) + 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "almashtirishlar-tartibi",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#0d84a92c"
+    },
+    {
+      "q": "y = sinx funksiyaning davri 2π ga teng edi. Gorizontal siqish qoidasidan foydalanib y = sin3x funksiyaning davrini toping.",
+      "v": [
+        "6π",
+        "2π",
+        "3π",
+        "2π/3"
+      ],
+      "t": 3,
+      "izoh": "Argument oldidagi koeffitsient grafikni Ox o'qi bo'ylab shuncha marta siqadi. Siqish 3 marta bo'lgani uchun davr ham 3 marta qisqaradi: 2π : 3 = 2π/3. Koeffitsientga ko'paytirib 6π olish eng ko'p uchraydigan xato. Javob: 2π/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trigonometrik-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#76e14930"
+    },
+    {
+      "q": "y = cosx grafigi Oy o'qi bo'ylab 4 marta cho'zilsa, hosil bo'lgan funksiyaning eng katta va eng kichik qiymatlari qanday bo'ladi?",
+      "v": [
+        "Eng katta 4, eng kichik −4",
+        "Eng katta 1, eng kichik −1",
+        "Eng katta 4, eng kichik 0",
+        "Eng katta 8, eng kichik −8"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qi bo'ylab 4 marta cho'zish har bir ordinatani 4 ga ko'paytiradi va y = 4cosx funksiyani beradi. Kosinusning qiymatlari −1 dan 1 gacha bo'lgani uchun yangi chegaralar −4 va 4 bo'ladi. Gorizontal siljish yoki siqish bo'lmagani uchun davr o'zgarmaydi. Javob: eng katta 4, eng kichik −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#5f90f996"
+    },
+    {
+      "q": "Kema bortidagi tebranish balandligi h(t) = sin t formula bilan berilgan. To'lqin kuchayib balandlik 2 barobar oshdi va tebranish 2 marta tezlashdi. Yangi formulani ko'rsating.",
+      "v": [
+        "y = 2sin(t/2)",
+        "y = sin2t + 2",
+        "y = 2sin2t",
+        "y = 4sin t"
+      ],
+      "t": 2,
+      "izoh": "Balandlikning ikki barobar oshishi amplitudani oshiradi, ya'ni funksiya oldiga 2 koeffitsienti qo'yiladi. Tebranishning ikki marta tezlashishi esa vaqt o'qini 2 marta siqadi va argument 2t ga aylanadi. Ikkalasi birga y = 2sin2t formulasini beradi. Javob: y = 2sin2t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trigonometrik-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#eef6008f"
+    },
+    {
+      "q": "y = 2sin(x − π/3) funksiya y = sinx grafigidan qanday almashtirishlar yordamida hosil qilinganini aniqlang.",
+      "v": [
+        "Ox bo'ylab 2 marta siqish va π/3 ga chapga siljitish",
+        "Oy bo'ylab 2 marta cho'zish va π/3 ga o'ngga siljitish",
+        "Oy bo'ylab 2 marta cho'zish va π/3 ga chapga siljitish",
+        "Ox bo'ylab 2 marta cho'zish va π/3 ga o'ngga siljitish"
+      ],
+      "t": 1,
+      "izoh": "Sinus oldidagi 2 koeffitsienti ordinatalarni ikki barobar oshiradi, bu Oy o'qi bo'ylab cho'zish. Argumentdagi x − π/3 ifodasi esa grafikni π/3 birlik o'ngga suradi, chunki argumentdan son ayirilgan. Koeffitsient qavs ichida bo'lmagani uchun gorizontal siqish yuz bermaydi. Javob: Oy bo'ylab 2 marta cho'zish va π/3 ga o'ngga siljitish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "trigonometrik-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#c82c2fa2"
+    },
+    {
+      "q": "y = x³ grafigidan y = (x − 2)³ + 5 grafigini hosil qilish uchun bajariladigan almashtirishlarni tanlang.",
+      "v": [
+        "2 birlik chapga va 5 birlik yuqoriga",
+        "5 birlik o'ngga va 2 birlik yuqoriga",
+        "2 birlik o'ngga va 5 birlik pastga",
+        "2 birlik o'ngga va 5 birlik yuqoriga"
+      ],
+      "t": 3,
+      "izoh": "Argumentdagi x − 2 ifodasi grafikni 2 birlik o'ngga suradi, chunki argumentdan son ayirilgan. Oxiridagi +5 esa uni 5 birlik yuqoriga ko'taradi. Natijada burilish nuqtasi (0; 0) dan (2; 5) ga ko'chadi. Javob: 2 birlik o'ngga va 5 birlik yuqoriga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-grafikni-moslash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#acd0d8dd"
+    },
+    {
+      "q": "Quyidagi qaysi almashtirishlar ketma-ketligi y = x² parabolani y = −x² + 9 grafigiga o'tkazishini aniqlang.",
+      "v": [
+        "Ox o'qiga nisbatan akslantirish va 9 birlik yuqoriga siljitish",
+        "Oy o'qiga nisbatan akslantirish va 9 birlik yuqoriga siljitish",
+        "9 birlik pastga siljitish va Oy o'qiga nisbatan akslantirish",
+        "Ox o'qiga nisbatan akslantirish va 9 birlik pastga siljitish"
+      ],
+      "t": 0,
+      "izoh": "Avval parabolani Ox o'qiga nisbatan akslantirsak y = −x² hosil bo'ladi va shoxlari pastga qaraydi. So'ngra 9 birlik yuqoriga ko'tarsak y = −x² + 9 chiqadi, cho'qqi (0; 9) nuqtaga ko'chadi. Oy o'qiga nisbatan akslantirish bu yerda hech narsani o'zgartirmaydi, chunki (−x)² = x². Javob: Ox o'qiga nisbatan akslantirish va 9 birlik yuqoriga siljitish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-grafikni-moslash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#862370b1"
+    },
+    {
+      "q": "Ikki oilaning kunlik suv sarfi grafiklari bir xil shaklda, lekin ikkinchi oilaniki har doim birinchisidan aynan 90 litr ko'p. Ikkinchi grafik birinchisidan qanday olinadi?",
+      "v": [
+        "90 birlik o'ngga siljitish bilan",
+        "90 marta cho'zish bilan",
+        "90 birlik yuqoriga siljitish bilan",
+        "Ox o'qiga nisbatan akslantirish bilan"
+      ],
+      "t": 2,
+      "izoh": "Har bir vaqtda ikkinchi qiymat birinchisidan bir xil songa ko'p bo'lsa, bu qo'shish, ya'ni vertikal siljishdir. Formulada bu S₂(t) = S₁(t) + 90 ko'rinishida yoziladi. Ko'paytirish bo'lganda farq har xil vaqtda har xil bo'lardi, shuning uchun cho'zish mos kelmaydi. Javob: 90 birlik yuqoriga siljitish bilan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-grafikni-moslash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#2b72cf8f"
+    },
+    {
+      "q": "y = f(x) va y = g(x) grafiklari bir xil shaklda; g grafigi f ga nisbatan 4 birlik chapda va har bir nuqtada 2 marta baland. g ni f orqali ifodalang.",
+      "v": [
+        "g(x) = 2f(x − 4)",
+        "g(x) = 2f(x + 4)",
+        "g(x) = f(2x + 4)",
+        "g(x) = 2f(x) + 4"
+      ],
+      "t": 1,
+      "izoh": "Chapga 4 birlik siljish argumentga 4 ni qo'shadi va f(x + 4) ni beradi. Balandlikning 2 marta ortishi esa butun funksiyani 2 ga ko'paytiradi. Ikkalasini birlashtirib g(x) = 2f(x + 4) ni olamiz. Koeffitsientni qavs ichiga kiritish gorizontal siqishni bergan bo'lardi. Javob: g(x) = 2f(x + 4).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-grafikni-moslash",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#525b0f1d"
+    },
+    {
+      "q": "y = |x² − 4| grafigi bilan y = 3 gorizontal to'g'ri chizig'i nechta umumiy nuqtaga ega ekanligini aniqlang.",
+      "v": [
+        "3 ta",
+        "4 ta",
+        "5 ta",
+        "2 ta"
+      ],
+      "t": 1,
+      "izoh": "Tenglamani modul ta'rifiga ko'ra ikkiga ajratamiz: x² − 4 = 3 va x² − 4 = −3. Birinchisidan x² = 7, ya'ni x = √7 va x = −√7 ikkita yechim chiqadi. Ikkinchisidan x² = 1, ya'ni x = 1 va x = −1 yana ikkita yechim topiladi, jami to'rtta. Javob: 4 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4f0f8d37"
+    },
+    {
+      "q": "y = |x| − 2 grafigi va y = 1 to'g'ri chizig'ining kesishish nuqtalari sonini toping.",
+      "v": [
+        "1 ta nuqta",
+        "3 ta nuqta",
+        "Umuman kesishmaydi",
+        "2 ta nuqta"
+      ],
+      "t": 3,
+      "izoh": "Kesishish shartidan |x| − 2 = 1 tenglama kelib chiqadi, undan |x| = 3 hosil bo'ladi. Modul tenglamasi musbat o'ng tomon uchun ikkita yechim beradi: x = 3 va x = −3. Grafik jihatdan V shaklidagi chiziq gorizontal to'g'ri chiziqni uchidan yuqorida ikki joyda kesadi. Javob: 2 ta nuqta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#bb6034f3"
+    },
+    {
+      "q": "y = |2x − 6| grafigi y = a to'g'ri chizig'i bilan aynan bitta umumiy nuqtaga ega bo'lishi uchun a qanday qiymat olishi kerak?",
+      "v": [
+        "a = 0",
+        "a = 3",
+        "a = 6",
+        "a > 0 bo'lgan har qanday son"
+      ],
+      "t": 0,
+      "izoh": "Modul grafigi V shaklida bo'lib, uning uchi 2x − 6 = 0 dan x = 3 nuqtada, ordinatasi esa 0 ga teng. Gorizontal chiziq bu grafikni a > 0 bo'lganda ikki nuqtada, a < 0 bo'lganda umuman kesmaydi. Yagona umumiy nuqta faqat chiziq uchdan o'tganda, ya'ni a = 0 bo'lganda hosil bo'ladi. Javob: a = 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#18aed1c1"
+    },
+    {
+      "q": "Havo haroratining me'yordan chetlanishi y = |t − 18| formula bilan hisoblanadi (daraja hisobida). Chetlanish aynan 5 darajaga teng bo'ladigan haroratlarni toping.",
+      "v": [
+        "23 daraja",
+        "13 daraja",
+        "5 va 18 daraja",
+        "13 va 23 daraja"
+      ],
+      "t": 3,
+      "izoh": "Shartga ko'ra |t − 18| = 5 tenglamani yechamiz. Modul ta'rifiga ko'ra t − 18 = 5 yoki t − 18 = −5 bo'ladi. Birinchisidan t = 23, ikkinchisidan t = 13 kelib chiqadi, ya'ni me'yordan ikki tomonga bir xil uzoqlikdagi ikkita harorat mavjud. Javob: 13 va 23 daraja.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#23418b9c"
+    },
+    {
+      "q": "y = f(|x|) grafigi y = 5 to'g'ri chizig'i bilan 4 ta umumiy nuqtaga ega. Dastlabki y = f(x) grafigi shu chiziqni musbat x lar sohasida necha marta kesadi?",
+      "v": [
+        "1 marta",
+        "2 marta",
+        "4 marta",
+        "8 marta"
+      ],
+      "t": 1,
+      "izoh": "f(|x|) grafigi Oy o'qiga nisbatan simmetrik, shuning uchun uning kesishish nuqtalari juft-juft bo'lib joylashadi. To'rtta nuqta ikkita simmetrik juftlikni bildiradi, ya'ni |x| uchun ikkita musbat qiymat mavjud. Har bir shunday qiymat f(x) = 5 tenglamaning musbat sohadagi bitta yechimiga mos keladi. Javob: 2 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "modul-ildizlar-soni",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#02dc0492"
+    },
+    {
+      "q": "f(x) juft funksiya bo'lsin. Bu holda y = f(−x) grafigining joylashuvi haqida qanday xulosa chiqarish mumkin?",
+      "v": [
+        "Ox o'qiga nisbatan simmetrik joylashadi",
+        "Koordinata boshiga nisbatan buriladi",
+        "y = f(x) grafigi bilan ustma-ust tushadi",
+        "y = −f(x) grafigi bilan ustma-ust tushadi"
+      ],
+      "t": 2,
+      "izoh": "Juft funksiya ta'rifiga ko'ra f(−x) = f(x) tenglik barcha x lar uchun o'rinli. Demak Oy o'qiga nisbatan akslantirish grafikni umuman o'zgartirmaydi va u o'z joyida qoladi. Bu juft funksiya grafigining Oy o'qiga nisbatan simmetrikligidan kelib chiqadi. Javob: y = f(x) grafigi bilan ustma-ust tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juftlik-simmetriya-tahlil",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#c1b79104"
+    },
+    {
+      "q": "f(x) toq funksiya ekanligi ma'lum. Shunda y = −f(−x) grafigi quyidagi qaysi funksiya grafigi bilan bir xil bo'ladi?",
+      "v": [
+        "y = f(x)",
+        "y = −f(x)",
+        "y = |f(x)|",
+        "y = f(|x|)"
+      ],
+      "t": 0,
+      "izoh": "Toq funksiya uchun f(−x) = −f(x) tenglik bajariladi. Uni ifodaga qo'ysak −f(−x) = −(−f(x)) = f(x) hosil bo'ladi. Demak ikki akslantirish ketma-ket bajarilganda grafik o'z holiga qaytadi. Bu toq funksiyaning koordinata boshiga nisbatan simmetrikligining boshqacha ifodasidir. Javob: y = f(x).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juftlik-simmetriya-tahlil",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#ad7d4eee"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qiga nisbatan simmetrik. Uni 4 birlik o'ngga surgach hosil bo'lgan grafik qaysi to'g'ri chiziqqa nisbatan simmetrik bo'ladi?",
+      "v": [
+        "x = −4",
+        "y = 4",
+        "x = 4",
+        "Oy o'qi o'zgarishsiz qoladi"
+      ],
+      "t": 2,
+      "izoh": "Boshlang'ich grafikning simmetriya o'qi Oy, ya'ni x = 0 to'g'ri chizig'i edi. Gorizontal siljish butun shaklni, shu jumladan uning simmetriya o'qini ham birga ko'chiradi. O'ngga 4 birlik surilgach simmetriya o'qi x = 4 chizig'iga aylanadi. Javob: x = 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juftlik-simmetriya-tahlil",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#fe6cc742"
+    },
+    {
+      "q": "Gulzorning tabiiy shakli Oy o'qiga nisbatan simmetrik y = f(x) egri chizig'i bilan berilgan. Loyihachi butun shaklni 6 metr chapga ko'chirdi. Yangi simmetriya o'qi qaysi?",
+      "v": [
+        "x = 6",
+        "y = −6",
+        "Oy o'qi o'zgarmaydi",
+        "x = −6"
+      ],
+      "t": 3,
+      "izoh": "Simmetriya o'qi shaklning ajralmas qismi bo'lgani uchun u ham grafik bilan birga siljiydi. Chapga 6 birlik ko'chishda x = 0 chizig'i x = −6 chizig'iga o'tadi. Formulada bu y = f(x + 6) ko'rinishida yoziladi. Javob: x = −6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juftlik-simmetriya-tahlil",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4d5d360a"
+    },
+    {
+      "q": "y = |f(x)| va y = f(|x|) funksiyalardan qaysi biri ixtiyoriy f uchun har doim juft funksiya bo'lishini aniqlang.",
+      "v": [
+        "Faqat y = |f(x)|",
+        "Faqat y = f(|x|)",
+        "Ikkalasi ham har doim juft bo'ladi",
+        "Ikkalasi ham juft bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "f(|x|) uchun argumentga −x qo'ysak f(|−x|) = f(|x|) chiqadi, ya'ni juftlik har doim bajariladi. |f(x)| esa ixtiyoriy f uchun juft bo'lishi shart emas: buning uchun har bir x da |f(−x)| = |f(x)| bo'lishi, ya'ni qiymatlar faqat ishorasi bilan farq qilishi kerak. Masalan f(x) = x + 1 uchun |f(1)| = 2, |f(−1)| = 0, ya'ni juftlik buziladi. Javob: faqat y = f(|x|).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juftlik-simmetriya-tahlil",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#1b085a45"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qini (0; 8) nuqtada kesadi. y = f(x) − 3 grafigi Oy o'qini qaysi nuqtada kesishini toping.",
+      "v": [
+        "(0; 5)",
+        "(0; 11)",
+        "(3; 8)",
+        "(0; 8)"
+      ],
+      "t": 0,
+      "izoh": "Oy o'qi bilan kesishish x = 0 dagi qiymat orqali aniqlanadi, ya'ni f(0) = 8. Yangi funksiyada shu nuqtadagi qiymat f(0) − 3 = 8 − 3 = 5 bo'ladi. Abssissa 0 bo'lib qolaveradi, chunki almashtirish faqat vertikal. Javob: (0; 5).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishish-Oy-bilan",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#20b6ccb3"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qini (0; 6) nuqtada kesadi. y = f(x − 2) grafigining Oy o'qi bilan kesishish nuqtasi haqida nima deyish mumkin?",
+      "v": [
+        "(0; 6) nuqtada kesadi",
+        "(0; 4) nuqtada kesadi",
+        "(2; 6) nuqtada kesadi",
+        "Berilganlar yetarli emas, chunki f(−2) noma'lum"
+      ],
+      "t": 3,
+      "izoh": "Yangi funksiyaning x = 0 dagi qiymati f(0 − 2) = f(−2) ga teng bo'ladi. Bizga esa faqat f(0) = 6 ma'lum, f(−2) haqida hech qanday ma'lumot berilmagan. Gorizontal siljishda Oy o'qidagi qiymat saqlanmaydi, chunki o'q bilan grafikning boshqa nuqtasi to'qnashadi. Javob: berilganlar yetarli emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-Oy-bilan",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#3666f0e1"
+    },
+    {
+      "q": "y = f(x) grafigi Oy o'qini (0; −4) nuqtada kesadi. Shunga asoslanib y = 5f(x) grafigi bu o'qni qaysi nuqtada kesishini toping.",
+      "v": [
+        "(0; 1)",
+        "(0; −9)",
+        "(0; −20)",
+        "(0; 20)"
+      ],
+      "t": 2,
+      "izoh": "Oy o'qidagi qiymat f(0) = −4 ga teng. Vertikal cho'zishda bu qiymat 5 ga ko'paytiriladi: 5·(−4) = −20. Ko'paytirish o'rniga qo'shish yoki ayirish qilish tipik xato bo'lib, 1 va −9 natijalarini beradi. Javob: (0; −20).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishish-Oy-bilan",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#454e0e7f"
+    },
+    {
+      "q": "Elektr hisoblagichi ko'rsatkichlari grafigi Oy o'qini 240 kVt·soat qiymatida kesadi. Barcha ko'rsatkichlar 1,25 barobar oshirilsa, kesishish qiymati qanday bo'ladi?",
+      "v": [
+        "241,25",
+        "192",
+        "480",
+        "300"
+      ],
+      "t": 3,
+      "izoh": "Barcha qiymatlarning bir xil koeffitsientga ortishi grafikni Oy o'qi bo'ylab cho'zishdir. Shuning uchun Oy o'qidagi qiymat ham shu koeffitsientga ko'paytiriladi: 240·1,25 = 300. Koeffitsientni qo'shish yoki unga bo'lish noto'g'ri natija beradi. Javob: 300 kVt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishish-Oy-bilan",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#68efd0bd"
+    },
+    {
+      "q": "y = f(−x) grafigi Oy o'qini qanday nuqtada kesadi, agar y = f(x) grafigi uni (0; 7) nuqtada kessa?",
+      "v": [
+        "(0; −7)",
+        "(7; 0)",
+        "Umuman kesishmaydi",
+        "(0; 7)"
+      ],
+      "t": 3,
+      "izoh": "Yangi funksiyaning x = 0 dagi qiymati f(−0) = f(0) = 7 ga teng bo'ladi. Oy o'qi akslantirish o'qi bo'lgani uchun undagi nuqta qo'zg'almay qoladi. Demak kesishish nuqtasi o'zgarmaydi va yana (0; 7) bo'ladi. Javob: (0; 7).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishish-Oy-bilan",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#f9a49c00"
+    },
+    {
+      "q": "Fermer Anvarning sut ishlab chiqarish grafigi S(t) bilan berilgan. Yangi qoramollar olingach ishlab chiqarish har kuni bir xil 80 litrga oshdi, mavsum esa 15 kun kechroq boshlandi. Yangi funksiya qaysi?",
+      "v": [
+        "S(t + 15) + 80",
+        "S(t − 15) − 80",
+        "80·S(t − 15)",
+        "S(t − 15) + 80"
+      ],
+      "t": 3,
+      "izoh": "Mavsumning kechroq boshlanishi grafikni vaqt o'qi bo'ylab o'ngga suradi, ya'ni argument t − 15 bo'ladi. Har kuni bir xil 80 litr qo'shilishi esa ko'paytirish emas, qo'shish, demak vertikal siljish beradi. Ikkala almashtirishni birlashtirib S(t − 15) + 80 ni olamiz. Javob: S(t − 15) + 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#f2aab8c1"
+    },
+    {
+      "q": "Metro bekatidagi kunlik yo'lovchilar grafigi M(t) bilan berilgan. Yangi liniya ochilgach har bir soatdagi yo'lovchilar soni 1,4 barobar ortdi. Eng gavjum soatdagi 12 000 yo'lovchi endi nechta bo'ladi?",
+      "v": [
+        "13 400",
+        "4 800",
+        "16 800",
+        "24 000"
+      ],
+      "t": 2,
+      "izoh": "Barcha qiymatlarning bir xil koeffitsientga ortishi grafikni Oy o'qi bo'ylab 1,4 marta cho'zadi. Maksimum ham shu koeffitsientga ko'paytiriladi: 12 000·1,4 = 16 800 yo'lovchi. Faqat o'sish miqdorini hisoblab 4 800 deb javob berish yoki koeffitsientni qo'shish tipik xatolardir. Javob: 16 800.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-model-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#d207e133"
+    },
+    {
+      "q": "Tadbirkor Jasur narxga bog'liq foyda funksiyasi P(x) grafigini chizdi. So'ngra u grafikni Ox o'qiga nisbatan akslantirib zarar grafigini oldi va uni 50 birlik yuqoriga ko'tardi. Yakuniy funksiya qaysi?",
+      "v": [
+        "−P(x) + 50",
+        "P(−x) + 50",
+        "−P(x) − 50",
+        "−P(x + 50)"
+      ],
+      "t": 0,
+      "izoh": "Ox o'qiga nisbatan akslantirish butun funksiyani qarama-qarshi ishora bilan oladi: −P(x). Undan keyingi 50 birlik yuqoriga ko'tarilish esa ifodaga 50 ni qo'shadi. Natijada −P(x) + 50 hosil bo'ladi. Qo'shiluvchini qavs ichiga kiritish gorizontal siljishga aylanib ketardi. Javob: −P(x) + 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#a645dadc"
+    },
+    {
+      "q": "Ikki shaharning sutkalik elektr iste'moli grafiklari bir xil shaklda. Ikkinchi shaharda barcha jarayonlar 2 soat kechroq boshlanadi va iste'mol har doim 1,5 barobar ko'p. E₂ ni E₁ orqali yozing.",
+      "v": [
+        "E₂(t) = 1,5·E₁(t + 2)",
+        "E₂(t) = 1,5·E₁(t − 2)",
+        "E₂(t) = E₁(1,5t − 2)",
+        "E₂(t) = 1,5 + E₁(t − 2)"
+      ],
+      "t": 1,
+      "izoh": "Jarayonlarning kechroq boshlanishi vaqt o'qi bo'ylab o'ngga siljishdir, shuning uchun argument t − 2 bo'ladi. Iste'molning 1,5 barobar ko'pligi esa funksiya qiymatini shu koeffitsientga ko'paytiradi. Ikkalasini birlashtirib E₂(t) = 1,5·E₁(t − 2) ni olamiz. Javob: E₂(t) = 1,5·E₁(t − 2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#c70f8750"
+    },
+    {
+      "q": "Yog'in miqdorining me'yordan chetlanishi D = |Y − 40| formula bilan o'lchanadi, bu yerda Y — oylik yog'in (mm), 40 mm esa me'yor. Yog'in 60 mm bo'lgan oyda chetlanish qanday va grafik Ox o'qiga qaysi qiymatda tegadi?",
+      "v": [
+        "Chetlanish 20 mm, grafik Y = 40 da tegadi",
+        "Chetlanish 20 mm, grafik Y = 60 da tegadi",
+        "Chetlanish −20 mm, grafik Y = 40 da tegadi",
+        "Chetlanish 100 mm, grafik Y = 0 da tegadi"
+      ],
+      "t": 0,
+      "izoh": "Chetlanishni hisoblaymiz: D = |60 − 40| = |20| = 20 mm. Modul manfiy qiymat bermagani uchun natija musbat bo'ladi. Grafik Ox o'qiga modul ichidagi ifoda nolga aylangan joyda tegadi, ya'ni Y − 40 = 0 dan Y = 40 mm. Javob: chetlanish 20 mm, grafik Y = 40 da tegadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-model-almashtirish",
+      "id": "matematika_funk_m10-grafiklarni-almashtirish#4b77261b"
+    }
+  ]
+}

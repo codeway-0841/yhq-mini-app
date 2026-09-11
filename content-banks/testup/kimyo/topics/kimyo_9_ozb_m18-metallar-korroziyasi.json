@@ -1,0 +1,486 @@
+{
+  "nom": "18-mavzu. Metallar korroziyasi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Korroziya deb nimaga aytiladi?",
+      "v": [
+        "Metallarning atrof-muhit bilan ta'sirlashishi natijasida yemirilish jarayoniga",
+        "Metallarning yuqori haroratda suyuqlanishiga",
+        "Metallarning kislotalarda erishiga",
+        "Metallarning bolg'alanishiga"
+      ],
+      "t": 0,
+      "izoh": "Korroziya — metallarning atrof-muhit bilan ta'sirlashishi natijasida yemirilish jarayoni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#d2dd35b5"
+    },
+    {
+      "q": "Korroziyaning qanday turlari kuzatiladi?",
+      "v": [
+        "Kimyoviy korroziya, biokorroziya, elektrokimyoviy korroziya",
+        "Faqat kimyoviy korroziya",
+        "Faqat fizik korroziya",
+        "Faqat atmosferaviy korroziya"
+      ],
+      "t": 0,
+      "izoh": "Korroziyaning turlari: kimyoviy korroziya, biokimyoviy (biokorroziya), elektrokimyoviy korroziya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#4f49d2e4"
+    },
+    {
+      "q": "Kimyoviy korroziya deb nimaga aytiladi?",
+      "v": [
+        "Metallning tashqi muhitdagi oksidlovchi bilan bevosita ta'sirlashishi natijasida yemirilishiga",
+        "Ikki metallning kontaktda yemirilishiga",
+        "Mikroorganizmlar ta'sirida yemirilishga",
+        "Elektr toki ta'sirida yemirilishga"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy korroziya — metallning tashqi muhitdagi oksidlovchi bilan bevosita ta'sirlashishi natijasida yemirilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#5dbb0a90"
+    },
+    {
+      "q": "Elektrokimyoviy korroziya qachon yuz beradi?",
+      "v": [
+        "Bir-biri bilan kontaktda bo'lgan ikki xil metall elektrolit, suv bilan bevosita ta'sirlashganda nisbatan faolroq yemirilganda",
+        "Metall quruq havoda qizdirilganda",
+        "Metall faqat kislota eritmasiga tushirilganda",
+        "Metall vakuumda saqlanganda"
+      ],
+      "t": 0,
+      "izoh": "Elektrokimyoviy korroziya — kontaktdagi ikki xil metallning elektrolit bilan ta'sirlashganda nisbatan faolrog'ining yemirilishi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#758c8d8f"
+    },
+    {
+      "q": "Quyidagilardan qaysi biri kimyoviy korroziyaga misol?",
+      "v": [
+        "Natriy va kalsiyning havoda oksidlanishi, temirni nam havoda zanglashi",
+        "Rux bilan qoplangan temirning yemirilishi",
+        "Suvosti kemasi korpusi va protektorning yemirilishi",
+        "Ikki metallli galvanik element ishlashi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy korroziyaga natriy va kalsiyning havoda oksidlanishi, temirni nam havoda zanglashi misol bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#426b734c"
+    },
+    {
+      "q": "Kimyoviy korroziyada elektronlar qanday o'tadi?",
+      "v": [
+        "Metalldan bevosita oksidlovchilarga o'tadi",
+        "Elektrolit eritmasi orqali o'tadi",
+        "Tashqi zanjir orqali o'tadi",
+        "Elektronlar umuman o'tmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kimyoviy korroziyada elektronlar metalldan bevosita oksidlovchilarga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#00367b07"
+    },
+    {
+      "q": "Temir buyumlar sirtidagi «zang» qanday moddadan iborat?",
+      "v": [
+        "Fe(OH)3 — temir (III)-gidroksid",
+        "FeO — temir (II)-oksid",
+        "FeSO4 — temir (II)-sulfat",
+        "FeCl3 — temir (III)-xlorid"
+      ],
+      "t": 0,
+      "izoh": "Fe(OH)3 — temir (III)-gidroksid, ya'ni temir buyumlar sirtidagi «zang».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#c343c586"
+    },
+    {
+      "q": "Temirning zanglash jarayonining umumiy tenglamasi qanday?",
+      "v": [
+        "4Fe + 6H2O + 3O2 = 4Fe(OH)3",
+        "2Fe + O2 = 2FeO",
+        "Fe + H2O = FeO + H2",
+        "4Fe + 2O2 = 2Fe2O2"
+      ],
+      "t": 0,
+      "izoh": "Darslikda umumiy tenglama: 4Fe + 6H2O + 3O2 = 4Fe(OH)3 (yoki 4Fe + 2nH2O + 3O2 = 2Fe2O3.nH2O).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#3801ab10"
+    },
+    {
+      "q": "Temirning zanglashi uchun qanday omillar zarur?",
+      "v": [
+        "Suv (nam muhit) va kislorod",
+        "Faqat quruq kislorod",
+        "Faqat vodorod",
+        "Faqat karbonat angidrid"
+      ],
+      "t": 0,
+      "izoh": "Temir havo kislorodi va suv ta'sirida korroziyalanib, zang hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#17d5d0c7"
+    },
+    {
+      "q": "Temir zanglashining birinchi bosqichida hosil bo'ladigan birikma qaysi?",
+      "v": [
+        "Fe(OH)2",
+        "Fe(OH)3",
+        "Fe2O3",
+        "FeSO4"
+      ],
+      "t": 0,
+      "izoh": "Avval 2Fe2+ + 2H2O + O2 → 2Fe(OH)2 hosil bo'ladi, keyin u Fe(OH)3 gacha oksidlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#72d4f839"
+    },
+    {
+      "q": "Elektrokimyoviy korroziyada metall elektrolit eritmasiga tekkanda nima hosil bo'ladi?",
+      "v": [
+        "Uzluksiz ishlaydigan galvanik element",
+        "Faqat qattiq eritma",
+        "Faqat oksid qatlami",
+        "Neytral eritma"
+      ],
+      "t": 0,
+      "izoh": "Metallar elektrolit eritmasiga tekkanda uzluksiz ishlaydigan galvanik element hosil bo'ladi, bunda faol metall yemiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#262ef3db"
+    },
+    {
+      "q": "Toza metallar elektrokimyoviy korroziyaga qanday munosabatda bo'ladi?",
+      "v": [
+        "Toza metallar elektrokimyoviy korroziyaga uchramaydi",
+        "Toza metallar tezroq korroziyalanadi",
+        "Toza metallar faqat kimyoviy korroziyaga uchraydi",
+        "Toza metallar galvanik element hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Toza metallar elektrokimyoviy korroziyaga uchramaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#125c9263"
+    },
+    {
+      "q": "Havoda metall buyum yuzasida nima uchun elektrolit hosil bo'ladi?",
+      "v": [
+        "Yuzasida suv kondensatlanadi, unda atmosfera gazlari eriydi",
+        "Metall o'zi suv ajratib chiqaradi",
+        "Havo bosimi oshib ketadi",
+        "Metallning o'zi elektrolit"
+      ],
+      "t": 0,
+      "izoh": "Havoda har qanday metall buyum yuzasida suv kondensatlanadi, unda atmosfera gazlari erib, elektrolit hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#19520b0e"
+    },
+    {
+      "q": "Alyuminiy atmosfera ta'sirida bo'ladigan korroziyaga nima uchun yaxshi qarshilik ko'rsatadi?",
+      "v": [
+        "Sirtida aluminiy oksiddan iborat yupqa parda hosil bo'ladi",
+        "Alyuminiy qatorda eng oxirida turadi",
+        "Alyuminiy elektr o'tkazmaydi",
+        "Alyuminiy suv bilan reaksiyaga kirishmaydi"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy sirtida Al2O3 dan iborat yupqa parda hosil bo'lib, uni muhit ta'siridan himoya qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#6f4e82ba"
+    },
+    {
+      "q": "Alyuminiy sirtidagi oksid parda biror usul bilan yo'qotilsa, nima sodir bo'ladi?",
+      "v": [
+        "Alyuminiy juda tez korroziyalana boshlaydi",
+        "Alyuminiy umuman korroziyalanmaydi",
+        "Alyuminiy suyuqlanadi",
+        "Alyuminiy mustahkamlanadi"
+      ],
+      "t": 0,
+      "izoh": "Oksid parda yo'qotilsa, alyuminiy juda tez korroziyalana boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#17d61f17"
+    },
+    {
+      "q": "Metallarni korroziyadan himoyalash usullari qatorini to'g'ri ko'rsating.",
+      "v": [
+        "Himoya qoplama hosil qilish, ingibirlash, metall xossalarini o'zgartirish, elektrokimyoviy himoyalash, kimyoviy barqaror materiallardan foydalanish",
+        "Faqat bo'yash va laklash",
+        "Faqat qizdirish va sovutish",
+        "Faqat magnitlash va yaltiratish"
+      ],
+      "t": 0,
+      "izoh": "Darslikda himoyalashning besh usuli keltirilgan: himoya qoplama, ingibirlash, xossalarni o'zgartirish, elektrokimyoviy himoya, kimyoviy barqaror materiallar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#17164f96"
+    },
+    {
+      "q": "Fosfatlash deb nimaga aytiladi?",
+      "v": [
+        "Qora va rangli metallar sirtida fosfat qoplamalar olish usuliga",
+        "Metall sirtini bo'yash usuliga",
+        "Metallni nikel bilan qoplash usuliga",
+        "Metallni plastmassa bilan qoplash usuliga"
+      ],
+      "t": 0,
+      "izoh": "Fosfatlash — qora va rangli metallar sirtida fosfat qoplamalar olish usuli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#d5cc033b"
+    },
+    {
+      "q": "Fosfatlash qanday moddalarning eritmalari bilan ta'sirlashishga asoslangan?",
+      "v": [
+        "Fosfat kislota va uning tuzlari eritmalari bilan",
+        "Sulfat kislota eritmasi bilan",
+        "Osh tuzi eritmasi bilan",
+        "Ishqor eritmalari bilan"
+      ],
+      "t": 0,
+      "izoh": "Fosfatlash metallarning fosfat kislota va uning tuzlari eritmalari bilan ta'sirlashib, sirtida suvda erimaydigan fosfat tuzlari qoplamasi hosil qilishga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#3c5f6bf4"
+    },
+    {
+      "q": "Fosfat qoplamalar olish uchun ishlatiladigan moddalar qaysi qatorga kiradi?",
+      "v": [
+        "Anod ingibitorlari qatoriga",
+        "Katod ingibitorlari qatoriga",
+        "Oksidlovchilar qatoriga",
+        "Qaytaruvchilar qatoriga"
+      ],
+      "t": 0,
+      "izoh": "Fosfat qoplamalar olish uchun ishlatiladigan moddalar anod ingibitorlari qatoriga kiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#8efa7b00"
+    },
+    {
+      "q": "Fosfat qoplamalarning qanday xossasi tufayli ulardan elektromashinalar qismlarida foydalaniladi?",
+      "v": [
+        "Elektroizolatsion xossalari yaxshi bo'lganligi sababli",
+        "Elektr o'tkazuvchanligi yuqori bo'lganligi sababli",
+        "Yaltiroqligi sababli",
+        "Og'irligi sababli"
+      ],
+      "t": 0,
+      "izoh": "Fosfat qoplamalarning elektroizolatsion xossalari yaxshi, shuning uchun elektroizolatsion qavat hosil qilishda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#86420954"
+    },
+    {
+      "q": "Fosfat qoplama hosil bo'lishi qanday gaz chiqishi bilan boradi?",
+      "v": [
+        "Vodorod chiqishi bilan",
+        "Kislorod chiqishi bilan",
+        "Karbonat angidrid chiqishi bilan",
+        "Xlor chiqishi bilan"
+      ],
+      "t": 0,
+      "izoh": "Fosfat qoplama hosil bo'lishi vodorod chiqishi bilan boradi: 2H3PO4 + Fe = Fe(H2PO4)2 + H2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#36809304"
+    },
+    {
+      "q": "Temir ustiga rux qoplangan qoplama qanday qoplama deyiladi?",
+      "v": [
+        "Anod qoplama",
+        "Katod qoplama",
+        "Neytral qoplama",
+        "Oksid qoplama"
+      ],
+      "t": 0,
+      "izoh": "Qoplama metall himoya qilinuvchi metalldan faolroq bo'lsa (temir ustiga rux), u anod qoplama deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#9a06b5cc"
+    },
+    {
+      "q": "Anod qoplamada himoya qilinayotgan metall qachongacha buzilmaydi?",
+      "v": [
+        "Qoplangan metallning hammasi sarflanib bo'lmaguncha",
+        "Bir yil o'tguncha",
+        "Qoplama qalinligi yarmigachaguncha",
+        "Hech qachon buzilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Himoya qilinayotgan metall katod bo'ladi va qoplangan metall hammasi sarflanib bo'lmaguncha buzilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#58679bf4"
+    },
+    {
+      "q": "Katod qoplama buzilsa, nima sodir bo'ladi?",
+      "v": [
+        "Himoya qilinuvchi metall juda tez korroziyalanadi",
+        "Himoya qilinuvchi metall himoyalanib qoladi",
+        "Qoplama o'zidan tiklanadi",
+        "Hech narsa o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Katod qoplama buzilsa, himoya qilinuvchi metall juda tez korroziyalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#3af2267e"
+    },
+    {
+      "q": "Ingibitorlar deb qanday moddalarga aytiladi?",
+      "v": [
+        "Korrozion muhitga oz miqdorda qo'shilganda korrozion jarayon tezligini keskin pasaytiruvchi yoki to'xtatuvchi moddalarga",
+        "Korroziyani tezlashtiruvchi moddalarga",
+        "Metallni erituvchi kislotalarga",
+        "Faqat organik bo'yoqlarga"
+      ],
+      "t": 0,
+      "izoh": "Ingibitorlar — korrozion muhitga oz miqdorda (10^-6—10^-3 mol/l) qo'shilganda korroziya tezligini keskin pasaytiruvchi yoki to'xtatuvchi moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#d4d8d06a"
+    },
+    {
+      "q": "Ingibitorlarning himoyalash xususiyati nima bilan bog'liq?",
+      "v": [
+        "Ularning metall sirtiga adsorbsiyalanib, katod va anod jarayonlarni sekinlashtirishi bilan",
+        "Ularning metallni eritishi bilan",
+        "Ularning suvni bug'lantirishi bilan",
+        "Ularning kislotalarni neytrallashi bilan"
+      ],
+      "t": 0,
+      "izoh": "Ingibitorlar metall sirtiga adsorbsiyalanib, katod va anod jarayonlarni sekinlashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#139b3594"
+    },
+    {
+      "q": "Katod himoyasida himoya qilinuvchi inshoot nimagaga ulanadi?",
+      "v": [
+        "Doimiy tok manbasi katodiga",
+        "Doimiy tok manbasi anodiga",
+        "O'zgaruvchan tok manbasiga",
+        "Hech qanday tok manbasiga ulanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Elektrokimyoviy himoyada himoya qilinuvchi inshoot doimiy tok manbasi katodiga ulanadi va o'zi katodga aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#1f6e6689"
+    },
+    {
+      "q": "Protektor himoyada himoya qilinadigan metallga nima biriktiriladi?",
+      "v": [
+        "Undan ko'ra faolroq metall plastinkalar — protektorlar",
+        "Undan passivroq metall plastinkalar",
+        "Plastmassa plastinkalar",
+        "Grafit plastinkalar"
+      ],
+      "t": 0,
+      "izoh": "Protektor himoyada himoya qilinadigan metallga undan faolroq metall plastinkalar — protektorlar biriktiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#4f957fd4"
+    },
+    {
+      "q": "Protektor himoyada hosil bo'lgan galvanik juftda protektor qanday vazifani bajaradi?",
+      "v": [
+        "Anod vazifasini bajarib, asta-sekin yemiriladi",
+        "Katod vazifasini bajaradi",
+        "Elektrolit vazifasini bajaradi",
+        "Izolyator vazifasini bajaradi"
+      ],
+      "t": 0,
+      "izoh": "Protektor — anod, himoya qilinadigan konstruksiya katod; protektor asta-sekin yemiriladi, konstruksiya korroziyalanishi esa deyarli to'xtaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#f6967a37"
+    },
+    {
+      "q": "Metallar ko'pincha qaysi korroziyaga chidamli metallar bilan qoplanadi?",
+      "v": [
+        "Nikel, rux, xrom, aluminiy, oltin, kumush bilan",
+        "Natriy, kaliy, litiy bilan",
+        "Kadmiy, simob, qo'rg'oshin bilan",
+        "Magniy, kalsiy, bariy bilan"
+      ],
+      "t": 0,
+      "izoh": "Ko'pincha metallar korroziyaga chidamli nikel, rux, xrom, aluminiy, oltin, kumush bilan qoplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#dd71e76a"
+    },
+    {
+      "q": "Metall buyumlarni bo'yashdan oldin fosfatlash nimani ta'minlaydi?",
+      "v": [
+        "Bo'yoqlarning po'lat bilan mustahkam birikishini hamda sirtning nuqsonlarida korrozion yemirilishlarning kam bo'lishini",
+        "Bo'yoqning tez qurishini",
+        "Bo'yoqning rangini o'zgartirishini",
+        "Metallning yumshashini"
+      ],
+      "t": 0,
+      "izoh": "Bo'yashdan oldin fosfatlash bo'yoqlarning po'lat bilan mustahkam birikishini va sirt nuqsonlarida korroziyaning kam bo'lishini ta'minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#04ad3984"
+    },
+    {
+      "q": "Korroziya natijasida eng ko'p zararlanadigan obyektlar qaysilar?",
+      "v": [
+        "Avtomobillar, kimyo sanoati uskunalari, asboblar, quvurlar",
+        "Faqat oltin buyumlar",
+        "Faqat plastmassa buyumlar",
+        "Faqat yog'och konstruksiyalar"
+      ],
+      "t": 0,
+      "izoh": "Avtomobillar, kimyo sanoati uskunalari, asboblar, quvurlar korroziyadan eng ko'p zararlanadigan obyektlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m18-metallar-korroziyasi#7045d02b"
+    }
+  ]
+}

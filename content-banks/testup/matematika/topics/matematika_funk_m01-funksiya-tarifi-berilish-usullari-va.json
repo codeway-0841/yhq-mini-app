@@ -1,0 +1,1609 @@
+{
+  "nom": "Funksiya ta'rifi, berilish usullari va grafigi",
+  "bolim": "Funksiyalar",
+  "blok": "funk",
+  "rasmiyBolim": 4,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "f(x) = 3x² − 5x + 4 funksiya formula bilan berilgan. Ushbu funksiyaning x = −2 nuqtadagi qiymatini hisoblang.",
+      "v": [
+        "26",
+        "6",
+        "2",
+        "22"
+      ],
+      "t": 0,
+      "izoh": "x = −2 ni formulaga qo'yamiz: f(−2) = 3·(−2)² − 5·(−2) + 4. Avval (−2)² = 4, demak birinchi had 3·4 = 12 bo'ladi. Ikkinchi had −5·(−2) = +10, chunki ikki minus qo'shishga aylanadi. Natijada 12 + 10 + 4 = 26. Javob: 26.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-qiymat-hisoblash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#e4fa2248"
+    },
+    {
+      "q": "h(x) = (x² + 3x)/(x − 4) funksiya berilgan bo'lsa, uning x = 6 nuqtadagi qiymati qanchaga teng bo'ladi?",
+      "v": [
+        "9",
+        "45",
+        "27",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Kasrning surati va maxraji alohida hisoblanadi. Surat: 6² + 3·6 = 36 + 18 = 54. Maxraj: 6 − 4 = 2. Endi 54 : 2 = 27 bo'ladi. Maxrajdagi ayirishni unutib 54 : 6 = 9 deb yozish tipik xato. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-qiymat-hisoblash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#bfbdd2a2"
+    },
+    {
+      "q": "Ildizli funksiya f(x) = √(2x + 7) − x ko'rinishida berilgan. Uning x = 9 dagi qiymatini toping va to'g'ri variantni belgilang.",
+      "v": [
+        "4",
+        "−4",
+        "14",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "Avval ildiz ostidagi ifoda topiladi: 2·9 + 7 = 25. So'ngra √25 = 5 bo'ladi. Formulada ildizdan argument ayriladi: 5 − 9 = −4. Ayirish tartibini teskari qilib 9 − 5 = 4 deb yozish eng ko'p uchraydigan xato. Javob: −4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-qiymat-hisoblash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#33d34333"
+    },
+    {
+      "q": "p(x) = 2ˣ + 3x funksiyada ko'rsatkichli va chiziqli hadlar birga qatnashadi. p(4) qiymatini hisoblang va natijani ko'rsating.",
+      "v": [
+        "19",
+        "20",
+        "16",
+        "28"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichli hadni 2·x deb tushunmaslik kerak: 2⁴ = 16 bo'ladi. Chiziqli had esa 3·4 = 12 ga teng. Ikkalasini qo'shamiz: 16 + 12 = 28. Ko'rsatkichni ko'paytma deb olsa 8 + 12 = 20 chiqadi. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-qiymat-hisoblash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#8788d3fb"
+    },
+    {
+      "q": "Modul qatnashgan f(x) = |x − 5| + 2x funksiya berilgan. Argument x = −3 bo'lganda funksiyaning qiymati nechaga teng bo'ladi?",
+      "v": [
+        "14",
+        "2",
+        "8",
+        "−14"
+      ],
+      "t": 1,
+      "izoh": "Modul ichini hisoblaymiz: −3 − 5 = −8, demak |−8| = 8 bo'ladi. Ikkinchi had 2·(−3) = −6 ga teng. Endi 8 + (−6) = 2 chiqadi. Modul ichidagi ishorani saqlab qolish yoki ikkinchi hadni musbat deb olish xatoga olib keladi. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-qiymat-hisoblash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#21cfe796"
+    },
+    {
+      "q": "Toshkentda taksi haqi s(x) = 12 000 + 2 500x formulasi bilan hisoblanadi, bunda x — bosib o'tilgan masofa (km). Xurshid 9 km yurgan bo'lsa, u qancha to'laydi?",
+      "v": [
+        "34 500 so'm",
+        "22 500 so'm",
+        "14 500 so'm",
+        "110 500 so'm"
+      ],
+      "t": 0,
+      "izoh": "Masofa argument sifatida qo'yiladi, ya'ni x = 9 bo'ladi. s(9) = 12 000 + 2 500·9 = 12 000 + 22 500 hisoblanadi. Yig'indi 34 500 so'm chiqadi. O'tirish haqini tashlab ketgan o'quvchi 22 500 deb javob beradi. Javob: 34 500 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-qiymat-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#60a4817d"
+    },
+    {
+      "q": "Bochkadagi suv miqdori V(t) = 300 − 18t formula bilan berilgan, bunda t — suv oqizilgan soatlar soni. 7 soatdan keyin bochkada qancha suv qoladi?",
+      "v": [
+        "126 litr",
+        "426 litr",
+        "174 litr",
+        "282 litr"
+      ],
+      "t": 2,
+      "izoh": "Shartga ko'ra t = 7 soat deb olinadi. V(7) = 300 − 18·7 tenglikni hisoblaymiz. Ko'paytma 18·7 = 126 litr, bu oqizib yuborilgan suv. Qolgani esa 300 − 126 = 174 litr bo'ladi. Javob: 174 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-qiymat-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#7175744b"
+    },
+    {
+      "q": "Sotuvchining oylik daromadi M(n) = 1 800 000 + 45 000n formula bilan hisoblanadi, bunda n — sotilgan telefonlar soni. Oy davomida 12 ta telefon sotilsa, daromad qancha bo'ladi?",
+      "v": [
+        "540 000 so'm",
+        "1 845 000 so'm",
+        "21 600 000 so'm",
+        "2 340 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Argument sotilgan telefonlar soni, ya'ni n = 12 bo'ladi. Avval ko'paytmani topamiz: 45 000·12 = 540 000 so'm. So'ngra doimiy qismga qo'shamiz: 1 800 000 + 540 000 = 2 340 000 so'm. Faqat ko'paytmani yozish yoki n = 1 deb olish tipik xatolardir. Javob: 2 340 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-qiymat-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#5b2febce"
+    },
+    {
+      "q": "Tog'da harorat balandlikka bog'liq ravishda T(h) = 22 − 6h formula bo'yicha o'zgaradi, bunda h — balandlik (km). Dengiz sathidan 3 km balandlikda harorat qanday bo'ladi?",
+      "v": [
+        "16°C",
+        "4°C",
+        "40°C",
+        "18°C"
+      ],
+      "t": 1,
+      "izoh": "Balandlik argument bo'lgani uchun h = 3 qo'yiladi. T(3) = 22 − 6·3 = 22 − 18 tenglik hosil bo'ladi. Bundan 4 chiqadi, ya'ni harorat 4°C ga tushadi. Ayirish o'rniga qo'shsa 40 chiqadi, faqat pasayishni yozsa 18 chiqadi. Javob: 4°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-qiymat-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#f8bf0932"
+    },
+    {
+      "q": "f(x) = 5x − 15 funksiya berilgan. Funksiyaning qiymati 40 ga teng bo'ladigan argument qiymatini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "5",
+        "55",
+        "11",
+        "23"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha 5x − 15 = 40 tenglama tuziladi. Ikkala tomonga 15 qo'shamiz: 5x = 55 bo'ladi. Endi ikkala tomonni 5 ga bo'lamiz va x = 11 ni olamiz. Ishorani almashtirib (40 − 15) : 5 = 5 deb yozish yoki bo'lishni unutib 55 deyish tipik xato. Javob: 11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-teskari-argument",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#fd6d2cbd"
+    },
+    {
+      "q": "Kvadratik g(x) = x² − 4x funksiya uchun g(x) = 21 tenglikni qanoatlantiruvchi barcha argument qiymatlarini toping.",
+      "v": [
+        "x = −7 va x = 3",
+        "x = 7 va x = 3",
+        "x = 21 va x = 0",
+        "x = 7 va x = −3"
+      ],
+      "t": 3,
+      "izoh": "Tenglik x² − 4x = 21 ko'rinishda, uni x² − 4x − 21 = 0 ga keltiramiz. Diskriminant D = 16 + 84 = 100, demak √D = 10 bo'ladi. Ildizlar: x = (4 + 10) : 2 = 7 va x = (4 − 10) : 2 = −3. Ishoralarni almashtirib qo'yish eng ko'p uchraydigan xato. Javob: x = 7 va x = −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-teskari-argument",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#8209d9b3"
+    },
+    {
+      "q": "Bir korxonaning foydasi P(x) = 15 000x − 900 000 so'm formula bilan topiladi, bunda x — sotilgan mahsulot soni. Foyda 1 200 000 so'm bo'lishi uchun nechta mahsulot sotilishi kerak?",
+      "v": [
+        "140 ta",
+        "80 ta",
+        "20 ta",
+        "60 ta"
+      ],
+      "t": 0,
+      "izoh": "Shartga ko'ra 15 000x − 900 000 = 1 200 000 tenglama tuziladi. Ikkala tomonga 900 000 qo'shsak, 15 000x = 2 100 000 bo'ladi. Endi 15 000 ga bo'lamiz: x = 140 ta. Doimiy xarajatni hisobga olmaslik 80 ta degan noto'g'ri javobga olib keladi. Javob: 140 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-teskari-argument",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#2f9a1a11"
+    },
+    {
+      "q": "f(x) = √(x + 11) funksiyaning qiymati 6 ga teng bo'lishi uchun argument qanday qiymat qabul qilishi kerak?",
+      "v": [
+        "36",
+        "25",
+        "47",
+        "−5"
+      ],
+      "t": 1,
+      "izoh": "√(x + 11) = 6 tenglikning ikkala tomonini kvadratga oshiramiz. Natijada x + 11 = 36 hosil bo'ladi. Bundan x = 36 − 11 = 25 kelib chiqadi. Kvadratga oshirishni unutgan o'quvchi x = 6 − 11 = −5 deb yozadi, 11 ni qo'shib yuborgan esa 47 deydi. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-teskari-argument",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#914d9d9a"
+    },
+    {
+      "q": "Maktabda besh kun davomida havo harorati o'lchandi: kun raqami x = 1, 2, 3, 4, 5 ga mos ravishda T(x) = 14, 17, 12, 19, 15 (°C) bo'ldi. T(4) qiymatini aniqlang.",
+      "v": [
+        "12°C",
+        "15°C",
+        "19°C",
+        "4°C"
+      ],
+      "t": 2,
+      "izoh": "Jadvalda argument kun raqami, funksiya qiymati esa o'sha kundagi harorat hisoblanadi. x = 4 ustuniga qaraymiz va unga 19 qiymati mos kelishini ko'ramiz. Uchinchi kunning 12 qiymatini olish ustunni adashtirish xatosidir. Argumentning o'zini javob deb yozish ham noto'g'ri. Javob: 19°C.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#93f18b36"
+    },
+    {
+      "q": "Dorixonada hafta kunlari bo'yicha sotilgan niqoblar soni jadvalga yozildi: dushanba 84, seshanba 96, chorshanba 78, payshanba 110, juma 125, shanba 140. Payshanbaga mos funksiya qiymatini ko'rsating.",
+      "v": [
+        "125 ta",
+        "78 ta",
+        "96 ta",
+        "110 ta"
+      ],
+      "t": 3,
+      "izoh": "Bu jadvalda argument son emas, hafta kuni bo'lishi mumkin, funksiya esa unga sotuv sonini mos qo'yadi. Payshanba ustunida 110 soni turibdi. Juma kunining 125 qiymatini olish bir ustunga siljish xatosidir. Javob: 110 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#95882a4e"
+    },
+    {
+      "q": "Sardor olti hafta yugurdi va har haftalik masofani jadvalga yozdi: n = 1, 2, 3, 4, 5, 6 ga mos ravishda d(n) = 12, 15, 14, 18, 21, 19 (km) bo'ldi. d(2) + d(5) yig'indisini hisoblang.",
+      "v": [
+        "36 km",
+        "33 km",
+        "34 km",
+        "7 km"
+      ],
+      "t": 0,
+      "izoh": "Jadvaldan d(2) = 15 km va d(5) = 21 km qiymatlarini o'qiymiz. Ularning yig'indisi 15 + 21 = 36 km bo'ladi. Argumentlarni qo'shib 2 + 5 = 7 deb yozish funksiya qiymatini argument bilan chalkashtirishdir. Javob: 36 km.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#5740c284"
+    },
+    {
+      "q": "Oilaning elektr energiya sarfi oylar bo'yicha jadvalga olindi: oy raqami 1, 2, 3, 4, 5, 6 ga mos ravishda E = 210, 245, 198, 260, 232, 275 (kWt·soat) bo'ldi. E(5) qiymatini toping.",
+      "v": [
+        "260 kWt·soat",
+        "275 kWt·soat",
+        "232 kWt·soat",
+        "198 kWt·soat"
+      ],
+      "t": 2,
+      "izoh": "Argument oy raqami, funksiya qiymati esa o'sha oydagi energiya sarfi. Beshinchi oy ustunida 232 soni turibdi. To'rtinchi oyning 260 qiymatini olish ustunni adashtirish xatosidir. Oxirgi ustundagi 275 esa oltinchi oyga tegishli. Javob: 232 kWt·soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#d13f61ec"
+    },
+    {
+      "q": "Zavod ishchilarining ish staji x (yil) va oylik maoshi M(x) (ming so'm) jadval bilan berilgan: x = 1, 3, 5, 7, 9 ga mos ravishda M = 2 400, 3 100, 3 800, 4 500, 5 200. M(x) = 4 500 bo'ladigan stajni aniqlang.",
+      "v": [
+        "7 yil",
+        "4 yil",
+        "9 yil",
+        "5 yil"
+      ],
+      "t": 0,
+      "izoh": "Bu safar funksiya qiymati berilgan, argument esa izlanmoqda. Jadvalda 4 500 soni qaysi x ustuni ostida turganini qidiramiz. U x = 7 ustunida joylashgan. Qiymatning jadvaldagi tartib raqami 4 ni javob deb olish tipik xatodir. Javob: 7 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-argument-topish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#9feaa52e"
+    },
+    {
+      "q": "Avtobus marshrutida bekatlar bo'yicha bosib o'tilgan masofa jadvali tuzilgan: bekat n = 1, 2, 3, 4, 5, 6 ga mos ravishda s(n) = 0, 3, 7, 12, 18, 25 (km). Avtobus 12 km yurganda qaysi bekatda bo'ladi?",
+      "v": [
+        "6-bekat",
+        "5-bekat",
+        "3-bekat",
+        "4-bekat"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda ham teskari masala qo'yilgan: s(n) = 12 bo'ladigan n izlanadi. Jadvalda 12 qiymati n = 4 ustunida turibdi. Demak avtobus to'rtinchi bekatga yetganda 12 km yurgan bo'ladi. Masofani bekat raqami deb olib oxirgi ustunni tanlash xatodir. Javob: 4-bekat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-argument-topish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#af8e30ed"
+    },
+    {
+      "q": "f funksiya jadval bilan berilgan: x = −2, −1, 0, 1, 2 argumentlarga mos ravishda f(x) = 9, 4, 1, 0, 1 qiymatlar turibdi. f(x) = 4 tenglamaning yechimini toping.",
+      "v": [
+        "x = 4",
+        "x = −1",
+        "x = −2",
+        "x = 2"
+      ],
+      "t": 1,
+      "izoh": "Jadval bo'ylab 4 qiymatini qidiramiz va u faqat bitta joyda uchraydi. Bu qiymat x = −1 ustunida joylashgan. Demak f(x) = 4 tenglamaning yagona yechimi x = −1 bo'ladi. Qiymat 4 ni argument deb olib x = 4 deyish eng ko'p uchraydigan xato. Javob: x = −1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-argument-topish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#93cce662"
+    },
+    {
+      "q": "Sport klubida abonement narxi jadval bilan berilgan: oy soni 1, 2, 3, 6, 12 ga mos ravishda narx N = 350 000, 660 000, 950 000, 1 800 000, 3 300 000 so'm. N = 1 800 000 bo'ladigan oy sonini toping.",
+      "v": [
+        "4 oy",
+        "6 oy",
+        "12 oy",
+        "2 oy"
+      ],
+      "t": 1,
+      "izoh": "Bu masalada funksiya qiymati berilgan, argument esa izlanmoqda. Jadvalda 1 800 000 soni to'rtinchi o'rinda turibdi, lekin unga mos argument 6 oy. Tartib raqami 4 ni javob deb olish eng ko'p uchraydigan chalkashlikdir. Javob: 6 oy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-argument-topish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#39c7b79f"
+    },
+    {
+      "q": "Jadvalda x = 1, 2, 3, 4, 5 argumentlarga mos ravishda f(x) = 5, 8, 11, 14, 17 qiymatlar berilgan. Shu jadvalga mos keladigan formulani tanlang.",
+      "v": [
+        "f(x) = 2x + 3",
+        "f(x) = x + 4",
+        "f(x) = 3x + 2",
+        "f(x) = 5x"
+      ],
+      "t": 2,
+      "izoh": "Argument bir birlikka oshganda qiymat har safar 3 ga ortmoqda, demak x oldidagi koeffitsient 3 ga teng. x = 1 da qiymat 5 bo'lishi uchun 3·1 + 2 = 5 kerak bo'ladi. Demak formula f(x) = 3x + 2. Qolgan formulalar birinchi ustunga mos kelsa ham, keyingi ustunlarda buziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-formula-mos",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#0de4db31"
+    },
+    {
+      "q": "Jadvalda x = 0, 1, 2, 3, 4 argumentlarga mos ravishda f(x) = 1, 2, 5, 10, 17 qiymatlar keltirilgan. Bu jadvalni qaysi formula tavsiflaydi?",
+      "v": [
+        "f(x) = x² + 1",
+        "f(x) = 2x + 1",
+        "f(x) = (x + 1)²",
+        "f(x) = x² − 1"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni qiymatlar orasidagi farqlar 1, 3, 5, 7 bo'lib, ular ham bir tekis o'smoqda. Bu kvadratik bog'lanishning belgisidir. Tekshiramiz: x = 3 da 3² + 1 = 10 va x = 4 da 4² + 1 = 17 to'g'ri chiqadi. Demak f(x) = x² + 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-formula-mos",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#8f3f0baa"
+    },
+    {
+      "q": "Mobil aloqa tarifida suhbat narxi jadvalga yozilgan: daqiqa x = 0, 1, 2, 3, 4 ga mos ravishda to'lov 500, 700, 900, 1 100, 1 300 so'm. Shu jadvalga mos formulani ko'rsating.",
+      "v": [
+        "t(x) = 200 + 500x",
+        "t(x) = 700 + 200x",
+        "t(x) = 500 + 700x",
+        "t(x) = 500 + 200x"
+      ],
+      "t": 3,
+      "izoh": "x = 0 bo'lganda to'lov 500 so'm, demak formulaning ozod hadi 500 ga teng. Har bir qo'shimcha daqiqa to'lovni 200 so'mga oshirmoqda, ya'ni koeffitsient 200. Demak t(x) = 500 + 200x. Ozod had bilan koeffitsientni o'rin almashtirib qo'yish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-formula-mos",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#24f6e74a"
+    },
+    {
+      "q": "Ish unumi jadvali tuzilgan: ishchilar soni x = 1, 2, 3, 4, 6, 12 ga mos ravishda ishni bajarish vaqti f(x) = 24, 12, 8, 6, 4, 2 soat. Bu bog'lanishni qaysi formula ifodalaydi?",
+      "v": [
+        "f(x) = 24 − x",
+        "f(x) = 24/x",
+        "f(x) = x/24",
+        "f(x) = 24x"
+      ],
+      "t": 1,
+      "izoh": "Har bir ustunda argument bilan qiymatning ko'paytmasi 24 ga teng chiqmoqda. Masalan 3·8 = 24 va 6·4 = 24. Bu teskari proporsional bog'lanish belgisi, demak f(x) = 24/x. Ayirma yoki to'g'ri ko'paytma ko'rinishdagi formulalar jadvalga mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-formula-mos",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#191f7665"
+    },
+    {
+      "q": "Chizmada bir do'konning kunlik savdo hajmi grafigi berilgan: x o'qida kun raqami, y o'qida savdo hajmi (mln so'm). Grafikdan f(3) qiymatini aniqlang.",
+      "v": [
+        "7 mln so'm",
+        "4 mln so'm",
+        "6 mln so'm",
+        "3 mln so'm"
+      ],
+      "t": 0,
+      "izoh": "Grafikdan qiymat o'qish uchun x = 3 nuqtadan yuqoriga tik chiziq o'tkazamiz. U grafikni 7 balandlikda kesib o'tadi. Demak f(3) = 7 mln so'm. Qo'shni kunlarning 4 yoki 6 qiymatini olish ustunni siljitish xatosidir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,120 121,147 159,66 197,93 235,39 273,120'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='120' r='3'/%3E%3Ccircle cx='121' cy='147' r='3'/%3E%3Ccircle cx='159' cy='66' r='3'/%3E%3Ccircle cx='197' cy='93' r='3'/%3E%3Ccircle cx='235' cy='39' r='3'/%3E%3Ccircle cx='273' cy='120' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#6f501a57"
+    },
+    {
+      "q": "Grafikda fermer xo'jaligining oylik hosili tasvirlangan: x o'qida oy raqami, y o'qida yig'ilgan hosil (tonna). g(5) qiymatini grafikdan o'qing.",
+      "v": [
+        "5 tonna",
+        "4 tonna",
+        "6 tonna",
+        "8 tonna"
+      ],
+      "t": 3,
+      "izoh": "Avval x = 5 ga mos nuqtani topamiz va undan y o'qi tomonga qaraymiz. Grafikdagi bu nuqta 8 balandlikda joylashgan. Demak g(5) = 8 tonna. Argument 5 ni javob deb yozish yoki qo'shni nuqtaning 4 qiymatini olish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,174 121,201 159,93 197,147 235,39 273,120'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='174' r='3'/%3E%3Ccircle cx='121' cy='201' r='3'/%3E%3Ccircle cx='159' cy='93' r='3'/%3E%3Ccircle cx='197' cy='147' r='3'/%3E%3Ccircle cx='235' cy='39' r='3'/%3E%3Ccircle cx='273' cy='120' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#07dfac22"
+    },
+    {
+      "q": "Suv omborining sathi kunlar davomida pasayib bordi. Chizmada sath (metrda) kunlar bo'yicha berilgan, x o'qi — kun raqami. h(4) qiymati nechaga teng?",
+      "v": [
+        "4 m",
+        "2 m",
+        "3 m",
+        "6 m"
+      ],
+      "t": 2,
+      "izoh": "Grafikda x = 4 ga mos nuqtani topamiz va uning balandligiga qaraymiz. Bu nuqta 3 birlik balandlikda joylashgan. Demak to'rtinchi kuni ombor sathi 3 m bo'lgan. Argument bilan qiymatni chalkashtirib 4 m deb yozish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,66 121,93 159,147 197,174 235,201 273,228'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='66' r='3'/%3E%3Ccircle cx='121' cy='93' r='3'/%3E%3Ccircle cx='159' cy='147' r='3'/%3E%3Ccircle cx='197' cy='174' r='3'/%3E%3Ccircle cx='235' cy='201' r='3'/%3E%3Ccircle cx='273' cy='228' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#00ef98a7"
+    },
+    {
+      "q": "Chizmada maktab futbol jamoasi olti o'yinda urgan gollar soni grafigi berilgan, x o'qida o'yin raqami turibdi. Grafikdan f(2) qiymatini toping.",
+      "v": [
+        "2 gol",
+        "3 gol",
+        "4 gol",
+        "5 gol"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi o'yinga x = 2 argument mos keladi. Grafikda bu nuqta 5 balandlikda joylashgan. Demak jamoa ikkinchi o'yinda 5 gol urgan. Uchinchi o'yinning 3 qiymatini olish yoki argumentni javob deb yozish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,147 121,120 159,174 197,66 235,93 273,147'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='147' r='3'/%3E%3Ccircle cx='121' cy='120' r='3'/%3E%3Ccircle cx='159' cy='174' r='3'/%3E%3Ccircle cx='197' cy='66' r='3'/%3E%3Ccircle cx='235' cy='93' r='3'/%3E%3Ccircle cx='273' cy='147' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#508ca9c2"
+    },
+    {
+      "q": "Chizmada shamol tezligi (m/s) kun davomida bir necha marta o'lchangan, x o'qi — o'lchov raqami. Grafikdan f(5) qiymatini aniqlang.",
+      "v": [
+        "5 m/s",
+        "4 m/s",
+        "1 m/s",
+        "7 m/s"
+      ],
+      "t": 1,
+      "izoh": "Beshinchi o'lchovga x = 5 argument mos keladi. Grafikda bu nuqta 4 balandlikda joylashgani ko'rinib turibdi. Demak f(5) = 4 m/s. Argumentning o'zini javob deb olish yoki oxirgi nuqtaning 7 qiymatini yozish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,201 121,174 159,120 197,228 235,147 273,66'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='201' r='3'/%3E%3Ccircle cx='121' cy='174' r='3'/%3E%3Ccircle cx='159' cy='120' r='3'/%3E%3Ccircle cx='197' cy='228' r='3'/%3E%3Ccircle cx='235' cy='147' r='3'/%3E%3Ccircle cx='273' cy='66' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-qiymat-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#05c8eec4"
+    },
+    {
+      "q": "Chizmada koordinata tekisligida markazi koordinata boshida joylashgan aylana tasvirlangan. Bu chizma biror funksiyaning grafigi bo'la oladimi?",
+      "v": [
+        "Ha, chunki chiziq uzluksiz va uzilishsiz",
+        "Ha, chunki har bir y qiymatga bitta x mos keladi",
+        "Yo'q, chunki ayrim x qiymatlariga ikkita y mos keladi",
+        "Yo'q, chunki chiziq koordinata boshidan o'tmaydi"
+      ],
+      "t": 2,
+      "izoh": "Aylana ichidagi ixtiyoriy abssissadan, masalan x = 0 dan tik chiziq o'tkazsak, u aylanani ikkita nuqtada kesadi. Demak bitta argumentga ikkita y qiymat mos keladi. Funksiya ta'rifi esa bunga yo'l qo'ymaydi. Shuning uchun aylana funksiya grafigi bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='20' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='20' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='12' fill='%23334155'%3E%3Ctext x='287' y='146'%3Ex%3C/text%3E%3Ctext x='157' y='30'%3Ey%3C/text%3E%3Ctext x='137' y='166'%3EO%3C/text%3E%3C/g%3E%3Ccircle cx='150' cy='150' r='90' fill='none' stroke='%235b4bc4' stroke-width='2'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-funksiya-boladimi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#1219abcf"
+    },
+    {
+      "q": "Quyidagi chizmada uchi koordinata boshida bo'lgan va o'ngga qaragan parabola tasvirlangan. Chizmaning funksiya grafigi bo'lishi haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Funksiya grafigi, chunki har bir nuqtaning koordinatalari bor",
+        "Funksiya grafigi, chunki chiziq silliq egri chiziqdan iborat",
+        "Funksiya grafigi emas, chunki grafik faqat o'ng yarim tekislikda yotadi",
+        "Funksiya grafigi emas, chunki bitta x ga ikkita y qiymat to'g'ri keladi"
+      ],
+      "t": 3,
+      "izoh": "O'ngga qaragan parabolada har bir musbat abssissa uchun ikkita nuqta mavjud: biri x o'qidan yuqorida, ikkinchisi pastda. Vertikal to'g'ri chiziq grafikni ikki marta kesib o'tadi. Demak bitta argumentga ikkita qiymat to'g'ri keladi. Shu sababli bu chizma funksiya grafigi bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='20' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='20' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='12' fill='%23334155'%3E%3Ctext x='287' y='146'%3Ex%3C/text%3E%3Ctext x='157' y='30'%3Ey%3C/text%3E%3Ctext x='137' y='166'%3EO%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='240,225 208,210 182,195 164,180 154,165 150,150 154,135 164,120 182,105 208,90 240,75'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-funksiya-boladimi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#3ae40899"
+    },
+    {
+      "q": "Chizmada uchi koordinata boshida joylashgan V shaklidagi siniq chiziq tasvirlangan. Ushbu chizma funksiya grafigi bo'la oladimi? Javobni asosi bilan tanlang.",
+      "v": [
+        "Ha, chunki har bir x qiymatga aynan bitta y qiymat mos keladi",
+        "Yo'q, chunki chiziqda burilish nuqtasi mavjud",
+        "Yo'q, chunki ikkita har xil x ga bitta y mos kelmoqda",
+        "Ha, chunki chiziq butunlay birinchi chorakda yotadi"
+      ],
+      "t": 0,
+      "izoh": "V shaklidagi chiziqda istalgan vertikal to'g'ri chiziq grafikni faqat bitta nuqtada kesadi. Demak har bir argumentga aynan bitta qiymat mos keladi. Burilish nuqtasining mavjudligi funksiya bo'lishga to'sqinlik qilmaydi. Chiziqning chap tarmog'i ikkinchi chorakda yotgani uchun uni birinchi chorak bilan asoslash ham noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='20' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='20' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='12' fill='%23334155'%3E%3Ctext x='287' y='146'%3Ex%3C/text%3E%3Ctext x='157' y='30'%3Ey%3C/text%3E%3Ctext x='137' y='166'%3EO%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='60,60 150,150 240,60'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-funksiya-boladimi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#228dc61a"
+    },
+    {
+      "q": "Chizmada y o'qiga parallel bo'lgan to'g'ri chiziq tasvirlangan. Bu to'g'ri chiziq argumenti x bo'lgan funksiyaning grafigi bo'la oladimi?",
+      "v": [
+        "Ha, bu x = 2 tenglik bilan berilgan funksiyaning grafigi",
+        "Yo'q, chunki bitta x qiymatga cheksiz ko'p y qiymat mos keladi",
+        "Ha, chunki to'g'ri chiziq eng sodda funksiya grafigi hisoblanadi",
+        "Yo'q, chunki chiziq x o'qini kesib o'tmaydi"
+      ],
+      "t": 1,
+      "izoh": "Bu chiziqning barcha nuqtalarida abssissa bir xil, ordinatalar esa turlicha. Ya'ni x = 2 argumentga cheksiz ko'p y qiymat mos kelmoqda. Funksiya ta'rifi bo'yicha har bir argumentga faqat bitta qiymat to'g'ri kelishi shart. Shuning uchun y o'qiga parallel to'g'ri chiziq funksiya grafigi bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='20' y1='150' x2='285' y2='150' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='150' y1='285' x2='150' y2='20' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='12' fill='%23334155'%3E%3Ctext x='287' y='146'%3Ex%3C/text%3E%3Ctext x='157' y='30'%3Ey%3C/text%3E%3Ctext x='137' y='166'%3EO%3C/text%3E%3C/g%3E%3Cline x1='210' y1='40' x2='210' y2='262' stroke='%235b4bc4' stroke-width='2'/%3E%3Ctext x='216' y='170' font-size='12' fill='%23334155'%3Ex = 2%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-funksiya-boladimi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#1e13ee0a"
+    },
+    {
+      "q": "So'z bilan berilgan funksiya har bir natural songa uning eng kichik tub bo'luvchisini mos qo'yadi. Shu qoida bo'yicha f(45) qiymatini toping.",
+      "v": [
+        "5",
+        "15",
+        "3",
+        "9"
+      ],
+      "t": 2,
+      "izoh": "45 sonini tub ko'paytuvchilarga ajratamiz: 45 = 3·3·5. Uning tub bo'luvchilari faqat 3 va 5 dan iborat. Ular ichida eng kichigi 3 bo'ladi. Tub bo'lmagan 9 yoki 15 bo'luvchilarni tanlash ta'rifni buzadi. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sozli-berilish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#f64d3caf"
+    },
+    {
+      "q": "Funksiya har bir ko'p xonali sonni uning raqamlari yig'indisiga o'tkazadi. Shu so'z bilan berilgan funksiya uchun f(2 748) nechaga teng bo'ladi?",
+      "v": [
+        "21",
+        "17",
+        "19",
+        "2 748"
+      ],
+      "t": 0,
+      "izoh": "Sonning raqamlarini ajratamiz: 2, 7, 4 va 8. Endi ularni ketma-ket qo'shamiz: 2 + 7 = 9, keyin 9 + 4 = 13, so'ngra 13 + 8 = 21. Demak f(2 748) = 21. Bironta raqamni tushirib qoldirish 17 yoki 19 kabi xato natijaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sozli-berilish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#d7cb1c5c"
+    },
+    {
+      "q": "So'z bilan berilgan funksiya har bir songa uning kvadratidan 3 ni ayirish natijasini mos qo'yadi. Ushbu funksiyaning formula ko'rinishini tanlang.",
+      "v": [
+        "f(x) = (x − 3)²",
+        "f(x) = x² − 3",
+        "f(x) = 3 − x²",
+        "f(x) = x² + 3"
+      ],
+      "t": 1,
+      "izoh": "Shartda avval son kvadratga oshiriladi, keyin natijadan 3 ayriladi. Amallarning shu tartibi f(x) = x² − 3 ko'rinishida yoziladi. Agar avval 3 ayrilib keyin kvadratlansa, butunlay boshqa funksiya hosil bo'ladi. Ayirish tartibini teskari qilish ham ta'rifga zid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sozli-berilish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#caad625f"
+    },
+    {
+      "q": "Funksiya har bir butun songa uni 5 ga bo'lgandagi qoldiqni mos qo'yadi. Shu qoidaga ko'ra f(97) qiymatini aniqlang.",
+      "v": [
+        "19",
+        "4",
+        "2",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "97 ni 5 ga bo'lamiz: to'liq bo'linma 19 bo'ladi, chunki 19·5 = 95. Qoldiq esa 97 − 95 = 2 ga teng. Demak f(97) = 2. Bo'linma 19 ni yoki bo'luvchining o'zi 5 ni javob deb yozish tipik chalkashlikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sozli-berilish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#37697e1e"
+    },
+    {
+      "q": "Funksiya ta'rifiga ko'ra, y = f(x) yozuvda x va y qanday nomlanadi? To'g'ri juftlikni tanlang.",
+      "v": [
+        "x — funksiya qiymati, y — argument",
+        "x va y ning ikkalasi ham erkli o'zgaruvchi",
+        "x — funksiya, y — uning aniqlanish sohasi",
+        "x — argument, ya'ni erkli o'zgaruvchi, y — funksiya qiymati"
+      ],
+      "t": 3,
+      "izoh": "Bu yozuvda x erkin ravishda tanlanadi, shuning uchun u argument yoki erkli o'zgaruvchi deb ataladi. y esa x ga bog'liq holda hosil bo'ladi va funksiyaning qiymati deyiladi. Ikkalasining o'rnini almashtirish funksiya ta'rifini buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-tarifi-tushuncha",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#56ccc0fa"
+    },
+    {
+      "q": "Ikki to'plam orasidagi moslik funksiya deb atalishi uchun qanday shart bajarilishi kerak? Quyidagi tasdiqlardan to'g'risini tanlang.",
+      "v": [
+        "Har bir argument qiymatiga funksiyaning aynan bitta qiymati mos qo'yiladi",
+        "Har bir funksiya qiymatiga aynan bitta argument mos qo'yiladi",
+        "Argument va funksiya qiymatlari soni bir xil bo'lishi shart",
+        "Har bir argumentga kamida bitta qiymat mos qo'yilsa yetarli"
+      ],
+      "t": 0,
+      "izoh": "Funksiya ta'rifi bo'yicha aniqlanish sohasidagi har bir x ga faqat va faqat bitta y mos keladi. Teskarisi talab qilinmaydi: turli argumentlarga bir xil qiymat mos kelishi mumkin. Kamida bitta degan shart yetarli emas, chunki ikkita qiymat mos kelsa moslik funksiya bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "funksiya-tarifi-tushuncha",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#e828e060"
+    },
+    {
+      "q": "Chizmada f funksiyaning grafigi siniq chiziq ko'rinishida berilgan. f(x) = 7 tenglamaning yechimini grafikdan foydalanib toping.",
+      "v": [
+        "x = 7",
+        "x = 4",
+        "x = 3",
+        "x = 2"
+      ],
+      "t": 2,
+      "izoh": "y = 7 balandlikda gorizontal chiziq o'tkazamiz. U grafik bilan faqat bitta joyda, grafikning eng yuqori nuqtasida kesishadi. Bu nuqtaning abssissasi 3 ga teng. Funksiya qiymati 7 ni argument deb olib x = 7 deyish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,147 121,120 159,66 197,93 235,174 273,228'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='147' r='3'/%3E%3Ccircle cx='121' cy='120' r='3'/%3E%3Ccircle cx='159' cy='66' r='3'/%3E%3Ccircle cx='197' cy='93' r='3'/%3E%3Ccircle cx='235' cy='174' r='3'/%3E%3Ccircle cx='273' cy='228' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tenglama-yechish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#f585901a"
+    },
+    {
+      "q": "Chizmada g funksiyaning grafigi tasvirlangan. g(x) = 2 tenglama qaysi argument qiymatida bajariladi? Yechimni chizmadan aniqlang.",
+      "v": [
+        "x = 2",
+        "x = 4",
+        "x = 5",
+        "x = 3"
+      ],
+      "t": 1,
+      "izoh": "y = 2 gorizontal to'g'ri chiziqni o'tkazamiz va u grafikning eng past nuqtasiga tegadi. Bu yagona kesishish nuqtasi x = 4 da joylashgan. Grafikning qolgan barcha qismlari 2 dan yuqorida yotadi. Qiymatni argument deb olib x = 2 deyish tipik xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,93 121,147 159,174 197,201 235,120 273,66'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='93' r='3'/%3E%3Ccircle cx='121' cy='147' r='3'/%3E%3Ccircle cx='159' cy='174' r='3'/%3E%3Ccircle cx='197' cy='201' r='3'/%3E%3Ccircle cx='235' cy='120' r='3'/%3E%3Ccircle cx='273' cy='66' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tenglama-yechish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#af7daedf"
+    },
+    {
+      "q": "Chizmadagi grafik yordamida f(x) = 4 tenglamaning barcha ildizlarini toping va to'g'ri javobni belgilang.",
+      "v": [
+        "x = 1 va x = 5",
+        "x = 2 va x = 4",
+        "x = 1 va x = 4",
+        "faqat x = 5"
+      ],
+      "t": 0,
+      "izoh": "y = 4 gorizontal chiziq grafikni ikkita nuqtada kesib o'tadi. Chap tarmoqda kesishish x = 1 da, o'ng tarmoqda esa x = 5 da ro'y beradi. Demak tenglamaning ikkita ildizi bor. Faqat bitta ildizni yozib qo'yish yoki eng past nuqtaga yaqin abssissalarni olish xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,147 121,201 159,228 197,201 235,147 273,93'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='147' r='3'/%3E%3Ccircle cx='121' cy='201' r='3'/%3E%3Ccircle cx='159' cy='228' r='3'/%3E%3Ccircle cx='197' cy='201' r='3'/%3E%3Ccircle cx='235' cy='147' r='3'/%3E%3Ccircle cx='273' cy='93' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-tenglama-yechish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#0aeebf0a"
+    },
+    {
+      "q": "Grafikda ekilgan daraxtning bo'yi (metrda) yillar bo'yicha berilgan, x o'qi — yil raqami. Daraxt bo'yi 6 m ga yetgan yilni grafikdan aniqlang.",
+      "v": [
+        "6-yil",
+        "3-yil",
+        "5-yil",
+        "4-yil"
+      ],
+      "t": 3,
+      "izoh": "y = 6 balandlikda gorizontal chiziq o'tkazamiz va uning grafik bilan kesishgan nuqtasini topamiz. Bu nuqta x = 4 ustunida joylashgan. Demak daraxt to'rtinchi yili 6 m bo'yga yetgan. Bo'y qiymati 6 ni yil raqami deb olish eng ko'p uchraydigan xatodir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-opacity='0.18'%3E%3Cline x1='83' y1='36' x2='83' y2='255'/%3E%3Cline x1='121' y1='36' x2='121' y2='255'/%3E%3Cline x1='159' y1='36' x2='159' y2='255'/%3E%3Cline x1='197' y1='36' x2='197' y2='255'/%3E%3Cline x1='235' y1='36' x2='235' y2='255'/%3E%3Cline x1='273' y1='36' x2='273' y2='255'/%3E%3Cline x1='45' y1='228' x2='283' y2='228'/%3E%3Cline x1='45' y1='201' x2='283' y2='201'/%3E%3Cline x1='45' y1='174' x2='283' y2='174'/%3E%3Cline x1='45' y1='147' x2='283' y2='147'/%3E%3Cline x1='45' y1='120' x2='283' y2='120'/%3E%3Cline x1='45' y1='93' x2='283' y2='93'/%3E%3Cline x1='45' y1='66' x2='283' y2='66'/%3E%3Cline x1='45' y1='39' x2='283' y2='39'/%3E%3C/g%3E%3Cline x1='45' y1='255' x2='291' y2='255' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='45' y1='268' x2='45' y2='30' stroke='%23334155' stroke-width='2'/%3E%3Cg font-size='11' fill='%23334155'%3E%3Ctext x='83' y='268' text-anchor='middle'%3E1%3C/text%3E%3Ctext x='121' y='268' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='159' y='268' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='197' y='268' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='235' y='268' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='273' y='268' text-anchor='middle'%3E6%3C/text%3E%3Ctext x='39' y='232' text-anchor='end'%3E1%3C/text%3E%3Ctext x='39' y='205' text-anchor='end'%3E2%3C/text%3E%3Ctext x='39' y='178' text-anchor='end'%3E3%3C/text%3E%3Ctext x='39' y='151' text-anchor='end'%3E4%3C/text%3E%3Ctext x='39' y='124' text-anchor='end'%3E5%3C/text%3E%3Ctext x='39' y='97' text-anchor='end'%3E6%3C/text%3E%3Ctext x='39' y='70' text-anchor='end'%3E7%3C/text%3E%3Ctext x='39' y='43' text-anchor='end'%3E8%3C/text%3E%3Ctext x='38' y='250' text-anchor='end'%3E0%3C/text%3E%3Ctext x='288' y='271'%3Ex%3C/text%3E%3Ctext x='53' y='39'%3Ey%3C/text%3E%3C/g%3E%3Cpolyline fill='none' stroke='%235b4bc4' stroke-width='2' points='83,201 121,174 159,147 197,93 235,66 273,39'/%3E%3Cg fill='%235b4bc4'%3E%3Ccircle cx='83' cy='201' r='3'/%3E%3Ccircle cx='121' cy='174' r='3'/%3E%3Ccircle cx='159' cy='147' r='3'/%3E%3Ccircle cx='197' cy='93' r='3'/%3E%3Ccircle cx='235' cy='66' r='3'/%3E%3Ccircle cx='273' cy='39' r='3'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-tenglama-yechish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#7e091ead"
+    },
+    {
+      "q": "f(x) = 2x² − 5 funksiya formula bilan berilgan. Uni x = −1, 0, 1, 2 argumentlar uchun jadval ko'rinishida yozganda qiymatlar qatori qanday bo'ladi?",
+      "v": [
+        "−3, −5, −3, 3",
+        "−3, −5, −3, −1",
+        "−7, −5, −3, 3",
+        "3, −5, −3, 3"
+      ],
+      "t": 0,
+      "izoh": "Har bir argumentni formulaga qo'yamiz. f(−1) = 2·1 − 5 = −3, chunki (−1)² = 1 bo'ladi. Keyin f(0) = −5 va f(1) = 2 − 5 = −3. Nihoyat f(2) = 2·4 − 5 = 3. Manfiy sonning kvadratini manfiy deb olish −7 kabi xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "usuldan-usulga-otkazish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#5320f4dc"
+    },
+    {
+      "q": "Bir litr benzin 12 500 so'm turadi va haydovchi har xaridda 3 000 so'm xizmat haqi to'laydi. Xarid summasini litr soniga bog'lovchi jadvalda 6 litr uchun qaysi son turadi?",
+      "v": [
+        "75 000 so'm",
+        "78 000 so'm",
+        "93 000 so'm",
+        "15 500 so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval benzin narxini hisoblaymiz: 12 500·6 = 75 000 so'm. Xizmat haqi butun xaridga bir marta qo'shiladi, ya'ni 75 000 + 3 000 = 78 000 so'm. Xizmat haqini har bir litrga qo'shib yuborish 93 000 kabi xato beradi. Javob: 78 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "usuldan-usulga-otkazish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#b4780229"
+    },
+    {
+      "q": "f funksiyaning grafigi A(−2; 3), B(0; −1), C(2; 5) nuqtalardan o'tadi. Shu ma'lumotni jadval ko'rinishida yozganda qaysi qator to'g'ri bo'ladi?",
+      "v": [
+        "x: 3, −1, 5 va f(x): −2, 0, 2",
+        "x: −2, 0, 2 va f(x): −1, 3, 5",
+        "x: −2, 0, 2 va f(x): 3, −1, 5",
+        "x: −2, 0, 2 va f(x): 3, 5, −1"
+      ],
+      "t": 2,
+      "izoh": "Nuqta koordinatalarida birinchi son abssissa, ya'ni argument bo'ladi. Ikkinchi son esa ordinata, ya'ni funksiya qiymati. Demak jadvalning yuqori qatoriga −2, 0, 2 yoziladi, pastki qatoriga esa aynan shu tartibda 3, −1, 5 tushadi. Qiymatlarni o'sish tartibida qayta joylashtirish moslikni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "usuldan-usulga-otkazish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#e81607dd"
+    },
+    {
+      "q": "Kvadratning perimetri uning tomoniga bog'liq funksiya bilan ifodalanadi. Bu bog'lanishni jadvalga o'tkazsak, tomoni 7 sm bo'lgan kvadratga qaysi son mos keladi?",
+      "v": [
+        "49",
+        "14",
+        "21",
+        "28"
+      ],
+      "t": 3,
+      "izoh": "Kvadratning perimetri to'rtta teng tomon yig'indisiga teng, ya'ni P = 4a formula bilan topiladi. Tomon a = 7 sm bo'lgani uchun P = 4·7 = 28 chiqadi. Yuza formulasini ishlatib 49 deb yozish tipik chalkashlik. Ikki yoki uch tomonni qo'shish esa 14 va 21 kabi xatolarga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "usuldan-usulga-otkazish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#ab1a1a6d"
+    },
+    {
+      "q": "f(x) = 3x − 8 funksiyaning grafigi quyidagi nuqtalardan qaysi biridan o'tadi: A(2; −2), B(4; 5), C(1; 5) yoki D(3; 2)?",
+      "v": [
+        "A(2; −2)",
+        "B(4; 5)",
+        "C(1; 5)",
+        "D(3; 2)"
+      ],
+      "t": 0,
+      "izoh": "Har bir nuqtaning abssissasini formulaga qo'yib tekshiramiz. f(2) = 6 − 8 = −2, bu A nuqtaning ordinatasi bilan mos tushadi. f(4) = 12 − 8 = 4, demak B mos emas. f(1) = −5 va f(3) = 1 ham berilgan ordinatalarga teng emas. Javob: A(2; −2).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#d7ab1271"
+    },
+    {
+      "q": "M(−3; 14) nuqta f(x) = x² + 5 funksiyaning grafigiga tegishli bo'ladimi? Javobni asosi bilan birga tanlang.",
+      "v": [
+        "Yo'q, chunki f(−3) = −4 chiqadi",
+        "Ha, chunki f(−3) = 14 ekanligi hisoblab tasdiqlanadi",
+        "Yo'q, chunki manfiy argument bu funksiyaga mos kelmaydi",
+        "Ha, chunki 14 soni funksiya qiymatlari orasida uchraydi"
+      ],
+      "t": 1,
+      "izoh": "Nuqtaning grafikka tegishli bo'lishi uchun uning koordinatalari formulani tenglikka aylantirishi kerak. Argumentni qo'yamiz: f(−3) = (−3)² + 5 = 9 + 5 = 14. Bu son nuqtaning ordinatasi bilan bir xil. Manfiy sonning kvadratini manfiy deb olish −4 kabi xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#9fa5944f"
+    },
+    {
+      "q": "Do'konda t soat davomida sotilgan muzqaymoqlar soni S(t) = 8t + 5 formula bilan beriladi. (6; 53) juftlik shu funksiyaning grafigiga tegishlimi?",
+      "v": [
+        "Yo'q, chunki S(6) = 48 chiqadi",
+        "Yo'q, chunki S(6) = 58 chiqadi",
+        "Ha, chunki 53 va 6 sonlari formulada uchraydi",
+        "Ha, chunki S(6) = 53 tenglik bajariladi"
+      ],
+      "t": 3,
+      "izoh": "Juftlikning birinchi soni argument, ikkinchisi esa funksiya qiymati bo'lishi kerak. S(6) = 8·6 + 5 = 48 + 5 = 53 hisoblanadi. Natija juftlikdagi 53 bilan mos tushdi, demak nuqta grafikda yotadi. Ozod hadni qo'shishni unutish 48 degan xato javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#09cbc199"
+    },
+    {
+      "q": "P(a; 11) nuqta f(x) = 2x + 3 funksiyaning grafigida yotishi ma'lum. Shu shartdan a ning qiymatini toping.",
+      "v": [
+        "8",
+        "25",
+        "4",
+        "5,5"
+      ],
+      "t": 2,
+      "izoh": "Nuqta grafikda yotgani uchun 2a + 3 = 11 tenglik bajariladi. Ikkala tomondan 3 ni ayiramiz: 2a = 8 bo'ladi. Endi 2 ga bo'lamiz va a = 4 ni olamiz. Bo'lishni unutib 8 deb yozish yoki ozod hadni tashlab 5,5 deyish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nuqta-grafikka-tegishli",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#fb3c5620"
+    },
+    {
+      "q": "f funksiyaning grafigi A(0; 5), B(2; 1), C(4; 6), D(6; 2) nuqtalarni ketma-ket tutashtiruvchi siniq chiziqdan iborat. f(x) = 3 tenglama nechta yechimga ega?",
+      "v": [
+        "1 ta",
+        "2 ta",
+        "3 ta",
+        "yechimi yo'q"
+      ],
+      "t": 2,
+      "izoh": "Siniq chiziq uchta kesmadan iborat va y = 3 chizig'i har bir kesmani tekshiriladi. AB kesmada qiymat 5 dan 1 gacha kamayadi, demak yo'lda 3 ni bir marta kesib o'tadi. BC kesmada 1 dan 6 gacha o'sadi va yana bir marta kesadi. CD kesmada 6 dan 2 gacha kamayib uchinchi marta kesadi. Javob: 3 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nechta-yechim",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#e2713982"
+    },
+    {
+      "q": "g funksiyaning grafigi P(−3; 4), Q(0; −2), R(3; 4) nuqtalarni tutashtiruvchi siniq chiziqdan iborat. g(x) = 4 tenglama nechta ildizga ega?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "cheksiz ko'p"
+      ],
+      "t": 0,
+      "izoh": "PQ kesmada qiymat 4 dan −2 gacha kamayadi, ya'ni 4 qiymati faqat chekka nuqtada, x = −3 da qabul qilinadi. QR kesmada qiymat −2 dan 4 gacha o'sadi va 4 ga faqat x = 3 da yetadi. Demak ildizlar ikkita. Uchi bir xil qiymatga ega ekanini sezmaslik xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nechta-yechim",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#91a323df"
+    },
+    {
+      "q": "h funksiyaning grafigi K(0; 2), L(3; 2), M(6; 2) nuqtalar orqali o'tuvchi gorizontal kesmadan iborat. h(x) = 2 tenglamaning yechimlari haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Faqat bitta yechim mavjud",
+        "Uchta yechim mavjud",
+        "Tenglamaning yechimi yo'q",
+        "[0; 6] kesmadagi barcha x lar yechim bo'ladi"
+      ],
+      "t": 3,
+      "izoh": "Grafik butun kesma bo'ylab bir xil balandlikda, ya'ni y = 2 chizig'ining o'zida yotadi. Shuning uchun gorizontal chiziq grafik bilan cheksiz ko'p nuqtada ustma-ust tushadi. Demak [0; 6] oralig'idagi har bir x tenglamani qanoatlantiradi. Faqat berilgan uchta nuqtani sanash tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nechta-yechim",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#b4161425"
+    },
+    {
+      "q": "Kun davomida havo harorati o'lchandi: soat 6 da 12°C, soat 12 da 24°C, soat 18 da 18°C, soat 24 da 10°C bo'ldi va oraliqlarda harorat bir tekis o'zgardi. Harorat 15°C bo'lgan paytlar soni nechta?",
+      "v": [
+        "1 marta",
+        "2 marta",
+        "3 marta",
+        "4 marta"
+      ],
+      "t": 1,
+      "izoh": "Birinchi oraliqda harorat 12 dan 24 gacha ko'tariladi va yo'lda 15 qiymatidan bir marta o'tadi. Ikkinchi oraliqda harorat 24 dan 18 gacha tushadi, ya'ni 15 gacha yetib bormaydi. Uchinchi oraliqda 18 dan 10 gacha pasayib 15 ni yana bir marta kesib o'tadi. Demak jami ikki marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "grafik-nechta-yechim",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#1f5636ae"
+    },
+    {
+      "q": "Taksi xizmati 8 000 so'm o'tirish haqi va har bir kilometr uchun 3 200 so'm oladi. Yo'l haqini masofa x ga bog'lovchi funksiya formulasini tuzing.",
+      "v": [
+        "f(x) = 8 000 + 3 200x",
+        "f(x) = 3 200 + 8 000x",
+        "f(x) = 11 200x",
+        "f(x) = 8 000x + 3 200x"
+      ],
+      "t": 0,
+      "izoh": "O'tirish haqi masofaga bog'liq emas, shuning uchun u doimiy had bo'lib qoladi. Kilometr narxi esa masofaga ko'paytiriladi, ya'ni 3 200x hadini beradi. Ikkalasini qo'shsak f(x) = 8 000 + 3 200x hosil bo'ladi. Sonlarni o'rin almashtirib qo'yish yoki ularni qo'shib yuborish xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tuzish-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#3cc59d82"
+    },
+    {
+      "q": "Do'konda bitta daftar 4 500 so'm turadi, xaridorga esa 3 000 so'mlik doimiy chegirma beriladi. n ta daftar uchun to'lanadigan summani ifodalovchi formulani tanlang.",
+      "v": [
+        "3 000 − 4 500n",
+        "4 500n − 3 000",
+        "4 500n + 3 000",
+        "4 500(n − 3 000)"
+      ],
+      "t": 1,
+      "izoh": "Avval daftarlarning umumiy narxi topiladi, u 4 500n ga teng. Chegirma butun xaridga bir marta qo'llanadi va shu summadan ayriladi. Demak formula 4 500n − 3 000 ko'rinishida bo'ladi; masalan 2 ta daftar uchun 9 000 − 3 000 = 6 000 so'm to'lanadi. Ayirishni teskari yozish yoki chegirmani daftar soniga ko'paytirish masala shartiga zid.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-tuzish-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#9ee397a1"
+    },
+    {
+      "q": "To'g'ri to'rtburchakning eni 6 sm, bo'yi esa x sm ga teng. Uning perimetrini x orqali ifodalovchi funksiyani tanlang.",
+      "v": [
+        "P(x) = 6x",
+        "P(x) = x + 6",
+        "P(x) = 2x + 12",
+        "P(x) = 2x + 6"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri to'rtburchakning perimetri P = 2(a + b) formula bilan topiladi. Bu yerda a = 6 va b = x, demak P = 2(6 + x) bo'ladi. Qavsni ochsak P(x) = 2x + 12 hosil bo'ladi. Yuza formulasini olish 6x ni, ikkiga ko'paytirishni unutish esa x + 6 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "formula-tuzish-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#14b54a6c"
+    },
+    {
+      "q": "Sardorning 45 000 so'm jamg'armasi bor va u har hafta yana 15 000 so'mdan qo'shib boradi. Jamg'armani hafta soni n ga bog'lovchi formulani ko'rsating.",
+      "v": [
+        "S(n) = 15 000 + 45 000n",
+        "S(n) = 60 000n",
+        "S(n) = 45 000n + 15 000n",
+        "S(n) = 45 000 + 15 000n"
+      ],
+      "t": 3,
+      "izoh": "Boshlang'ich 45 000 so'm haftalar soniga bog'liq emas, shuning uchun doimiy had bo'ladi. Har haftalik 15 000 so'm esa hafta soniga ko'paytiriladi. Demak S(n) = 45 000 + 15 000n formulasi hosil bo'ladi. Ikkala sonni qo'shib 60 000n deb yozish shartni buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "formula-tuzish-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#6ae2f43c"
+    },
+    {
+      "q": "Qurilishda 12 ta ishchi butun ishni 30 kunda bajaradi. Ishchilar soni x bo'lganda ishning davomiyligini ifodalovchi funksiyani tanlang.",
+      "v": [
+        "t(x) = 360/x",
+        "t(x) = 30x",
+        "t(x) = 42 − x",
+        "t(x) = x/360"
+      ],
+      "t": 0,
+      "izoh": "Ish hajmi o'zgarmaydi, shuning uchun avval uni topamiz: 12·30 = 360 ishchi-kun. Ishchilar soni x bo'lganda vaqt shu hajmni x ga bo'lish orqali topiladi. Demak t(x) = 360/x teskari proporsional bog'lanish hosil bo'ladi. Ishchilar ko'paysa vaqt kamayishi kerak, ko'paytma ko'rinishdagi formula buni aks ettirmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "formula-tuzish-kontekst",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#28a09fa0"
+    },
+    {
+      "q": "y = f(x) funksiya berilganda f(3) = 10 yozuvi nimani anglatadi? To'g'ri talqinni tanlang.",
+      "v": [
+        "Argument 10 bo'lganda funksiyaning qiymati 3 ga teng",
+        "Argument 3 bo'lganda funksiyaning qiymati 10 ga teng",
+        "Funksiya 3 dan 10 gacha o'zgarib boradi",
+        "Funksiya grafigi 3 va 10 nuqtalardan o'tadi"
+      ],
+      "t": 1,
+      "izoh": "Bu yozuvda qavs ichidagi son argument, tenglikning o'ng tomonidagi son esa funksiya qiymati hisoblanadi. Demak x = 3 bo'lganda y = 10 bo'ladi. Ularning o'rnini almashtirish ta'rifni buzadi. Grafik tilida bu ma'lumot (3; 10) nuqtaga mos keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "funksiya-tarifi-tushuncha",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#37428e90"
+    },
+    {
+      "q": "Ikkita har xil argumentga funksiyaning bir xil qiymati mos kelishi mumkinmi? Javobni asosi bilan tanlang.",
+      "v": [
+        "Yo'q, chunki har bir qiymatga faqat bitta argument mos keladi",
+        "Yo'q, chunki bunda moslik funksiya bo'lmay qoladi",
+        "Ha, mumkin, masalan f(x) = x² da f(−2) va f(2) ning ikkalasi 4 ga teng",
+        "Ha, lekin faqat funksiya doimiy bo'lgan holdagina"
+      ],
+      "t": 2,
+      "izoh": "Funksiya ta'rifi har bir argumentga bitta qiymat mos kelishini talab qiladi, teskarisini emas. Shuning uchun turli argumentlarga bir xil qiymat mos kelishi mumkin. Masalan kvadrat funksiyada f(−2) va f(2) ning ikkalasi ham 4 ga teng. Doimiy funksiya bunga faqat bitta misol, umumiy shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "funksiya-tarifi-tushuncha",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#06541bad"
+    },
+    {
+      "q": "Juftliklar to'plami berilgan: (1; 4), (2; 7), (3; 4), (5; 9). Bu moslik funksiya bo'la oladimi? Javobni asosi bilan tanlang.",
+      "v": [
+        "Yo'q, chunki 4 qiymati ikki marta takrorlangan",
+        "Yo'q, chunki argumentlar ketma-ket joylashmagan",
+        "Ha, chunki juftliklar soni to'rtta",
+        "Ha, chunki har bir birinchi koordinata faqat bir marta uchraydi"
+      ],
+      "t": 3,
+      "izoh": "Juftliklarning birinchi koordinatalari 1, 2, 3 va 5 bo'lib, ular takrorlanmaydi. Demak har bir argumentga aynan bitta qiymat mos keladi. Ikkinchi koordinatalarning takrorlanishi ta'rifga zid emas. Shuning uchun bu moslik funksiyani aniqlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moslik-funksiyami",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#3a289c20"
+    },
+    {
+      "q": "Quyidagi juftliklar berilgan: (2; 5), (4; 8), (2; 9), (6; 3). Ushbu moslik funksiyani aniqlaydimi?",
+      "v": [
+        "Ha, chunki barcha ordinatalar bir biridan farq qiladi",
+        "Yo'q, chunki x = 2 argumentga ikkita har xil qiymat mos kelmoqda",
+        "Ha, chunki juftliklar soni yetarli darajada ko'p",
+        "Yo'q, chunki 6 argumentiga eng kichik qiymat mos kelgan"
+      ],
+      "t": 1,
+      "izoh": "Juftliklar orasida (2; 5) va (2; 9) bor, ya'ni bitta argument ikki xil qiymatga ega bo'lmoqda. Funksiya ta'rifi bunga yo'l qo'ymaydi. Ordinatalarning bir biridan farq qilishi holatni tuzatmaydi. Demak bu moslik funksiyani aniqlamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moslik-funksiyami",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#7d3dccdd"
+    },
+    {
+      "q": "Kutubxonada har bir kitobga uning sahifalar soni mos qo'yildi. Bunday moslik funksiya bo'ladimi va uning argumenti nima?",
+      "v": [
+        "Funksiya, argumenti — kitob, qiymati — sahifalar soni",
+        "Funksiya, argumenti — sahifalar soni, qiymati — kitob",
+        "Funksiya emas, chunki argument albatta son bo'lishi shart",
+        "Funksiya emas, chunki bir xil sahifali kitoblar uchraydi"
+      ],
+      "t": 0,
+      "izoh": "Funksiya ta'rifida argument son bo'lishi shart emas, u ixtiyoriy to'plam elementi bo'lishi mumkin. Har bir kitobga uning sahifalar soni yagona tarzda mos keladi. Demak moslik funksiya bo'ladi va argument kitobning o'zi hisoblanadi. Bir xil sahifali kitoblarning bo'lishi ta'rifni buzmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moslik-funksiyami",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#9385da80"
+    },
+    {
+      "q": "Maktabda har bir sinfga uning matematika o'qituvchisi biriktirilgan, ayrim o'qituvchilar esa bir necha sinfga dars beradi. Bu moslik haqidagi to'g'ri xulosani tanlang.",
+      "v": [
+        "Funksiya emas, chunki bitta o'qituvchi bir necha sinfga to'g'ri keladi",
+        "Funksiya emas, chunki o'qituvchi son bilan ifodalanmaydi",
+        "Funksiya, chunki har bir sinfga aynan bitta o'qituvchi mos keladi",
+        "Funksiya, lekin faqat har bir o'qituvchi bitta sinfga dars bersagina"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda argument sinf, funksiya qiymati esa unga biriktirilgan o'qituvchi hisoblanadi. Har bir sinfga aynan bitta o'qituvchi mos kelgani uchun ta'rif bajariladi. Bitta o'qituvchining bir necha sinfga dars berishi turli argumentlarga bir xil qiymat mos kelishini bildiradi. Bu esa funksiya ta'rifiga zid emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "moslik-funksiyami",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#6dd213d6"
+    },
+    {
+      "q": "f funksiyaning grafigi A(−4; 6), B(−1; 0), C(2; −5), D(5; 0), E(7; 4) nuqtalarni ketma-ket tutashtiruvchi siniq chiziqdan iborat. Funksiyaning nollarini toping.",
+      "v": [
+        "x = 0 va x = 5",
+        "x = −4 va x = 7",
+        "x = −1, x = 2 va x = 5",
+        "x = −1 va x = 5"
+      ],
+      "t": 3,
+      "izoh": "Funksiyaning noli — grafik x o'qini kesib o'tadigan nuqtaning abssissasi. Berilgan nuqtalar ichida ordinatasi nolga teng bo'lganlari B va D hisoblanadi. Ularning abssissalari −1 va 5 ga teng. C nuqtaning ordinatasi manfiy, shuning uchun u nol emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-nol-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#731fe1a0"
+    },
+    {
+      "q": "g funksiyaning grafigi K(0; −3), L(2; 0), M(4; 6) nuqtalar orqali o'tuvchi siniq chiziqdan iborat. Grafik x o'qini qaysi nuqtada kesib o'tadi?",
+      "v": [
+        "(2; 0)",
+        "(0; −3)",
+        "(0; 2)",
+        "(4; 6)"
+      ],
+      "t": 0,
+      "izoh": "Grafik x o'qini ordinatasi nolga teng bo'lgan nuqtada kesadi. Berilgan uchta nuqtadan faqat L(2; 0) shu shartni qanoatlantiradi. Demak kesishish nuqtasi (2; 0) bo'ladi. Koordinatalarni o'rin almashtirib (0; 2) deb yozish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nol-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#c84b872e"
+    },
+    {
+      "q": "Korxonaning oylik foydasi grafik bilan berilgan: yanvarda −4 mln so'm, martda 0, iyunda 9 mln so'm bo'lgan va oraliqlarda bir tekis o'zgargan. Korxona zarar ham, foyda ham ko'rmagan oyni aniqlang.",
+      "v": [
+        "Yanvar",
+        "Mart",
+        "Iyun",
+        "Fevral"
+      ],
+      "t": 1,
+      "izoh": "Zarar ham, foyda ham bo'lmagan payt foyda funksiyasining noliga to'g'ri keladi. Yanvarda qiymat manfiy, iyunda musbat, martda esa aynan nol berilgan. Demak izlangan oy mart bo'ladi. Eng katta foyda ko'rilgan iyunni tanlash savol shartini noto'g'ri o'qishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-nol-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#cf385a0c"
+    },
+    {
+      "q": "f(x) = 2x − 14 funksiyaning grafigi x o'qini qaysi nuqtada kesib o'tadi? To'g'ri javobni belgilang.",
+      "v": [
+        "(0; 7)",
+        "(−7; 0)",
+        "(7; 0)",
+        "(0; −14)"
+      ],
+      "t": 2,
+      "izoh": "Grafik x o'qini kesgan nuqtada ordinata nolga teng, ya'ni 2x − 14 = 0 bo'ladi. Bundan 2x = 14 va x = 7 kelib chiqadi. Demak kesishish nuqtasi (7; 0) bo'ladi. Koordinatalarni almashtirib (0; 7) deb yozish yoki ishorani chalkashtirish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-nol-oqish",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#755f9d91"
+    },
+    {
+      "q": "f funksiyaning grafigi koordinata boshidan o'tadi va argument ortganda qiymat bir tekis kamayadi. Quyidagi jadvallardan qaysi biri shu tavsifga mos keladi?",
+      "v": [
+        "x: 0, 1, 2 va f(x): 0, 3, 6",
+        "x: 0, 1, 2 va f(x): 2, −1, −4",
+        "x: 0, 1, 2 va f(x): −6, −3, 0",
+        "x: 0, 1, 2 va f(x): 0, −3, −6"
+      ],
+      "t": 3,
+      "izoh": "Grafik koordinata boshidan o'tgani uchun x = 0 da qiymat ham 0 bo'lishi shart. Qiymat bir tekis kamayishi kerak, demak keyingi sonlar manfiy va teng qadam bilan tushishi lozim. Faqat 0, −3, −6 qatori ikkala shartni ham qanoatlantiradi. O'suvchi qator yoki noldan boshlanmagan qator mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-grafik-moslik",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#04777d59"
+    },
+    {
+      "q": "Jadvalda x = 1, 2, 3, 4 argumentlarga mos ravishda f(x) = 8, 5, 2, −1 qiymatlar berilgan. Shu funksiyaning grafigi haqidagi to'g'ri fikrni tanlang.",
+      "v": [
+        "Pastga qarab bir tekis tushuvchi to'g'ri chiziq",
+        "Yuqoriga qarab ko'tariluvchi to'g'ri chiziq",
+        "Uchi pastda joylashgan parabola",
+        "x o'qiga parallel gorizontal chiziq"
+      ],
+      "t": 0,
+      "izoh": "Qo'shni qiymatlar orasidagi farq har safar −3 ga teng, ya'ni o'zgarish bir tekis. Bir tekis o'zgarish grafikni to'g'ri chiziq shakliga keltiradi. Farq manfiy bo'lgani uchun chiziq pastga qarab tushadi. Parabola yoki gorizontal chiziq bu jadvalga mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-moslik",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#d2386cfa"
+    },
+    {
+      "q": "Grafik (0; 4) nuqtadan boshlanib (5; 4) nuqtada tugaydi va butun oraliqda bir xil balandlikda yotadi. Shu grafikka mos keladigan jadvalni tanlang.",
+      "v": [
+        "x: 0, 2, 5 va f(x): 0, 2, 5",
+        "x: 0, 2, 5 va f(x): 4, 4, 4",
+        "x: 4, 4, 4 va f(x): 0, 2, 5",
+        "x: 0, 2, 5 va f(x): 4, 6, 4"
+      ],
+      "t": 1,
+      "izoh": "Grafik butun oraliqda bir xil balandlikda yotgani uchun funksiya qiymati o'zgarmaydi. Demak jadvalning pastki qatorida barcha sonlar 4 ga teng bo'lishi kerak. Yuqori qatorda esa tanlangan argumentlar 0, 2 va 5 turadi. Qatorlarni o'rin almashtirish moslikni butunlay buzadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-moslik",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#5eea1752"
+    },
+    {
+      "q": "Do'konda kunlik tushum uch kun davomida o'zgarmadi va har kuni 5 mln so'mni tashkil etdi. Shu bog'lanishning grafigi qanday ko'rinishga ega bo'ladi?",
+      "v": [
+        "Koordinata boshidan o'tuvchi ko'tariluvchi chiziq",
+        "Pastga tushuvchi siniq chiziq",
+        "x o'qiga parallel gorizontal kesma",
+        "y o'qiga parallel vertikal kesma"
+      ],
+      "t": 2,
+      "izoh": "Tushum uch kun davomida o'zgarmagan, ya'ni funksiya doimiy qiymat qabul qilgan. Doimiy funksiyaning grafigi x o'qiga parallel gorizontal chiziqdan iborat bo'ladi. Ko'tariluvchi yoki tushuvchi chiziq qiymatning o'zgarishini bildirar edi. Vertikal kesma esa umuman funksiya grafigi bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jadval-grafik-moslik",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#45693d76"
+    },
+    {
+      "q": "f(x) = 2x + 1 funksiya berilgan. Ichma-ich qo'yilgan f(f(3)) qiymatini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "7",
+        "13",
+        "49",
+        "15"
+      ],
+      "t": 3,
+      "izoh": "Avval ichki qiymatni topamiz: f(3) = 2·3 + 1 = 7 bo'ladi. Endi topilgan 7 ni yana o'sha funksiyaga qo'yamiz: f(7) = 2·7 + 1 = 15. Demak f(f(3)) = 15 ga teng. Ichki natijada to'xtab qolish 7 degan noto'g'ri javobga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-ichma-ich",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#559be0a4"
+    },
+    {
+      "q": "f(x) = x² va g(x) = x − 4 funksiyalar berilgan. Shu funksiyalar uchun f(g(7)) qiymatini toping.",
+      "v": [
+        "9",
+        "45",
+        "3",
+        "53"
+      ],
+      "t": 0,
+      "izoh": "Ichma-ich qo'yishda ichki funksiyadan boshlanadi: g(7) = 7 − 4 = 3. Topilgan qiymatni tashqi funksiyaga qo'yamiz: f(3) = 3² = 9. Demak f(g(7)) = 9 bo'ladi. Tartibni almashtirib avval kvadratlab keyin ayirsak 45 chiqadi, bu boshqa funksiyaning qiymati.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kompozitsiya-ichma-ich",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#0cca77a0"
+    },
+    {
+      "q": "Do'kon mahsulot narxini avval 20 foizga oshirdi, so'ngra yangi narxdan 5 000 so'm chegirma qildi. Boshlang'ich narx 60 000 so'm bo'lsa, xaridor qancha to'laydi?",
+      "v": [
+        "66 000 so'm",
+        "67 000 so'm",
+        "72 000 so'm",
+        "55 000 so'm"
+      ],
+      "t": 1,
+      "izoh": "Avval narx 20 foizga oshadi: 60 000 ning 20 foizi 12 000 so'm, demak yangi narx 72 000 so'm. So'ngra shu narxdan 5 000 so'm ayriladi: 72 000 − 5 000 = 67 000 so'm. Amallar tartibini almashtirib avval chegirma qilinsa 66 000 chiqadi, bu boshqa natija. Javob: 67 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-ichma-ich",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#99b32efb"
+    },
+    {
+      "q": "f(x) = 2x − 3 funksiya berilgan. f(f(x)) = 7 tenglamani yeching va argumentning qiymatini toping.",
+      "v": [
+        "5",
+        "2,5",
+        "4",
+        "16"
+      ],
+      "t": 2,
+      "izoh": "Avval ichma-ich qo'yilgan ifodani soddalashtiramiz: f(f(x)) = 2(2x − 3) − 3 = 4x − 9. Endi 4x − 9 = 7 tenglamani yechamiz: 4x = 16 va x = 4 kelib chiqadi. Faqat bitta qadamni bajarib 2x − 3 = 7 deb yechish 5 degan xato javob beradi. Bo'lishni unutish esa 16 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kompozitsiya-ichma-ich",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#04cf8d3b"
+    },
+    {
+      "q": "Shaharda aholi soni jadval bilan berilgan: yil raqami 1, 3, 5 ga mos ravishda aholi 48 000, 57 000, 69 000 kishini tashkil etdi. f(5) − f(1) ayirmasini hisoblang.",
+      "v": [
+        "12 000 kishi",
+        "9 000 kishi",
+        "4 kishi",
+        "21 000 kishi"
+      ],
+      "t": 3,
+      "izoh": "Jadvaldan f(5) = 69 000 va f(1) = 48 000 qiymatlarni o'qiymiz. Ularning ayirmasi 69 000 − 48 000 = 21 000 kishiga teng. Bu besh yil ichidagi aholi o'sishini bildiradi. Argumentlarni ayirib 4 deb yozish funksiya qiymatini argument bilan chalkashtirishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-ayirmasi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#3c3cd93c"
+    },
+    {
+      "q": "f(x) = x² − 3x funksiya berilgan. f(6) − f(2) ayirmasini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "20",
+        "16",
+        "4",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "Avval har bir qiymatni alohida hisoblaymiz. f(6) = 6² − 3·6 = 36 − 18 = 18 bo'ladi. Keyin f(2) = 4 − 6 = −2 chiqadi. Endi ayirmani topamiz: 18 − (−2) = 20. Manfiy qiymat ayirilganda ishora o'zgarishini unutish 16 degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-ayirmasi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#89002a27"
+    },
+    {
+      "q": "Do'konda mahsulot narxi f(t) = 25 000 + 1 800t formula bilan o'zgaradi, bunda t — oy raqami. Narx to'rtinchi oydan o'ninchi oygacha qanchaga oshgan?",
+      "v": [
+        "18 000 so'm",
+        "10 800 so'm",
+        "25 000 so'm",
+        "7 200 so'm"
+      ],
+      "t": 1,
+      "izoh": "Doimiy had ikkala oyda ham bir xil bo'lgani uchun ayirmada qisqarib ketadi. Faqat o'zgaruvchi qism qoladi, ya'ni 1 800·(10 − 4) hisoblanadi. Oylar farqi 6 ga teng, demak 1 800·6 = 10 800 so'm. Faqat bitta oyning qiymatini olish 18 000 (1 800·10) yoki 7 200 (1 800·4) xatosini beradi, ozod hadning o'zini yozish esa 25 000 ni beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qiymatlar-ayirmasi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#de4bffb9"
+    },
+    {
+      "q": "Jadvalda futbolchining o'yinlar bo'yicha to'plagan gollari berilgan: o'yin 1, 2, 3, 4, 5 ga mos ravishda jami gollar 3, 5, 9, 12, 18 ta. Beshinchi va ikkinchi o'yinlar orasida jami gollar qanchaga ko'paygan?",
+      "v": [
+        "23 ta",
+        "3 ta",
+        "13 ta",
+        "9 ta"
+      ],
+      "t": 2,
+      "izoh": "Jadvaldan beshinchi o'yindagi 18 va ikkinchi o'yindagi 5 qiymatlarni olamiz. O'sishni topish uchun ularni ayiramiz: 18 − 5 = 13 ta. Qiymatlarni qo'shib 23 deb yozish savol shartiga zid. O'yin raqamlarining ayirmasi 3 esa gollar soniga aloqador emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qiymatlar-ayirmasi",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#4d0a5fac"
+    },
+    {
+      "q": "Ikki avtomobilning bosib o'tgan masofasi s₁(t) = 60t va s₂(t) = 45t + 30 (km) funksiyalar bilan berilgan. Ularning grafiklari qaysi vaqtda kesishadi?",
+      "v": [
+        "3 soat",
+        "30 soat",
+        "1 soat",
+        "2 soat"
+      ],
+      "t": 3,
+      "izoh": "Grafiklar kesishgan paytda ikkala masofa teng bo'ladi, ya'ni 60t = 45t + 30 tenglik o'rinli. Ikkala tomondan 45t ni ayiramiz va 15t = 30 hosil bo'ladi. Bundan t = 2 soat kelib chiqadi. Koeffitsientlarni ayirmasdan 30 ni javob deb olish tipik xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kontekst-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#9a7a36d5"
+    },
+    {
+      "q": "Grafikda bolaning og'irligi oylar bo'yicha berilgan: tug'ilganda 3 kg, olti oyligida 7 kg, bir yoshida 10 kg bo'lgan. Qaysi yarim yillikda og'irlik ko'proq ortgan va qanchaga?",
+      "v": [
+        "Birinchi yarim yillikda, 1 kg ga ko'p",
+        "Ikkinchi yarim yillikda, 1 kg ga ko'p",
+        "Birinchi yarim yillikda, 4 kg ga ko'p",
+        "Ikkala yarim yillikda ham bir xil ortgan"
+      ],
+      "t": 0,
+      "izoh": "Birinchi yarim yillikda og'irlik 3 kg dan 7 kg gacha, ya'ni 4 kg ga ortgan. Ikkinchi yarim yillikda esa 7 kg dan 10 kg gacha, ya'ni 3 kg ga ortgan. Demak birinchi davrdagi o'sish 4 − 3 = 1 kg ga ko'proq. Umumiy og'irlikni o'sish miqdori bilan chalkashtirmaslik kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kontekst-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#74513737"
+    },
+    {
+      "q": "Do'konning kunlik tushumi grafigi quyidagicha: dushanba 8, seshanba 5, chorshanba 5, payshanba 11, juma 14 (mln so'm). Tushum o'zgarmay qolgan kunlarni ko'rsating.",
+      "v": [
+        "Dushanba va seshanba",
+        "Seshanba va chorshanba",
+        "Payshanba va juma",
+        "Hech qaysi kunda o'zgarmagan"
+      ],
+      "t": 1,
+      "izoh": "Funksiya qiymati o'zgarmagan kunlarni topish uchun qo'shni sonlarni solishtiramiz. Seshanba va chorshanbada tushum bir xil, ikkalasida ham 5 mln so'm. Grafikda bu qism gorizontal kesma bo'lib ko'rinadi. Qolgan kunlarda qiymat o'zgargan, demak ular shartga mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "grafik-kontekst-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#2f371e46"
+    },
+    {
+      "q": "Idishga suv quyilishi grafik bilan berilgan: dastlabki 3 daqiqada 24 litr, keyingi 5 daqiqada esa yana 20 litr quyilgan. Qaysi bosqichda suv tezroq quyilgan?",
+      "v": [
+        "Ikkinchi bosqichda, daqiqasiga 4 litr",
+        "Birinchi bosqichda, daqiqasiga 24 litr",
+        "Birinchi bosqichda, daqiqasiga 8 litr",
+        "Ikkala bosqichda ham bir xil tezlikda"
+      ],
+      "t": 2,
+      "izoh": "Tezlikni taqqoslash uchun har bir bosqichda bir daqiqaga to'g'ri keladigan miqdorni topamiz. Birinchi bosqichda 24 : 3 = 8 litr, ikkinchisida esa 20 : 5 = 4 litr chiqadi. Demak birinchi bosqichda suv ikki barobar tez quyilgan. Faqat umumiy hajmlarni solishtirish noto'g'ri xulosaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "grafik-kontekst-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#d303a092"
+    },
+    {
+      "q": "Suv uchun tarif bo'lakli qoida bilan berilgan: birinchi 10 m³ ning har biri 2 400 so'm, undan ortig'ining har biri 3 600 so'm. Oyiga 16 m³ suv sarflagan oila qancha to'laydi?",
+      "v": [
+        "57 600 so'm",
+        "38 400 so'm",
+        "24 000 so'm",
+        "45 600 so'm"
+      ],
+      "t": 3,
+      "izoh": "Sarf ikki bo'lakka ajratiladi. Birinchi 10 m³ uchun 10·2 400 = 24 000 so'm to'lanadi. Qolgan 6 m³ uchun esa 6·3 600 = 21 600 so'm hisoblanadi. Jami 24 000 + 21 600 = 45 600 so'm bo'ladi. Butun hajmni yuqori tarif bilan hisoblash 57 600 kabi xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-tarif",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#f38f8ef1"
+    },
+    {
+      "q": "Taksi tarifi bo'lakli funksiya bilan berilgan: 5 km gacha 20 000 so'm belgilangan haq olinadi, undan keyingi har bir kilometr uchun 2 800 so'm qo'shiladi. 12 km yo'l uchun to'lov qancha bo'ladi?",
+      "v": [
+        "39 600 so'm",
+        "53 600 so'm",
+        "33 600 so'm",
+        "20 000 so'm"
+      ],
+      "t": 0,
+      "izoh": "Dastlabki 5 km belgilangan 20 000 so'mga kiradi. Qolgan masofa 12 − 5 = 7 km ni tashkil etadi. Bu qism uchun 7·2 800 = 19 600 so'm to'lanadi. Jami 20 000 + 19 600 = 39 600 so'm. Butun masofani kilometr tarifiga ko'paytirish 12·2 800 = 33 600 so'm xato javobini beradi; belgilangan haqni buning ustiga qo'shib yuborish esa 53 600 so'mga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "bolakli-funksiya-tarif",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#866b7702"
+    },
+    {
+      "q": "Bo'lakli funksiya berilgan: x < 2 bo'lganda f(x) = 3x + 1, x ≥ 2 bo'lganda esa f(x) = x² − 4. Shu funksiyaning f(5) qiymatini toping.",
+      "v": [
+        "16",
+        "21",
+        "29",
+        "25"
+      ],
+      "t": 1,
+      "izoh": "Avval argument qaysi bo'lakka tushishini aniqlaymiz. 5 soni 2 dan katta, demak ikkinchi shart, ya'ni x² − 4 ifodasi ishlatiladi. Hisoblaymiz: 5² − 4 = 25 − 4 = 21. Birinchi bo'lakni tanlab 3·5 + 1 = 16 deb yozish eng ko'p uchraydigan xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "bolakli-funksiya-tarif",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#33387c32"
+    },
+    {
+      "q": "Mobil aloqa tarifida oyiga 500 daqiqagacha suhbat 30 000 so'mga kiradi, undan ortiq har bir daqiqa esa 120 so'm turadi. 640 daqiqa gaplashgan mijoz qancha to'laydi?",
+      "v": [
+        "106 800 so'm",
+        "76 800 so'm",
+        "46 800 so'm",
+        "30 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi 500 daqiqa belgilangan 30 000 so'mga kiradi. Ortiqcha vaqt 640 − 500 = 140 daqiqani tashkil etadi. Bu qism uchun 140·120 = 16 800 so'm to'lanadi. Jami 30 000 + 16 800 = 46 800 so'm bo'ladi. Butun 640 daqiqani daqiqa narxiga ko'paytirish 640·120 = 76 800 so'm xatosini beradi; buning ustiga abonent to'lovini ham qo'shib yuborish 106 800 so'mga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-funksiya-tarif",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#02690839"
+    },
+    {
+      "q": "Bo'lakli funksiya quyidagicha berilgan: x ≤ 0 bo'lganda f(x) = −x, x > 0 bo'lganda esa f(x) = x². Shu funksiya uchun f(−7) + f(3) yig'indisini hisoblang.",
+      "v": [
+        "2",
+        "58",
+        "40",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Har bir argument uchun mos bo'lak alohida tanlanadi. −7 soni noldan kichik, demak f(−7) = −(−7) = 7 bo'ladi. 3 soni noldan katta, shuning uchun f(3) = 3² = 9 chiqadi. Yig'indi 7 + 9 = 16 ga teng. Birinchi bo'lakdagi minus ishorasini e'tibordan chetda qoldirish 2 degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bolakli-funksiya-tarif",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#226fa862"
+    },
+    {
+      "q": "Sinf jurnalida har bir o'quvchining ismi yoniga uning bo'yi (sm) yozib qo'yilgan. Funksiya berilishining qaysi usuli qo'llangan?",
+      "v": [
+        "Jadval usuli",
+        "Analitik, ya'ni formula usuli",
+        "Grafik usuli",
+        "So'z bilan berish usuli"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda har bir o'quvchi nomi yoniga uning bo'yi yozib qo'yilgan. Argument va qiymat juftliklari ro'yxat, ya'ni jadval ko'rinishida keltirilgan. Na formula, na chizma berilgan. Demak funksiya jadval usulida berilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilish-usulini-aniqlash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#516052f6"
+    },
+    {
+      "q": "Kardiogramma qog'ozida yurak signali vaqt bo'yicha uzluksiz chiziq ko'rinishida qayd etilgan. Bu funksiyaning qaysi berilish usuliga misol bo'ladi?",
+      "v": [
+        "Jadval usuli",
+        "Grafik usuli",
+        "Analitik usul",
+        "So'z orqali berish usuli"
+      ],
+      "t": 1,
+      "izoh": "Kardiogrammada vaqt gorizontal, signal esa vertikal yo'nalishda tasvirlanadi. Bog'lanish uzluksiz chiziq ko'rinishida chizib boriladi. Bunday berilish grafik usuli deb ataladi. Formula yoki sonlar jadvali ko'rsatilmagani uchun boshqa usullar mos kelmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilish-usulini-aniqlash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#b873b788"
+    },
+    {
+      "q": "Har bir natural songa uning kvadratidan bir kam son mos qo'yiladi. Bu bog'lanish qaysi usulda berilgan va uning formulasi qanday bo'ladi?",
+      "v": [
+        "So'z bilan, formulasi f(x) = (x − 1)²",
+        "Analitik, formulasi f(x) = x² + 1",
+        "So'z bilan, formulasi f(x) = x² − 1",
+        "Jadval bilan, formulasi f(x) = x² − 1"
+      ],
+      "t": 2,
+      "izoh": "Bog'lanish oddiy gap bilan tushuntirilgan, demak berilish usuli so'z bilan berish hisoblanadi. Endi shu jumlani formulaga o'giramiz: avval kvadrat olinadi, keyin undan bir ayriladi. Bu f(x) = x² − 1 ko'rinishini beradi. Avval ayirib keyin kvadratlash butunlay boshqa funksiyaga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilish-usulini-aniqlash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#c151c4c3"
+    },
+    {
+      "q": "Funksiyani berishning asosiy usullari ma'lum. Quyidagilardan qaysi biri bu usullar qatoriga kirmaydi? To'g'ri javobni belgilang.",
+      "v": [
+        "Formula, ya'ni analitik usulda berish",
+        "Jadval yordamida berish",
+        "Grafik yordamida berish",
+        "Diskriminant orqali berish"
+      ],
+      "t": 3,
+      "izoh": "Funksiyani berishning asosiy usullari formula, jadval, grafik va so'z bilan tavsiflashdan iborat. Diskriminant esa kvadrat tenglama ildizlarini tekshirish vositasi hisoblanadi. U funksiyani berish usuli emas. Demak qatorga kirmaydigan variant diskriminant orqali berishdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "berilish-usulini-aniqlash",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#2522102c"
+    },
+    {
+      "q": "f funksiya shunday xossaga ega: ixtiyoriy x uchun f(x) + f(−x) = 10 tenglik bajariladi. Agar f(4) = 7 bo'lsa, f(−4) nechaga teng?",
+      "v": [
+        "3",
+        "17",
+        "−7",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "Shartdagi tenglikka x = 4 ni qo'yamiz va f(4) + f(−4) = 10 ni olamiz. Ma'lum qiymatni o'rniga qo'yamiz: 7 + f(−4) = 10 bo'ladi. Bundan f(−4) = 10 − 7 = 3 kelib chiqadi. Qo'shish va ayirishni chalkashtirish 17 kabi xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#dbb4fb90"
+    },
+    {
+      "q": "Har bir x uchun f(x + 1) = f(x) + 6 sharti bajariladi va f(2) = 5 ekani ma'lum. Shu ma'lumotlardan foydalanib f(6) qiymatini toping.",
+      "v": [
+        "35",
+        "29",
+        "23",
+        "11"
+      ],
+      "t": 1,
+      "izoh": "Shart har bir qadamda funksiya qiymati 6 ga oshishini bildiradi. f(2) dan f(6) gacha to'rtta qadam bor, ya'ni 3, 4, 5 va 6 argumentlarga o'tiladi. Demak umumiy o'sish 4·6 = 24 ga teng. Boshlang'ich qiymatga qo'shamiz: 5 + 24 = 29. Qadamlar sonini beshta deb sanash 35 degan xato beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#f93076dd"
+    },
+    {
+      "q": "Kutubxonada har oy kitoblar soni oldingi oydagidan 40 taga ko'p bo'lib boradi. Yanvarda 320 ta kitob bo'lgan bo'lsa, may oyida nechta kitob bo'ladi?",
+      "v": [
+        "520 ta",
+        "440 ta",
+        "480 ta",
+        "360 ta"
+      ],
+      "t": 2,
+      "izoh": "Yanvardan may oyigacha to'rtta o'tish bor: fevral, mart, aprel va may. Har bir o'tishda kitoblar soni 40 taga ortadi, demak umumiy o'sish 4·40 = 160 ta. Boshlang'ich songa qo'shamiz: 320 + 160 = 480 ta. O'tishlar sonini beshta deb sanash 520 degan xatoga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#493428d6"
+    },
+    {
+      "q": "f funksiya f(x·y) = f(x) + f(y) tengligini qanoatlantiradi. Agar f(3) = 2 va f(5) = 4 bo'lsa, f(15) qiymati nechaga teng bo'ladi?",
+      "v": [
+        "8",
+        "2",
+        "4",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "Shartdagi tenglikda x = 3 va y = 5 deb olamiz, chunki ularning ko'paytmasi 15 ga teng. U holda f(15) = f(3) + f(5) tenglik hosil bo'ladi. Ma'lum qiymatlarni qo'yamiz: f(15) = 2 + 4 = 6. Qoidada qo'shish turgani uchun qiymatlarni ko'paytirib 8 deb yozish xatodir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "notanish-vaziyat-tahlil",
+      "id": "matematika_funk_m01-funksiya-tarifi-berilish-usullari-va#72e3664b"
+    }
+  ]
+}

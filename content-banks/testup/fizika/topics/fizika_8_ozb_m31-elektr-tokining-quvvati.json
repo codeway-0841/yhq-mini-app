@@ -1,0 +1,531 @@
+{
+  "nom": "31-mavzu. Elektr Tokining Quvvati",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektr tarmog'iga ulangan turli iste'molchilarda bir xil vaqtda tok turlicha ish bajarishining sababi nima?",
+      "v": [
+        "Ularning elektr iste'mol quvvatlari bir-biridan farq qiladi",
+        "Ularning qarshiliklari bir xil",
+        "Ularga qo'yilgan kuchlanish har doim nol",
+        "Ular turli zanjirlarga ulangan"
+      ],
+      "t": 0,
+      "izoh": "Bunga sabab ularning elektr iste'mol quvvatlari bir-biridan farq qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#4f98e1ae"
+    },
+    {
+      "q": "Elektr tokining quvvati qanday aniqlanadi?",
+      "v": [
+        "Tokning bajargan ishini shu ishni bajarishga ketgan vaqtga bo'lish orqali",
+        "Tok kuchini kuchlanishga bo'lish orqali",
+        "Ishni tok kuchiga ko'paytirish orqali",
+        "Kuchlanishni vaqtga bo'lish orqali"
+      ],
+      "t": 0,
+      "izoh": "Quvvatni topish uchun tokning bajargan A ishini shu ishni bajarishga ketgan t vaqtga bo'lish kerak: P = A/t.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#40cf389e"
+    },
+    {
+      "q": "Elektr tokining quvvatining asosiy formulasi qaysi?",
+      "v": [
+        "P = I·U",
+        "P = I/U",
+        "P = U·t",
+        "P = I·t"
+      ],
+      "t": 0,
+      "izoh": "A = IUt ni P = A/t ga qo'ysak, P = IU hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#01f0161d"
+    },
+    {
+      "q": "Elektr iste'molchining quvvati nimaga teng?",
+      "v": [
+        "Undan o'tayotgan tok kuchining unga qo'yilgan kuchlanish ko'paytmasiga",
+        "Tok kuchining vaqtga nisbatiga",
+        "Kuchlanishning qarshilikka nisbatiga",
+        "Tok kuchining kvadratiga"
+      ],
+      "t": 0,
+      "izoh": "Elektr iste'molchining quvvati undan o'tayotgan tok kuchining unga qo'yilgan kuchlanish ko'paytmasiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#9a1c61d6"
+    },
+    {
+      "q": "Elektr toki quvvatining asosiy birligi nima?",
+      "v": [
+        "Vatt (W)",
+        "Joul (J)",
+        "Amper (A)",
+        "Volt (V)"
+      ],
+      "t": 0,
+      "izoh": "Elektr toki quvvatining asosiy birligi ingliz olimi Jeyms Uatt sharafiga vatt (W) qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#3fba454a"
+    },
+    {
+      "q": "Bir vatt nima deb ataladi?",
+      "v": [
+        "Zanjirning kuchlanishi bir volt bo'lgan qismida tok kuchi bir amper bo'lgan tokning quvvati",
+        "Bir sekundda bir joul ish bajaruvchi tokning quvvati emas",
+        "Kuchlanishi bir volt bo'lgan qismdagi tok kuchi",
+        "Bir amper tokning bir soatdagi quvvati"
+      ],
+      "t": 0,
+      "izoh": "Bir vatt deb, zanjirning kuchlanishi bir volt bo'lgan qismida tok kuchi bir amper bo'lgan tokning quvvatiga aytiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#3bc2c2c5"
+    },
+    {
+      "q": "Quvvat birligi vatt kim sharafiga nomlangan?",
+      "v": [
+        "Jeyms Uatt",
+        "Jeyms Joul",
+        "Emiliy Lens",
+        "Andre Amper"
+      ],
+      "t": 0,
+      "izoh": "Elektr toki quvvatining asosiy birligi ingliz olimi Jeyms Uatt sharafiga vatt qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#28e83955"
+    },
+    {
+      "q": "Jeyms Uatt kim edi?",
+      "v": [
+        "Ingliz muhandisi, kashfiyotchisi, mexanik",
+        "Rus fizigi",
+        "Amerikalik ixtirochi",
+        "Fransuz matematiki"
+      ],
+      "t": 0,
+      "izoh": "Jeyms Uatt (1736–1819) — ingliz muhandisi, kashfiyotchi mexanik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#4a7726d6"
+    },
+    {
+      "q": "Jeyms Uatt fan rivojiga qanday hissa qo'shgan?",
+      "v": [
+        "Ot kuchini quvvat birligi sifatida fanga kiritgan va bug' mashinasining ishlash prinsipini takomillashtirgan",
+        "Elektr lampochkani ixtiro qilgan",
+        "Joul-Lens qonunini kashf etgan",
+        "Televizorni yaratgan"
+      ],
+      "t": 0,
+      "izoh": "U birinchi bo'lib ot kuchini quvvat birligi sifatida fanga kiritgan hamda bug' mashinasining ishlash prinsipini takomillashtirish orqali sanoat rivojiga ulkan hissa qo'shgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#f9fabf51"
+    },
+    {
+      "q": "1 gektovatt (hW) necha vattga teng?",
+      "v": [
+        "100 W",
+        "1000 W",
+        "10 W",
+        "1 000 000 W"
+      ],
+      "t": 0,
+      "izoh": "1 hW = 100 W = 10² W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#dfe92780"
+    },
+    {
+      "q": "1 kilovatt (kW) necha vattga teng?",
+      "v": [
+        "1000 W",
+        "100 W",
+        "10 000 W",
+        "1 000 000 W"
+      ],
+      "t": 0,
+      "izoh": "1 kW = 1000 W = 10³ W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#46161d83"
+    },
+    {
+      "q": "1 megavatt (MW) necha vattga teng?",
+      "v": [
+        "1 000 000 W",
+        "1000 W",
+        "100 000 W",
+        "10 000 W"
+      ],
+      "t": 0,
+      "izoh": "1 MW = 1 000 000 W = 10⁶ W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#20b2fd6d"
+    },
+    {
+      "q": "Quvvatning hosilaviy birliklari qaysilar?",
+      "v": [
+        "Gektovatt, kilovatt va megavatt",
+        "Millivatt va mikrovatt",
+        "Vatt-soat va joul",
+        "Amper va volt"
+      ],
+      "t": 0,
+      "izoh": "Amalda quvvatning hosilaviy birliklari — gektovatt (hW), kilovatt (kW) va megavatt (MW) qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#ec669712"
+    },
+    {
+      "q": "Tok quvvatining bir-biriga ekvivalent uchta ifodasi qaysi?",
+      "v": [
+        "P = IU = I²R = U²/R",
+        "P = IU = IR = U/R",
+        "P = IUt = I²R = U²/R",
+        "P = A/t = IU = U²R"
+      ],
+      "t": 0,
+      "izoh": "Om qonunidan foydalanib: P = IU = I²R = U²/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#ff942c58"
+    },
+    {
+      "q": "Xonadonda ko'proq qanday quvvatli lampochkalardan foydalaniladi?",
+      "v": [
+        "Tejamli 5 W, 10 W, 12 W elektr quvvatli lampochkalardan",
+        "Faqat 1000 W lampochkalardan",
+        "Faqat 500 W lampochkalardan",
+        "Faqat 2000 W lampochkalardan"
+      ],
+      "t": 0,
+      "izoh": "Xonadonda ko'proq tejamli 5 W, 10 W, 12 W elektr quvvatli lampochkalardan foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#b99b6896"
+    },
+    {
+      "q": "Lampochkaning quvvati qancha katta bo'lsa, uning yoritishi va energiya sarfi qanday bo'ladi?",
+      "v": [
+        "Shuncha kuchli yoritadi va shuncha ko'p elektr energiyani iste'mol qiladi",
+        "Shuncha pastroq yoritadi",
+        "Energiya sarfi o'zgarmaydi",
+        "Kamroq energiya sarflaydi"
+      ],
+      "t": 0,
+      "izoh": "Lampochkaning quvvati qancha katta bo'lsa, u shuncha kuchli yoritadi va shuncha ko'p elektr energiyani iste'mol qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#bb65f762"
+    },
+    {
+      "q": "3-jadvalga ko'ra uyali telefonning quvvati qancha?",
+      "v": [
+        "0,3–1 W",
+        "50–300 W",
+        "350–600 W",
+        "500–2000 W"
+      ],
+      "t": 0,
+      "izoh": "Uyali telefonning iste'mol quvvati 0,3–1 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#b6fea630"
+    },
+    {
+      "q": "3-jadvalga ko'ra televizorning quvvati qancha oraliqda?",
+      "v": [
+        "50–300 W",
+        "2–10 W",
+        "110–160 W",
+        "60–1000 W"
+      ],
+      "t": 0,
+      "izoh": "Televizorning quvvati 50–300 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#6a36df9e"
+    },
+    {
+      "q": "3-jadvalga ko'ra kir yuvish mashinasining quvvati qancha?",
+      "v": [
+        "350–600 W",
+        "40–200 W",
+        "110–160 W",
+        "0,3–1 W"
+      ],
+      "t": 0,
+      "izoh": "Kir yuvish mashinasining quvvati 350–600 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#271ccbc0"
+    },
+    {
+      "q": "3-jadvalga ko'ra dazmolning quvvati qancha oraliqda?",
+      "v": [
+        "500–2000 W",
+        "50–300 W",
+        "2–10 W",
+        "60–1000 W"
+      ],
+      "t": 0,
+      "izoh": "Dazmolning quvvati 500–2000 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#265f943f"
+    },
+    {
+      "q": "Elektr tokining ishini quvvat orqali ifodalovchi formula qaysi?",
+      "v": [
+        "A = P·t",
+        "A = P/t",
+        "A = P·I",
+        "A = P·U"
+      ],
+      "t": 0,
+      "izoh": "Quvvatga qarab tokning ma'lum vaqt ichida bajargan ishini A = Pt formulaga ko'ra hisoblab topish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#00e788dc"
+    },
+    {
+      "q": "1 J ni vatt orqali qanday ifodalash mumkin?",
+      "v": [
+        "1 J = 1 W·1 s",
+        "1 J = 1 W·1 soat",
+        "1 J = 1 kW·1 s",
+        "1 J = 1 W/1 s"
+      ],
+      "t": 0,
+      "izoh": "Quvvatni vattlarda, vaqtni sekund bilan ifodalasak: 1 J = 1 W·1 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#712ac958"
+    },
+    {
+      "q": "1 vatt·soat (W·h) necha jouliga teng?",
+      "v": [
+        "3600 J",
+        "360 J",
+        "1000 J",
+        "60 J"
+      ],
+      "t": 0,
+      "izoh": "1 W·h = 3600 W·s = 3600 J = 3,6 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#ac75eaba"
+    },
+    {
+      "q": "Nima uchun amalda vatt·sekund o'rniga vatt·soat qo'llaniladi?",
+      "v": [
+        "Vatt·sekund juda kichik birlik bo'lgani uchun",
+        "Vatt·sekund noto'g'ri birlik bo'lgani uchun",
+        "Vatt·soat kichikroq birlik bo'lgani uchun",
+        "Vatt·sekund o'lchanmaydigan birlik bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Vatt·sekund juda kichik birlik bo'lgani uchun amalda uning o'rniga vatt·soat (W·h) qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#637785d9"
+    },
+    {
+      "q": "1 kilovatt·soat (kW·h) necha jouliga teng?",
+      "v": [
+        "3 600 000 J = 3,6 MJ",
+        "3600 J",
+        "360 000 J",
+        "3,6 GJ"
+      ],
+      "t": 0,
+      "izoh": "1 kilovatt·soat = 1000 W·1 h = 3 600 000 J = 3,6 MJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#0ae3d4bd"
+    },
+    {
+      "q": "1 gektovatt·soat necha kilojoulga teng?",
+      "v": [
+        "360 kJ",
+        "3,6 kJ",
+        "36 kJ",
+        "3600 kJ"
+      ],
+      "t": 0,
+      "izoh": "1 gektovatt·soat = 100 W·1 h = 360 000 J = 360 kJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#0596e871"
+    },
+    {
+      "q": "1 megavatt·soat necha jouliga teng?",
+      "v": [
+        "3 600 000 000 J = 3,6 GJ",
+        "3 600 000 J",
+        "360 000 J",
+        "3,6 MJ"
+      ],
+      "t": 0,
+      "izoh": "1 megavatt·soat = 1 000 000 W·1 h = 3 600 000 000 J = 3,6 GJ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#34bdfd66"
+    },
+    {
+      "q": "Sarflangan elektr energiya uchun to'lov odatda qanday amalga oshiriladi?",
+      "v": [
+        "Har oyda",
+        "Har kuni",
+        "Har yilda",
+        "Har soatda"
+      ],
+      "t": 0,
+      "izoh": "Odatda, sarflangan elektr energiya uchun to'lov har oyda amalga oshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#616c2ce1"
+    },
+    {
+      "q": "Elektr energiya hisoblagichining bir oy oldingi ko'rsatishi 312,2 kW·h, bugungi ko'rsatishi 354,6 kW·h bo'lsa, bir oyda sarflangan energiya qancha?",
+      "v": [
+        "42,4 kW·h",
+        "666,8 kW·h",
+        "354,6 kW·h",
+        "312,2 kW·h"
+      ],
+      "t": 0,
+      "izoh": "354,6 kW·h − 312,2 kW·h = 42,4 kW·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#ae664084"
+    },
+    {
+      "q": "Elektr energiya uchun to'lov miqdori qanday aniqlanadi?",
+      "v": [
+        "1 kW·h uchun belgilangan to'lov miqdorini bir oyda sarflangan elektr energiya miqdoriga ko'paytirib",
+        "Hisoblagich ko'rsatishini kuchlanishga ko'paytirib",
+        "Quvvatni tok kuchiga bo'lib",
+        "Vaqtni kuchlanishga ko'paytirib"
+      ],
+      "t": 0,
+      "izoh": "1 kW·h uchun belgilangan to'lov miqdorini bir oyda sarflangan elektr energiya miqdoriga ko'paytirib, elektr energiya uchun to'lov miqdori aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#e067f159"
+    },
+    {
+      "q": "15 W quvvatli elektr lampa har kuni 6 soatdan yonsa, 30 kunda tok qancha ish bajaradi?",
+      "v": [
+        "2,7 kW·h",
+        "2700 kW·h",
+        "90 kW·h",
+        "450 kW·h"
+      ],
+      "t": 0,
+      "izoh": "A = Pt = 15 W·180 h = 2700 W·h = 2,7 kW·h.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#c20bfc8a"
+    },
+    {
+      "q": "60 W quvvatga ega elektr lampa 220 V kuchlanishga mo'ljallangan bo'lsa, lampa tolasining qarshiligi qancha?",
+      "v": [
+        "≈807 Ω",
+        "≈3,7 Ω",
+        "≈220 Ω",
+        "≈60 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = U²/P = 220²/60 ≈ 807 Ω.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#b2e11ff0"
+    },
+    {
+      "q": "P = U²/R formulasidan qarshilikni ifodalovchi ifoda qaysi?",
+      "v": [
+        "R = U²/P",
+        "R = P/U²",
+        "R = U·P",
+        "R = P/U"
+      ],
+      "t": 0,
+      "izoh": "P = U²/R dan R = U²/P.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#53623f05"
+    },
+    {
+      "q": "Kuchlanish o'zgarmas tursa, iste'molchining quvvati uning qarshiligiga qanday bog'liq (P = U²/R)?",
+      "v": [
+        "Qarshilik qancha kichik bo'lsa, quvvat shuncha katta",
+        "Qarshilik qancha katta bo'lsa, quvvat shuncha katta",
+        "Quvvat qarshilikka bog'liq emas",
+        "Qarshilik ikki baravar ortsa, quvvat ham ikki baravar ortadi"
+      ],
+      "t": 0,
+      "izoh": "P = U²/R ga ko'ra kuchlanish o'zgarmas bo'lganda quvvat qarshilikka teskari mutanosib.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#a33ce5e7"
+    },
+    {
+      "q": "3-jadvalga ko'ra sovitgichning quvvati qancha?",
+      "v": [
+        "110–160 W",
+        "350–600 W",
+        "40–200 W",
+        "500–2000 W"
+      ],
+      "t": 0,
+      "izoh": "Sovitgichning quvvati 110–160 W.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m31-elektr-tokining-quvvati#95a80bb6"
+    }
+  ]
+}

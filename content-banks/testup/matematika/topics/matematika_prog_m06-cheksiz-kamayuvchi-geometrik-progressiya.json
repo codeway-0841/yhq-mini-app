@@ -1,0 +1,1609 @@
+{
+  "nom": "Cheksiz kamayuvchi geometrik progressiya",
+  "bolim": "Ketma-ketliklar va progressiyalar",
+  "blok": "prog",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "b₁ = 6 va q = 1/3 bo'lgan cheksiz kamayuvchi geometrik progressiyaning barcha hadlari yig'indisini toping.",
+      "v": [
+        "9",
+        "4,5",
+        "18",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Cheksiz kamayuvchi progressiya yig'indisi S = b₁/(1 − q) formulasi bilan topiladi. Avval maxrajni hisoblaymiz: 1 − 1/3 = 2/3. Endi S = 6 : (2/3) = 6 · 3/2 = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-togridan",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#5193f896"
+    },
+    {
+      "q": "b₁ = 12, q = 0,25 bo'lsa, cheksiz kamayuvchi geometrik progressiyaning yig'indisi nechaga teng?",
+      "v": [
+        "9",
+        "9,6",
+        "48",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "S = b₁/(1 − q) formulasini qo'llaymiz. 1 − 0,25 = 0,75 bo'ladi, demak S = 12 : 0,75 = 16. Bo'luvchini 1 + q deb olish tipik xato. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-togridan",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#2feca7fc"
+    },
+    {
+      "q": "b₁ = 5 va q = −1/2 bo'lgan progressiyaning cheksiz yig'indisini hisoblang va to'g'ri javobni belgilang.",
+      "v": [
+        "10",
+        "10/3",
+        "7,5",
+        "−10"
+      ],
+      "t": 1,
+      "izoh": "Mahraj manfiy bo'lgani uchun 1 − q = 1 − (−1/2) = 3/2 bo'ladi. Demak S = 5 : (3/2) = 10/3. Ayirishda ikki minus qo'shishga aylanishini unutmaslik kerak. Javob: 10/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-togridan",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#788257e2"
+    },
+    {
+      "q": "Farg'onadagi qandolat sexi birinchi haftada 24 kg holva tayyorladi, har keyingi haftada esa avvalgi haftadagining 0,2 qismini tayyorlaydi. Sex shu tartibda cheksiz uzoq ishlaganda jami qancha holva chiqadi?",
+      "v": [
+        "19,2 kg",
+        "20 kg",
+        "30 kg",
+        "120 kg"
+      ],
+      "t": 2,
+      "izoh": "Haftalik mahsulot b₁ = 24 va q = 0,2 bo'lgan cheksiz kamayuvchi progressiyani hosil qiladi. S = 24 : (1 − 0,2) = 24 : 0,8 = 30. Javob: 30 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-togridan",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#37145a0a"
+    },
+    {
+      "q": "Geometrik progressiyaning birinchi hadi 63 ga, mahraji esa 2/3 ga teng. Shu progressiyaning barcha hadlari yig'indisini toping.",
+      "v": [
+        "189",
+        "37,8",
+        "94,5",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "1 − q = 1 − 2/3 = 1/3 bo'ladi. Bundan S = 63 : (1/3) = 63 · 3 = 189. Javob: 189.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-togridan",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#7c0ff15e"
+    },
+    {
+      "q": "Cheksiz kamayuvchi geometrik progressiyaning birinchi hadi 8 ga, barcha hadlari yig'indisi esa 32 ga teng. Progressiyaning mahrajini toping.",
+      "v": [
+        "1/4",
+        "3/4",
+        "4",
+        "−3/4"
+      ],
+      "t": 1,
+      "izoh": "S = b₁/(1 − q) tenglikdan 1 − q = b₁/S = 8/32 = 1/4 kelib chiqadi. Demak q = 1 − 1/4 = 3/4. Bu yerda 1/4 ni javob deb olish tipik xato. Javob: 3/4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mahraj-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#a21e97c4"
+    },
+    {
+      "q": "Birinchi hadi 18 ga teng cheksiz kamayuvchi progressiyaning yig'indisi 27 ni tashkil qiladi. Uning mahraji nechaga teng?",
+      "v": [
+        "2/3",
+        "3/2",
+        "−1/3",
+        "1/3"
+      ],
+      "t": 3,
+      "izoh": "1 − q = b₁/S = 18/27 = 2/3 bo'ladi. Bundan q = 1 − 2/3 = 1/3. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mahraj-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#df72a9c9"
+    },
+    {
+      "q": "Namangandagi bosmaxona birinchi kuni 100 kg qog'oz sarfladi va har kuni sarf oldingi kunga nisbatan bir xil marta kamaydi. Cheksiz uzoq davrda jami sarf 250 kg ga yaqinlashsa, kamayish mahraji nechaga teng?",
+      "v": [
+        "0,4",
+        "0,6",
+        "2,5",
+        "0,25"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda b₁ = 100, S = 250. S = b₁/(1 − q) formulasidan 1 − q = b₁/S = 100/250 = 0,4 kelib chiqadi. Demak q = 1 − 0,4 = 0,6, ya'ni har kuni sarflangan qog'oz oldingi kunning 0,6 qismini tashkil qiladi. Javob: 0,6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mahraj-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#d26ed107"
+    },
+    {
+      "q": "Cheksiz kamayuvchi geometrik progressiyaning yig'indisi uning birinchi hadidan 5 marta katta. Shu progressiyaning mahrajini aniqlang.",
+      "v": [
+        "4/5",
+        "1/5",
+        "5",
+        "−4/5"
+      ],
+      "t": 0,
+      "izoh": "S = 5b₁ shartini S = b₁/(1 − q) formulaga qo'yamiz: b₁/(1 − q) = 5b₁. Ikki tomonni b₁ ga qisqartirsak 1 − q = 1/5, ya'ni q = 4/5. Javob: 4/5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mahraj-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#098d5666"
+    },
+    {
+      "q": "Mahraji 1/4 ga teng cheksiz kamayuvchi geometrik progressiyaning yig'indisi 20 ga teng bo'lsa, uning birinchi hadi nechaga teng?",
+      "v": [
+        "5",
+        "15",
+        "25",
+        "80"
+      ],
+      "t": 1,
+      "izoh": "S = b₁/(1 − q) formulasidan b₁ = S · (1 − q) kelib chiqadi. Demak b₁ = 20 · (1 − 1/4) = 20 · 3/4 = 15. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#6041fbef"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning mahraji 0,3 ga, barcha hadlari yig'indisi esa 70 ga teng. Birinchi hadni toping.",
+      "v": [
+        "21",
+        "91",
+        "49",
+        "100"
+      ],
+      "t": 2,
+      "izoh": "b₁ = S · (1 − q) formulasini qo'llaymiz: b₁ = 70 · (1 − 0,3) = 70 · 0,7 = 49. Yig'indini mahrajga ko'paytirish yoki bo'lish tipik xatolardir. Javob: 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#fba515b2"
+    },
+    {
+      "q": "Mahraji −1/3 bo'lgan cheksiz geometrik progressiyaning yig'indisi 9 ga teng. Uning birinchi hadi qanday son?",
+      "v": [
+        "6",
+        "12",
+        "6,75",
+        "−12"
+      ],
+      "t": 1,
+      "izoh": "b₁ = S · (1 − q) = 9 · (1 − (−1/3)) = 9 · 4/3 = 12. Mahraj manfiy bo'lganda 1 − q birdan katta chiqadi, shuning uchun birinchi had yig'indidan katta. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#8d601121"
+    },
+    {
+      "q": "Samarqanddagi tajribada mexanik aravacha har bosqichda oldingi masofaning 5/8 qismini bosib o'tadi va to'xtaguncha jami 96 m yo'l yuradi. Aravacha birinchi bosqichda qancha masofa bosgan?",
+      "v": [
+        "36 m",
+        "60 m",
+        "156 m",
+        "256 m"
+      ],
+      "t": 0,
+      "izoh": "Bosqichdagi masofalar cheksiz kamayuvchi progressiyani hosil qiladi. b₁ = S · (1 − q) = 96 · (1 − 5/8) = 96 · 3/8 = 36. Javob: 36 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birinchi-had-topish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#ae568396"
+    },
+    {
+      "q": "Quyidagi geometrik progressiyalardan qaysi birining cheksiz yig'indisi mavjud bo'ladi?",
+      "v": [
+        "b₁ = 3 va q = 5/4",
+        "b₁ = 3 va q = −2/3",
+        "b₁ = 3 va q = 1",
+        "b₁ = 3 va q = −1"
+      ],
+      "t": 1,
+      "izoh": "Cheksiz yig'indi faqat |q| < 1 shart bajarilganda mavjud bo'ladi. 5/4 birdan katta, |−1| va 1 esa aynan birga teng, shuning uchun ular yaramaydi. Faqat |−2/3| < 1 bo'lgani uchun ikkinchi progressiyaning yig'indisi bor. Javob: q = −2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaqinlashish-sharti",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#45c2edb9"
+    },
+    {
+      "q": "1 + x + x² + x³ + … cheksiz yig'indi x ning qanday qiymatlarida mavjud bo'ladi?",
+      "v": [
+        "−1 < x < 1",
+        "x < 1",
+        "0 < x < 1",
+        "x > 1"
+      ],
+      "t": 0,
+      "izoh": "Bu qatorning mahraji q = x ga teng. Cheksiz kamayuvchi progressiya bo'lishi uchun |q| < 1, ya'ni |x| < 1 sharti kerak. Bu esa −1 < x < 1 oralig'ini beradi, chunki manfiy qiymatlar ham mumkin. Javob: −1 < x < 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaqinlashish-sharti",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#378f960b"
+    },
+    {
+      "q": "24; 18; 13,5; … geometrik progressiyaning barcha hadlari yig'indisini hisoblang.",
+      "v": [
+        "55,5",
+        "72",
+        "96",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "Avval mahrajni topamiz: q = 18 : 24 = 0,75. |q| < 1 bo'lgani uchun cheksiz yig'indi mavjud. S = 24 : (1 − 0,75) = 24 : 0,25 = 96. Javob: 96.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yaqinlashish-sharti",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#0feeb308"
+    },
+    {
+      "q": "b₁ = 7 va q = 2x bo'lgan geometrik progressiya cheksiz kamayuvchi bo'lishi uchun x qanday oraliqda yotishi kerak?",
+      "v": [
+        "−0,5 < x < 0,5, x ≠ 0",
+        "−1 < x < 1",
+        "−0,5 < x < 0,5",
+        "−2 < x < 2"
+      ],
+      "t": 0,
+      "izoh": "Shart |q| < 1, ya'ni |2x| < 1 ko'rinishida yoziladi. Tengsizlikning ikki tomonini 2 ga bo'lsak |x| < 0,5 kelib chiqadi. Bundan tashqari geometrik progressiyada mahraj nolga teng bo'la olmaydi: x = 0 da q = 0 bo'lib, ketma-ketlik 7; 0; 0; … ko'rinishga o'tadi va progressiya hosil bo'lmaydi. Shuning uchun x ≠ 0 sharti ham qo'shiladi. Javob: −0,5 < x < 0,5, x ≠ 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yaqinlashish-sharti",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#2395bcac"
+    },
+    {
+      "q": "Sardor koptokni 12 m balandlikdan tashladi. Koptok har safar tushgan balandligining 1/3 qismiga ko'tariladi. Koptok to'xtaguncha bosib o'tgan yo'lning umumiy uzunligini toping.",
+      "v": [
+        "12 m",
+        "18 m",
+        "24 m",
+        "36 m"
+      ],
+      "t": 2,
+      "izoh": "Sakrash balandliklari 4; 4/3; … progressiyani hosil qiladi, ularning yig'indisi 4 : (1 − 1/3) = 6 m. Har sakrashda bu masofa ikki marta bosiladi, ustiga birinchi tushish 12 m qo'shiladi. Jami 12 + 2 · 6 = 24 m. Javob: 24 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrash-yol",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#e34e3797"
+    },
+    {
+      "q": "Gimnastika zalida to'p 9 m balandlikdan tushirildi va har gal oldingi balandlikning 2/3 qismiga sakraydi. To'p tinchiguncha jami qancha masofani bosib o'tadi?",
+      "v": [
+        "45 m",
+        "27 m",
+        "36 m",
+        "54 m"
+      ],
+      "t": 0,
+      "izoh": "Sakrash balandliklari 6; 4; 8/3; … progressiyani beradi, uning yig'indisi 6 : (1 − 2/3) = 18 m. Ko'tarilish va tushish ikki marta hisoblanadi: 2 · 18 = 36 m. Birinchi tushish 9 m ni qo'shsak, jami 45 m chiqadi. Javob: 45 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrash-yol",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#460656ab"
+    },
+    {
+      "q": "Rezina koptok 5 m balandlikdan tashlanganda to'xtaguncha jami 25 m yo'l bosdi. Har sakrashdagi balandliklar nisbati nechaga teng?",
+      "v": [
+        "1/2",
+        "2/3",
+        "3/4",
+        "1/3"
+      ],
+      "t": 1,
+      "izoh": "Sakrash balandliklari yig'indisi h = 5q : (1 − q) ga teng. Umumiy yo'l 5 + 2h = 25 bo'lgani uchun h = 10 m. 5q : (1 − q) = 10 tenglamadan 5q = 10 − 10q, ya'ni 15q = 10 va q = 2/3. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koptok-sakrash-mahraj",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#c0e73757"
+    },
+    {
+      "q": "0,(7) davriy o'nli kasrni cheksiz kamayuvchi progressiya yig'indisi sifatida qarab, oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "7/9",
+        "7/10",
+        "7/11",
+        "7/99"
+      ],
+      "t": 0,
+      "izoh": "0,(7) = 0,7 + 0,07 + 0,007 + … bu yerda b₁ = 0,7 va q = 0,1. S = 0,7 : (1 − 0,1) = 0,7 : 0,9 = 7/9. Javob: 7/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-sof",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9e797c27"
+    },
+    {
+      "q": "0,(24) davriy o'nli kasrga teng bo'lgan qisqarmas oddiy kasrni toping.",
+      "v": [
+        "6/25",
+        "8/99",
+        "8/33",
+        "4/15"
+      ],
+      "t": 2,
+      "izoh": "0,(24) = 0,24 + 0,0024 + … progressiyada b₁ = 0,24 va q = 0,01. S = 0,24 : 0,99 = 24/99. Surat va maxrajni 3 ga qisqartirsak 8/33 hosil bo'ladi. Javob: 8/33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-sof",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b910ccdc"
+    },
+    {
+      "q": "0,(45) davriy kasrni oddiy kasrga aylantirganda qaysi natija hosil bo'ladi?",
+      "v": [
+        "9/20",
+        "5/11",
+        "5/99",
+        "45/90"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda b₁ = 0,45 va q = 0,01 bo'ladi. S = 0,45 : 0,99 = 45/99. Surat va maxrajni 9 ga qisqartirib 5/11 ni olamiz. Javob: 5/11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-sof",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#e8521a0e"
+    },
+    {
+      "q": "Kimyo laboratoriyasida eritmadagi tuz ulushi 0,(3) deb qayd etildi. Shu davriy kasrni oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "1/3",
+        "3/10",
+        "3/11",
+        "1/30"
+      ],
+      "t": 0,
+      "izoh": "0,(3) = 0,3 + 0,03 + 0,003 + … cheksiz kamayuvchi progressiya bo'lib, b₁ = 0,3 va q = 0,1. S = 0,3 : 0,9 = 3/9 = 1/3. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-sof",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#0c91e0c7"
+    },
+    {
+      "q": "Uch xonali davrga ega 0,(135) kasrni qisqarmas oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "27/200",
+        "5/333",
+        "5/37",
+        "135/99"
+      ],
+      "t": 2,
+      "izoh": "Progressiyada b₁ = 0,135 va q = 0,001 bo'ladi, chunki davr uch xonali. S = 0,135 : 0,999 = 135/999. 999 = 27 · 37 va 135 = 27 · 5 bo'lgani uchun kasr 5/37 ga qisqaradi. Javob: 5/37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-sof",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9d5cd597"
+    },
+    {
+      "q": "0,2(3) aralash davriy kasrni cheksiz progressiya yordamida oddiy kasrga aylantiring.",
+      "v": [
+        "23/90",
+        "7/30",
+        "23/99",
+        "7/33"
+      ],
+      "t": 1,
+      "izoh": "Kasrni 0,2 + (0,03 + 0,003 + …) ko'rinishida yozamiz. Qavs ichidagi progressiyada b₁ = 0,03 va q = 0,1, uning yig'indisi 0,03 : 0,9 = 1/30. Demak natija 1/5 + 1/30 = 6/30 + 1/30 = 7/30. Javob: 7/30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-aralash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#f3554cb3"
+    },
+    {
+      "q": "0,1(6) aralash davriy kasr qaysi qisqarmas oddiy kasrga teng bo'ladi?",
+      "v": [
+        "8/45",
+        "16/99",
+        "1/60",
+        "1/6"
+      ],
+      "t": 3,
+      "izoh": "0,1(6) = 0,1 + (0,06 + 0,006 + …). Qavsdagi progressiyaning yig'indisi 0,06 : 0,9 = 1/15. Demak 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6. Javob: 1/6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-aralash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#bee7913d"
+    },
+    {
+      "q": "0,4(27) aralash davriy kasrni oddiy kasr ko'rinishiga keltiring va qisqartiring.",
+      "v": [
+        "47/110",
+        "427/990",
+        "423/999",
+        "47/100"
+      ],
+      "t": 0,
+      "izoh": "0,4(27) = 0,4 + (0,027 + 0,00027 + …). Qavsdagi progressiyada b₁ = 0,027 va q = 0,01, yig'indisi 0,027 : 0,99 = 27/990 = 3/110. Demak 44/110 + 3/110 = 47/110. Javob: 47/110.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasr-aralash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#1b70ab70"
+    },
+    {
+      "q": "0,58(3) aralash davriy kasrga teng bo'lgan qisqarmas oddiy kasrni aniqlang.",
+      "v": [
+        "583/990",
+        "525/999",
+        "7/120",
+        "7/12"
+      ],
+      "t": 3,
+      "izoh": "0,58(3) = 0,58 + (0,003 + 0,0003 + …). Qavsdagi yig'indi 0,003 : 0,9 = 1/300. Demak 58/100 + 1/300 = 174/300 + 1/300 = 175/300 = 7/12. Javob: 7/12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasr-aralash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9586e237"
+    },
+    {
+      "q": "Poyezdning harakat vaqti 2,(3) soat deb qayd etilgan. Shu vaqtni noto'g'ri oddiy kasr ko'rinishida ifodalang.",
+      "v": [
+        "23/9",
+        "23/10",
+        "7/3",
+        "7/9"
+      ],
+      "t": 2,
+      "izoh": "Butun qismni ajratamiz: 2,(3) = 2 + 0,(3). Davriy qism 0,3 : 0,9 = 1/3 ga teng. Demak 2 + 1/3 = 6/3 + 1/3 = 7/3 soat. Butun qismni davr bilan qo'shib yuborish tipik xato. Javob: 7/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-butun-qismli",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9a29b63c"
+    },
+    {
+      "q": "3,(18) davriy o'nli kasrni oddiy kasr ko'rinishida yozing va qisqarmas holga keltiring.",
+      "v": [
+        "35/11",
+        "106/33",
+        "35/99",
+        "159/50"
+      ],
+      "t": 0,
+      "izoh": "3,(18) = 3 + 0,(18) ko'rinishida ajratamiz. Davriy qismda b₁ = 0,18 va q = 0,01, yig'indisi 18/99 = 2/11. Demak 3 + 2/11 = 33/11 + 2/11 = 35/11. Javob: 35/11.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-butun-qismli",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#5fab606d"
+    },
+    {
+      "q": "0,(9) davriy kasrni cheksiz progressiya yig'indisi sifatida hisoblaganda qanday son hosil bo'ladi?",
+      "v": [
+        "9/10",
+        "1",
+        "0,99",
+        "9/11"
+      ],
+      "t": 1,
+      "izoh": "b₁ = 0,9 va q = 0,1 bo'lgan progressiya hosil bo'ladi. S = 0,9 : (1 − 0,1) = 0,9 : 0,9 = 1. Ya'ni 0,(9) aynan birga teng, u birdan kichik emas. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "davriy-kasr-maxsus",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#6175660e"
+    },
+    {
+      "q": "0,(4) va 0,(7) davriy kasrlarning yig'indisini oddiy kasr ko'rinishida toping.",
+      "v": [
+        "11/18",
+        "1,1",
+        "11/99",
+        "11/9"
+      ],
+      "t": 3,
+      "izoh": "0,(4) = 4/9 va 0,(7) = 7/9 ekanini progressiya yig'indisidan topamiz. Ularni qo'shamiz: 4/9 + 7/9 = 11/9. Maxrajlarni ham qo'shib yuborish tipik xato. Javob: 11/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-amal",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b307a64a"
+    },
+    {
+      "q": "0,(8) va 0,(2) davriy kasrlarning ayirmasi qanday qiymatga teng bo'ladi?",
+      "v": [
+        "0,6",
+        "6/11",
+        "2/3",
+        "2/9"
+      ],
+      "t": 2,
+      "izoh": "0,(8) = 8/9 va 0,(2) = 2/9 bo'ladi. Ayirma 8/9 − 2/9 = 6/9 = 2/3. Davrni hisobga olmay 0,8 − 0,2 = 0,6 deb yozish tipik xato. Javob: 2/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-amal",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#db3a40fd"
+    },
+    {
+      "q": "0,(15) davriy kasrni 66 ga ko'paytirganda natija nechaga teng bo'ladi?",
+      "v": [
+        "9,9",
+        "10",
+        "6,6",
+        "5"
+      ],
+      "t": 1,
+      "izoh": "0,(15) = 15/99 = 5/33 ekanini progressiya yig'indisidan topamiz. Endi (5/33) · 66 = 5 · 2 = 10. Davrsiz 0,15 · 66 = 9,9 deb hisoblash tipik xato. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-amal",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b56449a8"
+    },
+    {
+      "q": "Do'kondagi chegirma tovar narxining 0,1(6) qismini tashkil qiladi. Narxi 36000 so'm bo'lgan sumka uchun chegirma miqdorini toping.",
+      "v": [
+        "3600 so'm",
+        "5760 so'm",
+        "6000 so'm",
+        "30000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Avval ulushni oddiy kasrga aylantiramiz: 0,1(6) = 1/6. Chegirma 36000 · 1/6 = 6000 so'm bo'ladi. 0,16 deb yaxlitlash yoki chegirmadan keyingi narxni javob deb olish tipik xatolardir. Javob: 6000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-kontekst",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#18b996e7"
+    },
+    {
+      "q": "Cheksiz kamayuvchi geometrik progressiyaning ikkinchi hadi 4 ga, uchinchi hadi 2 ga teng. Barcha hadlar yig'indisini toping.",
+      "v": [
+        "16",
+        "8",
+        "12",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "Mahraj q = b₃/b₂ = 2/4 = 0,5. Birinchi had b₁ = b₂ : q = 4 : 0,5 = 8. Endi S = 8 : (1 − 0,5) = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlardan-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#1e933bd3"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning birinchi hadi 27 ga, to'rtinchi hadi 1 ga teng. Barcha hadlar yig'indisini hisoblang.",
+      "v": [
+        "81",
+        "40,5",
+        "18",
+        "13,5"
+      ],
+      "t": 1,
+      "izoh": "b₄ = b₁ · q³ tenglikdan 27q³ = 1, ya'ni q³ = 1/27 va q = 1/3. Endi S = 27 : (1 − 1/3) = 27 : (2/3) = 40,5. Javob: 40,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlardan-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#c94f9803"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyada mahraj 1/3 ga teng, dastlabki ikki hadning yig'indisi esa 16 ni tashkil qiladi. Progressiyaning to'liq yig'indisini toping.",
+      "v": [
+        "24",
+        "16",
+        "12",
+        "18"
+      ],
+      "t": 3,
+      "izoh": "b₁ + b₁q = 16 dan b₁ · (1 + 1/3) = 16, ya'ni b₁ · 4/3 = 16 va b₁ = 12. Endi S = 12 : (1 − 1/3) = 12 : (2/3) = 18. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlardan-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#7281b47e"
+    },
+    {
+      "q": "b₁ = 6 va q = 1/2 bo'lgan cheksiz kamayuvchi progressiya hadlarining kvadratlari yig'indisini toping.",
+      "v": [
+        "144",
+        "48",
+        "72",
+        "24"
+      ],
+      "t": 1,
+      "izoh": "Hadlar kvadratlari ham geometrik progressiya bo'lib, uning birinchi hadi 6² = 36 va mahraji (1/2)² = 1/4. Demak S = 36 : (1 − 1/4) = 36 : 0,75 = 48. Butun yig'indini kvadratga ko'tarish tipik xato. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-kvadratlari",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#561c8180"
+    },
+    {
+      "q": "Tomoni 8 sm bo'lgan kvadratning tomonlari o'rtalari tutashtirilib yangi kvadrat yasaladi va bu jarayon cheksiz davom ettiriladi. Barcha kvadratlar yuzalarining yig'indisini toping.",
+      "v": [
+        "96 sm²",
+        "128 sm²",
+        "64 sm²",
+        "256 sm²"
+      ],
+      "t": 1,
+      "izoh": "Birinchi kvadrat yuzasi 8² = 64 sm². Tomonlar o'rtalari tutashtirilganda hosil bo'lgan kvadratning yuzasi oldingisining yarmiga teng, ya'ni q = 1/2. Demak S = 64 : (1 − 1/2) = 128 sm². Javob: 128 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-yuza-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#11dd90ac"
+    },
+    {
+      "q": "Birinchi kvadratning yuzasi 48 sm², har bir keyingi kvadratning yuzasi esa oldingisining 1/4 qismini tashkil qiladi. Cheksiz ko'p kvadratlar yuzalarining yig'indisini hisoblang.",
+      "v": [
+        "60 sm²",
+        "192 sm²",
+        "36 sm²",
+        "64 sm²"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar b₁ = 48 va q = 1/4 bo'lgan cheksiz kamayuvchi progressiyani hosil qiladi. S = 48 : (1 − 1/4) = 48 : 0,75 = 64 sm². Dastlabki ikki hadni qo'shib to'xtash tipik xato. Javob: 64 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kvadratlar-yuza-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#cad72301"
+    },
+    {
+      "q": "Tomoni 12 sm bo'lgan kvadrat ichiga tomoni ikki marta kichik kvadrat chiziladi va bu tartib cheksiz takrorlanadi. Hosil bo'lgan barcha kvadratlar perimetrlarining yig'indisini toping.",
+      "v": [
+        "48 sm",
+        "72 sm",
+        "96 sm",
+        "144 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi perimetr 4 · 12 = 48 sm. Tomon ikki marta kichrayganda perimetr ham ikki marta kichrayadi, ya'ni q = 1/2. Demak S = 48 : (1 − 1/2) = 96 sm. Javob: 96 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kvadratlar-perimetr-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#a1e310ef"
+    },
+    {
+      "q": "Tomoni 18 sm bo'lgan teng tomonli uchburchakning tomonlari o'rtalari tutashtiriladi va bu amal cheksiz takrorlanadi. Barcha uchburchaklar perimetrlarining yig'indisi qanchaga teng?",
+      "v": [
+        "108 sm",
+        "54 sm",
+        "81 sm",
+        "216 sm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi perimetr 3 · 18 = 54 sm. O'rta chiziqlardan yasalgan uchburchakning tomoni ikki marta kichik, demak q = 1/2. S = 54 : (1 − 1/2) = 108 sm. Javob: 108 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uchburchaklar-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#8bd0ca34"
+    },
+    {
+      "q": "Yuzasi 27 sm² bo'lgan teng tomonli uchburchakda tomonlar o'rtalari tutashtirilib yangi uchburchak olinadi va jarayon cheksiz davom etadi. Barcha uchburchaklar yuzalari yig'indisini toping.",
+      "v": [
+        "33,75 sm²",
+        "36 sm²",
+        "108 sm²",
+        "20,25 sm²"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziqlar uchburchagi dastlabkiga o'xshash va o'xshashlik koeffitsienti 1/2, demak yuzalar nisbati (1/2)² = 1/4. S = 27 : (1 − 1/4) = 27 : 0,75 = 36 sm². Javob: 36 sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uchburchaklar-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b58c95df"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan aylana chizildi, so'ng radiusi ikki marta kichik aylana chizildi va bu jarayon cheksiz davom ettirildi. Barcha aylanalar uzunliklarining yig'indisini toping.",
+      "v": [
+        "24π sm",
+        "36π sm",
+        "48π sm",
+        "96π sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi aylana uzunligi 2π · 12 = 24π sm. Radius ikki marta kichrayganda uzunlik ham ikki marta kichrayadi, ya'ni q = 1/2. S = 24π : (1 − 1/2) = 48π sm. Javob: 48π sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aylana-doira-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b472c10d"
+    },
+    {
+      "q": "Birinchi doiraning yuzasi 72π sm², har bir keyingi doiraning yuzasi oldingisining 1/4 qismiga teng. Cheksiz ko'p doiralar yuzalarining yig'indisini hisoblang.",
+      "v": [
+        "90π sm²",
+        "288π sm²",
+        "54π sm²",
+        "96π sm²"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar b₁ = 72π va q = 1/4 bo'lgan progressiyani hosil qiladi. S = 72π : (1 − 1/4) = 72π : 0,75 = 96π sm². Javob: 96π sm².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-doira-ketma-ketligi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#f90336a4"
+    },
+    {
+      "q": "Mayatnikning birinchi tebranishida uchi 60 sm yoy chizadi, har keyingi tebranishda yoy uzunligi oldingisining 3/4 qismini tashkil qiladi. Mayatnik to'xtaguncha uchi bosib o'tgan yo'lni toping.",
+      "v": [
+        "240 sm",
+        "180 sm",
+        "80 sm",
+        "45 sm"
+      ],
+      "t": 0,
+      "izoh": "Yoylar uzunligi b₁ = 60 va q = 3/4 bo'lgan cheksiz kamayuvchi progressiyani beradi. S = 60 : (1 − 3/4) = 60 : 0,25 = 240 sm. Javob: 240 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mayatnik-tebranish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#c3170dce"
+    },
+    {
+      "q": "Mayatnik to'xtaguncha uchi jami 150 sm yo'l bosdi, har tebranish yoyi esa oldingisining 4/5 qismiga teng edi. Birinchi tebranish yoyining uzunligini toping.",
+      "v": [
+        "120 sm",
+        "30 sm",
+        "187,5 sm",
+        "37,5 sm"
+      ],
+      "t": 1,
+      "izoh": "b₁ = S · (1 − q) formulasidan foydalanamiz: b₁ = 150 · (1 − 4/5) = 150 · 1/5 = 30 sm. Yig'indini mahrajga ko'paytirish tipik xato. Javob: 30 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mayatnik-tebranish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#a3da0d54"
+    },
+    {
+      "q": "Mayatnikning birinchi tebranish yoyi 80 sm, u to'xtaguncha bosgan umumiy yo'l esa 400 sm. Yoylar uzunligining kamayish mahrajini aniqlang.",
+      "v": [
+        "0,2",
+        "5",
+        "0,8",
+        "0,25"
+      ],
+      "t": 2,
+      "izoh": "80 : (1 − q) = 400 tenglamadan 1 − q = 80/400 = 0,2 kelib chiqadi. Demak q = 1 − 0,2 = 0,8. 1 − q ni javob deb olish tipik xato. Javob: 0,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mayatnik-tebranish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#fc95c12a"
+    },
+    {
+      "q": "Yugurish mashg'ulotida Dilnoza birinchi daqiqada 400 m yugurdi, har keyingi daqiqada esa oldingi daqiqadagining 0,8 qismini bosdi. U to'xtaguncha jami qancha masofa yugurgan?",
+      "v": [
+        "1600 m",
+        "500 m",
+        "320 m",
+        "2000 m"
+      ],
+      "t": 3,
+      "izoh": "Daqiqalik masofalar b₁ = 400 va q = 0,8 bo'lgan progressiyani hosil qiladi. S = 400 : (1 − 0,8) = 400 : 0,2 = 2000 m. Birinchi daqiqani hisobga olmaslik 1600 m ga olib keladi. Javob: 2000 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "masofa-cheksiz-yurish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#c11a4df7"
+    },
+    {
+      "q": "Eshkak eshish to'xtatilgan qayiq birinchi soniyada 6 m, keyingi har soniyada esa oldingisining 5/6 qismicha yo'l bosadi. Qayiq harakati so'nguncha jami qancha masofani bosib o'tadi?",
+      "v": [
+        "36 m",
+        "30 m",
+        "11 m",
+        "7,2 m"
+      ],
+      "t": 0,
+      "izoh": "Har soniyada bosilgan yo'llar 6; 5; 25/6; … cheksiz kamayuvchi progressiyani hosil qiladi, mahraj q = 5/6. 1 − q = 1/6 bo'lgani uchun S = 6 : (1/6) = 6 · 6 = 36 m. Birinchi soniyadagi yo'lni hisobga olmay 30 m deb javob berish tipik xato. Javob: 36 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "masofa-cheksiz-yurish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#21548d1a"
+    },
+    {
+      "q": "Chivin devordan 2 m uzoqlikda turibdi va har safar devorgacha qolgan masofaning 1/4 qismini uchib o'tadi. Chivin jami qancha masofa uchadi va devorga yetadimi?",
+      "v": [
+        "0,5 m; devorga yetmaydi",
+        "2 m; devorga hech qachon yetmaydi",
+        "2 m; devorga yetadi",
+        "1,5 m; devorga yetmaydi"
+      ],
+      "t": 1,
+      "izoh": "Birinchi uchish 2 · 1/4 = 0,5 m, keyingi har uchish oldingisining 3/4 qismiga teng, ya'ni q = 3/4. S = 0,5 : (1 − 3/4) = 2 m. Yig'indi 2 m ga intiladi, lekin har qadamda masofaning faqat bir qismi bosilgani uchun devorga hech qachon yetmaydi. Javob: 2 m; devorga hech qachon yetmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-sakrash-tahlil",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9e2bc447"
+    },
+    {
+      "q": "Har suyultirishdan keyin eritmadagi modda konsentratsiyasi oldingisining 0,4 qismini tashkil etadi. Birinchi bosqichda 24 g modda ajratilgan bo'lsa, cheksiz ko'p bosqichda jami qancha modda ajraladi?",
+      "v": [
+        "60 g",
+        "9,6 g",
+        "40 g",
+        "14,4 g"
+      ],
+      "t": 2,
+      "izoh": "Ajralgan modda miqdorlari b₁ = 24 va q = 0,4 bo'lgan progressiyani beradi. S = 24 : (1 − 0,4) = 24 : 0,6 = 40 g. Javob: 40 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aralashma-suyultirish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#685de005"
+    },
+    {
+      "q": "Havo filtri birinchi o'tishda 18 g chang ushlaydi, har keyingi o'tishda esa oldingisining 1/3 qismicha chang ushlanadi. Cheksiz ko'p o'tishda jami qancha chang ushlanadi?",
+      "v": [
+        "24 g",
+        "54 g",
+        "12 g",
+        "27 g"
+      ],
+      "t": 3,
+      "izoh": "1 − q = 1 − 1/3 = 2/3 bo'ladi. S = 18 : (2/3) = 18 · 3/2 = 27 g. Dastlabki ikki o'tishni qo'shib 24 g deb to'xtash tipik xato. Javob: 27 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "aralashma-suyultirish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#66ba6688"
+    },
+    {
+      "q": "Bemorga har kuni 12 mg dori beriladi va bir kun ichida organizmda dorining 25 foizi qoladi. Uzoq davolash jarayonida navbatdagi dori qabulidan darhol keyin organizmdagi dori miqdori qanday qiymatga yaqinlashadi?",
+      "v": [
+        "16 mg",
+        "15 mg",
+        "48 mg",
+        "12 mg"
+      ],
+      "t": 0,
+      "izoh": "Qabuldan darhol keyingi miqdor 12 + 12 · 0,25 + 12 · 0,25² + … ko'rinishdagi progressiya bo'ladi. S = 12 : (1 − 0,25) = 12 : 0,75 = 16 mg. Bu maksimal, ya'ni qabuldan keyingi daraja; keyingi qabul oldidan miqdor 0,25 · 16 = 4 mg gacha tushadi. Faqat ikki kunni qo'shib 15 mg deb to'xtash tipik xato. Javob: 16 mg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "dori-toplanishi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#63d52b1c"
+    },
+    {
+      "q": "Investorning yillik daromadi har yili oldingi yildagidan 20 foizga kam bo'lib boradi. Birinchi yil daromadi 25 mln so'm bo'lsa, u cheksiz uzoq davrda jami qancha daromad oladi?",
+      "v": [
+        "31,25 mln so'm",
+        "125 mln so'm",
+        "100 mln so'm",
+        "20 mln so'm"
+      ],
+      "t": 1,
+      "izoh": "Har yilgi daromad oldingisining 0,8 qismini tashkil qiladi, ya'ni q = 0,8. S = 25 : (1 − 0,8) = 25 : 0,2 = 125 mln so'm. Javob: 125 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moliyaviy-cheksiz",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#a77919ec"
+    },
+    {
+      "q": "Talabalar to'garagi har oyda oldingi oyga nisbatan 25 foiz kam mablag' yig'di va jami 2 400 000 so'm to'plandi. Birinchi oyda qancha mablag' yig'ilgan?",
+      "v": [
+        "1 800 000 so'm",
+        "3 000 000 so'm",
+        "600 000 so'm",
+        "800 000 so'm"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda q = 0,75 va S = 2 400 000. b₁ = S · (1 − q) = 2 400 000 · 0,25 = 600 000 so'm. Javob: 600 000 so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moliyaviy-cheksiz",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#52cf36fe"
+    },
+    {
+      "q": "Do'kon birinchi oyda 96 mln so'mlik texnika sotdi, keyingi oylarda tushum bir xil koeffitsient bilan kamayadi va cheksiz uzoq davrda jami tushum 120 mln so'mga yaqinlashadi. Kamayish mahrajini toping.",
+      "v": [
+        "0,8",
+        "1,25",
+        "0,4",
+        "0,2"
+      ],
+      "t": 3,
+      "izoh": "Bu yerda b₁ = 96, S = 120. 1 − q = b₁/S = 96/120 = 0,8 bo'ladi, demak q = 1 − 0,8 = 0,2. Ya'ni har oy tushum oldingi oyning atigi beshdan bir qismini tashkil qiladi. Javob: 0,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "moliyaviy-cheksiz",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#34ce7a13"
+    },
+    {
+      "q": "3x + 3x² + 3x³ + … cheksiz yig'indi 9 ga teng va |x| < 1 sharti bajariladi. x ning qiymatini toping.",
+      "v": [
+        "0,75",
+        "0,25",
+        "3",
+        "1,5"
+      ],
+      "t": 0,
+      "izoh": "Qatorning birinchi hadi 3x, mahraji esa x. Yig'indi 3x : (1 − x) = 9 tenglamani beradi. Bundan 3x = 9 − 9x, ya'ni 12x = 9 va x = 0,75. Bu qiymat |x| < 1 shartni qanoatlantiradi. Javob: 0,75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-cheksiz-qator",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#390680fd"
+    },
+    {
+      "q": "b₁ = 64 va q = 1/2 bo'lgan cheksiz kamayuvchi progressiyada to'rtinchi haddan boshlab keyingi barcha hadlar yig'indisini toping.",
+      "v": [
+        "112",
+        "16",
+        "128",
+        "8"
+      ],
+      "t": 1,
+      "izoh": "To'rtinchi had b₄ = 64 · (1/2)³ = 8. To'rtinchi haddan boshlanadigan qism ham cheksiz kamayuvchi progressiya bo'lib, uning birinchi hadi 8, mahraji o'sha 1/2. Demak S = 8 : (1 − 1/2) = 16. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#5275f08d"
+    },
+    {
+      "q": "b₁ = 81 va q = 1/3 bo'lgan progressiyada uchinchi haddan boshlab barcha hadlar yig'indisi qanchaga teng?",
+      "v": [
+        "13,5",
+        "27",
+        "121,5",
+        "108"
+      ],
+      "t": 0,
+      "izoh": "Uchinchi had b₃ = 81 · (1/3)² = 9. Qolgan qism birinchi hadi 9 va mahraji 1/3 bo'lgan progressiya: S = 9 : (1 − 1/3) = 9 : (2/3) = 13,5. Butun progressiya yig'indisi 121,5 ni javob deb olish tipik xato. Javob: 13,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#18e153fb"
+    },
+    {
+      "q": "Bochkadagi suv har kuni oldingi kundagining yarmicha sarflanadi va birinchi kuni 40 litr sarflandi. Uchinchi kundan boshlab jami qancha suv sarflanadi?",
+      "v": [
+        "80 litr",
+        "60 litr",
+        "20 litr",
+        "10 litr"
+      ],
+      "t": 2,
+      "izoh": "Uchinchi kunlik sarf b₃ = 40 · (1/2)² = 10 litr. Uchinchi kundan boshlangan qism birinchi hadi 10 va mahraji 1/2 bo'lgan progressiya: S = 10 : 0,5 = 20 litr. Javob: 20 litr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qoldiq-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b1652a65"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning to'liq yig'indisi 96 ga, birinchi hadi esa 48 ga teng. Uchinchi haddan boshlab hadlar yig'indisini toping.",
+      "v": [
+        "12",
+        "48",
+        "6",
+        "24"
+      ],
+      "t": 3,
+      "izoh": "Avval mahrajni topamiz: 1 − q = 48/96 = 0,5, demak q = 0,5. Ikkinchi had b₂ = 24 bo'ladi. Uchinchi haddan boshlangan yig'indi 96 − 48 − 24 = 24. Faqat birinchi hadni ayirib to'xtash tipik xato. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#e0b75da4"
+    },
+    {
+      "q": "b₁ = 16 va q = 1/3 bo'lgan cheksiz progressiyada toq o'rinda turgan hadlar yig'indisini toping.",
+      "v": [
+        "24",
+        "18",
+        "6",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "Toq o'rindagi hadlar b₁; b₃; b₅; … o'zi ham geometrik progressiya bo'lib, mahraji q² = 1/9. Uning birinchi hadi 16, demak S = 16 : (1 − 1/9) = 16 : (8/9) = 18. Butun progressiyaning yig'indisi 24 ni javob deb olish tipik xato. Javob: 18.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-hadlar",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b8267920"
+    },
+    {
+      "q": "b₁ = 24 va q = 1/3 bo'lgan cheksiz kamayuvchi progressiyada juft o'rinda turgan hadlar yig'indisini hisoblang.",
+      "v": [
+        "36",
+        "27",
+        "9",
+        "8"
+      ],
+      "t": 2,
+      "izoh": "Juft o'rindagi hadlar b₂ dan boshlanadi: b₂ = 8, mahraji esa q² = 1/9. Demak S = 8 : (1 − 1/9) = 8 : (8/9) = 9. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juft-toq-hadlar",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#63efca4d"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyada toq o'rindagi hadlar yig'indisi 27 ga, juft o'rindagilarniki esa 9 ga teng. Progressiyaning mahrajini toping.",
+      "v": [
+        "3",
+        "1/4",
+        "2/3",
+        "1/3"
+      ],
+      "t": 3,
+      "izoh": "Har bir juft o'rindagi had o'zidan oldingi toq o'rindagi hadning q marta olingani. Shuning uchun juft hadlar yig'indisi toq hadlar yig'indisining q marta olingani bo'ladi: 9 = 27q. Bundan q = 1/3. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#b756007f"
+    },
+    {
+      "q": "Ikki cheksiz kamayuvchi progressiyaning birinchi hadlari teng, mahrajlari esa 1/2 va 2/3 ga teng. Ularning yig'indilari nisbatini toping.",
+      "v": [
+        "3 : 2",
+        "1 : 2",
+        "4 : 9",
+        "2 : 3"
+      ],
+      "t": 3,
+      "izoh": "Birinchi progressiyada S₁ = b : (1 − 1/2) = 2b, ikkinchisida S₂ = b : (1 − 2/3) = 3b. Nisbat S₁ : S₂ = 2b : 3b = 2 : 3. Mahrajlar nisbatini javob deb olish tipik xato. Javob: 2 : 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#77595bb3"
+    },
+    {
+      "q": "Birinchi progressiyada b₁ = 12 va q = 1/4, ikkinchisida b₁ = 8 va q = 1/2. Bu progressiyalarning cheksiz yig'indilari haqida to'g'ri xulosani tanlang.",
+      "v": [
+        "Birinchisining yig'indisi katta",
+        "Ikkinchisining yig'indisi katta",
+        "Yig'indilar o'zaro teng",
+        "Ikkinchisiniki ikki marta katta"
+      ],
+      "t": 2,
+      "izoh": "Birinchisi uchun S = 12 : (1 − 1/4) = 12 : 0,75 = 16. Ikkinchisi uchun S = 8 : (1 − 1/2) = 16. Birinchi hadlar har xil bo'lsa ham yig'indilar bir xil chiqdi. Javob: yig'indilar o'zaro teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#bb5759e7"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning har bir hadi 4 marta orttirildi, mahraj esa o'zgarmadi. Yangi progressiyaning yig'indisi qanday o'zgaradi?",
+      "v": [
+        "16 marta ortadi",
+        "o'zgarmaydi",
+        "2 marta ortadi",
+        "4 marta ortadi"
+      ],
+      "t": 3,
+      "izoh": "Barcha hadlar 4 marta ortganda yangi birinchi had 4b₁ bo'ladi, mahraj esa o'sha q bo'lib qoladi. Yangi yig'indi 4b₁ : (1 − q) = 4S, ya'ni eski yig'indining 4 marta olingani. Javob: 4 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#6c300e4b"
+    },
+    {
+      "q": "5^(1/2 + 1/4 + 1/8 + …) ifodaning qiymatini hisoblang, bu yerda daraja ko'rsatkichi cheksiz qator.",
+      "v": [
+        "1",
+        "25",
+        "5",
+        "√5"
+      ],
+      "t": 2,
+      "izoh": "Daraja ko'rsatkichidagi qator b₁ = 1/2 va q = 1/2 bo'lgan cheksiz kamayuvchi progressiya. Uning yig'indisi (1/2) : (1 − 1/2) = 1. Demak ifoda 5¹ = 5 ga teng. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-daraja-tenglama",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#f91508df"
+    },
+    {
+      "q": "2^(1 + 1/3 + 1/9 + …) ifodaning qiymatini toping va sodda ko'rinishda yozing.",
+      "v": [
+        "2",
+        "4",
+        "√2",
+        "2√2"
+      ],
+      "t": 3,
+      "izoh": "Ko'rsatkichdagi qator b₁ = 1 va q = 1/3 bo'lgan progressiya, uning yig'indisi 1 : (1 − 1/3) = 3/2. Demak ifoda 2^(3/2) = 2 · √2 ga teng. Javob: 2√2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-daraja-tenglama",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#72ae3624"
+    },
+    {
+      "q": "4^(1/3 + 1/9 + 1/27 + …) ifodaning qiymati qanday songa teng bo'ladi?",
+      "v": [
+        "4",
+        "2",
+        "√2",
+        "1"
+      ],
+      "t": 1,
+      "izoh": "Ko'rsatkichdagi qatorda b₁ = 1/3 va q = 1/3, uning yig'indisi (1/3) : (2/3) = 1/2. Demak ifoda 4^(1/2) = √4 = 2 ga teng. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-daraja-tenglama",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#487602b9"
+    },
+    {
+      "q": "Basketbol to'pi 10 m balandlikdan tushirildi va har sakrashda oldingi balandlikning 3/5 qismiga ko'tariladi. To'p to'xtaguncha bosgan umumiy yo'lni toping.",
+      "v": [
+        "25 m",
+        "40 m",
+        "30 m",
+        "50 m"
+      ],
+      "t": 1,
+      "izoh": "Sakrash balandliklari 6; 3,6; … progressiyani beradi, yig'indisi 6 : (1 − 3/5) = 6 : 0,4 = 15 m. Ko'tarilish va tushish ikki marta hisoblanadi: 2 · 15 = 30 m. Birinchi tushish 10 m ni qo'shsak, jami 40 m chiqadi. Javob: 40 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koptok-sakrash-yol",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#cd0f5126"
+    },
+    {
+      "q": "Bolalar maydonchasida koptok 6 m balandlikdan tushirildi va har gal oldingi balandlikning yarmiga ko'tariladi. Koptok tinchiguncha jami qancha yo'l bosadi?",
+      "v": [
+        "12 m",
+        "24 m",
+        "18 m",
+        "6 m"
+      ],
+      "t": 2,
+      "izoh": "Sakrash balandliklari 3; 1,5; … progressiyani hosil qiladi, yig'indisi 3 : 0,5 = 6 m. Bu masofa ikki marta bosiladi: 2 · 6 = 12 m. Birinchi tushish 6 m ni qo'shsak, jami 18 m bo'ladi. Javob: 18 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "koptok-sakrash-yol",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#171a970e"
+    },
+    {
+      "q": "Koptok 8 m balandlikdan tashlanib, to'xtaguncha jami 24 m yo'l bosdi. Sakrash balandliklarining kamayish mahrajini aniqlang.",
+      "v": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Sakrash balandliklari yig'indisi h = 8q : (1 − q) ga teng. Umumiy yo'l 8 + 2h = 24 bo'lgani uchun h = 8 m. 8q : (1 − q) = 8 tenglamadan q = 1 − q, ya'ni 2q = 1 va q = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koptok-sakrash-mahraj",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#364f7b5e"
+    },
+    {
+      "q": "b₁ = 10 va q = 1/3 bo'lgan cheksiz kamayuvchi progressiya hadlarining kvadratlari yig'indisini hisoblang.",
+      "v": [
+        "112,5",
+        "225",
+        "100",
+        "12,5"
+      ],
+      "t": 0,
+      "izoh": "Kvadratlar ham geometrik progressiya bo'lib, birinchi hadi 10² = 100 va mahraji (1/3)² = 1/9. Demak S = 100 : (1 − 1/9) = 100 : (8/9) = 112,5. Progressiya yig'indisi 15 ni kvadratga ko'tarib 225 deb yozish tipik xato. Javob: 112,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-kvadratlari",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#f5fd5613"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiya hadlarining yig'indisi 12 ga, hadlar kvadratlarining yig'indisi esa 48 ga teng. Progressiyaning mahrajini toping.",
+      "v": [
+        "1/4",
+        "3/4",
+        "2/5",
+        "1/2"
+      ],
+      "t": 3,
+      "izoh": "b₁ : (1 − q) = 12 dan b₁ = 12(1 − q). Kvadratlar uchun b₁² : (1 − q²) = 48 bo'ladi. Birinchisini ikkinchisiga qo'ysak 144(1 − q)² : ((1 − q)(1 + q)) = 48, ya'ni 3(1 − q) = 1 + q. Bundan 4q = 2 va q = 1/2. Javob: 1/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hadlar-kvadratlari",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#3e500624"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning birinchi hadi ikkinchi haddan 16 ga katta, mahraji esa 1/5 ga teng. Barcha hadlar yig'indisini toping.",
+      "v": [
+        "20",
+        "25",
+        "100",
+        "80"
+      ],
+      "t": 1,
+      "izoh": "b₁ − b₁q = 16 dan b₁ · (1 − 1/5) = 16, ya'ni b₁ · 0,8 = 16 va b₁ = 20. Endi S = 20 : (1 − 1/5) = 20 : 0,8 = 25. Birinchi hadni javob deb olib to'xtash tipik xato. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hadlardan-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#57a516fb"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyaning uchinchi hadi 4 ga, beshinchi hadi 1 ga teng va mahraj musbat. Barcha hadlar yig'indisini hisoblang.",
+      "v": [
+        "32",
+        "16",
+        "24",
+        "64"
+      ],
+      "t": 0,
+      "izoh": "b₅ = b₃ · q² tenglikdan 4q² = 1, ya'ni q² = 1/4 va musbat mahraj uchun q = 1/2. Birinchi had b₁ = b₃ : q² = 4 : (1/4) = 16. Demak S = 16 : (1 − 1/2) = 32. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlardan-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9f85de9e"
+    },
+    {
+      "q": "Axilles sekundiga 10 m, toshbaqa esa 1 m yuguradi va toshbaqa 90 m oldinda turibdi. Zenon usulida har bosqich vaqtini qo'shib chiqsak, Axilles toshbaqaga necha soniyada yetib oladi?",
+      "v": [
+        "9 s",
+        "9,9 s",
+        "10 s",
+        "11 s"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bosqichda Axilles 90 m ni 9 s da bosadi, shu vaqtda toshbaqa 9 m oldinga ketadi. Ikkinchi bosqich 0,9 s davom etadi va har bosqich oldingisining 0,1 qismini tashkil qiladi. Vaqtlar yig'indisi 9 : (1 − 0,1) = 10 s. Javob: 10 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-sakrash-tahlil",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#baa29e0c"
+    },
+    {
+      "q": "Ip spiral shaklida o'raladi: birinchi o'ramning uzunligi 36 sm, har keyingi o'ram esa oldingisining 5/6 qismiga teng. Spiralning to'liq uzunligini toping.",
+      "v": [
+        "216 sm",
+        "180 sm",
+        "66 sm",
+        "30 sm"
+      ],
+      "t": 0,
+      "izoh": "O'ramlar uzunligi b₁ = 36 va q = 5/6 bo'lgan cheksiz kamayuvchi progressiyani hosil qiladi. 1 − q = 1/6 bo'lgani uchun S = 36 : (1/6) = 36 · 6 = 216 sm. Javob: 216 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "spiral-uzunlik",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#518b8ac9"
+    },
+    {
+      "q": "Chig'anoq spiralining birinchi bosqichi 45 mm, har keyingi bosqichi esa oldingisining 2/3 qismini tashkil qiladi. Spiralning umumiy uzunligi qanchaga teng?",
+      "v": [
+        "90 mm",
+        "135 mm",
+        "75 mm",
+        "67,5 mm"
+      ],
+      "t": 1,
+      "izoh": "1 − q = 1 − 2/3 = 1/3 bo'ladi. Demak S = 45 : (1/3) = 45 · 3 = 135 mm. Dastlabki ikki bosqichni qo'shib 75 mm deb to'xtash tipik xato. Javob: 135 mm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "spiral-uzunlik",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#26b5d807"
+    },
+    {
+      "q": "Davlat iqtisodiyotga 500 mln so'm kiritdi va bu puldan olgan har bir kishi uning 60 foizini qayta sarflaydi. Shu tartibda hosil bo'ladigan umumiy iqtisodiy aylanmani toping.",
+      "v": [
+        "800 mln so'm",
+        "300 mln so'm",
+        "833 mln so'm",
+        "1250 mln so'm"
+      ],
+      "t": 3,
+      "izoh": "Sarflar 500; 300; 180; … cheksiz kamayuvchi progressiyani hosil qiladi, bunda q = 0,6. S = 500 : (1 − 0,6) = 500 : 0,4 = 1250 mln so'm. Faqat ikki bosqichni qo'shish tipik xato. Javob: 1250 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "iqtisodiy-multiplikator",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#923ee858"
+    },
+    {
+      "q": "Turizmdan kelgan 24 mln so'mning har safar 3/4 qismi mahalliy bozorda qayta sarflanadi. Shu jarayon cheksiz davom etganda umumiy aylanma qancha bo'ladi?",
+      "v": [
+        "72 mln so'm",
+        "42 mln so'm",
+        "96 mln so'm",
+        "32 mln so'm"
+      ],
+      "t": 2,
+      "izoh": "Sarflar b₁ = 24 va q = 3/4 bo'lgan progressiyani beradi. 1 − q = 1/4 bo'lgani uchun S = 24 : (1/4) = 96 mln so'm. Javob: 96 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "iqtisodiy-multiplikator",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#95a75043"
+    },
+    {
+      "q": "Uzunligi 30 sm bo'lgan kesmadan avval 12 sm uzunlikdagi bo'lak kesib olindi, so'ng har safar oldin kesib olingan bo'lakning 2/5 qismicha yangi bo'lak kesiladi. Kesib olingan barcha bo'laklar uzunliklari yig'indisini toping.",
+      "v": [
+        "30 sm",
+        "20 sm",
+        "16,8 sm",
+        "4,8 sm"
+      ],
+      "t": 1,
+      "izoh": "Kesib olingan bo'laklar 12; 4,8; 1,92; … ko'rinishida bo'lib, mahraj q = 2/5 = 0,4. S = 12 : (1 − 0,4) = 12 : 0,6 = 20 sm. Butun kesma uzunligi 30 sm ni javob deb olish tipik xato. Javob: 20 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-cheksiz-bolish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9c634697"
+    },
+    {
+      "q": "Kesmaning bo'yalgan bo'laklari 24 sm; 6 sm; 1,5 sm va hokazo tartibda kichrayib boradi. Bo'yalgan bo'laklar uzunliklarining yig'indisini hisoblang.",
+      "v": [
+        "30 sm",
+        "96 sm",
+        "31,5 sm",
+        "32 sm"
+      ],
+      "t": 3,
+      "izoh": "Mahraj q = 6 : 24 = 1/4 ga teng. S = 24 : (1 − 1/4) = 24 : 0,75 = 32 sm. Dastlabki uch bo'lakni qo'shib 31,5 sm deb to'xtash tipik xato. Javob: 32 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesma-cheksiz-bolish",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#1ef44d40"
+    },
+    {
+      "q": "Quyidagi cheksiz qatorlardan qaysi birining yig'indisi mavjud emas?",
+      "v": [
+        "9 + 3 + 1 + 1/3 + …",
+        "2 + 6 + 18 + 54 + …",
+        "5 − 2,5 + 1,25 − …",
+        "0,7 + 0,07 + 0,007 + …"
+      ],
+      "t": 1,
+      "izoh": "Yig'indi faqat |q| < 1 bo'lganda mavjud. Birinchi qatorda q = 1/3, uchinchisida q = −0,5, to'rtinchisida q = 0,1 va bularning hammasi shartni qanoatlantiradi. Ikkinchi qatorda esa q = 3 bo'lib, hadlar o'sib boradi. Javob: 2 + 6 + 18 + 54 + …",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yaqinlashish-sharti",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#80b96fa8"
+    },
+    {
+      "q": "Quyidagi davriy o'nli kasrlardan qaysi biri 5/6 oddiy kasrga aynan teng bo'ladi?",
+      "v": [
+        "0,(83)",
+        "0,(8)",
+        "0,8(3)",
+        "0,83"
+      ],
+      "t": 2,
+      "izoh": "5/6 ni o'nli kasrga aylantiramiz: 5 : 6 = 0,8333… ya'ni davr faqat uchlikdan iborat. Bu 0,8(3) ko'rinishida yoziladi. Tekshirish: 0,8(3) = 0,8 + 0,03 : 0,9 = 4/5 + 1/30 = 5/6. Javob: 0,8(3).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#e7f7f332"
+    },
+    {
+      "q": "4/11 oddiy kasrni o'nli kasr ko'rinishiga keltirganda qanday davriy kasr hosil bo'ladi?",
+      "v": [
+        "0,(36)",
+        "0,3(6)",
+        "0,(4)",
+        "0,36"
+      ],
+      "t": 0,
+      "izoh": "4 ni 11 ga bo'lsak 0,363636… hosil bo'ladi, ya'ni davr 36 raqamlaridan iborat. Tekshirish: 0,(36) = 36/99 = 4/11. Javob: 0,(36).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#8967cfe5"
+    },
+    {
+      "q": "0,(3) va 0,(6) davriy kasrlarning ko'paytmasini oddiy kasr ko'rinishida yozing.",
+      "v": [
+        "0,18",
+        "1/9",
+        "4/9",
+        "2/9"
+      ],
+      "t": 3,
+      "izoh": "0,(3) = 1/3 va 0,(6) = 2/3 ekanini progressiya yig'indisidan topamiz. Ko'paytma (1/3) · (2/3) = 2/9 ga teng. Davrni tashlab 0,3 · 0,6 = 0,18 deb hisoblash tipik xato. Javob: 2/9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-amal",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#10af7c84"
+    },
+    {
+      "q": "Yugurish musobaqasida sportchining bir aylanaga sarflagan vaqti 0,(6) daqiqani tashkil etdi. Shu vaqtni soniyalarda ifodalang.",
+      "v": [
+        "36 s",
+        "40 s",
+        "39,6 s",
+        "30 s"
+      ],
+      "t": 1,
+      "izoh": "0,(6) = 0,6 : 0,9 = 2/3 daqiqa. Bir daqiqa 60 soniya bo'lgani uchun (2/3) · 60 = 40 s. Davrni e'tiborsiz qoldirib 0,6 · 60 = 36 s deb hisoblash tipik xato. Javob: 40 s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "davriy-kasr-kontekst",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#6aa62889"
+    },
+    {
+      "q": "Quruvchilar brigadasi kunlik rejaning 0,(45) qismini bajardi. Rejada 220 ta g'isht terish bo'lsa, brigada qanchasini tergan?",
+      "v": [
+        "99 ta",
+        "110 ta",
+        "100 ta",
+        "88 ta"
+      ],
+      "t": 2,
+      "izoh": "Avval ulushni oddiy kasrga aylantiramiz: 0,(45) = 45/99 = 5/11. Endi 220 · 5/11 = 100 ta g'isht. Davrsiz 0,45 · 220 = 99 deb hisoblash tipik xato. Javob: 100 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "davriy-kasr-kontekst",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#d7dc639b"
+    },
+    {
+      "q": "Depozit bo'yicha to'lov birinchi yili 800 ming so'm bo'ldi va har keyingi yili oldingi yilnikining 0,2 qismini tashkil qiladi. Cheksiz uzoq davrda jami qancha to'lov olinadi?",
+      "v": [
+        "1 mln so'm",
+        "4 mln so'm",
+        "960 ming so'm",
+        "640 ming so'm"
+      ],
+      "t": 0,
+      "izoh": "To'lovlar b₁ = 800 ming va q = 0,2 bo'lgan progressiyani beradi. S = 800 : (1 − 0,2) = 800 : 0,8 = 1000 ming, ya'ni 1 mln so'm. Birinchi hadni mahrajga bo'lish tipik xato. Javob: 1 mln so'm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "moliyaviy-cheksiz",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#9a5430d1"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyada b₁ = 100 va q = 0,2 berilgan. Ikkinchi haddan boshlab barcha hadlar yig'indisini toping.",
+      "v": [
+        "125",
+        "20",
+        "80",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Ikkinchi had b₂ = 100 · 0,2 = 20. Ikkinchi haddan boshlangan qism birinchi hadi 20 va mahraji 0,2 bo'lgan progressiya: S = 20 : 0,8 = 25. To'liq yig'indi 125 ni javob deb olish tipik xato. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoldiq-yigindi",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#534bbe72"
+    },
+    {
+      "q": "Cheksiz kamayuvchi progressiyada toq o'rindagi hadlar yig'indisi 40 ga, mahraj esa 1/4 ga teng. Progressiyaning to'liq yig'indisini toping.",
+      "v": [
+        "50",
+        "10",
+        "160",
+        "30"
+      ],
+      "t": 0,
+      "izoh": "Har bir juft o'rindagi had o'zidan oldingi toq hadning q marta olingani, shuning uchun juft hadlar yig'indisi 40 · 1/4 = 10. To'liq yig'indi 40 + 10 = 50. Ayirish 30 ni beradi va bu tipik xato. Javob: 50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "juft-toq-hadlar",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#e3812add"
+    },
+    {
+      "q": "Ikki cheksiz kamayuvchi progressiyaning yig'indilari teng. Birinchisida b₁ = 18 va q = 1/3, ikkinchisining mahraji esa 1/2. Ikkinchi progressiyaning birinchi hadini toping.",
+      "v": [
+        "27",
+        "13,5",
+        "9",
+        "54"
+      ],
+      "t": 1,
+      "izoh": "Birinchi progressiyaning yig'indisi S = 18 : (1 − 1/3) = 27. Ikkinchisi uchun b₁ = S · (1 − q) = 27 · (1 − 1/2) = 13,5. Yig'indining o'zini javob deb olish tipik xato. Javob: 13,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-progressiya-taqqoslash",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#facd72fc"
+    },
+    {
+      "q": "b₁ = 12 va q = 1/3 bo'lgan cheksiz kamayuvchi progressiya hadlari kvadratlarining yig'indisini hisoblang.",
+      "v": [
+        "324",
+        "144",
+        "162",
+        "216"
+      ],
+      "t": 2,
+      "izoh": "Kvadratlar progressiyasining birinchi hadi 12² = 144, mahraji esa (1/3)² = 1/9. Demak S = 144 : (1 − 1/9) = 144 : (8/9) = 162. Mahrajni kvadratga ko'tarmasdan 144 : (2/3) = 216 deb hisoblash tipik xato. Javob: 162.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hadlar-kvadratlari",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#911665bc"
+    },
+    {
+      "q": "9^(1/4 + 1/8 + 1/16 + …) ifodaning qiymati qanday butun songa teng bo'ladi?",
+      "v": [
+        "9",
+        "81",
+        "1",
+        "3"
+      ],
+      "t": 3,
+      "izoh": "Daraja ko'rsatkichidagi qatorda b₁ = 1/4 va q = 1/2, uning yig'indisi (1/4) : (1 − 1/2) = 1/2. Demak ifoda 9^(1/2) = √9 = 3 ga teng. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "cheksiz-daraja-tenglama",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#ea67823c"
+    },
+    {
+      "q": "1 + 2x + 4x² + 8x³ + … cheksiz yig'indi 4 ga teng bo'lsa va |2x| < 1 sharti bajarilsa, x ning qiymatini toping.",
+      "v": [
+        "3/8",
+        "1/4",
+        "3/4",
+        "1/8"
+      ],
+      "t": 0,
+      "izoh": "Qatorning birinchi hadi 1, mahraji esa 2x. Yig'indi 1 : (1 − 2x) = 4 tenglamani beradi. Bundan 1 − 2x = 1/4, ya'ni 2x = 3/4 va x = 3/8. Bu qiymatda |2x| = 0,75 < 1 sharti bajariladi. Javob: 3/8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tenglama-cheksiz-qator",
+      "id": "matematika_prog_m06-cheksiz-kamayuvchi-geometrik-progressiya#a25f61b5"
+    }
+  ]
+}

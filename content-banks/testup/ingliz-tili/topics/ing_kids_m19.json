@@ -1,0 +1,487 @@
+{
+  "nom": "Transport (Transport)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What is this? 🚌",
+      "v": [
+        "bus",
+        "car",
+        "boat",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "🚌 = bus (avtobus).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#7538e3c2"
+    },
+    {
+      "q": "What is this? 🚗",
+      "v": [
+        "car",
+        "train",
+        "ship",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "🚗 = car (mashina).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#149bd86c"
+    },
+    {
+      "q": "What is this? ✈️",
+      "v": [
+        "plane",
+        "car",
+        "bus",
+        "boat"
+      ],
+      "t": 0,
+      "izoh": "✈️ = plane (samolyot).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9891ef1a"
+    },
+    {
+      "q": "What is this? 🚲",
+      "v": [
+        "bike",
+        "bus",
+        "ship",
+        "train"
+      ],
+      "t": 0,
+      "izoh": "🚲 = bike (velosiped).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#7b95fd34"
+    },
+    {
+      "q": "What is this? ⛵",
+      "v": [
+        "boat",
+        "car",
+        "bus",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "⛵ = boat (qayiq).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#b326e012"
+    },
+    {
+      "q": "What is this? 🚁",
+      "v": [
+        "helicopter",
+        "car",
+        "train",
+        "bus"
+      ],
+      "t": 0,
+      "izoh": "🚁 = helicopter (vertolyot).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#fd688f5d"
+    },
+    {
+      "q": "What is this? 🚕",
+      "v": [
+        "taxi",
+        "plane",
+        "boat",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "🚕 = taxi (taksi).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#78a1bdb3"
+    },
+    {
+      "q": "What is this? 🚀",
+      "v": [
+        "rocket",
+        "car",
+        "bus",
+        "ship"
+      ],
+      "t": 0,
+      "izoh": "🚀 = rocket (raketa).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#07c62d71"
+    },
+    {
+      "q": "What flies in the sky? ✈️",
+      "v": [
+        "plane",
+        "car",
+        "boat",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "Osmonda plane (samolyot) uchadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#1333fbb1"
+    },
+    {
+      "q": "What is 🚌?",
+      "v": [
+        "bus",
+        "car",
+        "plane",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "🚌 — avtobus.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#7a739a59"
+    },
+    {
+      "q": "What sails on water? ⛵",
+      "v": [
+        "car",
+        "boat",
+        "bus",
+        "bike"
+      ],
+      "t": 1,
+      "izoh": "⛵ — qayiq suvda suzadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#92b8288b"
+    },
+    {
+      "q": "What goes on rails? 🚂",
+      "v": [
+        "train",
+        "plane",
+        "taxi",
+        "van"
+      ],
+      "t": 0,
+      "izoh": "🚂 — poyezd relsda yuradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#c0a5dbd8"
+    },
+    {
+      "q": "It has two wheels and pedals. 🚲",
+      "v": [
+        "bike",
+        "car",
+        "boat",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "🚲 — velosiped.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#4ff5e9ae"
+    },
+    {
+      "q": "What flies with spinning blades? 🚁",
+      "v": [
+        "rocket",
+        "helicopter",
+        "plane",
+        "bus"
+      ],
+      "t": 1,
+      "izoh": "🚁 — vertolyot.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#6417a87a"
+    },
+    {
+      "q": "What is 🚕? A car you pay to ride.",
+      "v": [
+        "taxi",
+        "bus",
+        "train",
+        "boat"
+      ],
+      "t": 0,
+      "izoh": "🚕 — taksi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#dce9d96c"
+    },
+    {
+      "q": "What flies to space? 🚀",
+      "v": [
+        "plane",
+        "rocket",
+        "helicopter",
+        "ship"
+      ],
+      "t": 1,
+      "izoh": "🚀 — raketa kosmosga uchadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#5c1f6ab9"
+    },
+    {
+      "q": "What is a big boat on the sea? 🚢",
+      "v": [
+        "ship",
+        "bike",
+        "car",
+        "tram"
+      ],
+      "t": 0,
+      "izoh": "🚢 — kema.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#7de28923"
+    },
+    {
+      "q": "What is 🚚? A big truck.",
+      "v": [
+        "lorry",
+        "taxi",
+        "boat",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "🚚 — yuk mashinasi (lorry).",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9d5e0401"
+    },
+    {
+      "q": "Which one helps sick people? 🚑",
+      "v": [
+        "fire engine",
+        "ambulance",
+        "taxi",
+        "bus"
+      ],
+      "t": 1,
+      "izoh": "🚑 — tez yordam.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#263206fe"
+    },
+    {
+      "q": "Which one puts out fires? 🚒",
+      "v": [
+        "fire engine",
+        "ambulance",
+        "police car",
+        "van"
+      ],
+      "t": 0,
+      "izoh": "🚒 — o't o'chirish mashinasi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#ff8db8da"
+    },
+    {
+      "q": "Which one do police use? 🚓",
+      "v": [
+        "taxi",
+        "police car",
+        "bus",
+        "tram"
+      ],
+      "t": 1,
+      "izoh": "🚓 — politsiya mashinasi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#dab03e17"
+    },
+    {
+      "q": "What runs on rails in a city? 🚋",
+      "v": [
+        "tram",
+        "plane",
+        "boat",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "🚋 — tramvay.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#d5324ff9"
+    },
+    {
+      "q": "What has two wheels and an engine?",
+      "v": [
+        "bike",
+        "motorbike",
+        "car",
+        "bus"
+      ],
+      "t": 1,
+      "izoh": "Motorbike — mototsikl.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9f6d9af3"
+    },
+    {
+      "q": "What carries many people on the road? 🚌",
+      "v": [
+        "bike",
+        "bus",
+        "boat",
+        "plane"
+      ],
+      "t": 1,
+      "izoh": "🚌 — avtobus ko'p odam tashiydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#8fa01f3c"
+    },
+    {
+      "q": "Which one does NOT fly?",
+      "v": [
+        "plane",
+        "helicopter",
+        "rocket",
+        "car"
+      ],
+      "t": 3,
+      "izoh": "Mashina uchmaydi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9784e9d8"
+    },
+    {
+      "q": "What flies with wings and engines?",
+      "v": [
+        "plane",
+        "ship",
+        "tram",
+        "taxi"
+      ],
+      "t": 0,
+      "izoh": "Plane — samolyot.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#bce7d933"
+    },
+    {
+      "q": "What do you ride to school with pedals?",
+      "v": [
+        "bike",
+        "ship",
+        "plane",
+        "rocket"
+      ],
+      "t": 0,
+      "izoh": "Bike — velosiped.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#2a7193ea"
+    },
+    {
+      "q": "Which one sails? ⛵",
+      "v": [
+        "boat",
+        "car",
+        "bus",
+        "train"
+      ],
+      "t": 0,
+      "izoh": "⛵ — qayiq suzadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#d317e574"
+    },
+    {
+      "q": "What is the fastest way to the moon?",
+      "v": [
+        "car",
+        "rocket",
+        "bike",
+        "bus"
+      ],
+      "t": 1,
+      "izoh": "Rocket — raketa.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#6afb0b6b"
+    },
+    {
+      "q": "Which one is yellow and you pay for a ride?",
+      "v": [
+        "taxi",
+        "tram",
+        "ship",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "Taxi — taksi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9225e4ce"
+    },
+    {
+      "q": "What has many carriages on rails?",
+      "v": [
+        "train",
+        "boat",
+        "car",
+        "plane"
+      ],
+      "t": 0,
+      "izoh": "Train — poyezd.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#eee7c999"
+    },
+    {
+      "q": "What carries goods on the road?",
+      "v": [
+        "lorry",
+        "boat",
+        "plane",
+        "tram"
+      ],
+      "t": 0,
+      "izoh": "Lorry — yuk mashinasi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#ed045a6d"
+    },
+    {
+      "q": "Which one rings a siren for emergencies?",
+      "v": [
+        "bike",
+        "ambulance",
+        "boat",
+        "scooter"
+      ],
+      "t": 1,
+      "izoh": "Ambulance — tez yordam.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#60005320"
+    },
+    {
+      "q": "Which one flies? ✈️",
+      "v": [
+        "bike",
+        "boat",
+        "plane",
+        "car"
+      ],
+      "t": 2,
+      "izoh": "✈️ — samolyot uchadi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#37d6ba33"
+    },
+    {
+      "q": "Which one goes on the sea? 🚢",
+      "v": [
+        "ship",
+        "bus",
+        "car",
+        "bike"
+      ],
+      "t": 0,
+      "izoh": "🚢 — kema dengizda yuradi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#a282e7f9"
+    },
+    {
+      "q": "What is a small box car for carrying things?",
+      "v": [
+        "van",
+        "plane",
+        "boat",
+        "rocket"
+      ],
+      "t": 0,
+      "izoh": "Van — kichik yuk mashinasi.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#9f693aa1"
+    },
+    {
+      "q": "What is 🛵?",
+      "v": [
+        "scooter",
+        "bus",
+        "ship",
+        "train"
+      ],
+      "t": 0,
+      "izoh": "🛵 — skuter.",
+      "qiy": "oson",
+      "id": "ing_kids_m19#214ef84f"
+    }
+  ]
+}

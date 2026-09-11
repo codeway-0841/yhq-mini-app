@@ -1,0 +1,546 @@
+{
+  "nom": "24-mavzu. Suvning qattiqligi va uni yumshatish usullari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qattiq suv deganda qanday suv tushuniladi?",
+      "v": [
+        "Tarkibida Ca2+ va Mg2+ ionlari ko'p bo'lgan suv",
+        "Tarkibida Na+ ionlari ko'p bo'lgan suv",
+        "Tarkibida Cl- ionlari ko'p bo'lgan suv",
+        "Tuzsiz, distillangan suv"
+      ],
+      "t": 0,
+      "izoh": "Qattiq suv — tarkibida Ca2+ va Mg2+ ionlari ko'p bo'lgan suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#b9278c04"
+    },
+    {
+      "q": "Yumshoq suv deganda qanday suv tushuniladi?",
+      "v": [
+        "Tarkibida Ca2+ va Mg2+ ionlari bo'lmagan yoki juda kam bo'lgan suv",
+        "Tarkibida tuzlar ko'p bo'lgan suv",
+        "Faqat yomg'ir suvi",
+        "Faqat dengiz suvi"
+      ],
+      "t": 0,
+      "izoh": "Yumshoq suvda Ca2+ va Mg2+ ionlari bo'lmaydi yoki juda kam bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#86aae8f5"
+    },
+    {
+      "q": "Qattiq suv isitish tizimlari uchun nima uchun yaroqsiz?",
+      "v": [
+        "Bug' qozonlari devorlari quyqa bilan qoplanib qoladi",
+        "Suv tez bug'lanib ketadi",
+        "Qozon devorlari eriydi",
+        "Sovun ko'piri maydalanadi"
+      ],
+      "t": 0,
+      "izoh": "Qozon devorlari Mg, Ca karbonatlardan iborat quyqa bilan qoplanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#b74e6d18"
+    },
+    {
+      "q": "Quyqa suvga qanday zarar yetkazadi?",
+      "v": [
+        "Suv isishini qiyinlashtiradi va yoqilg'i sarfi ortadi",
+        "Suvning ta'mini yaxshilaydi",
+        "Qozonni tozalaydi",
+        "Suvni yumshatadi"
+      ],
+      "t": 0,
+      "izoh": "Quyqa suv isishini qiyinlashtiradi, yoqilg'i sarfi ortadi, qozon ishdan chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#e0fd4fc2"
+    },
+    {
+      "q": "Qattiq suvda sovun nima uchun ko'pirmaydi?",
+      "v": [
+        "Mg va Ca ionlari sovun bilan suvda erimaydigan birikmalar hosil qiladi",
+        "Sovun suvda erimaydi",
+        "Suv harorati past bo'ladi",
+        "Sovun suv bilan reaksiyaga kirishadi"
+      ],
+      "t": 0,
+      "izoh": "Magniy va kalsiy ionlari sovun bilan erimaydigan birikmalar hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#dfd25f5f"
+    },
+    {
+      "q": "Vaqtinchalik qattiqlik nimaga bog'liq?",
+      "v": [
+        "Suvda magniy va kalsiy gidrokarbonatlar mavjudligi bilan",
+        "Suvda sulfatlar mavjudligi bilan",
+        "Suvda xloridlar mavjudligi bilan",
+        "Suvda natriy tuzlari mavjudligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Vaqtinchalik qattiqlik Ca(HCO3)2 va Mg(HCO3)2 mavjudligi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#27edefda"
+    },
+    {
+      "q": "Doimiy qattiqlik nimaga bog'liq?",
+      "v": [
+        "Suvda magniy va kalsiy sulfatlar va xloridlar mavjudligi bilan",
+        "Suvda gidrokarbonatlar mavjudligi bilan",
+        "Suvda karbonatlar mavjudligi bilan",
+        "Suvda natriy xlorid mavjudligi bilan"
+      ],
+      "t": 0,
+      "izoh": "Doimiy qattiqlik CaSO4, CaCl2, MgSO4, MgCl2 mavjudligi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#8abaa8b0"
+    },
+    {
+      "q": "Umumiy qattiqlik deganda nima tushuniladi?",
+      "v": [
+        "Suvning kalsiy va magniy qattiqligi yig'indisi",
+        "Suvning faqat kalsiy qattiqligi",
+        "Suvning faqat magniy qattiqligi",
+        "Suvdagi barcha tuzlar miqdori"
+      ],
+      "t": 0,
+      "izoh": "Umumiy qattiqlik — kalsiy va magniy qattiqligi yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#3b4d6f02"
+    },
+    {
+      "q": "Suvni qaynatish yo'li bilan qaysi qattiqlik yo'qotiladi?",
+      "v": [
+        "Vaqtinchalik qattiqlik",
+        "Doimiy qattiqlik",
+        "Umumiy qattiqlik",
+        "Magniy qattiqligi"
+      ],
+      "t": 0,
+      "izoh": "Suvni qaynatish yo'li bilan vaqtinchalik qattiqlik yo'qotiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#b83a8787"
+    },
+    {
+      "q": "Ca(HCO3)2 qaynatilganda qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CaCO3, H2O va CO2",
+        "CaO, H2O va CO2",
+        "Ca(OH)2 va CO2",
+        "CaCO3 va H2"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 → CaCO3 + H2O + CO2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#2c5690ed"
+    },
+    {
+      "q": "Doimo suv qaynatadigan idish tubidagi toshsimon quyqa qaysi tuzlardan iborat?",
+      "v": [
+        "CaCO3 va MgCO3",
+        "CaSO4 va MgSO4",
+        "CaCl2 va MgCl2",
+        "NaCl va KCl"
+      ],
+      "t": 0,
+      "izoh": "Idish tubidagi quyqa CaCO3 va MgCO3 tuzlari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#dd4257e1"
+    },
+    {
+      "q": "Vaqtinchalik qattiqlikni yo'qotish uchun suvga ohakli suv qo'shilganda qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "CaCO3",
+        "CaSO4",
+        "Ca(OH)2",
+        "CaO"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 + Ca(OH)2 → 2CaCO3 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#ae3c9339"
+    },
+    {
+      "q": "Suvga ishqor (NaOH) ta'sir ettirilganda Ca(HCO3)2 dan qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CaCO3, Na2CO3 va H2O",
+        "CaO, NaOH va CO2",
+        "CaSO4 va NaCl",
+        "Ca(OH)2 va Na2CO3"
+      ],
+      "t": 0,
+      "izoh": "Ca(HCO3)2 + 2NaOH → CaCO3 + Na2CO3 + 2H2O.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#e6e5082a"
+    },
+    {
+      "q": "Soda (Na2CO3) qo'shib suvni yumshatganda Ca2+ ionlari qanday tarzda chiqarib yuboriladi?",
+      "v": [
+        "Erimaydigan karbonatlar tarzida",
+        "Erimaydigan sulfatlar tarzida",
+        "Gaz tarzida",
+        "Erigan tuzlar tarzida"
+      ],
+      "t": 0,
+      "izoh": "Ca va Mg ionlari erimaydigan karbonatlar tarzida cho'ktiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#f4c63bc8"
+    },
+    {
+      "q": "Doimiy qattiqlikni yo'qotish uchun qaysi moddalar qo'shiladi?",
+      "v": [
+        "Soda yoki natriy fosfat",
+        "Ohakli suv yoki ishqor",
+        "Xlorid kislota",
+        "Distillangan suv"
+      ],
+      "t": 0,
+      "izoh": "Doimiy qattiqlik soda yoki natriy fosfat qo'shib yo'qotiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#06729af6"
+    },
+    {
+      "q": "CaSO4 + Na2CO3 reaksiyasidan qanday moddalar hosil bo'ladi?",
+      "v": [
+        "CaCO3 va Na2SO4",
+        "CaSO4 va NaCl",
+        "Ca(OH)2 va Na2CO3",
+        "CaO va Na2SO4"
+      ],
+      "t": 0,
+      "izoh": "CaSO4 + Na2CO3 → CaCO3 + Na2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#b4714dd2"
+    },
+    {
+      "q": "3MgSO4 + 2Na3PO4 reaksiyasidan qanday cho'kma hosil bo'ladi?",
+      "v": [
+        "Mg3(PO4)2",
+        "MgCO3",
+        "Mg(OH)2",
+        "MgSO4"
+      ],
+      "t": 0,
+      "izoh": "3MgSO4 + 2Na3PO4 → Mg3(PO4)2 + 3Na2SO4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#733ae472"
+    },
+    {
+      "q": "Sanoatda suvning qattiqligini yo'qotish uchun qanday usul qo'llaniladi?",
+      "v": [
+        "Ion almashinuv usuli",
+        "Distillatsiya usuli",
+        "Bug'latish usuli",
+        "Muzlatish usuli"
+      ],
+      "t": 0,
+      "izoh": "Sanoatda ion almashinuv usuli qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#721fa965"
+    },
+    {
+      "q": "Kationitlar deganda qanday moddalar tushuniladi?",
+      "v": [
+        "Suvda erimaydigan, tashqi muhit kationlariga almashina oluvchi harakatchan kationlar tutadigan qattiq moddalar",
+        "Suvda eriydigan tuzlar",
+        "Suvda erimaydigan, anionlar tutadigan moddalar",
+        "Suyuq ion almashtirgichlar"
+      ],
+      "t": 0,
+      "izoh": "Kationitlar — erimaydigan, harakatchan kationlar (Na+) tutadigan qattiq moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#7fc004f8"
+    },
+    {
+      "q": "Anionitlar deganda qanday moddalar tushuniladi?",
+      "v": [
+        "Suvda erimaydigan, tashqi muhit anionlariga almashina oluvchi harakatchan anionlar tutadigan qattiq moddalar",
+        "Suvda eriydigan sulfatlar",
+        "Suvda erimaydigan karbonatlar",
+        "Kationlar tutadigan moddalar"
+      ],
+      "t": 0,
+      "izoh": "Anionitlar — tashqi muhit anionlariga almashina oluvchi harakatchan anionlar tutadigan qattiq moddalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#d3e0e3d4"
+    },
+    {
+      "q": "Kationitli kolonkadan o'tkazilgan suvdagi Ca2+, Mg2+ ionlari qanday ionlarga almashadi?",
+      "v": [
+        "Na+ ionlariga",
+        "H+ ionlariga",
+        "K+ ionlariga",
+        "NH4+ ionlariga"
+      ],
+      "t": 0,
+      "izoh": "Ca2+, Mg2+ ionlari Na+ ionlariga almashib kolonkada qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#5d95226a"
+    },
+    {
+      "q": "Kationitlardagi R nimani bildiradi?",
+      "v": [
+        "Murakkab tuzilishga ega organik radikal",
+        "Metall ionini",
+        "Harakatchan natriy ionini",
+        "Sulfat ionini"
+      ],
+      "t": 0,
+      "izoh": "R — murakkab tuzilishga ega organik radikal.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#2cdba103"
+    },
+    {
+      "q": "Kationitlar suvni qanday ionlardan tozalashga yordam beradi?",
+      "v": [
+        "Kalsiy va magniy ionlaridan",
+        "Sulfat va xlorid ionlaridan",
+        "Natriy ionlaridan",
+        "Vodorod ionlaridan"
+      ],
+      "t": 0,
+      "izoh": "Kationitlar suvni Ca va Mg ionlaridan tozalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#a7b5c601"
+    },
+    {
+      "q": "Suvdagi anionlarni (SO4 2-, Cl-) chiqarib yuborish uchun qaysi ionitlar qo'llaniladi?",
+      "v": [
+        "Anionitlar",
+        "Kationitlar",
+        "Karbonatlar",
+        "Silikatlar"
+      ],
+      "t": 0,
+      "izoh": "Anionlarni chiqarib yuborish uchun anionitlar qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#3cca9fdd"
+    },
+    {
+      "q": "Suvni yumshatish uchun distillatsiya usuli qanday ishlaydi?",
+      "v": [
+        "Suvni haydash yo'li bilan",
+        "Suvni muzlatish yo'li bilan",
+        "Suvni filtrlash yo'li bilan",
+        "Suvni xlorlash yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Suvning qattiqligini pasaytirish uchun distillatsiya (suvni haydash) ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#c3f0db97"
+    },
+    {
+      "q": "Qattiq suvda go'sht, sabzavotlar va don mahsulotlari nima uchun yaxshi pishmaydi?",
+      "v": [
+        "Suvdagi Ca va Mg ionlari ta'sirida",
+        "Suvdagi Na ionlari ta'sirida",
+        "Suv harorati pastligi sababli",
+        "Suvdagi kislorod ta'sirida"
+      ],
+      "t": 0,
+      "izoh": "Darslikda qattiq suvda bu mahsulotlar yaxshi pishmasligi aytilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#dc692a6b"
+    },
+    {
+      "q": "Kalsiy qattiqligi deganda nima tushuniladi?",
+      "v": [
+        "Suvda kalsiy tuzlari mavjudligi bilan bog'liq qattiqlik",
+        "Suvda magniy tuzlari mavjudligi bilan bog'liq qattiqlik",
+        "Suvda gidrokarbonatlar mavjudligi",
+        "Suvda sulfatlar mavjudligi"
+      ],
+      "t": 0,
+      "izoh": "Kalsiy qattiqligi — suvda kalsiy tuzlari mavjudligi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#523f1e0e"
+    },
+    {
+      "q": "Magniy qattiqligi deganda nima tushuniladi?",
+      "v": [
+        "Suvda magniy tuzlari mavjudligi bilan bog'liq qattiqlik",
+        "Suvda kalsiy tuzlari mavjudligi bilan bog'liq qattiqlik",
+        "Suvda gidrokarbonatlar mavjudligi",
+        "Suvda natriy tuzlari mavjudligi"
+      ],
+      "t": 0,
+      "izoh": "Magniy qattiqligi — suvda magniy tuzlari mavjudligi bilan bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#fd29830c"
+    },
+    {
+      "q": "Namunaviy misolda 10 % li 500 g CaCl2 eritmasini tayyorlash uchun qancha CaCl2 kerak?",
+      "v": [
+        "50 g",
+        "10 g",
+        "100 g",
+        "45 g"
+      ],
+      "t": 0,
+      "izoh": "m(eruvchi) = 500.0,1 = 50 g CaCl2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#bfef794e"
+    },
+    {
+      "q": "Namunaviy misolda 10 % li 500 g CaCl2 eritmasini tayyorlash uchun qancha distillangan suv kerak?",
+      "v": [
+        "450 g",
+        "400 g",
+        "490 g",
+        "500 g"
+      ],
+      "t": 0,
+      "izoh": "500 - 50 = 450 g suv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#393970f2"
+    },
+    {
+      "q": "2-namunaviy misolda insonning kalsiyga bo'lgan bir kunlik ehtiyoji qancha ekan?",
+      "v": [
+        "0,8 g",
+        "0,13 g",
+        "1,5 g",
+        "6 g"
+      ],
+      "t": 0,
+      "izoh": "Insonning kalsiyga bir kunlik ehtiyoji 0,8 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#df5c9a31"
+    },
+    {
+      "q": "Sigir sutida taxminan qancha foiz kalsiy bo'ladi (2-misol)?",
+      "v": [
+        "0,13 %",
+        "1,3 %",
+        "0,8 %",
+        "13 %"
+      ],
+      "t": 0,
+      "izoh": "Sigir sutida taxminan 0,13 % kalsiy bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#cb69d493"
+    },
+    {
+      "q": "2-namunaviy misolda kunlik ehtiyojni qondirish uchun qancha sigir suti iste'mol qilish kerak ekan?",
+      "v": [
+        "615 g",
+        "165 g",
+        "800 g",
+        "61,5 g"
+      ],
+      "t": 0,
+      "izoh": "x = 0,8.100/0,13 = 615 g sigir suti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#dce4dad8"
+    },
+    {
+      "q": "3-namunaviy misolda 70 kg massali inson organizmining qancha qismi suyak ekan?",
+      "v": [
+        "14 kg",
+        "2,8 kg",
+        "1,084 kg",
+        "7 kg"
+      ],
+      "t": 0,
+      "izoh": "Organizmning 20 % i suyak: 70.0,20 = 14 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#85de2e43"
+    },
+    {
+      "q": "3-namunaviy misolda 14 kg suyakda qancha kalsiy fosfat bor ekan?",
+      "v": [
+        "2,8 kg",
+        "1,4 kg",
+        "0,28 kg",
+        "14 kg"
+      ],
+      "t": 0,
+      "izoh": "Suyakning 20 % i Ca3(PO4)2: 14.0,20 = 2,8 kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#c88a2de3"
+    },
+    {
+      "q": "3-namunaviy misolda 2,8 kg Ca3(PO4)2 dagi kalsiy massasi qancha ekan?",
+      "v": [
+        "1,084 kg",
+        "2,8 kg",
+        "0,84 kg",
+        "1,2 kg"
+      ],
+      "t": 0,
+      "izoh": "x = 2,8.120/310 = 1,084 kg Ca.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_9_ozb_m24-suvning-qattiqligi#db593098"
+    }
+  ]
+}

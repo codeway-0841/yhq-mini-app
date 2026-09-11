@@ -1,0 +1,396 @@
+{
+  "nom": "Colours (Ranglar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "What colour is this? 🍓",
+      "v": [
+        "Red",
+        "Blue",
+        "Green",
+        "Yellow"
+      ],
+      "t": 0,
+      "izoh": "🍓 = red (qizil).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#ce287f70"
+    },
+    {
+      "q": "What colour is this? 🍌",
+      "v": [
+        "Pink",
+        "Yellow",
+        "Black",
+        "Blue"
+      ],
+      "t": 1,
+      "izoh": "🍌 = yellow (sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#e6ce5b8d"
+    },
+    {
+      "q": "What colour is this? 🌿",
+      "v": [
+        "Green",
+        "Red",
+        "Brown",
+        "White"
+      ],
+      "t": 0,
+      "izoh": "🌿 = green (yashil).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#ac582c3a"
+    },
+    {
+      "q": "What colour is the sky? ☁️🔵",
+      "v": [
+        "Orange",
+        "Purple",
+        "Blue",
+        "Green"
+      ],
+      "t": 2,
+      "izoh": "Osmon = blue (ko'k).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#e78475c6"
+    },
+    {
+      "q": "What colour is this? 🍊",
+      "v": [
+        "Orange",
+        "Red",
+        "Pink",
+        "Blue"
+      ],
+      "t": 0,
+      "izoh": "🍊 = orange (to'q sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#0a7085f0"
+    },
+    {
+      "q": "What colour is snow? ❄️",
+      "v": [
+        "Black",
+        "White",
+        "Green",
+        "Red"
+      ],
+      "t": 1,
+      "izoh": "Qor = white (oq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#45aae69f"
+    },
+    {
+      "q": "What colour is this? 🍇",
+      "v": [
+        "Yellow",
+        "Green",
+        "Purple",
+        "Red"
+      ],
+      "t": 2,
+      "izoh": "🍇 = purple (siyohrang).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#6c4939df"
+    },
+    {
+      "q": "What colour is the night sky? 🌑",
+      "v": [
+        "Black",
+        "White",
+        "Pink",
+        "Orange"
+      ],
+      "t": 0,
+      "izoh": "Tungi osmon = black (qora).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#76f3dace"
+    },
+    {
+      "q": "What colour is this? 🐷",
+      "v": [
+        "Blue",
+        "Pink",
+        "Green",
+        "Brown"
+      ],
+      "t": 1,
+      "izoh": "🐷 = pink (pushti).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#60c1e853"
+    },
+    {
+      "q": "What colour is this? 🐻",
+      "v": [
+        "Purple",
+        "Blue",
+        "Brown",
+        "White"
+      ],
+      "t": 2,
+      "izoh": "🐻 = brown (jigarrang).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#0983de16"
+    },
+    {
+      "q": "What colour is 🍓?",
+      "v": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "t": 0,
+      "izoh": "🍓 = red (qizil).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#47a3ee8f"
+    },
+    {
+      "q": "What colour is ☁️ (a cloud)?",
+      "v": [
+        "black",
+        "white",
+        "red",
+        "green"
+      ],
+      "t": 1,
+      "izoh": "☁️ = white (oq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#1bcb08c0"
+    },
+    {
+      "q": "What colour is 🌰 (a chestnut)?",
+      "v": [
+        "brown",
+        "blue",
+        "pink",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "🌰 = brown (jigarrang).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#616b29e9"
+    },
+    {
+      "q": "What colour do you get from red + yellow?",
+      "v": [
+        "green",
+        "orange",
+        "purple",
+        "blue"
+      ],
+      "t": 1,
+      "izoh": "qizil + sariq = orange (to'q sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#22e52ace"
+    },
+    {
+      "q": "What colour do you get from blue + yellow?",
+      "v": [
+        "green",
+        "orange",
+        "brown",
+        "pink"
+      ],
+      "t": 0,
+      "izoh": "ko'k + sariq = green (yashil).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#da73018a"
+    },
+    {
+      "q": "What colour do you get from red + blue?",
+      "v": [
+        "orange",
+        "green",
+        "purple",
+        "yellow"
+      ],
+      "t": 2,
+      "izoh": "qizil + ko'k = purple (binafsha).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#8702cc4a"
+    },
+    {
+      "q": "What colour do you get from black + white?",
+      "v": [
+        "grey",
+        "brown",
+        "pink",
+        "blue"
+      ],
+      "t": 0,
+      "izoh": "qora + oq = grey (kulrang).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#c2291fe7"
+    },
+    {
+      "q": "The grass is ___.",
+      "v": [
+        "blue",
+        "green",
+        "red",
+        "white"
+      ],
+      "t": 1,
+      "izoh": "O't yashil (green).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#7584227b"
+    },
+    {
+      "q": "Snow is ___.",
+      "v": [
+        "white",
+        "black",
+        "green",
+        "yellow"
+      ],
+      "t": 0,
+      "izoh": "Qor oq (white).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#85c15fee"
+    },
+    {
+      "q": "On a clear day the sky is ___.",
+      "v": [
+        "green",
+        "brown",
+        "blue",
+        "pink"
+      ],
+      "t": 2,
+      "izoh": "Osmon ko'k (blue).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#308b51ee"
+    },
+    {
+      "q": "The sun looks ___.",
+      "v": [
+        "yellow",
+        "purple",
+        "blue",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "Quyosh sariq (yellow).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#2c235657"
+    },
+    {
+      "q": "A banana is ___.",
+      "v": [
+        "red",
+        "yellow",
+        "blue",
+        "brown"
+      ],
+      "t": 1,
+      "izoh": "Banan sariq (yellow).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#dd17443e"
+    },
+    {
+      "q": "Blood is ___.",
+      "v": [
+        "red",
+        "green",
+        "blue",
+        "white"
+      ],
+      "t": 0,
+      "izoh": "Qon qizil (red).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#7c9a83a4"
+    },
+    {
+      "q": "What colour is 🍋?",
+      "v": [
+        "green",
+        "yellow",
+        "red",
+        "blue"
+      ],
+      "t": 1,
+      "izoh": "🍋 = yellow (sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#aefdc492"
+    },
+    {
+      "q": "What colour is 🍀?",
+      "v": [
+        "green",
+        "blue",
+        "brown",
+        "pink"
+      ],
+      "t": 0,
+      "izoh": "🍀 = green (yashil).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#47ff1ff8"
+    },
+    {
+      "q": "What colour is 🌊?",
+      "v": [
+        "yellow",
+        "blue",
+        "red",
+        "white"
+      ],
+      "t": 1,
+      "izoh": "🌊 = blue (ko'k).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#0eb6b916"
+    },
+    {
+      "q": "What colour is 🍆?",
+      "v": [
+        "purple",
+        "orange",
+        "green",
+        "red"
+      ],
+      "t": 0,
+      "izoh": "🍆 = purple (binafsha).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#15e196e0"
+    },
+    {
+      "q": "What colour is 🩷?",
+      "v": [
+        "blue",
+        "black",
+        "pink",
+        "brown"
+      ],
+      "t": 2,
+      "izoh": "🩷 = pink (pushti).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#4692e768"
+    },
+    {
+      "q": "What colour is 🍊?",
+      "v": [
+        "orange",
+        "purple",
+        "blue",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "🍊 = orange (to'q sariq).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#2c7f1426"
+    },
+    {
+      "q": "What colour is 🍇?",
+      "v": [
+        "yellow",
+        "purple",
+        "red",
+        "white"
+      ],
+      "t": 1,
+      "izoh": "🍇 = purple (binafsha).",
+      "qiy": "oson",
+      "id": "ing_kids_m6#e977197c"
+    }
+  ]
+}

@@ -1,0 +1,531 @@
+{
+  "nom": "10-mavzu. Energetik pog'onachalar",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Elektronlarning hosil qilgan elektron bulutlarining shakllariga ko'ra nechta guruhga ajratiladi?",
+      "v": [
+        "To'rtta guruhga: s, p, d, f",
+        "Ikki guruhga: s, p",
+        "Uch guruhga: s, p, d",
+        "Besh guruhga: s, p, d, f, g"
+      ],
+      "t": 0,
+      "izoh": "Elektron bulut shakllariga ko'ra s, p, d, f — to'rt guruhga ajratiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#c6361069"
+    },
+    {
+      "q": "Sharsimon shakldagi elektron bulutlarni hosil qiluvchi elektronlar qanday ataladi?",
+      "v": [
+        "s-elektronlar",
+        "p-elektronlar",
+        "d-elektronlar",
+        "f-elektronlar"
+      ],
+      "t": 0,
+      "izoh": "Sharsimon elektron bulut s-elektronlarga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#b90ee516"
+    },
+    {
+      "q": "Har bir energetik qavatda s-elektronlarning miqdori eng ko'pi bilan nechta bo'ladi?",
+      "v": [
+        "2 ta",
+        "6 ta",
+        "10 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "s-elektronlar har qavatda ikkitagacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#000190aa"
+    },
+    {
+      "q": "Gantel shaklidagi elektron bulut hosil qiluvchi elektronlar qanday ataladi?",
+      "v": [
+        "p-elektronlar",
+        "s-elektronlar",
+        "d-elektronlar",
+        "f-elektronlar"
+      ],
+      "t": 0,
+      "izoh": "Gantel shaklidagi elektron bulut p-elektronlarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#5bbe614e"
+    },
+    {
+      "q": "p-elektronlar yadro atrofida qaysi o'qlar bo'ylab uchta orbitalni hosil qiladi?",
+      "v": [
+        "x, y va z o'qlari bo'ylab",
+        "faqat x o'qi bo'ylab",
+        "faqat y o'qi bo'ylab",
+        "x va y o'qlari bo'ylab"
+      ],
+      "t": 0,
+      "izoh": "p-elektronlar x, y, z o'qlari bo'ylab uchta orbital hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#d03c1048"
+    },
+    {
+      "q": "Har bir p-orbitalda eng ko'pi bilan nechta elektron joylashadi?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "4 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Har orbitalda qarama-qarshi yo'nalishda harakatlanuvchi 2 tadan elektron joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#b29cad96"
+    },
+    {
+      "q": "p-qavatchada jami eng ko'pi bilan nechta elektron joylashadi?",
+      "v": [
+        "6 ta",
+        "2 ta",
+        "10 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "Uchta p-orbitalda 2 tadan — jami 6 ta elektron joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#27ea16bb"
+    },
+    {
+      "q": "Energetik qavatcha qaysi harf bilan belgilanadi?",
+      "v": [
+        "l harfi bilan",
+        "n harfi bilan",
+        "m harfi bilan",
+        "z harfi bilan"
+      ],
+      "t": 0,
+      "izoh": "Energetik qavatcha \"l\" harfi bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#d49bd7c8"
+    },
+    {
+      "q": "Energetik qavatchaning (l) qiymatlari qaysi oraliqda bo'ladi?",
+      "v": [
+        "0 dan n-1 gacha",
+        "1 dan n gacha",
+        "0 dan n gacha",
+        "1 dan n+1 gacha"
+      ],
+      "t": 0,
+      "izoh": "l qiymatlari 0 dan n-1 gacha bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#1223f54c"
+    },
+    {
+      "q": "n = 1 bo'lganda energetik qavatchaning (l) qiymati nechaga teng?",
+      "v": [
+        "0",
+        "1",
+        "2",
+        "0 va 1"
+      ],
+      "t": 0,
+      "izoh": "n = 1 bo'lganda l = 0 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#519470b0"
+    },
+    {
+      "q": "n = 2 bo'lganda l ning qiymatlari qanday bo'ladi?",
+      "v": [
+        "0; 1",
+        "faqat 0",
+        "0; 1; 2",
+        "1; 2"
+      ],
+      "t": 0,
+      "izoh": "n = 2 bo'lganda l = 0; 1 qiymatlarga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#ab5d6534"
+    },
+    {
+      "q": "n = 3 bo'lganda l ning qiymatlari qanday bo'ladi?",
+      "v": [
+        "0; 1; 2",
+        "0; 1",
+        "faqat 0",
+        "0; 1; 2; 3"
+      ],
+      "t": 0,
+      "izoh": "n = 3 bo'lganda l = 0; 1; 2 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#0a13b650"
+    },
+    {
+      "q": "n = 4 bo'lganda l ning qiymatlari qanday bo'ladi?",
+      "v": [
+        "0; 1; 2; 3",
+        "0; 1; 2",
+        "0; 1",
+        "1; 2; 3; 4"
+      ],
+      "t": 0,
+      "izoh": "n = 4 bo'lganda l = 0; 1; 2; 3 qiymatlar qabul qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#8b97206b"
+    },
+    {
+      "q": "l = 0 bo'lgan qavatcha qanday ataladi?",
+      "v": [
+        "s-qavatcha",
+        "p-qavatcha",
+        "d-qavatcha",
+        "f-qavatcha"
+      ],
+      "t": 0,
+      "izoh": "l = 0 qiymat s-elektronlarga to'g'ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#1f5a874c"
+    },
+    {
+      "q": "l = 1 bo'lgan qavatcha qanday ataladi?",
+      "v": [
+        "p-qavatcha",
+        "s-qavatcha",
+        "d-qavatcha",
+        "f-qavatcha"
+      ],
+      "t": 0,
+      "izoh": "l = 1 qiymat p-qavatchani bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#3d8a7001"
+    },
+    {
+      "q": "l = 2 bo'lgan qavatcha qanday ataladi?",
+      "v": [
+        "d-qavatcha",
+        "p-qavatcha",
+        "s-qavatcha",
+        "f-qavatcha"
+      ],
+      "t": 0,
+      "izoh": "l = 2 qiymat d-qavatchani bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#f663ce85"
+    },
+    {
+      "q": "l = 3 bo'lgan qavatcha qanday ataladi?",
+      "v": [
+        "f-qavatcha",
+        "d-qavatcha",
+        "p-qavatcha",
+        "s-qavatcha"
+      ],
+      "t": 0,
+      "izoh": "l = 3 qiymat f-qavatchani bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#c9662f49"
+    },
+    {
+      "q": "Ikkinchi energetik qavatdagi qavatchalar qanday yoziladi?",
+      "v": [
+        "2s, 2p",
+        "2s, 2p, 2d",
+        "faqat 2s",
+        "2p, 2d"
+      ],
+      "t": 0,
+      "izoh": "n = 2 da 2s va 2p qavatchalar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#34e67478"
+    },
+    {
+      "q": "Uchinchi energetik qavatdagi qavatchalar qanday yoziladi?",
+      "v": [
+        "3s, 3p, 3d",
+        "3s, 3p",
+        "3s, 3p, 3d, 3f",
+        "3s, 3p, 3d, 4s"
+      ],
+      "t": 0,
+      "izoh": "n = 3 da 3s, 3p, 3d qavatchalar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#79554bf8"
+    },
+    {
+      "q": "To'rtinchi energetik qavatdagi qavatchalar qanday yoziladi?",
+      "v": [
+        "4s, 4p, 4d, 4f",
+        "4s, 4p, 4d",
+        "4s, 4p",
+        "4s, 4p, 4d, 4f, 4g"
+      ],
+      "t": 0,
+      "izoh": "n = 4 da 4s, 4p, 4d, 4f qavatchalar mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#7eef37b2"
+    },
+    {
+      "q": "Qavatchadagi elektronlar soni qaysi formula bilan aniqlanadi?",
+      "v": [
+        "2(2l + 1)",
+        "2n^2",
+        "n^2",
+        "2l + 1"
+      ],
+      "t": 0,
+      "izoh": "Qavatchadagi elektronlar soni 2(2l + 1) formula bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#9077bf78"
+    },
+    {
+      "q": "d-qavatchada eng ko'pi bilan nechta elektron bo'ladi?",
+      "v": [
+        "10 ta",
+        "6 ta",
+        "2 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "d-orbitallarda 10 tagacha elektron bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#28f70fee"
+    },
+    {
+      "q": "f-qavatchada eng ko'pi bilan nechta elektron bo'ladi?",
+      "v": [
+        "14 ta",
+        "10 ta",
+        "6 ta",
+        "18 ta"
+      ],
+      "t": 0,
+      "izoh": "f-qavatchada 14 ta elektron joylashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#502841a4"
+    },
+    {
+      "q": "Energetik qavat 3 bo'lganda undagi elektronlar qaysi qavatchalar bilan xarakterlanadi?",
+      "v": [
+        "s-, p- va d-qavatchalar bilan",
+        "faqat s- va p-qavatchalar bilan",
+        "faqat s-qavatcha bilan",
+        "s-, p-, d- va f-qavatchalar bilan"
+      ],
+      "t": 0,
+      "izoh": "3-qavatdagi elektronlar s-, p-, d-qavatchalar bilan xarakterlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#6dd4a0a1"
+    },
+    {
+      "q": "Elementning tartib raqami ortgan sari qo'shilayotgan elektron qaysi qavatchaga tushishiga qarab elementlar qanday farqlanadi?",
+      "v": [
+        "s-, p-, d-, f-elementlarga",
+        "faqat s- va p-elementlarga",
+        "metall va metallmaslarga",
+        "asosiy va qo'shimcha guruhchalarga"
+      ],
+      "t": 0,
+      "izoh": "Qo'shilayotgan elektron tushadigan qavatchaga qarab s-, p-, d-, f-elementlar farqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#ea06c9f9"
+    },
+    {
+      "q": "Quyidagilardan qaysilari s-elementlar hisoblanadi?",
+      "v": [
+        "Vodorod, geliy, I va II guruh asosiy guruhcha elementlari",
+        "Davr oxiridagi oltita element",
+        "Lantanoidlar va aktinoidlar",
+        "Davr o'rtasidagi o'n element"
+      ],
+      "t": 0,
+      "izoh": "H, He hamda I va II guruh asosiy guruhcha elementlari s-elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#4cb1236e"
+    },
+    {
+      "q": "Davrlarning oxirida joylashgan oltita element (inert gaz bilan birga) qanday elementlardir?",
+      "v": [
+        "p-elementlar",
+        "s-elementlar",
+        "d-elementlar",
+        "f-elementlar"
+      ],
+      "t": 0,
+      "izoh": "Davr oxiridagi oltita element p-elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#0cb38f85"
+    },
+    {
+      "q": "Davrni boshlab beruvchi ikkita element bilan oxirgi oltita element oralig'idagi 10 ta element qanday elementlardir?",
+      "v": [
+        "d-elementlar",
+        "p-elementlar",
+        "s-elementlar",
+        "f-elementlar"
+      ],
+      "t": 0,
+      "izoh": "Oraliqdagi 10 ta element d-elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#599f6182"
+    },
+    {
+      "q": "Lantanoidlar va aktinoidlar qanday elementlarga kiradi?",
+      "v": [
+        "f-elementlarga",
+        "d-elementlarga",
+        "p-elementlarga",
+        "s-elementlarga"
+      ],
+      "t": 0,
+      "izoh": "Lantanoidlar va aktinoidlar f-elementlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#d4300921"
+    },
+    {
+      "q": "Hozirgi davriy sistemada nechta s-element mavjud?",
+      "v": [
+        "14 ta",
+        "36 ta",
+        "40 ta",
+        "28 ta"
+      ],
+      "t": 0,
+      "izoh": "Davriy sistemada 14 ta s-element mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#af024eb3"
+    },
+    {
+      "q": "Hozirgi davriy sistemada nechta p-element mavjud?",
+      "v": [
+        "36 ta",
+        "14 ta",
+        "40 ta",
+        "28 ta"
+      ],
+      "t": 0,
+      "izoh": "Davriy sistemada 36 ta p-element mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#89560505"
+    },
+    {
+      "q": "Hozirgi davriy sistemada nechta d-element mavjud?",
+      "v": [
+        "40 ta",
+        "36 ta",
+        "28 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "Davriy sistemada 40 ta d-element mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#46bb6e1e"
+    },
+    {
+      "q": "Hozirgi davriy sistemada nechta f-element mavjud?",
+      "v": [
+        "28 ta",
+        "40 ta",
+        "36 ta",
+        "14 ta"
+      ],
+      "t": 0,
+      "izoh": "Davriy sistemada 28 ta f-element mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#0278d3b9"
+    },
+    {
+      "q": "Hozirgi davriy sistemada jami nechta kimyoviy element mavjud?",
+      "v": [
+        "118 ta",
+        "110 ta",
+        "114 ta",
+        "120 ta"
+      ],
+      "t": 0,
+      "izoh": "Jami 118 ta kimyoviy element mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#9f664859"
+    },
+    {
+      "q": "Bor atomining ikkinchi energetik qavatidagi uchinchi elektron qanday shakldagi elektron bulut hosil qiladi?",
+      "v": [
+        "Gantel shaklidagi",
+        "Sharsimon",
+        "Ellipssimon",
+        "Aniq trayektoriyali"
+      ],
+      "t": 0,
+      "izoh": "Borning uchinchi tashqi elektronining buluti gantel shaklida — u p-elektron.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_8_ozb_m10-energetik-pogonachalar#baa9e3fb"
+    }
+  ]
+}

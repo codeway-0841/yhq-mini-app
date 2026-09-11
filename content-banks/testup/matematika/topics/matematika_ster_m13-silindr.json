@@ -1,0 +1,1609 @@
+{
+  "nom": "Silindr",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Konserva bankasi silindr shaklida bo'lib, asosining radiusi 4 sm, balandligi esa 10 sm. Bankaning hajmi necha kub santimetrga teng?",
+      "v": [
+        "40π sm³",
+        "80π sm³",
+        "160π sm³",
+        "640π sm³"
+      ],
+      "t": 2,
+      "izoh": "Silindr hajmi V = πR²H formula bilan topiladi. Bu yerda R = 4 sm, H = 10 sm, demak V = π · 4² · 10 = π · 16 · 10 = 160π sm³. 640π — radius o'rniga diametr qo'yilgan, 40π — radius kvadratga oshirilmagan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='80.5' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='80.5' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='80.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80.5' x2='209' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='73.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3Cline x1='225' y1='80.5' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='80.5' x2='229' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='154.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-radius-balandlik",
+      "id": "matematika_ster_m13-silindr#bab06804"
+    },
+    {
+      "q": "Fermer xo'jaligidagi silindrsimon suv bakining asos diametri 6 m, balandligi 5 m. Bakning hajmi necha kub metr?",
+      "v": [
+        "180π m³",
+        "15π m³",
+        "30π m³",
+        "45π m³"
+      ],
+      "t": 3,
+      "izoh": "Avval diametrdan radiusga o'tamiz: R = 6 : 2 = 3 m. Endi V = πR²H = π · 3² · 5 = π · 9 · 5 = 45π m³. 180π — diametr radius deb olingan, 30π — hajm o'rniga yon sirt hisoblangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='129.7' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='129.7' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='129.7' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='129.7' x2='209' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='122.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 6 m%3C/text%3E%3Cline x1='225' y1='129.7' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='129.7' x2='229' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = 5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-radius-balandlik",
+      "id": "matematika_ster_m13-silindr#4ae81abf"
+    },
+    {
+      "q": "Dilnoza sotib olgan silindr shaklidagi guldonning ichki radiusi 5 sm, balandligi 20 sm. Guldon to'la suvga to'ldirilsa, necha litr suv sig'adi? (π ≈ 3,14)",
+      "v": [
+        "0,628 litr",
+        "1,57 litr",
+        "6,28 litr",
+        "15,7 litr"
+      ],
+      "t": 1,
+      "izoh": "Guldon hajmi V = πR²H = 3,14 · 5² · 20 = 3,14 · 25 · 20 = 1570 sm³. Har litrda 1000 sm³ bor, shuning uchun 1570 : 1000 = 1,57 litr. 6,28 litr — radius o'rniga diametr qo'yilganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 1 188 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 0 188 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112' y1='76' x2='112' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='188' y1='76' x2='188' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='38' ry='11.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='76' x2='188' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='169' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Cline x1='204' y1='76' x2='204' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='76' x2='208' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='228' x2='208' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-radius-balandlik",
+      "id": "matematika_ster_m13-silindr#86806af9"
+    },
+    {
+      "q": "Issiqxonadagi silindrsimon suv rezervuarining asos radiusi 1,5 m, balandligi 4 m. Rezervuarning hajmi necha kub metr? (π ≈ 3,14)",
+      "v": [
+        "37,68 m³",
+        "28,26 m³",
+        "113,04 m³",
+        "18,84 m³"
+      ],
+      "t": 1,
+      "izoh": "Hajm formulasiga qo'yamiz: V = πR²H = 3,14 · 1,5² · 4. Avval 1,5² = 2,25, so'ngra 3,14 · 2,25 = 7,065 va 7,065 · 4 = 28,26 m³. 18,84 — radius kvadratga oshirilmagan, 37,68 — yon sirt formulasi ishlatilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 93 228 A 57 17.1 0 0 1 207 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 93 228 A 57 17.1 0 0 0 207 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='93' y1='76' x2='93' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='207' y1='76' x2='207' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='57' ry='17.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='76' x2='207' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='178.5' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 1,5 m%3C/text%3E%3Cline x1='223' y1='76' x2='223' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219' y1='76' x2='227' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219' y1='228' x2='227' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='228' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-radius-balandlik",
+      "id": "matematika_ster_m13-silindr#de23de40"
+    },
+    {
+      "q": "Uzunligi 2 m bo'lgan to'g'ri quvurning ichki radiusi 5 sm. Quvur to'la suv bilan to'lganda ichida necha litr suv bo'ladi? (π ≈ 3,14)",
+      "v": [
+        "6,28 litr",
+        "15,7 litr",
+        "62,8 litr",
+        "1,57 litr"
+      ],
+      "t": 1,
+      "izoh": "Uzunlikni bir birlikka keltiramiz: 2 m = 200 sm. Quvur ichi silindr, demak V = πR²H = 3,14 · 25 · 200 = 15700 sm³. Litrga o'tkazamiz: 15700 : 1000 = 15,7 litr. 62,8 litr — radius o'rniga diametr olingan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-radius-balandlik",
+      "id": "matematika_ster_m13-silindr#b5a0074e"
+    },
+    {
+      "q": "Silindr shaklidagi beton ustunning asos radiusi 3 dm, balandligi 12 dm bo'lsa, uning yon sirti yuzi necha kvadrat detsimetr?",
+      "v": [
+        "36π dm²",
+        "144π dm²",
+        "108π dm²",
+        "72π dm²"
+      ],
+      "t": 3,
+      "izoh": "Yon sirt yuzi S = 2πRH formula bilan hisoblanadi. Qiymatlarni qo'yamiz: S = 2π · 3 · 12 = 72π dm². 36π — ikkiga ko'paytirish tushirib qoldirilgan, 108π — yon sirt o'rniga hajm formulasi ishlatilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 1 188 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 0 188 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112' y1='76' x2='112' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='188' y1='76' x2='188' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='38' ry='11.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='76' x2='188' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='169' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 3 dm%3C/text%3E%3Cline x1='204' y1='76' x2='204' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='76' x2='208' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='228' x2='208' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 12 dm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yon-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#c7b33a20"
+    },
+    {
+      "q": "Silindrning asos diametri 14 sm, balandligi 10 sm ekani ma'lum. Silindr yon sirtining yuzi nechaga teng? (π ≈ 22/7)",
+      "v": [
+        "440 sm²",
+        "880 sm²",
+        "220 sm²",
+        "1540 sm²"
+      ],
+      "t": 0,
+      "izoh": "Radius diametrning yarmi: R = 14 : 2 = 7 sm. Yon sirt S = 2πRH = 2 · (22/7) · 7 · 10 = 2 · 22 · 10 = 440 sm². 880 sm² — diametrni radius deb olish natijasi, 1540 sm² — hajm formulasi qo'llangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.7' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='143.7' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='143.7' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.7' x2='209' y2='143.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='136.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 14 sm%3C/text%3E%3Cline x1='225' y1='143.7' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='143.7' x2='229' y2='143.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='185.9' font-size='13' fill='%23334155' text-anchor='start'%3EH = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yon-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#972b82e1"
+    },
+    {
+      "q": "Silindrning yasovchisi 15 sm, asos aylanasining uzunligi esa 12π sm ga teng. Silindr yon sirtining yuzi qanday?",
+      "v": [
+        "360π sm²",
+        "540π sm²",
+        "180π sm²",
+        "90π sm²"
+      ],
+      "t": 2,
+      "izoh": "Yon sirtning yoyilmasi to'g'ri to'rtburchak bo'lib, uning bir tomoni asos aylanasi uzunligi, ikkinchisi yasovchi. Demak S = C · H = 12π · 15 = 180π sm². 360π — aylana uzunligi yana ikkiga ko'paytirilgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='66.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='66.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='66.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='225' y1='66.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='66.5' x2='229' y2='66.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='140.3' font-size='13' fill='%23334155' text-anchor='start'%3El = 15 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 12π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yon-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#298e610c"
+    },
+    {
+      "q": "Zavoddagi silindr shaklidagi bochkaning asos radiusi 40 sm, balandligi 1 m. Bochka yon sirtining yuzi necha kvadrat metr? (π ≈ 3,14)",
+      "v": [
+        "5,024 m²",
+        "0,5024 m²",
+        "251,2 m²",
+        "2,512 m²"
+      ],
+      "t": 3,
+      "izoh": "Barcha o'lchamni metrga keltiramiz: R = 40 sm = 0,4 m, H = 1 m. Yon sirt S = 2πRH = 2 · 3,14 · 0,4 · 1 = 2,512 m². 5,024 — diametr bilan hisoblangan, 251,2 — santimetrdagi natija noto'g'ri aylantirilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='80.5' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='80.5' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='80.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80.5' x2='209' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='73.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 40 sm%3C/text%3E%3Cline x1='225' y1='80.5' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='80.5' x2='229' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='154.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 1 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yon-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#d5eb5b88"
+    },
+    {
+      "q": "Yopiq silindrning asos radiusi 5 sm, balandligi 7 sm. Silindrning to'la sirti yuzi necha kvadrat santimetr?",
+      "v": [
+        "70π sm²",
+        "95π sm²",
+        "175π sm²",
+        "120π sm²"
+      ],
+      "t": 3,
+      "izoh": "To'la sirt ikkita asos va yon sirtdan iborat: S = 2πR² + 2πRH = 2πR(R + H). Demak S = 2π · 5 · (5 + 7) = 10π · 12 = 120π sm². 70π — faqat yon sirt, 95π — bitta asos qo'shilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='145.4' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='145.4' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145.4' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='145.4' x2='209' y2='145.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='138.4' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Cline x1='225' y1='145.4' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='145.4' x2='229' y2='145.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='186.7' font-size='13' fill='%23334155' text-anchor='start'%3EH = 7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#f87ee02a"
+    },
+    {
+      "q": "Usta yopiq silindrsimon tunuka idish yasamoqchi. Idishning radiusi 10 sm, balandligi 25 sm. Unga necha kvadrat santimetr tunuka ketadi? (π ≈ 3,14)",
+      "v": [
+        "2198 sm²",
+        "1570 sm²",
+        "1884 sm²",
+        "7850 sm²"
+      ],
+      "t": 0,
+      "izoh": "Idish yopiq, demak ikkala asos ham kerak: S = 2πR(R + H) = 2 · 3,14 · 10 · (10 + 25) = 62,8 · 35 = 2198 sm². 1570 — faqat yon sirt, 1884 — bitta asos hisobga olingan, 7850 — hajm formulasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='80.5' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='80.5' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='80.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80.5' x2='209' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='73.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Cline x1='225' y1='80.5' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='80.5' x2='229' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='154.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 25 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tola-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#b4face1b"
+    },
+    {
+      "q": "Qopqog'i bo'lmagan silindrsimon chelakning ichki radiusi 14 sm, balandligi 30 sm. Chelakni yasashga ketgan tunuka yuzi qancha? (π ≈ 22/7)",
+      "v": [
+        "2640 sm²",
+        "616 sm²",
+        "3256 sm²",
+        "3872 sm²"
+      ],
+      "t": 2,
+      "izoh": "Chelakda faqat bitta asos bor: S = 2πRH + πR². Yon sirt 2 · (22/7) · 14 · 30 = 2640 sm², tub (22/7) · 196 = 616 sm². Yig'indi 2640 + 616 = 3256 sm². 3872 — ikkala asos qo'shib yuborilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='87.6' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='87.6' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='87.6' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='87.6' x2='209' y2='87.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='80.6' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 14 sm%3C/text%3E%3Cline x1='225' y1='87.6' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='87.6' x2='229' y2='87.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='150.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = 30 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eqopqoqsiz idish%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#98617e0c"
+    },
+    {
+      "q": "Balandligi 6 sm bo'lgan silindrning asos aylanasi uzunligi 10π sm ga teng. Silindrning to'la sirti necha kvadrat santimetr?",
+      "v": [
+        "85π sm²",
+        "150π sm²",
+        "110π sm²",
+        "60π sm²"
+      ],
+      "t": 2,
+      "izoh": "Aylana uzunligidan radiusni topamiz: 2πR = 10π, demak R = 5 sm. To'la sirt S = 2πR(R + H) = 2π · 5 · (5 + 6) = 10π · 11 = 110π sm². 60π — faqat yon sirt, 85π — bitta asos hisobga olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.2' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='143.2' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='143.2' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='225' y1='143.2' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='143.2' x2='229' y2='143.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.6' font-size='13' fill='%23334155' text-anchor='start'%3EH = 6 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 10π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tola-sirt-hisob",
+      "id": "matematika_ster_m13-silindr#b77a75f3"
+    },
+    {
+      "q": "Silindr shaklidagi idishning hajmi 200π sm³, asos radiusi esa 5 sm. Idishning balandligi necha santimetr?",
+      "v": [
+        "40 sm",
+        "2 sm",
+        "8 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "V = πR²H tenglikdan H = V : (πR²). Asos yuzi πR² = 25π sm², demak H = 200π : 25π = 8 sm. 20 sm — hajm o'rniga yon sirt formulasi ishlatilgan, 40 sm — radius kvadratga oshirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 95.7 214 A 54.3 16.3 0 0 1 204.3 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 95.7 214 A 54.3 16.3 0 0 0 204.3 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95.7' y1='62' x2='95.7' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='204.3' y1='62' x2='204.3' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='54.3' ry='16.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='62' x2='204.3' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='177.1' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Cline x1='220.3' y1='62' x2='220.3' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='216.3' y1='62' x2='224.3' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='216.3' y1='214' x2='224.3' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='225.3' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 200π sm³%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmdan-balandlik",
+      "id": "matematika_ster_m13-silindr#e0976eb8"
+    },
+    {
+      "q": "Silindr shaklidagi basseyn tubining radiusi 10 m. Basseynga 942 kub metr suv quyilganda u to'lib ketdi. Basseynning chuqurligi qancha? (π ≈ 3,14)",
+      "v": [
+        "30 m",
+        "15 m",
+        "0,75 m",
+        "3 m"
+      ],
+      "t": 3,
+      "izoh": "Basseyn tubining yuzi S = πR² = 3,14 · 100 = 314 m². Chuqurlik H = V : S = 942 : 314 = 3 m. 30 m — radius kvadratga oshirilmagan, 0,75 m — radius o'rniga diametr qo'yilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='160.9' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='160.9' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='160.9' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='160.9' x2='209' y2='160.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='153.9' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 m%3C/text%3E%3Cline x1='225' y1='160.9' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='160.9' x2='229' y2='160.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='187.5' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 942 m³%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmdan-balandlik",
+      "id": "matematika_ster_m13-silindr#310bd9bb"
+    },
+    {
+      "q": "Nodira 1,57 litr sut sig'adigan silindrsimon idish tanlamoqchi. Idish asosining diametri 10 sm bo'lsa, balandligi qanday bo'lishi kerak? (π ≈ 3,14)",
+      "v": [
+        "100 sm",
+        "50 sm",
+        "20 sm",
+        "5 sm"
+      ],
+      "t": 2,
+      "izoh": "Litrni kub santimetrga o'tkazamiz: 1,57 litr = 1570 sm³. Radius R = 10 : 2 = 5 sm, asos yuzi 3,14 · 25 = 78,5 sm². Balandlik H = 1570 : 78,5 = 20 sm. 50 sm — yon sirt formulasi qo'llangan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 128.3 214 A 21.7 8 0 0 1 171.7 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 128.3 214 A 21.7 8 0 0 0 171.7 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.3' y1='62' x2='128.3' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='171.7' y1='62' x2='171.7' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='21.7' ry='8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='128.3' y1='62' x2='171.7' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 10 sm%3C/text%3E%3Cline x1='187.7' y1='62' x2='187.7' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='183.7' y1='62' x2='191.7' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='183.7' y1='214' x2='191.7' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='192.7' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 1,57 litr%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmdan-balandlik",
+      "id": "matematika_ster_m13-silindr#d45b2663"
+    },
+    {
+      "q": "Silindrning hajmi 96π sm³, asos aylanasining uzunligi esa 8π sm. Shu silindrning balandligi nechaga teng?",
+      "v": [
+        "1,5 sm",
+        "6 sm",
+        "12 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Aylana uzunligidan 2πR = 8π, demak R = 4 sm. Asos yuzi πR² = 16π sm². Balandlik H = 96π : 16π = 6 sm. 12 sm — hajm o'rniga aylana uzunligiga bo'lingan, 24 sm — radius kvadratga oshirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='81.3' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='81.3' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='81.3' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='225' y1='81.3' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='81.3' x2='229' y2='81.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='147.6' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 96π sm³%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Easos aylanasi 8π sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmdan-balandlik",
+      "id": "matematika_ster_m13-silindr#dd6f0283"
+    },
+    {
+      "q": "Silindrning hajmi 100π sm³ ga, balandligi esa 4 sm ga teng. Silindr asosining radiusi necha santimetr?",
+      "v": [
+        "5 sm",
+        "25 sm",
+        "12,5 sm",
+        "10 sm"
+      ],
+      "t": 0,
+      "izoh": "V = πR²H tenglikdan R² = V : (πH) = 100π : 4π = 25. Bundan R = √25 = 5 sm. 25 sm — kvadrat ildiz olinmagan, 12,5 sm — hajm o'rniga yon sirt formulasi ishlatilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='182.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='182.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='182.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='182.5' x2='209' y2='182.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='175.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='225' y1='182.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='182.5' x2='229' y2='182.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='198.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 4 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 100π sm³%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajmdan-radius",
+      "id": "matematika_ster_m13-silindr#9683a082"
+    },
+    {
+      "q": "Silindr shaklidagi suv idishining balandligi 50 sm, unga 15,7 litr suv to'la sig'adi. Idish asosining radiusi qancha? (π ≈ 3,14)",
+      "v": [
+        "20 sm",
+        "5 sm",
+        "10 sm",
+        "100 sm"
+      ],
+      "t": 2,
+      "izoh": "Hajmni kub santimetrga o'tkazamiz: 15,7 litr = 15700 sm³. R² = V : (πH) = 15700 : (3,14 · 50) = 15700 : 157 = 100, demak R = 10 sm. 100 sm — ildiz olinmagan, 20 sm — diametr javob deb yozilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 127.2 214 A 22.8 8 0 0 1 172.8 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 127.2 214 A 22.8 8 0 0 0 172.8 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.2' y1='62' x2='127.2' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='172.8' y1='62' x2='172.8' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='22.8' ry='8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='62' x2='172.8' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='161.4' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='188.8' y1='62' x2='188.8' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='184.8' y1='62' x2='192.8' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='184.8' y1='214' x2='192.8' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='193.8' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 50 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 15,7 litr%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmdan-radius",
+      "id": "matematika_ster_m13-silindr#27ef70de"
+    },
+    {
+      "q": "Silindrsimon konserva bankasining hajmi 785 sm³, balandligi 10 sm. Bankaning asos diametri necha santimetr? (π ≈ 3,14)",
+      "v": [
+        "10 sm",
+        "5 sm",
+        "25 sm",
+        "2,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval radiusni topamiz: R² = 785 : (3,14 · 10) = 785 : 31,4 = 25, demak R = 5 sm. Savolda diametr so'ralgan: d = 2R = 10 sm. 5 sm — radius javob deb yozilgan, 25 sm — ildiz olinmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 93 214 A 57 17.1 0 0 1 207 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 93 214 A 57 17.1 0 0 0 207 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='93' y1='62' x2='93' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='207' y1='62' x2='207' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='57' ry='17.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='93' y1='62' x2='207' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='223' y1='62' x2='223' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219' y1='62' x2='227' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='219' y1='214' x2='227' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='228' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 785 sm³%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajmdan-radius",
+      "id": "matematika_ster_m13-silindr#699d378b"
+    },
+    {
+      "q": "Silindrning balandligi asos radiusidan 3 sm ortiq, hajmi esa 54π sm³ ga teng. Silindrning balandligi qancha?",
+      "v": [
+        "18 sm",
+        "6 sm",
+        "3 sm",
+        "9 sm"
+      ],
+      "t": 1,
+      "izoh": "Radiusni R deb olsak, balandlik R + 3 bo'ladi va πR²(R + 3) = 54π, ya'ni R²(R + 3) = 54. R = 3 da 9 · 6 = 54 to'g'ri chiqadi. Demak R = 3 sm, balandlik esa 3 + 3 = 6 sm. 3 sm — radius javob deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='125.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='125.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='125.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='125.5' x2='209' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Cline x1='225' y1='125.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='125.5' x2='229' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='169.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 54π sm³%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ebalandlik radiusdan 3 sm ortiq%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajmdan-radius",
+      "id": "matematika_ster_m13-silindr#b47ea89c"
+    },
+    {
+      "q": "Silindrning yon sirti yuzi 238π sm², asos radiusi esa 7 sm. Silindrning balandligi necha santimetr?",
+      "v": [
+        "34 sm",
+        "8,5 sm",
+        "119 sm",
+        "17 sm"
+      ],
+      "t": 3,
+      "izoh": "Yon sirt S = 2πRH bo'lgani uchun H = S : (2πR) = 238π : (2π · 7) = 238π : 14π = 17 sm. 34 sm — ikkiga ko'paytirish tushib qolgan, 8,5 sm — radius o'rniga diametr qo'yilgan, 119 sm — radiusga bo'lish unutilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='66.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='66.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='66.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='66.5' x2='209' y2='66.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='59.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 7 sm%3C/text%3E%3Cline x1='225' y1='66.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='66.5' x2='229' y2='66.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='140.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 238π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sirtdan-olcham-topish",
+      "id": "matematika_ster_m13-silindr#b705c876"
+    },
+    {
+      "q": "Silindrsimon ustunning yon sirti 12,56 kvadrat metr, balandligi esa 2 m. Ustun asosining radiusi necha metr? (π ≈ 3,14)",
+      "v": [
+        "2 m",
+        "4 m",
+        "0,5 m",
+        "1 m"
+      ],
+      "t": 3,
+      "izoh": "Yon sirt formulasidan R = S : (2πH) = 12,56 : (2 · 3,14 · 2) = 12,56 : 12,56 = 1 m. 2 m — ikkiga ko'paytirish unutilgan, 4 m — balandlik hisobga olinmay faqat πga bo'lingan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='135.3' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='135.3' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='135.3' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='135.3' x2='209' y2='135.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='128.3' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='225' y1='135.3' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='135.3' x2='229' y2='135.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='174.7' font-size='13' fill='%23334155' text-anchor='start'%3EH = 2 m%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 12,56 m²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sirtdan-olcham-topish",
+      "id": "matematika_ster_m13-silindr#40f7d5aa"
+    },
+    {
+      "q": "Silindrning to'la sirti 280π sm², asos radiusi esa 7 sm ekani berilgan. Silindrning balandligi qancha?",
+      "v": [
+        "13 sm",
+        "20 sm",
+        "33 sm",
+        "16,5 sm"
+      ],
+      "t": 0,
+      "izoh": "To'la sirt S = 2πR(R + H) = 280π, ya'ni 2 · 7 · (7 + H) = 280 va 7 + H = 20. Bundan H = 13 sm. 20 sm — R + H yig'indisi javob deb olingan, 33 sm — ikkiga ko'paytirish tushirib qoldirilgan, 16,5 sm — faqat bitta asos hisobga olingan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='84.2' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='84.2' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='84.2' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='84.2' x2='209' y2='84.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='77.2' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 7 sm%3C/text%3E%3Cline x1='225' y1='84.2' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='84.2' x2='229' y2='84.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='149.1' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eto'la sirt 280π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sirtdan-olcham-topish",
+      "id": "matematika_ster_m13-silindr#27d1d635"
+    },
+    {
+      "q": "Silindrning balandligi asos diametriga teng, to'la sirti esa 54π sm². Shu silindrning hajmi nechaga teng?",
+      "v": [
+        "54π sm³",
+        "27π sm³",
+        "108π sm³",
+        "216π sm³"
+      ],
+      "t": 0,
+      "izoh": "Shart bo'yicha H = 2R. To'la sirt 2πR(R + 2R) = 6πR² = 54π, demak R² = 9 va R = 3 sm, H = 6 sm. Hajm V = πR²H = π · 9 · 6 = 54π sm³. 27π — balandlik radiusga teng deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='209' y2='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='89' font-size='13' fill='%23334155' text-anchor='middle'%3Ed%3C/text%3E%3Cline x1='225' y1='96' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='96' x2='229' y2='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EH = d%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eto'la sirt 54π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sirtdan-olcham-topish",
+      "id": "matematika_ster_m13-silindr#97fd086e"
+    },
+    {
+      "q": "Silindr asosining radiusi 6 sm, balandligi 10 sm. Silindrning o'q kesimi yuzi necha kvadrat santimetr?",
+      "v": [
+        "120 sm²",
+        "60 sm²",
+        "240 sm²",
+        "44 sm²"
+      ],
+      "t": 0,
+      "izoh": "O'q kesimi — tomonlari asos diametri va balandlikka teng to'g'ri to'rtburchak. Diametr 2R = 12 sm, demak yuza 12 · 10 = 120 sm². 60 sm² — diametr o'rniga radius olingan, 44 sm² — yuza o'rniga perimetr hisoblangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='129.7' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='129.7' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='129.7' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,129.7 209,129.7 209,228 91,228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='129.7' x2='209' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='122.7' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Cline x1='225' y1='129.7' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='129.7' x2='229' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "oq-kesim-yuzi",
+      "id": "matematika_ster_m13-silindr#bd494f28"
+    },
+    {
+      "q": "Silindrning o'q kesimi yuzi 48 sm², balandligi esa 6 sm ga teng. Silindr asosining radiusi qancha?",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "2 sm",
+        "24 sm"
+      ],
+      "t": 0,
+      "izoh": "O'q kesimi to'g'ri to'rtburchak, uning yuzi 2R · H = 48. Demak 2R = 48 : 6 = 8 sm va R = 4 sm. 8 sm — topilgan diametr javob deb yozilgan, 24 sm — balandlik hisobga olinmagan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='155' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='155' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='155' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,155 209,155 209,214 91,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='155' x2='209' y2='155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='225' y1='155' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='155' x2='229' y2='155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='184.5' font-size='13' fill='%23334155' text-anchor='start'%3EH = 6 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi yuzi 48 sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-yuzi",
+      "id": "matematika_ster_m13-silindr#274b68f8"
+    },
+    {
+      "q": "Silindrsimon yog'och g'o'la o'qi bo'ylab ikkiga arralandi. Kesim to'g'ri to'rtburchagining eni 30 sm, uzunligi esa 120 sm bo'lsa, g'o'la asosining radiusi qancha?",
+      "v": [
+        "7,5 sm",
+        "15 sm",
+        "30 sm",
+        "60 sm"
+      ],
+      "t": 1,
+      "izoh": "O'q kesimining eni asos diametriga, uzunligi esa g'o'la balandligiga teng. Demak diametr 30 sm va radius uning yarmi: R = 30 : 2 = 15 sm. 30 sm — diametr javob deb olingan, 60 sm — balandlikning yarmi, 7,5 sm — diametr ikki marta ikkiga bo'lingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 131 228 A 19 8 0 0 1 169 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 131 228 A 19 8 0 0 0 169 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='131' y1='76' x2='131' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='169' y1='76' x2='169' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='19' ry='8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='131,76 169,76 169,228 131,228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='131' y1='76' x2='169' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Cline x1='185' y1='76' x2='185' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='76' x2='189' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='228' x2='189' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190' y='152' font-size='13' fill='%23334155' text-anchor='start'%3E120 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-yuzi",
+      "id": "matematika_ster_m13-silindr#ec3e3162"
+    },
+    {
+      "q": "Silindrning o'q kesimi diagonali 13 sm, balandligi esa 12 sm. Silindr asosining radiusi necha santimetr?",
+      "v": [
+        "1,25 sm",
+        "2,5 sm",
+        "5 sm",
+        "6,5 sm"
+      ],
+      "t": 1,
+      "izoh": "O'q kesimi to'g'ri to'rtburchak, uning tomonlari 2R va 12, diagonali 13. Pifagor teoremasiga ko'ra (2R)² = 13² − 12² = 169 − 144 = 25, demak 2R = 5 va R = 2,5 sm. 5 sm — diametr javob deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 102.5 214 A 47.5 14.3 0 0 1 197.5 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 102.5 214 A 47.5 14.3 0 0 0 197.5 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102.5' y1='62' x2='102.5' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='197.5' y1='62' x2='197.5' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='47.5' ry='14.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='102.5,62 197.5,62 197.5,214 102.5,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='102.5' y1='62' x2='197.5' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='213.5' y1='62' x2='213.5' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='209.5' y1='62' x2='217.5' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='209.5' y1='214' x2='217.5' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='218.5' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 12 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim diagonali 13 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oq-kesim-yuzi",
+      "id": "matematika_ster_m13-silindr#4b711555"
+    },
+    {
+      "q": "Ustaxonada yasalgan silindrsimon g'altakning o'q kesimi yuzi 104 sm², balandligi esa asos diametridan 5 sm ortiq. G'altak asosining radiusi qancha?",
+      "v": [
+        "4 sm",
+        "8 sm",
+        "13 sm",
+        "6,5 sm"
+      ],
+      "t": 0,
+      "izoh": "Diametrni x deb olsak, balandlik x + 5 va o'q kesimi yuzi x(x + 5) = 104. Bundan x² + 5x − 104 = 0, diskriminant 441, x = 8 sm. Radius R = 8 : 2 = 4 sm. 8 sm — diametr, 13 sm — balandlik javob deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='62.3' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='62.3' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62.3' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,62.3 209,62.3 209,214 91,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='91' y1='62.3' x2='209' y2='62.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55.3' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='225' y1='62.3' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='62.3' x2='229' y2='62.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='138.1' font-size='13' fill='%23334155' text-anchor='start'%3EH = d + 5%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi yuzi 104 sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oq-kesim-yuzi",
+      "id": "matematika_ster_m13-silindr#afe06376"
+    },
+    {
+      "q": "Silindrning o'q kesimi tomoni 8 sm bo'lgan kvadratdan iborat. Shu silindrning hajmi necha kub santimetr?",
+      "v": [
+        "64π sm³",
+        "256π sm³",
+        "128π sm³",
+        "512π sm³"
+      ],
+      "t": 2,
+      "izoh": "O'q kesimi kvadrat bo'lsa, uning tomonlari 2R va H teng: 2R = 8 va H = 8, demak R = 4 sm. Hajm V = πR²H = π · 16 · 8 = 128π sm³. 512π — kvadrat tomoni radius deb olingan, 64π — balandlik radiusga tenglashtirilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,96 209,96 209,214 91,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi tomoni 8 sm bo'lgan kvadrat%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-tomonli-silindr",
+      "id": "matematika_ster_m13-silindr#ab8a13bc"
+    },
+    {
+      "q": "O'q kesimi kvadrat bo'lgan silindrning yon sirti 36π sm². Shu silindr asosining radiusi qancha?",
+      "v": [
+        "3 sm",
+        "6 sm",
+        "9 sm",
+        "1,5 sm"
+      ],
+      "t": 0,
+      "izoh": "O'q kesimi kvadrat bo'lgani uchun H = 2R. Yon sirt 2πR · 2R = 4πR² = 36π, demak R² = 9 va R = 3 sm. 9 sm — kvadrat ildiz olinmagan, 6 sm — topilgan diametr javob deb yozilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,96 209,96 209,214 91,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='96' x2='209' y2='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='89' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 36π sm²%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi kvadrat%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-silindr",
+      "id": "matematika_ster_m13-silindr#dce85f6c"
+    },
+    {
+      "q": "Balandligi asos diametriga teng bo'lgan silindrning to'la sirti 24π sm². Silindrning balandligi necha santimetr?",
+      "v": [
+        "4 sm",
+        "2 sm",
+        "8 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "H = 2R bo'lgani uchun to'la sirt 2πR(R + 2R) = 6πR² = 24π. Bundan R² = 4 va R = 2 sm, balandlik esa H = 2 · 2 = 4 sm. 2 sm — radius javob deb olingan, 6 sm — R va H yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='225' y1='96' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='96' x2='229' y2='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='155' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eto'la sirt 24π sm²%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3EH = 2R%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-tomonli-silindr",
+      "id": "matematika_ster_m13-silindr#5bf8265e"
+    },
+    {
+      "q": "O'q kesimi kvadrat bo'lgan silindrning hajmi 54π sm³. Shu silindrning o'q kesimi yuzi nechaga teng?",
+      "v": [
+        "18 sm²",
+        "9 sm²",
+        "72 sm²",
+        "36 sm²"
+      ],
+      "t": 3,
+      "izoh": "H = 2R bo'lgani uchun hajm V = πR² · 2R = 2πR³ = 54π, demak R³ = 27 va R = 3 sm, H = 6 sm. O'q kesimi tomoni 6 sm bo'lgan kvadrat, yuzi 6 · 6 = 36 sm². 18 sm² — radius va balandlik ko'paytmasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='91,96 209,96 209,214 91,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 54π sm³%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi kvadrat%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-silindr",
+      "id": "matematika_ster_m13-silindr#08d6f697"
+    },
+    {
+      "q": "O'q kesimi kvadrat bo'lgan silindrning yon sirti yuzi 100π sm². Shu silindrning to'la sirti necha kvadrat santimetr?",
+      "v": [
+        "125π sm²",
+        "200π sm²",
+        "120π sm²",
+        "150π sm²"
+      ],
+      "t": 3,
+      "izoh": "H = 2R shartidan yon sirt 4πR² = 100π, demak R² = 25, R = 5 sm va H = 10 sm. To'la sirt 2πR(R + H) = 2π · 5 · 15 = 150π sm². 125π — bitta asos qo'shilgan, 120π — asos yuzi o'rniga aylana uzunligi qo'shilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 100π sm²%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi kvadrat%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-tomonli-silindr",
+      "id": "matematika_ster_m13-silindr#683f332c"
+    },
+    {
+      "q": "To'g'ri silindrning yasovchisi 23 sm, asos radiusi esa 13 sm ga teng. Silindr o'qi bilan yasovchisi orasidagi masofa necha santimetr?",
+      "v": [
+        "26 sm",
+        "23 sm",
+        "36 sm",
+        "13 sm"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri silindrda o'q ham, yasovchi ham asos tekisligiga perpendikulyar. Yasovchining asosdagi tayanch nuqtasi aylanada yotadi, o'q esa markazdan o'tadi, shuning uchun ular orasidagi masofa aynan radiusga teng, ya'ni 13 sm. 26 sm — diametr, 23 sm — yasovchining o'zi, 36 sm — radius bilan yasovchi yig'indisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasovchi-tushuncha",
+      "id": "matematika_ster_m13-silindr#bb6716d3"
+    },
+    {
+      "q": "To'g'ri silindrning yasovchisi va balandligi haqidagi quyidagi tasdiqlardan qaysi biri to'g'ri?",
+      "v": [
+        "Yasovchi balandlikka teng va asos tekisligiga perpendikulyar",
+        "Yasovchi balandlikdan uzun va asos tekisligiga og'ma",
+        "Yasovchi asos diametriga har doim teng",
+        "Yasovchi asos radiusining ikki barobariga teng"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri silindrda yasovchilar asos tekisliklariga perpendikulyar joylashadi, shuning uchun har bir yasovchi ikki asos orasidagi masofani, ya'ni balandlikni beradi. Og'ma silindrdagina yasovchi balandlikdan uzun bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasovchi-tushuncha",
+      "id": "matematika_ster_m13-silindr#db1c1f3e"
+    },
+    {
+      "q": "Silindrning o'qi orqali o'tuvchi kesim yuzi 60 sm², yasovchisi esa 10 sm. Asos aylanasining uzunligi qancha? (π ≈ 3,14)",
+      "v": [
+        "18,84 sm",
+        "37,68 sm",
+        "9,42 sm",
+        "28,26 sm"
+      ],
+      "t": 0,
+      "izoh": "O'q kesimi tomonlari 2R va 10 bo'lgan to'g'ri to'rtburchak: 2R · 10 = 60, demak 2R = 6 sm. Aylana uzunligi C = πd = 3,14 · 6 = 18,84 sm. 37,68 sm — diametr yana ikkiga ko'paytirilgan, 28,26 sm — uzunlik o'rniga doira yuzi hisoblangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 104.4 214 A 45.6 13.7 0 0 1 195.6 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 104.4 214 A 45.6 13.7 0 0 0 195.6 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104.4' y1='62' x2='104.4' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='195.6' y1='62' x2='195.6' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='45.6' ry='13.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='104.4,62 195.6,62 195.6,214 104.4,214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='211.6' y1='62' x2='211.6' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='207.6' y1='62' x2='215.6' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='207.6' y1='214' x2='215.6' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='216.6' y='138' font-size='13' fill='%23334155' text-anchor='start'%3El = 10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'q kesimi yuzi 60 sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yasovchi-tushuncha",
+      "id": "matematika_ster_m13-silindr#1b70e394"
+    },
+    {
+      "q": "Silindrning yasovchisi asos radiusidan 4 sm uzun, yon sirtining yuzi esa 120π sm². Silindr asosining radiusi necha santimetr?",
+      "v": [
+        "6 sm",
+        "10 sm",
+        "12 sm",
+        "60 sm"
+      ],
+      "t": 0,
+      "izoh": "Radiusni R desak yasovchi R + 4 bo'ladi va 2πR(R + 4) = 120π, ya'ni R(R + 4) = 60. R = 6 da 6 · 10 = 60 to'g'ri chiqadi, demak radius 6 sm. 10 sm — yasovchi javob deb olingan, 12 sm — diametr.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='125.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='125.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='125.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='125.5' x2='209' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='225' y1='125.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='125.5' x2='229' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='169.8' font-size='13' fill='%23334155' text-anchor='start'%3El = R + 4%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 120π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yasovchi-tushuncha",
+      "id": "matematika_ster_m13-silindr#d23c5328"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan silindrda o'qqa parallel va o'qdan 6 sm uzoqlikda kesim o'tkazildi. Silindr balandligi 12 sm bo'lsa, kesim yuzi qancha?",
+      "v": [
+        "240 sm²",
+        "160 sm²",
+        "192 sm²",
+        "96 sm²"
+      ],
+      "t": 2,
+      "izoh": "Kesim to'g'ri to'rtburchak bo'lib, bir tomoni asosdan kesib olingan vatar. Vatar yarmi √(10² − 6²) = √64 = 8 sm, demak vatar 16 sm. Kesim yuzi 16 · 12 = 192 sm². 96 sm² — vatarning faqat yarmi olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.2' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='143.2' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='143.2' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='102.8,153.8 197.2,153.8 197.2,224.6 102.8,224.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='143.2' x2='150' y2='153.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='225' y1='143.2' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='143.2' x2='229' y2='143.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.6' font-size='13' fill='%23334155' text-anchor='start'%3EH = 12 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm, o'qdan masofa 6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-parallel-kesim",
+      "id": "matematika_ster_m13-silindr#6b1504ad"
+    },
+    {
+      "q": "Silindr asosining radiusi 5 sm. O'qqa parallel kesim asos aylanasidan uzunligi 8 sm bo'lgan vatar kesib oldi. Kesim tekisligining o'qdan masofasi qancha?",
+      "v": [
+        "4 sm",
+        "5 sm",
+        "1,5 sm",
+        "3 sm"
+      ],
+      "t": 3,
+      "izoh": "Markazdan vatarga tushirilgan perpendikulyar vatarni teng ikkiga bo'ladi, ya'ni yarim vatar 4 sm. To'g'ri burchakli uchburchakdan masofa √(5² − 4²) = √9 = 3 sm. 4 sm — yarim vatar javob deb olingan, 5 sm — radius.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='132' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87.2' y1='193.6' x2='212.8' y2='193.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='132' x2='150' y2='193.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='150,184.6 159,184.6 159,193.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='132' x2='62' y2='132' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106' y='125' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Ctext x='144' y='167.8' font-size='13' fill='%23334155' text-anchor='end'%3Ed = ?%3C/text%3E%3Ctext x='150' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3Evatar 8 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-parallel-kesim",
+      "id": "matematika_ster_m13-silindr#c9964028"
+    },
+    {
+      "q": "Diametri 20 sm bo'lgan silindrsimon g'o'ladan o'qqa parallel ravishda kengligi 12 sm bo'lgan taxta arralab olindi. Arralash tekisligi o'qdan qancha uzoqlikda o'tgan?",
+      "v": [
+        "16 sm",
+        "8 sm",
+        "6 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "Diametr 20 sm, demak radius R = 20 : 2 = 10 sm. Taxta kengligi asos aylanasidan kesilgan vatar, uning yarmi 6 sm. Markazdan vatargacha bo'lgan masofa x = √(10² − 6²) = √64 = 8 sm. 6 sm — yarim vatar, 4 sm — radius va yarim vatar ayirmasi, 16 sm — diametr bilan hisoblangan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='132' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87.2' y1='193.6' x2='212.8' y2='193.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='132' x2='150' y2='193.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='150,184.6 159,184.6 159,193.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='62' y1='132' x2='238' y2='132' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='125' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 20 sm%3C/text%3E%3Ctext x='144' y='167.8' font-size='13' fill='%23334155' text-anchor='end'%3Ex = ?%3C/text%3E%3Ctext x='150' y='211.6' font-size='13' fill='%23334155' text-anchor='middle'%3Etaxta eni 12 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-parallel-kesim",
+      "id": "matematika_ster_m13-silindr#4ffccb5a"
+    },
+    {
+      "q": "Silindrning balandligi 9 sm, asos radiusi 5 sm. O'qdan 4 sm uzoqlikda o'qqa parallel o'tkazilgan kesimning perimetri necha santimetr?",
+      "v": [
+        "30 sm",
+        "54 sm",
+        "28 sm",
+        "38 sm"
+      ],
+      "t": 0,
+      "izoh": "Vatarning yarmi √(5² − 4²) = 3 sm, demak vatar 6 sm. Kesim tomonlari 6 sm va 9 sm bo'lgan to'g'ri to'rtburchak, perimetri 2 · (6 + 9) = 30 sm. 54 sm — perimetr o'rniga yuza hisoblangan, 38 sm — vatar o'rniga diametr olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='107.8' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='107.8' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='107.8' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='114.6,122 185.4,122 185.4,228.2 114.6,228.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='107.8' x2='150' y2='122' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='225' y1='107.8' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='107.8' x2='229' y2='107.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='160.9' font-size='13' fill='%23334155' text-anchor='start'%3EH = 9 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm, o'qdan masofa 4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "oqqa-parallel-kesim",
+      "id": "matematika_ster_m13-silindr#fcaf4a4b"
+    },
+    {
+      "q": "Silindrning o'qqa parallel kesimi kvadrat bo'lib, u o'qdan 3 sm uzoqlikda o'tgan. Asos radiusi 5 sm bo'lsa, silindrning hajmi qancha?",
+      "v": [
+        "100π sm³",
+        "200π sm³",
+        "128π sm³",
+        "72π sm³"
+      ],
+      "t": 1,
+      "izoh": "Kesim eni vatarga teng: 2 · √(5² − 3²) = 2 · 4 = 8 sm. Kesim kvadrat bo'lgani uchun balandlik ham 8 sm. Hajm V = πR²H = π · 25 · 8 = 200π sm³. 72π — o'qdan masofa radius deb olingan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.2' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='143.2' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='143.2' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='102.8,153.8 197.2,153.8 197.2,224.6 102.8,224.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='143.2' x2='150' y2='153.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cline x1='225' y1='143.2' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='143.2' x2='229' y2='143.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.6' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim kvadrat, o'qdan masofa 3 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "oqqa-parallel-kesim",
+      "id": "matematika_ster_m13-silindr#9d1cd463"
+    },
+    {
+      "q": "Konserva bankasining yon yuzasi qog'ozdan yasalgan. Uni kesib yozganda hosil bo'lgan to'g'ri to'rtburchakning uzun tomoni qancha? Banka radiusi 5 sm, balandligi 12 sm. (π ≈ 3,14)",
+      "v": [
+        "31,4 sm",
+        "15,7 sm",
+        "12 sm",
+        "62,8 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon sirt yoyilganda to'g'ri to'rtburchak chiqadi: bir tomoni balandlik, ikkinchisi asos aylanasi uzunligi. Aylana uzunligi C = 2πR = 2 · 3,14 · 5 = 31,4 sm va u 12 sm dan katta, demak uzun tomon shu. 62,8 sm — radius o'rniga diametr olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,87.8 250,87.8 250,192.2 50,192.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='78.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt yoyilmasi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yoyilma",
+      "id": "matematika_ster_m13-silindr#c75b4bba"
+    },
+    {
+      "q": "Silindr yon sirtining yoyilmasi tomonlari 18,84 sm va 8 sm bo'lgan to'g'ri to'rtburchak. Silindr asosining radiusi qancha? (π ≈ 3,14)",
+      "v": [
+        "6 sm",
+        "9,42 sm",
+        "8 sm",
+        "3 sm"
+      ],
+      "t": 3,
+      "izoh": "Yoyilmaning bir tomoni asos aylanasi uzunligi, ikkinchisi balandlik. Aylana uzunligi 18,84 sm bo'lsa, R = C : (2π) = 18,84 : 6,28 = 3 sm. 6 sm — hosil bo'lgan diametr javob deb olingan, 9,42 sm — yarim aylana uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,97.5 250,97.5 250,182.5 50,182.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='88.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18,84 sm%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt yoyilmasi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma",
+      "id": "matematika_ster_m13-silindr#3f75fa9b"
+    },
+    {
+      "q": "Silindr yon sirtining yoyilmasi kvadratdan iborat, asos radiusi esa 4 sm. Shu silindrning balandligi necha santimetr? (π ≈ 3,14)",
+      "v": [
+        "25,12 sm",
+        "12,56 sm",
+        "4 sm",
+        "8 sm"
+      ],
+      "t": 0,
+      "izoh": "Yoyilma kvadrat bo'lsa, balandlik asos aylanasining uzunligiga teng. Demak H = 2πR = 2 · 3,14 · 4 = 25,12 sm. 12,56 sm — ikkiga ko'paytirish tushirib qoldirilgan, 8 sm — diametr javob deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='80,70 220,70 220,210 80,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='61' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='72' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyoyilma kvadrat%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yoyilma",
+      "id": "matematika_ster_m13-silindr#4b625ddb"
+    },
+    {
+      "q": "Silindr yon sirti yoyilmasining yuzi 120π sm², asos aylanasining uzunligi esa 10π sm. Shu silindrning hajmi nechaga teng?",
+      "v": [
+        "150π sm³",
+        "120π sm³",
+        "300π sm³",
+        "600π sm³"
+      ],
+      "t": 2,
+      "izoh": "Yoyilma yuzi C · H ga teng, demak H = 120π : 10π = 12 sm. Aylana uzunligidan 2πR = 10π va R = 5 sm. Hajm V = πR²H = π · 25 · 12 = 300π sm³. 600π — yoyilma yuzi 2πR o'rniga πR ga bo'lingan, ya'ni balandlik 24 sm deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,80 250,80 250,200 50,200' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='71' font-size='13' fill='%23334155' text-anchor='middle'%3E10π sm%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyoyilma yuzi 120π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yoyilma",
+      "id": "matematika_ster_m13-silindr#603505d4"
+    },
+    {
+      "q": "Silindrsimon idish asosining radiusi 10 sm. Idishga 3,14 litr suv quyilsa, suv sathining balandligi necha santimetr bo'ladi? (π ≈ 3,14)",
+      "v": [
+        "31,4 sm",
+        "10 sm",
+        "100 sm",
+        "2,5 sm"
+      ],
+      "t": 1,
+      "izoh": "Suv hajmi 3,14 litr = 3140 sm³. Idish tubining yuzi πR² = 3,14 · 100 = 314 sm². Sath h = 3140 : 314 = 10 sm. 100 sm — radius kvadratga oshirilmagan, 31,4 sm — π ni hisobga olmay 3140 ni 100 ga bo'lish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='107.8' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='107.8' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='107.8' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='178.6' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='182.6' font-size='13' fill='%23334155' text-anchor='end'%3Eh = ?%3C/text%3E%3Cline x1='150' y1='107.8' x2='209' y2='107.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='100.8' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equyilgan suv 3,14 litr%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "idish-suv-sathi",
+      "id": "matematika_ster_m13-silindr#dd907c27"
+    },
+    {
+      "q": "Silindrsimon chelakning ichki diametri 28 sm. Chelakka 6,16 litr suv quyildi. Suv sathi necha santimetrga ko'tariladi? (π ≈ 22/7)",
+      "v": [
+        "140 sm",
+        "5 sm",
+        "10 sm",
+        "2,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Radius R = 28 : 2 = 14 sm, tub yuzi (22/7) · 196 = 616 sm². Suv hajmi 6,16 litr = 6160 sm³. Sath h = 6160 : 616 = 10 sm. 2,5 sm — diametr radius deb olingan, 140 sm — radius kvadratga oshirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='129.7' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='129.7' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='129.7' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='184.5' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='188.5' font-size='13' fill='%23334155' text-anchor='end'%3Eh = ?%3C/text%3E%3Cline x1='91' y1='129.7' x2='209' y2='129.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='122.7' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 28 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equyilgan suv 6,16 litr%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "idish-suv-sathi",
+      "id": "matematika_ster_m13-silindr#99ce4639"
+    },
+    {
+      "q": "Silindrsimon idishning ichki radiusi 5 sm, undagi suv sathi 12 sm. Idishdagi suvning hajmi necha litr? (π ≈ 3,14)",
+      "v": [
+        "0,377 litr",
+        "0,942 litr",
+        "9,42 litr",
+        "3,768 litr"
+      ],
+      "t": 1,
+      "izoh": "Suv ustuni ham silindr: V = πR²h = 3,14 · 25 · 12 = 942 sm³. Litrga o'tkazamiz: 942 : 1000 = 0,942 litr. 3,768 litr — radius o'rniga diametr qo'yilgan, 0,377 litr — hajm o'rniga yon sirt hisoblangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 102.5 228 A 47.5 14.3 0 0 1 197.5 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 102.5 228 A 47.5 14.3 0 0 0 197.5 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='102.5' y1='76' x2='102.5' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='197.5' y1='76' x2='197.5' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='47.5' ry='14.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='114' rx='47.5' ry='14.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.5' y='118' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='150' y1='76' x2='197.5' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='173.8' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "idish-suv-sathi",
+      "id": "matematika_ster_m13-silindr#dcce84f0"
+    },
+    {
+      "q": "Silindrsimon bochkaning balandligi 40 sm, ichki radiusi 10 sm. Bochkaning 3/4 qismi suvga to'ldirilgan bo'lsa, suv hajmi necha litr? (π ≈ 3,14)",
+      "v": [
+        "3,14 litr",
+        "4,71 litr",
+        "9,42 litr",
+        "12,56 litr"
+      ],
+      "t": 2,
+      "izoh": "Bochkaning to'la hajmi V = 3,14 · 100 · 40 = 12560 sm³ = 12,56 litr. Suv uning 3/4 qismini egallaydi: 12,56 · 3 : 4 = 9,42 litr. 12,56 litr — to'la hajm, 3,14 litr — 1/4 qism, 4,71 litr — yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 1 188 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 112 228 A 38 11.4 0 0 0 188 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='112' y1='76' x2='112' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='188' y1='76' x2='188' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='38' ry='11.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='114' rx='38' ry='11.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106' y='118' font-size='13' fill='%23334155' text-anchor='end'%3E3/4 qism%3C/text%3E%3Cline x1='150' y1='76' x2='188' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='169' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Cline x1='204' y1='76' x2='204' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='76' x2='208' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='200' y1='228' x2='208' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='209' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 40 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "idish-suv-sathi",
+      "id": "matematika_ster_m13-silindr#75eaa727"
+    },
+    {
+      "q": "Silindrsimon idishda suv sathi 18 sm edi. Idishdan 1,884 litr suv olingach sath 12 sm ga tushdi. Idish asosining radiusi qancha? (π ≈ 3,14)",
+      "v": [
+        "100 sm",
+        "20 sm",
+        "6 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Sath 18 − 12 = 6 sm ga pasaydi va bu 1884 sm³ suvga to'g'ri keladi. Demak tub yuzi 1884 : 6 = 314 sm². πR² = 314 dan R² = 100 va R = 10 sm. 100 sm — kvadrat ildiz olinmagan javob.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 98.2 228 A 51.8 15.5 0 0 1 201.8 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 98.2 228 A 51.8 15.5 0 0 0 201.8 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='98.2' y1='76' x2='98.2' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='201.8' y1='76' x2='201.8' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='51.8' ry='15.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='103.6' rx='51.8' ry='15.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92.2' y='107.6' font-size='13' fill='%23334155' text-anchor='end'%3E18 sm%3C/text%3E%3Cline x1='98.2' y1='145.1' x2='201.8' y2='145.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='92.2' y='149.1' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='150' y1='76' x2='201.8' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='175.9' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "idish-suv-sathi",
+      "id": "matematika_ster_m13-silindr#4bd58edc"
+    },
+    {
+      "q": "Ichki diametri 4 sm bo'lgan quvurdan suv 2 m/s tezlik bilan oqmoqda. Bir daqiqada quvurdan necha litr suv oqib o'tadi? (π ≈ 3,14)",
+      "v": [
+        "150,72 litr",
+        "602,88 litr",
+        "2,512 litr",
+        "15,072 litr"
+      ],
+      "t": 0,
+      "izoh": "Quvur ko'ndalang kesimi yuzi πR² = 3,14 · 2² = 12,56 sm². Tezlik 2 m/s = 200 sm/s, vaqt 60 s. Hajm 12,56 · 200 · 60 = 150720 sm³ = 150,72 litr. 2,512 litr — atigi bir sekundlik miqdor.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='58' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 4 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equvurning ko'ndalang kesimi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Esuv tezligi 2 m/s%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-oqim",
+      "id": "matematika_ster_m13-silindr#445cd5c4"
+    },
+    {
+      "q": "Ichki radiusi 5 sm bo'lgan quvur 10 daqiqada 4,71 kub metr suv o'tkazdi. Suvning oqish tezligi necha metr sekundda? (π ≈ 3,14)",
+      "v": [
+        "4 m/s",
+        "1 m/s",
+        "0,25 m/s",
+        "10 m/s"
+      ],
+      "t": 1,
+      "izoh": "Kesim yuzi πR² = 3,14 · 0,05² = 0,00785 m², vaqt 10 daqiqa = 600 s. Tezlik v = V : (S · t) = 4,71 : (0,00785 · 600) = 4,71 : 4,71 = 1 m/s. 10 m/s — daqiqa sekundga aylantirilmagan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='196' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equvurning ko'ndalang kesimi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E10 daqiqada 4,71 m³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-oqim",
+      "id": "matematika_ster_m13-silindr#7f3c3e0b"
+    },
+    {
+      "q": "Ichki radiusi 2 sm bo'lgan quvurdan suv 1 m/s tezlikda oqmoqda. 376,8 litrli bakni to'ldirish uchun necha daqiqa kerak bo'ladi? (π ≈ 3,14)",
+      "v": [
+        "5 daqiqa",
+        "300 daqiqa",
+        "1,25 daqiqa",
+        "20 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Kesim yuzi 3,14 · 4 = 12,56 sm², tezlik 100 sm/s, demak sekundiga 1256 sm³ yoki 1,256 litr suv oqadi. Vaqt 376,8 : 1,256 = 300 s = 5 daqiqa. 300 daqiqa — sekund daqiqa deb yozilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='196' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 2 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equvurning ko'ndalang kesimi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Esuv tezligi 1 m/s%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-oqim",
+      "id": "matematika_ster_m13-silindr#065c57f6"
+    },
+    {
+      "q": "Ichki diametri 6 sm bo'lgan quvur o'rniga ichki diametri 3 sm bo'lgan ikkita quvur o'rnatildi. Suv tezligi o'zgarmagan bo'lsa, o'tkazish qobiliyati qanday o'zgardi?",
+      "v": [
+        "Yarmiga kamaydi",
+        "O'zgarmadi",
+        "Ikki marta ortdi",
+        "To'rt marta kamaydi"
+      ],
+      "t": 0,
+      "izoh": "O'tkazish qobiliyati kesim yuziga proporsional. Eski quvurda π · 3² = 9π sm², yangi ikkitasida 2 · π · 1,5² = 4,5π sm². Nisbat 4,5π : 9π = 0,5, demak qobiliyat yarmiga kamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvur-oqim",
+      "id": "matematika_ster_m13-silindr#ac314e45"
+    },
+    {
+      "q": "Ichki radiusi 3 sm bo'lgan quvurdan suv 4 m/s tezlikda oqib, ichki radiusi 60 sm bo'lgan silindrsimon hovuzga quyilmoqda. Hovuzdagi sath bir daqiqada necha santimetrga ko'tariladi?",
+      "v": [
+        "1 sm",
+        "240 sm",
+        "15 sm",
+        "60 sm"
+      ],
+      "t": 3,
+      "izoh": "Bir daqiqada oqqan suv hajmi π · 3² · 400 · 60 = 216000π sm³. Hovuz tubining yuzi π · 60² = 3600π sm². Sathning ko'tarilishi 216000π : 3600π = 60 sm. 1 sm — vaqt hisobga olinmagan natija.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvur-oqim",
+      "id": "matematika_ster_m13-silindr#0339231b"
+    },
+    {
+      "q": "Metall quvurning tashqi radiusi 5 sm, ichki radiusi 4 sm, uzunligi esa 100 sm. Quvur metalining hajmi necha kub santimetr?",
+      "v": [
+        "900π sm³",
+        "2500π sm³",
+        "100π sm³",
+        "1600π sm³"
+      ],
+      "t": 0,
+      "izoh": "Metall hajmi tashqi silindr bilan ichki bo'shliq ayirmasiga teng: V = π(R² − r²)H = π(25 − 16) · 100 = 900π sm³. 2500π — bo'shliq ayirilmagan, 100π — radiuslar ayirmasi kvadratga oshirilgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='138' r='73.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='196' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Cline x1='150' y1='138' x2='76.4' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113.2' y='156' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 4 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equvurning ko'ndalang kesimi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Euzunlik 100 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvur-devor-halqa",
+      "id": "matematika_ster_m13-silindr#873d2d5a"
+    },
+    {
+      "q": "Quvurning tashqi diametri 20 sm, devorining qalinligi esa 2 sm. Quvurning ichki radiusi necha santimetrga teng?",
+      "v": [
+        "6 sm",
+        "8 sm",
+        "18 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Tashqi radius R = 20 : 2 = 10 sm. Devor qalinligi radiuslar ayirmasi, demak ichki radius r = 10 − 2 = 8 sm. 18 sm — qalinlik diametrdan ayirilgan, 16 sm — ichki diametr javob deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='138' r='64.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='58' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 20 sm%3C/text%3E%3Cline x1='150' y1='138' x2='85.6' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='117.8' y='156' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Cline x1='150' y1='73.6' x2='150' y2='46' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157' y='63.8' font-size='13' fill='%23334155' text-anchor='start'%3Edevor%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Edevor qalinligi 2 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "quvur-devor-halqa",
+      "id": "matematika_ster_m13-silindr#c20ac054"
+    },
+    {
+      "q": "Quvur ko'ndalang kesimining tashqi diametri 12 sm, ichki diametri 8 sm. Kesimdagi halqaning yuzi necha kvadrat santimetr? (π ≈ 3,14)",
+      "v": [
+        "62,8 sm²",
+        "251,2 sm²",
+        "12,56 sm²",
+        "113,04 sm²"
+      ],
+      "t": 0,
+      "izoh": "Radiuslar R = 6 sm va r = 4 sm. Halqa yuzi π(R² − r²) = 3,14 · (36 − 16) = 3,14 · 20 = 62,8 sm². 251,2 sm² — radius o'rniga diametr ishlatilgan, 12,56 sm² — radiuslar ayirmasi kvadratga oshirilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='138' r='61.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='58' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 12 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Equvurning ko'ndalang kesimi%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Eichki diametr 8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quvur-devor-halqa",
+      "id": "matematika_ster_m13-silindr#000453b7"
+    },
+    {
+      "q": "Uzunligi 2 m bo'lgan cho'yan quvurning tashqi diametri 16 sm, devor qalinligi 1 sm. Cho'yan zichligi 7 g/sm³ bo'lsa, quvur massasi necha kilogramm? (π ≈ 3,14)",
+      "v": [
+        "281,34 kg",
+        "9,42 kg",
+        "4,4 kg",
+        "65,94 kg"
+      ],
+      "t": 3,
+      "izoh": "Tashqi radius 8 sm, ichki radius 7 sm. Halqa yuzi 3,14 · (64 − 49) = 47,1 sm², uzunlik 200 sm, demak metall hajmi 9420 sm³. Massa 9420 · 7 = 65940 g = 65,94 kg. 281,34 kg — bo'shliq ayirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='138' r='80.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='58' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 16 sm%3C/text%3E%3Cline x1='150' y1='57.5' x2='150' y2='46' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='157' y='55.8' font-size='13' fill='%23334155' text-anchor='start'%3E1 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Euzunlik 2 m%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 7 g/sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quvur-devor-halqa",
+      "id": "matematika_ster_m13-silindr#2cc65a6c"
+    },
+    {
+      "q": "Silindrsimon suv minorasining tashqi yon sirti bo'yaladi. Diametri 4 m, balandligi 10 m, har kvadrat metrga 300 g bo'yoq ketadi. Necha kilogramm bo'yoq kerak? (π ≈ 3,14)",
+      "v": [
+        "376,8 kg",
+        "37,68 kg",
+        "75,36 kg",
+        "45,22 kg"
+      ],
+      "t": 1,
+      "izoh": "Radius 2 m, yon sirt S = 2πRH = 2 · 3,14 · 2 · 10 = 125,6 m². Bo'yoq 125,6 · 300 = 37680 g = 37,68 kg. 75,36 kg — diametr radius deb olingan, 45,22 kg — bo'yalmaydigan asoslar ham qo'shilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 119.6 214 A 30.4 9.1 0 0 1 180.4 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 119.6 214 A 30.4 9.1 0 0 0 180.4 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119.6' y1='62' x2='119.6' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='180.4' y1='62' x2='180.4' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='30.4' ry='9.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='119.6' y1='62' x2='180.4' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 4 m%3C/text%3E%3Cline x1='196.4' y1='62' x2='196.4' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='192.4' y1='62' x2='200.4' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='192.4' y1='214' x2='200.4' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='201.4' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 10 m%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E1 m² ga 300 g%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boyash-sirt-narx",
+      "id": "matematika_ster_m13-silindr#27d96133"
+    },
+    {
+      "q": "Silindrsimon hovuzning ichki yon devori va tubi kafel bilan qoplanadi. Radiusi 3 m, chuqurligi 2 m, bir kvadrat metr kafel 50 000 so'm. Xarajat qancha? (π ≈ 3,14)",
+      "v": [
+        "1 884 000 so'm",
+        "4 710 000 so'm",
+        "1 413 000 so'm",
+        "3 297 000 so'm"
+      ],
+      "t": 3,
+      "izoh": "Yon devor 2πRH = 2 · 3,14 · 3 · 2 = 37,68 m², tub esa πR² = 3,14 · 9 = 28,26 m². Jami 65,94 m², narx 65,94 · 50 000 = 3 297 000 so'm. 4 710 000 so'm — ikkita asos qo'shilgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='174.7' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='174.7' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='174.7' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='174.7' x2='209' y2='174.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='167.7' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 3 m%3C/text%3E%3Cline x1='225' y1='174.7' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='174.7' x2='229' y2='174.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='194.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 2 m%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon devor va tub qoplanadi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "boyash-sirt-narx",
+      "id": "matematika_ster_m13-silindr#d09f0419"
+    },
+    {
+      "q": "Zavodda 20 ta bir xil silindrsimon ustunning yon sirti bo'yaladi. Har birining radiusi 0,5 m, balandligi 4 m. Bo'yaladigan umumiy yuza qancha? (π ≈ 3,14)",
+      "v": [
+        "12,56 m²",
+        "502,4 m²",
+        "125,6 m²",
+        "251,2 m²"
+      ],
+      "t": 3,
+      "izoh": "Bitta ustunning yon sirti 2πRH = 2 · 3,14 · 0,5 · 4 = 12,56 m². Yigirmata ustun uchun 12,56 · 20 = 251,2 m². 12,56 m² — faqat bitta ustun, 125,6 m² — ikkiga ko'paytirish tushirib qoldirilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 131 214 A 19 8 0 0 1 169 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 131 214 A 19 8 0 0 0 169 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='131' y1='62' x2='131' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='169' y1='62' x2='169' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='19' ry='8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='131' y1='62' x2='169' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 1 m%3C/text%3E%3Cline x1='185' y1='62' x2='185' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='62' x2='189' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='214' x2='189' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 4 m%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3E20 ta bir xil ustun%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "boyash-sirt-narx",
+      "id": "matematika_ster_m13-silindr#e399dad1"
+    },
+    {
+      "q": "Silindrsimon idishning qopqog'i bilan birga butun tashqi sirtini bo'yashga 785 g bo'yoq ketdi. Har kvadrat metrga 250 g ketsa va balandlik radiusga teng bo'lsa, radius qancha? (π ≈ 3,14)",
+      "v": [
+        "0,71 m",
+        "0,5 m",
+        "1 m",
+        "0,25 m"
+      ],
+      "t": 1,
+      "izoh": "Bo'yalgan yuza 785 : 250 = 3,14 m². Balandlik radiusga teng bo'lgani uchun to'la sirt 2πR(R + R) = 4πR² = 3,14, bundan R² = 0,25 va R = 0,5 m. 0,25 m — kvadrat ildiz olinmagan javob.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='155' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='155' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='155' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='155' x2='209' y2='155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='148' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Cline x1='225' y1='155' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='155' x2='229' y2='155' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='184.5' font-size='13' fill='%23334155' text-anchor='start'%3EH = R%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ebo'yoq 785 g%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3E1 m² ga 250 g%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boyash-sirt-narx",
+      "id": "matematika_ster_m13-silindr#e1da39ae"
+    },
+    {
+      "q": "Konserva bankasining balandligi 12 sm, asos diametri 8 sm. Bankaning yon yuzasini to'liq o'rab oladigan yorliqning yuzi qancha? (π ≈ 3,14)",
+      "v": [
+        "150,72 sm²",
+        "401,92 sm²",
+        "301,44 sm²",
+        "602,88 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yorliq bankaning yon sirtini qoplaydi: S = πdH = 3,14 · 8 · 12 = 301,44 sm². 602,88 sm² — diametr radius deb olingan, 401,92 sm² — yorliq qoplamaydigan asoslar ham qo'shilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 99.3 228 A 50.7 15.2 0 0 1 200.7 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 99.3 228 A 50.7 15.2 0 0 0 200.7 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.3' y1='76' x2='99.3' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='200.7' y1='76' x2='200.7' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='50.7' ry='15.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.3' y1='76' x2='200.7' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 8 sm%3C/text%3E%3Cline x1='216.7' y1='76' x2='216.7' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='212.7' y1='76' x2='220.7' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='212.7' y1='228' x2='220.7' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='221.7' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yorliq-etiket",
+      "id": "matematika_ster_m13-silindr#513e71ee"
+    },
+    {
+      "q": "Yorliq bankaning yon yuzasini o'raganda uchlari 2 sm ustma-ust tushadi. Banka radiusi 5 sm, yorliq balandligi 10 sm bo'lsa, yorliq yuzi qancha? (π ≈ 3,14)",
+      "v": [
+        "668 sm²",
+        "334 sm²",
+        "314 sm²",
+        "354 sm²"
+      ],
+      "t": 1,
+      "izoh": "Asos aylanasi 2πR = 31,4 sm, ustma-ust qismni qo'shsak yorliq uzunligi 31,4 + 2 = 33,4 sm. Yuza 33,4 · 10 = 334 sm². 314 sm² — ustma-ust qism unutilgan, 354 sm² — 2 sm ikki marta qo'shilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,100 250,100 250,180 50,180' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='91' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm, ustma-ust 2 sm%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yorliq-etiket",
+      "id": "matematika_ster_m13-silindr#e2418932"
+    },
+    {
+      "q": "Eni 15 sm, uzunligi 6 m bo'lgan qog'oz rulondan radiusi 4 sm, balandligi 15 sm bo'lgan bankalarga nechta butun yorliq kesib olish mumkin? (π ≈ 3,14)",
+      "v": [
+        "11 ta",
+        "23 ta",
+        "24 ta",
+        "47 ta"
+      ],
+      "t": 1,
+      "izoh": "Bitta yorliq uzunligi asos aylanasiga teng: 2πR = 2 · 3,14 · 4 = 25,12 sm. Rulon uzunligi 6 m = 600 sm, demak 600 : 25,12 ≈ 23,88. Butun yorliq 23 ta chiqadi. 24 ta — natija yuqoriga yaxlitlangan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,137.5 250,137.5 250,142.5 50,142.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='128.5' font-size='13' fill='%23334155' text-anchor='middle'%3E600 sm%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eqog'oz rulon%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yorliq-etiket",
+      "id": "matematika_ster_m13-silindr#c68f39f6"
+    },
+    {
+      "q": "Bankaning yon yuzasini to'liq qoplagan yorliqning yuzi 240π sm², bankaning balandligi esa 12 sm. Bankaning asos diametri necha santimetr?",
+      "v": [
+        "40 sm",
+        "120 sm",
+        "20 sm",
+        "10 sm"
+      ],
+      "t": 2,
+      "izoh": "Yorliq yuzi yon sirtga teng: 2πRH = 240π, ya'ni 2R · 12 = 240 va 2R = 20 sm. Demak diametr 20 sm. 10 sm — radius javob deb yozilgan, 120 sm — balandlik hisobga olinmagan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='119.6' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='119.6' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='119.6' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='119.6' x2='209' y2='119.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='112.6' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Cline x1='225' y1='119.6' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='119.6' x2='229' y2='119.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='166.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = 12 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyorliq yuzi 240π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yorliq-etiket",
+      "id": "matematika_ster_m13-silindr#90c684ae"
+    },
+    {
+      "q": "Silindr asosining radiusi 2 marta orttirildi, balandligi esa o'zgarmay qoldi. Silindrning hajmi necha marta ortadi?",
+      "v": [
+        "2 marta",
+        "8 marta",
+        "6 marta",
+        "4 marta"
+      ],
+      "t": 3,
+      "izoh": "Hajm V = πR²H bo'lib, radius kvadrat ko'rinishida qatnashadi. Radius 2 marta ortsa R² qiymati 2² = 4 marta ortadi, balandlik o'zgarmagani uchun hajm ham 4 marta ortadi. 2 marta — kvadrat hisobga olinmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "nisbat-ozgarish",
+      "id": "matematika_ster_m13-silindr#be80465d"
+    },
+    {
+      "q": "Silindrning asos radiusi 3 marta, balandligi esa 2 marta orttirildi. Silindr yon sirtining yuzi necha marta ortadi?",
+      "v": [
+        "5 marta",
+        "9 marta",
+        "6 marta",
+        "18 marta"
+      ],
+      "t": 2,
+      "izoh": "Yon sirt S = 2πRH bo'lib, radius ham, balandlik ham birinchi darajada qatnashadi. Demak S qiymati 3 · 2 = 6 marta ortadi. 18 marta — hajm formulasidagidek radius kvadratga oshirilgan, 5 marta — koeffitsiyentlar qo'shilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-ozgarish",
+      "id": "matematika_ster_m13-silindr#33ae5af6"
+    },
+    {
+      "q": "Silindrning balandligi 2 marta kamaytirilib, asos radiusi 2 marta orttirildi. Silindrning hajmi qanday o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "2 marta ortadi",
+        "O'zgarmaydi",
+        "2 marta kamayadi"
+      ],
+      "t": 1,
+      "izoh": "Yangi hajm π(2R)²(H : 2) = π · 4R² · H : 2 = 2πR²H. Bu boshlang'ich hajmdan 2 marta katta, demak hajm 2 marta ortadi. O'zgarmaydi — radiusdagi kvadrat hisobga olinmaganda chiqadigan xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "nisbat-ozgarish",
+      "id": "matematika_ster_m13-silindr#7989e520"
+    },
+    {
+      "q": "Ikkita silindrsimon idishning asos radiuslari nisbati 2 : 3, balandliklari nisbati esa 3 : 2. Bu idishlar hajmlarining nisbati qanday?",
+      "v": [
+        "4 : 9",
+        "1 : 1",
+        "2 : 3",
+        "3 : 2"
+      ],
+      "t": 2,
+      "izoh": "Hajmlar nisbati R²H ko'paytmalar nisbatiga teng: (2² · 3) : (3² · 2) = 12 : 18. Har ikkala hadni 6 ga qisqartiramiz va 2 : 3 hosil bo'ladi. 1 : 1 — radius va balandlik nisbatlari o'zaro qisqaradi deb o'ylash natijasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarish",
+      "id": "matematika_ster_m13-silindr#7c4f83a7"
+    },
+    {
+      "q": "Silindr asosining radiusi 20% ga orttirildi, balandligi esa o'zgartirilmadi. Silindrning hajmi necha foizga ortadi?",
+      "v": [
+        "144%",
+        "44%",
+        "40%",
+        "20%"
+      ],
+      "t": 1,
+      "izoh": "Yangi radius 1,2R, demak yangi hajm π(1,2R)²H = 1,44πR²H. Hajm 1,44 marta, ya'ni 44% ga ortadi. 40% — foiz ikkiga ko'paytirilgan, 144% — ortish o'rniga yangi hajmning ulushi yozilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "nisbat-ozgarish",
+      "id": "matematika_ster_m13-silindr#bcb0c5bd"
+    },
+    {
+      "q": "Birinchi silindrsimon idishning radiusi 6 sm, balandligi 10 sm; ikkinchisiniki esa radiusi 10 sm, balandligi 6 sm. Qaysi idishga ko'proq suv sig'adi?",
+      "v": [
+        "Ikkinchisiga, 5/3 marta ko'p",
+        "Birinchisiga, 5/3 marta ko'p",
+        "Ikkinchisiga, 2 marta ko'p",
+        "Ikkalasiga bir xil sig'adi"
+      ],
+      "t": 0,
+      "izoh": "Birinchi idish hajmi π · 36 · 10 = 360π sm³, ikkinchisiniki π · 100 · 6 = 600π sm³. Nisbat 600π : 360π = 5 : 3. Demak ikkinchisiga 5/3 marta ko'p suv sig'adi. Bir xil deb javob berish radiusdagi kvadratni unutish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 48.8 228 A 31.2 9.4 0 0 1 111.2 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 48.8 228 A 31.2 9.4 0 0 0 111.2 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='48.8' y1='176' x2='48.8' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='111.2' y1='176' x2='111.2' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='176' rx='31.2' ry='9.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 168 228 A 52 15.6 0 0 1 272 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 168 228 A 52 15.6 0 0 0 272 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='168' y1='196.8' x2='168' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='272' y1='196.8' x2='272' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='220' cy='196.8' rx='52' ry='15.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6, H = 10%3C/text%3E%3Ctext x='220' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10, H = 6%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'lchamlar santimetrda%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-silindr-taqqos",
+      "id": "matematika_ster_m13-silindr#bb3d9900"
+    },
+    {
+      "q": "Ikkita silindrning balandliklari o'zaro teng, hajmlarining nisbati esa 9 : 16. Ularning asos radiuslari nisbati qanday?",
+      "v": [
+        "9 : 16",
+        "4 : 3",
+        "81 : 256",
+        "3 : 4"
+      ],
+      "t": 3,
+      "izoh": "Balandliklar teng bo'lgani uchun hajmlar nisbati radiuslar kvadratlari nisbatiga teng: R₁² : R₂² = 9 : 16. Kvadrat ildiz olamiz: R₁ : R₂ = 3 : 4. 9 : 16 — ildiz olinmagan, 81 : 256 — aksincha kvadratga oshirilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-silindr-taqqos",
+      "id": "matematika_ster_m13-silindr#8dd7fe4b"
+    },
+    {
+      "q": "Ikkita silindrning asos radiuslari o'zaro teng, hajmlarining nisbati 5 : 7 ga teng. Bu silindrlar yon sirtlarining nisbati qanday bo'ladi?",
+      "v": [
+        "7 : 5",
+        "25 : 49",
+        "1 : 1",
+        "5 : 7"
+      ],
+      "t": 3,
+      "izoh": "Radiuslar teng bo'lganda hajmlar nisbati balandliklar nisbatiga teng, ya'ni H₁ : H₂ = 5 : 7. Yon sirt 2πRH da radius umumiy ko'paytuvchi, shuning uchun yon sirtlar nisbati ham 5 : 7 bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-silindr-taqqos",
+      "id": "matematika_ster_m13-silindr#5dd2895a"
+    },
+    {
+      "q": "Ikkita silindrsimon bakning hajmlari o'zaro teng. Birinchisining asos radiusi ikkinchisinikidan 2 marta katta bo'lsa, balandliklarining nisbati qanday?",
+      "v": [
+        "2 : 1",
+        "1 : 4",
+        "4 : 1",
+        "1 : 2"
+      ],
+      "t": 1,
+      "izoh": "Hajmlar teng: πR₁²H₁ = πR₂²H₂. R₁ = 2R₂ bo'lgani uchun 4R₂²H₁ = R₂²H₂, bundan H₂ = 4H₁. Demak H₁ : H₂ = 1 : 4. 1 : 2 — radiusdagi kvadrat hisobga olinmagan javob.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-silindr-taqqos",
+      "id": "matematika_ster_m13-silindr#6a80441a"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan idishdagi 10 sm balandlikdagi suv radiusi 10 sm bo'lgan bo'sh idishga to'liq quyildi. Yangi idishda suv sathi qanday bo'ladi?",
+      "v": [
+        "10 sm",
+        "27,8 sm",
+        "3,6 sm",
+        "6 sm"
+      ],
+      "t": 2,
+      "izoh": "Suv hajmi o'zgarmaydi: V = π · 36 · 10 = 360π sm³. Yangi idish tubining yuzi π · 100 = 100π sm². Sath 360π : 100π = 3,6 sm. 6 sm — radiuslar nisbati bilan bo'lingan, 10 sm — sath o'zgarmaydi deb o'ylash.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 48.8 228 A 31.2 9.4 0 0 1 111.2 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 48.8 228 A 31.2 9.4 0 0 0 111.2 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='48.8' y1='155.2' x2='48.8' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='111.2' y1='155.2' x2='111.2' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='155.2' rx='31.2' ry='9.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='176' rx='31.2' ry='9.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='42.8' y='180' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Cpath d='M 168 228 A 52 15.6 0 0 1 272 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 168 228 A 52 15.6 0 0 0 272 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='168' y1='155.2' x2='168' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='272' y1='155.2' x2='272' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='220' cy='155.2' rx='52' ry='15.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E1-idish, R = 6%3C/text%3E%3Ctext x='220' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2-idish, R = 10%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'lchamlar santimetrda%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyish-kochirish",
+      "id": "matematika_ster_m13-silindr#0a8b2b34"
+    },
+    {
+      "q": "Choynakdagi 1,5 litr choy radiusi 4 sm bo'lgan bir xil piyolalarga 6 sm balandlikda quyiladi. Nechta piyola to'liq to'ladi? (π ≈ 3,14)",
+      "v": [
+        "1 ta",
+        "9 ta",
+        "4 ta",
+        "5 ta"
+      ],
+      "t": 2,
+      "izoh": "Bitta piyoladagi choy hajmi πR²h = 3,14 · 16 · 6 = 301,44 sm³. Choy jami 1500 sm³, demak 1500 : 301,44 = 4,97. To'liq to'ladigan piyola 4 ta. 5 ta — natija yuqoriga yaxlitlangan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='96' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='96' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='125.5' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='129.5' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Cline x1='150' y1='96' x2='209' y2='96' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='89' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ebitta piyola%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Echoy jami 1,5 litr%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "quyish-kochirish",
+      "id": "matematika_ster_m13-silindr#22cfbb78"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan idishda suv sathi 25 sm. Suvning bir qismi radiusi 8 sm bo'lgan bo'sh idishga quyildi va ikkala idishdagi sath tenglashdi. Umumiy sath qancha?",
+      "v": [
+        "25 sm",
+        "14,1 sm",
+        "9 sm",
+        "12,5 sm"
+      ],
+      "t": 2,
+      "izoh": "Suvning to'la hajmi π · 36 · 25 = 900π sm³. Sath tenglashganda suv ikkala idish tubiga yoyiladi, umumiy tub yuzi π(36 + 64) = 100π sm². Sath 900π : 100π = 9 sm. 12,5 sm — hajm shunchaki ikkiga bo'lingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 50 228 A 30 9 0 0 1 110 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 50 228 A 30 9 0 0 0 110 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='50' y1='88' x2='50' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='110' y1='88' x2='110' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='88' rx='30' ry='9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='103' rx='30' ry='9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='107' font-size='13' fill='%23334155' text-anchor='end'%3E25 sm%3C/text%3E%3Cpath d='M 180 228 A 40 12 0 0 1 260 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 180 228 A 40 12 0 0 0 260 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='180' y1='88' x2='180' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='260' y1='88' x2='260' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='220' cy='88' rx='40' ry='12' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='80' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E1-idish, R = 6%3C/text%3E%3Ctext x='220' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3E2-idish, R = 8%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eo'lchamlar santimetrda%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quyish-kochirish",
+      "id": "matematika_ster_m13-silindr#a98c06a7"
+    },
+    {
+      "q": "Balandligi 30 sm, radiusi 10 sm bo'lgan silindrsimon idishga suv balandlikning 3/5 qismigacha quyilgan. Yana 3,14 litr suv qo'shilsa, sath nechaga yetadi? (π ≈ 3,14)",
+      "v": [
+        "19 sm",
+        "28 sm",
+        "30 sm",
+        "10 sm"
+      ],
+      "t": 1,
+      "izoh": "Dastlabki sath 30 · 3 : 5 = 18 sm. Qo'shilgan 3140 sm³ suv tub yuzi 314 sm² bo'lgan idishda 3140 : 314 = 10 sm ko'taradi. Yangi sath 18 + 10 = 28 sm. 30 sm — idish to'ladi deb o'ylash natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 99.3 228 A 50.7 15.2 0 0 1 200.7 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 99.3 228 A 50.7 15.2 0 0 0 200.7 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='99.3' y1='76' x2='99.3' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='200.7' y1='76' x2='200.7' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='76' rx='50.7' ry='15.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='136.8' rx='50.7' ry='15.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='93.3' y='140.8' font-size='13' fill='%23334155' text-anchor='end'%3E3/5 qism%3C/text%3E%3Cline x1='150' y1='76' x2='200.7' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='175.3' y='69' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Cline x1='216.7' y1='76' x2='216.7' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='212.7' y1='76' x2='220.7' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='212.7' y1='228' x2='220.7' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='221.7' y='152' font-size='13' fill='%23334155' text-anchor='start'%3EH = 30 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "quyish-kochirish",
+      "id": "matematika_ster_m13-silindr#76b95874"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan silindrsimon idishdagi suvga metall jism to'liq botirilgach sath 2 sm ga ko'tarildi. Jismning hajmi qancha? (π ≈ 3,14)",
+      "v": [
+        "628 sm³",
+        "2512 sm³",
+        "62,8 sm³",
+        "314 sm³"
+      ],
+      "t": 0,
+      "izoh": "Botirilgan jism o'z hajmiga teng suvni siqib chiqaradi. Ko'tarilgan qatlam silindr shaklida: V = πR²Δh = 3,14 · 100 · 2 = 628 sm³. 2512 sm³ — radius o'rniga diametr, 62,8 sm³ — radius kvadratga oshirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='119.6' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='119.6' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='119.6' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='166.8' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='170.8' font-size='13' fill='%23334155' text-anchor='end'%3Eboshi%3C/text%3E%3Cline x1='91' y1='155' x2='209' y2='155' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='85' y='159' font-size='13' fill='%23334155' text-anchor='end'%3Eoxiri%3C/text%3E%3Cline x1='150' y1='119.6' x2='209' y2='119.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='112.6' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Esath 2 sm ko'tarildi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "jism-botirish",
+      "id": "matematika_ster_m13-silindr#797542f4"
+    },
+    {
+      "q": "Hajmi 471 sm³ bo'lgan tosh radiusi 10 sm bo'lgan silindrsimon idishdagi suvga to'liq botirildi. Suv sathi necha santimetrga ko'tariladi? (π ≈ 3,14)",
+      "v": [
+        "0,375 sm",
+        "4,71 sm",
+        "15 sm",
+        "1,5 sm"
+      ],
+      "t": 3,
+      "izoh": "Sath ko'tarilishi Δh = V : (πR²) = 471 : (3,14 · 100) = 471 : 314 = 1,5 sm. 0,375 sm — radius o'rniga diametr qo'yilgan, 4,71 sm — π hisobga olinmay 471 ni 100 ga bo'lish natijasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='119.6' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='119.6' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='119.6' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='160.9' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='164.9' font-size='13' fill='%23334155' text-anchor='end'%3Esuv%3C/text%3E%3Cline x1='150' y1='119.6' x2='209' y2='119.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='112.6' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Etosh hajmi 471 sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jism-botirish",
+      "id": "matematika_ster_m13-silindr#e436dbeb"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan idishda suv sathi 15 sm. Unga radiusi 3 sm, balandligi 10 sm bo'lgan silindrsimon metall g'altak to'liq botirildi. Yangi sath qancha?",
+      "v": [
+        "10 sm",
+        "17,5 sm",
+        "2,5 sm",
+        "25 sm"
+      ],
+      "t": 1,
+      "izoh": "G'altak hajmi π · 9 · 10 = 90π sm³. Idish tubining yuzi π · 36 = 36π sm², demak sath 90π : 36π = 2,5 sm ga ko'tariladi. Yangi sath 15 + 2,5 = 17,5 sm. 25 sm — g'altak balandligi shunchaki qo'shilgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 113.5 214 A 36.5 10.9 0 0 1 186.5 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 113.5 214 A 36.5 10.9 0 0 0 186.5 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='113.5' y1='62' x2='113.5' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='186.5' y1='62' x2='186.5' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='36.5' ry='10.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='122.8' rx='36.5' ry='10.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='107.5' y='126.8' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Cline x1='150' y1='62' x2='186.5' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='168.2' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eg'altak: R = 3 sm, H = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jism-botirish",
+      "id": "matematika_ster_m13-silindr#862cbf10"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan idishda suv sathi 12 sm, idish balandligi esa 20 sm. Botirilgan jism suvni aynan idish og'zigacha ko'targan bo'lsa, uning hajmi qancha? (π ≈ 3,14)",
+      "v": [
+        "6430,72 sm³",
+        "1607,68 sm³",
+        "4019,2 sm³",
+        "2411,52 sm³"
+      ],
+      "t": 1,
+      "izoh": "Sath 20 − 12 = 8 sm ga ko'tarilgan. Jism hajmi shu qatlamga teng: V = 3,14 · 64 · 8 = 1607,68 sm³. 4019,2 sm³ — butun idish hajmi, 2411,52 sm³ — dastlabki suv hajmi hisoblangan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='80.5' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='80.5' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='80.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='139.5' rx='59' ry='17.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='85' y='143.5' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Cline x1='150' y1='80.5' x2='209' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='73.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 8 sm%3C/text%3E%3Cline x1='225' y1='80.5' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='80.5' x2='229' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='154.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jism-botirish",
+      "id": "matematika_ster_m13-silindr#6366a110"
+    },
+    {
+      "q": "Tomonlari 5 sm va 8 sm bo'lgan to'g'ri to'rtburchak uzun tomoni atrofida aylantirildi. Hosil bo'lgan jismning hajmi necha kub santimetr?",
+      "v": [
+        "80π sm³",
+        "400π sm³",
+        "200π sm³",
+        "320π sm³"
+      ],
+      "t": 2,
+      "izoh": "Aylanish o'qi 8 sm li tomon bo'lgani uchun u silindr balandligiga aylanadi, ikkinchi tomon esa radius bo'ladi: R = 5, H = 8. Hajm π · 25 · 8 = 200π sm³. 320π — radius va balandlik o'rin almashtirilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='106.3,70 193.8,70 193.8,210 106.3,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='61' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='98.3' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Cline x1='106.3' y1='56' x2='106.3' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Echapdagi tomon atrofida aylanadi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish-hosil",
+      "id": "matematika_ster_m13-silindr#26c99a22"
+    },
+    {
+      "q": "Tomoni 6 sm bo'lgan kvadrat o'z tomonlaridan biri atrofida aylantirildi. Hosil bo'lgan silindrning to'la sirti necha kvadrat santimetr?",
+      "v": [
+        "216π sm²",
+        "144π sm²",
+        "72π sm²",
+        "108π sm²"
+      ],
+      "t": 1,
+      "izoh": "Kvadrat aylanganda R = 6 sm va H = 6 sm bo'lgan silindr hosil bo'ladi. To'la sirt 2πR(R + H) = 2π · 6 · 12 = 144π sm². 72π — faqat yon sirt, 108π — bitta asos qo'shilgan, 216π — hajm formulasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='80,70 220,70 220,210 80,210' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='61' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='72' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Cline x1='80' y1='56' x2='80' y2='224' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Echapdagi tomon atrofida aylanadi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish-hosil",
+      "id": "matematika_ster_m13-silindr#e93faaaa"
+    },
+    {
+      "q": "To'g'ri to'rtburchak kichik tomoni atrofida aylantirildi va hosil bo'lgan silindrning yon sirti 60π sm² chiqdi. Kichik tomon 5 sm bo'lsa, katta tomon qancha?",
+      "v": [
+        "30 sm",
+        "6 sm",
+        "12 sm",
+        "3 sm"
+      ],
+      "t": 1,
+      "izoh": "Kichik tomon o'q bo'lgani uchun H = 5 sm, katta tomon esa radius. Yon sirt 2πR · 5 = 60π, bundan 10R = 60 va R = 6 sm. 12 sm — hosil bo'lgan diametr, 30 sm — balandlik hisobga olinmagan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='50,77.5 250,77.5 250,202.5 50,202.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='150' y='68.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='42' y='144' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Cline x1='50' y1='63.5' x2='50' y2='216.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Eyon sirt 60π sm²%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylantirish-hosil",
+      "id": "matematika_ster_m13-silindr#d9c599c5"
+    },
+    {
+      "q": "To'g'ri to'rtburchak avval bir tomoni, so'ngra ikkinchi tomoni atrofida aylantirildi. Hosil bo'lgan silindrlar hajmlarining nisbati 3 : 2 bo'lsa, to'rtburchakning katta tomoni kichik tomoniga qanday nisbatda?",
+      "v": [
+        "4 : 9",
+        "9 : 4",
+        "1 : 1",
+        "3 : 2"
+      ],
+      "t": 3,
+      "izoh": "Tomonlari a va b bo'lsin. a tomoni atrofida aylantirilganda aylanish o'qi — a tomoni, radius esa b bo'ladi: V₁ = πb²a. b tomoni atrofida aylantirilganda radius a, balandlik b: V₂ = πa²b. Nisbat V₁ : V₂ = πb²a : πa²b = b : a = 3 : 2, ya'ni b tomoni kattaroq. Demak katta tomonning kichigiga nisbati 3 : 2. 9 : 4 — nisbat kvadratga oshirilgan xato, 4 : 9 — teskari kvadrat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylantirish-hosil",
+      "id": "matematika_ster_m13-silindr#c111b099"
+    },
+    {
+      "q": "Ichki o'lchamlari 20 sm, 20 sm va 30 sm bo'lgan qutiga sig'adigan eng katta silindrsimon bankaning hajmi qancha? (π ≈ 3,14)",
+      "v": [
+        "12 000 sm³",
+        "4710 sm³",
+        "9420 sm³",
+        "37 680 sm³"
+      ],
+      "t": 2,
+      "izoh": "Banka tik turganda uning diametri qutining eng tor tomoniga, ya'ni 20 sm ga teng bo'ladi, demak R = 10 sm, balandligi esa 30 sm. Hajm 3,14 · 100 · 30 = 9420 sm³. 12 000 sm³ — qutining o'z hajmi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "silindr-va-boshqa-jism",
+      "id": "matematika_ster_m13-silindr#e015a53c"
+    },
+    {
+      "q": "Diametri 8 sm, balandligi 12 sm bo'lgan bankalar ichki o'lchamlari 32 sm, 24 sm va 24 sm bo'lgan yashikka tik holda joylanadi. Yashikka nechta banka sig'adi?",
+      "v": [
+        "12 ta",
+        "48 ta",
+        "18 ta",
+        "24 ta"
+      ],
+      "t": 3,
+      "izoh": "Tubda 32 : 8 = 4 qator va 24 : 8 = 3 ustun, ya'ni bir qavatda 4 · 3 = 12 ta banka. Balandlik bo'yicha 24 : 12 = 2 qavat joylashadi. Jami 12 · 2 = 24 ta. 12 ta — faqat bitta qavat sanalgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "silindr-va-boshqa-jism",
+      "id": "matematika_ster_m13-silindr#964fc304"
+    },
+    {
+      "q": "Silindrga ichki chizilgan to'g'ri prizmaning asosi kvadrat. Silindrning radiusi 5 sm, balandligi esa 10 sm bo'lsa, prizmaning hajmi necha kub santimetr?",
+      "v": [
+        "250 sm³",
+        "2500 sm³",
+        "500 sm³",
+        "1000 sm³"
+      ],
+      "t": 2,
+      "izoh": "Kvadrat asos silindr asosiga ichki chizilgan, demak kvadrat diagonali diametrga teng: d = 10 sm. Kvadrat yuzi diagonal orqali d² : 2 = 100 : 2 = 50 sm². Hajm 50 · 10 = 500 sm³. 1000 sm³ — diagonal tomon deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='86' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='89.2,77.2 210.8,77.2 210.8,198.8 89.2,198.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='138' x2='236' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='193' y='131' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Easos: doiraga ichki chizilgan kvadrat%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Eprizma balandligi 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "silindr-va-boshqa-jism",
+      "id": "matematika_ster_m13-silindr#631951c3"
+    },
+    {
+      "q": "Silindrsimon temir valning asos radiusi 5 sm, uzunligi 40 sm. Temirning zichligi 7,8 g/sm³ bo'lsa, valning massasi necha kilogramm? (π ≈ 3,14)",
+      "v": [
+        "24,492 kg",
+        "97,968 kg",
+        "3,14 kg",
+        "244,92 kg"
+      ],
+      "t": 0,
+      "izoh": "Val hajmi V = πR²H = 3,14 · 25 · 40 = 3140 sm³. Massa m = 3140 · 7,8 = 24 492 g, ya'ni 24,492 kg. 97,968 kg — radius o'rniga diametr qo'yilgan, 3,14 kg — zichlikka ko'paytirish unutilgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 131 214 A 19 8 0 0 1 169 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 131 214 A 19 8 0 0 0 169 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='131' y1='62' x2='131' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='169' y1='62' x2='169' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='62' rx='19' ry='8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='62' x2='169' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='159.5' y='55' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Cline x1='185' y1='62' x2='185' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='62' x2='189' y2='62' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='181' y1='214' x2='189' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='190' y='138' font-size='13' fill='%23334155' text-anchor='start'%3EH = 40 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 7,8 g/sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "massa-zichlik",
+      "id": "matematika_ster_m13-silindr#b3569ca0"
+    },
+    {
+      "q": "Silindrsimon yog'och g'o'laning massasi 37,68 kg, zichligi 0,6 g/sm³, asos radiusi esa 10 sm. G'o'laning uzunligi necha santimetr? (π ≈ 3,14)",
+      "v": [
+        "50 sm",
+        "72 sm",
+        "2000 sm",
+        "200 sm"
+      ],
+      "t": 3,
+      "izoh": "Massani grammga o'tkazamiz: 37 680 g. Hajm V = m : ρ = 37 680 : 0,6 = 62 800 sm³. Asos yuzi 314 sm², demak uzunlik 62 800 : 314 = 200 sm. 50 sm — radius o'rniga diametr olingan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='143.2' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='143.2' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='143.2' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='143.2' x2='209' y2='143.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='136.2' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Cline x1='225' y1='143.2' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='143.2' x2='229' y2='143.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='178.6' font-size='13' fill='%23334155' text-anchor='start'%3EH = ?%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Emassa 37,68 kg%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 0,6 g/sm³%3C/text%3E%3Ctext x='150' y='292' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "massa-zichlik",
+      "id": "matematika_ster_m13-silindr#4ecf0e21"
+    },
+    {
+      "q": "Uzunligi 50 sm bo'lgan alyuminiy quvurning tashqi radiusi 4 sm, ichki radiusi 3 sm. Alyuminiy zichligi 2,7 g/sm³ bo'lsa, quvurning massasi qancha? (π ≈ 3,14)",
+      "v": [
+        "6,782 kg",
+        "1,099 kg",
+        "0,424 kg",
+        "2,967 kg"
+      ],
+      "t": 3,
+      "izoh": "Halqa yuzi 3,14 · (16 − 9) = 21,98 sm², metall hajmi 21,98 · 50 = 1099 sm³. Massa 1099 · 2,7 = 2967,3 g ≈ 2,967 kg. 6,782 kg — ichki bo'shliq ayirilmagan, 1,099 kg — zichlikka ko'paytirilmagan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='138' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='138' r='69' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='138' x2='242' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='196' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3Cline x1='150' y1='138' x2='81' y2='138' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.5' y='156' font-size='13' fill='%23334155' text-anchor='middle'%3Er = 3 sm%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Euzunlik 50 sm%3C/text%3E%3Ctext x='150' y='274' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 2,7 g/sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "massa-zichlik",
+      "id": "matematika_ster_m13-silindr#ae86fd35"
+    },
+    {
+      "q": "Silindrsimon suv bakining asos radiusi 0,5 m, balandligi 2 m. Bakka to'la holda necha litr suv sig'adi? (π ≈ 3,14)",
+      "v": [
+        "157 litr",
+        "15 700 litr",
+        "1570 litr",
+        "1,57 litr"
+      ],
+      "t": 2,
+      "izoh": "Avval hajm topiladi: V = πR²H = 3,14 · 0,5² · 2 = 3,14 · 0,25 · 2 = 1,57 m³. Bir kub metrda 1000 litr bor (1 m³ = 1000 dm³, 1 dm³ = 1 litr), demak 1,57 m³ = 1570 litr. 1,57 litr — birlik umuman almashtirilmagan, 157 litr va 15 700 litr — o'nga bo'lish yoki ko'paytirishdagi xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-almashtirish",
+      "id": "matematika_ster_m13-silindr#8d65ee64"
+    },
+    {
+      "q": "Silindrsimon idish asosining radiusi 20 sm, balandligi esa 50 sm. Idishga to'la holda necha litr suv sig'adi? (π ≈ 3,14)",
+      "v": [
+        "6,28 litr",
+        "251,2 litr",
+        "62,8 litr",
+        "628 litr"
+      ],
+      "t": 2,
+      "izoh": "Hajm V = πR²H = 3,14 · 400 · 50 = 62 800 sm³. Litrga o'tish uchun 1000 ga bo'lamiz: 62 800 : 1000 = 62,8 litr. 628 litr — 100 ga bo'lingan, 251,2 litr — radius o'rniga diametr qo'yilgan natija.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 1 209 228' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 228 A 59 17.7 0 0 0 209 228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='80.5' x2='91' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='80.5' x2='209' y2='228' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='80.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='150' y1='80.5' x2='209' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='179.5' y='73.5' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 20 sm%3C/text%3E%3Cline x1='225' y1='80.5' x2='225' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='80.5' x2='229' y2='80.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='228' x2='229' y2='228' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='154.3' font-size='13' fill='%23334155' text-anchor='start'%3EH = 50 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "birlik-almashtirish",
+      "id": "matematika_ster_m13-silindr#3d1b00ce"
+    },
+    {
+      "q": "Silindrsimon suv bakining asos diametri 2 m, balandligi 1,5 m. Bakni to'ldirish uchun 20 litrli chelakda kamida necha marta suv tashish kerak? (π ≈ 3,14)",
+      "v": [
+        "942 marta",
+        "118 marta",
+        "236 marta",
+        "235 marta"
+      ],
+      "t": 2,
+      "izoh": "Bak hajmi 3,14 · 1² · 1,5 = 4,71 m³ = 4710 litr. Chelaklar soni 4710 : 20 = 235,5. To'ldirish uchun kamida 236 marta tashish kerak. 235 marta — natija pastga yaxlitlangan, 942 marta — diametr radius deb olingan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 1 209 214' stroke='%23334155' stroke-width='2' stroke-dasharray='5 4' fill='none'/%3E%3Cpath d='M 91 214 A 59 17.7 0 0 0 209 214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='125.5' x2='91' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='209' y1='125.5' x2='209' y2='214' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='125.5' rx='59' ry='17.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='91' y1='125.5' x2='209' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='118.5' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 2 m%3C/text%3E%3Cline x1='225' y1='125.5' x2='225' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='125.5' x2='229' y2='125.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='221' y1='214' x2='229' y2='214' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='230' y='169.8' font-size='13' fill='%23334155' text-anchor='start'%3EH = 1,5 m%3C/text%3E%3Ctext x='150' y='258' font-size='13' fill='%23334155' text-anchor='middle'%3Echelak hajmi 20 litr%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "birlik-almashtirish",
+      "id": "matematika_ster_m13-silindr#6a489dc7"
+    }
+  ]
+}

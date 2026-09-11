@@ -1,0 +1,531 @@
+{
+  "nom": "48-mavzu. Magnit Maydonning Tokli Otkazgichga Tasiri",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Magnit maydonning tokli o'tkazgichga ta'sirini tajribada kim aniqlagan?",
+      "v": [
+        "Amper (1820-yilda)",
+        "Tesla",
+        "Lorens",
+        "Ersted"
+      ],
+      "t": 0,
+      "izoh": "Magnit maydonning tokli o'tkazgichga ta'sirini 1820-yilda Amper tajribada aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#803aaebe"
+    },
+    {
+      "q": "Amper kuchi qanday ifoda bilan aniqlanadi?",
+      "v": [
+        "F = I·Δl·B·sinα",
+        "F = I·B/Δl",
+        "F = qυBsinα",
+        "F = I·S·B"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchi F = IΔlBsinα ifoda bilan aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#d2b72115"
+    },
+    {
+      "q": "Amper kuchi tok yo'nalishi bilan induksiya vektori orasidagi burchakka qanday bog'liq?",
+      "v": [
+        "Burchak sinusiga to'g'ri proporsional",
+        "Burchak kosinusiga to'g'ri proporsional",
+        "Burchakka teskari proporsional",
+        "Burchakka bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "F = IΔlBsinα ga ko'ra kuch sinα ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#699f4b00"
+    },
+    {
+      "q": "Tokli o'tkazgichga ta'sir qiluvchi Amper kuchi qachon eng katta qiymatga erishadi?",
+      "v": [
+        "Induksiya vektori tok yo'nalishiga tik (α = 90°) bo'lganda",
+        "Tok va induksiya bir xil yo'nalgan (α = 0°) bo'lganda",
+        "α = 45° bo'lganda",
+        "α = 180° bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "α = 90° da sinα = 1 bo'lib, Fmax = IΔlB ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#63f43e75"
+    },
+    {
+      "q": "Amper kuchining maksimal qiymati qanday ifoda bilan yoziladi?",
+      "v": [
+        "Fmax = I·Δl·B",
+        "Fmax = I·Δl·B·cosα",
+        "Fmax = I·B/Δl",
+        "Fmax = I·S·B·sinα"
+      ],
+      "t": 0,
+      "izoh": "α = 90° bo'lganda Fmax = IΔlB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#2d9d420f"
+    },
+    {
+      "q": "Tok yo'nalishi magnit induksiya vektoriga parallel bo'lsa (α = 0°), Amper kuchi qancha bo'ladi?",
+      "v": [
+        "Nolga teng",
+        "Maksimal qiymatga teng",
+        "IΔlB ga teng",
+        "IΔlB/2 ga teng"
+      ],
+      "t": 0,
+      "izoh": "sin 0° = 0 bo'lgani uchun Amper kuchi nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#5c90a1f3"
+    },
+    {
+      "q": "Magnit induksiyasining fizik ma'nosi qanday ta'riflanadi?",
+      "v": [
+        "Bir jinsli maydon kuch chiziqlariga perpendikulyar joylashgan 1 m uzunlikdagi, 1 A tokli o'tkazgichga ta'sir qiluvchi kuchga son jihatdan teng kattalik",
+        "1 A tokli ixtiyoriy o'tkazgichga ta'sir qiluvchi kuch",
+        "1 m² yuzadan o'tuvchi magnit oqimi",
+        "Ramkaga ta'sir qiluvchi aylantiruvchi moment"
+      ],
+      "t": 0,
+      "izoh": "B = Fmax/(IΔl) ifodadan kelib chiqqan ta'rif: 1 m uzunlikdagi, 1 A tokli, kuch chiziqlariga perpendikulyar o'tkazgichga ta'sir qiluvchi kuch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#0c590f16"
+    },
+    {
+      "q": "Amper kuchining yo'nalishi qaysi qoida bilan aniqlanadi?",
+      "v": [
+        "Chap qo'l qoidasi",
+        "O'ng vintli parma qoidasi",
+        "Lenz qoidasi",
+        "Superpozitsiya prinsipi"
+      ],
+      "t": 0,
+      "izoh": "Amper kuchining yo'nalishi chap qo'l qoidasi yordamida aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#43630055"
+    },
+    {
+      "q": "Chap qo'l qoidasiga ko'ra Amper kuchining yo'nalishini qanday aniqlash kerak?",
+      "v": [
+        "Kaftga kuch chiziqlari kirsin, to'rt barmoq tok yo'nalishida bo'lsa, 90° ga ochilgan bosh barmoq kuch yo'nalishini ko'rsatadi",
+        "Kaftga kuch chiziqlari kirsin, bosh barmoq tok yo'nalishini ko'rsatsa, to'rt barmoq kuchni ko'rsatadi",
+        "To'rt barmoq induksiya yo'nalishida, bosh barmoq tok yo'nalishida bo'ladi",
+        "Bosh barmoq kaftga kiruvchi chiziqlar yo'nalishida bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Chap qo'l kaftiga kuch chiziqlari kirib, to'rt barmoq tok yo'nalishida bo'lsa, bosh barmoq Amper kuchi yo'nalishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#d3dffe05"
+    },
+    {
+      "q": "Amper kuchi qaysi kattaliklarga to'g'ri proporsional?",
+      "v": [
+        "Tok kuchi, o'tkazgich uzunligi, induksiya va sinα ga",
+        "Faqat tok kuchiga",
+        "Faqat induksiyaga",
+        "Tok kuchi va masofaga"
+      ],
+      "t": 0,
+      "izoh": "F = IΔlBsinα: kuch tok kuchiga, uzunlikka, induksiyaga va sinα ga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#cdafde16"
+    },
+    {
+      "q": "Magnit qutblari almashtirib o'rnatilsa, tokli o'tkazgichga ta'sir qiluvchi kuch qanday o'zgaradi?",
+      "v": [
+        "Yo'nalishi qarama-qarshi tomonga o'zgaradi",
+        "Moduli 2 marta ortadi",
+        "Moduli o'zgarmaydi, yo'nalishi ham o'zgarmaydi",
+        "Kuch nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Qutblar almashinsa, maydon yo'nalishi o'zgarib, kuchning yo'nalishi ham qarama-qarshi bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#9f6f18c8"
+    },
+    {
+      "q": "O'tkazgichdagi tok yo'nalishi o'zgartirilsa (magnit vaziyati o'zgarmasa), ta'sir kuchi qanday o'zgaradi?",
+      "v": [
+        "Yo'nalishi qarama-qarshi tomonga o'zgaradi",
+        "Moduli kamayadi",
+        "Kuch nolga teng bo'ladi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tok yo'nalishi o'zgarsa, Amper kuchining yo'nalishi ham qarama-qarshi tomonga o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#7ba9813b"
+    },
+    {
+      "q": "Amper kuchi ifodasi qanday maydon uchun o'rinli?",
+      "v": [
+        "Bir jinsli magnit maydon uchun",
+        "Ixtiyoriy notekis maydon uchun",
+        "Faqat toroid maydoni uchun",
+        "Faqat magnit qutblari orasidagi maydon uchun"
+      ],
+      "t": 0,
+      "izoh": "F = IΔlBsinα ifoda bir jinsli magnit maydon uchun o'rinlidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#32a21494"
+    },
+    {
+      "q": "Magnit maydonga kiritilgan tokli ramka nima uchun buriladi?",
+      "v": [
+        "Ramka qarama-qarshi tomonlariga moduli teng, yo'nalishi qarama-qarshi juft kuchlar ta'sir qiladi",
+        "Ramkaga faqat bitta kuch ta'sir qiladi",
+        "Ramka og'irligi ta'sirida buriladi",
+        "Ramkadagi tok nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "AB va DC qismlarga moduli teng, qarama-qarshi yo'nalgan juft kuchlar ta'sir qilib, ramkani aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#f6013274"
+    },
+    {
+      "q": "Tokli ramkani magnit maydonda aylantiruvchi moment qanday ifoda bilan aniqlanadi?",
+      "v": [
+        "M = I·S·B·sinα",
+        "M = I·l·B·sinα",
+        "M = I·S·B·cosα",
+        "M = I·B·d"
+      ],
+      "t": 0,
+      "izoh": "M = ISBsinα, bu yerda α — normal vektor bilan induksiya vektori orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#f95277ed"
+    },
+    {
+      "q": "Aylantiruvchi moment ifodasidagi α burchak qaysi vektorlar orasidagi burchak?",
+      "v": [
+        "Ramka tekisligiga tik normal vektor va induksiya vektori orasidagi",
+        "Ramka tekisligi va induksiya vektori orasidagi",
+        "Tok yo'nalishi va kuch yo'nalishi orasidagi",
+        "Ramka tomoni va kuch yo'nalishi orasidagi"
+      ],
+      "t": 0,
+      "izoh": "α — normal n vektori bilan induksiya B vektori orasidagi burchak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#4f7f110c"
+    },
+    {
+      "q": "Tokli ramkaga ta'sir qiluvchi aylantiruvchi moment qachon maksimal bo'ladi?",
+      "v": [
+        "α = 90° bo'lganda (normal induksiyaga perpendikulyar)",
+        "α = 0° bo'lganda",
+        "α = 45° bo'lganda",
+        "α = 180° bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "M = ISBsinα maksimal sinα = 1 bo'lganda, ya'ni α = 90° da.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#9a6043ff"
+    },
+    {
+      "q": "Tokli ramkaning magnit momenti qanday aniqlanadi?",
+      "v": [
+        "pm = I·S",
+        "pm = I·B·S",
+        "pm = I·S·sinα",
+        "pm = I·l·B"
+      ],
+      "t": 0,
+      "izoh": "Ramkadagi tok kuchining ramka yuzasiga ko'paytmasi magnit moment deyiladi: pm = IS.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#c6093f5b"
+    },
+    {
+      "q": "Tokli ramkaning magnit momenti XBSda qanday birlikda o'lchanadi?",
+      "v": [
+        "A·m²",
+        "T·m",
+        "N·m",
+        "Wb/A"
+      ],
+      "t": 0,
+      "izoh": "[pm] = A·m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#96c4cfa8"
+    },
+    {
+      "q": "Tokli ramkaning magnit momenti vektorining yo'nalishi qanday aniqlanadi?",
+      "v": [
+        "O'ng vintli parma qoidasi bilan: dasta aylanishi tok yo'nalishida bo'lsa, parma uchi moment yo'nalishini ko'rsatadi",
+        "Chap qo'l qoidasi bilan",
+        "Ramka tekisligi bo'ylab tok yo'nalishida",
+        "Induksiya vektoriga qarama-qarshi"
+      ],
+      "t": 0,
+      "izoh": "Magnit moment yo'nalishi parma qoidasi bilan aniqlanadi; u ramka tekisligiga tik normal vektor yo'nalishi bilan bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#4141b25a"
+    },
+    {
+      "q": "Ramka tekisligiga o'tkazilgan normal vektor yo'nalishi qaysi vektor yo'nalishi bilan bir xil?",
+      "v": [
+        "Ramkaning magnit momenti vektori yo'nalishi bilan",
+        "Amper kuchi yo'nalishi bilan",
+        "Tok yo'nalishi bilan",
+        "Induksiya vektoriga har doim teskari yo'nalish bilan"
+      ],
+      "t": 0,
+      "izoh": "Normal vektor n ning yo'nalishi magnit moment pm vektorining yo'nalishi bilan bir xil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#1fc0ac41"
+    },
+    {
+      "q": "Magnit maydonda tokli to'g'ri o'tkazgich ilgarilanma, tokli ramka esa aylanma harakatga keladi. Bunga nima sabab?",
+      "v": [
+        "To'g'ri o'tkazgichga bitta kuch, ramkaga esa juft kuchlar ta'sir qiladi",
+        "Ramkada tok yo'q",
+        "To'g'ri o'tkazgichga kuch ta'sir qilmaydi",
+        "Ramka yengilroq bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri o'tkazgichga bitta natijaviy kuch ta'sir qiladi, ramka tomonlariga esa juft kuchlar aylantiruvchi moment hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#7c9ef62a"
+    },
+    {
+      "q": "Elektr o'lchash asboblarining (ampermetr kabi) ishlash prinsipi nimaga asoslangan?",
+      "v": [
+        "Tokli o'tkazgich bilan doimiy magnitning o'zaro ta'sirlashishiga",
+        "Elektr zaryadlarining itarilishiga",
+        "Tokning issiqlik ta'siriga",
+        "Elektromagnit induksiya hodisasiga"
+      ],
+      "t": 0,
+      "izoh": "Ko'pgina elektr o'lchash asboblari tokli o'tkazgich bilan doimiy magnitning o'zaro ta'sirlashishiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#292b1b74"
+    },
+    {
+      "q": "O'lchov asbobida strelka qachon to'xtaydi (muvozanatga keladi)?",
+      "v": [
+        "Prujinaning elastiklik kuchi va Amper kuchlari tenglashganda",
+        "Tok uzilib qolganda",
+        "Magnit maydon nolga teng bo'lganda",
+        "Ramka 90° ga burilganda"
+      ],
+      "t": 0,
+      "izoh": "Ramkaning burilishi prujina elastiklik kuchi va Amper kuchlari tenglashgunga qadar davom etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#02745dfb"
+    },
+    {
+      "q": "O'lchov asbobida simli ramkaga tok qanday beriladi?",
+      "v": [
+        "Metall prujinalar orqali",
+        "To'g'ridan-to'g'ri simlar orqali",
+        "Magnit orqali",
+        "Induksiya yo'li bilan"
+      ],
+      "t": 0,
+      "izoh": "Simli ramkaga elektr toki prujinalar orqali beriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#82e0810f"
+    },
+    {
+      "q": "Ampermetr sifatida ishlaydigan asbobda strelkaning burilish burchagi nimaga proporsional?",
+      "v": [
+        "Zanjirdagi tok kuchiga",
+        "Zanjirdagi kuchlanishga",
+        "Ramkaning yuzasiga",
+        "Magnitning og'irligiga"
+      ],
+      "t": 0,
+      "izoh": "Asbob ketma-ket ulanganda strelkaning burilish burchagi tok kuchiga proporsional bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#354f6ae6"
+    },
+    {
+      "q": "Multimetr qanday asbob?",
+      "v": [
+        "Ko'p funksionalli, analog signallarni raqamli signallarga aylantiruvchi o'lchash qurilmasi",
+        "Faqat tok kuchini o'lchaydigan asbob",
+        "Faqat kuchlanishni o'lchaydigan asbob",
+        "Mexanik o'lchash asbobi"
+      ],
+      "t": 0,
+      "izoh": "Multimetrlar analog signallarni raqamli signallarga aylantirish prinsipida ishlaydigan ko'p funksionalli qurilmalardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#9c11cd22"
+    },
+    {
+      "q": "Multimetr qaysi kattaliklarni o'lchay oladi?",
+      "v": [
+        "Tok kuchi, kuchlanish, quvvat, qarshilik, sig'im, chastota",
+        "Faqat tok kuchi va kuchlanish",
+        "Faqat qarshilik",
+        "Faqat chastota"
+      ],
+      "t": 0,
+      "izoh": "Multimetr tok kuchi, kuchlanish, quvvat, qarshilik, sig'im, chastota kabi kattaliklarni o'lchay oladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#02b41392"
+    },
+    {
+      "q": "Tok kuchi 2 marta oshirilsa, Amper kuchi qanday o'zgaradi?",
+      "v": [
+        "2 marta ortadi",
+        "2 marta kamayadi",
+        "4 marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "F = IΔlBsinα ga ko'ra tok 2 marta ortsa, kuch ham 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#44edbd64"
+    },
+    {
+      "q": "α = 30° bo'lgandagi Amper kuchi maksimal kuchning qanday qismini tashkil qiladi?",
+      "v": [
+        "Yarmini (1/2)",
+        "To'rtdan birini",
+        "3/4 qismini",
+        "To'liq qiymatini"
+      ],
+      "t": 0,
+      "izoh": "sin 30° = 1/2, shuning uchun kuch maksimal qiymatning yarmiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#a4a574f1"
+    },
+    {
+      "q": "N o'ramli ramka uchun maksimal aylantiruvchi moment qanday ifodalanadi?",
+      "v": [
+        "Mmax = N·I·B·S",
+        "Mmax = I·B·S/N",
+        "Mmax = I·B·l",
+        "Mmax = I·B·d²"
+      ],
+      "t": 0,
+      "izoh": "N o'ramli ramka uchun Mmax = NIBS (masala yechish namunasida ishlatilgan).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#ca9b72b6"
+    },
+    {
+      "q": "Ramka tekisligi induksiya vektoriga parallel bo'lganda kuchlar yelkasi qanchaga teng?",
+      "v": [
+        "d/2 ga",
+        "d ga",
+        "nolga",
+        "d·sinα ga"
+      ],
+      "t": 0,
+      "izoh": "Ramka tekisligi induksiya vektoriga parallel bo'lganda kuchlarning yelkasi d/2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#ec60bf90"
+    },
+    {
+      "q": "1 Tesla birlik qanday ifodalanadi?",
+      "v": [
+        "1 T = 1 N/(A·m)",
+        "1 T = 1 N·A·m",
+        "1 T = 1 A/(N·m)",
+        "1 T = 1 J·A/m"
+      ],
+      "t": 0,
+      "izoh": "[B] = 1 N/(1 A·1 m) = 1 T.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#20b227a8"
+    },
+    {
+      "q": "O'lchov asbobining prujinalari ramkaga tok berilmagan paytda qanday vazifani bajaradi?",
+      "v": [
+        "Strelkani shkalaning nolinchi holatida ushlab turadi",
+        "Ramkani aylantiradi",
+        "Tokni kuchaytiradi",
+        "Magnit maydon hosil qiladi"
+      ],
+      "t": 0,
+      "izoh": "Prujinalar ramkaga tok berilmagan paytda strelkani shkalaning nolinchi holatida ushlab turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#b2e39faf"
+    },
+    {
+      "q": "Raqamli elektr o'lchash asboblari qanday prinsip asosida ishlaydi?",
+      "v": [
+        "Yarimo'tkazgichli p-n o'tishlarga asoslangan mikrosxemalar vositasida analog signallarni raqamli signallarga aylantirish",
+        "Doimiy magnit bilan ramkaning o'zaro ta'siri",
+        "Tokning kimyoviy ta'siri",
+        "Elektroliz hodisasi"
+      ],
+      "t": 0,
+      "izoh": "Raqamli asboblar yarimo'tkazgichli p-n o'tishli mikrosxemalar yordamida analog signallarni raqamliga aylantiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_10_ozb_m48-magnit-maydonning-tokli-otkazgichga-tasiri#50414123"
+    }
+  ]
+}

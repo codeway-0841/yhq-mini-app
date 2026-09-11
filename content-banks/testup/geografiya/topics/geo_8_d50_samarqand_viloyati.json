@@ -1,0 +1,546 @@
+{
+  "nom": "50-dars: Samarqand viloyati",
+  "bolim": "IV bob. O’zbekistonning regional tavsifi",
+  "savollar": [
+    {
+      "q": "Samarqand viloyati uch tomondan qanday tog’ tizmalari bilan o’ralgan?",
+      "v": [
+        "Nurota, Turkiston va Zarafshon",
+        "Nurota, Morguzar va Zarafshon",
+        "Zarafshon, Hisor va Oloy",
+        "Turkiston, Oloy va Zarafshon"
+      ],
+      "t": 0,
+      "izoh": "Samarqand viloyati uch tomondan Nurota, Turkiston va Zarafshon tizma tog’lari bilan o’ralgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#eca7a65a"
+    },
+    {
+      "q": "Samarqand viloyatida yog’in miqdori necha mm ni tashkil etadi?",
+      "v": [
+        "250-800",
+        "350-800",
+        "300-900",
+        "300-950"
+      ],
+      "t": 0,
+      "izoh": "Yog’in ko’proq (250-800 mm) yog’adi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#114de6d3"
+    },
+    {
+      "q": "Samarqand viloyatida qanday tuproqli yerlar kattagina maydonni egallaydi?",
+      "v": [
+        "bo’z va o’tloq-allyuvial",
+        "bo’z va sho’rxok",
+        "bo’z va sur-qo’ng’ir",
+        "bo’z va tog’-qo’ng’ir"
+      ],
+      "t": 0,
+      "izoh": "Bo’z va o’tloq-alluvial tuproqli yerlar kattagina maydonni tashkil etadi. Sho’rxok maydonlar deyarli yo’q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#193b069b"
+    },
+    {
+      "q": "Zarafshon daryosining o’rta oqimida barpo etilgan suv omborini toping.",
+      "v": [
+        "Kattaqo’rg’on",
+        "Quyimozor",
+        "Sho’rko’l",
+        "To’dako’l"
+      ],
+      "t": 0,
+      "izoh": "Daryoning o’rta oqimida Kattaqo’rg’on suv ombori barpo etilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#685999dc"
+    },
+    {
+      "q": "Zarafshon daryosi suvining bir qismi qaysi kanal orqali Qashqadaryo viloyatiga oqizilmoqda?",
+      "v": [
+        "Eski Anhor",
+        "Eski Tuyatortar",
+        "Darg’om",
+        "Narpay"
+      ],
+      "t": 0,
+      "izoh": "Eski Anhor kanali orqali Zarafshon suvi (Darg’om kanalidan) Qashqadaryo viloyatiga oqizilmoqda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#d560cc89"
+    },
+    {
+      "q": "Zarafshon daryosi suvining necha foizi sug’orishga sarflanadi?",
+      "v": [
+        "90",
+        "85",
+        "80",
+        "95"
+      ],
+      "t": 0,
+      "izoh": "Zarafshon daryosi suvining 90 foizi sug’orishga sarflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#51df58cd"
+    },
+    {
+      "q": "Adirlar qisman haydalgan bo’lib, bu yerlarga nima ekiladi?",
+      "v": [
+        "g’alla",
+        "paxta",
+        "makkajo’xori",
+        "arpa"
+      ],
+      "t": 0,
+      "izoh": "Adirlar qisman haydalgan bo’lib, unga g’alla ekiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#bd47bffd"
+    },
+    {
+      "q": "Samarqand viloyati tabiiy sharoiti qulay bo’lganligi sababli bu yerda qanday mevalar erta pishadi?",
+      "v": [
+        "gilos, o’rik, shaftoli",
+        "o’rik, shaftoli, olcha",
+        "olma, anor, nok",
+        "behi, shaftoli, olma"
+      ],
+      "t": 0,
+      "izoh": "Viloyatning tabiiy sharoiti meva daraxtlari o’stirish uchun ham qulay. Bu yerda shirindan shakar - gilos, o’rik, shaftoli erta pishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#637b8b69"
+    },
+    {
+      "q": "Rayon aholisining qancha qismi shaharda yashaydi?",
+      "v": [
+        "2/5",
+        "3/5",
+        "1/3",
+        "1/4"
+      ],
+      "t": 0,
+      "izoh": "Viloyat aholisining 3/5 qismi qishloqda yashaydi, demak 2/5 qismi shaharda yashaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#27e00428"
+    },
+    {
+      "q": "Zarafshon vodiysida aholining zichligi 1 km2 ga necha kishi to’g’ri keladi?",
+      "v": [
+        "250",
+        "200",
+        "300",
+        "350"
+      ],
+      "t": 0,
+      "izoh": "Zarafshon vodiysida aholi nihoyatda zich yashaydi. Bu yerlarda har bir kv.km ga 250 va undan ortiq kishi to’g’ri keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#ef3b49f6"
+    },
+    {
+      "q": "«SamKochavto» zavodi qachon ishga tushgan?",
+      "v": [
+        "1999-yil",
+        "1996-yil",
+        "1998-yil",
+        "1994-yil"
+      ],
+      "t": 0,
+      "izoh": "Samarqand shahrida 1999-yilda yuk tashish va sayyohlarga xizmat ko’rsatadigan 4 turdagi mashinalarni ishlab chiqaruvchi «SamKochavto» zavodi ish boshlagan edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#dc474251"
+    },
+    {
+      "q": "Samarqand viloyatida yengil sanoatning nechtaga yaqin korxonasi ishlab turibdi?",
+      "v": [
+        "50",
+        "30",
+        "40",
+        "60"
+      ],
+      "t": 0,
+      "izoh": "Yengil sanoatning 50 ga yaqin korxonasi ishlab turibdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#183b5b50"
+    },
+    {
+      "q": "Dehqonchilik qishloq xo’jaligi yalpi mahsulotining necha foizini beradi?",
+      "v": [
+        "75",
+        "80",
+        "65",
+        "70"
+      ],
+      "t": 0,
+      "izoh": "Dehqonchilik qishloq xo’jaligi yalpi mahsulotining 75 foizini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#67572da5"
+    },
+    {
+      "q": "Samarqand viloyatining qaysi tumani tamaki yetishtirishga ixtisoslashgan?",
+      "v": [
+        "Urgut",
+        "Jomboy",
+        "Bulungur",
+        "Nurobod"
+      ],
+      "t": 0,
+      "izoh": "Urgut tumani tamaki yetishtirishga ixtisoslashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#a4ed231b"
+    },
+    {
+      "q": "Samarqand viloyati qaysi chorva soni bo’yicha mamlakatda birinchi o’rinni egallaydi?",
+      "v": [
+        "qoramollar",
+        "qo’y-echkilar",
+        "yilqilar",
+        "tuyalar"
+      ],
+      "t": 0,
+      "izoh": "Qoramollar soni jihatidan viloyat mamlakatda birinchi o’rinni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#0290f74b"
+    },
+    {
+      "q": "Samarqand viloyati qorako’lchilikda nechanchi o’rinda turadi?",
+      "v": [
+        "3",
+        "1",
+        "2",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Qorako’lchilikda esa uchinchi o’rinda turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#874f750b"
+    },
+    {
+      "q": "Samarqand viloyati hududidan nechta temiryo’l o’tgan?",
+      "v": [
+        "2 ta",
+        "1 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 0,
+      "izoh": "Samarqand viloyati hududidan ikkita temiryo’l o’tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#33fc6423"
+    },
+    {
+      "q": "Samarqand viloyati hududidan o’tgan temiryo’llarni aniqlang.",
+      "v": [
+        "Toshkent-Turkmanboshi, Toshkent-Dushanbe",
+        "Toshkent-Chimkent-Almati, Chorjo’y-Qo’ng’irot",
+        "Buxoro-Beynov, Buxoro-Miskin",
+        "G’uzor-Boysun-Qumqo’rg’on, Angren-Pop"
+      ],
+      "t": 0,
+      "izoh": "Toshkent-Turkmanboshi, Toshkent-Dushanbe temiryo’lida, asosan, tranzit yuklar tashiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#d7530524"
+    },
+    {
+      "q": "Samarqand viloyatidan qo’shni viloyatlarga va O’rta Osiyo davlatlariga qanday turdagi mahsulotlar chiqariladi?",
+      "v": [
+        "mineral o’g’it, qand-shakar, qorako’l terilari",
+        "shoyi, poyabzal, choy",
+        "paxta tolasi, paxta moyi, tamaki",
+        "ho’l meva, uzum, mayiz"
+      ],
+      "t": 0,
+      "izoh": "Mineral o’g’it, tamaki, choy, poyabzal, shoyi va boshqa iste’mol mollari barcha qo’shni viloyatlarga va O’rta Osiyo davlatlariga ham chiqariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#e70f3b5b"
+    },
+    {
+      "q": "Samarqand viloyati hududiy ishlab chiqarish majmuyi tarkibida qanday sanoat tugunlari tarkib topgan?",
+      "v": [
+        "Samarqand, Kattaqo’rg’on",
+        "Samarqand, Juma",
+        "Samarqand, Jomboy",
+        "Samarqand, Oqtosh"
+      ],
+      "t": 0,
+      "izoh": "Viloyatda Samarqand, Kattaqo’rg’on sanoat tugunlari tarkib topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#d4263c3a"
+    },
+    {
+      "q": "Samarqand viloyatidan qaysi davlatga paxta tolasi, paxta moyi, ho’l meva, uzum, mayiz va qorako’l terilari yuboriladi?",
+      "v": [
+        "Rossiya",
+        "O’rta Osiyo respublikalari",
+        "Xitoy",
+        "Koreya Respublikasi"
+      ],
+      "t": 0,
+      "izoh": "Rossiyaga paxta tolasi, paxta moyi, ho’l meva, uzum, mayiz va qorako’l terilari yuboriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#fa162d67"
+    },
+    {
+      "q": "Samarqand shahri necha yillik tarixga ega?",
+      "v": [
+        "2750",
+        "2800",
+        "2700",
+        "2500"
+      ],
+      "t": 0,
+      "izoh": "Arxeologik izlanishlar natijasida shaharning yoshi 2750 da ekanligi aniqlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#05b265d2"
+    },
+    {
+      "q": "Nechanchi asrlarda Samarqand Movarounnahrning ilmiy tafakkur markazi bo’lgan?",
+      "v": [
+        "XIV-XV",
+        "XV-XVII",
+        "XV-XVI",
+        "XIII-XIV"
+      ],
+      "t": 0,
+      "izoh": "XIV-XV asrlarda Movarounnahrning ilmiy tafakkur markazi bo’lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#5d4db730"
+    },
+    {
+      "q": "Qaysi hududlar bilan olib borilgan savdo aloqalari Samarqand shahrining iqtisodiy hamda madaniy jihatdan yuksalishiga ta’sir ko’rsatdi?",
+      "v": [
+        "Hindiston, Eron va Sharqiy Yevropa",
+        "Xitoy, Hindiston va Turkiya",
+        "Hindiston, Eron va Turkiya",
+        "Xitoy, Hindiston va G’arbiy Yevropa"
+      ],
+      "t": 0,
+      "izoh": "Hindiston, Eron va Sharqiy Yevropa mamlakatlari bilan olib borilgan savdo aloqalari shaharning iqtisodiy hamda madaniy jihatdan yuksalishiga ta’sir ko’rsatdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d50_samarqand_viloyati#ee347091"
+    },
+    {
+      "q": "O’rta asr shoir va olimlari Samarqandni qanday atashgan?",
+      "v": [
+        "«sayqali ro’yi zamin»",
+        "«qubbat ul-islom»",
+        "«tamaddun shahri»",
+        "«shahri bog’iston»"
+      ],
+      "t": 0,
+      "izoh": "O’rta asr shoir va olimlari Samarqandni «sayqali ro’yi zamin» deb ulug’laganlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#f08ed177"
+    },
+    {
+      "q": "Samarqand shahri nechanchi yillar oralig’ida O’zbekistonning poytaxti bo’lgan?",
+      "v": [
+        "1924-1930",
+        "1922-1935",
+        "1924-1935",
+        "1922-1930"
+      ],
+      "t": 0,
+      "izoh": "1924-1930-yillarda Samarqand shahri O’zbekistonning poytaxti bo’lgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#78c61108"
+    },
+    {
+      "q": "Samarqand bilan qaysi shaharlar ishlab chiqarish bo’yicha o’zaro bog’langan?",
+      "v": [
+        "Jomboy va Juma",
+        "Bulung’ur va Payariq",
+        "Kattaqo’rg’on va Ishtixon",
+        "Nurobod va Urgut"
+      ],
+      "t": 0,
+      "izoh": "Samarqand bilan Jomboy, Juma va boshqa shaharchalar ishlab chiqarish bo’yicha o’zaro bog’langan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#e57996bf"
+    },
+    {
+      "q": "Samarqand shahrida nechta oliy o’quv yurti bor?",
+      "v": [
+        "7 ta",
+        "5 ta",
+        "8 ta",
+        "6 ta"
+      ],
+      "t": 0,
+      "izoh": "Shaharda Samarqand davlat universiteti, Xalqaro turizm universiteti, tibbiyot, arxitektura-qurilish, chet tillari, iqtisodiyot va servis, veterinariya meditsinasi institutlari hamda Toshkent axborot texnologiyalari universiteti filiali faoliyat yuritmoqda - jami 7 ta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "geo_8_d50_samarqand_viloyati#79a7e4f3"
+    },
+    {
+      "q": "Samarqand viloyatida Samarqanddan keyingi ikkinchi o’rinni egallagan sanoat tuguni va madaniyat markazi - bu...",
+      "v": [
+        "Kattaqo’rg’on",
+        "Urgut",
+        "Bulung’ur",
+        "Payariq"
+      ],
+      "t": 0,
+      "izoh": "Kattaqo’rg’on viloyatda Samarqanddan keyingi ikkinchi o’rinni egallagan sanoat tuguni va madaniyat markazidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#1fb98049"
+    },
+    {
+      "q": "Samarqanddan taxminan 50 km janubi-sharqda, Qashqadaryo viloyati chegarasida joylashgan shahar qaysi?",
+      "v": [
+        "Urgut",
+        "Kattaqo’rg’on",
+        "Juma",
+        "Oqtosh"
+      ],
+      "t": 0,
+      "izoh": "Urgut Samarqanddan taxminan 50 km janubi-sharqda, Qashqadaryo viloyati chegarasida joylashgan shahar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#09c8e350"
+    },
+    {
+      "q": "Kattaqo’rg’on shahrida joylashgan mamlakatimizdagi eng yirik korxonalardan birini belgilang.",
+      "v": [
+        "moy eritish zavodi",
+        "go’sht kombinati",
+        "paxta tozalash mashinasozligi zavodi",
+        "broyler fabrikasi"
+      ],
+      "t": 0,
+      "izoh": "Moy eritish kombinati mamlakatdagi eng yirik korxonalardan biridir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#cb1ae443"
+    },
+    {
+      "q": "Kattaqo’rg’on shahri yonidan qaysi temiryo’l tarmog’i o’tadi?",
+      "v": [
+        "Samarqand-Buxoro",
+        "Jizzax-Samarqand",
+        "Samarqand-Qarshi",
+        "Chorjo’y-Qo’ng’irot"
+      ],
+      "t": 0,
+      "izoh": "Shahar yonidan Samarqand-Buxoro temiryo’li o’tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#985660c1"
+    },
+    {
+      "q": "Kattaqo’rg’on shahridagi sanoat korxonalarini qaysi elektr manbai elektr energiya bilan ta’minlaydi?",
+      "v": [
+        "Kattaqo’rg’on IEM",
+        "Navoiy IES",
+        "Charxin GES",
+        "Kattaqo’rg’on GES"
+      ],
+      "t": 0,
+      "izoh": "Sanoat korxonalarini katta IEM elektr energiya bilan ta’minlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#9939ad50"
+    },
+    {
+      "q": "Qaysi shaharda bir nechta gilam fabrikalari, tabak-ferment va shifer zavodlari faoliyat yuritadi?",
+      "v": [
+        "Urgut",
+        "G’ijduvon",
+        "Kattaqo’rg’on",
+        "Samarqand"
+      ],
+      "t": 0,
+      "izoh": "Urgutda bir nechta gilam fabrikalari, tabak-ferment va shifer zavodlari faoliyat yuritadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#a5e23cc7"
+    },
+    {
+      "q": "Yiliga 2 mln jo’ja ochiriladigan broyler fabrikasi qaysi shaharda joylashgan?",
+      "v": [
+        "Kattaqo’rg’on",
+        "Jomboy",
+        "Samarqand",
+        "Juma"
+      ],
+      "t": 0,
+      "izoh": "Yiliga 2 million jo’ja ochiriladigan broyler fabrikasi Kattaqo’rg’onda joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#6a45e1e5"
+    },
+    {
+      "q": "Samarqand viloyatining eng yirik sharq bozori qaysi shaharda joylashgan?",
+      "v": [
+        "Urgut",
+        "Jomboy",
+        "Samarqand",
+        "Kattaqo’rg’on"
+      ],
+      "t": 0,
+      "izoh": "Samarqand viloyatining eng yirik sharq bozori Urgut shahrida joylashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "geo_8_d50_samarqand_viloyati#5935c72b"
+    }
+  ]
+}

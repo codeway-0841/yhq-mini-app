@@ -1,0 +1,456 @@
+{
+  "nom": "07-mavzu. Mexanik Harakat",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Kinematika deganda nima tushuniladi?",
+      "v": [
+        "Mexanikaning jism harakatini tavsiflaydigan kattaliklar orasidagi bog'lanishni o'rganadigan bo'limi",
+        "Mexanikaning kuchlarni o'rganadigan bo'limi",
+        "Fizikaning issiqlikni o'rganadigan bo'limi",
+        "Fizikaning yorug'likni o'rganadigan bo'limi"
+      ],
+      "t": 0,
+      "izoh": "Kinematika ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#b72e3331"
+    },
+    {
+      "q": "Kinematikaning asosiy vazifasi nima?",
+      "v": [
+        "Harakatdagi jismning istalgan paytdagi vaziyatini aniqlash",
+        "Kuchni o'lchash",
+        "Massani o'lchash",
+        "Temperaturani o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Asosiy vazifa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#fcc35d43"
+    },
+    {
+      "q": "Kinematikada jismning harakati qanday o'rganiladi?",
+      "v": [
+        "Vaqtga bog'liq holda, lekin harakatni yuzaga keltiruvchi sabablar o'rganilmaydi",
+        "Sabablar bilan birga",
+        "Faqat kuchga bog'liq holda",
+        "Faqat massaga bog'liq holda"
+      ],
+      "t": 0,
+      "izoh": "Sabablar o'rganilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#af8720e9"
+    },
+    {
+      "q": "Jism tinch turibdi deyiladi, agar...",
+      "v": [
+        "uning vaziyati vaqt o'tishi bilan o'zgarmasa",
+        "u tez harakatlansa",
+        "u tebransa",
+        "u aylansa"
+      ],
+      "t": 0,
+      "izoh": "Tinch holat ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#679cc8b4"
+    },
+    {
+      "q": "Mexanik harakat deganda nima tushuniladi?",
+      "v": [
+        "Vaqt o'tishi bilan jismning fazodagi vaziyati boshqa jismlarga nisbatan o'zgarishi",
+        "Jismning issiq holati",
+        "Jismning rang o'zgarishi",
+        "Jismning shakli o'zgarishi"
+      ],
+      "t": 0,
+      "izoh": "Mexanik harakat ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#496beecb"
+    },
+    {
+      "q": "Harakatning qaysi turlari darslikda keltirilgan?",
+      "v": [
+        "ilgarilanma, aylanma, tebranma",
+        "faqat aylanma",
+        "faqat ilgarilanma",
+        "faqat tebranma"
+      ],
+      "t": 0,
+      "izoh": "Uch asosiy tur va kombinatsiyalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#331264e8"
+    },
+    {
+      "q": "Sanoq jism deganda nima tushuniladi?",
+      "v": [
+        "Harakatsiz deb qabul qilingan jism",
+        "Harakatlanayotgan jism",
+        "Eng katta jism",
+        "Eng kichik jism"
+      ],
+      "t": 0,
+      "izoh": "Sanoq jism ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#1177bc60"
+    },
+    {
+      "q": "Sanoq jismga qaysi biri misol bo'la oladi?",
+      "v": [
+        "bino, uylar, daraxtlar",
+        "uchayotgan qush",
+        "harakatlanayotgan avtomobil",
+        "oqayotgan daryo"
+      ],
+      "t": 0,
+      "izoh": "Harakatsiz deb qabul qilinadigan jismlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#cf85bd97"
+    },
+    {
+      "q": "Sanoq sistemasi nimadan tashkil topadi?",
+      "v": [
+        "Sanoq jism, unga biriktirilgan koordinatalar sistemasi va vaqtni o'lchaydigan asbob",
+        "Faqat sanoq jismdan",
+        "Faqat soatdan",
+        "Faqat chizg'ichdan"
+      ],
+      "t": 0,
+      "izoh": "Uch tarkibiy qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#91937a71"
+    },
+    {
+      "q": "Jism to'g'ri chiziq bo'ylab harakatlansa, uning o'rni qanday aniqlanadi?",
+      "v": [
+        "OX o'qdagi koordinatasi bilan",
+        "Uchta koordinata bilan",
+        "Ikkita koordinata bilan",
+        "Aniqlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bitta koordinata.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#4c750829"
+    },
+    {
+      "q": "Jism tekislikda harakatlansa, uning o'rni nechta koordinata bilan aniqlanadi?",
+      "v": [
+        "ikkita (x; y)",
+        "bitta",
+        "uchta",
+        "to'rtta"
+      ],
+      "t": 0,
+      "izoh": "XOY tekislik — 2 koordinata.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#9bbda1f7"
+    },
+    {
+      "q": "Jism fazoda harakatlansa, uning vaziyati nechta koordinata bilan aniqlanadi?",
+      "v": [
+        "uchta (x; y; z)",
+        "bitta",
+        "ikkita",
+        "to'rtta"
+      ],
+      "t": 0,
+      "izoh": "Fazoda 3 koordinata.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#d4bfe494"
+    },
+    {
+      "q": "Kattalikning o'zgarishi deganda nima tushuniladi?",
+      "v": [
+        "Kattalikning dastlabki qiymatidan keyingi qiymatining qanchaga farq qilishi",
+        "Kattalikning nolga tengligi",
+        "Kattalikning doimiyligi",
+        "Kattalikning birligi"
+      ],
+      "t": 0,
+      "izoh": "O'zgarish ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#a6df1256"
+    },
+    {
+      "q": "Kattaliklarning o'zgarishi qaysi belgi bilan belgilanadi?",
+      "v": [
+        "∆ (grekcha \"delta\" harfi)",
+        "Ω (omega)",
+        "π (pi)",
+        "Σ (sigma)"
+      ],
+      "t": 0,
+      "izoh": "Delta belgisi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#0bef0482"
+    },
+    {
+      "q": "x koordinataning o'zgarishi qanday yoziladi?",
+      "v": [
+        "∆x = x − x₀",
+        "∆x = x + x₀",
+        "∆x = x ∙ x₀",
+        "∆x = x/x₀"
+      ],
+      "t": 0,
+      "izoh": "Oxirgi va boshlang'ich qiymat ayirmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#f80c5155"
+    },
+    {
+      "q": "Poyezd vagonidagi stolda yotgan kitob stolga nisbatan qanday holatda?",
+      "v": [
+        "tinch holatda",
+        "harakatda",
+        "tebranishda",
+        "aylanishda"
+      ],
+      "t": 0,
+      "izoh": "Stolga nisbatan tinch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#61894867"
+    },
+    {
+      "q": "O'sha kitob relslarga nisbatan qanday holatda?",
+      "v": [
+        "harakatda",
+        "tinch",
+        "tebranishda",
+        "harakatsiz"
+      ],
+      "t": 0,
+      "izoh": "Relslarga nisbatan harakatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#02c52ba4"
+    },
+    {
+      "q": "Avtomobil ichidagi o'rindiqlarda o'tirgan odamlar bir-biriga nisbatan qanday?",
+      "v": [
+        "harakatsiz",
+        "harakatda",
+        "aylanma harakatda",
+        "tebranma harakatda"
+      ],
+      "t": 0,
+      "izoh": "Bir-biriga nisbatan tinch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#38884c4c"
+    },
+    {
+      "q": "Barcha jismlarning harakati qandaydir?",
+      "v": [
+        "nisbiydir",
+        "mutlaqdir",
+        "doimiydir",
+        "bir xildir"
+      ],
+      "t": 0,
+      "izoh": "Harakat ham, tinchlik ham nisbiy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#3b8d569d"
+    },
+    {
+      "q": "Koordinatasi x₀ = 5 bo'lgan nuqtadan bola o'ngga 8 birlikka harakatlansa, keyingi koordinatasi qanday bo'ladi?",
+      "v": [
+        "13",
+        "3",
+        "8",
+        "−3"
+      ],
+      "t": 0,
+      "izoh": "5 + 8 = 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#837b3f71"
+    },
+    {
+      "q": "Koordinatasi x₀ = 5 bo'lgan nuqtadan bola chapga 7 birlikka harakatlansa, koordinatasi qanday bo'ladi?",
+      "v": [
+        "−2",
+        "12",
+        "2",
+        "7"
+      ],
+      "t": 0,
+      "izoh": "5 − 7 = −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#2d807566"
+    },
+    {
+      "q": "Bola sharqqa 50 m yurib, shu yo'nalishda yana 100 m yugursa, bosib o'tgan masofasi qancha?",
+      "v": [
+        "150 m",
+        "50 m",
+        "100 m",
+        "200 m"
+      ],
+      "t": 0,
+      "izoh": "50 + 100 = 150 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#65da097c"
+    },
+    {
+      "q": "Geolokatsiya nima?",
+      "v": [
+        "Yer yuzasidagi nuqtaning joyini elektron qurilma yordamida GPS texnologiyasi yoki internet asosida aniqlash usuli",
+        "Xarita chizish usuli",
+        "Kompass bilan yo'l topish",
+        "Yulduzlarga qarab yo'nalish aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Geolokatsiya ta'rifi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#516b2b5b"
+    },
+    {
+      "q": "\"Geo\" so'zi yunonchada nimani bildiradi?",
+      "v": [
+        "yer",
+        "joy",
+        "osmon",
+        "suv"
+      ],
+      "t": 0,
+      "izoh": "Geo — yer.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#f608c3fb"
+    },
+    {
+      "q": "\"Location\" so'zi inglizchada nimani bildiradi?",
+      "v": [
+        "joy",
+        "yer",
+        "xarita",
+        "yo'l"
+      ],
+      "t": 0,
+      "izoh": "Location — joy.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#5df6e9d3"
+    },
+    {
+      "q": "Geolokatsiyada qaysi qurilmalarning geografik joylashuvi topiladi?",
+      "v": [
+        "Radio uzatkich, mobil telefon yoki internetga ulangan kompyuter",
+        "Faqat kompas",
+        "Faqat xarita",
+        "Faqat teleskop"
+      ],
+      "t": 0,
+      "izoh": "Elektron qurilmalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#9fd2956e"
+    },
+    {
+      "q": "Fizik kattalikning o'zgarishi o'zi nima bo'ladi?",
+      "v": [
+        "ham fizik kattalik",
+        "fizik kattalik emas",
+        "faqat son",
+        "faqat birlik"
+      ],
+      "t": 0,
+      "izoh": "O'zgarish ham fizik kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#c1aec89b"
+    },
+    {
+      "q": "Daryodagi qayiqning harakatini qirg'oqdan kuzatsak, qayiq qaysi jismlarga nisbatan harakatda?",
+      "v": [
+        "Qirg'oq va undagi jismlarga nisbatan",
+        "Suvga nisbatan faqat",
+        "Hech qanday jismga nisbatan emas",
+        "Qayiqdagi odamga nisbatan"
+      ],
+      "t": 0,
+      "izoh": "Qirg'oqdagi jismlarga nisbatan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#8c17de92"
+    },
+    {
+      "q": "Uy, bino, daraxtlar bizning nazarimizda qanday tuyuladi?",
+      "v": [
+        "harakatsiz turgandek",
+        "tez harakatlanayotgandek",
+        "tebranayotgandek",
+        "yo'qolgandek"
+      ],
+      "t": 0,
+      "izoh": "Aslida Yer bilan birga harakatda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#9cb2b399"
+    },
+    {
+      "q": "Kuzatish boshlangan payt (t = 0) dagi koordinatalar qanday belgilanadi?",
+      "v": [
+        "(x₀; y₀)",
+        "(x; y)",
+        "(∆x; ∆y)",
+        "(t; s)"
+      ],
+      "t": 0,
+      "izoh": "Boshlang'ich koordinatalar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m07-mexanik-harakat#5cfa861f"
+    }
+  ]
+}

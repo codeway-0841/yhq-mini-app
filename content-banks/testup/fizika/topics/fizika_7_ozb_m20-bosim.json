@@ -1,0 +1,531 @@
+{
+  "nom": "20-mavzu. Bosim",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bosim nima?",
+      "v": [
+        "Birlik sirt yuzasiga tik ta'sir qilayotgan kuchga son jihatdan teng kattalik",
+        "Jismga ta'sir qiluvchi kuch",
+        "Jismning massasi",
+        "Jismning hajmi"
+      ],
+      "t": 0,
+      "izoh": "Bosim — birlik yuzaga tik kuch.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#35a930bb"
+    },
+    {
+      "q": "Bosim qaysi harf bilan belgilanadi?",
+      "v": [
+        "p",
+        "F",
+        "S",
+        "m"
+      ],
+      "t": 0,
+      "izoh": "Pressure so'zining bosh harfi p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#ae9453fc"
+    },
+    {
+      "q": "Bosim formulasi qanday?",
+      "v": [
+        "p = F/S",
+        "p = F·S",
+        "p = S/F",
+        "p = m/V"
+      ],
+      "t": 0,
+      "izoh": "p = F/S.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#6aa9f9b1"
+    },
+    {
+      "q": "SI da bosim birligi nima?",
+      "v": [
+        "Paskal",
+        "Nyuton",
+        "Kilogramm",
+        "Vatt"
+      ],
+      "t": 0,
+      "izoh": "Bosim birligi — paskal (Pa).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#b0cbe134"
+    },
+    {
+      "q": "1 Pa nimaga teng?",
+      "v": [
+        "1 N/m²",
+        "1 N·m²",
+        "1 kg/m²",
+        "1 N/cm²"
+      ],
+      "t": 0,
+      "izoh": "1 Pa = 1 N/m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#fd74c475"
+    },
+    {
+      "q": "Paskal birligi kim sharafiga nomlangan?",
+      "v": [
+        "Blez Paskal",
+        "Isaak Nyuton",
+        "Galileo Galiley",
+        "Arximed"
+      ],
+      "t": 0,
+      "izoh": "Fransuz olimi Blez Paskal sharafiga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#c5fcbffa"
+    },
+    {
+      "q": "Blez Paskal qaysi yillarda yashagan?",
+      "v": [
+        "1623–1662",
+        "1642–1727",
+        "1564–1642",
+        "1700–1782"
+      ],
+      "t": 0,
+      "izoh": "1623–1662 yillar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#eebd99c2"
+    },
+    {
+      "q": "1 kilopaskal necha paskalga teng?",
+      "v": [
+        "1000 Pa",
+        "100 Pa",
+        "10 000 Pa",
+        "1 000 000 Pa"
+      ],
+      "t": 0,
+      "izoh": "1 kPa = 10³ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#2b0b2b8e"
+    },
+    {
+      "q": "1 megapaskal necha paskalga teng?",
+      "v": [
+        "10⁶ Pa",
+        "10³ Pa",
+        "10⁹ Pa",
+        "10⁴ Pa"
+      ],
+      "t": 0,
+      "izoh": "1 MPa = 10⁶ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#7e35d116"
+    },
+    {
+      "q": "Odam chang'ida qorga botmaydi, chunki ...",
+      "v": [
+        "tayanch yuzasi katta, bosim kichik",
+        "chang'i yengil",
+        "chang'i issiq",
+        "qor qattiq"
+      ],
+      "t": 0,
+      "izoh": "Yuzasi katta bo'lsa bosim kichik bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#3a386257"
+    },
+    {
+      "q": "Bosimni kamaytirish uchun yuzani qanday o'zgartirish kerak?",
+      "v": [
+        "Kattalashtirish",
+        "Kichraytirish",
+        "O'zgartirmaslik",
+        "Yarmlash"
+      ],
+      "t": 0,
+      "izoh": "Yuzani kattalashtirsak bosim kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#ea96df92"
+    },
+    {
+      "q": "Sahroda qum ustida yuradigan mashinalarga qanday shinalar qo'yiladi?",
+      "v": [
+        "Keng",
+        "Ingichka",
+        "Yumshoq",
+        "Kichik"
+      ],
+      "t": 0,
+      "izoh": "Keng shinalar bosimni kamaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#0e8fb865"
+    },
+    {
+      "q": "Yuk avtomobillarining shinalari nega keng yasaladi?",
+      "v": [
+        "Yerga bosimni kamaytirish uchun",
+        "Tez yurish uchun",
+        "Chiroy uchun",
+        "Yoqilg'i tejash uchun"
+      ],
+      "t": 0,
+      "izoh": "Keng shina bosimni kamaytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#bac0034a"
+    },
+    {
+      "q": "Tuya qumli cho'lda bemalol yura oladi, chunki ...",
+      "v": [
+        "tuyaning oyoq tagi yuzasi katta",
+        "tuya yengil",
+        "qum qattiq",
+        "tuya sekin yuradi"
+      ],
+      "t": 0,
+      "izoh": "Katta tayanch yuzasi bosimni kichraytiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#6f1db1c6"
+    },
+    {
+      "q": "Odam qaysi holda yerga ko'proq bosim beradi?",
+      "v": [
+        "Bir oyoqda turganda",
+        "Yotganida",
+        "Ikkala oyoqda turganda",
+        "O'tirganda"
+      ],
+      "t": 0,
+      "izoh": "Tayanch yuzasi kichik bo'lsa bosim katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#82b2a94c"
+    },
+    {
+      "q": "Bosimning son qiymati nimaga bog'liq?",
+      "v": [
+        "Kuch va sirt yuzasiga",
+        "Faqat kuchga",
+        "Faqat yuzaga",
+        "Faqat massaga"
+      ],
+      "t": 0,
+      "izoh": "Kuch va yuzaga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#ab610ddb"
+    },
+    {
+      "q": "Tayanch yuzasi katta bo'lganda bosim ...",
+      "v": [
+        "kichik bo'ladi",
+        "katta bo'ladi",
+        "o'zgarmaydi",
+        "nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Yuza katta — bosim kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#a850deaa"
+    },
+    {
+      "q": "Bir xil kuch ta'sirida yuza kichraytirilsa, bosim ...",
+      "v": [
+        "oshadi",
+        "kamayadi",
+        "o'zgarmaydi",
+        "nol bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Yuza kichik — bosim katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#707c7eec"
+    },
+    {
+      "q": "Belkurakning oyoq qo'yib bosiladigan yuqori tomoni nega egilgan bo'ladi?",
+      "v": [
+        "Oyoqga ta'sir qiluvchi bosimni kamaytirish uchun",
+        "Chiroy uchun",
+        "Yengillik uchun",
+        "Mustahkamlik uchun"
+      ],
+      "t": 0,
+      "izoh": "Yuzani kattalashtirib bosim kamaytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#39200755"
+    },
+    {
+      "q": "Massasi 64 kg, oyoq kiyimi tag yuzi 160 cm² bo'lgan bola yerga qanday bosim beradi?",
+      "v": [
+        "39,24 kPa",
+        "3,92 kPa",
+        "392,4 kPa",
+        "39,24 Pa"
+      ],
+      "t": 0,
+      "izoh": "p = 39,24 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#cbed54c4"
+    },
+    {
+      "q": "Ingichka shinali mashinaning qumdagi izi qanday bo'ladi?",
+      "v": [
+        "Chuqurroq",
+        "Yuzaki",
+        "Ko'rinmaydi",
+        "Tekis"
+      ],
+      "t": 0,
+      "izoh": "Bosim katta bo'lsa iz chuqurroq botadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#c3186469"
+    },
+    {
+      "q": "Bosim inglizchada qanday ataladi?",
+      "v": [
+        "pressure",
+        "force",
+        "power",
+        "mass"
+      ],
+      "t": 0,
+      "izoh": "Pressure — bosim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#69f7eef5"
+    },
+    {
+      "q": "Bosim birligini hosil qilish uchun kuch birligi nimaga bo'linadi?",
+      "v": [
+        "Yuza birligiga",
+        "Massa birligiga",
+        "Hajm birligiga",
+        "Vaqt birligiga"
+      ],
+      "t": 0,
+      "izoh": "1 N / 1 m² = 1 Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#3e42ad83"
+    },
+    {
+      "q": "Kundalik turmushda bosimning qaysi birliklaridan ko'proq foydalaniladi?",
+      "v": [
+        "kPa va MPa",
+        "mPa",
+        "nPa",
+        "Faqat Pa"
+      ],
+      "t": 0,
+      "izoh": "Karrali birliklar kPa va MPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#dcefb30b"
+    },
+    {
+      "q": "4800 Pa necha kPa?",
+      "v": [
+        "4,8 kPa",
+        "48 kPa",
+        "0,48 kPa",
+        "480 kPa"
+      ],
+      "t": 0,
+      "izoh": "4800 Pa = 4,8 kPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m20-bosim#d18f2799"
+    },
+    {
+      "q": "500 000 Pa necha MPa?",
+      "v": [
+        "0,5 MPa",
+        "5 MPa",
+        "50 MPa",
+        "0,05 MPa"
+      ],
+      "t": 0,
+      "izoh": "500 000 Pa = 0,5 MPa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m20-bosim#3fa8e8b6"
+    },
+    {
+      "q": "Qalin qorda chang'isiz yurish qiyin, chunki ...",
+      "v": [
+        "oyoq kiyimi yuzasi kichik, bosim katta",
+        "qor juda sovuq",
+        "odam og'ir",
+        "qor silliq"
+      ],
+      "t": 0,
+      "izoh": "Kichik yuzada bosim katta, oyoq botadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#9d4c43ef"
+    },
+    {
+      "q": "G'ishtning sirtdagi qaysi holatida bosimi eng katta?",
+      "v": [
+        "Tik turgan holatda",
+        "Eni bilan yotgan holatda",
+        "Bo'yi bilan yotgan holatda",
+        "Barchasida bir xil"
+      ],
+      "t": 0,
+      "izoh": "Tik holatda yuza eng kichik, bosim eng katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#aa094b5e"
+    },
+    {
+      "q": "Qutining yerga beradigan bosimini topish uchun nimalar kerak?",
+      "v": [
+        "Og'irlik kuchi va pastki qism yuzasi",
+        "Faqat massa",
+        "Faqat hajm",
+        "Faqat balandlik"
+      ],
+      "t": 0,
+      "izoh": "p = F/S uchun kuch va yuza kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#9f57071b"
+    },
+    {
+      "q": "Kuchning yuzaga ta'siri natijasi nimaga bog'liq?",
+      "v": [
+        "Kuch kattaligiga va sirt yuzasiga",
+        "Faqat kuchning kattaligiga",
+        "Faqat yuzaga",
+        "Hech narsaga"
+      ],
+      "t": 0,
+      "izoh": "Kuch va yuzaga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#b6e98073"
+    },
+    {
+      "q": "1 dm² necha m² ga teng?",
+      "v": [
+        "0,01 m²",
+        "0,1 m²",
+        "100 m²",
+        "0,001 m²"
+      ],
+      "t": 0,
+      "izoh": "1 dm² = 0,01 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m20-bosim#62a632a3"
+    },
+    {
+      "q": "160 cm² necha m² ga teng?",
+      "v": [
+        "0,016 m²",
+        "0,16 m²",
+        "1,6 m²",
+        "16 m²"
+      ],
+      "t": 0,
+      "izoh": "160/10000 = 0,016 m².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_m20-bosim#4ef4c6bd"
+    },
+    {
+      "q": "Qozonga suv quyilganda uning stolga bosimi nima bo'ladi?",
+      "v": [
+        "Oshadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Suv qo'shilganda kuch ortadi, bosim oshadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#1e2eda88"
+    },
+    {
+      "q": "Bir oyoqda va ikki oyoqda turganda bosim qanday farq qiladi?",
+      "v": [
+        "Bir oyoqda bosim ikki baravar katta",
+        "Bir xil",
+        "Ikki oyoqda katta",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bir oyoqda yuza yarim, bosim ikki baravar katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#406be966"
+    },
+    {
+      "q": "Bosim qanday kattalik?",
+      "v": [
+        "Skalyar",
+        "Vektor",
+        "Yo'nalgan",
+        "Aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Bosim skalyar kattalik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m20-bosim#6e2b482a"
+    }
+  ]
+}

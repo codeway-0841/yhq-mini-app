@@ -1,0 +1,486 @@
+{
+  "nom": "07-mavzu. Gaz Molekulalari Harakat Tezligi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Harakatlanayotgan m₀ massali gaz molekulalarining o'rtacha kinetik energiyasi qanday ifoda orqali aniqlanadi?",
+      "v": [
+        "Ēₖ = m₀v̄²/2",
+        "Ēₖ = m₀v̄/2",
+        "Ēₖ = m₀v̄²",
+        "Ēₖ = 2m₀v̄²"
+      ],
+      "t": 0,
+      "izoh": "Gaz molekulalarining o'rtacha kinetik energiyasi Ēₖ = m₀v̄²/2 ifoda orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#1bc03eb1"
+    },
+    {
+      "q": "Gazning absolyut temperaturasi T bo'lganda, molekulalarning o'rtacha kinetik energiyasi qanday ko'rinishda ifodalanadi?",
+      "v": [
+        "Ēₖ = (3/2)kT",
+        "Ēₖ = (2/3)kT",
+        "Ēₖ = 3kT",
+        "Ēₖ = kT/2"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha kinetik energiya Ēₖ = (3/2)kT ko'rinishida ham ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#04a5f19f"
+    },
+    {
+      "q": "Molekulalar tezliklari kvadratlarining o'rtacha qiymati qaysi ifodaga teng?",
+      "v": [
+        "v̄² = 3kT/m₀",
+        "v̄² = 2kT/m₀",
+        "v̄² = kT/3m₀",
+        "v̄² = 3m₀/kT"
+      ],
+      "t": 0,
+      "izoh": "Ikki ifodani tenglashtirishdan v̄² = 3kT/m₀ kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#ae9bcc7a"
+    },
+    {
+      "q": "Gaz molekulalarining o'rtacha kvadratik tezligi qanday ifoda orqali aniqlanadi?",
+      "v": [
+        "v̄ = √(3kT/m₀)",
+        "v̄ = √(kT/3m₀)",
+        "v̄ = 3kT/m₀",
+        "v̄ = √(2kT/m₀)"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha kvadratik tezlik v̄ = √(3kT/m₀) ifoda orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#6db51e1a"
+    },
+    {
+      "q": "Molyar massa ta'rifiga ko'ra M nimaga teng?",
+      "v": [
+        "M = m₀·Nₐ",
+        "M = m₀/Nₐ",
+        "M = Nₐ/m₀",
+        "M = m₀·k"
+      ],
+      "t": 0,
+      "izoh": "Molyar massa ta'rifiga ko'ra M = m₀·Nₐ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#c8929f5d"
+    },
+    {
+      "q": "Bolsman doimiysi k bilan Avogadro doimiysi Nₐ ning ko'paytmasiga nima deb atash qabul qilingan?",
+      "v": [
+        "Universal (molyar) gaz doimiysi",
+        "Absolyut gaz doimiysi",
+        "Molekulyar doimiy",
+        "Termodinamik doimiy"
+      ],
+      "t": 0,
+      "izoh": "k·Nₐ ko'paytmaga universal (molyar) gaz doimiysi deb atash qabul qilingan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#682452a0"
+    },
+    {
+      "q": "Universal gaz doimiysi qaysi harf bilan belgilanadi va qanday yoziladi?",
+      "v": [
+        "R = k·Nₐ",
+        "R = k/Nₐ",
+        "R = k·T",
+        "R = Nₐ·T"
+      ],
+      "t": 0,
+      "izoh": "Universal gaz doimiysi R harfi bilan belgilanadi: R = k·Nₐ.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#87d347b6"
+    },
+    {
+      "q": "Gazlarning universal gaz doimiysining son qiymati qanchaga teng?",
+      "v": [
+        "8,31 J/(mol·K)",
+        "1,38·10⁻²³ J/K",
+        "6,02·10²³ 1/mol",
+        "9,8 J/(mol·K)"
+      ],
+      "t": 0,
+      "izoh": "R = 1,38·10⁻²³ · 6,02·10²³ = 8,31 J/(mol·K).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#b51d7570"
+    },
+    {
+      "q": "Universal gaz doimiysining o'lchov birligi qanday?",
+      "v": [
+        "J/(mol·K)",
+        "J/K",
+        "J/mol",
+        "J·K/mol"
+      ],
+      "t": 0,
+      "izoh": "Universal gaz doimiysi R = 8,31 J/(mol·K) birlikda o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#4e3a9d11"
+    },
+    {
+      "q": "O'rtacha kvadratik tezlikni universal gaz doimiysi orqali hisoblash ifodasi qanday?",
+      "v": [
+        "v̄ = √(3RT/M)",
+        "v̄ = √(RT/3M)",
+        "v̄ = 3RT/M",
+        "v̄ = √(3M/RT)"
+      ],
+      "t": 0,
+      "izoh": "R = k·Nₐ ni hisobga olsak, v̄ = √(3RT/M) ifoda hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#0eece9c1"
+    },
+    {
+      "q": "Bolsman doimiysining son qiymati qancha?",
+      "v": [
+        "1,38·10⁻²³ J/K",
+        "6,02·10²³ 1/mol",
+        "8,31 J/(mol·K)",
+        "1,6·10⁻¹⁹ J/K"
+      ],
+      "t": 0,
+      "izoh": "k = 1,38·10⁻²³ J/K.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#6e599e98"
+    },
+    {
+      "q": "Avogadro doimiysining son qiymati qancha?",
+      "v": [
+        "6,02·10²³ 1/mol",
+        "1,38·10⁻²³ 1/mol",
+        "8,31·10²³ 1/mol",
+        "6,02·10⁻²³ 1/mol"
+      ],
+      "t": 0,
+      "izoh": "Nₐ = 6,02·10²³ 1/mol.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#92e321e4"
+    },
+    {
+      "q": "Gaz molekularining tezliklar bo'yicha taqsimotini nazariy yo'l bilan 1859-yilda kim aniqlagan?",
+      "v": [
+        "Ingliz fizigi J. Maksvell",
+        "Nemis fizigi O. Shtern",
+        "Rus olimi D. Mendeleyev",
+        "Fransuz fizigi E. Mariott"
+      ],
+      "t": 0,
+      "izoh": "Ingliz fizigi J. Maksvell 1859-yilda molekulalarning tezliklar bo'yicha taqsimotini nazariy yo'l bilan aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#baf0720a"
+    },
+    {
+      "q": "Maksvell taqsimoti grafikida vₘ nimani bildiradi?",
+      "v": [
+        "Eng ko'p molekulalar erishgan tezlikni",
+        "Molekulaning maksimal tezligini",
+        "O'rtacha kvadratik tezlikni",
+        "Eng sekin molekulalar tezligini"
+      ],
+      "t": 0,
+      "izoh": "Grafikda eng ko'p molekulalarning erishgan tezligi vₘ deb belgilangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#7641e0cd"
+    },
+    {
+      "q": "Molekulalarning o'rtacha kvadratik tezligi vₖᵥ bilan vₘ tezlik o'rtasida qanday munosabat bor?",
+      "v": [
+        "vₖᵥ bu vₘ tezlikdan birmuncha katta",
+        "vₖᵥ vₘ ga aniq teng",
+        "vₖᵥ vₘ dan birmuncha kichik",
+        "vₖᵥ vₘ dan ikki marta kichik"
+      ],
+      "t": 0,
+      "izoh": "Molekulalarning vₖᵥ o'rtacha kvadratik tezligi bu vₘ tezlikdan birmuncha katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#c51219e8"
+    },
+    {
+      "q": "Gaz molekulalarining harakat tezligini tajribada 1920-yilda kim aniqlagan?",
+      "v": [
+        "Nemis fizigi Otto Shtern",
+        "Ingliz fizigi J. Maksvell",
+        "Fransuz fizigi Gey-Lyussak",
+        "Ingliz fizigi R. Boyl"
+      ],
+      "t": 0,
+      "izoh": "Tezlikni tajribada 1920-yilda nemis fizigi Otto Shtern (1888–1969) aniqlagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#649e44e0"
+    },
+    {
+      "q": "Shternning tajriba qurilmasi nimadan iborat?",
+      "v": [
+        "Bir-biriga mahkam biriktirilgan umumiy o'qqa ega ikkita silindrdan",
+        "Ikkita alohida shisha kolbadan",
+        "Bitta silindr va porshendan",
+        "Vakuum nasosi va manometrdan"
+      ],
+      "t": 0,
+      "izoh": "Qurilma bir-biriga mahkam biriktirilgan umumiy o'qqa ega ikkita silindrdan iborat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#0aa2d1be"
+    },
+    {
+      "q": "Shtern tajribasida ichki silindr o'qi bo'ylab tortilgan K simi qanday tayyorlangan?",
+      "v": [
+        "Platina sim ustiga kumush yuritilgan",
+        "Mis sim ustiga oltin yuritilgan",
+        "Kumush sim ustiga platina yuritilgan",
+        "Temir sim ustiga qo'rg'oshin yuritilgan"
+      ],
+      "t": 0,
+      "izoh": "Ichki silindr o'qi bo'ylab ustiga kumush yuritilgan platinadan qilingan K sim tortilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#de5c1dda"
+    },
+    {
+      "q": "Shtern tajribasi boshlanishidan oldin silindrlar orasidagi havo bilan nima qilinadi?",
+      "v": [
+        "Havo so'rilib, idishlar vakuum holatiga keltiriladi",
+        "Havo qizdiriladi",
+        "Havo bosimi oshiriladi",
+        "Havo kislorod bilan almashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "Tajriba boshlanishidan oldin silindrlar orasidagi havo so'rilib, idishlar vakuum holatiga keltiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#a6fdb054"
+    },
+    {
+      "q": "Shtern tajribasida platina simdan tok o'tkazilganda nima sodir bo'ladi?",
+      "v": [
+        "Sim sirtidagi kumush qatlami bug'lana boshlaydi",
+        "Sim eriydi",
+        "Silindrlar aylana boshlaydi",
+        "Kumush qatlami muzlaydi"
+      ],
+      "t": 0,
+      "izoh": "Tok o'tkazilsa, sim sirtidagi kumush qatlami bug'lana boshlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#761f80d3"
+    },
+    {
+      "q": "Silindrlar aylantirilmagan holda kumush atomlari tashqi silindrning ichki sirtida qanday qatlam hosil qiladi?",
+      "v": [
+        "Tirqish ro'parasida ensiz b kumush qatlami",
+        "Qalinligi bir xil bo'lmagan keng bc qatlami",
+        "Butun sirt bo'ylab tekis qatlam",
+        "Silindrning faqat pastki qismida qatlam"
+      ],
+      "t": 0,
+      "izoh": "Silindrlar aylantirilmasa, tirqish ro'parasida ensiz b kumush qatlami hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#91545717"
+    },
+    {
+      "q": "Shtern tajribasida silindrlar katta tezlik bilan harakatga keltirilganda katta tezlikli kumush atomlari qayerga kelib tushadi?",
+      "v": [
+        "b nuqtaga yaqinroq joyga",
+        "c oxiriga yaqin joyga",
+        "Tirqishning o'ziga qaytib",
+        "Silindrning tashqi sirtiga"
+      ],
+      "t": 0,
+      "izoh": "Katta tezlik bilan harakatlanayotgan kumush atomlari b nuqtaga yaqinroq kelib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#43d439e5"
+    },
+    {
+      "q": "Shtern tajribasida tezligi kichik bo'lgan kumush atomlari qayerga kelib tushadi?",
+      "v": [
+        "Yo'lning c oxiriga yaqin joylarga",
+        "b nuqtaga yaqin joyga",
+        "Ichki silindr devoriga qaytib",
+        "Tirqish yoniga"
+      ],
+      "t": 0,
+      "izoh": "Tezligi kichik bo'lgan atomlar yo'lning c oxiriga yaqin joylarga kelib tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#48a19d53"
+    },
+    {
+      "q": "Shtern tajribasida tashqi silindr ichida hosil bo'lgan bc kumush qatlamining uzunligi qanday ifodalanadi?",
+      "v": [
+        "s = ωRt",
+        "s = v/R",
+        "s = ω/Rt",
+        "s = 2πR/t"
+      ],
+      "t": 0,
+      "izoh": "bc qatlam uzunligi silindrning burchak tezligi orqali s = ωRt ko'rinishda ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#1590f503"
+    },
+    {
+      "q": "Shtern tajribasida o'rtacha tezlikni hisoblash ifodasi qanday?",
+      "v": [
+        "vₒᵣₜ = ωR(R−r)/s",
+        "vₒᵣₜ = s/(R−r)",
+        "vₒᵣₜ = ωs/R(R−r)",
+        "vₒᵣₜ = (R+r)/t"
+      ],
+      "t": 0,
+      "izoh": "(6) va (7) ifodalardan o'rtacha tezlik vₒᵣₜ = ωR(R−r)/s ko'rinishda hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#4ef8afcc"
+    },
+    {
+      "q": "Shtern tajribasi nimani tasdiqladi?",
+      "v": [
+        "Ideal gaz molekulyar-kinetik nazariyasining hamda Maksvell taqsimotining to'g'riligini",
+        "Boyl-Mariott qonunining noto'g'riligini",
+        "Gazlarning faqat bir xil tezlikda harakatlanishini",
+        "Absolyut nol temperaturaning mavjudligini"
+      ],
+      "t": 0,
+      "izoh": "Shtern tajribasi ideal gaz molekulyar-kinetik nazariyasining hamda Maksvellning gaz molekulalari tezliklari bo'yicha taqsimoti haqidagi ta'limotning to'g'riligini tasdiqladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#7a57bcc4"
+    },
+    {
+      "q": "Shtern tajribasidagi kumush qatlamining shakli nimaga o'xshashligi aniqlandi?",
+      "v": [
+        "Molekulalarning tezliklar bo'yicha Maksvell taqsimoti grafigining shakliga",
+        "Giperbola shakliga",
+        "To'g'ri chiziq shakliga",
+        "Aylana shakliga"
+      ],
+      "t": 0,
+      "izoh": "Kumush qatlamining shakli molekulalarning tezliklar bo'yicha Maksvell taqsimoti grafigining shakliga o'xshashligi aniqlandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#c6395035"
+    },
+    {
+      "q": "Gazning absolyut temperaturasi ikki marta ortganda molekulalarning o'rtacha kinetik energiyasi qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "Ikki marta kamayadi",
+        "To'rt marta ortadi",
+        "O'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Ēₖ = (3/2)kT ga ko'ra, temperatura ikki marta ortganda o'rtacha kinetik energiya ham ikki marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#8a808b27"
+    },
+    {
+      "q": "Gazning absolyut temperaturasi to'rt marta ortganda molekulalarning o'rtacha kvadratik tezligi qanday o'zgaradi?",
+      "v": [
+        "Ikki marta ortadi",
+        "To'rt marta ortadi",
+        "Ikki marta kamayadi",
+        "O'n olti marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "v̄ = √(3kT/m₀) ga ko'ra, temperatura 4 marta ortganda tezlik √4 = 2 marta ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#06de5578"
+    },
+    {
+      "q": "Havodagi kislorod va vodorod molekulalarining o'rtacha kvadratik tezliklari qanday farq qiladi?",
+      "v": [
+        "Vodorod molekulalarining tezligi katta, chunki ularning molyar massasi kichik",
+        "Kislorod molekulalarining tezligi katta, chunki ularning massasi katta",
+        "Ikkalasining tezligi bir xil",
+        "Farq faqat bosimga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "v̄ = √(3RT/M) ga ko'ra, bir xil temperaturada molyar massasi kichik bo'lgan vodorod molekulalarining o'rtacha kvadratik tezligi katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#5250950c"
+    },
+    {
+      "q": "Kinetik energiyasi Eₖ bo'lgan massasi m₀ molekulaning tezligi qaysi ifoda bilan topiladi?",
+      "v": [
+        "v = √(2Eₖ/m₀)",
+        "v = √(Eₖ/2m₀)",
+        "v = 2Eₖ/m₀",
+        "v = Eₖ·m₀/2"
+      ],
+      "t": 0,
+      "izoh": "Eₖ = m₀v²/2 dan v = √(2Eₖ/m₀) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#aaa2bab1"
+    },
+    {
+      "q": "v̄ = √(3RT/M) ifodada tezlikning o'lchov birligi qanday chiqadi?",
+      "v": [
+        "m/s",
+        "km/soat",
+        "J/kg",
+        "mol·K"
+      ],
+      "t": 0,
+      "izoh": "J/(mol·K)·K ni kg/mol ga bo'lsak, ildiz ostidan m/s chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m07-gaz-molekulalari-harakat-tezligi#2af5f4b3"
+    }
+  ]
+}

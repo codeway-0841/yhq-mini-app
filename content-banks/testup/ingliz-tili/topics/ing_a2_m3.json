@@ -1,0 +1,1306 @@
+{
+  "nom": "Present Continuous (am/is/are + -ing)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "She ___ a letter right now.",
+      "v": [
+        "is writing",
+        "writes",
+        "write",
+        "are writing"
+      ],
+      "t": 0,
+      "izoh": "Hozir bo'layotgan ish: is + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#07861a09"
+    },
+    {
+      "q": "They ___ football in the garden.",
+      "v": [
+        "are playing",
+        "is playing",
+        "plays",
+        "am playing"
+      ],
+      "t": 0,
+      "izoh": "They bilan are + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#92f07b52"
+    },
+    {
+      "q": "I ___ to music at the moment.",
+      "v": [
+        "am listening",
+        "is listening",
+        "listen",
+        "are listening"
+      ],
+      "t": 0,
+      "izoh": "I bilan am + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#8a4b5381"
+    },
+    {
+      "q": "Look! The dog ___ after the ball.",
+      "v": [
+        "is running",
+        "run",
+        "runs",
+        "are running"
+      ],
+      "t": 0,
+      "izoh": "'run' → running (undosh ikkilanadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c17821b8"
+    },
+    {
+      "q": "We ___ dinner in the kitchen now.",
+      "v": [
+        "are cooking",
+        "is cooking",
+        "cook",
+        "am cooking"
+      ],
+      "t": 0,
+      "izoh": "We bilan are + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#854076d4"
+    },
+    {
+      "q": "___ you reading a book right now?",
+      "v": [
+        "Are",
+        "Is",
+        "Am",
+        "Do"
+      ],
+      "t": 0,
+      "izoh": "You bilan savol: Are you + -ing?",
+      "qiy": "orta",
+      "id": "ing_a2_m3#fcf94625"
+    },
+    {
+      "q": "He ___ TV at the moment.",
+      "v": [
+        "is watching",
+        "are watching",
+        "watch",
+        "am watching"
+      ],
+      "t": 0,
+      "izoh": "He bilan is + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#f7ae4305"
+    },
+    {
+      "q": "The children ___ in the park now.",
+      "v": [
+        "are playing",
+        "is playing",
+        "play",
+        "plays"
+      ],
+      "t": 0,
+      "izoh": "Children ko'plik → are + -ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#2db593f6"
+    },
+    {
+      "q": "I'm busy. I ___ my homework.",
+      "v": [
+        "am doing",
+        "do",
+        "is doing",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "Hozir bajarilayotgan ish → am doing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c7076047"
+    },
+    {
+      "q": "She is ___ a beautiful picture now.",
+      "v": [
+        "making",
+        "make",
+        "makes",
+        "made"
+      ],
+      "t": 0,
+      "izoh": "'make' → making (oxirgi 'e' tushadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m3#33c98ed7"
+    },
+    {
+      "q": "Look! The baby ___ crying now.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "Baby birlik, shuning uchun 'is' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#ae64e126"
+    },
+    {
+      "q": "I ___ reading a book at the moment.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'I' bilan doim 'am' keladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#9abb8006"
+    },
+    {
+      "q": "We ___ playing football in the park.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'We' ko'plik, shuning uchun 'are'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c6a6cebb"
+    },
+    {
+      "q": "They ___ watching TV right now.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "'They' ko'plik uchun 'are'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#a782a7cc"
+    },
+    {
+      "q": "She ___ cooking dinner now.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'She' birlik uchun 'is'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#e7a3fd0d"
+    },
+    {
+      "q": "He ___ writing a letter.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'He' birlik uchun 'is'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#626bf27f"
+    },
+    {
+      "q": "You ___ listening to music.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "was"
+      ],
+      "t": 2,
+      "izoh": "'You' bilan 'are' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#66f2ebcc"
+    },
+    {
+      "q": "My friends ___ swimming in the river.",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'Friends' ko'plik uchun 'are'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#caa2b3fb"
+    },
+    {
+      "q": "The dog ___ running in the garden.",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'Dog' birlik uchun 'is'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#6fd57e27"
+    },
+    {
+      "q": "It ___ raining outside.",
+      "v": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "t": 2,
+      "izoh": "'It' birlik uchun 'is'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#aa0f3e66"
+    },
+    {
+      "q": "He is ___ very fast to catch the bus.",
+      "v": [
+        "runing",
+        "running",
+        "runnning",
+        "ruuning"
+      ],
+      "t": 1,
+      "izoh": "Qisqa unlidan keyin 'run' -> 'running', 'n' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#fd6ba098"
+    },
+    {
+      "q": "She is ___ a cake for the party.",
+      "v": [
+        "makeing",
+        "makking",
+        "making",
+        "maiking"
+      ],
+      "t": 2,
+      "izoh": "'make' oxiridagi 'e' tushadi: 'making'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#d576344d"
+    },
+    {
+      "q": "The cat is ___ on the sofa.",
+      "v": [
+        "siting",
+        "sitting",
+        "seting",
+        "sittng"
+      ],
+      "t": 1,
+      "izoh": "'sit' -> 'sitting', 't' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#3e58fcf2"
+    },
+    {
+      "q": "We are ___ in the pool now.",
+      "v": [
+        "swiming",
+        "swimming",
+        "swimmimg",
+        "swimng"
+      ],
+      "t": 1,
+      "izoh": "'swim' -> 'swimming', 'm' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#f72e29f2"
+    },
+    {
+      "q": "I am ___ a new story.",
+      "v": [
+        "writeing",
+        "writting",
+        "writing",
+        "wrighting"
+      ],
+      "t": 2,
+      "izoh": "'write' -> 'writing', 'e' tushadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#a06785b3"
+    },
+    {
+      "q": "They are ___ lunch at school.",
+      "v": [
+        "haveing",
+        "having",
+        "haveng",
+        "havving"
+      ],
+      "t": 1,
+      "izoh": "'have' -> 'having', 'e' tushadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#f6951d40"
+    },
+    {
+      "q": "The children are ___ pictures.",
+      "v": [
+        "drawing",
+        "draweing",
+        "drawwing",
+        "drowing"
+      ],
+      "t": 0,
+      "izoh": "'draw' -> 'drawing', oddiy qoida.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#4e1921e0"
+    },
+    {
+      "q": "He is ___ his teeth now.",
+      "v": [
+        "brusing",
+        "brushing",
+        "brushhing",
+        "brashing"
+      ],
+      "t": 1,
+      "izoh": "'brush' -> 'brushing', oddiy qoida.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#28651720"
+    },
+    {
+      "q": "She is ___ the door.",
+      "v": [
+        "openning",
+        "opening",
+        "opning",
+        "opennig"
+      ],
+      "t": 1,
+      "izoh": "'open' -> 'opening', 'n' ikkilanmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#409ccc03"
+    },
+    {
+      "q": "We are ___ our bags now.",
+      "v": [
+        "puting",
+        "putting",
+        "puttng",
+        "puuting"
+      ],
+      "t": 1,
+      "izoh": "'put' -> 'putting', 't' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#a773c685"
+    },
+    {
+      "q": "The boy is ___ a bike.",
+      "v": [
+        "rideing",
+        "ridding",
+        "riding",
+        "ryding"
+      ],
+      "t": 2,
+      "izoh": "'ride' -> 'riding', 'e' tushadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#0b26094c"
+    },
+    {
+      "q": "I am ___ my homework.",
+      "v": [
+        "doing",
+        "doeing",
+        "dooing",
+        "duing"
+      ],
+      "t": 0,
+      "izoh": "'do' -> 'doing', oddiy qoida.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#02479c1c"
+    },
+    {
+      "q": "They are ___ a house.",
+      "v": [
+        "biulding",
+        "building",
+        "buildding",
+        "buildng"
+      ],
+      "t": 1,
+      "izoh": "'build' -> 'building', oddiy qoida.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#d150876c"
+    },
+    {
+      "q": "She is ___ her hair.",
+      "v": [
+        "cuting",
+        "cutting",
+        "cuttng",
+        "cuteing"
+      ],
+      "t": 1,
+      "izoh": "'cut' -> 'cutting', 't' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#556b5cc9"
+    },
+    {
+      "q": "He is ___ a hole in the ground.",
+      "v": [
+        "diging",
+        "digging",
+        "diggng",
+        "dijing"
+      ],
+      "t": 1,
+      "izoh": "'dig' -> 'digging', 'g' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#9ce5e748"
+    },
+    {
+      "q": "The students are ___ their exam answers now.",
+      "v": [
+        "check",
+        "checks",
+        "checking",
+        "checked"
+      ],
+      "t": 2,
+      "izoh": "Hozir davom etayotgan ish uchun verb-ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#2e23ec5d"
+    },
+    {
+      "q": "My mother is ___ the floor at the moment.",
+      "v": [
+        "clean",
+        "cleaning",
+        "cleans",
+        "cleaned"
+      ],
+      "t": 1,
+      "izoh": "'at the moment' hozirni bildiradi, verb-ing kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#abc29fa3"
+    },
+    {
+      "q": "Listen! Someone ___ the piano.",
+      "v": [
+        "play",
+        "plays",
+        "is playing",
+        "played"
+      ],
+      "t": 2,
+      "izoh": "'Listen!' hozir bo'layotgan ishni bildiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#960c1459"
+    },
+    {
+      "q": "Look! The plane ___ in the sky.",
+      "v": [
+        "fly",
+        "is flying",
+        "flies",
+        "flew"
+      ],
+      "t": 1,
+      "izoh": "'Look!' hozirgi harakat, is + flying.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#6dc61d75"
+    },
+    {
+      "q": "Be quiet! The baby ___.",
+      "v": [
+        "sleep",
+        "sleeps",
+        "is sleeping",
+        "slept"
+      ],
+      "t": 2,
+      "izoh": "Hozir uxlayapti, is sleeping.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#36d9cb48"
+    },
+    {
+      "q": "Right now the teacher ___ to the class.",
+      "v": [
+        "talk",
+        "talks",
+        "is talking",
+        "talked"
+      ],
+      "t": 2,
+      "izoh": "'Right now' hozir uchun is talking.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#7943b5c7"
+    },
+    {
+      "q": "We ___ dinner at the moment.",
+      "v": [
+        "have",
+        "are having",
+        "has",
+        "had"
+      ],
+      "t": 1,
+      "izoh": "'at the moment' -> are having.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#7b39e9f1"
+    },
+    {
+      "q": "The children ___ in the yard now.",
+      "v": [
+        "play",
+        "plays",
+        "are playing",
+        "played"
+      ],
+      "t": 2,
+      "izoh": "'now' + ko'plik -> are playing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#83636355"
+    },
+    {
+      "q": "I ___ for the bus at the moment.",
+      "v": [
+        "wait",
+        "am waiting",
+        "waits",
+        "waited"
+      ],
+      "t": 1,
+      "izoh": "'I' + at the moment -> am waiting.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c1a97975"
+    },
+    {
+      "q": "She ___ a red dress today.",
+      "v": [
+        "wear",
+        "wears",
+        "is wearing",
+        "wore"
+      ],
+      "t": 2,
+      "izoh": "Hozir kiyib turibdi, is wearing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#454670bf"
+    },
+    {
+      "q": "He ___ working today; he is resting.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "'He' uchun inkor: isn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#0eb97239"
+    },
+    {
+      "q": "They ___ listening to the teacher.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "doesn't"
+      ],
+      "t": 1,
+      "izoh": "'They' uchun inkor: aren't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#8975accc"
+    },
+    {
+      "q": "I ___ sleeping now, I am reading.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "don't"
+      ],
+      "t": 2,
+      "izoh": "'I' uchun inkor: am not.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#5c62f15e"
+    },
+    {
+      "q": "We ___ playing; we are studying.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "doesn't"
+      ],
+      "t": 1,
+      "izoh": "'We' uchun aren't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#e8898f70"
+    },
+    {
+      "q": "She ___ eating now.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "don't"
+      ],
+      "t": 0,
+      "izoh": "'She' uchun isn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#8917f4c9"
+    },
+    {
+      "q": "The cat ___ sleeping; it is playing.",
+      "v": [
+        "aren't",
+        "isn't",
+        "am not",
+        "not"
+      ],
+      "t": 1,
+      "izoh": "'The cat' birlik uchun isn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#802f2ee2"
+    },
+    {
+      "q": "You ___ listening to me!",
+      "v": [
+        "isn't",
+        "am not",
+        "aren't",
+        "doesn't"
+      ],
+      "t": 2,
+      "izoh": "'You' uchun aren't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#106a7922"
+    },
+    {
+      "q": "My brothers ___ doing their homework now.",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "don't"
+      ],
+      "t": 1,
+      "izoh": "'brothers' ko'plik uchun aren't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#0f358c2f"
+    },
+    {
+      "q": "___ you watching TV now?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun savol: Are.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#3c8b65cd"
+    },
+    {
+      "q": "___ she cooking dinner?",
+      "v": [
+        "Are",
+        "Is",
+        "Am",
+        "Does"
+      ],
+      "t": 1,
+      "izoh": "'she' uchun savol: Is.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#455fc53f"
+    },
+    {
+      "q": "___ they playing outside?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Do"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun savol: Are.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#93fea1d9"
+    },
+    {
+      "q": "What ___ he doing right now?",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "does"
+      ],
+      "t": 2,
+      "izoh": "'he' uchun: is he doing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#931cadaf"
+    },
+    {
+      "q": "Where ___ you going?",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun: are you going.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#9ea49d4f"
+    },
+    {
+      "q": "Why ___ the baby crying?",
+      "v": [
+        "are",
+        "am",
+        "is",
+        "does"
+      ],
+      "t": 2,
+      "izoh": "'the baby' birlik uchun: is.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#0b45b5b3"
+    },
+    {
+      "q": "___ I speaking too fast?",
+      "v": [
+        "Is",
+        "Am",
+        "Are",
+        "Do"
+      ],
+      "t": 1,
+      "izoh": "'I' uchun savol: Am.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#18809e36"
+    },
+    {
+      "q": "What ___ your friends doing now?",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "does"
+      ],
+      "t": 2,
+      "izoh": "'friends' ko'plik uchun: are.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#3cae02c9"
+    },
+    {
+      "q": "'Are you reading?' 'Yes, I ___.'",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "'I' uchun qisqa javob: am.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#7a6c792f"
+    },
+    {
+      "q": "'Is she sleeping?' 'No, she ___.'",
+      "v": [
+        "isn't",
+        "aren't",
+        "am not",
+        "doesn't"
+      ],
+      "t": 0,
+      "izoh": "'she' uchun qisqa inkor: isn't.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c50eb886"
+    },
+    {
+      "q": "'Are they eating?' 'Yes, they ___.'",
+      "v": [
+        "is",
+        "am",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun qisqa javob: are.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c89c1258"
+    },
+    {
+      "q": "Choose the correct sentence about tennis:",
+      "v": [
+        "She is play tennis now.",
+        "She is playing tennis now.",
+        "She playing tennis now.",
+        "She are playing tennis now."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: is + playing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#4f0f4363"
+    },
+    {
+      "q": "Choose the correct sentence about a film:",
+      "v": [
+        "They are watch a film.",
+        "They watching a film.",
+        "They are watching a film.",
+        "They is watching a film."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri: are + watching.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#2b561338"
+    },
+    {
+      "q": "Choose the correct sentence about school:",
+      "v": [
+        "I am go to school now.",
+        "I am going to school now.",
+        "I going to school now.",
+        "I is going to school now."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: am + going.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#2a1e1ad7"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "He is runing fast.",
+        "He is running fast.",
+        "He running fast.",
+        "He are running fast."
+      ],
+      "t": 1,
+      "izoh": "'run' -> running, is + running.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#21ac92a9"
+    },
+    {
+      "q": "Choose the correct sentence about cooking:",
+      "v": [
+        "We are makeing a cake.",
+        "We making a cake.",
+        "We are making a cake.",
+        "We is making a cake."
+      ],
+      "t": 2,
+      "izoh": "'make' -> making, are + making.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#54aa67c0"
+    },
+    {
+      "q": "Choose the correct sentence about animals:",
+      "v": [
+        "The dogs is barking.",
+        "The dogs are barking.",
+        "The dogs barking.",
+        "The dogs am barking."
+      ],
+      "t": 1,
+      "izoh": "'dogs' ko'plik uchun are.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#6deaece6"
+    },
+    {
+      "q": "Choose the correct question:",
+      "v": [
+        "Is you listening?",
+        "Are you listening?",
+        "Am you listening?",
+        "Do you listening?"
+      ],
+      "t": 1,
+      "izoh": "'you' uchun savol: Are you...ing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c7a7472b"
+    },
+    {
+      "q": "Choose the correct negative sentence:",
+      "v": [
+        "She not is coming.",
+        "She isn't coming.",
+        "She don't coming.",
+        "She isn't come."
+      ],
+      "t": 1,
+      "izoh": "Inkor: isn't + coming.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#bb84be0d"
+    },
+    {
+      "q": "Choose the correct question with «what»:",
+      "v": [
+        "What are you do now?",
+        "What you are doing now?",
+        "What are you doing now?",
+        "What is you doing now?"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri tartib: What are you doing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#590a551f"
+    },
+    {
+      "q": "Statik fe'l xatosi YO'Q gapni tanlang:",
+      "v": [
+        "I am not understanding you.",
+        "The sun is shining now.",
+        "He is knowing the answer.",
+        "She is wanting water."
+      ],
+      "t": 1,
+      "izoh": "know/want/understand davomiy shaklda kelmaydi; to'g'risi 'is shining'.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#e818b6e5"
+    },
+    {
+      "q": "Which word is WRONG? 'She are dancing now.'",
+      "v": [
+        "She",
+        "are",
+        "dancing",
+        "now"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun 'is' kerak, 'are' xato.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#deefd406"
+    },
+    {
+      "q": "Which word is WRONG? 'They is playing football.'",
+      "v": [
+        "They",
+        "is",
+        "playing",
+        "football"
+      ],
+      "t": 1,
+      "izoh": "'They' uchun 'are' kerak, 'is' xato.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#2122d701"
+    },
+    {
+      "q": "Which word is WRONG? 'I is reading a book.'",
+      "v": [
+        "I",
+        "is",
+        "reading",
+        "book"
+      ],
+      "t": 1,
+      "izoh": "'I' uchun 'am' kerak, 'is' xato.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#45bb9217"
+    },
+    {
+      "q": "Which word is WRONG? 'He is runing to school.'",
+      "v": [
+        "He",
+        "is",
+        "runing",
+        "school"
+      ],
+      "t": 2,
+      "izoh": "To'g'risi 'running', 'n' ikkilanadi.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#032b4f60"
+    },
+    {
+      "q": "Which word is WRONG? 'We are make dinner now.'",
+      "v": [
+        "We",
+        "are",
+        "make",
+        "now"
+      ],
+      "t": 2,
+      "izoh": "'make' -> 'making' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#56ec05b1"
+    },
+    {
+      "q": "Which word is WRONG? 'She isn't sleep now.'",
+      "v": [
+        "She",
+        "isn't",
+        "sleep",
+        "now"
+      ],
+      "t": 2,
+      "izoh": "'sleep' -> 'sleeping' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#8c75b752"
+    },
+    {
+      "q": "Which word is WRONG? 'Are you play tennis now?'",
+      "v": [
+        "Are",
+        "you",
+        "play",
+        "now"
+      ],
+      "t": 2,
+      "izoh": "'play' -> 'playing' kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#66882604"
+    },
+    {
+      "q": "Which word is WRONG? 'The baby am crying.'",
+      "v": [
+        "The",
+        "baby",
+        "am",
+        "crying"
+      ],
+      "t": 2,
+      "izoh": "'baby' uchun 'is' kerak, 'am' xato.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#703a38a0"
+    },
+    {
+      "q": "Put in order (darak gap): now / is / she / cooking",
+      "v": [
+        "She now is cooking.",
+        "She is cooking now.",
+        "Now she cooking is.",
+        "Is she cooking now."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: She is cooking now.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#01a4d916"
+    },
+    {
+      "q": "Put in order (darak gap): are / they / playing / football",
+      "v": [
+        "Playing they are football.",
+        "They are playing football.",
+        "Are they playing football.",
+        "They playing are football."
+      ],
+      "t": 1,
+      "izoh": "Ega + are + verb-ing + object.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#17c196b8"
+    },
+    {
+      "q": "Put in order (darak gap): I / reading / am / a book",
+      "v": [
+        "I reading am a book.",
+        "Am I reading a book.",
+        "I am reading a book.",
+        "Reading I am a book."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri: I am reading a book.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#ae26a6d8"
+    },
+    {
+      "q": "Put in order (darak gap): watching / he / is / TV",
+      "v": [
+        "He watching is TV.",
+        "He is watching TV.",
+        "Watching he is TV.",
+        "Is he watching TV."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: He is watching TV.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#554eafbe"
+    },
+    {
+      "q": "Put in order (darak gap): now / raining / it / is",
+      "v": [
+        "It raining now is.",
+        "Now it raining is.",
+        "It is raining now.",
+        "Is it raining now."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri: It is raining now.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#d057ab84"
+    },
+    {
+      "q": "Put in order (savol): doing / what / you / are",
+      "v": [
+        "What you are doing?",
+        "What are you doing?",
+        "You are what doing?",
+        "Are what you doing?"
+      ],
+      "t": 1,
+      "izoh": "Savol tartibi: What are you doing?",
+      "qiy": "orta",
+      "id": "ing_a2_m3#57f81e90"
+    },
+    {
+      "q": "Put in order (inkor gap): not / is / he / sleeping",
+      "v": [
+        "He not is sleeping.",
+        "He is not sleeping.",
+        "Not he is sleeping.",
+        "Is he not sleeping."
+      ],
+      "t": 1,
+      "izoh": "Inkor: He is not sleeping.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#195e3b1e"
+    },
+    {
+      "q": "Put in order (darak gap): swimming / the / are / children",
+      "v": [
+        "Swimming the children are.",
+        "The children are swimming.",
+        "The children swimming are.",
+        "Are the children swimming."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: The children are swimming.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#bd69ce98"
+    },
+    {
+      "q": "'Listen! The birds ___.'",
+      "v": [
+        "sing",
+        "sings",
+        "are singing",
+        "sang"
+      ],
+      "t": 2,
+      "izoh": "'Listen!' hozirni bildiradi, are singing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#15bfefe1"
+    },
+    {
+      "q": "'Look! It ___.'",
+      "v": [
+        "snow",
+        "snows",
+        "is snowing",
+        "snowed"
+      ],
+      "t": 2,
+      "izoh": "'Look!' hozirgi harakat, is snowing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#e0e19ec9"
+    },
+    {
+      "q": "The teacher ___ on the board now.",
+      "v": [
+        "write",
+        "writes",
+        "is writing",
+        "wrote"
+      ],
+      "t": 2,
+      "izoh": "'now' -> is writing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c085f37b"
+    },
+    {
+      "q": "My sister ___ her room at the moment.",
+      "v": [
+        "clean",
+        "cleans",
+        "is cleaning",
+        "cleaned"
+      ],
+      "t": 2,
+      "izoh": "'at the moment' -> is cleaning.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#ae4ebd47"
+    },
+    {
+      "q": "We ___ English right now.",
+      "v": [
+        "study",
+        "studies",
+        "are studying",
+        "studied"
+      ],
+      "t": 2,
+      "izoh": "'right now' -> are studying.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#849d3f1e"
+    },
+    {
+      "q": "The workers ___ a bridge now.",
+      "v": [
+        "build",
+        "builds",
+        "are building",
+        "built"
+      ],
+      "t": 2,
+      "izoh": "'now' + ko'plik -> are building.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#db1402bc"
+    },
+    {
+      "q": "I ___ a message to my friend now.",
+      "v": [
+        "send",
+        "sends",
+        "am sending",
+        "sent"
+      ],
+      "t": 2,
+      "izoh": "'I' + now -> am sending.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c0fc9272"
+    },
+    {
+      "q": "He ___ his car at the moment.",
+      "v": [
+        "wash",
+        "washes",
+        "is washing",
+        "washed"
+      ],
+      "t": 2,
+      "izoh": "'at the moment' -> is washing.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#c57824be"
+    },
+    {
+      "q": "They ___ a new song now.",
+      "v": [
+        "learn",
+        "learns",
+        "are learning",
+        "learned"
+      ],
+      "t": 2,
+      "izoh": "'now' -> are learning.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#5750848c"
+    },
+    {
+      "q": "She ___ a photo right now.",
+      "v": [
+        "take",
+        "takes",
+        "is taking",
+        "took"
+      ],
+      "t": 2,
+      "izoh": "'right now' -> is taking.",
+      "qiy": "orta",
+      "id": "ing_a2_m3#0bf9d37b"
+    }
+  ]
+}

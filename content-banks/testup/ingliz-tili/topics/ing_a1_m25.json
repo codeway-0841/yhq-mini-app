@@ -1,0 +1,1306 @@
+{
+  "nom": "Jobs (Kasblar)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "A ____ works in a hospital and helps sick people.",
+      "v": [
+        "doctor",
+        "farmer",
+        "pilot",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Doctor - shifokor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#456cce74"
+    },
+    {
+      "q": "A ____ teaches children at school.",
+      "v": [
+        "teacher",
+        "driver",
+        "singer",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Teacher - o'qituvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#92ee13b8"
+    },
+    {
+      "q": "A ____ flies a plane.",
+      "v": [
+        "pilot",
+        "cook",
+        "farmer",
+        "artist"
+      ],
+      "t": 0,
+      "izoh": "Pilot - uchuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#a60b2138"
+    },
+    {
+      "q": "A ____ cooks food in a restaurant.",
+      "v": [
+        "cook",
+        "nurse",
+        "driver",
+        "police officer"
+      ],
+      "t": 0,
+      "izoh": "Cook - oshpaz.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#9e4bd87b"
+    },
+    {
+      "q": "A ____ drives a bus or a car.",
+      "v": [
+        "driver",
+        "singer",
+        "doctor",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Driver - haydovchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#db12ca78"
+    },
+    {
+      "q": "A ____ works on a farm with animals and plants.",
+      "v": [
+        "farmer",
+        "pilot",
+        "teacher",
+        "artist"
+      ],
+      "t": 0,
+      "izoh": "Farmer - fermer.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#03017857"
+    },
+    {
+      "q": "A ____ helps you when your teeth hurt.",
+      "v": [
+        "dentist",
+        "cook",
+        "driver",
+        "farmer"
+      ],
+      "t": 0,
+      "izoh": "Dentist - tish shifokori.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#d5129662"
+    },
+    {
+      "q": "A ____ helps people and stops bad things in the city.",
+      "v": [
+        "police officer",
+        "singer",
+        "cook",
+        "artist"
+      ],
+      "t": 0,
+      "izoh": "Police officer - politsiyachi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#336fc533"
+    },
+    {
+      "q": "A ____ sings songs.",
+      "v": [
+        "singer",
+        "farmer",
+        "pilot",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Singer - qo'shiqchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#586330cc"
+    },
+    {
+      "q": "An ____ paints pictures.",
+      "v": [
+        "artist",
+        "driver",
+        "nurse",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Artist - rassom.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#5c122972"
+    },
+    {
+      "q": "A ____ works in a hospital and helps the doctor.",
+      "v": [
+        "nurse",
+        "pilot",
+        "farmer",
+        "singer"
+      ],
+      "t": 0,
+      "izoh": "Nurse - hamshira.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#d4656e59"
+    },
+    {
+      "q": "Which job uses a plane?",
+      "v": [
+        "pilot",
+        "cook",
+        "teacher",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Pilot samolyotda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8cca4656"
+    },
+    {
+      "q": "Which person works with food in a kitchen?",
+      "v": [
+        "cook",
+        "pilot",
+        "artist",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "Cook oshxonada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#4a818dcf"
+    },
+    {
+      "q": "Where does a teacher work?",
+      "v": [
+        "at a school",
+        "on a farm",
+        "in a plane",
+        "in a car"
+      ],
+      "t": 0,
+      "izoh": "O'qituvchi maktabda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8a8937c4"
+    },
+    {
+      "q": "Where does a farmer work?",
+      "v": [
+        "on a farm",
+        "in a hospital",
+        "at a school",
+        "in a plane"
+      ],
+      "t": 0,
+      "izoh": "Fermer fermada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#ab65a9a7"
+    },
+    {
+      "q": "A ___ helps sick people in a hospital.",
+      "v": [
+        "doctor",
+        "farmer",
+        "singer",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "Doctor = shifokor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#3d60395d"
+    },
+    {
+      "q": "A ___ works in a school and teaches children.",
+      "v": [
+        "teacher",
+        "pilot",
+        "cook",
+        "artist"
+      ],
+      "t": 0,
+      "izoh": "Teacher = o'qituvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#2ef92d75"
+    },
+    {
+      "q": "A ___ flies a plane.",
+      "v": [
+        "pilot",
+        "nurse",
+        "waiter",
+        "farmer"
+      ],
+      "t": 0,
+      "izoh": "Pilot = uchuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f1d9e662"
+    },
+    {
+      "q": "A ___ makes food in a restaurant.",
+      "v": [
+        "cook",
+        "dentist",
+        "singer",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "Cook = oshpaz.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#69955eff"
+    },
+    {
+      "q": "A ___ drives a bus or a taxi.",
+      "v": [
+        "driver",
+        "artist",
+        "pilot",
+        "nurse"
+      ],
+      "t": 0,
+      "izoh": "Driver = haydovchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f55d465e"
+    },
+    {
+      "q": "A ___ works on a farm with animals and plants.",
+      "v": [
+        "farmer",
+        "teacher",
+        "waiter",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Farmer = fermer.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#0095f287"
+    },
+    {
+      "q": "A ___ takes care of your teeth.",
+      "v": [
+        "dentist",
+        "cook",
+        "singer",
+        "pilot"
+      ],
+      "t": 0,
+      "izoh": "Dentist = tish shifokori.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f46d2a69"
+    },
+    {
+      "q": "A ___ helps the doctor in the hospital.",
+      "v": [
+        "nurse",
+        "farmer",
+        "artist",
+        "driver"
+      ],
+      "t": 0,
+      "izoh": "Nurse = hamshira.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#32fc4514"
+    },
+    {
+      "q": "A ___ sings songs.",
+      "v": [
+        "singer",
+        "teacher",
+        "pilot",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Singer = qo'shiqchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#fd9e140a"
+    },
+    {
+      "q": "An ___ paints beautiful pictures.",
+      "v": [
+        "artist",
+        "engineer",
+        "driver",
+        "nurse"
+      ],
+      "t": 0,
+      "izoh": "Artist = rassom.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#2b6d5755"
+    },
+    {
+      "q": "A ___ stops bad people and helps the city.",
+      "v": [
+        "police officer",
+        "cook",
+        "singer",
+        "farmer"
+      ],
+      "t": 0,
+      "izoh": "Police officer = politsiyachi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#70ea41b4"
+    },
+    {
+      "q": "An ___ builds bridges and machines.",
+      "v": [
+        "engineer",
+        "artist",
+        "waiter",
+        "singer"
+      ],
+      "t": 0,
+      "izoh": "Engineer = muhandis.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#07a8df3b"
+    },
+    {
+      "q": "A ___ brings food to your table in a restaurant.",
+      "v": [
+        "waiter",
+        "pilot",
+        "farmer",
+        "dentist"
+      ],
+      "t": 0,
+      "izoh": "Waiter = ofitsiant.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#0606135a"
+    },
+    {
+      "q": "A ___ works in a shop and helps you buy things.",
+      "v": [
+        "shop assistant",
+        "doctor",
+        "pilot",
+        "farmer"
+      ],
+      "t": 0,
+      "izoh": "Shop assistant = sotuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#b91506f2"
+    },
+    {
+      "q": "Where does a doctor work?",
+      "v": [
+        "In a hospital",
+        "On a farm",
+        "In a plane",
+        "In a shop"
+      ],
+      "t": 0,
+      "izoh": "Doctor — shifoxonada.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#e3966d00"
+    },
+    {
+      "q": "Where does a teacher work?",
+      "v": [
+        "In a school",
+        "In a hospital",
+        "On a farm",
+        "In a restaurant"
+      ],
+      "t": 0,
+      "izoh": "Teacher — maktabda.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8a8937c4~2"
+    },
+    {
+      "q": "Where does a pilot work?",
+      "v": [
+        "In a plane",
+        "In a shop",
+        "On a farm",
+        "In a school"
+      ],
+      "t": 0,
+      "izoh": "Pilot — samolyotda.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#546edf19"
+    },
+    {
+      "q": "Where does a cook work?",
+      "v": [
+        "In a kitchen",
+        "In a plane",
+        "In a school",
+        "On a farm"
+      ],
+      "t": 0,
+      "izoh": "Cook — oshxonada.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#116d0bcc"
+    },
+    {
+      "q": "Where does a shop assistant work?",
+      "v": [
+        "In a shop",
+        "In a hospital",
+        "In a plane",
+        "On a farm"
+      ],
+      "t": 0,
+      "izoh": "Shop assistant — do'konda.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#2375cf0d"
+    },
+    {
+      "q": "What does a driver use for work?",
+      "v": [
+        "A car",
+        "A pen",
+        "A plate",
+        "A paintbrush"
+      ],
+      "t": 0,
+      "izoh": "Driver — mashina.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#479857e1"
+    },
+    {
+      "q": "What does an artist use for work?",
+      "v": [
+        "A paintbrush",
+        "A car",
+        "A plane",
+        "A menu"
+      ],
+      "t": 0,
+      "izoh": "Artist — mo'yqalam.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#780ea186"
+    },
+    {
+      "q": "Who flies planes?",
+      "v": [
+        "A pilot",
+        "A cook",
+        "A farmer",
+        "A dentist"
+      ],
+      "t": 0,
+      "izoh": "Pilot samolyot uchiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#175a0b91"
+    },
+    {
+      "q": "Who cooks food in a cafe?",
+      "v": [
+        "A cook",
+        "A pilot",
+        "A teacher",
+        "A singer"
+      ],
+      "t": 0,
+      "izoh": "Cook ovqat pishiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#ba3b7288"
+    },
+    {
+      "q": "Who checks your teeth?",
+      "v": [
+        "A dentist",
+        "A driver",
+        "A farmer",
+        "A pilot"
+      ],
+      "t": 0,
+      "izoh": "Dentist tishni tekshiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8d72ee9f"
+    },
+    {
+      "q": "'My mother teaches maths.' She is a ___.",
+      "v": [
+        "teacher",
+        "nurse",
+        "pilot",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Matematika o'rgatadi — teacher.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#670e1363"
+    },
+    {
+      "q": "'My father grows vegetables.' He is a ___.",
+      "v": [
+        "farmer",
+        "singer",
+        "dentist",
+        "pilot"
+      ],
+      "t": 0,
+      "izoh": "Sabzavot yetishtiradi — farmer.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#bdb06f43"
+    },
+    {
+      "q": "'She sings on TV.' She is a ___.",
+      "v": [
+        "singer",
+        "driver",
+        "engineer",
+        "waiter"
+      ],
+      "t": 0,
+      "izoh": "TVda kuylaydi — singer.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f4066794"
+    },
+    {
+      "q": "'He builds roads and bridges.' He is an ___.",
+      "v": [
+        "engineer",
+        "artist",
+        "nurse",
+        "cook"
+      ],
+      "t": 0,
+      "izoh": "Yo'l quradi — engineer.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#d06b8c95"
+    },
+    {
+      "q": "Who brings your food in a cafe?",
+      "v": [
+        "A waiter",
+        "A pilot",
+        "A farmer",
+        "A dentist"
+      ],
+      "t": 0,
+      "izoh": "Waiter ovqat keltiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#bbdd9869"
+    },
+    {
+      "q": "A person who works in a hospital and helps sick people is a ___.",
+      "v": [
+        "flight attendant",
+        "shop assistant",
+        "doctor",
+        "footballer"
+      ],
+      "t": 2,
+      "izoh": "'doctor' — shifokor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#7cb90250"
+    },
+    {
+      "q": "A person who teaches children at school is a ___.",
+      "v": [
+        "astronaut",
+        "pilot",
+        "teacher",
+        "police officer"
+      ],
+      "t": 2,
+      "izoh": "'teacher' — o'qituvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#058a67e7"
+    },
+    {
+      "q": "A person who drives a bus or a car is a ___.",
+      "v": [
+        "firefighter",
+        "driver",
+        "baker",
+        "hairdresser"
+      ],
+      "t": 1,
+      "izoh": "'driver' — haydovchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#62248a7c"
+    },
+    {
+      "q": "A person who cooks food in a restaurant is a ___.",
+      "v": [
+        "astronaut",
+        "cook",
+        "mechanic",
+        "shop assistant"
+      ],
+      "t": 1,
+      "izoh": "'cook' — oshpaz.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#45c94de6"
+    },
+    {
+      "q": "A person who works on a farm and grows plants is a ___.",
+      "v": [
+        "farmer",
+        "hairdresser",
+        "doctor",
+        "captain"
+      ],
+      "t": 0,
+      "izoh": "'farmer' — dehqon.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#86f4c6ec"
+    },
+    {
+      "q": "A person who helps doctors and cares for patients is a ___.",
+      "v": [
+        "driver",
+        "nurse",
+        "waiter",
+        "postman"
+      ],
+      "t": 1,
+      "izoh": "'nurse' — hamshira.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#1ac1c8b9"
+    },
+    {
+      "q": "A person who flies a plane is a ___.",
+      "v": [
+        "pilot",
+        "architect",
+        "dentist",
+        "astronaut"
+      ],
+      "t": 0,
+      "izoh": "'pilot' — uchuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#a4d8c26d"
+    },
+    {
+      "q": "A person who builds bridges and machines is a ___.",
+      "v": [
+        "waiter",
+        "engineer",
+        "captain",
+        "shop assistant"
+      ],
+      "t": 1,
+      "izoh": "'engineer' — muhandis.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#dd1d750a"
+    },
+    {
+      "q": "A person who sings songs is a ___.",
+      "v": [
+        "pilot",
+        "singer",
+        "hairdresser",
+        "postman"
+      ],
+      "t": 1,
+      "izoh": "'singer' — qo'shiqchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#1a20d8c2"
+    },
+    {
+      "q": "A person who keeps the streets safe and catches thieves is a ___.",
+      "v": [
+        "baker",
+        "police officer",
+        "mechanic",
+        "dentist"
+      ],
+      "t": 1,
+      "izoh": "'police officer' — politsiyachi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8508c663"
+    },
+    {
+      "q": "A person who fixes and checks your teeth is a ___.",
+      "v": [
+        "dentist",
+        "hairdresser",
+        "police officer",
+        "pilot"
+      ],
+      "t": 0,
+      "izoh": "'dentist' — tish shifokori.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#135327db"
+    },
+    {
+      "q": "A person who brings food to your table in a restaurant is a ___.",
+      "v": [
+        "painter",
+        "waiter",
+        "postman",
+        "pilot"
+      ],
+      "t": 1,
+      "izoh": "'waiter' — ofitsiant.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#9aa12496"
+    },
+    {
+      "q": "A person who puts out fires is a ___.",
+      "v": [
+        "postman",
+        "police officer",
+        "firefighter",
+        "driver"
+      ],
+      "t": 2,
+      "izoh": "'firefighter' — o't o'chiruvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#50f7df53"
+    },
+    {
+      "q": "A person who sells things in a shop is a ___.",
+      "v": [
+        "engineer",
+        "police officer",
+        "shop assistant",
+        "postman"
+      ],
+      "t": 2,
+      "izoh": "'shop assistant' — sotuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#eafc51be"
+    },
+    {
+      "q": "A person who cuts and styles hair is a ___.",
+      "v": [
+        "writer",
+        "engineer",
+        "teacher",
+        "hairdresser"
+      ],
+      "t": 3,
+      "izoh": "'hairdresser' — sartarosh.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#037b6da1"
+    },
+    {
+      "q": "A person who paints beautiful pictures is a ___.",
+      "v": [
+        "painter",
+        "mechanic",
+        "flight attendant",
+        "astronaut"
+      ],
+      "t": 0,
+      "izoh": "'painter' — rassom.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#45465a97"
+    },
+    {
+      "q": "A person who writes books is a ___.",
+      "v": [
+        "engineer",
+        "writer",
+        "firefighter",
+        "painter"
+      ],
+      "t": 1,
+      "izoh": "'writer' — yozuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#32640015"
+    },
+    {
+      "q": "A person who plays football for a team is a ___.",
+      "v": [
+        "tailor",
+        "fisherman",
+        "astronaut",
+        "footballer"
+      ],
+      "t": 3,
+      "izoh": "'footballer' — futbolchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#434e6e75"
+    },
+    {
+      "q": "A person who takes photos with a camera is a ___.",
+      "v": [
+        "nurse",
+        "banker",
+        "photographer",
+        "captain"
+      ],
+      "t": 2,
+      "izoh": "'photographer' — suratkash.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#2cd5a1c1"
+    },
+    {
+      "q": "A person who fixes cars is a ___.",
+      "v": [
+        "mechanic",
+        "cook",
+        "hairdresser",
+        "fisherman"
+      ],
+      "t": 0,
+      "izoh": "'mechanic' — avtomexanik.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#a1d265b8"
+    },
+    {
+      "q": "A person who bakes bread and cakes is a ___.",
+      "v": [
+        "baker",
+        "tailor",
+        "astronaut",
+        "hairdresser"
+      ],
+      "t": 0,
+      "izoh": "'baker' — novvoy.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#fe596159"
+    },
+    {
+      "q": "A person who helps people on a plane is a ___.",
+      "v": [
+        "flight attendant",
+        "nurse",
+        "astronaut",
+        "architect"
+      ],
+      "t": 0,
+      "izoh": "'flight attendant' — styuardessa.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#8190db19"
+    },
+    {
+      "q": "A person who delivers letters and parcels is a ___.",
+      "v": [
+        "postman",
+        "tailor",
+        "actor",
+        "engineer"
+      ],
+      "t": 0,
+      "izoh": "'postman' — pochtachi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#d84fbcc6"
+    },
+    {
+      "q": "A person who cleans a plane / a ship captain leads a ship is a ___.",
+      "v": [
+        "engineer",
+        "baker",
+        "captain",
+        "singer"
+      ],
+      "t": 2,
+      "izoh": "'captain' — kapitan.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f3f4d593"
+    },
+    {
+      "q": "A person who designs houses and buildings is a ___.",
+      "v": [
+        "engineer",
+        "architect",
+        "dentist",
+        "singer"
+      ],
+      "t": 1,
+      "izoh": "'architect' — arxitektor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#ced1c89c"
+    },
+    {
+      "q": "A person who makes clothes is a ___.",
+      "v": [
+        "firefighter",
+        "tailor",
+        "engineer",
+        "farmer"
+      ],
+      "t": 1,
+      "izoh": "'tailor' — tikuvchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#6a9bf280"
+    },
+    {
+      "q": "A person who works with money in a bank is a ___.",
+      "v": [
+        "shop assistant",
+        "banker",
+        "driver",
+        "dentist"
+      ],
+      "t": 1,
+      "izoh": "'banker' — bankir.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#9e49e518"
+    },
+    {
+      "q": "A person who acts in films is a ___.",
+      "v": [
+        "pilot",
+        "actor",
+        "banker",
+        "shop assistant"
+      ],
+      "t": 1,
+      "izoh": "'actor' — aktyor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#10ef047a"
+    },
+    {
+      "q": "A person who catches fish is a ___.",
+      "v": [
+        "astronaut",
+        "fisherman",
+        "actor",
+        "architect"
+      ],
+      "t": 1,
+      "izoh": "'fisherman' — baliqchi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#a97aa956"
+    },
+    {
+      "q": "A person who studies the stars and space is a ___.",
+      "v": [
+        "police officer",
+        "astronaut",
+        "waiter",
+        "architect"
+      ],
+      "t": 1,
+      "izoh": "'astronaut' — kosmonavt.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#16bf824d"
+    },
+    {
+      "q": "A ___ works in a hospital.",
+      "v": [
+        "singer",
+        "doctor",
+        "writer",
+        "police officer"
+      ],
+      "t": 1,
+      "izoh": "'doctor' (shifokor) kasalxonada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#0510b38a"
+    },
+    {
+      "q": "A ___ works in a school.",
+      "v": [
+        "shop assistant",
+        "teacher",
+        "waiter",
+        "postman"
+      ],
+      "t": 1,
+      "izoh": "'teacher' (o'qituvchi) maktabda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f54d724f"
+    },
+    {
+      "q": "A ___ works in a restaurant kitchen.",
+      "v": [
+        "painter",
+        "nurse",
+        "actor",
+        "cook"
+      ],
+      "t": 3,
+      "izoh": "'cook' (oshpaz) oshxonada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#12f3c3e4"
+    },
+    {
+      "q": "A ___ works on a farm.",
+      "v": [
+        "flight attendant",
+        "farmer",
+        "hairdresser",
+        "driver"
+      ],
+      "t": 1,
+      "izoh": "'farmer' (dehqon) fermada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#5576cbaf"
+    },
+    {
+      "q": "A ___ works in the sky, in a plane.",
+      "v": [
+        "shop assistant",
+        "teacher",
+        "pilot",
+        "police officer"
+      ],
+      "t": 2,
+      "izoh": "'pilot' (uchuvchi) samolyotda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#b0d4e84a"
+    },
+    {
+      "q": "A ___ works with sick people and doctors.",
+      "v": [
+        "nurse",
+        "tailor",
+        "waiter",
+        "astronaut"
+      ],
+      "t": 0,
+      "izoh": "'nurse' (hamshira) hamshira ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#f192bf4e"
+    },
+    {
+      "q": "A ___ works in a police station.",
+      "v": [
+        "singer",
+        "actor",
+        "police officer",
+        "driver"
+      ],
+      "t": 2,
+      "izoh": "'police officer' (politsiyachi) politsiyada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#18d58049"
+    },
+    {
+      "q": "A ___ works in a bank.",
+      "v": [
+        "waiter",
+        "baker",
+        "engineer",
+        "banker"
+      ],
+      "t": 3,
+      "izoh": "'banker' (bankir) bankda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#7c84063b"
+    },
+    {
+      "q": "A ___ works in a hair salon.",
+      "v": [
+        "engineer",
+        "doctor",
+        "hairdresser",
+        "tailor"
+      ],
+      "t": 2,
+      "izoh": "'hairdresser' (sartarosh) sartaroshxonada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#4251809d"
+    },
+    {
+      "q": "A ___ works in a bakery.",
+      "v": [
+        "engineer",
+        "painter",
+        "farmer",
+        "baker"
+      ],
+      "t": 3,
+      "izoh": "'baker' (novvoy) nonvoyxonada ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#e6ffb6b8"
+    },
+    {
+      "q": "A ___ works in a shop.",
+      "v": [
+        "painter",
+        "singer",
+        "shop assistant",
+        "captain"
+      ],
+      "t": 2,
+      "izoh": "'shop assistant' (sotuvchi) do'konda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#27100610"
+    },
+    {
+      "q": "A ___ works in a fire station.",
+      "v": [
+        "tailor",
+        "nurse",
+        "firefighter",
+        "actor"
+      ],
+      "t": 2,
+      "izoh": "'firefighter' (o't o'chiruvchi) o't o'chiruvchi ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#6805abef"
+    },
+    {
+      "q": "A ___ works in a garage and fixes cars.",
+      "v": [
+        "photographer",
+        "mechanic",
+        "police officer",
+        "postman"
+      ],
+      "t": 1,
+      "izoh": "'mechanic' (avtomexanik) garajda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#5702a1ec"
+    },
+    {
+      "q": "A ___ works in a dental clinic.",
+      "v": [
+        "mechanic",
+        "captain",
+        "dentist",
+        "driver"
+      ],
+      "t": 2,
+      "izoh": "'dentist' (tish shifokori) tish klinikasida ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#e411b354"
+    },
+    {
+      "q": "A ___ works in a theatre or films.",
+      "v": [
+        "fisherman",
+        "mechanic",
+        "flight attendant",
+        "actor"
+      ],
+      "t": 3,
+      "izoh": "'actor' (aktyor) teatrda ishlaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#b5cb10e6"
+    },
+    {
+      "q": "What does a doctor do? A doctor ___.",
+      "v": [
+        "writes books",
+        "grows plants",
+        "helps sick people",
+        "checks teeth"
+      ],
+      "t": 2,
+      "izoh": "doctor — bemorlarga yordam beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#0137293e"
+    },
+    {
+      "q": "What does a pilot do? A pilot ___.",
+      "v": [
+        "checks teeth",
+        "helps sick people",
+        "flies a plane",
+        "paints pictures"
+      ],
+      "t": 2,
+      "izoh": "pilot — samolyot uchiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#0cad58f1"
+    },
+    {
+      "q": "What does a cook do? A cook ___.",
+      "v": [
+        "paints pictures",
+        "cooks food",
+        "writes books",
+        "grows plants"
+      ],
+      "t": 1,
+      "izoh": "cook — ovqat pishiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#237de67f"
+    },
+    {
+      "q": "What does a singer do? A singer ___.",
+      "v": [
+        "sings songs",
+        "teaches students",
+        "writes books",
+        "paints pictures"
+      ],
+      "t": 0,
+      "izoh": "singer — qo'shiq aytadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#070a95c4"
+    },
+    {
+      "q": "What does a driver do? A driver ___.",
+      "v": [
+        "grows plants",
+        "checks teeth",
+        "drives a car",
+        "teaches students"
+      ],
+      "t": 2,
+      "izoh": "driver — mashina haydaydi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#3d8efc8d"
+    },
+    {
+      "q": "What does a teacher do? A teacher ___.",
+      "v": [
+        "teaches students",
+        "paints pictures",
+        "sings songs",
+        "checks teeth"
+      ],
+      "t": 0,
+      "izoh": "teacher — o'quvchilarga dars beradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#feb75328"
+    },
+    {
+      "q": "What does a farmer do? A farmer ___.",
+      "v": [
+        "sings songs",
+        "teaches students",
+        "grows plants",
+        "helps sick people"
+      ],
+      "t": 2,
+      "izoh": "farmer — o'simlik yetishtiradi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#94e3366b"
+    },
+    {
+      "q": "What does a dentist do? A dentist ___.",
+      "v": [
+        "checks teeth",
+        "grows plants",
+        "sings songs",
+        "teaches students"
+      ],
+      "t": 0,
+      "izoh": "dentist — tishni ko'radi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#e2bc5b7a"
+    },
+    {
+      "q": "What does a painter do? A painter ___.",
+      "v": [
+        "writes books",
+        "helps sick people",
+        "paints pictures",
+        "drives a car"
+      ],
+      "t": 2,
+      "izoh": "painter — rasm chizadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#bf78580f"
+    },
+    {
+      "q": "What does a writer do? A writer ___.",
+      "v": [
+        "writes books",
+        "drives a car",
+        "checks teeth",
+        "grows plants"
+      ],
+      "t": 0,
+      "izoh": "writer — kitob yozadi.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#41b9494f"
+    },
+    {
+      "q": "How do you say 'shifokor' in English?",
+      "v": [
+        "flight attendant",
+        "captain",
+        "doctor",
+        "writer"
+      ],
+      "t": 2,
+      "izoh": "'shifokor' = doctor.",
+      "qiy": "oson",
+      "id": "ing_a1_m25#b0a53f97"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "nom": "29-mavzu. Suv havzalarini ifloslanishdan saqlash choralari. Suvni tozalash usullari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ichish uchun zarur bo'lgan chuchuk, toza suv tabiatdagi mavjud suvning taxminan necha foizini tashkil qiladi?",
+      "v": [
+        "1% ga yaqin",
+        "10% ga yaqin",
+        "25% ga yaqin",
+        "50% ga yaqin"
+      ],
+      "t": 0,
+      "izoh": "Chuchuk, toza suv atigi 1% ga yaqin qismni tashkil etadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#a7e6f897"
+    },
+    {
+      "q": "Hisob-kitoblarga qaraganda, kelajakda insoniyat qanday muammoga uchrashi mumkin?",
+      "v": [
+        "suv tanqisligiga",
+        "suv ortiqchaligiga",
+        "suvning sho'rlanishiga",
+        "muzliklar ko'payishiga"
+      ],
+      "t": 0,
+      "izoh": "Kelajakda suv tanqisligi kuzatilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#905b4aa7"
+    },
+    {
+      "q": "Hayotiy jarayonlar uchun zarur suv qayerlardan olinadi?",
+      "v": [
+        "ko'llar, daryolar, yerosti manbalar va sun'iy suv havzalaridan",
+        "faqat dunyo okeanidan",
+        "faqat qutb muzliklaridan",
+        "faqat atmosfera bug'laridan"
+      ],
+      "t": 0,
+      "izoh": "Suv ko'llar, daryolar, yerosti manbalar va sun'iy havzalardan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#fc508bd7"
+    },
+    {
+      "q": "Insonlarning kundalik ehtiyoji uchun ishlatiladigan suv nima uchun ma'lum darajada ifloslangan bo'ladi?",
+      "v": [
+        "kanalizatsion sistemalar, sanoat korxonalaridan va kimyoviy vositalar qo'llangan dalalardan o'tib keladi",
+        "muzliklardan erib keladi",
+        "okean suvidan aralashadi",
+        "yomg'ir suvi bilan aralashadi"
+      ],
+      "t": 0,
+      "izoh": "Suv kanalizatsiya, sanoat va qishloq xo'jaligi kimyosidan o'tib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#e62e17ca"
+    },
+    {
+      "q": "Tabiiy suvni tozalashdan oldin uning tarkibida nimalar bo'ladi?",
+      "v": [
+        "turli tuzlar, gazlar, bakteriya va viruslar hamda mexanik aralashmalar",
+        "faqat toza H2O molekulalari",
+        "faqat ohak zarralari",
+        "faqat erigan kislorod"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy suvda tuzlar, gazlar, bakteriya, viruslar va mexanik aralashmalar bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#2890867c"
+    },
+    {
+      "q": "Ochiq suv manbalaridagi suv necha bosqichda tozalovdan o'tadi?",
+      "v": [
+        "uch",
+        "ikki",
+        "bitta",
+        "to'rt"
+      ],
+      "t": 0,
+      "izoh": "Suv uch bosqichda tozalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#711646a6"
+    },
+    {
+      "q": "Suvni tozalashning 1-bosqichida nima qilinadi?",
+      "v": [
+        "suv koagulyatsiya usulida loyqa va turli qo'shimchalardan tozalanadi",
+        "suv xlorlanadi",
+        "suv qum yordamida filtrlanadi",
+        "suv qaynatiladi"
+      ],
+      "t": 0,
+      "izoh": "1-bosqich – mexanik unsurlardan koagulyatsiya usulida tozalash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#72b0d696"
+    },
+    {
+      "q": "Suvni tozalashning 2-bosqichida nima qilinadi?",
+      "v": [
+        "tiniq suv toza qum yordamida filtrlanadi",
+        "suv xlorlanadi",
+        "suv koagulyatsiya qilinadi",
+        "suv distillanadi"
+      ],
+      "t": 0,
+      "izoh": "2-bosqich – qum filtri orqali filtrlash, kolloid qo'shimcha va mikroblardan tozalash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#b1df9f5c"
+    },
+    {
+      "q": "Suvni tozalashning 3-bosqichida nima qilinadi?",
+      "v": [
+        "suv xlorlanadi va aholiga tarqatiladi",
+        "suv qum bilan filtrlanadi",
+        "suv cho'ktiriladi",
+        "suv muzlatiladi"
+      ],
+      "t": 0,
+      "izoh": "3-bosqich – tiniq suv xlorlanadi va aholiga tarqatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#c943bcca"
+    },
+    {
+      "q": "2-bosqichda qum filtr suvni nimadan tozalaydi?",
+      "v": [
+        "kolloid holidagi qo'shimchalar hamda zararli mikroblardan",
+        "faqat erigan tuzlardan",
+        "faqat gazlardan",
+        "faqat loyqa zarrachalaridan"
+      ],
+      "t": 0,
+      "izoh": "Qum filtr kolloid qo'shimcha va zararli mikroblarni ushlab qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#5e41e74f"
+    },
+    {
+      "q": "Butunjahon sog'liqni saqlash tashkiloti ma'lumotiga ko'ra, bugungi kunda jahonda necha odam toza ichimlik suvi bilan yetarli ta'minlanmagan?",
+      "v": [
+        "1,2 milliard",
+        "12 milliard",
+        "120 million",
+        "2,1 milliard"
+      ],
+      "t": 0,
+      "izoh": "1,2 milliard odam toza ichimlik suviga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#87513595"
+    },
+    {
+      "q": "2050-yilga borib yer yuzi aholisining necha foizi toza ichimlik suvi yetishmasligi bilan aziyat chekishi mumkin?",
+      "v": [
+        "75%",
+        "25%",
+        "50%",
+        "10%"
+      ],
+      "t": 0,
+      "izoh": "2050-yilga borib aholining 75% i suv tanqisligi chekishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#e04b9995"
+    },
+    {
+      "q": "Suv havzalarini ifloslanishdan saqlash uchun qaysi harakat to'g'ri?",
+      "v": [
+        "chiqindilarni suvga tashlamaslik va xazonlarni yoqmaslik",
+        "chiqindilarni suvga tashlash",
+        "xazonlarni yoqish",
+        "oqova suvlarni daryoga quyish"
+      ],
+      "t": 0,
+      "izoh": "Chiqindilarni suvga tashlamaslik, xazonlarni yoqmaslik tabiatni muhofaza qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#59a573b1"
+    },
+    {
+      "q": "Suv ta'minoti masalasiga qanday yondashilgandagina ijobiy hal etiladi?",
+      "v": [
+        "muammoga kompleks yondashilgandagina",
+        "faqat sanoat korxonalarini yopish bilan",
+        "faqat suv narxini oshirish bilan",
+        "faqat yangi quduqlar qazish bilan"
+      ],
+      "t": 0,
+      "izoh": "Muammoni kompleks hal qilish lozim.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#b00176c8"
+    },
+    {
+      "q": "Ichimlik suvini tozalashda xlorlash qanday vazifani bajaradi?",
+      "v": [
+        "suvdagi bakteriya va viruslarni yo'q qilib, xavfsiz qiladi",
+        "suvni mexanik aralashmalardan tozalaydi",
+        "suvni sho'rlashtiradi",
+        "suvning zichligini oshiradi"
+      ],
+      "t": 0,
+      "izoh": "Xlorlash suvni zararli mikroorganizmlardan tozalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#e37206c8"
+    },
+    {
+      "q": "Koagulyatsiya usuli suvni tozalashning qaysi bosqichida qo'llaniladi?",
+      "v": [
+        "1-bosqichda",
+        "3-bosqichda",
+        "2-bosqichda",
+        "hech qaysi bosqichda"
+      ],
+      "t": 0,
+      "izoh": "Koagulyatsiya 1-bosqichda – mexanik unsurlardan tozalashda.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#ca6aac9c"
+    },
+    {
+      "q": "Suvni tozalash qayerdan olingan suv uchun zarur?",
+      "v": [
+        "Ochiq suv havzalaridan olingan suv uchun",
+        "Distillangan suv uchun",
+        "Yomg'ir suvi uchun",
+        "Muzlik suvini eritganda"
+      ],
+      "t": 0,
+      "izoh": "Ochiq suv havzalaridagi tabiiy suvni tozalash zarur.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#72a08a44"
+    },
+    {
+      "q": "Tozalovdan o'tgan suv yakunda kimga tarqatiladi?",
+      "v": [
+        "Aholiga",
+        "Sanoat korxonalariga",
+        "Dengizlarga",
+        "Qishloq xo'jaligi dalalariga"
+      ],
+      "t": 0,
+      "izoh": "3-bosqichdan so'ng suv xlorlanib, aholiga tarqatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#2b864440"
+    },
+    {
+      "q": "Suvni tozalashning 1-bosqichida suv qanday unsurlardan tozalanadi?",
+      "v": [
+        "Mexanik unsurlardan",
+        "Eringan gazlardan",
+        "Tuzlardan",
+        "Bakteriyalardan"
+      ],
+      "t": 0,
+      "izoh": "1-bosqichda suv mexanik unsurlardan tozalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#f2e5b0e3"
+    },
+    {
+      "q": "Suv tozalash bosqichlarining to'g'ri ketma-ketligi qaysi?",
+      "v": [
+        "Koagulyatsiya → qum bilan filtrlash → xlorlash",
+        "Xlorlash → koagulyatsiya → filtrlash",
+        "Filtrlash → xlorlash → koagulyatsiya",
+        "Xlorlash → filtrlash → cho'ktirish"
+      ],
+      "t": 0,
+      "izoh": "1) koagulyatsiya, 2) qum filtr, 3) xlorlash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#ed0334b1"
+    },
+    {
+      "q": "Xlorlash qaysi bosqichdan keyin bajariladi?",
+      "v": [
+        "Qum bilan filtrlashdan keyin",
+        "Koagulyatsiyadan oldin",
+        "Filtrlashdan oldin",
+        "Suvni cho'ktirishdan oldin"
+      ],
+      "t": 0,
+      "izoh": "Xlorlash 3-bosqichda, filtrlashdan keyin bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#f5131625"
+    },
+    {
+      "q": "Suvdagi bakteriya va viruslar asosan qaysi bosqichda yo'q qilinadi?",
+      "v": [
+        "3-bosqichda — xlorlashda",
+        "1-bosqichda — koagulyatsiyada",
+        "2-bosqichda — qum filtrda",
+        "Tozalashdan oldin"
+      ],
+      "t": 0,
+      "izoh": "Xlorlash suvni zararli mikroorganizmlardan tozalaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#ff16664e"
+    },
+    {
+      "q": "Dalalardan o'tib keladigan suv qanday vositalar tufayli ifloslanadi?",
+      "v": [
+        "Qishloq xo'jaligi kimyoviy vositalari tufayli",
+        "Yomg'ir tufayli",
+        "Muzliklar tufayli",
+        "Quyosh nuri tufayli"
+      ],
+      "t": 0,
+      "izoh": "Suv kimyoviy vositalar qo'llangan dalalardan o'tib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#112a8730"
+    },
+    {
+      "q": "Yer yuzi aholisining 75% i toza ichimlik suvi yetishmasligi bilan qachon aziyat chekishi mumkin?",
+      "v": [
+        "2050-yilga borib",
+        "Hozirgi kunda",
+        "2010-yilga borib",
+        "Hech qachon"
+      ],
+      "t": 0,
+      "izoh": "2050-yilga borib aholining 75 foizi suv yetishmasligi bilan aziyat chekishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#e39631d2"
+    },
+    {
+      "q": "1,2 milliard odamning toza suv bilan ta'minlanmagani haqidagi ma'lumot qaysi tashkilotniki?",
+      "v": [
+        "Butunjahon sog'liqni saqlash tashkiloti",
+        "Butunjahon meteorologiya tashkiloti",
+        "UNESCO",
+        "Xalqaro olimpiya qo'mitasi"
+      ],
+      "t": 0,
+      "izoh": "BST ma'lumotiga ko'ra, 1,2 milliard odam toza ichimlik suvi bilan ta'minlanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#1f7ce830"
+    },
+    {
+      "q": "Chiqindilarni suvga tashlamaslik va xazonlarni yoqmaslik kimni muhofaza qiladi?",
+      "v": [
+        "O'zimizni va ona tabiatni",
+        "Faqat sanoat korxonalarini",
+        "Faqat baliqlarni",
+        "Faqat qushlarni"
+      ],
+      "t": 0,
+      "izoh": "Bu bilan siz o'zingizni, ona tabiatni muhofaza qilgan bo'lasiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#57219a6a"
+    },
+    {
+      "q": "Hayotiy jarayonlar uchun zarur suv olinadigan sun'iy inshootlar qanday ataladi?",
+      "v": [
+        "Sun'iy suv havzalari",
+        "Qum filtrlari",
+        "Kanalizatsion sistemalar",
+        "Gidroelektr stansiyalar"
+      ],
+      "t": 0,
+      "izoh": "Suv yerosti manbalaridan yoki sun'iy suv havzalaridan olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#094c425e"
+    },
+    {
+      "q": "Chuchuk suv tanqisligining asosiy sababi nimada?",
+      "v": [
+        "Chuchuk, toza suv tabiatdagi mavjud suvning atigi 1% ga yaqin qismini tashkil qiladi",
+        "Suv juda tez bug'lanadi",
+        "Okean suvi ichishga yaroqli",
+        "Muzliklar juda tez eriydi"
+      ],
+      "t": 0,
+      "izoh": "Ichish uchun zarur chuchuk suv atigi 1% ga yaqin qism.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#5475f7b7"
+    },
+    {
+      "q": "Tozalov jarayonidan so'ng suvda qanday mikroorganizmlar qolmaydi?",
+      "v": [
+        "Bakteriya va viruslar",
+        "Faqat qushlar",
+        "Faqat baliqlar",
+        "O'simlik urug'lari"
+      ],
+      "t": 0,
+      "izoh": "Tozalash tarkibidagi bakteriya va viruslardan xalos qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#55b145b8"
+    },
+    {
+      "q": "Sanoat korxonalarining chiqindi suvlari suv havzalariga qanday ta'sir qiladi?",
+      "v": [
+        "Ifloslantiradi",
+        "Tozalaydi",
+        "Chuchuklashtiradi",
+        "Muzlatadi"
+      ],
+      "t": 0,
+      "izoh": "Suv sanoat korxonalaridan o'tib keladi va ma'lum darajada ifloslangan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m29-suv-havzalarini-ifloslanishdan-saqlash-choralari-suvni-tozal#58636d19"
+    }
+  ]
+}

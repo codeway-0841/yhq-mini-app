@@ -1,0 +1,1306 @@
+{
+  "nom": "Comparatives & Superlatives",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "This box is ___ than that one.",
+      "v": [
+        "heavy",
+        "heavier",
+        "more heavier",
+        "more heavy"
+      ],
+      "t": 1,
+      "izoh": "heavy → heavier (than bilan).",
+      "qiy": "orta",
+      "id": "ing_a2_m2#32406553"
+    },
+    {
+      "q": "A car is ___ than a bicycle.",
+      "v": [
+        "fast",
+        "faster",
+        "more faster",
+        "more fast"
+      ],
+      "t": 1,
+      "izoh": "fast → faster.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#0e2fe3a8"
+    },
+    {
+      "q": "My bag is ___ than yours.",
+      "v": [
+        "big",
+        "bigger",
+        "more bigger",
+        "more big"
+      ],
+      "t": 1,
+      "izoh": "big → bigger.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#a0959a7a"
+    },
+    {
+      "q": "This book is ___ interesting than that one.",
+      "v": [
+        "more",
+        "far",
+        "much",
+        "very"
+      ],
+      "t": 0,
+      "izoh": "Uzun sifat → more interesting. Kuchaytiruvchi (far, much, very) qiyosiy belgini ALMASHTIRMAYDI.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ec61a1d1"
+    },
+    {
+      "q": "Winter is ___ than summer.",
+      "v": [
+        "cold",
+        "colder",
+        "more colder",
+        "more cold"
+      ],
+      "t": 1,
+      "izoh": "cold → colder.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#c5668fb0"
+    },
+    {
+      "q": "The weather today is ___ than last week.",
+      "v": [
+        "better",
+        "gooder",
+        "good",
+        "more better"
+      ],
+      "t": 0,
+      "izoh": "good -> better (istisno).",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ad68fea0"
+    },
+    {
+      "q": "This test is ___ than the other one.",
+      "v": [
+        "worse",
+        "badder",
+        "bad",
+        "more worse"
+      ],
+      "t": 0,
+      "izoh": "bad -> worse (istisno).",
+      "qiy": "orta",
+      "id": "ing_a2_m2#7fdfc848"
+    },
+    {
+      "q": "A car is ___ than a bike.",
+      "v": [
+        "more expensive",
+        "expensiver",
+        "expensive",
+        "more expensiver"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ea2e0de2"
+    },
+    {
+      "q": "This bag is ___ than that one.",
+      "v": [
+        "nicer",
+        "nice",
+        "more nicer",
+        "more nice"
+      ],
+      "t": 0,
+      "izoh": "nice -> nicer.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#f967c257"
+    },
+    {
+      "q": "Find the wrong word: 'She is more taller than me.'",
+      "v": [
+        "She",
+        "more",
+        "taller",
+        "than"
+      ],
+      "t": 1,
+      "izoh": "more ortiqcha, faqat taller.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ae88c646"
+    },
+    {
+      "q": "She is the ___ student in the class.",
+      "v": [
+        "best",
+        "better",
+        "good",
+        "goodest"
+      ],
+      "t": 0,
+      "izoh": "the + eng yaxshi → best.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#d76bf769"
+    },
+    {
+      "q": "Everest is the ___ mountain in the world.",
+      "v": [
+        "high",
+        "higher",
+        "highest",
+        "more high"
+      ],
+      "t": 2,
+      "izoh": "the + eng baland → highest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#55da5c0d"
+    },
+    {
+      "q": "It was the ___ day of the year.",
+      "v": [
+        "hottest",
+        "hotter",
+        "hot",
+        "most hot"
+      ],
+      "t": 0,
+      "izoh": "hot -> hottest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5bcd23e4"
+    },
+    {
+      "q": "This is the ___ book in the library.",
+      "v": [
+        "most interesting",
+        "interestingest",
+        "interestinger",
+        "interesting"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: the most.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bc1a233e"
+    },
+    {
+      "q": "It is the ___ question on the test.",
+      "v": [
+        "easiest",
+        "easier",
+        "easy",
+        "most easy"
+      ],
+      "t": 0,
+      "izoh": "y -> iest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#320fcb89"
+    },
+    {
+      "q": "This is the ___ film of the year.",
+      "v": [
+        "bad",
+        "worse",
+        "worst",
+        "baddest"
+      ],
+      "t": 2,
+      "izoh": "the + eng yomon → worst.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#dde566b5"
+    },
+    {
+      "q": "Tom is as ___ as his brother.",
+      "v": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#a5c8d9bc"
+    },
+    {
+      "q": "This box is not as ___ as that one.",
+      "v": [
+        "heavy",
+        "heavier",
+        "heaviest",
+        "more heavy"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5252eb1e"
+    },
+    {
+      "q": "Choose the correct sentence about a city:",
+      "v": [
+        "This is the biggest city.",
+        "This is the bigest city.",
+        "This is the most big city.",
+        "This is biggest city."
+      ],
+      "t": 0,
+      "izoh": "the + biggest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#2609d67d"
+    },
+    {
+      "q": "Find the wrong word: 'Tom is as taller as Sam.'",
+      "v": [
+        "Tom",
+        "as",
+        "taller",
+        "Sam"
+      ],
+      "t": 2,
+      "izoh": "as ... as orasida tall bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#de2c00fc"
+    },
+    {
+      "q": "He runs ___ than his brother.",
+      "v": [
+        "quick",
+        "quicker",
+        "quickest",
+        "most quick"
+      ],
+      "t": 1,
+      "izoh": "quick → quicker.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ee6f9cab"
+    },
+    {
+      "q": "She is the ___ person I know.",
+      "v": [
+        "more kind",
+        "kindest",
+        "kinder",
+        "most kindest"
+      ],
+      "t": 1,
+      "izoh": "the + eng mehribon → kindest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#826174ca"
+    },
+    {
+      "q": "An elephant is ___ than a cat.",
+      "v": [
+        "bigger",
+        "big",
+        "biggest",
+        "more big"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er, than.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#e0e0ab62"
+    },
+    {
+      "q": "This book is ___ than that one.",
+      "v": [
+        "cheaper",
+        "cheap",
+        "cheapest",
+        "more cheap"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5822e0f8"
+    },
+    {
+      "q": "Today is ___ than yesterday.",
+      "v": [
+        "hotter",
+        "hot",
+        "hottest",
+        "more hot"
+      ],
+      "t": 0,
+      "izoh": "hot -> hotter (oxirgi harf ikkilanadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m2#cc956918"
+    },
+    {
+      "q": "My bag is ___ than your bag.",
+      "v": [
+        "heavier",
+        "heavy",
+        "heaviest",
+        "more heavy"
+      ],
+      "t": 0,
+      "izoh": "y -> ier.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bf2b204e"
+    },
+    {
+      "q": "A train is ___ than a bike.",
+      "v": [
+        "faster",
+        "fast",
+        "fastest",
+        "more fast"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#54ebefd2"
+    },
+    {
+      "q": "This exercise is ___ than the first one.",
+      "v": [
+        "easier",
+        "easy",
+        "easiest",
+        "more easy"
+      ],
+      "t": 0,
+      "izoh": "y -> ier.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#0cc3eaed"
+    },
+    {
+      "q": "Winter is ___ than autumn.",
+      "v": [
+        "colder",
+        "cold",
+        "coldest",
+        "more cold"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5a9886f3"
+    },
+    {
+      "q": "This film is ___ than that film.",
+      "v": [
+        "more interesting",
+        "interestinger",
+        "interesting",
+        "most interesting"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more + sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#0556a69f"
+    },
+    {
+      "q": "She is ___ than her sister.",
+      "v": [
+        "taller",
+        "tall",
+        "tallest",
+        "more tall"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#65689cc8"
+    },
+    {
+      "q": "This road is ___ than that road.",
+      "v": [
+        "longer",
+        "long",
+        "longest",
+        "more long"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#b456765c"
+    },
+    {
+      "q": "My room is ___ than yours.",
+      "v": [
+        "smaller",
+        "small",
+        "smallest",
+        "more small"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ee9be0f1"
+    },
+    {
+      "q": "Gold is ___ than silver.",
+      "v": [
+        "more valuable",
+        "valuabler",
+        "valuable",
+        "most valuable"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#3ecd7186"
+    },
+    {
+      "q": "He is ___ than me.",
+      "v": [
+        "stronger",
+        "strong",
+        "strongest",
+        "more strong"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#6bdd0ee6"
+    },
+    {
+      "q": "The blue car is ___ than the red car.",
+      "v": [
+        "newer",
+        "new",
+        "newest",
+        "more new"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#4c924a68"
+    },
+    {
+      "q": "This question is ___ than the last one.",
+      "v": [
+        "more difficult",
+        "difficulter",
+        "difficult",
+        "most difficult"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bbc2008b"
+    },
+    {
+      "q": "A lion is ___ than a dog.",
+      "v": [
+        "more dangerous",
+        "dangerouser",
+        "dangerous",
+        "most dangerous"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#1406c177"
+    },
+    {
+      "q": "My grandfather is ___ than my father.",
+      "v": [
+        "older",
+        "old",
+        "oldest",
+        "more old"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#cb2f1cff"
+    },
+    {
+      "q": "Her English is ___ than mine.",
+      "v": [
+        "better",
+        "gooder",
+        "good",
+        "best"
+      ],
+      "t": 0,
+      "izoh": "good -> better.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#4500890b"
+    },
+    {
+      "q": "My headache is ___ than yesterday.",
+      "v": [
+        "worse",
+        "badder",
+        "bad",
+        "worst"
+      ],
+      "t": 0,
+      "izoh": "bad -> worse.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#83346571"
+    },
+    {
+      "q": "This chair is ___ than that one.",
+      "v": [
+        "more comfortable",
+        "comfortabler",
+        "comfortable",
+        "most comfortable"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#90ed8ceb"
+    },
+    {
+      "q": "A rabbit is ___ than a turtle.",
+      "v": [
+        "quicker",
+        "quick",
+        "quickest",
+        "more quick"
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#83d78046"
+    },
+    {
+      "q": "The box is ___ than the bag.",
+      "v": [
+        "larger",
+        "large",
+        "largest",
+        "more large"
+      ],
+      "t": 0,
+      "izoh": "large -> larger.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#58ae326a"
+    },
+    {
+      "q": "This street is ___ than that street.",
+      "v": [
+        "busier",
+        "busy",
+        "busiest",
+        "more busy"
+      ],
+      "t": 0,
+      "izoh": "y -> ier.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#91af439a"
+    },
+    {
+      "q": "His idea is ___ than mine.",
+      "v": [
+        "better",
+        "gooder",
+        "best",
+        "good"
+      ],
+      "t": 0,
+      "izoh": "good -> better.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#c42f2a67"
+    },
+    {
+      "q": "The second book is ___ than the first.",
+      "v": [
+        "thinner",
+        "thin",
+        "thinnest",
+        "more thin"
+      ],
+      "t": 0,
+      "izoh": "thin -> thinner (harf ikkilanadi).",
+      "qiy": "orta",
+      "id": "ing_a2_m2#465951fd"
+    },
+    {
+      "q": "A plane is ___ than a car.",
+      "v": [
+        "more expensive",
+        "expensiver",
+        "expensive",
+        "most expensive"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ce89e205"
+    },
+    {
+      "q": "This is the ___ mountain in the world.",
+      "v": [
+        "highest",
+        "higher",
+        "high",
+        "most high"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#1b6ebe95"
+    },
+    {
+      "q": "He is the ___ boy in the class.",
+      "v": [
+        "tallest",
+        "taller",
+        "tall",
+        "most tall"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#6a31a3f0"
+    },
+    {
+      "q": "She is the ___ student in school.",
+      "v": [
+        "best",
+        "goodest",
+        "gooder",
+        "better"
+      ],
+      "t": 0,
+      "izoh": "good -> the best.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ba7464fd"
+    },
+    {
+      "q": "That was the ___ film I ever saw.",
+      "v": [
+        "worst",
+        "baddest",
+        "badder",
+        "worse"
+      ],
+      "t": 0,
+      "izoh": "bad -> the worst.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#62238bde"
+    },
+    {
+      "q": "Everest is the ___ mountain.",
+      "v": [
+        "biggest",
+        "bigger",
+        "big",
+        "most big"
+      ],
+      "t": 0,
+      "izoh": "big -> biggest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#e0e41407"
+    },
+    {
+      "q": "This is the ___ city in Uzbekistan.",
+      "v": [
+        "largest",
+        "larger",
+        "large",
+        "most large"
+      ],
+      "t": 0,
+      "izoh": "large -> largest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5f2347fa"
+    },
+    {
+      "q": "He is the ___ runner in the team.",
+      "v": [
+        "fastest",
+        "faster",
+        "fast",
+        "most fast"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#a44bba77"
+    },
+    {
+      "q": "She has the ___ hair in the class.",
+      "v": [
+        "longest",
+        "longer",
+        "long",
+        "most long"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#7ed16b55"
+    },
+    {
+      "q": "This is the ___ car in the shop.",
+      "v": [
+        "most expensive",
+        "expensivest",
+        "expensiver",
+        "expensive"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: the most.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#fda94d1d"
+    },
+    {
+      "q": "Today is the ___ day of my life.",
+      "v": [
+        "happiest",
+        "happier",
+        "happy",
+        "most happy"
+      ],
+      "t": 0,
+      "izoh": "y -> iest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#faf4f4f1"
+    },
+    {
+      "q": "This is the ___ building in the city.",
+      "v": [
+        "tallest",
+        "taller",
+        "tall",
+        "most tall"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#aed5b189"
+    },
+    {
+      "q": "He is the ___ person I know.",
+      "v": [
+        "kindest",
+        "kinder",
+        "kind",
+        "most kind"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#59f9aff4"
+    },
+    {
+      "q": "That is the ___ river in the region.",
+      "v": [
+        "widest",
+        "wider",
+        "wide",
+        "most wide"
+      ],
+      "t": 0,
+      "izoh": "wide -> widest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#d3692171"
+    },
+    {
+      "q": "This is the ___ chair in the room.",
+      "v": [
+        "most comfortable",
+        "comfortablest",
+        "comfortabler",
+        "comfortable"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: the most.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bb8799d0"
+    },
+    {
+      "q": "Ali is the ___ in the family.",
+      "v": [
+        "youngest",
+        "younger",
+        "young",
+        "most young"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#73b3978f"
+    },
+    {
+      "q": "It was the ___ test of the term.",
+      "v": [
+        "most difficult",
+        "difficultest",
+        "difficulter",
+        "difficult"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: the most.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#ab4b5cee"
+    },
+    {
+      "q": "This is the ___ house on the street.",
+      "v": [
+        "oldest",
+        "older",
+        "old",
+        "most old"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#4dc68a17"
+    },
+    {
+      "q": "She is the ___ girl in the group.",
+      "v": [
+        "cleverest",
+        "cleverer",
+        "clever",
+        "most clever"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#e063315d"
+    },
+    {
+      "q": "That is the ___ shop in town.",
+      "v": [
+        "biggest",
+        "bigger",
+        "big",
+        "most big"
+      ],
+      "t": 0,
+      "izoh": "big -> biggest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#8214ab4c"
+    },
+    {
+      "q": "This is the ___ way to the school.",
+      "v": [
+        "shortest",
+        "shorter",
+        "short",
+        "most short"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#352a412b"
+    },
+    {
+      "q": "He got the ___ score in the game.",
+      "v": [
+        "highest",
+        "higher",
+        "high",
+        "most high"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#60667170"
+    },
+    {
+      "q": "It is the ___ food in the restaurant.",
+      "v": [
+        "best",
+        "goodest",
+        "better",
+        "most good"
+      ],
+      "t": 0,
+      "izoh": "good -> the best.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#c34885ef"
+    },
+    {
+      "q": "This is the ___ weather this month.",
+      "v": [
+        "worst",
+        "baddest",
+        "worse",
+        "most bad"
+      ],
+      "t": 0,
+      "izoh": "bad -> the worst.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#e2ccc853"
+    },
+    {
+      "q": "She is the ___ singer in the show.",
+      "v": [
+        "most popular",
+        "popularest",
+        "popularer",
+        "popular"
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: the most.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#25c1c5aa"
+    },
+    {
+      "q": "That was the ___ night of the winter.",
+      "v": [
+        "coldest",
+        "colder",
+        "cold",
+        "most cold"
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#fa16c88f"
+    },
+    {
+      "q": "She is as ___ as her friend.",
+      "v": [
+        "clever",
+        "cleverer",
+        "cleverest",
+        "more clever"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#0f7c6ee3"
+    },
+    {
+      "q": "My car is as ___ as yours.",
+      "v": [
+        "fast",
+        "faster",
+        "fastest",
+        "more fast"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#21da87fa"
+    },
+    {
+      "q": "This test was as ___ as the last one.",
+      "v": [
+        "easy",
+        "easier",
+        "easiest",
+        "more easy"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#a5f9c0b9"
+    },
+    {
+      "q": "He is as ___ as me.",
+      "v": [
+        "strong",
+        "stronger",
+        "strongest",
+        "more strong"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#d672214c"
+    },
+    {
+      "q": "The film was as ___ as the book.",
+      "v": [
+        "good",
+        "better",
+        "best",
+        "more good"
+      ],
+      "t": 0,
+      "izoh": "as good as.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#e073e70a"
+    },
+    {
+      "q": "This bag is as ___ as that bag.",
+      "v": [
+        "big",
+        "bigger",
+        "biggest",
+        "more big"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#c4cd39b0"
+    },
+    {
+      "q": "Today is as ___ as yesterday.",
+      "v": [
+        "warm",
+        "warmer",
+        "warmest",
+        "more warm"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#4dabe64a"
+    },
+    {
+      "q": "Her room is as ___ as mine.",
+      "v": [
+        "clean",
+        "cleaner",
+        "cleanest",
+        "more clean"
+      ],
+      "t": 0,
+      "izoh": "as ... as orasida oddiy sifat.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bae80d30"
+    },
+    {
+      "q": "Choose the correct sentence about height:",
+      "v": [
+        "She is taller than me.",
+        "She is taller then me.",
+        "She is more tall than me.",
+        "She is tallest than me."
+      ],
+      "t": 0,
+      "izoh": "than ishlatiladi, then emas.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#1d63df7e"
+    },
+    {
+      "q": "Choose the correct sentence about two brothers:",
+      "v": [
+        "He is better than his brother.",
+        "He is gooder than his brother.",
+        "He is more good than his brother.",
+        "He is best than his brother."
+      ],
+      "t": 0,
+      "izoh": "good -> better.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#9239b87f"
+    },
+    {
+      "q": "Choose the correct sentence about a bad film:",
+      "v": [
+        "It is the worst film ever.",
+        "It is the baddest film ever.",
+        "It is the worse film ever.",
+        "It is most bad film ever."
+      ],
+      "t": 0,
+      "izoh": "bad -> the worst.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#d1150ee0"
+    },
+    {
+      "q": "Choose the correct sentence about two bags:",
+      "v": [
+        "My bag is heavier than yours.",
+        "My bag is heavyer than yours.",
+        "My bag is more heavy than yours.",
+        "My bag is heaviest than yours."
+      ],
+      "t": 0,
+      "izoh": "y -> ier.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#bcace49e"
+    },
+    {
+      "q": "Choose the correct sentence about price:",
+      "v": [
+        "This is more expensive than that.",
+        "This is expensiver than that.",
+        "This is most expensive than that.",
+        "This is expensive than that."
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#1628012b"
+    },
+    {
+      "q": "Choose the correct sentence about a student:",
+      "v": [
+        "She is the best student.",
+        "She is the goodest student.",
+        "She is the better student in all.",
+        "She is best student."
+      ],
+      "t": 0,
+      "izoh": "good -> the best.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#2101daa8"
+    },
+    {
+      "q": "Choose the correct sentence about winter:",
+      "v": [
+        "Winter is colder than autumn.",
+        "Winter is more cold than autumn.",
+        "Winter is coldest than autumn.",
+        "Winter is cold than autumn."
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#68710c23"
+    },
+    {
+      "q": "Choose the correct sentence about an easy question:",
+      "v": [
+        "This is the easiest question.",
+        "This is the easyest question.",
+        "This is the most easy question.",
+        "This is easiest question."
+      ],
+      "t": 0,
+      "izoh": "y -> iest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#14ba0018"
+    },
+    {
+      "q": "Choose the correct sentence about running:",
+      "v": [
+        "He runs faster than me.",
+        "He runs more fast than me.",
+        "He runs fastest than me.",
+        "He runs fast than me."
+      ],
+      "t": 0,
+      "izoh": "qisqa sifat + er.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#3707b066"
+    },
+    {
+      "q": "Choose the correct sentence about two houses:",
+      "v": [
+        "My house is as big as yours.",
+        "My house is as bigger as yours.",
+        "My house is so big as yours.",
+        "My house is as biggest as yours."
+      ],
+      "t": 0,
+      "izoh": "as + oddiy sifat + as.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#7cd7d269"
+    },
+    {
+      "q": "Choose the correct sentence about two books:",
+      "v": [
+        "This book is more interesting than that.",
+        "This book is interestinger than that.",
+        "This book is most interesting than that.",
+        "This book is interesting than that."
+      ],
+      "t": 0,
+      "izoh": "uzun sifat: more.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#53d6bfab"
+    },
+    {
+      "q": "Choose the correct sentence about the family:",
+      "v": [
+        "Ali is the youngest in the family.",
+        "Ali is the youngger in the family.",
+        "Ali is the most young in the family.",
+        "Ali is youngest in the family."
+      ],
+      "t": 0,
+      "izoh": "the + est.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#6331bce8"
+    },
+    {
+      "q": "Choose the correct sentence about two cars:",
+      "v": [
+        "The red car is nicer than the blue one.",
+        "The red car is niceer than the blue one.",
+        "The red car is more nice than the blue one.",
+        "The red car is nicest than the blue one."
+      ],
+      "t": 0,
+      "izoh": "nice -> nicer.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#7da17ba5"
+    },
+    {
+      "q": "Find the wrong word: 'This is the most biggest house.'",
+      "v": [
+        "This",
+        "most",
+        "biggest",
+        "house"
+      ],
+      "t": 1,
+      "izoh": "most ortiqcha, faqat the biggest.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#4d1fa229"
+    },
+    {
+      "q": "Find the wrong word: 'He is gooder than his friend.'",
+      "v": [
+        "He",
+        "gooder",
+        "than",
+        "friend"
+      ],
+      "t": 1,
+      "izoh": "gooder noto'g'ri, better.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#c84f331d"
+    },
+    {
+      "q": "Find the wrong word: 'It is the baddest day.'",
+      "v": [
+        "It",
+        "the",
+        "baddest",
+        "day"
+      ],
+      "t": 2,
+      "izoh": "baddest noto'g'ri, worst.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#aaae752d"
+    },
+    {
+      "q": "Find the wrong word: 'My bag is heavyer than yours.'",
+      "v": [
+        "My",
+        "bag",
+        "heavyer",
+        "yours"
+      ],
+      "t": 2,
+      "izoh": "heavyer noto'g'ri, heavier.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#6a303217"
+    },
+    {
+      "q": "Find the wrong word: 'She is taller then me.'",
+      "v": [
+        "She",
+        "taller",
+        "then",
+        "me"
+      ],
+      "t": 2,
+      "izoh": "then o'rniga than.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#5d2bde07"
+    },
+    {
+      "q": "Find the wrong word: 'This is more cheap than that.'",
+      "v": [
+        "This",
+        "more",
+        "cheap",
+        "than"
+      ],
+      "t": 1,
+      "izoh": "more cheap emas, cheaper.",
+      "qiy": "orta",
+      "id": "ing_a2_m2#7db8b09d"
+    }
+  ]
+}

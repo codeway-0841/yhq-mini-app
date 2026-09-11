@@ -1,0 +1,486 @@
+{
+  "nom": "50-mavzu. Ekvivalentlik qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "\"Ekvivalent\" so'zi nimani anglatadi?",
+      "v": [
+        "Teng qiymatli",
+        "Teng massali",
+        "Teng hajmli",
+        "Teng molekulali"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#c23498e7"
+    },
+    {
+      "q": "Elementning ekvivalentligi deb nimaga aytiladi?",
+      "v": [
+        "1 mol (1 g) vodorod atomlari bilan qoldiqsiz birikadigan yoki shuncha vodorod atomlari o'rnini oladigan miqdoriga",
+        "Elementning valentligiga teng miqdoriga",
+        "1 mol kislorod bilan birikadigan miqdoriga",
+        "Elementning nisbiy atom massasiga"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#32a76897"
+    },
+    {
+      "q": "Vodorod uchun ekvivalent massa nechaga teng?",
+      "v": [
+        "1 g/mol",
+        "16 g/mol",
+        "2 g/mol",
+        "8 g/mol"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#4129045f"
+    },
+    {
+      "q": "Ekvivalentlik tushunchasi fanga kim tomonidan va qachon kiritilgan?",
+      "v": [
+        "1820-yilda ingliz olimi Volloston tomonidan",
+        "1869-yilda rus olimi Mendeleyev tomonidan",
+        "1808-yilda ingliz olimi Dalton tomonidan",
+        "1789-yilda fransuz olimi Lavuazye tomonidan"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#21d6d258"
+    },
+    {
+      "q": "Suv (H2O) molekulasidagi kislorod atomining ekvivalent massasi nechaga teng?",
+      "v": [
+        "8 g/mol",
+        "4 g/mol",
+        "16 g/mol",
+        "32 g/mol"
+      ],
+      "t": 0,
+      "izoh": "E(O) = 16/2 = 8 g/mol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#5ab5a9b2"
+    },
+    {
+      "q": "CaO dagi kalsiyning ekvivalent massasini toping (kislorodning ekvivalent massasi 8 g/mol).",
+      "v": [
+        "20 g/mol",
+        "10 g/mol",
+        "40 g/mol",
+        "28 g/mol"
+      ],
+      "t": 0,
+      "izoh": "16 g O ga 40 g Ca to'g'ri kelsa, 8 g O ga 20 g Ca to'g'ri keladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#3a4ffc0b"
+    },
+    {
+      "q": "Uglerodning CO va CO2 birikmalaridagi ekvivalent massalari nisbatiga to'g'ri javobni toping.",
+      "v": [
+        "CO da 6 g/mol, CO2 da 3 g/mol; nisbat 2:1",
+        "CO da 4 g/mol, CO2 da 2 g/mol; nisbat 2:1",
+        "CO da 3 g/mol, CO2 da 6 g/mol; nisbat 1:2",
+        "CO da 12 g/mol, CO2 da 12 g/mol; nisbat 1:1"
+      ],
+      "t": 0,
+      "izoh": "CO da C 2 valentli: 12/2=6; CO2 da 4 valentli: 12/4=3",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#8bdace54"
+    },
+    {
+      "q": "Kimyoviy elementning ekvivalenti (E) qaysi formula bilan hisoblanadi?",
+      "v": [
+        "E = Ar/V",
+        "E = Ar·V",
+        "E = V/Ar",
+        "E = Ar + V"
+      ],
+      "t": 0,
+      "izoh": "Ar – nisbiy atom massasi, V – valentlik",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#6a90ccb1"
+    },
+    {
+      "q": "Aluminiyning ekvivalenti nechaga teng (Ar = 27, valentligi 3)?",
+      "v": [
+        "9",
+        "81",
+        "27",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "E = 27/3 = 9",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#4a310130"
+    },
+    {
+      "q": "Misning bir va ikki valentli holatiga mos ekvivalentlari qanday?",
+      "v": [
+        "64 va 32",
+        "32 va 64",
+        "64 va 16",
+        "32 va 16"
+      ],
+      "t": 0,
+      "izoh": "E = 64/1 = 64; E = 64/2 = 32",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#c0e560cd"
+    },
+    {
+      "q": "CuO oksidining ekvivalenti nechaga teng?",
+      "v": [
+        "40",
+        "80",
+        "20",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "E(oksid) = Mr/(V·n) = 80/(2·1) = 40",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#7cf6bcec"
+    },
+    {
+      "q": "Cu(OH)2 asosining ekvivalenti nechaga teng?",
+      "v": [
+        "49",
+        "97",
+        "98",
+        "24,5"
+      ],
+      "t": 0,
+      "izoh": "E(asos) = Mr/n(OH) = 98/2 = 49",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#0d8cbca7"
+    },
+    {
+      "q": "Ekvivalentlik qonuni qanday ifodalanadi?",
+      "v": [
+        "Moddalar bir-biri bilan ularning ekvivalentlariga proporsional miqdorlarda ta'sirlashadilar",
+        "Moddalar bir-biri bilan teng massalarda ta'sirlashadilar",
+        "Moddalar bir-biri bilan teng hajmlarda ta'sirlashadilar",
+        "Moddalar bir-biri bilan tasodifiy nisbatlarda ta'sirlashadilar"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#73503d08"
+    },
+    {
+      "q": "Ekvivalentlik qonunining matematik ifodasi qanday?",
+      "v": [
+        "m(A)/m(B) = E(A)/E(B)",
+        "m(A)·m(B) = E(A)·E(B)",
+        "m(A)/E(B) = m(B)/E(A)",
+        "m(A) + m(B) = E(A) + E(B)"
+      ],
+      "t": 0,
+      "izoh": "",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#618024eb"
+    },
+    {
+      "q": "Ekvivalent hajm nima va vodorod uchun u nechaga teng?",
+      "v": [
+        "Moddaning 1 ekvivalenti egallaydigan hajm; H2 uchun 11,2 l/mol",
+        "Moddaning 1 molekulasi egallaydigan hajm; H2 uchun 5,6 l/mol",
+        "Moddaning 1 moli egallaydigan hajm; H2 uchun 22,4 l/mol",
+        "Moddaning 1 grammi egallaydigan hajm; H2 uchun 1 l/mol"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent hajm gazsimon holat uchun qo'llanadi; O2 uchun 5,6 l/mol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#72864a5a"
+    },
+    {
+      "q": "Temir ko'p birikmalarda uch valentli bo'ladi. Uning ekvivalenti nechaga teng (Ar = 56)?",
+      "v": [
+        "18,7 g/mol (56/3)",
+        "28 g/mol",
+        "56 g/mol",
+        "9,3 g/mol"
+      ],
+      "t": 0,
+      "izoh": "E = 56/3 ≈ 18,7",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#a5c97494"
+    },
+    {
+      "q": "H2S dagi oltingugurtning ekvivalent massasi nechaga teng?",
+      "v": [
+        "16 g/mol",
+        "8 g/mol",
+        "32 g/mol",
+        "34 g/mol"
+      ],
+      "t": 0,
+      "izoh": "H2S da S 2 valentli: E = 32/2 = 16 g/mol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#9302e4a5"
+    },
+    {
+      "q": "Aluminiy oksid tarkibida 52,94% Al va 47,06% O bor. Kislorod ekvivalenti 8 bo'lsa, aluminiyning ekvivalentini toping.",
+      "v": [
+        "9",
+        "8",
+        "27",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "52,94/47,06 = x/8; x ≈ 9",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#d325bcf2"
+    },
+    {
+      "q": "Kislorodning ekvivalent massasi nechaga teng?",
+      "v": [
+        "8 g/mol",
+        "16 g/mol",
+        "32 g/mol",
+        "4 g/mol"
+      ],
+      "t": 0,
+      "izoh": "E = 16/2 = 8",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#b4ea614b"
+    },
+    {
+      "q": "Magniyning ekvivalenti nechaga teng (Ar = 24, valentligi 2)?",
+      "v": [
+        "12",
+        "24",
+        "48",
+        "6"
+      ],
+      "t": 0,
+      "izoh": "E = 24/2 = 12",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#441ab4f6"
+    },
+    {
+      "q": "Kalsiyning ekvivalenti nechaga teng (Ar = 40, valentligi 2)?",
+      "v": [
+        "20",
+        "40",
+        "80",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "E = 40/2 = 20",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#f9ab0c93"
+    },
+    {
+      "q": "Natriyning ekvivalenti nechaga teng (Ar = 23, valentligi 1)?",
+      "v": [
+        "23",
+        "11,5",
+        "46",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "E = 23/1 = 23",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#511de54f"
+    },
+    {
+      "q": "Temirning ikki valentli holatidagi ekvivalenti nechaga teng (Ar = 56)?",
+      "v": [
+        "28",
+        "56",
+        "18,7",
+        "14"
+      ],
+      "t": 0,
+      "izoh": "E = 56/2 = 28",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#c8050dde"
+    },
+    {
+      "q": "Kislorodning ekvivalent hajmi (n.sh.) nechaga teng?",
+      "v": [
+        "5,6 l/mol",
+        "11,2 l/mol",
+        "22,4 l/mol",
+        "8 l/mol"
+      ],
+      "t": 0,
+      "izoh": "O2 uchun ekvivalent hajm 5,6 l/mol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#a3ce0075"
+    },
+    {
+      "q": "HCl kislotaning ekvivalenti nechaga teng (Mr = 36,5)?",
+      "v": [
+        "36,5",
+        "18,25",
+        "73",
+        "12,2"
+      ],
+      "t": 0,
+      "izoh": "E(kislota) = Mr/n(H) = 36,5/1",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#e7db1e0a"
+    },
+    {
+      "q": "H2SO4 kislotaning ekvivalenti nechaga teng (Mr = 98)?",
+      "v": [
+        "49",
+        "98",
+        "32,7",
+        "24,5"
+      ],
+      "t": 0,
+      "izoh": "E = 98/2 = 49",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#58f187bc"
+    },
+    {
+      "q": "NaOH asosining ekvivalenti nechaga teng (Mr = 40)?",
+      "v": [
+        "40",
+        "20",
+        "80",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "E(asos) = Mr/n(OH) = 40/1",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#e86b4c29"
+    },
+    {
+      "q": "KOH asosining ekvivalenti nechaga teng (Mr = 56)?",
+      "v": [
+        "56",
+        "28",
+        "112",
+        "18,7"
+      ],
+      "t": 0,
+      "izoh": "E = 56/1 = 56",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#b1ad2825"
+    },
+    {
+      "q": "Ca(OH)2 asosining ekvivalenti nechaga teng (Mr = 74)?",
+      "v": [
+        "37",
+        "74",
+        "24,7",
+        "18,5"
+      ],
+      "t": 0,
+      "izoh": "E = 74/2 = 37",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#62cdc575"
+    },
+    {
+      "q": "NaCl tuzining ekvivalenti nechaga teng (Mr = 58,5)?",
+      "v": [
+        "58,5",
+        "29,25",
+        "117",
+        "19,5"
+      ],
+      "t": 0,
+      "izoh": "E(tuz) = Mr/(V·n) = 58,5/(1·1)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#c11d4b8a"
+    },
+    {
+      "q": "Bir element bir necha xil ekvivalentga ega bo'lishi mumkinmi?",
+      "v": [
+        "Ha, element turli birikmalarda turli valentlik ko'rsatsa",
+        "Yo'q, ekvivalent har doim o'zgarmas",
+        "Faqat metallar uchun mumkin",
+        "Faqat gazlar uchun mumkin"
+      ],
+      "t": 0,
+      "izoh": "Misol: uglerod CO da 6, CO2 da 3 g/mol",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#0b9f7690"
+    },
+    {
+      "q": "8 g kislorod bilan qoldiqsiz birikadigan magniy massasi necha gramm (E(Mg) = 12 g/mol, E(O) = 8 g/mol)?",
+      "v": [
+        "12 g",
+        "8 g",
+        "24 g",
+        "16 g"
+      ],
+      "t": 0,
+      "izoh": "m(Mg)/m(O) = E(Mg)/E(O) = 12/8; 8 g O ga 12 g Mg to'g'ri keladi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_7_ozb_m50-ekvivalentlik-qonuni#80261fa3"
+    }
+  ]
+}

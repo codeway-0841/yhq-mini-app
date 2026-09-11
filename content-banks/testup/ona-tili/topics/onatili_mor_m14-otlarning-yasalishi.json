@@ -1,0 +1,1506 @@
+{
+  "nom": "Otlarning yasalishi va tuzilishi",
+  "bolim": "Ot",
+  "savollar": [
+    {
+      "q": "Quyidagilarning qaysisida yasama so'z berilgan?",
+      "v": [
+        "daftar",
+        "kitob",
+        "temirchi",
+        "suv"
+      ],
+      "t": 2,
+      "izoh": "«temirchi» «temir» asosiga «-chi» qo'shilishidan yasalgan. Boshqalari mos emas: «daftar» — yaxlit asos, unga yasovchi qism ulanmagan; «kitob» — yaxlit asos, unga yasovchi qo'shimcha ulanmagan; «suv» — yaxlit asos, ma'noli qismlarga ajralmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#9783deda"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida yasama so'z bor?",
+      "v": [
+        "daftar",
+        "tilshunos",
+        "tosh",
+        "dala"
+      ],
+      "t": 1,
+      "izoh": "«tilshunos» «til» asosiga «-shunos» qo'shilishidan yasalgan. Boshqalari mos emas: «daftar» — yaxlit asos, unga yasovchi qism ulanmagan; «tosh» — yaxlit asos, unga qo'shimcha ulanmagan; «dala» — yaxlit asos, yasovchi qism ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#991c6168"
+    },
+    {
+      "q": "Berilganlarning qaysisi yasama so'z sanaladi?",
+      "v": [
+        "kitob",
+        "dala",
+        "tosh",
+        "paxtakor"
+      ],
+      "t": 3,
+      "izoh": "«paxtakor» «paxta» asosiga «-kor» qo'shilishidan yasalgan. Boshqalari mos emas: «dala» — yaxlit asos, yasovchi qism ulanmagan; «tosh» — yaxlit asos, unga qo'shimcha ulanmagan; «kitob» — yaxlit asos, unga yasovchi qo'shimcha ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#79ae750e"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida yasama so'z bor?",
+      "v": [
+        "kitob",
+        "zargar",
+        "shahar",
+        "daftar"
+      ],
+      "t": 1,
+      "izoh": "«zargar» «zar» asosiga «-gar» qo'shilishidan yasalgan. Boshqalari mos emas: «kitob» — yaxlit asos, unga yasovchi qo'shimcha ulanmagan; «shahar» — yaxlit asos, yasovchi qism ulanmagan; «daftar» — yaxlit asos, unga yasovchi qism ulanmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#59fc181d"
+    },
+    {
+      "q": "Qaysi javobdagi so'z shaxs oti sanaladi?",
+      "v": [
+        "kitobxona",
+        "gulzor",
+        "bog'bon",
+        "olmazor"
+      ],
+      "t": 2,
+      "izoh": "«bog'bon» — shaxs oti: u «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi. Qolgan javoblar boshqa guruhga oid: «kitobxona», «gulzor» va «olmazor» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#df4ac4d8"
+    },
+    {
+      "q": "Qaysi so'z shaxs oti deb baholanadi?",
+      "v": [
+        "terakzor",
+        "sabzavotchi",
+        "olmazor",
+        "oshxona"
+      ],
+      "t": 1,
+      "izoh": "«sabzavotchi» — shaxs oti: u «sabzavot» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi. Qolgan javoblar boshqa guruhga oid: «terakzor», «olmazor» va «oshxona» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#3f417df3"
+    },
+    {
+      "q": "Qaysi javobdagi so'z shaxs oti sanaladi?",
+      "v": [
+        "safarnoma",
+        "do'stlik",
+        "paxtakor",
+        "tinchlik"
+      ],
+      "t": 2,
+      "izoh": "«paxtakor» — shaxs oti: u «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi. Qolgan javoblar boshqa guruhga oid: «safarnoma», «do'stlik» va «tinchlik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#f1d1b496"
+    },
+    {
+      "q": "Berilganlardan qaysisi shaxs oti hisoblanadi?",
+      "v": [
+        "dehqonchilik",
+        "bog'bon",
+        "toshloq",
+        "do'stlik"
+      ],
+      "t": 1,
+      "izoh": "«bog'bon» — shaxs oti: u «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi. Qolgan javoblar boshqa guruhga oid: «dehqonchilik» va «do'stlik» — mavhum ot; «toshloq» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#c690774c"
+    },
+    {
+      "q": "Berilganlardan qaysisi o'rin-joy oti hisoblanadi?",
+      "v": [
+        "yaxshilik",
+        "kitobxona",
+        "bog'bon",
+        "bolalik"
+      ],
+      "t": 1,
+      "izoh": "«kitobxona» — o'rin-joy oti: u «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan javoblar boshqa guruhga oid: «yaxshilik» va «bolalik» — mavhum ot; «bog'bon» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#13090f72"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida o'rin-joy oti berilgan?",
+      "v": [
+        "tinchlik",
+        "do'stlik",
+        "oshxona",
+        "ishchi"
+      ],
+      "t": 2,
+      "izoh": "«oshxona» — o'rin-joy oti: u «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi. Qolgan javoblar boshqa guruhga oid: «tinchlik» va «do'stlik» — mavhum ot; «ishchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#7d319470"
+    },
+    {
+      "q": "Qaysi so'z o'rin-joy oti deb baholanadi?",
+      "v": [
+        "dehqonchilik",
+        "sinfdosh",
+        "olmazor",
+        "yaxshilik"
+      ],
+      "t": 2,
+      "izoh": "«olmazor» — o'rin-joy oti: u «olma» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan javoblar boshqa guruhga oid: «dehqonchilik» va «yaxshilik» — mavhum ot; «sinfdosh» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#558daa6d"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida o'rin-joy oti berilgan?",
+      "v": [
+        "bolalik",
+        "zargar",
+        "guliston",
+        "sinfdosh"
+      ],
+      "t": 2,
+      "izoh": "«guliston» — o'rin-joy oti: u «gul» asosiga «-iston» qo'shilishidan yasalgan va narsa ko'p bo'lgan makonni ataydi. Qolgan javoblar boshqa guruhga oid: «bolalik» — mavhum ot; «zargar» va «sinfdosh» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#2755b196"
+    },
+    {
+      "q": "Qaysi so'z mavhum ot deb baholanadi?",
+      "v": [
+        "aravakash",
+        "guliston",
+        "tinchlik",
+        "sabzavotchi"
+      ],
+      "t": 2,
+      "izoh": "«tinchlik» — mavhum ot: u «tinch» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan javoblar boshqa guruhga oid: «guliston» — o'rin-joy oti; «aravakash» va «sabzavotchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#39a1b32c"
+    },
+    {
+      "q": "Qaysi so'z mavhum ot deb baholanadi?",
+      "v": [
+        "dehqonchilik",
+        "bog'bon",
+        "paxtakor",
+        "ishchi"
+      ],
+      "t": 0,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan javoblar boshqa guruhga oid: «ishchi», «bog'bon» va «paxtakor» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ef396a37"
+    },
+    {
+      "q": "Quyidagilardan qaysisi mavhum otga misol bo'la oladi?",
+      "v": [
+        "dehqonchilik",
+        "zargar",
+        "toshloq",
+        "guliston"
+      ],
+      "t": 0,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan javoblar boshqa guruhga oid: «toshloq» va «guliston» — o'rin-joy oti; «zargar» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#bc5c6dc5"
+    },
+    {
+      "q": "Quyidagilardan qaysisi mavhum otga misol bo'la oladi?",
+      "v": [
+        "do'stlik",
+        "paxtakor",
+        "bog'bon",
+        "kitobxona"
+      ],
+      "t": 0,
+      "izoh": "«do'stlik» — mavhum ot: u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan javoblar boshqa guruhga oid: «kitobxona» — o'rin-joy oti; «paxtakor» va «bog'bon» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#1104a3e5"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "toshloq",
+        "olmazor",
+        "sabzavotchi",
+        "terakzor"
+      ],
+      "t": 2,
+      "izoh": "«sabzavotchi» — shaxs oti: u «sabzavot» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi. Qolgan uchtasi esa o'rin-joy oti: «toshloq» — «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi; «olmazor» — «olma» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi; xuddi shunday «terakzor» — «terak» va «-zor».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#a0b455ca"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "do'stlik",
+        "safarnoma",
+        "dehqonchilik",
+        "oshxona"
+      ],
+      "t": 3,
+      "izoh": "«oshxona» — o'rin-joy oti: u «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi. Qolgan uchtasi esa mavhum ot: «do'stlik» — «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi; «dehqonchilik» — «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi; «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#8d33a5ca"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "bolalik",
+        "safarnoma",
+        "do'stlik",
+        "kitobxon"
+      ],
+      "t": 3,
+      "izoh": "«kitobxon» — shaxs oti: u «kitob» asosiga «-xon» qo'shilishidan yasalgan va shaxsni ataydi. Qolgan uchtasi esa mavhum ot: «bolalik» — «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «do'stlik» — «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#1e0b4ddb"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "kitobxona",
+        "tilshunos",
+        "ishchi",
+        "bog'bon"
+      ],
+      "t": 0,
+      "izoh": "«kitobxona» — o'rin-joy oti: u «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan uchtasi esa shaxs oti: «tilshunos» — «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi; «ishchi» — «ish» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi; «bog'bon» — «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#d4811292"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "kitobxona",
+        "dehqonchilik",
+        "terakzor",
+        "olmazor"
+      ],
+      "t": 1,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan uchtasi esa o'rin-joy oti: «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi; «olmazor» — «olma» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi; xuddi shunday «terakzor» — «terak» va «-zor».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#333e1671"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "oshxona",
+        "paxtakor",
+        "zargar",
+        "tilshunos"
+      ],
+      "t": 0,
+      "izoh": "«oshxona» — o'rin-joy oti: u «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi. Qolgan uchtasi esa shaxs oti: «paxtakor» — «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi; «zargar» — «zar» asosiga «-gar» qo'shilishidan yasalgan va hunar egasi bo'lgan shaxsni ataydi; «tilshunos» — «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ae67ff33"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "kitobxon",
+        "sabzavotchi",
+        "olmazor",
+        "bilimdon"
+      ],
+      "t": 2,
+      "izoh": "«olmazor» — o'rin-joy oti: u «olma» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan uchtasi esa shaxs oti: «sabzavotchi» — «sabzavot» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi; «kitobxon» — «kitob» asosiga «-xon» qo'shilishidan yasalgan va shaxsni ataydi; «bilimdon» — «bilim» asosiga «-don» qo'shilishidan yasalgan va belgi egasi bo'lgan shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b6b9f3e5"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "tinchlik",
+        "sinfdosh",
+        "bog'bon",
+        "aravakash"
+      ],
+      "t": 0,
+      "izoh": "«tinchlik» — mavhum ot: u «tinch» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan uchtasi esa shaxs oti: «bog'bon» — «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi; «sinfdosh» — «sinf» asosiga «-dosh» qo'shilishidan yasalgan va birgalikda ishtirok etuvchi shaxsni ataydi; «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#e60cc226"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "kitobxona",
+        "do'stlik",
+        "oshxona",
+        "toshloq"
+      ],
+      "t": 1,
+      "izoh": "«do'stlik» — mavhum ot: u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan uchtasi esa o'rin-joy oti: «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi; «oshxona» — «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi; «toshloq» — «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#7453a3c6"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "gulzor",
+        "toshloq",
+        "yaxshilik",
+        "kitobxona"
+      ],
+      "t": 2,
+      "izoh": "«yaxshilik» — mavhum ot: u «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan uchtasi esa o'rin-joy oti: «toshloq» — «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi; «gulzor» — «gul» asosiga «-zor» qo'shilishidan yasalgan va narsa ko'p bo'lgan joyni ataydi; «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#27d4b816"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "kitobxon",
+        "kitobxona",
+        "terakzor",
+        "olmazor"
+      ],
+      "t": 0,
+      "izoh": "«kitobxon» — shaxs oti: u «kitob» asosiga «-xon» qo'shilishidan yasalgan va shaxsni ataydi. Qolgan uchtasi esa o'rin-joy oti: «terakzor» — «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi; xuddi shunday «olmazor» — «olma» va «-zor»; «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#52242294"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "safarnoma",
+        "tinchlik",
+        "kitobxona",
+        "yaxshilik"
+      ],
+      "t": 2,
+      "izoh": "«kitobxona» — o'rin-joy oti: u «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan uchtasi esa mavhum ot: «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «tinchlik» — «tinch» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; xuddi shunday «yaxshilik» — «yaxshi» va «-lik».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#fbaa5a47"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "kitobxon",
+        "bolalik",
+        "safarnoma",
+        "do'stlik"
+      ],
+      "t": 0,
+      "izoh": "«kitobxon» — shaxs oti: u «kitob» asosiga «-xon» qo'shilishidan yasalgan va shaxsni ataydi. Qolgan uchtasi esa mavhum ot: «bolalik» — «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «do'stlik» — «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#5c54cc09"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "bog'bon",
+        "aravakash",
+        "ishchi",
+        "safarnoma"
+      ],
+      "t": 3,
+      "izoh": "«safarnoma» — mavhum ot: u «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Qolgan uchtasi esa shaxs oti: «bog'bon» — «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi; «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi; «ishchi» — «ish» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#36e9009b"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "paxtakor",
+        "yaxshilik",
+        "dehqonchilik",
+        "safarnoma"
+      ],
+      "t": 0,
+      "izoh": "«paxtakor» — shaxs oti: u «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi. Qolgan uchtasi esa mavhum ot: «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «yaxshilik» — «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; «dehqonchilik» — «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ac1c9137"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "kitobxona",
+        "guliston",
+        "safarnoma",
+        "terakzor"
+      ],
+      "t": 2,
+      "izoh": "«safarnoma» — mavhum ot: u «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Qolgan uchtasi esa o'rin-joy oti: «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi; «guliston» — «gul» asosiga «-iston» qo'shilishidan yasalgan va narsa ko'p bo'lgan makonni ataydi; «terakzor» — «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#aaa6b981"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "safarnoma",
+        "tilshunos",
+        "yaxshilik",
+        "dehqonchilik"
+      ],
+      "t": 1,
+      "izoh": "«tilshunos» — shaxs oti: u «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi. Qolgan uchtasi esa mavhum ot: «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «yaxshilik» — «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; «dehqonchilik» — «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#3764081a"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "dehqonchilik",
+        "bilimdon",
+        "paxtakor",
+        "sinfdosh"
+      ],
+      "t": 0,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan uchtasi esa shaxs oti: «bilimdon» — «bilim» asosiga «-don» qo'shilishidan yasalgan va belgi egasi bo'lgan shaxsni ataydi; «paxtakor» — «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi; «sinfdosh» — «sinf» asosiga «-dosh» qo'shilishidan yasalgan va birgalikda ishtirok etuvchi shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#d5e2c6ed"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "kitobxona",
+        "gulzor",
+        "guliston",
+        "dehqonchilik"
+      ],
+      "t": 3,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan uchtasi esa o'rin-joy oti: «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi; «guliston» — «gul» asosiga «-iston» qo'shilishidan yasalgan va narsa ko'p bo'lgan makonni ataydi; «gulzor» — «gul» asosiga «-zor» qo'shilishidan yasalgan va narsa ko'p bo'lgan joyni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ea46fe0c"
+    },
+    {
+      "q": "«tilshunos» so'zi «-shunos» yordamida qanday nomni bildirgan?",
+      "v": [
+        "ish bajariladigan binoni ataydi",
+        "mashg'ulot sohasini atab keladi",
+        "sohani biladigan mutaxassisni ataydi",
+        "mavhum tushunchani atab keladi"
+      ],
+      "t": 2,
+      "izoh": "«tilshunos» so'zi «til» asosidan olingan: «-shunos» qo'shimchasi sohani biladigan mutaxassisni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#a9987991"
+    },
+    {
+      "q": "«kitobxona» so'zida «-xona» qismi qanday ma'noni yuzaga chiqargan?",
+      "v": [
+        "sohani biladigan mutaxassisni ataydi",
+        "ish bajariladigan binoni ataydi",
+        "mashg'ulot sohasini atab keladi",
+        "mavhum tushunchani atab keladi"
+      ],
+      "t": 1,
+      "izoh": "«kitobxona» so'zi «kitob» asosidan olingan: «-xona» qo'shimchasi ish bajariladigan binoni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b6d993b8"
+    },
+    {
+      "q": "«bilimdon» so'zi «-don» yordamida qanday nomni bildirgan?",
+      "v": [
+        "shu narsaga boy bo'lgan yerni ataydi",
+        "belgi egasi bo'lgan shaxsni ataydi",
+        "narsa ko'p bo'lgan makonni ataydi",
+        "yozma asar nomini atab keladi"
+      ],
+      "t": 1,
+      "izoh": "«bilimdon» so'zi «bilim» asosidan olingan: «-don» qo'shimchasi belgi egasi bo'lgan shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#c01abefc"
+    },
+    {
+      "q": "«aravakash» so'zi «-kash» yordamida qanday nomni bildirgan?",
+      "v": [
+        "shu joyga qaraydigan shaxsni ataydi",
+        "ish quroli bilan ishlovchi shaxsni ataydi",
+        "ish bilan shug'ullanuvchi shaxsni ataydi",
+        "shu narsaga boy bo'lgan yerni ataydi"
+      ],
+      "t": 1,
+      "izoh": "«aravakash» so'zi «arava» asosidan olingan: «-kash» qo'shimchasi ish quroli bilan ishlovchi shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b1b010b8"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida shaxs oti berilgan?",
+      "v": [
+        "aravakash",
+        "olmazor",
+        "oshxona",
+        "guliston"
+      ],
+      "t": 0,
+      "izoh": "«aravakash» — shaxs oti: u «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi. Qolgan javoblar boshqa guruhga oid: «olmazor», «oshxona» va «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ddc182d4"
+    },
+    {
+      "q": "Qaysi javobdagi so'z mavhum ot sanaladi?",
+      "v": [
+        "yaxshilik",
+        "guliston",
+        "oshxona",
+        "terakzor"
+      ],
+      "t": 0,
+      "izoh": "«yaxshilik» — mavhum ot: u «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan javoblar boshqa guruhga oid: «oshxona», «guliston» va «terakzor» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#d731e415"
+    },
+    {
+      "q": "Quyidagilardan qaysisi o'rin-joy otiga misol bo'la oladi?",
+      "v": [
+        "toshloq",
+        "zargar",
+        "tilshunos",
+        "ishchi"
+      ],
+      "t": 0,
+      "izoh": "«toshloq» — o'rin-joy oti: u «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi. Qolgan javoblar boshqa guruhga oid: «zargar», «tilshunos» va «ishchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#a3ec058c"
+    },
+    {
+      "q": "Qaysi javobdagi so'z mavhum ot sanaladi?",
+      "v": [
+        "oshxona",
+        "kitobxona",
+        "bolalik",
+        "terakzor"
+      ],
+      "t": 2,
+      "izoh": "«bolalik» — mavhum ot: u «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan javoblar boshqa guruhga oid: «oshxona», «kitobxona» va «terakzor» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#75fe7bbf"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida mavhum ot berilgan?",
+      "v": [
+        "olmazor",
+        "dehqonchilik",
+        "toshloq",
+        "guliston"
+      ],
+      "t": 1,
+      "izoh": "«dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Qolgan javoblar boshqa guruhga oid: «olmazor», «toshloq» va «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#80c2b39e"
+    },
+    {
+      "q": "Berilganlardan qaysisi mavhum ot hisoblanadi?",
+      "v": [
+        "do'stlik",
+        "kitobxona",
+        "toshloq",
+        "gulzor"
+      ],
+      "t": 0,
+      "izoh": "«do'stlik» — mavhum ot: u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan javoblar boshqa guruhga oid: «kitobxona», «toshloq» va «gulzor» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#5e247da0"
+    },
+    {
+      "q": "Qaysi so'z o'rin-joy oti deb baholanadi?",
+      "v": [
+        "bilimdon",
+        "bog'bon",
+        "zargar",
+        "terakzor"
+      ],
+      "t": 3,
+      "izoh": "«terakzor» — o'rin-joy oti: u «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan javoblar boshqa guruhga oid: «bilimdon», «zargar» va «bog'bon» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#57b84ed7"
+    },
+    {
+      "q": "Berilganlardan qaysisi mavhum ot hisoblanadi?",
+      "v": [
+        "paxtakor",
+        "bog'bon",
+        "kitobxon",
+        "safarnoma"
+      ],
+      "t": 3,
+      "izoh": "«safarnoma» — mavhum ot: u «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Qolgan javoblar boshqa guruhga oid: «bog'bon», «kitobxon» va «paxtakor» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#c8f83fff"
+    },
+    {
+      "q": "Qaysi javobdagi so'z shaxs oti sanaladi?",
+      "v": [
+        "safarnoma",
+        "dehqonchilik",
+        "do'stlik",
+        "temirchi"
+      ],
+      "t": 3,
+      "izoh": "«temirchi» — shaxs oti: u «temir» asosiga «-chi» qo'shilishidan yasalgan va kasb egasi bo'lgan shaxsni ataydi. Qolgan javoblar boshqa guruhga oid: «safarnoma», «do'stlik» va «dehqonchilik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#7b81474b"
+    },
+    {
+      "q": "Quyidagilardan qaysisi mavhum otga misol bo'la oladi?",
+      "v": [
+        "toshloq",
+        "oshxona",
+        "guliston",
+        "safarnoma"
+      ],
+      "t": 3,
+      "izoh": "«safarnoma» — mavhum ot: u «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Qolgan javoblar boshqa guruhga oid: «toshloq», «oshxona» va «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#daf8688f"
+    },
+    {
+      "q": "Quyidagilardan qaysisi shaxs otiga misol bo'la oladi?",
+      "v": [
+        "tilshunos",
+        "kitobxona",
+        "guliston",
+        "terakzor"
+      ],
+      "t": 0,
+      "izoh": "«tilshunos» — shaxs oti: u «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi. Qolgan javoblar boshqa guruhga oid: «terakzor», «kitobxona» va «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#dd0ab586"
+    },
+    {
+      "q": "Berilganlardan qaysisi mavhum ot hisoblanadi?",
+      "v": [
+        "yaxshilik",
+        "zargar",
+        "temirchi",
+        "sabzavotchi"
+      ],
+      "t": 0,
+      "izoh": "«yaxshilik» — mavhum ot: u «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan javoblar boshqa guruhga oid: «zargar», «temirchi» va «sabzavotchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#873e9d35"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq o'rin-joy otiga oid?",
+      "v": [
+        "oshxona, paxtakor, kitobxona",
+        "gulzor, terakzor, toshloq",
+        "toshloq, olmazor, tinchlik",
+        "do'stlik, olmazor, terakzor"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham o'rin-joy oti: «gulzor» — «gul» asosiga «-zor» qo'shilishidan yasalgan va narsa ko'p bo'lgan joyni ataydi; «terakzor» — «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi; «toshloq» — «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi. Qolgan qatorlarga begona so'z aralashgan: «paxtakor» — shaxs oti; «tinchlik» va «do'stlik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#1a2594ff"
+    },
+    {
+      "q": "Qaysi qatorda faqat shaxs oti berilgan?",
+      "v": [
+        "terakzor, ishchi, bilimdon",
+        "aravakash, guliston, sabzavotchi",
+        "tilshunos, paxtakor, sabzavotchi",
+        "sinfdosh, bilimdon, do'stlik"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham shaxs oti: «tilshunos» — «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi; «paxtakor» — «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi; «sabzavotchi» — «sabzavot» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi. Qolgan qatorlarga begona so'z aralashgan: «terakzor» va «guliston» — o'rin-joy oti; «do'stlik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ecb60d5a"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham mavhum otga misol bo'ladi?",
+      "v": [
+        "aravakash, do'stlik, safarnoma",
+        "tinchlik, bolalik, do'stlik",
+        "oshxona, safarnoma, dehqonchilik",
+        "yaxshilik, dehqonchilik, paxtakor"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham mavhum ot: «tinchlik» — «tinch» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; xuddi shunday «bolalik» — «bola» va «-lik»; «do'stlik» — «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan qatorlarga begona so'z aralashgan: «aravakash» va «paxtakor» — shaxs oti; «oshxona» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#40494a04"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq o'rin-joy otiga oid?",
+      "v": [
+        "terakzor, gulzor, kitobxona",
+        "bolalik, olmazor, kitobxona",
+        "gulzor, kitobxona, yaxshilik",
+        "guliston, do'stlik, oshxona"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham o'rin-joy oti: «terakzor» — «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi; «gulzor» — «gul» asosiga «-zor» qo'shilishidan yasalgan va narsa ko'p bo'lgan joyni ataydi; «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan qatorlarga begona so'z aralashgan: «do'stlik», «bolalik» va «yaxshilik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#fe208bca"
+    },
+    {
+      "q": "Qaysi qatorda faqat o'rin-joy oti berilgan?",
+      "v": [
+        "oshxona, gulzor, kitobxona",
+        "ishchi, guliston, olmazor",
+        "zargar, terakzor, olmazor",
+        "sabzavotchi, gulzor, toshloq"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham o'rin-joy oti: «oshxona» — «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi; «gulzor» — «gul» asosiga «-zor» qo'shilishidan yasalgan va narsa ko'p bo'lgan joyni ataydi; «kitobxona» — «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan qatorlarga begona so'z aralashgan: «ishchi», «zargar» va «sabzavotchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#065f4ff7"
+    },
+    {
+      "q": "Qaysi qatorda faqat shaxs oti berilgan?",
+      "v": [
+        "bilimdon, gulzor, tilshunos",
+        "safarnoma, bog'bon, aravakash",
+        "aravakash, olmazor, kitobxon",
+        "tilshunos, aravakash, paxtakor"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham shaxs oti: «tilshunos» — «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi; «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi; «paxtakor» — «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi. Qolgan qatorlarga begona so'z aralashgan: «gulzor» va «olmazor» — o'rin-joy oti; «safarnoma» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#a476bc29"
+    },
+    {
+      "q": "Qaysi qatorda faqat shaxs oti berilgan?",
+      "v": [
+        "olmazor, sinfdosh, aravakash",
+        "tilshunos, dehqonchilik, bog'bon",
+        "kitobxona, sinfdosh, temirchi",
+        "zargar, aravakash, bog'bon"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham shaxs oti: «zargar» — «zar» asosiga «-gar» qo'shilishidan yasalgan va hunar egasi bo'lgan shaxsni ataydi; «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi; «bog'bon» — «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi. Qolgan qatorlarga begona so'z aralashgan: «olmazor» va «kitobxona» — o'rin-joy oti; «dehqonchilik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#257c38e7"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar mavhum ot sanaladi?",
+      "v": [
+        "yaxshilik, dehqonchilik, sabzavotchi",
+        "dehqonchilik, yaxshilik, temirchi",
+        "do'stlik, bolalik, bilimdon",
+        "bolalik, yaxshilik, safarnoma"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham mavhum ot: «bolalik» — «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; xuddi shunday «yaxshilik» — «yaxshi» va «-lik»; «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Qolgan qatorlarga begona so'z aralashgan: «sabzavotchi», «bilimdon» va «temirchi» — shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#34d893b1"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq shaxs otiga oid?",
+      "v": [
+        "kitobxona, temirchi, bog'bon",
+        "sabzavotchi, oshxona, sinfdosh",
+        "yaxshilik, ishchi, aravakash",
+        "aravakash, temirchi, ishchi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham shaxs oti: «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi; «temirchi» — «temir» asosiga «-chi» qo'shilishidan yasalgan va kasb egasi bo'lgan shaxsni ataydi; «ishchi» — «ish» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi. Qolgan qatorlarga begona so'z aralashgan: «kitobxona» va «oshxona» — o'rin-joy oti; «yaxshilik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#2b8620dc"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq mavhum otga oid?",
+      "v": [
+        "safarnoma, yaxshilik, do'stlik",
+        "dehqonchilik, bolalik, tilshunos",
+        "kitobxon, yaxshilik, bolalik",
+        "tinchlik, yaxshilik, guliston"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham mavhum ot: «safarnoma» — «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi; «yaxshilik» — «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi; «do'stlik» — «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan qatorlarga begona so'z aralashgan: «tilshunos» va «kitobxon» — shaxs oti; «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#ddfc86dc"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham shaxs otiga misol bo'ladi?",
+      "v": [
+        "bilimdon, kitobxon, do'stlik",
+        "paxtakor, aravakash, zargar",
+        "bog'bon, safarnoma, ishchi",
+        "guliston, aravakash, sinfdosh"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham shaxs oti: «paxtakor» — «paxta» asosiga «-kor» qo'shilishidan yasalgan va ish bilan shug'ullanuvchi shaxsni ataydi; «aravakash» — «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi; «zargar» — «zar» asosiga «-gar» qo'shilishidan yasalgan va hunar egasi bo'lgan shaxsni ataydi. Qolgan qatorlarga begona so'z aralashgan: «do'stlik» va «safarnoma» — mavhum ot; «guliston» — o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#f4a36227"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham o'rin-joy otiga misol bo'ladi?",
+      "v": [
+        "oshxona, paxtakor, olmazor",
+        "guliston, dehqonchilik, gulzor",
+        "toshloq, oshxona, terakzor",
+        "tinchlik, toshloq, oshxona"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham o'rin-joy oti: «toshloq» — «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi; «oshxona» — «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi; «terakzor» — «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan qatorlarga begona so'z aralashgan: «paxtakor» — shaxs oti; «dehqonchilik» va «tinchlik» — mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#4bd54e1f"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«guliston» — mavhum ot",
+        "«kitobxon» — mavhum ot",
+        "«yaxshilik» — shaxs oti",
+        "«ishchi» — shaxs oti"
+      ],
+      "t": 3,
+      "izoh": "«ishchi» — shaxs oti, chunki u «ish» asosiga «-chi» qo'shilishidan yasalgan va kasb egasini ataydi. Boshqa javoblarda baho chalkashtirilgan: «guliston» aslida o'rin-joy oti; «kitobxon» aslida shaxs oti; «yaxshilik» aslida mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#7924728a"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«terakzor» — mavhum ot",
+        "«kitobxona» — mavhum ot",
+        "«toshloq» — o'rin-joy oti",
+        "«bolalik» — shaxs oti"
+      ],
+      "t": 2,
+      "izoh": "«toshloq» — o'rin-joy oti, chunki u «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi. Boshqa javoblarda baho chalkashtirilgan: «terakzor» va «kitobxona» aslida o'rin-joy oti; «bolalik» aslida mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#9dcebbca"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«bolalik» — shaxs oti",
+        "«terakzor» — mavhum ot",
+        "«olmazor» — o'rin-joy oti",
+        "«guliston» — mavhum ot"
+      ],
+      "t": 2,
+      "izoh": "«olmazor» — o'rin-joy oti, chunki u «olma» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Boshqa javoblarda baho chalkashtirilgan: «bolalik» aslida mavhum ot; «terakzor» va «guliston» aslida o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#73fea3b8"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«zargar» — mavhum ot",
+        "«temirchi» — o'rin-joy oti",
+        "«sinfdosh» — mavhum ot",
+        "«do'stlik» — mavhum ot"
+      ],
+      "t": 3,
+      "izoh": "«do'stlik» — mavhum ot, chunki u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Boshqa javoblarda baho chalkashtirilgan: «zargar», «temirchi» va «sinfdosh» aslida shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b93d93ce"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«toshloq» — mavhum ot",
+        "«sinfdosh» — o'rin-joy oti",
+        "«oshxona» — o'rin-joy oti",
+        "«ishchi» — o'rin-joy oti"
+      ],
+      "t": 2,
+      "izoh": "«oshxona» — o'rin-joy oti, chunki u «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi. Boshqa javoblarda baho chalkashtirilgan: «sinfdosh» va «ishchi» aslida shaxs oti; «toshloq» aslida o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#6608c0b9"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«yaxshilik» — shaxs oti",
+        "«kitobxona» — mavhum ot",
+        "«safarnoma» — shaxs oti",
+        "«bolalik» — mavhum ot"
+      ],
+      "t": 3,
+      "izoh": "«bolalik» — mavhum ot, chunki u «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Boshqa javoblarda baho chalkashtirilgan: «yaxshilik» va «safarnoma» aslida mavhum ot; «kitobxona» aslida o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#4ab7a7a1"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«bog'bon» — shaxs oti",
+        "«gulzor» — mavhum ot",
+        "«olmazor» — shaxs oti",
+        "«tilshunos» — o'rin-joy oti"
+      ],
+      "t": 0,
+      "izoh": "«bog'bon» — shaxs oti, chunki u «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi. Boshqa javoblarda baho chalkashtirilgan: «gulzor» va «olmazor» aslida o'rin-joy oti; «tilshunos» aslida shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#67e253d2"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«toshloq» — mavhum ot",
+        "«gulzor» — mavhum ot",
+        "«bolalik» — shaxs oti",
+        "«oshxona» — o'rin-joy oti"
+      ],
+      "t": 3,
+      "izoh": "«oshxona» — o'rin-joy oti, chunki u «osh» asosiga «-xona» qo'shilishidan yasalgan va binoni ataydi. Boshqa javoblarda baho chalkashtirilgan: «gulzor» va «toshloq» aslida o'rin-joy oti; «bolalik» aslida mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#438641f2"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«dehqonchilik» — o'rin-joy oti",
+        "«yaxshilik» — shaxs oti",
+        "«tilshunos» — mavhum ot",
+        "«aravakash» — shaxs oti"
+      ],
+      "t": 3,
+      "izoh": "«aravakash» — shaxs oti, chunki u «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi. Boshqa javoblarda baho chalkashtirilgan: «yaxshilik» va «dehqonchilik» aslida mavhum ot; «tilshunos» aslida shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#de182221"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«paxtakor» — o'rin-joy oti",
+        "«kitobxona» — shaxs oti",
+        "«guliston» — o'rin-joy oti",
+        "«bolalik» — shaxs oti"
+      ],
+      "t": 2,
+      "izoh": "«guliston» — o'rin-joy oti, chunki u «gul» asosiga «-iston» qo'shilishidan yasalgan va narsa ko'p bo'lgan makonni ataydi. Boshqa javoblarda baho chalkashtirilgan: «paxtakor» aslida shaxs oti; «kitobxona» aslida o'rin-joy oti; «bolalik» aslida mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#caa948c7"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«sabzavotchi» — o'rin-joy oti",
+        "«toshloq» — o'rin-joy oti",
+        "«safarnoma» — shaxs oti",
+        "«olmazor» — mavhum ot"
+      ],
+      "t": 1,
+      "izoh": "«toshloq» — o'rin-joy oti, chunki u «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi. Boshqa javoblarda baho chalkashtirilgan: «sabzavotchi» aslida shaxs oti; «safarnoma» aslida mavhum ot; «olmazor» aslida o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#eac1d85d"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«bilimdon» — o'rin-joy oti",
+        "«kitobxon» — shaxs oti",
+        "«paxtakor» — mavhum ot",
+        "«safarnoma» — o'rin-joy oti"
+      ],
+      "t": 1,
+      "izoh": "«kitobxon» — shaxs oti, chunki u «kitob» asosiga «-xon» qo'shilishidan yasalgan va shaxsni ataydi. Boshqa javoblarda baho chalkashtirilgan: «bilimdon» va «paxtakor» aslida shaxs oti; «safarnoma» aslida mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m14-otlarning-yasalishi#cd4e612e"
+    },
+    {
+      "q": "«gulzor» so'zi qaysi qo'shimcha yordamida yasalgan?",
+      "v": [
+        "-lik",
+        "-shunos",
+        "-gar",
+        "-zor"
+      ],
+      "t": 3,
+      "izoh": "«gulzor» so'zi «gul» asosiga «-zor» qo'shilishidan hosil bo'lgan; bu qo'shimcha narsa ko'p bo'lgan joyni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#2d0b2c8f"
+    },
+    {
+      "q": "«aravakash» so'zining yasovchi qismini aniqlang.",
+      "v": [
+        "-bon",
+        "-lar",
+        "-gar",
+        "-kash"
+      ],
+      "t": 3,
+      "izoh": "«aravakash» so'zi «arava» asosiga «-kash» qo'shilishidan hosil bo'lgan; bu qo'shimcha ish quroli bilan ishlovchi shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#15004f3d"
+    },
+    {
+      "q": "«kitobxona» so'zining yasovchi qismini aniqlang.",
+      "v": [
+        "-xona",
+        "-da",
+        "-dosh",
+        "-chi"
+      ],
+      "t": 0,
+      "izoh": "«kitobxona» so'zi «kitob» asosiga «-xona» qo'shilishidan hosil bo'lgan; bu qo'shimcha ish bajariladigan binoni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#724d11b2"
+    },
+    {
+      "q": "«paxtakor» so'zi qaysi qo'shimcha yordamida yasalgan?",
+      "v": [
+        "-chilik",
+        "-gar",
+        "-kash",
+        "-kor"
+      ],
+      "t": 3,
+      "izoh": "«paxtakor» so'zi «paxta» asosiga «-kor» qo'shilishidan hosil bo'lgan; bu qo'shimcha ish bilan shug'ullanuvchi shaxsni ataydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#72391f02"
+    },
+    {
+      "q": "Uch qatorda faqat shaxs oti berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "zargar, kitobxon, paxtakor",
+        "paxtakor, kitobxon, sabzavotchi",
+        "do'stlik, tilshunos, paxtakor",
+        "sabzavotchi, temirchi, paxtakor"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «do'stlik» — mavhum ot: u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Yonidagi «paxtakor» va «tilshunos» esa shaxs oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#de7d5856"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri o'rin-joy oti emas?",
+      "v": [
+        "gulzor, oshxona, guliston",
+        "oshxona, toshloq, guliston",
+        "guliston, terakzor, olmazor",
+        "yaxshilik, kitobxona, olmazor"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «yaxshilik» — mavhum ot: u «yaxshi» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Yonidagi «kitobxona» va «olmazor» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#0835efb1"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida o'rin-joy oti bo'lmagan so'z bor?",
+      "v": [
+        "bolalik, olmazor, kitobxona",
+        "oshxona, gulzor, olmazor",
+        "terakzor, gulzor, kitobxona",
+        "toshloq, terakzor, guliston"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «bolalik» — mavhum ot: u «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Yonidagi «olmazor» va «kitobxona» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#823c7a3b"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq o'rin-joy otidan iborat emas?",
+      "v": [
+        "terakzor, kitobxona, olmazor",
+        "olmazor, kitobxona, safarnoma",
+        "oshxona, toshloq, kitobxona",
+        "gulzor, toshloq, kitobxona"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «safarnoma» — mavhum ot: u «safar» asosiga «-noma» qo'shilishidan yasalgan va yozma asar nomini atab keladi. Yonidagi «kitobxona» va «olmazor» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#47d7dcc1"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida o'rin-joy oti bo'lmagan so'z bor?",
+      "v": [
+        "gulzor, oshxona, olmazor",
+        "terakzor, kitobxona, guliston",
+        "kitobxona, dehqonchilik, terakzor",
+        "guliston, kitobxona, gulzor"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Yonidagi «kitobxona» va «terakzor» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b739350e"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq o'rin-joy otidan iborat emas?",
+      "v": [
+        "guliston, toshloq, olmazor",
+        "kitobxona, tilshunos, guliston",
+        "oshxona, guliston, kitobxona",
+        "terakzor, oshxona, toshloq"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «tilshunos» — shaxs oti: u «til» asosiga «-shunos» qo'shilishidan yasalgan va sohani biladigan mutaxassisni ataydi. Yonidagi «guliston» va «kitobxona» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#d565083c"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri o'rin-joy oti emas?",
+      "v": [
+        "toshloq, olmazor, oshxona",
+        "oshxona, kitobxona, olmazor",
+        "olmazor, gulzor, oshxona",
+        "kitobxona, toshloq, do'stlik"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «do'stlik» — mavhum ot: u «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Yonidagi «kitobxona» va «toshloq» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#eb88dcbd"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri shaxs oti emas?",
+      "v": [
+        "terakzor, ishchi, bog'bon",
+        "zargar, paxtakor, kitobxon",
+        "paxtakor, tilshunos, bog'bon",
+        "sabzavotchi, paxtakor, bog'bon"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «terakzor» — o'rin-joy oti: u «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Yonidagi «ishchi» va «bog'bon» esa shaxs oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#929d064f"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri shaxs oti emas?",
+      "v": [
+        "sabzavotchi, aravakash, zargar",
+        "terakzor, tilshunos, sinfdosh",
+        "kitobxon, bilimdon, ishchi",
+        "sinfdosh, bilimdon, temirchi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «terakzor» — o'rin-joy oti: u «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Yonidagi «sinfdosh» va «tilshunos» esa shaxs oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#80eab025"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq o'rin-joy otidan iborat emas?",
+      "v": [
+        "terakzor, kitobxona, gulzor",
+        "gulzor, terakzor, oshxona",
+        "oshxona, terakzor, gulzor",
+        "aravakash, oshxona, guliston"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «aravakash» — shaxs oti: u «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi. Yonidagi «oshxona» va «guliston» esa o'rin-joy oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#5acf1658"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri shaxs oti emas?",
+      "v": [
+        "bilimdon, ishchi, tilshunos",
+        "sinfdosh, bog'bon, bilimdon",
+        "paxtakor, sabzavotchi, sinfdosh",
+        "dehqonchilik, ishchi, temirchi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «dehqonchilik» — mavhum ot: u «dehqon» asosiga «-chilik» qo'shilishidan yasalgan va mashg'ulot sohasini atab keladi. Yonidagi «ishchi» va «temirchi» esa shaxs oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#b73f2a33"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida shaxs oti bo'lmagan so'z bor?",
+      "v": [
+        "temirchi, tilshunos, toshloq",
+        "sabzavotchi, kitobxon, bog'bon",
+        "bog'bon, kitobxon, zargar",
+        "ishchi, kitobxon, bog'bon"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «toshloq» — o'rin-joy oti: u «tosh» asosiga «-loq» qo'shilishidan yasalgan va shu narsaga boy bo'lgan yerni ataydi. Yonidagi «temirchi» va «tilshunos» esa shaxs oti. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#c9bbd8b0"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«terakzor» — mavhum ot",
+        "«olmazor» — o'rin-joy oti",
+        "«paxtakor» — shaxs oti",
+        "«do'stlik» — mavhum ot"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «terakzor» so'ziga mavhum ot deb baho berilgan, holbuki u — o'rin-joy oti: «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan javoblardagi baho o'rinli: «do'stlik» rostdan ham mavhum ot; «olmazor» rostdan ham o'rin-joy oti; «paxtakor» rostdan ham shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#890cc77c"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«paxtakor» — shaxs oti",
+        "«kitobxona» — shaxs oti",
+        "«tilshunos» — shaxs oti",
+        "«aravakash» — shaxs oti"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «kitobxona» so'ziga shaxs oti deb baho berilgan, holbuki u — o'rin-joy oti: «kitob» asosiga «-xona» qo'shilishidan yasalgan va ish bajariladigan binoni ataydi. Qolgan javoblardagi baho o'rinli: «paxtakor», «aravakash» va «tilshunos» rostdan ham shaxs oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#e592d541"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«dehqonchilik» — mavhum ot",
+        "«sinfdosh» — o'rin-joy oti",
+        "«yaxshilik» — mavhum ot",
+        "«kitobxona» — o'rin-joy oti"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «sinfdosh» so'ziga o'rin-joy oti deb baho berilgan, holbuki u — shaxs oti: «sinf» asosiga «-dosh» qo'shilishidan yasalgan va birgalikda ishtirok etuvchi shaxsni ataydi. Qolgan javoblardagi baho o'rinli: «dehqonchilik» va «yaxshilik» rostdan ham mavhum ot; «kitobxona» rostdan ham o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#f684a75d"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«zargar» — shaxs oti",
+        "«bilimdon» — shaxs oti",
+        "«temirchi» — mavhum ot",
+        "«tinchlik» — mavhum ot"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «temirchi» so'ziga mavhum ot deb baho berilgan, holbuki u — shaxs oti: «temir» asosiga «-chi» qo'shilishidan yasalgan va kasb egasi bo'lgan shaxsni ataydi. Qolgan javoblardagi baho o'rinli: «bilimdon» va «zargar» rostdan ham shaxs oti; «tinchlik» rostdan ham mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#d4367b52"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«temirchi» — shaxs oti",
+        "«kitobxona» — o'rin-joy oti",
+        "«terakzor» — shaxs oti",
+        "«dehqonchilik» — mavhum ot"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «terakzor» so'ziga shaxs oti deb baho berilgan, holbuki u — o'rin-joy oti: «terak» asosiga «-zor» qo'shilishidan yasalgan va joyni ataydi. Qolgan javoblardagi baho o'rinli: «kitobxona» rostdan ham o'rin-joy oti; «temirchi» rostdan ham shaxs oti; «dehqonchilik» rostdan ham mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#5706c202"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«temirchi» — shaxs oti",
+        "«yaxshilik» — mavhum ot",
+        "«aravakash» — mavhum ot",
+        "«ishchi» — shaxs oti"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «aravakash» so'ziga mavhum ot deb baho berilgan, holbuki u — shaxs oti: «arava» asosiga «-kash» qo'shilishidan yasalgan va ish quroli bilan ishlovchi shaxsni ataydi. Qolgan javoblardagi baho o'rinli: «temirchi» va «ishchi» rostdan ham shaxs oti; «yaxshilik» rostdan ham mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#25513c90"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«tinchlik» — mavhum ot",
+        "«do'stlik» — o'rin-joy oti",
+        "«oshxona» — o'rin-joy oti",
+        "«bolalik» — mavhum ot"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «do'stlik» so'ziga o'rin-joy oti deb baho berilgan, holbuki u — mavhum ot: «do'st» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani atab keladi. Qolgan javoblardagi baho o'rinli: «tinchlik» va «bolalik» rostdan ham mavhum ot; «oshxona» rostdan ham o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#c644dbba"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«do'stlik» — mavhum ot",
+        "«bolalik» — o'rin-joy oti",
+        "«olmazor» — o'rin-joy oti",
+        "«sabzavotchi» — shaxs oti"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «bolalik» so'ziga o'rin-joy oti deb baho berilgan, holbuki u — mavhum ot: «bola» asosiga «-lik» qo'shilishidan yasalgan va mavhum tushunchani ataydi. Qolgan javoblardagi baho o'rinli: «do'stlik» rostdan ham mavhum ot; «sabzavotchi» rostdan ham shaxs oti; «olmazor» rostdan ham o'rin-joy oti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#1fb42c58"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«tilshunos» — shaxs oti",
+        "«bog'bon» — o'rin-joy oti",
+        "«sinfdosh» — shaxs oti",
+        "«yaxshilik» — mavhum ot"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «bog'bon» so'ziga o'rin-joy oti deb baho berilgan, holbuki u — shaxs oti: «bog'» asosiga «-bon» qo'shilishidan yasalgan va shu joyga qaraydigan shaxsni ataydi. Qolgan javoblardagi baho o'rinli: «tilshunos» va «sinfdosh» rostdan ham shaxs oti; «yaxshilik» rostdan ham mavhum ot.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m14-otlarning-yasalishi#0278acc5"
+    }
+  ]
+}

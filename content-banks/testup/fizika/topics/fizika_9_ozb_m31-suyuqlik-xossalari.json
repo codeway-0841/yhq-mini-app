@@ -1,0 +1,606 @@
+{
+  "nom": "31-mavzu. Suyuqlik Xossalari",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Gaz molekulalari orasidagi tortishish kuchlari kichik bo'lishining sababi nima?",
+      "v": [
+        "Molekulalar bir-biridan o'z o'lchamiga nisbatan juda katta masofalarda joylashgan",
+        "Gaz molekulalari juda kichik massaga ega",
+        "Gaz molekulalari harakatsiz turadi",
+        "Gaz molekula tezligi juda kichik"
+      ],
+      "t": 0,
+      "izoh": "Gaz molekulalari orasidagi masofa ularning o'lchamidan ancha katta bo'lgani uchun tortishish kuchlari hisobga olinmas darajada kichik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#ef55f4c4"
+    },
+    {
+      "q": "Gazning erkin sirti bo'lmaydi, chunki...",
+      "v": [
+        "molekulalar orasidagi tortishish kuchlari kichik bo'lib, molekulalar bir-biridan uzoqlashib ketadi",
+        "gaz molekulalari bir-biriga tegib turadi",
+        "gaz har doim idish shaklini oladi",
+        "gaz molekulalari tortishish kuchiga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Tortishish kuchlarining kichikligi gaz molekulalarining bir-biridan uzoqlashib ketishiga, ya'ni gazning kengayishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#5b3b50e4"
+    },
+    {
+      "q": "Suyuqlik molekulalari qanday joylashgan?",
+      "v": [
+        "Deyarli bir-biriga tegib turadi",
+        "Bir-biridan juda uzoq masofada",
+        "Qat'iy kristall panjara tugunlarida",
+        "Tasodifiy va juda siyrak"
+      ],
+      "t": 0,
+      "izoh": "Suyuqliklarda molekulalar deyarli bir-biriga tegib turadi, shuning uchun o'zaro ta'sir kuchlari gazdagiga nisbatan katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#73444898"
+    },
+    {
+      "q": "Suyuqlik o'z hajmini saqlaydi, chunki...",
+      "v": [
+        "molekulalari orasidagi tortishish kuchi ularning bir-biridan uzoqlashib ketishiga yo'l qo'ymaydi",
+        "suyuqlik molekulalari harakatlanmaydi",
+        "suyuqlik og'irlik kuchiga ega emas",
+        "suyuqlik zichligi juda kichik"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik molekulalari orasidagi tortishish kuchi molekulalarni bir-biridan uzoqlashib ketishiga yo'l qo'ymaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#d28f7a11"
+    },
+    {
+      "q": "Suyuqlikning oquvchanligi deganda nima tushuniladi?",
+      "v": [
+        "Suyuqlikning o'z shaklini saqlab qola olmasligi, idish shaklini olishi",
+        "Suyuqlikning o'z hajmini yo'qotishi",
+        "Suyuqlikning bug'lanishi",
+        "Suyuqlikning qattiq holatga o'tishi"
+      ],
+      "t": 0,
+      "izoh": "Suyuqliklar oquvchanlik xususiyati tufayli o'z shaklini saqlab qola olmaydi, ammo o'z hajmini saqlab qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#55e9f2d9"
+    },
+    {
+      "q": "Idish og'dirilganda suyuqlik qaysi tomonga oqadi?",
+      "v": [
+        "Og'irlik kuchi ta'sirida idish og'dirilgan tomonga",
+        "Yuqori tomonga",
+        "Sirt taranglik kuchi tomonga",
+        "Molekulalararo tortishish kuchi tomonga"
+      ],
+      "t": 0,
+      "izoh": "Idish og'dirilsa, suyuqlik og'irlik kuchi ta'sirida idish og'dirilgan tomonga oqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#62677929"
+    },
+    {
+      "q": "Suyuqlik idishda muvozanat holatida turishining sababi nima?",
+      "v": [
+        "Pastga og'irlik kuchi ta'sir qiladi, osti va yon tomonlari esa devorlar bilan to'silgan",
+        "Sirt taranglik kuchi uni ushlab turadi",
+        "Molekulalar harakatsiz",
+        "Suyuqlik zichligi havo zichligidan kichik"
+      ],
+      "t": 0,
+      "izoh": "Idishdagi suyuqlikka pastga og'irlik kuchi ta'sir qiladi, suyuqlik osti va yon tomonlari devorlar bilan to'silgani uchun muvozanatda bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#924b4171"
+    },
+    {
+      "q": "Suyuqlik ichidagi A nuqtadagi molekulaga qarama-qarshi tomonlardan ta'sir qiluvchi kuchlar...",
+      "v": [
+        "bir-birini muvozanatlaydi, teng ta'sir etuvchi nolga teng",
+        "faqat yuqoriga yo'nalgan",
+        "faqat pastga yo'nalgan",
+        "faqat yon tomonlarga yo'nalgan"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik ichidagi molekulaga qarama-qarshi tomonlardan ta'sir qilayotgan kuchlar bir-birini muvozanatlaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#90f5290f"
+    },
+    {
+      "q": "Suyuqlik sirtidagi B nuqtadagi molekulaga qanday kuchlar ta'sir qiladi?",
+      "v": [
+        "Pastdan va yon tomondan kuchlar ta'sir qiladi",
+        "Barcha tomonlardan bir xil kuch ta'sir qiladi",
+        "Faqat yuqoridan kuch ta'sir qiladi",
+        "Hech qanday kuch ta'sir qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlikning ustki tomoni havo bilan chegaralanganligi uchun sirt molekulasiga pastdan va yon tomondan kuchlar ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#308590a7"
+    },
+    {
+      "q": "Suyuqlik sirtidagi molekula qayerga tortiladi?",
+      "v": [
+        "Suyuqlik ichiga qarab",
+        "Yuqoriga, havoga qarab",
+        "Yon tomonlarga qarab",
+        "Hech qayerga tortilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Sirtidagi molekulaga yuqori tomondan kuch ta'sir qilmagani uchun u suyuqlik ichiga qarab tortiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#bc7681cf"
+    },
+    {
+      "q": "Suyuqlik sirtining taranglashishiga nima sabab bo'ladi?",
+      "v": [
+        "Sirt molekulalarining suyuqlik ichiga qarab tortilishi",
+        "Og'irlik kuchining ta'siri",
+        "Havo bosimining ta'siri",
+        "Suyuqlikning harorati"
+      ],
+      "t": 0,
+      "izoh": "Sirt molekulalarining ichkariga tortilishi suyuqlik sirtining taranglashishiga olib keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#b19bccdf"
+    },
+    {
+      "q": "Suv sirtiga ehtiyotlik bilan metall igna qo'yilsa, igna nega cho'kmaydi?",
+      "v": [
+        "Suvning sirtida sirt taranglik mavjud bo'lib, sirt parda egilib ignani ko'tarib turadi",
+        "Ignaning zichligi suvdan kichik",
+        "Iynani Arximed kuchi ko'tarib turadi",
+        "Iyna juda yengil bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "Suvning sirt pardasi biroz egilib, ignani cho'ktirmay ko'tarib turadi; bunga sabab sirt taranglikning mavjudligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#da92ed9e"
+    },
+    {
+      "q": "Jo'mrak og'zida hosil bo'lgan tomchi nimaga o'xshatiladi?",
+      "v": [
+        "Elastik xaltachaga",
+        "Shar simonga",
+        "Qattiq sharikka",
+        "Kapillyar nayga"
+      ],
+      "t": 0,
+      "izoh": "Jo'mrak og'zida hosil bo'lgan tomchi sirt pardasida bo'lib, uni elastik xaltachaga o'xshatish mumkin; tomchi kattalashganda xaltacha uni ko'tarib turishga mustahkamligi yetishmay, tomchi uziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#af2d878f"
+    },
+    {
+      "q": "Sirt taranglik kuchi qanday yuzaga keladi?",
+      "v": [
+        "Tomchining sirt qatlamidagi har bir molekulaga tomchi ichiga yo'nalgan kuch ta'sir qilishi natijasida",
+        "Og'irlik kuchi tufayli",
+        "Havo bosimi tufayli",
+        "Suyuqlikning oqishi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Tomchining sirt qatlamidagi har bir molekulaga tomchi ichiga yo'nalgan kuch ta'sir qiladi; bunday kuchlar natijasida sirt taranglik kuchi vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#fa17ba02"
+    },
+    {
+      "q": "Sirt taranglik kuchi qaysi kattaliklarga proportsional?",
+      "v": [
+        "Sirt qatlamini chegaralovchi chiziq uzunligiga va suyuqlik turiga",
+        "Suyuqlik hajmiga va zichligiga",
+        "Suyuqlik massasiga va haroratiga",
+        "Idish yuzasiga va chuqurlikka"
+      ],
+      "t": 0,
+      "izoh": "F = σ·l: sirt taranglik kuchi chegaralovchi chiziq uzunligiga proportsional hamda suyuqlik turiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#aad8020a"
+    },
+    {
+      "q": "Sirt taranglik kuchining formulasi qaysi?",
+      "v": [
+        "F = σ·l",
+        "F = σ/S",
+        "F = m·g",
+        "F = ρ·g·h"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi F = σ·l formula bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#a71def10"
+    },
+    {
+      "q": "Sirt taranglik koeffitsiyenti (σ) nima?",
+      "v": [
+        "Suyuqlikning tabiatiga bog'liq bo'lib, suyuqlik sirtining xossalarini xarakterlovchi kattalik",
+        "Suyuqlik hajmini xarakterlovchi kattalik",
+        "Suyuqlik zichligini xarakterlovchi kattalik",
+        "Suyuqlik haroratini xarakterlovchi kattalik"
+      ],
+      "t": 0,
+      "izoh": "σ — suyuqlikning tabiatiga bog'liq bo'lgan, suyuqlik sirtining xossalarini xarakterlovchi kattalik bo'lib, sirt taranglik koeffitsiyenti deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#f5ff1ef5"
+    },
+    {
+      "q": "Sirt taranglik koeffitsiyentining fizik ma'nosi nima?",
+      "v": [
+        "Sirtni chegaralovchi chiziqning uzunlik birligiga ta'sir qiluvchi sirt taranglik kuchiga son jihatidan teng fizik kattalik",
+        "Suyuqlik birlik hajmiga to'g'ri keladigan massaga teng kattalik",
+        "Birlik yuzaga ta'sir qiluvchi bosimga teng kattalik",
+        "Birlik hajmdagi energiyaga teng kattalik"
+      ],
+      "t": 0,
+      "izoh": "σ = F/l ga ko'ra: sirtni chegaralovchi chiziqning uzunlik birligiga ta'sir qiluvchi sirt taranglik kuchiga son jihatidan teng fizik kattalik — sirt taranglik koeffitsiyenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#bb939007"
+    },
+    {
+      "q": "Sirt taranglik koeffitsiyentining Xalqaro birliklar sistemasidagi birligi qaysi?",
+      "v": [
+        "N/m",
+        "N·m",
+        "J/kg",
+        "Pa"
+      ],
+      "t": 0,
+      "izoh": "σ = F/l dan σ ning birligi [N/m] ekanligi ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#63ea3c40"
+    },
+    {
+      "q": "σ = W/S ifodadan sirt taranglik koeffitsiyentining birligi qanday ifodalanishi mumkin?",
+      "v": [
+        "J/m²",
+        "N/m²",
+        "W/m",
+        "J·m"
+      ],
+      "t": 0,
+      "izoh": "(6) ifodaga ko'ra σ ning birligi Xalqaro birliklar sistemasida [J/m²] da ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#53d8816a"
+    },
+    {
+      "q": "Sirt taranglik kuchi suyuqlik sirtini qanday o'zgartirishga intiladi?",
+      "v": [
+        "Chegaralab turgan sirtni mumkin qadar kichiklashtiradi",
+        "Sirtni mumkin qadar kattalashtiradi",
+        "Sirtni o'zgartirmaydi",
+        "Sirtni tekislaydi"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi suyuqlik sirtini chegaralab turgan sirtni mumkin qadar kichiklashtiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#418637f1"
+    },
+    {
+      "q": "Erkin tushayotgan yomg'ir tomchilari qanday shaklda bo'ladi?",
+      "v": [
+        "Shar shaklida",
+        "Kub shaklida",
+        "Prizma shaklida",
+        "Ellipsoid shaklida"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi sirtni kichiklashtirgani uchun erkin tushayotgan yomg'ir tomchilari shar shaklida bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#7c849262"
+    },
+    {
+      "q": "Vaznsizlik sharoitida kosmik kemadagi katta massadagi suv qanday shakl oladi?",
+      "v": [
+        "Shar shaklida",
+        "Idish shaklida",
+        "Kub shaklida",
+        "Yupqa qatlam shaklida"
+      ],
+      "t": 0,
+      "izoh": "43-rasmda vaznsizlik sharoitida kosmik kema ichida hatto katta massadagi suv ham shar shaklida bo'lishi tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#fbbb0a07"
+    },
+    {
+      "q": "Sirt taranglik koeffitsiyentini aniqlashning eng sodda usuli qaysi?",
+      "v": [
+        "Tomchi uzilish usuli",
+        "Kapillyar ko'tarilish usuli",
+        "Arximed kuchi usuli",
+        "Gidravlik press usuli"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik koeffitsiyentini aniqlashning eng sodda usuli tomchi uzilish usulidir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#5900b4de"
+    },
+    {
+      "q": "Tomchi kichik bo'lganda u naycha uchidan nega ajralmaydi?",
+      "v": [
+        "Uni sirt taranglik kuchi tutib turadi",
+        "Uni havo bosimi tutib turadi",
+        "Uni Arximed kuchi tutib turadi",
+        "Uni ishquv kuchi tutib turadi"
+      ],
+      "t": 0,
+      "izoh": "Tomchi kichik bo'lganda uni sirt taranglik kuchi tutib turadi, shuning uchun u naycha uchidan ajralmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#7cc1b8fe"
+    },
+    {
+      "q": "Tomchi qachon uziladi?",
+      "v": [
+        "Tomchi og'irligi (m₀·g) sirt taranglik kuchiga (σ·l) son jihatidan tenglashgach",
+        "Tomchi harorati ko'tarilgach",
+        "Naycha zichroganda",
+        "Suyuqlik bug'langach"
+      ],
+      "t": 0,
+      "izoh": "Tomchi kattalashib, uning og'irligi sirt taranglik kuchiga son jihatidan tenglashgach u uziladi: m₀g = σl.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#d17a2937"
+    },
+    {
+      "q": "Tomchi uzilish usulida sirt taranglik koeffitsiyenti qanday hisoblanadi?",
+      "v": [
+        "σ = m₀·g / l",
+        "σ = F·l",
+        "σ = ρ·g·h",
+        "σ = F·S"
+      ],
+      "t": 0,
+      "izoh": "(4) ifodaga ko'ra σ = m₀g/l, bu yerda m₀ — bir dona suyuqlik tomchisining massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#4de71b73"
+    },
+    {
+      "q": "m₀g = σl tenglamadagi m₀ nimani bildiradi?",
+      "v": [
+        "Bir dona suyuqlik tomchisining massasini",
+        "Suyuqlikning umumiy massasini",
+        "Idish massasini",
+        "Naycha massasini"
+      ],
+      "t": 0,
+      "izoh": "m₀ — bir dona suyuqlik tomchisining massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#c7daf307"
+    },
+    {
+      "q": "20 °C da simobning sirt taranglik koeffitsiyenti qancha?",
+      "v": [
+        "0,47 N/m",
+        "0,073 N/m",
+        "0,04 N/m",
+        "0,022 N/m"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra simob uchun σ = 0,47 N/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#793bf7ad"
+    },
+    {
+      "q": "20 °C da suvning sirt taranglik koeffitsiyenti qancha?",
+      "v": [
+        "0,073 N/m",
+        "0,47 N/m",
+        "0,033 N/m",
+        "0,024 N/m"
+      ],
+      "t": 0,
+      "izoh": "Jadvalga ko'ra suv uchun σ = 0,073 N/m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#bd74f5c2"
+    },
+    {
+      "q": "Jadval bo'yicha sirt taranglik koeffitsiyenti eng kichik bo'lgan suyuqlik qaysi?",
+      "v": [
+        "Etil spirti (0,022 N/m)",
+        "Kerosin (0,024 N/m)",
+        "O'simlik yog'i (0,033 N/m)",
+        "Sovunli eritma (0,04 N/m)"
+      ],
+      "t": 0,
+      "izoh": "Etil spirti uchun σ = 0,022 N/m — jadvaldagi eng kichik qiymat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#c706941c"
+    },
+    {
+      "q": "Sirt energiyasi deganda nima tushuniladi?",
+      "v": [
+        "Sirtidagi barcha molekulalarning suyuqlik hajmidagi molekulalarga nisbatan ortiqcha potensial energiyasi",
+        "Suyuqlikning to'liq kinetik energiyasi",
+        "Suyuqlikning ichki energiyasi",
+        "Sirt molekulalarining kinetik energiyasi"
+      ],
+      "t": 0,
+      "izoh": "Sirtidagi barcha molekulalarning suyuqlik hajmidagi molekulalarga nisbatan ortiqcha potensial energiyasi sirt energiyasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#97c24643"
+    },
+    {
+      "q": "Sirt qatlamidagi molekulalar nima uchun ortiqcha potensial energiyaga ega?",
+      "v": [
+        "Sirt taranglik kuchi hisobiga",
+        "Og'irlik kuchi hisobiga",
+        "Havo bosimi hisobiga",
+        "Molekulalarning tezligi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi hisobiga suyuqlik sirti qatlamidagi molekulalar ichidagi molekulalarga qaraganda ortiqcha potensial energiyaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#78610654"
+    },
+    {
+      "q": "Sirt energiyasining miqdori nimaga to'g'ri proportsional?",
+      "v": [
+        "Suyuqlik sirtining kattaligiga (S)",
+        "Suyuqlik hajmiga",
+        "Suyuqlik massasiga",
+        "Idish chuqurligiga"
+      ],
+      "t": 0,
+      "izoh": "Sirt energiyasining miqdori suyuqlik sirtining kattaligiga (S) to'g'ri proportsional: W = σS.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#512d01ab"
+    },
+    {
+      "q": "Sirt energiyasining formulasi qaysi?",
+      "v": [
+        "W = σ·S",
+        "W = m·g·h",
+        "W = F·l",
+        "W = ρ·V"
+      ],
+      "t": 0,
+      "izoh": "Sirt energiyasi W = σS formula bilan ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#603655d1"
+    },
+    {
+      "q": "σ = W/S ifodaning fizik ma'nosi nima?",
+      "v": [
+        "Sirt taranglik koeffitsiyenti suyuqlik sirtining yuza birligiga to'g'ri keladigan sirt energiyasiga teng",
+        "Sirt taranglik koeffitsiyenti birlik hajmdagi massaga teng",
+        "Sirt taranglik koeffitsiyenti birlik yuzadagi bosimga teng",
+        "Sirt taranglik koeffitsiyenti tomchi massasiga teng"
+      ],
+      "t": 0,
+      "izoh": "(6) ifodaga ko'ra sirt taranglik koeffitsiyenti son jihatidan suyuqlik sirtining yuza birligiga to'g'ri keladigan sirt energiyasiga teng fizik kattalikdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#0cb4e8be"
+    },
+    {
+      "q": "Mayda shudring tomchilarining shakli deyarli sharsimon bo'lishining sababi nima?",
+      "v": [
+        "Sirt taranglik kuchi sirtni mumkin qadar kichiklashtirishi",
+        "Tomchilarning og'irligi katta bo'lishi",
+        "Havo qarshiligi ta'siri",
+        "Tomchilarning tez tushishi"
+      ],
+      "t": 0,
+      "izoh": "Sirt taranglik kuchi suyuqlik sirtini mumkin qadar kichiklashtiradi, shuning uchun mayda tomchilar deyarli sharsimon bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#6fcfec30"
+    },
+    {
+      "q": "Plastilindan yasalgan diametri 3 mm atrofidagi sharcha suv ustida cho'kmasligi nimani isbotlaydi?",
+      "v": [
+        "Sirt taranglik kuchining mavjudligini",
+        "Arximed kuchining kattaligini",
+        "Plastilin zichligi suvdan kichikligini",
+        "Suvning ho'llash xususiyatini"
+      ],
+      "t": 0,
+      "izoh": "Tajribada plastilin sharchani suv sirti cho'ktirmay ko'tarib turadi — bu sirt taranglikning mavjudligidan dalolat beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#3aa7d6ee"
+    },
+    {
+      "q": "Suyuqlik sirti tekis ko'rinishining molekulyar sababi nima?",
+      "v": [
+        "Sirt molekulalarining ichkariga tortilishi natijasida sirt taranglashishi",
+        "Suyuqlik molekulalarining harakatsizligi",
+        "Og'irlik kuchining yo'qligi",
+        "Suyuqlik zichligining bir xilligi"
+      ],
+      "t": 0,
+      "izoh": "Sirt molekulalari ichkariga tortilib sirt taranglashadi, shuning uchun sirt tekis ko'rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#cdb6dab1"
+    },
+    {
+      "q": "Sovunli eritmaning sirt taranglik koeffitsiyenti (0,04 N/m) suvnikidan (0,073 N/m) kichik. Bu qanday xulosa qilishga imkon beradi?",
+      "v": [
+        "Sovunli eritmada sirt taranglik kuchi bir xil chegara uzunligida suvnikiga nisbatan kichikroq",
+        "Sovunli eritma suvga nisbatan zichroq",
+        "Sovunli eritma yaxshiroq bug'lanadi",
+        "Sovunli eritmada molekulalar harakatsiz"
+      ],
+      "t": 0,
+      "izoh": "σ = F/l ga ko'ra, bir xil l uchun σ kichikroq bo'lsa, sirt taranglik kuchi ham kichikroq bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m31-suyuqlik-xossalari#aeffe8e4"
+    }
+  ]
+}

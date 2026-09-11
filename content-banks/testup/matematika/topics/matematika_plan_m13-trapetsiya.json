@@ -1,0 +1,1609 @@
+{
+  "nom": "Trapetsiya",
+  "bolim": "Planimetriya",
+  "blok": "plan",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Bog'dagi trapetsiya shaklidagi gulzorning parallel tomonlari 14 m va 22 m. Shu gulzorning o'rta chizig'i necha metrga teng?",
+      "v": [
+        "18 m",
+        "36 m",
+        "8 m",
+        "4 m"
+      ],
+      "t": 0,
+      "izoh": "Trapetsiya o'rta chizig'i asoslarning yarim yig'indisiga teng. Demak m = (14 + 22) : 2 = 36 : 2 = 18 m. Asoslar yig'indisining o'zi (36 m) javob emas, uni ikkiga bo'lish shart.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,195 87,105 213,105 249,195' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='69' y1='150' x2='231' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='61' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='239' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='211' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='211' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='80' y='98' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='220' y='98' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='213' font-size='13' fill='%23334155' text-anchor='middle'%3E22 m%3C/text%3E%3Ctext x='150' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-asoslardan",
+      "id": "matematika_plan_m13-trapetsiya#7c1f9c30"
+    },
+    {
+      "q": "Aziz uyining tomiga trapetsiya shaklidagi qoplama tayyorlamoqda. Qoplamaning parallel qirralari 15 m va 9 m bo'lsa, o'rta chizig'i qancha?",
+      "v": [
+        "24 m",
+        "6 m",
+        "12 m",
+        "3 m"
+      ],
+      "t": 2,
+      "izoh": "O'rta chiziq formulasi: m = (a + b) : 2. Bu yerda m = (15 + 9) : 2 = 24 : 2 = 12 m. Ayirmadan foydalanish (15 − 9 = 6) noto'g'ri usul.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,196.2 90.6,103.8 209.4,103.8 249,196.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70.8' y1='150' x2='229.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='237.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='212.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='212.2' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='96.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='96.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='214.2' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3Ctext x='150' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-asoslardan",
+      "id": "matematika_plan_m13-trapetsiya#9ebb026e"
+    },
+    {
+      "q": "Sug'orish kanalining ko'ndalang kesimi trapetsiya shaklida: tub kengligi 3,2 m, yuqori kengligi esa 5,6 m. Kesimning o'rta chizig'i necha metr?",
+      "v": [
+        "8,8 m",
+        "4,4 m",
+        "2,4 m",
+        "1,2 m"
+      ],
+      "t": 1,
+      "izoh": "Kesim trapetsiyasining asoslari 5,6 m va 3,2 m. O'rta chiziq m = (5,6 + 3,2) : 2 = 8,8 : 2 = 4,4 m. Ikkiga bo'lish qadamini tashlab ketsak 8,8 m chiqadi, bu xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='93.4,192.4 51,107.6 249,107.6 206.6,192.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='72.2' y1='150' x2='227.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='64.2' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='235.8' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='86.4' y='208.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='213.6' y='208.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='100.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='256' y='100.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='210.4' font-size='13' fill='%23334155' text-anchor='middle'%3E3,2 m%3C/text%3E%3Ctext x='150' y='98.6' font-size='13' fill='%23334155' text-anchor='middle'%3E5,6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-asoslardan",
+      "id": "matematika_plan_m13-trapetsiya#8cf8c77b"
+    },
+    {
+      "q": "Maktab ustaxonasida yasalgan stol usti trapetsiya shaklida: parallel qirralari 100 sm va 60 sm. Stol ustining o'rta chizig'i necha santimetr?",
+      "v": [
+        "160 sm",
+        "40 sm",
+        "20 sm",
+        "80 sm"
+      ],
+      "t": 3,
+      "izoh": "Asoslar 100 sm va 60 sm. O'rta chiziq m = (100 + 60) : 2 = 160 : 2 = 80 sm. Javob har doim ikki asosning orasida yotadi, shuning uchun 160 sm bo'lishi mumkin emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194.6 90.6,105.5 209.4,105.5 249,194.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70.8' y1='150' x2='229.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='237.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='210.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='98.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='98.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3E100 sm%3C/text%3E%3Ctext x='150' y='96.4' font-size='13' fill='%23334155' text-anchor='middle'%3E60 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-asoslardan",
+      "id": "matematika_plan_m13-trapetsiya#4ef19a08"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 13 sm va 7 sm ga teng bo'lsa, uning o'rta chizig'i necha santimetr uzunlikda bo'ladi?",
+      "v": [
+        "20 sm",
+        "6 sm",
+        "10 sm",
+        "3 sm"
+      ],
+      "t": 2,
+      "izoh": "O'rta chiziq asoslarning yarim yig'indisi: m = (13 + 7) : 2 = 20 : 2 = 10 sm. Ayirmaning yarmi (3 sm) — bu diagonallar orasidagi bo'lak, o'rta chiziq emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,195.7 96.7,104.3 203.3,104.3 249,195.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='73.8' y1='150' x2='226.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='65.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='234.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='211.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='211.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='89.7' y='97.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='210.3' y='97.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='150' y='95.3' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-asoslardan",
+      "id": "matematika_plan_m13-trapetsiya#1dd6cc18"
+    },
+    {
+      "q": "Yo'l chetidagi trapetsiya shaklidagi belgi taxtasining o'rta chizig'i 15 sm, kichik asosi esa 11 sm. Taxtaning katta asosi necha santimetr?",
+      "v": [
+        "19 sm",
+        "26 sm",
+        "4 sm",
+        "30 sm"
+      ],
+      "t": 0,
+      "izoh": "m = (a + b) : 2 formulasidan a + b = 2m = 2 · 15 = 30 sm. Demak katta asos a = 30 − 11 = 19 sm. O'rta chiziqqa kichik asosni qo'shish (26 sm) formulani buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,196.9 92.7,103.1 207.3,103.1 249,196.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='71.8' y1='150' x2='228.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='63.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='236.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='44' y='212.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='212.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='85.7' y='96.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='214.3' y='96.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='214.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='94.1' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-orta-chiziqdan",
+      "id": "matematika_plan_m13-trapetsiya#994f4e9c"
+    },
+    {
+      "q": "Ariqning trapetsiya shaklidagi kesimida o'rta chiziq 24 sm, katta asos 31 sm ni tashkil qiladi. Kichik asos uzunligi qancha?",
+      "v": [
+        "7 sm",
+        "55 sm",
+        "48 sm",
+        "17 sm"
+      ],
+      "t": 3,
+      "izoh": "Asoslar yig'indisi a + b = 2 · 24 = 48 sm. Kichik asos b = 48 − 31 = 17 sm. Faqat ayirma olish (31 − 24 = 7) o'rta chiziq formulasiga mos kelmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,188.3 95.7,111.7 204.3,111.7 249,188.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='73.4' y1='150' x2='226.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='65.4' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='234.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='44' y='204.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='204.3' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88.7' y='104.7' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='211.3' y='104.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='206.3' font-size='13' fill='%23334155' text-anchor='middle'%3E31 sm%3C/text%3E%3Ctext x='150' y='102.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-orta-chiziqdan",
+      "id": "matematika_plan_m13-trapetsiya#5315d9ef"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i 12,5 sm, asoslaridan biri 9 sm ga teng. Ikkinchi asosning uzunligi necha santimetr?",
+      "v": [
+        "21,5 sm",
+        "16 sm",
+        "3,5 sm",
+        "25 sm"
+      ],
+      "t": 1,
+      "izoh": "Asoslar yig'indisi 2 · 12,5 = 25 sm ga teng. Noma'lum asos 25 − 9 = 16 sm. E'tibor bering: 25 sm — bu ikkala asosning yig'indisi, bitta asos emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 94.3,100.5 205.7,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='72.7' y1='150' x2='227.3' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='64.7' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='235.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12,5 sm%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='87.3' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212.7' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-orta-chiziqdan",
+      "id": "matematika_plan_m13-trapetsiya#3e8f1070"
+    },
+    {
+      "q": "Nodira devordagi trapetsiya shaklidagi ramkani o'lchadi: o'rta chizig'i 40 sm, yuqori asosi 28 sm. Ramkaning pastki asosi necha santimetr?",
+      "v": [
+        "68 sm",
+        "52 sm",
+        "12 sm",
+        "80 sm"
+      ],
+      "t": 1,
+      "izoh": "Ikki asos yig'indisi 2 · 40 = 80 sm bo'ladi. Pastki asos 80 − 28 = 52 sm. 80 sm ni javob deb olish — oxirgi ayirish qadamini tashlab ketish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,195.7 96.7,104.3 203.3,104.3 249,195.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='73.8' y1='150' x2='226.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='65.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='234.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='44' y='211.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='211.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='89.7' y='97.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='210.3' y='97.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='213.7' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='95.3' font-size='13' fill='%23334155' text-anchor='middle'%3E28 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-orta-chiziqdan",
+      "id": "matematika_plan_m13-trapetsiya#69622628"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i 9 sm, yon tomonlari esa 5 sm va 7 sm. Shu trapetsiyaning perimetri necha santimetrga teng?",
+      "v": [
+        "21 sm",
+        "24 sm",
+        "42 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "Asoslar yig'indisi a + b = 2 · 9 = 18 sm. Perimetr esa asoslar bilan yon tomonlarning yig'indisi: P = 18 + 5 + 7 = 30 sm. O'rta chiziqni ikkilantirmaslik 21 sm degan xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,188 107.1,112.1 206.1,112.1 249,188' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.1' y1='150' x2='227.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.1' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='235.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='153.3' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='44' y='204' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='204' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='100.1' y='105.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='213.1' y='105.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='55.1' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='251.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#ad5e0dc0"
+    },
+    {
+      "q": "Karim trapetsiya shaklidagi gulzorni sim to'siq bilan o'rab chiqmoqchi. Gulzorning o'rta chizig'i 6 m, yon tomonlari 4 m va 5 m. Necha metr sim kerak?",
+      "v": [
+        "21 m",
+        "15 m",
+        "18 m",
+        "30 m"
+      ],
+      "t": 0,
+      "izoh": "To'siq uzunligi — perimetr. Asoslar yig'indisi 2 · 6 = 12 m. P = 12 + 4 + 5 = 21 m. Yon tomonlarni ikkilantirish (18 m) emas, aynan o'rta chiziqni ikkilantirish kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194.6 105.5,105.5 204.5,105.5 249,194.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='78.2' y1='150' x2='226.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='70.2' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='234.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='152.5' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='44' y='210.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='98.5' y='98.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='211.5' y='98.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='54.2' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E4 m%3C/text%3E%3Ctext x='250.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#a208bf34"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning o'rta chizig'i 14 sm, yon tomoni 8 sm. Uning perimetri necha santimetr bo'ladi?",
+      "v": [
+        "22 sm",
+        "30 sm",
+        "44 sm",
+        "36 sm"
+      ],
+      "t": 2,
+      "izoh": "Teng yonli trapetsiyada ikkala yon tomon teng, ya'ni ular 8 + 8 = 16 sm. Asoslar yig'indisi 2 · 14 = 28 sm. P = 28 + 16 = 44 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,188.5 95,111.5 205,111.5 249,188.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='73' y1='150' x2='227' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='65' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='235' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='44' y='204.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='204.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88' y='104.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212' y='104.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='49' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='251' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#0e25ca96"
+    },
+    {
+      "q": "Perimetri 46 sm bo'lgan trapetsiyaning yon tomonlari 6 sm va 8 sm. Shu trapetsiyaning o'rta chizig'i necha santimetr?",
+      "v": [
+        "32 sm",
+        "23 sm",
+        "11,5 sm",
+        "16 sm"
+      ],
+      "t": 3,
+      "izoh": "Avval asoslar yig'indisini topamiz: a + b = 46 − 6 − 8 = 32 sm. So'ng o'rta chiziq m = 32 : 2 = 16 sm. 32 sm — yig'indi, uni yana ikkiga bo'lish kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#08e1fda3"
+    },
+    {
+      "q": "Fermerning dalasi trapetsiya shaklida: parallel tomonlari 12 m va 8 m, ular orasidagi masofa 5 m. Dala yuzi necha kvadrat metr?",
+      "v": [
+        "100 m²",
+        "50 m²",
+        "60 m²",
+        "10 m²"
+      ],
+      "t": 1,
+      "izoh": "Trapetsiya yuzi S = (a + b) : 2 · h. Bu yerda S = (12 + 8) : 2 · 5 = 10 · 5 = 50 m². Ikkiga bo'lishni unutsak 100 m² chiqadi, bu tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,191.3 84,108.8 216,108.8 249,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='108.8' x2='84' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='95,191.3 95,180.3 84,180.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='44' y='207.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='207.3' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='101.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='101.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='150' y='99.8' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asoslar-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#ecd3119b"
+    },
+    {
+      "q": "Uy tomining trapetsiya shaklidagi bo'lagi bor: uning asoslari 11 m va 7 m, balandligi esa 4 m. Shu bo'lakning yuzi qancha?",
+      "v": [
+        "72 m²",
+        "28 m²",
+        "36 m²",
+        "44 m²"
+      ],
+      "t": 2,
+      "izoh": "S = (11 + 7) : 2 · 4 = 9 · 4 = 36 m². Faqat bitta asosni balandlikka ko'paytirish (11 · 4 = 44 yoki 7 · 4 = 28) trapetsiya uchun to'g'ri emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,186 87,114 213,114 249,186' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87' y1='114' x2='87' y2='186' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='98,186 98,175 87,175' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='95' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E4 m%3C/text%3E%3Ctext x='44' y='202' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='202' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='80' y='107' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='220' y='107' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='204' font-size='13' fill='%23334155' text-anchor='middle'%3E11 m%3C/text%3E%3Ctext x='150' y='105' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asoslar-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#c7ad0cf0"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 15 sm va 9 sm, balandligi 6 sm ga teng. Uning yuzi necha kvadrat santimetrga teng bo'ladi?",
+      "v": [
+        "72 sm²",
+        "144 sm²",
+        "90 sm²",
+        "18 sm²"
+      ],
+      "t": 0,
+      "izoh": "Asoslarning yarim yig'indisi (15 + 9) : 2 = 12 sm. Yuza S = 12 · 6 = 72 sm². Ayirmadan foydalanish (15 − 9) : 2 · 6 = 18 sm² noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,189.6 90.6,110.4 209.4,110.4 249,189.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.6' y1='110.4' x2='90.6' y2='189.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='101.6,189.6 101.6,178.6 90.6,178.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='44' y='205.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='205.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='103.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='103.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='207.6' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='150' y='101.4' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asoslar-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#e37c2c27"
+    },
+    {
+      "q": "Ustaxonada trapetsiya shaklidagi metall plastinka kesib olindi: asoslari 24 sm va 16 sm, balandligi 10 sm. Plastinka yuzi necha kvadrat santimetr?",
+      "v": [
+        "200 sm²",
+        "400 sm²",
+        "240 sm²",
+        "40 sm²"
+      ],
+      "t": 0,
+      "izoh": "S = (24 + 16) : 2 · 10 = 20 · 10 = 200 sm². Bu yerda 20 sm — o'rta chiziq, uni balandlikka ko'paytiramiz. 400 sm² — ikkiga bo'lish unutilgan holat.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,191.3 84,108.8 216,108.8 249,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='108.8' x2='84' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='95,191.3 95,180.3 84,180.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E10 sm%3C/text%3E%3Ctext x='44' y='207.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='207.3' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='101.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='101.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='150' y='99.8' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-asoslar-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#7901ecc0"
+    },
+    {
+      "q": "Bostirma tomining ko'ndalang kesimi trapetsiya: asoslari 3,5 m va 2,5 m, balandligi 2 m. Kesimning yuzi necha kvadrat metr?",
+      "v": [
+        "12 m²",
+        "7 m²",
+        "6 m²",
+        "3 m²"
+      ],
+      "t": 2,
+      "izoh": "Asoslarning yarim yig'indisi (3,5 + 2,5) : 2 = 3 m. Yuza S = 3 · 2 = 6 m². Asoslar yig'indisini to'g'ridan-to'g'ri balandlikka ko'paytirish 12 m² beradi, bu ikki barobar katta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,206.6 79.3,93.4 220.7,93.4 249,206.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.3' y1='93.4' x2='79.3' y2='206.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='90.3,206.6 90.3,195.6 79.3,195.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E2 m%3C/text%3E%3Ctext x='44' y='222.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='222.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='72.3' y='86.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='227.7' y='86.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='224.6' font-size='13' fill='%23334155' text-anchor='middle'%3E3,5 m%3C/text%3E%3Ctext x='150' y='84.4' font-size='13' fill='%23334155' text-anchor='middle'%3E2,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-asoslar-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#400a3dae"
+    },
+    {
+      "q": "Trapetsiya shaklidagi basseyn tubining o'rta chizig'i 14 m, asoslar orasidagi masofa 6 m. Tubning yuzi necha kvadrat metr?",
+      "v": [
+        "42 m²",
+        "84 m²",
+        "168 m²",
+        "20 m²"
+      ],
+      "t": 1,
+      "izoh": "Trapetsiya yuzini o'rta chiziq orqali ham topish mumkin: S = m · h. Demak S = 14 · 6 = 84 m². Bu yerda yana ikkiga bo'lish shart emas, chunki o'rta chiziq allaqachon yarim yig'indi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,183 95,117 205,117 249,183' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='95' y1='117' x2='95' y2='183' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='106,183 106,172 95,172' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='103' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E6 m%3C/text%3E%3Cline x1='73' y1='150' x2='227' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='65' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='235' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='44' y='199' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='199' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88' y='110' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212' y='110' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-orta-chiziq",
+      "id": "matematika_plan_m13-trapetsiya#408c3317"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i 9 sm, balandligi 8 sm bo'lsa, uning yuzi necha kvadrat santimetrga teng?",
+      "v": [
+        "36 sm²",
+        "144 sm²",
+        "17 sm²",
+        "72 sm²"
+      ],
+      "t": 3,
+      "izoh": "S = m · h formulasiga ko'ra S = 9 · 8 = 72 sm². Natijani yana ikkiga bo'lish (36 sm²) — o'rta chiziq va asoslar yig'indisini chalkashtirish xatosi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,216 100.5,84 199.5,84 249,216' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.5' y1='84' x2='100.5' y2='216' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='111.5,216 111.5,205 100.5,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108.5' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Cline x1='75.8' y1='150' x2='224.3' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='67.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='232.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='44' y='232' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='232' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='93.5' y='77' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='206.5' y='77' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-orta-chiziq",
+      "id": "matematika_plan_m13-trapetsiya#94d05e97"
+    },
+    {
+      "q": "Xonaga to'shalgan trapetsiya shaklidagi gilamning o'rta chizig'i 2,5 m, balandligi 1,8 m. Gilamning yuzi necha kvadrat metr?",
+      "v": [
+        "2,25 m²",
+        "9 m²",
+        "4,5 m²",
+        "4,3 m²"
+      ],
+      "t": 2,
+      "izoh": "Yuza o'rta chiziq bilan balandlik ko'paytmasiga teng: S = 2,5 · 1,8 = 4,5 m². Ko'paytirish o'rniga qo'shish (2,5 + 1,8 = 4,3) yuza bermaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.4 103.4,97.6 196.6,97.6 249,202.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='103.4' y1='97.6' x2='103.4' y2='202.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='114.4,202.4 114.4,191.4 103.4,191.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='111.4' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E1,8 m%3C/text%3E%3Cline x1='77.2' y1='150' x2='222.8' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.2' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='230.8' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E2,5 m%3C/text%3E%3Ctext x='44' y='218.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='96.4' y='90.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='203.6' y='90.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yuza-orta-chiziq",
+      "id": "matematika_plan_m13-trapetsiya#9d15751e"
+    },
+    {
+      "q": "Trapetsiya shaklidagi taxta bo'lagining yuzi 96 sm², balandligi 8 sm. Uning o'rta chizig'i necha santimetr?",
+      "v": [
+        "12 sm",
+        "24 sm",
+        "6 sm",
+        "88 sm"
+      ],
+      "t": 0,
+      "izoh": "S = m · h bo'lgani uchun m = S : h = 96 : 8 = 12 sm. Yuzani ikkilantirib bo'lish (192 : 8 = 24) bu yerda kerak emas, chunki o'rta chiziq formulasida yarimlash allaqachon bajarilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yuza-orta-chiziq",
+      "id": "matematika_plan_m13-trapetsiya#248206ff"
+    },
+    {
+      "q": "Trapetsiya shaklidagi tomorqaning yuzi 90 m², parallel tomonlari 12 m va 6 m. Bu tomonlar orasidagi masofa necha metr?",
+      "v": [
+        "5 m",
+        "15 m",
+        "20 m",
+        "10 m"
+      ],
+      "t": 3,
+      "izoh": "S = (a + b) : 2 · h formulasidan h = 2S : (a + b). Demak h = 2 · 90 : (12 + 6) = 180 : 18 = 10 m. Yuzani ikkilantirmasdan bo'lish (90 : 18 = 5) tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='67.2,219 108.6,81 191.4,81 232.8,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.6' y1='81' x2='108.6' y2='219' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='119.6,219 119.6,208 108.6,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='116.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='60.2' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='239.8' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='101.6' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='198.4' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#f98ba98f"
+    },
+    {
+      "q": "Yuzi 84 sm², asoslari 10 sm va 4 sm bo'lgan trapetsiyaning balandligi necha santimetrga teng?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "24 sm",
+        "14 sm"
+      ],
+      "t": 1,
+      "izoh": "Asoslar yig'indisi 10 + 4 = 14 sm. Balandlik h = 2 · 84 : 14 = 168 : 14 = 12 sm. 6 sm javobi yuzani ikkilantirish qadami tushib qolganda chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='92.5,219 127,81 173,81 207.5,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127' y1='81' x2='127' y2='219' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='138,219 138,208 127,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='85.5' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='214.5' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='120' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='180' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#17a165da"
+    },
+    {
+      "q": "Hovuz tubi trapetsiya shaklida bo'lib, yuzi 132 m², parallel tomonlari 14 m va 8 m. Tubning balandligi necha metr?",
+      "v": [
+        "6 m",
+        "12 m",
+        "24 m",
+        "22 m"
+      ],
+      "t": 1,
+      "izoh": "Asoslar yig'indisi 14 + 8 = 22 m. h = 2 · 132 : 22 = 264 : 22 = 12 m. Asoslar yig'indisining o'zini (22 m) balandlik deb olish shaklni buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='69.5,219 104,81 196,81 230.5,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='104' y1='81' x2='104' y2='219' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='115,219 115,208 104,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='112' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='62.5' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='237.5' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='97' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='203' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "balandlik-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#1c339ad5"
+    },
+    {
+      "q": "Trapetsiyaning yuzi 45 sm², asoslarining yig'indisi esa 18 sm. Uning balandligi necha santimetr?",
+      "v": [
+        "2,5 sm",
+        "10 sm",
+        "27 sm",
+        "5 sm"
+      ],
+      "t": 3,
+      "izoh": "O'rta chiziq m = 18 : 2 = 9 sm. S = m · h bo'lgani uchun h = 45 : 9 = 5 sm. Yuzani to'g'ridan-to'g'ri yig'indiga bo'lish (45 : 18 = 2,5) noto'g'ri natija beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "balandlik-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#8ff0981a"
+    },
+    {
+      "q": "Trapetsiyaning yuzi 48 sm², balandligi 6 sm, kichik asosi esa 5 sm. Uning katta asosi necha santimetr?",
+      "v": [
+        "11 sm",
+        "16 sm",
+        "3 sm",
+        "21 sm"
+      ],
+      "t": 0,
+      "izoh": "Avval asoslar yig'indisini topamiz: a + b = 2S : h = 2 · 48 : 6 = 16 sm. So'ng katta asos a = 16 − 5 = 11 sm. 16 sm ni javob deb olish oxirgi qadamni tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,204 105,96 195,96 249,204' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105' y1='96' x2='105' y2='204' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='116,204 116,193 105,193' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='44' y='220' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='220' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='98' y='89' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='202' y='89' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='87' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#80096d0f"
+    },
+    {
+      "q": "Bog'chadagi trapetsiya shaklidagi qum maydonchasining yuzi 60 m², balandligi 5 m, katta asosi 16 m. Kichik asosi necha metr?",
+      "v": [
+        "24 m",
+        "4 m",
+        "8 m",
+        "32 m"
+      ],
+      "t": 2,
+      "izoh": "Asoslar yig'indisi 2 · 60 : 5 = 120 : 5 = 24 m. Kichik asos 24 − 16 = 8 m. 24 m — bu ikkala asos yig'indisi, alohida asos emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,180.9 100.5,119.1 199.5,119.1 249,180.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.5' y1='119.1' x2='100.5' y2='180.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='111.5,180.9 111.5,169.9 100.5,169.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108.5' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='44' y='196.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='196.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='93.5' y='112.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='206.5' y='112.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='198.9' font-size='13' fill='%23334155' text-anchor='middle'%3E16 m%3C/text%3E%3Ctext x='150' y='110.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#dee807f0"
+    },
+    {
+      "q": "Trapetsiyaning yuzi 70 sm², balandligi 7 sm. Asoslardan biri ikkinchisidan 4 sm katta bo'lsa, kichik asos necha santimetr?",
+      "v": [
+        "12 sm",
+        "10 sm",
+        "6 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Asoslar yig'indisi 2 · 70 : 7 = 20 sm. Kichik asosni b desak, katta asos b + 4 bo'ladi: b + b + 4 = 20, ya'ni 2b = 16 va b = 8 sm. 12 sm — bu katta asos.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "asos-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#22ceca53"
+    },
+    {
+      "q": "Trapetsiya shaklidagi bayroqchaning yuzi 0,9 m², balandligi 0,6 m, yuqori asosi 1,2 m. Pastki asosi necha metr?",
+      "v": [
+        "3 m",
+        "1,8 m",
+        "0,3 m",
+        "4,2 m"
+      ],
+      "t": 1,
+      "izoh": "Asoslar yig'indisi 2 · 0,9 : 0,6 = 1,8 : 0,6 = 3 m. Pastki asos 3 − 1,2 = 1,8 m. Bu yerda 3 m — yig'indi bo'lgani uchun uni javob deb bo'lmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,183 84,117 216,117 249,183' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='117' x2='84' y2='183' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='95,183 95,172 84,172' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E0,6 m%3C/text%3E%3Ctext x='44' y='199' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='199' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='110' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='110' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='201' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='108' font-size='13' fill='%23334155' text-anchor='middle'%3E1,2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-yuzadan",
+      "id": "matematika_plan_m13-trapetsiya#a7eff61c"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asosidagi o'tkir burchagi 62° ga teng. Shu trapetsiyaning o'tmas burchagi necha gradus?",
+      "v": [
+        "28°",
+        "124°",
+        "118°",
+        "62°"
+      ],
+      "t": 2,
+      "izoh": "Yon tomonga yopishgan ikki burchak ichki bir tomonli burchaklar bo'lgani uchun ularning yig'indisi 180° ga teng. Demak o'tmas burchak 180° − 62° = 118°. 90° − 62° = 28° hisobi mutlaqo boshqa qoidaga tegishli.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,188.5 95,111.5 205,111.5 249,188.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 75 188.5 A 24 24 0 0 0 62.9 167.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.7' y='172.9' font-size='13' fill='%23334155' text-anchor='middle'%3E62%26%23176;%3C/text%3E%3Cpath d='M 225 188.5 A 24 24 0 0 1 237.1 167.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='215.3' y='172.9' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='204.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='204.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88' y='104.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212' y='104.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-burchaklar",
+      "id": "matematika_plan_m13-trapetsiya#2b160877"
+    },
+    {
+      "q": "Teng yonli trapetsiya burchaklaridan biri 105° ga teng. Uning qolgan uchta burchagi qanday qiymatlarni oladi?",
+      "v": [
+        "105°, 75° va 75°",
+        "105°, 105° va 45°",
+        "75°, 90° va 90°",
+        "105°, 85° va 65°"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli trapetsiyada bir asosdagi burchaklar teng, shuning uchun 105° li burchak yana bir marta takrorlanadi. Ikkinchi asosdagi burchaklar esa 180° − 105° = 75° dan bo'ladi. Tekshiruv: 105 + 105 + 75 + 75 = 360°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-burchaklar",
+      "id": "matematika_plan_m13-trapetsiya#0fe61dc6"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning o'tmas burchagi o'tkir burchagidan 40° ga ortiq. Uning o'tkir burchagi necha gradus?",
+      "v": [
+        "70°",
+        "50°",
+        "20°",
+        "110°"
+      ],
+      "t": 0,
+      "izoh": "O'tkir burchakni x deb belgilaymiz, u holda o'tmas burchak x + 40 bo'ladi. Yon tomonga yopishgan burchaklar yig'indisi 180°: x + x + 40 = 180, ya'ni 2x = 140 va x = 70°. 110° — bu o'tmas burchak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,206.7 92.3,93.4 207.8,93.4 249,206.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 75 206.7 A 24 24 0 0 0 59.2 184.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82.9' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 225 206.7 A 24 24 0 0 1 240.8 184.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='217.1' y='188.3' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='222.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='222.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='85.3' y='86.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='214.8' y='86.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-burchaklar",
+      "id": "matematika_plan_m13-trapetsiya#882fe1a7"
+    },
+    {
+      "q": "Trapetsiyaning uchta burchagi 70°, 110° va 110° ga teng ekani ma'lum. Uning to'rtinchi burchagi necha gradus?",
+      "v": [
+        "110°",
+        "90°",
+        "70°",
+        "80°"
+      ],
+      "t": 2,
+      "izoh": "To'rtburchakning ichki burchaklari yig'indisi 360° ga teng. Berilgan uch burchak yig'indisi 70 + 110 + 110 = 290°. Demak to'rtinchisi 360° − 290° = 70°.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teng-yonli-burchaklar",
+      "id": "matematika_plan_m13-trapetsiya#728cf7b5"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning ikkita o'tkir burchagi yig'indisi 140° ni tashkil qiladi. Uning har bir o'tmas burchagi necha gradus?",
+      "v": [
+        "140°",
+        "110°",
+        "70°",
+        "220°"
+      ],
+      "t": 1,
+      "izoh": "Teng yonli trapetsiyada o'tkir burchaklar teng, shuning uchun har biri 140° : 2 = 70°. Yon tomonga yopishgan burchaklar yig'indisi 180° bo'lgani uchun o'tmas burchak 180° − 70° = 110°. 70° — bu o'tkir burchak, savolda o'tmasi so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,204.5 90.6,95.6 209.4,95.6 249,204.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 75 204.5 A 24 24 0 0 0 59.2 181.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='82.9' y='186.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Cpath d='M 225 204.5 A 24 24 0 0 1 240.8 181.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='217.1' y='186.1' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='44' y='220.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='220.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='88.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='88.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-burchaklar",
+      "id": "matematika_plan_m13-trapetsiya#8e6ab735"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 18 sm va 8 sm, yon tomoni esa 13 sm. Uning balandligi necha santimetr?",
+      "v": [
+        "5 sm",
+        "13 sm",
+        "10 sm",
+        "12 sm"
+      ],
+      "t": 3,
+      "izoh": "Yuqori uchdan balandlik tushiramiz. U katta asosda (18 − 8) : 2 = 5 sm li kesma ajratadi. Hosil bo'lgan to'g'ri burchakli uchburchakda gipotenuza 13 sm, bir katet 5 sm, demak balandlik √(13² − 5²) = √144 = 12 sm. Asoslar ayirmasini yarimlamaslik 10 sm degan xatoga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,216 106,84 194,84 249,216' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106' y1='84' x2='106' y2='216' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='117,216 117,205 106,205' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='114' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='232' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='232' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='99' y='77' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='201' y='77' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='150' y='75' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='67.5' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-proyeksiya",
+      "id": "matematika_plan_m13-trapetsiya#39fd8245"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 32 m va 14 m, balandligi 12 m. Uning yon tomoni necha metrga teng?",
+      "v": [
+        "9 m",
+        "21 m",
+        "15 m",
+        "18 m"
+      ],
+      "t": 2,
+      "izoh": "Balandlik katta asosda (32 − 14) : 2 = 9 m li proyeksiya ajratadi. Yon tomon shu proyeksiya va balandlik qurgan to'g'ri burchakli uchburchakning gipotenuzasi: √(9² + 12²) = √225 = 15 m. Katetlarni qo'shib yuborish 21 m beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,187.1 106.7,112.9 193.3,112.9 249,187.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='106.7' y1='112.9' x2='106.7' y2='187.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='117.7,187.1 117.7,176.1 106.7,176.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='114.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E12 m%3C/text%3E%3Ctext x='44' y='203.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='203.1' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='99.7' y='105.9' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='200.3' y='105.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.1' font-size='13' fill='%23334155' text-anchor='middle'%3E32 m%3C/text%3E%3Ctext x='150' y='103.9' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='67.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-proyeksiya",
+      "id": "matematika_plan_m13-trapetsiya#6e49f571"
+    },
+    {
+      "q": "Tomning teng yonli trapetsiya shaklidagi peshtoqi bor: asoslari 14 m va 6 m, yon qirrasi 5 m. Peshtoq balandligi necha metr?",
+      "v": [
+        "3 m",
+        "4 m",
+        "5 m",
+        "8 m"
+      ],
+      "t": 0,
+      "izoh": "Yon qirraning katta asosdagi proyeksiyasi (14 − 6) : 2 = 4 m. Balandlik esa √(5² − 4²) = √9 = 3 m. Bu yerda 4 m — proyeksiya, balandlik emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,171.2 107.6,128.8 192.4,128.8 249,171.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.6' y1='128.8' x2='107.6' y2='171.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='118.6,171.2 118.6,160.2 107.6,160.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='187.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='187.2' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='100.6' y='121.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='199.4' y='121.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='189.2' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='150' y='119.8' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='68.3' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-proyeksiya",
+      "id": "matematika_plan_m13-trapetsiya#07589e0b"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 30 sm va 18 sm, balandligi 8 sm. Shu trapetsiyaning perimetri necha santimetr?",
+      "v": [
+        "58 sm",
+        "64 sm",
+        "56 sm",
+        "68 sm"
+      ],
+      "t": 3,
+      "izoh": "Proyeksiya (30 − 18) : 2 = 6 sm. Yon tomon √(6² + 8²) = √100 = 10 sm. Perimetr P = 30 + 18 + 10 + 10 = 68 sm. Faqat bitta yon tomonni qo'shsak 58 sm chiqadi, balandlikni yon tomon deb olsak 64 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,176.4 90.6,123.6 209.4,123.6 249,176.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.6' y1='123.6' x2='90.6' y2='176.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='101.6,176.4 101.6,165.4 90.6,165.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Ctext x='44' y='192.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='192.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='116.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='116.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='194.4' font-size='13' fill='%23334155' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='150' y='114.6' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-proyeksiya",
+      "id": "matematika_plan_m13-trapetsiya#fd7fcab6"
+    },
+    {
+      "q": "Sardor teng yonli trapetsiya shaklidagi metall varaqni o'lchadi: asoslari 34 sm va 18 sm, yon tomoni 17 sm. Varaqning balandligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "15 sm",
+        "17 sm",
+        "16 sm"
+      ],
+      "t": 1,
+      "izoh": "Katta asosdagi proyeksiya (34 − 18) : 2 = 8 sm. Balandlik √(17² − 8²) = √(289 − 64) = √225 = 15 sm. Proyeksiyani javob deb olish (8 sm) tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,193.7 97.6,106.3 202.4,106.3 249,193.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='97.6' y1='106.3' x2='97.6' y2='193.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='108.6,193.7 108.6,182.7 97.6,182.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='105.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='209.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='209.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='90.6' y='99.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='209.4' y='99.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='211.7' font-size='13' fill='%23334155' text-anchor='middle'%3E34 sm%3C/text%3E%3Ctext x='150' y='97.3' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='63.3' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E17 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-proyeksiya",
+      "id": "matematika_plan_m13-trapetsiya#083fa35d"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiyaning asoslari 20 sm va 8 sm, asoslarga perpendikulyar yon tomoni 5 sm. Ikkinchi yon tomoni necha santimetr?",
+      "v": [
+        "12 sm",
+        "13 sm",
+        "5 sm",
+        "17 sm"
+      ],
+      "t": 1,
+      "izoh": "Og'ma yon tomonning gorizontal proyeksiyasi 20 − 8 = 12 sm ga teng. Pifagor teoremasiga ko'ra u √(5² + 12²) = √169 = 13 sm. Proyeksiyaning o'zi (12 sm) yon tomon emas, katetlarni qo'shish esa 17 sm beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,174.8 51,125.3 130.2,125.3 249,174.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='63,174.8 63,162.8 51,162.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='190.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='190.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='118.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='137.2' y='118.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='192.8' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='90.6' y='116.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='40' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='200.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-burchakli-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#bb222346"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiyaning asoslari 12 m va 7 m, balandligi 12 m. Uning og'ma yon tomoni necha metr?",
+      "v": [
+        "12 m",
+        "5 m",
+        "17 m",
+        "13 m"
+      ],
+      "t": 3,
+      "izoh": "Asoslar ayirmasi 12 − 7 = 5 m — og'ma tomonning gorizontal proyeksiyasi. Og'ma tomon √(12² + 5²) = √169 = 13 m. Katetlarni qo'shib yuborish (12 + 5 = 17) Pifagor teoremasini buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='81,219 81,81 161.5,81 219,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='93,219 93,207 81,207' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='226' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='74' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='168.5' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='121.3' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E7 m%3C/text%3E%3Ctext x='70' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E12 m%3C/text%3E%3Ctext x='201.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-burchakli-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#baee292b"
+    },
+    {
+      "q": "Devorga tiralgan taxta to'g'ri burchakli trapetsiya shaklida: asoslari 21 sm va 6 sm, balandligi 8 sm. Og'ma tomoni necha santimetr?",
+      "v": [
+        "17 sm",
+        "15 sm",
+        "8 sm",
+        "23 sm"
+      ],
+      "t": 0,
+      "izoh": "Gorizontal proyeksiya 21 − 6 = 15 sm. Og'ma tomon √(8² + 15²) = √(64 + 225) = √289 = 17 sm. Bu yerda 15 sm faqat proyeksiya, javob esa gipotenuza.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,187.7 51,112.3 107.6,112.3 249,187.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='63,187.7 63,175.7 51,175.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='203.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='203.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='105.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='114.6' y='105.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.7' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='79.3' y='103.3' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='40' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='189.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-burchakli-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#022b4ff4"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiyaning og'ma yon tomoni 15 sm, balandligi 12 sm, kichik asosi 4 sm. Katta asosi necha santimetr?",
+      "v": [
+        "9 sm",
+        "4 sm",
+        "13 sm",
+        "19 sm"
+      ],
+      "t": 2,
+      "izoh": "Og'ma tomonning gorizontal proyeksiyasi √(15² − 12²) = √81 = 9 sm. Katta asos kichik asos bilan shu proyeksiyaning yig'indisi: 4 + 9 = 13 sm. 9 sm — faqat proyeksiya.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='75.3,219 75.3,81 121.3,81 224.8,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='87.3,219 87.3,207 75.3,207' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='68.3' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='231.8' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='68.3' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='128.3' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='98.3' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='64.3' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='184' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "togri-burchakli-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#867f8bff"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiya shaklidagi yer uchastkasining asoslari 18 m va 12 m, balandligi 9 m. Uchastka yuzi necha kvadrat metr?",
+      "v": [
+        "270 m²",
+        "108 m²",
+        "162 m²",
+        "135 m²"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri burchakli trapetsiyada perpendikulyar yon tomon aynan balandlik bo'ladi. S = (18 + 12) : 2 · 9 = 15 · 9 = 135 m². 270 m² — ikkiga bo'lish unutilgan holat.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 51,100.5 183,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='63,199.5 63,187.5 51,187.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='190' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='117' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='40' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E9 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "togri-burchakli-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#41ecc918"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 20 sm va 8 sm, asosidagi burchagi 45° ga teng. Uning balandligi necha santimetr?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "3 sm",
+        "10 sm"
+      ],
+      "t": 1,
+      "izoh": "Balandlik katta asosda (20 − 8) : 2 = 6 sm li proyeksiya ajratadi. Burchak 45° bo'lgani uchun hosil bo'lgan uchburchak teng yonli, ya'ni balandlik proyeksiyaga teng: h = 6 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,179.7 110.4,120.3 189.6,120.3 249,179.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='110.4' y1='120.3' x2='110.4' y2='179.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='121.4,179.7 121.4,168.7 110.4,168.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='118.4' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpath d='M 75 179.7 A 24 24 0 0 0 68 162.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87' y='168.8' font-size='13' fill='%23334155' text-anchor='middle'%3E45%26%23176;%3C/text%3E%3Ctext x='44' y='195.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='195.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='103.4' y='113.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='196.6' y='113.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='197.7' font-size='13' fill='%23334155' text-anchor='middle'%3E20 sm%3C/text%3E%3Ctext x='150' y='111.3' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-45-60-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#a497fec1"
+    },
+    {
+      "q": "To'g'ri burchakli trapetsiyaning kichik asosi 9 sm, katta asosi 16 sm, og'ma tomoni katta asos bilan 45° burchak hosil qiladi. Balandligi qancha?",
+      "v": [
+        "9 sm",
+        "16 sm",
+        "7 sm",
+        "25 sm"
+      ],
+      "t": 2,
+      "izoh": "Og'ma tomonning gorizontal proyeksiyasi 16 − 9 = 7 sm. 45° li o'tkir burchakka ega to'g'ri burchakli uchburchakda katetlar teng, shuning uchun balandlik ham 7 sm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,193.3 51,106.7 162.4,106.7 249,193.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='63,193.3 63,181.3 51,181.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cpath d='M 225 193.3 A 24 24 0 0 1 232 176.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='213' y='182.4' font-size='13' fill='%23334155' text-anchor='middle'%3E45%26%23176;%3C/text%3E%3Ctext x='44' y='209.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='209.3' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='99.7' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='169.4' y='99.7' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='211.3' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='106.7' y='97.7' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='40' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-45-60-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#2b3d581d"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning yon tomoni 12 sm, asosidagi burchagi 30° ga teng. Trapetsiyaning balandligi necha santimetr?",
+      "v": [
+        "6 sm",
+        "12 sm",
+        "24 sm",
+        "4 sm"
+      ],
+      "t": 0,
+      "izoh": "Balandlik yon tomonni gipotenuza qilgan to'g'ri burchakli uchburchakning kateti. h = 12 · sin30° = 12 · 1/2 = 6 sm. 30° li burchak qarshisidagi katet gipotenuzaning yarmiga teng degan qoida ham shu natijani beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,172.2 127.8,127.8 172.2,127.8 249,172.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127.8' y1='127.8' x2='127.8' y2='172.2' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='138.8,172.2 138.8,161.2 127.8,161.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135.8' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpath d='M 75 172.2 A 24 24 0 0 0 71.8 160.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='88.7' y='166.1' font-size='13' fill='%23334155' text-anchor='middle'%3E30%26%23176;%3C/text%3E%3Ctext x='44' y='188.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='188.2' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='120.8' y='120.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='179.2' y='120.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='78.4' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "burchak-45-60-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#4d7d3b26"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 22 m va 10 m, asosidagi burchagi 60°. Uning balandligi necha metr?",
+      "v": [
+        "6√3 m",
+        "6 m",
+        "3√3 m",
+        "12 m"
+      ],
+      "t": 0,
+      "izoh": "Proyeksiya (22 − 10) : 2 = 6 m. Balandlik h = 6 · tg60° = 6√3 m. Proyeksiyani javob deb olish (6 m) tangens ko'paytmasini tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,196.8 105,103.2 195,103.2 249,196.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='105' y1='103.2' x2='105' y2='196.8' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='116,196.8 116,185.8 105,185.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='113' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cpath d='M 75 196.8 A 24 24 0 0 0 63 176' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.8' y='181.3' font-size='13' fill='%23334155' text-anchor='middle'%3E60%26%23176;%3C/text%3E%3Ctext x='44' y='212.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='212.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='98' y='96.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='202' y='96.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='214.8' font-size='13' fill='%23334155' text-anchor='middle'%3E22 m%3C/text%3E%3Ctext x='150' y='94.2' font-size='13' fill='%23334155' text-anchor='middle'%3E10 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "burchak-45-60-balandlik",
+      "id": "matematika_plan_m13-trapetsiya#d67424be"
+    },
+    {
+      "q": "Trapetsiya diagonallari kesishdi va asoslarda yotgan uchburchaklar yuzlari 9 sm² hamda 25 sm² bo'ldi. Yon uchburchaklardan birining yuzi qancha?",
+      "v": [
+        "17 sm²",
+        "34 sm²",
+        "15 sm²",
+        "16 sm²"
+      ],
+      "t": 2,
+      "izoh": "Asoslardagi uchburchaklar o'xshash, yon uchburchaklarning yuzi esa ular yuzalarining o'rta geometrigiga teng: S = √(9 · 25) = √225 = 15 sm². O'rta arifmetik olish (17 sm²) noto'g'ri qoida.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 90.6,97.2 209.4,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='202.8' x2='209.4' y2='97.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90.6' y1='97.2' x2='249' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='136.8' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='152.8' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uchburchak-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#a0d229bf"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 2:5 nisbatda. Diagonallar kesishishidan hosil bo'lgan, asoslarda yotgan uchburchaklar yuzlari qanday nisbatda bo'ladi?",
+      "v": [
+        "2:5",
+        "4:25",
+        "5:2",
+        "8:125"
+      ],
+      "t": 1,
+      "izoh": "Asoslarda yotgan uchburchaklar o'xshashlik koeffitsiyenti 2:5 bo'lgan o'xshash uchburchaklardir. O'xshash figuralar yuzlari o'xshashlik koeffitsiyentining kvadrati kabi nisbatda bo'ladi, ya'ni 2² : 5² = 4:25.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 110.4,97.2 189.6,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='202.8' x2='189.6' y2='97.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='110.4' y1='97.2' x2='249' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='127.4' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='143.4' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='103.4' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='196.6' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3Ea%3C/text%3E%3Ctext x='150' y='88.2' font-size='13' fill='%23334155' text-anchor='middle'%3Eb%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uchburchak-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#cbc94d06"
+    },
+    {
+      "q": "Trapetsiya diagonallari O nuqtada kesishdi. Katta asosda yotgan uchburchak yuzi 36 sm², asoslar nisbati 3:2. Kichik asosdagi uchburchak yuzi qancha?",
+      "v": [
+        "24 sm²",
+        "54 sm²",
+        "18 sm²",
+        "16 sm²"
+      ],
+      "t": 3,
+      "izoh": "Uchburchaklar o'xshash, koeffitsiyent 2:3. Yuzalar nisbati esa 4:9. Demak kichik uchburchak yuzi 36 · 4/9 = 16 sm². Yuzani chiziqli nisbatda kamaytirish (36 · 2/3 = 24) o'xshashlik qoidasini buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 84,100.5 216,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='199.5' x2='216' y2='100.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='84' y1='100.5' x2='249' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='140.1' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='156.1' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uchburchak-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#c84850ba"
+    },
+    {
+      "q": "Diagonallari kesishgan trapetsiyada yon uchburchak yuzi 12 sm², kichik asosdagi uchburchak yuzi 8 sm². Katta asosdagi uchburchak yuzi necha kvadrat santimetr?",
+      "v": [
+        "16 sm²",
+        "20 sm²",
+        "18 sm²",
+        "24 sm²"
+      ],
+      "t": 2,
+      "izoh": "Yon uchburchak yuzining kvadrati asoslardagi ikki uchburchak yuzlarining ko'paytmasiga teng: 12² = 8 · S. Bundan 144 = 8S va S = 18 sm². Oddiy ayirish yoki qo'shish bu yerda ishlamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 84,97.2 216,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='202.8' x2='216' y2='97.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='84' y1='97.2' x2='249' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='139.4' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='155.4' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uchburchak-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#e3bc9028"
+    },
+    {
+      "q": "Trapetsiyaning yuzi 64 sm², asoslari esa 1:3 nisbatda. Kichik asosda yotgan uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "4 sm²",
+        "8 sm²",
+        "16 sm²",
+        "36 sm²"
+      ],
+      "t": 0,
+      "izoh": "Kichik asosdagi uchburchak yuzini t desak, katta asosdagisi 9t, har bir yon uchburchak esa 3t bo'ladi. Jami t + 9t + 3t + 3t = 16t = 64, demak t = 4 sm². 36 sm² — bu katta asosdagi uchburchak yuzi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 117,100.5 183,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='199.5' x2='183' y2='100.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='117' y1='100.5' x2='249' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='125.3' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='141.3' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='110' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='190' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-uchburchak-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#c6b6ec72"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 15 sm va 9 sm. AC diagonali 16 sm bo'lsa, uning katta asosga yopishgan bo'lagi necha santimetr?",
+      "v": [
+        "6 sm",
+        "8 sm",
+        "9,6 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Diagonal kesishish nuqtasi bilan asoslar nisbatida bo'linadi: AO : OC = 15 : 9 = 5 : 3. Diagonalni 5 + 3 = 8 ta ulushga ajratamiz, bir ulush 16 : 8 = 2 sm. Katta asosga yopishgan bo'lak 5 · 2 = 10 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 90.6,97.2 209.4,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='202.8' x2='209.4' y2='97.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='136.8' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='152.8' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='150' y='88.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kesishish-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#e766d29d"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 18 m va 12 m, BD diagonali 25 m. Diagonalning kichik asosdan kesishish nuqtasigacha bo'lgan qismi necha metr?",
+      "v": [
+        "15 m",
+        "10 m",
+        "12,5 m",
+        "8 m"
+      ],
+      "t": 1,
+      "izoh": "Kichik asosdan boshlangan bo'lak kichik asosga, ikkinchisi esa katta asosga proporsional: BO : OD = 12 : 18 = 2 : 3. Bir ulush 25 : 5 = 5 m, demak BO = 2 · 5 = 10 m. Diagonalni teng ikkiga bo'lish (12,5 m) parallelogramm xossasi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 84,100.5 216,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='100.5' x2='249' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='140.1' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='156.1' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='150' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kesishish-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#91d6a58e"
+    },
+    {
+      "q": "Trapetsiya diagonallari O nuqtada kesishib, BO = 6 sm va OD = 10 sm bo'ldi. Kichik asos 9 sm bo'lsa, katta asos necha santimetr?",
+      "v": [
+        "5,4 sm",
+        "15 sm",
+        "16 sm",
+        "18 sm"
+      ],
+      "t": 1,
+      "izoh": "BO : OD = BC : AD nisbatiga ko'ra 6 : 10 = 9 : AD. Bundan AD = 9 · 10 : 6 = 15 sm. Nisbatni teskari yozib qo'yish 5,4 sm degan xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 90.6,97.2 209.4,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.6' y1='97.2' x2='249' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='136.8' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='152.8' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='220.8' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='88.2' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "diagonal-kesishish-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#8152d450"
+    },
+    {
+      "q": "Trapetsiya diagonali kesishish nuqtasida 3:7 nisbatda bo'lindi, kichikroq bo'lak kichik asosga yopishgan. Asoslarning kichigi kattasiga qanday nisbatda?",
+      "v": [
+        "7:3",
+        "9:49",
+        "1:2",
+        "3:7"
+      ],
+      "t": 3,
+      "izoh": "Diagonal bo'laklarining nisbati aynan asoslar nisbatiga teng, chunki BOC va DOA uchburchaklari o'xshash. Kichik bo'lak kichik asos tomonda bo'lgani uchun kichik asos : katta asos = 3 : 7. Kvadratga ko'tarish (9:49) yuzalar nisbatiga tegishli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "diagonal-kesishish-nisbat",
+      "id": "matematika_plan_m13-trapetsiya#fd3ab14a"
+    },
+    {
+      "q": "ABCD trapetsiya diagonallari O nuqtada kesishdi. AOB uchburchakning yuzi 18 sm² bo'lsa, COD uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "18 sm²",
+        "9 sm²",
+        "36 sm²",
+        "24 sm²"
+      ],
+      "t": 0,
+      "izoh": "ABD va ACD uchburchaklar umumiy AD asosga va teng balandlikka ega, shuning uchun ularning yuzlari teng. Ikkalasidan umumiy AOD qismini ayirsak, AOB va COD uchburchaklar yuzlari ham teng chiqadi: 18 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 94.3,100.5 205.7,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='199.5' x2='205.7' y2='100.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='94.3' y1='100.5' x2='249' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='136.1' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='152.1' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='87.3' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212.7' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yon-uchburchaklar-tengligi",
+      "id": "matematika_plan_m13-trapetsiya#602ec457"
+    },
+    {
+      "q": "ABCD trapetsiyada ABD uchburchakning yuzi 30 sm², AOD uchburchakniki esa 18 sm². AOB uchburchakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "48 sm²",
+        "15 sm²",
+        "12 sm²",
+        "9 sm²"
+      ],
+      "t": 2,
+      "izoh": "AOD va AOB uchburchaklar birgalikda ABD uchburchakni tashkil qiladi, chunki O nuqta BD diagonalida yotadi. Demak S(AOB) = 30 − 18 = 12 sm². Yuzalarni qo'shish (48 sm²) shaklga zid.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 88.1,100.5 211.9,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='199.5' x2='211.9' y2='100.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='88.1' y1='100.5' x2='249' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='138.6' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='154.6' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='81.1' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='218.9' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yon-uchburchaklar-tengligi",
+      "id": "matematika_plan_m13-trapetsiya#6b522725"
+    },
+    {
+      "q": "Trapetsiya yuzi 75 sm², diagonallar hosil qilgan asos uchburchaklarining yuzlari 27 sm² va 12 sm². Yon uchburchaklardan birining yuzi qancha?",
+      "v": [
+        "36 sm²",
+        "39 sm²",
+        "19,5 sm²",
+        "18 sm²"
+      ],
+      "t": 3,
+      "izoh": "Diagonallar trapetsiyani to'rtta uchburchakka ajratadi. Ikki yon uchburchak yuzi 75 − 27 − 12 = 36 sm². Ular o'zaro teng bo'lgani uchun har biri 36 : 2 = 18 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194 84,106 216,106 249,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='194' x2='216' y2='106' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='84' y1='106' x2='249' y2='194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='141.2' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='157.2' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='210' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='77' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yon-uchburchaklar-tengligi",
+      "id": "matematika_plan_m13-trapetsiya#a91426bf"
+    },
+    {
+      "q": "Trapetsiya asoslari 6 sm va 10 sm, diagonallar ajratgan yon uchburchaklardan birining yuzi 15 sm². Trapetsiyaning to'liq yuzi necha kvadrat santimetr?",
+      "v": [
+        "30 sm²",
+        "64 sm²",
+        "45 sm²",
+        "60 sm²"
+      ],
+      "t": 1,
+      "izoh": "Asoslardagi uchburchaklar yuzlari 36 : 100 nisbatda, ya'ni 9u va 25u. Yon uchburchak yuzi ularning o'rta geometrigi: √(9u · 25u) = 15u = 15, demak u = 1. Jami yuza 9 + 25 + 15 + 15 = 64 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194.6 90.6,105.5 209.4,105.5 249,194.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='194.6' x2='209.4' y2='105.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90.6' y1='105.5' x2='249' y2='194.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='138.9' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='154.9' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Ctext x='44' y='210.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='98.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='98.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='212.6' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='96.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yon-uchburchaklar-tengligi",
+      "id": "matematika_plan_m13-trapetsiya#26fb0ba6"
+    },
+    {
+      "q": "Trapetsiya diagonallari o'zaro perpendikulyar bo'lib, uzunliklari 12 sm va 9 sm. Shu trapetsiyaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "108 sm²",
+        "21 sm²",
+        "54 sm²",
+        "27 sm²"
+      ],
+      "t": 2,
+      "izoh": "Diagonallari perpendikulyar bo'lgan to'rtburchakning yuzi diagonallar ko'paytmasining yarmiga teng: S = 12 · 9 : 2 = 108 : 2 = 54 sm². Ikkiga bo'lishni unutish 108 sm² beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,214.8 151.8,85.2 223.8,85.2 249,214.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='214.8' x2='223.8' y2='85.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='151.8' y1='85.2' x2='249' y2='214.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='177.7' cy='119.8' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='185.7,113.8 191.7,121.8 183.7,127.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='163.9' y='122' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='44' y='230.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='230.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='144.8' y='78.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='230.8' y='78.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='102' y='192.8' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='194.1' y='164.9' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#0b46a6bb"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning diagonallari o'zaro perpendikulyar, asoslari 10 sm va 6 sm. Uning balandligi necha santimetr?",
+      "v": [
+        "8 sm",
+        "4 sm",
+        "16 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Diagonallari perpendikulyar bo'lgan teng yonli trapetsiyada balandlik o'rta chiziqqa teng bo'ladi. O'rta chiziq (10 + 6) : 2 = 8 sm, demak balandlik ham 8 sm. Asoslar ayirmasining yarmi (2 sm) bu yerda javob emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='63.8,219 98.3,81 201.8,81 236.3,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='98.3' y1='81' x2='98.3' y2='219' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='109.3,219 109.3,208 98.3,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='106.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Cline x1='63.8' y1='219' x2='201.8' y2='81' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='98.3' y1='81' x2='236.3' y2='219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='132.8' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='159' y='148.8' font-size='13' fill='%23334155' text-anchor='start'%3EO%3C/text%3E%3Cpolyline points='161,129.8 158,119.8 148,122.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='56.8' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='243.3' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='91.3' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='208.8' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#efb956a0"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning diagonallari perpendikulyar, o'rta chizig'i 7 sm. Trapetsiyaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "49 sm²",
+        "14 sm²",
+        "24,5 sm²",
+        "98 sm²"
+      ],
+      "t": 0,
+      "izoh": "Bunday trapetsiyada balandlik o'rta chiziqqa teng, ya'ni h = 7 sm. Yuza S = m · h = 7 · 7 = 49 sm². Yuzani yana ikkiga bo'lish (24,5 sm²) bu formulada kerak emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='61.3,219 100.7,81 199.3,81 238.7,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='61.3' y1='219' x2='199.3' y2='81' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='100.7' y1='81' x2='238.7' y2='219' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130.3' r='2.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolyline points='161,127.3 158,117.3 148,120.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='81' y1='150' x2='219' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='73' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='227' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3Ctext x='54.3' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='245.7' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='93.7' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='206.3' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "perpendikulyar-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#4a8f4976"
+    },
+    {
+      "q": "Diagonallari o'zaro perpendikulyar bo'lgan trapetsiyaning yuzi 84 sm², bir diagonali 14 sm. Ikkinchi diagonali necha santimetr?",
+      "v": [
+        "6 sm",
+        "24 sm",
+        "12 sm",
+        "70 sm"
+      ],
+      "t": 2,
+      "izoh": "S = d₁ · d₂ : 2 formulasidan d₂ = 2S : d₁ = 2 · 84 : 14 = 168 : 14 = 12 sm. Yuzani ikkilantirmasdan bo'lish (84 : 14 = 6) tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "perpendikulyar-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#8613fae8"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 21 sm va 9 sm, balandligi 8 sm. Uning diagonali necha santimetrga teng?",
+      "v": [
+        "15 sm",
+        "17 sm",
+        "10 sm",
+        "19 sm"
+      ],
+      "t": 1,
+      "izoh": "Yuqori uchdan balandlik tushiramiz; u katta asosda (21 − 9) : 2 = 6 sm ajratadi. Diagonalning katta asosdagi proyeksiyasi 6 + 9 = 15 sm. Diagonal √(15² + 8²) = √289 = 17 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,187.7 107.6,112.3 192.4,112.3 249,187.7' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.6' y1='112.3' x2='107.6' y2='187.7' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='118.6,187.7 118.6,176.7 107.6,176.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E8 sm%3C/text%3E%3Cline x1='51' y1='187.7' x2='192.4' y2='112.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='203.7' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='203.7' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='100.6' y='105.3' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='199.4' y='105.3' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.7' font-size='13' fill='%23334155' text-anchor='middle'%3E21 sm%3C/text%3E%3Ctext x='150' y='103.3' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='153.2' y='130.4' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#c209006c"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 18 m va 6 m, balandligi 9 m. Diagonalining uzunligi necha metr?",
+      "v": [
+        "12 m",
+        "9 m",
+        "18 m",
+        "15 m"
+      ],
+      "t": 3,
+      "izoh": "Balandlik katta asosda (18 − 6) : 2 = 6 m ajratadi, diagonalning proyeksiyasi esa 6 + 6 = 12 m. Diagonal √(12² + 9²) = √225 = 15 m. Proyeksiyani javob deb olish (12 m) xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 117,100.5 183,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='117' y1='100.5' x2='117' y2='199.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='128,199.5 128,188.5 117,188.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='125' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E9 m%3C/text%3E%3Cline x1='51' y1='199.5' x2='183' y2='100.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='110' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='190' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E18 m%3C/text%3E%3Ctext x='150' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3Ctext x='146.8' y='126.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#08c2d68b"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 14 sm va 4 sm, balandligi 12 sm. Uning diagonali necha santimetr?",
+      "v": [
+        "13 sm",
+        "12 sm",
+        "15 sm",
+        "16 sm"
+      ],
+      "t": 2,
+      "izoh": "Proyeksiya (14 − 4) : 2 = 5 sm, diagonalning katta asosdagi proyeksiyasi 5 + 4 = 9 sm. Diagonal √(9² + 12²) = √225 = 15 sm. 13 sm — yon tomon uzunligi, diagonal emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='69.5,219 127,81 173,81 230.5,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='127' y1='81' x2='127' y2='219' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='138,219 138,208 127,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Cline x1='69.5' y1='219' x2='173' y2='81' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62.5' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='237.5' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='120' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='180' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='145.9' y='119.2' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#122e94c0"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning ikkala diagonali yig'indisi 26 sm ni tashkil qiladi. Har bir diagonalning uzunligi necha santimetr?",
+      "v": [
+        "13 sm",
+        "26 sm",
+        "6,5 sm",
+        "52 sm"
+      ],
+      "t": 0,
+      "izoh": "Teng yonli trapetsiyaning muhim xossasi — diagonallari o'zaro teng. Demak har biri 26 : 2 = 13 sm. Yig'indini javob deb olish (26 sm) shartni noto'g'ri o'qishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,180.9 100.5,119.1 199.5,119.1 249,180.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='180.9' x2='199.5' y2='119.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='100.5' y1='119.1' x2='249' y2='180.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='196.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='196.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='93.5' y='112.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='206.5' y='112.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-diagonal",
+      "id": "matematika_plan_m13-trapetsiya#ea9163e5"
+    },
+    {
+      "q": "Trapetsiyaga aylana ichki chizilgan. Uning asoslari 14 sm va 4 sm, yon tomonlaridan biri 7 sm bo'lsa, ikkinchi yon tomoni necha santimetr?",
+      "v": [
+        "5 sm",
+        "9 sm",
+        "13 sm",
+        "11 sm"
+      ],
+      "t": 3,
+      "izoh": "Aylana ichki chizilgan to'rtburchakda qarama-qarshi tomonlar yig'indilari teng: a + b = c + d. Demak 14 + 4 = 7 + d, ya'ni d = 18 − 7 = 11 sm. Asoslar ayirmasidan foydalanish bu yerda ishlamaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,198.5 70.8,101.5 127.4,101.5 249,198.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='110.4' cy='150' r='48.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='214.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='214.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='63.8' y='94.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='134.4' y='94.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='216.5' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='99.1' y='92.5' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='49.9' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='199.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-ichki-tashqi",
+      "id": "matematika_plan_m13-trapetsiya#500d053a"
+    },
+    {
+      "q": "Teng yonli trapetsiyaga aylana ichki chizilgan, uning asoslari 16 sm va 4 sm. Shu trapetsiyaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "40 sm²",
+        "80 sm²",
+        "100 sm²",
+        "64 sm²"
+      ],
+      "t": 1,
+      "izoh": "Ichki chizilgan aylana sharti bo'yicha 16 + 4 = 2c, demak har bir yon tomon 10 sm. Proyeksiya (16 − 4) : 2 = 6 sm, balandlik √(10² − 6²) = 8 sm. Yuza S = (16 + 4) : 2 · 8 = 80 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 125.3,100.5 174.8,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='49.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='118.3' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='181.8' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='150' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-ichki-tashqi",
+      "id": "matematika_plan_m13-trapetsiya#7d5e854e"
+    },
+    {
+      "q": "Trapetsiyaga radiusi 4 sm bo'lgan aylana ichki chizilgan, trapetsiyaning o'rta chizig'i esa 9 sm. Uning yuzi necha kvadrat santimetr?",
+      "v": [
+        "36 sm²",
+        "72 sm²",
+        "144 sm²",
+        "81 sm²"
+      ],
+      "t": 1,
+      "izoh": "Ichki chizilgan aylana ikkala asosga ham urinadi, shuning uchun trapetsiya balandligi diametrga teng: h = 2 · 4 = 8 sm. Yuza S = m · h = 9 · 8 = 72 sm². Radiusni balandlik deb olish 36 sm² beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,210.4 113.2,89.6 186.8,89.6 249,210.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='60.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='150' y='155' font-size='13' fill='%23334155' text-anchor='middle'%3Er%3C/text%3E%3Cline x1='82.1' y1='150' x2='217.9' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='74.1' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='225.9' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3Ctext x='44' y='226.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='226.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='106.2' y='82.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='193.8' y='82.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "aylana-ichki-tashqi",
+      "id": "matematika_plan_m13-trapetsiya#df495bcc"
+    },
+    {
+      "q": "Quyidagi to'rtburchaklardan qaysi biri atrofiga har doim aylana tashqi chizish mumkin bo'ladi?",
+      "v": [
+        "To'g'ri burchakli trapetsiya",
+        "Asoslari 3:1 nisbatda bo'lgan har qanday trapetsiya",
+        "Diagonallari perpendikulyar bo'lgan har qanday trapetsiya",
+        "Teng yonli trapetsiya"
+      ],
+      "t": 3,
+      "izoh": "Aylana tashqi chizilishi uchun qarama-qarshi burchaklar yig'indisi 180° bo'lishi shart. Trapetsiyalar orasida bu shart faqat teng yonli trapetsiyada bajariladi, chunki unda asosdagi burchaklar teng. To'g'ri burchakli trapetsiyada bu shart umuman bajarilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "aylana-ichki-tashqi",
+      "id": "matematika_plan_m13-trapetsiya#72fbd1a3"
+    },
+    {
+      "q": "To'rtburchakning ketma-ket kelgan burchaklari 90°, 90°, 125° va 55° ga teng. Bu to'rtburchak qanday shakl deb ataladi?",
+      "v": [
+        "To'g'ri burchakli trapetsiya",
+        "Teng yonli trapetsiya",
+        "Kvadrat",
+        "Parallelogramm"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket kelgan ikki burchak 90° bo'lgani uchun ular orasidagi tomon ikkala asosga perpendikulyar. Qolgan ikki burchak (125° va 55°) teng emas, demak shakl teng yonli emas. Bu — to'g'ri burchakli trapetsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-xossa-tanlash",
+      "id": "matematika_plan_m13-trapetsiya#937bf734"
+    },
+    {
+      "q": "Quyidagi tasdiqlardan qaysi biri istalgan trapetsiya uchun doim bajariladi?",
+      "v": [
+        "Diagonallari o'zaro teng",
+        "Diagonallari kesishish nuqtasida teng ikkiga bo'linadi",
+        "Yon tomonga yopishgan ikki burchak yig'indisi 180° ga teng",
+        "Qarama-qarshi tomonlari juft-jufti bilan parallel"
+      ],
+      "t": 2,
+      "izoh": "Trapetsiyada asoslar parallel, yon tomon esa ularni kesuvchi. Ichki bir tomonli burchaklar yig'indisi 180° ga teng bo'ladi. Diagonallarning tengligi faqat teng yonli trapetsiyada, teng ikkiga bo'linishi esa parallelogrammda o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "trapetsiya-xossa-tanlash",
+      "id": "matematika_plan_m13-trapetsiya#bce91a66"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning xossalari sanab o'tilgan. Ulardan qaysi biri O'RINLI EMAS?",
+      "v": [
+        "Asosidagi burchaklari o'zaro teng",
+        "Diagonallari o'zaro teng",
+        "Simmetriya o'qiga ega",
+        "Diagonallari o'zaro perpendikulyar"
+      ],
+      "t": 3,
+      "izoh": "Teng yonli trapetsiyada asosdagi burchaklar teng, diagonallar teng va asoslarning o'rtalaridan o'tuvchi simmetriya o'qi mavjud. Diagonallarning perpendikulyarligi esa umumiy xossa emas, u faqat maxsus holatda, asoslar yig'indisining yarmi balandlikka teng bo'lgandagina yuz beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194 95,106 205,106 249,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='194' x2='205' y2='106' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='95' y1='106' x2='249' y2='194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='44' y='210' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='88' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='212' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-xossa-tanlash",
+      "id": "matematika_plan_m13-trapetsiya#01f69e1f"
+    },
+    {
+      "q": "Trapetsiyaning ikki burchagi 60° va 120°, qolgan ikkitasi esa o'zaro teng. Teng burchaklarning har biri necha gradus?",
+      "v": [
+        "60°",
+        "90°",
+        "120°",
+        "75°"
+      ],
+      "t": 1,
+      "izoh": "To'rtburchak burchaklari yig'indisi 360°. Berilgan ikkitasi 60 + 120 = 180° ni beradi, qolgan ikkitasiga 360 − 180 = 180° qoladi. Ular teng bo'lgani uchun har biri 90°, ya'ni bu to'g'ri burchakli trapetsiya.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "trapetsiya-xossa-tanlash",
+      "id": "matematika_plan_m13-trapetsiya#5d06f4a4"
+    },
+    {
+      "q": "Koordinata tekisligida A(0;0), B(3;6), C(11;6) va D(14;0) nuqtalar trapetsiya uchlari. Shu trapetsiyaning yuzi nechaga teng?",
+      "v": [
+        "132",
+        "48",
+        "66",
+        "84"
+      ],
+      "t": 2,
+      "izoh": "AD asos uzunligi 14 − 0 = 14, BC asos uzunligi 11 − 3 = 8. Balandlik ordinatalar ayirmasi, ya'ni 6. Yuza S = (14 + 8) : 2 · 6 = 11 · 6 = 66.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='47' y1='187.9' x2='253' y2='187.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='68.7' y1='209.6' x2='68.7' y2='90.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250' y='179.9' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='76.7' y='99.4' font-size='13' fill='%23334155' text-anchor='start'%3Ey%3C/text%3E%3Cpolygon points='68.7,187.9 101.2,122.9 187.9,122.9 220.5,187.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='60.7' y='204.9' font-size='13' fill='%23334155' text-anchor='end'%3EA(0;0)%3C/text%3E%3Ctext x='93.2' y='114.9' font-size='13' fill='%23334155' text-anchor='end'%3EB(3;6)%3C/text%3E%3Ctext x='195.9' y='114.9' font-size='13' fill='%23334155' text-anchor='start'%3EC(11;6)%3C/text%3E%3Ctext x='228.5' y='204.9' font-size='13' fill='%23334155' text-anchor='start'%3ED(14;0)%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#0d54f5dc"
+    },
+    {
+      "q": "Trapetsiya uchlari A(−2;1), B(1;7), C(7;7) va D(13;1) nuqtalarda joylashgan. Uning o'rta chizig'i nechaga teng?",
+      "v": [
+        "10,5",
+        "21",
+        "4,5",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "AD asos uzunligi 13 − (−2) = 15, BC asos uzunligi 7 − 1 = 6. O'rta chiziq m = (15 + 6) : 2 = 21 : 2 = 10,5. Asoslar yig'indisining o'zi (21) o'rta chiziq emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='47' y1='191.2' x2='253' y2='191.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='88.2' y1='211.8' x2='88.2' y2='88.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250' y='183.2' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='96.2' y='97.2' font-size='13' fill='%23334155' text-anchor='start'%3Ey%3C/text%3E%3Cpolygon points='67.6,180.9 98.5,119.1 160.3,119.1 222.1,180.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='59.6' y='197.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='90.5' y='111.1' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='168.3' y='111.1' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='230.1' y='197.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#a836d972"
+    },
+    {
+      "q": "Uchlari A(0;0), B(4;3), C(12;3) va D(16;0) bo'lgan trapetsiyaning perimetri nechaga teng?",
+      "v": [
+        "34",
+        "29",
+        "39",
+        "24"
+      ],
+      "t": 0,
+      "izoh": "AD = 16, BC = 12 − 4 = 8. AB yon tomoni √(4² + 3²) = 5, CD yon tomoni ham √(4² + 3²) = 5. Perimetr P = 16 + 8 + 5 + 5 = 34. Faqat bitta yon tomonni qo'shsak 29 chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "koordinata-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#1bc352ea"
+    },
+    {
+      "q": "Uchlari A(0;0), B(0;8), C(6;8) va D(12;0) bo'lgan to'g'ri burchakli trapetsiyaning yuzi nechaga teng?",
+      "v": [
+        "144",
+        "96",
+        "72",
+        "48"
+      ],
+      "t": 2,
+      "izoh": "AB tomoni vertikal, shuning uchun u balandlik bo'lib xizmat qiladi: h = 8. Asoslar AD = 12 va BC = 6. Yuza S = (12 + 6) : 2 · 8 = 9 · 8 = 72.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cline x1='53.2' y1='201.2' x2='246.8' y2='201.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='76' y1='224' x2='76' y2='76' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='243.8' y='193.2' font-size='13' fill='%23334155' text-anchor='end'%3Ex%3C/text%3E%3Ctext x='84' y='85' font-size='13' fill='%23334155' text-anchor='start'%3Ey%3C/text%3E%3Cpolygon points='76,201.2 76,110.2 144.3,110.2 212.6,201.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='68' y='218.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='68' y='102.2' font-size='13' fill='%23334155' text-anchor='end'%3EB(0;8)%3C/text%3E%3Ctext x='152.3' y='102.2' font-size='13' fill='%23334155' text-anchor='start'%3EC(6;8)%3C/text%3E%3Ctext x='220.6' y='218.2' font-size='13' fill='%23334155' text-anchor='start'%3ED(12;0)%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "koordinata-trapetsiya",
+      "id": "matematika_plan_m13-trapetsiya#9cc7cda4"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 18 sm va 8 sm. O'rta chiziqning ikki diagonal orasida qolgan bo'lagi necha santimetr?",
+      "v": [
+        "13 sm",
+        "5 sm",
+        "10 sm",
+        "4 sm"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziq diagonallarni ularning o'rtalarida kesadi. Diagonallar orasidagi bo'lak asoslar ayirmasining yarmiga teng: (18 − 8) : 2 = 5 sm. Yarim yig'indi (13 sm) esa butun o'rta chiziq uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194 106,106 194,106 249,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='194' x2='194' y2='106' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='106' y1='106' x2='249' y2='194' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='78.5' y1='150' x2='221.5' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='70.5' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='229.5' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='44' y='210' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='99' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='201' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='150' y='97' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-diagonal-kesma",
+      "id": "matematika_plan_m13-trapetsiya#107a84de"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i diagonallar bilan uchta bo'lakka bo'lindi. O'rtadagi bo'lak 4 sm, kichik asos esa 7 sm. Katta asos necha santimetr?",
+      "v": [
+        "11 sm",
+        "3 sm",
+        "18 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "O'rtadagi bo'lak asoslar ayirmasining yarmi: (a − 7) : 2 = 4. Bundan a − 7 = 8 va a = 15 sm. Bo'lakni to'g'ridan-to'g'ri kichik asosga qo'shish (11 sm) ikkilantirish qadamini tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,196.2 103.8,103.8 196.2,103.8 249,196.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='196.2' x2='196.2' y2='103.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='103.8' y1='103.8' x2='249' y2='196.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='77.4' y1='150' x2='222.6' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='69.4' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='230.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='44' y='212.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='212.2' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='96.8' y='96.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='203.2' y='96.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='214.2' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='150' y='94.8' font-size='13' fill='%23334155' text-anchor='middle'%3E7 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-diagonal-kesma",
+      "id": "matematika_plan_m13-trapetsiya#2d869e2a"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i 12 sm, uning diagonallar orasidagi bo'lagi esa 3 sm. Trapetsiyaning katta asosi necha santimetr?",
+      "v": [
+        "9 sm",
+        "24 sm",
+        "15 sm",
+        "18 sm"
+      ],
+      "t": 2,
+      "izoh": "Yarim yig'indi (a + b) : 2 = 12, yarim ayirma esa (a − b) : 2 = 3. Ikkala tenglikni qo'shsak a = 12 + 3 = 15 sm. Ayirsak kichik asos b = 12 − 3 = 9 sm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,202.8 90.6,97.2 209.4,97.2 249,202.8' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='202.8' x2='209.4' y2='97.2' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90.6' y1='97.2' x2='249' y2='202.8' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='70.8' y1='150' x2='229.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='237.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='150' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='44' y='218.8' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='218.8' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='90.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='90.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-diagonal-kesma",
+      "id": "matematika_plan_m13-trapetsiya#377459f1"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 25 m va 15 m. O'rta chiziqning diagonaldan chetda qolgan bo'laklaridan biri necha metr?",
+      "v": [
+        "7,5 m",
+        "5 m",
+        "12,5 m",
+        "10 m"
+      ],
+      "t": 0,
+      "izoh": "O'rta chiziq (25 + 15) : 2 = 20 m, o'rtadagi bo'lak (25 − 15) : 2 = 5 m. Chetdagi ikki bo'lak teng, ularning har biri (20 − 5) : 2 = 7,5 m. Bu qiymat kichik asosning yarmiga ham teng.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,185.6 90.6,114.4 209.4,114.4 249,185.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='51' y1='185.6' x2='209.4' y2='114.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='90.6' y1='114.4' x2='249' y2='185.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='70.8' y1='150' x2='229.2' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='237.2' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='44' y='201.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='201.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='107.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='107.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='203.6' font-size='13' fill='%23334155' text-anchor='middle'%3E25 m%3C/text%3E%3Ctext x='150' y='105.4' font-size='13' fill='%23334155' text-anchor='middle'%3E15 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-diagonal-kesma",
+      "id": "matematika_plan_m13-trapetsiya#6ee5fe54"
+    },
+    {
+      "q": "Trapetsiyaning o'rta chizig'i uni ikkita kichik trapetsiyaga ajratdi. Yuqori asos 6 sm, pastki asos 10 sm bo'lsa, yuqori va pastki bo'laklar yuzlarining nisbati qanday?",
+      "v": [
+        "9:7",
+        "3:5",
+        "5:3",
+        "7:9"
+      ],
+      "t": 3,
+      "izoh": "O'rta chiziq (6 + 10) : 2 = 8 sm, har bir bo'lakning balandligi h/2. Yuqori bo'lak yuzi (6 + 8) : 2 · h/2 = 3,5h, pastkisi (8 + 10) : 2 · h/2 = 4,5h. Nisbat 3,5 : 4,5 = 7 : 9. Tartibni teskari olsak 9 : 7 chiqadi — bu pastki va yuqori bo'lak nisbati.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='63.8,219 98.3,81 201.8,81 236.3,219' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='81' y1='150' x2='219' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='73' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='227' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='56.8' y='235' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='243.3' y='235' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='91.3' y='74' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='208.8' y='74' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='237' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='150' y='72' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-bolish-yuza",
+      "id": "matematika_plan_m13-trapetsiya#1c448527"
+    },
+    {
+      "q": "Trapetsiya asoslari 12 sm va 4 sm. O'rta chiziq ajratgan yuqori va pastki bo'laklarning yuzlari qanday nisbatda bo'ladi?",
+      "v": [
+        "5:3",
+        "3:5",
+        "1:3",
+        "2:5"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziq (12 + 4) : 2 = 8 sm. Yuqori bo'lak asoslari 4 va 8, pastkisiniki 8 va 12, balandliklari teng. Yuzalar nisbati (4 + 8) : (8 + 12) = 12 : 20 = 3 : 5.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,216 117,84 183,84 249,216' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='150' x2='216' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='76' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='224' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='44' y='232' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='232' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='110' y='77' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='190' y='77' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='234' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='150' y='75' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-bolish-yuza",
+      "id": "matematika_plan_m13-trapetsiya#496674cb"
+    },
+    {
+      "q": "Yuzi 96 sm² bo'lgan trapetsiyaning asoslari 14 sm va 6 sm. O'rta chiziq ajratgan, kichik asosli bo'lakning yuzi necha kvadrat santimetr?",
+      "v": [
+        "48 sm²",
+        "38,4 sm²",
+        "57,6 sm²",
+        "32 sm²"
+      ],
+      "t": 1,
+      "izoh": "O'rta chiziq 10 sm. Bo'laklar yuzlari nisbati (6 + 10) : (10 + 14) = 16 : 24 = 2 : 3. Jami 5 ulush 96 sm² ni beradi, bir ulush 19,2 sm². Kichik asosli bo'lak 2 ulush, ya'ni 38,4 sm². Teng ikkiga bo'lish (48 sm²) noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,213.6 107.6,86.4 192.4,86.4 249,213.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='79.3' y1='150' x2='220.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='71.3' y='154' font-size='13' fill='%23334155' text-anchor='end'%3EM%3C/text%3E%3Ctext x='228.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3EN%3C/text%3E%3Ctext x='44' y='229.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='229.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='100.6' y='79.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='199.4' y='79.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='231.6' font-size='13' fill='%23334155' text-anchor='middle'%3E14 sm%3C/text%3E%3Ctext x='150' y='77.4' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-bolish-yuza",
+      "id": "matematika_plan_m13-trapetsiya#35e11da8"
+    },
+    {
+      "q": "Suv kanalining ko'ndalang kesimi trapetsiya: tubi 2 m, yuqori kengligi 4 m, chuqurligi 1,5 m. Kanalning 200 m uzunlikdagi bo'lagidan qancha tuproq qazib olingan?",
+      "v": [
+        "1800 m³",
+        "450 m³",
+        "600 m³",
+        "900 m³"
+      ],
+      "t": 3,
+      "izoh": "Kesim yuzi S = (4 + 2) : 2 · 1,5 = 3 · 1,5 = 4,5 m². Hajm esa kesim yuzini uzunlikka ko'paytirish bilan topiladi: V = 4,5 · 200 = 900 m³. Ikkiga bo'lishni unutsak (4 + 2) · 1,5 · 200 = 1800 m³ chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='100.5,187.1 51,112.9 249,112.9 199.5,187.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='100.5' y1='112.9' x2='100.5' y2='187.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='111.5,187.1 111.5,176.1 100.5,176.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='108.5' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E1,5 m%3C/text%3E%3Ctext x='93.5' y='203.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='206.5' y='203.1' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='105.9' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='256' y='105.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.1' font-size='13' fill='%23334155' text-anchor='middle'%3E2 m%3C/text%3E%3Ctext x='150' y='103.9' font-size='13' fill='%23334155' text-anchor='middle'%3E4 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kesim-hajm",
+      "id": "matematika_plan_m13-trapetsiya#ba0ef8bc"
+    },
+    {
+      "q": "Ariqning kesimi trapetsiya shaklida: yuqori kengligi 1,2 m, tub kengligi 0,8 m, chuqurligi 0,5 m. Ariqning har bir metr uzunligiga necha litr suv sig'adi?",
+      "v": [
+        "500 litr",
+        "250 litr",
+        "1000 litr",
+        "50 litr"
+      ],
+      "t": 0,
+      "izoh": "Kesim yuzi (1,2 + 0,8) : 2 · 0,5 = 1 · 0,5 = 0,5 m². Bir metr uzunlikdagi hajm 0,5 m³. Bir kub metr 1000 litrga teng bo'lgani uchun javob 0,5 · 1000 = 500 litr.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='84,191.3 51,108.8 249,108.8 216,191.3' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='108.8' x2='84' y2='191.3' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='95,191.3 95,180.3 84,180.3' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='92' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E0,5 m%3C/text%3E%3Ctext x='77' y='207.3' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='223' y='207.3' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='44' y='101.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='256' y='101.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='209.3' font-size='13' fill='%23334155' text-anchor='middle'%3E0,8 m%3C/text%3E%3Ctext x='150' y='99.8' font-size='13' fill='%23334155' text-anchor='middle'%3E1,2 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kesim-hajm",
+      "id": "matematika_plan_m13-trapetsiya#08a295e6"
+    },
+    {
+      "q": "To'g'onning ko'ndalang kesimi trapetsiya: yuqori kengligi 6 m, tub kengligi 14 m, balandligi 5 m. To'g'onning bir metr uzunligiga necha kub metr beton ketadi?",
+      "v": [
+        "100 m³",
+        "70 m³",
+        "50 m³",
+        "25 m³"
+      ],
+      "t": 2,
+      "izoh": "Kesim yuzi S = (14 + 6) : 2 · 5 = 10 · 5 = 50 m². Bir metr uzunlik uchun hajm shu yuzaga teng, ya'ni 50 m³. Tub kengligini balandlikka ko'paytirish (70 m³) trapetsiya formulasini almashtirishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,185.4 107.6,114.6 192.4,114.6 249,185.4' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='107.6' y1='114.6' x2='107.6' y2='185.4' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='118.6,185.4 118.6,174.4 107.6,174.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='115.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E5 m%3C/text%3E%3Ctext x='44' y='201.4' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='201.4' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='100.6' y='107.6' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='199.4' y='107.6' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='203.4' font-size='13' fill='%23334155' text-anchor='middle'%3E14 m%3C/text%3E%3Ctext x='150' y='105.6' font-size='13' fill='%23334155' text-anchor='middle'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-kesim-hajm",
+      "id": "matematika_plan_m13-trapetsiya#c1519ffc"
+    },
+    {
+      "q": "Tomning trapetsiya shaklidagi yon yuzasi asoslari 8 m va 5 m, balandligi 3 m. Shunday ikkita yuzani qoplash uchun necha kvadrat metr material kerak?",
+      "v": [
+        "19,5 m²",
+        "78 m²",
+        "48 m²",
+        "39 m²"
+      ],
+      "t": 3,
+      "izoh": "Bitta yuzaning yuzi (8 + 5) : 2 · 3 = 6,5 · 3 = 19,5 m². Ikkita bir xil yuza uchun 19,5 · 2 = 39 m² material kerak. Ikkilantirishni unutish 19,5 m² javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,187.1 88.1,112.9 211.9,112.9 249,187.1' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='88.1' y1='112.9' x2='88.1' y2='187.1' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='99.1,187.1 99.1,176.1 88.1,176.1' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='96.1' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3Ctext x='44' y='203.1' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='203.1' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='81.1' y='105.9' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='218.9' y='105.9' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='205.1' font-size='13' fill='%23334155' text-anchor='middle'%3E8 m%3C/text%3E%3Ctext x='150' y='103.9' font-size='13' fill='%23334155' text-anchor='middle'%3E5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-kesim-hajm",
+      "id": "matematika_plan_m13-trapetsiya#61ce8475"
+    },
+    {
+      "q": "Teng yonli trapetsiya shaklidagi tomorqaning asoslari 20 m va 12 m, balandligi 3 m. Uni to'sish uchun necha metr sim kerak bo'ladi?",
+      "v": [
+        "37 m",
+        "42 m",
+        "38 m",
+        "40 m"
+      ],
+      "t": 1,
+      "izoh": "Balandlik katta asosda (20 − 12) : 2 = 4 m ajratadi. Yon tomon √(4² + 3²) = 5 m. Perimetr 20 + 12 + 5 + 5 = 42 m. Balandlikni yon tomon deb olish 38 m, proyeksiyani olish esa 40 m beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,164.9 90.6,135.2 209.4,135.2 249,164.9' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.6' y1='135.2' x2='90.6' y2='164.9' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='101.6,164.9 101.6,153.9 90.6,153.9' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E3 m%3C/text%3E%3Ctext x='44' y='180.9' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='180.9' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='128.2' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='128.2' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='182.9' font-size='13' fill='%23334155' text-anchor='middle'%3E20 m%3C/text%3E%3Ctext x='150' y='126.2' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#6a2cca6b"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning perimetri 44 sm, asoslari esa 15 sm va 9 sm. Uning yon tomoni necha santimetr?",
+      "v": [
+        "20 sm",
+        "5 sm",
+        "10 sm",
+        "24 sm"
+      ],
+      "t": 2,
+      "izoh": "Asoslar yig'indisi 15 + 9 = 24 sm. Ikkala yon tomonga 44 − 24 = 20 sm qoladi. Ular teng bo'lgani uchun har biri 20 : 2 = 10 sm. 20 sm — ikkala yon tomonning yig'indisi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,213 90.6,87 209.4,87 249,213' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='44' y='229' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='229' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='80' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='216.4' y='80' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='231' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='150' y='78' font-size='13' fill='%23334155' text-anchor='middle'%3E9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#cc6ab3d1"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning perimetri 64 m, yon tomoni 13 m, katta asosi 24 m. Uning kichik asosi necha metr?",
+      "v": [
+        "14 m",
+        "38 m",
+        "24 m",
+        "19 m"
+      ],
+      "t": 0,
+      "izoh": "Ikkala yon tomon 13 + 13 = 26 m. Asoslar yig'indisi 64 − 26 = 38 m. Kichik asos 38 − 24 = 14 m. 38 m — bu asoslar yig'indisi, alohida asos emas, 19 m esa uning yarmi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,199.5 92.3,100.5 207.8,100.5 249,199.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='44' y='215.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='215.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='85.3' y='93.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='214.8' y='93.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='217.5' font-size='13' fill='%23334155' text-anchor='middle'%3E24 m%3C/text%3E%3Ctext x='150' y='91.5' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='60.6' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E13 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#f1a28bb8"
+    },
+    {
+      "q": "Teng yonli trapetsiyaning asoslari 16 sm va 10 sm, asosidagi burchagi 60° ga teng. Uning perimetri necha santimetr?",
+      "v": [
+        "38 sm",
+        "32 sm",
+        "44 sm",
+        "26 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon tomonning katta asosdagi proyeksiyasi (16 − 10) : 2 = 3 sm. 60° li burchak uchun proyeksiya yon tomonning yarmiga teng, demak yon tomon 6 sm. Perimetr 16 + 10 + 6 + 6 = 38 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,182.2 88.1,117.8 211.9,117.8 249,182.2' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpath d='M 75 182.2 A 24 24 0 0 0 63 161.4' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='84.8' y='166.7' font-size='13' fill='%23334155' text-anchor='middle'%3E60%26%23176;%3C/text%3E%3Ctext x='44' y='198.2' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='198.2' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='81.1' y='110.8' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='218.9' y='110.8' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='200.2' font-size='13' fill='%23334155' text-anchor='middle'%3E16 sm%3C/text%3E%3Ctext x='150' y='108.8' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teng-yonli-perimetr",
+      "id": "matematika_plan_m13-trapetsiya#01b597d5"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 25 sm va 11 sm, yon tomonlari esa 13 sm va 15 sm. Uning balandligi necha santimetr?",
+      "v": [
+        "14 sm",
+        "10 sm",
+        "12 sm",
+        "9 sm"
+      ],
+      "t": 2,
+      "izoh": "Ikkala yuqori uchdan balandlik tushiramiz; ular ajratgan chetki kesmalarni p va q desak, p + q = 25 − 11 = 14. Pifagor teoremasidan p² + h² = 169 va q² + h² = 225, ya'ni p² − q² = −56. Bundan p − q = −4, demak p = 5 va h = √(169 − 25) = 12 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,197.5 90.6,102.5 177.7,102.5 249,197.5' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='90.6' y1='102.5' x2='90.6' y2='197.5' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='101.6,197.5 101.6,186.5 90.6,186.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='98.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='213.5' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='213.5' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='83.6' y='95.5' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='184.7' y='95.5' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='215.5' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='134.2' y='93.5' font-size='13' fill='%23334155' text-anchor='middle'%3E11 sm%3C/text%3E%3Ctext x='59.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='224.4' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E15 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-balandlik-topish",
+      "id": "matematika_plan_m13-trapetsiya#8d0b619b"
+    },
+    {
+      "q": "Asoslari 22 m va 12 m, yon tomonlari 8 m va 6 m bo'lgan trapetsiyaning yuzi necha kvadrat metr?",
+      "v": [
+        "163,2 m²",
+        "81,6 m²",
+        "85 m²",
+        "96 m²"
+      ],
+      "t": 1,
+      "izoh": "Chetki kesmalar uchun p + q = 22 − 12 = 10 va p² − q² = 64 − 36 = 28, demak p − q = 2,8 va p = 6,4. Balandlik h = √(64 − 40,96) = √23,04 = 4,8 m. Yuza S = (22 + 12) : 2 · 4,8 = 17 · 4,8 = 81,6 m².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,171.6 108.6,128.4 216.6,128.4 249,171.6' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='108.6' y1='128.4' x2='108.6' y2='171.6' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='119.6,171.6 119.6,160.6 108.6,160.6' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='116.6' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='187.6' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='187.6' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='101.6' y='121.4' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='223.6' y='121.4' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='189.6' font-size='13' fill='%23334155' text-anchor='middle'%3E22 m%3C/text%3E%3Ctext x='162.6' y='119.4' font-size='13' fill='%23334155' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='68.8' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E8 m%3C/text%3E%3Ctext x='243.8' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-balandlik-topish",
+      "id": "matematika_plan_m13-trapetsiya#0df69f1b"
+    },
+    {
+      "q": "Trapetsiyaning asoslari 27 sm va 6 sm, yon tomonlari 13 sm va 20 sm. Shu trapetsiyaning yuzi necha kvadrat santimetr?",
+      "v": [
+        "396 sm²",
+        "165 sm²",
+        "132 sm²",
+        "198 sm²"
+      ],
+      "t": 3,
+      "izoh": "Chetki kesmalar yig'indisi 27 − 6 = 21, ayirmasi esa (169 − 400) : 21 = −11. Demak p = 5, q = 16 va balandlik h = √(169 − 25) = 12 sm. Yuza S = (27 + 6) : 2 · 12 = 16,5 · 12 = 198 sm².",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='51,194 87.7,106 131.7,106 249,194' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='87.7' y1='106' x2='87.7' y2='194' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4' fill='none'/%3E%3Cpolyline points='98.7,194 98.7,183 87.7,183' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='95.7' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='44' y='210' font-size='13' fill='%23334155' text-anchor='end'%3EA%3C/text%3E%3Ctext x='256' y='210' font-size='13' fill='%23334155' text-anchor='start'%3ED%3C/text%3E%3Ctext x='80.7' y='99' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='138.7' y='99' font-size='13' fill='%23334155' text-anchor='start'%3EC%3C/text%3E%3Ctext x='150' y='212' font-size='13' fill='%23334155' text-anchor='middle'%3E27 sm%3C/text%3E%3Ctext x='109.7' y='97' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='58.3' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E13 sm%3C/text%3E%3Ctext x='201.3' y='154' font-size='13' fill='%23334155' text-anchor='start'%3E20 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "umumiy-balandlik-topish",
+      "id": "matematika_plan_m13-trapetsiya#9960276e"
+    }
+  ]
+}

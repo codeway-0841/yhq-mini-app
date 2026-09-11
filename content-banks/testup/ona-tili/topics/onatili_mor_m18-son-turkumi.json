@@ -1,0 +1,1506 @@
+{
+  "nom": "Son so'z turkumi va ma'no guruhlari",
+  "bolim": "Son",
+  "savollar": [
+    {
+      "q": "Berilganlardan qaysisi son bo'la oladi?",
+      "v": [
+        "astoydil",
+        "kabi",
+        "beshta",
+        "kimdir"
+      ],
+      "t": 2,
+      "izoh": "«beshta» «besh» sonidan «-ta» bilan hosil bo'lgan, «nechta?» so'rog'iga javob beradi. Boshqalari mos emas: «astoydil» — ish-harakatning belgisini bildiradi, turlanmagan holda keladi; «kabi» — mustaqil so'zga ma'no qo'shib, uni boshqa so'zga bog'laydi; «kimdir» — predmet yoki belgini atamay, uni ko'rsatib beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#78df93bb"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida son bor?",
+      "v": [
+        "go'yo",
+        "ikkovlon",
+        "ertaga",
+        "o'qidi"
+      ],
+      "t": 1,
+      "izoh": "«ikkovlon» «ikki» sonidan hosil bo'lgan jamlik ma'nosidagi so'z. Boshqalari mos emas: «go'yo» — so'zga qo'shimcha ma'no yuklaydi, so'roqqa javob bermaydi; «ertaga» — ish-harakatning belgisini bildiradi, turlanmagan holda keladi; «o'qidi» — ish-harakatni bildiradi, zamon shakliga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#3f3e2869"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida son bor?",
+      "v": [
+        "issiq",
+        "o'ntacha",
+        "chuqur",
+        "uxladi"
+      ],
+      "t": 1,
+      "izoh": "«o'ntacha» taxminiy miqdorni bildiradi, «qancha?» so'rog'iga javob beradi. Boshqalari mos emas: «issiq» va «chuqur» — belgini bildiradi, «qanday?» so'rog'iga javob beradi; «uxladi» — ish-harakatni bildiradi, zamon shakliga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#c3dc1069"
+    },
+    {
+      "q": "Quyidagilardan qaysisi sanoq songa misol bo'la oladi?",
+      "v": [
+        "qirq",
+        "minglab",
+        "o'ntadan",
+        "yigirmata"
+      ],
+      "t": 0,
+      "izoh": "«qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblar boshqa guruhga oid: «yigirmata» — dona son; «minglab» — chama son; «o'ntadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#75e74aab"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida sanoq son berilgan?",
+      "v": [
+        "beshtadan",
+        "beshlab",
+        "uchovlon",
+        "qirq"
+      ],
+      "t": 3,
+      "izoh": "«qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblar boshqa guruhga oid: «beshtadan» — taqsim son; «beshlab» — chama son; «uchovlon» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#8233d88a"
+    },
+    {
+      "q": "Qaysi so'z sanoq son deb baholanadi?",
+      "v": [
+        "qirq",
+        "o'nta",
+        "beshov",
+        "o'ntacha"
+      ],
+      "t": 0,
+      "izoh": "«qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblar boshqa guruhga oid: «o'nta» — dona son; «beshov» — jamlovchi son; «o'ntacha» — chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#62bdf460"
+    },
+    {
+      "q": "Qaysi javobdagi so'z dona son sanaladi?",
+      "v": [
+        "yigirmata",
+        "to'rtov",
+        "yigirma",
+        "yigirmanchi"
+      ],
+      "t": 0,
+      "izoh": "«yigirmata» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «to'rtov» — jamlovchi son; «yigirma» — sanoq son; «yigirmanchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#4feeae90"
+    },
+    {
+      "q": "Berilganlardan qaysisi dona son hisoblanadi?",
+      "v": [
+        "o'ttizcha",
+        "yettinchi",
+        "uchov",
+        "uchta"
+      ],
+      "t": 3,
+      "izoh": "«uchta» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «o'ttizcha» — chama son; «uchov» — jamlovchi son; «yettinchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#99a6072c"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida dona son berilgan?",
+      "v": [
+        "yigirma",
+        "uchtadan",
+        "uchta",
+        "o'ttizcha"
+      ],
+      "t": 2,
+      "izoh": "«uchta» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «yigirma» — sanoq son; «uchtadan» — taqsim son; «o'ttizcha» — chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#b98f6bc8"
+    },
+    {
+      "q": "Qaysi so'z chama son deb baholanadi?",
+      "v": [
+        "uchov",
+        "o'ntacha",
+        "o'ninchi",
+        "beshov"
+      ],
+      "t": 1,
+      "izoh": "«o'ntacha» — chama son: u «-cha» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan javoblar boshqa guruhga oid: «uchov» va «beshov» — jamlovchi son; «o'ninchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#09e310ba"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida chama son berilgan?",
+      "v": [
+        "ikkovlon",
+        "yuzlab",
+        "o'ninchi",
+        "ikkitadan"
+      ],
+      "t": 1,
+      "izoh": "«yuzlab» — chama son: u «-lab» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan javoblar boshqa guruhga oid: «ikkovlon» — jamlovchi son; «o'ninchi» — tartib son; «ikkitadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#a5e95a7d"
+    },
+    {
+      "q": "Quyidagilardan qaysisi chama songa misol bo'la oladi?",
+      "v": [
+        "birtadan",
+        "uch",
+        "ikkitadan",
+        "o'ntacha"
+      ],
+      "t": 3,
+      "izoh": "«o'ntacha» — chama son: u «-cha» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan javoblar boshqa guruhga oid: «birtadan» va «ikkitadan» — taqsim son; «uch» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#db59019e"
+    },
+    {
+      "q": "Quyidagilardan qaysisi jamlovchi songa misol bo'la oladi?",
+      "v": [
+        "ikkovlon",
+        "beshinchi",
+        "o'ttizcha",
+        "yigirmanchi"
+      ],
+      "t": 0,
+      "izoh": "«ikkovlon» — jamlovchi son: u «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «o'ttizcha» — chama son; «beshinchi» va «yigirmanchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#afe3f3f2"
+    },
+    {
+      "q": "Berilganlardan qaysisi jamlovchi son hisoblanadi?",
+      "v": [
+        "yuz",
+        "o'ntacha",
+        "uchovlon",
+        "o'ntadan"
+      ],
+      "t": 2,
+      "izoh": "«uchovlon» — jamlovchi son: u «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «yuz» — sanoq son; «o'ntacha» — chama son; «o'ntadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#314d9cd1"
+    },
+    {
+      "q": "Quyidagilardan qaysisi jamlovchi songa misol bo'la oladi?",
+      "v": [
+        "uchta",
+        "uchov",
+        "uch",
+        "birtadan"
+      ],
+      "t": 1,
+      "izoh": "«uchov» — jamlovchi son: u «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «uchta» — dona son; «uch» — sanoq son; «birtadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#2f675480"
+    },
+    {
+      "q": "Qaysi javobdagi so'z taqsim son sanaladi?",
+      "v": [
+        "uchovlon",
+        "uchov",
+        "qirq",
+        "beshtadan"
+      ],
+      "t": 3,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «uchov» va «uchovlon» — jamlovchi son; «qirq» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#13157c0a"
+    },
+    {
+      "q": "Qaysi javobdagi so'z taqsim son sanaladi?",
+      "v": [
+        "o'ntacha",
+        "uchovlon",
+        "o'ntadan",
+        "yuzlab"
+      ],
+      "t": 2,
+      "izoh": "«o'ntadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «o'ntacha» va «yuzlab» — chama son; «uchovlon» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#1a280e12"
+    },
+    {
+      "q": "Berilganlardan qaysisi taqsim son hisoblanadi?",
+      "v": [
+        "yigirmanchi",
+        "yigirmata",
+        "uchtadan",
+        "uchta"
+      ],
+      "t": 2,
+      "izoh": "«uchtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «yigirmanchi» — tartib son; «yigirmata» va «uchta» — dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#af181c88"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "yettita",
+        "o'ttizcha",
+        "beshta",
+        "uchta"
+      ],
+      "t": 1,
+      "izoh": "«o'ttizcha» — chama son: u «-cha» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan uchtasi esa dona son: «yettita», «beshta» va «uchta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#b825d78a"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "beshinchi",
+        "o'nta",
+        "beshta",
+        "yigirmata"
+      ],
+      "t": 0,
+      "izoh": "«beshinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan uchtasi esa dona son: «beshta», «o'nta» va «yigirmata» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#dae7b359"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "to'rtov",
+        "beshov",
+        "uch",
+        "ikkovlon"
+      ],
+      "t": 2,
+      "izoh": "«uch» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan uchtasi esa jamlovchi son: «beshov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «to'rtov» — «-ov»; «ikkovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#4bcc6184"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "ikkovlon",
+        "to'rtov",
+        "yettita",
+        "uchovlon"
+      ],
+      "t": 2,
+      "izoh": "«yettita» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan uchtasi esa jamlovchi son: «ikkovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «to'rtov» — «-ov»; «uchovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#4d07d040"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "uch",
+        "yigirma",
+        "besh",
+        "yettinchi"
+      ],
+      "t": 3,
+      "izoh": "«yettinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan uchtasi esa sanoq son: «yigirma» — aniq miqdorni bildiradi; «besh» — aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi; «uch» — aniq miqdorni qo'shimchasiz bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#8abf84a7"
+    },
+    {
+      "q": "Berilgan so'zlardan qaysisi qolgan uchtasi bilan bir guruhga kirmaydi?",
+      "v": [
+        "yigirmanchi",
+        "o'nta",
+        "yigirmata",
+        "beshta"
+      ],
+      "t": 0,
+      "izoh": "«yigirmanchi» — tartib son: u «-nchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan uchtasi esa dona son: «yigirmata», «o'nta» va «beshta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#68633163"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "yigirma",
+        "uchov",
+        "to'rtov",
+        "uchovlon"
+      ],
+      "t": 0,
+      "izoh": "«yigirma» — sanoq son: u aniq miqdorni bildiradi. Qolgan uchtasi esa jamlovchi son: «uchov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «to'rtov» — «-ov»; «uchovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#0b5a8b4b"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "uchta",
+        "beshlab",
+        "minglab",
+        "o'ttizcha"
+      ],
+      "t": 0,
+      "izoh": "«uchta» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan uchtasi esa chama son: «minglab» — «-lab» qo'shimchasi taxminiy miqdorni bildiradi; xuddi shunday «beshlab» — «-lab»; «o'ttizcha» — «-cha».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#112e9af4"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "beshov",
+        "minglab",
+        "o'ttizcha",
+        "o'ntacha"
+      ],
+      "t": 0,
+      "izoh": "«beshov» — jamlovchi son: u «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan uchtasi esa chama son: «o'ttizcha» — «-cha» qo'shimchasi taxminiy miqdorni bildiradi; xuddi shunday «minglab» — «-lab»; «o'ntacha» — «-cha».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#b451b739"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "uchovlon",
+        "qirq",
+        "ikkovlon",
+        "to'rtov"
+      ],
+      "t": 1,
+      "izoh": "«qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan uchtasi esa jamlovchi son: «uchovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «to'rtov» — «-ov»; «ikkovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#0492e55d"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "uch",
+        "beshtadan",
+        "besh",
+        "yuz"
+      ],
+      "t": 1,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan uchtasi esa sanoq son: «uch» va «yuz» — aniq miqdorni qo'shimchasiz bildiradi; «besh» — aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#b0e1e79d"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "to'rtov",
+        "uchov",
+        "besh",
+        "ikkovlon"
+      ],
+      "t": 2,
+      "izoh": "«besh» — sanoq son: u aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi. Qolgan uchtasi esa jamlovchi son: «to'rtov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «uchov» — «-ov»; «ikkovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#68003596"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "yigirmata",
+        "uchtadan",
+        "beshta",
+        "yettita"
+      ],
+      "t": 1,
+      "izoh": "«uchtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan uchtasi esa dona son: «yigirmata», «yettita» va «beshta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#76b95eec"
+    },
+    {
+      "q": "Quyidagilarning qaysisi boshqa uchtasidan farq qiladi?",
+      "v": [
+        "to'rtov",
+        "yigirmanchi",
+        "uchov",
+        "uchovlon"
+      ],
+      "t": 1,
+      "izoh": "«yigirmanchi» — tartib son: u «-nchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan uchtasi esa jamlovchi son: «to'rtov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «uchov» — «-ov»; «uchovlon» — «-ovlon».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#886fa6b1"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "ikkovlon",
+        "uchovlon",
+        "beshov",
+        "beshtadan"
+      ],
+      "t": 3,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan uchtasi esa jamlovchi son: «ikkovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «uchovlon» — «-ovlon»; «beshov» — «-ov».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#ad16f554"
+    },
+    {
+      "q": "Quyidagi to'rt so'zdan qaysisi ortiqcha?",
+      "v": [
+        "o'ntacha",
+        "yuzlab",
+        "yettinchi",
+        "minglab"
+      ],
+      "t": 2,
+      "izoh": "«yettinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan uchtasi esa chama son: «o'ntacha» — «-cha» qo'shimchasi taxminiy miqdorni bildiradi; xuddi shunday «yuzlab» — «-lab»; «minglab» — «-lab».",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#4308048a"
+    },
+    {
+      "q": "Qaysi so'z qolgan uchtasidan boshqa turga mansub?",
+      "v": [
+        "o'nta",
+        "beshlab",
+        "yettita",
+        "yigirmata"
+      ],
+      "t": 1,
+      "izoh": "«beshlab» — chama son: u «-lab» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan uchtasi esa dona son: «o'nta», «yettita» va «yigirmata» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "onatili_mor_m18-son-turkumi#e812116e"
+    },
+    {
+      "q": "«beshta» so'zining turini aniqlang.",
+      "v": [
+        "tartib son",
+        "jamlovchi son",
+        "sanoq son",
+        "dona son"
+      ],
+      "t": 3,
+      "izoh": "«beshta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar mos emas: tartib son — sanoqdagi o'rinni bildiradi; jamlovchi son — shaxslarni jamlab ko'rsatadi; sanoq son — aniq miqdorni qo'shimchasiz bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#fe7ef337"
+    },
+    {
+      "q": "«ikkovlon» so'zining turini aniqlang.",
+      "v": [
+        "tartib son",
+        "sanoq son",
+        "dona son",
+        "jamlovchi son"
+      ],
+      "t": 3,
+      "izoh": "«ikkovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar mos emas: tartib son — sanoqdagi o'rinni bildiradi; dona son — predmetni donalab sanaydi; sanoq son — aniq miqdorni qo'shimchasiz bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#b6590b89"
+    },
+    {
+      "q": "«uchovlon» qaysi javobda to'g'ri baholangan?",
+      "v": [
+        "dona son",
+        "kasr son",
+        "jamlovchi son",
+        "sanoq son"
+      ],
+      "t": 2,
+      "izoh": "«uchovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar mos emas: dona son — predmetni donalab sanaydi; kasr son — butunning bo'lagini bildiradi; sanoq son — aniq miqdorni qo'shimchasiz bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#c26fb35f"
+    },
+    {
+      "q": "«to'rtov» haqida qaysi javob to'g'ri?",
+      "v": [
+        "chama son",
+        "sanoq son",
+        "tartib son",
+        "jamlovchi son"
+      ],
+      "t": 3,
+      "izoh": "«to'rtov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblar mos emas: sanoq son — aniq miqdorni qo'shimchasiz bildiradi; tartib son — sanoqdagi o'rinni bildiradi; chama son — taxminiy miqdorni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#1c881f1b"
+    },
+    {
+      "q": "Qaysi so'z sanoq son deb baholanadi?",
+      "v": [
+        "o'nta",
+        "beshta",
+        "uch",
+        "yettita"
+      ],
+      "t": 2,
+      "izoh": "«uch» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblar boshqa guruhga oid: «beshta», «o'nta» va «yettita» — dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#48efcaf1"
+    },
+    {
+      "q": "Berilganlardan qaysisi taqsim son hisoblanadi?",
+      "v": [
+        "o'ntadan",
+        "uchta",
+        "yettita",
+        "yigirmata"
+      ],
+      "t": 0,
+      "izoh": "«o'ntadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «yigirmata», «uchta» va «yettita» — dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#204aecc7"
+    },
+    {
+      "q": "Qaysi javobdagi so'z taqsim son sanaladi?",
+      "v": [
+        "besh",
+        "qirq",
+        "ikkitadan",
+        "yuz"
+      ],
+      "t": 2,
+      "izoh": "«ikkitadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «besh», «qirq» va «yuz» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#800ff0b8"
+    },
+    {
+      "q": "Qaysi so'z chama son deb baholanadi?",
+      "v": [
+        "qirq",
+        "yigirma",
+        "o'ttizcha",
+        "uch"
+      ],
+      "t": 2,
+      "izoh": "«o'ttizcha» — chama son: u «-cha» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan javoblar boshqa guruhga oid: «qirq», «yigirma» va «uch» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#adfc8867"
+    },
+    {
+      "q": "Berilganlardan qaysisi taqsim son hisoblanadi?",
+      "v": [
+        "beshtadan",
+        "beshov",
+        "uchovlon",
+        "to'rtov"
+      ],
+      "t": 0,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «beshov», «uchovlon» va «to'rtov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#d3b787d8"
+    },
+    {
+      "q": "Qaysi javobdagi so'z tartib son sanaladi?",
+      "v": [
+        "uchovlon",
+        "uchov",
+        "beshov",
+        "yettinchi"
+      ],
+      "t": 3,
+      "izoh": "«yettinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «uchovlon», «beshov» va «uchov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#c9641592"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida taqsim son berilgan?",
+      "v": [
+        "beshlab",
+        "yuzlab",
+        "o'ntadan",
+        "o'ttizcha"
+      ],
+      "t": 2,
+      "izoh": "«o'ntadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «beshlab», «yuzlab» va «o'ttizcha» — chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#b4e8e2e9"
+    },
+    {
+      "q": "Berilganlardan qaysisi sanoq son hisoblanadi?",
+      "v": [
+        "qirq",
+        "yuzlab",
+        "o'ntacha",
+        "minglab"
+      ],
+      "t": 0,
+      "izoh": "«qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblar boshqa guruhga oid: «minglab», «yuzlab» va «o'ntacha» — chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#83e00c63"
+    },
+    {
+      "q": "Qaysi so'z dona son deb baholanadi?",
+      "v": [
+        "uchov",
+        "ikkovlon",
+        "uchovlon",
+        "yigirmata"
+      ],
+      "t": 3,
+      "izoh": "«yigirmata» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «ikkovlon», «uchovlon» va «uchov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#a9d03026"
+    },
+    {
+      "q": "Quyidagi javoblardan qaysisida taqsim son berilgan?",
+      "v": [
+        "beshtadan",
+        "yigirmata",
+        "uchta",
+        "o'nta"
+      ],
+      "t": 0,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «uchta», «yigirmata» va «o'nta» — dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#41c07cad"
+    },
+    {
+      "q": "Qaysi so'z taqsim son deb baholanadi?",
+      "v": [
+        "beshtadan",
+        "uchovlon",
+        "ikkovlon",
+        "to'rtov"
+      ],
+      "t": 0,
+      "izoh": "«beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «ikkovlon», «uchovlon» va «to'rtov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#5172a0cc"
+    },
+    {
+      "q": "Qaysi so'z dona son deb baholanadi?",
+      "v": [
+        "yigirma",
+        "o'nta",
+        "uch",
+        "besh"
+      ],
+      "t": 1,
+      "izoh": "«o'nta» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblar boshqa guruhga oid: «yigirma», «uch» va «besh» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#3b6086bb"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar sanoq son sanaladi?",
+      "v": [
+        "besh, uch, yuz",
+        "yigirmanchi, yuz, uch",
+        "beshlab, yigirma, uch",
+        "uchta, yuz, qirq"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sanoq son: «besh» — aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi; «uch» va «yuz» — aniq miqdorni qo'shimchasiz bildiradi. Qolgan qatorlarga begona so'z aralashgan: «yigirmanchi» — tartib son; «beshlab» — chama son; «uchta» — dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#a21a7f57"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq dona songa oid?",
+      "v": [
+        "o'nta, yigirmanchi, yigirmata",
+        "o'ntadan, beshta, uchta",
+        "beshta, yigirmata, o'nta",
+        "ikkitadan, yigirmata, beshta"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham dona son: «beshta», «yigirmata» va «o'nta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan qatorlarga begona so'z aralashgan: «yigirmanchi» — tartib son; «o'ntadan» va «ikkitadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#5a79fbf9"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham sanoq songa misol bo'ladi?",
+      "v": [
+        "uchta, qirq, yigirma",
+        "uchovlon, yuz, qirq",
+        "besh, uchov, yuz",
+        "qirq, besh, yigirma"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sanoq son: «qirq» — aniq miqdorni qo'shimchasiz bildiradi; «besh» — aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi; «yigirma» — aniq miqdorni bildiradi. Qolgan qatorlarga begona so'z aralashgan: «uchta» — dona son; «uchovlon» va «uchov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#aab562ce"
+    },
+    {
+      "q": "Qaysi javobdagi so'zlarning uchalasi ham dona songa misol bo'ladi?",
+      "v": [
+        "o'nta, beshta, uchta",
+        "beshta, yettita, yuzlab",
+        "beshinchi, o'nta, yigirmata",
+        "yigirmata, yettita, uchinchi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham dona son: «o'nta», «beshta» va «uchta» — «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan qatorlarga begona so'z aralashgan: «yuzlab» — chama son; «beshinchi» va «uchinchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#c863c8a1"
+    },
+    {
+      "q": "Qaysi qatorda faqat tartib son berilgan?",
+      "v": [
+        "beshlab, o'ninchi, beshinchi",
+        "beshinchi, yigirmanchi, uchinchi",
+        "ikkovlon, uchinchi, beshinchi",
+        "yettinchi, qirq, o'ninchi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham tartib son: «beshinchi» — «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi; xuddi shunday «yigirmanchi» — «-nchi»; «uchinchi» — «-inchi». Qolgan qatorlarga begona so'z aralashgan: «beshlab» — chama son; «ikkovlon» — jamlovchi son; «qirq» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#cb256792"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar sanoq son sanaladi?",
+      "v": [
+        "besh, o'ttizcha, yuz",
+        "uchov, yuz, besh",
+        "yigirmanchi, yuz, qirq",
+        "yigirma, besh, uch"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham sanoq son: «yigirma» — aniq miqdorni bildiradi; «besh» — aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi; «uch» — aniq miqdorni qo'shimchasiz bildiradi. Qolgan qatorlarga begona so'z aralashgan: «o'ttizcha» — chama son; «uchov» — jamlovchi son; «yigirmanchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#d4a3069d"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq chama songa oid?",
+      "v": [
+        "o'ttizcha, yuz, beshlab",
+        "beshlab, minglab, yuzlab",
+        "birtadan, o'ntacha, minglab",
+        "yuzlab, minglab, beshinchi"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham chama son: «beshlab», «minglab» va «yuzlab» — «-lab» qo'shimchasi taxminiy miqdorni bildiradi. Qolgan qatorlarga begona so'z aralashgan: «yuz» — sanoq son; «birtadan» — taqsim son; «beshinchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#c315d26a"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisi to'liq jamlovchi songa oid?",
+      "v": [
+        "to'rtov, uchov, yettinchi",
+        "uchov, uchovlon, ikkovlon",
+        "beshov, minglab, uchovlon",
+        "ikkovlon, beshov, birtadan"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham jamlovchi son: «uchov» — «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «uchovlon» — «-ovlon»; «ikkovlon» — «-ovlon». Qolgan qatorlarga begona so'z aralashgan: «yettinchi» — tartib son; «minglab» — chama son; «birtadan» — taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#63d50722"
+    },
+    {
+      "q": "Qaysi qatordagi barcha misollar jamlovchi son sanaladi?",
+      "v": [
+        "qirq, to'rtov, ikkovlon",
+        "to'rtov, uchovlon, uchinchi",
+        "uchov, yigirma, beshov",
+        "ikkovlon, uchov, to'rtov"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri qatordagi uchala so'z ham jamlovchi son: «ikkovlon» — «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi; xuddi shunday «uchov» — «-ov»; «to'rtov» — «-ov». Qolgan qatorlarga begona so'z aralashgan: «qirq» va «yigirma» — sanoq son; «uchinchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#b26f0817"
+    },
+    {
+      "q": "Qaysi qatorda faqat chama son berilgan?",
+      "v": [
+        "uchinchi, beshlab, o'ttizcha",
+        "yuzlab, o'ntacha, o'ttizcha",
+        "o'ntacha, o'ttizcha, yettita",
+        "o'ttizcha, qirq, minglab"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri qatordagi uchala so'z ham chama son: «yuzlab» — «-lab» qo'shimchasi taxminiy miqdorni bildiradi; xuddi shunday «o'ntacha» — «-cha»; «o'ttizcha» — «-cha». Qolgan qatorlarga begona so'z aralashgan: «uchinchi» — tartib son; «yettita» — dona son; «qirq» — sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#fbe940e0"
+    },
+    {
+      "q": "Qaysi qatorda faqat taqsim son berilgan?",
+      "v": [
+        "qirq, o'ntadan, uchtadan",
+        "birtadan, uchtadan, o'ttizcha",
+        "ikkitadan, beshtadan, birtadan",
+        "o'ninchi, beshtadan, uchtadan"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri qatordagi uchala so'z ham taqsim son: «ikkitadan», «beshtadan» va «birtadan» — «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan qatorlarga begona so'z aralashgan: «qirq» — sanoq son; «o'ttizcha» — chama son; «o'ninchi» — tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#f9d44d4d"
+    },
+    {
+      "q": "Qaysi qatorda faqat tartib son berilgan?",
+      "v": [
+        "yettinchi, yigirmanchi, uchinchi",
+        "minglab, o'ninchi, yettinchi",
+        "beshinchi, yettinchi, to'rtov",
+        "beshov, uchinchi, o'ninchi"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri qatordagi uchala so'z ham tartib son: «yettinchi» — «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi; xuddi shunday «yigirmanchi» — «-nchi»; «uchinchi» — «-inchi». Qolgan qatorlarga begona so'z aralashgan: «minglab» — chama son; «to'rtov» va «beshov» — jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#b46f7940"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«o'ntacha» — kasr son",
+        "«minglab» — taqsim son",
+        "«o'ntadan» — tartib son",
+        "«yettinchi» — tartib son"
+      ],
+      "t": 3,
+      "izoh": "«yettinchi» — tartib son, chunki u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «o'ntacha» va «minglab» aslida chama son; «o'ntadan» aslida taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#657a2b1a"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«o'ntacha» — chama son",
+        "«besh» — dona son",
+        "«yuz» — tartib son",
+        "«beshinchi» — kasr son"
+      ],
+      "t": 0,
+      "izoh": "«o'ntacha» — chama son, chunki u «-cha» qo'shimchasi taxminiy miqdorni bildiradi. Boshqa javoblarda baho chalkashtirilgan: «yuz» va «besh» aslida sanoq son; «beshinchi» aslida tartib son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#e75df8ad"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«beshlab» — chama son",
+        "«yettinchi» — jamlovchi son",
+        "«yigirmanchi» — sanoq son",
+        "«uch» — kasr son"
+      ],
+      "t": 0,
+      "izoh": "«beshlab» — chama son, chunki u «-lab» qo'shimchasi taxminiy miqdorni bildiradi. Boshqa javoblarda baho chalkashtirilgan: «yettinchi» va «yigirmanchi» aslida tartib son; «uch» aslida sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#db1bc3fb"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«ikkovlon» — taqsim son",
+        "«uch» — dona son",
+        "«uchovlon» — kasr son",
+        "«yigirma» — sanoq son"
+      ],
+      "t": 3,
+      "izoh": "«yigirma» — sanoq son, chunki u aniq miqdorni bildiradi. Boshqa javoblarda baho chalkashtirilgan: «ikkovlon» va «uchovlon» aslida jamlovchi son; «uch» aslida sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#0c108aa4"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«yigirma» — tartib son",
+        "«yigirmata» — dona son",
+        "«birtadan» — tartib son",
+        "«uchovlon» — chama son"
+      ],
+      "t": 1,
+      "izoh": "«yigirmata» — dona son, chunki u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «yigirma» aslida sanoq son; «birtadan» aslida taqsim son; «uchovlon» aslida jamlovchi son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#6a5a7987"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«uchovlon» — tartib son",
+        "«yuz» — jamlovchi son",
+        "«o'nta» — dona son",
+        "«yettita» — kasr son"
+      ],
+      "t": 2,
+      "izoh": "«o'nta» — dona son, chunki u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «yuz» aslida sanoq son; «uchovlon» aslida jamlovchi son; «yettita» aslida dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#19cec492"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«yuzlab» — sanoq son",
+        "«birtadan» — taqsim son",
+        "«minglab» — kasr son",
+        "«yigirmata» — sanoq son"
+      ],
+      "t": 1,
+      "izoh": "«birtadan» — taqsim son, chunki u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «yuzlab» va «minglab» aslida chama son; «yigirmata» aslida dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#e9d69b2f"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«beshinchi» — taqsim son",
+        "«ikkovlon» — jamlovchi son",
+        "«o'ttizcha» — tartib son",
+        "«uchinchi» — jamlovchi son"
+      ],
+      "t": 1,
+      "izoh": "«ikkovlon» — jamlovchi son, chunki u «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «beshinchi» va «uchinchi» aslida tartib son; «o'ttizcha» aslida chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#fe9bcd79"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«yettita» — taqsim son",
+        "«beshta» — dona son",
+        "«birtadan» — kasr son",
+        "«o'nta» — sanoq son"
+      ],
+      "t": 1,
+      "izoh": "«beshta» — dona son, chunki u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «yettita» va «o'nta» aslida dona son; «birtadan» aslida taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#d3ba6074"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi to'g'ri?",
+      "v": [
+        "«beshov» — kasr son",
+        "«yettinchi» — chama son",
+        "«uchov» — jamlovchi son",
+        "«uchtadan» — sanoq son"
+      ],
+      "t": 2,
+      "izoh": "«uchov» — jamlovchi son, chunki u «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «beshov» aslida jamlovchi son; «yettinchi» aslida tartib son; «uchtadan» aslida taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#d32464f4"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi to'g'ri juftlangan?",
+      "v": [
+        "«uchovlon» — jamlovchi son",
+        "«ikkovlon» — tartib son",
+        "«yuzlab» — kasr son",
+        "«o'nta» — kasr son"
+      ],
+      "t": 0,
+      "izoh": "«uchovlon» — jamlovchi son, chunki u «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi. Boshqa javoblarda baho chalkashtirilgan: «ikkovlon» aslida jamlovchi son; «yuzlab» aslida chama son; «o'nta» aslida dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#a8051a34"
+    },
+    {
+      "q": "Qaysi javobdagi baho to'g'ri berilgan?",
+      "v": [
+        "«besh» — sanoq son",
+        "«o'ntacha» — jamlovchi son",
+        "«uchta» — jamlovchi son",
+        "«o'ntadan» — jamlovchi son"
+      ],
+      "t": 0,
+      "izoh": "«besh» — sanoq son, chunki u aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi. Boshqa javoblarda baho chalkashtirilgan: «o'ntacha» aslida chama son; «uchta» aslida dona son; «o'ntadan» aslida taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "onatili_mor_m18-son-turkumi#6e2a29ec"
+    },
+    {
+      "q": "Quyidagilar orasidan chama son ni toping.",
+      "v": [
+        "uch",
+        "yigirma",
+        "o'ntacha",
+        "uchta"
+      ],
+      "t": 2,
+      "izoh": "«o'ntacha» shaklida «-cha» qo'shimchasi taxminiy miqdorni bildiradi — shuning uchun u chama son. «uch» shaklida aniq miqdorni qo'shimchasiz bildiradi; «yigirma» shaklida aniq miqdorni bildiradi; «uchta» shaklida «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#311962eb"
+    },
+    {
+      "q": "Quyidagilar orasidan chama son ni toping.",
+      "v": [
+        "yettita",
+        "uchov",
+        "yuzlab",
+        "yigirmanchi"
+      ],
+      "t": 2,
+      "izoh": "«yuzlab» shaklida «-lab» qo'shimchasi taxminiy miqdorni bildiradi — shuning uchun u chama son. «uchov» shaklida «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; «yettita» shaklida «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi; «yigirmanchi» shaklida «-nchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#a013c874"
+    },
+    {
+      "q": "Berilganlarning qaysisi jamlovchi son sanaladi?",
+      "v": [
+        "yuz",
+        "yigirmanchi",
+        "ikkitadan",
+        "uchovlon"
+      ],
+      "t": 3,
+      "izoh": "«uchovlon» shaklida «-ovlon» qo'shimchasi shaxslarni jamlab ko'rsatadi — shuning uchun u jamlovchi son. «yuz» shaklida aniq miqdorni qo'shimchasiz bildiradi; «yigirmanchi» shaklida «-nchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi; «ikkitadan» shaklida «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#4c373919"
+    },
+    {
+      "q": "Berilganlarning qaysisi taqsim son sanaladi?",
+      "v": [
+        "uch",
+        "beshov",
+        "yigirma",
+        "ikkitadan"
+      ],
+      "t": 3,
+      "izoh": "«ikkitadan» shaklida «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi — shuning uchun u taqsim son. «beshov» shaklida «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi; «yigirma» shaklida aniq miqdorni bildiradi; «uch» shaklida aniq miqdorni qo'shimchasiz bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#273d0506"
+    },
+    {
+      "q": "Uch qatorda faqat sanoq son berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "beshtadan, yuz, besh",
+        "yigirma, qirq, yuz",
+        "uch, qirq, besh",
+        "qirq, yuz, yigirma"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «beshtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Yonidagi «besh» va «yuz» esa sanoq son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#e4d910f2"
+    },
+    {
+      "q": "Qaysi qatordagi so'zlardan biri tartib son emas?",
+      "v": [
+        "o'ninchi, beshinchi, uchinchi",
+        "beshinchi, yettinchi, o'ninchi",
+        "uchinchi, uchta, yettinchi",
+        "yettinchi, uchinchi, o'ninchi"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «uchta» — dona son: u «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Yonidagi «uchinchi» va «yettinchi» esa tartib son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#ab1d9240"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq chama sondan iborat emas?",
+      "v": [
+        "minglab, yuzlab, o'ttizcha",
+        "o'ntacha, o'ttizcha, yuzlab",
+        "o'ttizcha, yuzlab, beshlab",
+        "uchinchi, yuzlab, minglab"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «uchinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Yonidagi «minglab» va «yuzlab» esa chama son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#fca8e5c7"
+    },
+    {
+      "q": "Uch qatorda faqat jamlovchi son berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "to'rtov, uchovlon, uchov",
+        "uchov, uchovlon, ikkovlon",
+        "beshinchi, beshov, uchov",
+        "beshov, uchov, to'rtov"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «beshinchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Yonidagi «beshov» va «uchov» esa jamlovchi son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#fd74a2c2"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq taqsim sondan iborat emas?",
+      "v": [
+        "birtadan, ikkitadan, uchtadan",
+        "o'ntadan, o'ninchi, uchtadan",
+        "uchtadan, ikkitadan, birtadan",
+        "ikkitadan, uchtadan, o'ntadan"
+      ],
+      "t": 1,
+      "izoh": "To'g'ri javobdagi «o'ninchi» — tartib son: u «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Yonidagi «o'ntadan» va «uchtadan» esa taqsim son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#fd617128"
+    },
+    {
+      "q": "Uch qatorda faqat chama son berilgan. Qaysi qatorga begona so'z aralashgan?",
+      "v": [
+        "yuzlab, o'ntacha, o'ttizcha",
+        "o'ttizcha, minglab, yuzlab",
+        "beshlab, o'ntacha, beshov",
+        "o'ntacha, beshlab, minglab"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «beshov» — jamlovchi son: u «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Yonidagi «beshlab» va «o'ntacha» esa chama son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#66ec2de7"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq jamlovchi sondan iborat emas?",
+      "v": [
+        "to'rtov, uchov, beshov",
+        "uchov, beshov, to'rtov",
+        "ikkovlon, uchov, uchovlon",
+        "besh, beshov, uchovlon"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «besh» — sanoq son: u aniq miqdorni bildiradi, «qancha?» so'rog'iga javob beradi. Yonidagi «uchovlon» va «beshov» esa jamlovchi son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#16c422df"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida chama son bo'lmagan so'z bor?",
+      "v": [
+        "o'ntacha, minglab, yuzlab",
+        "beshlab, o'ttizcha, o'ntacha",
+        "uchtadan, yuzlab, minglab",
+        "minglab, o'ttizcha, yuzlab"
+      ],
+      "t": 2,
+      "izoh": "To'g'ri javobdagi «uchtadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Yonidagi «minglab» va «yuzlab» esa chama son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#cf4782b9"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida chama son bo'lmagan so'z bor?",
+      "v": [
+        "minglab, o'ntacha, yuzlab",
+        "o'ttizcha, yuzlab, minglab",
+        "beshlab, o'ttizcha, o'ntacha",
+        "o'ntadan, o'ttizcha, yuzlab"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «o'ntadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Yonidagi «yuzlab» va «o'ttizcha» esa chama son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#fc5ad43e"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq dona sondan iborat emas?",
+      "v": [
+        "yigirmanchi, uchta, o'nta",
+        "o'nta, uchta, beshta",
+        "uchta, o'nta, yettita",
+        "yettita, o'nta, beshta"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri javobdagi «yigirmanchi» — tartib son: u «-nchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Yonidagi «o'nta» va «uchta» esa dona son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#ad2ef78c"
+    },
+    {
+      "q": "Qaysi javobdagi qator to'liq tartib sondan iborat emas?",
+      "v": [
+        "beshinchi, yigirmanchi, o'ninchi",
+        "yettinchi, yigirmanchi, beshinchi",
+        "uchinchi, yettinchi, o'ninchi",
+        "ikkitadan, o'ninchi, yigirmanchi"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «ikkitadan» — taqsim son: u «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Yonidagi «o'ninchi» va «yigirmanchi» esa tartib son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#0cb2e3b0"
+    },
+    {
+      "q": "Quyidagi qatorlarning qaysisida dona son bo'lmagan so'z bor?",
+      "v": [
+        "uchta, beshta, yettita",
+        "beshta, yettita, o'nta",
+        "yettita, beshta, yigirmata",
+        "qirq, uchta, yigirmata"
+      ],
+      "t": 3,
+      "izoh": "To'g'ri javobdagi «qirq» — sanoq son: u aniq miqdorni qo'shimchasiz bildiradi. Yonidagi «uchta» va «yigirmata» esa dona son. Boshqa uch qatorga begona so'z tushmagan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#714e033a"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«uchta» — jamlovchi son",
+        "«yuz» — sanoq son",
+        "«yigirma» — sanoq son",
+        "«yigirmata» — dona son"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «uchta» so'ziga jamlovchi son deb baho berilgan, holbuki u — dona son: «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblardagi baho o'rinli: «yigirmata» rostdan ham dona son; «yuz» va «yigirma» rostdan ham sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#e0da8244"
+    },
+    {
+      "q": "Qaysi javobdagi baho noto'g'ri berilgan?",
+      "v": [
+        "«beshinchi» — tartib son",
+        "«uchtadan» — jamlovchi son",
+        "«minglab» — chama son",
+        "«beshov» — jamlovchi son"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «uchtadan» so'ziga jamlovchi son deb baho berilgan, holbuki u — taqsim son: «-dan» qo'shimchasi miqdorning bo'lib berilishini ko'rsatadi. Qolgan javoblardagi baho o'rinli: «beshinchi» rostdan ham tartib son; «beshov» rostdan ham jamlovchi son; «minglab» rostdan ham chama son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#9295df0c"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«beshta» — dona son",
+        "«to'rtov» — jamlovchi son",
+        "«beshtadan» — taqsim son",
+        "«yettinchi» — sanoq son"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «yettinchi» so'ziga sanoq son deb baho berilgan, holbuki u — tartib son: «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan javoblardagi baho o'rinli: «beshta» rostdan ham dona son; «to'rtov» rostdan ham jamlovchi son; «beshtadan» rostdan ham taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#7d9ead33"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«beshlab» — chama son",
+        "«besh» — sanoq son",
+        "«uchta» — chama son",
+        "«yigirmata» — dona son"
+      ],
+      "t": 2,
+      "izoh": "Bu javobda «uchta» so'ziga chama son deb baho berilgan, holbuki u — dona son: «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblardagi baho o'rinli: «beshlab» rostdan ham chama son; «besh» rostdan ham sanoq son; «yigirmata» rostdan ham dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#57dd1990"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«yigirmata» — dona son",
+        "«uch» — tartib son",
+        "«qirq» — sanoq son",
+        "«yuz» — sanoq son"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «uch» so'ziga tartib son deb baho berilgan, holbuki u — sanoq son: aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblardagi baho o'rinli: «yigirmata» rostdan ham dona son; «qirq» va «yuz» rostdan ham sanoq son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#d5d9f887"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«uchov» — jamlovchi son",
+        "«o'ninchi» — kasr son",
+        "«o'ntacha» — chama son",
+        "«o'ntadan» — taqsim son"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «o'ninchi» so'ziga kasr son deb baho berilgan, holbuki u — tartib son: «-inchi» qo'shimchasi sanoqdagi o'rinni ko'rsatadi. Qolgan javoblardagi baho o'rinli: «uchov» rostdan ham jamlovchi son; «o'ntacha» rostdan ham chama son; «o'ntadan» rostdan ham taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#441abbb5"
+    },
+    {
+      "q": "Quyidagi tahlillardan qaysisi xato?",
+      "v": [
+        "«o'ntadan» — taqsim son",
+        "«beshtadan» — taqsim son",
+        "«uchtadan» — taqsim son",
+        "«uch» — taqsim son"
+      ],
+      "t": 3,
+      "izoh": "Bu javobda «uch» so'ziga taqsim son deb baho berilgan, holbuki u — sanoq son: aniq miqdorni qo'shimchasiz bildiradi. Qolgan javoblardagi baho o'rinli: «o'ntadan», «uchtadan» va «beshtadan» rostdan ham taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#a19d8e8a"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«o'nta» — taqsim son",
+        "«o'ntadan» — taqsim son",
+        "«uchta» — dona son",
+        "«beshtadan» — taqsim son"
+      ],
+      "t": 0,
+      "izoh": "Bu javobda «o'nta» so'ziga taqsim son deb baho berilgan, holbuki u — dona son: «-ta» qo'shimchasi predmetni donalab sanashni ko'rsatadi. Qolgan javoblardagi baho o'rinli: «beshtadan» va «o'ntadan» rostdan ham taqsim son; «uchta» rostdan ham dona son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#b6ec2612"
+    },
+    {
+      "q": "Qaysi javobda so'z va uning turi noto'g'ri juftlangan?",
+      "v": [
+        "«beshov» — jamlovchi son",
+        "«to'rtov» — chama son",
+        "«beshlab» — chama son",
+        "«ikkitadan» — taqsim son"
+      ],
+      "t": 1,
+      "izoh": "Bu javobda «to'rtov» so'ziga chama son deb baho berilgan, holbuki u — jamlovchi son: «-ov» qo'shimchasi shaxslarni jamlab ko'rsatadi. Qolgan javoblardagi baho o'rinli: «beshov» rostdan ham jamlovchi son; «beshlab» rostdan ham chama son; «ikkitadan» rostdan ham taqsim son.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "onatili_mor_m18-son-turkumi#fb965b4e"
+    }
+  ]
+}

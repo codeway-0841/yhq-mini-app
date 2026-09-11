@@ -1,0 +1,396 @@
+{
+  "nom": "53-mavzu. Linza Optik Kuchi Lab",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "53-laboratoriya ishining maqsadi nima?",
+      "v": [
+        "Linzaning fokus masofasini va optik kuchini aniqlashni o'rganish",
+        "Linzaning diametrini va qalinligini o'lchash",
+        "Nur sindirish ko'rsatkichini aniqlash",
+        "Ko'rish burchagini o'lchash"
+      ],
+      "t": 0,
+      "izoh": "Laboratoriya ishining maqsadi — linzaning fokus masofasini va optik kuchini aniqlashni o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#51a2f192"
+    },
+    {
+      "q": "Linzaning optik kuchini aniqlash laboratoriya ishida qanday jihozlar kerak?",
+      "v": [
+        "Qavariq linza, elektr lampa, ekran va masshtabli chizg'ich",
+        "Botiq linza, sham, oynak va tarozi",
+        "Qavariq linza, lazer, ampermetr va voltmetr",
+        "Prizma, lampa, ekran va sekundomer"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: qavariq linza, elektr lampa, ekran va masshtabli chizg'ich.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#24fc1c5e"
+    },
+    {
+      "q": "Tajribada ekran oldinga-orqaga surilib nimaga erishiladi?",
+      "v": [
+        "Lampa tolasining eng aniq tasviri hosil bo'ladigan masofa topiladi",
+        "Ekranning linzaga nisbatan burchagi o'lchanadi",
+        "Lampaning yorqinligi oshiriladi",
+        "Linzaning qalinligi aniqlanadi"
+      ],
+      "t": 0,
+      "izoh": "Ekranni surib, lampa tolasining eng aniq tasviri hosil bo'ladigan masofa topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#20c96de9"
+    },
+    {
+      "q": "Laboratoriya ishida d1 masofa nimani bildiradi?",
+      "v": [
+        "Buyumdan (lampadan) linzagacha bo'lgan masofani",
+        "Linzadan ekrangacha bo'lgan masofani",
+        "Ekranning enini",
+        "Lampaning balandligini"
+      ],
+      "t": 0,
+      "izoh": "Buyumdan (lampadan) linzagacha bo'lgan d1 masofa o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#4bc289bb"
+    },
+    {
+      "q": "Laboratoriya ishida f1 masofa nimani bildiradi?",
+      "v": [
+        "Linzadan tasvirgacha (ekrangacha) bo'lgan masofani",
+        "Buyumdan linzagacha bo'lgan masofani",
+        "Linzaning fokus masofasini",
+        "Stolning uzunligini"
+      ],
+      "t": 0,
+      "izoh": "Linzadan tasvirgacha (ekrangacha) bo'lgan f1 masofa o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#7aeafe44"
+    },
+    {
+      "q": "Laboratoriya ishida tajriba necha marta takrorlanadi?",
+      "v": [
+        "Uch marta (d1, d2, d3 masofalarda)",
+        "Ikki marta",
+        "Beshta marta",
+        "Bir marta"
+      ],
+      "t": 0,
+      "izoh": "Lampa bilan linza orasidagi masofa d2 va d3 ga o'zgartirilib, tajriba jami uch marta takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#01088e29"
+    },
+    {
+      "q": "Fokus masofasining o'rtacha qiymati qanday hisoblanadi?",
+      "v": [
+        "F_o'rt = (F1 + F2 + F3)/3",
+        "F_o'rt = F1·F2·F3",
+        "F_o'rt = (F1 + F2 + F3)/2",
+        "F_o'rt = F1 + F2 + F3"
+      ],
+      "t": 0,
+      "izoh": "F_o'rt = (F1 + F2 + F3)/3 formulaga qo'yib, fokus masofasining o'rtacha qiymati hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#05f6e1b6"
+    },
+    {
+      "q": "Linza optik kuchining o'rtacha qiymati qaysi formula bilan hisoblanadi?",
+      "v": [
+        "D = 1/F_o'rt",
+        "D = F_o'rt",
+        "D = 2F_o'rt",
+        "D = F_o'rt²"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F_o'rt formuladan linza optik kuchining o'rtacha qiymati hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#498f1090"
+    },
+    {
+      "q": "Laboratoriya ishida jadvalda optik kuch D qanday birlikda yoziladi?",
+      "v": [
+        "dptr (dioptriya)",
+        "m",
+        "sm",
+        "Vt"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda D ustuni dptr (dioptriya) birligida to'ldiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#ac2a8475"
+    },
+    {
+      "q": "Jadvalda d, f va F kattaliklar qanday birlikda ifodalanadi?",
+      "v": [
+        "Metrda (m)",
+        "Santimetrda (sm)",
+        "Millimetrda (mm)",
+        "Kilometrda (km)"
+      ],
+      "t": 0,
+      "izoh": "Jadval ustunlarida d, m; f, m; F, m deb ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#bd861f26"
+    },
+    {
+      "q": "Ishning 8-bandiga ko'ra linza lampadan qanday masofaga qo'yiladi?",
+      "v": [
+        "d = 2F masofaga",
+        "d = F masofaga",
+        "d < F masofaga",
+        "d > 3F masofaga"
+      ],
+      "t": 0,
+      "izoh": "Linza lampadan d = 2F masofaga qo'yilib, ekranda lampa tolasining tasviri hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#e3befe91"
+    },
+    {
+      "q": "Ishning 9-bandiga ko'ra linza lampadan qanday masofaga qo'yiladi?",
+      "v": [
+        "F < d < 2F shart bajariladigan masofaga",
+        "d = 2F masofaga",
+        "d < F masofaga",
+        "d = 4F masofaga"
+      ],
+      "t": 0,
+      "izoh": "Linza lampadan shunday masofaga qo'yiladiki, bunda F < d < 2F shart bajarilsin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#2878639e"
+    },
+    {
+      "q": "Ishning 10-bandiga ko'ra linza lampadan d < F masofaga qo'yilganda ekranda nima kuzatiladi?",
+      "v": [
+        "Ekranda tasvir hosil bo'lmaydi",
+        "Kichiklashgan tasvir hosil bo'ladi",
+        "Buyumga teng tasvir hosil bo'ladi",
+        "Ikki marta kattalashgan tasvir hosil bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "d < F bo'lganda ekranda tasvir hosil bo'lmaydi; linza orqasida tasvir hosil bo'lmaganligiga ishonch hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#26ea61b9"
+    },
+    {
+      "q": "d < F masofada ekranda tasvir hosil bo'lmasligining sababi nima?",
+      "v": [
+        "Bu holda tasvir mavhum bo'ladi, uni ekranga tushirish mumkin emas",
+        "Lampa yetarlicha yorug' emas",
+        "Linza nurni to'liq yutadi",
+        "Ekran juda uzoqda turadi"
+      ],
+      "t": 0,
+      "izoh": "d < F bo'lganda f manfiy bo'lib, tasvir mavhum bo'ladi, shuning uchun ekranda hosil bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#551e9ab5"
+    },
+    {
+      "q": "Laboratoriya ishida har bir tajribadan olingan d va f qiymatlardan nima hisoblanadi?",
+      "v": [
+        "Linza formulasidan foydalanib F1, F2, F3 fokus masofalari",
+        "Linzaning diametri",
+        "Lampaning quvvati",
+        "Ekranning yuzasi"
+      ],
+      "t": 0,
+      "izoh": "Linza formulasidan foydalanib har bir tajribadan olingan d va f uchun F1, F2, F3 hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#7697bacf"
+    },
+    {
+      "q": "Tajribada buyum sifatida nimaning tasviri olinadi?",
+      "v": [
+        "Elektr lampa tolasining",
+        "Sham alangasining",
+        "Qalamning",
+        "Deraza ramkasining"
+      ],
+      "t": 0,
+      "izoh": "Tajribada lampa tolasining eng aniq tasviri ekranda hosil qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#214fb5b6"
+    },
+    {
+      "q": "Optik kuchi 2 dptr bo'lgan linzaning fokus masofasi qancha?",
+      "v": [
+        "0,5 m",
+        "2 m",
+        "0,2 m",
+        "5 m"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F dan F = 1/D = 1/2 = 0,5 m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#fba513d9"
+    },
+    {
+      "q": "Fokus masofasi 0,25 m bo'lgan linzaning optik kuchi qancha?",
+      "v": [
+        "4 dptr",
+        "0,25 dptr",
+        "2,5 dptr",
+        "25 dptr"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F = 1/0,25 = 4 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#12c68ce7"
+    },
+    {
+      "q": "Laboratoriya ishida uch tajribada F1 = 19 sm, F2 = 20 sm, F3 = 21 sm olindi. Fokus masofasining o'rtacha qiymati qancha?",
+      "v": [
+        "20 sm",
+        "21 sm",
+        "19,5 sm",
+        "60 sm"
+      ],
+      "t": 0,
+      "izoh": "F_o'rt = (19+20+21)/3 = 20 sm.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#31e3cfa0"
+    },
+    {
+      "q": "d = 2F masofada ekranda hosil bo'lgan tasvir kattaligi buyumga nisbatan qanday?",
+      "v": [
+        "Buyumga teng",
+        "Ikki marta katta",
+        "Ikki marta kichik",
+        "Nuqtasimon"
+      ],
+      "t": 0,
+      "izoh": "d = 2F bo'lganda f = 2F va K = 1, tasvir buyumga teng o'lchamli bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#77b3ce9b"
+    },
+    {
+      "q": "F < d < 2F shartda ekranda hosil bo'lgan tasvir qanday bo'ladi?",
+      "v": [
+        "Haqiqiy, teskari va kattalashgan",
+        "Haqiqiy, teskari va kichraygan",
+        "Mavhum va to'g'ri",
+        "Buyumga teng"
+      ],
+      "t": 0,
+      "izoh": "F < d < 2F bo'lganda f > 2F, K > 1 — tasvir haqiqiy, teskari va kattalashgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#30360961"
+    },
+    {
+      "q": "Laboratoriya ishida elektr lampa, linza va ekran qanday joylashtiriladi?",
+      "v": [
+        "Stol ustiga 79-rasmda ko'rsatilgandek",
+        "Pol ustiga qatlamma-qatlam",
+        "Bir-biriga perpendikulyar devorga",
+        "Shkaf ichiga yopiq holda"
+      ],
+      "t": 0,
+      "izoh": "Elektr lampa, linza va ekran stol ustiga 79-rasmda ko'rsatilgandek joylashtiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#c13f3e89"
+    },
+    {
+      "q": "O'lchash va hisoblash natijalari nima qilinadi?",
+      "v": [
+        "Jadvalga yoziladi",
+        "Xotirada saqlanadi",
+        "Darhol chizma bilan ifodalanadi",
+        "Hisobotdan tashqariga chiqariladi"
+      ],
+      "t": 0,
+      "izoh": "O'lchash va hisoblash natijalari jadvalga yoziladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#3e153417"
+    },
+    {
+      "q": "Tajriba nechta turli d masofada o'tkazilgach, fokus masofasining o'rtacha qiymati olinishining sababi nima?",
+      "v": [
+        "O'lchash xatoliklarini kamaytirish va aniqroq natija olish uchun",
+        "Linzani tezroq eskirtish uchun",
+        "Jadvalni to'ldirish uchun",
+        "Lampa quvvatini tejash uchun"
+      ],
+      "t": 0,
+      "izoh": "Bir necha tajriba natijasining o'rtacha qiymati olish o'lchash aniqligini oshiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#1a54777f"
+    },
+    {
+      "q": "Fokus masofasining o'rtacha qiymati 0,2 m bo'lgan linzaning optik kuchi qancha?",
+      "v": [
+        "5 dptr",
+        "0,2 dptr",
+        "2 dptr",
+        "20 dptr"
+      ],
+      "t": 0,
+      "izoh": "D = 1/F_o'rt = 1/0,2 = 5 dptr.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#7cb437b6"
+    },
+    {
+      "q": "Laboratoriya ishida buyumdan linzagacha bo'lgan masofa oshirilganda (d > 2F holga yaqinlashganda) ekrandagi tasvir qanday o'zgaradi?",
+      "v": [
+        "Tasvir kichrayadi va fokusga yaqinlashadi",
+        "Tasvir kattalashadi",
+        "Tasvir o'zgarishsiz qoladi",
+        "Tasvir darhol yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "d oshganda f kamayib F ga yaqinlashadi, K = f/d kichrayadi — tasvir kichrayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m53-linza-optik-kuchi-lab#a0996692"
+    }
+  ]
+}

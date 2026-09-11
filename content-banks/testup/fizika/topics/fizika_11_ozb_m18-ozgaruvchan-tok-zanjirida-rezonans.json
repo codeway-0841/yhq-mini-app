@@ -1,0 +1,456 @@
+{
+  "nom": "18-mavzu. Ozgaruvchan Tok Zanjirida Rezonans",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "O'zgaruvchan tok zanjirida rezonans hodisasi qanday sharoitda kuzatiladi?",
+      "v": [
+        "XL = XC bo'lganda",
+        "XL > XC bo'lganda",
+        "XL < XC bo'lganda",
+        "R = 0 bo'lganda"
+      ],
+      "t": 0,
+      "izoh": "XC = XL bo'lganda XC − XL = 0 bo'lib, zanjir qarshiligi minimal qiymatga tushadi — rezonans ro'y beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#01a6b0a1"
+    },
+    {
+      "q": "Rezonans davrida zanjirning to'la qarshiligi nimaga teng bo'ladi?",
+      "v": [
+        "Aktiv qarshilikka (Zmin = R)",
+        "Induktiv qarshilikka",
+        "Sig'im qarshilikka",
+        "Nolga"
+      ],
+      "t": 0,
+      "izoh": "Rezonansda XL − XC = 0 bo'lgani uchun Zmin = R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#8846734f"
+    },
+    {
+      "q": "Rezonans davrida zanjirdagi tok kuchining amplitudasi qanday ifodalanadi?",
+      "v": [
+        "Im = Um/R",
+        "Im = Um/XL",
+        "Im = Um/XC",
+        "Im = Um/(R + XL)"
+      ],
+      "t": 0,
+      "izoh": "(3–26) formula: Im = Um/Zmin = Um/R.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#d9541921"
+    },
+    {
+      "q": "Rezonans kuzatilishi uchun siklik chastota qanday shartni qanoatlantirishi kerak?",
+      "v": [
+        "ωrez = 1/√(LC)",
+        "ωrez = √(LC)",
+        "ωrez = LC",
+        "ωrez = 2πLC"
+      ],
+      "t": 0,
+      "izoh": "ωL = 1/(ωC) shartdan ωrez = 1/√(LC) kelib chiqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#7ac52b46"
+    },
+    {
+      "q": "Zanjirda rezonans vujudga kelishi uchun tashqi davriy kuchlanish chastotasi nimaga teng bo'lishi zarur?",
+      "v": [
+        "Zanjirning xususiy chastotasiga (ωrez = ω0)",
+        "Zanjir chastotasidan ikki marta katta bo'lishi kerak",
+        "Zanjir chastotasidan ikki marta kichik bo'lishi kerak",
+        "Nolga teng bo'lishi kerak"
+      ],
+      "t": 0,
+      "izoh": "Rezonans uchun tashqi kuchlanish chastotasi zanjirning xususiy chastotasi ω0 = 1/√(LC) ga teng bo'lishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#4b437ad5"
+    },
+    {
+      "q": "Rezonans egri chizig'i nimani ifodalaydi?",
+      "v": [
+        "Tok kuchi amplitudasining tashqi kuchlanish chastotasiga bog'liqligini",
+        "Kuchlanishning tok kuchiga bog'liqligini",
+        "Qarshilikning vaqtga bog'liqligini",
+        "Energiyaning sig'imga bog'liqligini"
+      ],
+      "t": 0,
+      "izoh": "Im ning chastotaga bog'liqlik grafigi rezonans egri chizig'i deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#244c36f9"
+    },
+    {
+      "q": "Ketma-ket zanjirda kuzatiladigan rezonans nima deb ataladi?",
+      "v": [
+        "Kuchlanishlar rezonansi",
+        "Toklar rezonansi",
+        "Quvvat rezonansi",
+        "Energiya rezonansi"
+      ],
+      "t": 0,
+      "izoh": "Rezonans vaqtida g'altak va kondensatordagi kuchlanishlar keskin ortadi, shuning uchun kuchlanishlar rezonansi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#43dec394"
+    },
+    {
+      "q": "Rezonans davrida g'altak va kondensatordagi kuchlanishlar qanday ifodalanadi?",
+      "v": [
+        "ULrez = UCrez = (Um/R)·√(L/C)",
+        "ULrez = UCrez = Um·R",
+        "ULrez = Um/2",
+        "ULrez = UCrez = 0"
+      ],
+      "t": 0,
+      "izoh": "(3–27) formula: ULrez = UCrez = Im·XL = (Um/R)·√(L/C).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#9f453171"
+    },
+    {
+      "q": "Rezonansda g'altak va kondensatordagi kuchlanishlar tashqi kuchlanishdan ortiq bo'lishi mumkinmi?",
+      "v": [
+        "Ha, chunki (1/R)·√(L/C) > 1 shart bajariladi",
+        "Yo'q, hech qachon",
+        "Faqat R juda katta bo'lsa",
+        "Faqat chastota nolga teng bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Tebranish konturlarida (1/R)·√(L/C) > 1 bo'lgani uchun UL va UC tashqi kuchlanishdan katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#bf2a72e6"
+    },
+    {
+      "q": "Aktiv qarshilikning katta qiymatlarida rezonans qanday kuzatiladi?",
+      "v": [
+        "Amalda kuzatilmaydi",
+        "Yana ham keskin kuzatiladi",
+        "Ikki marta kuchayadi",
+        "Hech qanday o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "R katta bo'lsa rezonans egri chizig'i yassi bo'lib, amalda rezonans kuzatilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#6c174e34"
+    },
+    {
+      "q": "Rezonans davrida tok amplitudasi va umumiy kuchlanish amplitudasi faza jihatidan qanday tebranadi?",
+      "v": [
+        "Bir xil fazada",
+        "π/2 farq bilan",
+        "π farq bilan",
+        "π/4 farq bilan"
+      ],
+      "t": 0,
+      "izoh": "Rezonans davrida tok va umumiy kuchlanish bir xil fazada tebranadi (φ = 0).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#013a0ede"
+    },
+    {
+      "q": "Radiopriyomnikda kerakli stansiya signallarini ajratib olish qaysi hodisaga asoslangan?",
+      "v": [
+        "Rezonans hodisasiga",
+        "Elektroliz hodisasiga",
+        "Termoelektron emissiyaga",
+        "Fotoefektga"
+      ],
+      "t": 0,
+      "izoh": "Radiopriyomniklarda kerakli stansiyani tanlash rezonans hodisasiga asoslangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#353ba0ef"
+    },
+    {
+      "q": "Radiopriyomnikda kerakli stansiyaga sozlash qanday amalga oshiriladi?",
+      "v": [
+        "Konturdagi sig'im yoki induktivlik qiymati o'zgartirilib, xususiy chastota stansiya chastotasiga tenglashtiriladi",
+        "Aktiv qarshilik oshirilib",
+        "Generator kuchlanishi oshirilib",
+        "Simlar qisqartirilib"
+      ],
+      "t": 0,
+      "izoh": "Kontur sig'imi yoki induktivligi o'zgartirib, kontur xususiy chastotasi qabul qilinadigan signal chastotasiga sozlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#17a027fd"
+    },
+    {
+      "q": "Elektrotexnik qurilmalarda rezonans nima uchun hisobga olinadi?",
+      "v": [
+        "G'altak yoki kondensatordagi kuchlanish ortib, elektr teshilishi (proboy) sodir bo'lishi mumkin",
+        "Rezonans energiya tejaydi",
+        "Rezonans tokni yo'q qiladi",
+        "Rezonans simlarni sovutadi"
+      ],
+      "t": 0,
+      "izoh": "Rezonans davrida kuchlanishning ortib ketishi elektr teshilishiga (proboyga) olib kelishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#f93f0701"
+    },
+    {
+      "q": "Rezonans egri chizig'ida aktiv qarshilik kichik bo'lsa, egri chiziq qanday bo'ladi?",
+      "v": [
+        "O'tkir (keskin) cho'qqiga ega",
+        "Yassi cho'qqiga ega",
+        "Gorizontal to'g'ri chiziq",
+        "Vertikal to'g'ri chiziq"
+      ],
+      "t": 0,
+      "izoh": "R kichik bo'lsa, rezonansdagi tok Um/R katta bo'lib, egri chiziq o'tkir cho'qqili bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#baff1f8b"
+    },
+    {
+      "q": "Chastotasi 50 Hz bo'lgan zanjirda induktivligi 100 mH bo'lgan g'altak ulangan. Rezonans ro'y berishi uchun kondensator sig'imi taxminan qanday bo'lishi kerak?",
+      "v": [
+        "≈ 100 μF",
+        "≈ 10 μF",
+        "≈ 1 μF",
+        "≈ 1 mF"
+      ],
+      "t": 0,
+      "izoh": "C = 1/(4π²v²L) = 1/(4·3,14²·2500·0,1) ≈ 10⁻⁴ F ≈ 100 μF.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#01eade13"
+    },
+    {
+      "q": "Tashqi kuchlanish chastotasi rezonans chastotasidan kichik bo'lsa, zanjir qanday xarakterga ega bo'ladi?",
+      "v": [
+        "Sig'im xarakterga (XC > XL)",
+        "Induktiv xarakterga (XL > XC)",
+        "Faqat aktiv xarakterga",
+        "Rezonans xarakterga"
+      ],
+      "t": 0,
+      "izoh": "Chastota kichik bo'lsa XC = 1/(ωC) katta, XL = ωL kichik bo'ladi — zanjir sig'im xarakterli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#4a305619"
+    },
+    {
+      "q": "Tashqi kuchlanish chastotasi rezonans chastotasidan katta bo'lsa, zanjir qanday xarakterga ega bo'ladi?",
+      "v": [
+        "Induktiv xarakterga (XL > XC)",
+        "Sig'im xarakterga (XC > XL)",
+        "Faqat aktiv xarakterga",
+        "Qarshiliksiz bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Chastota katta bo'lsa XL = ωL katta, XC = 1/(ωC) kichik bo'ladi — zanjir induktiv xarakterli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#4bf9b684"
+    },
+    {
+      "q": "Rezonans chastotasini v = 1/(2π√(LC)) formula bilan hisoblashda L ni 4 marta orttirilsa, rezonans chastotasi qanday o'zgaradi?",
+      "v": [
+        "2 marta kamayadi",
+        "4 marta kamayadi",
+        "2 marta ortadi",
+        "4 marta ortadi"
+      ],
+      "t": 0,
+      "izoh": "Chastota √L ga teskari, L 4 marta ortsa chastota 2 marta kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#620b9826"
+    },
+    {
+      "q": "Rezonans chastotasi kondensator sig'imiga qanday bog'liq?",
+      "v": [
+        "Sig'im kvadrat ildiziga teskari",
+        "Sig'imga to'g'ri proporsional",
+        "Sig'im kvadratiga teskari",
+        "Sig'imga bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "vrez = 1/(2π√(LC)) — sig'im kvadrat ildiziga teskari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#83bddcff"
+    },
+    {
+      "q": "Rezonansda tok ortishi bilan birga nima keskin ortadi?",
+      "v": [
+        "G'altak va kondensatordagi kuchlanishlar",
+        "Aktiv qarshilik",
+        "Zanjirning induktivligi",
+        "Kondensator sig'imi"
+      ],
+      "t": 0,
+      "izoh": "Rezonans vaqtida tok ortishi bilan UL = Im·XL va UC = Im·XC birdaniga ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#d62e831b"
+    },
+    {
+      "q": "R kamayishi bilan rezonansdagi g'altak va kondensator kuchlanishlari qanday o'zgaradi?",
+      "v": [
+        "Ortib boradi",
+        "Kamayib boradi",
+        "O'zgarmaydi",
+        "Nolga tenglashadi"
+      ],
+      "t": 0,
+      "izoh": "ULrez = (Um/R)·√(L/C) formulaga ko'ra R kamaysa kuchlanishlar ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#c7f363b0"
+    },
+    {
+      "q": "Ketma-ket zanjirda rezonans ro'y berishi uchun ωL va 1/(ωC) orasida qanday munosabat bo'lishi kerak?",
+      "v": [
+        "ωL = 1/(ωC)",
+        "ωL > 1/(ωC)",
+        "ωL < 1/(ωC)",
+        "ωL · ωC = 0"
+      ],
+      "t": 0,
+      "izoh": "Rezonans sharti: ωL = 1/(ωC), ya'ni XL = XC.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#c175f361"
+    },
+    {
+      "q": "Rezonans egri chizig'ida chastota ω0 dan ortganda tok amplitudasi qanday o'zgaradi?",
+      "v": [
+        "Kamayib boradi",
+        "Ortib boradi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "ω > ω0 bo'lganda (XL − XC) ortadi, Z ortadi va tok kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#9df15eb4"
+    },
+    {
+      "q": "Ideal tebranish konturining xususiy chastotasi nimaga teng?",
+      "v": [
+        "ω0 = 1/√(LC)",
+        "ω0 = √(LC)",
+        "ω0 = R/L",
+        "ω0 = 1/(RC)"
+      ],
+      "t": 0,
+      "izoh": "Aktiv qarshiligi nolga teng konturdagi erkin tebranishlar chastotasi ω0 = 1/√(LC).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#089c271a"
+    },
+    {
+      "q": "Rezonansda zanjir tashqi manbadan qanday energiya oladi?",
+      "v": [
+        "Energiya eng samarali uzatiladi, tok maksimal bo'ladi",
+        "Energiya umuman uzatilmaydi",
+        "Energiya faqat kondensatorga uzatiladi",
+        "Energiya faqat g'altakka uzatiladi"
+      ],
+      "t": 0,
+      "izoh": "Rezonansda qarshilik minimal, tok maksimal — energiya uzatish eng samarali bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#be22d03e"
+    },
+    {
+      "q": "Rezonans davrida zanjirning reaktiv qarshiligi nimaga teng?",
+      "v": [
+        "Nolga",
+        "Aktiv qarshilikka",
+        "Cheksizlikka",
+        "Induktiv qarshilikka"
+      ],
+      "t": 0,
+      "izoh": "Rezonansda XL − XC = 0, ya'ni reaktiv qarshilik nolga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#ca218ebc"
+    },
+    {
+      "q": "L = 0,1 H va C = 100 μF bo'lgan zanjir uchun rezonans chastotasi taxminan qancha?",
+      "v": [
+        "≈ 50 Hz",
+        "≈ 500 Hz",
+        "≈ 5 Hz",
+        "≈ 5000 Hz"
+      ],
+      "t": 0,
+      "izoh": "v = 1/(2π√(0,1·10⁻⁴)) = 1/(2π·10⁻²·0,316) ≈ 50 Hz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#20d64a36"
+    },
+    {
+      "q": "Rezonans hodisasidan texnikada qayerda keng foydalaniladi?",
+      "v": [
+        "Radiopriyomniklarda stansiya signallarini ajratishda",
+        "Elektr payvandlashda",
+        "Elektr plitalarda",
+        "Akumulyator zaryadlashda"
+      ],
+      "t": 0,
+      "izoh": "Rezonansdan radiopriyomniklarda kerakli stansiyani tanlashda foydalaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#082c03f3"
+    },
+    {
+      "q": "Rezonansda fazalar farqi φ nimaga teng?",
+      "v": [
+        "0",
+        "π/2",
+        "π",
+        "π/4"
+      ],
+      "t": 0,
+      "izoh": "Rezonansda XL = XC, tgφ = 0, φ = 0 — tok va kuchlanish bir fazada.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_11_ozb_m18-ozgaruvchan-tok-zanjirida-rezonans#5935c4ad"
+    }
+  ]
+}

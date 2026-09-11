@@ -1,0 +1,471 @@
+{
+  "nom": "59-mavzu. Quyosh Va Oy Tutilishi",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Yer Quyosh atrofida qanday harakat qiladi?",
+      "v": [
+        "Aylanma harakat",
+        "To‘g‘ri chiziqli harakat",
+        "Titrash harakati",
+        "Tik harakat"
+      ],
+      "t": 0,
+      "izoh": "Yer Quyosh atrofida aylanma harakat qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#06b3bcbd"
+    },
+    {
+      "q": "Yerning tabiiy yo‘ldoshi qaysi?",
+      "v": [
+        "Oy",
+        "Mars",
+        "Venera",
+        "Yupiter"
+      ],
+      "t": 0,
+      "izoh": "Oy – Yerning tabiiy yo‘ldoshi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#30a1c9d9"
+    },
+    {
+      "q": "Oy Yer atrofida qanday harakat qiladi?",
+      "v": [
+        "Ma’lum orbitada aylanma harakat",
+        "To‘g‘ri chiziqli harakat",
+        "Tik harakat",
+        "Harakatlanmaydi"
+      ],
+      "t": 0,
+      "izoh": "Oy Yer atrofida ma’lum orbitada aylanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#2ccdfdde"
+    },
+    {
+      "q": "Quyosh tutilishi qanday sodir bo‘ladi?",
+      "v": [
+        "Oy Quyosh bilan Yer orasiga bir to‘g‘ri chiziqqa joylashganda",
+        "Yer Quyosh bilan Oy orasiga joylashganda",
+        "Oy Yerning orqasiga o‘tganda",
+        "Quyosh o‘chganda"
+      ],
+      "t": 0,
+      "izoh": "Oy Quyosh bilan Yer orasiga kirganda Quyosh tutilishi bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#c33f4c7b"
+    },
+    {
+      "q": "Quyosh tutilishi vaqtida nima hodisa kuzatiladi?",
+      "v": [
+        "Kun ortasida qorong‘ilik paydo bo‘ladi",
+        "Oy yorug‘ bo‘ladi",
+        "Yer aylanishi to‘xtaydi",
+        "Quyosh yo‘qoladi"
+      ],
+      "t": 0,
+      "izoh": "Kun o‘rtasida go‘yo tun cho‘kkandek qorong‘ilik paydo bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#efcb1b14"
+    },
+    {
+      "q": "Quyosh tutilishi bir yil ichida Yerning turli hududlarida necha marta kuzatilishi mumkin?",
+      "v": [
+        "Bir necha marta",
+        "Faqat bir marta",
+        "Ikki marta",
+        "Har oyda"
+      ],
+      "t": 0,
+      "izoh": "Bir yil ichida bir necha marta kuzatilishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#84b2d0f0"
+    },
+    {
+      "q": "Quyosh tutilishini qanday kuzatish mumkin?",
+      "v": [
+        "Maxsus himoya ko‘zoynaklari yoki qoraytirilgan shisha orqali",
+        "Yalang‘och ko‘z bilan",
+        "Oddiy ko‘zoynak bilan",
+        "Teleskop bilan"
+      ],
+      "t": 0,
+      "izoh": "Maxsus himoya ko‘zoynaklari yoki qoraytirilgan shisha orqali kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#8a0bddc2"
+    },
+    {
+      "q": "Quyosh tutilganda unga to‘g‘ridan-to‘g‘ri qarash nima uchun xavfli?",
+      "v": [
+        "Kozda shikastlanish keltirib chiqarishi mumkin",
+        "Yorug‘lik yo‘qoladi",
+        "Ko‘z yoshlanadi",
+        "Hech narsa bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "To‘g‘ridan-to‘g‘ri qarash ko‘zda shikastlanish keltirib chiqarishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#3264e687"
+    },
+    {
+      "q": "Oy tutilishi qanday sodir bo‘ladi?",
+      "v": [
+        "Yer Quyosh bilan Oy orasiga bir to‘g‘ri chiziqqa joylashganda",
+        "Quyosh bilan Yer orasiga Oy joylashganda",
+        "Oy Quyoshning orqasiga o‘tganda",
+        "Yer Oy orqasiga o‘tganda"
+      ],
+      "t": 0,
+      "izoh": "Yer Quyosh bilan Oy orasiga kirganda Oy tutilishi bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#46c5625e"
+    },
+    {
+      "q": "Oy o‘zidan yorug‘lik chiqaradimi?",
+      "v": [
+        "Yo‘q, u faqat Quyosh yorug‘ligini qaytaradi",
+        "Ha, chiqaradi",
+        "Ba’zan chiqaradi",
+        "Faqat tun payti chiqaradi"
+      ],
+      "t": 0,
+      "izoh": "Oy o‘zidan yorug‘lik chiqarmaydi, faqat Quyosh nurini qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#3ed81fc2"
+    },
+    {
+      "q": "Yer soya sohasiga kirib qolgan Oy Yerning qaysi qismida ko‘rinmay qoladi?",
+      "v": [
+        "Tun bo‘lgan qismida",
+        "Kunduz bo‘lgan qismida",
+        "Ekvator qismida",
+        "Qutb qismida"
+      ],
+      "t": 0,
+      "izoh": "Oy Yerning tun qismida ko‘rinmay qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#4f600d2a"
+    },
+    {
+      "q": "Oy tutilishi vaqtida Oy qanday ko‘rinadi?",
+      "v": [
+        "Kuygandek (qizil rangda)",
+        "Ko‘k rangda",
+        "Sariq rangda",
+        "Ko‘rinmaydi"
+      ],
+      "t": 0,
+      "izoh": "Yer atmosferasida sinish tufayli Oy \"kuygan\"dek ko‘rinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#6adba10d"
+    },
+    {
+      "q": "Yerning atmosferasi bo‘lmaganda Oy tutilishi vaqtida nima bo‘lardi?",
+      "v": [
+        "Oy ko‘rinmay qolardi",
+        "Oy yorug‘roq ko‘rinardi",
+        "Oy katta ko‘rinardi",
+        "Hech narsa o‘zgarmasdi"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera bo‘lmaganda Oy tutilishda ko‘rinmas edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#e8cf9458"
+    },
+    {
+      "q": "Oyning qanday tutilish turlarini kuzatish mumkin?",
+      "v": [
+        "To‘la va yarim",
+        "Faqat to‘la",
+        "Faqat yarim",
+        "Halqasimon"
+      ],
+      "t": 0,
+      "izoh": "Oyning to‘la va yarim tutilishi kuzatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#088bb049"
+    },
+    {
+      "q": "Quyosh tutilishi qachon sodir bo‘ladi?",
+      "v": [
+        "Quyosh, Oy va Yer bir to‘g‘ri chiziqda joylashganda",
+        "Quyosh, Yer va Oy bir to‘g‘ri chiziqda joylashganda",
+        "Faqat Oy bilan Yer bir chiziqda bo‘lganda",
+        "Faqat Quyosh bilan Yer bir chiziqda bo‘lganda"
+      ],
+      "t": 0,
+      "izoh": "Quyosh tutilishi uchun Quyosh-Oy-Yer bir chiziqda bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#e8168938"
+    },
+    {
+      "q": "Oy tutilishi qachon sodir bo‘ladi?",
+      "v": [
+        "Quyosh, Yer va Oy bir to‘g‘ri chiziqda joylashganda",
+        "Quyosh, Oy va Yer bir to‘g‘ri chiziqda joylashganda",
+        "Oy bilan Quyosh bir chiziqda bo‘lganda",
+        "Yer bilan Quyosh bir chiziqda bo‘lganda"
+      ],
+      "t": 0,
+      "izoh": "Oy tutilishi uchun Quyosh-Yer-Oy bir chiziqda bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#7e1f41b1"
+    },
+    {
+      "q": "Halqasimon Quyosh tutilishi qanday hosil bo‘ladi?",
+      "v": [
+        "Oy Quyosh diskini to‘liq qoplay olmaydigan darajada kichik ko‘ringanda",
+        "Oy Quyoshni to‘liq qoplaganda",
+        "Yer Oy orasiga kirganda",
+        "Quyosh Yerga eng uzoq bo‘lganda"
+      ],
+      "t": 0,
+      "izoh": "Oy Quyosh diskini to‘liq qoplay olmasa halqasimon tutilish bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#b75fd9ff"
+    },
+    {
+      "q": "Quyosh tutilishi vaqtida Oyning Quyoshgacha bo‘lgan uzoqligi qanday?",
+      "v": [
+        "Yerning Quyoshgacha uzoqligidan ancha kam",
+        "Yerning Quyoshgacha uzoqligiga teng",
+        "Yerning Quyoshgacha uzoqligidan ancha ko‘p",
+        "Aniqlanmagan"
+      ],
+      "t": 0,
+      "izoh": "Oy Quyoshga Yerdan ancha yaqin bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#4d060aef"
+    },
+    {
+      "q": "Yer Quyosh atrofida qanday orbitada harakatlanadi?",
+      "v": [
+        "Elliptik",
+        "Aylana",
+        "To‘g‘ri chiziq",
+        "Spiral"
+      ],
+      "t": 0,
+      "izoh": "Yer elliptik orbitada harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#4b7d9f21"
+    },
+    {
+      "q": "Oy Yer atrofida qanday orbitada harakatlanadi?",
+      "v": [
+        "Elliptik",
+        "Aylana",
+        "To‘g‘ri chiziq",
+        "Spiral"
+      ],
+      "t": 0,
+      "izoh": "Oy ham elliptik orbitada harakatlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#12b09b5e"
+    },
+    {
+      "q": "Quyosh Yerga eng yaqin bo‘lsa va Oy eng uzoq masofada bo‘lsa, Quyosh tutilishi qanday bo‘ladi?",
+      "v": [
+        "Halqasimon tutilish",
+        "To‘liq tutilish",
+        "Yarim tutilish",
+        "Tutilish bo‘lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Bu holatda halqasimon tutilish bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#9cf6d339"
+    },
+    {
+      "q": "Halqali Oy tutilishlari bormi?",
+      "v": [
+        "Yo‘q, chunki Yer Oydan ancha katta",
+        "Ha, bor",
+        "Ba’zan bo‘ladi",
+        "Faqat qutblarda bo‘ladi"
+      ],
+      "t": 0,
+      "izoh": "Halqali Oy tutilishlari yo‘q.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#28e40a31"
+    },
+    {
+      "q": "Oy to‘liq tutilishda qancha vaqt davom etadi?",
+      "v": [
+        "Taxminan 2 soat",
+        "Taxminan 1 soat",
+        "Taxminan 3 soat",
+        "Taxminan 30 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "Oy taxminan ikki soat davomida soyabon orqali o‘tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#56c967af"
+    },
+    {
+      "q": "Oy to‘liq tutilishda qanday rangga ega bo‘ladi?",
+      "v": [
+        "Qizil",
+        "Ko‘k",
+        "Sariq",
+        "Yashil"
+      ],
+      "t": 0,
+      "izoh": "Ko‘pincha qizil rangga ega bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#a21e441b"
+    },
+    {
+      "q": "Oyning qizil rangga kirishiga sabab nima?",
+      "v": [
+        "Yer atmosferasiga kiradigan Quyosh nurining qizil qismlari soyabonga sinib Oyga yetib boradi",
+        "Oy o‘zidan qizil yorug‘lik chiqaradi",
+        "Oy Quyoshga yaqinlashadi",
+        "Oy Yerdan uzoqlashadi"
+      ],
+      "t": 0,
+      "izoh": "Yer atmosferasida sinish tufayli qizil nur Oyga yetib boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#88d77f1a"
+    },
+    {
+      "q": "Quyosh tutilishida Oyning soyasi qayerga tushadi?",
+      "v": [
+        "Yerga",
+        "Oyga",
+        "Quyoshga",
+        "Boshqa sayyoraga"
+      ],
+      "t": 0,
+      "izoh": "Oyning soyasi Yerga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#9bfda9d1"
+    },
+    {
+      "q": "Oy tutilishida Yerning soyasi qayerga tushadi?",
+      "v": [
+        "Oyga",
+        "Quyoshga",
+        "Yerning o‘ziga",
+        "Boshqa sayyoraga"
+      ],
+      "t": 0,
+      "izoh": "Yerning soyasi Oyga tushadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#9be3bcd2"
+    },
+    {
+      "q": "Quyosh tutilishi vaqtida Yerning bir qismida qanday hodisa kuzatiladi?",
+      "v": [
+        "Kunduz bo‘lishiga qaramay Quyosh nurlari tushmaydi",
+        "Oy ko‘rinadi",
+        "Quyosh ikki marta ko‘rinadi",
+        "Hech narsa o‘zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Kunduz bo‘lishiga qaramay qorong‘ilik bo‘ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#6be969c7"
+    },
+    {
+      "q": "Tutilishning to‘liq yoki halqasimon bo‘lishi nimaga bog‘liq?",
+      "v": [
+        "Osmon jismlari orasidagi masofaga",
+        "Yerning aylanish tezligiga",
+        "Quyoshning haroratiga",
+        "Oyning rangiga"
+      ],
+      "t": 0,
+      "izoh": "Masofaga bog‘liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#bde1bf19"
+    },
+    {
+      "q": "Oy o‘zidan yorug‘lik chiqarmaydi, u faqat nima qiladi?",
+      "v": [
+        "Quyosh yorug‘ligini qaytaradi",
+        "Yer yorug‘ligini qaytaradi",
+        "Yulduzlar yorug‘ligini qaytaradi",
+        "Hech narsa qilmaydi"
+      ],
+      "t": 0,
+      "izoh": "Oy faqat Quyosh yorug‘ligini qaytaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#6a5f08d3"
+    },
+    {
+      "q": "Yer atmosferasi bo‘lmaganda Oy tutilishi vaqtida Oy ko‘rinmas edi, buning sababi nima?",
+      "v": [
+        "Quyosh nuri Oyga yetib bormasdi",
+        "Oy yo‘qolardi",
+        "Oy tez aylanardi",
+        "Yer to‘xtardi"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera bo‘lmaganda sinish bo‘lmas, nur yetib bormasdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m59-quyosh-va-oy-tutilishi#dc1a820c"
+    }
+  ]
+}

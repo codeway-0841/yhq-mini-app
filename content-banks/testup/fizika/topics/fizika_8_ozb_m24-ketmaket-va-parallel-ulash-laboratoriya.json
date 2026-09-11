@@ -1,0 +1,486 @@
+{
+  "nom": "24-mavzu. Ketmaket Va Parallel Ulash Laboratoriya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Laboratoriya ishining birinchi qismida (o'tkazgichlarni ketma-ket ulash) ishning maqsadi nima?",
+      "v": [
+        "O'tkazgichlar ketma-ket ulanganda ulardagi tok kuchi va kuchlanish tushuvini o'rganish",
+        "O'tkazgichlarning elektr sig'imini o'rganish",
+        "Voltmetrning ichki qarshiligini o'lchash",
+        "Tok manbalarini parallel ulashni o'rganish"
+      ],
+      "t": 0,
+      "izoh": "Ishning maqsadi: o'tkazgichlar ketma-ket ulanganda ulardagi tok kuchi va kuchlanish tushuvini o'rganish.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#51090492"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasi uchun qanday jihozlar kerak?",
+      "v": [
+        "Tok manbai, turli qarshilikka ega ikkita rezistor (100–150 Ω atrofida), milliampermetr, voltmetr, kalit va ulovchi simlar",
+        "Uchta galvanik element va multimetr",
+        "Kondensator va ampermetr",
+        "Reostat va termometr"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar: tok manbai, qarshiligi 100–150 Ω atrofida ikkita rezistor, milliampermetr, voltmetr, kalit va ulovchi simlar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#181eb93d"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida voltmetr dastlab qayerga ulanadi?",
+      "v": [
+        "Birinchi rezistorning uchlariga",
+        "Ikkinchi rezistorning uchlariga",
+        "Tok manbaini uchlariga",
+        "Kalitga parallel"
+      ],
+      "t": 0,
+      "izoh": "71-rasmdagi zanjir yig'ilganda voltmetr birinchi rezistorning uchlariga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#d784de80"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida zanjir yig'ilgach, kalit qanday holatda qoldiriladi?",
+      "v": [
+        "Ochiq holatda",
+        "Yopiq holatda",
+        "Yarim yopiq holatda",
+        "Kalit olib tashlanadi"
+      ],
+      "t": 0,
+      "izoh": "Zanjir yig'ilgach, kalit ochiq holatda qoldiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#5d49b248"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida tok manbaining iste'molchilarga kuchlanish beruvchi murvati dastlab qanday holatga qo'yiladi?",
+      "v": [
+        "4 V holatiga",
+        "6 V holatiga",
+        "2 V holatiga",
+        "12 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "Dastlab murvat 4 V holatiga qo'yiladi, keyin tajriba 6 V da takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#3f292f5f"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida kalit ulangach, birinchi navbatda qanday kattaliklar o'lchanadi?",
+      "v": [
+        "Rezistordan o'tayotgan tok kuchi (I₁) va uning uchlaridagi kuchlanish (U₁)",
+        "Faqat zanjirdagi umumiy tok",
+        "Faqat tok manbai kuchlanishi",
+        "Rezistorning temperaturasi"
+      ],
+      "t": 0,
+      "izoh": "Kalit ulangach, rezistordan o'tayotgan tok kuchi (I₁) va uning uchlaridagi kuchlanish (U₁) o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#8120ceb2"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida voltmetrni ikkinchi rezistor uchlariga ulashdan oldin nima qilinadi?",
+      "v": [
+        "Kalit uziladi",
+        "Tok manbai o'chiriladi va tajriba to'xtatiladi",
+        "Ampermetr almashtiriladi",
+        "Rezistorlar almashtiriladi"
+      ],
+      "t": 0,
+      "izoh": "4-band: kalit uziladi, voltmetr birinchi rezistordan uzilib, ikkinchi rezistor uchlariga ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#487510e3"
+    },
+    {
+      "q": "Ketma-ket ulangan rezistorlarning uchlariga (umumiy) kuchlanishni o'lchash uchun voltmetr qayerga ulanadi?",
+      "v": [
+        "Ketma-ket ulangan rezistorlarning ikkala uchiga",
+        "Faqat birinchi rezistor uchiga",
+        "Ampermetrga parallel",
+        "Kalitga ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "6-band: ketma-ket ulangan rezistorlarning uchlariga voltmetr ulanadi va U_AB o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#1356b4e0"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida tok manbai murvati 6 V holatiga qo'yilgach nima qilinadi?",
+      "v": [
+        "Tajriba takrorlanadi",
+        "Tajriba to'xtatiladi",
+        "Rezistorlar parallel ulanadi",
+        "Voltmetr olib tashlanadi"
+      ],
+      "t": 0,
+      "izoh": "8-band: murvat 6 V holatiga qo'yiladi va tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#ae6ac303"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasi jadvalida qanday ustunlar mavjud?",
+      "v": [
+        "U₁, I₁, R₁, U₂, I₂, R₂, U_AB, I",
+        "Faqat U va I",
+        "C, q, U",
+        "S, d, ε"
+      ],
+      "t": 0,
+      "izoh": "Jadvalda U₁(V), I₁(mA), R₁(Ω), U₂(V), I₂(mA), R₂(Ω), U_AB(V), I(mA) ustunlari bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#8251c3c9"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasining yakuniy (9-) bandida nima qilish ko'rsatilgan?",
+      "v": [
+        "Tajriba natijalari asosida ketma-ket ulangan iste'molchilar uchun asosiy qonuniyatlarning bajarilishini tekshirish",
+        "Zanjir sxemasini qayta chizish",
+        "Rezistorlarning massasini o'lchash",
+        "Voltmetrni tekshirish"
+      ],
+      "t": 0,
+      "izoh": "Tajriba natijalari asosida ketma-ket ulangan iste'molchilar uchun asosiy qonuniyatlarning bajarilishi tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#52effe06"
+    },
+    {
+      "q": "Laboratoriya ishining ikkinchi qismida (parallel ulash) qarshiligi qancha bo'lgan rezistorlar olinadi?",
+      "v": [
+        "200–300 Ω atrofida",
+        "100–150 Ω atrofida",
+        "10–20 Ω atrofida",
+        "1000–2000 Ω atrofida"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulash uchun qarshiligi 200–300 Ω atrofida bo'lgan ikkita rezistor olinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#054e3608"
+    },
+    {
+      "q": "Parallel ulash tajribasida voltmetr qanday ulanadi?",
+      "v": [
+        "Har ikki rezistor uchlariga parallel",
+        "Birinchi rezistor bilan ketma-ket",
+        "Ampermetr bilan ketma-ket",
+        "Kalitga ketma-ket"
+      ],
+      "t": 0,
+      "izoh": "72-rasmdagi zanjirda voltmetr har ikki rezistor uchlariga parallel ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#b2d3df7e"
+    },
+    {
+      "q": "Parallel ulash tajribasida birinchi rezistordan o'tayotgan tokni o'lchash uchun ampermetr qanday ulanadi?",
+      "v": [
+        "Birinchi rezistorga ketma-ket",
+        "Birinchi rezistorga parallel",
+        "Voltmetrga parallel",
+        "Ikkinchi rezistorga parallel"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr birinchi rezistorga ketma-ket ulanadi va I₁ ko'rsatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#d4050b0a"
+    },
+    {
+      "q": "O'tkazgichlarni ketma-ket ulanganda qaysi fizik kattalik bir xil bo'ladi?",
+      "v": [
+        "Tok kuchi",
+        "Kuchlanish",
+        "Qarshilik",
+        "Iste'mol qilinadigan quvvat"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda barcha o'tkazgichlardan bir xil tok o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#5f15c17b"
+    },
+    {
+      "q": "Ketma-ket ulangan o'tkazgichlarning uchlaridagi umumiy kuchlanish nimaga teng?",
+      "v": [
+        "Har bir o'tkazgich uchlaridagi kuchlanishlarning yig'indisiga",
+        "Har bir o'tkazgichdagi kuchlanishga",
+        "Kuchlanishlarning ayirmasiga",
+        "Kuchlanishlarning ko'paytmasiga"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda umumiy kuchlanish U = U₁ + U₂ (U_AB o'lchanadi).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#79ee39a7"
+    },
+    {
+      "q": "O'tkazgichlar parallel ulanganda qaysi fizik kattalik bir xil bo'ladi?",
+      "v": [
+        "Kuchlanish",
+        "Tok kuchi",
+        "Qarshilik",
+        "Zaryad miqdori"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda har bir o'tkazgich uchlaridagi kuchlanish bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#3c43cf17"
+    },
+    {
+      "q": "O'tkazgichlar ketma-ket ulanganda ampermetr zanjirga qanday ulanadi?",
+      "v": [
+        "Ketma-ket",
+        "Parallel",
+        "Rezistorlarga parallel",
+        "Voltmetr bilan almashinuvchan"
+      ],
+      "t": 0,
+      "izoh": "Ampermetr har doim zanjirga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#7be4ebc6"
+    },
+    {
+      "q": "Parallel ulash tajribasida ikkinchi rezistor tokini o'lchash uchun ampermetr qanday qayta ulanadi?",
+      "v": [
+        "Birinchi rezistordan uzilib, ikkinchi rezistorga ketma-ket ulanadi",
+        "Ikkinchi rezistorga parallel ulanadi",
+        "Tok manbaiga parallel ulanadi",
+        "Voltmetr o'rniga qo'yiladi"
+      ],
+      "t": 0,
+      "izoh": "7-band: kalit uzilib, ampermetr birinchi rezistordan uzilib, ikkinchi rezistorga ketma-ket ulanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#24c4d9fc"
+    },
+    {
+      "q": "Parallel ulash tajribasida ham tok manbai murvati keyinchalik qanday holatga qo'yilib, tajriba takrorlanadi?",
+      "v": [
+        "6 V holatiga",
+        "8 V holatiga",
+        "2 V holatiga",
+        "12 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "9-band: murvat 6 V holatiga qo'yiladi va tajriba takrorlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#3b523c43"
+    },
+    {
+      "q": "Parallel ulash tajribasining yakuniy bandida nima tekshiriladi?",
+      "v": [
+        "Parallel ulangan iste'molchilar uchun asosiy qonuniyatlarning bajarilishi",
+        "Voltmetrning aniqlik sinfi",
+        "Rezistorlarning harorat koeffitsiyenti",
+        "Tok manbaini ichki qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "10-band: tajriba natijalari asosida parallel ulangan iste'molchilar uchun asosiy qonuniyatlarning bajarilishi tekshiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#48bc7c2a"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida milliampermetr zanjirning qaysi qismiga ulanadi (71-rasm sxemasi bo'yicha)?",
+      "v": [
+        "Zanjirga ketma-ket",
+        "Rezistorlarga parallel",
+        "Voltmetrga parallel",
+        "Kalitga parallel"
+      ],
+      "t": 0,
+      "izoh": "71-rasm sxemasida milliampermetr (mA) zanjirga ketma-ket ulangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#7121c496"
+    },
+    {
+      "q": "Ketma-ket ulash tajribasida har bir o'lchovdan keyin natijalar qayerga qayd qilinadi?",
+      "v": [
+        "Jadvalga",
+        "Sxema ustiga",
+        "Doskaga",
+        "Rezistor korpusiga"
+      ],
+      "t": 0,
+      "izoh": "Olingan natijalar jadvalga qayd qilinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#cde9b911"
+    },
+    {
+      "q": "Ketma-ket ulangan ikkita rezistor uchun tajribada I₁ va I₂ o'lchovlari orasida qanday munosabat kutiladi?",
+      "v": [
+        "I₁ = I₂",
+        "I₁ > I₂",
+        "I₁ < I₂",
+        "I₁ = 2I₂"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda tok kuchi zanjirning barcha qismida bir xil: I₁ = I₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#3a9935ee"
+    },
+    {
+      "q": "Ketma-ket ulangan rezistorlarda tajribada U_AB, U₁ va U₂ orasida qanday munosabat kutiladi?",
+      "v": [
+        "U_AB = U₁ + U₂",
+        "U_AB = U₁ = U₂",
+        "U_AB = U₁ − U₂",
+        "U_AB = U₁ · U₂"
+      ],
+      "t": 0,
+      "izoh": "Ketma-ket ulanganda umumiy kuchlanish kuchlanishlar yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#a00b6cbd"
+    },
+    {
+      "q": "Parallel ulangan rezistorlarda tajribada I, I₁ va I₂ orasida qanday munosabat kutiladi?",
+      "v": [
+        "I = I₁ + I₂",
+        "I = I₁ = I₂",
+        "I = I₁ − I₂",
+        "I = I₁ · I₂"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda to'liq tok tarmoqlar toklari yig'indisiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#03f7cc32"
+    },
+    {
+      "q": "Parallel ulangan rezistorlarda tajribada U, U₁ va U₂ orasida qanday munosabat kutiladi?",
+      "v": [
+        "U = U₁ = U₂",
+        "U = U₁ + U₂",
+        "U = U₁ − U₂",
+        "U = 2U₁"
+      ],
+      "t": 0,
+      "izoh": "Parallel ulanganda kuchlanish bir xil: U = U₁ = U₂.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#1450a933"
+    },
+    {
+      "q": "Tajribada rezistor qarshiligi qanday topiladi?",
+      "v": [
+        "R = U/I (o'lchangan kuchlanish va tok bo'yicha)",
+        "R = U·I",
+        "R = I/U",
+        "R = U²·I"
+      ],
+      "t": 0,
+      "izoh": "Jadvaldagi R ustunlari Om qonuni R = U/I asosida hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#7905025e"
+    },
+    {
+      "q": "Nima uchun har bir o'lchovdan oldin kalit uziladi?",
+      "v": [
+        "Asboblarni qayta ulashda zanjir xavfsizligini ta'minlash uchun",
+        "Tokni kuchaytirish uchun",
+        "Kuchlanishni nolga tenglash uchun",
+        "Rezistorlarni sovitish uchun"
+      ],
+      "t": 0,
+      "izoh": "Voltmetr yoki ampermetrni qayta ulashdan oldin kalit uzilib, zanjir o'chiriladi — bu xavfsizlik va asboblarni himoya qilish uchun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#55238db0"
+    },
+    {
+      "q": "Parallel ulash tajribasida tok manbai murvati dastlab qanday holatga qo'yiladi?",
+      "v": [
+        "4 V holatiga",
+        "6 V holatiga",
+        "10 V holatiga",
+        "1,5 V holatiga"
+      ],
+      "t": 0,
+      "izoh": "2-band: tok manbaining iste'molchilarga kuchlanish beruvchi murvati 4 V holatiga qo'yiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#57c4ba90"
+    },
+    {
+      "q": "Parallel ulash tajribasida kalit ulangach, avval qanday kattaliklar o'lchanadi?",
+      "v": [
+        "Rezistorlardan o'tayotgan umumiy tok kuchi (I) va ularning uchlaridagi kuchlanish (U)",
+        "Faqat birinchi rezistor toki",
+        "Faqat voltmetr qarshiligi",
+        "Faqat kalit qarshiligi"
+      ],
+      "t": 0,
+      "izoh": "3-band: kalit ulangach, rezistorlardan o'tayotgan tok kuchi (I) va uchlaridagi kuchlanish (U) o'lchanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#e4414a8c"
+    },
+    {
+      "q": "Laboratoriya ishida tok kuchi qaysi asbob bilan o'lchanadi?",
+      "v": [
+        "Milliampermetr bilan",
+        "Voltmetr bilan",
+        "Multimetr bilan",
+        "Termometr bilan"
+      ],
+      "t": 0,
+      "izoh": "Kerakli jihozlar ro'yxatida milliampermetr ko'rsatilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_8_ozb_m24-ketmaket-va-parallel-ulash-laboratoriya#5f39c8ea"
+    }
+  ]
+}

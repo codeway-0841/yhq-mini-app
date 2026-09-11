@@ -1,0 +1,1609 @@
+{
+  "nom": "O'nlik va natural logarifm, logarifmik shkala",
+  "bolim": "Daraja, ildiz va logarifm",
+  "blok": "dari",
+  "rasmiyBolim": 2,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Kimyo laboratoriyasida Dilnoza 100000 ml eritma hajmini o'nlik logarifm shkalasida belgilab qo'ymoqchi. lg100000 qiymati nechaga teng?",
+      "v": [
+        "5",
+        "6",
+        "4",
+        "10"
+      ],
+      "t": 0,
+      "izoh": "100000 sonini o'nning darajasi ko'rinishida yozamiz: 100000 = 10⁵. Logarifm ta'rifiga ko'ra lg10⁵ = 5. 6 — bu sonning xonalar soni, logarifmi emas. 4 — nollarni sanashda bittasini tushirib qoldirish. 10 — asosni javob deb olish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#8d3fb356"
+    },
+    {
+      "q": "Nodira opa tayyorlagan eritmaning konsentratsiyasi 0,001 mol/l ni tashkil etdi. Shu qiymatning o'nlik logarifmini toping.",
+      "v": [
+        "3",
+        "−3",
+        "−2",
+        "−4"
+      ],
+      "t": 1,
+      "izoh": "0,001 = 1/1000 = 10⁻³ bo'ladi. Demak lg0,001 = lg10⁻³ = −3. 3 — manfiy ishorani tushirib qoldirish xatosi. −2 va −4 — kasrdagi nollarni noto'g'ri sanash natijasi. Javob: −3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#2668e474"
+    },
+    {
+      "q": "Ustoz Anvar taxtaga √10 sonini yozdi va sinfga uning o'nlik logarifmini hisoblashni topshirdi. Javob qanday?",
+      "v": [
+        "1",
+        "2",
+        "0,5",
+        "0,1"
+      ],
+      "t": 2,
+      "izoh": "√10 ni daraja ko'rinishida yozamiz: √10 = 10^(1/2). Unda lg10^(1/2) = 1/2 = 0,5. 1 — ildizni e'tiborsiz qoldirib lg10 ni hisoblash. 2 — ildiz ko'rsatkichini javob deb olish. 0,1 — darajani teskari o'qish. Javob: 0,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#2421a673"
+    },
+    {
+      "q": "Omborda 1 tonna un saqlanadi. Massani grammga aylantirib, ya'ni 1000000 g deb olib, uning o'nlik logarifmini toping.",
+      "v": [
+        "3",
+        "5",
+        "7",
+        "6"
+      ],
+      "t": 3,
+      "izoh": "1 tonna = 1000 kg = 1000000 g bo'ladi. Bu son 10⁶ ga teng, demak lg1000000 = 6. 3 — kilogrammdagi qiymatning logarifmi, birlik aylantirilmagan. 7 — sonning xonalar sonini logarifm deb olish. 5 — nollarni kam sanash. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#df5e2162"
+    },
+    {
+      "q": "Talaba Sardor amaliy mashg'ulot daftariga ln e⁴ ifodasini yozib qo'ydi. Bu ifodaning aniq qiymati nechaga teng?",
+      "v": [
+        "4",
+        "1",
+        "e",
+        "0"
+      ],
+      "t": 0,
+      "izoh": "Natural logarifmning asosi e ga teng. Logarifm ta'rifiga ko'ra ln e⁴ = 4·ln e = 4·1 = 4. 1 — darajani unutib ln e ni hisoblash. e — asosni javob deb olish. 0 — ln1 bilan chalkashtirish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#83b21819"
+    },
+    {
+      "q": "Fizik jarayonning susayish ko'rsatkichi 1/e² ga teng bo'lib chiqdi. Uning natural logarifmi qanday qiymatga ega?",
+      "v": [
+        "2",
+        "−2",
+        "−1/2",
+        "1/2"
+      ],
+      "t": 1,
+      "izoh": "1/e² ni manfiy daraja bilan yozamiz: 1/e² = e⁻². Unda ln e⁻² = −2·ln e = −2. 2 — manfiy darajani hisobga olmaslik. −1/2 va 1/2 — daraja ko'rsatkichini teskari qilib olish xatosi. Javob: −2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#1961215e"
+    },
+    {
+      "q": "Ustoz nazorat ishida ln ∛e ifodasini soddalashtirishni so'radi. Bu ifoda qanday sonli qiymatga teng bo'ladi?",
+      "v": [
+        "3",
+        "1",
+        "1/3",
+        "−3"
+      ],
+      "t": 2,
+      "izoh": "∛e ni daraja ko'rinishida yozamiz: ∛e = e^(1/3). Demak ln e^(1/3) = 1/3·ln e = 1/3. 3 — ildiz ko'rsatkichini bevosita javob deb olish. 1 — ildizni e'tiborsiz qoldirish. −3 — darajani manfiy deb tushunish. Javob: 1/3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#a2c4f96c"
+    },
+    {
+      "q": "Matematika darsida sinf taxtasida ln e⁵ − lg1000 ifodasi yozilgan. Uning qiymatini hisoblab, to'g'ri javobni tanlang.",
+      "v": [
+        "8",
+        "−2",
+        "5",
+        "2"
+      ],
+      "t": 3,
+      "izoh": "Birinchi had: ln e⁵ = 5, chunki natural logarifm asosi e. Ikkinchi had: lg1000 = lg10³ = 3. Ayirma 5 − 3 = 2. 8 — ayirish o'rniga qo'shish. −2 — hadlarni o'rin almashtirib ayirish. 5 — ikkinchi hadni tashlab ketish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tub-qiymat",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#d7bc351e"
+    },
+    {
+      "q": "Ikki tovar narxi nisbatini hisoblash chog'ida lg4 + lg25 ifodasi hosil bo'ldi. Uni soddalashtirib qiymatini toping.",
+      "v": [
+        "2",
+        "100",
+        "29",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "Logarifmlar yig'indisi ko'paytmaning logarifmiga teng: lg4 + lg25 = lg(4·25) = lg100. 100 = 10² bo'lgani uchun lg100 = 2. 100 — argumentlar ko'paytmasini javob deb olish. 29 — argumentlarni qo'shib yuborish. 1 — lg10 bilan chalkashtirish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-ifoda-yigindi",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#42cb9986"
+    },
+    {
+      "q": "Kitob do'konida sotilgan 500 va 2 nusxa uchun lg500 + lg2 ifodasi tuzildi. Uning qiymati qancha?",
+      "v": [
+        "502",
+        "3",
+        "2",
+        "1000"
+      ],
+      "t": 1,
+      "izoh": "Yig'indini bitta logarifmga birlashtiramiz: lg500 + lg2 = lg(500·2) = lg1000. 1000 = 10³ bo'lgani uchun javob 3. 502 — argumentlarni qo'shish xatosi. 1000 — ko'paytmani javob deb olish. 2 — lg500 ni butunlashtirib to'xtash. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-ifoda-yigindi",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#b741bc28"
+    },
+    {
+      "q": "Zavod ikki smenada mos ravishda 80 va 8 birlik mahsulot chiqardi. lg80 − lg8 ayirmasi nechaga teng?",
+      "v": [
+        "72",
+        "0,1",
+        "1",
+        "10"
+      ],
+      "t": 2,
+      "izoh": "Logarifmlar ayirmasi bo'linmaning logarifmiga teng: lg80 − lg8 = lg(80:8) = lg10 = 1. 72 — argumentlarni ayirish xatosi. 10 — bo'linmani javob deb olish. 0,1 — bo'linmani teskari qilib olish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-ifoda-yigindi",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#1d9a0fb9"
+    },
+    {
+      "q": "Muhandisning hisob-kitob varag'ida lg2 + lg5 + lg1000 ifodasi paydo bo'ldi. Shu ifodaning aniq qiymatini aniqlang.",
+      "v": [
+        "1",
+        "3",
+        "1007",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Avval birinchi ikki hadni birlashtiramiz: lg2 + lg5 = lg10 = 1. Uchinchi had lg1000 = 3. Umumiy yig'indi 1 + 3 = 4. 1 — faqat birinchi juftlikni hisoblab to'xtash. 3 — faqat uchinchi hadni olish. 1007 — argumentlarni qo'shish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-ifoda-yigindi",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#f73a891b"
+    },
+    {
+      "q": "Kimyoviy tahlilda ikkita koeffitsient 0,04 va 25 ga teng chiqdi. lg0,04 + lg25 yig'indisini hisoblang.",
+      "v": [
+        "0",
+        "1",
+        "−1",
+        "25,04"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini birlashtiramiz: lg0,04 + lg25 = lg(0,04·25) = lg1. Birning logarifmi har qanday asosda nolga teng, demak javob 0. 1 — lg1 ni bir deb yozib yuborish. −1 — ko'paytma 1 o'rniga 0,1 chiqarib lg0,1 = −1 deb yozish. 25,04 — argumentlarni qo'shish. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-ifoda-yigindi",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#23599f63"
+    },
+    {
+      "q": "Jadvalda faqat lg2 ≈ 0,301 qiymati berilgan. Shundan foydalanib lg5 ning taqribiy qiymatini toping.",
+      "v": [
+        "0,301",
+        "0,699",
+        "1,301",
+        "0,602"
+      ],
+      "t": 1,
+      "izoh": "5 sonini 10:2 ko'rinishida yozamiz. Unda lg5 = lg10 − lg2 = 1 − 0,301 = 0,699. 1,301 — ayirish o'rniga qo'shish. 0,602 — 2lg2, ya'ni lg4 qiymati. 0,301 — berilgan qiymatni ko'chirib qo'yish. Javob: 0,699.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg2-orqali-ifodalash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#ad7c062a"
+    },
+    {
+      "q": "Muhandis Sanjarga hisobda lg4 kerak bo'ldi, ammo jadvalda faqat lg2 ≈ 0,301 bor. lg4 qanday?",
+      "v": [
+        "0,903",
+        "1,204",
+        "0,602",
+        "0,151"
+      ],
+      "t": 2,
+      "izoh": "4 = 2² bo'lgani uchun lg4 = 2·lg2 = 2·0,301 = 0,602. 0,903 — uch marta ko'paytirish, bu lg8 qiymati. 1,204 — to'rt marta ko'paytirish, bu lg16. 0,151 — ko'paytirish o'rniga ikkiga bo'lish. Javob: 0,602.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg2-orqali-ifodalash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#756ca346"
+    },
+    {
+      "q": "Fizika masalasini yechishda lg20 talab qilindi. lg2 ≈ 0,301 bo'lsa, lg20 ning qiymatini hisoblang.",
+      "v": [
+        "2,301",
+        "0,301",
+        "3,010",
+        "1,301"
+      ],
+      "t": 3,
+      "izoh": "20 = 2·10 deb yoyamiz. Unda lg20 = lg2 + lg10 = 0,301 + 1 = 1,301. 2,301 — bir o'rniga ikki qo'shish. 3,010 — lg2 ni o'nga ko'paytirish xatosi. 0,301 — o'nlik ko'paytuvchini unutish. Javob: 1,301.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg2-orqali-ifodalash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#04073d0c"
+    },
+    {
+      "q": "Statistik hisobotda lg2,5 qiymati kerak bo'lib qoldi. lg2 ≈ 0,301 bo'lsa, u qanday qiymatga teng?",
+      "v": [
+        "0,398",
+        "0,602",
+        "1,398",
+        "0,301"
+      ],
+      "t": 0,
+      "izoh": "2,5 ni 5:2 ko'rinishida yozamiz. lg5 = 1 − 0,301 = 0,699 edi. Demak lg2,5 = 0,699 − 0,301 = 0,398. 0,602 — 2lg2 bilan chalkashtirish. 1,398 — butun qismni ortiqcha qo'shish. 0,301 — berilganni ko'chirish. Javob: 0,398.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg2-orqali-ifodalash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#68676a15"
+    },
+    {
+      "q": "Kompyuter tezkor xotirasi 16 GB ni tashkil etadi. lg2 ≈ 0,301 bo'lsa, lg16 ni toping.",
+      "v": [
+        "0,903",
+        "1,204",
+        "1,806",
+        "0,602"
+      ],
+      "t": 1,
+      "izoh": "16 = 2⁴ bo'lgani uchun lg16 = 4·lg2 = 4·0,301 = 1,204. 0,903 — uch marta ko'paytirish (lg8). 1,806 — olti marta ko'paytirish (lg64). 0,602 — ikki marta ko'paytirish (lg4). Javob: 1,204.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg2-orqali-ifodalash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#c72c2742"
+    },
+    {
+      "q": "Jadvalda lg2 ≈ 0,301 va lg3 ≈ 0,477 berilgan. Shu qiymatlardan foydalanib lg6 ni hisoblang.",
+      "v": [
+        "0,144",
+        "0,176",
+        "0,778",
+        "1,778"
+      ],
+      "t": 2,
+      "izoh": "6 = 2·3 bo'lgani uchun lg6 = lg2 + lg3 = 0,301 + 0,477 = 0,778. 0,144 — logarifmlarni qo'shish o'rniga ko'paytirish. 0,176 — ayirish xatosi. 1,778 — ortiqcha bir birlik qo'shish. Javob: 0,778.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg2-lg3-orqali",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#00580cfd"
+    },
+    {
+      "q": "Qishloqda aholi soni 1,5 barobar oshdi. lg2 ≈ 0,301 va lg3 ≈ 0,477 bo'lsa, lg1,5 nechaga teng?",
+      "v": [
+        "0,778",
+        "1,176",
+        "0,144",
+        "0,176"
+      ],
+      "t": 3,
+      "izoh": "1,5 ni 3:2 ko'rinishida yozamiz. Unda lg1,5 = lg3 − lg2 = 0,477 − 0,301 = 0,176. 0,778 — ayirish o'rniga qo'shish (bu lg6). 1,176 — ortiqcha bir qo'shish. 0,144 — logarifmlarni ko'paytirish. Javob: 0,176.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg2-lg3-orqali",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#28dd0adf"
+    },
+    {
+      "q": "Sinfda 12 ta o'quvchi bor. lg2 ≈ 0,301 va lg3 ≈ 0,477 bo'lsa, lg12 qanday qiymatga ega?",
+      "v": [
+        "1,079",
+        "0,778",
+        "1,255",
+        "1,380"
+      ],
+      "t": 0,
+      "izoh": "12 sonini tub ko'paytuvchilarga yoyamiz: 12 = 2²·3. Unda lg12 = 2·lg2 + lg3 = 0,602 + 0,477 = 1,079. 0,778 — 12 ni 6 deb olish. 1,255 — 18 ga mos qiymat. 1,380 — 24 ga mos qiymat. Javob: 1,079.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg2-lg3-orqali",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#f33e4218"
+    },
+    {
+      "q": "Guruhdagi 18 ta talaba uchun statistik ko'rsatkich lg18 hisoblanmoqda. lg2 ≈ 0,301 va lg3 ≈ 0,477 bo'lsa, javob qanday?",
+      "v": [
+        "1,079",
+        "1,255",
+        "1,556",
+        "0,778"
+      ],
+      "t": 1,
+      "izoh": "18 sonini yoyamiz: 18 = 2·3². Unda lg18 = lg2 + 2·lg3 = 0,301 + 0,954 = 1,255. 1,079 — 12 ga mos qiymat, ko'paytuvchilar noto'g'ri taqsimlangan. 0,778 — 6 ga mos qiymat. 1,556 — 0,778 ni ikkilantirish. Javob: 1,255.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg2-lg3-orqali",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#0904988d"
+    },
+    {
+      "q": "Aralashmadagi modda ulushi 0,45 ga teng. lg2 ≈ 0,301 va lg3 ≈ 0,477 bo'lsa, lg0,45 ni toping.",
+      "v": [
+        "0,347",
+        "1,653",
+        "−0,347",
+        "−0,653"
+      ],
+      "t": 2,
+      "izoh": "0,45 ni 45:100 ko'rinishida yozamiz. lg45 = lg9 + lg5 = 2·0,477 + 0,699 = 1,653. Demak lg0,45 = 1,653 − 2 = −0,347. 0,347 — manfiy ishorani tushirish. 1,653 — yuzga bo'lishni unutish. −0,653 — butun qismni noto'g'ri ajratish. Javob: −0,347.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg2-lg3-orqali",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#553aea60"
+    },
+    {
+      "q": "Dasturchi Jasur ekranga 2⁵⁰ sonini chiqardi. lg2 ≈ 0,301 bo'lsa, bu son nechta xonadan iborat?",
+      "v": [
+        "15",
+        "17",
+        "51",
+        "16"
+      ],
+      "t": 3,
+      "izoh": "Avval logarifmni topamiz: lg2⁵⁰ = 50·0,301 = 15,05. Xonalar soni logarifmning butun qismiga bir qo'shib topiladi: 15 + 1 = 16. 15 — butun qismni javob deb olish. 51 — daraja ko'rsatkichiga bir qo'shish. 17 — ikki marta qo'shish. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#bdc3407d"
+    },
+    {
+      "q": "Bakteriya koloniyasi har soatda 3 barobar ko'payadi va 40 soatdan keyin ularning soni 3⁴⁰ bo'ladi. lg3 ≈ 0,477 bo'lsa, bu sonda nechta raqam bor?",
+      "v": [
+        "20",
+        "19",
+        "21",
+        "41"
+      ],
+      "t": 0,
+      "izoh": "lg3⁴⁰ = 40·0,477 = 19,08 bo'ladi. Xonalar soni butun qismga bir qo'shib topiladi: 19 + 1 = 20. 19 — butun qismni to'g'ridan-to'g'ri javob deb olish. 41 — daraja ko'rsatkichiga bir qo'shish. 21 — ortiqcha yaxlitlash. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#a0c5d250"
+    },
+    {
+      "q": "Har qadamda qiymati 5 barobar ortadigan jarayonning 30-qadamdagi natijasi 5³⁰ ga teng. lg2 ≈ 0,301 bo'lsa, bu sonda nechta xona bor?",
+      "v": [
+        "20",
+        "21",
+        "22",
+        "31"
+      ],
+      "t": 1,
+      "izoh": "Avval lg5 = 1 − 0,301 = 0,699 ni topamiz. Unda lg5³⁰ = 30·0,699 = 20,97. Xonalar soni: 20 + 1 = 21. 20 — butun qismni javob deb olish. 31 — daraja ko'rsatkichiga bir qo'shish. 22 — ortiqcha qo'shish. Javob: 21.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#017ff114"
+    },
+    {
+      "q": "Kriptografiya darsida talabalar 7²⁵ soni bilan ishlamoqda. lg7 ≈ 0,845 bo'lsa, shu sonning xonalar sonini aniqlang.",
+      "v": [
+        "21",
+        "26",
+        "22",
+        "23"
+      ],
+      "t": 2,
+      "izoh": "lg7²⁵ = 25·0,845 = 21,125 bo'ladi. Xonalar soni butun qismga bir qo'shib topiladi: 21 + 1 = 22. 21 — butun qismni javob deb olish. 26 — daraja ko'rsatkichiga bir qo'shish. 23 — ikki marta qo'shish. Javob: 22.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#052c0b52"
+    },
+    {
+      "q": "Bir son 2ⁿ ko'rinishida bo'lib, uning yozuvida 31 ta xona bor. lg2 ≈ 0,301 bo'lsa, n ning eng kichik qiymati qancha?",
+      "v": [
+        "99",
+        "103",
+        "101",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "Xona soni 31 bo'lishi uchun n·0,301 ≥ 30 shart bajarilishi kerak. Bundan n ≥ 99,67, ya'ni eng kichik butun qiymat n = 100. Tekshiramiz: 100·0,301 = 30,1, xona soni 31. 103 — 31 ni 0,301 ga bo'lish xatosi. 99 — pastga yaxlitlash. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xonalar-soni",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#b8e705bd"
+    },
+    {
+      "q": "Laboratoriyada suvli eritmadagi vodorod ionlari konsentratsiyasi 10⁻⁵ mol/l ni tashkil etdi. Eritmaning pH ko'rsatkichini toping.",
+      "v": [
+        "5",
+        "−5",
+        "9",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "pH = −lg[H⁺] formulasidan foydalanamiz. pH = −lg10⁻⁵ = −(−5) = 5. −5 — formuladagi minus ishorasini qo'llamaslik. 9 — pOH bilan chalkashtirib 14 dan ayirish. 4 — daraja ko'rsatkichini noto'g'ri sanash. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ph-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#4c9a4f43"
+    },
+    {
+      "q": "Sirka eritmasida vodorod ionlari konsentratsiyasi 2·10⁻⁴ mol/l ga teng. lg2 ≈ 0,301 bo'lsa, pH nechaga teng?",
+      "v": [
+        "4,301",
+        "3,699",
+        "3,301",
+        "4,699"
+      ],
+      "t": 1,
+      "izoh": "pH = −lg(2·10⁻⁴) = −(lg2 − 4) = 4 − 0,301 = 3,699. 4,301 — ayirish o'rniga qo'shish. 3,301 — kasr qismini noto'g'ri, ya'ni 4 − 0,699 tarzida olish. 4,699 — butun va kasr qismlarni chalkashtirish. Javob: 3,699.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ph-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#640712ca"
+    },
+    {
+      "q": "Ichimlik suvi namunasida [H⁺] qiymati 5·10⁻⁷ mol/l deb o'lchandi. lg2 ≈ 0,301 bo'lsa, suvning pH ko'rsatkichi qanday?",
+      "v": [
+        "7,699",
+        "6,699",
+        "6,301",
+        "7,301"
+      ],
+      "t": 2,
+      "izoh": "Avval lg5 = 1 − 0,301 = 0,699 ni topamiz. Unda pH = −lg(5·10⁻⁷) = 7 − 0,699 = 6,301. 7,699 — ayirish o'rniga qo'shish. 6,699 — lg5 o'rniga lg2 ni ayirish. 7,301 — butun qismni noto'g'ri saqlash. Javob: 6,301.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ph-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#6eb63f70"
+    },
+    {
+      "q": "Yomg'ir suvi namunasida vodorod ionlari konsentratsiyasi 3·10⁻⁶ mol/l chiqdi. lg3 ≈ 0,477 bo'lsa, pH ni hisoblang.",
+      "v": [
+        "6,477",
+        "5,477",
+        "6,523",
+        "5,523"
+      ],
+      "t": 3,
+      "izoh": "pH = −lg(3·10⁻⁶) = 6 − lg3 = 6 − 0,477 = 5,523. 6,477 — ayirish o'rniga qo'shish. 5,477 — butun qismni bir kamaytirib, kasrni saqlash. 6,523 — butun qismni to'g'rilamaslik. Javob: 5,523.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ph-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#02041a0f"
+    },
+    {
+      "q": "Ikki eritmaning pH ko'rsatkichlari 3 va 6 ga teng. Birinchisidagi vodorod ionlari konsentratsiyasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "1000",
+        "3",
+        "100",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "pH = −lg[H⁺] bo'lgani uchun [H⁺] = 10^(−pH). Birinchi eritmada 10⁻³, ikkinchisida 10⁻⁶. Nisbat: 10⁻³ : 10⁻⁶ = 10³ = 1000 marta. 3 — pH lar farqini bevosita javob deb olish. 100 — darajani bir kam olish. 2 — nisbatni oddiy taqqoslash deb tushunish. Javob: 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ph-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#54fca8bb"
+    },
+    {
+      "q": "Pomidor sharbatining pH ko'rsatkichi 4 ga teng ekani aniqlandi. Undagi vodorod ionlari konsentratsiyasi qanchani tashkil qiladi?",
+      "v": [
+        "10⁴ mol/l",
+        "10⁻⁴ mol/l",
+        "4 mol/l",
+        "10⁻¹⁴ mol/l"
+      ],
+      "t": 1,
+      "izoh": "pH = −lg[H⁺] tenglikdan lg[H⁺] = −4 kelib chiqadi. Demak [H⁺] = 10⁻⁴ mol/l. 10⁴ — manfiy ishorani unutish. 4 — pH ni bevosita konsentratsiya deb olish. 10⁻¹⁴ — suvning ion ko'paytmasi bilan chalkashtirish. Javob: 10⁻⁴ mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ph-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#75f2aac2"
+    },
+    {
+      "q": "Dengiz suvi namunasining pH ko'rsatkichi 8,3 ga teng. lg2 ≈ 0,301 bo'lsa, undagi [H⁺] taxminan qancha?",
+      "v": [
+        "2·10⁻⁹ mol/l",
+        "5·10⁻⁸ mol/l",
+        "5·10⁻⁹ mol/l",
+        "8,3·10⁻⁹ mol/l"
+      ],
+      "t": 2,
+      "izoh": "lg[H⁺] = −8,3 ni butun va musbat kasr qismga ajratamiz: −8,3 = 0,7 − 9. lg5 = 0,699 ≈ 0,7 bo'lgani uchun 10^(0,7) ≈ 5. Demak [H⁺] ≈ 5·10⁻⁹ mol/l. 5·10⁻⁸ — darajani noto'g'ri ajratish. 2·10⁻⁹ — 0,3 ni kasr qism deb olish. Javob: 5·10⁻⁹ mol/l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ph-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#e29bb188"
+    },
+    {
+      "q": "Shovqin o'lchagich qurilma ovoz intensivligi eshitish bo'sag'asidan 10⁶ marta katta ekanini ko'rsatdi. Ovoz darajasi necha desibel?",
+      "v": [
+        "6 dB",
+        "600 dB",
+        "10 dB",
+        "60 dB"
+      ],
+      "t": 3,
+      "izoh": "Desibel shkalasida L = 10·lg(I : I₀) formulasi ishlaydi. lg10⁶ = 6 bo'lgani uchun L = 10·6 = 60 dB. 6 dB — o'nga ko'paytirishni unutish. 600 dB — yuzga ko'paytirish xatosi. 10 dB — faqat koeffitsientni yozib qo'yish. Javob: 60 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#0a92aaf8"
+    },
+    {
+      "q": "Zavod sexida ovoz intensivligi eshitish bo'sag'asidan 2·10⁸ marta katta. lg2 ≈ 0,301 bo'lsa, shovqin darajasi qancha?",
+      "v": [
+        "83 dB",
+        "80 dB",
+        "86 dB",
+        "30 dB"
+      ],
+      "t": 0,
+      "izoh": "L = 10·lg(2·10⁸) = 10·(0,301 + 8) = 10·8,301 = 83,01, ya'ni taxminan 83 dB. 80 dB — ikki marta ortishni hisobga olmaslik. 86 dB — intensivlik ikkilanganda 6 dB qo'shish xatosi. 30 dB — logarifmni noto'g'ri olish. Javob: 83 dB.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "desibel-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#f6554b5e"
+    },
+    {
+      "q": "Bir xil ikkita karnay birga ishlaganda ovoz intensivligi ikki barobar ortadi. lg2 ≈ 0,301 bo'lsa, ovoz darajasi necha desibelga oshadi?",
+      "v": [
+        "6 dB ga",
+        "3 dB ga",
+        "2 dB ga",
+        "10 dB ga"
+      ],
+      "t": 1,
+      "izoh": "Daraja o'sishi ΔL = 10·lg2 = 10·0,301 = 3,01, ya'ni taxminan 3 dB. 6 dB — amplituda uchun mo'ljallangan 20·lg formulasini qo'llash. 2 dB — intensivlik nisbatini bevosita javob deb olish. 10 dB — koeffitsientni javob deb yozish. Javob: 3 dB ga.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "desibel-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#7e03e425"
+    },
+    {
+      "q": "Kutubxonada shovqin darajasi 30 dB, ko'chada esa 70 dB ni tashkil etadi. Ko'chadagi ovoz intensivligi necha marta katta?",
+      "v": [
+        "40 marta",
+        "4 marta",
+        "10000 marta",
+        "100 marta"
+      ],
+      "t": 2,
+      "izoh": "Darajalar farqi 70 − 30 = 40 dB. Intensivliklar nisbati 10^(40:10) = 10⁴ = 10000 marta. 40 marta — desibel farqini bevosita nisbat deb olish. 4 marta — o'nga bo'lib to'xtash. 100 marta — darajani ikki deb olish. Javob: 10000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "desibel-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#9378417f"
+    },
+    {
+      "q": "Konsert zalida ovoz darajasi 100 dB gacha ko'tarildi. Bu ovozning intensivligi eshitish bo'sag'asidan necha marta katta?",
+      "v": [
+        "10¹⁰⁰ marta",
+        "100 marta",
+        "10⁵ marta",
+        "10¹⁰ marta"
+      ],
+      "t": 3,
+      "izoh": "100 = 10·lg(I : I₀) tenglikdan lg(I : I₀) = 10 kelib chiqadi. Demak nisbat 10¹⁰ marta. 10¹⁰⁰ marta — o'nga bo'lishni unutish. 100 marta — desibel qiymatini bevosita nisbat deb olish. 10⁵ marta — o'nga emas, yigirmaga bo'lish. Javob: 10¹⁰ marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-hisoblash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#a49d2e33"
+    },
+    {
+      "q": "Naushnikda ovoz darajasi 90 dB dan 60 dB gacha tushirildi. Ovoz intensivligi necha marta kamaydi?",
+      "v": [
+        "1000 marta",
+        "30 marta",
+        "3 marta",
+        "300 marta"
+      ],
+      "t": 0,
+      "izoh": "Darajalar farqi 90 − 60 = 30 dB bo'ladi. Intensivlik nisbati 10^(30:10) = 10³ = 1000 marta kamaygan. 30 marta — desibel farqini nisbat deb olish. 3 marta — o'nga bo'lib to'xtash. 300 marta — darajani noto'g'ri hisoblash. Javob: 1000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "desibel-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#293c3f9d"
+    },
+    {
+      "q": "Muhandis Otabek sexdagi shovqinni 20 dB ga kamaytirmoqchi. Buning uchun ovoz intensivligini necha marta pasaytirish kerak?",
+      "v": [
+        "20 marta",
+        "100 marta",
+        "2 marta",
+        "10 marta"
+      ],
+      "t": 1,
+      "izoh": "20 dB kamayish uchun lg(I₁ : I₂) = 20 : 10 = 2 bo'lishi kerak. Demak nisbat 10² = 100 marta. 20 marta — desibel qiymatini bevosita nisbat deb olish. 2 marta — logarifm qiymatini javob deb olish. 10 marta — darajani bir deb olish. Javob: 100 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "desibel-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#a0852eb7"
+    },
+    {
+      "q": "Xonadagi ovoz darajasi 47 dB deb o'lchandi. lg2 ≈ 0,301 bo'lsa, u yerdagi intensivlik eshitish bo'sag'asidan necha marta katta?",
+      "v": [
+        "4,7·10⁴ marta",
+        "2·10⁴ marta",
+        "5·10⁴ marta",
+        "5·10⁷ marta"
+      ],
+      "t": 2,
+      "izoh": "lg(I : I₀) = 47 : 10 = 4,7 bo'ladi. Uni 4 + 0,7 deb ajratamiz. lg5 = 1 − 0,301 = 0,699 ≈ 0,7 bo'lgani uchun 10^(0,7) ≈ 5. Demak nisbat 5·10⁴ marta. 4,7·10⁴ — mantissani koeffitsient deb olish. 2·10⁴ — 0,3 ni kasr qism deb olish. Javob: 5·10⁴ marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "desibel-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#1f3e4e1d"
+    },
+    {
+      "q": "Ikki dvigatelning ovoz darajasi orasidagi farq 13 dB ni tashkil etadi. lg2 ≈ 0,301 bo'lsa, intensivliklar nisbati qanday?",
+      "v": [
+        "13 marta",
+        "1,3 marta",
+        "200 marta",
+        "20 marta"
+      ],
+      "t": 3,
+      "izoh": "lg nisbat = 13 : 10 = 1,3 bo'ladi. Uni 1 + 0,3 deb ajratamiz. 10^(0,3) ≈ 2 bo'lgani uchun nisbat 2·10 = 20 marta. 13 marta — desibel farqini nisbat deb olish. 1,3 marta — logarifmni javob deb olish. 200 marta — darajani ikki deb olish. Javob: 20 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "desibel-teskari",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#38ac16b8"
+    },
+    {
+      "q": "Namangandagi zilzila magnitudasi 5, Andijondagisi esa 3 ball bo'ldi. Birinchisining tebranish amplitudasi ikkinchisinikidan necha marta katta?",
+      "v": [
+        "100 marta",
+        "2 marta",
+        "20 marta",
+        "1000 marta"
+      ],
+      "t": 0,
+      "izoh": "Rixter shkalasida M = lg(A : A₀) bo'lgani uchun amplitudalar nisbati 10^(M₁ − M₂) ga teng. Bu yerda farq 5 − 3 = 2, demak nisbat 10² = 100 marta. 2 marta — magnitudalar farqini nisbat deb olish. 20 marta — o'nga ko'paytirish. Javob: 100 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "magnituda",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#38251e89"
+    },
+    {
+      "q": "Seysmograf qayd etgan tebranish amplitudasi tinch holatdagidan 10⁶ marta katta chiqdi. Zilzila magnitudasi qanchani tashkil qiladi?",
+      "v": [
+        "5",
+        "6",
+        "60",
+        "10"
+      ],
+      "t": 1,
+      "izoh": "Magnituda M = lg(A : A₀) formulasi bilan topiladi. lg10⁶ = 6 bo'lgani uchun M = 6. 60 — desibel formulasidagi kabi o'nga ko'paytirish xatosi. 5 — daraja ko'rsatkichini kam sanash. 10 — shkala asosini javob deb olish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "magnituda",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#046d6c31"
+    },
+    {
+      "q": "Bir zilzilaning tebranish amplitudasi ikkinchisinikidan 500 marta katta. lg2 ≈ 0,301 bo'lsa, ularning magnitudalari farqi qancha?",
+      "v": [
+        "3,301",
+        "2,301",
+        "2,699",
+        "1,699"
+      ],
+      "t": 2,
+      "izoh": "Magnitudalar farqi ΔM = lg500 ga teng. 500 = 1000 : 2 bo'lgani uchun lg500 = 3 − 0,301 = 2,699. 3,301 — ayirish o'rniga qo'shish. 2,301 — 500 ni 200 deb olish. 1,699 — butun qismni bir kam olish. Javob: 2,699.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "magnituda",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#a2dab05b"
+    },
+    {
+      "q": "Zilzila energiyasi 10^(1,5·ΔM) qonuni bilan o'sadi. Magnitudasi 7,2 bo'lgan zilzila 6,2 magnitudalidan necha marta ko'p energiya ajratadi?",
+      "v": [
+        "10 marta",
+        "1,5 marta",
+        "15 marta",
+        "≈ 31,6 marta"
+      ],
+      "t": 3,
+      "izoh": "Magnitudalar farqi ΔM = 7,2 − 6,2 = 1. Energiya nisbati 10^(1,5·1) = 10^(1,5). Bu qiymat 10·10^(0,5) = 10·√10 ≈ 31,6 ga teng. 10 marta — amplituda nisbatini energiya deb olish. 1,5 marta — koeffitsientni javob deb olish. 15 marta — o'nga ko'paytirish. Javob: ≈ 31,6 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "magnituda",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#c23b7dcd"
+    },
+    {
+      "q": "Toshkentdagi 1966-yilgi zilzila magnitudasi 5,2 edi. Amplitudasi undan 300 marta katta bo'lgan zilzilaning magnitudasi qancha? lg3 ≈ 0,477.",
+      "v": [
+        "7,677",
+        "7,2",
+        "2,477",
+        "5,677"
+      ],
+      "t": 0,
+      "izoh": "Amplituda 300 marta ortsa, magnituda lg300 ga oshadi. lg300 = lg3 + 2 = 0,477 + 2 = 2,477. Demak yangi magnituda 5,2 + 2,477 = 7,677. 2,477 — faqat o'sishni javob deb olish. 7,2 — ikki birlik qo'shib to'xtash. 5,677 — faqat kasr qismni qo'shish. Javob: 7,677.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "magnituda",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#496cdec6"
+    },
+    {
+      "q": "Bank omonatiga qo'yilgan 5000000 so'm yiliga uzluksiz 8 foizdan o'sadi: S = S₀·e^(0,08t). Summa ikki barobar bo'lishi uchun necha yil kerak? ln2 ≈ 0,693.",
+      "v": [
+        "≈ 12,5 yil",
+        "≈ 8,7 yil",
+        "≈ 0,7 yil",
+        "≈ 4,3 yil"
+      ],
+      "t": 1,
+      "izoh": "Shart: e^(0,08t) = 2. Ikkala tomondan natural logarifm olamiz: 0,08t = ln2 = 0,693. Bundan t = 0,693 : 0,08 = 8,66, ya'ni taxminan 8,7 yil. 12,5 yil — foizning teskarisi, logarifmsiz hisob. 0,7 yil — ln2 ni bevosita javob deb olish. 4,3 yil — foiz stavkasini ikkilantirib bo'lish: 0,693 : 0,16 = 4,33. Javob: ≈ 8,7 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-osish-model",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#60214bf7"
+    },
+    {
+      "q": "Bakteriyalar soni N = N₀·e^(0,4t) qonuni bilan ortadi, bunda t soatlarda. Soni uch barobar ko'payishi uchun qancha vaqt kerak? ln3 ≈ 1,099.",
+      "v": [
+        "≈ 0,44 soat",
+        "≈ 7,5 soat",
+        "≈ 2,75 soat",
+        "≈ 1,1 soat"
+      ],
+      "t": 2,
+      "izoh": "Shart: e^(0,4t) = 3. Natural logarifm olamiz: 0,4t = ln3 = 1,099. Bundan t = 1,099 : 0,4 = 2,7475, ya'ni taxminan 2,75 soat. 0,44 soat — bo'lish o'rniga ko'paytirish. 7,5 soat — 3 ni 0,4 ga bo'lish. 1,1 soat — ln3 ni javob deb olish. Javob: ≈ 2,75 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-osish-model",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#73cfec79"
+    },
+    {
+      "q": "Shaharda aholi soni yiliga 2 foizdan uzluksiz o'sib bormoqda. ln2 ≈ 0,693 bo'lsa, aholi ikki barobar bo'lishi uchun taxminan necha yil kerak?",
+      "v": [
+        "≈ 50 yil",
+        "≈ 20 yil",
+        "≈ 14 yil",
+        "≈ 35 yil"
+      ],
+      "t": 3,
+      "izoh": "Shart: e^(0,02t) = 2, bundan 0,02t = ln2 = 0,693. Demak t = 0,693 : 0,02 = 34,65, ya'ni taxminan 35 yil. 50 yil — logarifmsiz, faqat foizning teskarisini olish. 14 yil — 0,693 ni 0,05 ga bo'lish. 20 yil — foiz qiymatini javob deb olish. Javob: ≈ 35 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-osish-model",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#8f1a0220"
+    },
+    {
+      "q": "Idishdagi suv harorati T = 20 + 60·e^(−0,05t) qonuni bo'yicha o'zgaradi, bunda t daqiqada. Harorat 50 darajaga tushishi uchun necha daqiqa kerak? ln2 ≈ 0,693.",
+      "v": [
+        "≈ 13,9 daqiqa",
+        "≈ 6,9 daqiqa",
+        "≈ 27,7 daqiqa",
+        "≈ 20 daqiqa"
+      ],
+      "t": 0,
+      "izoh": "50 = 20 + 60·e^(−0,05t) dan 30 = 60·e^(−0,05t), ya'ni e^(−0,05t) = 0,5. Logarifm olamiz: −0,05t = −0,693. Bundan t = 0,693 : 0,05 = 13,86 ≈ 13,9 daqiqa. 6,9 daqiqa — o'ndan bir bilan bo'lish. 27,7 daqiqa — ikkilantirish xatosi. Javob: ≈ 13,9 daqiqa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ln-osish-model",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#8336c7cc"
+    },
+    {
+      "q": "Dori moddasining qondagi miqdori C = 80·e^(−0,25t) mg qonuni bilan kamayadi. Miqdor 20 mg gacha tushishi uchun necha soat o'tadi? ln2 ≈ 0,693.",
+      "v": [
+        "≈ 2,8 soat",
+        "≈ 5,5 soat",
+        "≈ 11,1 soat",
+        "≈ 4 soat"
+      ],
+      "t": 1,
+      "izoh": "20 = 80·e^(−0,25t) dan e^(−0,25t) = 0,25 kelib chiqadi. 0,25 = 1/4 bo'lgani uchun −0,25t = −2·ln2 = −1,386. Bundan t = 1,386 : 0,25 = 5,544 ≈ 5,5 soat. 2,8 soat — faqat bitta ln2 ni olish. 4 soat — nisbatni bevosita vaqt deb olish. Javob: ≈ 5,5 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ln-osish-model",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#5b32a1ec"
+    },
+    {
+      "q": "Radioaktiv moddaning yarim yemirilish davri 8 kun. λ = ln2 : T formulasiga ko'ra yemirilish doimiysi qanday qiymatga ega? ln2 ≈ 0,693.",
+      "v": [
+        "≈ 11,5",
+        "≈ 0,693",
+        "≈ 0,087",
+        "≈ 5,5"
+      ],
+      "t": 2,
+      "izoh": "Formulaga qiymatlarni qo'yamiz: λ = 0,693 : 8 = 0,086625, ya'ni taxminan 0,087. 11,5 — bo'linuvchi bilan bo'luvchini almashtirib qo'yish. 0,693 — ln2 ni bevosita javob deb olish. 5,5 — bo'lish o'rniga ko'paytirish: 8·0,693 = 5,544. Javob: ≈ 0,087.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#1fe9baaa"
+    },
+    {
+      "q": "Radioaktiv modda massasi 12 kun ichida 400 g dan 50 g gacha kamaydi. Uning yarim yemirilish davri necha kun?",
+      "v": [
+        "6 kun",
+        "3 kun",
+        "8 kun",
+        "4 kun"
+      ],
+      "t": 3,
+      "izoh": "Massa 400 : 50 = 8 marta kamaygan, 8 = 2³ bo'lgani uchun uchta yarim yemirilish davri o'tgan. Demak T = 12 : 3 = 4 kun. 6 kun — ikkita davr deb hisoblash. 3 kun — davrlar sonini javob deb olish. 8 kun — massa nisbatini davr deb olish. Javob: 4 kun.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#47050858"
+    },
+    {
+      "q": "Uglerod-14 ning yarim yemirilish davri 5730 yil. Arxeologik topilmadagi uglerod miqdori boshlang'ich qiymatning 25 foizini tashkil qilsa, topilma necha yoshda?",
+      "v": [
+        "11460 yil",
+        "5730 yil",
+        "2865 yil",
+        "22920 yil"
+      ],
+      "t": 0,
+      "izoh": "25 foiz — bu 1/4, ya'ni 2⁻² qism. Demak ikkita yarim yemirilish davri o'tgan. Yosh: 2·5730 = 11460 yil. 5730 yil — bitta davr bilan cheklanish. 2865 yil — davrni ikkiga bo'lish. 22920 yil — to'rtta davr deb olish. Javob: 11460 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#dad6b2df"
+    },
+    {
+      "q": "Preparat faolligi har 6 soatda yarmiga kamayadi. lg2 ≈ 0,301 bo'lsa, faollik boshlang'ichning 10 foiziga tushishi uchun necha soat kerak?",
+      "v": [
+        "≈ 60 soat",
+        "≈ 20 soat",
+        "≈ 3,3 soat",
+        "≈ 12 soat"
+      ],
+      "t": 1,
+      "izoh": "Shart: (1/2)^(t/6) = 0,1. O'nlik logarifm olamiz: (t/6)·lg2 = 1, chunki lg0,1 = −1. Bundan t/6 = 1 : 0,301 = 3,32 va t = 6·3,32 ≈ 20 soat. 3,3 soat — 6 ga ko'paytirishni unutish. 60 soat — o'nta davr deb olish. 12 soat — ikkita davr bilan cheklanish. Javob: ≈ 20 soat.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-yemirilish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#b795a00e"
+    },
+    {
+      "q": "Ombordagi qutilar sonini topish uchun lg(x + 5) = 2 tenglama tuzildi. Bu tenglamaning ildizini aniqlang.",
+      "v": [
+        "15",
+        "5",
+        "95",
+        "105"
+      ],
+      "t": 2,
+      "izoh": "Logarifm ta'rifiga ko'ra x + 5 = 10² = 100. Bundan x = 100 − 5 = 95. 105 — ayirish o'rniga qo'shish. 15 — o'ng tomonni 10² emas, 2·10 deb olish. 5 — logarifm ostidagi qo'shiluvchini javob deb olish. Javob: 95.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#0c748e48"
+    },
+    {
+      "q": "Ish haqini hisoblash jarayonida lg(3x − 2) = 1 tenglama hosil bo'ldi. Uning yagona yechimini toping.",
+      "v": [
+        "3",
+        "10",
+        "12",
+        "4"
+      ],
+      "t": 3,
+      "izoh": "Logarifm ta'rifiga ko'ra 3x − 2 = 10¹ = 10. Bundan 3x = 12 va x = 4. 12 — oxirgi bo'lish qadamini tashlab ketish. 10 — o'ng tomonni bevosita javob deb olish. 3 — koeffitsientni javob deb yozish. Javob: 4.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#e27a4d1a"
+    },
+    {
+      "q": "Nazorat ishida lg x + lg(x − 3) = 1 tenglama berilgan. Aniqlanish sohasini hisobga olib ildizini toping.",
+      "v": [
+        "5",
+        "−2",
+        "5 va −2",
+        "13"
+      ],
+      "t": 0,
+      "izoh": "Yig'indini birlashtiramiz: lg(x·(x − 3)) = 1, ya'ni x² − 3x = 10. Bundan x² − 3x − 10 = 0 va x = 5 yoki x = −2. Aniqlanish sohasi x > 3 bo'lgani uchun faqat x = 5 mos keladi. 5 va −2 — sohani tekshirmaslik. 13 — argumentlarni qo'shish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#eff03585"
+    },
+    {
+      "q": "Imtihon topshirig'ida 2lg x = lg(7x − 12) tenglama berilgan. Uning barcha ildizlari yig'indisi nechaga teng?",
+      "v": [
+        "12",
+        "7",
+        "3",
+        "4"
+      ],
+      "t": 1,
+      "izoh": "Chap tomonni lg x² ko'rinishiga keltiramiz: x² = 7x − 12. Bundan x² − 7x + 12 = 0 va x = 3 yoki x = 4. Ikkalasi ham x > 0 shartini qanoatlantiradi. Yig'indi 3 + 4 = 7. 12 — ozod hadni javob deb olish. 3 va 4 — faqat bitta ildizni yozish. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#e581b33b"
+    },
+    {
+      "q": "Olimpiada masalasida lg²x − 3lg x + 2 = 0 tenglama uchraydi. Bu tenglama ildizlarining ko'paytmasini hisoblang.",
+      "v": [
+        "110",
+        "10",
+        "1000",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "lg x = y almashtirish kiritamiz: y² − 3y + 2 = 0, bundan y = 1 yoki y = 2. Demak x = 10 yoki x = 100. Ildizlar ko'paytmasi 10·100 = 1000. 110 — ko'paytma o'rniga yig'indi. 10 — faqat bitta ildizni olish. 30 — y qiymatlari bilan ishlashda to'xtab qolish. Javob: 1000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#6ef3bc8d"
+    },
+    {
+      "q": "Uy vazifasida talaba Nodira ln(2x − 1) = 0 tenglamani yechishi kerak. x ning qiymati qancha?",
+      "v": [
+        "0",
+        "0,5",
+        "1,5",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "Natural logarifm nolga teng bo'lishi uchun argument birga teng bo'lishi kerak: 2x − 1 = 1. Bundan 2x = 2 va x = 1. 0,5 — argumentni nolga tenglab, 2x − 1 = 0 deb yechish xatosi. 0 — o'ng tomondagi qiymatni bevosita yechim deb yozish. 1,5 — ikkiga bo'lish o'rniga qo'shish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#f59690df"
+    },
+    {
+      "q": "Amaliy mashg'ulotda ln x = 2 tenglama berilgan. Uning yechimi qanday ko'rinishda bo'ladi? To'g'ri javobni tanlang.",
+      "v": [
+        "e²",
+        "2e",
+        "√e",
+        "2"
+      ],
+      "t": 0,
+      "izoh": "Natural logarifm ta'rifiga ko'ra ln x = 2 bo'lsa, x = e². 2e — logarifmni ko'paytuvchi deb tushunish. √e — darajani teskari olish. 2 — o'ng tomonni bevosita yechim deb yozish. Javob: e².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#38da1e3c"
+    },
+    {
+      "q": "Test topshirig'ida ln(x + 6) − ln x = ln4 tenglama berilgan. Uning ildizini toping.",
+      "v": [
+        "3",
+        "2",
+        "6",
+        "1,5"
+      ],
+      "t": 1,
+      "izoh": "Ayirmani bo'linma logarifmiga keltiramiz: ln((x + 6) : x) = ln4. Demak (x + 6) : x = 4, ya'ni x + 6 = 4x. Bundan 3x = 6 va x = 2. 6 — surat tarkibidagi sonni javob deb olish. 3 — koeffitsientni javob deb yozish. 1,5 — bo'lishni teskari bajarish. Javob: 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#1769a4b9"
+    },
+    {
+      "q": "Yuqori daraja topshirig'ida e^(2x) − 7e^x + 12 = 0 tenglama berilgan. Barcha ildizlari yig'indisini toping.",
+      "v": [
+        "ln7",
+        "7",
+        "ln12",
+        "ln3"
+      ],
+      "t": 2,
+      "izoh": "e^x = y almashtirish kiritamiz: y² − 7y + 12 = 0, bundan y = 3 yoki y = 4. Demak x = ln3 yoki x = ln4. Yig'indi ln3 + ln4 = ln12. 7 — y lar yig'indisini javob deb olish. ln7 — logarifm ostida qo'shish xatosi. ln3 — faqat bitta ildizni yozish. Javob: ln12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ln-tenglama",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#bd9ae20d"
+    },
+    {
+      "q": "Informatika darsida log₂10 ni o'nlik logarifmlar orqali ifodalash kerak. lg2 ≈ 0,301 bo'lsa, uning qiymati qancha?",
+      "v": [
+        "≈ 0,301",
+        "≈ 5",
+        "≈ 0,699",
+        "≈ 3,322"
+      ],
+      "t": 3,
+      "izoh": "Asosni almashtirish formulasi: log₂10 = lg10 : lg2 = 1 : 0,301 = 3,322. 0,301 — kasrni teskari qilib olish. 0,699 — lg5 bilan chalkashtirish. 5 — o'nni ikkiga bo'lib qo'yish. Javob: ≈ 3,322.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#db02db8f"
+    },
+    {
+      "q": "Kompyuter fanida log₂1000 qiymati kerak bo'ldi. lg2 ≈ 0,301 bo'lsa, uning taqribiy qiymati qanchani tashkil qiladi?",
+      "v": [
+        "≈ 9,97",
+        "≈ 3",
+        "≈ 0,903",
+        "≈ 30"
+      ],
+      "t": 0,
+      "izoh": "Asosni almashtiramiz: log₂1000 = lg1000 : lg2 = 3 : 0,301 = 9,967 ≈ 9,97. 3 — faqat suratni olib to'xtash. 0,903 — bo'lish o'rniga ko'paytirish. 30 — kasrni o'nga ko'paytirish xatosi. Javob: ≈ 9,97.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#b7fcb5ed"
+    },
+    {
+      "q": "O'quvchi ln x bilan lg x orasidagi bog'lanishni bilishi kerak. ln10 ≈ 2,303 bo'lsa, qaysi tenglik to'g'ri?",
+      "v": [
+        "ln x = lg x : 2,303",
+        "ln x = 2,303·lg x",
+        "ln x = lg x + 2,303",
+        "ln x = lg x − 2,303"
+      ],
+      "t": 1,
+      "izoh": "Asosni almashtirish formulasiga ko'ra lg x = ln x : ln10. Bundan ln x = lg x·ln10 = 2,303·lg x kelib chiqadi. Bo'lish varianti formulani teskari qo'llash xatosi. Qo'shish va ayirish variantlari ko'paytuvchini qo'shiluvchi deb tushunishdan chiqadi. Javob: ln x = 2,303·lg x.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#240bf983"
+    },
+    {
+      "q": "Tadqiqot ishida log₃7 qiymati kerak bo'lib qoldi. lg3 ≈ 0,477 va lg7 ≈ 0,845 bo'lsa, uni hisoblang.",
+      "v": [
+        "≈ 0,565",
+        "≈ 0,403",
+        "≈ 1,771",
+        "≈ 2,333"
+      ],
+      "t": 2,
+      "izoh": "Asosni almashtirish formulasi: log₃7 = lg7 : lg3 = 0,845 : 0,477 = 1,771. 0,565 — kasrni teskari qilib, lg3 ni lg7 ga bo'lish. 0,403 — bo'lish o'rniga ko'paytirish. 2,333 — logarifmlarni tashlab, 7 ni 3 ga bo'lish. Javob: ≈ 1,771.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "asos-almashtirish",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#db8144c3"
+    },
+    {
+      "q": "Quyidagi to'rt sondan qaysi biri eng katta: 2lg5, lg9, lg2 + lg3 va lg50?",
+      "v": [
+        "2lg5",
+        "lg9",
+        "lg2 + lg3",
+        "lg50"
+      ],
+      "t": 3,
+      "izoh": "Har birini taqribiy hisoblaymiz: 2lg5 = 2·0,699 = 1,398; lg9 = 2·0,477 = 0,954; lg2 + lg3 = lg6 = 0,778; lg50 = 2 − 0,301 = 1,699. Eng katta qiymat lg50 ga tegishli. Ko'p o'quvchi 2lg5 dagi ikki koeffitsientni ko'rib uni eng katta deb tanlaydi. Javob: lg50.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-taqqoslash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#e032854c"
+    },
+    {
+      "q": "lg7 ≈ 0,845 va lg5 ≈ 0,699 bo'lsa, lg35 qiymati qaysi ikkita ketma-ket butun son orasida yotadi?",
+      "v": [
+        "1 va 2 orasida",
+        "0 va 1 orasida",
+        "2 va 3 orasida",
+        "3 va 4 orasida"
+      ],
+      "t": 0,
+      "izoh": "35 = 5·7 bo'lgani uchun lg35 = lg5 + lg7 = 0,699 + 0,845 = 1,544. Bu son 1 bilan 2 orasida yotadi. 0 va 1 orasida — qo'shishni unutib faqat bitta ko'paytuvchini olish. 2 va 3 orasida — xonalar soniga qarab taxmin qilish. Javob: 1 va 2 orasida.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-taqqoslash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#c76682cd"
+    },
+    {
+      "q": "2³⁰ va 3²⁰ sonlaridan qaysi biri katta? lg2 ≈ 0,301 va lg3 ≈ 0,477 qiymatlaridan foydalaning.",
+      "v": [
+        "2³⁰ katta",
+        "3²⁰ katta",
+        "Ular teng",
+        "Taqqoslab bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Ikkala sonning o'nlik logarifmini olamiz: lg2³⁰ = 30·0,301 = 9,03 va lg3²⁰ = 20·0,477 = 9,54. Logarifm o'suvchi funksiya bo'lgani uchun katta logarifmga katta son mos keladi. 9,54 > 9,03, demak 3²⁰ katta. Ko'p o'quvchi katta daraja ko'rsatkichiga qarab 2³⁰ ni tanlaydi. Javob: 3²⁰ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-taqqoslash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#d39d8a2c"
+    },
+    {
+      "q": "5¹⁵ va 7¹² sonlarini taqqoslang. lg5 ≈ 0,699 va lg7 ≈ 0,845 bo'lsa, qaysi biri kattaroq?",
+      "v": [
+        "7¹² katta",
+        "Ular teng",
+        "5¹⁵ katta",
+        "Aniqlash mumkin emas"
+      ],
+      "t": 2,
+      "izoh": "Logarifm olamiz: lg5¹⁵ = 15·0,699 = 10,485 va lg7¹² = 12·0,845 = 10,14. Birinchi logarifm kattaroq, shuning uchun 5¹⁵ katta. Ko'p o'quvchi asos katta bo'lgani uchun 7¹² ni tanlaydi, lekin bu yerda daraja ko'rsatkichi hal qiladi. Javob: 5¹⁵ katta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "lg-taqqoslash",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#8658330d"
+    },
+    {
+      "q": "Dasturchi 2⁵⁰ sonining faqat birinchi raqamini bilmoqchi. lg2 ≈ 0,301 bo'lsa, u qaysi raqam?",
+      "v": [
+        "2",
+        "3",
+        "5",
+        "1"
+      ],
+      "t": 3,
+      "izoh": "lg2⁵⁰ = 50·0,301 = 15,05 bo'ladi. Butun qism 15 xonalar sonini, kasr qism 0,05 esa boshlovchi raqamlarni beradi. 10^(0,05) ≈ 1,12 bo'lgani uchun birinchi raqam 1. 2 — asosni javob deb olish. 3 — kasr qismni 0,5 deb o'qish. 5 — kasr qismni 0,7 deb o'qish. Javob: 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-raqam",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#68ed1f31"
+    },
+    {
+      "q": "3¹⁰⁰ sonining birinchi raqami qaysi ekanini aniqlang. lg3 ≈ 0,477 qiymatidan foydalaning.",
+      "v": [
+        "5",
+        "4",
+        "1",
+        "9"
+      ],
+      "t": 0,
+      "izoh": "lg3¹⁰⁰ = 100·0,477 = 47,7 bo'ladi. Kasr qism 0,7 boshlovchi raqamlarni beradi: 10^(0,7) ≈ 5,01. Demak birinchi raqam 5. 4 — kasr qismni 0,6 deb o'qish. 1 — kasr qismni nolga yaqin deb olish. 9 — oxirgi raqam bilan chalkashtirish. Javob: 5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-raqam",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#3b5b5570"
+    },
+    {
+      "q": "7²⁰ soni nechta xonadan iborat va uning birinchi raqami qaysi? lg7 ≈ 0,845 qiymatidan foydalaning.",
+      "v": [
+        "16 xonali, birinchi raqami 7",
+        "17 xonali, birinchi raqami 7",
+        "17 xonali, birinchi raqami 8",
+        "18 xonali, birinchi raqami 9"
+      ],
+      "t": 1,
+      "izoh": "lg7²⁰ = 20·0,845 = 16,9 bo'ladi. Xonalar soni 16 + 1 = 17. Kasr qism 0,9 uchun 10^(0,9) ≈ 7,94, demak birinchi raqam 7. 16 xonali — butun qismni javob deb olish. Birinchi raqam 8 — 7,94 ni yuqoriga yaxlitlash. Javob: 17 xonali, birinchi raqami 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "bosh-raqam",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#b89cb0e9"
+    },
+    {
+      "q": "Tadqiqotchi o'lchov natijasida lg a = 0,6 ekanini aniqladi. Unda lg a⁵ qanday qiymatga ega bo'ladi?",
+      "v": [
+        "0,12",
+        "5,6",
+        "3",
+        "1,2"
+      ],
+      "t": 2,
+      "izoh": "Daraja logarifmi qoidasiga ko'ra lg a⁵ = 5·lg a = 5·0,6 = 3. 0,12 — ko'paytirish o'rniga bo'lish. 5,6 — ko'paytirish o'rniga qo'shish. 1,2 — daraja ko'rsatkichini 2 deb olish. Javob: 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-daraja-qoida",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#3b380d3f"
+    },
+    {
+      "q": "Hisob-kitob natijasida lg b = 2,4 chiqdi. Unda lg√b ifodasining qiymati qanchani tashkil qiladi?",
+      "v": [
+        "4,8",
+        "0,6",
+        "2,4",
+        "1,2"
+      ],
+      "t": 3,
+      "izoh": "√b = b^(1/2) bo'lgani uchun lg√b = (1/2)·lg b = 2,4 : 2 = 1,2. 4,8 — bo'lish o'rniga ikkiga ko'paytirish. 0,6 — ildizni ikki marta olish, ya'ni to'rtga bo'lish. 2,4 — ildizni e'tiborsiz qoldirish. Javob: 1,2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-daraja-qoida",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#c6a52b89"
+    },
+    {
+      "q": "Fizik kattalik uchun lg x = 1,8 ekani ma'lum. Unda lg(100x) ifodasining qiymati nechaga teng?",
+      "v": [
+        "3,8",
+        "1,8",
+        "180",
+        "2,8"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma logarifmini yoyamiz: lg(100x) = lg100 + lg x = 2 + 1,8 = 3,8. 1,8 — o'nlik ko'paytuvchini e'tiborsiz qoldirish. 180 — logarifmni yuzga ko'paytirish. 2,8 — 100 o'rniga 10 ni qo'shish. Javob: 3,8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "lg-daraja-qoida",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#e5e021ca"
+    },
+    {
+      "q": "lg m = 0,9 va lg n = 0,4 bo'lsa, lg(m³ : n²) ifodasining qiymatini hisoblang.",
+      "v": [
+        "3,5",
+        "1,9",
+        "2,3",
+        "0,5"
+      ],
+      "t": 1,
+      "izoh": "Bo'linma va daraja qoidalarini qo'llaymiz: lg(m³ : n²) = 3·lg m − 2·lg n = 2,7 − 0,8 = 1,9. 3,5 — ayirish o'rniga qo'shish. 2,3 — ikkinchi darajani hisobga olmay 2,7 − 0,4 qilish. 0,5 — darajalarni butunlay tashlab ketish. Javob: 1,9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "lg-daraja-qoida",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#651591b6"
+    },
+    {
+      "q": "Logarifmik shkalada teng oraliqlar teng nisbatlarga mos keladi. 10 va 1000 sonlari orasidagi o'rta nuqtada qaysi son turadi?",
+      "v": [
+        "505",
+        "500",
+        "100",
+        "50"
+      ],
+      "t": 2,
+      "izoh": "Logarifmik shkalada o'rta nuqta logarifmlar o'rtasiga to'g'ri keladi: (lg10 + lg1000) : 2 = (1 + 3) : 2 = 2. Demak son 10² = 100. Buni geometrik o'rta ham tasdiqlaydi: √(10·1000) = 100. 505 — arifmetik o'rtani olish. 500 — chetki sonni yarimlatish. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#6d201e49"
+    },
+    {
+      "q": "Logarifmik o'qda 2 va 50 sonlari belgilangan. Ularning o'rtasidagi nuqtaga qaysi son to'g'ri keladi?",
+      "v": [
+        "26",
+        "25",
+        "5",
+        "10"
+      ],
+      "t": 3,
+      "izoh": "Logarifmik o'qda o'rta nuqta geometrik o'rtaga teng: √(2·50) = √100 = 10. 26 — arifmetik o'rtani olish. 25 — kattasini kichigiga bo'lish. 5 — geometrik o'rtani yana ikkiga bo'lish: √100 : 2 = 5. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#dea7bac6"
+    },
+    {
+      "q": "Logarifmik shkalada bir dekada qiymatning o'n barobar o'sishini bildiradi. To'rt dekada qanday o'sishga mos keladi?",
+      "v": [
+        "10000 marta",
+        "40 marta",
+        "400 marta",
+        "4 marta"
+      ],
+      "t": 0,
+      "izoh": "Har dekada qiymatni o'n barobar oshiradi, demak to'rt dekada 10⁴ = 10000 marta o'sishga mos keladi. 40 marta — dekadalar sonini o'nga ko'paytirish. 400 marta — dekadalar sonini ko'rsatkich emas, ko'paytuvchi deb olish: 4·10² = 400. 4 marta — dekadalar sonini bevosita javob deb olish. Javob: 10000 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#cdfef0c1"
+    },
+    {
+      "q": "Musiqa chastotalari shkalasida har bir oktava chastotani ikki barobar oshiradi. Yetti oktava chastotani necha marta oshiradi?",
+      "v": [
+        "14 marta",
+        "128 marta",
+        "49 marta",
+        "64 marta"
+      ],
+      "t": 1,
+      "izoh": "Oktava shkalasi logarifmik: har qadam ikkiga ko'paytiradi. Yetti oktava uchun 2⁷ = 128 marta o'sish bo'ladi. 14 marta — oktavalar sonini ikkiga ko'paytirish. 49 marta — 7² ni olish. 64 marta — 2⁶, ya'ni bitta oktavani tushirib qoldirish. Javob: 128 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "logarifmik-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#d1cbdec5"
+    },
+    {
+      "q": "lg5 ≈ 0,699 va ln10 ≈ 2,303 bo'lsa, ln5 ning taqribiy qiymati qanchani tashkil qiladi?",
+      "v": [
+        "≈ 0,30",
+        "≈ 3,00",
+        "≈ 1,61",
+        "≈ 0,70"
+      ],
+      "t": 2,
+      "izoh": "Asoslar bog'lanishi: ln x = lg x·ln10. Demak ln5 = 0,699·2,303 = 1,6098, ya'ni taxminan 1,61. 0,30 — ko'paytirish o'rniga bo'lish. 3,00 — ikkala qiymatni qo'shish. 0,70 — lg5 ni ln5 deb olish. Javob: ≈ 1,61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-lg-bogliqlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#bdf79cc4"
+    },
+    {
+      "q": "Tajriba natijasida ln20 ≈ 3,00 deb topildi. ln10 ≈ 2,303 bo'lsa, lg20 taxminan nechaga teng?",
+      "v": [
+        "≈ 6,91",
+        "≈ 2,30",
+        "≈ 0,77",
+        "≈ 1,30"
+      ],
+      "t": 3,
+      "izoh": "Bog'lanishdan lg x = ln x : ln10 kelib chiqadi. Demak lg20 = 3,00 : 2,303 = 1,303, ya'ni taxminan 1,30. 6,91 — bo'lish o'rniga ko'paytirish. 0,77 — kasrni teskari qilib olish. 2,30 — ln10 ni javob deb ko'chirish. Javob: ≈ 1,30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ln-lg-bogliqlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#d7ff48d6"
+    },
+    {
+      "q": "Bir talaba hisobda ln x = 4,606 ekanini topdi. ln10 ≈ 2,303 bo'lsa, lg x taxminan qancha?",
+      "v": [
+        "≈ 2",
+        "≈ 10,6",
+        "≈ 4,61",
+        "≈ 0,5"
+      ],
+      "t": 0,
+      "izoh": "lg x = ln x : ln10 = 4,606 : 2,303 = 2. Demak lg x qiymati 2 ga teng, ya'ni x = 100. 10,6 — bo'lish o'rniga ko'paytirish. 4,61 — natural logarifmni o'nlik deb olish. 0,5 — kasrni teskari qilib olish. Javob: ≈ 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-lg-bogliqlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#d256c0da"
+    },
+    {
+      "q": "ln10 ≈ 2,303 bo'lsa, lg e ning qiymati qanday? Bunda lg e = 1 : ln10 ekanini hisobga oling.",
+      "v": [
+        "≈ 2,303",
+        "≈ 0,434",
+        "≈ 2,718",
+        "≈ 0,301"
+      ],
+      "t": 1,
+      "izoh": "Berilgan bog'lanishga ko'ra lg e = 1 : 2,303 = 0,4342, ya'ni taxminan 0,434. 2,303 — ln10 ni ko'chirib qo'yish. 2,718 — e sonining o'zini javob deb olish. 0,301 — lg2 bilan chalkashtirish. Javob: ≈ 0,434.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ln-lg-bogliqlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#263fa27d"
+    },
+    {
+      "q": "Kompyuterda 1000 xil holatni ikkilik kodda ifodalash uchun kamida nechta bit kerak? lg2 ≈ 0,301.",
+      "v": [
+        "3 bit",
+        "1000 bit",
+        "10 bit",
+        "9 bit"
+      ],
+      "t": 2,
+      "izoh": "Kerakli bitlar soni log₂1000 dan kichik bo'lmagan eng kichik butun songa teng. log₂1000 = 3 : 0,301 = 9,97, demak 10 bit kerak. 9 bit — pastga yaxlitlash, bunda 512 ta holatgina qamraladi. 3 bit — o'nlik logarifmni javob deb olish. Javob: 10 bit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "axborot-bit-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#39fbc33b"
+    },
+    {
+      "q": "Kalitlari soni 10¹⁸ ta bo'lgan tizimni ikkilik kodda ifodalash uchun kamida nechta bit zarur? lg2 ≈ 0,301.",
+      "v": [
+        "18 bit",
+        "54 bit",
+        "59 bit",
+        "60 bit"
+      ],
+      "t": 3,
+      "izoh": "Bitlar soni log₂10¹⁸ = 18 : 0,301 = 59,8 dan kichik bo'lmagan butun son, ya'ni 60 bit. 59 bit — pastga yaxlitlash, bunda hamma kalit sig'maydi. 18 bit — o'nlik daraja ko'rsatkichini javob deb olish. 54 bit — 18 ni uchga ko'paytirish. Javob: 60 bit.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "axborot-bit-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#8e716813"
+    },
+    {
+      "q": "Ma'lumotlar bazasi hajmi har safar ikki barobar oshadi. Hajm bir million barobar ortishi uchun necha marta ikkilanishi kerak? lg2 ≈ 0,301.",
+      "v": [
+        "≈ 20 marta",
+        "≈ 6 marta",
+        "≈ 60 marta",
+        "≈ 19 marta"
+      ],
+      "t": 0,
+      "izoh": "Shart: 2ⁿ = 10⁶. O'nlik logarifm olamiz: n·0,301 = 6, bundan n = 6 : 0,301 = 19,93. Butun marta kerak bo'lgani uchun 20 marta ikkilanishi shart. 19 marta — pastga yaxlitlash, bunda million barobarga yetmaydi. 6 marta — o'nlik daraja ko'rsatkichini javob deb olish. Javob: ≈ 20 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "axborot-bit-shkala",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#2ff0aeb2"
+    },
+    {
+      "q": "Yulduzlar shkalasida 5 birlik kattalik farqi yorqinlikning 100 marta farqiga mos keladi. Bir birlik farq necha martaga to'g'ri keladi?",
+      "v": [
+        "20 marta",
+        "≈ 2,512 marta",
+        "5 marta",
+        "≈ 1,585 marta"
+      ],
+      "t": 1,
+      "izoh": "Bir birlik farqdagi nisbatni k deb olamiz, unda k⁵ = 100. O'nlik logarifm olamiz: 5·lg k = 2, bundan lg k = 0,4 va k = 10^(0,4) ≈ 2,512. 20 marta — shkalani chiziqli deb hisoblab 100 ni 5 ga bo'lish. 1,585 — lg k ni 0,2 deb olish. Javob: ≈ 2,512 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yulduz-yorqinlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#87d70b10"
+    },
+    {
+      "q": "Ikki yulduzning ko'rinma kattaliklari 1 va 6 ga teng. Birinchi yulduz ikkinchisidan necha marta yorqinroq?",
+      "v": [
+        "5 marta",
+        "10 marta",
+        "100 marta",
+        "500 marta"
+      ],
+      "t": 2,
+      "izoh": "Kattaliklar farqi 6 − 1 = 5 birlik. Shkala ta'rifiga ko'ra 5 birlik farq aynan 100 marta yorqinlik farqini bildiradi. 5 marta — kattaliklar farqini bevosita nisbat deb olish. 10 marta — shkala asosini javob deb olish. 500 marta — farqni yuzga ko'paytirish. Javob: 100 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yulduz-yorqinlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#36e79507"
+    },
+    {
+      "q": "Quyoshning ko'rinma kattaligi −26,7, to'lin oyniki −12,7. Har 5 birlik 100 marta farqqa mos bo'lsa, yorqinliklar nisbati qancha?",
+      "v": [
+        "≈ 14 marta",
+        "≈ 280 marta",
+        "≈ 10⁵ marta",
+        "≈ 4·10⁵ marta"
+      ],
+      "t": 3,
+      "izoh": "Kattaliklar farqi −12,7 − (−26,7) = 14 birlik. Bir birlik 10^(0,4) martaga mos, demak nisbat 10^(0,4·14) = 10^(5,6). Buni ajratamiz: 10^(5,6) = 10^(0,6)·10⁵ ≈ 3,98·10⁵ ≈ 4·10⁵. 14 marta — farqni bevosita nisbat deb olish. 280 marta — 14 ni 20 ga ko'paytirish. Javob: ≈ 4·10⁵ marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yulduz-yorqinlik",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#2461e5b2"
+    },
+    {
+      "q": "Toshkentda kvartira narxi yiliga 15 foizdan oshib bormoqda. Narx ikki barobar bo'lishi uchun necha yil kerak? lg2 ≈ 0,301 va lg1,15 ≈ 0,0607.",
+      "v": [
+        "≈ 5 yil",
+        "≈ 13,3 yil",
+        "≈ 15 yil",
+        "≈ 6,7 yil"
+      ],
+      "t": 0,
+      "izoh": "Shart: 1,15^t = 2. O'nlik logarifm olamiz: t·0,0607 = 0,301. Bundan t = 0,301 : 0,0607 = 4,96, ya'ni taxminan 5 yil. 13,3 yil — logarifmsiz, 2 ni 0,15 ga bo'lish. 6,7 yil — birni 0,15 ga bo'lish. 15 yil — foiz miqdorini yil deb olish. Javob: ≈ 5 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-foiz-lg",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#027b14f4"
+    },
+    {
+      "q": "Sardor 8000000 so'mni yiliga 12 foiz ustama bilan bankka qo'ydi. Summa 16000000 so'mga yetishi uchun necha yil kerak? lg2 ≈ 0,301 va lg1,12 ≈ 0,0492.",
+      "v": [
+        "≈ 8,3 yil",
+        "≈ 6,1 yil",
+        "≈ 2 yil",
+        "≈ 12 yil"
+      ],
+      "t": 1,
+      "izoh": "Summa ikki barobar oshishi kerak, ya'ni 1,12^t = 2. Logarifm olamiz: t·0,0492 = 0,301, bundan t = 6,12 ≈ 6,1 yil. 8,3 yil — birni 0,12 ga bo'lish. 2 yil — summalar nisbatini yil deb olish. 12 yil — foiz miqdorini javob deb olish. Javob: ≈ 6,1 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "murakkab-foiz-lg",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#91080a09"
+    },
+    {
+      "q": "Avtomobil qiymati har yili 20 foizga kamayadi. Qiymat dastlabkining yarmiga tushishi uchun necha yil o'tadi? lg2 ≈ 0,301 va lg0,8 ≈ −0,0969.",
+      "v": [
+        "≈ 5 yil",
+        "≈ 2,5 yil",
+        "≈ 3,1 yil",
+        "≈ 4 yil"
+      ],
+      "t": 2,
+      "izoh": "Shart: 0,8^t = 0,5. Logarifm olamiz: t·(−0,0969) = −0,301. Bundan t = 0,301 : 0,0969 = 3,11, ya'ni taxminan 3,1 yil. 5 yil — logarifmsiz, birni 0,2 ga bo'lish. 2,5 yil — 50 ni 20 ga bo'lish. 4 yil — yaxlitlashda ikki barobar xato. Javob: ≈ 3,1 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-foiz-lg",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#96767e2a"
+    },
+    {
+      "q": "Fermer xo'jaligida hosildorlik yiliga 6 foizdan ortmoqda. Hosil uch barobar bo'lishi uchun necha yil kerak? lg3 ≈ 0,477 va lg1,06 ≈ 0,0253.",
+      "v": [
+        "≈ 50 yil",
+        "≈ 16,7 yil",
+        "≈ 12 yil",
+        "≈ 18,9 yil"
+      ],
+      "t": 3,
+      "izoh": "Shart: 1,06^t = 3. Logarifm olamiz: t·0,0253 = 0,477, bundan t = 0,477 : 0,0253 = 18,85 ≈ 18,9 yil. 50 yil — logarifmsiz, 3 ni 0,06 ga bo'lish. 16,7 yil — birni 0,06 ga bo'lish. 12 yil — taxminiy ikkilanish davrini olish. Javob: ≈ 18,9 yil.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "murakkab-foiz-lg",
+      "id": "matematika_dari_m09-onlik-va-natural-logarifm-logarifmik#284c2c16"
+    }
+  ]
+}

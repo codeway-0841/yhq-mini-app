@@ -1,0 +1,1306 @@
+{
+  "nom": "Object pronouns (me, him...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "This is my book. Please give it to ___.",
+      "v": [
+        "I",
+        "me",
+        "my",
+        "he"
+      ],
+      "t": 1,
+      "izoh": "'I' ning to'ldiruvchi shakli 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#b4815c0e"
+    },
+    {
+      "q": "That is John. Do you know ___?",
+      "v": [
+        "he",
+        "his",
+        "him",
+        "them"
+      ],
+      "t": 2,
+      "izoh": "'he' -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9254d089"
+    },
+    {
+      "q": "Sara is kind. I like ___ a lot.",
+      "v": [
+        "she",
+        "her",
+        "hers",
+        "him"
+      ],
+      "t": 1,
+      "izoh": "'she' -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#f91d47da"
+    },
+    {
+      "q": "We are here. Come with ___.",
+      "v": [
+        "we",
+        "our",
+        "us",
+        "them"
+      ],
+      "t": 2,
+      "izoh": "'we' -> 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#b17b27b4"
+    },
+    {
+      "q": "They are my friends. I play with ___.",
+      "v": [
+        "they",
+        "them",
+        "their",
+        "us"
+      ],
+      "t": 1,
+      "izoh": "'they' -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#71a1adec"
+    },
+    {
+      "q": "This is a nice song. Listen to ___.",
+      "v": [
+        "its",
+        "it",
+        "them",
+        "him"
+      ],
+      "t": 1,
+      "izoh": "Narsa uchun 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0f5d5d53"
+    },
+    {
+      "q": "I am tired. Please help ___.",
+      "v": [
+        "I",
+        "my",
+        "me",
+        "we"
+      ],
+      "t": 2,
+      "izoh": "'I' -> 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#5501483c"
+    },
+    {
+      "q": "You are late. I am waiting for ___.",
+      "v": [
+        "your",
+        "you",
+        "yours",
+        "them"
+      ],
+      "t": 1,
+      "izoh": "'you' o'zgarmaydi -> 'you'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#d6ce106c"
+    },
+    {
+      "q": "Tom is my friend. I call ___ every day.",
+      "v": [
+        "he",
+        "his",
+        "him",
+        "her"
+      ],
+      "t": 2,
+      "izoh": "'he' -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#90169776"
+    },
+    {
+      "q": "Mrs Lee is our teacher. We love ___.",
+      "v": [
+        "she",
+        "her",
+        "hers",
+        "him"
+      ],
+      "t": 1,
+      "izoh": "'she' -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0e74b733"
+    },
+    {
+      "q": "The dog is hungry. Give ___ some food.",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Hayvon/narsa uchun 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0487d704"
+    },
+    {
+      "q": "My parents are at home. I live with ___.",
+      "v": [
+        "they",
+        "their",
+        "them",
+        "us"
+      ],
+      "t": 2,
+      "izoh": "'they' -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#1551ce1c"
+    },
+    {
+      "q": "Come and see ___ tomorrow.",
+      "v": [
+        "we",
+        "our",
+        "us",
+        "them"
+      ],
+      "t": 2,
+      "izoh": "'we' -> 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#77283ddd"
+    },
+    {
+      "q": "I have a new pen. Look at ___.",
+      "v": [
+        "its",
+        "it",
+        "them",
+        "him"
+      ],
+      "t": 1,
+      "izoh": "Narsa uchun 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#bc68e124"
+    },
+    {
+      "q": "She is my sister. Play with ___.",
+      "v": [
+        "she",
+        "hers",
+        "her",
+        "him"
+      ],
+      "t": 2,
+      "izoh": "'she' -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#e9613b6b"
+    },
+    {
+      "q": "Can you help ___? I am lost.",
+      "v": [
+        "me",
+        "I",
+        "my",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'I' -> 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#d18fda4b"
+    },
+    {
+      "q": "I like this song. Do you like ___?",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Narsa -> 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#dca21fdf"
+    },
+    {
+      "q": "That is Tom. I know ___.",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Tom -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#4de6ca56"
+    },
+    {
+      "q": "That is Anna. Look at ___.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Anna -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#e061f77e"
+    },
+    {
+      "q": "The books are new. Read ___.",
+      "v": [
+        "them",
+        "they",
+        "their",
+        "it"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#b6778b7c"
+    },
+    {
+      "q": "I love you and you love ___.",
+      "v": [
+        "me",
+        "I",
+        "my",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'I' -> 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#ceed7af8"
+    },
+    {
+      "q": "He is my friend. I play with ___.",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "her"
+      ],
+      "t": 0,
+      "izoh": "He -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9ebbdfff"
+    },
+    {
+      "q": "She is nice. Everyone likes ___.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "She -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0cc9b921"
+    },
+    {
+      "q": "The cat is hungry. Feed ___.",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Hayvon -> 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#cddca42e"
+    },
+    {
+      "q": "We are your friends. Call ___.",
+      "v": [
+        "us",
+        "we",
+        "our",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "We -> 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#720fdec3"
+    },
+    {
+      "q": "My parents are old. I help ___.",
+      "v": [
+        "them",
+        "they",
+        "their",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "Parents -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#2b0a7525"
+    },
+    {
+      "q": "This gift is for ___.",
+      "v": [
+        "you",
+        "your",
+        "yours",
+        "yourself"
+      ],
+      "t": 0,
+      "izoh": "'You' obyektda ham 'you'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#57cdbbba"
+    },
+    {
+      "q": "Give the pen to ___.",
+      "v": [
+        "me",
+        "I",
+        "my",
+        "mine"
+      ],
+      "t": 0,
+      "izoh": "'to' + 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0e36b4d8"
+    },
+    {
+      "q": "Ben is sad. Talk to ___.",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "her"
+      ],
+      "t": 0,
+      "izoh": "Ben -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#be6c9ab7"
+    },
+    {
+      "q": "Sara is here. Wait for ___.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Sara -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#3ce13065"
+    },
+    {
+      "q": "The dogs are outside. Let ___ in.",
+      "v": [
+        "them",
+        "they",
+        "their",
+        "it"
+      ],
+      "t": 0,
+      "izoh": "Dogs -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#93791f1b"
+    },
+    {
+      "q": "I have a ball. Throw ___ to me.",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Ball -> 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#d513da33"
+    },
+    {
+      "q": "Come and sit with ___ (I and my friends).",
+      "v": [
+        "us",
+        "we",
+        "our",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'I and friends' -> 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#80188a79"
+    },
+    {
+      "q": "Please listen to ___ (the teacher, a man).",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "her"
+      ],
+      "t": 0,
+      "izoh": "Erkak -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c7e4a8ec"
+    },
+    {
+      "q": "The film is good. Watch ___.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Film -> 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#dd07e56d"
+    },
+    {
+      "q": "My sister is ill. I look after ___.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "it"
+      ],
+      "t": 0,
+      "izoh": "Sister -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#edf1f97c"
+    },
+    {
+      "q": "The children are here. Show ___ the room.",
+      "v": [
+        "them",
+        "they",
+        "their",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "Children -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#bd3afcf9"
+    },
+    {
+      "q": "You are kind. I thank ___.",
+      "v": [
+        "you",
+        "your",
+        "yours",
+        "yourself"
+      ],
+      "t": 0,
+      "izoh": "'You' obyektda 'you'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#bdfffe29"
+    },
+    {
+      "q": "He has a car. I clean ___ (the car).",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Car -> 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#24b65fed"
+    },
+    {
+      "q": "Mr Lee is our teacher. We like ___.",
+      "v": [
+        "him",
+        "he",
+        "his",
+        "her"
+      ],
+      "t": 0,
+      "izoh": "Mr Lee -> 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#7a1ac922"
+    },
+    {
+      "q": "Mrs Lee is nice. We like ___.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Mrs Lee -> 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#44183218"
+    },
+    {
+      "q": "The toys are old. Give ___ to the baby.",
+      "v": [
+        "them",
+        "they",
+        "their",
+        "it"
+      ],
+      "t": 0,
+      "izoh": "Toys -> 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#e1175b58"
+    },
+    {
+      "q": "Our team is strong. Join ___.",
+      "v": [
+        "us",
+        "we",
+        "our",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Our team' -> 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#1ed7fa0f"
+    },
+    {
+      "q": "I like this song. I listen to ___ every day.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'Song' bir narsa, o'rniga 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a5192923"
+    },
+    {
+      "q": "Ali is nice. I always help ___.",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Erkak (Ali) o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#788c8fea"
+    },
+    {
+      "q": "Nodira is my friend. I call ___ often.",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Ayol (Nodira) o'rniga 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#fc2e2fce"
+    },
+    {
+      "q": "These books are old. Please give ___ to me.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik (books) o'rniga 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#5a3a05f5"
+    },
+    {
+      "q": "We are here. Can you see ___?",
+      "v": [
+        "us",
+        "we",
+        "them",
+        "you"
+      ],
+      "t": 0,
+      "izoh": "'We' obyekt bo'lsa 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#6bc93a2d"
+    },
+    {
+      "q": "This is my dog. I love ___.",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Hayvon (dog) o'rniga 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c275b315"
+    },
+    {
+      "q": "I can help you. Do you need ___?",
+      "v": [
+        "me",
+        "I",
+        "him",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'I' obyekt bo'lsa 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#4c868fff"
+    },
+    {
+      "q": "Where are the keys? I can't find ___.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Keys' ko'plik, o'rniga 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#ef9298b8"
+    },
+    {
+      "q": "That's my brother. Do you know ___?",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Brother' o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#31a2a02a"
+    },
+    {
+      "q": "Sara is sad. Let's talk to ___.",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Sara' o'rniga 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#4ca34aa8"
+    },
+    {
+      "q": "The teacher is calling ___ students.",
+      "v": [
+        "her",
+        "she",
+        "hers",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Bu yerda egalik 'her'; obyekt sifatida ayol uchun 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#b145abbf"
+    },
+    {
+      "q": "Look at the stars! Can you see ___?",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Stars' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c5bf6de9"
+    },
+    {
+      "q": "I have a new pen. I like ___ a lot.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'Pen' bir narsa, 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#d14e7a90"
+    },
+    {
+      "q": "My parents are old. I visit ___ every week.",
+      "v": [
+        "them",
+        "they",
+        "him",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Parents' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#91c048aa"
+    },
+    {
+      "q": "He is my teacher. I listen to ___ carefully.",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Erkak o'qituvchi o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#6d1555ba"
+    },
+    {
+      "q": "Come with ___! We are going to the park.",
+      "v": [
+        "us",
+        "we",
+        "them",
+        "me"
+      ],
+      "t": 0,
+      "izoh": "'We' obyekt bo'lsa 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c29f4079"
+    },
+    {
+      "q": "This cake is good. Try ___!",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'Cake' bir narsa, 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a5605d21"
+    },
+    {
+      "q": "You are kind. Everybody likes ___.",
+      "v": [
+        "you",
+        "your",
+        "yours",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'You' obyekt sifatida ham 'you'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#3ddb8a20"
+    },
+    {
+      "q": "The children are hungry. Give ___ some food.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Children' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a7331cfb"
+    },
+    {
+      "q": "Dilnoza has a cat. She feeds ___ daily.",
+      "v": [
+        "it",
+        "its",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Bitta mushuk (cat) o'rniga 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#1ff7f3af"
+    },
+    {
+      "q": "I can't hear you. Please help ___.",
+      "v": [
+        "me",
+        "I",
+        "us",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'I' obyekt bo'lsa 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#95ed12d3"
+    },
+    {
+      "q": "Jasur is strong. We need ___ on our team.",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Jasur' o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#65a49ffd"
+    },
+    {
+      "q": "The flowers are lovely. I water ___ each morning.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Flowers' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#4c2904e9"
+    },
+    {
+      "q": "Mrs. Aliyeva is our teacher. We respect ___.",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Ayol (Mrs. Aliyeva) o'rniga 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#ff191d7e"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "I saw him at school.",
+        "I saw he at school.",
+        "I saw his at school.",
+        "I saw he's at school."
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She wrote to me yesterday.",
+        "She wrote to I yesterday.",
+        "She wrote to my yesterday.",
+        "She wrote to mine yesterday."
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We invited them to the party.",
+        "We invited they to the party.",
+        "We invited their to the party.",
+        "We invited theirs to the party."
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Please listen to us.",
+        "Please listen to we.",
+        "Please listen to our.",
+        "Please listen to ours."
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Can you see her?",
+        "Can you see she?",
+        "Can you see hers?",
+        "Can you see her's?"
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c~5"
+    },
+    {
+      "q": "Find the mistake: 'I love she.'",
+      "v": [
+        "she",
+        "I",
+        "love",
+        "."
+      ],
+      "t": 0,
+      "izoh": "Obyekt bo'lgani uchun 'her' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#eb568ed4"
+    },
+    {
+      "q": "Find the mistake: 'They helped we.'",
+      "v": [
+        "we",
+        "They",
+        "helped",
+        "."
+      ],
+      "t": 0,
+      "izoh": "Obyekt bo'lgani uchun 'us' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#e59c6d1c"
+    },
+    {
+      "q": "Find the mistake: 'She called I yesterday.'",
+      "v": [
+        "I",
+        "She",
+        "called",
+        "yesterday"
+      ],
+      "t": 0,
+      "izoh": "Obyekt bo'lgani uchun 'me' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#39dd7ac2"
+    },
+    {
+      "q": "Find the mistake: 'I saw they at the shop.'",
+      "v": [
+        "they",
+        "I",
+        "saw",
+        "shop"
+      ],
+      "t": 0,
+      "izoh": "Obyekt bo'lgani uchun 'them' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#2a98080a"
+    },
+    {
+      "q": "Find the mistake: 'We know he well.'",
+      "v": [
+        "he",
+        "We",
+        "know",
+        "well"
+      ],
+      "t": 0,
+      "izoh": "Obyekt bo'lgani uchun 'him' kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#26def7b4"
+    },
+    {
+      "q": "This is a photo of my family. Look at ___.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Photo' bir narsa, 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a1e9d647"
+    },
+    {
+      "q": "My friends called me, so I called ___ back.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Friends' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a7cedbec"
+    },
+    {
+      "q": "Bekzod lost his phone. Help ___ find it.",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Bekzod' o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#069cff4b"
+    },
+    {
+      "q": "Aziza is my sister. This present is for ___.",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Aziza' o'rniga 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#7c5d8dbc"
+    },
+    {
+      "q": "The soup is hot. Don't touch ___.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'Soup' sanalmaydigan narsa, 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#bceadaea"
+    },
+    {
+      "q": "You and I are friends. People know ___.",
+      "v": [
+        "us",
+        "we",
+        "them",
+        "you"
+      ],
+      "t": 0,
+      "izoh": "'You and I' = 'we', obyekt 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9cd4aabd"
+    },
+    {
+      "q": "The boys are outside. Tell ___ to come in.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Boys' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#cc9e3f16"
+    },
+    {
+      "q": "Choose the object pronoun for 'my mother'.",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Ayol uchun obyekt 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#49bb641d"
+    },
+    {
+      "q": "Choose the object pronoun for 'the cars'.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik narsa uchun 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#e0f65257"
+    },
+    {
+      "q": "Choose the object pronoun for 'the baby' (a boy).",
+      "v": [
+        "him",
+        "he",
+        "it only",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "Bola (o'g'il) uchun obyekt 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#5580af1a"
+    },
+    {
+      "q": "Choose the object pronoun for 'the table'.",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "Jonsiz narsa uchun 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#df998b30"
+    },
+    {
+      "q": "Choose the object pronoun for 'you and your brother'.",
+      "v": [
+        "you",
+        "us",
+        "them",
+        "we"
+      ],
+      "t": 0,
+      "izoh": "'You and your brother' = 'you' (obyekt ham 'you').",
+      "qiy": "oson",
+      "id": "ing_a1_m14#a2679089"
+    },
+    {
+      "q": "Replace: 'I like Malika.' → 'I like ___.'",
+      "v": [
+        "her",
+        "she",
+        "him",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Malika' o'rniga 'her'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#98364f57"
+    },
+    {
+      "q": "Replace: 'She helps the students.' → 'She helps ___.'",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'The students' o'rniga 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#bdf0c3a6"
+    },
+    {
+      "q": "Replace: 'We watch the film.' → 'We watch ___.'",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'The film' o'rniga 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c38c4a8f"
+    },
+    {
+      "q": "Replace: 'They visit Oybek.' → 'They visit ___.'",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Oybek' o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#0e533d31"
+    },
+    {
+      "q": "Replace: 'He teaches you and me.' → 'He teaches ___.'",
+      "v": [
+        "us",
+        "we",
+        "them",
+        "you"
+      ],
+      "t": 0,
+      "izoh": "'You and me' o'rniga 'us'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#85205f45"
+    },
+    {
+      "q": "My grandma made cookies. I ate ___ all.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Cookies' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#f2837e47"
+    },
+    {
+      "q": "That song is nice. Sing ___ again!",
+      "v": [
+        "it",
+        "its",
+        "them",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'Song' bir narsa, 'it'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9272ea81"
+    },
+    {
+      "q": "Farrux is my cousin. I play with ___.",
+      "v": [
+        "him",
+        "he",
+        "her",
+        "them"
+      ],
+      "t": 0,
+      "izoh": "'Farrux' o'rniga 'him'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#1372e0d5"
+    },
+    {
+      "q": "The girls are singing. Listen to ___.",
+      "v": [
+        "them",
+        "they",
+        "it",
+        "us"
+      ],
+      "t": 0,
+      "izoh": "'Girls' ko'plik, 'them'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#c44f8bcb"
+    },
+    {
+      "q": "I am here. Wait for ___, please.",
+      "v": [
+        "me",
+        "I",
+        "us",
+        "him"
+      ],
+      "t": 0,
+      "izoh": "'I' obyekt bo'lsa 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#2cced5c0"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "Give it to me.",
+        "Give it to I.",
+        "Give it to my.",
+        "Give it to mine."
+      ],
+      "t": 0,
+      "izoh": "Obyekt o'rnida 'me'.",
+      "qiy": "oson",
+      "id": "ing_a1_m14#9a16dc9c~6"
+    }
+  ]
+}

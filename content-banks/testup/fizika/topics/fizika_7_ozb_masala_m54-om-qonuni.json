@@ -1,0 +1,231 @@
+{
+  "nom": "54-mavzu. Masala. Om Qonuni",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qarshiligi 100 Ω bo‘lgan o‘tkazgich uchlariga 10 V kuchlanish berildi. Undan qanday tok o‘tadi?",
+      "v": [
+        "0,1 A",
+        "1 A",
+        "0,01 A",
+        "10 A"
+      ],
+      "t": 0,
+      "izoh": "I = U/R = 10/100 = 0,1 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#05feb599"
+    },
+    {
+      "q": "Qarshiligi 125 Ω bo‘lgan o‘tkazgichdan 0,8 A tok o‘tkazish uchun uning uchlariga qanday kuchlanish qo‘yish kerak?",
+      "v": [
+        "100 V",
+        "10 V",
+        "156 V",
+        "64 V"
+      ],
+      "t": 0,
+      "izoh": "U = I·R = 0,8·125 = 100 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#76ec06a8"
+    },
+    {
+      "q": "Iste’molchiga 6 V kuchlanish berilganda undagi tok kuchi 0,2 A bo‘ldi. Iste’molchining qarshiligi qancha?",
+      "v": [
+        "30 Ω",
+        "1,2 Ω",
+        "3 Ω",
+        "12 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = U/I = 6/0,2 = 30 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#c069fd9c"
+    },
+    {
+      "q": "Iste’molchiga 6 V kuchlanish berilganda undan 0,2 A tok o‘tdi. Tok kuchi 0,3 A bo‘lishi uchun qanday kuchlanish berish kerak?",
+      "v": [
+        "9 V",
+        "4 V",
+        "12 V",
+        "7,5 V"
+      ],
+      "t": 0,
+      "izoh": "R = 6/0,2 = 30 Ω; U₂ = I₂·R = 0,3·30 = 9 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#c3a08c59"
+    },
+    {
+      "q": "Qarshiligi 25 Ω bo‘lgan o‘tkazgichdan 200 mA tok o‘tmoqda. Uning uchlaridagi kuchlanish qancha?",
+      "v": [
+        "5 V",
+        "50 V",
+        "0,5 V",
+        "8 V"
+      ],
+      "t": 0,
+      "izoh": "U = I·R = 0,2·25 = 5 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#08c27a07"
+    },
+    {
+      "q": "Qarshiligi 1,5 kΩ bo‘lgan rezistor uchlariga 6 V kuchlanish berildi. Zanjirdagi tok kuchi qancha?",
+      "v": [
+        "4 mA",
+        "9 mA",
+        "0,25 A",
+        "40 mA"
+      ],
+      "t": 0,
+      "izoh": "I = U/R = 6/1500 = 0,004 A = 4 mA",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#c814bfab"
+    },
+    {
+      "q": "O‘tkazgich uchlariga 6 V kuchlanish berilganda undan 5 s da 20 C zaryad o‘tdi. O‘tkazgichning qarshiligi qancha?",
+      "v": [
+        "1,5 Ω",
+        "0,67 Ω",
+        "15 Ω",
+        "6 Ω"
+      ],
+      "t": 0,
+      "izoh": "I = q/t = 20/5 = 4 A; R = U/I = 6/4 = 1,5 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#44fa0623"
+    },
+    {
+      "q": "Uzunligi 8 m, kesim yuzi 0,5 mm² bo‘lgan nikelin sim uchlariga 4 V kuchlanish berildi. Simdagi tok kuchi qancha? (ρ = 0,4·10⁻⁶ Ω·m)",
+      "v": [
+        "0,625 A",
+        "1,25 A",
+        "6,4 A",
+        "0,4 A"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,4·10⁻⁶·8/(0,5·10⁻⁶) = 6,4 Ω; I = U/R = 4/6,4 = 0,625 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#911ac9d6"
+    },
+    {
+      "q": "Uzunligi 20 m, kesim yuzi 0,4 mm² bo‘lgan alyuminiy sim uchlariga 7 V kuchlanish berildi. Simdagi tok kuchi qancha? (ρ = 0,028·10⁻⁶ Ω·m)",
+      "v": [
+        "5 A",
+        "2,5 A",
+        "0,2 A",
+        "10 A"
+      ],
+      "t": 0,
+      "izoh": "R = 0,028·20/0,4 = 1,4 Ω; I = U/R = 7/1,4 = 5 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#f3dd672b"
+    },
+    {
+      "q": "Kesim yuzi 0,4 mm² bo‘lgan mis simga 3,4 V kuchlanish berilganda undan 2 A tok o‘tdi. Simning uzunligi qancha? (ρ = 0,017·10⁻⁶ Ω·m)",
+      "v": [
+        "40 m",
+        "20 m",
+        "4 m",
+        "80 m"
+      ],
+      "t": 0,
+      "izoh": "R = U/I = 3,4/2 = 1,7 Ω; l = R·S/ρ = 1,7·0,4/0,017 = 40 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#b1c5e9fd"
+    },
+    {
+      "q": "Kesim yuzi 0,2 mm² bo‘lgan nikelin o‘tkazgichga 4,5 V kuchlanish berilganda undan 300 mA tok o‘tdi. O‘tkazgichning uzunligi qancha? (ρ = 0,4·10⁻⁶ Ω·m)",
+      "v": [
+        "7,5 m",
+        "15 m",
+        "3,75 m",
+        "75 m"
+      ],
+      "t": 0,
+      "izoh": "R = U/I = 4,5/0,3 = 15 Ω; l = R·S/ρ = 15·0,2/0,4 = 7,5 m",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#76fad550"
+    },
+    {
+      "q": "Uzunligi 20 m, kesim yuzi 2 mm² bo‘lgan nixrom o‘tkazgichga 44 mV kuchlanish berildi. Undan qanday tok o‘tadi? (ρ = 1,1·10⁻⁶ Ω·m)",
+      "v": [
+        "4 mA",
+        "8 mA",
+        "40 mA",
+        "2 mA"
+      ],
+      "t": 0,
+      "izoh": "R = 1,1·20/2 = 11 Ω; I = U/R = 0,044/11 = 0,004 A = 4 mA",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#09f62451"
+    },
+    {
+      "q": "Cho‘g‘lanma lampochkada uzunligi 10 cm, kesim yuzi 0,006 mm² bo‘lgan volfram spiral bor. Lampochkadan 2,4 A tok o‘tganda uning uchlaridagi kuchlanish qancha? (ρ = 0,055·10⁻⁶ Ω·m)",
+      "v": [
+        "2,2 V",
+        "1,1 V",
+        "22 V",
+        "4,4 V"
+      ],
+      "t": 0,
+      "izoh": "R = ρ·l/S = 0,055·0,1/0,006 ≈ 0,917 Ω; U = I·R = 2,4·0,917 ≈ 2,2 V",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#8b704dd3"
+    },
+    {
+      "q": "Qarshiliklari 4 Ω va 6 Ω bo‘lgan ikkita rezistor ketma-ket ulanib, ularning uchlariga 20 V kuchlanish berildi. Zanjirdagi tok kuchi qancha?",
+      "v": [
+        "2 A",
+        "10 A",
+        "0,5 A",
+        "5 A"
+      ],
+      "t": 0,
+      "izoh": "R = R₁+R₂ = 4+6 = 10 Ω; I = U/R = 20/10 = 2 A",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#94ee792a"
+    },
+    {
+      "q": "Qarshiliklari 6 Ω va 3 Ω bo‘lgan ikkita rezistor parallel ulangan. Ularning umumiy qarshiligi qancha?",
+      "v": [
+        "2 Ω",
+        "9 Ω",
+        "4,5 Ω",
+        "18 Ω"
+      ],
+      "t": 0,
+      "izoh": "R = R₁·R₂/(R₁+R₂) = 6·3/(6+3) = 2 Ω",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_masala_m54-om-qonuni#3852f17b"
+    }
+  ]
+}

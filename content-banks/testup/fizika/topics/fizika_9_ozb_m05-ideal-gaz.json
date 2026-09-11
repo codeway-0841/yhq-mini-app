@@ -1,0 +1,486 @@
+{
+  "nom": "05-mavzu. Ideal Gaz",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Ideal gaz deb qanday gazga aytiladi?",
+      "v": [
+        "Molekulalari moddiy nuqtalar deb qaraladigan hamda ular orasidagi o'zaro ta'sir kuchlari e'tiborga olinmaydigan darajada kichik bo'lgan gazga",
+        "Molekulalari orasida kuchli tortishish kuchi mavjud gazga",
+        "Faqat yuqori bosimdagi gazga",
+        "Molekulalari juda katta o'lchamli gazga"
+      ],
+      "t": 0,
+      "izoh": "Ideal gaz — molekulalari moddiy nuqtalar deb qaraladigan hamda ular orasidagi o'zaro ta'sir kuchlari e'tiborga olinmaydigan darajada kichik bo'lgan gazdir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#33054696"
+    },
+    {
+      "q": "Siyraklashtirilgan gazda molekulalar orasidagi masofa qanday?",
+      "v": [
+        "Molekulalarning o'lchamlaridan juda katta",
+        "Molekulalarning o'lchamiga teng",
+        "Molekulalarning o'lchamidan kichik",
+        "Nolga teng"
+      ],
+      "t": 0,
+      "izoh": "Siyraklashtirilgan gazda molekulalar orasidagi masofa ularning o'lchamlaridan juda katta bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#758538e5"
+    },
+    {
+      "q": "Nima uchun siyrak gazni shartli ravishda ideal gaz deb qarash mumkin?",
+      "v": [
+        "Molekulalar orasidagi masofa katta bo'lganligi sababli gaz molekulasining xususiy hajmi hisobga olinmasa ham bo'ladi",
+        "Siyrak gaz molekulalari harakatlanmaydi",
+        "Siyrak gazda molekulalar yo'q",
+        "Siyrak gazning temperaturasi har doim nol"
+      ],
+      "t": 0,
+      "izoh": "Gaz molekulalari orasidagi masofa katta bo'lgani sababli ularning xususiy hajmi hisobga olinmaydi; shu bois siyrak gaz ideal gaz deb qaraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#bd2a02f2"
+    },
+    {
+      "q": "Tabiatda mutlaq ideal gaz uchrabmi?",
+      "v": [
+        "Yo'q, mavjud bo'lgan gazlar real gazlardir",
+        "Ha, vodorod mutlaq ideal gazdir",
+        "Ha, geliy mutlaq ideal gazdir",
+        "Ha, juda past temperaturada"
+      ],
+      "t": 0,
+      "izoh": "Tabiatda mutlaq ideal gaz uchramaydi, chunki molekulalar orasida kichik bo'lsa-da o'zaro ta'sir kuchlari mavjud.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#1b86ec31"
+    },
+    {
+      "q": "Real gaz deb qanday gazga aytiladi?",
+      "v": [
+        "Xossalari molekulalarining o'zaro ta'siriga bog'liq bo'lgan gazga",
+        "Molekulari harakatsiz gazga",
+        "Faqat bir atomli gazga",
+        "Faqat suyuqlik holatidagi gazga"
+      ],
+      "t": 0,
+      "izoh": "Xossalari molekulalarining o'zaro ta'siriga bog'liq bo'lgan gaz real gaz deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#f3090325"
+    },
+    {
+      "q": "Siyrak gazning xossalari ideal gaznikiga yaqin bo'lishining sababi nima?",
+      "v": [
+        "Molekulalarning kinetik energiyasi ularning o'zaro ta'sir potensial energiyasidan ancha katta bo'lganligi",
+        "Molekulalarning massasi juda kichikligi",
+        "Gazning rangsizligi",
+        "Molekulalarning shakli shar simonligi"
+      ],
+      "t": 0,
+      "izoh": "Molekulalarning kinetik energiyasi o'zaro ta'sir potensial energiyasidan ancha katta bo'lganligi tufayli siyrak gazni ideal gaz deb hisoblash mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#bed4faf9"
+    },
+    {
+      "q": "Gaz bosimi qanday hosil bo'ladi?",
+      "v": [
+        "Gaz molekulalarining idish devorlariga urilishi natijasida unga impuls berishi tufayli",
+        "Idish devorining tortishish kuchi tufayli",
+        "Yer tortishish kuchi tufayli",
+        "Molekulalarning harakatsizligi tufayli"
+      ],
+      "t": 0,
+      "izoh": "Gazning bosimi gaz molekulalarining idish devorlariga urilishi natijasida unga (m₀v) impuls berishi tufayli hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#d98856c8"
+    },
+    {
+      "q": "Gazning bosimi qanday kattaliklarga bog'liq?",
+      "v": [
+        "Idish devorlariga urilayotgan molekulalar soniga, molekulaning massasi va molekula harakatining o'rtacha kvadratik tezligiga",
+        "Faqat idishning shakliga",
+        "Faqat gazning rangiga",
+        "Faqat tashqi temperaturaga"
+      ],
+      "t": 0,
+      "izoh": "Gaz bosimi devorga urilayotgan molekulalar soniga, molekula massasi va o'rtacha kvadratik tezlikka bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#7fd33824"
+    },
+    {
+      "q": "Birlik vaqt ichida idish devoriga urilayotgan molekulalar soni nimaga to'g'ri proporsional?",
+      "v": [
+        "Gaz molekulalarining konsentratsiyasiga",
+        "Idishning hajmiga",
+        "Molekulaning diametriga",
+        "Devorning qalinligiga"
+      ],
+      "t": 0,
+      "izoh": "Birlik vaqt ichida devorga urilayotgan molekulalar soni gaz molekulalarining konsentratsiyasiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#cb7a7744"
+    },
+    {
+      "q": "Gazlar molekulyar-kinetik nazariyasining asosiy tenglamasi qaysi?",
+      "v": [
+        "p = (1/3)·n·m₀·v̄²",
+        "p = n·V·T",
+        "p = m·g·h",
+        "p = F·S"
+      ],
+      "t": 0,
+      "izoh": "p = (1/3)·n·m₀·v̄² — MKN ning asosiy tenglamasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#de2ce064"
+    },
+    {
+      "q": "MKN asosiy tenglamasidagi n harfi nimani bildiradi?",
+      "v": [
+        "Gaz molekulalarining konsentratsiyasini",
+        "Molekulalar sonini",
+        "Modda miqdorini",
+        "Avogadro sonini"
+      ],
+      "t": 0,
+      "izoh": "n — gaz molekulalarining konsentratsiyasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#abb9d96c"
+    },
+    {
+      "q": "Molekulaning o'rtacha kvadratik tezligi qanday aniqlanadi?",
+      "v": [
+        "v̄² = (v₁² + v₂² + ... + v_N²)/N",
+        "v̄ = (v₁ + v₂ + ... + v_N)/N",
+        "v̄² = v₁² · v₂² · ... · v_N²",
+        "v̄² = N/(v₁² + ... + v_N²)"
+      ],
+      "t": 0,
+      "izoh": "O'rtacha kvadratik tezlik v̄² = (v₁² + v₂² + ... + v_N²)/N ifoda orqali aniqlanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#f05e45e4"
+    },
+    {
+      "q": "Bitta molekulaning o'rtacha kinetik energiyasi qanday ifodalanadi?",
+      "v": [
+        "Ē_k = m₀v̄²/2",
+        "Ē_k = m₀v̄²",
+        "Ē_k = 2m₀v̄²",
+        "Ē_k = m₀v̄/2"
+      ],
+      "t": 0,
+      "izoh": "Ē_k = m₀v̄²/2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#7aa9e953"
+    },
+    {
+      "q": "Gaz bosimini molekulalarning o'rtacha kinetik energiyasi orqali ifodalovchi formula qaysi?",
+      "v": [
+        "p = (2/3)·n·Ē_k",
+        "p = (1/3)·n·Ē_k",
+        "p = 3n·Ē_k/2",
+        "p = n·Ē_k"
+      ],
+      "t": 0,
+      "izoh": "p = (2/3)·n·Ē_k.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#92b92c68"
+    },
+    {
+      "q": "Gaz bosimi hajm birligidagi molekulalar kinetik energiyasining o'rtacha qiymatiga qanday bog'liq?",
+      "v": [
+        "To'g'ri proporsional",
+        "Teskari proporsional",
+        "Kvadratik bog'liq",
+        "Bog'liq emas"
+      ],
+      "t": 0,
+      "izoh": "Gaz bosimi hajm birligidagi molekulalar kinetik energiyasining o'rtacha qiymatiga to'g'ri proporsional.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#3f9412c1"
+    },
+    {
+      "q": "p = (1/3)·ρ·v̄² formulasidagi ρ nimani bildiradi?",
+      "v": [
+        "Gaz zichligini",
+        "Molekulaning massasini",
+        "Gaz hajmini",
+        "Bosimni"
+      ],
+      "t": 0,
+      "izoh": "n·m₀ ko'paytma gaz zichligini beradi, shuning uchun p = (1/3)·ρ·v̄².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#a9fa0853"
+    },
+    {
+      "q": "Ideal gazning zichligi 1,5 kg/m³ va bosimi 180 kPa bo'lsa, molekulalarning o'rtacha kvadratik tezligi qancha?",
+      "v": [
+        "v̄ = 600 m/s",
+        "v̄ = 360 m/s",
+        "v̄ = 60 m/s",
+        "v̄ = 1200 m/s"
+      ],
+      "t": 0,
+      "izoh": "v̄ = √(3p/ρ) = √(3·180·10³/1,5) = 600 m/s.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#59c792c1"
+    },
+    {
+      "q": "Gaz bosimi 120 kPa, molekulalar konsentratsiyasi 5·10²⁶ m⁻³ bo'lsa, molekulalar ilgarilanma harakati kinetik energiyasining o'rtacha qiymati qancha?",
+      "v": [
+        "Ē_k = 3,6·10⁻²² J",
+        "Ē_k = 3,6·10⁻²⁰ J",
+        "Ē_k = 7,2·10⁻²² J",
+        "Ē_k = 1,8·10⁻²² J"
+      ],
+      "t": 0,
+      "izoh": "Ē_k = 3p/(2n) = 3·120·10³/(2·5·10²⁶) = 3,6·10⁻²² J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#ab34b8b9"
+    },
+    {
+      "q": "Yopiq idishdagi gaz molekulalari devorga ta'sirini qanday tavsiflash mumkin?",
+      "v": [
+        "Har bir molekula xaotik harakat qilib, idish devorlariga uriladi va ma'lum kuch bilan ta'sir qiladi",
+        "Molekulalar devorga umuman tegmaydi",
+        "Molekulalar faqat idish tubiga ta'sir qiladi",
+        "Molekulalar devorni faqat tortadi"
+      ],
+      "t": 0,
+      "izoh": "Idishdagi har bir gaz molekulasi xaotik harakat qilib, devorlarga uriladi va ma'lum kuch bilan ta'sir qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#45066ba3"
+    },
+    {
+      "q": "Ko'p sondagi molekulalarning devorga deyarli uzluksiz urilishidan nima vujudga keladi?",
+      "v": [
+        "Devor sirtida bosim kuchi",
+        "Devorning erishi",
+        "Gazning kondensatsiyasi",
+        "Molekulalarning yutilishi"
+      ],
+      "t": 0,
+      "izoh": "Ko'p sondagi molekulalarning devorga deyarli uzluksiz urilishidan devor sirtida bosim kuchi vujudga keladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#df76655d"
+    },
+    {
+      "q": "Molekulalar bir-biri bilan to'qnashganda nima o'zgaradi?",
+      "v": [
+        "Molekulaning harakat tezligining yo'nalishi va son qiymati o'zgaradi",
+        "Molekulaning massasi o'zgaradi",
+        "Molekula yo'qoladi",
+        "Molekula atomlarga parchalanadi"
+      ],
+      "t": 0,
+      "izoh": "To'qnashganda molekulaning harakat tezligining yo'nalishi va son qiymati o'zgaradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#439a6b76"
+    },
+    {
+      "q": "Idish vodorod gazi bilan to'ldirilgan. Molekulalar konsentratsiyasi 4,5·10²⁴ m⁻³, o'rtacha kvadratik tezligi 400 m/s bo'lsa, gaz bosimini topish uchun qaysi formula ishlatiladi?",
+      "v": [
+        "p = (1/3)·n·m₀·v̄²",
+        "p = n·R·T",
+        "p = ρ·g·h",
+        "p = F/S"
+      ],
+      "t": 0,
+      "izoh": "MKN asosiy tenglamasi p = (1/3)·n·m₀·v̄² ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#ad0d4d7f"
+    },
+    {
+      "q": "Ideal gaz molekulalarining o'rtacha kvadratik tezligi 600 m/s va zichligi 0,9 kg/m³ bo'lsa, bosim qanday hisoblanadi?",
+      "v": [
+        "p = (1/3)·0,9·600² = 1,08·10⁵ Pa",
+        "p = 0,9·600 = 540 Pa",
+        "p = 3·0,9·600² = 9,72·10⁵ Pa",
+        "p = 0,9·600² = 3,24·10⁵ Pa"
+      ],
+      "t": 0,
+      "izoh": "p = (1/3)·ρ·v̄² = (1/3)·0,9·360000 = 1,08·10⁵ Pa.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#3944ab81"
+    },
+    {
+      "q": "MKN asosiy tenglamasining uchta ko'rinishi qaysi javobda to'g'ri keltirilgan?",
+      "v": [
+        "p = (1/3)n·m₀v̄²; p = (2/3)n·Ē_k; p = (1/3)ρ·v̄²",
+        "p = nkT; p = ρgh; p = F/S",
+        "p = m₀v; p = nV; p = RT",
+        "p = νRT; p = mv²/2; p = ρV"
+      ],
+      "t": 0,
+      "izoh": "(1), (2) va (3) ifodalar — gazlar molekulyar-kinetik nazariyasining asosiy tenglamalari.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#34d2e88b"
+    },
+    {
+      "q": "Bitta molekulaning ta'sir etadigan kuchi juda kichik bo'lsa-da, gaz bosimi sezilarli bo'lishining sababi nima?",
+      "v": [
+        "Devorga urilayotgan molekulalar soni juda ko'p va urilishlar deyarli uzluksiz",
+        "Molekulalar juda og'ir",
+        "Idish devori juda yumshoq",
+        "Molekulalar juda katta tezlikda aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Bitta molekulaning kuchi kichik, lekin ko'p sondagi molekulalarning deyarli uzluksiz urilishi sezilarli bosim kuchini hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#d8130d2c"
+    },
+    {
+      "q": "Ideal gaz modelida molekulalarning xususiy hajmi qanday qaraladi?",
+      "v": [
+        "Hisobga olinmaydi",
+        "Idish hajmiga teng deb olinadi",
+        "Idish hajmining yarmiga teng deb olinadi",
+        "Cheksiz katta deb olinadi"
+      ],
+      "t": 0,
+      "izoh": "Ideal gazda molekulalar moddiy nuqta deb qaraladi, ya'ni ularning xususiy hajmi hisobga olinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#8e2a4a31"
+    },
+    {
+      "q": "Zichligi 1,5 kg/m³ va bosimi 7,2 kPa bo'lgan gaz molekulalarining o'rtacha kvadratik tezligini topish formulasi qaysi?",
+      "v": [
+        "v̄ = √(3p/ρ)",
+        "v̄ = √(p/ρ)",
+        "v̄ = √(ρ/3p)",
+        "v̄ = 3p/ρ"
+      ],
+      "t": 0,
+      "izoh": "p = (1/3)ρv̄² dan v̄ = √(3p/ρ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m05-ideal-gaz#8784a99d"
+    },
+    {
+      "q": "Idishga solingan kislorod gazi devorga 90 kPa bosim bermoqda. Molekulalar 600 m/s o'rtacha kvadratik tezlik bilan harakatlansa, gaz zichligini topish uchun qaysi ifoda ishlatiladi?",
+      "v": [
+        "ρ = 3p/v̄²",
+        "ρ = p·v̄²/3",
+        "ρ = v̄²/3p",
+        "ρ = p/v̄²"
+      ],
+      "t": 0,
+      "izoh": "p = (1/3)ρv̄² dan ρ = 3p/v̄².",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#5f145fb3"
+    },
+    {
+      "q": "Hajm birligidagi molekulalar soni 3·10²⁵ m⁻³ va bosimi 80 kPa bo'lgan gaz molekulalarining o'rtacha kinetik energiyasini qanday topiladi?",
+      "v": [
+        "Ē_k = 3p/(2n)",
+        "Ē_k = 2p/(3n)",
+        "Ē_k = p·n/2",
+        "Ē_k = 3n/(2p)"
+      ],
+      "t": 0,
+      "izoh": "p = (2/3)n·Ē_k dan Ē_k = 3p/(2n).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#bf13d81c"
+    },
+    {
+      "q": "Gaz molekulalari xaotik harakat davomida bir-birlari bilan to'qnashganda molekulaning harakati qanday tavsiflanadi?",
+      "v": [
+        "O'rtacha kvadratik tezligi orqali",
+        "Maksimal tezligi orqali",
+        "Minimal tezligi orqali",
+        "Nol tezlik orqali"
+      ],
+      "t": 0,
+      "izoh": "To'qnashuvlarda tezlik o'zgargani uchun molekulaning harakati o'rtacha kvadratik tezlik orqali tavsiflanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m05-ideal-gaz#eeca1329"
+    },
+    {
+      "q": "Massasi 0,3 kg bo'lgan gaz 400 kPa bosimda 1 m³ hajmni egallasa, molekulalarining o'rtacha kvadratik tezligini topish uchun qanday ketma-ketlik ishlatiladi?",
+      "v": [
+        "ρ = m/V ni topib, v̄ = √(3p/ρ) dan",
+        "v̄ = p/m dan",
+        "v̄ = √(p·V) dan",
+        "v̄ = m/p dan"
+      ],
+      "t": 0,
+      "izoh": "Avval ρ = m/V = 0,3 kg/m³, keyin v̄ = √(3p/ρ).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#7b0fbf5f"
+    },
+    {
+      "q": "30 kPa bosimda bir atomli gaz molekulasining o'rtacha kinetik energiyasini topishda konsentratsiya 4·10²⁵ m⁻³ berilgan bo'lsa, qaysi formula qo'llaniladi?",
+      "v": [
+        "Ē_k = 3p/(2n)",
+        "Ē_k = p/(n·T)",
+        "Ē_k = n·p/2",
+        "Ē_k = 2n/(3p)"
+      ],
+      "t": 0,
+      "izoh": "p = (2/3)n·Ē_k formuladan Ē_k = 3p/(2n) orqali topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m05-ideal-gaz#e2c2d2eb"
+    }
+  ]
+}

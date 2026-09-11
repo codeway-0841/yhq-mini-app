@@ -1,0 +1,471 @@
+{
+  "nom": "21-mavzu. Foiz va normal konsentratsiya o'rtasidagi bog'lanish",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Foiz konsentratsiya ma'lum bo'lib, normal konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C_N = C% · 10 · ρ / E",
+        "C_N = C_N · E / (ρ · 10)",
+        "C_N = C% · E / (ρ · 10)",
+        "C_N = E · ρ / (C% · 10)"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiyani eritma zichligiga va 10 ga ko'paytirib, ekvivalent massaga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#69aff2c8"
+    },
+    {
+      "q": "Normal konsentratsiya ma'lum bo'lib, foiz konsentratsiyani aniqlash formulasini ko'rsating.",
+      "v": [
+        "C% = C_N · E / (ρ · 10)",
+        "C% = C% · 10 · ρ / E",
+        "C% = C_N · ρ / (E · 10)",
+        "C% = C_N · E · ρ / 10"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani ekvivalent massaga ko'paytirib, zichlikni 10 ga ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#8e2d2fc8"
+    },
+    {
+      "q": "Foiz va normal konsentratsiya berilganda eritma zichligini aniqlash formulasini ko'rsating.",
+      "v": [
+        "ρ = C_N · E / (C% · 10)",
+        "ρ = C% · 10 / (C_N · E)",
+        "ρ = C_N · C% · E · 10",
+        "ρ = C% · E / (C_N · 10)"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani ekvivalent massaga ko'paytirib, foiz konsentratsiyani 10 ga ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#67113feb"
+    },
+    {
+      "q": "Erigan moddani ekvivalent massasini (E) aniqlash formulasini ko'rsating.",
+      "v": [
+        "E = C% · 10 · ρ / C_N",
+        "E = C_N · ρ / (C% · 10)",
+        "E = C% · C_N / (10 · ρ)",
+        "E = C_N · 10 / (C% · ρ)"
+      ],
+      "t": 0,
+      "izoh": "Foiz konsentratsiyani eritma zichligiga va 10 ga ko'paytirib, normal konsentratsiyaga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#1f90f801"
+    },
+    {
+      "q": "C_N = C% · 10 · ρ / E formulasida E nimani bildiradi?",
+      "v": [
+        "Erigan moddaning ekvivalent massasini",
+        "Erigan moddaning molyar massasini",
+        "Erigan modda miqdorini",
+        "Eritma hajmini"
+      ],
+      "t": 0,
+      "izoh": "E — erigan moddaning ekvivalent massasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#75fcfe23"
+    },
+    {
+      "q": "1-masalada H3PO4 eritmasining normal konsentratsiyasi va zichligi qanday berilgan?",
+      "v": [
+        "4 N li, ρ=1,306 g/ml",
+        "3 N li, ρ=1,23 g/ml",
+        "2 N li, ρ=1,2 g/ml",
+        "6 N li, ρ=1,28 g/ml"
+      ],
+      "t": 0,
+      "izoh": "1-masala: 4 N li (ρ=1,306 g/ml) H3PO4 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#5b1a6d1c"
+    },
+    {
+      "q": "H3PO4 ning ekvivalent massasi qancha? (M(H3PO4)=98 g/mol)",
+      "v": [
+        "32,67",
+        "49",
+        "98",
+        "41"
+      ],
+      "t": 0,
+      "izoh": "E(H3PO4) = 98/3 = 32,67.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#6506e9fd"
+    },
+    {
+      "q": "4 N li (ρ=1,306 g/ml) H3PO4 eritmasining foiz konsentratsiyasi qancha?",
+      "v": [
+        "10%",
+        "4%",
+        "32,67%",
+        "40%"
+      ],
+      "t": 0,
+      "izoh": "C% = 4·32,67/(1,306·10) = 10%.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#22b3a09f"
+    },
+    {
+      "q": "2-masalada H2SO3 eritmasining foiz konsentratsiyasi va zichligi qanday berilgan?",
+      "v": [
+        "10% li, ρ=1,23 g/ml",
+        "4% li, ρ=1,306 g/ml",
+        "28% li, ρ=1,2 g/ml",
+        "25% li, ρ=1,25 g/ml"
+      ],
+      "t": 0,
+      "izoh": "2-masala: 10% li (ρ=1,23 g/ml) H2SO3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#90f13741"
+    },
+    {
+      "q": "H2SO3 ning ekvivalent massasi qancha? (M(H2SO3)=82 g/mol)",
+      "v": [
+        "41",
+        "82",
+        "32,67",
+        "49"
+      ],
+      "t": 0,
+      "izoh": "E(H2SO3) = 82/2 = 41.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#76c82c73"
+    },
+    {
+      "q": "10% li (ρ=1,23 g/ml) H2SO3 eritmasining normal konsentratsiyasi qancha?",
+      "v": [
+        "3 N",
+        "4 N",
+        "1,5 N",
+        "0,3 N"
+      ],
+      "t": 0,
+      "izoh": "C_N = 10·1,23·10/41 = 3 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#5e5b306e"
+    },
+    {
+      "q": "2-masalada normal konsentratsiya qanday ifoda orqali hisoblangan?",
+      "v": [
+        "C_N = 10 · 1,23 · 10 / 41",
+        "C_N = 10 · 41 / (1,23 · 10)",
+        "C_N = 41 · 1,23 / (10 · 10)",
+        "C_N = 10 · 10 / (1,23 · 41)"
+      ],
+      "t": 0,
+      "izoh": "C_N = C%·ρ·10/E = 10·1,23·10/41 = 3 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#529b2747"
+    },
+    {
+      "q": "Molyar konsentratsiyadan normal konsentratsiyaga o'tish formulasini ko'rsating.",
+      "v": [
+        "C_N = C_M · Val(kat) · n(kat)",
+        "C_N = C_M / (Val(kat) · n(kat))",
+        "C_N = C_M · M / n(kat)",
+        "C_N = C_M · E · Val(kat)"
+      ],
+      "t": 0,
+      "izoh": "Molyar konsentratsiyani kation valentligi va kation soniga ko'paytirish orqali normal konsentratsiya topiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#ff6d3c5c"
+    },
+    {
+      "q": "Normal konsentratsiyadan molyar konsentratsiyaga o'tish formulasini ko'rsating.",
+      "v": [
+        "C_M = C_N / (Val(kat) · n(kat))",
+        "C_M = C_N · Val(kat) · n(kat)",
+        "C_M = C_N · n(kat) / Val(kat)",
+        "C_M = C_N · E / Val(kat)"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani kation valentligi va kation soni ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#a36ed295"
+    },
+    {
+      "q": "C_N = C_M · Val(kat) · n(kat) formulasida Val(kat) nimani bildiradi?",
+      "v": [
+        "Erigan modda tarkibidagi kationning valentligini",
+        "Erigan modda tarkibidagi kationning sonini",
+        "Erigan moddaning molyar massasini",
+        "Erigan moddaning ekvivalent massasini"
+      ],
+      "t": 0,
+      "izoh": "Val(kat) — erigan modda tarkibidagi kationning valentligi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#38fa654d"
+    },
+    {
+      "q": "C_N = C_M · Val(kat) · n(kat) formulasida n(kat) nimani bildiradi?",
+      "v": [
+        "Erigan modda tarkibidagi kationning sonini",
+        "Kationning valentligini",
+        "Eritmadagi mollar sonini",
+        "Ekvivalent miqdorni"
+      ],
+      "t": 0,
+      "izoh": "n(kat) — erigan modda tarkibidagi kationning soni.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#91b3fdc1"
+    },
+    {
+      "q": "3-masalada Na2SO4 tarkibidagi kation (Na) ning valentligi va indeksi qanday?",
+      "v": [
+        "Valentligi 1, indeksi 2",
+        "Valentligi 2, indeksi 1",
+        "Valentligi 1, indeksi 1",
+        "Valentligi 3, indeksi 2"
+      ],
+      "t": 0,
+      "izoh": "Na2SO4 tarkibidagi kation Na ning valentligi 1, indeksi 2 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#60a3e7b0"
+    },
+    {
+      "q": "1,5 M li Na2SO4 eritmasining normal konsentratsiyasi qancha?",
+      "v": [
+        "3 N",
+        "1,5 N",
+        "0,75 N",
+        "6 N"
+      ],
+      "t": 0,
+      "izoh": "C_N = 1,5·(1·2) = 3 N.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#36c0ff31"
+    },
+    {
+      "q": "4-masalada Al(NO3)3 tarkibidagi kation (Al) ning valentligi va indeksi qanday?",
+      "v": [
+        "Valentligi 3, indeksi 1",
+        "Valentligi 1, indeksi 3",
+        "Valentligi 3, indeksi 3",
+        "Valentligi 2, indeksi 1"
+      ],
+      "t": 0,
+      "izoh": "Al(NO3)3 tarkibidagi kation Al ning valentligi 3, indeksi 1 ga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#7660793d"
+    },
+    {
+      "q": "7,5 N li Al(NO3)3 eritmasining molyar konsentratsiyasi qancha?",
+      "v": [
+        "2,5 M",
+        "7,5 M",
+        "22,5 M",
+        "1,5 M"
+      ],
+      "t": 0,
+      "izoh": "C_M = 7,5/(3·1) = 2,5 M.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#dfa1d66b"
+    },
+    {
+      "q": "H2SO3 kislota uchun n(H) nechaga teng?",
+      "v": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "E(H2SO3) = 82/2 hisobidan ko'rinadiki, n(H) = 2.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#e51c6c15"
+    },
+    {
+      "q": "H3PO4 kislota uchun n(H) nechaga teng?",
+      "v": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "E(H3PO4) = 98/3 hisobidan ko'rinadiki, n(H) = 3.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#d2c35ff7"
+    },
+    {
+      "q": "Noma'lum modda eritmasining foiz, normal konsentratsiyalari va zichligi ma'lum bo'lsa, moddani nomini bilish uchun nima aniqlanadi?",
+      "v": [
+        "Erigan moddaning ekvivalent massasi",
+        "Erigan moddaning molyar massasi",
+        "Eritmaning hajmi",
+        "Eritmaning massasi"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent massa aniqlanib, u orqali erigan noma'lum moddani nomini bilish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#4f920fe5"
+    },
+    {
+      "q": "Eritma zichligini aniqlashda normal konsentratsiya (C_N) nimaga ko'paytiriladi?",
+      "v": [
+        "Erigan moddaning ekvivalent massasiga (E)",
+        "Erigan moddaning molyar massasiga (M)",
+        "Eritma hajmiga (V)",
+        "Kation soniga"
+      ],
+      "t": 0,
+      "izoh": "ρ = C_N·E/(C%·10): normal konsentratsiya ekvivalent massaga ko'paytiriladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#4a8707b2"
+    },
+    {
+      "q": "Mavzuga doir 1-masalada qanday shart berilgan?",
+      "v": [
+        "3,5 N li (ρ=1,143 g/ml) H2SO4 eritmasining foiz konsentratsiyasini aniqlash",
+        "3 N li (ρ=1,455 g/ml) K2CrO4 eritmasining foiz konsentratsiyasini aniqlash",
+        "25% li NH4NO3 eritmasining normal konsentratsiyasini aniqlash",
+        "40% li Al(NO3)3 eritmasining normal konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 1-masala: 3,5 N li (ρ=1,143 g/ml) H2SO4 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#07da83db"
+    },
+    {
+      "q": "Mavzuga doir 5-masalada qanday shart berilgan?",
+      "v": [
+        "2,5 M li Fe2(SO4)3 eritmasining normal konsentratsiyasini aniqlash",
+        "5 M li CaCl2 eritmasining normal konsentratsiyasini aniqlash",
+        "3 N li Fe(NO3)3 eritmasining molyar konsentratsiyasini aniqlash",
+        "9 N li Al2(SO4)3 eritmasining molyar konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 5-masala: 2,5 M li Fe2(SO4)3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#70e00f0d"
+    },
+    {
+      "q": "Mavzuga doir 13-masalada qanday shart berilgan?",
+      "v": [
+        "4 M li Al2(SO4)3 eritmasining normal konsentratsiyasini aniqlash",
+        "0,5 M li Al(NO2)3 eritmasining normal konsentratsiyasini aniqlash",
+        "6 N li H2SO3 eritmasining molyar konsentratsiyasini aniqlash",
+        "2 N li H3PO3 eritmasining molyar konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 13-masala: 4 M li Al2(SO4)3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#9fc7ffbe"
+    },
+    {
+      "q": "Mavzuga doir 11-masalada qanday shart berilgan?",
+      "v": [
+        "28% li (ρ=1,2 g/ml) KOH eritmasining normal konsentratsiyasini aniqlash",
+        "26% li (ρ=1,2 g/ml) BaCl2 eritmasining normal konsentratsiyasini aniqlash",
+        "4 N li (ρ=1,25 g/ml) NaOH eritmasining foiz konsentratsiyasini aniqlash",
+        "3,2 N li (ρ=1,28 g/ml) CuSO4 eritmasining foiz konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 11-masala: 28% li (ρ=1,2 g/ml) KOH eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#234b778b"
+    },
+    {
+      "q": "Mavzuga doir 16-masalada qanday shart berilgan?",
+      "v": [
+        "2 N li H3PO3 eritmasining molyar konsentratsiyasini aniqlash",
+        "6 N li H2SO3 eritmasining molyar konsentratsiyasini aniqlash",
+        "9 N li Al2(SO4)3 eritmasining molyar konsentratsiyasini aniqlash",
+        "3 N li Fe(NO3)3 eritmasining molyar konsentratsiyasini aniqlash"
+      ],
+      "t": 0,
+      "izoh": "Mavzuga doir 16-masala: 2 N li H3PO3 eritmasi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#2e67fbae"
+    },
+    {
+      "q": "2-masalada H2SO3 ning ekvivalent massasini topishda qaysi formula ishlatilgan?",
+      "v": [
+        "E_kta = M_kta / n(H)",
+        "E_asos = M_asos / n(OH)",
+        "E = C% · 10 · ρ / C_N",
+        "n_ekv = m/E"
+      ],
+      "t": 0,
+      "izoh": "Kislota ekvivalent massasi E_kta = M_kta/n(H) formula bilan topilgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#5e260c4d"
+    },
+    {
+      "q": "C% = C_N · E / (ρ · 10) formulasida maxrajda nima turadi?",
+      "v": [
+        "ρ · 10",
+        "E · 10",
+        "C_N · 10",
+        "C% · 10"
+      ],
+      "t": 0,
+      "izoh": "Normal konsentratsiyani ekvivalent massaga ko'paytirib, eritma zichligini 10 ga ko'paytmasiga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m21-foiz-normal-boglanish#9db57032"
+    }
+  ]
+}

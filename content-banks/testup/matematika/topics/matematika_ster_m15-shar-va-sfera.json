@@ -1,0 +1,1609 @@
+{
+  "nom": "Shar va sfera",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Malika sotib olgan rezina to'pning radiusi 5 sm. To'pning butun sirtini bo'yash uchun qancha yuza bo'yaladi?",
+      "v": [
+        "100π sm²",
+        "25π sm²",
+        "50π sm²",
+        "20π sm²"
+      ],
+      "t": 0,
+      "izoh": "Sfera sirti S = 4πR² formulasi bilan topiladi. R = 5 sm bo'lgani uchun S = 4π · 5² = 4π · 25 = 100π sm². Katta doira yuzi πR² = 25π bilan chalkashtirmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-sirti-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#7f1af7e7"
+    },
+    {
+      "q": "Sport zalidagi dekorativ sharning diametri 12 sm. Uning to'liq sirt yuzasi necha kvadrat santimetrga teng?",
+      "v": [
+        "576π sm²",
+        "36π sm²",
+        "144π sm²",
+        "72π sm²"
+      ],
+      "t": 2,
+      "izoh": "Avval radius topiladi: R = 12 : 2 = 6 sm. So'ngra S = 4πR² = 4π · 6² = 144π sm². Diametrni to'g'ridan-to'g'ri formulaga qo'yish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='58' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 12 sm%3C/text%3E%3Ctext x='141' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sfera-sirti-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#5657b0e3"
+    },
+    {
+      "q": "Radiusi 1,5 m bo'lgan sharsimon suv omborining tashqi sirti to'liq izolyatsiya qilinadi. Izolyatsiya qoplanadigan yuza qancha?",
+      "v": [
+        "9π m²",
+        "2,25π m²",
+        "4,5π m²",
+        "6π m²"
+      ],
+      "t": 0,
+      "izoh": "Sfera sirti S = 4πR² ga teng. Bu yerda R = 1,5 m, demak avval 1,5² = 2,25 topiladi, so'ng S = 4π · 2,25 = 9π m² chiqadi. Radiusni kvadratga ko'tarish o'rniga to'rtga ko'paytirish xato natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 1,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-sirti-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#11453517"
+    },
+    {
+      "q": "Sharsimon gaz ballonining radiusi 0,4 m. Ballon tashqi tomondan ikki qavat bo'yaladi. Ikkala qavat uchun bo'yoq sarflanadigan yuzalar yig'indisi qancha bo'ladi?",
+      "v": [
+        "0,64π m²",
+        "1,28π m²",
+        "2,56π m²",
+        "0,32π m²"
+      ],
+      "t": 1,
+      "izoh": "Bir qavat uchun bo'yoq ballonning butun sirtiga, ya'ni S = 4πR² = 4π · 0,16 = 0,64π m² yuzaga tushadi. Ikki qavat bo'yalgani uchun yuzalar yig'indisi ikki barobar bo'ladi: 2 · 0,64π = 1,28π m². Faqat bitta qavatni hisoblab 0,64π deb javob berish shartdagi ikki qavatni e'tibordan chetda qoldirishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 0,4 m%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Eikki qavat bo'yoq: yuzalar yig'indisi S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sfera-sirti-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#29898a15"
+    },
+    {
+      "q": "Sharsimon idish shunday kattalashtirildiki, uning radiusi 25 foizga ortdi. Idishning sirt yuzasi necha foizga ko'paydi?",
+      "v": [
+        "25 foiz",
+        "50 foiz",
+        "56,25 foiz",
+        "95,3 foiz"
+      ],
+      "t": 2,
+      "izoh": "Yangi radius R₁ = 1,25R bo'ladi. Sirt yuzalari nisbati S₁ : S = (1,25R)² : R² = 1,5625 chiqadi. Demak yuza 1,5625 marta, ya'ni 56,25 foizga ortadi. Agar hajm so'ralganda 1,25³ = 1,953 marta, ya'ni 95,3 foiz bo'lardi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sfera-sirti-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#6c319df2"
+    },
+    {
+      "q": "Sharsimon akvariumning ichki radiusi 6 sm. Akvarium to'la to'ldirilganda unga necha kub santimetr suv sig'adi?",
+      "v": [
+        "288π sm³",
+        "144π sm³",
+        "216π sm³",
+        "864π sm³"
+      ],
+      "t": 0,
+      "izoh": "Shar hajmi V = (4/3)πR³ formulasi bilan topiladi. R = 6 bo'lgani uchun 6³ = 216, demak V = (4/3)π · 216 = 288π sm³. Bu yerda 4πR² = 144π — bu sirt yuzasi, hajm emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-hajmi-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#8233b177"
+    },
+    {
+      "q": "Temirchilik ustaxonasida yasalgan po'lat sharning diametri 18 sm. Shu sharning hajmi nechaga teng?",
+      "v": [
+        "324π sm³",
+        "972π sm³",
+        "729π sm³",
+        "2916π sm³"
+      ],
+      "t": 1,
+      "izoh": "Avval radius topiladi: R = 18 : 2 = 9 sm. Keyin V = (4/3)πR³ = (4/3)π · 729 = 972π sm³. Diametrni radius o'rniga qo'yish yoki 4/3 koeffitsiyentini tushirib qoldirish tipik xato hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='58' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 18 sm%3C/text%3E%3Ctext x='141' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-hajmi-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#5afec818"
+    },
+    {
+      "q": "Radiusi 1,5 m bo'lgan sharsimon rezervuarga suyuq o'g'it to'la quyildi. Rezervuarning sig'imi necha kub metrga teng?",
+      "v": [
+        "9π m³",
+        "3,375π m³",
+        "4,5π m³",
+        "13,5π m³"
+      ],
+      "t": 2,
+      "izoh": "Hajm V = (4/3)πR³ ga teng. Avval 1,5³ = 3,375 hisoblanadi, so'ngra V = (4/3)π · 3,375 = 4,5π m³ chiqadi. 4/3 koeffitsiyentini unutgan o'quvchi 3,375π deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='25' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 1,5 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-hajmi-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#1a6cd470"
+    },
+    {
+      "q": "Qandolatchi radiusi 6 sm bo'lgan uchta bir xil sharsimon shokolad quydi. Uchala shokoladning umumiy hajmi qancha bo'ladi?",
+      "v": [
+        "288π sm³",
+        "864π sm³",
+        "432π sm³",
+        "2592π sm³"
+      ],
+      "t": 1,
+      "izoh": "Bitta sharning hajmi V = (4/3)π · 6³ = 288π sm³ ga teng. Shokoladlar bir xil bo'lgani uchun umumiy hajm 3 · 288π = 864π sm³ bo'ladi. Faqat bitta sharning hajmini yozib qo'yish oxirgi qadamni tashlab ketish demakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='68' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='232' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='186' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='168' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='150' y='232' font-size='13' fill='%23334155' text-anchor='middle'%3Euchta bir xil shar%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-hajmi-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#39fb3d90"
+    },
+    {
+      "q": "Diametri 18 sm bo'lgan sharsimon qovunning po'sti 3 sm qalinlikda archib tashlandi. Qolgan mag'izning hajmi qancha?",
+      "v": [
+        "972π sm³",
+        "288π sm³",
+        "324π sm³",
+        "144π sm³"
+      ],
+      "t": 1,
+      "izoh": "Tashqi radius R = 18 : 2 = 9 sm. Po'st qalinligi 3 sm bo'lgani uchun mag'iz radiusi r = 9 − 3 = 6 sm ga teng. Mag'iz hajmi V = (4/3)π · 6³ = 288π sm³. Po'stni ayirmasdan hisoblagan o'quvchi 972π deb xato qiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='150' r='60' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='60' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='60' x2='150' y2='90' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='150' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 18 sm%3C/text%3E%3Ctext x='158' y='78' font-size='13' fill='%23334155' text-anchor='start'%3Epo'st 3 sm%3C/text%3E%3Ctext x='141' y='168' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-hajmi-radiusdan",
+      "id": "matematika_ster_m15-shar-va-sfera#3cd1fbfc"
+    },
+    {
+      "q": "Bog'dagi sharsimon chiroq qalpog'ining sirt yuzasi 64π sm² ga teng. Qalpoqning radiusi necha santimetr?",
+      "v": [
+        "16 sm",
+        "4 sm",
+        "8 sm",
+        "2 sm"
+      ],
+      "t": 1,
+      "izoh": "Sfera sirti formulasidan foydalanamiz: 4πR² = 64π. Ikkala tomonni π ga qisqartirsak 4R² = 64, bundan R² = 16 va R = 4 sm. Kvadrat ildiz olishni unutgan o'quvchi 16 deb javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 64π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-sirtdan",
+      "id": "matematika_ster_m15-shar-va-sfera#6f2b0048"
+    },
+    {
+      "q": "Sharsimon reklama shari uchun 100π m² material sarflandi va material sharning butun sirtini qopladi. Sharning diametri qancha?",
+      "v": [
+        "5 m",
+        "25 m",
+        "20 m",
+        "10 m"
+      ],
+      "t": 3,
+      "izoh": "Avval radius topiladi: 4πR² = 100π, ya'ni R² = 25 va R = 5 m. Savolda diametr so'ralgani uchun d = 2R = 10 m bo'ladi. Radiusni javob deb yozib qo'yish oxirgi qadamni tashlab ketish demakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='62' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='150' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 100π m²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-sirtdan",
+      "id": "matematika_ster_m15-shar-va-sfera#e5b27d93"
+    },
+    {
+      "q": "Sharsimon suv rezervuarining tashqi sirt yuzasi 144π m². Shu rezervuarga necha kub metr suyuqlik sig'adi?",
+      "v": [
+        "144π m³",
+        "216π m³",
+        "288π m³",
+        "864π m³"
+      ],
+      "t": 2,
+      "izoh": "Sirtdan radiusni topamiz: 4πR² = 144π, demak R² = 36 va R = 6 m. Endi hajmni hisoblaymiz: V = (4/3)πR³ = (4/3)π · 216 = 288π m³. Sirt sonini hajm deb ko'chirib yozish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3ES = 144π m²%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3EV = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-sirtdan",
+      "id": "matematika_ster_m15-shar-va-sfera#b3ce9ad6"
+    },
+    {
+      "q": "Ikkita sharsimon sig'im yasaldi va ikkinchisining sirt yuzasi birinchisinikidan 4 marta katta chiqdi. Ikkinchisining radiusi necha marta katta?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "16 marta",
+        "8 marta"
+      ],
+      "t": 0,
+      "izoh": "Sirt yuzalari nisbati radiuslar nisbatining kvadratiga teng: S₂ : S₁ = (R₂ : R₁)². Shartga ko'ra bu nisbat 4 ga teng, demak (R₂ : R₁)² = 4 va R₂ : R₁ = 2. Yuza necha marta ortsa, radius shuncha marta ortadi deb o'ylash tipik xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "radius-sirtdan",
+      "id": "matematika_ster_m15-shar-va-sfera#c1828ec9"
+    },
+    {
+      "q": "Sharsimon sham qolipiga 36π sm³ suyultirilgan mum to'la quyiladi. Qolipning ichki radiusi necha santimetr?",
+      "v": [
+        "27 sm",
+        "9 sm",
+        "6 sm",
+        "3 sm"
+      ],
+      "t": 3,
+      "izoh": "Hajm formulasiga qo'yamiz: (4/3)πR³ = 36π. Ikkala tomonni π ga qisqartirib 4R³ = 108, bundan R³ = 27 va R = 3 sm. Kub ildiz olmasdan 27 ni javob deb yozish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 36π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "radius-hajmdan",
+      "id": "matematika_ster_m15-shar-va-sfera#996a4db8"
+    },
+    {
+      "q": "Gaz saqlagichning sharsimon idishiga 288π m³ gaz sig'adi. Shu idishning diametri necha metrga teng?",
+      "v": [
+        "6 m",
+        "12 m",
+        "216 m",
+        "24 m"
+      ],
+      "t": 1,
+      "izoh": "Avval radius: (4/3)πR³ = 288π, bundan R³ = 216 va R = 6 m. Savolda diametr so'ralgan, shuning uchun d = 2 · 6 = 12 m. Radiusda to'xtab qolish yoki R³ ni javob deb olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='62' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='150' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = ?%3C/text%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 288π m³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-hajmdan",
+      "id": "matematika_ster_m15-shar-va-sfera#ef4cc008"
+    },
+    {
+      "q": "Muzeydagi sharsimon eksponatning hajmi 972π sm³ deb o'lchandi. Eksponatning sirt yuzasi necha kvadrat santimetr?",
+      "v": [
+        "81π sm²",
+        "972π sm²",
+        "162π sm²",
+        "324π sm²"
+      ],
+      "t": 3,
+      "izoh": "Hajmdan radiusni topamiz: (4/3)πR³ = 972π, demak R³ = 729 va R = 9 sm. Endi sirt: S = 4πR² = 4π · 81 = 324π sm². Katta doira yuzi πR² = 81π bilan chalkashtirmaslik zarur.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 972π sm³%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3ES = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-hajmdan",
+      "id": "matematika_ster_m15-shar-va-sfera#0b86e5fc"
+    },
+    {
+      "q": "Zavodda hajmi 4,5π m³ bo'lgan sharsimon sig'im tayyorlandi. Sig'imning ichki radiusi necha metrga teng?",
+      "v": [
+        "3,375 m",
+        "1,5 m",
+        "4,5 m",
+        "3 m"
+      ],
+      "t": 1,
+      "izoh": "Tenglama tuzamiz: (4/3)πR³ = 4,5π. Bundan R³ = 4,5 · 3 : 4 = 3,375 chiqadi. Kub ildiz olsak R = 1,5 m, chunki 1,5³ = 3,375. R³ qiymatini javob deb olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='137' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV = 4,5π m³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "radius-hajmdan",
+      "id": "matematika_ster_m15-shar-va-sfera#7aa456ae"
+    },
+    {
+      "q": "Domla globusni ekvator chizig'i bo'ylab lenta bilan o'radi va lenta uzunligi 12π sm chiqdi. Globus radiusi qancha?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "3 sm",
+        "36 sm"
+      ],
+      "t": 1,
+      "izoh": "Ekvator — sharning katta doirasi, uning uzunligi L = 2πR ga teng. 2πR = 12π tenglamadan R = 6 sm topiladi. Uzunlik sonini diametr bilan aralashtirib 12 deb javob berish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='26' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Eekvator uzunligi 12π sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "katta-doira",
+      "id": "matematika_ster_m15-shar-va-sfera#d24137cc"
+    },
+    {
+      "q": "Sharni markazi orqali o'tuvchi tekislik kesib o'tdi va kesim yuzi 49π sm² bo'lib chiqdi. Sharning sirt yuzasi qancha?",
+      "v": [
+        "49π sm²",
+        "98π sm²",
+        "343π sm²",
+        "196π sm²"
+      ],
+      "t": 3,
+      "izoh": "Markazdan o'tuvchi kesim — katta doira, uning yuzi πR² = 49π, demak R = 7 sm. Sfera sirti esa S = 4πR² = 4 · 49π = 196π sm². Katta doira yuzi sfera sirtidan aynan to'rt marta kichik ekanini eslab qolish qulay.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='26' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ctext x='141' y='147' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 49π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Esfera sirti S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katta-doira",
+      "id": "matematika_ster_m15-shar-va-sfera#6f214198"
+    },
+    {
+      "q": "Sharsimon havo sharining ekvatori bo'ylab o'lchangan aylana uzunligi 18π m ga teng. Havo sharining hajmi qancha?",
+      "v": [
+        "972π m³",
+        "324π m³",
+        "729π m³",
+        "2916π m³"
+      ],
+      "t": 0,
+      "izoh": "Ekvator katta doira bo'lgani uchun 2πR = 18π, bundan R = 9 m. Endi hajm: V = (4/3)πR³ = (4/3)π · 729 = 972π m³. Sirt yuzasi 4πR² = 324π ni hajm deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='90' ry='26' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Eekvator uzunligi 18π m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3EV = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "katta-doira",
+      "id": "matematika_ster_m15-shar-va-sfera#26202165"
+    },
+    {
+      "q": "Sferaning sirt yuzasi bilan uning katta doirasi yuzi orasidagi ayirma 75π sm² ga teng. Sharning radiusi necha santimetr?",
+      "v": [
+        "25 sm",
+        "5 sm",
+        "10 sm",
+        "8,66 sm"
+      ],
+      "t": 1,
+      "izoh": "Sfera sirti 4πR², katta doira yuzi esa πR². Ayirma 4πR² − πR² = 3πR² bo'ladi. 3πR² = 75π dan R² = 25 va R = 5 sm chiqadi. Ayirmani olishni unutgan o'quvchi R² = 75 deb hisoblab 8,66 ga keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='140' rx='88' ry='25' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='140' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='140' x2='238' y2='140' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='141' y='137' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='133' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Esfera sirti − katta doira yuzi%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3E= 75π sm²%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "katta-doira",
+      "id": "matematika_ster_m15-shar-va-sfera#7c3e4b20"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan shar markazidan 6 sm masofada o'tuvchi tekislik bilan kesildi. Kesim doirasining radiusi qancha?",
+      "v": [
+        "4 sm",
+        "16 sm",
+        "8 sm",
+        "11,66 sm"
+      ],
+      "t": 2,
+      "izoh": "Markaz, kesim markazi va kesim chetidagi nuqta to'g'ri burchakli uchburchak hosil qiladi, unda gipotenuza R ga teng. Demak r = √(R² − d²) = √(100 − 36) = √64 = 8 sm. Radius bilan masofani oddiy ayirish (10 − 6 = 4) noto'g'ri.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='108' rx='74' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='108' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='108' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='108' x2='224' y2='108' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='150' y2='242' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='190' y='102' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='158' y='200' font-size='13' fill='%23334155' text-anchor='start'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-radiusi",
+      "id": "matematika_ster_m15-shar-va-sfera#cbb06d76"
+    },
+    {
+      "q": "Diametri 26 sm bo'lgan sharsimon qovun markazidan 5 sm uzoqlikdagi tekislik bo'ylab kesildi. Kesim doirasining radiusi qancha?",
+      "v": [
+        "8 sm",
+        "25,51 sm",
+        "12 sm",
+        "13,93 sm"
+      ],
+      "t": 2,
+      "izoh": "Avval radius: R = 26 : 2 = 13 sm. Kesim radiusi r = √(R² − d²) = √(169 − 25) = √144 = 12 sm. Diametr 26 ni radius deb olgan o'quvchi √(676 − 25) = √651 ≈ 25,51 sm deb xato qiladi; 13 dan 5 ni oddiy ayirib 8 sm deyish yoki 13 va 5 ni katetlar deb √(169 + 25) ≈ 13,93 sm deb hisoblash ham tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='112' rx='76' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='112' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='112' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='112' x2='226' y2='112' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='58' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='134' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='192' y='106' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='100' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 26 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-radiusi",
+      "id": "matematika_ster_m15-shar-va-sfera#a3a2ed34"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan sharsimon idish markazidan 20 sm balandlikdagi gorizontal tekislik bilan kesilgan. Kesim doirasining radiusi qancha?",
+      "v": [
+        "5 sm",
+        "45 sm",
+        "32,02 sm",
+        "15 sm"
+      ],
+      "t": 3,
+      "izoh": "Kesim radiusi r = √(R² − d²) formulasi bilan topiladi: r = √(625 − 400) = √225 = 15 sm. Kvadratlarni ayirish o'rniga qo'shib yuborsak √1025 ≈ 32,02 kabi xato natija chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='104' rx='70' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='104' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='104' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='104' x2='220' y2='104' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='188' y='98' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 25 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-radiusi",
+      "id": "matematika_ster_m15-shar-va-sfera#9530adbb"
+    },
+    {
+      "q": "Diametri 2 m bo'lgan sharsimon suv bakida suv sathi markazdan 60 sm pastda turibdi. Suv sathi doirasining radiusi qancha?",
+      "v": [
+        "0,4 m",
+        "1,6 m",
+        "0,8 m",
+        "1,17 m"
+      ],
+      "t": 2,
+      "izoh": "Birliklarni bir xillashtiramiz: R = 2 : 2 = 1 m, d = 60 sm = 0,6 m. Kesim radiusi r = √(1 − 0,36) = √0,64 = 0,8 m. Santimetrni metrga aylantirmaslik yoki kvadratlarni qo'shib yuborish xato natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='186' rx='72' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='186' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='150' y2='186' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='186' x2='222' y2='186' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='60' y1='145' x2='240' y2='145' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='140' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='172' font-size='13' fill='%23334155' text-anchor='end'%3E60 sm%3C/text%3E%3Ctext x='188' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3Er = ?%3C/text%3E%3Ctext x='100' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 2 m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-radiusi",
+      "id": "matematika_ster_m15-shar-va-sfera#8386d5f2"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan shar markazdan 9 sm masofadagi tekislik bilan kesildi. Kesim doirasining uzunligi necha santimetr?",
+      "v": [
+        "24π sm",
+        "144π sm",
+        "30π sm",
+        "12π sm"
+      ],
+      "t": 0,
+      "izoh": "Avval kesim radiusi topiladi: r = √(225 − 81) = √144 = 12 sm. So'ngra doira uzunligi L = 2πr = 24π sm bo'ladi. πr² = 144π — bu yuza, uzunlik emas; 30π esa katta doiraning uzunligi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='110' rx='72' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='110' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='110' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='132' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 15 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim uzunligi L = ?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-radiusi",
+      "id": "matematika_ster_m15-shar-va-sfera#db72c5cb"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharning kesim doirasi radiusi 8 sm chiqdi. Kesim tekisligi shar markazidan qancha uzoqda joylashgan?",
+      "v": [
+        "2 sm",
+        "18 sm",
+        "6 sm",
+        "12,81 sm"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda gipotenuza sharning radiusi, katetlar esa kesim radiusi va izlanayotgan masofa. Demak d = √(R² − r²) = √(100 − 64) = √36 = 6 sm. Radiuslarni oddiy ayirib 2 sm deb javob berish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='106' rx='74' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='106' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='106' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='106' x2='224' y2='106' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3Ed = ?%3C/text%3E%3Ctext x='190' y='100' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "markazdan-masofa",
+      "id": "matematika_ster_m15-shar-va-sfera#4c86609c"
+    },
+    {
+      "q": "Radiusi 17 sm bo'lgan sharni kesgan tekislik yuzi 225π sm² bo'lgan doira hosil qildi. Tekislik markazdan qancha uzoqda?",
+      "v": [
+        "8 sm",
+        "2 sm",
+        "15 sm",
+        "22,67 sm"
+      ],
+      "t": 0,
+      "izoh": "Kesim yuzidan uning radiusini topamiz: πr² = 225π, demak r = 15 sm. Endi masofa d = √(R² − r²) = √(289 − 225) = √64 = 8 sm. Kesim radiusini javob deb yozib qo'yish oxirgi qadamni tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='108' rx='76' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='108' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='108' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='130' font-size='13' fill='%23334155' text-anchor='end'%3Ed = ?%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 17 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 225π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markazdan-masofa",
+      "id": "matematika_ster_m15-shar-va-sfera#e21c395c"
+    },
+    {
+      "q": "Diametri 50 sm bo'lgan sharsimon idishning ustiga radiusi 15 sm bo'lgan dumaloq qopqoq zich o'rnatilgan. Qopqoq tekisligi markazdan qancha uzoqda?",
+      "v": [
+        "10 sm",
+        "40 sm",
+        "29,15 sm",
+        "20 sm"
+      ],
+      "t": 3,
+      "izoh": "Idish radiusi R = 50 : 2 = 25 sm, qopqoq esa kesim doirasi bo'lib r = 15 sm. Masofa d = √(625 − 225) = √400 = 20 sm. Diametrni ikkiga bo'lishni unutish yoki kvadratlarni qo'shish xato javobga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='102' rx='70' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='102' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='102' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='102' x2='220' y2='102' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='58' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='126' font-size='13' fill='%23334155' text-anchor='end'%3Ed = ?%3C/text%3E%3Ctext x='188' y='96' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='100' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 50 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "markazdan-masofa",
+      "id": "matematika_ster_m15-shar-va-sfera#5f02210d"
+    },
+    {
+      "q": "Radiusi 13 sm bo'lgan sharni kesgan tekislikdagi kesim doirasining uzunligi 24π sm ga teng. Tekislik markazdan qancha uzoqda?",
+      "v": [
+        "1 sm",
+        "12 sm",
+        "5 sm",
+        "17,69 sm"
+      ],
+      "t": 2,
+      "izoh": "Kesim uzunligidan radiusni topamiz: 2πr = 24π, demak r = 12 sm. Endi masofa d = √(R² − r²) = √(169 − 144) = √25 = 5 sm. Kesim radiusida to'xtab qolish yoki radiuslarni oddiy ayirish xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='106' rx='72' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='106' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='106' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3Ed = ?%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 13 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim uzunligi 24π sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "markazdan-masofa",
+      "id": "matematika_ster_m15-shar-va-sfera#e33d4af4"
+    },
+    {
+      "q": "Radiusi 13 sm bo'lgan sharsimon pishloq boshi markazdan 12 sm uzoqlikda pichoq bilan kesildi. Kesim yuzi qancha?",
+      "v": [
+        "25π sm²",
+        "169π sm²",
+        "10π sm²",
+        "144π sm²"
+      ],
+      "t": 0,
+      "izoh": "Avval kesim radiusi: r = √(169 − 144) = √25 = 5 sm. Kesim doira bo'lgani uchun uning yuzi S = πr² = 25π sm². Radiusni yuza deb olish yoki sharning katta doirasi yuzini yozish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='108' rx='74' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='108' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='108' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 13 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi S = ?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-yuzasi",
+      "id": "matematika_ster_m15-shar-va-sfera#24345621"
+    },
+    {
+      "q": "Diametri 20 sm bo'lgan sharsimon muz bo'lagi markazidan 8 sm uzoqlikdagi tekislik bo'ylab arralandi. Kesim yuzi qancha?",
+      "v": [
+        "64π sm²",
+        "100π sm²",
+        "12π sm²",
+        "36π sm²"
+      ],
+      "t": 3,
+      "izoh": "Radius R = 20 : 2 = 10 sm. Kesim radiusi r = √(100 − 64) = √36 = 6 sm, demak kesim yuzi S = π · 6² = 36π sm². Kesim radiusining kvadratini emas, r ning o'zini yuzaga qo'yish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='104' rx='70' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='104' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='104' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='58' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='100' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 20 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi S = ?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-yuzasi",
+      "id": "matematika_ster_m15-shar-va-sfera#c32d62a9"
+    },
+    {
+      "q": "Sharning markazidan 4 sm masofadagi kesim doirasining yuzi 9π sm² ga teng. Shu sharning sirt yuzasi qancha?",
+      "v": [
+        "36π sm²",
+        "25π sm²",
+        "100π sm²",
+        "64π sm²"
+      ],
+      "t": 2,
+      "izoh": "Kesim yuzidan uning radiusi topiladi: πr² = 9π, demak r = 3 sm. Sharning radiusi R² = r² + d² = 9 + 16 = 25, ya'ni R = 5 sm. Endi sirt S = 4πR² = 100π sm². Katta doira yuzi 25π ni javob deb olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='106' rx='68' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='106' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='106' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='141' y='150' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='128' font-size='13' fill='%23334155' text-anchor='end'%3E4 sm%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekesim yuzi 9π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-yuzasi",
+      "id": "matematika_ster_m15-shar-va-sfera#afecd544"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan shar markazdan 3 sm masofadagi tekislik bilan kesildi. Kesim yuzi katta doira yuzasining qanday qismini tashkil qiladi?",
+      "v": [
+        "1/2",
+        "3/4",
+        "1/4",
+        "2/3"
+      ],
+      "t": 1,
+      "izoh": "Kesim radiusi kvadrati r² = 36 − 9 = 27 ga teng, katta doira radiusi kvadrati esa 36. Yuzalar nisbati πr² : πR² = 27 : 36 = 3/4 bo'ladi. Masofa radiusning yarmi bo'lgani uchun yuza ham yarmiga kamayadi deb o'ylash xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='92' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='92' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cellipse cx='150' cy='108' rx='72' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='108' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='242' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='143' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E3 sm%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesim-yuzasi",
+      "id": "matematika_ster_m15-shar-va-sfera#fcca3f0e"
+    },
+    {
+      "q": "Sferaning radiusi 7 sm, markazdan tekislikkacha masofa ham 7 sm. Tekislik bilan sfera qanday joylashgan?",
+      "v": [
+        "ikkita doira bo'ylab kesishadi",
+        "bitta nuqtada urinadi",
+        "umumiy nuqtasi yo'q",
+        "sferani teng ikkiga bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Tekislik va sferaning o'zaro joylashuvi d va R nisbati bilan aniqlanadi. d < R bo'lsa doira bo'ylab kesishadi, d = R bo'lsa urinadi, d > R bo'lsa umumiy nuqta bo'lmaydi. Bu yerda d = R = 7 sm, demak tekislik sferaga bitta nuqtada urinadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "urinma-tekislik",
+      "id": "matematika_ster_m15-shar-va-sfera#045fb1b6"
+    },
+    {
+      "q": "Diametri 40 sm bo'lgan sharsimon idish tekis stol ustida qimirlamay turibdi. Idish markazidan stol tekisligigacha bo'lgan masofa qancha?",
+      "v": [
+        "40 sm",
+        "10 sm",
+        "0 sm",
+        "20 sm"
+      ],
+      "t": 3,
+      "izoh": "Stol tekisligi sharga urinma tekislik bo'ladi, urinma tekislikkacha masofa esa har doim radiusga teng. Radius R = 40 : 2 = 20 sm, demak masofa 20 sm. Diametrni javob deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='140' r='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='220' x2='270' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='140' r='2.5' fill='%23334155'/%3E%3Ccircle cx='150' cy='220' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='140' x2='150' y2='220' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='138,220 138,208 150,208' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='70' y1='140' x2='230' y2='140' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ctext x='141' y='134' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158' y='184' font-size='13' fill='%23334155' text-anchor='start'%3E?%3C/text%3E%3Ctext x='150' y='128' font-size='13' fill='%23334155' text-anchor='middle'%3E40 sm%3C/text%3E%3Ctext x='266' y='238' font-size='13' fill='%23334155' text-anchor='end'%3Estol tekisligi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tekislik",
+      "id": "matematika_ster_m15-shar-va-sfera#05f43003"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharga urinma tekislik o'tkazildi va shu tekislikda urinish nuqtasidan 24 sm uzoqlikda K nuqta belgilandi. K nuqtadan markazgacha masofa qancha?",
+      "v": [
+        "26 sm",
+        "34 sm",
+        "14 sm",
+        "21,8 sm"
+      ],
+      "t": 0,
+      "izoh": "Urinish nuqtasiga o'tkazilgan radius urinma tekislikka perpendikulyar, K nuqta esa shu tekislikda yotadi. Demak markaz O, urinish nuqtasi P va K to'g'ri burchakli uchburchak hosil qiladi: OK = √(10² + 24²) = √676 = 26 sm. Uzunliklarni oddiy qo'shib 34 deb javob berish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='120' cy='120' r='60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='30' y1='180' x2='280' y2='180' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='120' cy='120' r='2.5' fill='%23334155'/%3E%3Ccircle cx='120' cy='180' r='2.5' fill='%23334155'/%3E%3Ccircle cx='264' cy='180' r='2.5' fill='%23334155'/%3E%3Cline x1='120' y1='120' x2='120' y2='180' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='120' y1='120' x2='264' y2='180' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='132,180 132,168 120,168' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='112' y='116' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='112' y='196' font-size='13' fill='%23334155' text-anchor='end'%3EP%3C/text%3E%3Ctext x='272' y='196' font-size='13' fill='%23334155' text-anchor='start'%3EK%3C/text%3E%3Ctext x='113' y='154' font-size='13' fill='%23334155' text-anchor='end'%3E10 sm%3C/text%3E%3Ctext x='192' y='196' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='196' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "urinma-tekislik",
+      "id": "matematika_ster_m15-shar-va-sfera#651af9db"
+    },
+    {
+      "q": "Sferaning radiusi 12 sm bo'lib, tekislik uning markazidan 15 sm uzoqlikda joylashgan. Tekislik bilan sferaning nechta umumiy nuqtasi bor?",
+      "v": [
+        "cheksiz ko'p",
+        "bitta",
+        "ikkita",
+        "umuman yo'q"
+      ],
+      "t": 3,
+      "izoh": "Tekislikning sferaga nisbatan holati d va R ni solishtirish bilan aniqlanadi. Bu yerda d = 15 sm, R = 12 sm, ya'ni d > R. Tekislik sferadan uzoqroqda yotgani uchun ular kesishmaydi va umumiy nuqta bo'lmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-tekislik",
+      "id": "matematika_ster_m15-shar-va-sfera#65ce97ef"
+    },
+    {
+      "q": "Shar markazidan 13 sm uzoqlikdagi A nuqtadan sharga urinma o'tkazildi va sharning radiusi 5 sm ekani ma'lum. Urinma kesmaning uzunligi qancha?",
+      "v": [
+        "8 sm",
+        "18 sm",
+        "12 sm",
+        "13,93 sm"
+      ],
+      "t": 2,
+      "izoh": "Urinish nuqtasiga o'tkazilgan radius urinmaga perpendikulyar, shuning uchun to'g'ri burchakli uchburchak hosil bo'ladi va OA gipotenuza bo'ladi. Urinma kesma L = √(13² − 5²) = √144 = 12 sm. Masofalarni oddiy ayirib 8 deb javob berish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='95' cy='150' r='58' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='95' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='245' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='95' y1='150' x2='245' y2='150' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='150' x2='117' y2='96' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='117' y1='96' x2='245' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='128,101 123,113 111,108' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='253' y='166' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='110' y='88' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='170' y='166' font-size='13' fill='%23334155' text-anchor='middle'%3E13 sm%3C/text%3E%3Ctext x='94' y='118' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='190' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesma",
+      "id": "matematika_ster_m15-shar-va-sfera#f946a712"
+    },
+    {
+      "q": "Sharga tashqi nuqtadan o'tkazilgan urinma kesmaning uzunligi 8 sm, sharning radiusi esa 6 sm. Shu nuqtadan markazgacha masofa qancha?",
+      "v": [
+        "14 sm",
+        "2 sm",
+        "5,29 sm",
+        "10 sm"
+      ],
+      "t": 3,
+      "izoh": "Radius urinish nuqtasida urinmaga perpendikulyar bo'lgani uchun radius va urinma katetlar, markazgacha masofa esa gipotenuza bo'ladi. Demak d = √(6² + 8²) = √100 = 10 sm. Kesmalarni qo'shib 14 deb javob berish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='95' cy='160' r='60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='95' cy='160' r='2.5' fill='%23334155'/%3E%3Ccircle cx='195' cy='160' r='2.5' fill='%23334155'/%3E%3Cline x1='95' y1='160' x2='195' y2='160' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='160' x2='131' y2='112' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='131' y1='112' x2='195' y2='160' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='140,119 133,127 124,121' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='87' y='176' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='203' y='176' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='126' y='104' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='168' y='180' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='106' y='134' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='174' y='130' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesma",
+      "id": "matematika_ster_m15-shar-va-sfera#07f07663"
+    },
+    {
+      "q": "A nuqtadan sharga o'tkazilgan urinma kesma 24 sm, A nuqtadan shar markazigacha masofa esa 25 sm. Sharning radiusi qancha?",
+      "v": [
+        "1 sm",
+        "7 sm",
+        "49 sm",
+        "34,7 sm"
+      ],
+      "t": 1,
+      "izoh": "Bu yerda 25 sm gipotenuza, 24 sm esa katet. Radius ikkinchi katet bo'ladi: R = √(25² − 24²) = √(625 − 576) = √49 = 7 sm. Uzunliklarni oddiy ayirib 1 sm deb javob berish Pifagor teoremasini qo'llamaslik demakdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='80' cy='170' r='42' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='80' cy='170' r='2.5' fill='%23334155'/%3E%3Ccircle cx='230' cy='170' r='2.5' fill='%23334155'/%3E%3Cline x1='80' y1='170' x2='230' y2='170' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='80' y1='170' x2='92' y2='130' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='92' y1='130' x2='230' y2='170' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='103,133 100,144 89,141' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='72' y='186' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='238' y='186' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='87' y='122' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='155' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3E25 sm%3C/text%3E%3Ctext x='78' y='146' font-size='13' fill='%23334155' text-anchor='end'%3E?%3C/text%3E%3Ctext x='168' y='142' font-size='13' fill='%23334155' text-anchor='middle'%3E24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesma",
+      "id": "matematika_ster_m15-shar-va-sfera#70ed8310"
+    },
+    {
+      "q": "Radiusi 20 sm bo'lgan sharsimon rezervuar markazidan 52 sm uzoqlikdagi nuqtadan rezervuarga urinma o'tkazildi. Urinma kesmaning uzunligi qancha?",
+      "v": [
+        "32 sm",
+        "72 sm",
+        "48 sm",
+        "55,7 sm"
+      ],
+      "t": 2,
+      "izoh": "Urinma kesma L = √(d² − R²) formulasi bilan topiladi: L = √(52² − 20²) = √(2704 − 400) = √2304 = 48 sm. Masofalarni ayirib 32 sm deb javob berish yoki kvadratlarni qo'shib yuborish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='70' cy='170' r='48' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='70' cy='170' r='2.5' fill='%23334155'/%3E%3Ccircle cx='195' cy='170' r='2.5' fill='%23334155'/%3E%3Cline x1='70' y1='170' x2='195' y2='170' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='170' x2='88' y2='126' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='88' y1='126' x2='195' y2='170' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cpolyline points='99,130 95,141 84,137' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='186' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='203' y='186' font-size='13' fill='%23334155' text-anchor='start'%3EA%3C/text%3E%3Ctext x='83' y='118' font-size='13' fill='%23334155' text-anchor='end'%3EB%3C/text%3E%3Ctext x='132' y='186' font-size='13' fill='%23334155' text-anchor='middle'%3E52 sm%3C/text%3E%3Ctext x='70' y='140' font-size='13' fill='%23334155' text-anchor='end'%3E20 sm%3C/text%3E%3Ctext x='146' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3E?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "urinma-kesma",
+      "id": "matematika_ster_m15-shar-va-sfera#f654439f"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sharsimon idishga suv 3 sm balandlikda quyildi. Idishdagi suvning hajmi necha kub santimetr?",
+      "v": [
+        "45π sm³",
+        "54π sm³",
+        "27π sm³",
+        "36π sm³"
+      ],
+      "t": 0,
+      "izoh": "Suv shar segmenti shaklida bo'ladi, uning hajmi V = πh²(R − h/3). Bu yerda h = 3, R = 6, demak V = π · 9 · (6 − 1) = 45π sm³. h/3 hadini tushirib qoldirgan o'quvchi πh²R = 54π deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='195' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='158' y='224' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 3 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esuv hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-segmenti-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#33a94eac"
+    },
+    {
+      "q": "Diametri 20 sm bo'lgan sharsimon idishning tubiga 6 sm balandlikda sut quyildi. Sutning hajmi qancha bo'ladi?",
+      "v": [
+        "360π sm³",
+        "600π sm³",
+        "288π sm³",
+        "48π sm³"
+      ],
+      "t": 2,
+      "izoh": "Radius R = 20 : 2 = 10 sm, segment balandligi h = 6 sm. V = πh²(R − h/3) = π · 36 · (10 − 2) = 288π sm³. Idishni silindr deb hisoblab πR²h = 600π deyish yoki h/3 ni tashlab yuborish xato natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='186' rx='82' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='60' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='186' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='104' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 20 sm%3C/text%3E%3Ctext x='158' y='218' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esut hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-segmenti-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#66756506"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan sharsimon kosaga suv 6 sm chuqurlikda quyildi. Kosadagi suvning hajmi qancha?",
+      "v": [
+        "468π sm³",
+        "540π sm³",
+        "324π sm³",
+        "216π sm³"
+      ],
+      "t": 0,
+      "izoh": "Shar segmenti hajmi V = πh²(R − h/3) formulasi bilan hisoblanadi. h = 6 va R = 15 bo'lgani uchun h/3 = 2, demak V = π · 36 · (15 − 2) = 468π sm³. Qavs ichida h/3 o'rniga h ni ayirsak 324π kabi xato chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='204' rx='72' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='204' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 15 sm%3C/text%3E%3Ctext x='158' y='228' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esuv hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-segmenti-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#6d496f8c"
+    },
+    {
+      "q": "Diametri 24 sm bo'lgan sharsimon qozonda sho'rvaning balandligi 6 sm ni tashkil qildi. Sho'rvaning hajmi qancha?",
+      "v": [
+        "432π sm³",
+        "792π sm³",
+        "216π sm³",
+        "360π sm³"
+      ],
+      "t": 3,
+      "izoh": "Qozon radiusi R = 24 : 2 = 12 sm, segment balandligi h = 6 sm. V = πh²(R − h/3) = π · 36 · (12 − 2) = 360π sm³. Diametrni radius o'rniga qo'yish yoki h/3 hadini unutish tipik xatolar hisoblanadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='60' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='195' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='104' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 24 sm%3C/text%3E%3Ctext x='158' y='224' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esho'rva hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-segmenti-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#dba77ac6"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharning yuqori qismi 4 sm balandlikda bo'yaladi. Bo'yalgan sferik segmentning yuzi qancha?",
+      "v": [
+        "80π sm²",
+        "40π sm²",
+        "160π sm²",
+        "400π sm²"
+      ],
+      "t": 0,
+      "izoh": "Sferik segment yuzi S = 2πRh formulasi bilan topiladi. R = 10 va h = 4 bo'lgani uchun S = 2π · 10 · 4 = 80π sm². Bu formulada segment radiusi emas, balki sharning radiusi ishlatilishini unutmaslik kerak.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='72' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='60' x2='150' y2='96' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='158' y='82' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 4 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ebo'yalgan yuza S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferik-segment-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#aeb5479b"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan sharda ajratilgan sferik segmentning yuzi 90π sm² ga teng. Segmentning balandligi qancha?",
+      "v": [
+        "10 sm",
+        "2,5 sm",
+        "5 sm",
+        "45 sm"
+      ],
+      "t": 2,
+      "izoh": "Sferik segment yuzi S = 2πRh ga teng. Ma'lumotlarni qo'yamiz: 2π · 9 · h = 90π, ya'ni 18h = 90 va h = 5 sm. Ikkilikni tushirib qoldirgan o'quvchi 9h = 90 deb hisoblab 10 sm deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='100' rx='70' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='60' x2='150' y2='100' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 9 sm%3C/text%3E%3Ctext x='158' y='84' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Esegment yuzi 90π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sferik-segment-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#7d3acab8"
+    },
+    {
+      "q": "Bino tepasidagi sharsimon gumbaz shar shaklidagi jismning bo'lagi bo'lib, shar diametri 30 m, gumbaz balandligi 9 m. Gumbazning sirti qancha?",
+      "v": [
+        "135π m²",
+        "540π m²",
+        "900π m²",
+        "270π m²"
+      ],
+      "t": 3,
+      "izoh": "Gumbaz — sferik segment, uning yuzi S = 2πRh ga teng. Shar radiusi R = 30 : 2 = 15 m, balandlik h = 9 m, demak S = 2π · 15 · 9 = 270π m². Diametrni radius o'rniga ishlatish yoki 2 koeffitsiyentini tashlab ketish xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='190' r='90' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cpath d='M 67 154 A 90 90 0 0 1 233 154' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='154' rx='82' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='190' r='2.5' fill='%23334155'/%3E%3Cline x1='60' y1='190' x2='240' y2='190' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='100' x2='150' y2='154' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='206' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='104' y='183' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 30 m%3C/text%3E%3Ctext x='158' y='120' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 9 m%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Egumbaz sirti S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sferik-segment-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#19ca39fe"
+    },
+    {
+      "q": "Radiusi 12 sm bo'lgan sharsimon idishda ikki parallel tekislik bilan ajratilgan, balandligi 5 sm bo'lgan kamar bo'yaladi. Bo'yaladigan yuza qancha?",
+      "v": [
+        "120π sm²",
+        "60π sm²",
+        "240π sm²",
+        "576π sm²"
+      ],
+      "t": 0,
+      "izoh": "Shar kamarining yuzi S = 2πRh formulasi bilan topiladi, bunda h — kamar balandligi, ya'ni ikki parallel tekislik orasidagi masofa. S = 2π · 12 · 5 = 120π sm². Ikkilik koeffitsiyentini tushirib qoldirish yoki butun sfera sirtini hisoblash tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='90' rx='67' ry='17' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='127' rx='87' ry='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='90' x2='262' y2='127' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 12 sm%3C/text%3E%3Ctext x='270' y='112' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 5 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ekamar yuzi S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-kamari-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#56f94f63"
+    },
+    {
+      "q": "Globusning radiusi 20 sm. Uning ikki parallel doirasi bilan ajratilgan, balandligi 7 sm bo'lgan kamariga yorliq yopishtiriladi. Yorliqning yuzasi qancha?",
+      "v": [
+        "140π sm²",
+        "280π sm²",
+        "560π sm²",
+        "1600π sm²"
+      ],
+      "t": 1,
+      "izoh": "Kamar yuzi faqat shar radiusiga va kamar balandligiga bog'liq: S = 2πRh, bunda h — ikki parallel tekislik orasidagi masofa. Bu yerda S = 2π · 20 · 7 = 280π sm². Radius o'rniga diametrni qo'yish natijani ikki barobar oshirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='72' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='127' rx='87' ry='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='96' x2='262' y2='127' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 20 sm%3C/text%3E%3Ctext x='270' y='116' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 7 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Eyorliq yuzasi S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-kamari-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#c1762733"
+    },
+    {
+      "q": "Radiusi 8 sm bo'lgan sharda ikki parallel tekislik bilan ajratilgan kamarning yuzi 96π sm² ga teng. Kamarning balandligi (shu tekisliklar orasidagi masofa) qancha?",
+      "v": [
+        "12 sm",
+        "48 sm",
+        "6 sm",
+        "3 sm"
+      ],
+      "t": 2,
+      "izoh": "Kamar yuzi formulasidan foydalanamiz: 2πRh = 96π, bunda h — kamar balandligi. Ma'lumotlarni qo'ysak 2 · 8 · h = 96, ya'ni 16h = 96 va h = 6 sm. Ikkilikni yozmasdan 8h = 96 deb hisoblagan o'quvchi 12 sm deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='70' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='130' rx='86' ry='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='96' x2='262' y2='130' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 8 sm%3C/text%3E%3Ctext x='270' y='118' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Ekamar yuzi 96π sm²%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-kamari-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#08cce5c4"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharni markazning bir tomonida 6 sm va 8 sm masofada ikki parallel tekislik kesib o'tdi. Ular orasidagi kamar yuzi qancha?",
+      "v": [
+        "280π sm²",
+        "28π sm²",
+        "80π sm²",
+        "40π sm²"
+      ],
+      "t": 3,
+      "izoh": "Kamar kengligi tekisliklar orasidagi masofa, ya'ni h = 8 − 6 = 2 sm. Endi S = 2πRh = 2π · 10 · 2 = 40π sm². Kesim doiralarining yuzalari ayirmasini olib π(64 − 36) = 28π deb hisoblash keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='78' rx='54' ry='14' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='72' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='78' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='143' y='86' font-size='13' fill='%23334155' text-anchor='end'%3E8 sm%3C/text%3E%3Ctext x='143' y='114' font-size='13' fill='%23334155' text-anchor='end'%3E6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ekamar yuzi S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-kamari-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#8129a448"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sharda balandligi 3 sm bo'lgan segmentga tayangan shar sektori ajratildi. Sektorning hajmi qancha?",
+      "v": [
+        "72π sm³",
+        "108π sm³",
+        "36π sm³",
+        "45π sm³"
+      ],
+      "t": 0,
+      "izoh": "Shar sektorining hajmi V = (2/3)πR²h formulasi bilan hisoblanadi. Bu yerda V = (2/3)π · 36 · 3 = 72π sm³. Koeffitsiyentni 1/3 deb olish konus formulasiga, umuman yozmaslik esa 108π ga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='105' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='72' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='228' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='60' x2='150' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='158' y='88' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 3 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esektor hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-sektori-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#41c8d794"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan sharning balandligi 4 sm bo'lgan segmentiga mos keluvchi shar sektori olindi. Uning hajmi qancha?",
+      "v": [
+        "324π sm³",
+        "216π sm³",
+        "486π sm³",
+        "108π sm³"
+      ],
+      "t": 1,
+      "izoh": "Formula V = (2/3)πR²h bo'lgani uchun V = (2/3)π · 81 · 4 = 216π sm³. Yarim shar hajmi (2/3)πR³ = 486π bilan chalkashtirmaslik kerak, chunki u yerda R³, bu yerda esa R²h ishlatiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='100' rx='75' ry='19' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='75' y2='100' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='225' y2='100' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='60' x2='150' y2='100' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 9 sm%3C/text%3E%3Ctext x='158' y='84' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 4 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esektor hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "shar-sektori-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#dcec13ec"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan sharda ajratilgan shar sektorining hajmi 600π sm³ ga teng. Unga mos segmentning balandligi qancha?",
+      "v": [
+        "8 sm",
+        "2,67 sm",
+        "20 sm",
+        "4 sm"
+      ],
+      "t": 3,
+      "izoh": "Sektor hajmi formulasiga qo'yamiz: (2/3)π · 225 · h = 600π. Chap tomonni soddalashtirsak 150h = 600, bundan h = 4 sm. Koeffitsiyentni 1/3 deb olgan o'quvchi 8 sm, umuman hisobga olmagani esa 2,67 sm deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='102' rx='72' ry='18' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='78' y2='102' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='222' y2='102' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='60' x2='150' y2='102' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 15 sm%3C/text%3E%3Ctext x='158' y='86' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Esektor hajmi 600π sm³%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-sektori-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#8518b4ec"
+    },
+    {
+      "q": "Diametri 24 sm bo'lgan sharsimon jismdan balandligi 6 sm bo'lgan segmentga tayangan sektor kesib olindi. Sektorning hajmi qancha?",
+      "v": [
+        "576π sm³",
+        "864π sm³",
+        "288π sm³",
+        "1152π sm³"
+      ],
+      "t": 0,
+      "izoh": "Avval radius topiladi: R = 24 : 2 = 12 sm. So'ngra V = (2/3)πR²h = (2/3)π · 144 · 6 = 576π sm³. Diametrni radius deb olish yoki 2/3 o'rniga 1/3 yozish natijani buzib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='105' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='150' x2='72' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='150' x2='228' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='60' x2='150' y2='105' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='60' y1='150' x2='240' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='104' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 24 sm%3C/text%3E%3Ctext x='158' y='88' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esektor hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-sektori-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#fc14daf9"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sharsimon idishda suv sathi 3 sm dan 6 sm gacha ko'tarildi. Qo'shimcha quyilgan suvning hajmi qancha?",
+      "v": [
+        "144π sm³",
+        "45π sm³",
+        "99π sm³",
+        "189π sm³"
+      ],
+      "t": 2,
+      "izoh": "Bu yerda shar qatlamining hajmi ikki segment hajmi ayirmasi sifatida topiladi. Yuqori sath uchun V₁ = π · 36 · (6 − 2) = 144π, quyi sath uchun V₂ = π · 9 · (6 − 1) = 45π. Qatlam hajmi V₁ − V₂ = 99π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='90' ry='23' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='195' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='150' x2='262' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158' y='224' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='270' y='198' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-qatlami-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#14efffe0"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan sharsimon kosada suv sathi 3 sm dan 9 sm gacha ko'tarildi. Qo'shilgan suvning hajmi qancha?",
+      "v": [
+        "414π sm³",
+        "486π sm³",
+        "72π sm³",
+        "558π sm³"
+      ],
+      "t": 0,
+      "izoh": "Yuqori sath uchun segment hajmi V₁ = π · 81 · (9 − 3) = 486π, quyi sath uchun V₂ = π · 9 · (9 − 1) = 72π. Qatlam hajmi ularning ayirmasi: 486π − 72π = 414π sm³. Ikki segment hajmini qo'shib yuborish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='210' rx='67' ry='17' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='90' ry='23' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='210' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='150' x2='262' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158' y='230' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='270' y='198' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 9 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-qatlami-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#ae8efea1"
+    },
+    {
+      "q": "Diametri 24 sm bo'lgan sharsimon idishga avval 6 sm, so'ngra 12 sm balandlikkacha suv quyildi. Ikkinchi bosqichda qo'shilgan suvning hajmi qancha?",
+      "v": [
+        "1152π sm³",
+        "792π sm³",
+        "360π sm³",
+        "1512π sm³"
+      ],
+      "t": 1,
+      "izoh": "Idish radiusi R = 12 sm. To'liq sath uchun segment hajmi π · 144 · (12 − 4) = 1152π, birinchi sath uchun esa π · 36 · (12 − 2) = 360π. Qo'shilgan suv ularning ayirmasi: 1152π − 360π = 792π sm³.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='78' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='150' rx='90' ry='23' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='195' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='150' x2='262' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158' y='224' font-size='13' fill='%23334155' text-anchor='start'%3E6 sm%3C/text%3E%3Ctext x='270' y='198' font-size='13' fill='%23334155' text-anchor='start'%3E12 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 24 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "shar-qatlami-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#bc8cb358"
+    },
+    {
+      "q": "Sharsimon rezervuarning radiusi 10 sm. Uning tubidan 3 sm va 9 sm balandlikdagi ikki gorizontal tekislik orasida qolgan qatlamning hajmi qancha?",
+      "v": [
+        "567π sm³",
+        "81π sm³",
+        "648π sm³",
+        "486π sm³"
+      ],
+      "t": 3,
+      "izoh": "Balandligi 9 sm bo'lgan segment hajmi π · 81 · (10 − 3) = 567π, balandligi 3 sm bo'lgani esa π · 9 · (10 − 1) = 81π. Qatlam hajmi bu ikki qiymat ayirmasiga teng: 567π − 81π = 486π sm³. Ularni qo'shib yuborish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='213' rx='64' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='159' rx='89' ry='22' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='213' x2='150' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='262' y1='159' x2='262' y2='240' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='143' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='158' y='232' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='270' y='202' font-size='13' fill='%23334155' text-anchor='start'%3E9 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "shar-qatlami-hajmi",
+      "id": "matematika_ster_m15-shar-va-sfera#1083cda0"
+    },
+    {
+      "q": "Yarim shar shaklidagi kosaning ichki radiusi 6 sm. Kosa og'ziga qadar to'ldirilsa, unga qancha suyuqlik sig'adi?",
+      "v": [
+        "144π sm³",
+        "288π sm³",
+        "72π sm³",
+        "216π sm³"
+      ],
+      "t": 0,
+      "izoh": "Yarim shar hajmi butun shar hajmining yarmiga teng: V = (1/2) · (4/3)πR³ = (2/3)πR³. Bu yerda V = (2/3)π · 216 = 144π sm³. Butun shar hajmi 288π ni javob deb yozish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 60 130 A 90 90 0 0 0 240 130' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='130' rx='90' ry='24' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='130' x2='240' y2='130' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='126' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ekosa sig'imi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-shar",
+      "id": "matematika_ster_m15-shar-va-sfera#3250375c"
+    },
+    {
+      "q": "Yarim sharsimon gumbazning radiusi 5 m ga teng. Gumbazning faqat egri sferik sirti qanchaga teng bo'ladi?",
+      "v": [
+        "100π m²",
+        "50π m²",
+        "75π m²",
+        "25π m²"
+      ],
+      "t": 1,
+      "izoh": "Yarim sharning egri sirti butun sfera sirtining yarmi: S = (1/2) · 4πR² = 2πR². Demak S = 2π · 25 = 50π m². Asos doirasi qo'shilsa to'liq sirt 3πR² = 75π bo'lar edi, lekin savolda faqat egri sirt so'ralgan.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 60 195 A 90 90 0 0 1 240 195' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='90' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='195' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='195' x2='240' y2='195' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='191' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='188' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 m%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Eegri sirt S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-shar",
+      "id": "matematika_ster_m15-shar-va-sfera#94659d50"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan yarim shar shaklidagi yog'och jism yasaldi va uning butun yuzasi, asosi bilan birga, laklanadi. Laklanadigan yuza qancha?",
+      "v": [
+        "32π sm²",
+        "64π sm²",
+        "48π sm²",
+        "16π sm²"
+      ],
+      "t": 2,
+      "izoh": "Yarim sharning to'liq sirti egri sirt bilan asos doirasidan iborat: S = 2πR² + πR² = 3πR². Demak S = 3π · 16 = 48π sm². Asos doirasini qo'shishni unutgan o'quvchi 32π deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 60 195 A 90 90 0 0 1 240 195' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='195' rx='90' ry='24' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='150' cy='195' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='195' x2='240' y2='195' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='191' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='188' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3Easos bilan birga laklanadi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-shar",
+      "id": "matematika_ster_m15-shar-va-sfera#efcf7fdc"
+    },
+    {
+      "q": "Yarim sharsimon idishning sig'imi 18π sm³ ekani aniqlandi. Shu idishning ichki radiusi necha santimetrga teng?",
+      "v": [
+        "27 sm",
+        "3 sm",
+        "4,5 sm",
+        "6 sm"
+      ],
+      "t": 1,
+      "izoh": "Yarim shar hajmi (2/3)πR³ ga teng, demak (2/3)πR³ = 18π. Ikkala tomonni soddalashtirsak 2R³ = 54, ya'ni R³ = 27 va R = 3 sm. Kub ildiz olmasdan 27 ni javob deb yozish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 60 130 A 90 90 0 0 0 240 130' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='130' rx='90' ry='24' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='130' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='130' x2='240' y2='130' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='126' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='123' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esig'imi 18π sm³%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yarim-shar",
+      "id": "matematika_ster_m15-shar-va-sfera#8061ed12"
+    },
+    {
+      "q": "Yarim sharsimon kosadagi suv shu kosaning radiusiga teng radiusli silindrik stakanga to'liq quyildi. Stakandagi suv balandligi radiusning qanday qismini tashkil qiladi?",
+      "v": [
+        "2/3",
+        "1/3",
+        "1/2",
+        "3/4"
+      ],
+      "t": 0,
+      "izoh": "Yarim shar hajmi (2/3)πR³, stakandagi suv ustuni hajmi esa πR²h. Suv miqdori o'zgarmagani uchun πR²h = (2/3)πR³ deb yozamiz. Ikkala tomonni πR² ga qisqartirsak h = (2/3)R chiqadi, ya'ni balandlik radiusning 2/3 qismi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpath d='M 20 120 A 60 60 0 0 0 140 120' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='80' cy='120' rx='60' ry='16' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='80' cy='120' r='2.5' fill='%23334155'/%3E%3Cline x1='80' y1='120' x2='140' y2='120' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cellipse cx='225' cy='120' rx='60' ry='16' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='225' cy='230' rx='60' ry='16' stroke='%23334155' stroke-width='1.6' fill='none'/%3E%3Cline x1='165' y1='120' x2='165' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='285' y1='120' x2='285' y2='230' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='225' y1='120' x2='285' y2='120' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='72' y='116' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='110' y='113' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='255' y='113' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='232' y='185' font-size='13' fill='%23334155' text-anchor='start'%3Eh = ?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yarim-shar",
+      "id": "matematika_ster_m15-shar-va-sfera#25e56a24"
+    },
+    {
+      "q": "Sharning hajmi son qiymati uning sirt yuzasi son qiymatiga teng bo'lib qoldi. Sharning radiusi nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "3",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Shart bo'yicha (4/3)πR³ = 4πR² deb yozamiz. Ikkala tomonni 4πR² ga qisqartirsak (1/3)R = 1 chiqadi, bundan R = 3. Qisqartirishda R² ni tushirib qoldirsak noto'g'ri tenglama va noto'g'ri ildiz hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "hajm-sirt-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#794d5425"
+    },
+    {
+      "q": "Radiusi 9 sm bo'lgan sharning hajmi son qiymatining sirt yuzasi son qiymatiga nisbati nechaga teng?",
+      "v": [
+        "3",
+        "9",
+        "27",
+        "1/3"
+      ],
+      "t": 0,
+      "izoh": "Nisbatni umumiy ko'rinishda yozamiz: V : S = (4/3)πR³ : 4πR² = R/3. Bu yerda R = 9, demak nisbat 9 : 3 = 3 ga teng. Radiusning o'zini javob deb yozish yoki R³ ni ishlatish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 9 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3EV : S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hajm-sirt-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#73402df2"
+    },
+    {
+      "q": "Sharning radiusi ikki marta orttirildi. Uning hajmi son qiymatining sirt yuzasi son qiymatiga nisbati necha marta o'zgaradi?",
+      "v": [
+        "4 marta ortadi",
+        "8 marta ortadi",
+        "o'zgarmaydi",
+        "2 marta ortadi"
+      ],
+      "t": 3,
+      "izoh": "Har qanday shar uchun V : S = R/3 bo'ladi, ya'ni nisbat faqat radiusga to'g'ri proporsional. Radius ikki marta ortsa, nisbat ham aynan ikki marta ortadi. Hajm 8 marta, sirt esa 4 marta ortishiga qarab 8 yoki 4 deb javob berish xato.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hajm-sirt-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#4108b499"
+    },
+    {
+      "q": "Ikkita sharsimon idishning radiuslari 2 : 3 nisbatda yasalgan. Shu idishlarning hajmlari qanday nisbatda bo'ladi?",
+      "v": [
+        "2 : 3",
+        "4 : 9",
+        "8 : 27",
+        "16 : 81"
+      ],
+      "t": 2,
+      "izoh": "O'xshash jismlarda hajmlar nisbati chiziqli o'lchamlar nisbatining kubiga teng. Demak V₁ : V₂ = 2³ : 3³ = 8 : 27. Radiuslar nisbatini o'zgarishsiz qoldirish yoki kvadratga ko'tarish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='85' cy='150' r='44' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='215' cy='150' r='66' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='85' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='215' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='85' y1='150' x2='129' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='215' y1='150' x2='281' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='107' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='248' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eradiuslar nisbati 2 : 3%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmlar nisbati = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-shar-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#171d2eab"
+    },
+    {
+      "q": "Ikki sharning sirt yuzalari nisbati 9 : 25 ekani aniqlandi. Shu sharlarning hajmlari qanday nisbatda bo'ladi?",
+      "v": [
+        "9 : 25",
+        "3 : 5",
+        "81 : 625",
+        "27 : 125"
+      ],
+      "t": 3,
+      "izoh": "Sirt yuzalari nisbati radiuslar nisbatining kvadrati bo'lgani uchun R₁ : R₂ = 3 : 5. Hajmlar nisbati esa radiuslar nisbatining kubi: 3³ : 5³ = 27 : 125. Radiuslar nisbatida to'xtab qolish oxirgi qadamni tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='80' cy='145' r='48' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='215' cy='145' r='68' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='80' cy='145' r='2.5' fill='%23334155'/%3E%3Ccircle cx='215' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='80' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3ES₁%3C/text%3E%3Ctext x='215' y='238' font-size='13' fill='%23334155' text-anchor='middle'%3ES₂%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3ES₁ : S₂ = 9 : 25%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-shar-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#80a2ab0c"
+    },
+    {
+      "q": "Bir sharsimon rezervuarning hajmi ikkinchisinikidan 8 marta katta ekani ma'lum bo'ldi. Ularning sirt yuzalari necha marta farq qiladi?",
+      "v": [
+        "2 marta",
+        "4 marta",
+        "8 marta",
+        "64 marta"
+      ],
+      "t": 1,
+      "izoh": "Hajmlar nisbati radiuslar nisbatining kubi bo'lgani uchun R₁ : R₂ = ∛8 = 2. Sirt yuzalari nisbati esa radiuslar nisbatining kvadrati: 2² = 4 marta. Hajm nisbatini o'zgarishsiz ko'chirib 8 deb javob berish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='75' cy='150' r='42' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='210' cy='150' r='70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='75' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='210' cy='150' r='2.5' fill='%23334155'/%3E%3Ctext x='75' y='218' font-size='13' fill='%23334155' text-anchor='middle'%3EV₂%3C/text%3E%3Ctext x='210' y='242' font-size='13' fill='%23334155' text-anchor='middle'%3EV₁%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3EV₁ = 8 · V₂%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-shar-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#02f13a55"
+    },
+    {
+      "q": "Diametrlari 10 sm va 15 sm bo'lgan ikki sharsimon idish bor. Kichigi suvga to'la to'ldirilgan. Undagi suv kattasiga quyilsa, kattasining qanday qismini to'ldiradi?",
+      "v": [
+        "8/27",
+        "2/3",
+        "4/9",
+        "1/3"
+      ],
+      "t": 0,
+      "izoh": "Kichik idish to'la bo'lgani uchun undagi suv hajmi kichik sharning hajmiga teng. Diametrlar nisbati 10 : 15 = 2 : 3, demak radiuslar nisbati ham 2 : 3. Hajmlar nisbati esa kubga ko'tariladi: 2³ : 3³ = 8 : 27. Ya'ni kichik idishdagi suv katta idishning 8/27 qismini egallaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='70' cy='160' r='50' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='215' cy='160' r='75' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='70' cy='160' r='2.5' fill='%23334155'/%3E%3Ccircle cx='215' cy='160' r='2.5' fill='%23334155'/%3E%3Cline x1='20' y1='160' x2='120' y2='160' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='140' y1='160' x2='290' y2='160' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='70' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='215' y='152' font-size='13' fill='%23334155' text-anchor='middle'%3E15 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Ekichigi to'la: suv kattasining qancha qismini to'ldiradi?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shar-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#b250fa8a"
+    },
+    {
+      "q": "Ikki sharsimon rezervuarning hajmlari 1000 : 27 nisbatda ekani hisoblab chiqildi. Ularning katta doiralari uzunliklari qanday nisbatda?",
+      "v": [
+        "100 : 9",
+        "10 : 3",
+        "1000 : 27",
+        "5 : 3"
+      ],
+      "t": 1,
+      "izoh": "Hajmlar nisbati radiuslar nisbatining kubi, demak R₁ : R₂ = ∛1000 : ∛27 = 10 : 3. Katta doira uzunligi 2πR bo'lgani uchun uzunliklar nisbati radiuslar nisbati bilan bir xil, ya'ni 10 : 3. Hajm nisbatini o'zgarishsiz ko'chirish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='62' cy='150' r='38' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='200' cy='150' r='76' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='62' cy='150' rx='38' ry='11' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='200' cy='150' rx='76' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='62' y='210' font-size='13' fill='%23334155' text-anchor='middle'%3EV₂%3C/text%3E%3Ctext x='200' y='248' font-size='13' fill='%23334155' text-anchor='middle'%3EV₁%3C/text%3E%3Ctext x='150' y='268' font-size='13' fill='%23334155' text-anchor='middle'%3EV₁ : V₂ = 1000 : 27%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-shar-nisbati",
+      "id": "matematika_ster_m15-shar-va-sfera#4f09a957"
+    },
+    {
+      "q": "Radiuslari 3 sm, 4 sm va 5 sm bo'lgan uchta qo'rg'oshin shar eritilib, bitta yangi shar quyildi. Yangi sharning radiusi qancha?",
+      "v": [
+        "12 sm",
+        "6 sm",
+        "4 sm",
+        "216 sm"
+      ],
+      "t": 1,
+      "izoh": "Eritishda metallning hajmi saqlanadi, shuning uchun radiuslarning kublari qo'shiladi: 3³ + 4³ + 5³ = 27 + 64 + 125 = 216. Demak R³ = 216 va R = 6 sm. Radiuslarni oddiy qo'shib 12 sm deb javob berish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='45' cy='190' r='30' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='140' cy='180' r='40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='245' cy='170' r='50' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='190' x2='75' y2='190' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='140' y1='180' x2='180' y2='180' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='245' y1='170' x2='295' y2='170' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='60' y='184' font-size='13' fill='%23334155' text-anchor='middle'%3E3%3C/text%3E%3Ctext x='160' y='174' font-size='13' fill='%23334155' text-anchor='middle'%3E4%3C/text%3E%3Ctext x='270' y='164' font-size='13' fill='%23334155' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Euchtasi eritilib bitta shar quyildi%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Eyangi radius R = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sharlarni-eritish",
+      "id": "matematika_ster_m15-shar-va-sfera#8523b953"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan mum shar eritilib, radiusi 3 sm bo'lgan bir xil kichik sharlar quyildi. Nechta kichik shar hosil bo'ladi?",
+      "v": [
+        "2 ta",
+        "4 ta",
+        "8 ta",
+        "6 ta"
+      ],
+      "t": 2,
+      "izoh": "Hajm saqlanadi, shuning uchun sharlar soni hajmlar nisbatiga teng. Hajmlar nisbati radiuslar nisbatining kubi: (6 : 3)³ = 2³ = 8. Demak 8 ta kichik shar chiqadi. Radiuslar nisbatini javob deb olib 2 ta deyish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='90' cy='150' r='72' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='230' cy='150' r='36' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='90' cy='150' r='2.5' fill='%23334155'/%3E%3Ccircle cx='230' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='90' y1='150' x2='162' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='230' y1='150' x2='266' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='126' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='248' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E3 sm%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Ekatta shar eritilib kichiklariga bo'lindi%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Esoni = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sharlarni-eritish",
+      "id": "matematika_ster_m15-shar-va-sfera#219ce56b"
+    },
+    {
+      "q": "Diametri 12 sm bo'lgan sharsimon muz bo'lagi eritilib, radiusi 1 sm bo'lgan sharchalarga quyildi. Nechta sharcha hosil bo'ladi?",
+      "v": [
+        "6 ta",
+        "36 ta",
+        "72 ta",
+        "216 ta"
+      ],
+      "t": 3,
+      "izoh": "Katta sharning radiusi R = 12 : 2 = 6 sm. Hajmlar nisbati radiuslar nisbatining kubiga teng: (6 : 1)³ = 216. Demak 216 ta sharcha chiqadi. Radiusni yoki uning kvadratini javob deb olish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='100' cy='150' r='60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='235' cy='150' r='10' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='100' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='40' y1='150' x2='160' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='235' y1='150' x2='245' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='100' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E12 sm%3C/text%3E%3Ctext x='235' y='134' font-size='13' fill='%23334155' text-anchor='middle'%3E1 sm%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Emuz eritilib sharchalarga quyildi%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Esharchalar soni = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sharlarni-eritish",
+      "id": "matematika_ster_m15-shar-va-sfera#0541f3aa"
+    },
+    {
+      "q": "Sharsimon quyma to'liq eritilib, radiusi 2 sm bo'lgan 27 ta bir xil sharchaga aylantirildi. Dastlabki sharning radiusi qancha edi?",
+      "v": [
+        "54 sm",
+        "6 sm",
+        "18 sm",
+        "9 sm"
+      ],
+      "t": 1,
+      "izoh": "Sharchalarning umumiy hajmi 27 · (4/3)π · 8 ga teng, ya'ni radiuslar kublari yig'indisi 27 · 8 = 216. Demak R³ = 216 va R = 6 sm. Sharchalar sonini radiusga ko'paytirib 54 sm deb javob berish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='85' cy='150' r='60' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='85' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='85' y1='150' x2='145' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='115' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ccircle cx='210' cy='120' r='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='255' cy='150' r='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='210' cy='182' r='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='210' y1='120' x2='228' y2='120' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='219' y='112' font-size='13' fill='%23334155' text-anchor='middle'%3E2 sm%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Ejami 27 ta sharcha quyildi%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sharlarni-eritish",
+      "id": "matematika_ster_m15-shar-va-sfera#3f0729a8"
+    },
+    {
+      "q": "Radiusi 6 sm bo'lgan sharga kub shunday ichki chizilganki, uning barcha uchlari sfera ustida yotadi. Kubning qirrasi qancha?",
+      "v": [
+        "4√3 sm",
+        "6√3 sm",
+        "12 sm",
+        "2√3 sm"
+      ],
+      "t": 0,
+      "izoh": "Sharga ichki chizilgan kubning fazoviy diagonali sharning diametriga teng: a√3 = 2R = 12. Bundan a = 12/√3 = 4√3 sm. Diagonalni qirra deb olib 12 sm deb javob berish eng ko'p uchraydigan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='95,115 185,115 185,205 95,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='125,85 215,85 215,175 125,175' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='115' x2='125' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='115' x2='215' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='205' x2='215' y2='175' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='205' x2='125' y2='175' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='245' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='198' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 6 sm%3C/text%3E%3Ctext x='140' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = ?%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-chizilgan-kub",
+      "id": "matematika_ster_m15-shar-va-sfera#3b9ea872"
+    },
+    {
+      "q": "Qirrasi 4 sm bo'lgan yog'och kubning sakkizala uchi sfera ustida yotadi. Shu sferaning radiusi qancha?",
+      "v": [
+        "2√3 sm",
+        "4√3 sm",
+        "2√2 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Kubning fazoviy diagonali sfera diametriga teng: d = a√3 = 4√3. Demak radius R = 4√3 : 2 = 2√3 sm. Diagonalning o'zini radius deb olish yoki yoq diagonali a√2 ni ishlatish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='95,115 185,115 185,205 95,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='125,85 215,85 215,175 125,175' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='115' x2='125' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='115' x2='215' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='205' x2='215' y2='175' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='205' x2='125' y2='175' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='245' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='200' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = ?%3C/text%3E%3Ctext x='140' y='222' font-size='13' fill='%23334155' text-anchor='middle'%3Ea = 4 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-chizilgan-kub",
+      "id": "matematika_ster_m15-shar-va-sfera#0b68de0c"
+    },
+    {
+      "q": "Sferaga ichki chizilgan kubning hajmi 64 sm³ ga teng. Shu sferaning sirt yuzasi necha kvadrat santimetr?",
+      "v": [
+        "16π sm²",
+        "48π sm²",
+        "12π sm²",
+        "32π sm²"
+      ],
+      "t": 1,
+      "izoh": "Kub hajmidan qirra topiladi: a³ = 64, demak a = 4 sm. Fazoviy diagonal a√3 = 4√3 sfera diametri bo'lgani uchun R = 2√3 va R² = 12. Endi sirt S = 4πR² = 48π sm². Yoq diagonali 4√2 ni diametr deb olgan o'quvchi 32π, qirraning yarmini radius deb olgan o'quvchi 16π, 4πR² o'rniga katta doira yuzi πR² ni hisoblagan o'quvchi 12π deb xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='95' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='95,115 185,115 185,205 95,205' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='125,85 215,85 215,175 125,175' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='95' y1='115' x2='125' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='115' x2='215' y2='85' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='185' y1='205' x2='215' y2='175' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='95' y1='205' x2='125' y2='175' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ekub hajmi 64 sm³%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Esfera sirti S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ichki-chizilgan-kub",
+      "id": "matematika_ster_m15-shar-va-sfera#9362c22f"
+    },
+    {
+      "q": "Qirrasi 12 sm bo'lgan quti shaklidagi kub ichiga uning yoqlariga tegib turadigan shar joylashtirildi. Sharning hajmi qancha?",
+      "v": [
+        "288π sm³",
+        "2304π sm³",
+        "144π sm³",
+        "36π sm³"
+      ],
+      "t": 0,
+      "izoh": "Kubning yoqlariga tegib turgan sharning diametri kub qirrasiga teng, demak R = 12 : 2 = 6 sm. Hajm V = (4/3)π · 216 = 288π sm³. Qirrani radius deb olish natijani bir necha barobar oshirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cpolygon points='70,110 200,110 200,240 70,240' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='110,70 240,70 240,200 110,200' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='70' y1='110' x2='110' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='110' x2='240' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='200' y1='240' x2='240' y2='200' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='70' y1='240' x2='110' y2='200' stroke='%23334155' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Ccircle cx='135' cy='175' r='65' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='135' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ekub qirrasi 12 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Eshar hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ichki-chizilgan-kub",
+      "id": "matematika_ster_m15-shar-va-sfera#900b69cf"
+    },
+    {
+      "q": "Sharsimon to'p uni zich o'rab turgan silindrik quti ichiga joylashtirildi. Qutining hajmi to'p hajmiga qanday nisbatda bo'ladi?",
+      "v": [
+        "3 : 2",
+        "2 : 3",
+        "1 : 2",
+        "2 : 1"
+      ],
+      "t": 0,
+      "izoh": "Zich o'ralganda silindr asosining radiusi R, balandligi esa 2R bo'ladi, demak silindr hajmi πR² · 2R = 2πR³. Shar hajmi (4/3)πR³ bo'lgani uchun nisbat 2πR³ : (4/3)πR³ = 3 : 2 chiqadi. Bu nisbat radiusga bog'liq emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='78' rx='72' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='222' rx='72' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='78' y1='78' x2='78' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='222' y1='78' x2='222' y2='222' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='72' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='222' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='186' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Esilindr balandligi 2R%3C/text%3E%3Ctext x='150' y='286' font-size='13' fill='%23334155' text-anchor='middle'%3Ehajmlar nisbati = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-chizilgan-silindr",
+      "id": "matematika_ster_m15-shar-va-sfera#74972483"
+    },
+    {
+      "q": "Radiusi 5 sm bo'lgan shar uni zich o'rab turgan silindr ichiga joylashtirilgan. Silindrning yon sirti necha kvadrat santimetrga teng?",
+      "v": [
+        "50π sm²",
+        "150π sm²",
+        "100π sm²",
+        "200π sm²"
+      ],
+      "t": 2,
+      "izoh": "Zich o'ralgan silindrning asos radiusi R = 5 sm, balandligi esa 2R = 10 sm. Yon sirt S = 2πR · h = 2π · 5 · 10 = 100π sm². Balandlikni radiusga teng deb olish natijani ikki barobar kamaytirib yuboradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='70' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='220' rx='70' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='80' x2='80' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='80' x2='220' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='70' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='220' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='185' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Esilindrning yon sirti S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tashqi-chizilgan-silindr",
+      "id": "matematika_ster_m15-shar-va-sfera#0b0e35ca"
+    },
+    {
+      "q": "Silindr ichiga zich joylashtirilgan sharning hajmi 36π sm³ ekani ma'lum. Shu silindrning hajmi qancha?",
+      "v": [
+        "72π sm³",
+        "54π sm³",
+        "108π sm³",
+        "27π sm³"
+      ],
+      "t": 1,
+      "izoh": "Shar hajmidan radius topiladi: (4/3)πR³ = 36π, demak R³ = 27 va R = 3 sm. Silindrning asos radiusi 3 sm, balandligi 6 sm, shuning uchun V = π · 9 · 6 = 54π sm³. Shar hajmini ikkilantirib 72π deyish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='80' rx='70' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='220' rx='70' ry='18' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='80' x2='80' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='80' x2='220' y2='220' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='70' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Eshar hajmi 36π sm³%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Esilindr hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tashqi-chizilgan-silindr",
+      "id": "matematika_ster_m15-shar-va-sfera#a3708a2a"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan shar zich sig'adigan eng kichik silindrik idish tayyorlandi. Shu idishning hajmi qancha bo'ladi?",
+      "v": [
+        "64π sm³",
+        "256π/3 sm³",
+        "256π sm³",
+        "128π sm³"
+      ],
+      "t": 3,
+      "izoh": "Eng kichik idishning asos radiusi sharnikiga teng, ya'ni 4 sm, balandligi esa diametrga teng, ya'ni 8 sm. Hajm V = πR²h = π · 16 · 8 = 128π sm³. Sharning hajmi 256π/3 ni idish hajmi deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='84' rx='66' ry='17' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='216' rx='66' ry='17' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='84' y1='84' x2='84' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='216' y1='84' x2='216' y2='216' stroke='%23334155' stroke-width='2'/%3E%3Ccircle cx='150' cy='150' r='66' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='216' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='240' y1='84' x2='240' y2='216' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='183' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E4 sm%3C/text%3E%3Ctext x='248' y='154' font-size='13' fill='%23334155' text-anchor='start'%3Eh%3C/text%3E%3Ctext x='150' y='266' font-size='13' fill='%23334155' text-anchor='middle'%3Eidish hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tashqi-chizilgan-silindr",
+      "id": "matematika_ster_m15-shar-va-sfera#ffd5b792"
+    },
+    {
+      "q": "Radiusi 25 sm bo'lgan sharni markazidan 7 sm va 15 sm uzoqlikdagi ikki parallel tekislik kesib o'tdi. Kesim radiuslari orasidagi farq qancha?",
+      "v": [
+        "8 sm",
+        "44 sm",
+        "4 sm",
+        "20 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kesim radiusi r₁ = √(625 − 49) = √576 = 24 sm, ikkinchisi r₂ = √(625 − 225) = √400 = 20 sm. Ularning farqi 24 − 20 = 4 sm. Tekisliklar orasidagi masofa 8 sm ni javob deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='96' rx='68' ry='17' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='126' rx='84' ry='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='96' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 25 sm%3C/text%3E%3Ctext x='143' y='104' font-size='13' fill='%23334155' text-anchor='end'%3E15 sm%3C/text%3E%3Ctext x='143' y='136' font-size='13' fill='%23334155' text-anchor='end'%3E7 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-ikki-kesim",
+      "id": "matematika_ster_m15-shar-va-sfera#94f0b70b"
+    },
+    {
+      "q": "Radiusi 15 sm bo'lgan sharni markazining bir tomonida 9 sm va 12 sm masofadagi ikki parallel tekislik kesdi. Kesim radiuslari yig'indisi qancha?",
+      "v": [
+        "21 sm",
+        "3 sm",
+        "27 sm",
+        "15 sm"
+      ],
+      "t": 0,
+      "izoh": "Birinchi kesim radiusi √(225 − 81) = 12 sm, ikkinchisi √(225 − 144) = 9 sm. Ularning yig'indisi 12 + 9 = 21 sm. Masofalarni qo'shib 27 sm deb javob berish yoki radiuslar ayirmasini olish xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='90' rx='62' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='120' rx='82' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='90' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 15 sm%3C/text%3E%3Ctext x='143' y='98' font-size='13' fill='%23334155' text-anchor='end'%3E12 sm%3C/text%3E%3Ctext x='143' y='130' font-size='13' fill='%23334155' text-anchor='end'%3E9 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-ikki-kesim",
+      "id": "matematika_ster_m15-shar-va-sfera#8a66a85e"
+    },
+    {
+      "q": "Radiusi 13 sm bo'lgan sharni markazning ikki tomonida 5 sm masofada joylashgan ikki parallel tekislik kesib o'tdi. Kesim doiralari yuzalari yig'indisi qancha?",
+      "v": [
+        "144π sm²",
+        "288π sm²",
+        "576π sm²",
+        "169π sm²"
+      ],
+      "t": 1,
+      "izoh": "Ikkala kesim ham markazdan bir xil uzoqlikda bo'lgani uchun radiuslari teng: r = √(169 − 25) = 12 sm. Har bir kesim yuzi π · 144 = 144π, ikkitasining yig'indisi esa 288π sm². Bitta kesim yuzida to'xtab qolish oxirgi qadamni tashlab ketishdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='115' rx='83' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='185' rx='83' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='150' x2='150' y2='115' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='150' y2='185' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 13 sm%3C/text%3E%3Ctext x='143' y='126' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='143' y='178' font-size='13' fill='%23334155' text-anchor='end'%3E5 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-ikki-kesim",
+      "id": "matematika_ster_m15-shar-va-sfera#62a2c178"
+    },
+    {
+      "q": "Radiusi 4 sm bo'lgan qotishma shar quyildi va qotishmaning zichligi 2,5 g/sm³ ga teng. π ≈ 3 deb olib sharning massasini toping.",
+      "v": [
+        "640 g",
+        "256 g",
+        "480 g",
+        "1600 g"
+      ],
+      "t": 0,
+      "izoh": "Avval hajm: V = (4/3)πR³ ≈ (4/3) · 3 · 64 = 256 sm³. Massa hajm bilan zichlikning ko'paytmasiga teng: m = 256 · 2,5 = 640 g. Hajm o'rniga sirt yuzasini olish yoki zichlikka ikki marta ko'paytirish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 4 sm%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 2,5 g/sm³%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Emassa m = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zichlik-massa",
+      "id": "matematika_ster_m15-shar-va-sfera#5a0790f4"
+    },
+    {
+      "q": "Radiusi 5 sm bo'lgan po'lat sharning zichligi 7,8 g/sm³. π ≈ 3 deb hisoblab sharning massasini kilogrammda toping.",
+      "v": [
+        "39 kg",
+        "0,39 kg",
+        "3,9 kg",
+        "500 g"
+      ],
+      "t": 2,
+      "izoh": "Hajm V = (4/3)πR³ ≈ (4/3) · 3 · 125 = 500 sm³. Massa m = 500 · 7,8 = 3900 g. Grammni kilogrammga aylantiramiz: 3900 g = 3,9 kg. Birlikni aylantirmaslik yoki verguli noto'g'ri qo'yish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='142' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='194' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 5 sm%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik 7,8 g/sm³%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Emassa m = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "zichlik-massa",
+      "id": "matematika_ster_m15-shar-va-sfera#8d894bfc"
+    },
+    {
+      "q": "Diametri 10 sm bo'lgan yog'och sharning massasi 300 g deb o'lchandi. π ≈ 3 deb olsak, yog'ochning zichligi qanday?",
+      "v": [
+        "0,06 g/sm³",
+        "1,67 g/sm³",
+        "6 g/sm³",
+        "0,6 g/sm³"
+      ],
+      "t": 3,
+      "izoh": "Radius R = 10 : 2 = 5 sm, hajm esa V ≈ (4/3) · 3 · 125 = 500 sm³. Zichlik massaning hajmga nisbati: 300 : 500 = 0,6 g/sm³. Hajmni massaga bo'lib yuborish 1,67 kabi teskari natija beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='145' r='88' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='145' rx='88' ry='24' stroke='%23334155' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cline x1='62' y1='145' x2='238' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ccircle cx='150' cy='145' r='2.5' fill='%23334155'/%3E%3Ctext x='150' y='138' font-size='13' fill='%23334155' text-anchor='middle'%3Ed = 10 sm%3C/text%3E%3Ctext x='141' y='163' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='150' y='262' font-size='13' fill='%23334155' text-anchor='middle'%3Emassa 300 g%3C/text%3E%3Ctext x='150' y='282' font-size='13' fill='%23334155' text-anchor='middle'%3Ezichlik = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "zichlik-massa",
+      "id": "matematika_ster_m15-shar-va-sfera#717ccf60"
+    },
+    {
+      "q": "Bir xil materialdan quyilgan ikki sharning radiuslari 2 : 5 nisbatda. Shu sharlarning massalari qanday nisbatda bo'ladi?",
+      "v": [
+        "2 : 5",
+        "4 : 25",
+        "16 : 625",
+        "8 : 125"
+      ],
+      "t": 3,
+      "izoh": "Material bir xil bo'lgani uchun massalar nisbati hajmlar nisbatiga teng. Hajmlar nisbati esa radiuslar nisbatining kubi: 2³ : 5³ = 8 : 125. Radiuslar nisbatini kvadratga ko'tarish sirt yuzalari nisbatini beradi, massalarnikini emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='55' cy='185' r='32' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='215' cy='150' r='80' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ccircle cx='55' cy='185' r='2.5' fill='%23334155'/%3E%3Ccircle cx='215' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='55' y1='185' x2='87' y2='185' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='215' y1='150' x2='295' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='71' y='179' font-size='13' fill='%23334155' text-anchor='middle'%3E2%3C/text%3E%3Ctext x='255' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3E5%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Emassalar nisbati = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "zichlik-massa",
+      "id": "matematika_ster_m15-shar-va-sfera#1516e53e"
+    },
+    {
+      "q": "Ichki radiusi 10 sm bo'lgan silindrik idishdagi suvga radiusi 3 sm bo'lgan metall shar to'liq botirildi. Suv sathi qanchaga ko'tariladi?",
+      "v": [
+        "3,6 sm",
+        "0,12 sm",
+        "1,2 sm",
+        "0,36 sm"
+      ],
+      "t": 3,
+      "izoh": "Sharning hajmi (4/3)π · 27 = 36π sm³ va u siqib chiqargan suv shu hajmga teng. Ko'tarilgan qatlam silindr shaklida: π · 100 · h = 36π, bundan h = 0,36 sm. Silindr asosi yuzasini hisobga olmaslik natijani o'n barobar buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='70' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='70' x2='80' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='70' x2='220' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='240' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='140' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='200' r='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='200' x2='171' y2='200' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='70' x2='220' y2='70' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='185' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3E10 sm%3C/text%3E%3Ctext x='160' y='194' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esath ko'tarilishi h = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "suv-sathi-kotarilishi",
+      "id": "matematika_ster_m15-shar-va-sfera#6e0c189f"
+    },
+    {
+      "q": "Ichki radiusi 6 sm bo'lgan silindrik idishdagi suvga radiusi 3 sm bo'lgan metall shar to'liq botirildi. Suv sathi necha santimetrga ko'tariladi?",
+      "v": [
+        "2 sm",
+        "3 sm",
+        "0,5 sm",
+        "1 sm"
+      ],
+      "t": 3,
+      "izoh": "Shar siqib chiqargan suv hajmi (4/3)π · 27 = 36π sm³ ga teng. Bu suv silindrda qatlam hosil qiladi: π · 36 · h = 36π, demak h = 1 sm. Sharning radiusini javob deb olish yoki idish radiusini kvadratga ko'tarmaslik xato beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='70' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='70' x2='80' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='70' x2='220' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='240' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='130' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='195' r='35' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='150' y1='195' x2='185' y2='195' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='70' x2='220' y2='70' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='185' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='166' y='189' font-size='13' fill='%23334155' text-anchor='start'%3E3 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Esath ko'tarilishi h = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-sathi-kotarilishi",
+      "id": "matematika_ster_m15-shar-va-sfera#51994b7f"
+    },
+    {
+      "q": "Ichki radiusi 5 sm bo'lgan silindrik stakandagi suv sathi shar botirilgach 2,4 sm ga ko'tarildi. Sharning hajmi qancha?",
+      "v": [
+        "120π sm³",
+        "60π sm³",
+        "12π sm³",
+        "25π sm³"
+      ],
+      "t": 1,
+      "izoh": "Ko'tarilgan suv silindrik qatlam hosil qiladi, uning hajmi V = πr²h = π · 25 · 2,4 = 60π sm³. Arximed qonuniga ko'ra bu hajm botirilgan sharning hajmiga teng. Asos yuzasi o'rniga radiusni ishlatish natijani buzadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='70' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='70' x2='80' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='70' x2='220' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='240' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='160' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cellipse cx='150' cy='126' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='240' y1='126' x2='240' y2='160' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='70' x2='220' y2='70' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='185' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3E5 sm%3C/text%3E%3Ctext x='248' y='148' font-size='13' fill='%23334155' text-anchor='start'%3E2,4 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Eshar hajmi V = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "suv-sathi-kotarilishi",
+      "id": "matematika_ster_m15-shar-va-sfera#a66c2073"
+    },
+    {
+      "q": "Ichki radiusi 8 sm bo'lgan silindrik idishdagi suvga metall shar botirilganda sath 4,5 sm ga ko'tarildi. Sharning radiusi qancha?",
+      "v": [
+        "4,5 sm",
+        "12 sm",
+        "6 sm",
+        "8 sm"
+      ],
+      "t": 2,
+      "izoh": "Siqib chiqarilgan suv hajmi π · 64 · 4,5 = 288π sm³ ga teng va u shar hajmiga teng. Demak (4/3)πR³ = 288π, bundan R³ = 216 va R = 6 sm. Sath ko'tarilishini radius deb olish keng tarqalgan xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Cellipse cx='150' cy='70' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='80' y1='70' x2='80' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='220' y1='70' x2='220' y2='240' stroke='%23334155' stroke-width='2'/%3E%3Cellipse cx='150' cy='240' rx='70' ry='16' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='170' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cellipse cx='150' cy='131' rx='70' ry='16' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='240' y1='131' x2='240' y2='170' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='70' x2='220' y2='70' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='185' y='64' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='248' y='156' font-size='13' fill='%23334155' text-anchor='start'%3E4,5 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Eshar radiusi R = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "suv-sathi-kotarilishi",
+      "id": "matematika_ster_m15-shar-va-sfera#9752d128"
+    },
+    {
+      "q": "Radiusi 10 sm bo'lgan sharda markazning turli tomonlarida yotgan ikki parallel kesim radiuslari 6 sm va 8 sm. Kesim tekisliklari orasidagi masofa qancha?",
+      "v": [
+        "2 sm",
+        "10 sm",
+        "14 sm",
+        "28 sm"
+      ],
+      "t": 2,
+      "izoh": "Birinchi tekislikning markazdan masofasi √(100 − 36) = 8 sm, ikkinchisiniki √(100 − 64) = 6 sm. Tekisliklar markazning turli tomonlarida bo'lgani uchun masofalar qo'shiladi: 8 + 6 = 14 sm. Bir tomonda deb hisoblab ayirish 2 sm degan xato javob beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='104' rx='68' ry='17' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cellipse cx='150' cy='198' rx='80' ry='20' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='150' y1='104' x2='218' y2='104' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='198' x2='230' y2='198' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cline x1='150' y1='150' x2='240' y2='150' stroke='%23334155' stroke-width='1.6'/%3E%3Ctext x='141' y='146' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='196' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3ER = 10 sm%3C/text%3E%3Ctext x='184' y='98' font-size='13' fill='%23334155' text-anchor='middle'%3E6 sm%3C/text%3E%3Ctext x='190' y='192' font-size='13' fill='%23334155' text-anchor='middle'%3E8 sm%3C/text%3E%3Ctext x='150' y='288' font-size='13' fill='%23334155' text-anchor='middle'%3Echizma masshtabda emas%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-ikki-kesim",
+      "id": "matematika_ster_m15-shar-va-sfera#44959ab5"
+    },
+    {
+      "q": "Diametri 16 sm bo'lgan sharsimon idishning yuqori qismidagi balandligi 5 sm bo'lgan segment yorliq bilan qoplanadi. Yorliq yuzasi qancha?",
+      "v": [
+        "40π sm²",
+        "160π sm²",
+        "80π sm²",
+        "256π sm²"
+      ],
+      "t": 2,
+      "izoh": "Idish radiusi R = 16 : 2 = 8 sm, segment balandligi h = 5 sm. Sferik segment yuzi S = 2πRh = 2π · 8 · 5 = 80π sm². Butun sfera sirti 256π ni yoki yarim qiymat 40π ni javob deb olish tipik xatolar.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23ffffff'/%3E%3Ccircle cx='150' cy='150' r='90' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cellipse cx='150' cy='116' rx='83' ry='21' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ccircle cx='150' cy='150' r='2.5' fill='%23334155'/%3E%3Cline x1='60' y1='150' x2='240' y2='150' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='60' x2='150' y2='116' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Ctext x='141' y='166' font-size='13' fill='%23334155' text-anchor='end'%3EO%3C/text%3E%3Ctext x='104' y='143' font-size='13' fill='%23334155' text-anchor='middle'%3Ediametr 16 sm%3C/text%3E%3Ctext x='158' y='96' font-size='13' fill='%23334155' text-anchor='start'%3Eh = 5 sm%3C/text%3E%3Ctext x='150' y='276' font-size='13' fill='%23334155' text-anchor='middle'%3Eyorliq yuzasi S = ?%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "sferik-segment-yuzi",
+      "id": "matematika_ster_m15-shar-va-sfera#bc8d7747"
+    }
+  ]
+}

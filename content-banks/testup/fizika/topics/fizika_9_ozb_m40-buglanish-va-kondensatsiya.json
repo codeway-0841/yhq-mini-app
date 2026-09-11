@@ -1,0 +1,516 @@
+{
+  "nom": "40-mavzu. Buglanish Va Kondensatsiya",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Bug'lanish deb qanday jarayonga aytiladi?",
+      "v": [
+        "Moddaning suyuq yoki qattiq agregat holatidan gaz holatga o'tish jarayoniga",
+        "Moddaning qattiq holatdan suyuq holatga o'tish jarayoniga",
+        "Moddaning gaz holatdan suyuq holatga o'tish jarayoniga",
+        "Moddaning suyuq holatdan qattiq holatga o'tish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Moddaning suyuq yoki qattiq agregat holatidan gaz holatga o'tish jarayoni bug'lanish deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#f6db9030"
+    },
+    {
+      "q": "Og'zi ochiq qoldirilgan idishdagi atir miqdori vaqt o'tishi bilan nima uchun kamayadi?",
+      "v": [
+        "Bug'lanish hodisasi sababli",
+        "Kondensatsiya sababli",
+        "Qotish sababli",
+        "Bosim oshishi sababli"
+      ],
+      "t": 0,
+      "izoh": "Idish ochiq qoldirilsa, atir bug'lanib ketadi, shuning uchun uning miqdori kamayadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#6b37124b"
+    },
+    {
+      "q": "Suyuqlik ichida qanday molekulalar gaz holatga o'tishi mumkin?",
+      "v": [
+        "Kinetik energiyasi katta bo'lgan, boshqa molekulalarning tortishish kuchini yenggan molekulalar",
+        "Kinetik energiyasi eng kichik molekulalar",
+        "Faqat idish tubidagi molekulalar",
+        "Faqat massasi katta molekulalar"
+      ],
+      "t": 0,
+      "izoh": "Kinetik energiyasi katta molekulalar tortishish kuchlarini yengib, sirt qatlamini yorib o'tib gaz holatga o'tadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#0a286442"
+    },
+    {
+      "q": "Suyuqlik temperaturasi ortishi bilan bug'lanish qanday o'zgaradi?",
+      "v": [
+        "Bug'lanish ortadi",
+        "Bug'lanish kamayadi",
+        "Bug'lanish o'zgarmaydi",
+        "Bug'lanish to'xtaydi"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik temperaturasi ortishi bilan bug'lanish ham ortadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#ce3aac0c"
+    },
+    {
+      "q": "Shamol esib turganda suyuqlik nima uchun tezroq bug'lanadi?",
+      "v": [
+        "Shamol sirtidagi molekulalarga qo'shimcha energiya beradi",
+        "Shamol suyuqlikni sovitadi",
+        "Shamol bosimni oshiradi",
+        "Shamol molekulalarni og'irlashtiradi"
+      ],
+      "t": 0,
+      "izoh": "Shamol suyuqlik sirtidagi molekulalarga qo'shimcha energiya bergani tufayli suyuqlik tezroq bug'lanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#1c856d9c"
+    },
+    {
+      "q": "Tarelkaga va stakanga bir xil miqdorda suv solinsa, bir necha soatdan so'ng nima kuzatiladi?",
+      "v": [
+        "Tarelkadagi suv bug'lanib ketadi, stakandagi suv qoladi",
+        "Stakandagi suv bug'lanib ketadi, tarelkadagi qoladi",
+        "Ikkalasidagi suv ham bug'lanib ketadi",
+        "Ikkalasidagi suv ham o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Tarelkaning sirti katta bo'lgani uchun undagi suv tez bug'lanadi; demak, bug'lanish suyuqlik sirtining kattaligiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#10d771b7"
+    },
+    {
+      "q": "Bug'lanish tezligi qaysi omillarga bog'liq?",
+      "v": [
+        "Suyuqlik temperaturasiga, sirtining kattaligiga, ustidagi havo holatiga va atmosfera bosimiga",
+        "Faqat suyuqlik rangiga",
+        "Faqat idishning shakliga",
+        "Faqat suyuqlik hajmiga"
+      ],
+      "t": 0,
+      "izoh": "Bug'lanish temperatura, sirt yuzasi, havo holati (shamol) va atmosfera bosimiga bog'liq.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#c2fc4c92"
+    },
+    {
+      "q": "Atmosfera bosimi past bo'lgan joylarda bug'lanish qanday kechadi?",
+      "v": [
+        "Bug'lanish tezlashadi",
+        "Bug'lanish sekinlashadi",
+        "Bug'lanish to'xtaydi",
+        "Bug'lanish o'zgarmaydi"
+      ],
+      "t": 0,
+      "izoh": "Atmosfera bosimi past bo'lgan joylarda bug'lanish tezlashadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#55383075"
+    },
+    {
+      "q": "Bug'lanish jarayonida suyuqlik nima uchun soviydi?",
+      "v": [
+        "Energiyasi kattaroq molekulalar tashqariga chiqib ketishi uchun ish bajariladi, suyuqlik energiyasi kamayadi",
+        "Suyuqlik atrofdan issiqlik yutadi",
+        "Molekulalar massasi ortadi",
+        "Tashqi bosim oshadi"
+      ],
+      "t": 0,
+      "izoh": "Energiyasi katta molekulalar chiqib ketganda ish bajariladi, shu sababli bug'lanish jarayonida suyuqlik soviydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#e2608b03"
+    },
+    {
+      "q": "Bug'lanish issiqligi deb nimaga aytiladi?",
+      "v": [
+        "Bug'lanishda suyuqlik temperaturasi o'zgarmasligi uchun unga tashqaridan berib turilishi lozim bo'lgan issiqlik miqdoriga",
+        "Suyuqlikni qizdirish uchun sarf bo'lgan issiqlikka",
+        "Jismni eritish uchun zarur issiqlikka",
+        "Suyuqlikni sovitish uchun ajraladigan issiqlikka"
+      ],
+      "t": 0,
+      "izoh": "Bug'lanishda temperatura o'zgarmasligi uchun tashqaridan berib turilishi lozim bo'lgan issiqlik miqdori bug'lanish issiqligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#d5c460f2"
+    },
+    {
+      "q": "Solishtirma bug'lanish issiqligi deb nimaga aytiladi va qanday belgilanadi?",
+      "v": [
+        "O'zgarmas temperaturada 1 kg suyuqlikni to'la bug'ga aylantirish uchun zarur issiqlik miqdoriga aytiladi va r harfi bilan belgilanadi",
+        "1 kg suyuqlikni 1 °C ga qizdirish issiqligiga aytiladi va c bilan belgilanadi",
+        "1 kg jismni eritish issiqligiga aytiladi va λ bilan belgilanadi",
+        "1 kg gazni kondensatsiyalash issiqligiga aytiladi va q bilan belgilanadi"
+      ],
+      "t": 0,
+      "izoh": "O'zgarmas temperaturada 1 kg suyuqlikni to'la bug'ga aylantirish uchun zarur issiqlik miqdori solishtirma bug'lanish issiqligi deyiladi va r bilan belgilanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#64368de8"
+    },
+    {
+      "q": "Solishtirma bug'lanish issiqligining formulasi va birligi qanday?",
+      "v": [
+        "r = Q_b/m, J/kg",
+        "r = Q_b·m, J·kg",
+        "r = m/Q_b, kg/J",
+        "r = Q_b/(m·ΔT), J/(kg·K)"
+      ],
+      "t": 0,
+      "izoh": "r = Q_b/m; birligi J/kg da ifodalanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#83a8c01e"
+    },
+    {
+      "q": "m massali suyuqlikni to'la bug'ga aylantirish uchun zarur issiqlik miqdori qanday topiladi?",
+      "v": [
+        "Q_b = r·m",
+        "Q_b = r/m",
+        "Q_b = m/r",
+        "Q_b = r·m·ΔT"
+      ],
+      "t": 0,
+      "izoh": "Q_b = r·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#4a024ec3"
+    },
+    {
+      "q": "Normal sharoitda qaynash temperaturasida turgan 1 kg suvni to'la bug'ga aylantirish uchun qancha energiya sarflanadi?",
+      "v": [
+        "2,3·10⁶ J",
+        "3,34·10⁵ J",
+        "4,2·10³ J",
+        "2,3·10³ J"
+      ],
+      "t": 0,
+      "izoh": "1 kg suvni bug'ga aylantirish uchun 2,3·10⁶ J energiya sarflanadi; demak, suv uchun r = 2,3·10⁶ J/kg.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#3855fa8e"
+    },
+    {
+      "q": "Kondensatsiya deb qanday jarayonga aytiladi?",
+      "v": [
+        "Bug'ning suyuqlik holatiga o'tish jarayoniga",
+        "Suyuqlikning bug'ga aylanish jarayoniga",
+        "Qattiq jismning erish jarayoniga",
+        "Suyuqlikning qotish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Bug'ning suyuqlik holatiga o'tish jarayoni kondensatsiya deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#5404a1fa"
+    },
+    {
+      "q": "«Kondensatsiya» so'zi lotinchada qanday ma'noni bildiradi?",
+      "v": [
+        "«Zichlashish», «quyuqlashish»",
+        "«Yengillashish», «uchish»",
+        "«Erish», «oqish»",
+        "«Qaynash», «ko'tarilish»"
+      ],
+      "t": 0,
+      "izoh": "«Kondensatsiya» lotinchada «zichlashish», «quyuqlashish» degan ma'nolarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#aaab7400"
+    },
+    {
+      "q": "Og'zi yopiq idishdagi suyuqlik miqdori nima uchun o'zgarmay qoladi?",
+      "v": [
+        "Bug'lanish bilan bir vaqtda bug' kondensatsiyalanishi ham kechadi",
+        "Suyuqlik umuman bug'lanmaydi",
+        "Idishda temperatura oshadi",
+        "Bug' molekulalari yo'qoladi"
+      ],
+      "t": 0,
+      "izoh": "Yopiq idishda bug'lanish va kondensatsiya birga kechgani uchun suyuqlik miqdori o'zgarmay qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#54ddf0c2"
+    },
+    {
+      "q": "Kondensatsiyalanish issiqligi qanday ifodalanadi?",
+      "v": [
+        "Q_k = −Q_b = −r·m",
+        "Q_k = r·m",
+        "Q_k = λ·m",
+        "Q_k = cm·ΔT"
+      ],
+      "t": 0,
+      "izoh": "Energiyaning saqlanish qonuniga ko'ra Q_k = −Q_b = −r·m.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#93f4536a"
+    },
+    {
+      "q": "Atmosferadagi suv bug'larining kondensatsiyasi natijasida qaysi hodisalar hosil bo'ladi?",
+      "v": [
+        "Yomg'ir, do'l, qor, shudring va qirov",
+        "Faqat yomg'ir",
+        "Faqat qor",
+        "Tsumani va zilzila"
+      ],
+      "t": 0,
+      "izoh": "Atmosferadagi suv bug'larining kondensatsiyasi natijasida yomg'ir, do'l, qor, shudring va qirov hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#a3d88ac0"
+    },
+    {
+      "q": "To'yinmagan bug' deb qanday holatdagi bug'ga aytiladi?",
+      "v": [
+        "Bug'lanayotgan molekulalar soni kondensatsiyalanayotgan molekulalar sonidan ko'p bo'lgan holatdagi bug'ga",
+        "Bug'lanish va kondensatsiya tezligi teng bo'lgan bug'ga",
+        "Umuman bug'lanmaydigan suyuqlik ustidagi bug'ga",
+        "Faqat qaynash paytidagi bug'ga"
+      ],
+      "t": 0,
+      "izoh": "Dastlab bug'lanayotgan molekulalar soni kondensatsiyalanayotgandan ko'p bo'lsa, bunday bug' to'yinmagan bug' deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#29aa20c5"
+    },
+    {
+      "q": "Dinamik muvozanatli holat deb qanday holatga aytiladi?",
+      "v": [
+        "Bug'lanish va kondensatsiyalanish tezligi tenglashgan holatga",
+        "Bug'lanish to'xtagan holatga",
+        "Kondensatsiya to'xtagan holatga",
+        "Suyuqlik qaynay boshlagan holatga"
+      ],
+      "t": 0,
+      "izoh": "Ma'lum vaqtdan keyin bug'lanish va kondensatsiyalanish tezligi tenglashadi; bunday holat dinamik muvozanatli holat deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#7a9f7081"
+    },
+    {
+      "q": "To'yingan bug' deb qanday bug'ga aytiladi?",
+      "v": [
+        "O'zining suyuqligi bilan dinamik muvozanatda bo'lgan bug'ga",
+        "Har qanday ochiq idish ustidagi bug'ga",
+        "Bug'lanayotgan molekulalari ko'p bo'lgan bug'ga",
+        "Juda past temperaturadagi bug'ga"
+      ],
+      "t": 0,
+      "izoh": "O'zining suyuqligi bilan dinamik muvozanatda bo'lgan bug' to'yingan bug' deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#e69d3847"
+    },
+    {
+      "q": "Suyuqlik temperaturasi orta borganda to'yingan bug' bosimi qanday o'zgaradi?",
+      "v": [
+        "Ortadi",
+        "Kamayadi",
+        "O'zgarmaydi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik temperaturasi orta borganda to'yingan bug' bosimi ham ortadi (p = nkT).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#8a2769cb"
+    },
+    {
+      "q": "Qaynash deb qanday jarayonga aytiladi?",
+      "v": [
+        "Suyuqlikning butun hajmi bo'ylab bug' hosil bo'lish jarayoniga",
+        "Suyuqlikning faqat sirtidan bug'lanish jarayoniga",
+        "Bug'ning suyuqlikka aylanish jarayoniga",
+        "Qattiq jismning erish jarayoniga"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlikning butun hajmi bo'ylab bug' hosil bo'lish jarayoni qaynash deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#bca2a008"
+    },
+    {
+      "q": "Suyuqlik qizdirilganda uning ichidagi havo pufakchalari nima uchun kattalashib yuqoriga ko'tariladi?",
+      "v": [
+        "Pufakchalardagi bug' bosimi ortib, pufakchalar kattalashadi va Arximed kuchi ta'sirida yuqoriga intiladi",
+        "Pufakchalar yengillashib o'zidan ko'tariladi",
+        "Suv pufakchalarni itarib yuboradi",
+        "Pufakchalar yorilib kichrayadi"
+      ],
+      "t": 0,
+      "izoh": "Temperatura ortganda pufakchalardagi bug' bosimi ortadi, pufakchalar kattalashadi va Arximed kuchi ta'sirida yuqoriga intiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#d51d0ac5"
+    },
+    {
+      "q": "Suv qaynashidan oldin uning o'ziga xos ovoz chiqarishi nimadan dalolat beradi?",
+      "v": [
+        "Pufakchalardagi bug'ning ma'lum qismi suvning yuqori qatlamida kondensatsiyalanib, pufakchalar kichiklashadi",
+        "Suv allaqachon qaynab bo'lgan",
+        "Pufakchalar suv sirtida portlagan",
+        "Idish qiziy boshlagan"
+      ],
+      "t": 0,
+      "izoh": "Suvning yuqori qatlami yetarli isimagani uchun pufakchalardagi bug'ning bir qismi kondensatsiyalanadi; bu qaynash oldidan ovoz chiqishiga sabab bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#e59a3236"
+    },
+    {
+      "q": "Qaynash temperaturasi deb qanday temperaturaga aytiladi?",
+      "v": [
+        "Suyuqlik qaynay boshlaganda uning butun hajmida pufakchalar paydo bo'ladigan, ortishi to'xtaydigan temperaturaga",
+        "Suyuqlik bug'lana boshlagan har qanday temperaturaga",
+        "Suyuqlik muzlaydigan temperaturaga",
+        "Suyuqlik eng yuqori qizdirilgan temperaturaga"
+      ],
+      "t": 0,
+      "izoh": "Suyuqlik qaynay boshlaganda temperaturasining ortishi to'xtaydi; bu temperatura suyuqlikning qaynash temperaturasi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#bc2328cc"
+    },
+    {
+      "q": "Normal sharoitda spirt va suv qanday temperaturada qaynaydi?",
+      "v": [
+        "Spirt 78 °C da, suv 100 °C da",
+        "Spirt 100 °C da, suv 78 °C da",
+        "Ikkalasi ham 100 °C da",
+        "Spirt 60 °C da, suv 90 °C da"
+      ],
+      "t": 0,
+      "izoh": "Normal sharoitda spirt 78 °C da, suv 100 °C da qaynaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#87aa20b2"
+    },
+    {
+      "q": "Tashqi bosim ortishi qaynash temperaturasiga qanday ta'sir qiladi?",
+      "v": [
+        "Bosim qancha katta bo'lsa, qaynash temperaturasi shunchalik yuqori bo'ladi",
+        "Bosim ortsa, qaynash temperaturasi pasayadi",
+        "Bosim qaynash temperaturasiga ta'sir qilmaydi",
+        "Bosim ortganda suv umuman qanamaydi"
+      ],
+      "t": 0,
+      "izoh": "Tashqi bosim qancha katta bo'lsa, qaynash temperaturasi shunchalik yuqori bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#19550905"
+    },
+    {
+      "q": "Tibbiyot muassasalarida jarrohlik asboblarini zararsizlantirish uchun suv qanday sharoitda qaynatiladi?",
+      "v": [
+        "Yuqori bosimda qaynatiladi, chunki bosim 16·10⁵ Pa bo'lganda suv 200 °C da ham qanamaydi",
+        "Past bosimda qaynatiladi",
+        "Oddiy ochiq idishda 100 °C da qaynatiladi",
+        "Sovuq suvga tushiriladi"
+      ],
+      "t": 0,
+      "izoh": "Ichidagi bosim 16·10⁵ Pa bo'lgan bug' qozonida suv 200 °C da ham qanamaydi; shuning uchun asboblar yuqori bosimda qaynatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#67e4037b"
+    },
+    {
+      "q": "Tog'ning 5 km balandligida suv 84 °C da qaynashi sababi nima?",
+      "v": [
+        "Balandlikda atmosfera bosimi pastroq bo'ladi",
+        "Balandlikda suv sof bo'ladi",
+        "Balandlikda temperatura yuqori bo'ladi",
+        "Balandlikda shamol kuchli bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Tog'da atmosfera bosimi past bo'lgani uchun suv 84 °C da qaynaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#00e4ba6c"
+    },
+    {
+      "q": "Tog'da 84 °C da qaynaydigan suvda go'sht pishirish uchun nima qilish kerak?",
+      "v": [
+        "Idish germetik berkitilib qaynatilishi kerak",
+        "Suvga tuz solish kifoya",
+        "Olovni kuchaytirish kerak",
+        "Go'shtni suvga tushirib qo'yish kifoya"
+      ],
+      "t": 0,
+      "izoh": "84 °C da go'sht pishmaydi; uni pishirish uchun idish germetik berkitilib qaynatilishi kerak.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#e2fe57f6"
+    },
+    {
+      "q": "Qaynash paytida suyuqlikning butun hajmida nima sodir bo'ladi?",
+      "v": [
+        "Temperatura tenglashadi va suyuqlik intensiv bug'lanadi, pufakchalar sirtga chiqib yorilib bug' hosil qiladi",
+        "Faqat sirt qatlami bug'lanadi",
+        "Temperatura ortishda davom etadi",
+        "Suyuqlik kondensatsiyalanadi"
+      ],
+      "t": 0,
+      "izoh": "Qaynashda butun hajmda temperatura tenglashadi, ko'tarilayotgan pufakchalar kichiklashmay sirtga chiqib yorilib, havoda bug' hosil qiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#4f7f00a7"
+    },
+    {
+      "q": "Suv uchun solishtirma bug'lanish issiqligi r = 2,3·10⁶ J/kg ekanini hisobga olib, 2 kg suvni qaynash temperaturasida to'la bug'ga aylantirish uchun zarur issiqlik qanday ifodalanadi?",
+      "v": [
+        "Q_b = 4,6·10⁶ J",
+        "Q_b = 2,3·10⁶ J",
+        "Q_b = 1,15·10⁶ J",
+        "Q_b = 9,2·10⁶ J"
+      ],
+      "t": 0,
+      "izoh": "Q_b = r·m = 2,3·10⁶·2 = 4,6·10⁶ J.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m40-buglanish-va-kondensatsiya#eb0c53a9"
+    }
+  ]
+}

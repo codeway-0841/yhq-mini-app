@@ -1,0 +1,1609 @@
+{
+  "nom": "To'g'ri chiziq va tekisliklarning parallelligi",
+  "bolim": "Stereometriya",
+  "blok": "ster",
+  "rasmiyBolim": 6,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Duradgor Anvar taxta qirrasini xona shifti tekisligiga parallel qilib o'rnatmoqchi. Qirra shift tekisligida yotmaydi. Quyidagi shartlardan qaysi biri bajarilsa, qirra shiftga albatta parallel bo'ladi?",
+      "v": [
+        "Qirra shift tekisligida yotuvchi biror to'g'ri chiziqqa parallel bo'lsa",
+        "Qirra shift tekisligidagi biror to'g'ri chiziqqa perpendikulyar bo'lsa",
+        "Qirra shift tekisligidagi biror to'g'ri chiziq bilan ayqash bo'lsa",
+        "Qirra shift tekisligidagi barcha to'g'ri chiziqlarga parallel bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri chiziq va tekislik parallelligi alomatiga ko'ra: tekislikda yotmagan to'g'ri chiziq shu tekislikdagi biror to'g'ri chiziqqa parallel bo'lsa, u tekislikka parallel bo'ladi. Perpendikulyarlik yoki ayqashlik parallellikni kafolatlamaydi, barcha chiziqlarga parallel bo'lish esa umuman mumkin emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffffff'/%3E%3Cpolygon points='20,175 200,175 280,135 100,135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='70' x2='245' y2='70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='158' x2='250' y2='158' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250' y='66' font-size='13' fill='%23334155'%3Eqirra%3C/text%3E%3Ctext x='254' y='170' font-size='13' fill='%23334155'%3Echiziq%3C/text%3E%3Ctext x='26' y='150' font-size='13' fill='%23334155'%3Eshift%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#52f2681d"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda A₁B₁ qirrasining ABCD asos tekisligiga parallel ekanini quyidagi mulohazalardan qaysi biri to'liq asoslaydi?",
+      "v": [
+        "A₁B₁ va CD chiziqlari ayqash",
+        "A₁B₁ ∥ AB, AB asos tekisligida yotadi, A₁B₁ esa yotmaydi",
+        "A₁B₁ qirrasi AA₁ qirrasiga perpendikulyar",
+        "A₁B₁ va BC qirralarining uzunliklari teng"
+      ],
+      "t": 1,
+      "izoh": "Alomat uch shartni talab qiladi: chiziq tekislikda yotmasin, tekislikda unga parallel chiziq bo'lsin. ABB₁A₁ yoqda A₁B₁ ∥ AB, AB esa ABCD da yotadi, A₁B₁ yotmaydi. Demak A₁B₁ ∥ (ABCD). Perpendikulyarlik yoki uzunliklar tengligi bunday xulosa bermaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#0634c268"
+    },
+    {
+      "q": "Toshkentdagi ko'p qavatli uyda lift shaxtasining qirrasi zinapoya panjarasining tayanchiga parallel. Panjara tayanchi butunlay qavat poli tekisligida yotadi, lift qirrasi esa polda yotmaydi. Bundan qanday xulosa chiqadi?",
+      "v": [
+        "Lift shaxtasining qirrasi pol tekisligini kesib o'tadi",
+        "Lift shaxtasining qirrasi qavat polida yotadi",
+        "Lift shaxtasining qirrasi qavat poli tekisligiga parallel",
+        "Bunday joylashuv fazoda umuman uchramaydi"
+      ],
+      "t": 2,
+      "izoh": "Lift qirrasi pol tekisligida yotmaydi, lekin shu tekislikda yotgan panjara tayanchiga parallel. Bu parallellik alomatining aynan sharti, demak qirra pol tekisligiga parallel bo'ladi va u bilan hech qanday umumiy nuqtaga ega emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#8de4b3fc"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel, b to'g'ri chiziq esa α tekislikda yotadi. a va b to'g'ri chiziqlarning o'zaro joylashuvi haqida nima deyish mumkin?",
+      "v": [
+        "Ular bitta nuqtada kesishishi ham mumkin",
+        "Ular albatta parallel bo'ladi",
+        "Ular albatta ayqash bo'ladi",
+        "Ular parallel yoki ayqash bo'ladi, lekin kesishmaydi"
+      ],
+      "t": 3,
+      "izoh": "a ∥ α bo'lgani uchun a chiziq α bilan umumiy nuqtaga ega emas. b butunlay α da yotadi, demak a va b kesisha olmaydi. Kesishmaydigan ikki to'g'ri chiziq esa yo bir tekislikda yotib parallel bo'ladi, yo bir tekislikda yotmay ayqash bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffffff'/%3E%3Cpolygon points='20,175 200,175 280,135 100,135' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='45' y1='70' x2='245' y2='70' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='70' y1='158' x2='250' y2='158' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='250' y='66' font-size='13' fill='%23334155'%3Ea%3C/text%3E%3Ctext x='254' y='170' font-size='13' fill='%23334155'%3Eb%3C/text%3E%3Ctext x='26' y='150' font-size='13' fill='%23334155'%3Eα%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#a60b40fc"
+    },
+    {
+      "q": "Ikki turli tekislikning o'zaro parallel ekanini isbotlash uchun quyidagi shartlardan qaysi biri yetarli hisoblanadi?",
+      "v": [
+        "Bir tekislikning kesishuvchi ikki to'g'ri chizig'i ikkinchi tekislikka parallel bo'lsa",
+        "Bir tekislikning bitta to'g'ri chizig'i ikkinchi tekislikka parallel bo'lsa",
+        "Bir tekislikning parallel ikki to'g'ri chizig'i ikkinchi tekislikka parallel bo'lsa",
+        "Ikkala tekislikda ham uzunligi teng kesmalar yotsa"
+      ],
+      "t": 0,
+      "izoh": "Ikki tekislik parallelligi alomati kesishuvchi ikki chiziqni talab qiladi. Bitta chiziq yoki o'zaro parallel ikki chiziq yetarli emas: bunday holda tekisliklar shu chiziqlarga parallel to'g'ri chiziq bo'ylab kesishishi mumkin. Kesma uzunliklari esa umuman shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='25,70 195,70 275,35 105,35' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,185 195,185 275,150 105,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='14' y='68' font-size='13' fill='%23334155'%3Eα%3C/text%3E%3Ctext x='14' y='183' font-size='13' fill='%23334155'%3Eβ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekisliklar-parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#f55144c0"
+    },
+    {
+      "q": "Ustaxonada ikkita stol qopqog'ining joylashuvi tekshirilmoqda. Birinchi qopqoq tekisligida yotgan va o'zaro kesishuvchi ikkita chiziq ikkinchi qopqoq tekisligiga parallel ekani aniqlandi. Bundan qanday xulosa kelib chiqadi?",
+      "v": [
+        "Qopqoqlar bitta tekislikda yotadi",
+        "Ikkala qopqoq tekisligi o'zaro parallel",
+        "Qopqoq tekisliklari bitta to'g'ri chiziq bo'ylab kesishadi",
+        "Berilgan ma'lumot xulosa chiqarish uchun yetarli emas"
+      ],
+      "t": 1,
+      "izoh": "Kesishuvchi ikki chiziqning ikkinchi tekislikka parallelligi — tekisliklar parallelligi alomatining to'liq sharti. Demak qopqoq tekisliklari parallel. Ular kesishsa edi, kesishish chizig'i ikkala chiziqni ham kesib o'tar edi, bu esa parallellikka zid.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='25,80 195,80 275,40 105,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='60' y1='70' x2='230' y2='55' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='90' y1='75' x2='200' y2='48' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekisliklar-parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2f46f1d5"
+    },
+    {
+      "q": "α va β turli ikki tekislik. α tekislikdagi kesishuvchi AB va AC chiziqlar mos ravishda β tekislikdagi MN va MK chiziqlarga parallel. Tekisliklar haqida to'g'ri xulosa qaysi?",
+      "v": [
+        "α va β ustma-ust tushadi",
+        "α va β bir to'g'ri chiziq bo'ylab kesishadi",
+        "α ∥ β",
+        "Xulosa uchun AB ∥ MK ham bo'lishi shart"
+      ],
+      "t": 2,
+      "izoh": "AB ∥ MN va MN ⊂ β bo'lgani uchun AB ∥ β. Xuddi shunday AC ∥ β. α tekislikda kesishuvchi ikki chiziq β ga parallel bo'ldi, bu alomat bo'yicha α ∥ β degani. Qo'shimcha shartlar talab qilinmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekisliklar-parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#0fd64e43"
+    },
+    {
+      "q": "Sardor «bir tekislikdagi ikkita chiziq ikkinchi tekislikka parallel bo'lsa, tekisliklar doim parallel» deb da'vo qilmoqda. Bu mulohaza qaysi holatda noto'g'ri bo'lib chiqadi?",
+      "v": [
+        "Mulohaza hech qachon noto'g'ri bo'lmaydi",
+        "O'sha ikki chiziq o'zaro kesishganda",
+        "O'sha ikki chiziq ayqash bo'lganda",
+        "O'sha ikki chiziq o'zaro parallel bo'lganda"
+      ],
+      "t": 3,
+      "izoh": "Alomat kesishuvchi ikki chiziqni talab qiladi. Chiziqlar o'zaro parallel bo'lsa, tekisliklar shu chiziqlarga parallel to'g'ri chiziq bo'ylab kesishishi mumkin, ya'ni da'vo buziladi. Bir tekislikda yotgan chiziqlar esa ayqash bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekisliklar-parallellik-alomati",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#8f0ca3d6"
+    },
+    {
+      "q": "Ikki parallel tekislikni uchinchi tekislik kesib o'tdi. Shunda hosil bo'lgan ikkita kesishish chizig'i o'zaro qanday joylashadi?",
+      "v": [
+        "Ular parallel bo'ladi",
+        "Ular ayqash bo'ladi",
+        "Ular bitta nuqtada kesishadi",
+        "Ular perpendikulyar bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Ikkala kesishish chizig'i ham kesuvchi uchinchi tekislikda yotadi, demak ular bir tekislikda. Ular kesisha olmaydi, chunki umumiy nuqta ikkala parallel tekislikka ham tegishli bo'lar edi. Bir tekislikdagi kesishmaydigan chiziqlar esa parallel.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='25,80 195,80 275,40 105,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='70,25 240,25 200,215 30,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='110' x2='222' y2='110' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='40' y1='170' x2='210' y2='170' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3Ctext x='248' y='30'%3Eγ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuv-chiziqlar-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#4c4aa54e"
+    },
+    {
+      "q": "Sardor issiqxonaning pol va shift tekisliklari o'zaro parallel ekanini biladi. Yon devor tekisligi ularning ikkalasini ham kesib o'tadi. Devorning pol va shift bilan kesishish chiziqlari qanday joylashadi?",
+      "v": [
+        "O'zaro perpendikulyar",
+        "O'zaro parallel",
+        "Bitta nuqtada kesishadi",
+        "Ayqash holatda"
+      ],
+      "t": 1,
+      "izoh": "Pol va shift parallel tekisliklar, devor esa ularni kesuvchi uchinchi tekislik. Parallel tekisliklarni uchinchi tekislik kessa, kesishish chiziqlari parallel bo'ladi. Shuning uchun devorning pastki va yuqori chiziqlari parallel, devor balandligi hamma joyda bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='25,80 195,80 275,40 105,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='70,25 240,25 200,215 30,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='110' x2='222' y2='110' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='170' x2='210' y2='170' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='14' y='78' font-size='13' fill='%23334155'%3Eshift%3C/text%3E%3Ctext x='14' y='198' font-size='13' fill='%23334155'%3Epol%3C/text%3E%3Ctext x='246' y='30' font-size='13' fill='%23334155'%3Edevor%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesishuv-chiziqlar-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#627df3fe"
+    },
+    {
+      "q": "Konteynerning pastki va yuqori asos tekisliklari o'zaro parallel. Qiya kesuvchi tekislik ikkala asosni ham kesib o'tdi va kesimda to'rtburchak hosil bo'ldi. Kesim shaklining ikkita qarama-qarshi tomoni haqida nima deyish mumkin?",
+      "v": [
+        "Ular bitta nuqtada kesishadi, shakl uchburchak bo'ladi",
+        "Ular o'zaro perpendikulyar, shakl to'g'ri to'rtburchak bo'ladi",
+        "Ular o'zaro parallel, shakl trapetsiya yoki parallelogramm bo'ladi",
+        "Ular ixtiyoriy joylashadi, shaklni aniqlab bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kesuvchi tekislikning pastki asos bilan kesishish chizig'i va yuqori asos bilan kesishish chizig'i parallel tekisliklardan hosil bo'lgani uchun o'zaro parallel. Kesim to'rtburchak bo'lgani sababli uning bu ikki tomoni parallel, demak u trapetsiya yoki parallelogramm bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='25,80 195,80 275,40 105,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='70,25 240,25 200,215 30,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='110' x2='222' y2='110' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='170' x2='210' y2='170' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='14' y='78' font-size='13' fill='%23334155'%3Eyuqori%3C/text%3E%3Ctext x='14' y='198' font-size='13' fill='%23334155'%3Epastki%3C/text%3E%3Ctext x='246' y='30' font-size='13' fill='%23334155'%3Ekesuvchi%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesishuv-chiziqlar-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b777c722"
+    },
+    {
+      "q": "α va β parallel tekisliklarni γ tekislik a va b chiziqlar bo'ylab, δ tekislik esa c va d chiziqlar bo'ylab kesadi. Bunda a va c chiziqlar parallel emas. U holda b va d chiziqlar qanday joylashadi?",
+      "v": [
+        "Ustma-ust tushadi",
+        "O'zaro parallel bo'ladi",
+        "Ayqash bo'ladi",
+        "Bitta nuqtada kesishadi"
+      ],
+      "t": 3,
+      "izoh": "Xossaga ko'ra a ∥ b va c ∥ d. b va d chiziqlarning ikkalasi ham β tekislikda yotadi, demak bir tekislikda va ayqash bo'la olmaydi. Agar b ∥ d bo'lsa edi, a ∥ c bo'lib chiqar edi, bu esa shartga zid. Demak ular kesishadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='25,80 195,80 275,40 105,40' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='70,25 240,25 200,215 30,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='52' y1='110' x2='222' y2='110' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cline x1='40' y1='170' x2='210' y2='170' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='14' y='78' font-size='13' fill='%23334155'%3Eα%3C/text%3E%3Ctext x='14' y='198' font-size='13' fill='%23334155'%3Eβ%3C/text%3E%3Ctext x='246' y='30' font-size='13' fill='%23334155'%3Eγ%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesishuv-chiziqlar-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#fb69c37f"
+    },
+    {
+      "q": "SABC piramidada M va N nuqtalar mos ravishda SA va SB yon qirralarining o'rtalari. MN kesma ABC asos tekisligiga nisbatan qanday joylashgan?",
+      "v": [
+        "Asos tekisligiga parallel",
+        "Asos tekisligida yotadi",
+        "Asos tekisligini kesib o'tadi",
+        "Asos tekisligiga perpendikulyar"
+      ],
+      "t": 0,
+      "izoh": "MN kesma SAB uchburchakning o'rta chizig'i, shuning uchun MN ∥ AB. AB to'g'ri chiziq ABC asos tekisligida yotadi, MN esa unda yotmaydi. Parallellik alomatiga ko'ra MN asos tekisligiga parallel.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 55,215 245,215 150,30'/%3E%3Cline x1='150' y1='30' x2='185' y2='175'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='55,215 185,175 245,215'/%3E%3C/g%3E%3Cline x1='102.5' y1='122.5' x2='197.5' y2='122.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='42' y='228'%3EA%3C/text%3E%3Ctext x='250' y='228'%3EB%3C/text%3E%3Ctext x='190' y='170'%3EC%3C/text%3E%3Ctext x='92' y='120'%3EM%3C/text%3E%3Ctext x='202' y='120'%3EN%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-chiziq-tekislikka-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#12168ecb"
+    },
+    {
+      "q": "Chodir shaklidagi piramidaning asos qirrasi AB uzunligi 24 dm. Yon qirralar SA va SB ning o'rtalarini tutashtiruvchi MN kesma AB ga parallel. MN kesmaning uzunligi necha detsimetr?",
+      "v": [
+        "24 dm",
+        "12 dm",
+        "48 dm",
+        "6 dm"
+      ],
+      "t": 1,
+      "izoh": "MN kesma SAB uchburchakning o'rta chizig'i. O'rta chiziq asosga parallel va uning yarmiga teng. Demak MN = 24 : 2 = 12 dm. Uzunlikni o'zgarmagan yoki ikki barobar deb olish tipik xato.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 50,215 250,215 150,30'/%3E%3Cline x1='150' y1='30' x2='190' y2='170'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='50,215 190,170 250,215'/%3E%3C/g%3E%3Cline x1='100' y1='122.5' x2='200' y2='122.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='38' y='228'%3EA%3C/text%3E%3Ctext x='255' y='228'%3EB%3C/text%3E%3Ctext x='195' y='166'%3EC%3C/text%3E%3Ctext x='90' y='120'%3EM%3C/text%3E%3Ctext x='205' y='120'%3EN%3C/text%3E%3Ctext x='150' y='234' text-anchor='middle'%3E24 dm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-tekislikka-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#f8197c3e"
+    },
+    {
+      "q": "ABCD tetraedrda K, L, M va N nuqtalar mos ravishda AB, BC, CD va DA qirralarining o'rtalari. KLMN to'rtburchak qanday shakl bo'lishini aniqlang.",
+      "v": [
+        "Deltoid",
+        "Faqat trapetsiya",
+        "Parallelogramm",
+        "Ixtiyoriy to'rtburchak"
+      ],
+      "t": 2,
+      "izoh": "KL kesma ABC uchburchakning o'rta chizig'i, demak KL ∥ AC va KL = AC : 2. NM kesma ADC uchburchakning o'rta chizig'i, demak NM ∥ AC va NM = AC : 2. Qarama-qarshi ikki tomon parallel va teng bo'lgani uchun KLMN parallelogramm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 50,215 250,215 150,30'/%3E%3Cline x1='150' y1='30' x2='185' y2='175'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='50,215 185,175 250,215'/%3E%3C/g%3E%3Cpolygon points='100,122.5 150,215 217.5,195 167.5,102.5' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3EA%3C/text%3E%3Ctext x='38' y='230'%3EB%3C/text%3E%3Ctext x='255' y='230'%3EC%3C/text%3E%3Ctext x='190' y='172'%3ED%3C/text%3E%3Ctext x='86' y='120'%3EK%3C/text%3E%3Ctext x='146' y='231'%3EL%3C/text%3E%3Ctext x='222' y='192'%3EM%3C/text%3E%3Ctext x='172' y='98'%3EN%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-chiziq-tekislikka-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#d1c97b29"
+    },
+    {
+      "q": "SABC piramidaning SA, SB va SC yon qirralarida SM : MA = SN : NB = SP : PC = 1 : 3 bo'ladigan M, N, P nuqtalar olingan. MNP tekisligi ABC asos tekisligiga nisbatan qanday joylashadi?",
+      "v": [
+        "Aniqlab bo'lmaydi, qo'shimcha ma'lumot kerak",
+        "Kesishadi, chunki nuqtalar qirralarning o'rtasida emas",
+        "Perpendikulyar, chunki nisbatlar teng",
+        "Parallel, chunki MN ∥ AB va MP ∥ AC"
+      ],
+      "t": 3,
+      "izoh": "Har bir qirrada SM : SA = SN : SB = SP : SC = 1 : 4. SAB uchburchakda tomonlarni bir xil nisbatda bo'luvchi nuqtalar orqali o'tgan MN chiziq AB ga parallel. Xuddi shunday MP ∥ AC. Kesishuvchi ikki chiziq ABC ga parallel bo'lgani uchun MNP ∥ ABC.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 50,215 250,215 150,30'/%3E%3Cline x1='150' y1='30' x2='190' y2='175'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='50,215 190,175 250,215'/%3E%3C/g%3E%3Cpolygon points='125,76.25 175,76.25 160,66.25' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='38' y='230'%3EA%3C/text%3E%3Ctext x='255' y='230'%3EB%3C/text%3E%3Ctext x='195' y='172'%3EC%3C/text%3E%3Ctext x='112' y='74'%3EM%3C/text%3E%3Ctext x='179' y='74'%3EN%3C/text%3E%3Ctext x='158' y='60'%3EP%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-chiziq-tekislikka-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#3121e6ba"
+    },
+    {
+      "q": "Uchta parallel devor orasidan ikkita qiya truba o'tkazilgan. Birinchi trubada devorlar kesib ajratgan bo'laklar 6 m va 9 m. Ikkinchi trubadagi mos birinchi bo'lak 8 m bo'lsa, uning ikkinchi bo'lagi necha metr?",
+      "v": [
+        "12 m",
+        "11 m",
+        "17 m",
+        "13,5 m"
+      ],
+      "t": 0,
+      "izoh": "Parallel tekisliklar ikki to'g'ri chiziqni proporsional kesmalarga ajratadi: 6 : 9 = 8 : x. Bundan 6·x = 72, ya'ni x = 12 m. Nisbat o'rniga ayirmani qo'shish 11 m, bo'laklarni qo'shish 17 m, nisbatni 8 m o'rniga 9 m ga qo'llash (9·1,5) esa 13,5 m xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,60 190,60 285,25 115,25'/%3E%3Cpolygon points='20,100 190,100 285,65 115,65'/%3E%3Cpolygon points='20,160 190,160 285,125 115,125'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='70' y1='42.5' x2='150' y2='142.5'/%3E%3Cline x1='200' y1='42.5' x2='140' y2='142.5'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='58' y='40'%3EA%3C/text%3E%3Ctext x='88' y='82'%3EB%3C/text%3E%3Ctext x='152' y='156'%3EC%3C/text%3E%3Ctext x='204' y='40'%3EM%3C/text%3E%3Ctext x='180' y='80'%3EN%3C/text%3E%3Ctext x='118' y='156'%3EK%3C/text%3E%3Ctext x='74' y='68'%3E6 m%3C/text%3E%3Ctext x='114' y='118'%3E9 m%3C/text%3E%3Ctext x='196' y='66'%3E8 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-kesma-nisbat",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#0b8529d1"
+    },
+    {
+      "q": "Uchta parallel tekislik ikkita ayqash to'g'ri chiziqni kesib o'tadi. Birinchi chiziqda hosil bo'lgan kesmalar nisbati 3 : 5. Ikkinchi chiziqdagi kesmalarning yig'indisi 32 sm bo'lsa, uning kichik kesmasi necha santimetr?",
+      "v": [
+        "20 sm",
+        "12 sm",
+        "16 sm",
+        "24 sm"
+      ],
+      "t": 1,
+      "izoh": "Parallel tekisliklar ikkala chiziqni ham bir xil nisbatda bo'ladi, demak ikkinchi chiziqdagi kesmalar ham 3 : 5 nisbatda. Yig'indi 8 ulushga to'g'ri keladi: 32 : 8 = 4 sm bir ulush. Kichik kesma 3·4 = 12 sm. Kattasini olish 20 sm, yarmini olish 16 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,60 190,60 285,25 115,25'/%3E%3Cpolygon points='20,105 190,105 285,70 115,70'/%3E%3Cpolygon points='20,180 190,180 285,145 115,145'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='75' y1='42.5' x2='155' y2='162.5'/%3E%3Cline x1='210' y1='42.5' x2='145' y2='162.5'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='62' y='40'%3EA%3C/text%3E%3Ctext x='96' y='86'%3EB%3C/text%3E%3Ctext x='158' y='176'%3EC%3C/text%3E%3Ctext x='214' y='40'%3EM%3C/text%3E%3Ctext x='188' y='84'%3EN%3C/text%3E%3Ctext x='122' y='176'%3EK%3C/text%3E%3Ctext x='80' y='70'%3E3%3C/text%3E%3Ctext x='122' y='130'%3E5%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "fales-kesma-nisbat",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#a5046c61"
+    },
+    {
+      "q": "Bino uchta parallel oraliq plita bilan bo'lingan. Qiya o'rnatilgan birinchi simyog'och oraliqlarda 4,5 m va 6 m bo'lak hosil qildi. Shu oraliqlarni kesuvchi ikkinchi simning birinchi bo'lagi 3 m bo'lsa, ikkinchi bo'lagi necha metr?",
+      "v": [
+        "6 m",
+        "4,5 m",
+        "4 m",
+        "2,25 m"
+      ],
+      "t": 2,
+      "izoh": "Parallel tekisliklar ikki chiziqni proporsional bo'ladi: 4,5 : 6 = 3 : x. Bundan 4,5·x = 18, ya'ni x = 4 m. Nisbatni teskari yozish 2,25 m ni, birinchi simning o'lchamlarini ko'chirish esa 4,5 m yoki 6 m xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,60 190,60 285,25 115,25'/%3E%3Cpolygon points='20,105 190,105 285,70 115,70'/%3E%3Cpolygon points='20,165 190,165 285,130 115,130'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cline x1='70' y1='42.5' x2='150' y2='147.5'/%3E%3Cline x1='205' y1='42.5' x2='145' y2='147.5'/%3E%3C/g%3E%3Ctext x='72' y='72' font-size='13' fill='%23334155'%3E4,5 m%3C/text%3E%3Ctext x='110' y='128' font-size='13' fill='%23334155'%3E6 m%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "fales-kesma-nisbat",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#070a8a91"
+    },
+    {
+      "q": "α ∥ β tekisliklar orasida uchlari shu tekisliklarda yotgan AB va CD kesmalar O nuqtada kesishadi. Bunda AO : OB = 2 : 3 va CO = 8 sm. CD kesmaning to'liq uzunligi necha santimetr?",
+      "v": [
+        "16 sm",
+        "12 sm",
+        "13,3 sm",
+        "20 sm"
+      ],
+      "t": 3,
+      "izoh": "AB va CD kesishgani uchun ular bitta tekislikni aniqlaydi. Bu tekislik α ni AC, β ni BD bo'ylab kesadi va xossaga ko'ra AC ∥ BD. Demak AO : OB = CO : OD = 2 : 3, bundan OD = 8·3 : 2 = 12 sm. To'liq uzunlik CD = 8 + 12 = 20 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,80 195,80 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cline x1='70' y1='60' x2='230' y2='180'/%3E%3Cline x1='200' y1='60' x2='35' y2='180'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='60' y='56'%3EA%3C/text%3E%3Ctext x='234' y='192'%3EB%3C/text%3E%3Ctext x='204' y='56'%3EC%3C/text%3E%3Ctext x='28' y='196'%3ED%3C/text%3E%3Ctext x='138' y='104'%3EO%3C/text%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "fales-kesma-nisbat",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#42a29ac9"
+    },
+    {
+      "q": "Ikki parallel tekislik orasida uchlari shu tekisliklarda yotgan va o'zaro parallel AB hamda CD kesmalar joylashgan. AB kesma 14 sm bo'lsa, CD kesmaning uzunligi necha santimetr?",
+      "v": [
+        "14 sm",
+        "7 sm",
+        "28 sm",
+        "Aniqlab bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "AB ∥ CD bo'lgani uchun ular bitta tekislikda yotadi. Bu tekislik parallel α va β ni AC va BD chiziqlar bo'ylab kesadi, demak AC ∥ BD. ABDC to'rtburchakda ikkala juft tomon parallel, ya'ni u parallelogramm. Parallelogrammda qarama-qarshi tomonlar teng: CD = 14 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,80 195,80 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='80' y1='60' x2='120' y2='180'/%3E%3Cline x1='180' y1='60' x2='220' y2='180'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='70' y='56'%3EA%3C/text%3E%3Ctext x='112' y='196'%3EB%3C/text%3E%3Ctext x='172' y='56'%3EC%3C/text%3E%3Ctext x='224' y='192'%3ED%3C/text%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3Ctext x='60' y='124'%3E14 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-tekisliklar-teng-kesma",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#bd98ccb2"
+    },
+    {
+      "q": "Omborning poli va shifti o'zaro parallel. Ikkita tayanch ustun bir-biriga parallel qilib o'rnatilgan, birinchisining uzunligi 320 sm. Ikkinchi ustunning uzunligi qancha bo'ladi?",
+      "v": [
+        "160 sm, chunki ikkinchisi o'rta chiziq vazifasini bajaradi",
+        "320 sm, chunki parallel tekisliklar orasidagi parallel kesmalar teng",
+        "640 sm, chunki uzunlik ikki barobar ortadi",
+        "Aniqlab bo'lmaydi, ustunlarning qiyaligi noma'lum"
+      ],
+      "t": 1,
+      "izoh": "Pol va shift parallel tekisliklar, ustunlar esa ular orasidagi parallel kesmalar. Ikki parallel kesma bitta tekislikni aniqlaydi va bu tekislik pol hamda shiftni parallel chiziqlar bo'ylab kesadi. Hosil bo'lgan parallelogrammda ustunlar qarama-qarshi tomonlar, demak ikkinchisi ham 320 sm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,80 195,80 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cline x1='80' y1='60' x2='120' y2='180'/%3E%3Cline x1='180' y1='60' x2='220' y2='180'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='70' y='56'%3EM%3C/text%3E%3Ctext x='112' y='196'%3EN%3C/text%3E%3Ctext x='172' y='56'%3EK%3C/text%3E%3Ctext x='224' y='192'%3EL%3C/text%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3Ctext x='58' y='124'%3E320 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallel-tekisliklar-teng-kesma",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#e3a31b50"
+    },
+    {
+      "q": "α ∥ β tekisliklar orasida AC va BD parallel kesmalar yotibdi, bunda A va B nuqtalar α tekislikda, C va D nuqtalar esa β tekislikda. ABDC to'rtburchak qanday shakl bo'ladi?",
+      "v": [
+        "Deltoid",
+        "Faqat trapetsiya",
+        "Parallelogramm",
+        "Faqat to'g'ri to'rtburchak"
+      ],
+      "t": 2,
+      "izoh": "AC ∥ BD bo'lgani uchun bu ikki kesma bitta tekislikda yotadi. Shu tekislik α va β parallel tekisliklarni AB va CD chiziqlar bo'ylab kesadi, xossaga ko'ra AB ∥ CD. Ikkala juft qarama-qarshi tomon parallel bo'lgani uchun ABDC parallelogramm.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,80 195,80 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cline x1='80' y1='60' x2='120' y2='180'/%3E%3Cline x1='180' y1='60' x2='220' y2='180'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='70' y='56'%3EA%3C/text%3E%3Ctext x='112' y='196'%3EC%3C/text%3E%3Ctext x='172' y='56'%3EB%3C/text%3E%3Ctext x='224' y='192'%3ED%3C/text%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='198'%3Eβ%3C/text%3E%3Ctext x='58' y='124'%3E%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallel-tekisliklar-teng-kesma",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#af698bb1"
+    },
+    {
+      "q": "Ikki parallel tekislik orasida uchlari shu tekisliklarda yotgan AB va CD kesmalar bor va ularning uzunliklari teng, ya'ni 18 sm. Bu kesmalar albatta o'zaro parallel bo'ladimi?",
+      "v": [
+        "Yo'q, ular albatta kesishadi",
+        "Ha, teng kesmalar har doim parallel bo'ladi",
+        "Ha, chunki tekisliklar o'zaro parallel",
+        "Yo'q, uzunliklar tengligi parallellikni kafolatlamaydi"
+      ],
+      "t": 3,
+      "izoh": "Xossa faqat bir tomonga ishlaydi: parallel kesmalar teng bo'ladi. Teskarisi o'rinli emas. Tekisliklar orasidagi masofadan uzunroq bo'lgan ikki qiya kesma turli yo'nalishda joylashib, uzunligi bir xil bo'lishi mumkin. Ular hatto ayqash ham bo'lishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallel-tekisliklar-teng-kesma",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#40397f3a"
+    },
+    {
+      "q": "Dala chetida elektr simi yer tekisligiga parallel qilib tortilgan. Simning bir nuqtasidan yergacha bo'lgan masofa 6,5 m. Simning boshqa nuqtasidan yergacha masofa necha metr bo'ladi?",
+      "v": [
+        "6,5 m",
+        "13 m",
+        "3,25 m",
+        "Simning uzunligiga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri chiziq tekislikka parallel bo'lsa, uning barcha nuqtalari tekislikdan bir xil uzoqlikda joylashadi. Bu chiziq va tekislik orasidagi masofa deb ataladi. Demak boshqa nuqtadan yergacha masofa ham 6,5 m ga teng bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23ffffff'/%3E%3Cpolygon points='20,170 200,170 280,130 100,130' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40' y1='70' x2='250' y2='70' stroke='%23334155' stroke-width='2'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='80' y1='70' x2='80' y2='152'/%3E%3Cline x1='210' y1='70' x2='210' y2='152'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='256' y='74'%3Ea%3C/text%3E%3Ctext x='24' y='128'%3Eα%3C/text%3E%3Ctext x='86' y='116'%3E6,5 m%3C/text%3E%3Ctext x='216' y='116'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b3bd6818"
+    },
+    {
+      "q": "To'g'ri chiziq tekislikka parallel bo'lgan holda ular orasidagi masofa qanday aniqlanadi?",
+      "v": [
+        "Chiziqning ikki uchidan tekislikkacha masofalar yig'indisi bilan",
+        "Chiziqning istalgan nuqtasidan tekislikka tushirilgan perpendikulyar uzunligi bilan",
+        "Chiziqdan tekislikkacha o'tkazilgan ixtiyoriy qiya kesma uzunligi bilan",
+        "Chiziq va tekislikdagi ixtiyoriy nuqta orasidagi masofa bilan"
+      ],
+      "t": 1,
+      "izoh": "Parallel chiziqning barcha nuqtalari tekislikdan bir xil uzoqlikda bo'ladi, shuning uchun masofa istalgan nuqtadan tushirilgan perpendikulyar bilan o'lchanadi. Qiya kesma perpendikulyardan uzun bo'ladi, ixtiyoriy nuqtagacha masofa esa umuman o'zgaruvchan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "chiziq-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#1a79b67f"
+    },
+    {
+      "q": "Angar ichida yer tekisligiga parallel qilib truba osilgan, uning polgacha bo'lgan masofasi 420 sm. Truba ostiga balandligi 375 sm bo'lgan yuk qo'yildi. Yuk bilan truba orasida necha santimetr bo'shliq qoladi?",
+      "v": [
+        "55 sm",
+        "795 sm",
+        "45 sm",
+        "35 sm"
+      ],
+      "t": 2,
+      "izoh": "Truba pol tekisligiga parallel bo'lgani uchun uning har bir nuqtasidan polgacha masofa 420 sm. Bo'shliq balandligi ayirma bilan topiladi: 420 − 375 = 45 sm. Masofalarni qo'shib yuborish 795 sm, ayirishda birlikni noto'g'ri ko'chirish esa 55 yoki 35 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='215' viewBox='0 0 300 215'%3E%3Crect width='300' height='215' fill='%23ffffff'/%3E%3Cpolygon points='20,190 200,190 280,155 100,155' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='40' y1='45' x2='260' y2='45' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Crect x='70' y='63' width='80' height='112' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='220' y1='45' x2='220' y2='172'/%3E%3C/g%3E%3Ctext x='226' y='116' font-size='13' fill='%23334155'%3E420 sm%3C/text%3E%3Ctext x='84' y='130' font-size='13' fill='%23334155'%3E375 sm%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "chiziq-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#21b0f511"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel va undagi A nuqtadan tekislikkacha masofa 7 sm. a chiziqdagi B nuqtadan α tekislikdagi ixtiyoriy M nuqtagacha bo'lgan masofa haqida nima deyish mumkin?",
+      "v": [
+        "U ixtiyoriy qiymatni qabul qilishi mumkin",
+        "U aynan 7 sm ga teng bo'ladi",
+        "U 7 sm dan katta bo'la olmaydi",
+        "U 7 sm dan kichik bo'la olmaydi"
+      ],
+      "t": 3,
+      "izoh": "Parallellik tufayli B nuqtadan ham tekislikkacha perpendikulyar 7 sm. Nuqtadan tekislikkacha eng qisqa masofa aynan perpendikulyar bilan o'lchanadi, har qanday qiya kesma undan uzun bo'ladi. Demak BM ≥ 7 sm, tenglik faqat M perpendikulyarning asosi bo'lganda bajariladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "chiziq-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#1bb9b731"
+    },
+    {
+      "q": "Ombor binosining poli va shifti tekisliklari o'zaro parallel. Poldagi bitta nuqtadan shiftgacha o'lchangan masofa 320 sm. Poldagi boshqa nuqtadan shiftgacha masofa necha santimetr bo'ladi?",
+      "v": [
+        "320 sm",
+        "160 sm",
+        "640 sm",
+        "Nuqtaning joylashuviga bog'liq"
+      ],
+      "t": 0,
+      "izoh": "Parallel tekisliklarning har biridagi barcha nuqtalar ikkinchi tekislikdan bir xil uzoqlikda joylashadi. Bu umumiy qiymat tekisliklar orasidagi masofa deyiladi. Shuning uchun poldagi qaysi nuqtani olmaylik, shiftgacha masofa 320 sm bo'lib qolaveradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cpolygon points='25,70 195,70 275,35 105,35' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='25,185 195,185 275,150 105,150' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Ctext x='14' y='68' font-size='13' fill='%23334155'%3Eshift%3C/text%3E%3Ctext x='14' y='183' font-size='13' fill='%23334155'%3Epol%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ikki-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#594858ba"
+    },
+    {
+      "q": "Ikki parallel tekislik orasidagi masofa 15 sm. Ular orasida uchlari shu tekisliklarda yotgan qiya kesma o'tkazilgan va uning uzunligi 25 sm. Bu kesmaning tekislikdagi proyeksiyasi necha santimetr?",
+      "v": [
+        "10 sm",
+        "20 sm",
+        "40 sm",
+        "29,2 sm"
+      ],
+      "t": 1,
+      "izoh": "Qiya kesma, uning proyeksiyasi va tekisliklar orasidagi perpendikulyar to'g'ri burchakli uchburchak hosil qiladi, bunda qiya kesma gipotenuza. Pifagor teoremasiga ko'ra proyeksiya = √(25² − 15²) = √400 = 20 sm. Uzunliklarni ayirish 10, qo'shish 40, kvadratlarni qo'shish esa 29,2 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,80 195,80 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,160 105,160'/%3E%3C/g%3E%3Cline x1='70' y1='60' x2='230' y2='180' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='70' y1='60' x2='70' y2='180'/%3E%3Cline x1='70' y1='180' x2='230' y2='180'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='60' y='56'%3EA%3C/text%3E%3Ctext x='234' y='192'%3EB%3C/text%3E%3Ctext x='46' y='126'%3E15 sm%3C/text%3E%3Ctext x='140' y='108'%3E25 sm%3C/text%3E%3Ctext x='14' y='78'%3Eα%3C/text%3E%3Ctext x='14' y='214'%3Eβ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#ea90f5a8"
+    },
+    {
+      "q": "Zavodda transportyor lentasi pol tekisligiga parallel plita ostidan o'tadi. Plita bilan pol orasidagi masofa 185 sm, lentaning qalinligi esa 12 sm. Lenta ustidagi yuk balandligi ko'pi bilan necha santimetr bo'lishi mumkin?",
+      "v": [
+        "185 sm",
+        "197 sm",
+        "173 sm",
+        "163 sm"
+      ],
+      "t": 2,
+      "izoh": "Plita polga parallel bo'lgani uchun ular orasidagi masofa hamma joyda 185 sm. Lentaning qalinligi bu bo'shliqdan olinadi: 185 − 12 = 173 sm. Qalinlikni qo'shib yuborish 197 sm, umuman hisobga olmaslik 185 sm, ayirishda adashish esa 163 sm javobini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ikki-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2ea560bb"
+    },
+    {
+      "q": "α va β parallel tekisliklar orasidagi masofa 24 sm. Ular orasida yotgan AB kesma α tekislik bilan 30° burchak tashkil qiladi. AB kesmaning uzunligi necha santimetr?",
+      "v": [
+        "41,6 sm",
+        "12 sm",
+        "27,7 sm",
+        "48 sm"
+      ],
+      "t": 3,
+      "izoh": "Kesmaning uchidan ikkinchi tekislikka perpendikulyar tushiramiz, u 24 sm ga teng va qarshi katet bo'ladi. sin30° = 24 : AB, bundan AB = 24 : 0,5 = 48 sm. Sinusga ko'paytirish 12 sm, kosinus ishlatish 27,7 sm, √3 ga ko'paytirish esa 41,6 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,80 190,80 275,50 105,50'/%3E%3Cpolygon points='20,176 190,176 275,146 105,146'/%3E%3C/g%3E%3Cline x1='60' y1='161' x2='226' y2='65' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='226' y1='65' x2='226' y2='161'/%3E%3Cline x1='60' y1='161' x2='226' y2='161'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='176'%3EA%3C/text%3E%3Ctext x='230' y='60'%3EB%3C/text%3E%3Ctext x='232' y='118'%3E24 sm%3C/text%3E%3Ctext x='86' y='150'%3E30°%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ikki-tekislik-masofa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#e3617873"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda ABCD asos tekisligiga parallel bo'lgan qirralar sonini aniqlang.",
+      "v": [
+        "4 ta",
+        "8 ta",
+        "6 ta",
+        "12 ta"
+      ],
+      "t": 0,
+      "izoh": "Yuqori asosning A₁B₁, B₁C₁, C₁D₁, D₁A₁ qirralari pastki asosning mos qirralariga parallel va ABCD da yotmaydi, demak ular tekislikka parallel. Pastki asosning to'rtta qirrasi tekislikning o'zida yotadi, ya'ni parallel deyilmaydi. To'rtta tik qirra esa tekislikni kesib o'tadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubda-parallel-sanash",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#d97eed00"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubning yoq tekisliklaridan nechtasi AA₁ qirrasiga parallel bo'ladi?",
+      "v": [
+        "4 ta",
+        "2 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Kubda oltita yoq bor. ABB₁A₁ va ADD₁A₁ yoqlari AA₁ qirrasining o'zini saqlaydi, demak parallel emas. ABCD va A₁B₁C₁D₁ asoslari AA₁ ni kesib o'tadi. Qolgan BCC₁B₁ va DCC₁D₁ yoqlarida AA₁ ga parallel qirralar bor, shuning uchun javob 2 ta.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cline x1='60' y1='200' x2='60' y2='90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubda-parallel-sanash",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#78198641"
+    },
+    {
+      "q": "Kubsimon qadoqlash qutisining qarama-qarshi yoqlari o'zaro parallel joylashgan. Bu qutida o'zaro parallel bo'lgan yoq tekisliklarining juftlari nechta bo'ladi?",
+      "v": [
+        "2 ta",
+        "6 ta",
+        "3 ta",
+        "4 ta"
+      ],
+      "t": 2,
+      "izoh": "Kubda oltita yoq bor va ular qarama-qarshi holda juftlanadi: pastki bilan yuqori, oldingi bilan orqa, chap bilan o'ng. Demak 6 : 2 = 3 ta juft hosil bo'ladi. Yoqlar sonini juftlar soni deb olish 6 ta xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kubda-parallel-sanash",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#13e00bfc"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda BD₁ fazoviy diagonali kubning nechta yoq tekisligiga parallel bo'lishini aniqlang.",
+      "v": [
+        "Uchta yoqqa parallel",
+        "Faqat ABCD yog'iga parallel",
+        "Ikkita qarama-qarshi yoqqa parallel",
+        "Hech qaysi yoq tekisligiga parallel emas"
+      ],
+      "t": 3,
+      "izoh": "B nuqta ABCD, ABB₁A₁ va BCC₁B₁ yoqlarida yotadi, D₁ nuqta esa A₁B₁C₁D₁, ADD₁A₁ va DCC₁D₁ yoqlarida yotadi. Demak kubning oltita yog'idan har birida diagonalning kamida bitta uchi bor. Umumiy nuqtasi bo'lgan chiziq va tekislik esa parallel bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cline x1='180' y1='200' x2='110' y2='55' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kubda-parallel-sanash",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b047aa00"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda AA₁ qirraning o'rtasidan asos tekisligiga parallel tekislik o'tkazildi. Hosil bo'lgan kesim qanday shakl bo'ladi?",
+      "v": [
+        "ABCD asosga teng parallelogramm",
+        "Asosdan ikki barobar kichik parallelogramm",
+        "Uchburchak",
+        "Trapetsiya"
+      ],
+      "t": 0,
+      "izoh": "Kesuvchi tekislik asosga parallel bo'lgani uchun u to'rtta yon yoqni kesadi. Har bir yon yoq tekisligida kesim chizig'i asos qirrasiga parallel bo'ladi, chunki parallel tekisliklarni uchinchi tekislik parallel chiziqlar bo'ylab kesadi. Natijada asos bilan aynan teng parallelogramm hosil bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,215 180,215 230,180'/%3E%3Cpolyline points='60,55 180,55 230,20 110,20 60,55'/%3E%3Cline x1='60' y1='215' x2='60' y2='55'/%3E%3Cline x1='180' y1='215' x2='180' y2='55'/%3E%3Cline x1='230' y1='180' x2='230' y2='20'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,180 110,180 60,215'/%3E%3Cline x1='110' y1='180' x2='110' y2='20'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cpolyline points='60,135 180,135 230,100'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,100 110,100 60,135'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='230'%3EA%3C/text%3E%3Ctext x='182' y='230'%3EB%3C/text%3E%3Ctext x='236' y='188'%3EC%3C/text%3E%3Ctext x='96' y='195'%3ED%3C/text%3E%3Ctext x='44' y='51'%3EA₁%3C/text%3E%3Ctext x='184' y='51'%3EB₁%3C/text%3E%3Ctext x='236' y='17'%3EC₁%3C/text%3E%3Ctext x='94' y='15'%3ED₁%3C/text%3E%3Ctext x='42' y='139'%3EM%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-parallel-kesim",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#da962d63"
+    },
+    {
+      "q": "To'g'ri burchakli tsisternaning qirralari 8 dm, 5 dm va 12 dm. Uning 8 dm va 5 dm li qirralar bilan aniqlangan asosiga parallel tekislik bilan kesilgan kesimning yuzi necha kvadrat detsimetr?",
+      "v": [
+        "60 dm²",
+        "40 dm²",
+        "96 dm²",
+        "20 dm²"
+      ],
+      "t": 1,
+      "izoh": "Asosga parallel kesim asosga teng to'g'ri to'rtburchak bo'ladi, chunki parallel tekisliklarni yon yoqlar parallel chiziqlar bo'ylab kesadi. Demak kesim yuzi 8·5 = 40 dm². Boshqa qirra juftlarini olish 60 yoki 96 dm², yuzani ikkiga bo'lish esa 20 dm² xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290' height='250' viewBox='0 0 290 250'%3E%3Crect width='290' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='70,220 150,220 180,194'/%3E%3Cpolyline points='70,100 150,100 180,74 100,74 70,100'/%3E%3Cline x1='70' y1='220' x2='70' y2='100'/%3E%3Cline x1='150' y1='220' x2='150' y2='100'/%3E%3Cline x1='180' y1='194' x2='180' y2='74'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='180,194 100,194 70,220'/%3E%3Cline x1='100' y1='194' x2='100' y2='74'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cpolyline points='70,160 150,160 180,134'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='180,134 100,134 70,160'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='95' y='238'%3E8 dm%3C/text%3E%3Ctext x='156' y='218'%3E5 dm%3C/text%3E%3Ctext x='30' y='165'%3E12 dm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "parallelepiped-parallel-kesim",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#33c0d4a6"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda BCC₁B₁ yog'iga parallel qilib tekislik o'tkazildi. Hosil bo'lgan kesim shu yoq bilan qanday munosabatda bo'ladi?",
+      "v": [
+        "Undan katta trapetsiya bo'ladi",
+        "Undan kichik uchburchak bo'ladi",
+        "Unga teng parallelogramm bo'ladi",
+        "Kesim umuman hosil bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Kesuvchi tekislik BCC₁B₁ ga parallel, demak u ADD₁A₁ yog'iga ham parallel. Bu tekislik asos va yuqori yoqni kesib, kesim chiziqlari BC va B₁C₁ ga parallel bo'ladi. Yon qirralar tenglashib, kesim BCC₁B₁ ga teng parallelogramm chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='55,215 185,215 235,180'/%3E%3Cpolyline points='55,60 185,60 235,25 105,25 55,60'/%3E%3Cline x1='55' y1='215' x2='55' y2='60'/%3E%3Cline x1='185' y1='215' x2='185' y2='60'/%3E%3Cline x1='235' y1='180' x2='235' y2='25'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='235,180 105,180 55,215'/%3E%3Cline x1='105' y1='180' x2='105' y2='25'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cpolyline points='120,215 120,60'/%3E%3Cpolyline points='120,60 170,25'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='170,25 170,180 120,215'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "parallelepiped-parallel-kesim",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b746ce85"
+    },
+    {
+      "q": "Uzunligi 30 sm, eni 20 sm va balandligi 24 sm bo'lgan quti qopqoq tekisligiga parallel qilib kesildi. Kesim yuzi qutining eng katta yon yog'i yuzasidan necha kvadrat santimetrga kichik?",
+      "v": [
+        "1320 sm²",
+        "600 sm²",
+        "720 sm²",
+        "120 sm²"
+      ],
+      "t": 3,
+      "izoh": "Qopqoqqa parallel kesim qopqoqqa teng bo'ladi: 30·20 = 600 sm². Eng katta yon yoq uzunlik va balandlikdan tuziladi: 30·24 = 720 sm². Farq 720 − 600 = 120 sm². Faqat bitta yuzani yozish 600 yoki 720, ularni qo'shish esa 1320 sm² xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='290' height='250' viewBox='0 0 290 250'%3E%3Crect width='290' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='45,210 195,210 245,175'/%3E%3Cpolyline points='45,90 195,90 245,55 95,55 45,90'/%3E%3Cline x1='45' y1='210' x2='45' y2='90'/%3E%3Cline x1='195' y1='210' x2='195' y2='90'/%3E%3Cline x1='245' y1='175' x2='245' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='245,175 95,175 45,210'/%3E%3Cline x1='95' y1='175' x2='95' y2='55'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cpolyline points='45,150 195,150 245,115'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='110' y='228'%3E30 sm%3C/text%3E%3Ctext x='212' y='202'%3E20 sm%3C/text%3E%3Ctext x='16' y='155'%3E24 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "parallelepiped-parallel-kesim",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#4b4658f7"
+    },
+    {
+      "q": "SABC piramidaning asos tomoni AB uzunligi 36 sm. Piramida uchidan asosgacha bo'lgan balandlikning o'rtasidan asosga parallel kesim o'tkazildi. Kesimning AB ga mos tomoni necha santimetr?",
+      "v": [
+        "18 sm",
+        "36 sm",
+        "9 sm",
+        "72 sm"
+      ],
+      "t": 0,
+      "izoh": "Asosga parallel kesim asosga o'xshash shakl beradi. O'xshashlik koeffitsienti uchidan hisoblangan balandliklar nisbatiga teng, ya'ni 1 : 2. Demak mos tomon 36 : 2 = 18 sm. Tomonni o'zgarmagan deb olish 36 sm, koeffitsientni kvadratga ko'tarish esa 9 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 45,215 255,215 150,30'/%3E%3Cline x1='150' y1='30' x2='195' y2='180'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='45,215 195,180 255,215'/%3E%3C/g%3E%3Cline x1='97.5' y1='122.5' x2='202.5' y2='122.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='150' y1='30' x2='150' y2='215'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='33' y='230'%3EA%3C/text%3E%3Ctext x='260' y='230'%3EB%3C/text%3E%3Ctext x='200' y='176'%3EC%3C/text%3E%3Ctext x='150' y='234' text-anchor='middle'%3E36 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "piramida-parallel-kesim-oxshashlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#59a2ab3c"
+    },
+    {
+      "q": "Chodir shaklidagi piramidaning asos yuzi 144 m². Piramida uchidan hisoblaganda balandlikning uchdan bir qismida asosga parallel kesim o'tkazildi. Kesimning yuzi necha kvadrat metr bo'ladi?",
+      "v": [
+        "48 m²",
+        "16 m²",
+        "12 m²",
+        "36 m²"
+      ],
+      "t": 1,
+      "izoh": "Kesim asosga o'xshash, o'xshashlik koeffitsienti k = 1/3. O'xshash shakllarning yuzalari nisbati koeffitsient kvadratiga teng: 1 : 9. Demak kesim yuzi 144 : 9 = 16 m². Yuzani uchga bo'lish 48 m², koeffitsientni kvadratga ko'tarmaslik esa boshqa xato javoblarni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 45,215 255,215 150,30'/%3E%3Cline x1='150' y1='30' x2='195' y2='180'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='45,215 195,180 255,215'/%3E%3C/g%3E%3Cline x1='115' y1='91.7' x2='185' y2='91.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='150' y1='30' x2='150' y2='215'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='150' y='234' text-anchor='middle'%3Easos yuzi 144 m²%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-parallel-kesim-oxshashlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#872b7a2d"
+    },
+    {
+      "q": "Piramidaning asosiga parallel o'tkazilgan kesimning yuzi asos yuzidan to'rt marta kichik chiqdi. Kesim tekisligi piramida uchidan asosgacha bo'lgan balandlikning qaysi qismidan o'tgan?",
+      "v": [
+        "Uchdan bir qismidan",
+        "To'rtdan bir qismidan",
+        "Yarmidan",
+        "Sakkizdan bir qismidan"
+      ],
+      "t": 2,
+      "izoh": "Kesim asosga o'xshash, yuzalar nisbati o'xshashlik koeffitsienti kvadratiga teng. Shartga ko'ra k² = 1/4, bundan k = 1/2. Koeffitsient uchidan hisoblangan balandliklar nisbatiga teng bo'lgani uchun kesim balandlikning o'rtasidan o'tgan. Yuza nisbatini to'g'ridan-to'g'ri olish to'rtdan bir xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 45,215 255,215 150,30'/%3E%3Cline x1='150' y1='30' x2='195' y2='180'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='45,215 195,180 255,215'/%3E%3C/g%3E%3Cline x1='150' y1='30' x2='165' y2='203' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='170' y='130'%3Eh%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "piramida-parallel-kesim-oxshashlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#1f11e1ab"
+    },
+    {
+      "q": "Piramidasimon bunkerning to'la balandligi 45 sm. Uni asosga parallel tekislik bilan shunday kesish kerakki, yuqori bo'lakning asos yuzi bunker asosi yuzasidan to'qqiz marta kichik bo'lsin. Kesim asosdan necha santimetr balandlikda o'tkaziladi?",
+      "v": [
+        "40 sm",
+        "15 sm",
+        "5 sm",
+        "30 sm"
+      ],
+      "t": 3,
+      "izoh": "Yuzalar nisbati 1 : 9 bo'lgani uchun o'xshashlik koeffitsienti k = 1/3. Demak kesim uchidan 45 : 3 = 15 sm masofada. Savolda esa asosdan hisoblangan balandlik so'ralgan: 45 − 15 = 30 sm. Uchidan hisoblanganini yozish 15 sm, balandlikni to'qqizga bo'lish esa 5 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 45,215 255,215 150,30'/%3E%3Cline x1='150' y1='30' x2='195' y2='180'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='45,215 195,180 255,215'/%3E%3C/g%3E%3Cline x1='115' y1='91.7' x2='185' y2='91.7' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='150' y1='30' x2='150' y2='215'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='156' y='130'%3E45 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "piramida-parallel-kesim-oxshashlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#abae0b9f"
+    },
+    {
+      "q": "Kesuvchi tekislik parallelepipedning ikkita qarama-qarshi yog'ini kesib o'tsa, shu yoqlardagi kesim chiziqlari o'zaro qanday joylashadi?",
+      "v": [
+        "O'zaro parallel bo'ladi",
+        "O'zaro perpendikulyar bo'ladi",
+        "Bitta nuqtada kesishadi",
+        "Ayqash bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Parallelepipedning qarama-qarshi yoqlari parallel tekisliklarda yotadi. Ikki parallel tekislikni uchinchi tekislik kesganda kesishish chiziqlari parallel bo'ladi. Ikkala chiziq ham kesuvchi tekislikda yotgani uchun ular ayqash bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-parallelogramm",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#0e3e0988"
+    },
+    {
+      "q": "Parallelepipedning to'rtta yon yog'ini kesib o'tgan tekislik kesimida qanday to'rtburchak hosil bo'ladi va buning sababi nima?",
+      "v": [
+        "Trapetsiya, chunki faqat bir juft tomon parallel bo'ladi",
+        "Parallelogramm, chunki qarama-qarshi yoqlardagi kesim chiziqlari juft-juft parallel",
+        "Deltoid, chunki qo'shni tomonlar o'zaro teng",
+        "To'g'ri to'rtburchak, chunki yoqlar o'zaro perpendikulyar"
+      ],
+      "t": 1,
+      "izoh": "To'rtta yon yoq ikki juft parallel tekislikni tashkil qiladi. Kesuvchi tekislik birinchi juftni parallel ikki chiziq bo'ylab, ikkinchi juftni ham parallel ikki chiziq bo'ylab kesadi. Ikkala juft qarama-qarshi tomoni parallel bo'lgan to'rtburchak esa parallelogrammdir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='55,215 185,215 235,180'/%3E%3Cpolyline points='55,60 185,60 235,25 105,25 55,60'/%3E%3Cline x1='55' y1='215' x2='55' y2='60'/%3E%3Cline x1='185' y1='215' x2='185' y2='60'/%3E%3Cline x1='235' y1='180' x2='235' y2='25'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='235,180 105,180 55,215'/%3E%3Cline x1='105' y1='180' x2='105' y2='25'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cpolyline points='55,170 185,120 235,85'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='235,85 105,135 55,170'/%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-parallelogramm",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#511b808e"
+    },
+    {
+      "q": "Usta g'ishtsimon yog'och blokni tekis arra bilan to'rtta yon yog'ini kesib o'tadigan qilib qiya kesdi. Hosil bo'lgan kesim yuzasining shakli qanday bo'ladi?",
+      "v": [
+        "Muntazam beshburchak",
+        "Uchburchak",
+        "Parallelogramm",
+        "Har xil shakl, oldindan aytib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Blokning qarama-qarshi yon yoqlari parallel tekisliklarda yotadi. Arra tekisligi bu juftlarni parallel chiziqlar bo'ylab kesadi. Natijada to'rtburchakning ikkala juft qarama-qarshi tomoni parallel bo'ladi, ya'ni kesim parallelogramm chiqadi. To'rtta yoq kesilgani uchun uchburchak yoki beshburchak bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-parallelogramm",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#d5721d3f"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ parallelepipedda uchlari A, B₁, C₁ va D nuqtalarda bo'lgan to'rtburchak qaraladi. Bu to'rtburchakning qanday shakl ekanini aniqlang.",
+      "v": [
+        "Uchlari bir tekislikda yotmaydi",
+        "Faqat trapetsiya",
+        "Ixtiyoriy to'rtburchak",
+        "Parallelogramm"
+      ],
+      "t": 3,
+      "izoh": "AD kesma BC ga parallel va teng, B₁C₁ kesma ham BC ga parallel va teng. Demak AD ∥ B₁C₁ va AD = B₁C₁. Bir juft qarama-qarshi tomoni parallel hamda teng bo'lgan to'rtburchak parallelogramm bo'ladi; shu bilan birga uchta nuqta orqali tekislik o'tgani uchun shakl yassi ekani ham kelib chiqadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='55,215 185,215 235,180'/%3E%3Cpolyline points='55,60 185,60 235,25 105,25 55,60'/%3E%3Cline x1='55' y1='215' x2='55' y2='60'/%3E%3Cline x1='185' y1='215' x2='185' y2='60'/%3E%3Cline x1='235' y1='180' x2='235' y2='25'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='235,180 105,180 55,215'/%3E%3Cline x1='105' y1='180' x2='105' y2='25'/%3E%3C/g%3E%3Cpolygon points='55,215 185,60 235,25 105,180' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesim-parallelogramm",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b0725aae"
+    },
+    {
+      "q": "Piramidaning yon yog'i asosga parallel tekislik bilan kesilganda, yoqning kesim chizig'idan pastda qolgan qismi qanday shakl bo'ladi?",
+      "v": [
+        "Trapetsiya",
+        "Parallelogramm",
+        "Uchburchak",
+        "Kvadrat"
+      ],
+      "t": 0,
+      "izoh": "Yon yoq uchburchak. Kesuvchi tekislik asosga parallel bo'lgani uchun uning yoq bilan kesishish chizig'i asos qirrasiga parallel chiqadi. Uchburchakdan asosga parallel chiziq bilan ajratilgan pastki qism ikkita parallel tomonga ega, ya'ni trapetsiya bo'ladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 45,215 255,215 150,30'/%3E%3Cline x1='150' y1='30' x2='195' y2='180'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='45,215 195,180 255,215'/%3E%3C/g%3E%3Cline x1='114.98108108108107' y1='91.7' x2='185.01891891891893' y2='91.7' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Ctext x='144' y='24' font-size='13' fill='%23334155'%3ES%3C/text%3E%3Ctext x='150' y='234' font-size='13' fill='%23334155'%3E%3C/text%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kesim-trapetsiya",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#3811359d"
+    },
+    {
+      "q": "Piramidasimon tomning yon yog'i asos tomoni 4 m bo'lgan uchburchak. Uchidan hisoblanganda balandlikning to'rtdan bir qismida asosga parallel kesim o'tkazildi. Hosil bo'lgan trapetsiyaning kichik asosi necha metr?",
+      "v": [
+        "2 m",
+        "1 m",
+        "3 m",
+        "4 m"
+      ],
+      "t": 1,
+      "izoh": "Kesim chizig'i asosga parallel bo'lgani uchun kichik uchburchak katta uchburchakka o'xshash. O'xshashlik koeffitsienti 1 : 4, demak kichik asos 4 : 4 = 1 m. Balandlikni ikkiga bo'lish 2 m, qolgan uchdan uch qismini olish esa 3 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cpolygon points='150,30 45,215 255,215' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='123.75' y1='76.25' x2='176.25' y2='76.25' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='150' y1='30' x2='150' y2='215' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3ES%3C/text%3E%3Ctext x='33' y='230'%3EA%3C/text%3E%3Ctext x='260' y='230'%3EB%3C/text%3E%3Ctext x='150' y='234' text-anchor='middle'%3E4 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-trapetsiya",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#39b4327b"
+    },
+    {
+      "q": "Kesik piramidaning yon yog'i qanday shakl bo'ladi va bu xulosa qaysi xossaga tayanadi?",
+      "v": [
+        "Uchburchak, chunki piramidaning uchi kesilgan",
+        "Parallelogramm, chunki asoslar o'zaro teng",
+        "Trapetsiya, chunki ikkala asos parallel tekisliklarda yotadi",
+        "To'g'ri to'rtburchak, chunki yon qirralar tik joylashgan"
+      ],
+      "t": 2,
+      "izoh": "Kesik piramidaning asoslari parallel tekisliklarda yotadi. Yon yoq tekisligi bu ikki parallel tekislikni kesib o'tadi, demak kesishish chiziqlari o'zaro parallel. Ammo ular teng emas, chunki yuqori asos kichikroq. Bir juft tomoni parallel, ikkinchisi esa parallel bo'lmagan to'rtburchak trapetsiyadir.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='40,210 250,210 215.5,70 84.5,70 40,210'/%3E%3Cline x1='84.5' y1='70' x2='215.5' y2='70'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='28' y='226'%3EA%3C/text%3E%3Ctext x='254' y='226'%3EB%3C/text%3E%3Ctext x='76' y='64'%3EM%3C/text%3E%3Ctext x='218' y='64'%3EN%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kesim-trapetsiya",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#0dd30250"
+    },
+    {
+      "q": "Kesik piramida shaklidagi guldonning pastki asos tomoni 24 sm, yuqori asos tomoni esa 15 sm. Yon yoq trapetsiyasining o'rta chizig'i necha santimetrga teng?",
+      "v": [
+        "4,5 sm",
+        "39 sm",
+        "9 sm",
+        "19,5 sm"
+      ],
+      "t": 3,
+      "izoh": "Yon yoq trapetsiya bo'lib, uning asoslari 24 sm va 15 sm. Trapetsiya o'rta chizig'i asoslar yig'indisining yarmiga teng: (24 + 15) : 2 = 39 : 2 = 19,5 sm. Yig'indini ikkiga bo'lmaslik 39 sm, ayirmani olish 9 sm, ayirmaning yarmini olish esa 4,5 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='40,195 250,195 215.5,55 84.5,55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='62.25' y1='125' x2='232.75' y2='125' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='145' y='213' text-anchor='middle'%3E24 sm%3C/text%3E%3Ctext x='150' y='48' text-anchor='middle'%3E15 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kesim-trapetsiya",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#1e68df91"
+    },
+    {
+      "q": "Fazodagi parallellik haqidagi quyidagi mulohazalardan qaysi biri har doim to'g'ri bo'ladi?",
+      "v": [
+        "Bitta tekislikka parallel bo'lgan ikki tekislik o'zaro parallel",
+        "Bitta tekislikka parallel bo'lgan ikki to'g'ri chiziq o'zaro parallel",
+        "Bitta to'g'ri chiziqqa parallel bo'lgan ikki tekislik o'zaro parallel",
+        "Tekislikka parallel chiziq shu tekislikdagi barcha chiziqlarga parallel"
+      ],
+      "t": 0,
+      "izoh": "Bir tekislikka parallel ikki tekislik kesishsa edi, kesishish chizig'i orqali ziddiyat kelib chiqar edi, shuning uchun birinchi mulohaza to'g'ri. Bir tekislikka parallel ikki chiziq esa kesishishi yoki ayqash bo'lishi mumkin. Bir chiziqqa parallel ikki tekislik ham kesishishi mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mulohaza-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#5fb44703"
+    },
+    {
+      "q": "Quyida keltirilgan to'rtta mulohazadan qaysi biri noto'g'ri ekanini aniqlang.",
+      "v": [
+        "Parallel tekisliklarni kesuvchi tekislik parallel kesishish chiziqlarini hosil qiladi",
+        "Tekislikka parallel chiziqqa parallel bo'lgan har qanday chiziq ham shu tekislikka parallel",
+        "Parallel tekisliklar orasidagi parallel kesmalar o'zaro teng",
+        "Tekislikdan tashqaridagi nuqtadan unga parallel yagona tekislik o'tadi"
+      ],
+      "t": 1,
+      "izoh": "Tekislikka parallel chiziqqa parallel bo'lgan chiziq haqidagi mulohazada muhim shart tushib qolgan: ikkinchi chiziq tekislikning o'zida yotishi ham mumkin, u holda u tekislikka parallel deb aytilmaydi. Qolgan uchta mulohaza parallel tekisliklarning isbotlangan xossalari bo'lib, ular har doim o'rinli.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "mulohaza-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#1158037d"
+    },
+    {
+      "q": "Malika «ikki tekislik bitta to'g'ri chiziqqa parallel bo'lsa, ular o'zaro parallel» deb da'vo qildi. Bahodir unga qarshi misol keltirdi. Bu misol qanday bo'lishi mumkin?",
+      "v": [
+        "Bir xil balandlikdagi ikki parallel devor",
+        "Bir-biriga tegmaydigan pol va shift tekisliklari",
+        "Bitta tik qirrada kesishuvchi ikki devor, ikkalasi ham lift shaxtasining tik chizig'iga parallel",
+        "Bunday qarshi misolni umuman keltirib bo'lmaydi"
+      ],
+      "t": 2,
+      "izoh": "Ikki tekislik bir chiziqqa parallel bo'lsa ham kesishishi mumkin, faqat kesishish chizig'i o'sha chiziqqa parallel bo'ladi. Tik qirrada uchrashgan ikki devor aynan shunday: ikkalasi ham tik chiziqqa parallel, lekin ular parallel emas, balki kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "mulohaza-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#aec267d7"
+    },
+    {
+      "q": "α tekislik β tekislikka parallel, γ tekislik esa α ni biror to'g'ri chiziq bo'ylab kesib o'tadi. γ va β tekisliklar orasidagi munosabat qanday bo'ladi?",
+      "v": [
+        "γ tekislik β ga perpendikulyar bo'ladi",
+        "γ tekislik β ga parallel bo'lib qoladi",
+        "γ tekislik β ni kesmasligi ham mumkin",
+        "γ tekislik β ni ham kesadi, kesishish chiziqlari o'zaro parallel"
+      ],
+      "t": 3,
+      "izoh": "Agar γ tekislik β ga parallel bo'lsa edi, α ham β ga parallel bo'lgani uchun γ va α parallel bo'lib qolar edi, bu esa ularning kesishishiga zid. Demak γ tekislik β ni ham kesadi. Parallel α va β ni kesgani uchun kesishish chiziqlari o'zaro parallel bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "mulohaza-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#5026e976"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel, b chiziq esa shu tekislikda yotadi. Ular kesishmadi va parallel ham emasligi aniqlandi. U holda a va b qanday holatda?",
+      "v": [
+        "Ayqash holatda",
+        "Parallel holatda",
+        "Kesishuvchi holatda",
+        "Ustma-ust tushgan holatda"
+      ],
+      "t": 0,
+      "izoh": "a chiziq α bilan umumiy nuqtaga ega emas, demak u b bilan ham kesisha olmaydi. Kesishmaydigan chiziqlar yo bir tekislikda yotib parallel bo'ladi, yo bir tekislikda yotmaydi. Parallellik shart bo'yicha rad etilgan, demak a va b ayqash chiziqlardir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayqash-holat-farq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2257c7fd"
+    },
+    {
+      "q": "ABCDA₁B₁C₁D₁ kubda A₁B₁ qirra ABCD asos tekisligiga parallel. Asosning qaysi ikkita qirrasi A₁B₁ bilan ayqash holatda bo'ladi?",
+      "v": [
+        "AB va CD qirralari",
+        "BC va AD qirralari",
+        "AB va BC qirralari",
+        "CD va AD qirralari"
+      ],
+      "t": 1,
+      "izoh": "A₁B₁ qirra AB va CD ga parallel, chunki ular bir yo'nalishda. BC va AD qirralari esa A₁B₁ bilan kesishmaydi va unga parallel emas, chunki boshqa yo'nalishda hamda boshqa tekislikda yotadi. Kesishmaydigan va parallel bo'lmagan chiziqlar ayqash deyiladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='60,200 180,200 230,165'/%3E%3Cpolyline points='60,90 180,90 230,55 110,55 60,90'/%3E%3Cline x1='60' y1='200' x2='60' y2='90'/%3E%3Cline x1='180' y1='200' x2='180' y2='90'/%3E%3Cline x1='230' y1='165' x2='230' y2='55'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='230,165 110,165 60,200'/%3E%3Cline x1='110' y1='165' x2='110' y2='55'/%3E%3C/g%3E%3Cline x1='60' y1='90' x2='180' y2='90' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='50' y='215'%3EA%3C/text%3E%3Ctext x='182' y='215'%3EB%3C/text%3E%3Ctext x='236' y='173'%3EC%3C/text%3E%3Ctext x='96' y='180'%3ED%3C/text%3E%3Ctext x='44' y='86'%3EA₁%3C/text%3E%3Ctext x='184' y='86'%3EB₁%3C/text%3E%3Ctext x='236' y='52'%3EC₁%3C/text%3E%3Ctext x='94' y='50'%3ED₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "ayqash-holat-farq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#3c90265b"
+    },
+    {
+      "q": "Ko'chadagi elektr simi yer tekisligiga parallel tortilgan, yo'lak chetidagi bo'yoq chizig'i esa yer tekisligida yotadi. Sim va chiziq bir yo'nalishda emas. Ular fazoda qanday joylashgan?",
+      "v": [
+        "Kesishuvchi chiziqlar",
+        "Parallel chiziqlar",
+        "Ayqash chiziqlar",
+        "Ustma-ust tushuvchi chiziqlar"
+      ],
+      "t": 2,
+      "izoh": "Sim yer tekisligiga parallel bo'lgani uchun u tekislikdagi hech bir nuqta bilan uchrashmaydi, demak bo'yoq chizig'ini ham kesib o'tmaydi. Yo'nalishlari har xil bo'lgani uchun ular parallel ham emas. Kesishmaydigan va parallel bo'lmagan ikki chiziq ayqash hisoblanadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "ayqash-holat-farq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#ca1d95c7"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel. α tekislikda a ga parallel bo'lgan chiziqlar nechta va tekislikning qolgan chiziqlari a bilan qanday joylashadi?",
+      "v": [
+        "Tekislikning barcha chiziqlari a ga parallel",
+        "Parallel chiziq faqat bitta, qolganlari a ni kesib o'tadi",
+        "Parallel chiziq umuman mavjud emas",
+        "Parallel chiziqlar cheksiz ko'p, qolganlari a bilan ayqash"
+      ],
+      "t": 3,
+      "izoh": "a orqali o'tuvchi har bir tekislik α ni biror chiziq bo'ylab kesadi va bu kesishish chizig'i a ga parallel bo'ladi. Bunday tekisliklar cheksiz ko'p, demak parallel chiziqlar ham cheksiz ko'p va ular o'zaro parallel. Qolgan chiziqlar a ni kesmaydi hamda unga parallel emas, ya'ni ayqash.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "ayqash-holat-farq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#13a1f882"
+    },
+    {
+      "q": "Uch qavatli binoning qavat pollari o'zaro parallel. Qiya o'rnatilgan quvur birinchi va ikkinchi pol orasida 3,2 m, ikkinchi va uchinchi pol orasida ham 3,2 m bo'lak hosil qildi. Qavat balandliklari haqida nima deyish mumkin?",
+      "v": [
+        "Ikkala qavatning balandligi teng",
+        "Birinchi qavat ikkinchisidan baland",
+        "Ikkinchi qavat birinchisidan baland",
+        "Balandliklar haqida xulosa chiqarib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Parallel tekisliklar kesuvchi to'g'ri chiziqni proporsional kesmalarga ajratadi. Quvurdagi bo'laklar teng bo'lsa, ularga mos keladigan tekisliklararo masofalar ham teng bo'ladi. Demak birinchi va ikkinchi qavatning balandliklari bir xil.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='215' viewBox='0 0 300 215'%3E%3Crect width='300' height='215' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,60 190,60 285,25 115,25'/%3E%3Cpolygon points='20,120 190,120 285,85 115,85'/%3E%3Cpolygon points='20,180 190,180 285,145 115,145'/%3E%3C/g%3E%3Cline x1='90' y1='42.5' x2='190' y2='162.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='96' y='82'%3E3,2 m%3C/text%3E%3Ctext x='140' y='142'%3E3,2 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-tekislik-oraliq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#ae9ca21d"
+    },
+    {
+      "q": "Uchta parallel tekislik bitta to'g'ri chiziqni o'zaro teng ikkita kesmaga ajratdi. Bu tekisliklar boshqa istalgan kesuvchi to'g'ri chiziqni qanday bo'laklarga ajratadi?",
+      "v": [
+        "Uni 1 : 2 nisbatdagi kesmalarga ajratadi",
+        "Uni ham o'zaro teng ikki kesmaga ajratadi",
+        "Uni ixtiyoriy nisbatdagi kesmalarga ajratadi",
+        "Uni umuman kesmasligi ham mumkin"
+      ],
+      "t": 1,
+      "izoh": "Parallel tekisliklar kesuvchi chiziqlarni proporsional kesmalarga ajratadi. Birinchi chiziqda nisbat 1 : 1 bo'lsa, boshqa har qanday chiziqda ham nisbat 1 : 1 bo'lib qoladi. Demak ikkinchi chiziq ham teng ikki bo'lakka ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "uch-tekislik-oraliq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#02399ae1"
+    },
+    {
+      "q": "Javonning uchta tokchasi o'zaro parallel tekisliklarda joylashgan, oraliqlar nisbati 4 : 7. Qiya mahkamlagich birinchi oraliqda 28 sm kesma hosil qilgan bo'lsa, uning ikkinchi oraliqdagi kesmasi necha santimetr?",
+      "v": [
+        "77 sm",
+        "16 sm",
+        "49 sm",
+        "31 sm"
+      ],
+      "t": 2,
+      "izoh": "Parallel tekisliklar mahkamlagichni oraliqlar nisbatiga mos ravishda bo'ladi: 28 : x = 4 : 7. Bundan 4·x = 196, ya'ni x = 49 sm. Nisbatni teskari qo'llash 16 sm, ikkala bo'lakni qo'shib yuborish 77 sm, ayirmani qo'shish esa 31 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='215' viewBox='0 0 300 215'%3E%3Crect width='300' height='215' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,50 190,50 285,20 115,20'/%3E%3Cpolygon points='20,90 190,90 285,60 115,60'/%3E%3Cpolygon points='20,160 190,160 285,130 115,130'/%3E%3C/g%3E%3Cline x1='80' y1='35' x2='170' y2='145' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='84' y='66'%3E28 sm%3C/text%3E%3Ctext x='128' y='120'%3E?%3C/text%3E%3Ctext x='224' y='40'%3E4%3C/text%3E%3Ctext x='230' y='105'%3E7%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "uch-tekislik-oraliq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#a029e1bd"
+    },
+    {
+      "q": "Uchta parallel tekislik AB va CD ayqash kesmalarni kesib o'tadi. AB kesmadagi bo'laklar 12 sm va 18 sm, CD kesmadagi birinchi bo'lak esa ikkinchisidan 10 sm qisqa. CD kesmaning to'liq uzunligi necha santimetr?",
+      "v": [
+        "60 sm",
+        "30 sm",
+        "25 sm",
+        "50 sm"
+      ],
+      "t": 3,
+      "izoh": "AB dagi nisbat 12 : 18 = 2 : 3. CD dagi bo'laklarni 2k va 3k deb olamiz, ularning ayirmasi k = 10 sm. Demak bo'laklar 20 sm va 30 sm, to'liq uzunlik esa 20 + 30 = 50 sm. Faqat katta bo'lakni yozish 30 sm, javobni ikkilantirish esa 60 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='225' viewBox='0 0 300 225'%3E%3Crect width='300' height='225' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,55 190,55 285,25 115,25'/%3E%3Cpolygon points='20,103 190,103 285,73 115,73'/%3E%3Cpolygon points='20,175 190,175 285,145 115,145'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='70' y1='40' x2='150' y2='160'/%3E%3Cline x1='215' y1='40' x2='155' y2='160'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='58' y='38'%3EA%3C/text%3E%3Ctext x='154' y='174'%3EB%3C/text%3E%3Ctext x='219' y='38'%3EC%3C/text%3E%3Ctext x='128' y='174'%3ED%3C/text%3E%3Ctext x='74' y='72'%3E12%3C/text%3E%3Ctext x='112' y='130'%3E18%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "uch-tekislik-oraliq",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#9b30dc3b"
+    },
+    {
+      "q": "Kesik piramidaning asos tomonlari 30 sm va 18 sm. Yon qirralarning o'rtalari orqali asoslarga parallel tekislik o'tkazildi. Bu kesim tomonining uzunligi necha santimetr bo'ladi?",
+      "v": [
+        "24 sm",
+        "48 sm",
+        "12 sm",
+        "6 sm"
+      ],
+      "t": 0,
+      "izoh": "Yon yoq trapetsiya bo'lib, kesim uning o'rta chizig'idan iborat. O'rta chiziq asoslar yig'indisining yarmiga teng: (30 + 18) : 2 = 24 sm. Yig'indini bo'lmaslik 48 sm, ayirmani olish 12 sm, ayirmaning yarmini olish esa 6 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='45,195 255,195 213,55 87,55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='66' y1='125' x2='234' y2='125' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='150' y='213' text-anchor='middle'%3E30 sm%3C/text%3E%3Ctext x='150' y='48' text-anchor='middle'%3E18 sm%3C/text%3E%3Ctext x='240' y='130'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-parallel-tekislik-uzunlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#50ebddfe"
+    },
+    {
+      "q": "Kesik piramida shaklidagi suv rezervuarining pastki asos tomoni 4,8 m, yuqori asos tomoni 2,4 m. Balandlikning o'rtasidan asoslarga parallel kesim o'tkazilsa, kesim tomoni necha metr bo'ladi?",
+      "v": [
+        "7,2 m",
+        "3,6 m",
+        "2,4 m",
+        "1,2 m"
+      ],
+      "t": 1,
+      "izoh": "Balandlik o'rtasidan o'tgan kesim yon yoq trapetsiyasining o'rta chizig'ini beradi. Uning uzunligi asoslar yig'indisining yarmi: (4,8 + 2,4) : 2 = 7,2 : 2 = 3,6 m. Yig'indini ikkiga bo'lmaslik 7,2 m, ayirmani olish esa 2,4 m xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='40,195 260,195 205,55 95,55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='67.5' y1='125' x2='232.5' y2='125' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='150' y='213' text-anchor='middle'%3E4,8 m%3C/text%3E%3Ctext x='150' y='48' text-anchor='middle'%3E2,4 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-parallel-tekislik-uzunlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#35e8985a"
+    },
+    {
+      "q": "Kesik piramidaning balandligi o'rtasidan o'tgan parallel kesim tomoni 21 sm, pastki asos tomoni esa 26 sm ekani ma'lum. Yuqori asos tomonining uzunligi necha santimetr?",
+      "v": [
+        "47 sm",
+        "5 sm",
+        "16 sm",
+        "23,5 sm"
+      ],
+      "t": 2,
+      "izoh": "O'rta kesim asoslar yig'indisining yarmiga teng, ya'ni (26 + x) : 2 = 21. Bundan 26 + x = 42 va x = 16 sm. Ayirmani javob deb olish 5 sm, yig'indini yozish 47 sm, ikki sonning o'rtachasini olish esa 23,5 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='45,195 255,195 214.5,55 85.5,55' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='65.25' y1='125' x2='234.75' y2='125' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='150' y='213' text-anchor='middle'%3E26 sm%3C/text%3E%3Ctext x='150' y='48' text-anchor='middle'%3E?%3C/text%3E%3Ctext x='240' y='121'%3E21 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-parallel-tekislik-uzunlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2a97f883"
+    },
+    {
+      "q": "Kesik piramida shaklidagi minoraning asos tomonlari 36 m va 12 m. Balandlikni pastdan boshlab 1 : 2 nisbatda bo'luvchi nuqtadan asoslarga parallel kesim o'tkazildi. Kesim tomoni necha metr?",
+      "v": [
+        "32 m",
+        "24 m",
+        "20 m",
+        "28 m"
+      ],
+      "t": 3,
+      "izoh": "Kesim tomoni balandlik bo'ylab bir tekis o'zgaradi. Pastdan balandlikning uchdan bir qismida tomon 36 dan 12 gacha bo'lgan farqning uchdan bir qismiga kamayadi: 36 − 24 : 3 = 36 − 8 = 28 m. O'rta kesimni olish 24 m, nisbatni teskari qo'llash esa 20 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='240' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23ffffff'/%3E%3Cpolygon points='45,200 255,200 185,50 115,50' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='68.3' y1='150' x2='231.7' y2='150' stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='150' y='218' text-anchor='middle'%3E36 m%3C/text%3E%3Ctext x='150' y='43' text-anchor='middle'%3E12 m%3C/text%3E%3Ctext x='238' y='155'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-parallel-tekislik-uzunlik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#8d8f517f"
+    },
+    {
+      "q": "Quruvchi Jasur ikkinchi qavat polini birinchi qavat poliga parallel qilib quymoqda. Parallellik kafolatlanishi uchun u nimani tekshirishi kerak?",
+      "v": [
+        "Kesishuvchi ikki yo'nalish bo'yicha ikkala pol orasidagi balandliklar bir xil ekanini",
+        "Faqat bitta yo'nalish bo'yicha balandlik bir xil ekanini",
+        "Xonadagi devorlarning uzunliklari tengligini",
+        "Ikkala qavat xonasining yuzasi tengligini"
+      ],
+      "t": 0,
+      "izoh": "Bitta yo'nalish bo'yicha balandlik bir xil bo'lsa ham, pol boshqa yo'nalishda qiya bo'lishi mumkin. Tekisliklar parallelligi alomati kesishuvchi ikki yo'nalishni talab qiladi. Devor uzunliklari va xona yuzasi esa tekisliklarning o'zaro joylashuviga umuman ta'sir qilmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "qurilish-qavat-hayotiy",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#cf284dfb"
+    },
+    {
+      "q": "Omborda pol va shift o'zaro parallel, ular orasidagi masofa 340 sm. Devorga tik o'rnatilgan javonning balandligi 285 sm. Javon ustidagi bo'shliqqa balandligi 60 sm bo'lgan quti sig'adimi?",
+      "v": [
+        "Ha, ustida yana 15 sm joy qoladi",
+        "Yo'q, 5 sm yetmaydi",
+        "Ha, quti aynan sig'adi",
+        "Aniqlash uchun ma'lumot yetarli emas"
+      ],
+      "t": 1,
+      "izoh": "Pol va shift parallel bo'lgani uchun ular orasidagi masofa hamma joyda 340 sm. Javon ustidagi bo'shliq 340 − 285 = 55 sm. Quti balandligi 60 sm bo'lgani uchun u sig'maydi, yetishmovchilik 60 − 55 = 5 sm. Ayirmani noto'g'ri hisoblash boshqa javoblarni beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,75 195,75 275,40 105,40'/%3E%3Cpolygon points='25,200 195,200 275,165 105,165'/%3E%3Cpolyline points='60,190 60,98 130,98 130,190'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='215' y1='60' x2='215' y2='183'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='222' y='128'%3E340 sm%3C/text%3E%3Ctext x='68' y='150'%3E285 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qurilish-qavat-hayotiy",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#dca1a8bf"
+    },
+    {
+      "q": "Yangi binoda har bir qavat poli quyi qavat poliga parallel qilib quyiladi va qavat balandliklari bir xil. Beshinchi qavat poli birinchi qavat polidan 12,8 m yuqorida. Uchinchi qavat poli birinchisidan necha metr balandda?",
+      "v": [
+        "9,6 m",
+        "7,68 m",
+        "6,4 m",
+        "4,27 m"
+      ],
+      "t": 2,
+      "izoh": "Birinchi va beshinchi pol orasida to'rtta bir xil oraliq bor, demak bitta oraliq 12,8 : 4 = 3,2 m. Uchinchi pol birinchisidan ikkita oraliq yuqorida: 3,2·2 = 6,4 m. Qavatlar sonini oraliqlar soni deb olish 7,68 yoki 9,6 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='225' viewBox='0 0 300 225'%3E%3Crect width='300' height='225' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,50 180,50 265,25 105,25'/%3E%3Cpolygon points='20,90 180,90 265,65 105,65'/%3E%3Cpolygon points='20,130 180,130 265,105 105,105'/%3E%3Cpolygon points='20,170 180,170 265,145 105,145'/%3E%3Cpolygon points='20,210 180,210 265,185 105,185'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='285' y1='37' x2='285' y2='197'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='233' y='125'%3E12,8 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qurilish-qavat-hayotiy",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#d0eacff4"
+    },
+    {
+      "q": "Ustaxona shifti polga parallel, ular orasidagi masofa 3,6 m. Uzunligi 4,5 m bo'lgan narvon yuqori uchi bilan shiftga tegib turibdi. Narvon poyi shiftga tekkan nuqtaning tagidan necha metr uzoqlikda?",
+      "v": [
+        "5,8 m",
+        "0,9 m",
+        "8,1 m",
+        "2,7 m"
+      ],
+      "t": 3,
+      "izoh": "Narvon, uning polga tushirilgan proyeksiyasi va tekisliklar orasidagi masofa to'g'ri burchakli uchburchak hosil qiladi. Narvon gipotenuza, shuning uchun proyeksiya = √(4,5² − 3,6²) = √(20,25 − 12,96) = √7,29 = 2,7 m. Uzunliklarni ayirish 0,9 m, qo'shish esa 8,1 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='30,92 200,92 270,62 100,62'/%3E%3Cpolygon points='30,200 200,200 270,170 100,170'/%3E%3C/g%3E%3Cline x1='70' y1='200' x2='151' y2='92' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='151' y1='92' x2='151' y2='200'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='158' y='150'%3E3,6 m%3C/text%3E%3Ctext x='84' y='140'%3E4,5 m%3C/text%3E%3Ctext x='104' y='215'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qurilish-qavat-hayotiy",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#c604074c"
+    },
+    {
+      "q": "Quyosh nurlari o'zaro parallel tushadi. Yerga tik o'rnatilgan ikkita ustundan biri 3 m, ikkinchisi 4,5 m balandlikda. Birinchi ustunning soyasi 2 m bo'lsa, ikkinchisining soyasi necha metr?",
+      "v": [
+        "3 m",
+        "2,5 m",
+        "6,75 m",
+        "1,33 m"
+      ],
+      "t": 0,
+      "izoh": "Parallel nurlar ustun va soya hosil qilgan uchburchaklarni o'xshash qiladi, shuning uchun balandlik va soya nisbati o'zgarmaydi: 3 : 2 = 4,5 : x. Bundan 3·x = 9, ya'ni x = 3 m. Balandlik farqini soyaga qo'shish 2,5 m, nisbatni teskari olish esa 1,33 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cline x1='20' y1='210' x2='285' y2='210' stroke='%23334155' stroke-width='2'/%3E%3Cg stroke='%23334155' stroke-width='2'%3E%3Cline x1='60' y1='210' x2='60' y2='135'/%3E%3Cline x1='170' y1='210' x2='170' y2='97.5'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='60' y1='135' x2='110' y2='210'/%3E%3Cline x1='170' y1='97.5' x2='245' y2='210'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='36' y='176'%3E3 m%3C/text%3E%3Ctext x='128' y='140'%3E4,5 m%3C/text%3E%3Ctext x='72' y='226'%3E2 m%3C/text%3E%3Ctext x='200' y='226'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "soya-parallel-nur",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#09a7b2d8"
+    },
+    {
+      "q": "Ravshanning bo'yi 1,68 m, o'sha payt uning soyasi 1,2 m ni tashkil qildi. Xuddi shu vaqtda maktab binosining soyasi 14 m bo'lsa, bino balandligi necha metr?",
+      "v": [
+        "10 m",
+        "19,6 m",
+        "23,52 m",
+        "16,8 m"
+      ],
+      "t": 1,
+      "izoh": "Quyosh nurlari parallel bo'lgani uchun balandlikning soyaga nisbati barcha jismlarda bir xil: 1,68 : 1,2 = 1,4. Demak bino balandligi 14·1,4 = 19,6 m. Nisbatni teskari qo'llash 10 m, soyani bo'yga ko'paytirish esa 23,52 m xato javobini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-parallel-nur",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#e561df55"
+    },
+    {
+      "q": "Bir vaqtda o'lchangan ikkita tik ustunning soyalari 3,5 m va 5,6 m. Birinchi ustunning balandligi 2,5 m bo'lsa, ikkinchi ustun undan necha metr baland?",
+      "v": [
+        "2,1 m",
+        "4 m",
+        "1,5 m",
+        "3,5 m"
+      ],
+      "t": 2,
+      "izoh": "Parallel nurlar tufayli balandlik soyaga proporsional: 2,5 : 3,5 = h : 5,6. Bundan 3,5·h = 14, ya'ni h = 4 m. Savol farqni so'ragan: 4 − 2,5 = 1,5 m. To'liq balandlikni yozish 4 m, soyalar farqini olish esa 2,1 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cline x1='20' y1='205' x2='290' y2='205' stroke='%23334155' stroke-width='2'/%3E%3Cg stroke='%23334155' stroke-width='2'%3E%3Cline x1='50' y1='205' x2='50' y2='150'/%3E%3Cline x1='160' y1='205' x2='160' y2='117'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='50' y1='150' x2='127' y2='205'/%3E%3Cline x1='160' y1='117' x2='283' y2='205'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='20' y='182'%3E2,5 m%3C/text%3E%3Ctext x='134' y='140'%3E?%3C/text%3E%3Ctext x='72' y='221'%3E3,5 m%3C/text%3E%3Ctext x='204' y='221'%3E5,6 m%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "soya-parallel-nur",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#be31fee9"
+    },
+    {
+      "q": "Quyosh nurlari parallel. Balandligi 2 m bo'lgan ustunning soyasi 1,6 m. Yonidagi bino soyasining 12 m qismi yerga, qolgan qismi esa balandligi 3 m bo'lgan tik devorga tushgan. Bino balandligi necha metr?",
+      "v": [
+        "12,6 m",
+        "15 m",
+        "18,75 m",
+        "18 m"
+      ],
+      "t": 3,
+      "izoh": "Ustun bo'yicha balandlikning soyaga nisbati 2 : 1,6 = 1,25. Yerdagi 12 m soya binoning 12·1,25 = 15 m qismiga to'g'ri keladi. Devorga tushgan soya binoning yana 3 m balandligini beradi, chunki devor tik. Jami 15 + 3 = 18 m. Devorni unutish 15 m, soyaga qo'shib yuborish esa 18,75 m xatosini beradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "soya-parallel-nur",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#3fb54030"
+    },
+    {
+      "q": "Tekislikdan tashqarida yotgan nuqtadan shu tekislikka parallel qilib nechta to'g'ri chiziq o'tkazish mumkin?",
+      "v": [
+        "Cheksiz ko'p",
+        "Faqat bitta",
+        "Aniq ikkita",
+        "Umuman o'tkazib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Berilgan nuqta orqali tekislikka parallel yagona tekislik o'tadi. Shu tekislikda nuqta orqali o'tuvchi har bir to'g'ri chiziq berilgan tekislikka parallel bo'ladi, bunday chiziqlar esa cheksiz ko'p. Demak javob cheksiz ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasash-va-yagonalik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#cb3b7007"
+    },
+    {
+      "q": "Tekislikda yotmaydigan berilgan nuqtadan shu tekislikka parallel qilib nechta tekislik o'tkazish mumkin?",
+      "v": [
+        "Cheksiz ko'p",
+        "Faqat bitta",
+        "Aniq ikkita",
+        "Umuman o'tkazib bo'lmaydi"
+      ],
+      "t": 1,
+      "izoh": "Nuqtadan tekislikdagi kesishuvchi ikki chiziqqa parallel ikkita chiziq o'tkaziladi va ular yagona tekislikni aniqlaydi. Bu tekislik alomat bo'yicha berilganiga parallel. Boshqa bunday tekislik bo'lsa edi, ikkalasi kesishib, kesishish chizig'i berilgan tekislikka parallel ikki xil tekislikda yotar edi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yasash-va-yagonalik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2c8ae661"
+    },
+    {
+      "q": "Fazoda a va b ayqash to'g'ri chiziqlar hamda A nuqta berilgan. A nuqta bu chiziqlarda ham, ularning biri orqali o'tib ikkinchisiga parallel bo'lgan tekisliklarda ham yotmaydi. A nuqtadan o'tib, har ikkala chiziqqa parallel bo'lgan nechta tekislik mavjud?",
+      "v": [
+        "Aniq uchta",
+        "Cheksiz ko'p",
+        "Faqat bitta",
+        "Umuman mavjud emas"
+      ],
+      "t": 2,
+      "izoh": "A nuqtadan a ga parallel bitta chiziq, b ga parallel yana bitta chiziq o'tkaziladi. Chiziqlar ayqash bo'lgani uchun bu ikki yangi chiziq ustma-ust tushmaydi va A da kesishadi, kesishuvchi ikki chiziq esa yagona tekislikni aniqlaydi. Shartdagi qo'shimcha cheklov bu tekislik a yoki b ni butunlay o'z ichiga olib qolish holatini istisno qiladi, demak u ikkala chiziqqa ham parallel.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yasash-va-yagonalik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#ec9d805c"
+    },
+    {
+      "q": "α tekislikda yotmaydigan A nuqtadan o'tuvchi va α tekislikka parallel bo'lgan barcha to'g'ri chiziqlar to'plami fazoda qanday shaklni tashkil qiladi?",
+      "v": [
+        "A nuqtadan chiquvchi aynan ikkita chiziqni",
+        "Fazoning barcha nuqtalarini",
+        "Bitta to'g'ri chiziqni",
+        "A nuqtadan o'tuvchi va α ga parallel yagona tekislikni"
+      ],
+      "t": 3,
+      "izoh": "Har bir bunday chiziq α bilan umumiy nuqtaga ega emas. A orqali α ga parallel yagona β tekislik o'tadi va har bir bunday chiziq aynan β da yotishi kerak, aks holda u α ni kesib o'tar edi. Aksincha, β dagi A orqali o'tuvchi har bir chiziq α ga parallel.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yasash-va-yagonalik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#fa7df845"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel. a orqali o'tgan β tekislik α ni b to'g'ri chiziq bo'ylab kesib o'tdi. a va b chiziqlar o'zaro qanday joylashadi?",
+      "v": [
+        "O'zaro parallel bo'ladi",
+        "Bitta nuqtada kesishadi",
+        "Ayqash bo'ladi",
+        "Perpendikulyar bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "a va b chiziqlarning ikkalasi ham β tekislikda yotadi, demak ular bir tekislikda va ayqash bo'la olmaydi. Agar ular kesishsa edi, umumiy nuqta b orqali α ga ham tegishli bo'lar edi, bu esa a ∥ α shartiga zid. Demak a ∥ b.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cpolygon points='20,205 190,205 280,165 110,165' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cpolygon points='60,55 240,55 230,190 50,190' stroke='%23334155' stroke-width='2' fill='none'/%3E%3Cline x1='60' y1='55' x2='240' y2='55' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cline x1='50' y1='190' x2='230' y2='190' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='246' y='52'%3Ea%3C/text%3E%3Ctext x='236' y='204'%3Eb%3C/text%3E%3Ctext x='26' y='180'%3Eα%3C/text%3E%3Ctext x='64' y='48'%3Eβ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-parallel-chiziq-xossa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#4374ab32"
+    },
+    {
+      "q": "Zavod sexida kran relsi pol tekisligiga parallel o'rnatilgan. Rels orqali o'tgan tik tekislik polni bitta chiziq bo'ylab kesadi. Rels bilan shu chiziq orasidagi masofa haqida nima deyish mumkin?",
+      "v": [
+        "Ular kesishadi, masofa bir joyda nolga aylanadi",
+        "Ular parallel, masofa hamma joyda bir xil",
+        "Ular ayqash, masofa doim o'zgarib turadi",
+        "Masofa relsning uzunligiga bog'liq bo'ladi"
+      ],
+      "t": 1,
+      "izoh": "Rels polga parallel bo'lgani uchun u orqali o'tgan tekislikning pol bilan kesishish chizig'i relsga parallel chiqadi. Ikki parallel chiziq orasidagi masofa esa hamma nuqtada bir xil bo'ladi. Shu sababli kran butun uzunlik bo'ylab bir xil balandlikda yuradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "tekislikka-parallel-chiziq-xossa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#b45eb945"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikka parallel. a orqali ikkita har xil tekislik o'tkazilib, ular α ni mos ravishda b va c chiziqlar bo'ylab kesdi. b va c chiziqlar o'zaro qanday joylashadi?",
+      "v": [
+        "Ayqash bo'ladi",
+        "Bitta nuqtada kesishadi",
+        "O'zaro parallel bo'ladi",
+        "Ustma-ust tushadi"
+      ],
+      "t": 2,
+      "izoh": "Xossaga ko'ra b ∥ a va c ∥ a. Bitta chiziqqa parallel ikki chiziq o'zaro parallel bo'ladi. Tekisliklar har xil bo'lgani uchun b va c ustma-ust tushmaydi. Ikkalasi ham α da yotgani uchun ayqash ham bo'la olmaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "tekislikka-parallel-chiziq-xossa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#abe76593"
+    },
+    {
+      "q": "a to'g'ri chiziq α tekislikni A nuqtada kesib o'tadi. a orqali o'tuvchi β tekislik α ni b chiziq bo'ylab kessa, a va b chiziqlar haqida nima deyish mumkin?",
+      "v": [
+        "Ular ustma-ust tushadi",
+        "Ular o'zaro parallel bo'ladi",
+        "Ular ayqash bo'ladi",
+        "Ular aynan A nuqtada kesishadi"
+      ],
+      "t": 3,
+      "izoh": "A nuqta a chiziqda yotadi, demak u β tekislikda ham bor. Shu bilan birga A nuqta α tekislikda yotadi. Ikkala tekislikka tegishli nuqta ularning kesishish chizig'ida, ya'ni b da bo'ladi. Demak A nuqta a va b uchun umumiy, ular shu nuqtada kesishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "tekislikka-parallel-chiziq-xossa",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#4b21e66a"
+    },
+    {
+      "q": "Uchburchakli prizmada ABC va A₁B₁C₁ asoslar o'zaro parallel. AA₁ yon qirra ABC asos tekisligiga nisbatan qanday joylashgan?",
+      "v": [
+        "Uni A nuqtada kesib o'tadi",
+        "Unga parallel joylashgan",
+        "Butunlay unda yotadi",
+        "Unga perpendikulyar joylashgan"
+      ],
+      "t": 0,
+      "izoh": "AA₁ qirraning A uchi aynan ABC asos tekisligida yotadi, demak chiziq va tekislikning umumiy nuqtasi bor. Umumiy nuqtaga ega chiziq tekislikka parallel bo'la olmaydi. Qirra butunlay tekislikda ham yotmaydi, chunki A₁ nuqta yuqori asosda. Demak u tekislikni A nuqtada kesadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cline x1='60' y1='215' x2='190' y2='215'/%3E%3Cpolyline points='60,90 190,90 125,55 60,90'/%3E%3Cline x1='60' y1='215' x2='60' y2='90'/%3E%3Cline x1='190' y1='215' x2='190' y2='90'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='60,215 125,180 190,215'/%3E%3Cline x1='125' y1='180' x2='125' y2='55'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='48' y='230'%3EA%3C/text%3E%3Ctext x='194' y='230'%3EB%3C/text%3E%3Ctext x='130' y='195'%3EC%3C/text%3E%3Ctext x='42' y='86'%3EA₁%3C/text%3E%3Ctext x='194' y='86'%3EB₁%3C/text%3E%3Ctext x='118' y='50'%3EC₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "prizma-yon-qirra-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#fd304edc"
+    },
+    {
+      "q": "Uchburchakli prizmaning ABC va A₁B₁C₁ asoslari parallel. A₁B₁ qirra ABC asos tekisligiga parallelmi va bu xulosa nimaga tayanadi?",
+      "v": [
+        "Yo'q, chunki u boshqa asosda yotadi",
+        "Ha, chunki A₁B₁ ∥ AB va A₁B₁ asos tekisligida yotmaydi",
+        "Ha, chunki prizmaning yon qirralari o'zaro teng",
+        "Yo'q, chunki u asos tekisligini kesib o'tadi"
+      ],
+      "t": 1,
+      "izoh": "Prizmaning ABB₁A₁ yon yog'i parallelogramm, shuning uchun A₁B₁ ∥ AB. AB kesma ABC asos tekisligida yotadi, A₁B₁ esa unda yotmaydi. Parallellik alomatining ikkala sharti bajarilgani uchun A₁B₁ asos tekisligiga parallel. Yon qirralarning tengligi bu xulosaga asos bo'la olmaydi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cline x1='60' y1='215' x2='190' y2='215'/%3E%3Cpolyline points='60,90 190,90 125,55 60,90'/%3E%3Cline x1='60' y1='215' x2='60' y2='90'/%3E%3Cline x1='190' y1='215' x2='190' y2='90'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='60,215 125,180 190,215'/%3E%3Cline x1='125' y1='180' x2='125' y2='55'/%3E%3C/g%3E%3Cline x1='60' y1='90' x2='190' y2='90' stroke='%235b4bc4' stroke-width='1.6' fill='none'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='48' y='230'%3EA%3C/text%3E%3Ctext x='194' y='230'%3EB%3C/text%3E%3Ctext x='130' y='195'%3EC%3C/text%3E%3Ctext x='42' y='86'%3EA₁%3C/text%3E%3Ctext x='194' y='86'%3EB₁%3C/text%3E%3Ctext x='118' y='50'%3EC₁%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-yon-qirra-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#6ac98f99"
+    },
+    {
+      "q": "Uchburchakli prizma shaklidagi shirinlik qutisining pastki asos tomonlari 9 sm, 12 sm va 15 sm. Yuqori asos pastki asosga parallel joylashgan. Yuqori asosning perimetri necha santimetr?",
+      "v": [
+        "72 sm",
+        "18 sm",
+        "36 sm",
+        "27 sm"
+      ],
+      "t": 2,
+      "izoh": "Prizmaning yon yoqlari parallelogramm bo'lgani uchun yuqori asos tomonlari pastki asos tomonlariga parallel va teng. Demak yuqori asos ham 9, 12 va 15 sm tomonlarga ega: P = 9 + 12 + 15 = 36 sm. Perimetrni yarimlash 18 sm, bitta tomonni tushirib qoldirish esa 27 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='260' viewBox='0 0 280 260'%3E%3Crect width='280' height='260' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cline x1='55' y1='215' x2='185' y2='215'/%3E%3Cpolyline points='55,90 185,90 120,55 55,90'/%3E%3Cline x1='55' y1='215' x2='55' y2='90'/%3E%3Cline x1='185' y1='215' x2='185' y2='90'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='55,215 120,180 185,215'/%3E%3Cline x1='120' y1='180' x2='120' y2='55'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='108' y='232'%3E12 sm%3C/text%3E%3Ctext x='190' y='205'%3E9 sm%3C/text%3E%3Ctext x='16' y='205'%3E15 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "prizma-yon-qirra-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#8e248391"
+    },
+    {
+      "q": "Prizmaning yon qirrasi 16 sm bo'lib, u asos tekisligi bilan 30° burchak hosil qiladi. Prizmaning o'zaro parallel asoslari orasidagi masofa necha santimetr?",
+      "v": [
+        "32 sm",
+        "16 sm",
+        "13,9 sm",
+        "8 sm"
+      ],
+      "t": 3,
+      "izoh": "Yon qirraning yuqori uchidan pastki asos tekisligiga perpendikulyar tushiramiz. Hosil bo'lgan to'g'ri burchakli uchburchakda qirra gipotenuza, masofa esa 30° burchak qarshisidagi katet: h = 16·sin30° = 16·0,5 = 8 sm. Kosinus ishlatish 13,9 sm, sinusga bo'lish esa 32 sm xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='210' viewBox='0 0 300 210'%3E%3Crect width='300' height='210' fill='%23ffffff'/%3E%3Cline x1='30' y1='170' x2='280' y2='170' stroke='%23334155' stroke-width='2'/%3E%3Cline x1='50' y1='170' x2='174.7' y2='98' stroke='%23334155' stroke-width='2'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='174.7' y1='98' x2='174.7' y2='170'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='100' y='126'%3E16 sm%3C/text%3E%3Ctext x='78' y='164'%3E30°%3C/text%3E%3Ctext x='182' y='138'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "prizma-yon-qirra-parallel",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#2f538022"
+    },
+    {
+      "q": "Ikki parallel tekislik orasida uchlari shu tekisliklarda yotgan uchta kesma o'tkazildi va ularning o'rtalari belgilandi. Bu uchta nuqta fazoda qanday joylashadi?",
+      "v": [
+        "Ikkala tekislikka parallel bo'lgan bitta tekislikda",
+        "Doimo bitta to'g'ri chiziqda",
+        "Butunlay ixtiyoriy, qonuniyat yo'q",
+        "Tekisliklardan birining ustida"
+      ],
+      "t": 0,
+      "izoh": "Har bir kesmaning o'rtasi ikkala tekislikdan bir xil uzoqlikda, ya'ni ular orasidagi masofaning yarmida joylashadi. Bunday nuqtalar to'plami tekisliklarga parallel bo'lgan o'rta tekislikni tashkil qiladi. Uchta nuqta ham shu tekislikda yotadi, lekin bir chiziqda bo'lishi shart emas.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,75 195,75 275,40 105,40'/%3E%3Cpolygon points='25,195 195,195 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6'%3E%3Cline x1='70' y1='58' x2='120' y2='178'/%3E%3Cline x1='150' y1='52' x2='115' y2='172'/%3E%3Cline x1='215' y1='50' x2='245' y2='170'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cpolygon points='25,135 195,135 275,100 105,100'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='14' y='72'%3Eα%3C/text%3E%3Ctext x='14' y='192'%3Eβ%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orta-nuqtalar-tekislik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#fdacef89"
+    },
+    {
+      "q": "ABCD tetraedrda K va L nuqtalar mos ravishda AB va AC qirralarning o'rtalari. KL kesma orqali o'tuvchi va BCD yog'iga parallel tekislik mavjudmi?",
+      "v": [
+        "Yo'q, bunday tekislik umuman mavjud emas",
+        "Ha, mavjud va u AD qirraning o'rtasidan o'tadi",
+        "Ha, lekin u D nuqtaning o'zidan o'tadi",
+        "Ha, bunday tekisliklar cheksiz ko'p"
+      ],
+      "t": 1,
+      "izoh": "KL kesma ABC uchburchakning o'rta chizig'i, demak KL ∥ BC. AD qirraning o'rtasi M bo'lsin, u holda KM ∥ BD va LM ∥ CD. KLM tekisligidagi kesishuvchi ikki chiziq BCD ga parallel bo'lgani uchun KLM ∥ BCD. Berilgan tekislikka parallel tekislik yagona bo'lgani uchun boshqasi yo'q.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3Crect width='300' height='250' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolyline points='150,30 50,215 250,215 150,30'/%3E%3Cline x1='150' y1='30' x2='185' y2='175'/%3E%3C/g%3E%3Cg stroke='%23334155' stroke-width='2' fill='none' stroke-dasharray='5 4'%3E%3Cpolyline points='50,215 185,175 250,215'/%3E%3C/g%3E%3Cline x1='100' y1='122.5' x2='200' y2='122.5' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='144' y='24'%3EA%3C/text%3E%3Ctext x='38' y='230'%3EB%3C/text%3E%3Ctext x='255' y='230'%3EC%3C/text%3E%3Ctext x='190' y='172'%3ED%3C/text%3E%3Ctext x='88' y='120'%3EK%3C/text%3E%3Ctext x='206' y='116'%3EL%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-nuqtalar-tekislik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#e7003011"
+    },
+    {
+      "q": "Do'kondagi ikkita parallel javon tekisligi orasiga to'rtta qiya tayanch o'rnatildi. Har bir tayanchning o'rtasi belgilanib, ular yupqa lenta bilan bog'landi. Lenta qanday joylashadi?",
+      "v": [
+        "Tayanchlarning uzunligiga qarab har xil",
+        "Doimo bitta to'g'ri chiziq bo'ylab",
+        "Javon tekisliklariga parallel bitta tekislikda",
+        "Pastki javon tekisligining ustida"
+      ],
+      "t": 2,
+      "izoh": "Tayanchlarning uchlari parallel tekisliklarda yotgani uchun har bir o'rta nuqta ikkala javondan bir xil uzoqlikda bo'ladi. Bunday nuqtalarning barchasi javonlarga parallel o'rta tekislikni tashkil qiladi. Lenta shu tekislikda yotadi, lekin tayanchlar joylashuviga qarab u to'g'ri chiziq bo'lishi shart emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orta-nuqtalar-tekislik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#31c659e1"
+    },
+    {
+      "q": "α ∥ β tekisliklar orasidagi masofa 30 sm. Uchlari shu tekisliklarda yotgan kesmalar α tomondan boshlab 2 : 3 nisbatda bo'linadi. Bo'linish nuqtalari qaysi tekislikda yotadi?",
+      "v": [
+        "Ular umuman bitta tekislikda yotmaydi",
+        "α ga parallel va undan 18 sm uzoqlikdagi tekislikda",
+        "Aynan tekisliklar orasidagi o'rta tekislikda",
+        "α ga parallel va undan 12 sm uzoqlikdagi tekislikda"
+      ],
+      "t": 3,
+      "izoh": "Bo'linish nuqtasidan tekisliklargacha masofalar ham kesma bo'laklari bilan bir xil nisbatda bo'ladi. Jami 30 sm ni 5 ulushga bo'lamiz: 30 : 5 = 6 sm. α tomondan 2 ulush, ya'ni 6·2 = 12 sm. Nisbatning ikkinchi hadidan hisoblash 18 sm, o'rtani olish esa 15 sm xatosiga olib keladi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,75 195,75 275,40 105,40'/%3E%3Cpolygon points='25,195 195,195 275,160 105,160'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none'%3E%3Cline x1='70' y1='58' x2='120' y2='178'/%3E%3Cline x1='150' y1='52' x2='115' y2='172'/%3E%3Cline x1='215' y1='50' x2='245' y2='170'/%3E%3C/g%3E%3Cpolygon points='25,123 195,123 275,88 105,88' stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='14' y='72'%3Eα%3C/text%3E%3Ctext x='14' y='192'%3Eβ%3C/text%3E%3Ctext x='282' y='103'%3E%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "orta-nuqtalar-tekislik",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#27a47842"
+    },
+    {
+      "q": "Bog'da o'zaro parallel ikkita simto'siq bor, ular orasidagi masofa 7 m. Ular orasiga qiya qilib uzunligi 25 m bo'lgan sug'orish quvuri tortilgan. Quvurning to'siq yo'nalishi bo'ylab siljishi necha metr?",
+      "v": [
+        "24 m",
+        "18 m",
+        "32 m",
+        "26 m"
+      ],
+      "t": 0,
+      "izoh": "Quvur, to'siqlar orasidagi perpendikulyar masofa va to'siq bo'ylab siljish to'g'ri burchakli uchburchak tashkil qiladi. Quvur gipotenuza bo'lgani uchun siljish = √(25² − 7²) = √(625 − 49) = √576 = 24 m. Sonlarni ayirish 18 m, qo'shish 32 m, kvadratlarni qo'shish esa 26 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2'%3E%3Cline x1='30' y1='70' x2='275' y2='70'/%3E%3Cline x1='30' y1='112' x2='275' y2='112'/%3E%3C/g%3E%3Cline x1='60' y1='70' x2='204' y2='112' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='60' y1='70' x2='60' y2='112'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='32' y='96'%3E7 m%3C/text%3E%3Ctext x='120' y='84'%3E25 m%3C/text%3E%3Ctext x='128' y='128'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olcham-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#5e545421"
+    },
+    {
+      "q": "Konteynerning ichki pol va shift tekisliklari o'zaro parallel, ular orasidagi masofa 240 sm. Ichiga balandligi 55 sm bo'lgan qutilar ustma-ust taxlanadi. Ko'pi bilan nechta quti joylashadi?",
+      "v": [
+        "5 ta",
+        "4 ta",
+        "3 ta",
+        "6 ta"
+      ],
+      "t": 1,
+      "izoh": "Pol va shift parallel bo'lgani uchun bo'sh balandlik hamma joyda 240 sm. To'rtta quti 55·4 = 220 sm joy egallaydi va bemalol sig'adi. Beshta quti esa 55·5 = 275 sm bo'lib, 240 sm dan oshib ketadi. Demak ko'pi bilan 4 ta quti joylashadi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='25,70 195,70 275,35 105,35'/%3E%3Cpolygon points='25,190 195,190 275,155 105,155'/%3E%3Crect x='60' y='162.5' width='70' height='27.5'/%3E%3C/g%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' fill='none' stroke-dasharray='5 4'%3E%3Cline x1='225' y1='55' x2='225' y2='172'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='232' y='118'%3E240 sm%3C/text%3E%3Ctext x='138' y='182'%3E55 sm%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "hayotiy-olcham-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#7e695742"
+    },
+    {
+      "q": "Ikki parallel devor orasidagi masofa 2,4 m. Uzunligi 2,6 m bo'lgan taxtani bir devordan ikkinchisiga qiya suyab qo'yishdi. Taxtaning yuqori uchi pastki uchidan necha metr balandda joylashadi?",
+      "v": [
+        "5 m",
+        "0,2 m",
+        "1 m",
+        "3,5 m"
+      ],
+      "t": 2,
+      "izoh": "Taxta gipotenuza, devorlar orasidagi masofa gorizontal katet, balandlik farqi esa vertikal katet. Pifagor teoremasiga ko'ra h = √(2,6² − 2,4²) = √(6,76 − 5,76) = √1 = 1 m. Uzunliklarni ayirish 0,2 m, qo'shish 5 m, kvadratlarni qo'shish esa 3,5 m xato javobini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='230' viewBox='0 0 300 230'%3E%3Crect width='300' height='230' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2'%3E%3Cline x1='70' y1='30' x2='70' y2='210'/%3E%3Cline x1='214' y1='30' x2='214' y2='210'/%3E%3C/g%3E%3Cline x1='70' y1='200' x2='214' y2='140' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg stroke='%235b4bc4' stroke-width='1.6' stroke-dasharray='5 4'%3E%3Cline x1='70' y1='200' x2='214' y2='200'/%3E%3Cline x1='214' y1='200' x2='214' y2='140'/%3E%3C/g%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='120' y='216'%3E2,4 m%3C/text%3E%3Ctext x='118' y='160'%3E2,6 m%3C/text%3E%3Ctext x='220' y='176'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olcham-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#a9c3baf0"
+    },
+    {
+      "q": "Omborda uchta parallel to'siq bor. Qiya konveyer birinchi va ikkinchi to'siq orasida 5,4 m, ikkinchi va uchinchi orasida 7,2 m yo'l bosadi. Birinchi va ikkinchi to'siq orasidagi masofa 4,5 m bo'lsa, ikkinchi va uchinchi orasidagi masofa necha metr?",
+      "v": [
+        "9 m",
+        "5,4 m",
+        "3,4 m",
+        "6 m"
+      ],
+      "t": 3,
+      "izoh": "Parallel tekisliklar konveyerni proporsional bo'laklarga ajratadi, shuning uchun masofalar ham shu nisbatda: 5,4 : 7,2 = 4,5 : x. Bundan 5,4·x = 32,4, ya'ni x = 6 m. Nisbatni teskari olish 3,4 m, masofani ikkilantirish esa 9 m xatosini beradi.",
+      "rasm": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='225' viewBox='0 0 300 225'%3E%3Crect width='300' height='225' fill='%23ffffff'/%3E%3Cg stroke='%23334155' stroke-width='2' fill='none'%3E%3Cpolygon points='20,55 180,55 275,30 115,30'/%3E%3Cpolygon points='20,118 180,118 275,93 115,93'/%3E%3Cpolygon points='20,202 180,202 275,177 115,177'/%3E%3C/g%3E%3Cline x1='75' y1='42' x2='185' y2='190' stroke='%235b4bc4' stroke-width='1.6'/%3E%3Cg font-size='13' fill='%23334155'%3E%3Ctext x='84' y='90'%3E5,4 m%3C/text%3E%3Ctext x='134' y='166'%3E7,2 m%3C/text%3E%3Ctext x='226' y='72'%3E4,5 m%3C/text%3E%3Ctext x='236' y='146'%3E?%3C/text%3E%3C/g%3E%3C/svg%3E",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "hayotiy-olcham-tahlil",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#ec93265c"
+    },
+    {
+      "q": "O'quvchi shunday yozdi: «a chiziq α tekislikdagi b chiziqqa parallel, demak a chiziq α tekislikka parallel». Bu xulosada qanday kamchilik bor?",
+      "v": [
+        "a chiziqning α tekislikda yotmasligi tekshirilmagan",
+        "b chiziqning uzunligi ko'rsatilmagan",
+        "a va b chiziqlarning perpendikulyarligi tekshirilmagan",
+        "Xulosada hech qanday kamchilik yo'q"
+      ],
+      "t": 0,
+      "izoh": "Parallellik alomati ikkita shartni talab qiladi: chiziq tekislikdagi biror chiziqqa parallel bo'lsin va o'zi shu tekislikda yotmasin. Ikkinchi shart tushib qolgan. Agar a chiziq α da yotsa, u tekislikka parallel deb hisoblanmaydi, chunki cheksiz ko'p umumiy nuqtasi bor.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xatoni-topish",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#6f04e5a7"
+    },
+    {
+      "q": "O'quvchi «parallel tekisliklar orasidagi barcha kesmalar o'zaro teng» degan xulosa chiqardi. Bu xulosa qanday qo'shimcha shart bilan to'g'ri bo'ladi?",
+      "v": [
+        "Kesmalar bitta tekislikda yotganda",
+        "Kesmalar o'zaro parallel bo'lganda",
+        "Kesmalar uzunligi butun son bo'lganda",
+        "Hech qanday qo'shimcha shart talab qilinmaydi"
+      ],
+      "t": 1,
+      "izoh": "Xossa faqat parallel kesmalar uchun isbotlangan: ular parallelogrammning qarama-qarshi tomonlari bo'lgani uchun teng chiqadi. Parallel bo'lmagan qiya kesmalar esa turli uzunlikda bo'ladi, chunki ularning tekislikdagi proyeksiyalari har xil. Kesmalarning bir tekislikda yotishi tenglikni kafolatlamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "xatoni-topish",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#40a215b7"
+    },
+    {
+      "q": "Isbotda «α va β tekisliklar γ ga parallel, demak α ∥ β» qadamidan keyin «α va β tekisliklar a chiziqqa parallel, demak α ∥ β» deb davom etildi. Ikkinchi qadam nima uchun noto'g'ri?",
+      "v": [
+        "Birinchi qadamning o'zi ham noto'g'ri",
+        "Bitta chiziqqa parallel tekislik umuman mavjud emas",
+        "Bitta chiziqqa parallel ikki tekislik kesishishi ham mumkin",
+        "To'g'ri chiziq tekislikka parallel bo'la olmaydi"
+      ],
+      "t": 2,
+      "izoh": "Tekislikka parallellik va chiziqqa parallellik bir xil kuchga ega emas. Bitta tekislikka parallel ikki tekislik albatta parallel bo'ladi. Bitta chiziqqa parallel ikki tekislik esa kesishishi mumkin, faqat ularning kesishish chizig'i o'sha chiziqqa parallel bo'ladi. Shuning uchun ikkinchi qadam asossiz.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xatoni-topish",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#f636e427"
+    },
+    {
+      "q": "Quruvchi «ikkinchi qavat poli birinchi qavat poliga parallel, chunki ikkala polda ham uzunligi 6 m bo'lgan chiziq bor» deb hisobot yozdi. Bu asoslashning asosiy xatosi nimada?",
+      "v": [
+        "Asoslashda hech qanday xato yo'q",
+        "Chiziqlarning uzunligi juda kichik qilib olingan",
+        "Pol tekisliklari umuman parallel bo'la olmaydi",
+        "Kesma uzunliklarining tengligi tekisliklar parallelligini bildirmaydi"
+      ],
+      "t": 3,
+      "izoh": "Tekisliklar parallelligi alomati uzunliklar bilan emas, yo'nalishlar bilan ishlaydi: bir tekislikning kesishuvchi ikki chizig'i ikkinchisiga parallel bo'lishi kerak. Teng uzunlikdagi kesmalar kesishuvchi ikki tekislikda ham topiladi, shuning uchun bu dalil hech narsani isbotlamaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "xatoni-topish",
+      "id": "matematika_ster_m02-togri-chiziq-va-tekisliklarning-parallelligi#70984649"
+    }
+  ]
+}

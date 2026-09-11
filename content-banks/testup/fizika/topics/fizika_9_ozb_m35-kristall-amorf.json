@@ -1,0 +1,606 @@
+{
+  "nom": "35-mavzu. Kristall Amorf",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Qattiq jismning atom (molekula)lari qanday joylashgan?",
+      "v": [
+        "Bir-biri bilan kuchli bog'langan bo'lib, muvozanat holatida turgan joyida tinimsiz tebranib turadi",
+        "Bir-biridan juda uzoq masofada erkin harakatlanadi",
+        "Deyarli bir-biriga tegib, erkin siljiydi",
+        "Tartibsiz va kuchsiz bog'langan"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismning atom (molekula)lari bir-biri bilan kuchli bog'langan bo'ladi; ular muvozanat holatida turgan joyida tinimsiz tebranib turadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#082bd2bb"
+    },
+    {
+      "q": "Qattiq jismlar nega o'z shakliga ega?",
+      "v": [
+        "Og'irlik kuchi atomlar orasidagi tortishish kuchini yenga olmaydi",
+        "Atomlar harakatlanmaydi",
+        "Qattiq jismlar og'ir",
+        "Qattiq jismlar katta hajmli"
+      ],
+      "t": 0,
+      "izoh": "Og'irlik kuchi atomlar orasidagi tortishish kuchini yenga olmaydi; qattiq jismlar o'z hajmini saqlaydi va o'z shakliga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#44066dc4"
+    },
+    {
+      "q": "Qattiq jismlar tuzilishiga ko'ra qanday turlarga bo'linadi?",
+      "v": [
+        "Kristall va amorf jismlarga",
+        "Metall va metall bo'lmagan jismlarga",
+        "Og'ir va yengil jismlarga",
+        "Sovuq va issiq jismlarga"
+      ],
+      "t": 0,
+      "izoh": "Qattiq jismlar tuzilishiga ko'ra kristall va amorf jismlarga bo'linadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#8e9d6a1f"
+    },
+    {
+      "q": "Kristall jismlar deb qanday jismlarga aytiladi?",
+      "v": [
+        "Atom yoki molekulalari fazoda aniq tartibli vaziyatlarni egallagan qattiq jismga",
+        "Atomlari tartibsiz joylashgan qattiq jismga",
+        "Suyuq holatdagi jismga",
+        "Gazsimon jismga"
+      ],
+      "t": 0,
+      "izoh": "Atom yoki molekulalari fazoda aniq tartibli vaziyatlarni egallagan qattiq jismga kristall jismlar deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#2737c725"
+    },
+    {
+      "q": "«Kristall» so'zi qaysi tildan olingan va nimani bildiradi?",
+      "v": [
+        "Yunonchadan olingan bo'lib, «muz» degan ma'noni bildiradi",
+        "Lotinchadan olingan bo'lib, «tosh» degan ma'noni bildiradi",
+        "Arabchadan olingan bo'lib, «olmos» degan ma'noni bildiradi",
+        "Forschadan olingan bo'lib, «yaltiroq» degan ma'noni bildiradi"
+      ],
+      "t": 0,
+      "izoh": "«Kristall» so'zi yunonchadan olingan bo'lib, «muz» degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#7f62806c"
+    },
+    {
+      "q": "Kristall panjara nima?",
+      "v": [
+        "Kristall jismning atom (molekula)lari turgan joylar tutashtirilsa hosil bo'ladigan tuzilish",
+        "Jismning tashqi yuzasi",
+        "Metallarning eritilgan holati",
+        "Amorf jismning tuzilishi"
+      ],
+      "t": 0,
+      "izoh": "Kristall jismning atom (molekula)lari turgan joylar tutashtirilsa, kristall panjara hosil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#520411e4"
+    },
+    {
+      "q": "Kristall panjaraning tugunlari deganda nima tushuniladi?",
+      "v": [
+        "Atom (molekula)lar joylashgan nuqtalar",
+        "Panjaraning eng yuqori nuqtalari",
+        "Kristallning burchaklari",
+        "Atomlar orasidagi bo'shliqlar"
+      ],
+      "t": 0,
+      "izoh": "Atom (molekula)lar joylashgan nuqtalar kristall panjaraning tugunlari deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#e8b5988e"
+    },
+    {
+      "q": "Darslikda kristall panjaralari tasvirlangan moddalar qaysilar?",
+      "v": [
+        "Osh tuzi va olmos",
+        "Mis va temir",
+        "Shisha va smola",
+        "Suv va muz"
+      ],
+      "t": 0,
+      "izoh": "48 va 49-rasmlarda osh tuzi va olmosning kristall panjaralari tasvirlangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#98570963"
+    },
+    {
+      "q": "Anizotropiya nima?",
+      "v": [
+        "Jismning fizik xossalari uning tomonlari bo'yicha yo'nalishlariga bog'liqligi",
+        "Jismning fizik xossalari barcha yo'nalishlarda bir xilligi",
+        "Jismning katta zichligi",
+        "Jismning kuchli magnit xossasi"
+      ],
+      "t": 0,
+      "izoh": "Jismning fizik xossalari uning tomonlari bo'yicha yo'nalishlariga bog'liqligi anizotropiya deb ataladi. Kristall jismlar anizotrop xossaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#e9c2629d"
+    },
+    {
+      "q": "Grekcha «anizos» va «tropos» so'zlari nimani bildiradi?",
+      "v": [
+        "«Bir xil emas» va «yo'nalish»",
+        "«Bir xil» va «kuch»",
+        "«Ko'p» va «shakl»",
+        "«Bir» va «tosh»"
+      ],
+      "t": 0,
+      "izoh": "Grekcha anizos — bir xil emas, tropos — yo'nalish degan ma'nolarni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#66e3a549"
+    },
+    {
+      "q": "Kristall jismlarda har xil yo'nalishlarda atom (molekula)lar orasidagi masofa qanday?",
+      "v": [
+        "Bir xil emas",
+        "Har doim bir xil",
+        "Nolga teng",
+        "Cheksiz katta"
+      ],
+      "t": 0,
+      "izoh": "Kristall jismlarda turli yo'nalishlarda atom (molekula)lar orasidagi masofa bir xil emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#cdba4e88"
+    },
+    {
+      "q": "Kristall jismlar issiqlik, elektr tok va yorug'likni qanday o'tkazadi?",
+      "v": [
+        "Har xil yo'nalishlarda turlicha o'tkazadi",
+        "Barcha yo'nalishlarda bir xil o'tkazadi",
+        "Umuman o'tkazmaydi",
+        "Faqat bir yo'nalishda o'tkazadi"
+      ],
+      "t": 0,
+      "izoh": "Har xil yo'nalishlarda kristallar issiqlik, elektr tok va yorug'likni turlicha o'tkazadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#4ec983e5"
+    },
+    {
+      "q": "Qalam bilan yozganda grafitning qatlamlarga ajralishining sababi nima?",
+      "v": [
+        "Grafitning kristall panjarasi qatlam-qatlam strukturali va qatlamlar orasidagi bog'lanishlar kuchsizroq",
+        "Grafit amorf jism",
+        "Grafit suvda eriydi",
+        "Grafit zichligi juda kichik"
+      ],
+      "t": 0,
+      "izoh": "Grafitning kristall panjarasi qatlam-qatlam strukturali va ularning orasidagi bog'lanishlar kuchsizroq bo'lganligi uchun ular bir-biridan tez ajraladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m35-kristall-amorf#2c14a48e"
+    },
+    {
+      "q": "Grafit kristalini qaysi yo'nalishda ajratish qiyin?",
+      "v": [
+        "Qatlamlarga perpendikulyar yo'nalishda",
+        "Qatlamlar bo'ylab yo'nalishda",
+        "Har qanday yo'nalishda bir xil oson",
+        "Grafitni umuman ajratib bo'lmaydi"
+      ],
+      "t": 0,
+      "izoh": "Lekin grafit kristalini perpendikulyar yo'nalishda ajratish ancha qiyin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#2c9618e9"
+    },
+    {
+      "q": "Polikristall deb qanday jismga aytiladi?",
+      "v": [
+        "Bir-biriga nisbatan tartibsiz joylashgan ko'p kristallardan tuzilgan jismga",
+        "Yaxlit kristalldan iborat jismga",
+        "Atomlari tartibsiz joylashgan jismga",
+        "Suyuqlikka o'xshash jismga"
+      ],
+      "t": 0,
+      "izoh": "Bir-biriga nisbatan tartibsiz joylashgan ko'p kristallardan tuzilgan jism polikristall deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#fee22d7d"
+    },
+    {
+      "q": "Lotinchada «poli» so'zi nimani bildiradi?",
+      "v": [
+        "«Ko'p» degan ma'noni",
+        "«Bir» degan ma'noni",
+        "«Tosh» degan ma'noni",
+        "«Katta» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "Lotinchada poli so'zi ko'p degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#bae72f87"
+    },
+    {
+      "q": "Polikristall jismlarga misollar qaysilar?",
+      "v": [
+        "Qotib qolgan tuz parchasi va chaqmoq qand",
+        "Shisha va smola",
+        "Olmos va grafit",
+        "Novvot va shakar zarrachasi"
+      ],
+      "t": 0,
+      "izoh": "Masalan, qotib qolgan tuz parchasi va chaqmoq qand polikristallardir; ular mayda kristallchalardan tashkil topgan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#01ee2b8a"
+    },
+    {
+      "q": "Monokristall deb qanday jismga aytiladi?",
+      "v": [
+        "Jism yaxlit kristalldan iborat bo'lsa",
+        "Jism ko'p kristallardan iborat bo'lsa",
+        "Jism atomlari tartibsiz bo'lsa",
+        "Jism suyuq holatda bo'lsa"
+      ],
+      "t": 0,
+      "izoh": "Agar jism yaxlit kristalldan iborat bo'lsa, bunday jism monokristall deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#795b3436"
+    },
+    {
+      "q": "Lotinchada «mono» so'zi nimani bildiradi?",
+      "v": [
+        "«Bir» degan ma'noni",
+        "«Ko'p» degan ma'noni",
+        "«Kichik» degan ma'noni",
+        "«Yaxlit» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "Lotinchada mono so'zi bir degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#d1896866"
+    },
+    {
+      "q": "Monokristall jismlarga misol keltiring.",
+      "v": [
+        "Alohida mayda osh tuzi, shakar zarrachalari, novvot",
+        "Metall parchalari",
+        "Shisha idishlar",
+        "Plastmassa buyumlar"
+      ],
+      "t": 0,
+      "izoh": "Alohida mayda osh tuzi, shakar zarrachalari monokristallardir; suvda eritilgan shakarni o'stirish orqali tayyorlangan novvot ham monokristalldir.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#ed8627e1"
+    },
+    {
+      "q": "Monokristall qanday xususiyatga ega?",
+      "v": [
+        "Anizotrop xususiyatga",
+        "Izotrop xususiyatga",
+        "Magnit xususiyatga",
+        "Oquvchanlik xususiyatiga"
+      ],
+      "t": 0,
+      "izoh": "Monokristall anizotrop xususiyatga ega bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#786a8e43"
+    },
+    {
+      "q": "Monokristallar qaysi sohada keng qo'llaniladi?",
+      "v": [
+        "Elektronika sohasida",
+        "Qishloq xo'jaligida",
+        "Oziq-ovqat sanoatida",
+        "To'qimachilikda"
+      ],
+      "t": 0,
+      "izoh": "Ayrim maqsadlarda, masalan, elektronika sohalarida monokristallar keng qo'llaniladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#a0e398cc"
+    },
+    {
+      "q": "Metall parchasi nimalardan tashkil topgan?",
+      "v": [
+        "Juda ko'p mayda kristallchalardan",
+        "Yaxlit bitta kristalldan",
+        "Tartibsiz atomlardan",
+        "Molekulalardan"
+      ],
+      "t": 0,
+      "izoh": "Metallar parchasi juda ko'p mayda kristallchalardan tashkil topgan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#a28b62ab"
+    },
+    {
+      "q": "Metall quyishda hosil bo'lgan mayda kristallchalar qanday joylashadi?",
+      "v": [
+        "Bir-biriga nisbatan tartibsiz joylashadi",
+        "Aniq tartibli joylashadi",
+        "Qatlam-qatlam joylashadi",
+        "Shar shaklida joylashadi"
+      ],
+      "t": 0,
+      "izoh": "Metall quyishda bunday kristallchalar bir-biriga nisbatan tartibsiz joylashib qoladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#d3e01468"
+    },
+    {
+      "q": "Metallarning fizik xossalari barcha yo'nalishlarda bir xil bo'lishining sababi nima?",
+      "v": [
+        "Ular tartibsiz joylashgan mayda kristallchalardan tashkil topgan",
+        "Ular yaxlit kristalldan iborat",
+        "Ular amorf jismlar",
+        "Ular suyuqlik xossasiga ega"
+      ],
+      "t": 0,
+      "izoh": "Kristallchalar tartibsiz joylashgani uchun bunday metallarning fizik xossalari barcha yo'nalishlarda bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m35-kristall-amorf#b7bf998e"
+    },
+    {
+      "q": "Amorf jismlarda atom (molekula)lar qanday joylashgan?",
+      "v": [
+        "Qat'iy tartibda joylashmagan",
+        "Aniq tartibli vaziyatlarda",
+        "Kristall panjara tugunlarida",
+        "Qatlam-qatlam tartibda"
+      ],
+      "t": 0,
+      "izoh": "Kristallardan farqli ravishda amorf jismlarda atom (molekula)lar qat'iy tartibda joylashgan emas.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#a6ede361"
+    },
+    {
+      "q": "Amorf jismlarga misollar qaysilar?",
+      "v": [
+        "Shisha, smola, plastmassalar",
+        "Osh tuzi, olmos, novvot",
+        "Mis, temir, po'lat",
+        "Shakar, chaqmoq qand, grafit"
+      ],
+      "t": 0,
+      "izoh": "Shisha, smola, plastmassalarni amorf jismlarga misol qilib keltirish mumkin.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#476fc9f0"
+    },
+    {
+      "q": "Izotropiya nima?",
+      "v": [
+        "Jismning fizik xossalari uning tomonlari bo'yicha yo'nalishlariga bog'liq bo'lmasligi",
+        "Jismning fizik xossalari yo'nalishga bog'liqligi",
+        "Jismning yuqori zichligi",
+        "Jismning kuchli tortishish xossasi"
+      ],
+      "t": 0,
+      "izoh": "Jismning fizik xossalari uning tomonlari bo'yicha yo'nalishlariga bog'liq bo'lmasligi izotropiya deb ataladi. Amorf jismlar izotrop xossaga ega.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#d7bcb4e0"
+    },
+    {
+      "q": "Yunoncha «izos» so'zi nimani bildiradi?",
+      "v": [
+        "«Bir xil» degan ma'noni",
+        "«Bir xil emas» degan ma'noni",
+        "«Yo'nalish» degan ma'noni",
+        "«Ko'p» degan ma'noni"
+      ],
+      "t": 0,
+      "izoh": "Yunoncha izos so'zi bir xil degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#392e5984"
+    },
+    {
+      "q": "Amorf jismlarning fizik xossalari qanday?",
+      "v": [
+        "Barcha yo'nalishlarda bir xil",
+        "Har xil yo'nalishlarda har xil",
+        "Faqat bir yo'nalishda namoyon bo'ladi",
+        "Yo'nalishga qarab o'zgarib turadi"
+      ],
+      "t": 0,
+      "izoh": "Amorf jismlarning fizik xossalari barcha yo'nalishlarda bir xil bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#34378297"
+    },
+    {
+      "q": "Sanoat, qurilish, energetika, aloqa sohalarida asosan qanday holatdagi mahsulotlar ishlatiladi?",
+      "v": [
+        "Polikristall holatdagi",
+        "Monokristall holatdagi",
+        "Amorf holatdagi",
+        "Suyuq holatdagi"
+      ],
+      "t": 0,
+      "izoh": "Sanoat, qurilish, energetika, aloqa va boshqa sohalarda, asosan, polikristall holatdagi mahsulotlar ishlatiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#72679bbb"
+    },
+    {
+      "q": "Amorf jismlarni zarb bilan urilsa nima bo'ladi?",
+      "v": [
+        "U parchalanadi — qattiq jismlardek sinuvchan bo'ladi",
+        "U egilib qoladi",
+        "U cho'zilib ketadi",
+        "U yumshab qoladi"
+      ],
+      "t": 0,
+      "izoh": "Amorf jismni zarb bilan urilsa, u parchalanadi — amorf jismlar qattiq jismlardek sinuvchan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#3691f42a"
+    },
+    {
+      "q": "Amorf jismga kuchlar uzoq ta'sir etsa, nima kuzatiladi?",
+      "v": [
+        "Amorf jism sezilarli darajada oqadi — suyuqliklardek oquvchan bo'ladi",
+        "Jism darhol sinadi",
+        "Jism qattiqlashadi",
+        "Jism kristallga aylanadi"
+      ],
+      "t": 0,
+      "izoh": "Kuchlar uzoq ta'sir etsa, amorf jism sezilarli darajada oqadi — tashqi ta'sir ostida amorf jismlar ham sinuvchan, ham oquvchan bo'ladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#ff1e42d6"
+    },
+    {
+      "q": "Uzoq vaqt vertikal holatda turgan deraza oynasida qanday hodisa aniqlangan?",
+      "v": [
+        "Oynaning pastki qismi qalinlashib qolgan",
+        "Oyna yorilib ketgan",
+        "Oyna ingichkalashgan",
+        "Oyna rangini o'zgartirgan"
+      ],
+      "t": 0,
+      "izoh": "Uzoq vaqt vertikal holatda turgan deraza oynasining qalinligi o'lchanganda, uning pastki qismi qalinlashib qolganligi aniqlangan — shisha ham ma'lum darajada oqadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m35-kristall-amorf#d8a97e56"
+    },
+    {
+      "q": "Kristall va amorf jismlarning erish temperaturalari bo'yicha farqi nimada?",
+      "v": [
+        "Kristall jismlar aniq erish temperaturasiga ega, amorf jismlar esa aniq erish temperaturasiga ega emas",
+        "Ikkalasi ham aniq erish temperaturasiga ega",
+        "Faqat amorf jismlar aniq erish temperaturasiga ega",
+        "Ikkalasi ham erish temperaturasiga ega emas"
+      ],
+      "t": 0,
+      "izoh": "Kristall jismlar aniq erish temperaturasiga ega; amorf jismlar qizdirilganda avval yumshab, keyin astagina suyuqlikka o'ta boradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_9_ozb_m35-kristall-amorf#61d55be5"
+    },
+    {
+      "q": "Beruniy mineralogiya sohasida qanday ishlarni amalga oshirgan?",
+      "v": [
+        "O'zi kashf qilgan asboblar yordamida 50 dan ortiq moddaning solishtirma og'irligini aniqlagan",
+        "Kristall panjarani kashf etgan",
+        "Anizotropiya hodisasini ochgan",
+        "Birinchi mikroskopni yaratgan"
+      ],
+      "t": 0,
+      "izoh": "Beruniy o'zi kashf qilgan asboblar yordamida 50 dan ortiq moddaning solishtirma og'irligini aniqladi, xususiyatini o'rgandi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#f21c5b0d"
+    },
+    {
+      "q": "Beruniyning mineralogiya sohasidagi ishlarini kim davom ettirgan?",
+      "v": [
+        "Shogirdi Abdurahmon Hozin",
+        "Al-Xorazmiy",
+        "Ibn Sino",
+        "Ulug'bek"
+      ],
+      "t": 0,
+      "izoh": "Beruniyning mineralogiya sohasidagi ishlarini uning shogirdi Abdurahmon Hozin davom ettirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#246adb4b"
+    },
+    {
+      "q": "Beruniy mineralogiya sohasidagi tadqiqotlarini qaysi asarida yozib qoldirgan?",
+      "v": [
+        "«Mineralogiya» asarida",
+        "«Geodeziya» asarida",
+        "«Astronomiya» asarida",
+        "«Kimyo» asarida"
+      ],
+      "t": 0,
+      "izoh": "Bu sohadagi tadqiqot ishlarini Beruniy o'zining «Mineralogiya» asarida yozib qoldirdi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#0c0c6129"
+    },
+    {
+      "q": "Grafit kristallini qatlamlarga ajratish oson, perpendikulyar yo'nalishda esa qiyin. Bu qanday xossani ko'rsatadi?",
+      "v": [
+        "Anizotropiyani",
+        "Izotropiyani",
+        "Oquvchanlikni",
+        "Sinuvchanlikni"
+      ],
+      "t": 0,
+      "izoh": "Fizik xossalarning yo'nalishga bog'liqligi — anizotropiya; grafit kristall jism bo'lgani uchun anizotrop.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "fizika_9_ozb_m35-kristall-amorf#7959da37"
+    },
+    {
+      "q": "Qanday kristallar monokristallar deb ataladi?",
+      "v": [
+        "Yaxlit kristalldan iborat jismlardagi kristallar",
+        "Tartibsiz joylashgan kristallchalar",
+        "Qatlamli kristallar",
+        "Katta o'lchamli kristallar"
+      ],
+      "t": 0,
+      "izoh": "Yaxlit kristalldan iborat jismlar monokristallar deb ataladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_9_ozb_m35-kristall-amorf#26a9d6f6"
+    }
+  ]
+}

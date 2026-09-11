@@ -1,0 +1,1609 @@
+{
+  "nom": "Kombinatorikaning asosiy qoidalari",
+  "bolim": "To'plam, mantiq, ma'lumotlar tahlili, kombinatorika va ehtimollar nazariyasi",
+  "blok": "disk",
+  "rasmiyBolim": 7,
+  "sertifikat": true,
+  "savollar": [
+    {
+      "q": "Dilnoza ishlaydigan oshxonada 5 xil birinchi taom, 4 xil ikkinchi taom va 3 xil ichimlik taklif etiladi. Uchta taomdan iborat tushlikni necha xil usulda tanlash mumkin?",
+      "v": [
+        "12",
+        "17",
+        "20",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "Har bosqichdagi tanlov qolganlariga bog'liq emas, shuning uchun ko'paytma qoidasi ishlaydi. Birinchi taom 5 xil, ikkinchisi 4 xil, ichimlik 3 xil tanlanadi: 5·4·3 = 60. 12 — yig'indi qoidasini noo'rin qo'llash, 17 — 5 + 4·3 tarzida amallar tartibini buzish, 20 — ichimlikni hisobga olmaslik. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ecf09d93"
+    },
+    {
+      "q": "Aziza garderobida 3 ta ko'ylak, 7 ta yubka va 4 juft tufli bor. Har turdan bittadan buyum tanlab, u nechta har xil to'plam hosil qila oladi?",
+      "v": [
+        "84",
+        "21",
+        "28",
+        "14"
+      ],
+      "t": 0,
+      "izoh": "Uch bosqichli mustaqil tanlov ko'paytma qoidasiga bo'ysunadi: 3·7·4 = 84. 21 — tuflini unutish (3·7), 28 — ko'ylakni unutish (7·4), 14 — barcha sonlarni qo'shib yuborish. Javob: 84.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#93825c7e"
+    },
+    {
+      "q": "Kitob javonida 8 xil detektiv va 5 xil sarguzasht romani turibdi. Jasur har ikkala turdan bittadan kitob olmoqchi. Nechta har xil juftlik tanlashi mumkin?",
+      "v": [
+        "13",
+        "28",
+        "40",
+        "80"
+      ],
+      "t": 2,
+      "izoh": "Detektivni 8 xil, sarguzashtni 5 xil tanlash mumkin va tanlovlar bir-biriga bog'liq emas: 8·5 = 40. 13 — yig'indi qoidasini noo'rin qo'llash, 28 — har bir sondan bittadan ayirib ko'paytirish, 80 — ikki kitobning tartibini ortiqcha hisoblash. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kopaytma-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ceb423b7"
+    },
+    {
+      "q": "Restoran menyusida 3 xil salat, 6 xil issiq taom, 4 xil shirinlik va 2 xil choy bor. To'liq tushlik har turdan bittadan olinsa, nechta variant hosil bo'ladi?",
+      "v": [
+        "15",
+        "144",
+        "72",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "To'rt bosqichning har birida tanlov mustaqil, demak sonlar ko'paytiriladi: 3·6·4·2 = 144. 72 — choyni tashlab ketish (3·6·4), 48 — salatni tashlab ketish (6·4·2), 15 — hamma sonni qo'shish. Javob: 144.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kopaytma-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#605f2c0e"
+    },
+    {
+      "q": "Toshkentdan Samarqandga kuniga 9 ta avtobus va 4 ta poyezd qatnaydi. Bekzod faqat bitta transportda yo'lga chiqadi. Nechta har xil tanlov mavjud?",
+      "v": [
+        "13",
+        "9",
+        "36",
+        "5"
+      ],
+      "t": 0,
+      "izoh": "Avtobus va poyezd bir vaqtda tanlanmaydi, ya'ni variantlar bir-birini istisno qiladi — bu yerda yig'indi qoidasi ishlaydi: 9 + 4 = 13. 36 — ko'paytma qoidasini noo'rin qo'llash, 9 — faqat avtobuslarni sanash, 5 — ayirma olish. Javob: 13.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#71895481"
+    },
+    {
+      "q": "Kutubxonada 12 ta o'zbek tilidagi va 8 ta rus tilidagi lug'at bor. O'quvchi bitta lug'atni uyga olib ketmoqchi. Nechta usul bilan tanlashi mumkin?",
+      "v": [
+        "96",
+        "4",
+        "20",
+        "12"
+      ],
+      "t": 2,
+      "izoh": "Faqat bitta lug'at olinadi, demak variantlar bir-birini istisno qiladi va yig'indi qoidasi qo'llanadi: 12 + 8 = 20. 96 — ko'paytma qoidasini qo'llash xatosi, 4 — ayirma, 12 — faqat bir tildagi lug'atlarni sanash. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#e774590e"
+    },
+    {
+      "q": "Do'konda 5 xil qora, 7 xil ko'k va 4 xil qizil ruchka sotiladi. Malika o'ziga faqat bitta ruchka sotib oladi. Nechta har xil tanlov bor?",
+      "v": [
+        "9",
+        "16",
+        "35",
+        "140"
+      ],
+      "t": 1,
+      "izoh": "Uch guruhning faqat bittasidan bitta ruchka olinadi va guruhlar kesishmaydi: 5 + 7 + 4 = 16. 140 — ko'paytma qoidasini noo'rin qo'llash, 35 — ikki guruhni ko'paytirish, 9 — bitta guruhni tashlab ketish. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#477ce3a5"
+    },
+    {
+      "q": "Kimyo to'garagida 14 nafar o'g'il va 11 nafar qiz shug'ullanadi. Ulardan bittasi navbatchi etib tayinlanadi. Nechta usul bilan tayinlash mumkin?",
+      "v": [
+        "154",
+        "3",
+        "11",
+        "25"
+      ],
+      "t": 3,
+      "izoh": "Navbatchi bitta bo'ladi — o'g'il yoki qiz, shuning uchun variantlar qo'shiladi: 14 + 11 = 25. 154 — ko'paytma qoidasini qo'llash, 3 — ayirma olish, 11 — faqat qizlarni sanab qolish. Javob: 25.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "yigindi-qoidasi-tanlov",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ffbabc31"
+    },
+    {
+      "q": "Toshkentdan Buxoroga poyezdda 3 xil, avtobusda 5 xil va samolyotda 2 xil yo'nalish bor; Buxorodan Xivaga esa 4 xil avtobus reysi bor. Toshkentdan Xivaga Buxoro orqali nechta har xil marshrut bilan borish mumkin?",
+      "v": [
+        "10",
+        "14",
+        "40",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Birinchi bosqichda transport turlari bir-birini istisno qiladi, shuning uchun ular qo'shiladi: 3 + 5 + 2 = 10 yo'nalish. Ikkinchi bosqich mustaqil, demak ko'paytiriladi: 10·4 = 40. 14 — hamma sonni qo'shish, 120 — hammasini ko'paytirish, 10 — ikkinchi bosqichni unutish. Javob: 40.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-kopaytma-birga",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d974ee19"
+    },
+    {
+      "q": "Farhod uyidan maktabgacha 3 ta yo'l bilan, maktabdan sport zaligacha 4 ta yo'l bilan bora oladi. Bundan tashqari uyidan to'g'ridan-to'g'ri sport zaliga olib boradigan 5 ta yo'l bor. Sport zaliga borishning nechta usuli mavjud?",
+      "v": [
+        "12",
+        "17",
+        "35",
+        "60"
+      ],
+      "t": 1,
+      "izoh": "Maktab orqali yurish ikki bosqichli, ko'paytma qoidasi beradi: 3·4 = 12 usul. To'g'ridan-to'g'ri borish alohida 5 usul beradi va bu variantlar birinchisi bilan kesishmaydi: 12 + 5 = 17. 12 — to'g'ri yo'lni unutish, 35 — (3 + 4)·5 tarzida qoidalarni almashtirish, 60 — hammasini ko'paytirish. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-kopaytma-birga",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#5249a5b0"
+    },
+    {
+      "q": "Kafeda «to'liq tushlik» salat (4 xil), asosiy taom (2 xil) va ichimlikdan (2 xil) iborat, «yengil tushlik» esa faqat sendvichdan (3 xil) iborat. Mijoz bitta tushlikni nechta usulda tanlay oladi?",
+      "v": [
+        "11",
+        "16",
+        "48",
+        "19"
+      ],
+      "t": 3,
+      "izoh": "To'liq tushlik uch bosqichli tanlov bo'lgani uchun 4·2·2 = 16 variant beradi. Yengil tushlik alohida 3 variant beradi va ikki tur bir vaqtda tanlanmaydi: 16 + 3 = 19. 16 — yengil tushlikni unutish, 48 — barcha sonlarni ko'paytirish, 11 — hammasini qo'shish. Javob: 19.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "yigindi-va-kopaytma-birga",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#0f35d3cf"
+    },
+    {
+      "q": "Kutubxonada 5 xil matematika, 7 xil fizika va 6 xil kimyo kitobi bor. Sanjar bitta matematika kitobi va bitta tabiiy fan (fizika yoki kimyo) kitobini olmoqchi. Nechta usul bilan tanlaydi?",
+      "v": [
+        "65",
+        "18",
+        "35",
+        "210"
+      ],
+      "t": 0,
+      "izoh": "Tabiiy fan kitobi fizika yoki kimyo bo'lishi mumkin, bu variantlar kesishmaydi: 7 + 6 = 13. Matematika kitobi mustaqil tanlangani uchun ko'paytiriladi: 5·13 = 65. 18 — hamma sonni qo'shish, 35 — kimyoni unutish, 210 — uchala sonni ko'paytirish. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "yigindi-va-kopaytma-birga",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ca0df525"
+    },
+    {
+      "q": "1, 3, 5, 7, 9 raqamlaridan foydalanib, raqamlari takrorlanishi mumkin bo'lgan nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "60",
+        "125",
+        "15",
+        "243"
+      ],
+      "t": 1,
+      "izoh": "Takrorlanishga ruxsat berilgani uchun har uchala xonaga beshta raqamning istalganini qo'yish mumkin: 5·5·5 = 125. 60 — takrorlanishni taqiqlash (5·4·3), 15 — 5·3 tarzida noto'g'ri ko'paytirish, 243 — asos va ko'rsatkichni almashtirish. Javob: 125.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-takrorli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#42afbf2e"
+    },
+    {
+      "q": "0, 2, 4, 6, 8 raqamlaridan raqamlari takrorlanishi mumkin bo'lgan holda nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "48",
+        "125",
+        "20",
+        "100"
+      ],
+      "t": 3,
+      "izoh": "Birinchi xonaga 0 ni qo'yib bo'lmaydi, u yerda 4 ta variant qoladi; qolgan ikki xonada beshtadan variant bor: 4·5·5 = 100. 125 — birinchi xonada ham nolga ruxsat berish, 48 — takrorlanishni taqiqlash, 20 — bitta xonani hisobdan tashlab ketish. Javob: 100.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-takrorli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b407cbef"
+    },
+    {
+      "q": "Telefon kodi 4 ta katakdan iborat va har bir katakka 0 dan 9 gacha bo'lgan raqamlardan biri yoziladi. Nechta har xil kod tuzish mumkin?",
+      "v": [
+        "10000",
+        "9000",
+        "5040",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "Har bir katak uchun 10 ta variant bor va ular bir-biriga bog'liq emas: 10·10·10·10 = 10000. 9000 — birinchi raqam nol bo'lmaydi degan ortiqcha cheklov, 5040 — takrorlanishni taqiqlash (10·9·8·7), 40 — 10·4 tarzida ko'paytirish. Javob: 10000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-takrorli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b9ad861f"
+    },
+    {
+      "q": "Uch xonali sonlarning nechtasi faqat 2, 3, 4 va 5 raqamlaridan tuzilgan bo'lishi mumkin?",
+      "v": [
+        "16",
+        "256",
+        "64",
+        "81"
+      ],
+      "t": 2,
+      "izoh": "Takrorlanish taqiqlanmagani uchun har bir xonaga to'rtta raqamdan istalgani qo'yiladi: 4·4·4 = 64. 256 — to'rt xonali sonlarni sanab yuborish, 16 — faqat ikki xonani hisoblash, 81 — asos va ko'rsatkichni almashtirish. Javob: 64.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-takrorli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#9e05e1ec"
+    },
+    {
+      "q": "2, 4, 6, 7, 8, 9 raqamlaridan raqamlari takrorlanmaydigan nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "120",
+        "216",
+        "18",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "Birinchi xonaga oltita raqamdan biri, ikkinchisiga qolgan beshtadan biri, uchinchisiga qolgan to'rttadan biri qo'yiladi: 6·5·4 = 120. 216 — takrorlanishga ruxsat berish, 18 — 6·3 tarzida ko'paytirish, 15 — raqamlar sonini qo'shish. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b9179b22"
+    },
+    {
+      "q": "1, 2, 3, 4, 5, 6 raqamlaridan raqamlari takrorlanmaydigan nechta to'rt xonali son hosil qilish mumkin?",
+      "v": [
+        "1296",
+        "720",
+        "360",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "Har bir yangi xonada ishlatish mumkin bo'lgan raqamlar soni bittaga kamayadi: 6·5·4·3 = 360. 1296 — takrorlanishga ruxsat berish, 720 — oltala raqamni ham joylashtirish, 30 — faqat ikki xonani hisoblash. Javob: 360.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#5eb394dd"
+    },
+    {
+      "q": "Nodira 4, 5, 6, 7, 9 raqamlari yozilgan beshta kartochkadan ikkitasini yonma-yon qo'yib ikki xonali son tuzmoqchi. Nechta har xil son hosil bo'ladi?",
+      "v": [
+        "9",
+        "25",
+        "10",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Birinchi kartochka besh xil tanlanadi, ikkinchisi qolgan to'rttadan olinadi, chunki bitta kartochka ikki marta ishlatilmaydi: 5·4 = 20. 25 — takrorlanishga ruxsat berish, 10 — kartochkalarning tartibini hisobga olmaslik, 9 — tanlovlar sonini qo'shib qo'yish. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ab0ec1f1"
+    },
+    {
+      "q": "0, 1, 3, 5, 7 raqamlaridan raqamlari takrorlanmaydigan nechta uch xonali son tuzish mumkin?",
+      "v": [
+        "36",
+        "48",
+        "60",
+        "100"
+      ],
+      "t": 1,
+      "izoh": "Birinchi xonada 0 ishlatilmaydi, u yerda 4 ta variant qoladi. Ikkinchi xonaga nolni qaytarib qo'shsak yana 4 ta, uchinchisiga 3 ta variant qoladi: 4·4·3 = 48. 60 — nolni birinchi xonaga qo'yishga ruxsat berish, 100 — takrorlanishga yo'l qo'yish, 36 — ikkinchi xonada nolni hisobga olmaslik. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#caab980d"
+    },
+    {
+      "q": "1, 2, 3, 4, 5 raqamlaridan raqamlari takrorlanmaydigan nechta juft uch xonali son tuzish mumkin?",
+      "v": [
+        "40",
+        "50",
+        "24",
+        "20"
+      ],
+      "t": 2,
+      "izoh": "Son juft bo'lishi uchun oxirgi raqam 2 yoki 4 bo'ladi — 2 ta variant. Oxirgi raqam tanlangach birinchi xonaga qolgan 4 ta, ikkinchisiga qolgan 3 ta raqam qoladi: 2·4·3 = 24. 50 — takrorlanishga ruxsat berish, 40 — oxirgi raqam band bo'lganini hisobga olmaslik, 20 — oxirgi raqamni tanlash yagona usulda deb hisoblash. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-juftlik-sharti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#6ef19a3b"
+    },
+    {
+      "q": "0, 1, 2, 3, 4, 5, 6 raqamlaridan raqamlari takrorlanmaydigan nechta toq uch xonali son tuzish mumkin?",
+      "v": [
+        "75",
+        "90",
+        "126",
+        "147"
+      ],
+      "t": 0,
+      "izoh": "Toq bo'lishi uchun oxirgi raqam 1, 3 yoki 5 bo'ladi — 3 ta variant. Birinchi xona 0 bo'la olmaydi va bitta raqam allaqachon band, shuning uchun u yerda 5 ta variant qoladi; o'rta xonaga esa qolgan 5 ta raqamdan biri qo'yiladi: 3·5·5 = 75. 90 — nolni birinchi xonaga qo'yishga ruxsat berish, 126 — takrorlanishga yo'l qo'yish, 147 — ikkala cheklovni ham unutish. Javob: 75.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-juftlik-sharti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#98065856"
+    },
+    {
+      "q": "2, 3, 5, 7, 8 raqamlaridan raqamlari takrorlanishi mumkin bo'lgan holda nechta juft to'rt xonali son tuzish mumkin?",
+      "v": [
+        "625",
+        "250",
+        "48",
+        "125"
+      ],
+      "t": 1,
+      "izoh": "Son juft bo'lishi uchun oxirgi raqam 2 yoki 8 bo'lishi kerak — 2 ta variant. Qolgan uchta xonaga beshta raqamdan istalgani qo'yiladi: 5·5·5·2 = 250. 625 — juftlik shartini unutish, 48 — takrorlanishni taqiqlab hisoblash, 125 — oxirgi xonadagi ikkita variantni hisobga olmaslik. Javob: 250.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-juftlik-sharti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b96dd5b3"
+    },
+    {
+      "q": "4, 5, 6, 7, 9 raqamlaridan raqamlari takrorlanmaydigan nechta toq uch xonali son tuzish mumkin?",
+      "v": [
+        "27",
+        "60",
+        "75",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Toq son oxirgi raqami 5, 7 yoki 9 bo'lganda hosil bo'ladi — 3 ta variant. Qolgan ikki xonaga 4 ta va 3 ta raqam qoladi: 3·4·3 = 36. 60 — toqlik shartini unutish, 75 — takrorlanishga ruxsat berish, 27 — har bir xonada 3 tadan variant deb hisoblash. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-juftlik-sharti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b172f5f5"
+    },
+    {
+      "q": "1, 2, 3, 4, 5, 6 raqamlaridan raqamlari takrorlanmaydigan uch xonali sonlar tuzildi. Ularning nechtasi 400 dan katta?",
+      "v": [
+        "20",
+        "60",
+        "108",
+        "120"
+      ],
+      "t": 1,
+      "izoh": "Son 400 dan katta bo'lishi uchun birinchi raqam 4, 5 yoki 6 bo'lishi kerak — 3 ta variant. Qolgan ikki xonaga 5 ta va 4 ta raqam qoladi: 3·5·4 = 60. 120 — shartni unutib barcha sonlarni sanash, 108 — takrorlanishga ruxsat berish, 20 — birinchi xonadagi tanlovni hisobga olmaslik. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-oraliq-shart",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#2df7d21c"
+    },
+    {
+      "q": "1, 2, 4, 5, 6, 8 raqamlaridan raqamlari takrorlanmaydigan to'rt xonali sonlar tuzildi. Ularning nechtasi 4000 dan katta?",
+      "v": [
+        "360",
+        "864",
+        "1296",
+        "240"
+      ],
+      "t": 3,
+      "izoh": "Birinchi raqam 4, 5, 6 yoki 8 bo'lishi kerak — 4 ta variant. Qolgan uch xonaga 5 ta, 4 ta va 3 ta raqam qoladi: 4·5·4·3 = 240. 360 — shartni unutib barcha to'rt xonali sonlarni sanash, 864 — takrorlanishga ruxsat berish, 1296 — ham shartni, ham takrorlanish taqiqini unutish. Javob: 240.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-oraliq-shart",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#cddeec9e"
+    },
+    {
+      "q": "0, 1, 2, 4, 6, 8, 9 raqamlaridan raqamlari takrorlanmaydigan uch xonali sonlar tuzilmoqda. Ularning nechtasi 600 dan katta?",
+      "v": [
+        "30",
+        "180",
+        "90",
+        "147"
+      ],
+      "t": 2,
+      "izoh": "Birinchi raqam 6, 8 yoki 9 bo'lishi kerak — 3 ta variant. Qolgan ikki xonada nol ham ishlatilishi mumkin, u yerda 6 ta va 5 ta raqam qoladi: 3·6·5 = 90. 180 — shartni unutib barcha uch xonali sonlarni sanash, 147 — takrorlanishga ruxsat berish, 30 — birinchi xonadagi tanlovni hisobga olmaslik. Javob: 90.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-oraliq-shart",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#39d4a0c8"
+    },
+    {
+      "q": "Zohid 1 dan 8 gacha raqamlar yozilgan sakkizta kartochkadan uchtasini tanlab uch xonali son tuzdi. Bunday sonlarning nechtasi 500 dan katta bo'lishi mumkin?",
+      "v": [
+        "168",
+        "42",
+        "256",
+        "336"
+      ],
+      "t": 0,
+      "izoh": "Birinchi raqam 5, 6, 7 yoki 8 bo'ladi — 4 ta variant. Kartochkalar takrorlanmagani uchun qolgan ikki xonaga 7 ta va 6 ta raqam qoladi: 4·7·6 = 168. 336 — shartni unutib barcha sonlarni sanash, 256 — takrorlanishga ruxsat berish, 42 — birinchi xonadagi tanlovni hisobga olmaslik. Javob: 168.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-oraliq-shart",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d983936c"
+    },
+    {
+      "q": "2, 3, 5, 6, 9 raqamlaridan raqamlari takrorlanmaydigan nechta uch xonali son 5 ga bo'linadi?",
+      "v": [
+        "20",
+        "25",
+        "60",
+        "12"
+      ],
+      "t": 3,
+      "izoh": "Son 5 ga bo'linishi uchun oxirgi raqam 5 bo'lishi shart, chunki berilganlar orasida nol yo'q. Qolgan ikki xonaga 4 ta va 3 ta raqam qoladi: 1·4·3 = 12. 60 — bo'linish shartini unutish, 25 — takrorlanishga ruxsat berish, 20 — beshlik allaqachon ishlatilganini hisobga olmaslik. Javob: 12.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "son-tuzish-bolinuvchanlik",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#a71c5b07"
+    },
+    {
+      "q": "0, 1, 2, 4, 5 raqamlarining har biridan bir martadan foydalanib besh xonali sonlar tuzildi. Ularning nechtasi 5 ga bo'linadi?",
+      "v": [
+        "48",
+        "42",
+        "96",
+        "18"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi raqam 0 yoki 5 bo'lishi kerak. Oxiri nol bo'lsa qolgan to'rtta raqam ixtiyoriy tartibda joylashadi: 4·3·2·1 = 24 ta son. Oxiri 5 bo'lsa birinchi xona nol bo'la olmaydi: 3·3·2·1 = 18 ta son. Jami 24 + 18 = 42. 48 — ikkala holatda ham nol haqidagi cheklovni unutish, 96 — bo'linish shartini butunlay unutish, 18 — faqat bitta holni sanab qolish. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "son-tuzish-bolinuvchanlik",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#522aaa51"
+    },
+    {
+      "q": "Karim 1, 2, 3, 4 raqamlarining har biridan bir martadan foydalanib to'rt xonali sonlar tuzdi. Ular orasida nechtasi 4 ga bo'linadi?",
+      "v": [
+        "6",
+        "12",
+        "24",
+        "3"
+      ],
+      "t": 0,
+      "izoh": "Son 4 ga bo'linishi uchun uning oxirgi ikki raqamidan tuzilgan son 4 ga karrali bo'lishi kerak. Berilgan raqamlardan bunday tugashlar faqat 12, 24 va 32 — 3 ta. Har birida oldingi ikki xona qolgan ikkita raqamdan 2 xil tartibda tuziladi: 3·2 = 6. 24 — shartni unutib barcha sonlarni sanash, 12 — 4 ga emas, 2 ga bo'linishni tekshirish, 3 — tugash variantlarini sanab, tartiblarni unutish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-tuzish-bolinuvchanlik",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#5b0da33c"
+    },
+    {
+      "q": "3, 4, 5, 6, 7 raqamlaridan raqamlari takrorlanmaydigan uch xonali sonlar tuzildi. Ularning nechtasi 3 ga bo'linadi?",
+      "v": [
+        "18",
+        "36",
+        "24",
+        "60"
+      ],
+      "t": 2,
+      "izoh": "Son 3 ga bo'linishi uchun raqamlari yig'indisi 3 ga karrali bo'lishi kerak. Beshta raqamdan tuzilgan uchliklar orasida shunday yig'indi beradiganlari: 3, 4, 5 va 3, 5, 7 va 4, 5, 6 va 5, 6, 7 — jami 4 ta. Har bir uchlik 6 xil tartibda joylashadi: 4·6 = 24. 60 — bo'linish shartini unutish, 36 — 6 ta uchlik deb xato sanash, 18 — 3 ta uchlik deb xato sanash. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "son-tuzish-bolinuvchanlik",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#10833bf8"
+    },
+    {
+      "q": "Eshik kodi 4 ta belgidan iborat: birinchisi lotin alifbosining 26 ta bosh harfidan biri, qolgan uchtasi esa 0 dan 9 gacha raqam. Nechta har xil kod tuzish mumkin?",
+      "v": [
+        "26000",
+        "18720",
+        "260",
+        "456976"
+      ],
+      "t": 0,
+      "izoh": "Birinchi belgi 26 xil, keyingi uchta belgining har biri 10 xil tanlanadi va tanlovlar mustaqil: 26·10·10·10 = 26000. 18720 — raqamlar takrorlanmaydi deb hisoblash, 260 — faqat ikkita belgini hisoblash, 456976 — hamma o'ringa ham harf qo'yish. Javob: 26000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kod-parol-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#26bf36c2"
+    },
+    {
+      "q": "Seyf kodi 5 ta raqamdan iborat va birinchi raqam 0 bo'lishi mumkin emas. Nechta har xil kod tuzish mumkin?",
+      "v": [
+        "100000",
+        "27216",
+        "90000",
+        "45"
+      ],
+      "t": 2,
+      "izoh": "Birinchi o'rin uchun 9 ta variant bor, qolgan to'rt o'rinning har biri uchun 10 tadan variant bor: 9·10·10·10·10 = 90000. 100000 — nol haqidagi cheklovni unutish, 27216 — raqamlar takrorlanmaydi deb hisoblash, 45 — 9·5 tarzida ko'paytirish. Javob: 90000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kod-parol-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#2f6383f8"
+    },
+    {
+      "q": "Talaba paroli avval 3 ta lotin kichik harf (26 ta harf), keyin 2 ta raqamdan iborat; belgilar takrorlanishi mumkin. Parollarning umumiy soni nechta?",
+      "v": [
+        "676000",
+        "1404000",
+        "17676",
+        "1757600"
+      ],
+      "t": 3,
+      "izoh": "Har bir harf 26 xil, har bir raqam 10 xil tanlanadi va tanlovlar mustaqil: 26·26·26·10·10 = 1757600. 1404000 — belgilar takrorlanmaydi deb hisoblash, 676000 — harf va raqamlar sonini almashtirib yuborish, 17676 — ikki qismni ko'paytirish o'rniga qo'shish. Javob: 1757600.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "kod-parol-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#676a5c64"
+    },
+    {
+      "q": "Velosiped qulfida 4 ta g'ildirak bor va har birida 0 dan 5 gacha oltita raqam yozilgan. Qulfni ochish uchun ko'pi bilan nechta kombinatsiyani sinab ko'rishga to'g'ri keladi?",
+      "v": [
+        "216",
+        "1296",
+        "360",
+        "4096"
+      ],
+      "t": 1,
+      "izoh": "Har bir g'ildirakni qolganlaridan mustaqil ravishda 6 xil holatga qo'yish mumkin: 6·6·6·6 = 1296. 360 — raqamlar takrorlanmaydi deb hisoblash, 216 — bitta g'ildirakni hisobdan tashlab ketish, 4096 — asos va ko'rsatkichni almashtirish. Javob: 1296.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "kod-parol-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#495d16f7"
+    },
+    {
+      "q": "Avtomobil raqamining raqamli qismi 3 ta raqamdan, harfli qismi esa 22 ta lotin harfidan tanlangan 3 ta harfdan iborat; belgilar takrorlanishi mumkin. Nechta har xil raqam berish mumkin?",
+      "v": [
+        "11648",
+        "484000",
+        "10648000",
+        "6652800"
+      ],
+      "t": 2,
+      "izoh": "Raqamli qism 10·10·10 = 1000 xil, harfli qism 22·22·22 = 10648 xil tuziladi. Ikkala qism mustaqil bo'lgani uchun ko'paytiriladi: 1000·10648 = 10648000. 6652800 — belgilar takrorlanmaydi deb hisoblash, 484000 — bitta harfni hisobdan tashlab ketish, 11648 — qismlarni qo'shib yuborish. Javob: 10648000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "avtomobil-raqami-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#6d9538e5"
+    },
+    {
+      "q": "Yangi taksi raqami 16 ta harfdan tanlangan 2 ta harf va 4 ta raqamdan iborat; belgilar takrorlanishi mumkin. Nechta raqam berish imkoni bor?",
+      "v": [
+        "2560000",
+        "1209600",
+        "160000",
+        "10256"
+      ],
+      "t": 0,
+      "izoh": "Harfli qism 16·16 = 256 xil, raqamli qism 10·10·10·10 = 10000 xil bo'ladi va ular mustaqil: 256·10000 = 2560000. 1209600 — belgilar takrorlanmaydi deb hisoblash, 160000 — bitta harfni hisobdan tashlab ketish, 10256 — qismlarni qo'shib yuborish. Javob: 2560000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "avtomobil-raqami-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#f3c49d49"
+    },
+    {
+      "q": "Bir mintaqada raqamning harfli qismi 10 ta ruxsat etilgan harfdan tuziladi va harflar takrorlanmaydi, raqamli qismi esa 3 ta raqamdan iborat bo'lib (000 dan 999 gacha) raqamlar takrorlanishi mumkin. Harfli qism 3 ta harfdan iborat bo'lsa, nechta variant bor?",
+      "v": [
+        "1000000",
+        "720000",
+        "1720",
+        "72000"
+      ],
+      "t": 1,
+      "izoh": "Harflar takrorlanmagani uchun harfli qism 10·9·8 = 720 xil tuziladi. Raqamli qismning har bir o'rniga 0 dan 9 gacha bo'lgan 10 ta raqamdan biri qo'yiladi, demak u 10·10·10 = 1000 xil. Ikkala qism mustaqil tanlanadi: 720·1000 = 720000. 1000000 — harflar takrorlanmasligi shartini unutish, 72000 — bitta o'nlikni yo'qotib yuborish, 1720 — qismlarni qo'shib yuborish. Javob: 720000.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "avtomobil-raqami-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#1d3e216b"
+    },
+    {
+      "q": "Avtoinspektor 2 ta raqam va 12 ta harfdan tanlangan 2 ta harfdan iborat qisqa raqamlarni sanamoqchi; hech bir belgi takrorlanmaydi. Nechta bunday raqam bor?",
+      "v": [
+        "222",
+        "13200",
+        "14400",
+        "11880"
+      ],
+      "t": 3,
+      "izoh": "Raqamlar takrorlanmagani uchun raqamli qism 10·9 = 90 xil, harfli qism esa 12·11 = 132 xil tuziladi. Ikkala qism mustaqil: 90·132 = 11880. 14400 — barcha belgilarda takrorlanishga ruxsat berish, 13200 — faqat raqamlarda takrorlanishga yo'l qo'yish, 222 — qismlarni qo'shib yuborish. Javob: 11880.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "avtomobil-raqami-sanash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#38d54fdd"
+    },
+    {
+      "q": "Navoiy shahridan Buxoroga 4 ta, Buxorodan Qarshiga 6 ta yo'l bor. Sayyoh Navoiydan Qarshiga Buxoro orqali nechta har xil marshrut bilan bora oladi?",
+      "v": [
+        "10",
+        "24",
+        "36",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "Marshrut ikki bosqichdan iborat va bosqichlardagi tanlov bir-biriga bog'liq emas, shuning uchun ko'paytma qoidasi ishlaydi: 4·6 = 24. 10 — yig'indi qoidasini noo'rin qo'llash, 36 — birinchi bosqichda ham 6 ta yo'l bor deb olish, 48 — borish va qaytishni birga hisoblash. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marshrut-shaharlararo",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#76334c23"
+    },
+    {
+      "q": "Toshkentdan Andijonga 3 ta, Andijondan Farg'onaga 5 ta, Farg'onadan Qo'qonga 4 ta yo'l bor. Toshkentdan Qo'qonga shu shaharlar orqali nechta marshrut bilan borish mumkin?",
+      "v": [
+        "12",
+        "15",
+        "20",
+        "60"
+      ],
+      "t": 3,
+      "izoh": "Uch bosqichning har birida tanlov qolganlariga bog'liq emas, demak sonlar ko'paytiriladi: 3·5·4 = 60. 12 — barcha sonlarni qo'shish, 15 — oxirgi bosqichni unutish, 20 — birinchi bosqichni unutish. Javob: 60.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "marshrut-shaharlararo",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d7de0600"
+    },
+    {
+      "q": "Sayyoh Xivadan Nukusga 6 ta yo'ldan biri bilan boradi, qaytishda esa ketgan yo'lidan boshqa yo'lni tanlashi shart. Borib-qaytish marshrutini nechta usulda tuzishi mumkin?",
+      "v": [
+        "30",
+        "11",
+        "36",
+        "12"
+      ],
+      "t": 0,
+      "izoh": "Borish uchun 6 ta yo'ldan biri tanlanadi. Qaytishda o'sha yo'l chiqarib tashlanadi va 5 ta variant qoladi: 6·5 = 30. 36 — qaytishdagi cheklovni unutish, 12 — yo'llar sonini shunchaki ikkilantirish, 11 — ikki bosqichni qo'shib yuborish. Javob: 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "marshrut-shaharlararo",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#4eb76e58"
+    },
+    {
+      "q": "A, B va C shaharlari yo'llar bilan bog'langan: A va B orasida 3 ta, B va C orasida 5 ta, A va C orasida esa 2 ta yo'l bor. Turist A dan C ga har bir shahardan ko'pi bilan bir marta o'tib, nechta usulda bora oladi?",
+      "v": [
+        "10",
+        "15",
+        "17",
+        "30"
+      ],
+      "t": 2,
+      "izoh": "Ikki xil yo'nalish mavjud. To'g'ridan-to'g'ri A dan C ga 2 ta yo'l olib boradi. B orqali yurish ikki bosqichli bo'lgani uchun ko'paytma qoidasini beradi: 3·5 = 15. Bu ikki holat bir-birini istisno qiladi, demak qo'shiladi: 15 + 2 = 17. 15 — to'g'ri yo'lni unutish, 30 — barcha sonlarni ko'paytirish, 10 — hammasini qo'shish. Javob: 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marshrut-shaharlararo",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b2f8ba0a"
+    },
+    {
+      "q": "Shahar ko'chalari to'g'ri burchakli to'r hosil qiladi. Uydan maktabgacha yetish uchun 2 ta blok sharqqa va 2 ta blok shimolga yurish kerak. Faqat shu ikki yo'nalishda harakatlanib, nechta eng qisqa yo'l bilan borish mumkin?",
+      "v": [
+        "6",
+        "4",
+        "16",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Har bir eng qisqa yo'l 4 ta blokdan iborat: 2 tasi sharqqa, 2 tasi shimolga yo'nalgan. Variantlar daraxti bo'yicha sharq va shimol qadamlarining tartibini sanasak 6 xil ketma-ketlik chiqadi. 4 — qadamlarni qo'shish, 16 — har qadamda ikkita yo'nalish deb hisoblash, 8 — to'rt qadamdan faqat uchtasini hisobga olish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marshrut-tor-eng-qisqa",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#67def854"
+    },
+    {
+      "q": "To'rsimon ko'chalarda A nuqtadan B nuqtaga borish uchun 3 ta blok o'ngga va 2 ta blok yuqoriga yurish kerak. Eng qisqa yo'llar soni nechta?",
+      "v": [
+        "5",
+        "6",
+        "10",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "Har bir yo'l 5 ta qadamdan iborat: 3 tasi o'ngga, 2 tasi yuqoriga. Sanashni to'r tugunlariga son yozib olib boramiz: istalgan tugunga faqat uning chap qo'shnisidan yoki past qo'shnisidan kelinadi, shuning uchun yig'indi qoidasiga ko'ra tugundagi son shu ikki qo'shni sonining yig'indisiga teng. A turgan pastki qator va chap ustundagi barcha tugunlarga 1 yoziladi. Pastki qator shunday bo'ladi: 1, 1, 1, 1. Undan yuqoridagi qator: 1, 2, 3, 4. Eng yuqori qator: 1, 3, 6, 10 va B tugunida 10 turadi. 5 — qadamlarni qo'shish, 6 — 3·2 tarzida ko'paytirish, 32 — har qadamda ikkita yo'nalish bor deb hisoblash. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "marshrut-tor-eng-qisqa",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#2792c624"
+    },
+    {
+      "q": "Bog'dagi so'qmoqlar to'r shaklida joylashgan. Chumoli chap quyi burchakdan o'ng yuqori burchakka faqat o'ngga va yuqoriga yurib boradi; yo'lda 3 ta qadam o'ngga va 3 ta qadam yuqoriga to'g'ri keladi. Nechta har xil yo'l bor?",
+      "v": [
+        "6",
+        "9",
+        "720",
+        "20"
+      ],
+      "t": 3,
+      "izoh": "Yo'l 6 ta qadamdan iborat: 3 tasi o'ngga, 3 tasi yuqoriga, ya'ni to'rning eni ham, bo'yi ham 3 katak. Har bir tugunga borish usullari sonini yozib chiqamiz: tugunga faqat chap qo'shnisidan yoki past qo'shnisidan kelinadi, shuning uchun yig'indi qoidasiga ko'ra tugundagi son shu ikki qo'shni sonining yig'indisi bo'ladi. Chetki qator va chetki ustunga 1 yoziladi. Qatorlar quyidan yuqoriga qarab shunday chiqadi: 1, 1, 1, 1; keyin 1, 2, 3, 4; keyin 1, 3, 6, 10; oxirida 1, 4, 10, 20. Chumoli boradigan yuqori o'ng tugunda 20 hosil bo'ladi. 6 — qadamlarni qo'shish, 9 — 3·3 tarzida ko'paytirish, 720 — oltala qadamni farqli deb tartiblash. Javob: 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marshrut-tor-eng-qisqa",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ac0a5d39"
+    },
+    {
+      "q": "To'rsimon yo'lakda quyi chap katakdan yuqori o'ng katakka faqat bir katak o'ngga yoki bir katak yuqoriga yurib boriladi. Yo'l 2 ta o'ng va 4 ta yuqori qadamdan iborat bo'lsa, yo'llar soni nechta?",
+      "v": [
+        "6",
+        "15",
+        "8",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Har bir yo'l 6 ta qadamdan tuzilgan: 2 tasi o'ngga, 4 tasi yuqoriga, demak to'rning eni 2 katak, bo'yi 4 katak. Tugunlarga borish usullari sonini yig'indi qoidasi bilan yozib chiqamiz: chetki qator va chetki ustunga 1, qolgan har bir tugunga esa chap qo'shnisi bilan past qo'shnisidagi sonlarning yig'indisi yoziladi. Qatorlar quyidan yuqoriga: 1, 1, 1; keyin 1, 2, 3; keyin 1, 3, 6; keyin 1, 4, 10; oxirida 1, 5, 15. Yuqori o'ng tugunda 15 chiqadi. 6 — qadamlarni qo'shish, 8 — 2·4 tarzida ko'paytirish, 64 — har qadamda ikkita yo'nalish bor deb hisoblash. Javob: 15.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "marshrut-tor-eng-qisqa",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#502c7381"
+    },
+    {
+      "q": "Tanga 4 marta tashlandi va har tashlashda gerb yoki raqam tushishi mumkin. Variantlar daraxti bo'yicha nechta har xil natijalar ketma-ketligi hosil bo'ladi?",
+      "v": [
+        "6",
+        "8",
+        "16",
+        "32"
+      ],
+      "t": 2,
+      "izoh": "Variantlar daraxtining har bir bo'g'inida ikkita shox bor, chunki har tashlashda 2 ta natija mumkin. To'rt bosqichdan keyin shoxlar soni 2·2·2·2 = 16 ga yetadi. 8 — 2·4 tarzida ko'paytirish, 6 — ikki sonni qo'shish, 32 — beshta tashlash deb hisoblash. Javob: 16.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "variantlar-daraxti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#95abd66d"
+    },
+    {
+      "q": "O'yin zari ketma-ket ikki marta tashlandi va natijalarning tartibi hisobga olinadi. Nechta har xil juftlik hosil bo'lishi mumkin?",
+      "v": [
+        "36",
+        "18",
+        "30",
+        "21"
+      ],
+      "t": 0,
+      "izoh": "Birinchi tashlashda 6 ta, ikkinchisida ham 6 ta natija bo'lishi mumkin va ular bir-biriga bog'liq emas: 6·6 = 36. 18 — 6·3 tarzida ko'paytirish, 30 — ikkala tashlashda son takrorlanmaydi deb hisoblash, 21 — tartibni hisobga olmasdan sanash. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "variantlar-daraxti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#280a88f5"
+    },
+    {
+      "q": "Testda 5 ta savol bor va ularning har biriga «ha» yoki «yo'q» deb javob beriladi. Javob varaqasining nechta har xil to'ldirilishi mumkin?",
+      "v": [
+        "10",
+        "32",
+        "25",
+        "64"
+      ],
+      "t": 1,
+      "izoh": "Har bir savolda 2 ta variant bor va savollarga javob bir-biriga bog'liq emas: 2·2·2·2·2 = 32. 10 — 2·5 tarzida ko'paytirish, 25 — asos va ko'rsatkichni almashtirish, 64 — oltita savol bor deb hisoblash. Javob: 32.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "variantlar-daraxti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#678d7ad2"
+    },
+    {
+      "q": "Svetofor qizil, sariq yoki yashil rangda yonadi. Kuzatuvchi ketma-ket 3 marta chiroq rangini daftariga yozib oldi. Yozuvlarning nechta har xil varianti bo'lishi mumkin?",
+      "v": [
+        "6",
+        "9",
+        "81",
+        "27"
+      ],
+      "t": 3,
+      "izoh": "Har bir kuzatuvda 3 ta variant bor va kuzatuvlar bir-biriga bog'liq emas: 3·3·3 = 27. 9 — faqat ikkita kuzatuvni hisoblash, 6 — uchta rangni o'zaro tartiblash, 81 — to'rtta kuzatuv bo'lgan deb hisoblash. Javob: 27.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "variantlar-daraxti",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#6597318c"
+    },
+    {
+      "q": "Liftga 5 nafar yo'lovchi kirdi; bino 7 qavatli va yo'lovchilar birinchi qavatdan yuqoridagi istalgan qavatda tushishi mumkin. Yo'lovchilarning tushish variantlari nechta?",
+      "v": [
+        "30",
+        "720",
+        "15625",
+        "7776"
+      ],
+      "t": 3,
+      "izoh": "Har bir yo'lovchi ikkinchi qavatdan yettinchi qavatgacha bo'lgan 6 ta qavatdan birini tanlaydi va tanlovlar mustaqil: 6⁵ = 7776. 30 — 6·5 tarzida ko'paytirish, 720 — yo'lovchilar albatta har xil qavatda tushadi deb hisoblash, 15625 — asos va ko'rsatkichni almashtirish. Javob: 7776.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorlanishli-tanlash-daraja",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#835f58bf"
+    },
+    {
+      "q": "Bayram uchun 4 ta bayroq ustuni o'rnatilgan va har biriga qizil, ko'k yoki yashil bayroq ilinadi. Ustunlarni bezashning nechta usuli bor?",
+      "v": [
+        "7",
+        "81",
+        "64",
+        "27"
+      ],
+      "t": 1,
+      "izoh": "Har bir ustun uchun 3 ta rang mavjud va ustunlar bir-biridan mustaqil bezatiladi: 3⁴ = 81. 7 — qoidalarni chalkashtirib 3 va 4 ni qo'shish, 64 — asos va ko'rsatkichni almashtirish, 27 — faqat uchta ustunni hisobga olish. Javob: 81.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorlanishli-tanlash-daraja",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#1093b22c"
+    },
+    {
+      "q": "Sinfdagi 6 nafar o'quvchining har biri maktabdagi 4 ta to'garakdan faqat bittasiga yoziladi. Yozilishlarning nechta varianti bo'lishi mumkin?",
+      "v": [
+        "10",
+        "1296",
+        "4096",
+        "360"
+      ],
+      "t": 2,
+      "izoh": "Har bir o'quvchi 4 ta to'garakdan birini tanlaydi va tanlovlar bir-biriga bog'liq emas: 4⁶ = 4096. 10 — qoidalarni chalkashtirib 4 va 6 ni qo'shish, 1296 — asos va ko'rsatkichni almashtirish, 360 — masalani teskari o'qib, 4 ta to'garakning har biriga 6 o'quvchidan har xil kishi tayinlanadi deb hisoblash: 6·5·4·3 = 360. Javob: 4096.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorlanishli-tanlash-daraja",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#61fb0fb0"
+    },
+    {
+      "q": "Pochta bo'limida 4 ta xat bor va ularning har birini 5 ta pochta qutisidan istalganiga tashlash mumkin. Nechta har xil taqsimot bo'lishi mumkin?",
+      "v": [
+        "625",
+        "20",
+        "9",
+        "1024"
+      ],
+      "t": 0,
+      "izoh": "Har bir xat uchun 5 ta quti mavjud va xatlar bir-biridan mustaqil tashlanadi: 5⁴ = 625. 20 — 5·4 tarzida ko'paytirish, 9 — qoidalarni chalkashtirib 5 va 4 ni qo'shish, 1024 — asos va ko'rsatkichni almashtirish. Javob: 625.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "takrorlanishli-tanlash-daraja",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#9796353d"
+    },
+    {
+      "q": "Marafonda 9 nafar yuguruvchi qatnashdi va oltin, kumush hamda bronza medallar taqsimlanadi. Medallar nechta usulda taqsimlanishi mumkin?",
+      "v": [
+        "84",
+        "504",
+        "729",
+        "27"
+      ],
+      "t": 1,
+      "izoh": "Oltin medalni 9 kishidan biri, kumushni qolgan 8 kishidan biri, bronzani qolgan 7 kishidan biri oladi: 9·8·7 = 504. 729 — bir kishi bir nechta medal olishi mumkin deb hisoblash, 84 — medallarning turini, ya'ni tartibni hisobga olmaslik, 27 — 9·3 tarzida ko'paytirish. Javob: 504.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orinlashtirish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#5fcc5f46"
+    },
+    {
+      "q": "Sinfdagi 12 o'quvchidan sardor, uning o'rinbosari va kotib saylanadi; bir o'quvchi faqat bitta lavozimni egallaydi. Saylovning nechta natijasi bo'lishi mumkin?",
+      "v": [
+        "36",
+        "220",
+        "1728",
+        "1320"
+      ],
+      "t": 3,
+      "izoh": "Sardorni 12 kishidan, o'rinbosarni qolgan 11 kishidan, kotibni qolgan 10 kishidan tanlaymiz: 12·11·10 = 1320. 1728 — bir kishi bir nechta lavozimni egallashi mumkin deb hisoblash, 220 — lavozimlar farqini, ya'ni tartibni hisobga olmaslik, 36 — 12·3 tarzida ko'paytirish. Javob: 1320.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#843cd704"
+    },
+    {
+      "q": "Kutubxonachi 7 xil kitobdan 4 tasini tanlab, javonga chapdan o'ngga tartib bilan terib qo'ymoqchi. Nechta har xil terish usuli bor?",
+      "v": [
+        "840",
+        "35",
+        "2401",
+        "5040"
+      ],
+      "t": 0,
+      "izoh": "Birinchi o'ringa 7 ta, ikkinchisiga 6 ta, uchinchisiga 5 ta, to'rtinchisiga 4 ta kitob qo'yish mumkin: 7·6·5·4 = 840. 2401 — bitta kitobni bir necha marta qo'yish mumkin deb hisoblash, 35 — kitoblarning tartibini hisobga olmaslik, 5040 — yettala kitobni ham javonga terish. Javob: 840.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#1734f59b"
+    },
+    {
+      "q": "Bayroq uchta gorizontal yo'lakdan iborat va har bir yo'lak 6 rangdan biriga bo'yaladi; yo'laklarning ranglari bir xil bo'lmasligi shart. Nechta har xil bayroq hosil bo'ladi?",
+      "v": [
+        "18",
+        "20",
+        "120",
+        "216"
+      ],
+      "t": 2,
+      "izoh": "Yuqori yo'lak 6 xil, o'rta yo'lak qolgan 5 xil, quyi yo'lak qolgan 4 xil rangga bo'yaladi: 6·5·4 = 120. 216 — ranglar takrorlanishi mumkin deb hisoblash, 20 — yo'laklarning tartibini hisobga olmaslik, 18 — 6·3 tarzida ko'paytirish. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orinlashtirish-takrorsiz",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#76b07b56"
+    },
+    {
+      "q": "Fotosuratga tushish uchun 6 nafar do'st bir qatorga tizildi. Ular nechta har xil tartibda turishi mumkin?",
+      "v": [
+        "720",
+        "36",
+        "21",
+        "46656"
+      ],
+      "t": 0,
+      "izoh": "Birinchi o'ringa 6 kishidan biri, ikkinchisiga qolgan 5 kishidan biri turadi va shu tarzda davom etadi: 6·5·4·3·2·1 = 720. 36 — 6·6 tarzida ko'paytirish, 46656 — bir kishi bir necha o'rinda turishi mumkin deb hisoblash, 21 — o'rinlar sonini qo'shib chiqish. Javob: 720.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-almashtirish-navbat",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#af4710ee"
+    },
+    {
+      "q": "Malika javonga 4 ta har xil lug'atni yonma-yon terib qo'ymoqchi. Ularni nechta har xil tartibda joylashtira oladi?",
+      "v": [
+        "12",
+        "16",
+        "24",
+        "256"
+      ],
+      "t": 2,
+      "izoh": "Birinchi o'ringa 4 ta lug'atdan biri, keyingisiga qolgan 3 tadan biri, so'ng 2 ta va oxirida 1 ta lug'at qoladi: 4·3·2·1 = 24. 16 — faqat ikkita o'rinni hisoblab, har birida 4 tadan variant deb olish, 12 — 4·3 bilan cheklanib qolish, 256 — har o'ringa to'rttadan variant deb hisoblash. Javob: 24.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "orin-almashtirish-navbat",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#2db520b9"
+    },
+    {
+      "q": "Konsert dasturida 7 ta chiqish bor va ularning navbati oldindan belgilanadi. Chiqishlar tartibining nechta varianti mavjud?",
+      "v": [
+        "49",
+        "5040",
+        "28",
+        "823543"
+      ],
+      "t": 1,
+      "izoh": "Birinchi chiqishni 7 xil, ikkinchisini qolgan 6 xil tanlash mumkin va shu tarzda davom etadi: 7·6·5·4·3·2·1 = 5040. 49 — 7·7 tarzida ko'paytirish, 823543 — bitta chiqish bir necha marta takrorlanishi mumkin deb hisoblash, 28 — o'rinlar sonini qo'shib chiqish. Javob: 5040.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orin-almashtirish-navbat",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d8d780cc"
+    },
+    {
+      "q": "Sayohatchi 5 ta shaharni birin-ketin aylanib chiqmoqchi va boshlanish shahri ham erkin tanlanadi. Marshrutning nechta tartibi bo'lishi mumkin?",
+      "v": [
+        "25",
+        "15",
+        "3125",
+        "120"
+      ],
+      "t": 3,
+      "izoh": "Birinchi shahar 5 xil, keyingisi qolgan 4 xil tanlanadi va shu tartibda davom etadi: 5·4·3·2·1 = 120. 25 — faqat ikkita bosqichni hisoblash, 3125 — bir shaharga bir necha marta borishga ruxsat berish, 15 — o'rinlar sonini qo'shib chiqish. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "orin-almashtirish-navbat",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#99cbc617"
+    },
+    {
+      "q": "5 nafar o'quvchi bir qatorga tizilmoqda, ammo Aziz bilan Bekzod albatta yonma-yon turishi kerak. Nechta har xil tartib hosil bo'lishi mumkin?",
+      "v": [
+        "24",
+        "96",
+        "48",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Aziz bilan Bekzodni bitta yopishgan juftlik deb qarasak, tizilishi kerak bo'lgan obyektlar soni 4 taga tushadi: 4·3·2·1 = 24 tartib. Juftlik ichida ikkovi o'zaro 2 xil almashadi: 24·2 = 48. 120 — shartni butunlay unutish, 24 — juftlik ichidagi almashinuvni unutish, 96 — juftlik ichidagi almashinuvni ikki marta ortiqcha hisoblash. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-shart-blok",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#ee8a8bc9"
+    },
+    {
+      "q": "Kinoteatrda bir qatorda 6 ta o'rin bor; ota-ona va 4 nafar bola o'tiradi, ota bilan ona esa albatta yonma-yon o'tirishi shart. Nechta o'tirish usuli bor?",
+      "v": [
+        "240",
+        "120",
+        "720",
+        "1440"
+      ],
+      "t": 0,
+      "izoh": "Ota va onani bitta blok deb qarasak, joylashtiriladigan obyektlar soni 5 ta bo'ladi: 5·4·3·2·1 = 120 usul. Blok ichida ota va ona 2 xil almashadi: 120·2 = 240. 720 — shartni unutish, 120 — blok ichidagi almashinuvni unutish, 1440 — barcha tartiblarni asossiz ikkilantirish. Javob: 240.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "qoshni-shart-blok",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#a70b0d34"
+    },
+    {
+      "q": "Sahnaga 3 nafar qiz va 2 nafar o'g'il chiqadi. Uchala qiz albatta yonma-yon turishi kerak bo'lsa, ular nechta tartibda tizilishi mumkin?",
+      "v": [
+        "6",
+        "12",
+        "120",
+        "36"
+      ],
+      "t": 3,
+      "izoh": "Uchala qizni bitta blok deb olamiz, unda tizilishi kerak bo'lgan obyektlar soni 3 ta bo'ladi: 3·2·1 = 6 tartib. Blok ichida qizlar o'zaro 3·2·1 = 6 xil tartibda turadi: 6·6 = 36. 120 — shartni unutish, 6 — faqat blok ichini hisoblash, 12 — blok ichidagi tartiblar soni 2 ta deb olish. Javob: 36.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshni-shart-blok",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#8f245a89"
+    },
+    {
+      "q": "Bir qatorga 5 nafar o'quvchi tizilmoqda, ammo Doniyor bilan Elyor yonma-yon turmasligi kerak. Nechta tartib mumkin?",
+      "v": [
+        "120",
+        "72",
+        "96",
+        "48"
+      ],
+      "t": 1,
+      "izoh": "Avval barcha tartiblarni sanaymiz: 5·4·3·2·1 = 120. Doniyor va Elyor yonma-yon turadigan hollar blok usuli bilan topiladi: 4·3·2·1·2 = 48. Kerakli javob ayirma orqali chiqadi: 120 − 48 = 72. 120 — shartni unutish, 48 — teskari to'plamni javob deb olish, 96 — blok ichidagi almashinuvni hisobga olmay 120 dan 24 ni ayirish. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "qoshni-shart-blok",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d67add4a"
+    },
+    {
+      "q": "Uch xonali sonlar 1, 2, 3, 4, 5 raqamlaridan takrorlanishga ruxsat berilgan holda tuzildi. Ularning nechtasida kamida bitta 5 raqami qatnashadi?",
+      "v": [
+        "25",
+        "64",
+        "75",
+        "61"
+      ],
+      "t": 3,
+      "izoh": "Barcha sonlar soni 5·5·5 = 125. Tarkibida beshlik umuman yo'q sonlar faqat qolgan to'rtta raqamdan tuziladi: 4·4·4 = 64. Kamida bitta beshlik bor sonlar ayirma bilan topiladi: 125 − 64 = 61. 64 — teskari to'plamni javob deb olish, 75 — beshlikni har bir xonaga navbat bilan qo'yib hollarni qo'shib yuborish, 25 — faqat bitta xonani band deb hisoblash. Javob: 61.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-sanash-kamida-bitta",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#c39fe396"
+    },
+    {
+      "q": "Tanga 5 marta tashlandi. Hosil bo'lgan natijalar ketma-ketliklarining nechtasida kamida bitta gerb bor?",
+      "v": [
+        "16",
+        "31",
+        "30",
+        "32"
+      ],
+      "t": 1,
+      "izoh": "Barcha ketma-ketliklar soni 2⁵ = 32. Gerb umuman tushmaydigan ketma-ketlik esa bitta, ya'ni hamma tashlashda raqam tushgan hol. Demak 32 − 1 = 31. 32 — shartni unutish, 30 — ikkita bir xil holni ayirish, 16 — natijalarning yarmi deb hisoblash. Javob: 31.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-sanash-kamida-bitta",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#9901e864"
+    },
+    {
+      "q": "Kod 4 ta raqamdan iborat va har bir o'ringa 0 dan 9 gacha raqamlardan biri yoziladi. Kodlarning nechtasida kamida bitta 0 raqami qatnashadi?",
+      "v": [
+        "3439",
+        "6561",
+        "4000",
+        "1000"
+      ],
+      "t": 0,
+      "izoh": "Barcha kodlar soni 10⁴ = 10000. Tarkibida nol umuman yo'q kodlar qolgan to'qqizta raqamdan tuziladi: 9⁴ = 6561. Kamida bitta nol bor kodlar ayirma bilan topiladi: 10000 − 6561 = 3439. 6561 — teskari to'plamni javob deb olish, 4000 — nolni har bir o'ringa navbat bilan qo'yib hollarni qo'shib yuborish, 1000 — nolni bitta o'ringa qat'iy qo'yib qolganini sanash. Javob: 3439.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-sanash-kamida-bitta",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#43ad1871"
+    },
+    {
+      "q": "To'garakdagi 8 nafar o'quvchi orasida devoriy gazeta, navbatchilik va hisobot tayyorlash vazifalari taqsimlanadi; bir kishi ko'pi bilan bitta vazifa oladi. Nazokat albatta biror vazifa olishi kerak bo'lsa, nechta taqsimot bor?",
+      "v": [
+        "42",
+        "210",
+        "126",
+        "336"
+      ],
+      "t": 2,
+      "izoh": "Umumiy taqsimotlar soni 8·7·6 = 336. Nazokat hech qanday vazifa olmaydigan taqsimotlar qolgan 7 kishi orasida tuziladi: 7·6·5 = 210. Nazokat albatta qatnashadigan hollar ayirma bilan topiladi: 336 − 210 = 126. 336 — shartni unutish, 210 — teskari to'plamni javob deb olish, 42 — Nazokatga qaysi vazifa tegishini tanlashni unutib, faqat qolganlarini sanash. Javob: 126.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "teskari-sanash-kamida-bitta",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#575bbe0d"
+    },
+    {
+      "q": "Sinfda 7 nafar o'g'il va 9 nafar qiz bor. Bayram raqsi uchun bitta o'g'il va bitta qizdan iborat juftlik nechta usulda tuzilishi mumkin?",
+      "v": [
+        "16",
+        "63",
+        "120",
+        "126"
+      ],
+      "t": 1,
+      "izoh": "O'g'ilni 7 xil, qizni esa 9 xil tanlash mumkin va tanlovlar bir-biriga bog'liq emas: 7·9 = 63. 16 — yig'indi qoidasini noo'rin qo'llash, 120 — jinsni hisobga olmay 16 kishidan ikkitasini tanlash, 126 — juftlik ichidagi tartibni ortiqcha hisoblash. Javob: 63.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juftlik-ikki-toplamdan",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#e98a586f"
+    },
+    {
+      "q": "Chempionatda 8 ta jamoa qatnashadi va har bir jamoa qolgan har bir jamoa bilan ikki marta — biri o'z maydonida, biri mehmon sifatida — o'ynaydi. Jami nechta o'yin bo'ladi?",
+      "v": [
+        "16",
+        "28",
+        "64",
+        "56"
+      ],
+      "t": 3,
+      "izoh": "Har bir o'yin uy egasi va mehmon juftligi bilan to'liq aniqlanadi: uy egasini 8 xil, mehmonni esa qolgan 7 xil tanlash mumkin, demak ko'paytma qoidasi bo'yicha 8·7 = 56. 28 — uy va mehmon o'yinlarini farqlamay, har juftlikni bir marta sanash, 64 — jamoa o'zi bilan o'ynashiga yo'l qo'yish, 16 — 8·2 tarzida ko'paytirish. Javob: 56.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "juftlik-ikki-toplamdan",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#898bca30"
+    },
+    {
+      "q": "Kutubxonada 4 ta ingliz, 6 ta rus va 5 ta o'zbek tilidagi lug'at bor. Tillari har xil bo'lgan ikkita lug'atdan iborat juftlik nechta usulda tanlanadi?",
+      "v": [
+        "15",
+        "105",
+        "74",
+        "120"
+      ],
+      "t": 2,
+      "izoh": "Uchta juftlik turi bor va ular bir-birini istisno qiladi. Ingliz bilan rus juftligi 4·6 = 24 xil, ingliz bilan o'zbek juftligi 4·5 = 20 xil, rus bilan o'zbek juftligi 6·5 = 30 xil tanlanadi. Yig'indi qoidasiga ko'ra 24 + 20 + 30 = 74. 105 — tilni hisobga olmay 15 ta lug'atdan ikkitasini tanlash, 120 — uchala sonni ko'paytirish, 15 — lug'atlar sonini qo'shib qo'yish. Javob: 74.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juftlik-ikki-toplamdan",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#5c9a7e67"
+    },
+    {
+      "q": "Konsertda 7 nafar xonanda va 4 nafar sozanda qatnashadi; har bir chiqishda bitta xonanda bitta sozanda bilan birga chiqadi. Nechta har xil duet tuzilishi mumkin?",
+      "v": [
+        "28",
+        "11",
+        "55",
+        "56"
+      ],
+      "t": 0,
+      "izoh": "Xonandani 7 xil, sozandani 4 xil tanlash mumkin va tanlovlar bir-biriga bog'liq emas: 7·4 = 28. 11 — yig'indi qoidasini noo'rin qo'llash, 55 — kasbni hisobga olmay 11 kishidan ikkitasini tanlash, 56 — duet ichidagi tartibni ortiqcha hisoblash. Javob: 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "juftlik-ikki-toplamdan",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#1b3af892"
+    },
+    {
+      "q": "Bayroq uchta gorizontal yo'lakdan iborat va 5 rangdan foydalaniladi; faqat qo'shni yo'laklarning ranglari har xil bo'lishi shart, chetdagilari mos tushishi mumkin. Nechta bayroq hosil bo'ladi?",
+      "v": [
+        "60",
+        "125",
+        "80",
+        "15"
+      ],
+      "t": 2,
+      "izoh": "Yuqori yo'lakni 5 xil bo'yash mumkin. O'rta yo'lak yuqoridagidan farq qilishi kerak, ya'ni 4 ta variant qoladi; quyi yo'lak esa faqat o'rtadagidan farq qilsa yetarli, unda ham 4 ta variant bor: 5·4·4 = 80. 125 — cheklovni butunlay unutish, 60 — uchala yo'lak ham har xil bo'lishi shart deb hisoblash, 15 — 5·3 tarzida ko'paytirish. Javob: 80.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boyash-qoshni-har-xil",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#e2121991"
+    },
+    {
+      "q": "Bir qatorga tizilgan 5 ta katakning har biri 3 rangdan biriga bo'yaladi va qo'shni kataklarning rangi bir xil bo'lmasligi kerak. Nechta bo'yash usuli bor?",
+      "v": [
+        "48",
+        "243",
+        "15",
+        "16"
+      ],
+      "t": 0,
+      "izoh": "Birinchi katak 3 rangdan istalganiga bo'yaladi. Keyingi har bir katak faqat o'zidan oldingisidan farq qilishi kerak, shuning uchun ularning har birida 2 tadan variant qoladi: 3·2·2·2·2 = 48. 243 — qo'shnilik cheklovini unutish, 15 — 3·5 tarzida ko'paytirish, 16 — birinchi katakdagi tanlovni hisobga olmaslik. Javob: 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boyash-qoshni-har-xil",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#09ff062f"
+    },
+    {
+      "q": "Xarita ustida 5 ta ustun ketma-ket turibdi va har biri 4 rangdan biriga bo'yaladi; qo'shni ustunlarning rangi bir xil bo'lmasligi shart. Nechta bo'yash usuli bor?",
+      "v": [
+        "81",
+        "972",
+        "1024",
+        "324"
+      ],
+      "t": 3,
+      "izoh": "Birinchi ustun 4 xil bo'yaladi, keyingi to'rtta ustunning har biri esa faqat o'zidan oldingisidan farq qilishi kerak, ya'ni 3 tadan variant qoladi: 4·3·3·3·3 = 324. 1024 — cheklovni unutish, 972 — uchlikni bir marta ortiqcha ko'paytirish, 81 — birinchi ustundagi tanlovni hisobga olmaslik. Javob: 324.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boyash-qoshni-har-xil",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#d7259535"
+    },
+    {
+      "q": "Yo'l chetiga qatorga o'rnatilgan 4 ta chiroq 4 xil rangdan biriga sozlanadi; ketma-ket turgan ikkita chiroq bir xil rangda yonmasligi kerak. Nechta sozlash varianti bor?",
+      "v": [
+        "36",
+        "108",
+        "256",
+        "81"
+      ],
+      "t": 1,
+      "izoh": "Birinchi chiroq 4 xil sozlanadi, qolgan uchtasining har biri esa faqat o'zidan oldingisidan farq qilishi kerak, ya'ni 3 tadan variant qoladi: 4·3·3·3 = 108. 256 — cheklovni unutish, 81 — birinchi chiroqdagi tanlovni hisobga olmaslik, 36 — faqat uchta chiroqni hisobga olish. Javob: 108.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "boyash-qoshni-har-xil",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#4de648b7"
+    },
+    {
+      "q": "Oshxonada 4 xil birinchi taom bor, ikkinchi taomlar soni esa noma'lum. Ikki taomdan iborat tushlikni 28 xil usulda tanlash mumkin bo'lsa, nechta ikkinchi taom bor?",
+      "v": [
+        "7",
+        "112",
+        "32",
+        "14"
+      ],
+      "t": 0,
+      "izoh": "Ko'paytma qoidasiga ko'ra birinchi taomlar soni ikkinchi taomlar soniga ko'paytiriladi: 4·x = 28. Bundan x = 28 : 4 = 7. 112 — bo'lish o'rniga ko'paytirish, 32 — yig'indi deb hisoblash, 14 — sonni shunchaki ikkiga bo'lish. Javob: 7.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-nomalum-son",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#1263de4c"
+    },
+    {
+      "q": "Kod n ta belgidan iborat va har bir belgi 0 yoki 1 bo'ladi. Jami 64 ta har xil kod tuzish mumkin bo'lsa, n nechaga teng?",
+      "v": [
+        "8",
+        "32",
+        "6",
+        "5"
+      ],
+      "t": 2,
+      "izoh": "Har bir belgi uchun 2 ta variant bor, demak kodlar soni 2ⁿ ga teng va 2ⁿ = 64 tenglama hosil bo'ladi. 64 = 2⁶ bo'lgani uchun n = 6. 8 — sondan kvadrat ildiz olish, 32 — sonni ikkiga bo'lish, 5 — 2⁵ = 32 bilan chalkashtirish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-nomalum-son",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#adfd8a90"
+    },
+    {
+      "q": "Guruhda n nafar o'quvchi bor va ulardan sardor hamda kotibni 90 xil usulda tanlash mumkin; bir kishi ikkala lavozimni egallamaydi. n nechaga teng?",
+      "v": [
+        "9",
+        "10",
+        "11",
+        "45"
+      ],
+      "t": 1,
+      "izoh": "Sardorni n xil, kotibni esa qolgan n − 1 xil tanlash mumkin, demak n·(n − 1) = 90. Ketma-ket ikkita natural sonning ko'paytmasi 90 bo'lishi uchun 10·9 = 90 bo'lishi kerak, ya'ni n = 10. 9 — 9·8 = 72 bilan chalkashtirish, 11 — kattaroq songa o'tib yuborish, 45 — sonni ikkiga bo'lib javob deb olish. Javob: 10.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "teskari-masala-nomalum-son",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b42921ae"
+    },
+    {
+      "q": "Do'konda 5 xil daftar va bir necha xil ruchka sotiladi. Bittadan daftar va bittadan ruchka olishning 45 xil usuli bo'lsa, ruchkalar nechta?",
+      "v": [
+        "40",
+        "50",
+        "225",
+        "9"
+      ],
+      "t": 3,
+      "izoh": "Ko'paytma qoidasiga ko'ra daftarlar soni ruchkalar soniga ko'paytiriladi: 5·x = 45, bundan x = 45 : 5 = 9. 40 — ko'paytma o'rniga ayirma olish, 50 — yig'indi deb hisoblash, 225 — bo'lish o'rniga ko'paytirish. Javob: 9.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "arxetip": "teskari-masala-nomalum-son",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#4078b660"
+    },
+    {
+      "q": "Yopiq klub kartasi 4 ta har xil harfdan iborat va A, B, D, E, F, K, M, N harflaridan tuziladi; karta albatta K harfi bilan boshlanadi. Nechta karta bo'lishi mumkin?",
+      "v": [
+        "343",
+        "1680",
+        "210",
+        "35"
+      ],
+      "t": 2,
+      "izoh": "Birinchi harf qat'iy belgilangan, shuning uchun faqat qolgan uchta o'rinni to'ldirish kerak. Harflar takrorlanmaydi, demak qolgan 7 ta harfdan tanlaymiz: 7·6·5 = 210. 1680 — birinchi harf haqidagi shartni unutish, 343 — harflar takrorlanishiga ruxsat berish, 35 — harflarning tartibini hisobga olmaslik. Javob: 210.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harf-belgi-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#2ea20ca8"
+    },
+    {
+      "q": "«BODRING» so'zining yettita harfini qayta tartiblab yangi ketma-ketliklar tuzilmoqda. Ular orasida unli harf bilan boshlanadiganlari nechta?",
+      "v": [
+        "1440",
+        "720",
+        "2520",
+        "5040"
+      ],
+      "t": 0,
+      "izoh": "So'zda yettita har xil harf bor va ulardan unlilari O hamda I, ya'ni 2 ta. Birinchi o'ringa unlini qo'yamiz, qolgan oltita harf esa istalgan tartibda joylashadi: 2·6·5·4·3·2·1 = 1440. 5040 — shartni unutib barcha tartiblarni sanash, 720 — faqat bitta unlini hisobga olish, 2520 — barcha tartiblarning yarmi deb noto'g'ri hisoblash. Javob: 1440.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harf-belgi-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#a4ec5697"
+    },
+    {
+      "q": "Mahsulot kodi 3 ta har xil harfdan iborat va A, C, D, E, K, L, R, S, T harflaridan tuziladi; kod unli harf (A yoki E) bilan boshlanishi kerak. Nechta kod bor?",
+      "v": [
+        "504",
+        "162",
+        "56",
+        "112"
+      ],
+      "t": 3,
+      "izoh": "Kod unli harf bilan boshlanishi kerak, ya'ni birinchi o'rin uchun 2 ta variant bor. Harflar takrorlanmagani sababli ikkinchi o'ringa 8 ta, uchinchisiga 7 ta harf qoladi: 2·8·7 = 112. 504 — birinchi harf haqidagi shartni unutish, 162 — harflar takrorlanishiga ruxsat berish, 56 — birinchi harfdagi tanlovni hisobga olmaslik. Javob: 112.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harf-belgi-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#da2f121f"
+    },
+    {
+      "q": "Elektron kalit 5 ta har xil harfdan iborat va A, B, D, E, F, K, L, M, N harflaridan tuziladi; kalit albatta N harfi bilan tugaydi. Nechta kalit bo'lishi mumkin?",
+      "v": [
+        "15120",
+        "1680",
+        "4096",
+        "70"
+      ],
+      "t": 1,
+      "izoh": "Oxirgi harf qat'iy belgilangan, demak qolgan to'rtta o'rinni to'ldirish kerak. Harflar takrorlanmagani uchun 8 ta harfdan tanlaymiz: 8·7·6·5 = 1680. 15120 — oxirgi harf haqidagi shartni unutish, 4096 — harflar takrorlanishiga ruxsat berish, 70 — harflarning tartibini hisobga olmaslik. Javob: 1680.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "harf-belgi-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#8ce072c0"
+    },
+    {
+      "q": "Restoran 3 xil salat, 4 xil issiq taom va 6 xil shirinlik taklif qiladi. Mijoz har turdan ko'pi bilan bittasini oladi, lekin buyurtmasi butunlay bo'sh bo'lmasligi kerak. Nechta buyurtma varianti bor?",
+      "v": [
+        "13",
+        "72",
+        "140",
+        "139"
+      ],
+      "t": 3,
+      "izoh": "Har bir tur uchun hech narsa olmaslik ham alohida variant bo'ladi, shuning uchun salat 4 xil, issiq taom 5 xil, shirinlik 7 xil tanlanadi: 4·5·7 = 140. Bundan uchala turdan ham hech narsa olinmagan yagona holni ayiramiz: 140 − 1 = 139. 140 — bo'sh buyurtmani chiqarib tashlamaslik, 72 — olmaslik variantini umuman hisobga olmaslik, 13 — sonlarni qo'shib yuborish. Javob: 139.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-shartli-tanlov-tahlili",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#522be660"
+    },
+    {
+      "q": "Sayyohning 6 xil kurtkasi, 3 xil shimi va 2 juft poyabzali bor. U shim va poyabzalni albatta kiyadi, kurtkani esa kiymasligi ham mumkin. Nechta ko'rinish hosil bo'ladi?",
+      "v": [
+        "11",
+        "42",
+        "36",
+        "84"
+      ],
+      "t": 1,
+      "izoh": "Kurtka uchun uni umuman kiymaslik ham alohida variant bo'lgani sababli u yerda 6 + 1 = 7 ta tanlov bor, shim 3 xil, poyabzal esa 2 xil tanlanadi: 7·3·2 = 42. 36 — kurtkani albatta kiyish shart deb hisoblash, 84 — qolgan turlarga ham ortiqcha variant qo'shib yuborish, 11 — sonlarni qo'shib yuborish. Javob: 42.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-shartli-tanlov-tahlili",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#a96b2a71"
+    },
+    {
+      "q": "6 ta har xil kitobni ikki nafar bolaga taqsimlash kerak; har bir kitob faqat bittasiga beriladi va har bir bola kamida bitta kitob olishi shart. Nechta taqsimot usuli bor?",
+      "v": [
+        "12",
+        "63",
+        "62",
+        "64"
+      ],
+      "t": 2,
+      "izoh": "Har bir kitob uchun ikkita variant bor, demak barcha taqsimotlar soni 2⁶ = 64. Ulardan ikkitasi shartga zid: hamma kitob birinchi bolaga tegadigan va hamma kitob ikkinchi bolaga tegadigan hollar. Demak 64 − 2 = 62. 64 — shartni unutish, 63 — faqat bitta holni chiqarib tashlash, 12 — 6·2 tarzida ko'paytirish. Javob: 62.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-shartli-tanlov-tahlili",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#acb6221b"
+    },
+    {
+      "q": "Uch xonali sonlar 1, 2, 3, 4, 5, 6 raqamlaridan takrorlanishga ruxsat berilgan holda tuzilmoqda. Ularning nechtasi juft va ayni paytda 300 dan katta?",
+      "v": [
+        "72",
+        "108",
+        "144",
+        "216"
+      ],
+      "t": 0,
+      "izoh": "Ikki shart bir vaqtda bajarilishi kerak. Birinchi raqam 300 dan katta bo'lish uchun 3, 4, 5 yoki 6 bo'ladi — 4 ta variant; oxirgi raqam juftlik uchun 2, 4 yoki 6 bo'ladi — 3 ta variant; o'rta xona esa erkin, ya'ni 6 ta variant: 4·6·3 = 72. 216 — ikkala shartni ham unutish, 144 — faqat 300 dan katta bo'lish shartini hisobga olish, 108 — faqat juftlik shartini hisobga olish. Javob: 72.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "kop-shartli-tanlov-tahlili",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b717e4da"
+    },
+    {
+      "q": "Birinchi do'konda 4 xil daftar va 5 xil ruchka, ikkinchisida esa 3 xil daftar va 8 xil ruchka bor. Qaysi do'konda «daftar va ruchka» to'plamini tanlash imkoni ko'proq va necha taga?",
+      "v": [
+        "Birinchisida, 4 ta ko'p",
+        "Ikkinchisida, 4 ta ko'p",
+        "Ikkinchisida, 2 ta ko'p",
+        "Ikkalasida teng"
+      ],
+      "t": 1,
+      "izoh": "Har bir do'konda ko'paytma qoidasi ishlaydi. Birinchi do'konda 4·5 = 20 ta to'plam, ikkinchisida esa 3·8 = 24 ta to'plam tuziladi. Demak ikkinchisida imkon ko'proq va farq 24 − 20 = 4 ta. Qolgan variantlar sonlarni qo'shish yoki farqni noto'g'ri hisoblash natijasida chiqadi. Javob: ikkinchisida, 4 ta ko'p.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-taqqoslash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#3823273c"
+    },
+    {
+      "q": "Beshta raqamdan (1, 2, 3, 4, 5) tuzilgan uch xonali sonlarning takrorlanishga ruxsat berilgandagi soni takrorlanmaydigandagi sonidan necha taga ko'p?",
+      "v": [
+        "60",
+        "125",
+        "185",
+        "65"
+      ],
+      "t": 3,
+      "izoh": "Takrorlanishga ruxsat berilganda 5·5·5 = 125 ta son tuziladi. Takrorlanish taqiqlanganda esa 5·4·3 = 60 ta son chiqadi. Farq 125 − 60 = 65 ga teng. 125 va 60 — faqat bitta holni javob deb olish, 185 — ayirma o'rniga yig'indini olish. Javob: 65.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-taqqoslash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#c1ba770a"
+    },
+    {
+      "q": "To'rt xonali PIN kodlar soni (har o'rinda 0 dan 9 gacha raqam, takrorlanishi mumkin) uch xonalilarinikidan necha marta ko'p?",
+      "v": [
+        "10 marta",
+        "4 marta",
+        "100 marta",
+        "1000 marta"
+      ],
+      "t": 0,
+      "izoh": "To'rt belgili kodlar soni 10⁴ = 10000, uch belgililariniki esa 10³ = 1000. Nisbatni topamiz: 10000 : 1000 = 10 marta. 4 marta — belgilar sonini nisbat deb olish, 100 marta — darajalar ayirmasini noto'g'ri hisoblash, 1000 marta — uch belgili kodlar sonini nisbat deb olish. Javob: 10 marta.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "sanoq-taqqoslash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#a65def33"
+    },
+    {
+      "q": "Bir kafeda 6 xil taom va 4 xil ichimlik, boshqasida esa 8 xil taom va 3 xil ichimlik bor. Ikki kafedagi «taom va ichimlik» to'plamlari sonining ayirmasi nechaga teng?",
+      "v": [
+        "48",
+        "1",
+        "0",
+        "2"
+      ],
+      "t": 2,
+      "izoh": "Birinchi kafeda 6·4 = 24 ta to'plam, ikkinchisida esa 8·3 = 24 ta to'plam tuziladi. Ikkala son teng bo'lgani uchun ayirma 24 − 24 = 0 ga teng. 1 — ko'paytma o'rniga yig'indi qoidasini qo'llab 10 bilan 11 ni solishtirish, 2 — faqat taomlar sonining farqini olish, 48 — ayirma o'rniga yig'indini olish. Javob: 0.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "sanoq-taqqoslash",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#6801b473"
+    },
+    {
+      "q": "Kun tartibida matematika, fizika, kimyo va biologiya darslari bor va matematika albatta birinchi dars bo'lishi kerak. Jadvalning nechta varianti bor?",
+      "v": [
+        "6",
+        "24",
+        "12",
+        "4"
+      ],
+      "t": 0,
+      "izoh": "Birinchi dars qat'iy belgilangan, shuning uchun faqat qolgan uchta fanni tartiblash kerak: 3·2·1 = 6. 24 — matematika haqidagi shartni unutish, 12 — barcha tartiblarning yarmi deb hisoblash, 4 — fanlar sonini javob deb olish. Javob: 6.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#cd713961"
+    },
+    {
+      "q": "Haftaning 6 ish kunida 6 ta har xil to'garak o'tkaziladi, har kuni bittadan. Dushanba kuni albatta shaxmat to'garagi bo'lishi shart bo'lsa, jadvalning nechta varianti bor?",
+      "v": [
+        "24",
+        "720",
+        "120",
+        "6"
+      ],
+      "t": 2,
+      "izoh": "Dushanba kuni band bo'lgani uchun qolgan 5 ta to'garakni qolgan 5 ta kunga taqsimlash kerak: 5·4·3·2·1 = 120. 720 — shaxmat haqidagi shartni unutish, 24 — yana bitta kunni ortiqcha band deb hisoblash, 6 — kunlar sonini javob deb olish. Javob: 120.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "arxetip": "jadval-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#50d929ed"
+    },
+    {
+      "q": "Festivalda 6 ta guruh ketma-ket sahnaga chiqadi. «Nur» guruhi na birinchi, na oxirgi bo'lishi kerak. Chiqishlar tartibining nechta varianti bor?",
+      "v": [
+        "240",
+        "480",
+        "600",
+        "720"
+      ],
+      "t": 1,
+      "izoh": "«Nur» guruhi uchun oltita o'rindan to'rttasi mos keladi, chunki birinchi va oxirgisi taqiqlangan. Uning o'rni belgilangach qolgan 5 ta guruh 5·4·3·2·1 = 120 xil tartibda chiqadi: 4·120 = 480. 720 — shartni unutish, 600 — faqat bitta taqiqlangan o'rinni chiqarib tashlash, 240 — «Nur» uchun ikkita o'rin qolgan deb hisoblash. Javob: 480.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#f656b0e3"
+    },
+    {
+      "q": "Bekatda 4 nafar yo'lovchi turibdi va ketma-ket 3 ta avtobus keladi; har bir yo'lovchi istalgan avtobusga chiqishi mumkin. Barcha yo'lovchi bitta avtobusga chiqmagan holatlar nechta?",
+      "v": [
+        "27",
+        "80",
+        "81",
+        "78"
+      ],
+      "t": 3,
+      "izoh": "Har bir yo'lovchi 3 ta avtobusdan birini tanlaydi, demak barcha holatlar soni 3⁴ = 81. Hamma birgalikda bitta avtobusga chiqadigan holatlar esa 3 ta, chunki o'sha avtobus 3 xil tanlanadi. Demak 81 − 3 = 78. 81 — shartni unutish, 80 — faqat bitta holni chiqarib tashlash, 27 — yo'lovchilar soni uchta deb hisoblash. Javob: 78.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "arxetip": "jadval-tuzish-shartli",
+      "id": "matematika_disk_m09-kombinatorikaning-asosiy-qoidalari#b97056c7"
+    }
+  ]
+}

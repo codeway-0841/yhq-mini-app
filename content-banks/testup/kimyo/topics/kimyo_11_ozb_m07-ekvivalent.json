@@ -1,0 +1,606 @@
+{
+  "nom": "07-mavzu. Ekvivalent",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "«Ekvivalent» so'zi qanday ma'noni bildiradi?",
+      "v": [
+        "Teng qiymatli",
+        "Teng massali",
+        "Teng hajmli",
+        "Teng zaryadli"
+      ],
+      "t": 0,
+      "izoh": "Ekvivalent teng qiymatli degan ma'noni bildiradi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#1a980dc4"
+    },
+    {
+      "q": "Kimyoviy reaksiyalarda moddalar o'zaro bir-birlari bilan qanday ta'sirlashadi?",
+      "v": [
+        "Ekvivalent og'irliklariga mos ravishda",
+        "Ixtiyoriy nisbatlarda",
+        "Faqat teng massalarda",
+        "Faqat teng hajmlarda"
+      ],
+      "t": 0,
+      "izoh": "Moddalar o'zaro bir-birlari bilan ekvivalent og'irliklariga mos ravishda ta'sirlashadilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#4971e6c6"
+    },
+    {
+      "q": "Elementning ekvivalent og'irligini topish formulasi qanday?",
+      "v": [
+        "E = A/V",
+        "E = A·V",
+        "E = V/A",
+        "E = A + V"
+      ],
+      "t": 0,
+      "izoh": "Element atom og'irligini (A) uning valentligiga (V) bo'linadi: E = A/V.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#40a2339a"
+    },
+    {
+      "q": "E = A/V formulasidagi harflar nimani bildiradi?",
+      "v": [
+        "E — ekvivalent, A — atom massasi (g), V — valentlik",
+        "E — energiya, A — amper, V — hajm",
+        "E — ekvivalent, A — massa ulushi, V — hajm",
+        "E — element, A — atom, V — vodorod"
+      ],
+      "t": 0,
+      "izoh": "E — ekvivalent, A — atom massasi (g), V — valentlik.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#74e248bb"
+    },
+    {
+      "q": "Kislorodning ekvivalenti nechaga teng (atom massasi 16, valentligi 2)?",
+      "v": [
+        "8",
+        "16",
+        "4",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "E(O) = 16/2 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#0c512de8"
+    },
+    {
+      "q": "Vodorodning ekvivalent massasi nechaga teng?",
+      "v": [
+        "1",
+        "2",
+        "0,5",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning atom massasi ham valentligi ham 1 ga teng, E(H) = 1/1 = 1.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#8d1939c5"
+    },
+    {
+      "q": "Biror elementning ekvivalent og'irligi deb nimaga aytiladi?",
+      "v": [
+        "1 og'irlik qism vodorod yoki 8 og'irlik qism kislorod bilan qoldiqsiz ta'sirlashadigan massasiga",
+        "Uning 1 molining massasiga",
+        "1 litr hajm egallagan massasiga",
+        "Atom massasining yarmiga"
+      ],
+      "t": 0,
+      "izoh": "1 og'irlik qism vodorod yoki 8 og'irlik qism kislorod bilan qoldiqsiz ta'sirlashadigan massaga elementning ekvivalent og'irligi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#cb6f806b"
+    },
+    {
+      "q": "SO2 da oltingugurtning ekvivalenti nechaga teng (S atom massasi 32)?",
+      "v": [
+        "8",
+        "5,33",
+        "16",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "SO2 da S valentligi 4; E(S) = 32/4 = 8.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#5276f532"
+    },
+    {
+      "q": "SO3 da oltingugurtning ekvivalenti nechaga teng (S atom massasi 32)?",
+      "v": [
+        "5,33",
+        "8",
+        "16",
+        "10,67"
+      ],
+      "t": 0,
+      "izoh": "SO3 da S valentligi 6; E(S) = 32/6 = 5,33.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#30e8cd63"
+    },
+    {
+      "q": "SO2 va SO3 birikmalarida oltingugurtning ekvivalent og'irligi nima uchun turlicha?",
+      "v": [
+        "Bu birikmalarda oltingugurtning valentlik qiymatlari turlicha bo'lgani uchun",
+        "Oltingugurtning atom massasi o'zgarib ketgani uchun",
+        "Kislorod miqdori bir xil bo'lgani uchun",
+        "Birikmalar agregat holati turlicha bo'lgani uchun"
+      ],
+      "t": 0,
+      "izoh": "SO2 va SO3 da oltingugurtning valentlik qiymatlari turlicha, shuning uchun ekvivalent og'irligi ham turlicha.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#a296f24a"
+    },
+    {
+      "q": "Xlorning ekvivalenti nechaga teng (atom massasi 35,5, valentligi 1)?",
+      "v": [
+        "35,5",
+        "17,75",
+        "71",
+        "8"
+      ],
+      "t": 0,
+      "izoh": "Xlor molekulasida xlorning valentligi 1 (Cl-Cl); E(Cl) = 35,5/1 = 35,5.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#3701ec2f"
+    },
+    {
+      "q": "Darslik izohiga ko'ra galogenlar (F2, Cl2, Br2, I2) molekulalari necha valentlikni namoyon qiladi?",
+      "v": [
+        "1 valentlikni",
+        "2 valentlikni",
+        "3 valentlikni",
+        "7 valentlikni"
+      ],
+      "t": 0,
+      "izoh": "Galogenlar F2, Cl2, Br2, I2 molekulalari 1 valentlikni namoyon qiladilar.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#03e7e360"
+    },
+    {
+      "q": "Azot molekulasidagi azotning ekvivalenti nechaga teng (atom massasi 14)?",
+      "v": [
+        "4,67",
+        "14",
+        "7",
+        "2,8"
+      ],
+      "t": 0,
+      "izoh": "Azot molekulasida azotning valentligi 3 (N≡N); E(N) = 14/3 = 4,67.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#72f673fe"
+    },
+    {
+      "q": "Ionning (kation yoki anionning) ekvivalenti qanday topiladi?",
+      "v": [
+        "Uning massasini (M) zaryadiga (z) bo'lganda chiqadigan bo'linmaga teng",
+        "Uning massasini zaryadiga ko'paytirish bilan",
+        "Uning zaryadini massasiga bo'lish bilan",
+        "Valentligini indeksiga ko'paytirish bilan"
+      ],
+      "t": 0,
+      "izoh": "E(ion) = M/z.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#4b58741f"
+    },
+    {
+      "q": "Na+ ionining ekvivalenti nechaga teng?",
+      "v": [
+        "23",
+        "11,5",
+        "46",
+        "1"
+      ],
+      "t": 0,
+      "izoh": "E(Na+) = 23/1 = 23.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#f1f16dd1"
+    },
+    {
+      "q": "CO3 2- ionining ekvivalenti nechaga teng?",
+      "v": [
+        "30",
+        "60",
+        "15",
+        "20"
+      ],
+      "t": 0,
+      "izoh": "E(CO3 2-) = 60/2 = 30.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#33a60277"
+    },
+    {
+      "q": "Oksidning ekvivalentini aniqlash uchun nima qilish kerak?",
+      "v": [
+        "Oksid molyar massasini oksid hosil qiluvchi element indeksi (n) va uning valentligi (V) ko'paytmasiga bo'lish",
+        "Oksid massasini kislorod massasiga bo'lish",
+        "Oksid molyar massasini 2 ga ko'paytirish",
+        "Element massasini valentligiga ko'paytirish"
+      ],
+      "t": 0,
+      "izoh": "E(oksid) = M(oksid)/(n·V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#358fba3a"
+    },
+    {
+      "q": "Al2O3 ning ekvivalent massasi nechaga teng?",
+      "v": [
+        "17",
+        "34",
+        "51",
+        "102"
+      ],
+      "t": 0,
+      "izoh": "M(Al2O3) = 102; E = 102/(2·3) = 17.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#cb19503a"
+    },
+    {
+      "q": "CaO ning ekvivalent massasi nechaga teng?",
+      "v": [
+        "28",
+        "56",
+        "14",
+        "40"
+      ],
+      "t": 0,
+      "izoh": "E(CaO) = 56/(1·2) = 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#daea251d"
+    },
+    {
+      "q": "Ca2+ va O2- ionlarining ekvivalentlari yig'indisi nechaga teng?",
+      "v": [
+        "28",
+        "20",
+        "8",
+        "48"
+      ],
+      "t": 0,
+      "izoh": "E(Ca2+) = 40/2 = 20; E(O2-) = 16/2 = 8; 20 + 8 = 28.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#3f78ae65"
+    },
+    {
+      "q": "Kislotaning ekvivalentini aniqlash uchun kislota molyar massasi nimaga bo'linadi?",
+      "v": [
+        "Tarkibidagi metall atomiga o'rmini beradigan vodorod soniga",
+        "Kislorod atomlari soniga",
+        "Metall atomlari soniga",
+        "Kislota molekulalari soniga"
+      ],
+      "t": 0,
+      "izoh": "E(k-ta) = M(k-ta)/n(H).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#24cca038"
+    },
+    {
+      "q": "H2SO4 ning ekvivalent massasi nechaga teng?",
+      "v": [
+        "49",
+        "98",
+        "32,7",
+        "24,5"
+      ],
+      "t": 0,
+      "izoh": "M(H2SO4) = 98; E = 98/2 = 49.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#0cf3432d"
+    },
+    {
+      "q": "SO4 2- ionining ekvivalenti nechaga teng?",
+      "v": [
+        "48",
+        "96",
+        "24",
+        "32"
+      ],
+      "t": 0,
+      "izoh": "E(SO4 2-) = 96/2 = 48.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#cb45a73e"
+    },
+    {
+      "q": "Asosning ekvivalentini aniqlash uchun asos molyar massasi nimaga bo'linadi?",
+      "v": [
+        "Gidroksil (OH) guruhlar soniga",
+        "Metall atomlari soniga",
+        "Vodorod atomlari soniga",
+        "Kislorod atomlari soniga"
+      ],
+      "t": 0,
+      "izoh": "E(asos) = M(asos)/n(OH).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#d32b8c13"
+    },
+    {
+      "q": "Ca(OH)2 ning ekvivalent massasi nechaga teng?",
+      "v": [
+        "37",
+        "74",
+        "18,5",
+        "57"
+      ],
+      "t": 0,
+      "izoh": "M(Ca(OH)2) = 74; E = 74/2 = 37.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#ac48b8b1"
+    },
+    {
+      "q": "Tuzning ekvivalentini aniqlash uchun tuz molyar massasi nimaga bo'linadi?",
+      "v": [
+        "Metall indeksi (n) va valentligi (V) ko'paytmasiga",
+        "Kislota qoldig'i zaryadiga",
+        "Faqat metall valentligiga",
+        "Faqat metall indeksiga"
+      ],
+      "t": 0,
+      "izoh": "E(tuz) = M(tuz)/(n·V).",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#0a3ac3af"
+    },
+    {
+      "q": "Al2(SO4)3 ning ekvivalent massasi nechaga teng?",
+      "v": [
+        "57",
+        "114",
+        "171",
+        "342"
+      ],
+      "t": 0,
+      "izoh": "M(Al2(SO4)3) = 342; E = 342/(2·3) = 57.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#77d0c8b7"
+    },
+    {
+      "q": "Al3+ ionining ekvivalenti nechaga teng (Al2(SO4)3 misolida)?",
+      "v": [
+        "9",
+        "27",
+        "13,5",
+        "18"
+      ],
+      "t": 0,
+      "izoh": "E(Al3+) = 27/3 = 9; E(Al2(SO4)3) = 9 + 48 = 57.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#30f15ac9"
+    },
+    {
+      "q": "Ekvivalentlik qonuni deb nimaga aytiladi?",
+      "v": [
+        "Moddalar ularning ekvivalentlariga mos ravishda o'zaro ta'sirlashiga",
+        "Moddalarning teng massalarda ta'sirlashiga",
+        "Moddalarning teng hajmlarda ta'sirlashiga",
+        "Atomlarning saqlanishiga"
+      ],
+      "t": 0,
+      "izoh": "Reaksiyaga kirishayotgan moddalar massalari nisbati ularning ekvivalent og'irliklari nisbatiga teng.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#4263c744"
+    },
+    {
+      "q": "Ekvivalentlik qonunining matematik ifodasi qanday?",
+      "v": [
+        "m1/m2 = E1/E2",
+        "m1·E1 = m2·E2",
+        "m1 + m2 = E1 + E2",
+        "m1/E1 = E2/m2"
+      ],
+      "t": 0,
+      "izoh": "m1/m2 = E1/E2, bunda m1, m2 — moddalar massalari, E1, E2 — moddalar ekvivalenti.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#618024eb"
+    },
+    {
+      "q": "Ekvivalent hajm deb nimaga aytiladi?",
+      "v": [
+        "Biror moddani ekvivalent og'irligiga teng massasini egallagan hajmiga",
+        "Moddaning 1 moli egallagan hajmiga",
+        "Gazning 1 gramm egallagan hajmiga",
+        "Moddaning 22,4 l hajmiga"
+      ],
+      "t": 0,
+      "izoh": "Biror moddani ekvivalent og'irligiga teng massasini egallagan hajmi shu moddaning ekvivalent hajmi deyiladi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "kimyo_11_ozb_m07-ekvivalent#e59aba3d"
+    },
+    {
+      "q": "Vodorodning ekvivalent hajmi nechaga teng?",
+      "v": [
+        "11,2 l",
+        "22,4 l",
+        "5,6 l",
+        "2,24 l"
+      ],
+      "t": 0,
+      "izoh": "Vodorodning ekvivalent massasi 1 g bo'lsa, normal sharoitda 11,2 l hajmni egallaydi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#da28b655"
+    },
+    {
+      "q": "Kislorodning ekvivalent hajmi nechaga teng?",
+      "v": [
+        "5,6 l",
+        "11,2 l",
+        "22,4 l",
+        "2,8 l"
+      ],
+      "t": 0,
+      "izoh": "32 g O2 — 22,4 l; 8 g (ekvivalent massa) — 5,6 l.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#8a3e7534"
+    },
+    {
+      "q": "Kislotani neytrallashga 0,2 g/ekv ishqor sarflangan bo'lsa, kislotadan qancha reaksiyaga kirishadi?",
+      "v": [
+        "0,2 g/ekv",
+        "0,4 g/ekv",
+        "0,1 g/ekv",
+        "1 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "Barcha moddalar bir-birlari bilan ekvivalent miqdorida reaksiyaga kirishadi: kislotadan ham 0,2 g/ekv kirishadi.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "kimyo_11_ozb_m07-ekvivalent#e28ebe6a"
+    },
+    {
+      "q": "1-masalada: 20 g NaOH 24,5 g noma'lum kislota bilan qoldiqsiz reaksiyaga kirishsa, kislotaning ekvivalent og'irligi nechaga teng?",
+      "v": [
+        "49 g",
+        "24,5 g",
+        "40 g",
+        "20 g"
+      ],
+      "t": 0,
+      "izoh": "x = 24,5·40/20 = 49 g.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#baf18a1f"
+    },
+    {
+      "q": "2-masalada: 4,32 g metall xlor bilan ta'sirlashib 21,36 g xlorid hosil qilsa, qancha xlor sarflangan?",
+      "v": [
+        "17,04 g",
+        "4,32 g",
+        "21,36 g",
+        "25,68 g"
+      ],
+      "t": 0,
+      "izoh": "21,36 − 4,32 = 17,04 g xlor sarflangan.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#1af673f9"
+    },
+    {
+      "q": "2-masalada metallning ekvivalent og'irligi qanday hisoblangan?",
+      "v": [
+        "x = 4,32·35,5/17,04",
+        "x = 17,04·35,5/4,32",
+        "x = 21,36·35,5/17,04",
+        "x = 4,32·17,04/35,5"
+      ],
+      "t": 0,
+      "izoh": "m(Me)/m(Cl) = E(Me)/E(Cl) formulasidan x = 4,32·35,5/17,04.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#4bb27a77"
+    },
+    {
+      "q": "3-masalada: 15 g metall karbonat parchalanganda 8,4 g oksid hosil bo'ldi. Metallning ekvivalent massasi nechaga teng?",
+      "v": [
+        "20",
+        "30",
+        "40",
+        "15"
+      ],
+      "t": 0,
+      "izoh": "15/(x+30) = 8,4/(x+8) tenglamadan x = 20.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#b61788dc"
+    },
+    {
+      "q": "4-masalada: 54 g noma'lum metallni oksidlash uchun 48 g kislorod sarflangan bo'lsa, metallning ekvivalent massasi nechaga teng?",
+      "v": [
+        "9 g/ekv",
+        "8 g/ekv",
+        "12 g/ekv",
+        "27 g/ekv"
+      ],
+      "t": 0,
+      "izoh": "x = 54·8/48 = 9 g/ekv.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#febda779"
+    },
+    {
+      "q": "Ekvivalent massasi 9 ga teng bo'lgan metall qaysi (darslik bo'yicha)?",
+      "v": [
+        "Alyuminiy (III valentli, atom massasi 27)",
+        "Magniy (II valentli)",
+        "Natriy (I valentli)",
+        "Temir (II valentli)"
+      ],
+      "t": 0,
+      "izoh": "A = E·V; 9·3 = 27 g — III valentli atom massasi 27 ga teng metall, bu Al.",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "qiyin",
+      "id": "kimyo_11_ozb_m07-ekvivalent#0b85b5b3"
+    }
+  ]
+}

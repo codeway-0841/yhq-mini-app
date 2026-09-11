@@ -1,0 +1,1293 @@
+{
+  "nom": "Subject pronouns (I, you, he...)",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "___ am a student.",
+      "v": [
+        "I",
+        "You",
+        "He",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "1-shaxs birlik (men) -> I.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#53985887"
+    },
+    {
+      "q": "Tom is tall. ___ is a teacher.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Erkak kishi -> he.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#f50f4395"
+    },
+    {
+      "q": "Anna is my sister. ___ is nice.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Ayol kishi -> she.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#41003d0e"
+    },
+    {
+      "q": "The cat is small. ___ is black.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Hayvon yoki narsa -> it.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9fadfde3"
+    },
+    {
+      "q": "My friends are here. ___ are happy.",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik odamlar (ular) -> they.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#f439e704"
+    },
+    {
+      "q": "Sam and I are friends. ___ play football.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Men va boshqalar (biz) -> we.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#75119e79"
+    },
+    {
+      "q": "___ are my teacher.",
+      "v": [
+        "You",
+        "I",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Suhbatdosh (sen/siz) -> you.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b619be79"
+    },
+    {
+      "q": "This is a book. ___ is new.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Jonsiz narsa -> it.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#236d4500"
+    },
+    {
+      "q": "Maria and Lola are girls. ___ are students.",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Ikki yoki undan ko'p odam -> they.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#2d6a5a6c"
+    },
+    {
+      "q": "___ is my father.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Erkak kishi -> he.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b9ea3501"
+    },
+    {
+      "q": "The dog is big. ___ is brown.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Hayvon -> it.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#2f232f26"
+    },
+    {
+      "q": "You and I are here. ___ are ready.",
+      "v": [
+        "We",
+        "They",
+        "He",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Sen va men (biz) -> we.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b5664257"
+    },
+    {
+      "q": "___ is a doctor. She helps people.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Ayol kishi -> she.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ad11e6c0"
+    },
+    {
+      "q": "The boys are outside. ___ are playing.",
+      "v": [
+        "They",
+        "We",
+        "She",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik -> they.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#d16c40f8"
+    },
+    {
+      "q": "___ am from Uzbekistan.",
+      "v": [
+        "I",
+        "You",
+        "He",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Men -> I (doim katta harf).",
+      "qiy": "oson",
+      "id": "ing_a1_m8#01f0cf5e"
+    },
+    {
+      "q": "Tom is my friend. ___ is nice.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Tom = He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b396f7c5"
+    },
+    {
+      "q": "Anna is a teacher. ___ is kind.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 1,
+      "izoh": "Anna = She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9c85cead"
+    },
+    {
+      "q": "The dog is big. ___ is black.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 2,
+      "izoh": "Hayvon = It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ccecaaae"
+    },
+    {
+      "q": "Tom and I are students. ___ study English.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Tom and I = We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#4c712e89"
+    },
+    {
+      "q": "My parents are doctors. ___ work hard.",
+      "v": [
+        "We",
+        "You",
+        "They",
+        "He"
+      ],
+      "t": 2,
+      "izoh": "parents = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#c5bc0793"
+    },
+    {
+      "q": "You and Sara are late. ___ are late.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "She"
+      ],
+      "t": 2,
+      "izoh": "You and Sara = You.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ddb439a5"
+    },
+    {
+      "q": "___ am a pupil.",
+      "v": [
+        "I",
+        "You",
+        "He",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "'am' bilan I.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ec3e501e"
+    },
+    {
+      "q": "The book is new. ___ is on the desk.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 2,
+      "izoh": "Narsa = It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#652c590e"
+    },
+    {
+      "q": "Ali and Bek are brothers. ___ play football.",
+      "v": [
+        "We",
+        "You",
+        "They",
+        "He"
+      ],
+      "t": 2,
+      "izoh": "Ikki kishi = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#0dfc8a92"
+    },
+    {
+      "q": "Maria is from Spain. ___ speaks Spanish.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "We"
+      ],
+      "t": 1,
+      "izoh": "Maria = She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#03efe4e9"
+    },
+    {
+      "q": "My father is tall. ___ is a driver.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "father = He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#eb7aeeb9"
+    },
+    {
+      "q": "The cats are hungry. ___ want food.",
+      "v": [
+        "It",
+        "He",
+        "They",
+        "She"
+      ],
+      "t": 2,
+      "izoh": "Ko'plik = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#8eca8e0b"
+    },
+    {
+      "q": "You and I are happy. ___ are friends.",
+      "v": [
+        "They",
+        "We",
+        "You",
+        "He"
+      ],
+      "t": 1,
+      "izoh": "You and I = We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a5f98449"
+    },
+    {
+      "q": "Sara is my sister. ___ is ten.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 1,
+      "izoh": "sister = She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#66be6cec"
+    },
+    {
+      "q": "The car is fast. ___ is red.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 2,
+      "izoh": "Narsa = It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#01d6cc05"
+    },
+    {
+      "q": "My brothers are young. ___ go to school.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 1,
+      "izoh": "brothers = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b2f39978"
+    },
+    {
+      "q": "John is a boy. ___ likes music.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "John = He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#1b6fa4d8"
+    },
+    {
+      "q": "The flowers are beautiful. ___ are red.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 3,
+      "izoh": "Ko'plik = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#632df999"
+    },
+    {
+      "q": "Mrs Lee is here. ___ is our teacher.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "We"
+      ],
+      "t": 1,
+      "izoh": "Mrs Lee = She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a257594b"
+    },
+    {
+      "q": "Ben and Tom are here. ___ are my friends.",
+      "v": [
+        "We",
+        "You",
+        "They",
+        "He"
+      ],
+      "t": 2,
+      "izoh": "Ben and Tom = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#d0588d9f"
+    },
+    {
+      "q": "The house is old. ___ is big.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 2,
+      "izoh": "Narsa = It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#0b7057f6"
+    },
+    {
+      "q": "My mum and I cook. ___ cook together.",
+      "v": [
+        "They",
+        "You",
+        "We",
+        "He"
+      ],
+      "t": 2,
+      "izoh": "mum and I = We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#58bca5e0"
+    },
+    {
+      "q": "Peter is sad. ___ is crying.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Peter = He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9ca059ef"
+    },
+    {
+      "q": "The birds are singing. ___ are happy.",
+      "v": [
+        "It",
+        "They",
+        "He",
+        "She"
+      ],
+      "t": 1,
+      "izoh": "Ko'plik = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#f60cd9e2"
+    },
+    {
+      "q": "Lucy and Emma are girls. ___ like dolls.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 1,
+      "izoh": "Lucy and Emma = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ae6331f5"
+    },
+    {
+      "q": "This is my pen. ___ is blue.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 2,
+      "izoh": "Narsa = It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#2be4508d"
+    },
+    {
+      "q": "My grandmother is old. ___ is kind.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 1,
+      "izoh": "grandmother = She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#149a13ed"
+    },
+    {
+      "q": "You and your friends are here. ___ are welcome.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 2,
+      "izoh": "You and friends = You.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#ed2c8d25"
+    },
+    {
+      "q": "The children are playing. ___ are in the park.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 3,
+      "izoh": "children = They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9c8719c5"
+    },
+    {
+      "q": "Replace 'Tom': ___ is my friend.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Tom - erkak, He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#6963b25b"
+    },
+    {
+      "q": "Replace 'Anna': ___ is a teacher.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Anna - ayol, She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#79fd55fe"
+    },
+    {
+      "q": "Replace 'the dog': ___ is black.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Hayvon yoki narsa uchun It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#99628e95"
+    },
+    {
+      "q": "Replace 'Tom and Anna': ___ are students.",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Ikki kishi - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9be86eba"
+    },
+    {
+      "q": "Replace 'my mother': ___ is at home.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Mother - ayol, She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#d68a411c"
+    },
+    {
+      "q": "Replace 'my father': ___ works in a bank.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Father - erkak, He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#e7228b3c"
+    },
+    {
+      "q": "Replace 'the books': ___ are on the desk.",
+      "v": [
+        "They",
+        "It",
+        "We",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Narsalar ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#c67ddb9a"
+    },
+    {
+      "q": "Replace 'Ali and I': ___ are brothers.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Men va Ali - We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#1dcf6575"
+    },
+    {
+      "q": "Replace 'the cat': ___ is sleeping.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Hayvon - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#dcae0f12"
+    },
+    {
+      "q": "Replace 'you and Tom': ___ are late.",
+      "v": [
+        "You",
+        "We",
+        "They",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Sen va Tom - You (ko'plik).",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a9cb091c"
+    },
+    {
+      "q": "Replace 'the girls': ___ are happy.",
+      "v": [
+        "They",
+        "She",
+        "It",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Girls ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#c49e1094"
+    },
+    {
+      "q": "Replace 'the sun': ___ is hot.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Narsa - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#41e2b183"
+    },
+    {
+      "q": "Replace 'Mr Karim': ___ is a doctor.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Erkak - He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#1b339b22"
+    },
+    {
+      "q": "Replace 'Mrs Lola': ___ is a nurse.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Ayol - She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#6d025edd"
+    },
+    {
+      "q": "Replace 'my parents': ___ are kind.",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Parents ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#2affe3a3"
+    },
+    {
+      "q": "Replace 'the car': ___ is new.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Narsa - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#abdae980"
+    },
+    {
+      "q": "Replace 'my sister and I': ___ like music.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Men ichida - We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#18595fa1"
+    },
+    {
+      "q": "Replace 'the teachers': ___ are busy.",
+      "v": [
+        "They",
+        "She",
+        "He",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a3d16864"
+    },
+    {
+      "q": "Replace 'the water': ___ is cold.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Sanalmas narsa - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#454a2875"
+    },
+    {
+      "q": "Replace 'John': ___ plays football.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Erkak ism - He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#1ce68b77"
+    },
+    {
+      "q": "Sara is nice. ___ is my classmate.",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Sara - ayol, She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#02bae9cf"
+    },
+    {
+      "q": "This is my brother. ___ is ten.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Brother - He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#98b529e2"
+    },
+    {
+      "q": "Look at the birds. ___ are flying.",
+      "v": [
+        "They",
+        "It",
+        "He",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Birds ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#3a0c6335"
+    },
+    {
+      "q": "I have a phone. ___ is new.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Narsa - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#0f8fc83f"
+    },
+    {
+      "q": "My friends are here. ___ are playing.",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Friends - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#b5a03aef"
+    },
+    {
+      "q": "Bek is tired. ___ wants to sleep.",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Bek - erkak, He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#269348da"
+    },
+    {
+      "q": "Dina and I study together. ___ are friends.",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "She"
+      ],
+      "t": 0,
+      "izoh": "Men bilan - We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a30ccf14"
+    },
+    {
+      "q": "The apple is red. ___ is sweet.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Meva - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#eb6d462e"
+    },
+    {
+      "q": "Are you and Ali ready? ___ are late.",
+      "v": [
+        "You",
+        "We",
+        "They",
+        "He"
+      ],
+      "t": 0,
+      "izoh": "Sen va Ali - You.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#4a3fcc7e"
+    },
+    {
+      "q": "Which pronoun for a book?",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Narsa uchun It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#6996b1d9"
+    },
+    {
+      "q": "Which pronoun for two boys?",
+      "v": [
+        "They",
+        "He",
+        "We",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Ikki bola - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#283197eb"
+    },
+    {
+      "q": "Which pronoun for a woman?",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Ayol - She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9f9b8511"
+    },
+    {
+      "q": "Which pronoun for a man?",
+      "v": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Erkak - He.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#29a41c93"
+    },
+    {
+      "q": "Which pronoun for you and me?",
+      "v": [
+        "We",
+        "They",
+        "You",
+        "I"
+      ],
+      "t": 0,
+      "izoh": "Sen va men - We.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#fb219dd1"
+    },
+    {
+      "q": "Which pronoun for a table?",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Narsa - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#34d6654d"
+    },
+    {
+      "q": "Which pronoun for many students?",
+      "v": [
+        "They",
+        "We",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik - They.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a442e72"
+    },
+    {
+      "q": "Which pronoun for a girl?",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Qiz - She.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#6af717f0"
+    },
+    {
+      "q": "Which pronoun for a cat?",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Hayvon - It.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#4b64b2d4"
+    },
+    {
+      "q": "Which pronoun do you use for yourself?",
+      "v": [
+        "I",
+        "You",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "O'zim uchun - I.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#2dcf2150"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "He is my friend.",
+        "Him is my friend.",
+        "He are my friend.",
+        "He am my friend."
+      ],
+      "t": 0,
+      "izoh": "He is - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "They are happy.",
+        "They is happy.",
+        "Them are happy.",
+        "They am happy."
+      ],
+      "t": 0,
+      "izoh": "They are - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c~2"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "She likes tea.",
+        "She like tea.",
+        "Her likes tea.",
+        "She liking tea."
+      ],
+      "t": 0,
+      "izoh": "She + likes.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c~3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "It is a dog.",
+        "It are a dog.",
+        "Its is a dog.",
+        "It am a dog."
+      ],
+      "t": 0,
+      "izoh": "It is - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c~4"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "We are friends.",
+        "We is friends.",
+        "Us are friends.",
+        "We am friends."
+      ],
+      "t": 0,
+      "izoh": "We are - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c~5"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "You are kind.",
+        "You is kind.",
+        "You am kind.",
+        "U are kind."
+      ],
+      "t": 0,
+      "izoh": "You are - to'g'ri.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9a16dc9c~6"
+    },
+    {
+      "q": "Find the mistake: 'She like apples.'",
+      "v": [
+        "like",
+        "She",
+        "apples",
+        "very"
+      ],
+      "t": 0,
+      "izoh": "She + likes bo'lishi kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#d95b4d3e"
+    },
+    {
+      "q": "Find the mistake: 'i am happy.'",
+      "v": [
+        "i",
+        "am",
+        "happy",
+        "today"
+      ],
+      "t": 0,
+      "izoh": "I doim katta harf.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#31f73bf9"
+    },
+    {
+      "q": "Find the mistake: 'Them are students.'",
+      "v": [
+        "Them",
+        "are",
+        "students",
+        "here"
+      ],
+      "t": 0,
+      "izoh": "To'g'risi They are.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#9de8456b"
+    },
+    {
+      "q": "___ works in a hospital. (my father)",
+      "v": [
+        "He",
+        "They",
+        "We",
+        "You"
+      ],
+      "t": 0,
+      "izoh": "Father - He works.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#436ef0e4"
+    },
+    {
+      "q": "___ plays with the ball. (the dog)",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Hayvon - It plays.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#00b60543"
+    },
+    {
+      "q": "___ sing very well. (the girls)",
+      "v": [
+        "They",
+        "She",
+        "He",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Girls ko'plik - They sing.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#22da4471"
+    },
+    {
+      "q": "___ is my English book.",
+      "v": [
+        "It",
+        "He",
+        "She",
+        "We"
+      ],
+      "t": 0,
+      "izoh": "Kitob - It is.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#081e05be"
+    },
+    {
+      "q": "___ are good teachers.",
+      "v": [
+        "They",
+        "He",
+        "She",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Ko'plik uchun They are.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#7f6c5513"
+    },
+    {
+      "q": "___ helps her mother. (Aziza)",
+      "v": [
+        "She",
+        "He",
+        "It",
+        "They"
+      ],
+      "t": 0,
+      "izoh": "Aziza - She helps.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#a2bbebb6"
+    },
+    {
+      "q": "___ like ice cream. (my brothers)",
+      "v": [
+        "They",
+        "He",
+        "She",
+        "It"
+      ],
+      "t": 0,
+      "izoh": "Brothers - They like.",
+      "qiy": "oson",
+      "id": "ing_a1_m8#f0a54bfe"
+    }
+  ]
+}

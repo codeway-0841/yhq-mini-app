@@ -1,0 +1,1293 @@
+{
+  "nom": "Weather (Ob-havo)",
+  "bolim": "So'z boyligi",
+  "savollar": [
+    {
+      "q": "Today it's ___, take an umbrella.",
+      "v": [
+        "sunny",
+        "rainy",
+        "hot",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Umbrella (soyabon) yomg'irda kerak, shuning uchun 'rainy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#75f725ca"
+    },
+    {
+      "q": "The sun is shining. The weather is ___.",
+      "v": [
+        "snowy",
+        "windy",
+        "sunny",
+        "foggy"
+      ],
+      "t": 2,
+      "izoh": "Quyosh charaqlaganda 'sunny' - quyoshli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#7dcdb6f2"
+    },
+    {
+      "q": "There is white snow everywhere. It's ___.",
+      "v": [
+        "snowy",
+        "sunny",
+        "warm",
+        "hot"
+      ],
+      "t": 0,
+      "izoh": "Qor bo'lsa 'snowy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#3c992f8b"
+    },
+    {
+      "q": "There is a lot of wind today. It's ___.",
+      "v": [
+        "cloudy",
+        "windy",
+        "rainy",
+        "sunny"
+      ],
+      "t": 1,
+      "izoh": "Shamol ko'p bo'lsa 'windy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#17d6efe8"
+    },
+    {
+      "q": "The sky is grey with many clouds. It's ___.",
+      "v": [
+        "hot",
+        "dry",
+        "cloudy",
+        "sunny"
+      ],
+      "t": 2,
+      "izoh": "Bulut ko'p bo'lsa 'cloudy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#b213df0b"
+    },
+    {
+      "q": "In summer it is often very ___.",
+      "v": [
+        "cold",
+        "hot",
+        "snowy",
+        "foggy"
+      ],
+      "t": 1,
+      "izoh": "Yozda ko'pincha issiq - 'hot'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a07061a1"
+    },
+    {
+      "q": "In winter it is usually ___.",
+      "v": [
+        "hot",
+        "warm",
+        "cold",
+        "dry"
+      ],
+      "t": 2,
+      "izoh": "Qishda odatda sovuq - 'cold'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6f52fec8"
+    },
+    {
+      "q": "Choose the correct question.",
+      "v": [
+        "What's the weather like?",
+        "What weather the like?",
+        "How weather is?",
+        "What like weather?"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri savol: 'What's the weather like?'",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0f8a31bb"
+    },
+    {
+      "q": "Water is falling from the sky. It's ___.",
+      "v": [
+        "shining",
+        "raining",
+        "blowing",
+        "snowing"
+      ],
+      "t": 1,
+      "izoh": "Osmondan suv tushsa - yomg'ir, 'raining'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a2cc281a"
+    },
+    {
+      "q": "We can't see far. It's very ___.",
+      "v": [
+        "foggy",
+        "sunny",
+        "hot",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Tuman bo'lsa uzoqni ko'rib bo'lmaydi - 'foggy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#4b1c5773"
+    },
+    {
+      "q": "It's not hot and not cold. It's ___.",
+      "v": [
+        "freezing",
+        "warm",
+        "snowy",
+        "foggy"
+      ],
+      "t": 1,
+      "izoh": "Na issiq na sovuq - 'warm' (iliq).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c9df53ba"
+    },
+    {
+      "q": "A little cold but pleasant. It's ___.",
+      "v": [
+        "hot",
+        "foggy",
+        "cool",
+        "rainy"
+      ],
+      "t": 2,
+      "izoh": "'Cool' - salqin, ozgina sovuq.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#f99accb2"
+    },
+    {
+      "q": "Which word means 'quyoshli'?",
+      "v": [
+        "rainy",
+        "sunny",
+        "cloudy",
+        "windy"
+      ],
+      "t": 1,
+      "izoh": "'Sunny' - quyoshli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#751ca3bf"
+    },
+    {
+      "q": "Which word means 'yomg'irli'?",
+      "v": [
+        "snowy",
+        "sunny",
+        "rainy",
+        "windy"
+      ],
+      "t": 2,
+      "izoh": "'Rainy' - yomg'irli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#4f3890a0"
+    },
+    {
+      "q": "Which word means 'qorli'?",
+      "v": [
+        "snowy",
+        "rainy",
+        "foggy",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "'Snowy' - qorli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#3f5bc054"
+    },
+    {
+      "q": "Which word means 'shamolli'?",
+      "v": [
+        "cloudy",
+        "sunny",
+        "windy",
+        "cold"
+      ],
+      "t": 2,
+      "izoh": "'Windy' - shamolli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c4412ff4"
+    },
+    {
+      "q": "Which word means 'bulutli'?",
+      "v": [
+        "cloudy",
+        "sunny",
+        "hot",
+        "cool"
+      ],
+      "t": 0,
+      "izoh": "'Cloudy' - bulutli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#88081fce"
+    },
+    {
+      "q": "Which word means 'issiq'?",
+      "v": [
+        "cold",
+        "cool",
+        "hot",
+        "wet"
+      ],
+      "t": 2,
+      "izoh": "'Hot' - issiq.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#e6eb2543"
+    },
+    {
+      "q": "Which word means 'sovuq'?",
+      "v": [
+        "cold",
+        "hot",
+        "warm",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "'Cold' - sovuq.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c73d82ac"
+    },
+    {
+      "q": "It's ___ today, wear a warm coat.",
+      "v": [
+        "hot",
+        "cold",
+        "sunny",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Issiq palto kiyilsa - sovuq, 'cold'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a7b82a71"
+    },
+    {
+      "q": "It's ___, let's go to the beach.",
+      "v": [
+        "snowy",
+        "sunny",
+        "foggy",
+        "rainy"
+      ],
+      "t": 1,
+      "izoh": "Plyajga borish uchun 'sunny' (quyoshli) mos.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#f6fce6bf"
+    },
+    {
+      "q": "Which season is usually hot?",
+      "v": [
+        "summer",
+        "winter",
+        "autumn",
+        "spring"
+      ],
+      "t": 0,
+      "izoh": "Yoz - 'summer' issiq fasl.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6e2a4061"
+    },
+    {
+      "q": "Which season is usually cold and snowy?",
+      "v": [
+        "spring",
+        "winter",
+        "summer",
+        "autumn"
+      ],
+      "t": 1,
+      "izoh": "Qish - 'winter' sovuq va qorli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#65950513"
+    },
+    {
+      "q": "Find the correct sentence.",
+      "v": [
+        "It's raining today.",
+        "It's rains today.",
+        "It rain today.",
+        "It raining today."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri shakl: 'It's raining today.'",
+      "qiy": "oson",
+      "id": "ing_a1_m34#4d0df7ab"
+    },
+    {
+      "q": "What's the weather ___ today?",
+      "v": [
+        "like",
+        "is",
+        "do",
+        "are"
+      ],
+      "t": 0,
+      "izoh": "'What's the weather like?' - to'g'ri savol shakli.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a9050272"
+    },
+    {
+      "q": "It's ___ and cold. Bring a hat.",
+      "v": [
+        "snowy",
+        "sunny",
+        "hot",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Sovuq va oq qor - 'snowy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#71b3dd35"
+    },
+    {
+      "q": "The wind is strong. It's very ___.",
+      "v": [
+        "foggy",
+        "windy",
+        "sunny",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Kuchli shamol - 'windy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#4932a99b"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "It is snowing.",
+        "It is snow now.",
+        "It snowing.",
+        "It snows the now."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: 'It is snowing.'",
+      "qiy": "oson",
+      "id": "ing_a1_m34#9a16dc9c"
+    },
+    {
+      "q": "The opposite of 'hot' is ___.",
+      "v": [
+        "cold",
+        "warm",
+        "sunny",
+        "windy"
+      ],
+      "t": 0,
+      "izoh": "'Hot' (issiq) qarama-qarshisi 'cold' (sovuq).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#9e21477b"
+    },
+    {
+      "q": "The opposite of 'cold' is ___.",
+      "v": [
+        "cool",
+        "hot",
+        "foggy",
+        "windy"
+      ],
+      "t": 1,
+      "izoh": "'Cold' qarama-qarshisi 'hot' (issiq).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#b7fd802c"
+    },
+    {
+      "q": "In spring the weather is often ___.",
+      "v": [
+        "warm",
+        "freezing",
+        "snowy",
+        "boiling"
+      ],
+      "t": 0,
+      "izoh": "Bahorda ko'pincha iliq - 'warm'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#917095a4"
+    },
+    {
+      "q": "I need sunglasses because it's ___.",
+      "v": [
+        "rainy",
+        "foggy",
+        "sunny",
+        "snowy"
+      ],
+      "t": 2,
+      "izoh": "Ko'zoynak quyoshda kerak - 'sunny'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#28edb65c"
+    },
+    {
+      "q": "The children make a snowman when it's ___.",
+      "v": [
+        "snowy",
+        "sunny",
+        "hot",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Qor odam qorli havoda yasaladi - 'snowy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#fc6d0bb1"
+    },
+    {
+      "q": "Which sentence is correct?",
+      "v": [
+        "It's a sunny day.",
+        "It's a sun day.",
+        "It's sunnily day.",
+        "Day is a sunny."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: 'It's a sunny day.'",
+      "qiy": "oson",
+      "id": "ing_a1_m34#21ac92a9"
+    },
+    {
+      "q": "___ is falling. It is white and cold.",
+      "v": [
+        "Snow",
+        "Sun",
+        "Wind",
+        "Cloud"
+      ],
+      "t": 0,
+      "izoh": "Oq va sovuq narsa yog'sa - 'Snow' (qor).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#03ebd57e"
+    },
+    {
+      "q": "Which one is a weather word?",
+      "v": [
+        "foggy",
+        "happy",
+        "table",
+        "green"
+      ],
+      "t": 0,
+      "izoh": "'Foggy' (tumanli) - ob-havo so'zi.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a52fb13c"
+    },
+    {
+      "q": "It's ___ in the morning, I can't see the road.",
+      "v": [
+        "foggy",
+        "sunny",
+        "hot",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Yo'l ko'rinmasa - tuman, 'foggy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0b4d6d4a"
+    },
+    {
+      "q": "Autumn days can be ___ and windy.",
+      "v": [
+        "boiling",
+        "cool",
+        "hot",
+        "dry"
+      ],
+      "t": 1,
+      "izoh": "Kuzda ko'pincha salqin - 'cool'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#80ce3c7a"
+    },
+    {
+      "q": "Answer 'What's the weather like?'",
+      "v": [
+        "It's cloudy.",
+        "I'm fine.",
+        "It's Monday.",
+        "I like tea."
+      ],
+      "t": 0,
+      "izoh": "Ob-havo haqida javob: 'It's cloudy.'",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ce6db59d"
+    },
+    {
+      "q": "Which one is NOT a weather word?",
+      "v": [
+        "kitchen",
+        "rainy",
+        "sunny",
+        "cloudy"
+      ],
+      "t": 0,
+      "izoh": "'Kitchen' (oshxona) - ob-havo so'zi emas.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ddc87646"
+    },
+    {
+      "q": "It's ___ outside, close the window.",
+      "v": [
+        "windy",
+        "sunny",
+        "dry",
+        "hot"
+      ],
+      "t": 0,
+      "izoh": "Shamol bo'lsa deraza yopiladi - 'windy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#636b9017"
+    },
+    {
+      "q": "In the desert it is very ___ and dry.",
+      "v": [
+        "cold",
+        "hot",
+        "snowy",
+        "foggy"
+      ],
+      "t": 1,
+      "izoh": "Cho'lda juda issiq - 'hot'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6d4b363d"
+    },
+    {
+      "q": "We stay home when it is ___.",
+      "v": [
+        "rainy",
+        "sunny",
+        "warm",
+        "clear"
+      ],
+      "t": 0,
+      "izoh": "Yomg'irli kunda uyda qolamiz - 'rainy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#5e093683"
+    },
+    {
+      "q": "Choose the correct spelling.",
+      "v": [
+        "cloudy",
+        "clowdy",
+        "cloudi",
+        "cloody"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri yozilishi: 'cloudy'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#2dc20496"
+    },
+    {
+      "q": "The weather is ___ today - no clouds, only sun.",
+      "v": [
+        "cloudy",
+        "foggy",
+        "sunny",
+        "snowy"
+      ],
+      "t": 2,
+      "izoh": "Bulut yo'q, faqat quyosh - 'sunny'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#83f64ca0"
+    },
+    {
+      "q": "The sun is shining. It's ___.",
+      "v": [
+        "sunny",
+        "rainy",
+        "snowy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Quyosh charaqlab tursa ob-havo sunny.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#105420f6"
+    },
+    {
+      "q": "Take an umbrella! It's ___ outside.",
+      "v": [
+        "rainy",
+        "dry",
+        "sunny",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Yomgir yogsa umbrella kerak — rainy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6298ae50"
+    },
+    {
+      "q": "It's very ___ today, so wear a warm coat.",
+      "v": [
+        "cold",
+        "hot",
+        "sunny",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Sovuq kunda issiq palto — cold.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c6bd1457"
+    },
+    {
+      "q": "In summer it is usually ___.",
+      "v": [
+        "hot",
+        "snowy",
+        "cold",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Yozda odatda issiq — hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#fb3aa88b"
+    },
+    {
+      "q": "Look outside — it's ___! The ground is white.",
+      "v": [
+        "snowing",
+        "raining",
+        "shining",
+        "blowing"
+      ],
+      "t": 0,
+      "izoh": "Yer oppoq bolsa qor yogyapti — snowing.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#dfc589db"
+    },
+    {
+      "q": "I can't see the road. It's very ___.",
+      "v": [
+        "foggy",
+        "sunny",
+        "dry",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Tuman bolsa yol korinmaydi — foggy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#7f6fe5ba"
+    },
+    {
+      "q": "The wind is strong today. It's ___.",
+      "v": [
+        "windy",
+        "calm",
+        "sunny",
+        "wet"
+      ],
+      "t": 0,
+      "izoh": "Kuchli shamol bolsa — windy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#d6b219ac"
+    },
+    {
+      "q": "What is the opposite of 'wet'?",
+      "v": [
+        "dry",
+        "cold",
+        "windy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "'Wet' teskarisi 'dry' (quruq).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#5d765fa7"
+    },
+    {
+      "q": "It's ___ today. Let's make a snowman!",
+      "v": [
+        "snowy",
+        "rainy",
+        "sunny",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Qorli kunda snowman — snowy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#48740be4"
+    },
+    {
+      "q": "The sky is grey and full of clouds. It's ___.",
+      "v": [
+        "cloudy",
+        "sunny",
+        "clear",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Osmon bulutli bolsa — cloudy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#bed0d0b9"
+    },
+    {
+      "q": "There are big clouds and thunder. It's ___.",
+      "v": [
+        "stormy",
+        "sunny",
+        "dry",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Momaqaldiroq bilan — stormy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#e5c696df"
+    },
+    {
+      "q": "It is not hot and not cold. It's ___.",
+      "v": [
+        "warm",
+        "freezing",
+        "icy",
+        "stormy"
+      ],
+      "t": 0,
+      "izoh": "Ne issiq ne sovuq — warm (iliq).",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c15932d6"
+    },
+    {
+      "q": "A little cold, but nice. It's ___.",
+      "v": [
+        "cool",
+        "boiling",
+        "stormy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Bir oz salqin — cool.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#d2336dcc"
+    },
+    {
+      "q": "My clothes are ___ because of the rain.",
+      "v": [
+        "wet",
+        "dry",
+        "warm",
+        "sunny"
+      ],
+      "t": 0,
+      "izoh": "Yomgirdan kiyim hol — wet.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#3d385c8a"
+    },
+    {
+      "q": "Choose the weather word.",
+      "v": [
+        "rainy",
+        "happy",
+        "hungry",
+        "tired"
+      ],
+      "t": 0,
+      "izoh": "'Rainy' — ob-havo sozi.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0defcd4d"
+    },
+    {
+      "q": "It's raining. What do you need?",
+      "v": [
+        "an umbrella",
+        "a fan",
+        "sunglasses",
+        "a hat"
+      ],
+      "t": 0,
+      "izoh": "Yomgirda soyabon kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6dcb1df6"
+    },
+    {
+      "q": "It's very sunny. What do you need?",
+      "v": [
+        "sunglasses",
+        "an umbrella",
+        "a scarf",
+        "gloves"
+      ],
+      "t": 0,
+      "izoh": "Quyoshli kunda kozoynak kerak.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ef446555"
+    },
+    {
+      "q": "It's ___ today. Put on your gloves and scarf.",
+      "v": [
+        "cold",
+        "hot",
+        "warm",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Qolqop va sharf sovuqda — cold.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ee5347a2"
+    },
+    {
+      "q": "The rain stopped and the sun is out. Now it's ___.",
+      "v": [
+        "sunny",
+        "rainy",
+        "snowy",
+        "stormy"
+      ],
+      "t": 0,
+      "izoh": "Yomgirdan keyin quyosh — sunny.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0d3bef38"
+    },
+    {
+      "q": "Complete: It ___ a lot in spring.",
+      "v": [
+        "rains",
+        "rain",
+        "raining",
+        "rained"
+      ],
+      "t": 0,
+      "izoh": "'It rains' — hozirgi oddiy zamon.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#753605c0"
+    },
+    {
+      "q": "Complete: It's ___ now, take your boots.",
+      "v": [
+        "snowing",
+        "snow",
+        "snows",
+        "snowed"
+      ],
+      "t": 0,
+      "izoh": "'It's snowing' — hozir qor yogyapti.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#12ef5218"
+    },
+    {
+      "q": "The weather is nice and ___ for a walk.",
+      "v": [
+        "dry",
+        "wet",
+        "stormy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Sayr uchun quruq ob-havo yaxshi.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#f94dc794"
+    },
+    {
+      "q": "Ships stay in port because it is very ___.",
+      "v": [
+        "stormy",
+        "sunny",
+        "dry",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Kemalar boronli kunda portda qoladi.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#04930770"
+    },
+    {
+      "q": "It's ___ in the morning, but it clears by noon.",
+      "v": [
+        "foggy",
+        "sunny",
+        "windy",
+        "hot"
+      ],
+      "t": 0,
+      "izoh": "Ertalab tuman — foggy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a59d885a"
+    },
+    {
+      "q": "Pick the word that means 'not wet'.",
+      "v": [
+        "dry",
+        "damp",
+        "wet",
+        "rainy"
+      ],
+      "t": 0,
+      "izoh": "'Dry' — quruq.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#57d173c8"
+    },
+    {
+      "q": "The flag is moving fast. It's ___.",
+      "v": [
+        "windy",
+        "calm",
+        "sunny",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Bayroq tez hilpirasa — windy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#6686f5f1"
+    },
+    {
+      "q": "It's ___! I need my winter jacket.",
+      "v": [
+        "freezing",
+        "boiling",
+        "sunny",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "'Freezing' — juda sovuq.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#4fbc3f2b"
+    },
+    {
+      "q": "It's ___! Let's go swimming.",
+      "v": [
+        "hot",
+        "cold",
+        "snowy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Suzish uchun issiq kun — hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#9806fe10"
+    },
+    {
+      "q": "Complete: The weather ___ nice today.",
+      "v": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'The weather is' — 'is'.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#2ccb9518"
+    },
+    {
+      "q": "What's the weather like? — ___",
+      "v": [
+        "It's cloudy.",
+        "I'm fine.",
+        "He is tall.",
+        "Yes, please."
+      ],
+      "t": 0,
+      "izoh": "Javob: It's cloudy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#e3057052"
+    },
+    {
+      "q": "Roads are white with snow. The weather is ___.",
+      "v": [
+        "snowy",
+        "rainy",
+        "sunny",
+        "windy"
+      ],
+      "t": 0,
+      "izoh": "Qor bilan qoplansa — snowy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#821169db"
+    },
+    {
+      "q": "In autumn it is often ___ and windy.",
+      "v": [
+        "cool",
+        "hot",
+        "boiling",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Kuzda salqin va shamolli — cool.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#77ecece3"
+    },
+    {
+      "q": "Choose the correct sentence.",
+      "v": [
+        "It's raining.",
+        "It's rain.",
+        "Its raining.",
+        "It rainy."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: It's raining.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#9a16dc9c~2"
+    },
+    {
+      "q": "The lake is frozen because it is very ___.",
+      "v": [
+        "cold",
+        "hot",
+        "warm",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Kol muzlashi sovuq sababli — cold.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#b21cfb01"
+    },
+    {
+      "q": "We can't fly the kite. There is no ___.",
+      "v": [
+        "wind",
+        "rain",
+        "snow",
+        "fog"
+      ],
+      "t": 0,
+      "izoh": "Uchqun uchun shamol kerak — wind.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0e4fdb63"
+    },
+    {
+      "q": "It's ___ and I feel too warm.",
+      "v": [
+        "hot",
+        "cold",
+        "cool",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Ozini issiq his qilsa — hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ff8147d1"
+    },
+    {
+      "q": "Which one describes water falling from clouds?",
+      "v": [
+        "rain",
+        "fog",
+        "wind",
+        "snow"
+      ],
+      "t": 0,
+      "izoh": "Bulutdan suv — rain.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#fb47195b"
+    },
+    {
+      "q": "Which one is frozen and white?",
+      "v": [
+        "snow",
+        "rain",
+        "fog",
+        "wind"
+      ],
+      "t": 0,
+      "izoh": "Muzlagan oq narsa — snow.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#3fac4cd7"
+    },
+    {
+      "q": "It's ___. Bring a jacket, it may get cold.",
+      "v": [
+        "cool",
+        "boiling",
+        "hot",
+        "dry"
+      ],
+      "t": 0,
+      "izoh": "Salqin kunda kurtka — cool.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#7ca4ad5f"
+    },
+    {
+      "q": "The morning is ___ but the sun comes later.",
+      "v": [
+        "cloudy",
+        "stormy",
+        "boiling",
+        "hot"
+      ],
+      "t": 0,
+      "izoh": "Ertalab bulutli — cloudy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#fa3f1aa5"
+    },
+    {
+      "q": "Complete: What ___ the weather like?",
+      "v": [
+        "is",
+        "are",
+        "do",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "'What is the weather like?' — is.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#39018019"
+    },
+    {
+      "q": "It's a ___ day. The sky is blue and clear.",
+      "v": [
+        "sunny",
+        "stormy",
+        "foggy",
+        "snowy"
+      ],
+      "t": 0,
+      "izoh": "Osmon musaffo — sunny.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#85428ca6"
+    },
+    {
+      "q": "My hair is wet. It's ___.",
+      "v": [
+        "raining",
+        "snowing",
+        "shining",
+        "blowing"
+      ],
+      "t": 0,
+      "izoh": "Soch holsa — raining.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#1d9dfc37"
+    },
+    {
+      "q": "It's ___! Close the windows, the rain is coming in.",
+      "v": [
+        "stormy",
+        "sunny",
+        "dry",
+        "calm"
+      ],
+      "t": 0,
+      "izoh": "Boron kirsa — stormy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#c7b6b68d"
+    },
+    {
+      "q": "Which word means very cold weather?",
+      "v": [
+        "freezing",
+        "warm",
+        "cool",
+        "mild"
+      ],
+      "t": 0,
+      "izoh": "Juda sovuq — freezing.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#d434f373"
+    },
+    {
+      "q": "Which word means very hot weather?",
+      "v": [
+        "boiling",
+        "cool",
+        "cold",
+        "mild"
+      ],
+      "t": 0,
+      "izoh": "Juda issiq — boiling.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#7f8b0fc1"
+    },
+    {
+      "q": "It's a ___ night. I can see many stars.",
+      "v": [
+        "clear",
+        "foggy",
+        "cloudy",
+        "stormy"
+      ],
+      "t": 0,
+      "izoh": "Yulduzlar korinsa — clear.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#8a457458"
+    },
+    {
+      "q": "Farmers are happy because it is ___ after a dry month.",
+      "v": [
+        "raining",
+        "shining",
+        "blowing",
+        "freezing"
+      ],
+      "t": 0,
+      "izoh": "Quruqlikdan keyin yomgir — raining.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#55790f9c"
+    },
+    {
+      "q": "It's ___, so the streets are full of puddles.",
+      "v": [
+        "wet",
+        "dry",
+        "sunny",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "Kolmaklar bolsa yer hol — wet.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#0ae6dd29"
+    },
+    {
+      "q": "Choose the opposite of 'sunny'.",
+      "v": [
+        "cloudy",
+        "bright",
+        "clear",
+        "warm"
+      ],
+      "t": 0,
+      "izoh": "'Sunny' teskarisi — cloudy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#b44b593c"
+    },
+    {
+      "q": "Choose the opposite of 'cold'.",
+      "v": [
+        "hot",
+        "cool",
+        "icy",
+        "freezing"
+      ],
+      "t": 0,
+      "izoh": "'Cold' teskarisi — hot.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ac7a2d0a"
+    },
+    {
+      "q": "It's ___ today. Let's stay inside and read.",
+      "v": [
+        "rainy",
+        "sunny",
+        "dry",
+        "clear"
+      ],
+      "t": 0,
+      "izoh": "Yomgirli kunda uyda — rainy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#7843b9b2"
+    },
+    {
+      "q": "The weather in the desert is very ___.",
+      "v": [
+        "dry",
+        "wet",
+        "snowy",
+        "foggy"
+      ],
+      "t": 0,
+      "izoh": "Cholda ob-havo quruq — dry.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#a87da5ee"
+    },
+    {
+      "q": "It's ___. The trees are bending in the wind.",
+      "v": [
+        "windy",
+        "calm",
+        "dry",
+        "sunny"
+      ],
+      "t": 0,
+      "izoh": "Daraxtlar egilsa — windy.",
+      "qiy": "oson",
+      "id": "ing_a1_m34#ba65078a"
+    }
+  ]
+}

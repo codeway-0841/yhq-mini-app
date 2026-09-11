@@ -1,0 +1,471 @@
+{
+  "nom": "32-mavzu. Issiqlik Miqdori",
+  "bolim": "",
+  "savollar": [
+    {
+      "q": "Issiqlik almashinuvi (issiqlik uzatish) deganda nimani tushunasiz?",
+      "v": [
+        "Bir jismdan ikkinchi jismga ish bajarmasdan energiya uzatish jarayonini",
+        "Jism ustida mexanik ish bajarish jarayonini",
+        "Moddaning qattiq holatdan suyuq holatga o'tishini",
+        "Moddaning gaz holatga o'tishini"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik almashinuvi ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#17654bd5"
+    },
+    {
+      "q": "Issiqlik miqdori nima?",
+      "v": [
+        "Issiqlik almashinuvi jarayonida jism olgan yoki yo'qotgan ichki energiya miqdorini belgilovchi fizik kattalik",
+        "Jismning temperaturasini belgilovchi kattalik",
+        "Jismning massasini belgilovchi kattalik",
+        "Jismning hajmini belgilovchi kattalik"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik miqdori ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#53b991ee"
+    },
+    {
+      "q": "Issiqlik miqdori qanday harf bilan belgilanadi?",
+      "v": [
+        "Q",
+        "U",
+        "c",
+        "t"
+      ],
+      "t": 0,
+      "izoh": "Q harfi bilan",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#5fb69005"
+    },
+    {
+      "q": "Issiqlik miqdorining SI dagi o'lchov birligi nima?",
+      "v": [
+        "Joul",
+        "Kaloriya",
+        "Vatt",
+        "Nyuton"
+      ],
+      "t": 0,
+      "izoh": "SI da joul",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#96725965"
+    },
+    {
+      "q": "Oziq-ovqat mahsulotlarining energiya miqdori nimada hisoblanadi?",
+      "v": [
+        "Kaloriyalarda",
+        "Joullarda",
+        "Vattlarda",
+        "Nyutonlarda"
+      ],
+      "t": 0,
+      "izoh": "Kaloriya birligi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#c1abc46d"
+    },
+    {
+      "q": "1 kaloriya taxminan necha joulga teng?",
+      "v": [
+        "4,2 J",
+        "42 J",
+        "0,42 J",
+        "420 J"
+      ],
+      "t": 0,
+      "izoh": "1 kal ≈ 4,2 J",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#a7c0aa79"
+    },
+    {
+      "q": "1 kaloriya deganda nimani tushunasiz?",
+      "v": [
+        "1 g toza suv temperaturasini 1 °C ga isitish uchun kerak bo'lgan issiqlik miqdorini",
+        "1 kg suvni 1 °C ga isitish uchun kerak bo'lgan issiqlik miqdorini",
+        "1 g suvni qaynatish uchun kerak bo'lgan issiqlik miqdorini",
+        "1 kg muzni eritish uchun kerak bo'lgan issiqlik miqdorini"
+      ],
+      "t": 0,
+      "izoh": "Kaloriya ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#80f2907b"
+    },
+    {
+      "q": "Jism olgan yoki yo'qotgan issiqlik miqdorining formulasi qaysi?",
+      "v": [
+        "Q = m·c·(t₂ − t₁)",
+        "Q = m·g·h",
+        "Q = m·v²/2",
+        "Q = q·m"
+      ],
+      "t": 0,
+      "izoh": "Q = mc(t₂−t₁)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#313f461f"
+    },
+    {
+      "q": "Q = m·c·(t₂ − t₁) formulasida c nimani anglatadi?",
+      "v": [
+        "Moddaning solishtirma issiqlik sig'imini",
+        "Jismning massasini",
+        "Jismning temperaturasini",
+        "Jismning tezligini"
+      ],
+      "t": 0,
+      "izoh": "c — solishtirma issiqlik sig'imi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#5ae997ce"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imi nima?",
+      "v": [
+        "Massasi 1 kg moddaning temperaturasini 1 °C ga o'zgartirish uchun kerak bo'lgan issiqlik miqdorini tavsiflovchi fizik kattalik",
+        "1 kg moddani to'liq eritish uchun kerak bo'lgan issiqlik miqdori",
+        "1 kg moddani bug'ga aylantirish uchun kerak bo'lgan issiqlik miqdori",
+        "1 kg yoqilg'i yonganda ajraladigan issiqlik miqdori"
+      ],
+      "t": 0,
+      "izoh": "Solishtirma issiqlik sig'imi ta'rifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#57b5c9af"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imining SI dagi birligi nima?",
+      "v": [
+        "J/(kg·°C)",
+        "J/kg",
+        "J",
+        "kJ/kg"
+      ],
+      "t": 0,
+      "izoh": "J/(kg·°C)",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#890083e9"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imi nimaga bog'liq?",
+      "v": [
+        "Moddaning turiga",
+        "Jismning massasiga",
+        "Jismning hajmiga",
+        "Jismning shakliga"
+      ],
+      "t": 0,
+      "izoh": "Modda turiga bog'liq",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#93e4554a"
+    },
+    {
+      "q": "Solishtirma issiqlik sig'imining qiymati qanday aniqlanadi?",
+      "v": [
+        "Tajriba yo'li bilan",
+        "Faqat nazariy hisoblash bilan",
+        "Grafik chizish bilan",
+        "Taxminiy ravishda"
+      ],
+      "t": 0,
+      "izoh": "Tajribada aniqlanadi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#01332bed"
+    },
+    {
+      "q": "Suvning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "4200 J/(kg·°C)",
+        "2100 J/(kg·°C)",
+        "880 J/(kg·°C)",
+        "460 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Suv — 4200",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#b9606b99"
+    },
+    {
+      "q": "Suv uchun c = 4200 J/(kg·°C) ifodasining fizik ma'nosi nima?",
+      "v": [
+        "1 kg suv 4200 J issiqlik olsa yoki yo'qotsa, temperaturasi 1 °C ga o'zgaradi",
+        "1 kg suv 4200 J da qaynaydi",
+        "1 g suv 4200 J da eriydi",
+        "1 kg suv 4200 °C da qaynaydi"
+      ],
+      "t": 0,
+      "izoh": "Fizik ma'no",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#4704d6f8"
+    },
+    {
+      "q": "Qo'rg'oshinning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "130 J/(kg·°C)",
+        "230 J/(kg·°C)",
+        "380 J/(kg·°C)",
+        "460 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin — 130",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#4d5bd22d"
+    },
+    {
+      "q": "Misning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "380 J/(kg·°C)",
+        "460 J/(kg·°C)",
+        "230 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Mis — 380",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#6d3c9757"
+    },
+    {
+      "q": "Temirning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "460 J/(kg·°C)",
+        "380 J/(kg·°C)",
+        "540 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Temir — 460",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#be0a55c2"
+    },
+    {
+      "q": "Alyuminiyni solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "880 J/(kg·°C)",
+        "460 J/(kg·°C)",
+        "540 J/(kg·°C)",
+        "2140 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Alyuminiy — 880",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#27b3952e"
+    },
+    {
+      "q": "Kumushning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "230 J/(kg·°C)",
+        "130 J/(kg·°C)",
+        "380 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Kumush — 230",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#a85d2bd1"
+    },
+    {
+      "q": "Muzning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "2100 J/(kg·°C)",
+        "4200 J/(kg·°C)",
+        "2140 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Muz — 2100",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#94e35edb"
+    },
+    {
+      "q": "Kerosinning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "2140 J/(kg·°C)",
+        "2100 J/(kg·°C)",
+        "4200 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Kerosin — 2140",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#86a46daa"
+    },
+    {
+      "q": "Cho'yanning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "540 J/(kg·°C)",
+        "460 J/(kg·°C)",
+        "380 J/(kg·°C)",
+        "230 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Cho'yan — 540",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#650741eb"
+    },
+    {
+      "q": "Qalayning solishtirma issiqlik sig'imi qancha?",
+      "v": [
+        "230 J/(kg·°C)",
+        "130 J/(kg·°C)",
+        "460 J/(kg·°C)",
+        "880 J/(kg·°C)"
+      ],
+      "t": 0,
+      "izoh": "Qalay — 230",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#e5a845ac"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida solishtirma issiqlik sig'imi eng katta bo'lgan modda qaysi?",
+      "v": [
+        "Suv",
+        "Kerosin",
+        "Muz",
+        "Alyuminiy"
+      ],
+      "t": 0,
+      "izoh": "Suv — 4200, eng katta",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#782f5e8d"
+    },
+    {
+      "q": "Jadvaldagi moddalar ichida solishtirma issiqlik sig'imi eng kichik bo'lgan modda qaysi?",
+      "v": [
+        "Qo'rg'oshin",
+        "Kumush",
+        "Qalay",
+        "Mis"
+      ],
+      "t": 0,
+      "izoh": "Qo'rg'oshin — 130",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#79518ae5"
+    },
+    {
+      "q": "Issiqlik almashinuvida issiqlik yo'qolmasa, issiq jism bergan issiqlik miqdori sovuq jism olgan issiqlik miqdoriga qanday bo'ladi?",
+      "v": [
+        "Teng bo'ladi",
+        "Katta bo'ladi",
+        "Kichik bo'ladi",
+        "Nolga teng bo'ladi"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik balansi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#5332c543"
+    },
+    {
+      "q": "Qo'rg'oshin uchun c = 130 J/(kg·°C) bu son nimani anglatadi?",
+      "v": [
+        "1 kg qo'rg'oshin 130 J issiqlik olsa yoki yo'qotsa, temperaturasi 1 °C ga o'zgaradi",
+        "1 g qo'rg'oshin 130 J da eriydi",
+        "1 kg qo'rg'oshin 130 °C da qaynaydi",
+        "1 kg qo'rg'oshin 130 kJ da bug'lanadi"
+      ],
+      "t": 0,
+      "izoh": "Fizik ma'no",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#6cf19c60"
+    },
+    {
+      "q": "Jism olgan issiqlik miqdori nimaga to'g'ri proporsional?",
+      "v": [
+        "Massasi, modda turi va temperatura o'zgarishiga",
+        "Faqat hajmiga",
+        "Faqat shakliga",
+        "Faqat zichligiga"
+      ],
+      "t": 0,
+      "izoh": "Q = mc(t₂−t₁) ga ko'ra",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#8205c072"
+    },
+    {
+      "q": "Piyola, kosa va choynakning tag qismi chuqur qilib yasalishi sababi nima?",
+      "v": [
+        "Issiqlik kam uzatilishi uchun",
+        "Chiroyli ko'rinishi uchun",
+        "Yengil bo'lishi uchun",
+        "Arzon bo'lishi uchun"
+      ],
+      "t": 0,
+      "izoh": "Issiqlik o'tkazuvchanlik bilan bog'liq",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "oson",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#32287531"
+    },
+    {
+      "q": "Anders Selsiy qaysi yillarda yashagan?",
+      "v": [
+        "1701–1744",
+        "1643–1727",
+        "1564–1642",
+        "1744–1810"
+      ],
+      "t": 0,
+      "izoh": "Selsiy — temperatura shkalasi muallifi",
+      "rasm": "",
+      "izohRasm": "",
+      "qiy": "orta",
+      "id": "fizika_7_ozb_m32-issiqlik-miqdori#1d312240"
+    }
+  ]
+}

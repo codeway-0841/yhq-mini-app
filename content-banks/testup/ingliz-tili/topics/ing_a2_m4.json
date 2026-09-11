@@ -1,0 +1,1306 @@
+{
+  "nom": "Future: going to / will",
+  "bolim": "Grammatika",
+  "savollar": [
+    {
+      "q": "I think our team ___ win the match tomorrow.",
+      "v": [
+        "will to",
+        "will",
+        "going to",
+        "wills"
+      ],
+      "t": 1,
+      "izoh": "Fikr/taxmin (I think) → will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#c4f4a3a4"
+    },
+    {
+      "q": "The phone is ringing. I ___ answer it.",
+      "v": [
+        "am going to",
+        "will",
+        "going to",
+        "answer"
+      ],
+      "t": 1,
+      "izoh": "Ayni damdagi tez qaror → will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#4d0310e2"
+    },
+    {
+      "q": "Don't worry, I ___ help you with your homework.",
+      "v": [
+        "will to",
+        "help",
+        "will",
+        "going"
+      ],
+      "t": 2,
+      "izoh": "Va'da (promise) → will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#fd55aaf4"
+    },
+    {
+      "q": "Maybe I ___ call you later tonight.",
+      "v": [
+        "am going to",
+        "will",
+        "going to",
+        "am"
+      ],
+      "t": 1,
+      "izoh": "'Maybe' bilan noaniq kelajak → will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#94878ef6"
+    },
+    {
+      "q": "I ___ tell anyone your secret.",
+      "v": [
+        "won't",
+        "am not",
+        "don't",
+        "isn't"
+      ],
+      "t": 0,
+      "izoh": "Va'da inkori: won't.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#0486faae"
+    },
+    {
+      "q": "She ___ come to school tomorrow; she is ill.",
+      "v": [
+        "don't",
+        "won't",
+        "isn't",
+        "aren't"
+      ],
+      "t": 1,
+      "izoh": "Bashorat inkori: won't.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#44dfc850"
+    },
+    {
+      "q": "___ you help me, please?",
+      "v": [
+        "Do",
+        "Will",
+        "Are",
+        "Is"
+      ],
+      "t": 1,
+      "izoh": "So'rov/kelajak savoli: Will you...?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#ee0ecfb5"
+    },
+    {
+      "q": "Which is a PROMISE?",
+      "v": [
+        "It will rain.",
+        "I will help you, I promise.",
+        "Cars will fly.",
+        "She will be tall."
+      ],
+      "t": 1,
+      "izoh": "Va'da: I will help you, I promise.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#91f3c11f"
+    },
+    {
+      "q": "Which is a PLAN decided before?",
+      "v": [
+        "I will get it.",
+        "I am going to study French next year.",
+        "Maybe it will snow.",
+        "I think he will come."
+      ],
+      "t": 1,
+      "izoh": "Oldindan reja: be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#a8593e9c"
+    },
+    {
+      "q": "Which shows EVIDENCE now?",
+      "v": [
+        "I think it will rain.",
+        "Look at the clouds, it is going to rain.",
+        "It will rain someday.",
+        "Maybe it will rain."
+      ],
+      "t": 1,
+      "izoh": "Dalilga asoslangan: be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#f5d80130"
+    },
+    {
+      "q": "I ___ going to visit my grandmother tomorrow.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 0,
+      "izoh": "'I' uchun 'am going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#a0836fe8"
+    },
+    {
+      "q": "She ___ going to study medicine at university.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun 'is going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#05bffa31"
+    },
+    {
+      "q": "We ___ going to travel to Samarkand next week.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'We' uchun 'are going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#092692e7"
+    },
+    {
+      "q": "___ you going to buy a new laptop?",
+      "v": [
+        "Am",
+        "Are",
+        "Do",
+        "Is"
+      ],
+      "t": 1,
+      "izoh": "be going to savolida 'are + you' ishlatiladi.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#be771345"
+    },
+    {
+      "q": "He ___ going to eat meat; he is a vegetarian.",
+      "v": [
+        "am not",
+        "isn't",
+        "aren't",
+        "don't"
+      ],
+      "t": 1,
+      "izoh": "'be going to' inkori: isn't going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#09de0420"
+    },
+    {
+      "q": "We ___ going to buy that house; it's too expensive.",
+      "v": [
+        "am not",
+        "isn't",
+        "aren't",
+        "don't"
+      ],
+      "t": 2,
+      "izoh": "'We' uchun 'aren't going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#f39f2722"
+    },
+    {
+      "q": "'What are your plans?' 'I ___ visit my uncle.'",
+      "v": [
+        "go to",
+        "am going to",
+        "going to",
+        "is going to"
+      ],
+      "t": 1,
+      "izoh": "Reja uchun 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#79ca7408"
+    },
+    {
+      "q": "Look at those dark clouds! It ___ rain.",
+      "v": [
+        "goes to",
+        "is going to",
+        "going to",
+        "are going to"
+      ],
+      "t": 1,
+      "izoh": "Dalil bo'lsa 'be going to' bilan bashorat.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#2c5719ee"
+    },
+    {
+      "q": "Be careful! You ___ fall!",
+      "v": [
+        "go to",
+        "are going to",
+        "going to",
+        "is going to"
+      ],
+      "t": 1,
+      "izoh": "Ko'zga ko'rinib turgan dalil bo'lsa 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#9967e9ab"
+    },
+    {
+      "q": "They aren't going to ___ the party.",
+      "v": [
+        "cancel",
+        "cancels",
+        "cancelling",
+        "cancelled"
+      ],
+      "t": 0,
+      "izoh": "'going to' dan keyin oddiy fe'l: cancel.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#34cea53e"
+    },
+    {
+      "q": "Look at those clouds! It ___ rain soon.",
+      "v": [
+        "is going to",
+        "will",
+        "goes to",
+        "is"
+      ],
+      "t": 0,
+      "izoh": "Ko'rinib turgan dalil bo'lsa → be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#79b206e2"
+    },
+    {
+      "q": "We ___ visit my grandmother next weekend. We already have the tickets.",
+      "v": [
+        "will",
+        "are going to",
+        "go to",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Oldindan qilingan reja → be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#813ff627"
+    },
+    {
+      "q": "She ___ study medicine at university. It's her plan.",
+      "v": [
+        "will",
+        "is going to",
+        "go to",
+        "shall"
+      ],
+      "t": 1,
+      "izoh": "Reja (plan) → be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b58740db"
+    },
+    {
+      "q": "Careful with that glass! You ___ break it.",
+      "v": [
+        "will",
+        "are going to",
+        "go to",
+        "break"
+      ],
+      "t": 1,
+      "izoh": "Dalilga asoslangan taxmin → be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#e5e285e5"
+    },
+    {
+      "q": "In the future, people ___ live on Mars, I believe.",
+      "v": [
+        "are going to",
+        "will",
+        "going to",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Umumiy taxmin/ishonch → will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b96c88b3"
+    },
+    {
+      "q": "They ___ going to build a new house.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "will"
+      ],
+      "t": 2,
+      "izoh": "'They' uchun 'are going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#99708eef"
+    },
+    {
+      "q": "He ___ going to start a business next year.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "'He' uchun 'is going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b587cc82"
+    },
+    {
+      "q": "I ___ going to buy a new phone.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "will"
+      ],
+      "t": 0,
+      "izoh": "'I' uchun 'am going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#be6f6fa5"
+    },
+    {
+      "q": "You ___ going to love this film.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "'You' uchun 'are going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#fca202d1"
+    },
+    {
+      "q": "My parents ___ going to sell the car.",
+      "v": [
+        "am",
+        "is",
+        "are",
+        "will"
+      ],
+      "t": 2,
+      "izoh": "'parents' ko'plik uchun 'are going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#250a3030"
+    },
+    {
+      "q": "We already decided: we ___ paint the house this summer.",
+      "v": [
+        "will",
+        "are going to",
+        "going to",
+        "is going to"
+      ],
+      "t": 1,
+      "izoh": "Oldindan rejalashtirilgan reja uchun 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d5a8d779"
+    },
+    {
+      "q": "She has bought paint. She ___ paint her room.",
+      "v": [
+        "will",
+        "is going to",
+        "going to",
+        "are going to"
+      ],
+      "t": 1,
+      "izoh": "Reja belgisi bor, 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#9c8b0a62"
+    },
+    {
+      "q": "He is holding a knife and vegetables. He ___ cook.",
+      "v": [
+        "will",
+        "is going to",
+        "going to",
+        "are going to"
+      ],
+      "t": 1,
+      "izoh": "Dalil bor, 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#91b0e3bc"
+    },
+    {
+      "q": "The team practised a lot. They ___ win.",
+      "v": [
+        "will",
+        "are going to",
+        "going to",
+        "is going to"
+      ],
+      "t": 1,
+      "izoh": "Dalilga asoslangan bashorat: 'be going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#61c2b39a"
+    },
+    {
+      "q": "I think it ___ be sunny tomorrow.",
+      "v": [
+        "will",
+        "is going",
+        "are",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "'I think' bilan bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#01180814"
+    },
+    {
+      "q": "Maybe she ___ come to the party.",
+      "v": [
+        "will",
+        "is",
+        "are",
+        "going"
+      ],
+      "t": 0,
+      "izoh": "'Maybe' bashorat, will bilan.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#5b93d659"
+    },
+    {
+      "q": "In the future, cars ___ fly.",
+      "v": [
+        "will",
+        "are",
+        "is",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "Kelajak bashorati: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#805d637f"
+    },
+    {
+      "q": "I'm sure you ___ pass the exam.",
+      "v": [
+        "will",
+        "are",
+        "is",
+        "going"
+      ],
+      "t": 0,
+      "izoh": "Ishonch bilan bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#6ded98b3"
+    },
+    {
+      "q": "Don't worry, everything ___ be fine.",
+      "v": [
+        "will",
+        "is",
+        "are",
+        "going"
+      ],
+      "t": 0,
+      "izoh": "Bashorat/tinchlantirish: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#67dc64d5"
+    },
+    {
+      "q": "I think our team ___ win the match.",
+      "v": [
+        "will",
+        "are",
+        "is",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "'I think' -> will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#1b76976e"
+    },
+    {
+      "q": "Perhaps it ___ snow next week.",
+      "v": [
+        "will",
+        "is",
+        "are",
+        "going"
+      ],
+      "t": 0,
+      "izoh": "'Perhaps' bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#2d6736ab"
+    },
+    {
+      "q": "One day robots ___ do all the work.",
+      "v": [
+        "will",
+        "are",
+        "is",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "Uzoq kelajak bashorati: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#73673f06"
+    },
+    {
+      "q": "I promise I ___ help you with your homework.",
+      "v": [
+        "will",
+        "am",
+        "going to",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "Va'da uchun 'will'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8ec4585b"
+    },
+    {
+      "q": "Don't worry, I ___ never tell your secret.",
+      "v": [
+        "am",
+        "will",
+        "going to",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "Va'da: I will never.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d237ce3f"
+    },
+    {
+      "q": "I ___ call you when I arrive. I promise.",
+      "v": [
+        "am",
+        "going to",
+        "will",
+        "do"
+      ],
+      "t": 2,
+      "izoh": "Va'da uchun will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8073aa04"
+    },
+    {
+      "q": "We ___ always be your friends.",
+      "v": [
+        "will",
+        "are going to",
+        "going",
+        "do"
+      ],
+      "t": 0,
+      "izoh": "Va'da/his: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#08ca6356"
+    },
+    {
+      "q": "It's cold in here. I ___ close the window.",
+      "v": [
+        "am going to",
+        "will",
+        "going to",
+        "closes"
+      ],
+      "t": 1,
+      "izoh": "Tez qaror: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#834c2a8b"
+    },
+    {
+      "q": "'I'm thirsty.' 'I ___ bring you some water.'",
+      "v": [
+        "am going to",
+        "going to",
+        "will",
+        "brings"
+      ],
+      "t": 2,
+      "izoh": "Shu ondagi qaror: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#0e9847bd"
+    },
+    {
+      "q": "'We have no bread.' 'OK, I ___ buy some.'",
+      "v": [
+        "am going to",
+        "going to",
+        "will",
+        "buys"
+      ],
+      "t": 2,
+      "izoh": "Tez qaror: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#1f765d35"
+    },
+    {
+      "q": "They ___ finish the work today.",
+      "v": [
+        "don't",
+        "doesn't",
+        "won't",
+        "aren't"
+      ],
+      "t": 2,
+      "izoh": "Kelajak inkori: won't.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#fc3db6bb"
+    },
+    {
+      "q": "I ___ going to watch TV tonight; I have to study.",
+      "v": [
+        "won't",
+        "isn't",
+        "aren't",
+        "am not"
+      ],
+      "t": 3,
+      "izoh": "'I' uchun 'am not going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#ee940be9"
+    },
+    {
+      "q": "What time ___ the train arrive?",
+      "v": [
+        "do",
+        "will",
+        "is",
+        "are"
+      ],
+      "t": 1,
+      "izoh": "Bashorat/jadval savoli: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#aadc4d70"
+    },
+    {
+      "q": "___ it rain tomorrow, do you think?",
+      "v": [
+        "Does",
+        "Is",
+        "Will",
+        "Are"
+      ],
+      "t": 2,
+      "izoh": "Bashorat savoli: Will it...?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#778717f6"
+    },
+    {
+      "q": "Who ___ win the game?",
+      "v": [
+        "do",
+        "does",
+        "will",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "Bashorat savoli: Who will...?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#1491a4a3"
+    },
+    {
+      "q": "What ___ you going to do this weekend?",
+      "v": [
+        "do",
+        "will",
+        "are",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun 'are ... going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#11d212e2"
+    },
+    {
+      "q": "___ she going to travel abroad?",
+      "v": [
+        "Will",
+        "Is",
+        "Are",
+        "Does"
+      ],
+      "t": 1,
+      "izoh": "'she' uchun 'Is ... going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#3cfdcbe1"
+    },
+    {
+      "q": "Where ___ they going to stay?",
+      "v": [
+        "will",
+        "do",
+        "are",
+        "is"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun 'are ... going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#74d18c15"
+    },
+    {
+      "q": "___ you going to eat now?",
+      "v": [
+        "Will",
+        "Do",
+        "Are",
+        "Is"
+      ],
+      "t": 2,
+      "izoh": "'you' uchun 'Are ... going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#e7487dbc"
+    },
+    {
+      "q": "Choose the correct sentence about helping:",
+      "v": [
+        "I will to help you.",
+        "I will help you.",
+        "I will helping you.",
+        "I will helps you."
+      ],
+      "t": 1,
+      "izoh": "'will' dan keyin 'to' kelmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#2fb2dd27"
+    },
+    {
+      "q": "Choose the correct sentence about travelling:",
+      "v": [
+        "She is going to travels.",
+        "She going to travel.",
+        "She is going to travel.",
+        "She is go to travel."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri: is going to + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8abe0743"
+    },
+    {
+      "q": "Choose the correct sentence about not coming:",
+      "v": [
+        "They will not comes.",
+        "They won't come.",
+        "They won't comes.",
+        "They will not to come."
+      ],
+      "t": 1,
+      "izoh": "won't + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#08957271"
+    },
+    {
+      "q": "Choose the correct question about coming:",
+      "v": [
+        "Will you to come?",
+        "Do you will come?",
+        "Will you come?",
+        "Are you will come?"
+      ],
+      "t": 2,
+      "izoh": "Savol: Will you come?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#5bf44967"
+    },
+    {
+      "q": "Choose the correct sentence about buying a car:",
+      "v": [
+        "I am going to buy a car.",
+        "I going to buy a car.",
+        "I am go to buy a car.",
+        "I am going buy a car."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: am going to + fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8d80517a"
+    },
+    {
+      "q": "Choose the correct sentence about rain:",
+      "v": [
+        "It will rains tomorrow.",
+        "It will rain tomorrow.",
+        "It will to rain tomorrow.",
+        "It wills rain tomorrow."
+      ],
+      "t": 1,
+      "izoh": "will + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#75c1ba1a"
+    },
+    {
+      "q": "Choose the correct sentence about a visit:",
+      "v": [
+        "We are going to visiting them.",
+        "We are going to visit them.",
+        "We going to visit them.",
+        "We is going to visit them."
+      ],
+      "t": 1,
+      "izoh": "going to + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b5597512"
+    },
+    {
+      "q": "Choose the correct sentence about a refusal:",
+      "v": [
+        "He will not to go.",
+        "He won't go.",
+        "He willn't go.",
+        "He won't goes."
+      ],
+      "t": 1,
+      "izoh": "won't + oddiy fe'l.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#214a23ea"
+    },
+    {
+      "q": "Which word is WRONG? 'I will to call you later.'",
+      "v": [
+        "I",
+        "will",
+        "to",
+        "call"
+      ],
+      "t": 2,
+      "izoh": "'will' dan keyin 'to' kelmaydi.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#0d2ad823"
+    },
+    {
+      "q": "Which word is WRONG? 'She is going to travels.'",
+      "v": [
+        "She",
+        "going",
+        "to",
+        "travels"
+      ],
+      "t": 3,
+      "izoh": "'to' dan keyin oddiy 'travel' kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#4d55ad54"
+    },
+    {
+      "q": "Which word is WRONG? 'They will comes tomorrow.'",
+      "v": [
+        "They",
+        "will",
+        "comes",
+        "tomorrow"
+      ],
+      "t": 2,
+      "izoh": "will dan keyin 'come' kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d19820a4"
+    },
+    {
+      "q": "Which word is WRONG? 'I am going buy a book.'",
+      "v": [
+        "I",
+        "am",
+        "going",
+        "buy"
+      ],
+      "t": 3,
+      "izoh": "'going to buy' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d132e2ac"
+    },
+    {
+      "q": "Which word is WRONG? 'We are go to win.'",
+      "v": [
+        "We",
+        "are",
+        "go",
+        "win"
+      ],
+      "t": 2,
+      "izoh": "'going' bo'lishi kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#7c76dbfe"
+    },
+    {
+      "q": "Which word is WRONG? 'He won't goes to school.'",
+      "v": [
+        "He",
+        "won't",
+        "goes",
+        "school"
+      ],
+      "t": 2,
+      "izoh": "won't dan keyin 'go' kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#cf20e3ed"
+    },
+    {
+      "q": "Which word is WRONG? 'Will you helps me?'",
+      "v": [
+        "Will",
+        "you",
+        "helps",
+        "me"
+      ],
+      "t": 2,
+      "izoh": "Will dan keyin 'help' kerak.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b2f107b2"
+    },
+    {
+      "q": "Which word is WRONG? 'I willn't tell anyone.'",
+      "v": [
+        "I",
+        "willn't",
+        "tell",
+        "anyone"
+      ],
+      "t": 1,
+      "izoh": "'willn't' xato; to'g'risi 'won't'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#3bde2351"
+    },
+    {
+      "q": "Put in order: help / I / will / you",
+      "v": [
+        "I help you will.",
+        "I will help you.",
+        "Will I help you.",
+        "Help I will you."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: I will help you.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#ac733ad3"
+    },
+    {
+      "q": "Put in order: going / she / is / to / leave",
+      "v": [
+        "She going is to leave.",
+        "She is going to leave.",
+        "She is to going leave.",
+        "Is she going to leave."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: She is going to leave.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#1a942a20"
+    },
+    {
+      "q": "Put in order: rain / it / will / tomorrow",
+      "v": [
+        "It rain will tomorrow.",
+        "Tomorrow it rain will.",
+        "It will rain tomorrow.",
+        "Will it rain tomorrow."
+      ],
+      "t": 2,
+      "izoh": "To'g'ri: It will rain tomorrow.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#17a3622e"
+    },
+    {
+      "q": "Put in order: you / will / come / soon",
+      "v": [
+        "You will come soon.",
+        "Will you come soon.",
+        "Come you will soon.",
+        "You come will soon."
+      ],
+      "t": 0,
+      "izoh": "To'g'ri: You will come soon.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#86304edf"
+    },
+    {
+      "q": "Put in order: to / going / we / are / travel",
+      "v": [
+        "We going are to travel.",
+        "We are going to travel.",
+        "We are to going travel.",
+        "Are we going travel."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: We are going to travel.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8d3afaee"
+    },
+    {
+      "q": "Put in order: won't / I / forget / you",
+      "v": [
+        "I forget won't you.",
+        "I won't forget you.",
+        "Won't I forget you.",
+        "I won't you forget."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: I won't forget you.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#496b3f10"
+    },
+    {
+      "q": "Put in order: what / you / are / going / to / do",
+      "v": [
+        "What are you going to do?",
+        "What you are going to do?",
+        "What do you are going to?",
+        "What going you are to do?"
+      ],
+      "t": 0,
+      "izoh": "To'g'ri savol: What are you going to do?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#bb541b8f"
+    },
+    {
+      "q": "Put in order: be / everything / will / fine",
+      "v": [
+        "Everything be will fine.",
+        "Everything will be fine.",
+        "Will everything be fine.",
+        "Everything will fine be."
+      ],
+      "t": 1,
+      "izoh": "To'g'ri: Everything will be fine.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#45543c6e"
+    },
+    {
+      "q": "'The bag is heavy.' 'I ___ carry it for you.'",
+      "v": [
+        "am going to",
+        "will",
+        "going to",
+        "won't"
+      ],
+      "t": 1,
+      "izoh": "Shu ondagi qaror: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#0aae86df"
+    },
+    {
+      "q": "I have tickets. I ___ go to the concert.",
+      "v": [
+        "will",
+        "am going to",
+        "won't",
+        "going to"
+      ],
+      "t": 1,
+      "izoh": "Reja bor: be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d74422e6"
+    },
+    {
+      "q": "'Someone is at the door.' 'I ___ open it.'",
+      "v": [
+        "am going to",
+        "will",
+        "going to",
+        "won't"
+      ],
+      "t": 1,
+      "izoh": "Tez qaror: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#aadca68f"
+    },
+    {
+      "q": "Look at him! He ___ jump into the water.",
+      "v": [
+        "will",
+        "is going to",
+        "going to",
+        "won't"
+      ],
+      "t": 1,
+      "izoh": "Dalil bor: be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#9d7f66d2"
+    },
+    {
+      "q": "I promise I ___ be late again.",
+      "v": [
+        "will",
+        "am going to",
+        "won't",
+        "going to"
+      ],
+      "t": 2,
+      "izoh": "Va'da inkori: won't.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#b55562d3"
+    },
+    {
+      "q": "In 100 years, people ___ live on Mars, maybe.",
+      "v": [
+        "are going to",
+        "will",
+        "going to",
+        "won't"
+      ],
+      "t": 1,
+      "izoh": "Uzoq kelajak bashorati: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#42ea819b"
+    },
+    {
+      "q": "She has her bag packed. She ___ leave soon.",
+      "v": [
+        "will",
+        "is going to",
+        "won't",
+        "going to"
+      ],
+      "t": 1,
+      "izoh": "Dalil bor: be going to.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#2901d4cc"
+    },
+    {
+      "q": "We are going to have a picnic ___.",
+      "v": [
+        "yesterday",
+        "last week",
+        "next Sunday",
+        "an hour ago"
+      ],
+      "t": 2,
+      "izoh": "Kelajak zamon so'zi: next Sunday.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#daba6536"
+    },
+    {
+      "q": "I will finish this project ___.",
+      "v": [
+        "last night",
+        "tomorrow",
+        "an hour ago",
+        "yesterday"
+      ],
+      "t": 1,
+      "izoh": "Kelajak: tomorrow.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#33180277"
+    },
+    {
+      "q": "They are going to move house ___.",
+      "v": [
+        "last month",
+        "next month",
+        "yesterday",
+        "two days ago"
+      ],
+      "t": 1,
+      "izoh": "Kelajak: next month.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8ad8019f"
+    },
+    {
+      "q": "Which sentence talks about the FUTURE?",
+      "v": [
+        "I visited my aunt.",
+        "I am visiting now.",
+        "I will visit my aunt.",
+        "I visit every day."
+      ],
+      "t": 2,
+      "izoh": "will kelajakni bildiradi.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#2813e601"
+    },
+    {
+      "q": "I don't think he ___ pass the test.",
+      "v": [
+        "will",
+        "is going",
+        "won't",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "Bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#c9155ad6"
+    },
+    {
+      "q": "___ they going to sell their car?",
+      "v": [
+        "Will",
+        "Do",
+        "Are",
+        "Is"
+      ],
+      "t": 2,
+      "izoh": "'they' uchun 'Are ... going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#d2680bc7"
+    },
+    {
+      "q": "It ___ be very hot next summer.",
+      "v": [
+        "going to",
+        "will",
+        "are",
+        "do"
+      ],
+      "t": 1,
+      "izoh": "Bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#a739f80c"
+    },
+    {
+      "q": "She ___ going to take the exam next week.",
+      "v": [
+        "will",
+        "is",
+        "are",
+        "does"
+      ],
+      "t": 1,
+      "izoh": "'She' uchun 'is going to'.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#5cca232d"
+    },
+    {
+      "q": "We ___ win if we practise more.",
+      "v": [
+        "will",
+        "are",
+        "is",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "Bashorat: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#e8618d51"
+    },
+    {
+      "q": "___ you be at home this evening?",
+      "v": [
+        "Do",
+        "Are",
+        "Will",
+        "Is"
+      ],
+      "t": 2,
+      "izoh": "Kelajak savoli: Will you be...?",
+      "qiy": "orta",
+      "id": "ing_a2_m4#8c9fa428"
+    },
+    {
+      "q": "He promised he ___ return the money.",
+      "v": [
+        "will",
+        "won't",
+        "is going",
+        "does"
+      ],
+      "t": 0,
+      "izoh": "Va'da: will.",
+      "qiy": "orta",
+      "id": "ing_a2_m4#12dfcc7b"
+    }
+  ]
+}
