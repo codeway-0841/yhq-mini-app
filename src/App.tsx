@@ -8,6 +8,7 @@ import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
+import { SnapSolveFab } from './features/ai-tutor'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -135,6 +136,7 @@ function Layout({ children }: { children: ReactNode }) {
           {children}
         </Suspense>
       </div>
+      <SnapSolveFab />
     </div>
   )
 }

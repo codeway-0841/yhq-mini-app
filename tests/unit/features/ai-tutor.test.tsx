@@ -77,4 +77,29 @@ describe('AI Tutor Frontend Components', () => {
     expect(screen.getByText(/Formula qayerdan keldi/)).toBeInTheDocument()
     expect(screen.getByText(/Boshqa usuli bormi/)).toBeInTheDocument()
   })
+
+  it('renders SnapSolveFab on standard routes and navigates to /ai-tutor on click', async () => {
+    const { default: SnapSolveFab } = await import('../../../src/features/ai-tutor/components/SnapSolveFab')
+    render(
+      <MemoryRouter initialEntries={['/rejimlar']}>
+        <SnapSolveFab />
+      </MemoryRouter>,
+    )
+
+    const fab = screen.getByRole('button', { name: /Suratdan yechish/i })
+    expect(fab).toBeInTheDocument()
+    expect(screen.getByText('AI')).toBeInTheDocument()
+  })
+
+  it('hides SnapSolveFab on restricted routes like /ai-tutor', async () => {
+    const { default: SnapSolveFab } = await import('../../../src/features/ai-tutor/components/SnapSolveFab')
+    render(
+      <MemoryRouter initialEntries={['/ai-tutor']}>
+        <SnapSolveFab />
+      </MemoryRouter>,
+    )
+
+    expect(screen.queryByRole('button', { name: /Suratdan yechish/i })).not.toBeInTheDocument()
+  })
 })
+
