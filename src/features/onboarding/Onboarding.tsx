@@ -66,7 +66,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
             width={290}
             height={290}
             decoding="async"
-            className="h-auto w-[min(72vw,260px)] max-h-[min(42dvh,100%)] rounded-3xl object-contain shadow-lg motion-safe:animate-fadeIn"
+            className="h-auto w-[min(72vw,260px)] max-h-[min(42dvh,100%)] object-contain motion-safe:animate-fadeIn"
           />
         </picture>
       </div>

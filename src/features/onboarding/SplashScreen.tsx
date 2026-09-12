@@ -22,7 +22,7 @@ export default function SplashScreen() {
             width={260}
             height={260}
             decoding="async"
-            className="relative h-auto w-[min(68vw,260px)] max-h-[42dvh] rounded-3xl object-contain shadow-lg"
+            className="relative h-auto w-[min(68vw,260px)] max-h-[42dvh] object-contain"
           />
         </picture>
       </div>
