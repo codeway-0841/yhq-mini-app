@@ -290,4 +290,76 @@ describe('Biletlar', () => {
     expect(screen.getByText('[B1] Present Perfect')).toBeInTheDocument()
     expect(screen.queryByText('[Pre-A1] Greetings')).toBeNull()
   })
+
+  it('biologiya: sinflar bo\'yicha biletlar va filtrlash to\'g\'ri ishlaydi', () => {
+    useSubjectStore.setState({ subjectId: 'biologiya' })
+
+    const mockTopics = [
+      { id: 301, nameUz: '5-sinf Botanika kirish', nameRu: '5-класс', slug: 'biology_db-bio5_m1' },
+      { id: 302, nameUz: '10-sinf Hujayra nazariyasi', nameRu: '10-класс', slug: 'biology_db-bio10_m1' },
+    ] as never[]
+
+    const topicQuestions = [
+      { id: 10, topicId: 301, questionUz: 'Botanika nima?', questionRu: 'Что такое ботаника?', optionsUz: { A1: 'Osimlik' }, optionsRu: { A1: 'Растение' }, correctAnswer: 'A1' },
+      { id: 11, topicId: 302, questionUz: 'Hujayra nima?', questionRu: 'Что такое клетка?', optionsUz: { A1: 'Birlik' }, optionsRu: { A1: 'Единица' }, correctAnswer: 'A1' },
+    ] as never[]
+
+    useQuestionsStore.setState({
+      questions: topicQuestions,
+      topics: mockTopics,
+      loaded: true,
+      loading: false,
+    })
+
+    render(<Biletlar />)
+
+    expect(screen.getByText('5-sinf Botanika kirish')).toBeInTheDocument()
+    expect(screen.getByText('10-sinf Hujayra nazariyasi')).toBeInTheDocument()
+
+    // Sinf tab filtrlari
+    const sinf5Filter = screen.getByRole('button', { name: /^5-sinf/i })
+    const sinf10Filter = screen.getByRole('button', { name: /^10-sinf/i })
+    expect(sinf5Filter).toBeInTheDocument()
+    expect(sinf10Filter).toBeInTheDocument()
+
+    // 10-sinf tanlanganda faqat 10-sinf bileti qoladi
+    fireEvent.click(sinf10Filter)
+    expect(screen.getByText('10-sinf Hujayra nazariyasi')).toBeInTheDocument()
+    expect(screen.queryByText('5-sinf Botanika kirish')).toBeNull()
+  })
+
+  it('ona tili: tilshunoslik bo\'limlari bo\'yicha biletlar va filtrlash to\'g\'ri ishlaydi', () => {
+    useSubjectStore.setState({ subjectId: 'onatili' })
+
+    const mockTopics = [
+      { id: 401, nameUz: 'Fonetika asoslari', nameRu: 'Фонетика', slug: 'onatili_db-onatili_fon_m01' },
+      { id: 402, nameUz: 'Ot so\'z turkumi', nameRu: 'Существительное', slug: 'onatili_db-onatili_mor_m01' },
+    ] as never[]
+
+    const topicQuestions = [
+      { id: 20, topicId: 401, questionUz: 'Tovush nima?', questionRu: 'Что такое звук?', optionsUz: { A1: 'A' }, optionsRu: { A1: 'А' }, correctAnswer: 'A1' },
+      { id: 21, topicId: 402, questionUz: 'Ot nima?', questionRu: 'Что такое имя?', optionsUz: { A1: 'B' }, optionsRu: { A1: 'Б' }, correctAnswer: 'A1' },
+    ] as never[]
+
+    useQuestionsStore.setState({
+      questions: topicQuestions,
+      topics: mockTopics,
+      loaded: true,
+      loading: false,
+    })
+
+    render(<Biletlar />)
+
+    expect(screen.getByText('Fonetika asoslari')).toBeInTheDocument()
+    expect(screen.getByText('Ot so\'z turkumi')).toBeInTheDocument()
+
+    const fonFilter = screen.getByRole('button', { name: /^Fonetika/i })
+    const morFilter = screen.getByRole('button', { name: /^Morfologiya/i })
+    expect(fonFilter).toBeInTheDocument()
+    expect(morFilter).toBeInTheDocument()
+
+    fireEvent.click(morFilter)
+    expect(screen.getByText('Ot so\'z turkumi')).toBeInTheDocument()
+    expect(screen.queryByText('Fonetika asoslari')).toBeNull()
+  })
 })
