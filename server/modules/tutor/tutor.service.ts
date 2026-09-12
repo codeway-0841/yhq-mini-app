@@ -8,12 +8,11 @@ import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 
-// Model fallback ierarxiyasi
+// Model fallback ierarxiyasi (3.x va oxirgi Flash modellar)
 const VISION_MODELS = [
   'gemini-3.1-flash-lite',
   'gemini-3-flash-preview',
   'gemini-flash-latest',
-  'gemini-pro-latest',
 ] as const
 
 const CHAT_MODELS = [
@@ -39,6 +38,31 @@ export const PhotoSolveResultSchema = z.object({
 })
 
 export type PhotoSolveResult = z.infer<typeof PhotoSolveResultSchema>
+
+const PHOTO_SOLVE_RESPONSE_SCHEMA = {
+  type: 'OBJECT',
+  properties: {
+    ocrText: { type: 'STRING', description: "Rasmdan o'qilgan masala/test matni to'liq va aniq" },
+    detectedSubject: { type: 'STRING', description: "Fan id'si (masalan: fizika, matematika, kimyo, rustili, ingliz, biologiya, tarix, yhq)" },
+    subjectName: { type: 'STRING', description: "Fanning to'liq nomi (masalan: Fizika)" },
+    finalAnswer: { type: 'STRING', description: "Yakuniy qisqa va lo'nda javob" },
+    steps: {
+      type: 'ARRAY',
+      items: {
+        type: 'OBJECT',
+        properties: {
+          stepNumber: { type: 'INTEGER' },
+          title: { type: 'STRING', description: "Qadam sarlavhasi" },
+          explanation: { type: 'STRING', description: "Qadamning batafsil tushuntirilishi" },
+          formula: { type: 'STRING', description: "LaTeX formulasi" },
+        },
+        required: ['stepNumber', 'title', 'explanation'],
+      },
+    },
+    keyConcept: { type: 'STRING', description: "Asosiy qoida yoki formula" },
+  },
+  required: ['ocrText', 'detectedSubject', 'subjectName', 'finalAnswer', 'steps', 'keyConcept'],
+}
 
 export interface SocraticMessage {
   role: 'user' | 'assistant'
@@ -124,6 +148,7 @@ Vazifang — o'quvchi yuborgan rasmdagi o'quv topshirig'i, masala yoki testni (F
             ],
             generationConfig: {
               responseMimeType: 'application/json',
+              responseSchema: PHOTO_SOLVE_RESPONSE_SCHEMA,
               temperature: 0.2,
               maxOutputTokens: 3000,
             },
@@ -137,9 +162,7 @@ Vazifang — o'quvchi yuborgan rasmdagi o'quv topshirig'i, masala yoki testni (F
         const errBody = await res.text().catch(() => '')
         lastError = `${model} HTTP ${res.status}: ${errBody.slice(0, 150)}`
         console.warn(`[tutor.service] ${lastError}`)
-        if (res.status === 429) continue // try next model
-        if (res.status >= 500) continue
-        break
+        continue
       }
 
       const json = await res.json() as { candidates?: { content?: { parts?: { text?: string }[] } }[] }
@@ -149,8 +172,25 @@ Vazifang — o'quvchi yuborgan rasmdagi o'quv topshirig'i, masala yoki testni (F
         continue
       }
 
-      // JSON parsing & validation
-      const parsed = JSON.parse(text)
+      // JSON parsing & normalization
+      let parsed: unknown
+      try {
+        parsed = JSON.parse(text)
+      } catch {
+        const cleaned = text.replace(/```(?:json)?\n?/g, '').replace(/```\n?/g, '').trim()
+        parsed = JSON.parse(cleaned)
+      }
+
+      if (parsed && typeof parsed === 'object') {
+        const p = parsed as Record<string, unknown>
+        if (!p.detectedSubject && p.subject) p.detectedSubject = String(p.subject)
+        if (!p.ocrText && p.text) p.ocrText = String(p.text)
+        if (!p.subjectName && p.detectedSubject) p.subjectName = String(p.detectedSubject)
+        if (!p.finalAnswer && p.answer) p.finalAnswer = String(p.answer)
+        if (!Array.isArray(p.steps)) p.steps = []
+        if (!p.keyConcept) p.keyConcept = "Asosiy qoida"
+      }
+
       const validated = PhotoSolveResultSchema.safeParse(parsed)
       if (validated.success) {
         return validated.data
@@ -165,7 +205,7 @@ Vazifang — o'quvchi yuborgan rasmdagi o'quv topshirig'i, masala yoki testni (F
     }
   }
 
-  throw new AppError(502, `Rasmni tahlil qilishda xatolik yuz berdi (${lastError.slice(0, 80)}). Qayta urinib ko'ring.`)
+  throw new AppError(503, "Sun'iy intellekt xizmati vaqtincha band yoki rasmdagi matnni o'qib bo'lmadi. Iltimos, qayta urinib ko'ring.")
 }
 
 /**

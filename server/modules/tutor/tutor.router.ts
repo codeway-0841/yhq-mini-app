@@ -102,10 +102,10 @@ router.post(
     const limit = userIsPremium ? 30 : 2
 
     const photoKey = `${uid}:photo`
-    const allowed = await tutorUsageRepository.tryConsume(photoKey, date, limit)
-    const globalAllowed = await tutorUsageRepository.tryConsume('0:photo', date, 500)
+    const used = await tutorUsageRepository.getCount(photoKey, date)
+    const globalUsed = await tutorUsageRepository.getCount('0:photo', date)
 
-    if (!allowed || !globalAllowed) {
+    if (used >= limit || globalUsed >= 500) {
       throw new AppError(429, userIsPremium ? 'daily_limit' : 'free_limit_exceeded')
     }
 
@@ -116,6 +116,10 @@ router.post(
       subjectHint,
       language,
     })
+
+    // Consume quota ONLY on successful solve
+    await tutorUsageRepository.tryConsume(photoKey, date, limit)
+    await tutorUsageRepository.tryConsume('0:photo', date, 500)
 
     const quota = await tutorUsageRepository.getUserQuotaStatus(uid, date, userIsPremium)
 

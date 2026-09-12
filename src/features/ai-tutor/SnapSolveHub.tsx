@@ -5,7 +5,7 @@ import {
   RefreshCw, MessageSquareQuote, Crown, ArrowRight,
   BookOpen, History,
 } from 'lucide-react'
-import { api, type TutorQuota } from '../../shared/api'
+import { api, ApiError, type TutorQuota } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
@@ -120,10 +120,12 @@ export default function SnapSolveHub() {
       }
     } catch (err: unknown) {
       haptics.notify('error')
-      const msg = err instanceof Error ? err.message : "Masalani yechishda xatolik yuz berdi"
-      if (msg.includes('429') || msg.includes('limit')) {
+      if (err instanceof ApiError && (err.code === 'free_limit_exceeded' || err.code === 'daily_limit')) {
         setErrorMessage(tt('snapSolveQuotaExceeded'))
+      } else if (err instanceof ApiError && err.code) {
+        setErrorMessage(err.code)
       } else {
+        const msg = err instanceof Error ? err.message : "Masalani yechishda xatolik yuz berdi"
         setErrorMessage(msg)
       }
     } finally {
