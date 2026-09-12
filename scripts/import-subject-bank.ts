@@ -18,6 +18,7 @@ const SUBJECT_LIST = [
   { folder: 'onatili', bankId: 'onatili_db', bankName: 'Ona tili savollar bazasi' },
   { folder: 'adabiyot', bankId: 'adabiyot_db', bankName: 'Adabiyot savollar bazasi' },
   { folder: 'ingliz', bankId: 'english_db', bankName: 'Ingliz tili savollar bazasi' },
+  { folder: 'rustili', bankId: 'russian_db', bankName: 'Rus tili savollar bazasi' },
 ];
 
 const CHUNK_SIZE = 500;
@@ -75,6 +76,13 @@ export async function importBank(subjectFolder: string, txOrDb?: any) {
   );
 
   // 2. Topics ni kiritish (slug = ${bankId}-${externalId})
+  if (bankId === 'russian_db') {
+    await executeRows(
+      sql`UPDATE topics SET slug = ${bankId} || '-' || slug WHERE bank_id = ${bankId} AND slug NOT LIKE 'russian_db-%'`,
+      txOrDb
+    );
+  }
+
   const topicRows = bank.topics.map((t) => ({
     ...t,
     slug: `${bankId}-${t.externalId}`,
@@ -104,7 +112,7 @@ export async function importBank(subjectFolder: string, txOrDb?: any) {
   );
   const topicIdBySlug = new Map(dbTopics.map((t) => [t.slug, t.id]));
   const topicIdFor = (externalId: string): number => {
-    const id = topicIdBySlug.get(`${bankId}-${externalId}`);
+    const id = topicIdBySlug.get(`${bankId}-${externalId}`) ?? topicIdBySlug.get(externalId);
     if (id === undefined) throw new Error(`Topic topilmadi: ${externalId}`);
     return id;
   };
