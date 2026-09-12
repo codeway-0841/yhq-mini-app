@@ -25,6 +25,7 @@ interface SubjectMapping {
   subjectId: string;
   bankId: string;
   bankName: string;
+  shuffleOptions: boolean;
 }
 
 const MAPPINGS: SubjectMapping[] = [
@@ -34,6 +35,7 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'biologiya',
     bankId: 'biology_db',
     bankName: 'Biologiya savollar bazasi',
+    shuffleOptions: true,
   },
   {
     testupFolder: 'tarix',
@@ -41,6 +43,7 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'tarix',
     bankId: 'history_db',
     bankName: 'Tarix savollar bazasi',
+    shuffleOptions: true,
   },
   {
     testupFolder: 'kimyo',
@@ -48,6 +51,7 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'kimyo',
     bankId: 'chemistry_db',
     bankName: 'Kimyo savollar bazasi',
+    shuffleOptions: true,
   },
   {
     testupFolder: 'geografiya',
@@ -55,6 +59,7 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'geografiya',
     bankId: 'geography_db',
     bankName: 'Geografiya savollar bazasi',
+    shuffleOptions: true,
   },
   {
     testupFolder: 'ona-tili',
@@ -62,6 +67,7 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'onatili',
     bankId: 'onatili_db',
     bankName: 'Ona tili savollar bazasi',
+    shuffleOptions: false,
   },
   {
     testupFolder: 'adabiyot',
@@ -69,8 +75,38 @@ const MAPPINGS: SubjectMapping[] = [
     subjectId: 'adabiyot',
     bankId: 'adabiyot_db',
     bankName: 'Adabiyot savollar bazasi',
+    shuffleOptions: false,
   },
 ];
+
+function hashString(str: string): number {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(h ^ str.charCodeAt(i), 16777619);
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed: number) {
+  return function () {
+    seed |= 0;
+    seed = (seed + 0x6d2b79f5) | 0;
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffleArray<T>(array: T[], rng: () => number): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
+}
 
 async function convertSubject(map: SubjectMapping) {
   const inputDir = path.resolve(process.cwd(), 'content-banks/testup', map.testupFolder);
@@ -89,6 +125,7 @@ async function convertSubject(map: SubjectMapping) {
   const topics: Array<{ externalId: string; nameUz: string; nameRu: string }> = [];
   const items: any[] = [];
   const seenExternalIds = new Set<string>();
+  const answerCounts: Record<string, number> = { A1: 0, A2: 0, A3: 0, A4: 0 };
 
   for (const file of topicFiles) {
     if (!file.endsWith('.json')) continue;
@@ -114,26 +151,46 @@ async function convertSubject(map: SubjectMapping) {
       }
       seenExternalIds.add(externalId);
 
-      // 2. Options
+      // 2. Options & deterministic shuffle
       const rawOptions = Array.isArray(q.v) ? q.v : [];
+      const correctIdx = Number(q.t);
+
+      if (isNaN(correctIdx) || correctIdx < 0 || correctIdx >= rawOptions.length) {
+        console.error(`[XATO] ${externalId}: invalid q.t index: ${q.t} (options length: ${rawOptions.length})`);
+      }
+
+      let finalOptions = rawOptions.map((opt) => String(opt ?? '').trim());
+      let finalCorrectIdx = correctIdx;
+
+      if (map.shuffleOptions && rawOptions.length > 1) {
+        const indices = rawOptions.map((_, i) => i);
+        const seed = hashString(externalId);
+        const rng = mulberry32(seed);
+        const permutedIndices = shuffleArray(indices, rng);
+
+        finalOptions = permutedIndices.map((origIdx) => String(rawOptions[origIdx] ?? '').trim());
+        finalCorrectIdx = permutedIndices.indexOf(correctIdx);
+      }
+
       const optionsUz: Record<string, string> = {};
       const optionsRu: Record<string, string> = {};
 
-      rawOptions.forEach((opt, optIdx) => {
+      finalOptions.forEach((opt, optIdx) => {
         const key = `A${optIdx + 1}`;
-        const cleanOpt = String(opt ?? '').trim();
-        optionsUz[key] = cleanOpt;
-        optionsRu[key] = cleanOpt;
+        optionsUz[key] = opt;
+        optionsRu[key] = opt;
       });
 
-      // Kamida 2 ta, standart 4 ta variant
-      const correctIdx = Number(q.t);
-      const correctAnswer = `A${correctIdx + 1}`;
+      const correctAnswer = `A${finalCorrectIdx + 1}`;
 
-      // Validatsiya
-      if (!optionsUz[correctAnswer]) {
-        console.error(`[XATO] ${externalId}: correctAnswer (${correctAnswer}) options ichida yo'q!`);
+      // Invariant check: to'g'ri javob matni aynan rawOptions[correctIdx] bilan bir xil bo'lishi shart!
+      const originalCorrectText = String(rawOptions[correctIdx] ?? '').trim();
+      if (optionsUz[correctAnswer] !== originalCorrectText) {
+        console.error(`[FATAL] ${externalId}: correctAnswer matni mos kelmadi! Kutilgan: "${originalCorrectText}", olindi: "${optionsUz[correctAnswer]}"`);
+        process.exit(1);
       }
+
+      answerCounts[correctAnswer] = (answerCounts[correctAnswer] || 0) + 1;
 
       items.push({
         externalId,
@@ -165,6 +222,7 @@ async function convertSubject(map: SubjectMapping) {
   await fs.writeFile(outPath, JSON.stringify(bankJson, null, 2), 'utf-8');
 
   console.log(`✅ [${map.subjectId}] Tayyor! Topics: ${topics.length} ta, Items: ${items.length} ta`);
+  console.log(`   Javoblar taqsimoti: ${JSON.stringify(answerCounts)}`);
   console.log(`   Saqlandi: ${path.relative(process.cwd(), outPath)}`);
 
   return {
@@ -172,6 +230,7 @@ async function convertSubject(map: SubjectMapping) {
     bankId: map.bankId,
     topicsCount: topics.length,
     itemsCount: items.length,
+    distribution: `A1:${answerCounts.A1 ?? 0} A2:${answerCounts.A2 ?? 0} A3:${answerCounts.A3 ?? 0} A4:${answerCounts.A4 ?? 0}`,
   };
 }
 
