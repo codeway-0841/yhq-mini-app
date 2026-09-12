@@ -1,6 +1,7 @@
 // iOS-uslub toggle — knob pozitsiyasi style orqali (brauzerdan mustaqil).
-// ON: yashil track + knob o'ngda · OFF: kulrang track + knob chapda.
+// ON: yashil/primary track + knob o'ngda · OFF: kulrang track + knob chapda.
 import { playSound } from '../lib/sounds'
+import { haptics } from '../../platform/haptics'
 
 export default function Toggle({ checked, onChange = () => {}, size = 'md', label }: {
   checked: boolean
@@ -20,19 +21,24 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
       role="switch"
       aria-checked={!!checked}
       aria-label={label ?? 'Toggle'}
-      onClick={() => { playSound('toggle'); onChange(!checked) }}
-      className={`relative flex-none ${trackCls} rounded-full transition-colors duration-200 ${
+      onClick={() => {
+        playSound('toggle')
+        haptics.select()
+        onChange(!checked)
+      }}
+      className={`relative flex-none ${trackCls} rounded-full transition-colors duration-200 active:scale-[0.96] ${
         checked ? 'bg-pprimary' : 'bg-pline/80 dark:bg-psurface'
       }`}
     >
       <span
-        className="absolute top-1/2 -translate-y-1/2 bg-white rounded-full shadow transition-transform duration-200"
+        className="absolute top-1/2 -translate-y-1/2 bg-white rounded-full transition-transform duration-200"
         style={{
           width: knobPx,
           height: knobPx,
           left: padPx,
+          boxShadow: '0 3px 8px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.12)',
           transform: `translateX(${checked ? travel : 0}px) translateY(-50%)`,
-          transition: 'transform 0.2s ease',
+          transition: 'transform 0.24s cubic-bezier(0.32, 0.72, 0, 1)',
         }}
       />
     </button>

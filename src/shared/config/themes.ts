@@ -63,7 +63,7 @@ export const ACCENT_THEMES: AccentTheme[] = [
   { id: 'payme',    label: { uz: 'Payme',                   ru: 'Payme'                   }, color: '#00b0b9', bg: '#0d1117', card: '#161b22', glow: false, premium: true  },
   // ── APPLE & AI EDITION (premium: true) ──
   { id: 'claude',      label: { uz: 'Claude AI',               ru: 'Claude AI'               }, color: '#d97757', bg: '#141413', card: '#1e1e1d', glow: false, premium: true  },
-  { id: 'cupertino',   label: { uz: 'Cupertino (iOS)',         ru: 'Cupertino (iOS)'         }, color: '#0a84ff', bg: '#000000', card: '#121214', glow: false, premium: true  },
+  { id: 'cupertino',   label: { uz: 'Cupertino (iOS)',         ru: 'Cupertino (iOS)'         }, color: '#0a84ff', bg: '#000000', card: '#1c1c1e', glow: false, premium: true  },
   { id: 'titanium',    label: { uz: 'Natural Titanium',        ru: 'Натуральный титан'       }, color: '#e4a853', bg: '#0c0c0e', card: '#161619', glow: false, premium: true  },
   { id: 'deeppurple',  label: { uz: 'Deep Purple (Apple)',     ru: 'Deep Purple (Apple)'     }, color: '#bf5af2', bg: '#0b0813', card: '#151022', glow: false, premium: true  },
   { id: 'liquidglass', label: { uz: 'Vision Glass (Apple)',    ru: 'Vision Glass (Apple)'    }, color: '#64d2ff', bg: '#070b12', card: '#0f1726', glow: false, premium: true  },

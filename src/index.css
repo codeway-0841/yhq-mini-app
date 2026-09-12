@@ -348,6 +348,34 @@ body[data-theme='light'] .hero-gradient-card {
   animation: wiggle 0.6s ease-in-out infinite;
 }
 
+/* ── Apple iOS System Utilities (HIG Materials & Springs) ─────────────────── */
+.ios-glass {
+  background: rgba(28, 28, 30, 0.78);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+body[data-theme='light'] .ios-glass {
+  background: rgba(255, 255, 255, 0.82);
+}
+.ios-hairline-b {
+  border-bottom: 0.5px solid var(--p-line);
+}
+.ios-hairline-t {
+  border-top: 0.5px solid var(--p-line);
+}
+.ios-press {
+  transition: transform 0.15s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.15s ease;
+}
+.ios-press:active {
+  transform: scale(0.97);
+  opacity: 0.88;
+}
+.ios-grouped-card {
+  border-radius: 16px;
+  background-color: var(--p-card);
+  overflow: hidden;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
    ─────────────────────────────────────────────────────────────────────────
@@ -396,6 +424,7 @@ body[data-theme='light'] .hero-gradient-card {
   --radius-sheet:     20px;   /* sheet — pastki modal */
   --radius: var(--radius-control);   /* shadcn/ui base */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-apple-spring: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 /* ── shadcn/ui ko'prigi ────────────────────────────────────────────────────
@@ -633,14 +662,14 @@ body[data-theme='dark'][data-accent='claude'] {
 
 /* Cupertino (Apple iOS & OLED) — toza OLED qora va Apple System Blue */
 body[data-theme='dark'][data-accent='cupertino'] {
-  --p-fg: #f5f5f7; --p-muted: #86868b; --p-subtle: #636366;
-  --theme-fg: #f5f5f7; --theme-fg-muted: #86868b; --theme-fg-subtle: #636366;
+  --p-fg: #f5f5f7; --p-muted: #8e8e93; --p-subtle: #636366;
+  --theme-fg: #f5f5f7; --theme-fg-muted: #8e8e93; --theme-fg-subtle: #636366;
   --p-primary: #0a84ff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 10 132 255;
   --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
-  --p-canvas: #000000; --p-surface: #1c1c1e; --p-card: #121214; --p-line: rgba(255,255,255,0.08);
-  --p-line-strong: rgba(255,255,255,0.16);
-  --theme-canvas: #000000; --theme-surface: #1c1c1e; --theme-elevated: #121214;
-  --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
+  --p-canvas: #000000; --p-card: #1c1c1e; --p-surface: #2c2c2e; --p-line: rgba(255,255,255,0.10);
+  --p-line-strong: rgba(255,255,255,0.18);
+  --theme-canvas: #000000; --theme-surface: #2c2c2e; --theme-elevated: #1c1c1e;
+  --theme-line: rgba(255,255,255,0.10); --theme-line-strong: rgba(255,255,255,0.18);
   --theme-shadow: #000000;
 }
 
@@ -809,10 +838,12 @@ body[data-theme='light'][data-accent='claude'] {
 }
 body[data-theme='light'][data-accent='cupertino'] {
   --p-primary: #007aff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 122 255;
-  --p-canvas: #f2f2f7; --p-surface: #e5e5ea; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-canvas: #f2f2f7; --p-card: #ffffff; --p-surface: #e5e5ea;
+  --p-line: rgba(60,60,67,0.12); --p-line-strong: rgba(60,60,67,0.22);
+  --p-fg: #000000; --p-muted: #6c6c70; --p-subtle: #8e8e93;
   --theme-canvas: #f2f2f7; --theme-surface: #e5e5ea; --theme-elevated: #ffffff;
-  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+  --theme-fg: #000000; --theme-fg-muted: #6c6c70; --theme-fg-subtle: #8e8e93;
+  --theme-line: rgba(60,60,67,0.12); --theme-line-strong: rgba(60,60,67,0.22);
 }
 body[data-theme='light'][data-accent='titanium'] {
   --p-primary: #b45309; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 180 83 9;
