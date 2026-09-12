@@ -52,6 +52,18 @@ describe('TestRoutePage', () => {
     }))
   })
 
+  it('routes marathon to the server-authoritative engine without public full-bank loading', () => {
+    routeConfig.testSessionsV2Enabled = true
+    renderRoute({ mode: 'marathon', title: 'Marafon' })
+
+    expect(screen.getByText('server-practice-page')).toBeInTheDocument()
+    expect(serverPracticeSpy).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'marathon',
+      selector: { type: 'marathon' },
+      title: 'Marafon',
+    }))
+  })
+
   it('passes topic selectors without exposing question IDs to the server engine', () => {
     routeConfig.testSessionsV2Enabled = true
     renderRoute({ mode: 'topic', serverSelector: { type: 'topic', topicId: 77 }, title: 'Mavzu' })

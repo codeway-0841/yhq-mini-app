@@ -21,7 +21,7 @@ const isPremiumUser = vi.hoisted(() => vi.fn())
 
 vi.mock('../../../server/config', () => ({
   config: {
-    testSessions: { proofSecret: '0123456789abcdef0123456789abcdef', bufferSize: 6, ttlMinutes: 180 },
+    testSessions: { proofSecret: '0123456789abcdef0123456789abcdef', bufferSize: 6, ttlMinutes: 180, marathonTtlMinutes: 300 },
     sentry: { dsn: undefined },
     deploy: { buildId: 'test' },
     isProd: false,
@@ -170,6 +170,7 @@ describe('testSessionsService security invariants', () => {
     expect(testSessionInternals.sessionTtlMinutes({ type: 'lesson', moduleId: 1, lessonIndex: 0 })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'module', moduleId: 1 })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'single', launchToken: 'lt1.dummy.token' })).toBe(25)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'marathon' })).toBe(300)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'exam', presetId: 'milliy-sertifikat' })).toBe(180)
   })
 
@@ -194,6 +195,39 @@ describe('testSessionsService security invariants', () => {
     })
     expect(result.session.mode).toBe('random')
     expect(result.session.total).toBe(50)
+  })
+
+  it('runs marathon over the full server-owned pool with rolling delivery', async () => {
+    const pool = Array.from({ length: 30 }, (_, index) => index + 1)
+    repo.listQuestionIds.mockResolvedValue(pool)
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'marathon' }, language: 'uz',
+    })
+
+    const created = repo.create.mock.calls[0]?.[0] as { questionIds: number[] } | undefined
+    expect(repo.listQuestionIds).toHaveBeenCalledWith('traffic_rules_db', TX, undefined, 'uz')
+    expect(repo.create).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'marathon',
+      selector: { type: 'marathon', language: 'uz' },
+      totalQuestions: 30,
+    }), TX)
+    expect(created?.questionIds).toHaveLength(30)
+    expect([...(created?.questionIds ?? [])].sort((a, b) => a - b)).toEqual(pool)
+    expect(result.session).toMatchObject({ mode: 'marathon', total: 30 })
+    expect(result.questions).toHaveLength(6)
+  })
+
+  it('fails closed when marathon has no server-owned candidates', async () => {
+    repo.listQuestionIds.mockResolvedValue([])
+
+    await expect(testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'marathon' }, language: 'uz',
+    })).rejects.toMatchObject<AppError>({ statusCode: 409, message: 'not_enough_questions' })
+    expect(repo.create).not.toHaveBeenCalled()
   })
 
   it('limits free topic practice to the shared preview count', async () => {

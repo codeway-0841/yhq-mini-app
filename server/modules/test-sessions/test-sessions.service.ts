@@ -67,6 +67,9 @@ async function candidateQuestionIds(
 }
 
 function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number {
+  if (selector.type === 'marathon') {
+    return config.testSessions.marathonTtlMinutes
+  }
   const productMinutes = selector.type === 'exam'
     ? getExamPreset(selector.presetId)?.durationMinutes ?? 25
     : selector.type === 'mock' || selector.type === 'topic' || selector.type === 'ticket'
@@ -251,6 +254,9 @@ export const testSessionsService = {
       if (input.selector.type === 'random' && candidateIds.length < input.selector.count) {
         throw new AppError(409, 'not_enough_questions')
       }
+      if (input.selector.type === 'marathon' && candidateIds.length === 0) {
+        throw new AppError(409, 'not_enough_questions')
+      }
 
       const requestedCount = input.selector.type === 'random'
         ? input.selector.count
@@ -262,6 +268,8 @@ export const testSessionsService = {
             ? candidateIds.length
           : input.selector.type === 'saved' || input.selector.type === 'mistakes'
             ? Math.min(candidateIds.length, MAX_TOPIC_QUESTIONS)
+            : input.selector.type === 'marathon'
+              ? candidateIds.length
             : input.selector.type === 'single'
               ? 1
             : input.selector.type === 'mock'

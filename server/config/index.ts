@@ -226,6 +226,7 @@ export const config = {
       ?? (env.NODE_ENV === 'production' ? undefined : 'kivvi-test-session-dev-only-secret'),
     bufferSize: 6,
     ttlMinutes: 180,
+    marathonTtlMinutes: 300,
   },
 
   /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */

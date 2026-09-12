@@ -87,6 +87,7 @@ function selectorForMode(mode: ServerPracticeMode): CreateTestSessionInput['sele
   if (mode === 'saved') return { type: 'saved' }
   if (mode === 'mistakes') return { type: 'mistakes' }
   if (mode === 'mock') return { type: 'mock' }
+  if (mode === 'marathon') return { type: 'marathon' }
   if (mode === 'topic') throw new Error('topic_selector_required')
   if (mode === 'ticket') throw new Error('ticket_selector_required')
   if (mode === 'lesson') throw new Error('lesson_selector_required')

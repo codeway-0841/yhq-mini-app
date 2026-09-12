@@ -25,6 +25,7 @@ describe('shared/test-access — free vs premium policy', () => {
     expect(isPremiumTest({ type: 'lesson', moduleId: FREE_LESSON.moduleId, lessonIndex: FREE_LESSON.lessonIndex + 1 })).toBe(true)
     expect(isPremiumTest({ type: 'module', moduleId: FREE_LESSON.moduleId })).toBe(true)
     expect(isPremiumTest({ type: 'mock' })).toBe(true)
+    expect(isPremiumTest({ type: 'marathon' })).toBe(true)
     expect(isPremiumTest({ type: 'exam', presetId: 'attestatsiya' })).toBe(true)
   })
 

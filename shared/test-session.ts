@@ -37,6 +37,10 @@ export const MockTestSelectorSchema = z.object({
   type: z.literal('mock'),
 })
 
+export const MarathonTestSelectorSchema = z.object({
+  type: z.literal('marathon'),
+})
+
 export const SavedTestSelectorSchema = z.object({
   type: z.literal('saved'),
 })
@@ -59,6 +63,7 @@ export const TestSelectorSchema = z.discriminatedUnion('type', [
   ModuleTestSelectorSchema,
   ExamTestSelectorSchema,
   MockTestSelectorSchema,
+  MarathonTestSelectorSchema,
   SavedTestSelectorSchema,
   MistakesTestSelectorSchema,
   SingleTestSelectorSchema,
@@ -99,7 +104,7 @@ export interface DeliveredTestQuestion {
 export interface TestSessionState {
   id: string
   subjectId: string
-  mode: 'random' | 'topic' | 'ticket' | 'lesson' | 'module' | 'exam' | 'mock' | 'saved' | 'mistakes' | 'single'
+  mode: 'random' | 'topic' | 'ticket' | 'lesson' | 'module' | 'exam' | 'mock' | 'marathon' | 'saved' | 'mistakes' | 'single'
   status: 'active' | 'completed' | 'abandoned' | 'expired'
   answered: number
   total: number

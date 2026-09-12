@@ -34,7 +34,7 @@ export function decideTestAccess(selector: CreateTestSessionInput['selector']): 
       ? { premiumRequired: true, reason: 'premium_ticket' }
       : { premiumRequired: false, reason: 'free' }
   }
-  if (selector.type === 'exam' || selector.type === 'mock') {
+  if (selector.type === 'exam' || selector.type === 'mock' || selector.type === 'marathon') {
     return { premiumRequired: true, reason: 'premium_mode' }
   }
   if (selector.type === 'lesson') {

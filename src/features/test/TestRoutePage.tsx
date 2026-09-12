@@ -92,6 +92,7 @@ function serverPracticeProps(state: unknown): {
     return { mode, title }
   }
   if (mode === 'mock') return { mode: 'mock', selector: { type: 'mock' }, title }
+  if (mode === 'marathon') return { mode: 'marathon', selector: { type: 'marathon' }, title }
 
   const exam = resolveExamMode(mode)
   if (exam) {

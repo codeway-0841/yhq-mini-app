@@ -1,206 +1,213 @@
 /**
- * ⚡ Speed Round — 20 tasodifiy savol × 10 SONIYA.
- * Vaqt tugasa — server natijasi yozilib avtomatik keyingisiga o'tiladi;
- * offline javob esa sync bo'lguncha "pending" saqlanadi.
- * Halqa timer: aksent → sariq (≤5s) → qizil (≤3s).
- * Natija — umumiy ResultsModal'da (animatsiyali DonutChart bilan).
+ * ⚡ Speed Round — server-authoritative 20 random questions × 10 seconds.
+ *
+ * Anti-scraping: savollar public full-bank store'dan olinmaydi. Session serverda
+ * yaratiladi, client faqat rolling buffer oladi, correct option esa faqat
+ * javobdan keyin authoritative answer response'da ochiladi.
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { X, Zap, Check } from 'lucide-react'
+import { X, Zap, Check, AlertTriangle } from 'lucide-react'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
-import { api } from '../../shared/api'
+import { api, ApiError } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
-import { ResultsModal, type QuestionResult } from '../test'
-import { shuffleArray } from '../../shared/lib/seeded'
-import { deduplicateQuestions } from '../../shared/lib/test-session'
-import { onResultSync } from '../../shared/lib/outbox'
+import { Button } from '../../shared/components/ui/button'
+import { ResultsModal, formatImageSrc, type QuestionResult } from '../test'
+import type { DeliveredTestQuestion, TestSessionResponse } from '../../../shared/test-session'
 
-const TIME_LIMIT = 10   // soniya / savol
-const QUESTIONS  = 20
-type SpeedAnswer = 'correct' | 'wrong' | 'pending'
+const TIME_LIMIT = 10
+type SpeedAnswer = 'correct' | 'wrong'
+
+function clientToken(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') return crypto.randomUUID()
+  return `${Date.now()}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`
+}
+
+function mergeQuestions(
+  existing: DeliveredTestQuestion[],
+  incoming: DeliveredTestQuestion[],
+): DeliveredTestQuestion[] {
+  const byPosition = new Map(existing.map((question) => [question.position, question]))
+  for (const question of incoming) byPosition.set(question.position, question)
+  return [...byPosition.values()].sort((a, b) => a.position - b.position)
+}
 
 export default function SpeedPage() {
   const navigate = useNavigate()
-  // Selector'li obuna — whole-store EMAS
   const settings = useAppStore((s) => s.settings)
-  const submitAnswer = useAppStore((s) => s.submitAnswer)
-  const questions = useQuestionsStore((s) => s.questions)
-  const questionsLoaded = useQuestionsStore((s) => s.loaded)
-  const questionsLoading = useQuestionsStore((s) => s.loading)
-  const questionsError = useQuestionsStore((s) => s.error)
+  const applySessionAnswer = useAppStore((s) => s.applySessionAnswerMutation)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const lang = settings.language
   const tt = useT(lang)
 
-  // Savollar hali yuklanmagan bo'lsa xavfsiz yuklab olish
-  useEffect(() => {
-    if (!questionsLoaded && !questionsLoading && !questionsError) {
-      void useQuestionsStore.getState().load(settings.language, subjectId)
-    }
-  }, [questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
-
-  // 20 ta tasodifiy savol (sahifa ochilganda 1 marta tanlanadi)
-  const qs = useMemo(() => {
-    const pool = shuffleArray(deduplicateQuestions(questions))
-    const list = pool.slice(0, QUESTIONS)
-    if (!settings.shuffleOptions) return list
-    return list.map((q) => ({
-      ...q,
-      options: shuffleArray(q.options),
-    }))
-  }, [questions, settings.shuffleOptions])
-
-  const [idx, setIdx]           = useState(0)
-  const [answers, setAnswers]   = useState<SpeedAnswer[]>([])
+  const [sessionId, setSessionId] = useState<string | null>(null)
+  const [total, setTotal] = useState(20)
+  const [questions, setQuestions] = useState<DeliveredTestQuestion[]>([])
+  const [idx, setIdx] = useState(0)
+  const [answers, setAnswers] = useState<SpeedAnswer[]>([])
   const [selected, setSelected] = useState<string | null>(null)
-  /** Server reveal: javobdan keyingina to'g'ri variant ko'rinadi */
   const [revealed, setRevealed] = useState<string | null>(null)
-  const [busy, setBusy]         = useState(false)
+  const [busy, setBusy] = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
   const [finished, setFinished] = useState(false)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const [earnedXpTotal, setEarnedXpTotal] = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
-  const rewardedQuestionIdsRef = useRef<Set<number>>(new Set())
-  const pendingQuestionIdsRef = useRef<Set<number>>(new Set())
-  const pendingResolutionRef = useRef<Map<number, Exclude<SpeedAnswer, 'pending'>>>(new Map())
   const advanceTimerRef = useRef<number | null>(null)
 
-  const q = qs[idx]
-  // Javob vaqti (ms) — savol almashganda qayta boshlanadi (statistika uchun)
-  const answerTimer = useAnswerTimer(q?.id)
+  const q = questions.find((question) => question.position === idx)
+  const answerTimer = useAnswerTimer(q?.position)
   const answered = selected !== null
 
-  // Serverless backend'ni OLDINDAN uyg'otish — aks holda 1-javob cold start
-  // (5-8s) tufayli "offline"ga tushib qolardi (TestPage'dagi bilan bir xil).
+  const startSession = useCallback(async (active: () => boolean = () => true) => {
+    setLoading(true)
+    setError(null)
+    setFinished(false)
+    setIdx(0)
+    setAnswers([])
+    setSelected(null)
+    setRevealed(null)
+    setTimeLeft(TIME_LIMIT)
+    setEarnedXpTotal(0)
+    setEarnedCoinsTotal(0)
+    const response: TestSessionResponse = await api.createTestSession({
+      subjectId,
+      selector: { type: 'random', count: 20 },
+      language: settings.language,
+    })
+    if (!active()) return
+    setSessionId(response.session.id)
+    setTotal(response.session.total)
+    setQuestions(response.questions)
+    setLoading(false)
+  }, [settings.language, subjectId])
+
   useEffect(() => {
     api.warmUp()
-  }, [])
+    let active = true
+    void startSession(() => active).catch((cause) => {
+      if (!active) return
+      if (cause instanceof ApiError && cause.code === 'premium_required') {
+        navigate('/premium', { replace: true })
+        return
+      }
+      setError(lang === 'ru' ? 'Быстрый тест не загрузился.' : 'Tezkor test yuklanmadi.')
+      setLoading(false)
+    })
+    return () => {
+      active = false
+      if (advanceTimerRef.current !== null) clearTimeout(advanceTimerRef.current)
+    }
+  }, [lang, navigate, startSession])
 
-  // Har savol uchun countdown — javob berilsa yoki vaqt tugasa to'xtaydi
-  useEffect(() => {
-    if (finished || answered) return
-    if (timeLeft <= 0) { handleTimeout(); return }
-    const id = setTimeout(() => setTimeLeft((t) => t - 1), 1000)
-    return () => clearTimeout(id)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft, finished, answered])
-
-  useEffect(() => () => {
-    if (advanceTimerRef.current !== null) clearTimeout(advanceTimerRef.current)
-  }, [])
-
-  const addReward = useCallback((questionId: number, xpEarned = 0, coinsEarned = 0) => {
-    if (rewardedQuestionIdsRef.current.has(questionId)) return
-    rewardedQuestionIdsRef.current.add(questionId)
-    if (xpEarned) setEarnedXpTotal((prev) => prev + xpEarned)
-    if (coinsEarned) setEarnedCoinsTotal((prev) => prev + coinsEarned)
+  const addAnswer = useCallback((position: number, status: SpeedAnswer) => {
+    setAnswers((previous) => {
+      const next = [...previous]
+      next[position] = status
+      return next
+    })
   }, [])
 
   const advance = useCallback((status: SpeedAnswer) => {
-    setAnswers((previous) => {
-      const next = [...previous]
-      next[idx] = status
-      return next
-    })
+    addAnswer(idx, status)
     setSelected(null)
     setRevealed(null)
-    if (idx + 1 >= qs.length) {
+    if (idx + 1 >= total) {
       setFinished(true)
+      if (sessionId) void api.finishTestSession(sessionId, 'completed').catch(() => undefined)
     } else {
-      setIdx((i) => i + 1)
+      setIdx((value) => value + 1)
       setTimeLeft(TIME_LIMIT)
     }
-  }, [idx, qs.length])
+  }, [addAnswer, idx, sessionId, total])
 
-  // Vaqt tugadi — javob berilmagan = xato, 700ms "to'g'ri javobni ko'rsat", keyin keyingi
   const handleTimeout = useCallback(() => {
-    if (busy) return
-    setBusy(true)
+    if (busy || !q) return
     setSelected('__timeout__')
-    void (async () => {
-      // selectedAnswer=null → server xato deb yozadi va reveal qaytaradi
-      // (fatal rad etuvida reveal yo'q — jimgina keyingisiga o'tamiz)
-      const outcome = q ? await submitAnswer(q.id, null, answerTimer.elapsed()) : null
-      setBusy(false)
-      const scored = outcome && !('fatal' in outcome) ? outcome : null
-      if (scored) {
-        setRevealed(scored.correctAnswer)
-        if (!scored.duplicate) addReward(q.id, scored.xpEarned, scored.coinsEarned)
-      } else if (outcome === null && q) {
-        pendingQuestionIdsRef.current.add(q.id)
-      }
-      playSound('error')
-      haptics.error()
-      const questionId = q?.id
-      advanceTimerRef.current = window.setTimeout(() => {
-        const resolved = questionId == null ? undefined : pendingResolutionRef.current.get(questionId)
-        if (questionId != null) pendingResolutionRef.current.delete(questionId)
-        advance(resolved ?? (outcome === null ? 'pending' : 'wrong'))
-      }, 700)
-    })()
-  }, [advance, addReward, busy, q, submitAnswer, answerTimer])
+    playSound('error')
+    haptics.error()
+    advanceTimerRef.current = window.setTimeout(() => {
+      advance('wrong')
+    }, 500)
+  }, [advance, busy, q])
+
+  useEffect(() => {
+    if (loading || finished || answered) return
+    if (timeLeft <= 0) { handleTimeout(); return }
+    const id = setTimeout(() => setTimeLeft((value) => value - 1), 1000)
+    return () => clearTimeout(id)
+  }, [answered, finished, handleTimeout, loading, timeLeft])
 
   const handleSelect = useCallback((optId: string) => {
-    if (answered || busy || !q) return
-    setSelected(optId)   // timer to'xtaydi + tugmalar bloklanadi
+    if (answered || busy || !q || !sessionId) return
+    setSelected(optId)
     setBusy(true)
     void (async () => {
-      // ASYNC FEEDBACK: to'g'rilikni SERVER hal qiladi (kalit client'da yo'q)
-      const outcome = await submitAnswer(q.id, optId, answerTimer.elapsed())
-      setBusy(false)
-      // Fatal (4xx) — javob saqlanmadi; reveal yo'q (offline kabi qisqa o'tamiz)
-      const scored = outcome && !('fatal' in outcome) ? outcome : null
-      if (scored) {
-        setRevealed(scored.correctAnswer)
-        if (scored.correct) {
+      try {
+        const response = await api.submitTestSessionAnswer(sessionId, {
+          position: q.position,
+          deliveryToken: q.deliveryToken,
+          expiresAt: q.expiresAt,
+          selectedOptionId: optId,
+          clientToken: clientToken(),
+          elapsedMs: answerTimer.elapsed(),
+        })
+        setRevealed(response.attempt.correctOptionId)
+        setQuestions((previous) => mergeQuestions(previous, response.append))
+        if (!response.attempt.duplicate) {
+          applySessionAnswer({
+            correct: response.attempt.correct,
+            subjectId,
+            date: new Date().toISOString().slice(0, 10),
+            dailyStreak: response.attempt.dailyStreak,
+            coinSaved: response.attempt.coinSaved,
+            coinBalance: response.attempt.coinBalance,
+            xp: response.attempt.xp,
+          })
+          setEarnedXpTotal((previous) => previous + response.attempt.xpEarned)
+          setEarnedCoinsTotal((previous) => previous + response.attempt.coinsEarned)
+        }
+        if (response.attempt.correct) {
           haptics.success()
           playSound('success')
         } else {
           haptics.error()
           playSound('error')
         }
-
-        if (!scored.duplicate) addReward(q.id, scored.xpEarned, scored.coinsEarned)
-      } else if (outcome === null) {
-        pendingQuestionIdsRef.current.add(q.id)
+        advanceTimerRef.current = window.setTimeout(() => {
+          advance(response.attempt.correct ? 'correct' : 'wrong')
+        }, 800)
+      } catch {
+        setError(lang === 'ru'
+          ? 'Ответ не отправился. Попробуйте ещё раз.'
+          : 'Javob yuborilmadi. Qayta urinib ko‘ring.')
+        setSelected(null)
+      } finally {
+        setBusy(false)
       }
-      // Offline/fatal: reveal yo'q — faqat tanlangan variant belgilanib qoladi
-      const questionId = q.id
-      advanceTimerRef.current = window.setTimeout(() => {
-        const resolved = pendingResolutionRef.current.get(questionId)
-        pendingResolutionRef.current.delete(questionId)
-        const fallback: SpeedAnswer = outcome === null ? 'pending' : scored?.correct ? 'correct' : 'wrong'
-        advance(resolved ?? fallback)
-      }, scored ? 800 : 400)
     })()
-  }, [answered, busy, q, submitAnswer, advance, addReward, answerTimer])
+  }, [advance, answerTimer, answered, applySessionAnswer, busy, lang, q, sessionId, subjectId])
 
-  // Offline javob serverga yetgach natija va authoritative rewardni shu sessiyada yangilash.
-  useEffect(() => onResultSync((info) => {
-    if (info.duplicate || !pendingQuestionIdsRef.current.has(info.questionId)) return
-    const questionIndex = qs.findIndex((question) => question.id === info.questionId)
-    if (questionIndex === -1) return
+  const retry = useCallback(async () => {
+    if (sessionId) await api.finishTestSession(sessionId, 'abandoned').catch(() => undefined)
+    await startSession()
+  }, [sessionId, startSession])
 
-    const resolved: Exclude<SpeedAnswer, 'pending'> = info.correct ? 'correct' : 'wrong'
-    pendingQuestionIdsRef.current.delete(info.questionId)
-    pendingResolutionRef.current.set(info.questionId, resolved)
-    setAnswers((previous) => {
-      if (previous[questionIndex] !== 'pending') return previous
-      const next = [...previous]
-      next[questionIndex] = resolved
-      return next
-    })
-    addReward(info.questionId, info.xpEarned ?? 0, info.coinsEarned ?? 0)
-  }), [qs, addReward])
+  const results: QuestionResult[] = useMemo(() =>
+    Array.from({ length: total }, (_, i) => ({
+      questionId: i + 1,
+      status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : 'unanswered') as QuestionResult['status'],
+    })),
+  [answers, total])
 
-  if (!q) {
+  const empty = !loading && !error && !q
+  if (loading || error || empty) {
     return (
       <div className="flex flex-col min-h-screen bg-pcanvas font-display text-pfg">
         <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
@@ -216,29 +223,27 @@ export default function SpeedPage() {
           </div>
         </header>
         <div className="flex flex-col items-center justify-center flex-1 py-12 gap-3 px-4 text-center">
-          <Zap size={36} className="text-pmuted opacity-50" />
-          <p className="text-sm text-pmuted">{tt('speedQuestionsEmpty')}</p>
-          <button
-            type="button"
-            onClick={() => goBack(navigate)}
-            className="mt-2 bg-psurface text-pfg text-xs font-semibold px-4 py-2 rounded-xl hover:bg-pcard active:scale-95 transition-all cursor-pointer"
-          >
-            {tt('backWord')}
-          </button>
+          {error
+            ? <AlertTriangle size={36} className="text-pdanger" />
+            : empty
+              ? <Zap size={36} className="text-pmuted opacity-50" />
+              : <div className="size-9 animate-spin rounded-full border-2 border-pprimary border-t-transparent" />}
+          <p className="text-sm text-pmuted">{error ?? (empty ? tt('speedQuestionsEmpty') : (lang === 'ru' ? 'Загрузка…' : 'Yuklanmoqda…'))}</p>
+          {error
+            ? <Button onClick={() => void retry()}>{lang === 'ru' ? 'Повторить' : 'Qayta urinish'}</Button>
+            : null}
         </div>
       </div>
     )
   }
 
-  const R = 30, C = 2 * Math.PI * R
-  const pct       = timeLeft / TIME_LIMIT
+  const currentQuestion = q
+  if (!currentQuestion) return null
+  const R = 30
+  const C = 2 * Math.PI * R
+  const pct = timeLeft / TIME_LIMIT
   const ringColor = timeLeft <= 3 ? 'var(--p-danger)' : timeLeft <= 5 ? 'var(--p-warning)' : 'var(--p-primary)'
-  const score     = answers.filter((a) => a === 'correct').length
-
-  const results: QuestionResult[] = qs.map((question, i) => ({
-    questionId: question.id,
-    status: (answers[i] === 'correct' ? 'correct' : answers[i] === 'wrong' ? 'incorrect' : answers[i] === 'pending' ? 'pending' : 'unanswered') as QuestionResult['status'],
-  }))
+  const score = answers.filter((answer) => answer === 'correct').length
 
   if (finished) {
     return (
@@ -247,18 +252,7 @@ export default function SpeedPage() {
         threshold={80}
         earnedXp={earnedXpTotal}
         earnedCoins={earnedCoinsTotal}
-        onRetry={() => {
-          rewardedQuestionIdsRef.current.clear()
-          pendingQuestionIdsRef.current.clear()
-          pendingResolutionRef.current.clear()
-          setEarnedXpTotal(0)
-          setEarnedCoinsTotal(0)
-          setIdx(0)
-          setAnswers([])
-          setSelected(null)
-          setTimeLeft(TIME_LIMIT)
-          setFinished(false)
-        }}
+        onRetry={() => { void retry() }}
         onFinish={() => goBack(navigate)}
         onGoToQuestion={() => goBack(navigate)}
       />
@@ -267,7 +261,6 @@ export default function SpeedPage() {
 
   return (
     <div className="flex flex-col bg-pcanvas font-display text-pfg pb-6">
-      {/* Header */}
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
         <div className="flex items-center justify-between px-4 py-2.5">
           <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
@@ -279,12 +272,11 @@ export default function SpeedPage() {
           </div>
           <span className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums text-pmuted">
             <Check size={12} strokeWidth={2} />
-            {score} · {idx + 1}/{qs.length}
+            {score} · {idx + 1}/{total}
           </span>
         </div>
       </header>
 
-      {/* Timer halqasi */}
       <div className="flex justify-center pt-4 pb-1">
         <svg width="72" height="72" viewBox="0 0 72 72">
           <circle cx="36" cy="36" r={R} fill="none" stroke="var(--p-line)" strokeWidth="6" />
@@ -298,20 +290,21 @@ export default function SpeedPage() {
         </svg>
       </div>
 
-      {/* Savol */}
+      {error && <div role="alert" className="mx-4 mt-3 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-4 py-3 text-sm text-pdanger">{error}</div>}
+
       <div className="flex-1 overflow-y-auto px-4 pt-2 pb-6">
         <p className="text-[11px] font-semibold text-psubtle text-center mb-2 uppercase tracking-wide">
-          {lang === 'ru' ? `${idx + 1} из ${qs.length}` : `${idx + 1} / ${qs.length}`}
+          {lang === 'ru' ? `${idx + 1} из ${total}` : `${idx + 1} / ${total}`}
         </p>
-        <p className="text-base font-semibold leading-snug mb-4 text-center">{q.text}</p>
-        {q.image && (
+        <p className="text-base font-semibold leading-snug mb-4 text-center">{currentQuestion.text}</p>
+        {currentQuestion.media && (
           <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
-            <img src={q.image} alt="savol" loading="lazy"
+            <img src={formatImageSrc(currentQuestion.media)} alt="savol" loading="lazy"
               className="max-w-full max-h-[40vh] w-auto h-auto object-contain" />
           </div>
         )}
-        {q.options.map((opt, i) => {
-          const isRight  = revealed !== null && opt.id === revealed
+        {currentQuestion.options.map((opt, i) => {
+          const isRight = revealed !== null && opt.id === revealed
           const isChoice = selected === opt.id
           const showResult = answered && !busy
           const style =
@@ -321,7 +314,7 @@ export default function SpeedPage() {
             isChoice               ? 'bg-pdanger/15 ring-2 ring-pdanger text-pdanger' :
                                      'bg-psurface text-pmuted'
           return (
-            <button key={`${q.id}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}
+            <button key={`${currentQuestion.position}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}
               className={`w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all focus:outline-none shadow-xs ${style}`}>
               <div className="flex items-center gap-3">
                 <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-2xs">

@@ -1,12 +1,9 @@
-import { act, fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import SpeedPage from '../../../src/features/speed/SpeedPage'
 import { api } from '../../../src/shared/api'
-import type { ResultSyncInfo } from '../../../src/shared/lib/outbox'
-import * as outbox from '../../../src/shared/lib/outbox'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
-import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
 
 vi.mock('../../../src/features/test', () => ({
   ResultsModal: ({ results, earnedXp, earnedCoins }: {
@@ -20,28 +17,70 @@ vi.mock('../../../src/features/test', () => ({
   ),
 }))
 
-const question = {
-  id: 101,
+const deliveredQuestion = {
+  position: 0,
+  deliveryToken: 'v1.delivery-token',
+  expiresAt: '2026-09-12T10:00:00.000Z',
   text: 'Speed savoli',
-  image: null,
-  topicId: 1,
+  media: null,
+  topic: { id: 1 },
   options: [
     { id: 'a', text: 'Birinchi variant' },
     { id: 'b', text: 'Ikkinchi variant' },
   ],
 }
 
-describe('SpeedPage authoritative offline reconciliation', () => {
+describe('SpeedPage server-authoritative delivery', () => {
   beforeEach(() => {
     vi.restoreAllMocks()
     vi.spyOn(api, 'warmUp').mockImplementation(() => {})
-    useQuestionsStore.setState({
-      questions: [question],
-      topics: [],
-      loaded: true,
-      loading: false,
-      error: null,
-      subjectId: 'yhq',
+    vi.spyOn(api, 'finishTestSession').mockResolvedValue({
+      session: {
+        id: 'speed-session',
+        subjectId: 'yhq',
+        mode: 'random',
+        status: 'completed',
+        answered: 1,
+        total: 1,
+        expiresAt: '2026-09-12T10:00:00.000Z',
+      },
+    })
+    vi.spyOn(api, 'createTestSession').mockResolvedValue({
+      session: {
+        id: 'speed-session',
+        subjectId: 'yhq',
+        mode: 'random',
+        status: 'active',
+        answered: 0,
+        total: 1,
+        expiresAt: '2026-09-12T10:00:00.000Z',
+      },
+      questions: [deliveredQuestion],
+      review: [],
+    })
+    vi.spyOn(api, 'submitTestSessionAnswer').mockResolvedValue({
+      attempt: {
+        position: 0,
+        correct: true,
+        correctOptionId: 'a',
+        duplicate: false,
+        dailyStreak: 1,
+        xp: 12,
+        xpEarned: 12,
+        coinsEarned: 2,
+        coinBalance: 7,
+        coinSaved: false,
+      },
+      append: [],
+      session: {
+        id: 'speed-session',
+        subjectId: 'yhq',
+        mode: 'random',
+        status: 'completed',
+        answered: 1,
+        total: 1,
+        expiresAt: '2026-09-12T10:00:00.000Z',
+      },
     })
     useAppStore.setState({
       settings: {
@@ -49,67 +88,51 @@ describe('SpeedPage authoritative offline reconciliation', () => {
         language: 'uz',
         shuffleOptions: false,
       },
-      submitAnswer: vi.fn().mockResolvedValue(null),
+      applySessionAnswerMutation: vi.fn(),
     })
   })
 
-  it('keeps an offline answer pending, then applies the synced result and rewards', async () => {
-    vi.useFakeTimers()
-    let syncListener: ((info: ResultSyncInfo) => void) | null = null
-    vi.spyOn(outbox, 'onResultSync').mockImplementation((listener) => {
-      syncListener = listener
-      return () => { syncListener = null }
-    })
+  it('creates a server session and submits by delivery token without loading the full bank', async () => {
+    render(<MemoryRouter><SpeedPage /></MemoryRouter>)
 
-    try {
-      render(<MemoryRouter><SpeedPage /></MemoryRouter>)
-      fireEvent.click(screen.getByRole('button', { name: 'A Birinchi variant' }))
+    const firstOption = await screen.findByRole('button', { name: 'A Birinchi variant' })
+    fireEvent.click(firstOption)
 
-      await act(async () => {})
-      act(() => { vi.advanceTimersByTime(400) })
-
-      let payload = JSON.parse(screen.getByTestId('speed-results').textContent!)
-      expect(payload.results).toEqual([{ questionId: 101, status: 'pending' }])
-      expect(payload.earnedXp).toBe(0)
-      expect(payload.earnedCoins).toBe(0)
-
-      act(() => {
-        syncListener?.({
-          date: '2026-09-05',
-          subjectId: 'yhq',
-          questionId: 101,
-          selectedAnswer: 'a',
-          correct: true,
-          correctAnswer: 'a',
-          dailyStreak: 1,
-          duplicate: false,
-          xpEarned: 12,
-          coinsEarned: 2,
-        })
-      })
-
-      payload = JSON.parse(screen.getByTestId('speed-results').textContent!)
-      expect(payload.results).toEqual([{ questionId: 101, status: 'correct' }])
-      expect(payload.earnedXp).toBe(12)
-      expect(payload.earnedCoins).toBe(2)
-    } finally {
-      vi.useRealTimers()
-    }
-  })
-
-  it('savollar ro\'yxati bo\'sh bo\'lsa xavfsiz bo\'sh holat va orqaga qaytishni ko\'rsatadi', () => {
-    useQuestionsStore.setState({
-      questions: [],
-      topics: [],
-      loaded: true,
-      loading: false,
-      error: null,
+    expect(api.createTestSession).toHaveBeenCalledWith({
       subjectId: 'yhq',
+      selector: { type: 'random', count: 20 },
+      language: 'uz',
+    })
+    expect(api.submitTestSessionAnswer).toHaveBeenCalledWith('speed-session', expect.objectContaining({
+      position: 0,
+      deliveryToken: 'v1.delivery-token',
+      expiresAt: '2026-09-12T10:00:00.000Z',
+      selectedOptionId: 'a',
+    }))
+    await waitFor(() => expect(screen.getByTestId('speed-results')).toBeTruthy())
+    const payload = JSON.parse(screen.getByTestId('speed-results').textContent!)
+    expect(payload.results).toEqual([{ questionId: 1, status: 'correct' }])
+    expect(payload.earnedXp).toBe(12)
+    expect(payload.earnedCoins).toBe(2)
+  })
+
+  it('shows a safe empty state if the server session has no deliverable question', async () => {
+    vi.mocked(api.createTestSession).mockResolvedValueOnce({
+      session: {
+        id: 'empty-speed-session',
+        subjectId: 'yhq',
+        mode: 'random',
+        status: 'active',
+        answered: 0,
+        total: 0,
+        expiresAt: '2026-09-12T10:00:00.000Z',
+      },
+      questions: [],
+      review: [],
     })
 
     render(<MemoryRouter><SpeedPage /></MemoryRouter>)
+    expect(await screen.findByText('Savollar hali yuklanmagan yoki mavjud emas')).toBeTruthy()
     expect(screen.getByText('Tezkor test')).toBeTruthy()
-    expect(screen.getByText('Savollar hali yuklanmagan yoki mavjud emas')).toBeTruthy()
-    expect(screen.getAllByRole('button', { name: 'Orqaga' }).length).toBe(2)
   })
 })
