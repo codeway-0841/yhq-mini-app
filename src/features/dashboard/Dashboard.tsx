@@ -1,6 +1,5 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Camera, ChevronRight } from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -122,25 +121,6 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
-
-          {/* AI Suratdan yechish (Snap & Solve) */}
-          <button
-            type="button"
-            onClick={() => navigate('/ai-tutor')}
-            className="mx-4 mb-4 flex w-[calc(100%-2rem)] items-center gap-3.5 rounded-2xl bg-pcard p-4 text-left shadow-xs transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-          >
-            <Camera size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-2">
-                <span className="text-[14.5px] font-semibold text-pfg">{tt('snapSolveTitle')}</span>
-                <span className="shrink-0 rounded-full bg-psurface px-2 py-0.5 text-[11px] font-medium text-pmuted">AI</span>
-              </div>
-              <p className="mt-0.5 truncate text-[13px] text-pmuted">
-                {tt('snapSolveSubtitle')}
-              </p>
-            </div>
-            <ChevronRight size={18} strokeWidth={2} className="shrink-0 text-psubtle" />
-          </button>
 
           <LearningGuide mistakesCount={mistakesCount} />
 
