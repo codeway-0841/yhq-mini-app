@@ -13,7 +13,7 @@ import {
   Brain,
   Zap,
   NotebookText,
-  Bot,
+  Camera,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -72,7 +72,7 @@ export default function ModesPage() {
       ? [{ icon: Zap,      label: tt('speedRound'),    onClick: () => navigate('/speed') }]
       : []),
     { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
-    { icon: Bot,           label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
+    { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
   ]
 
   return (

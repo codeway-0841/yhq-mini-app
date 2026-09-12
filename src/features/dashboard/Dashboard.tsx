@@ -1,6 +1,6 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Camera, ArrowRight } from 'lucide-react'
+import { Camera, ChevronRight } from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -124,28 +124,23 @@ export default function Dashboard() {
           />
 
           {/* AI Suratdan yechish (Snap & Solve) */}
-          <div
+          <button
+            type="button"
             onClick={() => navigate('/ai-tutor')}
-            className="mx-4 mb-4 p-4 rounded-3xl bg-linear-to-r from-pprimary/10 via-purple-500/10 to-indigo-500/10 border border-pprimary/25 hover:border-pprimary/50 cursor-pointer transition-all flex items-center justify-between gap-3.5 shadow-xs group active:scale-[0.99]"
+            className="mx-4 mb-4 flex w-[calc(100%-2rem)] items-center gap-3.5 rounded-2xl bg-pcard p-4 text-left shadow-xs transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
           >
-            <div className="size-11 rounded-2xl bg-pprimary text-white grid place-items-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
-              <Camera size={22} strokeWidth={2} />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-1.5">
-                <span className="text-sm font-bold text-pfg">{tt('snapSolveTitle')}</span>
-                <span className="px-1.5 py-0.5 rounded-md bg-pprimary/15 text-pprimary text-[10px] font-bold">
-                  AI Vision
-                </span>
+            <Camera size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="text-[14.5px] font-semibold text-pfg">{tt('snapSolveTitle')}</span>
+                <span className="shrink-0 rounded-full bg-psurface px-2 py-0.5 text-[11px] font-medium text-pmuted">AI</span>
               </div>
-              <p className="text-xs text-pmuted truncate mt-0.5">
+              <p className="mt-0.5 truncate text-[13px] text-pmuted">
                 {tt('snapSolveSubtitle')}
               </p>
             </div>
-            <div className="size-8 rounded-xl bg-psurface text-pmuted group-hover:text-pfg group-hover:bg-pline grid place-items-center shrink-0 transition-colors">
-              <ArrowRight size={16} />
-            </div>
-          </div>
+            <ChevronRight size={18} strokeWidth={2} className="shrink-0 text-psubtle" />
+          </button>
 
           <LearningGuide mistakesCount={mistakesCount} />
 

@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  Camera, Image as ImageIcon, Sparkles, ChevronLeft, Loader2,
-  RefreshCw, MessageSquareQuote, Crown, ArrowRight,
+  Camera, Image as ImageIcon, ChevronLeft, ChevronRight, Loader2,
+  RefreshCw, MessageSquareQuote, Crown,
   BookOpen, History,
 } from 'lucide-react'
 import { api, ApiError, type TutorQuota } from '../../shared/api'
@@ -151,23 +151,20 @@ export default function SnapSolveHub() {
           >
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
-          <div>
-            <h1 className="text-lg font-bold flex items-center gap-1.5">
-              <Sparkles size={18} className="text-pprimary" />
-              {tt('snapSolveTitle')}
-            </h1>
-          </div>
+          <h1 className="text-[17px] font-semibold text-pfg">
+            {tt('snapSolveTitle')}
+          </h1>
         </div>
 
         {/* Quota Badge */}
         {quota && (
-          <div className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-psurface shadow-2xs">
+          <div className="flex items-center gap-1 text-[12px] font-medium px-2.5 py-1 rounded-full bg-psurface text-pmuted shadow-2xs">
             {quota.isPremium ? (
-              <span className="text-amber-500 flex items-center gap-1">
-                <Crown size={13} /> {quota.photoSolvesRemaining} / {quota.photoSolvesLimit}
+              <span className="text-pwarning flex items-center gap-1 font-semibold">
+                <Crown size={13} strokeWidth={1.75} /> {quota.photoSolvesRemaining} / {quota.photoSolvesLimit}
               </span>
             ) : (
-              <span className={quota.photoSolvesRemaining > 0 ? 'text-emerald-500' : 'text-amber-500'}>
+              <span className={quota.photoSolvesRemaining > 0 ? 'text-psuccess font-semibold' : 'text-pwarning font-semibold'}>
                 {quota.photoSolvesRemaining} / {quota.photoSolvesLimit} bepul
               </span>
             )}
@@ -202,12 +199,12 @@ export default function SnapSolveHub() {
 
       {/* Error Banner */}
       {errorMessage && (
-        <div className="mb-4 p-3.5 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-500 text-xs flex items-center justify-between gap-3">
+        <div className="mb-4 p-3.5 rounded-2xl bg-pdanger/10 text-pdanger text-xs flex items-center justify-between gap-3 shadow-2xs">
           <span>{errorMessage}</span>
           {errorMessage === tt('snapSolveQuotaExceeded') && (
             <button
               onClick={() => navigate('/premium')}
-              className="px-3 py-1 rounded-lg bg-red-500 text-white font-bold text-xs shrink-0"
+              className="px-3 py-1 rounded-xl bg-pdanger text-white font-medium text-xs shrink-0"
             >
               Premium
             </button>
@@ -218,30 +215,28 @@ export default function SnapSolveHub() {
       {/* 1. Rasmni tanlash / Yuklash fazasi */}
       {!selectedImage && !currentSolution && (
         <div className="space-y-4">
-          <div className="p-6 rounded-3xl bg-pcard text-center space-y-4 shadow-sm">
-            <div className="size-16 mx-auto rounded-2xl bg-pprimary/10 text-pprimary grid place-items-center">
-              <Camera size={32} strokeWidth={1.75} />
-            </div>
+          <div className="p-6 rounded-2xl bg-pcard text-center space-y-4 shadow-xs">
+            <Camera size={32} strokeWidth={1.75} className="mx-auto text-pmuted" />
             <div>
-              <h2 className="text-base font-bold text-pfg">{tt('snapSolveSubtitle')}</h2>
-              <p className="text-xs text-pmuted mt-1">{tt('snapSolveCropHint')}</p>
+              <h2 className="text-[15px] font-semibold text-pfg">{tt('snapSolveSubtitle')}</h2>
+              <p className="text-[13px] text-pmuted mt-1">{tt('snapSolveCropHint')}</p>
             </div>
 
             <div className="grid grid-cols-2 gap-3 pt-2">
               <button
                 type="button"
                 onClick={() => cameraInputRef.current?.click()}
-                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-pprimary text-white font-semibold text-xs active:scale-95 transition-all shadow-xs"
+                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-pprimary text-white font-medium text-[13px] active:scale-[0.98] transition-all shadow-xs"
               >
-                <Camera size={16} />
+                <Camera size={16} strokeWidth={1.75} />
                 <span>{tt('snapSolveTakeCamera')}</span>
               </button>
               <button
                 type="button"
                 onClick={() => galleryInputRef.current?.click()}
-                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-psurface text-pfg font-semibold text-xs hover:bg-pline/40 active:scale-95 transition-all shadow-xs"
+                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-psurface text-pfg font-medium text-[13px] hover:bg-psurface/80 active:scale-[0.98] transition-all shadow-xs"
               >
-                <ImageIcon size={16} />
+                <ImageIcon size={16} strokeWidth={1.75} />
                 <span>{tt('snapSolvePickGallery')}</span>
               </button>
             </div>
@@ -251,8 +246,8 @@ export default function SnapSolveHub() {
           {history.length > 0 && (
             <div className="space-y-2 pt-2">
               <div className="flex items-center gap-1.5 text-xs font-semibold text-pmuted px-1">
-                <History size={14} />
-                <span>Oxirgi yechilgan masalalar</span>
+                <History size={14} strokeWidth={1.75} />
+                <span>{language === 'ru' ? 'Недавние решения' : 'Oxirgi yechilgan masalalar'}</span>
               </div>
               <div className="space-y-2">
                 {history.map((item) => (
@@ -263,20 +258,20 @@ export default function SnapSolveHub() {
                       setCurrentSolution(item.solution)
                       if (item.previewImage) setSelectedImage(item.previewImage)
                     }}
-                    className="w-full text-left p-3.5 rounded-2xl bg-pcard hover:bg-psurface transition-all flex items-center justify-between gap-3 shadow-xs"
+                    className="w-full text-left p-3.5 rounded-2xl bg-pcard hover:bg-psurface transition-all flex items-center justify-between gap-3 shadow-xs active:scale-[0.99]"
                   >
                     <div className="truncate flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-psurface text-pprimary">
+                        <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-psurface text-pmuted">
                           {item.solution.subjectName || item.solution.detectedSubject}
                         </span>
-                        <span className="text-xs font-semibold text-emerald-500">
+                        <span className="text-xs font-semibold text-psuccess">
                           {item.solution.finalAnswer}
                         </span>
                       </div>
                       <p className="text-xs text-pmuted truncate">{item.solution.ocrText}</p>
                     </div>
-                    <ArrowRight size={16} className="text-pmuted shrink-0" />
+                    <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle shrink-0" />
                   </button>
                 ))}
               </div>
@@ -288,7 +283,7 @@ export default function SnapSolveHub() {
       {/* 2. Rasm ko'rinishi va Fan tanlash */}
       {selectedImage && !currentSolution && (
         <div className="space-y-4 animate-in fade-in duration-200">
-          <div className="relative rounded-3xl overflow-hidden border border-pline bg-black max-h-[360px] flex items-center justify-center">
+          <div className="relative rounded-2xl overflow-hidden bg-black/90 max-h-[360px] flex items-center justify-center shadow-xs">
             <img
               src={selectedImage}
               alt="Uploaded problem"
@@ -297,23 +292,25 @@ export default function SnapSolveHub() {
             <button
               type="button"
               onClick={handleReset}
-              className="absolute top-3 right-3 px-3 py-1.5 rounded-xl bg-black/70 backdrop-blur-md text-white text-xs font-semibold hover:bg-black"
+              className="absolute top-3 right-3 px-3 py-1.5 rounded-xl bg-black/70 backdrop-blur-md text-white text-xs font-medium hover:bg-black transition-colors"
             >
-              Qayta suratga olish
+              {language === 'ru' ? 'Переснять' : 'Qayta suratga olish'}
             </button>
           </div>
 
           {/* Fan yo'nalishi (ixtiyoriy) */}
           <div>
-            <label className="text-xs font-medium text-pmuted block mb-2 px-1">
-              Fan yo'nalishi (ixtiyoriy):
+            <label className="text-[12.5px] font-medium text-pmuted block mb-2 px-1">
+              {language === 'ru' ? 'Предмет (необязательно):' : "Fan yo'nalishi (ixtiyoriy):"}
             </label>
             <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1">
               <button
                 type="button"
                 onClick={() => setSubjectHint('')}
-                className={`px-3 py-1.5 rounded-xl text-xs shrink-0 font-medium transition-colors ${
-                  !subjectHint ? 'bg-pprimary text-white shadow-xs' : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
+                className={`px-3 py-1.5 rounded-full text-[12px] shrink-0 font-medium transition-colors ${
+                  !subjectHint
+                    ? 'bg-pprimary text-white shadow-xs'
+                    : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
                 }`}
               >
                 Auto-detect
@@ -323,13 +320,13 @@ export default function SnapSolveHub() {
                   key={sub.id}
                   type="button"
                   onClick={() => setSubjectHint(sub.id)}
-                  className={`px-3 py-1.5 rounded-xl text-xs shrink-0 font-medium transition-colors ${
+                  className={`px-3 py-1.5 rounded-full text-[12px] shrink-0 font-medium transition-colors ${
                     subjectHint === sub.id
                       ? 'bg-pprimary text-white shadow-xs'
                       : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
                   }`}
                 >
-                  {sub.icon} {sub.name}
+                  {sub.name}
                 </button>
               ))}
             </div>
@@ -340,7 +337,7 @@ export default function SnapSolveHub() {
             type="button"
             disabled={isSolving || isCompressing}
             onClick={handleSolve}
-            className="w-full py-3.5 rounded-2xl bg-pprimary text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm disabled:opacity-50 active:scale-98 transition-all"
+            className="w-full py-3.5 rounded-2xl bg-pprimary text-white font-medium text-[14px] flex items-center justify-center gap-2 shadow-xs disabled:opacity-50 active:scale-[0.98] transition-all"
           >
             {isSolving ? (
               <>
@@ -348,10 +345,7 @@ export default function SnapSolveHub() {
                 <span>{tt('snapSolveSolving')}</span>
               </>
             ) : (
-              <>
-                <Sparkles size={18} />
-                <span>Masalani yechish</span>
-              </>
+              <span>{language === 'ru' ? 'Решить задачу' : 'Masalani yechish'}</span>
             )}
           </button>
         </div>
@@ -361,38 +355,37 @@ export default function SnapSolveHub() {
       {currentSolution && (
         <div className="space-y-4 animate-in fade-in slide-in-from-bottom duration-300">
           {/* Fan va Yakuniy Javob Kartasi */}
-          <div className="p-5 rounded-3xl bg-pcard shadow-xs space-y-3">
+          <div className="p-5 rounded-2xl bg-pcard shadow-xs space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-xl bg-pprimary/10 text-pprimary flex items-center gap-1">
-                <BookOpen size={13} />
+              <span className="text-[12px] font-medium px-2.5 py-1 rounded-full bg-psurface text-pmuted flex items-center gap-1.5">
+                <BookOpen size={13} strokeWidth={1.75} />
                 {currentSolution.subjectName || currentSolution.detectedSubject}
               </span>
               <button
                 type="button"
                 onClick={handleReset}
-                className="text-xs text-pmuted hover:text-pfg flex items-center gap-1"
+                className="text-[12px] text-pmuted hover:text-pfg flex items-center gap-1 transition-colors"
               >
-                <RefreshCw size={13} />
-                <span>Boshqa masala</span>
+                <RefreshCw size={13} strokeWidth={1.75} />
+                <span>{language === 'ru' ? 'Другая задача' : 'Boshqa masala'}</span>
               </button>
             </div>
 
             {/* Yakuniy javob bloki */}
-            <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20">
-              <div className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-1">
+            <div className="p-4 rounded-2xl bg-psurface shadow-2xs">
+              <div className="text-[11px] font-semibold text-pmuted uppercase tracking-wider mb-1">
                 {tt('snapSolveFinalAnswer')}
               </div>
-              <div className="text-base font-bold text-emerald-700 dark:text-emerald-300">
+              <div className="text-base font-bold text-psuccess">
                 <MathText text={currentSolution.finalAnswer} />
               </div>
             </div>
 
             {/* Asosiy qoida / formula */}
             {currentSolution.keyConcept && (
-              <div className="text-xs text-pmuted pt-1 flex items-start gap-2">
-                <span className="shrink-0">💡</span>
+              <div className="text-[13px] text-pmuted pt-1 flex items-start gap-2">
                 <p>
-                  <strong className="text-pfg">{tt('snapSolveKeyConcept')}:</strong>{' '}
+                  <strong className="font-semibold text-pfg">{tt('snapSolveKeyConcept')}:</strong>{' '}
                   <MathText text={currentSolution.keyConcept} as="span" />
                 </p>
               </div>
@@ -400,51 +393,50 @@ export default function SnapSolveHub() {
           </div>
 
           {/* Sokratik Chat ochish banneri */}
-          <div className="p-4 rounded-3xl bg-linear-to-r from-pprimary/15 to-purple-500/15 border border-pprimary/30 flex items-center justify-between gap-3 shadow-xs">
-            <div>
-              <div className="text-sm font-bold flex items-center gap-1.5 text-pfg">
-                <Sparkles size={16} className="text-pprimary" />
-                {tt('snapSolveDiscussWithAi')}
-              </div>
-              <p className="text-xs text-pmuted mt-0.5">
-                Yechimga tushunmadingizmi? Ustoz bilan suhbatlashing.
+          <div className="flex items-center justify-between gap-3 rounded-2xl bg-pcard p-4 shadow-xs">
+            <div className="min-w-0 flex-1">
+              <p className="text-[14px] font-semibold text-pfg">{tt('snapSolveDiscussWithAi')}</p>
+              <p className="mt-0.5 text-[12.5px] text-pmuted">
+                {language === 'ru'
+                  ? 'Есть вопросы по решению? Задайте репетитору'
+                  : 'Yechimga tushunmadingizmi? Ustoz bilan suhbatlashing'}
               </p>
             </div>
             <button
               type="button"
               onClick={() => setIsChatOpen(true)}
-              className="px-3.5 py-2 rounded-xl bg-pprimary text-white font-bold text-xs shrink-0 flex items-center gap-1.5 active:scale-95 transition-all shadow-xs"
+              className="flex shrink-0 items-center gap-1.5 rounded-xl bg-pprimary px-3.5 py-2 text-[12.5px] font-medium text-white shadow-xs transition-all active:scale-[0.98]"
             >
-              <MessageSquareQuote size={15} />
-              <span>Suhbat</span>
+              <MessageSquareQuote size={15} strokeWidth={1.75} />
+              <span>{language === 'ru' ? 'Спросить' : 'Suhbat'}</span>
             </button>
           </div>
 
           {/* Bosqichma-bosqich yechim qadamlari */}
           <div className="space-y-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-pmuted px-1">
+            <h3 className="text-[12px] font-semibold uppercase tracking-wider text-pmuted px-1">
               {tt('snapSolveStepsTitle')}
             </h3>
 
             {currentSolution.steps.map((step) => (
               <div
                 key={step.stepNumber}
-                className="p-4 rounded-2xl bg-pcard space-y-2 text-sm shadow-2xs"
+                className="p-4 rounded-2xl bg-pcard space-y-2 text-sm shadow-xs"
               >
-                <div className="flex items-center gap-2 font-bold text-pfg">
-                  <div className="size-6 rounded-full bg-psurface text-pprimary text-xs grid place-items-center shrink-0">
+                <div className="flex items-center gap-2.5 font-semibold text-pfg">
+                  <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-psurface text-[11px] font-semibold text-pmuted">
                     {step.stepNumber}
-                  </div>
-                  <span>{step.title}</span>
+                  </span>
+                  <span className="text-[14px]">{step.title}</span>
                 </div>
 
-                <div className="text-xs text-pmuted leading-relaxed pl-8">
+                <div className="text-[13px] text-pmuted leading-relaxed pl-8.5">
                   <MathText text={step.explanation} as="div" />
                 </div>
 
                 {step.formula && (
-                  <div className="pl-8 pt-1">
-                    <div className="p-2.5 rounded-xl bg-psurface text-xs font-mono shadow-2xs">
+                  <div className="pl-8.5 pt-1">
+                    <div className="p-2.5 rounded-xl bg-psurface text-xs font-mono shadow-2xs text-pfg">
                       <MathText text={step.formula} as="div" />
                     </div>
                   </div>
@@ -455,7 +447,7 @@ export default function SnapSolveHub() {
 
           {/* Rasmdan o'qilgan matn (OCR) */}
           {currentSolution.ocrText && (
-            <div className="p-4 rounded-2xl bg-psurface/40 text-xs space-y-1 shadow-2xs">
+            <div className="p-4 rounded-2xl bg-pcard text-xs space-y-1 shadow-xs">
               <span className="font-semibold text-pmuted block">{tt('snapSolveOcrTitle')}:</span>
               <p className="text-pmuted/80 italic leading-relaxed">{currentSolution.ocrText}</p>
             </div>

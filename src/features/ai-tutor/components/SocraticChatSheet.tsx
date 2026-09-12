@@ -176,26 +176,27 @@ export default function SocraticChatSheet({
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/60 backdrop-blur-xs transition-opacity animate-in fade-in duration-200">
       <div
-        className="relative flex flex-col w-full max-w-2xl mx-auto h-[88vh] max-h-[780px] bg-pcanvas rounded-t-3xl border-t border-pline shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300"
+        className="relative flex flex-col w-full max-w-2xl mx-auto h-[88vh] max-h-[780px] bg-pcard rounded-t-sheet shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300"
         role="dialog"
         aria-modal="true"
       >
+        {/* Drag handle */}
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto my-2.5 shrink-0 select-none" />
+
         {/* Header */}
-        <div className="flex items-center justify-between px-5 py-3.5 border-b border-pline bg-psurface/80 backdrop-blur-md">
+        <div className="flex items-center justify-between px-5 pb-3 bg-pcard">
           <div className="flex items-center gap-2.5">
-            <div className="size-9 rounded-xl bg-pprimary/10 text-pprimary grid place-items-center">
-              <Sparkles size={18} />
-            </div>
+            <Bot size={20} strokeWidth={1.75} className="text-pmuted shrink-0" />
             <div>
               <div className="flex items-center gap-1.5">
-                <h2 className="text-base font-semibold">{tt('socraticChatTitle')}</h2>
+                <h2 className="text-[15px] font-semibold text-pfg">{tt('socraticChatTitle')}</h2>
                 {isPremium && (
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-500">
-                    <Crown size={11} /> PRO
+                  <span className="rounded-full bg-psurface px-2 py-0.5 text-[10px] font-semibold text-pmuted">
+                    PRO
                   </span>
                 )}
               </div>
-              <p className="text-xs text-pmuted">{tt('socraticChatSubtitle')}</p>
+              <p className="text-[12px] text-pmuted">{tt('socraticChatSubtitle')}</p>
             </div>
           </div>
           <button
@@ -205,21 +206,21 @@ export default function SocraticChatSheet({
               if (abortControllerRef.current) abortControllerRef.current.abort()
               onClose()
             }}
-            className="size-9 rounded-xl grid place-items-center text-pmuted hover:text-pfg hover:bg-psurface transition-colors"
+            className="size-8 rounded-xl grid place-items-center text-pmuted hover:text-pfg hover:bg-psurface transition-colors"
             aria-label="Yopish"
           >
-            <X size={20} />
+            <X size={18} strokeWidth={1.75} />
           </button>
         </div>
 
         {/* Question Context Preview (kichik panel) */}
         {context.questionText && (
-          <div className="px-5 py-2.5 bg-psurface/40 border-b border-pline/60 flex items-center justify-between text-xs text-pmuted">
-            <span className="truncate max-w-[80%] font-medium">
-              📌 {context.questionText}
+          <div className="px-5 py-2 bg-psurface/60 flex items-center justify-between text-[12px] text-pmuted gap-2">
+            <span className="truncate flex-1">
+              {context.questionText}
             </span>
             {context.subjectId && (
-              <span className="uppercase text-[10px] tracking-wider px-2 py-0.5 bg-psurface rounded-md font-semibold">
+              <span className="uppercase text-[10px] tracking-wider px-2 py-0.5 bg-pcard rounded-full font-semibold text-psubtle shrink-0">
                 {context.subjectId}
               </span>
             )}
@@ -233,32 +234,32 @@ export default function SocraticChatSheet({
             return (
               <div
                 key={msg.id}
-                className={`flex gap-3 ${isAss ? 'justify-start' : 'justify-end'}`}
+                className={`flex gap-2.5 ${isAss ? 'justify-start' : 'justify-end'}`}
               >
                 {isAss && (
-                  <div className="size-8 rounded-xl bg-pprimary/10 text-pprimary grid place-items-center shrink-0 mt-0.5">
-                    <Bot size={16} />
+                  <div className="flex size-7 items-center justify-center rounded-full bg-psurface text-pmuted shrink-0 mt-0.5">
+                    <Bot size={15} strokeWidth={1.75} />
                   </div>
                 )}
                 <div
-                  className={`relative max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
+                  className={`relative max-w-[85%] rounded-2xl px-4 py-3 text-[13.5px] leading-relaxed ${
                     isAss
-                      ? 'bg-pcard text-pfg shadow-xs'
-                      : 'bg-pprimary text-white rounded-br-xs shadow-xs'
+                      ? 'bg-psurface text-pfg shadow-2xs'
+                      : 'bg-pprimary text-white rounded-br-xs shadow-2xs'
                   }`}
                 >
                   <MathText text={msg.content} as="div" className="space-y-2" />
 
                   {isAss && msg.content.length > 20 && (
-                    <div className="mt-2.5 pt-2 border-t border-pline/50 flex items-center justify-end gap-2">
+                    <div className="mt-2 flex items-center justify-end gap-2 text-pmuted">
                       <button
                         type="button"
                         onClick={() => handleSpeechToggle(msg.id, msg.content)}
-                        className="inline-flex items-center gap-1 text-[11px] text-pmuted hover:text-pfg transition-colors px-1.5 py-0.5 rounded"
+                        className="inline-flex items-center gap-1 text-[11px] text-pmuted hover:text-pfg transition-colors px-1.5 py-0.5 rounded-md hover:bg-pcard"
                       >
                         {isSpeakingId === msg.id ? (
                           <>
-                            <VolumeX size={13} className="text-red-400" />
+                            <VolumeX size={13} className="text-pdanger" />
                             <span>{tt('socraticStopVoice')}</span>
                           </>
                         ) : (
@@ -272,8 +273,8 @@ export default function SocraticChatSheet({
                   )}
                 </div>
                 {!isAss && (
-                  <div className="size-8 rounded-xl bg-psurface text-pmuted grid place-items-center shrink-0 mt-0.5">
-                    <User size={16} />
+                  <div className="flex size-7 items-center justify-center rounded-full bg-psurface text-pmuted shrink-0 mt-0.5">
+                    <User size={15} strokeWidth={1.75} />
                   </div>
                 )}
               </div>
@@ -282,16 +283,16 @@ export default function SocraticChatSheet({
 
           {/* Streaming Bubble */}
           {isStreaming && (
-            <div className="flex gap-3 justify-start">
-              <div className="size-8 rounded-xl bg-pprimary/10 text-pprimary grid place-items-center shrink-0 mt-0.5">
-                <Sparkles size={16} className="animate-pulse" />
+            <div className="flex gap-2.5 justify-start">
+              <div className="flex size-7 items-center justify-center rounded-full bg-psurface text-pmuted shrink-0 mt-0.5">
+                <Sparkles size={15} strokeWidth={1.75} />
               </div>
-              <div className="max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed bg-pcard text-pfg shadow-xs">
+              <div className="max-w-[85%] rounded-2xl px-4 py-3 text-[13.5px] leading-relaxed bg-psurface text-pfg shadow-2xs">
                 {streamingText ? (
                   <MathText text={streamingText} as="div" className="space-y-2" />
                 ) : (
                   <div className="flex items-center gap-2 text-pmuted">
-                    <Loader2 size={15} className="animate-spin" />
+                    <Loader2 size={14} className="animate-spin" />
                     <span>Ustoz fikrlamoqda…</span>
                   </div>
                 )}
@@ -301,8 +302,8 @@ export default function SocraticChatSheet({
 
           {/* Quota Exceeded Card */}
           {quotaError && (
-            <div className="rounded-2xl p-4 bg-amber-500/10 border border-amber-500/30 text-center space-y-3 my-2">
-              <div className="text-amber-500 font-semibold text-sm">
+            <div className="rounded-2xl p-4 bg-pwarning/10 text-center space-y-3 my-2 shadow-2xs">
+              <div className="text-pwarning font-semibold text-sm">
                 {tt('snapSolveQuotaExceeded')}
               </div>
               <button
@@ -323,40 +324,40 @@ export default function SocraticChatSheet({
 
         {/* Quick Suggestion Chips */}
         {!isStreaming && !quotaError && (
-          <div className="px-4 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar border-t border-pline/40 bg-psurface/20">
+          <div className="px-4 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar bg-pcard">
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipWhyFormula'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
+              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
-              💡 {tt('socraticChipWhyFormula')}
+              {tt('socraticChipWhyFormula')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipOtherWays'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
+              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
-              🔄 {tt('socraticChipOtherWays')}
+              {tt('socraticChipOtherWays')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipExplainSimpler'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
+              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
-              🌱 {tt('socraticChipExplainSimpler')}
+              {tt('socraticChipExplainSimpler')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipFullAnswer'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
+              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
-              📝 {tt('socraticChipFullAnswer')}
+              {tt('socraticChipFullAnswer')}
             </button>
           </div>
         )}
 
         {/* Input Bar */}
-        <div className="p-3 bg-pcanvas border-t border-pline">
+        <div className="p-3 bg-pcard">
           <form
             onSubmit={(e) => {
               e.preventDefault()
@@ -370,15 +371,15 @@ export default function SocraticChatSheet({
               onChange={(e) => setInputText(e.target.value)}
               placeholder={tt('socraticChatAskHint')}
               disabled={isStreaming}
-              className="flex-1 bg-psurface rounded-xl px-4 py-2.5 text-sm placeholder:text-pmuted/60 focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
+              className="flex-1 bg-psurface rounded-2xl px-4 py-2.5 text-[14px] text-pfg placeholder:text-pmuted/60 focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
             />
             <button
               type="submit"
               disabled={!inputText.trim() || isStreaming}
-              className="size-10 rounded-xl bg-pprimary text-white grid place-items-center disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 active:scale-95 transition-all shadow-xs"
+              className="size-10 rounded-2xl bg-pprimary text-white grid place-items-center disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 active:scale-95 transition-all shadow-xs"
               aria-label="Yuborish"
             >
-              <Send size={18} />
+              <Send size={17} strokeWidth={1.75} />
             </button>
           </form>
         </div>

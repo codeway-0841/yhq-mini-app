@@ -6,7 +6,7 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles, Lock } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles, Lock, Camera } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -21,14 +21,14 @@ type TKey = Parameters<ReturnType<typeof useT>>[0]
 
 interface ModeCard {
   id: string
-  iconBox: 'zap' | 'cap' | 'num' | 'ai'
+  iconBox: 'zap' | 'cap' | 'num' | 'ai' | 'camera'
   numText?: string
   danger?: boolean
   /** AI kunlik test — "YANGI" badge + binafsha (AI) aksent */
   aiCard?: boolean
   titleKey: TKey
   meta: string
-  diff: Diff
+  diff?: Diff
 }
 
 export default function TestlarPage() {
@@ -65,8 +65,8 @@ export default function TestlarPage() {
 
   const cards: ModeCard[] = [
     // AI Suratdan yechish (barcha fanlar uchun)
-    { id: 'snap-solve', iconBox: 'ai' as const, aiCard: true,
-      titleKey: 'snapSolveTitle' as const, meta: tt('snapSolveSubtitle'), diff: 'mid' as const },
+    { id: 'snap-solve', iconBox: 'camera' as const,
+      titleKey: 'snapSolveTitle' as const, meta: tt('snapSolveSubtitle') },
     // AI Kunlik Test (rustili) — har kuni 2 ta yangi variant (SSOT: shared/ai-daily-test.ts)
     ...(subjectId === 'rustili'
       ? [{ id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
@@ -123,7 +123,7 @@ export default function TestlarPage() {
 
       <div className="flex flex-col gap-3">
         {cards.map((m) => {
-          const d = DIFF[m.diff]
+          const d = m.diff ? DIFF[m.diff] : null
           const locked = isTestModePremium(m.id) && !isPremium
           return (
             <button key={m.id} onClick={() => start(m)}
@@ -141,6 +141,7 @@ export default function TestlarPage() {
                 )}
                 {m.iconBox === 'zap' && <Zap size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'cap' && <ClipboardCheck size={24} strokeWidth={1.75} />}
+                {m.iconBox === 'camera' && <Camera size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'ai' && <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
               </div>
 
@@ -148,11 +149,13 @@ export default function TestlarPage() {
               <div className="flex-1 min-w-0 text-left">
                 <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{tt(m.titleKey)}</p>
                 <p className="text-[11.5px] text-psubtle mt-0.5 truncate">{m.meta}</p>
-                <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
-                  style={{ color: d.color }}>
-                  <span className="size-2 rounded-full" style={{ background: d.color }} />
-                  {d.label}
-                </span>
+                {d && (
+                  <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
+                    style={{ color: d.color }}>
+                    <span className="size-2 rounded-full" style={{ background: d.color }} />
+                    {d.label}
+                  </span>
+                )}
               </div>
 
               {/* O'tish ko'rsatkichi */}
