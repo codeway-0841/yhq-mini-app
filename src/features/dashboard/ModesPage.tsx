@@ -72,7 +72,7 @@ export default function ModesPage() {
       ? [{ icon: Zap,      label: tt('speedRound'),    onClick: () => navigate('/speed') }]
       : []),
     { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
-    { icon: Bot,           label: tt('aiTutor'),       onClick: () => showToast(tt('comingSoonD')) },
+    { icon: Bot,           label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
   ]
 
   return (

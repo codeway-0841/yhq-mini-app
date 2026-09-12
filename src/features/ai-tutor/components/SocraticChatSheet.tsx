@@ -243,7 +243,7 @@ export default function SocraticChatSheet({
                 <div
                   className={`relative max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                     isAss
-                      ? 'bg-pcard text-pfg border border-pline/80 shadow-xs'
+                      ? 'bg-pcard text-pfg shadow-xs'
                       : 'bg-pprimary text-white rounded-br-xs shadow-xs'
                   }`}
                 >
@@ -286,7 +286,7 @@ export default function SocraticChatSheet({
               <div className="size-8 rounded-xl bg-pprimary/10 text-pprimary grid place-items-center shrink-0 mt-0.5">
                 <Sparkles size={16} className="animate-pulse" />
               </div>
-              <div className="max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed bg-pcard text-pfg border border-pline/80 shadow-xs">
+              <div className="max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed bg-pcard text-pfg shadow-xs">
                 {streamingText ? (
                   <MathText text={streamingText} as="div" className="space-y-2" />
                 ) : (
@@ -327,28 +327,28 @@ export default function SocraticChatSheet({
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipWhyFormula'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface border border-pline hover:bg-pline/50 text-pmuted hover:text-pfg transition-colors"
+              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
             >
               💡 {tt('socraticChipWhyFormula')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipOtherWays'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface border border-pline hover:bg-pline/50 text-pmuted hover:text-pfg transition-colors"
+              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
             >
               🔄 {tt('socraticChipOtherWays')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipExplainSimpler'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface border border-pline hover:bg-pline/50 text-pmuted hover:text-pfg transition-colors"
+              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
             >
               🌱 {tt('socraticChipExplainSimpler')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipFullAnswer'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface border border-pline hover:bg-pline/50 text-pmuted hover:text-pfg transition-colors"
+              className="shrink-0 px-3 py-1.5 rounded-full text-xs bg-psurface hover:bg-pline/40 text-pmuted hover:text-pfg transition-colors shadow-2xs"
             >
               📝 {tt('socraticChipFullAnswer')}
             </button>
@@ -370,7 +370,7 @@ export default function SocraticChatSheet({
               onChange={(e) => setInputText(e.target.value)}
               placeholder={tt('socraticChatAskHint')}
               disabled={isStreaming}
-              className="flex-1 bg-psurface border border-pline rounded-xl px-4 py-2.5 text-sm placeholder:text-pmuted/60 focus:outline-none focus:ring-2 focus:ring-pprimary"
+              className="flex-1 bg-psurface rounded-xl px-4 py-2.5 text-sm placeholder:text-pmuted/60 focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
             />
             <button
               type="submit"

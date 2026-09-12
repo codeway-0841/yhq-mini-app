@@ -159,7 +159,7 @@ export default function SnapSolveHub() {
 
         {/* Quota Badge */}
         {quota && (
-          <div className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-psurface border border-pline">
+          <div className="flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full bg-psurface shadow-2xs">
             {quota.isPremium ? (
               <span className="text-amber-500 flex items-center gap-1">
                 <Crown size={13} /> {quota.photoSolvesRemaining} / {quota.photoSolvesLimit}
@@ -216,7 +216,7 @@ export default function SnapSolveHub() {
       {/* 1. Rasmni tanlash / Yuklash fazasi */}
       {!selectedImage && !currentSolution && (
         <div className="space-y-4">
-          <div className="p-6 rounded-3xl bg-pcard border border-pline text-center space-y-4 shadow-sm">
+          <div className="p-6 rounded-3xl bg-pcard text-center space-y-4 shadow-sm">
             <div className="size-16 mx-auto rounded-2xl bg-pprimary/10 text-pprimary grid place-items-center">
               <Camera size={32} strokeWidth={1.75} />
             </div>
@@ -237,7 +237,7 @@ export default function SnapSolveHub() {
               <button
                 type="button"
                 onClick={() => galleryInputRef.current?.click()}
-                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-psurface border border-pline text-pfg font-semibold text-xs hover:bg-pline/50 active:scale-95 transition-all"
+                className="flex items-center justify-center gap-2 py-3 px-4 rounded-2xl bg-psurface text-pfg font-semibold text-xs hover:bg-pline/40 active:scale-95 transition-all shadow-xs"
               >
                 <ImageIcon size={16} />
                 <span>{tt('snapSolvePickGallery')}</span>
@@ -261,7 +261,7 @@ export default function SnapSolveHub() {
                       setCurrentSolution(item.solution)
                       if (item.previewImage) setSelectedImage(item.previewImage)
                     }}
-                    className="w-full text-left p-3.5 rounded-2xl bg-pcard border border-pline hover:border-pprimary/50 transition-all flex items-center justify-between gap-3 shadow-2xs"
+                    className="w-full text-left p-3.5 rounded-2xl bg-pcard hover:bg-psurface transition-all flex items-center justify-between gap-3 shadow-xs"
                   >
                     <div className="truncate flex-1">
                       <div className="flex items-center gap-2 mb-1">
@@ -311,7 +311,7 @@ export default function SnapSolveHub() {
                 type="button"
                 onClick={() => setSubjectHint('')}
                 className={`px-3 py-1.5 rounded-xl text-xs shrink-0 font-medium transition-colors ${
-                  !subjectHint ? 'bg-pprimary text-white' : 'bg-psurface border border-pline text-pmuted'
+                  !subjectHint ? 'bg-pprimary text-white shadow-xs' : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
                 }`}
               >
                 Auto-detect
@@ -323,8 +323,8 @@ export default function SnapSolveHub() {
                   onClick={() => setSubjectHint(sub.id)}
                   className={`px-3 py-1.5 rounded-xl text-xs shrink-0 font-medium transition-colors ${
                     subjectHint === sub.id
-                      ? 'bg-pprimary text-white'
-                      : 'bg-psurface border border-pline text-pmuted'
+                      ? 'bg-pprimary text-white shadow-xs'
+                      : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
                   }`}
                 >
                   {sub.icon} {sub.name}
@@ -359,7 +359,7 @@ export default function SnapSolveHub() {
       {currentSolution && (
         <div className="space-y-4 animate-in fade-in slide-in-from-bottom duration-300">
           {/* Fan va Yakuniy Javob Kartasi */}
-          <div className="p-5 rounded-3xl bg-pcard border border-pline shadow-xs space-y-3">
+          <div className="p-5 rounded-3xl bg-pcard shadow-xs space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded-xl bg-pprimary/10 text-pprimary flex items-center gap-1">
                 <BookOpen size={13} />
@@ -427,7 +427,7 @@ export default function SnapSolveHub() {
             {currentSolution.steps.map((step) => (
               <div
                 key={step.stepNumber}
-                className="p-4 rounded-2xl bg-pcard border border-pline space-y-2 text-sm shadow-2xs"
+                className="p-4 rounded-2xl bg-pcard space-y-2 text-sm shadow-2xs"
               >
                 <div className="flex items-center gap-2 font-bold text-pfg">
                   <div className="size-6 rounded-full bg-psurface text-pprimary text-xs grid place-items-center shrink-0">
@@ -442,7 +442,7 @@ export default function SnapSolveHub() {
 
                 {step.formula && (
                   <div className="pl-8 pt-1">
-                    <div className="p-2.5 rounded-xl bg-psurface border border-pline/70 text-xs font-mono">
+                    <div className="p-2.5 rounded-xl bg-psurface text-xs font-mono shadow-2xs">
                       <MathText text={step.formula} as="div" />
                     </div>
                   </div>
@@ -453,7 +453,7 @@ export default function SnapSolveHub() {
 
           {/* Rasmdan o'qilgan matn (OCR) */}
           {currentSolution.ocrText && (
-            <div className="p-4 rounded-2xl bg-psurface/40 border border-pline/60 text-xs space-y-1">
+            <div className="p-4 rounded-2xl bg-psurface/40 text-xs space-y-1 shadow-2xs">
               <span className="font-semibold text-pmuted block">{tt('snapSolveOcrTitle')}:</span>
               <p className="text-pmuted/80 italic leading-relaxed">{currentSolution.ocrText}</p>
             </div>

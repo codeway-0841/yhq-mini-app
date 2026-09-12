@@ -64,6 +64,9 @@ export default function TestlarPage() {
   })
 
   const cards: ModeCard[] = [
+    // AI Suratdan yechish (barcha fanlar uchun)
+    { id: 'snap-solve', iconBox: 'ai' as const, aiCard: true,
+      titleKey: 'snapSolveTitle' as const, meta: tt('snapSolveSubtitle'), diff: 'mid' as const },
     // AI Kunlik Test (rustili) — har kuni 2 ta yangi variant (SSOT: shared/ai-daily-test.ts)
     ...(subjectId === 'rustili'
       ? [{ id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
@@ -91,6 +94,7 @@ export default function TestlarPage() {
     const locked = isTestModePremium(m.id) && !isPremium
     track('test_start', { mode: m.id })
     if (locked) { navigate('/premium'); return }
+    if (m.id === 'snap-solve') { navigate('/ai-tutor'); return }
     if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }
