@@ -118,3 +118,71 @@ export async function* explainQuestion(
     } catch { /* ignore */ }
   }
 }
+
+/** Sokratik dialog generatori (ko'p bosqichli suhbat) */
+export async function* streamSocraticChat(
+  messages: { role: 'user' | 'assistant'; content: string }[],
+  context: {
+    questionText?: string
+    options?: Record<string, string>
+    userSelectedOption?: string
+    correctAnswer?: string
+    subjectId?: string
+    topicName?: string
+  },
+  language: 'uz' | 'ru',
+  signal?: AbortSignal,
+): AsyncGenerator<string, void, void> {
+  if (signal?.aborted) return
+
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+    ...buildAuthHeaders(),
+  }
+
+  const res = await fetch(`${config.apiBaseUrl}/tutor/socratic-chat`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ messages, context, language }),
+    signal,
+  })
+
+  if (!res.ok) {
+    if (res.status === 403) throw new TutorError('premium_required', 'Premium kerak')
+    if (res.status === 429) throw new TutorError('daily_limit', 'Kunlik limit tugadi')
+    if (res.status === 503) throw new TutorError('quota', 'AI hozir band')
+    if (res.status === 502) throw new TutorError('unavailable', 'AI vaqtincha ishlamayapti')
+    throw new TutorError('network', `HTTP ${res.status}`)
+  }
+  if (!res.body) throw new TutorError('network', "Stream yo'q")
+
+  const reader = res.body.getReader()
+  const decoder = new TextDecoder()
+  let buffer = ''
+
+  try {
+    for (;;) {
+      if (signal?.aborted) return
+      const { done, value } = await reader.read()
+      if (done) return
+      buffer += decoder.decode(value, { stream: true })
+      const lines = buffer.split('\n')
+      buffer = lines.pop() ?? ''
+      for (const line of lines) {
+        if (!line.startsWith('data:')) continue
+        const json = line.slice(5).trim()
+        if (json === '[DONE]') return
+        try {
+          yield (JSON.parse(json) as { text?: string }).text ?? ''
+        } catch { /* chunk parsing */ }
+      }
+    }
+  } finally {
+    try {
+      await reader.cancel()
+    } catch { /* ignore */ }
+    try {
+      reader.releaseLock()
+    } catch { /* ignore */ }
+  }
+}

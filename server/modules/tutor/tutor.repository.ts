@@ -25,13 +25,46 @@ export const tutorUsageRepository = {
    * Bir kvota sarflashga urinadi: limit ICHIDA bo'lsa true (count ++),
    * limitdan oshgan bo'lsa false (count baribir oshadi — abuse ko'rinadi).
    */
-  async tryConsume(userId: string, date: string, limit: number): Promise<boolean> {
+  async tryConsume(key: string, date: string, limit: number): Promise<boolean> {
     const rows = await executeRows<{ count: number }>(sql`
       INSERT INTO tutor_usage (user_id, date, count)
-      VALUES (${userId}, ${date}, 1)
+      VALUES (${key}, ${date}, 1)
       ON CONFLICT (user_id, date) DO UPDATE SET count = tutor_usage.count + 1
       RETURNING count
     `)
     return Number(rows[0]?.count) <= limit
+  },
+
+  /** Joriy kunda ishlatilgan miqdor (hisoblagichni oshirmasdan) */
+  async getCount(key: string, date: string): Promise<number> {
+    const rows = await executeRows<{ count: number }>(sql`
+      SELECT count FROM tutor_usage
+      WHERE user_id = ${key} AND date = ${date}
+    `)
+    return Number(rows[0]?.count ?? 0)
+  },
+
+  /** Foydalanuvchining bugungi kvota holatini olish */
+  async getUserQuotaStatus(userId: string, date: string, isPremium: boolean) {
+    const photoKey = `${userId}:photo`
+    const chatKey = `${userId}:chat`
+
+    const [usedPhotos, usedChat] = await Promise.all([
+      this.getCount(photoKey, date),
+      this.getCount(chatKey, date),
+    ])
+
+    const photoLimit = isPremium ? 30 : 2
+    const chatLimit = isPremium ? 100 : 5
+
+    return {
+      isPremium,
+      photoSolvesUsed: usedPhotos,
+      photoSolvesLimit: photoLimit,
+      photoSolvesRemaining: Math.max(0, photoLimit - usedPhotos),
+      chatMessagesUsed: usedChat,
+      chatMessagesLimit: chatLimit,
+      chatMessagesRemaining: Math.max(0, chatLimit - usedChat),
+    }
   },
 }

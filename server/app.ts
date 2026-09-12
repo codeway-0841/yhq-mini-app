@@ -73,6 +73,8 @@ export function createApp() {
   // Sertifikat PNG base64 (canvas.toDataURL) odatda 300KB'dan oshadi — umumiy
   // 300kb limit 413 qaytarardi (audit H-9). share/image bilan bir kategoriya.
   app.use('/api/certificate/send', express.json({ limit: '5mb' }))
+  // AI Tutor suratdan yechish (Snap & Solve) — siqilgan base64 rasm yuklanadi (~1-3MB)
+  app.use('/api/tutor/solve-photo', express.json({ limit: '6mb' }))
   app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.

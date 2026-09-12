@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Camera, ArrowRight } from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -121,6 +122,30 @@ export default function Dashboard() {
             lang={settings.language}
             onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
           />
+
+          {/* AI Suratdan yechish (Snap & Solve) */}
+          <div
+            onClick={() => navigate('/ai-tutor')}
+            className="mx-4 mb-4 p-4 rounded-3xl bg-linear-to-r from-pprimary/10 via-purple-500/10 to-indigo-500/10 border border-pprimary/25 hover:border-pprimary/50 cursor-pointer transition-all flex items-center justify-between gap-3.5 shadow-xs group active:scale-[0.99]"
+          >
+            <div className="size-11 rounded-2xl bg-pprimary text-white grid place-items-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+              <Camera size={22} strokeWidth={2} />
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm font-bold text-pfg">{tt('snapSolveTitle')}</span>
+                <span className="px-1.5 py-0.5 rounded-md bg-pprimary/15 text-pprimary text-[10px] font-bold">
+                  AI Vision
+                </span>
+              </div>
+              <p className="text-xs text-pmuted truncate mt-0.5">
+                {tt('snapSolveSubtitle')}
+              </p>
+            </div>
+            <div className="size-8 rounded-xl bg-psurface text-pmuted group-hover:text-pfg group-hover:bg-pline grid place-items-center shrink-0 transition-colors">
+              <ArrowRight size={16} />
+            </div>
+          </div>
 
           <LearningGuide mistakesCount={mistakesCount} />
 

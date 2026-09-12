@@ -748,6 +748,26 @@ export const api = {
       test: AiTestPublicPayload & { id: number; slot: number; date: string }
     }>('GET', `/ai-tests/${testId}/result`),
 
+  // ── AI Tutor (Snap & Solve + Socratic Tutor) ────────────────────────────
+  /** Rasmdan masalani yechish (Multimodal Vision AI) */
+  solvePhoto: (data: { image: string; mimeType?: 'image/jpeg' | 'image/png' | 'image/webp'; subjectHint?: string; language?: 'uz' | 'ru' }) =>
+    request<{
+      ok: true
+      solution: {
+        ocrText: string
+        detectedSubject: string
+        subjectName: string
+        finalAnswer: string
+        steps: { stepNumber: number; title: string; explanation: string; formula?: string }[]
+        keyConcept: string
+      }
+      quota: TutorQuota
+    }>('POST', '/tutor/solve-photo', data, 65_000),
+
+  /** AI Tutor kvota holatini olish */
+  getTutorQuota: () =>
+    request<{ ok: true; quota: TutorQuota }>('GET', '/tutor/quota'),
+
   // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
   getMerchCatalog: () =>
     request<{ ok: true; items: MerchCatalogItem[] }>('GET', '/coins/merch'),
@@ -1117,6 +1137,16 @@ export interface DailyHistory {
   rows:        DailyHistoryRow[]
   dailyStreak: number
   bestStreak:  number
+}
+
+export interface TutorQuota {
+  isPremium: boolean
+  photoSolvesUsed: number
+  photoSolvesLimit: number
+  photoSolvesRemaining: number
+  chatMessagesUsed: number
+  chatMessagesLimit: number
+  chatMessagesRemaining: number
 }
 
 /** AI Kunlik Test — /today ro'yxat elementi (javob kalitlarisiz meta) */

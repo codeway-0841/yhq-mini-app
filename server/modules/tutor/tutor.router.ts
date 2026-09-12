@@ -24,6 +24,9 @@ import { tashkentDate } from '../../utils/date'
 import {
   tutorUsageRepository, TUTOR_DAILY_USER_LIMIT, TUTOR_DAILY_GLOBAL_LIMIT, TUTOR_GLOBAL_USER_ID,
 } from './tutor.repository'
+import {
+  solveProblemFromPhoto, streamSocraticChatResponse, type SocraticMessage, type SocraticContext,
+} from './tutor.service'
 
 const router = Router()
 
@@ -34,12 +37,159 @@ const BodySchema = z.object({
   answeredCorrect: z.boolean().default(false),
 })
 
+const SolvePhotoBodySchema = z.object({
+  image: z.string().min(50).max(6_000_000),
+  mimeType: z.enum(['image/jpeg', 'image/png', 'image/webp']).default('image/jpeg'),
+  subjectHint: z.string().max(50).optional(),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
+
+const SocraticChatBodySchema = z.object({
+  messages: z.array(z.object({
+    role: z.enum(['user', 'assistant']),
+    content: z.string().min(1).max(2000),
+  })).min(1).max(20),
+  context: z.object({
+    questionText: z.string().max(3000).optional(),
+    options: z.record(z.string(), z.string()).optional(),
+    userSelectedOption: z.string().max(100).optional(),
+    correctAnswer: z.string().max(100).optional(),
+    subjectId: z.string().max(50).optional(),
+    topicName: z.string().max(200).optional(),
+  }).default({}),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
+
 /** Effective premium (lifetime tariff YOKI referal muddati tugamagan) */
 async function isPremium(uid: string): Promise<boolean> {
   const [row] = await db.select({ tariff: users.tariff, premiumUntil: users.premiumUntil })
     .from(users).where(eq(users.id, uid))
   return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
 }
+
+// ── GET /api/tutor/quota ───────────────────────────────────────────────────
+router.get(
+  '/tutor/quota',
+  wrap(async (req, res) => {
+    const verifiedId = (req as { userId?: string }).userId
+    const uid = verifiedId ? parseUserId(verifiedId) : null
+    if (!uid) throw new AppError(401, 'user_not_identified')
+
+    const date = tashkentDate()
+    const userIsPremium = await isPremium(uid)
+    const quota = await tutorUsageRepository.getUserQuotaStatus(uid, date, userIsPremium)
+
+    res.json({ ok: true, quota })
+  }),
+)
+
+// ── POST /api/tutor/solve-photo ───────────────────────────────────────────
+router.post(
+  '/tutor/solve-photo',
+  rateLimit({
+    maxPerMinute: 15,
+    bucket: 'tutor_photo',
+    keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
+  }),
+  validate({ body: SolvePhotoBodySchema }),
+  wrap(async (req, res) => {
+    const verifiedId = (req as { userId?: string }).userId
+    const uid = verifiedId ? parseUserId(verifiedId) : null
+    if (!uid) throw new AppError(401, 'user_not_identified')
+
+    const date = tashkentDate()
+    const userIsPremium = await isPremium(uid)
+    const limit = userIsPremium ? 30 : 2
+
+    const photoKey = `${uid}:photo`
+    const allowed = await tutorUsageRepository.tryConsume(photoKey, date, limit)
+    const globalAllowed = await tutorUsageRepository.tryConsume('0:photo', date, 500)
+
+    if (!allowed || !globalAllowed) {
+      throw new AppError(429, userIsPremium ? 'daily_limit' : 'free_limit_exceeded')
+    }
+
+    const { image, mimeType, subjectHint, language } = req.body as z.infer<typeof SolvePhotoBodySchema>
+    const solution = await solveProblemFromPhoto({
+      imageBase64: image,
+      mimeType,
+      subjectHint,
+      language,
+    })
+
+    const quota = await tutorUsageRepository.getUserQuotaStatus(uid, date, userIsPremium)
+
+    res.json({
+      ok: true,
+      solution,
+      quota,
+    })
+  }),
+)
+
+// ── POST /api/tutor/socratic-chat ─────────────────────────────────────────
+router.post(
+  '/tutor/socratic-chat',
+  rateLimit({
+    maxPerMinute: 30,
+    bucket: 'tutor_chat',
+    keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
+  }),
+  validate({ body: SocraticChatBodySchema }),
+  wrap(async (req, res) => {
+    const verifiedId = (req as { userId?: string }).userId
+    const uid = verifiedId ? parseUserId(verifiedId) : null
+    if (!uid) throw new AppError(401, 'user_not_identified')
+
+    const date = tashkentDate()
+    const userIsPremium = await isPremium(uid)
+    const chatLimit = userIsPremium ? 100 : 5
+
+    const chatKey = `${uid}:chat`
+    const allowed = await tutorUsageRepository.tryConsume(chatKey, date, chatLimit)
+    const globalAllowed = await tutorUsageRepository.tryConsume('0:chat', date, 1000)
+
+    if (!allowed || !globalAllowed) {
+      throw new AppError(429, userIsPremium ? 'daily_limit' : 'free_limit_exceeded')
+    }
+
+    const { messages, context, language } = req.body as z.infer<typeof SocraticChatBodySchema>
+
+    res.setHeader('Content-Type', 'text/event-stream; charset=utf-8')
+    res.setHeader('Cache-Control', 'no-cache, no-transform')
+    res.setHeader('Connection', 'keep-alive')
+    res.flushHeaders?.()
+
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 45_000)
+    res.on('close', () => controller.abort())
+
+    try {
+      await streamSocraticChatResponse({
+        messages: messages as SocraticMessage[],
+        context: context as SocraticContext,
+        language,
+        signal: controller.signal,
+        onChunk: (textChunk) => {
+          if (!res.writableEnded && !res.destroyed) {
+            res.write(`data: ${JSON.stringify({ text: textChunk })}\n\n`)
+          }
+        },
+      })
+    } catch (err: unknown) {
+      clearTimeout(timeout)
+      if (!controller.signal.aborted) {
+        console.error('[tutor/socratic-chat] stream error:', err)
+      }
+    } finally {
+      clearTimeout(timeout)
+      if (!res.writableEnded && !res.destroyed) {
+        res.write('data: [DONE]\n\n')
+        res.end()
+      }
+    }
+  }),
+)
 
 function buildPrompt(q: typeof questions.$inferSelect, lang: 'uz' | 'ru', answeredCorrect: boolean): string {
   const opts    = lang === 'ru' ? q.optionsRu : q.optionsUz
