@@ -8,7 +8,7 @@ import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
-import { SnapSolveFab } from './features/ai-tutor'
+import IosDock from './shared/components/IosDock'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -129,14 +129,14 @@ function Layout({ children }: { children: ReactNode }) {
     <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip">
       <div
         ref={pageRef}
-        // pb: 1rem bazaviy + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(1rem+var(--safe-bottom,0px))] px-0"
+        // pb: 4.5rem bazaviy (iOS Dock balandligi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0"
       >
         <Suspense fallback={<PageLoader />}>
           {children}
         </Suspense>
       </div>
-      <SnapSolveFab />
+      <IosDock />
     </div>
   )
 }
