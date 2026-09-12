@@ -77,7 +77,30 @@ const MAPPINGS: SubjectMapping[] = [
     bankName: 'Adabiyot savollar bazasi',
     shuffleOptions: false,
   },
+  {
+    testupFolder: 'ingliz-tili',
+    canonicalFolder: 'ingliz',
+    subjectId: 'ingliz',
+    bankId: 'english_db',
+    bankName: 'Ingliz tili savollar bazasi',
+    shuffleOptions: true,
+  },
 ];
+
+const LEVEL_WEIGHT: Record<string, number> = {
+  kids: 0,
+  a1: 1,
+  a2: 2,
+  b1: 3,
+  b2: 4,
+  c1: 5,
+};
+
+function parseEnglishTopicId(fileOrId: string): { level: string; num: number } | null {
+  const m = fileOrId.match(/^ing_([a-z0-9]+)_m(\d+)/i);
+  if (!m) return null;
+  return { level: m[1].toLowerCase(), num: parseInt(m[2], 10) };
+}
 
 function hashString(str: string): number {
   let h = 2166136261 >>> 0;
@@ -118,7 +141,23 @@ async function convertSubject(map: SubjectMapping) {
   const indexRaw = await fs.readFile(indexFile, 'utf-8');
   const indexData = JSON.parse(indexRaw);
 
-  const topicFiles = await fs.readdir(topicsDir);
+  const rawTopicFiles = await fs.readdir(topicsDir);
+  const topicFiles = rawTopicFiles.filter((f) => f.endsWith('.json'));
+
+  if (map.subjectId === 'ingliz') {
+    topicFiles.sort((a, b) => {
+      const pa = parseEnglishTopicId(a);
+      const pb = parseEnglishTopicId(b);
+      if (pa && pb) {
+        const wa = LEVEL_WEIGHT[pa.level] ?? 99;
+        const wb = LEVEL_WEIGHT[pb.level] ?? 99;
+        if (wa !== wb) return wa - wb;
+        return pa.num - pb.num;
+      }
+      return a.localeCompare(b);
+    });
+  }
+
   console.log(`\n========================================`);
   console.log(`[Konvertatsiya: ${map.bankName}] Topics papkasida ${topicFiles.length} ta fayl`);
 
@@ -128,13 +167,20 @@ async function convertSubject(map: SubjectMapping) {
   const answerCounts: Record<string, number> = { A1: 0, A2: 0, A3: 0, A4: 0 };
 
   for (const file of topicFiles) {
-    if (!file.endsWith('.json')) continue;
     const topicId = file.replace('.json', '');
     const topicPath = path.join(topicsDir, file);
     const contentRaw = await fs.readFile(topicPath, 'utf-8');
     const topicContent: TestUpTopicFile = JSON.parse(contentRaw);
 
-    const topicNom = topicContent.nom || topicId;
+    let topicNom = topicContent.nom || topicId;
+    if (map.subjectId === 'ingliz') {
+      const p = parseEnglishTopicId(file);
+      if (p) {
+        const badge = p.level === 'kids' ? 'Pre-A1' : p.level.toUpperCase();
+        topicNom = `[${badge}] ${topicNom}`;
+      }
+    }
+
     topics.push({
       externalId: topicId,
       nameUz: topicNom,
@@ -235,15 +281,27 @@ async function convertSubject(map: SubjectMapping) {
 }
 
 async function main() {
+  const args = process.argv.slice(2);
+  const subjIdx = args.indexOf('--subject');
+  const targetSubj = subjIdx !== -1 ? args[subjIdx + 1] : null;
+
   console.log('[TestUp Converter] Boshlanmoqda...');
+  const targets = targetSubj
+    ? MAPPINGS.filter((m) => m.subjectId === targetSubj)
+    : MAPPINGS;
+
+  if (targets.length === 0) {
+    throw new Error(`Fan topilmadi: ${targetSubj}. Mavjud: ${MAPPINGS.map((m) => m.subjectId).join(', ')}`);
+  }
+
   const stats = [];
-  for (const m of MAPPINGS) {
+  for (const m of targets) {
     const res = await convertSubject(m);
     stats.push(res);
   }
 
   console.log('\n========================================');
-  console.log('[TestUp Converter] BARCHA FANLAR MUVAFFAQIYATLI KONVERTATSIYA QILINDI:');
+  console.log('[TestUp Converter] KONVERTATSIYA YAKUNLANDI:');
   console.table(stats);
 }
 

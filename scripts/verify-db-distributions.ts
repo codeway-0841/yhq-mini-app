@@ -6,7 +6,7 @@ async function main() {
   const rows = await executeRows<{ bank_id: string; correct_answer: string; count: number }>(sql`
     SELECT bank_id, correct_answer, COUNT(*)::int AS count
     FROM questions
-    WHERE bank_id IN ('biology_db', 'history_db', 'chemistry_db', 'geography_db', 'onatili_db', 'adabiyot_db')
+    WHERE bank_id IN ('biology_db', 'history_db', 'chemistry_db', 'geography_db', 'onatili_db', 'adabiyot_db', 'english_db')
     GROUP BY bank_id, correct_answer
     ORDER BY bank_id, correct_answer
   `);

@@ -18,6 +18,7 @@ const PROVIDERS: Record<string, QuestionBankProvider> = {
   geography_db:     new DefaultQuestionBankProvider('geography_db'),
   onatili_db:       new DefaultQuestionBankProvider('onatili_db'),
   adabiyot_db:      new DefaultQuestionBankProvider('adabiyot_db'),
+  english_db:       new DefaultQuestionBankProvider('english_db'),
 }
 
 export function getProvider(dataSourceId: string): QuestionBankProvider {

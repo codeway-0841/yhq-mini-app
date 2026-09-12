@@ -67,6 +67,37 @@ function getPhysicsChapterId(slug?: string, name?: string): string {
   return 'other'
 }
 
+const ENGLISH_LEVELS: ChapterDef[] = [
+  { id: 'all',    labelUz: 'Barchasi',          labelRu: 'Все' },
+  { id: 'pre-a1', labelUz: 'Pre-A1 (Starter)',   labelRu: 'Pre-A1 (Начальный)' },
+  { id: 'a1',     labelUz: 'A1 (Beginner)',     labelRu: 'A1 (Элементарный)' },
+  { id: 'a2',     labelUz: 'A2 (Elementary)',   labelRu: 'A2 (Базовый)' },
+  { id: 'b1',     labelUz: 'B1 (Intermediate)', labelRu: 'B1 (Средний)' },
+  { id: 'b2',     labelUz: 'B2 (Upper-Int)',    labelRu: 'B2 (Выше среднего)' },
+  { id: 'c1',     labelUz: 'C1 (Advanced)',     labelRu: 'C1 (Продвинутый)' },
+]
+
+const ENGLISH_LEVEL_WEIGHT: Record<string, number> = {
+  'pre-a1': 0,
+  a1: 1,
+  a2: 2,
+  b1: 3,
+  b2: 4,
+  c1: 5,
+}
+
+function getEnglishLevelId(slug?: string, name?: string): string {
+  const s = slug || ''
+  const n = name || ''
+  if (s.includes('kids') || n.includes('[Pre-A1]')) return 'pre-a1'
+  if (s.includes('a1') || n.includes('[A1]')) return 'a1'
+  if (s.includes('a2') || n.includes('[A2]')) return 'a2'
+  if (s.includes('b1') || n.includes('[B1]')) return 'b1'
+  if (s.includes('b2') || n.includes('[B2]')) return 'b2'
+  if (s.includes('c1') || n.includes('[C1]')) return 'c1'
+  return 'other'
+}
+
 export default function Biletlar() {
   const [tab, setTab] = useState('all')
   const [selectedChapter, setSelectedChapter] = useState('all')
@@ -152,6 +183,54 @@ export default function Biletlar() {
       if (result.length > 0) return result
     }
 
+    // Ingliz tili: darajalar bo'yicha (Pre-A1, A1, A2, B1, B2, C1) mavzular variantlari
+    if (subjectId === 'ingliz' && topics.length > 0) {
+      const byTopic = new Map<number, Question[]>()
+      for (const q of questions) {
+        if (q.topicId != null) {
+          const list = byTopic.get(q.topicId)
+          if (list) list.push(q)
+          else byTopic.set(q.topicId, [q])
+        }
+      }
+
+      const sortedTopics = [...topics].sort((a, b) => {
+        const la = getEnglishLevelId(a.slug, a.nameUz)
+        const lb = getEnglishLevelId(b.slug, b.nameUz)
+        const wa = ENGLISH_LEVEL_WEIGHT[la] ?? 99
+        const wb = ENGLISH_LEVEL_WEIGHT[lb] ?? 99
+        if (wa !== wb) return wa - wb
+        const ma = a.slug?.match(/_m(\d+)/)
+        const mb = b.slug?.match(/_m(\d+)/)
+        if (ma && mb) {
+          return parseInt(ma[1], 10) - parseInt(mb[1], 10)
+        }
+        return a.id - b.id
+      })
+
+      const result: TicketItem[] = []
+      let ticketNum = 1
+      for (const topic of sortedTopics) {
+        const topicQuestions = byTopic.get(topic.id)
+        if (!topicQuestions || topicQuestions.length === 0) continue
+        const ordered = [...topicQuestions].sort((a, b) => a.id - b.id)
+        const chapterId = getEnglishLevelId(topic.slug, topic.nameUz)
+        const subtitle = isRu ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
+        result.push({
+          id: ticketNum,
+          title: `${ticketNum} - ${tt('ticketWord')}`,
+          subtitle,
+          chapterId,
+          topicId: topic.id,
+          questionCount: ordered.length,
+          questionIds: ordered.map((q) => q.id),
+        })
+        ticketNum++
+      }
+
+      if (result.length > 0) return result
+    }
+
     // YHQ uchun 20 talik, qolgan barcha fanlar uchun 30 talik biletlar (fallback)
     const ticketSize = subjectId === 'yhq' ? TICKET_SIZE_YHQ : TICKET_SIZE_OTHER
     const shuffled = seededShuffle(questions, 42)
@@ -182,7 +261,7 @@ export default function Biletlar() {
   }, [tabFiltered])
 
   const filtered = useMemo(() => {
-    if (subjectId === 'fizika' && selectedChapter !== 'all') {
+    if ((subjectId === 'fizika' || subjectId === 'ingliz') && selectedChapter !== 'all') {
       return tabFiltered.filter((t) => t.chapterId === selectedChapter)
     }
     return tabFiltered
@@ -225,9 +304,9 @@ export default function Biletlar() {
         ))}
       </div>
 
-      {subjectId === 'fizika' && topics.length > 0 && (
+      {(subjectId === 'fizika' || subjectId === 'ingliz') && topics.length > 0 && (
         <div className="flex gap-1.5 overflow-x-auto no-scrollbar pb-2 mb-3 -mx-4 px-4">
-          {PHYSICS_CHAPTERS.map((ch) => {
+          {(subjectId === 'fizika' ? PHYSICS_CHAPTERS : ENGLISH_LEVELS).map((ch) => {
             const isSelected = selectedChapter === ch.id
             const count = chapterCounts[ch.id] ?? 0
             if (ch.id !== 'all' && count === 0 && tab === 'errors') return null

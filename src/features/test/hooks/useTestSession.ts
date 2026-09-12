@@ -1,5 +1,6 @@
 import { useMemo, useEffect, useRef } from 'react'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
+import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { makeSessionKey, isResumable, deduplicateQuestions } from '../../../shared/lib/test-session'
 import { shuffleArray } from '../../../shared/lib/seeded'
 import { resolveExamMode } from '../../../../shared/exam-presets'
@@ -143,7 +144,25 @@ export function useTestSession(params: UseTestSessionParams) {
       const idSet = new Set(questionIds)
       result = questions.filter((q) => idSet.has(q.id))
     } else {
-      const uniquePool = deduplicateQuestions(questions)
+      let eligibleQuestions = questions
+      if (subjectId === 'ingliz') {
+        const topics = useQuestionsStore.getState().topics
+        const preA1TopicIds = new Set(
+          topics
+            .filter((t) => t.slug?.includes('kids') || t.nameUz?.startsWith('[Pre-A1]'))
+            .map((t) => t.id)
+        )
+        if (preA1TopicIds.size > 0) {
+          const filtered = questions.filter(
+            (q) => q.topicId == null || !preA1TopicIds.has(q.topicId)
+          )
+          if (filtered.length > 0) {
+            eligibleQuestions = filtered
+          }
+        }
+      }
+
+      const uniquePool = deduplicateQuestions(eligibleQuestions)
       const shuffled = () => [...uniquePool].sort(() => Math.random() - 0.5)
       if (examPreset) {
         result = shuffled().slice(0, Math.min(examPreset.questionCount, uniquePool.length))
@@ -161,7 +180,7 @@ export function useTestSession(params: UseTestSessionParams) {
             result = numeric.length > 0 ? numeric : uniquePool
             break
           }
-          default:         result = questions
+          default:         result = eligibleQuestions
         }
       }
     }

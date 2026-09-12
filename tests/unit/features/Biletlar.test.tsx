@@ -250,4 +250,44 @@ describe('Biletlar', () => {
       mode: 'ticket', serverSelector: { type: 'ticket', ticketNumber: 1 },
     })
   })
+
+  it("ingliz tili: darajalar bo'yicha biletlar va filtrlash to'g'ri ishlaydi", () => {
+    useSubjectStore.setState({ subjectId: 'ingliz' })
+
+    const mockTopics = [
+      { id: 201, nameUz: '[Pre-A1] Greetings', nameRu: '[Pre-A1] Greetings', slug: 'english_db-ing_kids_m1' },
+      { id: 202, nameUz: '[A1] To be', nameRu: '[A1] To be', slug: 'english_db-ing_a1_m1' },
+      { id: 203, nameUz: '[B1] Present Perfect', nameRu: '[B1] Present Perfect', slug: 'english_db-ing_b1_m1' },
+    ] as never[]
+
+    const topicQuestions = [
+      { id: 1, topicId: 201, questionUz: 'Hi', questionRu: 'Hi', optionsUz: { A1: 'Hello' }, optionsRu: { A1: 'Hello' }, correctAnswer: 'A1' },
+      { id: 2, topicId: 202, questionUz: 'I ___', questionRu: 'I ___', optionsUz: { A1: 'am' }, optionsRu: { A1: 'am' }, correctAnswer: 'A1' },
+      { id: 3, topicId: 203, questionUz: 'She has ___', questionRu: 'She has ___', optionsUz: { A1: 'gone' }, optionsRu: { A1: 'gone' }, correctAnswer: 'A1' },
+    ] as never[]
+
+    useQuestionsStore.setState({
+      questions: topicQuestions,
+      topics: mockTopics,
+      loaded: true,
+      loading: false,
+    })
+
+    render(<Biletlar />)
+
+    expect(screen.getByText('[Pre-A1] Greetings')).toBeInTheDocument()
+    expect(screen.getByText('[A1] To be')).toBeInTheDocument()
+    expect(screen.getByText('[B1] Present Perfect')).toBeInTheDocument()
+
+    // Level filterlar
+    const preA1Filter = screen.getByRole('button', { name: /^Pre-A1/i })
+    const b1Filter = screen.getByRole('button', { name: /^B1/i })
+    expect(preA1Filter).toBeInTheDocument()
+    expect(b1Filter).toBeInTheDocument()
+
+    // B1 ni tanlaganda faqat B1 bileti ko'rinadi
+    fireEvent.click(b1Filter)
+    expect(screen.getByText('[B1] Present Perfect')).toBeInTheDocument()
+    expect(screen.queryByText('[Pre-A1] Greetings')).toBeNull()
+  })
 })

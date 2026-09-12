@@ -17,6 +17,7 @@ const SUBJECT_LIST = [
   { folder: 'geografiya', bankId: 'geography_db', bankName: 'Geografiya savollar bazasi' },
   { folder: 'onatili', bankId: 'onatili_db', bankName: 'Ona tili savollar bazasi' },
   { folder: 'adabiyot', bankId: 'adabiyot_db', bankName: 'Adabiyot savollar bazasi' },
+  { folder: 'ingliz', bankId: 'english_db', bankName: 'Ingliz tili savollar bazasi' },
 ];
 
 const CHUNK_SIZE = 500;

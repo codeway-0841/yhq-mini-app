@@ -23,7 +23,7 @@ describe('Onboarding component flow', () => {
     // Step 1: Subject Selection
     expect(screen.getByText(/Qaysi/i)).toBeInTheDocument()
     expect(screen.getByText('Bitta asosiy faningizni tanlang')).toBeInTheDocument()
-    expect(screen.getAllByRole('button').filter((button) => button.hasAttribute('disabled')).length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('button').length).toBeGreaterThan(0)
     const continueBtn = screen.getByRole('button', { name: /Davom etish/i })
     fireEvent.click(continueBtn)
 

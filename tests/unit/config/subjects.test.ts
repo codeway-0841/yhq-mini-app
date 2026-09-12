@@ -56,7 +56,7 @@ describe('shared/subjects — data integrity', () => {
     expect(byId['fizika']).toBe(true)       // Fizika Test Print banki
     expect(byId['matematika']).toBe(true)   // Matematika Test Print banki
     expect(byId['kimyo']).toBe(true)        // Kimyo banki
-    expect(byId['ingliz']).toBe(false)      // Ingliz tili (hali tayyorlanmoqda)
+    expect(byId['ingliz']).toBe(true)       // Ingliz tili banki
     expect(byId['tarix']).toBe(true)        // Tarix banki
     expect(byId['biologiya']).toBe(true)    // Biologiya banki
     expect(byId['geografiya']).toBe(true)   // Geografiya banki
