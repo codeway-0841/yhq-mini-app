@@ -11,7 +11,12 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
 import { compressImageFile } from '../../shared/lib/image-compress'
-import { CAMERA_START_GRACE_MS, captureVideoFrame } from '../../shared/lib/camera-capture'
+import {
+  CAMERA_START_GRACE_MS,
+  captureVideoFrame,
+  isCameraPermissionError,
+  queryCameraPermission,
+} from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { haptics } from '../../platform/haptics'
@@ -45,7 +50,7 @@ interface SolvedItem {
 }
 
 const LOCAL_HISTORY_KEY = 'kivvi_snap_history'
-type CameraState = 'loading' | 'active' | 'denied' | 'unsupported' | 'error'
+type CameraState = 'checking' | 'prompt' | 'loading' | 'active' | 'denied' | 'unsupported' | 'error'
 
 export default function SnapSolveHub() {
   const navigate = useNavigate()
@@ -62,7 +67,7 @@ export default function SnapSolveHub() {
   const [history, setHistory] = useState<SolvedItem[]>([])
 
   // Camera stream & controls
-  const [cameraState, setCameraState] = useState<CameraState>('loading')
+  const [cameraState, setCameraState] = useState<CameraState>('checking')
   const [cameraErrorMessage, setCameraErrorMessage] = useState<string | null>(null)
   const [facingMode, setFacingMode] = useState<'environment' | 'user'>('environment')
   const [isTorchOn, setIsTorchOn] = useState(false)
@@ -98,6 +103,15 @@ export default function SnapSolveHub() {
     setIsTorchOn(false)
     setTorchMode(null)
   }, [])
+
+  const showCameraDenied = useCallback(() => {
+    setCameraState('denied')
+    setCameraErrorMessage(
+      language === 'ru'
+        ? 'Разрешите доступ к камере в настройках браузера или приложения'
+        : 'Kameraga ruxsat berilmagan. Brauzer yoki ilova sozlamalarida ruxsat bering'
+    )
+  }, [language])
 
   // Start camera stream with multi-level fallback cascade
   const startCamera = useCallback(async (forcedFacing?: 'environment' | 'user') => {
@@ -151,7 +165,7 @@ export default function SnapSolveHub() {
     }
 
     // Cascade 2: Target facing mode simple
-    if (!stream) {
+    if (!stream && !isCameraPermissionError(lastError)) {
       try {
         stream = await navigator.mediaDevices.getUserMedia({
           video: { facingMode: targetFacing },
@@ -164,7 +178,7 @@ export default function SnapSolveHub() {
     }
 
     // Cascade 3: Enumerate devices to locate matching back/rear camera
-    if (!stream && targetFacing === 'environment') {
+    if (!stream && !isCameraPermissionError(lastError) && targetFacing === 'environment') {
       try {
         const devices = await navigator.mediaDevices.enumerateDevices()
         const videoDevices = devices.filter((d) => d.kind === 'videoinput')
@@ -184,7 +198,7 @@ export default function SnapSolveHub() {
     }
 
     // Cascade 4: Any video stream
-    if (!stream) {
+    if (!stream && !isCameraPermissionError(lastError)) {
       try {
         stream = await navigator.mediaDevices.getUserMedia({
           video: true,
@@ -200,13 +214,8 @@ export default function SnapSolveHub() {
       clearTimeout(loadingTimer)
       if (cameraRequestIdRef.current !== requestId) return
       const errName = lastError?.name || ''
-      if (errName === 'NotAllowedError' || errName === 'PermissionDeniedError') {
-        setCameraState('denied')
-        setCameraErrorMessage(
-          language === 'ru'
-            ? 'Разрешите доступ к камере в настройках браузера или приложения'
-            : 'Kameraga ruxsat berilmagan. Brauzer yoki ilova sozlamalarida ruxsat bering'
-        )
+      if (isCameraPermissionError(lastError)) {
+        showCameraDenied()
       } else if (errName === 'NotFoundError' || errName === 'DevicesNotFoundError') {
         setCameraState('unsupported')
         setCameraErrorMessage(
@@ -268,20 +277,36 @@ export default function SnapSolveHub() {
     } else {
       setCameraState('active')
     }
-  }, [facingMode, language])
+  }, [facingMode, language, showCameraDenied])
 
-  // Auto-start camera on mount, stop when photo selected/solved
+  // Auto-start only when permission is already granted. Prompting is user-initiated.
   useEffect(() => {
-    if (!selectedImage && !currentSolution) {
-      void startCamera()
-    } else {
+    if (selectedImage || currentSolution) {
       stopCamera()
+      return
     }
+
+    let cancelled = false
+    setCameraState('checking')
+    setCameraErrorMessage(null)
+
+    void queryCameraPermission().then((permission) => {
+      if (cancelled) return
+      if (permission === 'granted') {
+        void startCamera()
+      } else if (permission === 'denied') {
+        showCameraDenied()
+      } else {
+        setCameraState('prompt')
+      }
+    })
+
     return () => {
+      cancelled = true
       stopCamera()
       if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
     }
-  }, [selectedImage, currentSolution, startCamera, stopCamera])
+  }, [selectedImage, currentSolution, startCamera, stopCamera, showCameraDenied])
 
   // Kvota va tarixni yuklash
   useEffect(() => {
@@ -628,7 +653,7 @@ export default function SnapSolveHub() {
         )}
 
         {/* Loading HUD: Camera initializing or permission pending */}
-        {cameraState === 'loading' && !selectedImage && !currentSolution && (
+        {(cameraState === 'checking' || cameraState === 'loading') && !selectedImage && !currentSolution && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/80 p-6 text-center animate-in fade-in duration-200">
             <div className="relative flex size-20 items-center justify-center mb-4">
               <div className="absolute inset-0 rounded-full border-2 border-rose-500/40 animate-ping" />
@@ -641,10 +666,40 @@ export default function SnapSolveHub() {
             </h2>
             <p className="text-xs text-white/70 max-w-xs mb-5">
               {language === 'ru'
-                ? 'Подтвердите доступ к камере или нажмите кнопку ниже'
-                : 'Iltimos, kamera ruxsatini tasdiqlang yoki tugmani bosing'}
+                ? cameraState === 'checking'
+                  ? 'Проверяем разрешение камеры...'
+                  : 'Камера запускается...'
+                : cameraState === 'checking'
+                  ? 'Kamera ruxsati tekshirilmoqda...'
+                  : 'Kamera ishga tushmoqda...'}
             </p>
             <div className="flex gap-2.5">
+              <button
+                type="button"
+                onClick={() => galleryInputRef.current?.click()}
+                className="px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-semibold backdrop-blur-md transition-all active:scale-95"
+              >
+                {language === 'ru' ? 'Выбрать фото' : 'Rasm tanlash'}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Permission prompt is intentionally user-initiated to avoid repeated WebView popups. */}
+        {cameraState === 'prompt' && !selectedImage && !currentSolution && (
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/92 p-6 text-center animate-in fade-in duration-200">
+            <div className="flex size-16 items-center justify-center rounded-3xl bg-white/10 text-white mb-3 backdrop-blur-md border border-white/10 shadow-lg">
+              <Camera size={32} strokeWidth={1.75} className="text-rose-400" />
+            </div>
+            <h2 className="text-base font-semibold text-white mb-1.5">
+              {language === 'ru' ? 'Включить камеру?' : 'Kamerani yoqasizmi?'}
+            </h2>
+            <p className="text-xs text-white/70 max-w-xs mb-5 leading-relaxed">
+              {language === 'ru'
+                ? 'Разрешение будет запрошено только после нажатия кнопки'
+                : 'Kamera ruxsati faqat tugmani bosganingizdan keyin so‘raladi'}
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-2.5">
               <button
                 type="button"
                 onClick={() => void startCamera()}

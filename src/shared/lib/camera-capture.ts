@@ -1,10 +1,33 @@
 export const CAMERA_START_GRACE_MS = 12_000
 
+export type CameraPermissionState = PermissionState | 'unknown'
+
 export type CapturedVideoFrame = {
   dataUrl: string
   mimeType: 'image/jpeg'
   width: number
   height: number
+}
+
+export async function queryCameraPermission(
+  permissions: Pick<Permissions, 'query'> | undefined =
+    typeof navigator === 'undefined' ? undefined : navigator.permissions,
+): Promise<CameraPermissionState> {
+  if (!permissions) return 'unknown'
+
+  try {
+    const status = await permissions.query({ name: 'camera' as PermissionName })
+    return status.state
+  } catch {
+    // Some WebViews do not expose camera through Permissions API.
+    return 'unknown'
+  }
+}
+
+export function isCameraPermissionError(error: unknown): boolean {
+  if (!error || typeof error !== 'object' || !('name' in error)) return false
+  const name = String((error as { name?: unknown }).name || '')
+  return name === 'NotAllowedError' || name === 'PermissionDeniedError' || name === 'SecurityError'
 }
 
 export function isVideoFrameReady(video: HTMLVideoElement): boolean {

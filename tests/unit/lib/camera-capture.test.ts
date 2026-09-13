@@ -1,5 +1,10 @@
 import { describe, expect, it, vi, afterEach } from 'vitest'
-import { captureVideoFrame, isVideoFrameReady } from '../../../src/shared/lib/camera-capture'
+import {
+  captureVideoFrame,
+  isCameraPermissionError,
+  isVideoFrameReady,
+  queryCameraPermission,
+} from '../../../src/shared/lib/camera-capture'
 
 function makeVideo(width: number, height: number, readyState = HTMLMediaElement.HAVE_CURRENT_DATA) {
   const video = document.createElement('video')
@@ -49,5 +54,21 @@ describe('camera-capture helpers', () => {
     })
     expect(drawImage).toHaveBeenCalledOnce()
     expect(toDataURL).toHaveBeenCalledWith('image/jpeg', 0.75)
+  })
+
+  it('reads permission state without failing on unsupported WebViews', async () => {
+    await expect(queryCameraPermission({
+      query: vi.fn().mockResolvedValue({ state: 'granted' }),
+    })).resolves.toBe('granted')
+
+    await expect(queryCameraPermission({
+      query: vi.fn().mockRejectedValue(new TypeError('unsupported')),
+    })).resolves.toBe('unknown')
+  })
+
+  it('classifies permission-policy and user-denial errors as terminal', () => {
+    expect(isCameraPermissionError({ name: 'NotAllowedError' })).toBe(true)
+    expect(isCameraPermissionError({ name: 'SecurityError' })).toBe(true)
+    expect(isCameraPermissionError({ name: 'NotReadableError' })).toBe(false)
   })
 })
