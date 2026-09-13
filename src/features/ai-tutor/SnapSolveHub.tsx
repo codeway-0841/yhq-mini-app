@@ -4,6 +4,7 @@ import {
   Camera, Image as ImageIcon, ChevronLeft, Loader2,
   RefreshCw, MessageSquareQuote, Crown, BookOpen,
   History, Scan, Flashlight, Calculator, X, Sparkles, AlertCircle,
+  FlipHorizontal,
 } from 'lucide-react'
 import { api, ApiError, type TutorQuota } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -59,10 +60,12 @@ export default function SnapSolveHub() {
   const [history, setHistory] = useState<SolvedItem[]>([])
 
   // Camera stream & controls
-  const [cameraActive, setCameraActive] = useState(false)
-  const [cameraError, setCameraError] = useState<'permission_denied' | 'no_camera' | null>(null)
+  const [cameraState, setCameraState] = useState<'loading' | 'active' | 'denied' | 'unsupported' | 'error'>('loading')
+  const [cameraErrorMessage, setCameraErrorMessage] = useState<string | null>(null)
+  const [facingMode, setFacingMode] = useState<'environment' | 'user'>('environment')
   const [isTorchOn, setIsTorchOn] = useState(false)
-  const [_hasTorch, setHasTorch] = useState(false)
+  const [torchMode, setTorchMode] = useState<'hardware' | 'screen' | null>(null)
+  const [torchToast, setTorchToast] = useState<string | null>(null)
 
   // Modals & inputs
   const [isChatOpen, setIsChatOpen] = useState(false)
@@ -75,54 +78,170 @@ export default function SnapSolveHub() {
   const cameraInputRef = useRef<HTMLInputElement | null>(null)
   const galleryInputRef = useRef<HTMLInputElement | null>(null)
   const subjectScrollRef = useRef<HTMLDivElement | null>(null)
-
-  // Start camera stream
-  const startCamera = useCallback(async () => {
-    try {
-      if (!navigator?.mediaDevices?.getUserMedia) {
-        setCameraError('no_camera')
-        return
-      }
-      if (streamRef.current) {
-        streamRef.current.getTracks().forEach((t) => t.stop())
-        streamRef.current = null
-      }
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: {
-          facingMode: { ideal: 'environment' },
-          width: { ideal: 1920 },
-          height: { ideal: 1080 },
-        },
-        audio: false,
-      })
-      streamRef.current = stream
-      if (videoRef.current) {
-        videoRef.current.srcObject = stream
-        await videoRef.current.play().catch(() => {})
-      }
-      setCameraActive(true)
-      setCameraError(null)
-
-      const track = stream.getVideoTracks()[0]
-      const capabilities = (track?.getCapabilities?.() ?? {}) as { torch?: boolean }
-      if (capabilities.torch) {
-        setHasTorch(true)
-      }
-    } catch (err) {
-      console.warn('[Camera] access error:', err)
-      setCameraError('permission_denied')
-      setCameraActive(false)
-    }
-  }, [])
+  const torchToastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const stopCamera = useCallback(() => {
     if (streamRef.current) {
       streamRef.current.getTracks().forEach((t) => t.stop())
       streamRef.current = null
     }
-    setCameraActive(false)
+    if (videoRef.current) {
+      videoRef.current.srcObject = null
+    }
+    setCameraState('loading')
     setIsTorchOn(false)
+    setTorchMode(null)
   }, [])
+
+  // Start camera stream with multi-level fallback cascade
+  const startCamera = useCallback(async (forcedFacing?: 'environment' | 'user') => {
+    const targetFacing = forcedFacing || facingMode
+    setCameraState('loading')
+    setCameraErrorMessage(null)
+
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((t) => t.stop())
+      streamRef.current = null
+    }
+
+    if (!navigator?.mediaDevices?.getUserMedia) {
+      setCameraState('unsupported')
+      setCameraErrorMessage(
+        language === 'ru'
+          ? 'Камера не поддерживается в этом браузере'
+          : 'Ushbu brauzerda kamera qo‘llab-quvvatlanmaydi'
+      )
+      return
+    }
+
+    let stream: MediaStream | null = null
+    let lastError: any = null
+
+    // Cascade 1: Target facing with standard mobile dimensions
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          facingMode: { ideal: targetFacing },
+          width: { ideal: 1280 },
+          height: { ideal: 720 },
+        },
+        audio: false,
+      })
+    } catch (e1: any) {
+      lastError = e1
+      console.warn('[Camera] Level 1 (ideal 1280x720) failed:', e1?.name)
+    }
+
+    // Cascade 2: Target facing mode simple
+    if (!stream) {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: targetFacing },
+          audio: false,
+        })
+      } catch (e2: any) {
+        lastError = e2
+        console.warn('[Camera] Level 2 (facingMode simple) failed:', e2?.name)
+      }
+    }
+
+    // Cascade 3: Enumerate devices to locate matching back/rear camera
+    if (!stream && targetFacing === 'environment') {
+      try {
+        const devices = await navigator.mediaDevices.enumerateDevices()
+        const videoDevices = devices.filter((d) => d.kind === 'videoinput')
+        const backCamera = videoDevices.find((d) =>
+          /back|rear|environment|arka|orqa|main/i.test(d.label)
+        )
+        if (backCamera) {
+          stream = await navigator.mediaDevices.getUserMedia({
+            video: { deviceId: { exact: backCamera.deviceId } },
+            audio: false,
+          })
+        }
+      } catch (e3: any) {
+        lastError = e3
+        console.warn('[Camera] Level 3 (enumerate back device) failed:', e3?.name)
+      }
+    }
+
+    // Cascade 4: Any video stream
+    if (!stream) {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: false,
+        })
+      } catch (e4: any) {
+        lastError = e4
+        console.warn('[Camera] Level 4 (video: true) failed:', e4?.name)
+      }
+    }
+
+    if (!stream) {
+      const errName = lastError?.name || ''
+      if (errName === 'NotAllowedError' || errName === 'PermissionDeniedError') {
+        setCameraState('denied')
+        setCameraErrorMessage(
+          language === 'ru'
+            ? 'Разрешите доступ к камере в настройках браузера или приложения'
+            : 'Kameraga ruxsat berilmagan. Brauzer yoki ilova sozlamalarida ruxsat bering'
+        )
+      } else if (errName === 'NotFoundError' || errName === 'DevicesNotFoundError') {
+        setCameraState('unsupported')
+        setCameraErrorMessage(
+          language === 'ru'
+            ? 'Камера не найдена на этом устройстве'
+            : 'Ushbu qurilmada kamera topilmadi'
+        )
+      } else if (errName === 'NotReadableError' || errName === 'TrackStartError') {
+        setCameraState('error')
+        setCameraErrorMessage(
+          language === 'ru'
+            ? 'Камера занята другим приложением. Закройте его и повторите попытку'
+            : 'Kamera boshqa ilova tomonidan band qilingan. Uni yopib qayta urining'
+        )
+      } else {
+        setCameraState('error')
+        setCameraErrorMessage(
+          language === 'ru'
+            ? 'Не удалось запустить камеру'
+            : 'Kamerani ishga tushirib bo‘lmadi'
+        )
+      }
+      return
+    }
+
+    streamRef.current = stream
+
+    // Attach stream to video element
+    const video = videoRef.current
+    if (video) {
+      video.muted = true
+      video.defaultMuted = true
+      video.playsInline = true
+      video.setAttribute('playsinline', 'true')
+      video.setAttribute('webkit-playsinline', 'true')
+      video.srcObject = stream
+
+      const markActive = () => {
+        setCameraState('active')
+        setCameraErrorMessage(null)
+      }
+
+      video.onloadedmetadata = () => {
+        video.play().then(markActive).catch((playErr) => {
+          console.warn('[Camera] play on metadata error:', playErr)
+        })
+      }
+
+      video.play().then(markActive).catch((playErr) => {
+        console.warn('[Camera] initial play error:', playErr)
+      })
+    } else {
+      setCameraState('active')
+    }
+  }, [facingMode, language])
 
   // Auto-start camera on mount, stop when photo selected/solved
   useEffect(() => {
@@ -131,7 +250,10 @@ export default function SnapSolveHub() {
     } else {
       stopCamera()
     }
-    return () => stopCamera()
+    return () => {
+      stopCamera()
+      if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
+    }
   }, [selectedImage, currentSolution, startCamera, stopCamera])
 
   // Kvota va tarixni yuklash
@@ -196,9 +318,9 @@ export default function SnapSolveHub() {
     }
   }
 
-  // Handle capture from video stream
+  // Handle capture from video stream or native camera fallback
   const handleShutterClick = () => {
-    if (cameraActive && videoRef.current) {
+    if (cameraState === 'active' && videoRef.current) {
       haptics.impact('medium')
       playSound('click')
       const video = videoRef.current
@@ -215,8 +337,56 @@ export default function SnapSolveHub() {
         void runSolve(base64, 'image/jpeg')
       }
     } else {
+      // Native system camera capture
       cameraInputRef.current?.click()
     }
+  }
+
+  // Camera flip (front/back)
+  const toggleFacingMode = () => {
+    haptics.impact('light')
+    const nextFacing = facingMode === 'environment' ? 'user' : 'environment'
+    setFacingMode(nextFacing)
+    void startCamera(nextFacing)
+  }
+
+  // Dual-mode torch (hardware LED + screen softbox light fallback)
+  const toggleTorch = async () => {
+    haptics.selection()
+    const next = !isTorchOn
+    const track = streamRef.current?.getVideoTracks()[0]
+    let hardwareWorked = false
+
+    if (track && typeof track.applyConstraints === 'function') {
+      try {
+        await (track as any).applyConstraints({
+          advanced: [{ torch: next }],
+        })
+        hardwareWorked = true
+      } catch (err) {
+        console.warn('[Torch] Hardware applyConstraints failed:', err)
+      }
+    }
+
+    if (next) {
+      setIsTorchOn(true)
+      if (hardwareWorked) {
+        setTorchMode('hardware')
+        setTorchToast(language === 'ru' ? 'Фонарик включен' : 'Chiroq yoqildi')
+      } else {
+        setTorchMode('screen')
+        setTorchToast(language === 'ru' ? 'Подсветка экрана включена' : 'Ekran chirog‘i yoqildi')
+      }
+    } else {
+      setIsTorchOn(false)
+      setTorchMode(null)
+      setTorchToast(language === 'ru' ? 'Фонарик выключен' : 'Chiroq o‘chirildi')
+    }
+
+    if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
+    torchToastTimerRef.current = setTimeout(() => {
+      setTorchToast(null)
+    }, 2400)
   }
 
   // Rasm tanlanganda siqish va zudlik bilan yechish
@@ -234,22 +404,6 @@ export default function SnapSolveHub() {
       setErrorMessage(err instanceof Error ? err.message : "Rasmni tayyorlashda xatolik")
     } finally {
       setIsCompressing(false)
-    }
-  }
-
-  // Fonar (chiroq) almashtirish
-  const toggleTorch = async () => {
-    const track = streamRef.current?.getVideoTracks()[0]
-    if (!track) return
-    try {
-      const next = !isTorchOn
-      await (track as any).applyConstraints({
-        advanced: [{ torch: next }],
-      })
-      setIsTorchOn(next)
-      haptics.selection()
-    } catch (e) {
-      console.warn('[Torch] toggle failed:', e)
     }
   }
 
@@ -358,8 +512,17 @@ export default function SnapSolveHub() {
           )}
         </div>
 
-        {/* Right Top Actions: History & Calculator */}
-        <div className="flex items-center gap-2">
+        {/* Right Top Actions: Camera Flip, History & Calculator */}
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={toggleFacingMode}
+            aria-label="Kamerani almashtirish"
+            className="flex size-10 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-md border border-white/15 shadow-sm transition-all active:scale-90 hover:bg-black/60"
+          >
+            <FlipHorizontal size={18} strokeWidth={2} />
+          </button>
+
           {history.length > 0 && (
             <button
               type="button"
@@ -384,17 +547,43 @@ export default function SnapSolveHub() {
 
       {/* ── MAIN VIEWFINDER / CAMERA STREAM ───────────────────────── */}
       <div className="relative flex-1 w-full overflow-hidden flex items-center justify-center bg-black">
+        {/* Torch status notification toast */}
+        {torchToast && (
+          <div className="pointer-events-none absolute top-4 inset-x-0 flex justify-center z-40 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="px-3.5 py-1.5 rounded-full bg-black/80 backdrop-blur-md border border-white/20 text-white text-xs font-medium shadow-xl flex items-center gap-2">
+              <Flashlight
+                size={14}
+                className={isTorchOn ? 'text-amber-400 fill-amber-400' : 'text-white'}
+              />
+              <span>{torchToast}</span>
+            </div>
+          </div>
+        )}
+
         {/* Video stream */}
         <video
           ref={videoRef}
           autoPlay
           playsInline
           muted
+          onLoadedMetadata={() => {
+            if (videoRef.current) {
+              videoRef.current.play().then(() => setCameraState('active')).catch(() => {})
+            }
+          }}
+          onPlaying={() => {
+            setCameraState('active')
+          }}
           className="absolute inset-0 w-full h-full object-cover"
         />
 
+        {/* Screen Torch (Ekran Chirog'i) Softbox Lighting Frame */}
+        {isTorchOn && torchMode === 'screen' && !selectedImage && !currentSolution && (
+          <div className="pointer-events-none absolute inset-0 z-20 border-[16px] sm:border-[24px] border-white/95 shadow-[inset_0_0_90px_rgba(255,255,255,1),0_0_70px_rgba(255,255,255,0.85)] animate-in fade-in duration-200" />
+        )}
+
         {/* Center subtle crosshair from screenshot */}
-        {!selectedImage && !currentSolution && (
+        {!selectedImage && !currentSolution && cameraState === 'active' && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
             <div className="relative flex items-center justify-center">
               <div className="h-6 w-[2px] bg-white/80 rounded-full shadow-sm" />
@@ -403,42 +592,84 @@ export default function SnapSolveHub() {
           </div>
         )}
 
-        {/* Fallback if camera not permitted / not active */}
-        {(!cameraActive || cameraError) && !selectedImage && !currentSolution && (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/90 p-6 text-center">
-            <div className="flex size-16 items-center justify-center rounded-3xl bg-white/10 text-white mb-3 backdrop-blur-md">
-              <Camera size={32} strokeWidth={1.75} />
+        {/* Loading HUD: Camera initializing or permission pending */}
+        {cameraState === 'loading' && !selectedImage && !currentSolution && (
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/80 p-6 text-center animate-in fade-in duration-200">
+            <div className="relative flex size-20 items-center justify-center mb-4">
+              <div className="absolute inset-0 rounded-full border-2 border-rose-500/40 animate-ping" />
+              <div className="flex size-14 items-center justify-center rounded-2xl bg-white/10 text-white backdrop-blur-md border border-white/15 shadow-xl">
+                <Camera size={28} className="animate-pulse text-rose-400" />
+              </div>
             </div>
             <h2 className="text-base font-semibold text-white mb-1">
-              {language === 'ru' ? 'Камера не активна' : 'Kamera faol emas'}
+              {language === 'ru' ? 'Подключение камеры...' : 'Kamera ishga tushmoqda...'}
             </h2>
-            <p className="text-xs text-white/70 max-w-xs mb-4">
-              {cameraError === 'permission_denied'
-                ? language === 'ru'
-                  ? 'Разрешите доступ к камере или выберите фото из галереи'
-                  : 'Kameraga ruxsat bering yoki galereyadan rasm tanlang'
-                : language === 'ru'
-                  ? 'Выберите фото задачи из галереи'
-                  : 'Galereyadan masala rasmini tanlang'}
+            <p className="text-xs text-white/70 max-w-xs mb-5">
+              {language === 'ru'
+                ? 'Подтвердите доступ к камере или нажмите кнопку ниже'
+                : 'Iltimos, kamera ruxsatini tasdiqlang yoki tugmani bosing'}
             </p>
             <div className="flex gap-2.5">
               <button
                 type="button"
                 onClick={() => void startCamera()}
-                className="px-4 py-2 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-semibold backdrop-blur-md transition-all active:scale-95"
+                className="px-4 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white text-xs font-semibold shadow-lg shadow-rose-500/30 transition-all active:scale-95"
               >
-                {language === 'ru' ? 'Повторить' : 'Qayta urinish'}
+                {language === 'ru' ? 'Включить камеру' : 'Kamerani yoqish'}
               </button>
               <button
                 type="button"
                 onClick={() => galleryInputRef.current?.click()}
-                className="px-4 py-2 rounded-xl bg-rose-500 hover:bg-rose-600 text-white text-xs font-semibold transition-all active:scale-95"
+                className="px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-semibold backdrop-blur-md transition-all active:scale-95"
               >
                 {language === 'ru' ? 'Выбрать фото' : 'Rasm tanlash'}
               </button>
             </div>
           </div>
         )}
+
+        {/* Fallback if camera denied / unsupported / error */}
+        {(cameraState === 'denied' || cameraState === 'unsupported' || cameraState === 'error') &&
+          !selectedImage &&
+          !currentSolution && (
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/92 p-6 text-center animate-in fade-in duration-200">
+              <div className="flex size-16 items-center justify-center rounded-3xl bg-white/10 text-white mb-3 backdrop-blur-md border border-white/10 shadow-lg">
+                <Camera size={32} strokeWidth={1.75} className="text-rose-400" />
+              </div>
+              <h2 className="text-base font-semibold text-white mb-1.5">
+                {language === 'ru' ? 'Камера не доступна' : 'Kamera faol emas'}
+              </h2>
+              <p className="text-xs text-white/70 max-w-xs mb-5 leading-relaxed">
+                {cameraErrorMessage ||
+                  (language === 'ru'
+                    ? 'Разрешите доступ к камере или выберите фото из галереи'
+                    : 'Kameraga ruxsat bering yoki galereyadan rasm tanlang')}
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => void startCamera()}
+                  className="px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-semibold backdrop-blur-md transition-all active:scale-95"
+                >
+                  {language === 'ru' ? 'Повторить' : 'Qayta urinish'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => cameraInputRef.current?.click()}
+                  className="px-4 py-2.5 rounded-xl bg-rose-500 hover:bg-rose-600 text-white text-xs font-semibold shadow-lg shadow-rose-500/30 transition-all active:scale-95"
+                >
+                  {language === 'ru' ? 'Снять на камеру' : 'Tizim kamerasidan olish'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => galleryInputRef.current?.click()}
+                  className="px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-semibold backdrop-blur-md transition-all active:scale-95"
+                >
+                  {language === 'ru' ? 'Выбрать фото' : 'Rasm tanlash'}
+                </button>
+              </div>
+            </div>
+          )}
 
         {/* Scanning animation while solving */}
         {isSolving && (
@@ -655,11 +886,15 @@ export default function SnapSolveHub() {
               aria-label="Chiroq"
               className={`flex size-12 items-center justify-center rounded-full backdrop-blur-md border transition-all active:scale-90 ${
                 isTorchOn
-                  ? 'bg-amber-400 text-slate-900 border-amber-300 shadow-md shadow-amber-400/40'
+                  ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-lg shadow-amber-400/50 scale-105'
                   : 'bg-black/50 text-white border-white/20 shadow-lg hover:bg-black/70'
               }`}
             >
-              <Flashlight size={22} strokeWidth={1.9} />
+              <Flashlight
+                size={22}
+                strokeWidth={1.9}
+                className={isTorchOn ? 'fill-slate-950 text-slate-950' : ''}
+              />
             </button>
           </div>
         </div>
