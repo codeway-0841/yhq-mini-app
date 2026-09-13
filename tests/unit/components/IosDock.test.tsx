@@ -33,7 +33,7 @@ describe('IosDock component', () => {
     expect(screen.getByText('Testlar')).toBeInTheDocument()
     expect(screen.getByText('AI Yechish')).toBeInTheDocument()
     expect(screen.getByText('Duel')).toBeInTheDocument()
-    expect(screen.getByText('Profil')).toBeInTheDocument()
+    expect(screen.getByText('Menyu')).toBeInTheDocument()
   })
 
   it('marks active tab with aria-current="page"', () => {
@@ -61,6 +61,20 @@ describe('IosDock component', () => {
     fireEvent.click(duelBtn)
 
     expect(mockNavigate).toHaveBeenCalledWith('/octagon')
+    expect(haptics.selection).toHaveBeenCalledTimes(1)
+  })
+
+  it('clicking Menyu tab navigates to /rejimlar and triggers haptic selection', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+
+    const menuBtn = screen.getByRole('button', { name: /Menyu/i })
+    fireEvent.click(menuBtn)
+
+    expect(mockNavigate).toHaveBeenCalledWith('/rejimlar')
     expect(haptics.selection).toHaveBeenCalledTimes(1)
   })
 

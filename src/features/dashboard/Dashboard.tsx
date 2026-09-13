@@ -78,7 +78,6 @@ export default function Dashboard() {
   const { mistakesCount } = useSubjectBadges(subject.id)
 
   const goProfile = useCallback(() => navigate('/profil'), [navigate])
-  const goModes = useCallback(() => navigate('/rejimlar'), [navigate])
 
   return (
     <div className="dashboard-page bg-pcanvas pb-[calc(6.5rem+var(--safe-bottom,0px))]">
@@ -96,9 +95,7 @@ export default function Dashboard() {
       {/* Top bar / Greeting Header */}
       <TopBar user={user} displayName={displayName}
         onSubjects={() => setShowSubjects(true)}
-        onSettings={() => setShowSettings(true)}
-        onProfile={goProfile}
-        onMenu={goModes} />
+        onSettings={() => setShowSettings(true)} onProfile={goProfile} />
 
       {/* Fan mavjud bo'lmasa — empty state; mavjud bo'lsa — to'liq dashboard.
           key=subjectId: fan almashganda smooth fade transition, reload yo'q */}

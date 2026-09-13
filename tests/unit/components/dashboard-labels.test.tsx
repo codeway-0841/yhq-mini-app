@@ -47,17 +47,4 @@ describe('dashboard localized labels', () => {
     fireEvent.click(screen.getByRole('button', { name: `AI Tutor (${label})` }))
     expect(onClick).toHaveBeenCalledOnce()
   })
-
-  it('renders menu button and calls onMenu when clicked', () => {
-    const onMenu = vi.fn()
-    render(
-      <MemoryRouter>
-        <TopBar user={null} displayName="Ali" onSubjects={vi.fn()} onSettings={vi.fn()} onMenu={onMenu} />
-      </MemoryRouter>
-    )
-    const menuBtn = screen.getByRole('button', { name: /Menyu|Меню/i })
-    expect(menuBtn).toBeInTheDocument()
-    fireEvent.click(menuBtn)
-    expect(onMenu).toHaveBeenCalledOnce()
-  })
 })

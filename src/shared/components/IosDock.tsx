@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { Home, BookOpen, Camera, Swords, User } from 'lucide-react'
+import { Home, BookOpen, Camera, Swords, LayoutGrid } from 'lucide-react'
 import { useModalCount } from '../lib/navigation'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
@@ -23,7 +23,7 @@ const HIDDEN_PREFIXES = [
 interface NavItem {
   id: string
   path: string
-  labelKey: 'home' | 'testlarTitle' | 'snapSolveTitle' | 'duelTitle' | 'profile'
+  labelKey: 'home' | 'testlarTitle' | 'snapSolveTitle' | 'duelTitle' | 'menuTitle'
   shortLabel: { uz: string; ru: string }
   icon: typeof Home
   isCenter?: boolean
@@ -70,11 +70,11 @@ export default function IosDock() {
       icon: Swords,
     },
     {
-      id: 'profile',
-      path: '/profil',
-      labelKey: 'profile',
-      shortLabel: { uz: 'Profil', ru: 'Профиль' },
-      icon: User,
+      id: 'modes',
+      path: '/rejimlar',
+      labelKey: 'menuTitle',
+      shortLabel: { uz: 'Menyu', ru: 'Меню' },
+      icon: LayoutGrid,
     },
   ], [])
 
