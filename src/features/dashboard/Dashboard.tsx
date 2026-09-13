@@ -14,7 +14,7 @@ import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import SettingsModal from '../../shared/components/SettingsModal'
 import { TopBar } from './components/TopBar'
-import DynamicIsland from './components/DynamicIsland'
+import DynamicIsland, { SHOW_DYNAMIC_ISLAND } from './components/DynamicIsland'
 import { ProgressCard } from './components/ProgressCard'
 import { LearningGuide } from './components/LearningGuide'
 import { LeaguePreview } from './components/LeaguePreview'
@@ -160,7 +160,7 @@ export default function Dashboard() {
         <SubjectEmpty onSwitch={() => setShowSubjects(true)} />
       )}
 
-      <DynamicIsland />
+      {SHOW_DYNAMIC_ISLAND && <DynamicIsland />}
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
       {showSubjects && <SubjectSheet onClose={() => setShowSubjects(false)} />}
       {milestone !== null && (

@@ -99,6 +99,8 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
  * - Glassmorphism, GPU-accelerated spring animatsiyalar va haptic feedback.
  * - A11y (ARIA dialog, focus management, Escape va Android back navigation).
  */
+export const SHOW_DYNAMIC_ISLAND = false
+
 export default function DynamicIsland() {
   const modalCount = useModalCount()
   const isScrollVisible = useScrollAwareVisibility()
