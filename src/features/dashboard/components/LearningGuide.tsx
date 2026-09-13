@@ -80,11 +80,11 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
 
   return (
     <div className="home-learning-guide px-4 pb-3">
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2.5">
         <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
-          <BookOpen size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('dashboardLearn')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
+          <BookOpen size={20} strokeWidth={1.8} className="text-pmuted" />
+          <span className="mt-1.5 block text-[14.5px] font-bold text-pfg">{tt('dashboardLearn')}</span>
+          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
         </button>
         <button
           type="button"
@@ -92,14 +92,14 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           aria-label={tt('lessons')}
           className={`home-learning-shortcut ${interactive}`}
         >
-          <GraduationCap size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('lessons')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideLessonsShort')}</span>
+          <GraduationCap size={20} strokeWidth={1.8} className="text-pmuted" />
+          <span className="mt-1.5 block text-[14.5px] font-bold text-pfg">{tt('lessons')}</span>
+          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideLessonsShort')}</span>
         </button>
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
-          <Ticket size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('tickets')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideTicketsShort')}</span>
+          <Ticket size={20} strokeWidth={1.8} className="text-pmuted" />
+          <span className="mt-1.5 block text-[14.5px] font-bold text-pfg">{tt('tickets')}</span>
+          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideTicketsShort')}</span>
         </button>
         <button
           type="button"
@@ -107,24 +107,24 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           aria-label={tt('adaptiveTitle')}
           className={`home-learning-shortcut ${interactive}`}
         >
-          <Brain size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('adaptiveTitle')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideAdaptiveShort')}</span>
+          <Brain size={20} strokeWidth={1.8} className="text-pmuted" />
+          <span className="mt-1.5 block text-[14.5px] font-bold text-pfg">{tt('adaptiveTitle')}</span>
+          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideAdaptiveShort')}</span>
         </button>
       </div>
 
-      <section className="home-learning-hero mt-3">
+      <section className="home-learning-hero mt-2.5">
         <div className="home-learning-step">
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
             <div className="min-w-0 flex-1">
-              {contextLabel && <p className="text-[12px] leading-relaxed text-pmuted">{contextLabel}</p>}
-              <h2 className="text-[17px] font-bold leading-snug text-pfg">{title}</h2>
-              {description && <p className="mt-1 text-[12px] leading-relaxed text-pmuted">{description}</p>}
+              {contextLabel && <p className="text-[11.5px] leading-relaxed text-pmuted">{contextLabel}</p>}
+              <h2 className="text-[16px] font-bold leading-snug text-pfg">{title}</h2>
+              {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
             </div>
-            {allComplete && !resume && <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
+            {allComplete && !resume && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
+          <Button block size="lg" className="mt-2.5 whitespace-normal" onClick={start}>
             {actionLabel}
           </Button>
           {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
