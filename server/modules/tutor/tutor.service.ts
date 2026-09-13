@@ -8,16 +8,19 @@ import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 
-// Model fallback ierarxiyasi (3.x va oxirgi Flash modellar)
+// Photo OCR/yechim sifati muhim: avval stable Flash, keyin arzon fallbacklar.
 const VISION_MODELS = [
+  'gemini-3.8-flash',
+  'gemini-3.7-flash',
+  'gemini-3.5-flash',
+  'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
-  'gemini-3-flash-preview',
   'gemini-flash-latest',
 ] as const
 
 const CHAT_MODELS = [
+  'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
-  'gemini-3-flash-preview',
   'gemini-flash-latest',
 ] as const
 

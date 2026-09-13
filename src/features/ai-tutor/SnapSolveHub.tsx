@@ -11,6 +11,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
 import { compressImageFile } from '../../shared/lib/image-compress'
+import { CAMERA_START_GRACE_MS, captureVideoFrame } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { haptics } from '../../platform/haptics'
@@ -44,6 +45,7 @@ interface SolvedItem {
 }
 
 const LOCAL_HISTORY_KEY = 'kivvi_snap_history'
+type CameraState = 'loading' | 'active' | 'denied' | 'unsupported' | 'error'
 
 export default function SnapSolveHub() {
   const navigate = useNavigate()
@@ -60,7 +62,7 @@ export default function SnapSolveHub() {
   const [history, setHistory] = useState<SolvedItem[]>([])
 
   // Camera stream & controls
-  const [cameraState, setCameraState] = useState<'loading' | 'active' | 'denied' | 'unsupported' | 'error'>('loading')
+  const [cameraState, setCameraState] = useState<CameraState>('loading')
   const [cameraErrorMessage, setCameraErrorMessage] = useState<string | null>(null)
   const [facingMode, setFacingMode] = useState<'environment' | 'user'>('environment')
   const [isTorchOn, setIsTorchOn] = useState(false)
@@ -79,16 +81,20 @@ export default function SnapSolveHub() {
   const galleryInputRef = useRef<HTMLInputElement | null>(null)
   const subjectScrollRef = useRef<HTMLDivElement | null>(null)
   const torchToastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const cameraRequestIdRef = useRef(0)
 
-  const stopCamera = useCallback(() => {
+  const stopCamera = useCallback((nextState?: CameraState) => {
+    cameraRequestIdRef.current += 1
     if (streamRef.current) {
       streamRef.current.getTracks().forEach((t) => t.stop())
       streamRef.current = null
     }
     if (videoRef.current) {
+      videoRef.current.onloadedmetadata = null
+      videoRef.current.onplaying = null
       videoRef.current.srcObject = null
     }
-    setCameraState('loading')
+    if (nextState) setCameraState(nextState)
     setIsTorchOn(false)
     setTorchMode(null)
   }, [])
@@ -96,6 +102,8 @@ export default function SnapSolveHub() {
   // Start camera stream with multi-level fallback cascade
   const startCamera = useCallback(async (forcedFacing?: 'environment' | 'user') => {
     const targetFacing = forcedFacing || facingMode
+    const requestId = cameraRequestIdRef.current + 1
+    cameraRequestIdRef.current = requestId
     setCameraState('loading')
     setCameraErrorMessage(null)
 
@@ -105,6 +113,7 @@ export default function SnapSolveHub() {
     }
 
     if (!navigator?.mediaDevices?.getUserMedia) {
+      if (cameraRequestIdRef.current !== requestId) return
       setCameraState('unsupported')
       setCameraErrorMessage(
         language === 'ru'
@@ -116,6 +125,15 @@ export default function SnapSolveHub() {
 
     let stream: MediaStream | null = null
     let lastError: any = null
+    const loadingTimer = setTimeout(() => {
+      if (cameraRequestIdRef.current !== requestId || streamRef.current) return
+      setCameraState('error')
+      setCameraErrorMessage(
+        language === 'ru'
+          ? 'Камера не ответила. Попробуйте системную камеру или выберите фото из галереи'
+          : 'Kamera javob bermadi. Tizim kamerasidan oling yoki galereyadan rasm tanlang'
+      )
+    }, CAMERA_START_GRACE_MS)
 
     // Cascade 1: Target facing with standard mobile dimensions
     try {
@@ -179,6 +197,8 @@ export default function SnapSolveHub() {
     }
 
     if (!stream) {
+      clearTimeout(loadingTimer)
+      if (cameraRequestIdRef.current !== requestId) return
       const errName = lastError?.name || ''
       if (errName === 'NotAllowedError' || errName === 'PermissionDeniedError') {
         setCameraState('denied')
@@ -212,6 +232,12 @@ export default function SnapSolveHub() {
       return
     }
 
+    clearTimeout(loadingTimer)
+    if (cameraRequestIdRef.current !== requestId) {
+      stream.getTracks().forEach((t) => t.stop())
+      return
+    }
+
     streamRef.current = stream
 
     // Attach stream to video element
@@ -225,6 +251,7 @@ export default function SnapSolveHub() {
       video.srcObject = stream
 
       const markActive = () => {
+        if (cameraRequestIdRef.current !== requestId) return
         setCameraState('active')
         setCameraErrorMessage(null)
       }
@@ -324,18 +351,24 @@ export default function SnapSolveHub() {
       haptics.impact('medium')
       playSound('click')
       const video = videoRef.current
-      const canvas = document.createElement('canvas')
-      canvas.width = video.videoWidth || 1280
-      canvas.height = video.videoHeight || 720
-      const ctx = canvas.getContext('2d')
-      if (ctx) {
-        ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
-        const base64 = canvas.toDataURL('image/jpeg', 0.88)
+      const frame = captureVideoFrame(video)
+      if (frame) {
         stopCamera()
-        setSelectedImage(base64)
+        setSelectedImage(frame.dataUrl)
         setCurrentSolution(null)
-        void runSolve(base64, 'image/jpeg')
+        void runSolve(frame.dataUrl, frame.mimeType)
+        return
       }
+
+      setCameraState('loading')
+      setCameraErrorMessage(
+        language === 'ru'
+          ? 'Камера ещё готовит кадр. Если не сработает, откроется системная камера'
+          : 'Kamera hali kadr tayyorlamadi. Ishlamasa, tizim kamerasi ochiladi'
+      )
+      void video.play().catch(() => {})
+      window.setTimeout(() => cameraInputRef.current?.click(), 350)
+      return
     } else {
       // Native system camera capture
       cameraInputRef.current?.click()
@@ -347,7 +380,6 @@ export default function SnapSolveHub() {
     haptics.impact('light')
     const nextFacing = facingMode === 'environment' ? 'user' : 'environment'
     setFacingMode(nextFacing)
-    void startCamera(nextFacing)
   }
 
   // Dual-mode torch (hardware LED + screen softbox light fallback)
@@ -411,7 +443,6 @@ export default function SnapSolveHub() {
     setSelectedImage(null)
     setCurrentSolution(null)
     setErrorMessage(null)
-    void startCamera()
   }
 
   // Manual masala yozish (Kalkulyator orqali)
@@ -461,7 +492,9 @@ export default function SnapSolveHub() {
         type="file"
         accept="image/*"
         capture="environment"
-        className="hidden"
+        className="sr-only"
+        tabIndex={-1}
+        aria-hidden="true"
         onChange={(e) => {
           const file = e.target.files?.[0]
           if (file) void handleFile(file)
@@ -472,7 +505,9 @@ export default function SnapSolveHub() {
         ref={galleryInputRef}
         type="file"
         accept="image/*"
-        className="hidden"
+        className="sr-only"
+        tabIndex={-1}
+        aria-hidden="true"
         onChange={(e) => {
           const file = e.target.files?.[0]
           if (file) void handleFile(file)
