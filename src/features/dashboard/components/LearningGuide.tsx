@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, LayoutGrid, Ticket, Swords, Circle, CheckCircle2 } from 'lucide-react'
+import { BookOpen, GraduationCap, Ticket, Brain, Circle, CheckCircle2 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -88,23 +88,28 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
         </button>
         <button
           type="button"
-          onClick={() => navigate('/rejimlar')}
-          aria-label={tt('guideAllModes')}
+          onClick={() => navigate('/darslik')}
+          aria-label={tt('lessons')}
           className={`home-learning-shortcut ${interactive}`}
         >
-          <LayoutGrid size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('guideAllModes')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideAllModesShort')}</span>
+          <GraduationCap size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('lessons')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideLessonsShort')}</span>
         </button>
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
           <Ticket size={23} strokeWidth={1.75} className="text-pmuted" />
           <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('tickets')}</span>
           <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideTicketsShort')}</span>
         </button>
-        <button type="button" onClick={() => navigate('/octagon')} className={`home-learning-shortcut ${interactive}`}>
-          <Swords size={23} strokeWidth={1.75} className="text-pmuted" />
-          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('duelTitle')}</span>
-          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('duelDesc')}</span>
+        <button
+          type="button"
+          onClick={() => navigate('/adaptive')}
+          aria-label={tt('adaptiveTitle')}
+          className={`home-learning-shortcut ${interactive}`}
+        >
+          <Brain size={23} strokeWidth={1.75} className="text-pmuted" />
+          <span className="mt-2 block text-[16px] font-bold text-pfg">{tt('adaptiveTitle')}</span>
+          <span className="mt-1 block text-[12px] leading-relaxed text-pmuted">{tt('guideAdaptiveShort')}</span>
         </button>
       </div>
 

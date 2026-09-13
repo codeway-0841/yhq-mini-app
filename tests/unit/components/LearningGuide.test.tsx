@@ -38,13 +38,13 @@ describe('learning guide', () => {
     guide()
     const buttons = screen.getAllByRole('button')
     expect(buttons[0]).toHaveTextContent('O‘rganish')
-    expect(buttons[1]).toHaveTextContent('Barcha rejimlar')
+    expect(buttons[1]).toHaveTextContent('Darslik')
     expect(buttons[2]).toHaveTextContent('Biletlar')
-    expect(buttons[3]).toHaveTextContent('Duel')
+    expect(buttons[3]).toHaveTextContent('Aqlli takrorlash')
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
 
     fireEvent.click(buttons[1])
-    expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe('/rejimlar')
+    expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe('/darslik')
   })
 
   it('offers results for an expired session while preserving its route and answers', () => {
@@ -73,7 +73,7 @@ describe('learning guide', () => {
     useSubjectStore.getState().setSubject('rustili')
     guide(7)
     expect(screen.getByText(/Xato qilgan savollaringizni/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: /Takrorlash/i }))
+    fireEvent.click(screen.getByRole('button', { name: 'Takrorlash' }))
     expect(screen.getByTestId('destination')).toHaveTextContent('/xatolar')
   })
 
@@ -187,13 +187,13 @@ describe('learning guide', () => {
     expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({path:'/darslik',state:{moduleId:2}})
   })
 
-  it('keeps every extra mode reachable', () => {
+  it('keeps Darslik and Aqlli takrorlash reachable', () => {
     guide()
-    fireEvent.click(screen.getByRole('button', { name: 'Barcha rejimlar' }))
-    expect(screen.getByTestId('destination')).toHaveTextContent('/rejimlar')
+    fireEvent.click(screen.getByRole('button', { name: 'Darslik' }))
+    expect(screen.getByTestId('destination')).toHaveTextContent('/darslik')
   })
 
-  it.each([['Biletlar', '/biletlar'], ['Duel', '/octagon']])('opens %s from the dashboard', (label, path) => {
+  it.each([['Biletlar', '/biletlar'], ['Aqlli takrorlash', '/adaptive']])('opens %s from the dashboard', (label, path) => {
     guide()
     fireEvent.click(screen.getByRole('button', { name: new RegExp(label) }))
     expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe(path)
