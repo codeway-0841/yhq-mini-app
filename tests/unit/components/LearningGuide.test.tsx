@@ -38,11 +38,13 @@ describe('learning guide', () => {
     guide()
     const buttons = screen.getAllByRole('button')
     expect(buttons[0]).toHaveTextContent('O‘rganish')
-    expect(buttons[1]).toHaveTextContent('Mashq qilish')
+    expect(buttons[1]).toHaveTextContent('Barcha rejimlar')
     expect(buttons[2]).toHaveTextContent('Biletlar')
     expect(buttons[3]).toHaveTextContent('Duel')
-    expect(buttons[4]).toHaveTextContent('Barcha rejimlar')
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
+
+    fireEvent.click(buttons[1])
+    expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe('/rejimlar')
   })
 
   it('offers results for an expired session while preserving its route and answers', () => {
