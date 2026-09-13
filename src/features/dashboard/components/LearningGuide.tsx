@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, GraduationCap, Ticket, Brain, Circle, CheckCircle2 } from 'lucide-react'
+import { BookOpen, GraduationCap, Ticket, Brain, CheckCircle2 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -122,7 +122,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
               <h2 className="text-[17px] font-bold leading-snug text-pfg">{title}</h2>
               {description && <p className="mt-1 text-[12px] leading-relaxed text-pmuted">{description}</p>}
             </div>
-            {allComplete && !resume ? <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} /> : <Circle size={18} className="shrink-0 text-psubtle" aria-hidden="true" />}
+            {allComplete && !resume && <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
           <Button block size="lg" className="mt-3 whitespace-normal" onClick={start}>
             {actionLabel}

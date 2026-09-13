@@ -6,7 +6,7 @@ test('dashboard floating menu opens, dismisses, and opens themes', async ({ page
   await page.route('**/api/coins/tasks', (route) => route.fulfill({ json: { ok: true, tasks: [] } }))
   await page.route('**/api/boss/state', (route) => route.fulfill({ status: 503, json: { error: 'Unavailable in menu fixture' } }))
   await page.goto('/app.html#/')
-  const trigger = page.getByRole('button', { name: 'Menyu', exact: true })
+  const trigger = page.getByRole('region', { name: 'Dynamic Island' }).getByRole('button', { name: 'Menyu', exact: true })
   await expect(trigger).toBeVisible({ timeout: 15_000 })
   await page.screenshot({ path: `test-results/dashboard-fab-${test.info().project.name}.png` })
   const subjectPicker = page.getByRole('button', { name: /Fan tanlash:/ })
