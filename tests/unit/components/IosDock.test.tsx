@@ -111,4 +111,14 @@ describe('IosDock component', () => {
 
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
+
+  it('hides dock while reading a library PDF', () => {
+    render(
+      <MemoryRouter initialEntries={['/kutubxona/kitob/1-sinf-alifbe']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+
+    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
+  })
 })

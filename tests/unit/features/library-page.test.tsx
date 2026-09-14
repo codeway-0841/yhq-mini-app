@@ -1,12 +1,13 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import { MemoryRouter } from 'react-router-dom'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { MemoryRouter, useLocation } from 'react-router-dom'
+import { beforeEach, describe, expect, it } from 'vitest'
 import LibraryPage from '../../../src/features/library/LibraryPage'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
-vi.mock('../../../src/platform/open-link', () => ({
-  openExternalLink: vi.fn(),
-}))
+function LocationProbe() {
+  const location = useLocation()
+  return <output aria-label="location">{location.pathname}</output>
+}
 
 describe('LibraryPage (Kutubxona)', () => {
   beforeEach(() => {
@@ -32,12 +33,11 @@ describe('LibraryPage (Kutubxona)', () => {
     expect(screen.queryByRole('button', { name: '1-sinf Matematika' })).toBeNull()
   })
 
-  it('kitob ochilganda sheet va PDF CTA ishlaydi', async () => {
-    const { openExternalLink } = await import('../../../src/platform/open-link')
-
+  it('kitob ochilganda sheet va ilova ichidagi reader CTA ishlaydi', async () => {
     render(
       <MemoryRouter>
         <LibraryPage />
+        <LocationProbe />
       </MemoryRouter>,
     )
 
@@ -47,9 +47,9 @@ describe('LibraryPage (Kutubxona)', () => {
     fireEvent.click(await screen.findByRole('button', { name: '1-sinf Alifbe' }))
 
     expect(await screen.findByRole('heading', { name: '1-sinf Alifbe' })).toBeTruthy()
-    fireEvent.click(screen.getByRole('button', { name: 'PDF ochish' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Ilovada o‘qish' }))
 
-    expect(openExternalLink).toHaveBeenCalledWith('/kutubxona/pdf/1-sinf/1-sinf-alifbe.pdf')
+    expect(screen.getByLabelText('location')).toHaveTextContent('/kutubxona/kitob/1-sinf-alifbe')
   })
 
   it('sinf filtri URL orqali qo\'llanadi', async () => {

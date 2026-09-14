@@ -1,4 +1,4 @@
-import { BookOpen, ExternalLink } from 'lucide-react'
+import { BookOpen, Smartphone } from 'lucide-react'
 import { Badge } from '../../../shared/components/ui/badge'
 import { Button } from '../../../shared/components/ui/button'
 import {
@@ -23,9 +23,7 @@ interface BookDetailSheetProps {
 }
 
 /**
- * Kitob tafsiloti — pastki sheet: katta muqova + meta + asosiy CTA (PDF ochish).
- * PDF tashqi manzildan ochiladi (R2/CDN), shuning uchun CTA izohi ham shuni
- * bildiradi — user kutgan joyda (tashqi brauzer) ochiladi.
+ * Kitob tafsiloti — pastki sheet: katta muqova + meta + ilova ichidagi reader CTA.
  */
 export function BookDetailSheet({ book, language, gradeText, onClose, onRead }: BookDetailSheetProps) {
   const tt = useT(language)
@@ -68,7 +66,7 @@ export function BookDetailSheet({ book, language, gradeText, onClose, onRead }: 
               {tt('libraryOpenBook')}
             </Button>
             <p className="flex items-center justify-center gap-1 text-center text-[11.5px] text-psubtle">
-              <ExternalLink size={11} strokeWidth={1.75} />
+              <Smartphone size={11} strokeWidth={1.75} />
               {tt('libraryPdfHint')}
             </p>
           </SheetFooter>

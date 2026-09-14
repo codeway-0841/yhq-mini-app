@@ -7,7 +7,6 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { haptics } from '../../platform/haptics'
 import { track } from '../../shared/lib/analytics'
-import { openExternalLink } from '../../platform/open-link'
 import {
   LIBRARY_GRADES,
   libraryBooks,
@@ -23,7 +22,6 @@ import { EmptyState } from '../../shared/components/ui/empty-state'
 import { BookCard } from './components/BookCard'
 import { BookDetailSheet } from './components/BookDetailSheet'
 import { librarySubjectIcon } from './subject-icons'
-import { libraryPdfUrl } from './library-links'
 
 const KNOWN_SUBJECT_IDS = new Set(librarySubjects.map((s) => s.id))
 
@@ -96,8 +94,9 @@ export default function LibraryPage() {
   const readBook = useCallback((book: LibraryBook) => {
     haptics.impact('medium')
     track('library_open', { slug: book.slug, grade: book.grade })
-    openExternalLink(libraryPdfUrl(book))
-  }, [])
+    setSelected(null)
+    navigate(`/kutubxona/kitob/${encodeURIComponent(book.slug)}`)
+  }, [navigate])
 
   const selectGrade = (next: number | null) => {
     haptics.impact('light')

@@ -55,6 +55,7 @@ const verifyEmailChunk     = () => import('./features/auth/pages/VerifyEmailPage
 const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPage')
 const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
+const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -87,6 +88,7 @@ const VerifyEmailPage = lazy(verifyEmailChunk)
 const ResetPasswordPage = lazy(resetPasswordChunk)
 const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
+const LibraryReaderPage = lazy(libraryReaderChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -98,7 +100,7 @@ const routeChunkPrefetchers = [
   belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
-  aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk,
+  aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
 ]
@@ -290,6 +292,7 @@ export default function App() {
           <Route path="/test/:id"   element={<TestPage />} />
           <Route path="/darslik"    element={<Darslik />} />
           <Route path="/kutubxona"  element={<LibraryPage />} />
+          <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />
           <Route path="/biletlar"   element={<Biletlar />} />
           <Route path="/belgilar"   element={<Belgilar />} />
           <Route path="/belgilar-oyini" element={<SignsGamePage />} />

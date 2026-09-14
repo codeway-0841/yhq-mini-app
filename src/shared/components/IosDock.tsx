@@ -18,6 +18,7 @@ const HIDDEN_PREFIXES = [
   '/onboarding',
   '/verify-email',
   '/reset-password',
+  '/kutubxona/kitob/',
 ]
 
 interface NavItem {
