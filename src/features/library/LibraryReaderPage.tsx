@@ -104,6 +104,11 @@ export default function LibraryReaderPage() {
           // Vite hash'langan decoder assetlarini asosiy threaddan worker'ga uzatadi.
           WasmFactory: BundledPdfWasmFactory,
           useWorkerFetch: false,
+          // Darsliklardagi CID/Cyrillic matn va nostandart shriftlar original
+          // ko'rinishda chiqishi uchun (public/pdfjs — copy-pdfjs-assets.mjs).
+          cMapUrl: '/pdfjs/cmaps/',
+          cMapPacked: true,
+          standardFontDataUrl: '/pdfjs/standard_fonts/',
         })
         loadingTask.onProgress = ({ loaded, total }: { loaded: number; total: number }) => {
           if (!disposed && total > 0) setProgress(Math.min(100, Math.round((loaded / total) * 100)))

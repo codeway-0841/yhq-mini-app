@@ -41,6 +41,9 @@ content-banks/**/out/
 content-banks/testmakon/kutubxona/
 # Lokal PDF fallback (dist/APK ga tushmasligi SHART; prod'da R2/CDN)
 public/kutubxona/pdf/
+# PDF.js runtime asset'lari — node_modules'dan generatsiya qilinadi
+# (scripts/copy-pdfjs-assets.mjs; predev + build avtomatik tayyorlaydi)
+public/pdfjs/
 
 .opencode/
 

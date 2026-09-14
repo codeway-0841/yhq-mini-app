@@ -10,5 +10,9 @@
  */
 process.env.NODE_ENV = 'production'
 
+// PDF.js runtime asset'lari (cmaps + standard_fonts) public/pdfjs/ga tayyorlansin
+const { execFileSync } = await import('node:child_process')
+execFileSync(process.execPath, ['scripts/copy-pdfjs-assets.mjs'], { stdio: 'inherit' })
+
 const { build } = await import('vite')
 await build()

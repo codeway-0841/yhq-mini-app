@@ -1,12 +1,15 @@
 import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import jbig2WasmUrl from 'pdfjs-dist/wasm/jbig2.wasm?url'
 import openJpegWasmUrl from 'pdfjs-dist/wasm/openjpeg.wasm?url'
+import qcmsWasmUrl from 'pdfjs-dist/wasm/qcms_bg.wasm?url'
 
 let pdfJsPromise: Promise<typeof import('pdfjs-dist')> | null = null
 
 const WASM_ASSETS: Record<string, string> = {
   'jbig2.wasm': jbig2WasmUrl,
   'openjpeg.wasm': openJpegWasmUrl,
+  // ICC rang profillari (rasm ranglari originalga mos chiqishi uchun)
+  'qcms_bg.wasm': qcmsWasmUrl,
 }
 
 /**

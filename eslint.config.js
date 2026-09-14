@@ -11,6 +11,8 @@ export default tseslint.config(
       'node_modules/**', 'dist/**', 'api/**', 'server/dist/**', 'android/**',
       'migrations/**', '*.config.*', 'graphify-out/**', 'coverage/**',
       '.vercel/**', '.claude/**', '.agents/**', '.drizzle/**', 'public/**', 'scratch/**',
+      // Lokal diagnostika artefaktlari (deployed chunk'lar, loglar — gitignore'da ham bor)
+      'tmp/**',
     ],
   },
   js.configs.recommended,
@@ -30,8 +32,11 @@ export default tseslint.config(
     // browser globals'lari yo'q, Node global'lari kerak (CI lint error: 'process').
     files: ['scripts/**/*.mjs'],
     languageOptions: {
-      // fetch — Node 18+ global (build skriptlari R2/S3'ga yuklaydi)
-      globals: { process: 'readonly', console: 'readonly', fetch: 'readonly' },
+      // fetch/Buffer/setTimeout — Node 18+ global (build skriptlari R2/S3'ga yuklaydi)
+      globals: {
+        process: 'readonly', console: 'readonly', fetch: 'readonly',
+        Buffer: 'readonly', setTimeout: 'readonly',
+      },
     },
   },
   {

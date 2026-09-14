@@ -23,7 +23,7 @@ import {
 } from '../../../src/content/library'
 import { librarySubjectIcon } from '../../../src/features/library/subject-icons'
 import { libraryPdfUrl } from '../../../src/features/library/library-links'
-import { resolveLibraryPdfBase } from '../../../src/shared/config'
+import { config, resolveLibraryPdfBase } from '../../../src/shared/config'
 
 const ROOT = path.resolve(__dirname, '../../..')
 const RAW_JSON = fs.readFileSync(path.join(ROOT, 'src/content/library.json'), 'utf8')
@@ -71,9 +71,10 @@ describe('kutubxona katalogi', () => {
     }
   })
 
-  it('PDF URL base (env berilmagan — lokal fallback) bilan yig\'iladi', () => {
+  it('PDF URL joriy base (env yoki lokal fallback) bilan yig\'iladi', () => {
     const book = libraryBooks[0]
-    expect(libraryPdfUrl(book)).toBe(`/kutubxona/pdf/${book.file}`)
+    const base = config.libraryPdfBaseUrl.replace(/\/+$/, '')
+    expect(libraryPdfUrl(book)).toBe(`${base}/${book.file}`)
   })
 
   it('PDF base resolver: env, trailing slash va bo\'sh qiymat fallback', () => {

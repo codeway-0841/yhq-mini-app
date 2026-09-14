@@ -14,8 +14,14 @@
  *   R2_CONCURRENCY=4                 # ixtiyoriy
  *   R2_FORCE=1                       # mavjud fayllarni ham qayta yuklash
  *
- * Ishlatish:
- *   node scripts/upload-library-to-r2.mjs
+ * Ishlatish (kalitlarni `.env.r2` — GITIGNORED — faylga yozing):
+ *   .env.r2:
+ *     R2_ACCOUNT_ID=...
+ *     R2_ACCESS_KEY_ID=...
+ *     R2_SECRET_ACCESS_KEY=...
+ *     R2_BUCKET=kivvi-library
+ *   keyin:
+ *     node scripts/upload-library-to-r2.mjs
  *
  * Keyin Vercel/Render env'ga qo'ying (build-time, Vite):
  *   VITE_LIBRARY_PDF_BASE_URL=https://<public-domain>/kutubxona/pdf
@@ -33,6 +39,19 @@ import { fileURLToPath } from 'node:url'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const LIBRARY_JSON = path.join(ROOT, 'src', 'content', 'library.json')
 const SOURCE_DIR = path.join(ROOT, 'content-banks', 'testmakon', 'kutubxona')
+
+// Kalitlarni `.env.r2` dan ham o'qish (`.env*` gitignore'da — commit bo'lmaydi):
+// shell'da export qilish shart emas, faylga yozib skriptni chaqirsangiz bo'ldi.
+const ENV_FILE = path.join(ROOT, '.env.r2')
+if (existsSync(ENV_FILE)) {
+  for (const line of readFileSync(ENV_FILE, 'utf8').split(/\r?\n/)) {
+    if (line.trim().startsWith('#')) continue
+    const match = line.match(/^\s*([A-Za-z0-9_]+)\s*=\s*(.*?)\s*$/)
+    if (!match) continue
+    const [, key, rawValue] = match
+    if (process.env[key] === undefined) process.env[key] = rawValue.replace(/^(['"])(.*)\1$/, '$2')
+  }
+}
 
 const {
   R2_ACCOUNT_ID,
@@ -65,12 +84,14 @@ const sha256hex = (data) => createHash('sha256').update(data).digest('hex')
 const hmac = (key, data) => createHmac('sha256', key).update(data).digest()
 
 /** Bitta so'rov uchun SigV4 imzo header'lari (path-style: /<bucket>/<key>). */
-function signedHeaders(method, objectKey, payloadHash, now = new Date()) {
+function signedHeaders(method, objectKey, payloadHash, now = new Date(), canonicalQuery = '') {
   const amzDate = now.toISOString().replace(/[:-]|\.\d{3}/g, '')
   const dateStamp = amzDate.slice(0, 8)
-  const canonicalUri = '/' + [R2_BUCKET, ...objectKey.split('/')]
-    .map((seg) => encodeURIComponent(seg))
-    .join('/')
+  const canonicalUri = objectKey === ''
+    ? `/${R2_BUCKET}`
+    : '/' + [R2_BUCKET, ...objectKey.split('/')]
+      .map((seg) => encodeURIComponent(seg))
+      .join('/')
 
   const canonicalHeaders =
     `host:${HOST}\n` +
@@ -81,7 +102,7 @@ function signedHeaders(method, objectKey, payloadHash, now = new Date()) {
   const canonicalRequest = [
     method,
     canonicalUri,
-    '',
+    canonicalQuery,
     canonicalHeaders,
     signedHeaderNames,
     payloadHash,
@@ -121,6 +142,22 @@ async function objectExists(objectKey) {
   throw new Error(`HEAD ${objectKey} → ${res.status} ${res.statusText}`)
 }
 
+/** Tarmoq uzilishlariga qarshi: har fayl uchun 3 martagacha qayta urinish (backoff). */
+async function withRetry(label, fn, attempts = 5) {
+  let lastError
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      return await fn()
+    } catch (error) {
+      lastError = error
+      // DNS/ulanish uzilishlarida uzoqroq kutish (ENOTFOUND/ECONNRESET to'lqinlari)
+      if (i < attempts) await new Promise((resolve) => setTimeout(resolve, i * 3000))
+    }
+  }
+  const cause = lastError?.cause?.code || lastError?.cause?.message
+  throw new Error(`${label}: ${lastError.message}${cause ? ` (${cause})` : ''}`)
+}
+
 async function uploadObject(objectKey, filePath) {
   const body = await readFile(filePath)
   const payloadHash = sha256hex(body)
@@ -145,13 +182,100 @@ function human(bytes) {
 }
 
 async function main() {
+  const prefix = R2_PREFIX.replace(/^\/+|\/+$/g, '')
+
+  // `--check`: kalitlar/bucket ishlashini 1 so'rovda tekshirish (to'liq yuklashdan oldin)
+  if (process.argv.includes('--check')) {
+    try {
+      const probe = await objectExists(`${prefix}/.kalit-tekshiruvi`)
+      console.log(probe
+        ? 'Kalitlar va bucket ishlaydi (probe obyekt mavjud).'
+        : "Kalitlar va bucket ishlaydi (probe yo'q — yangi bucket uchun normal).")
+    } catch (error) {
+      console.error(`Tekshiruv FAIL: ${error.message}`)
+      process.exit(1)
+    }
+    return
+  }
+
+  // `--set-cors`: in-app pdf.js PDF'ni cross-origin fetch qiladi — bucket'ga
+  // CORS siyosati SHART (aks holda "Internet aloqasini tekshiring" chiqadi).
+  // R2 S3 API: PUT /<bucket>?cors (Content-MD5 shart). Bucket-config huquqi kerak.
+  if (process.argv.includes('--set-cors')) {
+    const origins = (process.env.R2_CORS_ORIGINS || [
+      'https://app.kivvi.uz',
+      'https://kivvi.uz',
+      'https://www.kivvi.uz',
+      'http://localhost:5173',
+    ].join(',')).split(',').map((s) => s.trim()).filter(Boolean)
+
+    const xml = [
+      '<?xml version="1.0" encoding="UTF-8"?>',
+      '<CORSConfiguration>',
+      '  <CORSRule>',
+      ...origins.map((o) => `    <AllowedOrigin>${o}</AllowedOrigin>`),
+      '    <AllowedMethod>GET</AllowedMethod>',
+      '    <AllowedMethod>HEAD</AllowedMethod>',
+      '    <AllowedHeader>*</AllowedHeader>',
+      '    <ExposeHeader>Content-Length</ExposeHeader>',
+      '    <ExposeHeader>Content-Range</ExposeHeader>',
+      '    <ExposeHeader>Accept-Ranges</ExposeHeader>',
+      '    <ExposeHeader>ETag</ExposeHeader>',
+      '    <MaxAgeSeconds>3600</MaxAgeSeconds>',
+      '  </CORSRule>',
+      '</CORSConfiguration>',
+      '',
+    ].join('\n')
+
+    const body = Buffer.from(xml)
+    const payloadHash = sha256hex(body)
+    const contentMd5 = createHash('md5').update(body).digest('base64')
+    const headers = {
+      ...signedHeaders('PUT', '', payloadHash, new Date(), 'cors='),
+      'content-type': 'application/xml',
+      'content-md5': contentMd5,
+    }
+
+    const res = await fetch(`${ENDPOINT}/${R2_BUCKET}?cors`, { method: 'PUT', headers, body })
+    if (!res.ok) {
+      console.error(`CORS o'rnatilmadi: ${res.status} ${res.statusText} ${(await res.text()).slice(0, 300)}`)
+      console.error("Token'da bucket-config huquqi bo'lmasa — Cloudflare Dashboard → R2 → kivvi-library → Settings → CORS Policy orqali qo'lda qo'ying.")
+      process.exit(1)
+    }
+    console.log(`✓ CORS o'rnatildi (${origins.length} origin): ${origins.join(', ')}`)
+    return
+  }
+
   if (!existsSync(LIBRARY_JSON)) {
     console.error(`library.json topilmadi: ${LIBRARY_JSON} — avval python scripts/build-library-catalog.py`)
     process.exit(1)
   }
 
   const { books } = JSON.parse(readFileSync(LIBRARY_JSON, 'utf8'))
-  const prefix = R2_PREFIX.replace(/^\/+|\/+$/g, '')
+
+  // `--status`: yuklashsiz HOZIRGI holat — R2'da bor/yo'q ro'yxati
+  if (process.argv.includes('--status')) {
+    let ok = 0
+    const missing = []
+    let cursor = 0
+    async function probe() {
+      while (cursor < books.length) {
+        const book = books[cursor++]
+        const key = `${prefix}/${book.file}`
+        try {
+          if (await withRetry(key, () => objectExists(key))) ok++
+          else missing.push(book.file)
+        } catch (error) {
+          missing.push(`${book.file} (${error.message})`)
+        }
+      }
+    }
+    await Promise.all(Array.from({ length: 6 }, probe))
+    console.log(`R2'da bor: ${ok}/${books.length}`)
+    console.log(`Yo'q: ${missing.length}${missing.length ? `\n  - ${missing.join('\n  - ')}` : ''}`)
+    return
+  }
+
   const concurrency = Math.max(1, Number(R2_CONCURRENCY) || 4)
 
   const jobs = books.map((book) => ({
@@ -182,12 +306,12 @@ async function main() {
       const job = jobs[index]
       const label = `[${index + 1}/${jobs.length}] ${job.key}`
       try {
-        if (!R2_FORCE && await objectExists(job.key)) {
+        if (!R2_FORCE && await withRetry(job.key, () => objectExists(job.key))) {
           skipped++
           console.log(`~ ${label} (mavjud, o'tkazib yuborildi)`)
           continue
         }
-        await uploadObject(job.key, job.filePath)
+        await withRetry(job.key, () => uploadObject(job.key, job.filePath))
         uploaded++
         console.log(`✓ ${label} (${human(statSync(job.filePath).size)})`)
       } catch (error) {
