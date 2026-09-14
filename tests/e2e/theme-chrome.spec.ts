@@ -26,13 +26,22 @@ for (const width of [320, 390]) {
       await toggle.click()
       await expect(page.locator('body')).toHaveAttribute('data-theme', theme)
       await page.waitForFunction(() => !document.documentElement.matches('.theme-to-dark, .theme-to-light'))
-      const colors = await page.evaluate(() => ({
-        root: getComputedStyle(document.documentElement).backgroundColor,
-        header: getComputedStyle(document.querySelector('header')!).backgroundColor,
-        canvas: getComputedStyle(document.body).getPropertyValue('--p-canvas').trim(),
-        meta: document.querySelector('meta[name="theme-color"]')?.getAttribute('content'),
-      }))
-      expect(colors.root).toBe(colors.header)
+      const colors = await page.evaluate(() => {
+        const headerEl = document.querySelector('header')!
+        const headerCs = getComputedStyle(headerEl)
+        return {
+          root: getComputedStyle(document.documentElement).backgroundColor,
+          header: headerCs.backgroundColor,
+          headerBackdrop: headerCs.backdropFilter,
+          canvas: getComputedStyle(document.body).getPropertyValue('--p-canvas').trim(),
+          meta: document.querySelector('meta[name="theme-color"]')?.getAttribute('content'),
+        }
+      })
+      // Native header kontrakti (2026-09-15 PageHeader): shaffof-blur fon —
+      // opaque EMAS (root !== header), orqa blur (bleed native xiralashadi),
+      // divider scroll-CSS orqali (boshlang'ichda shaffof).
+      expect(colors.header).not.toBe(colors.root)
+      expect(colors.headerBackdrop).not.toBe('none')
       expect(colors.meta).toBe(colors.canvas)
       const after = await page.locator('header').boundingBox()
       expect(after?.y).toBe(before?.y)

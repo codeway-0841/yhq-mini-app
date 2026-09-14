@@ -147,6 +147,9 @@ body[data-platform='native'] {
    progressive enhancement — qo'llamagan WebView'da chiziqsiz, funksiya
    buzilmaydi). Elementning sticky/safe-top klasslari o'zida qoladi. */
 .page-header {
+  /* Eski WebView (color-mix yo'q) fallback'i — birinchi opaque, quvvatlagan
+     brauzer ikkinchi (shaffof) qiymatni oladi */
+  background: var(--p-canvas);
   background: color-mix(in srgb, var(--p-canvas) 82%, transparent);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   backdrop-filter: blur(20px) saturate(1.4);
