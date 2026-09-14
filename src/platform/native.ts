@@ -21,6 +21,28 @@ export function isNativeApp(): boolean {
   try { return Capacitor.isNativePlatform() } catch { return false }
 }
 
+export type NativeCameraPermissionResult = 'granted' | 'denied' | 'unavailable'
+
+/**
+ * APK kamera ruxsatini Android'ning o'z dialogi orqali so'raydi. `unavailable`
+ * WebView getUserMedia oqimiga xavfsiz fallback qilish mumkinligini bildiradi.
+ */
+export async function requestNativeCameraPermission(): Promise<NativeCameraPermissionResult> {
+  if (!isNativeApp()) return 'unavailable'
+
+  try {
+    const { Camera } = await import('@capacitor/camera')
+    const current = await Camera.checkPermissions()
+    if (current.camera === 'granted') return 'granted'
+
+    const requested = await Camera.requestPermissions({ permissions: ['camera'] })
+    return requested.camera === 'granted' ? 'granted' : 'denied'
+  } catch (error) {
+    console.warn('[Camera] Native permission request unavailable:', error)
+    return 'unavailable'
+  }
+}
+
 /**
  * Native chrome (status bar + safe-area) bir martalik sozlash — main.tsx'dan
  * React render'dan OLDIN chaqiriladi (birinchi kadrda siljish bo'lmasligi uchun).

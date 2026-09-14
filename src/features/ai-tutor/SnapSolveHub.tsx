@@ -22,6 +22,7 @@ import {
 import MathText from '../../shared/components/MathText'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { haptics } from '../../platform/haptics'
+import { isNativeApp, requestNativeCameraPermission } from '../../platform/native'
 import { playSound } from '../../shared/lib/sounds'
 
 const SUBJECT_OPTIONS = [
@@ -58,6 +59,7 @@ export default function SnapSolveHub() {
   const navigate = useNavigate()
   const language = useAppStore((s) => s.settings.language)
   const tt = useT(language)
+  const nativeApp = isNativeApp()
 
   const [quota, setQuota] = useState<TutorQuota | null>(null)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -126,6 +128,16 @@ export default function SnapSolveHub() {
     if (streamRef.current) {
       streamRef.current.getTracks().forEach((t) => t.stop())
       streamRef.current = null
+    }
+
+    if (nativeApp) {
+      const permission = await requestNativeCameraPermission()
+      if (cameraRequestIdRef.current !== requestId) return
+      if (permission === 'denied') {
+        rememberCameraAccess(false)
+        showCameraDenied()
+        return
+      }
     }
 
     if (!navigator?.mediaDevices?.getUserMedia) {
@@ -281,7 +293,7 @@ export default function SnapSolveHub() {
     } else {
       setCameraState('active')
     }
-  }, [facingMode, language, showCameraDenied])
+  }, [facingMode, language, nativeApp, showCameraDenied])
 
   // Auto-start only when permission is already granted. Prompting is user-initiated.
   useEffect(() => {
@@ -293,6 +305,15 @@ export default function SnapSolveHub() {
     let cancelled = false
     setCameraState('checking')
     setCameraErrorMessage(null)
+
+    if (nativeApp) {
+      void startCamera()
+      return () => {
+        cancelled = true
+        stopCamera()
+        if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
+      }
+    }
 
     void queryCameraPermission().then((permission) => {
       if (cancelled) return
@@ -311,7 +332,7 @@ export default function SnapSolveHub() {
       stopCamera()
       if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
     }
-  }, [selectedImage, currentSolution, startCamera, stopCamera, showCameraDenied])
+  }, [selectedImage, currentSolution, nativeApp, startCamera, stopCamera, showCameraDenied])
 
   // Kvota va tarixni yuklash
   useEffect(() => {
@@ -660,7 +681,7 @@ export default function SnapSolveHub() {
         )}
 
         {/* Loading HUD: Camera initializing or permission pending */}
-        {(cameraState === 'checking' || cameraState === 'loading') && !selectedImage && !currentSolution && (
+        {!nativeApp && (cameraState === 'checking' || cameraState === 'loading') && !selectedImage && !currentSolution && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/80 p-6 text-center animate-in fade-in duration-200">
             <div className="relative flex size-20 items-center justify-center mb-4">
               <div className="absolute inset-0 rounded-full border-2 border-rose-500/40 animate-ping" />
@@ -693,7 +714,7 @@ export default function SnapSolveHub() {
         )}
 
         {/* Permission prompt is intentionally user-initiated to avoid repeated WebView popups. */}
-        {cameraState === 'prompt' && !selectedImage && !currentSolution && (
+        {!nativeApp && cameraState === 'prompt' && !selectedImage && !currentSolution && (
           <div
             data-testid="camera-permission-prompt"
             className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black p-6 text-center animate-in fade-in duration-200"

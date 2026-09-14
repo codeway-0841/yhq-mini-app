@@ -4,12 +4,22 @@
  */
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 
-const { addListenerMock, splashHideMock, isNativeMock, setOverlaysMock, setStyleMock } = vi.hoisted(() => ({
+const {
+  addListenerMock,
+  splashHideMock,
+  isNativeMock,
+  setOverlaysMock,
+  setStyleMock,
+  cameraCheckMock,
+  cameraRequestMock,
+} = vi.hoisted(() => ({
   addListenerMock: vi.fn(),
   splashHideMock: vi.fn(),
   isNativeMock: vi.fn(),
   setOverlaysMock: vi.fn(),
   setStyleMock: vi.fn(),
+  cameraCheckMock: vi.fn(),
+  cameraRequestMock: vi.fn(),
 }))
 
 vi.mock('@capacitor/core', () => ({ Capacitor: { isNativePlatform: isNativeMock } }))
@@ -20,7 +30,21 @@ vi.mock('@capacitor/status-bar', () => ({
   Style: { Dark: 'DARK', Light: 'LIGHT' },
 }))
 
-import { isNativeApp, bindAppBackButton, hideSplashScreen, applyNativeChrome, syncStatusBarStyle } from '../../../src/platform/native'
+vi.mock('@capacitor/camera', () => ({
+  Camera: {
+    checkPermissions: cameraCheckMock,
+    requestPermissions: cameraRequestMock,
+  },
+}))
+
+import {
+  isNativeApp,
+  bindAppBackButton,
+  hideSplashScreen,
+  applyNativeChrome,
+  requestNativeCameraPermission,
+  syncStatusBarStyle,
+} from '../../../src/platform/native'
 
 const win: Record<string, unknown> = {}
 
@@ -32,6 +56,8 @@ beforeEach(() => {
   setOverlaysMock.mockReset().mockResolvedValue(undefined)
   setStyleMock.mockReset().mockResolvedValue(undefined)
   isNativeMock.mockReset().mockReturnValue(false)
+  cameraCheckMock.mockReset()
+  cameraRequestMock.mockReset()
   splashHideMock.mockResolvedValue(undefined)
   addListenerMock.mockResolvedValue({ remove: vi.fn().mockResolvedValue(undefined) })
   delete document.body.dataset.platform
@@ -52,6 +78,22 @@ describe('isNativeApp', () => {
   it('Capacitor throw qilsa — xavfsiz false', () => {
     isNativeMock.mockImplementation(() => { throw new Error('no bridge') })
     expect(isNativeApp()).toBe(false)
+  })
+})
+
+describe('requestNativeCameraPermission', () => {
+  it('brauzerda native plaginni chaqirmaydi', async () => {
+    await expect(requestNativeCameraPermission()).resolves.toBe('unavailable')
+    expect(cameraCheckMock).not.toHaveBeenCalled()
+  })
+
+  it('APKda Android kamera ruxsatini so\'raydi', async () => {
+    isNativeMock.mockReturnValue(true)
+    cameraCheckMock.mockResolvedValue({ camera: 'prompt', photos: 'prompt' })
+    cameraRequestMock.mockResolvedValue({ camera: 'granted', photos: 'prompt' })
+
+    await expect(requestNativeCameraPermission()).resolves.toBe('granted')
+    expect(cameraRequestMock).toHaveBeenCalledWith({ permissions: ['camera'] })
   })
 })
 
