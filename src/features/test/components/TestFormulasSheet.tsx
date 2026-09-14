@@ -1,8 +1,9 @@
 import { useState, useMemo } from 'react'
-import { Search, BookOpen, X } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Search, BookOpen, X, LineChart } from 'lucide-react'
 import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
-import { FORMULA_SUBJECTS, type FormulaSubject, type FormulaTopic } from '../../../content/formulas'
+import { FORMULA_SUBJECTS, FORMULA_PLOTS, type FormulaSubject, type FormulaTopic } from '../../../content/formulas'
 
 interface TestFormulasSheetProps {
   open: boolean
@@ -18,7 +19,15 @@ export default function TestFormulasSheet({
   subjectId,
 }: TestFormulasSheetProps) {
   const tt = useT(language)
+  const navigate = useNavigate()
   const [search, setSearch] = useState('')
+
+  const openGraph = (formulaId: string): void => {
+    const plot = FORMULA_PLOTS[formulaId]
+    if (!plot) return
+    onClose()
+    navigate(`/grafik?e=${encodeURIComponent(plot.expr)}&x=${encodeURIComponent(plot.xVar)}`)
+  }
 
   // Fan mosligi: agar subjectId 'matematika', 'fizika' kabi bo'lsa o'shani tanlaymiz,
   // aks holda birinchi mavjud fan.
@@ -174,9 +183,21 @@ export default function TestFormulasSheet({
                   <span className="text-[13px] font-semibold text-pfg">
                     {language === 'ru' ? f.titleRu : f.title}
                   </span>
-                  <span className="text-[10px] text-pmuted font-medium bg-pcard px-2 py-0.5 rounded-full">
-                    {f.topicName}
-                  </span>
+                  <div className="flex items-center gap-1.5">
+                    {FORMULA_PLOTS[f.id] && (
+                      <button
+                        type="button"
+                        onClick={() => openGraph(f.id)}
+                        aria-label={tt('graphTitle')}
+                        className="grid size-7 place-items-center rounded-lg bg-pcard text-pmuted transition-colors hover:text-pprimary"
+                      >
+                        <LineChart size={14} />
+                      </button>
+                    )}
+                    <span className="text-[10px] text-pmuted font-medium bg-pcard px-2 py-0.5 rounded-full">
+                      {f.topicName}
+                    </span>
+                  </div>
                 </div>
                 <div className="rounded-xl bg-pcard px-3 py-2 text-center font-mono text-sm font-bold text-pprimary shadow-2xs tracking-wide select-all">
                   {f.formula}

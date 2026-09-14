@@ -14,6 +14,11 @@ import type {
   TestSessionResponse,
   TestSessionState,
 } from '../../../shared/test-session'
+import type {
+  SavedGraph,
+  SavedGraphInput,
+  SavedGraphSummary,
+} from '../../../shared/contracts/graph'
 
 const TIMEOUT_MS = 8000
 
@@ -293,6 +298,8 @@ export interface DbTopic {
   nameUz: string
   nameRu: string
   slug: string
+  /** Public metadata only; never includes question text/options/answers. */
+  questionCount?: number
 }
 
 export interface Question {
@@ -962,6 +969,31 @@ export const api = {
   /** Yopiq guruhga taklif havolasi (dinamik bot invite link yoki fallback) */
   getClosedGroupInvite: (subjectId: string) =>
     request<{ ok: boolean; inviteLink: string }>('GET', `/payments/closed-group-invite?subjectId=${encodeURIComponent(subjectId)}`),
+
+  // ── Grafik quruvchi (features/graph) ─────────────────────────────────────
+  listGraphs: () =>
+    request<{ ok: boolean; graphs: SavedGraphSummary[] }>('GET', '/graphs'),
+
+  getGraph: (id: string) =>
+    request<{ ok: boolean; graph: SavedGraph }>('GET', `/graphs/${encodeURIComponent(id)}`),
+
+  createGraph: (data: SavedGraphInput) =>
+    request<{ ok: boolean; graph: SavedGraph }>('POST', '/graphs', data),
+
+  updateGraph: (id: string, data: Partial<SavedGraphInput>) =>
+    request<{ ok: boolean; graph: SavedGraph }>('PATCH', `/graphs/${encodeURIComponent(id)}`, data),
+
+  deleteGraph: (id: string) =>
+    request<{ ok: boolean }>('DELETE', `/graphs/${encodeURIComponent(id)}`),
+
+  shareGraph: (id: string) =>
+    request<{ ok: boolean; shareCode: string }>('POST', `/graphs/${encodeURIComponent(id)}/share`),
+
+  unshareGraph: (id: string) =>
+    request<{ ok: boolean }>('DELETE', `/graphs/${encodeURIComponent(id)}/share`),
+
+  getSharedGraph: (code: string) =>
+    request<{ ok: boolean; graph: SavedGraph }>('GET', `/graphs/share/${encodeURIComponent(code)}`),
 }
 
 export interface PaymentHistoryRow {

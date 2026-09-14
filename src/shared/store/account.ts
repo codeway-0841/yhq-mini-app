@@ -46,6 +46,8 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-level-seen',
   'yhq-goal',
   'yhq-formula-favs',
+  // Grafik quruvchi workspace'i (ifodalar/slayderlar — user-scoped)
+  'yhq-graph',
 ] as const
 
 /**

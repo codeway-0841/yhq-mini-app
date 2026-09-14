@@ -1,0 +1,385 @@
+/**
+ * GraphCanvas — Canvas 2D renderer + gesture qatlami.
+ *
+ * Math core'ni BILMAYDI: tayyor `fn` (closure) + scope oladi va ichida
+ * `sampleCurve` orqali chizadi. Gesture paytida viewport lokal ref'da
+ * yuritiladi (60Hz'da store/persist yozilmasligi uchun) — barmoq
+ * ko'tarilganda bir marta `onViewportCommit` chaqiriladi.
+ */
+import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
+import type { GraphViewport } from '../../../../shared/contracts/graph'
+import type { CompiledExpression } from '../lib/math/compile'
+import { sampleCurve } from '../lib/plot/sample'
+import {
+  niceTicks,
+  panViewport,
+  screenToWorldX,
+  screenToWorldY,
+  xToScreen,
+  yToScreen,
+  zoomViewport,
+} from '../lib/plot/viewport'
+import { formatWorldValue } from '../lib/plot/viewport'
+
+export interface GraphSeries {
+  id: string
+  color: string
+  visible: boolean
+  fn: CompiledExpression
+}
+
+interface Props {
+  series: GraphSeries[]
+  scope: Record<string, number>
+  xVar: string
+  viewport: GraphViewport
+  onViewportCommit: (vp: GraphViewport) => void
+  ariaLabel: string
+}
+
+interface Trace {
+  sx: number
+  sy: number
+  wx: number
+  wy: number
+  color: string
+}
+
+type Gesture =
+  | { type: 'pan'; startVp: GraphViewport; startX: number; startY: number; moved: boolean; startSx: number; startSy: number }
+  | { type: 'pinch'; startVp: GraphViewport; startDist: number; centerX: number; centerY: number; moved: boolean }
+
+const MAX_DPR = 2
+const TAP_SLOP_PX = 6
+const HIT_RADIUS_PX = 28
+const WHEEL_COMMIT_MS = 400
+
+export default function GraphCanvas({ series, scope, xVar, viewport, onViewportCommit, ariaLabel }: Props) {
+  const containerRef = useRef<HTMLDivElement | null>(null)
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const sizeRef = useRef({ w: 0, h: 0 })
+  const vpRef = useRef<GraphViewport>(viewport)
+  const [sizeTick, setSizeTick] = useState(0)
+
+  const dataRef = useRef({ series, scope, xVar })
+  dataRef.current = { series, scope, xVar }
+
+  const pointers = useRef(new Map<number, { x: number; y: number }>())
+  const gesture = useRef<Gesture | null>(null)
+  const traceRef = useRef<Trace | null>(null)
+  const wheelTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // Tashqi viewport (reset/preset/deep-link) o'zgarsa — lokal nusxani sinxronlash
+  const lastExternalVp = useRef(viewport)
+  if (lastExternalVp.current !== viewport) {
+    lastExternalVp.current = viewport
+    if (!gesture.current) vpRef.current = viewport
+  }
+
+  const draw = useCallback(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const { w, h } = sizeRef.current
+    if (w <= 0 || h <= 0) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
+    const dpr = Math.min(window.devicePixelRatio || 1, MAX_DPR)
+    if (canvas.width !== Math.round(w * dpr) || canvas.height !== Math.round(h * dpr)) {
+      canvas.width = Math.round(w * dpr)
+      canvas.height = Math.round(h * dpr)
+    }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+    ctx.clearRect(0, 0, w, h)
+
+    const cs = getComputedStyle(document.body)
+    const cssVar = (name: string, fallback: string): string => cs.getPropertyValue(name).trim() || fallback
+    const gridColor = cssVar('--p-line', 'rgba(148,163,184,0.18)')
+    const axisColor = cssVar('--p-muted', '#94a3b8')
+    const labelColor = cssVar('--p-subtle', '#94a3b8')
+    const cardColor = cssVar('--p-card', '#17181c')
+    const fgColor = cssVar('--p-fg', '#f5f5f4')
+
+    const vp = vpRef.current
+    const xTicks = niceTicks(screenToWorldX(vp, 0, w), screenToWorldX(vp, w, w), Math.max(4, Math.round(w / 70)))
+    const yTicks = niceTicks(screenToWorldY(vp, h, h), screenToWorldY(vp, 0, h), Math.max(4, Math.round(h / 70)))
+
+    ctx.lineWidth = 1
+    ctx.strokeStyle = gridColor
+    ctx.beginPath()
+    for (const v of xTicks.values) {
+      const sx = Math.round(xToScreen(vp, v, w)) + 0.5
+      ctx.moveTo(sx, 0)
+      ctx.lineTo(sx, h)
+    }
+    for (const v of yTicks.values) {
+      const sy = Math.round(yToScreen(vp, v, h)) + 0.5
+      ctx.moveTo(0, sy)
+      ctx.lineTo(w, sy)
+    }
+    ctx.stroke()
+
+    const axisX = xToScreen(vp, 0, w)
+    const axisY = yToScreen(vp, 0, h)
+
+    ctx.strokeStyle = axisColor
+    ctx.lineWidth = 1.5
+    ctx.beginPath()
+    if (axisY >= 0 && axisY <= h) { ctx.moveTo(0, axisY); ctx.lineTo(w, axisY) }
+    if (axisX >= 0 && axisX <= w) { ctx.moveTo(axisX, 0); ctx.lineTo(axisX, h) }
+    ctx.stroke()
+
+    // O'q yorliqlari — o'qlar ekrandan chiqib ketsa ham chetga yopishib turadi
+    ctx.fillStyle = labelColor
+    ctx.font = '10px ui-monospace, monospace'
+    const labelLineY = Math.min(Math.max(axisY, 12), h - 4)
+    const labelLineX = Math.min(Math.max(axisX, 18), w - 4)
+    ctx.textAlign = 'center'
+    ctx.textBaseline = 'top'
+    for (const v of xTicks.values) {
+      if (v === 0) continue
+      ctx.fillText(v.toFixed(xTicks.decimals), xToScreen(vp, v, w), labelLineY + 3)
+    }
+    ctx.textAlign = 'right'
+    ctx.textBaseline = 'middle'
+    for (const v of yTicks.values) {
+      if (v === 0) continue
+      ctx.fillText(v.toFixed(yTicks.decimals), labelLineX - 3, yToScreen(vp, v, h))
+    }
+
+    const { series: currentSeries, scope: currentScope, xVar: currentXVar } = dataRef.current
+    for (const s of currentSeries) {
+      if (!s.visible) continue
+      const { segments } = sampleCurve(s.fn, {
+        width: w,
+        height: h,
+        viewport: vp,
+        xVar: currentXVar,
+        scope: currentScope,
+      })
+      if (segments.length === 0) continue
+      ctx.strokeStyle = s.color
+      ctx.lineWidth = 2.25
+      ctx.lineJoin = 'round'
+      ctx.lineCap = 'round'
+      ctx.beginPath()
+      for (const seg of segments) {
+        seg.points.forEach((p, i) => {
+          if (i === 0) ctx.moveTo(p.x, p.y)
+          else ctx.lineTo(p.x, p.y)
+        })
+      }
+      ctx.stroke()
+    }
+
+    const trace = traceRef.current
+    if (trace) {
+      ctx.beginPath()
+      ctx.arc(trace.sx, trace.sy, 4.5, 0, Math.PI * 2)
+      ctx.fillStyle = trace.color
+      ctx.fill()
+      ctx.lineWidth = 1.5
+      ctx.strokeStyle = cardColor
+      ctx.stroke()
+
+      const label = `(${formatWorldValue(trace.wx, vp.unitsPerPx)}, ${formatWorldValue(trace.wy, vp.unitsPerPx)})`
+      ctx.font = '11px ui-monospace, monospace'
+      const padX = 6
+      const textW = ctx.measureText(label).width
+      const boxW = textW + padX * 2
+      const boxH = 20
+      let bx = trace.sx + 10
+      let by = trace.sy - boxH - 8
+      if (bx + boxW > w - 4) bx = trace.sx - boxW - 10
+      if (by < 4) by = trace.sy + 10
+      ctx.fillStyle = cardColor
+      ctx.globalAlpha = 0.96
+      ctx.beginPath()
+      if (typeof ctx.roundRect === 'function') {
+        ctx.roundRect(bx, by, boxW, boxH, 6)
+        ctx.fill()
+      } else {
+        ctx.fillRect(bx, by, boxW, boxH)
+      }
+      ctx.globalAlpha = 1
+      ctx.strokeStyle = trace.color
+      ctx.lineWidth = 1
+      ctx.stroke()
+      ctx.fillStyle = fgColor
+      ctx.textAlign = 'left'
+      ctx.textBaseline = 'middle'
+      ctx.fillText(label, bx + padX, by + boxH / 2 + 0.5)
+    }
+  }, [])
+
+  // Props o'zgarganda qayta chizish
+  useEffect(() => {
+    draw()
+  }, [draw, series, scope, xVar, viewport, sizeTick])
+
+  // Ifoda/slayder/viewport o'zgarsa — eski trace nuqtasi endi noto'g'ri
+  useEffect(() => {
+    traceRef.current = null
+    draw()
+  }, [draw, series, scope, xVar, viewport])
+
+  // Tema/aksent almashinuvida ranglarni yangilash
+  useEffect(() => {
+    const observer = new MutationObserver(() => { draw() })
+    observer.observe(document.body, { attributes: true, attributeFilter: ['data-theme', 'data-accent'] })
+    return () => observer.disconnect()
+  }, [draw])
+
+  // Resize
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+    const observer = new ResizeObserver((entries) => {
+      const rect = entries[0]?.contentRect
+      if (!rect) return
+      sizeRef.current = { w: rect.width, h: rect.height }
+      setSizeTick((n) => n + 1)
+    })
+    observer.observe(container)
+    return () => observer.disconnect()
+  }, [])
+
+  // Wheel zoom (passive:false — preventDefault uchun)
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault()
+      const rect = canvas.getBoundingClientRect()
+      const { w, h } = sizeRef.current
+      traceRef.current = null
+      const scale = Math.exp(-e.deltaY * 0.0015)
+      vpRef.current = zoomViewport(vpRef.current, e.clientX - rect.left, e.clientY - rect.top, scale, w, h)
+      draw()
+      if (wheelTimer.current) clearTimeout(wheelTimer.current)
+      wheelTimer.current = setTimeout(() => {
+        onViewportCommit(vpRef.current)
+      }, WHEEL_COMMIT_MS)
+    }
+    canvas.addEventListener('wheel', onWheel, { passive: false })
+    return () => {
+      canvas.removeEventListener('wheel', onWheel)
+      if (wheelTimer.current) clearTimeout(wheelTimer.current)
+    }
+  }, [draw, onViewportCommit])
+
+  const hitTest = useCallback((sx: number, sy: number): Trace | null => {
+    const { w, h } = sizeRef.current
+    const vp = vpRef.current
+    const { series: currentSeries, scope: currentScope, xVar: currentXVar } = dataRef.current
+    const wx = screenToWorldX(vp, sx, w)
+    let best: Trace | null = null
+    let bestDist = HIT_RADIUS_PX
+    for (const s of currentSeries) {
+      if (!s.visible) continue
+      const pointScope = { ...currentScope, [currentXVar]: wx }
+      const y = s.fn(pointScope)
+      if (!Number.isFinite(y)) continue
+      const py = yToScreen(vp, y, h)
+      const dist = Math.abs(py - sy)
+      if (dist < bestDist) {
+        bestDist = dist
+        best = { sx, sy: py, wx, wy: y, color: s.color }
+      }
+    }
+    return best
+  }, [])
+
+  const localPoint = (e: ReactPointerEvent): { x: number; y: number } => {
+    const rect = (e.currentTarget as HTMLCanvasElement).getBoundingClientRect()
+    return { x: e.clientX - rect.left, y: e.clientY - rect.top }
+  }
+
+  const onPointerDown = (e: ReactPointerEvent<HTMLCanvasElement>): void => {
+    const canvas = e.currentTarget
+    try { canvas.setPointerCapture(e.pointerId) } catch { /* ignore */ }
+    const p = localPoint(e)
+    pointers.current.set(e.pointerId, p)
+
+    if (pointers.current.size === 1) {
+      gesture.current = {
+        type: 'pan',
+        startVp: vpRef.current,
+        startX: p.x,
+        startY: p.y,
+        moved: false,
+        startSx: p.x,
+        startSy: p.y,
+      }
+    } else if (pointers.current.size === 2) {
+      const [a, b] = [...pointers.current.values()]
+      gesture.current = {
+        type: 'pinch',
+        startVp: vpRef.current,
+        startDist: Math.hypot(a.x - b.x, a.y - b.y) || 1,
+        centerX: (a.x + b.x) / 2,
+        centerY: (a.y + b.y) / 2,
+        moved: true,
+      }
+      traceRef.current = null
+      draw()
+    }
+  }
+
+  const onPointerMove = (e: ReactPointerEvent<HTMLCanvasElement>): void => {
+    if (!pointers.current.has(e.pointerId)) return
+    const p = localPoint(e)
+    pointers.current.set(e.pointerId, p)
+    const g = gesture.current
+    const { w, h } = sizeRef.current
+    if (!g) return
+
+    if (g.type === 'pan' && pointers.current.size === 1) {
+      const dx = p.x - g.startX
+      const dy = p.y - g.startY
+      if (Math.hypot(dx, dy) > TAP_SLOP_PX) g.moved = true
+      vpRef.current = panViewport(g.startVp, dx, dy)
+      traceRef.current = null
+      draw()
+    } else if (g.type === 'pinch' && pointers.current.size >= 2) {
+      const [a, b] = [...pointers.current.values()]
+      const dist = Math.hypot(a.x - b.x, a.y - b.y) || 1
+      vpRef.current = zoomViewport(g.startVp, g.centerX, g.centerY, dist / g.startDist, w, h)
+      draw()
+    }
+  }
+
+  const finishPointer = (e: ReactPointerEvent<HTMLCanvasElement>): void => {
+    pointers.current.delete(e.pointerId)
+    if (pointers.current.size > 0) return
+    const g = gesture.current
+    gesture.current = null
+    if (!g) return
+
+    if (g.type === 'pan' && !g.moved) {
+      const trace = hitTest(g.startSx, g.startSy)
+      traceRef.current = trace
+      draw()
+      return
+    }
+    onViewportCommit(vpRef.current)
+  }
+
+  return (
+    <div ref={containerRef} className="relative h-full w-full">
+      <canvas
+        ref={canvasRef}
+        role="img"
+        aria-label={ariaLabel}
+        data-testid="graph-canvas"
+        className="block h-full w-full select-none"
+        style={{ touchAction: 'none' }}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={finishPointer}
+        onPointerCancel={finishPointer}
+        onContextMenu={(e) => e.preventDefault()}
+      />
+    </div>
+  )
+}

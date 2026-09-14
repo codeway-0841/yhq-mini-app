@@ -1,6 +1,7 @@
 import React from 'react'
 import { describe, expect, it, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
+import { MemoryRouter } from 'react-router-dom'
 import TestToolsHub from '../../../src/features/test/components/TestToolsHub'
 import TestCalculatorSheet from '../../../src/features/test/components/TestCalculatorSheet'
 import TestFormulasSheet from '../../../src/features/test/components/TestFormulasSheet'
@@ -124,12 +125,14 @@ describe('TestCalculatorSheet', () => {
 describe('TestFormulasSheet', () => {
   it('renders formulas and supports search', () => {
     render(
-      <TestFormulasSheet
-        open={true}
-        onClose={vi.fn()}
-        language="uz"
-        subjectId="matematika"
-      />
+      <MemoryRouter>
+        <TestFormulasSheet
+          open={true}
+          onClose={vi.fn()}
+          language="uz"
+          subjectId="matematika"
+        />
+      </MemoryRouter>
     )
 
     expect(screen.getByText('Formulalar va qoidalar')).toBeInTheDocument()

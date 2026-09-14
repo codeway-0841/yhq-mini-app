@@ -257,3 +257,20 @@ export const FORMULA_SUBJECTS: FormulaSubject[] = [
 export function formulaCount(s: FormulaSubject): number {
   return s.topics.reduce((n, t) => n + t.formulas.length, 0)
 }
+
+/** Grafik quruvchida chizish mumkin bo'lgan formulalar (id → ifoda).
+ *  `expr` — grafik sintaksisi (ASCII: ^ daraja, * ko'paytirish), `xVar` — X o'qi. */
+export interface FormulaPlot {
+  expr: string
+  xVar: string
+}
+
+export const FORMULA_PLOTS: Record<string, FormulaPlot> = {
+  'm-alg-1': { expr: 'a*x^2 + b*x + c', xVar: 'x' },
+  'f-mx-1':  { expr: 'm*a', xVar: 'a' },
+  'f-mx-2':  { expr: '(m*v^2)/2', xVar: 'v' },
+  'f-mx-4':  { expr: 'm*v', xVar: 'v' },
+  'f-mx-5':  { expr: 'u*i', xVar: 'i' },
+  'f-el-1':  { expr: 'u/r', xVar: 'r' },
+  'f-td-1':  { expr: 'c*m*dt', xVar: 'dt' },
+}

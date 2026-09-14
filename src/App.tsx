@@ -56,6 +56,7 @@ const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPa
 const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
 const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
+const graphChunk           = () => import('./features/graph/GraphPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -89,6 +90,7 @@ const ResetPasswordPage = lazy(resetPasswordChunk)
 const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
 const LibraryReaderPage = lazy(libraryReaderChunk)
+const GraphPage        = lazy(graphChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -101,6 +103,7 @@ const routeChunkPrefetchers = [
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
+  graphChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
 ]
@@ -310,6 +313,7 @@ export default function App() {
           <Route path="/speed"      element={<SpeedPage />} />
           <Route path="/flashcards" element={<FlashcardsPage />} />
           <Route path="/shpargalkalar" element={<FormulasPage />} />
+          <Route path="/grafik"     element={<GraphPage />} />
           <Route path="/qidiruv"    element={<SearchPage />} />
           <Route path="/ai-test"    element={<AiTestHub />} />
           <Route path="/ai-test/:id" element={<AiTestSession />} />

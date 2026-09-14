@@ -15,6 +15,7 @@ import {
   Zap,
   NotebookText,
   Camera,
+  LineChart,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -74,6 +75,9 @@ export default function ModesPage() {
       ? [{ icon: Zap,      label: tt('speedRound'),    onClick: () => navigate('/speed') }]
       : []),
     { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
+    ...(['matematika', 'fizika'].includes(subject.id)
+      ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
+      : []),
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
   ]
 

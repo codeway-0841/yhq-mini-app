@@ -1,0 +1,6 @@
+export { ExprError, type ExprErrorCode } from './errors'
+export { normalizeExpression } from './normalize'
+export { tokenize, type Token, type TokenType } from './tokenize'
+export { parseExpression, collectVars, type ExprNode, type ParsedExpression, type BinaryOp } from './parse'
+export { compileAst, compileExpression, type CompiledExpression, type Scope } from './compile'
+export { FUNCTIONS, CONSTANTS, FUNCTION_NAMES, isFunctionName, isConstantName, type BuiltinFunction } from './builtins'

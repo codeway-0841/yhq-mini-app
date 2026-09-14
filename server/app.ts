@@ -43,6 +43,7 @@ import aiTestsRouter      from './modules/ai-tests/ai-tests.router'
 import testSessionsRouter from './modules/test-sessions/test-sessions.router'
 import certificateRouter  from './modules/certificate/certificate.router'
 import shareRouter        from './modules/share/share.router'
+import graphsRouter       from './modules/graphs/graphs.router'
 import { paymentRouter }  from './modules/payments/payment.router'
 
 export function createApp() {
@@ -174,6 +175,7 @@ export function createApp() {
   app.use('/api', aiTestsRouter)
   app.use('/api', certificateRouter)
   app.use('/api', shareRouter)
+  app.use('/api', graphsRouter)
   app.use('/api/payments', paymentRouter)
 
   // 404 catch-all for unmatched /api routes

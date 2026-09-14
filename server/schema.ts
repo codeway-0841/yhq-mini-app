@@ -4,6 +4,7 @@ import {
   integer, boolean, jsonb, timestamp, unique, index, check, primaryKey, real,
 } from 'drizzle-orm/pg-core'
 import type { AiTestPayload, AiTestAnswers, AiTestGrading } from '../shared/ai-daily-test'
+import type { GraphPayload } from '../shared/contracts/graph'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
 export const fontSizeEnum = pgEnum('font_size',  ['small', 'medium', 'large'])
@@ -1062,4 +1063,26 @@ export const aiDailyTestAttempts = pgTable('ai_daily_test_attempts', {
   unique('uq_ai_attempt_token').on(t.userId, t.clientToken),
   index('idx_ai_attempt_user').on(t.userId),
   check('chk_ai_attempt_scores', sql`${t.scoreCorrect} >= 0 AND ${t.essayScore} BETWEEN 0 AND 10 AND ${t.coinsAwarded} >= 0`),
+])
+
+/**
+ * Grafik quruvchi — user saqlagan workspace'lar.
+ *
+ * Server matematikani HISOBLAMAYDI: `payload` faqat ifoda matni + viewport +
+ * slayder qiymatlari (shared/contracts/graph). `share_code` nullable unique —
+ * mavjud bo'lsa havola orqali boshqa login qilgan user ko'ra oladi.
+ * `updatedAt` ro'yxat tartibi uchun (eng yangisi birinchi).
+ */
+export const savedGraphs = pgTable('saved_graphs', {
+  id:        text('id').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  title:     text('title').notNull(),
+  payload:   jsonb('payload').$type<GraphPayload>().notNull(),
+  shareCode: text('share_code'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  index('idx_saved_graphs_user_time').on(t.userId, t.updatedAt.desc()),
+  unique('uq_saved_graphs_share').on(t.shareCode),
+  check('chk_saved_graphs_title_len', sql`char_length(${t.title}) <= 60`),
 ])

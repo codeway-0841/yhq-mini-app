@@ -6,12 +6,12 @@
  */
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ChevronLeft, Search, Star } from 'lucide-react'
+import { ChevronLeft, LineChart, Search, Star } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { getSubject } from '../../shared/config/subjects'
-import { FORMULA_SUBJECTS, formulaCount } from '../../content/formulas'
+import { FORMULA_SUBJECTS, FORMULA_PLOTS, formulaCount, type FormulaPlot } from '../../content/formulas'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 
@@ -25,14 +25,16 @@ const ALL = FORMULA_SUBJECTS.flatMap((s) =>
   s.topics.flatMap((t) =>
     t.formulas.map((x) => ({ ...x, subjectId: s.subjectId, topicName: t.name, topicNameRu: t.nameRu })),
   ),
-)
+).map((x) => ({ ...x, plot: FORMULA_PLOTS[x.id] as FormulaPlot | undefined }))
 
-function FormulaCard({ item, fav, onFav, lang }: {
+function FormulaCard({ item, fav, onFav, onPlot, lang }: {
   item: (typeof ALL)[number]
   fav: boolean
   onFav: () => void
+  onPlot: () => void
   lang: 'uz' | 'ru'
 }) {
+  const tt = useT(lang)
   const s = getSubject(item.subjectId)
   const Icon = s.icon
   const isRu = lang === 'ru'
@@ -46,7 +48,14 @@ function FormulaCard({ item, fav, onFav, lang }: {
         className="absolute top-2.5 right-2.5 p-1 cursor-pointer">
         <Star size={15} className={fav ? 'text-pwarning fill-pwarning' : 'text-psubtle'} />
       </button>
-      <div className="flex items-center gap-1.5 mb-2 pr-6">
+      {item.plot && (
+        <button type="button" onClick={(e) => { e.stopPropagation(); onPlot() }}
+          aria-label={tt('graphTitle')}
+          className="absolute top-2.5 right-9 p-1 cursor-pointer text-psubtle transition-colors hover:text-pprimary">
+          <LineChart size={15} />
+        </button>
+      )}
+      <div className={`flex items-center gap-1.5 mb-2 ${item.plot ? 'pr-12' : 'pr-6'}`}>
         <Icon size={13} style={{ color: s.color }} />
         <span className="text-[10px] font-semibold text-psubtle truncate">
           {isRu ? item.topicNameRu : item.topicName}
@@ -80,6 +89,13 @@ export default function FormulasPage() {
       localStorage.setItem(FAVS_KEY, JSON.stringify(next))
       return next
     })
+  }
+
+  const plotFormula = (x: (typeof ALL)[number]) => {
+    if (!x.plot) return
+    haptics.impact('light')
+    playSound('click')
+    navigate(`/grafik?e=${encodeURIComponent(x.plot.expr)}&x=${encodeURIComponent(x.plot.xVar)}`)
   }
 
   const searching = query.trim().length > 0
@@ -195,7 +211,7 @@ export default function FormulasPage() {
           </p>
           <div className="grid grid-cols-2 gap-2.5 px-5 mb-4">
             {favItems.map((x) => (
-              <FormulaCard key={x.id} item={x} lang={lang} fav onFav={() => toggleFav(x.id)} />
+              <FormulaCard key={x.id} item={x} lang={lang} fav onFav={() => toggleFav(x.id)} onPlot={() => plotFormula(x)} />
             ))}
           </div>
         </>
@@ -205,7 +221,7 @@ export default function FormulasPage() {
       <div className="grid grid-cols-2 gap-2.5 px-5">
         {visible.map((x) => (
           <FormulaCard key={x.id} item={x} lang={lang}
-            fav={favs.includes(x.id)} onFav={() => toggleFav(x.id)} />
+            fav={favs.includes(x.id)} onFav={() => toggleFav(x.id)} onPlot={() => plotFormula(x)} />
         ))}
       </div>
       {visible.length === 0 && (
