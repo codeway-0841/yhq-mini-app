@@ -9,7 +9,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import {
-  Bookmark, Camera, ChevronLeft, Copy, FlaskConical, MessageSquareQuote,
+  Bookmark, Camera, Copy, FlaskConical, MessageSquareQuote,
   Redo2, RotateCcw, Table2, Undo2, Wand2,
 } from 'lucide-react'
 import GraphCanvas, { type GraphSeries, type TangentOverlay, type IntegralOverlay } from './components/GraphCanvas'
@@ -41,6 +41,7 @@ import {
 import { buildGraphChatContext } from './lib/chat-context'
 import type { GraphPreset } from '../../content/graph-presets'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT, t, type Lang } from '../../shared/i18n'
 import { track } from '../../shared/lib/analytics'
@@ -579,58 +580,53 @@ export default function GraphPage() {
 
   return (
     <div className="font-display bg-pcanvas pb-6">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-3">
-        <button
-          type="button"
-          onClick={() => goBack(navigate)}
-          aria-label={tt('backWord')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <div className="min-w-0 flex-1">
-          <h1 className="truncate text-[17px] font-semibold leading-tight text-pfg">
-            {sharedTitle ?? tt('graphTitle')}
-          </h1>
-          <p className="text-[11px] text-psubtle">{tt('graphSubtitle')}</p>
-        </div>
-        <button
-          type="button"
-          onClick={undo}
-          disabled={history.length === 0}
-          aria-label={tt('graphUndo')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <Undo2 size={18} strokeWidth={1.75} />
-        </button>
-        <button
-          type="button"
-          onClick={redo}
-          disabled={future.length === 0}
-          aria-label={tt('graphRedo')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <Redo2 size={18} strokeWidth={1.75} />
-        </button>
-        <button
-          type="button"
-          onClick={() => setPresetsOpen(true)}
-          aria-label={tt('graphPresets')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <Wand2 size={18} strokeWidth={1.75} />
-        </button>
-        {!readOnly && (
-          <button
-            type="button"
-            onClick={() => setSavedOpen(true)}
-            aria-label={tt('graphSavedGraphs')}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-          >
-            <Bookmark size={18} strokeWidth={1.75} />
-          </button>
-        )}
-      </header>
+      <PageHeader
+        title={sharedTitle ?? tt('graphTitle')}
+        subtitle={tt('graphSubtitle')}
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="mb-3"
+        actions={
+          <>
+            <button
+              type="button"
+              onClick={undo}
+              disabled={history.length === 0}
+              aria-label={tt('graphUndo')}
+              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            >
+              <Undo2 size={18} strokeWidth={1.75} />
+            </button>
+            <button
+              type="button"
+              onClick={redo}
+              disabled={future.length === 0}
+              aria-label={tt('graphRedo')}
+              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            >
+              <Redo2 size={18} strokeWidth={1.75} />
+            </button>
+            <button
+              type="button"
+              onClick={() => setPresetsOpen(true)}
+              aria-label={tt('graphPresets')}
+              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            >
+              <Wand2 size={18} strokeWidth={1.75} />
+            </button>
+            {!readOnly && (
+              <button
+                type="button"
+                onClick={() => setSavedOpen(true)}
+                aria-label={tt('graphSavedGraphs')}
+                className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              >
+                <Bookmark size={18} strokeWidth={1.75} />
+              </button>
+            )}
+          </>
+        }
+      />
 
       {readOnly && (
         <div className="mx-5 mb-3 flex items-center gap-3 rounded-2xl bg-psurface p-3">

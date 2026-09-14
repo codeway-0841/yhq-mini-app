@@ -141,8 +141,38 @@ body[data-platform='native'] {
    elementlar uchun esa bottom-[calc(<bazaviy>+var(--safe-bottom,0px))] yozing. */
 .safe-bottom { padding-bottom: var(--safe-bottom, 0px); }
 
+/* Sahifa headerlari SSOT vizuali (PageHeader + maxsus headerlar — 2026-09-15
+   "hamma joyda bir xil header" fix): native ilovalar kabi shaffof-blur fon;
+   hairline divider FAQAT scroll'da ko'rinadi (scroll-driven animation,
+   progressive enhancement — qo'llamagan WebView'da chiziqsiz, funksiya
+   buzilmaydi). Elementning sticky/safe-top klasslari o'zida qoladi. */
+.page-header {
+  background: color-mix(in srgb, var(--p-canvas) 82%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-bottom: 1px solid transparent;
+}
+@supports (animation-timeline: scroll()) {
+  .page-header {
+    animation: page-header-divider 1ms linear both;
+    animation-timeline: scroll();
+    animation-range: 0 28px;
+  }
+}
+@keyframes page-header-divider {
+  from { border-bottom-color: transparent; }
+  to { border-bottom-color: color-mix(in srgb, var(--p-line) 75%, transparent); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-header { animation: none; }
+}
+
 /* Route transition — sahifalar orasida silliq o'tish (0 dan boshlash header'ni yo'qotib miltillatardi) */
 .route-page { animation: routeIn 140ms ease-out both; }
+/* Dock'siz (ichki) sahifalarda dock-zaxira padding o'lik bo'shliqqa aylanmasin
+   (App.tsx data-tabroot; className STATIK — safe-area testi regex'i uchun).
+   Specificity (class+attr) Tailwind pb-* utilitasini yengadi. */
+.route-page[data-tabroot="false"] { padding-bottom: calc(1rem + var(--safe-bottom, 0px)); }
 @keyframes routeIn {
   from { opacity: 0.85; }
   to   { opacity: 1; }

@@ -8,7 +8,8 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { ChevronLeft, RotateCcw, PartyPopper, TrafficCone, Check, X, Layers } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
+import { ChevronLeft, RotateCcw, PartyPopper, TrafficCone, Check, X } from 'lucide-react'
 import { signCategories, getSignsByCategory } from '../../content/signs'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -100,14 +101,7 @@ export default function FlashcardsPage() {
   if (!cat) {
     return (
       <div className="font-display bg-pcanvas text-pfg pb-6">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-          <button onClick={() => goBack(navigate)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-          <Layers size={18} className="text-pprimary" />
-          <h1 className="text-lg font-semibold tracking-tight">Flashcards</h1>
-        </header>
+        <PageHeader title="Flashcards" onBack={() => goBack(navigate)} backLabel={isRu ? 'Назад' : 'Orqaga'} className="mb-4" />
         <div className="px-5">
           <p className="text-[12px] text-psubtle mb-4">
             {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
@@ -182,21 +176,20 @@ export default function FlashcardsPage() {
   // ── Karta ekrani ──
   return (
     <div className="font-display bg-pcanvas text-pfg flex flex-col pb-6">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline pb-2 mb-2">
-        <div className="flex items-center justify-between px-5 py-1">
-          <button onClick={() => setCat(null)} aria-label={isRu ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-xl text-psubtle transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-          <span className="text-[12px] font-semibold text-psubtle">{catName}</span>
+      <PageHeader
+        title={catName}
+        onBack={() => setCat(null)}
+        backLabel={isRu ? 'Назад' : 'Orqaga'}
+        className="mb-2 pb-2"
+        actions={
           <span className="text-[12px] font-semibold text-pmuted tabular-nums">{idx + 1}/{deck.length}</span>
-        </div>
-
+        }
+      >
         {/* Progress */}
-        <div className="mx-5 mt-1 h-[3px] rounded-[2px] bg-plineStrong overflow-hidden">
+        <div className="mx-4 mt-1 mb-2 h-[3px] rounded-[2px] bg-plineStrong overflow-hidden">
           <div className="h-full rounded-[2px] bg-pprimary transition-[width,background-color] duration-500" style={{ width: `${progress}%` }} />
         </div>
-      </header>
+      </PageHeader>
 
       {/* FLIP karta */}
       <div className="flex-1 flex items-center justify-center px-6 py-5">

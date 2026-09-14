@@ -12,7 +12,7 @@ export function DuelHeader({ title, inRound, yourScore, oppScore, onBack }: {
 }) {
   const navigate = useNavigate()
   return (
-    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
       <div className="flex items-center justify-between px-4 py-1">
         <button onClick={onBack ?? (() => goBack(navigate))} aria-label="Orqaga" className="text-pmuted size-11 rounded-full flex items-center justify-center hover:bg-psurface hover:text-pfg transition-colors"><ChevronLeft size={22} /></button>
         <div className="flex items-center gap-2">

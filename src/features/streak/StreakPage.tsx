@@ -13,6 +13,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Zap, Flame, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle, X } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { api, type DailyHistory } from '../../shared/api'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -96,24 +97,23 @@ export default function StreakPage() {
 
   return (
     <div className="px-5 pb-6">
-      {/* Header — silliq, toza qattiq fon boshqa sahifalar kabi */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-5 px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
+      {/* Header (PageHeader SSOT + info action) */}
+      <PageHeader
+        title={tt('intizomTitle')}
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-5 mb-4"
+        actions={
+          <button
+            type="button"
+            onClick={() => setShowInfo(true)}
+            aria-label={tt('howItWorks')}
+            className="grid size-9 place-items-center rounded-full bg-psurface text-psubtle hover:text-pfg transition-all active:scale-90"
+          >
+            <HelpCircle size={18} strokeWidth={1.75} />
           </button>
-          <h1 className="text-lg font-bold text-pfg">{tt('intizomTitle')}</h1>
-        </div>
-        <button
-          type="button"
-          onClick={() => setShowInfo(true)}
-          aria-label={tt('howItWorks')}
-          className="grid size-9 place-items-center rounded-full bg-psurface text-psubtle hover:text-pfg transition-all active:scale-90"
-        >
-          <HelpCircle size={18} strokeWidth={1.75} />
-        </button>
-      </header>
+        }
+      />
 
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
       <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">

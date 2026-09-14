@@ -1,7 +1,6 @@
 import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ChevronLeft,
   BookOpen,
   Ticket,
   Swords,
@@ -21,7 +20,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useToast } from '../../shared/components/ToastContainer'
 import { useT } from '../../shared/i18n'
-import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { ModeGridCard } from './components/GridCards'
 
 export default function ModesPage() {
@@ -83,18 +82,8 @@ export default function ModesPage() {
 
   return (
     <div className="px-4 pb-20">
-      {/* Header — boshqa sahifalar bilan bir xil toza sticky safe-top header */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-        <button
-          type="button"
-          onClick={() => goBack(navigate)}
-          aria-label={tt('backWord')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <h1 className="text-lg font-bold text-pfg">{tt('modesTitle')}</h1>
-      </header>
+      {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
+      <PageHeader title={tt('modesTitle')} size="lg" className="-mx-4 mb-4" />
 
       {/* 3-ustunli rejimlar panjarasi */}
       <div className="grid grid-cols-3 gap-3">

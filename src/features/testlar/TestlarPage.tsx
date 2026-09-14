@@ -6,12 +6,12 @@
  */
 
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronLeft, ChevronRight, Search, Sparkles, Lock, Camera } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronRight, Search, Sparkles, Lock, Camera } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
-import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
 import { isEffectivePremium, isTestModePremium } from '../../../shared/test-access'
@@ -101,13 +101,8 @@ export default function TestlarPage() {
 
   return (
     <div className="px-4 pb-20">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-        <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-        <h1 className="text-xl font-semibold">{tt('testlarTitle')}</h1>
-      </header>
+      {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
+      <PageHeader title={tt('testlarTitle')} size="lg" className="-mx-4 mb-4" />
 
       {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
       <div className="mb-4">

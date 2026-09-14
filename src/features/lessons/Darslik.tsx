@@ -349,7 +349,7 @@ export default function Darslik() {
 
   return (
     <div ref={rootRef} className="lesson-course px-4 pb-4" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
-      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center justify-between mb-4">
+      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">

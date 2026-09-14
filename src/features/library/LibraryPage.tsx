@@ -1,7 +1,8 @@
 import { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { ChevronLeft, Search, SearchX, X, type LucideIcon } from 'lucide-react'
+import { Search, SearchX, X, type LucideIcon } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { cn } from '../../shared/lib/cn'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -126,26 +127,15 @@ export default function LibraryPage() {
 
   return (
     <div className="px-4 pb-4">
-      {/* Sticky header — boshqa sahifalar bilan bir xil safe-top naqshi */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 pb-2.5 bg-pcanvas border-b border-pline mb-3">
-        <div className="flex items-center gap-2 py-2.5">
-          <button
-            type="button"
-            onClick={() => goBack(navigate)}
-            aria-label={tt('backWord')}
-            className="grid size-10 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-          >
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-          <div className="min-w-0 flex-1">
-            <h1 className="truncate text-lg font-bold text-pfg">{tt('library')}</h1>
-            <p className="truncate text-[11.5px] text-pmuted">
-              {tt('librarySubtitle').replace('{count}', String(libraryBooks.length))}
-            </p>
-          </div>
-        </div>
-
-        <div className="relative">
+      {/* Sticky header (PageHeader SSOT) + qidiruv */}
+      <PageHeader
+        title={tt('library')}
+        subtitle={tt('librarySubtitle').replace('{count}', String(libraryBooks.length))}
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-3"
+      >
+        <div className="relative px-4 pb-2.5">
           <Search
             size={16}
             strokeWidth={2}
@@ -172,7 +162,7 @@ export default function LibraryPage() {
             </button>
           )}
         </div>
-      </header>
+      </PageHeader>
 
       {/* Sinf filtri */}
       <div className="-mx-4 flex snap-x gap-2 overflow-x-auto px-4 pb-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

@@ -46,7 +46,7 @@ export default function AdminPage() {
       {/* Sticky header — FAQAT bg'siz-shaffof EMAS (opaque): scroll'da ostidan
           o'tayotgan kontent /90 fonda "qanab" ko'rinardi. top=--safe-top-body
           endi VIEWPORT'ga nisbatan to'g'ri ishlaydi (App.tsx scrollport fix). */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-psurface border-b border-pline px-4 py-2.5">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header px-4 py-2.5">
         <div className="flex items-center justify-between">
           <button
             onClick={() => goBack(navigate)}

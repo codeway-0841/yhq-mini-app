@@ -7,19 +7,19 @@ import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 
-const HIDDEN_PREFIXES = [
-  '/test/',
-  '/ai-test/',
-  '/adaptive',
-  '/speed',
-  '/ai-tutor',
-  '/snap-solve',
-  '/login',
-  '/onboarding',
-  '/verify-email',
-  '/reset-password',
-  '/kutubxona/kitob/',
-]
+/**
+ * Pastki dock FAQAT tab-root (asosiy bo'lim) sahifalarda ko'rinadi.
+ *
+ * Qonun (iOS HIG "Tab Bars" + Material 3 "Navigation bar"): tab bar FAQAT
+ * top-level destination'larda — ichki/detail/flow ekranlarda yashirinadi
+ * (`hidesBottomBarWhenPushed`). Ichki sahifalarda orqaga qaytish —
+ * PageHeader'dagi back tugma orqali (2026-09-15 "har joyda nav" fix:
+ * eski HIDDEN_PREFIXES denylist o'rniga allowlist).
+ */
+export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
+export function isTabRootRoute(pathname: string): boolean {
+  return (TAB_ROOT_PATHS as readonly string[]).includes(pathname)
+}
 
 interface NavItem {
   id: string
@@ -37,8 +37,8 @@ export default function IosDock() {
   const tt = useT(lang)
   const modalCount = useModalCount()
 
-  const isHiddenRoute = HIDDEN_PREFIXES.some((prefix) => location.pathname.startsWith(prefix))
-  const isVisible = !isHiddenRoute && modalCount === 0
+  const isTabRoot = isTabRootRoute(location.pathname)
+  const isVisible = isTabRoot && modalCount === 0
 
   const navItems: NavItem[] = useMemo(() => [
     {
@@ -89,7 +89,7 @@ export default function IosDock() {
     navigate(item.path)
   }, [navigate])
 
-  if (isHiddenRoute) return null
+  if (!isTabRoot) return null
 
   return (
     <div

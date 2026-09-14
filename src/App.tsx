@@ -1,5 +1,5 @@
 import { useEffect, lazy, Suspense, useState, type ReactNode } from 'react'
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import PageLoader from './shared/components/PageLoader'
 import SplashScreen from './features/onboarding/SplashScreen'
 import { t } from './shared/i18n'
@@ -8,7 +8,7 @@ import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
-import IosDock from './shared/components/IosDock'
+import IosDock, { isTabRootRoute } from './shared/components/IosDock'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -113,6 +113,10 @@ function prefetchRouteChunks() {
 
 function Layout({ children }: { children: ReactNode }) {
   const { pageRef, navigate } = usePlatformNavigation()
+  // Dock FAQAT tab-root'larda (IosDock allowlist) — ichki sahifalarda pastki
+  // 4.5rem dock-zaxira o'lik bo'shliqqa aylanmasligi uchun data-atribut orqali
+  // CSS'da toraytiriladi (className STATIK qoladi — safe-area testi regex'i).
+  const { pathname } = useLocation()
 
   // Duel invite-link (ikki manba):
   //  1) startapp deep-link: ?startapp=duel-xxxx yoki 6-digit PIN → start_param
@@ -136,6 +140,7 @@ function Layout({ children }: { children: ReactNode }) {
     <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip">
       <div
         ref={pageRef}
+        data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
         // pb: 4.5rem bazaviy (iOS Dock balandligi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
         className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0"
       >

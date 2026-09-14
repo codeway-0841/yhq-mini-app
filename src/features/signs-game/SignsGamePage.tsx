@@ -13,6 +13,7 @@ import { GAME_SIGNS, getGameSign, type GameSign } from '../../content/signs-game
 import { buildSpeedRounds, buildMatchPairs, type SpeedRound, type MatchTile } from './game-logic'
 import SignIcon from './SignIcon'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -277,13 +278,12 @@ export default function SignsGamePage() {
 
   return (
     <div className="font-display bg-pcanvas text-pfg pb-6">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-5">
-        <button onClick={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))} aria-label="Orqaga"
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <h1 className="text-lg font-bold tracking-tight">{tt('signsGameTitle')}</h1>
-      </header>
+      <PageHeader
+        title={tt('signsGameTitle')}
+        onBack={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))}
+        backLabel="Orqaga"
+        className="mb-5"
+      />
 
       <div className="px-5">
         {mode === 'hub' && (

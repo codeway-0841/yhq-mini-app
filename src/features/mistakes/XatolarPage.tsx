@@ -11,7 +11,8 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { HeartCrack, Play, ChevronRight, Flame, ChevronLeft, Sparkles } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
+import { HeartCrack, Play, ChevronRight, Flame, Sparkles } from 'lucide-react'
 import { config } from '../../shared/config'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -156,13 +157,7 @@ export default function XatolarPage() {
 
   return (
     <div className="px-4 pb-4">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-        <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <h1 className="text-xl font-semibold">{tt('mistakesTitle')}</h1>
-      </header>
+      <PageHeader title={tt('mistakesTitle')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
 
       {/* Bo'sh holat */}
       {total === 0 && (

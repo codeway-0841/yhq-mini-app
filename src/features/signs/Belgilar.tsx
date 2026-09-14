@@ -1,7 +1,8 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
-import { X, Search, ChevronLeft, TrafficCone, Gamepad2, Layers, BookOpen, ShieldAlert, ChevronDown, ChevronUp } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
+import { X, Search, TrafficCone, Gamepad2, Layers, BookOpen, ShieldAlert, ChevronDown, ChevronUp } from 'lucide-react'
 import { signCategories, getSignsByCategory, searchSigns, type RoadSign, type SignCategory } from '../../content/signs'
 import { rulesChapters } from '../../content/rules'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
@@ -154,19 +155,17 @@ function SignsGrid({
 
   return (
     <div>
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-3 mb-4">
-        <button
-          onClick={onBack}
-          aria-label={isRu ? 'Назад' : 'Orqaga'}
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <h2 className="text-base font-semibold text-pfg truncate">{categoryName}</h2>
-        <span className="text-xs text-pmuted ml-auto bg-psurface px-2.5 py-1 rounded-full flex-shrink-0">
-          {category.count} {isRu ? 'знаков' : 'ta'}
-        </span>
-      </header>
+      <PageHeader
+        title={categoryName}
+        onBack={onBack}
+        backLabel={isRu ? 'Назад' : 'Orqaga'}
+        className="-mx-4 mb-4"
+        actions={
+          <span className="text-xs text-pmuted bg-psurface px-2.5 py-1 rounded-full flex-shrink-0">
+            {category.count} {isRu ? 'знаков' : 'ta'}
+          </span>
+        }
+      />
       <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
         {signs.map((sign) => {
           const signName = isRu ? (sign.nameRu || sign.name) : sign.name
@@ -351,30 +350,28 @@ export default function Belgilar() {
     <div className="px-4 pb-4">
       {!selectedCategory && (
         <>
-          <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-            <button
-              onClick={() => goBack(navigate)}
-              aria-label={isRu ? 'Назад' : 'Orqaga'}
-              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-            >
-              <ChevronLeft size={20} strokeWidth={1.75} />
-            </button>
-            <h1 className="flex-1 font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
-              {isRu ? 'Правила и знаки' : "Yo'l qoidalari"}
-            </h1>
-            <button
-              onClick={() => navigate('/belgilar-oyini')}
-              className="h-[32px] px-2.5 rounded-xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
-            >
-              <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
-            </button>
-            <button
-              onClick={() => navigate('/flashcards')}
-              className="h-[32px] px-2.5 rounded-xl bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
-            >
-              <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
-            </button>
-          </header>
+          <PageHeader
+            title={isRu ? 'Правила и знаки' : "Yo'l qoidalari"}
+            onBack={() => goBack(navigate)}
+            backLabel={isRu ? 'Назад' : 'Orqaga'}
+            className="-mx-4 mb-4"
+            actions={
+              <>
+                <button
+                  onClick={() => navigate('/belgilar-oyini')}
+                  className="h-[32px] px-2.5 rounded-xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
+                >
+                  <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
+                </button>
+                <button
+                  onClick={() => navigate('/flashcards')}
+                  className="h-[32px] px-2.5 rounded-xl bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
+                >
+                  <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
+                </button>
+              </>
+            }
+          />
 
           {/* Tab switcher */}
           <div className="flex gap-1.5 p-1 bg-psurface rounded-2xl mb-4 shadow-xs">

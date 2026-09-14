@@ -102,6 +102,40 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
+  it('qonun (allowlist): dock FAQAT 4 tab-root\'da — /profil, /biletlar, /mavzular yashirin', () => {
+    for (const path of ['/profil', '/biletlar', '/mavzular', '/kutubxona', '/reyting', '/xatolar', '/premium', '/shop', '/darslik', '/qidiruv', '/grafik']) {
+      const { unmount } = render(
+        <MemoryRouter initialEntries={[path]}>
+          <IosDock />
+        </MemoryRouter>,
+      )
+      expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' }), path).not.toBeInTheDocument()
+      unmount()
+    }
+  })
+
+  it('qonun (allowlist): 4 tab-root\'ning HAMMASIDA ko\'rinadi — /, /testlar, /octagon, /rejimlar', () => {
+    for (const path of ['/', '/testlar', '/octagon', '/rejimlar']) {
+      const { unmount } = render(
+        <MemoryRouter initialEntries={[path]}>
+          <IosDock />
+        </MemoryRouter>,
+      )
+      expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' }), path).toBeInTheDocument()
+      unmount()
+    }
+  })
+
+  it('duel match (/octagon/abc) — flow ekran, dock yashirin', () => {
+    render(
+      <MemoryRouter initialEntries={['/octagon/abc123']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+
+    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
+  })
+
   it('hides dock on camera AI tutor route /ai-tutor', () => {
     render(
       <MemoryRouter initialEntries={['/ai-tutor']}>

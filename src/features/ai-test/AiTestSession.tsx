@@ -10,11 +10,12 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ChevronLeft, Sparkles, Lock, AlertTriangle } from 'lucide-react'
+import { Sparkles, Lock, AlertTriangle } from 'lucide-react'
 import { api, ApiError } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { track } from '../../shared/lib/analytics'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -237,13 +238,12 @@ export default function AiTestSession() {
     return (
       <div className="px-4 pb-4">
         {result.coinsAwarded > 0 && <Confetti />}
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2 mb-4">
-          <button onClick={() => navigate('/ai-test')} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-          <h1 className="text-xl font-semibold truncate">{tt('aiTestResultTitle')} · {test.title}</h1>
-        </header>
+        <PageHeader
+          title={`${tt('aiTestResultTitle')} · ${test.title}`}
+          onBack={() => navigate('/ai-test')}
+          backLabel={tt('backWord')}
+          className="-mx-4 mb-4"
+        />
 
         {/* Xulosa kartasi */}
         <div className="rounded-2xl bg-pcard p-5 mb-4 text-center shadow-xs">
@@ -276,24 +276,22 @@ export default function AiTestSession() {
   // ── SESSIYA ────────────────────────────────────────────────────────────────
   return (
     <div className="px-4 pb-28">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 bg-pcanvas border-b border-pline mb-3">
-        <div className="flex items-center gap-2">
-          <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
-          </button>
-          <div className="flex-1 min-w-0">
-            <h1 className="text-[17px] font-semibold truncate">{test.title}</h1>
-          </div>
+      <PageHeader
+        title={test.title}
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-3"
+        actions={
           <span className="text-[13px] font-bold tabular-nums" style={{ color: 'var(--p-purple)' }}>
             {answeredCount}/{AI_TEST_TOTAL_TASKS}
           </span>
-        </div>
-        <div className="mt-2 h-1.5 rounded-full bg-psurface overflow-hidden">
+        }
+      >
+        <div className="mx-4 mt-2 mb-2.5 h-1.5 rounded-full bg-psurface overflow-hidden">
           <div className="h-full rounded-full transition-[width] duration-300"
             style={{ width: `${(answeredCount / AI_TEST_TOTAL_TASKS) * 100}%`, background: 'var(--p-purple)' }} />
         </div>
-      </header>
+      </PageHeader>
 
       {submitError && (
         <div role="status" className="mb-3 flex items-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-[12.5px] font-medium text-pfg shadow-xs">

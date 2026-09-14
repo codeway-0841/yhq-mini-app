@@ -150,7 +150,7 @@ export default function AdaptivePage() {
   if (!isPremium && sessionCount >= ADAPTIVE_FREE_SESSION_LIMIT) {
     return (
       <div className="flex flex-col min-h-screen bg-pcanvas">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
           <div className="flex items-center justify-between px-4 py-2.5">
             <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
               <X size={20} />
@@ -200,7 +200,7 @@ export default function AdaptivePage() {
   if (!q) {
     return (
       <div className="flex flex-col min-h-screen bg-pcanvas">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
           <div className="flex items-center justify-between px-4 py-2.5">
             <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
               <X size={20} />
@@ -255,7 +255,7 @@ export default function AdaptivePage() {
 
   return (
     <div className="flex flex-col bg-pcanvas">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
         <div className="flex items-center justify-between px-4 py-2.5">
           <button onClick={() => goBack(navigate)} className="text-pmuted p-1 hover:text-pfg transition-colors"><X size={20} /></button>
           <div className="flex items-center gap-2">

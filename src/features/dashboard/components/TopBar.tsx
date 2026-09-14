@@ -70,7 +70,7 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings, onPr
   const isDark = theme === 'light' ? false : (theme === 'dark' ? true : (typeof document !== 'undefined' ? document.body.dataset.theme !== 'light' : true))
 
   return (
-    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] bg-pcanvas border-b border-pline mb-3">
+    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3">
       <div className="flex items-center justify-between gap-2 px-4 py-2">
         <button
           type="button"

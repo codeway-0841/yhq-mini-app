@@ -7,10 +7,11 @@
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, ChevronLeft, Gift, Star, Ticket } from 'lucide-react'
+import { Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, Gift, Star, Ticket } from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api } from '../../shared/api'
 import { ACCENT_THEMES } from '../../shared/config/themes'
@@ -73,14 +74,8 @@ export default function PremiumPage() {
   return (
     <div className="font-display bg-pcanvas text-pfg pb-8">
       {trialDone && <Confetti count={36} />}
-      {/* Header */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-5 py-2.5 bg-pcanvas border-b border-pline flex items-center gap-2">
-        <button onClick={() => goBack(navigate)} aria-label="Orqaga"
-          className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={20} strokeWidth={1.75} />
-        </button>
-        <h1 className="text-lg font-semibold tracking-tight">Premium</h1>
-      </header>
+      {/* Header (PageHeader SSOT — tab-root emas, back bor) */}
+      <PageHeader title="Premium" onBack={() => goBack(navigate)} backLabel="Orqaga" />
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
