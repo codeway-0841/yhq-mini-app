@@ -76,6 +76,8 @@ export function createApp() {
   app.use('/api/certificate/send', express.json({ limit: '5mb' }))
   // AI Tutor suratdan yechish (Snap & Solve) — siqilgan base64 rasm yuklanadi (~1-3MB)
   app.use('/api/tutor/solve-photo', express.json({ limit: '6mb' }))
+  // AI Tutor grafik tahlili — canvas PNG base64 (grafik quruvchi)
+  app.use('/api/tutor/graph-analyze', express.json({ limit: '6mb' }))
   app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.

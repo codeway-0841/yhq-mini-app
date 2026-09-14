@@ -18,3 +18,6 @@ export const MARKER_COLORS: Record<'root' | 'extrema' | 'cross', string> = {
   extrema: '#f5a524',
   cross: '#8e4ec6',
 }
+
+/** Lab regression chizig'i va o'lchov nuqtalari */
+export const REGRESSION_COLOR = '#f5a524'

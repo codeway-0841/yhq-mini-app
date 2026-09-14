@@ -1,5 +1,5 @@
 /**
- * Tahlil paneli — hosila, urinma va integral (Riemann) boshqaruvi.
+ * Tahlil paneli — hosila, urinma, sekant (h→0) va integral (Riemann).
  * Faqat ko'rsatish/qaytarish; hisob-kitob GraphPage'da (math core orqali).
  */
 import { Pause, Play } from 'lucide-react'
@@ -28,6 +28,14 @@ interface Props {
   onX0: (v: number) => void
   fValue: number
   slopeValue: number
+
+  secantOn: boolean
+  onSecant: (v: boolean) => void
+  h: number
+  onH: (v: number) => void
+  secantSlope: number
+  secantPlaying: boolean
+  onToggleSecantPlay: () => void
 
   integralOn: boolean
   onIntegral: (v: boolean) => void
@@ -96,10 +104,28 @@ function ToggleRow({ label, checked, onChange }: {
   )
 }
 
+function PlayRow({ label, playing, onToggle }: {
+  label: string
+  playing: boolean
+  onToggle: () => void
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      className="flex h-9 items-center justify-center gap-2 rounded-xl bg-psurface text-[12.5px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+    >
+      {playing ? <Pause size={14} strokeWidth={2} /> : <Play size={14} strokeWidth={2} />}
+      {label}
+    </button>
+  )
+}
+
 export default function AnalysisCard({
   language, options, selectedId, onSelect,
   derivativeOn, onDerivative,
   tangentOn, onTangent, x0, onX0, fValue, slopeValue,
+  secantOn, onSecant, h, onH, secantSlope, secantPlaying, onToggleSecantPlay,
   integralOn, onIntegral, a, b, onA, onB, rects, onRects, area, riemannSum,
   pointPlaying, onTogglePoint,
   markersOn, onMarkers, rootCount, extremaCount, crossCount,
@@ -123,7 +149,7 @@ export default function AnalysisCard({
                 type="button"
                 onClick={() => onSelect(o.id)}
                 className={`flex h-8 shrink-0 items-center gap-1.5 rounded-xl px-2.5 font-mono text-[12px] transition-colors ${
-                  active ? 'bg-psurface text-pfg' : 'text-psubtle hover:text-pfg'
+                  active ? 'bg-psurface text-pfg' : 'text-psubtle hover:text-fg'
                 }`}
               >
                 <span className="size-3 rounded-full" style={{ background: curveColor(o.colorIdx) }} />
@@ -137,24 +163,37 @@ export default function AnalysisCard({
       <div className="flex flex-col gap-3">
         <ToggleRow label={tt('graphDerivative')} checked={derivativeOn} onChange={onDerivative} />
 
+        {(tangentOn || secantOn) && (
+          <div className="flex flex-col gap-1.5">
+            <SliderRow label="x₀" value={x0} min={-10} max={10} step={0.1} onChange={onX0} display={fmt(x0)} />
+            <p className="text-[11.5px] text-pmuted">
+              f(x₀) = <span className="font-mono tabular-nums text-pfg">{fmt(fValue)}</span>
+              {' · '}
+              f′(x₀) = <span className="font-mono tabular-nums text-pfg">{fmt(slopeValue)}</span>
+            </p>
+          </div>
+        )}
+
         <div>
           <ToggleRow label={tt('graphTangent')} checked={tangentOn} onChange={onTangent} />
           {tangentOn && (
+            <div className="mt-2">
+              <PlayRow label={tt('graphPointAnim')} playing={pointPlaying} onToggle={onTogglePoint} />
+            </div>
+          )}
+        </div>
+
+        <div>
+          <ToggleRow label={tt('graphSecant')} checked={secantOn} onChange={onSecant} />
+          {secantOn && (
             <div className="mt-2 flex flex-col gap-1.5">
-              <SliderRow label="x₀" value={x0} min={-10} max={10} step={0.1} onChange={onX0} display={fmt(x0)} />
+              <SliderRow label="h" value={h} min={0.01} max={3} step={0.01} onChange={onH} display={fmt(h)} />
               <p className="text-[11.5px] text-pmuted">
-                f(x₀) = <span className="font-mono tabular-nums text-pfg">{fmt(fValue)}</span>
+                k<sub>sek</sub> = <span className="font-mono tabular-nums text-pfg">{fmt(secantSlope)}</span>
                 {' · '}
                 f′(x₀) = <span className="font-mono tabular-nums text-pfg">{fmt(slopeValue)}</span>
               </p>
-              <button
-                type="button"
-                onClick={onTogglePoint}
-                className="mt-0.5 flex h-9 items-center justify-center gap-2 rounded-xl bg-psurface text-[12.5px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-              >
-                {pointPlaying ? <Pause size={14} strokeWidth={2} /> : <Play size={14} strokeWidth={2} />}
-                {tt('graphPointAnim')}
-              </button>
+              <PlayRow label={tt('graphSecantAnim')} playing={secantPlaying} onToggle={onToggleSecantPlay} />
             </div>
           )}
         </div>

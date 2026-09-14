@@ -9,7 +9,7 @@
 import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import type { GraphViewport } from '../../../../shared/contracts/graph'
 import type { CompiledExpression, MarkerPoint } from '../lib/math'
-import { MARKER_COLORS } from '../curve-colors'
+import { MARKER_COLORS, REGRESSION_COLOR } from '../curve-colors'
 import { sampleCurve, sampleImplicit, sampleParametric, samplePolar } from '../lib/plot/sample'
 import {
   niceTicks,
@@ -66,6 +66,22 @@ export interface MovingPoint {
   color: string
 }
 
+/** Sekant chizig'i (limit h → 0) — qiymatlar oldindan hisoblangan */
+export interface SecantOverlay {
+  x0: number
+  x1: number
+  y0: number
+  y1: number
+  slope: number
+  color: string
+}
+
+export interface RegressionLine {
+  slope: number
+  intercept: number
+  vertical: boolean
+}
+
 interface Props {
   series: GraphSeries[]
   scope: Record<string, number>
@@ -78,6 +94,16 @@ interface Props {
   markers?: MarkerPoint[]
   movingPoint?: MovingPoint | null
   onSize?: (size: { w: number; h: number }) => void
+  /** Lab: o'lchov nuqtalari + regression chizig'i */
+  points?: { x: number; y: number }[]
+  regression?: RegressionLine | null
+  /** Nuqta yig'ish rejimi — tap world koordinataga aylanadi */
+  pointPick?: boolean
+  onPointPick?: (p: { x: number; y: number }) => void
+  /** Sekant (h → 0) */
+  secant?: SecantOverlay | null
+  /** Tashqi canvas ref (AI uchun rasm olish) */
+  canvasRef?: { current: HTMLCanvasElement | null }
 }
 
 interface Trace {
@@ -100,6 +126,8 @@ const WHEEL_COMMIT_MS = 400
 export default function GraphCanvas({
   series, scope, xVar, viewport, onViewportCommit, ariaLabel,
   tangent = null, integral = null, markers = [], movingPoint = null, onSize,
+  points = [], regression = null, pointPick = false, onPointPick,
+  secant = null, canvasRef: externalCanvasRef,
 }: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -107,8 +135,14 @@ export default function GraphCanvas({
   const vpRef = useRef<GraphViewport>(viewport)
   const [sizeTick, setSizeTick] = useState(0)
 
-  const dataRef = useRef({ series, scope, xVar, tangent, integral, markers, movingPoint })
-  dataRef.current = { series, scope, xVar, tangent, integral, markers, movingPoint }
+  const dataRef = useRef({
+    series, scope, xVar, tangent, integral, markers, movingPoint,
+    points, regression, pointPick, onPointPick, secant,
+  })
+  dataRef.current = {
+    series, scope, xVar, tangent, integral, markers, movingPoint,
+    points, regression, pointPick, onPointPick, secant,
+  }
   const onSizeRef = useRef(onSize)
   onSizeRef.current = onSize
 
@@ -199,6 +233,7 @@ export default function GraphCanvas({
       series: currentSeries, scope: currentScope, xVar: currentXVar,
       tangent: currentTangent, integral: currentIntegral,
       markers: currentMarkers, movingPoint: currentMovingPoint,
+      points: currentPoints, regression: currentRegression, secant: currentSecant,
     } = dataRef.current
 
     // ── Integral yuzasi + Riemann to'rtburchaklari (egrilar OSTIDA) ──────────
@@ -310,6 +345,61 @@ export default function GraphCanvas({
       ctx.setLineDash([])
     }
 
+    // ── Lab: regression chizig'i, qoldiqlar va o'lchov nuqtalari ─────────────
+    if (currentRegression) {
+      ctx.save()
+      ctx.strokeStyle = REGRESSION_COLOR
+      ctx.lineWidth = 1.75
+      if (currentRegression.vertical) {
+        const sx = xToScreen(vp, currentRegression.intercept, w)
+        if (sx >= -4 && sx <= w + 4) {
+          ctx.beginPath()
+          ctx.moveTo(sx, 0)
+          ctx.lineTo(sx, h)
+          ctx.stroke()
+        }
+      } else {
+        const worldLeft = screenToWorldX(vp, 0, w)
+        const worldRight = screenToWorldX(vp, w, w)
+        const yLeft = Math.max(-1e6, Math.min(1e6, currentRegression.slope * worldLeft + currentRegression.intercept))
+        const yRight = Math.max(-1e6, Math.min(1e6, currentRegression.slope * worldRight + currentRegression.intercept))
+        ctx.beginPath()
+        ctx.moveTo(0, yToScreen(vp, yLeft, h))
+        ctx.lineTo(w, yToScreen(vp, yRight, h))
+        ctx.stroke()
+      }
+      ctx.setLineDash([3, 3])
+      ctx.globalAlpha = 0.55
+      ctx.lineWidth = 1
+      for (const pt of currentPoints) {
+        if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) continue
+        const predicted = currentRegression.vertical
+          ? NaN
+          : currentRegression.slope * pt.x + currentRegression.intercept
+        if (!Number.isFinite(predicted)) continue
+        const sx = xToScreen(vp, pt.x, w)
+        ctx.beginPath()
+        ctx.moveTo(sx, yToScreen(vp, pt.y, h))
+        ctx.lineTo(sx, yToScreen(vp, predicted, h))
+        ctx.stroke()
+      }
+      ctx.restore()
+
+      for (const pt of currentPoints) {
+        if (!Number.isFinite(pt.x) || !Number.isFinite(pt.y)) continue
+        const sx = xToScreen(vp, pt.x, w)
+        const sy = yToScreen(vp, pt.y, h)
+        if (sx < -14 || sx > w + 14 || sy < -14 || sy > h + 14) continue
+        ctx.beginPath()
+        ctx.arc(sx, sy, 4, 0, Math.PI * 2)
+        ctx.fillStyle = REGRESSION_COLOR
+        ctx.fill()
+        ctx.lineWidth = 1.5
+        ctx.strokeStyle = cardColor
+        ctx.stroke()
+      }
+    }
+
     // ── Tahlil markerlari (ildiz/ekstremum/kesishma) ─────────────────────────
     for (const m of currentMarkers) {
       const sx = xToScreen(vp, m.x, w)
@@ -366,6 +456,44 @@ export default function GraphCanvas({
       ctx.stroke()
     }
 
+    // ── Sekant (h → 0 limiti) ────────────────────────────────────────────────
+    if (currentSecant) {
+      const sc = currentSecant
+      ctx.save()
+      ctx.strokeStyle = sc.color
+      ctx.lineWidth = 1.5
+      ctx.setLineDash([4, 4])
+      if (Number.isFinite(sc.slope)) {
+        const worldLeft = screenToWorldX(vp, 0, w)
+        const worldRight = screenToWorldX(vp, w, w)
+        const yLeft = Math.max(-1e6, Math.min(1e6, sc.y0 + sc.slope * (worldLeft - sc.x0)))
+        const yRight = Math.max(-1e6, Math.min(1e6, sc.y0 + sc.slope * (worldRight - sc.x0)))
+        ctx.beginPath()
+        ctx.moveTo(0, yToScreen(vp, yLeft, h))
+        ctx.lineTo(w, yToScreen(vp, yRight, h))
+        ctx.stroke()
+      } else {
+        const sx = xToScreen(vp, sc.x0, w)
+        ctx.beginPath()
+        ctx.moveTo(sx, 0)
+        ctx.lineTo(sx, h)
+        ctx.stroke()
+      }
+      ctx.restore()
+
+      for (const pair of [[sc.x0, sc.y0], [sc.x1, sc.y1]] as const) {
+        const [pxw, pyw] = pair
+        if (!Number.isFinite(pxw) || !Number.isFinite(pyw)) continue
+        ctx.beginPath()
+        ctx.arc(xToScreen(vp, pxw, w), yToScreen(vp, pyw, h), 4, 0, Math.PI * 2)
+        ctx.fillStyle = sc.color
+        ctx.fill()
+        ctx.lineWidth = 1.5
+        ctx.strokeStyle = cardColor
+        ctx.stroke()
+      }
+    }
+
     const trace = traceRef.current
     if (trace) {
       ctx.beginPath()
@@ -409,7 +537,7 @@ export default function GraphCanvas({
   // Props o'zgarganda qayta chizish
   useEffect(() => {
     draw()
-  }, [draw, series, scope, xVar, viewport, sizeTick, tangent, integral, markers, movingPoint])
+  }, [draw, series, scope, xVar, viewport, sizeTick, tangent, integral, markers, movingPoint, points, regression, secant])
 
   // Ifoda/slayder/viewport o'zgarsa — eski trace nuqtasi endi noto'g'ri
   useEffect(() => {
@@ -552,6 +680,14 @@ export default function GraphCanvas({
     if (!g) return
 
     if (g.type === 'pan' && !g.moved) {
+      const { pointPick: pickMode, onPointPick: pickHandler } = dataRef.current
+      if (pickMode && pickHandler) {
+        const { w, h } = sizeRef.current
+        const wx = screenToWorldX(vpRef.current, g.startSx, w)
+        const wy = screenToWorldY(vpRef.current, g.startSy, h)
+        pickHandler({ x: Number(wx.toFixed(4)), y: Number(wy.toFixed(4)) })
+        return
+      }
       const trace = hitTest(g.startSx, g.startSy)
       traceRef.current = trace
       draw()
@@ -563,12 +699,15 @@ export default function GraphCanvas({
   return (
     <div ref={containerRef} className="relative h-full w-full">
       <canvas
-        ref={canvasRef}
+        ref={(el) => {
+          canvasRef.current = el
+          if (externalCanvasRef) externalCanvasRef.current = el
+        }}
         role="img"
         aria-label={ariaLabel}
         data-testid="graph-canvas"
         className="block h-full w-full select-none"
-        style={{ touchAction: 'none' }}
+        style={{ touchAction: 'none', cursor: pointPick ? 'crosshair' : 'default' }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={finishPointer}

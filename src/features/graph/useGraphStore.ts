@@ -11,6 +11,7 @@ import type {
   GraphAnalysis,
   GraphExpression,
   GraphPayload,
+  GraphPoint,
   GraphViewport,
 } from '../../../shared/contracts/graph'
 import { GRAPH_MAX_EXPRESSIONS } from '../../../shared/contracts/graph'
@@ -34,6 +35,7 @@ export interface PersistedGraphState {
   ranges: Record<string, GraphRange>
   viewport: GraphViewport
   analysis: GraphAnalysis
+  points: GraphPoint[]
   recent: string[]
   savedId: string | null
   savedTitle: string | null
@@ -44,6 +46,7 @@ export interface GraphSnapshot {
   xVar: string
   vars: Record<string, number>
   analysis: GraphAnalysis
+  points: GraphPoint[]
 }
 
 const CURVE_COLOR_COUNT = 6
@@ -61,6 +64,8 @@ export const DEFAULT_ANALYSIS: GraphAnalysis = {
   b: 1,
   rects: 10,
   markers: false,
+  secant: false,
+  h: 1,
 }
 
 export function defaultRange(name: string): GraphRange {
@@ -83,6 +88,7 @@ interface GraphState {
   ranges: Record<string, GraphRange>
   viewport: GraphViewport
   analysis: GraphAnalysis
+  points: GraphPoint[]
   recent: string[]
   savedId: string | null
   savedTitle: string | null
@@ -99,6 +105,10 @@ interface GraphState {
   setViewport: (vp: GraphViewport) => void
   resetViewport: () => void
   setAnalysis: (patch: Partial<GraphAnalysis>) => void
+  addPoint: (p: GraphPoint) => void
+  updatePoint: (index: number, patch: Partial<GraphPoint>) => void
+  removePoint: (index: number) => void
+  clearPoints: () => void
   pushRecent: (expr: string) => void
   applyPreset: (preset: GraphPreset) => void
   loadWorkspace: (payload: GraphPayload, meta: { id: string; title: string } | null) => void
@@ -118,6 +128,7 @@ const initial = {
   ranges: {} as Record<string, GraphRange>,
   viewport: DEFAULT_VIEWPORT,
   analysis: { ...DEFAULT_ANALYSIS },
+  points: [] as GraphPoint[],
   recent: [] as string[],
   savedId: null as string | null,
   savedTitle: null as string | null,
@@ -125,12 +136,13 @@ const initial = {
   future: [] as GraphSnapshot[],
 }
 
-function snapshotOf(s: Pick<GraphState, 'expressions' | 'xVar' | 'vars' | 'analysis'>): GraphSnapshot {
+function snapshotOf(s: Pick<GraphState, 'expressions' | 'xVar' | 'vars' | 'analysis' | 'points'>): GraphSnapshot {
   return {
     expressions: s.expressions,
     xVar: s.xVar,
     vars: { ...s.vars },
     analysis: { ...s.analysis },
+    points: s.points,
   }
 }
 
@@ -193,6 +205,19 @@ export const useGraphStore = create<GraphState>()(
       setAnalysis: (patch) =>
         set((s) => ({ analysis: { ...s.analysis, ...patch } })),
 
+      addPoint: (p) =>
+        set((s) => ({ points: s.points.length >= 60 ? s.points : [...s.points, p] })),
+
+      updatePoint: (index, patch) =>
+        set((s) => ({
+          points: s.points.map((p, i) => (i === index ? { ...p, ...patch } : p)),
+        })),
+
+      removePoint: (index) =>
+        set((s) => ({ points: s.points.filter((_, i) => i !== index) })),
+
+      clearPoints: () => set({ points: [] }),
+
       pushRecent: (expr) => {
         const text = expr.trim()
         if (!text) return
@@ -232,7 +257,8 @@ export const useGraphStore = create<GraphState>()(
           vars: { ...payload.vars },
           ranges,
           viewport: { ...payload.viewport },
-          analysis: payload.analysis ? { ...payload.analysis } : { ...DEFAULT_ANALYSIS },
+          analysis: { ...DEFAULT_ANALYSIS, ...(payload.analysis ?? {}) },
+          points: payload.points ? [...payload.points] : [],
           savedId: meta?.id ?? null,
           savedTitle: meta?.title ?? null,
           history: [],
@@ -261,6 +287,7 @@ export const useGraphStore = create<GraphState>()(
           xVar: prev.xVar,
           vars: prev.vars,
           analysis: prev.analysis,
+          points: prev.points,
           history: history.slice(0, -1),
           future: [...future.slice(-(HISTORY_MAX - 1)), current],
         })
@@ -276,6 +303,7 @@ export const useGraphStore = create<GraphState>()(
           xVar: next.xVar,
           vars: next.vars,
           analysis: next.analysis,
+          points: next.points,
           history: [...history.slice(-(HISTORY_MAX - 1)), current],
           future: future.slice(0, -1),
         })
@@ -284,13 +312,14 @@ export const useGraphStore = create<GraphState>()(
       reset: () => set({ ...initial, expressions: defaultExpressions() }),
 
       toPayload: () => {
-        const { expressions, xVar, vars, viewport, analysis } = get()
+        const { expressions, xVar, vars, viewport, analysis, points } = get()
         return {
           expressions: expressions.map(({ expr, colorIdx, visible }) => ({ expr, colorIdx, visible })),
           xVar,
           vars: { ...vars },
           viewport: { ...viewport },
           analysis: { ...analysis },
+          points: [...points],
         }
       },
     }),
@@ -312,6 +341,7 @@ export const useGraphStore = create<GraphState>()(
         ranges: s.ranges,
         viewport: s.viewport,
         analysis: s.analysis,
+        points: s.points,
         recent: s.recent,
         savedId: s.savedId,
         savedTitle: s.savedTitle,

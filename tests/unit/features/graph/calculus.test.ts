@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest'
 import {
   compileExpression,
   derivativeAt,
+  secantSlope,
   makeDerivative,
   integrate,
   riemann,
@@ -77,5 +78,25 @@ describe('grafik: Riemann yig‘indisi', () => {
   it('teskari chegarada manfiy', () => {
     const { sum } = riemann(fnOf('x'), {}, 'x', 1, 0, 100)
     expect(sum).toBeCloseTo(-0.5, 2)
+  })
+})
+
+describe('grafik: sekant qiyaligi (h → 0)', () => {
+  it('x^2, x0=1: h=1 da 3, h→0 da 2 ga intiladi', () => {
+    expect(secantSlope(fnOf('x^2'), {}, 'x', 1, 1)).toBeCloseTo(3, 8)
+    expect(secantSlope(fnOf('x^2'), {}, 'x', 1, 0.0001)).toBeCloseTo(2, 3)
+  })
+
+  it('sin(x), x0=0: (sin h)/h → 1', () => {
+    expect(secantSlope(fnOf('sin(x)'), {}, 'x', 0, 0.0001)).toBeCloseTo(1, 4)
+  })
+
+  it('parametrlar scope orqali', () => {
+    expect(secantSlope(fnOf('a*x^2'), { a: 3 }, 'x', 2, 1)).toBeCloseTo(15, 8)
+  })
+
+  it('h = 0 yoki uzilishda NaN', () => {
+    expect(Number.isNaN(secantSlope(fnOf('x^2'), {}, 'x', 1, 0))).toBe(true)
+    expect(Number.isNaN(secantSlope(fnOf('sqrt(x)'), {}, 'x', -2, 0.5))).toBe(true)
   })
 })

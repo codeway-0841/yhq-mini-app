@@ -11,11 +11,17 @@ export { compileAst, compileExpression, type CompiledExpression, type Scope } fr
 export { FUNCTIONS, CONSTANTS, FUNCTION_NAMES, isFunctionName, isConstantName, type BuiltinFunction } from './builtins'
 export {
   derivativeAt,
+  secantSlope,
   makeDerivative,
   integrate,
   riemann,
   type RiemannResult,
 } from './calculus'
+export {
+  linearRegression,
+  forecast,
+  type RegressionResult,
+} from './regression'
 export { astToLatex, expressionToLatex, graphExpressionToLatex } from './latex'
 export {
   parseGraphExpression,

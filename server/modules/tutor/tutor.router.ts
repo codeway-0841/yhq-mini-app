@@ -25,7 +25,8 @@ import {
   tutorUsageRepository, TUTOR_DAILY_USER_LIMIT, TUTOR_DAILY_GLOBAL_LIMIT, TUTOR_GLOBAL_USER_ID,
 } from './tutor.repository'
 import {
-  solveProblemFromPhoto, streamSocraticChatResponse, type SocraticMessage, type SocraticContext,
+  solveProblemFromPhoto, analyzeGraphImage, streamSocraticChatResponse,
+  type SocraticMessage, type SocraticContext,
 } from './tutor.service'
 
 const router = Router()
@@ -41,6 +42,13 @@ const SolvePhotoBodySchema = z.object({
   image: z.string().min(50).max(6_000_000),
   mimeType: z.enum(['image/jpeg', 'image/png', 'image/webp']).default('image/jpeg'),
   subjectHint: z.string().max(50).optional(),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
+
+const GraphAnalyzeBodySchema = z.object({
+  image: z.string().min(50).max(6_000_000),
+  mimeType: z.enum(['image/jpeg', 'image/png', 'image/webp']).default('image/png'),
+  context: z.string().max(2900).optional(),
   language: z.enum(['uz', 'ru']).default('uz'),
 })
 
@@ -128,6 +136,43 @@ router.post(
       solution,
       quota,
     })
+  }),
+)
+
+// ── POST /api/tutor/graph-analyze ─────────────────────────────────────────
+// Foto-yechish kvotasidan foydalanadi (vision chaqiruv — bir xil xarajat).
+router.post(
+  '/tutor/graph-analyze',
+  rateLimit({
+    maxPerMinute: 10,
+    bucket: 'tutor_graph',
+    keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
+  }),
+  validate({ body: GraphAnalyzeBodySchema }),
+  wrap(async (req, res) => {
+    const verifiedId = (req as { userId?: string }).userId
+    const uid = verifiedId ? parseUserId(verifiedId) : null
+    if (!uid) throw new AppError(401, 'user_not_identified')
+
+    const date = tashkentDate()
+    const userIsPremium = await isPremium(uid)
+    const limit = userIsPremium ? 30 : 2
+
+    const photoKey = `${uid}:photo`
+    const used = await tutorUsageRepository.getCount(photoKey, date)
+    const globalUsed = await tutorUsageRepository.getCount('0:photo', date)
+
+    if (used >= limit || globalUsed >= 500) {
+      throw new AppError(429, userIsPremium ? 'daily_limit' : 'free_limit_exceeded')
+    }
+
+    const { image, mimeType, context, language } = req.body as z.infer<typeof GraphAnalyzeBodySchema>
+    const analysis = await analyzeGraphImage({ imageBase64: image, mimeType, context, language })
+
+    await tutorUsageRepository.tryConsume(photoKey, date, limit)
+    await tutorUsageRepository.tryConsume('0:photo', date, 500)
+
+    res.json({ ok: true, analysis })
   }),
 )
 

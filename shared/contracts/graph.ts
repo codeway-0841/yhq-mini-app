@@ -25,7 +25,7 @@ export const GraphViewportSchema = z.object({
   unitsPerPx: z.number().finite().positive().max(1e6),
 })
 
-/** Tahlil holati (hosila/urinma/integral) — saqlangan grafik bilan qaytadi */
+/** Tahlil holati (hosila/urinma/sekant/integral) — saqlangan grafik bilan qaytadi */
 export const GraphAnalysisSchema = z.object({
   derivative: z.boolean(),
   tangent: z.boolean(),
@@ -35,6 +35,15 @@ export const GraphAnalysisSchema = z.object({
   b: z.number().finite(),
   rects: z.number().int().min(1).max(80),
   markers: z.boolean(),
+  /** Sekant (h → 0 limiti) — eski payload'larda yo'q */
+  secant: z.boolean().default(false),
+  h: z.number().finite().positive().max(50).default(1),
+})
+
+/** Lab rejimi: o'lchov nuqtalari (regression) */
+export const GraphPointSchema = z.object({
+  x: z.number().finite(),
+  y: z.number().finite(),
 })
 
 export const GraphPayloadSchema = z.object({
@@ -44,6 +53,8 @@ export const GraphPayloadSchema = z.object({
   viewport: GraphViewportSchema,
   /** Eski payload'larda yo'q — optional (backward-compatible) */
   analysis: GraphAnalysisSchema.optional(),
+  /** Eski payload'larda yo'q — optional */
+  points: z.array(GraphPointSchema).max(60).optional(),
 })
 
 export const SavedGraphInputSchema = z.object({
@@ -65,6 +76,7 @@ export type GraphExpression = z.infer<typeof GraphExpressionSchema>
 export type GraphViewport = z.infer<typeof GraphViewportSchema>
 export type GraphPayload = z.infer<typeof GraphPayloadSchema>
 export type GraphAnalysis = z.infer<typeof GraphAnalysisSchema>
+export type GraphPoint = z.infer<typeof GraphPointSchema>
 export type SavedGraphInput = z.infer<typeof SavedGraphInputSchema>
 
 /** Ro'yxat uchun yengil shakl (payload'siz) */

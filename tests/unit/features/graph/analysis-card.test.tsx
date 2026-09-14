@@ -25,6 +25,13 @@ const baseProps = {
   onRects: vi.fn(),
   area: 0.4597,
   riemannSum: 0.4593,
+  secantOn: false,
+  onSecant: vi.fn(),
+  h: 1,
+  onH: vi.fn(),
+  secantSlope: 3,
+  secantPlaying: false,
+  onToggleSecantPlay: vi.fn(),
   pointPlaying: false,
   onTogglePoint: vi.fn(),
   markersOn: true,
@@ -76,5 +83,14 @@ describe('graph: AnalysisCard', () => {
     expect(screen.getByText(/Ildizlar/)).toBeInTheDocument()
     expect(screen.getByText(/Ekstremumlar/)).toBeInTheDocument()
     expect(screen.getByText(/Kesishmalar/)).toBeInTheDocument()
+  })
+})
+
+describe('graph: AnalysisCard sekant', () => {
+  it('sekant bloki boshqaruvlarini ko‘rsatadi', () => {
+    render(<AnalysisCard {...baseProps} secantOn={true} />)
+    expect(screen.getByRole('slider', { name: 'h' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'h ni kichraytirish' })).toBeInTheDocument()
+    expect(screen.getByText('sek')).toBeInTheDocument()
   })
 })

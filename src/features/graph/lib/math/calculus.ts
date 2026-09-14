@@ -31,6 +31,21 @@ export function derivativeAt(fn: CompiledExpression, scope: Scope, xVar: string,
   return (at(x - 2 * h) - 8 * at(x - h) + 8 * at(x + h) - at(x + 2 * h)) / (12 * h)
 }
 
+/** Sekant qiyaligi: (f(x₀+h) − f(x₀)) / h — h → 0 da hosilaga intiladi */
+export function secantSlope(
+  fn: CompiledExpression,
+  scope: Scope,
+  xVar: string,
+  x0: number,
+  h: number,
+): number {
+  if (!Number.isFinite(x0) || !Number.isFinite(h) || h === 0) return NaN
+  const scratch: Scope = { ...scope }
+  const y0 = scopedEval(fn, xVar, scratch, x0)
+  const y1 = scopedEval(fn, xVar, scratch, x0 + h)
+  return (y1 - y0) / h
+}
+
 /** Sampling uchun: hosila funksiyasini closure sifatida (scratch qayta ishlatiladi) */
 export function makeDerivative(fn: CompiledExpression, xVar: string): CompiledExpression {
   const scratch: Scope = {}

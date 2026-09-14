@@ -354,3 +354,107 @@ export async function streamSocraticChatResponse(params: {
 
   throw new AppError(502, `AI javob berishda xatolik (${lastError.slice(0, 60)})`)
 }
+
+/**
+ * Grafik rasmini tahlil qilish (Gemini Vision) — matnli javob (LaTeX).
+ * Ilovaning grafik quruvchisidan olingan PNG; OCR emas, vizual tahlil.
+ * Kvota router'da (foto-yechish bilan umumiy) tekshiriladi.
+ */
+export async function analyzeGraphImage(params: {
+  imageBase64: string
+  mimeType: 'image/jpeg' | 'image/png' | 'image/webp'
+  language?: 'uz' | 'ru'
+  context?: string
+}): Promise<string> {
+  const key = config.ai.geminiApiKey
+  if (!key) {
+    throw new AppError(503, 'AI xizmati vaqtincha mavjud emas (GEMINI_API_KEY sozlanmagan)')
+  }
+
+  const lang = params.language ?? 'uz'
+  const cleanBase64 = params.imageBase64.replace(/^data:image\/[a-z+]+;base64,/, '').trim()
+
+  const systemInstruction = lang === 'ru'
+    ? `Ты — опытный преподаватель математики и физики платформы Kivvi (Узбекистан).
+На изображении — график функции, построенный в учебном конструкторе графиков (оси координат, одна или несколько кривых; иногда касательная, секущая, область интеграла или отмеченные точки).
+Твоя задача:
+1. Опиши, что видно на графике: форму кривых, их поведение.
+2. Определи (если применимо): корни (пересечения с осью X), экстремумы, асимптоты, период, промежутки возрастания/убывания.
+3. Если в контексте указана точная формула — свяжи анализ с ней и проверь её.
+4. Пиши структурированно, короткими разделами; все формулы в LaTeX ($...$ для строчных, $$...$$ для блочных).
+5. Отвечай на русском языке, простым и дружелюбным тоном.
+Важно: говори только о том, что ВИДНО на изображении; если данных недостаточно — скажи об этом честно.`
+    : `Sen — Kivvi platformasining tajribali matematika/fizika o'qituvchisisan.
+Rasmda — ilovaning grafik quruvchisida chizilgan funksiya grafigi (koordinata o'qlari, bir yoki bir nechta egri chiziq; ba'zan urinma, sekant, integral sohasi yoki belgilangan nuqtalar).
+Vazifang:
+1. Grafikda ko'rinayotganini tasvirlab ber: egri chiziqlar shakli va xatti-harakati.
+2. Iloji bo'lsa aniqlang: ildizlar (X o'qi bilan kesishish), ekstremumlar, asimptotalar, davr, o'sish/kamayish oraliqlari.
+3. Agar kontekstda aniq formula berilgan bo'lsa — tahlilni shunga bog'lab, uni tekshirib ko'r.
+4. Qisqa bo'limlarga ajratib yoz; barcha formulalar LaTeX formatida ($...$ satr ichida, $$...$$ alohida).
+5. O'zbek tilining lotin alifbosida, sodda va do'stona tushuntir.
+Muhim: faqat rasmda KO'RINADIGAN narsalar haqida gapir; ma'lumot yetarli bo'lmasa — ochiq ayt.`
+
+  const userPrompt = lang === 'ru'
+    ? `Пожалуйста, проанализируй этот график.${params.context ? `
+Контекст из приложения: ${params.context}` : ''}`
+    : `Iltimos, ushbu grafikni tahlil qilib bering.${params.context ? `
+Ilovadan kontekst: ${params.context}` : ''}`
+
+  let lastError = ''
+  for (const model of VISION_MODELS) {
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS)
+    try {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': key,
+          },
+          signal: controller.signal,
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: systemInstruction }] },
+            contents: [
+              {
+                role: 'user',
+                parts: [
+                  { text: userPrompt },
+                  { inlineData: { mimeType: params.mimeType, data: cleanBase64 } },
+                ],
+              },
+            ],
+            generationConfig: {
+              temperature: 0.3,
+              maxOutputTokens: 2500,
+            },
+          }),
+        },
+      )
+
+      clearTimeout(timeout)
+
+      if (!res.ok) {
+        const errBody = await res.text().catch(() => '')
+        lastError = `${model} HTTP ${res.status}: ${errBody.slice(0, 150)}`
+        console.warn(`[tutor.service graph] ${lastError}`)
+        continue
+      }
+
+      const json = await res.json() as { candidates?: { content?: { parts?: { text?: string }[] } }[] }
+      const text = json.candidates?.[0]?.content?.parts?.[0]?.text?.trim()
+      if (!text) {
+        lastError = `${model} returned empty content`
+        continue
+      }
+      return text
+    } catch (err: unknown) {
+      clearTimeout(timeout)
+      lastError = err instanceof Error ? err.message : String(err)
+      console.warn(`[tutor.service graph] ${model} failed:`, lastError)
+    }
+  }
+
+  throw new AppError(502, `AI javob berishda xatolik (${lastError.slice(0, 60)})`)
+}

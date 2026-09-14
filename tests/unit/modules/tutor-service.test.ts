@@ -3,6 +3,7 @@ import {
   buildSocraticPrompt,
   PhotoSolveResultSchema,
   solveProblemFromPhoto,
+  analyzeGraphImage,
   streamSocraticChatResponse,
 } from '../../../server/modules/tutor/tutor.service'
 import { config } from '../../../server/config'
@@ -165,5 +166,56 @@ describe('tutor.service unit tests', () => {
 
       expect(receivedChunks.join('')).toBe("Salom! Qaysi formulani qo'lladingiz?")
     })
+  })
+})
+
+describe('analyzeGraphImage', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+  })
+
+  it('vision javobini matn sifatida qaytaradi va data URL prefiksini olib tashlaydi', async () => {
+    vi.spyOn(config.ai, 'geminiApiKey', 'get').mockReturnValue('mock_api_key')
+    const fetchMock = vi.fn(async () => ({
+      ok: true,
+      json: async () => ({
+        candidates: [{ content: { parts: [{ text: 'Grafik — parabolа, ildizlari x = ±2.' }] } }],
+      }),
+    }))
+    globalThis.fetch = fetchMock as unknown as typeof fetch
+
+    const result = await analyzeGraphImage({
+      imageBase64: 'data:image/png;base64,AAAA',
+      mimeType: 'image/png',
+      context: 'f(x) = x^2 - 4',
+      language: 'uz',
+    })
+
+    expect(result).toContain('parabol')
+    const body = JSON.parse(String((fetchMock.mock.calls[0][1] as RequestInit).body))
+    const parts = body.contents[0].parts
+    expect(parts[1].inlineData.data).toBe('AAAA')
+    expect(parts[0].text).toContain('x^2 - 4')
+  })
+
+  it('barcha modellar bo‘sh qaytarsa 502', async () => {
+    vi.spyOn(config.ai, 'geminiApiKey', 'get').mockReturnValue('mock_api_key')
+    globalThis.fetch = vi.fn(async () => ({
+      ok: true,
+      json: async () => ({ candidates: [] }),
+    })) as unknown as typeof fetch
+
+    await expect(analyzeGraphImage({
+      imageBase64: 'data:image/png;base64,AAAA',
+      mimeType: 'image/png',
+    })).rejects.toMatchObject({ statusCode: 502 })
+  })
+
+  it('kalit yo‘q bo‘lsa 503', async () => {
+    vi.spyOn(config.ai, 'geminiApiKey', 'get').mockReturnValue('')
+    await expect(analyzeGraphImage({
+      imageBase64: 'data:image/png;base64,AAAA',
+      mimeType: 'image/png',
+    })).rejects.toMatchObject({ statusCode: 503 })
   })
 })

@@ -9,7 +9,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import {
-  Bookmark, ChevronLeft, Copy, MessageSquareQuote, Redo2, RotateCcw, Table2, Undo2, Wand2,
+  Bookmark, Camera, ChevronLeft, Copy, FlaskConical, MessageSquareQuote,
+  Redo2, RotateCcw, Table2, Undo2, Wand2,
 } from 'lucide-react'
 import GraphCanvas, { type GraphSeries, type TangentOverlay, type IntegralOverlay } from './components/GraphCanvas'
 import ExpressionList, { type ExprIssue } from './components/ExpressionList'
@@ -19,6 +20,8 @@ import PresetSheet from './components/PresetSheet'
 import SavedGraphsSheet from './components/SavedGraphsSheet'
 import AnalysisCard, { type AnalysisOption } from './components/AnalysisCard'
 import TableSheet from './components/TableSheet'
+import LabSheet from './components/LabSheet'
+import GraphAiSheet from './components/GraphAiSheet'
 import { useGraphStore, defaultRange } from './useGraphStore'
 import { curveColor } from './curve-colors'
 import {
@@ -27,10 +30,12 @@ import {
   ExprError,
   mapNormalizedPosition,
   derivativeAt,
+  secantSlope,
   makeDerivative,
   integrate,
   riemann,
   analyzeCurves,
+  linearRegression,
   type MarkerPoint,
 } from './lib/math'
 import { buildGraphChatContext } from './lib/chat-context'
@@ -40,6 +45,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT, t, type Lang } from '../../shared/i18n'
 import { track } from '../../shared/lib/analytics'
 import { useToast } from '../../shared/components/ToastContainer'
+import { haptics } from '../../platform/haptics'
 import { SocraticChatSheet } from '../ai-tutor'
 import { api } from '../../shared/api'
 import { GRAPH_MAX_EXPRESSIONS } from '../../../shared/contracts/graph'
@@ -65,6 +71,7 @@ function exprIssue(err: unknown, text: string, lang: Lang): ExprIssue {
 type Anim =
   | { kind: 'var'; name: string; value: number; dir: 1 | -1 }
   | { kind: 'point'; x: number; dir: 1 | -1 }
+  | { kind: 'secant'; h: number; start: number }
 
 export default function GraphPage() {
   const navigate = useNavigate()
@@ -79,6 +86,7 @@ export default function GraphPage() {
   const ranges = useGraphStore((s) => s.ranges)
   const viewport = useGraphStore((s) => s.viewport)
   const analysis = useGraphStore((s) => s.analysis)
+  const points = useGraphStore((s) => s.points)
   const recent = useGraphStore((s) => s.recent)
   const savedId = useGraphStore((s) => s.savedId)
   const savedTitle = useGraphStore((s) => s.savedTitle)
@@ -94,6 +102,10 @@ export default function GraphPage() {
   const setViewport = useGraphStore((s) => s.setViewport)
   const resetViewport = useGraphStore((s) => s.resetViewport)
   const setAnalysis = useGraphStore((s) => s.setAnalysis)
+  const addPoint = useGraphStore((s) => s.addPoint)
+  const updatePoint = useGraphStore((s) => s.updatePoint)
+  const removePoint = useGraphStore((s) => s.removePoint)
+  const clearPoints = useGraphStore((s) => s.clearPoints)
   const applyPreset = useGraphStore((s) => s.applyPreset)
   const loadWorkspace = useGraphStore((s) => s.loadWorkspace)
   const markSaved = useGraphStore((s) => s.markSaved)
@@ -107,6 +119,9 @@ export default function GraphPage() {
   const [presetsOpen, setPresetsOpen] = useState(false)
   const [savedOpen, setSavedOpen] = useState(false)
   const [tableOpen, setTableOpen] = useState(false)
+  const [labOpen, setLabOpen] = useState(false)
+  const [aiOpen, setAiOpen] = useState(false)
+  const [pickMode, setPickMode] = useState(false)
   const [chatOpen, setChatOpen] = useState(false)
   const [activeId, setActiveId] = useState<string | null>(null)
   const [analysisId, setAnalysisId] = useState<string | null>(null)
@@ -116,6 +131,7 @@ export default function GraphPage() {
   const [anim, setAnim] = useState<Anim | null>(null)
 
   const inputEls = useRef(new Map<string, HTMLInputElement>())
+  const canvasElRef = useRef<HTMLCanvasElement | null>(null)
   const bootRef = useRef(false)
   const editingRef = useRef<string | null>(null)
   const animRef = useRef<Anim | null>(null)
@@ -197,6 +213,8 @@ export default function GraphPage() {
     [compiled],
   )
 
+  const hasParsed = useMemo(() => compiled.entries.some((e) => e.parsed && e.visible), [compiled])
+
   const analysisEntry = useMemo(
     () => validEntries.find((e) => e.id === analysisId) ?? validEntries[0] ?? null,
     [validEntries, analysisId],
@@ -219,12 +237,17 @@ export default function GraphPage() {
     const fn = analysisEntry.parsed.fn
     const fValue = fn({ ...effVars, [xVar]: effX0 })
     const slopeValue = analysis.tangent ? derivativeAt(fn, effVars, xVar, effX0) : NaN
+    const secantValue = analysis.secant ? secantSlope(fn, effVars, xVar, effX0, analysis.h) : NaN
     const area = analysis.integral ? integrate(fn, effVars, xVar, analysis.a, analysis.b) : NaN
     const riemannSum = analysis.integral
       ? riemann(fn, effVars, xVar, analysis.a, analysis.b, analysis.rects).sum
       : NaN
-    return { fValue, slopeValue, area, riemannSum }
-  }, [analysisEntry, effVars, xVar, effX0, analysis.tangent, analysis.integral, analysis.a, analysis.b, analysis.rects])
+    return { fValue, slopeValue, secantValue, area, riemannSum }
+  }, [
+    analysisEntry, effVars, xVar, effX0,
+    analysis.tangent, analysis.secant, analysis.h,
+    analysis.integral, analysis.a, analysis.b, analysis.rects,
+  ])
 
   const series: GraphSeries[] = useMemo(() => {
     const list: GraphSeries[] = []
@@ -290,6 +313,25 @@ export default function GraphPage() {
     }
   }, [analysis.integral, analysisEntry, effVars, xVar, analysis.a, analysis.b, analysis.rects])
 
+  const secantOverlay = useMemo(() => {
+    if (!analysis.secant || !analysisEntry || !analysisValues) return null
+    const fn = analysisEntry.parsed.fn
+    const x1 = effX0 + analysis.h
+    const y0 = analysisValues.fValue
+    const y1 = fn({ ...effVars, [xVar]: x1 })
+    if (!Number.isFinite(y0) || !Number.isFinite(y1)) return null
+    return {
+      x0: effX0,
+      x1,
+      y0,
+      y1,
+      slope: analysisValues.secantValue,
+      color: curveColor(analysisEntry.colorIdx),
+    }
+  }, [analysis.secant, analysisEntry, analysisValues, effX0, analysis.h, effVars, xVar])
+
+  const regression = useMemo(() => linearRegression(points), [points])
+
   const markerPoints: MarkerPoint[] = useMemo(() => {
     if (!analysis.markers || validEntries.length === 0) return []
     const w = canvasSize.w || 400
@@ -336,6 +378,11 @@ export default function GraphPage() {
           else if (value <= range.min) { value = range.min; dir = 1 }
           return { ...a, value, dir }
         }
+        if (a.kind === 'secant') {
+          let hh = Math.max(0.001, a.h * Math.exp(-dt * 2.5))
+          if (hh <= 0.0012) hh = a.start
+          return { ...a, h: hh }
+        }
         const half = ((canvasSizeRef.current.w || 400) * viewportRef.current.unitsPerPx) / 2
         const lo = viewportRef.current.cx - half
         const hi = viewportRef.current.cx + half
@@ -356,7 +403,8 @@ export default function GraphPage() {
     const a = animRef.current
     if (a) {
       if (a.kind === 'var') setVar(a.name, Number(a.value.toFixed(3)))
-      else setAnalysis({ x0: Number(a.x.toFixed(3)) })
+      else if (a.kind === 'point') setAnalysis({ x0: Number(a.x.toFixed(3)) })
+      else setAnalysis({ h: Number(a.h.toFixed(3)) })
     }
     setAnim(null)
   }, [setVar, setAnalysis])
@@ -376,6 +424,20 @@ export default function GraphPage() {
     if (current) stopAnim()
     setAnim({ kind: 'point', x: analysis.x0, dir: 1 })
   }, [stopAnim, analysis.x0])
+
+  const toggleSecantAnim = useCallback((): void => {
+    const current = animRef.current
+    if (current?.kind === 'secant') { stopAnim(); return }
+    if (current) stopAnim()
+    const h0 = Math.max(0.05, Math.min(3, analysis.h))
+    setAnim({ kind: 'secant', h: h0, start: h0 })
+  }, [stopAnim, analysis.h])
+
+  const handlePointPick = useCallback((p: { x: number; y: number }): void => {
+    snapshot()
+    addPoint(p)
+    haptics.impact('light')
+  }, [snapshot, addPoint])
 
   const readOnly = sharedTitle !== null
 
@@ -598,6 +660,12 @@ export default function GraphPage() {
               integral={integralOverlay}
               markers={markerPoints}
               movingPoint={movingPoint}
+              points={points}
+              regression={regression}
+              pointPick={pickMode}
+              onPointPick={handlePointPick}
+              secant={secantOverlay}
+              canvasRef={canvasElRef}
               onSize={handleCanvasSize}
               ariaLabel={`${tt('graphTitle')}: ${expressions.map((e) => e.expr).join(', ')}`}
             />
@@ -617,24 +685,49 @@ export default function GraphPage() {
           </div>
         </div>
 
-        {validEntries.length > 0 && (
+        {(hasParsed || points.length > 0) && (
           <div className="mt-3 grid grid-cols-2 gap-2">
+            {hasParsed && (
+              <button
+                type="button"
+                onClick={() => { setChatOpen(true); track('graph_ai_chat') }}
+                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              >
+                <MessageSquareQuote size={16} strokeWidth={1.75} />
+                {tt('graphAiDiscuss')}
+              </button>
+            )}
+            {validEntries.length > 0 && (
+              <button
+                type="button"
+                onClick={() => setTableOpen(true)}
+                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              >
+                <Table2 size={16} strokeWidth={1.75} />
+                {tt('graphTable')}
+              </button>
+            )}
             <button
               type="button"
-              onClick={() => { setChatOpen(true); track('graph_ai_chat') }}
+              onClick={() => setLabOpen(true)}
               className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
-              <MessageSquareQuote size={16} strokeWidth={1.75} />
-              {tt('graphAiDiscuss')}
+              <FlaskConical size={16} strokeWidth={1.75} />
+              {tt('graphLab')}
+              {points.length > 0 && (
+                <span className="rounded-lg bg-psurface px-1.5 font-mono text-[11px] text-psubtle">{points.length}</span>
+              )}
             </button>
-            <button
-              type="button"
-              onClick={() => setTableOpen(true)}
-              className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-            >
-              <Table2 size={16} strokeWidth={1.75} />
-              {tt('graphTable')}
-            </button>
+            {hasParsed && (
+              <button
+                type="button"
+                onClick={() => { setAiOpen(true); track('graph_ai_vision') }}
+                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              >
+                <Camera size={16} strokeWidth={1.75} />
+                {tt('graphAiVision')}
+              </button>
+            )}
           </div>
         )}
 
@@ -741,6 +834,13 @@ export default function GraphPage() {
               onRects={(v) => setAnalysis({ rects: Math.round(v) })}
               area={analysisValues.area}
               riemannSum={analysisValues.riemannSum}
+              secantOn={analysis.secant}
+              onSecant={(v) => setAnalysis({ secant: v })}
+              h={analysis.h}
+              onH={(v) => setAnalysis({ h: v })}
+              secantSlope={analysisValues.secantValue}
+              secantPlaying={anim?.kind === 'secant'}
+              onToggleSecantPlay={toggleSecantAnim}
               pointPlaying={anim?.kind === 'point'}
               onTogglePoint={togglePointAnim}
               markersOn={analysis.markers}
@@ -788,6 +888,26 @@ export default function GraphPage() {
         scope={effVars}
         xMin={viewport.cx - domainHalf}
         xMax={viewport.cx + domainHalf}
+      />
+      <LabSheet
+        open={labOpen}
+        onClose={() => setLabOpen(false)}
+        language={language}
+        points={points}
+        onChangePoint={(i, patch) => { snapshot(); updatePoint(i, patch) }}
+        onAdd={() => { snapshot(); addPoint({ x: 0, y: 0 }) }}
+        onRemove={(i) => { snapshot(); removePoint(i) }}
+        onClear={() => { snapshot(); clearPoints() }}
+        pickMode={pickMode}
+        onPickMode={setPickMode}
+      />
+      <GraphAiSheet
+        open={aiOpen}
+        onClose={() => setAiOpen(false)}
+        language={language}
+        canvasRef={canvasElRef}
+        context={chatContext.questionText}
+        onPremium={() => navigate('/premium')}
       />
       <SocraticChatSheet
         isOpen={chatOpen}

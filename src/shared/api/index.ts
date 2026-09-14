@@ -775,6 +775,10 @@ export const api = {
   getTutorQuota: () =>
     request<{ ok: true; quota: TutorQuota }>('GET', '/tutor/quota'),
 
+  /** Grafik rasmini AI (Gemini Vision) tahlil qiladi — matnli javob (LaTeX) */
+  analyzeGraph: (data: { image: string; language?: 'uz' | 'ru'; context?: string }) =>
+    request<{ ok: true; analysis: string }>('POST', '/tutor/graph-analyze', data, 65_000),
+
   // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
   getMerchCatalog: () =>
     request<{ ok: true; items: MerchCatalogItem[] }>('GET', '/coins/merch'),

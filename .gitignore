@@ -57,6 +57,9 @@ coverage/
 # SHART — aks holda Vercel deploy'da 404 bo'ladi (2026-08-31: favicon PNG'lar
 # jimgina ignore bo'lib qolgandi).
 !public/**/*.png
+# Playwright visual-regression BASELINE'lari commit qilinishi SHART —
+# aks holda boshqa mashina/CI'da screenshot-compare "baseline yo'q" bilan yiqiladi.
+!tests/e2e/**/*-snapshots/*.png
 .idea/
 .jdks/
 
