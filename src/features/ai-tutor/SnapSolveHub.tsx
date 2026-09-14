@@ -14,8 +14,10 @@ import { compressImageFile } from '../../shared/lib/image-compress'
 import {
   CAMERA_START_GRACE_MS,
   captureVideoFrame,
+  hasRememberedCameraAccess,
   isCameraPermissionError,
   queryCameraPermission,
+  rememberCameraAccess,
 } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
 import SocraticChatSheet from './components/SocraticChatSheet'
@@ -215,6 +217,7 @@ export default function SnapSolveHub() {
       if (cameraRequestIdRef.current !== requestId) return
       const errName = lastError?.name || ''
       if (isCameraPermissionError(lastError)) {
+        rememberCameraAccess(false)
         showCameraDenied()
       } else if (errName === 'NotFoundError' || errName === 'DevicesNotFoundError') {
         setCameraState('unsupported')
@@ -247,6 +250,7 @@ export default function SnapSolveHub() {
       return
     }
 
+    rememberCameraAccess(true)
     streamRef.current = stream
 
     // Attach stream to video element
@@ -292,9 +296,10 @@ export default function SnapSolveHub() {
 
     void queryCameraPermission().then((permission) => {
       if (cancelled) return
-      if (permission === 'granted') {
+      if (permission === 'granted' || (permission !== 'denied' && hasRememberedCameraAccess())) {
         void startCamera()
       } else if (permission === 'denied') {
+        rememberCameraAccess(false)
         showCameraDenied()
       } else {
         setCameraState('prompt')

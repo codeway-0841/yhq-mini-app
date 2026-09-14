@@ -1,4 +1,5 @@
 export const CAMERA_START_GRACE_MS = 12_000
+export const CAMERA_AUTO_START_KEY = 'kivvi_snap_camera_auto_start'
 
 export type CameraPermissionState = PermissionState | 'unknown'
 
@@ -7,6 +8,25 @@ export type CapturedVideoFrame = {
   mimeType: 'image/jpeg'
   width: number
   height: number
+}
+
+export function hasRememberedCameraAccess(storage: Storage | undefined = safeLocalStorage()): boolean {
+  if (!storage) return false
+  try {
+    return storage.getItem(CAMERA_AUTO_START_KEY) === '1'
+  } catch {
+    return false
+  }
+}
+
+export function rememberCameraAccess(enabled: boolean, storage: Storage | undefined = safeLocalStorage()) {
+  if (!storage) return
+  try {
+    if (enabled) storage.setItem(CAMERA_AUTO_START_KEY, '1')
+    else storage.removeItem(CAMERA_AUTO_START_KEY)
+  } catch {
+    // Storage can be unavailable in privacy-restricted WebViews.
+  }
 }
 
 export async function queryCameraPermission(
@@ -56,4 +76,9 @@ export function captureVideoFrame(video: HTMLVideoElement, quality = 0.88): Capt
     width: canvas.width,
     height: canvas.height,
   }
+}
+
+function safeLocalStorage(): Storage | undefined {
+  if (typeof window === 'undefined') return undefined
+  return window.localStorage
 }

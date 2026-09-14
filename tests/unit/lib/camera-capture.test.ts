@@ -1,9 +1,12 @@
 import { describe, expect, it, vi, afterEach } from 'vitest'
 import {
+  CAMERA_AUTO_START_KEY,
   captureVideoFrame,
+  hasRememberedCameraAccess,
   isCameraPermissionError,
   isVideoFrameReady,
   queryCameraPermission,
+  rememberCameraAccess,
 } from '../../../src/shared/lib/camera-capture'
 
 function makeVideo(width: number, height: number, readyState = HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -64,6 +67,20 @@ describe('camera-capture helpers', () => {
     await expect(queryCameraPermission({
       query: vi.fn().mockRejectedValue(new TypeError('unsupported')),
     })).resolves.toBe('unknown')
+  })
+
+  it('remembers only a successful camera start signal', () => {
+    localStorage.removeItem(CAMERA_AUTO_START_KEY)
+
+    expect(hasRememberedCameraAccess()).toBe(false)
+
+    rememberCameraAccess(true)
+    expect(localStorage.getItem(CAMERA_AUTO_START_KEY)).toBe('1')
+    expect(hasRememberedCameraAccess()).toBe(true)
+
+    rememberCameraAccess(false)
+    expect(localStorage.getItem(CAMERA_AUTO_START_KEY)).toBeNull()
+    expect(hasRememberedCameraAccess()).toBe(false)
   })
 
   it('classifies permission-policy and user-denial errors as terminal', () => {

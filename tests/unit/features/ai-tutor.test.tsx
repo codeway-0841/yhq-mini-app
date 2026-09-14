@@ -21,6 +21,7 @@ vi.mock('../../../src/shared/api', async (importOriginal) => {
 
 import SnapSolveHub from '../../../src/features/ai-tutor/SnapSolveHub'
 import SocraticChatSheet from '../../../src/features/ai-tutor/components/SocraticChatSheet'
+import { CAMERA_AUTO_START_KEY } from '../../../src/shared/lib/camera-capture'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
 const originalPermissions = Object.getOwnPropertyDescriptor(navigator, 'permissions')
@@ -33,6 +34,7 @@ describe('AI Tutor Frontend Components', () => {
       settings: { ...useAppStore.getState().settings, language: 'uz' },
       tariff: 'free',
     })
+    localStorage.removeItem(CAMERA_AUTO_START_KEY)
   })
 
   afterEach(() => {
@@ -96,6 +98,36 @@ describe('AI Tutor Frontend Components', () => {
 
     await waitFor(() => expect(getUserMedia).toHaveBeenCalledOnce())
     expect(await screen.findByText(/Kameraga ruxsat berilmagan/)).toBeInTheDocument()
+  })
+
+  it('auto-starts on WebViews that report prompt after a previous successful camera start', async () => {
+    mockGetQuota.mockResolvedValue({ ok: false })
+    localStorage.setItem(CAMERA_AUTO_START_KEY, '1')
+
+    const stream = { getTracks: vi.fn(() => []) } as unknown as MediaStream
+    const getUserMedia = vi.fn().mockResolvedValue(stream)
+    const play = vi.spyOn(HTMLMediaElement.prototype, 'play').mockResolvedValue()
+
+    Object.defineProperty(navigator, 'permissions', {
+      configurable: true,
+      value: { query: vi.fn().mockResolvedValue({ state: 'prompt' }) },
+    })
+    Object.defineProperty(navigator, 'mediaDevices', {
+      configurable: true,
+      value: { getUserMedia, enumerateDevices: vi.fn().mockResolvedValue([]) },
+    })
+
+    render(
+      <MemoryRouter>
+        <SnapSolveHub />
+      </MemoryRouter>,
+    )
+
+    await waitFor(() => expect(getUserMedia).toHaveBeenCalledOnce())
+    await waitFor(() => expect(screen.queryByRole('button', { name: 'Kamerani yoqish' })).not.toBeInTheDocument())
+    expect(localStorage.getItem(CAMERA_AUTO_START_KEY)).toBe('1')
+
+    play.mockRestore()
   })
 
   it('renders SocraticChatSheet when open with welcome message and suggestion chips', () => {
