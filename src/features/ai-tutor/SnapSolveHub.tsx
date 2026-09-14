@@ -639,7 +639,9 @@ export default function SnapSolveHub() {
           onPlaying={() => {
             setCameraState('active')
           }}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-150 ${
+            cameraState === 'active' ? 'opacity-100' : 'opacity-0'
+          }`}
         />
 
         {/* Screen Torch (Ekran Chirog'i) Softbox Lighting Frame */}
@@ -692,7 +694,10 @@ export default function SnapSolveHub() {
 
         {/* Permission prompt is intentionally user-initiated to avoid repeated WebView popups. */}
         {cameraState === 'prompt' && !selectedImage && !currentSolution && (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/92 p-6 text-center animate-in fade-in duration-200">
+          <div
+            data-testid="camera-permission-prompt"
+            className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black p-6 text-center animate-in fade-in duration-200"
+          >
             <div className="flex size-16 items-center justify-center rounded-3xl bg-white/10 text-white mb-3 backdrop-blur-md border border-white/10 shadow-lg">
               <Camera size={32} strokeWidth={1.75} className="text-rose-400" />
             </div>
@@ -727,7 +732,7 @@ export default function SnapSolveHub() {
         {(cameraState === 'denied' || cameraState === 'unsupported' || cameraState === 'error') &&
           !selectedImage &&
           !currentSolution && (
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/92 p-6 text-center animate-in fade-in duration-200">
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black p-6 text-center animate-in fade-in duration-200">
               <div className="flex size-16 items-center justify-center rounded-3xl bg-white/10 text-white mb-3 backdrop-blur-md border border-white/10 shadow-lg">
                 <Camera size={32} strokeWidth={1.75} className="text-rose-400" />
               </div>

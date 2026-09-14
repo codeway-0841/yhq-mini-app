@@ -93,6 +93,8 @@ describe('AI Tutor Frontend Components', () => {
 
     const enableCamera = await screen.findByRole('button', { name: 'Kamerani yoqish' })
     expect(getUserMedia).not.toHaveBeenCalled()
+    expect(screen.getByTestId('camera-permission-prompt')).toHaveClass('bg-black')
+    expect(document.querySelector('video')).toHaveClass('opacity-0')
 
     fireEvent.click(enableCamera)
 
