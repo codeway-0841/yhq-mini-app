@@ -2,6 +2,7 @@ const API_BASE     = import.meta.env['VITE_API_BASE_URL'] as string | undefined
 const WS_ENV       = import.meta.env['VITE_WS_URL']       as string | undefined
 const BOT_USERNAME = import.meta.env['VITE_BOT_USERNAME'] as string | undefined
 const TEST_SESSIONS_V2 = import.meta.env['VITE_TEST_SESSIONS_V2'] as string | undefined
+const LIBRARY_PDF_BASE = import.meta.env['VITE_LIBRARY_PDF_BASE_URL'] as string | undefined
 
 /** Derivation uchun minimal env ko'rinishi — testlar to'g'ridan-to'g'ri chaqiradi. */
 export interface ClientEnv {
@@ -41,6 +42,13 @@ export function resolveWsUrl(env: ClientEnv, location?: { protocol: string; host
   return `${proto}://${location.host}/ws/octagon`
 }
 
+/** Kutubxona PDF bazasi — env (trailing slash'siz), bo'sh bo'lsa lokal fallback.
+ *  Sof funksiya (test uchun): runtime-config.test.ts naqshi. */
+export function resolveLibraryPdfBase(raw?: string): string {
+  const trimmed = raw?.trim().replace(/\/+$/, '')
+  return trimmed || '/kutubxona/pdf'
+}
+
 const env: ClientEnv = {
   DEV:  import.meta.env.DEV,
   MODE: import.meta.env.MODE,
@@ -61,4 +69,10 @@ export const config = {
   phoneEmailAuthEnabled: false,
   /** Server-authoritative bounded random/saved tests. Default off; rollback = env false. */
   testSessionsV2Enabled: TEST_SESSIONS_V2 === 'true',
+  /**
+   * Kutubxona PDF bazasi (trailing slash'siz). PDF'lar repo'da emas (~3GB) —
+   * prod'da R2/S3/CDN manzili beriladi (masalan `https://cdn.kivvi.uz/kutubxona/pdf`).
+   * Berilmasa lokal `/kutubxona/pdf` (dev fallback).
+   */
+  libraryPdfBaseUrl: resolveLibraryPdfBase(LIBRARY_PDF_BASE),
 } as const

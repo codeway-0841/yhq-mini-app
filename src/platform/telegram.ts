@@ -33,6 +33,8 @@ interface TelegramWebApp {
   /** Mini App'ni yopadi (user bot'dan qayta ochganda FRESH initData beriladi). */
   close?(): void
   openTelegramLink?(url: string): void
+  /** Tashqi havola (PDF/dokument) — Telegram in-app yoki tizim brauzerida ochadi. */
+  openLink?(url: string, options?: { try_instant_view?: boolean }): void
   shareURL?(url: string, text?: string): void
   initData?: string
   initDataUnsafe?: {

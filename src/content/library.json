@@ -1,0 +1,2211 @@
+{
+ "books": [
+  {
+   "slug": "1-sinf-alifbe",
+   "grade": 1,
+   "title": "1-sinf Alifbe",
+   "name": "Alifbe",
+   "subject": "ona-tili",
+   "pages": 80,
+   "file": "1-sinf/1-sinf-alifbe.pdf",
+   "cover": "1-sinf/1-sinf-alifbe-cover.webp"
+  },
+  {
+   "slug": "1-sinf-atrofimizdagi-olam",
+   "grade": 1,
+   "title": "1-sinf Atrofimizdagi olam",
+   "name": "Atrofimizdagi olam",
+   "subject": "tabiatshunoslik",
+   "pages": 63,
+   "file": "1-sinf/1-sinf-atrofimizdagi-olam.pdf",
+   "cover": "1-sinf/1-sinf-atrofimizdagi-olam-cover.webp"
+  },
+  {
+   "slug": "1-sinf-fransuz-tili",
+   "grade": 1,
+   "title": "1-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 104,
+   "file": "1-sinf/1-sinf-fransuz-tili.pdf",
+   "cover": "1-sinf/1-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "1-sinf-ingliz-tili",
+   "grade": 1,
+   "title": "1-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 104,
+   "file": "1-sinf/1-sinf-ingliz-tili.pdf",
+   "cover": "1-sinf/1-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "1-sinf-jismoniy-tarbiya",
+   "grade": 1,
+   "title": "1-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 64,
+   "file": "1-sinf/1-sinf-jismoniy-tarbiya.pdf",
+   "cover": "1-sinf/1-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "1-sinf-matematika",
+   "grade": 1,
+   "title": "1-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 160,
+   "file": "1-sinf/1-sinf-matematika.pdf",
+   "cover": "1-sinf/1-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "1-sinf-matematika-daftari",
+   "grade": 1,
+   "title": "1-sinf Matematika daftari",
+   "name": "Matematika daftari",
+   "subject": "matematika",
+   "pages": 72,
+   "file": "1-sinf/1-sinf-matematika-daftari.pdf",
+   "cover": "1-sinf/1-sinf-matematika-daftari-cover.webp"
+  },
+  {
+   "slug": "1-sinf-musiqa",
+   "grade": 1,
+   "title": "1-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 64,
+   "file": "1-sinf/1-sinf-musiqa.pdf",
+   "cover": "1-sinf/1-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "1-sinf-nemis-tili",
+   "grade": 1,
+   "title": "1-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 104,
+   "file": "1-sinf/1-sinf-nemis-tili.pdf",
+   "cover": "1-sinf/1-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "1-sinf-nutq-ostirish-maxsus",
+   "grade": 1,
+   "title": "1-sinf Nutq o‘stirish (maxsus)",
+   "name": "Nutq o‘stirish (maxsus)",
+   "subject": "ona-tili",
+   "pages": 96,
+   "file": "1-sinf/1-sinf-nutq-ostirish-maxsus.pdf",
+   "cover": "1-sinf/1-sinf-nutq-ostirish-maxsus-cover.webp"
+  },
+  {
+   "slug": "1-sinf-odobnoma",
+   "grade": 1,
+   "title": "1-sinf Odobnoma",
+   "name": "Odobnoma",
+   "subject": "odobnoma",
+   "pages": 64,
+   "file": "1-sinf/1-sinf-odobnoma.pdf",
+   "cover": "1-sinf/1-sinf-odobnoma-cover.webp"
+  },
+  {
+   "slug": "1-sinf-ona-tili",
+   "grade": 1,
+   "title": "1-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 112,
+   "file": "1-sinf/1-sinf-ona-tili.pdf",
+   "cover": "1-sinf/1-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "1-sinf-oqish",
+   "grade": 1,
+   "title": "1-sinf O‘qish",
+   "name": "O‘qish",
+   "subject": "ona-tili",
+   "pages": 128,
+   "file": "1-sinf/1-sinf-oqish.pdf",
+   "cover": "1-sinf/1-sinf-oqish-cover.webp"
+  },
+  {
+   "slug": "1-sinf-tarbiya",
+   "grade": 1,
+   "title": "1-sinf Tarbiya",
+   "name": "Tarbiya",
+   "subject": "tarbiya",
+   "pages": 64,
+   "file": "1-sinf/1-sinf-tarbiya.pdf",
+   "cover": "1-sinf/1-sinf-tarbiya-cover.webp"
+  },
+  {
+   "slug": "1-sinf-tasviriy-sanat",
+   "grade": 1,
+   "title": "1-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 56,
+   "file": "1-sinf/1-sinf-tasviriy-sanat.pdf",
+   "cover": "1-sinf/1-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "1-sinf-texnologiya",
+   "grade": 1,
+   "title": "1-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 80,
+   "file": "1-sinf/1-sinf-texnologiya.pdf",
+   "cover": "1-sinf/1-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "1-sinf-yozuv-daftari",
+   "grade": 1,
+   "title": "1-sinf Yozuv daftari",
+   "name": "Yozuv daftari",
+   "subject": "ona-tili",
+   "pages": 72,
+   "file": "1-sinf/1-sinf-yozuv-daftari.pdf",
+   "cover": "1-sinf/1-sinf-yozuv-daftari-cover.webp"
+  },
+  {
+   "slug": "2-sinf-atrofimizdagi-olam",
+   "grade": 2,
+   "title": "2-sinf Atrofimizdagi olam",
+   "name": "Atrofimizdagi olam",
+   "subject": "tabiatshunoslik",
+   "pages": 104,
+   "file": "2-sinf/2-sinf-atrofimizdagi-olam.pdf",
+   "cover": "2-sinf/2-sinf-atrofimizdagi-olam-cover.webp"
+  },
+  {
+   "slug": "2-sinf-fransuz-tili-daftar",
+   "grade": 2,
+   "title": "2-sinf Fransuz tili (daftar)",
+   "name": "Fransuz tili (daftar)",
+   "subject": "fransuz-tili",
+   "pages": 80,
+   "file": "2-sinf/2-sinf-fransuz-tili-daftar.pdf",
+   "cover": "2-sinf/2-sinf-fransuz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "2-sinf-ingliz-tili",
+   "grade": 2,
+   "title": "2-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 121,
+   "file": "2-sinf/2-sinf-ingliz-tili.pdf",
+   "cover": "2-sinf/2-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "2-sinf-ingliz-tili-daftar",
+   "grade": 2,
+   "title": "2-sinf Ingliz tili (daftar)",
+   "name": "Ingliz tili (daftar)",
+   "subject": "english",
+   "pages": 80,
+   "file": "2-sinf/2-sinf-ingliz-tili-daftar.pdf",
+   "cover": "2-sinf/2-sinf-ingliz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "2-sinf-jismoniy-tarbiya",
+   "grade": 2,
+   "title": "2-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 136,
+   "file": "2-sinf/2-sinf-jismoniy-tarbiya.pdf",
+   "cover": "2-sinf/2-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "2-sinf-matematika",
+   "grade": 2,
+   "title": "2-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 208,
+   "file": "2-sinf/2-sinf-matematika.pdf",
+   "cover": "2-sinf/2-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "2-sinf-musiqa",
+   "grade": 2,
+   "title": "2-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 72,
+   "file": "2-sinf/2-sinf-musiqa.pdf",
+   "cover": "2-sinf/2-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "2-sinf-nemis-tili",
+   "grade": 2,
+   "title": "2-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 120,
+   "file": "2-sinf/2-sinf-nemis-tili.pdf",
+   "cover": "2-sinf/2-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "2-sinf-nemis-tili-daftar",
+   "grade": 2,
+   "title": "2-sinf Nemis tili (daftar)",
+   "name": "Nemis tili (daftar)",
+   "subject": "nemis-tili",
+   "pages": 80,
+   "file": "2-sinf/2-sinf-nemis-tili-daftar.pdf",
+   "cover": "2-sinf/2-sinf-nemis-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "2-sinf-odobnoma",
+   "grade": 2,
+   "title": "2-sinf Odobnoma",
+   "name": "Odobnoma",
+   "subject": "odobnoma",
+   "pages": 80,
+   "file": "2-sinf/2-sinf-odobnoma.pdf",
+   "cover": "2-sinf/2-sinf-odobnoma-cover.webp"
+  },
+  {
+   "slug": "2-sinf-ona-tili",
+   "grade": 2,
+   "title": "2-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 144,
+   "file": "2-sinf/2-sinf-ona-tili.pdf",
+   "cover": "2-sinf/2-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "2-sinf-oqish",
+   "grade": 2,
+   "title": "2-sinf O‘qish",
+   "name": "O‘qish",
+   "subject": "ona-tili",
+   "pages": 177,
+   "file": "2-sinf/2-sinf-oqish.pdf",
+   "cover": "2-sinf/2-sinf-oqish-cover.webp"
+  },
+  {
+   "slug": "2-sinf-rus-tili",
+   "grade": 2,
+   "title": "2-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 128,
+   "file": "2-sinf/2-sinf-rus-tili.pdf",
+   "cover": "2-sinf/2-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "2-sinf-tarbiya",
+   "grade": 2,
+   "title": "2-sinf Tarbiya",
+   "name": "Tarbiya",
+   "subject": "tarbiya",
+   "pages": 80,
+   "file": "2-sinf/2-sinf-tarbiya.pdf",
+   "cover": "2-sinf/2-sinf-tarbiya-cover.webp"
+  },
+  {
+   "slug": "2-sinf-tasviriy-sanat",
+   "grade": 2,
+   "title": "2-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 128,
+   "file": "2-sinf/2-sinf-tasviriy-sanat.pdf",
+   "cover": "2-sinf/2-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "2-sinf-texnologiya",
+   "grade": 2,
+   "title": "2-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 81,
+   "file": "2-sinf/2-sinf-texnologiya.pdf",
+   "cover": "2-sinf/2-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "3-sinf-fransuz-tili",
+   "grade": 3,
+   "title": "3-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 120,
+   "file": "3-sinf/3-sinf-fransuz-tili.pdf",
+   "cover": "3-sinf/3-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "3-sinf-fransuz-tili-daftar",
+   "grade": 3,
+   "title": "3-sinf Fransuz tili (daftar)",
+   "name": "Fransuz tili (daftar)",
+   "subject": "fransuz-tili",
+   "pages": 80,
+   "file": "3-sinf/3-sinf-fransuz-tili-daftar.pdf",
+   "cover": "3-sinf/3-sinf-fransuz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "3-sinf-ingliz-tili",
+   "grade": 3,
+   "title": "3-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 120,
+   "file": "3-sinf/3-sinf-ingliz-tili.pdf",
+   "cover": "3-sinf/3-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "3-sinf-ingliz-tili-daftar",
+   "grade": 3,
+   "title": "3-sinf Ingliz tili (daftar)",
+   "name": "Ingliz tili (daftar)",
+   "subject": "english",
+   "pages": 81,
+   "file": "3-sinf/3-sinf-ingliz-tili-daftar.pdf",
+   "cover": "3-sinf/3-sinf-ingliz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "3-sinf-jismoniy-tarbiya",
+   "grade": 3,
+   "title": "3-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 168,
+   "file": "3-sinf/3-sinf-jismoniy-tarbiya.pdf",
+   "cover": "3-sinf/3-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "3-sinf-matematika",
+   "grade": 3,
+   "title": "3-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 213,
+   "file": "3-sinf/3-sinf-matematika.pdf",
+   "cover": "3-sinf/3-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "3-sinf-musiqa",
+   "grade": 3,
+   "title": "3-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 108,
+   "file": "3-sinf/3-sinf-musiqa.pdf",
+   "cover": "3-sinf/3-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "3-sinf-nemis-tili",
+   "grade": 3,
+   "title": "3-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 120,
+   "file": "3-sinf/3-sinf-nemis-tili.pdf",
+   "cover": "3-sinf/3-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "3-sinf-nemis-tili-daftar",
+   "grade": 3,
+   "title": "3-sinf Nemis tili (daftar)",
+   "name": "Nemis tili (daftar)",
+   "subject": "nemis-tili",
+   "pages": 80,
+   "file": "3-sinf/3-sinf-nemis-tili-daftar.pdf",
+   "cover": "3-sinf/3-sinf-nemis-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "3-sinf-odobnoma",
+   "grade": 3,
+   "title": "3-sinf Odobnoma",
+   "name": "Odobnoma",
+   "subject": "odobnoma",
+   "pages": 96,
+   "file": "3-sinf/3-sinf-odobnoma.pdf",
+   "cover": "3-sinf/3-sinf-odobnoma-cover.webp"
+  },
+  {
+   "slug": "3-sinf-ona-tili",
+   "grade": 3,
+   "title": "3-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 152,
+   "file": "3-sinf/3-sinf-ona-tili.pdf",
+   "cover": "3-sinf/3-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "3-sinf-oqish",
+   "grade": 3,
+   "title": "3-sinf O‘qish",
+   "name": "O‘qish",
+   "subject": "ona-tili",
+   "pages": 283,
+   "file": "3-sinf/3-sinf-oqish.pdf",
+   "cover": "3-sinf/3-sinf-oqish-cover.webp"
+  },
+  {
+   "slug": "3-sinf-oqish-metodika",
+   "grade": 3,
+   "title": "3-sinf O‘qish (metodika)",
+   "name": "O‘qish (metodika)",
+   "subject": "ona-tili",
+   "pages": 176,
+   "file": "3-sinf/3-sinf-oqish-metodika.pdf",
+   "cover": "3-sinf/3-sinf-oqish-metodika-cover.webp"
+  },
+  {
+   "slug": "3-sinf-rus-tili",
+   "grade": 3,
+   "title": "3-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 144,
+   "file": "3-sinf/3-sinf-rus-tili.pdf",
+   "cover": "3-sinf/3-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "3-sinf-tabiatshunoslik",
+   "grade": 3,
+   "title": "3-sinf Tabiatshunoslik",
+   "name": "Tabiatshunoslik",
+   "subject": "tabiatshunoslik",
+   "pages": 128,
+   "file": "3-sinf/3-sinf-tabiatshunoslik.pdf",
+   "cover": "3-sinf/3-sinf-tabiatshunoslik-cover.webp"
+  },
+  {
+   "slug": "3-sinf-tarbiya",
+   "grade": 3,
+   "title": "3-sinf Tarbiya",
+   "name": "Tarbiya",
+   "subject": "tarbiya",
+   "pages": 96,
+   "file": "3-sinf/3-sinf-tarbiya.pdf",
+   "cover": "3-sinf/3-sinf-tarbiya-cover.webp"
+  },
+  {
+   "slug": "3-sinf-tasviriy-sanat",
+   "grade": 3,
+   "title": "3-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 144,
+   "file": "3-sinf/3-sinf-tasviriy-sanat.pdf",
+   "cover": "3-sinf/3-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "3-sinf-texnologiya",
+   "grade": 3,
+   "title": "3-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 80,
+   "file": "3-sinf/3-sinf-texnologiya.pdf",
+   "cover": "3-sinf/3-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "4-sinf-fransuz-tili",
+   "grade": 4,
+   "title": "4-sinf Fransuz tili (daftar)",
+   "name": "Fransuz tili (daftar)",
+   "subject": "fransuz-tili",
+   "pages": 81,
+   "file": "4-sinf/4-sinf-fransuz-tili.pdf",
+   "cover": "4-sinf/4-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "4-sinf-ingliz-tili",
+   "grade": 4,
+   "title": "4-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 82,
+   "file": "4-sinf/4-sinf-ingliz-tili.pdf",
+   "cover": "4-sinf/4-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "4-sinf-ingliz-tili-daftar",
+   "grade": 4,
+   "title": "4-sinf Ingliz tili (daftar)",
+   "name": "Ingliz tili (daftar)",
+   "subject": "english",
+   "pages": 81,
+   "file": "4-sinf/4-sinf-ingliz-tili-daftar.pdf",
+   "cover": "4-sinf/4-sinf-ingliz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "4-sinf-jismoniy-tarbiya",
+   "grade": 4,
+   "title": "4-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 176,
+   "file": "4-sinf/4-sinf-jismoniy-tarbiya.pdf",
+   "cover": "4-sinf/4-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "4-sinf-matematika",
+   "grade": 4,
+   "title": "4-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 212,
+   "file": "4-sinf/4-sinf-matematika.pdf",
+   "cover": "4-sinf/4-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "4-sinf-musiqa",
+   "grade": 4,
+   "title": "4-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 115,
+   "file": "4-sinf/4-sinf-musiqa.pdf",
+   "cover": "4-sinf/4-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "4-sinf-nemis-tili",
+   "grade": 4,
+   "title": "4-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 120,
+   "file": "4-sinf/4-sinf-nemis-tili.pdf",
+   "cover": "4-sinf/4-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "4-sinf-nemis-tili-daftar",
+   "grade": 4,
+   "title": "4-sinf Nemis tili (daftar)",
+   "name": "Nemis tili (daftar)",
+   "subject": "nemis-tili",
+   "pages": 80,
+   "file": "4-sinf/4-sinf-nemis-tili-daftar.pdf",
+   "cover": "4-sinf/4-sinf-nemis-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "4-sinf-odobnoma",
+   "grade": 4,
+   "title": "4-sinf Odobnoma",
+   "name": "Odobnoma",
+   "subject": "odobnoma",
+   "pages": 96,
+   "file": "4-sinf/4-sinf-odobnoma.pdf",
+   "cover": "4-sinf/4-sinf-odobnoma-cover.webp"
+  },
+  {
+   "slug": "4-sinf-ona-tili",
+   "grade": 4,
+   "title": "4-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 192,
+   "file": "4-sinf/4-sinf-ona-tili.pdf",
+   "cover": "4-sinf/4-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "4-sinf-oqish",
+   "grade": 4,
+   "title": "4-sinf O‘qish",
+   "name": "O‘qish",
+   "subject": "ona-tili",
+   "pages": 160,
+   "file": "4-sinf/4-sinf-oqish.pdf",
+   "cover": "4-sinf/4-sinf-oqish-cover.webp"
+  },
+  {
+   "slug": "4-sinf-oqish-metodika",
+   "grade": 4,
+   "title": "4-sinf O‘qish (metodika)",
+   "name": "O‘qish (metodika)",
+   "subject": "ona-tili",
+   "pages": 240,
+   "file": "4-sinf/4-sinf-oqish-metodika.pdf",
+   "cover": "4-sinf/4-sinf-oqish-metodika-cover.webp"
+  },
+  {
+   "slug": "4-sinf-rus-tili",
+   "grade": 4,
+   "title": "4-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 160,
+   "file": "4-sinf/4-sinf-rus-tili.pdf",
+   "cover": "4-sinf/4-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "4-sinf-tabiatshunoslik",
+   "grade": 4,
+   "title": "4-sinf Tabiatshunoslik",
+   "name": "Tabiatshunoslik",
+   "subject": "tabiatshunoslik",
+   "pages": 120,
+   "file": "4-sinf/4-sinf-tabiatshunoslik.pdf",
+   "cover": "4-sinf/4-sinf-tabiatshunoslik-cover.webp"
+  },
+  {
+   "slug": "4-sinf-tasviriy-sanat",
+   "grade": 4,
+   "title": "4-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 115,
+   "file": "4-sinf/4-sinf-tasviriy-sanat.pdf",
+   "cover": "4-sinf/4-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "4-sinf-texnologiya",
+   "grade": 4,
+   "title": "4-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 112,
+   "file": "4-sinf/4-sinf-texnologiya.pdf",
+   "cover": "4-sinf/4-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "5-sinf-adabiyot",
+   "grade": 5,
+   "title": "5-sinf Adabiyot",
+   "name": "Adabiyot",
+   "subject": "adabiyot",
+   "pages": 272,
+   "file": "5-sinf/5-sinf-adabiyot.pdf",
+   "cover": "5-sinf/5-sinf-adabiyot-cover.webp"
+  },
+  {
+   "slug": "5-sinf-biologiya",
+   "grade": 5,
+   "title": "5-sinf Biologiya",
+   "name": "Biologiya",
+   "subject": "biologiya",
+   "pages": 97,
+   "file": "5-sinf/5-sinf-biologiya.pdf",
+   "cover": "5-sinf/5-sinf-biologiya-cover.webp"
+  },
+  {
+   "slug": "5-sinf-fransuz-tili",
+   "grade": 5,
+   "title": "5-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-fransuz-tili.pdf",
+   "cover": "5-sinf/5-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "5-sinf-fransuz-tili-daftar",
+   "grade": 5,
+   "title": "5-sinf Fransuz tili (daftar)",
+   "name": "Fransuz tili (daftar)",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-fransuz-tili-daftar.pdf",
+   "cover": "5-sinf/5-sinf-fransuz-tili-daftar-cover.webp"
+  },
+  {
+   "slug": "5-sinf-fransuz-tili-metodika",
+   "grade": 5,
+   "title": "5-sinf Fransuz tili (metodika)",
+   "name": "Fransuz tili (metodika)",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-fransuz-tili-metodika.pdf",
+   "cover": "5-sinf/5-sinf-fransuz-tili-metodika-cover.webp"
+  },
+  {
+   "slug": "5-sinf-geografiya",
+   "grade": 5,
+   "title": "5-sinf Geografiya",
+   "name": "Geografiya",
+   "subject": "geografiya",
+   "pages": 113,
+   "file": "5-sinf/5-sinf-geografiya.pdf",
+   "cover": "5-sinf/5-sinf-geografiya-cover.webp"
+  },
+  {
+   "slug": "5-sinf-informatika",
+   "grade": 5,
+   "title": "5-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 114,
+   "file": "5-sinf/5-sinf-informatika.pdf",
+   "cover": "5-sinf/5-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "5-sinf-ingliz-tili",
+   "grade": 5,
+   "title": "5-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-ingliz-tili.pdf",
+   "cover": "5-sinf/5-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "5-sinf-ingliz-tili-metodika",
+   "grade": 5,
+   "title": "5-sinf Ingliz tili (metodika)",
+   "name": "Ingliz tili (metodika)",
+   "subject": "english",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-ingliz-tili-metodika.pdf",
+   "cover": "5-sinf/5-sinf-ingliz-tili-metodika-cover.webp"
+  },
+  {
+   "slug": "5-sinf-jismoniy-tarbiya-5-6",
+   "grade": 5,
+   "title": "5-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-jismoniy-tarbiya-5-6.pdf",
+   "cover": "5-sinf/5-sinf-jismoniy-tarbiya-5-6-cover.webp"
+  },
+  {
+   "slug": "5-sinf-matematika-1-qism",
+   "grade": 5,
+   "title": "5-sinf Matematika (1-qism)",
+   "name": "Matematika (1-qism)",
+   "subject": "matematika",
+   "pages": 144,
+   "file": "5-sinf/5-sinf-matematika-1-qism.pdf",
+   "cover": "5-sinf/5-sinf-matematika-1-qism-cover.webp"
+  },
+  {
+   "slug": "5-sinf-matematika-2-qism",
+   "grade": 5,
+   "title": "5-sinf Matematika (2-qism)",
+   "name": "Matematika (2-qism)",
+   "subject": "matematika",
+   "pages": 144,
+   "file": "5-sinf/5-sinf-matematika-2-qism.pdf",
+   "cover": "5-sinf/5-sinf-matematika-2-qism-cover.webp"
+  },
+  {
+   "slug": "5-sinf-musiqa",
+   "grade": 5,
+   "title": "5-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 96,
+   "file": "5-sinf/5-sinf-musiqa.pdf",
+   "cover": "5-sinf/5-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "5-sinf-nemis-tili",
+   "grade": 5,
+   "title": "5-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 160,
+   "file": "5-sinf/5-sinf-nemis-tili.pdf",
+   "cover": "5-sinf/5-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "5-sinf-nemis-tili-metodika",
+   "grade": 5,
+   "title": "5-sinf Nemis tili (metodika)",
+   "name": "Nemis tili (metodika)",
+   "subject": "nemis-tili",
+   "pages": 192,
+   "file": "5-sinf/5-sinf-nemis-tili-metodika.pdf",
+   "cover": "5-sinf/5-sinf-nemis-tili-metodika-cover.webp"
+  },
+  {
+   "slug": "5-sinf-ona-tili",
+   "grade": 5,
+   "title": "5-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 192,
+   "file": "5-sinf/5-sinf-ona-tili.pdf",
+   "cover": "5-sinf/5-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "5-sinf-rus-tili",
+   "grade": 5,
+   "title": "5-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 225,
+   "file": "5-sinf/5-sinf-rus-tili.pdf",
+   "cover": "5-sinf/5-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "5-sinf-tarixdan-hikoyalar",
+   "grade": 5,
+   "title": "5-sinf Tarixdan hikoyalar",
+   "name": "Tarixdan hikoyalar",
+   "subject": "tarix",
+   "pages": 184,
+   "file": "5-sinf/5-sinf-tarixdan-hikoyalar.pdf",
+   "cover": "5-sinf/5-sinf-tarixdan-hikoyalar-cover.webp"
+  },
+  {
+   "slug": "5-sinf-tasviriy-sanat",
+   "grade": 5,
+   "title": "5-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 128,
+   "file": "5-sinf/5-sinf-tasviriy-sanat.pdf",
+   "cover": "5-sinf/5-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "5-sinf-texnologiya",
+   "grade": 5,
+   "title": "5-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 240,
+   "file": "5-sinf/5-sinf-texnologiya.pdf",
+   "cover": "5-sinf/5-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "5-sinf-vatan-tuygusi",
+   "grade": 5,
+   "title": "5-sinf Vatan tuyg‘usi",
+   "name": "Vatan tuyg‘usi",
+   "subject": "vatan-tuygusi",
+   "pages": 112,
+   "file": "5-sinf/5-sinf-vatan-tuygusi.pdf",
+   "cover": "5-sinf/5-sinf-vatan-tuygusi-cover.webp"
+  },
+  {
+   "slug": "6-sinf-adabiyot-1-qism",
+   "grade": 6,
+   "title": "6-sinf Adabiyot (1-qism)",
+   "name": "Adabiyot (1-qism)",
+   "subject": "adabiyot",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-adabiyot-1-qism.pdf",
+   "cover": "6-sinf/6-sinf-adabiyot-1-qism-cover.webp"
+  },
+  {
+   "slug": "6-sinf-adabiyot-2-qism",
+   "grade": 6,
+   "title": "6-sinf Adabiyot (2-qism)",
+   "name": "Adabiyot (2-qism)",
+   "subject": "adabiyot",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-adabiyot-2-qism.pdf",
+   "cover": "6-sinf/6-sinf-adabiyot-2-qism-cover.webp"
+  },
+  {
+   "slug": "6-sinf-botanika",
+   "grade": 6,
+   "title": "6-sinf Botanika",
+   "name": "Botanika",
+   "subject": "biologiya",
+   "pages": 144,
+   "file": "6-sinf/6-sinf-botanika.pdf",
+   "cover": "6-sinf/6-sinf-botanika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-fizika",
+   "grade": 6,
+   "title": "6-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 176,
+   "file": "6-sinf/6-sinf-fizika.pdf",
+   "cover": "6-sinf/6-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-fizika-afudm",
+   "grade": 6,
+   "title": "6-sinf Fizika (afudm)",
+   "name": "Fizika (afudm)",
+   "subject": "fizika",
+   "pages": 194,
+   "file": "6-sinf/6-sinf-fizika-afudm.pdf",
+   "cover": "6-sinf/6-sinf-fizika-afudm-cover.webp"
+  },
+  {
+   "slug": "6-sinf-fransuz-tili-metodika",
+   "grade": 6,
+   "title": "6-sinf Fransuz tili (metodika)",
+   "name": "Fransuz tili (metodika)",
+   "subject": "fransuz-tili",
+   "pages": 192,
+   "file": "6-sinf/6-sinf-fransuz-tili-metodika.pdf",
+   "cover": "6-sinf/6-sinf-fransuz-tili-metodika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-geografiya",
+   "grade": 6,
+   "title": "6-sinf Geografiya",
+   "name": "Geografiya",
+   "subject": "geografiya",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-geografiya.pdf",
+   "cover": "6-sinf/6-sinf-geografiya-cover.webp"
+  },
+  {
+   "slug": "6-sinf-informatika",
+   "grade": 6,
+   "title": "6-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 81,
+   "file": "6-sinf/6-sinf-informatika.pdf",
+   "cover": "6-sinf/6-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-ingliz-tili",
+   "grade": 6,
+   "title": "6-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-ingliz-tili.pdf",
+   "cover": "6-sinf/6-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "6-sinf-ingliz-tili-metodika",
+   "grade": 6,
+   "title": "6-sinf Ingliz tili (metodika)",
+   "name": "Ingliz tili (metodika)",
+   "subject": "english",
+   "pages": 192,
+   "file": "6-sinf/6-sinf-ingliz-tili-metodika.pdf",
+   "cover": "6-sinf/6-sinf-ingliz-tili-metodika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-jismoniy-tarbiya",
+   "grade": 6,
+   "title": "6-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-jismoniy-tarbiya.pdf",
+   "cover": "6-sinf/6-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "6-sinf-matematika",
+   "grade": 6,
+   "title": "6-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 240,
+   "file": "6-sinf/6-sinf-matematika.pdf",
+   "cover": "6-sinf/6-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "6-sinf-musiqa",
+   "grade": 6,
+   "title": "6-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 88,
+   "file": "6-sinf/6-sinf-musiqa.pdf",
+   "cover": "6-sinf/6-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "6-sinf-nemis-tili",
+   "grade": 6,
+   "title": "6-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 160,
+   "file": "6-sinf/6-sinf-nemis-tili.pdf",
+   "cover": "6-sinf/6-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "6-sinf-ona-tili",
+   "grade": 6,
+   "title": "6-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 208,
+   "file": "6-sinf/6-sinf-ona-tili.pdf",
+   "cover": "6-sinf/6-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "6-sinf-rus-tili",
+   "grade": 6,
+   "title": "6-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 176,
+   "file": "6-sinf/6-sinf-rus-tili.pdf",
+   "cover": "6-sinf/6-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "6-sinf-qadimgi-dunyo-tarixi",
+   "grade": 6,
+   "title": "6-sinf Tarix",
+   "name": "Tarix",
+   "subject": "tarix",
+   "pages": 192,
+   "file": "6-sinf/6-sinf-qadimgi-dunyo-tarixi.pdf",
+   "cover": "6-sinf/6-sinf-qadimgi-dunyo-tarixi-cover.webp"
+  },
+  {
+   "slug": "6-sinf-tasviriy-sanat",
+   "grade": 6,
+   "title": "6-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 120,
+   "file": "6-sinf/6-sinf-tasviriy-sanat.pdf",
+   "cover": "6-sinf/6-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "6-sinf-texnologiya",
+   "grade": 6,
+   "title": "6-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 240,
+   "file": "6-sinf/6-sinf-texnologiya.pdf",
+   "cover": "6-sinf/6-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "6-sinf-vatan-tuygusi",
+   "grade": 6,
+   "title": "6-sinf Vatan tuyg‘usi",
+   "name": "Vatan tuyg‘usi",
+   "subject": "vatan-tuygusi",
+   "pages": 120,
+   "file": "6-sinf/6-sinf-vatan-tuygusi.pdf",
+   "cover": "6-sinf/6-sinf-vatan-tuygusi-cover.webp"
+  },
+  {
+   "slug": "7-sinf-adabiyot",
+   "grade": 7,
+   "title": "7-sinf Adabiyot",
+   "name": "Adabiyot",
+   "subject": "adabiyot",
+   "pages": 369,
+   "file": "7-sinf/7-sinf-adabiyot.pdf",
+   "cover": "7-sinf/7-sinf-adabiyot-cover.webp"
+  },
+  {
+   "slug": "7-sinf-algebra",
+   "grade": 7,
+   "title": "7-sinf Algebra",
+   "name": "Algebra",
+   "subject": "matematika",
+   "pages": 192,
+   "file": "7-sinf/7-sinf-algebra.pdf",
+   "cover": "7-sinf/7-sinf-algebra-cover.webp"
+  },
+  {
+   "slug": "7-sinf-fizika",
+   "grade": 7,
+   "title": "7-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 170,
+   "file": "7-sinf/7-sinf-fizika.pdf",
+   "cover": "7-sinf/7-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "7-sinf-fransuz-tili",
+   "grade": 7,
+   "title": "7-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "7-sinf/7-sinf-fransuz-tili.pdf",
+   "cover": "7-sinf/7-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "7-sinf-geografiya",
+   "grade": 7,
+   "title": "7-sinf Geografiya",
+   "name": "Geografiya",
+   "subject": "geografiya",
+   "pages": 176,
+   "file": "7-sinf/7-sinf-geografiya.pdf",
+   "cover": "7-sinf/7-sinf-geografiya-cover.webp"
+  },
+  {
+   "slug": "7-sinf-geometriya",
+   "grade": 7,
+   "title": "7-sinf Geometriya",
+   "name": "Geometriya",
+   "subject": "matematika",
+   "pages": 160,
+   "file": "7-sinf/7-sinf-geometriya.pdf",
+   "cover": "7-sinf/7-sinf-geometriya-cover.webp"
+  },
+  {
+   "slug": "7-sinf-informatika",
+   "grade": 7,
+   "title": "7-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 89,
+   "file": "7-sinf/7-sinf-informatika.pdf",
+   "cover": "7-sinf/7-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "7-sinf-ingliz-tili",
+   "grade": 7,
+   "title": "7-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 160,
+   "file": "7-sinf/7-sinf-ingliz-tili.pdf",
+   "cover": "7-sinf/7-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "7-sinf-jahon-tarixi",
+   "grade": 7,
+   "title": "7-sinf Jahon tarixi",
+   "name": "Jahon tarixi",
+   "subject": "tarix",
+   "pages": 161,
+   "file": "7-sinf/7-sinf-jahon-tarixi.pdf",
+   "cover": "7-sinf/7-sinf-jahon-tarixi-cover.webp"
+  },
+  {
+   "slug": "7-sinf-jismoniy-tarbiya",
+   "grade": 7,
+   "title": "7-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 152,
+   "file": "7-sinf/7-sinf-jismoniy-tarbiya.pdf",
+   "cover": "7-sinf/7-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "7-sinf-kimyo",
+   "grade": 7,
+   "title": "7-sinf Kimyo",
+   "name": "Kimyo",
+   "subject": "kimyo",
+   "pages": 81,
+   "file": "7-sinf/7-sinf-kimyo.pdf",
+   "cover": "7-sinf/7-sinf-kimyo-cover.webp"
+  },
+  {
+   "slug": "7-sinf-milliy-istiqlol-goyasi",
+   "grade": 7,
+   "title": "7-sinf Milliy istiqlol g‘oyasi",
+   "name": "Milliy istiqlol g‘oyasi",
+   "subject": "milliy-goya",
+   "pages": 120,
+   "file": "7-sinf/7-sinf-milliy-istiqlol-goyasi.pdf",
+   "cover": "7-sinf/7-sinf-milliy-istiqlol-goyasi-cover.webp"
+  },
+  {
+   "slug": "7-sinf-musiqa",
+   "grade": 7,
+   "title": "7-sinf Musiqa",
+   "name": "Musiqa",
+   "subject": "musiqa",
+   "pages": 160,
+   "file": "7-sinf/7-sinf-musiqa.pdf",
+   "cover": "7-sinf/7-sinf-musiqa-cover.webp"
+  },
+  {
+   "slug": "7-sinf-nemis-tili",
+   "grade": 7,
+   "title": "7-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 162,
+   "file": "7-sinf/7-sinf-nemis-tili.pdf",
+   "cover": "7-sinf/7-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "7-sinf-ona-tili",
+   "grade": 7,
+   "title": "7-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 160,
+   "file": "7-sinf/7-sinf-ona-tili.pdf",
+   "cover": "7-sinf/7-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "7-sinf-ozbekiston-tarixi",
+   "grade": 7,
+   "title": "7-sinf O‘zbekiston tarixi",
+   "name": "O‘zbekiston tarixi",
+   "subject": "tarix",
+   "pages": 161,
+   "file": "7-sinf/7-sinf-ozbekiston-tarixi.pdf",
+   "cover": "7-sinf/7-sinf-ozbekiston-tarixi-cover.webp"
+  },
+  {
+   "slug": "7-sinf-rus-tili",
+   "grade": 7,
+   "title": "7-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 176,
+   "file": "7-sinf/7-sinf-rus-tili.pdf",
+   "cover": "7-sinf/7-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "7-sinf-tasviriy-sanat",
+   "grade": 7,
+   "title": "7-sinf Tasviriy san’at",
+   "name": "Tasviriy san’at",
+   "subject": "tasviriy-sanat",
+   "pages": 80,
+   "file": "7-sinf/7-sinf-tasviriy-sanat.pdf",
+   "cover": "7-sinf/7-sinf-tasviriy-sanat-cover.webp"
+  },
+  {
+   "slug": "7-sinf-texnologiya",
+   "grade": 7,
+   "title": "7-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 240,
+   "file": "7-sinf/7-sinf-texnologiya.pdf",
+   "cover": "7-sinf/7-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "7-sinf-zoologiya",
+   "grade": 7,
+   "title": "7-sinf Zoologiya",
+   "name": "Zoologiya",
+   "subject": "biologiya",
+   "pages": 208,
+   "file": "7-sinf/7-sinf-zoologiya.pdf",
+   "cover": "7-sinf/7-sinf-zoologiya-cover.webp"
+  },
+  {
+   "slug": "8-sinf-adabiyot",
+   "grade": 8,
+   "title": "8-sinf Adabiyot",
+   "name": "Adabiyot",
+   "subject": "adabiyot",
+   "pages": 352,
+   "file": "8-sinf/8-sinf-adabiyot.pdf",
+   "cover": "8-sinf/8-sinf-adabiyot-cover.webp"
+  },
+  {
+   "slug": "8-sinf-algebra",
+   "grade": 8,
+   "title": "8-sinf Algebra",
+   "name": "Algebra",
+   "subject": "matematika",
+   "pages": 240,
+   "file": "8-sinf/8-sinf-algebra.pdf",
+   "cover": "8-sinf/8-sinf-algebra-cover.webp"
+  },
+  {
+   "slug": "8-sinf-odam-va-uning-salomatligi",
+   "grade": 8,
+   "title": "8-sinf biologiya (Odam va uning salomatligi)",
+   "name": "biologiya (Odam va uning salomatligi)",
+   "subject": "biologiya",
+   "pages": 192,
+   "file": "8-sinf/8-sinf-odam-va-uning-salomatligi.pdf",
+   "cover": "8-sinf/8-sinf-odam-va-uning-salomatligi-cover.webp"
+  },
+  {
+   "slug": "8-sinf-chizmachilik",
+   "grade": 8,
+   "title": "8-sinf Chizmachilik",
+   "name": "Chizmachilik",
+   "subject": "chizmachilik",
+   "pages": 96,
+   "file": "8-sinf/8-sinf-chizmachilik.pdf",
+   "cover": "8-sinf/8-sinf-chizmachilik-cover.webp"
+  },
+  {
+   "slug": "8-sinf-fizika",
+   "grade": 8,
+   "title": "8-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 176,
+   "file": "8-sinf/8-sinf-fizika.pdf",
+   "cover": "8-sinf/8-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "8-sinf-fransuz-tili",
+   "grade": 8,
+   "title": "8-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-fransuz-tili.pdf",
+   "cover": "8-sinf/8-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "8-sinf-geometriya",
+   "grade": 8,
+   "title": "8-sinf Geometriya",
+   "name": "Geometriya",
+   "subject": "matematika",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-geometriya.pdf",
+   "cover": "8-sinf/8-sinf-geometriya-cover.webp"
+  },
+  {
+   "slug": "8-sinf-ijtimoiy-iqtisodiy-geografiya",
+   "grade": 8,
+   "title": "8-sinf Ijtimoiy-iqtisodiy geografiya",
+   "name": "Ijtimoiy-iqtisodiy geografiya",
+   "subject": "geografiya",
+   "pages": 176,
+   "file": "8-sinf/8-sinf-ijtimoiy-iqtisodiy-geografiya.pdf",
+   "cover": "8-sinf/8-sinf-ijtimoiy-iqtisodiy-geografiya-cover.webp"
+  },
+  {
+   "slug": "8-sinf-informatika",
+   "grade": 8,
+   "title": "8-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 112,
+   "file": "8-sinf/8-sinf-informatika.pdf",
+   "cover": "8-sinf/8-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "8-sinf-ingliz-tili",
+   "grade": 8,
+   "title": "8-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-ingliz-tili.pdf",
+   "cover": "8-sinf/8-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "8-sinf-iqtisodiy-bilim-asoslari",
+   "grade": 8,
+   "title": "8-sinf Iqtisodiy bilim asoslari",
+   "name": "Iqtisodiy bilim asoslari",
+   "subject": "iqtisodiyot",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-iqtisodiy-bilim-asoslari.pdf",
+   "cover": "8-sinf/8-sinf-iqtisodiy-bilim-asoslari-cover.webp"
+  },
+  {
+   "slug": "8-sinf-jahon-tarixi",
+   "grade": 8,
+   "title": "8-sinf Jahon tarixi",
+   "name": "Jahon tarixi",
+   "subject": "tarix",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-jahon-tarixi.pdf",
+   "cover": "8-sinf/8-sinf-jahon-tarixi-cover.webp"
+  },
+  {
+   "slug": "8-sinf-jismoniy-tarbiya",
+   "grade": 8,
+   "title": "8-sinf Jismoniy tarbiya",
+   "name": "Jismoniy tarbiya",
+   "subject": "jismoniy-tarbiya",
+   "pages": 152,
+   "file": "8-sinf/8-sinf-jismoniy-tarbiya.pdf",
+   "cover": "8-sinf/8-sinf-jismoniy-tarbiya-cover.webp"
+  },
+  {
+   "slug": "8-sinf-kimyo",
+   "grade": 8,
+   "title": "8-sinf Kimyo",
+   "name": "Kimyo",
+   "subject": "kimyo",
+   "pages": 208,
+   "file": "8-sinf/8-sinf-kimyo.pdf",
+   "cover": "8-sinf/8-sinf-kimyo-cover.webp"
+  },
+  {
+   "slug": "8-sinf-milliy-istiqlol-goyasi",
+   "grade": 8,
+   "title": "8-sinf Milliy istiqlol g‘oyasi",
+   "name": "Milliy istiqlol g‘oyasi",
+   "subject": "milliy-goya",
+   "pages": 128,
+   "file": "8-sinf/8-sinf-milliy-istiqlol-goyasi.pdf",
+   "cover": "8-sinf/8-sinf-milliy-istiqlol-goyasi-cover.webp"
+  },
+  {
+   "slug": "8-sinf-nemis-tili",
+   "grade": 8,
+   "title": "8-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-nemis-tili.pdf",
+   "cover": "8-sinf/8-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "8-sinf-ona-tili",
+   "grade": 8,
+   "title": "8-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 144,
+   "file": "8-sinf/8-sinf-ona-tili.pdf",
+   "cover": "8-sinf/8-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "8-sinf-ozbekiston-davlati-va-huquqi-asoslari",
+   "grade": 8,
+   "title": "8-sinf O‘zbekiston davlati va huquqi asoslari",
+   "name": "O‘zbekiston davlati va huquqi asoslari",
+   "subject": "huquq",
+   "pages": 192,
+   "file": "8-sinf/8-sinf-ozbekiston-davlati-va-huquqi-asoslari.pdf",
+   "cover": "8-sinf/8-sinf-ozbekiston-davlati-va-huquqi-asoslari-cover.webp"
+  },
+  {
+   "slug": "8-sinf-ozbekiston-tarixi",
+   "grade": 8,
+   "title": "8-sinf O‘zbekiston tarixi",
+   "name": "O‘zbekiston tarixi",
+   "subject": "tarix",
+   "pages": 160,
+   "file": "8-sinf/8-sinf-ozbekiston-tarixi.pdf",
+   "cover": "8-sinf/8-sinf-ozbekiston-tarixi-cover.webp"
+  },
+  {
+   "slug": "8-sinf-texnologiya",
+   "grade": 8,
+   "title": "8-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 152,
+   "file": "8-sinf/8-sinf-texnologiya.pdf",
+   "cover": "8-sinf/8-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "9-sinf-adabiyot",
+   "grade": 9,
+   "title": "9-sinf Adabiyot",
+   "name": "Adabiyot",
+   "subject": "adabiyot",
+   "pages": 368,
+   "file": "9-sinf/9-sinf-adabiyot.pdf",
+   "cover": "9-sinf/9-sinf-adabiyot-cover.webp"
+  },
+  {
+   "slug": "9-sinf-algebra",
+   "grade": 9,
+   "title": "9-sinf Algebra",
+   "name": "Algebra",
+   "subject": "matematika",
+   "pages": 240,
+   "file": "9-sinf/9-sinf-algebra.pdf",
+   "cover": "9-sinf/9-sinf-algebra-cover.webp"
+  },
+  {
+   "slug": "9-sinf-biologiya",
+   "grade": 9,
+   "title": "9-sinf Biologiya",
+   "name": "Biologiya",
+   "subject": "biologiya",
+   "pages": 192,
+   "file": "9-sinf/9-sinf-biologiya.pdf",
+   "cover": "9-sinf/9-sinf-biologiya-cover.webp"
+  },
+  {
+   "slug": "9-sinf-chizmachilik",
+   "grade": 9,
+   "title": "9-sinf Chizmachilik",
+   "name": "Chizmachilik",
+   "subject": "chizmachilik",
+   "pages": 105,
+   "file": "9-sinf/9-sinf-chizmachilik.pdf",
+   "cover": "9-sinf/9-sinf-chizmachilik-cover.webp"
+  },
+  {
+   "slug": "9-sinf-fizika",
+   "grade": 9,
+   "title": "9-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 176,
+   "file": "9-sinf/9-sinf-fizika.pdf",
+   "cover": "9-sinf/9-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "9-sinf-fransuz-tili",
+   "grade": 9,
+   "title": "9-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-fransuz-tili.pdf",
+   "cover": "9-sinf/9-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "9-sinf-geometriya",
+   "grade": 9,
+   "title": "9-sinf Geometriya",
+   "name": "Geometriya",
+   "subject": "matematika",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-geometriya.pdf",
+   "cover": "9-sinf/9-sinf-geometriya-cover.webp"
+  },
+  {
+   "slug": "9-sinf-informatika",
+   "grade": 9,
+   "title": "9-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 114,
+   "file": "9-sinf/9-sinf-informatika.pdf",
+   "cover": "9-sinf/9-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "9-sinf-ingliz-tili",
+   "grade": 9,
+   "title": "9-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 176,
+   "file": "9-sinf/9-sinf-ingliz-tili.pdf",
+   "cover": "9-sinf/9-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "9-sinf-iqtisodiy-bilimlar",
+   "grade": 9,
+   "title": "9-sinf Iqtisodiy bilim asoslari",
+   "name": "Iqtisodiy bilim asoslari",
+   "subject": "iqtisodiyot",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-iqtisodiy-bilimlar.pdf",
+   "cover": "9-sinf/9-sinf-iqtisodiy-bilimlar-cover.webp"
+  },
+  {
+   "slug": "9-sinf-jahon-ijtimoiy-iqtisodiy-geografiyasi",
+   "grade": 9,
+   "title": "9-sinf Jahon ijtimoiy-iqtisodiy geografiyasi",
+   "name": "Jahon ijtimoiy-iqtisodiy geografiyasi",
+   "subject": "geografiya",
+   "pages": 177,
+   "file": "9-sinf/9-sinf-jahon-ijtimoiy-iqtisodiy-geografiyasi.pdf",
+   "cover": "9-sinf/9-sinf-jahon-ijtimoiy-iqtisodiy-geografiyasi-cover.webp"
+  },
+  {
+   "slug": "9-sinf-jahon-tarixi",
+   "grade": 9,
+   "title": "9-sinf Jahon tarixi",
+   "name": "Jahon tarixi",
+   "subject": "tarix",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-jahon-tarixi.pdf",
+   "cover": "9-sinf/9-sinf-jahon-tarixi-cover.webp"
+  },
+  {
+   "slug": "9-sinf-kimyo",
+   "grade": 9,
+   "title": "9-sinf Kimyo",
+   "name": "Kimyo",
+   "subject": "kimyo",
+   "pages": 208,
+   "file": "9-sinf/9-sinf-kimyo.pdf",
+   "cover": "9-sinf/9-sinf-kimyo-cover.webp"
+  },
+  {
+   "slug": "9-sinf-konstitutsiyaviy-huquq-asoslari",
+   "grade": 9,
+   "title": "9-sinf Konstitutsiyaviy huquq asoslari",
+   "name": "Konstitutsiyaviy huquq asoslari",
+   "subject": "huquq",
+   "pages": 201,
+   "file": "9-sinf/9-sinf-konstitutsiyaviy-huquq-asoslari.pdf",
+   "cover": "9-sinf/9-sinf-konstitutsiyaviy-huquq-asoslari-cover.webp"
+  },
+  {
+   "slug": "9-sinf-milliy-istiqlol-goyasi",
+   "grade": 9,
+   "title": "9-sinf Milliy istiqlol g‘oyasi",
+   "name": "Milliy istiqlol g‘oyasi",
+   "subject": "milliy-goya",
+   "pages": 128,
+   "file": "9-sinf/9-sinf-milliy-istiqlol-goyasi.pdf",
+   "cover": "9-sinf/9-sinf-milliy-istiqlol-goyasi-cover.webp"
+  },
+  {
+   "slug": "9-sinf-nemis-tili",
+   "grade": 9,
+   "title": "9-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-nemis-tili.pdf",
+   "cover": "9-sinf/9-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "9-sinf-ona-tili",
+   "grade": 9,
+   "title": "9-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 130,
+   "file": "9-sinf/9-sinf-ona-tili.pdf",
+   "cover": "9-sinf/9-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "9-sinf-ozbekiston-tarixi",
+   "grade": 9,
+   "title": "9-sinf O‘zbekiston tarixi",
+   "name": "O‘zbekiston tarixi",
+   "subject": "tarix",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-ozbekiston-tarixi.pdf",
+   "cover": "9-sinf/9-sinf-ozbekiston-tarixi-cover.webp"
+  },
+  {
+   "slug": "9-sinf-rus-tili",
+   "grade": 9,
+   "title": "9-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-rus-tili.pdf",
+   "cover": "9-sinf/9-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "9-sinf-texnologiya",
+   "grade": 9,
+   "title": "9-sinf Texnologiya",
+   "name": "Texnologiya",
+   "subject": "texnologiya",
+   "pages": 160,
+   "file": "9-sinf/9-sinf-texnologiya.pdf",
+   "cover": "9-sinf/9-sinf-texnologiya-cover.webp"
+  },
+  {
+   "slug": "10-sinf-adabiyot-1-qism",
+   "grade": 10,
+   "title": "10-sinf Adabiyot 1-qism",
+   "name": "Adabiyot 1-qism",
+   "subject": "adabiyot",
+   "pages": 184,
+   "file": "10-sinf/10-sinf-adabiyot-1-qism.pdf",
+   "cover": "10-sinf/10-sinf-adabiyot-1-qism-cover.webp"
+  },
+  {
+   "slug": "10-sinf-adabiyot-2-qism",
+   "grade": 10,
+   "title": "10-sinf Adabiyot 2-qism",
+   "name": "Adabiyot 2-qism",
+   "subject": "adabiyot",
+   "pages": 184,
+   "file": "10-sinf/10-sinf-adabiyot-2-qism.pdf",
+   "cover": "10-sinf/10-sinf-adabiyot-2-qism-cover.webp"
+  },
+  {
+   "slug": "10-sinf-biologiya",
+   "grade": 10,
+   "title": "10-sinf Biologiya",
+   "name": "Biologiya",
+   "subject": "biologiya",
+   "pages": 240,
+   "file": "10-sinf/10-sinf-biologiya.pdf",
+   "cover": "10-sinf/10-sinf-biologiya-cover.webp"
+  },
+  {
+   "slug": "10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik",
+   "grade": 10,
+   "title": "10-sinf Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+   "name": "Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+   "subject": "chaqiruv-tayyorgarlik",
+   "pages": 192,
+   "file": "10-sinf/10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf",
+   "cover": "10-sinf/10-sinf-chaquvga-qadar-boshlangich-tayyorgarlik-cover.webp"
+  },
+  {
+   "slug": "10-sinf-davlat-va-huquq",
+   "grade": 10,
+   "title": "10-sinf Davlat va huquq",
+   "name": "Davlat va huquq",
+   "subject": "huquq",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-davlat-va-huquq.pdf",
+   "cover": "10-sinf/10-sinf-davlat-va-huquq-cover.webp"
+  },
+  {
+   "slug": "10-sinf-dunyo-dinlari-tarixi",
+   "grade": 10,
+   "title": "10-sinf Dunyo dinlari tarixi",
+   "name": "Dunyo dinlari tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-dunyo-dinlari-tarixi.pdf",
+   "cover": "10-sinf/10-sinf-dunyo-dinlari-tarixi-cover.webp"
+  },
+  {
+   "slug": "10-sinf-fizika",
+   "grade": 10,
+   "title": "10-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 178,
+   "file": "10-sinf/10-sinf-fizika.pdf",
+   "cover": "10-sinf/10-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "10-sinf-fransuz-tili",
+   "grade": 10,
+   "title": "10-sinf Fransuz tili",
+   "name": "Fransuz tili",
+   "subject": "fransuz-tili",
+   "pages": 224,
+   "file": "10-sinf/10-sinf-fransuz-tili.pdf",
+   "cover": "10-sinf/10-sinf-fransuz-tili-cover.webp"
+  },
+  {
+   "slug": "10-sinf-geografiya",
+   "grade": 10,
+   "title": "10-sinf Geografiya",
+   "name": "Geografiya",
+   "subject": "geografiya",
+   "pages": 160,
+   "file": "10-sinf/10-sinf-geografiya.pdf",
+   "cover": "10-sinf/10-sinf-geografiya-cover.webp"
+  },
+  {
+   "slug": "10-sinf-informatika",
+   "grade": 10,
+   "title": "10-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 160,
+   "file": "10-sinf/10-sinf-informatika.pdf",
+   "cover": "10-sinf/10-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "10-sinf-ingliz-tili",
+   "grade": 10,
+   "title": "10-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 224,
+   "file": "10-sinf/10-sinf-ingliz-tili.pdf",
+   "cover": "10-sinf/10-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "10-sinf-jahon-tarixi",
+   "grade": 10,
+   "title": "10-sinf Jahon tarixi",
+   "name": "Jahon tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-jahon-tarixi.pdf",
+   "cover": "10-sinf/10-sinf-jahon-tarixi-cover.webp"
+  },
+  {
+   "slug": "10-sinf-matematika",
+   "grade": 10,
+   "title": "10-sinf Matematika",
+   "name": "Matematika",
+   "subject": "matematika",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-matematika.pdf",
+   "cover": "10-sinf/10-sinf-matematika-cover.webp"
+  },
+  {
+   "slug": "10-sinf-manaviyat-asoslari",
+   "grade": 10,
+   "title": "10-sinf Ma’naviyat asoslari",
+   "name": "Ma’naviyat asoslari",
+   "subject": "manaviyat",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-manaviyat-asoslari.pdf",
+   "cover": "10-sinf/10-sinf-manaviyat-asoslari-cover.webp"
+  },
+  {
+   "slug": "10-sinf-ona-tili",
+   "grade": 10,
+   "title": "10-sinf Ona tili",
+   "name": "Ona tili",
+   "subject": "ona-tili",
+   "pages": 96,
+   "file": "10-sinf/10-sinf-ona-tili.pdf",
+   "cover": "10-sinf/10-sinf-ona-tili-cover.webp"
+  },
+  {
+   "slug": "10-sinf-organik-kimyo",
+   "grade": 10,
+   "title": "10-sinf Organik kimyo",
+   "name": "Organik kimyo",
+   "subject": "kimyo",
+   "pages": 160,
+   "file": "10-sinf/10-sinf-organik-kimyo.pdf",
+   "cover": "10-sinf/10-sinf-organik-kimyo-cover.webp"
+  },
+  {
+   "slug": "10-sinf-ozbekiston-tarixi",
+   "grade": 10,
+   "title": "10-sinf O‘zbekiston tarixi",
+   "name": "O‘zbekiston tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "10-sinf/10-sinf-ozbekiston-tarixi.pdf",
+   "cover": "10-sinf/10-sinf-ozbekiston-tarixi-cover.webp"
+  },
+  {
+   "slug": "10-sinf-rus-tili",
+   "grade": 10,
+   "title": "10-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 192,
+   "file": "10-sinf/10-sinf-rus-tili.pdf",
+   "cover": "10-sinf/10-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "11-sinf-adabiyot",
+   "grade": 11,
+   "title": "11-sinf Adabiyot 1-qism",
+   "name": "Adabiyot 1-qism",
+   "subject": "adabiyot",
+   "pages": 200,
+   "file": "11-sinf/11-sinf-adabiyot.pdf",
+   "cover": "11-sinf/11-sinf-adabiyot-cover.webp"
+  },
+  {
+   "slug": "adabiyot-11-sinf-2-qism",
+   "grade": 11,
+   "title": "11-sinf Adabiyot 2-qism",
+   "name": "Adabiyot 2-qism",
+   "subject": "adabiyot",
+   "pages": 200,
+   "file": "11-sinf/adabiyot-11-sinf-2-qism.pdf",
+   "cover": "11-sinf/adabiyot-11-sinf-2-qism-cover.webp"
+  },
+  {
+   "slug": "11-sinf-astronomiya",
+   "grade": 11,
+   "title": "11-sinf Astronomiya",
+   "name": "Astronomiya",
+   "subject": "fizika",
+   "pages": 176,
+   "file": "11-sinf/11-sinf-astronomiya.pdf",
+   "cover": "11-sinf/11-sinf-astronomiya-cover.webp"
+  },
+  {
+   "slug": "11-sinf-biologiya",
+   "grade": 11,
+   "title": "11-sinf Biologiya",
+   "name": "Biologiya",
+   "subject": "biologiya",
+   "pages": 240,
+   "file": "11-sinf/11-sinf-biologiya.pdf",
+   "cover": "11-sinf/11-sinf-biologiya-cover.webp"
+  },
+  {
+   "slug": "11-sinf-chaquvga-qadar-boshlangich-tayyorgarlik",
+   "grade": 11,
+   "title": "11-sinf Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+   "name": "Chaqiruvga qadar boshlang‘ich tayyorgarlik",
+   "subject": "chaqiruv-tayyorgarlik",
+   "pages": 200,
+   "file": "11-sinf/11-sinf-chaquvga-qadar-boshlangich-tayyorgarlik.pdf",
+   "cover": "11-sinf/11-sinf-chaquvga-qadar-boshlangich-tayyorgarlik-cover.webp"
+  },
+  {
+   "slug": "11-sinf-davlat-va-huquq",
+   "grade": 11,
+   "title": "11-sinf Davlat va huquq asoslari",
+   "name": "Davlat va huquq asoslari",
+   "subject": "huquq",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-davlat-va-huquq.pdf",
+   "cover": "11-sinf/11-sinf-davlat-va-huquq-cover.webp"
+  },
+  {
+   "slug": "11-sinf-dunyo-dinlari-tarixi",
+   "grade": 11,
+   "title": "11-sinf Dunyo dinlari tarixi",
+   "name": "Dunyo dinlari tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-dunyo-dinlari-tarixi.pdf",
+   "cover": "11-sinf/11-sinf-dunyo-dinlari-tarixi-cover.webp"
+  },
+  {
+   "slug": "11-sinf-fizika",
+   "grade": 11,
+   "title": "11-sinf Fizika",
+   "name": "Fizika",
+   "subject": "fizika",
+   "pages": 193,
+   "file": "11-sinf/11-sinf-fizika.pdf",
+   "cover": "11-sinf/11-sinf-fizika-cover.webp"
+  },
+  {
+   "slug": "11-sinf-informatika",
+   "grade": 11,
+   "title": "11-sinf Informatika",
+   "name": "Informatika",
+   "subject": "informatika",
+   "pages": 128,
+   "file": "11-sinf/11-sinf-informatika.pdf",
+   "cover": "11-sinf/11-sinf-informatika-cover.webp"
+  },
+  {
+   "slug": "11-sinf-ingliz-tili",
+   "grade": 11,
+   "title": "11-sinf Ingliz tili",
+   "name": "Ingliz tili",
+   "subject": "english",
+   "pages": 224,
+   "file": "11-sinf/11-sinf-ingliz-tili.pdf",
+   "cover": "11-sinf/11-sinf-ingliz-tili-cover.webp"
+  },
+  {
+   "slug": "11-sinf-jahon-tarixi",
+   "grade": 11,
+   "title": "11-sinf Jahon tarixi",
+   "name": "Jahon tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-jahon-tarixi.pdf",
+   "cover": "11-sinf/11-sinf-jahon-tarixi-cover.webp"
+  },
+  {
+   "slug": "11-sinf-matematika-1-qism",
+   "grade": 11,
+   "title": "11-sinf Matematika 1-qism",
+   "name": "Matematika 1-qism",
+   "subject": "matematika",
+   "pages": 192,
+   "file": "11-sinf/11-sinf-matematika-1-qism.pdf",
+   "cover": "11-sinf/11-sinf-matematika-1-qism-cover.webp"
+  },
+  {
+   "slug": "11-sinf-matematika-2-qism",
+   "grade": 11,
+   "title": "11-sinf Matematika 2-qism",
+   "name": "Matematika 2-qism",
+   "subject": "matematika",
+   "pages": 192,
+   "file": "11-sinf/11-sinf-matematika-2-qism.pdf",
+   "cover": "11-sinf/11-sinf-matematika-2-qism-cover.webp"
+  },
+  {
+   "slug": "11-sinf-manaviyat-asoslari",
+   "grade": 11,
+   "title": "11-sinf Ma’naviyat asoslari",
+   "name": "Ma’naviyat asoslari",
+   "subject": "manaviyat",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-manaviyat-asoslari.pdf",
+   "cover": "11-sinf/11-sinf-manaviyat-asoslari-cover.webp"
+  },
+  {
+   "slug": "11-sinf-nemis-tili",
+   "grade": 11,
+   "title": "11-sinf Nemis tili",
+   "name": "Nemis tili",
+   "subject": "nemis-tili",
+   "pages": 224,
+   "file": "11-sinf/11-sinf-nemis-tili.pdf",
+   "cover": "11-sinf/11-sinf-nemis-tili-cover.webp"
+  },
+  {
+   "slug": "11-sinf-ona-tili-1-qism",
+   "grade": 11,
+   "title": "11-sinf Ona tili 1-qism",
+   "name": "Ona tili 1-qism",
+   "subject": "ona-tili",
+   "pages": 13,
+   "file": "11-sinf/11-sinf-ona-tili-1-qism.pdf",
+   "cover": "11-sinf/11-sinf-ona-tili-1-qism-cover.webp"
+  },
+  {
+   "slug": "11-sinf-ona-tili-2-qism",
+   "grade": 11,
+   "title": "11-sinf Ona tili 2-qism",
+   "name": "Ona tili 2-qism",
+   "subject": "ona-tili",
+   "pages": 96,
+   "file": "11-sinf/11-sinf-ona-tili-2-qism.pdf",
+   "cover": "11-sinf/11-sinf-ona-tili-2-qism-cover.webp"
+  },
+  {
+   "slug": "11-sinf-ozbekiston-tarixi",
+   "grade": 11,
+   "title": "11-sinf O‘zbekiston tarixi",
+   "name": "O‘zbekiston tarixi",
+   "subject": "tarix",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-ozbekiston-tarixi.pdf",
+   "cover": "11-sinf/11-sinf-ozbekiston-tarixi-cover.webp"
+  },
+  {
+   "slug": "11-sinf-rus-tili",
+   "grade": 11,
+   "title": "11-sinf Rus tili",
+   "name": "Rus tili",
+   "subject": "rus-tili",
+   "pages": 192,
+   "file": "11-sinf/11-sinf-rus-tili.pdf",
+   "cover": "11-sinf/11-sinf-rus-tili-cover.webp"
+  },
+  {
+   "slug": "11-sinf-tadbirkorlik",
+   "grade": 11,
+   "title": "11-sinf Tadbirkorlik asoslari",
+   "name": "Tadbirkorlik asoslari",
+   "subject": "iqtisodiyot",
+   "pages": 144,
+   "file": "11-sinf/11-sinf-tadbirkorlik.pdf",
+   "cover": "11-sinf/11-sinf-tadbirkorlik-cover.webp"
+  },
+  {
+   "slug": "11-sinf-umumiy-kimyo",
+   "grade": 11,
+   "title": "11-sinf Umumiy kimyo",
+   "name": "Umumiy kimyo",
+   "subject": "kimyo",
+   "pages": 160,
+   "file": "11-sinf/11-sinf-umumiy-kimyo.pdf",
+   "cover": "11-sinf/11-sinf-umumiy-kimyo-cover.webp"
+  }
+ ],
+ "subjects": [
+  {
+   "id": "ona-tili",
+   "uz": "Ona tili",
+   "ru": "Родной язык"
+  },
+  {
+   "id": "adabiyot",
+   "uz": "Adabiyot",
+   "ru": "Литература"
+  },
+  {
+   "id": "matematika",
+   "uz": "Matematika",
+   "ru": "Математика"
+  },
+  {
+   "id": "english",
+   "uz": "Ingliz tili",
+   "ru": "Английский язык"
+  },
+  {
+   "id": "rus-tili",
+   "uz": "Rus tili",
+   "ru": "Русский язык"
+  },
+  {
+   "id": "nemis-tili",
+   "uz": "Nemis tili",
+   "ru": "Немецкий язык"
+  },
+  {
+   "id": "fransuz-tili",
+   "uz": "Fransuz tili",
+   "ru": "Французский язык"
+  },
+  {
+   "id": "tarix",
+   "uz": "Tarix",
+   "ru": "История"
+  },
+  {
+   "id": "biologiya",
+   "uz": "Biologiya",
+   "ru": "Биология"
+  },
+  {
+   "id": "fizika",
+   "uz": "Fizika",
+   "ru": "Физика"
+  },
+  {
+   "id": "kimyo",
+   "uz": "Kimyo",
+   "ru": "Химия"
+  },
+  {
+   "id": "geografiya",
+   "uz": "Geografiya",
+   "ru": "География"
+  },
+  {
+   "id": "informatika",
+   "uz": "Informatika",
+   "ru": "Информатика"
+  },
+  {
+   "id": "texnologiya",
+   "uz": "Texnologiya",
+   "ru": "Технология"
+  },
+  {
+   "id": "jismoniy-tarbiya",
+   "uz": "Jismoniy tarbiya",
+   "ru": "Физическая культура"
+  },
+  {
+   "id": "musiqa",
+   "uz": "Musiqa",
+   "ru": "Музыка"
+  },
+  {
+   "id": "tasviriy-sanat",
+   "uz": "Tasviriy san'at",
+   "ru": "Изобразительное искусство"
+  },
+  {
+   "id": "tabiatshunoslik",
+   "uz": "Tabiatshunoslik",
+   "ru": "Естествознание"
+  },
+  {
+   "id": "odobnoma",
+   "uz": "Odobnoma",
+   "ru": "Этика"
+  },
+  {
+   "id": "huquq",
+   "uz": "Huquq",
+   "ru": "Право"
+  },
+  {
+   "id": "tarbiya",
+   "uz": "Tarbiya",
+   "ru": "Воспитание"
+  },
+  {
+   "id": "milliy-goya",
+   "uz": "Milliy g'oya",
+   "ru": "Национальная идея"
+  },
+  {
+   "id": "iqtisodiyot",
+   "uz": "Iqtisodiyot",
+   "ru": "Экономика"
+  },
+  {
+   "id": "vatan-tuygusi",
+   "uz": "Vatan tuyg'usi",
+   "ru": "Чувство Родины"
+  },
+  {
+   "id": "chizmachilik",
+   "uz": "Chizmachilik",
+   "ru": "Черчение"
+  },
+  {
+   "id": "chaqiruv-tayyorgarlik",
+   "uz": "Chaqiruv tayyorgarligi",
+   "ru": "Допризывная подготовка"
+  },
+  {
+   "id": "manaviyat",
+   "uz": "Ma'naviyat",
+   "ru": "Основы духовности"
+  }
+ ]
+}

@@ -59,6 +59,16 @@ const UZ = {
   pathIntro: 'Har bir dars — maqsad sari bir qadam.',
   // Nav
   home: "Bosh sahifa", lessons: "Darslik", tickets: "Biletlar",
+  // Kutubxona (1–11 sinf darsliklari)
+  library: "Kutubxona", librarySubtitle: "{count} ta darslik · 1–11 sinf",
+  librarySearchPlaceholder: "Kitob yoki fan qidirish...",
+  libraryAllGrades: "Barchasi", libraryGrade: "{grade}-sinf",
+  libraryAllSubjects: "Barcha fanlar", libraryBooksFound: "{count} ta kitob",
+  libraryOpenBook: "PDF ochish", libraryPages: "{count} bet",
+  libraryNoResultsTitle: "Kitob topilmadi",
+  libraryNoResultsDesc: "Qidiruv so‘zini yoki filtrlarni o‘zgartirib ko‘ring.",
+  libraryClearFilters: "Filtrlarni tozalash",
+  libraryPdfHint: "PDF tashqi brauzerda ochiladi",
   signs: "Belgilar", profile: "Profil", leaderboard: "Reyting",
   // Dashboard
   allTests: "Barcha testlar", fixMistakes: "Xatolarni tuzatish",
@@ -678,6 +688,16 @@ const RU: Record<Keys, string> = {
   pathClose: 'Закрыть', pathProgress: 'Прочитанные уроки', pathCourse: 'Правила дорожного движения',
   pathIntro: 'Каждый урок — шаг к вашей цели.',
   home: "Главная", lessons: "Учебник", tickets: "Билеты",
+  // Библиотека (учебники 1–11 класса)
+  library: "Библиотека", librarySubtitle: "{count} учебников · 1–11 класс",
+  librarySearchPlaceholder: "Поиск книги или предмета...",
+  libraryAllGrades: "Все", libraryGrade: "{grade} класс",
+  libraryAllSubjects: "Все предметы", libraryBooksFound: "{count} книг",
+  libraryOpenBook: "Открыть PDF", libraryPages: "{count} стр.",
+  libraryNoResultsTitle: "Книга не найдена",
+  libraryNoResultsDesc: "Измените поисковый запрос или фильтры.",
+  libraryClearFilters: "Сбросить фильтры",
+  libraryPdfHint: "PDF откроется во внешнем браузере",
   signs: "Знаки", profile: "Профиль", leaderboard: "Рейтинг",
   allTests: "Все тесты", fixMistakes: "Работа над ошибками",
   topics: "Темы", octagon: "Октагон", topicTest: "Тест по теме",

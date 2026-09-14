@@ -36,6 +36,12 @@ graphify-out/
 content-banks/out*/
 content-banks/**/out/
 
+# Kutubxona manba papkasi (PDF'lar jami ~3GB) — lokal qoladi. Repo'ga faqat
+# skript, src/content/library.json va public/kutubxona/covers kirsa ruxsat.
+content-banks/testmakon/kutubxona/
+# Lokal PDF fallback (dist/APK ga tushmasligi SHART; prod'da R2/CDN)
+public/kutubxona/pdf/
+
 .opencode/
 
 # Test ad-hoc skrinshotlar (Playwright/MCP sessiyalar — rootga tushadi)

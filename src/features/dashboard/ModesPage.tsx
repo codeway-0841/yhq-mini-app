@@ -7,6 +7,7 @@ import {
   Swords,
   HeartCrack,
   GraduationCap,
+  LibraryBig,
   Bookmark,
   Signpost,
   Hash,
@@ -62,6 +63,7 @@ export default function ModesPage() {
     { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
     { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
     { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate('/darslik') },
+    { icon: LibraryBig,    label: tt('library'),       onClick: () => navigate('/kutubxona') },
     { icon: Bookmark,      label: tt('saved'),         onClick: goSaved },
     ...(subject.id === 'yhq'
       ? [{ icon: Signpost, label: tt('roadSigns'),     onClick: () => navigate('/belgilar') }]

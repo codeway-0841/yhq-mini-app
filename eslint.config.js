@@ -30,7 +30,8 @@ export default tseslint.config(
     // browser globals'lari yo'q, Node global'lari kerak (CI lint error: 'process').
     files: ['scripts/**/*.mjs'],
     languageOptions: {
-      globals: { process: 'readonly', console: 'readonly' },
+      // fetch — Node 18+ global (build skriptlari R2/S3'ga yuklaydi)
+      globals: { process: 'readonly', console: 'readonly', fetch: 'readonly' },
     },
   },
   {
