@@ -18,7 +18,6 @@ export function testDurationSeconds(mode: string | null): number {
   if (preset) return preset.durationMinutes * 60
   if (mode === 'marathon') return 300 * 60
   if (mode === 'exam' || mode === 'random20') return 30 * 60
-  if (mode === 'random100') return 120 * 60
   return 25 * 60
 }
 

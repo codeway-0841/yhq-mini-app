@@ -79,12 +79,12 @@ describe('ServerPracticePage vertical slice', () => {
 
   it('uses the selected bounded random mode when creating a session', async () => {
     vi.mocked(api.createTestSession).mockResolvedValueOnce({
-      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 50, expiresAt: EXPIRES },
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 20, expiresAt: EXPIRES },
       questions: [{
         position: 0,
         deliveryToken: 'v1.delivery-token-for-position-zero',
         expiresAt: EXPIRES,
-        text: '50 talik server testi',
+        text: '20 talik server testi',
         options: [{ id: 'F1', text: 'A' }, { id: 'F2', text: 'B' }],
         media: null,
         topic: null,
@@ -92,13 +92,13 @@ describe('ServerPracticePage vertical slice', () => {
       review: [],
     })
 
-    render(<MemoryRouter><ServerPracticePage mode="random50" /></MemoryRouter>)
+    render(<MemoryRouter><ServerPracticePage mode="random20" /></MemoryRouter>)
 
-    expect(await screen.findByText('50 talik server testi')).toBeInTheDocument()
+    expect(await screen.findByText('20 talik server testi')).toBeInTheDocument()
     expect(api.createTestSession).toHaveBeenCalledWith(expect.objectContaining({
-      selector: { type: 'random', count: 50 },
+      selector: { type: 'random', count: 20 },
     }))
-    expect(useServerTestSessionStore.getState().snapshot?.mode).toBe('random50')
+    expect(useServerTestSessionStore.getState().snapshot?.mode).toBe('random20')
   })
 
   it('requests saved practice without sending bookmark question IDs', async () => {

@@ -93,10 +93,9 @@ function selectorForMode(mode: ServerPracticeMode): CreateTestSessionInput['sele
   if (mode === 'lesson') throw new Error('lesson_selector_required')
   if (mode === 'module') throw new Error('module_selector_required')
   if (mode === 'exam') throw new Error('exam_selector_required')
-  return {
-    type: 'random',
-    count: mode === 'random20' ? 20 : mode === 'random50' ? 50 : 100,
-  }
+  if (mode === 'single') throw new Error('single_selector_required')
+  if (mode === 'random20') return { type: 'random', count: 20 }
+  throw new Error(`unknown_random_mode:${mode satisfies never}`)
 }
 
 function secondsUntil(expiresAt?: string): number {

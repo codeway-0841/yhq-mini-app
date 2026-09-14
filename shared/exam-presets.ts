@@ -41,7 +41,7 @@ export function getExamPreset(id: string): ExamPreset | null {
 /**
  * Test rejimini preset'ga resolve qiladi.
  * Format: `exam:<presetId>` (masalan 'exam:attestatsiya').
- * Boshqa modellar ('exam', 'mock', 'random50'...) → null.
+ * Boshqa modellar ('exam', 'mock', 'marathon'...) → null.
  */
 export function resolveExamMode(mode: string | null | undefined): ExamPreset | null {
   if (!mode || !mode.startsWith('exam:')) return null

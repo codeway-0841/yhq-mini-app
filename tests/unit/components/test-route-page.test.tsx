@@ -35,7 +35,7 @@ describe('TestRoutePage', () => {
   })
 
   it('keeps the legacy engine when test sessions v2 is disabled', () => {
-    renderRoute({ mode: 'random50', title: '50 talik test' })
+    renderRoute({ mode: 'random20', title: '20 talik test' })
 
     expect(screen.getByText('legacy-test-page')).toBeInTheDocument()
     expect(serverPracticeSpy).not.toHaveBeenCalled()
@@ -43,12 +43,12 @@ describe('TestRoutePage', () => {
 
   it('routes v2-capable modes to the server-authoritative engine', () => {
     routeConfig.testSessionsV2Enabled = true
-    renderRoute({ mode: 'random50', title: '50 talik test' })
+    renderRoute({ mode: 'random20', title: '20 talik test' })
 
     expect(screen.getByText('server-practice-page')).toBeInTheDocument()
     expect(serverPracticeSpy).toHaveBeenCalledWith(expect.objectContaining({
-      mode: 'random50',
-      title: '50 talik test',
+      mode: 'random20',
+      title: '20 talik test',
     }))
   })
 

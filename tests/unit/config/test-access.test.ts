@@ -39,8 +39,6 @@ describe('shared/test-access — free vs premium policy', () => {
 
   it('matches frontend mode IDs and ticket preview limits', () => {
     expect(isTestModePremium('random20')).toBe(false)
-    expect(isTestModePremium('random50')).toBe(true)
-    expect(isTestModePremium('random100')).toBe(true)
     expect(isTestModePremium('mock')).toBe(true)
     expect(isTestModePremium('marathon')).toBe(true)
     expect(isTestModePremium('exam:milliy-sertifikat')).toBe(true)

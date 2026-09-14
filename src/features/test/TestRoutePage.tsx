@@ -88,7 +88,7 @@ function serverPracticeProps(state: unknown): {
   const module = moduleSelector(s.serverSelector)
   if (module) return { mode: 'module', selector: module, title }
 
-  if (mode === 'random20' || mode === 'random50' || mode === 'random100') {
+  if (mode === 'random20') {
     return { mode, title }
   }
   if (mode === 'mock') return { mode: 'mock', selector: { type: 'mock' }, title }

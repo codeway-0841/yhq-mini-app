@@ -61,9 +61,7 @@ export function ticketQuestionCount(subjectId: string): number {
 }
 
 export function isTestModePremium(modeId: string): boolean {
-  return modeId === 'random50'
-    || modeId === 'random100'
-    || modeId === 'mock'
+  return modeId === 'mock'
     || modeId === 'marathon'
     || modeId.startsWith('exam:')
 }

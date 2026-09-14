@@ -171,8 +171,6 @@ export function useTestSession(params: UseTestSessionParams) {
           case 'marathon':  result = shuffled(); break
           case 'exam':      result = shuffled().slice(0, Math.min(40, uniquePool.length)); break
           case 'mock':      result = shuffled().slice(0, Math.min(20, uniquePool.length)); break
-          case 'random50':  result = shuffled().slice(0, Math.min(50, uniquePool.length)); break
-          case 'random100': result = shuffled().slice(0, Math.min(100, uniquePool.length)); break
           case 'random20':  result = shuffled().slice(0, Math.min(20, uniquePool.length)); break
           case 'tricky':   result = shuffled().slice(0, Math.min(30, uniquePool.length)); break
           case 'numeric': {

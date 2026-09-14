@@ -55,7 +55,7 @@ describe('resolveExamMode', () => {
   it("boshqa modellar va null → null (legacy 'exam' alohida)", () => {
     expect(resolveExamMode('exam')).toBeNull()
     expect(resolveExamMode('mock')).toBeNull()
-    expect(resolveExamMode('random50')).toBeNull()
+    expect(resolveExamMode('marathon')).toBeNull()
     expect(resolveExamMode(null)).toBeNull()
     expect(resolveExamMode(undefined)).toBeNull()
   })

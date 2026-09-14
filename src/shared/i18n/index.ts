@@ -133,7 +133,7 @@ const UZ = {
   guideCoverage: "Bu ko‘rsatkich javob berilgan savollar ulushini bildiradi.",
   dashboardPractice: "Mashq qilish", dashboardLearn: "O‘rganish",
   // Testlar sahifasi (mode chooser)
-  t20: "20 talik tezkor test", t50Test: "50 talik test", t100: "100 talik test",
+  t20: "20 talik tezkor test",
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
   mockExam: "Mock imtihon", mockFailInfo: "2 xato = yiqildingiz",
   diffHard: "Qiyin", minWord: "daqiqa", speedTitle: "Speed Round ⚡", speedSec: "soniya",
@@ -816,7 +816,7 @@ const RU: Record<Keys, string> = {
   guideCoverage: "Этот показатель отражает долю вопросов, на которые вы ответили.",
   dashboardPractice: "Практика", dashboardLearn: "Обучение",
   // Testlar sahifasi (mode chooser)
-  t20: "Быстрый тест (20)", t50Test: "Тест на 50", t100: "Тест на 100",
+  t20: "Быстрый тест (20)",
   examDesc: "Симулятор реального экзамена", diffEasy: "Простой", diffMid: "Средний",
   mockExam: "Пробный экзамен", mockFailInfo: "2 ошибки = не сдано",
   diffHard: "Сложный", minWord: "минут", speedTitle: "Speed Round ⚡", speedSec: "сек",

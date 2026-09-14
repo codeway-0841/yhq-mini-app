@@ -21,7 +21,7 @@ type TKey = Parameters<ReturnType<typeof useT>>[0]
 
 interface ModeCard {
   id: string
-  iconBox: 'zap' | 'cap' | 'num' | 'ai' | 'camera'
+  iconBox: 'zap' | 'cap' | 'ai' | 'camera'
   numText?: string
   danger?: boolean
   /** AI kunlik test — "YANGI" badge + binafsha (AI) aksent */
@@ -127,9 +127,6 @@ export default function TestlarPage() {
               )}
               {/* Flat Icon — toza, fonsiz, grid uslubidagi neytral ikonka */}
               <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
-                {m.iconBox === 'num' && (
-                  <span className="text-[17px] font-bold text-pmuted tracking-tight tabular-nums">{m.numText}</span>
-                )}
                 {m.iconBox === 'zap' && <Zap size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'cap' && <ClipboardCheck size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'camera' && <Camera size={24} strokeWidth={1.75} />}
