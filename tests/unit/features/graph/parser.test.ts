@@ -3,6 +3,8 @@ import {
   compileExpression,
   parseExpression,
   normalizeExpression,
+  normalizeWithMap,
+  mapNormalizedPosition,
   tokenize,
   ExprError,
 } from '../../../../src/features/graph/lib/math'
@@ -120,6 +122,46 @@ describe('grafik: xatolar', () => {
   it('juda uzun ifoda — too_long', () => {
     try { tokenize('1+'.repeat(150) + '1') } catch (e) {
       expect((e as ExprError).code).toBe('too_long')
+    }
+  })
+})
+
+describe('grafik: pozitsiya xaritasi (normalize)', () => {
+  it('normalizeWithMap matn va xaritani beradi', () => {
+    const { text, positions } = normalizeWithMap('x² + @')
+    expect(text).toBe('x^2 + @')
+    expect(positions).toHaveLength(text.length)
+    // '@' ASL matnda 5-indeksda
+    const atPos = text.indexOf('@')
+    expect(positions[atPos]).toBe(5)
+  })
+
+  it('√ va π kabi ko‘p belgili almashtirishlarda pozitsiya saqlanadi', () => {
+    const { text } = normalizeWithMap('2√x')
+    expect(text).toBe('2sqrt x')
+    expect(mapNormalizedPosition('2√x', 6)).toBe(2)
+  })
+
+  it('mapNormalizedPosition chegaradan oshsa — input uzunligi', () => {
+    expect(mapNormalizedPosition('x', 999)).toBe(1)
+  })
+
+  it('`**` → `^` (pozitsiya birinchi yulduzdan)', () => {
+    const { text, positions } = normalizeWithMap('x**2')
+    expect(text).toBe('x^2')
+    expect(positions[1]).toBe(1)
+  })
+
+  it('parser xatosi pozitsiyasini ASL matnga qaytarish mumkin', () => {
+    const input = 'x² + *'
+    try {
+      parseExpression(input)
+      throw new Error('should throw')
+    } catch (e) {
+      const err = e as ExprError
+      expect(err.code).toBe('unexpected_token')
+      const originalPos = mapNormalizedPosition(input, err.pos)
+      expect(input.slice(originalPos, originalPos + 1)).toBe('*')
     }
   })
 })

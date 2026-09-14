@@ -25,11 +25,25 @@ export const GraphViewportSchema = z.object({
   unitsPerPx: z.number().finite().positive().max(1e6),
 })
 
+/** Tahlil holati (hosila/urinma/integral) — saqlangan grafik bilan qaytadi */
+export const GraphAnalysisSchema = z.object({
+  derivative: z.boolean(),
+  tangent: z.boolean(),
+  x0: z.number().finite(),
+  integral: z.boolean(),
+  a: z.number().finite(),
+  b: z.number().finite(),
+  rects: z.number().int().min(1).max(80),
+  markers: z.boolean(),
+})
+
 export const GraphPayloadSchema = z.object({
   expressions: z.array(GraphExpressionSchema).min(1).max(GRAPH_MAX_EXPRESSIONS),
   xVar: z.string().min(1).max(16),
   vars: z.record(z.string().max(16), z.number().finite()),
   viewport: GraphViewportSchema,
+  /** Eski payload'larda yo'q — optional (backward-compatible) */
+  analysis: GraphAnalysisSchema.optional(),
 })
 
 export const SavedGraphInputSchema = z.object({
@@ -50,6 +64,7 @@ export const SavedGraphUpdateSchema = z
 export type GraphExpression = z.infer<typeof GraphExpressionSchema>
 export type GraphViewport = z.infer<typeof GraphViewportSchema>
 export type GraphPayload = z.infer<typeof GraphPayloadSchema>
+export type GraphAnalysis = z.infer<typeof GraphAnalysisSchema>
 export type SavedGraphInput = z.infer<typeof SavedGraphInputSchema>
 
 /** Ro'yxat uchun yengil shakl (payload'siz) */

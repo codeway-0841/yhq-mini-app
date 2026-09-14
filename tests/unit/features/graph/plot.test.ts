@@ -12,8 +12,8 @@ import {
   zoomViewport,
   formatWorldValue,
 } from '../../../../src/features/graph/lib/plot/viewport'
-import { sampleCurve } from '../../../../src/features/graph/lib/plot/sample'
-import { compileExpression } from '../../../../src/features/graph/lib/math'
+import { sampleCurve, sampleImplicit, sampleParametric, samplePolar } from '../../../../src/features/graph/lib/plot/sample'
+import { compileExpression, parseGraphExpression } from '../../../../src/features/graph/lib/math'
 
 const W = 100
 const H = 100
@@ -125,5 +125,66 @@ describe('grafik: sampling', () => {
     expect(segments).toHaveLength(1)
     const maxAbs = Math.max(...segments[0].points.map((p) => Math.abs(p.y - H / 2)))
     expect(maxAbs).toBeGreaterThan(0)
+  })
+})
+
+describe('grafik: polyar / parametrik / implicit sampling', () => {
+  const center = { x: W / 2, y: H / 2 }
+  const radiusPx = 1 / DEFAULT_VIEWPORT.unitsPerPx
+
+  it('polyar r=1 — aylana (radius ≈ 1/upp)', () => {
+    const { fn, vars } = (() => {
+      const p = parseGraphExpression('r=1')
+      if (p.kind !== 'polar') throw new Error('polar emas')
+      return { fn: p.fn, vars: p.angleVar }
+    })()
+    const segments = samplePolar(fn, {}, vars, W, H, DEFAULT_VIEWPORT)
+    expect(segments.length).toBe(1)
+    const points = segments[0].points
+    expect(points.length).toBeGreaterThan(500)
+    for (const pt of points) {
+      const dist = Math.hypot(pt.x - center.x, pt.y - center.y)
+      expect(dist).toBeGreaterThan(radiusPx - 1.5)
+      expect(dist).toBeLessThan(radiusPx + 1.5)
+    }
+  })
+
+  it('parametrik x=cos(t); y=sin(t) — aylana', () => {
+    const p = parseGraphExpression('x=cos(t); y=sin(t)')
+    if (p.kind !== 'parametric') throw new Error('parametric emas')
+    const segments = sampleParametric(p.xFn, p.yFn, {}, p.paramVar, 0, Math.PI * 2, W, H, DEFAULT_VIEWPORT)
+    expect(segments.length).toBe(1)
+    for (const pt of segments[0].points) {
+      const dist = Math.hypot(pt.x - center.x, pt.y - center.y)
+      expect(dist).toBeGreaterThan(radiusPx - 1.5)
+      expect(dist).toBeLessThan(radiusPx + 1.5)
+    }
+  })
+
+  it('implicit x^2+y^2=1 — kontur radiusga yaqin', () => {
+    const p = parseGraphExpression('x^2 + y^2 = 1')
+    if (p.kind !== 'implicit') throw new Error('implicit emas')
+    const { segments, cells } = sampleImplicit(p.fn, {}, W, H, DEFAULT_VIEWPORT, p.relation)
+    expect(cells).toHaveLength(0)
+    expect(segments.length).toBeGreaterThan(20)
+    for (const seg of segments) {
+      for (const pt of seg.points) {
+        const dist = Math.hypot(pt.x - center.x, pt.y - center.y)
+        expect(dist).toBeGreaterThan(radiusPx - 6)
+        expect(dist).toBeLessThan(radiusPx + 6)
+      }
+    }
+  })
+
+  it('implicit x^2+y^2<1 — soha katakchalari', () => {
+    const p = parseGraphExpression('x^2 + y^2 < 1')
+    if (p.kind !== 'implicit') throw new Error('implicit emas')
+    const { cells } = sampleImplicit(p.fn, {}, W, H, DEFAULT_VIEWPORT, p.relation)
+    expect(cells.length).toBeGreaterThan(20)
+    for (const cell of cells) {
+      const cx = cell.x + cell.w / 2
+      const cy = cell.y + cell.h / 2
+      expect(Math.hypot(cx - center.x, cy - center.y)).toBeLessThan(radiusPx + 6)
+    }
   })
 })

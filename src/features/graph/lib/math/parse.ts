@@ -6,6 +6,7 @@ export type BinaryOp = '+' | '-' | '*' | '/' | '%' | '^'
 
 export type ExprNode =
   | { type: 'num'; value: number }
+  | { type: 'const'; name: string; value: number }
   | { type: 'var'; name: string }
   | { type: 'unary'; op: '-' | '+'; arg: ExprNode }
   | { type: 'binary'; op: BinaryOp; left: ExprNode; right: ExprNode }
@@ -83,7 +84,7 @@ export function parseExpression(input: string): ParsedExpression {
           left = make({ type: 'call', name: t.value, args: [arg] })
         }
       } else if (isConstantName(t.value)) {
-        left = make({ type: 'num', value: CONSTANTS[t.value] })
+        left = make({ type: 'const', name: t.value, value: CONSTANTS[t.value] })
       } else {
         left = make({ type: 'var', name: t.value })
       }
@@ -130,7 +131,7 @@ export function collectVars(node: ExprNode): string[] {
       case 'unary': walk(n.arg); break
       case 'binary': walk(n.left); walk(n.right); break
       case 'call': for (const a of n.args) walk(a); break
-      case 'num': break
+      case 'num': case 'const': break
     }
   }
   walk(node)

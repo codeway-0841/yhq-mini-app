@@ -18,6 +18,10 @@ export function compileAst(node: ExprNode): CompiledExpression {
       const v = node.value
       return () => v
     }
+    case 'const': {
+      const v = node.value
+      return () => v
+    }
     case 'var': {
       const name = node.name
       return (scope) => {

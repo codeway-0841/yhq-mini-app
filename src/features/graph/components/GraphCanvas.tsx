@@ -8,8 +8,9 @@
  */
 import { useCallback, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import type { GraphViewport } from '../../../../shared/contracts/graph'
-import type { CompiledExpression } from '../lib/math/compile'
-import { sampleCurve } from '../lib/plot/sample'
+import type { CompiledExpression, MarkerPoint } from '../lib/math'
+import { MARKER_COLORS } from '../curve-colors'
+import { sampleCurve, sampleImplicit, sampleParametric, samplePolar } from '../lib/plot/sample'
 import {
   niceTicks,
   panViewport,
@@ -21,11 +22,48 @@ import {
 } from '../lib/plot/viewport'
 import { formatWorldValue } from '../lib/plot/viewport'
 
+export type SeriesKind = 'y' | 'polar' | 'parametric' | 'implicit'
+
 export interface GraphSeries {
   id: string
   color: string
   visible: boolean
   fn: CompiledExpression
+  /** Hosila chizig'i — shtrixli */
+  dashed?: boolean
+  /** Yo'q bo'lsa — 'y' (oddiy funksiya) */
+  kind?: SeriesKind
+  /** Parametrik: y(t) */
+  fn2?: CompiledExpression
+  /** Polyar/parametrik uchun parametr nomi va oralig'i */
+  param?: { name: string; min: number; max: number }
+  /** Implicit/tengsizlik alomati */
+  relation?: '=' | '<' | '>' | '<=' | '>='
+}
+
+/** Urinma chizig'i (tahlil paneli) — qiymatlar oldindan hisoblangan */
+export interface TangentOverlay {
+  x0: number
+  y0: number
+  slope: number
+  color: string
+}
+
+/** Integral yuzasi + Riemann to'rtburchaklari */
+export interface IntegralOverlay {
+  fn: CompiledExpression
+  scope: Record<string, number>
+  xVar: string
+  a: number
+  b: number
+  n: number
+  color: string
+}
+
+export interface MovingPoint {
+  x: number
+  y: number
+  color: string
 }
 
 interface Props {
@@ -35,6 +73,11 @@ interface Props {
   viewport: GraphViewport
   onViewportCommit: (vp: GraphViewport) => void
   ariaLabel: string
+  tangent?: TangentOverlay | null
+  integral?: IntegralOverlay | null
+  markers?: MarkerPoint[]
+  movingPoint?: MovingPoint | null
+  onSize?: (size: { w: number; h: number }) => void
 }
 
 interface Trace {
@@ -54,15 +97,20 @@ const TAP_SLOP_PX = 6
 const HIT_RADIUS_PX = 28
 const WHEEL_COMMIT_MS = 400
 
-export default function GraphCanvas({ series, scope, xVar, viewport, onViewportCommit, ariaLabel }: Props) {
+export default function GraphCanvas({
+  series, scope, xVar, viewport, onViewportCommit, ariaLabel,
+  tangent = null, integral = null, markers = [], movingPoint = null, onSize,
+}: Props) {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const sizeRef = useRef({ w: 0, h: 0 })
   const vpRef = useRef<GraphViewport>(viewport)
   const [sizeTick, setSizeTick] = useState(0)
 
-  const dataRef = useRef({ series, scope, xVar })
-  dataRef.current = { series, scope, xVar }
+  const dataRef = useRef({ series, scope, xVar, tangent, integral, markers, movingPoint })
+  dataRef.current = { series, scope, xVar, tangent, integral, markers, movingPoint }
+  const onSizeRef = useRef(onSize)
+  onSizeRef.current = onSize
 
   const pointers = useRef(new Map<number, { x: number; y: number }>())
   const gesture = useRef<Gesture | null>(null)
@@ -147,21 +195,110 @@ export default function GraphCanvas({ series, scope, xVar, viewport, onViewportC
       ctx.fillText(v.toFixed(yTicks.decimals), labelLineX - 3, yToScreen(vp, v, h))
     }
 
-    const { series: currentSeries, scope: currentScope, xVar: currentXVar } = dataRef.current
+    const {
+      series: currentSeries, scope: currentScope, xVar: currentXVar,
+      tangent: currentTangent, integral: currentIntegral,
+      markers: currentMarkers, movingPoint: currentMovingPoint,
+    } = dataRef.current
+
+    // ── Integral yuzasi + Riemann to'rtburchaklari (egrilar OSTIDA) ──────────
+    if (currentIntegral) {
+      const lo = Math.min(currentIntegral.a, currentIntegral.b)
+      const hi = Math.max(currentIntegral.a, currentIntegral.b)
+      const zeroY = yToScreen(vp, 0, h)
+      const scratch = { ...currentIntegral.scope }
+
+      const segments: { x: number; y: number }[][] = []
+      let current: { x: number; y: number }[] = []
+      const steps = 160
+      for (let i = 0; i <= steps; i++) {
+        const wx = lo + ((hi - lo) * i) / steps
+        scratch[currentIntegral.xVar] = wx
+        const wy = currentIntegral.fn(scratch)
+        if (!Number.isFinite(wy) || Math.abs(wy) > 1e9) {
+          if (current.length > 1) segments.push(current)
+          current = []
+          continue
+        }
+        current.push({ x: xToScreen(vp, wx, w), y: yToScreen(vp, wy, h) })
+      }
+      if (current.length > 1) segments.push(current)
+
+      ctx.save()
+      ctx.fillStyle = currentIntegral.color
+      ctx.globalAlpha = 0.13
+      ctx.beginPath()
+      for (const seg of segments) {
+        ctx.moveTo(seg[0].x, seg[0].y)
+        for (let i = 1; i < seg.length; i++) ctx.lineTo(seg[i].x, seg[i].y)
+        ctx.lineTo(seg[seg.length - 1].x, zeroY)
+        ctx.lineTo(seg[0].x, zeroY)
+        ctx.closePath()
+      }
+      ctx.fill()
+
+      const rectCount = Math.min(80, Math.max(1, Math.round(currentIntegral.n)))
+      const rectWidth = (hi - lo) / rectCount
+      for (let i = 0; i < rectCount; i++) {
+        const left = lo + i * rectWidth
+        scratch[currentIntegral.xVar] = left + rectWidth / 2
+        const wy = currentIntegral.fn(scratch)
+        if (!Number.isFinite(wy) || Math.abs(wy) > 1e9) continue
+        const sx = xToScreen(vp, left, w)
+        const sw = Math.max(1, rectWidth / vp.unitsPerPx)
+        const sy = yToScreen(vp, wy, h)
+        const top = Math.min(sy, zeroY)
+        const height = Math.max(1, Math.abs(zeroY - sy))
+        ctx.globalAlpha = 0.10
+        ctx.fillRect(sx, top, sw, height)
+        ctx.globalAlpha = 0.45
+        ctx.strokeRect(sx + 0.5, top + 0.5, sw, height)
+      }
+      ctx.restore()
+    }
+
+    // Implicit sohalar (tengsizlik) — egrilar OSTIDA
+    const implicitSegments = new Map<string, ReturnType<typeof sampleImplicit>['segments']>()
+    for (const s of currentSeries) {
+      if (!s.visible || (s.kind ?? 'y') !== 'implicit') continue
+      const result = sampleImplicit(s.fn, currentScope, w, h, vp, s.relation ?? '=')
+      implicitSegments.set(s.id, result.segments)
+      if (result.cells.length > 0) {
+        ctx.save()
+        ctx.globalAlpha = 0.16
+        ctx.fillStyle = s.color
+        for (const c of result.cells) ctx.fillRect(c.x, c.y, c.w + 1, c.h + 1)
+        ctx.restore()
+      }
+    }
+
     for (const s of currentSeries) {
       if (!s.visible) continue
-      const { segments } = sampleCurve(s.fn, {
-        width: w,
-        height: h,
-        viewport: vp,
-        xVar: currentXVar,
-        scope: currentScope,
-      })
+      const kind = s.kind ?? 'y'
+      let segments: { points: { x: number; y: number }[] }[]
+      if (kind === 'y') {
+        segments = sampleCurve(s.fn, {
+          width: w,
+          height: h,
+          viewport: vp,
+          xVar: currentXVar,
+          scope: currentScope,
+        }).segments
+      } else if (kind === 'implicit') {
+        segments = implicitSegments.get(s.id) ?? []
+      } else if (kind === 'parametric' && s.fn2 && s.param) {
+        segments = sampleParametric(s.fn, s.fn2, currentScope, s.param.name, s.param.min, s.param.max, w, h, vp)
+      } else if (kind === 'polar' && s.param) {
+        segments = samplePolar(s.fn, currentScope, s.param.name, w, h, vp)
+      } else {
+        segments = []
+      }
       if (segments.length === 0) continue
       ctx.strokeStyle = s.color
       ctx.lineWidth = 2.25
       ctx.lineJoin = 'round'
       ctx.lineCap = 'round'
+      ctx.setLineDash(s.dashed ? [7, 5] : [])
       ctx.beginPath()
       for (const seg of segments) {
         seg.points.forEach((p, i) => {
@@ -169,6 +306,63 @@ export default function GraphCanvas({ series, scope, xVar, viewport, onViewportC
           else ctx.lineTo(p.x, p.y)
         })
       }
+      ctx.stroke()
+      ctx.setLineDash([])
+    }
+
+    // ── Tahlil markerlari (ildiz/ekstremum/kesishma) ─────────────────────────
+    for (const m of currentMarkers) {
+      const sx = xToScreen(vp, m.x, w)
+      const sy = yToScreen(vp, m.y, h)
+      if (sx < -12 || sx > w + 12 || sy < -12 || sy > h + 12) continue
+      ctx.beginPath()
+      ctx.arc(sx, sy, 3.5, 0, Math.PI * 2)
+      ctx.fillStyle = MARKER_COLORS[m.kind]
+      ctx.fill()
+      ctx.lineWidth = 1.5
+      ctx.strokeStyle = cardColor
+      ctx.stroke()
+    }
+
+    // ── Harakatlanuvchi nuqta (animatsiya) ───────────────────────────────────
+    if (currentMovingPoint) {
+      const sx = xToScreen(vp, currentMovingPoint.x, w)
+      const sy = yToScreen(vp, currentMovingPoint.y, h)
+      if (sx >= -12 && sx <= w + 12 && sy >= -12 && sy <= h + 12) {
+        ctx.beginPath()
+        ctx.arc(sx, sy, 5, 0, Math.PI * 2)
+        ctx.fillStyle = currentMovingPoint.color
+        ctx.fill()
+        ctx.lineWidth = 2
+        ctx.strokeStyle = cardColor
+        ctx.stroke()
+      }
+    }
+
+    // ── Urinma chizig'i (egrilar USTIDA) ─────────────────────────────────────
+    if (currentTangent && Number.isFinite(currentTangent.slope) && Number.isFinite(currentTangent.y0)) {
+      const worldLeft = screenToWorldX(vp, 0, w)
+      const worldRight = screenToWorldX(vp, w, w)
+      const yLeft = Math.max(-1e6, Math.min(1e6, currentTangent.y0 + currentTangent.slope * (worldLeft - currentTangent.x0)))
+      const yRight = Math.max(-1e6, Math.min(1e6, currentTangent.y0 + currentTangent.slope * (worldRight - currentTangent.x0)))
+      ctx.save()
+      ctx.strokeStyle = currentTangent.color
+      ctx.lineWidth = 1.5
+      ctx.setLineDash([5, 4])
+      ctx.beginPath()
+      ctx.moveTo(0, yToScreen(vp, yLeft, h))
+      ctx.lineTo(w, yToScreen(vp, yRight, h))
+      ctx.stroke()
+      ctx.restore()
+
+      const px = xToScreen(vp, currentTangent.x0, w)
+      const py = yToScreen(vp, currentTangent.y0, h)
+      ctx.beginPath()
+      ctx.arc(px, py, 4, 0, Math.PI * 2)
+      ctx.fillStyle = currentTangent.color
+      ctx.fill()
+      ctx.lineWidth = 1.5
+      ctx.strokeStyle = cardColor
       ctx.stroke()
     }
 
@@ -215,7 +409,7 @@ export default function GraphCanvas({ series, scope, xVar, viewport, onViewportC
   // Props o'zgarganda qayta chizish
   useEffect(() => {
     draw()
-  }, [draw, series, scope, xVar, viewport, sizeTick])
+  }, [draw, series, scope, xVar, viewport, sizeTick, tangent, integral, markers, movingPoint])
 
   // Ifoda/slayder/viewport o'zgarsa — eski trace nuqtasi endi noto'g'ri
   useEffect(() => {
@@ -233,11 +427,12 @@ export default function GraphCanvas({ series, scope, xVar, viewport, onViewportC
   // Resize
   useEffect(() => {
     const container = containerRef.current
-    if (!container) return
+    if (!container || typeof ResizeObserver === 'undefined') return
     const observer = new ResizeObserver((entries) => {
       const rect = entries[0]?.contentRect
       if (!rect) return
       sizeRef.current = { w: rect.width, h: rect.height }
+      onSizeRef.current?.({ w: rect.width, h: rect.height })
       setSizeTick((n) => n + 1)
     })
     observer.observe(container)

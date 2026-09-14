@@ -2,7 +2,7 @@ import { useT } from '../../../shared/i18n'
 
 const TOKENS = [
   'sin(', 'cos(', 'tan(', 'sqrt(', 'ln(', 'abs(', 'log(',
-  '^', '(', ')', 'pi', 'e', 'x', 't', '+', '-', '*', '/',
+  '^', '(', ')', 'π', 'θ', 'ω', 'e', 'x', 't', '+', '-', '*', '/',
 ]
 
 interface Props {
