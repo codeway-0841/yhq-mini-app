@@ -80,10 +80,6 @@ export default function TestlarPage() {
             titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
         ]
       : [
-          { id: 'random50',  iconBox: 'num' as const, numText: '50',
-            titleKey: 't50Test' as const, meta: `50 ${tt('question').toLowerCase()} · 25 ${tt('minWord')}`, diff: 'mid' as const },
-          { id: 'random100', iconBox: 'num' as const, numText: '100',
-            titleKey: 't100' as const,    meta: `100 ${tt('question').toLowerCase()} · 120 ${tt('minWord')}`, diff: 'hard' as const },
           { id: 'marathon',  iconBox: 'zap' as const,
             titleKey: 'marathonTitle' as const, meta: tt('marathonDesc'), diff: 'hard' as const },
           ...examPresetCards,

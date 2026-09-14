@@ -44,9 +44,9 @@ describe('TestlarPage — Mode Card Availability', () => {
     // 20 talik tezkor test olib tashlangan
     expect(screen.queryByText(/20 talik tezkor/i)).toBeNull()
 
-    // 50 talik, 100 talik va marafon mavjud
-    expect(screen.getByText(/50 talik/i)).toBeInTheDocument()
-    expect(screen.getByText(/100 talik/i)).toBeInTheDocument()
+    // 50/100 talik kartalar olib tashlangan, faqat marafon
+    expect(screen.queryByText(/50 talik/i)).toBeNull()
+    expect(screen.queryByText(/100 talik/i)).toBeNull()
     expect(screen.getByText(/marafon/i)).toBeInTheDocument()
   })
 
@@ -54,7 +54,7 @@ describe('TestlarPage — Mode Card Availability', () => {
     useSubjectStore.setState({ subjectId: 'fizika' })
     render(<TestlarPage />)
 
-    fireEvent.click(screen.getByText(/50 talik/i))
+    fireEvent.click(screen.getByText(/marafon/i))
 
     expect(mockNavigate).toHaveBeenCalledWith('/premium')
   })
@@ -67,10 +67,10 @@ describe('TestlarPage — Mode Card Availability', () => {
     })
     render(<TestlarPage />)
 
-    fireEvent.click(screen.getByText(/50 talik/i))
+    fireEvent.click(screen.getByText(/marafon/i))
 
     expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
-      state: { mode: 'random50', title: '50 talik test' },
+      state: { mode: 'marathon', title: 'Marafon' },
     })
   })
 })

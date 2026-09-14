@@ -36,6 +36,18 @@ describe('IosDock component', () => {
     expect(screen.getByText('Menyu')).toBeInTheDocument()
   })
 
+  it('markaziy kamera tugmada oq halqa (ring) va ✨ nishon YO‘Q', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+
+    const aiBtn = screen.getByRole('button', { name: /AI Yechish/i })
+    expect(aiBtn.className).not.toMatch(/ring-4|ring-pcanvas/)
+    expect(aiBtn.textContent).not.toContain('✨')
+  })
+
   it('marks active tab with aria-current="page"', () => {
     render(
       <MemoryRouter initialEntries={['/testlar']}>

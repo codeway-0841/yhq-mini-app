@@ -84,7 +84,7 @@ const UZ = {
   signs: "Belgilar", profile: "Profil", leaderboard: "Reyting",
   // Dashboard
   allTests: "Barcha testlar", fixMistakes: "Xatolarni tuzatish",
-  topics: "Mavzular", octagon: "Oktagon", topicTest: "Mavzu test",
+  topics: "Mavzular", octagon: "Oktagon", topicTest: "Mavzu test", topicsEmpty: "Bu fanda mavzular topilmadi",
   ticketTest: "Bilet test", realExam: "Real imtihon", fifty: "50/100 talik",
   distracting: "Chalg'ituvchi", saved: "Saqlanganlar",
   roadSigns: "Yo'l belgilari", numeric: "Raqamli savollar",
@@ -767,7 +767,7 @@ const RU: Record<Keys, string> = {
   libraryCanvasPage: "PDF — страница {page}", libraryBookNotFound: "Книга не найдена",
   signs: "Знаки", profile: "Профиль", leaderboard: "Рейтинг",
   allTests: "Все тесты", fixMistakes: "Работа над ошибками",
-  topics: "Темы", octagon: "Октагон", topicTest: "Тест по теме",
+  topics: "Темы", octagon: "Октагон", topicTest: "Тест по теме", topicsEmpty: "Темы не найдены",
   ticketTest: "Тест по билету", realExam: "Реальный экзамен", fifty: "50/100 вопросов",
   distracting: "Каверзные", saved: "Сохранённые",
   roadSigns: "Дорожные знаки", numeric: "Числовые вопросы",

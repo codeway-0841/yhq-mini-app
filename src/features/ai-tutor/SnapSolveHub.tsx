@@ -21,6 +21,7 @@ import {
 } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
 import SocraticChatSheet from './components/SocraticChatSheet'
+import { nearestCenterIndex } from './subject-carousel'
 import { haptics } from '../../platform/haptics'
 import { isNativeApp, requestNativeCameraPermission } from '../../platform/native'
 import { playSound } from '../../shared/lib/sounds'
@@ -89,6 +90,11 @@ export default function SnapSolveHub() {
   const cameraInputRef = useRef<HTMLInputElement | null>(null)
   const galleryInputRef = useRef<HTMLInputElement | null>(null)
   const subjectScrollRef = useRef<HTMLDivElement | null>(null)
+  const subjectScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  // Karusel auto-select race'ini oldini olish uchun joriy hint mirror'i
+  // (scroll-debounce setState updater ichida yon-ta'sir qilmasligi uchun)
+  const hintRef = useRef<string>(subjectHint)
+  hintRef.current = subjectHint
   const torchToastTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const cameraRequestIdRef = useRef(0)
 
@@ -108,6 +114,49 @@ export default function SnapSolveHub() {
     setTorchMode(null)
   }, [])
 
+  // Jonli (tirik) treklar bormi — ruxsat qayta so'ralmasligi uchun tekshiruv.
+  // (Mock stream'larda getVideoTracks bo'lmasligi mumkin — optional chain.)
+  const liveVideoTracks = useCallback((): MediaStreamTrack[] => {
+    const stream = streamRef.current
+    if (!stream) return []
+    const tracks = stream.getVideoTracks?.() ?? []
+    return tracks.filter((t) => t.readyState === 'live')
+  }, [])
+
+  // Pauza: kadrlar to'xtaydi (batareya), lekin ruxsat/grant SAQLANADI —
+  // qaytganda getUserMedia chaqirilmaydi, brauzer popup chiqarmaydi.
+  const pauseCameraStream = useCallback(() => {
+    liveVideoTracks().forEach((t) => { t.enabled = false })
+    setIsTorchOn(false)
+    setTorchMode(null)
+  }, [liveVideoTracks])
+
+  // Davom ettirish: jonli stream bo'lsa uni qayta ulash (getUserMedia YO'Q).
+  const resumeCameraStream = useCallback((requestId: number): boolean => {
+    const stream = streamRef.current
+    if (!stream || liveVideoTracks().length === 0) return false
+    stream.getVideoTracks?.().forEach((t) => { t.enabled = true })
+    const video = videoRef.current
+    if (video) {
+      video.muted = true
+      video.defaultMuted = true
+      video.playsInline = true
+      video.setAttribute('playsinline', 'true')
+      video.setAttribute('webkit-playsinline', 'true')
+      if (video.srcObject !== stream) video.srcObject = stream
+      video.play().then(() => {
+        if (cameraRequestIdRef.current !== requestId) return
+        setCameraState('active')
+        setCameraErrorMessage(null)
+      }).catch((playErr) => {
+        console.warn('[Camera] resume play error:', playErr)
+      })
+    } else {
+      setCameraState('active')
+    }
+    return true
+  }, [liveVideoTracks])
+
   const showCameraDenied = useCallback(() => {
     setCameraState('denied')
     setCameraErrorMessage(
@@ -122,6 +171,12 @@ export default function SnapSolveHub() {
     const targetFacing = forcedFacing || facingMode
     const requestId = cameraRequestIdRef.current + 1
     cameraRequestIdRef.current = requestId
+    // 0-bosqich: jonli stream bor — ruxsatni QAYTA so'ramasdan davom et
+    // (bir marta "Ha" bosilgan bo'lsa, keyingi kirishlarda popup chiqmaydi)
+    if (liveVideoTracks().length > 0) {
+      resumeCameraStream(requestId)
+      return
+    }
     setCameraState('loading')
     setCameraErrorMessage(null)
 
@@ -293,13 +348,29 @@ export default function SnapSolveHub() {
     } else {
       setCameraState('active')
     }
-  }, [facingMode, language, nativeApp, showCameraDenied])
+  }, [facingMode, language, nativeApp, showCameraDenied, liveVideoTracks, resumeCameraStream])
 
   // Auto-start only when permission is already granted. Prompting is user-initiated.
   useEffect(() => {
     if (selectedImage || currentSolution) {
-      stopCamera()
+      // Rasm/yechim ko'rinayotganda — stream'ni TO'LIQ o'chirmasdan pauza qil
+      // (grant saqlanadi, "orqaga" qaytganda ruxsat qayta so'ralmaydi)
+      pauseCameraStream()
       return
+    }
+
+    // Jonli stream bor — ruxsatni qayta so'ramasdan davom et
+    if (streamRef.current) {
+      const tracks = streamRef.current.getVideoTracks?.() ?? []
+      if (tracks.some((t) => t.readyState === 'live')) {
+        const requestId = cameraRequestIdRef.current + 1
+        cameraRequestIdRef.current = requestId
+        resumeCameraStream(requestId)
+        return () => {
+          cameraRequestIdRef.current += 1
+          if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
+        }
+      }
     }
 
     let cancelled = false
@@ -310,7 +381,6 @@ export default function SnapSolveHub() {
       void startCamera()
       return () => {
         cancelled = true
-        stopCamera()
         if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
       }
     }
@@ -329,10 +399,20 @@ export default function SnapSolveHub() {
 
     return () => {
       cancelled = true
-      stopCamera()
       if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
     }
-  }, [selectedImage, currentSolution, nativeApp, startCamera, stopCamera, showCameraDenied])
+  }, [selectedImage, currentSolution, nativeApp, startCamera, pauseCameraStream, resumeCameraStream, showCameraDenied])
+
+  // Unmount'da stream'ni TO'LIQ to'xtatish (sahifadan chiqilganda kamera o'chadi)
+  useEffect(() => () => {
+    cameraRequestIdRef.current += 1
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((t) => t.stop())
+      streamRef.current = null
+    }
+    if (torchToastTimerRef.current) clearTimeout(torchToastTimerRef.current)
+    if (subjectScrollTimerRef.current) clearTimeout(subjectScrollTimerRef.current)
+  }, [])
 
   // Kvota va tarixni yuklash
   useEffect(() => {
@@ -404,7 +484,7 @@ export default function SnapSolveHub() {
       const video = videoRef.current
       const frame = captureVideoFrame(video)
       if (frame) {
-        stopCamera()
+        pauseCameraStream()
         setSelectedImage(frame.dataUrl)
         setCurrentSolution(null)
         void runSolve(frame.dataUrl, frame.mimeType)
@@ -426,9 +506,11 @@ export default function SnapSolveHub() {
     }
   }
 
-  // Camera flip (front/back)
+  // Camera flip (front/back) — boshqa qurilma = yangi stream (eskisini to'liq yopish shart,
+  // aks holda reuse eski kamerani qaytarib beradi)
   const toggleFacingMode = () => {
     haptics.impact('light')
+    stopCamera()
     const nextFacing = facingMode === 'environment' ? 'user' : 'environment'
     setFacingMode(nextFacing)
   }
@@ -477,7 +559,7 @@ export default function SnapSolveHub() {
     try {
       setErrorMessage(null)
       setIsCompressing(true)
-      stopCamera()
+      pauseCameraStream()
       const compressed = await compressImageFile(file)
       setSelectedImage(compressed.base64)
       setCurrentSolution(null)
@@ -496,9 +578,34 @@ export default function SnapSolveHub() {
     setErrorMessage(null)
   }
 
+  // Fan karuseli: swipe tugagach markazga kelgan fan AVTOMATIK tanlanadi
+  // (Snapchat/Instagram rejim selektori kabi — har birini bosish shart emas).
+  // Scroll tinchigach (140ms debounce) markazga eng yaqin tugma topiladi.
+  const handleSubjectScroll = useCallback(() => {
+    const el = subjectScrollRef.current
+    if (!el) return
+    if (subjectScrollTimerRef.current) clearTimeout(subjectScrollTimerRef.current)
+    subjectScrollTimerRef.current = setTimeout(() => {
+      const buttons = Array.from(el.querySelectorAll<HTMLButtonElement>('[data-subject-id]'))
+      if (buttons.length === 0) return
+      const rect = el.getBoundingClientRect()
+      const viewCenter = rect.left + el.clientWidth / 2
+      const centers = buttons.map((b) => {
+        const r = b.getBoundingClientRect()
+        return r.left + r.width / 2
+      })
+      const idx = nearestCenterIndex(centers, viewCenter)
+      const id = buttons[idx]?.dataset.subjectId ?? ''
+      if (hintRef.current !== id) {
+        hintRef.current = id
+        setSubjectHint(id)
+        haptics.selection()
+      }
+    }, 140)
+  }, [])
+
   // Manual masala yozish (Kalkulyator orqali)
-  const handleManualSolve = () => {
-    if (!manualText.trim() || isSolving) return
+  const handleManualSolve = () => {    if (!manualText.trim() || isSolving) return
     setIsManualInputOpen(false)
 
     const canvas = document.createElement('canvas')
@@ -528,7 +635,7 @@ export default function SnapSolveHub() {
       ctx.fillText(line, 50, y)
 
       const base64 = canvas.toDataURL('image/jpeg', 0.9)
-      stopCamera()
+      pauseCameraStream()
       setSelectedImage(base64)
       setCurrentSolution(null)
       void runSolve(base64, 'image/jpeg')
@@ -945,8 +1052,12 @@ export default function SnapSolveHub() {
       {/* ── BOTTOM CONTROLS & SUBJECT CAROUSEL ─────────────────── */}
       {!currentSolution && (
         <div className="relative z-20 flex flex-col items-center pb-[calc(1rem+var(--safe-bottom,0px))] pt-2 bg-gradient-to-t from-black/95 via-black/60 to-transparent">
-          {/* Horizontal Subject Carousel from screenshot */}
-          <div className="w-full overflow-x-auto no-scrollbar py-2 px-4 mb-2" ref={subjectScrollRef}>
+          {/* Horizontal Subject Carousel — swipe'da markazdagi fan avtomatik tanlanadi */}
+          <div
+            className="w-full overflow-x-auto no-scrollbar snap-x snap-proximity py-2 px-4 mb-2"
+            ref={subjectScrollRef}
+            onScroll={handleSubjectScroll}
+          >
             <div className="flex items-center justify-start gap-5 min-w-max px-2">
               {SUBJECT_OPTIONS.map((sub) => {
                 const isSelected = subjectHint === sub.id
@@ -955,11 +1066,14 @@ export default function SnapSolveHub() {
                   <button
                     key={sub.id}
                     type="button"
+                    data-subject-id={sub.id}
+                    aria-pressed={isSelected}
                     onClick={() => {
+                      hintRef.current = sub.id
                       setSubjectHint(sub.id)
                       haptics.selection()
                     }}
-                    className={`transition-all text-center select-none py-1 px-1.5 ${
+                    className={`transition-all text-center select-none py-1 px-1.5 snap-center ${
                       isSelected
                         ? 'text-white font-bold text-[15px] drop-shadow-md border-b-2 border-white'
                         : 'text-white/60 font-medium text-[14px] hover:text-white/85'

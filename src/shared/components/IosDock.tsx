@@ -117,12 +117,9 @@ export default function IosDock() {
                     type="button"
                     onClick={() => handleNav(item)}
                     aria-label={item.shortLabel[lang]}
-                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-pprimary/35 ring-4 ring-pcanvas transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
+                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-pprimary/35 transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
                   >
                     <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
-                    <span className="absolute -top-1 -right-1 flex size-4 items-center justify-center rounded-full bg-white dark:bg-pcard text-[9px] font-black text-pprimary shadow-xs select-none">
-                      ✨
-                    </span>
                   </button>
                   <span className="text-[10px] font-bold text-pprimary mt-1 tracking-tight whitespace-nowrap">
                     {item.shortLabel[lang]}

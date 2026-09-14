@@ -1,15 +1,18 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
 import { lessons as lessonsData } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
-import { Lock, Play, Check, ChevronDown } from 'lucide-react'
+import { Lock, Play, Check, ChevronDown, ChevronRight, BookOpen } from 'lucide-react'
 import { getModuleIcon } from '../lessons'
+import { sortTopicsForTickets } from '../tickets'
 import { cn } from '../../shared/lib/cn'
 
 /** ── Dars-bobliq test (v1.1: CURATED mapping — runtime keyword emas!) ──────
@@ -122,7 +125,8 @@ function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
   )
 }
 
-export default function TopicsPage() {
+/** YHQ — curated dars/modul ko'rinishi (lessonMap.yhq.json, progress bilan). */
+function YhqTopics() {
   const navigate = useNavigate()
   // Selector'li obuna — whole-store EMAS
   const settings    = useAppStore((s) => s.settings)
@@ -182,4 +186,124 @@ export default function TopicsPage() {
       </div>
     </div>
   )
+}
+
+/** Boshqa fanlar — server'dagi REAL mavzular (har fanda o'z mavzulari). */
+function SubjectTopics({ subjectId }: { subjectId: string }) {
+  const navigate = useNavigate()
+  const settings = useAppStore((s) => s.settings)
+  const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
+  const questions = useQuestionsStore((s) => s.questions)
+  const topics = useQuestionsStore((s) => s.topics)
+  const loaded = useQuestionsStore((s) => s.loaded)
+  const loading = useQuestionsStore((s) => s.loading)
+  const error = useQuestionsStore((s) => s.error)
+  const storedSubjectId = useQuestionsStore((s) => s.subjectId)
+  const loadQs = useQuestionsStore((s) => s.load)
+  const retry = useQuestionsStore((s) => s.retry)
+  const tt = useT(settings.language)
+  const lang = settings.language
+
+  useEffect(() => {
+    if ((!loaded && !loading && !error) || storedSubjectId !== subjectId) {
+      void loadQs(lang, subjectId)
+    }
+  }, [loaded, loading, error, storedSubjectId, lang, subjectId, loadQs])
+
+  const rows = useMemo(() => {
+    const byTopic = new Map<number, number[]>()
+    for (const q of questions) {
+      if (q.topicId == null) continue
+      const list = byTopic.get(q.topicId)
+      if (list) list.push(q.id)
+      else byTopic.set(q.topicId, [q.id])
+    }
+    const prefix = `${subjectId}:`
+    const solved = new Set<number>()
+    for (const k of solvedQuestions) {
+      if (!k.startsWith(prefix)) continue
+      const id = Number(k.slice(prefix.length))
+      if (Number.isInteger(id)) solved.add(id)
+    }
+    return sortTopicsForTickets(subjectId, topics)
+      .map((t) => {
+        const ids = (byTopic.get(t.id) ?? []).sort((a, b) => a - b)
+        return {
+          topic: t,
+          ids,
+          done: ids.filter((id) => solved.has(id)).length,
+        }
+      })
+      .filter((r) => r.ids.length > 0)
+  }, [questions, topics, solvedQuestions, subjectId])
+
+  const startTopic = (title: string, ids: number[]) => {
+    navigate('/test/1', { state: { questionIds: ids, title } })
+  }
+
+  return (
+    <div className="px-4 pb-4">
+      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel="Orqaga" className="-mx-4 mb-4" />
+
+      {loading && rows.length === 0 && (
+        <div className="grid place-items-center py-16">
+          <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
+        </div>
+      )}
+
+      {error && rows.length === 0 && !loading && (
+        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs">
+          <p className="text-sm text-pmuted mb-3">{tt('qLoadFailed')}</p>
+          <button
+            type="button"
+            onClick={() => void retry(lang, subjectId)}
+            className="px-5 py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
+          >
+            {tt('qLoadRetry')}
+          </button>
+        </div>
+      )}
+
+      {loaded && !loading && rows.length === 0 && !error && (
+        <p className="text-center text-sm text-pmuted py-16">{tt('topicsEmpty')}</p>
+      )}
+
+      <div className="flex flex-col gap-2.5">
+        {rows.map(({ topic, ids, done }) => {
+          const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
+          const pct = ids.length > 0 ? Math.round((done / ids.length) * 100) : 0
+          return (
+            <button
+              key={topic.id}
+              type="button"
+              onClick={() => startTopic(name, ids)}
+              className="w-full flex items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left shadow-xs active:scale-[0.99] transition-all"
+            >
+              <div className="size-10 rounded-xl bg-psurface flex items-center justify-center shrink-0">
+                <BookOpen size={18} strokeWidth={1.75} className="text-pmuted" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="truncate text-[15px] font-semibold text-pfg">{name}</p>
+                <div className="mt-1.5 flex items-center gap-2">
+                  <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
+                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
+                  </div>
+                  <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
+                    {done}/{ids.length}
+                  </span>
+                </div>
+              </div>
+              <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle shrink-0" />
+            </button>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+export default function TopicsPage() {
+  const subjectId = useSubjectStore((s) => s.subjectId)
+  if (subjectId === 'yhq') return <YhqTopics />
+  return <SubjectTopics subjectId={subjectId} />
 }

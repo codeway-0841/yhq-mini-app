@@ -211,8 +211,32 @@ describe('AI Tutor Frontend Components', () => {
     expect(screen.getByText('AI')).toBeInTheDocument()
   })
 
-  it('hides SnapSolveFab on restricted routes like /ai-tutor', async () => {
-    const { default: SnapSolveFab } = await import('../../../src/features/ai-tutor/components/SnapSolveFab')
+  it('fan karuseli: default Umumiy tanlangan, bosilganda fan almashadi', async () => {
+    mockGetQuota.mockResolvedValue({ ok: false })
+    Object.defineProperty(navigator, 'permissions', {
+      configurable: true,
+      value: { query: vi.fn().mockResolvedValue({ state: 'prompt' }) },
+    })
+
+    render(
+      <MemoryRouter>
+        <SnapSolveHub />
+      </MemoryRouter>,
+    )
+
+    const umumiy = await screen.findByRole('button', { name: 'Umumiy' })
+    const fizika = screen.getByRole('button', { name: 'Fizika' })
+    // Default: Umumiy tanlangan (oq qalin), Fizika tanlanmagan
+    expect(umumiy).toHaveAttribute('aria-pressed', 'true')
+    expect(fizika).toHaveAttribute('aria-pressed', 'false')
+
+    fireEvent.click(fizika)
+
+    expect(fizika).toHaveAttribute('aria-pressed', 'true')
+    expect(umumiy).toHaveAttribute('aria-pressed', 'false')
+  })
+
+  it('hides SnapSolveFab on restricted routes like /ai-tutor', async () => {    const { default: SnapSolveFab } = await import('../../../src/features/ai-tutor/components/SnapSolveFab')
     render(
       <MemoryRouter initialEntries={['/ai-tutor']}>
         <SnapSolveFab />
