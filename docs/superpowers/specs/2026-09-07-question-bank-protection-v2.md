@@ -153,6 +153,34 @@ Verification in this session:
 Still open: non-yhq Biletlar per-topic UI, TopicsPage migration, Web/TG/APK
 smoke, staged contraction, observe/enforce (Phase 5/6).
 
+## 0.4. Continuation checkpoint (2026-09-16, senior pass 3)
+
+TopicsPage migration (no prod deploy/migration):
+
+- `YhqTopics`: lesson launch passes server `lesson` selector in v2
+  (moduleId plumbed through `ModuleCard.onLesson`); legacy `questionIds`
+  unchanged when the flag is off;
+- `SubjectTopics`: metadata-only in v2 (`loadTopics`, no full-bank fetch),
+  rows from topics `questionCount`, opens server `topic` sessions;
+  per-question progress bars intentionally hidden in v2 (question-level
+  mapping needs the bank — server aggregate is a later step);
+- doc discipline: every session pass recorded here (§0.1–§0.4); commits
+  `e1609186` (search/adaptive/speed/ticket/stats/contraction) and `497f5668`
+  (admin/bootstrap/real-DB) pushed to master; `content-banks/avtotest-*`
+  artifacts left untouched (not staged/pushed).
+
+Verification in this session:
+
+- `npm test` → 224 files / 1681 tests passed;
+- `npx tsc -p tsconfig.json --noEmit` → passed;
+- `npx tsc -p tsconfig.server.json --noEmit` → passed;
+- `npm run lint` → 0 errors (only pre-existing warnings, none in v2 files);
+- `git diff --check` → passed.
+
+Still open: non-yhq Biletlar per-topic UI (+product decision), TopicsPage
+server progress aggregate, Octagon UI metadata, offline policy (§2.3),
+Web/TG/APK smoke, staged contraction, observe/enforce.
+
 ## 1. Executive decision
 
 KIVVI must move from **public full-bank delivery** to **authenticated, server-owned test sessions with bounded delivery**.

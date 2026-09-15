@@ -3,7 +3,7 @@
  * keyingisi ochilmaydi), curated mapping'siz darslarning yashirilishi va
  * dars ochilganda testga uzatiladigan savol id'lari.
  */
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 
 const { mockNavigate } = vi.hoisted(() => ({ mockNavigate: vi.fn() }))
@@ -13,6 +13,7 @@ vi.mock('react-router-dom', async (importOriginal) => {
 })
 
 import TopicsPage from '../../../src/features/topics/TopicsPage'
+import { config } from '../../../src/shared/config'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
@@ -86,5 +87,32 @@ describe('TopicsPage', () => {
     fireEvent.click(locked)
 
     expect(mockNavigate).not.toHaveBeenCalled()
+  })
+})
+
+describe('TopicsPage v2 (server selectors)', () => {
+  beforeEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
+  })
+
+  afterEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = false
+  })
+
+  it('dars bosilganda server lesson selector bilan ochiladi (master ID YO\'Q)', () => {
+    render(<TopicsPage />)
+
+    const firstLesson = screen.getAllByRole('button').find((b) => /-dars\./.test(b.textContent ?? ''))!
+    fireEvent.click(firstLesson)
+
+    expect(mockNavigate).toHaveBeenCalledTimes(1)
+    const [path, opts] = mockNavigate.mock.calls[0]!
+    expect(path).toBe('/test/1')
+    expect(opts.state).toEqual({
+      mode: 'lesson',
+      serverSelector: { type: 'lesson', moduleId: firstModId, lessonIndex: firstLessonIdx },
+      title: expect.stringMatching(/-dars:/),
+    })
+    expect(opts.state).not.toHaveProperty('questionIds')
   })
 })

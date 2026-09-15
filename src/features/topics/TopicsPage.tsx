@@ -4,6 +4,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { config } from '../../shared/config'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
 import { lessons as lessonsData } from '../../content/lessons'
@@ -154,11 +155,20 @@ function YhqTopics() {
     return perMod
   }, [lang])
 
-  const startLesson = (l: LessonMeta) => {
+  const startLesson = (modId: number, l: LessonMeta) => {
     const lessonTitle = lang === 'ru' ? `Урок ${l.idx + 1}: ${l.title}` : `${l.idx + 1}-dars: ${l.title}`
-    navigate('/test/1', {
-      state: { questionIds: l.ids, title: lessonTitle },
-    })
+    // v2: curated lesson server session orqali (master ID'siz)
+    navigate('/test/1', config.testSessionsV2Enabled
+      ? {
+          state: {
+            mode: 'lesson',
+            serverSelector: { type: 'lesson', moduleId: modId, lessonIndex: l.idx },
+            title: lessonTitle,
+          },
+        }
+      : {
+          state: { questionIds: l.ids, title: lessonTitle },
+        })
   }
 
   return (
@@ -179,7 +189,7 @@ function YhqTopics() {
               lang={lang}
               open={openId === mod.id}
               onToggle={() => setOpenId((o) => o === mod.id ? 0 : mod.id)}
-              onLesson={(l) => startLesson(l)}
+              onLesson={(l) => startLesson(mod.id, l)}
             />
           )
         })}
@@ -200,17 +210,42 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const error = useQuestionsStore((s) => s.error)
   const storedSubjectId = useQuestionsStore((s) => s.subjectId)
   const loadQs = useQuestionsStore((s) => s.load)
+  const loadTopics = useQuestionsStore((s) => s.loadTopics)
   const retry = useQuestionsStore((s) => s.retry)
   const tt = useT(settings.language)
   const lang = settings.language
 
+  // v2: mavzular metadata'dan, ochilish server topic session orqali.
+  // Progress chiziqlari uchun savol-darajali mapping kerak — metadata'da yo'q,
+  // shuning uchun v2'da faqat sonlar (keyingi bosqichda server agregati).
+  const isV2 = config.testSessionsV2Enabled
+  const [topicsFailed, setTopicsFailed] = useState(false)
+  const [topicsRetry, setTopicsRetry] = useState(0)
+
   useEffect(() => {
-    if ((!loaded && !loading && !error) || storedSubjectId !== subjectId) {
-      void loadQs(lang, subjectId)
+    if (!isV2) {
+      if ((!loaded && !loading && !error) || storedSubjectId !== subjectId) {
+        void loadQs(lang, subjectId)
+      }
+      return
     }
-  }, [loaded, loading, error, storedSubjectId, lang, subjectId, loadQs])
+    if (storedSubjectId !== subjectId || topics.length === 0) {
+      setTopicsFailed(false)
+      void loadTopics(subjectId).catch(() => setTopicsFailed(true))
+    }
+  }, [isV2, loaded, loading, error, storedSubjectId, lang, subjectId, loadQs, loadTopics, topics.length, topicsRetry])
 
   const rows = useMemo(() => {
+    if (isV2) {
+      return sortTopicsForTickets(subjectId, topics)
+        .map((t) => ({
+          topic: t,
+          ids: [] as number[],
+          done: 0,
+          count: t.questionCount ?? 0,
+        }))
+        .filter((r) => r.count > 0)
+    }
     const byTopic = new Map<number, number[]>()
     for (const q of questions) {
       if (q.topicId == null) continue
@@ -232,13 +267,16 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           topic: t,
           ids,
           done: ids.filter((id) => solved.has(id)).length,
+          count: ids.length,
         }
       })
       .filter((r) => r.ids.length > 0)
-  }, [questions, topics, solvedQuestions, subjectId])
+  }, [isV2, questions, topics, solvedQuestions, subjectId])
 
-  const startTopic = (title: string, ids: number[]) => {
-    navigate('/test/1', { state: { questionIds: ids, title } })
+  const startTopic = (topicId: number, title: string, ids: number[]) => {
+    navigate('/test/1', isV2
+      ? { state: { mode: 'topic', serverSelector: { type: 'topic', topicId }, title } }
+      : { state: { questionIds: ids, title } })
   }
 
   return (
@@ -268,15 +306,34 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         <p className="text-center text-sm text-pmuted py-16">{tt('topicsEmpty')}</p>
       )}
 
+      {isV2 && rows.length === 0 && !topicsFailed && (
+        <div className="grid place-items-center py-16">
+          <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
+        </div>
+      )}
+
+      {isV2 && topicsFailed && rows.length === 0 && (
+        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs">
+          <p className="text-sm text-pmuted mb-3">{tt('qLoadFailed')}</p>
+          <button
+            type="button"
+            onClick={() => setTopicsRetry((c) => c + 1)}
+            className="px-5 py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
+          >
+            {tt('qLoadRetry')}
+          </button>
+        </div>
+      )}
+
       <div className="flex flex-col gap-2.5">
-        {rows.map(({ topic, ids, done }) => {
+        {rows.map(({ topic, ids, done, count }) => {
           const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
           const pct = ids.length > 0 ? Math.round((done / ids.length) * 100) : 0
           return (
             <button
               key={topic.id}
               type="button"
-              onClick={() => startTopic(name, ids)}
+              onClick={() => startTopic(topic.id, name, ids)}
               className="w-full flex items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left shadow-xs active:scale-[0.99] transition-all"
             >
               <div className="size-10 rounded-xl bg-psurface flex items-center justify-center shrink-0">
@@ -284,14 +341,20 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="truncate text-[15px] font-semibold text-pfg">{name}</p>
-                <div className="mt-1.5 flex items-center gap-2">
-                  <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
-                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
+                {isV2 ? (
+                  <p className="mt-1 text-[11px] font-semibold text-pmuted tabular-nums">
+                    {count} {tt('question')}
+                  </p>
+                ) : (
+                  <div className="mt-1.5 flex items-center gap-2">
+                    <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
+                      <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
+                    </div>
+                    <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
+                      {done}/{ids.length}
+                    </span>
                   </div>
-                  <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
-                    {done}/{ids.length}
-                  </span>
-                </div>
+                )}
               </div>
               <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle shrink-0" />
             </button>
