@@ -3,9 +3,10 @@
  * restavratsiyasi, FIXPLAN #20). Router'da SQL YO'Q — faqat validation +
  * orchestration qoladi.
  */
-import { asc, eq, sql } from 'drizzle-orm'
+import { and, asc, desc, eq, or, sql } from 'drizzle-orm'
 import { db, executeRows, transactionBestEffort, type DB } from '../../db/connection'
 import { questionBanks, questions, topics } from '../../schema'
+import { escapeLikePattern } from '../questions/questions.repository'
 
 async function lockBankForMutation(bankId: string, tx: DB): Promise<void> {
   const rows = await executeRows<{ id: string }>(sql`
@@ -96,6 +97,61 @@ export const adminRepository = {
 
   async listQuestionsByBank(bankId: string) {
     return db.select().from(questions).where(eq(questions.bankId, bankId)).orderBy(asc(questions.id))
+  },
+
+  /**
+   * Admin ro'yxat (v2 hardening): paginated + JAVOB KALITSIZ.
+   * `correctAnswer` faqat detail endpoint'da (audit'li) ochiladi — ro'yxat
+   * sahifalashda minglab kalitlar client xotirasiga tushmasligi uchun.
+   */
+  async listQuestionsPage(
+    bankId: string,
+    opts: { limit: number; offset: number; search?: string },
+  ): Promise<{
+    rows: Array<{
+      id: number; questionUz: string; questionRu: string;
+      image: string | null; topicId: number | null
+    }>
+    total: number
+  }> {
+    const conditions = [eq(questions.bankId, bankId)]
+    const search = opts.search?.trim()
+    if (search) {
+      const pattern = `%${escapeLikePattern(search)}%`
+      const textMatch = sql`(${questions.questionUz} ILIKE ${pattern} ESCAPE '\' OR ${questions.questionRu} ILIKE ${pattern} ESCAPE '\')`
+      const idNum = Number(search)
+      conditions.push(
+        Number.isInteger(idNum) && idNum > 0 ? or(eq(questions.id, idNum), textMatch)! : textMatch,
+      )
+    }
+    const where = and(...conditions)
+    const [countRow] = await db
+      .select({ total: sql<number>`COUNT(*)::int` })
+      .from(questions)
+      .where(where)
+    const rows = await db
+      .select({
+        id: questions.id,
+        questionUz: questions.questionUz,
+        questionRu: questions.questionRu,
+        image: questions.image,
+        topicId: questions.topicId,
+      })
+      .from(questions)
+      .where(where)
+      .orderBy(desc(questions.id))
+      .limit(opts.limit)
+      .offset(opts.offset)
+    return { rows, total: Number(countRow?.total ?? 0) }
+  },
+
+  /** Bitta savol TO'LIQ (javob kaliti bilan) — faqat audit'li detail endpoint. */
+  async findQuestionById(bankId: string, id: number) {
+    const [row] = await db
+      .select()
+      .from(questions)
+      .where(and(eq(questions.bankId, bankId), eq(questions.id, id)))
+    return row ?? null
   },
 
   async questionBankMeta(bankId: string): Promise<{ total: number; withTopic: number }> {

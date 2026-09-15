@@ -25,6 +25,7 @@ import { DailyTasksCard } from '../shop'
 import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
 import { useDashboardSync, useSubjectBadges, useDashboardQuestionCount } from './hooks/useDashboardData'
+import { config } from '../../shared/config'
 import { todayStr } from '../../shared/store/useDailyStore'
 
 // ── Main Dashboard ──────────────────────────────────────────────────────────
@@ -71,7 +72,12 @@ export default function Dashboard() {
       ])
     }
     // Foydalanuvchi yangilayapti: failedKey guardidan chiqib, aynan tanlangan fanga qayta urinish.
-    await useQuestionsStore.getState().retry(settings.language, subject.id)
+    // v2: dashboard faqat metadata istaydi (full-bank PTR'da tortilmaydi).
+    if (config.testSessionsV2Enabled) {
+      await useQuestionsStore.getState().loadTopics(subject.id).catch(() => {})
+    } else {
+      await useQuestionsStore.getState().retry(settings.language, subject.id)
+    }
   })
   const tt = useT(settings.language)
 

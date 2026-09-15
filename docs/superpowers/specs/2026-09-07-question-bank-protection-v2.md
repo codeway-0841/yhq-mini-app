@@ -117,6 +117,42 @@ Still open (bank NOT fully protected — legacy endpoints default ON):
 - real-DB integration + Web/Telegram/APK smoke for this pass;
 - staged contraction (`LEGACY_*=false`) only after the above.
 
+## 0.3. Continuation checkpoint (2026-09-16, senior pass 2)
+
+Admin hardening + bootstrap metadata + real-DB proof (no prod deploy/migration):
+
+- admin list hardened: `GET /api/admin/questions` is now paginated
+  (`limit` cap 200, `offset`, server `search`) and KEYLESS (no `correctAnswer`,
+  no options); new audited `GET /api/admin/questions/:id` detail returns the
+  full row (audit `admin_question_detail`, answer text never logged);
+  audit also on bulk-import (`admin_questions_bulk_import`, count only) and
+  delete (`admin_question_delete`); `private, no-store` everywhere; detail
+  route mounted AFTER `/meta`+`/topics` (route-order trap + regression test);
+  found+fixed: Express 5 `req.query` getter drops zod coerce — handler re-parses;
+- `AdminQuestionsTab` rewritten to the new contract: server search (debounced),
+  pagination footer, masked list rows, detail-on-edit;
+- bootstrap/dashboard metadata-only behind the flag: `useAppBootstrap`,
+  `useDashboardSync`, dashboard pull-to-refresh and `LoginPage` use
+  `loadTopics` in v2; `SubjectSwitcher` count falls back to cached count;
+  `LearningGuide` non-yhq cards come from topics metadata and open server
+  `topic` sessions; `AdaptivePage` legacy preload guarded;
+  page-level `load()` calls (TestPage, TopicsPage, non-yhq Biletlar) untouched;
+- real-DB integration on isolated Neon test DB (guard passed, test-only
+  migrate): full integration suite 290/291 — one flaky auth linking timing
+  test failed in-suite but passed 25/25 in isolation (unrelated to v2);
+  `test-sessions-v2` green on real DB.
+
+Verification in this session:
+
+- `npm test` → 224 files / 1678 tests passed;
+- `npx tsc -p tsconfig.json --noEmit` → passed;
+- `npx tsc -p tsconfig.server.json --noEmit` → passed;
+- `npm run lint` → 0 errors (only pre-existing warnings);
+- `git diff --check` → passed.
+
+Still open: non-yhq Biletlar per-topic UI, TopicsPage migration, Web/TG/APK
+smoke, staged contraction, observe/enforce (Phase 5/6).
+
 ## 1. Executive decision
 
 KIVVI must move from **public full-bank delivery** to **authenticated, server-owned test sessions with bounded delivery**.

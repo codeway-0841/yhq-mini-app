@@ -2,7 +2,7 @@ import { memo, useEffect, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
-import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
+import { useQuestionsStore, cachedQuestionCount } from '../../../shared/store/useQuestionsStore'
 import { useT } from '../../../shared/i18n'
 import { Button } from '../../../shared/components/ui/button'
 
@@ -12,7 +12,11 @@ import { Button } from '../../../shared/components/ui/button'
 export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpen: () => void }) {
   const subject = useSubjectStore((s) => s.subject)
   const lang    = useAppStore((s) => s.settings.language)
-  const count   = useQuestionsStore((s) => s.questions.length)
+  // v2 (topics-only): savollar yuklanmagan bo'lsa oxirgi ma'lum sondan
+  // foydalanamiz — aks holda fan soni doim "…" bo'lib qolardi.
+  const count = useQuestionsStore((s) =>
+    s.subjectId === subject.id && s.loaded ? s.questions.length : cachedQuestionCount(subject.id)
+  )
   const tt      = useT(lang)
   const Icon    = subject.icon
   const [imgOk, setImgOk] = useState(true)

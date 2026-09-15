@@ -4,6 +4,7 @@ import { modules } from '../../../content/modules'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useLessonsStore } from '../../../shared/store/useLessonsStore'
 import { useQuestionsStore, cachedQuestionCount } from '../../../shared/store/useQuestionsStore'
+import { config } from '../../../shared/config'
 import { useDailyStore, todayStr } from '../../../shared/store/useDailyStore'
 import { type useT } from '../../../shared/i18n'
 
@@ -22,10 +23,18 @@ export function useDashboardSync(userId: string | undefined, subjectId: string, 
     if (userId) void useDailyStore.getState().sync(userId, todayStr(), subjectId)
   }, [userId, subjectId])
 
-  // Fan almashtirilganda savollarni shu fanga qarab qayta yuklash (reload yo'q)
+  // Fan almashtirilganda katalogni shu fanga qarab qayta yuklash (reload yo'q).
+  // v2: faqat metadata (dashboard savol matnini ko'rsatmaydi).
   useEffect(() => {
-    const { load, subjectId: loadedSubject } = useQuestionsStore.getState()
-    if (loadedSubject !== subjectId || !useQuestionsStore.getState().loaded) {
+    const st = useQuestionsStore.getState()
+    if (config.testSessionsV2Enabled) {
+      if (st.subjectId !== subjectId || st.topics.length === 0) {
+        void st.loadTopics(subjectId).catch(() => {})
+      }
+      return
+    }
+    const { load, subjectId: loadedSubject } = st
+    if (loadedSubject !== subjectId || !st.loaded) {
       void load(lang, subjectId)
     }
   }, [subjectId, lang])

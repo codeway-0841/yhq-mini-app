@@ -59,7 +59,12 @@ export default function LoginPage() {
     setSessionToken(data.sessionToken)
     useAppStore.getState().hydrateFromProfile(data)
     success(tt('authLoginSuccess'))
-    void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
+    // v2: faqat metadata (full-bank preload YO'Q)
+    if (config.testSessionsV2Enabled) {
+      void useQuestionsStore.getState().loadTopics().catch(() => {})
+    } else {
+      void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
+    }
     void flushOutbox(data.user.id)
     if (typeof window !== 'undefined') {
       window.location.hash = '#/'

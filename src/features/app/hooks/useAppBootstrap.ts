@@ -23,6 +23,7 @@ import {
 } from '../../../platform/telegram'
 import { hideSplashScreen } from '../../../platform/native'
 import type { Lang } from '../../../shared/i18n'
+import { config } from '../../../shared/config'
 import { answerService } from '../../../shared/services/answer-service'
 
 export interface AppBootstrapState {
@@ -94,19 +95,29 @@ export function useAppBootstrap(): AppBootstrapState {
         prevSubj = s.subjectId
         track('subject_switch', { id: s.subjectId })
         const l = useAppStore.getState().settings?.language ?? 'uz'
-        void useQuestionsStore.getState().load(l, s.subjectId)
+        // v2: faqat metadata (full-bank preload YO'Q)
+        if (config.testSessionsV2Enabled) {
+          void useQuestionsStore.getState().loadTopics(s.subjectId).catch(() => {})
+        } else {
+          void useQuestionsStore.getState().load(l, s.subjectId)
+        }
       }
     })
 
     const tgUser = getTelegramUser()
 
+    // v2: katalog metadata (topics/ticket-catalog) yetadi — savol matni faqat
+    // server session orqali keladi. Legacy: full-bank preload (o'zgarishsiz).
     const loadQuestions = (l: 'uz' | 'ru') =>
-      useQuestionsStore.getState().load(l, useSubjectStore.getState().subjectId)
+      config.testSessionsV2Enabled
+        ? useQuestionsStore.getState().loadTopics(useSubjectStore.getState().subjectId)
+        : useQuestionsStore.getState().load(l, useSubjectStore.getState().subjectId)
 
-    // /questions va /topics — PUBLIC endpoint'lar (questions.router.ts: auth
+    // /topics — PUBLIC endpoint'lar (questions.router.ts: auth
     // middleware yo'q, CDN kesh bor). Ya'ni ular auth javobini kutishi SHART
     // EMAS. Keshdagi til bilan DARHOL boshlaymiz — api.init()/getAuthMe() bilan
     // parallel ketadi va bitta to'liq round-trip yo'qoladi.
+    // v2: loadQuestions faqat metadata (loadTopics) — full-bank tortilmaydi.
     void loadQuestions(useAppStore.getState().settings?.language ?? 'uz').catch(() => {})
 
     if (tgUser?.id) {

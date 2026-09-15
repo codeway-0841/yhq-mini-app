@@ -78,8 +78,10 @@ export default function AdaptivePage() {
   const { currentId, sessionCount, startSession, recordAnswer, advanceNext } = useAdaptiveStore()
   const subjectId = useSubjectStore((s) => s.subjectId)
 
-  // Savollar yuklanmagan bo'lsa xavfsiz yuklab olish
+  // Savollar yuklanmagan bo'lsa xavfsiz yuklab olish (legacy oqim uchun;
+  // v2 server session'da full-bank kerak emas).
   useEffect(() => {
+    if (config.testSessionsV2Enabled) return
     if (!questionsLoaded && !questionsLoading && !questionsError) {
       void useQuestionsStore.getState().load(settings.language, subjectId)
     }

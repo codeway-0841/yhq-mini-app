@@ -288,9 +288,18 @@ export interface DbQuestion {
   topicId: number | null
 }
 
-/** Admin CRUD uchun to'liq qator (faqat /admin/questions qaytaradi). */
+/** Admin CRUD uchun to'liq qator (faqat audit'li detail qaytaradi). */
 export interface AdminDbQuestion extends DbQuestion {
   correctAnswer: string
+}
+
+/** Admin ro'yxat satri — JAVOB KALITSIZ (paginated list). */
+export interface AdminQuestionListItem {
+  id: number
+  questionUz: string
+  questionRu: string
+  image: string | null
+  topicId: number | null
 }
 
 export interface DbTopic {
@@ -807,9 +816,21 @@ export const api = {
     request<{ ok: true; id: number; status: string }>('POST', `/admin/merch-orders/${id}/cancel`),
 
   // ── Admin (savollar CRUD) — faqat is_admin=true foydalanuvchilarga ──
-  /** TO'LIQ qatorlar (correctAnswer bilan) — public /questions endi javobsiz */
-  getAdminQuestions: (subjectId?: string) =>
-    request<AdminDbQuestion[]>('GET', `/admin/questions${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
+  /** Admin ro'yxat SATRI — javob kalitsiz (kalit faqat audit'li detail'da) */
+  getAdminQuestions: (subjectId?: string, opts?: { limit?: number; offset?: number; search?: string }) => {
+    const params = new URLSearchParams()
+    if (subjectId) params.set('subject', subjectId)
+    if (opts?.limit !== undefined) params.set('limit', String(opts.limit))
+    if (opts?.offset !== undefined) params.set('offset', String(opts.offset))
+    if (opts?.search) params.set('search', opts.search)
+    const qs = params.toString()
+    return request<{ rows: AdminQuestionListItem[]; total: number; limit: number; offset: number }>(
+      'GET', `/admin/questions${qs ? `?${qs}` : ''}`,
+    )
+  },
+  /** Bitta savol TO'LIQ (correctAnswer bilan) — server audit yozadi */
+  getAdminQuestion: (id: number, subjectId?: string) =>
+    request<AdminDbQuestion>('GET', `/admin/questions/${id}${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
   createQuestion: (data: Omit<AdminDbQuestion, 'id'> & { id?: number; subjectId?: string; bankId?: string }) =>
     request<{ id: number; created: true }>('POST', '/admin/questions', data),
   updateQuestion: (id: number, data: Omit<AdminDbQuestion, 'id'>) =>

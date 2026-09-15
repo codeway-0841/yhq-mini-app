@@ -16,6 +16,7 @@ import { rateLimit } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
 import { adminRepository } from './admin.repository'
+import { authRepository } from '../auth/auth.repository'
 import { reloadOctagonPools } from '../../octagon'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
 
@@ -150,6 +151,17 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
   questionsRepository.invalidateCache()
   void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
 
+  // Audit: kim qancha savol import qildi (savol matni/javoblar log'ga YOZILMAYDI)
+  const importUserId = (req as { userId?: string }).userId
+  void authRepository.createAuditLog({
+    userId: importUserId,
+    action: 'admin_questions_bulk_import',
+    resourceType: 'question_bank',
+    resourceId: bankId,
+    changes: { count: recordsToInsert.length },
+    ipAddress: req.ip,
+  }).catch(() => {})
+
   res.status(201).json({ success: true, count: recordsToInsert.length })
 }))
 
@@ -189,18 +201,46 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
   if (!deleted) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
   void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+
+  // Audit: kim qaysi savolni o'chirdi
+  const deleteUserId = (req as { userId?: string }).userId
+  void authRepository.createAuditLog({
+    userId: deleteUserId,
+    action: 'admin_question_delete',
+    resourceType: 'question',
+    resourceId: String(id),
+    ipAddress: req.ip,
+  }).catch(() => {})
+
   res.status(204).send()
 }))
 
-// ── GET /api/admin/questions — TO'LIQ qatorlar (correctAnswer bilan) fan bo'yicha ──
-router.get('/admin/questions', wrap(async (req, res) => {
-  const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
-  const bankId = resolveBankId(subjectParam)
-  res.set('Cache-Control', 'no-store')   // javob kalitlari CDN/browser'da qolmasin
+// ── GET /api/admin/questions — PAGINATED ro'yxat, JAVOB KALITSIZ ──
+// correctAnswer faqat detail endpoint'da (audit'li). Limit cap 200.
+const AdminQuestionsQuery = z.object({
+  subject: z.string().max(64).optional(),
+  subjectId: z.string().max(64).optional(),
+  bankId: z.string().max(64).optional(),
+  limit: z.coerce.number().int().min(1).max(200).default(50),
+  offset: z.coerce.number().int().min(0).default(0),
+  search: z.string().max(100).optional(),
+})
 
-  const rows = await adminRepository.listQuestionsByBank(bankId)
+router.get('/admin/questions', validate({ query: AdminQuestionsQuery }), wrap(async (req, res) => {
+  // validate() req.query'ni coerce qiladi, lekin Express 5 getter bo'lgani
+  // uchun coerce'LANGAN qiymatlar qolmasligi mumkin — schema'dan qayta parse
+  // (validate allaqachon 400 bergan, bu yerda yiqilmaydi).
+  const q = AdminQuestionsQuery.parse(req.query)
+  const bankId = resolveBankId(q.subject || q.subjectId || q.bankId)
+  res.set('Cache-Control', 'private, no-store')
 
-  res.json(rows)
+  const { rows, total } = await adminRepository.listQuestionsPage(bankId, {
+    limit: q.limit,
+    offset: q.offset,
+    search: q.search,
+  })
+
+  res.json({ rows, total, limit: q.limit, offset: q.offset })
 }))
 
 // ── GET /api/admin/questions/meta — fan bo'yicha savol statistikasi ──
@@ -221,6 +261,33 @@ router.get('/admin/topics', wrap(async (req, res) => {
   const topicRows = await adminRepository.listTopicsByBank(bankId)
 
   res.json(topicRows)
+}))
+
+// ── GET /api/admin/questions/:id — bitta savol TO'LIQ (audit'li) ──
+// '/meta' va '/topics'dan KEYIN e'lon qilinishi SHART — aks holda 'meta'
+// bu route'ga tushib 400 berardi.
+router.get('/admin/questions/:id', wrap(async (req, res) => {
+  const id = Number(req.params.id)
+  if (!Number.isInteger(id) || id <= 0) throw new AppError(400, "Noto'g'ri id")
+  const subjectParam = (req.query['subject'] || req.query['subjectId'] || req.query['bankId']) as string | undefined
+  const bankId = resolveBankId(subjectParam)
+
+  const row = await adminRepository.findQuestionById(bankId, id)
+  if (!row) throw new AppError(404, 'Savol topilmadi')
+
+  // Audit: kim qachon qaysi savol kalitini ochdi (javob matni log'ga YOZILMAYDI)
+  const userId = (req as { userId?: string }).userId
+  void authRepository.createAuditLog({
+    userId,
+    action: 'admin_question_detail',
+    resourceType: 'question',
+    resourceId: String(id),
+    changes: { bankId },
+    ipAddress: req.ip,
+  }).catch(() => {})
+
+  res.set('Cache-Control', 'private, no-store')
+  res.json(row)
 }))
 
 // ── GET /api/admin/stats — Jonli tizim statistikasi ──

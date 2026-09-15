@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
+import { config } from '../../../shared/config'
 import { useLessonsStore } from '../../../shared/store/useLessonsStore'
 import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { Button } from '../../../shared/components/ui/button'
@@ -40,13 +41,26 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const topics = useQuestionsStore((s) => s.topics)
   const loadedSubject = useQuestionsStore((s) => s.subjectId)
   const loaded = useQuestionsStore((s) => s.loaded)
+  // v2: mavzu kartalari metadata'dan, ochilish server topic session orqali
+  // (full-bank mapping YO'Q; bajarilish foizi keyin — hozircha false).
+  const isV2 = config.testSessionsV2Enabled
   const topicChoices = subject.id === 'yhq'
     ? modules.map((m) => ({
       id: m.id, title: lang === 'ru' ? m.titleRu : m.title,
       state: { moduleId: m.id }, path: '/darslik',
       complete: Array.from({ length: m.lessonCount }, (_, i) => i).every((i) => done?.[m.id]?.includes(i)),
     }))
-    : loaded && loadedSubject === subject.id
+    : isV2 && loadedSubject === subject.id
+      ? topics.map((t) => ({
+        id: t.id, title: lang === 'ru' ? t.nameRu : t.nameUz,
+        state: {
+          mode: 'topic' as const,
+          serverSelector: { type: 'topic' as const, topicId: t.id },
+          title: lang === 'ru' ? t.nameRu : t.nameUz,
+        },
+        path: '/test/1', complete: false,
+      }))
+      : loaded && loadedSubject === subject.id
       ? topics.map((t) => ({
         id: t.id, title: lang === 'ru' ? t.nameRu : t.nameUz,
         state: { questionIds: questions.filter((q) => q.topicId === t.id).map((q) => q.id), title: lang === 'ru' ? t.nameRu : t.nameUz },

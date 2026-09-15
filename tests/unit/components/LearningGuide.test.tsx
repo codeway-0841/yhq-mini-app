@@ -1,8 +1,9 @@
 import React from 'react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter, useLocation } from 'react-router-dom'
 import { LearningGuide } from '../../../src/features/dashboard/components/LearningGuide'
+import { config } from '../../../src/shared/config'
 import { resumeRouteState } from '../../../src/features/dashboard/next-step'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useTestSessionStore } from '../../../src/shared/store/useTestSessionStore'
@@ -197,6 +198,38 @@ describe('learning guide', () => {
     guide()
     fireEvent.click(screen.getByRole('button', { name: new RegExp(label) }))
     expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe(path)
+  })
+})
+
+describe('learning guide v2 (metadata-only topics)', () => {
+  beforeEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
+  })
+
+  afterEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = false
+  })
+
+  it('opens server topic sessions without question IDs', () => {
+    useSubjectStore.getState().setSubject('rustili')
+    useQuestionsStore.setState({
+      loaded: false,
+      subjectId: 'rustili',
+      topics: [{ id: 10, nameUz: 'Fonetika', nameRu: 'Фонетика', slug: 'phonetics' }],
+      questions: [],
+    })
+    guide()
+
+    expect(screen.getByRole('heading', { name: 'Fonetika' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: /boshlash/i }))
+    expect(JSON.parse(screen.getByTestId('destination').textContent!)).toEqual({
+      path: '/test/1',
+      state: {
+        mode: 'topic',
+        serverSelector: { type: 'topic', topicId: 10 },
+        title: 'Fonetika',
+      },
+    })
   })
 })
 

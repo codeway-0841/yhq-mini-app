@@ -12,7 +12,7 @@ import {
   Image as ImageIcon,
   CheckCircle2,
 } from 'lucide-react'
-import { api, type AdminDbQuestion, type DbTopic } from '../../../shared/api'
+import { api, type AdminDbQuestion, type AdminQuestionListItem, type DbTopic } from '../../../shared/api'
 import { type SubjectId } from '../../../../shared/subjects'
 import { SUBJECTS } from '../../../shared/config/subjects'
 import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
@@ -26,7 +26,7 @@ interface AdminQuestionsTabProps {
 
 export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
   const [selectedSubject, setSelectedSubject] = useState<SubjectId>('yhq')
-  const [rows, setRows] = useState<AdminDbQuestion[]>([])
+  const [rows, setRows] = useState<AdminQuestionListItem[]>([])
   const [topics, setTopics] = useState<DbTopic[]>([])
   const [meta, setMeta] = useState<{ total: number; withTopic: number } | null>(null)
   const [search, setSearch] = useState('')
@@ -36,7 +36,13 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
   const [toast, setToast] = useState<string | null>(null)
   const [busy, setBusy] = useState(false)
   const [loading, setLoading] = useState(true)
-  const [deleteConfirm, setConfirm] = useState<AdminDbQuestion | null>(null)
+  const [deleteConfirm, setConfirm] = useState<AdminQuestionListItem | null>(null)
+  // Paginatsiya (server-side — ro'yxat javob kalitsiz, 50 tadan)
+  const [page, setPage] = useState(0)
+  const [total, setTotal] = useState(0)
+  const [debouncedSearch, setDebouncedSearch] = useState('')
+  const [detailBusyId, setDetailBusyId] = useState<number | null>(null)
+  const PAGE_SIZE = 50
 
   const showToast = (msg: string) => {
     setToast(msg)
@@ -47,19 +53,25 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
     return SUBJECTS.find((s) => s.id === selectedSubject) ?? SUBJECTS[0]
   }, [selectedSubject])
 
-  const loadAll = useCallback(async (subject: SubjectId) => {
+  const loadAll = useCallback(async (subject: SubjectId, pageNum: number, query: string) => {
     setLoading(true)
     try {
-      const [qs, m, topList] = await Promise.all([
-        api.getAdminQuestions(subject),
+      const [pageRes, m, topList] = await Promise.all([
+        api.getAdminQuestions(subject, {
+          limit: PAGE_SIZE,
+          offset: pageNum * PAGE_SIZE,
+          search: query.trim() || undefined,
+        }),
         api.getQuestionsMeta(subject),
         api.getAdminTopics(subject).catch(() => []),
       ])
-      setRows(qs)
+      setRows(pageRes.rows)
+      setTotal(pageRes.total)
       setMeta(m)
       setTopics(topList)
     } catch {
       setRows([])
+      setTotal(0)
       setMeta({ total: 0, withTopic: 0 })
       setTopics([])
     } finally {
@@ -67,21 +79,30 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
     }
   }, [])
 
+  // Server-side qidiruv (300ms debounce) — yangi so'rov 1-sahifadan
   useEffect(() => {
-    loadAll(selectedSubject)
-  }, [loadAll, selectedSubject])
+    const t = setTimeout(() => {
+      setPage(0)
+      setDebouncedSearch(search)
+    }, 300)
+    return () => clearTimeout(t)
+  }, [search])
 
-  const filtered = useMemo(() => {
-    const q = search.trim().toLowerCase()
-    if (q) {
-      return rows.filter((x) =>
-        String(x.id).includes(q) ||
-        x.questionUz.toLowerCase().includes(q) ||
-        x.questionRu.toLowerCase().includes(q),
-      )
+  useEffect(() => {
+    loadAll(selectedSubject, page, debouncedSearch)
+  }, [loadAll, selectedSubject, page, debouncedSearch])
+
+  // Tahrirlash uchun TO'LIQ qator audit'li detail'dan (ro'yxat kalitsiz)
+  const openEditor = async (row: AdminQuestionListItem) => {
+    setDetailBusyId(row.id)
+    try {
+      setEditing(await api.getAdminQuestion(row.id, selectedSubject))
+    } catch {
+      showToast(lang === 'ru' ? 'Не удалось загрузить вопрос' : 'Savolni yuklab bo‘lmadi')
+    } finally {
+      setDetailBusyId(null)
     }
-    return [...rows].reverse()
-  }, [rows, search])
+  }
 
   const topic = useCallback((topicId: number | null) => {
     if (topicId == null) return '——'
@@ -92,11 +113,11 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
   const refresh = useCallback(async () => {
     setBusy(true)
     try {
-      await loadAll(selectedSubject)
+      await loadAll(selectedSubject, page, debouncedSearch)
     } finally {
       setBusy(false)
     }
-  }, [loadAll, selectedSubject])
+  }, [loadAll, selectedSubject, page, debouncedSearch])
 
   return (
     <div className="p-4 space-y-4">
@@ -148,6 +169,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               type="button"
               onClick={() => {
                 setSelectedSubject(sub.id)
+                setPage(0)
                 haptics.impact('light')
               }}
               className={`px-3.5 py-2.5 rounded-2xl text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-all flex-shrink-0 ${
@@ -197,7 +219,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
         </div>
       ) : (
         <div className="space-y-2">
-          {filtered.map((q) => (
+          {rows.map((q) => (
             <div key={q.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
               <div className="flex gap-3 items-start justify-between">
                 <div className="flex-1 min-w-0">
@@ -212,8 +234,8 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                   <p className="text-[13px] text-pfg font-medium line-clamp-2 mb-1.5">
                     {lang === 'ru' ? q.questionRu : q.questionUz}
                   </p>
-                  <p className="text-[11px] text-pmuted">
-                    To'g'ri javob: <b className="text-pprimary font-semibold">{q.correctAnswer}</b>
+                  <p className="text-[11px] text-pmuted italic">
+                    Javob kaliti ro'yxatda yashirin — tahrirlashda ochiladi
                   </p>
                   {q.image && (
                     <div className="mt-2 flex items-center gap-2">
@@ -234,8 +256,9 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 </div>
                 <div className="flex flex-col gap-1.5 flex-shrink-0">
                   <button
-                    onClick={() => setEditing(q)}
-                    className="p-2 bg-psurface rounded-xl active:scale-90 transition-transform shadow-xs"
+                    onClick={() => openEditor(q)}
+                    disabled={detailBusyId === q.id}
+                    className="p-2 bg-psurface rounded-xl active:scale-90 transition-transform shadow-xs disabled:opacity-50"
                     title="Tahrirlash"
                   >
                     <Pencil size={13} className="text-pblue" />
@@ -252,7 +275,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
             </div>
           ))}
 
-          {filtered.length === 0 && (
+          {rows.length === 0 && (
             <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
               <p className="text-sm font-semibold text-pfg">Savol topilmadi</p>
               <p className="text-xs text-pmuted mt-1">
@@ -263,6 +286,33 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 className="mt-3 bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 px-4 py-2 rounded-xl text-xs font-semibold"
               >
                 + Yangi savol qo'shish
+              </button>
+            </div>
+          )}
+
+          {/* Paginatsiya — server-side (kalitsiz ro'yxat) */}
+          {total > PAGE_SIZE && (
+            <div className="flex items-center justify-center gap-3 pt-1">
+              <button
+                type="button"
+                disabled={page === 0}
+                onClick={() => setPage((p) => Math.max(0, p - 1))}
+                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-all shadow-xs"
+                aria-label="Oldingi sahifa"
+              >
+                ‹
+              </button>
+              <span className="text-xs font-semibold text-pmuted tabular-nums">
+                {page + 1} / {Math.max(1, Math.ceil(total / PAGE_SIZE))} · {total} ta
+              </span>
+              <button
+                type="button"
+                disabled={(page + 1) * PAGE_SIZE >= total}
+                onClick={() => setPage((p) => p + 1)}
+                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-all shadow-xs"
+                aria-label="Keyingi sahifa"
+              >
+                ›
               </button>
             </div>
           )}
