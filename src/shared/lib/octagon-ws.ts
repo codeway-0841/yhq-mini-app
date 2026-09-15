@@ -1,12 +1,23 @@
 import type { LeaderboardEntry } from '../api'
 
+/** Duel savol payload'i — server WS orqali (javob kalitisiz).
+ *  Client full-bank lookup'siz chizadi (question-bank-protection v2). */
+export interface DuelQuestion {
+  questionId: number
+  textUz: string
+  textRu: string
+  optionsUz: Record<string, string>
+  optionsRu: Record<string, string>
+  image: string | null
+}
+
 export type OctagonMsg =
   /** opponentAvatar: '/api/avatar/:uid' (custom) | TG photo_url | null;
    *  opponentFrame: avatar-frames config id'si (do'kon kosmetikasi) | null */
   | { type: 'matched';      matchId: string; opponentName: string; opponentAvatar: string | null; opponentFrame: string | null; roundCount: number }
   /** M-6: server-generatsiya duel PIN'i (duelCode:'new' so'rovining javobi) */
   | { type: 'duel_created'; code: string }
-  | { type: 'question';     index: number; questionId: number; timeLimit: number }
+  | { type: 'question';     index: number; questionId: number; timeLimit: number; question?: DuelQuestion | null }
   | { type: 'answer_ack';   index: number; correct: boolean; correctOptionId: string }
   | { type: 'opp_answered'; index: number }
   | { type: 'round_result'; index: number; yourScore: number; oppScore: number; correctOptionId: string }
@@ -16,7 +27,7 @@ export type OctagonMsg =
   | { type: 'match_state'; matchId: string; index: number; questionId: number | null
       timeLimit: number; roundCount: number; yourScore: number; oppScore: number
       opponentName: string; yourAnswer: string | null; oppAnswered: boolean
-      correctOptionId: string | null }
+      correctOptionId: string | null; question?: DuelQuestion | null }
   | { type: 'reaction'; senderId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
   | { type: 'online_players'; players: LeaderboardEntry[]; count: number }
   | { type: 'opp_disconnected' }

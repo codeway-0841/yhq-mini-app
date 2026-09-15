@@ -13,6 +13,7 @@ vi.mock('react-router-dom', async (importOriginal) => {
 
 import TopicsPage from '../../../src/features/topics/TopicsPage'
 import { config } from '../../../src/shared/config'
+import { api } from '../../../src/shared/api'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
@@ -156,5 +157,18 @@ describe('TopicsPage v2 (metadata-only)', () => {
         title: 'Kinematika',
       },
     })
+  })
+
+  it('progress chizig\'i server agregatidan chiqadi (savollarsiz)', async () => {
+    useAppStore.setState({ user: { id: 'u1', firstName: 'A' } as never })
+    const progressSpy = vi.spyOn(api, 'getTopicProgress').mockResolvedValue({
+      subjectId: 'fizika',
+      topics: [{ topicId: 1, solved: 1 }],
+    })
+    setFizikaMeta()
+    render(<TopicsPage />)
+
+    expect(await screen.findByText('1/2')).toBeTruthy()
+    expect(progressSpy).toHaveBeenCalledWith('u1', 'fizika')
   })
 })

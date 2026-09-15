@@ -39,7 +39,17 @@ export const SAME_PAIR_24H_CAP = 5
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
-export type QuestionPoolItem = { id: number; correct: string }
+export type QuestionPoolItem = {
+  id: number
+  correct: string
+  /** Duel savol matni WS orqali keladi (client full-bank lookup'siz).
+   *  Faqat production pool'da to'ldiriladi; test pool'lar minimal qoladi. */
+  textUz?: string
+  textRu?: string
+  optionsUz?: Record<string, string>
+  optionsRu?: Record<string, string>
+  image?: string | null
+}
 export type OctagonPools = Map<string, QuestionPoolItem[]>
 
 export interface Player {
@@ -150,9 +160,40 @@ export async function loadOctagonPools(): Promise<OctagonPools> {
   const pools: OctagonPools = new Map()
   for (const dsId of new Set(SUBJECT_REGISTRY.map((s) => s.dataSourceId))) {
     const rows = await getProvider(dsId).getAllQuestions()
-    pools.set(dsId, rows.map((r) => ({ id: r.id, correct: r.correctAnswer })))
+    pools.set(dsId, rows.map((r) => ({
+      id: r.id,
+      correct: r.correctAnswer,
+      textUz: r.questionUz,
+      textRu: r.questionRu,
+      optionsUz: r.optionsUz as Record<string, string>,
+      optionsRu: r.optionsRu as Record<string, string>,
+      image: (r.image as string | null) ?? null,
+    })))
   }
   return pools
+}
+
+/** WS `question`/`match_state` payload — javob kalitisiz (kalit round_result/ack'da). */
+export interface DuelQuestionPayload {
+  questionId: number
+  textUz: string
+  textRu: string
+  optionsUz: Record<string, string>
+  optionsRu: Record<string, string>
+  image: string | null
+}
+
+export function questionPayload(pool: QuestionPoolItem[], questionId: number): DuelQuestionPayload | null {
+  const q = pool.find((item) => item.id === questionId)
+  if (!q || q.textUz === undefined || q.textRu === undefined || !q.optionsUz || !q.optionsRu) return null
+  return {
+    questionId: q.id,
+    textUz: q.textUz,
+    textRu: q.textRu,
+    optionsUz: q.optionsUz,
+    optionsRu: q.optionsRu,
+    image: q.image ?? null,
+  }
 }
 
 export async function reloadOctagonPools(): Promise<void> {
@@ -306,7 +347,7 @@ export function startRound(match: Match): void {
   match.roundState = { answers: new Map(), timer, resolved: false, startedAt: Date.now(), paused: false, remainingMs: ROUND_TIMEOUT }
 
   for (const p of match.players) {
-    send(p.ws, { type: 'question', index, questionId, timeLimit: ROUND_TIMEOUT })
+    send(p.ws, { type: 'question', index, questionId, timeLimit: ROUND_TIMEOUT, question: questionPayload(match.pool, questionId) })
   }
 }
 
@@ -441,6 +482,7 @@ export function rejoinMatch(ws: WebSocket, userId: string): boolean {
     matchId:      match.id,
     index:        match.round,
     questionId:   active ? match.questionIds[match.round] : null,
+    question:     active ? questionPayload(match.pool, match.questionIds[match.round]!) : null,
     timeLimit:    active ? Math.max(0, ROUND_TIMEOUT - (Date.now() - rs.startedAt)) : ROUND_TIMEOUT,
     roundCount:   match.questionIds.length,
     yourScore:    match.scores.get(userId) ?? 0,

@@ -2,6 +2,7 @@
  * Duel state machine — sof funksiya (WebSocket UI'dan ajratilgan, unit-testable).
  * Server xabarlari (OctagonMsg) useDuelConnection'da Action'larga xaritalanadi.
  */
+import type { DuelQuestion } from '../../shared/lib/octagon-ws'
 
 export type Phase = 'idle' | 'searching' | 'matched' | 'in_round' | 'match_end'
 
@@ -12,6 +13,8 @@ export interface DuelState {
   /** Raqib avatar ramkasi — matched payload'dan (do'kon kosmetikasi, avatar-frames id) */
   opponentFrame: string | null
   roundCount: number; roundIndex: number; currentQuestionId: number | null
+  /** Joriy savol WS payload'dan (full-bank lookup'siz) — eski serverda null */
+  currentQuestion: DuelQuestion | null
   yourScore: number; oppScore: number
   selected: string | null; ackCorrect: boolean | null; oppAnswered: boolean
   /** Server reveal — javob kaliti local savollarda ENDI YO'Q, ack'dan olinadi */
@@ -24,7 +27,7 @@ export type DuelAction =
   | { type: 'SEARCHING' }
   | { type: 'CANCEL' }
   | { type: 'MATCHED';      matchId: string; opponentName: string; opponentAvatar: string | null; opponentFrame: string | null; roundCount: number }
-  | { type: 'START_ROUND';  index: number; questionId: number; timeLimit: number }
+  | { type: 'START_ROUND';  index: number; questionId: number; timeLimit: number; question?: DuelQuestion | null }
   | { type: 'SELECT';       optionId: string }
   | { type: 'ANSWER_ACK';   correct: boolean; correctOptionId: string }
   | { type: 'OPP_ANSWERED' }
@@ -37,13 +40,13 @@ export type DuelAction =
       timeLimit: number
       roundCount: number; yourScore: number; oppScore: number
       opponentName: string; yourAnswer: string | null; oppAnswered: boolean
-      correctOptionId: string | null }
+      correctOptionId: string | null; question?: DuelQuestion | null }
   | { type: 'TOAST';        msg: string }
   | { type: 'CLEAR_TOAST' }
 
 export const DUEL_INIT: DuelState = {
   phase: 'idle', matchId: null, opponentName: null, opponentAvatar: null, opponentFrame: null,
-  roundCount: 0, roundIndex: 0, currentQuestionId: null,
+  roundCount: 0, roundIndex: 0, currentQuestionId: null, currentQuestion: null,
   yourScore: 0, oppScore: 0,
   selected: null, ackCorrect: null, ackCorrectOptionId: null,
   oppAnswered: false, oppWait: null, deadline: null,
@@ -55,7 +58,7 @@ export function duelReducer(s: DuelState, a: DuelAction): DuelState {
     case 'SEARCHING':        return { ...DUEL_INIT, phase: 'searching' }
     case 'CANCEL':           return { ...DUEL_INIT }
     case 'MATCHED':          return { ...s, phase: 'matched', matchId: a.matchId, opponentName: a.opponentName, opponentAvatar: a.opponentAvatar, opponentFrame: a.opponentFrame, roundCount: a.roundCount }
-    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, selected: null, ackCorrect: null, ackCorrectOptionId: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
+    case 'START_ROUND':      return { ...s, phase: 'in_round', roundIndex: a.index, currentQuestionId: a.questionId, currentQuestion: a.question ?? null, selected: null, ackCorrect: null, ackCorrectOptionId: null, oppAnswered: false, deadline: Date.now() + a.timeLimit }
     case 'SELECT':           return { ...s, selected: a.optionId }
     case 'ANSWER_ACK':       return { ...s, ackCorrect: a.correct, ackCorrectOptionId: a.correctOptionId }
     case 'OPP_ANSWERED':     return { ...s, oppAnswered: true }
@@ -66,6 +69,7 @@ export function duelReducer(s: DuelState, a: DuelAction): DuelState {
     case 'OPP_BACK':         return { ...s, oppWait: null }
     case 'SYNC':             return { ...DUEL_INIT, phase: 'in_round', matchId: a.matchId, opponentName: a.opponentName,
                                       roundCount: a.roundCount, roundIndex: a.index, currentQuestionId: a.questionId,
+                                      currentQuestion: a.question ?? null,
                                       yourScore: a.yourScore, oppScore: a.oppScore,
                                       selected: a.yourAnswer, oppAnswered: a.oppAnswered,
                                       ackCorrect: a.yourAnswer != null && a.correctOptionId != null ? a.yourAnswer === a.correctOptionId : null,

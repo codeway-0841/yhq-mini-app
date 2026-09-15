@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAppStore }    from '../../shared/store/useAppStore'
 import { useT }           from '../../shared/i18n'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import type { Question } from '../../shared/api'
 import { goBack, registerModal } from '../../shared/lib/navigation'
 import { DuelHeader }       from './components/DuelHeader'
 import { DuelBanners }      from './components/DuelBanners'
@@ -25,7 +26,8 @@ export default function OctagonPage() {
   const user     = useAppStore((s) => s.user)
   const settings = useAppStore((s) => s.settings)
   const questions = useQuestionsStore((s) => s.questions)
-  const tt = useT(settings.language)
+  const lang = settings.language
+  const tt = useT(lang)
 
   const [creatingRoom, setCreatingRoom] = useState(false)
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
@@ -61,9 +63,21 @@ export default function OctagonPage() {
     }
   }, [s.phase, exitToIdle])
 
-  const currentQ = s.currentQuestionId !== null
-    ? questions.find((q) => q.id === s.currentQuestionId) ?? null
-    : null
+  // Joriy savol WS payload'dan (server-owned duel delivery) — full-bank
+  // lookup faqat eski server bilan qisqa moslik oynasi uchun fallback.
+  const duelQuestion = s.currentQuestion
+  const currentQ: Question | null = duelQuestion
+    ? {
+        id: duelQuestion.questionId,
+        text: lang === 'ru' ? duelQuestion.textRu : duelQuestion.textUz,
+        image: duelQuestion.image,
+        options: Object.entries(lang === 'ru' ? duelQuestion.optionsRu : duelQuestion.optionsUz)
+          .map(([id, text]) => ({ id, text })),
+        topicId: null,
+      }
+    : s.currentQuestionId !== null
+      ? questions.find((q) => q.id === s.currentQuestionId) ?? null
+      : null
 
   const isLiveMatch = s.phase === 'in_round' || s.phase === 'matched' || s.phase === 'match_end'
 

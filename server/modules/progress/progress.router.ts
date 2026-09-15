@@ -236,4 +236,26 @@ router.post(
   }),
 )
 
+// GET /api/progress/:userId/topic-progress?subjectId=yhq
+// Mavzu kesimida yechilganlar (v2 TopicsPage progress chiziqlari).
+// Faqat aggregate — savol ID/matn/javob YO'Q. requireSelf ostida.
+router.get(
+  '/progress/:userId/topic-progress',
+  validate({
+    query: z.object({
+      subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
+    }),
+  }),
+  wrap(async (req, res) => {
+    const uid = parseUserId(req.params['userId'])
+    if (!uid) throw new AppError(400, 'Invalid userId')
+
+    const subjectId = req.query['subjectId'] as string
+    const subject = resolveSubject(subjectId)
+    const counts = await progressRepository.getTopicSolvedCounts(uid, subject.id, subject.dataSourceId)
+    res.set('Cache-Control', 'private, no-store')
+    res.json({ subjectId: subject.id, topics: counts })
+  }),
+)
+
 export default router

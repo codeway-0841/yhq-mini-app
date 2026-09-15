@@ -4,6 +4,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
+import { api } from '../../shared/api'
 import { config } from '../../shared/config'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
@@ -214,6 +215,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const retry = useQuestionsStore((s) => s.retry)
   const tt = useT(settings.language)
   const lang = settings.language
+  const userId = useAppStore((s) => s.user?.id)
 
   // v2: mavzular metadata'dan, ochilish server topic session orqali.
   // Progress chiziqlari uchun savol-darajali mapping kerak — metadata'da yo'q,
@@ -235,15 +237,31 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     }
   }, [isV2, loaded, loading, error, storedSubjectId, lang, subjectId, loadQs, loadTopics, topics.length, topicsRetry])
 
+  // v2 progress agregati (server, question-level mapping'siz)
+  const [solvedByTopic, setSolvedByTopic] = useState<Record<number, number>>({})
+  useEffect(() => {
+    if (!isV2 || !userId || userId === '0') return
+    let cancelled = false
+    api.getTopicProgress(userId, subjectId)
+      .then((r) => {
+        if (!cancelled) setSolvedByTopic(Object.fromEntries(r.topics.map((t) => [t.topicId, t.solved])))
+      })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [isV2, userId, subjectId])
+
   const rows = useMemo(() => {
     if (isV2) {
       return sortTopicsForTickets(subjectId, topics)
-        .map((t) => ({
-          topic: t,
-          ids: [] as number[],
-          done: 0,
-          count: t.questionCount ?? 0,
-        }))
+        .map((t) => {
+          const count = t.questionCount ?? 0
+          return {
+            topic: t,
+            ids: [] as number[],
+            done: Math.min(solvedByTopic[t.id] ?? 0, count),
+            count,
+          }
+        })
         .filter((r) => r.count > 0)
     }
     const byTopic = new Map<number, number[]>()
@@ -271,7 +289,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         }
       })
       .filter((r) => r.ids.length > 0)
-  }, [isV2, questions, topics, solvedQuestions, subjectId])
+  }, [isV2, solvedByTopic, questions, topics, solvedQuestions, subjectId])
 
   const startTopic = (topicId: number, title: string, ids: number[]) => {
     navigate('/test/1', isV2
@@ -328,7 +346,8 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       <div className="flex flex-col gap-2.5">
         {rows.map(({ topic, ids, done, count }) => {
           const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
-          const pct = ids.length > 0 ? Math.round((done / ids.length) * 100) : 0
+          const shownDone = Math.min(done, count)
+          const pct = count > 0 ? Math.round((shownDone / count) * 100) : 0
           return (
             <button
               key={topic.id}
@@ -341,20 +360,14 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="truncate text-[15px] font-semibold text-pfg">{name}</p>
-                {isV2 ? (
-                  <p className="mt-1 text-[11px] font-semibold text-pmuted tabular-nums">
-                    {count} {tt('question')}
-                  </p>
-                ) : (
-                  <div className="mt-1.5 flex items-center gap-2">
-                    <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
-                      <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
-                    </div>
-                    <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
-                      {done}/{ids.length}
-                    </span>
+                <div className="mt-1.5 flex items-center gap-2">
+                  <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
+                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
                   </div>
-                )}
+                  <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
+                    {shownDone}/{count}
+                  </span>
+                </div>
               </div>
               <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle shrink-0" />
             </button>

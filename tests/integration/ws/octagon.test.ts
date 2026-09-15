@@ -12,18 +12,15 @@ import { createApp } from '../../../server/app'
 import { WebSocketServer } from 'ws'
 import { attachOctagon } from '../../../server/octagon'
 
-const TEST_QUESTION_POOL = [
-  { id: 1,  correct: 'A' },
-  { id: 2,  correct: 'B' },
-  { id: 3,  correct: 'C' },
-  { id: 4,  correct: 'A' },
-  { id: 5,  correct: 'B' },
-  { id: 6,  correct: 'C' },
-  { id: 7,  correct: 'A' },
-  { id: 8,  correct: 'B' },
-  { id: 9,  correct: 'C' },
-  { id: 10, correct: 'A' },
-]
+const TEST_QUESTION_POOL = Array.from({ length: 10 }, (_, i) => ({
+  id: i + 1,
+  correct: ['A', 'B', 'C'][i % 3] as string,
+  textUz: `Savol ${i + 1}`,
+  textRu: `Вопрос ${i + 1}`,
+  optionsUz: { A: 'variant-a', B: 'variant-b', C: 'variant-c' },
+  optionsRu: { A: 'вариант-а', B: 'вариант-б', C: 'вариант-в' },
+  image: null,
+}))
 
 let server: http.Server
 let port: number
@@ -120,6 +117,40 @@ describe('Octagon matchmaking + first round', () => {
     expect(q1['index']).toBe(0)
     expect(q2['index']).toBe(0)
     expect(typeof q1['questionId']).toBe('number')
+
+    ws1.close()
+    ws2.close()
+  })
+
+  it('question message carries display payload without the answer key (v2 bank decoupling)', async () => {
+    const ws1 = wsConnect('333')
+    const ws2 = wsConnect('444')
+
+    await Promise.all([
+      new Promise<void>((r) => ws1.on('open', r)),
+      new Promise<void>((r) => ws2.on('open', r)),
+    ])
+
+    const matchedP1 = waitForMessage(ws1, 'matched')
+    const matchedP2 = waitForMessage(ws2, 'matched')
+
+    ws1.send(JSON.stringify({ type: 'join_queue', userId: '333', name: 'P3' }))
+    ws2.send(JSON.stringify({ type: 'join_queue', userId: '444', name: 'P4' }))
+
+    await Promise.all([matchedP1, matchedP2])
+
+    const q = await waitForMessage(ws1, 'question')
+    const payload = q['question'] as Record<string, unknown>
+
+    // Client full-bank lookup'siz chizadi — matn+variantlar shu yerda
+    expect(payload['questionId']).toBe(q['questionId'])
+    expect(typeof payload['textUz']).toBe('string')
+    expect(typeof payload['textRu']).toBe('string')
+    expect(payload['optionsUz']).toBeDefined()
+    expect(payload['optionsRu']).toBeDefined()
+    // Javob kaliti HECH QACHON ochiq xabarda bo'lmaydi
+    expect('correct' in payload).toBe(false)
+    expect('correctAnswer' in payload).toBe(false)
 
     ws1.close()
     ws2.close()

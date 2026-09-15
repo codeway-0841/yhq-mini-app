@@ -68,3 +68,45 @@ describe('GET /api/progress/mistakes/overview (v2 Top-10 safe launch)', () => {
     }
   })
 })
+
+describe('GET /api/progress/:userId/topic-progress (v2 aggregate)', () => {
+  beforeEach(() => vi.restoreAllMocks())
+
+  function topicApp(userId?: string) {
+    const instance = express()
+    if (userId) {
+      instance.use((req, _res, next) => { (req as { userId?: string }).userId = userId; next() })
+    }
+    instance.use('/api', progressRouter)
+    instance.use(errorHandler)
+    return instance
+  }
+
+  it('returns per-topic solved counts without question IDs or answers', async () => {
+    vi.spyOn(progressRepository, 'getTopicSolvedCounts').mockResolvedValue([
+      { topicId: 10, solved: 4 },
+      { topicId: 20, solved: 1 },
+    ])
+
+    const res = await request(topicApp('12345'))
+      .get('/api/progress/12345/topic-progress?subjectId=yhq')
+      .expect(200)
+
+    expect(res.headers['cache-control']).toBe('private, no-store')
+    expect(res.body).toEqual({
+      subjectId: 'yhq',
+      topics: [
+        { topicId: 10, solved: 4 },
+        { topicId: 20, solved: 1 },
+      ],
+    })
+  })
+
+  it('rejects unknown subjects before touching the bank', async () => {
+    const spy = vi.spyOn(progressRepository, 'getTopicSolvedCounts')
+    await request(topicApp('user-1'))
+      .get('/api/progress/user-1/topic-progress?subjectId=nope')
+      .expect(400)
+    expect(spy).not.toHaveBeenCalled()
+  })
+})

@@ -46,6 +46,20 @@ describe('duelReducer', () => {
     expect(s.deadline).toBeGreaterThan(Date.now())
   })
 
+  it('START_ROUND/SYNC — WS savol payload saqlanadi (full-bank lookup shart emas)', () => {
+    const question = {
+      questionId: 7, textUz: 'Savol', textRu: 'Вопрос',
+      optionsUz: { A: 'a' }, optionsRu: { A: 'а' }, image: null,
+    }
+    const s = duelReducer(DUEL_INIT, { type: 'START_ROUND', index: 0, questionId: 7, timeLimit: 20_000, question })
+    expect(s.currentQuestion).toEqual(question)
+    expect(s.currentQuestionId).toBe(7)
+
+    // Payload'siz eski server — null, UI fallback'ga tushadi
+    const legacy = duelReducer(DUEL_INIT, { type: 'START_ROUND', index: 0, questionId: 7, timeLimit: 20_000 })
+    expect(legacy.currentQuestion).toBeNull()
+  })
+
   it('ANSWER_ACK — to`g`ri variant id si saqlanadi (reveal faqat serverdan)', () => {
     const s = duelReducer({ ...inRound, selected: 'B' }, { type: 'ANSWER_ACK', correct: true, correctOptionId: 'B' })
     expect(s.ackCorrect).toBe(true)

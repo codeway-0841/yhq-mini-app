@@ -181,6 +181,63 @@ Still open: non-yhq Biletlar per-topic UI (+product decision), TopicsPage
 server progress aggregate, Octagon UI metadata, offline policy (§2.3),
 Web/TG/APK smoke, staged contraction, observe/enforce.
 
+## 0.5. Continuation checkpoint (2026-09-16, senior pass 4)
+
+Non-yhq Biletlar decision + implementation (no prod deploy/migration):
+
+- Senior qaror: per-topic UI SAQLANADI — global 30-talik slice'ga o'tish
+  katta UI o'zgarish bo'lardi. Server'da yangi endpoint kerak emas: non-yhq
+  "bilet" mazmunan mavzu testi = mavjud server `topic` selector.
+- `Biletlar` v2 endi barcha fanlarda: yhq manifest'dan, boshqa fanlar topics
+  metadata'dan per-topic kartalar (chapter filtri ham metadatadan ishlaydi);
+  ochilish server `topic` selector (cap server'da, master ID'siz);
+  errors tab barcha v2'da yashirin (XatolarPage SSOT).
+- Doc discipline davom etmoqda: sessiya checkpoint'lari §0.1–§0.5, commitlar
+  `e1609186`, `497f5668`, `078ff9f4` master'da.
+
+Verification in this session:
+
+- `npm test` → 224 files / 1682 tests passed;
+- `npx tsc -p tsconfig.json --noEmit` → passed;
+- `npx tsc -p tsconfig.server.json --noEmit` → passed;
+- `npm run lint` → 0 errors (v2 fayllarda warning YO'Q);
+- `git diff --check` → passed.
+
+Still open: TopicsPage progress agregati, Octagon UI metadata, offline
+siyosati (§2.3), Web/TG/APK smoke, staged contraction, observe/enforce.
+
+## 0.6. Continuation checkpoint (2026-09-16, senior pass 5)
+
+Qolgan ishlar yopildi (no prod deploy/migration):
+
+- Octagon bank-decoupling: WS `question`/`match_state` endi display payload
+  (`textUz/Ru`, `optionsUz/Ru`, `image` — kalitsiz) olib keladi; pool'lar
+  load'da to'ldiriladi; client reducer'da saqlaydi, RoundScreen bank
+  lookup'siz chizadi (eski server uchun fallback saqlangan); pool type
+  backward-compat (test pool'lar minimal qoladi);
+- TopicsPage progress agregati: yangi `GET /progress/:userId/topic-progress`
+  (requireSelf, aggregate-only, no-store) + `api.getTopicProgress`; v2
+  progress chiziqlari qaytdi (done/count, server haqiqati);
+- Offline siyosat qarori: v2 §2.3 variant 1 (javobsiz pack + queued answers);
+  eski spec'ga AMENDMENT yozildi (answer-pack'lar qo'llab-quvvatlanmaydi);
+- Legacy-inventar (Phase 3 stop condition): v2 rejimda full-bank payload'ga
+  muhtoj non-admin consumer QOLMADI — boot/login/dashboard/Biletlar/
+  Statistika/TopicsPage/LearningGuide/Adaptive/Speed metadata-only;
+  TestPage + TopicsPage/Adaptive legacy branch'lari flag ortida (contraction
+  ularni o'chiradi — 23.1 runbook); admin `reload()` kesh-yangilash uchun saqlangan;
+- Rollout runbook §23.1 yozildi (0→5 qadam, rollback har qadamda 1 env).
+
+Verification in this session:
+
+- unit: octagon-duel (payload), topics-page (progress), progress-overview
+  (aggregate) — barchasi yashil (full gate pastda);
+- integration (real WS): octagon.test.ts + octagon-rejoin.test.ts — 6/6,
+  jumladan yangi payload/kalit-yo'qligi assertion'lari;
+- `npm test`, `tsc×2`, `lint`, `git diff --check` — pastda.
+
+Still open: Web/TG/APK smoke (jonli muhit), staged contraction (runbook
+bo'yicha — qaror + oyna kerak), observe/enforce (Phase 5/6).
+
 ## 1. Executive decision
 
 KIVVI must move from **public full-bank delivery** to **authenticated, server-owned test sessions with bounded delivery**.
@@ -1227,6 +1284,45 @@ Rollback
 ```
 
 Do not finish with only “Done”.
+
+## 23.1. Staged rollout runbook (2026-09-16)
+
+Tartib BUZILSA prod yotadi — har qadam keyingisining sharti.
+
+```text
+QADAM 0 — Tayyorgarlik (joriy holat, prod'da hech narsa o'zgarmaydi)
+  VITE_TEST_SESSIONS_V2=false (default), LEGACY_*=true (default).
+  Barcha v2 yo'llar flag ortida, testlar yashil.
+
+QADAM 1 — Staging sinovi
+  Staging env: VITE_TEST_SESSIONS_V2=true, LEGACY_*=true.
+  Tekshiruv: random/topic/ticket/lesson/module/exam/mock/marathon/adaptive/
+    saved/mistakes/single oqimlari; resume; account switch; speed timeout;
+    duel (WS payload); admin list/detail; 410 YO'Q (legacy ochiq).
+  Real-DB integration: npm run test:integration (test DB'da migrate!).
+
+QADAM 2 — Prod canary (faqat client flag, ichki cohort)
+  VITE_TEST_SESSIONS_V2=true faqat ichki user'larda (env segmentatsiya
+  imkoni bo'lmasa — barcha prod userlarda, LEGACY_*=true bilan: legacy
+  fallback jonli, risk minimal).
+  Kuzatuv (1 representative hafta): session completion, p50/p95 answer,
+    retry rate, 5xx, questions_fullbank_abuse audit, admin_question_detail.
+
+QADAM 3 — Contraction (faqat 1–2 YASHIL bo'lsa)
+  Avval LEGACY_QUESTION_BANK_ENABLED=false (GET /questions → 410).
+  Eski APK/client'lar 410 oladi — update banner + 1 release oynasi.
+  Keyin LEGACY_RESULT_ENABLED=false (POST /result → 410).
+  Har biri alohida, orqa qaytish bir env o'zgarishi.
+
+QADAM 4 — Observe (majburiy pauza)
+  Kamida 1 imtihon sikli: extraction signallari taqsimoti (power learner
+  500+/kun, shared school IP, TG/APK switch) — false-positive'siz.
+
+QADAM 5 — Enforce (Phase 6, alohida qaror bilan)
+```
+
+Rollback (har qadamda): flag'ni qaytarish = 1 env o'zgarishi, schema
+o'zgarmagan — migration rollback kerak emas.
 
 ## 24. Final principle
 

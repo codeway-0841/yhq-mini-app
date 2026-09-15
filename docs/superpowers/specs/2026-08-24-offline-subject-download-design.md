@@ -1,5 +1,15 @@
 # Fanni oflayn yuklab olish — dizayn
 
+> **AMENDMENT (2026-09-16, question-bank-protection v2):** ushbu hujjatdagi
+> "javob kaliti bilan full-pack + offline darhol feedback" yondashuvi v2
+> xavfsizlik maqsadiga ZID — qabul qilinmagan. Qabul qilingan siyosat
+> (v2 spec §2.3, variant 1): **offline pack'lar FAQAT savol matni** (javobsiz),
+> javoblar navbatga yozilib reconnect'da server tasdig'idan keyin feedback
+> ochiladi. Darhol offline feedback kerak bo'lgan kichik expring pack'lar
+> alohida product qarori bilan, "kalit extractable" qabul qilib amalga
+> oshiriladi. Full-subject answer pack'lar qo'llab-quvvatlanmaydi.
+> Quyidagi asl matn tarixiy — implementatsiya uchun AMENDMENT ustuvor.
+
 > Sessiya: 2026-08-24. Brainstorming orqali kelishilgan (skrinshot-mockup bilan
 > tasdiqlangan). Implementatsiyadan oldin foydalanuvchi shu faylni ko'rib
 > chiqishi kerak.

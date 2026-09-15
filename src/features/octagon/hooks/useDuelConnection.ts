@@ -68,7 +68,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
         setDuelCode(msg.code)
         duelCodeRef.current = msg.code
         break
-      case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit }); break
+      case 'question':         dispatch({ type: 'START_ROUND',  index: msg.index, questionId: msg.questionId, timeLimit: msg.timeLimit, question: msg.question ?? null }); break
       case 'answer_ack':       dispatch({ type: 'ANSWER_ACK',   correct: msg.correct, correctOptionId: msg.correctOptionId }); break
       case 'opp_answered':     dispatch({ type: 'OPP_ANSWERED' }); break
       case 'round_result':     dispatch({ type: 'ROUND_RESULT', yourScore: msg.yourScore, oppScore: msg.oppScore, correctOptionId: msg.correctOptionId }); break
@@ -136,7 +136,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
         break
       case 'match_state':
         dispatch({ type: 'SYNC', matchId: msg.matchId, index: msg.index, questionId: msg.questionId,
-                   timeLimit: msg.timeLimit,
+                   timeLimit: msg.timeLimit, question: msg.question ?? null,
                    roundCount: msg.roundCount, yourScore: msg.yourScore, oppScore: msg.oppScore,
                    opponentName: msg.opponentName, yourAnswer: msg.yourAnswer, oppAnswered: msg.oppAnswered,
                    correctOptionId: msg.correctOptionId })

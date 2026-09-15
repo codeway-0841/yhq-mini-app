@@ -695,6 +695,13 @@ export const api = {
   reviewCard: (userId: string, data: { subjectId: string; questionId: number; ef: number; interval: number; reps: number; dueAt: number }) =>
     request<{ ok: true }>('POST', `/progress/${uid(userId)}/cards/review`, data),
 
+  /** Mavzu kesimida yechilganlar (v2 TopicsPage progress) — faqat aggregate */
+  getTopicProgress: (userId: string, subjectId: string) =>
+    request<{ subjectId: string; topics: Array<{ topicId: number; solved: number }> }>(
+      'GET',
+      `/progress/${uid(userId)}/topic-progress?subjectId=${encodeURIComponent(subjectId)}`
+    ),
+
   // ── Do'kon / Coins (#40) — userId server'da sessiyadan (client yubormaydi) ──
   purchaseItem: (data: { itemId: string; purchaseId: string }) =>
     request<PurchaseResponse>('POST', '/coins/purchase', data),

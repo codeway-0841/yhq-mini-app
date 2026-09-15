@@ -46,10 +46,13 @@ export default function Biletlar() {
   const questionsError   = useQuestionsStore((s) => s.error)
   const subjectId        = useSubjectStore((s) => s.subjectId)
 
-  // v2: faqat yhq global bilet katalogi server manifest'dan (full-bank YO'Q).
-  // Boshqa fanlar per-topic bilet UI'ga tayangan — server global slice bilan
-  // mos emas, ular legacy'da qoladi (keyingi bosqich).
-  const isV2 = config.testSessionsV2Enabled && subjectId === 'yhq'
+  // v2: full-bank YO'Q.
+  //   - yhq: global bilet katalogi server manifest'dan (dedup-aniq sonlar);
+  //   - boshqa fanlar: per-topic kartalar topics metadata'dan, ochilish server
+  //     `topic` selector orqali (alohida ticket endpoint kerak emas — topic
+  //     session o'sha bilet mazmuni).
+  const isV2 = config.testSessionsV2Enabled
+  const isYhq = subjectId === 'yhq'
 
   const [catalog, setCatalog] = useState<{
     ticketSize: number; ticketCount: number; totalQuestions: number
@@ -62,11 +65,18 @@ export default function Biletlar() {
     let cancelled = false
     setCatalog(null)
     setCatalogFailed(false)
-    api.getTicketCatalog(subjectId, settings.language)
-      .then((c) => { if (!cancelled) setCatalog(c) })
-      .catch(() => { if (!cancelled) setCatalogFailed(true) })
+    if (isYhq) {
+      api.getTicketCatalog(subjectId, settings.language)
+        .then((c) => { if (!cancelled) setCatalog(c) })
+        .catch(() => { if (!cancelled) setCatalogFailed(true) })
+    } else {
+      // Non-yhq katalog — topics metadata (questionCount bilan); tayyorlik
+      // store'dagi topics'dan bilinadi, alohida marker shart emas.
+      void useQuestionsStore.getState().loadTopics(subjectId)
+        .catch(() => { if (!cancelled) setCatalogFailed(true) })
+    }
     return () => { cancelled = true }
-  }, [isV2, subjectId, settings.language, catalogRetry])
+  }, [isV2, isYhq, subjectId, settings.language, catalogRetry])
 
   // `questionsError` shartda — TestPage'dagi bilan bir xil cheksiz sikl
   // (izohi useQuestionsStore.failedKey ustida). v2'da full-bank umuman
@@ -92,9 +102,9 @@ export default function Biletlar() {
   const isRu = settings.language === 'ru'
 
   const tickets = useMemo<TicketItem[]>(() => {
-    // v2: server manifest'dan — question ID'siz katalog (delivery TestRoutePage
-    // orqali server-owned ticket session). Sonlar server dedup haqiqati.
-    if (isV2) {
+    // v2 yhq: server manifest'dan — question ID'siz katalog (delivery
+    // TestRoutePage orqali server-owned ticket session). Sonlar dedup haqiqati.
+    if (isV2 && isYhq) {
       if (!catalog) return []
       return Array.from({ length: catalog.ticketCount }, (_, i) => ({
         id: i + 1,
@@ -102,6 +112,27 @@ export default function Biletlar() {
         questionCount: catalog.ticketSize,
         questionIds: [],
       }))
+    }
+    // v2 non-yhq: per-topic kartalar metadata'dan (ochilish server topic
+    // session — ticketNumber/premium o'rniga topic cap server'da).
+    if (isV2) {
+      const items: TicketItem[] = []
+      for (const topic of sortTopicsForTickets(subjectId, topics)) {
+        const count = topic.questionCount ?? 0
+        if (count <= 0) continue
+        const subtitle = isRu ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
+        const id = items.length + 1
+        items.push({
+          id,
+          title: `${id} - ${tt('ticketWord')}`,
+          subtitle,
+          chapterId: getTopicChapterId(subjectId, topic.slug, topic.nameUz),
+          topicId: topic.id,
+          questionCount: count,
+          questionIds: [],
+        })
+      }
+      return items
     }
     if (!questions.length) return []
 
@@ -149,7 +180,7 @@ export default function Biletlar() {
       const ids = shuffled.slice(i * ticketSize, (i + 1) * ticketSize).map((q) => q.id)
       return { id: i + 1, title: `${i + 1} - ${tt('ticketWord')}`, questionCount: ids.length, questionIds: ids }
     })
-  }, [isV2, catalog, questions, topics, subjectId, isRu, tt])
+  }, [isV2, isYhq, catalog, questions, topics, subjectId, isRu, tt])
 
   const tabFiltered = useMemo(() => {
     if (tab === 'errors') {
@@ -180,11 +211,22 @@ export default function Biletlar() {
   }, [tabFiltered, subjectChapters, selectedChapter])
 
   const handleTicket = (ticket: TicketItem) => {
+    const title = ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title
+    // v2 non-yhq: per-topic karta → server topic session (cap server'da).
+    if (isV2 && ticket.topicId !== undefined) {
+      navigate('/test/1', {
+        state: {
+          title,
+          mode: 'topic',
+          serverSelector: { type: 'topic', topicId: ticket.topicId },
+        },
+      })
+      return
+    }
     if (isTicketPremium(ticket.id) && !isPremium) {
       navigate('/premium')
       return
     }
-    const title = ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title
     // Har doim 1-savoldan boshlanadi (avval /test/:id noto'g'ri savolni ochardi).
     // v2: master ID'siz — faqat server selector (TestRoutePage server session ochadi).
     navigate('/test/1', isV2

@@ -412,6 +412,33 @@ export const progressRepository = {
     return rows.map((r) => r.k)
   },
 
+  /**
+   * Mavzu kesimida yechilganlar soni (v2 TopicsPage progress chiziqlari).
+   * Faqat AGGREGATE (topicId → count) — savol ID/matn/jovob YO'Q.
+   * Legacy client'dagi `answered` (`solvedQuestions`, har qanday javob) bilan
+   * bir xil semantika: progress_questions'dagi HAR bir qator = 1 yechilgan.
+   */
+  async getTopicSolvedCounts(
+    userId: string,
+    subjectId: string,
+    bankId: string,
+  ): Promise<Array<{ topicId: number; solved: number }>> {
+    const rows = await executeRows<{ topicId: number | null; solved: number }>(sql`
+      SELECT q.topic_id::int AS "topicId", COUNT(*)::int AS solved
+      FROM progress_questions pq
+      JOIN questions q
+        ON q.id = pq.question_id
+       AND q.bank_id = ${bankId}
+      WHERE pq.user_id = ${userId}
+        AND pq.subject_id = ${subjectId}
+        AND q.topic_id IS NOT NULL
+      GROUP BY q.topic_id
+    `)
+    return rows
+      .filter((row) => row.topicId !== null)
+      .map((row) => ({ topicId: row.topicId as number, solved: Number(row.solved) }))
+  },
+
   async reset(userId: string): Promise<void> {
     // P2: progress_questions jadvali ham tozalanadi (jsonb ustunlar bilan birga)
     await executeRows(sql`DELETE FROM progress_questions WHERE user_id = ${userId}`)

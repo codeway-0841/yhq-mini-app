@@ -366,7 +366,7 @@ describe('Biletlar', () => {
   })
 })
 
-describe('Biletlar v2 (server ticket manifest, yhq)', () => {
+describe('Biletlar v2 (server manifests)', () => {
   beforeEach(() => {
     ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
     vi.spyOn(api, 'getTicketCatalog').mockResolvedValue({
@@ -415,5 +415,37 @@ describe('Biletlar v2 (server ticket manifest, yhq)', () => {
 
     fireEvent.click(await screen.findByText('Qayta urinish'))
     expect(api.getTicketCatalog).toHaveBeenCalledTimes(2)
+  })
+
+  it('non-yhq v2: per-topic kartalar metadata-dan, topic selector navigate', async () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+    useQuestionsStore.setState({
+      questions: [],
+      topics: [
+        { id: 5, nameUz: 'Kinematika', nameRu: 'Кинематика', slug: 'kinematika', questionCount: 12 },
+        { id: 6, nameUz: "Bo'sh mavzu", nameRu: 'Пустая', slug: 'empty', questionCount: 0 },
+      ],
+      loaded: false,
+      loading: false,
+      subjectId: 'fizika',
+    })
+    render(<Biletlar />)
+
+    expect(await screen.findByText('1 - bilet')).toBeTruthy()
+    // Mavzu nomi ham chip'da ham kartada — chapter filtri metadatadan ishlaydi
+    expect(screen.getAllByText('Kinematika').length).toBeGreaterThanOrEqual(1)
+    expect(screen.queryByText("Bo'sh mavzu")).toBeNull()
+    expect(screen.queryByText('Xatolar')).toBeNull()
+
+    fireEvent.click(screen.getByText('1 - bilet'))
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: {
+        title: expect.stringContaining('Kinematika'),
+        mode: 'topic',
+        serverSelector: { type: 'topic', topicId: 5 },
+      },
+    })
+    const state = mockNavigate.mock.calls[0]![1].state
+    expect(state).not.toHaveProperty('questionIds')
   })
 })
