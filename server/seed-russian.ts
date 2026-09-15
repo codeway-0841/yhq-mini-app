@@ -53,6 +53,14 @@ async function seedRussian() {
     throw new Error(`Savollar fayli topilmadi: ${jsonPath}`)
   }
 
+  // ID DIAPAZON (2026-09-16): questions.id GLOBAL PK — yhq seed 1–1262
+  // oralig'ini egallaydi (lesson-map kanonik, ko'chirilmaydi). JSON'dagi
+  // 1001–2000 yhq bilan 261 ta kesishadi (prod incident) — shuning uchun
+  // russian 10001+ bazaga remap qilinadi. externalId O'ZGARMAYDI.
+  // Physics seed MAX(id)+1 oladi — avtomatik keyingi bo'sh joyga tushadi.
+  const RUSSIAN_ID_BASE = 10001
+  const RUSSIAN_JSON_MIN = 1001
+
   const rawQuestions: Array<{
     id: number
     variant: number
@@ -77,7 +85,7 @@ async function seedRussian() {
       const topicId = slugToId[slug] ?? slugToId['rus-orfografiya'] ?? null
 
       return {
-        id: q.id,
+        id: RUSSIAN_ID_BASE + (q.id - RUSSIAN_JSON_MIN),
         bankId: 'russian_db' as const,
         externalId: q.externalId,
         questionUz: q.questionUz || q.questionRu,
