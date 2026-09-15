@@ -112,6 +112,13 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(read('features/adaptive/AdaptivePage.tsx')).toContain('lg:max-w-2xl')
   })
 
+  it('batch-8: Admin keng kontent, Graph baland kanvas (NotFound/Sheet tayyor)', () => {
+    expect(read('features/admin/AdminPage.tsx')).toContain('lg:max-w-2xl')
+    const graph = read('features/graph/GraphPage.tsx')
+    expect(graph).toContain('lg:h-[58vh]')
+    expect(graph).toContain('lg:grid-cols-4')
+  })
+
   it('batch-6: Onboarding 2-ustun + var-rang opacity fix (onboarding/login)', () => {
     const ob = read('features/onboarding/Onboarding.tsx')
     expect(ob).toContain('sm:grid-cols-2')

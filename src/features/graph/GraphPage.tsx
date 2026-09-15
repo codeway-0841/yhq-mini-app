@@ -645,7 +645,7 @@ export default function GraphPage() {
 
       <div className="px-5">
         <div className="overflow-hidden rounded-2xl bg-pcard shadow-xs">
-          <div className="relative h-[46vh] max-h-[520px] min-h-[300px]">
+          <div className="relative h-[46vh] max-h-[520px] min-h-[300px] lg:h-[58vh] lg:max-h-[640px]">
             <GraphCanvas
               series={series}
               scope={effVars}
@@ -682,7 +682,7 @@ export default function GraphPage() {
         </div>
 
         {(hasParsed || points.length > 0) && (
-          <div className="mt-3 grid grid-cols-2 gap-2">
+          <div className="mt-3 grid grid-cols-2 gap-2 lg:grid-cols-4">
             {hasParsed && (
               <button
                 type="button"

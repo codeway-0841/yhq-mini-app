@@ -93,8 +93,8 @@ export default function AdminPage() {
         </div>
       </header>
 
-      {/* Tab Content */}
-      <div className="max-w-md mx-auto">
+      {/* Tab Content — desktop'da keng (jadvallar nafas oladi) */}
+      <div className="max-w-md mx-auto lg:max-w-2xl">
         {activeTab === 'promos' && <AdminPromoTab />}
         {activeTab === 'questions' && <AdminQuestionsTab lang={lang} />}
         {activeTab === 'studio' && <AdminAiStudioTab />}
