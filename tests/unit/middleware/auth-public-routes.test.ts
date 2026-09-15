@@ -72,6 +72,8 @@ describe('auth.middleware — public route allowlist (C1)', () => {
     // (router-relative path — middleware /api ostida mount qilinadi)
     expect(isPublicGet(req('GET', '/questions'))).toBe(true)
     expect(isPublicGet(req('GET', '/topics'))).toBe(true)
+    // v2 ticket manifest — faqat sonlar, savol kontenti yo'q (public CDN)
+    expect(isPublicGet(req('GET', '/ticket-catalog'))).toBe(true)
   })
 
   it('traversal/encoding bilan public-list aylanib o\'tilmaydi', () => {

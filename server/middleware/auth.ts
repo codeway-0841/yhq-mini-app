@@ -68,7 +68,7 @@ function normalizePath(path: string): string | null {
 // (client'ga umuman kirmaydi) va izohlar (post-answer gate). CDN edge cache
 // (tezlik+arzon) muhimroq; massa-yig'ish esa IP-rate-limit + abuse-flagging
 // bilan cheklanadi (questions.router.ts).
-const PUBLIC_GET = new Set(['questions', 'topics', 'dashboard',
+const PUBLIC_GET = new Set(['questions', 'topics', 'ticket-catalog', 'dashboard',
   // 'avatar/:userId' — public profil rasmi (leaderboard/duel <img src> auth
   // header yubora olmaydi; rasm user O'ZI global ko'rsatish uchun yuklagan)
   'avatar',
