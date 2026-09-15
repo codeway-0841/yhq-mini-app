@@ -94,7 +94,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
 
   return (
     <div className="home-learning-guide px-4 pb-3">
-      <div className="grid grid-cols-2 gap-2.5">
+      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4">
         <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
           <BookOpen size={20} strokeWidth={1.8} className="text-pmuted" />
           <span className="mt-1.5 block text-[14.5px] font-bold text-pfg">{tt('dashboardLearn')}</span>

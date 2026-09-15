@@ -278,7 +278,7 @@ export default function AdaptivePage() {
         </div>
       </header>
 
-      <div className="flex-1 overflow-y-auto px-4 pt-4 pb-6">
+      <div className="flex-1 overflow-y-auto px-4 pt-4 pb-6 lg:mx-auto lg:w-full lg:max-w-2xl">
         <div className="flex items-center justify-between mb-3">
           <span className="text-xs text-pmuted">
             {(() => {

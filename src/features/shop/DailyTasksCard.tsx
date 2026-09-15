@@ -86,8 +86,10 @@ export default function DailyTasksCard() {
     )
   }
 
-  // Qator bo'yicha yashirish: faqat hali tangasi olinmagan (yoki hozirgina olingan) vazifalar chiqadi
-  const visible = tasks.filter((t) =>
+  // Qator bo'yicha yashirish: faqat hali tangasi olinmagan (yoki hozirgina olingan) vazifalar chiqadi.
+  // Mudofaa: tasks server normallashtiruvidan o'tadi, lekin `?? []` ikkinchi
+  // qavat — keshdan kelgan eski/buzilgan snapshot'da ham crash YO'Q.
+  const visible = (tasks ?? []).filter((t) =>
     DAILY_TASKS.some((d) => d.id === t.id) && (!t.claimed || recentlyClaimed === t.id)
   )
 

@@ -173,7 +173,8 @@ function YhqTopics() {
   }
 
   return (
-    <div className="px-4 pb-4">
+    // Desktop: akkordeon ro'yxat tor markaziy ustunda (ochiladigan kontent uchun).
+    <div className="px-4 pb-4 lg:mx-auto lg:w-full lg:max-w-2xl">
       <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel="Orqaga" className="-mx-4 mb-4" />
 
       <div className="flex flex-col gap-2.5">
@@ -343,7 +344,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         </div>
       )}
 
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:items-start">
         {rows.map(({ topic, ids, done, count }) => {
           const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
           const shownDone = Math.min(done, count)

@@ -94,7 +94,7 @@ export default function IosDock() {
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-transform duration-300 ease-out ${/* safe-bottom */ ''}${
+      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-transform duration-300 ease-out lg:hidden ${/* safe-bottom */ ''}${
         isVisible ? 'translate-y-0 pointer-events-auto' : 'translate-y-full pointer-events-none'
       }`}
     >
@@ -121,7 +121,7 @@ export default function IosDock() {
                   >
                     <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
                   </button>
-                  <span className="text-[10px] font-bold text-pprimary mt-1 tracking-tight whitespace-nowrap">
+                  <span className="text-[10px] font-bold text-pmuted mt-1 tracking-tight whitespace-nowrap">
                     {item.shortLabel[lang]}
                   </span>
                 </div>

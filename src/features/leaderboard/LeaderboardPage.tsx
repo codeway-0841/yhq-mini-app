@@ -205,7 +205,8 @@ export default function LeaderboardPage() {
   const restEntries = hasTop3 ? entriesList.slice(3) : entriesList
 
   return (
-    <div className="pb-8">
+    // Desktop: reyting ro'yxati tor markaziy ustunda (uzun ro'yxat o'qilishi uchun).
+    <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
       {/* ── Top Bar & Segmented Control Tabs ── */}
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header pb-2.5 mb-3">
         <div className="relative flex items-center justify-center px-4 py-2">
@@ -329,7 +330,7 @@ export default function LeaderboardPage() {
                   )}>
                     {entry.name}
                     {isYou && (
-                      <span className="ml-1.5 rounded-full bg-pprimary/20 px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
+                      <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
                         {tt('youLabel')}
                       </span>
                     )}

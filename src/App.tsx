@@ -9,6 +9,7 @@ import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigatio
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
 import IosDock, { isTabRootRoute } from './shared/components/IosDock'
+import DesktopSidebar from './shared/components/DesktopSidebar'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -137,12 +138,17 @@ function Layout({ children }: { children: ReactNode }) {
     // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
     // kontent o'sadi), lekin overflow'li har qanday ajdod STICKY elementlar uchun
     // scrollport bo'lib qoladi. overflow-x:clip — yagona ruxsat.
-    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip">
+    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip lg:flex-row lg:items-stretch lg:justify-center">
+      <DesktopSidebar />
       <div
         ref={pageRef}
         data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
         // pb: 4.5rem bazaviy (iOS Dock balandligi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0"
+        // Desktop (lg+): dock yashirin — pastki padding index.css media query'da torayadi;
+        // konteyner mobil max-w-2xl → desktop'da keng (3xl/5xl/6xl).
+        // px SAQLANADI (px-0): ichki sahifalar o'z px-4'iga ega + PageHeader -mx-4
+        // full-bleed'ga tayanadi — konteynerga padding qo'shsak header sinadi.
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
       >
         <Suspense fallback={<PageLoader />}>
           {children}

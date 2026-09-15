@@ -108,11 +108,11 @@ export default function TestlarPage() {
           className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-all active:scale-[0.99] shadow-xs hover:bg-psurface/80"
         >
           <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-pprimary" />
-          <span className="text-sm text-psubtle">{tt('searchPlaceholder')}</span>
+          <span className="text-sm text-pmuted">{tt('searchPlaceholder')}</span>
         </button>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:items-stretch">
         {cards.map((m) => {
           const d = m.diff ? DIFF[m.diff] : null
           const locked = isTestModePremium(m.id) && !isPremium
@@ -136,7 +136,7 @@ export default function TestlarPage() {
               {/* Matn */}
               <div className="flex-1 min-w-0 text-left">
                 <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{tt(m.titleKey)}</p>
-                <p className="text-[11.5px] text-psubtle mt-0.5 truncate">{m.meta}</p>
+                <p className="text-[11.5px] text-pmuted mt-0.5 truncate">{m.meta}</p>
                 {d && (
                   <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
                     style={{ color: d.color }}>

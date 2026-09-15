@@ -152,7 +152,9 @@ export default function Profil() {
   }
 
   return (
-    <div className="pb-8">
+    // Desktop: sozlamalar ro'yxati tor markaziy ustunda (production pattern —
+    // GitHub/Telegram settings kabi o'qiladigan kenglikda qoladi).
+    <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
       <PageHeader title={tt('profile')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
 
       {/* ── Gorizontal Profil Kartasi ── */}

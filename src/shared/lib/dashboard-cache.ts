@@ -30,9 +30,33 @@ export const bossCache = createTtlCache<BossState>(60_000, {
 })
 
 export const fetchCoinTasks = () =>
-  coinTasksCache.fetch(() => api.getCoinTasks().then((r) => r.tasks))
+  // Trust boundary: buzilgan/kutilmagan payload'da BO'SH ro'yxat — karta
+  // hech qachon crash qilmaydi (DailyTasksCard `.filter` chaqiradi).
+  coinTasksCache.fetch(() =>
+    api.getCoinTasks().then((r) => (Array.isArray(r?.tasks) ? r.tasks : [])),
+  )
 
-export const fetchBossState = () => bossCache.fetch(() => api.getBossState())
+/**
+ * Boss trust-boundary: buzilgan payload (`{ok:true}` kabi) — THROW.
+ * BossCard catch'da `failed` ga tushib jimgina yashirinadi (butun Dashboard
+ * ErrorBoundary'ga EMAS). Maydonlar minimal shaklda tekshiriladi — BossCard
+ * ularni shartsiz o'qiydi (toLocaleString, .length).
+ */
+export function normalizeBossState(r: unknown): BossState | null {
+  if (!r || typeof r !== 'object') return null
+  const s = r as Record<string, unknown>
+  if (typeof s.hpTotal !== 'number' || typeof s.totalDamage !== 'number') return null
+  if (typeof s.bossKey !== 'string' || typeof s.periodKey !== 'string') return null
+  if (typeof s.status !== 'string' || !Array.isArray(s.top)) return null
+  return s as unknown as BossState
+}
+
+export const fetchBossState = () =>
+  bossCache.fetch(async () => {
+    const s = normalizeBossState(await api.getBossState())
+    if (!s) throw new Error('boss_malformed')
+    return s
+  })
 
 /** App boot'dan (hydrate'dan keyin) — fire-and-forget, boot'ni kutdirmaydi. */
 export function prefetchDashboardCards(): void {

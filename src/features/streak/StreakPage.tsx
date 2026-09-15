@@ -96,7 +96,8 @@ export default function StreakPage() {
   const weeks  = tt('weekdaysList').split('|')
 
   return (
-    <div className="px-5 pb-6">
+    // Desktop: kalendar + statistika tor markaziy ustunda.
+    <div className="px-5 pb-6 lg:mx-auto lg:w-full lg:max-w-2xl">
       {/* Header (PageHeader SSOT + info action) */}
       <PageHeader
         title={tt('intizomTitle')}

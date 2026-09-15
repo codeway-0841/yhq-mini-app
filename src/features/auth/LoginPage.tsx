@@ -223,7 +223,7 @@ export default function LoginPage() {
       )}
       {telegramLoginCode ? (
         <div className="flex w-full flex-col items-center gap-2" role="status" aria-live="polite">
-          <span aria-hidden="true" className="size-5 rounded-full border-2 border-pprimary/35 border-t-pprimary motion-safe:animate-spin" />
+          <span aria-hidden="true" className="size-5 rounded-full border-2 border-[rgb(var(--p-primary-rgb)/0.35)] border-t-pprimary motion-safe:animate-spin" />
           <p className="text-center text-sm leading-relaxed text-pmuted">
             {tt('authTgSharePhone')}
           </p>
@@ -285,22 +285,53 @@ export default function LoginPage() {
     ]
     return (
       <div className="first-launch-screen isolate overflow-y-auto overscroll-contain bg-pcanvas">
-        <div className="telegram-login-shell flex min-h-full w-full flex-col items-center justify-center overflow-hidden px-5 py-[clamp(1rem,4dvh,2rem)]">
-          <main className="relative my-auto w-full max-w-[400px] motion-safe:animate-premiumIn">
-            <header className="telegram-login-brand mb-6 flex items-center justify-center gap-2.5">
+        <div className="telegram-login-shell flex min-h-full w-full flex-col items-center justify-center overflow-hidden px-5 py-[clamp(1rem,4dvh,2rem)] lg:px-0 lg:py-0">
+          {/* Desktop FULLSCREEN split: chap brend panel + o'ng forma (mobil bitta ustunligicha). */}
+          <main className="relative my-auto w-full max-w-[400px] motion-safe:animate-premiumIn lg:m-0 lg:w-full lg:max-w-none lg:flex-1 lg:self-stretch">
+            {/* min-h viewport-relative: flex zanjirdagi % hisoblash o'rniga aniq fullscreen */}
+            <div className="lg:grid lg:min-h-[calc(100dvh-var(--safe-top-body,0px))] lg:grid-cols-2">
+              {/* Chap brend panel — FAQAT desktop, to'liq balandlik */}
+              <div
+                className="relative hidden flex-col justify-between gap-10 overflow-hidden p-10 lg:flex xl:p-16"
+                style={{ background: 'linear-gradient(165deg, rgb(var(--p-primary-rgb)/0.28) 0%, rgb(var(--p-primary-rgb)/0.07) 48%, transparent 78%), var(--p-card)' }}
+              >
+                <div aria-hidden="true" className="pointer-events-none absolute -right-20 -top-20 size-64 rounded-full motion-safe:animate-pulse"
+                  style={{ background: 'radial-gradient(circle, rgb(var(--p-primary-rgb)/0.35) 0%, transparent 70%)' }} />
+                <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 -left-16 size-72 rounded-full"
+                  style={{ background: 'radial-gradient(circle, rgb(var(--p-purple-rgb)/0.22) 0%, transparent 70%)' }} />
+                <header className="relative flex items-center gap-2.5">
+                  <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
+                  <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
+                </header>
+                <div className="relative">
+                  <h1 className="text-[28px] font-bold leading-tight tracking-tight text-pfg xl:text-[34px]">
+                    {tt('authWelcome')}
+                  </h1>
+                  <p className="mt-2 max-w-[340px] text-sm leading-relaxed text-pmuted">
+                    {tt('authTgWelcomeSub')}
+                  </p>
+                </div>
+                <p className="relative flex items-center gap-1.5 text-xs text-psubtle">
+                  <ShieldCheck aria-hidden="true" size={15} strokeWidth={2.2} />
+                  {tt('authTgSecure')}
+                </p>
+              </div>
+              {/* O'ng forma ustuni — vertikal markazda, tor o'qiladigan kenglik */}
+              <div className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-12">
+            <header className="telegram-login-brand mb-6 flex items-center justify-center gap-2.5 lg:hidden">
               <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
               <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
             </header>
 
-            <section aria-labelledby="telegram-login-title" className="text-center">
-              <h1 id="telegram-login-title" className="telegram-login-title text-[24px] font-bold leading-tight tracking-tight text-pfg">
+            <section aria-label={tt('authWelcome')} className="text-center lg:mx-auto lg:w-full lg:max-w-[440px]">
+              <h1 className="telegram-login-title text-[24px] font-bold leading-tight tracking-tight text-pfg lg:hidden">
                 {tt('authWelcome')}
               </h1>
-              <p className="mx-auto mt-2 max-w-[320px] text-sm leading-relaxed text-pmuted">
+              <p className="mx-auto mt-2 max-w-[320px] text-sm leading-relaxed text-pmuted lg:hidden">
                 {tt('authTgWelcomeSub')}
               </p>
 
-              <ul className="telegram-login-benefits my-6 divide-y divide-pline overflow-hidden rounded-2xl bg-pcard text-left shadow-xs">
+              <ul className="telegram-login-benefits my-6 divide-y divide-pline overflow-hidden rounded-2xl bg-pcard text-left shadow-xs lg:my-0 lg:mb-6">
                 {benefits.map(({ icon: Icon, key }) => (
                   <li key={key} className="flex min-h-[52px] items-center gap-3.5 px-4 py-3">
                     <Icon aria-hidden="true" size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
@@ -310,14 +341,16 @@ export default function LoginPage() {
               </ul>
 
               <div className="w-full">{telegramBlock}</div>
-              <p className="telegram-login-trust mt-3 flex items-center justify-center gap-1.5 text-xs text-psubtle">
+              <p className="telegram-login-trust mt-3 flex items-center justify-center gap-1.5 text-xs text-psubtle lg:hidden">
                 <ShieldCheck aria-hidden="true" size={15} strokeWidth={2.2} />
                 {tt('authTgSecure')}
               </p>
             </section>
+              </div>
+            </div>
 
             {isWeb && (
-              <div className="mt-3 text-center">
+              <div className="mt-3 text-center lg:absolute lg:bottom-5 lg:right-8 lg:mt-0">
                 <a href="https://kivvi.uz" className="inline-flex min-h-11 cursor-pointer items-center px-3 text-xs font-medium text-pmuted transition-colors hover:text-pfg focus-visible:rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
                   {language === 'ru' ? '← На главную' : '← Bosh sahifa'}
                 </a>
@@ -393,7 +426,7 @@ export default function LoginPage() {
                   type="button"
                   onClick={() => { setMethod(m); setError(null); }}
                   className={`flex-1 py-1.5 rounded-xl text-[12px] font-semibold transition-all shadow-xs ${
-                    method === m ? 'bg-pprimary/15 ring-1 ring-pprimary text-pprimary' : 'text-pmuted bg-psurface/40 hover:bg-psurface'
+                    method === m ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] ring-1 ring-pprimary text-pprimary' : 'text-pmuted bg-[color-mix(in_srgb,var(--p-surface)_40%,transparent)] hover:bg-psurface'
                   }`}
                 >
                   {m === 'phone' ? tt('authPhone') : 'Email'}

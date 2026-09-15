@@ -12,7 +12,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { getBossIcon } from './boss-icons'
 import { Skeleton } from '../../shared/components/ui/skeleton'
-import { bossCache, fetchBossState } from '../../shared/lib/dashboard-cache'
+import { bossCache, fetchBossState, normalizeBossState } from '../../shared/lib/dashboard-cache'
 import { cn } from '../../shared/lib/cn'
 
 type State = Awaited<ReturnType<typeof api.getBossState>>
@@ -28,6 +28,9 @@ function daysLeftOf(periodKey: string): number {
 function usableCachedState(): State | null {
   const cached = bossCache.peek()
   if (!cached) return null
+  // Eski/buzilgan persist snapshot — shaklni tekshirmasdan ishlatilsa
+  // toLocaleString/.length'da crash (e2e mock `{ok:true}` holati).
+  if (!normalizeBossState(cached)) return null
   return daysLeftOf(cached.periodKey) > 0 ? cached : null
 }
 
@@ -172,7 +175,7 @@ export default function BossCard() {
 
       {/* G'alaba holati eslatmasi */}
       {isDefeated && (
-        <div className="mt-3 rounded-2xl bg-psuccess/10 p-3 text-center shadow-xs motion-safe:animate-premiumIn">
+        <div className="mt-3 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.10)] p-3 text-center shadow-xs motion-safe:animate-premiumIn">
           <p className="text-[13px] font-bold text-psuccess">
             {tt('bossDefeatedHint')}
           </p>

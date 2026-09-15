@@ -112,7 +112,7 @@ export default function LibraryPage() {
   }
 
   const grid = (books: LibraryBook[], showGrade: boolean) => (
-    <div className="grid grid-cols-3 gap-x-3 gap-y-4 sm:grid-cols-4">
+    <div className="grid grid-cols-3 gap-x-3 gap-y-4 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       {books.map((book) => (
         <BookCard
           key={book.slug}

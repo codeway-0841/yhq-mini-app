@@ -250,7 +250,7 @@ export default function ShopPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
         <Palette size={11} className="text-pprimary" /> {tt('shopThemesTitle')}
       </p>
-      <div className="grid grid-cols-2 gap-3 px-5">
+      <div className="grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
         {themeItems.map((item) => {
           const theme = getAccentTheme(item.id)
           const isOwned    = ownedSet.has(theme.id)
@@ -345,7 +345,7 @@ export default function ShopPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-pprimary uppercase tracking-[0.14em] flex items-center gap-1.5">
             <Sparkles size={11} /> {tt('shopSeasonalTitle')}
           </p>
-          <div className="grid grid-cols-2 gap-3 px-5">
+          <div className="grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
             {seasonalFrameItems.map((item) => {
               const left = item.seasonal ? seasonalDaysLeft(item.seasonal, now) : null
               return renderFrameCard(item, left !== null ? `${tt('shopSeasonalLeft')} ${left} ${tt('shopSeasonalDays')}` : null)
@@ -358,7 +358,7 @@ export default function ShopPage() {
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
         <ImageIcon size={11} className="text-pprimary" /> {tt('shopFramesTitle')}
       </p>
-      <div className="grid grid-cols-2 gap-3 px-5">
+      <div className="grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
         {frameItems.map((item) => renderFrameCard(item))}
       </div>
 

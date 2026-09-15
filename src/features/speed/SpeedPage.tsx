@@ -319,7 +319,7 @@ export default function SpeedPage() {
 
       {error && <div role="alert" className="mx-4 mt-3 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-4 py-3 text-sm text-pdanger">{error}</div>}
 
-      <div className="flex-1 overflow-y-auto px-4 pt-2 pb-6">
+      <div className="flex-1 overflow-y-auto px-4 pt-2 pb-6 lg:mx-auto lg:w-full lg:max-w-2xl">
         <p className="text-[11px] font-semibold text-psubtle text-center mb-2 uppercase tracking-wide">
           {lang === 'ru' ? `${idx + 1} из ${total}` : `${idx + 1} / ${total}`}
         </p>
@@ -337,8 +337,8 @@ export default function SpeedPage() {
           const style =
             !showResult && isChoice ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] ring-2 ring-pblue text-pfg motion-safe:animate-pulse' :
             !showResult            ? 'bg-pcard text-pfg hover:bg-psurface active:scale-[0.98]' :
-            isRight                ? 'bg-pprimary/15 ring-2 ring-pprimary text-pfg' :
-            isChoice               ? 'bg-pdanger/15 ring-2 ring-pdanger text-pdanger' :
+            isRight                ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] ring-2 ring-pprimary text-pfg' :
+            isChoice               ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] ring-2 ring-pdanger text-pdanger' :
                                      'bg-psurface text-pmuted'
           return (
             <button key={`${currentQuestion.position}_${opt.id}`} type="button" onClick={() => handleSelect(opt.id)} disabled={answered}

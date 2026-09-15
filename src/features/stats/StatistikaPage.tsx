@@ -130,8 +130,8 @@ export default function StatistikaPage() {
       {/* Header (PageHeader SSOT — sarlavha ikonkasi olib tashlandi, native'da header'da ikon bo'lmaydi) */}
       <PageHeader title={lang === 'ru' ? 'Статистика' : 'Statistika'} onBack={() => goBack(navigate)} backLabel="Orqaga" />
 
-      {/* Katta raqamlar — 2x2 */}
-      <div className="grid grid-cols-2 gap-3 px-5 mt-3">
+      {/* Katta raqamlar — 2x2 (desktop'da 4 qator) */}
+      <div className="grid grid-cols-2 gap-3 px-5 mt-3 lg:grid-cols-4">
         {[
           { icon: Star,    color: 'var(--p-gold)', value: xp.toLocaleString(), label: 'XP' },
           { icon: Flame,   color: 'var(--p-warning)', value: `${streak}`,        label: lang === 'ru' ? 'дней подряд' : 'kun seriya' },

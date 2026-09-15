@@ -207,7 +207,7 @@ export default function FormulasPage() {
           <p className="px-5 mb-2 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
             {tt('favFormulas')}
           </p>
-          <div className="grid grid-cols-2 gap-2.5 px-5 mb-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2.5 px-5 mb-4">
             {favItems.map((x) => (
               <FormulaCard key={x.id} item={x} lang={lang} fav onFav={() => toggleFav(x.id)} onPlot={() => plotFormula(x)} />
             ))}
@@ -216,7 +216,7 @@ export default function FormulasPage() {
       )}
 
       {/* Formulalar grid */}
-      <div className="grid grid-cols-2 gap-2.5 px-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-2.5 px-5">
         {visible.map((x) => (
           <FormulaCard key={x.id} item={x} lang={lang}
             fav={favs.includes(x.id)} onFav={() => toggleFav(x.id)} onPlot={() => plotFormula(x)} />

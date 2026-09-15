@@ -181,7 +181,7 @@ export default function PremiumPage() {
           <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
             {lang === 'ru' ? 'Выберите тариф' : 'Tarifni tanlang'}
           </p>
-          <div className="mx-5 flex flex-col gap-2.5">
+          <div className="mx-5 flex flex-col gap-2.5 lg:grid lg:grid-cols-3 lg:items-stretch">
             {PREMIUM_PLANS.map((plan) => {
               const highlight = plan.key === HIGHLIGHT_PLAN
               return (

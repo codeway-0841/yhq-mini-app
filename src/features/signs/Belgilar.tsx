@@ -108,7 +108,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
 function CategoryGrid({ onSelect, lang }: { onSelect: (cat: SignCategory) => void; lang: 'uz' | 'ru' }) {
   const isRu = lang === 'ru'
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
       {signCategories.map((cat) => {
         const Icon = getSignCategoryIcon(cat.id)
         const catName = isRu ? (cat.nameRu || cat.name) : cat.name
@@ -166,7 +166,7 @@ function SignsGrid({
           </span>
         }
       />
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
         {signs.map((sign) => {
           const signName = isRu ? (sign.nameRu || sign.name) : sign.name
           return (
@@ -215,7 +215,7 @@ function SearchGrid({
     )
   }
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
+    <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
       {results.map((sign) => {
         const signName = isRu ? (sign.nameRu || sign.name) : sign.name
         return (

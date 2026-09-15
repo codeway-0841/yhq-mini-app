@@ -286,7 +286,7 @@ export default function Biletlar() {
         </div>
       )}
 
-      <div className="grid grid-cols-3 gap-2.5">
+      <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {filtered.map((ticket) => {
           // Badge = bu biletdagi yechilmagan xato savollar soni (urinishlar yig'indisi emas)
           const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[questionKey(subjectId, qid)] ?? 0) > 0).length

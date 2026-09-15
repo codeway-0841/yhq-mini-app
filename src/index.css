@@ -17,13 +17,13 @@
   --theme-elevated:    #161b22;
   --theme-fg:          #f5f5f4;
   --theme-fg-muted:    #a8a29e;
-  --theme-fg-subtle:   #78716c;
+  --theme-fg-subtle:   #8a847f;
   --theme-line:        rgba(255, 255, 255, 0.07);
   --theme-line-strong: rgba(255, 255, 255, 0.14);
   --theme-shadow:      #000000;
 
   /* RGB triplet — Tailwind opacity modifier (bg-[rgb(var(--p-primary-rgb)/X)] ...) uchun */
-  --p-primary-rgb: 26 129 252;
+  --p-primary-rgb: 20 111 221;
 }
 
 body[data-theme='light'] {
@@ -344,6 +344,12 @@ body[data-theme='light'] .hero-gradient-card {
 }
 .splash-float { animation: splashFloat 3.4s ease-in-out infinite; }
 
+/* Reduced-motion hurmat qiladigan suzish (Onboarding brendi): harakatga
+   sezgir userlarda animatsiya YO'Q, rasm statik qoladi. */
+@media (prefers-reduced-motion: no-preference) {
+  .splash-float-safe { animation: splashFloat 3.4s ease-in-out infinite; }
+}
+
 @keyframes onboardingFloat {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-10px); }
@@ -417,7 +423,8 @@ body[data-theme='light'] .ios-glass {
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v3 — sovuq-neytral grafit fon (#0d1117), KIVVI brend ko'k aksent (#1a81fc) */
+  /* v3 — sovuq-neytral grafit fon (#0d1117), KIVVI brend ko'k aksent (#146fdd —
+     2026-09-15 kontrast fix: #1a81fc oq matn bilan 3.76:1 (AA 4.5 talab), #146fdd 4.83:1) */
   --p-canvas:      #0d1117;
   --p-card:        #161b22;
   --p-surface:     #1c222b;
@@ -426,12 +433,12 @@ body[data-theme='light'] .ios-glass {
 
   --p-fg:          #f5f5f4;   /* Primary text */
   --p-muted:       #a8a29e;   /* Secondary text */
-  --p-subtle:      #78716c;   /* Tertiary text */
+  --p-subtle:      #8a847f;   /* Tertiary text (2026-09 kontrast: #78716c 3.61 edi) */
   --p-disabled:    #57534e;   /* Disabled text */
   --p-link:        #4da3ff;   /* Link */
 
   /* Aksent — KIVVI Blue (data-accent bilan almashadi) */
-  --p-primary:     #1a81fc;
+  --p-primary:     #146fdd;
   --p-on-primary:  #ffffff;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
@@ -502,11 +509,11 @@ body[data-theme='light'] {
   --p-muted:       #334155;
   --p-subtle:      #4b5563;
   --p-disabled:    #6b7280;
-  --p-link:        #1a81fc;
+  --p-link:        #146fdd;
 
   /* Aksent yorug' fonda to'yingan brend ko'ki */
-  --p-primary:     #1a81fc;
-  --p-primary-rgb: 26 129 252;
+  --p-primary:     #146fdd;
+  --p-primary-rgb: 20 111 221;
   --p-on-primary:  #ffffff;
   --p-glow:        transparent;
 
@@ -544,8 +551,8 @@ body[data-theme='light'] {
 
 /* Aurora — jade-cyan atmosfera (AI: cyan) */
 body[data-theme='dark'][data-accent='aurora'] {
-  --p-fg: #f2f7f6; --p-muted: #9fb3b0; --p-subtle: #6e8380;
-  --theme-fg: #f2f7f6; --theme-fg-muted: #9fb3b0; --theme-fg-subtle: #6e8380;
+  --p-fg: #f2f7f6; --p-muted: #9fb3b0; --p-subtle: #738885;
+  --theme-fg: #f2f7f6; --theme-fg-muted: #9fb3b0; --theme-fg-subtle: #738885;
   --p-primary: #16c79a; --p-on-primary: #04211a; --p-glow: transparent; --p-primary-rgb: 22 199 154;
   --p-purple: #3fb5c4; --p-purple-rgb: 63 181 196;
   --p-canvas: #081614; --p-surface: #10231f; --p-card: #0d1c19; --p-line: rgba(255,255,255,0.07);
@@ -556,8 +563,8 @@ body[data-theme='dark'][data-accent='aurora'] {
 
 /* Amethyst — binafsha atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
 body[data-theme='dark'][data-accent='violet'] {
-  --p-fg: #f5f3f7; --p-muted: #aca6b5; --p-subtle: #7c7588;
-  --theme-fg: #f5f3f7; --theme-fg-muted: #aca6b5; --theme-fg-subtle: #7c7588;
+  --p-fg: #f5f3f7; --p-muted: #aca6b5; --p-subtle: #868091;
+  --theme-fg: #f5f3f7; --theme-fg-muted: #aca6b5; --theme-fg-subtle: #868091;
   --p-primary: #9d7bea; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 157 123 234;
   --p-canvas: #130f1a; --p-surface: #221c2d; --p-card: #1a1523; --p-line: rgba(255,255,255,0.07);
   --p-line-strong: rgba(255,255,255,0.14);
@@ -567,8 +574,8 @@ body[data-theme='dark'][data-accent='violet'] {
 
 /* Ocean — chuqur ko'k (AI: indigo) */
 body[data-theme='dark'][data-accent='ocean'] {
-  --p-fg: #f1f5f8; --p-muted: #9fb0bd; --p-subtle: #6e808e;
-  --theme-fg: #f1f5f8; --theme-fg-muted: #9fb0bd; --theme-fg-subtle: #6e808e;
+  --p-fg: #f1f5f8; --p-muted: #9fb0bd; --p-subtle: #748693;
+  --theme-fg: #f1f5f8; --theme-fg-muted: #9fb0bd; --theme-fg-subtle: #748693;
   --p-primary: #3d9ad9; --p-on-primary: #04202f; --p-glow: transparent; --p-primary-rgb: 61 154 217;
   --p-purple: #7b8fd4; --p-purple-rgb: 123 143 212;
   --p-canvas: #0a1219; --p-surface: #16222c; --p-card: #101a23; --p-line: rgba(255,255,255,0.07);
@@ -579,8 +586,8 @@ body[data-theme='dark'][data-accent='ocean'] {
 
 /* Forest — chuqur tabiiy yashil (AI: teal) */
 body[data-theme='dark'][data-accent='forest'] {
-  --p-fg: #f2f6f3; --p-muted: #a2b3a8; --p-subtle: #72837a;
-  --theme-fg: #f2f6f3; --theme-fg-muted: #a2b3a8; --theme-fg-subtle: #72837a;
+  --p-fg: #f2f6f3; --p-muted: #a2b3a8; --p-subtle: #76877e;
+  --theme-fg: #f2f6f3; --theme-fg-muted: #a2b3a8; --theme-fg-subtle: #76877e;
   --p-primary: #3fae7c; --p-on-primary: #04200f; --p-glow: transparent; --p-primary-rgb: 63 174 124;
   --p-purple: #35a89c; --p-purple-rgb: 53 168 156;
   --p-canvas: #0a1410; --p-surface: #16241c; --p-card: #101b15; --p-line: rgba(255,255,255,0.07);
@@ -591,8 +598,8 @@ body[data-theme='dark'][data-accent='forest'] {
 
 /* Sunset — iliq to'q sariq atmosfera (AI: pink) */
 body[data-theme='dark'][data-accent='sunset'] {
-  --p-fg: #f8f4f0; --p-muted: #b5a99d; --p-subtle: #857a70;
-  --theme-fg: #f8f4f0; --theme-fg-muted: #b5a99d; --theme-fg-subtle: #857a70;
+  --p-fg: #f8f4f0; --p-muted: #b5a99d; --p-subtle: #8b8177;
+  --theme-fg: #f8f4f0; --theme-fg-muted: #b5a99d; --theme-fg-subtle: #8b8177;
   --p-primary: #e08b4a; --p-on-primary: #241000; --p-glow: transparent; --p-primary-rgb: 224 139 74;
   --p-purple: #d4708f; --p-purple-rgb: 212 112 143;
   --p-canvas: #17110b; --p-surface: #291f15; --p-card: #1e1610; --p-line: rgba(255,255,255,0.07);
@@ -606,7 +613,7 @@ body[data-accent='sakura'] {
   --p-primary: #c4487a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 196 72 122;
   --p-canvas: #fdf6f7; --p-surface: #f8ecef; --p-card: #ffffff;
   --p-line: #f0dee3; --p-line-strong: #e2c3cc;
-  --p-fg: #241419; --p-muted: #6b545b; --p-subtle: #9a8188;
+  --p-fg: #241419; --p-muted: #6b545b; --p-subtle: #846f75;
   --theme-canvas: #fdf6f7; --theme-surface: #f8ecef; --theme-elevated: #ffffff;
   --theme-fg: #241419; --theme-fg-muted: #6b545b; --theme-fg-subtle: #9a8188;
   --theme-line: #f0dee3; --theme-line-strong: #e2c3cc; --theme-shadow: #e2c3cc;
@@ -614,9 +621,9 @@ body[data-accent='sakura'] {
 
 /* Obsidian / Linear Tech — premium chuqur pitch obsidian qora, electric blue aksent */
 body[data-theme='dark'][data-accent='obsidian'] {
-  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #71717a;
-  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #71717a;
-  --p-primary: #3b82f6; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 59 130 246;
+  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #7e7e86;
+  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #7e7e86;
+  --p-primary: #3471d7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 52 113 215;
   --p-purple: #8b5cf6; --p-purple-rgb: 139 92 246;
   --p-canvas: #08090a; --p-surface: #17181c; --p-card: #111215; --p-line: rgba(255,255,255,0.08);
   --p-line-strong: rgba(255,255,255,0.16);
@@ -627,9 +634,9 @@ body[data-theme='dark'][data-accent='obsidian'] {
 
 /* Gamified Neo — jonli Duolingo emerald yashili, to'q slate navy */
 body[data-theme='dark'][data-accent='neo'] {
-  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #64748b;
-  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
-  --p-primary: #22c55e; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 34 197 94;
+  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #8693a4;
+  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #8693a4;
+  --p-primary: #178540; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 23 133 64;
   --p-purple: #a855f7; --p-purple-rgb: 168 85 247;
   --p-canvas: #0f172a; --p-surface: #334155; --p-card: #1e293b; --p-line: rgba(255,255,255,0.1);
   --p-line-strong: rgba(255,255,255,0.2);
@@ -640,8 +647,8 @@ body[data-theme='dark'][data-accent='neo'] {
 
 /* Nordic Glass — sokin tumanli kecha, toza muz-havorang */
 body[data-theme='dark'][data-accent='nordic'] {
-  --p-fg: #f1f5f9; --p-muted: #94a3b8; --p-subtle: #64748b;
-  --theme-fg: #f1f5f9; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
+  --p-fg: #f1f5f9; --p-muted: #94a3b8; --p-subtle: #768599;
+  --theme-fg: #f1f5f9; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #768599;
   --p-primary: #38bdf8; --p-on-primary: #082f49; --p-glow: transparent; --p-primary-rgb: 56 189 248;
   --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
   --p-canvas: #0c1017; --p-surface: #1b2434; --p-card: #131924; --p-line: rgba(255,255,255,0.08);
@@ -653,8 +660,8 @@ body[data-theme='dark'][data-accent='nordic'] {
 
 /* CarPlay Luxury — avtomobil bort kompyuteri, amber olovrang aksent */
 body[data-theme='dark'][data-accent='carplay'] {
-  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #64748b;
-  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #64748b;
+  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #758398;
+  --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #758398;
   --p-primary: #f97316; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 249 115 22;
   --p-purple: #ec4899; --p-purple-rgb: 236 72 153;
   --p-canvas: #0b0d11; --p-surface: #1c202c; --p-card: #14171f; --p-line: rgba(255,255,255,0.08);
@@ -682,10 +689,10 @@ body[data-theme='dark'][data-accent='payme'] {
 
 /* Claude AI — Anthropic Terracotta & iliq qora atmosfera (#141413 canvas / #1e1e1d card) */
 body[data-theme='dark'][data-accent='claude'] {
-  --p-fg: #faf9f5; --p-muted: #a19c91; --p-subtle: #6b665e;
-  --theme-fg: #faf9f5; --theme-fg-muted: #a19c91; --theme-fg-subtle: #6b665e;
-  --p-primary: #d97757; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 217 119 87;
-  --p-purple: #d97757; --p-purple-rgb: 217 119 87;
+  --p-fg: #faf9f5; --p-muted: #a19c91; --p-subtle: #8a8780;
+  --theme-fg: #faf9f5; --theme-fg-muted: #a19c91; --theme-fg-subtle: #8a8780;
+  --p-primary: #ad5f46; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 173 95 70;
+  --p-purple: #ad5f46; --p-purple-rgb: 173 95 70;
   --p-canvas: #141413; --p-surface: #282724; --p-card: #1e1e1d; --p-line: rgba(245,245,240,0.08);
   --p-line-strong: rgba(245,245,240,0.16);
   --theme-canvas: #141413; --theme-surface: #282724; --theme-elevated: #1e1e1d;
@@ -695,9 +702,9 @@ body[data-theme='dark'][data-accent='claude'] {
 
 /* Cupertino (Apple iOS & OLED) — toza OLED qora va Apple System Blue */
 body[data-theme='dark'][data-accent='cupertino'] {
-  --p-fg: #f5f5f7; --p-muted: #8e8e93; --p-subtle: #636366;
-  --theme-fg: #f5f5f7; --theme-fg-muted: #8e8e93; --theme-fg-subtle: #636366;
-  --p-primary: #0a84ff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 10 132 255;
+  --p-fg: #f5f5f7; --p-muted: #8e8e93; --p-subtle: #868688;
+  --theme-fg: #f5f5f7; --theme-fg-muted: #8e8e93; --theme-fg-subtle: #868688;
+  --p-primary: #0973dd; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 9 115 221;
   --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
   --p-canvas: #000000; --p-card: #1c1c1e; --p-surface: #2c2c2e; --p-line: rgba(255,255,255,0.10);
   --p-line-strong: rgba(255,255,255,0.18);
@@ -708,8 +715,8 @@ body[data-theme='dark'][data-accent='cupertino'] {
 
 /* Natural Titanium — iPhone Pro titan teksturasi, amber-oltin aksent */
 body[data-theme='dark'][data-accent='titanium'] {
-  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #71717a;
-  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #71717a;
+  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #818189;
+  --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #818189;
   --p-primary: #e4a853; --p-on-primary: #1c1300; --p-glow: transparent; --p-primary-rgb: 228 168 83;
   --p-purple: #c084fc; --p-purple-rgb: 192 132 252;
   --p-canvas: #0c0c0e; --p-surface: #222226; --p-card: #161619; --p-line: rgba(255,255,255,0.08);
@@ -721,8 +728,8 @@ body[data-theme='dark'][data-accent='titanium'] {
 
 /* Deep Purple — iPhone 14 Pro chuqur kosmik binafsha */
 body[data-theme='dark'][data-accent='deeppurple'] {
-  --p-fg: #f6f3f9; --p-muted: #a89fb3; --p-subtle: #796f86;
-  --theme-fg: #f6f3f9; --theme-fg-muted: #a89fb3; --theme-fg-subtle: #796f86;
+  --p-fg: #f6f3f9; --p-muted: #a89fb3; --p-subtle: #857c91;
+  --theme-fg: #f6f3f9; --theme-fg-muted: #a89fb3; --theme-fg-subtle: #857c91;
   --p-primary: #bf5af2; --p-on-primary: #170026; --p-glow: transparent; --p-primary-rgb: 191 90 242;
   --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
   --p-canvas: #0b0813; --p-surface: #231c36; --p-card: #151022; --p-line: rgba(255,255,255,0.08);
@@ -734,8 +741,8 @@ body[data-theme='dark'][data-accent='deeppurple'] {
 
 /* Vision Glass — Apple VisionOS va Liquid Glass shaffof muzli kristall */
 body[data-theme='dark'][data-accent='liquidglass'] {
-  --p-fg: #f0f6fc; --p-muted: #8b9cb5; --p-subtle: #5d718d;
-  --theme-fg: #f0f6fc; --theme-fg-muted: #8b9cb5; --theme-fg-subtle: #5d718d;
+  --p-fg: #f0f6fc; --p-muted: #8b9cb5; --p-subtle: #72849c;
+  --theme-fg: #f0f6fc; --theme-fg-muted: #8b9cb5; --theme-fg-subtle: #72849c;
   --p-primary: #64d2ff; --p-on-primary: #00283d; --p-glow: transparent; --p-primary-rgb: 100 210 255;
   --p-purple: #70a1ff; --p-purple-rgb: 112 161 255;
   --p-canvas: #070b12; --p-surface: #182438; --p-card: #0f1726; --p-line: rgba(255,255,255,0.1);
@@ -747,8 +754,8 @@ body[data-theme='dark'][data-accent='liquidglass'] {
 
 /* Crimson — COIN-EKSKLYUZIV: chuqur qizil (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='crimson'] {
-  --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #857376;
-  --theme-fg: #f8f2f3; --theme-fg-muted: #b5a2a5; --theme-fg-subtle: #857376;
+  --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #8c7c7e;
+  --theme-fg: #f8f2f3; --theme-fg-muted: #b5a2a5; --theme-fg-subtle: #8c7c7e;
   --p-primary: #e04a5f; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 224 74 95;
   --p-purple: #d4708a; --p-purple-rgb: 212 112 138;
   --p-canvas: #170c0e; --p-surface: #2a171b; --p-card: #1e1013; --p-line: rgba(255,255,255,0.07);
@@ -759,8 +766,8 @@ body[data-theme='dark'][data-accent='crimson'] {
 
 /* Royal — COIN-EKSKLYUZIV: chuqur indigo (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='royal'] {
-  --p-fg: #f3f3f8; --p-muted: #a6a6ba; --p-subtle: #76768a;
-  --theme-fg: #f3f3f8; --theme-fg-muted: #a6a6ba; --theme-fg-subtle: #76768a;
+  --p-fg: #f3f3f8; --p-muted: #a6a6ba; --p-subtle: #7f7f91;
+  --theme-fg: #f3f3f8; --theme-fg-muted: #a6a6ba; --theme-fg-subtle: #7f7f91;
   --p-primary: #7b83e0; --p-on-primary: #0d0e2b; --p-glow: transparent; --p-primary-rgb: 123 131 224;
   --p-purple: #a37fe0; --p-purple-rgb: 163 127 224;
   --p-canvas: #0c0c15; --p-surface: #1b1c2e; --p-card: #12131f; --p-line: rgba(255,255,255,0.07);
@@ -774,7 +781,7 @@ body[data-accent='arctic'] {
   --p-primary: #0b7fb8; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 11 127 184;
   --p-canvas: #f7fafc; --p-surface: #eaf2f7; --p-card: #ffffff;
   --p-line: #dde8ef; --p-line-strong: #c3d6e2;
-  --p-fg: #14212b; --p-muted: #4e6472; --p-subtle: #82949f;
+  --p-fg: #14212b; --p-muted: #4e6472; --p-subtle: #68767f;
   --theme-canvas: #f7fafc; --theme-surface: #eaf2f7; --theme-elevated: #ffffff;
   --theme-fg: #14212b; --theme-fg-muted: #4e6472; --theme-fg-subtle: #82949f;
   --theme-line: #dde8ef; --theme-line-strong: #c3d6e2; --theme-shadow: #c3d6e2;
@@ -827,7 +834,7 @@ body[data-theme='light'][data-accent='obsidian'] {
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='neo'] {
-  --p-primary: #16a34a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 22 163 74;
+  --p-primary: #12863d; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 18 134 61;
   --p-canvas: #edf3ee; --p-surface: #d8e8db; --p-card: #ffffff;
   --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #edf3ee; --theme-surface: #d8e8db; --theme-elevated: #ffffff;
@@ -862,18 +869,18 @@ body[data-theme='light'][data-accent='payme'] {
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='claude'] {
-  --p-primary: #c15f3e; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 193 95 62;
+  --p-primary: #b65a3b; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 182 90 59;
   --p-canvas: #faf9f5; --p-surface: #f3f1eb; --p-card: #ffffff;
   --p-line: #e7e5df; --p-line-strong: #d6d3cb;
-  --p-fg: #1c1917; --p-muted: #57534e; --p-subtle: #a8a29e;
+  --p-fg: #1c1917; --p-muted: #57534e; --p-subtle: #787371;
   --theme-canvas: #faf9f5; --theme-surface: #f3f1eb; --theme-elevated: #ffffff;
   --theme-line: #e7e5df; --theme-line-strong: #d6d3cb;
 }
 body[data-theme='light'][data-accent='cupertino'] {
-  --p-primary: #007aff; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 122 255;
+  --p-primary: #0070ea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 112 234;
   --p-canvas: #f2f2f7; --p-card: #ffffff; --p-surface: #e5e5ea;
   --p-line: rgba(60,60,67,0.12); --p-line-strong: rgba(60,60,67,0.22);
-  --p-fg: #000000; --p-muted: #6c6c70; --p-subtle: #8e8e93;
+  --p-fg: #000000; --p-muted: #6c6c70; --p-subtle: #747478;
   --theme-canvas: #f2f2f7; --theme-surface: #e5e5ea; --theme-elevated: #ffffff;
   --theme-fg: #000000; --theme-fg-muted: #6c6c70; --theme-fg-subtle: #8e8e93;
   --theme-line: rgba(60,60,67,0.12); --theme-line-strong: rgba(60,60,67,0.22);
@@ -1291,5 +1298,44 @@ body[data-no-animation='true'] .animate-scorePop {
 .katex-rendered-token {
   vertical-align: middle;
   line-height: normal;
+}
+
+/* ═══ DESKTOP APP SHELL + PRODUCTION POLISH (2026-09-15) ═══════════════════
+   lg+ breakpoint'da chap sidebar + keng konteyner. Mobilda (lg ostida)
+   HECH QANDAY vizual o'zgarish YO'Q — faqat desktop media ichida.
+   - .route-page dock-zaxira padding'i desktop'da torayadi (dock lg:hidden).
+   - .page-header ichki padding'i desktop'da kengayadi (sahifa ritmi).
+   - .desktop-grid-2 — sahifalar uchun tayyor 2-ustun grid helper'i
+     (Dashboard/Testlar/Profil kartalari keyingi iteratsiyada shu class'ga o'tadi).
+   - Production: selection rangi, anchor scroll-margin, reduced-motion. */
+@media (min-width: 1024px) {
+  .route-page,
+  .route-page[data-tabroot='true'],
+  .route-page[data-tabroot='false'] {
+    padding-bottom: calc(2rem + var(--safe-bottom, 0px));
+  }
+  .dashboard-page {
+    padding-bottom: calc(2rem + var(--safe-bottom, 0px));
+  }
+  .desktop-grid-2 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
+}
+
+::selection {
+  background: rgb(var(--p-primary-rgb) / 0.28);
+}
+
+:target {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-page {
+    animation: none;
+  }
 }
 

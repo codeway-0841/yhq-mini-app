@@ -225,7 +225,7 @@ export default function XatolarPage() {
                     className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors"
                   >
                     <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
-                    <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                    <span className="bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                       {g.count}
                     </span>
                     <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">{tt('practiceWord')} ›</span>
@@ -242,7 +242,7 @@ export default function XatolarPage() {
                 <Flame size={12} className="text-pmuted" />
                 {tt('topMistakes')}
               </p>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:items-start">
                 {isV2 ? (
                   topHardV2.map((item, i) => (
                     <button
@@ -259,7 +259,7 @@ export default function XatolarPage() {
                       >
                         {item.text}
                       </span>
-                      <span className="bg-pwarning/15 text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                      <span className="bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                         {item.count} {tt('timesWord')}
                       </span>
                       <ChevronRight size={15} className="text-psubtle flex-shrink-0" />
@@ -281,7 +281,7 @@ export default function XatolarPage() {
                       >
                         {q.text}
                       </span>
-                      <span className="bg-pwarning/15 text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                      <span className="bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                         {count} {tt('timesWord')}
                       </span>
                       <ChevronRight size={15} className="text-psubtle flex-shrink-0" />

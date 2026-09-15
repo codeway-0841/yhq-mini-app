@@ -85,8 +85,8 @@ export default function ModesPage() {
       {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
       <PageHeader title={tt('modesTitle')} size="lg" className="-mx-4 mb-4" />
 
-      {/* 3-ustunli rejimlar panjarasi */}
-      <div className="grid grid-cols-3 gap-3">
+      {/* 3-ustunli rejimlar panjarasi (desktop'da 4/5 ustun) */}
+      <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 xl:grid-cols-5">
         {items.map((it) => (
           <ModeGridCard
             key={it.label}

@@ -106,7 +106,7 @@ export default function FlashcardsPage() {
           <p className="text-[12px] text-psubtle mb-4">
             {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
           </p>
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:items-start">
           {signCategories.map((c) => {
             const k = readKnown(c.id).length
             const Icon = getSignCategoryIcon(c.id)

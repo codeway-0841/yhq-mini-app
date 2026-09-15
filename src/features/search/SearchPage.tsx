@@ -149,7 +149,7 @@ export default function SearchPage() {
               {tt('searchQuestionsSection')} · {questionsCount}
             </p>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:items-start">
             {isV2 ? (
               serverHits.map((h, i) => {
                 const topic = topics.find((t) => t.id === h.topicId)
@@ -202,7 +202,7 @@ export default function SearchPage() {
               {tt('searchLessonsSection')} · {lessonsCount}
             </p>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:items-start">
             {(isV2 ? lessonHits : results?.lessons || []).map((h) => (
               <button
                 key={`${h.moduleId}:${h.lessonIdx}`}
