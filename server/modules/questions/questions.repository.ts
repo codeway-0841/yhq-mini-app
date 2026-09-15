@@ -4,7 +4,10 @@ import { questions, topics, questionExplanations } from '../../schema'
 
 // In-memory TTL cache — questions/topics change rarely (manual seed only),
 // so there's no need to hit the DB on every request.
-const TTL_MS = 5 * 60_000
+// EGRESS TEJASH (2026-09-16 Neon overage): TTL 5 → 30 min (6x kam DB refetch).
+// Admin CRUD'dan keyin invalidateCache() darhol tozalaydi — eskirgan kontent
+// faqat tabiiy TTL ichida yashaydi.
+const TTL_MS = 30 * 60_000
 const cache  = new Map<string, { at: number; data: unknown }>()
 
 async function cached<T>(key: string, fn: () => Promise<T>): Promise<T> {

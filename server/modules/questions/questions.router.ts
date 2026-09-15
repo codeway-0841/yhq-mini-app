@@ -63,12 +63,17 @@ const QuestionsQuery = z.object({
 })
 
 /**
- * Public content — CDN edge cache (10 min) + browser cache (5 min).
+ * Public content — CDN edge cache (1 soat) + browser cache (10 min).
  * Savol matni ommaviy kontent (correctAnswer strip qilinadi) — asl IP server'da
  * (javoblar + izohlar). CDN haqiqiy so'rovlarning ko'pini yutadi, origin'ga esa
  * faqat CDN-miss tushadi — IP cap quyida shuning uchun real user'larga tegmaydi.
+ *
+ * EGRESS TEJASH (2026-09-16 Neon overage): s-maxage 600s → 3600s. Admin
+ * CRUD'dan keyingi eskirgan kontent ko'pi bilan 1 soat yashaydi (CDN purge
+ * yo'q) — savollar kam o'zgargani uchun qabul qilindi. Server memory cache
+ * esa admin CRUD'da darhol tozalanadi (invalidateCache).
  */
-const CONTENT_CACHE = 'public, max-age=300, s-maxage=600, stale-while-revalidate=3600'
+const CONTENT_CACHE = 'public, max-age=600, s-maxage=3600, stale-while-revalidate=86400'
 
 /** Kuniga bir IP dan necha marta BUTUN bank (topicId'siz) tortish mumkin —
  *  massa-yig'ish SIgnali (script'dan yuzlab refetch). Normal user CDN + client

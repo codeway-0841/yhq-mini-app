@@ -66,7 +66,8 @@ describe('GET /api/questions — full-bank cap KUZATUV rejimida', () => {
     const res = await request(buildApp()).get('/api/questions')
     expect(res.status).toBe(200)
     expect(res.headers['cache-control']).toContain('public')
-    expect(res.headers['cache-control']).toContain('max-age=300')
+    // EGRESS TEJASH: browser cache 10 min (CDN s-maxage=3600 alohida)
+    expect(res.headers['cache-control']).toContain('max-age=600')
   })
 
   it('cap oshgan (count=21) → 200 BERILADI, lekin audit log yoziladi', async () => {
