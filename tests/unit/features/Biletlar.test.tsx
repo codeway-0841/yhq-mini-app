@@ -2,7 +2,7 @@
  * Biletlar sahifasi — savollarni 20 talik biletlarga taqsimlash, "Xatolar"
  * tabidagi filtr/badge va bilet ochilganda test sahifasiga uzatiladigan holat.
  */
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 
 const { mockNavigate } = vi.hoisted(() => ({ mockNavigate: vi.fn() }))
@@ -12,6 +12,8 @@ vi.mock('react-router-dom', async (importOriginal) => {
 })
 
 import Biletlar from '../../../src/features/tickets/Biletlar'
+import { api } from '../../../src/shared/api'
+import { config } from '../../../src/shared/config'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
@@ -361,5 +363,57 @@ describe('Biletlar', () => {
     fireEvent.click(morFilter)
     expect(screen.getByText('Ot so\'z turkumi')).toBeInTheDocument()
     expect(screen.queryByText('Fonetika asoslari')).toBeNull()
+  })
+})
+
+describe('Biletlar v2 (server ticket manifest, yhq)', () => {
+  beforeEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
+    vi.spyOn(api, 'getTicketCatalog').mockResolvedValue({
+      subjectId: 'yhq',
+      ticketSize: 20,
+      ticketCount: 2,
+      totalQuestions: 45,
+    })
+  })
+
+  afterEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = false
+    vi.restoreAllMocks()
+  })
+
+  it('katalogdan bilet chizadi — full-bank savollari shart emas', async () => {
+    useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false })
+
+    render(<Biletlar />)
+
+    expect(await screen.findByText('1 - bilet')).toBeTruthy()
+    expect(screen.getByText('2 - bilet')).toBeTruthy()
+    expect(screen.queryByText('3 - bilet')).toBeNull()
+    expect(api.getTicketCatalog).toHaveBeenCalledWith('yhq', 'uz')
+    // "Xatolar" tab v2'da yo'q (ticket→question mapping faqat legacy'da)
+    expect(screen.queryByText('Xatolar')).toBeNull()
+  })
+
+  it('navigatsiyada faqat server selector — master ID YO\'Q', async () => {
+    render(<Biletlar />)
+    fireEvent.click(await screen.findByText('1 - bilet'))
+
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: {
+        title: '1 - bilet',
+        mode: 'ticket',
+        serverSelector: { type: 'ticket', ticketNumber: 1 },
+      },
+    })
+  })
+
+  it('katalog yiqilsa qayta urinish taklif qiladi', async () => {
+    vi.mocked(api.getTicketCatalog).mockRejectedValue(new Error('offline'))
+
+    render(<Biletlar />)
+
+    fireEvent.click(await screen.findByText('Qayta urinish'))
+    expect(api.getTicketCatalog).toHaveBeenCalledTimes(2)
   })
 })

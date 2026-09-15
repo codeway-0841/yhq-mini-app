@@ -1,7 +1,8 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import SpeedPage from '../../../src/features/speed/SpeedPage'
+import { TIMEOUT_OPTION_ID } from '../../../shared/test-session'
 import { api } from '../../../src/shared/api'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
@@ -32,6 +33,7 @@ const deliveredQuestion = {
 
 describe('SpeedPage server-authoritative delivery', () => {
   beforeEach(() => {
+    vi.useRealTimers()
     vi.restoreAllMocks()
     vi.spyOn(api, 'warmUp').mockImplementation(() => {})
     vi.spyOn(api, 'finishTestSession').mockResolvedValue({
@@ -114,6 +116,58 @@ describe('SpeedPage server-authoritative delivery', () => {
     expect(payload.results).toEqual([{ questionId: 1, status: 'correct' }])
     expect(payload.earnedXp).toBe(12)
     expect(payload.earnedCoins).toBe(2)
+  })
+
+  it('submits a server-authoritative timeout answer when time expires', async () => {
+    vi.useFakeTimers()
+    try {
+      vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+        attempt: {
+          position: 0,
+          correct: false,
+          correctOptionId: 'b',
+          duplicate: false,
+          dailyStreak: 0,
+          xp: 5,
+          xpEarned: 0,
+          coinsEarned: 0,
+          coinBalance: 7,
+          coinSaved: false,
+        },
+        append: [],
+        session: {
+          id: 'speed-session',
+          subjectId: 'yhq',
+          mode: 'random',
+          status: 'active',
+          answered: 1,
+          total: 1,
+          expiresAt: '2026-09-12T10:00:00.000Z',
+        },
+      })
+
+      render(<MemoryRouter><SpeedPage /></MemoryRouter>)
+      await act(async () => { await vi.advanceTimersByTimeAsync(0) })
+      expect(screen.getByRole('button', { name: 'A Birinchi variant' })).toBeTruthy()
+
+      // 10 soniyalik limit tugaydi — har soniya alohida (zanjirli 1s timer'lar
+      // har tick'da qayta qo'yiladi, bitta katta advance'da React effect
+      // ulgurmasligi mumkin). Javob serverga timeout marker bilan yoziladi.
+      for (let i = 0; i < 10; i++) {
+        await act(async () => { await vi.advanceTimersByTimeAsync(1000) })
+      }
+      expect(api.submitTestSessionAnswer).toHaveBeenCalledWith('speed-session', expect.objectContaining({
+        position: 0,
+        deliveryToken: 'v1.delivery-token',
+        selectedOptionId: TIMEOUT_OPTION_ID,
+      }))
+      // Server reveal ko'rsatiladi va o'yin wrong bilan davom etadi
+      await act(async () => { await vi.advanceTimersByTimeAsync(600) })
+      const payload = JSON.parse(screen.getByTestId('speed-results').textContent!)
+      expect(payload.results).toEqual([{ questionId: 1, status: 'incorrect' }])
+    } finally {
+      vi.useRealTimers()
+    }
   })
 
   it('shows a safe empty state if the server session has no deliverable question', async () => {

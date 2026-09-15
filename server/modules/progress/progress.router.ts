@@ -41,7 +41,12 @@ router.get(
     }
     const { subjectId, language } = parsed.data
     const subject = resolveSubject(subjectId)
-    const secret = config.testSessions.proofSecret || 'fallback-proof-secret'
+    // FAIL-CLOSED: Top-10 launch token'lar proof secret bilan imzolanadi.
+    // Statik fallback string bilan imzolash token forge yo'lini ochardi
+    // (source ochiq — har kim o'z userId'siga istalgan questionId uchun
+    // token yasay olardi). Secret bo'lmasa 503 (question-bank-protection v2).
+    const secret = config.testSessions.proofSecret
+    if (!secret) throw new AppError(503, 'test_sessions_unavailable')
     const overview = await progressRepository.getMistakesOverview(
       userId,
       subject.id,
@@ -77,6 +82,11 @@ router.post(
   rateLimit({ maxPerMinute: 120, bucket: 'progress' }),
   validate({ body: ResultSchema }),
   wrap(async (req, res) => {
+    // Legacy contraction (v2 Phase 4): flag o'chiq bo'lsa arbitrary questionId
+    // submission YO'Q — 410 (javob faqat test-session answer orqali).
+    // Default ON (prod o'zgarishsiz); rollback = env o'chirish.
+    if (!config.legacy.resultEnabled) throw new AppError(410, 'legacy_result_disabled')
+
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
 

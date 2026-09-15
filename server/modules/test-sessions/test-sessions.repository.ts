@@ -124,6 +124,38 @@ export const testSessionsRepository = {
     return rows.map((row) => Number(row.id))
   },
 
+  /**
+   * Adaptive (SM-2) ordering signallari — bitta tx ichida:
+   * SR kartalar (ef/reps/dueAt) + ko'rilgan savollar (progress_questions).
+   * Tartiblashning o'zi pure `orderAdaptiveIds` (shared/spaced-repetition) da —
+   * bu method faqat xom signallarni yuklaydi.
+   */
+  async listAdaptiveSignals(
+    userId: string,
+    subjectId: string,
+    txOrDb: DB,
+  ): Promise<{
+    cards: Array<{ questionId: number; ef: number; reps: number; dueAt: number }>
+    answeredIds: number[]
+  }> {
+    const [cards, answered] = await Promise.all([
+      executeRows<{ questionId: number; ef: number; reps: number; dueAt: string | Date }>(sql`
+        SELECT question_id::int AS "questionId", ef::float AS ef, reps::int AS reps, due_at AS "dueAt"
+        FROM card_progress
+        WHERE user_id = ${userId} AND subject_id = ${subjectId}
+      `, txOrDb),
+      executeRows<{ id: number }>(sql`
+        SELECT question_id::int AS id
+        FROM progress_questions
+        WHERE user_id = ${userId} AND subject_id = ${subjectId}
+      `, txOrDb),
+    ])
+    return {
+      cards: cards.map((card) => ({ ...card, dueAt: new Date(card.dueAt).getTime() })),
+      answeredIds: answered.map((row) => Number(row.id)),
+    }
+  },
+
   async lockOwned(sessionId: string, userId: string, txOrDb: DB): Promise<TestSessionRow | null> {
     const rows = await executeRows<TestSessionRow>(sql`
       SELECT

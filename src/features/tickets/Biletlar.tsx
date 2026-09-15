@@ -3,6 +3,8 @@ import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
+import { config } from '../../shared/config'
+import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -44,26 +46,63 @@ export default function Biletlar() {
   const questionsError   = useQuestionsStore((s) => s.error)
   const subjectId        = useSubjectStore((s) => s.subjectId)
 
-  // `questionsError` shartda — TestPage'dagi bilan bir xil cheksiz sikl
-  // (izohi useQuestionsStore.failedKey ustida).
+  // v2: faqat yhq global bilet katalogi server manifest'dan (full-bank YO'Q).
+  // Boshqa fanlar per-topic bilet UI'ga tayangan — server global slice bilan
+  // mos emas, ular legacy'da qoladi (keyingi bosqich).
+  const isV2 = config.testSessionsV2Enabled && subjectId === 'yhq'
+
+  const [catalog, setCatalog] = useState<{
+    ticketSize: number; ticketCount: number; totalQuestions: number
+  } | null>(null)
+  const [catalogFailed, setCatalogFailed] = useState(false)
+  const [catalogRetry, setCatalogRetry] = useState(0)
+
   useEffect(() => {
+    if (!isV2) return
+    let cancelled = false
+    setCatalog(null)
+    setCatalogFailed(false)
+    api.getTicketCatalog(subjectId, settings.language)
+      .then((c) => { if (!cancelled) setCatalog(c) })
+      .catch(() => { if (!cancelled) setCatalogFailed(true) })
+    return () => { cancelled = true }
+  }, [isV2, subjectId, settings.language, catalogRetry])
+
+  // `questionsError` shartda — TestPage'dagi bilan bir xil cheksiz sikl
+  // (izohi useQuestionsStore.failedKey ustida). v2'da full-bank umuman
+  // tortilmaydi.
+  useEffect(() => {
+    if (isV2) return
     if (!questionsLoaded && !questionsLoading && !questionsError) {
       void useQuestionsStore.getState().load(settings.language, subjectId)
     }
-  }, [questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
+  }, [isV2, questionsLoaded, questionsLoading, questionsError, settings.language, subjectId])
 
   useEffect(() => {
     setSelectedChapter('all')
   }, [subjectId])
 
-  const TABS = [
-    { id: 'all',    label: tt('allTab') },
-    { id: 'errors', label: tt('errorsTab') },
-  ]
+  const TABS = isV2
+    ? [{ id: 'all',    label: tt('allTab') }]
+    : [
+        { id: 'all',    label: tt('allTab') },
+        { id: 'errors', label: tt('errorsTab') },
+      ]
 
   const isRu = settings.language === 'ru'
 
   const tickets = useMemo<TicketItem[]>(() => {
+    // v2: server manifest'dan — question ID'siz katalog (delivery TestRoutePage
+    // orqali server-owned ticket session). Sonlar server dedup haqiqati.
+    if (isV2) {
+      if (!catalog) return []
+      return Array.from({ length: catalog.ticketCount }, (_, i) => ({
+        id: i + 1,
+        title: `${i + 1} - ${tt('ticketWord')}`,
+        questionCount: catalog.ticketSize,
+        questionIds: [],
+      }))
+    }
     if (!questions.length) return []
 
     // YHQ dan tashqari barcha fanlar uchun mavzulashtirilgan biletlar
@@ -110,7 +149,7 @@ export default function Biletlar() {
       const ids = shuffled.slice(i * ticketSize, (i + 1) * ticketSize).map((q) => q.id)
       return { id: i + 1, title: `${i + 1} - ${tt('ticketWord')}`, questionCount: ids.length, questionIds: ids }
     })
-  }, [questions, topics, subjectId, isRu, tt])
+  }, [isV2, catalog, questions, topics, subjectId, isRu, tt])
 
   const tabFiltered = useMemo(() => {
     if (tab === 'errors') {
@@ -145,15 +184,25 @@ export default function Biletlar() {
       navigate('/premium')
       return
     }
-    // Har doim 1-savoldan boshlanadi (avval /test/:id noto'g'ri savolni ochardi)
-    navigate('/test/1', {
-      state: {
-        questionIds: ticket.questionIds,
-        title: ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title,
-        mode: 'ticket',
-        serverSelector: { type: 'ticket', ticketNumber: ticket.id },
-      },
-    })
+    const title = ticket.subtitle ? `${ticket.title} (${ticket.subtitle})` : ticket.title
+    // Har doim 1-savoldan boshlanadi (avval /test/:id noto'g'ri savolni ochardi).
+    // v2: master ID'siz — faqat server selector (TestRoutePage server session ochadi).
+    navigate('/test/1', isV2
+      ? {
+          state: {
+            title,
+            mode: 'ticket',
+            serverSelector: { type: 'ticket', ticketNumber: ticket.id },
+          },
+        }
+      : {
+          state: {
+            questionIds: ticket.questionIds,
+            title,
+            mode: 'ticket',
+            serverSelector: { type: 'ticket', ticketNumber: ticket.id },
+          },
+        })
   }
 
   return (
@@ -228,7 +277,15 @@ export default function Biletlar() {
 
       {filtered.length === 0 && (
         <div className="text-center text-pmuted py-16 text-sm">
-          {tab === 'errors' ? tt('noErrors') : tt('loadingDots')}
+          {isV2 && catalogFailed ? (
+            <button
+              type="button"
+              onClick={() => setCatalogRetry((c) => c + 1)}
+              className="rounded-2xl bg-psurface px-6 py-3 text-sm font-semibold text-pfg hover:bg-pcard active:scale-[0.98] transition-all shadow-xs"
+            >
+              {isRu ? 'Повторить' : 'Qayta urinish'}
+            </button>
+          ) : tab === 'errors' ? tt('noErrors') : tt('loadingDots')}
         </div>
       )}
     </div>

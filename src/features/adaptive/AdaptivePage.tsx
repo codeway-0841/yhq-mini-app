@@ -11,6 +11,8 @@ import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
 import { api }              from '../../shared/api'
+import { config }           from '../../shared/config'
+import { ServerPracticePage } from '../test'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
 import { shuffleArray }     from '../../shared/lib/seeded'
 import { isEffectivePremium } from '../../../shared/test-access'
@@ -146,6 +148,14 @@ export default function AdaptivePage() {
     if (!q?.options) return []
     return settings?.shuffleOptions ? shuffleArray(q.options) : q.options
   }, [q?.options, settings?.shuffleOptions])
+
+  // v2: server-owned adaptive session — bounded delivery, server-authoritative
+  // SM-2 (karta client'dan kelmaydi). Free limit server'da cap'lanadi
+  // (ADAPTIVE_FREE_SESSION_LIMIT); SR summary/EF-badge UX pariteti keyingi
+  // bosqichda qaytariladi (xavfsiz aggregate'lar — ustuvor emas).
+  if (config.testSessionsV2Enabled) {
+    return <ServerPracticePage mode="adaptive" title={tt('adaptiveTitle')} />
+  }
 
   if (!isPremium && sessionCount >= ADAPTIVE_FREE_SESSION_LIMIT) {
     return (

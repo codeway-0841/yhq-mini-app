@@ -41,6 +41,14 @@ export const MarathonTestSelectorSchema = z.object({
   type: z.literal('marathon'),
 })
 
+/**
+ * Adaptive (SM-2) — server-owned tartib: due kartalar → kuchsiz → unseen.
+ * Client hech qanday card/ID yubormaydi; SM-2'ni server authoritative hisoblaydi.
+ */
+export const AdaptiveTestSelectorSchema = z.object({
+  type: z.literal('adaptive'),
+})
+
 export const SavedTestSelectorSchema = z.object({
   type: z.literal('saved'),
 })
@@ -64,6 +72,7 @@ export const TestSelectorSchema = z.discriminatedUnion('type', [
   ExamTestSelectorSchema,
   MockTestSelectorSchema,
   MarathonTestSelectorSchema,
+  AdaptiveTestSelectorSchema,
   SavedTestSelectorSchema,
   MistakesTestSelectorSchema,
   SingleTestSelectorSchema,
@@ -88,6 +97,14 @@ export const FinishTestSessionSchema = z.object({
   status: z.enum(['completed', 'abandoned']).default('completed'),
 })
 
+/**
+ * Speed timeout belgisi — client vaqt tugaganda shu marker bilan javob yuboradi,
+ * server uni har doim XATO deb yozadi (rolling delivery/progress desync bo'lmaydi).
+ * `selectedOptionId` string (max 32) ichiga sig'adi; oddiy option ID'lar (`F1`,
+ * `F2`, ...) bilan to'qnashmaydi.
+ */
+export const TIMEOUT_OPTION_ID = '__timeout__'
+
 export type CreateTestSessionInput = z.infer<typeof CreateTestSessionSchema>
 export type SubmitTestAnswerInput = z.infer<typeof SubmitTestAnswerSchema>
 
@@ -104,7 +121,7 @@ export interface DeliveredTestQuestion {
 export interface TestSessionState {
   id: string
   subjectId: string
-  mode: 'random' | 'topic' | 'ticket' | 'lesson' | 'module' | 'exam' | 'mock' | 'marathon' | 'saved' | 'mistakes' | 'single'
+  mode: 'random' | 'topic' | 'ticket' | 'lesson' | 'module' | 'exam' | 'mock' | 'marathon' | 'adaptive' | 'saved' | 'mistakes' | 'single'
   status: 'active' | 'completed' | 'abandoned' | 'expired'
   answered: number
   total: number

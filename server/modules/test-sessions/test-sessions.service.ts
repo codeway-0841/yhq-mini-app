@@ -9,7 +9,8 @@ import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-bat
 import { tashkentDate } from '../../utils/date'
 import { Sentry } from '../../utils/sentry'
 import { getExamPreset } from '../../../shared/exam-presets'
-import { FREE_TOPIC_QUESTION_COUNT, isPremiumTest, ticketQuestionCount } from '../../../shared/test-access'
+import { ADAPTIVE_FREE_SESSION_LIMIT, FREE_TOPIC_QUESTION_COUNT, isPremiumTest, ticketQuestionCount } from '../../../shared/test-access'
+import { createCard, orderAdaptiveIds, updateCard } from '../../../shared/spaced-repetition'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
 import { isPremiumUser } from '../../utils/premium'
 import type {
@@ -20,6 +21,7 @@ import type {
   TestSessionResponse,
   TestSessionState,
 } from '../../../shared/test-session'
+import { TIMEOUT_OPTION_ID } from '../../../shared/test-session'
 import { createDeliveryToken, verifyDeliveryToken } from './delivery-proof'
 import { verifyLaunchToken } from './launch-token'
 import {
@@ -66,9 +68,38 @@ async function candidateQuestionIds(
   return [...ids]
 }
 
+/**
+ * Adaptive candidate tartibi: semantic-dedup'langan bank → due/kuchsiz/unseen.
+ * Free user'ga server-owned cap (ADAPTIVE_FREE_SESSION_LIMIT) — client'dagi
+ * eski limit bilan bir xil daraja (store persist qilinmasdi).
+ */
+async function adaptiveOrderedIds(
+  userId: string,
+  subjectId: string,
+  bankId: string,
+  bankVersion: number,
+  language: 'uz' | 'ru',
+  premium: boolean,
+  tx: Parameters<typeof testSessionsRepository.listQuestionIds>[1],
+): Promise<number[]> {
+  const candidates = await candidateQuestionIds(bankId, bankVersion, undefined, language, tx)
+  const signals = await testSessionsRepository.listAdaptiveSignals(userId, subjectId, tx)
+  const ordered = orderAdaptiveIds(
+    candidates,
+    new Map(signals.cards.map((card) => [card.questionId, card])),
+    signals.answeredIds,
+    Date.now(),
+  )
+  return premium ? ordered : ordered.slice(0, ADAPTIVE_FREE_SESSION_LIMIT)
+}
+
 function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number {
   if (selector.type === 'marathon') {
     return config.testSessions.marathonTtlMinutes
+  }
+  // Adaptive rolling sessiya (premium'da uzoq) — exam kabi qisqa emas.
+  if (selector.type === 'adaptive') {
+    return config.testSessions.ttlMinutes
   }
   const productMinutes = selector.type === 'exam'
     ? getExamPreset(selector.presetId)?.durationMinutes ?? 25
@@ -197,6 +228,7 @@ export const testSessionsService = {
       throw new AppError(400, 'exam_preset_not_supported')
     }
     const needsPremiumLookup = isPremiumTest(input.selector) || input.selector.type === 'topic'
+      || input.selector.type === 'adaptive'
     const premium = needsPremiumLookup ? await isPremiumUser(userId) : false
     if (isPremiumTest(input.selector) && !premium) {
       throw new AppError(403, 'premium_required')
@@ -224,6 +256,10 @@ export const testSessionsService = {
         : input.selector.type === 'mistakes'
           ? await testSessionsRepository.listMistakeQuestionIds(
               userId, input.subjectId, subject.dataSourceId, tx, ...(input.selector.topicId !== undefined ? [input.selector.topicId] : []),
+            )
+        : input.selector.type === 'adaptive'
+          ? await adaptiveOrderedIds(
+              userId, input.subjectId, subject.dataSourceId, bankVersion, input.language, premium, tx,
             )
         : await candidateQuestionIds(
             subject.dataSourceId, bankVersion, topicId, input.language, tx,
@@ -257,6 +293,9 @@ export const testSessionsService = {
       if (input.selector.type === 'marathon' && candidateIds.length === 0) {
         throw new AppError(409, 'not_enough_questions')
       }
+      if (input.selector.type === 'adaptive' && candidateIds.length === 0) {
+        throw new AppError(409, 'not_enough_questions')
+      }
 
       const requestedCount = input.selector.type === 'random'
         ? input.selector.count
@@ -268,7 +307,7 @@ export const testSessionsService = {
             ? candidateIds.length
           : input.selector.type === 'saved' || input.selector.type === 'mistakes'
             ? Math.min(candidateIds.length, MAX_TOPIC_QUESTIONS)
-            : input.selector.type === 'marathon'
+            : input.selector.type === 'marathon' || input.selector.type === 'adaptive'
               ? candidateIds.length
             : input.selector.type === 'single'
               ? 1
@@ -280,8 +319,11 @@ export const testSessionsService = {
       }
 
       const selectionSeed = randomBytes(32).toString('hex')
+      // Tartibli rejimlar (ticket/lesson/module/adaptive/single) shuffle'siz —
+      // tartib server-owned mazmunga ega (bilet ketma-ketligi, kurikulum, SM-2).
       const questionIds = input.selector.type === 'ticket' || input.selector.type === 'single'
         || input.selector.type === 'lesson' || input.selector.type === 'module'
+        || input.selector.type === 'adaptive'
         ? candidateIds
         : selectQuestionIds(candidateIds, selectionSeed, requestedCount)
       const initialIssued = Math.min(questionIds.length, config.testSessions.bufferSize) - 1
@@ -383,8 +425,14 @@ export const testSessionsService = {
       const [question] = await testSessionsRepository.getQuestions([questionId!], row.bankId, tx)
       if (!question) throw new AppError(409, 'test_session_bank_changed')
       const deliveredOptionMap = languageOf(row) === 'ru' ? question.optionsRu : question.optionsUz
-      if (!(input.selectedOptionId in deliveredOptionMap)) throw new AppError(400, 'invalid_option')
-      const correct = input.selectedOptionId === question.correctAnswer
+      // Speed timeout: client vaqt tugaganda `__timeout__` marker yuboradi —
+      // bu HAR DOIM xato deb yoziladi (rolling delivery davom etadi, progress
+      // desync bo'lmaydi). Oddiy option ID'lar qat'iy validatsiyada qoladi.
+      const timedOut = input.selectedOptionId === TIMEOUT_OPTION_ID
+      if (!timedOut && !(input.selectedOptionId in deliveredOptionMap)) {
+        throw new AppError(400, 'invalid_option')
+      }
+      const correct = !timedOut && input.selectedOptionId === question.correctAnswer
       const now = new Date()
       const elapsedServer = Math.max(0, now.getTime() - normalizeDate(row.lastActiveAt).getTime())
 
@@ -413,6 +461,36 @@ export const testSessionsService = {
         txOrDb: tx,
       })
       if (!progressResult.updated) throw new AppError(404, 'progress_not_initialized')
+
+      // Adaptive SM-2 hook — server-authoritative: karta client'dan KELMAYDI,
+      // shu transaction ichida o'qiladi + yangilanadi (attempt + progress +
+      // card BITTA commit; crash'da yo'qolmaydi, duplicate'da takrorlanmaydi —
+      // duplicate yo'l yuqorida exact-replay bilan qaytgan).
+      if (row.mode === 'adaptive') {
+        const prev = await progressRepository.findCard(userId, row.subjectId, question.id, tx)
+        const next = updateCard(
+          prev
+            ? {
+                questionId: question.id,
+                ef: prev.ef,
+                interval: prev.interval,
+                reps: prev.reps,
+                dueAt: prev.dueAt.getTime(),
+              }
+            : createCard(question.id),
+          correct ? 1 : 0,
+          now.getTime(),
+        )
+        await progressRepository.upsertCard({
+          userId,
+          subjectId: row.subjectId,
+          questionId: question.id,
+          ef: next.ef,
+          interval: next.interval,
+          reps: next.reps,
+          dueAt: new Date(next.dueAt),
+        }, tx)
+      }
 
       const answeredCount = row.answeredCount + 1
       const issuedThrough = Math.min(

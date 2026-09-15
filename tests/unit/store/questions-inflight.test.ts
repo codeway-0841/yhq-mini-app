@@ -208,3 +208,35 @@ describe("xato holati — cheksiz qayta urinish YO'Q", () => {
     expect(useQuestionsStore.getState().questions).toHaveLength(2)
   })
 })
+
+describe('useQuestionsStore.loadTopics() — v2 metadata-only katalog', () => {
+  const topics = [{ id: 1, nameUz: 'M1', nameRu: 'T1', slug: 'm1', questionCount: 20 }]
+
+  it('savol matni tortmaydi — faqat /topics', async () => {
+    getTopics.mockResolvedValue(topics)
+
+    await useQuestionsStore.getState().loadTopics('yhq')
+
+    expect(getTopics).toHaveBeenCalledWith('yhq')
+    expect(getQuestions).not.toHaveBeenCalled()
+    expect(useQuestionsStore.getState().topics).toEqual(topics)
+    expect(useQuestionsStore.getState().questions).toHaveLength(0)
+  })
+
+  it('ayni fan uchun ikkinchi chaqiruv fetch qilmaydi', async () => {
+    getTopics.mockResolvedValue(topics)
+
+    await useQuestionsStore.getState().loadTopics('yhq')
+    await useQuestionsStore.getState().loadTopics('yhq')
+
+    expect(getTopics).toHaveBeenCalledTimes(1)
+  })
+
+  it('xatoda store buzilmaydi — xato caller\'ga chiqadi', async () => {
+    getTopics.mockRejectedValue(new Error('offline'))
+
+    await expect(useQuestionsStore.getState().loadTopics('yhq')).rejects.toThrow('offline')
+    expect(useQuestionsStore.getState().topics).toHaveLength(0)
+    expect(useQuestionsStore.getState().failedKey).toBeNull()
+  })
+})

@@ -1,8 +1,14 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
+import express from 'express'
 import request from 'supertest'
 import { createApp } from '../../../server/app'
 import * as providers from '../../../server/providers'
-import { questionsRepository } from '../../../server/modules/questions/questions.repository'
+import { questionsRepository, escapeLikePattern } from '../../../server/modules/questions/questions.repository'
+import questionsRouter from '../../../server/modules/questions/questions.router'
+import { testSessionsRepository } from '../../../server/modules/test-sessions/test-sessions.repository'
+import { errorHandler } from '../../../server/middleware/error-handler'
+import { verifyLaunchToken } from '../../../server/modules/test-sessions/launch-token'
+import { config } from '../../../server/config'
 
 const app = createApp()
 
@@ -43,6 +49,20 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
       const res = await request(app).get('/api/questions?topicId=invalid_id').expect(400)
       expect(res.body.error).toBe("Noto'g'ri so'rov parametrlari")
     })
+
+    it('returns 410 without touching the bank when the legacy bank is contracted', async () => {
+      const spy = vi.spyOn(providers, 'getProvider')
+      const holder = config.legacy as { questionBankEnabled: boolean }
+      const orig = holder.questionBankEnabled
+      holder.questionBankEnabled = false
+      try {
+        const res = await request(app).get('/api/questions').expect(410)
+        expect(res.body.error).toBe('legacy_question_bank_disabled')
+        expect(spy).not.toHaveBeenCalled()
+      } finally {
+        holder.questionBankEnabled = orig
+      }
+    })
   })
 
   describe('GET /api/topics', () => {
@@ -57,13 +77,62 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
         getTopics: vi.fn().mockResolvedValue(mockTopics),
         getQuestionById: vi.fn().mockResolvedValue(null),
       } as any)
+      vi.spyOn(questionsRepository, 'countByTopic').mockResolvedValue(new Map([[1, 10]]))
 
       const res = await request(app).get('/api/topics?subject=yhq').expect(200)
 
       expect(res.body).toHaveLength(1)
       expect(res.body[0].nameUz).toBe('Mavzu 1')
+      // Katalog metadata — full-bank'siz UI uchun son, javob kalitsiz
+      expect(res.body[0].questionCount).toBe(10)
+      expect(res.body[0]).not.toHaveProperty('correctAnswer')
+    })
+
+  it('still returns the catalog when counts fail (fail-open metadata)', async () => {
+      vi.spyOn(providers, 'getProvider').mockReturnValue({
+        getAllQuestions: vi.fn().mockResolvedValue([]),
+        getQuestionsByTopic: vi.fn().mockResolvedValue([]),
+        getTopics: vi.fn().mockResolvedValue([{ id: 2, nameUz: 'M2', nameRu: 'T2', slug: 'm2' }]),
+        getQuestionById: vi.fn().mockResolvedValue(null),
+      } as any)
+      vi.spyOn(questionsRepository, 'countByTopic').mockRejectedValue(new Error('db down'))
+
+      const res = await request(app).get('/api/topics?subject=yhq').expect(200)
+      expect(res.body).toHaveLength(1)
+      expect(res.body[0].questionCount).toBe(0)
     })
   })
+})
+
+describe('GET /api/ticket-catalog (v2 ticket manifest)', () => {
+  it('returns counts only — no question text, options, IDs or answers', async () => {
+    vi.spyOn(testSessionsRepository, 'listQuestionIds').mockResolvedValue(
+      Array.from({ length: 45 }, (_, i) => i + 1),
+    )
+
+    const res = await request(app).get('/api/ticket-catalog?subject=yhq&language=uz').expect(200)
+
+    expect(res.body).toEqual({
+      subjectId: 'yhq',
+      ticketSize: 20,
+      ticketCount: 2,
+      totalQuestions: 45,
+    })
+    expect(res.headers['cache-control']).toContain('public')
+  })
+
+  it('returns 400 for invalid query parameters', async () => {
+    await request(app).get('/api/ticket-catalog?language=fr').expect(400)
+  })
+
+  it('returns an empty catalog for an empty bank', async () => {
+    vi.spyOn(testSessionsRepository, 'listQuestionIds').mockResolvedValue([])
+
+    const res = await request(app).get('/api/ticket-catalog?subject=yhq').expect(200)
+    expect(res.body.ticketCount).toBe(0)
+    expect(res.body.totalQuestions).toBe(0)
+  })
+})
 
   describe('GET /api/questions/:questionId/explanation', () => {
     it('returns 400 for invalid questionId', async () => {
@@ -104,5 +173,82 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
       expect(res.body.questionId).toBe(10)
       expect(res.body.text).toBe('Согласно правилам...')
     })
+  })
+
+describe('GET /api/questions/search (v2 safe launch)', () => {
+  // Izolyatsiya mount: global auth/CDN middleware'siz, req.userId to'g'ridan-to'g'ri inject.
+  function searchApp(userId?: string) {
+    const instance = express()
+    if (userId) {
+      instance.use((req, _res, next) => { (req as { userId?: string }).userId = userId; next() })
+    }
+    instance.use('/api', questionsRouter)
+    instance.use(errorHandler)
+    return instance
+  }
+
+  it('requires authentication even outside production', async () => {
+    const spy = vi.spyOn(questionsRepository, 'search')
+    await request(searchApp())
+      .get('/api/questions/search?subjectId=yhq&query=toxtash&language=uz')
+      .expect(401)
+    expect(spy).not.toHaveBeenCalled()
+  })
+
+  it('rejects short queries before touching the bank', async () => {
+    const spy = vi.spyOn(questionsRepository, 'search')
+    await request(searchApp('user-1'))
+      .get('/api/questions/search?subjectId=yhq&query=a&language=uz')
+      .expect(400)
+    expect(spy).not.toHaveBeenCalled()
+  })
+
+  it('returns launch-token hits without master IDs or answers', async () => {
+    vi.spyOn(questionsRepository, 'search').mockResolvedValue([
+      { id: 101, text: 'Savol matni', topicId: 9 },
+    ])
+    const res = await request(searchApp('user-1'))
+      .get('/api/questions/search?subjectId=yhq&query=savol&language=uz')
+      .expect(200)
+
+    expect(res.headers['cache-control']).toBe('private, no-store')
+    expect(res.body.hits).toHaveLength(1)
+    const hit = res.body.hits[0]
+    expect(hit.text).toBe('Savol matni')
+    expect(hit.topicId).toBe(9)
+    expect(typeof hit.launchToken).toBe('string')
+    expect(hit).not.toHaveProperty('id')
+    expect(hit).not.toHaveProperty('questionId')
+    expect(hit).not.toHaveProperty('correctAnswer')
+
+    // Token o'sha user+fan'ga bound — begona user ishlatolmaydi
+    const secret = config.testSessions.proofSecret
+    expect(secret).toBeTruthy()
+    expect(verifyLaunchToken(secret!, { userId: 'user-1', subjectId: 'yhq' }, hit.launchToken)?.questionId).toBe(101)
+    expect(verifyLaunchToken(secret!, { userId: 'user-2', subjectId: 'yhq' }, hit.launchToken)).toBeNull()
+  })
+
+  it('fails closed without a proof secret', async () => {
+    vi.spyOn(questionsRepository, 'search').mockResolvedValue([
+      { id: 1, text: 'Q', topicId: null },
+    ])
+    const holder = config.testSessions as { proofSecret?: string }
+    const orig = holder.proofSecret
+    holder.proofSecret = undefined
+    try {
+      await request(searchApp('user-1'))
+        .get('/api/questions/search?subjectId=yhq&query=savol&language=uz')
+        .expect(503)
+    } finally {
+      holder.proofSecret = orig
+    }
+  })
+})
+
+describe('escapeLikePattern', () => {
+  it('escapes SQL LIKE wildcards so "%%" cannot enumerate the bank', () => {
+    expect(escapeLikePattern('%%')).toBe('\\%\\%')
+    expect(escapeLikePattern('a_b\\c')).toBe('a\\_b\\\\c')
+    expect(escapeLikePattern("to'xtash")).toBe("to'xtash")
   })
 })

@@ -24,6 +24,10 @@ interface QuestionsState {
    */
   failedKey: string | null
   load:      (lang: 'uz' | 'ru', subjectId?: string) => Promise<void>
+  /** Faqat mavzu metadata (v2 katalog sahifalari) — savol matni tortmaydi.
+   *  Xatoda throw (sahifa local error ko'rsatadi; legacy error/failedKey
+   *  oqimiga tegmaydi). */
+  loadTopics: (subjectId?: string) => Promise<void>
   /** Foydalanuvchi BOSGANDA qayta urinish — avtomatik takror emas. */
   retry:     (lang?: 'uz' | 'ru', subjectId?: string) => Promise<void>
   /** Admin CRUD'dan keyin cache'dan qat'iatan qayta yuklash (force) */
@@ -136,6 +140,16 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     const targetSubject = subjectId ?? get().subjectId
     set({ failedKey: null, error: null })
     await get().load(targetLang, targetSubject)
+  },
+
+  async loadTopics(subjectId) {
+    const sid = subjectId ?? useSubjectStore.getState().subjectId ?? get().subjectId
+    // Shu fan mavzulari allaqachon bor — qayta fetch yo'q
+    if (get().subjectId === sid && get().topics.length > 0) return
+    const topics = await api.getTopics(sid)
+    // Fan almashgan bo'lsa questions eskirgan — keyingi load() subject
+    // mismatch guard orqali qayta tortadi. Topics esa joriy fan uchun yangi.
+    set({ topics, subjectId: sid })
   },
 
   async reload() {

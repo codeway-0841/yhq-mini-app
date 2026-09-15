@@ -28,6 +28,95 @@ Not yet delivered, so the bank is **not fully protected yet**:
 - retirement/restriction of public full-bank delivery and the arbitrary legacy result route;
 - production migration, secrets, canary enablement, telemetry dashboard, and staged rollout.
 
+## 0.1. Continuation checkpoint (2026-09-15)
+
+Delivered in this session (no production deploy, no production migration;
+all contraction defaults keep production behavior unchanged):
+
+- search/Top-10 launch-token hardening: `GET /api/questions/search` now
+  requires auth (401, no `anonymous` fallback), fail-closed proof secret (503),
+  dedicated `search` rate-limit bucket (30/min), and SQL LIKE wildcard escaping
+  (`%%` can no longer enumerate the bank); `GET /progress/mistakes/overview`
+  fail-closed secret (static fallback strings removed — they allowed token forgery);
+- speed timeout is now server-authoritative: client submits `__timeout__`
+  (new `TIMEOUT_OPTION_ID` SSOT), server records it as incorrect inside the same
+  ACID answer transaction (rolling delivery continues, no progress desync);
+  unknown option IDs are still rejected with `invalid_option`;
+- adaptive migration: new server-owned `adaptive` selector (SM-2 order
+  due → weak → unseen → seen via pure `orderAdaptiveIds` in new
+  `shared/spaced-repetition.ts` SSOT; `src/shared/lib/spaced-repetition.ts`
+  re-exports it), server-authoritative SM-2 card update inside the answer
+  transaction (no untrusted client params), server-owned free cap
+  (`ADAPTIVE_FREE_SESSION_LIMIT=15`, same level as the old non-persisted client
+  limit); `AdaptivePage` delegates to `ServerPracticePage(mode='adaptive')`
+  behind `VITE_TEST_SESSIONS_V2` (legacy path unchanged when the flag is off);
+- legacy contraction (flag-gated, default ON): `LEGACY_QUESTION_BANK_ENABLED=false`
+  → `GET /api/questions` 410 `legacy_question_bank_disabled`;
+  `LEGACY_RESULT_ENABLED=false` → `POST /progress/:userId/result` 410
+  `legacy_result_disabled`; rollback = unset env;
+- service worker no longer caches `/api/questions` (only small public
+  `/api/topics` metadata); `GET /api/topics` now carries public `questionCount`
+  metadata (fail-open) so learner UI can draw catalogs without the full bank.
+
+Verification in this session:
+
+- `npm test` → 224 files / 1658 tests passed;
+- `npx tsc -p tsconfig.json --noEmit` → passed;
+- `npx tsc -p tsconfig.server.json --noEmit` → passed;
+- `npm run lint` → 0 errors (11 pre-existing warnings);
+- `npm run build` → passed; `npm run build:server` → passed;
+- `git diff --check` → passed.
+
+Deliberately deferred (next session):
+
+- ticket-catalog frontend migration (`Biletlar`), stats/learning-guide metadata,
+  bootstrap topics-only preload — legacy consumers still need the full bank,
+  so bootstrap stays unchanged until they migrate (spec Phase 3 order);
+- admin answer-bearing list pagination/detail hardening;
+- real-DB integration + Web/Telegram/APK smoke for this pass;
+- production rollout of `VITE_TEST_SESSIONS_V2` and contraction flags,
+  secrets/canary, telemetry dashboard.
+
+Pre-existing work preserved: the `stash@{0}` WIP entry
+(`WIP-before-city-delete-2026-09-15`) was inspected and left intact; its
+divergent city/library changes were not applied to this branch (only the
+already-committed v2 foundation was built upon).
+
+## 0.2. Continuation checkpoint (2026-09-16, senior pass)
+
+Ticket + stats migration (no production deploy, no production migration):
+
+- new public `GET /api/ticket-catalog?subject=&language=` — counts only
+  (`ticketSize`, `ticketCount`, `totalQuestions`), computed from the SAME
+  deduped candidate source as ticket sessions (no 404 drift), CDN-cached;
+- `GET /api/topics` already carries `questionCount` (previous pass);
+- `Biletlar` v2 (yhq only): catalog from the manifest, no full-bank fetch,
+  navigate with server `ticket` selector only (no master IDs), errors tab
+  hidden in v2 (ticket→question mapping needs IDs — use XatolarPage);
+  other subjects stay legacy (per-topic UI ≠ server global slices — needs
+  a product decision, not silent UI change);
+- `StatistikaPage` v2: weak topics from server mistakes overview
+  (`byTopic` + topics metadata via new `useQuestionsStore.loadTopics`,
+  metadata-only), practice opens server `mistakes`+`topicId` sessions;
+- `useQuestionsStore.loadTopics` — topics-only fetch (throws on error,
+  never touches legacy error/failedKey flow).
+
+Verification in this session:
+
+- `npm test` → 224 files / 1669 tests passed;
+- `npx tsc -p tsconfig.json --noEmit` → passed;
+- `npx tsc -p tsconfig.server.json --noEmit` → passed;
+- `npm run lint` → 0 errors;
+- `git diff --check` → passed.
+
+Still open (bank NOT fully protected — legacy endpoints default ON):
+
+- bootstrap topics-only preload (deferred: remaining legacy consumers still
+  call full-bank `load()`; harmless while flags are ON);
+- dashboard/octagon UI metadata cleanup, admin answer-list hardening;
+- real-DB integration + Web/Telegram/APK smoke for this pass;
+- staged contraction (`LEGACY_*=false`) only after the above.
+
 ## 1. Executive decision
 
 KIVVI must move from **public full-bank delivery** to **authenticated, server-owned test sessions with bounded delivery**.

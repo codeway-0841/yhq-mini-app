@@ -2,12 +2,13 @@
  * Statistika sahifasi — store'dagi counterlardan hosila ko'rsatkichlar
  * (level, aniqlik, seriya), haftalik grafik va zaif mavzular ro'yxati.
  */
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { render, screen, waitFor, fireEvent } from '@testing-library/react'
 
-const { mockNavigate, mockHistory } = vi.hoisted(() => ({
+const { mockNavigate, mockHistory, mockTopMistakes } = vi.hoisted(() => ({
   mockNavigate: vi.fn(),
   mockHistory: vi.fn(),
+  mockTopMistakes: vi.fn(),
 }))
 vi.mock('react-router-dom', async (importOriginal) => {
   const actual = await importOriginal<typeof import('react-router-dom')>()
@@ -15,10 +16,11 @@ vi.mock('react-router-dom', async (importOriginal) => {
 })
 vi.mock('../../../src/shared/api', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../../../src/shared/api')>()
-  return { ...actual, api: { ...actual.api, getDailyHistory: mockHistory } }
+  return { ...actual, api: { ...actual.api, getDailyHistory: mockHistory, getTopMistakes: mockTopMistakes } }
 })
 
 import StatistikaPage from '../../../src/features/stats/StatistikaPage'
+import { config } from '../../../src/shared/config'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
@@ -105,5 +107,50 @@ describe('StatistikaPage', () => {
     render(<StatistikaPage />)
 
     expect(mockHistory).not.toHaveBeenCalled()
+  })
+})
+
+describe('StatistikaPage v2 (server mistakes overview)', () => {
+  beforeEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
+    mockTopMistakes.mockReset().mockResolvedValue({
+      total: 5,
+      byTopic: [
+        { topicId: 10, count: 4 },
+        { topicId: 20, count: 1 },
+      ],
+      top: [],
+    })
+  })
+
+  afterEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = false
+  })
+
+  it('zaif mavzularni full-bank mapping siz server overview dan chizadi', async () => {
+    // Savollar BO'SH — legacy questionId→topic mapping ishlamaydi
+    useQuestionsStore.setState({ questions: [], loaded: false, loading: false })
+
+    render(<StatistikaPage />)
+
+    expect(await screen.findByText('Belgilar')).toBeTruthy()
+    expect(screen.getByText('Chiziqlar')).toBeTruthy()
+    expect(mockTopMistakes).toHaveBeenCalledWith('yhq', 'uz')
+  })
+
+  it('takrorlash server mistakes+topic session ochadi (master ID YO\'Q)', async () => {
+    useQuestionsStore.setState({ questions: [], loaded: false, loading: false })
+    render(<StatistikaPage />)
+
+    await screen.findByText('Belgilar')
+    fireEvent.click(screen.getAllByText(/Takrorlash/)[0])
+
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: {
+        mode: 'mistakes',
+        serverSelector: { type: 'mistakes', topicId: 10 },
+        title: 'Belgilar',
+      },
+    })
   })
 })

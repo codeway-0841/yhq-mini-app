@@ -1,12 +1,19 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import AdaptivePage from '../../../src/features/adaptive/AdaptivePage'
 import { api } from '../../../src/shared/api'
+import { config } from '../../../src/shared/config'
 import { useAdaptiveStore } from '../../../src/shared/store/useAdaptiveStore'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
+
+vi.mock('../../../src/features/test', () => ({
+  ServerPracticePage: (props: unknown) => (
+    <div data-testid="v2-adaptive">{JSON.stringify(props)}</div>
+  ),
+}))
 
 const mockQuestion = {
   id: 201,
@@ -99,5 +106,24 @@ describe('AdaptivePage (Aqlli takrorlash)', () => {
     render(<MemoryRouter><AdaptivePage /></MemoryRouter>)
     expect(screen.getByText('Adaptiv savol matni')).toBeTruthy()
     expect(screen.queryByText(/Bepul mashg'ulot limiti/)).toBeNull()
+  })
+})
+
+describe('AdaptivePage v2 (server-owned session)', () => {
+  beforeEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
+  })
+
+  afterEach(() => {
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = false
+  })
+
+  it('delegates to the server-authoritative engine without the legacy full-bank flow', () => {
+    render(<MemoryRouter><AdaptivePage /></MemoryRouter>)
+
+    const node = screen.getByTestId('v2-adaptive')
+    expect(JSON.parse(node.textContent!)).toMatchObject({ mode: 'adaptive' })
+    // Legacy full-bank savoli render bo'lmasligi kerak (kontent server'dan keladi)
+    expect(screen.queryByText('Adaptiv savol matni')).toBeNull()
   })
 })

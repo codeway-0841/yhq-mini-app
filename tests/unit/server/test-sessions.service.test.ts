@@ -7,6 +7,7 @@ const repo = vi.hoisted(() => ({
   listQuestionIds: vi.fn(),
   listSavedQuestionIds: vi.fn(),
   listMistakeQuestionIds: vi.fn(),
+  listAdaptiveSignals: vi.fn(),
   lockOwned: vi.fn(),
   listAttempts: vi.fn(),
   findAttempt: vi.fn(),
@@ -17,6 +18,8 @@ const repo = vi.hoisted(() => ({
   getQuestions: vi.fn(),
 }))
 const recordAnswer = vi.hoisted(() => vi.fn())
+const findCard = vi.hoisted(() => vi.fn())
+const upsertCard = vi.hoisted(() => vi.fn())
 const isPremiumUser = vi.hoisted(() => vi.fn())
 
 vi.mock('../../../server/config', () => ({
@@ -36,7 +39,7 @@ vi.mock('../../../server/modules/test-sessions/test-sessions.repository', () => 
   testSessionsRepository: repo,
 }))
 vi.mock('../../../server/modules/progress/progress.repository', () => ({
-  progressRepository: { recordAnswer },
+  progressRepository: { recordAnswer, findCard, upsertCard },
 }))
 vi.mock('../../../server/modules/boss/boss.repository', () => ({
   bossRepository: { applyDamage: vi.fn().mockResolvedValue(undefined) },
@@ -57,6 +60,7 @@ vi.mock('../../../server/config/subjects', () => ({
 
 import { AppError } from '../../../server/middleware/error-handler'
 import { createDeliveryToken } from '../../../server/modules/test-sessions/delivery-proof'
+import { TIMEOUT_OPTION_ID } from '../../../shared/test-session'
 import { testSessionInternals, testSessionsService } from '../../../server/modules/test-sessions/test-sessions.service'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
 
@@ -118,11 +122,14 @@ describe('testSessionsService security invariants', () => {
     repo.listQuestionIds.mockResolvedValue(Array.from({ length: 20 }, (_, index) => index + 1))
     repo.listSavedQuestionIds.mockResolvedValue([101, 102])
     repo.listMistakeQuestionIds.mockResolvedValue([103, 104])
+    repo.listAdaptiveSignals.mockResolvedValue({ cards: [], answeredIds: [] })
     repo.lockOwned.mockResolvedValue(session())
     repo.findAttempt.mockResolvedValue(null)
     repo.insertAttempt.mockResolvedValue({ id: 77 })
     repo.completeAttempt.mockResolvedValue(undefined)
     repo.updateProgress.mockResolvedValue(undefined)
+    findCard.mockResolvedValue(null)
+    upsertCard.mockResolvedValue(undefined)
     recordAnswer.mockResolvedValue({
       updated: true,
       dailyStreak: 2,
@@ -171,6 +178,7 @@ describe('testSessionsService security invariants', () => {
     expect(testSessionInternals.sessionTtlMinutes({ type: 'module', moduleId: 1 })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'single', launchToken: 'lt1.dummy.token' })).toBe(25)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'marathon' })).toBe(300)
+    expect(testSessionInternals.sessionTtlMinutes({ type: 'adaptive' })).toBe(180)
     expect(testSessionInternals.sessionTtlMinutes({ type: 'exam', presetId: 'milliy-sertifikat' })).toBe(180)
   })
 
@@ -465,6 +473,73 @@ describe('testSessionsService security invariants', () => {
     expect(repo.create).not.toHaveBeenCalled()
   })
 
+  it('orders adaptive candidates by due/weak/unseen without shuffling', async () => {
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+    repo.listQuestionIds.mockResolvedValue([1, 2, 3, 4, 5])
+    repo.listAdaptiveSignals.mockResolvedValue({
+      cards: [
+        { questionId: 4, ef: 1.4, reps: 2, dueAt: Date.now() + 86_400_000 },
+        { questionId: 2, ef: 2.5, reps: 1, dueAt: Date.now() - 1000 },
+      ],
+      answeredIds: [3, 4],
+    })
+    isPremiumUser.mockResolvedValue(true)
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'adaptive' }, language: 'uz',
+    })
+
+    // due(2) → weak(4) → unseen(1,5) → seen(3); tartib server-owned, shuffle'siz
+    expect(repo.create).toHaveBeenCalledWith(expect.objectContaining({
+      mode: 'adaptive',
+      questionIds: [2, 4, 1, 5, 3],
+    }), TX)
+    expect(result.session).toMatchObject({ mode: 'adaptive', total: 5 })
+  })
+
+  it('caps free adaptive sessions at the shared free limit', async () => {
+    repo.create.mockImplementation(async (value: Record<string, unknown>) => ({
+      ...value, createdAt: new Date(), lastActiveAt: new Date(),
+    }))
+    repo.listQuestionIds.mockResolvedValue(Array.from({ length: 60 }, (_, index) => index + 1))
+    repo.listAdaptiveSignals.mockResolvedValue({ cards: [], answeredIds: [] })
+    isPremiumUser.mockResolvedValue(false)
+
+    const result = await testSessionsService.create('user-1', {
+      subjectId: 'yhq', selector: { type: 'adaptive' }, language: 'uz',
+    })
+
+    expect(result.session).toMatchObject({ mode: 'adaptive', total: 15 })
+    expect(repo.create.mock.calls[0]?.[0].questionIds).toHaveLength(15)
+  })
+
+  it('updates the SR card inside the authoritative adaptive answer transaction', async () => {
+    findCard.mockResolvedValue({
+      questionId: 101, ef: 2.5, interval: 1, reps: 1, dueAt: new Date(Date.now() - 1000),
+    })
+    repo.lockOwned.mockResolvedValue(session({ mode: 'adaptive' }))
+
+    const result = await testSessionsService.answer('user-1', SESSION_ID, validAnswer())
+
+    expect(findCard).toHaveBeenCalledWith('user-1', 'yhq', 101, TX)
+    expect(upsertCard).toHaveBeenCalledWith(expect.objectContaining({
+      userId: 'user-1',
+      subjectId: 'yhq',
+      questionId: 101,
+      reps: 2,
+    }), TX)
+    expect(result.attempt.correct).toBe(true)
+  })
+
+  it('does not touch SR cards for non-adaptive modes', async () => {
+    await testSessionsService.answer('user-1', SESSION_ID, validAnswer())
+
+    expect(findCard).not.toHaveBeenCalled()
+    expect(upsertCard).not.toHaveBeenCalled()
+  })
+
   it('binds scoring to the delivered session position and commits canonical result once', async () => {
     const result = await testSessionsService.answer('user-1', SESSION_ID, validAnswer())
 
@@ -480,6 +555,33 @@ describe('testSessionsService security invariants', () => {
     expect(result.attempt).toMatchObject({ correct: true, correctOptionId: 'F2', xpEarned: 10, coinsEarned: 1 })
     expect(result.append).toHaveLength(1)
     expect(result.append[0]).not.toHaveProperty('correctAnswer')
+  })
+
+  it('records a timeout marker as incorrect without a valid option', async () => {
+    const result = await testSessionsService.answer('user-1', SESSION_ID, {
+      ...validAnswer(),
+      selectedOptionId: TIMEOUT_OPTION_ID,
+    })
+
+    expect(recordAnswer).toHaveBeenCalledWith(expect.objectContaining({
+      userId: 'user-1',
+      questionId: 101,
+      correct: false,
+    }))
+    expect(repo.insertAttempt).toHaveBeenCalledWith(expect.objectContaining({
+      selectedOptionId: TIMEOUT_OPTION_ID,
+      correct: false,
+    }), TX)
+    expect(result.attempt).toMatchObject({ correct: false, correctOptionId: 'F2' })
+    expect(result.session.answered).toBe(1)
+  })
+
+  it('still rejects unknown option IDs that are not the timeout marker', async () => {
+    await expect(testSessionsService.answer('user-1', SESSION_ID, {
+      ...validAnswer(),
+      selectedOptionId: 'F99',
+    })).rejects.toMatchObject<AppError>({ statusCode: 400, message: 'invalid_option' })
+    expect(repo.insertAttempt).not.toHaveBeenCalled()
   })
 
   it('returns the stored canonical response for an exact retry without side effects', async () => {

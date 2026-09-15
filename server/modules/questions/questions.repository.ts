@@ -38,6 +38,23 @@ export const questionsRepository = {
     })
   },
 
+  /** Mavzu katalogi uchun savollar soni (v2: UI full-bank'siz katalog chizadi).
+   *  Javob kaliti/tekst YO'Q — faqat id→count (public metadata). */
+  countByTopic(bankId = 'traffic_rules_db'): Promise<Map<number, number>> {
+    return cached(`questions:count-by-topic:${bankId}`, async () => {
+      const rows = await db
+        .select({ topicId: questions.topicId, count: sql<number>`COUNT(*)::int` })
+        .from(questions)
+        .where(eq(questions.bankId, bankId))
+        .groupBy(questions.topicId)
+      return new Map(
+        rows
+          .filter((row) => row.topicId !== null)
+          .map((row) => [row.topicId as number, Number(row.count)]),
+      )
+    })
+  },
+
   /** Readiness check — question pool loaded va non-empty */
   async isPoolReady(): Promise<boolean> {
     try {
@@ -96,7 +113,10 @@ export const questionsRepository = {
 
   async search(bankId = 'traffic_rules_db', query: string, language: 'uz' | 'ru', limit = 30): Promise<Array<{ id: number; text: string; topicId: number | null }>> {
     const column = language === 'ru' ? questions.questionRu : questions.questionUz
-    const searchPattern = `%${query}%`
+    // LIKE wildcard escape: `%`/`_`/`\` so'zma-so'z qidiriladi — aks holda
+    // "%%" so'rovi butun bankni qaytarib, search full-bank enumeration
+    // yo'liga aylanardi (question-bank-protection v2).
+    const searchPattern = `%${escapeLikePattern(query)}%`
     const rows = await db
       .select({
         id: questions.id,
@@ -106,9 +126,17 @@ export const questionsRepository = {
       .from(questions)
       .where(and(
         eq(questions.bankId, bankId),
-        sql`${column} ILIKE ${searchPattern}`,
+        sql`${column} ILIKE ${searchPattern} ESCAPE '\'`,
       ))
       .limit(limit)
     return rows
   },
+}
+
+/**
+ * SQL LIKE pattern escape (`%`, `_`, `\` → literal).
+ * Sof funksiya — unit testlar to'g'ridan-to'g'ri chaqiradi.
+ */
+export function escapeLikePattern(query: string): string {
+  return query.replace(/[\\%_]/g, (ch) => `\\${ch}`)
 }

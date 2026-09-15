@@ -3,6 +3,7 @@ import {
   createCard,
   updateCard,
   pickNext,
+  orderAdaptiveIds,
   SRCard,
 } from '../../../src/shared/lib/spaced-repetition'
 
@@ -159,6 +160,35 @@ describe('Spaced Repetition (SM-2 Algorithm)', () => {
 
       const next = pickNext(cards, [1, 2])
       expect(next).toBe(2)
+    })
+  })
+
+  describe('orderAdaptiveIds - server-owned session ordering (v2)', () => {
+    it('orders due first, then weak, then unseen, then seen — never drops or duplicates', () => {
+      const cards = new Map([
+        [4, { questionId: 4, ef: 1.4, reps: 2, dueAt: BASE_TIME + 86_400_000 }],
+        [2, { questionId: 2, ef: 2.5, reps: 1, dueAt: BASE_TIME - 1000 }],
+        [6, { questionId: 6, ef: 2.5, reps: 0, dueAt: BASE_TIME + 86_400_000 }],
+      ])
+      // 2 = due, 4 = weak (reps>0, future due), 6 = card bor lekin reps=0 → seen oxiri
+      // 3 = answered (seen), 1/5 = unseen
+      const ordered = orderAdaptiveIds([1, 2, 3, 4, 5, 6], cards, [3, 4, 6], BASE_TIME)
+
+      expect(ordered).toEqual([2, 4, 1, 5, 3, 6])
+    })
+
+    it('sorts due by oldest dueAt and weak by lowest EF with stable id tiebreak', () => {
+      const cards = new Map([
+        [1, { questionId: 1, ef: 2.0, reps: 1, dueAt: BASE_TIME - 1000 }],
+        [2, { questionId: 2, ef: 2.0, reps: 1, dueAt: BASE_TIME - 5000 }],
+        [3, { questionId: 3, ef: 1.8, reps: 1, dueAt: BASE_TIME + 86_400_000 }],
+        [4, { questionId: 4, ef: 1.5, reps: 3, dueAt: BASE_TIME + 86_400_000 }],
+      ])
+      expect(orderAdaptiveIds([1, 2, 3, 4], cards, [], BASE_TIME)).toEqual([2, 1, 4, 3])
+    })
+
+    it('returns an empty list for an empty bank without throwing', () => {
+      expect(orderAdaptiveIds([], new Map(), [], BASE_TIME)).toEqual([])
     })
   })
 })

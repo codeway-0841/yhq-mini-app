@@ -2,7 +2,7 @@
  * Progress repository — DB access for the `progress` table.
  */
 
-import { eq, sql } from 'drizzle-orm'
+import { and, eq, sql } from 'drizzle-orm'
 import { db, executeRows, type DB } from '../../db/connection'
 import { progress, duelResults } from '../../schema'
 import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
@@ -466,7 +466,10 @@ export const progressRepository = {
       .where(and(eq(cardProgress.userId, userId), eq(cardProgress.subjectId, subjectId)))
   },
 
-  /** Moslashuvchan rejim kartasini yangilash (upsert) */
+  /** Moslashuvchan rejim kartasini yangilash (upsert).
+   *  `txOrDb` berilsa o'sha transaction ichida yozadi — test-session answer
+   *  atomicity uchun (attempt + progress + card BITTA commit). Berilmasa
+   *  global `db` (legacy `cards/review` route). */
   async upsertCard(input: {
     userId:     string
     subjectId:  string
@@ -475,9 +478,9 @@ export const progressRepository = {
     interval:   number
     reps:       number
     dueAt:      Date
-  }): Promise<void> {
+  }, txOrDb: DB = db): Promise<void> {
     const { cardProgress } = await import('../../schema')
-    await db
+    await txOrDb
       .insert(cardProgress)
       .values({
         userId:     input.userId,
@@ -498,6 +501,31 @@ export const progressRepository = {
           updatedAt: new Date(),
         },
       })
+  },
+
+  /** Adaptive session answer hook uchun bitta karta (tx ichida o'qiladi). */
+  async findCard(
+    userId: string,
+    subjectId: string,
+    questionId: number,
+    txOrDb: DB = db,
+  ): Promise<{ questionId: number; ef: number; interval: number; reps: number; dueAt: Date } | null> {
+    const { cardProgress } = await import('../../schema')
+    const [row] = await txOrDb
+      .select({
+        questionId: cardProgress.questionId,
+        ef:         cardProgress.ef,
+        interval:   cardProgress.interval,
+        reps:       cardProgress.reps,
+        dueAt:      cardProgress.dueAt,
+      })
+      .from(cardProgress)
+      .where(and(
+        eq(cardProgress.userId, userId),
+        eq(cardProgress.subjectId, subjectId),
+        eq(cardProgress.questionId, questionId),
+      ))
+    return row ?? null
   },
 
   async getMistakesOverview(

@@ -168,10 +168,16 @@ describe('sw.js rasm keshi', () => {
 })
 
 describe('sw.js question vs explanation cache boundaries (ID 09)', () => {
-  it('/api/questions public ro\'yxati app keshiga tushadi', async () => {
-    await requestRoute('/api/questions?bank=yhq')
+  it('/api/questions full-bank HECH QACHON keshlanmaydi (v2 contraction bypass)', async () => {
+    await requestRoute('/api/questions?subject=yhq')
     const appCache = caches.store.get('yhq-app-v3')
-    expect(appCache?.entries.has('https://app.test/api/questions?bank=yhq')).toBe(true)
+    expect(appCache?.entries.has('https://app.test/api/questions?subject=yhq')).toBeFalsy()
+  })
+
+  it('/api/topics metadata katalogi offline fallback uchun keshlanadi', async () => {
+    await requestRoute('/api/topics?subject=yhq')
+    const appCache = caches.store.get('yhq-app-v3')
+    expect(appCache?.entries.has('https://app.test/api/topics?subject=yhq')).toBe(true)
   })
 
   it('/api/questions/:id/explanation post-answer endpointi HECH QACHON keshlanmaydi (bypass)', async () => {

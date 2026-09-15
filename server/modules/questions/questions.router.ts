@@ -1,9 +1,12 @@
 import { Router } from 'express'
 import { z } from 'zod'
-import { wrap }   from '../../middleware/error-handler'
+import { AppError, wrap }   from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
+import { ticketQuestionCount } from '../../../shared/test-access'
 import { getProvider } from '../../providers'
 import { questionsRepository } from './questions.repository'
+import { testSessionsRepository } from '../test-sessions/test-sessions.repository'
+import { db } from '../../db/connection'
 import { isAuthEnforced } from '../../middleware/auth'
 import { dbRateConsumeWindow } from '../../middleware/db-rate-limiter'
 import { authRepository } from '../auth/auth.repository'
@@ -37,6 +40,20 @@ const SearchQuerySchema = z.object({
 const contentLimit = rateLimit({
   maxPerMinute: 60,
   bucket: 'content',
+  keyFn: identityKey,
+})
+
+/**
+ * Search enumeration pacing — launch-token entry point.
+ *
+ * Umumiy `content` bucket'dan ALOHIDA: search har so'rovda origin'ga tegadi
+ * (CDN yo'q — javob per-user launch token tutadi) va avtomatlashtirilgan
+ * savol-matni yig'ishning eng arzon yo'li. 30/min/user yetarli (odam
+ * qo'lda bundan tez qidirmaydi), skript'ni esa sekinlashtiradi.
+ */
+const searchLimit = rateLimit({
+  maxPerMinute: 30,
+  bucket: 'search',
   keyFn: identityKey,
 })
 
@@ -78,6 +95,13 @@ function toPublic<T extends { correctAnswer: string }>(rows: T[]): Array<Omit<T,
  * olishini hal qiladi (separation of concerns).
  */
 router.get('/questions', contentLimit, wrap(async (req, res) => {
+  // Legacy contraction (v2 Phase 4): flag o'chiq bo'lsa full-bank delivery
+  // YO'Q — 410 + machine-readable code (v2 client server session'ga o'tadi).
+  // Default ON (prod o'zgarishsiz); rollback = env o'chirish.
+  if (!config.legacy.questionBankEnabled) {
+    res.status(410).json({ error: 'legacy_question_bank_disabled' })
+    return
+  }
   const parsed = QuestionsQuery.safeParse(req.query)
   if (!parsed.success) {
     res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
@@ -144,18 +168,32 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
 }))
 
 // GET /api/questions/search?subjectId=yhq&query=to'xtash&language=uz
-router.get('/questions/search', contentLimit, wrap(async (req, res) => {
+//
+// Xavfsiz launch-token entry point (question-bank-protection v2):
+//   - AUTH MAJBURIY (production'dan qat'i nazar 401): token o'sha user'ga
+//     bound — 'anonymous' fallback YO'Q (begona user token'ni ishlatolmaydi,
+//     chunki `single` session yaratishda verifyLaunchToken userId solishtiradi);
+//   - FAIL-CLOSED secret: proof secret bo'lmasa 503 — statik fallback string
+//     bilan imzolash token forge yo'lini ochardi (source ochiq);
+//   - javobda master ID/correctAnswer YO'Q — faqat display text + topicId +
+//     launchToken (keyingi qadam: `single` selector bilan server session).
+router.get('/questions/search', searchLimit, wrap(async (req, res) => {
+  const userId = (req as { userId?: string }).userId
+  if (!userId || userId === '0') {
+    res.status(401).json({ error: 'authentication_required' })
+    return
+  }
   const parsed = SearchQuerySchema.safeParse(req.query)
   if (!parsed.success) {
     res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
     return
   }
+  const secret = config.testSessions.proofSecret
+  if (!secret) throw new AppError(503, 'test_sessions_unavailable')
   const { subjectId, query, language } = parsed.data
   const entry = resolveSubject(subjectId)
-  const userId = (req as { userId?: string }).userId || 'anonymous'
 
   const rows = await questionsRepository.search(entry.dataSourceId, query, language)
-  const secret = config.testSessions.proofSecret || 'fallback-search-proof-secret'
   const hits = rows.map((r) => {
     const { launchToken, expiresAt } = issueLaunchToken(secret, {
       userId,
@@ -175,13 +213,55 @@ router.get('/questions/search', contentLimit, wrap(async (req, res) => {
 }))
 
 // GET /api/topics?subject=fizika
+//
+// Public katalog metadata — savol matni/option/javob YO'Q, faqat mavzu
+// nomi + questionCount (v2: learner UI katalogni full-bank'siz chizadi).
 router.get('/topics', contentLimit, wrap(async (req, res) => {
   const subject = typeof req.query['subject'] === 'string' ? req.query['subject'] : undefined
   const entry    = resolveSubject(subject)
   const provider = getProvider(entry.dataSourceId)
-  const rows = await provider.getTopics()
+  const [rows, counts] = await Promise.all([
+    provider.getTopics(),
+    // Count yiqilsa katalog baribir qaytadi (fail-open metadata — xavfsizlik
+    // chegarasi emas, faqat UI soni).
+    questionsRepository.countByTopic(entry.dataSourceId).catch(() => new Map<number, number>()),
+  ])
   res.set('Cache-Control', CONTENT_CACHE)
-  res.json(rows)
+  res.json(rows.map((topic) => ({ ...topic, questionCount: counts.get(topic.id) ?? 0 })))
+}))
+
+const TicketCatalogQuery = z.object({
+  subject: z.string().max(32).optional(),
+  language: z.enum(['uz', 'ru']).default('uz'),
+})
+
+/**
+ * GET /api/ticket-catalog?subject=yhq&language=uz
+ *
+ * Bilet KATALOGI (v2): faqat sonlar — ticketSize, ticketCount, totalQuestions.
+ * Savol matni/option/javob/ID YO'Q. Hisob ticket session bilan BITTA manbadan
+ * (dedup'langan candidate ro'yxat) — katalogdagi N-bilet session'dagi N-bilet
+ * bilan bir xil tarkibda (404 yo'q). Public CDN (topics kabi).
+ */
+router.get('/ticket-catalog', contentLimit, wrap(async (req, res) => {
+  const parsed = TicketCatalogQuery.safeParse(req.query)
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
+    return
+  }
+  const entry = resolveSubject(parsed.data.subject)
+  const size = ticketQuestionCount(entry.id)
+  const ids = await testSessionsRepository.listQuestionIds(
+    entry.dataSourceId, db, undefined, parsed.data.language,
+  )
+  const totalQuestions = ids.length
+  res.set('Cache-Control', CONTENT_CACHE)
+  res.json({
+    subjectId: entry.id,
+    ticketSize: size,
+    ticketCount: Math.floor(totalQuestions / size),
+    totalQuestions,
+  })
 }))
 
 const ExplanationQuery = z.object({

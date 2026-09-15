@@ -589,6 +589,13 @@ export const api = {
     return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`)
   },
 
+  /** Bilet katalogi (v2) — faqat sonlar, savol kontenti YO'Q (public CDN). */
+  getTicketCatalog: (subjectId: string, language: 'uz' | 'ru' = 'uz') =>
+    request<{ subjectId: string; ticketSize: number; ticketCount: number; totalQuestions: number }>(
+      'GET',
+      `/ticket-catalog?subject=${encodeURIComponent(subjectId)}&language=${encodeURIComponent(language)}`,
+    ),
+
   getLeaderboard: (limit: number, userId?: string, mode?: 'daily' | 'monthly' | 'all') =>
     request<LeaderboardEntry[]>(
       'GET',

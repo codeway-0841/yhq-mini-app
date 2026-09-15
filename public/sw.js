@@ -4,7 +4,8 @@
  * Strategy:
  *   - Hashed assets (/assets/, fonts)   → cache-first, cheksiz (hash bilan nomlangan)
  *   - Savol rasmlari (/images/)         → cache-first, ALOHIDA kesh + LRU cap
- *   - /api/questions, /api/topics (GET) → network-first, cache fallback
+ *   - /api/topics (GET)                 → network-first, cache fallback
+ *     (/api/questions full-bank KESHLANMAYDI — question-bank-protection v2)
  *   - Page navigation                   → network-first (timeout), cached shell
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
@@ -31,14 +32,14 @@ const isStaticAsset = (path) =>
 // va avatar sezilarli kech chiqardi.
 const isAvatar = (path) => path.startsWith('/api/avatar/')
 
-// Savol va mavzular ma'lumotlari — faqat public ro'yxatlar (/api/questions, /api/topics).
-// Izohlar (/api/questions/:id/explanation) post-answer auth-gated va no-store bo'lgani uchun
-// SW tomonidan KESHLANMAYDI (ID 09).
-const isQuestionData = (path) => {
-  if (path.includes('/explanation')) return false
-  return path === '/api/questions' || path.startsWith('/api/questions?') ||
-         path === '/api/topics' || path.startsWith('/api/topics?')
-}
+// Public mavzu metadata (/api/topics) — kichik katalog, javob kalitsiz.
+// /api/questions (full-bank) endi SW tomonidan KESHLANMAYDI
+// (question-bank-protection v2): keshdagi full-bank nusxasi legacy
+// contraction'ni chetlab o'tardi (410 o'rniga stale bank berardi).
+// Izohlar (/api/questions/:id/explanation) post-answer auth-gated va no-store
+// bo'lgani uchun SW tomonidan KESHLANMAYDI (ID 09).
+const isCacheableApiData = (path) =>
+  path === '/api/topics' || path.startsWith('/api/topics?')
 
 // Vercel `/` va `/index.html` ni `Cache-Control: no-store` bilan beradi —
 // Cache API no-store javobni SAQLASHNI RAD ETADI (TypeError → shell hech qachon
@@ -254,8 +255,9 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  // Question data — network first, cached copy offline
-  if (isQuestionData(url.pathname)) {
+  // Small public API metadata (topics catalog) — network first, cached copy offline.
+  // /api/questions bu yerga KIRMAYDI (yuqoridagi izohga qarang) — bypass.
+  if (isCacheableApiData(url.pathname)) {
     event.respondWith(
       fetch(request)
         .then((res) => { void putInCache(request, res.clone()); return res })

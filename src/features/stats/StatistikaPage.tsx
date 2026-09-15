@@ -9,6 +9,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Flame, Star, Target, TrendingUp, HeartCrack } from 'lucide-react'
 import { api, type DailyHistoryRow } from '../../shared/api'
+import { config } from '../../shared/config'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -65,7 +66,36 @@ export default function StatistikaPage() {
 
   // Zaif mavzular — xato savollar mavzular kesimida (top 3, FAQAT joriy fan)
   const { questions, topics } = useQuestionsStore()
+  const loadTopics = useQuestionsStore((s) => s.loadTopics)
+
+  // v2: zaif mavzular server mistakes overview'dan (full-bank mapping YO'Q).
+  // Takrorlash server-owned mistakes+topic session orqali.
+  const isV2 = config.testSessionsV2Enabled
+  const [mistOverview, setMistOverview] = useState<{
+    total: number; byTopic: Array<{ topicId: number; count: number }>
+  } | null>(null)
+
+  useEffect(() => {
+    if (!isV2) return
+    // Mavzu nomlari uchun faqat metadata (savol matni tortilmaydi)
+    if (topics.length === 0) void loadTopics(subject.id).catch(() => {})
+    if (!userId || userId === '0') return
+    let cancelled = false
+    api.getTopMistakes(subject.id, lang)
+      .then((r) => { if (!cancelled) setMistOverview(r) })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [isV2, userId, subject.id, lang, topics.length, loadTopics])
+
   const weakTopics = useMemo(() => {
+    if (isV2) {
+      if (!mistOverview) return []
+      return mistOverview.byTopic.slice(0, 3).map((g) => ({
+        topic: topics.find((t) => t.id === g.topicId),
+        ids: [] as number[],
+        count: g.count,
+      })).filter((x) => x.topic)
+    }
     const qById = new Map(questions.map((q) => [q.id, q]))
     const byTopic = new Map<number, number[]>()
     for (const [key, cnt] of Object.entries(wrongByTicket)) {
@@ -83,14 +113,17 @@ export default function StatistikaPage() {
       .map(([topicId, ids]) => ({
         topic: topics.find((t) => t.id === topicId),
         ids,
+        count: ids.length,
       }))
       .filter((x) => x.topic)
       .sort((a, b) => b.ids.length - a.ids.length)
       .slice(0, 3)
-  }, [wrongByTicket, questions, topics, subject.id])
+  }, [isV2, mistOverview, wrongByTicket, questions, topics, subject.id])
 
-  const practiceWeak = (ids: number[], title: string) =>
-    navigate('/test/1', { state: { questionIds: ids, title } })
+  const practiceWeak = (ids: number[], title: string, topicId?: number) =>
+    navigate('/test/1', isV2 && topicId !== undefined
+      ? { state: { mode: 'mistakes', serverSelector: { type: 'mistakes', topicId }, title } }
+      : { state: { questionIds: ids, title } })
 
   return (
     <div className="font-display bg-pcanvas text-pfg pb-8">
@@ -154,14 +187,14 @@ export default function StatistikaPage() {
             {lang === 'ru' ? 'Слабые темы' : 'Zaif mavzular'}
           </p>
           <div className="rounded-2xl bg-pcard mx-5 divide-y divide-pline overflow-hidden shadow-xs">
-            {weakTopics.map(({ topic, ids }) => (
-              <button key={topic!.id} onClick={() => practiceWeak(ids, lang === 'ru' ? topic!.nameRu : topic!.nameUz)}
+            {weakTopics.map(({ topic, ids, count }) => (
+              <button key={topic!.id} onClick={() => practiceWeak(ids, lang === 'ru' ? topic!.nameRu : topic!.nameUz, topic!.id)}
                 className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors">
                 <span className="flex-1 text-[13px] font-semibold text-pfg truncate">
                   {lang === 'ru' ? topic!.nameRu : topic!.nameUz}
                 </span>
                 <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
-                  {ids.length}
+                  {count}
                 </span>
                 <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">
                   {lang === 'ru' ? 'Повторить' : 'Takrorlash'} ›

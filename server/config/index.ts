@@ -67,6 +67,14 @@ const envSchema = z.object({
     .transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined))
     .pipe(z.string().min(32).optional()),
 
+  /** Legacy contraction flags (question-bank-protection v2, Phase 4).
+   *  Default ON — prod o'zgarishsiz; migratsiya tugagach cohort/subject
+   *  bo'yicha 'false' qilinadi. Rollback = env o'chirish (default true).
+   *  - LEGACY_QUESTION_BANK_ENABLED=false → GET /api/questions 410
+   *  - LEGACY_RESULT_ENABLED=false → POST /progress/:userId/result 410 */
+  LEGACY_QUESTION_BANK_ENABLED: z.enum(['true', 'false']).optional().default('true'),
+  LEGACY_RESULT_ENABLED: z.enum(['true', 'false']).optional().default('true'),
+
   /** Click Payment Gateway */
   CLICK_SERVICE_ID:       z.string().optional(),
   CLICK_MERCHANT_ID:      z.string().optional(),
@@ -227,6 +235,12 @@ export const config = {
     bufferSize: 6,
     ttlMinutes: 180,
     marathonTtlMinutes: 300,
+  },
+
+  /** Legacy contraction (v2 Phase 4) — default ON, faqat explicit 'false' yopadi. */
+  legacy: {
+    questionBankEnabled: env.LEGACY_QUESTION_BANK_ENABLED !== 'false',
+    resultEnabled: env.LEGACY_RESULT_ENABLED !== 'false',
   },
 
   /** SMS OTP — disabled bo'lsa kod console'ga chiqadi (dev) */

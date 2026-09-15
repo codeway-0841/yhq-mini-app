@@ -7,3 +7,5 @@ export { default as ResultsModal } from './ResultsModal'
 export type { QuestionResult } from './ResultsModal'
 export { default as CertificateModal } from './CertificateModal'
 export { formatImageSrc } from './hooks/useImagePreload'
+/** Server-authoritative practice engine (v2) — adaptive/speed migratsiyasi uchun public. */
+export { default as ServerPracticePage } from './ServerPracticePage'

@@ -10,6 +10,12 @@ export const FREE_LESSON = { moduleId: 1, lessonIndex: 0 } as const
 export const FREE_TOPIC_QUESTION_COUNT = 10
 export const YHQ_TICKET_QUESTION_COUNT = 20
 export const DEFAULT_TICKET_QUESTION_COUNT = 30
+/**
+ * Adaptive free session cap — server-owned (create'da slice).
+ * Client'dagi eski limit bilan bir xil daraja (store persist qilinmaydi,
+ * reload baribir reset qilardi — regressiya yo'q). Premium: cheksiz.
+ */
+export const ADAPTIVE_FREE_SESSION_LIMIT = 15
 
 export function isEffectivePremium(input: {
   tariff?: 'free' | 'premium' | null

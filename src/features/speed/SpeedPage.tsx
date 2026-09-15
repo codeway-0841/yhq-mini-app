@@ -18,7 +18,8 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { Button } from '../../shared/components/ui/button'
 import { ResultsModal, formatImageSrc, type QuestionResult } from '../test'
-import type { DeliveredTestQuestion, TestSessionResponse } from '../../../shared/test-session'
+import type { DeliveredTestQuestion, TestAnswerResponse, TestSessionResponse } from '../../../shared/test-session'
+import { TIMEOUT_OPTION_ID } from '../../../shared/test-session'
 
 const TIME_LIMIT = 10
 type SpeedAnswer = 'correct' | 'wrong'
@@ -127,15 +128,62 @@ export default function SpeedPage() {
     }
   }, [addAnswer, idx, sessionId, total])
 
+  /** Server feedback'ni store'ga yozish — oddiy javob va timeout uchun umumiy. */
+  const commitAnswer = useCallback((response: TestAnswerResponse) => {
+    setRevealed(response.attempt.correctOptionId)
+    setQuestions((previous) => mergeQuestions(previous, response.append))
+    if (!response.attempt.duplicate) {
+      applySessionAnswer({
+        correct: response.attempt.correct,
+        subjectId,
+        date: new Date().toISOString().slice(0, 10),
+        dailyStreak: response.attempt.dailyStreak,
+        coinSaved: response.attempt.coinSaved,
+        coinBalance: response.attempt.coinBalance,
+        xp: response.attempt.xp,
+      })
+      setEarnedXpTotal((previous) => previous + response.attempt.xpEarned)
+      setEarnedCoinsTotal((previous) => previous + response.attempt.coinsEarned)
+    }
+    if (response.attempt.correct) {
+      haptics.success()
+      playSound('success')
+    } else {
+      haptics.error()
+      playSound('error')
+    }
+  }, [applySessionAnswer, subjectId])
+
   const handleTimeout = useCallback(() => {
-    if (busy || !q) return
-    setSelected('__timeout__')
+    if (busy || !q || !sessionId) return
+    // Server-authoritative timeout: rolling delivery davom etishi uchun javob
+    // serverga `__timeout__` marker bilan yoziladi (har doim xato). Serverga
+    // yetmasa — sessiya baribir davom etadi (faqat shu savol progress'siz).
+    setSelected(TIMEOUT_OPTION_ID)
+    setBusy(true)
     playSound('error')
     haptics.error()
-    advanceTimerRef.current = window.setTimeout(() => {
-      advance('wrong')
-    }, 500)
-  }, [advance, busy, q])
+    void (async () => {
+      try {
+        const response = await api.submitTestSessionAnswer(sessionId, {
+          position: q.position,
+          deliveryToken: q.deliveryToken,
+          expiresAt: q.expiresAt,
+          selectedOptionId: TIMEOUT_OPTION_ID,
+          clientToken: clientToken(),
+          elapsedMs: TIME_LIMIT * 1000,
+        })
+        commitAnswer(response)
+      } catch {
+        // Tarmoq xatosi — progress yozilmadi, lekin o'yin to'xtamaydi
+      } finally {
+        setBusy(false)
+        advanceTimerRef.current = window.setTimeout(() => {
+          advance('wrong')
+        }, 500)
+      }
+    })()
+  }, [advance, busy, commitAnswer, q, sessionId])
 
   useEffect(() => {
     if (loading || finished || answered) return
@@ -158,28 +206,7 @@ export default function SpeedPage() {
           clientToken: clientToken(),
           elapsedMs: answerTimer.elapsed(),
         })
-        setRevealed(response.attempt.correctOptionId)
-        setQuestions((previous) => mergeQuestions(previous, response.append))
-        if (!response.attempt.duplicate) {
-          applySessionAnswer({
-            correct: response.attempt.correct,
-            subjectId,
-            date: new Date().toISOString().slice(0, 10),
-            dailyStreak: response.attempt.dailyStreak,
-            coinSaved: response.attempt.coinSaved,
-            coinBalance: response.attempt.coinBalance,
-            xp: response.attempt.xp,
-          })
-          setEarnedXpTotal((previous) => previous + response.attempt.xpEarned)
-          setEarnedCoinsTotal((previous) => previous + response.attempt.coinsEarned)
-        }
-        if (response.attempt.correct) {
-          haptics.success()
-          playSound('success')
-        } else {
-          haptics.error()
-          playSound('error')
-        }
+        commitAnswer(response)
         advanceTimerRef.current = window.setTimeout(() => {
           advance(response.attempt.correct ? 'correct' : 'wrong')
         }, 800)
@@ -192,7 +219,7 @@ export default function SpeedPage() {
         setBusy(false)
       }
     })()
-  }, [advance, answerTimer, answered, applySessionAnswer, busy, lang, q, sessionId, subjectId])
+  }, [advance, answerTimer, answered, busy, commitAnswer, lang, q, sessionId])
 
   const retry = useCallback(async () => {
     if (sessionId) await api.finishTestSession(sessionId, 'abandoned').catch(() => undefined)
@@ -327,7 +354,7 @@ export default function SpeedPage() {
             </button>
           )
         })}
-        {answered && selected === '__timeout__' && (
+        {answered && selected === TIMEOUT_OPTION_ID && (
           <p className="text-center text-[12px] text-pdanger font-semibold mt-2 animate-premiumIn">
             ⏱ {lang === 'ru' ? 'Время вышло!' : 'Vaqt tugadi!'}
           </p>
