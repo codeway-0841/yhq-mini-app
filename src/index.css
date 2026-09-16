@@ -442,6 +442,14 @@ body[data-theme='light'] .ios-glass {
   }
 }
 
+/* ── Tanlangan fan qatori (Onboarding + SubjectSheet) ───────────────────────
+   Tanlov FAQAT rang bilan emas, 4 signal bilan: kuchli wash + 2px halqa +
+   qalin rangli label + check/"Tanlangan" badge. Hover'da yorqinlik javobi
+   (inline style'da :hover bo'lmaydi — shu class orqali). */
+.subject-picked { transition: filter 150ms ease-out; }
+.subject-picked:hover { filter: brightness(1.04); }
+body[data-theme='dark'] .subject-picked:hover { filter: brightness(1.3); }
+
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
    ─────────────────────────────────────────────────────────────────────────

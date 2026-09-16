@@ -117,11 +117,11 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
               className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
                 !s.available ? 'cursor-not-allowed opacity-55' : ''
               } ${
-                active ? 'scale-[1.01]' : 'bg-pcard hover:bg-psurface'
+                active ? 'scale-[1.01] subject-picked' : 'bg-pcard hover:bg-psurface'
               }`}
               style={active ? {
-                backgroundColor: `${s.color}16`,
-                boxShadow: `inset 0 0 0 1.5px ${s.color}60, 0 4px 14px ${s.color}20`
+                backgroundColor: `${s.color}2E`,
+                boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
               } : undefined}>
               <div
                 className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
