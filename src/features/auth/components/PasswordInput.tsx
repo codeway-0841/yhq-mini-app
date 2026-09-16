@@ -43,7 +43,7 @@ export default function PasswordInput({
   const hasNumber = /\d/.test(value)
 
   const inputCls =
-    'w-full bg-psurface rounded-2xl pl-3.5 pr-12 py-3 text-[15px] text-pfg ' +
+    'w-full bg-psurface rounded-2xl pl-3.5 pr-12 py-3 text-base text-pfg ' +
     'placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all'
 
   return (

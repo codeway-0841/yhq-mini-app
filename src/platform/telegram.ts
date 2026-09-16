@@ -87,7 +87,10 @@ export function syncTelegramSafeArea(): void {
     // Telegram Mini App'da '✕ Close' va '∨ ⋮' floating tugmalari ostida qolmasligi va
     // OsonPrava kabi tugmalar ostida qulay masofa (breathing room) bo'lishi uchun:
     // The SDK also exists in ordinary mobile browsers: UA alone is not a Mini App signal.
-    const isMiniApp = Boolean(tg.initData) || tg.platform === 'ios' || tg.platform === 'android'
+    // initData YOLG'IZ ham signal EMAS: ?tg=1 dev-mock soxta initData yuboradi
+    // (platform='web') — Chrome device emulation (iPhone UA) bilan 104px O'LIK
+    // bo'shliq hosil qilardi (2026-09-16). IKKALA signal birga shart.
+    const isMiniApp = Boolean(tg.initData) && (tg.platform === 'ios' || tg.platform === 'android')
     const fallbackTop = isMiniApp ? (isIos ? 104 : isAndroid ? 88 : 0) : 0
     const top = Math.max(contentTop, safeTop, fallbackTop)
 

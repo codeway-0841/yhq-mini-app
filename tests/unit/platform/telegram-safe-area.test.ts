@@ -19,6 +19,7 @@ describe('Telegram mobile safe area', () => {
     expect(document.documentElement.style.getPropertyValue('--safe-bottom')).toBe('0px')
   })
   it.each([['android', '88px'], ['ios', '104px']])('preserves %s Mini App fallback', (platform, expected) => {
+
     vi.useFakeTimers()
     vi.stubGlobal('navigator', { userAgent: '' })
     vi.stubGlobal('window', { Telegram: { WebApp: { platform, initData: 'signed-data' } } })
@@ -31,5 +32,16 @@ describe('Telegram mobile safe area', () => {
     vi.stubGlobal('window', { Telegram: { WebApp: { platform: 'android', contentSafeAreaInset: { top: 120 } } } })
     syncTelegramSafeArea()
     expect(document.documentElement.style.getPropertyValue('--safe-top')).toBe('120px')
+  })
+  it('ignores dev-mock initData on desktop device emulation (?tg=1, platform web + iPhone UA)', () => {
+    // 2026-09-16: ?tg=1 mock soxta initData beradi — Chrome device emulation'da
+    // (iPhone UA) fallback 104px o'lik bo'shliq ochardi. platform='web' ekani
+    // Mini App EMASligini bildiradi.
+    vi.useFakeTimers()
+    vi.stubGlobal('navigator', { userAgent: 'iPhone' })
+    vi.stubGlobal('window', { Telegram: { WebApp: { platform: 'web', initData: 'query_id=DEV&hash=dev' } } })
+    syncTelegramSafeArea()
+    expect(document.documentElement.style.getPropertyValue('--safe-top')).toBe('0px')
+    expect(document.documentElement.style.getPropertyValue('--safe-bottom')).toBe('0px')
   })
 })

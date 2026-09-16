@@ -140,7 +140,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
                 maxLength={11}
                 disabled={busy}
                 autoFocus
-                className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[15px] text-pfg placeholder:text-pmuted tracking-widest"
+                className="flex-1 min-w-0 bg-transparent outline-none py-3 text-base text-pfg placeholder:text-pmuted tracking-widest"
               />
             </div>
             <div className="flex flex-col gap-2.5">

@@ -51,7 +51,7 @@ export function PageHeader({
             type="button"
             onClick={onBack}
             aria-label={backLabel ?? 'Orqaga'}
-            className="-ml-1 grid size-10 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            className="-ml-2 grid size-11 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
           >
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>

@@ -208,7 +208,7 @@ export default function LoginPage() {
   }
 
   const inputCls =
-    'w-full bg-psurface rounded-2xl px-3.5 py-3 text-[15px] text-pfg ' +
+    'w-full bg-psurface rounded-2xl px-3.5 py-3 text-base text-pfg ' +
     'placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all'
 
   const isWeb = !getTelegramWebApp() && !isNativeApp()
@@ -480,7 +480,7 @@ export default function LoginPage() {
                   placeholder="90 123 45 67"
                   maxLength={11}
                   disabled={busy}
-                  className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[15px] text-pfg placeholder:text-pmuted tracking-widest"
+                  className="flex-1 min-w-0 bg-transparent outline-none py-3 text-base text-pfg placeholder:text-pmuted tracking-widest"
                 />
               </div>
 

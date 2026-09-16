@@ -415,6 +415,21 @@ body[data-theme='light'] .ios-glass {
   overflow: hidden;
 }
 
+/* ── Mobil touch-target kengaytmasi (Apple HIG 44pt, 2026-09-16 audit) ───────
+   32px (size-8) va 28px (size-7) icon-tugmalar vizual o'lchamini saqlaydi,
+   lekin coarse-pointer (touch) qurilmalarda ::after orqali urinish zonasini
+   44px'ga yetkazadi. Layout siljimaydi (absolute overlay, pointer events —
+   ota tugmada). Faqat button/a — span chip'lar (OptionButton harfi) tegmaydi. */
+@media (pointer: coarse) {
+  button.size-7, a.size-7, button.size-8, a.size-8 { position: relative; }
+  button.size-7::after, a.size-7::after {
+    content: ''; position: absolute; inset: -8px;
+  }
+  button.size-8::after, a.size-8::after {
+    content: ''; position: absolute; inset: -6px;
+  }
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
    ─────────────────────────────────────────────────────────────────────────

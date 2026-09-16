@@ -16,7 +16,7 @@ const SelectTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       'flex h-11 w-full items-center justify-between gap-2 rounded-2xl border border-plineStrong bg-pcanvas px-[13px] shadow-xs',
-      'text-[15px] text-pfg',
+      'text-base text-pfg',
       'transition-[border-color,box-shadow] duration-150 ease-out',
       'data-[placeholder]:text-psubtle',
       'focus:outline-none focus:border-pprimary focus:shadow-[0_0_0_3px_var(--p-wash)]',

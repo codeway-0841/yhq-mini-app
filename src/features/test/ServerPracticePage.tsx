@@ -361,7 +361,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   }
 
   return (
-    <div className="relative flex min-h-[100svh] flex-col bg-pcanvas">
+    <div className="relative flex min-h-[calc(100dvh-var(--safe-top-body,0px))] flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-2">
           <Button variant="secondary" size="icon" onClick={() => goBack(navigate)} aria-label={isRu ? 'Назад' : 'Orqaga'}><ChevronLeft /></Button>

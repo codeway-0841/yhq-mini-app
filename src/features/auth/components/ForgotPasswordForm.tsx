@@ -90,7 +90,7 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
           autoComplete="email"
           placeholder="example@email.com"
           disabled={busy}
-          className="w-full bg-psurface rounded-2xl px-3.5 py-3 text-[15px] text-pfg placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all"
+          className="w-full bg-psurface rounded-2xl px-3.5 py-3 text-base text-pfg placeholder:text-pmuted outline-none focus:ring-2 focus:ring-pprimary shadow-xs transition-all"
         />
       </div>
 
