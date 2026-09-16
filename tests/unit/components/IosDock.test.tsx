@@ -148,14 +148,14 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
-  it('hides dock on camera AI tutor route /ai-tutor', () => {
+  it('shows dock on camera AI tutor route /ai-tutor (tab-root since Wave 2)', () => {
     render(
       <MemoryRouter initialEntries={['/ai-tutor']}>
         <IosDock />
       </MemoryRouter>,
     )
 
-    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
+    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).toBeInTheDocument()
   })
 
   it('hides dock while reading a library PDF', () => {

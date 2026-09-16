@@ -15,8 +15,10 @@ import { haptics } from '../../platform/haptics'
  * (`hidesBottomBarWhenPushed`). Ichki sahifalarda orqaga qaytish —
  * PageHeader'dagi back tugma orqali (2026-09-15 "har joyda nav" fix:
  * eski HIDDEN_PREFIXES denylist o'rniga allowlist).
+ * `/ai-tutor` ham ro'yxatda: dock'ning markaz tugmasi shu sahifaga olib boradi —
+ * bossangiz dock g'oyib bo'lmasligi kerak (2026-09-16 Wave 2).
  */
-export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
+export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar', '/ai-tutor'] as const
 export function isTabRootRoute(pathname: string): boolean {
   return (TAB_ROOT_PATHS as readonly string[]).includes(pathname)
 }
