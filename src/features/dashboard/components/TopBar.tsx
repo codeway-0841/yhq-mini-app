@@ -59,6 +59,8 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings, onPr
     const coords = rect
       ? { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 }
       : { x: e.clientX, y: e.clientY }
+    // Focus halqasi bosgandan keyin yopishib qolmasligi uchun (videodagi ko'k border)
+    e.currentTarget?.blur?.()
     // Hozirgi ekrandagi haqiqiy holatdan kelib chiqib aniq almashtirish
     const currentIsDark = typeof document !== 'undefined'
       ? document.body.dataset.theme !== 'light'
@@ -85,7 +87,8 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings, onPr
           <Avatar name={name} photoUrl={avatarSrcFor(user) ?? undefined} />
         </button>
         <button type="button" onClick={onSubjects} aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
-          className="flex min-h-11 min-w-0 flex-1 items-center gap-1 rounded-xl px-1 text-left text-pfg hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          className="flex min-h-11 min-w-0 flex-1 items-center gap-1 rounded-xl px-1 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+          <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
           <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
           <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
         </button>

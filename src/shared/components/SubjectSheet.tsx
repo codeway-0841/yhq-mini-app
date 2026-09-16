@@ -22,7 +22,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
         </p>
         <div className="flex flex-col gap-2">
-          {SUBJECTS.map((s) => {
+          {SUBJECTS.map((s, i) => {
             const active = s.id === subjectId
             const Icon = s.icon
             return (
@@ -30,25 +30,22 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 key={s.id}
                 onClick={() => pick(s.id, s.available)}
                 disabled={!s.available}
-                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-150 ease-out shadow-xs ${
+                style={active ? {
+                  backgroundColor: `${s.color}2E`,
+                  boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
+                } : { animationDelay: `${Math.min(i, 7) * 28}ms` }}
+                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-[transform,background-color] duration-150 ease-out shadow-xs animate-sheetItemIn ${
                   !s.available
                     ? 'opacity-50 cursor-not-allowed bg-[rgb(var(--p-surface-rgb)/0.6)]'
                     : active
                       ? 'scale-[1.01] subject-picked'
-                      : 'bg-psurface hover:bg-pcard active:scale-[0.99]'
+                      : 'bg-psurface [@media(hover:hover)]:hover:bg-pcard [@media(hover:hover)]:hover:ring-2 [@media(hover:hover)]:hover:ring-[rgb(var(--p-muted-rgb)/0.4)] active:scale-[0.99]'
                 }`}
-                style={active ? {
-                  backgroundColor: `${s.color}2E`,
-                  boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
-                } : undefined}
               >
-                {/* Rangli ikonka konteyneri */}
+                {/* Har fan o'z gradientida (color → colorDark), oq ikonka */}
                 <div
-                  className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
-                  style={{
-                    backgroundColor: active ? s.color : `${s.color}18`,
-                    color: active ? '#ffffff' : s.color
-                  }}
+                  className="flex size-10 items-center justify-center rounded-full shrink-0 transition-transform shadow-2xs text-white"
+                  style={{ backgroundImage: `linear-gradient(135deg, ${s.color}, ${s.colorDark})` }}
                 >
                   <Icon size={20} strokeWidth={active ? 2.5 : 2} />
                 </div>

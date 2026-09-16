@@ -107,28 +107,25 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
 
       {/* Desktop: fan ro'yxati 2 ustunda (bitta uzun scroll o'rniga ixcham grid) */}
       <div className="flex min-h-0 flex-1 flex-col gap-3 overflow-y-auto overscroll-contain pr-1 sm:grid sm:grid-cols-2 sm:content-start">
-        {SUBJECTS.map((s) => {
+        {SUBJECTS.map((s, i) => {
           const active = picked.includes(s.id)
           const Icon = s.icon
           return (
             <button key={s.id} type="button" onClick={() => toggle(s.id, s.available)}
               disabled={!s.available}
               aria-pressed={active && s.available}
-              className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
+              className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-[transform,background-color] duration-150 ease-out active:scale-[0.98] shadow-xs animate-sheetItemIn ${
                 !s.available ? 'cursor-not-allowed opacity-55' : ''
               } ${
-                active ? 'scale-[1.01] subject-picked' : 'bg-pcard hover:bg-psurface'
+                active ? 'scale-[1.01] subject-picked' : 'bg-pcard [@media(hover:hover)]:hover:bg-psurface [@media(hover:hover)]:hover:ring-2 [@media(hover:hover)]:hover:ring-[rgb(var(--p-muted-rgb)/0.4)]'
               }`}
               style={active ? {
                 backgroundColor: `${s.color}2E`,
                 boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
-              } : undefined}>
+              } : { animationDelay: `${Math.min(i, 7) * 28}ms` }}>
               <div
-                className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
-                style={{
-                  backgroundColor: active ? s.color : `${s.color}18`,
-                  color: active ? '#ffffff' : s.color
-                }}
+                className="flex size-10 items-center justify-center rounded-full shrink-0 transition-transform shadow-2xs text-white"
+                style={{ backgroundImage: `linear-gradient(135deg, ${s.color}, ${s.colorDark})` }}
               >
                 <Icon size={20} strokeWidth={active ? 2.5 : 2} />
               </div>

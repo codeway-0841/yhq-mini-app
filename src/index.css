@@ -181,6 +181,11 @@ body[data-platform='native'] {
   to   { opacity: 1; }
 }
 /* ── Telegram-style Circular View Transition ─────────────────────────── */
+/* Snapshot choki tagidagi UA oq fon miltillamasligi uchun — theme-transition.ts
+   toggle boshida --vt-bg'ga joriy --p-canvas'ni yozadi (har tema/aksentda to'g'ri) */
+::view-transition {
+  background: var(--vt-bg, #0e1210);
+}
 ::view-transition-group(root) {
   animation: none;
 }
@@ -447,8 +452,11 @@ body[data-theme='light'] .ios-glass {
    qalin rangli label + check/"Tanlangan" badge. Hover'da yorqinlik javobi
    (inline style'da :hover bo'lmaydi — shu class orqali). */
 .subject-picked { transition: filter 150ms ease-out; }
-.subject-picked:hover { filter: brightness(1.04); }
-body[data-theme='dark'] .subject-picked:hover { filter: brightness(1.3); }
+/* Hover-yorqinlik FAQAT hover'li qurilmada (touch'da yopishqoq hover bo'lmasligi uchun) */
+@media (hover:hover) {
+  .subject-picked:hover { filter: brightness(1.04); }
+  body[data-theme='dark'] .subject-picked:hover { filter: brightness(1.3); }
+}
 
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
@@ -1245,6 +1253,16 @@ body[data-no-animation='true'] .confetti-piece { display: none; }
 .animate-premiumIn { animation: premiumIn 0.2s ease-out both; }
 body[data-no-animation='true'] .animate-premiumIn { animation: none; }
 
+/* ── Sheet ro'yxat stagger (wallet-card LIST/ITEM'ning CSS versiyasi) ────────
+   Har qator `animation-delay` bilan ketma-ket kiradi (fade + 6px rise).
+   Delay inline style'dan beriladi, cap ~200ms — ro'yxat uzun bo'lsa ham kutish yo'q. */
+@keyframes sheetItemIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-sheetItemIn { animation: sheetItemIn 0.22s ease-out both; }
+body[data-no-animation='true'] .animate-sheetItemIn { animation: none; }
+
 /* ── Test & Result Pop micro-interactions ───────────────────────────────── */
 @keyframes correctPop {
   0%   { transform: scale(0.97); }
@@ -1290,7 +1308,7 @@ body[data-no-animation='true'] .animate-scorePop {
   .animate-shimmer, .shimmer::after,
   .animate-fadeIn, .splash-float, .splash-float-safe, .onboarding-float,
   .animate-flyUp, .animate-wiggle, .coin-pop,
-  .animate-premiumIn, .animate-correctPop, .animate-scorePop, .animate-shake,
+  .animate-premiumIn, .animate-sheetItemIn, .animate-correctPop, .animate-scorePop, .animate-shake,
   .animate-dynamic-island-expand, .dashboard-menu-action,
   .animate-spin, .animate-pulse, .animate-bounce {
     animation: none !important;

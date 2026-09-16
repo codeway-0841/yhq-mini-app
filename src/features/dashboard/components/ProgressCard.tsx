@@ -50,8 +50,8 @@ const StatButton = memo(function StatButton({
       onPointerLeave={cancel}
       className={cn(
         'flex min-w-0 items-center gap-1.5 rounded-xl bg-black/25 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
-        'transition-all duration-150 ease-out active:scale-[0.97]',
-        'hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
+        'transition-[background-color] duration-150 ease-out',
+        '[@media(hover:hover)]:hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
       <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />

@@ -161,6 +161,11 @@ export async function transitionTheme(
   const covering = `circle(${rpct}% at ${px}% ${py}%)`
 
   const root = document.documentElement
+  // Snapshot choki tagidagi oq miltillash fix'i: VT fonini joriy canvas rangiga bo'yash
+  try {
+    const canvas = window.getComputedStyle(document.body).getPropertyValue('--p-canvas').trim()
+    if (canvas) root.style.setProperty('--vt-bg', canvas)
+  } catch (_) {}
   root.classList.remove('theme-to-dark', 'theme-to-light')
   root.classList.add(nextIsDark ? 'theme-to-dark' : 'theme-to-light')
 

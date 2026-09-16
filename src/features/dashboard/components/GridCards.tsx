@@ -8,10 +8,9 @@ import { cn } from '../../../shared/lib/cn'
    divider'li grouped list — karta panjarasidan farqli, kattalar mahsuloti
    ritmini beradi (iOS/Linear uslubi, lekin o'z tokenlarimizda). */
 
-/** Interaktiv holat klasslari — barcha bosiladigan elementlarga bir xil. */
+/** Interaktiv holat klasslari — barcha bosiladigan elementlarga bir xil (karta-scale YO'Q). */
 const interactive = cn(
-  'transition-[transform,background-color,border-color] duration-150 ease-out',
-  'active:scale-[0.98]',
+  'transition-[background-color,border-color] duration-150 ease-out',
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
 )
 
@@ -48,7 +47,7 @@ export const ModeRow = memo(function ModeRow({ icon: Icon, label, badge, comingS
       className={cn(
         'flex w-full items-center gap-3.5 px-4 py-3.5 text-left',
         interactive,
-        'hover:bg-psurface',
+        '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
       <Icon size={21} strokeWidth={1.75} className="shrink-0 text-pmuted" />
@@ -78,7 +77,7 @@ export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onCl
         'relative flex w-full aspect-square flex-col items-center justify-center gap-2.5 p-2.5',
         'rounded-2xl bg-pcard shadow-xs',
         interactive,
-        'hover:bg-psurface',
+        '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
       <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
@@ -104,7 +103,7 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
         'relative flex size-[112px] shrink-0 snap-start flex-col items-center justify-center gap-2.5 p-2.5 sm:size-[120px]',
         'rounded-2xl bg-pcard shadow-xs',
         interactive,
-        'hover:bg-psurface',
+        '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
       <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
