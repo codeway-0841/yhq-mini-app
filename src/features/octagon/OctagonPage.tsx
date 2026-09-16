@@ -31,6 +31,9 @@ export default function OctagonPage() {
 
   const [creatingRoom, setCreatingRoom] = useState(false)
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
+  // Idle subview ochiqda DuelHeader back yashirinadi (ikkita chevron bo'lmasin —
+  // subview'ning o'z PageHeader back'i bor)
+  const [duelSubview, setDuelSubview] = useState<string | null>(null)
 
   const { state: s, conn, duelCode, duelLink,
           onlinePlayers, onlineCount, refreshOnline,
@@ -93,14 +96,18 @@ export default function OctagonPage() {
 
   return (
     <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
-      <DuelHeader
-        title={tt('duelTitle')}
-        backLabel={tt('backWord')}
-        inRound={s.phase === 'in_round'}
-        yourScore={s.yourScore}
-        oppScore={s.oppScore}
-        onBack={handleHeaderBack}
-      />
+      {/* Subview ochiqda sahifa header'i butunlay yashirinadi — subview o'z
+          PageHeader'i bilan to'liq 2-sahifa bo'lib ko'rinadi */}
+      {duelSubview === null && (
+        <DuelHeader
+          title={tt('duelTitle')}
+          backLabel={tt('backWord')}
+          inRound={s.phase === 'in_round'}
+          yourScore={s.yourScore}
+          oppScore={s.oppScore}
+          onBack={handleHeaderBack}
+        />
+      )}
 
       <DuelBanners toastMsg={s.toastMsg} conn={conn} phase={s.phase}
         oppWait={s.oppWait} onRetry={retryConnect} language={settings.language} />
@@ -129,6 +136,7 @@ export default function OctagonPage() {
             onRefreshOnline={refreshOnline}
             onFind={() => { setCreatingRoom(false); joinQueue('') }}
             onJoinWithPin={(pin) => { setCreatingRoom(false); joinQueue(pin) }}
+            onSubviewChange={setDuelSubview}
           />
         )}
 

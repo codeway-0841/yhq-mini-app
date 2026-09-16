@@ -24,6 +24,7 @@ interface IdleScreenProps {
   onRefreshOnline?: () => void
   onFind: () => void
   onJoinWithPin: (pin: string) => void
+  onSubviewChange?: (subview: 'battles' | 'leaderboard' | 'online' | 'invite' | null) => void
 }
 
 function getDuelRank(wins: number, tt: ReturnType<typeof import('../../../shared/i18n')['useT']>): { title: string; color: string } {
@@ -80,9 +81,16 @@ export function IdleScreen({
   onRefreshOnline,
   onFind,
   onJoinWithPin,
+  onSubviewChange,
 }: IdleScreenProps) {
   // Alohida navigatsiya (null = Hub, string = Subview)
   const [subview, setSubview] = useState<'battles' | 'leaderboard' | 'online' | 'invite' | null>(null)
+
+  // Subview holatini ota (OctagonPage) ga xabar berish — DuelHeader back
+  // subview ochiqda yashirinadi (ikkita chevron bo'lmasligi uchun)
+  useEffect(() => {
+    onSubviewChange?.(subview)
+  }, [subview, onSubviewChange])
 
   // Stats & History state
   const [serverWins, setServerWins] = useState<number>(0)

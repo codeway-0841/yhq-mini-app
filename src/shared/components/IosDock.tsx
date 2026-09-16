@@ -96,8 +96,8 @@ export default function IosDock() {
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-transform duration-300 ease-out lg:hidden ${/* safe-bottom */ ''}${
-        isVisible ? 'translate-y-0 pointer-events-auto' : 'translate-y-full pointer-events-none'
+      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${/* safe-bottom */ ''}${
+        isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-full opacity-0 pointer-events-none'
       }`}
     >
       <nav
