@@ -31,7 +31,8 @@ describe('IosDock component', () => {
     expect(screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })).toBeInTheDocument()
     expect(screen.getByText('Bosh')).toBeInTheDocument()
     expect(screen.getByText('Testlar')).toBeInTheDocument()
-    expect(screen.getByText('AI Yechish')).toBeInTheDocument()
+    // Markaz AI tugma — matnsiz (icon-only), nom aria-label'da
+    expect(screen.getByRole('button', { name: 'AI Yechish' })).toBeInTheDocument()
     expect(screen.getByText('Duel')).toBeInTheDocument()
     expect(screen.getByText('Menyu')).toBeInTheDocument()
   })
@@ -148,14 +149,14 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
-  it('shows dock on camera AI tutor route /ai-tutor (tab-root since Wave 2)', () => {
+  it('hides dock on camera AI tutor screen /ai-tutor (fullscreen flow, own back button)', () => {
     render(
       <MemoryRouter initialEntries={['/ai-tutor']}>
         <IosDock />
       </MemoryRouter>,
     )
 
-    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).toBeInTheDocument()
+    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
   it('hides dock while reading a library PDF', () => {

@@ -1,4 +1,4 @@
-import { useState, useEffect, useSyncExternalStore } from 'react'
+import { useState, useEffect, useRef, useSyncExternalStore } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { config } from '../../shared/config'
@@ -77,6 +77,8 @@ export default function Profil() {
   const syncPending = useSyncExternalStore(onOutboxChange, () => getOutboxCount(syncUserId))
 
   const [copied, setCopied]               = useState(false)
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  useEffect(() => () => { if (copyTimer.current) clearTimeout(copyTimer.current) }, [])
   const [showNameEdit, setShowNameEdit]   = useState(false)
   const [showPhotoEdit, setShowPhotoEdit] = useState(false)
   const [showLevelInfo, setShowLevelInfo] = useState(false)
@@ -143,9 +145,12 @@ export default function Profil() {
     e?.stopPropagation()
     if (!user?.id || user.id === '0') return
     navigator.clipboard.writeText(String(userId)).catch(() => {})
+    // Ketma-ket bosish: ✓ oynasini uzaytiradi, ❐ ga tushib ketmaydi
+    if (copyTimer.current) clearTimeout(copyTimer.current)
+    copyTimer.current = setTimeout(() => { setCopied(false); copyTimer.current = null }, 1500)
+    if (copied) return // toast spam bo'lmasligi uchun
     setCopied(true)
     showToast(tt('idCopied'))
-    setTimeout(() => setCopied(false), 1500)
   }
 
   const handleReset = () => {
@@ -195,9 +200,9 @@ export default function Profil() {
             >
               <span>ID: {userId}</span>
               {copied ? (
-                <Check size={12} strokeWidth={2} className="text-psuccess" />
+                <Check key="copied" size={12} strokeWidth={2} className="text-psuccess animate-swapRollIn" />
               ) : (
-                <Copy size={12} strokeWidth={1.75} className="text-psubtle" />
+                <Copy key="copy" size={12} strokeWidth={1.75} className="text-psubtle animate-swapRollIn" />
               )}
             </button>
             {/* Daraja — bosilganda daraja va XP haqida tushuntirish modali ochiladi */}

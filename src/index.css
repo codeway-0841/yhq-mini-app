@@ -1263,6 +1263,16 @@ body[data-no-animation='true'] .animate-premiumIn { animation: none; }
 .animate-sheetItemIn { animation: sheetItemIn 0.22s ease-out both; }
 body[data-no-animation='true'] .animate-sheetItemIn { animation: none; }
 
+/* ── Action-swap roll (beui action-swap'ning CSS versiyasi) ────────────────
+   Holat almashganda (nusxa ✓, toggle ikonka) yangi element pastdan yumshoq
+   kiradi. `key` o'zgarganda qayta Mount bo'lib animatsiya qayta o'ynaydi. */
+@keyframes swapRollIn {
+  from { opacity: 0; transform: translateY(45%); filter: blur(2px); }
+  to   { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.animate-swapRollIn { animation: swapRollIn 0.18s ease-out both; }
+body[data-no-animation='true'] .animate-swapRollIn { animation: none; }
+
 /* ── Test & Result Pop micro-interactions ───────────────────────────────── */
 @keyframes correctPop {
   0%   { transform: scale(0.97); }
@@ -1308,7 +1318,7 @@ body[data-no-animation='true'] .animate-scorePop {
   .animate-shimmer, .shimmer::after,
   .animate-fadeIn, .splash-float, .splash-float-safe, .onboarding-float,
   .animate-flyUp, .animate-wiggle, .coin-pop,
-  .animate-premiumIn, .animate-sheetItemIn, .animate-correctPop, .animate-scorePop, .animate-shake,
+  .animate-premiumIn, .animate-sheetItemIn, .animate-swapRollIn, .animate-correctPop, .animate-scorePop, .animate-shake,
   .animate-dynamic-island-expand, .dashboard-menu-action,
   .animate-spin, .animate-pulse, .animate-bounce {
     animation: none !important;

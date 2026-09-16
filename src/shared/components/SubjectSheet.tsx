@@ -15,7 +15,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss>
+    <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss backdropClassName="bg-black/40 backdrop-blur-sm">
       <div className="relative w-full bg-pcard rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[80vh] overflow-y-auto shadow-2xl">
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
         <p id="subject-title" data-drag-handle className="text-center text-base font-semibold mb-5 text-pfg select-none">

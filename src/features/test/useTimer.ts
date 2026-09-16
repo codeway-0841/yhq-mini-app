@@ -42,7 +42,32 @@ export function useTimer(onTimeUp: () => void, resetKey: unknown, totalSeconds =
     }
   }, [resetKey, totalSeconds])
 
-  const m = String(Math.floor(seconds / 60)).padStart(2, '0')
-  const s = String(seconds % 60).padStart(2, '0')
-  return `${m}:${s}`
+  return formatTimerLeft(seconds)
+}
+
+/**
+ * Soniyalar → "mm:ss" (60+ daqiqada "h:mm:ss", masalan marafon 5:00:00).
+ */
+export function formatTimerLeft(seconds: number): string {
+  const s = Math.max(0, Math.floor(seconds))
+  const m = Math.floor(s / 60)
+  const sec = s % 60
+  if (m >= 60) {
+    const h = Math.floor(m / 60)
+    const min = m % 60
+    return `${h}:${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`
+  }
+  return `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`
+}
+
+/**
+ * "mm:ss" / "h:mm:ss" → qolgan soniyalar (urgency rangi uchun; hook API'si o'zgarmaydi).
+ * Noto'g'ri format xavfsiz 0 qaytaradi.
+ */
+export function parseTimerLeft(timer: string): number {
+  const parts = timer.split(':').map(Number)
+  if (parts.some((n) => !Number.isFinite(n))) return 0
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2]
+  if (parts.length === 2) return parts[0] * 60 + parts[1]
+  return 0
 }

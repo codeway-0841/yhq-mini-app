@@ -25,7 +25,7 @@ import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../sha
 import TestExplanation from './components/TestExplanation'
 import TestHelperAvatar from './components/TestHelperAvatar'
 import { useT } from '../../shared/i18n'
-import { useTimer } from './useTimer'
+import { useTimer, parseTimerLeft } from './useTimer'
 import QuestionStrip from './QuestionStrip'
 import OptionButton from './OptionButton'
 import MathText from '../../shared/components/MathText'
@@ -304,6 +304,10 @@ export default function TestPage() {
   }, [entrySession, sessionKey, subjectId, totalSeconds])
 
   const timer = useTimer(handleTimeUp, location.key, initialSeconds)
+  // Island-timer urgency (beui mantiqi, CSS'da): <5daq warning, <1daq danger+pulse
+  const timerLeft = parseTimerLeft(timer)
+  const timerTone = timerLeft <= 60 ? 'text-pdanger' : timerLeft <= 300 ? 'text-pwarning' : 'text-pfg'
+  const timerIconTone = timerLeft <= 60 ? 'text-pdanger' : timerLeft <= 300 ? 'text-pwarning' : 'text-pmuted'
 
   // Sessiyani restore qilish
   useEffect(() => {
@@ -463,9 +467,11 @@ export default function TestPage() {
             {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
           </Button>
           <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2 text-pfg" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
-              <Timer size={16} className="text-pmuted" aria-hidden="true" />
-              <span className="text-base font-semibold tabular-nums">{timer}</span>
+            <div className="flex items-center gap-2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+              <Timer size={16} className={timerIconTone} aria-hidden="true" />
+              <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
+                <span key={Math.floor(timerLeft / 60)} className={`inline-block text-base font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
+              </span>
             </div>
             {mode === 'mock' && (
               <span className={`text-xs font-medium tabular-nums ${wrongCount > 0 ? 'text-pdanger' : 'text-pmuted'}`}>

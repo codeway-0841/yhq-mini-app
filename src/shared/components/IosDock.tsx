@@ -15,10 +15,10 @@ import { haptics } from '../../platform/haptics'
  * (`hidesBottomBarWhenPushed`). Ichki sahifalarda orqaga qaytish —
  * PageHeader'dagi back tugma orqali (2026-09-15 "har joyda nav" fix:
  * eski HIDDEN_PREFIXES denylist o'rniga allowlist).
- * `/ai-tutor` ham ro'yxatda: dock'ning markaz tugmasi shu sahifaga olib boradi —
- * bossangiz dock g'oyib bo'lmasligi kerak (2026-09-16 Wave 2).
+ * `/ai-tutor` ro'yxatda EMAS: kamera-first fullscreen ekran (o'z back tugmasi bor),
+ * dock kamera UI'ni to'sib qoladi (2026-09-16). Markaz tugma baribir o'sha yerga olib boradi.
  */
-export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar', '/ai-tutor'] as const
+export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
 export function isTabRootRoute(pathname: string): boolean {
   return (TAB_ROOT_PATHS as readonly string[]).includes(pathname)
 }
@@ -96,16 +96,19 @@ export default function IosDock() {
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${/* safe-bottom */ ''}${
-        isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-full opacity-0 pointer-events-none'
+      className={`fixed inset-x-0 bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-40 flex justify-center px-4 transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+        isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-[calc(100%+1.5rem+var(--safe-bottom,0px))] opacity-0 pointer-events-none'
       }`}
     >
+      {/* Suzuvchi pill (iOS Liquid Glass): pastdan uzilgan, yumaloq, blur.
+          Opaque fallback YO'Q — rgb-triplet/alpha barcha WebView'da ishlaydi
+          (DesktopSidebar/IosDock eski pattern). */}
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="w-full bg-[rgb(var(--p-card-rgb)/0.95)] backdrop-blur-xl border-t border-pline shadow-[0_-4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)] pb-[calc(0.35rem+var(--safe-bottom,0px))] pt-1.5"
+        className="pointer-events-auto w-full max-w-md rounded-full border border-pline bg-[rgb(var(--p-card-rgb)/0.75)] px-3 py-1.5 shadow-lg backdrop-blur-2xl saturate-150"
       >
-        <div className="mx-auto flex max-w-lg items-end justify-around px-2">
+        <div className="flex items-center justify-around">
           {navItems.map((item) => {
             const isActive = item.path === '/'
               ? location.pathname === '/'
@@ -114,7 +117,7 @@ export default function IosDock() {
 
             if (item.isCenter) {
               return (
-                <div key={item.id} className="flex-1 flex flex-col items-center justify-center -mt-5">
+                <div key={item.id} className="flex-1 flex flex-col items-center justify-center">
                   <button
                     type="button"
                     onClick={() => handleNav(item)}
@@ -123,9 +126,6 @@ export default function IosDock() {
                   >
                     <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
                   </button>
-                  <span className="text-[10px] font-bold text-pmuted mt-1 tracking-tight whitespace-nowrap">
-                    {item.shortLabel[lang]}
-                  </span>
                 </div>
               )
             }

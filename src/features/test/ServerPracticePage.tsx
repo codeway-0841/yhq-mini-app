@@ -39,7 +39,7 @@ import { clearDrawingSession } from './components/drawing-model'
 import { buildTopicBreakdown } from './topic-diagnosis'
 import { buildV2Results, buildV2ReviewItems, v2Threshold } from './server-results'
 import { formatImageSrc } from './hooks/useImagePreload'
-import { useTimer } from './useTimer'
+import { useTimer, parseTimerLeft } from './useTimer'
 import { useSwipeNavigation } from '../../shared/hooks/useSwipeNavigation'
 
 const bootInflight = new Map<string, Promise<TestSessionResponse>>()
@@ -471,6 +471,9 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
 
   const initialSeconds = useMemo(() => secondsUntil(snapshot?.expiresAt), [snapshot?.expiresAt])
   const timer = useTimer(handleTimeUp, snapshot?.sessionId ?? 'loading', initialSeconds)
+  const timerLeft = parseTimerLeft(timer)
+  const timerTone = timerLeft <= 60 ? 'text-pdanger' : timerLeft <= 300 ? 'text-pwarning' : 'text-pfg'
+  const timerIconTone = timerLeft <= 60 ? 'text-pdanger' : timerLeft <= 300 ? 'text-pwarning' : 'text-pmuted'
 
   const retryTest = useCallback(async () => {
     if (snapshot) {
@@ -605,7 +608,10 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
                     : (isRu ? 'Работа над ошибками' : 'Xatolarni tuzatish'))
                 : (isRu ? `Практика · ${snapshot.total}` : `Mashq · ${snapshot.total}`))}
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs text-pmuted"><Timer size={12} />{timer} · {answeredCount}/{snapshot.total}
+            <p className="flex items-center justify-center gap-1 text-xs text-pmuted"><Timer size={12} className={timerIconTone} />
+              <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
+                <span key={Math.floor(timerLeft / 60)} className={`inline-block font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
+              </span> · {answeredCount}/{snapshot.total}
               {mode === 'mock' && (
                 <span className={wrongCount > 0 ? 'font-semibold text-pdanger' : undefined}> · {wrongCount}/2 {isRu ? 'ошибки' : 'xato'}</span>
               )}

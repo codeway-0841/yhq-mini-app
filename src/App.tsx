@@ -115,7 +115,7 @@ function prefetchRouteChunks() {
 function Layout({ children }: { children: ReactNode }) {
   const { pageRef, navigate } = usePlatformNavigation()
   // Dock FAQAT tab-root'larda (IosDock allowlist) — ichki sahifalarda pastki
-  // 4.5rem dock-zaxira o'lik bo'shliqqa aylanmasligi uchun data-atribut orqali
+  // suzuvchi-pill zaxira o'lik bo'shliqqa aylanmasligi uchun data-atribut orqali
   // CSS'da toraytiriladi (className STATIK qoladi — safe-area testi regex'i).
   const { pathname } = useLocation()
 
@@ -143,12 +143,12 @@ function Layout({ children }: { children: ReactNode }) {
       <div
         ref={pageRef}
         data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
-        // pb: 4.5rem bazaviy (iOS Dock balandligi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
+        // pb: 5.5rem bazaviy (suzuvchi pill balandligi + 0.75rem offset) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
         // Desktop (lg+): dock yashirin — pastki padding index.css media query'da torayadi;
         // konteyner mobil max-w-2xl → desktop'da keng (3xl/5xl/6xl).
         // px SAQLANADI (px-0): ichki sahifalar o'z px-4'iga ega + PageHeader -mx-4
         // full-bleed'ga tayanadi — konteynerga padding qo'shsak header sinadi.
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(5.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
       >
         <Suspense fallback={<PageLoader />}>
           {children}

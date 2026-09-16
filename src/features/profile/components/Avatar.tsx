@@ -52,11 +52,12 @@ export function Avatar({
     </div>
   )
 
-  /** Avatar ustidagi kichik amal tugmasi */
+  /** Avatar ustidagi kichik amal tugmasi (vizual kichik, hit-area 44px+ — before overlay) */
   const editBtn = cn(
     'absolute grid place-items-center rounded-full border-[2px] border-pcanvas transition-transform duration-150 ease-out active:scale-90',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
-    'size-9',
+    'before:absolute before:-inset-3 before:content-[""]',
+    size === 'lg' ? 'size-7' : 'size-6',
   )
 
   return (
