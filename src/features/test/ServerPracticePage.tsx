@@ -8,10 +8,12 @@ import type {
 } from '../../../shared/test-session'
 import { api, ApiError } from '../../shared/api'
 import { Button } from '../../shared/components/ui/button'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import MathText from '../../shared/components/MathText'
 import { goBack } from '../../shared/lib/navigation'
+import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { isSpeaking, speak, stopSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { todayStr } from '../../shared/store/useDailyStore'
@@ -147,6 +149,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   const [finished, setFinished] = useState(() => Boolean(snapshot?.answers.every(Boolean)))
   const [showResults, setShowResults] = useState(() => Boolean(snapshot?.answers.every(Boolean)))
   const [showReview, setShowReview] = useState(false)
+  const [coinPop, setCoinPop] = useState(0)
   const [earnedXpTotal, setEarnedXpTotal] = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
   const [zoomed, setZoomed] = useState<string | null>(null)
@@ -327,8 +330,20 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         correctOptions,
         pendingTokens,
       }
-      next.current = firstAvailable(next)
+      // Legacy paritet: javobdan keyin KEYINGI savolga o'tadi (yetkazilgan
+      // bo'lsa). firstAvailable faqat resume/zaxira uchun — aks holda strip'da
+      // sakrab yurganda kutilmagan orqaga sakrash bo'lardi.
+      const delivered = new Set(next.questions.map((item) => item.position))
+      next.current = delivered.has(position + 1) ? position + 1 : firstAvailable(next)
       persist(next)
+      if (response.attempt.correct) {
+        haptics.success()
+        playSound('success')
+      } else {
+        haptics.error()
+        playSound('error')
+      }
+      if (response.attempt.coinsEarned > 0) setCoinPop((value) => value + 1)
       if (!response.attempt.duplicate) {
         applySessionAnswer({
           correct: response.attempt.correct,
@@ -444,6 +459,15 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     stopSpeaking()
     return stopSpeaking
   }, [snapshot, settings.language])
+
+  // Javoblar yo'qolmasin: reload/yopishda brauzer tasdig'i (legacy paritet)
+  useEffect(() => {
+    const answeredCount = snapshot?.answers.filter((a) => a !== null).length ?? 0
+    if (answeredCount === 0 || finished) return
+    const handler = (e: BeforeUnloadEvent) => { e.preventDefault(); e.returnValue = '' }
+    window.addEventListener('beforeunload', handler)
+    return () => window.removeEventListener('beforeunload', handler)
+  }, [snapshot, finished])
 
   const initialSeconds = useMemo(() => secondsUntil(snapshot?.expiresAt), [snapshot?.expiresAt])
   const timer = useTimer(handleTimeUp, snapshot?.sessionId ?? 'loading', initialSeconds)
@@ -592,6 +616,14 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       </header>
 
       {error && <div role="alert" className="mx-auto mt-3 flex max-w-2xl items-center gap-2 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-4 py-3 text-sm text-pdanger"><AlertTriangle size={16} />{error}</div>}
+      {coinPop > 0 && (
+        <div key={coinPop} className="coin-pop" aria-hidden>
+          <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.18)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold shadow-xs">
+            <CoinIcon size={14} />
+            +1
+          </span>
+        </div>
+      )}
       <QuestionStrip
         total={snapshot.total}
         current={position}
