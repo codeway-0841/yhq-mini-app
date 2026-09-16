@@ -91,6 +91,22 @@ export default function IosDock() {
     navigate(item.path)
   }, [navigate])
 
+  // Sliding active pill (transitions.dev "tabs-sliding"): bitta umumiy pill
+  // active tab ortidan `translateX` bilan sirg'aladi. 5 ustun HAMMASI `flex-1`
+  // (= aniq 20%) bo'lgani uchun JS o'lchash (getBoundingClientRect/RO) SHART
+  // EMAS — pill `w-1/5` + `translateX(idx*100%)`, transition faqat transform'da
+  // (compositor-friendly, layout thrash yo'q). Uslub skrinshot'day (2026-09-16):
+  // NEYTRAL kapsula (`rounded-full bg-psurface` — aksent wash EMAS) + active
+  // matn `text-pfg`; pill katakchani TO'LIQ egallaydi (`inset-y-0` — tepa/past
+  // bo'shliq YO'Q, rasmda kapsula bar ichini to'ldirgani kabi). Yon tab'dan
+  // yon tab'ga o'tishda pill markaziy FAB ostidan o'tadi (FAB opaque + z-10).
+  const activeIndex = useMemo(() => navItems.findIndex((item) => {
+    if (item.isCenter) return false
+    return item.path === '/'
+      ? location.pathname === '/'
+      : location.pathname.startsWith(item.path)
+  }), [navItems, location.pathname])
+
   if (!isTabRoot) return null
 
   return (
@@ -106,9 +122,18 @@ export default function IosDock() {
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="pointer-events-auto w-full max-w-md rounded-full border border-pline bg-[rgb(var(--p-card-rgb)/0.75)] px-3 py-1.5 shadow-lg backdrop-blur-2xl saturate-150"
+        className="pointer-events-auto w-full max-w-md rounded-3xl border border-pline bg-[rgb(var(--p-card-rgb)/0.75)] px-2 py-2 shadow-lg backdrop-blur-2xl saturate-150"
       >
-        <div className="flex items-center justify-around">
+        <div className="relative flex items-center justify-around">
+          {/* Sliding pill — tugmalar (z-10) ostida, pointer event olmaydi */}
+          <span
+            aria-hidden="true"
+            data-testid="dock-active-pill"
+            className={`pointer-events-none absolute inset-y-0 left-0 w-1/5 rounded-full bg-psurface transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none ${
+              activeIndex >= 0 ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ transform: `translateX(${Math.max(activeIndex, 0) * 100}%)` }}
+          />
           {navItems.map((item) => {
             const isActive = item.path === '/'
               ? location.pathname === '/'
@@ -117,7 +142,7 @@ export default function IosDock() {
 
             if (item.isCenter) {
               return (
-                <div key={item.id} className="flex-1 flex flex-col items-center justify-center">
+                <div key={item.id} className="relative z-10 flex-1 flex flex-col items-center justify-center">
                   <button
                     type="button"
                     onClick={() => handleNav(item)}
@@ -137,12 +162,13 @@ export default function IosDock() {
                 onClick={() => handleNav(item)}
                 aria-label={tt(item.labelKey)}
                 aria-current={isActive ? 'page' : undefined}
-                className={`flex-1 flex flex-col items-center justify-center min-w-0 py-1 rounded-xl transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
-                  isActive ? 'text-pprimary font-semibold' : 'text-pmuted hover:text-pfg'
+                title={tt(item.labelKey)}
+                className={`relative z-10 flex-1 flex flex-col items-center justify-center min-w-0 py-2.5 rounded-full transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+                  isActive ? 'text-pfg font-semibold' : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 <Icon
-                  size={20}
+                  size={22}
                   strokeWidth={isActive ? 2.4 : 1.8}
                   className="transition-transform"
                 />

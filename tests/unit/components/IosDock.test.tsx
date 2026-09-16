@@ -149,6 +149,44 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
+  it('sliding pill skrinshot uslubida: neytral kapsula (rounded-full bg-psurface)', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+    const pill = screen.getByTestId('dock-active-pill')
+    expect(pill.className).toMatch(/rounded-full/)
+    expect(pill.className).toMatch(/bg-psurface/)
+    expect(pill.className).not.toMatch(/bg-pwash/)
+    // Kapsula katakchani to'liq egallaydi (tepa/past bo'shliq YO'Q)
+    expect(pill.className).toMatch(/inset-y-0/)
+    expect(pill.className).not.toMatch(/top-1/)
+    // Active tab matni neytral (aksent EMAS) — kapsula ustida kontrast uchun
+    const homeBtn = screen.getByRole('button', { name: /Bosh sahifa/i })
+    expect(homeBtn.className).toMatch(/text-pfg/)
+    expect(homeBtn.className).not.toMatch(/text-pprimary/)
+  })
+
+  it('sliding pill active tab ortidan ergashadi (tabs-sliding)', () => {
+    const cases: Array<[string, string]> = [
+      ['/', 'translateX(0%)'],
+      ['/testlar', 'translateX(100%)'],
+      ['/octagon', 'translateX(300%)'],
+      ['/rejimlar', 'translateX(400%)'],
+    ]
+    for (const [path, expected] of cases) {
+      const { unmount } = render(
+        <MemoryRouter initialEntries={[path]}>
+          <IosDock />
+        </MemoryRouter>,
+      )
+      const pill = screen.getByTestId('dock-active-pill')
+      expect(pill.style.transform, path).toBe(expected)
+      unmount()
+    }
+  })
+
   it('hides dock on camera AI tutor screen /ai-tutor (fullscreen flow, own back button)', () => {
     render(
       <MemoryRouter initialEntries={['/ai-tutor']}>
