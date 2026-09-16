@@ -125,3 +125,45 @@ describe('api.postResult — cold-start timeout (20s)', () => {
     }
   })
 })
+
+/**
+ * Full-bank timeout regression-guard (2026-09-16 "testlar yuklanmadi" fix):
+ * prod banklar MB'larla o'lchandi (adabiyot 13.5MB, onatili 9.3MB, fizika
+ * 5.7MB; matematika hatta CDN'dan datacenter'ga 10.6s'da keldi) — mobil
+ * Telegram WebView'da default 8s'ga sig'may TestPage "Savollarni yuklab
+ * bo'lmadi"ga tushardi (barcha fanlar). getQuestions + getTopics endi 20s
+ * (boot-path pattern): 8s'da abort BO'LMASLIGI shart.
+ */
+describe('api full-bank — katta bank timeout (20s)', () => {
+  beforeEach(() => {
+    vi.restoreAllMocks()
+  })
+
+  it.each([
+    ['getQuestions', () => api.getQuestions('yhq')],
+    ['getTopics', () => api.getTopics('yhq')],
+  ])('%s 8s\'da abort BO\'LMAYDI, 20s\'da 408 timeout', async (_name, call) => {
+    vi.useFakeTimers()
+    try {
+      const fetchMock = vi.fn((_url: unknown, init?: RequestInit) =>
+        new Promise<Response>((_resolve, reject) => {
+          init?.signal?.addEventListener('abort', () =>
+            reject(new DOMException('The operation was aborted.', 'AbortError')))
+        }),
+      )
+      vi.stubGlobal('fetch', fetchMock)
+
+      const settled = vi.fn()
+      void call().catch((e: unknown) => { settled(e) })
+
+      await vi.advanceTimersByTimeAsync(8_000)
+      expect(settled).not.toHaveBeenCalled() // katta bank hali yuklanmoqda
+
+      await vi.advanceTimersByTimeAsync(12_001)
+      expect(settled).toHaveBeenCalledTimes(1)
+      expect(settled.mock.calls[0]![0]).toMatchObject({ status: 408, code: 'timeout' })
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+})

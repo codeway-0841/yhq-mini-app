@@ -585,7 +585,11 @@ export const api = {
     // Admin CRUD'dan keyin: browser (1h) + Vercel CDN (24h) cache'ni chetlab o'tish
     if (fresh) params.set('_t', String(Date.now()))
     const qs = params.toString()
-    return request<DbQuestion[]>('GET', `/questions${qs ? `?${qs}` : ''}`)
+    // Timeout 20s (boot-path pattern): full-bank payload'lar MB'larla o'lchandi
+    // (2026-09 prod: adabiyot 13.5MB, onatili 9.3MB, fizika 5.7MB; hatta
+    // matematika CDN'dan datacenter'ga 10.6s'da keldi) — mobil Telegram WebView'da
+    // default 8s'ga sig'may "Savollarni yuklab bo'lmadi"ga tushardi.
+    return request<DbQuestion[]>('GET', `/questions${qs ? `?${qs}` : ''}`, undefined, 20_000)
   },
   getExplanation: (questionId: number, lang: 'uz' | 'ru' = 'uz') =>
     request<{ questionId: number; text: string }>('GET', `/questions/${encodeURIComponent(questionId)}/explanation?lang=${lang}`),
@@ -595,7 +599,9 @@ export const api = {
     if (subject) params.set('subject', subject)
     if (fresh) params.set('_t', String(Date.now()))
     const qs = params.toString()
-    return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`)
+    // 20s — getQuestions bilan bir Promise.all'da tortiladi; CDN-miss + Vercel/Neon
+    // cold start'da 8s'ga sig'may juft so'rovdan bittasi tushsa butun load yiqiladi.
+    return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`, undefined, 20_000)
   },
 
   /** Bilet katalogi (v2) — faqat sonlar, savol kontenti YO'Q (public CDN). */
