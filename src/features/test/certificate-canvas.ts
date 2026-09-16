@@ -5,6 +5,8 @@
  * yuqori sifatli (1200x850 retina) rasmiy sertifikat generatsiya qiladi.
  */
 
+import { config } from '../../shared/config'
+
 export interface CertificateData {
   userName: string
   subjectName: string
@@ -223,8 +225,8 @@ export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData
   ctx.font = '12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.fillText(
     isRu
-      ? 'Проверено цифровой системой KIVVI · t.me/kiwi_uz_bot'
-      : 'KIVVI raqamli o‘quv tizimi orqali tasdiqlangan · t.me/kiwi_uz_bot',
+      ? `Проверено цифровой системой KIVVI · t.me/${config.botUsername}`
+      : `KIVVI raqamli o‘quv tizimi orqali tasdiqlangan · t.me/${config.botUsername}`,
     W / 2,
     785,
   )

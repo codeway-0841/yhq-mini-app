@@ -5,6 +5,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { api } from '../../shared/api'
 import { shareUrl } from '../../platform/telegram'
+import { config } from '../../shared/config'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { SUBJECT_BASES } from '../../../shared/subjects'
@@ -78,7 +79,7 @@ export default function ResultsModal({
       const subject = SUBJECT_BASES.find((s) => s.id === subjectId)
       const subjectName = lang === 'ru' ? (subject?.nameRu ?? 'ПДД') : (subject?.name ?? 'YHQ')
       const shareText = buildResultShareText({ correct, total, percent, passed, streak: state.streak, lang })
-      const link = `https://t.me/kiwi_uz_bot?start=ref_${uid}`
+      const link = `https://t.me/${config.botUsername}?start=ref_${uid}`
 
       const canvas = document.createElement('canvas')
       drawResultCard(canvas, {
@@ -325,7 +326,7 @@ export default function ResultsModal({
             const lang = useAppStore.getState().settings.language
             const streak = useAppStore.getState().streak
             const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
-            shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
+            shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid ?? '0'}`, text)
           }}
           className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
           <Share2 size={15} strokeWidth={1.75} />

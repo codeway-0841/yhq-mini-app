@@ -211,7 +211,7 @@ export default function ShopPage() {
       {celebrate && <Confetti count={40} />}
 
       {/* Header (PageHeader SSOT) */}
-      <PageHeader title={tt('shopTitle')} onBack={() => goBack(navigate)} backLabel="Orqaga" />
+      <PageHeader title={tt('shopTitle')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} />
 
       {/* Balans — ixcham karta (gradient border'siz); hint pastki qatorda */}
       <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">

@@ -7,6 +7,7 @@ import { PremiumIcon } from './PremiumIcon'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { openTelegramLink } from '../../platform/telegram'
+import { config } from '../config'
 import { requestNotificationPermission } from '../../platform/native'
 import { playSound } from '../lib/sounds'
 import { useT } from '../i18n'
@@ -193,7 +194,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
           )}
 
           {/* Xatolik haqida xabar — Row bilan bir xil ritm (dublikat chip markup'i yo'q) */}
-          <button className="w-full text-left" onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')} aria-label={tt('reportIssue')}>
+          <button className="w-full text-left" onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)} aria-label={tt('reportIssue')}>
             <Row icon={Flag} label={tt('reportIssue')}>
               <ChevronRight size={14} className="text-psubtle" />
             </Row>
@@ -258,7 +259,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                   {tt('themePreviewing')}
                 </span>
                 <button
-                  onClick={() => { stopPreview(); setPicker(null); onClose(); openTelegramLink('https://t.me/kiwi_uz_bot?start=premium') }}
+                  onClick={() => { stopPreview(); setPicker(null); onClose(); openTelegramLink(`https://t.me/${config.botUsername}?start=premium`) }}
                   className="text-[11px] font-semibold text-pwarning underline underline-offset-2 active:opacity-70">
                   {tt('themeGetPremium')}
                 </button>

@@ -50,8 +50,8 @@ export default function AdminPage() {
         <div className="flex items-center justify-between">
           <button
             onClick={() => goBack(navigate)}
-            className="w-9 h-9 rounded-xl bg-psurface flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all shadow-xs"
-            aria-label="Orqaga"
+            className="grid size-9 place-items-center rounded-xl bg-psurface flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all shadow-xs"
+            aria-label={lang === 'ru' ? 'Назад' : 'Orqaga'}
           >
             <ChevronLeft size={20} />
           </button>

@@ -24,6 +24,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { track } from '../../../shared/lib/analytics'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import Confetti from '../../../shared/components/Confetti'
 import { cn } from '../../../shared/lib/cn'
 
@@ -176,7 +177,7 @@ export default function SubscriptionModal({
 
     if (selectedProvider === 'stars') {
       track('premium_stars_click', { plan: selectedPlan.key })
-      openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${selectedPlan.key}`)
+      openTelegramLink(`https://t.me/${config.botUsername}?start=premium_${selectedPlan.key}`)
       onClose()
       return
     }
@@ -216,7 +217,7 @@ export default function SubscriptionModal({
   // Yordam olish
   const handleGetHelp = () => {
     haptics.impact('light')
-    openTelegramLink('https://t.me/kiwi_uz_bot')
+    openTelegramLink(`https://t.me/${config.botUsername}`)
   }
 
   return (
@@ -249,7 +250,7 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={onClose}
                   className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label="Orqaga"
+                  aria-label={tt('backWord')}
                 >
                   <ChevronLeft size={20} />
                 </button>
@@ -385,7 +386,7 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={() => setStep('choose_plan')}
                   className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label="Orqaga"
+                  aria-label={tt('backWord')}
                 >
                   <ChevronLeft size={20} />
                 </button>

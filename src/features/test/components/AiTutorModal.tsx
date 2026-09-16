@@ -4,6 +4,7 @@ import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { explainQuestion, explainSessionQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
 import { api } from '../../../shared/api'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { speak } from '../../../shared/lib/speech'
 import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -192,7 +193,7 @@ export default function AiTutorModal({
             <button
               onClick={() => {
                 handleClose()
-                openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
+                openTelegramLink(`https://t.me/${config.botUsername}?start=premium`)
               }}
               className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
             >

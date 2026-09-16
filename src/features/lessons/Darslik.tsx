@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
+import { config } from '../../shared/config'
 import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle, ArrowDown } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
@@ -176,7 +177,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
 
       {/* Pastki tugmalar */}
       <div className="flex gap-3 px-4 py-3 border-t border-pline">
-        <button onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
+        <button onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)}
           className="flex-1 py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold flex items-center justify-center gap-2 shadow-xs">
           <MessageCircle size={16} />
           {ru ? 'Задать вопрос' : 'Savol berish'}

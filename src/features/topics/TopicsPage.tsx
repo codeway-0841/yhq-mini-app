@@ -175,7 +175,7 @@ function YhqTopics() {
   return (
     // Desktop: akkordeon ro'yxat tor markaziy ustunda (ochiladigan kontent uchun).
     <div className="px-4 pb-4 lg:mx-auto lg:w-full lg:max-w-2xl">
-      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel="Orqaga" className="-mx-4 mb-4" />
+      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="-mx-4 mb-4" />
 
       <div className="flex flex-col gap-2.5">
         {modules.map((mod) => {
@@ -300,7 +300,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
 
   return (
     <div className="px-4 pb-4">
-      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel="Orqaga" className="-mx-4 mb-4" />
+      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="-mx-4 mb-4" />
 
       {loading && rows.length === 0 && (
         <div className="grid place-items-center py-16">

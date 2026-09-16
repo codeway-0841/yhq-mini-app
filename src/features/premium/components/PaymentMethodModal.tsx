@@ -4,6 +4,7 @@ import { type PremiumPlan, formatUzs } from '../../../../shared/premium-plans'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
@@ -133,7 +134,7 @@ export default function PaymentMethodModal({
 
   const handlePayWithStars = () => {
     track('premium_stars_click', { plan: plan.key })
-    openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${plan.key}`)
+    openTelegramLink(`https://t.me/${config.botUsername}?start=premium_${plan.key}`)
     onClose()
   }
 
