@@ -149,7 +149,7 @@ export default function SavedGraphsSheet({
                   <button
                     type="button"
                     onClick={() => handleOpen(g)}
-                    className="min-w-0 flex-1 text-left focus-visible:outline-none"
+                    className="min-w-0 flex-1 rounded-xl text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                   >
                     <p className="truncate text-[13.5px] font-semibold text-pfg">{g.title}</p>
                     <p className="mt-0.5 truncate font-mono text-[11.5px] text-pmuted">{g.exprPreview}</p>

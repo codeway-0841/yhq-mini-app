@@ -7,6 +7,8 @@
  * (o'tdi/o'tmadi), branding va virusli referal CTA markazda.
  */
 
+import { config } from '../../shared/config'
+
 export interface ResultCardData {
   userName: string
   subjectName: string
@@ -154,5 +156,5 @@ export function drawResultCard(canvas: HTMLCanvasElement, data: ResultCardData):
   ctx.fillText(data.date, cx, S - 104)
   ctx.fillStyle = '#fbbf24'
   ctx.font = `bold 26px ${FONT}`
-  ctx.fillText(isRu ? 'Проверь себя → t.me/kiwi_uz_bot' : 'O‘zingni sinab ko‘r → t.me/kiwi_uz_bot', cx, S - 62)
+  ctx.fillText(isRu ? `Проверь себя → t.me/${config.botUsername}` : `O‘zingni sinab ko‘r → t.me/${config.botUsername}`, cx, S - 62)
 }

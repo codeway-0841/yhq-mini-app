@@ -308,6 +308,52 @@ describe('ServerPracticePage vertical slice', () => {
     expect(screen.getByRole('button', { name: /Savolni o.qib berish/ })).toBeInTheDocument()
   })
 
+  it('advances to the next delivered question (not the earliest gap)', async () => {
+    const three = [0, 1, 2].map((position) => ({
+      position,
+      deliveryToken: `adv-tok-${position}-abcdef`,
+      expiresAt: EXPIRES,
+      text: `Uchlik savol ${position + 1}`,
+      options: [{ id: 'F1', text: 'Variant A' }, { id: 'F2', text: 'Variant B' }],
+      media: null,
+      topic: null,
+    }))
+    vi.mocked(api.createTestSession).mockResolvedValueOnce({
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 3, expiresAt: EXPIRES },
+      questions: three,
+      review: [],
+    })
+    vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+      attempt: {
+        position: 1, correct: false, correctOptionId: 'F1', duplicate: false,
+        dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false,
+      },
+      append: [],
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 1, total: 3, expiresAt: EXPIRES },
+    })
+
+    render(<MemoryRouter><ServerPracticePage mode="random20" /></MemoryRouter>)
+
+    expect(await screen.findByText('Uchlik savol 1')).toBeInTheDocument()
+    // Strip'da 2-savolga sakraymiz (1-savol javobsiz qoladi)
+    fireEvent.click(screen.getByRole('button', { name: '2' }))
+    expect(await screen.findByText('Uchlik savol 2')).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Variant B'))
+    await waitFor(() => expect(api.submitTestSessionAnswer).toHaveBeenCalledTimes(1))
+    // Legacy paritet: keyingi (3-) savolga o'tadi — 1-bo'shliqqa qaytmaydi
+    expect(await screen.findByText('Uchlik savol 3')).toBeInTheDocument()
+    expect(screen.queryByText('Uchlik savol 1')).not.toBeInTheDocument()
+  })
+
+  it('pops +1 coin on coin-earning answers', async () => {
+    render(<MemoryRouter><ServerPracticePage mode="random20" /></MemoryRouter>)
+
+    expect(await screen.findByText('Server bergan savol')).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Variant bir'))
+    await waitFor(() => expect(api.submitTestSessionAnswer).toHaveBeenCalledTimes(1))
+    expect(await screen.findByText('+1')).toBeInTheDocument()
+  })
+
   it('mounts the drawing toolbox (FAB hub opens the drawing toolbar)', async () => {
     render(<MemoryRouter><ServerPracticePage mode="random20" /></MemoryRouter>)
 

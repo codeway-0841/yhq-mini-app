@@ -14,6 +14,7 @@ import { getBossIcon } from './boss-icons'
 import { Skeleton } from '../../shared/components/ui/skeleton'
 import { bossCache, fetchBossState, normalizeBossState } from '../../shared/lib/dashboard-cache'
 import { cn } from '../../shared/lib/cn'
+import { formatCoins } from '../../shared/lib/format'
 
 type State = Awaited<ReturnType<typeof api.getBossState>>
 
@@ -91,7 +92,7 @@ export default function BossCard() {
         <span
           className={cn(
             'rounded-full px-2 py-0.5 text-[12px] font-bold tracking-tight',
-            isDefeated ? 'bg-psuccess/15 text-psuccess' : 'bg-psurface text-pmuted'
+            isDefeated ? 'bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess' : 'bg-psurface text-pmuted'
           )}
           style={{ color: statusBadge.color }}
         >
@@ -108,9 +109,9 @@ export default function BossCard() {
 
         {/* Boss nomi & Jon (HP) ko'rsatkichi */}
         <div className="min-w-0 flex-1">
-          <p className="text-[16px] font-bold tracking-tight text-pfg">{name}</p>
+          <p className="text-[16px] font-bold tracking-tight text-pfg truncate">{name}</p>
           <p className="mt-1 text-[12px] font-medium tabular-nums text-pmuted">
-            {tt('bossTeamDamage')}: <strong className="text-pfg">{state.totalDamage.toLocaleString()}</strong>
+            {tt('bossTeamDamage')}: <strong className="text-pfg">{formatCoins(state.totalDamage)}</strong>
           </p>
 
           {/* Qolgan HP: raqam va progress bar bir xil miqdorni ko‘rsatadi. */}
@@ -126,7 +127,7 @@ export default function BossCard() {
 
           <div className="mt-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
             <span className="text-[12px] font-medium tabular-nums text-pmuted">
-              {tt('bossRemainingHp')}: <strong className="font-bold text-pfg">{remainingHp.toLocaleString()} / {state.hpTotal.toLocaleString()}</strong>
+              {tt('bossRemainingHp')}: <strong className="font-bold text-pfg">{formatCoins(remainingHp)} / {formatCoins(state.hpTotal)}</strong>
             </span>
             <span className="flex items-center gap-1 text-[12px] font-bold tabular-nums text-pfg">
               <Flame size={12} strokeWidth={1.75} className="text-pmuted" />

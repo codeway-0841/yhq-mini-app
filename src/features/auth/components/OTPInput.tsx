@@ -115,6 +115,7 @@ export default function OTPInput({
           ref={(el) => (inputsRef.current[index] = el)}
           type="text"
           inputMode="numeric"
+          autoComplete="one-time-code"
           pattern="[0-9]"
           maxLength={1}
           value={digit === ' ' ? '' : digit}
@@ -125,12 +126,12 @@ export default function OTPInput({
           disabled={disabled}
           aria-label={`Raqam ${index + 1} of ${length}`}
           className={`
-            w-12 h-14 sm:w-14 sm:h-16
+            w-10 h-14 sm:w-14 sm:h-16
             text-center text-2xl font-semibold
             bg-psurface rounded-2xl shadow-xs
             outline-none transition-all
             ${error ? 'ring-2 ring-pdanger animate-shake' :
-              focused === index ? 'ring-2 ring-pprimary bg-pprimary/10' : 'ring-1 ring-pline/50'}
+              focused === index ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)]' : 'ring-1 ring-[rgb(var(--p-line-rgb)/0.5)]'}
             ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
             ${digit !== ' ' ? 'text-pfg' : 'text-transparent'}
           `}

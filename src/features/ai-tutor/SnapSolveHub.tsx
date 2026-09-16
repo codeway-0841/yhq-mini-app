@@ -917,7 +917,7 @@ export default function SnapSolveHub() {
 
         {/* Error Banner */}
         {errorMessage && (
-          <div className="absolute top-4 inset-x-4 z-30 p-3.5 rounded-2xl bg-red-950/90 border border-red-500/50 text-red-200 text-xs flex items-center justify-between gap-3 shadow-lg backdrop-blur-md">
+          <div className="absolute top-[calc(1rem+var(--safe-top,0px))] inset-x-4 z-30 p-3.5 rounded-2xl bg-red-950/90 border border-red-500/50 text-red-200 text-xs flex items-center justify-between gap-3 shadow-lg backdrop-blur-md">
             <div className="flex items-center gap-2">
               <AlertCircle size={16} className="shrink-0 text-red-400" />
               <span>{errorMessage}</span>
@@ -1031,7 +1031,7 @@ export default function SnapSolveHub() {
               {currentSolution.ocrText && (
                 <div className="p-4 rounded-2xl bg-pcard text-xs space-y-1 shadow-xs">
                   <span className="font-semibold text-pmuted block">{tt('snapSolveOcrTitle')}:</span>
-                  <p className="text-pmuted/80 italic leading-relaxed">{currentSolution.ocrText}</p>
+                  <p className="text-[rgb(var(--p-muted-rgb)/0.8)] italic leading-relaxed">{currentSolution.ocrText}</p>
                 </div>
               )}
 
@@ -1073,7 +1073,7 @@ export default function SnapSolveHub() {
                       setSubjectHint(sub.id)
                       haptics.selection()
                     }}
-                    className={`transition-all text-center select-none py-1 px-1.5 snap-center ${
+                    className={`transition-all text-center select-none min-h-11 py-1 px-1.5 snap-center ${
                       isSelected
                         ? 'text-white font-bold text-[15px] drop-shadow-md border-b-2 border-white'
                         : 'text-white/60 font-medium text-[14px] hover:text-white/85'
@@ -1166,7 +1166,7 @@ export default function SnapSolveHub() {
               value={manualText}
               onChange={(e) => setManualText(e.target.value)}
               placeholder={language === 'ru' ? 'Например: 2x + 5 = 15, x = ?' : 'Masalan: 2x + 5 = 15, x = ?'}
-              className="w-full rounded-2xl bg-psurface p-3 text-sm text-pfg placeholder:text-pmuted focus:outline-none focus:ring-2 focus:ring-pprimary resize-none"
+              className="w-full rounded-2xl bg-psurface p-3 text-base text-pfg placeholder:text-pmuted focus:outline-none focus:ring-2 focus:ring-pprimary resize-none"
             />
 
             <div className="flex justify-end gap-2 pt-1">
@@ -1220,7 +1220,7 @@ export default function SnapSolveHub() {
                     if (item.previewImage) setSelectedImage(item.previewImage)
                     setIsHistoryOpen(false)
                   }}
-                  className="w-full text-left p-3 rounded-2xl bg-psurface hover:bg-psurface/80 transition-all flex items-center justify-between gap-3 shadow-2xs active:scale-[0.98]"
+                  className="w-full text-left p-3 rounded-2xl bg-psurface hover:bg-[rgb(var(--p-surface-rgb)/0.8)] transition-all flex items-center justify-between gap-3 shadow-2xs active:scale-[0.98]"
                 >
                   <div className="truncate flex-1">
                     <div className="flex items-center gap-2 mb-1">

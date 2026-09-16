@@ -12,6 +12,11 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
   },
+  // Visual baseline'lar OS'dan mustaqil: CI (linux) va dev (win32) BITTA
+  // to'plamni ishlatadi (2026-09-16: `-linux` snapshot yo'qligi uchun e2e qizil edi).
+  // Shrift raster farqlari maxDiffPixels/maxDiffPixelRatio tolerantliklarida.
+  // (TOP-LEVEL shart — `use` ichida e'tiborsiz qoldiriladi!)
+  snapshotPathTemplate: '{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}{ext}',
   projects: [
     {
       name: 'telegram-webview-android',

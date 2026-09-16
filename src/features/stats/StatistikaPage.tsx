@@ -128,7 +128,7 @@ export default function StatistikaPage() {
   return (
     <div className="font-display bg-pcanvas text-pfg pb-8">
       {/* Header (PageHeader SSOT — sarlavha ikonkasi olib tashlandi, native'da header'da ikon bo'lmaydi) */}
-      <PageHeader title={lang === 'ru' ? 'Статистика' : 'Statistika'} onBack={() => goBack(navigate)} backLabel="Orqaga" />
+      <PageHeader title={lang === 'ru' ? 'Статистика' : 'Statistika'} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} />
 
       {/* Katta raqamlar — 2x2 (desktop'da 4 qator) */}
       <div className="grid grid-cols-2 gap-3 px-5 mt-3 lg:grid-cols-4">
@@ -193,7 +193,7 @@ export default function StatistikaPage() {
                 <span className="flex-1 text-[13px] font-semibold text-pfg truncate">
                   {lang === 'ru' ? topic!.nameRu : topic!.nameUz}
                 </span>
-                <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                <span className="bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                   {count}
                 </span>
                 <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">

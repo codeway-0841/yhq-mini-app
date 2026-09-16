@@ -4,6 +4,7 @@ import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { explainQuestion, explainSessionQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
 import { api } from '../../../shared/api'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { speak } from '../../../shared/lib/speech'
 import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -182,7 +183,7 @@ export default function AiTutorModal({
         >
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex flex-col items-center text-center">
-            <div className="w-14 h-14 rounded-2xl bg-ppurple/15 flex items-center justify-center mb-3">
+            <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center mb-3">
               <PremiumIcon size={28} className="text-pwarning" />
             </div>
             <p id="upsell-title" className="text-[17px] font-semibold text-pfg">{tt('premiumNeedTitle')}</p>
@@ -192,7 +193,7 @@ export default function AiTutorModal({
             <button
               onClick={() => {
                 handleClose()
-                openTelegramLink('https://t.me/kiwi_uz_bot?start=premium')
+                openTelegramLink(`https://t.me/${config.botUsername}?start=premium`)
               }}
               className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
             >
@@ -221,7 +222,7 @@ export default function AiTutorModal({
         >
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-            <div className="size-9 rounded-xl bg-pwarning/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
+            <div className="size-9 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
               <Info size={17} className="text-pwarning" />
             </div>
             <p id="static-title" className="text-[15px] font-semibold text-pfg">{tt('staticExplainTitle')}</p>
@@ -247,7 +248,7 @@ export default function AiTutorModal({
               setShowStatic(false)
               setShowUpsell(true)
             }}
-            className="mt-4 w-full py-2.5 rounded-2xl bg-ppurple/15 text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs"
+            className="mt-4 w-full py-2.5 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs"
           >
             <PremiumIcon size={14} />
             {tt('staticExplainAiHint')}
@@ -267,7 +268,7 @@ export default function AiTutorModal({
         >
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div className="flex items-center gap-2 mb-3 flex-shrink-0">
-            <div className="size-9 rounded-xl bg-ppurple/15 flex items-center justify-center flex-shrink-0 shadow-2xs">
+            <div className="size-9 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
               <GraduationCap size={17} className="text-ppurple" />
             </div>
             <p id="ai-title" className="text-[15px] font-semibold text-pfg">AI Tutor</p>

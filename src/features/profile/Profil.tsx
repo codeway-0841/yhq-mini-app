@@ -1,6 +1,7 @@
 import { useState, useEffect, useSyncExternalStore } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
+import { config } from '../../shared/config'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import {
   Copy, Phone, Lock, Globe, CreditCard,
@@ -39,7 +40,7 @@ import { haptics } from '../../platform/haptics'
 import StatInfoSheet from '../../shared/components/StatInfoSheet'
 
 /** Bot havolasi — barcha profil linklari shu bazadan quriladi */
-const BOT_URL = 'https://t.me/kiwi_uz_bot'
+const BOT_URL = `https://t.me/${config.botUsername}`
 
 // ── Main Profil ─────────────────────────────────────────────────────────
 export default function Profil() {

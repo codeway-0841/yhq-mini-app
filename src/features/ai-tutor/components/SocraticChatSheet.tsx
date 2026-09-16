@@ -176,7 +176,7 @@ export default function SocraticChatSheet({
   return (
     <div className="fixed inset-0 z-50 flex flex-col justify-end bg-black/60 backdrop-blur-xs transition-opacity animate-in fade-in duration-200">
       <div
-        className="relative flex flex-col w-full max-w-2xl mx-auto h-[88vh] max-h-[780px] bg-pcard rounded-t-sheet shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300"
+        className="relative flex flex-col w-full max-w-2xl mx-auto h-[88dvh] max-h-[780px] bg-pcard rounded-t-sheet shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300"
         role="dialog"
         aria-modal="true"
       >
@@ -215,7 +215,7 @@ export default function SocraticChatSheet({
 
         {/* Question Context Preview (kichik panel) */}
         {context.questionText && (
-          <div className="px-5 py-2 bg-psurface/60 flex items-center justify-between text-[12px] text-pmuted gap-2">
+          <div className="px-5 py-2 bg-[rgb(var(--p-surface-rgb)/0.6)] flex items-center justify-between text-[12px] text-pmuted gap-2">
             <span className="truncate flex-1">
               {context.questionText}
             </span>
@@ -302,7 +302,7 @@ export default function SocraticChatSheet({
 
           {/* Quota Exceeded Card */}
           {quotaError && (
-            <div className="rounded-2xl p-4 bg-pwarning/10 text-center space-y-3 my-2 shadow-2xs">
+            <div className="rounded-2xl p-4 bg-[rgb(var(--p-warning-rgb)/0.1)] text-center space-y-3 my-2 shadow-2xs">
               <div className="text-pwarning font-semibold text-sm">
                 {tt('snapSolveQuotaExceeded')}
               </div>
@@ -328,28 +328,28 @@ export default function SocraticChatSheet({
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipWhyFormula'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
+              className="shrink-0 px-3 py-1.5 min-h-11 inline-flex items-center rounded-full text-[12px] font-medium bg-psurface hover:bg-[rgb(var(--p-surface-rgb)/0.8)] text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
               {tt('socraticChipWhyFormula')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipOtherWays'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
+              className="shrink-0 px-3 py-1.5 min-h-11 inline-flex items-center rounded-full text-[12px] font-medium bg-psurface hover:bg-[rgb(var(--p-surface-rgb)/0.8)] text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
               {tt('socraticChipOtherWays')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipExplainSimpler'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
+              className="shrink-0 px-3 py-1.5 min-h-11 inline-flex items-center rounded-full text-[12px] font-medium bg-psurface hover:bg-[rgb(var(--p-surface-rgb)/0.8)] text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
               {tt('socraticChipExplainSimpler')}
             </button>
             <button
               type="button"
               onClick={() => handleChipClick(tt('socraticChipFullAnswer'))}
-              className="shrink-0 px-3 py-1.5 rounded-full text-[12px] font-medium bg-psurface hover:bg-psurface/80 text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
+              className="shrink-0 px-3 py-1.5 min-h-11 inline-flex items-center rounded-full text-[12px] font-medium bg-psurface hover:bg-[rgb(var(--p-surface-rgb)/0.8)] text-pmuted hover:text-pfg transition-colors shadow-2xs active:scale-95"
             >
               {tt('socraticChipFullAnswer')}
             </button>
@@ -371,13 +371,13 @@ export default function SocraticChatSheet({
               onChange={(e) => setInputText(e.target.value)}
               placeholder={tt('socraticChatAskHint')}
               disabled={isStreaming}
-              className="flex-1 bg-psurface rounded-2xl px-4 py-2.5 text-[14px] text-pfg placeholder:text-pmuted/60 focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
+              className="flex-1 bg-psurface rounded-2xl px-4 py-2.5 text-base text-pfg placeholder:text-[rgb(var(--p-muted-rgb)/0.6)] focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
             />
             <button
               type="submit"
               disabled={!inputText.trim() || isStreaming}
               className="size-10 rounded-2xl bg-pprimary text-white grid place-items-center disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 active:scale-95 transition-all shadow-xs"
-              aria-label="Yuborish"
+              aria-label={tt('socraticSend')}
             >
               <Send size={17} strokeWidth={1.75} />
             </button>

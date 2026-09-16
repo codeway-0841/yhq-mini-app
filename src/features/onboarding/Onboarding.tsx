@@ -5,6 +5,7 @@ import {
 import { SUBJECTS } from '../../shared/config/subjects'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useT } from '../../shared/i18n'
 
 // ── Qadam indikatorlari ─────────────────────────────────────────────────────
 function Dots({ active }: { active: number }) {
@@ -49,11 +50,13 @@ function BigButton({ label, onClick }: { label: string; onClick: () => void }) {
 
 // ══════════════════════ 1. XUSH KELIBSIZ ════════════════════════════════════
 function WelcomeStep({ onNext }: { onNext: () => void }) {
+  const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   return (
     <Screen>
       <div className="shrink-0 pt-[clamp(0rem,2dvh,1.5rem)]">
-        <GreenTitle>Xush <span className="text-pprimary">kelibsiz!</span></GreenTitle>
-        <Sub>Barcha fanlarni bitta ilovada o'rganing va test yeching.</Sub>
+        <GreenTitle>{tt('obWelcomeA')} <span className="text-pprimary">{tt('obWelcomeB')}</span></GreenTitle>
+        <Sub>{tt('obWelcomeSub')}</Sub>
       </div>
 
       {/* Brend illutsiyasi — splash bilan bir xil (glow'siz, toza) + yengil suzish */}
@@ -72,7 +75,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
       </div>
 
       <div className="shrink-0 pt-2">
-        <BigButton label="Boshlash" onClick={onNext} />
+        <BigButton label={tt('obStart')} onClick={onNext} />
         <div className="mt-4"><Dots active={0} /></div>
       </div>
     </Screen>
@@ -82,6 +85,7 @@ function WelcomeStep({ onNext }: { onNext: () => void }) {
 // ══════════════════════ 2. FAN TANLASH ══════════════════════════════════════
 function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => void }) {
   const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   const { subjectId, setSubject } = useSubjectStore()
   const [picked, setPicked] = useState<string[]>([subjectId])
 
@@ -92,13 +96,13 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
 
   return (
     <Screen>
-      <button type="button" onClick={onBack} aria-label="Orqaga"
+      <button type="button" onClick={onBack} aria-label={tt('obBack')}
         className="flex size-11 shrink-0 items-center justify-center self-start rounded-xl text-pmuted transition-colors hover:bg-pcard hover:text-pfg active:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
         <ChevronLeft size={24} />
       </button>
       <div className="mb-[clamp(0.75rem,3dvh,1.5rem)] mt-1 shrink-0">
-        <GreenTitle>Qaysi <span className="text-pprimary">fanni</span><br />o'rganmoqchisiz?</GreenTitle>
-        <Sub>{lang === 'ru' ? 'Выберите основной предмет' : 'Bitta asosiy faningizni tanlang'}</Sub>
+        <GreenTitle>{tt('obSubjectA')} <span className="text-pprimary">{tt('obSubjectB')}</span><br />{tt('obSubjectC')}</GreenTitle>
+        <Sub>{tt('obSubjectSub')}</Sub>
       </div>
 
       {/* Desktop: fan ro'yxati 2 ustunda (bitta uzun scroll o'rniga ixcham grid) */}
@@ -113,11 +117,11 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
               className={`flex items-center gap-3.5 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
                 !s.available ? 'cursor-not-allowed opacity-55' : ''
               } ${
-                active ? 'scale-[1.01]' : 'bg-pcard hover:bg-psurface'
+                active ? 'scale-[1.01] subject-picked' : 'bg-pcard hover:bg-psurface'
               }`}
               style={active ? {
-                backgroundColor: `${s.color}16`,
-                boxShadow: `inset 0 0 0 1.5px ${s.color}60, 0 4px 14px ${s.color}20`
+                backgroundColor: `${s.color}2E`,
+                boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
               } : undefined}>
               <div
                 className="flex size-10 items-center justify-center rounded-xl shrink-0 transition-transform shadow-2xs"
@@ -153,7 +157,7 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
       </div>
 
       <div className="shrink-0 pt-3">
-        <BigButton label="Davom etish" onClick={() => { setSubject(picked[0] ?? 'yhq'); onNext() }} />
+        <BigButton label={tt('obContinue')} onClick={() => { setSubject(picked[0] ?? 'yhq'); onNext() }} />
         <div className="mt-4"><Dots active={1} /></div>
       </div>
     </Screen>
@@ -162,23 +166,25 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
 
 // ══════════════════════ 3. MAQSAD TANLASH ═══════════════════════════════════
 const GOALS = [
-  { id: '15',  label: '15 daqiqa', desc: 'Yengil rejim',   color: 'var(--p-blue)' },
-  { id: '30',  label: '30 daqiqa', desc: 'O\u2019rtacha rejim', color: 'var(--p-success)' },
-  { id: '60',  label: '1 soat',    desc: 'Samarali rejim', color: 'var(--p-purple)' },
-  { id: '120', label: '2 soat +',  desc: 'Intensiv rejim', color: 'var(--p-warning)' },
-]
+  { id: '15',  labelKey: 'obGoal15', descKey: 'obGoalEasy', color: 'var(--p-blue)' },
+  { id: '30',  labelKey: 'obGoal30', descKey: 'obGoalMid',  color: 'var(--p-success)' },
+  { id: '60',  labelKey: 'obGoal60', descKey: 'obGoalEff',  color: 'var(--p-purple)' },
+  { id: '120', labelKey: 'obGoal120', descKey: 'obGoalInt', color: 'var(--p-warning)' },
+] as const
 
 function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: () => void }) {
+  const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   const [goal, setGoal] = useState('30')
 
   return (
     <Screen>
-      <button type="button" onClick={onBack} aria-label="Orqaga"
+      <button type="button" onClick={onBack} aria-label={tt('obBack')}
         className="flex size-11 shrink-0 items-center justify-center self-start rounded-xl text-pmuted transition-colors hover:bg-pcard hover:text-pfg active:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
         <ChevronLeft size={24} />
       </button>
       <div className="mb-[clamp(0.75rem,3dvh,1.5rem)] mt-1 shrink-0">
-        <GreenTitle>Kuniga qancha vaqt<br />ajratasiz?</GreenTitle>
+        <GreenTitle>{tt('obGoalA')}<br />{tt('obGoalB')}</GreenTitle>
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-1">
@@ -195,8 +201,8 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
                   <Clock3 size={21} />
                 </div>
                 <div className="flex-1">
-                  <p className="text-[15px] font-semibold text-pfg leading-tight">{g.label}</p>
-                  <p className="text-xs font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>{g.desc}</p>
+                  <p className="text-[15px] font-semibold text-pfg leading-tight">{tt(g.labelKey)}</p>
+                  <p className="text-xs font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>{tt(g.descKey)}</p>
                 </div>
                 <span className={`size-6 rounded-full flex items-center justify-center flex-none transition-all ${
                   active ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' : 'bg-psurface'
@@ -216,16 +222,16 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
             <Rocket size={20} className="text-pdanger" />
           </div>
           <div>
-            <p className="text-[13px] font-semibold text-pfg">Maqsadga erishamiz!</p>
+            <p className="text-[13px] font-semibold text-pfg">{tt('obGoalCard')}</p>
             <p className="text-xs font-semibold mt-0.5" style={{ color: 'var(--p-subtle)' }}>
-              Doimiy o'rganish — muvaffaqiyat kaliti.
+              {tt('obGoalCardSub')}
             </p>
           </div>
         </div>
       </div>
 
       <div className="shrink-0 pt-3">
-        <BigButton label="Boshlash" onClick={() => onDone(goal)} />
+        <BigButton label={tt('obStart')} onClick={() => onDone(goal)} />
         <div className="mt-4"><Dots active={2} /></div>
       </div>
     </Screen>

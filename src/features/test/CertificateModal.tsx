@@ -4,6 +4,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { shareUrl, openTelegramLink } from '../../platform/telegram'
+import { config } from '../../shared/config'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { api } from '../../shared/api'
@@ -162,7 +163,7 @@ export default function CertificateModal({ score, total, percent, sample = false
     const shareText = lang === 'ru'
       ? `${emoji} Я успешно сдал(а) экзамен по ${subjectName} в KIVVI с результатом ${percent}%!\nСертификат № ${certId}\nПроверь свои знания:`
       : `${emoji} Men KIVVI'da ${subjectName} bo‘yicha imtihonni ${percent}% bilan topshirdim!\nSertifikat № ${certId}\nO‘z bilimingni sinab ko‘r:`
-    shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid}`, shareText)
+    shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid}`, shareText)
   }
 
   const handleCopyId = async () => {
@@ -224,12 +225,12 @@ export default function CertificateModal({ score, total, percent, sample = false
 
         {/* Bot Sent Success Alert */}
         {botSentSuccess && (
-          <div className="w-full bg-pprimary/15 rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn shadow-xs">
+          <div className="w-full bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn shadow-xs">
             <p className="text-xs font-semibold text-pprimary mb-1">
               {tt('certSentSuccess')}
             </p>
             <button
-              onClick={() => openTelegramLink('https://t.me/kiwi_uz_bot')}
+              onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)}
               className="mt-1 text-[11.5px] font-semibold text-pfg underline flex items-center gap-1 hover:text-pprimary"
             >
               <span>{lang === 'ru' ? 'Открыть чат с ботом' : 'Bot chatini ochish'}</span>

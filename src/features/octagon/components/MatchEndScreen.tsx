@@ -1,12 +1,11 @@
 import { Trophy, Flag, Handshake, ArrowRight } from 'lucide-react'
 
-export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, onExit, onRematch, language = 'uz' }: {
+export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, onExit, onRematch }: {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
   result: 'win' | 'lose' | 'draw' | null
   yourScore: number
   oppScore: number
   opponentName: string | null
-  language?: 'uz' | 'ru'
   onExit: () => void
   onRematch: () => void
 }) {
@@ -19,21 +18,21 @@ export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, 
       <div className="arena-score flex gap-6 font-bold">
         <div className="text-center">
           <p className="text-pprimary text-3xl">{yourScore}</p>
-          <p className="text-xs text-muted mt-1">{language === 'ru' ? 'Вы' : 'Siz'}</p>
+          <p className="text-xs text-pmuted mt-1">{tt('duelYou')}</p>
         </div>
-        <div className="text-line text-3xl self-center">:</div>
-        <div className="text-center">
+        <div className="text-pline text-3xl self-center">:</div>
+        <div className="text-center min-w-0">
           <p className="text-pdanger text-3xl">{oppScore}</p>
-          <p className="text-xs text-muted mt-1">{opponentName}</p>
+          <p className="text-xs text-pmuted mt-1 truncate max-w-[120px]">{opponentName ?? '?'}</p>
         </div>
       </div>
       <div className="flex gap-3 w-full max-w-xs">
         <button onClick={onExit}
-          className="flex-1 py-3 rounded-xl bg-elevated text-sm font-semibold">
-          {language === 'ru' ? 'В арену' : 'Arenaga'}
+          className="flex-1 py-3 rounded-xl bg-psurface text-sm font-semibold">
+          {tt('duelToArena')}
         </button>
         <button onClick={onRematch} className="arena-primary flex-[2]">
-          {language === 'ru' ? 'Новый соперник' : 'Yangi raqib'} <ArrowRight size={18} />
+          {tt('duelRematch')} <ArrowRight size={18} />
         </button>
       </div>
     </div>

@@ -71,7 +71,7 @@ export default function PasswordInput({
           type="button"
           onClick={() => setVisible(!visible)}
           disabled={disabled}
-          className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 hover:bg-plineStrong/50 rounded-xl transition-colors"
+          className="absolute right-1 top-1/2 -translate-y-1/2 size-11 grid place-items-center hover:bg-plineStrong/50 rounded-xl transition-colors"
           aria-label={visible ? 'Parolni yashirish' : "Parolni ko'rsatish"}
         >
           {visible ? (

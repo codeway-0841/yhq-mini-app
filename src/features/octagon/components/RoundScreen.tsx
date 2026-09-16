@@ -41,13 +41,13 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           </span>
         )}
         {oppAnswered && !selected && (
-          <span className="ml-2 text-pwarning">• Raqib javob berdi</span>
+          <span className="ml-2 text-pwarning">• {tt('duelOppAnswered')}</span>
         )}
       </p>
       <p className="text-base font-semibold text-center mb-5 leading-snug text-pfg">{q.text}</p>
       {q.image && (
         <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-pcard shadow-xs">
-          <img src={q.image} alt="savol" loading="lazy"
+          <img src={q.image} alt={tt('duelQuestionImage')} loading="lazy"
             className="max-w-full max-h-[45vh] w-auto h-auto object-contain" />
         </div>
       )}
@@ -58,11 +58,11 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
         const showCorrect = answered && ackCorrectOptionId !== null && opt.id === ackCorrectOptionId
         const style =
           !answered      ? 'bg-pcard text-pfg hover:bg-psurface shadow-xs' :
-          showCorrect    ? 'bg-psuccess/15 ring-2 ring-psuccess text-pfg shadow-xs' :
-          isSelected && ackCorrect === true ? 'bg-psuccess/20 ring-2 ring-psuccess text-pfg shadow-xs' :
+          showCorrect    ? 'bg-[rgb(var(--p-success-rgb)/0.15)] ring-2 ring-psuccess text-pfg shadow-xs' :
+          isSelected && ackCorrect === true ? 'bg-[rgb(var(--p-success-rgb)/0.2)] ring-2 ring-psuccess text-pfg shadow-xs' :
           // Ack hali kelmagan — neutral (qizil "xato" prematurely ko'rsatilmaydi)
           isSelected && ackCorrect === null ? 'bg-[rgb(var(--p-blue-rgb)/0.10)] ring-2 ring-pblue text-pfg shadow-xs' :
-          isSelected    ? 'bg-pdanger/15 ring-2 ring-pdanger text-pfg shadow-xs' :
+          isSelected    ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] ring-2 ring-pdanger text-pfg shadow-xs' :
                           'bg-psurface text-pmuted shadow-xs'
         return (
           <button key={`${q.id}_${opt.id}`} type="button" disabled={answered} onClick={() => onAnswer(opt.id)}
@@ -71,8 +71,8 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
               <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-2xs">
                 {opt.id}
               </span>
-              <span className="text-sm flex-1">{opt.text}</span>
-              {showCorrect || (isSelected && ackCorrect === true) ? <Check size={20} aria-label={'To‘g‘ri javob'} className="text-psuccess shrink-0" /> : isSelected && ackCorrect === false ? <X size={20} aria-label={'Noto‘g‘ri javob'} className="text-pdanger shrink-0" /> : isSelected && ackCorrect === null ? <Loader2 size={18} className="animate-spin shrink-0" /> : null}
+              <span className="text-sm flex-1 min-w-0 break-words">{opt.text}</span>
+              {showCorrect || (isSelected && ackCorrect === true) ? <Check size={20} aria-label={tt('duelCorrect')} className="text-psuccess shrink-0" /> : isSelected && ackCorrect === false ? <X size={20} aria-label={tt('duelWrong')} className="text-pdanger shrink-0" /> : isSelected && ackCorrect === null ? <Loader2 size={18} className="animate-spin shrink-0" /> : null}
             </div>
           </button>
         )

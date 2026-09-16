@@ -428,7 +428,7 @@ export default function TestDrawingLayer({
             className={`absolute inset-0 z-[35] ${!isVisible ? 'opacity-20' : ''}`}
             onCommit={persistAndRefresh}
           />
-          <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-lg rounded-t-[28px] bg-slate-900 text-white backdrop-blur-2xl px-4 pt-2.5 pb-[calc(1rem+var(--safe-bottom,0px))] shadow-[0_-16px_48px_rgba(0,0,0,0.5)] border-t border-slate-700/80 ring-1 ring-black/40 motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200">
+          <div className="fixed inset-x-0 bottom-0 z-50 mx-auto max-w-lg rounded-t-sheet bg-slate-900 text-white backdrop-blur-2xl px-4 pt-2.5 pb-[calc(1rem+var(--safe-bottom,0px))] shadow-[0_-16px_48px_rgba(0,0,0,0.5)] border-t border-slate-700/80 ring-1 ring-black/40 motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200">
             <DrawingToolbar
               drawing={pageDrawing}
               tool={tool}

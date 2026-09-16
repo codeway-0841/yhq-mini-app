@@ -65,7 +65,7 @@ export default function LabSheet({
                   value={Number.isFinite(p.x) ? p.x : ''}
                   onChange={(e) => onChangePoint(i, { x: Number(e.target.value) })}
                   aria-label={`x${i + 1}`}
-                  className="h-10 min-w-0 flex-1 rounded-xl bg-psurface px-2.5 font-mono text-[13px] text-pfg outline-none focus:ring-2 focus:ring-pprimary"
+                  className="h-11 min-w-0 flex-1 rounded-xl bg-psurface px-2.5 font-mono text-base text-pfg outline-none focus:ring-2 focus:ring-pprimary"
                 />
                 <input
                   type="number"
@@ -74,7 +74,7 @@ export default function LabSheet({
                   value={Number.isFinite(p.y) ? p.y : ''}
                   onChange={(e) => onChangePoint(i, { y: Number(e.target.value) })}
                   aria-label={`y${i + 1}`}
-                  className="h-10 min-w-0 flex-1 rounded-xl bg-psurface px-2.5 font-mono text-[13px] text-pfg outline-none focus:ring-2 focus:ring-pprimary"
+                  className="h-11 min-w-0 flex-1 rounded-xl bg-psurface px-2.5 font-mono text-base text-pfg outline-none focus:ring-2 focus:ring-pprimary"
                 />
                 <button
                   type="button"

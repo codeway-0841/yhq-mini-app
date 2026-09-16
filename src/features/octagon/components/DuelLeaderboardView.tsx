@@ -82,7 +82,7 @@ function Top3ArcStage({ top3, tt }: {
             </div>
             <p className="mt-3.5 max-w-[80px] truncate text-center text-[12px] font-bold text-pfg">{second.name}</p>
             <p className="font-display text-[12px] font-extrabold text-slate-500 dark:text-slate-300 tabular-nums">
-              {second.score} <span className="text-[9px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
+              {second.score} <span className="text-[10px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
             </p>
           </div>
         )}
@@ -103,7 +103,7 @@ function Top3ArcStage({ top3, tt }: {
           </div>
           <p className="mt-4 max-w-[95px] truncate text-center text-[13.5px] font-extrabold text-pfg">{first.name}</p>
           <p className="font-display text-[13.5px] font-black text-amber-500 dark:text-amber-400 tabular-nums">
-            {first.score} <span className="text-[9.5px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
+            {first.score} <span className="text-[10px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
           </p>
         </div>
 
@@ -120,7 +120,7 @@ function Top3ArcStage({ top3, tt }: {
             </div>
             <p className="mt-3.5 max-w-[80px] truncate text-center text-[12px] font-bold text-pfg">{third.name}</p>
             <p className="font-display text-[12px] font-extrabold text-amber-700 dark:text-amber-500 tabular-nums">
-              {third.score} <span className="text-[9px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
+              {third.score} <span className="text-[10px] font-normal text-psubtle">{tt('duelWinsLabel').toLowerCase()}</span>
             </p>
           </div>
         )}
@@ -176,7 +176,7 @@ export function DuelLeaderboardView({
               type="button"
               onClick={() => { playSound('click'); haptics.select(); setRankTab(t) }}
               className={cn(
-                'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
+                'flex-1 min-h-11 px-1 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
                 active
                   ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                   : 'text-pmuted hover:text-pfg'
@@ -236,7 +236,7 @@ export function DuelLeaderboardView({
                 key={entry.userId}
                 className={cn(
                   'flex items-center gap-3 px-4 py-3.5 transition-colors',
-                  isYou ? 'bg-pwash font-bold' : 'hover:bg-psurface/40'
+                  isYou ? 'bg-pwash font-bold' : 'hover:bg-[rgb(var(--p-surface-rgb)/0.4)]'
                 )}
               >
                 {/* Rank Badge */}
@@ -260,7 +260,7 @@ export function DuelLeaderboardView({
                   )}>
                     {entry.name}
                     {isYou && (
-                      <span className="ml-1.5 rounded-full bg-pprimary/20 px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
+                      <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.2)] px-1.5 py-0.5 text-[10px] font-extrabold text-pprimary">
                         {tt('youLabel')}
                       </span>
                     )}

@@ -416,19 +416,39 @@ body[data-theme='light'] .ios-glass {
 }
 
 /* ── Mobil touch-target kengaytmasi (Apple HIG 44pt, 2026-09-16 audit) ───────
-   32px (size-8) va 28px (size-7) icon-tugmalar vizual o'lchamini saqlaydi,
-   lekin coarse-pointer (touch) qurilmalarda ::after orqali urinish zonasini
-   44px'ga yetkazadi. Layout siljimaydi (absolute overlay, pointer events —
-   ota tugmada). Faqat button/a — span chip'lar (OptionButton harfi) tegmaydi. */
+   Kichik icon-tugmalar vizual o'lchamini saqlaydi, lekin coarse-pointer
+   (touch) qurilmalarda ::after orqali urinish zonasini 44px'ga yetkazadi.
+   Layout siljimaydi (absolute overlay, pointer events — ota tugmada).
+   Faqat button/a — span chip'lar (OptionButton harfi) tegmaydi.
+   Wave 1: size-6/9/10 ham qamrab olindi (toast close, back'lar, tokenlar). */
 @media (pointer: coarse) {
-  button.size-7, a.size-7, button.size-8, a.size-8 { position: relative; }
+  button.size-6, a.size-6, button.size-7, a.size-7,
+  button.size-8, a.size-8, button.size-9, a.size-9,
+  button.size-10, a.size-10 { position: relative; }
+  button.size-6::after, a.size-6::after {
+    content: ''; position: absolute; inset: -10px;
+  }
   button.size-7::after, a.size-7::after {
     content: ''; position: absolute; inset: -8px;
   }
   button.size-8::after, a.size-8::after {
     content: ''; position: absolute; inset: -6px;
   }
+  button.size-9::after, a.size-9::after {
+    content: ''; position: absolute; inset: -4px;
+  }
+  button.size-10::after, a.size-10::after {
+    content: ''; position: absolute; inset: -2px;
+  }
 }
+
+/* ── Tanlangan fan qatori (Onboarding + SubjectSheet) ───────────────────────
+   Tanlov FAQAT rang bilan emas, 4 signal bilan: kuchli wash + 2px halqa +
+   qalin rangli label + check/"Tanlangan" badge. Hover'da yorqinlik javobi
+   (inline style'da :hover bo'lmaydi — shu class orqali). */
+.subject-picked { transition: filter 150ms ease-out; }
+.subject-picked:hover { filter: brightness(1.04); }
+body[data-theme='dark'] .subject-picked:hover { filter: brightness(1.3); }
 
 /* ═══════════════════════════════════════════════════════════════════════════
    v2 — KIWI PREMIUM DIZAYN TIZIMI
@@ -440,21 +460,21 @@ body[data-theme='light'] .ios-glass {
 :root {
   /* v3 — sovuq-neytral grafit fon (#0d1117), KIVVI brend ko'k aksent (#146fdd —
      2026-09-15 kontrast fix: #1a81fc oq matn bilan 3.76:1 (AA 4.5 talab), #146fdd 4.83:1) */
-  --p-canvas:      #0d1117;
-  --p-card:        #161b22;
-  --p-surface:     #1c222b;
-  --p-line:        rgba(255, 255, 255, 0.07);
+  --p-canvas:      #0d1117; --p-canvas-rgb: 13 17 23;
+  --p-card:        #161b22; --p-card-rgb: 22 27 34;
+  --p-surface:     #1c222b; --p-surface-rgb: 28 34 43;
+  --p-line:        rgba(255, 255, 255, 0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255, 255, 255, 0.14);
 
-  --p-fg:          #f5f5f4;   /* Primary text */
-  --p-muted:       #a8a29e;   /* Secondary text */
+  --p-fg:          #f5f5f4; --p-fg-rgb: 245 245 244;   /* Primary text */
+  --p-muted:       #a8a29e; --p-muted-rgb: 168 162 158;   /* Secondary text */
   --p-subtle:      #8a847f;   /* Tertiary text (2026-09 kontrast: #78716c 3.61 edi) */
   --p-disabled:    #57534e;   /* Disabled text */
   --p-link:        #4da3ff;   /* Link */
 
   /* Aksent — KIVVI Blue (data-accent bilan almashadi) */
   --p-primary:     #146fdd;
-  --p-on-primary:  #ffffff;
+  --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
   /* Semantik ranglar — AKSENTDAN ALOHIDA, faqat status uchun */
@@ -514,14 +534,14 @@ body {
 
 /* v3 "Light High-Contrast" — boy va aniq ajralib turadigan yorug' rejim */
 body[data-theme='light'] {
-  --p-canvas:      #f0f3f6;
-  --p-card:        #ffffff;
-  --p-surface:     #e4e8ee;
-  --p-line:        rgba(0, 0, 0, 0.08);
+  --p-canvas:      #f0f3f6; --p-canvas-rgb: 240 243 246;
+  --p-card:        #ffffff; --p-card-rgb: 255 255 255;
+  --p-surface:     #e4e8ee; --p-surface-rgb: 228 232 238;
+  --p-line:        rgba(0, 0, 0, 0.08); --p-line-rgb: 0 0 0;
   --p-line-strong: rgba(0, 0, 0, 0.15);
 
-  --p-fg:          #0f172a;
-  --p-muted:       #334155;
+  --p-fg:          #0f172a; --p-fg-rgb: 15 23 42;
+  --p-muted:       #334155; --p-muted-rgb: 51 65 85;
   --p-subtle:      #4b5563;
   --p-disabled:    #6b7280;
   --p-link:        #146fdd;
@@ -529,7 +549,7 @@ body[data-theme='light'] {
   /* Aksent yorug' fonda to'yingan brend ko'ki */
   --p-primary:     #146fdd;
   --p-primary-rgb: 20 111 221;
-  --p-on-primary:  #ffffff;
+  --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;
 
   /* Semantik ranglar — yorug' fon uchun to'q variantlar */
@@ -566,11 +586,11 @@ body[data-theme='light'] {
 
 /* Aurora — jade-cyan atmosfera (AI: cyan) */
 body[data-theme='dark'][data-accent='aurora'] {
-  --p-fg: #f2f7f6; --p-muted: #9fb3b0; --p-subtle: #738885;
+  --p-fg: #f2f7f6; --p-fg-rgb: 242 247 246; --p-muted: #9fb3b0; --p-muted-rgb: 159 179 176; --p-subtle: #738885;
   --theme-fg: #f2f7f6; --theme-fg-muted: #9fb3b0; --theme-fg-subtle: #738885;
-  --p-primary: #16c79a; --p-on-primary: #04211a; --p-glow: transparent; --p-primary-rgb: 22 199 154;
+  --p-primary: #16c79a; --p-on-primary: #04211a; --p-on-primary-rgb: 4 33 26; --p-glow: transparent; --p-primary-rgb: 22 199 154;
   --p-purple: #3fb5c4; --p-purple-rgb: 63 181 196;
-  --p-canvas: #081614; --p-surface: #10231f; --p-card: #0d1c19; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #081614; --p-canvas-rgb: 8 22 20; --p-surface: #10231f; --p-surface-rgb: 16 35 31; --p-card: #0d1c19; --p-card-rgb: 13 28 25; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #081614; --theme-surface: #10231f; --theme-elevated: #0d1c19;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -578,10 +598,10 @@ body[data-theme='dark'][data-accent='aurora'] {
 
 /* Amethyst — binafsha atmosfera (id "violet" saqlangan — eski tanlovlar uchun) */
 body[data-theme='dark'][data-accent='violet'] {
-  --p-fg: #f5f3f7; --p-muted: #aca6b5; --p-subtle: #868091;
+  --p-fg: #f5f3f7; --p-fg-rgb: 245 243 247; --p-muted: #aca6b5; --p-muted-rgb: 172 166 181; --p-subtle: #868091;
   --theme-fg: #f5f3f7; --theme-fg-muted: #aca6b5; --theme-fg-subtle: #868091;
-  --p-primary: #9d7bea; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 157 123 234;
-  --p-canvas: #130f1a; --p-surface: #221c2d; --p-card: #1a1523; --p-line: rgba(255,255,255,0.07);
+  --p-primary: #9d7bea; --p-on-primary: #000000; --p-on-primary-rgb: 0 0 0; --p-glow: transparent; --p-primary-rgb: 157 123 234;
+  --p-canvas: #130f1a; --p-canvas-rgb: 19 15 26; --p-surface: #221c2d; --p-surface-rgb: 34 28 45; --p-card: #1a1523; --p-card-rgb: 26 21 35; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #130f1a; --theme-surface: #221c2d; --theme-elevated: #1a1523;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -589,11 +609,11 @@ body[data-theme='dark'][data-accent='violet'] {
 
 /* Ocean — chuqur ko'k (AI: indigo) */
 body[data-theme='dark'][data-accent='ocean'] {
-  --p-fg: #f1f5f8; --p-muted: #9fb0bd; --p-subtle: #748693;
+  --p-fg: #f1f5f8; --p-fg-rgb: 241 245 248; --p-muted: #9fb0bd; --p-muted-rgb: 159 176 189; --p-subtle: #748693;
   --theme-fg: #f1f5f8; --theme-fg-muted: #9fb0bd; --theme-fg-subtle: #748693;
-  --p-primary: #3d9ad9; --p-on-primary: #04202f; --p-glow: transparent; --p-primary-rgb: 61 154 217;
+  --p-primary: #3d9ad9; --p-on-primary: #04202f; --p-on-primary-rgb: 4 32 47; --p-glow: transparent; --p-primary-rgb: 61 154 217;
   --p-purple: #7b8fd4; --p-purple-rgb: 123 143 212;
-  --p-canvas: #0a1219; --p-surface: #16222c; --p-card: #101a23; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #0a1219; --p-canvas-rgb: 10 18 25; --p-surface: #16222c; --p-surface-rgb: 22 34 44; --p-card: #101a23; --p-card-rgb: 16 26 35; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #0a1219; --theme-surface: #16222c; --theme-elevated: #101a23;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -601,11 +621,11 @@ body[data-theme='dark'][data-accent='ocean'] {
 
 /* Forest — chuqur tabiiy yashil (AI: teal) */
 body[data-theme='dark'][data-accent='forest'] {
-  --p-fg: #f2f6f3; --p-muted: #a2b3a8; --p-subtle: #76877e;
+  --p-fg: #f2f6f3; --p-fg-rgb: 242 246 243; --p-muted: #a2b3a8; --p-muted-rgb: 162 179 168; --p-subtle: #76877e;
   --theme-fg: #f2f6f3; --theme-fg-muted: #a2b3a8; --theme-fg-subtle: #76877e;
-  --p-primary: #3fae7c; --p-on-primary: #04200f; --p-glow: transparent; --p-primary-rgb: 63 174 124;
+  --p-primary: #3fae7c; --p-on-primary: #04200f; --p-on-primary-rgb: 4 32 15; --p-glow: transparent; --p-primary-rgb: 63 174 124;
   --p-purple: #35a89c; --p-purple-rgb: 53 168 156;
-  --p-canvas: #0a1410; --p-surface: #16241c; --p-card: #101b15; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #0a1410; --p-canvas-rgb: 10 20 16; --p-surface: #16241c; --p-surface-rgb: 22 36 28; --p-card: #101b15; --p-card-rgb: 16 27 21; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #0a1410; --theme-surface: #16241c; --theme-elevated: #101b15;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -613,11 +633,11 @@ body[data-theme='dark'][data-accent='forest'] {
 
 /* Sunset — iliq to'q sariq atmosfera (AI: pink) */
 body[data-theme='dark'][data-accent='sunset'] {
-  --p-fg: #f8f4f0; --p-muted: #b5a99d; --p-subtle: #8b8177;
+  --p-fg: #f8f4f0; --p-fg-rgb: 248 244 240; --p-muted: #b5a99d; --p-muted-rgb: 181 169 157; --p-subtle: #8b8177;
   --theme-fg: #f8f4f0; --theme-fg-muted: #b5a99d; --theme-fg-subtle: #8b8177;
-  --p-primary: #e08b4a; --p-on-primary: #241000; --p-glow: transparent; --p-primary-rgb: 224 139 74;
+  --p-primary: #e08b4a; --p-on-primary: #241000; --p-on-primary-rgb: 36 16 0; --p-glow: transparent; --p-primary-rgb: 224 139 74;
   --p-purple: #d4708f; --p-purple-rgb: 212 112 143;
-  --p-canvas: #17110b; --p-surface: #291f15; --p-card: #1e1610; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #17110b; --p-canvas-rgb: 23 17 11; --p-surface: #291f15; --p-surface-rgb: 41 31 21; --p-card: #1e1610; --p-card-rgb: 30 22 16; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #17110b; --theme-surface: #291f15; --theme-elevated: #1e1610;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -625,10 +645,10 @@ body[data-theme='dark'][data-accent='sunset'] {
 
 /* Sakura — YORUG' atmosfera: iliq oq + pushti (light-only dizayn) */
 body[data-accent='sakura'] {
-  --p-primary: #c4487a; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 196 72 122;
-  --p-canvas: #fdf6f7; --p-surface: #f8ecef; --p-card: #ffffff;
-  --p-line: #f0dee3; --p-line-strong: #e2c3cc;
-  --p-fg: #241419; --p-muted: #6b545b; --p-subtle: #846f75;
+  --p-primary: #c4487a; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 196 72 122;
+  --p-canvas: #fdf6f7; --p-canvas-rgb: 253 246 247; --p-surface: #f8ecef; --p-surface-rgb: 248 236 239; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: #f0dee3; --p-line-rgb: 240 222 227; --p-line-strong: #e2c3cc;
+  --p-fg: #241419; --p-fg-rgb: 36 20 25; --p-muted: #6b545b; --p-muted-rgb: 107 84 91; --p-subtle: #846f75;
   --theme-canvas: #fdf6f7; --theme-surface: #f8ecef; --theme-elevated: #ffffff;
   --theme-fg: #241419; --theme-fg-muted: #6b545b; --theme-fg-subtle: #9a8188;
   --theme-line: #f0dee3; --theme-line-strong: #e2c3cc; --theme-shadow: #e2c3cc;
@@ -636,11 +656,11 @@ body[data-accent='sakura'] {
 
 /* Obsidian / Linear Tech — premium chuqur pitch obsidian qora, electric blue aksent */
 body[data-theme='dark'][data-accent='obsidian'] {
-  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #7e7e86;
+  --p-fg: #f4f4f5; --p-fg-rgb: 244 244 245; --p-muted: #a1a1aa; --p-muted-rgb: 161 161 170; --p-subtle: #7e7e86;
   --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #7e7e86;
-  --p-primary: #3471d7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 52 113 215;
+  --p-primary: #3471d7; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 52 113 215;
   --p-purple: #8b5cf6; --p-purple-rgb: 139 92 246;
-  --p-canvas: #08090a; --p-surface: #17181c; --p-card: #111215; --p-line: rgba(255,255,255,0.08);
+  --p-canvas: #08090a; --p-canvas-rgb: 8 9 10; --p-surface: #17181c; --p-surface-rgb: 23 24 28; --p-card: #111215; --p-card-rgb: 17 18 21; --p-line: rgba(255,255,255,0.08); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.16);
   --theme-canvas: #08090a; --theme-surface: #17181c; --theme-elevated: #111215;
   --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
@@ -649,11 +669,11 @@ body[data-theme='dark'][data-accent='obsidian'] {
 
 /* Gamified Neo — jonli Duolingo emerald yashili, to'q slate navy */
 body[data-theme='dark'][data-accent='neo'] {
-  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #8693a4;
+  --p-fg: #f8fafc; --p-fg-rgb: 248 250 252; --p-muted: #94a3b8; --p-muted-rgb: 148 163 184; --p-subtle: #8693a4;
   --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #8693a4;
-  --p-primary: #178540; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 23 133 64;
+  --p-primary: #178540; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 23 133 64;
   --p-purple: #a855f7; --p-purple-rgb: 168 85 247;
-  --p-canvas: #0f172a; --p-surface: #334155; --p-card: #1e293b; --p-line: rgba(255,255,255,0.1);
+  --p-canvas: #0f172a; --p-canvas-rgb: 15 23 42; --p-surface: #334155; --p-surface-rgb: 51 65 85; --p-card: #1e293b; --p-card-rgb: 30 41 59; --p-line: rgba(255,255,255,0.1); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.2);
   --theme-canvas: #0f172a; --theme-surface: #334155; --theme-elevated: #1e293b;
   --theme-line: rgba(255,255,255,0.1); --theme-line-strong: rgba(255,255,255,0.2);
@@ -662,11 +682,11 @@ body[data-theme='dark'][data-accent='neo'] {
 
 /* Nordic Glass — sokin tumanli kecha, toza muz-havorang */
 body[data-theme='dark'][data-accent='nordic'] {
-  --p-fg: #f1f5f9; --p-muted: #94a3b8; --p-subtle: #768599;
+  --p-fg: #f1f5f9; --p-fg-rgb: 241 245 249; --p-muted: #94a3b8; --p-muted-rgb: 148 163 184; --p-subtle: #768599;
   --theme-fg: #f1f5f9; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #768599;
-  --p-primary: #38bdf8; --p-on-primary: #082f49; --p-glow: transparent; --p-primary-rgb: 56 189 248;
+  --p-primary: #38bdf8; --p-on-primary: #082f49; --p-on-primary-rgb: 8 47 73; --p-glow: transparent; --p-primary-rgb: 56 189 248;
   --p-purple: #818cf8; --p-purple-rgb: 129 140 248;
-  --p-canvas: #0c1017; --p-surface: #1b2434; --p-card: #131924; --p-line: rgba(255,255,255,0.08);
+  --p-canvas: #0c1017; --p-canvas-rgb: 12 16 23; --p-surface: #1b2434; --p-surface-rgb: 27 36 52; --p-card: #131924; --p-card-rgb: 19 25 36; --p-line: rgba(255,255,255,0.08); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.16);
   --theme-canvas: #0c1017; --theme-surface: #1b2434; --theme-elevated: #131924;
   --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
@@ -675,11 +695,11 @@ body[data-theme='dark'][data-accent='nordic'] {
 
 /* CarPlay Luxury — avtomobil bort kompyuteri, amber olovrang aksent */
 body[data-theme='dark'][data-accent='carplay'] {
-  --p-fg: #f8fafc; --p-muted: #94a3b8; --p-subtle: #758398;
+  --p-fg: #f8fafc; --p-fg-rgb: 248 250 252; --p-muted: #94a3b8; --p-muted-rgb: 148 163 184; --p-subtle: #758398;
   --theme-fg: #f8fafc; --theme-fg-muted: #94a3b8; --theme-fg-subtle: #758398;
-  --p-primary: #f97316; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 249 115 22;
+  --p-primary: #f97316; --p-on-primary: #000000; --p-on-primary-rgb: 0 0 0; --p-glow: transparent; --p-primary-rgb: 249 115 22;
   --p-purple: #ec4899; --p-purple-rgb: 236 72 153;
-  --p-canvas: #0b0d11; --p-surface: #1c202c; --p-card: #14171f; --p-line: rgba(255,255,255,0.08);
+  --p-canvas: #0b0d11; --p-canvas-rgb: 11 13 17; --p-surface: #1c202c; --p-surface-rgb: 28 32 44; --p-card: #14171f; --p-card-rgb: 20 23 31; --p-line: rgba(255,255,255,0.08); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.16);
   --theme-canvas: #0b0d11; --theme-surface: #1c202c; --theme-elevated: #14171f;
   --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
@@ -688,10 +708,10 @@ body[data-theme='dark'][data-accent='carplay'] {
 
 /* Gold Elite — qora + oltin (id "gold" saqlangan — eski tanlovlar uchun) */
 body[data-theme='dark'][data-accent='gold'] {
-  --p-fg: #f7f5f0; --p-muted: #b3ad9d; --p-subtle: #837e70;
+  --p-fg: #f7f5f0; --p-fg-rgb: 247 245 240; --p-muted: #b3ad9d; --p-muted-rgb: 179 173 157; --p-subtle: #837e70;
   --theme-fg: #f7f5f0; --theme-fg-muted: #b3ad9d; --theme-fg-subtle: #837e70;
-  --p-primary: #d9a441; --p-on-primary: #1c1400; --p-glow: transparent; --p-primary-rgb: 217 164 65;
-  --p-canvas: #100d06; --p-surface: #211c0f; --p-card: #17130a; --p-line: rgba(255,255,255,0.07);
+  --p-primary: #d9a441; --p-on-primary: #1c1400; --p-on-primary-rgb: 28 20 0; --p-glow: transparent; --p-primary-rgb: 217 164 65;
+  --p-canvas: #100d06; --p-canvas-rgb: 16 13 6; --p-surface: #211c0f; --p-surface-rgb: 33 28 15; --p-card: #17130a; --p-card-rgb: 23 19 10; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #100d06; --theme-surface: #211c0f; --theme-elevated: #17130a;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -699,16 +719,16 @@ body[data-theme='dark'][data-accent='gold'] {
 
 /* Payme — rasmiy brend rangi (faqat aksent; atmosfera default grafit) */
 body[data-theme='dark'][data-accent='payme'] {
-  --p-primary: #00b0b9; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 0 176 185;
+  --p-primary: #00b0b9; --p-on-primary: #000000; --p-on-primary-rgb: 0 0 0; --p-glow: transparent; --p-primary-rgb: 0 176 185;
 }
 
 /* Claude AI — Anthropic Terracotta & iliq qora atmosfera (#141413 canvas / #1e1e1d card) */
 body[data-theme='dark'][data-accent='claude'] {
-  --p-fg: #faf9f5; --p-muted: #a19c91; --p-subtle: #8a8780;
+  --p-fg: #faf9f5; --p-fg-rgb: 250 249 245; --p-muted: #a19c91; --p-muted-rgb: 161 156 145; --p-subtle: #8a8780;
   --theme-fg: #faf9f5; --theme-fg-muted: #a19c91; --theme-fg-subtle: #8a8780;
-  --p-primary: #ad5f46; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 173 95 70;
+  --p-primary: #ad5f46; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 173 95 70;
   --p-purple: #ad5f46; --p-purple-rgb: 173 95 70;
-  --p-canvas: #141413; --p-surface: #282724; --p-card: #1e1e1d; --p-line: rgba(245,245,240,0.08);
+  --p-canvas: #141413; --p-canvas-rgb: 20 20 19; --p-surface: #282724; --p-surface-rgb: 40 39 36; --p-card: #1e1e1d; --p-card-rgb: 30 30 29; --p-line: rgba(245,245,240,0.08); --p-line-rgb: 245 245 240;
   --p-line-strong: rgba(245,245,240,0.16);
   --theme-canvas: #141413; --theme-surface: #282724; --theme-elevated: #1e1e1d;
   --theme-line: rgba(245,245,240,0.08); --theme-line-strong: rgba(245,245,240,0.16);
@@ -717,11 +737,11 @@ body[data-theme='dark'][data-accent='claude'] {
 
 /* Cupertino (Apple iOS & OLED) — toza OLED qora va Apple System Blue */
 body[data-theme='dark'][data-accent='cupertino'] {
-  --p-fg: #f5f5f7; --p-muted: #8e8e93; --p-subtle: #868688;
+  --p-fg: #f5f5f7; --p-fg-rgb: 245 245 247; --p-muted: #8e8e93; --p-muted-rgb: 142 142 147; --p-subtle: #868688;
   --theme-fg: #f5f5f7; --theme-fg-muted: #8e8e93; --theme-fg-subtle: #868688;
-  --p-primary: #0973dd; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 9 115 221;
+  --p-primary: #0973dd; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 9 115 221;
   --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
-  --p-canvas: #000000; --p-card: #1c1c1e; --p-surface: #2c2c2e; --p-line: rgba(255,255,255,0.10);
+  --p-canvas: #000000; --p-canvas-rgb: 0 0 0; --p-card: #1c1c1e; --p-card-rgb: 28 28 30; --p-surface: #2c2c2e; --p-surface-rgb: 44 44 46; --p-line: rgba(255,255,255,0.10); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.18);
   --theme-canvas: #000000; --theme-surface: #2c2c2e; --theme-elevated: #1c1c1e;
   --theme-line: rgba(255,255,255,0.10); --theme-line-strong: rgba(255,255,255,0.18);
@@ -730,11 +750,11 @@ body[data-theme='dark'][data-accent='cupertino'] {
 
 /* Natural Titanium — iPhone Pro titan teksturasi, amber-oltin aksent */
 body[data-theme='dark'][data-accent='titanium'] {
-  --p-fg: #f4f4f5; --p-muted: #a1a1aa; --p-subtle: #818189;
+  --p-fg: #f4f4f5; --p-fg-rgb: 244 244 245; --p-muted: #a1a1aa; --p-muted-rgb: 161 161 170; --p-subtle: #818189;
   --theme-fg: #f4f4f5; --theme-fg-muted: #a1a1aa; --theme-fg-subtle: #818189;
-  --p-primary: #e4a853; --p-on-primary: #1c1300; --p-glow: transparent; --p-primary-rgb: 228 168 83;
+  --p-primary: #e4a853; --p-on-primary: #1c1300; --p-on-primary-rgb: 28 19 0; --p-glow: transparent; --p-primary-rgb: 228 168 83;
   --p-purple: #c084fc; --p-purple-rgb: 192 132 252;
-  --p-canvas: #0c0c0e; --p-surface: #222226; --p-card: #161619; --p-line: rgba(255,255,255,0.08);
+  --p-canvas: #0c0c0e; --p-canvas-rgb: 12 12 14; --p-surface: #222226; --p-surface-rgb: 34 34 38; --p-card: #161619; --p-card-rgb: 22 22 25; --p-line: rgba(255,255,255,0.08); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.16);
   --theme-canvas: #0c0c0e; --theme-surface: #222226; --theme-elevated: #161619;
   --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
@@ -743,11 +763,11 @@ body[data-theme='dark'][data-accent='titanium'] {
 
 /* Deep Purple — iPhone 14 Pro chuqur kosmik binafsha */
 body[data-theme='dark'][data-accent='deeppurple'] {
-  --p-fg: #f6f3f9; --p-muted: #a89fb3; --p-subtle: #857c91;
+  --p-fg: #f6f3f9; --p-fg-rgb: 246 243 249; --p-muted: #a89fb3; --p-muted-rgb: 168 159 179; --p-subtle: #857c91;
   --theme-fg: #f6f3f9; --theme-fg-muted: #a89fb3; --theme-fg-subtle: #857c91;
-  --p-primary: #bf5af2; --p-on-primary: #170026; --p-glow: transparent; --p-primary-rgb: 191 90 242;
+  --p-primary: #bf5af2; --p-on-primary: #170026; --p-on-primary-rgb: 23 0 38; --p-glow: transparent; --p-primary-rgb: 191 90 242;
   --p-purple: #bf5af2; --p-purple-rgb: 191 90 242;
-  --p-canvas: #0b0813; --p-surface: #231c36; --p-card: #151022; --p-line: rgba(255,255,255,0.08);
+  --p-canvas: #0b0813; --p-canvas-rgb: 11 8 19; --p-surface: #231c36; --p-surface-rgb: 35 28 54; --p-card: #151022; --p-card-rgb: 21 16 34; --p-line: rgba(255,255,255,0.08); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.16);
   --theme-canvas: #0b0813; --theme-surface: #231c36; --theme-elevated: #151022;
   --theme-line: rgba(255,255,255,0.08); --theme-line-strong: rgba(255,255,255,0.16);
@@ -756,11 +776,11 @@ body[data-theme='dark'][data-accent='deeppurple'] {
 
 /* Vision Glass — Apple VisionOS va Liquid Glass shaffof muzli kristall */
 body[data-theme='dark'][data-accent='liquidglass'] {
-  --p-fg: #f0f6fc; --p-muted: #8b9cb5; --p-subtle: #72849c;
+  --p-fg: #f0f6fc; --p-fg-rgb: 240 246 252; --p-muted: #8b9cb5; --p-muted-rgb: 139 156 181; --p-subtle: #72849c;
   --theme-fg: #f0f6fc; --theme-fg-muted: #8b9cb5; --theme-fg-subtle: #72849c;
-  --p-primary: #64d2ff; --p-on-primary: #00283d; --p-glow: transparent; --p-primary-rgb: 100 210 255;
+  --p-primary: #64d2ff; --p-on-primary: #00283d; --p-on-primary-rgb: 0 40 61; --p-glow: transparent; --p-primary-rgb: 100 210 255;
   --p-purple: #70a1ff; --p-purple-rgb: 112 161 255;
-  --p-canvas: #070b12; --p-surface: #182438; --p-card: #0f1726; --p-line: rgba(255,255,255,0.1);
+  --p-canvas: #070b12; --p-canvas-rgb: 7 11 18; --p-surface: #182438; --p-surface-rgb: 24 36 56; --p-card: #0f1726; --p-card-rgb: 15 23 38; --p-line: rgba(255,255,255,0.1); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.2);
   --theme-canvas: #070b12; --theme-surface: #182438; --theme-elevated: #0f1726;
   --theme-line: rgba(255,255,255,0.1); --theme-line-strong: rgba(255,255,255,0.2);
@@ -769,11 +789,11 @@ body[data-theme='dark'][data-accent='liquidglass'] {
 
 /* Crimson — COIN-EKSKLYUZIV: chuqur qizil (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='crimson'] {
-  --p-fg: #f8f2f3; --p-muted: #b5a2a5; --p-subtle: #8c7c7e;
+  --p-fg: #f8f2f3; --p-fg-rgb: 248 242 243; --p-muted: #b5a2a5; --p-muted-rgb: 181 162 165; --p-subtle: #8c7c7e;
   --theme-fg: #f8f2f3; --theme-fg-muted: #b5a2a5; --theme-fg-subtle: #8c7c7e;
-  --p-primary: #e04a5f; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 224 74 95;
+  --p-primary: #e04a5f; --p-on-primary: #000000; --p-on-primary-rgb: 0 0 0; --p-glow: transparent; --p-primary-rgb: 224 74 95;
   --p-purple: #d4708a; --p-purple-rgb: 212 112 138;
-  --p-canvas: #170c0e; --p-surface: #2a171b; --p-card: #1e1013; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #170c0e; --p-canvas-rgb: 23 12 14; --p-surface: #2a171b; --p-surface-rgb: 42 23 27; --p-card: #1e1013; --p-card-rgb: 30 16 19; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #170c0e; --theme-surface: #2a171b; --theme-elevated: #1e1013;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -781,11 +801,11 @@ body[data-theme='dark'][data-accent='crimson'] {
 
 /* Royal — COIN-EKSKLYUZIV: chuqur indigo (do'kon temasi, #40) */
 body[data-theme='dark'][data-accent='royal'] {
-  --p-fg: #f3f3f8; --p-muted: #a6a6ba; --p-subtle: #7f7f91;
+  --p-fg: #f3f3f8; --p-fg-rgb: 243 243 248; --p-muted: #a6a6ba; --p-muted-rgb: 166 166 186; --p-subtle: #7f7f91;
   --theme-fg: #f3f3f8; --theme-fg-muted: #a6a6ba; --theme-fg-subtle: #7f7f91;
-  --p-primary: #7b83e0; --p-on-primary: #0d0e2b; --p-glow: transparent; --p-primary-rgb: 123 131 224;
+  --p-primary: #7b83e0; --p-on-primary: #0d0e2b; --p-on-primary-rgb: 13 14 43; --p-glow: transparent; --p-primary-rgb: 123 131 224;
   --p-purple: #a37fe0; --p-purple-rgb: 163 127 224;
-  --p-canvas: #0c0c15; --p-surface: #1b1c2e; --p-card: #12131f; --p-line: rgba(255,255,255,0.07);
+  --p-canvas: #0c0c15; --p-canvas-rgb: 12 12 21; --p-surface: #1b1c2e; --p-surface-rgb: 27 28 46; --p-card: #12131f; --p-card-rgb: 18 19 31; --p-line: rgba(255,255,255,0.07); --p-line-rgb: 255 255 255;
   --p-line-strong: rgba(255,255,255,0.14);
   --theme-canvas: #0c0c15; --theme-surface: #1b1c2e; --theme-elevated: #12131f;
   --theme-line: rgba(255,255,255,0.07); --theme-line-strong: rgba(255,255,255,0.14);
@@ -793,10 +813,10 @@ body[data-theme='dark'][data-accent='royal'] {
 
 /* Arctic — COIN-EKSKLYUZIV YORUG' atmosfera (sakura kabi light-only dizayn) */
 body[data-accent='arctic'] {
-  --p-primary: #0b7fb8; --p-on-primary: #000000; --p-glow: transparent; --p-primary-rgb: 11 127 184;
-  --p-canvas: #f7fafc; --p-surface: #eaf2f7; --p-card: #ffffff;
-  --p-line: #dde8ef; --p-line-strong: #c3d6e2;
-  --p-fg: #14212b; --p-muted: #4e6472; --p-subtle: #68767f;
+  --p-primary: #0b7fb8; --p-on-primary: #000000; --p-on-primary-rgb: 0 0 0; --p-glow: transparent; --p-primary-rgb: 11 127 184;
+  --p-canvas: #f7fafc; --p-canvas-rgb: 247 250 252; --p-surface: #eaf2f7; --p-surface-rgb: 234 242 247; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: #dde8ef; --p-line-rgb: 221 232 239; --p-line-strong: #c3d6e2;
+  --p-fg: #14212b; --p-fg-rgb: 20 33 43; --p-muted: #4e6472; --p-muted-rgb: 78 100 114; --p-subtle: #68767f;
   --theme-canvas: #f7fafc; --theme-surface: #eaf2f7; --theme-elevated: #ffffff;
   --theme-fg: #14212b; --theme-fg-muted: #4e6472; --theme-fg-subtle: #82949f;
   --theme-line: #dde8ef; --theme-line-strong: #c3d6e2; --theme-shadow: #c3d6e2;
@@ -806,132 +826,132 @@ body[data-accent='arctic'] {
    Yorug' fonda toza kontrast: har bir temaga xos tonlashtirilgan qulay fon,
    aniq oq kartalar (p-card: #ffffff), 1px ko'rinuvchi chegara va yorqin aksent. */
 body[data-theme='light'][data-accent='aurora'] {
-  --p-primary: #0d9488; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 13 148 136;
-  --p-canvas: #eef5f3; --p-surface: #daece7; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #0d9488; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 13 148 136;
+  --p-canvas: #eef5f3; --p-canvas-rgb: 238 245 243; --p-surface: #daece7; --p-surface-rgb: 218 236 231; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #eef5f3; --theme-surface: #daece7; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='violet'] {
-  --p-primary: #7c3aed; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 124 58 237;
-  --p-canvas: #f3f0f7; --p-surface: #e5def0; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #7c3aed; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 124 58 237;
+  --p-canvas: #f3f0f7; --p-canvas-rgb: 243 240 247; --p-surface: #e5def0; --p-surface-rgb: 229 222 240; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f3f0f7; --theme-surface: #e5def0; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='ocean'] {
-  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
-  --p-canvas: #eef3f8; --p-surface: #dbe7f3; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #eef3f8; --p-canvas-rgb: 238 243 248; --p-surface: #dbe7f3; --p-surface-rgb: 219 231 243; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #eef3f8; --theme-surface: #dbe7f3; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='forest'] {
-  --p-primary: #059669; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 5 150 105;
-  --p-canvas: #edf4f0; --p-surface: #d7e8de; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #059669; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 5 150 105;
+  --p-canvas: #edf4f0; --p-canvas-rgb: 237 244 240; --p-surface: #d7e8de; --p-surface-rgb: 215 232 222; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #edf4f0; --theme-surface: #d7e8de; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='sunset'] {
-  --p-primary: #d97706; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 217 119 6;
-  --p-canvas: #f7f2ee; --p-surface: #eee2d7; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #d97706; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 217 119 6;
+  --p-canvas: #f7f2ee; --p-canvas-rgb: 247 242 238; --p-surface: #eee2d7; --p-surface-rgb: 238 226 215; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f7f2ee; --theme-surface: #eee2d7; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='sakura']   { /* Sakura light o'zi — asosiy blok yetarli */ }
 body[data-theme='light'][data-accent='obsidian'] {
-  --p-primary: #2563eb; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 37 99 235;
-  --p-canvas: #f1f3f7; --p-surface: #e4e8ee; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #2563eb; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 37 99 235;
+  --p-canvas: #f1f3f7; --p-canvas-rgb: 241 243 247; --p-surface: #e4e8ee; --p-surface-rgb: 228 232 238; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f1f3f7; --theme-surface: #e4e8ee; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='neo'] {
-  --p-primary: #12863d; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 18 134 61;
-  --p-canvas: #edf3ee; --p-surface: #d8e8db; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #12863d; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 18 134 61;
+  --p-canvas: #edf3ee; --p-canvas-rgb: 237 243 238; --p-surface: #d8e8db; --p-surface-rgb: 216 232 219; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #edf3ee; --theme-surface: #d8e8db; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='nordic'] {
-  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
-  --p-canvas: #edf2f7; --p-surface: #dbe4ee; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #edf2f7; --p-canvas-rgb: 237 242 247; --p-surface: #dbe4ee; --p-surface-rgb: 219 228 238; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #edf2f7; --theme-surface: #dbe4ee; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='carplay'] {
-  --p-primary: #ea580c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 234 88 12;
-  --p-canvas: #f5f2ee; --p-surface: #eae3da; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #ea580c; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 234 88 12;
+  --p-canvas: #f5f2ee; --p-canvas-rgb: 245 242 238; --p-surface: #eae3da; --p-surface-rgb: 234 227 218; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f5f2ee; --theme-surface: #eae3da; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='gold'] {
-  --p-primary: #b45309; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 180 83 9;
-  --p-canvas: #f6f3eb; --p-surface: #ece5d3; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #b45309; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 180 83 9;
+  --p-canvas: #f6f3eb; --p-canvas-rgb: 246 243 235; --p-surface: #ece5d3; --p-surface-rgb: 236 229 211; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f6f3eb; --theme-surface: #ece5d3; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='payme'] {
-  --p-primary: #00858c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 133 140;
-  --p-canvas: #ecf5f6; --p-surface: #d4ecee; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #00858c; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 0 133 140;
+  --p-canvas: #ecf5f6; --p-canvas-rgb: 236 245 246; --p-surface: #d4ecee; --p-surface-rgb: 212 236 238; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #ecf5f6; --theme-surface: #d4ecee; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='claude'] {
-  --p-primary: #b65a3b; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 182 90 59;
-  --p-canvas: #faf9f5; --p-surface: #f3f1eb; --p-card: #ffffff;
-  --p-line: #e7e5df; --p-line-strong: #d6d3cb;
-  --p-fg: #1c1917; --p-muted: #57534e; --p-subtle: #787371;
+  --p-primary: #b65a3b; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 182 90 59;
+  --p-canvas: #faf9f5; --p-canvas-rgb: 250 249 245; --p-surface: #f3f1eb; --p-surface-rgb: 243 241 235; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: #e7e5df; --p-line-rgb: 231 229 223; --p-line-strong: #d6d3cb;
+  --p-fg: #1c1917; --p-fg-rgb: 28 25 23; --p-muted: #57534e; --p-muted-rgb: 87 83 78; --p-subtle: #787371;
   --theme-canvas: #faf9f5; --theme-surface: #f3f1eb; --theme-elevated: #ffffff;
   --theme-line: #e7e5df; --theme-line-strong: #d6d3cb;
 }
 body[data-theme='light'][data-accent='cupertino'] {
-  --p-primary: #0070ea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 0 112 234;
-  --p-canvas: #f2f2f7; --p-card: #ffffff; --p-surface: #e5e5ea;
-  --p-line: rgba(60,60,67,0.12); --p-line-strong: rgba(60,60,67,0.22);
-  --p-fg: #000000; --p-muted: #6c6c70; --p-subtle: #747478;
+  --p-primary: #0070ea; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 0 112 234;
+  --p-canvas: #f2f2f7; --p-canvas-rgb: 242 242 247; --p-card: #ffffff; --p-card-rgb: 255 255 255; --p-surface: #e5e5ea; --p-surface-rgb: 229 229 234;
+  --p-line: rgba(60,60,67,0.12); --p-line-rgb: 60 60 67; --p-line-strong: rgba(60,60,67,0.22);
+  --p-fg: #000000; --p-fg-rgb: 0 0 0; --p-muted: #6c6c70; --p-muted-rgb: 108 108 112; --p-subtle: #747478;
   --theme-canvas: #f2f2f7; --theme-surface: #e5e5ea; --theme-elevated: #ffffff;
   --theme-fg: #000000; --theme-fg-muted: #6c6c70; --theme-fg-subtle: #8e8e93;
   --theme-line: rgba(60,60,67,0.12); --theme-line-strong: rgba(60,60,67,0.22);
 }
 body[data-theme='light'][data-accent='titanium'] {
-  --p-primary: #b45309; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 180 83 9;
-  --p-canvas: #f4f4f6; --p-surface: #e5e5eb; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #b45309; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 180 83 9;
+  --p-canvas: #f4f4f6; --p-canvas-rgb: 244 244 246; --p-surface: #e5e5eb; --p-surface-rgb: 229 229 235; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f4f4f6; --theme-surface: #e5e5eb; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='deeppurple'] {
-  --p-primary: #9333ea; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 147 51 234;
-  --p-canvas: #f7f2fb; --p-surface: #ecdef7; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #9333ea; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 147 51 234;
+  --p-canvas: #f7f2fb; --p-canvas-rgb: 247 242 251; --p-surface: #ecdef7; --p-surface-rgb: 236 222 247; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f7f2fb; --theme-surface: #ecdef7; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='liquidglass'] {
-  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 2 132 199;
-  --p-canvas: #eef6fc; --p-surface: #d9ebf8; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #0284c7; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 2 132 199;
+  --p-canvas: #eef6fc; --p-canvas-rgb: 238 246 252; --p-surface: #d9ebf8; --p-surface-rgb: 217 235 248; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #eef6fc; --theme-surface: #d9ebf8; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='crimson'] {
-  --p-primary: #be123c; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 190 18 60;
-  --p-canvas: #f7eef0; --p-surface: #edd6da; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #be123c; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 190 18 60;
+  --p-canvas: #f7eef0; --p-canvas-rgb: 247 238 240; --p-surface: #edd6da; --p-surface-rgb: 237 214 218; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f7eef0; --theme-surface: #edd6da; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='royal'] {
-  --p-primary: #4338ca; --p-on-primary: #ffffff; --p-glow: transparent; --p-primary-rgb: 67 56 202;
-  --p-canvas: #f0f1f8; --p-surface: #dcdff1; --p-card: #ffffff;
-  --p-line: rgba(0,0,0,0.08); --p-line-strong: rgba(0,0,0,0.15);
+  --p-primary: #4338ca; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 67 56 202;
+  --p-canvas: #f0f1f8; --p-canvas-rgb: 240 241 248; --p-surface: #dcdff1; --p-surface-rgb: 220 223 241; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f0f1f8; --theme-surface: #dcdff1; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
@@ -1258,6 +1278,23 @@ body[data-no-animation='true'] .animate-scorePop {
 
 .animate-shake {
   animation: shake 0.4s ease-in-out 3;
+}
+
+/* ── Reduced-motion GLOBAL GUARD (Wave 2, 2026-09-16) ─────────────────────
+   Harakatga sezgir userlarda (prefers-reduced-motion) BARCHA dekorativ/
+   takroriy animatsiya o'chadi — bitta markaziy ro'yxat, har animatsiyaga
+   alohida media query yozilmaydi. `body[data-no-animation]` (ilova sozlamasi)
+   alohida hurmat qilinadi — bu faqat OS darajadagi sozlama.
+   Istisno: yuklanish spinnerlari statik qoladi (kontekst orqali tushunarli). */
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer, .shimmer::after,
+  .animate-fadeIn, .splash-float, .splash-float-safe, .onboarding-float,
+  .animate-flyUp, .animate-wiggle, .coin-pop,
+  .animate-premiumIn, .animate-correctPop, .animate-scorePop, .animate-shake,
+  .animate-dynamic-island-expand, .dashboard-menu-action,
+  .animate-spin, .animate-pulse, .animate-bounce {
+    animation: none !important;
+  }
 }
 
 /* ═══ GLOBAL DESIGN SYSTEM STANDARDS (Apple HIG / Borderless Modern) ═════════

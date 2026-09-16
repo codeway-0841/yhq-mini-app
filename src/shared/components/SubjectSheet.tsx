@@ -32,14 +32,14 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 disabled={!s.available}
                 className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-150 ease-out shadow-xs ${
                   !s.available
-                    ? 'opacity-50 cursor-not-allowed bg-psurface/60'
+                    ? 'opacity-50 cursor-not-allowed bg-[rgb(var(--p-surface-rgb)/0.6)]'
                     : active
-                      ? 'scale-[1.01]'
+                      ? 'scale-[1.01] subject-picked'
                       : 'bg-psurface hover:bg-pcard active:scale-[0.99]'
                 }`}
                 style={active ? {
-                  backgroundColor: `${s.color}16`,
-                  boxShadow: `inset 0 0 0 1.5px ${s.color}60, 0 4px 14px ${s.color}20`
+                  backgroundColor: `${s.color}2E`,
+                  boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
                 } : undefined}
               >
                 {/* Rangli ikonka konteyneri */}

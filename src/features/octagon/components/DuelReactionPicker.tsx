@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Smile, MessageSquare, Volume2, VolumeX, X, Zap } from 'lucide-react'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
+import { useT } from '../../../shared/i18n'
 
 const EMOJIS = [
   { emoji: '🔥', label: 'fire' },
@@ -50,6 +51,7 @@ export function DuelReactionPicker({
   const [isOpen, setIsOpen] = useState(false)
   const [tab, setTab] = useState<'emojis' | 'taunts'>('emojis')
   const [cooldown, setCooldown] = useState(false)
+  const tt = useT(language === 'ru' ? 'ru' : 'uz')
 
   const taunts = language === 'ru' ? TAUNTS_RU : TAUNTS_UZ
 
@@ -92,20 +94,21 @@ export function DuelReactionPicker({
           className={`w-11 h-11 rounded-2xl bg-pcard flex items-center justify-center text-pfg shadow-lg active:scale-95 transition-all ${
             isOpen ? 'ring-2 ring-ppurple bg-psurface text-ppurple' : 'hover:bg-psurface'
           } ${cooldown ? 'opacity-50 cursor-not-allowed' : ''}`}
-          title="Reaksiyalar"
+          title={tt('duelReactions')}
         >
           <Smile size={20} className={cooldown ? 'animate-spin' : ''} />
         </button>
 
         <button
           type="button"
+          aria-label={isMuted ? tt('duelUnmute') : tt('duelMute')}
           onClick={() => {
             haptics.impact('light')
             playSound('toggle')
             onToggleMute()
           }}
           className="w-11 h-11 rounded-2xl bg-pcard flex items-center justify-center text-pmuted hover:text-pfg shadow-lg active:scale-95 transition-all"
-          title={isMuted ? 'Ovozni yoqish' : 'Ovozni o\'chirish'}
+          title={isMuted ? tt('duelUnmute') : tt('duelMute')}
         >
           {isMuted ? <VolumeX size={18} className="text-pdanger" /> : <Volume2 size={18} />}
         </button>
@@ -127,7 +130,7 @@ export function DuelReactionPicker({
                 }`}
               >
                 <Smile size={12} />
-                <span>Smayliklar</span>
+                <span>{tt('duelTabEmojis')}</span>
               </button>
               <button
                 type="button"
@@ -139,14 +142,15 @@ export function DuelReactionPicker({
                 }`}
               >
                 <MessageSquare size={12} />
-                <span>Frazalar</span>
+                <span>{tt('duelTabPhrases')}</span>
               </button>
             </div>
 
             <button
               type="button"
               onClick={() => setIsOpen(false)}
-              className="w-6 h-6 rounded-full bg-pcard hover:bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+              aria-label={tt('close')}
+              className="grid size-11 shrink-0 place-items-center rounded-full bg-pcard hover:bg-psurface text-pmuted hover:text-pfg transition-colors"
             >
               <X size={13} />
             </button>

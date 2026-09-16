@@ -19,7 +19,7 @@ const SelectTrigger = React.forwardRef<
       'text-base text-pfg',
       'transition-[border-color,box-shadow] duration-150 ease-out',
       'data-[placeholder]:text-psubtle',
-      'focus:outline-none focus:border-pprimary focus:shadow-[0_0_0_3px_var(--p-wash)]',
+      'focus:outline-none focus-visible:border-pprimary focus-visible:shadow-[0_0_0_3px_var(--p-wash)]',
       'disabled:cursor-not-allowed disabled:opacity-50',
       '[&_svg]:size-4 [&_svg]:shrink-0 [&_svg]:text-pmuted',
       className,
@@ -45,7 +45,7 @@ const SelectContent = React.forwardRef<
       className={cn(
         'relative z-[60] max-h-96 min-w-[8rem] overflow-hidden rounded-2xl border border-pline bg-pcard shadow-md',
         'shadow-[0_8px_24px_-8px_rgba(0,0,0,0.45)]',
-        'animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0',
+        'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:zoom-in-95 motion-safe:data-[state=closed]:animate-out motion-safe:data-[state=closed]:fade-out-0',
         position === 'popper' && 'data-[side=bottom]:translate-y-1 data-[side=top]:-translate-y-1',
         className,
       )}

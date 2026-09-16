@@ -735,7 +735,7 @@ export default function GraphPage() {
                 key={v}
                 type="button"
                 onClick={() => { snapshot(); setXVar(v) }}
-                className={`h-8 flex-shrink-0 rounded-xl px-3 font-mono text-[12px] font-semibold transition-colors ${
+                className={`min-h-11 flex-shrink-0 rounded-xl px-3 font-mono text-[12px] font-semibold transition-colors ${
                   v === xVar ? 'bg-pprimary text-ponprimary' : 'bg-psurface text-pmuted hover:text-fg'
                 }`}
               >

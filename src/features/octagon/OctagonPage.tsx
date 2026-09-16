@@ -31,6 +31,9 @@ export default function OctagonPage() {
 
   const [creatingRoom, setCreatingRoom] = useState(false)
   const [isRoomModalOpen, setIsRoomModalOpen] = useState(false)
+  // Idle subview ochiqda DuelHeader back yashirinadi (ikkita chevron bo'lmasin —
+  // subview'ning o'z PageHeader back'i bor)
+  const [duelSubview, setDuelSubview] = useState<string | null>(null)
 
   const { state: s, conn, duelCode, duelLink,
           onlinePlayers, onlineCount, refreshOnline,
@@ -93,13 +96,18 @@ export default function OctagonPage() {
 
   return (
     <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
-      <DuelHeader
-        title={settings.language === 'ru' ? 'Дуэль' : 'Duel'}
-        inRound={s.phase === 'in_round'}
-        yourScore={s.yourScore}
-        oppScore={s.oppScore}
-        onBack={handleHeaderBack}
-      />
+      {/* Subview ochiqda sahifa header'i butunlay yashirinadi — subview o'z
+          PageHeader'i bilan to'liq 2-sahifa bo'lib ko'rinadi */}
+      {duelSubview === null && (
+        <DuelHeader
+          title={tt('duelTitle')}
+          backLabel={tt('backWord')}
+          inRound={s.phase === 'in_round'}
+          yourScore={s.yourScore}
+          oppScore={s.oppScore}
+          onBack={handleHeaderBack}
+        />
+      )}
 
       <DuelBanners toastMsg={s.toastMsg} conn={conn} phase={s.phase}
         oppWait={s.oppWait} onRetry={retryConnect} language={settings.language} />
@@ -128,6 +136,7 @@ export default function OctagonPage() {
             onRefreshOnline={refreshOnline}
             onFind={() => { setCreatingRoom(false); joinQueue('') }}
             onJoinWithPin={(pin) => { setCreatingRoom(false); joinQueue(pin) }}
+            onSubviewChange={setDuelSubview}
           />
         )}
 
@@ -135,7 +144,7 @@ export default function OctagonPage() {
           <SearchingScreen language={settings.language} roomPending={creatingRoom && !duelCode} tt={tt} duelCode={duelCode} duelLink={duelLink} onCancel={cancelSearch} />
         )}
 
-        {s.phase === 'matched' && <MatchedScreen opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
+        {s.phase === 'matched' && <MatchedScreen tt={tt} opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
 
         {s.phase === 'in_round' && (
           <RoundScreen tt={tt} q={currentQ} deadline={s.deadline}
@@ -149,7 +158,7 @@ export default function OctagonPage() {
         {s.phase === 'match_end' && (
           <MatchEndScreen tt={tt} result={s.result}
             yourScore={s.yourScore} oppScore={s.oppScore} opponentName={s.opponentName}
-            language={settings.language} onExit={exitToIdle} onRematch={() => { setCreatingRoom(false); joinQueue('') }} />
+            onExit={exitToIdle} onRematch={() => { setCreatingRoom(false); joinQueue('') }} />
         )}
       </div>
 

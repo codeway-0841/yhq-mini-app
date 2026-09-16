@@ -24,6 +24,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { track } from '../../../shared/lib/analytics'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import Confetti from '../../../shared/components/Confetti'
 import { cn } from '../../../shared/lib/cn'
 
@@ -176,7 +177,7 @@ export default function SubscriptionModal({
 
     if (selectedProvider === 'stars') {
       track('premium_stars_click', { plan: selectedPlan.key })
-      openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${selectedPlan.key}`)
+      openTelegramLink(`https://t.me/${config.botUsername}?start=premium_${selectedPlan.key}`)
       onClose()
       return
     }
@@ -216,7 +217,7 @@ export default function SubscriptionModal({
   // Yordam olish
   const handleGetHelp = () => {
     haptics.impact('light')
-    openTelegramLink('https://t.me/kiwi_uz_bot')
+    openTelegramLink(`https://t.me/${config.botUsername}`)
   }
 
   return (
@@ -231,7 +232,7 @@ export default function SubscriptionModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full max-w-lg mx-auto bg-pcard rounded-t-3xl shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
+        className="w-full max-w-lg mx-auto bg-pcard rounded-t-sheet shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Yuqori surish tutqichi (Drag Handle) */}
@@ -249,7 +250,7 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={onClose}
                   className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label="Orqaga"
+                  aria-label={tt('backWord')}
                 >
                   <ChevronLeft size={20} />
                 </button>
@@ -286,7 +287,7 @@ export default function SubscriptionModal({
                       'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden shadow-xs',
                       isSelected
                         ? 'ring-2 ring-pprimary bg-psurface shadow-md'
-                        : 'bg-psurface/40 hover:bg-psurface active:scale-[0.99]'
+                        : 'bg-[rgb(var(--p-surface-rgb)/0.4)] hover:bg-psurface active:scale-[0.99]'
                     )}
                   >
                     {/* Yuqori qator: Claude Geometrik Daraxt Ikonkasi + Nom + Tavsif + Narx */}
@@ -338,7 +339,7 @@ export default function SubscriptionModal({
                           <div key={idx} className="flex items-start gap-2.5">
                             {/* Claude uslubidagi oddiy, dumaloqsiz pitechka */}
                             <Check size={15} strokeWidth={2.2} className="mt-0.5 shrink-0 text-pprimary" />
-                            <span className="text-[13px] text-pfg/90 font-normal leading-relaxed">
+                            <span className="text-[13px] text-[rgb(var(--p-fg-rgb)/0.9)] font-normal leading-relaxed">
                               {feat}
                             </span>
                           </div>
@@ -385,7 +386,7 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={() => setStep('choose_plan')}
                   className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label="Orqaga"
+                  aria-label={tt('backWord')}
                 >
                   <ChevronLeft size={20} />
                 </button>
@@ -419,7 +420,7 @@ export default function SubscriptionModal({
               {/* Success Screen */}
               {isSuccess ? (
                 <div className="py-8 text-center space-y-4">
-                  <div className="size-16 rounded-full bg-psuccess/15 text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
+                  <div className="size-16 rounded-full bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
                     <CheckCircle2 size={34} />
                   </div>
                   <div>
@@ -509,9 +510,9 @@ export default function SubscriptionModal({
                           setSelectedProvider('click')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'click'
-                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
                             : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
@@ -526,9 +527,9 @@ export default function SubscriptionModal({
                           setSelectedProvider('payme')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'payme'
-                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
                             : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
@@ -543,9 +544,9 @@ export default function SubscriptionModal({
                           setSelectedProvider('stars')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
                           selectedProvider === 'stars'
-                            ? 'ring-2 ring-pprimary bg-pprimary/10 text-pfg font-bold'
+                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
                             : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
                         )}
                       >
@@ -561,7 +562,7 @@ export default function SubscriptionModal({
                       deb belgilanadi; bekor buyurtma kodni kuydirmaydi) */}
                   <div className="space-y-2 pt-1">
                     {appliedPromo ? (
-                      <div className="flex items-center justify-between rounded-2xl bg-psuccess/10 p-3.5 shadow-xs">
+                      <div className="flex items-center justify-between rounded-2xl bg-[rgb(var(--p-success-rgb)/0.1)] p-3.5 shadow-xs">
                         <div className="flex items-center gap-2.5">
                           <Ticket size={16} className="text-psuccess" />
                           <span className="text-[13px] font-bold text-psuccess">
@@ -572,7 +573,7 @@ export default function SubscriptionModal({
                           type="button"
                           onClick={clearPromo}
                           aria-label={tt('cancel')}
-                          className="p-1.5 rounded-xl text-psuccess/60 hover:text-psuccess hover:bg-psurface transition-colors cursor-pointer"
+                          className="p-1.5 rounded-xl text-[rgb(var(--p-success-rgb)/0.6)] hover:text-psuccess hover:bg-psurface transition-colors cursor-pointer"
                         >
                           <X size={14} />
                         </button>
@@ -587,7 +588,7 @@ export default function SubscriptionModal({
                             placeholder={tt('promoInputPlaceholder')}
                             maxLength={30}
                             disabled={promoBusy || isWaitingPayment}
-                            className="flex-1 min-w-0 bg-transparent outline-none py-3 text-[13px] font-semibold text-pfg placeholder:text-psubtle tracking-wider uppercase"
+                            className="flex-1 min-w-0 bg-transparent outline-none py-3 text-base font-semibold text-pfg placeholder:text-psubtle tracking-wider uppercase"
                           />
                         </div>
                         <button
@@ -607,7 +608,7 @@ export default function SubscriptionModal({
 
                   {/* Polling / Waiting Indicator */}
                   {isWaitingPayment && (
-                    <div className="p-3.5 rounded-2xl bg-pblue/10 flex items-center gap-3 shadow-xs">
+                    <div className="p-3.5 rounded-2xl bg-[rgb(var(--p-blue-rgb)/0.1)] flex items-center gap-3 shadow-xs">
                       <Loader2 size={19} className="text-pblue animate-spin shrink-0" />
                       <div className="text-xs">
                         <p className="font-bold text-pfg">
@@ -624,7 +625,7 @@ export default function SubscriptionModal({
 
                   {/* Error message */}
                   {errorMsg && (
-                    <div className="p-3.5 rounded-2xl bg-pdanger/10 text-pdanger text-xs flex items-center gap-2 shadow-xs">
+                    <div className="p-3.5 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger text-xs flex items-center gap-2 shadow-xs">
                       <AlertCircle size={15} className="shrink-0" />
                       <span>{errorMsg}</span>
                     </div>

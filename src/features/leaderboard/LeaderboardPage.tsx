@@ -237,7 +237,7 @@ export default function LeaderboardPage() {
                   type="button"
                   onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
                   className={cn(
-                    'flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
+                    'flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
                     active
                       ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                       : 'text-pmuted hover:text-pfg'
@@ -271,8 +271,8 @@ export default function LeaderboardPage() {
           ))}
         </div>
       ) : entriesList.length === 0 ? (
-        <div className="mx-4 mt-6 flex flex-col items-center justify-center rounded-3xl bg-pcard p-8 text-center shadow-xs">
-          <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-pprimary/10 text-pprimary">
+        <div className="mx-4 mt-6 flex flex-col items-center justify-center rounded-2xl bg-pcard p-8 text-center shadow-xs">
+          <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary">
             <Trophy size={28} />
           </div>
           <h3 className="font-display text-base font-extrabold text-pfg">
@@ -284,7 +284,7 @@ export default function LeaderboardPage() {
           <button
             type="button"
             onClick={() => navigate('/testlar')}
-            className="mt-5 rounded-full bg-pprimary px-6 py-2.5 text-xs font-bold text-ponprimary shadow-md transition-transform active:scale-95"
+            className="mt-5 min-h-11 inline-flex items-center rounded-full bg-pprimary px-6 py-2.5 text-xs font-bold text-ponprimary shadow-md transition-transform active:scale-95"
           >
             {tt('startTestBtn')}
           </button>
@@ -301,7 +301,7 @@ export default function LeaderboardPage() {
                 key={entry.userId}
                 className={cn(
                   'flex items-center gap-3 px-4 py-3.5 transition-colors',
-                  isYou ? 'bg-pwash font-bold' : 'hover:bg-psurface/40'
+                  isYou ? 'bg-pwash font-bold' : 'hover:bg-[rgb(var(--p-surface-rgb)/0.4)]'
                 )}
               >
                 {/* Rank + Trend Arrow */}
@@ -388,7 +388,7 @@ export default function LeaderboardPage() {
                         key={w.rank}
                         className={cn(
                           'flex items-center gap-2.5 rounded-xl p-1.5',
-                          w.isYou && 'bg-pprimary/10 ring-1 ring-pprimary/20'
+                          w.isYou && 'bg-[rgb(var(--p-primary-rgb)/0.1)] ring-1 ring-[rgb(var(--p-primary-rgb)/0.2)]'
                         )}
                       >
                         <span className="w-5 text-center font-display text-xs font-bold text-psubtle">{w.rank}</span>

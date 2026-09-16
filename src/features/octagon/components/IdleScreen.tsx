@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Swords, UserPlus, Trophy, Users, KeyRound, ChevronLeft, ArrowRight, Clock3, Layers } from 'lucide-react'
+import { Swords, UserPlus, Trophy, Users, KeyRound, ArrowRight, Clock3, Layers } from 'lucide-react'
 import { api, type LeaderboardEntry, avatarSrcFor } from '../../../shared/api'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { playSound } from '../../../shared/lib/sounds'
@@ -10,6 +10,7 @@ import { cn } from '../../../shared/lib/cn'
 import { registerModal } from '../../../shared/lib/navigation'
 import { getDuelHistory, type DuelHistoryRecord } from '../duel-history'
 import { DuelLeaderboardView } from './DuelLeaderboardView'
+import { PageHeader } from '../../../shared/components/ui/page-header'
 
 interface IdleScreenProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -23,6 +24,7 @@ interface IdleScreenProps {
   onRefreshOnline?: () => void
   onFind: () => void
   onJoinWithPin: (pin: string) => void
+  onSubviewChange?: (subview: 'battles' | 'leaderboard' | 'online' | 'invite' | null) => void
 }
 
 function getDuelRank(wins: number, tt: ReturnType<typeof import('../../../shared/i18n')['useT']>): { title: string; color: string } {
@@ -79,9 +81,16 @@ export function IdleScreen({
   onRefreshOnline,
   onFind,
   onJoinWithPin,
+  onSubviewChange,
 }: IdleScreenProps) {
   // Alohida navigatsiya (null = Hub, string = Subview)
   const [subview, setSubview] = useState<'battles' | 'leaderboard' | 'online' | 'invite' | null>(null)
+
+  // Subview holatini ota (OctagonPage) ga xabar berish — DuelHeader back
+  // subview ochiqda yashirinadi (ikkita chevron bo'lmasligi uchun)
+  useEffect(() => {
+    onSubviewChange?.(subview)
+  }, [subview, onSubviewChange])
 
   // Stats & History state
   const [serverWins, setServerWins] = useState<number>(0)
@@ -148,47 +157,38 @@ export function IdleScreen({
   // ── SUBVIEW KO'RINISHI (Ichki sahifaga navigatsiya qilinganda) ──
   if (subview !== null) {
     const subviewTitle =
-      subview === 'battles'     ? (language === 'ru' ? 'Мои бои' : 'Mening janglarim') :
-      subview === 'leaderboard' ? (language === 'ru' ? 'Рейтинг Дуэлей' : 'Duel Reytingi') :
-      subview === 'online'      ? (language === 'ru' ? 'Онлайн игроки' : "Online o'yinchilar") :
-      (language === 'ru' ? 'Дуэль с другом' : "Do'st bilan bellashuv")
+      subview === 'battles'     ? tt('duelSubviewBattles') :
+      subview === 'leaderboard' ? tt('duelSubviewBoard') :
+      subview === 'online'      ? tt('duelSubviewOnline') :
+      tt('duelSubviewInvite')
 
     return (
       <div className="w-full max-w-md mx-auto space-y-4 pt-1 animate-premiumIn">
-        {/* Subview Nav Header */}
-        <div className="flex items-center justify-between pb-2 border-b border-pline">
-          <button
-            type="button"
-            onClick={() => { playSound('click'); haptics.impact('light'); setSubview(null) }}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-psurface hover:bg-pcard text-xs font-bold text-pfg active:scale-95 transition-all shadow-xs"
-          >
-            <ChevronLeft size={16} />
-            <span>{tt('backWord')}</span>
-          </button>
-          <h2 className="font-display text-sm font-black text-pfg truncate px-2">
-            {subviewTitle}
-          </h2>
-          <div className="w-16" />
-        </div>
+        <PageHeader
+          title={subviewTitle}
+          onBack={() => { playSound('click'); haptics.impact('light'); setSubview(null) }}
+          backLabel={tt('backWord')}
+          className="-mx-4"
+        />
 
         {/* 1. Mening Janglarim Subview -> GRID KO'RINISHIDA */}
         {subview === 'battles' && (
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-2.5">
               <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
-                <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelWinsLabel')}</span>
+                <span className="text-[11px] font-bold text-psubtle block mb-0.5">{tt('duelWinsLabel')}</span>
                 <span className="font-display text-2xl font-black text-pprimary">{totalWins}</span>
               </div>
               <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
-                <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelTotalLabel')}</span>
+                <span className="text-[11px] font-bold text-psubtle block mb-0.5">{tt('duelTotalLabel')}</span>
                 <span className="font-display text-2xl font-black text-pfg">{totalMatches}</span>
               </div>
               <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs">
-                <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{tt('duelWinRateLabel')}</span>
+                <span className="text-[11px] font-bold text-psubtle block mb-0.5">{tt('duelWinRateLabel')}</span>
                 <span className="font-display text-2xl font-black text-psuccess">{winRate}%</span>
               </div>
               <div className="rounded-2xl bg-pcard p-3.5 text-center shadow-xs flex flex-col justify-center items-center">
-                <span className="text-[10.5px] font-bold text-psubtle block mb-0.5">{language === 'ru' ? 'Ранг' : 'Unvon'}</span>
+                <span className="text-[11px] font-bold text-psubtle block mb-0.5">{tt('duelRank')}</span>
                 <span className={cn('px-2.5 py-0.5 rounded-full text-[11px] font-extrabold truncate max-w-full', rankInfo.color)}>
                   {rankInfo.title}
                 </span>
@@ -233,9 +233,9 @@ export function IdleScreen({
                         </span>
                         <span className={cn(
                           'px-1.5 py-0.5 rounded-full text-[9.5px] font-extrabold',
-                          h.result === 'win'  ? 'bg-psuccess/15 text-psuccess' :
-                          h.result === 'lose' ? 'bg-pdanger/15 text-pdanger' :
-                          'bg-pwarning/15 text-pwarning'
+                          h.result === 'win'  ? 'bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess' :
+                          h.result === 'lose' ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger' :
+                          'bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning'
                         )}>
                           {h.result === 'win' ? tt('duelWinBadge') : h.result === 'lose' ? tt('duelLoseBadge') : tt('duelDrawBadge')}
                         </span>
@@ -281,7 +281,7 @@ export function IdleScreen({
                 {effectiveOnlineUsers.map((player) => (
                   <div
                     key={player.userId}
-                    className="flex items-center justify-between gap-3 px-4 py-3.5 hover:bg-psurface/40 transition-colors"
+                    className="flex items-center justify-between gap-3 px-4 py-3.5 hover:bg-[rgb(var(--p-surface-rgb)/0.4)] transition-colors"
                   >
                     <div className="flex items-center gap-3 min-w-0">
                       <div className="relative shrink-0">
@@ -293,7 +293,7 @@ export function IdleScreen({
                         <p className="text-[13px] font-bold text-pfg truncate">
                           {player.name}
                           {player.isYou && (
-                            <span className="ml-1.5 rounded-full bg-pprimary/20 px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
+                            <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.2)] px-1.5 py-0.5 text-[10px] font-extrabold text-pprimary">
                               {tt('youLabel')}
                             </span>
                           )}

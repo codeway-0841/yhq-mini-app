@@ -145,7 +145,7 @@ export default function FormulasPage() {
           <input value={query} onChange={(e) => setQuery(e.target.value)}
             placeholder={tt('searchFormula')}
             aria-label={tt('searchFormula')}
-            className="flex-1 bg-transparent outline-none text-[13px] text-pfg placeholder:text-psubtle" />
+            className="flex-1 bg-transparent outline-none text-base text-pfg placeholder:text-psubtle" />
         </div>
       </div>
 

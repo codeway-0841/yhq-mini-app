@@ -14,20 +14,20 @@ export function DuelBanners({ toastMsg, conn, phase, oppWait, onRetry, language 
   return (
     <>
       {toastMsg && !(isConnectionToast && conn !== 'open') && (
-        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl text-center shadow-xs">
+        <div className="mx-4 mt-2 bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-xs font-semibold px-3 py-2 rounded-xl text-center shadow-xs">
           {/websocket|connection error/i.test(toastMsg) ? (language === 'ru' ? 'Не удалось подключиться. Проверьте соединение.' : 'Ulanib bo‘lmadi. Internet aloqasini tekshiring.') : toastMsg}
         </div>
       )}
 
       {conn === 'reconnecting' && phase !== 'idle' && (
-        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
+        <div className="mx-4 mt-2 bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           {language === 'ru' ? 'Переподключение…' : 'Aloqa tiklanmoqda…'}
         </div>
       )}
 
       {oppWait !== null && phase === 'in_round' && (
-        <div className="mx-4 mt-2 bg-pwarning/15 text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
+        <div className="mx-4 mt-2 bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-xs font-semibold px-3 py-2 rounded-xl flex items-center justify-center gap-2 shadow-xs">
           <Loader2 size={14} className="animate-spin flex-shrink-0" />
           {language === 'ru' ? `Ждём соперника: ${oppWait} сек` : `Raqib kutilmoqda: ${oppWait} soniya`}
         </div>

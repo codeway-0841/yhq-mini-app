@@ -27,7 +27,7 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
         onChange(!checked)
       }}
       className={`relative flex-none ${trackCls} rounded-full transition-colors duration-200 active:scale-[0.96] ${
-        checked ? 'bg-pprimary' : 'bg-pline/80 dark:bg-psurface'
+        checked ? 'bg-pprimary' : 'bg-[rgb(var(--p-line-rgb)/0.8)] dark:bg-psurface'
       }`}
     >
       <span

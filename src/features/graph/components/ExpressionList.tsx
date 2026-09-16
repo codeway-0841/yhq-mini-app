@@ -66,7 +66,7 @@ export default function ExpressionList({
                   autoCapitalize="off"
                   autoCorrect="off"
                   spellCheck={false}
-                  className={`h-11 w-full rounded-xl bg-psurface px-3 font-mono text-[14px] text-pfg outline-none placeholder:text-psubtle focus:ring-2 ${
+                  className={`h-11 w-full rounded-xl bg-psurface px-3 font-mono text-base text-pfg outline-none placeholder:text-psubtle focus:ring-2 ${
                     error ? 'ring-2 ring-[rgb(var(--p-danger-rgb)/0.7)]' : 'focus:ring-pprimary'
                   }`}
                 />

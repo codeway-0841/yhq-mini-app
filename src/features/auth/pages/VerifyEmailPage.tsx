@@ -53,7 +53,7 @@ export default function VerifyEmailPage() {
           {status === 'verifying' && (
             <>
               <div className="w-16 h-16 rounded-full bg-pwash flex items-center justify-center mx-auto">
-                <div aria-hidden="true" className="w-8 h-8 border-4 border-pprimary/30 border-t-pprimary rounded-full motion-safe:animate-spin" />
+                <div aria-hidden="true" className="w-8 h-8 border-4 border-[rgb(var(--p-primary-rgb)/0.3)] border-t-pprimary rounded-full motion-safe:animate-spin" />
               </div>
               <h1 className="text-[20px] font-semibold text-pfg">
                 {language === 'ru' ? 'Проверяем...' : 'Tekshirilmoqda...'}
@@ -79,7 +79,7 @@ export default function VerifyEmailPage() {
                   ? 'Ваш email успешно подтверждён'
                   : 'Emailingiz muvaffaqiyatli tasdiqlandi'}
               </p>
-              <p className="text-[12px] text-pmuted/70">
+              <p className="text-[12px] text-[rgb(var(--p-muted-rgb)/0.7)]">
                 {language === 'ru'
                   ? 'Перенаправление на главную...'
                   : 'Bosh sahifaga yo\'naltirilmoqda...'}

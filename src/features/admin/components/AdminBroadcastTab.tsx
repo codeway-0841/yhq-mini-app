@@ -347,13 +347,13 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 }}
                 className={`p-3 rounded-2xl border text-left transition-all flex items-start gap-2.5 ${
                   isSelected
-                    ? 'bg-ppurple/15 border-ppurple shadow-sm'
-                    : 'bg-psurface border-pline hover:border-ppurple/40 text-pmuted'
+                    ? 'bg-[rgb(var(--p-purple-rgb)/0.15)] border-ppurple shadow-sm'
+                    : 'bg-psurface border-pline hover:border-[rgb(var(--p-purple-rgb)/0.4)] text-pmuted'
                 }`}
               >
                 <Icon size={18} strokeWidth={1.75} className="flex-shrink-0 text-ppurple" />
                 <div className="flex-1 min-w-0">
-                  <p className={`text-xs font-semibold ${isSelected ? 'text-pfg' : 'text-pfg/80'}`}>
+                  <p className={`text-xs font-semibold ${isSelected ? 'text-pfg' : 'text-[rgb(var(--p-fg-rgb)/0.8)]'}`}>
                     {item.title}
                   </p>
                   <p className="text-[10px] text-pmuted truncate mt-0.5">{item.desc}</p>
@@ -457,7 +457,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 />
 
                 {imageData ? (
-                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-ppurple/40">
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-[rgb(var(--p-purple-rgb)/0.4)]">
                     <div className="flex items-center gap-2.5 min-w-0">
                       <img
                         src={imageData}
@@ -478,7 +478,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
+                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -486,7 +486,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
+                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -496,7 +496,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={20} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>
@@ -612,7 +612,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               {/* Inline CTA Button */}
               {buttonText ? (
                 <div className="p-2 pt-0">
-                  <div className="w-full py-2.5 rounded-xl bg-ppurple/20 hover:bg-ppurple/30 border border-ppurple/40 text-ppurple font-semibold text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <div className="w-full py-2.5 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.2)] hover:bg-[rgb(var(--p-purple-rgb)/0.3)] border border-[rgb(var(--p-purple-rgb)/0.4)] text-ppurple font-semibold text-xs text-center flex items-center justify-center gap-1.5 shadow-sm">
                     <span>{buttonText}</span>
                     <ExternalLink size={12} />
                   </div>
@@ -635,11 +635,11 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               <span className="text-[10px] text-pmuted block">Jami</span>
               <span className="font-semibold text-pfg">{result.total}</span>
             </div>
-            <div className="p-2 rounded-xl bg-pprimary/10 border border-pprimary/30">
+            <div className="p-2 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] border border-[rgb(var(--p-primary-rgb)/0.3)]">
               <span className="text-[10px] text-pprimary block">Yetib bordi</span>
               <span className="font-semibold text-pprimary">{result.sent}</span>
             </div>
-            <div className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30">
+            <div className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)]">
               <span className="text-[10px] text-pdanger block">Bloklangan</span>
               <span className="font-semibold text-pdanger">{result.blocked}</span>
             </div>
@@ -699,7 +699,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       {confirmOpen && (
         <DialogOverlay onClose={() => setConfirmOpen(false)} position="center" zIndex={60} labelId="broadcast-confirm-title" backdropClassName="bg-black/80 backdrop-blur-md">
           <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 space-y-4 shadow-2xl text-center relative">
-            <div className="w-14 h-14 rounded-2xl bg-ppurple/20 border border-ppurple/40 flex items-center justify-center mx-auto text-ppurple">
+            <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.2)] border border-[rgb(var(--p-purple-rgb)/0.4)] flex items-center justify-center mx-auto text-ppurple">
               <Send size={26} />
             </div>
             <div>

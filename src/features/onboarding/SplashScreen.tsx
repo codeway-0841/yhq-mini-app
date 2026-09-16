@@ -1,11 +1,16 @@
 // KIWI — Splash ekran (brend rasm + progress bar)
 // v2 premium: yumshoq kirish animatsiyasi + aksent-mos halo + shine progress
+import { useAppStore } from '../../shared/store/useAppStore'
+import { useT } from '../../shared/i18n'
+
 export default function SplashScreen() {
+  const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   return (
     <div
       role="status"
       aria-live="polite"
-      aria-label="KIVVI yuklanmoqda"
+      aria-label={tt('splashLoadingLabel')}
       className="first-launch-screen font-display flex flex-col items-center justify-center relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, var(--p-canvas) 0%, var(--p-surface) 100%)' }}>
 
@@ -35,7 +40,7 @@ export default function SplashScreen() {
             style={{ background: 'var(--p-muted)' }} />
         </div>
         <p className="text-center text-xs font-medium mt-3 text-psubtle tracking-wide">
-          Yuklanmoqda...
+          {tt('loadingDots')}
         </p>
       </div>
     </div>

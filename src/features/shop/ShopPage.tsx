@@ -34,11 +34,7 @@ import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import MerchSection from './MerchSection'
 import SpinModal from './SpinModal'
-
-/** 2'400 → "2 400" (UZ/RU ikkalasida ham bo'shliqli minglik ajratgich) */
-function fmtCoins(n: number): string {
-  return new Intl.NumberFormat('ru-RU').format(n).replace(/,/g, ' ')
-}
+import { formatCoins as fmtCoins } from '../../shared/lib/format'
 
 export default function ShopPage() {
   const navigate = useNavigate()
@@ -173,7 +169,7 @@ export default function ShopPage() {
           <button
             onClick={() => equip(isEquipped ? null : frame.id)}
             disabled={busy !== null}
-            className="w-full text-[11.5px] font-semibold py-2 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs"
+            className="w-full text-[11.5px] font-semibold min-h-11 py-2 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs"
             style={isEquipped ? {
               background: 'rgb(var(--p-success-rgb) / 0.14)',
               color: 'var(--p-success)',
@@ -188,7 +184,7 @@ export default function ShopPage() {
           <button
             onClick={() => buy(item.id)}
             disabled={busy !== null}
-            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
+            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold min-h-11 py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
             {busy === item.id
               ? <Loader2 size={13} className="animate-spin" />
               : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}
@@ -215,7 +211,7 @@ export default function ShopPage() {
       {celebrate && <Confetti count={40} />}
 
       {/* Header (PageHeader SSOT) */}
-      <PageHeader title={tt('shopTitle')} onBack={() => goBack(navigate)} backLabel="Orqaga" />
+      <PageHeader title={tt('shopTitle')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} />
 
       {/* Balans — ixcham karta (gradient border'siz); hint pastki qatorda */}
       <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
@@ -281,7 +277,7 @@ export default function ShopPage() {
                 <button
                   onClick={() => buy(item.id)}
                   disabled={busy !== null}
-                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
+                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold min-h-11 py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
                   {busy === item.id
                     ? <Loader2 size={13} className="animate-spin" />
                     : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}

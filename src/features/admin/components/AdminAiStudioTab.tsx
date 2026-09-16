@@ -472,7 +472,7 @@ export default function AdminAiStudioTab() {
       </div>
 
       {successMessage && (
-        <div className="p-3.5 rounded-2xl bg-psuccess/10 border border-psuccess/30 text-psuccess text-xs font-semibold flex items-center gap-2 shadow-sm animate-premiumIn">
+        <div className="p-3.5 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.1)] border border-[rgb(var(--p-success-rgb)/0.3)] text-psuccess text-xs font-semibold flex items-center gap-2 shadow-sm animate-premiumIn">
           <CheckCircle2 size={18} className="flex-none" />
           <span>{successMessage}</span>
         </div>
@@ -523,7 +523,7 @@ export default function AdminAiStudioTab() {
                   {/* Card Top */}
                   <div className="flex items-center justify-between border-b border-pline pb-2.5">
                     <div className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-lg bg-ppurple/15 text-ppurple text-xs font-semibold flex items-center justify-center">
+                      <span className="w-6 h-6 rounded-lg bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple text-xs font-semibold flex items-center justify-center">
                         {qIndex + 1}
                       </span>
                       <span className="text-xs font-semibold text-pfg">Savol #{qIndex + 1}</span>
@@ -532,7 +532,7 @@ export default function AdminAiStudioTab() {
                     <button
                       type="button"
                       onClick={() => handleDeleteQuestion(q.id)}
-                      className="text-pmuted hover:text-pdanger p-1 rounded-lg hover:bg-pdanger/10 transition-colors"
+                      className="text-pmuted hover:text-pdanger p-1 rounded-lg hover:bg-[rgb(var(--p-danger-rgb)/0.1)] transition-colors"
                       title="Savolni o'chirish"
                     >
                       <Trash2 size={16} />
@@ -568,7 +568,7 @@ export default function AdminAiStudioTab() {
                           <div
                             key={opt.id}
                             className={`flex items-center gap-2 p-2 rounded-xl border transition-all ${
-                              isCorrect ? 'bg-psuccess/10 border-psuccess/40' : 'bg-card border-pline'
+                              isCorrect ? 'bg-[rgb(var(--p-success-rgb)/0.1)] border-[rgb(var(--p-success-rgb)/0.4)]' : 'bg-card border-pline'
                             }`}
                           >
                             <input
@@ -587,7 +587,7 @@ export default function AdminAiStudioTab() {
                               className="flex-1 bg-transparent border-0 text-xs text-pfg focus:outline-none"
                             />
                             {isCorrect && (
-                              <span className="flex items-center gap-0.5 text-[10px] font-semibold text-psuccess bg-psuccess/20 px-1.5 py-0.5 rounded-md flex-none">
+                              <span className="flex items-center gap-0.5 text-[10px] font-semibold text-psuccess bg-[rgb(var(--p-success-rgb)/0.2)] px-1.5 py-0.5 rounded-md flex-none">
                                 <Check size={10} strokeWidth={2} />
                                 To'g'ri
                               </span>

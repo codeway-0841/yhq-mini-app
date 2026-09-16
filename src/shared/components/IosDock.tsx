@@ -15,8 +15,10 @@ import { haptics } from '../../platform/haptics'
  * (`hidesBottomBarWhenPushed`). Ichki sahifalarda orqaga qaytish —
  * PageHeader'dagi back tugma orqali (2026-09-15 "har joyda nav" fix:
  * eski HIDDEN_PREFIXES denylist o'rniga allowlist).
+ * `/ai-tutor` ham ro'yxatda: dock'ning markaz tugmasi shu sahifaga olib boradi —
+ * bossangiz dock g'oyib bo'lmasligi kerak (2026-09-16 Wave 2).
  */
-export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
+export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar', '/ai-tutor'] as const
 export function isTabRootRoute(pathname: string): boolean {
   return (TAB_ROOT_PATHS as readonly string[]).includes(pathname)
 }
@@ -94,14 +96,14 @@ export default function IosDock() {
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-transform duration-300 ease-out lg:hidden ${/* safe-bottom */ ''}${
-        isVisible ? 'translate-y-0 pointer-events-auto' : 'translate-y-full pointer-events-none'
+      className={`fixed inset-x-0 bottom-0 z-40 w-full transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${/* safe-bottom */ ''}${
+        isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-full opacity-0 pointer-events-none'
       }`}
     >
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="w-full bg-pcard/95 backdrop-blur-xl border-t border-pline shadow-[0_-4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)] pb-[calc(0.35rem+var(--safe-bottom,0px))] pt-1.5"
+        className="w-full bg-[rgb(var(--p-card-rgb)/0.95)] backdrop-blur-xl border-t border-pline shadow-[0_-4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)] pb-[calc(0.35rem+var(--safe-bottom,0px))] pt-1.5"
       >
         <div className="mx-auto flex max-w-lg items-end justify-around px-2">
           {navItems.map((item) => {
@@ -117,7 +119,7 @@ export default function IosDock() {
                     type="button"
                     onClick={() => handleNav(item)}
                     aria-label={item.shortLabel[lang]}
-                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-pprimary/35 transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
+                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg [--tw-shadow-color:rgb(var(--p-primary-rgb)/0.35)] transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
                   >
                     <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
                   </button>
@@ -135,7 +137,7 @@ export default function IosDock() {
                 onClick={() => handleNav(item)}
                 aria-label={tt(item.labelKey)}
                 aria-current={isActive ? 'page' : undefined}
-                className={`flex-1 flex flex-col items-center justify-center min-w-0 py-1 transition-all duration-150 active:scale-90 ${
+                className={`flex-1 flex flex-col items-center justify-center min-w-0 py-1 rounded-xl transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
                   isActive ? 'text-pprimary font-semibold' : 'text-pmuted hover:text-pfg'
                 }`}
               >

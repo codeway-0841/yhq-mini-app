@@ -3,6 +3,7 @@ import { Users, Activity, HelpCircle, CheckCircle2, Ticket, RotateCw, Loader2, T
 import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminStats } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
+import { formatCoins } from '../../../shared/lib/format'
 
 export default function AdminStatsTab() {
   const [stats, setStats] = useState<AdminStats | null>(null)
@@ -43,50 +44,50 @@ export default function AdminStatsTab() {
   const items = [
     {
       title: "Jami foydalanuvchilar",
-      value: stats?.totalUsers.toLocaleString() ?? '0',
+      value: formatCoins(stats?.totalUsers ?? 0) ?? '0',
       icon: Users,
       color: 'text-pblue',
-      bg: 'bg-pblue/15 border-pblue/30',
+      bg: 'bg-[rgb(var(--p-blue-rgb)/0.15)] border-[rgb(var(--p-blue-rgb)/0.3)]',
       desc: "Ro'yxatdan o'tganlar",
     },
     {
       title: "Premium a'zolar",
-      value: stats?.premiumUsers.toLocaleString() ?? '0',
+      value: formatCoins(stats?.premiumUsers ?? 0) ?? '0',
       icon: PremiumIcon,
       color: 'text-ppurple',
-      bg: 'bg-ppurple/15 border-ppurple/30',
+      bg: 'bg-[rgb(var(--p-purple-rgb)/0.15)] border-[rgb(var(--p-purple-rgb)/0.3)]',
       desc: "Faol obunalar",
     },
     {
       title: "Bugun faol (DAU)",
-      value: stats?.todayActiveUsers.toLocaleString() ?? '0',
+      value: formatCoins(stats?.todayActiveUsers ?? 0) ?? '0',
       icon: Activity,
       color: 'text-pprimary',
-      bg: 'bg-pprimary/15 border-pprimary/30',
+      bg: 'bg-[rgb(var(--p-primary-rgb)/0.15)] border-[rgb(var(--p-primary-rgb)/0.3)]',
       desc: "Bugun test yechganlar",
     },
     {
       title: "Savollar bazasi",
-      value: stats?.totalQuestions.toLocaleString() ?? '0',
+      value: formatCoins(stats?.totalQuestions ?? 0) ?? '0',
       icon: HelpCircle,
       color: 'text-pwarning',
-      bg: 'bg-pwarning/15 border-pwarning/30',
+      bg: 'bg-[rgb(var(--p-warning-rgb)/0.15)] border-[rgb(var(--p-warning-rgb)/0.3)]',
       desc: "Test savollari",
     },
     {
       title: "Yechilgan testlar",
-      value: stats?.totalAnswered.toLocaleString() ?? '0',
+      value: formatCoins(stats?.totalAnswered ?? 0) ?? '0',
       icon: CheckCircle2,
       color: 'text-pprimary',
-      bg: 'bg-pprimary/15 border-pprimary/30',
+      bg: 'bg-[rgb(var(--p-primary-rgb)/0.15)] border-[rgb(var(--p-primary-rgb)/0.3)]',
       desc: "Jami javoblar",
     },
     {
       title: "Promokodlar",
-      value: stats?.totalPromoCodes.toLocaleString() ?? '0',
+      value: formatCoins(stats?.totalPromoCodes ?? 0) ?? '0',
       icon: Ticket,
       color: 'text-ppurple',
-      bg: 'bg-ppurple/15 border-ppurple/30',
+      bg: 'bg-[rgb(var(--p-purple-rgb)/0.15)] border-[rgb(var(--p-purple-rgb)/0.3)]',
       desc: "Barcha aksiyalar",
     },
   ]

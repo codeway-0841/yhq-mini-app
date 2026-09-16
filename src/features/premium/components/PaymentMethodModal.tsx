@@ -4,6 +4,7 @@ import { type PremiumPlan, formatUzs } from '../../../../shared/premium-plans'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { openTelegramLink } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
@@ -133,7 +134,7 @@ export default function PaymentMethodModal({
 
   const handlePayWithStars = () => {
     track('premium_stars_click', { plan: plan.key })
-    openTelegramLink(`https://t.me/kiwi_uz_bot?start=premium_${plan.key}`)
+    openTelegramLink(`https://t.me/${config.botUsername}?start=premium_${plan.key}`)
     onClose()
   }
 
@@ -148,7 +149,7 @@ export default function PaymentMethodModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-2xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
+        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -178,7 +179,7 @@ export default function PaymentMethodModal({
         {/* Success View */}
         {isSuccess ? (
           <div className="py-8 text-center space-y-4">
-            <div className="w-16 h-16 rounded-full bg-psuccess/15 text-psuccess mx-auto flex items-center justify-center animate-bounce">
+            <div className="w-16 h-16 rounded-full bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess mx-auto flex items-center justify-center animate-bounce">
               <CheckCircle2 size={36} />
             </div>
             <div>
@@ -219,7 +220,7 @@ export default function PaymentMethodModal({
 
             {/* Waiting for payment indicator */}
             {isWaitingPayment && (
-              <div className="p-3.5 rounded-2xl bg-pblue/10 flex items-center gap-3 shadow-xs">
+              <div className="p-3.5 rounded-2xl bg-[rgb(var(--p-blue-rgb)/0.1)] flex items-center gap-3 shadow-xs">
                 <Loader2 size={20} className="text-pblue animate-spin flex-shrink-0" />
                 <div className="text-xs leading-tight">
                   <p className="font-semibold text-pblue">
@@ -235,7 +236,7 @@ export default function PaymentMethodModal({
             )}
 
             {errorMsg && (
-              <div className="p-3.5 rounded-2xl bg-pdanger/10 text-pdanger text-xs flex items-center gap-2 shadow-xs">
+              <div className="p-3.5 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger text-xs flex items-center gap-2 shadow-xs">
                 <AlertCircle size={16} className="flex-shrink-0" />
                 <span>{errorMsg}</span>
               </div>
@@ -254,7 +255,7 @@ export default function PaymentMethodModal({
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-semibold text-pfg">Click</span>
-                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-psuccess/15 text-psuccess">
+                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess">
                       Humo / Uzcard
                     </span>
                   </div>

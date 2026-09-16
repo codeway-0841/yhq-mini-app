@@ -101,7 +101,7 @@ export default function DesktopSidebar() {
   return (
     <aside
       aria-label="Desktop navigatsiya"
-      className="desktop-sidebar hidden w-64 shrink-0 flex-col border-r border-pline bg-pcard/60 backdrop-blur-xl lg:flex xl:w-72 sticky top-[var(--safe-top,0px)] h-[calc(100dvh-var(--safe-top-body,0px))] max-h-[calc(100dvh-var(--safe-top-body,0px))]"
+      className="desktop-sidebar hidden w-64 shrink-0 flex-col border-r border-pline bg-[rgb(var(--p-card-rgb)/0.6)] backdrop-blur-xl lg:flex xl:w-72 sticky top-[var(--safe-top,0px)] h-[calc(100dvh-var(--safe-top-body,0px))] max-h-[calc(100dvh-var(--safe-top-body,0px))]"
     >
       <div className="flex items-center gap-2.5 px-5 pb-4 pt-6">
         <span aria-hidden="true" className="grid size-9 place-items-center rounded-xl bg-pprimary text-lg font-bold text-ponprimary shadow-xs">

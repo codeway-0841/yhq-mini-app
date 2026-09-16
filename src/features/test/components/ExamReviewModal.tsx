@@ -84,13 +84,13 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
         </div>
 
         {/* Filter Tabs */}
-        <div className="p-3 border-b border-pline flex gap-2 bg-pcanvas/40">
+        <div className="p-3 border-b border-pline flex gap-2 bg-[rgb(var(--p-canvas-rgb)/0.4)]">
           <button
             type="button"
             onClick={() => setFilter('mistakes')}
             className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
               filter === 'mistakes'
-                ? 'bg-pdanger/15 text-pdanger shadow-xs'
+                ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger shadow-xs'
                 : 'text-pmuted hover:bg-psurface'
             }`}
           >
@@ -101,7 +101,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
             onClick={() => setFilter('all')}
             className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
               filter === 'all'
-                ? 'bg-pprimary/15 text-pprimary shadow-xs'
+                ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary shadow-xs'
                 : 'text-pmuted hover:bg-psurface'
             }`}
           >
@@ -113,7 +113,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {displayedItems.length === 0 ? (
             <div className="text-center py-12 px-4">
-              <div className="w-14 h-14 rounded-2xl bg-pprimary/15 flex items-center justify-center mx-auto mb-3 text-pprimary">
+              <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center mx-auto mb-3 text-pprimary">
                 <CheckCircle2 size={30} />
               </div>
               <p className="text-sm font-semibold text-pfg">
@@ -130,11 +130,11 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                   key={q.id}
                   className={`rounded-2xl p-4 bg-pcard shadow-xs transition-all ${
                     item.status === 'correct'
-                      ? 'ring-1 ring-pprimary/30'
+                      ? 'ring-1 ring-[rgb(var(--p-primary-rgb)/0.3)]'
                       : item.status === 'incorrect'
-                      ? 'ring-1 ring-pdanger/40 bg-pdanger/[0.02]'
+                      ? 'ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)] bg-pdanger/[0.02]'
                       : item.status === 'pending'
-                      ? 'ring-1 ring-pblue/40 bg-pblue/[0.02]'
+                      ? 'ring-1 ring-[rgb(var(--p-blue-rgb)/0.4)] bg-pblue/[0.02]'
                       : ''
                   }`}
                 >
@@ -177,32 +177,32 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
                       const isUserChoice = item.selectedOptionId === opt.id
                       const isCorrect = item.correctOptionId === opt.id
 
-                      let borderStyle = 'bg-psurface/40 text-pfg shadow-2xs'
+                      let borderStyle = 'bg-[rgb(var(--p-surface-rgb)/0.4)] text-pfg shadow-2xs'
                       let badge = null
 
                       if (isCorrect) {
-                        borderStyle = 'ring-1 ring-pprimary/60 bg-pprimary/15 text-pfg font-semibold shadow-2xs'
+                        borderStyle = 'ring-1 ring-[rgb(var(--p-primary-rgb)/0.6)] bg-[rgb(var(--p-primary-rgb)/0.15)] text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pprimary flex items-center gap-1 ml-auto flex-shrink-0">
                             <Check size={12} /> {tt('correctAnswerLabel')}
                           </span>
                         )
                       } else if (isUserChoice && item.status === 'incorrect') {
-                        borderStyle = 'ring-1 ring-pdanger/60 bg-pdanger/15 text-pfg font-semibold shadow-2xs'
+                        borderStyle = 'ring-1 ring-[rgb(var(--p-danger-rgb)/0.6)] bg-[rgb(var(--p-danger-rgb)/0.15)] text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pdanger flex items-center gap-1 ml-auto flex-shrink-0">
                             <X size={12} /> {tt('yourAnswer')}
                           </span>
                         )
                       } else if (isUserChoice && item.status === 'pending') {
-                        borderStyle = 'ring-1 ring-pblue/60 bg-pblue/15 text-pfg font-semibold shadow-2xs'
+                        borderStyle = 'ring-1 ring-[rgb(var(--p-blue-rgb)/0.6)] bg-[rgb(var(--p-blue-rgb)/0.15)] text-pfg font-semibold shadow-2xs'
                         badge = (
                           <span className="text-[10px] font-semibold text-pblue flex items-center gap-1 ml-auto flex-shrink-0">
                             <Clock size={12} /> {language === 'ru' ? 'Ожидает сети' : 'Tarmoq kutilmoqda'}
                           </span>
                         )
                       } else if (isUserChoice) {
-                        borderStyle = 'ring-1 ring-pprimary/40 bg-psurface text-pfg shadow-2xs'
+                        borderStyle = 'ring-1 ring-[rgb(var(--p-primary-rgb)/0.4)] bg-psurface text-pfg shadow-2xs'
                       }
 
                       return (

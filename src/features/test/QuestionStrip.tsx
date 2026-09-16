@@ -44,7 +44,7 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
         return (
           <button key={i} onClick={() => onSelect(i)}
             aria-current={isCurrent ? 'true' : undefined}
-            className={`flex-none w-9 h-9 rounded-xl text-[13px] font-semibold transition-all ${cls}`}>
+            className={`flex-none w-11 h-11 rounded-xl text-[13px] font-semibold transition-all ${cls}`}>
             {i + 1}
           </button>
         )

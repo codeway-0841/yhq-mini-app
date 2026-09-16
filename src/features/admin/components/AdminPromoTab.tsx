@@ -149,7 +149,7 @@ export default function AdminPromoTab() {
         </div>
       ) : codes.length === 0 ? (
         <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
-          <Ticket size={36} className="mx-auto text-pmuted/50 mb-2" />
+          <Ticket size={36} className="mx-auto text-[rgb(var(--p-muted-rgb)/0.5)] mb-2" />
           <p className="text-sm font-semibold text-pfg">Promokodlar hali mavjud emas</p>
           <p className="text-xs text-psubtle mt-1 mb-4">Birinchi promokodni yarating</p>
           <button
@@ -166,7 +166,7 @@ export default function AdminPromoTab() {
             const isLimitFull = c.maxUses !== null && c.usedCount >= c.maxUses
 
             let statusBadge = (
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-pprimary/15 text-pprimary border border-pprimary/30">
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary border border-[rgb(var(--p-primary-rgb)/0.3)]">
                 Faol
               </span>
             )
@@ -179,13 +179,13 @@ export default function AdminPromoTab() {
               )
             } else if (isExpired) {
               statusBadge = (
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-pdanger/15 text-pdanger border border-pdanger/30">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger border border-[rgb(var(--p-danger-rgb)/0.3)]">
                   Muddati o'tgan
                 </span>
               )
             } else if (isLimitFull) {
               statusBadge = (
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-pwarning/15 text-pwarning border border-pwarning/30">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning border border-[rgb(var(--p-warning-rgb)/0.3)]">
                   Limit to'lgan
                 </span>
               )
@@ -195,7 +195,7 @@ export default function AdminPromoTab() {
               <div
                 key={c.id}
                 className={`rounded-2xl bg-pcard p-4 shadow-xs transition-all ${
-                  !c.isActive ? 'opacity-60 bg-psurface/50' : ''
+                  !c.isActive ? 'opacity-60 bg-[rgb(var(--p-surface-rgb)/0.5)]' : ''
                 }`}
               >
                 <div className="flex items-start justify-between gap-3 mb-2">
@@ -251,7 +251,7 @@ export default function AdminPromoTab() {
                     className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1 border transition-colors ${
                       c.isActive
                         ? 'border-pline text-pmuted hover:text-pfg'
-                        : 'border-pprimary/40 text-pprimary bg-pprimary/10'
+                        : 'border-[rgb(var(--p-primary-rgb)/0.4)] text-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)]'
                     }`}
                   >
                     <Power size={13} />
@@ -296,7 +296,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('premium_days')}
-                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'premium_days'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -307,7 +307,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('discount_percent')}
-                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'discount_percent'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -465,7 +465,7 @@ export default function AdminPromoTab() {
               </div>
 
               {formError && (
-                <div className="flex items-center gap-2 p-2.5 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger text-xs">
+                <div className="flex items-center gap-2 p-2.5 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger text-xs">
                   <AlertCircle size={14} className="flex-shrink-0" />
                   <span>{formError}</span>
                 </div>

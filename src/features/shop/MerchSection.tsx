@@ -13,6 +13,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import MerchOrderModal from './MerchOrderModal'
+import { formatCoins } from '../../shared/lib/format'
 
 export default function MerchSection({ onCelebration }: { onCelebration?: () => void }) {
   const lang = useAppStore((s) => s.settings.language)
@@ -76,7 +77,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
                     onClick={() => { playSound('click'); setOrderItem(item) }}
                     className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-psurface text-[11.5px] font-semibold text-pfg active:scale-[0.96] transition-transform shadow-xs">
                     <CoinIcon size={14} className="text-pgold" />
-                    {item.price.toLocaleString('ru-RU')}
+                    {formatCoins(item.price)}
                   </button>
                 )}
               </div>
@@ -95,7 +96,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
 
       {/* Muvaffaqiyat holati */}
       {ordered && (
-        <div className="mx-5 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-psuccess/15 shadow-xs">
+        <div className="mx-5 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-[rgb(var(--p-success-rgb)/0.15)] shadow-xs">
           <p className="flex items-center justify-center gap-1.5 text-[13.5px] font-semibold text-psuccess">
             <Check size={15} strokeWidth={2} /> {tt('merchOrdered')}
           </p>

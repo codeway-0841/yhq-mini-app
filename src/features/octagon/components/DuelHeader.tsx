@@ -3,8 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../../shared/lib/navigation'
 
 /** Yuqori panel — orqaga tugma, sarlavha, raund paytida hisob. */
-export function DuelHeader({ title, inRound, yourScore, oppScore, onBack }: {
+export function DuelHeader({ title, backLabel, inRound, yourScore, oppScore, onBack }: {
   title: string
+  backLabel: string
   inRound: boolean
   yourScore: number
   oppScore: number
@@ -14,7 +15,7 @@ export function DuelHeader({ title, inRound, yourScore, oppScore, onBack }: {
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
       <div className="flex items-center justify-between px-4 py-1">
-        <button onClick={onBack ?? (() => goBack(navigate))} aria-label="Orqaga" className="text-pmuted size-11 rounded-full flex items-center justify-center hover:bg-psurface hover:text-pfg transition-colors"><ChevronLeft size={22} /></button>
+        <button onClick={onBack ?? (() => goBack(navigate))} aria-label={backLabel} className="text-pmuted size-11 rounded-full flex items-center justify-center hover:bg-psurface hover:text-pfg transition-colors"><ChevronLeft size={22} /></button>
         <div className="flex items-center gap-2">
           <Sword size={16} className="text-pmuted" />
           <span className="text-sm font-bold text-pfg">{title}</span>
