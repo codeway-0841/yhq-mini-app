@@ -135,7 +135,7 @@ export default function IosDock() {
                 onClick={() => handleNav(item)}
                 aria-label={tt(item.labelKey)}
                 aria-current={isActive ? 'page' : undefined}
-                className={`flex-1 flex flex-col items-center justify-center min-w-0 py-1 transition-all duration-150 active:scale-90 ${
+                className={`flex-1 flex flex-col items-center justify-center min-w-0 py-1 rounded-xl transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
                   isActive ? 'text-pprimary font-semibold' : 'text-pmuted hover:text-pfg'
                 }`}
               >

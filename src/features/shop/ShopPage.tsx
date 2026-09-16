@@ -34,11 +34,7 @@ import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import MerchSection from './MerchSection'
 import SpinModal from './SpinModal'
-
-/** 2'400 → "2 400" (UZ/RU ikkalasida ham bo'shliqli minglik ajratgich) */
-function fmtCoins(n: number): string {
-  return new Intl.NumberFormat('ru-RU').format(n).replace(/,/g, ' ')
-}
+import { formatCoins as fmtCoins } from '../../shared/lib/format'
 
 export default function ShopPage() {
   const navigate = useNavigate()

@@ -19,6 +19,7 @@ import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import { t } from '../../../shared/i18n'
 
 interface AdminQuestionsTabProps {
   lang: 'uz' | 'ru'
@@ -136,7 +137,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           <button
             onClick={refresh}
             disabled={busy}
-            className="p-2.5 rounded-2xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-transform shadow-xs"
+            className="grid size-10 place-items-center rounded-2xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-transform shadow-xs"
             title="Yangilash"
           >
             <RotateCw size={14} className={busy ? 'motion-safe:animate-spin text-ppurple' : ''} />
@@ -354,7 +355,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       {deleteConfirm && (
         <DialogOverlay onClose={() => setConfirm(null)} backdropClassName="bg-black/60 backdrop-blur-sm" labelId="delete-question-title">
           <div
-            className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-5 pb-8"
+            className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
@@ -525,7 +526,7 @@ function QuestionForm({
   return (
     <DialogOverlay onClose={onCancel} labelId="question-editor-title">
       <div
-        className="relative w-full bg-psurface rounded-t-sheet border-t border-pline p-4 pb-8 max-h-[90vh] overflow-y-auto"
+        className="relative w-full bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3" />
@@ -534,7 +535,7 @@ function QuestionForm({
             <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
             <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>
           </div>
-          <button onClick={onCancel} className="p-1.5"><X size={18} /></button>
+          <button onClick={onCancel} aria-label={t(lang, 'close')} className="grid size-11 shrink-0 place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors"><X size={18} /></button>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-3">
@@ -641,7 +642,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
+                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -649,7 +650,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
+                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />

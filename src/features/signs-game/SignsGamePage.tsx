@@ -14,6 +14,8 @@ import { buildSpeedRounds, buildMatchPairs, type SpeedRound, type MatchTile } fr
 import SignIcon from './SignIcon'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
+import { Dialog, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '../../shared/components/ui/dialog'
+import { Button } from '../../shared/components/ui/button'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -240,27 +242,22 @@ function MatchGame({ onExit }: { onExit: () => void }) {
       </div>
 
       {doneMs !== null && (
-        <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={onExit}>
-          <div className="bg-pcard rounded-3xl p-6 mx-6 text-center animate-premiumIn shadow-2xl"
-            onClick={(e) => e.stopPropagation()}>
+        <Dialog open onClose={onExit}>
+          <DialogHeader className="items-center text-center">
             <Trophy size={40} className="text-pgold mx-auto" fill="currentColor" />
-            <p className="text-[16px] font-black mt-3">{tt('signsGameWin')}</p>
-            <p className="text-[12.5px] text-pmuted mt-1.5">
+            <DialogTitle>{tt('signsGameWin')}</DialogTitle>
+            <DialogDescription className="text-center">
               {fmtMs(doneMs)} · {attempts} {tt('signsGameAttempts').toLowerCase()}
               {best !== null && ` · ${tt('signsGameBest')}: ${fmtMs(Math.min(best, doneMs))}`}
-            </p>
-            <div className="flex gap-2.5 mt-5">
-              <button onClick={startNew}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-all flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-black flex items-center justify-center gap-1.5 shadow-xs">
-                <RotateCcw size={14} /> {tt('signsGamePlayAgain')}
-              </button>
-              <button onClick={onExit}
-                className="flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-black bg-psurface text-pmuted hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
-                {tt('signsGameBack')}
-              </button>
-            </div>
-          </div>
-        </div>
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="secondary" block onClick={onExit}>{tt('signsGameBack')}</Button>
+            <Button block onClick={startNew}>
+              <RotateCcw size={14} /> {tt('signsGamePlayAgain')}
+            </Button>
+          </DialogFooter>
+        </Dialog>
       )}
     </div>
   )
@@ -281,7 +278,7 @@ export default function SignsGamePage() {
       <PageHeader
         title={tt('signsGameTitle')}
         onBack={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))}
-        backLabel="Orqaga"
+        backLabel={tt('backWord')}
         className="mb-5"
       />
 

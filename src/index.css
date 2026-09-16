@@ -1272,6 +1272,23 @@ body[data-no-animation='true'] .animate-scorePop {
   animation: shake 0.4s ease-in-out 3;
 }
 
+/* ── Reduced-motion GLOBAL GUARD (Wave 2, 2026-09-16) ─────────────────────
+   Harakatga sezgir userlarda (prefers-reduced-motion) BARCHA dekorativ/
+   takroriy animatsiya o'chadi — bitta markaziy ro'yxat, har animatsiyaga
+   alohida media query yozilmaydi. `body[data-no-animation]` (ilova sozlamasi)
+   alohida hurmat qilinadi — bu faqat OS darajadagi sozlama.
+   Istisno: yuklanish spinnerlari statik qoladi (kontekst orqali tushunarli). */
+@media (prefers-reduced-motion: reduce) {
+  .animate-shimmer, .shimmer::after,
+  .animate-fadeIn, .splash-float, .splash-float-safe, .onboarding-float,
+  .animate-flyUp, .animate-wiggle, .coin-pop,
+  .animate-premiumIn, .animate-correctPop, .animate-scorePop, .animate-shake,
+  .animate-dynamic-island-expand, .dashboard-menu-action,
+  .animate-spin, .animate-pulse, .animate-bounce {
+    animation: none !important;
+  }
+}
+
 /* ═══ GLOBAL DESIGN SYSTEM STANDARDS (Apple HIG / Borderless Modern) ═════════
    Kelajakda har qanday yangi komponent, sahifa yoki modal qo'shilganda
    faqat shu standart sinflardan yoki @/shared/components/ui primitivlaridan

@@ -377,7 +377,7 @@ export default function SocraticChatSheet({
               type="submit"
               disabled={!inputText.trim() || isStreaming}
               className="size-10 rounded-2xl bg-pprimary text-white grid place-items-center disabled:opacity-40 disabled:cursor-not-allowed hover:opacity-90 active:scale-95 transition-all shadow-xs"
-              aria-label="Yuborish"
+              aria-label={tt('socraticSend')}
             >
               <Send size={17} strokeWidth={1.75} />
             </button>

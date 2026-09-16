@@ -13,6 +13,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import MerchOrderModal from './MerchOrderModal'
+import { formatCoins } from '../../shared/lib/format'
 
 export default function MerchSection({ onCelebration }: { onCelebration?: () => void }) {
   const lang = useAppStore((s) => s.settings.language)
@@ -76,7 +77,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
                     onClick={() => { playSound('click'); setOrderItem(item) }}
                     className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-psurface text-[11.5px] font-semibold text-pfg active:scale-[0.96] transition-transform shadow-xs">
                     <CoinIcon size={14} className="text-pgold" />
-                    {item.price.toLocaleString('ru-RU')}
+                    {formatCoins(item.price)}
                   </button>
                 )}
               </div>

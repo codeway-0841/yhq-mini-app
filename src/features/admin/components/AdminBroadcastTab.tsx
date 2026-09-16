@@ -478,7 +478,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="p-2 rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
+                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -486,7 +486,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
+                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -639,7 +639,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               <span className="text-[10px] text-pprimary block">Yetib bordi</span>
               <span className="font-semibold text-pprimary">{result.sent}</span>
             </div>
-            <div className="p-2 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)]">
+            <div className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)]">
               <span className="text-[10px] text-pdanger block">Bloklangan</span>
               <span className="font-semibold text-pdanger">{result.blocked}</span>
             </div>

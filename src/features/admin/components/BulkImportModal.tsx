@@ -396,7 +396,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('all')}
-                    className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold transition-all ${
+                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold transition-all ${
                       filterTab === 'all'
                         ? 'bg-fg text-bg'
                         : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
@@ -407,7 +407,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('valid')}
-                    className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                       filterTab === 'valid'
                         ? 'bg-pprimary text-ponprimary'
                         : 'bg-[rgb(var(--p-primary-rgb)/0.1)] border border-[rgb(var(--p-primary-rgb)/0.3)] text-pprimary'
@@ -419,7 +419,7 @@ export default function BulkImportModal({
                     <button
                       type="button"
                       onClick={() => setFilterTab('invalid')}
-                      className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                      className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                         filterTab === 'invalid'
                           ? 'bg-pdanger text-white'
                           : 'bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger'
@@ -610,7 +610,7 @@ export default function BulkImportModal({
 
             <button
               onClick={() => saveEditedItem(editingItem)}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 rounded-xl text-xs font-semibold"
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-2.5 min-h-11 rounded-xl text-xs font-semibold"
             >
               Saqlash
             </button>

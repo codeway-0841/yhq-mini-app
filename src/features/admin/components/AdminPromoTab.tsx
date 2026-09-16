@@ -296,7 +296,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('premium_days')}
-                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'premium_days'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -307,7 +307,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('discount_percent')}
-                    className={`py-2.5 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
                       promoType === 'discount_percent'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
