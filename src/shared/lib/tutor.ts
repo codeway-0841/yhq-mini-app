@@ -58,11 +58,9 @@ export class TutorError extends Error {
   }
 }
 
-/** SSE stream'dan matn qismlarini o'qiydigan generator */
-export async function* explainQuestion(
-  questionId: number,
-  lang: 'uz' | 'ru',
-  answeredCorrect = false,
+/** SSE stream core (body variantli — master ID yoki sessiya-pozitsiya) */
+async function* streamExplain(
+  body: Record<string, unknown>,
   signal?: AbortSignal,
 ): AsyncGenerator<string, void, void> {
   if (signal?.aborted) return
@@ -75,7 +73,7 @@ export async function* explainQuestion(
   const res = await fetch(`${config.apiBaseUrl}/tutor/explain`, {
     method: 'POST',
     headers,
-    body: JSON.stringify({ questionId, lang, answeredCorrect }),
+    body: JSON.stringify(body),
     signal,
   })
 
@@ -117,6 +115,28 @@ export async function* explainQuestion(
       reader.releaseLock()
     } catch { /* ignore */ }
   }
+}
+
+export async function* explainQuestion(
+  questionId: number,
+  lang: 'uz' | 'ru',
+  answeredCorrect = false,
+  signal?: AbortSignal,
+): AsyncGenerator<string, void, void> {
+  yield* streamExplain({ questionId, lang, answeredCorrect }, signal)
+}
+
+/**
+ * V2 sessiya-pozitsiya varianti (master ID client'ga chiqmaydi —
+ * server session row'dan resolve qiladi).
+ */
+export async function* explainSessionQuestion(
+  session: { sessionId: string; position: number; deliveryToken: string; expiresAt: string },
+  lang: 'uz' | 'ru',
+  answeredCorrect = false,
+  signal?: AbortSignal,
+): AsyncGenerator<string, void, void> {
+  yield* streamExplain({ sessionPosition: session, lang, answeredCorrect }, signal)
 }
 
 /** Sokratik dialog generatori (ko'p bosqichli suhbat) */

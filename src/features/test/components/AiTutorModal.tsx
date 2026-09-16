@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { Loader2, GraduationCap, Info, Volume2 } from 'lucide-react'
 import { PremiumIcon } from '../../../shared/components/PremiumIcon'
-import { explainQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
+import { explainQuestion, explainSessionQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
+import { api } from '../../../shared/api'
 import { openTelegramLink } from '../../../platform/telegram'
 import { speak } from '../../../shared/lib/speech'
 import { playSound } from '../../../shared/lib/sounds'
@@ -9,8 +10,21 @@ import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 
+export interface AiTutorSessionRef {
+  sessionId: string
+  position: number
+  deliveryToken: string
+  expiresAt: string
+}
+
 interface AiTutorModalProps {
-  questionId: number
+  /** Legacy master ID (V2'da YO'Q — sessionRef ishlatiladi) */
+  questionId?: number
+  /**
+   * V2 sessiya-pozitsiya (master ID client'ga chiqmaydi — server resolve qiladi).
+   * questionId O'RNIGA beriladi (ikkisi bir vaqtda bo'lmaydi).
+   */
+  sessionRef?: AiTutorSessionRef
   selectedOptionId: string | null
   isCorrect: boolean
   onClose: () => void
@@ -23,6 +37,7 @@ const aiExplanationCache = new Map<string, string>()
 
 export default function AiTutorModal({
   questionId,
+  sessionRef,
   selectedOptionId,
   isCorrect,
   onClose,
@@ -53,8 +68,8 @@ export default function AiTutorModal({
     const abortController = new AbortController()
     abortControllerRef.current = abortController
 
-    // Cache key: questionId + correctness + language (ID 17)
-    const cacheKey = `${questionId}:${isCorrect ? '1' : '0'}:${language}`
+    // Cache key: questionId (legacy) yoki session:position (V2) + correctness + language (ID 17)
+    const cacheKey = `${sessionRef ? `${sessionRef.sessionId}:${sessionRef.position}` : `q:${questionId}`}:${isCorrect ? '1' : '0'}:${language}`
     const cached = aiExplanationCache.get(cacheKey)
     if (cached) {
       setAiText(cached)
@@ -65,8 +80,14 @@ export default function AiTutorModal({
     setAiText('')
 
     try {
+      const stream = sessionRef
+        ? explainSessionQuestion(sessionRef, language, isCorrect, abortController.signal)
+        : questionId != null
+          ? explainQuestion(questionId, language, isCorrect, abortController.signal)
+          : null
+      if (!stream) return
       let acc = ''
-      for await (const chunk of explainQuestion(questionId, language, isCorrect, abortController.signal)) {
+      for await (const chunk of stream) {
         if (abortController.signal.aborted) return
         acc += chunk
         setAiText(acc)
@@ -94,13 +115,17 @@ export default function AiTutorModal({
         setAiBusy(false)
       }
     }
-  }, [questionId, userId, selectedOptionId, isCorrect, language, tt])
+  }, [questionId, sessionRef, userId, selectedOptionId, isCorrect, language, tt])
 
   /** AI modal ochish — Premium yo'q bo'lsa statik yoki upsell */
   const openAi = useCallback(async () => {
     if (!isPremium) {
       try {
-        const text = await fetchStaticExplanation(questionId, language)
+        const text = sessionRef
+          ? (await api.getSessionExplanation(sessionRef.sessionId, { ...sessionRef, language })).text
+          : questionId != null
+            ? await fetchStaticExplanation(questionId, language)
+            : null
         if (text) {
           setStaticText(text)
           setShowStatic(true)
@@ -115,7 +140,7 @@ export default function AiTutorModal({
     }
     setShowAi(true)
     void startAiExplain()
-  }, [isPremium, questionId, language, startAiExplain])
+  }, [isPremium, questionId, sessionRef, language, startAiExplain])
 
   /** Ovozli o'qish (TTS) */
   const speakExplanation = useCallback(

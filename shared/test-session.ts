@@ -98,6 +98,19 @@ export const FinishTestSessionSchema = z.object({
 })
 
 /**
+ * Sessiya-pozitsiya proof — client master question ID bilmaydi (himoya),
+ * shuning uchun saqlash/izoh/AI kabi pozitsiyaga bog'liq amallar shu
+ * proof bilan murojaat qiladi. Server session row'dan master ID'ni o'zi
+ * resolve qiladi; `position > issuedThrough` bo'lsa rad etiladi
+ * (kelajak savollarni oldindan ochib bo'lmaydi).
+ */
+export const SessionPositionProofSchema = z.object({
+  position: z.number().int().min(0),
+  deliveryToken: z.string().min(16).max(256),
+  expiresAt: z.string().datetime(),
+})
+
+/**
  * Speed timeout belgisi — client vaqt tugaganda shu marker bilan javob yuboradi,
  * server uni har doim XATO deb yozadi (rolling delivery/progress desync bo'lmaydi).
  * `selectedOptionId` string (max 32) ichiga sig'adi; oddiy option ID'lar (`F1`,
@@ -107,6 +120,7 @@ export const TIMEOUT_OPTION_ID = '__timeout__'
 
 export type CreateTestSessionInput = z.infer<typeof CreateTestSessionSchema>
 export type SubmitTestAnswerInput = z.infer<typeof SubmitTestAnswerSchema>
+export type SessionPositionProofInput = z.infer<typeof SessionPositionProofSchema>
 
 export interface DeliveredTestQuestion {
   position: number

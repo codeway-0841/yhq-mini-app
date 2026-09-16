@@ -16,8 +16,14 @@ const repo = vi.hoisted(() => ({
   updateProgress: vi.fn(),
   setStatus: vi.fn(),
   getQuestions: vi.fn(),
+  hasAttempt: vi.fn(),
+  hasSaved: vi.fn(),
+  insertSaved: vi.fn(),
+  deleteSaved: vi.fn(),
+  listSavedForSubject: vi.fn(),
 }))
 const recordAnswer = vi.hoisted(() => vi.fn())
+const findExplanation = vi.hoisted(() => vi.fn())
 const findCard = vi.hoisted(() => vi.fn())
 const upsertCard = vi.hoisted(() => vi.fn())
 const isPremiumUser = vi.hoisted(() => vi.fn())
@@ -40,6 +46,9 @@ vi.mock('../../../server/modules/test-sessions/test-sessions.repository', () => 
 }))
 vi.mock('../../../server/modules/progress/progress.repository', () => ({
   progressRepository: { recordAnswer, findCard, upsertCard },
+}))
+vi.mock('../../../server/modules/questions/questions.repository', () => ({
+  questionsRepository: { findExplanation },
 }))
 vi.mock('../../../server/modules/boss/boss.repository', () => ({
   bossRepository: { applyDamage: vi.fn().mockResolvedValue(undefined) },
@@ -123,6 +132,10 @@ describe('testSessionsService security invariants', () => {
     repo.listSavedQuestionIds.mockResolvedValue([101, 102])
     repo.listMistakeQuestionIds.mockResolvedValue([103, 104])
     repo.listAdaptiveSignals.mockResolvedValue({ cards: [], answeredIds: [] })
+    repo.hasAttempt.mockResolvedValue(true)
+    repo.hasSaved.mockResolvedValue(false)
+    repo.listSavedForSubject.mockResolvedValue([])
+    findExplanation.mockResolvedValue({ explanationUz: 'UZ izoh', explanationRu: 'RU izoh' })
     repo.lockOwned.mockResolvedValue(session())
     repo.findAttempt.mockResolvedValue(null)
     repo.insertAttempt.mockResolvedValue({ id: 77 })
@@ -683,5 +696,70 @@ describe('testSessionsService security invariants', () => {
     expect(repo.lockOwned).toHaveBeenCalledWith(SESSION_ID, 'user-1', TX)
     expect(repo.setStatus).toHaveBeenCalledWith(SESSION_ID, 'user-1', 'abandoned', TX)
     expect(result.status).toBe('abandoned')
+  })
+
+  function validProof() {
+    const answer = validAnswer()
+    return { position: answer.position, deliveryToken: answer.deliveryToken, expiresAt: answer.expiresAt }
+  }
+
+  it('toggles a bookmark without exposing the master question id', async () => {
+    const first = await testSessionsService.toggleSaved('user-1', SESSION_ID, validProof())
+    expect(first).toEqual({ saved: true })
+    expect(repo.insertSaved).toHaveBeenCalledWith('user-1', 'yhq', 101, TX)
+
+    repo.hasSaved.mockResolvedValue(true)
+    const second = await testSessionsService.toggleSaved('user-1', SESSION_ID, validProof())
+    expect(second).toEqual({ saved: false })
+    expect(repo.deleteSaved).toHaveBeenCalledWith('user-1', 'yhq', 101, TX)
+  })
+
+  it('rejects bookmark/explain forgery (bad proof, unissued position, foreign session)', async () => {
+    await expect(testSessionsService.toggleSaved('user-1', SESSION_ID, {
+      ...validProof(),
+      deliveryToken: 'v1.forged-token-value-0000',
+    })).rejects.toMatchObject<AppError>({ statusCode: 403, message: 'invalid_delivery_proof' })
+
+    await expect(testSessionsService.toggleSaved('user-1', SESSION_ID, {
+      ...validProof(),
+      position: 6,
+    })).rejects.toMatchObject<AppError>({ statusCode: 400, message: 'question_not_issued' })
+
+    repo.lockOwned.mockResolvedValue(null)
+    await expect(testSessionsService.savedPositions('user-2', SESSION_ID))
+      .rejects.toMatchObject<AppError>({ statusCode: 404, message: 'test_session_not_found' })
+  })
+
+  it('maps saved master ids back to session positions', async () => {
+    repo.listSavedForSubject.mockResolvedValue([102, 104])
+    // questionIds [101..107] -> positions 1 and 3
+    await expect(testSessionsService.savedPositions('user-1', SESSION_ID))
+      .resolves.toEqual({ savedPositions: [1, 3] })
+    expect(repo.listSavedForSubject).toHaveBeenCalledWith('user-1', 'yhq', TX)
+  })
+
+  it('serves static explanations post-answer without leaking master ids', async () => {
+    const uz = await testSessionsService.sessionExplanation('user-1', SESSION_ID, validProof(), 'uz')
+    expect(uz).toEqual({ text: 'UZ izoh' })
+    const ru = await testSessionsService.sessionExplanation('user-1', SESSION_ID, validProof(), 'ru')
+    expect(ru).toEqual({ text: 'RU izoh' })
+    expect(findExplanation).toHaveBeenCalledWith(101)
+    expect(repo.hasAttempt).toHaveBeenCalledWith(SESSION_ID, 0, TX)
+  })
+
+  it('locks explanations before answering and 404s missing rows', async () => {
+    repo.hasAttempt.mockResolvedValue(false)
+    await expect(testSessionsService.sessionExplanation('user-1', SESSION_ID, validProof(), 'uz'))
+      .rejects.toMatchObject<AppError>({ statusCode: 403, message: 'explanation_locked' })
+
+    repo.hasAttempt.mockResolvedValue(true)
+    findExplanation.mockResolvedValue(null)
+    await expect(testSessionsService.sessionExplanation('user-1', SESSION_ID, validProof(), 'uz'))
+      .rejects.toMatchObject<AppError>({ statusCode: 404, message: 'explanation_not_found' })
+  })
+
+  it('resolves position questions for the tutor without an attempt gate', async () => {
+    await expect(testSessionsService.resolvePositionQuestion('user-1', SESSION_ID, validProof()))
+      .resolves.toEqual({ subjectId: 'yhq', bankId: 'traffic_rules_db', questionId: 101 })
   })
 })

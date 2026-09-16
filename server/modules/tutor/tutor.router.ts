@@ -20,6 +20,7 @@ import { parseUserId }      from '../../utils/parse'
 import { db }   from '../../db/connection'
 import { questions, users } from '../../schema'
 import { config } from '../../config'
+import { testSessionsService } from '../test-sessions/test-sessions.service'
 import { tashkentDate } from '../../utils/date'
 import {
   tutorUsageRepository, TUTOR_DAILY_USER_LIMIT, TUTOR_DAILY_GLOBAL_LIMIT, TUTOR_GLOBAL_USER_ID,
@@ -37,6 +38,24 @@ const BodySchema = z.object({
   /** To'g'ri javob berilganmi — prompt o'shanga qarab tanlanadi */
   answeredCorrect: z.boolean().default(false),
 })
+
+/**
+ * V2 sessiya-pozitsiya varianti (master ID client'ga chiqmaydi):
+ * session row'dan master ID server ichida resolve qilinadi.
+ * Proof o'zi issued oynani tasdiqlaydi (kelajak savolga AI yo'q).
+ */
+const SessionPositionBodySchema = z.object({
+  sessionPosition: z.object({
+    sessionId: z.string().uuid(),
+    position: z.number().int().min(0),
+    deliveryToken: z.string().min(16).max(256),
+    expiresAt: z.string().datetime(),
+  }),
+  lang:           z.enum(['uz', 'ru']).default('uz'),
+  answeredCorrect: z.boolean().default(false),
+})
+
+const ExplainBodySchema = z.union([BodySchema, SessionPositionBodySchema])
 
 const SolvePhotoBodySchema = z.object({
   image: z.string().min(50).max(6_000_000),
@@ -267,15 +286,35 @@ router.post(
     bucket: 'tutor',
     keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
   }),
-  validate({ body: BodySchema }),
+  validate({ body: ExplainBodySchema }),
   wrap(async (req, res) => {
     const key = config.ai.geminiApiKey
     if (!key) throw new AppError(503, 'AI Tutor vaqtincha o\'chiq (GEMINI_API_KEY yo\'q)')
 
-    const { questionId, lang, answeredCorrect } = req.body as z.infer<typeof BodySchema>
+    const raw = req.body as z.infer<typeof ExplainBodySchema>
     const verifiedId = (req as { userId?: string }).userId
     const uid = verifiedId ? parseUserId(verifiedId) : null
-    if (!uid) throw new AppError(401, 'user_not_identified')
+    if (!uid || !verifiedId) throw new AppError(401, 'user_not_identified')
+
+    // V2 sessiya-pozitsiya -> master ID (server ichida; client'ga chiqmaydi)
+    let questionId: number
+    let lang: 'uz' | 'ru'
+    let answeredCorrect: boolean
+    if ('sessionPosition' in raw) {
+      const sp = raw.sessionPosition
+      const resolved = await testSessionsService.resolvePositionQuestion(verifiedId, sp.sessionId, {
+        position: sp.position,
+        deliveryToken: sp.deliveryToken,
+        expiresAt: sp.expiresAt,
+      })
+      questionId = resolved.questionId
+      lang = raw.lang
+      answeredCorrect = raw.answeredCorrect
+    } else {
+      questionId = raw.questionId
+      lang = raw.lang
+      answeredCorrect = raw.answeredCorrect
+    }
 
     if (!(await isPremium(uid))) throw new AppError(403, 'premium_required')
 

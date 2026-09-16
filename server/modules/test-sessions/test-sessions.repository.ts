@@ -205,6 +205,49 @@ export const testSessionsRepository = {
     return row ?? null
   },
 
+  /** Post-answer gate: shu pozitsiyaga javob yozilganmi (izoh FAQAT keyin). */
+  async hasAttempt(sessionId: string, position: number, txOrDb: DB): Promise<boolean> {
+    const rows = await executeRows<{ x: number }>(sql`
+      SELECT 1 AS x FROM test_attempts
+      WHERE session_id = ${sessionId} AND position = ${position}
+      LIMIT 1
+    `, txOrDb)
+    return rows.length > 0
+  },
+
+  /** Bookmark toggle yordamchilari (pozitsiya-proof orqali — master ID siz). */
+  async hasSaved(userId: string, subjectId: string, questionId: number, txOrDb: DB): Promise<boolean> {
+    const rows = await txOrDb.select({ id: savedQuestions.id }).from(savedQuestions).where(and(
+      eq(savedQuestions.userId, userId),
+      eq(savedQuestions.subjectId, subjectId),
+      eq(savedQuestions.questionId, questionId),
+    )).limit(1)
+    return rows.length > 0
+  },
+
+  async insertSaved(userId: string, subjectId: string, questionId: number, txOrDb: DB): Promise<void> {
+    await txOrDb.insert(savedQuestions).values({ userId, subjectId, questionId }).onConflictDoNothing({
+      target: [savedQuestions.userId, savedQuestions.subjectId, savedQuestions.questionId],
+    })
+  },
+
+  async deleteSaved(userId: string, subjectId: string, questionId: number, txOrDb: DB): Promise<void> {
+    await txOrDb.delete(savedQuestions).where(and(
+      eq(savedQuestions.userId, userId),
+      eq(savedQuestions.subjectId, subjectId),
+      eq(savedQuestions.questionId, questionId),
+    ))
+  },
+
+  /** Shu fan+barcha sessiyalar uchun saqlangan master ID'lar (pozitsiyaga map'lanadi). */
+  async listSavedForSubject(userId: string, subjectId: string, txOrDb: DB = db): Promise<number[]> {
+    const rows = await txOrDb.select({ questionId: savedQuestions.questionId }).from(savedQuestions).where(and(
+      eq(savedQuestions.userId, userId),
+      eq(savedQuestions.subjectId, subjectId),
+    ))
+    return rows.map((row) => row.questionId)
+  },
+
   async insertAttempt(values: typeof testAttempts.$inferInsert, txOrDb: DB): Promise<TestAttemptRow> {
     const [row] = await txOrDb.insert(testAttempts).values(values).returning()
     if (!row) throw new Error('test_attempt_insert_failed')

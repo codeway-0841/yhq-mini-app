@@ -12,7 +12,8 @@ interface Props {
   language: Lang
   onClose: () => void
   onOpenLesson?: () => void
-  onOpenAi: () => void
+  /** Berilmasa AI tugmasi chiqmaydi (V2: AI modal alohida bosqichda) */
+  onOpenAi?: () => void
 }
 
 export default function TestExplanation({ loading, text, lesson, language, onClose, onOpenLesson, onOpenAi }: Props) {
@@ -33,7 +34,9 @@ export default function TestExplanation({ loading, text, lesson, language, onClo
           </> : <p className="text-sm text-pmuted">{tt('testExplanationSoon')}</p>}
       </SheetBody>
       <SheetFooter className="shrink-0">
-        <Button variant="secondary" block className="text-ppurple" onClick={onOpenAi}><Sparkles />{tt('askAiExplain')}</Button>
+        {onOpenAi && (
+          <Button variant="secondary" block className="text-ppurple" onClick={onOpenAi}><Sparkles />{tt('askAiExplain')}</Button>
+        )}
         {onOpenLesson && <Button variant="secondary" block onClick={() => { onClose(); onOpenLesson() }}><GraduationCap />{tt('openModule')}</Button>}
       </SheetFooter>
     </Sheet>

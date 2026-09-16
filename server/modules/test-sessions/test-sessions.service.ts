@@ -4,6 +4,7 @@ import { transactionBestEffort } from '../../db/connection'
 import { AppError } from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
 import { progressRepository } from '../progress/progress.repository'
+import { questionsRepository } from '../questions/questions.repository'
 import { bossRepository } from '../boss/boss.repository'
 import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-battle'
 import { tashkentDate } from '../../utils/date'
@@ -16,6 +17,7 @@ import { isPremiumUser } from '../../utils/premium'
 import type {
   CreateTestSessionInput,
   DeliveredTestQuestion,
+  SessionPositionProofInput,
   SubmitTestAnswerInput,
   TestAnswerResponse,
   TestSessionResponse,
@@ -206,6 +208,36 @@ async function deliveredQuestions(
   })
 }
 
+/**
+ * Pozitsiya proof tekshiruvi (answer/save/explain UMUMIY):
+ *  - position hali ISSUED bo'lishi shart (kelajak savol ochilmaydi);
+ *  - deliveryToken HMAC shu user/session/position/expiresAt ga tegishli;
+ *  - bank o'zgargan bo'lsa pozitsiya bo'sh.
+ * Qaytadi: master questionId (faqat server ko'radi — client'ga chiqmaydi).
+ */
+function verifyPositionProof(
+  row: TestSessionRow,
+  userId: string,
+  input: SessionPositionProofInput,
+): { questionId: number } {
+  if (input.position > row.issuedThrough || input.position >= row.totalQuestions) {
+    throw new AppError(400, 'question_not_issued')
+  }
+  const expiresAt = normalizeDate(row.expiresAt).toISOString()
+  if (input.expiresAt !== expiresAt || !verifyDeliveryToken(proofSecret(), {
+    userId,
+    sessionId: row.id,
+    subjectId: row.subjectId,
+    position: input.position,
+    expiresAt,
+  }, input.deliveryToken)) {
+    throw new AppError(403, 'invalid_delivery_proof')
+  }
+  const questionId = row.questionIds[input.position]
+  if (!Number.isInteger(questionId)) throw new AppError(409, 'test_session_bank_changed')
+  return { questionId: questionId as number }
+}
+
 function ensureActive(row: TestSessionRow): void {
   if (row.status !== 'active') throw new AppError(409, `test_session_${row.status}`)
   if (normalizeDate(row.expiresAt).getTime() <= Date.now()) {
@@ -382,20 +414,7 @@ export const testSessionsService = {
     const result = await transactionBestEffort(async (tx) => {
       const row = await testSessionsRepository.lockOwned(sessionId, userId, tx)
       if (!row) throw new AppError(404, 'test_session_not_found')
-      if (input.position > row.issuedThrough || input.position >= row.totalQuestions) {
-        throw new AppError(400, 'question_not_issued')
-      }
-
-      const expiresAt = normalizeDate(row.expiresAt).toISOString()
-      if (input.expiresAt !== expiresAt || !verifyDeliveryToken(proofSecret(), {
-        userId,
-        sessionId,
-        subjectId: row.subjectId,
-        position: input.position,
-        expiresAt,
-      }, input.deliveryToken)) {
-        throw new AppError(403, 'invalid_delivery_proof')
-      }
+      verifyPositionProof(row, userId, input)
 
       const existing = await testSessionsRepository.findAttempt(
         sessionId, userId, input.position, input.clientToken, tx,
@@ -420,9 +439,8 @@ export const testSessionsService = {
         throw new AppError(409, 'test_session_bank_changed')
       }
 
-      const questionId = row.questionIds[input.position]
-      if (!Number.isInteger(questionId)) throw new AppError(409, 'test_session_bank_changed')
-      const [question] = await testSessionsRepository.getQuestions([questionId!], row.bankId, tx)
+      const { questionId } = verifyPositionProof(row, userId, input)
+      const [question] = await testSessionsRepository.getQuestions([questionId], row.bankId, tx)
       if (!question) throw new AppError(409, 'test_session_bank_changed')
       const deliveredOptionMap = languageOf(row) === 'ru' ? question.optionsRu : question.optionsUz
       // Speed timeout: client vaqt tugaganda `__timeout__` marker yuboradi —
@@ -546,6 +564,85 @@ export const testSessionsService = {
       if (row.status === 'active') await testSessionsRepository.setStatus(sessionId, userId, status, tx)
       return stateOf({ ...row, status })
     })
+  },
+
+  /**
+   * Bookmark toggle (pozitsiya-proof orqali — master ID client'ga chiqmaydi).
+   * Mavjud bo'lsa o'chiradi (saved:false), bo'lmasa qo'shadi (saved:true).
+   */
+  async toggleSaved(
+    userId: string,
+    sessionId: string,
+    input: SessionPositionProofInput,
+  ): Promise<{ saved: boolean }> {
+    return transactionBestEffort(async (tx) => {
+      const row = await testSessionsRepository.lockOwned(sessionId, userId, tx)
+      if (!row) throw new AppError(404, 'test_session_not_found')
+      const { questionId } = verifyPositionProof(row, userId, input)
+      if (await testSessionsRepository.hasSaved(userId, row.subjectId, questionId, tx)) {
+        await testSessionsRepository.deleteSaved(userId, row.subjectId, questionId, tx)
+        return { saved: false }
+      }
+      await testSessionsRepository.insertSaved(userId, row.subjectId, questionId, tx)
+      return { saved: true }
+    })
+  },
+
+  /** Shu sessiyadagi saqlangan pozitsiyalar (client bookmark holati). */
+  async savedPositions(userId: string, sessionId: string): Promise<{ savedPositions: number[] }> {
+    return transactionBestEffort(async (tx) => {
+      const row = await testSessionsRepository.lockOwned(sessionId, userId, tx)
+      if (!row) throw new AppError(404, 'test_session_not_found')
+      const savedIds = new Set(await testSessionsRepository.listSavedForSubject(userId, row.subjectId, tx))
+      const positions: number[] = []
+      row.questionIds.forEach((id, position) => {
+        if (savedIds.has(id)) positions.push(position)
+      })
+      return { savedPositions: positions }
+    })
+  },
+
+  /**
+   * Pozitsiya-proof orqali master ID resolve (tutor/AI oqimi uchun).
+   * Attempt gate YO'Q (legacy AI pariteti: issued pozitsiyada javobdan
+   * oldin ham AI ruxsat — proof o'zi kelajak savolni to'sadi).
+   */
+  async resolvePositionQuestion(
+    userId: string,
+    sessionId: string,
+    input: SessionPositionProofInput,
+  ): Promise<{ subjectId: string; bankId: string; questionId: number }> {
+    return transactionBestEffort(async (tx) => {
+      const row = await testSessionsRepository.lockOwned(sessionId, userId, tx)
+      if (!row) throw new AppError(404, 'test_session_not_found')
+      const { questionId } = verifyPositionProof(row, userId, input)
+      return { subjectId: row.subjectId, bankId: row.bankId, questionId }
+    })
+  },
+
+  /**
+   * Statik izoh (pozitsiya-proof + POST-ANSWER gate).
+   * Legacy GET /questions/:id/explanation pariteti: izoh FAQAT shu
+   * pozitsiyaga javob bergan user'ga (attempt qatori shart).
+   */
+  async sessionExplanation(
+    userId: string,
+    sessionId: string,
+    input: SessionPositionProofInput,
+    language: 'uz' | 'ru',
+  ): Promise<{ text: string }> {
+    const { questionId } = await transactionBestEffort(async (tx) => {
+      const row = await testSessionsRepository.lockOwned(sessionId, userId, tx)
+      if (!row) throw new AppError(404, 'test_session_not_found')
+      const resolved = verifyPositionProof(row, userId, input)
+      if (!(await testSessionsRepository.hasAttempt(sessionId, input.position, tx))) {
+        throw new AppError(403, 'explanation_locked')
+      }
+      return resolved
+    })
+    const row = await questionsRepository.findExplanation(questionId)
+    if (!row) throw new AppError(404, 'explanation_not_found')
+    return { text: language === 'ru' ? row.explanationRu : row.explanationUz }
   },
 }
 

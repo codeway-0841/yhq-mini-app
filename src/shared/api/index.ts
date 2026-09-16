@@ -9,6 +9,7 @@ import type {
 } from '../../../shared/ai-daily-test'
 import type {
   CreateTestSessionInput,
+  SessionPositionProofInput,
   SubmitTestAnswerInput,
   TestAnswerResponse,
   TestSessionResponse,
@@ -487,6 +488,27 @@ export const api = {
   finishTestSession: (sessionId: string, status: 'completed' | 'abandoned' = 'completed') =>
     request<{ session: TestSessionState }>(
       'POST', `/test-sessions/${encodeURIComponent(sessionId)}/finish`, { status }, 20_000,
+    ),
+  /**
+   * Bookmark toggle (pozitsiya-proof — master question ID client'ga
+   * chiqmaydi; server session row'dan resolve qiladi).
+   */
+  toggleSavedQuestion: (sessionId: string, data: SessionPositionProofInput) =>
+    request<{ ok: true; saved: boolean }>(
+      'POST', `/test-sessions/${encodeURIComponent(sessionId)}/saved`, data,
+    ),
+  /** Shu sessiyadagi saqlangan pozitsiyalar (bookmark holati). */
+  savedQuestionPositions: (sessionId: string) =>
+    request<{ savedPositions: number[] }>(
+      'GET', `/test-sessions/${encodeURIComponent(sessionId)}/saved`,
+    ),
+  /**
+   * Statik izoh (pozitsiya-proof + post-answer gate — faqat javobdan keyin;
+   * master ID javobda YO'Q, faqat matn).
+   */
+  getSessionExplanation: (sessionId: string, data: SessionPositionProofInput & { language: 'uz' | 'ru' }) =>
+    request<{ text: string }>(
+      'POST', `/test-sessions/${encodeURIComponent(sessionId)}/explanation`, data,
     ),
 
   searchQuestions: (subjectId: string, query: string, language: 'uz' | 'ru' = 'uz') =>
