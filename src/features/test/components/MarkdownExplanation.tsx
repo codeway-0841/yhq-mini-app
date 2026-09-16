@@ -66,7 +66,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
       >
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none" />
         <div className="flex items-center justify-between mb-3">
-          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/10 rounded-full">
+          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.1)] rounded-full">
             {sign.code}
           </span>
           <button

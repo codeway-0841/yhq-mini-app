@@ -71,7 +71,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       className={cn(
         'flex size-full items-center gap-3.5 rounded-2xl bg-pcard p-4 text-left shadow-xs',
         'select-none transition-transform duration-150 ease-out',
-        'active:scale-[0.99] hover:bg-psurface/50',
+        'active:scale-[0.99] hover:bg-[rgb(var(--p-surface-rgb)/0.5)]',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
       )}
     >

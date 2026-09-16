@@ -19,7 +19,7 @@ import { PageHeader } from '../../shared/components/ui/page-header'
 import { track } from '../../shared/lib/analytics'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
-import DialogOverlay from '../../shared/components/DialogOverlay'
+import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import Confetti from '../../shared/components/Confetti'
 import {
   AI_TEST_SECTIONS, AI_TEST_TOTAL_TASKS, AI_TEST_GRADED_TASKS,
@@ -326,22 +326,17 @@ export default function AiTestSession() {
         </button>
       </div>
 
-      {/* Tasdiq sheet'i — javobsiz topshiriqlar qolganda */}
-      {confirmOpen && (
-        <DialogOverlay onClose={() => setConfirmOpen(false)} labelId="ai-test-confirm-title">
-          <div className="p-5">
-            <h2 id="ai-test-confirm-title" className="text-[17px] font-bold text-pfg mb-2">{tt('aiTestConfirmTitle')}</h2>
-            <p className="text-[14px] text-pmuted mb-1">
-              {unanswered} {tt('aiTestUnansweredLeft')}
-            </p>
-            <p className="text-[13px] text-psubtle mb-4">{tt('aiTestConfirmNote')}</p>
-            <div className="flex gap-2">
-              <button onClick={() => setConfirmOpen(false)} className="btn-premium-secondary flex-1">{tt('aiTestCancel')}</button>
-              <button onClick={() => void submit()} className="btn-premium flex-1">{tt('aiTestSubmit')}</button>
-            </div>
-          </div>
-        </DialogOverlay>
-      )}
+      {/* Tasdiq dialogi — javobsiz topshiriqlar qolganda (Dialog SSOT) */}
+      <ConfirmDialog
+        open={confirmOpen}
+        title={tt('aiTestConfirmTitle')}
+        description={`${unanswered} ${tt('aiTestUnansweredLeft')}. ${tt('aiTestConfirmNote')}`}
+        confirmLabel={tt('aiTestSubmit')}
+        cancelLabel={tt('aiTestCancel')}
+        loading={phase === 'submitting'}
+        onClose={() => setConfirmOpen(false)}
+        onConfirm={() => void submit()}
+      />
     </div>
   )
 }

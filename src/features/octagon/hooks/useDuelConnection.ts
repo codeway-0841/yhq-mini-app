@@ -313,7 +313,7 @@ export function useDuelConnection(user: DuelUser | null | undefined) {
 
   /** Invite link — bot /start deep-link: bot "⚔️ Duelga qo'shilish" tugmasi
       bilan ilovaga o'tkazadi (`#/octagon/duel-xxxx`). Webhook ulangan davrda ishlaydi. */
-  const duelLink = duelCode ? `https://t.me/kiwi_uz_bot?start=duel-${duelCode}` : null
+  const duelLink = duelCode ? `https://t.me/${config.botUsername}?start=duel-${duelCode}` : null
 
   /** Invite-link orqali kirgan — avtomatik duelga qo'shiladi */
   useEffect(() => {

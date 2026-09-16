@@ -27,9 +27,9 @@ function EFBadge({ card }: { card: SRCard | undefined }) {
   if (!card) return null
   const ef    = card.ef
   const label = ef >= 2.2 ? 'Oson' : ef >= 1.7 ? "O'rta" : 'Qiyin'
-  const cls   = ef >= 2.2 ? 'bg-psuccess/12 text-psuccess'
-              : ef >= 1.7 ? 'bg-pwarning/12 text-pwarning'
-              :              'bg-pdanger/12 text-pdanger'
+  const cls   = ef >= 2.2 ? 'bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess'
+              : ef >= 1.7 ? 'bg-[rgb(var(--p-warning-rgb)/0.12)] text-pwarning'
+              :              'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger'
   return <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${cls}`}>{label}</span>
 }
 
@@ -41,8 +41,8 @@ function Option({ id, text, state, onSelect, answered, label }: {
 }) {
   const base  = 'w-full text-left rounded-2xl p-3.5 mb-2.5 transition-all active:scale-[0.98] shadow-xs focus:outline-none'
   const style =
-    state === 'correct' ? 'bg-psuccess/15 ring-2 ring-psuccess text-pfg' :
-    state === 'wrong'   ? 'bg-pdanger/15 ring-2 ring-pdanger text-pfg' :
+    state === 'correct' ? 'bg-[rgb(var(--p-success-rgb)/0.15)] ring-2 ring-psuccess text-pfg' :
+    state === 'wrong'   ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] ring-2 ring-pdanger text-pfg' :
                           'bg-pcard text-pfg hover:bg-psurface'
   return (
     <button className={`${base} ${style}`} onClick={onSelect} disabled={answered}>
@@ -164,7 +164,7 @@ export default function AdaptivePage() {
       <div className="flex flex-col min-h-screen bg-pcanvas">
         <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
           <div className="flex items-center justify-between px-4 py-2.5">
-            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
               <X size={20} />
             </button>
             <div className="flex items-center gap-2">
@@ -176,7 +176,7 @@ export default function AdaptivePage() {
         </header>
 
         <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 px-4 text-center max-w-sm mx-auto">
-          <div className="size-16 rounded-2xl bg-pwarning/15 text-pwarning flex items-center justify-center mb-1">
+          <div className="size-16 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning flex items-center justify-center mb-1">
             <Sparkles size={32} />
           </div>
           <h2 className="text-lg font-bold text-pfg">{tt('adaptiveTitle')}</h2>
@@ -214,7 +214,7 @@ export default function AdaptivePage() {
       <div className="flex flex-col min-h-screen bg-pcanvas">
         <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
           <div className="flex items-center justify-between px-4 py-2.5">
-            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="text-pmuted p-1 hover:text-pfg transition-colors">
+            <button onClick={() => goBack(navigate)} aria-label="Orqaga" className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
               <X size={20} />
             </button>
             <div className="flex items-center gap-2">
@@ -239,11 +239,11 @@ export default function AdaptivePage() {
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-2 text-center">
-                <div className="rounded-xl bg-psuccess/10 py-2.5 shadow-2xs">
+                <div className="rounded-xl bg-[rgb(var(--p-success-rgb)/0.1)] py-2.5 shadow-2xs">
                   <p className="text-lg font-semibold text-psuccess tabular-nums">{summary.dueNow}</p>
                   <p className="text-[10px] font-semibold text-pmuted">{tt('srDueNow')}</p>
                 </div>
-                <div className="rounded-xl bg-pwarning/10 py-2.5 shadow-2xs">
+                <div className="rounded-xl bg-[rgb(var(--p-warning-rgb)/0.1)] py-2.5 shadow-2xs">
                   <p className="text-lg font-semibold text-pwarning tabular-nums">{summary.dueNext24h}</p>
                   <p className="text-[10px] font-semibold text-pmuted">{tt('srNext24h')}</p>
                 </div>
@@ -269,7 +269,7 @@ export default function AdaptivePage() {
     <div className="flex flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
         <div className="flex items-center justify-between px-4 py-2.5">
-          <button onClick={() => goBack(navigate)} className="text-pmuted p-1 hover:text-pfg transition-colors"><X size={20} /></button>
+          <button onClick={() => goBack(navigate)} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors"><X size={20} /></button>
           <div className="flex items-center gap-2">
             <Brain size={16} className="text-ppurple" />
             <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>

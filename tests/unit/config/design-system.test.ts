@@ -90,4 +90,28 @@ describe('Design System SSOT Guard (Rule 14)', () => {
 
     expect(violations).toEqual([])
   })
+
+  it('no dead opacity modifiers on HEX --p-* tokens (use rgb triplet instead)', () => {
+    // 2026-09-16 Wave 1: `bg-pcard/95`, `ring-pprimary/20` kabi klasslar nol CSS
+    // generatsiya qiladi (--p-* HEX saqlaydi, Tailwind v3 /N ni var() da qo'llay
+    // olmaydi) — dock shaffof, answer wash'lar ko'rinmas edi. To'g'ri sintaksis:
+    // `bg-[rgb(var(--p-card-rgb)/0.95)]` (tripletlar index.css SSOT).
+    const deadPattern = /(?:^|[\s"'`:(])(?:bg|text|border|ring|shadow|divide|placeholder|caret|fill|stroke|accent)-(?:pcanvas|pcard|psurface|pline|pfg|pmuted|ponprimary|pprimary|psuccess|pwarning|pdanger|ppurple|pblue|pgold)\/\d+(?![\w/])/
+    const violations: { file: string; line: number; match: string }[] = []
+
+    for (const file of srcFiles) {
+      const content = fs.readFileSync(file, 'utf-8')
+      const lines = content.split('\n')
+      lines.forEach((line, idx) => {
+        const trimmed = line.trim()
+        if (trimmed.startsWith('//') || trimmed.startsWith('*')) return
+        const match = line.match(deadPattern)
+        if (match) {
+          violations.push({ file: path.relative(srcDir, file), line: idx + 1, match: match[0].trim() })
+        }
+      })
+    }
+
+    expect(violations).toEqual([])
+  })
 })

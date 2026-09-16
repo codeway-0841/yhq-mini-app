@@ -81,7 +81,7 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
         </a>
 
         <div className="mt-4 flex items-center justify-center gap-2 text-pmuted">
-          <span className="size-4 rounded-full border-2 border-pprimary/35 border-t-pprimary motion-safe:animate-spin" />
+          <span className="size-4 rounded-full border-2 border-[rgb(var(--p-primary-rgb)/0.35)] border-t-pprimary motion-safe:animate-spin" />
           <span className="text-[12px]">{tt('authQrWaiting')}</span>
         </div>
       </div>

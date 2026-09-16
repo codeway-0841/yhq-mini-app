@@ -69,7 +69,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
       >
         <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
         <div className="flex items-center justify-between mb-4">
-          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-pprimary/15 rounded-xl shadow-2xs">
+          <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-xl shadow-2xs">
             {sign.code}
           </span>
           <button
@@ -279,7 +279,7 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
           <div key={ch.chapter} className="rounded-2xl bg-psurface overflow-hidden shadow-xs">
             <button
               onClick={() => setExpandedChapter(isExpanded && !query.trim() ? null : ch.chapter)}
-              className="w-full p-4 flex items-center justify-between text-left hover:bg-pcanvas/30 transition-colors"
+              className="w-full p-4 flex items-center justify-between text-left hover:bg-[rgb(var(--p-canvas-rgb)/0.3)] transition-colors"
             >
               <div className="flex items-center gap-3.5 pr-2">
                 {isFines ? (
@@ -302,12 +302,12 @@ function RulesSection({ query, lang }: { query: string; lang: 'uz' | 'ru' }) {
             </button>
 
             {isExpanded && (
-              <div className="border-t border-pline px-4 py-3 bg-pcanvas/40 flex flex-col gap-3">
+              <div className="border-t border-pline px-4 py-3 bg-[rgb(var(--p-canvas-rgb)/0.4)] flex flex-col gap-3">
                 {ch.articles.map((art) => (
                   <div key={art.id} className="p-3.5 rounded-2xl bg-pcard shadow-xs">
                     <span
                       className={`inline-block text-[11px] font-bold px-2 py-0.5 rounded-xl mb-1.5 shadow-2xs ${
-                        isFines ? 'bg-pwarning/20 text-pwarning' : 'bg-pprimary/15 text-pprimary'
+                        isFines ? 'bg-[rgb(var(--p-warning-rgb)/0.2)] text-pwarning' : 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary'
                       }`}
                     >
                       {art.id.startsWith('J-') ? art.id : (isRu ? `Пункт ${art.id}` : `${art.id}-band`)}
@@ -359,13 +359,13 @@ export default function Belgilar() {
               <>
                 <button
                   onClick={() => navigate('/belgilar-oyini')}
-                  className="h-[32px] px-2.5 rounded-xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
+                  className="min-h-11 px-2.5 rounded-xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
                 >
                   <Gamepad2 size={13} strokeWidth={1.75} /> {isRu ? 'Игра' : "O'yin"}
                 </button>
                 <button
                   onClick={() => navigate('/flashcards')}
-                  className="h-[32px] px-2.5 rounded-xl bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
+                  className="min-h-11 px-2.5 rounded-xl bg-psurface text-pfg font-semibold hover:bg-pcard active:scale-[0.98] transition-all flex items-center gap-1 text-[11.5px] shadow-xs"
                 >
                   <Layers size={13} strokeWidth={1.75} /> {isRu ? 'Карточки' : 'Kartochkalar'}
                 </button>
@@ -380,7 +380,7 @@ export default function Belgilar() {
                 setActiveTab('signs')
                 setQuery('')
               }}
-              className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
+              className={`flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'signs' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
@@ -391,7 +391,7 @@ export default function Belgilar() {
                 setActiveTab('rules')
                 setQuery('')
               }}
-              className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
+              className={`flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all ${
                 activeTab === 'rules' ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
               }`}
             >
@@ -411,13 +411,13 @@ export default function Belgilar() {
                   : (isRu ? 'Поиск правила или штрафа...' : 'Qoida yoki jarima qidirish...')
               }
               aria-label={isRu ? 'Поиск' : 'Qidirish'}
-              className="flex-1 bg-transparent text-sm text-pfg outline-none placeholder:text-pmuted"
+              className="flex-1 bg-transparent text-base text-pfg outline-none placeholder:text-pmuted"
             />
             {query && (
               <button
                 onClick={() => setQuery('')}
                 aria-label={isRu ? 'Очистить' : 'Tozalash'}
-                className="text-pmuted hover:text-pfg"
+                className="size-11 grid shrink-0 place-items-center rounded-xl text-pmuted hover:text-pfg"
               >
                 <X size={14} />
               </button>

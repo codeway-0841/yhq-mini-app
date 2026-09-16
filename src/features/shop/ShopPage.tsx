@@ -173,7 +173,7 @@ export default function ShopPage() {
           <button
             onClick={() => equip(isEquipped ? null : frame.id)}
             disabled={busy !== null}
-            className="w-full text-[11.5px] font-semibold py-2 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs"
+            className="w-full text-[11.5px] font-semibold min-h-11 py-2 rounded-xl active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs"
             style={isEquipped ? {
               background: 'rgb(var(--p-success-rgb) / 0.14)',
               color: 'var(--p-success)',
@@ -188,7 +188,7 @@ export default function ShopPage() {
           <button
             onClick={() => buy(item.id)}
             disabled={busy !== null}
-            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
+            className="w-full flex items-center justify-center gap-1.5 text-[12px] font-semibold min-h-11 py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
             {busy === item.id
               ? <Loader2 size={13} className="animate-spin" />
               : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}
@@ -281,7 +281,7 @@ export default function ShopPage() {
                 <button
                   onClick={() => buy(item.id)}
                   disabled={busy !== null}
-                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-psurface/80 shadow-xs">
+                  className="flex items-center justify-center gap-1.5 text-[12px] font-semibold min-h-11 py-2 rounded-xl bg-psurface text-pfg active:scale-[0.97] transition-transform disabled:opacity-50 hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
                   {busy === item.id
                     ? <Loader2 size={13} className="animate-spin" />
                     : <><CoinIcon size={14} className="text-pgold" /> {fmtCoins(item.price)}</>}

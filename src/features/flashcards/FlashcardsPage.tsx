@@ -13,6 +13,7 @@ import { ChevronLeft, RotateCcw, PartyPopper, TrafficCone, Check, X } from 'luci
 import { signCategories, getSignsByCategory } from '../../content/signs'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useT } from '../../shared/i18n'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 
@@ -44,6 +45,7 @@ function readKnown(catId: string): string[] {
 export default function FlashcardsPage() {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   const isRu = lang === 'ru'
 
   const [cat, setCat]       = useState<Category | null>(null)
@@ -101,7 +103,7 @@ export default function FlashcardsPage() {
   if (!cat) {
     return (
       <div className="font-display bg-pcanvas text-pfg pb-6">
-        <PageHeader title="Flashcards" onBack={() => goBack(navigate)} backLabel={isRu ? 'Назад' : 'Orqaga'} className="mb-4" />
+        <PageHeader title={tt('flashTitle')} onBack={() => goBack(navigate)} backLabel={isRu ? 'Назад' : 'Orqaga'} className="mb-4" />
         <div className="px-5">
           <p className="text-[12px] text-psubtle mb-4">
             {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
@@ -198,7 +200,7 @@ export default function FlashcardsPage() {
           <div className={`flip-inner ${flipped ? 'flipped' : ''}`}>
             {/* OLD TOMON — belgi rasmi */}
             <div className="flip-face rounded-3xl bg-pcard p-6 flex flex-col items-center justify-center gap-4 shadow-xl">
-              <div className="w-40 h-40 rounded-2xl bg-white flex items-center justify-center shadow-xs">
+              <div className="w-40 h-40 rounded-2xl bg-pcard flex items-center justify-center shadow-xs">
                 {current.image
                   ? <img src={current.image} alt={currentName} className="w-32 h-32 object-contain" />
                   : <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />}

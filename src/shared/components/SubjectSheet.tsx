@@ -32,7 +32,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 disabled={!s.available}
                 className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-all duration-150 ease-out shadow-xs ${
                   !s.available
-                    ? 'opacity-50 cursor-not-allowed bg-psurface/60'
+                    ? 'opacity-50 cursor-not-allowed bg-[rgb(var(--p-surface-rgb)/0.6)]'
                     : active
                       ? 'scale-[1.01]'
                       : 'bg-psurface hover:bg-pcard active:scale-[0.99]'

@@ -320,7 +320,7 @@ export default function BulkImportModal({
               />
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
+                className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
               >
                 <FileSpreadsheet size={28} className="mx-auto text-ppurple mb-1.5" />
                 <p className="text-xs font-semibold text-pfg">
@@ -410,7 +410,7 @@ export default function BulkImportModal({
                     className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                       filterTab === 'valid'
                         ? 'bg-pprimary text-ponprimary'
-                        : 'bg-pprimary/10 border border-pprimary/30 text-pprimary'
+                        : 'bg-[rgb(var(--p-primary-rgb)/0.1)] border border-[rgb(var(--p-primary-rgb)/0.3)] text-pprimary'
                     }`}
                   >
                     <CheckCircle2 size={12} /> {validCount}
@@ -422,7 +422,7 @@ export default function BulkImportModal({
                       className={`px-2.5 py-1 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
                         filterTab === 'invalid'
                           ? 'bg-pdanger text-white'
-                          : 'bg-pdanger/10 border border-pdanger/30 text-pdanger'
+                          : 'bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger'
                       }`}
                     >
                       <AlertCircle size={12} /> {invalidCount} xato
@@ -452,7 +452,7 @@ export default function BulkImportModal({
                   <div
                     key={q.id_temp}
                     className={`p-3 rounded-2xl border text-xs transition-all ${
-                      q.isValid ? 'bg-card border-pline' : 'bg-pdanger/10 border-pdanger/30'
+                      q.isValid ? 'bg-card border-pline' : 'bg-[rgb(var(--p-danger-rgb)/0.1)] border-[rgb(var(--p-danger-rgb)/0.3)]'
                     }`}
                   >
                     <div className="flex items-start justify-between gap-2 mb-1.5">
@@ -488,7 +488,7 @@ export default function BulkImportModal({
                             onClick={() => updateQuestionAnswer(q.id_temp, optKey)}
                             className={`p-1.5 rounded-xl border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
                               isCorrect
-                                ? 'bg-pprimary/20 border-pprimary text-pfg font-semibold'
+                                ? 'bg-[rgb(var(--p-primary-rgb)/0.2)] border-pprimary text-pfg font-semibold'
                                 : 'bg-psurface border-pline text-pmuted hover:text-pfg'
                             }`}
                             title="To'g'ri javob qilish uchun bosing"

@@ -143,9 +143,9 @@ export default function TestFormulasSheet({
           <button
             type="button"
             onClick={() => setActiveTopicId('all')}
-            className={`flex-none rounded-lg px-2.5 py-1 text-[11px] font-medium transition-all ${
+            className={`flex-none rounded-xl px-2.5 py-1 text-[11px] font-medium transition-all ${
               activeTopicId === 'all'
-                ? 'bg-pprimary/15 text-pprimary font-semibold'
+                ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-semibold'
                 : 'bg-psurface text-pmuted hover:text-pfg'
             }`}
           >
@@ -156,9 +156,9 @@ export default function TestFormulasSheet({
               key={t.id}
               type="button"
               onClick={() => setActiveTopicId(t.id)}
-              className={`flex-none rounded-lg px-2.5 py-1 text-[11px] font-medium transition-all ${
+              className={`flex-none rounded-xl px-2.5 py-1 text-[11px] font-medium transition-all ${
                 activeTopicId === t.id
-                  ? 'bg-pprimary/15 text-pprimary font-semibold'
+                  ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-semibold'
                   : 'bg-psurface text-pmuted hover:text-pfg'
               }`}
             >

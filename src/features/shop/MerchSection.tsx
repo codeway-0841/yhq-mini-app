@@ -95,7 +95,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
 
       {/* Muvaffaqiyat holati */}
       {ordered && (
-        <div className="mx-5 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-psuccess/15 shadow-xs">
+        <div className="mx-5 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-[rgb(var(--p-success-rgb)/0.15)] shadow-xs">
           <p className="flex items-center justify-center gap-1.5 text-[13.5px] font-semibold text-psuccess">
             <Check size={15} strokeWidth={2} /> {tt('merchOrdered')}
           </p>

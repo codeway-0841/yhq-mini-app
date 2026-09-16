@@ -186,7 +186,7 @@ export default function XatolarPage() {
             <button onClick={() => isV2 ? startPracticeAllV2() : startPracticeV1(
               wrongQuestions.map((q) => q.id), tt('fixMistakes'), 'mistakes',
             )}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
+              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
             </button>
@@ -222,7 +222,7 @@ export default function XatolarPage() {
                   <button
                     key={g.topicId}
                     onClick={() => isV2 ? startPracticeTopicV2(g.topicId, g.name) : startPracticeV1((g as any).ids, g.name)}
-                    className="w-full flex items-center gap-3 px-4 py-3 text-left active:bg-psurface transition-colors"
+                    className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors"
                   >
                     <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
                     <span className="bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">

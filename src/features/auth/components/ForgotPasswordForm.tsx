@@ -39,7 +39,7 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
   if (sent) {
     return (
       <div className="text-center space-y-4 animate-fadeIn">
-        <div className="w-16 h-16 rounded-full bg-pprimary/10 flex items-center justify-center mx-auto">
+        <div className="w-16 h-16 rounded-full bg-[rgb(var(--p-primary-rgb)/0.1)] flex items-center justify-center mx-auto">
           <svg className="w-8 h-8 text-pprimary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
@@ -105,7 +105,7 @@ export default function ForgotPasswordForm({ language, onBack }: ForgotPasswordF
         disabled={!email.trim() || busy}
         className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-[15px] flex items-center justify-center gap-2 shadow-xs"
       >
-        {busy && <span aria-hidden="true" className="size-4 rounded-full border-2 border-ponprimary/60 border-t-transparent motion-safe:animate-spin" />}
+        {busy && <span aria-hidden="true" className="size-4 rounded-full border-2 border-[rgb(var(--p-on-primary-rgb)/0.6)] border-t-transparent motion-safe:animate-spin" />}
         {language === 'ru' ? 'Отправить' : 'Yuborish'}
       </button>
 

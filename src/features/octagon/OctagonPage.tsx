@@ -94,7 +94,8 @@ export default function OctagonPage() {
   return (
     <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
       <DuelHeader
-        title={settings.language === 'ru' ? 'Дуэль' : 'Duel'}
+        title={tt('duelTitle')}
+        backLabel={tt('backWord')}
         inRound={s.phase === 'in_round'}
         yourScore={s.yourScore}
         oppScore={s.oppScore}
@@ -135,7 +136,7 @@ export default function OctagonPage() {
           <SearchingScreen language={settings.language} roomPending={creatingRoom && !duelCode} tt={tt} duelCode={duelCode} duelLink={duelLink} onCancel={cancelSearch} />
         )}
 
-        {s.phase === 'matched' && <MatchedScreen opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
+        {s.phase === 'matched' && <MatchedScreen tt={tt} opponentName={s.opponentName} opponentAvatar={s.opponentAvatar} opponentFrame={s.opponentFrame} />}
 
         {s.phase === 'in_round' && (
           <RoundScreen tt={tt} q={currentQ} deadline={s.deadline}
@@ -149,7 +150,7 @@ export default function OctagonPage() {
         {s.phase === 'match_end' && (
           <MatchEndScreen tt={tt} result={s.result}
             yourScore={s.yourScore} oppScore={s.oppScore} opponentName={s.opponentName}
-            language={settings.language} onExit={exitToIdle} onRematch={() => { setCreatingRoom(false); joinQueue('') }} />
+            onExit={exitToIdle} onRematch={() => { setCreatingRoom(false); joinQueue('') }} />
         )}
       </div>
 

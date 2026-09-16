@@ -74,7 +74,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel, language = '
             {duelLink && (
               <button
                 type="button"
-                onClick={() => shareUrl(duelLink, `Kel, bilimlar jangida bellashamiz! 🤺 PIN: ${cleanPin || duelCode}`)}
+                onClick={() => shareUrl(duelLink, tt('duelShareShort').replace('{pin}', cleanPin || duelCode))}
                 className="flex-1 min-h-12 py-2 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
               >
                 <Share2 size={14} />

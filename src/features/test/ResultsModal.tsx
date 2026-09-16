@@ -161,7 +161,7 @@ export default function ResultsModal({
         <h2 id="results-title" data-drag-handle className="text-center text-lg font-semibold mb-1 select-none">{tt('results')}</h2>
 
         {disqualifiedByCheat && (
-          <div className="mb-4 bg-pdanger/15 rounded-2xl p-4 text-center shadow-xs">
+          <div className="mb-4 bg-[rgb(var(--p-danger-rgb)/0.15)] rounded-2xl p-4 text-center shadow-xs">
             <p className="text-sm font-semibold text-pdanger mb-1">
               {tt('antiCheatDisqualifiedTitle')}
             </p>
@@ -172,7 +172,7 @@ export default function ResultsModal({
         )}
 
         {pending > 0 && (
-          <div className="mb-4 bg-pblue/15 rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
+          <div className="mb-4 bg-[rgb(var(--p-blue-rgb)/0.15)] rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
             <div className="w-2 h-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
             <p className="text-xs text-pfg font-medium">
               {pending} {tt('pendingSyncNotice') || `${pending} ta javob oflayn saqlandi (internet ulanganda natija yangilanadi)`}
@@ -187,12 +187,12 @@ export default function ResultsModal({
         {(Boolean(earnedXp) || Boolean(earnedCoins)) ? (
           <div className="mb-4 flex items-center justify-center gap-3 animate-scorePop">
             {Boolean(earnedXp) && (
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pprimary/15 text-pprimary font-bold text-xs shadow-xs">
+              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-bold text-xs shadow-xs">
                 <span>+{earnedXp} XP</span>
               </div>
             )}
             {Boolean(earnedCoins) && (
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pgold/15 text-pgold font-bold text-xs shadow-xs">
+              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] text-pgold font-bold text-xs shadow-xs">
                 <span>+{earnedCoins} 🪙</span>
               </div>
             )}
@@ -251,14 +251,14 @@ export default function ResultsModal({
         )}
 
         <p className="text-sm font-semibold mb-3">{tt('question')}</p>
-        <div className="grid grid-cols-8 gap-1.5 mb-6">
+        <div className="grid grid-cols-6 gap-1.5 mb-6">
           {results.map((r, i) => (
             <button key={r.questionId} onClick={() => onGoToQuestion(i)}
               aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : r.status === 'pending' ? 'pending' : tt('unanswered')}`}
               className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-semibold transition-all active:scale-90 ${
                 r.status === 'correct'   ? 'bg-pprimary text-ponprimary' :
                 r.status === 'incorrect' ? 'bg-pdanger text-white'   :
-                r.status === 'pending'   ? 'bg-pblue/20 text-pblue ring-1 ring-pblue/50' :
+                r.status === 'pending'   ? 'bg-[rgb(var(--p-blue-rgb)/0.2)] text-pblue ring-1 ring-[rgb(var(--p-blue-rgb)/0.5)]' :
                                            'bg-psurface text-pmuted'
               }`}>
               {i + 1}
@@ -294,7 +294,7 @@ export default function ResultsModal({
         <div className="flex gap-3">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-psurface/80">
+            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
             <RotateCcw size={16} strokeWidth={1.75} aria-hidden="true" />
             {tt('retry')}
           </button>
@@ -308,7 +308,7 @@ export default function ResultsModal({
         <button
           onClick={handleShareImage}
           disabled={sharingImage}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
           <ImageDown size={15} strokeWidth={1.75} />
           {sharingImage ? '...' : tt('shareResultImage')}
         </button>
@@ -327,7 +327,7 @@ export default function ResultsModal({
             const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
             shareUrl(`https://t.me/kiwi_uz_bot?start=ref_${uid ?? '0'}`, text)
           }}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-psurface/80">
+          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
           <Share2 size={15} strokeWidth={1.75} />
           {tt('shareResult')}
         </button>

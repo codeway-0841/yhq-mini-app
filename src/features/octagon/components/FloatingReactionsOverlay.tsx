@@ -22,7 +22,7 @@ export function FloatingReactionsOverlay({
     <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden">
       {/* Speech bubbles for phrases */}
       {opponentPhrase && (
-        <div className="absolute top-20 left-6 max-w-[200px] animate-premiumIn z-50">
+        <div className="absolute top-[calc(5rem+var(--safe-top,0px))] left-6 max-w-[200px] animate-premiumIn z-50">
           <div className="relative rounded-2xl bg-ppurple text-ponprimary px-3.5 py-2 text-xs font-black shadow-xl">
             {opponentPhrase}
             <div className="absolute -top-1.5 left-4 w-3 h-3 bg-ppurple rotate-45" />
@@ -31,7 +31,7 @@ export function FloatingReactionsOverlay({
       )}
 
       {yourPhrase && (
-        <div className="absolute top-20 right-6 max-w-[200px] animate-premiumIn z-50">
+        <div className="absolute top-[calc(5rem+var(--safe-top,0px))] right-6 max-w-[200px] animate-premiumIn z-50">
           <div className="relative rounded-2xl bg-pprimary text-ponprimary px-3.5 py-2 text-xs font-black shadow-xl">
             {yourPhrase}
             <div className="absolute -top-1.5 right-4 w-3 h-3 bg-pprimary rotate-45" />
@@ -50,7 +50,7 @@ export function FloatingReactionsOverlay({
           }}
         >
           <div className="relative flex items-center justify-center">
-            <span className="text-4xl filter drop-shadow-lg select-none animate-wiggle">
+            <span aria-hidden="true" className="text-4xl filter drop-shadow-lg select-none animate-wiggle">
               {r.content}
             </span>
           </div>

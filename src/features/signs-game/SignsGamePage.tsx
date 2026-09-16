@@ -106,7 +106,7 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
           {tt('signsGameCorrect')}: <b className="text-pfg">{score}</b> / {rounds.length}
           {best !== null && ` · ${tt('signsGameBest')}: ${Math.max(best, score)}`}
         </p>
-        <button onClick={onExit} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 mt-6 px-6 py-2.5 rounded-2xl text-[13.5px] font-black">
+        <button onClick={onExit} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 mt-6 px-6 min-h-11 py-2.5 rounded-2xl text-[13.5px] font-black">
           {tt('signsGameBack')}
         </button>
       </div>
@@ -251,11 +251,11 @@ function MatchGame({ onExit }: { onExit: () => void }) {
             </p>
             <div className="flex gap-2.5 mt-5">
               <button onClick={startNew}
-                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-all flex-1 py-2.5 rounded-2xl text-[13px] font-black flex items-center justify-center gap-1.5 shadow-xs">
+                className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-all flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-black flex items-center justify-center gap-1.5 shadow-xs">
                 <RotateCcw size={14} /> {tt('signsGamePlayAgain')}
               </button>
               <button onClick={onExit}
-                className="flex-1 py-2.5 rounded-2xl text-[13px] font-black bg-psurface text-pmuted hover:bg-psurface/80 shadow-xs">
+                className="flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-black bg-psurface text-pmuted hover:bg-[rgb(var(--p-surface-rgb)/0.8)] shadow-xs">
                 {tt('signsGameBack')}
               </button>
             </div>

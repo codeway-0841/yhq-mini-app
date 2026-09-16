@@ -207,7 +207,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder={`${currentSubjectObj.name} savollaridan qidirish...`}
-          className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
+          className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
         />
       </div>
 
@@ -224,7 +224,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               <div className="flex gap-3 items-start justify-between">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-[10px] text-ppurple font-semibold bg-ppurple/10 px-2 py-0.5 rounded-md">
+                    <span className="text-[10px] text-ppurple font-semibold bg-[rgb(var(--p-purple-rgb)/0.1)] px-2 py-0.5 rounded-md">
                       #{q.id}
                     </span>
                     <span className="text-[11px] text-pmuted font-semibold truncate">
@@ -359,7 +359,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           >
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
             <div className="flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-2xl bg-pdanger/15 border border-pdanger/40 flex items-center justify-center mb-3">
+              <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.15)] border border-[rgb(var(--p-danger-rgb)/0.4)] flex items-center justify-center mb-3">
                 <AlertTriangle size={28} className="text-pdanger" />
               </div>
               <p id="delete-question-title" className="text-[17px] font-semibold text-pfg mb-1">#{deleteConfirm.id} savolni o'chirish</p>
@@ -620,7 +620,7 @@ function QuestionForm({
                 />
 
                 {form.image ? (
-                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-ppurple/40">
+                  <div className="flex items-center justify-between p-2.5 rounded-2xl bg-psurface border border-[rgb(var(--p-purple-rgb)/0.4)]">
                     <div className="flex items-center gap-2.5 min-w-0">
                       <img
                         src={form.image}
@@ -649,7 +649,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="p-2 rounded-xl bg-pdanger/10 border border-pdanger/30 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
+                        className="p-2 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -659,7 +659,7 @@ function QuestionForm({
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-ppurple/60 rounded-2xl p-3.5 text-center cursor-pointer bg-psurface transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-3.5 text-center cursor-pointer bg-psurface transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={18} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>

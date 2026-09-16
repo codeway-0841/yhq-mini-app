@@ -36,7 +36,7 @@ export default function PresetSheet({ open, onClose, language, onApply }: Props)
               key={s.id}
               type="button"
               onClick={() => setSubjectId(s.id)}
-              className={`h-9 rounded-xl px-3.5 text-[13px] font-semibold transition-colors ${
+              className={`min-h-11 rounded-xl px-3.5 text-[13px] font-semibold transition-colors ${
                 subjectId === s.id ? 'bg-pprimary text-ponprimary' : 'bg-psurface text-pmuted hover:text-pfg'
               }`}
             >

@@ -58,8 +58,8 @@ export function McqTaskView({ task, num, value, onChange, review }: {
           const isWrongPick = review && selected && !review.correct
           let cls = 'bg-psurface text-pfg hover:bg-pcard'
           if (review) {
-            if (isCorrect) cls = 'ring-2 ring-psuccess bg-psuccess/10 text-pfg'
-            else if (isWrongPick) cls = 'ring-2 ring-pdanger bg-pdanger/10 text-pfg'
+            if (isCorrect) cls = 'ring-2 ring-psuccess bg-[rgb(var(--p-success-rgb)/0.1)] text-pfg'
+            else if (isWrongPick) cls = 'ring-2 ring-pdanger bg-[rgb(var(--p-danger-rgb)/0.1)] text-pfg'
             else cls = 'bg-psurface text-psubtle opacity-60'
           } else if (selected) {
             cls = 'ring-2 ring-ppurple text-pfg'
@@ -126,7 +126,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
                     if (isCorrectOpt) cls = 'bg-psuccess text-ponprimary'
                     else if (isChosen) cls = 'bg-pdanger text-white line-through'
                   } else if (isChosen) {
-                    cls = 'ring-2 ring-ppurple bg-ppurple/15 text-ppurple font-bold'
+                    cls = 'ring-2 ring-ppurple bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple font-bold'
                   }
                   return (
                     <button
@@ -188,7 +188,7 @@ export function ShortTaskView({ task, num, value, onChange, review, yourAnswerLa
           value={value ?? ''}
           onChange={(e) => onChange?.(e.target.value)}
           maxLength={300}
-          className="w-full rounded-2xl bg-psurface px-3.5 py-2.5 text-[14px] text-pfg placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple shadow-xs"
+          className="w-full rounded-2xl bg-psurface px-3.5 py-2.5 text-base text-pfg placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple shadow-xs"
           placeholder="…"
         />
       )}
@@ -232,7 +232,7 @@ export function EssayTaskView({ task, num, value, onChange, review, placeholder,
             onChange={(e) => onChange?.(e.target.value)}
             rows={9}
             maxLength={10_000}
-            className="w-full rounded-2xl bg-psurface px-3.5 py-3 text-[14px] text-pfg leading-relaxed placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple resize-y shadow-xs"
+            className="w-full rounded-2xl bg-psurface px-3.5 py-3 text-base text-pfg leading-relaxed placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-ppurple resize-y shadow-xs"
             placeholder={placeholder}
           />
           <p className={`mt-1.5 text-right text-[12px] font-medium ${inRange ? 'text-psuccess' : 'text-psubtle'}`}>

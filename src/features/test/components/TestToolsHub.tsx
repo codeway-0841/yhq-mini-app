@@ -84,7 +84,7 @@ export default function TestToolsHub({
                 setMenuOpen(false)
                 onOpenFormulas()
               }}
-              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+              className="flex items-center gap-2.5 rounded-full bg-pcard text-pfg backdrop-blur-xl px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-psurface active:scale-95 transition-all"
             >
               <span>{tt('toolFormulas')}</span>
               <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
@@ -103,7 +103,7 @@ export default function TestToolsHub({
                 setMenuOpen(false)
                 onOpenCalculator()
               }}
-              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+              className="flex items-center gap-2.5 rounded-full bg-pcard text-pfg backdrop-blur-xl px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-psurface active:scale-95 transition-all"
             >
               <span>{tt('toolCalculator')}</span>
               <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
@@ -121,7 +121,7 @@ export default function TestToolsHub({
               setMenuOpen(false)
               onOpenScratchpad()
             }}
-            className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+            className="flex items-center gap-2.5 rounded-full bg-pcard text-pfg backdrop-blur-xl px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-psurface active:scale-95 transition-all"
           >
             <span>{tt('toolScratchpad')}</span>
             <span className="grid size-8 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] text-pprimary">
@@ -138,10 +138,10 @@ export default function TestToolsHub({
                 haptics.impact('light')
                 onToggleVisibility()
               }}
-              className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+              className="flex items-center gap-2.5 rounded-full bg-pcard text-pfg backdrop-blur-xl px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-psurface active:scale-95 transition-all"
             >
               <span>{tt(drawingsVisible ? 'toolEyeHide' : 'toolEyeShow')}</span>
-              <span className={`grid size-8 place-items-center rounded-full ${drawingsVisible ? 'bg-white/10 text-white' : 'bg-amber-500/25 text-amber-400'}`}>
+              <span className={`grid size-8 place-items-center rounded-full ${drawingsVisible ? 'bg-psurface text-pfg' : 'bg-amber-500/25 text-amber-400'}`}>
                 {drawingsVisible ? <Eye size={16} /> : <EyeOff size={16} />}
               </span>
             </button>
@@ -155,10 +155,10 @@ export default function TestToolsHub({
               haptics.impact('light')
               onToggleSave()
             }}
-            className="flex items-center gap-2.5 rounded-full bg-slate-900/95 text-white backdrop-blur-xl border border-white/15 px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-slate-800 active:scale-95 transition-all"
+            className="flex items-center gap-2.5 rounded-full bg-pcard text-pfg backdrop-blur-xl px-3.5 py-2 text-xs font-semibold shadow-2xl hover:bg-psurface active:scale-95 transition-all"
           >
             <span>{isSaved ? tt('removeSaved') : tt('toolBookmark')}</span>
-            <span className={`grid size-8 place-items-center rounded-full ${isSaved ? 'bg-amber-500/25 text-amber-400' : 'bg-white/10 text-white/70'}`}>
+            <span className={`grid size-8 place-items-center rounded-full ${isSaved ? 'bg-amber-500/25 text-amber-400' : 'bg-psurface text-pmuted'}`}>
               <Bookmark size={16} fill={isSaved ? 'currentColor' : 'none'} />
             </span>
           </button>
@@ -166,7 +166,7 @@ export default function TestToolsHub({
       )}
 
       {/* Asosiy suzuvchi tugmalar paneli (Floating Dock — iPhone Dynamic Island uslubi) */}
-      <div className="flex items-center gap-1.5 rounded-2xl bg-slate-900 text-white backdrop-blur-xl p-1.5 shadow-2xl border border-slate-700/80 ring-1 ring-black/40">
+      <div className="flex items-center gap-1.5 rounded-2xl bg-pcard text-pfg backdrop-blur-xl p-1.5 shadow-2xl">
         {/* Yordamchilar menyusi tugmasi */}
         <button
           type="button"
@@ -178,7 +178,7 @@ export default function TestToolsHub({
           className={`grid size-11 place-items-center rounded-xl transition-all active:scale-95 ${
             menuOpen
               ? 'bg-pprimary text-ponprimary ring-2 ring-white/40 ring-inset shadow-md shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)]'
-              : 'bg-white/10 text-pprimary hover:bg-white/20 hover:text-white'
+              : 'bg-psurface text-pprimary hover:bg-pcard hover:text-pfg'
           }`}
         >
           {menuOpen ? <X size={20} /> : <Sparkles size={20} className="text-pprimary" />}

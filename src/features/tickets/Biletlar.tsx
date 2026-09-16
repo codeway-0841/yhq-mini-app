@@ -254,7 +254,7 @@ export default function Biletlar() {
       <div className="flex gap-2 mb-3 bg-psurface p-1 rounded-2xl">
         {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)}
-            className={`flex-1 py-2 rounded-xl text-sm font-semibold transition-colors ${
+            className={`flex-1 min-h-11 py-2 rounded-xl text-sm font-semibold transition-colors ${
               tab === t.id ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
             }`}>
             {t.label}
@@ -272,7 +272,7 @@ export default function Biletlar() {
               <button
                 key={ch.id}
                 onClick={() => setSelectedChapter(ch.id)}
-                className={`whitespace-nowrap px-3 py-1.5 rounded-xl text-xs font-semibold transition-all shrink-0 ${
+                className={`whitespace-nowrap px-3 py-1.5 min-h-11 inline-flex items-center rounded-xl text-xs font-semibold transition-all shrink-0 ${
                   isSelected
                     ? 'bg-pprimary text-ponprimary shadow-xs'
                     : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'

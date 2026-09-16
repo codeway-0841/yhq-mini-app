@@ -314,7 +314,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           <button
             type="button"
             onClick={() => void retry(lang, subjectId)}
-            className="px-5 py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
+            className="px-5 min-h-11 inline-flex items-center py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
           >
             {tt('qLoadRetry')}
           </button>
@@ -337,7 +337,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           <button
             type="button"
             onClick={() => setTopicsRetry((c) => c + 1)}
-            className="px-5 py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
+            className="px-5 min-h-11 inline-flex items-center py-2.5 rounded-xl bg-pprimary text-sm font-semibold text-ponprimary active:scale-[0.98] transition-all"
           >
             {tt('qLoadRetry')}
           </button>

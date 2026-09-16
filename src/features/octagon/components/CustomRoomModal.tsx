@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { X, Copy, Check, Share2, Users, KeyRound, Swords } from 'lucide-react'
 import { shareUrl } from '../../../platform/telegram'
+import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
@@ -28,7 +29,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
     return `${createdPin.slice(0, 3)} ${createdPin.slice(3)}`
   }, [createdPin])
 
-  const inviteLink = `https://t.me/kiwi_uz_bot?start=duel-${createdPin}`
+  const inviteLink = `https://t.me/${config.botUsername}?start=duel-${createdPin}`
 
   const handleCopyPin = () => {
     navigator.clipboard?.writeText(createdPin)
@@ -41,7 +42,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
   const handleShare = () => {
     haptics.impact('medium')
     playSound('click')
-    const shareText = `Kel, bilimlar jangida bellashamiz! 🤺\n\n📌 Xona PIN-kodi: ${createdPin}\n\nQuyidagi havola orqali kiring:`
+    const shareText = tt('duelShareText').replace('{pin}', createdPin)
     shareUrl(inviteLink, shareText)
     onStartRoom(createdPin)
     onClose()
@@ -71,7 +72,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-psurface p-5 shadow-2xl space-y-4 relative">
+      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 shadow-2xl space-y-4 relative">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -86,7 +87,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           <button
             onClick={onClose}
             aria-label={tt('close')}
-            className="w-8 h-8 rounded-full bg-pcard hover:bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+            className="grid size-11 shrink-0 place-items-center rounded-full bg-psurface hover:bg-pcard flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
           >
             <X size={16} />
           </button>
@@ -97,7 +98,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           <button
             type="button"
             onClick={() => { setTab('create'); setErrorMsg(null) }}
-            className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
+            className={`min-h-11 px-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'create'
                 ? 'bg-ppurple text-ponprimary shadow-sm'
                 : 'text-pmuted hover:text-pfg'
@@ -109,10 +110,10 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           <button
             type="button"
             onClick={() => { setTab('join'); setErrorMsg(null) }}
-            className={`py-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
+            className={`min-h-11 px-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'join'
                 ? 'bg-ppurple text-ponprimary shadow-sm'
-                : 'text-muted hover:text-fg'
+                : 'text-pmuted hover:text-pfg'
             }`}
           >
             <KeyRound size={14} />
@@ -176,7 +177,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
                   setErrorMsg(null)
                 }}
                 placeholder={tt('pinInputPlaceholder')}
-                className="w-full px-4 py-3 rounded-2xl bg-pcard focus:ring-2 focus:ring-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-pmuted/40 focus:outline-none transition-colors shadow-xs"
+                className="w-full px-4 py-3 rounded-2xl bg-pcard focus:ring-2 focus:ring-ppurple text-center font-mono text-xl font-black text-pfg placeholder:text-[rgb(var(--p-muted-rgb)/0.4)] focus:outline-none transition-colors shadow-xs"
                 autoFocus
               />
               {errorMsg && <p className="text-[11px] font-bold text-pdanger text-center">{errorMsg}</p>}

@@ -101,7 +101,7 @@ export default function IosDock() {
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="w-full bg-pcard/95 backdrop-blur-xl border-t border-pline shadow-[0_-4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)] pb-[calc(0.35rem+var(--safe-bottom,0px))] pt-1.5"
+        className="w-full bg-[rgb(var(--p-card-rgb)/0.95)] backdrop-blur-xl border-t border-pline shadow-[0_-4px_24px_rgba(0,0,0,0.06)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)] pb-[calc(0.35rem+var(--safe-bottom,0px))] pt-1.5"
       >
         <div className="mx-auto flex max-w-lg items-end justify-around px-2">
           {navItems.map((item) => {
@@ -117,7 +117,7 @@ export default function IosDock() {
                     type="button"
                     onClick={() => handleNav(item)}
                     aria-label={item.shortLabel[lang]}
-                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-pprimary/35 transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
+                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg [--tw-shadow-color:rgb(var(--p-primary-rgb)/0.35)] transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
                   >
                     <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
                   </button>

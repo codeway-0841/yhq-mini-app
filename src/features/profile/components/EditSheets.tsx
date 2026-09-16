@@ -81,7 +81,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 
-        <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-pprimary/10">
+        <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.1)]">
           <Phone size={28} strokeWidth={1.75} className="text-pprimary" />
         </div>
 
@@ -180,7 +180,7 @@ export function NameEditSheet({ current, onClose, onSave }: {
           maxLength={32}
           placeholder={tt('yourNamePlaceholder')}
           autoFocus
-          className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-sm text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
+          className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-base text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
         />
         <Button block onClick={() => { onSave(name); onClose() }}>
           {tt('saveBtn')}

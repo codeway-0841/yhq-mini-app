@@ -87,7 +87,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </p>
 
             {/* Joriy faol fan kartasi (katta, markaziy karta) */}
-            <div className="mt-4 rounded-2xl bg-pwash/40 p-4">
+            <div className="mt-4 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.05)] p-4">
               <div className="flex items-center gap-3.5">
                 <div
                   className="grid size-12 flex-none place-items-center rounded-xl text-white shadow-sm"

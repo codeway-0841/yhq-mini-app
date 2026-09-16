@@ -165,7 +165,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
   return (
     <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
       {celebrate && <Confetti count={50} />}
-      <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-2xl bg-pcard p-5 pt-4 shadow-2xl">
+      <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-pcard p-5 pt-4 shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between mb-1">
           <div className="flex items-center gap-1.5">
@@ -175,7 +175,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
           <button
             onClick={onClose}
             aria-label={tt('spinClose')}
-            className="rounded-full p-1 text-psubtle hover:bg-psurface hover:text-pfg transition-colors"
+            className="size-11 grid place-items-center rounded-full text-psubtle hover:bg-psurface hover:text-pfg transition-colors"
           >
             <X size={18} />
           </button>

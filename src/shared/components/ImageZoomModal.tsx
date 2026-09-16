@@ -170,7 +170,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
 
         <button
           onClick={onClose}
-          className="p-2.5 rounded-full bg-white/15 text-white hover:bg-white/25 active:scale-95 transition-all shadow-lg"
+          className="size-11 grid place-items-center rounded-full bg-white/15 text-white hover:bg-white/25 active:scale-95 transition-all shadow-lg"
           aria-label="Yopish"
         >
           <X size={20} />
@@ -208,7 +208,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
         <button
           onClick={zoomOut}
           disabled={scale <= 1}
-          className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-30 active:scale-90 transition-all"
+          className="size-11 grid place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-30 active:scale-90 transition-all"
           title="Kichraytirish"
         >
           <ZoomOut size={18} />
@@ -226,7 +226,7 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
         <button
           onClick={zoomIn}
           disabled={scale >= 4}
-          className="p-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-30 active:scale-90 transition-all"
+          className="size-11 grid place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-30 active:scale-90 transition-all"
           title="Kattalashtirish"
         >
           <ZoomIn size={18} />

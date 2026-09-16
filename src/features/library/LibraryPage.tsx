@@ -251,7 +251,7 @@ function FilterChip({ active, label, icon: Icon, onClick }: {
       onClick={onClick}
       aria-pressed={active}
       className={cn(
-        'inline-flex h-9 shrink-0 snap-start items-center gap-1.5 rounded-xl px-3 text-[13px] font-semibold',
+        'inline-flex min-h-11 shrink-0 snap-start items-center gap-1.5 rounded-xl px-3 text-[13px] font-semibold',
         'transition-[background-color,color,transform] duration-150 ease-out active:scale-[0.97]',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
         active

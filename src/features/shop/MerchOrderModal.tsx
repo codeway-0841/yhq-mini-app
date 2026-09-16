@@ -82,7 +82,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             onChange={(e) => setFullName(e.target.value)}
             placeholder={tt('merchFormName')}
             maxLength={80}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
           />
           <input
             value={phone}
@@ -90,14 +90,14 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             placeholder={tt('merchFormPhone')}
             inputMode="tel"
             maxLength={20}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
           />
           <input
             value={note}
             onChange={(e) => setNote(e.target.value)}
             placeholder={tt('merchFormNote')}
             maxLength={200}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-[13px] font-semibold outline-none focus:ring-2 focus:ring-pprimary/60 transition-all shadow-xs"
+            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
           />
         </div>
 
@@ -109,13 +109,13 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           <button
             onClick={onClose}
             disabled={busy}
-            className="flex-1 py-2.5 rounded-xl text-[13px] font-semibold text-pmuted bg-psurface active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs">
+            className="flex-1 min-h-11 py-2.5 rounded-xl text-[13px] font-semibold text-pmuted bg-psurface active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs">
             {tt('merchFormCancel')}
           </button>
           <button
             onClick={submit}
             disabled={busy}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] py-2.5 rounded-xl text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60 shadow-xs">
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] min-h-11 py-2.5 rounded-xl text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60 shadow-xs">
             {busy ? <Loader2 size={15} className="animate-spin" /> : <CoinIcon size={15} />}
             {tt('merchFormSubmit')}
           </button>

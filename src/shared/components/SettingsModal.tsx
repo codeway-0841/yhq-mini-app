@@ -126,7 +126,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div data-drag-handle className="flex items-center justify-between mb-2 select-none">
             <h2 id="settings-title" className="text-base font-semibold text-pfg">{tt('settingsTitle')}</h2>
-            <button onClick={onClose} aria-label={tt('close')} className="text-pmuted hover:text-pfg transition-colors">
+            <button onClick={onClose} aria-label={tt('close')} className="size-11 grid place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
               <X size={20} strokeWidth={1.75} />
             </button>
           </div>

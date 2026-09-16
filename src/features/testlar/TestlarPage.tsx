@@ -105,7 +105,7 @@ export default function TestlarPage() {
         <button
           type="button"
           onClick={() => navigate('/qidiruv')}
-          className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-all active:scale-[0.99] shadow-xs hover:bg-psurface/80"
+          className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-all active:scale-[0.99] shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]"
         >
           <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-pprimary" />
           <span className="text-sm text-pmuted">{tt('searchPlaceholder')}</span>

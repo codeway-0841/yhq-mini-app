@@ -102,14 +102,14 @@ export default function AdminUsersTab() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="ID, ism, username yoki telefon orqali qidirish..."
-            className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-xs font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
+            className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
           />
         </div>
       </div>
 
       {/* Error state */}
       {error && (
-        <div className="rounded-2xl p-6 text-center border border-pdanger/30 bg-pdanger/5 shadow-xs">
+        <div className="rounded-2xl p-6 text-center border border-[rgb(var(--p-danger-rgb)/0.3)] bg-[rgb(var(--p-danger-rgb)/0.05)] shadow-xs">
           <AlertCircle size={28} className="mx-auto text-pdanger mb-2" />
           <p className="text-xs font-semibold text-pfg mb-1">{error}</p>
           <button
@@ -129,7 +129,7 @@ export default function AdminUsersTab() {
         </div>
       ) : users.length === 0 && !error ? (
         <div className="rounded-2xl bg-pcard p-8 text-center shadow-xs">
-          <User size={36} className="mx-auto text-pmuted/50 mb-2" />
+          <User size={36} className="mx-auto text-[rgb(var(--p-muted-rgb)/0.5)] mb-2" />
           <p className="text-sm font-semibold text-pfg">Foydalanuvchi topilmadi</p>
           <p className="text-xs text-psubtle mt-1">
             {search ? "Boshqa kalit so'z bilan qidiring" : "Bazaga hali foydalanuvchilar yozilmagan"}
@@ -165,7 +165,7 @@ export default function AdminUsersTab() {
 
                   <div className="flex-shrink-0">
                     {isPremium ? (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-[10px] font-semibold bg-ppurple/15 text-ppurple border border-ppurple/30">
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-[10px] font-semibold bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.3)]">
                         <PremiumIcon size={12} />
                         Premium
                       </span>
@@ -293,7 +293,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', null)}
-                  className="rounded-2xl bg-pwarning/10 w-full p-3 text-left flex items-center justify-between text-xs font-semibold border border-pwarning/40 text-pfg hover:bg-pwarning/15 transition-all shadow-xs"
+                  className="rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.1)] w-full p-3 text-left flex items-center justify-between text-xs font-semibold border border-[rgb(var(--p-warning-rgb)/0.4)] text-pfg hover:bg-[rgb(var(--p-warning-rgb)/0.15)] transition-all shadow-xs"
                 >
                   <span>⭐ Umrbod Premium (Lifetime)</span>
                   <span className="text-pwarning font-semibold text-[11px]">VIP</span>
@@ -302,7 +302,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('free', null)}
-                  className="w-full p-3 rounded-2xl border border-pdanger/30 bg-pdanger/10 text-pdanger text-center text-xs font-semibold hover:bg-pdanger/20 transition-all mt-2"
+                  className="w-full p-3 rounded-2xl border border-[rgb(var(--p-danger-rgb)/0.3)] bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger text-center text-xs font-semibold hover:bg-[rgb(var(--p-danger-rgb)/0.2)] transition-all mt-2"
                 >
                   Bekor qilish (Oddiy Free hisob)
                 </button>

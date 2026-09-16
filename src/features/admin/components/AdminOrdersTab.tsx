@@ -142,7 +142,7 @@ export default function AdminOrdersTab() {
                     <button
                       onClick={() => setStatus(o.id, 'contacted')}
                       disabled={busy !== null}
-                      className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-lg text-[11px] font-semibold text-pblue bg-pblue/10 border border-pblue/30 active:scale-[0.97] transition-transform disabled:opacity-50">
+                      className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-lg text-[11px] font-semibold text-pblue bg-[rgb(var(--p-blue-rgb)/0.1)] border border-[rgb(var(--p-blue-rgb)/0.3)] active:scale-[0.97] transition-transform disabled:opacity-50">
                       {busy === o.id ? <Loader2 size={12} className="motion-safe:animate-spin" /> : <Check size={12} />}
                       {tt('orderStatusContacted')}
                     </button>
@@ -150,12 +150,12 @@ export default function AdminOrdersTab() {
                   <button
                     onClick={() => setStatus(o.id, 'delivered')}
                     disabled={busy !== null}
-                    className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-lg text-[11px] font-semibold text-psuccess bg-psuccess/10 border border-psuccess/30 active:scale-[0.97] transition-transform disabled:opacity-50">
+                    className="flex-1 flex items-center justify-center gap-1 py-1.5 rounded-lg text-[11px] font-semibold text-psuccess bg-[rgb(var(--p-success-rgb)/0.1)] border border-[rgb(var(--p-success-rgb)/0.3)] active:scale-[0.97] transition-transform disabled:opacity-50">
                     <Truck size={12} /> {tt('orderStatusDelivered')}
                   </button>
                   <button
                     onClick={() => cancel(o.id)}
-                    className="flex-none flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-pdanger bg-pdanger/10 border border-pdanger/30 active:scale-[0.97] transition-transform"
+                    className="flex-none flex items-center justify-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-pdanger bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] active:scale-[0.97] transition-transform"
                     title={tt('orderCancelRefund')}>
                     <XCircle size={12} />
                   </button>

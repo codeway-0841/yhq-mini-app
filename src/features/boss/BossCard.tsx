@@ -91,7 +91,7 @@ export default function BossCard() {
         <span
           className={cn(
             'rounded-full px-2 py-0.5 text-[12px] font-bold tracking-tight',
-            isDefeated ? 'bg-psuccess/15 text-psuccess' : 'bg-psurface text-pmuted'
+            isDefeated ? 'bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess' : 'bg-psurface text-pmuted'
           )}
           style={{ color: statusBadge.color }}
         >

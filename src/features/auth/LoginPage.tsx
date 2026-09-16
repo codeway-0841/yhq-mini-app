@@ -408,7 +408,7 @@ export default function LoginPage() {
                 key={m}
                 type="button"
                 onClick={() => { setMode(m); setStep('form'); setMethod(method === 'forgot' ? 'phone' : method); setError(null) }}
-                className={`py-2 rounded-xl text-[13px] font-semibold transition-colors ${
+                className={`min-h-11 py-2 rounded-xl text-[13px] font-semibold transition-colors ${
                   mode === m ? 'bg-pprimary text-ponprimary' : 'text-pmuted'
                 }`}
               >
@@ -425,7 +425,7 @@ export default function LoginPage() {
                   key={m}
                   type="button"
                   onClick={() => { setMethod(m); setError(null); }}
-                  className={`flex-1 py-1.5 rounded-xl text-[12px] font-semibold transition-all shadow-xs ${
+                  className={`flex-1 min-h-11 py-1.5 rounded-xl text-[12px] font-semibold transition-all shadow-xs ${
                     method === m ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] ring-1 ring-pprimary text-pprimary' : 'text-pmuted bg-[color-mix(in_srgb,var(--p-surface)_40%,transparent)] hover:bg-psurface'
                   }`}
                 >
@@ -455,7 +455,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setMethod('forgot')}
-                  className="text-[12px] text-pprimary hover:underline mt-2 w-full text-center"
+                  className="min-h-11 inline-flex items-center justify-center text-[12px] text-pprimary hover:underline mt-2 w-full text-center"
                 >
                   {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
                 </button>
@@ -517,7 +517,7 @@ export default function LoginPage() {
                 <button
                   type="button"
                   onClick={() => setMethod('forgot')}
-                  className="text-[12px] text-pprimary hover:underline -mt-2"
+                  className="min-h-11 inline-flex items-center text-[12px] text-pprimary hover:underline -mt-2"
                   disabled={busy}
                 >
                   {language === 'ru' ? 'Забыли пароль?' : 'Parolingizni unutdingizmi?'}
@@ -533,7 +533,7 @@ export default function LoginPage() {
                 }
                 className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-[15px] mt-1 flex items-center justify-center gap-2 shadow-md"
               >
-                {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
+                {busy && <span className="w-4 h-4 border-2 border-[rgb(var(--p-on-primary-rgb)/0.6)] border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
               </button>
             </form>
@@ -567,14 +567,14 @@ export default function LoginPage() {
                 disabled={otpCode.length !== 6 || busy}
                 className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 w-full py-3.5 rounded-2xl font-semibold text-[15px] flex items-center justify-center gap-2 shadow-md"
               >
-                {busy && <span className="w-4 h-4 border-2 border-ponprimary/60 border-t-transparent rounded-full animate-spin" />}
+                {busy && <span className="w-4 h-4 border-2 border-[rgb(var(--p-on-primary-rgb)/0.6)] border-t-transparent rounded-full animate-spin" />}
                 {tt(mode === 'login' ? 'authLogin' : 'authRegister')}
               </button>
 
               <button
                 type="button"
                 onClick={() => { setStep('form'); setOtpCode(''); setError(null) }}
-                className="text-[13px] text-pmuted hover:text-pfg transition-colors text-center"
+                className="min-h-11 inline-flex items-center justify-center text-[13px] text-pmuted hover:text-pfg transition-colors text-center"
               >
                 {tt('authBack')}
               </button>

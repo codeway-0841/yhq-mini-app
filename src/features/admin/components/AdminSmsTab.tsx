@@ -187,10 +187,10 @@ export default function AdminSmsTab() {
 
 function StatusBadge({ status }: { status: AdminSmsCampaign['status'] }) {
   if (status === 'sent') {
-    return <span className="text-[10px] font-semibold text-psuccess bg-psuccess/10 border border-psuccess/30 px-2 py-1 rounded-full flex items-center gap-1"><CheckCircle2 size={10} /> Yuborildi</span>
+    return <span className="text-[10px] font-semibold text-psuccess bg-[rgb(var(--p-success-rgb)/0.1)] border border-[rgb(var(--p-success-rgb)/0.3)] px-2 py-1 rounded-full flex items-center gap-1"><CheckCircle2 size={10} /> Yuborildi</span>
   }
   if (status === 'sending') {
-    return <span className="text-[10px] font-semibold text-pwarning bg-pwarning/10 border border-pwarning/30 px-2 py-1 rounded-full flex items-center gap-1"><Clock size={10} /> Yuborilmoqda</span>
+    return <span className="text-[10px] font-semibold text-pwarning bg-[rgb(var(--p-warning-rgb)/0.1)] border border-[rgb(var(--p-warning-rgb)/0.3)] px-2 py-1 rounded-full flex items-center gap-1"><Clock size={10} /> Yuborilmoqda</span>
   }
   return <span className="text-[10px] font-semibold text-pmuted bg-psurface px-2.5 py-1 rounded-full shadow-2xs">Draft</span>
 }

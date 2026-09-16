@@ -31,7 +31,8 @@ const buttonVariants = cva(
         outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface',
         ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg',
         // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind
-        // opacity modifier (`bg-pdanger/10`) ISHLAMAYDI — rgb triplet ishlatiladi.
+        // opacity modifier (`bg-pdanger/10`) ISHLAMAYDI — rgb triplet ishlatiladi
+        // (`bg-[rgb(var(--p-danger-rgb)/0.1)]`, design-system testi guard qiladi).
         destructive: 'bg-transparent text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] hover:bg-[rgb(var(--p-danger-rgb)/0.10)]',
         /** Premium obuna CTA — mavzu aksentiga (pprimary) moslashadi */
         gold:        'bg-pprimary text-ponprimary hover:brightness-[1.06]',

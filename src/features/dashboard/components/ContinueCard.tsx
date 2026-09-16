@@ -24,7 +24,7 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
         className={cn(
           'relative w-full overflow-hidden rounded-2xl bg-pcard p-5 text-left shadow-xs',
           'transition-transform duration-150 ease-out',
-          'hover:bg-psurface/50 active:scale-[0.98]',
+          'hover:bg-[rgb(var(--p-surface-rgb)/0.5)] active:scale-[0.98]',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
         )}
       >

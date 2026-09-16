@@ -193,7 +193,7 @@ export default function StatistikaPage() {
                 <span className="flex-1 text-[13px] font-semibold text-pfg truncate">
                   {lang === 'ru' ? topic!.nameRu : topic!.nameUz}
                 </span>
-                <span className="bg-pdanger/15 text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                <span className="bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                   {count}
                 </span>
                 <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">

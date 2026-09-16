@@ -20,7 +20,7 @@ export default function TestExplanation({ loading, text, lesson, language, onClo
   const tt = useT(language)
   return (
     <Sheet onClose={onClose} className="flex max-h-[75dvh] flex-col overflow-visible">
-      <div className="pointer-events-none absolute -top-12 right-5"><TestHelperAvatar /></div>
+      <div className="pointer-events-none absolute -top-8 right-5"><TestHelperAvatar /></div>
       <SheetHeader className="shrink-0 pr-16"><SheetTitle>{tt('whyThis')}</SheetTitle></SheetHeader>
       <SheetClose onClose={onClose} label={tt('pathClose')} />
       <SheetBody className="min-h-0 overflow-y-auto" aria-live="polite" aria-busy={loading}>

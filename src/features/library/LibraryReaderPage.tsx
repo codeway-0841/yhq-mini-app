@@ -305,7 +305,7 @@ export default function LibraryReaderPage() {
           </div>
         ) : status === 'error' ? (
           <div role="alert" className="flex h-full flex-col items-center justify-center gap-4 px-7 text-center">
-            <div className="grid size-16 place-items-center rounded-2xl bg-pdanger/10 text-pdanger">
+            <div className="grid size-16 place-items-center rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger">
               <BookOpen size={28} strokeWidth={1.5} />
             </div>
             <div className="max-w-sm">

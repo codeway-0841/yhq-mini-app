@@ -78,7 +78,7 @@ export default function TableSheet({
         <button
           type="button"
           onClick={copyTable}
-          className="flex h-10 items-center justify-center gap-2 rounded-xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="flex min-h-11 items-center justify-center gap-2 rounded-xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
           <Copy size={15} strokeWidth={1.75} />
           {tt('graphCopyTable')}

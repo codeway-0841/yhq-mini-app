@@ -232,7 +232,7 @@ export default function TestCalculatorSheet({
       <SheetBody className="space-y-4 px-4 pb-6">
         {disabledReason ? (
           <div className="flex flex-col items-center justify-center gap-3 py-8 text-center">
-            <div className="grid size-14 place-items-center rounded-2xl bg-pdanger/10 text-pdanger">
+            <div className="grid size-14 place-items-center rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger">
               <AlertCircle size={32} />
             </div>
             <p className="text-base font-semibold text-pfg">{disabledReason}</p>
@@ -258,7 +258,7 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={handleClear}
-                className="grid h-12 place-items-center rounded-xl bg-pdanger/10 text-pdanger hover:bg-pdanger/20 active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
               >
                 C
               </button>
@@ -310,7 +310,7 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('÷')}
-                className="grid h-12 place-items-center rounded-xl bg-pprimary/10 text-pprimary hover:bg-pprimary/20 active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
               >
                 ÷
               </button>
@@ -340,7 +340,7 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('×')}
-                className="grid h-12 place-items-center rounded-xl bg-pprimary/10 text-pprimary hover:bg-pprimary/20 active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
               >
                 ×
               </button>
@@ -370,7 +370,7 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('-')}
-                className="grid h-12 place-items-center rounded-xl bg-pprimary/10 text-pprimary hover:bg-pprimary/20 active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
               >
                 -
               </button>
@@ -400,7 +400,7 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('+')}
-                className="grid h-12 place-items-center rounded-xl bg-pprimary/10 text-pprimary hover:bg-pprimary/20 active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
               >
                 +
               </button>
