@@ -74,9 +74,13 @@ test.describe('Login first-launch layout', () => {
 
   test('kichik ekranda login document scroll yaratmaydi', async ({ page }) => {
     await page.goto('/app.html#/')
-    await expect(page.getByRole('heading', { name: /KIVVI'ga xush kelibsiz/i })).toBeVisible()
-    await expect(page.getByText(/Progressingiz xavfsiz saqlanishi uchun/i)).toBeVisible()
-    await expect(page.getByText(/Xavfsiz kirish · parol talab qilinmaydi/i)).toBeVisible()
+    // Responsive split: sarlavha/matnnisbat mobil (lg:hidden) va desktop
+    // (hidden lg:flex) variantlarda takrorlanadi — kichik viewport'da MOBIL
+    // nusxa ko'rinadi (telegram-login-title faqat mobil h1'da, max-w-[320px]
+    // faqat mobil sub'da, telegram-login-trust faqat mobil ishonch qatorida).
+    await expect(page.locator('h1.telegram-login-title')).toBeVisible()
+    await expect(page.locator('section p.max-w-\\[320px\\]')).toContainText(/Progressingiz xavfsiz saqlanishi uchun/i)
+    await expect(page.locator('p.telegram-login-trust')).toContainText(/Xavfsiz kirish · parol talab qilinmaydi/i)
     await expect(page.getByRole('button', { name: /Telegram orqali kirish/i })).toBeVisible()
     await expectDocumentToFitViewport(page)
   })
