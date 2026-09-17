@@ -47,6 +47,7 @@ describe('LibraryPage (Kutubxona)', () => {
     fireEvent.click(await screen.findByRole('button', { name: '1-sinf Alifbe' }))
 
     expect(await screen.findByRole('heading', { name: '1-sinf Alifbe' })).toBeTruthy()
+    expect(screen.getByRole('button', { name: 'Kitobni ochish (Asl PDF)' })).toBeTruthy()
     fireEvent.click(screen.getByRole('button', { name: 'Ilovada o‘qish' }))
 
     expect(screen.getByLabelText('location')).toHaveTextContent('/kutubxona/kitob/1-sinf-alifbe')

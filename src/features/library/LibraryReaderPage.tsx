@@ -109,6 +109,7 @@ export default function LibraryReaderPage() {
           cMapUrl: '/pdfjs/cmaps/',
           cMapPacked: true,
           standardFontDataUrl: '/pdfjs/standard_fonts/',
+          wasmUrl: '/pdfjs/wasm/',
         })
         loadingTask.onProgress = ({ loaded, total }: { loaded: number; total: number }) => {
           if (!disposed && total > 0) setProgress(Math.min(100, Math.round((loaded / total) * 100)))
@@ -241,10 +242,10 @@ export default function LibraryReaderPage() {
           <button
             type="button"
             onClick={openFallback}
-            aria-label={tt('libraryOpenExternal')}
-            className="grid size-10 shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            className="flex h-9 shrink-0 items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] px-2.5 text-xs font-bold text-pprimary transition-colors hover:bg-pprimary hover:text-ponprimary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
           >
-            <ExternalLink size={18} strokeWidth={1.75} />
+            <ExternalLink size={14} strokeWidth={2} />
+            <span>{tt('libraryOpenExternalFull')}</span>
           </button>
         )}
       />
@@ -313,13 +314,13 @@ export default function LibraryReaderPage() {
               <p className="mt-1.5 text-sm leading-relaxed text-pmuted">{tt('libraryPdfErrorDesc')}</p>
             </div>
             <div className="flex w-full max-w-xs flex-col gap-2">
-              <Button block onClick={() => setRetryKey((key) => key + 1)}>
+              <Button block onClick={openFallback}>
+                <ExternalLink size={17} />
+                {tt('libraryOpenExternalFull')}
+              </Button>
+              <Button block variant="secondary" onClick={() => setRetryKey((key) => key + 1)}>
                 <RefreshCw size={17} />
                 {tt('libraryRetry')}
-              </Button>
-              <Button block variant="secondary" onClick={openFallback}>
-                <ExternalLink size={17} />
-                {tt('libraryOpenExternal')}
               </Button>
             </div>
           </div>

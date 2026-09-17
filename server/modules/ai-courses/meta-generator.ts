@@ -24,6 +24,7 @@ import {
   AI_COURSE_MOCK_SECTIONS,
   AiCourseLessonSchema,
   AiCoursePayloadSchema,
+  cleanTopicForTitle,
   type AiCourseCreateInput,
   type AiCourseLesson,
   type AiCoursePayload,
@@ -66,10 +67,16 @@ export function buildSectionsPrompt(input: AiCourseCreateInput): { system: strin
   const system = uz
     ? `Sen — o'quv kurslari tuzuvchi mutaxassissan. Faqat SO'RALGAN JSON'ni qaytarasan: izohsiz, markdown'siz, kod-panjara'siz. Barcha matnlar O'zbek tilida.`
     : `Ты — составитель учебных курсов. Возвращай ТОЛЬКО запрошенный JSON: без пояснений, без markdown, без code-fence. Все тексты на русском языке.`
-  const user = `Mavzu/Тема: "${input.topic}" (${input.inputKind})
+  const user = `Foydalanuvchi so'rovi / Запрос: "${input.topic}" (${input.inputKind})
 Kurs rejasi / План курса: ROVNO ${AI_COURSE_MOCK_SECTIONS} bo'lim, har birida ROVNO ${AI_COURSE_MOCK_LESSONS_PER_SECTION} dars.
-Har dars: mavzuga xos aniq "title" + bitta jumla "tldr" (≤150 belgi).
-STRICT JSON: {"sections":[{"title":"1. ...: mavzu","lessons":[{"title":"...","tldr":"..."},...]},...]}`
+
+NOMLASH QOIDALARI (muhim — buzilmasin):
+- "topic": 2-4 so'zli TOZA kurs nomi (masalan "Termodinamika", "Ingliz tili asoslari").
+  Foydalanuvchi gapini KO'CHIRMA ("...kurs qilish kerak", "iltimos" kabi so'zlar TAQIQLANADI).
+- Bo'lim "title": 1-3 so'zli QISQA nom ("Asoslar", "Amaliyot") + boshida "N. " raqami.
+  Mavzu nomini TAKRORLAMA, HAMMASI KATTA HARFDA YOZMA.
+- Dars "title": 2-5 so'z ("Issiqlik miqdori", "Birinchi qonun"). "tldr": bitta jumla (≤150 belgi).
+STRICT JSON: {"topic":"...","sections":[{"title":"1. ...","lessons":[{"title":"...","tldr":"..."},...]},...]}`
   return { system, user }
 }
 
@@ -92,6 +99,8 @@ export function buildSectionLessonsPrompt(
   const user = `Mavzu/Тема: "${input.topic}". Bo'lim/Раздел: "${sectionTitle}".
 Shu bo'limning ROVNO ${blueprints.length} darsini to'liq yoz (id/ord KERAK EMAS — faqat ichki maydonlar):
 ${lessonList}
+
+Dars title/tldr YUQORIDAGI ro'yxatdan AYNAN olinsin (o'zgartirmang, foydalanuvchi gapini qo'shmang).
 
 MUHIM — QISQA yoz (har dars ~1200 belgi, aks holda kesiladi):
 - Matn body: 120-250 belgi. Bilim kartasi body: ≤150 belgi. Variant/step: ≤60 belgi.
@@ -117,10 +126,12 @@ STRICT JSON — darslar massivi: [{...},{...},{...}]`
 // ── AI javob sxemalari (zod — qat'iy darvoza) ────────────────────────────────
 
 const SectionsAiSchema = z.object({
+  /** 2-4 so'zli toza kurs nomi — kurs sarlavhasi SHU bo'ladi */
+  topic: z.string().min(3).max(60),
   sections: z.array(z.object({
-    title: z.string().min(1).max(140),
+    title: z.string().min(1).max(60),
     lessons: z.array(z.object({
-      title: z.string().min(1).max(140),
+      title: z.string().min(1).max(80),
       tldr: z.string().min(20).max(500),
     })).length(AI_COURSE_MOCK_LESSONS_PER_SECTION),
   })).length(AI_COURSE_MOCK_SECTIONS),
@@ -128,6 +139,45 @@ const SectionsAiSchema = z.object({
 
 const LessonAiSchema = AiCourseLessonSchema.omit({ id: true, ord: true })
 const SectionLessonsAiSchema = z.array(LessonAiSchema).length(AI_COURSE_MOCK_LESSONS_PER_SECTION)
+type SectionLessons = z.infer<typeof SectionLessonsAiSchema>
+type OutlineSection = z.infer<typeof SectionsAiSchema>['sections'][number]
+
+/**
+ * Bitta section darslari: Meta chaqiriq + 1 retry; ikkalasi ham yiqilsa —
+ * mock darslar (outline sarlavhalar saqlanadi, ichi zaxira).
+ */
+async function genSectionLessons(
+  apiKey: string,
+  input: AiCourseCreateInput,
+  section: OutlineSection,
+  si: number,
+  fetchFn: FetchFn,
+): Promise<SectionLessons> {
+  const prompt = buildSectionLessonsPrompt(input, section.title, section.lessons)
+  let lastError = ''
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      const raw = await callMetaJson(apiKey, prompt.system, prompt.user, fetchFn, {
+        timeoutMs: LESSONS_TIMEOUT_MS, maxTokens: LESSONS_MAX_TOKENS,
+      })
+      return SectionLessonsAiSchema.parse(raw)
+    } catch (err) {
+      lastError = (err as Error)?.message ?? 'network'
+      console.warn(`[ai-course-meta] sec-${si + 1} urinish ${attempt}:`, lastError.slice(0, 120))
+    }
+  }
+  // Zaxira: mock darslar + outline sarlavha/tldr (sxema-validligi kafolatli)
+  console.warn(`[ai-course-meta] sec-${si + 1} mock fallback (${lastError.slice(0, 80)})`)
+  const mock = buildMockOutline(input).sections[si % AI_COURSE_MOCK_SECTIONS]
+  return mock.lessons.map((l, li) => {
+    const { id: _id, ord: _ord, ...rest } = l
+    return {
+      ...rest,
+      title: section.lessons[li % section.lessons.length].title,
+      tldr: section.lessons[li % section.lessons.length].tldr,
+    }
+  })
+}
 
 // ── JSON extract (markdown fence'larni tozalaydi) ────────────────────────────
 
@@ -229,7 +279,7 @@ export type CourseGenerator = 'meta' | 'mock'
 export async function generateCourseOutlineMeta(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
-): Promise<AiCoursePayload> {
+): Promise<{ payload: AiCoursePayload; topic: string }> {
   const apiKey = config.ai.metaApiKey
   if (!apiKey) throw new Error('META_API_KEY sozlanmagan')
 
@@ -241,17 +291,15 @@ export async function generateCourseOutlineMeta(
     })
     const outline = SectionsAiSchema.parse(outlineRaw)
 
-    // 2-bosqich: har section darslari — 3 ta PARALLEL chaqiriq
+    // 2-bosqich: har section darslari — 3 ta PARALLEL chaqiriq.
+    // Har section alohida himoyalangan: 1 retry, oxirida mock darslar
+    // (bitta yomon section butun kursni mock'ga tushirmaydi).
     const sectionPayloads = await Promise.all(
       outline.sections.map(async (section, si) => {
-        const lessonsPrompt = buildSectionLessonsPrompt(input, section.title, section.lessons)
-        const lessonsRaw = await callMetaJson(apiKey, lessonsPrompt.system, lessonsPrompt.user, fetchFn, {
-          timeoutMs: LESSONS_TIMEOUT_MS, maxTokens: LESSONS_MAX_TOKENS,
-        })
-        const lessons = SectionLessonsAiSchema.parse(lessonsRaw)
+        const lessons = await genSectionLessons(apiKey, input, section, si, fetchFn)
         const full: AiCourseLesson[] = lessons.map((l, li) => ({
           ...l,
-          // id/ord — server deterministik beradi (AI ixtiyoriga topshirilmaydi)
+          // id/ord/title/tldr — server deterministik beradi (AI ixtiyoriga topshirilmaydi)
           id: `s${si + 1}-l${li + 1}`,
           ord: li,
           title: section.lessons[li].title,
@@ -268,7 +316,7 @@ export async function generateCourseOutlineMeta(
 
     const payload = AiCoursePayloadSchema.parse({ version: 1, sections: sectionPayloads })
     assertOutlineSemantics(payload)
-    return payload
+    return { payload, topic: outline.topic }
   } catch (err) {
     const lastError = (err as Error)?.message ?? 'network'
     console.warn('[ai-course-meta]', lastError.slice(0, 160))
@@ -279,18 +327,19 @@ export async function generateCourseOutlineMeta(
 /**
  * Router chaqiradigan YAGONA kirish: kalit bo'lsa Meta, bo'lmasa yoki
  * yiqilsa — deterministik mock. Hech qachon throw qilmaydi.
+ * `title` — ko'rinadigan toza kurs nomi (AI topic yoki tozalangan matn).
  */
 export async function generateCourseOutline(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
-): Promise<{ payload: AiCoursePayload; generator: CourseGenerator }> {
+): Promise<{ payload: AiCoursePayload; generator: CourseGenerator; title: string }> {
   if (config.ai.metaApiKey) {
     try {
-      const payload = await generateCourseOutlineMeta(input, fetchFn)
-      return { payload, generator: 'meta' }
+      const { payload, topic } = await generateCourseOutlineMeta(input, fetchFn)
+      return { payload, generator: 'meta', title: topic }
     } catch (err) {
       console.warn('[ai-course] meta yiqildi, mock fallback:', (err as Error)?.message?.slice(0, 120))
     }
   }
-  return { payload: buildMockOutline(input), generator: 'mock' }
+  return { payload: buildMockOutline(input), generator: 'mock', title: cleanTopicForTitle(input.topic) }
 }

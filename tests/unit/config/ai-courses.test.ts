@@ -24,6 +24,7 @@ import {
   isLessonFullyAnswered,
   shuffleSeeded,
   aiCourseLessonCount,
+  cleanTopicForTitle,
   findCourseLesson,
   findFirstIncompleteLesson,
   type AiCourseLesson,
@@ -158,6 +159,13 @@ describe('config/ai-courses — trust boundary', () => {
     expect(findFirstIncompleteLesson(p, new Set(['s1-l1', 's1-l2', 's1-l3', 's2-l1']))).toBe('s2-l2')
     const all = p.sections.flatMap((s) => s.lessons.map((l) => l.id))
     expect(findFirstIncompleteLesson(p, all)).toBeNull()
+  })
+
+  it('cleanTopicForTitle: buyruq gap → qisqa nom', () => {
+    expect(cleanTopicForTitle('fizikadan termodinamika mavzusida kurs qilish kerak'))
+      .toBe('Fizikadan termodinamika')
+    expect(cleanTopicForTitle('Ingliz tili')).toBe('Ingliz tili')
+    expect(cleanTopicForTitle('  Fotosurat iltimos  ')).toBe('Fotosurat')
   })
 })
 

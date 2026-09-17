@@ -1,4 +1,4 @@
-import { BookOpen, Smartphone } from 'lucide-react'
+import { BookOpen, ExternalLink, Smartphone } from 'lucide-react'
 import { Badge } from '../../../shared/components/ui/badge'
 import { Button } from '../../../shared/components/ui/button'
 import {
@@ -10,7 +10,10 @@ import {
   SheetTitle,
 } from '../../../shared/components/ui/sheet'
 import { useT } from '../../../shared/i18n'
+import { track } from '../../../shared/lib/analytics'
+import { openExternalLink } from '../../../platform/open-link'
 import { libraryCoverSrc, librarySubjectLabel, type LibraryBook } from '../../../content/library'
+import { libraryPdfUrl } from '../library-links'
 import { librarySubjectIcon } from '../subject-icons'
 
 interface BookDetailSheetProps {
@@ -60,14 +63,28 @@ export function BookDetailSheet({ book, language, gradeText, onClose, onRead }: 
             </div>
           </SheetBody>
 
-          <SheetFooter>
-            <Button block onClick={() => onRead(book)}>
+          <SheetFooter className="flex flex-col gap-2">
+            <Button
+              block
+              onClick={() => {
+                track('library_open_original', { slug: book.slug, grade: book.grade })
+                openExternalLink(libraryPdfUrl(book))
+              }}
+            >
+              <ExternalLink strokeWidth={1.75} />
+              {tt('libraryOpenOriginalPdf')}
+            </Button>
+            <Button
+              block
+              variant="secondary"
+              onClick={() => onRead(book)}
+            >
               <BookOpen strokeWidth={1.75} />
               {tt('libraryOpenBook')}
             </Button>
             <p className="flex items-center justify-center gap-1 text-center text-[11.5px] text-psubtle">
               <Smartphone size={11} strokeWidth={1.75} />
-              {tt('libraryPdfHint')}
+              {tt('libraryOriginalPdfHint')}
             </p>
           </SheetFooter>
         </>

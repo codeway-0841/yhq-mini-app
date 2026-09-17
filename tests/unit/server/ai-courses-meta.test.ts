@@ -41,6 +41,7 @@ function stubFetch(content: string, ok = true, status = 200) {
 function cannedOutlineJson(): string {
   const mock = buildMockOutline(BASE)
   return JSON.stringify({
+    topic: 'Ingliz tili',
     sections: mock.sections.map((s) => ({
       title: s.title,
       lessons: s.lessons.map((l) => ({ title: l.title, tldr: l.tldr })),
@@ -135,9 +136,10 @@ describe('meta-generator — generate (stub fetch)', () => {
       await expect(generateCourseOutlineMeta(BASE, stubFlow())).rejects.toThrow()
       return
     }
-    const payload = await generateCourseOutlineMeta(BASE, stubFlow())
+    const { payload, topic } = await generateCourseOutlineMeta(BASE, stubFlow())
     expect(AiCoursePayloadSchema.safeParse(payload).success).toBe(true)
     expect(aiCourseLessonCount(payload)).toBe(9)
+    expect(topic).toBe('Ingliz tili')
     // id/ord — server deterministik beradi
     expect(payload.sections[1].lessons[2].id).toBe('s2-l3')
     expect(payload.sections[1].lessons[2].ord).toBe(2)

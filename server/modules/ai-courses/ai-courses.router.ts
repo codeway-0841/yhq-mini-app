@@ -79,11 +79,12 @@ router.post(
       throw new AppError(429, 'COURSE_LIMIT_REACHED')
     }
 
-    // Real Meta AI (kalit bo'lsa) yoki mock fallback — hech qachon 500 emas
-    const { payload, generator } = await generateCourseOutline(data)
+    // Real Meta AI (kalit bo'lsa) yoki mock fallback — hech qachon 500 emas.
+    // Sarlavha — AI tozalagan topic (xom gap emas); xom matn topic ustunida saqlanadi.
+    const { payload, generator, title } = await generateCourseOutline(data)
     const course = await aiCoursesRepository.createCourse({
       userId,
-      title: data.topic,
+      title,
       data,
       payload,
     })

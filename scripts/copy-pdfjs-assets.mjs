@@ -18,7 +18,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const SRC = path.join(ROOT, 'node_modules', 'pdfjs-dist')
 const DEST = path.join(ROOT, 'public', 'pdfjs')
 
-const ASSETS = ['cmaps', 'standard_fonts']
+const ASSETS = ['cmaps', 'standard_fonts', 'wasm']
 
 if (!existsSync(SRC)) {
   console.error(`pdfjs-dist topilmadi: ${SRC} — avval npm install`)

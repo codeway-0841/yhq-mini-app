@@ -350,6 +350,26 @@ export function aiCourseLessonCount(payload: AiCoursePayload | AiCoursePayloadPu
   return payload.sections.reduce((n, s) => n + s.lessons.length, 0)
 }
 
+/**
+ * Xom user matnidan qisqa sarlavha-bop mavzu ("fizikadan termodinamika
+ * mavzusida kurs qilish kerak" → "Fizikadan termodinamika").
+ * Buyruq-ohangdagi ortiqchalar tozalanadi; yakuniy toza nomni AI
+ * (outline.topic) beradi — bu faqat zaxira/tez ko'rinish uchun.
+ */
+export function cleanTopicForTitle(raw: string): string {
+  const stop = [
+    'kurs qilish kerak', 'kurs kerak', 'kurs tayyorla', 'kurs tayyorlash',
+    'kurs tuz', 'kurs tuzish', 'kurs yarat', 'kurs yaratish', 'kurs och',
+    'kurs qilsang', 'o\'rgat', 'o\'rganmoqchiman', 'o\'rganish kerak',
+    'iltimos', 'mavzusida', 'mavzusi', 'mavzu', 'kerak',
+  ]
+  let s = ` ${raw.toLowerCase()} `
+  for (const w of stop) s = s.split(w).join(' ')
+  s = s.replace(/\s+/g, ' ').trim().slice(0, 60).trim()
+  if (!s) return raw.trim().slice(0, 60)
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 /** Roadmap tartibida birinchi yakunlanmagan dars (Davom etish tugmasi uchun) */
 export function findFirstIncompleteLesson(
   payload: AiCoursePayload | AiCoursePayloadPublic,

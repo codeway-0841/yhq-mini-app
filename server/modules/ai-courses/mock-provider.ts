@@ -15,6 +15,7 @@ import {
   AI_COURSE_MOCK_SECTIONS,
   AI_COURSE_MOCK_LESSONS_PER_SECTION,
   AiCoursePayloadSchema,
+  cleanTopicForTitle,
   type AiCourseCreateInput,
   type AiCoursePayload,
   type AiCoursePractice,
@@ -124,7 +125,8 @@ export function buildCourseOutline(input: AiCourseCreateInput): AiCoursePayload 
   const lang: Lang = input.language === 'ru' ? 'ru' : 'uz'
   const t = T[lang]
   const seed = hashStr(`${lang}:${input.topic.toLowerCase()}`)
-  const topic = input.topic.trim()
+  // Sarlavhalarda xom gap emas, tozalangan mavzu (uzun buyruq gaplar qisqaradi)
+  const topic = cleanTopicForTitle(input.topic)
 
   const sections = []
   for (let s = 0; s < AI_COURSE_MOCK_SECTIONS; s++) {
@@ -169,7 +171,8 @@ export function buildCourseOutline(input: AiCourseCreateInput): AiCoursePayload 
       lessons.push({
         id: lessonId,
         ord: l,
-        title: `${topic}: ${kind.toLowerCase()}`,
+        // QISQA dars nomi (mavzu takrorlanmaydi — kurs sarlavhasida bor)
+        title: kind,
         tldr: t.tldr(topic, kind),
         pages: [
           { kind: 'text' as const, heading: t.page1Heading, body: t.page1(topic) },
@@ -188,7 +191,9 @@ export function buildCourseOutline(input: AiCourseCreateInput): AiCoursePayload 
     sections.push({
       id: `sec-${s + 1}`,
       ord: s,
-      title: `${s + 1}. ${t.sections[s % t.sections.length]}: ${topic}`,
+      // QISQA nom (Wondering pattern: "Foundations", mavzu takrorlanmaydi —
+      // mavzu kurs sarlavhasi + matnlarda baribir bor)
+      title: `${s + 1}. ${t.sections[s % t.sections.length]}`,
       goal: t.sectionGoal[s % t.sectionGoal.length],
       lessons,
     })

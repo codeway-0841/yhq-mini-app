@@ -38,10 +38,18 @@ describe('ai-courses mock-provider', () => {
     expect(a).toEqual(b)
   })
 
-  it('har xil mavzu — har xil sarlavhalar (topic weave)', () => {
-    const a = buildCourseOutline(BASE)
-    const b = buildCourseOutline({ ...BASE, topic: 'Fotosurat' })
-    expect(a.sections[0].title).not.toBe(b.sections[0].title)
+  it('sarlavhalar QISQA, xom gap ko‘chirilmaydi (Wondering pattern)', () => {
+    const p = buildCourseOutline({ ...BASE, topic: 'fizikadan termodinamika mavzusida kurs qilish kerak' })
+    for (const s of p.sections) {
+      expect(s.title.length).toBeLessThanOrEqual(40)
+      expect(s.title).not.toContain('kurs qilish kerak')
+      for (const l of s.lessons) {
+        expect(l.title.length).toBeLessThanOrEqual(60)
+        expect(l.title).not.toContain('kurs qilish kerak')
+      }
+    }
+    // Mavzu baribir matnlarda bor (tldr/pages)
+    expect(p.sections[0].lessons[0].tldr).toContain('Fizikadan termodinamika')
   })
 
   it('semantik invariantlar (mcq/cloze/order javoblari izchil)', () => {
