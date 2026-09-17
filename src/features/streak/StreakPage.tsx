@@ -173,7 +173,7 @@ export default function StreakPage() {
 
       {/* Kalendar — qulay padding va ixcham o'lchamli silliq karta */}
       <div className="rounded-2xl bg-pcard p-4 sm:p-5 mb-4 shadow-xs">
-        <div className="max-w-[300px] sm:max-w-[320px] mx-auto">
+        <div className="w-full max-w-[340px] sm:max-w-[360px] mx-auto">
           <div className="flex items-center justify-between mb-2.5 px-0.5">
             <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
               className="grid size-7 sm:size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
@@ -188,13 +188,13 @@ export default function StreakPage() {
               <ChevronRight size={16} strokeWidth={1.75} />
             </button>
           </div>
-          <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
+          <div className="grid grid-cols-7 gap-1.5 sm:gap-2 text-center">
             {weeks.map((w) => (
               <p key={w} className="text-[10px] font-semibold text-psubtle uppercase py-0.5">{w}</p>
             ))}
             {/* Yuklanish skeleti */}
             {!history && cells.map((date, i) =>
-              date ? <span key={`sk${date}`} className="aspect-square rounded-lg sm:rounded-xl bg-psurface animate-pulse" />
+              date ? <span key={`sk${date}`} className="aspect-square w-full rounded-xl bg-psurface animate-pulse" />
                    : <span key={`e${i}`} />)}
             {history && cells.map((date, i) => {
               if (!date) return <span key={`e${i}`} />
@@ -207,7 +207,7 @@ export default function StreakPage() {
               return (
                 <button key={date} disabled={future}
                   onClick={() => setSelected(date)}
-                  className={`aspect-square min-h-11 min-w-11 rounded-lg sm:rounded-xl flex items-center justify-center text-[11.5px] sm:text-[12px] font-semibold transition-all ${
+                  className={`aspect-square w-full rounded-xl flex items-center justify-center text-[12px] sm:text-[13px] font-semibold transition-all ${
                     level > 0 ? 'text-ponprimary' : 'text-psubtle'} ${isSel ? 'ring-2 ring-pprimary scale-105 relative z-10' : ''
                   } ${isNow && !isSel ? 'ring-1 ring-[rgb(var(--p-blue-rgb)/0.6)]' : ''} ${future ? 'opacity-25' : 'active:scale-95'}`}
                   style={{ background: heatBg(level) }}>

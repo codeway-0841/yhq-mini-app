@@ -130,7 +130,7 @@ export default function IosDock() {
             }`}
             style={{ transform: `translateX(${Math.max(activeIndex, 0) * 100}%)` }}
           >
-            <span className="h-full w-[68px] sm:w-[74px] rounded-full border border-[rgb(var(--p-primary-rgb)/0.25)] bg-[rgb(var(--p-primary-rgb)/0.22)] shadow-xs dark:bg-[rgb(var(--p-primary-rgb)/0.28)]" />
+            <span className="h-full w-[68px] sm:w-[74px] rounded-full bg-[rgb(var(--p-primary-rgb)/0.22)] shadow-xs dark:bg-[rgb(var(--p-primary-rgb)/0.28)]" />
           </span>
 
           {navItems.map((item) => {

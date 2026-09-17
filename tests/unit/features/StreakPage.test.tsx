@@ -58,7 +58,7 @@ describe('StreakPage', () => {
     expect(calendarCard).toHaveClass('sm:p-5')
     expect(calendarCard?.className).not.toContain('p-4.5')
 
-    const compactWrapper = calendarCard?.querySelector('[class*="max-w-[300px]"]')
+    const compactWrapper = calendarCard?.querySelector('[class*="max-w-[340px]"]')
     expect(compactWrapper).toBeInTheDocument()
   })
 
