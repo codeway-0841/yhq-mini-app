@@ -149,23 +149,22 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
-  it('sliding pill skrinshot uslubida: neytral kapsula (rounded-full bg-psurface)', () => {
+  it('sliding pill Telegram Android v12.10.1 uslubida: rounded-full kapsula va moviy aksent', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <IosDock />
       </MemoryRouter>,
     )
     const pill = screen.getByTestId('dock-active-pill')
-    expect(pill.className).toMatch(/rounded-full/)
-    expect(pill.className).toMatch(/bg-psurface/)
-    expect(pill.className).not.toMatch(/bg-pwash/)
-    // Kapsula katakchani to'liq egallaydi (tepa/past bo'shliq YO'Q)
-    expect(pill.className).toMatch(/inset-y-0/)
-    expect(pill.className).not.toMatch(/top-1/)
-    // Active tab matni neytral (aksent EMAS) — kapsula ustida kontrast uchun
+    // Telegram Android pill ikona va yozuvni birgalikda o'raydi (inset-y-0, rounded-full)
+    expect(pill.className).toMatch(/inset-y-0 left-0/)
+    const innerPill = pill.firstElementChild
+    expect(innerPill).not.toBeNull()
+    expect(innerPill?.className).toMatch(/rounded-full/)
+    expect(innerPill?.className).toMatch(/--p-primary-rgb/)
+    // Active tab matni AK SENT (Telegram moviy — kapsula ichida)
     const homeBtn = screen.getByRole('button', { name: /Bosh sahifa/i })
-    expect(homeBtn.className).toMatch(/text-pfg/)
-    expect(homeBtn.className).not.toMatch(/text-pprimary/)
+    expect(homeBtn.className).toMatch(/text-pprimary/)
   })
 
   it('sliding pill active tab ortidan ergashadi (tabs-sliding)', () => {

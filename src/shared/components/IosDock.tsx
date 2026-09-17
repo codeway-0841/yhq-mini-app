@@ -91,15 +91,10 @@ export default function IosDock() {
     navigate(item.path)
   }, [navigate])
 
-  // Sliding active pill (transitions.dev "tabs-sliding"): bitta umumiy pill
-  // active tab ortidan `translateX` bilan sirg'aladi. 5 ustun HAMMASI `flex-1`
-  // (= aniq 20%) bo'lgani uchun JS o'lchash (getBoundingClientRect/RO) SHART
-  // EMAS — pill `w-1/5` + `translateX(idx*100%)`, transition faqat transform'da
-  // (compositor-friendly, layout thrash yo'q). Uslub skrinshot'day (2026-09-16):
-  // NEYTRAL kapsula (`rounded-full bg-psurface` — aksent wash EMAS) + active
-  // matn `text-pfg`; pill katakchani TO'LIQ egallaydi (`inset-y-0` — tepa/past
-  // bo'shliq YO'Q, rasmda kapsula bar ichini to'ldirgani kabi). Yon tab'dan
-  // yon tab'ga o'tishda pill markaziy FAB ostidan o'tadi (FAB opaque + z-10).
+  // Sliding active indicator (Telegram Android v12.10.1 / Material 3 uslubi):
+  // Faol kapsula butun katakchani emas, aynan ikona balandligidagi maydonni
+  // (h-8, rounded-full, moviy tus) o'raydi. Barcha 5 ustun flex-1 (= aniq 20%)
+  // bo'lgani uchun pill w-1/5 + translateX(idx*100%) orqali sirg'aladi.
   const activeIndex = useMemo(() => navItems.findIndex((item) => {
     if (item.isCenter) return false
     return item.path === '/'
@@ -116,63 +111,59 @@ export default function IosDock() {
         isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-[calc(100%+1.5rem+var(--safe-bottom,0px))] opacity-0 pointer-events-none'
       }`}
     >
-      {/* Suzuvchi pill (iOS Liquid Glass): pastdan uzilgan, yumaloq, blur.
-          Opaque fallback YO'Q — rgb-triplet/alpha barcha WebView'da ishlaydi
-          (DesktopSidebar/IosDock eski pattern). */}
+      {/* Suzuvchi pill (Telegram Android v12.10.1 uslubi):
+          To'liq yumaloq (rounded-full), qoramtir shaffof shisha (backdrop-blur-2xl),
+          nozik chegara va yumshoq soya. */}
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="pointer-events-auto w-full max-w-md rounded-3xl border border-pline bg-[rgb(var(--p-card-rgb)/0.75)] px-2 py-2 shadow-lg backdrop-blur-2xl saturate-150"
+        className="pointer-events-auto w-full max-w-[440px] rounded-full bg-[rgb(var(--p-card-rgb)/0.92)] p-[3px] shadow-2xl shadow-black/40 backdrop-blur-2xl saturate-150"
       >
         <div className="relative flex items-center justify-around">
-          {/* Sliding pill — tugmalar (z-10) ostida, pointer event olmaydi */}
+          {/* Sliding active indicator (Telegram Android v12.10.1 uslubi):
+              Faol kapsula dock chegarasiga 2-3px masofada to'liq joylashadi. */}
           <span
             aria-hidden="true"
             data-testid="dock-active-pill"
-            className={`pointer-events-none absolute inset-y-0 left-0 w-1/5 rounded-full bg-psurface transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none ${
+            className={`pointer-events-none absolute inset-y-0 left-0 flex w-1/5 items-center justify-center transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none ${
               activeIndex >= 0 ? 'opacity-100' : 'opacity-0'
             }`}
             style={{ transform: `translateX(${Math.max(activeIndex, 0) * 100}%)` }}
-          />
+          >
+            <span className="h-full w-[68px] sm:w-[74px] rounded-full border border-[rgb(var(--p-primary-rgb)/0.25)] bg-[rgb(var(--p-primary-rgb)/0.22)] shadow-xs dark:bg-[rgb(var(--p-primary-rgb)/0.28)]" />
+          </span>
+
           {navItems.map((item) => {
             const isActive = item.path === '/'
               ? location.pathname === '/'
               : location.pathname.startsWith(item.path)
             const Icon = item.icon
 
-            if (item.isCenter) {
-              return (
-                <div key={item.id} className="relative z-10 flex-1 flex flex-col items-center justify-center">
-                  <button
-                    type="button"
-                    onClick={() => handleNav(item)}
-                    aria-label={item.shortLabel[lang]}
-                    className="group relative flex size-12 items-center justify-center rounded-full bg-pprimary text-ponprimary shadow-lg [--tw-shadow-color:rgb(var(--p-primary-rgb)/0.35)] transition-all duration-150 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2"
-                  >
-                    <Icon size={22} strokeWidth={2.2} className="transition-transform group-hover:scale-110" />
-                  </button>
-                </div>
-              )
-            }
-
             return (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => handleNav(item)}
-                aria-label={tt(item.labelKey)}
+                aria-label={item.isCenter ? item.shortLabel[lang] : tt(item.labelKey)}
                 aria-current={isActive ? 'page' : undefined}
                 title={tt(item.labelKey)}
-                className={`relative z-10 flex-1 flex flex-col items-center justify-center min-w-0 py-2.5 rounded-full transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
-                  isActive ? 'text-pfg font-semibold' : 'text-pmuted hover:text-pfg'
+                className={`group relative z-10 flex min-w-0 flex-1 flex-col items-center justify-center rounded-full py-1.5 transition-all duration-150 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+                  isActive ? 'text-pprimary font-semibold' : 'text-pmuted hover:text-pfg'
                 }`}
               >
                 <Icon
-                  size={22}
+                  size={23}
                   strokeWidth={isActive ? 2.4 : 1.8}
-                  className="transition-transform"
+                  className={`transition-colors duration-200 ${
+                    isActive ? 'text-pprimary' : 'text-pmuted group-hover:text-pfg'
+                  }`}
                 />
-                <span className="text-[10.5px] tracking-tight mt-1 whitespace-nowrap">
+
+                <span
+                  className={`mt-1 whitespace-nowrap text-[11px] leading-tight tracking-tight transition-colors duration-200 ${
+                    isActive ? 'font-semibold text-pprimary' : 'font-medium text-pmuted group-hover:text-pfg'
+                  }`}
+                >
                   {item.shortLabel[lang]}
                 </span>
               </button>
