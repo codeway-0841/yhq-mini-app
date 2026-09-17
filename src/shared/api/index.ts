@@ -8,6 +8,14 @@ import type {
   AiTestAnswers, AiTestGrading, AiTestPublicPayload,
 } from '../../../shared/ai-daily-test'
 import type {
+  AiCourseAnswers,
+  AiCourseCreateInput,
+  AiCourseGrading,
+  AiCourseKnowledgeCard,
+  AiCourseLessonPublic,
+  AiCoursePayloadPublic,
+} from '../../../shared/ai-courses'
+import type {
   CreateTestSessionInput,
   SessionPositionProofInput,
   SubmitTestAnswerInput,
@@ -805,6 +813,53 @@ export const api = {
       }
       test: AiTestPublicPayload & { id: number; slot: number; date: string }
     }>('GET', `/ai-tests/${testId}/result`),
+
+  // ── AI Kurslar (user-created courses) ────────────────────────────────────
+  /** Kurs yaratish (mock outline; 429 COURSE_LIMIT_REACHED) */
+  createAiCourse: (data: AiCourseCreateInput) =>
+    request<{
+      ok: true
+      course: {
+        id: number; title: string; topic: string; inputKind: string
+        lessonLength: string; language: string; totalLessons: number
+        completedLessons: number; createdAt: string
+        generator: 'meta' | 'mock'
+        limit: { used: number; total: number; premium: boolean }
+      }
+    }>('POST', '/ai-courses', data, 60_000), // real AI generatsiya 60s gacha (Vercel maxDuration)
+
+  /** Mening kurslarim (progress bilan) */
+  getAiCourses: () =>
+    request<{
+      ok: true
+      courses: {
+        id: number; title: string; topic: string; inputKind: string
+        language: string; totalLessons: number; completedLessons: number
+        createdAt: string
+      }[]
+    }>('GET', '/ai-courses'),
+
+  /** Kurs tafsiloti (public payload + completed ids) */
+  getAiCourse: (courseId: number) =>
+    request<{
+      ok: true
+      course: AiCoursePayloadPublic & {
+        id: number; title: string; topic: string; inputKind: string
+        lessonLength: string; language: string; totalLessons: number
+        completedLessons: number; completedLessonIds: string[]; createdAt: string
+      }
+    }>('GET', `/ai-courses/${courseId}`),
+
+  /** Darsni yakunlash — idempotent (clientToken); javob: grading + knowledge cards */
+  completeAiCourseLesson: (
+    courseId: number, lessonId: string,
+    data: { answers: AiCourseAnswers; clientToken: string },
+  ) =>
+    request<{
+      ok: true; duplicate: boolean; grading: AiCourseGrading
+      coinsAwarded: number; balance?: number
+      knowledgeCards?: AiCourseKnowledgeCard[]; lesson?: AiCourseLessonPublic
+    }>('POST', `/ai-courses/${courseId}/lessons/${encodeURIComponent(lessonId)}/complete`, data, 20_000),
 
   // ── AI Tutor (Snap & Solve + Socratic Tutor) ────────────────────────────
   /** Rasmdan masalani yechish (Multimodal Vision AI) */

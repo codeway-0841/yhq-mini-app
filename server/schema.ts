@@ -4,6 +4,9 @@ import {
   integer, boolean, jsonb, timestamp, unique, index, check, primaryKey, real,
 } from 'drizzle-orm/pg-core'
 import type { AiTestPayload, AiTestAnswers, AiTestGrading } from '../shared/ai-daily-test'
+import type {
+  AiCoursePayload, AiCourseAnswers, AiCourseGrading,
+} from '../shared/ai-courses'
 import type { GraphPayload } from '../shared/contracts/graph'
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
@@ -1063,6 +1066,65 @@ export const aiDailyTestAttempts = pgTable('ai_daily_test_attempts', {
   unique('uq_ai_attempt_token').on(t.userId, t.clientToken),
   index('idx_ai_attempt_user').on(t.userId),
   check('chk_ai_attempt_scores', sql`${t.scoreCorrect} >= 0 AND ${t.essayScore} BETWEEN 0 AND 10 AND ${t.coinsAwarded} >= 0`),
+])
+
+// ─── AI KURSLAR (user-created courses, Wondering-style) ──────────────────────
+
+/**
+ * Foydalanuvchi yaratgan AI kurs — SSOT: shared/ai-courses.ts.
+ * MVP generatsiya: deterministik mock provider (real Gemini keyingi bosqich).
+ * `payload` jsonb'da javob kalitlari HAM bor — client'ga FAQAT
+ * toPublicCoursePayload() orqali javoblarsiz chiqadi (scoring trust boundary).
+ * Oylik yaratish limiti (free 2 / premium 15) repository'da Tashkent oyi
+ * bo'yicha COUNT bilan tekshiriladi (jadvalda alohida counter yo'q).
+ */
+export const aiCourses = pgTable('ai_courses', {
+  id:        serial('id').primaryKey(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  title:      text('title').notNull(),
+  /** Outline qurilgan mavzu matni */
+  topic:      text('topic').notNull(),
+  /** 'topic' | 'link' | 'pdf' | 'chat' */
+  inputKind:  text('input_kind').notNull().default('topic'),
+  /** URL / fayl nomi / suhbat id — manba izi */
+  inputRef:   text('input_ref').notNull().default(''),
+  /** 'short' | 'standard' | 'deep' */
+  lessonLength: text('lesson_length').notNull().default('standard'),
+  /** 'uz' | 'ru' — generatsiya tili */
+  language:   text('language').notNull().default('uz'),
+  payload:    jsonb('payload').$type<AiCoursePayload>().notNull(),
+  createdAt:  timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_ai_courses_user_created').on(t.userId, t.createdAt),
+  check('chk_ai_course_input_kind', sql`${t.inputKind} IN ('topic','link','pdf','chat')`),
+  check('chk_ai_course_length', sql`${t.lessonLength} IN ('short','standard','deep')`),
+  check('chk_ai_course_lang', sql`${t.language} IN ('uz','ru')`),
+])
+
+/**
+ * Dars yakunlash — 1 dars = 1 yozuv (uq_ai_course_progress_lesson).
+ * `grading` jsonb: AiCourseGrading (reveal post-complete, o'z egasiga).
+ * Coin FAQAT birinchi yakunlashda (CTE award g'olibga), ledger reason
+ * 'ai_course', ref 'ai_course:<courseId>:<lessonId>:<userId>'.
+ * client_token UNIQUE(user) — complete idempotency (retry xavfsiz).
+ */
+export const aiCourseProgress = pgTable('ai_course_progress', {
+  id:         serial('id').primaryKey(),
+  courseId:   integer('course_id').notNull().references(() => aiCourses.id, { onDelete: 'cascade' }),
+  lessonId:   text('lesson_id').notNull(),
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  answers:    jsonb('answers').$type<AiCourseAnswers>().notNull(),
+  grading:    jsonb('grading').$type<AiCourseGrading>().notNull(),
+  scoreCorrect: integer('score_correct').notNull(),
+  scoreTotal: integer('score_total').notNull(),
+  coinsAwarded: integer('coins_awarded').notNull().default(0),
+  clientToken: text('client_token').notNull(),
+  completedAt: timestamp('completed_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_ai_course_progress_lesson').on(t.courseId, t.lessonId, t.userId),
+  unique('uq_ai_course_progress_token').on(t.userId, t.clientToken),
+  index('idx_ai_course_progress_user_course').on(t.userId, t.courseId),
+  check('chk_ai_course_progress_scores', sql`${t.scoreCorrect} >= 0 AND ${t.scoreTotal} > 0 AND ${t.scoreCorrect} <= ${t.scoreTotal} AND ${t.coinsAwarded} >= 0`),
 ])
 
 /**

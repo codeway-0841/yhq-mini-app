@@ -34,6 +34,8 @@ const envSchema = z.object({
 
   /** Integratsiyalar (optional — yo'q bo'lsa feature o'chiq) */
   GEMINI_API_KEY: z.string().optional(),
+  /** Meta Model API (AI Kurslar real generatsiyasi) — yo'q bo'lsa mock fallback */
+  META_API_KEY:  z.string().optional(),
   CRON_SECRET:    z.string().optional(),
   SENTRY_DSN:     z.string().optional(),
 
@@ -210,6 +212,8 @@ export const config = {
   /** AI Tutor (Gemini) — yo'q bo'lsa endpoint 503 qaytaradi */
   ai: {
     geminiApiKey: env.GEMINI_API_KEY,
+    /** Meta Model API (AI Kurslar) — yo'q bo'lsa deterministik mock outline */
+    metaApiKey: env.META_API_KEY,
   },
 
   /** Vercel Cron himoyasi — yo'q bo'lsa cron endpoint himoyasiz (faqat dev'da OK) */

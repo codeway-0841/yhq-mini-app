@@ -45,6 +45,10 @@ const formulasChunk        = () => import('./features/formulas/FormulasPage')
 const searchChunk           = () => import('./features/search/SearchPage')
 const aiTestHubChunk        = () => import('./features/ai-test/AiTestHub')
 const aiTestSessionChunk    = () => import('./features/ai-test/AiTestSession')
+const aiCoursesHubChunk      = () => import('./features/ai-courses/AiCoursesHub')
+const aiCourseCreateChunk    = () => import('./features/ai-courses/AiCourseCreate')
+const aiCourseDetailChunk    = () => import('./features/ai-courses/AiCourseDetail')
+const aiCourseLessonChunk    = () => import('./features/ai-courses/AiCourseLesson')
 const snapSolveChunk        = () => import('./features/ai-tutor/SnapSolveHub')
 const notFoundChunk        = () => import('./shared/components/NotFound')
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
@@ -82,6 +86,10 @@ const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
 const AiTestHub       = lazy(aiTestHubChunk)
 const AiTestSession   = lazy(aiTestSessionChunk)
+const AiCoursesHub    = lazy(aiCoursesHubChunk)
+const AiCourseCreate  = lazy(aiCourseCreateChunk)
+const AiCourseDetail  = lazy(aiCourseDetailChunk)
+const AiCourseLesson  = lazy(aiCourseLessonChunk)
 const SnapSolveHub    = lazy(snapSolveChunk)
 const NotFound        = lazy(notFoundChunk)
 const Onboarding      = lazy(onboardingChunk)
@@ -104,6 +112,7 @@ const routeChunkPrefetchers = [
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
+  aiCoursesHubChunk, aiCourseCreateChunk, aiCourseDetailChunk, aiCourseLessonChunk,
   graphChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
@@ -328,6 +337,10 @@ export default function App() {
           <Route path="/qidiruv"    element={<SearchPage />} />
           <Route path="/ai-test"    element={<AiTestHub />} />
           <Route path="/ai-test/:id" element={<AiTestSession />} />
+          <Route path="/ai-kurslar" element={<AiCoursesHub />} />
+          <Route path="/ai-kurslar/yangi" element={<AiCourseCreate />} />
+          <Route path="/ai-kurslar/:id" element={<AiCourseDetail />} />
+          <Route path="/ai-kurslar/:courseId/dars/:lessonId" element={<AiCourseLesson />} />
           <Route path="/ai-tutor"   element={<SnapSolveHub />} />
           <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
           <Route path="/admin"      element={<AdminPage />} />

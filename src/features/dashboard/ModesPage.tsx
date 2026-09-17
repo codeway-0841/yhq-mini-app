@@ -15,6 +15,7 @@ import {
   NotebookText,
   Camera,
   LineChart,
+  Sparkles,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -78,6 +79,7 @@ export default function ModesPage() {
       ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
       : []),
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
+    { icon: Sparkles,      label: tt('aiCourseTitle'),  onClick: () => navigate('/ai-kurslar') },
   ]
 
   return (
