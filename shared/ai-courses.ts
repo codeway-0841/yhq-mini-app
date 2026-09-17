@@ -350,6 +350,18 @@ export function aiCourseLessonCount(payload: AiCoursePayload | AiCoursePayloadPu
   return payload.sections.reduce((n, s) => n + s.lessons.length, 0)
 }
 
+/** Roadmap tartibida birinchi yakunlanmagan dars (Davom etish tugmasi uchun) */
+export function findFirstIncompleteLesson(
+  payload: AiCoursePayload | AiCoursePayloadPublic,
+  completedIds: ReadonlySet<string> | readonly string[],
+): string | null {
+  const done = completedIds instanceof Set ? completedIds : new Set(completedIds)
+  const ordered = [...payload.sections]
+    .sort((a, b) => a.ord - b.ord)
+    .flatMap((s) => [...s.lessons].sort((a, b) => a.ord - b.ord))
+  return ordered.find((l) => !done.has(l.id))?.id ?? null
+}
+
 export function findCourseLesson(
   payload: AiCoursePayload,
   lessonId: string,

@@ -25,6 +25,7 @@ import {
   shuffleSeeded,
   aiCourseLessonCount,
   findCourseLesson,
+  findFirstIncompleteLesson,
   type AiCourseLesson,
   type AiCourseAnswers,
 } from '../../../shared/ai-courses'
@@ -149,6 +150,14 @@ describe('config/ai-courses — trust boundary', () => {
     expect(aiCourseLessonCount(pub)).toBe(9)
     expect(findCourseLesson(pub, 's2-l1')?.sectionId).toBe('sec-2')
     expect(findCourseLesson(pub, 'yoq')).toBeNull()
+  })
+
+  it('findFirstIncompleteLesson: roadmap tartibida birinchi bo‘sh', () => {
+    const p = buildValidPayload()
+    expect(findFirstIncompleteLesson(p, [])).toBe('s1-l1')
+    expect(findFirstIncompleteLesson(p, new Set(['s1-l1', 's1-l2', 's1-l3', 's2-l1']))).toBe('s2-l2')
+    const all = p.sections.flatMap((s) => s.lessons.map((l) => l.id))
+    expect(findFirstIncompleteLesson(p, all)).toBeNull()
   })
 })
 

@@ -6,7 +6,7 @@
 
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Sparkles, Plus, CheckCircle2, BookOpen } from 'lucide-react'
+import { Sparkles, Plus, CheckCircle2, BookOpen, Lightbulb, Compass } from 'lucide-react'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -26,27 +26,63 @@ interface HubCourse {
   createdAt: string
 }
 
+interface HubLimit {
+  used: number
+  total: number
+  premium: boolean
+}
+
+/** Kurs vizual ID'si — id hash'idan deterministik yumshoq tint + ikonka */
+const TINTS = [
+  { bg: '--p-purple-rgb', fg: 'text-ppurple', Icon: Sparkles },
+  { bg: '--p-blue-rgb', fg: 'text-pblue', Icon: BookOpen },
+  { bg: '--p-gold-rgb', fg: 'text-pgold', Icon: Lightbulb },
+  { bg: '--p-success-rgb', fg: 'text-psuccess', Icon: Compass },
+] as const
+
+function tintFor(id: number): (typeof TINTS)[number] {
+  return TINTS[Math.abs(id) % TINTS.length]
+}
+
 export default function AiCoursesHub() {
   const navigate = useNavigate()
   const settings = useAppStore((s) => s.settings)
   const tt = useT(settings.language)
 
   const [courses, setCourses] = useState<HubCourse[] | null>(null)
+  const [limit, setLimit] = useState<HubLimit | null>(null)
   const [error, setError] = useState(false)
 
   useEffect(() => {
     let cancelled = false
     api.getAiCourses()
-      .then((r) => { if (!cancelled) setCourses(r.courses) })
+      .then((r) => {
+        if (cancelled) return
+        setCourses(r.courses)
+        setLimit(r.limit)
+      })
       .catch(() => { if (!cancelled) setError(true) })
     return () => { cancelled = true }
   }, [])
+
+  const limitLine = limit
+    ? tt('aiCourseLimitLine')
+      .replace('{used}', String(limit.used))
+      .replace('{total}', String(limit.total))
+    : null
 
   return (
     <div className="px-4 pb-4">
       <PageHeader title={tt('aiCourseTitle')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
 
-      <p className="mb-3 text-[13px] text-pmuted">{tt('aiCourseMeta')}</p>
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <p className="text-[13px] text-pmuted">{tt('aiCourseMeta')}</p>
+        {limitLine && (
+          <p className="shrink-0 rounded-full bg-psurface px-2.5 py-1 text-[11px] font-bold text-pmuted shadow-2xs">
+            {limitLine}
+          </p>
+        )}
+      </div>
 
       {courses === null && !error && (
         <div className="grid place-items-center py-16">
@@ -65,6 +101,8 @@ export default function AiCoursesHub() {
         {courses?.map((c) => {
           const done = c.completedLessons >= c.totalLessons && c.totalLessons > 0
           const pct = c.totalLessons > 0 ? Math.round((c.completedLessons / c.totalLessons) * 100) : 0
+          const tint = tintFor(c.id)
+          const TintIcon = done ? CheckCircle2 : tint.Icon
           return (
             <button
               key={c.id}
@@ -72,10 +110,11 @@ export default function AiCoursesHub() {
               className="rounded-2xl bg-pcard w-full p-4 text-left shadow-xs transition-all hover:bg-psurface active:scale-[0.98]"
             >
               <div className="flex items-center gap-3">
-                <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
-                  {done
-                    ? <CheckCircle2 size={24} strokeWidth={1.75} className="text-psuccess" />
-                    : <BookOpen size={24} strokeWidth={1.75} />}
+                <div
+                  className="flex size-11 shrink-0 items-center justify-center rounded-2xl"
+                  style={{ backgroundColor: `rgb(var(${tint.bg}) / 0.14)` }}
+                >
+                  <TintIcon size={22} strokeWidth={1.75} className={done ? 'text-psuccess' : tint.fg} />
                 </div>
                 <div className="min-w-0 flex-1">
                   <p className="truncate text-[15px] font-bold text-pfg">{c.title}</p>

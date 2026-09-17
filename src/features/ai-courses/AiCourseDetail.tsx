@@ -5,14 +5,14 @@
 
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { CheckCircle2, Circle, Sparkles } from 'lucide-react'
+import { CheckCircle2, Circle, Play, Sparkles } from 'lucide-react'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Progress } from '../../shared/components/ui/progress'
-import type { AiCoursePayloadPublic } from '../../../shared/ai-courses'
+import { findFirstIncompleteLesson, type AiCoursePayloadPublic } from '../../../shared/ai-courses'
 
 interface DetailCourse extends AiCoursePayloadPublic {
   id: number
@@ -76,6 +76,7 @@ export default function AiCourseDetail() {
 
   const doneSet = new Set(course.completedLessonIds)
   const pct = course.totalLessons > 0 ? Math.round((course.completedLessons / course.totalLessons) * 100) : 0
+  const nextLessonId = findFirstIncompleteLesson(course, doneSet)
 
   return (
     <div className="px-4 pb-4">
@@ -89,6 +90,16 @@ export default function AiCourseDetail() {
         <div className="mt-2">
           <Progress value={pct} label={`${pct}%`} />
         </div>
+        {nextLessonId && (
+          <button
+            type="button"
+            onClick={() => navigate(`/ai-kurslar/${course.id}/dars/${nextLessonId}`)}
+            className="btn-premium mt-3 flex w-full items-center justify-center gap-2"
+          >
+            <Play size={16} strokeWidth={2} />
+            {course.completedLessons === 0 ? tt('aiCourseStartLesson') : tt('aiCourseContinue')}
+          </button>
+        )}
       </div>
 
       <div className="flex flex-col gap-4">

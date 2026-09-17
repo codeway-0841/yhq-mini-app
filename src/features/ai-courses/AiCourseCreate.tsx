@@ -4,7 +4,7 @@
  * POST /api/ai-courses → tafsilotga o'tadi. 429 = oylik limit.
  */
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Link2, FileText, MessagesSquare, Type, Loader2 } from 'lucide-react'
 import { api, ApiError } from '../../shared/api'
@@ -38,6 +38,20 @@ export default function AiCourseCreate() {
   const [inputRef, setInputRef] = useState('')
   const [length, setLength] = useState<AiCourseLessonLength>('standard')
   const [busy, setBusy] = useState(false)
+  const [elapsed, setElapsed] = useState(0)
+
+  // Generatsiya ~27s: bosqich matni vaqtga qarab almashadi (0-8s reja, 8-22s darslar, keyin tekshiruv)
+  useEffect(() => {
+    if (!busy) { setElapsed(0); return }
+    const started = Date.now()
+    const timer = setInterval(() => setElapsed(Math.floor((Date.now() - started) / 1000)), 500)
+    return () => clearInterval(timer)
+  }, [busy])
+
+  const stepLabel = !busy ? null
+    : elapsed < 8 ? tt('aiCourseStepPlan')
+    : elapsed < 22 ? tt('aiCourseStepLessons')
+    : tt('aiCourseStepCheck')
 
   const kindLabel = (k: AiCourseInputKind) =>
     k === 'topic' ? tt('aiCourseInputTopic')
@@ -137,8 +151,11 @@ export default function AiCourseCreate() {
           className="btn-premium mt-4 flex w-full items-center justify-center gap-2 disabled:opacity-50"
         >
           {busy && <Loader2 size={18} className="animate-spin" />}
-          {busy ? tt('aiCourseCreating') : tt('aiCourseCreate')}
+          {busy ? (stepLabel ?? tt('aiCourseCreating')) : tt('aiCourseCreate')}
         </button>
+        {busy && (
+          <p className="mt-2 text-center text-[12px] text-pmuted">{tt('aiCourseWaitNote')}</p>
+        )}
       </div>
     </div>
   )

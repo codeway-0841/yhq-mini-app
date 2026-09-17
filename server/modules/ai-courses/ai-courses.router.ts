@@ -115,10 +115,14 @@ router.get(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const courses = await aiCoursesRepository.listMineWithProgress(userId)
+    const premium = await isPremiumUser(userId)
+    const limitTotal = premium ? AI_COURSE_PREMIUM_MONTHLY_LIMIT : AI_COURSE_FREE_MONTHLY_LIMIT
+    const limitUsed = await aiCoursesRepository.countCreatedThisMonth(userId)
 
     res.setHeader('Cache-Control', 'private, no-store')
     res.json({
       ok: true,
+      limit: { used: limitUsed, total: limitTotal, premium },
       courses: courses.map((c) => ({
         id: c.id,
         title: c.title,

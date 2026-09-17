@@ -828,10 +828,11 @@ export const api = {
       }
     }>('POST', '/ai-courses', data, 60_000), // real AI generatsiya 60s gacha (Vercel maxDuration)
 
-  /** Mening kurslarim (progress bilan) */
+  /** Mening kurslarim (progress + oylik limit bilan) */
   getAiCourses: () =>
     request<{
       ok: true
+      limit: { used: number; total: number; premium: boolean }
       courses: {
         id: number; title: string; topic: string; inputKind: string
         language: string; totalLessons: number; completedLessons: number

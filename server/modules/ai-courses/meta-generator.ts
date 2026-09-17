@@ -95,6 +95,11 @@ ${lessonList}
 
 MUHIM — QISQA yoz (har dars ~1200 belgi, aks holda kesiladi):
 - Matn body: 120-250 belgi. Bilim kartasi body: ≤150 belgi. Variant/step: ≤60 belgi.
+- SIFAT: har matn sahifada BITTA aniq misol bo'lsin (nazariya + misol).
+  mcq chalg'ituvchilari ishonarli (darhol bilinmaydigan) bo'lsin; cloze —
+  kalit atamalardan; order — real jarayon bosqichlari; flashcard — imtihonda
+  tushadigan yodlash nuqtasi. Bo'sh iboralar TAQIQLANADI ("juda muhim",
+  "albatta yodlang", "xulosa qilib aytganda" kabi).
 - "pages": ${shape.pages}. Matn: {"kind":"text","heading":"...","body":"..."}.
   Vizual: {"kind":"visual","style":"bar-chart"|"pie-chart"|"cycle","heading":"...","items":[{"label":"...","value":0-100}]} (2-4 items).
 - "practices": ${shape.practices}.

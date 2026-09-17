@@ -4,9 +4,9 @@
  * Yakunlash: POST .../complete → ball + coin + bilim kartalari.
  */
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { ArrowUp, ArrowDown, CheckCircle2, Loader2, Lock, RotateCcw } from 'lucide-react'
+import { ArrowUp, ArrowDown, ArrowLeft, ArrowRight, CheckCircle2, Loader2, Lock, RotateCcw } from 'lucide-react'
 import { api, ApiError } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -119,6 +119,7 @@ export default function AiCourseLesson() {
   const tt = useT(language)
 
   const [lesson, setLesson] = useState<AiCourseLessonPublic | null>(null)
+  const [nav, setNav] = useState<{ id: string; title: string }[]>([])
   const [courseTitle, setCourseTitle] = useState('')
   const [alreadyDone, setAlreadyDone] = useState(false)
   const [loadError, setLoadError] = useState(false)
@@ -130,13 +131,25 @@ export default function AiCourseLesson() {
 
   useEffect(() => {
     if (!Number.isInteger(courseId) || courseId < 1 || !lessonId) { setLoadError(true); return }
+    // Dars almashganda oldingi javob/natija qolmasligi uchun tozalash
+    setLesson(null)
+    setNav([])
+    setAnswers({ flashcard: {}, mcq: {}, cloze: {}, order: {} })
+    setFlipped({})
+    setResult(null)
+    setLoadError(false)
+    tokenRef.current = newClientToken()
     let cancelled = false
     api.getAiCourse(courseId)
       .then((r) => {
         if (cancelled) return
-        const found = r.course.sections.flatMap((s) => s.lessons).find((l) => l.id === lessonId)
+        const flat = [...r.course.sections]
+          .sort((a, b) => a.ord - b.ord)
+          .flatMap((s) => [...s.lessons].sort((a, b) => a.ord - b.ord))
+        const found = flat.find((l) => l.id === lessonId)
         if (!found) { setLoadError(true); return }
         setLesson(found)
+        setNav(flat.map((l) => ({ id: l.id, title: l.title })))
         setCourseTitle(r.course.title)
         setAlreadyDone(r.course.completedLessonIds.includes(lessonId))
       })
@@ -170,7 +183,9 @@ export default function AiCourseLesson() {
     }
   }
 
-  const tabDefault = useMemo(() => 'read', [])
+  const navIndex = nav.findIndex((n) => n.id === lesson?.id)
+  const prevLesson = navIndex > 0 ? nav[navIndex - 1] : null
+  const nextLesson = navIndex >= 0 && navIndex < nav.length - 1 ? nav[navIndex + 1] : null
 
   if (loadError) {
     return (
@@ -198,7 +213,7 @@ export default function AiCourseLesson() {
     <div className="px-4 pb-4">
       <PageHeader title={lesson.title} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
 
-      <Tabs defaultValue={tabDefault}>
+      <Tabs defaultValue="read">
         <TabsList className="mb-3 grid w-full grid-cols-3">
           <TabsTrigger value="read">{tt('aiCourseTldr')}</TabsTrigger>
           <TabsTrigger value="practice">{tt('aiCoursePractice')}</TabsTrigger>
@@ -344,6 +359,37 @@ export default function AiCourseLesson() {
           )}
         </TabsContent>
       </Tabs>
+
+      {(prevLesson || nextLesson) && (
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          {prevLesson ? (
+            <button
+              type="button"
+              onClick={() => navigate(`/ai-kurslar/${courseId}/dars/${prevLesson.id}`)}
+              className="flex items-center gap-1.5 rounded-2xl bg-pcard px-3 py-2.5 text-left shadow-xs transition-all hover:bg-psurface active:scale-[0.98]"
+            >
+              <ArrowLeft size={16} className="shrink-0 text-pmuted" />
+              <span className="min-w-0">
+                <span className="block text-[11px] font-semibold text-pmuted">{tt('aiCoursePrevLesson')}</span>
+                <span className="block truncate text-[12.5px] font-bold text-pfg">{prevLesson.title}</span>
+              </span>
+            </button>
+          ) : <span />}
+          {nextLesson ? (
+            <button
+              type="button"
+              onClick={() => navigate(`/ai-kurslar/${courseId}/dars/${nextLesson.id}`)}
+              className="flex items-center justify-end gap-1.5 rounded-2xl bg-pcard px-3 py-2.5 text-right shadow-xs transition-all hover:bg-psurface active:scale-[0.98]"
+            >
+              <span className="min-w-0">
+                <span className="block text-[11px] font-semibold text-pmuted">{tt('aiCourseNextLesson')}</span>
+                <span className="block truncate text-[12.5px] font-bold text-pfg">{nextLesson.title}</span>
+              </span>
+              <ArrowRight size={16} className="shrink-0 text-pmuted" />
+            </button>
+          ) : <span />}
+        </div>
+      )}
 
       <p className="mt-3 text-center text-[11px] text-psubtle">{courseTitle}</p>
     </div>
