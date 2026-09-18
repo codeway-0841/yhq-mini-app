@@ -2252,15 +2252,15 @@
       "questionRu": "\\log_{2} (x + 8 x^{2} - x^{3}) < \\log_{2} x^{2} + \\log_{2} x + 3 tengsizlikni yeching.",
       "optionsUz": {
         "A1": "(0; 1).",
-        "A2": "(0; 4 + \\sqrt{\\sqrt{?}} 17).",
+        "A2": "(0; 4 + \\sqrt{17}).",
         "A3": "(1; 4).",
-        "A4": "(1; 4 + 17)."
+        "A4": "(1; 4 + \\sqrt{17})."
       },
       "optionsRu": {
         "A1": "(0; 1).",
-        "A2": "(0; 4 + \\sqrt{\\sqrt{?}} 17).",
+        "A2": "(0; 4 + \\sqrt{17}).",
         "A3": "(1; 4).",
-        "A4": "(1; 4 + 17)."
+        "A4": "(1; 4 + \\sqrt{17})."
       },
       "correctAnswer": "A4",
       "source": "Algebra1_30.pdf#variant=1&question=20",
@@ -2316,14 +2316,14 @@
       "optionsUz": {
         "A1": "\\sqrt{2} cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
         "A2": "\\sqrt{2} cos \\left(4 \\alpha - \\frac{\\pi}{4} \\right) .",
-        "A3": "cos \\left(4 \\alpha + \\pi \\right) .",
-        "A4": "\\sqrt{2} sin \\left(4 \\alpha - \\pi \\right) ."
+        "A3": "cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
+        "A4": "\\sqrt{2} sin \\left(4 \\alpha - \\frac{\\pi}{4} \\right) ."
       },
       "optionsRu": {
         "A1": "\\sqrt{2} cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
         "A2": "\\sqrt{2} cos \\left(4 \\alpha - \\frac{\\pi}{4} \\right) .",
-        "A3": "cos \\left(4 \\alpha + \\pi \\right) .",
-        "A4": "\\sqrt{2} sin \\left(4 \\alpha - \\pi \\right) ."
+        "A3": "cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
+        "A4": "\\sqrt{2} sin \\left(4 \\alpha - \\frac{\\pi}{4} \\right) ."
       },
       "correctAnswer": "A2",
       "source": "Algebra1_30.pdf#variant=1&question=23",
@@ -2335,16 +2335,16 @@
       "questionUz": "4 4 Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "questionRu": "4 4 Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "optionsUz": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{+ n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m + n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m + n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m + n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{+ n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m + n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m + n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m + n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
       },
       "correctAnswer": "A4",
       "source": "Algebra1_30.pdf#variant=1&question=24",
@@ -2965,16 +2965,16 @@
       "questionUz": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "questionRu": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "optionsUz": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{- n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m - n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m - n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m - n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{- n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m - n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m - n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m - n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
       },
       "correctAnswer": "A3",
       "source": "Algebra1_30.pdf#variant=2&question=24",
@@ -8905,19 +8905,19 @@
     {
       "externalId": "mtp-algebra-012-07",
       "topicExternalId": "mtp-algebra-012",
-      "questionUz": "Kasrning maxrajini irratsionallikdan \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}} qutqaring: \\sqrt{\\sqrt[3]{25}}_{3} \\sqrt{?} \\frac{\\sqrt{?}_{3}}{55} . \\sqrt[3]{121} \\sqrt[3]{25}.",
-      "questionRu": "Kasrning maxrajini irratsionallikdan \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}} qutqaring: \\sqrt{\\sqrt[3]{25}}_{3} \\sqrt{?} \\frac{\\sqrt{?}_{3}}{55} . \\sqrt[3]{121} \\sqrt[3]{25}.",
+      "questionUz": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
+      "questionRu": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
       "optionsUz": {
-        "A1": "- 55 + 121.",
-        "A2": "- _{33} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?} \\sqrt[3]{121}.",
-        "A3": "11 + 5.",
-        "A4": "25 + 55."
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
       },
       "optionsRu": {
-        "A1": "- 55 + 121.",
-        "A2": "- _{33} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?} \\sqrt[3]{121}.",
-        "A3": "11 + 5.",
-        "A4": "25 + 55."
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
       },
       "correctAnswer": "A4",
       "source": "Algebra1_30.pdf#variant=12&question=7",
@@ -35323,19 +35323,19 @@
     {
       "externalId": "mtp-algebra-054-05",
       "topicExternalId": "mtp-algebra-054",
-      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} (1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
-      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} (1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
+      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
       "optionsUz": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "optionsRu": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "correctAnswer": "A3",
       "source": "Algebra31_60.pdf#variant=54&question=5",
@@ -58045,19 +58045,19 @@
     {
       "externalId": "mtp-algebra-090-07",
       "topicExternalId": "mtp-algebra-090",
-      "questionUz": "Kasrnipng maxrajini irratsionallikdan \\sqrt{\\sqrt{3}} qutqaring: \\frac{2}{3} \\sqrt{3} - 13 - 1 .",
-      "questionRu": "Kasrnipng maxrajini irratsionallikdan \\sqrt{\\sqrt{3}} qutqaring: \\frac{2}{3} \\sqrt{3} - 13 - 1 .",
+      "questionUz": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
+      "questionRu": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
       "optionsUz": {
-        "A1": "\\frac{1 - 2 - 13}{\\sqrt{2} \\sqrt{?}} \\sqrt{?} \\sqrt{?} .",
-        "A2": "\\frac{1 - 2 -}{\\sqrt{4} \\sqrt{?}} \\sqrt{3} \\sqrt{13}.",
-        "A3": "1 - 2 3 + 13 .",
-        "A4": "1 - 2 3 + 13 ."
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
       },
       "optionsRu": {
-        "A1": "\\frac{1 - 2 - 13}{\\sqrt{2} \\sqrt{?}} \\sqrt{?} \\sqrt{?} .",
-        "A2": "\\frac{1 - 2 -}{\\sqrt{4} \\sqrt{?}} \\sqrt{3} \\sqrt{13}.",
-        "A3": "1 - 2 3 + 13 .",
-        "A4": "1 - 2 3 + 13 ."
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
       },
       "correctAnswer": "A2",
       "source": "Algebra61_90.pdf#variant=90&question=7",
@@ -64327,16 +64327,16 @@
       "questionUz": "\\frac{2}{\\sqrt{10} + \\sqrt{15} + \\sqrt{14} + \\sqrt{21}} kasrning maxrajini irratsionallikdan qutqaring.",
       "questionRu": "\\frac{2}{\\sqrt{10} + \\sqrt{15} + \\sqrt{14} + \\sqrt{21}} kasrning maxrajini irratsionallikdan qutqaring.",
       "optionsUz": {
-        "A1": "\\sqrt{\\sqrt{10}} - \\sqrt{\\sqrt{?}} 15 + \\sqrt{\\sqrt{?}} 21 + \\sqrt{\\sqrt{14}.}.",
-        "A2": "10 + \\frac{15}{15} - 21 + \\frac{14}{14}.",
-        "A3": "\\sqrt{?} \\frac{10}{10} - \\sqrt{?} - \\sqrt{21} + \\sqrt{?}.",
-        "A4": "\\sqrt{?} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
       },
       "optionsRu": {
-        "A1": "\\sqrt{\\sqrt{10}} - \\sqrt{\\sqrt{?}} 15 + \\sqrt{\\sqrt{?}} 21 + \\sqrt{\\sqrt{14}.}.",
-        "A2": "10 + \\frac{15}{15} - 21 + \\frac{14}{14}.",
-        "A3": "\\sqrt{?} \\frac{10}{10} - \\sqrt{?} - \\sqrt{21} + \\sqrt{?}.",
-        "A4": "\\sqrt{?} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
       },
       "correctAnswer": "A4",
       "source": "Algebra91_121.pdf#variant=100&question=6",
@@ -70795,16 +70795,16 @@
       "questionUz": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
       "questionRu": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
       "optionsUz": {
-        "A1": "- \\sqrt{2}; \\sqrt{5} - \\frac{1}{2}.",
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
         "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
         "A3": "- 1; 3.",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{2}; \\sqrt{5} - \\frac{1}{2}.",
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
         "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
         "A3": "- 1; 3.",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
       },
       "correctAnswer": "A2",
       "source": "Algebra91_121.pdf#variant=110&question=14",
@@ -72745,18 +72745,18 @@
     {
       "externalId": "mtp-algebra-113-17",
       "topicExternalId": "mtp-algebra-113",
-      "questionUz": "Tenglamani yeching:] \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
-      "questionRu": "Tenglamani yeching:] \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
+      "questionUz": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "questionRu": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
       "optionsUz": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "optionsRu": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "correctAnswer": "A2",
@@ -107815,19 +107815,19 @@
     {
       "externalId": "mtp-algebra-trigonometriya-008-07",
       "topicExternalId": "mtp-algebra-trigonometriya-008",
-      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} [(1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
-      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} [(1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
+      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
       "optionsUz": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "optionsRu": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "correctAnswer": "A3",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=8&question=7",
@@ -109432,18 +109432,18 @@
     {
       "externalId": "mtp-algebra-trigonometriya-010-24",
       "topicExternalId": "mtp-algebra-trigonometriya-010",
-      "questionUz": "Tenglamani yeching: \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
-      "questionRu": "Tenglamani yeching: \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
+      "questionUz": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "questionRu": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
       "optionsUz": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "optionsRu": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "correctAnswer": "A2",
@@ -130729,16 +130729,16 @@
       "questionUz": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "questionRu": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "optionsUz": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{+ n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m + n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m + n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m + n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{+ n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m + n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m + n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m + n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
       },
       "correctAnswer": "A4",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=4&question=18",
@@ -131359,16 +131359,16 @@
       "questionUz": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "questionRu": "Agar m = a cos x + b sin x va n = - \\sqrt{a^{2} + b^{2}} bo‘lsa, quyidagi tengsizliklardan qaysi biri x ning istalgan qiymatlari uchun o‘rinli bo‘ladi?",
       "optionsUz": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{- n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m - n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m - n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m - n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m \\frac{- n \\le}{\\sqrt{?} a^{2} + b^{2}} \\sqrt{a^{2} + b^{2} .}.",
-        "A2": "0 \\le m - n \\le \\sqrt{?} .",
-        "A3": "0 \\le \\frac{m - n}{a^{2} + b^{2}} \\le 2 a^{2} + b^{2} .",
-        "A4": "- 2 \\sqrt{?} \\le m - n \\le 0."
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
       },
       "correctAnswer": "A3",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=5&question=18",
@@ -156892,19 +156892,19 @@
     {
       "externalId": "mtp-algebra-geometriya-046-04",
       "topicExternalId": "mtp-algebra-geometriya-046",
-      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} [(1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
-      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: ^{4} [(1 - \\frac{2 a}{a + 1} + a^{2}) (a^{2} \\frac{- 1) (}{a + 1} a - 1) : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a} + 1} . \\sqrt{?} \\sqrt{?}",
+      "questionUz": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "questionRu": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
       "optionsUz": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "optionsRu": {
-        "A1": "\\sqrt{a} \\frac{+ 3}{a + 1}.",
-        "A2": "- \\sqrt{?} \\frac{a + 3}{a + 1} \\sqrt{?} \\sqrt{?}.",
-        "A3": "- a + 3 .",
-        "A4": "a + 3 ."
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
       },
       "correctAnswer": "A3",
       "source": "Algebra_va_Geometriya31_60.pdf#variant=46&question=4",
@@ -158806,16 +158806,16 @@
       "questionUz": "\\frac{2}{\\sqrt{10} + \\sqrt{15} + \\sqrt{14} + \\sqrt{21}} kasrning maxrajini irratsionallikdan qutqaring.",
       "questionRu": "\\frac{2}{\\sqrt{10} + \\sqrt{15} + \\sqrt{14} + \\sqrt{21}} kasrning maxrajini irratsionallikdan qutqaring.",
       "optionsUz": {
-        "A1": "\\sqrt{\\sqrt{10}} - \\sqrt{\\sqrt{?}} 15 + \\sqrt{\\sqrt{?}} 21 + \\sqrt{\\sqrt{14}.}.",
-        "A2": "10 + \\frac{15}{15} - 21 + \\frac{14}{14}.",
-        "A3": "\\sqrt{?} \\frac{10}{10} - \\sqrt{?} - \\sqrt{21} + \\sqrt{?}.",
-        "A4": "\\sqrt{?} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
       },
       "optionsRu": {
-        "A1": "\\sqrt{\\sqrt{10}} - \\sqrt{\\sqrt{?}} 15 + \\sqrt{\\sqrt{?}} 21 + \\sqrt{\\sqrt{14}.}.",
-        "A2": "10 + \\frac{15}{15} - 21 + \\frac{14}{14}.",
-        "A3": "\\sqrt{?} \\frac{10}{10} - \\sqrt{?} - \\sqrt{21} + \\sqrt{?}.",
-        "A4": "\\sqrt{?} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
       },
       "correctAnswer": "A4",
       "source": "Algebra_va_Geometriya31_60.pdf#variant=49&question=5",
@@ -160192,16 +160192,16 @@
       "questionUz": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
       "questionRu": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
       "optionsUz": {
-        "A1": "- \\sqrt{2}; \\sqrt{5} - \\frac{1}{2}.",
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
         "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
         "A3": "- 1; 3.",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
       },
       "optionsRu": {
-        "A1": "- \\sqrt{2}; \\sqrt{5} - \\frac{1}{2}.",
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
         "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
         "A3": "- 1; 3.",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
       },
       "correctAnswer": "A2",
       "source": "Algebra_va_Geometriya31_60.pdf#variant=51&question=11",
@@ -179593,19 +179593,19 @@
     {
       "externalId": "mtp-algebra-geometriya-082-05",
       "topicExternalId": "mtp-algebra-geometriya-082",
-      "questionUz": "Kasrning maxrajini irratsionallikdan \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}} qutqaring: \\sqrt{\\sqrt[3]{25}}_{3} \\sqrt{?} \\frac{\\sqrt{?}_{3}}{55} . \\sqrt[3]{121} \\sqrt[3]{25}.",
-      "questionRu": "Kasrning maxrajini irratsionallikdan \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}} qutqaring: \\sqrt{\\sqrt[3]{25}}_{3} \\sqrt{?} \\frac{\\sqrt{?}_{3}}{55} . \\sqrt[3]{121} \\sqrt[3]{25}.",
+      "questionUz": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
+      "questionRu": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
       "optionsUz": {
-        "A1": "- 55 + 121.",
-        "A2": "- _{33} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?} \\sqrt[3]{121}.",
-        "A3": "11 + 5.",
-        "A4": "25 + 55."
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
       },
       "optionsRu": {
-        "A1": "- 55 + 121.",
-        "A2": "- _{33} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?}_{3} \\sqrt{?} \\sqrt[3]{121}.",
-        "A3": "11 + 5.",
-        "A4": "25 + 55."
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
       },
       "correctAnswer": "A4",
       "source": "Algebra_va_Geometriya61_90.pdf#variant=82&question=5",
@@ -182743,19 +182743,19 @@
     {
       "externalId": "mtp-algebra-geometriya-087-05",
       "topicExternalId": "mtp-algebra-geometriya-087",
-      "questionUz": "\\frac{1 - a}{] 1 - \\sqrt{a}} ifodani soddalashtiring. (0 \\le a < 1).]",
-      "questionRu": "\\frac{1 - a}{] 1 - \\sqrt{a}} ifodani soddalashtiring. (0 \\le a < 1).]",
+      "questionUz": "\\frac{1 - a}{\\sqrt{1 - \\sqrt{a}}} ifodani soddalashtiring. (0 \\le a < 1).",
+      "questionRu": "\\frac{1 - a}{\\sqrt{1 - \\sqrt{a}}} ifodani soddalashtiring. (0 \\le a < 1).",
       "optionsUz": {
         "A1": "1.",
-        "A2": "] (1 - \\sqrt{] a} \\frac{)(1 +^{2}}{(1 - \\sqrt{a})(1 + \\sqrt{a})} \\sqrt{a)} .",
-        "A3": "1 - \\sqrt{a} .",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A2": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})^{2}}.",
+        "A3": "\\sqrt{1 - \\sqrt{a}}.",
+        "A4": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})}."
       },
       "optionsRu": {
         "A1": "1.",
-        "A2": "] (1 - \\sqrt{] a} \\frac{)(1 +^{2}}{(1 - \\sqrt{a})(1 + \\sqrt{a})} \\sqrt{a)} .",
-        "A3": "1 - \\sqrt{a} .",
-        "A4": "\\sqrt{?} \\sqrt{?}."
+        "A2": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})^{2}}.",
+        "A3": "\\sqrt{1 - \\sqrt{a}}.",
+        "A4": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})}."
       },
       "correctAnswer": "A2",
       "source": "Algebra_va_Geometriya61_90.pdf#variant=87&question=5",
@@ -184171,18 +184171,18 @@
     {
       "externalId": "mtp-algebra-geometriya-089-13",
       "topicExternalId": "mtp-algebra-geometriya-089",
-      "questionUz": "Tenglamani yeching: ) \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
-      "questionRu": "Tenglamani yeching: ) \\frac{x}{x + 3} x (x + 3) + (x + 3) - 2 = 0.",
+      "questionUz": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "questionRu": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
       "optionsUz": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "optionsRu": {
         "A1": "- 4.",
-        "A2": "- 4; \\frac{- 3 + 13}{2 \\sqrt{?}} \\sqrt{?} .",
-        "A3": "- 3 + \\sqrt{13}; - 3 - 13 .",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
         "A4": "- 4; 1."
       },
       "correctAnswer": "A2",
@@ -228733,19 +228733,19 @@
     {
       "externalId": "mtp-algebra-geometriya-160-05",
       "topicExternalId": "mtp-algebra-geometriya-160",
-      "questionUz": "Kasrnipng maxrajini irratsionallikdan \\sqrt{\\sqrt{3}} qutqaring: \\frac{2}{3} \\sqrt{3} - 13 - 1 .",
-      "questionRu": "Kasrnipng maxrajini irratsionallikdan \\sqrt{\\sqrt{3}} qutqaring: \\frac{2}{3} \\sqrt{3} - 13 - 1 .",
+      "questionUz": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
+      "questionRu": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
       "optionsUz": {
-        "A1": "\\frac{1 - 2 - 13}{\\sqrt{2} \\sqrt{?}} \\sqrt{?} \\sqrt{?} .",
-        "A2": "\\frac{1 - 2 -}{\\sqrt{4} \\sqrt{?}} \\sqrt{3} \\sqrt{13}.",
-        "A3": "1 - 2 3 + 13 .",
-        "A4": "1 - 2 3 + 13 ."
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
       },
       "optionsRu": {
-        "A1": "\\frac{1 - 2 - 13}{\\sqrt{2} \\sqrt{?}} \\sqrt{?} \\sqrt{?} .",
-        "A2": "\\frac{1 - 2 -}{\\sqrt{4} \\sqrt{?}} \\sqrt{3} \\sqrt{13}.",
-        "A3": "1 - 2 3 + 13 .",
-        "A4": "1 - 2 3 + 13 ."
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
       },
       "correctAnswer": "A2",
       "source": "Algebra_va_Geometriya151_164.pdf#variant=160&question=5",

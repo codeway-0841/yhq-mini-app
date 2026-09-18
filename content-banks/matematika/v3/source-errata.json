@@ -523,6 +523,334 @@
       },
       "reason": "Crop-confirmed (golden-crops/mtp-algebra-geometriya-065-04-p8): B is (x+2)/2 not x+2; product simplifies to x+2; answer key KalitAlGeo v65 q4 must be D (verify on regen); print has stray '+' after option C fraction (source defect, normalized away)",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 1,
+      "variant": 1,
+      "question": 20,
+      "raw_text": "B option printed (0; 4+sqrt(17)), D printed (1; 4+sqrt(17)); extractor nested sqrt artifact in B and dropped sqrt in D",
+      "resolved_options": {
+        "A1": "(0; 1).",
+        "A2": "(0; 4 + \\sqrt{17}).",
+        "A3": "(1; 4).",
+        "A4": "(1; 4 + \\sqrt{17})."
+      },
+      "reason": "Crop-confirmed (algebra1_30_p0): solution (1,4+sqrt(17)); answer key KalitAl v1 q20 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 2,
+      "variant": 1,
+      "question": 23,
+      "raw_text": "Options C and D printed with pi/4 fractions; extractor dropped /4 denominators",
+      "resolved_options": {
+        "A1": "\\sqrt{2} cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
+        "A2": "\\sqrt{2} cos \\left(4 \\alpha - \\frac{\\pi}{4} \\right) .",
+        "A3": "cos \\left(4 \\alpha + \\frac{\\pi}{4} \\right) .",
+        "A4": "\\sqrt{2} sin \\left(4 \\alpha - \\frac{\\pi}{4} \\right) ."
+      },
+      "reason": "Crop-confirmed (algebra1_30_p1): cos^2-sin^2+sin4a = sqrt(2)cos(4a-pi/4); answer key KalitAl v1 q23 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 2,
+      "variant": 1,
+      "question": 24,
+      "raw_text": "All four options contain sqrt(a^2+b^2) radicands; extractor left placeholders and built a bogus fraction in A1/A3",
+      "resolved_options": {
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
+      },
+      "reason": "Crop-confirmed (algebra1_30_p1): m+n in [-2R,0] where R=sqrt(a^2+b^2); answer key KalitAl v1 q24 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 4,
+      "variant": 2,
+      "question": 24,
+      "raw_text": "m-n variant of the twin; extractor placeholders + bogus fraction, same as v1 q24",
+      "resolved_options": {
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
+      },
+      "reason": "Crop-confirmed (v2q24): m-n in [0,2R]; answer key KalitAl v2 q24 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 7,
+      "variant": 4,
+      "question": 18,
+      "raw_text": "m+n twin of Algebra1_30 v1 q24; same extractor damage",
+      "resolved_options": {
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m + n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m + n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m + n \\le 0."
+      },
+      "reason": "Crop-confirmed (gq18_p6): m+n in [-2R,0]; answer key KalitAlGeo v4 q18 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 9,
+      "variant": 5,
+      "question": 18,
+      "raw_text": "m-n twin of Algebra1_30 v2 q24; same extractor damage",
+      "resolved_options": {
+        "A1": "- \\sqrt{a^{2} + b^{2}} \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A2": "0 \\le m - n \\le \\sqrt{a^{2} + b^{2}}.",
+        "A3": "0 \\le m - n \\le 2 \\sqrt{a^{2} + b^{2}}.",
+        "A4": "- 2 \\sqrt{a^{2} + b^{2}} \\le m - n \\le 0."
+      },
+      "reason": "Crop-confirmed (gq18_p8): m-n in [0,2R]; answer key KalitAlGeo v5 q18 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra31_60.pdf",
+      "page": 107,
+      "variant": 54,
+      "question": 5,
+      "raw_text": "4th-root expression with (a^2-1)(a-1); extractor shattered question into fraction soup and lost option radicands",
+      "resolved_question": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "resolved_options": {
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
+      },
+      "reason": "Crop-confirmed (a54q5): 4th-root of (1-2a+a^2)(a^2-1)(a-1) over (a^2+2a-3)/4th-root(a+1); simplifies to -sqrt(a+1)/(a+3); answer key KalitAl v54 q5 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 15,
+      "variant": 8,
+      "question": 7,
+      "raw_text": "4th-root expression with (a^2-1)(a-1); extractor shattered question into fraction soup and lost option radicands",
+      "resolved_question": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "resolved_options": {
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
+      },
+      "reason": "Twin of Algebra31_60 v54 q5, crop-confirmed (t08q7b): identical print; answer key KalitAlTrigon v8 q7 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": 91,
+      "variant": 46,
+      "question": 4,
+      "raw_text": "4th-root expression with (a^2-1)(a-1); extractor shattered question into fraction soup and lost option radicands",
+      "resolved_question": "Agar a \\in (- 1; 1) bo‘lsa, ifodani soddalashtiring: \\sqrt[4]{(1 - 2 a + a^{2}) (a^{2} - 1) (a - 1)} : \\frac{a^{2} + 2 a - 3}{\\sqrt[4]{a + 1}}.",
+      "resolved_options": {
+        "A1": "\\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A2": "- \\frac{\\sqrt{a + 1}}{\\sqrt{a + 3}}.",
+        "A3": "- \\frac{\\sqrt{a + 1}}{a + 3}.",
+        "A4": "\\frac{\\sqrt{a + 1}}{a + 3}."
+      },
+      "reason": "Twin of Algebra31_60 v54 q5, crop-confirmed (g46q4b): identical print; answer key KalitAlGeo v46 q4 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 59,
+      "variant": 90,
+      "question": 7,
+      "raw_text": "Rationalize sqrt(3)/(2sqrt(3)-sqrt(13)-1); extractor shattered nested radicals (print word 'Kasrnipng' kept verbatim)",
+      "resolved_question": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
+      "resolved_options": {
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
+      },
+      "reason": "Crop-confirmed (a90q7): -(a+b)/4 with a=2sqrt(3)-1,b=sqrt(13) gives (1-2sqrt(3)-sqrt(13))/4; answer key KalitAl v90 q7 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya151_164.pdf",
+      "page": 19,
+      "variant": 160,
+      "question": 5,
+      "raw_text": "Rationalize sqrt(3)/(2sqrt(3)-sqrt(13)-1); extractor shattered nested radicals (print word 'Kasrnipng' kept verbatim)",
+      "resolved_question": "Kasrnipng maxrajini irratsionallikdan qutqaring: \\frac{\\sqrt{3}}{2 \\sqrt{3} - \\sqrt{13} - 1}.",
+      "resolved_options": {
+        "A1": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{2}.",
+        "A2": "\\frac{1 - 2 \\sqrt{3} - \\sqrt{13}}{4}.",
+        "A3": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{4}.",
+        "A4": "\\frac{1 - 2 \\sqrt{3} + \\sqrt{13}}{2}."
+      },
+      "reason": "Twin, crop-confirmed (g160q5): identical print: -(a+b)/4 with a=2sqrt(3)-1,b=sqrt(13) gives (1-2sqrt(3)-sqrt(13))/4; answer key KalitAlGeo v160 q5 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 39,
+      "variant": 110,
+      "question": 14,
+      "raw_text": "A option misread '-1' as '-1/2' (spurious fraction bar); D radicands unreadable",
+      "resolved_question": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
+      "resolved_options": {
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
+        "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
+        "A3": "- 1; 3.",
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
+      },
+      "reason": "Crop-confirmed (a110q14): solutions {-sqrt(2),1-sqrt(5)}; answer key KalitAl v110 q14 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": 41,
+      "variant": 51,
+      "question": 11,
+      "raw_text": "Twin of Algebra91_121 v110 q14; identical extractor damage",
+      "resolved_question": "| x^{2} - x - 3 | + 1 + x = 0 tenglamani yeching.",
+      "resolved_options": {
+        "A1": "- \\sqrt{2}; \\sqrt{5} - 1.",
+        "A2": "- \\sqrt{2}; 1 - \\sqrt{5}.",
+        "A3": "- 1; 3.",
+        "A4": "\\sqrt{2}; \\sqrt{5} - 1."
+      },
+      "reason": "Crop-confirmed (g51q11): identical print; answer key KalitAlGeo v51 q11 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 53,
+      "variant": 87,
+      "question": 5,
+      "raw_text": "(1-a)/sqrt(1-sqrt(a)) simplify; extractor shattered B/D nested radicals and dropped outer sqrt in C",
+      "resolved_question": "\\frac{1 - a}{\\sqrt{1 - \\sqrt{a}}} ifodani soddalashtiring. (0 \\le a < 1).",
+      "resolved_options": {
+        "A1": "1.",
+        "A2": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})^{2}}.",
+        "A3": "\\sqrt{1 - \\sqrt{a}}.",
+        "A4": "\\sqrt{(1 - \\sqrt{a}) (1 + \\sqrt{a})}."
+      },
+      "reason": "Crop-confirmed incl. zoom (g87q5zoom): C is sqrt(1-sqrt(a)) not 1-sqrt(a); (1-a)/sqrt(1-sqrt(a)) = sqrt(1-sqrt(a))(1+sqrt(a)); answer key KalitAlGeo v87 q5 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 45,
+      "variant": 113,
+      "question": 17,
+      "raw_text": "x(x+3)+(x+3)*sqrt(x/(x+3))-2=0; extractor broke sqrt into fraction soup; solutions {-4,(-3+sqrt13)/2}",
+      "resolved_question": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "resolved_options": {
+        "A1": "- 4.",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
+        "A4": "- 4; 1."
+      },
+      "reason": "Crop-confirmed (a113q17); substitution u=sqrt(x(x+3)) gives u^2+u-2=0 with domain care; answer key KalitAl v113 q17 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 20,
+      "variant": 10,
+      "question": 24,
+      "raw_text": "x(x+3)+(x+3)*sqrt(x/(x+3))-2=0; extractor broke sqrt into fraction soup; solutions {-4,(-3+sqrt13)/2}",
+      "resolved_question": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "resolved_options": {
+        "A1": "- 4.",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
+        "A4": "- 4; 1."
+      },
+      "reason": "Twin, crop-confirmed (t10q24): identical print; substitution u=sqrt(x(x+3)) gives u^2+u-2=0 with domain care; answer key KalitAlTrigon v10 q24 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 177,
+      "variant": 89,
+      "question": 13,
+      "raw_text": "x(x+3)+(x+3)*sqrt(x/(x+3))-2=0; extractor broke sqrt into fraction soup; solutions {-4,(-3+sqrt13)/2}",
+      "resolved_question": "Tenglamani yeching: x (x + 3) + (x + 3) \\sqrt{\\frac{x}{x + 3}} - 2 = 0.",
+      "resolved_options": {
+        "A1": "- 4.",
+        "A2": "- 4; \\frac{- 3 + \\sqrt{13}}{2}.",
+        "A3": "\\frac{- 3 + \\sqrt{13}}{2}; \\frac{- 3 - \\sqrt{13}}{2}.",
+        "A4": "- 4; 1."
+      },
+      "reason": "Twin, crop-confirmed (g89q13b): identical print; substitution u=sqrt(x(x+3)) gives u^2+u-2=0 with domain care; answer key KalitAlGeo v89 q13 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 23,
+      "variant": 12,
+      "question": 7,
+      "raw_text": "6/(cbrt(11)-cbrt(5)); extractor shattered cube-root radicands into nested-sqrt soup",
+      "resolved_question": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
+      "resolved_options": {
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
+      },
+      "reason": "Crop-confirmed (a12q7): 6/(a-b)*(a^2+ab+b^2)/6 with a=cbrt(11),b=cbrt(5); answer key KalitAl v12 q7 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 163,
+      "variant": 82,
+      "question": 5,
+      "raw_text": "6/(cbrt(11)-cbrt(5)); extractor shattered cube-root radicands into nested-sqrt soup",
+      "resolved_question": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
+      "resolved_options": {
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
+      },
+      "reason": "Twin, crop-confirmed (g82q5): identical print: 6/(a-b)*(a^2+ab+b^2)/6 with a=cbrt(11),b=cbrt(5); answer key KalitAlGeo v82 q5 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 199,
+      "variant": 100,
+      "question": 6,
+      "raw_text": "2/(sqrt10+sqrt15+sqrt14+sqrt21); extractor shattered into nested-sqrt/fraction soup in all options",
+      "resolved_options": {
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+      },
+      "reason": "Crop-confirmed (a100q6): (sqrt5-sqrt7)(sqrt2-sqrt3)=sqrt10-sqrt15-sqrt14+sqrt21; answer key KalitAl v100 q6 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": 97,
+      "variant": 49,
+      "question": 5,
+      "raw_text": "2/(sqrt10+sqrt15+sqrt14+sqrt21); extractor shattered into nested-sqrt/fraction soup in all options",
+      "resolved_options": {
+        "A1": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} + \\sqrt{14}.",
+        "A2": "\\sqrt{10} + \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A3": "\\sqrt{10} - \\sqrt{15} - \\sqrt{21} + \\sqrt{14}.",
+        "A4": "\\sqrt{10} - \\sqrt{15} + \\sqrt{21} - \\sqrt{14}."
+      },
+      "reason": "Twin, crop-confirmed (g49q5): identical print: (sqrt5-sqrt7)(sqrt2-sqrt3)=sqrt10-sqrt15-sqrt14+sqrt21; answer key KalitAlGeo v49 q5 = D matches A4",
+      "status": "confirmed"
     }
   ]
 }

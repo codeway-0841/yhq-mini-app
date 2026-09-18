@@ -2,11 +2,6 @@
   "audited_items": 11040,
   "audited_texts": 55200,
   "categories": {
-    "sqrt_placeholder": {
-      "items": 507,
-      "texts": 656,
-      "status": "review"
-    },
     "operatorname_present": {
       "items": 478,
       "texts": 622,
@@ -17,9 +12,14 @@
       "texts": 137,
       "status": "valid-latex"
     },
+    "sqrt_placeholder": {
+      "items": 487,
+      "texts": 617,
+      "status": "review"
+    },
     "indexed_root": {
       "items": 258,
-      "texts": 311,
+      "texts": 317,
       "status": "valid-latex"
     }
   }
