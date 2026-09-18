@@ -459,6 +459,70 @@
       },
       "reason": "Twin of Algebra61_90 v85 q6 (same print); answer key KalitAlGeo v34 q5 = A matches A1",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 11,
+      "variant": 6,
+      "question": 9,
+      "raw_text": "Q9 options print as y=sin(x+pi/6), sin(x+pi/3), sin(x-pi/6), sin x with diagram; extractor dropped parens group and truncated question at taqriban; A3 additionally lost /6 denominator",
+      "resolved_question": "Chizmada qaysi funksiya grafigi taqriban tasvirlangan?",
+      "resolved_options": {
+        "A1": "y = sin \\left(x + \\frac{\\pi}{6} \\right) .",
+        "A2": "y = sin \\left(x + \\frac{\\pi}{3} \\right) .",
+        "A3": "y = sin \\left(x - \\frac{\\pi}{6} \\right) .",
+        "A4": "y = sin x ."
+      },
+      "reason": "Crop-confirmed (golden-crops/mtp-algebra-006-09-p10): parens around (x+-pi/6,pi/3) lost by extractor; graph at x=0 is -0.5 => sin(-pi/6) => C correct; answer key KalitAl v6 q9 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 1,
+      "variant": 1,
+      "question": 5,
+      "raw_text": "Q5 nested fraction 7/(1+3/(x-2)); extractor flattened it to '7 ... 3/(x-2) 1 +' losing the outer fraction bar",
+      "resolved_question": "\\frac{7}{1 + \\frac{3}{x - 2}} kasr ma‘noga ega bo‘lmaydigan barcha x lar yig‘indisini toping.",
+      "resolved_options": {
+        "A1": "2.",
+        "A2": "-1.",
+        "A3": "1.",
+        "A4": "-2."
+      },
+      "reason": "Crop-confirmed (golden-crops/mtp-algebra-trigonometriya-001-05-p0): outer fraction bar with 7 over (1+3/(x-2)); undefined at x=2 and x=-1, sum=1; answer key KalitAlTrigon v1 q5 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": 1,
+      "variant": 31,
+      "question": 4,
+      "raw_text": "Print shows x != 1 (not-equal sign); extractor emitted combining slash artifact 'x 0338 = 1'",
+      "resolved_question": "Agar x^{2} + \\frac{2}{x} = 3 va x \\ne 1 bo‘lsa, x^{2} + x ni qiymatini toping.",
+      "resolved_options": {
+        "A1": "-2.",
+        "A2": "4.",
+        "A3": "2.",
+        "A4": "5."
+      },
+      "reason": "Crop-confirmed (golden-crops/mtp-algebra-geometriya-031-04-p0): condition is x != 1; combining-char artifact would misrender; answer key KalitAlGeo v31 q4 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 9,
+      "variant": 65,
+      "question": 4,
+      "raw_text": "Three fractions multiplied with center dots; extractor dropped the inter-fraction \\cdot and doubled the trailing dot; option B denominator /2 lost",
+      "resolved_question": "Ifodani soddalashtiring: \\frac{x^{3} + 27}{2 x - 2} \\cdot \\frac{x^{2} - 1}{x^{2} + 4 x + 3} \\cdot \\frac{6 x + 12}{3 x^{2} - 9 x + 27}.",
+      "resolved_options": {
+        "A1": "2 x + 1.",
+        "A2": "\\frac{x + 2}{2}.",
+        "A3": "\\frac{x + 2}{x - 1}.",
+        "A4": "x + 2."
+      },
+      "reason": "Crop-confirmed (golden-crops/mtp-algebra-geometriya-065-04-p8): B is (x+2)/2 not x+2; product simplifies to x+2; answer key KalitAlGeo v65 q4 must be D (verify on regen); print has stray '+' after option C fraction (source defect, normalized away)",
+      "status": "confirmed"
     }
   ]
 }

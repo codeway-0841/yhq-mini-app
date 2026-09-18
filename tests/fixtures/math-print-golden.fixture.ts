@@ -185,9 +185,9 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Chizmada qaysi funksiya g"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "y = sin x + \\frac{\\pi}{6} .",
-      A2: "y = sin x + \\frac{\\pi}{3} . .",
-      A3: "y = sin x - \\pi .",
+      A1: "y = sin \\left(x + \\frac{\\pi}{6} \\right) .",
+      A2: "y = sin \\left(x + \\frac{\\pi}{3} \\right) .",
+      A3: "y = sin \\left(x - \\frac{\\pi}{6} \\right) .",
       A4: "y = sin x .",
     },
     correctAnswer: 'A3',
@@ -227,7 +227,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-001-07': {
     externalId: 'mtp-algebra-001-07',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["[] \\frac{a3-b3}{a2+ ab + "],
+    requiredInQuestion: ["\\frac{a^{3} - b^{3}}{a^{2} + ab + b^{2}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1.",
@@ -257,7 +257,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-040-28': {
     externalId: 'mtp-algebra-040-28',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["Rasmda y = x 2 funksiya v"],
+    requiredInQuestion: ["Rasmda y = x^{2} funksiya va AOB"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1.",
@@ -287,7 +287,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-031-06': {
     externalId: 'mtp-algebra-031-06',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["Agar xy > 0 va xy - 1 + x"],
+    requiredInQuestion: ["Agar xy > 0 va xy^{-1} + x^{-1} y = 2"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "0.",
@@ -305,10 +305,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Ko\u2018phadni ko\u2018paytuvchilar"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "(x + 6) x 2 + x + \\frac{6}{6} . \\sqrt{} [\\sqrt{}].",
-      A2: "(x + \\frac{6)}{6)} x 2 - x + . \\sqrt{} [\\sqrt{}].",
-      A3: "(x - x 2 - x - \\frac{6}{6} . \\sqrt{} [\\sqrt{}].",
-      A4: "(x - 6) x 2 + x.",
+      A1: "(x + \\sqrt{6})(x^{2} + x + \\sqrt{6}).",
+      A2: "(x + \\sqrt{6})(x^{2} - x + \\sqrt{6}).",
+      A3: "(x - \\sqrt{6})(x^{2} - x - \\sqrt{6}).",
+      A4: "(x - \\sqrt{6})(x^{2} + x - \\sqrt{6}).",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -362,7 +362,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-061-03': {
     externalId: 'mtp-algebra-061-03',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{0,725 + 0,6 ++}{13}"],
+    requiredInQuestion: ["\\frac{0,725 + 0,6 + \\frac{7}{40} + \\frac{11}{20}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1/2.",
@@ -377,11 +377,11 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-062-06': {
     externalId: 'mtp-algebra-062-06',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\left(\\frac{3}{2} \\frac{3"],
+    requiredInQuestion: ["Ushbu \\left(\\frac{a^{3/2} + b^{3/2}}{a - b}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "- 2.",
-      A2: "2.",
+      A1: "-\\sqrt{2}.",
+      A2: "2\\sqrt{2}.",
       A3: "0.",
       A4: "2.",
     },
@@ -452,13 +452,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-091-06': {
     externalId: 'mtp-algebra-091-06',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["x + 2 a \\frac{a + a\\sqrt{"],
+    requiredInQuestion: ["\\frac{a + a\\sqrt{a}}{\\sqrt[3]{a^{2}} - \\sqrt[6]{a^{5}} + a}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "0.",
-      A2: "\\sqrt[4]{} a .",
-      A3: "4 \\sqrt[3]{} a .",
-      A4: "2 \\sqrt[3]{} a + \\sqrt[2]{} a .",
+      A2: "4\\sqrt{a}.",
+      A3: "4\\sqrt[3]{a}.",
+      A4: "2\\sqrt[3]{a} + 2\\sqrt{a}.",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -467,7 +467,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-091-01': {
     externalId: 'mtp-algebra-091-01',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["2017^{3} + 1017^{2} -2016"],
+    requiredInQuestion: ["2017^{3} + 1017^{2} - 2016 \\cdot 2017 \\cdot 2018 - 289"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "13402017.",
@@ -512,7 +512,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-trigonometriya-001-05': {
     externalId: 'mtp-algebra-trigonometriya-001-05',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{7}{3} kasr ma\u2019noga "],
+    requiredInQuestion: ["\\frac{7}{1 + \\frac{3}{x - 2}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "2.",
@@ -527,13 +527,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-trigonometriya-001-09': {
     externalId: 'mtp-algebra-trigonometriya-001-09',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{1}{a -ab} \\frac"],
+    requiredInQuestion: ["\\left(\\frac{1}{a - \\sqrt{ab}} + \\frac{1}{a + \\sqrt{ab}}\\right)"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1.",
       A2: "2.",
-      A3: "a .",
-      A4: ".",
+      A3: "a.",
+      A4: "\\frac{1}{a + b}.",
     },
     correctAnswer: 'A2',
     hasImage: false,
@@ -560,10 +560,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Agar rasmdagi o\u2018rinli bo\u2018"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "65 ^{\\\\circ} .",
-      A2: "45 ^{\\\\circ} .",
-      A3: "50 ^{\\\\circ} .",
-      A4: "70 ^{\\\\circ} .",
+      A1: "65^{\\circ} .",
+      A2: "45^{\\circ} .",
+      A3: "50^{\\circ} .",
+      A4: "70^{\\circ} .",
     },
     correctAnswer: 'A3',
     hasImage: true,
@@ -587,7 +587,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-121-02': {
     externalId: 'mtp-algebra-geometriya-121-02',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{732-272}{732+ 2 \\cd"],
+    requiredInQuestion: ["\\frac{73^{2} - 27^{2}}{73^{2} + 2 \\cdot 73 \\cdot 27 + 27^{2}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "0,4.",
@@ -602,13 +602,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-121-05': {
     externalId: 'mtp-algebra-geometriya-121-05',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\sqrt{} \\sqrt{} Hisoblang"],
+    requiredInQuestion: ["Hisoblang: \\frac{5\\sqrt{7} + 7\\sqrt{5}}{\\sqrt{35}} - \\sqrt{5}."],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "7 + 5.",
-      A2: "7.",
-      A3: "7 - 5.",
-      A4: "5.",
+      A1: "\\sqrt{7} + \\sqrt{5}.",
+      A2: "\\sqrt{7}.",
+      A3: "\\sqrt{7} - \\sqrt{5}.",
+      A4: "\\sqrt{5}.",
     },
     correctAnswer: 'A2',
     hasImage: false,
@@ -632,13 +632,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-151-24': {
     externalId: 'mtp-algebra-geometriya-151-24',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\sqrt{} 2 + 3 Agar OB || "],
+    requiredInQuestion: ["Agar OB || CD va \\angle ABO = 40"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "10 ^{\\\\circ} .",
-      A2: "15 ^{\\\\circ} .",
-      A3: "20 ^{\\\\circ} .",
-      A4: "30 ^{\\\\circ} .",
+      A1: "10^{\\circ} .",
+      A2: "15^{\\circ} .",
+      A3: "20^{\\circ} .",
+      A4: "30^{\\circ} .",
     },
     correctAnswer: 'A1',
     hasImage: true,
@@ -662,13 +662,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-151-02': {
     externalId: 'mtp-algebra-geometriya-151-02',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{215\\cdot 547}{94\\cd"],
+    requiredInQuestion: ["\\frac{2^{15} \\cdot 54^{7}}{9^{4} \\cdot (2^{7})^{2} \\cdot 3^{-6}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "3 13 \\cdot 2 8 .",
-      A2: "3 16 \\cdot 2 8 .",
-      A3: "3 19 \\cdot 2 8 .",
-      A4: "3 20 \\cdot 2 8 .",
+      A1: "3^{13} \\cdot 2^{8} .",
+      A2: "3^{16} \\cdot 2^{8} .",
+      A3: "3^{19} \\cdot 2^{8} .",
+      A4: "3^{20} \\cdot 2^{8} .",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -677,11 +677,11 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-151-04': {
     externalId: 'mtp-algebra-geometriya-151-04',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{3a7+ 2a6-3a -2}{(3a"],
+    requiredInQuestion: ["\\frac{3 a^{7} + 2 a^{6} - 3 a - 2}{(3 a + 2)"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "\u00b1 3.",
-      A2: "\u00b1 7.",
+      A2: "\u00b1 \\sqrt{7}.",
       A3: "2.",
       A4: "\u00b1 2.",
     },
@@ -695,9 +695,9 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Agar n + 5 har doim juft "],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "n^{4} -5.",
-      A2: "2^{n} + n^{2}.",
-      A3: "3^{n} + n^{2}.",
+      A1: "n^{4} - 5.",
+      A2: "2^{n} + n^{2} .",
+      A3: "3^{n} + n^{2} .",
       A4: "3^{n} + n^{3} + 2018.",
     },
     correctAnswer: 'A2',
@@ -752,13 +752,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-001-05': {
     externalId: 'mtp-algebra-geometriya-001-05',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\sqrt{} Agar a = 3 [\\frac"],
+    requiredInQuestion: ["Agar a = 3\\sqrt{3} - 2"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "5.",
-      A2: "3 3.",
+      A2: "3\\sqrt{3}.",
       A3: "23.",
-      A4: "12 3.",
+      A4: "12\\sqrt{3}.",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -812,7 +812,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-031-04': {
     externalId: 'mtp-algebra-geometriya-031-04',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["Agar x 2 + \\frac{2}{x} = "],
+    requiredInQuestion: ["Agar x^{2} + \\frac{2}{x} = 3 va x \\ne 1"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "-2.",
@@ -827,12 +827,12 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-031-13': {
     externalId: 'mtp-algebra-geometriya-031-13',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\sqrt{} (x + 2) 3 - 2 x -"],
+    requiredInQuestion: ["(x + 2) \\sqrt{3 - 2 x - x^{2}} \\le 0"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "[- 3; - 2].",
       A2: "(-\\infty; - 3].",
-      A3: "[- 3; - 2] {1} .",
+      A3: "[- 3; - 2] \\cup {1} .",
       A4: "(-\\infty; - 2].",
     },
     correctAnswer: 'A3',
@@ -887,13 +887,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-061-05': {
     externalId: 'mtp-algebra-geometriya-061-05',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{33ax2-a2x}{3a2-23ax"],
+    requiredInQuestion: ["\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "1.",
-      A2: "\\sqrt[6]{} a .",
-      A3: "- \\sqrt[6]{} x .",
-      A4: "(\\sqrt[3]{} a + \\sqrt[3]{} x). \\sqrt{} x + 1 + \\sqrt{}.",
+      A2: "\\sqrt[6]{a}.",
+      A3: "-\\sqrt[6]{x}.",
+      A4: "(\\sqrt[3]{a} + \\sqrt[3]{x}).",
     },
     correctAnswer: 'A2',
     hasImage: false,
@@ -920,10 +920,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Quyidagi sonlardan qaysi "],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "0,5^{-0,5} \\cdot 2^{0,3}.",
-      A2: "1,7^{0,9} \\cdot 1,3^{1,3}.",
-      A3: "0,7^{-0,4} \\cdot 0,3^{0,4}.",
-      A4: "3^{0,5} \\cdot 0,3^{-0,2}.",
+      A1: "0,5^{-0,5} \\cdot 2^{0,3} .",
+      A2: "1,7^{0,9} \\cdot 1,3^{1,3} .",
+      A3: "0,7^{-0,4} \\cdot 0,3^{0,4} .",
+      A4: "3^{0,5} \\cdot 0,3^{-0,2} .",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -935,10 +935,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Yoyiq burchakning A nuqta"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "60 ^{\\\\circ} .",
-      A2: "80 ^{\\\\circ} .",
-      A3: "90 ^{\\\\circ} .",
-      A4: "40 ^{\\\\circ} .",
+      A1: "60^{\\circ} .",
+      A2: "80^{\\circ} .",
+      A3: "90^{\\circ} .",
+      A4: "40^{\\circ} .",
     },
     correctAnswer: 'A2',
     hasImage: true,
@@ -962,13 +962,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-091-03': {
     externalId: 'mtp-algebra-geometriya-091-03',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\frac{x2 + ax -3x -3a}{x2"],
+    requiredInQuestion: ["\\frac{x^{2} + ax - 3 x - 3 a}{x^{2} - ax - 3 x + 3 a}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "-1.",
       A2: "0.",
       A3: "1.",
-      A4: "\\frac{a -x}{a + x} .",
+      A4: "\\frac{a - x}{a + x} .",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -977,13 +977,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-091-05': {
     externalId: 'mtp-algebra-geometriya-091-05',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["\\sqrt{} \\frac{11 + 1}{2} "],
+    requiredInQuestion: ["Agar x = \\frac{\\sqrt{11} + 1}{2}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "1 \\frac{-}{11} \\sqrt{} 11.",
-      A2: "\\sqrt{} 11 - 2.",
+      A1: "1 - \\sqrt{11}.",
+      A2: "\\sqrt{11} - 2.",
       A3: "- 1.",
-      A4: "11 + 1.",
+      A4: "\\sqrt{11} + 1.",
     },
     correctAnswer: 'A3',
     hasImage: false,
@@ -992,7 +992,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-algebra-geometriya-091-01': {
     externalId: 'mtp-algebra-geometriya-091-01',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["2017^{3} + 1017^{2} -2016"],
+    requiredInQuestion: ["2017^{3} + 1017^{2} - 2016 \\cdot 2017 \\cdot 2018 - 289"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "13402017.",
@@ -1011,9 +1011,9 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "2.",
-      A2: "2 2.",
+      A2: "2 \\sqrt{2}.",
       A3: "4.",
-      A4: "2 3.",
+      A4: "2 \\sqrt{3}.",
     },
     correctAnswer: 'A3',
     hasImage: true,
@@ -1025,10 +1025,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["3 A (- 4; 1; 1), B (1; 4;"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "30 ^{\\\\circ} .",
-      A2: "45 ^{\\\\circ} .",
-      A3: "60 ^{\\\\circ} .",
-      A4: "90 ^{\\\\circ} .",
+      A1: "30^{\\circ} .",
+      A2: "45^{\\circ} .",
+      A3: "60^{\\circ} .",
+      A4: "90^{\\circ} .",
     },
     correctAnswer: 'A4',
     hasImage: false,
@@ -1040,10 +1040,10 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     requiredInQuestion: ["Uchburchakning b va c tom"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "12 2.",
-      A2: "16 2.",
-      A3: "12 3.",
-      A4: "16 3.",
+      A1: "12\\sqrt{2}.",
+      A2: "16\\sqrt{2}.",
+      A3: "12\\sqrt{3}.",
+      A4: "16\\sqrt{3}.",
     },
     correctAnswer: 'A4',
     hasImage: false,
@@ -1052,7 +1052,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-geometriya-001-01': {
     externalId: 'mtp-geometriya-001-01',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["Agar d < \\alpha < 2d bo\u2018l"],
+    requiredInQuestion: ["Agar d < \\alpha < 2 d bo"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "o\u2018tkir.",
@@ -1097,13 +1097,13 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-kombinatorika-003-21': {
     externalId: 'mtp-kombinatorika-003-21',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["A = [- \\sqrt{} 3; \\sqrt{}"],
+    requiredInQuestion: ["A = [- \\sqrt{3}; \\sqrt{3}], B = [- \\frac{\\pi}{2}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
-      A1: "[- 3; 3].",
-      A2: "- 3; .",
-      A3: "- \\frac{\\pi}{2}; \\pi .",
-      A4: "[- \\sqrt{} 5; \\sqrt{}.",
+      A1: "[- \\sqrt{3}; \\sqrt{3}].",
+      A2: "[- \\sqrt{3}; \\frac{\\sqrt{7}}{2}].",
+      A3: "[- \\frac{\\pi}{2}; \\frac{\\pi}{2}].",
+      A4: "[- \\sqrt{5}; \\sqrt{3}].",
     },
     correctAnswer: 'A2',
     hasImage: false,
@@ -1127,7 +1127,7 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
   'mtp-kombinatorika-001-02': {
     externalId: 'mtp-kombinatorika-001-02',
     forbiddenInQuestion: ['⎧', '⎨', '⎪', '⎩', '√'],
-    requiredInQuestion: ["{x | x \\in N; -3,2 < x < "],
+    requiredInQuestion: ["{x | x \\in N; - 3,2 < x < 4,8}"],
     forbiddenInOptions: ['⎧', '⎨', '⎪', '⎩', '√'],
     expectedOptions: {
       A1: "8.",
@@ -1191,8 +1191,8 @@ export const GOLDEN_FIXTURES: Record<string, GoldenExpectation> = {
     forbiddenInOptions: ['+.', '-.', '*.', '/.'],
     expectedOptions: {
       A1: '2 x + 1.',
-      A2: 'x + 2 .',
-      A3: '\\frac{x + 2}{x -1}.',
+      A2: '\\frac{x + 2}{2}.',
+      A3: '\\frac{x + 2}{x - 1}.',
       A4: 'x + 2.',
     },
     correctAnswer: 'A4',
