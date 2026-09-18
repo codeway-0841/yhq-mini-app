@@ -1,35 +1,26 @@
 {
   "audited_items": 11040,
-  "audited_texts": 110400,
+  "audited_texts": 55200,
   "categories": {
-    "raw_operatorname": {
-      "count": 0,
-      "status": "resolved"
+    "sqrt_placeholder": {
+      "items": 507,
+      "texts": 656,
+      "status": "review"
     },
-    "pin_pik_spacing": {
-      "count": 0,
-      "status": "resolved"
+    "operatorname_present": {
+      "items": 478,
+      "texts": 622,
+      "status": "valid-latex"
     },
-    "suspicious_sqrt": {
-      "count": 0,
-      "status": "resolved"
+    "delimiters_present": {
+      "items": 121,
+      "texts": 134,
+      "status": "valid-latex"
     },
-    "raw_left_right": {
-      "count": 0,
-      "status": "resolved"
-    },
-    "ascii_control_chars": {
-      "count": 0,
-      "status": "resolved"
-    },
-    "variant_headers": {
-      "count": 0,
-      "status": "resolved"
-    },
-    "broken_sub_sup": {
-      "count": 0,
-      "status": "resolved"
+    "indexed_root": {
+      "items": 258,
+      "texts": 311,
+      "status": "valid-latex"
     }
-  },
-  "all_resolved": true
+  }
 }

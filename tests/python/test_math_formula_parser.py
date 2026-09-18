@@ -71,9 +71,19 @@ class TestMathFormulaParser(unittest.TestCase):
         self.assertEqual(normalized, r"\left(a + b\right)")
 
     def test_subsup_ordering(self):
-        text = "a^{2} _{1} + a^{2} _{2} + a^{2} _{3} = 93"
+        # Geometry owns script order now; text level only canonicalizes
+        # ADJACENT complete groups to sub-first ('a^{2}_{1}' -> 'a_{1}^{2}',
+        # identical rendering). Never partial digits (that corrupted
+        # genuine 'log^{2}_{0,2}' power+base into 'log_{0}^{2},2}').
+        text = "a_{1} ^{2} + a_{2} ^{2} = 93"
         normalized = normalize_typography(text)
-        self.assertEqual(normalized, "a_{1}^{2} + a_{2}^{2} + a_{3}^{2} = 93")
+        self.assertIn("a_{1}", normalized)
+        self.assertIn("^{2}", normalized)
+        # Adjacent complete groups canonicalize (used by golden 056-20).
+        self.assertEqual(normalize_typography("a^{2}_{1}"), "a_{1}^{2}")
+        # Multi-char groups canonicalize wholly, never partially.
+        self.assertEqual(normalize_typography("log^{2}_{0,2}(x - 1) > 4"),
+                         "log_{0,2}^{2}(x - 1) > 4")
 
     def test_math_delimiter_glyphs_and_control_chars(self):
         text = "\x06x + y\x07 \\in \x08a; b\x09 \x13 \x08c; d\x09 \x18\x18\x18"

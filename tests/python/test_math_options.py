@@ -61,12 +61,25 @@ class TestMathOptions(unittest.TestCase):
         self.assertEqual(clean_option_text("2x + 1 -."), "2x + 1.")
         self.assertEqual(clean_option_text("5."), "5.")
 
+    def test_clean_option_brace_fragment_artifacts(self):
+        # CMEX set-brace pieces at the edges are junk; real percents stay.
+        self.assertEqual(clean_option_text("y = 2^{x} - 3. %"), "y = 2^{x} - 3.")
+        self.assertEqual(clean_option_text("') \\frac{a}{b}."), "\\frac{a}{b}.")
+        self.assertEqual(clean_option_text("1055."), "1055.")
+        # Attached percent (real '25%') and digit-spaced percent survive.
+        self.assertEqual(clean_option_text("25%"), "25%.")
+        self.assertEqual(clean_option_text("-5 %"), "-5 %.")
+
     def test_clean_question_body_variant_header(self):
         text = "Variant-95 1. Natural n sonining kvadrati..."
         cleaned = clean_question_body(text)
         self.assertFalse(cleaned.startswith("Variant-95"))
         self.assertFalse(cleaned.startswith("1."))
         self.assertTrue(cleaned.startswith("Natural n"))
+
+    def test_clean_question_body_stray_brackets(self):
+        cleaned = clean_question_body("[] \\frac{a}{b} ni soddalashtiring.")
+        self.assertTrue(cleaned.startswith("\\frac{a}{b}"))
 
 
 if __name__ == "__main__":

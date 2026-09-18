@@ -71,10 +71,19 @@ def validate_v3_bank(
 
         if not q_uz.strip():
             empty_q.append(eid)
+            if len(details) < 200:
+                details.append({"kind": "empty_question", "id": eid})
 
         for opt_key in ["A1", "A2", "A3", "A4"]:
             if not opts.get(opt_key, "").strip():
                 empty_opts.append(f"{eid}:{opt_key}")
+                if len(details) < 200:
+                    details.append({
+                        "kind": "empty_option", "id": eid, "slot": opt_key,
+                        "source": it.get("source", ""),
+                        "q_preview": q_uz[:120],
+                        "opts_preview": {k: (v[:80] if v else "") for k, v in opts.items()},
+                    })
 
         # Check broken glyphs
         if any(c in q_uz for c in "⎧⎪⎨⎩\x0c\x10\x11\x0f\x02\x03\x12"):
@@ -88,6 +97,11 @@ def validate_v3_bank(
             if prefix.count("(") > prefix.count(")"):
                 continue
             leakages.append(f"{eid}:option_in_question")
+            if len(details) < 200:
+                details.append({
+                    "kind": "leakage", "id": eid, "source": it.get("source", ""),
+                    "q_preview": q_uz[max(0, start - 60):start + 60],
+                })
             break
 
     passed = (

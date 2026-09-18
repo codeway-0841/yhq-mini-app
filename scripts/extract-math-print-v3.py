@@ -45,15 +45,20 @@ PDF_DIR = ROOT / "tmp/pdfs/math-source"
 NATIJA_DB = Path(r"D:\Matematika Test Print\NatijaDB.db")
 
 
-def load_errata_map(errata_path: Path) -> dict[str, dict[str, str]]:
+def load_errata_map(errata_path: Path) -> dict[str, dict]:
     if not errata_path.exists():
         return {}
     with open(errata_path, "r", encoding="utf-8") as f:
         data = json.load(f)
-    errata_map = {}
+    errata_map: dict[str, dict] = {}
     for item in data.get("errata", []):
+        if item.get("status") != "confirmed":
+            continue
         key = f"{item['pdf']}#variant={item['variant']}&question={item['question']}"
-        errata_map[key] = item["resolved_options"]
+        entry: dict = {"options": item["resolved_options"]}
+        if item.get("resolved_question"):
+            entry["question"] = item["resolved_question"]
+        errata_map[key] = entry
     return errata_map
 
 
@@ -179,11 +184,12 @@ def main():
                 # Filter out diagram labels from question text lines
                 text_lines = [l for i, l in enumerate(seg.lines) if i not in excluded_indices]
 
-                # Check system cases
-                cases_latex = reconstruct_system_cases(text_lines)
+                # Check system cases (equation spans render ONLY there)
+                cases_latex, cases_used = reconstruct_system_cases(text_lines)
 
                 # Reconstruct fractions and typography
-                full_text = reconstruct_fractions_with_drawings(text_lines, seg.horizontal_lines)
+                full_text = reconstruct_fractions_with_drawings(
+                    text_lines, seg.horizontal_lines, cases_used, cases_latex)
                 if cases_latex and cases_latex not in full_text:
                     full_text = f"{cases_latex}\n{full_text}"
 
@@ -256,6 +262,10 @@ def main():
     print(f"Buzilgan gliflar: {report.broken_glyph_count}")
     print(f"Formula oqishlari: {report.leakage_count}")
     print(f"Donor fallbacklar: {report.donor_fallback_count}")
+    if report.details:
+        print("--- TAFSILOT (birinchi 40) ---")
+        for d in report.details[:40]:
+            print(f"  [{d.get('kind')}] {d.get('id')}" + (f":{d.get('slot')}" if d.get('slot') else "") + f" src={d.get('source','')}")
     print(f"Holat: {'✅ O‘TDI' if report.passed else '❌ YIQILDI'}")
 
     if not args.dry_run:

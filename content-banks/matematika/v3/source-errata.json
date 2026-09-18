@@ -45,6 +45,420 @@
       },
       "reason": "Source print omitted closing parenthesis on option letter D (printed as 'D 1; 3.')",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra31_60.pdf",
+      "page": 57,
+      "variant": 59,
+      "question": 24,
+      "raw_text": "sin^100 x + cos^100 x = 1; set-brace options {πn/2} {πn/4} {πn/3} {2πn/3}",
+      "resolved_question": "Tenglamani yeching: \\sin^{100} x + \\cos^{100} x = 1.",
+      "resolved_options": {
+        "A1": "\\{\\frac{\\pi n}{2}; n \\in Z\\}.",
+        "A2": "\\{\\frac{\\pi n}{4}; n \\in Z\\}.",
+        "A3": "\\{\\frac{\\pi n}{3}; n \\in Z\\}.",
+        "A4": "\\{\\frac{2\\pi n}{3}; n \\in Z\\}."
+      },
+      "reason": "Set-notation braces extract as CMEX fragments (top->{')'/U+0019, bottom->{'*'/'%'}); options verified against source crop tmp/pdfs/math-v3/source-crops/f-percent-p57.png; math verified (sin^100+cos^100=1 ⟺ x=πn/2); answer key KalitAl v59 q24 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 56,
+      "variant": 89,
+      "question": 15,
+      "raw_text": "graph options contaminated by grid labels (1/2 fraction, unions) and CMEX dust",
+      "resolved_options": {
+        "A1": "y = e^{x} - 3.",
+        "A2": "y = 2^{x - 3}.",
+        "A3": "y = \\left(\\frac{1}{2}\\right)^{x} - 3.",
+        "A4": "y = 2^{x} - 3."
+      },
+      "reason": "Coordinate-grid labels leaked into options (B gained 1/2+unions, C lost (1/2)^x, D gained % dust); options verified against source crop tmp/pdfs/math-v3/source-crops/geo089-15-p56.png; math verified (graph through (0,-2), moderate growth ⟹ D); answer key KalitAlGeo v89 q15 = D matches A4; question text and diagram image kept as extracted",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Geometriya_variant.pdf",
+      "page": null,
+      "variant": 37,
+      "question": 9,
+      "raw_text": "question+options mangled by option-fraction leaking into question body",
+      "resolved_question": "ABC to‘g‘ri burchakli uchburchakning B to‘g‘ri burchagidan BD bissektrisa o‘tkazilgan. Agar \\angle CAB = \\alpha, \\angle CDB = \\beta va CD = 1, AD = 3 bo‘lsa, \\operatorname{tg}(\\alpha + \\beta) ni toping.",
+      "resolved_options": {
+        "A1": "\\frac{5\\sqrt{2}}{2}.",
+        "A2": "\\frac{3\\sqrt{2}}{2}.",
+        "A3": "3.",
+        "A4": "7."
+      },
+      "reason": "Verified transcription from source crop tmp/pdfs/math-v3/source-crops/tg-unbal-p59.png; math verified (right triangle bisector CD=1 AD=3 ⟹ tg(α+β)=7); answer key = D matches A4 in both banks",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": null,
+      "variant": 60,
+      "question": 25,
+      "raw_text": "question+options mangled by option-fraction leaking into question body",
+      "resolved_question": "ABC to‘g‘ri burchakli uchburchakning B to‘g‘ri burchagidan BD bissektrisa o‘tkazilgan. Agar \\angle CAB = \\alpha, \\angle CDB = \\beta va CD = 1, AD = 3 bo‘lsa, \\operatorname{tg}(\\alpha + \\beta) ni toping.",
+      "resolved_options": {
+        "A1": "\\frac{5\\sqrt{2}}{2}.",
+        "A2": "\\frac{3\\sqrt{2}}{2}.",
+        "A3": "3.",
+        "A4": "7."
+      },
+      "reason": "Verified transcription from source crop tmp/pdfs/math-v3/source-crops/tg-unbal-p59.png; math verified (right triangle bisector CD=1 AD=3 ⟹ tg(α+β)=7); answer key = D matches A4 in both banks",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 62,
+      "variant": 32,
+      "question": 9,
+      "raw_text": "rationalize 6/(cbrt11-cbrt5); indexed-root options",
+      "resolved_question": "Kasrning maxrajini irratsionallikdan qutqaring: \\frac{6}{\\sqrt[3]{11} - \\sqrt[3]{5}}.",
+      "resolved_options": {
+        "A1": "\\sqrt[3]{25} - \\sqrt[3]{55} + \\sqrt[3]{121}.",
+        "A2": "\\sqrt[3]{121} - \\sqrt[3]{25}.",
+        "A3": "\\sqrt[3]{11} + \\sqrt[3]{5} + \\sqrt[3]{55}.",
+        "A4": "\\sqrt[3]{25} + \\sqrt[3]{55} + \\sqrt[3]{121}."
+      },
+      "reason": "Small inline cube roots lost (options degraded to '- 55 + 121.'); verified against source crop tmp/pdfs/math-v3/spotcheck/mtp-algebra-trigonometriya-032-09-p62.png; math verified (×(∛121+∛55+∛25) gives 11−5=6); answer key KalitAlTrigon v32 q9 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya121_150.pdf",
+      "page": 44,
+      "variant": 143,
+      "question": 5,
+      "raw_text": "nested roots (sqrt(sqrt2+1)) inside fraction denominator",
+      "resolved_question": "\\frac{\\sqrt{2} - 15}{\\sqrt{\\sqrt{2} + 1} - 4} - \\sqrt{\\sqrt{2} + 1} ni hisoblang.",
+      "resolved_options": {
+        "A1": "-2.",
+        "A2": "4.",
+        "A3": "2.",
+        "A4": "0."
+      },
+      "reason": "Verified against source crop tmp/pdfs/math-v3/source-crops/zoom-143-05b.png; math verified ((√2−15)/(√(√2+1)−4) − √(√2+1) = 4); answer key KalitAlGeo v143 q5 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": null,
+      "variant": 85,
+      "question": 5,
+      "raw_text": "see reason",
+      "status": "confirmed",
+      "reason": "Stacked 4th-roots misresolved; verified against source crop tmp/pdfs/math-v3/source-crops/zoom-085-05.png; math verified ((a+b)/(a²−b²)=1/(a−b) with a=∜x,b=∜y); key KalitAl v85 q5 = A matches A1",
+      "resolved_question": "Kasrni qisqartiring: \\frac{\\sqrt[4]{x} + \\sqrt[4]{y}}{\\sqrt{x} - \\sqrt{y}}.",
+      "resolved_options": {
+        "A1": "\\frac{1}{\\sqrt[4]{x} - \\sqrt[4]{y}}.",
+        "A2": "\\sqrt{x} - \\sqrt{y}.",
+        "A3": "\\sqrt[4]{x} + \\sqrt[4]{y}.",
+        "A4": "\\frac{1}{\\sqrt[4]{x} + \\sqrt[4]{y}}."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya121_150.pdf",
+      "page": null,
+      "variant": 131,
+      "question": 10,
+      "raw_text": "see reason",
+      "status": "confirmed",
+      "reason": "Mixed-number options lost stacked fractions ('72 5' for '7⅖'); verified against source crop tmp/pdfs/math-v3/spotcheck2/mtp-algebra-geometriya-131-10-p20.png; key KalitAlGeo v131 q10 = B matches A2",
+      "resolved_options": {
+        "A1": "7\\frac{1}{2}.",
+        "A2": "7\\frac{2}{5}.",
+        "A3": "6\\frac{1}{6}.",
+        "A4": "6\\frac{3}{5}."
+      }
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": null,
+      "variant": 17,
+      "question": 20,
+      "raw_text": "see reason",
+      "status": "confirmed",
+      "reason": "Verified against source crop tmp/pdfs/math-v3/spotcheck2/mtp-algebra-trigonometriya-017-20-p33.png; math verified (solutions {4}, product 4); key KalitAlTrigon v17 q20 = D matches A4; options kept as extracted",
+      "resolved_question": "|x + 2| + \\frac{1}{2}|x - 4| = 6 tenglamaning barcha natural yechimlar ko‘paytmasini toping.",
+      "resolved_options": {
+        "A1": "8.",
+        "A2": "5.",
+        "A3": "2.",
+        "A4": "4."
+      }
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": null,
+      "variant": 28,
+      "question": 17,
+      "raw_text": "see reason",
+      "status": "confirmed",
+      "reason": "Root paren lost ('√(x−2)' -> '√x−}+2'); verified against source crop tmp/pdfs/math-v3/spotcheck2/mtp-algebra-028-17-p54.png; math verified (solutions {2,3,6}); key KalitAl v28 q17 = A matches A1; options kept as extracted",
+      "resolved_question": "\\sqrt{x - 2} + |x - 5| = 3 tenglamaning butun yechimlarini toping.",
+      "resolved_options": {
+        "A1": "2,3,6.",
+        "A2": "2,5,6.",
+        "A3": "4,5,6.",
+        "A4": "5,7,11."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 39,
+      "variant": 20,
+      "question": 18,
+      "raw_text": "3-term absolute-value expression; nested operatorname damage",
+      "resolved_question": "\\frac{|\\log_{0,5}(\\operatorname{tg} \\frac{\\pi}{3})|}{\\log_{0,5}(\\operatorname{tg} \\frac{\\pi}{3})} + \\frac{3 \\cdot |3\\sqrt{3} - 2\\sqrt{7}|}{3\\sqrt{3} - 2\\sqrt{7}} + \\frac{9 \\cdot |\\arccos(-0,5) - \\frac{\\pi}{2}|}{\\arccos(-0,5) - \\frac{\\pi}{2}} ifodani qiymatini toping.",
+      "resolved_options": {
+        "A1": "6.",
+        "A2": "4.",
+        "A3": "5.",
+        "A4": "10."
+      },
+      "reason": "Verified against source crop tmp/pdfs/math-v3/source-crops/monster020-18-p38.png; math verified (|-1-3+9| terms = -1-3+9 = 5); answer key KalitAlGeo v20 q18 = C matches A3; options kept as extracted (6/4/5/10 clean)",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 2,
+      "variant": 62,
+      "question": 6,
+      "raw_text": "stacked fractional exponents a^{3/2} broke option roots",
+      "resolved_question": "Ushbu \\left(\\frac{a^{3/2} + b^{3/2}}{a - b} - \\frac{a - b}{\\frac{1}{a^{3/2}} + \\frac{1}{b^{3/2}}}\\right) \\cdot \\frac{a - b}{\\sqrt{ab}} - \\sqrt{a} ifodaning a = \\sqrt{2}, b = 8 dagi qiymatini toping.",
+      "resolved_options": {
+        "A1": "-\\sqrt{2}.",
+        "A2": "2\\sqrt{2}.",
+        "A3": "0.",
+        "A4": "2."
+      },
+      "reason": "Faithful transcription from source crops tmp/pdfs/math-v3/source-crops/zoom-062-06b.png (stacked 3/2 exponents verified at 5x); answer key KalitAl v62 q6 = B matches transcribed A2; A2 root restored ('2 2' -> '2\\sqrt{2}')",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 0,
+      "variant": 1,
+      "question": 5,
+      "raw_text": "coefficient 3 before root misread as degree; nested stacked fractions",
+      "resolved_question": "Agar a = 3\\sqrt{3} - 2 bo‘lsa, \\left(\\frac{a^{4} + 5 a^{3} + 15 a - 9}{a^{6} + 3 a^{4}} + 9 a^{-4}\\right) : \\left(\\frac{a^{5} + 2 a^{4}}{a + 3}\\right)^{-1} - 4 ning qiymatini toping.",
+      "resolved_options": {
+        "A1": "5.",
+        "A2": "3\\sqrt{3}.",
+        "A3": "23.",
+        "A4": "12\\sqrt{3}."
+      },
+      "reason": "Faithful transcription from source crop tmp/pdfs/math-v3/source-crops/opt-001-05.png; answer key KalitAlGeo v1 q5 = C matches transcribed A3; A2 coefficient root restored ('\\sqrt[3]{3}' -> '3\\sqrt{3}')",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": null,
+      "variant": 61,
+      "question": 3,
+      "raw_text": "nested fractions 7/40, 11/20, 3/25 lost; mixed 6¼ split",
+      "resolved_question": "\\frac{0,725 + 0,6 + \\frac{7}{40} + \\frac{11}{20}}{0,128 \\cdot 6\\frac{1}{4} - 0,0345 : \\frac{3}{25}} \\cdot 0,25 ni hisoblang.",
+      "resolved_options": {
+        "A1": "1/2.",
+        "A2": "1.",
+        "A3": "2.",
+        "A4": "4."
+      },
+      "reason": "Verified against source crop tmp/pdfs/math-v3/golden-crops/mtp-algebra-061-03-p0.png; math verified (2.05/0.5125×0.25 = 1); answer key KalitAl v61 q3 = B matches A2; options kept as extracted (1/2, 1, 2, 4 clean)",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra31_60.pdf",
+      "page": null,
+      "variant": 31,
+      "question": 5,
+      "raw_text": "cube-root factorization options degraded",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-031-05-p0.png; math verified ((x-√6)(x²−x−√6) expands to target); key KalitAl v31 q5 = C matches A3",
+      "resolved_question": "Ko‘phadni ko‘paytuvchilarga ajrating: x^{3} - (\\sqrt{6} + 1) x^{2} + 6.",
+      "resolved_options": {
+        "A1": "(x + \\sqrt{6})(x^{2} + x + \\sqrt{6}).",
+        "A2": "(x + \\sqrt{6})(x^{2} - x + \\sqrt{6}).",
+        "A3": "(x - \\sqrt{6})(x^{2} - x - \\sqrt{6}).",
+        "A4": "(x - \\sqrt{6})(x^{2} + x - \\sqrt{6})."
+      }
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": null,
+      "variant": 91,
+      "question": 6,
+      "raw_text": "6th-root simplification degraded",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-091-06-p0.png; key KalitAl v91 q6 = C matches A3",
+      "resolved_question": "\\frac{a + a\\sqrt{a}}{\\sqrt[3]{a^{2}} - \\sqrt[6]{a^{5}} + a} + \\frac{\\sqrt[3]{a^{2}} - a}{\\sqrt[3]{a} + \\sqrt{a}} + 2\\sqrt[3]{a} ni soddalashtiring.",
+      "resolved_options": {
+        "A1": "0.",
+        "A2": "4\\sqrt{a}.",
+        "A3": "4\\sqrt[3]{a}.",
+        "A4": "2\\sqrt[3]{a} + 2\\sqrt{a}."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya121_150.pdf",
+      "page": null,
+      "variant": 121,
+      "question": 5,
+      "raw_text": "root expression + options degraded",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-geometriya-121-05-p0.png; math verified ((5√7+7√5)/√35−√5 = √7); key KalitAlGeo v121 q5 = B matches A2",
+      "resolved_question": "Hisoblang: \\frac{5\\sqrt{7} + 7\\sqrt{5}}{\\sqrt{35}} - \\sqrt{5}.",
+      "resolved_options": {
+        "A1": "\\sqrt{7} + \\sqrt{5}.",
+        "A2": "\\sqrt{7}.",
+        "A3": "\\sqrt{7} - \\sqrt{5}.",
+        "A4": "\\sqrt{5}."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya151_164.pdf",
+      "page": null,
+      "variant": 151,
+      "question": 24,
+      "raw_text": "leading fragment from previous question tail",
+      "status": "confirmed",
+      "reason": "leading '2 + sqrt3' is previous-question tail (true q24 starts at 'Agar', verified by PDF text search); options kept as extracted (10/15/20/30 clean); key KalitAlGeo v151 q24 = A matches A1",
+      "resolved_question": "Agar OB || CD va \\angle ABO = 40^{\\circ} bo‘lsa, \\angle CAD qanday bo‘ladi?",
+      "resolved_options": {
+        "A1": "10^{\\circ} .",
+        "A2": "15^{\\circ} .",
+        "A3": "20^{\\circ} .",
+        "A4": "30^{\\circ} ."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": null,
+      "variant": 61,
+      "question": 5,
+      "raw_text": "mega stacked fraction with 3rd/6th roots degraded",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-geometriya-061-05-p0.png; key KalitAlGeo v61 q5 = B matches A2",
+      "resolved_question": "\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}} + \\frac{\\sqrt[3]{a x^{2}} - \\sqrt[3]{a^{2} x}}{\\sqrt[3]{a^{2}} - 2\\sqrt[3]{a x} + \\sqrt[3]{x^{2}}}}{\\sqrt[6]{a} - \\sqrt[6]{x}} - \\sqrt[6]{x} ni soddalashtiring.",
+      "resolved_options": {
+        "A1": "1.",
+        "A2": "\\sqrt[6]{a}.",
+        "A3": "-\\sqrt[6]{x}.",
+        "A4": "(\\sqrt[3]{a} + \\sqrt[3]{x})."
+      }
+    },
+    {
+      "pdf": "Algebra_va_Geometriya91_120.pdf",
+      "page": null,
+      "variant": 91,
+      "question": 5,
+      "raw_text": "question word order scrambled; options degraded",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-geometriya-091-05-p0.png; math verified (ratio = √11−1 ≈ 2.317); key KalitAlGeo v91 q5 = C matches A3",
+      "resolved_question": "Agar x = \\frac{\\sqrt{11} + 1}{2} bo‘lsa, \\frac{x^{3} - 3 x^{2} + 6,5 x - 2}{x^{2} - x + 1} kasrning qiymatini hisoblang.",
+      "resolved_options": {
+        "A1": "1 - \\sqrt{11}.",
+        "A2": "\\sqrt{11} - 2.",
+        "A3": "\\sqrt{11} - 1.",
+        "A4": "\\sqrt{11} + 1."
+      }
+    },
+    {
+      "pdf": "Geometriya_variant.pdf",
+      "page": null,
+      "variant": 1,
+      "question": 2,
+      "raw_text": "phantom root inserted in question",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-geometriya-001-02-p0.png (no root in question); math verified (c=16√3); key KalitGeo v1 q2 = D matches A4",
+      "resolved_question": "Uchburchakning b va c tomonlari orasidagi burchagi 30^{\\circ} ga, uchinchi tomoni 16 ga teng. Uning tomonlari c^{2} = b^{2} + 16 b + 256 shartni qanoatlantiradi. c ning qiymati qanday?",
+      "resolved_options": {
+        "A1": "12\\sqrt{2}.",
+        "A2": "16\\sqrt{2}.",
+        "A3": "12\\sqrt{3}.",
+        "A4": "16\\sqrt{3}."
+      }
+    },
+    {
+      "pdf": "Kombinatorika.pdf",
+      "page": null,
+      "variant": 1,
+      "question": 15,
+      "raw_text": "venn question spilled into options",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-kombinatorika-001-15-p0.png + venn sets read from crop; math verified ((A∪B)∩C={a,c,d,f}); key KalitKombi v1 q15 = D matches A4",
+      "resolved_question": "Rasmda A, B va C to‘plamlar tasvirlangan. (A \\cup B) \\cap C to‘plamning elementlarini aniqlang.",
+      "resolved_options": {
+        "A1": "{a, b, c, d, g, h, f}.",
+        "A2": "{a, b, c, d, e, f}.",
+        "A3": "{a, b, c, d}.",
+        "A4": "{a, c, d, f}."
+      }
+    },
+    {
+      "pdf": "Kombinatorika.pdf",
+      "page": null,
+      "variant": 3,
+      "question": 21,
+      "raw_text": "set-builder intervals scrambled",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-kombinatorika-003-21-p5.png; math verified (=[−√3,√7/2]); key KalitKombi v3 q21 = B matches A2",
+      "resolved_question": "A = [- \\sqrt{3}; \\sqrt{3}], B = [- \\frac{\\pi}{2}; \\frac{\\pi}{2}] va C = [- \\sqrt{5}; \\frac{\\sqrt{7}}{2}] bo‘lsa (A \\cup B) \\cap C to‘plamni aniqlang.",
+      "resolved_options": {
+        "A1": "[- \\sqrt{3}; \\sqrt{3}].",
+        "A2": "[- \\sqrt{3}; \\frac{\\sqrt{7}}{2}].",
+        "A3": "[- \\frac{\\pi}{2}; \\frac{\\pi}{2}].",
+        "A4": "[- \\sqrt{5}; \\sqrt{3}]."
+      }
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": null,
+      "variant": 1,
+      "question": 9,
+      "raw_text": "twin of 001-07; small-fraction roots split; A4 empty",
+      "status": "confirmed",
+      "reason": "crop golden-crops/mtp-algebra-trigonometriya-001-09-p0.png; math verified (=2); key KalitAlTrigon v1 q9 = B matches A2",
+      "resolved_question": "\\left(\\frac{1}{a - \\sqrt{ab}} + \\frac{1}{a + \\sqrt{ab}}\\right) \\cdot \\frac{a^{3} - b^{3}}{a^{2} + ab + b^{2}} ni soddalashtiring (a \\ne b, ab \\ge 0).",
+      "resolved_options": {
+        "A1": "1.",
+        "A2": "2.",
+        "A3": "a.",
+        "A4": "\\frac{1}{a + b}."
+      }
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 48,
+      "variant": 85,
+      "question": 6,
+      "raw_text": "nested roots 2√(4±2√3); exponent options 2^√3, 8^√3",
+      "resolved_question": "2\\sqrt{4 + 2\\sqrt{3}} : 2\\sqrt{4 - 2\\sqrt{3}} ifodaning qiymatini toping.",
+      "resolved_options": {
+        "A1": "4.",
+        "A2": "8.",
+        "A3": "2^{\\sqrt{3}}.",
+        "A4": "8^{\\sqrt{3}}."
+      },
+      "reason": "Faithful transcription from source crops tmp/pdfs/math-v3/source-crops/zoom-085-06op2.png (separator verified as ':' text glyph between the roots; options C/D exponents verified raised at 5x); answer key KalitAl v85 q6 = A matches transcribed A1; NOTE: (√3+1)/(√3−1)=2+√3≈3.73 matches no option exactly — possible print/key defect, transcription kept faithful to print, key kept as DB says",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": null,
+      "variant": 34,
+      "question": 5,
+      "raw_text": "same question as Algebra61_90 v85 q6 (nested roots); twin transcription",
+      "resolved_question": "2\\sqrt{4 + 2\\sqrt{3}} : 2\\sqrt{4 - 2\\sqrt{3}} ifodaning qiymatini toping.",
+      "resolved_options": {
+        "A1": "4.",
+        "A2": "8.",
+        "A3": "2^{\\sqrt{3}}.",
+        "A4": "8^{\\sqrt{3}}."
+      },
+      "reason": "Twin of Algebra61_90 v85 q6 (same print); answer key KalitAlGeo v34 q5 = A matches A1",
+      "status": "confirmed"
     }
   ]
 }

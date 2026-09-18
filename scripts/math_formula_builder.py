@@ -38,17 +38,21 @@ def clean_base_text(text: str) -> str:
         .replace("ﬁ", "fi")
         .replace("ﬀ", "ff")
         .replace("−", "-")
+        # U+2032 PRIME (f′) -> ASCII apostrophe (KaTeX-strict renders f^{'}).
+        .replace("′", "'")
     )
     for s, r in SYMBOL_MAP.items():
         text = text.replace(s, r)
     for g, r in GREEK_MAP.items():
         text = text.replace(g, r)
         
-    # Degrees
-    text = re.sub(r"\^{?[\u25e6°]}?", r"^{\\circ}", text)
-    text = re.sub(r"(\d+)\s*[\u25e6°]", r"\1^{\\circ}", text)
-    text = text.replace("\u25e6", r"^{\\circ}").replace("°", r"^{\\circ}")
-    text = re.sub(r"\^{+\\circ}+", r"^{\\circ}", text)
+    # Degrees (single backslash; plain replace inserts literally)
+    text = re.sub("\^?\{?[\u25e6°]\}?", r"^{\\circ}", text)
+    text = re.sub("(\d+)\s*[\u25e6°]", r"\1^{\\circ}", text)
+    text = text.replace("\u25e6", "^{\\circ}").replace("°", "^{\\circ}")
+    text = re.sub(r"\^\{(\^\{)+\\circ\}(\})+", r"^{\\circ}", text)
+    # NOTE: no generic '^{+…}+' collapsing: it eats structural '}}'
+    # (006-22 '\frac{..}{..}' junction). Nested case above suffices.
     
     # Vector arrows
     text = re.sub(r"[\u20d7\u20d6⃗]\s*\\frac\{([a-zA-Z])", r"\\frac{\\vec{\1}", text)
@@ -59,13 +63,15 @@ def clean_base_text(text: str) -> str:
     text = re.sub(r"[\u20d7\u20d6⃗]", "", text)
     text = text.replace("∅", r"\emptyset")
     
-    # Trig powers e.g. sin2 x -> \sin^2 x
-    text = re.sub(r"\b(sin|cos)\s*([2346])\b", r"\\\1^{\2}", text)
-    # Trig functions
-    text = re.sub(r"\b(arcctg|arctg)\b", r"\\operatorname{\1}", text)
-    text = re.sub(r"\b(ctg|tg)\b", r"\\operatorname{\1}", text)
+    # Trig powers: owned by GEOMETRY (build_spans_text wraps small raised
+    # digits). The old text regex 'sin\s*([2346])' corrupted angle
+    # coefficients ('sin 2°' -> '\sin^{2\circ}'); removed (v3 parity).
+    # Trig functions (lookbehinds: multi-pass idempotency, no nested \operatorname)
+    text = re.sub(r"(?<!\\operatorname\{)\b(arcctg|arctg)\b(?!\})", r"\\operatorname{\1}", text)
+    text = re.sub(r"(?<!\\operatorname\{)\b(ctg|tg)\b(?!\})", r"\\operatorname{\1}", text)
+    text = re.sub(r"(\\operatorname\{)+([a-zA-Z]+)\}+", r"\\operatorname{\2}", text)
     # Logarithms
-    text = re.sub(r"\blog\s*([0-9]+)\b", r"\\log_{\1}", text)
+    text = re.sub(r"(?<!\\)\blog\s*([0-9]+)\b", r"\\log_{\1}", text)
     
     # Nested outer root fraction normalization
     text = re.sub(
@@ -74,11 +80,17 @@ def clean_base_text(text: str) -> str:
         text,
     )
 
-    # Radical normalization
-    text = re.sub(r"\b([23456789])\s*\\?sqrt\{", r"\\sqrt[\1]{", text)
-    text = re.sub(r"\b([23456789])\s*√\s*", r"\\sqrt[\1]{", text)
-    text = re.sub(r"√\s*([A-Za-z0-9]+(?:\s*[+\-]\s*[A-Za-z0-9]+)?)", r"\\sqrt{\1}", text)
-    text = text.replace("√", r"\sqrt{}")
+    # Radical normalization (conservative token; never silent empty;
+    # (?![A-D]\)) keeps option markers out of radicands).
+    # NO bare-digit degree rule: full-size digits are coefficients (001-05).
+    _TK = r"(\([^()\n]*\)|\d{1,3}|(?![A-D]\))[A-Za-zα-ωΑ-Ω]{1,3}(?![A-Za-zα-ωΑ-Ω])(?=\s*($|[+\-*/=<>≤≥(),;.\]}|\\0-9])))"
+    text = re.sub(r"\^\{([23456789])\}\s*\\sqrt\{", r"\\sqrt[\1]{", text)
+    text = re.sub(r"\^\{([23456789])\}\s*√\s*" + _TK, r"\\sqrt[\1]{\2}", text)
+    text = re.sub(r"√\s*\^\{([23456789])\}\s*" + _TK, r"\\sqrt[\1]{\2}", text)
+    text = re.sub(r"√\s*" + _TK, r"\\sqrt{\1}", text)
+    # Sentence dot glued inside a root ('\sqrt{2.}' -> '\sqrt{2}.').
+    text = re.sub(r"\\sqrt((\[[^\]]*\])?)\{([^{}]*?)\.\}", r"\\sqrt\1{\3}.", text)
+    text = text.replace("√", r"\sqrt{?}")
     
     # Large paren / bracket replacement
     text = re.sub(r"\x0c(?!rac)", r"\\left(", text)
@@ -92,9 +104,15 @@ def clean_base_text(text: str) -> str:
     text = re.sub(r"(\\frac\{[^{}]+\}\{[^{}]+\})\]", r"\1", text)
     text = re.sub(r"[⎧⎪⎨⎩⎫⎬⎭]+", "", text)
     
-    # Whitespace cleanup
+    # Whitespace cleanup (comma spacing before letters only; math tight;
+    # strip space before comma so decimals join: '1 , 04' -> '1,04')
     text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"\s*([,;])\s*", r"\1 ", text)
+    text = re.sub(r"\s+,", ",", text)
+    text = re.sub(r"(\\cdot)(?!s)([a-zA-Z])", r"\1 \2", text)
+    text = re.sub(r"(\\to)(?!p)([a-zA-Z])", r"\1 \2", text)
+    text = re.sub(r"(\\cup|\\cap|\\pm|\\div)([a-zA-Z])", r"\1 \2", text)
+    text = re.sub(r",\s*(?=[A-Za-z‘’'ʼ])", ", ", text)
+    text = re.sub(r"\s*([;])\s*", r"\1 ", text)
     # Decimal comma normalization: "2, 75" -> "2,75"
     text = re.sub(r"(\d+),\s+(\d+)", r"\1,\2", text)
     text = re.sub(r"\s+([)\]}])", r"\1", text)
