@@ -1203,6 +1203,149 @@
       },
       "reason": "Crop-confirmed (a38q19h): subscript reads 'l-m' ambiguously, but only l^{-m} base simplifies (k^{-1/mn}); answer key KalitAl v38 q19 = C matches A3; print defect (missing superscript grouping) normalized",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 124,
+      "variant": 62,
+      "question": 27,
+      "raw_text": "f=5th-root(x)-cbrt(x) derivative; extractor lost C/D options entirely and shattered B",
+      "resolved_options": {
+        "A1": "\\frac{5}{x^{4}} - \\frac{3}{x^{2}} .",
+        "A2": "\\frac{1}{5} \\sqrt[5]{x} + \\sqrt[3]{x^{2}}.",
+        "A3": "\\frac{1}{\\sqrt[5]{x^{4}}} + \\frac{1}{\\sqrt[3]{x^{2}}}.",
+        "A4": "\\frac{1}{5 \\sqrt[5]{x^{4}}} - \\frac{1}{3 \\sqrt[3]{x^{2}}}."
+      },
+      "reason": "Crop-confirmed (a62q27): (1/5)x^{-4/5}-(1/3)x^{-2/3}; answer key KalitAl v62 q27 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 151,
+      "variant": 76,
+      "question": 17,
+      "raw_text": "sqrt(x^2+3)+sqrt(10-x^2)=5; extractor shattered radicands into placeholders",
+      "resolved_question": "\\sqrt{x^{2} + 3} + \\sqrt{10 - x^{2}} = 5 tenglamani yeching.",
+      "resolved_options": {
+        "A1": "- 1; - \\sqrt{6}.",
+        "A2": "1; \\sqrt{6}.",
+        "A3": "± 1; ± \\sqrt{6}.",
+        "A4": "3; \\sqrt{6}."
+      },
+      "reason": "Crop-confirmed (a76q17): squaring gives (x^2-1)(x^2-6)=0; answer key KalitAl v76 q17 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 170,
+      "variant": 85,
+      "question": 30,
+      "raw_text": "Integral (x-2)/sqrt(x^2-4x+8); extractor shattered radicand and option roots",
+      "resolved_question": "\\int \\frac{(x - 2) dx}{\\sqrt{x^{2} - 4 x + 8}} integralni hisoblang.",
+      "resolved_options": {
+        "A1": "\\sqrt{x^{2} - 4 x + 8} + C.",
+        "A2": "- \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A3": "- \\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A4": "\\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C."
+      },
+      "reason": "Crop-confirmed (a85q30): numerator is half the radicand derivative, integral is sqrt(u)+C; answer key KalitAl v85 q30 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 175,
+      "variant": 88,
+      "question": 6,
+      "raw_text": "4th-root/sqrt chain; extractor shattered all radicands into placeholders",
+      "resolved_question": "Hisoblang: \\sqrt[4]{64} - 3 \\sqrt[4]{324} + 2 \\sqrt{32} - 2 \\sqrt{50}.",
+      "resolved_options": {
+        "A1": "- 9 \\sqrt{2}.",
+        "A2": "- 8 \\sqrt[4]{2} - 2 \\sqrt{2}.",
+        "A3": "12 \\sqrt{2}.",
+        "A4": "16 \\sqrt[4]{2} - 2 \\sqrt{2}."
+      },
+      "reason": "Crop-confirmed (a88q6): 2sqrt2-9sqrt2+8sqrt2-10sqrt2=-9sqrt2; answer key KalitAl v88 q6 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 180,
+      "variant": 90,
+      "question": 30,
+      "raw_text": "Integral x/sqrt((x^2+4)^3); extractor left bare placeholders in every option",
+      "resolved_question": "\\int \\frac{x}{\\sqrt{(x^{2} + 4)^{3}}} dx integralni hisoblang.",
+      "resolved_options": {
+        "A1": "\\frac{1}{\\sqrt{x^{2} + 4}} + C.",
+        "A2": "\\frac{- 1}{\\sqrt{x^{2} + 4}} + C.",
+        "A3": "\\frac{- 2}{\\sqrt{x^{2} + 4}} + C.",
+        "A4": "\\frac{2}{\\sqrt{x^{2} + 4}} + C."
+      },
+      "reason": "Crop-confirmed (a90q30b): u=x^2+4 gives -1/sqrt(u)+C; answer key KalitAl v90 q30 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 223,
+      "variant": 112,
+      "question": 6,
+      "raw_text": "Same family as AlGeo v61 q5 (061-05): (u-v)^2/(u-v) chain over (6th-root diff); extractor shattered",
+      "resolved_question": "\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}} + \\frac{\\sqrt[3]{a x^{2}} - \\sqrt[3]{a^{2} x}}{\\sqrt[3]{a^{2}} - 2 \\sqrt[3]{a x} + \\sqrt[3]{x^{2}}}}{\\sqrt[6]{a} - \\sqrt[6]{x}} - \\sqrt[6]{x} ni soddalashtiring.",
+      "resolved_options": {
+        "A1": "1.",
+        "A2": "\\sqrt[6]{a}.",
+        "A3": "- \\sqrt[6]{x}.",
+        "A4": "(\\sqrt[3]{a} + \\sqrt[3]{x})."
+      },
+      "reason": "Crop-confirmed (a112q6b): (u-v)^2/(u-v)/(sqrt(u)-sqrt(v))-sqrt(v) with u=cbrt(a),v=cbrt(x) gives 6th-root(a); answer key KalitAl v112 q6 = B matches A2",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Geometriya_variant.pdf",
+      "page": 42,
+      "variant": 21,
+      "question": 20,
+      "raw_text": "Right triangle big leg 4sqrt2, small leg = hypotenuse/3; incircle circumference",
+      "resolved_question": "To‘g‘ri burchakli uchburchakning katta kateti 4 \\sqrt{2} ga teng, kichik kateti gepotenuzasidan 3 marta kichik. Uchburchakka ichki chizilgan aylananing uzunligini toping.",
+      "resolved_options": {
+        "A1": "2 (2 \\sqrt{2} + 1) \\pi.",
+        "A2": "4 (\\sqrt{2} + 1) \\pi.",
+        "A3": "2 (\\sqrt{2} - 1) \\pi.",
+        "A4": "4 (\\sqrt{2} - 1) \\pi."
+      },
+      "reason": "Crop-confirmed (g21q20b): legs 2 and 4sqrt2, hyp 6, r=(2+4sqrt2-6)/2, C=4pi(sqrt2-1); answer key KalitGeo v21 q20 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 18,
+      "variant": 9,
+      "question": 30,
+      "raw_text": "Cuboid face diagonals 7,8,9; space diagonal d^2=(49+64+81)/2=97",
+      "resolved_question": "To‘g‘ri burchakli parallelepipedning uchta turli yoqlarining diagonallari 7; 8 va 9 dm bo‘lsa, parallelepipedning diagonali uzunligini (dm) hisoblang.",
+      "resolved_options": {
+        "A1": "6 \\sqrt{3}.",
+        "A2": "4 \\sqrt{6}.",
+        "A3": "\\sqrt{94}.",
+        "A4": "\\sqrt{97}."
+      },
+      "reason": "Crop-confirmed (g09q30b); answer key KalitAlGeo v9 q30 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 22,
+      "variant": 11,
+      "question": 30,
+      "raw_text": "Triangular pyramid base sides 6,7 angle 45 (print omits degree sign), lateral 8 at 30 deg",
+      "resolved_question": "Uchburchakli piramida asosining ikki tomoni 6 va 7 dm bo‘lib, ular orasidagi burchak 45 ga teng. Agar piramidaning 8 dm bo‘lgan yon qirrasi asos tekisligi bilan 30^{\\circ} li burchak tashkil etsa, uning hajmini (dm^{3}) toping.",
+      "resolved_options": {
+        "A1": "7 \\sqrt{2}.",
+        "A2": "28 \\sqrt{2}.",
+        "A3": "14 \\sqrt{2}.",
+        "A4": "56 \\sqrt{2}."
+      },
+      "reason": "Crop-confirmed (g11q30e): V=(1/3)(21sqrt2/2)(4)=14sqrt2; answer key KalitAlGeo v11 q30 = C matches A3",
+      "status": "confirmed"
     }
   ]
 }

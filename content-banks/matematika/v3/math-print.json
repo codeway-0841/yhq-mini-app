@@ -40829,15 +40829,15 @@
       "questionRu": "f (x) = \\sqrt[5]{x} - \\sqrt[3]{x} funksiyaning hosilasini toping.",
       "optionsUz": {
         "A1": "\\frac{5}{x^{4}} - \\frac{3}{x^{2}} .",
-        "A2": "\\frac{1}{5} \\sqrt[5]{x} + \\sqrt[3]{x^{2} .} \\frac{1}{\\sqrt{?}^{5} x^{4}} \\frac{1}{\\sqrt{?}^{3} x^{2}} \\frac{1}{\\sqrt{?}^{5} x^{4}} \\frac{1}{\\sqrt{?}^{3} x^{2}}.",
-        "A3": ".",
-        "A4": "."
+        "A2": "\\frac{1}{5} \\sqrt[5]{x} + \\sqrt[3]{x^{2}}.",
+        "A3": "\\frac{1}{\\sqrt[5]{x^{4}}} + \\frac{1}{\\sqrt[3]{x^{2}}}.",
+        "A4": "\\frac{1}{5 \\sqrt[5]{x^{4}}} - \\frac{1}{3 \\sqrt[3]{x^{2}}}."
       },
       "optionsRu": {
         "A1": "\\frac{5}{x^{4}} - \\frac{3}{x^{2}} .",
-        "A2": "\\frac{1}{5} \\sqrt[5]{x} + \\sqrt[3]{x^{2} .} \\frac{1}{\\sqrt{?}^{5} x^{4}} \\frac{1}{\\sqrt{?}^{3} x^{2}} \\frac{1}{\\sqrt{?}^{5} x^{4}} \\frac{1}{\\sqrt{?}^{3} x^{2}}.",
-        "A3": ".",
-        "A4": "."
+        "A2": "\\frac{1}{5} \\sqrt[5]{x} + \\sqrt[3]{x^{2}}.",
+        "A3": "\\frac{1}{\\sqrt[5]{x^{4}}} + \\frac{1}{\\sqrt[3]{x^{2}}}.",
+        "A4": "\\frac{1}{5 \\sqrt[5]{x^{4}}} - \\frac{1}{3 \\sqrt[3]{x^{2}}}."
       },
       "correctAnswer": "A4",
       "source": "Algebra61_90.pdf#variant=62&question=27",
@@ -49435,19 +49435,19 @@
     {
       "externalId": "mtp-algebra-076-17",
       "topicExternalId": "mtp-algebra-076",
-      "questionUz": "\\sqrt{x^{2}} + 3 + \\sqrt{10 - x\\sqrt[2]{?}} = 5 tenglamani yeching.",
-      "questionRu": "\\sqrt{x^{2}} + 3 + \\sqrt{10 - x\\sqrt[2]{?}} = 5 tenglamani yeching.",
+      "questionUz": "\\sqrt{x^{2} + 3} + \\sqrt{10 - x^{2}} = 5 tenglamani yeching.",
+      "questionRu": "\\sqrt{x^{2} + 3} + \\sqrt{10 - x^{2}} = 5 tenglamani yeching.",
       "optionsUz": {
-        "A1": "- 1; - \\sqrt{?} \\frac{6}{6}.",
-        "A2": "1; 6.",
-        "A3": "± 1; ± \\sqrt{?}.",
-        "A4": "3; \\sqrt{?}."
+        "A1": "- 1; - \\sqrt{6}.",
+        "A2": "1; \\sqrt{6}.",
+        "A3": "± 1; ± \\sqrt{6}.",
+        "A4": "3; \\sqrt{6}."
       },
       "optionsRu": {
-        "A1": "- 1; - \\sqrt{?} \\frac{6}{6}.",
-        "A2": "1; 6.",
-        "A3": "± 1; ± \\sqrt{?}.",
-        "A4": "3; \\sqrt{?}."
+        "A1": "- 1; - \\sqrt{6}.",
+        "A2": "1; \\sqrt{6}.",
+        "A3": "± 1; ± \\sqrt{6}.",
+        "A4": "3; \\sqrt{6}."
       },
       "correctAnswer": "A3",
       "source": "Algebra61_90.pdf#variant=76&question=17",
@@ -55378,19 +55378,19 @@
     {
       "externalId": "mtp-algebra-085-30",
       "topicExternalId": "mtp-algebra-085",
-      "questionUz": "\\frac{(x - 2) dx}{\\sqrt{?} x^{2} - 4 x + 8} integralni hisoblang.",
-      "questionRu": "\\frac{(x - 2) dx}{\\sqrt{?} x^{2} - 4 x + 8} integralni hisoblang.",
+      "questionUz": "\\int \\frac{(x - 2) dx}{\\sqrt{x^{2} - 4 x + 8}} integralni hisoblang.",
+      "questionRu": "\\int \\frac{(x - 2) dx}{\\sqrt{x^{2} - 4 x + 8}} integralni hisoblang.",
       "optionsUz": {
-        "A1": "\\sqrt{x} \\frac{^{2} - 4 x + 8 +}{x^{2} - 4 x} C .",
-        "A2": "- \\sqrt{?} \\frac{+ 8 +}{x^{2} - 4 x} C .",
-        "A3": "- \\frac{1}{2} \\sqrt{?} + 8 + C .",
-        "A4": "\\frac{1}{2} \\sqrt{?} x^{2} - 4 x + 8 + C ."
+        "A1": "\\sqrt{x^{2} - 4 x + 8} + C.",
+        "A2": "- \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A3": "- \\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A4": "\\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C."
       },
       "optionsRu": {
-        "A1": "\\sqrt{x} \\frac{^{2} - 4 x + 8 +}{x^{2} - 4 x} C .",
-        "A2": "- \\sqrt{?} \\frac{+ 8 +}{x^{2} - 4 x} C .",
-        "A3": "- \\frac{1}{2} \\sqrt{?} + 8 + C .",
-        "A4": "\\frac{1}{2} \\sqrt{?} x^{2} - 4 x + 8 + C ."
+        "A1": "\\sqrt{x^{2} - 4 x + 8} + C.",
+        "A2": "- \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A3": "- \\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C.",
+        "A4": "\\frac{1}{2} \\sqrt{x^{2} - 4 x + 8} + C."
       },
       "correctAnswer": "A1",
       "source": "Algebra61_90.pdf#variant=85&question=30",
@@ -56764,19 +56764,19 @@
     {
       "externalId": "mtp-algebra-088-06",
       "topicExternalId": "mtp-algebra-088",
-      "questionUz": "\\sqrt[4]{64} \\sqrt{\\sqrt[4]{?}} \\sqrt{32} \\sqrt{50}. Hisoblang: \\sqrt{2}. - \\frac{3}{2} \\frac{\\sqrt{?}_{4}}{2} 324 + 2 - 2",
-      "questionRu": "\\sqrt[4]{64} \\sqrt{\\sqrt[4]{?}} \\sqrt{32} \\sqrt{50}. Hisoblang: \\sqrt{2}. - \\frac{3}{2} \\frac{\\sqrt{?}_{4}}{2} 324 + 2 - 2",
+      "questionUz": "Hisoblang: \\sqrt[4]{64} - 3 \\sqrt[4]{324} + 2 \\sqrt{32} - 2 \\sqrt{50}.",
+      "questionRu": "Hisoblang: \\sqrt[4]{64} - 3 \\sqrt[4]{324} + 2 \\sqrt{32} - 2 \\sqrt{50}.",
       "optionsUz": {
-        "A1": "- 9 \\sqrt{?}.",
-        "A2": "- 8 _{4} \\sqrt{?} - 2 \\sqrt{2}.",
-        "A3": "12 2.",
-        "A4": "16 - 2 2."
+        "A1": "- 9 \\sqrt{2}.",
+        "A2": "- 8 \\sqrt[4]{2} - 2 \\sqrt{2}.",
+        "A3": "12 \\sqrt{2}.",
+        "A4": "16 \\sqrt[4]{2} - 2 \\sqrt{2}."
       },
       "optionsRu": {
-        "A1": "- 9 \\sqrt{?}.",
-        "A2": "- 8 _{4} \\sqrt{?} - 2 \\sqrt{2}.",
-        "A3": "12 2.",
-        "A4": "16 - 2 2."
+        "A1": "- 9 \\sqrt{2}.",
+        "A2": "- 8 \\sqrt[4]{2} - 2 \\sqrt{2}.",
+        "A3": "12 \\sqrt{2}.",
+        "A4": "16 \\sqrt[4]{2} - 2 \\sqrt{2}."
       },
       "correctAnswer": "A1",
       "source": "Algebra61_90.pdf#variant=88&question=6",
@@ -58528,19 +58528,19 @@
     {
       "externalId": "mtp-algebra-090-30",
       "topicExternalId": "mtp-algebra-090",
-      "questionUz": "x ) (x^{2} + 4)^{3} dx integralni hisoblang. 1 - 1",
-      "questionRu": "x ) (x^{2} + 4)^{3} dx integralni hisoblang. 1 - 1",
+      "questionUz": "\\int \\frac{x}{\\sqrt{(x^{2} + 4)^{3}}} dx integralni hisoblang.",
+      "questionRu": "\\int \\frac{x}{\\sqrt{(x^{2} + 4)^{3}}} dx integralni hisoblang.",
       "optionsUz": {
-        "A1": "\\sqrt{?} x^{2} + 4 + C .",
-        "A2": "\\sqrt{?} x^{2} + 4 + C . - 2 2.",
-        "A3": "\\sqrt{?} x^{2} + 4 + C .",
-        "A4": "\\sqrt{?} x^{2} + 4 + C . ."
+        "A1": "\\frac{1}{\\sqrt{x^{2} + 4}} + C.",
+        "A2": "\\frac{- 1}{\\sqrt{x^{2} + 4}} + C.",
+        "A3": "\\frac{- 2}{\\sqrt{x^{2} + 4}} + C.",
+        "A4": "\\frac{2}{\\sqrt{x^{2} + 4}} + C."
       },
       "optionsRu": {
-        "A1": "\\sqrt{?} x^{2} + 4 + C .",
-        "A2": "\\sqrt{?} x^{2} + 4 + C . - 2 2.",
-        "A3": "\\sqrt{?} x^{2} + 4 + C .",
-        "A4": "\\sqrt{?} x^{2} + 4 + C . ."
+        "A1": "\\frac{1}{\\sqrt{x^{2} + 4}} + C.",
+        "A2": "\\frac{- 1}{\\sqrt{x^{2} + 4}} + C.",
+        "A3": "\\frac{- 2}{\\sqrt{x^{2} + 4}} + C.",
+        "A4": "\\frac{2}{\\sqrt{x^{2} + 4}} + C."
       },
       "correctAnswer": "A2",
       "source": "Algebra61_90.pdf#variant=90&question=30",
@@ -71884,8 +71884,8 @@
     {
       "externalId": "mtp-algebra-112-06",
       "topicExternalId": "mtp-algebra-112",
-      "questionUz": "\\sqrt[3]{ax^{2}} \\sqrt[3]{a^{2} x \\sqrt{?}} \\frac{a + x}{\\sqrt{?}^{3} a^{2} - \\sqrt{?}^{3} x^{2}} - + \\frac{^{3} a^{2} - 2 \\sqrt[3]{ax} +^{3} x^{2}}{\\sqrt[6]{a} - \\sqrt[6]{x}} \\sqrt{?} - \\sqrt[6]{x} ni soddalashtiring.",
-      "questionRu": "\\sqrt[3]{ax^{2}} \\sqrt[3]{a^{2} x \\sqrt{?}} \\frac{a + x}{\\sqrt{?}^{3} a^{2} - \\sqrt{?}^{3} x^{2}} - + \\frac{^{3} a^{2} - 2 \\sqrt[3]{ax} +^{3} x^{2}}{\\sqrt[6]{a} - \\sqrt[6]{x}} \\sqrt{?} - \\sqrt[6]{x} ni soddalashtiring.",
+      "questionUz": "\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}} + \\frac{\\sqrt[3]{a x^{2}} - \\sqrt[3]{a^{2} x}}{\\sqrt[3]{a^{2}} - 2 \\sqrt[3]{a x} + \\sqrt[3]{x^{2}}}}{\\sqrt[6]{a} - \\sqrt[6]{x}} - \\sqrt[6]{x} ni soddalashtiring.",
+      "questionRu": "\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}} + \\frac{\\sqrt[3]{a x^{2}} - \\sqrt[3]{a^{2} x}}{\\sqrt[3]{a^{2}} - 2 \\sqrt[3]{a x} + \\sqrt[3]{x^{2}}}}{\\sqrt[6]{a} - \\sqrt[6]{x}} - \\sqrt[6]{x} ni soddalashtiring.",
       "optionsUz": {
         "A1": "1.",
         "A2": "\\sqrt[6]{a}.",
@@ -91081,16 +91081,16 @@
       "questionUz": "To‘g‘ri burchakli uchburchakning katta kateti 4 \\sqrt{2} ga teng, kichik kateti gepotenuzasidan 3 marta kichik. Uchburchakka ichki chizilgan aylananing uzunligini toping.",
       "questionRu": "To‘g‘ri burchakli uchburchakning katta kateti 4 \\sqrt{2} ga teng, kichik kateti gepotenuzasidan 3 marta kichik. Uchburchakka ichki chizilgan aylananing uzunligini toping.",
       "optionsUz": {
-        "A1": "2(2 \\frac{\\sqrt{?}}{2} 2 + 1) \\pi .",
-        "A2": "4(\\frac{\\sqrt{?}}{2} 2 + 1) \\pi .",
-        "A3": "2(\\sqrt{?} - 1) \\pi .",
-        "A4": "4(\\sqrt{?} - 1) \\pi ."
+        "A1": "2 (2 \\sqrt{2} + 1) \\pi.",
+        "A2": "4 (\\sqrt{2} + 1) \\pi.",
+        "A3": "2 (\\sqrt{2} - 1) \\pi.",
+        "A4": "4 (\\sqrt{2} - 1) \\pi."
       },
       "optionsRu": {
-        "A1": "2(2 \\frac{\\sqrt{?}}{2} 2 + 1) \\pi .",
-        "A2": "4(\\frac{\\sqrt{?}}{2} 2 + 1) \\pi .",
-        "A3": "2(\\sqrt{?} - 1) \\pi .",
-        "A4": "4(\\sqrt{?} - 1) \\pi ."
+        "A1": "2 (2 \\sqrt{2} + 1) \\pi.",
+        "A2": "4 (\\sqrt{2} + 1) \\pi.",
+        "A3": "2 (\\sqrt{2} - 1) \\pi.",
+        "A4": "4 (\\sqrt{2} - 1) \\pi."
       },
       "correctAnswer": "A4",
       "source": "Geometriya_variant.pdf#variant=21&question=20",
@@ -134131,16 +134131,16 @@
       "questionUz": "To‘g‘ri burchakli parallelepipedning uchta turli yoqlarining diagonallari 7; 8 va 9 dm bo‘lsa, parallelepipedning diagonali uzunligini (dm) hisoblang.",
       "questionRu": "To‘g‘ri burchakli parallelepipedning uchta turli yoqlarining diagonallari 7; 8 va 9 dm bo‘lsa, parallelepipedning diagonali uzunligini (dm) hisoblang.",
       "optionsUz": {
-        "A1": "6 \\sqrt{?} 3.",
-        "A2": "4 \\sqrt{?} 6.",
-        "A3": "\\sqrt{?} 94.",
-        "A4": "\\sqrt{?} 97. ."
+        "A1": "6 \\sqrt{3}.",
+        "A2": "4 \\sqrt{6}.",
+        "A3": "\\sqrt{94}.",
+        "A4": "\\sqrt{97}."
       },
       "optionsRu": {
-        "A1": "6 \\sqrt{?} 3.",
-        "A2": "4 \\sqrt{?} 6.",
-        "A3": "\\sqrt{?} 94.",
-        "A4": "\\sqrt{?} 97. ."
+        "A1": "6 \\sqrt{3}.",
+        "A2": "4 \\sqrt{6}.",
+        "A3": "\\sqrt{94}.",
+        "A4": "\\sqrt{97}."
       },
       "correctAnswer": "A4",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=9&question=30",
@@ -135391,16 +135391,16 @@
       "questionUz": "Uchburchakli piramida asosining ikki tomoni 6 va 7 dm bo‘lib, ular orasidagi burchak 45 ga teng. Agar piramidaning 8 dm bo‘lgan yon qirrasi asos tekisligi bilan 30^{\\circ} li burchak tashkil etsa, uning hajmini (dm^{3}) toping.",
       "questionRu": "Uchburchakli piramida asosining ikki tomoni 6 va 7 dm bo‘lib, ular orasidagi burchak 45 ga teng. Agar piramidaning 8 dm bo‘lgan yon qirrasi asos tekisligi bilan 30^{\\circ} li burchak tashkil etsa, uning hajmini (dm^{3}) toping.",
       "optionsUz": {
-        "A1": "7 \\sqrt{?} 2.",
-        "A2": "28 \\sqrt{?} 2.",
-        "A3": "14 \\sqrt{?} 2.",
-        "A4": "56 \\sqrt{?} 2. ."
+        "A1": "7 \\sqrt{2}.",
+        "A2": "28 \\sqrt{2}.",
+        "A3": "14 \\sqrt{2}.",
+        "A4": "56 \\sqrt{2}."
       },
       "optionsRu": {
-        "A1": "7 \\sqrt{?} 2.",
-        "A2": "28 \\sqrt{?} 2.",
-        "A3": "14 \\sqrt{?} 2.",
-        "A4": "56 \\sqrt{?} 2. ."
+        "A1": "7 \\sqrt{2}.",
+        "A2": "28 \\sqrt{2}.",
+        "A3": "14 \\sqrt{2}.",
+        "A4": "56 \\sqrt{2}."
       },
       "correctAnswer": "A3",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=11&question=30",
