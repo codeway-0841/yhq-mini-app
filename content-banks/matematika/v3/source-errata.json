@@ -1346,6 +1346,22 @@
       },
       "reason": "Crop-confirmed (g11q30e): V=(1/3)(21sqrt2/2)(4)=14sqrt2; answer key KalitAlGeo v11 q30 = C matches A3",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 21,
+      "variant": 11,
+      "question": 9,
+      "raw_text": "Same family as Al91 v112 q6 / AlGeo v61 q5: (u-v)^2/(u-v) chain over 6th-root diff",
+      "resolved_question": "\\frac{\\frac{a + x}{\\sqrt[3]{a^{2}} - \\sqrt[3]{x^{2}}} + \\frac{\\sqrt[3]{a x^{2}} - \\sqrt[3]{a^{2} x}}{\\sqrt[3]{a^{2}} - 2 \\sqrt[3]{a x} + \\sqrt[3]{x^{2}}}}{\\sqrt[6]{a} - \\sqrt[6]{x}} - \\sqrt[6]{x} ni soddalashtiring.",
+      "resolved_options": {
+        "A1": "1.",
+        "A2": "\\sqrt[6]{a}.",
+        "A3": "- \\sqrt[6]{x}.",
+        "A4": "(\\sqrt[3]{a} + \\sqrt[3]{x})."
+      },
+      "reason": "Crop-confirmed (t11q9): identical to Al91 v112 q6 family, gives 6th-root(a); answer key KalitAlTrigon v11 q9 = B matches A2",
+      "status": "confirmed"
     }
   ]
 }
