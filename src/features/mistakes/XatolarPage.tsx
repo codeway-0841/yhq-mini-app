@@ -16,6 +16,7 @@ import { HeartCrack, Play, ChevronRight, Flame, Sparkles } from 'lucide-react'
 import { config } from '../../shared/config'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
+import MathText from '../../shared/components/MathText'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { questionKey } from '../../../shared/subjects'
@@ -279,7 +280,7 @@ export default function XatolarPage() {
                         className="flex-1 min-w-0 text-[12px] font-semibold text-pfg leading-snug"
                         style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}
                       >
-                        {q.text}
+                        <MathText text={q.text} />
                       </span>
                       <span className="bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
                         {count} {tt('timesWord')}

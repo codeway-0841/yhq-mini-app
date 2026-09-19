@@ -1,5 +1,6 @@
 import { Loader2, Check, X } from 'lucide-react'
 import type { Question } from '../../../shared/api'
+import MathText from '../../../shared/components/MathText'
 
 /** Raund ekrani — progress, savol va variantlar.
  *  To'g'ri variant FAQAT server ack/reveal'dan ko'rsatiladi (lokal kalit yo'q). */
@@ -44,7 +45,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
           <span className="ml-2 text-pwarning">• {tt('duelOppAnswered')}</span>
         )}
       </p>
-      <p className="text-base font-semibold text-center mb-5 leading-snug text-pfg">{q.text}</p>
+      <MathText as="p" text={q.text} className="text-base font-semibold text-center mb-5 leading-snug text-pfg" />
       {q.image && (
         <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-pcard shadow-xs">
           <img src={q.image} alt={tt('duelQuestionImage')} loading="lazy"
@@ -71,7 +72,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
               <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-bold flex-shrink-0 shadow-2xs">
                 {opt.id}
               </span>
-              <span className="text-sm flex-1 min-w-0 break-words">{opt.text}</span>
+              <MathText text={opt.text} className="text-sm flex-1 min-w-0 break-words" />
               {showCorrect || (isSelected && ackCorrect === true) ? <Check size={20} aria-label={tt('duelCorrect')} className="text-psuccess shrink-0" /> : isSelected && ackCorrect === false ? <X size={20} aria-label={tt('duelWrong')} className="text-pdanger shrink-0" /> : isSelected && ackCorrect === null ? <Loader2 size={18} className="animate-spin shrink-0" /> : null}
             </div>
           </button>

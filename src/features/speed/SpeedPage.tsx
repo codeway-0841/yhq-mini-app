@@ -14,6 +14,7 @@ import { api, ApiError } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
+import MathText from '../../shared/components/MathText'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { Button } from '../../shared/components/ui/button'
@@ -323,7 +324,7 @@ export default function SpeedPage() {
         <p className="text-[11px] font-semibold text-psubtle text-center mb-2 uppercase tracking-wide">
           {lang === 'ru' ? `${idx + 1} из ${total}` : `${idx + 1} / ${total}`}
         </p>
-        <p className="text-base font-semibold leading-snug mb-4 text-center">{currentQuestion.text}</p>
+        <MathText as="p" text={currentQuestion.text} className="text-base font-semibold leading-snug mb-4 text-center" />
         {currentQuestion.media && (
           <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
             <img src={formatImageSrc(currentQuestion.media)} alt="savol" loading="lazy"
@@ -347,7 +348,7 @@ export default function SpeedPage() {
                 <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-2xs">
                   {String.fromCharCode(65 + i)}
                 </span>
-                <span className="text-sm">{opt.text}</span>
+                <MathText text={opt.text} className="text-sm" />
                 {showResult && isRight && <Check size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pprimary" />}
                 {showResult && isChoice && revealed !== null && !isRight && <X size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pdanger" />}
               </div>

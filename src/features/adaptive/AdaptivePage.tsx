@@ -7,6 +7,7 @@ import { Brain, X, Check, CalendarClock, Sparkles } from 'lucide-react'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore }      from '../../shared/store/useAppStore'
+import MathText from '../../shared/components/MathText'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
@@ -50,7 +51,7 @@ function Option({ id, text, state, onSelect, answered, label }: {
         <span className="size-7 rounded-xl bg-psurface flex items-center justify-center text-xs font-semibold flex-shrink-0 shadow-2xs">
           {label ?? id.toUpperCase()}
         </span>
-        <span className="text-sm">{text}</span>
+        <span className="text-sm"><MathText text={text} /></span>
         {state === 'correct' && <Check size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-psuccess" />}
         {state === 'wrong'   && <X size={16} strokeWidth={2} className="ml-auto flex-shrink-0 text-pdanger" />}
       </div>
@@ -288,7 +289,7 @@ export default function AdaptivePage() {
           </span>
           <EFBadge card={card} />
         </div>
-        <p className="text-base font-semibold leading-snug mb-5">{q.text}</p>
+        <MathText as="p" text={q.text} className="text-base font-semibold leading-snug mb-5" />
         {q.image && (
           <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
             <img src={q.image} alt={q.text} loading="lazy"
