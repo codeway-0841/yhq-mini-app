@@ -27,6 +27,7 @@ import {
 } from '../../../shared/ai-daily-test'
 import { useAiTestStore, countAnsweredTasks } from './useAiTestStore'
 import { McqTaskView, MatchingTaskView, ShortTaskView, EssayTaskView } from './components/TaskCards'
+import MathText from '../../shared/components/MathText'
 
 type Phase = 'loading' | 'error' | 'premium' | 'session' | 'submitting' | 'result'
 
@@ -202,7 +203,7 @@ export default function AiTestSession() {
             if (ctx) {
               out.push(
                 <div key={`ctx-${ctx.id}`} className="rounded-2xl bg-psurface p-4 shadow-xs">
-                  <p className="text-[14px] text-pmuted leading-relaxed whitespace-pre-wrap">{ctx.text}</p>
+                  <MathText as="p" text={ctx.text} className="text-[14px] text-pmuted leading-relaxed whitespace-pre-wrap" />
                 </div>,
               )
             }

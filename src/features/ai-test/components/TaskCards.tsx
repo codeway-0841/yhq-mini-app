@@ -5,6 +5,7 @@
  */
 
 import { Check, X } from 'lucide-react'
+import MathText from '../../../shared/components/MathText'
 import type {
   AiTestMcqTaskPublic, AiTestMatchingTaskPublic,
   AiTestShortTaskPublic, AiTestEssayTaskPublic,
@@ -26,7 +27,7 @@ function TaskShell({ num, topic, prompt, children }: {
         </span>
         <div className="min-w-0">
           <p className="text-[11px] font-semibold text-psubtle uppercase tracking-wide">{topic}</p>
-          <p className="text-[15px] text-pfg leading-snug mt-0.5 whitespace-pre-wrap">{prompt}</p>
+          <MathText as="p" text={prompt} className="text-[15px] text-pfg leading-snug mt-0.5 whitespace-pre-wrap" />
         </div>
       </div>
       {children}
@@ -81,7 +82,7 @@ export function McqTaskView({ task, num, value, onChange, review }: {
               }`}>
                 {LETTERS[i]}
               </span>
-              <span className="flex-1 text-[14px] leading-snug">{opt.text}</span>
+              <MathText text={opt.text} className="flex-1 text-[14px] leading-snug" />
               {review && isCorrect && <Check size={16} strokeWidth={2.5} className="flex-shrink-0 text-psuccess" />}
               {review && isWrongPick && <X size={16} strokeWidth={2.5} className="flex-shrink-0 text-pdanger" />}
             </button>
@@ -114,7 +115,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
             <div key={l.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
               <div className="flex items-start gap-2 mb-2">
                 <span className="flex-shrink-0 text-[13px] font-bold text-ppurple">{li + 1}.</span>
-                <p className="flex-1 text-[14px] text-pfg leading-snug">{l.text}</p>
+                <MathText as="p" text={l.text} className="flex-1 text-[14px] text-pfg leading-snug" />
                 {review && rowCorrect !== undefined && <ReviewMark correct={!!rowCorrect} />}
               </div>
               <div className="flex flex-wrap gap-1.5">
@@ -151,7 +152,7 @@ export function MatchingTaskView({ task, num, value, onChange, review, hint }: {
       <div className="mt-3 rounded-2xl bg-pcard p-3.5 shadow-xs">
         {task.right.map((r, ri) => (
           <p key={r.id} className="text-[13px] text-pmuted leading-relaxed">
-            <span className="font-bold text-ppurple">{LETTERS[ri]}</span> — {r.text}
+            <span className="font-bold text-ppurple">{LETTERS[ri]}</span> — <MathText text={r.text} />
           </p>
         ))}
       </div>

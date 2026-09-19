@@ -9,6 +9,8 @@
  *
  * Qoida: bank savol/variant matni FAQAT MathText orqali chiziladi.
  * Bu test 4 ta tuzatilgan faylda xom render qoldig'i yo'qligini tekshiradi.
+ * (2026-09-19 2-to'lqin: Xatolar v2 ro'yxati, Qidiruv natijalari,
+ *  AI-test TaskCards + Session context ham qoplanadi.)
  */
 import { describe, it, expect } from 'vitest'
 import fs from 'node:fs'
@@ -21,6 +23,9 @@ const COVERED = [
   'features/mistakes/XatolarPage.tsx',
   'features/octagon/components/RoundScreen.tsx',
   'features/speed/SpeedPage.tsx',
+  'features/search/SearchPage.tsx',
+  'features/ai-test/components/TaskCards.tsx',
+  'features/ai-test/AiTestSession.tsx',
 ]
 
 // JSX matn-farzand sifatida xom savol/variant: >{q.text}<, >{opt.text}<,

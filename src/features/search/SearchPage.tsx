@@ -14,6 +14,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
+import MathText from '../../shared/components/MathText'
 import { haptics } from '../../platform/haptics'
 import { lessons } from '../../content/lessons'
 import { modules } from '../../content/modules'
@@ -160,9 +161,7 @@ export default function SearchPage() {
                     onClick={() => openQuestionV2(h)}
                     className="w-full text-left rounded-2xl bg-pcard p-3.5 active:scale-[0.99] transition-all shadow-xs hover:bg-psurface"
                   >
-                    <p className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5">
-                      {h.text}
-                    </p>
+                      <MathText as="p" text={h.text} className="text-sm font-semibold text-pfg leading-snug line-clamp-2 mb-1.5" />
                     {topicName && (
                       <span className="text-[10.5px] font-semibold text-pmuted bg-psurface px-2 py-0.5 rounded-full">
                         {topicName}
