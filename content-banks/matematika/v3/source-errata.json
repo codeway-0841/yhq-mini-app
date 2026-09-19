@@ -851,6 +851,294 @@
       },
       "reason": "Twin, crop-confirmed (g49q5): identical print: (sqrt5-sqrt7)(sqrt2-sqrt3)=sqrt10-sqrt15-sqrt14+sqrt21; answer key KalitAlGeo v49 q5 = D matches A4",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 205,
+      "variant": 103,
+      "question": 11,
+      "raw_text": "Cubic chain (x-4)^3+...+(x-3)^3=6; extractor broke into square soup with stray fragments",
+      "resolved_question": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
+      "resolved_options": {
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
+      },
+      "reason": "Crop-confirmed (a103q11): with x=3+t gives t^3+3=6 so t=cbrt(3); answer key KalitAl v103 q11 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 13,
+      "variant": 7,
+      "question": 9,
+      "raw_text": "Cubic chain (x-4)^3+...+(x-3)^3=6; extractor broke into square soup with stray fragments",
+      "resolved_question": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
+      "resolved_options": {
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
+      },
+      "reason": "Twin, crop-confirmed (g07q9): identical print; answer key KalitAlGeo v7 q9 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 67,
+      "variant": 34,
+      "question": 8,
+      "raw_text": "Nested continued fraction 2/(1-2/(2+1/(a-2))) with a=sqrt(3)(3+2sqrt(3))/4; extractor shattered levels",
+      "resolved_question": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
+      "resolved_options": {
+        "A1": "3 \\sqrt{3}.",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
+        "A3": "3 \\sqrt{3} + 2.",
+        "A4": "\\sqrt{3}."
+      },
+      "reason": "Crop-confirmed (t34q8): a=3(sqrt(3)+2)/4 gives 3sqrt(3); answer key KalitAlTrigon v34 q8 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya151_164.pdf",
+      "page": 319,
+      "variant": 160,
+      "question": 4,
+      "raw_text": "Nested continued fraction 2/(1-2/(2+1/(a-2))) with a=sqrt(3)(3+2sqrt(3))/4; extractor shattered levels",
+      "resolved_question": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
+      "resolved_options": {
+        "A1": "3 \\sqrt{3}.",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
+        "A3": "3 \\sqrt{3} + 2.",
+        "A4": "\\sqrt{3}."
+      },
+      "reason": "Twin, crop-confirmed (g160q5 p18 top): identical print: a=3(sqrt(3)+2)/4 gives 3sqrt(3); answer key KalitAlGeo v160 q4 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 5,
+      "variant": 3,
+      "question": 13,
+      "raw_text": "sqrt(x^2+10) radicand unreadable; print mislabels option C as second D (kept bank A1-A4 mapping)",
+      "resolved_question": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "resolved_options": {
+        "A1": "2.",
+        "A2": "3.",
+        "A3": "5.",
+        "A4": "8."
+      },
+      "reason": "Crop-confirmed (a03q13); denominator sqrt(x^2+10)>0 always so sign from numerator: 5-(-3)=8; answer key KalitAl v3 q13 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 71,
+      "variant": 36,
+      "question": 17,
+      "raw_text": "sqrt(x^2+10) radicand unreadable; print mislabels option C as second D (kept bank A1-A4 mapping)",
+      "resolved_question": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "resolved_options": {
+        "A1": "2.",
+        "A2": "3.",
+        "A3": "5.",
+        "A4": "8."
+      },
+      "reason": "Twin, crop-confirmed (t36q17): identical print incl. C-misprinted-as-D source defect; answer key KalitAlTrigon v36 q17 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya151_164.pdf",
+      "page": 301,
+      "variant": 151,
+      "question": 9,
+      "raw_text": "sqrt(x^2+10) radicand unreadable; print mislabels option C as second D (kept bank A1-A4 mapping)",
+      "resolved_question": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "resolved_options": {
+        "A1": "2.",
+        "A2": "3.",
+        "A3": "5.",
+        "A4": "8."
+      },
+      "reason": "Twin, crop-confirmed (g151q9): identical print incl. C-misprinted-as-D source defect; answer key KalitAlGeo v151 q9 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 11,
+      "variant": 6,
+      "question": 15,
+      "raw_text": "Second abs radicand 5sqrt(2) unreadable; extractor emitted combining-slash artifact",
+      "resolved_question": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "resolved_options": {
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
+        "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
+        "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
+      },
+      "reason": "Crop-confirmed (a06q15b): |4sqrt3-7|-|5sqrt2-7| = 14-4sqrt3-5sqrt2; answer key KalitAl v6 q15 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 27,
+      "variant": 14,
+      "question": 20,
+      "raw_text": "Second abs radicand 5sqrt(2) unreadable; extractor emitted combining-slash artifact",
+      "resolved_question": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "resolved_options": {
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
+        "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
+        "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
+      },
+      "reason": "Twin, crop-confirmed (t14q20b): identical print; answer key KalitAlTrigon v14 q20 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya61_90.pdf",
+      "page": 135,
+      "variant": 68,
+      "question": 11,
+      "raw_text": "Second abs radicand 5sqrt(2) unreadable; extractor emitted combining-slash artifact",
+      "resolved_question": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "resolved_options": {
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
+        "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
+        "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
+      },
+      "reason": "Twin, crop-confirmed (g68q11b): identical print; answer key KalitAlGeo v68 q11 = D matches A4",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 29,
+      "variant": 15,
+      "question": 12,
+      "raw_text": "System x+y+xy=0, x^3+y^3+x^3y^3=12; extractor broke option radicals and cases env",
+      "resolved_question": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "resolved_options": {
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+      },
+      "reason": "Crop-confirmed (a15q12): s+p=0 gives 3p^2=12, p=-2 real branch; answer key KalitAl v15 q12 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 25,
+      "variant": 13,
+      "question": 16,
+      "raw_text": "System x+y+xy=0, x^3+y^3+x^3y^3=12; extractor broke option radicals and cases env",
+      "resolved_question": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "resolved_options": {
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+      },
+      "reason": "Twin, crop-confirmed (t13q16b): identical print; answer key KalitAlTrigon v13 q16 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya31_60.pdf",
+      "page": 79,
+      "variant": 40,
+      "question": 9,
+      "raw_text": "System x+y+xy=0, x^3+y^3+x^3y^3=12; extractor broke option radicals and cases env",
+      "resolved_question": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "resolved_options": {
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+      },
+      "reason": "Twin, crop-confirmed (g40q9b): identical print; answer key KalitAlGeo v40 q9 = A matches A1",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 146,
+      "variant": 73,
+      "question": 30,
+      "raw_text": "Monotonicity compare f(cbrt6) vs f(cbrt7); extractor shattered cbrt args into stray fragments",
+      "resolved_question": "f (x) = - \\frac{x^{4}}{5} + 4 x + 5 funksiya berilgan. Uning monotonligidan foydalanib, f (\\sqrt[3]{6}) va f (\\sqrt[3]{7}) ni taqqoslang.",
+      "resolved_options": {
+        "A1": "f (\\sqrt[3]{7}) < f (\\sqrt[3]{6}).",
+        "A2": "f (\\sqrt[3]{7}) - 1 = f (\\sqrt[3]{6}) + 1.",
+        "A3": "f (\\sqrt[3]{7}) > f (\\sqrt[3]{6}).",
+        "A4": "f (\\sqrt[3]{7}) = f (\\sqrt[3]{6})."
+      },
+      "reason": "Crop-confirmed (a73q30). DISPUTE NOTE: calculus gives f decreasing past cbrt(5)~1.71, so f(cbrt6)>f(cbrt7) mathematically (option A); official key says C and bank keeps C for key-match. Answer key KalitAl v73 q30 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya1_30.pdf",
+      "page": 45,
+      "variant": 23,
+      "question": 4,
+      "raw_text": "Twin of Algebra1_30 v31 q5 (factor x^3-(sqrt6+1)x^2+6); same sqrt-shatter damage",
+      "resolved_question": "Ko‘phadni ko‘paytuvchilarga ajrating: x^{3} - (\\sqrt{6} + 1) x^{2} + 6.",
+      "resolved_options": {
+        "A1": "(x + \\sqrt{6})(x^{2} + x + \\sqrt{6}).",
+        "A2": "(x + \\sqrt{6})(x^{2} - x + \\sqrt{6}).",
+        "A3": "(x - \\sqrt{6})(x^{2} - x - \\sqrt{6}).",
+        "A4": "(x - \\sqrt{6})(x^{2} + x - \\sqrt{6})."
+      },
+      "reason": "Crop-confirmed (g23q4): (x-sqrt(6))(x^2-x-sqrt(6)) expands back; answer key KalitAlGeo v23 q4 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 4,
+      "variant": 2,
+      "question": 30,
+      "raw_text": "Fractional-part sum over n=2..2017; extractor dropped every radicand leaving 8 sqrt{?} placeholders",
+      "resolved_question": "\\{2 - \\sqrt{2}\\} + \\{2 + \\sqrt{2}\\} + \\{3 - \\sqrt{3}\\} + \\{3 + \\sqrt{3}\\} + \\{4 - \\sqrt{4}\\} + \\{4 + \\sqrt{4}\\} + . . . + \\{2017 - \\sqrt{2017}\\} + \\{2017 + \\sqrt{2017}\\} hisoblang. Bunda \\{a\\} - a sonining kasr qismi.",
+      "resolved_options": {
+        "A1": "2016.",
+        "A2": "2017.",
+        "A3": "1973.",
+        "A4": "1972."
+      },
+      "reason": "Crop-confirmed (t02q30): each non-square pair sums to 1, squares to 0; 2016 pairs minus 43 squares (2^2..44^2) = 1973; answer key KalitAlTrigon v2 q30 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra61_90.pdf",
+      "page": 172,
+      "variant": 86,
+      "question": 30,
+      "raw_text": "Integral x^3/sqrt(5+x^4); extractor hallucinated cube-root and shattered options",
+      "resolved_question": "\\int \\frac{x^{3}}{\\sqrt{5 + x^{4}}} dx integralni hisoblang.",
+      "resolved_options": {
+        "A1": "2 \\sqrt{5 + x^{4}} + C.",
+        "A2": "\\sqrt{5 + x^{4}} + C.",
+        "A3": "\\frac{1}{2} \\sqrt{5 + x^{4}} + C.",
+        "A4": "4 \\sqrt{5 + x^{4}} + C."
+      },
+      "reason": "Crop-confirmed (a86q30): u=5+x^4 gives (1/2)sqrt(u)+C; answer key KalitAl v86 q30 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra91_121.pdf",
+      "page": 200,
+      "variant": 100,
+      "question": 30,
+      "raw_text": "Definite integral 0..1 (4x-1)/sqrt(2x^2-x+4); extractor shattered numerator and radicand",
+      "resolved_question": "Integralni hisoblang: \\int_{0}^{1} \\frac{(4 x - 1) dx}{\\sqrt{2 x^{2} - x + 4}}.",
+      "resolved_options": {
+        "A1": "2 \\sqrt{5} - 4.",
+        "A2": "2 - \\sqrt{5}.",
+        "A3": "\\sqrt{5} - 2.",
+        "A4": "4 - \\sqrt{5}."
+      },
+      "reason": "Crop-confirmed (a100q30): numerator is radicand derivative, 2sqrt(u)|0..1 = 2sqrt(5)-4; answer key KalitAl v100 q30 = A matches A1",
+      "status": "confirmed"
     }
   ]
 }

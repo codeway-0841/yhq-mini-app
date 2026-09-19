@@ -3361,8 +3361,8 @@
     {
       "externalId": "mtp-algebra-003-13",
       "topicExternalId": "mtp-algebra-003",
-      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
-      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
       "optionsUz": {
         "A1": "2.",
         "A2": "3.",
@@ -5293,17 +5293,17 @@
     {
       "externalId": "mtp-algebra-006-15",
       "topicExternalId": "mtp-algebra-006",
-      "questionUz": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
-      "questionRu": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
+      "questionUz": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "questionRu": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
       "optionsUz": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
       "optionsRu": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
@@ -10900,19 +10900,19 @@
     {
       "externalId": "mtp-algebra-015-12",
       "topicExternalId": "mtp-algebra-015",
-      "questionUz": "Tenglamalar sistemasini yeching: \\cup x + y + xy = 0 x^{3} + y^{3} + x^{3} y^{3} = 12",
-      "questionRu": "Tenglamalar sistemasini yeching: \\cup x + y + xy = 0 x^{3} + y^{3} + x^{3} y^{3} = 12",
+      "questionUz": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "questionRu": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
       "optionsUz": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "optionsRu": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "correctAnswer": "A1",
       "source": "Algebra1_30.pdf#variant=15&question=12",
@@ -47818,19 +47818,19 @@
     {
       "externalId": "mtp-algebra-073-30",
       "topicExternalId": "mtp-algebra-073",
-      "questionUz": "3 3 f (x) = - x^{4} 5 + 4 x + 5 funksiya berilgan. Uning_{3} \\sqrt{?}_{3} \\sqrt{?} monotonligidan foydalanib, f (6) va f (7) ni taqqoslang. _{3} \\sqrt{?}_{3} \\sqrt{?}",
-      "questionRu": "3 3 f (x) = - x^{4} 5 + 4 x + 5 funksiya berilgan. Uning_{3} \\sqrt{?}_{3} \\sqrt{?} monotonligidan foydalanib, f (6) va f (7) ni taqqoslang. _{3} \\sqrt{?}_{3} \\sqrt{?}",
+      "questionUz": "f (x) = - \\frac{x^{4}}{5} + 4 x + 5 funksiya berilgan. Uning monotonligidan foydalanib, f (\\sqrt[3]{6}) va f (\\sqrt[3]{7}) ni taqqoslang.",
+      "questionRu": "f (x) = - \\frac{x^{4}}{5} + 4 x + 5 funksiya berilgan. Uning monotonligidan foydalanib, f (\\sqrt[3]{6}) va f (\\sqrt[3]{7}) ni taqqoslang.",
       "optionsUz": {
-        "A1": "f (7) < f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A2": "f (7) - 1 = f (6) + 1. _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "f (7) > f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A4": "f (7) = f (6). ."
+        "A1": "f (\\sqrt[3]{7}) < f (\\sqrt[3]{6}).",
+        "A2": "f (\\sqrt[3]{7}) - 1 = f (\\sqrt[3]{6}) + 1.",
+        "A3": "f (\\sqrt[3]{7}) > f (\\sqrt[3]{6}).",
+        "A4": "f (\\sqrt[3]{7}) = f (\\sqrt[3]{6})."
       },
       "optionsRu": {
-        "A1": "f (7) < f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A2": "f (7) - 1 = f (6) + 1. _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "f (7) > f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A4": "f (7) = f (6). ."
+        "A1": "f (\\sqrt[3]{7}) < f (\\sqrt[3]{6}).",
+        "A2": "f (\\sqrt[3]{7}) - 1 = f (\\sqrt[3]{6}) + 1.",
+        "A3": "f (\\sqrt[3]{7}) > f (\\sqrt[3]{6}).",
+        "A4": "f (\\sqrt[3]{7}) = f (\\sqrt[3]{6})."
       },
       "correctAnswer": "A3",
       "source": "Algebra61_90.pdf#variant=73&question=30",
@@ -56008,19 +56008,19 @@
     {
       "externalId": "mtp-algebra-086-30",
       "topicExternalId": "mtp-algebra-086",
-      "questionUz": "x\\sqrt[3]{?} 5 + x^{4} dx integralni hisoblang.",
-      "questionRu": "x\\sqrt[3]{?} 5 + x^{4} dx integralni hisoblang.",
+      "questionUz": "\\int \\frac{x^{3}}{\\sqrt{5 + x^{4}}} dx integralni hisoblang.",
+      "questionRu": "\\int \\frac{x^{3}}{\\sqrt{5 + x^{4}}} dx integralni hisoblang.",
       "optionsUz": {
-        "A1": "2 \\sqrt{?} 5 + x^{4} + C .",
-        "A2": "\\sqrt{?} 5 + x^{4} + C .",
-        "A3": "1 \\sqrt{?} 5 + x^{4} + C .",
-        "A4": "4 \\sqrt{?} 5 + x^{4} + C . 2 ."
+        "A1": "2 \\sqrt{5 + x^{4}} + C.",
+        "A2": "\\sqrt{5 + x^{4}} + C.",
+        "A3": "\\frac{1}{2} \\sqrt{5 + x^{4}} + C.",
+        "A4": "4 \\sqrt{5 + x^{4}} + C."
       },
       "optionsRu": {
-        "A1": "2 \\sqrt{?} 5 + x^{4} + C .",
-        "A2": "\\sqrt{?} 5 + x^{4} + C .",
-        "A3": "1 \\sqrt{?} 5 + x^{4} + C .",
-        "A4": "4 \\sqrt{?} 5 + x^{4} + C . 2 ."
+        "A1": "2 \\sqrt{5 + x^{4}} + C.",
+        "A2": "\\sqrt{5 + x^{4}} + C.",
+        "A3": "\\frac{1}{2} \\sqrt{5 + x^{4}} + C.",
+        "A4": "4 \\sqrt{5 + x^{4}} + C."
       },
       "correctAnswer": "A3",
       "source": "Algebra61_90.pdf#variant=86&question=30",
@@ -64828,19 +64828,19 @@
     {
       "externalId": "mtp-algebra-100-30",
       "topicExternalId": "mtp-algebra-100",
-      "questionUz": "^{1} ((4 x - 1) dx Integralni hisoblang: \\sqrt{?} 2 x^{2} - x + 4 . 0",
-      "questionRu": "^{1} ((4 x - 1) dx Integralni hisoblang: \\sqrt{?} 2 x^{2} - x + 4 . 0",
+      "questionUz": "Integralni hisoblang: \\int_{0}^{1} \\frac{(4 x - 1) dx}{\\sqrt{2 x^{2} - x + 4}}.",
+      "questionRu": "Integralni hisoblang: \\int_{0}^{1} \\frac{(4 x - 1) dx}{\\sqrt{2 x^{2} - x + 4}}.",
       "optionsUz": {
-        "A1": "2 \\sqrt{?} 5 - 4.",
-        "A2": "2 - \\sqrt{?} 5.",
-        "A3": "\\sqrt{?} 5 - 2.",
-        "A4": "4 - \\sqrt{?} 5. ."
+        "A1": "2 \\sqrt{5} - 4.",
+        "A2": "2 - \\sqrt{5}.",
+        "A3": "\\sqrt{5} - 2.",
+        "A4": "4 - \\sqrt{5}."
       },
       "optionsRu": {
-        "A1": "2 \\sqrt{?} 5 - 4.",
-        "A2": "2 - \\sqrt{?} 5.",
-        "A3": "\\sqrt{?} 5 - 2.",
-        "A4": "4 - \\sqrt{?} 5. ."
+        "A1": "2 \\sqrt{5} - 4.",
+        "A2": "2 - \\sqrt{5}.",
+        "A3": "\\sqrt{5} - 2.",
+        "A4": "4 - \\sqrt{5}."
       },
       "correctAnswer": "A1",
       "source": "Algebra91_121.pdf#variant=100&question=30",
@@ -66319,19 +66319,19 @@
     {
       "externalId": "mtp-algebra-103-11",
       "topicExternalId": "mtp-algebra-103",
-      "questionUz": "(x - 4)^{3} + (x - 4)^{2} + (x - 4)(x - 3) + (x - - 3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
-      "questionRu": "(x - 4)^{3} + (x - 4)^{2} + (x - 4)(x - 3) + (x - - 3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
+      "questionUz": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
+      "questionRu": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
       "optionsUz": {
-        "A1": "3.",
-        "A2": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "3.",
-        "A4": "3 + 3."
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
       },
       "optionsRu": {
-        "A1": "3.",
-        "A2": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "3.",
-        "A4": "3 + 3."
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
       },
       "correctAnswer": "A4",
       "source": "Algebra91_121.pdf#variant=103&question=11",
@@ -104518,19 +104518,19 @@
     {
       "externalId": "mtp-algebra-trigonometriya-002-30",
       "topicExternalId": "mtp-algebra-trigonometriya-002",
-      "questionUz": "{2 - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\sqrt{?} 4} + {4 + \\sqrt{?} 4} + . . . + {2017 - \\sqrt{?} 2017} + {2017 + \\sqrt{?} 2017} hisoblang. Bunda {a} - a sonining kasr qismi.",
-      "questionRu": "{2 - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\sqrt{?} 4} + {4 + \\sqrt{?} 4} + . . . + {2017 - \\sqrt{?} 2017} + {2017 + \\sqrt{?} 2017} hisoblang. Bunda {a} - a sonining kasr qismi.",
+      "questionUz": "\\{2 - \\sqrt{2}\\} + \\{2 + \\sqrt{2}\\} + \\{3 - \\sqrt{3}\\} + \\{3 + \\sqrt{3}\\} + \\{4 - \\sqrt{4}\\} + \\{4 + \\sqrt{4}\\} + . . . + \\{2017 - \\sqrt{2017}\\} + \\{2017 + \\sqrt{2017}\\} hisoblang. Bunda \\{a\\} - a sonining kasr qismi.",
+      "questionRu": "\\{2 - \\sqrt{2}\\} + \\{2 + \\sqrt{2}\\} + \\{3 - \\sqrt{3}\\} + \\{3 + \\sqrt{3}\\} + \\{4 - \\sqrt{4}\\} + \\{4 + \\sqrt{4}\\} + . . . + \\{2017 - \\sqrt{2017}\\} + \\{2017 + \\sqrt{2017}\\} hisoblang. Bunda \\{a\\} - a sonining kasr qismi.",
       "optionsUz": {
         "A1": "2016.",
         "A2": "2017.",
         "A3": "1973.",
-        "A4": "1972. ."
+        "A4": "1972."
       },
       "optionsRu": {
         "A1": "2016.",
         "A2": "2017.",
         "A3": "1973.",
-        "A4": "1972. ."
+        "A4": "1972."
       },
       "correctAnswer": "A3",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30",
@@ -111154,19 +111154,19 @@
     {
       "externalId": "mtp-algebra-trigonometriya-013-16",
       "topicExternalId": "mtp-algebra-trigonometriya-013",
-      "questionUz": "Tenglamalar sistemasini yeching: x + y + xy = 0 x^{3} + y^{3} + x^{3} y^{3} = 12",
-      "questionRu": "Tenglamalar sistemasini yeching: x + y + xy = 0 x^{3} + y^{3} + x^{3} y^{3} = 12",
+      "questionUz": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "questionRu": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
       "optionsUz": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "optionsRu": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "correctAnswer": "A1",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=16",
@@ -111868,17 +111868,17 @@
     {
       "externalId": "mtp-algebra-trigonometriya-014-20",
       "topicExternalId": "mtp-algebra-trigonometriya-014",
-      "questionUz": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
-      "questionRu": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
+      "questionUz": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "questionRu": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
       "optionsUz": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
       "optionsRu": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
@@ -124216,19 +124216,19 @@
     {
       "externalId": "mtp-algebra-trigonometriya-034-08",
       "topicExternalId": "mtp-algebra-trigonometriya-034",
-      "questionUz": "\\sqrt{3 \\cdot} \\frac{(3 + 2}{4} \\sqrt{3)} Agar a = bo‘lsa, 2 ifodaning qiymatini toping. 2 1 - \\frac{1}{a - 2} 2",
-      "questionRu": "\\sqrt{3 \\cdot} \\frac{(3 + 2}{4} \\sqrt{3)} Agar a = bo‘lsa, 2 ifodaning qiymatini toping. 2 1 - \\frac{1}{a - 2} 2",
+      "questionUz": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
+      "questionRu": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
       "optionsUz": {
         "A1": "3 \\sqrt{3}.",
-        "A2": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
         "A3": "3 \\sqrt{3} + 2.",
-        "A4": "3."
+        "A4": "\\sqrt{3}."
       },
       "optionsRu": {
         "A1": "3 \\sqrt{3}.",
-        "A2": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
         "A3": "3 \\sqrt{3} + 2.",
-        "A4": "3."
+        "A4": "\\sqrt{3}."
       },
       "correctAnswer": "A1",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=34&question=8",
@@ -125665,8 +125665,8 @@
     {
       "externalId": "mtp-algebra-trigonometriya-036-17",
       "topicExternalId": "mtp-algebra-trigonometriya-036",
-      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
-      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
       "optionsUz": {
         "A1": "2.",
         "A2": "3.",
@@ -132427,19 +132427,19 @@
     {
       "externalId": "mtp-algebra-geometriya-007-09",
       "topicExternalId": "mtp-algebra-geometriya-007",
-      "questionUz": "(x - 4)^{3} + (x - 4)^{2} + (x - 4)(x - 3) + (x - - 3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
-      "questionRu": "(x - 4)^{3} + (x - 4)^{2} + (x - 4)(x - 3) + (x - - 3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
+      "questionUz": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
+      "questionRu": "(x - 4)^{3} + (x - 4)^{2} + (x - 4) (x - 3) + (x - 3)^{2} + (x - 3)^{3} = 6 tenglamani yeching.",
       "optionsUz": {
-        "A1": "3.",
-        "A2": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "3.",
-        "A4": "3 + 3."
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
       },
       "optionsRu": {
-        "A1": "3.",
-        "A2": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-        "A3": "3.",
-        "A4": "3 + 3."
+        "A1": "3 - \\sqrt[3]{3}.",
+        "A2": "3 + \\sqrt{3}.",
+        "A3": "\\sqrt[3]{3}.",
+        "A4": "3 + \\sqrt[3]{3}."
       },
       "correctAnswer": "A4",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=7&question=9",
@@ -142405,16 +142405,16 @@
       "questionUz": "Ko‘phadni ko‘paytuvchilarga ajrating: x^{3} - (\\sqrt{6} + 1) x^{2} + 6.",
       "questionRu": "Ko‘phadni ko‘paytuvchilarga ajrating: x^{3} - (\\sqrt{6} + 1) x^{2} + 6.",
       "optionsUz": {
-        "A1": "(x + \\sqrt{6}) x^{2} + x + \\sqrt{?} \\frac{6}{6} .",
-        "A2": "(x + \\sqrt{?} \\frac{6)}{6)} x^{2} - x + \\sqrt{?} .",
-        "A3": "(x - \\sqrt{?} x^{2} - x - \\sqrt{?} \\frac{6}{6} .",
-        "A4": "(x - \\sqrt{6}) x^{2} + x - \\sqrt{?} ."
+        "A1": "(x + \\sqrt{6})(x^{2} + x + \\sqrt{6}).",
+        "A2": "(x + \\sqrt{6})(x^{2} - x + \\sqrt{6}).",
+        "A3": "(x - \\sqrt{6})(x^{2} - x - \\sqrt{6}).",
+        "A4": "(x - \\sqrt{6})(x^{2} + x - \\sqrt{6})."
       },
       "optionsRu": {
-        "A1": "(x + \\sqrt{6}) x^{2} + x + \\sqrt{?} \\frac{6}{6} .",
-        "A2": "(x + \\sqrt{?} \\frac{6)}{6)} x^{2} - x + \\sqrt{?} .",
-        "A3": "(x - \\sqrt{?} x^{2} - x - \\sqrt{?} \\frac{6}{6} .",
-        "A4": "(x - \\sqrt{6}) x^{2} + x - \\sqrt{?} ."
+        "A1": "(x + \\sqrt{6})(x^{2} + x + \\sqrt{6}).",
+        "A2": "(x + \\sqrt{6})(x^{2} - x + \\sqrt{6}).",
+        "A3": "(x - \\sqrt{6})(x^{2} - x - \\sqrt{6}).",
+        "A4": "(x - \\sqrt{6})(x^{2} + x - \\sqrt{6})."
       },
       "correctAnswer": "A3",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4",
@@ -153217,19 +153217,19 @@
     {
       "externalId": "mtp-algebra-geometriya-040-09",
       "topicExternalId": "mtp-algebra-geometriya-040",
-      "questionUz": "Tenglamalar sistemasini yeching: \\begin{cases}\nx + y + xy = 0 \\\\\nx^{3} + y^{3} + x^{3} y^{3} = 12\n\\end{cases}",
-      "questionRu": "Tenglamalar sistemasini yeching: \\begin{cases}\nx + y + xy = 0 \\\\\nx^{3} + y^{3} + x^{3} y^{3} = 12\n\\end{cases}",
+      "questionUz": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
+      "questionRu": "Tenglamalar sistemasini yeching: \\begin{cases} x + y + xy = 0 \\\\ x^{3} + y^{3} + x^{3} y^{3} = 12 \\end{cases}",
       "optionsUz": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3)}, (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "optionsRu": {
-        "A1": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3)}, (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-        "A2": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-        "A3": "(1 - 3; 1 + 3).",
-        "A4": "(1 + 3; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
+        "A1": "(1 + \\sqrt{3}; 1 - \\sqrt{3}), (1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A2": "(1; \\sqrt{3}), (\\sqrt{3}; 1).",
+        "A3": "(1 - \\sqrt{3}; 1 + \\sqrt{3}).",
+        "A4": "(1 + \\sqrt{3}; 1 + \\sqrt{3}), (1 - \\sqrt{3}; 1 - \\sqrt{3})."
       },
       "correctAnswer": "A1",
       "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=9",
@@ -170899,17 +170899,17 @@
     {
       "externalId": "mtp-algebra-geometriya-068-11",
       "topicExternalId": "mtp-algebra-geometriya-068",
-      "questionUz": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
-      "questionRu": "| 4 \\sqrt{3} - 7 | -| \\frac{5}{2} \\sqrt{2} - 7 \\sqrt{| 2} nimaga teng?",
+      "questionUz": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
+      "questionRu": "| 4 \\sqrt{3} - 7 | - | 5 \\sqrt{2} - 7 | nimaga teng?",
       "optionsUz": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
       "optionsRu": {
-        "A1": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-        "A2": "5 - 4 \\sqrt{3}.",
+        "A1": "4 \\sqrt{3} - 5 \\sqrt{2}.",
+        "A2": "5 \\sqrt{2} - 4 \\sqrt{3}.",
         "A3": "4 \\sqrt{3} + 5 \\sqrt{2} - 14.",
         "A4": "14 - 4 \\sqrt{3} - 5 \\sqrt{2}."
       },
@@ -223147,8 +223147,8 @@
     {
       "externalId": "mtp-algebra-geometriya-151-09",
       "topicExternalId": "mtp-algebra-geometriya-151",
-      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
-      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionUz": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
+      "questionRu": "\\frac{x^{2} - 2 x - 8}{\\sqrt{x^{2} + 10}} > 0 tengsizlikning eng kichik butun musbat va eng katta butun manfiy yechimlari ayirmasini toping.",
       "optionsUz": {
         "A1": "2.",
         "A2": "3.",
@@ -228712,19 +228712,19 @@
     {
       "externalId": "mtp-algebra-geometriya-160-04",
       "topicExternalId": "mtp-algebra-geometriya-160",
-      "questionUz": "\\sqrt{3 \\cdot} \\frac{(3 + 2}{4} \\sqrt{3)} Agar a = bo‘lsa, 2 ifodaning qiymatini toping. 2 1 - \\frac{1}{a - 2} 2",
-      "questionRu": "\\sqrt{3 \\cdot} \\frac{(3 + 2}{4} \\sqrt{3)} Agar a = bo‘lsa, 2 ifodaning qiymatini toping. 2 1 - \\frac{1}{a - 2} 2",
+      "questionUz": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
+      "questionRu": "Agar a = \\frac{\\sqrt{3} \\cdot (3 + 2 \\sqrt{3})}{4} bo‘lsa, \\frac{2}{1 - \\frac{2}{2 + \\frac{1}{a - 2}}} ifodaning qiymatini toping.",
       "optionsUz": {
         "A1": "3 \\sqrt{3}.",
-        "A2": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
         "A3": "3 \\sqrt{3} + 2.",
-        "A4": "3."
+        "A4": "\\sqrt{3}."
       },
       "optionsRu": {
         "A1": "3 \\sqrt{3}.",
-        "A2": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
+        "A2": "\\frac{3 \\sqrt{3} + 1}{2}.",
         "A3": "3 \\sqrt{3} + 2.",
-        "A4": "3."
+        "A4": "\\sqrt{3}."
       },
       "correctAnswer": "A1",
       "source": "Algebra_va_Geometriya151_164.pdf#variant=160&question=4",

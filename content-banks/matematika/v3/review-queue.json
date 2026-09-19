@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-18T16:04:37.236Z",
-  "count": 810,
+  "generated_at": "2026-09-19T04:56:40.515Z",
+  "count": 748,
   "items": [
     {
       "externalId": "mtp-algebra-002-07",
@@ -8,13 +8,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "c{1}{\\sqrt{a} - \\sqrt{b}} + : \\frac{1}{\\sqrt{a} - \\sqrt{b}} \\sqrt{?} \\frac{b}{a - b} : - ifodani sod",
       "source": "Algebra1_30.pdf#variant=2&question=7"
-    },
-    {
-      "externalId": "mtp-algebra-003-13",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning ",
-      "source": "Algebra1_30.pdf#variant=3&question=13"
     },
     {
       "externalId": "mtp-algebra-003-26",
@@ -36,13 +29,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "\\sqrt{?} \\sqrt{2} 3 - 2 2 + 17 + 12 ni h",
       "source": "Algebra1_30.pdf#variant=6&question=7"
-    },
-    {
-      "externalId": "mtp-algebra-006-15",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-      "source": "Algebra1_30.pdf#variant=6&question=15"
     },
     {
       "externalId": "mtp-algebra-006-24",
@@ -197,34 +183,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "Agar \\frac{x \\in [-}{x^{2} + 6 x} 3; 3] bo‘lsa, \\sqrt{?} + 9 + \\sqrt{x^{2} - 6 x + 9} if",
       "source": "Algebra1_30.pdf#variant=15&question=7"
-    },
-    {
-      "externalId": "mtp-algebra-015-12",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (",
-      "source": "Algebra1_30.pdf#variant=15&question=12"
-    },
-    {
-      "externalId": "mtp-algebra-015-12",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra1_30.pdf#variant=15&question=12"
-    },
-    {
-      "externalId": "mtp-algebra-015-12",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "rt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra1_30.pdf#variant=15&question=12"
-    },
-    {
-      "externalId": "mtp-algebra-015-12",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-      "source": "Algebra1_30.pdf#variant=15&question=12"
     },
     {
       "externalId": "mtp-algebra-015-21",
@@ -906,76 +864,6 @@
       "source": "Algebra61_90.pdf#variant=73&question=17"
     },
     {
-      "externalId": "mtp-algebra-073-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": " 3 f (x) = - x^{4} 5 + 4 x + 5 funksiya berilgan. Uning_{3} \\sqrt{?}_{3} \\sqrt{?} monotonligidan foy",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "x^{4} 5 + 4 x + 5 funksiya berilgan. Uning_{3} \\sqrt{?}_{3} \\sqrt{?} monotonligidan foydalanib, f (6",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "notonligidan foydalanib, f (6) va f (7) ni taqqoslang. _{3} \\sqrt{?}_{3} \\sqrt{?}",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "foydalanib, f (6) va f (7) ni taqqoslang. _{3} \\sqrt{?}_{3} \\sqrt{?}",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) < f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) < f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) - 1 = f (6) + 1. _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) - 1 = f (6) + 1. _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) > f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-073-30",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "f (7) > f (6). _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra61_90.pdf#variant=73&question=30"
-    },
-    {
       "externalId": "mtp-algebra-074-21",
       "field": "A4",
       "kind": "sqrt_placeholder",
@@ -1212,41 +1100,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "\\frac{1}{2} \\sqrt{?} x^{2} - 4 x + 8 + C .",
       "source": "Algebra61_90.pdf#variant=85&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-086-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "x\\sqrt[3]{?} 5 + x^{4} dx integralni hiso",
-      "source": "Algebra61_90.pdf#variant=86&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-086-30",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "2 \\sqrt{?} 5 + x^{4} + C .",
-      "source": "Algebra61_90.pdf#variant=86&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-086-30",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\sqrt{?} 5 + x^{4} + C .",
-      "source": "Algebra61_90.pdf#variant=86&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-086-30",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "1 \\sqrt{?} 5 + x^{4} + C .",
-      "source": "Algebra61_90.pdf#variant=86&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-086-30",
-      "field": "A4",
-      "kind": "sqrt_placeholder",
-      "fragment": "4 \\sqrt{?} 5 + x^{4} + C . 2 .",
-      "source": "Algebra61_90.pdf#variant=86&question=30"
     },
     {
       "externalId": "mtp-algebra-087-03",
@@ -1641,41 +1494,6 @@
       "source": "Algebra91_121.pdf#variant=100&question=23"
     },
     {
-      "externalId": "mtp-algebra-100-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "^{1} ((4 x - 1) dx Integralni hisoblang: \\sqrt{?} 2 x^{2} - x + 4 . 0",
-      "source": "Algebra91_121.pdf#variant=100&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-100-30",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "2 \\sqrt{?} 5 - 4.",
-      "source": "Algebra91_121.pdf#variant=100&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-100-30",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "2 - \\sqrt{?} 5.",
-      "source": "Algebra91_121.pdf#variant=100&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-100-30",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\sqrt{?} 5 - 2.",
-      "source": "Algebra91_121.pdf#variant=100&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-100-30",
-      "field": "A4",
-      "kind": "sqrt_placeholder",
-      "fragment": "4 - \\sqrt{?} 5. .",
-      "source": "Algebra91_121.pdf#variant=100&question=30"
-    },
-    {
       "externalId": "mtp-algebra-102-12",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -1723,27 +1541,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "^{16} \\sqrt{?} + 1.",
       "source": "Algebra91_121.pdf#variant=103&question=7"
-    },
-    {
-      "externalId": "mtp-algebra-103-11",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
-      "source": "Algebra91_121.pdf#variant=103&question=11"
-    },
-    {
-      "externalId": "mtp-algebra-103-11",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra91_121.pdf#variant=103&question=11"
-    },
-    {
-      "externalId": "mtp-algebra-103-11",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra91_121.pdf#variant=103&question=11"
     },
     {
       "externalId": "mtp-algebra-103-12",
@@ -2474,62 +2271,6 @@
       "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=24"
     },
     {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "{2 - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\s",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "{2 - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\s",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "{2 - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\s",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": " - \\sqrt{?} 2} + {2 + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\sqrt{?} 4} + {4 + \\s",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": " + \\sqrt{?} 2} + {3 - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\sqrt{?} 4} + {4 + \\sqrt{?} 4} + . . . +",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": " - \\sqrt{?} 3} + {3 + \\sqrt{?} 3} + {4 - \\sqrt{?} 4} + {4 + \\sqrt{?} 4} + . . . + {2017 - \\sqrt{?} 2",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": " 3} + {4 - \\sqrt{?} 4} + {4 + \\sqrt{?} 4} + . . . + {2017 - \\sqrt{?} 2017} + {2017 + \\sqrt{?} 2017} ",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-002-30",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "{4 + \\sqrt{?} 4} + . . . + {2017 - \\sqrt{?} 2017} + {2017 + \\sqrt{?} 2017} hisoblang. Bunda {a} - a ",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=2&question=30"
-    },
-    {
       "externalId": "mtp-algebra-trigonometriya-003-09",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -2684,34 +2425,6 @@
       "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=9"
     },
     {
-      "externalId": "mtp-algebra-trigonometriya-013-16",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=16"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-013-16",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=16"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-013-16",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "rt{3})} 3; 1 - \\sqrt{3}), (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=16"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-013-16",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=13&question=16"
-    },
-    {
       "externalId": "mtp-algebra-trigonometriya-014-17",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -2724,13 +2437,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "\\frac{1}{\\sqrt{?} x^{3} + 2 + 3} \\frac{2}{\\sqrt{?} x^{3} + 2 + 7} + = \\frac{1}{2} ",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=14&question=17"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-014-20",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=14&question=20"
     },
     {
       "externalId": "mtp-algebra-trigonometriya-014-26",
@@ -3013,20 +2719,6 @@
       "source": "Algebra___Trigonometriyagacha.pdf#variant=32&question=10"
     },
     {
-      "externalId": "mtp-algebra-trigonometriya-034-08",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=34&question=8"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-034-08",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=34&question=8"
-    },
-    {
       "externalId": "mtp-algebra-trigonometriya-034-09",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -3095,13 +2787,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "^{16} \\sqrt{?} + 1.",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=35&question=10"
-    },
-    {
-      "externalId": "mtp-algebra-trigonometriya-036-17",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning ",
-      "source": "Algebra___Trigonometriyagacha.pdf#variant=36&question=17"
     },
     {
       "externalId": "mtp-algebra-trigonometriya-037-07",
@@ -3361,27 +3046,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "[\\sqrt{\\sqrt{?}} \\frac{6 +}{2 + 1} \\sqrt{5} \\sq",
       "source": "Algebra_va_Geometriya1_30.pdf#variant=7&question=3"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-007-09",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "3)^{2} + (\\frac{x}{3} - 3)^{3} = 6 tenglamani yeching. _{3} \\sqrt{?} \\sqrt{3}.",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=7&question=9"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-007-09",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=7&question=9"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-007-09",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "3 + _{3} \\sqrt{?}_{3} \\sqrt{?}.",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=7&question=9"
     },
     {
       "externalId": "mtp-algebra-geometriya-008-03",
@@ -3706,48 +3370,6 @@
       "source": "Algebra_va_Geometriya1_30.pdf#variant=21&question=19"
     },
     {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x + \\sqrt{6}) x^{2} + x + \\sqrt{?} \\frac{6}{6} .",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x + \\sqrt{?} \\frac{6)}{6)} x^{2} - x + \\sqrt",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x + \\sqrt{?} \\frac{6)}{6)} x^{2} - x + \\sqrt{?} .",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x - \\sqrt{?} x^{2} - x - \\sqrt{?} \\frac{6}{6",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A3",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x - \\sqrt{?} x^{2} - x - \\sqrt{?} \\frac{6}{6} .",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-023-04",
-      "field": "A4",
-      "kind": "sqrt_placeholder",
-      "fragment": "(x - \\sqrt{6}) x^{2} + x - \\sqrt{?} .",
-      "source": "Algebra_va_Geometriya1_30.pdf#variant=23&question=4"
-    },
-    {
       "externalId": "mtp-algebra-geometriya-023-09",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -3893,34 +3515,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "h (f (x)) = . \\sqrt{?} \\frac{5 x + 4}{\\sqrt{3} x - 1}.",
       "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=6"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-040-09",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3)}, (",
-      "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=9"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-040-09",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "1 + \\frac{\\sqrt{?}}{\\sqrt{3})} 3; 1 - \\sqrt{3)}, (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=9"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-040-09",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "rt{3})} 3; 1 - \\sqrt{3)}, (1 - \\sqrt{\\sqrt{?}} 3; 1 + \\sqrt{\\sqrt{?}} 3).",
-      "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=9"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-040-09",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "(1; \\sqrt{?}, (\\sqrt{3}; 1).",
-      "source": "Algebra_va_Geometriya31_60.pdf#variant=40&question=9"
     },
     {
       "externalId": "mtp-algebra-geometriya-042-16",
@@ -4320,13 +3914,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "\\sqrt{?}.",
       "source": "Algebra_va_Geometriya61_90.pdf#variant=68&question=5"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-068-11",
-      "field": "A1",
-      "kind": "sqrt_placeholder",
-      "fragment": "4 \\sqrt{3} - 5 \\sqrt{?}.",
-      "source": "Algebra_va_Geometriya61_90.pdf#variant=68&question=11"
     },
     {
       "externalId": "mtp-algebra-geometriya-068-15",
@@ -5484,13 +5071,6 @@
       "source": "Algebra_va_Geometriya121_150.pdf#variant=150&question=27"
     },
     {
-      "externalId": "mtp-algebra-geometriya-151-09",
-      "field": "questionUz",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{x^{2} - 2 x - 8}{\\sqrt{?} x^{2} + 10} > 0 tengsizlikning ",
-      "source": "Algebra_va_Geometriya151_164.pdf#variant=151&question=9"
-    },
-    {
       "externalId": "mtp-algebra-geometriya-151-15",
       "field": "questionUz",
       "kind": "sqrt_placeholder",
@@ -5601,20 +5181,6 @@
       "kind": "sqrt_placeholder",
       "fragment": "\\pi \\frac{3 + 2}{4 \\sqrt{?}} \\sqrt{2}.",
       "source": "Algebra_va_Geometriya151_164.pdf#variant=155&question=23"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-160-04",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
-      "source": "Algebra_va_Geometriya151_164.pdf#variant=160&question=4"
-    },
-    {
-      "externalId": "mtp-algebra-geometriya-160-04",
-      "field": "A2",
-      "kind": "sqrt_placeholder",
-      "fragment": "\\frac{3 3 + 1}{2 \\sqrt{?}} \\sqrt{?} .",
-      "source": "Algebra_va_Geometriya151_164.pdf#variant=160&question=4"
     },
     {
       "externalId": "mtp-algebra-geometriya-161-05",
