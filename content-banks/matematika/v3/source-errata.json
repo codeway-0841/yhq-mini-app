@@ -1139,6 +1139,70 @@
       },
       "reason": "Crop-confirmed (a100q30): numerator is radicand derivative, 2sqrt(u)|0..1 = 2sqrt(5)-4; answer key KalitAl v100 q30 = A matches A1",
       "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra___Trigonometriyagacha.pdf",
+      "page": 80,
+      "variant": 40,
+      "question": 26,
+      "raw_text": "(6-sqrt10)(6+sqrt10)=26 substitution; extractor shattered log subscripts into placeholder soup",
+      "resolved_question": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
+      "resolved_options": {
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
+      },
+      "reason": "Crop-confirmed (t40q26): (t-3)(u-9)>=0 with t=(6-sqrt10)^x,u=(6+sqrt10)^x; answer key KalitAlTrigon v40 q26 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra_va_Geometriya121_150.pdf",
+      "page": 273,
+      "variant": 137,
+      "question": 14,
+      "raw_text": "(6-sqrt10)(6+sqrt10)=26 substitution; extractor shattered log subscripts into placeholder soup",
+      "resolved_question": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
+      "resolved_options": {
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
+      },
+      "reason": "Twin, crop-confirmed (g137q14b): identical print: (t-3)(u-9)>=0 with t=(6-sqrt10)^x,u=(6+sqrt10)^x; answer key KalitAlGeo v137 q14 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra1_30.pdf",
+      "page": 49,
+      "variant": 25,
+      "question": 7,
+      "raw_text": "sqrt(9+sqrt(77))+sqrt(9-sqrt(77)); extractor shattered nested radicals",
+      "resolved_question": "\\sqrt{9 + \\sqrt{77}} + \\sqrt{9 - \\sqrt{77}} ni soddalashtiring.",
+      "resolved_options": {
+        "A1": "2 \\sqrt{8}.",
+        "A2": "2 \\sqrt{11}.",
+        "A3": "\\sqrt{22}.",
+        "A4": "\\sqrt{18}."
+      },
+      "reason": "Crop-confirmed (a25q7): s^2=18+2sqrt(81-77)=22 so s=sqrt(22); answer key KalitAl v25 q7 = C matches A3",
+      "status": "confirmed"
+    },
+    {
+      "pdf": "Algebra31_60.pdf",
+      "page": 75,
+      "variant": 38,
+      "question": 19,
+      "raw_text": "l^{log_{?} k^{1/n}} with k,l,m,n integers >1; option set forces log base l^{-m}",
+      "resolved_question": "Agar k, l, m va n 1 dan katta butun sonlar bo‘lsa, l^{\\log_{l^{-m}} k^{1/n}} ifoda nimaga teng?",
+      "resolved_options": {
+        "A1": "\\frac{1}{\\sqrt[n]{k^{m}}}.",
+        "A2": "\\frac{1}{\\sqrt[m]{k^{n}}}.",
+        "A3": "\\frac{1}{\\sqrt[m n]{k}}.",
+        "A4": "\\frac{1}{k^{m} \\sqrt[n]{k}}."
+      },
+      "reason": "Crop-confirmed (a38q19h): subscript reads 'l-m' ambiguously, but only l^{-m} base simplifies (k^{-1/mn}); answer key KalitAl v38 q19 = C matches A3; print defect (missing superscript grouping) normalized",
+      "status": "confirmed"
     }
   ]
 }

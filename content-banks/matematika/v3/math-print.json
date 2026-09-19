@@ -17095,18 +17095,18 @@
     {
       "externalId": "mtp-algebra-025-07",
       "topicExternalId": "mtp-algebra-025",
-      "questionUz": "9 + \\frac{\\sqrt{?}}{8} 77 + \\frac{9}{11} - \\sqrt{77 \\sqrt{?}} ni soddalashtiring.",
-      "questionRu": "9 + \\frac{\\sqrt{?}}{8} 77 + \\frac{9}{11} - \\sqrt{77 \\sqrt{?}} ni soddalashtiring.",
+      "questionUz": "\\sqrt{9 + \\sqrt{77}} + \\sqrt{9 - \\sqrt{77}} ni soddalashtiring.",
+      "questionRu": "\\sqrt{9 + \\sqrt{77}} + \\sqrt{9 - \\sqrt{77}} ni soddalashtiring.",
       "optionsUz": {
-        "A1": "2 \\sqrt{?}.",
-        "A2": "2 \\sqrt{?}.",
-        "A3": "22.",
+        "A1": "2 \\sqrt{8}.",
+        "A2": "2 \\sqrt{11}.",
+        "A3": "\\sqrt{22}.",
         "A4": "\\sqrt{18}."
       },
       "optionsRu": {
-        "A1": "2 \\sqrt{?}.",
-        "A2": "2 \\sqrt{?}.",
-        "A3": "22.",
+        "A1": "2 \\sqrt{8}.",
+        "A2": "2 \\sqrt{11}.",
+        "A3": "\\sqrt{22}.",
         "A4": "\\sqrt{18}."
       },
       "correctAnswer": "A3",
@@ -25537,19 +25537,19 @@
     {
       "externalId": "mtp-algebra-038-19",
       "topicExternalId": "mtp-algebra-038",
-      "questionUz": "Agar k, l, m va n 1 dan katta butun sonlar bo‘lsa, l^{\\log_{l}}^{-m k^{1}/n} ifoda nimaga teng? \\frac{1}{\\sqrt{?}^{n} k^{m}} \\frac{1}{\\sqrt{?}^{m} k^{n}} \\frac{1}{_{mn} \\sqrt{?}} \\frac{1}{k^{m} \\sqrt{?}^{n}}",
-      "questionRu": "Agar k, l, m va n 1 dan katta butun sonlar bo‘lsa, l^{\\log_{l}}^{-m k^{1}/n} ifoda nimaga teng? \\frac{1}{\\sqrt{?}^{n} k^{m}} \\frac{1}{\\sqrt{?}^{m} k^{n}} \\frac{1}{_{mn} \\sqrt{?}} \\frac{1}{k^{m} \\sqrt{?}^{n}}",
+      "questionUz": "Agar k, l, m va n 1 dan katta butun sonlar bo‘lsa, l^{\\log_{l^{-m}} k^{1/n}} ifoda nimaga teng?",
+      "questionRu": "Agar k, l, m va n 1 dan katta butun sonlar bo‘lsa, l^{\\log_{l^{-m}} k^{1/n}} ifoda nimaga teng?",
       "optionsUz": {
-        "A1": ".",
-        "A2": ".",
-        "A3": ".",
-        "A4": "."
+        "A1": "\\frac{1}{\\sqrt[n]{k^{m}}}.",
+        "A2": "\\frac{1}{\\sqrt[m]{k^{n}}}.",
+        "A3": "\\frac{1}{\\sqrt[m n]{k}}.",
+        "A4": "\\frac{1}{k^{m} \\sqrt[n]{k}}."
       },
       "optionsRu": {
-        "A1": ".",
-        "A2": ".",
-        "A3": ".",
-        "A4": "."
+        "A1": "\\frac{1}{\\sqrt[n]{k^{m}}}.",
+        "A2": "\\frac{1}{\\sqrt[m]{k^{n}}}.",
+        "A3": "\\frac{1}{\\sqrt[m n]{k}}.",
+        "A4": "\\frac{1}{k^{m} \\sqrt[n]{k}}."
       },
       "correctAnswer": "A3",
       "source": "Algebra31_60.pdf#variant=38&question=19",
@@ -128374,19 +128374,19 @@
     {
       "externalId": "mtp-algebra-trigonometriya-040-26",
       "topicExternalId": "mtp-algebra-trigonometriya-040",
-      "questionUz": "26^{x} + 27 \\ge 9(6 - \\sqrt{10)}^{x} + 3(6 + \\sqrt{10)}^{x} tengsizlikni yeching.",
-      "questionRu": "26^{x} + 27 \\ge 9(6 - \\sqrt{10)}^{x} + 3(6 + \\sqrt{10)}^{x} tengsizlikni yeching.",
+      "questionUz": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
+      "questionRu": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
       "optionsUz": {
-        "A1": "[\\log_{6+} \\sqrt{_{\\sqrt{?}}^{10}} 9; \\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3].",
-        "A2": "(\\log_{6+10} 9; \\log_{6-10} 3).",
-        "A3": "(-\\infty; \\log_{6+}^{\\sqrt{?}} \\frac{10}{10} 9]] [\\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3; \\infty).",
-        "A4": "(-\\infty; \\log_{6+}^{\\sqrt{?}} 9)] (\\log_{6-10} 3; \\infty)."
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
       },
       "optionsRu": {
-        "A1": "[\\log_{6+} \\sqrt{_{\\sqrt{?}}^{10}} 9; \\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3].",
-        "A2": "(\\log_{6+10} 9; \\log_{6-10} 3).",
-        "A3": "(-\\infty; \\log_{6+}^{\\sqrt{?}} \\frac{10}{10} 9]] [\\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3; \\infty).",
-        "A4": "(-\\infty; \\log_{6+}^{\\sqrt{?}} 9)] (\\log_{6-10} 3; \\infty)."
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
       },
       "correctAnswer": "A3",
       "source": "Algebra___Trigonometriyagacha.pdf#variant=40&question=26",
@@ -214432,19 +214432,19 @@
     {
       "externalId": "mtp-algebra-geometriya-137-14",
       "topicExternalId": "mtp-algebra-geometriya-137",
-      "questionUz": "26^{x} + 27 \\ge 9(6 - \\sqrt{10)}^{x} + 3(6 + \\sqrt{10)}^{x} tengsizlikni yeching.",
-      "questionRu": "26^{x} + 27 \\ge 9(6 - \\sqrt{10)}^{x} + 3(6 + \\sqrt{10)}^{x} tengsizlikni yeching.",
+      "questionUz": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
+      "questionRu": "26^{x} + 27 \\ge 9 (6 - \\sqrt{10})^{x} + 3 (6 + \\sqrt{10})^{x} tengsizlikni yeching.",
       "optionsUz": {
-        "A1": "[\\log_{6+} \\sqrt{_{\\sqrt{?}}^{10}} 9; \\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3].",
-        "A2": "(\\log_{6+10} 9; \\log_{6-10} 3).",
-        "A3": "(-\\infty; \\log_{6+}^{\\sqrt{?}} \\frac{10}{10} 9] \\cup [\\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3; \\infty).",
-        "A4": "(-\\infty; \\log_{6+}^{\\sqrt{?}} 9) \\cup (\\log_{6-10} 3; \\infty)."
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
       },
       "optionsRu": {
-        "A1": "[\\log_{6+} \\sqrt{_{\\sqrt{?}}^{10}} 9; \\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3].",
-        "A2": "(\\log_{6+10} 9; \\log_{6-10} 3).",
-        "A3": "(-\\infty; \\log_{6+}^{\\sqrt{?}} \\frac{10}{10} 9] \\cup [\\log_{6-} \\sqrt{_{\\sqrt{?}}^{10}} 3; \\infty).",
-        "A4": "(-\\infty; \\log_{6+}^{\\sqrt{?}} 9) \\cup (\\log_{6-10} 3; \\infty)."
+        "A1": "[\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3].",
+        "A2": "(\\log_{6 + \\sqrt{10}} 9; \\log_{6 - \\sqrt{10}} 3).",
+        "A3": "(-\\infty; \\log_{6 + \\sqrt{10}} 9] \\cup [\\log_{6 - \\sqrt{10}} 3; \\infty).",
+        "A4": "(-\\infty; \\log_{6 + \\sqrt{10}} 9) \\cup (\\log_{6 - \\sqrt{10}} 3; \\infty)."
       },
       "correctAnswer": "A3",
       "source": "Algebra_va_Geometriya121_150.pdf#variant=137&question=14",
