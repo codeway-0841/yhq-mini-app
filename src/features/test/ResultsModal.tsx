@@ -263,17 +263,20 @@ export default function ResultsModal({
           </div>
         )}
 
-        {/* Savollar katakchalari (barcha savollar gridi) */}
-        <div className="grid grid-cols-6 gap-1.5 mb-5 max-h-48 overflow-y-auto overscroll-contain p-0.5">
+        {/* Savollar katakchalari (barcha savollar gridi — 10 ustunli ixcham va qulay tartib) */}
+        <div className="grid grid-cols-10 gap-1.5 sm:gap-2 mb-5 max-h-56 overflow-y-auto overscroll-contain p-0.5">
           {results.map((r, i) => (
-            <button key={r.questionId} onClick={() => onGoToQuestion(i)}
+            <button
+              key={r.questionId}
+              onClick={() => onGoToQuestion(i)}
               aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : r.status === 'pending' ? 'pending' : tt('unanswered')}`}
-              className={`aspect-square rounded-full flex items-center justify-center text-[11px] font-semibold transition-all active:scale-90 ${
-                r.status === 'correct'   ? 'bg-pprimary text-ponprimary' :
-                r.status === 'incorrect' ? 'bg-pdanger text-white'   :
+              className={`aspect-square rounded-full flex items-center justify-center text-[10.5px] sm:text-[11px] font-bold tabular-nums transition-all active:scale-90 shadow-2xs ${
+                r.status === 'correct'   ? 'bg-pprimary text-ponprimary shadow-xs' :
+                r.status === 'incorrect' ? 'bg-pdanger text-white shadow-xs'   :
                 r.status === 'pending'   ? 'bg-[rgb(var(--p-blue-rgb)/0.2)] text-pblue ring-1 ring-[rgb(var(--p-blue-rgb)/0.5)]' :
                                            'bg-psurface text-pmuted'
-              }`}>
+              }`}
+            >
               {i + 1}
             </button>
           ))}
