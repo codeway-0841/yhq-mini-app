@@ -102,8 +102,11 @@ export const bossRepository = {
         SELECT COALESCE(SUM(damage), 0)::int AS d FROM boss_damage bd
         JOIN boss_battles b ON b.id = bd.boss_id AND b.period_key = ${periodKey}
       `),
-      executeRows<{ user_id: string; first_name: string; photo_url: string | null; avatar_webp: string | null; d: number }>(sql`
-        SELECT bd.user_id, u.first_name, u.photo_url, u.avatar_webp, bd.damage::int AS d
+      // EGRESS (2026-09-21): avatar_webp blob'ini SELECT qilmang — faqat
+      // boolean flag kerak (leaderboard pattern'i bilan bir xil). Ilgari top-3
+      // uchun ≤300KB blob har Dashboard mount'ida simdan chiqardi.
+      executeRows<{ user_id: string; first_name: string; photo_url: string | null; has_custom: boolean; d: number }>(sql`
+        SELECT bd.user_id, u.first_name, u.photo_url, (u.avatar_webp IS NOT NULL) AS has_custom, bd.damage::int AS d
         FROM boss_damage bd
         JOIN boss_battles b ON b.id = bd.boss_id AND b.period_key = ${periodKey}
         JOIN users u ON u.id = bd.user_id
@@ -125,7 +128,7 @@ export const bossRepository = {
         userId: r.user_id,
         firstName: r.first_name,
         photoUrl: r.photo_url,
-        hasCustomAvatar: r.avatar_webp !== null,
+        hasCustomAvatar: r.has_custom,
         damage: Number(r.d),
       })),
     }

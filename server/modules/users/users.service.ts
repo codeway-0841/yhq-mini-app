@@ -7,7 +7,7 @@
  */
 
 import { z }                      from 'zod'
-import { usersRepository, referralsRepository } from './users.repository'
+import { usersRepository, referralsRepository, type SlimUserRow } from './users.repository'
 import { REFERRAL_REWARD_DAYS, REFERRAL_MAX_REWARDED } from './referral.constants'
 import { parseUserId }            from '../../utils/parse'
 import { users, progress, userSettings } from '../../schema'
@@ -16,8 +16,10 @@ type UserRow = typeof users.$inferSelect
 
 /** JSON-safe user shape (canonical TEXT id) — matches the frontend ApiUser type.
  *  `economy` (FIXPLAN #40): coins balansi + ownedItems — coinsRepository'dan;
- *  o'tkazilmasa 0/[] (economy'siz eski yo'llar buzilmaydi). */
-export function toApiUser(row: UserRow, economy: { coins: number; ownedItems: string[] } = { coins: 0, ownedItems: [] }) {
+ *  o'tkazilmasa 0/[] (economy'siz eski yo'llar buzilmaydi).
+ *  `row`: findById (SlimUserRow — avatar blob'siz, hasAvatar flag'li) YOKI
+ *  upsert().returning() to'liq qatori (avatarWebp maydoni bor) — ikkalasi ham. */
+export function toApiUser(row: UserRow | SlimUserRow, economy: { coins: number; ownedItems: string[] } = { coins: 0, ownedItems: [] }) {
   // Effective premium: lifetime tarif YOKI referal mukofot muddati tugamagan
   const isPremium = row.tariff === 'premium'
     || (row.premiumUntil != null && row.premiumUntil > new Date())
@@ -28,8 +30,9 @@ export function toApiUser(row: UserRow, economy: { coins: number; ownedItems: st
     username:  row.username  ?? '',
     photoUrl:  row.photoUrl  ?? '',
     /** Qo'lda yuklangan avatar bormi — global ko'rsatish uchun rasm FAQAT
-     *  GET /api/avatar/:userId dan olinadi (JSON payload shishmasligi uchun). */
-    hasCustomAvatar: (row.avatarWebp?.length ?? 0) > 0,
+     *  GET /api/avatar/:userId dan olinadi (JSON payload shishmasligi uchun).
+     *  SlimUserRow'da flag sifatida keladi (EGRESS 2026-09-21). */
+    hasCustomAvatar: 'hasAvatar' in row ? row.hasAvatar : (row.avatarWebp?.length ?? 0) > 0,
     phone:     row.phone     ?? null,
     tariff:    isPremium ? 'premium' as const : 'free' as const,
     isAdmin:   row.isAdmin,

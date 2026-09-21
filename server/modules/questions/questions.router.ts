@@ -20,6 +20,7 @@ import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { identityKey } from '../../middleware/rate-limiter'
 import { config } from '../../config'
 import { issueLaunchToken } from '../test-sessions/launch-token'
+import { bankContentVersion } from './bank-version'
 
 const router = Router()
 
@@ -79,6 +80,14 @@ const CONTENT_CACHE = 'public, max-age=600, s-maxage=3600, stale-while-revalidat
  *  massa-yig'ish SIgnali (script'dan yuzlab refetch). Normal user CDN + client
  *  session cache tufayli origin'ga deyarli tushmaydi → limit urmaydi. */
 const FULL_BANK_DAILY_CAP = 20
+
+/**
+ * /questions/version uchun QISQA cache: client persist-keshi (IndexedDB) har
+ * launch'da shu ~40 baytlik so'rovni yuboradi. Javob tez-tegisiga eskirishi
+ * mumkin — admin CRUD'dan keyin ham client ≤1 daqiqada yangi versiyani ko'radi
+ * (bank CONTENT_CACHE'si esa 1 soatgacha eskirishi mumkin, u o'zgarishsiz).
+ */
+const VERSION_CACHE = 'public, max-age=30, s-maxage=60, stale-while-revalidate=300'
 
 /**
  * Public savol payload'i TO'G'RI JAVOBSIZ — correctAnswer faqat serverda
@@ -215,6 +224,30 @@ router.get('/questions/search', searchLimit, wrap(async (req, res) => {
 
   res.set('Cache-Control', 'private, no-store')
   res.json({ hits })
+}))
+
+/**
+ * GET /api/questions/version?subject=fizika
+ *
+ * Bank kontent fingerprint'i (md5, ~32 belgi) — client persist-keshining
+ * ishonch manbai (EGRESS "A" bosqich, 2026-09-21):
+ *   - versiya BIR XIL → client IndexedDB'dagi bankni ishlatadi (bank fetch YO'Q);
+ *   - versiya BOSHQA → client /questions'ni qayta tortib keshni yangilaydi.
+ * Hash FAQAT public payload'dan (correctAnswer'siz) — scoring trust boundary
+ * buzilmaydi; admin faqat javob kalitini tuzatsa client keshi bekor qilinmaydi.
+ * Public + CDN 60s — requestPublic (auth header'siz) so'rovlar CDN'dan qaytadi.
+ */
+router.get('/questions/version', contentLimit, wrap(async (req, res) => {
+  const parsed = QuestionsQuery.safeParse(req.query)
+  if (!parsed.success) {
+    res.status(400).json({ error: 'Noto\'g\'ri so\'rov parametrlari' })
+    return
+  }
+  const entry    = resolveSubject(parsed.data.subject)
+  const provider = getProvider(entry.dataSourceId)
+  const v = await bankContentVersion(provider)
+  res.set('Cache-Control', VERSION_CACHE)
+  res.json({ v })
 }))
 
 // GET /api/topics?subject=fizika

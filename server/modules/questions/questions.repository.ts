@@ -1,6 +1,7 @@
 import { and, asc, eq, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { questions, topics, questionExplanations } from '../../schema'
+import { invalidateBankVersions } from './bank-version'
 
 // In-memory TTL cache — questions/topics change rarely (manual seed only),
 // so there's no need to hit the DB on every request.
@@ -58,11 +59,20 @@ export const questionsRepository = {
     })
   },
 
-  /** Readiness check — question pool loaded va non-empty */
+  /** Readiness check — question pool loaded va non-empty.
+   *  EGRESS (2026-09-21 Neon overage): ilgari findAll('traffic_rules_db') —
+   *  BUTUN bankni (~1-1.5MB) tortardi, /api/ready esa har TestPage mount'ida +
+   *  har 4 daqiqalik keep-alive'da uriladi (har sovuq lambda + TTL expiry).
+   *  Endi 1-qatorlik arzon probe (~100 bayt). Cache'siz — readiness SOF bo'lishi
+   *  kerak (aks holda DB o'lganda ham keshdan "ready" qaytardi). */
   async isPoolReady(): Promise<boolean> {
     try {
-      const pool = await questionsRepository.findAll('traffic_rules_db')
-      return pool.length > 0
+      const rows = await db
+        .select({ one: sql<number>`1` })
+        .from(questions)
+        .where(eq(questions.bankId, 'traffic_rules_db'))
+        .limit(1)
+      return rows.length > 0
     } catch (err) {
       console.error('[questions] Pool readiness check failed:', err)
       return false
@@ -98,9 +108,12 @@ export const questionsRepository = {
   },
 
   /** Admin CRUD'dan keyin cache'ni tozalash — aks holda 5 daqiqagacha
-      eski savollar qaytadi (TTL 300s) */
+      eski savollar qaytadi (TTL 300s). Bank versiyasi keshi ham tozalanadi —
+      aks holda client persist-keshi eski versiyani "to'g'ri" deb 30 daqiqagacha
+      yangi kontentni tortmas edi. */
   invalidateCache() {
     cache.clear()
+    invalidateBankVersions()
   },
 
   /** Statik tushuntirish (free foydalanuvchilar uchun AI Tutor o'rniga) — yo'q bo'lsa null */

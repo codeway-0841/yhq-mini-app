@@ -17,7 +17,6 @@ import { requireAdmin } from '../../middleware/admin'
 import { questionsRepository } from '../questions/questions.repository'
 import { adminRepository } from './admin.repository'
 import { authRepository } from '../auth/auth.repository'
-import { reloadOctagonPools } from '../../octagon'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
 
 const router = Router()
@@ -98,12 +97,14 @@ router.post('/admin/questions', validate({ body: QuestionUpsert }), wrap(async (
     }
   }
   questionsRepository.invalidateCache()
-  // Octagon PvP pool staleness himoyasi (o'zgargan/o'chgan savol eski ko'rinishda qolmasin);
-  // xatolik savol saqlanishini BEKOR QILMAYDI — savol allaqachon bazada.
-  // AWAIT YO'Q (2026-09-08): reload BARCHA banklarni to'liq o'qiydi (math_db 11k+ qo'shilgach
-  // ~21k row / Neon) — await admin mutatsiyani 15s+ gacha sekinlashtirardi (integration timeout).
-  // HTTP API Vercel'da, duel pool'lari Render WS xotirasida — bu reload baribir best-effort.
-  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  // EGRESS (2026-09-21 Neon overage): reloadOctagonPools() bu yerdan OLIB TASHLANDI.
+  // U FAQAT joriy jarayon xotirasini yangilaydi — duel pool'lari esa ALOHIDA
+  // Render WS jarayonida yashaydi (server/index.ts boot'da yuklanadi). Vercel
+  // lambda'dagi reload duel'larga hech qachon yetib bormasdi, lekin har admin
+  // mutatsiyada 11 bankni (~21k qator, 40-60MB) Neon'dan bekorga tortardi.
+  // Render pool'lari avvalgidek deploy/restart'da yangilanadi (xatti-harakat
+  // o'zgarmadi); bu yerda esa invalidateCache() keyingi /questions so'rovini
+  // yangi ma'lumot bilan to'ldiradi.
   res.status(201).json({ id: insertedId, created: true })
 }))
 
@@ -149,7 +150,7 @@ router.post('/admin/questions/bulk-import', validate({ body: BulkImportSchema })
   await adminRepository.bulkInsertQuestions(recordsToInsert)
 
   questionsRepository.invalidateCache()
-  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  // reloadOctagonPools() YO'Q — yuqoridagi izohga qarang (EGRESS 2026-09-21).
 
   // Audit: kim qancha savol import qildi (savol matni/javoblar log'ga YOZILMAYDI)
   const importUserId = (req as { userId?: string }).userId
@@ -183,7 +184,7 @@ const handleQuestionUpdate = wrap(async (req, res) => {
 
   if (!updated) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
-  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  // reloadOctagonPools() YO'Q — yuqoridagi izohga qarang (EGRESS 2026-09-21).
   res.json({ id, updated: true })
 })
 
@@ -200,7 +201,7 @@ router.delete('/admin/questions/:id', wrap(async (req, res) => {
 
   if (!deleted) throw new AppError(404, 'Savol topilmadi')
   questionsRepository.invalidateCache()
-  void reloadOctagonPools().catch((err) => console.error('[admin] octagon pool reload xatosi:', err))
+  // reloadOctagonPools() YO'Q — yuqoridagi izohga qarang (EGRESS 2026-09-21).
 
   // Audit: kim qaysi savolni o'chirdi
   const deleteUserId = (req as { userId?: string }).userId

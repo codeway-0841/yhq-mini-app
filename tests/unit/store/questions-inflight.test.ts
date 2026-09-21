@@ -11,6 +11,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 
 const getQuestions = vi.fn()
 const getTopics    = vi.fn()
+const getQuestionsVersion = vi.fn()
 
 vi.mock('../../../src/shared/api', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../../../src/shared/api')>()
@@ -19,6 +20,7 @@ vi.mock('../../../src/shared/api', async (importOriginal) => {
     api: {
       getQuestions: (...args: unknown[]) => getQuestions(...args),
       getTopics:    (...args: unknown[]) => getTopics(...args),
+      getQuestionsVersion: (...args: unknown[]) => getQuestionsVersion(...args),
     },
   }
 })
@@ -57,6 +59,10 @@ beforeEach(() => {
   lsStore.clear()
   getQuestions.mockReset()
   getTopics.mockReset()
+  getQuestionsVersion.mockReset()
+  // jsdom'da indexedDB yo'q → readBankCache null qaytaradi (kesh-miss),
+  // writeBankCache no-op — persist kesh bu testlarda eski yo'lga shaffof.
+  getQuestionsVersion.mockResolvedValue({ v: 'v1' })
   useQuestionsStore.setState({ questions: [], topics: [], loaded: false, loading: false, error: null, failedKey: null, subjectId: 'yhq', lang: 'uz' })
 })
 
@@ -68,6 +74,11 @@ describe('useQuestionsStore.load() in-flight dedupe', () => {
 
     const a = useQuestionsStore.getState().load('uz', 'yhq')
     const b = useQuestionsStore.getState().load('uz', 'yhq')   // hali uchmoqda
+
+    // Persist-kesh (2026-09-21): load() endi fetch'dan OLDIN readBankCache +
+    // versiya so'rovini await qiladi — getQuestions bir necha microtask'dan
+    // KEYIN chaqiriladi (avval sinxron edi). setTimeout(0) microtask'lami flush qiladi.
+    await new Promise((r) => setTimeout(r, 0))
 
     expect(getQuestions).toHaveBeenCalledTimes(1)
     expect(getTopics).toHaveBeenCalledTimes(1)

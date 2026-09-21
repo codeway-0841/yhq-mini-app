@@ -16,6 +16,16 @@ export interface CreateOrUpdateUserInput {
   photoUrl:  string | null
 }
 
+/**
+ * findById qator tipi — `avatar_webp` blob'ISIZ + boolean flag.
+ * EGRESS (2026-09-21 Neon overage): ilgari SELECT * edi — boot-path'dagi HAR
+ * so'rov (/init ×2, /profile, /auth/me, phone polling) ≤100KB'lik avatar data
+ * URL'ini Neon→server simiga tashlardi, JSON esa faqat null-emasligini
+ * ishlatardi (toApiUser). Endi simda faqat 1 baytlik flag yuradi.
+ * Blob kerak bo'lsa — getAvatarWebp() (faqat GET /api/avatar/:userId).
+ */
+export type SlimUserRow = Omit<typeof users.$inferSelect, 'avatarWebp'> & { hasAvatar: boolean }
+
 export const referralsRepository = {
   /**
    * Yangi referal QAYDI + Referrer mukofoti (+1 kun premium).
@@ -214,8 +224,35 @@ export const usersRepository = {
     return row!
   },
 
-  async findById(id: string, txOrDb: DB = db): Promise<typeof users.$inferSelect | null> {
-    const [user] = await txOrDb.select().from(users).where(eq(users.id, id))
+  /**
+   * User qatori — avatar_webp blob'ISIZ (SlimUserRow izohiga qarang).
+   * Yagona istisno: avatar BLOB'ining o'zi kerak bo'lsa getAvatarWebp().
+   */
+  async findById(id: string, txOrDb: DB = db): Promise<SlimUserRow | null> {
+    const [user] = await txOrDb.select({
+      id:                   users.id,
+      firstName:            users.firstName,
+      lastName:             users.lastName,
+      username:             users.username,
+      photoUrl:             users.photoUrl,
+      phone:                users.phone,
+      email:                users.email,
+      emailVerifiedAt:      users.emailVerifiedAt,
+      smsOptIn:             users.smsOptIn,
+      smsOptedInAt:         users.smsOptedInAt,
+      tariff:               users.tariff,
+      premiumUntil:         users.premiumUntil,
+      trialGrantedAt:       users.trialGrantedAt,
+      isAdmin:              users.isAdmin,
+      avatarFrame:          users.avatarFrame,
+      hasAvatar:            sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
+      failedLoginAttempts:  users.failedLoginAttempts,
+      lockedUntil:          users.lockedUntil,
+      lastLoginAt:          users.lastLoginAt,
+      lastPasswordChangeAt: users.lastPasswordChangeAt,
+      createdAt:            users.createdAt,
+      updatedAt:            users.updatedAt,
+    }).from(users).where(eq(users.id, id))
     return user ?? null
   },
 

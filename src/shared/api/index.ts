@@ -13,8 +13,14 @@ import type {
   AiCourseGrading,
   AiCourseKnowledgeCard,
   AiCourseLessonPublic,
+  AiCoursePayload,
   AiCoursePayloadPublic,
 } from '../../../shared/ai-courses'
+import type {
+  GoldenCourseRequest,
+  GoldenCourseRun,
+  GoldenCourseStepId,
+} from '../../../shared/golden-course'
 import type {
   CreateTestSessionInput,
   SessionPositionProofInput,
@@ -137,6 +143,46 @@ async function request<T>(
     throw new ApiError(res.status, `${method} ${path} → ${res.status}: ${text}`, typeof code === 'string' ? code : undefined)
   }
   if (res.status === 204) return undefined as T
+  return res.json() as Promise<T>
+}
+
+/**
+ * PUBLIC kontent GET'lari (/questions, /topics, /ticket-catalog) — auth header
+ * ATAYLAB yuborilmaydi.
+ *
+ * EGRESS TEJASH (2026-09-21 Neon overage: 6.38GB / 5GB limit): Vercel edge
+ * cache Authorization header'li GET'larni serve QILMAYDI — login bo'lgan
+ * userlarning har full-bank fetch'i (5-13MB) origin → Neon'ga borardi.
+ * Headersiz GET esa CDN'dan keladi (questions.router CONTENT_CACHE s-maxage=3600)
+ * → Neon faqat CDN-miss'da ishlaydi. Qo'shimcha bonus: APK'da CORS preflight
+ * ham yo'q (simple request). 401-retry mantiq'i shart emas — endpoint'lar public.
+ * DIQQAT: bu funksiyani user'ga bog'liq endpoint'ga ISHLATMAng (explanation
+ * post-answer gate'li — unga credential KERAK).
+ */
+async function requestPublic<T>(path: string, timeoutMs = TIMEOUT_MS): Promise<T> {
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), timeoutMs)
+  let res: Response
+  try {
+    res = await fetch(`${config.apiBaseUrl}${path}`, { signal: controller.signal })
+  } catch (err) {
+    if (controller.signal.aborted) {
+      throw new ApiError(
+        408,
+        `So'rov vaqti tugadi (${Math.round(timeoutMs / 1000)} soniya). Iltimos, qayta urinib ko'ring.`,
+        'timeout'
+      )
+    }
+    throw err
+  } finally {
+    clearTimeout(timer)
+  }
+  if (!res.ok) {
+    const text = await res.text().catch(() => res.statusText)
+    let code: string | undefined
+    try { code = (JSON.parse(text) as { error?: unknown }).error as string | undefined } catch { /* text javob */ }
+    throw new ApiError(res.status, `GET ${path} → ${res.status}: ${text}`, typeof code === 'string' ? code : undefined)
+  }
   return res.json() as Promise<T>
 }
 
@@ -609,6 +655,16 @@ export const api = {
   sendShareImage: (payload: { imageBase64: string; caption: string; fileName?: string }) =>
     request<{ ok: boolean; sentToTelegram: boolean; message?: string }>('POST', '/share/image', payload),
 
+  /** Bank kontent versiyasi (~40 bayt, CDN 60s) — persist-kesh bilan solishtirish
+   *  uchun (EGRESS "A" bosqich): versiya bir xil bo'lsa bank QAYTA TORTILMAYDI.
+   *  requestPublic — auth header'siz, CDN serve qiladi. */
+  getQuestionsVersion: (subject?: string) => {
+    const params = new URLSearchParams()
+    if (subject) params.set('subject', subject)
+    const qs = params.toString()
+    return requestPublic<{ v: string }>(`/questions/version${qs ? `?${qs}` : ''}`, 8_000)
+  },
+
   getQuestions: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)
@@ -619,7 +675,8 @@ export const api = {
     // (2026-09 prod: adabiyot 13.5MB, onatili 9.3MB, fizika 5.7MB; hatta
     // matematika CDN'dan datacenter'ga 10.6s'da keldi) — mobil Telegram WebView'da
     // default 8s'ga sig'may "Savollarni yuklab bo'lmadi"ga tushardi.
-    return request<DbQuestion[]>('GET', `/questions${qs ? `?${qs}` : ''}`, undefined, 20_000)
+    // requestPublic — auth header'siz: Vercel CDN serve qiladi (EGRESS 2026-09-21).
+    return requestPublic<DbQuestion[]>(`/questions${qs ? `?${qs}` : ''}`, 20_000)
   },
   getExplanation: (questionId: number, lang: 'uz' | 'ru' = 'uz') =>
     request<{ questionId: number; text: string }>('GET', `/questions/${encodeURIComponent(questionId)}/explanation?lang=${lang}`),
@@ -631,13 +688,14 @@ export const api = {
     const qs = params.toString()
     // 20s — getQuestions bilan bir Promise.all'da tortiladi; CDN-miss + Vercel/Neon
     // cold start'da 8s'ga sig'may juft so'rovdan bittasi tushsa butun load yiqiladi.
-    return request<DbTopic[]>('GET', `/topics${qs ? `?${qs}` : ''}`, undefined, 20_000)
+    // requestPublic — auth header'siz: Vercel CDN serve qiladi (EGRESS 2026-09-21).
+    return requestPublic<DbTopic[]>(`/topics${qs ? `?${qs}` : ''}`, 20_000)
   },
 
-  /** Bilet katalogi (v2) — faqat sonlar, savol kontenti YO'Q (public CDN). */
+  /** Bilet katalogi (v2) — faqat sonlar, savol kontenti YO'Q (public CDN).
+   *  requestPublic — auth header'siz: CDN serve qiladi (EGRESS 2026-09-21). */
   getTicketCatalog: (subjectId: string, language: 'uz' | 'ru' = 'uz') =>
-    request<{ subjectId: string; ticketSize: number; ticketCount: number; totalQuestions: number }>(
-      'GET',
+    requestPublic<{ subjectId: string; ticketSize: number; ticketCount: number; totalQuestions: number }>(
       `/ticket-catalog?subject=${encodeURIComponent(subjectId)}&language=${encodeURIComponent(language)}`,
     ),
 
@@ -851,6 +909,10 @@ export const api = {
       }
     }>('GET', `/ai-courses/${courseId}`),
 
+  /** Kursni o'chirish (faqat egasi; 404 COURSE_NOT_FOUND) */
+  deleteAiCourse: (courseId: number) =>
+    request<{ ok: true }>('DELETE', `/ai-courses/${courseId}`),
+
   /** Darsni yakunlash — idempotent (clientToken); javob: grading + knowledge cards */
   completeAiCourseLesson: (
     courseId: number, lessonId: string,
@@ -861,6 +923,42 @@ export const api = {
       coinsAwarded: number; balance?: number
       knowledgeCards?: AiCourseKnowledgeCard[]; lesson?: AiCourseLessonPublic
     }>('POST', `/ai-courses/${courseId}/lessons/${encodeURIComponent(lessonId)}/complete`, data, 20_000),
+
+  /** Golden Course Pipeline — 7-step autonomous flagship run */
+  runGoldenCoursePipeline: (data: GoldenCourseRequest) =>
+    request<{ ok: true; run: GoldenCourseRun; payload: AiCoursePayload }>(
+      'POST',
+      '/ai-courses/golden-run',
+      data,
+      90_000,
+    ),
+
+  /** Golden Course Pipeline — single-step update/regeneration */
+  updateGoldenCourseStep: (data: {
+    request: GoldenCourseRequest
+    run: GoldenCourseRun
+    stepId: GoldenCourseStepId
+    instruction: string
+  }) =>
+    request<{ ok: true; run: GoldenCourseRun }>(
+      'POST',
+      '/ai-courses/golden-update',
+      data,
+      90_000,
+    ),
+
+  /** Golden Course Pipeline — publish run into interactive Kivvi course */
+  publishGoldenCourse: (run: GoldenCourseRun) =>
+    request<{
+      ok: true
+      course: {
+        id: number
+        title: string
+        topic: string
+        inputKind: string
+        createdAt: string
+      }
+    }>('POST', '/ai-courses/golden-publish', { run }, 30_000),
 
   // ── AI Tutor (Snap & Solve + Socratic Tutor) ────────────────────────────
   /** Rasmdan masalani yechish (Multimodal Vision AI) */
@@ -885,6 +983,19 @@ export const api = {
   /** Grafik rasmini AI (Gemini Vision) tahlil qiladi — matnli javob (LaTeX) */
   analyzeGraph: (data: { image: string; language?: 'uz' | 'ru'; context?: string }) =>
     request<{ ok: true; analysis: string }>('POST', '/tutor/graph-analyze', data, 65_000),
+
+  // ── Matematik doska (Faza 4: qo'lyozma recognition proxy) ─────────────
+  /** Doskadagi qo'lyozmani LaTeX'ga o'girish (server Gemini proxy, 65s timeout) */
+  recognizeHandwriting: (data: { image: string; mimeType?: 'image/jpeg' | 'image/png' | 'image/webp'; category?: string; language?: 'uz' | 'ru' }) =>
+    request<{ ok: true; latex: string; alternatives: string[]; confidence: number }>('POST', '/math-board/recognize', data, 65_000),
+
+  /** Sokratik hint savoli (server Gemini proxy, lokal hint'dan keyin) */
+  getBoardHint: (data: { problemId: string; promptLatex: string; assumptions: string[]; acceptedSteps: string[]; candidateStep: string; checkStatus: string; checkDetail: string; knownBlockIds: string[]; language?: 'uz' | 'ru' }) =>
+    request<{ ok: true; question: string; highlightBlockId?: string }>('POST', '/math-board/hint', data, 30_000),
+
+  /** Blokli recognition (Faza 4: segmentlangan doska, bitta Gemini chaqiruvi) */
+  recognizeBlocks: (data: { blocks: { blockId: string; image: string; mimeType?: 'image/jpeg' | 'image/png' | 'image/webp' }[]; category?: string; language?: 'uz' | 'ru' }) =>
+    request<{ ok: true; results: { blockId: string; type: 'equation' | 'text'; latex: string; confidence: number; alternatives: string[] }[] }>('POST', '/math-board/recognize-blocks', data, 90_000),
 
   // ── Merch (#40 Faza 3) ─────────────────────────────────────────────────
   getMerchCatalog: () =>

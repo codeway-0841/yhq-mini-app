@@ -209,8 +209,12 @@ router.get(
     const buf = Buffer.from(dataUrl.slice(dataUrl.indexOf(',') + 1), 'base64')
     res.set({
       'Content-Type': `image/${match[1]}`,
-      // Qayta yuklangach ~10 daqiqagacha eski kesh ko'rinishi mumkin
-      'Cache-Control': 'public, max-age=600',
+      // EGRESS (2026-09-21): s-maxage qo'shildi — ilgari faqat browser keshi
+      // bor edi, har tomoshabin Neon'dan ≤100KB blob tortardi (leaderboard'da
+      // 50 tagacha <img>/view). Endi edge 1 soat yutadi + SWR. Avatar almashtirilgach
+      // uploader LOKAL state'da darhol yangisini ko'radi; boshqalarga ≤1 soat
+      // eski ko'rinishi mumkin (qabul qilinadigan trade-off).
+      'Cache-Control': 'public, max-age=600, s-maxage=3600, stale-while-revalidate=86400',
     })
     res.send(buf)
   }),

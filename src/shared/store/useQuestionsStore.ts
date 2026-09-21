@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 import { api, dbToQuestion, DbQuestion, DbTopic, Question } from '../api'
 import { useSubjectStore } from './useSubjectStore'
+import { readBankCache, writeBankCache } from '../lib/question-bank-cache'
 
 interface QuestionsState {
   questions: Question[]
@@ -114,10 +115,32 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     set({ loading: true, error: null })
     const run = (async () => {
       try {
+        // A: PERSIST KESH (EGRESS 2026-09-21) — server versiyasi bir xil bo'lsa
+        // bankni QAYTA TORTMAYMIZ (IndexedDB'dan o'qiymiz, tarmoqda faqat ~40
+        // baytlik versiya so'rovi). Versiya so'rovi yiqilsa (offline) kesh bor
+        // bo'lsa shu bilan yashaymiz, bo'lmasa avvalgidek to'liq fetch.
+        const [cachedBank, serverV] = await Promise.all([
+          // Modul o'zi throw qilmaydi, lekin qo'shimcha himoya — kesh xatosi
+          // HECH QACHON bank yuklashni to'xtatmasligi kerak (kesh = ixtiyoriy).
+          readBankCache(sid).catch(() => null),
+          api.getQuestionsVersion(sid).then((r) => r.v).catch(() => null),
+        ])
+        if (version !== loadVersion) return
+
+        if (cachedBank && (serverV === null || cachedBank.v === serverV)) {
+          rawQuestions = cachedBank.raw
+          writeCount(sid, cachedBank.raw.length)
+          set({ questions: cachedBank.raw.map((q) => dbToQuestion(q, lang)), topics: cachedBank.topics, loaded: true, lang, subjectId: sid, failedKey: null, error: null })
+          return
+        }
+
         const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
         if (version !== loadVersion) return
         rawQuestions = raw
         writeCount(sid, raw.length)
+        // Versiya ma'lum bo'lsagina keshlaymiz — noma'lum versiyali kesh keyingi
+        // launch'da "o'zgargan" deb qayta tortilishga olib kelardi.
+        if (serverV) void writeBankCache({ subjectId: sid, v: serverV, raw, topics })
         set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid, failedKey: null })
       } catch (e) {
         if (version === loadVersion) {
@@ -158,12 +181,15 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
     // CDN/browser javobini chetlab o'tish uchun
     set({ loading: true, error: null })
     try {
-      const [raw, topics] = await Promise.all([
+      const [raw, topics, serverV] = await Promise.all([
         api.getQuestions(subjectId, true),
         api.getTopics(subjectId, true),
+        api.getQuestionsVersion(subjectId).then((r) => r.v).catch(() => null),
       ])
       rawQuestions = raw
       writeCount(subjectId, raw.length)
+      // Yangi kontent + yangi versiya — persist keshni ham yangilab qo'yamiz
+      if (serverV) void writeBankCache({ subjectId, v: serverV, raw, topics })
       set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId, failedKey: null })
     } catch (e) {
       set({ error: e instanceof Error ? e.message : 'Failed to reload questions' })
