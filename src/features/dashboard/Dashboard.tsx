@@ -1,15 +1,12 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
-import { Button } from '../../shared/components/ui/button'
 import { Alert, AlertDescription } from '../../shared/components/ui/alert'
-import { track } from '../../shared/lib/analytics'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
 import SubjectSheet from '../../shared/components/SubjectSheet'
 import SettingsModal from '../../shared/components/SettingsModal'
@@ -146,18 +143,6 @@ export default function Dashboard() {
           </div>
 
           </details>
-
-          {/* 8. Premium Banner */}
-          <div className="mx-4 mb-4 mt-4 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 shadow-xs">
-            <PremiumIcon size={22} className="shrink-0 text-pmuted" />
-            <div className="min-w-0 flex-1">
-              <p className="text-[13.5px] font-semibold text-pfg">Premium</p>
-              <p className="mt-0.5 text-[13px] leading-relaxed text-pmuted">{tt('premiumTagline')}</p>
-            </div>
-            <Button size="sm" onClick={() => { track('premium_click'); navigate('/premium') }}>
-              {tt('tryWord')}
-            </Button>
-          </div>
 
           {/* Promo banner */}
           {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}
