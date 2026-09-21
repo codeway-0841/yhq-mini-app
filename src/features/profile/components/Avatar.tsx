@@ -54,10 +54,10 @@ export function Avatar({
 
   /** Avatar ustidagi kichik amal tugmasi (vizual kichik, hit-area 44px+ — before overlay) */
   const editBtn = cn(
-    'absolute grid place-items-center rounded-full border-[2px] border-pcanvas transition-transform duration-150 ease-out active:scale-90',
-    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
-    'before:absolute before:-inset-3 before:content-[""]',
-    size === 'lg' ? 'size-7' : 'size-6',
+    'absolute z-10 grid place-items-center rounded-full border-[2px] border-pcard transition-transform duration-150 ease-out active:scale-90',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcard',
+    'before:absolute before:-inset-2 before:content-[""]',
+    size === 'lg' ? 'size-7 bottom-0 right-0' : size === 'sm' ? 'size-5 bottom-0 right-0' : 'size-[22px] bottom-0 right-0',
   )
 
   return (
@@ -89,9 +89,9 @@ export function Avatar({
             onEditPhoto()
           }}
           aria-label="Rasmni o'zgartirish"
-          className={cn(editBtn, '-bottom-0.5 -right-0.5 bg-pprimary text-ponprimary shadow-sm')}
+          className={cn(editBtn, 'bg-pprimary text-ponprimary shadow-xs')}
         >
-          <Camera size={size === 'lg' ? 12 : 11} strokeWidth={1.75} />
+          <Camera size={size === 'lg' ? 13 : size === 'sm' ? 10 : 11} strokeWidth={2} />
         </button>
       )}
     </div>
