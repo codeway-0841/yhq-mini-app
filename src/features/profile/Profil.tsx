@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useSyncExternalStore } from 'react'
+import { useState, useEffect, useRef, useSyncExternalStore, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { config } from '../../shared/config'
@@ -171,6 +171,17 @@ export default function Profil() {
     if (window.confirm(tt('resetProgressConfirm'))) resetProgress()
   }
 
+  const isPremiumUser = tariff === 'premium' || Boolean(user?.premiumUntil)
+  const premiumStatusText = useMemo(() => {
+    if (!isPremiumUser) return tt('upgradeHint')
+    if (user?.premiumUntil) {
+      const days = Math.max(0, Math.ceil((new Date(user.premiumUntil).getTime() - Date.now()) / (24 * 60 * 60 * 1000)))
+      if (days === 0) return settings.language === 'ru' ? 'Заканчивается сегодня' : 'Bugun tugaydi'
+      return settings.language === 'ru' ? `Активна · осталось ${days} дн.` : `Faol · ${days} kun qoldi`
+    }
+    return settings.language === 'ru' ? 'Активна · Навсегда' : 'Faol · Umrbod'
+  }, [isPremiumUser, user?.premiumUntil, settings.language, tt])
+
   return (
     <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
       <PageHeader title={tt('profile')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
@@ -240,23 +251,33 @@ export default function Profil() {
         <div className="px-4 py-3.5 flex items-center gap-3.5">
           <PremiumIcon size={22} className="shrink-0 text-pmuted" />
           <div className="min-w-0 flex-1">
-            <p className="text-[14.5px] font-semibold text-pfg">{tariff === 'free' ? tt('freeTariff') : tt('premiumTariff')}</p>
+            <div className="flex items-center gap-1.5">
+              <p className="text-[14.5px] font-semibold text-pfg">
+                {isPremiumUser ? tt('premiumTariff') : tt('freeTariff')}
+              </p>
+              {isPremiumUser && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-success-rgb)/0.12)] px-2 py-0.5 text-[10.5px] font-semibold text-psuccess">
+                  <Check size={11} strokeWidth={2.5} />
+                  {settings.language === 'ru' ? 'Активен' : 'Faol'}
+                </span>
+              )}
+            </div>
             <p className="mt-0.5 text-[11px] leading-tight text-pmuted">
-              {tariff === 'free' ? tt('upgradeHint') : tt('premiumHint')}
+              {premiumStatusText}
             </p>
           </div>
-          {tariff === 'free' && (
-            <Button
-              size="sm"
-              className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
-              onClick={() => {
-                haptics.impact('light')
-                setShowSubscriptionModal(true)
-              }}
-            >
-              {tt('subscribe')}
-            </Button>
-          )}
+          <Button
+            size="sm"
+            className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+            onClick={() => {
+              haptics.impact('light')
+              setShowSubscriptionModal(true)
+            }}
+          >
+            {isPremiumUser
+              ? (settings.language === 'ru' ? 'Тарифы' : 'Tariflar')
+              : tt('subscribe')}
+          </Button>
         </div>
 
         {/* Phone */}

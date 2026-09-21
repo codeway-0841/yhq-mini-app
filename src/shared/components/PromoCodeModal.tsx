@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, Ticket, Sparkles, CheckCircle2, AlertCircle } from 'lucide-react'
+import { X, Sparkles, AlertCircle } from 'lucide-react'
 import { useT } from '../i18n'
 import type { Lang } from '../i18n'
 import { api, ApiError } from '../api'
@@ -70,9 +70,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
       <div className="relative w-full max-w-sm rounded-2xl bg-pcard p-6 shadow-2xl overflow-hidden">
-        {/* Glow accent */}
-        <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-[rgb(var(--p-purple-rgb)/0.20)] rounded-full blur-2xl pointer-events-none" />
-
         <button
           onClick={onClose}
           aria-label={tt('cancelExit')}
@@ -83,10 +80,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
 
         {successData ? (
           <div className="text-center py-4">
-            <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center mx-auto mb-4 text-pprimary animate-bounce">
-              <CheckCircle2 size={36} />
-            </div>
-
             <h3 className="text-lg font-semibold text-pfg mb-2">
               {tt('promoCodeSuccessTitle')}
             </h3>
@@ -103,10 +96,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         ) : (
           <div>
-            <div className="w-12 h-12 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center mx-auto mb-3 text-ppurple">
-              <Ticket size={24} />
-            </div>
-
             <h3 id="promo-code-title" className="text-base font-semibold text-pfg text-center mb-1">
               {tt('promoCodeTitle')}
             </h3>
