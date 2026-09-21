@@ -245,6 +245,7 @@ export const usersRepository = {
       trialGrantedAt:       users.trialGrantedAt,
       isAdmin:              users.isAdmin,
       avatarFrame:          users.avatarFrame,
+      avatarKey:            users.avatarKey,
       hasAvatar:            sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,
       failedLoginAttempts:  users.failedLoginAttempts,
       lockedUntil:          users.lockedUntil,
@@ -268,16 +269,30 @@ export const usersRepository = {
     return rows.length > 0
   },
 
-  /** Qo'lda yuklangan avatar (WebP data URL) — blok yozish; null → o'chirish. */
-  async setAvatarWebp(userId: string, dataUrl: string | null): Promise<boolean> {
+  /** Qo'lda yuklangan avatar (Cloudflare CDN URL yoki legacy data URL) — r2 key bilan */
+  async setAvatar(userId: string, avatarUrl: string | null, avatarKey: string | null = null): Promise<{ oldAvatarKey?: string | null } | null> {
+    const [existing] = await db
+      .select({ avatarKey: users.avatarKey })
+      .from(users)
+      .where(eq(users.id, userId))
+
+    if (!existing) return null
+
     const rows = await db.update(users)
-      .set({ avatarWebp: dataUrl, updatedAt: new Date() })
+      .set({ avatarWebp: avatarUrl, avatarKey: avatarKey, updatedAt: new Date() })
       .where(eq(users.id, userId))
       .returning({ id: users.id })
-    return rows.length > 0
+
+    return rows.length > 0 ? { oldAvatarKey: existing.avatarKey } : null
   },
 
-  /** Global avatar (GET /api/avatar/:userId) — data URL yoki null. */
+  /** Qo'lda yuklangan avatar (WebP data URL yoki CDN URL) — backward-compatible wrapper */
+  async setAvatarWebp(userId: string, dataUrl: string | null): Promise<boolean> {
+    const res = await this.setAvatar(userId, dataUrl, null)
+    return res !== null
+  },
+
+  /** Global avatar (GET /api/avatar/:userId) — CDN URL, data URL yoki null. */
   async getAvatarWebp(userId: string): Promise<string | null> {
     const [row] = await db
       .select({ avatarWebp: users.avatarWebp })

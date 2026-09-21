@@ -175,8 +175,8 @@ router.put(
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
     const { image } = req.body as z.infer<typeof AvatarUploadSchema>
-    await usersService.updateAvatar(uid, image)
-    res.json({ ok: true })
+    const result = await usersService.updateAvatar(uid, image)
+    res.json({ ok: true, ...result })
   }),
 )
 
@@ -194,26 +194,35 @@ router.delete(
 )
 
 // GET /api/avatar/:userId — GLOBAL o'qish (leaderboard/duel). PUBLIC_GET'da —
-// <img> tag auth header yubora olmaydi; avatar ma'lumoti user O'ZI public
-// ko'rsatish uchun yuklagan (PII emas). Binary image/webp, CDN-keshlanadi.
+// Cloudflare CDN URL mavjud bo'lsa 307 redirect beradi; legacy base64 bo'lsa binary qaytaradi.
 router.get(
   '/avatar/:userId',
   wrap(async (req, res) => {
     const uid = parseUserId(req.params['userId'])
     if (!uid) throw new AppError(400, 'Invalid userId')
-    const dataUrl = await usersService.getAvatar(uid)
-    const match = dataUrl ? AVATAR_DATA_URL_RE.exec(dataUrl) : null
-    if (!dataUrl || !match) {
+    const avatar = await usersService.getAvatar(uid)
+    if (!avatar) {
       throw new AppError(404, 'Avatar not found')
     }
-    const buf = Buffer.from(dataUrl.slice(dataUrl.indexOf(',') + 1), 'base64')
+
+    // Cloudflare CDN URL (307 redirect — CDN keshi to'g'ridan-to'g'ri ishlaydi)
+    if (avatar.startsWith('http://') || avatar.startsWith('https://')) {
+      res.set({
+        'Location': avatar,
+        'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800',
+      })
+      res.status(307).end()
+      return
+    }
+
+    // Legacy base64 data URL
+    const match = AVATAR_DATA_URL_RE.exec(avatar)
+    if (!match) {
+      throw new AppError(404, 'Avatar not found')
+    }
+    const buf = Buffer.from(avatar.slice(avatar.indexOf(',') + 1), 'base64')
     res.set({
       'Content-Type': `image/${match[1]}`,
-      // EGRESS (2026-09-21): s-maxage qo'shildi — ilgari faqat browser keshi
-      // bor edi, har tomoshabin Neon'dan ≤100KB blob tortardi (leaderboard'da
-      // 50 tagacha <img>/view). Endi edge 1 soat yutadi + SWR. Avatar almashtirilgach
-      // uploader LOKAL state'da darhol yangisini ko'radi; boshqalarga ≤1 soat
-      // eski ko'rinishi mumkin (qabul qilinadigan trade-off).
       'Cache-Control': 'public, max-age=600, s-maxage=3600, stale-while-revalidate=86400',
     })
     res.send(buf)

@@ -43,8 +43,10 @@ import aiTestsRouter      from './modules/ai-tests/ai-tests.router'
 import aiCoursesRouter    from './modules/ai-courses/ai-courses.router'
 import testSessionsRouter from './modules/test-sessions/test-sessions.router'
 import certificateRouter  from './modules/certificate/certificate.router'
+import storageRouter      from './modules/storage/storage.router'
 import shareRouter        from './modules/share/share.router'
 import graphsRouter       from './modules/graphs/graphs.router'
+import mathBoardRouter    from './modules/math-board/math-board.router'
 import { paymentRouter }  from './modules/payments/payment.router'
 
 export function createApp() {
@@ -79,6 +81,10 @@ export function createApp() {
   app.use('/api/tutor/solve-photo', express.json({ limit: '6mb' }))
   // AI Tutor grafik tahlili — canvas PNG base64 (grafik quruvchi)
   app.use('/api/tutor/graph-analyze', express.json({ limit: '6mb' }))
+  // Matematik doska qo'lyozma snapshot PNG base64 (BoardCanvas, 512px)
+  app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))
+  // Matematik doska blokli recognition (Faza 4: N blok/rasm, 6mb jami)
+  app.use('/api/math-board/recognize-blocks', express.json({ limit: '6mb' }))
   app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
@@ -178,8 +184,10 @@ export function createApp() {
   app.use('/api', aiTestsRouter)
   app.use('/api', aiCoursesRouter)
   app.use('/api', certificateRouter)
+  app.use('/api', storageRouter)
   app.use('/api', shareRouter)
   app.use('/api', graphsRouter)
+  app.use('/api', mathBoardRouter)
   app.use('/api/payments', paymentRouter)
 
   // 404 catch-all for unmatched /api routes

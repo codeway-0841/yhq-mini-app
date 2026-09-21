@@ -37,15 +37,34 @@ describe('usersService.startTrial', () => {
   })
 })
 
+import { storageService } from '../../../server/modules/storage/storage.service'
+
 describe('usersService.updateAvatar', () => {
-  it('repository yozuvi muvaffaqiyatli bo‘lsa jimgina o‘tadi', async () => {
-    const set = vi.spyOn(usersRepository, 'setAvatarWebp').mockResolvedValue(true)
-    await expect(usersService.updateAvatar(USER_ID, 'data:image/webp;base64,AAAA')).resolves.toBeUndefined()
-    expect(set).toHaveBeenCalledWith(USER_ID, 'data:image/webp;base64,AAAA')
+  it('repository yozuvi muvaffaqiyatli bo‘lsa avatarUrl qaytaradi', async () => {
+    vi.spyOn(storageService, 'uploadImage').mockResolvedValue({
+      id: 1,
+      hash: 'h1',
+      type: 'avatar',
+      key: 'images/avatar/h1/256.webp',
+      publicUrl: 'https://cdn.kivvi.uz/images/avatar/h1/256.webp',
+      width: 256,
+      height: 256,
+      sizeBytes: 2000,
+      mime: 'image/webp',
+      variants: {},
+      refCount: 1,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    })
+    const set = vi.spyOn(usersRepository, 'setAvatar').mockResolvedValue({ oldAvatarKey: null })
+    const res = await usersService.updateAvatar(USER_ID, 'data:image/webp;base64,AAAA')
+    expect(res).toEqual({ avatarUrl: 'https://cdn.kivvi.uz/images/avatar/h1/256.webp' })
+    expect(set).toHaveBeenCalledWith(USER_ID, 'https://cdn.kivvi.uz/images/avatar/h1/256.webp', 'images/avatar/h1/256.webp')
   })
 
   it('user yo‘q bo‘lsa 404 tashlaydi', async () => {
-    vi.spyOn(usersRepository, 'setAvatarWebp').mockResolvedValue(false)
+    vi.spyOn(usersRepository, 'findById').mockResolvedValue(null)
+    vi.spyOn(usersRepository, 'setAvatar').mockResolvedValue(null)
     await expect(usersService.updateAvatar(USER_ID, null)).rejects.toMatchObject({ statusCode: 404 })
   })
 })

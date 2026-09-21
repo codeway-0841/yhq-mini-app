@@ -34,6 +34,9 @@ const envSchema = z.object({
 
   /** Integratsiyalar (optional — yo'q bo'lsa feature o'chiq) */
   GEMINI_API_KEY: z.string().optional(),
+  /** Math Board kvota o'chirgichi — TEST uchun 'true' (hammaga bepul).
+   *  Production default: kvota YOQILGAN. Prod'da 'true' bo'lsa boot FATAL. */
+  MATH_BOARD_QUOTA_DISABLED: z.enum(['true', 'false']).optional().default('false'),
   /** Meta Model API (AI Kurslar real generatsiyasi) — yo'q bo'lsa mock fallback */
   META_API_KEY:  z.string().optional(),
   CRON_SECRET:    z.string().optional(),
@@ -91,6 +94,13 @@ const envSchema = z.object({
   /** Telegram VIP Group Chat IDs (bot auto-invite link creation) */
   TG_GROUP_RUSTILI:       z.string().optional(),
   TG_GROUP_YHQ:           z.string().optional(),
+
+  /** Cloudflare R2 Storage (Image Pipeline) */
+  CLOUDFLARE_ACCOUNT_ID:          z.string().optional(),
+  CLOUDFLARE_R2_ACCESS_KEY_ID:     z.string().optional(),
+  CLOUDFLARE_R2_SECRET_ACCESS_KEY: z.string().optional(),
+  CLOUDFLARE_R2_BUCKET:            z.string().optional(),
+  CLOUDFLARE_PUBLIC_URL:           z.string().optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -212,6 +222,8 @@ export const config = {
   /** AI Tutor (Gemini) — yo'q bo'lsa endpoint 503 qaytaradi */
   ai: {
     geminiApiKey: env.GEMINI_API_KEY,
+    /** Math Board kvota — prod default ON; 'true' faqat test/dev uchun */
+    mathBoardQuotaDisabled: env.MATH_BOARD_QUOTA_DISABLED === 'true',
     /** Meta Model API (AI Kurslar) — yo'q bo'lsa deterministik mock outline */
     metaApiKey: env.META_API_KEY,
   },
@@ -286,6 +298,21 @@ export const config = {
 
   sentry: {
     dsn: env.SENTRY_DSN,
+  },
+
+  /** Cloudflare R2 Storage (Image Pipeline) */
+  r2: {
+    accountId: env.CLOUDFLARE_ACCOUNT_ID,
+    accessKeyId: env.CLOUDFLARE_R2_ACCESS_KEY_ID,
+    secretAccessKey: env.CLOUDFLARE_R2_SECRET_ACCESS_KEY,
+    bucket: env.CLOUDFLARE_R2_BUCKET,
+    publicUrl: env.CLOUDFLARE_PUBLIC_URL,
+    isConfigured: Boolean(
+      env.CLOUDFLARE_ACCOUNT_ID &&
+      env.CLOUDFLARE_R2_ACCESS_KEY_ID &&
+      env.CLOUDFLARE_R2_SECRET_ACCESS_KEY &&
+      env.CLOUDFLARE_R2_BUCKET
+    ),
   },
 } as const
 

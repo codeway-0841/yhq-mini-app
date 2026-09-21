@@ -86,6 +86,8 @@ import { authRepository }         from '../auth/auth.repository'
 import { coinsRepository }        from '../coins/coins.repository'
 import { consumeOTPWithLockout }  from '../auth/otp'
 import { AppError }               from '../../middleware/error-handler'
+import { storageService }         from '../storage/storage.service'
+import { parseImagePayload }      from '../storage/storage.router'
 
 // ── Zod schemas (also exported for router-level validation) ────────────────
 
@@ -202,10 +204,38 @@ export const usersService = {
     }
   },
 
-  /** Custom avatar yozish/o'chirish (image=null → remove). Global manba: users.avatar_webp. */
-  async updateAvatar(userId: string, image: string | null): Promise<void> {
-    const ok = await usersRepository.setAvatarWebp(userId, image)
-    if (!ok) throw new AppError(404, 'User not found')
+  /** Custom avatar yozish/o'chirish (image=null → remove). Global manba: Cloudflare R2 + users.avatar_webp/avatar_key. */
+  async updateAvatar(userId: string, image: string | null): Promise<{ avatarUrl: string | null }> {
+    if (!image) {
+      const user = await usersRepository.findById(userId)
+      if (!user) throw new AppError(404, 'User not found')
+      const res = await usersRepository.setAvatar(userId, null, null)
+      if (res?.oldAvatarKey) {
+        await storageService.releaseImage(res.oldAvatarKey)
+      }
+      return { avatarUrl: null }
+    }
+
+    const { buffer, mimeType } = parseImagePayload(image)
+    if (buffer.length === 0) {
+      throw new AppError(400, 'Bo\'sh rasm ma\'lumoti')
+    }
+
+    const stored = await storageService.uploadImage({
+      fileBuffer: buffer,
+      mimeType,
+      type: 'avatar',
+      userId,
+    })
+
+    const res = await usersRepository.setAvatar(userId, stored.publicUrl, stored.key)
+    if (!res) throw new AppError(404, 'User not found')
+
+    if (res.oldAvatarKey && res.oldAvatarKey !== stored.key) {
+      await storageService.releaseImage(res.oldAvatarKey)
+    }
+
+    return { avatarUrl: stored.publicUrl }
   },
 
   /** Global avatar o'qish (GET /api/avatar/:userId) — data URL yoki null. */

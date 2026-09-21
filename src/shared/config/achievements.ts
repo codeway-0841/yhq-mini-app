@@ -7,6 +7,7 @@
 import { CheckCircle2, type LucideIcon } from 'lucide-react'
 import type { AchievementStats } from '../api'
 import type { t as tFunc } from '../i18n'
+import { resolveBadgeUrl } from './cdn'
 
 type TKey = Parameters<typeof tFunc>[1]
 
@@ -70,4 +71,8 @@ export const BADGES = ACHIEVEMENTS.filter((a) => a.category === 'badge')
 
 export function isUnlocked(d: AchievementDef, s: AchievementStats): boolean {
   return d.get(s) >= d.target
+}
+
+export function getBadgeUrl(def: AchievementDef): string | null {
+  return resolveBadgeUrl(def.badgeImage)
 }

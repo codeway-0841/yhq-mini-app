@@ -626,11 +626,29 @@ export const api = {
   getLinkedPhone: (userId: string) =>
     request<{ phone: string | null }>('GET', `/users/${uid(userId)}/phone`),
 
-  /** Custom avatar yuklash (256px WebP/JPEG data URL) — server global manba bo'ladi.
-   *  Timeout 20s: ~100KB'lik body sekin mobil uplink + Vercel/Neon cold start'da
-   *  default 8s'ga sig'may qolardi — user "aloqa xatosi" ko'rardi. */
+  /** Custom avatar yuklash (Cloudflare R2 pipeline) — server global manba bo'ladi.
+   *  Timeout 20s: sekin mobil uplink + cold start'da ishonchli ishlashi uchun. */
   uploadAvatar: (userId: string, image: string) =>
-    request<{ ok: true }>('PUT', `/users/${uid(userId)}/avatar`, { image }, 20_000),
+    request<{ ok: true; avatarUrl?: string }>('PUT', `/users/${uid(userId)}/avatar`, { image }, 20_000),
+
+  /** Umumiy rasm yuklash (Cloudflare R2 pipeline) */
+  uploadImage: (image: string, type: 'avatar' | 'badge' | 'book_cover' | 'test_image' | 'general' = 'general', filename?: string) =>
+    request<{
+      ok: true
+      image: {
+        id: number
+        hash: string
+        type: string
+        key: string
+        publicUrl: string
+        width: number
+        height: number
+        sizeBytes: number
+        mime: string
+        variants: Record<string, { key: string; publicUrl: string; width: number; height: number; sizeBytes: number }>
+        isDuplicate: boolean
+      }
+    }>('POST', '/upload/image', { image, type, filename }, 20_000),
 
   /** Custom avatarni o'chirish (harf/TG avatar fallback'ga qaytish). */
   removeAvatar: (userId: string) =>

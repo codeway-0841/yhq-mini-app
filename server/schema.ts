@@ -46,12 +46,10 @@ export const users = pgTable('users', {
   /** Joriy avatar ramkasi (do'kon buyumi, avatar-frames config id'si).
    *  NULL — ramkasiz. Egalik faqat user_items orqali tekshiriladi (equip guard). */
   avatarFrame: text('avatar_frame'),
-  /** Qo'lda yuklangan avatar — siqilgan 256px WebP (eski WebView'da JPEG fallback)
-   *  data URL (base64, ~10-20KB).
-   *  photo_url'dan ALOHIDA: photo_url har init'da Telegram initData bilan ustiga
-   *  yoziladi; custom avatar SHU YERDA — global ko'rsatish uchun YAGONA manba
-   *  (leaderboard/duel GET /api/users/:id/avatar orqali). NULL — custom avatar yo'q. */
+  /** Qo'lda yuklangan avatar — Cloudflare CDN URL yoki legacy data URL */
   avatarWebp: text('avatar_webp'),
+  /** Cloudflare R2 image key reference (storage pipeline) */
+  avatarKey: text('avatar_key'),
   /** Security tracking */
   failedLoginAttempts: integer('failed_login_attempts').default(0).notNull(),
   lockedUntil: timestamp('locked_until'),
@@ -1148,3 +1146,34 @@ export const savedGraphs = pgTable('saved_graphs', {
   unique('uq_saved_graphs_share').on(t.shareCode),
   check('chk_saved_graphs_title_len', sql`char_length(${t.title}) <= 60`),
 ])
+
+/**
+ * Rasm aktivlari (Cloudflare R2 storage pipeline) — barcha yuklangan rasmlar
+ * (avatar, badge, book_cover, test_image) metadatasi va deduplikatsiya yozuvlari.
+ *
+ * hash (SHA-256) + type UNIQUE: bir xil rasm qayta R2'ga yuklanmaydi,
+ * ref_count oshiriladi. Rasm almashtirilganda ref_count kamaytirilib,
+ * ref_count <= 0 bo'lsa R2 va DB'dan o'chiriladi.
+ */
+export const images = pgTable('images', {
+  id: serial('id').primaryKey(),
+  hash: text('hash').notNull(),
+  type: text('type').notNull().$type<'avatar' | 'badge' | 'book_cover' | 'test_image' | 'general'>(),
+  key: text('key').notNull(),
+  publicUrl: text('public_url').notNull(),
+  width: integer('width').notNull(),
+  height: integer('height').notNull(),
+  sizeBytes: integer('size_bytes').notNull(),
+  mime: text('mime').default('image/webp').notNull(),
+  variants: jsonb('variants').$type<Record<string, { key: string; publicUrl: string; width: number; height: number; sizeBytes: number }>>().notNull(),
+  refCount: integer('ref_count').default(1).notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  unique('uq_images_hash_type').on(t.hash, t.type),
+  index('idx_images_key').on(t.key),
+  index('idx_images_type').on(t.type),
+  check('chk_images_ref_count', sql`${t.refCount} >= 0`),
+  check('chk_images_dimensions', sql`${t.width} > 0 AND ${t.height} > 0 AND ${t.sizeBytes} > 0`),
+])
+
