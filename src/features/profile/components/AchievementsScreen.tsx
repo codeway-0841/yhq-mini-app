@@ -27,7 +27,7 @@ function AchievementTile({ a, stats, tt }: {
         <div
           className={cn(
             'flex size-14 items-center justify-center transition-all duration-200 ease-out',
-            !unlocked && 'opacity-35 grayscale contrast-75',
+            !unlocked && 'opacity-60 saturate-[0.5]',
           )}
         >
           {a.badgeImage ? (

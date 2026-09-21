@@ -378,7 +378,7 @@ export default function LibraryPage() {
         onClick={handleScrollToTop}
         aria-label="Tepaga qaytish"
         className={cn(
-          'fixed bottom-6 right-4 sm:right-6 z-30 grid size-11 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-[rgb(var(--p-primary-rgb)/0.3)] transition-all duration-200 active:scale-90',
+          'fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] right-4 sm:right-6 z-30 grid size-11 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-[rgb(var(--p-primary-rgb)/0.3)] transition-all duration-200 active:scale-90',
           showScrollTop
             ? 'opacity-100 translate-y-0 pointer-events-auto'
             : 'opacity-0 translate-y-4 pointer-events-none',
