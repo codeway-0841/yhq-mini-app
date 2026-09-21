@@ -62,6 +62,9 @@ describe('ModesPage', () => {
 
     fireEvent.click(screen.getByRole('button', { name: 'Mavzular' }))
     expect(mockNavigate).toHaveBeenCalledWith('/mavzular')
+
+    fireEvent.click(screen.getByRole('button', { name: 'AI Wonder Studio' }))
+    expect(mockNavigate).toHaveBeenCalledWith('/wonder-studio')
   })
 
   it('saqlangan mashqni v2 uchun server selector bilan belgilaydi', () => {

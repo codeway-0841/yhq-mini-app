@@ -3,14 +3,11 @@ import { ChevronRight } from 'lucide-react'
 import { cn } from '../../../shared/lib/cn'
 
 /* Rang intizomi (v3): ikonkalar NEYTRAL — aksent FAQAT CTA/progress/active
-   holatda. "Ikonka + tintli chip" naqshi TIZIMDAN CHIQARILDI: u har bir
-   AI-generatsiya dashboard'ning asosiy belgisi edi. Flat ikonka + hairline
-   divider'li grouped list — karta panjarasidan farqli, kattalar mahsuloti
-   ritmini beradi (iOS/Linear uslubi, lekin o'z tokenlarimizda). */
+   holatda. Flat ikonka + hairline divider'li grouped list / ixcham grid. */
 
 /** Interaktiv holat klasslari — barcha bosiladigan elementlarga bir xil (karta-scale YO'Q). */
 const interactive = cn(
-  'transition-[background-color,border-color] duration-150 ease-out',
+  'transition-[background-color,border-color,transform] duration-150 ease-out',
   'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
 )
 
@@ -62,8 +59,7 @@ export const ModeRow = memo(function ModeRow({ icon: Icon, label, badge, comingS
   )
 })
 
-// ── ModeGridCard — "Yana" sheet'dagi 3-ustunli panjara kartasi (ServiceCard'ning
-//    kengayuvchan varianti: fixed o'lcham o'rniga grid kataqqa to'la sig'adi) ──
+// ── ModeGridCard — Ixcham va qulay 3-ustunli panjara kartasi ──────────────────
 export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onClick }: {
   icon: React.ElementType
   label: string
@@ -74,14 +70,14 @@ export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onCl
       onClick={onClick}
       aria-label={label}
       className={cn(
-        'relative flex w-full aspect-square flex-col items-center justify-center gap-2.5 p-2.5',
-        'rounded-2xl bg-pcard shadow-xs',
+        'relative flex w-full flex-col items-center justify-center gap-1.5 py-3 px-2 min-h-[78px]',
+        'rounded-xl sm:rounded-2xl bg-pcard shadow-xs active:scale-95',
         interactive,
         '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
-      <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
-      <span className="line-clamp-2 flex min-h-[36px] items-center justify-center px-0.5 text-center text-[13px] font-medium leading-[1.35] text-pfg">
+      <Icon size={22} strokeWidth={1.8} className="shrink-0 text-pmuted" />
+      <span className="line-clamp-2 flex items-center justify-center px-0.5 text-center text-[12px] font-medium leading-snug text-pfg">
         {label}
       </span>
     </button>
@@ -89,7 +85,6 @@ export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onCl
 })
 
 // ── Service Carousel Card — kvadrat (qo‘lda suriladigan karusel uchun) ────────────
-// Chip'siz: katta flat ikonka + kichik label. Kvadrat ritm saqlanadi.
 export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClick }: {
   icon: React.ElementType
   label: string
@@ -100,14 +95,14 @@ export const ServiceCard = memo(function ServiceCard({ icon: Icon, label, onClic
       onClick={onClick}
       aria-label={label}
       className={cn(
-        'relative flex size-[112px] shrink-0 snap-start flex-col items-center justify-center gap-2.5 p-2.5 sm:size-[120px]',
-        'rounded-2xl bg-pcard shadow-xs',
+        'relative flex size-[100px] shrink-0 snap-start flex-col items-center justify-center gap-1.5 p-2 sm:size-[112px]',
+        'rounded-xl sm:rounded-2xl bg-pcard shadow-xs active:scale-95',
         interactive,
         '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
-      <Icon size={26} strokeWidth={1.75} className="text-pmuted" />
-      <span className="line-clamp-2 flex min-h-[36px] items-center justify-center px-0.5 text-center text-[13px] font-medium leading-[1.35] text-pfg">
+      <Icon size={22} strokeWidth={1.8} className="shrink-0 text-pmuted" />
+      <span className="line-clamp-2 flex items-center justify-center px-0.5 text-center text-[12px] font-medium leading-snug text-pfg">
         {label}
       </span>
     </button>

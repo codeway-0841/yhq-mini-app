@@ -13,7 +13,7 @@ import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { api, avatarSrcFor } from '../../shared/api'
+import { api, avatarSrcFor, type AchievementStats } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
@@ -29,8 +29,10 @@ import { ClosedGroupSheet } from './components/ClosedGroupSheet'
 import type { PlanKey } from '../../../shared/premium-plans'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { CertificateModal } from '../test'
-import { AchievementsItem } from './components/AchievementsSection'
+import AchievementsScreen, { type TabKey } from './components/AchievementsScreen'
 import { LinkAccountSection } from './components/LinkAccountSection'
+import { BadgesPreviewSection } from './components/BadgesPreviewSection'
+import { MilestonesPreviewSection } from './components/MilestonesPreviewSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
@@ -59,6 +61,22 @@ export default function Profil() {
   const tt = useT(settings.language)
   const level = levelFromXp(xp)
 
+  // ── Yutuqlar (Achievements & Stats) ──────────────────────────────────
+  const [achStats, setAchStats] = useState<AchievementStats | null>(null)
+  const [showAchievementsModal, setShowAchievementsModal] = useState(false)
+  const [achievementsInitialTab, setAchievementsInitialTab] = useState<TabKey>('all')
+
+  useEffect(() => {
+    const uid = user?.id
+    if (!uid || uid === '0') return
+    api.getAchievements(uid).then((d) => setAchStats(d.stats)).catch(() => {})
+  }, [user?.id, settings.language])
+
+  const handleOpenAchievements = (tab: TabKey = 'all') => {
+    setAchievementsInitialTab(tab)
+    setShowAchievementsModal(true)
+  }
+
   // ── Referal statistikasi (Profil kartasidagi "N do'st · +M kun" qatori) ──
   const [refStats, setRefStats] = useState<{ invited: number; rewarded: number; pending: number; rewardDays: number } | null>(null)
   useEffect(() => {
@@ -67,12 +85,10 @@ export default function Profil() {
     api.getReferrals(uid).then(setRefStats).catch(() => {})
   }, [user?.id])
 
-  // Avatar yuklash (mutation, ~100KB body) cold start'ga urilib timeout bo'lmasligi
-  // uchun backend'ni OLDINDAN isitamiz — user rasm tanlaguncha server uyg'onadi
-  // (TestPage/SpeedPage'dagi warmUp pattern'i, qarang: shared/api warmUp izohi).
+  // Backend warmUp
   useEffect(() => { api.warmUp() }, [])
 
-  // Offline Sync Center: serverga yetmagan mutation'lar soni (0 bo'lsa yashirin)
+  // Offline Sync Center: serverga yetmagan mutation'lar soni
   const syncUserId = user?.id ?? ''
   const syncPending = useSyncExternalStore(onOutboxChange, () => getOutboxCount(syncUserId))
 
@@ -95,7 +111,6 @@ export default function Profil() {
   const { current: xpCurrent, needed: xpNeeded } = levelProgress(xp)
   const xpToNext = xpNeeded - xpCurrent
 
-  // Lokal toast state O'RNIGA markazlashgan ToastProvider (main.tsx da mount)
   const { info } = useToast()
   const showToast = info
 
@@ -118,7 +133,7 @@ export default function Profil() {
     try {
       await submitPhoneOtp(code)
       setOtpCode('')
-    } catch (err: any) {    // 401 → noto'g'ri kod; 429 → lockout
+    } catch (err: any) {
       setOtpErrorKey(err?.status === 401 ? 'authInvalidOtp' : err?.status === 429 ? 'authRateLimited' : 'authGenericError')
       setOtpCode('')
     } finally {
@@ -145,10 +160,9 @@ export default function Profil() {
     e?.stopPropagation()
     if (!user?.id || user.id === '0') return
     navigator.clipboard.writeText(String(userId)).catch(() => {})
-    // Ketma-ket bosish: ✓ oynasini uzaytiradi, ❐ ga tushib ketmaydi
     if (copyTimer.current) clearTimeout(copyTimer.current)
     copyTimer.current = setTimeout(() => { setCopied(false); copyTimer.current = null }, 1500)
-    if (copied) return // toast spam bo'lmasligi uchun
+    if (copied) return
     setCopied(true)
     showToast(tt('idCopied'))
   }
@@ -158,8 +172,6 @@ export default function Profil() {
   }
 
   return (
-    // Desktop: sozlamalar ro'yxati tor markaziy ustunda (production pattern —
-    // GitHub/Telegram settings kabi o'qiladigan kenglikda qoladi).
     <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
       <PageHeader title={tt('profile')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
 
@@ -262,7 +274,7 @@ export default function Profil() {
           disabled={phoneLoading || !!otpPhone}
         />
 
-        {/* SMS OTP bosqichi (H-2: egalik isbotisiz telefon yozilmaydi) */}
+        {/* SMS OTP bosqichi */}
         {phoneError && <p className="px-4 pb-1 text-[12px] text-pdanger">{tt(phoneError)}</p>}
         {phoneNotice && <p className="px-4 pb-1 text-[12px] text-psuccess">{tt(phoneNotice)}</p>}
         {otpPhone && (
@@ -302,7 +314,7 @@ export default function Profil() {
           </div>
         )}
 
-        {/* Yopiq guruh — barcha userlar uchun sheet ochiladi (sheet ichida isSubscribed bo'yicha farqlanadi) */}
+        {/* Yopiq guruh */}
         <Item
           icon={Lock}
           label={tt('closedGroup')}
@@ -314,6 +326,20 @@ export default function Profil() {
           onPress={() => setShowGroupSheet(true)}
         />
       </Section>
+
+      {/* ── NISHONLAR (BADGES) — IXCHAM PREVIEW ── */}
+      <BadgesPreviewSection
+        stats={achStats}
+        tt={tt}
+        onOpenAll={handleOpenAchievements}
+      />
+
+      {/* ── MARRALAR (MILESTONES) — IXCHAM PREVIEW ── */}
+      <MilestonesPreviewSection
+        stats={achStats}
+        tt={tt}
+        onOpenAll={handleOpenAchievements}
+      />
 
       {/* ── HISOBNI BOG'LASH (multi-provider auth + logout) ── */}
       <LinkAccountSection />
@@ -345,9 +371,6 @@ export default function Profil() {
           }
           onPress={() => navigate('/shop')}
         />
-
-        {/* Yutuqlar (server metrikalari asosidagi badge'lar) */}
-        <AchievementsItem lang={settings.language} tt={tt} userId={user?.id} />
 
         <Item icon={Globe} label={tt('langLabel')}
           right={<span className="text-[12px] text-pmuted">{settings.language === 'ru' ? 'Русский' : "O'zbekcha"}</span>}
@@ -398,6 +421,7 @@ export default function Profil() {
           onPress={() => openTelegramLink(BOT_URL)} />
         <Item icon={Star}      label={tt('rateApp')}
           onPress={() => openTelegramLink(BOT_URL)} />
+
         {/* Referal: do'st taklif qilish */}
         <div className="px-4 py-3.5 flex items-center gap-3.5">
           <Share2 size={20} strokeWidth={1.75} className="shrink-0 text-pmuted" />
@@ -422,11 +446,23 @@ export default function Profil() {
             {tt('refBtn')}
           </Button>
         </div>
+
         <Item icon={Download}   label={tt('installApp')}
           onPress={() => showToast(promptAddToHomeScreen()
             ? tt('installAppPrompt')
             : tt('installAppUnsupported'))} />
       </Section>
+
+      {/* ── Modals & Sheets ── */}
+      {/* Achievements Fullscreen Modal with Tabs */}
+      {showAchievementsModal && achStats && (
+        <AchievementsScreen
+          stats={achStats}
+          tt={tt}
+          initialTab={achievementsInitialTab}
+          onClose={() => setShowAchievementsModal(false)}
+        />
+      )}
 
       {/* Name edit sheet */}
       {showNameEdit && (
@@ -451,7 +487,7 @@ export default function Profil() {
         />
       )}
 
-      {/* Telefon qo'shish/o'zgartirish — tasdiq → usul (Telegram/SMS) → input */}
+      {/* Telefon qo'shish/o'zgartirish */}
       {showPhoneSheet && (
         <PhoneEditSheet
           currentPhone={user?.phone ?? null}
@@ -462,7 +498,7 @@ export default function Profil() {
         />
       )}
 
-      {/* Ilova tili tanlash — rasmdagidek bottom sheet */}
+      {/* Ilova tili tanlash */}
       {showLangPicker && (
         <PickerSheet
           title={tt('langLabel')}
@@ -477,7 +513,7 @@ export default function Profil() {
         />
       )}
 
-      {/* Mavzu tanlash — rasmdagidek bottom sheet */}
+      {/* Mavzu tanlash */}
       {showThemePicker && (
         <PickerSheet
           title={tt('themeLabel')}
@@ -501,8 +537,7 @@ export default function Profil() {
         />
       )}
 
-      {/* Sertifikat NAMUNASI — real sertifikat faqat imtihon natijalaridan
-          (ResultsModal) ochiladi; bu yerda ballar emas, ko'rinish ko'rsatiladi */}
+      {/* Sertifikat NAMUNASI */}
       {showCertModal && (
         <CertificateModal
           sample
@@ -524,12 +559,12 @@ export default function Profil() {
         />
       )}
 
-      {/* To'lovlar tarixi sheet'i (Click/Payme buyurtmalari) */}
+      {/* To'lovlar tarixi sheet'i */}
       {showPayHistory && (
         <PaymentHistorySheet onClose={() => setShowPayHistory(false)} />
       )}
 
-      {/* Yopiq guruh sheet'i — free userda upsell, premium userda fanlar guruhlariga kirish */}
+      {/* Yopiq guruh sheet'i */}
       {showGroupSheet && (
         <ClosedGroupSheet
           isSubscribed={tariff === 'premium'}
@@ -542,7 +577,7 @@ export default function Profil() {
         />
       )}
 
-      {/* Obuna bo'lish modali (Multi-step Senior-grade subscription sheet) */}
+      {/* Obuna bo'lish modali */}
       {showSubscriptionModal && (
         <SubscriptionModal
           initialPlanKey={subInitialPlan}

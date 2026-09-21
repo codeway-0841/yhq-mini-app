@@ -154,15 +154,27 @@ export default function ResultsModal({
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
-      <div className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
-        <button onClick={onFinish} aria-label={tt('closeResults')} className="absolute top-5 right-5 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors">
-          <X size={16} />
-        </button>
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
-        <h2 id="results-title" data-drag-handle className="text-center text-lg font-semibold mb-1 select-none">{tt('results')}</h2>
+      <div className="relative w-full max-w-lg bg-pcard rounded-t-sheet p-4 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        {/* Drag handle */}
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none" />
+
+        {/* Modal Header: Title & Close Button on the Right */}
+        <div className="flex items-center justify-between mb-2">
+          <div className="size-8" aria-hidden="true" />
+          <h2 id="results-title" data-drag-handle className="text-center text-base font-bold text-pfg select-none">
+            {tt('results')}
+          </h2>
+          <button
+            onClick={onFinish}
+            aria-label={tt('closeResults')}
+            className="size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors active:scale-95"
+          >
+            <X size={16} />
+          </button>
+        </div>
 
         {disqualifiedByCheat && (
-          <div className="mb-4 bg-[rgb(var(--p-danger-rgb)/0.15)] rounded-2xl p-4 text-center shadow-xs">
+          <div className="mb-3 bg-[rgb(var(--p-danger-rgb)/0.15)] rounded-2xl p-3 text-center shadow-xs">
             <p className="text-sm font-semibold text-pdanger mb-1">
               {tt('antiCheatDisqualifiedTitle')}
             </p>
@@ -173,7 +185,7 @@ export default function ResultsModal({
         )}
 
         {pending > 0 && (
-          <div className="mb-4 bg-[rgb(var(--p-blue-rgb)/0.15)] rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
+          <div className="mb-3 bg-[rgb(var(--p-blue-rgb)/0.15)] rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
             <div className="w-2 h-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
             <p className="text-xs text-pfg font-medium">
               {pending} {tt('pendingSyncNotice') || `${pending} ta javob oflayn saqlandi (internet ulanganda natija yangilanadi)`}
@@ -186,7 +198,7 @@ export default function ResultsModal({
 
         {/* Authoritative mukofotlar (XP & Tangalar) */}
         {(Boolean(earnedXp) || Boolean(earnedCoins)) ? (
-          <div className="mb-4 flex items-center justify-center gap-3 animate-scorePop">
+          <div className="mb-3.5 flex items-center justify-center gap-3 animate-scorePop">
             {Boolean(earnedXp) && (
               <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-bold text-xs shadow-xs">
                 <span>+{earnedXp} XP</span>
@@ -199,35 +211,35 @@ export default function ResultsModal({
             )}
           </div>
         ) : pending > 0 ? (
-          <div className="mb-4 flex items-center justify-center animate-scorePop">
+          <div className="mb-3.5 flex items-center justify-center animate-scorePop">
             <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-psubtle font-medium text-xs shadow-xs">
               <span>⏳ {useAppStore.getState().settings.language === 'ru' ? 'Награды будут начислены при подключении к сети' : 'Mukofotlar internet tiklangach hisoblanadi'}</span>
             </div>
           </div>
         ) : null}
 
-        <div className="grid grid-cols-3 gap-2 mb-5 animate-scorePop">
-          <div className="rounded-2xl bg-pwash p-3 text-center shadow-xs transition-all duration-300">
+        <div className="grid grid-cols-3 gap-2 mb-4 animate-scorePop">
+          <div className="rounded-2xl bg-pwash p-2.5 text-center shadow-xs transition-all duration-300">
             <Check size={16} strokeWidth={2} className="mx-auto text-pprimary" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{correct}</p>
-            <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
+            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{correct}</p>
+            <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
           </div>
-          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-center shadow-xs transition-all duration-300">
+          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-2.5 text-center shadow-xs transition-all duration-300">
             <X size={16} strokeWidth={2} className="mx-auto text-pdanger" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{wrong}</p>
-            <p className="mt-1.5 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
+            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{wrong}</p>
+            <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
           </div>
-          <div className="rounded-2xl bg-psurface p-3 text-center shadow-xs transition-all duration-300">
+          <div className="rounded-2xl bg-psurface p-2.5 text-center shadow-xs transition-all duration-300">
             <Minus size={16} strokeWidth={2} className="mx-auto text-psubtle" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[28px] font-semibold tabular-nums leading-none text-pfg">{unanswered}</p>
-            <p className="mt-1.5 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
+            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{unanswered}</p>
+            <p className="mt-1 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
           </div>
         </div>
 
         {/* Mavzular kesimida diagnostika — rasmiy imtihon presetlarida.
             Eng zaif mavzu yuqorida: nima takrorlash kerak darhol ko'rinadi. */}
         {topicBreakdown && topicBreakdown.length > 0 && (
-          <div className="mb-5">
+          <div className="mb-4">
             <p className="text-sm font-semibold mb-2">{tt('topicBreakdownTitle')}</p>
             <div className="flex flex-col gap-2">
               {topicBreakdown.map((t) => {
@@ -251,8 +263,8 @@ export default function ResultsModal({
           </div>
         )}
 
-        <p className="text-sm font-semibold mb-3">{tt('question')}</p>
-        <div className="grid grid-cols-6 gap-1.5 mb-6">
+        {/* Savollar katakchalari (barcha savollar gridi) */}
+        <div className="grid grid-cols-6 gap-1.5 mb-5 max-h-48 overflow-y-auto overscroll-contain p-0.5">
           {results.map((r, i) => (
             <button key={r.questionId} onClick={() => onGoToQuestion(i)}
               aria-label={`${tt('question')} ${i + 1}, ${r.status === 'correct' ? tt('correct') : r.status === 'incorrect' ? tt('wrong') : r.status === 'pending' ? 'pending' : tt('unanswered')}`}

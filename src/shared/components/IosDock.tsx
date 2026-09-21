@@ -107,8 +107,8 @@ export default function IosDock() {
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-40 flex justify-center px-4 transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${
-        isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : 'translate-y-[calc(100%+1.5rem+var(--safe-bottom,0px))] opacity-0 pointer-events-none'
+      className={`fixed inset-x-0 bottom-0 z-40 flex justify-center pb-[max(0.5rem,var(--safe-bottom,0px))] px-3 sm:px-4 pointer-events-none transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
       {/* Suzuvchi pill (Telegram Android v12.10.1 uslubi):

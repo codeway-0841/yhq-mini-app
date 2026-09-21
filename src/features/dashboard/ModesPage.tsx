@@ -16,6 +16,8 @@ import {
   Camera,
   LineChart,
   Sparkles,
+  Compass,
+  PenLine,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -79,16 +81,18 @@ export default function ModesPage() {
       ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
       : []),
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
+    { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
     { icon: Sparkles,      label: tt('aiCourseTitle'),  onClick: () => navigate('/ai-kurslar') },
+    { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
   ]
 
   return (
-    <div className="px-4 pb-20">
+    <div className="px-4">
       {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
       <PageHeader title={tt('modesTitle')} size="lg" className="-mx-4 mb-4" />
 
-      {/* 3-ustunli rejimlar panjarasi (desktop'da 4/5 ustun) */}
-      <div className="grid grid-cols-3 gap-3 lg:grid-cols-4 xl:grid-cols-5">
+      {/* 3-ustunli ixcham rejimlar panjarasi (desktop'da 4/5 ustun) */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-2.5 lg:grid-cols-4 xl:grid-cols-5">
         {items.map((it) => (
           <ModeGridCard
             key={it.label}
