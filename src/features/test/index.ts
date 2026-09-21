@@ -9,3 +9,11 @@ export { default as CertificateModal } from './CertificateModal'
 export { formatImageSrc } from './hooks/useImagePreload'
 /** Server-authoritative practice engine (v2) — adaptive/speed migratsiyasi uchun public. */
 export { default as ServerPracticePage } from './ServerPracticePage'
+/** Chizish qatlami (math-board BoardCanvas reuse uchun public). */
+export { default as DrawingCanvas, drawStroke } from './components/DrawingCanvas'
+export {
+  emptyDrawing, loadDrawingSession, saveDrawingSession, clearDrawingSession,
+  commitStroke, undoDrawing, redoDrawing, clearStrokes,
+  drawingStorageKey, parseDrawingSessionData, serializeDrawingSession, surfacesFromDrawings,
+} from './components/drawing-model'
+export type { DrawingHistory, DrawingStroke, DrawingPoint, DrawingTool, StrokeTool } from './components/drawing-model'

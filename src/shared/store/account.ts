@@ -17,6 +17,7 @@ import { useDailyStore }       from './useDailyStore'
 import { useAdaptiveStore }    from './useAdaptiveStore'
 import { useTestSessionStore } from './useTestSessionStore'
 import { useServerTestSessionStore } from './useServerTestSessionStore'
+import { emitAccountReset }    from '../lib/account-events'
 import { invalidateLeaderboardCache } from '../lib/leaderboard-cache'
 import { invalidateAchievementsCache } from '../lib/achievements-cache'
 
@@ -48,6 +49,8 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-formula-favs',
   // Grafik quruvchi workspace'i (ifodalar/slayderlar — user-scoped)
   'yhq-graph',
+  // Matematik doska sessiyasi (Faza 1 skelet — features/math-board)
+  'yhq-math-board',
 ] as const
 
 /**
@@ -63,6 +66,8 @@ export const ACCOUNT_STORAGE_PREFIXES = [
   'yhq-signs-best-',
   // Test chizmalari sessiya-key bilan saqlanadi; boshqa akkauntga sizmasin.
   'yhq-test-drawing-v2:',
+  // Matematik doska chizmalari (features/math-board) — account switch'da tozalanadi.
+  'yhq-math-board-drawing:',
 ] as const
 
 /**
@@ -78,6 +83,9 @@ export function resetAccountState(): void {
   useServerTestSessionStore.getState().clear()
   invalidateLeaderboardCache() // isYou bayroqlari yangi account'niki bo'lsin
   invalidateAchievementsCache()
+  // P1-6: in-memory user-scoped store'lar (masalan math-board sessiyasi) —
+  // localStorage tozalash yetmaydi, feature'lar shu event'ga obuna.
+  emitAccountReset()
   if (typeof localStorage !== 'undefined') {
     try {
       for (const key of ACCOUNT_STORAGE_KEYS) {

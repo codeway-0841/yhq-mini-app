@@ -63,32 +63,54 @@ function validStroke(value: unknown): value is DrawingStroke {
     && stroke.points.every((point) => finiteInRange(point?.x, 0, 1) && finiteInRange(point?.y, 0, 1))
 }
 
-export function loadDrawingSession(sessionKey: string): Map<string, DrawingHistory> {
-  const drawings = new Map<string, DrawingHistory>()
-  if (typeof localStorage === 'undefined' || !sessionKey) return drawings
-  try {
-    const raw = localStorage.getItem(drawingStorageKey(sessionKey))
-    if (!raw) return drawings
-    const parsed = JSON.parse(raw) as Partial<PersistedDrawingSession>
-    if (parsed.version !== 2 || !parsed.surfaces || typeof parsed.surfaces !== 'object') return drawings
-    for (const [surface, strokes] of Object.entries(parsed.surfaces).slice(0, MAX_SURFACES)) {
-      if (!VALID_SURFACE.test(surface) || !Array.isArray(strokes)) continue
-      const valid = strokes.slice(-MAX_STROKES_PER_SURFACE).filter(validStroke)
-      if (valid.length > 0) drawings.set(surface, { strokes: valid, undo: [], redo: [] })
-    }
-  } catch { /* private mode, disabled storage, or corrupt cache */ }
-  return drawings
-}
-
-export function saveDrawingSession(sessionKey: string, drawings: Map<string, DrawingHistory>): void {
-  if (typeof localStorage === 'undefined' || !sessionKey) return
+/** Map → persist surfaces obyekti (validation + cap'lar bilan) */
+export function surfacesFromDrawings(drawings: Map<string, DrawingHistory>): Record<string, DrawingStroke[]> {
   const surfaces: Record<string, DrawingStroke[]> = {}
   for (const [surface, drawing] of [...drawings.entries()].slice(0, MAX_SURFACES)) {
     if (VALID_SURFACE.test(surface) && drawing.strokes.length > 0) surfaces[surface] = drawing.strokes.slice(-MAX_STROKES_PER_SURFACE)
   }
+  return surfaces
+}
+
+/**
+ * Persist session obyektini (JSON.parse yoki IDB record) validate qilib
+ * Map'ga o'giradi. Buzilgan/yaroqsiz ma'lumot jimgina tashlanadi.
+ */
+export function parseDrawingSessionData(parsed: unknown): Map<string, DrawingHistory> {
+  const drawings = new Map<string, DrawingHistory>()
+  const p = parsed as Partial<PersistedDrawingSession> | null
+  if (!p || p.version !== 2 || !p.surfaces || typeof p.surfaces !== 'object') return drawings
+  for (const [surface, strokes] of Object.entries(p.surfaces).slice(0, MAX_SURFACES)) {
+    if (!VALID_SURFACE.test(surface) || !Array.isArray(strokes)) continue
+    const valid = strokes.slice(-MAX_STROKES_PER_SURFACE).filter(validStroke)
+    if (valid.length > 0) drawings.set(surface, { strokes: valid, undo: [], redo: [] })
+  }
+  return drawings
+}
+
+/** Map → v2 JSON string (bo'sh bo'lsa null — kalit o'chiriladi) */
+export function serializeDrawingSession(drawings: Map<string, DrawingHistory>): string | null {
+  const surfaces = surfacesFromDrawings(drawings)
+  if (Object.keys(surfaces).length === 0) return null
+  return JSON.stringify({ version: 2, surfaces } satisfies PersistedDrawingSession)
+}
+
+export function loadDrawingSession(sessionKey: string): Map<string, DrawingHistory> {
+  if (typeof localStorage === 'undefined' || !sessionKey) return new Map()
   try {
-    if (Object.keys(surfaces).length === 0) localStorage.removeItem(drawingStorageKey(sessionKey))
-    else localStorage.setItem(drawingStorageKey(sessionKey), JSON.stringify({ version: 2, surfaces } satisfies PersistedDrawingSession))
+    const raw = localStorage.getItem(drawingStorageKey(sessionKey))
+    if (!raw) return new Map()
+    return parseDrawingSessionData(JSON.parse(raw))
+  } catch { /* private mode, disabled storage, or corrupt cache */ }
+  return new Map()
+}
+
+export function saveDrawingSession(sessionKey: string, drawings: Map<string, DrawingHistory>): void {
+  if (typeof localStorage === 'undefined' || !sessionKey) return
+  try {
+    const raw = serializeDrawingSession(drawings)
+    if (raw === null) localStorage.removeItem(drawingStorageKey(sessionKey))
+    else localStorage.setItem(drawingStorageKey(sessionKey), raw)
   } catch { /* quota/private mode: drawing continues in memory */ }
 }
 

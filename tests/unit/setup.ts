@@ -120,6 +120,19 @@ if (typeof window !== 'undefined') {
   window.AudioContext = MockAudioContext
   // @ts-expect-error mock assignment
   window.webkitAudioContext = MockAudioContext
+
+  // jsdom'da canvas 2d-context YO'Q (`canvas` paketi o'rnatilmagan) — har
+  // chaqiruv "Not implemented" throw'ini virtual console'ga chiqaradi (test
+  // output shovqin; DrawingCanvas mount qilgan suitlar). Mahsulot kodi null
+  // ctx'ni baribir qo'riqlaydi (DrawingCanvas/snapshot early-return),
+  // shuning uchun global mock faqat shovqinni o'chiradi.
+  if (typeof HTMLCanvasElement !== 'undefined') {
+    Object.defineProperty(HTMLCanvasElement.prototype, 'getContext', {
+      value: () => null,
+      writable: true,
+      configurable: true,
+    })
+  }
 }
 
 beforeEach(() => {

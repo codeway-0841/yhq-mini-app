@@ -46,6 +46,21 @@ function findClosingBrace(str: string, startIdx: number): number {
 }
 
 /**
+ * Normalizes mathematical formulas to ensure standard functions have backslashes
+ * (e.g. \sqrt{tan x} -> \sqrt{\tan x}, sin x -> \sin x) and clean spacing.
+ */
+export function normalizeMathFormula(math: string): string {
+  let m = math.trim()
+  // Replace unescaped standard functions after operators, braces or at string boundary:
+  // e.g. \sqrt{tan x} -> \sqrt{\tan x}, (sin x) -> (\sin x), + cos x -> + \cos x
+  m = m.replace(/([{+\-*/=(,\s])(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\b\s*/g, '$1\\$2 ')
+  m = m.replace(/^\\?(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\b\s*/g, '\\$1 ')
+  // Clean up any double spaces created after backslashed functions
+  m = m.replace(/\\(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\s+/g, '\\$1 ')
+  return m
+}
+
+/**
  * Strict KaTeX validity gate for SEGMENTATION (not display).
  * Lenient rendering hides unknown commands (red text without error class),
  * so `\\alphax` would pass as "math". This gate rejects:
@@ -54,11 +69,13 @@ function findClosingBrace(str: string, startIdx: number): number {
  * Display stays crash-proof: MathSegmentNode falls back to plain text.
  */
 export function isValidKaTeX(math: string, _displayMode = false): boolean {
-  const trimmed = math.trim()
-  if (!trimmed || trimmed.length > MAX_FORMULA_LENGTH) return false
-  if (/[‘’ʻ`а-яА-ЯЁё]/.test(trimmed)) return false
+  const normalized = normalizeMathFormula(math)
+  if (!normalized || normalized.length > MAX_FORMULA_LENGTH) return false
+  // Prose guard: reject stray Cyrillic or apostrophes outside \text{...}, \mathrm{...}, etc.
+  const withoutText = normalized.replace(/\\(text|mathrm|mathbf|mathit|operatorname)\{[^{}]*\}/g, '')
+  if (/[‘’ʻ`а-яА-ЯЁё]/.test(withoutText)) return false
   try {
-    katex.renderToString(trimmed, {
+    katex.renderToString(normalized, {
       ...KATEX_OPTIONS,
       throwOnError: true,
       displayMode: false,
@@ -74,11 +91,11 @@ export function isValidKaTeX(math: string, _displayMode = false): boolean {
  * Returns null if the formula is invalid or produces a KaTeX error.
  */
 export function renderKaTeXToString(math: string, displayMode = false): string | null {
-  const trimmed = math.trim()
-  if (!trimmed || trimmed.length > MAX_FORMULA_LENGTH) return null
+  const normalized = normalizeMathFormula(math)
+  if (!normalized || normalized.length > MAX_FORMULA_LENGTH) return null
 
   try {
-    const rendered = katex.renderToString(trimmed, {
+    const rendered = katex.renderToString(normalized, {
       ...KATEX_OPTIONS,
       displayMode,
     })
@@ -88,7 +105,7 @@ export function renderKaTeXToString(math: string, displayMode = false): string |
     return rendered
   } catch (err) {
     if (process.env.NODE_ENV !== 'production') {
-      console.warn('KaTeX render error for formula:', trimmed, err)
+      console.warn('KaTeX render error for formula:', normalized, err)
     }
     return null
   }
@@ -104,10 +121,10 @@ export function parseMathSegments(text: string): MathSegment[] {
     text = text.slice(0, MAX_INPUT_LENGTH)
   }
 
-  // 1. Explicit LaTeX block or inline delimiters: $$, $, \[, \(, \begin{cases}, \begin{matrix}
-  if (text.includes('$') || text.includes('\\(') || text.includes('\\[') || text.includes('\\begin{cases}') || text.includes('\\begin{matrix}')) {
+  // 1. Explicit LaTeX block or inline delimiters: $$, $, \[, \(, \begin{cases}, \begin{matrix}, \begin{aligned}, \begin{equation}
+  if (text.includes('$') || text.includes('\\(') || text.includes('\\[') || text.includes('\\begin{cases}') || text.includes('\\begin{matrix}') || text.includes('\\begin{aligned}') || text.includes('\\begin{equation}')) {
     const segments: MathSegment[] = []
-    const regex = /(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\\begin\{cases\}[\s\S]+?\\end\{cases\}|\\begin\{matrix\}[\s\S]+?\\end\{matrix\})/g
+    const regex = /(\$\$[\s\S]+?\$\$|\$[^$\n]+\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\\begin\{cases\}[\s\S]+?\\end\{cases\}|\\begin\{matrix\}[\s\S]+?\\end\{matrix\}|\\begin\{aligned\}[\s\S]+?\\end\{aligned\}|\\begin\{equation\}[\s\S]+?\\end\{equation\})/g
     let lastIndex = 0
     let match: RegExpExecArray | null
 
@@ -130,6 +147,12 @@ export function parseMathSegments(text: string): MathSegment[] {
         mathContent = raw.trim()
         displayMode = true
       } else if (raw.startsWith('\\begin{matrix}') && raw.endsWith('\\end{matrix}')) {
+        mathContent = raw.trim()
+        displayMode = true
+      } else if (raw.startsWith('\\begin{aligned}') && raw.endsWith('\\end{aligned}')) {
+        mathContent = raw.trim()
+        displayMode = true
+      } else if (raw.startsWith('\\begin{equation}') && raw.endsWith('\\end{equation}')) {
         mathContent = raw.trim()
         displayMode = true
       } else if (raw.startsWith('\\(') && raw.endsWith('\\)')) {
@@ -450,7 +473,11 @@ function MathSegmentNode({ math, displayMode }: { math: string; displayMode?: bo
 
   return (
     <span
-      className={displayMode ? 'block my-1.5 text-center overflow-x-auto max-w-full py-0.5' : 'inline-block max-w-full overflow-x-auto align-middle'}
+      className={
+        displayMode
+          ? 'block my-2.5 text-center overflow-x-auto max-w-full py-1 text-[15px]'
+          : 'inline font-normal align-baseline'
+      }
       dangerouslySetInnerHTML={{ __html: html }}
     />
   )

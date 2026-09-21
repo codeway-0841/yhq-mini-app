@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import React from 'react'
 import { render } from '@testing-library/react'
-import MathText, { parseMathSegments, renderMathToHtml, renderKaTeXToString } from '../../../src/shared/components/MathText'
+import MathText, { parseMathSegments, renderMathToHtml, renderKaTeXToString, normalizeMathFormula } from '../../../src/shared/components/MathText'
 
 describe('MathText Component & KaTeX Security', () => {
   describe('XSS and HTML Injection Prevention', () => {
@@ -113,4 +113,28 @@ describe('MathText Component & KaTeX Security', () => {
       expect(rendered).toBeNull()
     })
   })
+
+  describe('normalizeMathFormula & Inline Math Styling', () => {
+    it('Oldinga teskari slesh (backslash) qo\'yilmagan trigonometrik va logarifmik funksiyalarni to\'g\'irlaydi', () => {
+      // Import normalizeMathFormula
+      expect(normalizeMathFormula('\\sqrt{tan x}')).toBe('\\sqrt{\\tan x}')
+      expect(normalizeMathFormula('sin x + cos x')).toBe('\\sin x + \\cos x')
+      expect(normalizeMathFormula('ln x - log y')).toBe('\\ln x - \\log y')
+      expect(normalizeMathFormula('tg x * ctg x')).toBe('\\tg x * \\ctg x')
+    })
+
+    it('Inline formulalar (displayMode: false) uchun CSS overflow-x-auto (quti effekti) bo\'lmasligi va inline font-normal bo\'lishi kerak', () => {
+      const { container } = render(<MathText text="Bu yerda $x^4 + 1$ formulasi matn ichida kelgan." />)
+      const mathSpan = container.querySelector('.katex')
+      expect(mathSpan).not.toBeNull()
+
+      // MathSegmentNode o'rab turuvchi span elementini tekshirish
+      const wrapperSpan = mathSpan?.parentElement
+      expect(wrapperSpan).not.toBeNull()
+      // overflow-x-auto inline formulada bo'lmasligi kerak (u faqat displayMode: true da bo'ladi)
+      expect(wrapperSpan?.classList.contains('overflow-x-auto')).toBe(false)
+      expect(wrapperSpan?.classList.contains('inline')).toBe(true)
+    })
+  })
 })
+
