@@ -460,7 +460,7 @@ export default function TestPage() {
   })()
 
   return (
-    <div className="relative flex min-h-[calc(100dvh-var(--safe-top-body,0px))] flex-col bg-pcanvas">
+    <div className="relative flex flex-col bg-pcanvas">
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
         <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2">
           <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}>
@@ -504,7 +504,7 @@ export default function TestPage() {
       <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
 
       <div
-        className="flex-1 px-4 pb-24 touch-pan-y overflow-x-hidden"
+        className="flex-1 px-4 pb-4 touch-pan-y overflow-x-hidden"
         {...touchHandlers}
       >
         <div

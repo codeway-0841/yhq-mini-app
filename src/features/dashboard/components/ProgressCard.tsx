@@ -101,7 +101,6 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
       <div className="hero-gradient-card mx-4 mb-4 px-4 py-3 sm:px-5 sm:py-4">
         <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
           <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
-
         </div>
 
         <div className="flex items-baseline gap-2">
@@ -156,11 +155,8 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         </div>
       </div>
 
-      {/* Fan tanlash modal oynasi */}
-
       {xpInfoOpen && (
         <StatInfoSheet
-          icon={<Star size={20} strokeWidth={1.75} />}
           title={tt('xpInfoTitle')}
           body={tt('xpInfoBody')}
           onClose={() => setXpInfoOpen(false)}

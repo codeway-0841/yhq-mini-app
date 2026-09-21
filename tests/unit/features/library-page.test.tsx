@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter, useLocation } from 'react-router-dom'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import LibraryPage from '../../../src/features/library/LibraryPage'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
@@ -62,5 +62,22 @@ describe('LibraryPage (Kutubxona)', () => {
 
     expect(await screen.findByRole('button', { name: '5-sinf Matematika (1-qism)' })).toBeTruthy()
     expect(screen.queryByRole('button', { name: '1-sinf Alifbe' })).toBeNull()
+  })
+
+  it('tepaga qaytish tugmasi mavjud va bosilganda scrollTo chaqiriladi', () => {
+    const scrollToMock = vi.fn()
+    window.scrollTo = scrollToMock
+
+    render(
+      <MemoryRouter>
+        <LibraryPage />
+      </MemoryRouter>,
+    )
+
+    const topBtn = screen.getByRole('button', { name: 'Tepaga qaytish' })
+    expect(topBtn).toBeTruthy()
+
+    fireEvent.click(topBtn)
+    expect(scrollToMock).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' })
   })
 })

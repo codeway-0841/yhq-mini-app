@@ -5,7 +5,7 @@ import { useAppStore } from '../store/useAppStore'
 
 /** Level/XP/Coin/Liga statistikalari uchun bosilganda ochiladigan tushuntirish sheet. */
 export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
-  icon:   ReactNode
+  icon?:   ReactNode
   title:  string
   body:   string
   extra?: ReactNode
@@ -20,7 +20,7 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
         <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
 
         <p id="stat-info-title" data-drag-handle className="flex items-center justify-center gap-2 text-base font-black mb-4 text-pfg select-none">
-          <span className="text-pprimary">{icon}</span>
+          {icon && <span className="text-pprimary">{icon}</span>}
           {title}
         </p>
 

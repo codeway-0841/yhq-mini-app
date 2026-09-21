@@ -1,6 +1,6 @@
 import { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { Search, SearchX, X, type LucideIcon } from 'lucide-react'
+import { ArrowUp, Check, ChevronDown, Search, SearchX, X } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { cn } from '../../shared/lib/cn'
@@ -20,9 +20,15 @@ import {
 import { Input } from '../../shared/components/ui/input'
 import { Button } from '../../shared/components/ui/button'
 import { EmptyState } from '../../shared/components/ui/empty-state'
+import {
+  Sheet,
+  SheetBody,
+  SheetClose,
+  SheetHeader,
+  SheetTitle,
+} from '../../shared/components/ui/sheet'
 import { BookCard } from './components/BookCard'
 import { BookDetailSheet } from './components/BookDetailSheet'
-import { librarySubjectIcon } from './subject-icons'
 
 const KNOWN_SUBJECT_IDS = new Set(librarySubjects.map((s) => s.id))
 
@@ -44,6 +50,29 @@ export default function LibraryPage() {
   const [query, setQuery] = useState('')
   const deferredQuery = useDeferredValue(query)
   const [selected, setSelected] = useState<LibraryBook | null>(null)
+  const [gradeSheetOpen, setGradeSheetOpen] = useState(false)
+  const [subjectSheetOpen, setSubjectSheetOpen] = useState(false)
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    let ticking = false
+    const onScroll = () => {
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
+        ticking = false
+        const y = window.scrollY || document.documentElement.scrollTop || 0
+        setShowScrollTop(y > 350)
+      })
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const handleScrollToTop = useCallback(() => {
+    haptics.impact('light')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
 
   const gradeText = (g: number) => tt('libraryGrade').replace('{grade}', String(g))
 
@@ -111,8 +140,11 @@ export default function LibraryPage() {
     updateFilters(grade, next)
   }
 
+  const activeSubjectObj = subject ? librarySubjects.find((s) => s.id === subject) : null
+  const activeSubjectLabel = activeSubjectObj ? (language === 'ru' ? activeSubjectObj.ru : activeSubjectObj.uz) : null
+
   const grid = (books: LibraryBook[], showGrade: boolean) => (
-    <div className="grid grid-cols-3 gap-x-3 gap-y-4 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+    <div className="grid grid-cols-3 gap-2.5 sm:gap-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       {books.map((book) => (
         <BookCard
           key={book.slug}
@@ -125,6 +157,8 @@ export default function LibraryPage() {
     </div>
   )
 
+  const allGradesLabel = language === 'ru' ? 'Классы' : 'Sinflar'
+
   return (
     <div className="px-4 pb-4">
       {/* Sticky header (PageHeader SSOT) + qidiruv */}
@@ -133,60 +167,75 @@ export default function LibraryPage() {
         subtitle={tt('librarySubtitle').replace('{count}', String(libraryBooks.length))}
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-3"
+        className="-mx-4 mb-2.5"
       >
-        <div className="relative px-4 pb-2.5">
-          <Search
-            size={16}
-            strokeWidth={2}
-            aria-hidden="true"
-            className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-pmuted"
-          />
-          <Input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder={tt('librarySearchPlaceholder')}
-            aria-label={tt('librarySearchPlaceholder')}
-            inputMode="search"
-            enterKeyHint="search"
-            className="pl-10 pr-11"
-          />
-          {query && (
-            <button
-              type="button"
-              onClick={() => setQuery('')}
-              aria-label={tt('clearSearch')}
-              className="absolute right-1.5 top-1/2 grid size-8 -translate-y-1/2 place-items-center rounded-lg text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-            >
-              <X size={15} strokeWidth={2} />
-            </button>
-          )}
+        <div className="px-4 pb-2.5">
+          <div className="relative flex items-center">
+            <Search
+              size={17}
+              strokeWidth={2}
+              aria-hidden="true"
+              className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-pmuted"
+            />
+            <Input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder={tt('librarySearchPlaceholder')}
+              aria-label={tt('librarySearchPlaceholder')}
+              inputMode="search"
+              enterKeyHint="search"
+              className="h-10 w-full rounded-xl pl-10 pr-9 bg-pcanvas text-[13.5px] border border-pline focus:border-pprimary"
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => setQuery('')}
+                aria-label={tt('clearSearch')}
+                className="absolute right-2 top-1/2 grid size-7 -translate-y-1/2 place-items-center rounded-lg text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              >
+                <X size={15} strokeWidth={2} />
+              </button>
+            )}
+          </div>
         </div>
       </PageHeader>
 
-      {/* Sinf filtri */}
-      <div className="-mx-4 flex snap-x gap-2 overflow-x-auto px-4 pb-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <FilterChip active={grade === null} label={tt('libraryAllGrades')} onClick={() => selectGrade(null)} />
-        {LIBRARY_GRADES.map((g) => (
-          <FilterChip key={g} active={grade === g} label={gradeText(g)} onClick={() => selectGrade(g)} />
-        ))}
+      {/* 50/50 Simmetrik Filtr Tugmalari (Sinf va Fan tanlash) */}
+      <div className="grid grid-cols-2 gap-2 mb-3">
+        {/* Sinf filtri */}
+        <button
+          type="button"
+          onClick={() => { haptics.impact('light'); setGradeSheetOpen(true) }}
+          aria-label={`${language === 'ru' ? 'Класс' : 'Sinf'}: ${grade !== null ? gradeText(grade) : allGradesLabel}`}
+          className={cn(
+            'flex h-10 min-w-0 items-center justify-between gap-2 rounded-xl px-3.5 text-[13px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+            grade !== null
+              ? 'bg-pprimary text-ponprimary shadow-xs'
+              : 'bg-psurface text-pfg hover:bg-pcard',
+          )}
+        >
+          <span className="truncate">{grade !== null ? gradeText(grade) : allGradesLabel}</span>
+          <ChevronDown size={15} className="shrink-0 opacity-60" />
+        </button>
+
+        {/* Fan filtri */}
+        <button
+          type="button"
+          onClick={() => { haptics.impact('light'); setSubjectSheetOpen(true) }}
+          aria-label={`${language === 'ru' ? 'Предмет' : 'Fan'}: ${activeSubjectLabel || tt('libraryAllSubjects')}`}
+          className={cn(
+            'flex h-10 min-w-0 items-center justify-between gap-2 rounded-xl px-3.5 text-[13px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+            subject !== null
+              ? 'bg-pprimary text-ponprimary shadow-xs'
+              : 'bg-psurface text-pfg hover:bg-pcard',
+          )}
+        >
+          <span className="truncate">{activeSubjectLabel || tt('libraryAllSubjects')}</span>
+          <ChevronDown size={15} className="shrink-0 opacity-60" />
+        </button>
       </div>
 
-      {/* Fan filtri */}
-      <div className="-mx-4 mt-1 flex snap-x gap-2 overflow-x-auto px-4 pb-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <FilterChip active={subject === null} label={tt('libraryAllSubjects')} onClick={() => selectSubject(null)} />
-        {subjectOptions.map((s) => (
-          <FilterChip
-            key={s.id}
-            icon={librarySubjectIcon(s.id)}
-            active={subject === s.id}
-            label={language === 'ru' ? s.ru : s.uz}
-            onClick={() => selectSubject(s.id)}
-          />
-        ))}
-      </div>
-
-      <div className="mb-3 mt-2 flex items-center justify-between gap-3">
+      <div className="mb-3 mt-1 flex items-center justify-between gap-3">
         <p className="text-[12.5px] font-medium text-pmuted">{countText}</p>
         {filtering && (
           <button
@@ -228,6 +277,93 @@ export default function LibraryPage() {
         grid(filtered, grade == null)
       )}
 
+      {/* Sinf tanlash pastki modal oynasi */}
+      <Sheet open={gradeSheetOpen} onClose={() => setGradeSheetOpen(false)}>
+        <SheetHeader>
+          <SheetTitle>{language === 'ru' ? 'Выберите класс' : 'Sinfni tanlang'}</SheetTitle>
+        </SheetHeader>
+        <SheetClose onClose={() => setGradeSheetOpen(false)} label={tt('close')} />
+        <SheetBody className="max-h-[65svh] overflow-y-auto pb-6">
+          <div className="grid grid-cols-3 gap-2">
+            <button
+              type="button"
+              onClick={() => { selectGrade(null); setGradeSheetOpen(false) }}
+              className={cn(
+                'flex h-11 items-center justify-center rounded-xl px-3 text-[13px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+                grade === null
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'bg-psurface text-pfg hover:bg-pcard',
+              )}
+            >
+              {tt('libraryAllGrades')}
+            </button>
+            {LIBRARY_GRADES.map((g) => {
+              const isSelected = grade === g
+              return (
+                <button
+                  key={g}
+                  type="button"
+                  onClick={() => { selectGrade(g); setGradeSheetOpen(false) }}
+                  className={cn(
+                    'flex h-11 items-center justify-center rounded-xl px-3 text-[13px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+                    isSelected
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'bg-psurface text-pfg hover:bg-pcard',
+                  )}
+                >
+                  {gradeText(g)}
+                </button>
+              )
+            })}
+          </div>
+        </SheetBody>
+      </Sheet>
+
+      {/* Fan tanlash pastki modal oynasi */}
+      <Sheet open={subjectSheetOpen} onClose={() => setSubjectSheetOpen(false)}>
+        <SheetHeader>
+          <SheetTitle>{language === 'ru' ? 'Выберите предмет' : 'Fanni tanlang'}</SheetTitle>
+        </SheetHeader>
+        <SheetClose onClose={() => setSubjectSheetOpen(false)} label={tt('close')} />
+        <SheetBody className="max-h-[65svh] overflow-y-auto pb-6">
+          <div className="flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={() => { selectSubject(null); setSubjectSheetOpen(false) }}
+              className={cn(
+                'flex h-12 items-center justify-between rounded-xl px-4 text-[13.5px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+                subject === null
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'bg-psurface text-pfg hover:bg-pcard',
+              )}
+            >
+              <span>{tt('libraryAllSubjects')}</span>
+              {subject === null && <Check size={18} strokeWidth={2.5} />}
+            </button>
+            {subjectOptions.map((s) => {
+              const isSelected = subject === s.id
+              const label = language === 'ru' ? s.ru : s.uz
+              return (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => { selectSubject(s.id); setSubjectSheetOpen(false) }}
+                  className={cn(
+                    'flex h-12 items-center justify-between rounded-xl px-4 text-[13.5px] font-semibold shadow-2xs transition-all active:scale-[0.98]',
+                    isSelected
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'bg-psurface text-pfg hover:bg-pcard',
+                  )}
+                >
+                  <span>{label}</span>
+                  {isSelected && <Check size={18} strokeWidth={2.5} />}
+                </button>
+              )
+            })}
+          </div>
+        </SheetBody>
+      </Sheet>
+
       <BookDetailSheet
         book={selected}
         language={language}
@@ -235,32 +371,21 @@ export default function LibraryPage() {
         onClose={() => setSelected(null)}
         onRead={readBook}
       />
-    </div>
-  )
-}
 
-function FilterChip({ active, label, icon: Icon, onClick }: {
-  active: boolean
-  label: string
-  icon?: LucideIcon
-  onClick: () => void
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      className={cn(
-        'inline-flex min-h-11 shrink-0 snap-start items-center gap-1.5 rounded-xl px-3 text-[13px] font-semibold',
-        'transition-[background-color,color,transform] duration-150 ease-out active:scale-[0.97]',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
-        active
-          ? 'bg-pprimary text-ponprimary shadow-xs'
-          : 'bg-psurface text-pmuted shadow-2xs hover:text-pfg',
-      )}
-    >
-      {Icon && <Icon size={14} strokeWidth={2} aria-hidden="true" />}
-      {label}
-    </button>
+      {/* Tepaga qaytish tugmasi */}
+      <button
+        type="button"
+        onClick={handleScrollToTop}
+        aria-label="Tepaga qaytish"
+        className={cn(
+          'fixed bottom-6 right-4 sm:right-6 z-30 grid size-11 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-[rgb(var(--p-primary-rgb)/0.3)] transition-all duration-200 active:scale-90',
+          showScrollTop
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 translate-y-4 pointer-events-none',
+        )}
+      >
+        <ArrowUp size={20} strokeWidth={2.5} />
+      </button>
+    </div>
   )
 }

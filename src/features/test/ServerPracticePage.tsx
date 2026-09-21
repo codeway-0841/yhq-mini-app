@@ -596,7 +596,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   }
 
   return (
-    <div className="relative flex min-h-[calc(100dvh-var(--safe-top-body,0px))] flex-col bg-pcanvas">
+    <div className="relative flex flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-2">
           <Button variant="secondary" size="icon" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'}><ChevronLeft /></Button>
@@ -644,7 +644,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       />
 
       <main
-        className="flex-1 px-4 pb-28 pt-4 touch-pan-y overflow-x-hidden"
+        className="flex-1 px-4 pb-4 pt-2 touch-pan-y overflow-x-hidden"
         {...touchHandlers}
       >
         <div
