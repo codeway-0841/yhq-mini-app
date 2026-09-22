@@ -1,6 +1,5 @@
 import { memo } from 'react'
 import { Sun, Moon, ChevronDown } from 'lucide-react'
-import SettingsIcon from '../../../shared/components/SettingsIcon'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -38,11 +37,11 @@ const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl
 })
 
 // ── Top Bar (v3 KIWI) ───────────────────────────────────────────────────────
-export const TopBar = memo(function TopBar({ user, displayName, onSettings, onProfile, onSubjects }: {
+export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onSettings, onProfile, onSubjects }: {
   user: ApiUser | null
   displayName: string | null
   onSubjects: () => void
-  onSettings: () => void
+  onSettings?: () => void
   onProfile: () => void
 }) {
   const lang = useAppStore((s) => s.settings.language)
@@ -78,22 +77,22 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings, onPr
           type="button"
           aria-label={tt('profile')}
           onClick={onProfile}
-          className="flex shrink-0 items-center rounded-xl transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas"
+          className="flex shrink-0 items-center rounded-xl transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas lg:hidden"
         >
-          {/* avatarSrcFor — xom `photoUrl` EMAS: `hasCustomAvatar` persist
-              qilingani uchun server avatar URL'i BIRINCHI KADRDA ma'lum bo'ladi.
-              Ilgari u faqat hydrate'dan keyin (`customAvatar` o'rnatilganda)
-              paydo bo'lardi, ya'ni avatar sezilarli kech chiqardi. */}
           <Avatar name={name} photoUrl={avatarSrcFor(user) ?? undefined} />
         </button>
-        <button type="button" onClick={onSubjects} aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
-          className="flex min-h-11 min-w-0 flex-1 items-center gap-1 rounded-xl px-1 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+        <button
+          type="button"
+          onClick={onSubjects}
+          aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
+          className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-4 lg:flex-initial lg:border lg:border-pline lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs"
+        >
           <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
           <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
           <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
         </button>
 
-        <div className="flex flex-shrink-0 items-center gap-1">
+        <div className="flex flex-shrink-0 items-center gap-1 lg:mr-4">
           {/* Dark / Light rejim toggle tugmasi */}
           <Button
             variant="ghost"
@@ -107,17 +106,6 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings, onPr
             ) : (
               <Sun size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />
             )}
-          </Button>
-
-          {/* Sozlamalar */}
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onSettings}
-            aria-label={tt('settingsTitle')}
-            className="text-pmuted hover:text-pfg"
-          >
-            <SettingsIcon className="size-[18px]" />
           </Button>
         </div>
       </div>

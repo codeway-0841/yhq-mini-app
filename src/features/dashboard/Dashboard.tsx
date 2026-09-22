@@ -115,34 +115,54 @@ export default function Dashboard() {
             </Alert>
           )}
 
-          {/* 1. Fan bo‘yicha umumiy progress */}
-          <ProgressCard
-            totalWrong={totalWrong}
-            totalAnswered={uniqueSolvedCount}
-            streak={dailyStreak}
-            totalPool={questionsCount}
-            lang={settings.language}
-            onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
-          />
+          {/* Desktop 2-ustunli Bento-grid, Mobilda esa toza 1 ustun */}
+          <div className="lg:grid lg:grid-cols-12 lg:gap-5 lg:px-4">
+            {/* Chap ustun: Progress va O'quv yo'li */}
+            <div className="lg:col-span-7 xl:col-span-8 space-y-2">
+              <ProgressCard
+                totalWrong={totalWrong}
+                totalAnswered={uniqueSolvedCount}
+                streak={dailyStreak}
+                totalPool={questionsCount}
+                lang={settings.language}
+                onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
+              />
 
-          <LearningGuide mistakesCount={mistakesCount} />
+              <LearningGuide mistakesCount={mistakesCount} />
+            </div>
 
-          <details className="mb-5 group">
-            <summary className="mx-4 mb-3 cursor-pointer rounded-xl px-1 py-3 text-[14px] font-semibold text-pmuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">{tt('guideMotivation')}</summary>
-            <DailyTasksCard />
-          {/* 6b. Haftalik BOSS BATTLE — jamoaviy jang kartasi */}
-          <BossCard />
+            {/* O'ng ustun: Vazifalar, Boss jang va Reyting */}
+            <div className="lg:col-span-5 xl:col-span-4">
+              {/* Desktop ko'rinishi (doim ochiq, chiroyli bento blok) */}
+              <div className="hidden lg:flex lg:flex-col lg:gap-4">
+                <DailyTasksCard />
+                <BossCard />
+                <LeaguePreview
+                  lang={settings.language}
+                  userId={user?.id}
+                  onSeeAll={() => navigate('/reyting')}
+                />
+              </div>
 
-          {/* 7. Leaderboard */}
-          <div>
-            <LeaguePreview
-              lang={settings.language}
-              userId={user?.id}
-              onSeeAll={() => navigate('/reyting')}
-            />
+              {/* Mobil ko'rinishi (ixcham collapsible) */}
+              <div className="lg:hidden">
+                <details className="mb-5 group">
+                  <summary className="mx-4 mb-3 cursor-pointer rounded-xl px-1 py-3 text-[14px] font-semibold text-pmuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+                    {tt('guideMotivation')}
+                  </summary>
+                  <div className="space-y-4">
+                    <DailyTasksCard />
+                    <BossCard />
+                    <LeaguePreview
+                      lang={settings.language}
+                      userId={user?.id}
+                      onSeeAll={() => navigate('/reyting')}
+                    />
+                  </div>
+                </details>
+              </div>
+            </div>
           </div>
-
-          </details>
 
           {/* Promo banner */}
           {SHOW_PROMO && <PromoBanner text={tt('promoText')} />}

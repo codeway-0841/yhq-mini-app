@@ -121,8 +121,8 @@ export default function OctagonPage() {
         />
       )}
 
-      {/* Desktop: arena oqimi tor markaziy ustunda (jonli o'yin diqqat markazida). */}
-      <div className={cn('flex-1 flex flex-col px-4 lg:mx-auto lg:w-full lg:max-w-2xl', s.phase === 'idle' ? 'pt-1' : 'items-center justify-center')}>
+      {/* Desktop: arena oqimi keng, professional markaziy konteynerda */}
+      <div className={cn('flex-1 flex flex-col px-4 lg:mx-auto lg:w-full lg:max-w-5xl', s.phase === 'idle' ? 'pt-1' : 'items-center justify-center')}>
         {s.phase === 'idle' && (
           <IdleScreen
             tt={tt}

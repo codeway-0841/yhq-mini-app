@@ -4,6 +4,16 @@
 .arena-page button:focus-visible, .arena-page input:focus-visible { outline: 3px solid var(--p-primary); outline-offset: 4px; }
 .arena-page button:disabled { opacity: .55; cursor: not-allowed; }
 .arena-hub { width: 100%; max-width: 440px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; padding: 6px 0 calc(28px + var(--safe-bottom, 0px)); }
+@media (min-width: 1024px) {
+  .arena-hub {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+    align-items: start;
+    padding: 12px 0 calc(32px + var(--safe-bottom, 0px));
+  }
+}
 .arena-eyebrow { font-size: 10px; line-height: 1.6; letter-spacing: .15em; font-weight: 800; }
 .arena-hero { position: relative; isolation: isolate; overflow: hidden; padding: 16px 16px 18px; border-radius: var(--radius-sheet); background: var(--p-card); color: var(--p-fg); box-shadow: 0 8px 24px -16px rgb(0 0 0 / 0.35); }
 .arena-hero-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }

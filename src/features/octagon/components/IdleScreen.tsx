@@ -163,7 +163,7 @@ export function IdleScreen({
       tt('duelSubviewInvite')
 
     return (
-      <div className="w-full max-w-md mx-auto space-y-4 pt-1 animate-premiumIn">
+      <div className="w-full max-w-3xl lg:max-w-4xl mx-auto space-y-4 pt-1 animate-premiumIn">
         <PageHeader
           title={subviewTitle}
           onBack={() => { playSound('click'); haptics.impact('light'); setSubview(null) }}
@@ -413,43 +413,81 @@ export function IdleScreen({
 
   return (
     <div className="arena-hub">
-      <section className="arena-hero" aria-label={ru ? 'Быстрая дуэль' : 'Tezkor duel'}>
-        <div className="arena-hero-top"><span className="arena-mode">1 : 1</span>{connection !== 'failed' && <span className="arena-live" role="status"><i data-connected={connected && effectiveOnlineCount > 0} />{onlineLabel}</span>}</div>
-        <ArenaArtwork />
-        <div className="arena-hero-copy"><h2>{ru ? 'Готовы к дуэли?' : 'Duelga tayyormisiz?'}</h2></div>
-        <div className="arena-rules"><span><Layers size={15} />10 {ru ? 'вопросов' : 'savol'}</span><span><Clock3 size={15} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span></div>
-        <button type="button" onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }} disabled={connFailed || !connected} className="arena-primary">
-          <Swords size={20} /><span>{tt('findOpponent')}</span><ArrowRight size={20} />
+      {/* Chap ustun: Asosiy duel va Do'st bilan */}
+      <div className="lg:col-span-7 flex flex-col gap-3">
+        <section className="arena-hero" aria-label={ru ? 'Быстрая дуэль' : 'Tezkor duel'}>
+          <div className="arena-hero-top">
+            <span className="arena-mode">1 : 1</span>
+            {connection !== 'failed' && (
+              <span className="arena-live" role="status">
+                <i data-connected={connected && effectiveOnlineCount > 0} />
+                {onlineLabel}
+              </span>
+            )}
+          </div>
+          <ArenaArtwork />
+          <div className="arena-hero-copy">
+            <h2>{ru ? 'Готовы к дуэли?' : 'Duelga tayyormisiz?'}</h2>
+          </div>
+          <div className="arena-rules">
+            <span><Layers size={15} />10 {ru ? 'вопросов' : 'savol'}</span>
+            <span><Clock3 size={15} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
+            disabled={connFailed || !connected}
+            className="arena-primary"
+          >
+            <Swords size={20} />
+            <span>{tt('findOpponent')}</span>
+            <ArrowRight size={20} />
+          </button>
+        </section>
+
+        <button
+          type="button"
+          className="arena-friend"
+          onClick={() => { playSound('click'); haptics.impact('light'); setSubview('invite') }}
+        >
+          <UserPlus size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+          <span>
+            <strong>{ru ? 'С другом' : 'Do‘st bilan'}</strong>
+            <small>{ru ? 'Пригласить или ввести код' : 'Taklif qiling yoki kod kiriting'}</small>
+          </span>
+          <ArrowRight size={18} className="shrink-0 text-pmuted" />
         </button>
-      </section>
-      <button type="button" className="arena-friend" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('invite') }}>
-        <UserPlus size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
-        <span><strong>{ru ? 'С другом' : 'Do‘st bilan'}</strong><small>{ru ? 'Пригласить или ввести код' : 'Taklif qiling yoki kod kiriting'}</small></span>
-        <ArrowRight size={18} className="shrink-0 text-pmuted" />
-      </button>
-      <div className="arena-section-group">
-        <div className="arena-section-label"><h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2></div>
-        <div className="arena-nav">
-          <button type="button" onClick={() => setSubview('battles')}>
-            <Swords size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
-            <strong>{ru ? 'Мои бои' : 'Janglarim'}</strong>
-            <small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small>
-            <ArrowRight size={16} className="text-pmuted" />
-          </button>
-          <button type="button" onClick={() => setSubview('leaderboard')}>
-            <Trophy size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
-            <strong>{tt('duelLeaderboardTab')}</strong>
-            <small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small>
-            <ArrowRight size={16} className="text-pmuted" />
-          </button>
-        </div>
       </div>
-      <button type="button" className="arena-online-row" onClick={() => setSubview('online')}>
-        <Users size={18} strokeWidth={1.75} className="text-pmuted" />
-        <span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span>
-        <span>{connected ? effectiveOnlineCount : '—'}</span>
-        <ArrowRight size={16} className="text-pmuted" />
-      </button>
+
+      {/* O'ng ustun: Sening arenang (Janglar, Reyting) va Onlayn o'yinchilar */}
+      <div className="lg:col-span-5 flex flex-col gap-3">
+        <div className="arena-section-group">
+          <div className="arena-section-label">
+            <h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2>
+          </div>
+          <div className="arena-nav">
+            <button type="button" onClick={() => setSubview('battles')}>
+              <Swords size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+              <strong>{ru ? 'Мои бои' : 'Janglarim'}</strong>
+              <small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small>
+              <ArrowRight size={16} className="text-pmuted" />
+            </button>
+            <button type="button" onClick={() => setSubview('leaderboard')}>
+              <Trophy size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+              <strong>{tt('duelLeaderboardTab')}</strong>
+              <small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small>
+              <ArrowRight size={16} className="text-pmuted" />
+            </button>
+          </div>
+        </div>
+
+        <button type="button" className="arena-online-row" onClick={() => setSubview('online')}>
+          <Users size={18} strokeWidth={1.75} className="text-pmuted" />
+          <span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span>
+          <span>{connected ? effectiveOnlineCount : '—'}</span>
+          <ArrowRight size={16} className="text-pmuted" />
+        </button>
+      </div>
     </div>
   )
 }
