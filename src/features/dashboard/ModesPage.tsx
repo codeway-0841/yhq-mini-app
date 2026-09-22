@@ -17,6 +17,7 @@ import {
   LineChart,
   Compass,
   PenLine,
+  ScanFace,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -82,6 +83,7 @@ export default function ModesPage() {
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
     { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
+    { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
   ]
 
   return (

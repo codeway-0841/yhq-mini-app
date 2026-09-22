@@ -44,6 +44,10 @@ public/kutubxona/pdf/
 # PDF.js runtime asset'lari — node_modules'dan generatsiya qilinadi
 # (scripts/copy-pdfjs-assets.mjs; predev + build avtomatik tayyorlaydi)
 public/pdfjs/
+# MediaPipe WASM (CamAi) — node_modules'dan generatsiya qilinadi
+# (scripts/copy-mediapipe-assets.mjs; predev + build avtomatik tayyorlaydi).
+# Model fayli (public/models/*.tflite) esa TRACKED — ~230KB, build'da network shart emas.
+public/mediapipe/
 
 .opencode/
 

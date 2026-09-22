@@ -53,6 +53,8 @@ export const ACCOUNT_STORAGE_KEYS = [
   'kivvi-wonder-studio-v2',
   // Matematik doska sessiyasi (Faza 1 skelet — features/math-board)
   'yhq-math-board',
+  // CamAi o'qituvchi savollari qoralamasi (features/camai — user-scoped)
+  'yhq-camai-custom',
 ] as const
 
 /**
