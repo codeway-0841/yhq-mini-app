@@ -2,9 +2,28 @@ import { useId } from 'react'
 import { Check } from 'lucide-react'
 import './learning-path.css'
 
-export function PathMascot() {
-  return <span className="learning-mascot" aria-hidden="true">
-    <span className="learning-mascot-face"><span className="learning-mascot-eye" /><span className="learning-mascot-smile" /></span>
+export type PathMascotAnimation =
+  | 'idle'
+  | 'wave'
+  | 'happy'
+  | 'oops'
+  | 'thinking'
+  | 'celebrate'
+  | 'level_up'
+  | 'sleep'
+
+export function PathMascot({ animation = 'idle' }: { animation?: PathMascotAnimation } = {}) {
+  return <span className="learning-mascot" data-animation={animation} aria-hidden="true">
+    <img
+      className="learning-mascot-img"
+      src="/images/kivvi-mascot-cutout.png"
+      alt=""
+      draggable={false}
+      loading="eager"
+      decoding="async"
+    />
+    <span className="learning-mascot-eyelid learning-mascot-eyelid-left" />
+    <span className="learning-mascot-eyelid learning-mascot-eyelid-right" />
   </span>
 }
 
