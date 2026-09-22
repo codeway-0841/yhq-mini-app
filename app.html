@@ -56,12 +56,15 @@
       ustiga yozib yuborardi va localhost'da ilova LoginPage'da qolardi.
     -->
     <script type="module">
-      // Dev mock: inject fake Telegram user on localhost by default (unless ?notg=1 is set)
+      // Dev mock: inject fake Telegram user when ?tg=1 query param is provided on localhost
+      // (OPT-IN — default avtomatik emas: e2e login testlari Telegram'siz muhitda
+      // LoginPage kutadi; default-on ularni Onboarding'ga burib yuborib sindirgan.
+      // Lokal TG-test uchun: /app.html?tg=1#/...)
       ;(function() {
         var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
         var search = window.location.search || ''
         var hash = window.location.hash || ''
-        var forceTg = isLocal && !search.includes('notg=1') && !hash.includes('notg=1')
+        var forceTg = search.includes('tg=1') || hash.includes('tg=1')
         if (isLocal && forceTg && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
           var backButtonCallbacks = []
           var mainButtonCallbacks = []
