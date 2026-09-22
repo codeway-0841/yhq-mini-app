@@ -393,8 +393,9 @@ export type CourseGenerator = 'meta' | 'mock'
 export async function generateCourseOutlineMeta(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
+  /** Testlar stub fetch bilan kalitsiz muhitda meta-yo'lni mashq qilishi uchun */
+  apiKey: string | undefined = config.ai.metaApiKey,
 ): Promise<{ payload: AiCoursePayload; topic: string }> {
-  const apiKey = config.ai.metaApiKey
   if (!apiKey) throw new Error('META_API_KEY sozlanmagan')
 
   try {
@@ -457,8 +458,9 @@ export { genSectionLessons as synthesizeSectionLessons }
 export async function generateCourseBlueprintMeta(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
+  /** Testlar stub fetch bilan kalitsiz muhitda meta-yo'lni mashq qilishi uchun */
+  apiKey: string | undefined = config.ai.metaApiKey,
 ): Promise<{ blueprint: CourseBlueprint; topic: string }> {
-  const apiKey = config.ai.metaApiKey
   if (!apiKey) throw new Error('META_API_KEY sozlanmagan')
 
   const outlinePrompt = buildSectionsPrompt(input)
@@ -692,15 +694,17 @@ export async function hydrateCourseSections(
 export async function generateFastCourse(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
+  /** Testlar stub fetch bilan kalitsiz muhitda meta-yo'lni mashq qilishi uchun */
+  apiKey: string | undefined = config.ai.metaApiKey,
 ): Promise<{
   payload: AiCoursePayload
   generator: CourseGenerator
   title: string
   blueprint?: CourseBlueprint
 }> {
-  if (config.ai.metaApiKey) {
+  if (apiKey) {
     try {
-      const { blueprint, topic } = await generateCourseBlueprintMeta(input, fetchFn)
+      const { blueprint, topic } = await generateCourseBlueprintMeta(input, fetchFn, apiKey)
       const payload = buildPayloadFromBlueprint(input, blueprint)
       return { payload, generator: 'meta', title: topic, blueprint }
     } catch (err) {
@@ -721,11 +725,12 @@ export async function generateFastCourse(
 export async function generateCourseOutline(
   input: AiCourseCreateInput,
   fetchFn: FetchFn = fetch,
+  apiKey: string | undefined = config.ai.metaApiKey,
 ): Promise<{
   payload: AiCoursePayload
   generator: CourseGenerator
   title: string
   blueprint?: CourseBlueprint
 }> {
-  return generateFastCourse(input, fetchFn)
+  return generateFastCourse(input, fetchFn, apiKey)
 }

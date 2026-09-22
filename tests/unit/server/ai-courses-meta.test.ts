@@ -226,7 +226,8 @@ describe('meta-generator — generate (stub fetch)', () => {
 
   it('generateCourseBlueprintMeta + buildPayloadFromBlueprint produces valid 3x3 payload in single step', async () => {
     const stub = stubFetch(cannedOutlineJson())
-    const { blueprint, topic } = await generateCourseBlueprintMeta(BASE, stub)
+    // 'test-key' — stub tarmoqqa chiqmaydi; kalitsiz CI'da meta-yo'lni mashq qiladi
+    const { blueprint, topic } = await generateCourseBlueprintMeta(BASE, stub, 'test-key')
     expect(topic).toBe('Ingliz tili')
     expect(blueprint.sections).toHaveLength(3)
     expect(blueprint.sections[0].lessons).toHaveLength(3)
@@ -246,7 +247,8 @@ describe('meta-generator — generate (stub fetch)', () => {
 
   it('generateFastCourse returns meta generator and blueprint on successful stub', async () => {
     const stub = stubFetch(cannedOutlineJson())
-    const res = await generateFastCourse(BASE, stub)
+    // 'test-key' — stub tarmoqqa chiqmaydi; kalitsiz CI'da meta-yo'lni mashq qiladi
+    const res = await generateFastCourse(BASE, stub, 'test-key')
     expect(res.generator).toBe('meta')
     expect(res.blueprint).toBeDefined()
     expect(res.payload.sections).toHaveLength(3)
