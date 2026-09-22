@@ -41,13 +41,18 @@ test('kutubxona: katalog, qidiruv, sinf filtri va kitob sheet', async ({ page })
 
   await page.screenshot({ path: `test-results/kutubxona-dark-${test.info().project.name}.png` })
 
-  // Sinf filtri — 5-sinf kitobi ko'rinadi, boshqa sinf yo'qoladi
-  await page.getByRole('button', { name: '5-sinf', exact: true }).click()
+  // Sinf filtri — Sheet orqali: "Sinflar" tugmasi → sheet'da "5-sinf".
+  // (Eski UI'da sinf tugmalari to'g'ridan-to'g'ri ekranda edi; 2026-09'da
+  // 50/50 Sinf/Fan sheet-filtriga o'tkazildi — to'g'ridan-to'g'ri '5-sinf'
+  // click 30s timeout bilan yiqilardi.)
+  await page.getByRole('button', { name: 'Sinf: Sinflar' }).click()
+  await page.getByRole('dialog').getByRole('button', { name: '5-sinf', exact: true }).click()
   await expect(page.getByRole('button', { name: '5-sinf Matematika (1-qism)' })).toBeVisible()
   await expect(page.getByRole('button', { name: '1-sinf Alifbe' })).toHaveCount(0)
 
-  // Filtrni bo'shatib, rus tilidagi fan nomi bilan qidiruv
-  await page.getByRole('button', { name: 'Barchasi', exact: true }).click()
+  // Filtrni bo'shatib (sheet'da "Barchasi"), rus tilidagi fan nomi bilan qidiruv
+  await page.getByRole('button', { name: 'Sinf: 5-sinf' }).click()
+  await page.getByRole('dialog').getByRole('button', { name: 'Barchasi', exact: true }).click()
   await page.getByLabel('Kitob yoki fan qidirish...').fill('физика')
   await expect(page.getByRole('button', { name: '7-sinf Fizika' })).toBeVisible()
   await expect(page.getByRole('button', { name: '8-sinf Fizika' })).toBeVisible()

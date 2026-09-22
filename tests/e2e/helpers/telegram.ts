@@ -82,6 +82,15 @@ export async function injectTelegramWebApp(
           contentType: 'application/json',
           body: JSON.stringify(mockProfile),
         })
+      } else if (url.includes('/api/questions/version')) {
+        // Persist-kesh versiya probi (~40 bayt, {v}) — UMUMIY questions
+        // branch'idan OLDIN kelishi SHART (u ham '/api/questions'ni match
+        // qiladi va array qaytarib, client'da `r.v === undefined` qoldirardi).
+        await route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({ v: 'e2e-mock' }),
+        })
       } else if (url.includes('/api/questions')) {
         await route.fulfill({
           status: 200,

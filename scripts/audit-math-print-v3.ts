@@ -61,6 +61,9 @@ for (const it of bank.items) {
 }
 
 // ---- 2. content ----
+// ATAYLAB control-char matcher (audit maqsadi — kontentdagi ko'rinmas
+// belgilarni topish), shuning uchun no-control-regex bu qatorda o'chirilgan.
+// eslint-disable-next-line no-control-regex
 const ctrlRe = /[\u0000-\u0008\u000B\u000C\u000E-\u001F]/;
 const rawSysRe = /[⎧⎪⎨⎩⎫⎬⎭⎛⎝⎞⎠]/;
 const emptySqrtRe = /\\sqrt(\[[^\]]*\])?\{\}/;
