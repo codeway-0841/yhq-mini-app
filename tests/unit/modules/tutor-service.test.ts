@@ -25,6 +25,11 @@ describe('tutor.service unit tests', () => {
       expect(prompt).toContain('Mavzu: Kinematika')
       expect(prompt).toContain('10 m/s')
       expect(prompt).toContain('LaTeX')
+      expect(prompt).toContain('AKADEMIK HALOLLIK VA UY VAZIFALARI')
+      expect(prompt).toContain('TAYYOR JAVOBNI BERMA')
+      expect(prompt).toContain('TEST VA KVIZLAR O‘TKAZISH QOIDASI')
+      expect(prompt).toContain('MINI-KURS VA REJA TUZISH')
+      expect(prompt).toContain('Kivvi AI')
     })
 
     it('generates prompt in Russian when language is ru', () => {
@@ -35,6 +40,20 @@ describe('tutor.service unit tests', () => {
 
       expect(prompt).toContain('Сократический репетитор')
       expect(prompt).toContain('Предмет/Fan: matematika')
+      expect(prompt).toContain('АКАДЕМИЧЕСКАЯ ЧЕСТНОСТЬ И ДОМАШНИЕ ЗАДАНИЯ')
+      expect(prompt).toContain('НЕ ВЫДАВАЙ ГОТОВЫЙ ОТВЕТ')
+      expect(prompt).toContain('ПРАВИЛА ПРОВЕДЕНИЯ ТЕСТОВ И КВИЗОВ')
+      expect(prompt).toContain('Kivvi AI')
+    })
+
+    it('returns standalone system prompt without context', () => {
+      const promptUz = buildSocraticPrompt({}, 'uz')
+      expect(promptUz).toContain('Sen Kivvi platformasining AI o‘quv murabbiyisan')
+      expect(promptUz).not.toContain('SAVOL VA VAZIFANING KONTEKSTI')
+
+      const promptRu = buildSocraticPrompt({}, 'ru')
+      expect(promptRu).toContain('Ты — AI-наставник и персональный Сократический репетитор платформы Kivvi')
+      expect(promptRu).not.toContain('КОНТЕКСТ ТЕКУЩЕГО ВОПРОСА')
     })
   })
 

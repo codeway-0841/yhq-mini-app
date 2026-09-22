@@ -211,7 +211,7 @@ router.post(
 
     const date = tashkentDate()
     const userIsPremium = await isPremium(uid)
-    const chatLimit = userIsPremium ? 100 : 5
+    const chatLimit = userIsPremium ? 200 : 30
 
     const chatKey = `${uid}:chat`
     const allowed = await tutorUsageRepository.tryConsume(chatKey, date, chatLimit)

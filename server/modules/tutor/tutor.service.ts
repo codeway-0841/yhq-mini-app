@@ -7,21 +7,29 @@ import { z } from 'zod'
 import { config } from '../../config'
 import { AppError } from '../../middleware/error-handler'
 import { SUBJECT_BASES } from '../../../shared/subjects'
+import {
+  buildKivviAiSystemPrompt,
+  KIVVI_TUTOR_SYSTEM_PROMPT_UZ,
+  KIVVI_TUTOR_SYSTEM_PROMPT_RU,
+} from './tutor-system-prompt'
 
-// Photo OCR/yechim sifati muhim: avval stable Flash, keyin arzon fallbacklar.
+export {
+  buildKivviAiSystemPrompt,
+  KIVVI_TUTOR_SYSTEM_PROMPT_UZ,
+  KIVVI_TUTOR_SYSTEM_PROMPT_RU,
+}
+
+// Stable Flash models: 'gemini-flash-latest', 'gemini-3-flash-preview', 'gemini-flash-lite-latest'
 const VISION_MODELS = [
-  'gemini-3.8-flash',
-  'gemini-3.7-flash',
-  'gemini-3.5-flash',
-  'gemini-3.5-flash-lite',
-  'gemini-3.1-flash-lite',
   'gemini-flash-latest',
+  'gemini-3-flash-preview',
+  'gemini-flash-lite-latest',
 ] as const
 
 const CHAT_MODELS = [
-  'gemini-3.5-flash-lite',
-  'gemini-3.1-flash-lite',
   'gemini-flash-latest',
+  'gemini-3-flash-preview',
+  'gemini-flash-lite-latest',
 ] as const
 
 const TIMEOUT_MS = 60_000
@@ -208,60 +216,17 @@ Vazifang — o'quvchi yuborgan rasmdagi o'quv topshirig'i, masala yoki testni (F
     }
   }
 
-  throw new AppError(503, "Sun'iy intellekt xizmati vaqtincha band yoki rasmdagi matnni o'qib bo'lmadi. Iltimos, qayta urinib ko'ring.")
+  throw new AppError(503, `Sun'iy intellekt xizmati vaqtincha band yoki rasmdagi matnni o'qib bo'lmadi. Iltimos, qayta urinib ko'ring.${lastError ? ` (${lastError.slice(0, 80)})` : ''}`)
 }
 
 /**
- * Sokratik dialog promptini generatsiya qilish.
+ * Sokratik dialog promptini generatsiya qilish (Kivvi AI Master System Prompt).
  */
 export function buildSocraticPrompt(
   context: SocraticContext,
   language: 'uz' | 'ru',
 ): string {
-  const isRu = language === 'ru'
-  const ctxParts: string[] = []
-
-  if (context.subjectId) ctxParts.push(`Предмет/Fan: ${context.subjectId}`)
-  if (context.topicName) ctxParts.push(`Тема/Mavzu: ${context.topicName}`)
-  if (context.questionText) ctxParts.push(`Вопрос/Savol: ${context.questionText}`)
-  if (context.options) {
-    const opts = Object.entries(context.options).map(([k, v]) => `${k}) ${v}`).join('\n')
-    ctxParts.push(`Варианты/Variantlar:\n${opts}`)
-  }
-  if (context.userSelectedOption) ctxParts.push(`Ответ ученика/O'quvchi tanlagan javob: ${context.userSelectedOption}`)
-  if (context.correctAnswer) ctxParts.push(`Правильный ответ/To'g'ri javob: ${context.correctAnswer}`)
-
-  const contextBlock = ctxParts.join('\n\n')
-
-  if (isRu) {
-    return `Ты — персональный Сократический репетитор платформы Kivvi.
-Твоя цель — НЕ просто выдать готовый ответ, а развить мышление ученика с помощью наводящих вопросов (метод Сократа).
-
-КОНТЕКСТ ВОПРОСА:
-${contextBlock}
-
-ПРАВИЛА ОБЩЕНИЯ:
-1. Если ученик ошибся или не понимает — не ругай. Спроси его о ключевом понятии или правиле, которое здесь применимо.
-2. Подсказывай аккуратно, шаг за шагом.
-3. Если ученик сам догадался — похвали и закрепи вывод.
-4. Если ученик прямо умоляет: "Объясни полностью / Скажи ответ" — объясни решение целиком, но доступно.
-5. Формулы оформляй через LaTeX: $...$.
-6. Держи реплики живыми, емкими (не более 100-150 слов за реплику), без лишней воды.`
-  }
-
-  return `Siz — Kivvi platformasining shaxsiy Sokratik repetitorisiz.
-Sizning asosiy maqsadingiz — o'quvchiga darhol tayyor javobni aytib qo'yish EMAS, balki yo'naltiruvchi savollar orqali o'quvchini to'g'ri fikrlashga va yechimni o'zi topishiga yetaklash (Sokrat metodi).
-
-SAVOL VA VAZIFANING KONTEKSTI:
-${contextBlock}
-
-MULOQOT QOIDALARI:
-1. O'quvchi xato qilgan bo'lsa yoki tushunmasa — koyimang, dalda bering. Savoldagi asosiy qonun yoki formula haqida yo'naltiruvchi savol bering.
-2. Har bir xabarda 1 ta aniq qadamni muhokama qiling. Juda uzun yozmang (100-150 so'zdan oshmasin).
-3. Agar o'quvchi to'g'ri yo'nalishni topsa — qisqacha maqtang va keyingi qadamga o'ting.
-4. Agar o'quvchi "To'liq tushuntirib ber / Javobni ayt" desa — qadamma-qadam to'liq yechimni tushuntiring.
-5. Barcha matematik va fizik formulalarni LaTeX formatida yozing: satr ichida $...$, alohida formulalar $$...$$.
-6. O'zbek tilida (lotin yozuvida), juda samimiy, sabrli va professional ustoz ohangida gapiring.`
+  return buildKivviAiSystemPrompt(context, language)
 }
 
 /**
@@ -315,8 +280,7 @@ export async function streamSocraticChatResponse(params: {
         const errText = await res.text().catch(() => '')
         lastError = `${model} ${res.status}: ${errText.slice(0, 100)}`
         console.warn(`[tutor.service chat] ${lastError}`)
-        if (res.status === 429) continue
-        break
+        continue
       }
 
       const reader = res.body.getReader()

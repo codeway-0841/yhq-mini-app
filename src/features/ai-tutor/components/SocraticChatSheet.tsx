@@ -3,7 +3,7 @@ import {
   Send, Sparkles, Volume2, VolumeX, X, Loader2, Crown, Bot, User,
 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import MathText from '../../../shared/components/MathText'
+import TutorRichMessage from '../../../shared/components/TutorRichMessage'
 import { speak, stopSpeaking } from '../../../shared/lib/speech'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -248,7 +248,11 @@ export default function SocraticChatSheet({
                       : 'bg-pprimary text-white rounded-br-xs shadow-2xs'
                   }`}
                 >
-                  <MathText text={msg.content} as="div" className="space-y-2" />
+                  <TutorRichMessage
+                    content={msg.content}
+                    isUser={!isAss}
+                    onSelectOption={(opt) => void sendMessage(opt)}
+                  />
 
                   {isAss && msg.content.length > 20 && (
                     <div className="mt-2 flex items-center justify-end gap-2 text-pmuted">
@@ -289,7 +293,11 @@ export default function SocraticChatSheet({
               </div>
               <div className="max-w-[85%] rounded-2xl px-4 py-3 text-[13.5px] leading-relaxed bg-psurface text-pfg shadow-2xs">
                 {streamingText ? (
-                  <MathText text={streamingText} as="div" className="space-y-2" />
+                  <TutorRichMessage
+                    content={streamingText}
+                    isUser={false}
+                    onSelectOption={(opt) => void sendMessage(opt)}
+                  />
                 ) : (
                   <div className="flex items-center gap-2 text-pmuted">
                     <Loader2 size={14} className="animate-spin" />
