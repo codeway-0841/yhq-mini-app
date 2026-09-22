@@ -112,6 +112,13 @@ describe('config/ai-courses — create/payload sxema', () => {
     expect(AiCoursePayloadSchema.safeParse(buildValidPayload()).success).toBe(true)
   })
 
+  it('eski payload (outcomes‘siz) ham o‘tadi — backward compat', () => {
+    const p = buildValidPayload() as Record<string, unknown>
+    delete p.outcomes
+    expect(AiCoursePayloadSchema.safeParse(p).success).toBe(true)
+    expect(toPublicCoursePayload(p as never).outcomes).toEqual([])
+  })
+
   it('1 section rad etiladi (min 2)', () => {
     const p = buildValidPayload()
     p.sections = p.sections.slice(0, 1)

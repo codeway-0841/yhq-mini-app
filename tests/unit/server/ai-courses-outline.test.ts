@@ -29,6 +29,7 @@ describe('ai-courses mock-provider', () => {
       expect(AiCoursePayloadSchema.safeParse(payload).success).toBe(true)
       expect(payload.sections.length).toBe(3)
       expect(aiCourseLessonCount(payload)).toBe(9)
+      expect(payload.outcomes).toHaveLength(4)
     }
   })
 

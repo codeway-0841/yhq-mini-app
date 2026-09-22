@@ -130,6 +130,14 @@ export const AiCourseLessonSchema = z.object({
   title: z.string().min(1).max(140),
   /** Har dars boshidagi majburiy xulosa (Wondering TLDR) */
   tldr: z.string().min(20).max(500),
+  /** Wondering uslubidagi qiziqtiruvchi ziddiyatli savol */
+  hook: z.string().max(300).optional(),
+  /** Nima uchun bu muhim va u bo'lmasa nima sinadi */
+  meaning: z.string().max(500).optional(),
+  /** Darsning aniq maqsadi (Wondering Lesson Spec Objective) */
+  objective: z.string().max(300).optional(),
+  /** O'quvchining eng keng tarqalgan noto'g'ri tasavvuri (Wondering Likely Confusion) */
+  likelyConfusion: z.string().max(300).optional(),
   pages: z.array(AiCoursePageSchema).min(1).max(5),
   practices: z.array(AiCoursePracticeSchema).min(2).max(5),
   knowledgeCards: z.array(AiCourseKnowledgeCardSchema).min(1).max(4),
@@ -144,6 +152,9 @@ export const AiCourseSectionSchema = z.object({
 
 export const AiCoursePayloadSchema = z.object({
   version: z.literal(1),
+  /** Kurs yakunida erishiladigan natijalar (Wondering "What you will achieve").
+   *  Eski payload'larda yo'q — optional (backward compat). */
+  outcomes: z.array(z.string().min(1).max(200)).max(6).optional(),
   sections: z.array(AiCourseSectionSchema).min(2).max(7),
 })
 
@@ -169,7 +180,13 @@ export const AiCourseCreateSchema = z.object({
   /** URL / fayl nomi / suhbat id — manba izi (ixtiyoriy) */
   inputRef: z.string().trim().max(500).default(''),
   lessonLength: z.enum(AI_COURSE_LESSON_LENGTHS).default('standard'),
-  language: z.enum(['uz', 'ru']).default('uz'),
+  language: z.enum(['uz', 'ru', 'en']).default('uz'),
+  /** Foydalanuvchi roli / kasbi (Wondering learner role, masalan 'dasturchi', 'talaba') */
+  learnerRole: z.string().trim().max(100).optional(),
+  /** Asosiy ta'lim maqsadi (Wondering learning goal) */
+  learningGoal: z.string().trim().max(500).optional(),
+  /** O'rganuvchining boshlang'ich bilim darajasi (Wondering background level) */
+  backgroundLevel: z.string().trim().max(200).optional(),
 })
 export type AiCourseCreateInput = z.infer<typeof AiCourseCreateSchema>
 
@@ -211,6 +228,7 @@ export interface AiCourseSectionPublic extends Omit<AiCourseSection, 'lessons'> 
 }
 export interface AiCoursePayloadPublic {
   version: 1
+  outcomes?: string[]
   sections: AiCourseSectionPublic[]
 }
 
@@ -269,6 +287,7 @@ export function toPublicCourseLesson(lesson: AiCourseLesson): AiCourseLessonPubl
 export function toPublicCoursePayload(payload: AiCoursePayload): AiCoursePayloadPublic {
   return {
     version: 1,
+    outcomes: payload.outcomes ?? [],
     sections: payload.sections.map((s) => ({
       ...s,
       lessons: s.lessons.map(toPublicCourseLesson),

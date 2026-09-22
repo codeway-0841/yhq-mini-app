@@ -28,14 +28,14 @@ function voiceFor(lang: 'uz' | 'ru'): SpeechSynthesisVoice | null {
   return null
 }
 
-export function speak(text: string, lang: 'uz' | 'ru'): void {
+export function speak(text: string, lang: 'uz' | 'ru', rate: number = 0.96): void {
   try {
     stopSpeaking()
     const u = new SpeechSynthesisUtterance(text)
     const v = voiceFor(lang)
     if (v) u.voice = v
     u.lang = v?.lang ?? (lang === 'ru' ? 'ru-RU' : 'uz-UZ')
-    u.rate = 0.96
+    u.rate = rate
     u.pitch = 1
     const finish = () => {
       // A canceled utterance may finish after its replacement has started.

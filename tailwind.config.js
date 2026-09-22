@@ -5,6 +5,11 @@ export default {
   // Landing (index.html + landing/) endi landing/tailwind.config.js'da —
   // app bundle'iga landing utilitalari, landing'ga app utilitalari kirmaydi.
   content: ['./app.html', './src/**/*.{js,ts,jsx,tsx}'],
+  future: {
+    // Touch/mobil qurilmalarda "sticky hover" (bosgandan keyin hover qolib ketishi) ni
+    // yo'qotadi — hover:* faqat sichqoncha/desktop (pointer: fine) da ishlaydi.
+    hoverOnlyWhenSupported: true,
+  },
   darkMode: ['selector', "body[data-theme='dark']"],
   theme: {
     extend: {
@@ -87,6 +92,8 @@ export default {
         // Dinamik shriftlar — src/index.css dagi --font-sans va --font-display ga bog'langan (body[data-font])
         sans:    ['var(--font-sans)', 'Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'Bricolage Grotesque', 'Inter Tight', '-apple-system', 'system-ui', 'sans-serif'],
+        serif:   ['"Young Serif"', 'serif'],
+        mono:    ['"Share Tech Mono"', 'monospace'],
       },
       borderRadius: {
         // v3 ikki bosqichli shkala: boshqaruv 10px · konteyner 18px · sheet 24px

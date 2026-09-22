@@ -4,6 +4,7 @@
  *  POST /api/ai-courses                              — kurs yaratish (mock outline)
  *  GET  /api/ai-courses                              — mening kurslarim (progress bilan)
  *  GET  /api/ai-courses/:id                          — kurs tafsiloti (public payload + progress)
+ *  DELETE /api/ai-courses/:id                       — kursni o'chirish (faqat egasi)
  *  POST /api/ai-courses/:id/lessons/:lessonId/complete — darsni yakunlash (baho + coin)
  *
  * QOIDALAR (shared/ai-courses.ts SSOT):
@@ -15,12 +16,15 @@
  *  - Yakunlash sharti: BARCHA mashqlarga javob (INCOMPLETE 400).
  */
 
-import { Router } from 'express'
+import { Router, type Request } from 'express'
 import { z } from 'zod'
 import { wrap, AppError } from '../../middleware/error-handler'
 import { validate } from '../../middleware/validate'
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { isPremiumUser } from '../../utils/premium'
+import { db } from '../../db/connection'
+import { users } from '../../schema'
+import { eq } from 'drizzle-orm'
 import {
   AI_COURSE_COINS_PER_LESSON,
   AI_COURSE_FREE_MONTHLY_LIMIT,
@@ -36,7 +40,17 @@ import {
   toPublicCoursePayload,
 } from '../../../shared/ai-courses'
 import { aiCoursesRepository } from './ai-courses.repository'
-import { generateCourseOutline } from './meta-generator'
+import { generateCourseOutline, hydrateCourseSections } from './meta-generator'
+import {
+  GoldenCourseRequestSchema,
+  GoldenCourseRunSchema,
+  GOLDEN_COURSE_STEP_ORDER,
+  convertGoldenCourseToAiCoursePayload,
+} from '../../../shared/golden-course'
+import {
+  executeGoldenCoursePipeline,
+  updateGoldenCourseStep,
+} from './golden-pipeline'
 
 const router = Router()
 
@@ -59,6 +73,10 @@ const LessonParamsSchema = z.object({
   lessonId: z.string().min(1).max(32),
 })
 
+const CourseParamsSchema = z.object({
+  id: z.string().regex(/^\d+$/),
+})
+
 // ── POST /api/ai-courses ─────────────────────────────────────────────────────
 router.post(
   '/ai-courses',
@@ -72,22 +90,31 @@ router.post(
     const userId = requireUserId(req)
     const data = req.body as z.infer<typeof AiCourseCreateSchema>
 
-    const premium = await isPremiumUser(userId)
-    const limit = premium ? AI_COURSE_PREMIUM_MONTHLY_LIMIT : AI_COURSE_FREE_MONTHLY_LIMIT
+    const [userRow] = await db.select({ isAdmin: users.isAdmin, tariff: users.tariff }).from(users).where(eq(users.id, userId)).limit(1)
+    const isAdmin = userRow?.isAdmin ?? false
+    const premium = userRow?.tariff === 'premium' || await isPremiumUser(userId)
+    const limit = isAdmin ? 9999 : (premium ? AI_COURSE_PREMIUM_MONTHLY_LIMIT : AI_COURSE_FREE_MONTHLY_LIMIT)
     const used = await aiCoursesRepository.countCreatedThisMonth(userId)
-    if (used >= limit) {
+    if (!isAdmin && used >= limit) {
       throw new AppError(429, 'COURSE_LIMIT_REACHED')
     }
 
-    // Real Meta AI (kalit bo'lsa) yoki mock fallback — hech qachon 500 emas.
+    // Real Meta AI tezkor blueprint (4-6s) yoki mock fallback — hech qachon 500 emas.
     // Sarlavha — AI tozalagan topic (xom gap emas); xom matn topic ustunida saqlanadi.
-    const { payload, generator, title } = await generateCourseOutline(data)
+    const { payload, generator, title, blueprint } = await generateCourseOutline(data)
     const course = await aiCoursesRepository.createCourse({
       userId,
       title,
       data,
       payload,
     })
+
+    // Agar blueprint Meta AI orqali olingan bo'lsa, orqa fonda chuqur darslarni sintez qilamiz (background hydration)
+    if (blueprint && generator === 'meta') {
+      hydrateCourseSections(course.id, data, blueprint).catch((err) => {
+        console.warn(`[ai-courses] background hydration for course ${course.id} error:`, err)
+      })
+    }
 
     res.setHeader('Cache-Control', 'private, no-store')
     res.json({
@@ -170,6 +197,24 @@ router.get(
   }),
 )
 
+// ── DELETE /api/ai-courses/:id ──────────────────────────────────────────────
+router.delete(
+  '/ai-courses/:id',
+  rateLimit({
+    maxPerMinute: 10,
+    bucket: 'ai-course-delete',
+    keyFn: (request) => (request as { userId?: string }).userId ?? request.ip,
+  }),
+  validate({ params: CourseParamsSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const id = parseCourseId(req.params.id)
+    const deleted = await aiCoursesRepository.deleteCourse(id, userId)
+    if (!deleted) throw new AppError(404, 'COURSE_NOT_FOUND')
+    res.json({ ok: true })
+  }),
+)
+
 // ── POST /api/ai-courses/:id/lessons/:lessonId/complete ──────────────────────
 router.post(
   '/ai-courses/:id/lessons/:lessonId/complete',
@@ -233,6 +278,74 @@ router.post(
       knowledgeCards: lesson.knowledgeCards,
       lesson: toPublicCourseLesson(lesson),
     })
+  }),
+)
+
+// ── GOLDEN COURSE PIPELINE (Flagship 7-Step Autonomous Production) ───────────
+
+router.post(
+  '/ai-courses/golden-run',
+  rateLimit({
+    bucket: 'ai_course_golden_run',
+    maxPerMinute: 5,
+    keyFn: (req: Request) => (req as { userId?: string }).userId ?? req.ip,
+  }),
+  validate({ body: GoldenCourseRequestSchema }),
+  wrap(async (req, res) => {
+    requireUserId(req)
+    const { run, payload } = await executeGoldenCoursePipeline(req.body)
+    res.json({ ok: true, run, payload })
+  }),
+)
+
+router.post(
+  '/ai-courses/golden-update',
+  rateLimit({
+    bucket: 'ai_course_golden_update',
+    maxPerMinute: 10,
+    keyFn: (req: Request) => (req as { userId?: string }).userId ?? req.ip,
+  }),
+  validate({
+    body: z.object({
+      request: GoldenCourseRequestSchema,
+      run: GoldenCourseRunSchema,
+      stepId: z.enum(GOLDEN_COURSE_STEP_ORDER),
+      instruction: z.string().max(1000),
+    }),
+  }),
+  wrap(async (req, res) => {
+    requireUserId(req)
+    const updatedRun = await updateGoldenCourseStep(req.body)
+    res.json({ ok: true, run: updatedRun })
+  }),
+)
+
+router.post(
+  '/ai-courses/golden-publish',
+  rateLimit({
+    bucket: 'ai_course_golden_publish',
+    maxPerMinute: 5,
+    keyFn: (req: Request) => (req as { userId?: string }).userId ?? req.ip,
+  }),
+  validate({ body: z.object({ run: GoldenCourseRunSchema }) }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const payload = convertGoldenCourseToAiCoursePayload(req.body.run)
+    const title = req.body.run.finalCourse.name
+    const row = await aiCoursesRepository.createCourse({
+      userId,
+      title,
+      data: {
+        topic: title,
+        inputKind: 'topic',
+        inputRef: '',
+        lessonLength: 'standard',
+        language: 'uz',
+        learningGoal: req.body.run.normalizedBrief,
+      },
+      payload,
+    })
+    res.status(201).json({ ok: true, course: row })
   }),
 )
 

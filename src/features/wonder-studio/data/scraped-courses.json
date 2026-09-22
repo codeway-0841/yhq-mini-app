@@ -1,0 +1,2774 @@
+[
+  {
+    "id": "how-to-design-whatsapp",
+    "slug": "how-to-design-whatsapp",
+    "title": "How to design WhatsApp",
+    "description": "Master high-scale messaging by mastering DynamoDB optimization and multi-device synchronization while navigating the critical trade-offs of distributed delivery guarantees and ZooKeeper coordination for production-ready chat architectures. * **Distributed messaging trade-offs** and delivery guarantees * **DynamoDB GSI optimization** for high-volume chat data * **ZooKeeper coordination** for real-time connection management * **Multi-device data modeling** for seamless state synchronization",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/a2e165c6-c313-4fd6-b7a7-e8852dba01a7.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Database Design",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "DynamoDB GSIs",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of DynamoDB GSIs",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Data Modeling",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Data Modeling",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Message Routing",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Kafka Limits",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Kafka Limits",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Redis PubSub",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Redis PubSub",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "ZooKeeper Role",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of ZooKeeper Role",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Service Discovery",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Consistent Hashing",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Consistent Hashing",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Chat Registry",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Chat Registry",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Device Sync",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Device IDs",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Device IDs",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Sequence Numbers",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Sequence Numbers",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Multi-Device Delivery",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Multi-Device Delivery",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 30,
+    "url": "https://wondering.app/learn/how-to-design-whatsapp-00778c2bcdcf373ebc442c10",
+    "localCoverImage": "/courses/covers/how-to-design-whatsapp.png"
+  },
+  {
+    "id": "the-art-of-meaningful",
+    "slug": "the-art-of-meaningful",
+    "title": "The Art of Meaningful Gathering",
+    "description": "Take your hosting experience to the next level by turning everyday team meetings and social dinners into purposeful, inclusive, and unforgettable experiences. * **Define a clear, bold purpose** for any meeting or event * **Design intentional guest lists** and inclusive opening rituals * **Practice generous authority** to steer discussions and keep engagement high * **End memorably** with meaningful wrap-ups rather than sudden fade-outs",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/3deb6530-8bd5-4c80-9a97-96aca3521407.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Core Purpose",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Defining Purpose",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Defining Purpose",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Thoughtful Exclusion",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Thoughtful Exclusion",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Social Events",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Warm Openings",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Warm Openings",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Authentic Connection",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Authentic Connection",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Workplace Sessions",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Meeting Design",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Meeting Design",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Active Facilitation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Active Facilitation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Dinner Celebrations",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Playful Rules",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Playful Rules",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Memorable Endings",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Memorable Endings",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 24,
+    "url": "https://wondering.app/learn/the-art-of-meaningful-gathering-f0fec08d318c3f95d28761ba",
+    "localCoverImage": "/courses/covers/the-art-of-meaningful.png"
+  },
+  {
+    "id": "architecture-patterns-and-trade",
+    "slug": "architecture-patterns-and-trade",
+    "title": "Architecture Patterns and Trade-Offs",
+    "description": "Sharpen your day-to-day engineering decisions by weighing scalability, reliability, and real-world system compromises to build more resilient production software. * **Evaluate architectural styles** for real-world production fit * **Balance critical trade-offs** between scalability, reliability, and cost * **Design fault-tolerant systems** using proven resilience strategies * **Make defensible design decisions** that scale with team growth",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/82e5abbd-4598-4d83-a2d2-f29b5238018a.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Core Paradigms",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Monoliths",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Monoliths",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Microservices",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Microservices",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Event Driven",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Event Driven",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Data Strategies",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "CQRS",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of CQRS",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Sagas",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Sagas",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. System Trade-Offs",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Consistency",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Consistency",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Resilience",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Resilience",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 21,
+    "url": "https://wondering.app/learn/architecture-patterns-and-trade-offs-1ade82a44fb38457ec24079b",
+    "localCoverImage": "/courses/covers/architecture-patterns-and-trade.png"
+  },
+  {
+    "id": "everyday-design-fundamentals-5349d3c629bce3acfc6cd7af",
+    "slug": "everyday-design-fundamentals-5349d3c629bce3acfc6cd7af",
+    "title": "Everyday Design Fundamentals",
+    "description": "Sharpen your core human-centered design principles and research skills to turn your interface experience into clearer, more intuitive digital products and a standout portfolio. - **Human-centered principles** to build clearer, more intuitive digital interfaces - **Actionable user research** to uncover real user needs effectively - **Design critique frameworks** to evaluate and refine creative work - **Portfolio-ready projects** showcasing strong foundational design thinking",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/the-design-of-everyday-things.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Core Design Principles",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Discoverability",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Discoverability",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Affordances",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Affordances",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Signifiers",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Signifiers",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-4",
+            "title": "Mapping",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Mapping",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-5",
+            "title": "Feedback",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Feedback",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-6",
+            "title": "Conceptual Models",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Conceptual Models",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Human Action Psychology",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Seven Stages",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Seven Stages",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Gulf of Execution",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Gulf of Execution",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "Gulf of Evaluation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Gulf of Evaluation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-4",
+            "title": "Visceral, Behavioral, Reflective",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Visceral, Behavioral, Reflective",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Memory and Knowledge",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Knowledge in World",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Knowledge in World",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Recognition vs Recall",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Recognition vs Recall",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Design Constraints",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Physical Constraints",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Physical Constraints",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Cultural Constraints",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Cultural Constraints",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Semantic Constraints",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Semantic Constraints",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-4",
+            "title": "Logical Constraints",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Logical Constraints",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-5",
+        "title": "5. Error and Resilience",
+        "lessons": [
+          {
+            "id": "les-5-1",
+            "title": "Slips vs Mistakes",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Slips vs Mistakes",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-2",
+            "title": "Error Prevention &amp; Recovery",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Error Prevention &amp; Recovery",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-3",
+            "title": "Resilience Engineering",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Resilience Engineering",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-6",
+        "title": "6. Design Process",
+        "lessons": [
+          {
+            "id": "les-6-1",
+            "title": "Design Thinking",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Design Thinking",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-6-2",
+            "title": "Double Diamond",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Double Diamond",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-6-3",
+            "title": "Human-Centered Design",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Human-Centered Design",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-7",
+        "title": "7. Design in Practice",
+        "lessons": [
+          {
+            "id": "les-7-1",
+            "title": "Business Constraints",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Business Constraints",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-7-2",
+            "title": "Featuritis",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Featuritis",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-7-3",
+            "title": "Complexity vs Confusion",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Complexity vs Confusion",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 75,
+    "url": "https://wondering.app/learn/everyday-design-fundamentals-5349d3c629bce3acfc6cd7af",
+    "localCoverImage": "/courses/covers/everyday-design-fundamentals-5349d3c629bce3acfc6cd7af.png"
+  },
+  {
+    "id": "cdn-for-engineers-beyond",
+    "slug": "cdn-for-engineers-beyond",
+    "title": "CDN for Engineers: Beyond Static Caching",
+    "description": "Understand how CDNs actually work in production — edge caching, origin offload, invalidation, edge security, and dynamic content acceleration — so you can reason about CDN configuration and debug edge-related issues with confidence.",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/a8399637-56cf-414f-9b44-c3b23461f971-478662a9-a28f-4a55-9c1f-b4f8a395921e.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Core Caching Mechanics",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Edge Caching and Points of Presence",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Edge Caching and Points of Presence",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Origin Offload and Cache Hit Ratio",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Origin Offload and Cache Hit Ratio",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "TTL and Cache Invalidation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of TTL and Cache Invalidation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Beyond Caching",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Edge Security and DDoS Mitigation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Edge Security and DDoS Mitigation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Dynamic Content Acceleration",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Dynamic Content Acceleration",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Common Pitfalls",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Cache Key Misconfiguration",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Cache Key Misconfiguration",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Eventual Consistency in Purge Propagation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Eventual Consistency in Purge Propagation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 21,
+    "url": "https://wondering.app/learn/cdn-for-engineers-beyond-static-caching-04dcefa25fa3847037d420c5",
+    "localCoverImage": "/courses/covers/cdn-for-engineers-beyond.png"
+  },
+  {
+    "id": "asking-good-questions-as",
+    "slug": "asking-good-questions-as",
+    "title": "Asking Good Questions as an Engineer",
+    "description": "Frame technical questions so they",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/6f1ac83d-317c-47c8-8ee0-55ed146b09fc-f845ffe8-c589-4d34-a273-ef1c9131b272.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Framing the Question",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "State your current understanding first",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of State your current understanding first",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Ask for factual, specific answers",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Ask for factual, specific answers",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Preparing to Ask",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Do a little research first",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Do a little research first",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Read the room: timing and expertise",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Read the room: timing and expertise",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. In the Moment",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Admit gaps in real time",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Admit gaps in real time",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Answering questions deepens your own understanding",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Answering questions deepens your own understanding",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 18,
+    "url": "https://wondering.app/learn/asking-good-questions-as-an-engineer-c2c97abd1b4cddc214bc3a33",
+    "localCoverImage": "/courses/covers/asking-good-questions-as.png"
+  },
+  {
+    "id": "ai-software-engineering-for",
+    "slug": "ai-software-engineering-for",
+    "title": "AI Software Engineering for Beginners",
+    "description": "Level up your Python foundation to build, test, and deploy complete web applications, from your own portfolio website to a working personal AI assistant. * **Full-stack web fundamentals**: HTML, CSS, and interactive JavaScript * **Backend API integration**: Connecting Python servers to AI models * **Professional Git workflows**: Version control and debugging best practices * **Personal portfolio**: Launching a live custom AI assistant",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/cbf83a19-127b-4249-a249-f021908c5618.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Web Foundations",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Page Structure",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Page Structure",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Visual Styling",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Visual Styling",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Client Scripts",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Client Scripts",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-4",
+            "title": "Web Foundations",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Web Foundations",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Version Control",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Tracking Changes",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Tracking Changes",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Branching Workflows",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Branching Workflows",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Backend APIs",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Server Basics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Server Basics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "API Routing",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of API Routing",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-3",
+            "title": "AI Integration",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of AI Integration",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Code Quality",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Debugging Strategies",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Debugging Strategies",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Automated Tests",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Automated Tests",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-5",
+        "title": "5. Complete Applications",
+        "lessons": [
+          {
+            "id": "les-5-1",
+            "title": "System Design",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of System Design",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-2",
+            "title": "AI Assistant",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of AI Assistant",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-3",
+            "title": "App Deployment",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of App Deployment",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 42,
+    "url": "https://wondering.app/learn/ai-software-engineering-for-beginners-0565a631c4ca5bf2b2d4e71b",
+    "localCoverImage": "/courses/covers/ai-software-engineering-for.png"
+  },
+  {
+    "id": "enterprise-llm-architecture-and",
+    "slug": "enterprise-llm-architecture-and",
+    "title": "Enterprise LLM Architecture and Deployment",
+    "description": "Learn to navigate the complexities of model serving and performance benchmarking. You will gain the technical authority needed to justify infrastructure decisions during critical enterprise architecture reviews. * **Quantify performance** using industry-standard latency and throughput benchmarks * **Optimize serving infrastructure** by balancing cost against response speed * **Select deployment strategies** that meet strict enterprise security requirements * **Justify architectural trade-offs** to stakeholders during technical reviews",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/7f72fa54-db0d-4559-930a-e137649ca115.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Architecture Choices",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Request Lifecycle",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Request Lifecycle",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Model Sizing",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Model Sizing",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Routing Mechanisms",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Routing Mechanisms",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-4",
+            "title": "The Mathematics of MoE Routing",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of The Mathematics of MoE Routing",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-5",
+            "title": "Architecture Choices",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Architecture Choices",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Performance Benchmarks",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Latency Metrics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Latency Metrics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Throughput Defense",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Throughput Defense",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "Benchmark Traps",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Benchmark Traps",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-4",
+            "title": "Performance Benchmarks",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Performance Benchmarks",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Deployment Tradeoffs",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Batching Strategies",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Batching Strategies",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Quantization Impact",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Quantization Impact",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-3",
+            "title": "Parallelism Basics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Parallelism Basics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-4",
+            "title": "Deployment Tradeoffs",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Deployment Tradeoffs",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Data Security",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Data Boundaries",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Data Boundaries",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Access Controls",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Access Controls",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Failure Handling",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Failure Handling",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-4",
+            "title": "Data Security",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Data Security",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 51,
+    "url": "https://wondering.app/learn/enterprise-llm-architecture-and-deployme-64a2f5b868ae8909929b1800",
+    "localCoverImage": "/courses/covers/enterprise-llm-architecture-and.png"
+  },
+  {
+    "id": "the-mom-test-for",
+    "slug": "the-mom-test-for",
+    "title": "The Mom Test for Product",
+    "description": "Level up your interview skills to cut through polite feedback, expose hidden assumptions, and gather the reliable evidence you need to build what truly matters.",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/the-mom-test.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Foundation",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Why Everyone Lies",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Why Everyone Lies",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Three Core Rules",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Three Core Rules",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Bad Data",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Compliments as Fool's Gold",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Compliments as Fool's Gold",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Three Types of Bad Data",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Three Types of Bad Data",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "Anchor to Specifics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Anchor to Specifics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-4",
+            "title": "Break Approval-Seeking",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Break Approval-Seeking",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-5",
+            "title": "Opinions vs. Facts",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Opinions vs. Facts",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Good Questions",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Talk About Their Life",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Talk About Their Life",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Ask About the Past",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Ask About the Past",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-3",
+            "title": "Rule Three: Talk Less, Listen More",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Rule Three: Talk Less, Listen More",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-4",
+            "title": "Dig for Emotions",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Dig for Emotions",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Validation",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Commitments &amp; Advancement",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Commitments &amp; Advancement",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Ask for Money",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Ask for Money",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Extract Problems",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Extract Problems",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-5",
+        "title": "5. Segmentation",
+        "lessons": [
+          {
+            "id": "les-5-1",
+            "title": "Find Your Who-Where",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Find Your Who-Where",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-2",
+            "title": "Serve Someone First",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Serve Someone First",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-3",
+            "title": "Who Wants It Most",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Who Wants It Most",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-6",
+        "title": "6. Process",
+        "lessons": [
+          {
+            "id": "les-6-1",
+            "title": "Big Three Goals",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Big Three Goals",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-6-2",
+            "title": "Keep It Casual",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Keep It Casual",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-6-3",
+            "title": "Capture &amp; Synthesize",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Capture &amp; Synthesize",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-6-4",
+            "title": "Zoom Out &amp; In",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Zoom Out &amp; In",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-7",
+        "title": "7. Finding People",
+        "lessons": [
+          {
+            "id": "les-7-1",
+            "title": "Snowball: Cold to Warm",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Snowball: Cold to Warm",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-7-2",
+            "title": "Framing Formula",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Framing Formula",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-8",
+        "title": "8. Execution",
+        "lessons": [
+          {
+            "id": "les-8-1",
+            "title": "Time Product Reveal",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Time Product Reveal",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-8-2",
+            "title": "Learning Machine",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Learning Machine",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 75,
+    "url": "https://wondering.app/learn/the-mom-test-for-product-0a451ddd348081f06a7ae6bd",
+    "localCoverImage": "/courses/covers/the-mom-test-for.png"
+  },
+  {
+    "id": "solve-the-rubiks-cube",
+    "slug": "solve-the-rubiks-cube",
+    "title": "Solve the Rubik's Cube",
+    "description": "A beginner-friendly path from reading a scrambled 3×3 to completing a reliable layer-by-layer solve, diagnosing mistakes, and practicing toward smooth, independent execution.",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/offline/solve-the-rubiks-cube-nukdx3.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Read the Cube",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Pieces Tell You Their Homes",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Pieces Tell You Their Homes",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Read and Execute Moves",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Read and Execute Moves",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Build Two Layers",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Stage the Daisy",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Stage the Daisy",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Match the White Cross",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Match the White Cross",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "Seat the White Corners",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Seat the White Corners",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-4",
+            "title": "Insert Middle Edges",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Insert Middle Edges",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-5",
+            "title": "Complete the First Two Layers",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Complete the First Two Layers",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Finish the Last Layer",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Build the Yellow Cross",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Build the Yellow Cross",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Turn Yellow Up",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Turn Yellow Up",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-3",
+            "title": "Put Corners in Place",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Put Corners in Place",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-4",
+            "title": "Cycle the Final Edges",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Cycle the Final Edges",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-5",
+            "title": "Close Out the Last Layer",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Close Out the Last Layer",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Solve Independently",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Diagnose and Recover",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Diagnose and Recover",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Practice for Fluency",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Practice for Fluency",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Coach Your Next Five Solves",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Coach Your Next Five Solves",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 45,
+    "url": "https://wondering.app/learn/solve-the-rubiks-cube-nukdx3",
+    "localCoverImage": "/courses/covers/solve-the-rubiks-cube.png"
+  },
+  {
+    "id": "securing-software-development-lifecycles",
+    "slug": "securing-software-development-lifecycles",
+    "title": "Securing Software Development Lifecycles",
+    "description": "Integrate rigorous defensive research into your engineering workflow to architect resilient systems. This course bridges high-level security theory with practical, production-grade implementation across the entire pipeline. * **Architecting resilient CI/CD pipelines** through automated security integration * **Implementing advanced threat modeling** for complex distributed systems * **Governing supply chain security** via rigorous dependency analysis * **Enforcing shift-left security** with custom automated policy enforcement",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/09b8993b-4b60-4276-8610-98abda0a58d3.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Foundations",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Threat Modeling",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Threat Modeling",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Secure Coding",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Secure Coding",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Automation",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Static Analysis",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Static Analysis",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Dependency Management",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Dependency Management",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Deployment",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Pipeline Security",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Pipeline Security",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Continuous Monitoring",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Continuous Monitoring",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 18,
+    "url": "https://wondering.app/learn/securing-software-development-lifecycles-16c85b4ca1f04d1788553285",
+    "localCoverImage": "/courses/covers/securing-software-development-lifecycles.png"
+  },
+  {
+    "id": "penetration-testing-for-azure",
+    "slug": "penetration-testing-for-azure",
+    "title": "Penetration Testing for Azure DevOps",
+    "description": "Bridge your expertise in traditional testing and Azure DevOps by mastering cloud-native security audits and automating robust defense mechanisms directly within your CI/CD pipelines. * **Securing CI/CD pipelines** against unauthorized code injection * **Automating security testing** within automated deployment workflows * **Cloud-native security audits** for Azure infrastructure and services * **Exploiting misconfigurations** in DevOps permissions and access controls",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/8298858f-0b29-47e3-9af2-8e532b55da44.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Pipeline Security",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Pipeline Attacks",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Pipeline Attacks",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Secret Exposure",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Secret Exposure",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Pipeline Security",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Pipeline Security",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Cloud Auditing",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Access Audits",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Access Audits",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Infrastructure Flaws",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Infrastructure Flaws",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Automated Testing",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Static Analysis",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Static Analysis",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Dynamic Scanning",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Dynamic Scanning",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Team Defense",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Threat Modeling",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Threat Modeling",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Security Champions",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Security Champions",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 27,
+    "url": "https://wondering.app/learn/penetration-testing-for-azure-devops-ee22d09768ead4a7114186dd",
+    "localCoverImage": "/courses/covers/penetration-testing-for-azure.png"
+  },
+  {
+    "id": "beginner-long-term-investing",
+    "slug": "beginner-long-term-investing",
+    "title": "Beginner Long-Term Investing Framework",
+    "description": "Upgrade your casual buy-and-hold approach into an engineered portfolio strategy by mastering the core models to evaluate fees, analyze assets, and diversify systematically. - **Evaluate index funds and ETFs** using expense ratios - **Compare individual stocks systematically** against low-cost index funds - **Build an automated, diversified portfolio** tailored for long-term growth - **Decode financial statements and fees** with clear mental models",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/32cdc2c8-7305-40fd-b70a-3c55a6fd3460.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Core Basics",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Compounding",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Compounding",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Diversification",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Diversification",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Evaluating Funds",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Index Funds",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Index Funds",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "ETFs",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of ETFs",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-3",
+            "title": "Expense Ratios",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Expense Ratios",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Evaluating Stocks",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Stock Ownership",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Stock Ownership",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Financial Basics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Financial Basics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Portfolio Strategy",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Asset Allocation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Asset Allocation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Rebalancing",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Rebalancing",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 27,
+    "url": "https://wondering.app/learn/beginner-long-term-investing-framework-47b03acda6d07a940ba8ec30",
+    "localCoverImage": "/courses/covers/beginner-long-term-investing.png"
+  },
+  {
+    "id": "cognitive-psychology-for-daily",
+    "slug": "cognitive-psychology-for-daily",
+    "title": "Cognitive Psychology for Daily Productivity",
+    "description": "Discover practical mental models to eliminate friction, design resilient personal habits, and optimize your daily workflow with ease.",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/13b709e6-74cd-471e-9294-dcb503d7741f.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Attention",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Focus",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Focus",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Distraction",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Distraction",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Memory",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Retention",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Retention",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Recall",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Recall",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Habits",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Triggers",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Triggers",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Routines",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Routines",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Action",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Willpower",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Willpower",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Momentum",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Momentum",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 24,
+    "url": "https://wondering.app/learn/cognitive-psychology-for-daily-productiv-77ccb9139ceb4f6e6fd7449b",
+    "localCoverImage": "/courses/covers/cognitive-psychology-for-daily.png"
+  },
+  {
+    "id": "the-creative-technologist-playbook",
+    "slug": "the-creative-technologist-playbook",
+    "title": "The Creative Technologist Playbook",
+    "description": "Master the intersection of media theory and engineering to build wundr.fun through strategic creative collaboration and high-level interactive design. * **Media theory application** for deeper interactive design * **Strategic frameworks** to scale the wundr.fun ecosystem * **Collaborative workflows** bridging engineering and creative vision * **Cultural analysis** to position products within tech trends",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/08955754-b4ff-4d62-8801-5889b0edc675.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Media Theory",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "The Medium",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of The Medium",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Finite Feeds",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Finite Feeds",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Playful Agency",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Action Aesthetics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Action Aesthetics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Micro Challenges",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Micro Challenges",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Creative Strategy",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Clear Positioning",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Clear Positioning",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Iterative Magic",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Iterative Magic",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Digital Craft",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Handmade Web",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Handmade Web",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "Convivial Systems",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Convivial Systems",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 24,
+    "url": "https://wondering.app/learn/the-creative-technologist-playbook-ddc1f8e84e9bbb4893dc9f64",
+    "localCoverImage": "/courses/covers/the-creative-technologist-playbook.png"
+  },
+  {
+    "id": "llm-fundamentals-dd100aabe0be6e58837f4b31",
+    "slug": "llm-fundamentals-dd100aabe0be6e58837f4b31",
+    "title": "LLM Fundamentals",
+    "description": "Master the inner workings of AI to build your own projects and launch a future-proof career, even with zero prior coding experience. * **Core mechanics** of how models process and generate text * **Prompt engineering** to improve outputs for student assignments * **Basic coding** to build simple AI-powered study tools * **Foundational knowledge** for entry-level AI career opportunities",
+    "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/deep-dive-into-llms-like-chatgpt-andrej-karpathy.png",
+    "category": "Software Engineering",
+    "author": "Wondering",
+    "sections": [
+      {
+        "id": "sec-1",
+        "title": "1. Training Pipeline",
+        "lessons": [
+          {
+            "id": "les-1-1",
+            "title": "Three Training Stages",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Three Training Stages",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-2",
+            "title": "Internet Data Curation",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Internet Data Curation",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-3",
+            "title": "Tokenization Fundamentals",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Tokenization Fundamentals",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-4",
+            "title": "Neural Network Training",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Neural Network Training",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-5",
+            "title": "Base Models Explained",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Base Models Explained",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-1-6",
+            "title": "Text Generation Process",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Text Generation Process",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-2",
+        "title": "2. Post-Training",
+        "lessons": [
+          {
+            "id": "les-2-1",
+            "title": "Supervised Fine-Tuning",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Supervised Fine-Tuning",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-2-2",
+            "title": "Conversation Tokenization",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Conversation Tokenization",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-3",
+        "title": "3. Limitations",
+        "lessons": [
+          {
+            "id": "les-3-1",
+            "title": "Hallucinations",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Hallucinations",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-2",
+            "title": "Tool Use Integration",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Tool Use Integration",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-3",
+            "title": "Computational Limits",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Computational Limits",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-3-4",
+            "title": "Tokenization Blind Spots",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Tokenization Blind Spots",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-4",
+        "title": "4. Reinforcement Learning",
+        "lessons": [
+          {
+            "id": "les-4-1",
+            "title": "Reinforcement Learning Basics",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Reinforcement Learning Basics",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-2",
+            "title": "RL in Math &amp; Code",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of RL in Math &amp; Code",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-3",
+            "title": "Chain of Thought",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Chain of Thought",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-4",
+            "title": "RLHF for Subjective Tasks",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of RLHF for Subjective Tasks",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-4-5",
+            "title": "RLHF Limitations",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of RLHF Limitations",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sec-5",
+        "title": "5. Practical Insights",
+        "lessons": [
+          {
+            "id": "les-5-1",
+            "title": "Mental Model of AI",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Mental Model of AI",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-2",
+            "title": "LLM Ecosystem",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of LLM Ecosystem",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          },
+          {
+            "id": "les-5-3",
+            "title": "Future Capabilities",
+            "durationMinutes": 3,
+            "readTime": "~3 min read",
+            "difficulty": "intermediate",
+            "keyTakeaways": [
+              "Understand the core mechanisms of Future Capabilities",
+              "Identify practical architectural patterns and trade-offs"
+            ]
+          }
+        ]
+      }
+    ],
+    "estimatedMinutes": 60,
+    "url": "https://wondering.app/learn/llm-fundamentals-dd100aabe0be6e58837f4b31",
+    "localCoverImage": "/courses/covers/llm-fundamentals-dd100aabe0be6e58837f4b31.png"
+  }
+]

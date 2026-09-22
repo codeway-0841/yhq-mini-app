@@ -49,6 +49,8 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-formula-favs',
   // Grafik quruvchi workspace'i (ifodalar/slayderlar — user-scoped)
   'yhq-graph',
+  // Wondering Studio o'quv yo'li, xatcho'plar va qaydlar (user-scoped)
+  'kivvi-wonder-studio-v2',
   // Matematik doska sessiyasi (Faza 1 skelet — features/math-board)
   'yhq-math-board',
 ] as const

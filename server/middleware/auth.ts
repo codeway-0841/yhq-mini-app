@@ -241,6 +241,9 @@ export async function telegramAuth(req: Request, res: Response, next: NextFuncti
         if (id) (req as { userId?: string }).userId = id
       } else if (bearer) {
         await resolveBearer(bearer, req)
+      } else if (process.env['NODE_ENV'] === 'development') {
+        // Dev muhitida (localhost) qulay test qilish uchun default dev user
+        ;(req as { userId?: string }).userId = '999999999'
       }
       next()
       return

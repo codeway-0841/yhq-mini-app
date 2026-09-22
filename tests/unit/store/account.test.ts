@@ -92,6 +92,7 @@ describe('resetAccountState', () => {
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-server-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-session')   // Bearer sessiya ham reset'da o'chadi (MF-3)
+    expect(ACCOUNT_STORAGE_KEYS).toContain('kivvi-wonder-studio-v2')
   })
 
   it('test chizmalarini account switch paytida prefix bo‘yicha tozalaydi', () => {

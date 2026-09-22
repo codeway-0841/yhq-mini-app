@@ -150,13 +150,31 @@ export const aiCoursesRepository = {
     `)
     return rows.map((r) => ({ ...mapCourse(r), completedLessons: Number(r.completed_lessons ?? 0) }))
   },
-
   async getById(id: number): Promise<AiCourseRow | null> {
     const rows = await executeRows<Record<string, unknown>>(sql`
       SELECT id, user_id, title, topic, input_kind, input_ref, lesson_length, language, payload, created_at
       FROM ai_courses WHERE id = ${id}
     `)
     return rows[0] ? mapCourse(rows[0]) : null
+  },
+
+  /** Faqat egasi o'chira oladi (progress CASCADE). */
+  async deleteCourse(id: number, userId: string): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      DELETE FROM ai_courses WHERE id = ${id} AND user_id = ${userId} RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  /** Kurs payloadini yangilash (masalan, background hydration darslarni boyitganda) */
+  async updateCoursePayload(id: number, payload: AiCoursePayload): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE ai_courses
+      SET payload = ${JSON.stringify(payload)}::jsonb
+      WHERE id = ${id}
+      RETURNING id
+    `)
+    return rows.length > 0
   },
 
   /** Kurs bo'yicha mening yakunlangan darslarim (lessonId → progress) */

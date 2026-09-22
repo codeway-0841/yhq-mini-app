@@ -20,6 +20,8 @@
     <meta property="og:title" content="KIVVI" />
     <meta property="og:image" content="/images/og-cover.png" />
     <meta property="og:description" content="Barcha fanlar bo'yicha testlar, rasmiy imtihon simulyatori va jonli PvP duellar — bitta ilovada." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,400..900;1,400..900&family=Share+Tech+Mono&family=Slabo+27px&family=Young+Serif&display=swap" rel="stylesheet">
     <title>KIVVI</title>
     <script>
       /* Toza URL: app.kivvi.uz/app.html → app.kivvi.uz/ — bundle yuklanishini
@@ -54,12 +56,12 @@
       ustiga yozib yuborardi va localhost'da ilova LoginPage'da qolardi.
     -->
     <script type="module">
-      // Dev mock: inject fake Telegram user when ?tg=1 query param is provided on localhost
+      // Dev mock: inject fake Telegram user on localhost by default (unless ?notg=1 is set)
       ;(function() {
         var isLocal = window.location.protocol === 'http:' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
         var search = window.location.search || ''
         var hash = window.location.hash || ''
-        var forceTg = search.includes('tg=1') || hash.includes('tg=1')
+        var forceTg = isLocal && !search.includes('notg=1') && !hash.includes('notg=1')
         if (isLocal && forceTg && (!window.Telegram || !window.Telegram.WebApp || !window.Telegram.WebApp.initData)) {
           var backButtonCallbacks = []
           var mainButtonCallbacks = []

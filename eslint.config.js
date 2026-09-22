@@ -10,7 +10,9 @@ export default tseslint.config(
     ignores: [
       'node_modules/**', 'dist/**', 'api/**', 'server/dist/**', 'android/**',
       'migrations/**', '*.config.*', 'graphify-out/**', 'coverage/**',
-      '.vercel/**', '.claude/**', '.agents/**', '.drizzle/**', 'public/**', 'scratch/**',
+      '.vercel/**', '.claude/**', '.agents/**', '.codex/**', '.opencode/**', '.history/**', '.drizzle/**', 'public/**', 'scratch/**',
+      'content-banks/**', 'playwright-report/**', 'test-results/**', 'spike/**', 'docs/**', 'infra/**', '.verify-shots/**',
+      'landing/**', 'scripts/wondering-bundle.js',
       // Lokal diagnostika artefaktlari (deployed chunk'lar, loglar — gitignore'da ham bor)
       'tmp/**',
     ],
@@ -28,14 +30,16 @@ export default tseslint.config(
     },
   },
   {
-    // Node build skriptlari (.mjs — TS qamrovda emas, `no-undef` faol):
-    // browser globals'lari yo'q, Node global'lari kerak (CI lint error: 'process').
-    files: ['scripts/**/*.mjs'],
+    // Node build va browser automation skriptlari (.js/.mjs — TS qamrovda emas, `no-undef` faol):
+    files: ['scripts/**/*.{js,mjs}'],
     languageOptions: {
-      // fetch/Buffer/setTimeout — Node 18+ global (build skriptlari R2/S3'ga yuklaydi)
       globals: {
         process: 'readonly', console: 'readonly', fetch: 'readonly',
-        Buffer: 'readonly', setTimeout: 'readonly',
+        Buffer: 'readonly', setTimeout: 'readonly', setInterval: 'readonly',
+        clearInterval: 'readonly', clearTimeout: 'readonly', URL: 'readonly',
+        window: 'readonly', document: 'readonly', localStorage: 'readonly',
+        sessionStorage: 'readonly', Event: 'readonly', KeyboardEvent: 'readonly',
+        navigator: 'readonly',
       },
     },
   },

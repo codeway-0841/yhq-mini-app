@@ -12,6 +12,9 @@ import {
   assertOutlineSemantics,
   generateCourseOutlineMeta,
   generateCourseOutline,
+  generateCourseBlueprintMeta,
+  buildPayloadFromBlueprint,
+  generateFastCourse,
 } from '../../../server/modules/ai-courses/meta-generator'
 import { buildCourseOutline as buildMockOutline } from '../../../server/modules/ai-courses/mock-provider'
 import {
@@ -42,6 +45,7 @@ function cannedOutlineJson(): string {
   const mock = buildMockOutline(BASE)
   return JSON.stringify({
     topic: 'Ingliz tili',
+    outcomes: ['Birinchi natija', 'Ikkinchi natija', 'Uchinchi natija', 'Tortinchi natija'],
     sections: mock.sections.map((s) => ({
       title: s.title,
       lessons: s.lessons.map((l) => ({ title: l.title, tldr: l.tldr })),
@@ -60,7 +64,9 @@ function cannedLessonsJson(): string {
 function stubFlow() {
   return (async (_url: unknown, init?: { body?: string }) => {
     const body = String((init as { body?: string })?.body ?? '')
-    const content = body.includes('Kurs rejasi') ? cannedOutlineJson() : cannedLessonsJson()
+    const content = (body.includes('Kurs rejasi') || body.includes('Course plan') || body.includes('AI Plan Curriculum Brief'))
+      ? cannedOutlineJson()
+      : cannedLessonsJson()
     return {
       ok: true,
       status: 200,
@@ -99,6 +105,15 @@ describe('meta-generator — extractJson', () => {
 
   it('top-level array (section darslari)', () => {
     expect(extractJson('[{"a":1},{"a":2}]')).toEqual([{ a: 1 }, { a: 2 }])
+  })
+
+  it('JSON’dan keyingi izoh kesib tashlanadi (model qo‘shimchasi)', () => {
+    expect(extractJson('[{"a":1}] Mana darslar tayyor!')).toEqual([{ a: 1 }])
+    expect(extractJson('Salom! {"a":3} Tamom.')).toEqual({ a: 3 })
+  })
+
+  it('string ichidagi qavslar adashtirmaydi', () => {
+    expect(extractJson('{"t":"a{b}c[d]"} x')).toEqual({ t: 'a{b}c[d]' })
   })
 
   it('JSON yo‘q → throw', () => {
@@ -140,6 +155,14 @@ describe('meta-generator — generate (stub fetch)', () => {
     expect(AiCoursePayloadSchema.safeParse(payload).success).toBe(true)
     expect(aiCourseLessonCount(payload)).toBe(9)
     expect(topic).toBe('Ingliz tili')
+    // ID namespace: section'lararo takror yo'q
+    const ids = payload.sections.flatMap((s) => s.lessons.flatMap((l) => [
+      l.id, ...l.practices.map((p) => p.id), ...l.knowledgeCards.map((c) => c.id),
+    ]))
+    expect(new Set(ids).size).toBe(ids.length)
+    expect(payload.sections[1].lessons[2].practices[0].id).toMatch(/^s2-l3-/)
+    // outcomes o'tadi
+    expect(payload.outcomes).toHaveLength(4)
     // id/ord — server deterministik beradi
     expect(payload.sections[1].lessons[2].id).toBe('s2-l3')
     expect(payload.sections[1].lessons[2].ord).toBe(2)
@@ -159,4 +182,75 @@ describe('meta-generator — generate (stub fetch)', () => {
     expect(AiCoursePayloadSchema.safeParse(payload).success).toBe(true)
     expect(generator).toBe('mock')
   })
+
+  it('Wondering curriculum brief and personalization in buildSectionsPrompt', () => {
+    const prompt = buildSectionsPrompt({
+      ...BASE,
+      learnerRole: 'Software Engineer',
+      backgroundLevel: 'College-level',
+      learningGoal: 'Build distributed systems',
+    })
+    expect(prompt.user).toContain('[AI Plan Curriculum Brief]')
+    expect(prompt.user).toContain('Learner role: Software Engineer')
+    expect(prompt.user).toContain('Background level: College-level')
+    expect(prompt.user).toContain('Learning goal: Build distributed systems')
+    expect(prompt.user).toContain('The first lesson has to earn the second')
+    expect(prompt.user).toContain('"hook"')
+    expect(prompt.user).toContain('"meaning"')
+  })
+
+  it('Wondering sentence construction and [[term|definition]] in buildSectionLessonsPrompt', () => {
+    const prompt = buildSectionLessonsPrompt(
+      { ...BASE, learnerRole: 'Student' },
+      '1. Asoslar',
+      [{ title: 'Dars 1', tldr: 'Qisqa tldr 1', hook: 'Ziddiyatli savol?', meaning: 'Nega muhim' }],
+    )
+    expect(prompt.user).toContain('WONDERING GAP TUZISH VA MATN QOIDALARI')
+    expect(prompt.user).toContain('QALIN BOSHLANG\'ICH ATAMALAR')
+    expect(prompt.user).toContain('[[atama|qisqa tushuntirish]]')
+    expect(prompt.user).toContain('Hook: Ziddiyatli savol?')
+  })
+
+  it('mock provider creates lessons with hook, meaning, and [[term|definition]] keywords', () => {
+    const mock = buildMockOutline(BASE)
+    const firstLesson = mock.sections[0].lessons[0]
+    expect(firstLesson.hook).toBeDefined()
+    expect(firstLesson.meaning).toBeDefined()
+    expect(firstLesson.pages[0].kind).toBe('text')
+    if (firstLesson.pages[0].kind === 'text') {
+      expect(firstLesson.pages[0].body).toContain('**Birinchi prinsiplar**')
+      expect(firstLesson.pages[0].body).toContain('[[')
+      expect(firstLesson.pages[0].body).toContain('|')
+    }
+  })
+
+  it('generateCourseBlueprintMeta + buildPayloadFromBlueprint produces valid 3x3 payload in single step', async () => {
+    const stub = stubFetch(cannedOutlineJson())
+    const { blueprint, topic } = await generateCourseBlueprintMeta(BASE, stub)
+    expect(topic).toBe('Ingliz tili')
+    expect(blueprint.sections).toHaveLength(3)
+    expect(blueprint.sections[0].lessons).toHaveLength(3)
+
+    const payload = buildPayloadFromBlueprint(BASE, blueprint)
+    expect(AiCoursePayloadSchema.safeParse(payload).success).toBe(true)
+    expect(aiCourseLessonCount(payload)).toBe(9)
+    expect(payload.outcomes).toHaveLength(4)
+
+    const firstLesson = payload.sections[0].lessons[0]
+    expect(firstLesson.id).toBe('s1-l1')
+    expect(firstLesson.pages).toHaveLength(3)
+    expect(firstLesson.practices).toHaveLength(3)
+    expect(firstLesson.practices[0].kind).toBe('mcq')
+    expect(firstLesson.knowledgeCards).toHaveLength(2)
+  })
+
+  it('generateFastCourse returns meta generator and blueprint on successful stub', async () => {
+    const stub = stubFetch(cannedOutlineJson())
+    const res = await generateFastCourse(BASE, stub)
+    expect(res.generator).toBe('meta')
+    expect(res.blueprint).toBeDefined()
+    expect(res.payload.sections).toHaveLength(3)
+    expect(aiCourseLessonCount(res.payload)).toBe(9)
+  })
 })
+

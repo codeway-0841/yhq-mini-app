@@ -38,28 +38,34 @@ const T = {
       'bilimni mashqlar orqali mustahkamlab, xatolarni to‘g‘rilaysiz',
       'mavzuni mustaqil qo‘llay oladigan darajaga chiqasiz',
     ],
-    lessonKinds: ['Kirish va katta rasm', 'Asosiy tushunchalar', 'Amaliyot va xulosa'],
+    lessonKinds: ['Birinchi prinsiplar', 'Asosiy mexanizmlar', 'Amaliy sinov va xulosa'],
+    hook: (topic: string, kind: string) =>
+      `${topic} tizimida «${kind}» tamoyili buzilsa, butun jarayon qayerda to‘xtab qoladi?`,
+    meaning: (topic: string, _kind: string) =>
+      `Ushbu qadam ${topic} bo‘yicha nazariya va real amaliyot o‘rtasidagi ko‘prikdir. Uning yordamida ortiqcha kognitiv yuklamasiz to‘g‘ri qaror qabul qilish osonlashadi.`,
+    objective: (topic: string, kind: string) =>
+      `${topic} doirasida «${kind}» tamoyilini tushunib, mustaqil amaliyotda to‘g‘ri qo‘llash.`,
+    likelyConfusion: (topic: string, _kind: string) =>
+      `Ko‘pchilik ${topic} ni shunchaki quruq faktlarni yodlash deb o‘ylaydi, ammo aslida tub prinsiplarni tushunish kifoya.`,
     tldr: (topic: string, kind: string) =>
       `${topic} bo‘yicha «${kind}» darsi: eng muhim 3 g‘oyani 3 daqiqada o‘zlashtirasiz, keyin mashqlarda sinaysiz.`,
     page1Heading: 'Nega bu muhim?',
     page1: (topic: string) =>
-      `${topic} ni o‘rganishda eng katta xato — hammasini birdan yodlashga urinish. ` +
-      `Miya kichik bo‘laklarda va takrorlash bilan mustahkamlaydi. ` +
-      `Shuning uchun bu dars faqat 3 ta asosiy g‘oyaga bo‘lingan: ularni tushunsangiz, qolgan tafsilotlar o‘z-o‘zidan yopishadi.`,
-    visualHeading: 'O‘zlashtirish retsepti',
+      `**Birinchi prinsiplar** — ${topic} bo‘yicha murakkablikni chetga surib, eng tub [[fundamental aksiomalar|Boshqa dalil talab qilmaydigan eng asosiy haqiqatlar]]dan boshlash lozim.\n\n` +
+      `**Kognitiv tejamkorlik** — Miya butun tizimni birdaniga emas, kichik mantiqiy bo‘laklarda o‘zlashtiradi. Asosiy ziddiyatlarni anglab yetish orqali chalkashliklardan saqlanasiz.`,
+    visualHeading: 'O‘zlashtirish balansi',
     visualItems: [
       { label: 'Kichik bo‘lak', value: 85 },
       { label: 'Takrorlash', value: 70 },
       { label: 'Amaliyot', value: 60 },
       { label: 'Dam olish', value: 40 },
     ],
-    page3Heading: 'Bugun nima qilasiz?',
+    page3Heading: 'Amaliy qo‘llash',
     page3: (topic: string) =>
-      `1) Dars matnini o‘qing va TLDR'dagi 3 g‘oyani o‘z so‘zlaringiz bilan takrorlang. ` +
-      `2) Mashqlarni yeching — xato qilish normal, xato esda qolishning eng tez yo‘li. ` +
-      `3) Bilim kartalarini saqlab qo‘ying: ular ${topic} bo‘yicha shaxsiy xulosangizga aylanadi.`,
+      `**Faol sinov** — Nazariyani o‘qib bo‘lgach, darhol [[faol eslash|Kitobga qaramasdan ma'lumotni xotiradan qayta chaqirib olish usuli]] orqali o‘z bilimingizni sinab ko‘ring.\n\n` +
+      `**Xatolar tahlili** — Dars davomidagi har bir noaniqlik ${topic} mavzusini yanada mustahkam egallashingiz uchun signaldir.`,
     mcqPrompt: (topic: string) => `${topic} ni samarali o‘rganish uchun qaysi usul eng to‘g‘ri?`,
-    mcqOptions: ['Hammasini bir kunda yodlash', 'Kichik bo‘laklarda + takrorlash', 'Faqat videokörish', 'Imtihon kuni o‘qish'],
+    mcqOptions: ['Hammasini bir kunda yodlash', 'Kichik bo‘laklarda + takrorlash', 'Faqat videoko‘rish', 'Imtihon kuni o‘qish'],
     clozePrompt: 'Jumlani to‘ldiring',
     clozeTemplate: 'Mustahkam bilim {{c1}} orqali quriladi va {{c2}} bilan saqlanadi.',
     clozeBlanks: [{ id: 'c1', answer: 'kichik qadamlar' }, { id: 'c2', answer: 'takrorlash' }],
@@ -72,6 +78,12 @@ const T = {
       { title: 'Oltin qoida', body: 'Har kuni ozgina — lekin har kuni. Davomiylik intensivlikdan kuchli.' },
       { title: 'Xato — dars', body: 'Xato qilgan joyingizni yozib oling: u keyingi takrorlash ro‘yxatining boshi.' },
     ],
+    outcomes: [
+      '{topic} asosiy tushunchalarini tushunasiz',
+      'Bilimni mashqlar orqali mustahkamlaysiz',
+      'Xatolarni topib to‘g‘rilashni o‘rganasiz',
+      'Mavzuni mustaqil qo‘llay olasiz',
+    ],
   },
   ru: {
     sections: ['Прочная основа', 'Практический навык', 'Глубокое мастерство'],
@@ -80,14 +92,21 @@ const T = {
       'закрепите знания упражнениями и разберёте ошибки',
       'выйдете на уровень самостоятельного применения темы',
     ],
-    lessonKinds: ['Введение и общая картина', 'Ключевые понятия', 'Практика и выводы'],
+    lessonKinds: ['Первые принципы', 'Базовые механизмы', 'Практика и синтез'],
+    hook: (topic: string, kind: string) =>
+      `Если в теме «${topic}» нарушить принцип «${kind}», в каком месте откажет вся система?`,
+    meaning: (topic: string, _kind: string) =>
+      `Этот шаг соединяет теорию с практикой в теме ${topic}. С ним вы учитесь принимать взвешенные решения без перегрузки.`,
+    objective: (topic: string, kind: string) =>
+      `Понять принцип «${kind}» в контексте ${topic} и научиться применять его на практике.`,
+    likelyConfusion: (topic: string, _kind: string) =>
+      `Многие считают, что ${topic} требует механического заучивания, забывая про базовые ментальные модели.`,
     tldr: (topic: string, kind: string) =>
       `Урок «${kind}» по теме ${topic}: 3 главные идеи за 3 минуты, затем проверка упражнениями.`,
     page1Heading: 'Почему это важно?',
     page1: (topic: string) =>
-      `Главная ошибка в изучении темы ${topic} — пытаться выучить всё сразу. ` +
-      `Мозг закрепляет знания малыми порциями и повторением. ` +
-      `Поэтому урок разбит всего на 3 ключевые идеи: поняв их, вы легко присоедините остальные детали.`,
+      `**Первые принципы** — Освоение темы ${topic} начинается с отсечения шума и выделения [[базовых аксиом|Исходные положения, не требующие доказательств]].\n\n` +
+      `**Когнитивный баланс** — Мозг усваивает систему небольшими частями, понимая компромиссы и реальные ограничения.`,
     visualHeading: 'Рецепт усвоения',
     visualItems: [
       { label: 'Малые шаги', value: 85 },
@@ -95,11 +114,10 @@ const T = {
       { label: 'Практика', value: 60 },
       { label: 'Отдых', value: 40 },
     ],
-    page3Heading: 'Что сделаете сегодня?',
+    page3Heading: 'Практическое применение',
     page3: (topic: string) =>
-      `1) Прочитайте текст и перескажите 3 идеи из TLDR своими словами. ` +
-      `2) Выполните упражнения — ошибаться нормально, ошибка быстрее всего запоминается. ` +
-      `3) Сохраните карточки знаний: они станут вашим личным конспектом по теме ${topic}.`,
+      `**Активное воспоминание** — Проверив понимание через [[активное извлечение|Воспроизведение материала по памяти без подсказок]], вы закрепляете нейронные связи.\n\n` +
+      `**Разбор ошибок** — Любая неточность при изучении темы ${topic} указывает на точку будущего роста.`,
     mcqPrompt: (topic: string) => `Какой способ эффективнее для изучения темы ${topic}?`,
     mcqOptions: ['Выучить всё за день', 'Малые шаги + повторение', 'Только смотреть видео', 'Учить в день экзамена'],
     clozePrompt: 'Заполните пропуски',
@@ -113,6 +131,12 @@ const T = {
     cards: [
       { title: 'Золотое правило', body: 'Каждый день понемногу — но каждый день. Регулярность сильнее интенсивности.' },
       { title: 'Ошибка — урок', body: 'Запишите место ошибки: это начало списка для следующего повторения.' },
+    ],
+    outcomes: [
+      'Поймёте ключевые понятия темы {topic}',
+      'Закрепите знания упражнениями',
+      'Научитесь находить и исправлять ошибки',
+      'Сможете применять тему самостоятельно',
     ],
   },
 } satisfies Record<Lang, unknown>
@@ -174,6 +198,10 @@ export function buildCourseOutline(input: AiCourseCreateInput): AiCoursePayload 
         // QISQA dars nomi (mavzu takrorlanmaydi — kurs sarlavhasida bor)
         title: kind,
         tldr: t.tldr(topic, kind),
+        hook: t.hook(topic, kind),
+        meaning: t.meaning(topic, kind),
+        objective: t.objective(topic, kind),
+        likelyConfusion: t.likelyConfusion(topic, kind),
         pages: [
           { kind: 'text' as const, heading: t.page1Heading, body: t.page1(topic) },
           {
@@ -202,6 +230,7 @@ export function buildCourseOutline(input: AiCourseCreateInput): AiCoursePayload 
   // Sxemada `goal` yo'q — tozalaymiz (ichki meta edi)
   const payload = {
     version: 1 as const,
+    outcomes: t.outcomes.map((o) => o.replace('{topic}', topic)),
     sections: sections.map(({ goal: _g, ...s }) => s),
   }
   const parsed = AiCoursePayloadSchema.safeParse(payload)
