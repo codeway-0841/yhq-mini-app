@@ -15,7 +15,6 @@ import {
   NotebookText,
   Camera,
   LineChart,
-  Sparkles,
   Compass,
   PenLine,
 } from 'lucide-react'
@@ -82,7 +81,6 @@ export default function ModesPage() {
       : []),
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
-    { icon: Sparkles,      label: tt('aiCourseTitle'),  onClick: () => navigate('/ai-kurslar') },
     { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
   ]
 

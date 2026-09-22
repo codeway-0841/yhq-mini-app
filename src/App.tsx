@@ -45,10 +45,6 @@ const formulasChunk        = () => import('./features/formulas/FormulasPage')
 const searchChunk           = () => import('./features/search/SearchPage')
 const aiTestHubChunk        = () => import('./features/ai-test/AiTestHub')
 const aiTestSessionChunk    = () => import('./features/ai-test/AiTestSession')
-const aiCoursesHubChunk      = () => import('./features/ai-courses/AiCoursesHub')
-const aiCourseCreateChunk    = () => import('./features/ai-courses/AiCourseCreate')
-const aiCourseDetailChunk    = () => import('./features/ai-courses/AiCourseDetail')
-const aiCourseLessonChunk    = () => import('./features/ai-courses/AiCourseLesson')
 const snapSolveChunk        = () => import('./features/ai-tutor/SnapSolveHub')
 const notFoundChunk        = () => import('./shared/components/NotFound')
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
@@ -62,6 +58,7 @@ const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
 const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
 const graphChunk           = () => import('./features/graph/GraphPage')
+const wonderStudioChunk    = () => import('./features/wonder-studio/WonderStudioPage')
 const mathBoardChunk       = () => import('./features/math-board/MathBoardPage')
 
 const TestPage        = lazy(testPageChunk)
@@ -87,10 +84,6 @@ const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
 const AiTestHub       = lazy(aiTestHubChunk)
 const AiTestSession   = lazy(aiTestSessionChunk)
-const AiCoursesHub    = lazy(aiCoursesHubChunk)
-const AiCourseCreate  = lazy(aiCourseCreateChunk)
-const AiCourseDetail  = lazy(aiCourseDetailChunk)
-const AiCourseLesson  = lazy(aiCourseLessonChunk)
 const SnapSolveHub    = lazy(snapSolveChunk)
 const NotFound        = lazy(notFoundChunk)
 const Onboarding      = lazy(onboardingChunk)
@@ -101,6 +94,7 @@ const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
 const LibraryReaderPage = lazy(libraryReaderChunk)
 const GraphPage        = lazy(graphChunk)
+const WonderStudioPage = lazy(wonderStudioChunk)
 const MathBoardPage    = lazy(mathBoardChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
@@ -114,8 +108,7 @@ const routeChunkPrefetchers = [
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
-  aiCoursesHubChunk, aiCourseCreateChunk, aiCourseDetailChunk, aiCourseLessonChunk,
-  graphChunk, mathBoardChunk,
+  graphChunk, wonderStudioChunk, mathBoardChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
 ]
@@ -144,6 +137,16 @@ function Layout({ children }: { children: ReactNode }) {
     }
   }, [navigate])
 
+  if (pathname.startsWith('/wonder')) {
+    return (
+      <div className="w-full h-screen overflow-hidden bg-[#F6F4EE] dark:bg-[#150F0D]">
+        <Suspense fallback={<PageLoader />}>
+          {children}
+        </Suspense>
+      </div>
+    )
+  }
+
   return (
     // MUHIM (2026-09-01 sticky incident): bu konteynerlarda overflow-y:auto/hidden
     // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
@@ -154,12 +157,12 @@ function Layout({ children }: { children: ReactNode }) {
       <div
         ref={pageRef}
         data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
-        // pb: 5.5rem bazaviy (suzuvchi pill balandligi + 0.75rem offset) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
+        // pb: 4.5rem bazaviy (suzuvchi pill balandligi + 1rem nafas olish masofasi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
         // Desktop (lg+): dock yashirin — pastki padding index.css media query'da torayadi;
         // konteyner mobil max-w-2xl → desktop'da keng (3xl/5xl/6xl).
         // px SAQLANADI (px-0): ichki sahifalar o'z px-4'iga ega + PageHeader -mx-4
         // full-bleed'ga tayanadi — konteynerga padding qo'shsak header sinadi.
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(5.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
+        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
       >
         <Suspense fallback={<PageLoader />}>
           {children}
@@ -339,11 +342,9 @@ export default function App() {
           <Route path="/qidiruv"    element={<SearchPage />} />
           <Route path="/ai-test"    element={<AiTestHub />} />
           <Route path="/ai-test/:id" element={<AiTestSession />} />
-          <Route path="/ai-kurslar" element={<AiCoursesHub />} />
-          <Route path="/ai-kurslar/yangi" element={<AiCourseCreate />} />
-          <Route path="/ai-kurslar/:id" element={<AiCourseDetail />} />
-          <Route path="/ai-kurslar/:courseId/dars/:lessonId" element={<AiCourseLesson />} />
+          <Route path="/wonder-studio" element={<WonderStudioPage />} />
           <Route path="/doska" element={<MathBoardPage />} />
+          <Route path="/wonder" element={<WonderStudioPage />} />
           <Route path="/ai-tutor"   element={<SnapSolveHub />} />
           <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
           <Route path="/admin"      element={<AdminPage />} />
