@@ -97,9 +97,28 @@ describe('ticket-chapters', () => {
       expect(getTopicChapterId('matematika', 'math_db-mtp-geometriya-001', 'Geometriya 1-variant')).toBe('geometriya')
       expect(getTopicChapterId('matematika', 'math_db-mtp-kombinatorika-001', 'Kombinatorika')).toBe('kombinatorika')
     })
+    it('rus tili mavzularini attestatsiya va grammatika bo\'limlari bo\'yicha to\'g\'ri tasniflaydi', () => {
+      expect(getTopicChapterId('rustili', 'russian_db-rus-attest-01', 'Rus tili attestatsiya №1')).toBe('rus-attest')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-fonetika-grafika', 'Fonetika')).toBe('rus-fon')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-leksika-frazeologiya', 'Leksikologiya')).toBe('rus-lek')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-morfemika-slovoobrazovaniye', 'Morfemika')).toBe('rus-morz')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-orfografiya', 'Orfografiya')).toBe('rus-orf')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-morfologiya', 'Morfologiya')).toBe('rus-mor')
+      expect(getTopicChapterId('rustili', 'russian_db-rus-literatura', 'Rus adabiyoti')).toBe('rus-lit')
+    })
   })
 
   describe('sortTopicsForTickets', () => {
+    it('rus tili biletlarini attestatsiya tartibida (1-13) va keyin grammatika boblari tartibida saralaydi', () => {
+      const mockTopics: DbTopic[] = [
+        { id: 1, bankId: 'russian_db', nameUz: 'Fonetika', nameRu: 'Фонетика', slug: 'russian_db-rus-fonetika-grafika' },
+        { id: 2, bankId: 'russian_db', nameUz: 'Rus tili attestatsiya №2', nameRu: 'Аттестация №2', slug: 'russian_db-rus-attest-02' },
+        { id: 3, bankId: 'russian_db', nameUz: 'Rus tili attestatsiya №1', nameRu: 'Аттестация №1', slug: 'russian_db-rus-attest-01' },
+      ]
+      const sorted = sortTopicsForTickets('rustili', mockTopics)
+      expect(sorted.map((t) => t.id)).toEqual([3, 2, 1])
+    })
+
     it('biologiya mavzularini sinflar o\'sish tartibida saralaydi (5 -> 7 -> 8 -> 9 -> 10 -> 11)', () => {
       const mockTopics: DbTopic[] = [
         { id: 1, bankId: 'biology_db', nameUz: '10-sinf', nameRu: '10', slug: 'biology_db-bio10_m1' },

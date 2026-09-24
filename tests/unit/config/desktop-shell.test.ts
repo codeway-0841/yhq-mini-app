@@ -79,7 +79,7 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(bilets).toContain('lg:grid-cols-5')
     expect(bilets).toContain('xl:grid-cols-6')
     const duel = read('features/octagon/OctagonPage.tsx')
-    expect(duel).toContain('lg:max-w-2xl')
+    expect(duel).toContain('lg:max-w-5xl')
   })
 
   it('batch-4: Statistika/Xatolar/Mavzular/Belgilar/Flashcards/Streak/AI-test', () => {

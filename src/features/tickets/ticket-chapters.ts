@@ -98,13 +98,14 @@ export const SUBJECT_CHAPTERS: Record<string, ChapterDef[]> = {
     { id: 'kombinatorika', labelUz: 'Kombinatorika', labelRu: 'Комбинаторика' },
   ],
   rustili: [
-    { id: 'all',      labelUz: 'Barchasi',             labelRu: 'Все' },
-    { id: 'rus-fon',  labelUz: 'Fonetika va grafika',  labelRu: 'Фонетика' },
-    { id: 'rus-lek',  labelUz: 'Leksikologiya',        labelRu: 'Лексикология' },
-    { id: 'rus-morz', labelUz: 'So‘z yasalishi',       labelRu: 'Словообразование' },
-    { id: 'rus-orf',  labelUz: 'Orfografiya',          labelRu: 'Орфография' },
-    { id: 'rus-mor',  labelUz: 'Morfologiya',          labelRu: 'Морфология' },
-    { id: 'rus-lit',  labelUz: 'Rus adabiyoti',        labelRu: 'Литература' },
+    { id: 'all',        labelUz: 'Barchasi',             labelRu: 'Все' },
+    { id: 'rus-attest', labelUz: 'Attestatsiya',         labelRu: 'Аттестация' },
+    { id: 'rus-fon',    labelUz: 'Fonetika va grafika',  labelRu: 'Фонетика' },
+    { id: 'rus-lek',    labelUz: 'Leksikologiya',        labelRu: 'Лексикология' },
+    { id: 'rus-morz',   labelUz: 'So‘z yasalishi',       labelRu: 'Словообразование' },
+    { id: 'rus-orf',    labelUz: 'Orfografiya',          labelRu: 'Орфография' },
+    { id: 'rus-mor',    labelUz: 'Morfologiya',          labelRu: 'Морфология' },
+    { id: 'rus-lit',    labelUz: 'Rus adabiyoti',        labelRu: 'Литература' },
   ],
 }
 
@@ -118,7 +119,7 @@ const CHAPTER_WEIGHTS: Record<string, number> = {
   // ingliz
   'pre-a1': 0, a1: 1, a2: 2, b1: 3, b2: 4, c1: 5,
   // rustili
-  'rus-fon': 1, 'rus-lek': 2, 'rus-morz': 3, 'rus-orf': 4, 'rus-mor': 5, 'rus-lit': 6,
+  'rus-attest': 0, 'rus-fon': 1, 'rus-lek': 2, 'rus-morz': 3, 'rus-orf': 4, 'rus-mor': 5, 'rus-lit': 6,
 }
 
 export function getTopicChapterId(subjectId: string, slug?: string, nameUz?: string): string {
@@ -199,6 +200,7 @@ export function getTopicChapterId(subjectId: string, slug?: string, nameUz?: str
   }
 
   if (subjectId === 'rustili') {
+    if (s.includes('attest')) return 'rus-attest'
     if (s.includes('fonetika')) return 'rus-fon'
     if (s.includes('leksika')) return 'rus-lek'
     if (s.includes('morfemika')) return 'rus-morz'
