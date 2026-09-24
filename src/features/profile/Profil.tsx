@@ -184,7 +184,7 @@ export default function Profil() {
 
   return (
     <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
-      <PageHeader title={tt('profile')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
+      <PageHeader title={tt('profile')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
 
       {/* ── Gorizontal Profil Kartasi ── */}
       <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 transition-all duration-150 shadow-xs">

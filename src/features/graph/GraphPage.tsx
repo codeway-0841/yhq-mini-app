@@ -583,6 +583,7 @@ export default function GraphPage() {
       <PageHeader
         title={sharedTitle ?? tt('graphTitle')}
         subtitle={tt('graphSubtitle')}
+        size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
         className="mb-3"

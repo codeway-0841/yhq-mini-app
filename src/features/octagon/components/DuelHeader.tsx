@@ -1,8 +1,8 @@
-import { Sword, ChevronLeft } from 'lucide-react'
+import { PageHeader } from '../../../shared/components/ui/page-header'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../../shared/lib/navigation'
 
-/** Yuqori panel — orqaga tugma, sarlavha, raund paytida hisob. */
+/** Yuqori panel — orqaga tugma, sarlavha, raund paytida hisob (PageHeader SSOT). */
 export function DuelHeader({ title, backLabel, inRound, yourScore, oppScore, onBack }: {
   title: string
   backLabel: string
@@ -12,22 +12,22 @@ export function DuelHeader({ title, backLabel, inRound, yourScore, oppScore, onB
   onBack?: () => void
 }) {
   const navigate = useNavigate()
+  const actions = inRound ? (
+    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-psurface font-display text-xs shadow-2xs">
+      <span className="text-pprimary font-bold tabular-nums">{yourScore}</span>
+      <span className="text-psubtle">:</span>
+      <span className="text-pdanger font-bold tabular-nums">{oppScore}</span>
+    </div>
+  ) : null
+
   return (
-    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-      <div className="flex items-center justify-between px-4 py-1">
-        <button onClick={onBack ?? (() => goBack(navigate))} aria-label={backLabel} className="text-pmuted size-11 rounded-full flex items-center justify-center hover:bg-psurface hover:text-pfg transition-colors"><ChevronLeft size={22} /></button>
-        <div className="flex items-center gap-2">
-          <Sword size={16} className="text-pmuted" />
-          <span className="text-sm font-bold text-pfg">{title}</span>
-        </div>
-        {inRound ? (
-          <div className="flex gap-1 text-xs text-pmuted">
-            <span className="text-pprimary font-bold">{yourScore}</span>
-            <span>:</span>
-            <span className="text-pdanger font-bold">{oppScore}</span>
-          </div>
-        ) : <div className="w-11" />}
-      </div>
-    </header>
+    <PageHeader
+      title={title}
+      size="lg"
+      onBack={onBack ?? (() => goBack(navigate))}
+      backLabel={backLabel}
+      actions={actions}
+      className="-mx-4 mb-4"
+    />
   )
 }

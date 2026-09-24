@@ -103,7 +103,7 @@ export default function FlashcardsPage() {
   if (!cat) {
     return (
       <div className="font-display bg-pcanvas text-pfg pb-6">
-        <PageHeader title={tt('flashTitle')} onBack={() => goBack(navigate)} backLabel={isRu ? 'Назад' : 'Orqaga'} className="mb-4" />
+        <PageHeader title={tt('flashTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={isRu ? 'Назад' : 'Orqaga'} className="mb-4" />
         <div className="px-5">
           <p className="text-[12px] text-psubtle mb-4">
             {isRu ? 'Выберите категорию — карточки переворачиваются нажатием' : 'Kategoriya tanlang — karta bosilsa aylanadi'}
@@ -180,6 +180,7 @@ export default function FlashcardsPage() {
     <div className="font-display bg-pcanvas text-pfg flex flex-col pb-6">
       <PageHeader
         title={catName}
+        size="lg"
         onBack={() => setCat(null)}
         backLabel={isRu ? 'Назад' : 'Orqaga'}
         className="mb-2 pb-2"

@@ -352,16 +352,16 @@ export default function Darslik() {
   return (
     <div ref={rootRef} className="lesson-course px-4 pb-4" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
       <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+            className="-ml-2 grid size-11 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
             <ChevronLeft size={20} strokeWidth={1.75} />
           </button>
-          <h1 ref={headingRef} tabIndex={-1} className="font-display text-[20px] font-semibold tracking-[-0.02em] text-pfg">
+          <h1 ref={headingRef} tabIndex={-1} className="font-display text-[22px] font-bold leading-tight tracking-tight text-pfg">
             {ru ? 'Учебник' : 'Darslik'}
           </h1>
         </div>
-        <span className="flex items-center gap-1.5 rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted">
+        <span className="flex items-center gap-1.5 rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold tabular-nums text-pmuted shadow-2xs">
           <GraduationCap size={13} strokeWidth={1.75} className="text-psubtle" />
           {totalDone}/{TOTAL_LESSONS}
         </span>

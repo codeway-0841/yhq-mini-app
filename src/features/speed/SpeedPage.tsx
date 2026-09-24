@@ -8,6 +8,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { X, Zap, Check, AlertTriangle } from 'lucide-react'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { api, ApiError } from '../../shared/api'
@@ -93,15 +94,33 @@ export default function SpeedPage() {
   useEffect(() => {
     api.warmUp()
     let active = true
-    void startSession(() => active).catch((cause) => {
-      if (!active) return
-      if (cause instanceof ApiError && cause.code === 'premium_required') {
-        navigate('/premium', { replace: true })
-        return
+    const boot = async () => {
+      try {
+        await startSession(() => active)
+      } catch (cause) {
+        if (!active) return
+        if (cause instanceof ApiError && cause.code === 'premium_required') {
+          navigate('/premium', { replace: true })
+          return
+        }
+        // Cold start retry: Neon yoki serverless uyg'onishi uchun 1.2s kutib qayta urinish
+        try {
+          await new Promise((resolve) => setTimeout(resolve, 1200))
+          if (!active) return
+          await startSession(() => active)
+          return
+        } catch (retryCause) {
+          if (!active) return
+          if (retryCause instanceof ApiError && retryCause.code === 'premium_required') {
+            navigate('/premium', { replace: true })
+            return
+          }
+        }
+        setError(lang === 'ru' ? 'Быстрый тест не загрузился.' : 'Tezkor test yuklanmadi.')
+        setLoading(false)
       }
-      setError(lang === 'ru' ? 'Быстрый тест не загрузился.' : 'Tezkor test yuklanmadi.')
-      setLoading(false)
-    })
+    }
+    void boot()
     return () => {
       active = false
       if (advanceTimerRef.current !== null) clearTimeout(advanceTimerRef.current)
@@ -223,9 +242,18 @@ export default function SpeedPage() {
   }, [advance, answerTimer, answered, busy, commitAnswer, lang, q, sessionId])
 
   const retry = useCallback(async () => {
-    if (sessionId) await api.finishTestSession(sessionId, 'abandoned').catch(() => undefined)
-    await startSession()
-  }, [sessionId, startSession])
+    try {
+      if (sessionId) await api.finishTestSession(sessionId, 'abandoned').catch(() => undefined)
+      await startSession()
+    } catch (cause) {
+      if (cause instanceof ApiError && cause.code === 'premium_required') {
+        navigate('/premium', { replace: true })
+        return
+      }
+      setError(lang === 'ru' ? 'Быстрый тест не загрузился.' : 'Tezkor test yuklanmadi.')
+      setLoading(false)
+    }
+  }, [lang, navigate, sessionId, startSession])
 
   const results: QuestionResult[] = useMemo(() =>
     Array.from({ length: total }, (_, i) => ({
@@ -237,19 +265,14 @@ export default function SpeedPage() {
   const empty = !loading && !error && !q
   if (loading || error || empty) {
     return (
-      <div className="flex flex-col min-h-screen bg-pcanvas font-display text-pfg">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-          <div className="flex items-center justify-between px-4 py-2.5">
-            <button onClick={() => goBack(navigate)} aria-label={tt('backWord')} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
-              <X size={20} />
-            </button>
-            <div className="flex items-center gap-2">
-              <Zap size={15} strokeWidth={1.75} className="text-pwarning" />
-              <span className="text-sm font-semibold">{tt('speedRound')}</span>
-            </div>
-            <div className="w-8" />
-          </div>
-        </header>
+      <div className="flex flex-col min-h-screen bg-pcanvas font-display text-pfg px-4 pb-8">
+        <PageHeader
+          title={tt('speedRound')}
+          size="lg"
+          onBack={() => goBack(navigate)}
+          backLabel={tt('backWord')}
+          className="-mx-4 mb-4"
+        />
         <div className="flex flex-col items-center justify-center flex-1 py-12 gap-3 px-4 text-center">
           {error
             ? <AlertTriangle size={36} className="text-pdanger" />
@@ -288,22 +311,20 @@ export default function SpeedPage() {
   }
 
   return (
-    <div className="flex flex-col bg-pcanvas font-display text-pfg pb-6">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-        <div className="flex items-center justify-between px-4 py-2.5">
-          <button onClick={() => goBack(navigate)} aria-label={tt('backWord')} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
-            <X size={20} />
-          </button>
-          <div className="flex items-center gap-2">
-            <Zap size={15} strokeWidth={1.75} className="text-pwarning" />
-            <span className="text-sm font-semibold">{tt('speedRound')}</span>
-          </div>
-          <span className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums text-pmuted">
+    <div className="flex flex-col bg-pcanvas font-display text-pfg px-4 pb-8">
+      <PageHeader
+        title={tt('speedRound')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        actions={
+          <span className="inline-flex items-center gap-1 rounded-full bg-psurface px-2.5 py-1 text-xs font-semibold tabular-nums text-pmuted shadow-2xs">
             <Check size={12} strokeWidth={2} />
             {score} · {idx + 1}/{total}
           </span>
-        </div>
-      </header>
+        }
+        className="-mx-4 mb-4"
+      />
 
       <div className="flex justify-center pt-4 pb-1">
         <svg width="72" height="72" viewBox="0 0 72 72">

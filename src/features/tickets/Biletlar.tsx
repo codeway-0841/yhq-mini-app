@@ -249,7 +249,7 @@ export default function Biletlar() {
 
   return (
     <div className="px-4 pb-4">
-      <PageHeader title={tt('tickets')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
+      <PageHeader title={tt('tickets')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
 
       <div className="flex gap-2 mb-3 bg-psurface p-1 rounded-2xl">
         {TABS.map((t) => (

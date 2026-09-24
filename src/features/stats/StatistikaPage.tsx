@@ -128,7 +128,7 @@ export default function StatistikaPage() {
   return (
     <div className="font-display bg-pcanvas text-pfg pb-8">
       {/* Header (PageHeader SSOT — sarlavha ikonkasi olib tashlandi, native'da header'da ikon bo'lmaydi) */}
-      <PageHeader title={lang === 'ru' ? 'Статистика' : 'Statistika'} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} />
+      <PageHeader title={lang === 'ru' ? 'Статистика' : 'Statistika'} size="lg" onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="mb-4" />
 
       {/* Katta raqamlar — 2x2 (desktop'da 4 qator) */}
       <div className="grid grid-cols-2 gap-3 px-5 mt-3 lg:grid-cols-4">

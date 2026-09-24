@@ -101,6 +101,7 @@ export default function StreakPage() {
       {/* Header (PageHeader SSOT + info action) */}
       <PageHeader
         title={tt('intizomTitle')}
+        size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
         className="-mx-5 mb-4"

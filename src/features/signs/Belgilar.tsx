@@ -157,6 +157,7 @@ function SignsGrid({
     <div>
       <PageHeader
         title={categoryName}
+        size="lg"
         onBack={onBack}
         backLabel={isRu ? 'Назад' : 'Orqaga'}
         className="-mx-4 mb-4"
@@ -352,6 +353,7 @@ export default function Belgilar() {
         <>
           <PageHeader
             title={isRu ? 'Правила и знаки' : "Yo'l qoidalari"}
+            size="lg"
             onBack={() => goBack(navigate)}
             backLabel={isRu ? 'Назад' : 'Orqaga'}
             className="-mx-4 mb-4"

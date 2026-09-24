@@ -158,7 +158,7 @@ export default function XatolarPage() {
 
   return (
     <div className="px-4 pb-4">
-      <PageHeader title={tt('mistakesTitle')} onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
+      <PageHeader title={tt('mistakesTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
 
       {/* Bo'sh holat */}
       {total === 0 && (

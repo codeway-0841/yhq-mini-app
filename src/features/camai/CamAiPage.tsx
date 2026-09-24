@@ -274,7 +274,7 @@ export default function CamAiPage() {
   if (phase === 'setup') {
     return (
       <div className="px-4">
-        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
+        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} size="lg" onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
 
         {/* Manba tanlash */}
         <div className="mb-4 grid grid-cols-2 gap-2">

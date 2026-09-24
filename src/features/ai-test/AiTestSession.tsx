@@ -242,6 +242,7 @@ export default function AiTestSession() {
         {result.coinsAwarded > 0 && <Confetti />}
         <PageHeader
           title={`${tt('aiTestResultTitle')} · ${test.title}`}
+          size="lg"
           onBack={() => navigate('/ai-test')}
           backLabel={tt('backWord')}
           className="-mx-4 mb-4"
@@ -280,6 +281,7 @@ export default function AiTestSession() {
     <div className="px-4 pb-28">
       <PageHeader
         title={test.title}
+        size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
         className="-mx-4 mb-3"

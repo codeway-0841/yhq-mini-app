@@ -428,7 +428,7 @@ export default function MathBoardPage() {
       <PageHeader
         title={tt('mathBoardTitle')}
         subtitle={tt('mathBoardSubtitle')}
-        size="md"
+        size="lg"
         onBack={() => navigate('/rejimlar')}
         className="-mx-4 mb-4"
       />

@@ -12,6 +12,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { PageHeader } from '../../shared/components/ui/page-header'
+import { goBack } from '../../shared/lib/navigation'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
 import { isEffectivePremium, isTestModePremium } from '../../../shared/test-access'
@@ -97,8 +98,14 @@ export default function TestlarPage() {
 
   return (
     <div className="px-4 pb-20">
-      {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
-      <PageHeader title={tt('testlarTitle')} size="lg" className="-mx-4 mb-4" />
+      {/* Tab-root header — chap chevron (orqaga) bilan */}
+      <PageHeader
+        title={tt('testlarTitle')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-4"
+      />
 
       {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
       <div className="mb-4">

@@ -598,7 +598,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   return (
     <div className="relative flex flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
-        <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-2">
+        <div className="flex w-full items-center justify-between px-4 py-2">
           <Button variant="secondary" size="icon" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="h-12 w-12 rounded-2xl [&_svg]:size-5"><ChevronLeft /></Button>
           <div className="text-center">
             <p className="text-sm font-semibold text-pfg">

@@ -41,11 +41,26 @@ describe('ModesPage', () => {
     )
 
     expect(screen.getByText('Rejimlar')).toBeTruthy()
+    expect(screen.getByRole('button', { name: 'Orqaga' })).toBeTruthy()
     expect(screen.getByText('Mavzular')).toBeTruthy()
     expect(screen.getByText('Biletlar')).toBeTruthy()
     expect(screen.getByText('Duel')).toBeTruthy()
     expect(screen.getByText('Xatolar')).toBeTruthy()
     expect(screen.getByText('Darslik')).toBeTruthy()
+  })
+
+  it('chap chevron (orqaga) bosilganda orqaga navigatsiya ishlaydi', () => {
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    const backBtn = screen.getByRole('button', { name: 'Orqaga' })
+    fireEvent.click(backBtn)
+    expect(mockNavigate).toHaveBeenCalled()
   })
 
   it('karta bosilganda to\'g\'ridan-to\'g\'ri mos marshrutga navigate qiladi (dashboard miltillamaydi)', () => {

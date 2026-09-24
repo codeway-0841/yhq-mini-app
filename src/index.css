@@ -1420,6 +1420,16 @@ body[data-no-animation='true'] .animate-scorePop {
     gap: 1rem;
     align-items: start;
   }
+  /* Desktop floating panel (.route-page): header foni panel foni (--p-canvas) bilan 1:1 uyg'un (oq/shaffof chiziq yo'q) */
+  .page-header {
+    background: var(--p-canvas);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+  /* Desktop: panel ichidagi cardlar nozik hairline border bilan aniq ajraladi */
+  .route-page .bg-pcard {
+    border: 1px solid var(--p-line);
+  }
 }
 
 ::selection {

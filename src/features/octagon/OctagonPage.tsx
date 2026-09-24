@@ -95,7 +95,7 @@ export default function OctagonPage() {
   }
 
   return (
-    <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none">
+    <div className="arena-page flex flex-col flex-1 bg-pcanvas text-pfg relative overscroll-none px-4 pb-8">
       {/* Subview ochiqda sahifa header'i butunlay yashirinadi — subview o'z
           PageHeader'i bilan to'liq 2-sahifa bo'lib ko'rinadi */}
       {duelSubview === null && (
@@ -122,7 +122,7 @@ export default function OctagonPage() {
       )}
 
       {/* Desktop: arena oqimi keng, professional markaziy konteynerda */}
-      <div className={cn('flex-1 flex flex-col px-4 lg:mx-auto lg:w-full lg:max-w-5xl', s.phase === 'idle' ? 'pt-1' : 'items-center justify-center')}>
+      <div className={cn('flex-1 flex flex-col w-full lg:mx-auto lg:max-w-5xl', s.phase === 'idle' ? 'pt-1' : 'items-center justify-center')}>
         {s.phase === 'idle' && (
           <IdleScreen
             tt={tt}

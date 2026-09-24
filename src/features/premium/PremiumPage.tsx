@@ -75,7 +75,7 @@ export default function PremiumPage() {
     <div className="font-display bg-pcanvas text-pfg pb-8">
       {trialDone && <Confetti count={36} />}
       {/* Header (PageHeader SSOT — tab-root emas, back bor) */}
-      <PageHeader title="Premium" onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} />
+      <PageHeader title="Premium" size="lg" onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="mb-4" />
 
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">

@@ -13,8 +13,9 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import {
-  ChevronLeft, Crown, Gift, History, ChevronDown, ChevronUp, Trophy,
+  Crown, Gift, History, ChevronDown, ChevronUp, Trophy,
 } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import {
@@ -204,27 +205,187 @@ export default function LeaderboardPage() {
   const hasTop3 = entriesList.length >= 3
   const restEntries = hasTop3 ? entriesList.slice(3) : entriesList
 
-  return (
-    // Desktop: reyting ro'yxati tor markaziy ustunda (uzun ro'yxat o'qilishi uchun).
-    <div className="pb-8 lg:mx-auto lg:w-full lg:max-w-2xl">
-      {/* ── Top Bar & Segmented Control Tabs ── */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header pb-2.5 mb-3">
-        <div className="flex items-center justify-between px-4 py-2">
-          <button
-            onClick={() => goBack(navigate)}
-            aria-label={tt('backWord')}
-            className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-          >
-            <ChevronLeft size={22} strokeWidth={2.2} />
-          </button>
-          <h1 className="font-display text-[18px] sm:text-[20px] font-extrabold tracking-tight text-pfg">
-            {tt('leaderboard')}
-          </h1>
-          <div className="size-10" aria-hidden="true" />
-        </div>
+  const renderHistory = () => {
+    if (!seasons || seasons.length === 0) return null
+    return (
+      <div className="w-full rounded-2xl bg-pcard p-4 shadow-xs">
+        <button
+          type="button"
+          onClick={() => setShowHistory((h) => !h)}
+          className="flex w-full items-center justify-between text-left cursor-pointer"
+        >
+          <div className="flex items-center gap-2.5">
+            <div className="flex size-8 items-center justify-center rounded-xl bg-psurface text-psubtle shadow-2xs">
+              <History size={16} strokeWidth={1.8} />
+            </div>
+            <div>
+              <h3 className="text-xs font-bold text-pfg">{tt('tournamentHistoryTitle')}</h3>
+              <p className="text-[10px] text-psubtle">{seasons.length} {tt('pastWinnersTitle')}</p>
+            </div>
+          </div>
+          {showHistory ? <ChevronUp size={16} className="text-psubtle" /> : <ChevronDown size={16} className="text-psubtle" />}
+        </button>
 
-        <div className="px-4">
-          <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs">
+        {showHistory && (
+          <div className="mt-3.5 space-y-3 border-t border-pline pt-3">
+            {seasons.map((s, si) => (
+              <div key={s.periodKey} className={si > 0 ? 'border-t border-pline pt-2.5' : ''}>
+                <p className="mb-2 text-[10.5px] font-bold text-psubtle">
+                  {fmtWeekRange(s.periodKey)}
+                </p>
+                <div className="space-y-1.5">
+                  {s.winners.map((w) => (
+                    <div
+                      key={w.rank}
+                      className={cn(
+                        'flex items-center gap-2.5 rounded-xl p-1.5',
+                        w.isYou && 'bg-[rgb(var(--p-primary-rgb)/0.1)] ring-1 ring-[rgb(var(--p-primary-rgb)/0.2)]'
+                      )}
+                    >
+                      <span className="w-5 text-center font-display text-xs font-bold text-psubtle">{w.rank}</span>
+                      <UserAvatar name={w.name} src={avatarSrcFor(w)} frame={w.avatarFrame} size="sm" />
+                      <span className="flex-1 truncate text-xs font-semibold text-pfg">{w.name}</span>
+                      <span className="font-display text-xs font-bold text-pprimary tabular-nums">{w.score}</span>
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-pgold">
+                        <Gift size={11} strokeWidth={2} /> +{w.prizeDays}d
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  const renderList = () => {
+    if (error) {
+      return (
+        <div className="w-full my-6 flex flex-col items-center justify-center rounded-2xl bg-pcard p-8 text-center shadow-xs">
+          <p className="text-sm font-medium text-pmuted">{tt('leaderboardError')}</p>
+        </div>
+      )
+    }
+
+    if (isLoading) {
+      return (
+        <div className="w-full overflow-hidden rounded-2xl bg-pcard divide-y divide-pline animate-pulse shadow-xs">
+          {Array.from({ length: 6 }, (_, i) => (
+            <div key={i} className="flex items-center gap-3 px-4 py-3.5">
+              <div className="w-5 h-3.5 bg-psurface rounded shrink-0" />
+              <div className="size-8 rounded-full bg-psurface shrink-0" />
+              <div className="h-3.5 flex-1 bg-psurface rounded" />
+              <div className="h-3.5 w-12 bg-psurface rounded shrink-0" />
+            </div>
+          ))}
+        </div>
+      )
+    }
+
+    if (entriesList.length === 0) {
+      return (
+        <div className="w-full mt-4 flex flex-col items-center justify-center rounded-2xl bg-pcard p-8 text-center shadow-xs">
+          <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary">
+            <Trophy size={28} />
+          </div>
+          <h3 className="font-display text-base font-extrabold text-pfg">
+            {tt('emptyLeaderboardTitle')}
+          </h3>
+          <p className="mt-1.5 max-w-[240px] text-xs text-psubtle">
+            {tt('emptyLeaderboardDesc')}
+          </p>
+          <button
+            type="button"
+            onClick={() => navigate('/testlar')}
+            className="mt-5 min-h-11 inline-flex items-center rounded-full bg-pprimary px-6 py-2.5 text-xs font-bold text-ponprimary shadow-md transition-transform active:scale-95 cursor-pointer"
+          >
+            {tt('startTestBtn')}
+          </button>
+        </div>
+      )
+    }
+
+    return (
+      <div className="w-full overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
+        {restEntries.map((entry) => {
+          const isYou = entry.isYou
+          const isPromote = tab === 'weekly' && promoteN > 0 && entry.rank <= promoteN
+          const isDemote  = tab === 'weekly' && demoteN > 0 && n > 0 && entry.rank > n - demoteN
+
+          return (
+            <div
+              key={entry.userId}
+              className={cn(
+                'flex items-center gap-3 px-4 py-3.5 transition-colors',
+                isYou ? 'bg-pwash font-bold' : 'hover:bg-[rgb(var(--p-surface-rgb)/0.4)]'
+              )}
+            >
+              {/* Rank + Trend Arrow */}
+              <div className="flex items-center justify-center w-5 shrink-0 gap-0.5">
+                <span className={cn(
+                  'font-display text-[13px] font-semibold tabular-nums',
+                  isYou ? 'text-pprimary font-bold' : 'text-psubtle'
+                )}>
+                  {entry.rank}
+                </span>
+                {isPromote ? (
+                  <span className="text-[8px] text-psuccess font-black leading-none">▲</span>
+                ) : isDemote ? (
+                  <span className="text-[8px] text-pdanger font-black leading-none">▼</span>
+                ) : null}
+              </div>
+
+              {/* Avatar */}
+              <UserAvatar name={entry.name} src={avatarSrcFor(entry)} frame={entry.avatarFrame} size="sm" />
+
+              {/* Name */}
+              <div className="min-w-0 flex-1">
+                <span className={cn(
+                  'truncate text-[13px] block',
+                  isYou ? 'font-bold text-pprimary' : 'font-medium text-pfg'
+                )}>
+                  {entry.name}
+                  {isYou && (
+                    <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
+                      {tt('youLabel')}
+                    </span>
+                  )}
+                </span>
+              </div>
+
+              {/* Score */}
+              <div className="flex items-baseline gap-1 shrink-0">
+                <span className={cn(
+                  'font-display text-[13px] font-bold tabular-nums',
+                  isYou ? 'text-pprimary' : 'text-pfg'
+                )}>
+                  {entry.score}
+                </span>
+                <span className="text-[11px] font-normal text-psubtle">
+                  {tt('scoreUnit')}
+                </span>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
+  return (
+    <div className="px-4 pb-8">
+      {/* ── Top Bar & Segmented Control Tabs (PageHeader SSOT) ── */}
+      <PageHeader
+        title={tt('leaderboard')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-4"
+      >
+        <div className="px-4 pb-2">
+          <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs max-w-md mx-auto">
             {(['daily', 'weekly', 'monthly'] as const).map((t) => {
               const label =
                 t === 'daily'   ? tt('dailyTab') :
@@ -238,7 +399,7 @@ export default function LeaderboardPage() {
                   type="button"
                   onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
                   className={cn(
-                    'flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
+                    'flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98] cursor-pointer',
                     active
                       ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                       : 'text-pmuted hover:text-pfg'
@@ -250,164 +411,31 @@ export default function LeaderboardPage() {
             })}
           </div>
         </div>
-      </header>
+      </PageHeader>
 
-      {error && (
-        <p className="text-center text-sm font-medium text-pmuted py-16">{tt('leaderboardError')}</p>
-      )}
-
-      {/* ── Top-3 Arc Podium Showcase ── */}
-      {hasTop3 && <Top3ArcStage top3={entriesList.slice(0, 3)} tt={tt} />}
-
-      {/* ── O'yinchilar Ro'yxati / Bo'sh holat / Skeleton ── */}
-      {isLoading ? (
-        <div className="mx-4 overflow-hidden rounded-2xl bg-pcard divide-y divide-pline animate-pulse shadow-xs">
-          {Array.from({ length: 6 }, (_, i) => (
-            <div key={i} className="flex items-center gap-3 px-4 py-3.5">
-              <div className="w-5 h-3.5 bg-psurface rounded shrink-0" />
-              <div className="size-8 rounded-full bg-psurface shrink-0" />
-              <div className="h-3.5 flex-1 bg-psurface rounded" />
-              <div className="h-3.5 w-12 bg-psurface rounded shrink-0" />
+      {/* Desktop 2-ustunli Bento (Podium + Ro'yxat), Mobilda oddiy vertikal tartib */}
+      <div className={cn('w-full', hasTop3 && 'lg:grid lg:grid-cols-12 lg:gap-6 lg:items-start')}>
+        {/* Chap ustun (Desktop: 5/12): Top-3 Arc Stage + Chempionlar Tarixi */}
+        {hasTop3 && (
+          <div className="lg:col-span-5 space-y-4 mb-4 lg:mb-0">
+            <div className="overflow-hidden rounded-2xl bg-pcard p-4 sm:p-6 shadow-xs">
+              <Top3ArcStage top3={entriesList.slice(0, 3)} tt={tt} />
             </div>
-          ))}
-        </div>
-      ) : entriesList.length === 0 ? (
-        <div className="mx-4 mt-6 flex flex-col items-center justify-center rounded-2xl bg-pcard p-8 text-center shadow-xs">
-          <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary">
-            <Trophy size={28} />
+            <div className="hidden lg:block">
+              {renderHistory()}
+            </div>
           </div>
-          <h3 className="font-display text-base font-extrabold text-pfg">
-            {tt('emptyLeaderboardTitle')}
-          </h3>
-          <p className="mt-1.5 max-w-[240px] text-xs text-psubtle">
-            {tt('emptyLeaderboardDesc')}
-          </p>
-          <button
-            type="button"
-            onClick={() => navigate('/testlar')}
-            className="mt-5 min-h-11 inline-flex items-center rounded-full bg-pprimary px-6 py-2.5 text-xs font-bold text-ponprimary shadow-md transition-transform active:scale-95"
-          >
-            {tt('startTestBtn')}
-          </button>
+        )}
+
+        {/* O'ng ustun (Desktop: 7/12 yoki to'liq 12): O'yinchilar Ro'yxati / Bo'sh holat / Skeleton */}
+        <div className={cn('w-full', hasTop3 ? 'lg:col-span-7' : 'lg:col-span-12')}>
+          {renderList()}
+          {/* Mobilda tarix ro'yxat tagida chiqadi */}
+          <div className="lg:hidden mt-4">
+            {renderHistory()}
+          </div>
         </div>
-      ) : (
-        <div className="mx-4 overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">
-          {restEntries.map((entry) => {
-            const isYou = entry.isYou
-            const isPromote = tab === 'weekly' && promoteN > 0 && entry.rank <= promoteN
-            const isDemote  = tab === 'weekly' && demoteN > 0 && n > 0 && entry.rank > n - demoteN
-
-            return (
-              <div
-                key={entry.userId}
-                className={cn(
-                  'flex items-center gap-3 px-4 py-3.5 transition-colors',
-                  isYou ? 'bg-pwash font-bold' : 'hover:bg-[rgb(var(--p-surface-rgb)/0.4)]'
-                )}
-              >
-                {/* Rank + Trend Arrow */}
-                <div className="flex items-center justify-center w-5 shrink-0 gap-0.5">
-                  <span className={cn(
-                    'font-display text-[13px] font-semibold tabular-nums',
-                    isYou ? 'text-pprimary font-bold' : 'text-psubtle'
-                  )}>
-                    {entry.rank}
-                  </span>
-                  {isPromote ? (
-                    <span className="text-[8px] text-psuccess font-black leading-none">▲</span>
-                  ) : isDemote ? (
-                    <span className="text-[8px] text-pdanger font-black leading-none">▼</span>
-                  ) : null}
-                </div>
-
-                {/* Avatar */}
-                <UserAvatar name={entry.name} src={avatarSrcFor(entry)} frame={entry.avatarFrame} size="sm" />
-
-                {/* Name */}
-                <div className="min-w-0 flex-1">
-                  <span className={cn(
-                    'truncate text-[13px] block',
-                    isYou ? 'font-bold text-pprimary' : 'font-medium text-pfg'
-                  )}>
-                    {entry.name}
-                    {isYou && (
-                      <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
-                        {tt('youLabel')}
-                      </span>
-                    )}
-                  </span>
-                </div>
-
-                {/* Score */}
-                <div className="flex items-baseline gap-1 shrink-0">
-                  <span className={cn(
-                    'font-display text-[13px] font-bold tabular-nums',
-                    isYou ? 'text-pprimary' : 'text-pfg'
-                  )}>
-                    {entry.score}
-                  </span>
-                  <span className="text-[11px] font-normal text-psubtle">
-                    {tt('scoreUnit')}
-                  </span>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      )}
-
-      {/* ── Chempionlar Tarixi (Accordion) ── */}
-      {seasons && seasons.length > 0 && (
-        <div className="mx-4 mt-6 rounded-2xl bg-pcard p-4 shadow-xs">
-          <button
-            type="button"
-            onClick={() => setShowHistory((h) => !h)}
-            className="flex w-full items-center justify-between text-left"
-          >
-            <div className="flex items-center gap-2.5">
-              <div className="flex size-8 items-center justify-center rounded-xl bg-psurface text-psubtle shadow-2xs">
-                <History size={16} strokeWidth={1.8} />
-              </div>
-              <div>
-                <h3 className="text-xs font-bold text-pfg">{tt('tournamentHistoryTitle')}</h3>
-                <p className="text-[10px] text-psubtle">{seasons.length} {tt('pastWinnersTitle')}</p>
-              </div>
-            </div>
-            {showHistory ? <ChevronUp size={16} className="text-psubtle" /> : <ChevronDown size={16} className="text-psubtle" />}
-          </button>
-
-          {showHistory && (
-            <div className="mt-3.5 space-y-3 border-t border-pline pt-3">
-              {seasons.map((s, si) => (
-                <div key={s.periodKey} className={si > 0 ? 'border-t border-pline pt-2.5' : ''}>
-                  <p className="mb-2 text-[10.5px] font-bold text-psubtle">
-                    {fmtWeekRange(s.periodKey)}
-                  </p>
-                  <div className="space-y-1.5">
-                    {s.winners.map((w) => (
-                      <div
-                        key={w.rank}
-                        className={cn(
-                          'flex items-center gap-2.5 rounded-xl p-1.5',
-                          w.isYou && 'bg-[rgb(var(--p-primary-rgb)/0.1)] ring-1 ring-[rgb(var(--p-primary-rgb)/0.2)]'
-                        )}
-                      >
-                        <span className="w-5 text-center font-display text-xs font-bold text-psubtle">{w.rank}</span>
-                        <UserAvatar name={w.name} src={avatarSrcFor(w)} frame={w.avatarFrame} size="sm" />
-                        <span className="flex-1 truncate text-xs font-semibold text-pfg">{w.name}</span>
-                        <span className="font-display text-xs font-bold text-pprimary tabular-nums">{w.score}</span>
-                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-pgold">
-                          <Gift size={11} strokeWidth={2} /> +{w.prizeDays}d
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      </div>
     </div>
   )
 }

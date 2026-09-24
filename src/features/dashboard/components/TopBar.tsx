@@ -1,5 +1,6 @@
 import { memo } from 'react'
-import { Sun, Moon, ChevronDown } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Sun, Moon, ChevronDown, Flame } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -7,6 +8,7 @@ import { useT } from '../../../shared/i18n'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { transitionTheme } from '../../../shared/lib/theme-transition'
 import { Button } from '../../../shared/components/ui/button'
+import CoinIcon from '../../../shared/components/CoinIcon'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 
@@ -44,10 +46,13 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
   onSettings?: () => void
   onProfile: () => void
 }) {
+  const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const subject = useSubjectStore((s) => s.subject)
   const theme = useAppStore((s) => s.settings.theme)
+  const streak = useAppStore((s) => s.streak)
+  const coins = useAppStore((s) => s.coins)
   const name = displayName ?? user?.firstName ?? tt('guestName')
 
   // Dark / Light rejimini bir bosishda silliq aylanma ochilish (circular reveal) bilan almashtirish
@@ -71,7 +76,7 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
   const isDark = theme === 'light' ? false : (theme === 'dark' ? true : (typeof document !== 'undefined' ? document.body.dataset.theme !== 'light' : true))
 
   return (
-    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3">
+    <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3 lg:static lg:mt-0 lg:pt-3 lg:bg-transparent lg:backdrop-blur-none lg:[-webkit-backdrop-filter:none] lg:border-none lg:shadow-none">
       <div className="flex items-center justify-between gap-2 px-4 py-2">
         <button
           type="button"
@@ -85,14 +90,38 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
           type="button"
           onClick={onSubjects}
           aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
-          className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-4 lg:flex-initial lg:border lg:border-pline lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs"
+          className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-0 lg:flex-initial lg:border lg:border-pline lg:bg-pwash hover:lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs cursor-pointer"
         >
           <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
           <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
           <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
         </button>
 
-        <div className="flex flex-shrink-0 items-center gap-1 lg:mr-4">
+        <div className="flex flex-shrink-0 items-center gap-2 lg:mr-0">
+          {/* Wondering-uslub Flame (Olov) va Coin (Tanga) kapsulasi */}
+          <div className="hidden sm:flex items-center rounded-xl border border-pline bg-pwash px-3 py-1.5 shadow-2xs gap-3 text-[13px] font-semibold text-pfg">
+            <button
+              type="button"
+              onClick={() => { playSound('click'); navigate('/streak') }}
+              title={tt('intizomTitle')}
+              className="flex items-center gap-1.5 transition-colors hover:text-orange-500 cursor-pointer"
+            >
+              <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
+              <span>{streak || 0}</span>
+            </button>
+            <span className="h-3 w-px bg-pline" aria-hidden="true" />
+            <button
+              type="button"
+              onClick={() => { playSound('click'); navigate('/shop') }}
+              title={tt('shopTitle')}
+              className="flex items-center gap-1.5 transition-colors hover:text-amber-500 cursor-pointer"
+            >
+              <CoinIcon size={15} className="text-amber-500 shrink-0" />
+              <span>{coins || 0}</span>
+            </button>
+          </div>
+
+          {/* Dark / Light rejim toggle tugmasi */}
           {/* Dark / Light rejim toggle tugmasi */}
           <Button
             variant="ghost"

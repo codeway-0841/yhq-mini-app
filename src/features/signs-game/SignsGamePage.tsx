@@ -277,6 +277,7 @@ export default function SignsGamePage() {
     <div className="font-display bg-pcanvas text-pfg pb-6">
       <PageHeader
         title={tt('signsGameTitle')}
+        size="lg"
         onBack={() => (mode === 'hub' ? goBack(navigate) : setMode('hub'))}
         backLabel={tt('backWord')}
         className="mb-5"

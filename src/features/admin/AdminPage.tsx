@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Ticket, HelpCircle, Users, BarChart3, ChevronLeft, ShieldCheck, Send, Sparkles, MessageSquare, Package } from 'lucide-react'
+import { Ticket, HelpCircle, Users, BarChart3, ShieldCheck, Send, Sparkles, MessageSquare, Package } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { useAppStore } from '../../shared/store/useAppStore'
 import AdminPromoTab from './components/AdminPromoTab'
 import AdminQuestionsTab from './components/AdminQuestionsTab'
@@ -41,57 +42,45 @@ export default function AdminPage() {
   ]
 
   return (
-    <div className="font-display bg-pcanvas text-pfg pb-6">
-      {/* Top Header */}
-      {/* Sticky header — FAQAT bg'siz-shaffof EMAS (opaque): scroll'da ostidan
-          o'tayotgan kontent /90 fonda "qanab" ko'rinardi. top=--safe-top-body
-          endi VIEWPORT'ga nisbatan to'g'ri ishlaydi (App.tsx scrollport fix). */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header px-4 py-2.5">
-        <div className="flex items-center justify-between">
-          <button
-            onClick={() => goBack(navigate)}
-            className="grid size-9 place-items-center rounded-xl bg-psurface flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all shadow-xs"
-            aria-label={lang === 'ru' ? 'Назад' : 'Orqaga'}
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          <div className="text-center">
-            <h1 className="text-sm font-semibold text-pfg flex items-center justify-center gap-1.5">
-              <ShieldCheck size={16} className="text-ppurple" />
-              KIVVI Admin Panel
-            </h1>
-            <span className="text-[10px] text-pmuted font-semibold">
-              {user.firstName} (Admin)
-            </span>
+    <div className="font-display bg-pcanvas text-pfg pb-6 px-4">
+      {/* Top Header (PageHeader SSOT) */}
+      <PageHeader
+        title={
+          <span className="flex items-center gap-2">
+            <ShieldCheck size={20} className="text-ppurple" />
+            KIVVI Admin Panel
+          </span>
+        }
+        subtitle={`${user.firstName} (Admin)`}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'}
+        className="-mx-4 mb-4"
+      >
+        <div className="px-4 pb-2">
+          <div className="grid grid-cols-8 gap-1 p-1 bg-psurface rounded-2xl shadow-xs">
+            {tabs.map((tab) => {
+              const Icon = tab.icon
+              const isActive = activeTab === tab.id
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setActiveTab(tab.id)}
+                  className={`py-2 px-0.5 rounded-xl text-[10px] font-semibold flex flex-col items-center gap-1 transition-all cursor-pointer ${
+                    isActive
+                      ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
+                      : 'text-pmuted hover:text-pfg'
+                  }`}
+                >
+                  <Icon size={15} />
+                  <span className="truncate max-w-full">{tab.label}</span>
+                </button>
+              )
+            })}
           </div>
-
-          <div className="w-9" /> {/* Spacer */}
         </div>
-
-        {/* Tab Navigation */}
-        <div className="grid grid-cols-8 gap-1 mt-3 p-1 bg-psurface rounded-2xl shadow-xs">
-          {tabs.map((tab) => {
-            const Icon = tab.icon
-            const isActive = activeTab === tab.id
-            return (
-              <button
-                key={tab.id}
-                type="button"
-                onClick={() => setActiveTab(tab.id)}
-                className={`py-2 px-0.5 rounded-xl text-[10px] font-semibold flex flex-col items-center gap-1 transition-all ${
-                  isActive
-                    ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
-                    : 'text-pmuted hover:text-pfg'
-                }`}
-              >
-                <Icon size={15} />
-                <span className="truncate max-w-full">{tab.label}</span>
-              </button>
-            )
-          })}
-        </div>
-      </header>
+      </PageHeader>
 
       {/* Tab Content — desktop'da keng (jadvallar nafas oladi) */}
       <div className="max-w-md mx-auto lg:max-w-2xl">

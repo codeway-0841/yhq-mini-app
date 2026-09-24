@@ -83,7 +83,7 @@ export default function Dashboard() {
   const goProfile = useCallback(() => navigate('/profil'), [navigate])
 
   return (
-    <div className="dashboard-page pb-6">
+    <div className="dashboard-page flex-1 min-h-full pb-6">
       {/* Pull-to-refresh indikator — pastga tortganda aksent spinner */}
       {ptr.state !== 'idle' && (
         <div className="fixed top-[calc(0.75rem+var(--safe-top,0px))] left-1/2 -translate-x-1/2 z-50 flex items-center justify-center">

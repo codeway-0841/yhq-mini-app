@@ -128,6 +128,7 @@ export default function FormulasPage() {
       <PageHeader
         title={tt('cheatsheets')}
         subtitle={tt('cheatsheetsDesc')}
+        size="lg"
         onBack={() => goBack(navigate)}
         backLabel="back"
         className="mb-3"

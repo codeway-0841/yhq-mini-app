@@ -164,6 +164,7 @@ export default function LibraryPage() {
       <PageHeader
         title={tt('library')}
         subtitle={tt('librarySubtitle').replace('{count}', String(libraryBooks.length))}
+        size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
         className="-mx-4 mb-2.5"

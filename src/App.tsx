@@ -165,18 +165,18 @@ function Layout({ children }: { children: ReactNode }) {
         ref={pageRef}
         data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
         // pb: 4.5rem bazaviy (suzuvchi pill balandligi + 1rem nafas olish masofasi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
-        // Desktop (lg+): dock yashirin — pastki padding index.css media query'da torayadi;
+        // Desktop (lg+): dock yashirin — pastki padding lg:pb-0 bilan o'chiriladi (o'lik oq bo'shliq yo'q).
         // konteyner FULL-WIDTH (2026-09-24): max-w cap YO'Q — tor sahifalar
         // (Profil, Reyting, Topics, Adaptive...) o'z `lg:max-w-2xl` cap'iga ega,
         // grid sahifalar (Dashboard, Testlar, Shop...) kenglikni to'liq ishlatadi.
         // Desktop PANEL (wondering.app uslubi): lg'da border+radius+soya bilan
-        // suzuvchi panel — fon shaffof (sahifalar o'z fonini chizadi), padding YO'Q
-        // (px-0 SAQLANADI: PageHeader -mx-4 full-bleed shu'ga tayanadi).
+        // suzuvchi panel — fon lg:bg-pcanvas (sahifalar foniga 1:1 mos, ostida oq chiziq yo'q),
+        // padding YO'Q (px-0 SAQLANADI: PageHeader -mx-4 full-bleed shu'ga tayanadi).
         // lg:overflow-y-auto — panel ICHKI scrollport (border qotadi, kontent
         // ichida scroll bo'ladi); lg:min-h-0 flex stretch'da siqilishi uchun SHART.
         // overflow-x:clip + overflow-y:auto kombinatsiyasi xavfsiz (clip scrollport
         // yaratmaydi). Mobil'da document scroll (o'zgarish YO'Q).
-        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:min-h-0 lg:m-4 lg:rounded-3xl lg:border lg:border-plineStrong lg:shadow-2xl lg:overflow-y-auto lg:overscroll-contain"
+        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-pline lg:shadow-sm lg:overflow-y-auto lg:overscroll-contain lg:bg-pcanvas flex flex-col"
       >
         <Suspense fallback={<PageLoader />}>
           {children}

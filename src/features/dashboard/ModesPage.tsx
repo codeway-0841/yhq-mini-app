@@ -86,13 +86,26 @@ export default function ModesPage() {
     { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
   ]
 
-  return (
-    <div className="px-4">
-      {/* Tab-root header — back'siz katta sarlavha (PageHeader SSOT) */}
-      <PageHeader title={tt('modesTitle')} size="lg" className="-mx-4 mb-4" />
+  const handleBack = useCallback(() => {
+    if (window.history.length > 1) {
+      navigate(-1)
+    } else {
+      navigate('/')
+    }
+  }, [navigate])
 
-      {/* 3-ustunli ixcham rejimlar panjarasi (desktop'da 4/5 ustun) */}
-      <div className="grid grid-cols-3 gap-2 sm:gap-2.5 lg:grid-cols-4 xl:grid-cols-5">
+  return (
+    <div className="px-4 pb-8">
+      {/* Tab-root header — chap chevron (orqaga) bilan */}
+      <PageHeader
+        title={tt('modesTitle')}
+        size="lg"
+        onBack={handleBack}
+        className="-mx-4 mb-4"
+      />
+
+      {/* 3-ustunli ixcham rejimlar panjarasi (desktop'da keng 4/5 ustun) */}
+      <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 lg:grid-cols-4 xl:grid-cols-5 lg:gap-4 xl:gap-5">
         {items.map((it) => (
           <ModeGridCard
             key={it.label}

@@ -4,6 +4,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { Brain, X, Check, CalendarClock, Sparkles } from 'lucide-react'
+import { PageHeader } from '../../shared/components/ui/page-header'
 import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore }      from '../../shared/store/useAppStore'
@@ -162,19 +163,14 @@ export default function AdaptivePage() {
 
   if (!isPremium && sessionCount >= ADAPTIVE_FREE_SESSION_LIMIT) {
     return (
-      <div className="flex flex-col min-h-screen bg-pcanvas">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-          <div className="flex items-center justify-between px-4 py-2.5">
-            <button onClick={() => goBack(navigate)} aria-label={tt('backWord')} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
-              <X size={20} />
-            </button>
-            <div className="flex items-center gap-2">
-              <Brain size={16} className="text-ppurple" />
-              <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
-            </div>
-            <div className="w-8" />
-          </div>
-        </header>
+      <div className="flex flex-col min-h-screen bg-pcanvas px-4 pb-8">
+        <PageHeader
+          title={tt('adaptiveTitle')}
+          size="lg"
+          onBack={() => goBack(navigate)}
+          backLabel={tt('backWord')}
+          className="-mx-4 mb-4"
+        />
 
         <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 px-4 text-center max-w-sm mx-auto">
           <div className="size-16 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning flex items-center justify-center mb-1">
@@ -212,19 +208,14 @@ export default function AdaptivePage() {
 
   if (!q) {
     return (
-      <div className="flex flex-col min-h-screen bg-pcanvas">
-        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-          <div className="flex items-center justify-between px-4 py-2.5">
-            <button onClick={() => goBack(navigate)} aria-label={tt('backWord')} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
-              <X size={20} />
-            </button>
-            <div className="flex items-center gap-2">
-              <Brain size={16} className="text-ppurple" />
-              <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
-            </div>
-            <div className="w-8" />
-          </div>
-        </header>
+      <div className="flex flex-col min-h-screen bg-pcanvas px-4 pb-8">
+        <PageHeader
+          title={tt('adaptiveTitle')}
+          size="lg"
+          onBack={() => goBack(navigate)}
+          backLabel={tt('backWord')}
+          className="-mx-4 mb-4"
+        />
 
         <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 text-pmuted px-4">
           <Brain size={40} className="text-pprimary" />
@@ -267,17 +258,19 @@ export default function AdaptivePage() {
   const answered = selectedOption !== null
 
   return (
-    <div className="flex flex-col bg-pcanvas">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-        <div className="flex items-center justify-between px-4 py-2.5">
-          <button onClick={() => goBack(navigate)} className="size-11 grid place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors"><X size={20} /></button>
-          <div className="flex items-center gap-2">
-            <Brain size={16} className="text-ppurple" />
-            <span className="text-sm font-semibold">{tt('adaptiveTitle')}</span>
-          </div>
-          <span className="text-xs text-pmuted">{sessionCount} {tt('qAnswered')}</span>
-        </div>
-      </header>
+    <div className="flex flex-col bg-pcanvas px-4 pb-8">
+      <PageHeader
+        title={tt('adaptiveTitle')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        actions={
+          <span className="text-xs text-pmuted tabular-nums">
+            {sessionCount} {tt('qAnswered')}
+          </span>
+        }
+        className="-mx-4 mb-4"
+      />
 
       <div className="flex-1 overflow-y-auto px-4 pt-4 pb-6 lg:mx-auto lg:w-full lg:max-w-2xl">
         <div className="flex items-center justify-between mb-3">

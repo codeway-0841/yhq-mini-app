@@ -173,11 +173,16 @@ function YhqTopics() {
   }
 
   return (
-    // Desktop: akkordeon ro'yxat tor markaziy ustunda (ochiladigan kontent uchun).
-    <div className="px-4 pb-4 lg:mx-auto lg:w-full lg:max-w-2xl">
-      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="-mx-4 mb-4" />
+    <div className="px-4 pb-8">
+      <PageHeader
+        title={tt('topics')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-4"
+      />
 
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:gap-3 lg:items-start">
         {modules.map((mod) => {
           const lessons = visibleByMod[mod.id] ?? []
           if (lessons.length === 0) return null   // testli darsi yo'q modul — ko'rsatilmaydi
@@ -299,8 +304,14 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   }
 
   return (
-    <div className="px-4 pb-4">
-      <PageHeader title={tt('topics')} onBack={() => goBack(navigate)} backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'} className="-mx-4 mb-4" />
+    <div className="px-4 pb-8">
+      <PageHeader
+        title={tt('topics')}
+        size="lg"
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        className="-mx-4 mb-4"
+      />
 
       {loading && rows.length === 0 && (
         <div className="grid place-items-center py-16">
@@ -344,7 +355,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         </div>
       )}
 
-      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:items-start">
+      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:gap-3 lg:items-start">
         {rows.map(({ topic, ids, done, count }) => {
           const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
           const shownDone = Math.min(done, count)

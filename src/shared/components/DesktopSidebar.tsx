@@ -31,7 +31,7 @@ import { cn } from '../lib/cn'
 interface SidebarItem {
   id: string
   path: string
-  labelKey: 'home' | 'testlarTitle' | 'duelTitle' | 'menuTitle' | 'leaderboard' | 'shopTitle'
+  labelKey: 'home' | 'testlarTitle' | 'duelTitle' | 'menuTitle' | 'modesTitle' | 'leaderboard' | 'shopTitle'
   icon: LucideIcon
 }
 
@@ -39,7 +39,7 @@ const MAIN_ITEMS: SidebarItem[] = [
   { id: 'home', path: '/', labelKey: 'home', icon: Home },
   { id: 'tests', path: '/testlar', labelKey: 'testlarTitle', icon: BookOpen },
   { id: 'octagon', path: '/octagon', labelKey: 'duelTitle', icon: Swords },
-  { id: 'modes', path: '/rejimlar', labelKey: 'menuTitle', icon: LayoutGrid },
+  { id: 'modes', path: '/rejimlar', labelKey: 'modesTitle', icon: LayoutGrid },
 ]
 
 const EXTRA_ITEMS: SidebarItem[] = [
@@ -147,15 +147,15 @@ export default function DesktopSidebar() {
         aria-label="Desktop navigatsiya"
         aria-expanded={!collapsed}
         className={cn(
-          'desktop-sidebar hidden shrink-0 flex-col border-r border-pline bg-[rgb(var(--p-card-rgb)/0.6)] backdrop-blur-xl lg:flex sticky top-[var(--safe-top,0px)] h-[calc(100dvh-var(--safe-top-body,0px))] max-h-[calc(100dvh-var(--safe-top-body,0px))] transition-[width] duration-200 ease-out motion-reduce:transition-none',
-          collapsed ? 'w-20' : 'w-64 xl:w-72',
+          'desktop-sidebar hidden shrink-0 flex-col bg-transparent lg:flex sticky top-[var(--safe-top,0px)] h-[calc(100dvh-var(--safe-top-body,0px))] max-h-[calc(100dvh-var(--safe-top-body,0px))] transition-[width] duration-200 ease-out motion-reduce:transition-none',
+          collapsed ? 'w-16' : 'w-64',
         )}
       >
-        {/* Top Logo + collapse toggle */}
-        <div className={cn('flex items-center gap-2.5 px-5 pb-4 pt-6', collapsed && 'flex-col px-3')}>
+        {/* Top Logo + collapse toggle (Wondering 1:1) */}
+        <div className={cn('flex items-center gap-2.5 px-4 pb-3 pt-3.5', collapsed && 'flex-col gap-2 px-2')}>
           <span
             aria-hidden="true"
-            className="grid size-9 place-items-center rounded-xl bg-pprimary text-lg font-bold text-ponprimary shadow-xs"
+            className="grid size-8 place-items-center rounded-xl bg-pprimary text-base font-bold text-ponprimary shadow-xs"
           >
             K
           </span>
@@ -166,14 +166,14 @@ export default function DesktopSidebar() {
             aria-label={collapsed ? tt('sidebarExpand') : tt('sidebarCollapse')}
             aria-expanded={!collapsed}
             title={collapsed ? tt('sidebarExpand') : tt('sidebarCollapse')}
-            className="grid size-9 shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
+            className="grid size-8 shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
           >
-            {collapsed ? <PanelLeftOpen size={19} /> : <PanelLeftClose size={19} />}
+            {collapsed ? <PanelLeftOpen size={18} /> : <PanelLeftClose size={18} />}
           </button>
         </div>
 
         {/* Main Nav Items */}
-        <nav aria-label="Asosiy bo'limlar" className="flex-1 overflow-y-auto px-3 pb-4">
+        <nav aria-label="Asosiy bo'limlar" className="flex-1 overflow-y-auto px-2 pb-3">
           <div className="flex flex-col gap-1">{MAIN_ITEMS.map(renderItem)}</div>
           {!collapsed && (
             <p className="mb-1.5 mt-5 px-3 text-[11px] font-semibold uppercase tracking-[0.08em] text-pmuted">
@@ -186,27 +186,54 @@ export default function DesktopSidebar() {
         </nav>
 
         {/* Bottom Section: Metrics + Premium (Upgrade) + Profile */}
-        <div className="border-t border-pline p-3">
-          {/* Subtle Stats / Counters (🔥 0, 🪙 0) */}
-          <div className={cn('mb-2.5 flex items-center gap-4 px-2 text-[12px] font-semibold text-pmuted', collapsed && 'flex-col gap-2 px-0')}>
-            <button
-              type="button"
-              onClick={() => handleNav('/streak')}
-              title={tt('intizomTitle')}
-              className="flex items-center gap-1.5 transition-colors hover:text-pfg cursor-pointer"
-            >
-              <Flame size={14} className="shrink-0 text-amber-500" />
-              {!collapsed && <span>{streak || 0}</span>}
-            </button>
-            <button
-              type="button"
-              onClick={() => handleNav('/shop')}
-              title={tt('shopTitle')}
-              className="flex items-center gap-1.5 transition-colors hover:text-pfg cursor-pointer"
-            >
-              <CoinIcon size={14} className="shrink-0 text-amber-500" />
-              {!collapsed && <span>{coins || 0}</span>}
-            </button>
+        <div className={cn('border-t border-pline p-3', collapsed && 'p-2')}>
+          {/* Wondering-uslub Flame (Olov) va Coin (Tanga) kartasi */}
+          <div className="mb-2.5">
+            {collapsed ? (
+              <div className="flex flex-col items-center gap-1.5 rounded-xl border border-pline bg-pcard p-1.5 shadow-2xs text-[12px] font-semibold text-pfg">
+                <button
+                  type="button"
+                  onClick={() => handleNav('/streak')}
+                  title={tt('intizomTitle')}
+                  className="flex flex-col items-center gap-0.5 transition-colors hover:text-orange-500 cursor-pointer w-full py-0.5"
+                >
+                  <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
+                  <span>{streak || 0}</span>
+                </button>
+                <span className="w-5 h-px bg-pline" aria-hidden="true" />
+                <button
+                  type="button"
+                  onClick={() => handleNav('/shop')}
+                  title={tt('shopTitle')}
+                  className="flex flex-col items-center gap-0.5 transition-colors hover:text-amber-500 cursor-pointer w-full py-0.5"
+                >
+                  <CoinIcon size={15} className="text-amber-500 shrink-0" />
+                  <span>{coins || 0}</span>
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center justify-between rounded-xl border border-pline bg-pcard px-3 py-1.5 shadow-2xs text-[13px] font-semibold text-pfg">
+                <button
+                  type="button"
+                  onClick={() => handleNav('/streak')}
+                  title={tt('intizomTitle')}
+                  className="flex items-center gap-1.5 transition-colors hover:text-orange-500 cursor-pointer"
+                >
+                  <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
+                  <span>{streak || 0}</span>
+                </button>
+                <span className="h-3.5 w-px bg-pline" aria-hidden="true" />
+                <button
+                  type="button"
+                  onClick={() => handleNav('/shop')}
+                  title={tt('shopTitle')}
+                  className="flex items-center gap-1.5 transition-colors hover:text-amber-500 cursor-pointer"
+                >
+                  <CoinIcon size={15} className="text-amber-500 shrink-0" />
+                  <span>{coins || 0}</span>
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Upgrade / Premium Banner Card (Directly above profile, clear sky blue, no icon box/border) */}
@@ -217,9 +244,9 @@ export default function DesktopSidebar() {
                 onClick={() => handleNav('/premium')}
                 aria-label={isPremium ? 'Kivvi Pro' : tt('upgrade')}
                 title={isPremium ? 'Kivvi Pro' : tt('upgrade')}
-                className="grid size-11 w-full place-items-center rounded-2xl bg-sky-100/90 text-sky-600 transition-all duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:text-sky-400 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
+                className="grid size-10 w-full place-items-center rounded-xl bg-sky-100/90 text-sky-600 transition-all duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:text-sky-400 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
               >
-                <PremiumIcon size={20} className="shrink-0" />
+                <PremiumIcon size={18} className="shrink-0" />
               </button>
             ) : (
             <button
@@ -283,9 +310,9 @@ export default function DesktopSidebar() {
               )}
             </button>
 
-            {/* Upward Popover Dropdown Menu */}
+            {/* Upward Popover Dropdown Menu (collapsed holatda o'ngga ochiladi) */}
             {userDropdownOpen && (
-              <div className={cn('absolute bottom-full inset-x-0 mb-2 z-50 overflow-hidden rounded-2xl border border-pline bg-pcard p-1.5 shadow-2xl backdrop-blur-xl animate-in fade-in duration-150', collapsed && 'inset-x-auto right-0 w-60')}>
+              <div className={cn('absolute bottom-full inset-x-0 mb-2 z-50 overflow-hidden rounded-2xl border border-pline bg-pcard p-1.5 shadow-2xl backdrop-blur-xl animate-in fade-in duration-150', collapsed && 'inset-x-auto left-full ml-2 w-56 bottom-0 mb-0')}>
                 <button
                   type="button"
                   onClick={() => {
