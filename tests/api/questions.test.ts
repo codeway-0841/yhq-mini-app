@@ -20,6 +20,18 @@ describe('Questions API Endpoints & Trust Boundary', () => {
           topicId: 1,
         },
       ]),
+      // EGRESS 2026-09-24: /api/questions full-bank yo'li endi SHU method'ni
+      // chaqiradi (SQL darajasida kalitsiz) — mock'da bo'lmasa 500 bo'ladi.
+      getPublicQuestions: vi.fn().mockResolvedValue([
+        {
+          id: 1,
+          questionUz: 'Savol 1',
+          questionRu: 'Вопрос 1',
+          optionsUz: { a: '1', b: '2' },
+          optionsRu: { a: '1', b: '2' },
+          topicId: 1,
+        },
+      ]),
       getQuestionsByTopic: vi.fn().mockResolvedValue([]),
       getTopics: vi.fn().mockResolvedValue([
         { id: 1, nameUz: 'Mavzu 1', nameRu: 'Тема 1', slug: 'mavzu-1', count: 10 },
