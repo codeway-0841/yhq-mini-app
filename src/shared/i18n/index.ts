@@ -440,6 +440,7 @@ const UZ = {
   // Profile
   yourTariff: "Sizning tarifingiz", freeTariff: "Bepul",
   premiumTariff: "Premium", upgrade: "Kuchaytirish",
+  sidebarCollapse: "Yon panelni yig'ish", sidebarExpand: "Yon panelni yoyish",
   addPhone: "Telefon raqami", langLabel: "Ilova tili",
   payHistory: "To'lovlar tarixi", offlineMode: "Oflayn rejim",
   payHistorySubtitle: "Barcha to'lovlaringiz ro'yxati",
@@ -1247,6 +1248,7 @@ const RU: Record<Keys, string> = {
   notInTop50: "Вы не в Топ-50",
   yourTariff: "Ваш тариф", freeTariff: "Бесплатно",
   premiumTariff: "Премиум", upgrade: "Улучшить",
+  sidebarCollapse: "Свернуть панель", sidebarExpand: "Развернуть панель",
   addPhone: "Добавить номер", langLabel: "Язык приложения",
   payHistory: "История оплат", offlineMode: "Офлайн-режим",
   payHistorySubtitle: "Список всех ваших оплат",

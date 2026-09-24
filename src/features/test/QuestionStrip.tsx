@@ -27,7 +27,7 @@ export default function QuestionStrip({ total, current, answers, onSelect }: {
 
   return (
     <div ref={stripRef}
-      className="flex gap-1.5 overflow-x-auto px-4 py-2 [&::-webkit-scrollbar]:hidden"
+      className="mx-auto flex w-full max-w-6xl gap-1.5 overflow-x-auto px-4 py-2 [&::-webkit-scrollbar]:hidden"
       style={{ scrollbarWidth: 'none' }}>
       {Array.from({ length: end - start }, (_: unknown, idx: number) => {
         const i         = start + idx

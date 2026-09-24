@@ -96,15 +96,25 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     const layoutRoot = app.match(/<div className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
     expect(layoutRoot, 'Layout root topilmadi').not.toBe('')
     expect(layoutRoot).toContain('overflow-x-clip')
-    expect(layoutRoot).not.toMatch(/overflow-hidden|overflow-y-auto|overflow-auto|overflow-scroll/)
+    // MOBIL rejimda prefixsiz overflow TAQIQLANADI; desktop (lg:) panel
+    // scrollport ATAYLAB ruxsat (2026-09-24 wondering-shell — border qotadi,
+    // kontent ichida scroll bo'ladi; sticky headerlar panelga yopishadi).
+    expect(layoutRoot).not.toMatch(/(^|[\s"'])overflow-(hidden|y-auto|auto|scroll)([\s"']|$)/)
+    expect(layoutRoot).toContain('lg:overflow-hidden')
     const routePage = app.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
     expect(routePage, 'route-page konteyneri topilmadi').not.toBe('')
-    expect(routePage).not.toMatch(/overflow-y-auto|overflow-hidden|overflow-auto|overflow-scroll/)
+    expect(routePage).not.toMatch(/(^|[\s"'])overflow-(hidden|y-auto|auto|scroll)([\s"']|$)/)
+    expect(routePage).toContain('lg:overflow-y-auto')
+    expect(routePage).toContain('lg:min-h-0')
   })
 
-  it('usePullToRefresh DOCUMENT scroll\'ini o\'qiydi (.route-page scrollTop har doim 0)', () => {
+  it('usePullToRefresh HAQIQIY scroller\'ni o\'qiydi (page-scroll SSOT — har ikki rejim)', () => {
     const ptr = fs.readFileSync(path.join(SRC, 'shared/hooks/usePullToRefresh.ts'), 'utf8')
-    expect(ptr).toContain('window.scrollY')
+    // Scroller SSOT: shared/lib/page-scroll (mobil document, desktop panel).
+    // To'g'ridan-to'g'ri querySelector DOIM taqiqlangan (har qanday scroll
+    // holatida "tepada" deb o'ylash regression'i).
+    expect(ptr).toContain('page-scroll')
+    expect(ptr).toContain('pageScrollY')
     expect(ptr).not.toContain("querySelector('.route-page')")
   })
 
@@ -122,5 +132,13 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     const m = css.match(/@media \(hover: hover\) and \(pointer: fine\)\s*\{[\s\S]*?::-webkit-scrollbar/)
     expect(m, '::-webkit-scrollbar hover:hover media ichida emas!').not.toBeNull()
     expect(css).toMatch(/@media \(hover: none\), \(pointer: coarse\)\s*\{\s*\*\s*\{\s*scrollbar-width: none/)
+  })
+
+  it('Document scrollbar yashirin (wondering.app uslubi) — scroll mexanikasi saqlanadi', () => {
+    const css = fs.readFileSync(path.join(SRC, 'index.css'), 'utf8')
+    // Faqat document (html) — ichki scrollportlar o'z qoidasida.
+    // Scroll ISHLAYDI (wheel/touch/keyboard, sticky, PTR) — faqat vizual bar yo'q.
+    expect(css).toMatch(/html\s*\{\s*scrollbar-width:\s*none/)
+    expect(css).toMatch(/html::?-webkit-scrollbar\s*\{\s*display:\s*none/)
   })
 })

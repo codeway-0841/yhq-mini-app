@@ -411,7 +411,7 @@ export const userSettings = pgTable('settings', {
   id:              serial('id').primaryKey(),
   userId:          text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }).unique(),
   autoNextCorrect: boolean('auto_next_correct').default(true).notNull(),
-  autoNextWrong:   boolean('auto_next_wrong').default(false).notNull(),
+  autoNextWrong:   boolean('auto_next_wrong').default(true).notNull(),
   noAnimation:     boolean('no_animation').default(false).notNull(),
   shuffleOptions:  boolean('shuffle_options').default(false).notNull(),
   fontSize:        fontSizeEnum('font_size').default('medium').notNull(),

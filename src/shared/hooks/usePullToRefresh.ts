@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { pageScrollY } from '../lib/page-scroll'
 
 /**
  * Pull-to-refresh — native his (pastga tortganda yangilash).
@@ -22,11 +23,10 @@ export function usePullToRefresh(onRefresh: () => Promise<unknown>) {
   const setDist = (v: number) => { distRef.current = v; setDistState(v) }
 
   useEffect(() => {
-    // Haqiqiy scroller — DOCUMENT (html): .route-page overflow'siz, o'zi
-    // scroll QILMAYDI (2026-09-01 sticky incident; avval shu elementning
-    // doim 0 bo'lgan scrollTop'iga qaralardi — PTR har qanday scroll
-    // holatida "tepada" deb o'ylardi).
-    const scrollerTop = () => window.scrollY
+    // Haqiqiy scroller SSOT (page-scroll): mobil'da DOCUMENT (2026-09-01 sticky
+    // incident — avval shu elementning doim 0 bo'lgan scrollTop'iga qaralardi),
+    // desktop'da route-page PANEL (wondering-shell).
+    const scrollerTop = () => pageScrollY()
 
     const onStart = (e: TouchEvent) => {
       if (scrollerTop() <= 0) startY.current = e.touches[0].clientY

@@ -114,7 +114,9 @@ export function stripUserPii(user: ApiUser | null): ApiUser | null {
 
 const DEFAULT_SETTINGS: ApiSettings = {
   autoNextCorrect:   true,
-  autoNextWrong:     false,
+  // 2026-09-24 product: xato javobdan keyin ham avtomatik o'tish DEFAULT ON
+  // (1200ms — to'g'ri javobni ko'rishga ulguradi). O'chirish — Sozlamalar.
+  autoNextWrong:     true,
   noAnimation:       false,
   shuffleOptions:    false,
   fontSize:          'medium',
@@ -387,7 +389,7 @@ export const useAppStore = create<AppState>()(
     },
     {
       name: 'yhq-app-store',
-      version: 2,
+      version: 3,
       migrate: (persisted: unknown) => {
         const p = (persisted ?? {}) as Record<string, unknown> & {
           settings?: Record<string, unknown>
@@ -401,9 +403,18 @@ export const useAppStore = create<AppState>()(
         const saved = (p.savedQuestions ?? []).map((x) =>
           typeof x === 'number' ? `${DEFAULT_SUBJECT_ID}:${x}` : x)
         const solved = Array.isArray(p.solvedQuestions) ? p.solvedQuestions : []
+        const prevSettings = (p.settings ?? {}) as Record<string, unknown>
         return {
           ...p,
-          settings: { ...DEFAULT_SETTINGS, ...(p.settings ?? {}), offlineMode: true },
+          settings: {
+            ...DEFAULT_SETTINGS,
+            ...prevSettings,
+            offlineMode: true,
+            // v3: autoNextWrong product default flip (2026-09-24) — eski
+            // persisted `false` ni bir marta `true` ga o'tkazadi. Ataylab
+            // o'chirgan user Sozlamalardan qayta o'chiradi (serverga sync).
+            autoNextWrong: true,
+          },
           wrongByTicket: wrong,
           savedQuestions: saved,
           solvedQuestions: solved,

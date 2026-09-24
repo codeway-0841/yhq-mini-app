@@ -54,4 +54,12 @@ describe('useAppStore.updateSettings (Characterization)', () => {
 
     expect(useAppStore.getState().settings.fontSize).toBe('medium')
   })
+
+  it('product default (2026-09-24): auto-advance after WRONG answers is ON for fresh installs', async () => {
+    vi.resetModules()
+    localStorage.clear()
+    const fresh = await import('../../../src/shared/store/useAppStore')
+    expect(fresh.useAppStore.getState().settings.autoNextWrong).toBe(true)
+    expect(fresh.useAppStore.getState().settings.autoNextCorrect).toBe(true)
+  })
 })

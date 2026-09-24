@@ -15,6 +15,7 @@ import { api, ApiError } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
+import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { track } from '../../shared/lib/analytics'
 import { playSound } from '../../shared/lib/sounds'
@@ -121,7 +122,7 @@ export default function AiTestSession() {
       setResult({ grading: r.grading, answers, coinsAwarded: r.coinsAwarded })
       resetSession()
       setPhase('result')
-      window.scrollTo({ top: 0 })
+      scrollPageToTop()
     } catch {
       haptics.notify('error')
       setSubmitError(true)

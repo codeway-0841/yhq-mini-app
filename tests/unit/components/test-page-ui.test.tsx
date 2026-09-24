@@ -142,4 +142,29 @@ describe('test solving controls', () => {
     ])
     expect(useTestSessionStore.getState().session?.answers).toEqual(['correct', 'wrong', null])
   })
+
+  it('desktop shell caps: strip max-w-6xl, header follows media presence', () => {
+    page()
+    // Strip — desktop cap (mobilda no-op, viewport torroq)
+    const strip = document.querySelector('div.overflow-x-auto')
+    expect(strip).not.toBeNull()
+    expect(strip!.className).toContain('max-w-6xl')
+    // Rasmsiz savol — header tor (max-w-2xl)
+    const headerBox = screen.getByRole('timer').closest('div.mx-auto')
+    expect(headerBox).not.toBeNull()
+    expect(headerBox!.className).toContain('max-w-2xl')
+  })
+
+  it('header widens to max-w-6xl when the question has media', () => {
+    useQuestionsStore.setState({
+      questions: [{ id: 1, text: 'Rasmli savol', image: '/pic.jpg', topicId: 999,
+        options: [{ id: 'a', text: 'Bir' }, { id: 'b', text: 'Ikki' }] }],
+      topics: [], loaded: true, loading: false, error: null, subjectId: 'yhq',
+    })
+    page()
+    const headerBox = screen.getByRole('timer').closest('div.mx-auto')
+    expect(headerBox).not.toBeNull()
+    expect(headerBox!.className).toContain('max-w-6xl')
+    expect(screen.getByAltText('savol 1')).toBeInTheDocument()
+  })
 })

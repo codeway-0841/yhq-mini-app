@@ -2,6 +2,7 @@ import { useCallback, useDeferredValue, useEffect, useMemo, useState } from 'rea
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { ArrowUp, Check, ChevronDown, Search, SearchX, X } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
+import { pageScrollY, scrollPageToTop, addPageScrollListener } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { cn } from '../../shared/lib/cn'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -61,17 +62,15 @@ export default function LibraryPage() {
       ticking = true
       requestAnimationFrame(() => {
         ticking = false
-        const y = window.scrollY || document.documentElement.scrollTop || 0
-        setShowScrollTop(y > 350)
+        setShowScrollTop(pageScrollY() > 350)
       })
     }
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    return addPageScrollListener(onScroll)
   }, [])
 
   const handleScrollToTop = useCallback(() => {
     haptics.impact('light')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    scrollPageToTop('smooth')
   }, [])
 
   const gradeText = (g: number) => tt('libraryGrade').replace('{grade}', String(g))

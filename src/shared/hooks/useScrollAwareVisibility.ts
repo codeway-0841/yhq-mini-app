@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { pageScrollY, addPageScrollListener } from '../lib/page-scroll'
 
 export interface UseScrollAwareVisibilityOptions {
   threshold?: number
@@ -26,7 +27,7 @@ export function useScrollAwareVisibility(options?: UseScrollAwareVisibilityOptio
   useEffect(() => {
     if (typeof window === 'undefined') return
 
-    lastScrollYRef.current = Math.max(0, window.scrollY || 0)
+    lastScrollYRef.current = pageScrollY()
     let isScheduled = false
     let rafId: number | null = null
 
@@ -36,7 +37,7 @@ export function useScrollAwareVisibility(options?: UseScrollAwareVisibilityOptio
       rafId = window.requestAnimationFrame(() => {
         isScheduled = false
         rafId = null
-        const currentY = Math.max(0, window.scrollY || 0)
+        const currentY = pageScrollY()
 
         // Sahifa boshida (scrollY < topThreshold) har doim ko'rinib turishi shart
         if (currentY < topThreshold) {
@@ -76,9 +77,10 @@ export function useScrollAwareVisibility(options?: UseScrollAwareVisibilityOptio
       })
     }
 
-    window.addEventListener('scroll', handleScroll, { passive: true })
+    // window + desktop panel — har ikki rejim (page-scroll SSOT)
+    const detach = addPageScrollListener(handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      detach()
       if (rafId !== null) {
         window.cancelAnimationFrame(rafId)
       }

@@ -41,10 +41,52 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     const layoutRoot = app.match(/<div className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
     expect(layoutRoot).toContain('overflow-x-clip')
     expect(layoutRoot).toContain('lg:flex-row')
+    // Desktop fixed shell: root viewport'da qulflangan, scroll panel ichida
+    expect(layoutRoot).toContain('lg:overflow-hidden')
+    expect(layoutRoot).toContain('lg:h-[calc(100dvh')
     const routePage = app.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
     expect(routePage).toContain('px-0')
-    expect(routePage).toContain('lg:max-w-3xl')
-    expect(routePage).toContain('xl:max-w-5xl')
+    // FULL-WIDTH shell (2026-09-24): route-page'da max-w cap YO'Q — tor sahifalar
+    // o'z lg:max-w-2xl'iga ega, grid sahifalar kenglikni to'liq ishlatadi.
+    expect(routePage).not.toMatch(/max-w-2xl|max-w-3xl|max-w-5xl|max-w-6xl/)
+    expect(routePage).toContain('lg:min-w-0')
+    // Wondering-uslub PANEL: desktop'da border+radius, padding YO'Q (PageHeader
+    // -mx-4 full-bleed), overflow-hidden YO'Q (sticky scrollport qoidasi).
+    expect(routePage).toContain('lg:m-4')
+    expect(routePage).toContain('lg:rounded-3xl')
+    expect(routePage).toContain('lg:border')
+    expect(routePage).toContain('lg:border-plineStrong')
+    expect(routePage).toContain('lg:shadow-2xl')
+    expect(routePage).toContain('lg:min-h-0')
+    expect(routePage).toContain('lg:overflow-y-auto')
+    expect(routePage).toContain('lg:overscroll-contain')
+    // Prefixsiz overflow (mobil) taqiqlangan — faqat lg: ruxsat
+    expect(routePage).not.toMatch(/(^|[\s"'])overflow-(hidden|y-auto|auto)([\s"']|$)/)
+  })
+
+  it('DesktopSidebar collapse toggle + icon rail (Wondering uslubi)', () => {
+    const code = read('shared/components/DesktopSidebar.tsx')
+    // Toggle tugma: PanelLeft ikonlar, aria-expanded, store orqali
+    expect(code).toMatch(/PanelLeft(Open|Close)/)
+    expect(code).toContain('aria-expanded')
+    expect(code).toContain('useSidebarStore')
+    expect(code).toContain('sidebarCollapse')
+    expect(code).toContain('sidebarExpand')
+    // Icon rail: collapsed'da w-20, silliq width transition
+    expect(code).toContain('w-20')
+    expect(code).toContain('transition-[width]')
+    // shared/ qatlami features/'ga import qilmaydi (import-boundaries)
+    expect(code).not.toMatch(/from ['"]\.\.\/\.\.\/features\//)
+  })
+
+  it('useSidebarStore: device-scoped persist (server sync YOQ, account switchda qoladi)', () => {
+    const p = path.join(SRC, 'shared/store/useSidebarStore.ts')
+    expect(fs.existsSync(p), 'useSidebarStore.ts topilmadi').toBe(true)
+    const code = read('shared/store/useSidebarStore.ts')
+    expect(code).toContain("name: 'yhq-sidebar'")
+    expect(code).toContain('toggle')
+    expect(code).toContain('collapsed')
+    expect(code).not.toMatch(/syncSettingsRemote|patchSettings|api\./)
   })
 
   it('IosDock desktop\'da yashirin (lg:hidden), safe-bottom hack saqlangan', () => {

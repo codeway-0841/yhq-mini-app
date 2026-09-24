@@ -94,7 +94,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
 
   return (
     <div className="home-learning-guide px-4 pb-3">
-      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
         <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
           <div className="grid size-9 place-items-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
             <BookOpen size={19} strokeWidth={2} />
@@ -135,7 +135,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
         </button>
       </div>
 
-      <section className="home-learning-hero mt-2.5">
+      <section className="home-learning-hero mt-4">
         <div className="home-learning-step">
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>

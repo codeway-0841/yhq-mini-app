@@ -150,21 +150,33 @@ function Layout({ children }: { children: ReactNode }) {
   }
 
   return (
-    // MUHIM (2026-09-01 sticky incident): bu konteynerlarda overflow-y:auto/hidden
+    // MUHIM (2026-09-01 sticky incident): MOBILDA bu konteynerlarda overflow-y:auto/hidden
     // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
     // kontent o'sadi), lekin overflow'li har qanday ajdod STICKY elementlar uchun
     // scrollport bo'lib qoladi. overflow-x:clip — yagona ruxsat.
-    <div className="relative flex flex-col min-h-screen bg-canvas text-fg overflow-x-clip lg:flex-row lg:items-stretch lg:justify-center">
+    // DESKTOP (lg+, 2026-09-24 wondering-shell): route-page ATAYLAB scrollport
+    // (lg:overflow-y-auto) — border qotib turadi, kontent panel ICHIDA scroll
+    // bo'ladi; sticky headerlar panel tepasiga yopishadi. Yagona rejali
+    // scrollport — insidentdagi tasodifiy oraliq scrollport EMAS. Root lg'da
+    // viewport balandlikda qulflanadi (document scroll YO'Q).
+    <div className="relative flex flex-col min-h-screen bg-pcanvas text-pfg overflow-x-clip lg:flex-row lg:items-stretch lg:justify-center lg:h-[calc(100dvh-var(--safe-top-body,0px))] lg:overflow-hidden">
       <DesktopSidebar />
       <div
         ref={pageRef}
         data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
         // pb: 4.5rem bazaviy (suzuvchi pill balandligi + 1rem nafas olish masofasi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
         // Desktop (lg+): dock yashirin — pastki padding index.css media query'da torayadi;
-        // konteyner mobil max-w-2xl → desktop'da keng (3xl/5xl/6xl).
-        // px SAQLANADI (px-0): ichki sahifalar o'z px-4'iga ega + PageHeader -mx-4
-        // full-bleed'ga tayanadi — konteynerga padding qo'shsak header sinadi.
-        className="route-page relative z-10 flex-1 w-full mx-auto max-w-2xl pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:max-w-3xl xl:max-w-5xl 2xl:max-w-6xl"
+        // konteyner FULL-WIDTH (2026-09-24): max-w cap YO'Q — tor sahifalar
+        // (Profil, Reyting, Topics, Adaptive...) o'z `lg:max-w-2xl` cap'iga ega,
+        // grid sahifalar (Dashboard, Testlar, Shop...) kenglikni to'liq ishlatadi.
+        // Desktop PANEL (wondering.app uslubi): lg'da border+radius+soya bilan
+        // suzuvchi panel — fon shaffof (sahifalar o'z fonini chizadi), padding YO'Q
+        // (px-0 SAQLANADI: PageHeader -mx-4 full-bleed shu'ga tayanadi).
+        // lg:overflow-y-auto — panel ICHKI scrollport (border qotadi, kontent
+        // ichida scroll bo'ladi); lg:min-h-0 flex stretch'da siqilishi uchun SHART.
+        // overflow-x:clip + overflow-y:auto kombinatsiyasi xavfsiz (clip scrollport
+        // yaratmaydi). Mobil'da document scroll (o'zgarish YO'Q).
+        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] px-0 lg:min-w-0 lg:min-h-0 lg:m-4 lg:rounded-3xl lg:border lg:border-plineStrong lg:shadow-2xl lg:overflow-y-auto lg:overscroll-contain"
       >
         <Suspense fallback={<PageLoader />}>
           {children}
@@ -229,7 +241,7 @@ export default function App() {
     return (
       <>
         <ThemeEffect />
-        <div className="first-launch-screen bg-canvas text-fg flex items-center justify-center overflow-y-auto overscroll-contain px-6 py-6">
+        <div className="first-launch-screen bg-pcanvas text-pfg flex items-center justify-center overflow-y-auto overscroll-contain px-6 py-6">
           <div className="card-premium max-w-sm w-full text-center flex flex-col items-center gap-3">
             <div className="text-lg font-bold">{t(lang, 'sessionStaleTitle')}</div>
             <p className="text-sm text-pmuted leading-relaxed">{t(lang, 'sessionStaleBody')}</p>

@@ -75,6 +75,18 @@ input, button, select, textarea {
   * { scrollbar-width: none; }
 }
 
+/* Scrollbar'lar — wondering.app uslubida YASHIRIN (2026-09-24):
+   scroll O'ZI har ikki rejimda ishlaydi (wheel/touch/keyboard + sticky
+   headerlar + PTR) — mobil'da document, desktop'da panel scrollport.
+   Faqat vizual bar yo'q: document (html) + desktop panel (.route-page).
+   Ichki kichik scrollportlar (savol lentasi, sheet'lar) o'z qoidasida
+   (yuqoridagi 4px / yashirin). */
+html { scrollbar-width: none; }
+html::-webkit-scrollbar { display: none; }
+/* Desktop panel scrollport ham vizual barsiz (border qotib turadi) */
+.route-page { scrollbar-width: none; }
+.route-page::-webkit-scrollbar { display: none; }
+
 /* ═══ SAFE-AREA TIZIMI — YAGONA MANBA (2026-09-01 TG fullscreen/APK audit) ═══
    UCH muhit qamrab olinadi (qaysi kattaroq bo'lsa o'sha g'alaba qozonadi):
    - Telegram Mini App FULLSCREEN (Bot API 8.0+): TG client CSS var inject

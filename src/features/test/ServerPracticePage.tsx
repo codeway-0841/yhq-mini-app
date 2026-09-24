@@ -599,7 +599,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     <div className="relative flex flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
         <div className="mx-auto flex max-w-2xl items-center justify-between px-4 py-2">
-          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'}><ChevronLeft /></Button>
+          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="h-12 w-12 rounded-2xl [&_svg]:size-5"><ChevronLeft /></Button>
           <div className="text-center">
             <p className="text-sm font-semibold text-pfg">
               {title ?? (mode === 'saved' || mode === 'mistakes'
@@ -748,18 +748,17 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         language={settings.language}
         subjectId={subjectId}
       />
+      {/* Maskot — qalam-dock (fixed right-4) TAGIDA (TestPage bilan bir xil rail). */}
       {answer !== null && !drawingOpen && (
-        <div className="pointer-events-none fixed inset-x-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 mx-auto flex max-w-2xl items-end justify-end">
-          <Button
-            variant="ghost" onClick={openExplain}
-            aria-label={isRu ? 'Почему так?' : 'Nega shunday?'}
-            aria-haspopup="dialog"
-            className="pointer-events-auto relative h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent"
-          >
-            <TestHelperAvatar />
-            <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
-          </Button>
-        </div>
+        <Button
+          variant="ghost" onClick={openExplain}
+          aria-label={isRu ? 'Почему так?' : 'Nega shunday?'}
+          aria-haspopup="dialog"
+          className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 pointer-events-auto h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent"
+        >
+          <TestHelperAvatar />
+          <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
+        </Button>
       )}
       <ConfirmDialog
         open={confirmExit}

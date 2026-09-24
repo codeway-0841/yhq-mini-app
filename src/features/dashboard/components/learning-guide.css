@@ -7,7 +7,9 @@
   .home-learning-shortcut:hover { background: var(--p-surface); transform: translateY(-2px); box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.08); }
 }
 @media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 20px; } .home-learning-step { padding: 10px; } .home-learning-shortcut { min-height: 76px; padding: 6px 8px; } }
-@media (min-width: 600px) { .home-learning-hero { width: 100%; margin: 0; } }
+/* Desktop: karta ichi nafasli (gap-4 ritmiga mos) — mobil zichligicha qoladi */
+@media (min-width: 1024px) { .home-learning-step { padding: 20px; } .home-learning-path-row { gap: 14px; } }
+@media (min-width: 600px) { .home-learning-hero { width: 100%; } }
 .home-learning-token { display: block; flex: 0 0 52px; width: 52px; height: 58px; }
 .home-learning-token .learning-tile { --token-size: 52px; }
 .home-learning-token .learning-tile[data-state='current'] .learning-orbit { opacity: 1; }

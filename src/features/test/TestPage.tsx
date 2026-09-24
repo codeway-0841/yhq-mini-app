@@ -462,8 +462,8 @@ export default function TestPage() {
   return (
     <div className="relative flex flex-col bg-pcanvas">
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-2">
-          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')}>
+        <div className={`mx-auto flex w-full items-center justify-between gap-3 px-4 py-2 ${q.image ? 'max-w-6xl' : 'max-w-2xl'}`}>
+          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')} className="h-12 w-12 rounded-2xl [&_svg]:size-5">
             {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
           </Button>
           <div className="flex items-center gap-3">
@@ -479,7 +479,7 @@ export default function TestPage() {
               </span>
             )}
           </div>
-          <Button variant="secondary" size="icon" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu}>
+          <Button variant="secondary" size="icon" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="h-12 w-12 rounded-2xl [&_svg]:size-5">
             <MoreHorizontal />
           </Button>
         </div>
@@ -510,7 +510,7 @@ export default function TestPage() {
         <div
           key={q.id}
           style={isSwiping ? { transform: `translate3d(${dragOffset}px, 0, 0)`, transition: 'none' } : undefined}
-          className={`mx-auto pt-3 ${
+          className={`mx-auto pt-3 lg:pt-6 ${
             !settings?.noAnimation && !isSwiping
               ? (slideDirection === 'left' ? 'animate-slide-in-right' : slideDirection === 'right' ? 'animate-slide-in-left' : '')
               : ''
@@ -542,12 +542,12 @@ export default function TestPage() {
             <MathText
               as="p"
               text={q.text}
-              className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px]"
+              className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px] lg:text-[20px]"
             />
 
           </div>
           {q.image && (
-            <div className="min-w-0 self-start lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs"
+            <div className="min-w-0 self-start lg:col-start-2 lg:row-start-1 lg:row-span-2 rounded-2xl overflow-hidden mb-4 cursor-zoom-in flex items-center justify-center bg-psurface relative group active:scale-[0.99] transition-transform shadow-xs lg:min-h-[280px]"
               onClick={() => {
                 setZoomed(true)
                 haptics.impact('light')
@@ -557,7 +557,7 @@ export default function TestPage() {
               onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setZoomed(true) }}
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
-                className="block h-auto w-auto max-w-full max-h-[min(30svh,240px)] lg:max-h-[min(40svh,320px)] shrink-0 object-contain" />
+                className="block h-auto w-full max-w-full max-h-[min(30svh,240px)] lg:max-h-[min(56svh,520px)] shrink-0 object-contain" />
               <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-xs shadow-xs transition-colors group-hover:bg-black/85">
                 <ZoomIn size={11} strokeWidth={1.75} />
                 <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
@@ -573,20 +573,23 @@ export default function TestPage() {
         </div>
       </div>
 
-      {(selected || isLast || allAnswered) && (
-        <div className="pointer-events-none fixed inset-x-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 mx-auto flex max-w-2xl items-end justify-between gap-4">
-          <div>
-            {(isLast || allAnswered) && <Button onClick={handleYakunlash} className="pointer-events-auto shadow-lg">
-              <Check size={15} aria-hidden="true" />{tt('finish')}
-            </Button>}
-          </div>
-          {selected && !drawingOpen && <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
-            aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
-            className="pointer-events-auto relative h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
-            <TestHelperAvatar />
-            <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
-          </Button>}
+      {(isLast || allAnswered) && (
+        <div className="pointer-events-none fixed inset-x-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 mx-auto flex max-w-2xl items-end justify-start gap-4">
+          <Button onClick={handleYakunlash} className="pointer-events-auto shadow-lg">
+            <Check size={15} aria-hidden="true" />{tt('finish')}
+          </Button>
         </div>
+      )}
+      {/* Maskot — qalam-dock (fixed right-4) TAGIDA: dock javobda 6.5rem'ga
+          ko'tariladi (raised), maskot 1.5rem'da qoladi → desktop'da ham
+          stacked rail, mobilda avvalgi ko'rinish (container cheti = right-4). */}
+      {selected && !drawingOpen && (
+        <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
+          aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
+          className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 pointer-events-auto h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
+          <TestHelperAvatar />
+          <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
+        </Button>
       )}
 
       {!isFinished && !showResults && (

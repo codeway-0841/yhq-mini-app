@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
+import { pageScrollOffsetOf, scrollPageTo } from '../../shared/lib/page-scroll'
 import { config } from '../../shared/config'
 import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle, ArrowDown } from 'lucide-react'
 import { modules } from '../../content/modules'
@@ -263,9 +264,9 @@ export default function Darslik() {
     resetPathScroll.current = false
     const section = moduleRefs.current.get(moduleId)
     if (!section) return
-    const top = section.getBoundingClientRect().top + window.scrollY - (headerRef.current?.getBoundingClientRect().height ?? 0) - 8
+    const top = pageScrollOffsetOf(section, -((headerRef.current?.getBoundingClientRect().height ?? 0)) - 8)
     const reduceMotion = settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    window.scrollTo({ top: Math.max(0, top), behavior: reduceMotion ? 'instant' : 'smooth' })
+    scrollPageTo(top, reduceMotion ? 'instant' : 'smooth')
     section.querySelector('h2')?.focus({ preventScroll: true })
   }, [completion, moduleId, reader, settings.noAnimation])
   const tt = useT(settings.language)
