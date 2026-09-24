@@ -69,6 +69,9 @@ test.describe('Desktop visual baseline', () => {
     await injectTelegramWebApp(page, {}, { onboarded: true })
     await gotoSettled(page, '/')
     await expect(page.locator('aside[aria-label="Desktop navigatsiya"]')).toBeVisible()
+    // `.route-page` skeleton paytida ham ko'rinadi. Haqiqiy dashboard tayyor
+    // bo'lmasdan baseline yozilsa, CI regressiyani emas loading holatini tekshiradi.
+    await expect(page.getByRole('button', { name: 'Darsni boshlash' })).toBeVisible({ timeout: 15000 })
     await expect(page).toHaveScreenshot('dashboard.png', SHOT_OPTS)
   })
 

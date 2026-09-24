@@ -11,6 +11,7 @@
  *  - N ta parallel ensurePool = 1 ta provider.getAllQuestions (inflight dedup)
  *  - yuklangan pool keyingi chaqiriqlarda DB'ga bormaydi (cache)
  *  - xato → inflight tozalanadi, keyingi so'rov qayta urinadi (retry-safe)
+ *  - bo'sh yoki boshqa fan pool'i bilan match boshlanmaydi
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import * as providers from '../../../server/providers'
@@ -101,6 +102,28 @@ describe('ensurePool — lazy per-subject pool loading', () => {
     const pool = await ensurePool('fizika')
     expect(pool).toHaveLength(1)
     expect(getAll).toHaveBeenCalledTimes(2)
+  })
+
+  it('bo\'sh bank cache qilinmaydi — questions unavailable xatosidan keyin qayta urinadi', async () => {
+    const getAll = vi.fn()
+      .mockResolvedValueOnce([])
+      .mockResolvedValueOnce([row(1)])
+    vi.spyOn(providers, 'getProvider').mockReturnValue(fakeProvider(getAll))
+
+    await expect(ensurePool('fizika')).rejects.toThrow('No questions available for physics_db')
+    expect(poolForSubject('fizika')).toEqual([])
+
+    const pool = await ensurePool('fizika')
+    expect(pool).toHaveLength(1)
+    expect(getAll).toHaveBeenCalledTimes(2)
+  })
+
+  it('so\'ralgan fan pool\'i yo\'q bo\'lsa boshqa bankka fallback qilmaydi', () => {
+    const trafficPool = [{ id: 1, correct: 'a' }]
+    setEnginePools(new Map([['traffic_rules_db', trafficPool]]))
+
+    expect(poolForSubject('yhq')).toBe(trafficPool)
+    expect(poolForSubject('fizika')).toEqual([])
   })
 
   it('turli fanlar ALOHIDA pool oladi (subject izolyatsiyasi)', async () => {

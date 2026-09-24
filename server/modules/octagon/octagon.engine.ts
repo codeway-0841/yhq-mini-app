@@ -201,13 +201,16 @@ const poolInflight = new Map<string, Promise<QuestionPoolItem[]>>()
 export function ensurePool(subjectId: string): Promise<QuestionPoolItem[]> {
   const { dataSourceId } = resolveSubject(subjectId)
   const existing = QUESTION_POOLS.get(dataSourceId)
-  if (existing) return Promise.resolve(existing)
+  if (existing?.length) return Promise.resolve(existing)
   let inflight = poolInflight.get(dataSourceId)
   if (!inflight) {
     inflight = getProvider(dataSourceId)
       .getAllQuestions()
       .then((rows) => {
         const pool = toPoolItems(rows)
+        if (pool.length === 0) {
+          throw new Error(`No questions available for ${dataSourceId}`)
+        }
         QUESTION_POOLS.set(dataSourceId, pool)
         poolInflight.delete(dataSourceId)
         return pool
@@ -250,9 +253,7 @@ export async function reloadOctagonPools(): Promise<void> {
 
 export function poolForSubject(subjectId: string): QuestionPoolItem[] {
   const entry = resolveSubject(subjectId)
-  return QUESTION_POOLS.get(entry.dataSourceId)
-    ?? QUESTION_POOLS.values().next().value
-    ?? []
+  return QUESTION_POOLS.get(entry.dataSourceId) ?? []
 }
 
 export function pickQuestions(n: number, pool: QuestionPoolItem[]): number[] {

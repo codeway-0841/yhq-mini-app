@@ -118,7 +118,7 @@ export default function DesktopSidebar() {
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
           'active:scale-[0.99]',
           isActive
-            ? 'bg-pwash font-semibold text-pprimary'
+            ? 'bg-pwash font-semibold text-pfg'
             : 'text-pmuted hover:bg-psurface hover:text-pfg',
         )}
       >

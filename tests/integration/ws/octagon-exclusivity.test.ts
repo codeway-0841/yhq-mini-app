@@ -21,11 +21,13 @@ import { eq } from 'drizzle-orm'
 import WebSocket, { WebSocketServer } from 'ws'
 import { createApp } from '../../../server/app'
 import { attachOctagon, type OctagonLimits } from '../../../server/octagon'
+import { SUBJECT_REGISTRY } from '../../../server/config/subjects'
 import { db } from '../../../server/db/connection'
 import { users } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 
 const POOL = Array.from({ length: 10 }, (_, i) => ({ id: i + 1, correct: 'A' }))
+const testPools = () => new Map(SUBJECT_REGISTRY.map(({ dataSourceId }) => [dataSourceId, POOL]))
 
 // Har stsenariy O'Z user id'lari/kodlari/fani bilan — modul holati
 // (queue/duels/matches) testlar orasida baham ko'riladi, ta'sir o'tmasligi uchun.
@@ -57,7 +59,7 @@ beforeAll(async () => {
   const app = createApp()
   server = http.createServer(app)
   wss = new WebSocketServer({ server })
-  attachOctagon(wss, new Map([['traffic_rules_db', POOL]]), {
+  attachOctagon(wss, testPools(), {
     authDeadlineMs:    60_000,   // test davomida socket o'z-o'zidan yopilmasin
     heartbeatMs:       60_000,
     reconnectWindowMs: 500,      // test oxirida forfeit/cleanup tez yakunlansin
@@ -302,7 +304,7 @@ async function withCapServer(limits: Partial<OctagonLimits>): Promise<CapServer>
   const app = createApp()
   const server = http.createServer(app)
   const wss = new WebSocketServer({ server })
-  attachOctagon(wss, new Map([['traffic_rules_db', POOL]]), limits)
+  attachOctagon(wss, testPools(), limits)
   await new Promise<void>((resolve) => server.listen(0, resolve))
   const port = (server.address() as { port: number }).port
   const ts: CapServer = { server, port, wss, clients: [] }

@@ -15,12 +15,14 @@ import { and, eq } from 'drizzle-orm'
 import WebSocket, { WebSocketServer } from 'ws'
 import { createApp } from '../../../server/app'
 import { attachOctagon } from '../../../server/octagon'
+import { SUBJECT_REGISTRY } from '../../../server/config/subjects'
 import { db } from '../../../server/db/connection'
 import { users, progress, duelResults } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 
 /** Havzadagi barcha savollarning to'g'ri javobi 'A' — natijani boshqarish uchun */
 const POOL = Array.from({ length: 10 }, (_, i) => ({ id: i + 1, correct: 'A' }))
+const testPools = () => new Map(SUBJECT_REGISTRY.map(({ dataSourceId }) => [dataSourceId, POOL]))
 
 const W1 = '990000009201'   // to'g'ri javob beradi — g'olib
 const L1 = '990000009202'   // xato javob beradi — mag'lub
@@ -46,7 +48,7 @@ beforeAll(async () => {
   const app = createApp()
   server = http.createServer(app)
   wss = new WebSocketServer({ server })
-  attachOctagon(wss, new Map([['traffic_rules_db', POOL]]), {
+  attachOctagon(wss, testPools(), {
     authDeadlineMs:    60_000,
     heartbeatMs:       60_000,
     reconnectWindowMs: 300,   // forfeit testi tez yakunlansin
