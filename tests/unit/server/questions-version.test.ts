@@ -30,6 +30,15 @@ vi.mock('../../../server/db/connection', () => ({
   db: { select: h.selectFn },
 }))
 
+// Legacy kontrakt testi — R2 chegarasi mock (r2v YO'Q deb hisoblaymiz).
+// Sabab: tests/setup.ts dotenv yuklaydi va lokal .env'da QBANK_R2_ENABLED=true
+// bo'lsa real getPublishedVersion jonli R2 markerga borardi (unit test
+// tarmoqqa chiqMASLIGI shart). r2v kompozitsiyasi questions-version-r2v.test.ts'da.
+vi.mock('../../../server/modules/content/qbank-publish', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('../../../server/modules/content/qbank-publish')>()),
+  getPublishedVersion: vi.fn(async () => null),
+}))
+
 import { createApp } from '../../../server/app'
 import * as providers from '../../../server/providers'
 import { hashBankContent, invalidateBankVersions } from '../../../server/modules/questions/bank-version'

@@ -1,7 +1,10 @@
 import { create } from 'zustand'
 import { api, dbToQuestion, DbQuestion, DbTopic, Question } from '../api'
+import { config } from '../config'
 import { useSubjectStore } from './useSubjectStore'
 import { readBankCache, writeBankCache } from '../lib/question-bank-cache'
+import { loadSubjectBankR2 } from '../lib/r2-question-bank'
+import { track } from '../lib/analytics'
 
 interface QuestionsState {
   questions: Question[]
@@ -119,28 +122,65 @@ export const useQuestionsStore = create<QuestionsState>((set, get) => ({
         // bankni QAYTA TORTMAYMIZ (IndexedDB'dan o'qiymiz, tarmoqda faqat ~40
         // baytlik versiya so'rovi). Versiya so'rovi yiqilsa (offline) kesh bor
         // bo'lsa shu bilan yashaymiz, bo'lmasa avvalgidek to'liq fetch.
-        const [cachedBank, serverV] = await Promise.all([
+        const [cachedBank, serverInfo] = await Promise.all([
           // Modul o'zi throw qilmaydi, lekin qo'shimcha himoya — kesh xatosi
           // HECH QACHON bank yuklashni to'xtatmasligi kerak (kesh = ixtiyoriy).
           readBankCache(sid).catch(() => null),
-          api.getQuestionsVersion(sid).then((r) => r.v).catch(() => null),
+          api.getQuestionsVersion(sid).catch(() => null),
         ])
         if (version !== loadVersion) return
 
-        if (cachedBank && (serverV === null || cachedBank.v === serverV)) {
+        // R2/Worker yo'li (BARCHA fanlar): FAQAT flag ON + server shu fan uchun
+        // r2v bergan bo'lsa (r2v = per-fan gate: publish qilinmagan fan legacy
+        // yo'lda qoladi). r2v yo'qolsa (flag o'chiq/publish yo'q) — legacy yo'l
+        // (server-side kill switch). Kesh kaliti: R2 yozuvlari 'r2:' prefiksli
+        // (Neon counter bilan aralashmasin — u BOSHQA hisoblagich), legacy
+        // yozuvlar esa eski formatda qoladi (mavjud keshlar bekor bo'lmaydi).
+        const r2Active = Boolean(
+          config.r2QuestionBank && typeof serverInfo?.r2v === 'string',
+        )
+        const expectedV = r2Active ? `r2:${serverInfo!.r2v as string}` : (serverInfo?.v ?? null)
+
+        if (cachedBank && (expectedV === null || cachedBank.v === expectedV)) {
           rawQuestions = cachedBank.raw
           writeCount(sid, cachedBank.raw.length)
           set({ questions: cachedBank.raw.map((q) => dbToQuestion(q, lang)), topics: cachedBank.topics, loaded: true, lang, subjectId: sid, failedKey: null, error: null })
           return
         }
 
-        const [raw, topics] = await Promise.all([api.getQuestions(sid), api.getTopics(sid)])
+        // Bankni tortish — R2 yo'li xato bersa TELEMETRY + legacy fallback
+        // (hech qachon jim abadiy fallback emas: qbank_r2_fallback o'lchanadi).
+        let usedV: string | null = null
+        const loadRaw = async (): Promise<DbQuestion[]> => {
+          if (r2Active) {
+            try {
+              const raw = await loadSubjectBankR2(sid, serverInfo!.r2v as string)
+              usedV = expectedV
+              return raw
+            } catch (err) {
+              track('qbank_r2_fallback', {
+                subjectId: sid,
+                reason: err instanceof Error ? err.message.slice(0, 80) : 'unknown',
+              })
+              // Fallback: legacy endpoint (correctAnswer'siz, CDN) — kontent
+              // yo'qolmaydi, faqat manba almashinadi.
+              const raw = await api.getQuestions(sid)
+              usedV = serverInfo?.v ?? null
+              return raw
+            }
+          }
+          const raw = await api.getQuestions(sid)
+          usedV = serverInfo?.v ?? null
+          return raw
+        }
+
+        const [raw, topics] = await Promise.all([loadRaw(), api.getTopics(sid)])
         if (version !== loadVersion) return
         rawQuestions = raw
         writeCount(sid, raw.length)
         // Versiya ma'lum bo'lsagina keshlaymiz — noma'lum versiyali kesh keyingi
         // launch'da "o'zgargan" deb qayta tortilishga olib kelardi.
-        if (serverV) void writeBankCache({ subjectId: sid, v: serverV, raw, topics })
+        if (usedV) void writeBankCache({ subjectId: sid, v: usedV, raw, topics })
         set({ questions: raw.map((q) => dbToQuestion(q, lang)), topics, loaded: true, lang, subjectId: sid, failedKey: null })
       } catch (e) {
         if (version === loadVersion) {

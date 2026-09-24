@@ -110,6 +110,7 @@
     "loadtest:octagon": "tsx server/load-test-octagon.ts",
     "content:validate": "tsx scripts/content-bank.ts validate",
     "content:export": "tsx scripts/content-bank.ts export",
+    "export:qbank": "tsx scripts/export-question-bank.ts",
     "content:audit:physics": "tsx scripts/audit-physics-print.ts",
     "content:audit:math": "tsx scripts/audit-math-print.ts",
     "lint": "eslint .",

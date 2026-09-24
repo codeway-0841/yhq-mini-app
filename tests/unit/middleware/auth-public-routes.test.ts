@@ -74,6 +74,10 @@ describe('auth.middleware — public route allowlist (C1)', () => {
     expect(isPublicGet(req('GET', '/topics'))).toBe(true)
     // v2 ticket manifest — faqat sonlar, savol kontenti yo'q (public CDN)
     expect(isPublicGet(req('GET', '/ticket-catalog'))).toBe(true)
+    // R2 kontent tokeni (qoida 8h) — ANONIM YO'Q: anti-scrape userId kvotasi
+    // + audit izi shart, shuning uchun hech qanday public ro'yxatga KIRMAYDI.
+    expect(isPublicAuthPost(req('POST', '/content/token'))).toBe(false)
+    expect(isPublicAuthGet(req('GET', '/content/token'))).toBe(false)
   })
 
   it('traversal/encoding bilan public-list aylanib o\'tilmaydi', () => {

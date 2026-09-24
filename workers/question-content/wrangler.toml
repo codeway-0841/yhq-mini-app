@@ -1,0 +1,45 @@
+# kivvi-question-content — PRIVATE R2 savol kontenti Worker'i
+#
+# Deploy (bir marta):
+#   cd workers/question-content && npm install
+#   npx wrangler r2 bucket create kivvi-qbank        # PRIVATE bucket (public access YO'Q!)
+#   npx wrangler secret put CONTENT_TOKEN_SECRET     # Vercel'dagi bilan BIR XIL qiymat
+#   npm run deploy
+#
+# DIQQAT: bu bucket'ga r2.dev public URL yoki public bucket access
+# HECH QACHON yoqilmaydi — kontent FAQAT shu Worker orqali chiqadi.
+name = "kivvi-question-content"
+main = "src/index.ts"
+compatibility_date = "2026-09-24"
+# workers.dev URL hozircha (2026-09-24): kivvi.uz zonasi Cloudflare'da EMAS —
+# `content.kivvi.uz` custom domain biriktirib bo'lmadi. Zona Cloudflare'ga
+# ko'chirilgach quyidagi routes'ni uncomment qilib, workers_dev=false qiling.
+workers_dev = true
+
+# Custom domain (faqat zona Cloudflare'da bo'lganda ishlaydi):
+# routes = [
+#   { pattern = "content.kivvi.uz", custom_domain = true }
+# ]
+
+# PRIVATE savol banki bucket'i
+[[r2_buckets]]
+binding = "QBANK"
+bucket_name = "kivvi-qbank"
+
+# Observability (VAQTINCHA O'CHIQ — 2026-09-24: account'da Analytics Engine
+# yoqilmagan, deploy bloklandi [code 10089]. Dashboard'da
+# Workers → Analytics Engine yoqilgach quyidagi 3 qatorni uncomment qilib
+# qayta deploy qiling — kod allaqachon QBANK_ANALYTICS?.writeDataPoint bilan
+# ishlaydi (yo'q bo'lsa jimgina skip, so'rov buzilmaydi).
+# token/secret/userId HECH QACHON metrikaga YOZILMAYDI — faqat status/kind/cache.
+# [[analytics_engine_datasets]]
+# binding = "QBANK_ANALYTICS"
+# dataset = "kivvi_qbank"
+
+[vars]
+ALLOWED_ORIGINS = "https://app.kivvi.uz,https://www.kivvi.uz,https://kivvi.uz"
+RATE_USER_PER_MIN = "300"
+RATE_IP_PER_MIN = "100"
+
+[observability]
+enabled = true

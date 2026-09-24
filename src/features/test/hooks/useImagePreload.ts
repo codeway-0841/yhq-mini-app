@@ -1,8 +1,14 @@
 ﻿import { useEffect } from 'react'
 import type { Question } from '../../../shared/api'
+import { buildContentImageUrl } from '../../../shared/lib/content-token'
 
 export function formatImageSrc(src?: string | null): string | undefined {
   if (!src) return undefined
+  // R2/Worker rasm yo'li (fizika R2 banki) — token'li Worker URL.
+  // Worker URL'siz (flag o'chiq) eski passthrough qoladi.
+  if (src.startsWith('/images/')) {
+    return buildContentImageUrl(src) ?? src
+  }
   if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('/')) {
     return src
   }

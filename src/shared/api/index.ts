@@ -675,13 +675,27 @@ export const api = {
 
   /** Bank kontent versiyasi (~40 bayt, CDN 60s) — persist-kesh bilan solishtirish
    *  uchun (EGRESS "A" bosqich): versiya bir xil bo'lsa bank QAYTA TORTILMAYDI.
+   *  `r2v` (faqat R2-yoqilgan fanlarda, fizika) = oxirgi TEKSHIRILGAN R2 nashri —
+   *  yo'q bo'lsa client legacy yo'lda qoladi (server-side kill switch).
    *  requestPublic — auth header'siz, CDN serve qiladi. */
   getQuestionsVersion: (subject?: string) => {
     const params = new URLSearchParams()
     if (subject) params.set('subject', subject)
     const qs = params.toString()
-    return requestPublic<{ v: string }>(`/questions/version${qs ? `?${qs}` : ''}`, 8_000)
+    return requestPublic<{ v: string; r2v?: string }>(`/questions/version${qs ? `?${qs}` : ''}`, 8_000)
   },
+
+  /** R2/Worker kontent tokeni (10 daqiqalik) — Worker'ga manifest/chunk/image
+   *  so'rovlar uchun. AUTH'li so'rov (request()). `segment` = R2 path segmenti
+   *  (client URL qurish uchun — SSOT serverda, client'da mapping YO'Q).
+   *  503/404 → R2 yo'li tayyor emas (caller legacy fallback qiladi). */
+  getContentToken: (subjectId: string) =>
+    request<{ token: string; expiresAt: string; version: string; segment: string }>(
+      'POST',
+      '/content/token',
+      { subjectId },
+      8_000,
+    ),
 
   getQuestions: (subject?: string, fresh = false) => {
     const params = new URLSearchParams()

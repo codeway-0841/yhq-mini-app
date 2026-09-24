@@ -38,6 +38,7 @@ import tutorRouter        from './modules/tutor/tutor.router'
 import adminRouter        from './modules/admin/admin.router'
 import promoRouter        from './modules/promo/promo.router'
 import coinsRouter        from './modules/coins/coins.router'
+import contentRouter      from './modules/content/content.router'
 import bossRouter         from './modules/boss/boss.router'
 import aiTestsRouter      from './modules/ai-tests/ai-tests.router'
 import aiCoursesRouter    from './modules/ai-courses/ai-courses.router'
@@ -178,6 +179,7 @@ export function createApp() {
   app.use('/api', adminRouter)
   app.use('/api', promoRouter)
   app.use('/api', coinsRouter)
+  app.use('/api', contentRouter)
   app.use('/api', bossRouter)
   // DIQQAT: adminRouter'dan KEYIN — /api/admin/ai-tests/generate shu orqali
   // requireAdmin'dan o'tadi (router.use('/admin', requireAdmin) prefix-match).

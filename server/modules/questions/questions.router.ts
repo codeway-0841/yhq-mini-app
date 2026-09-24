@@ -21,6 +21,7 @@ import { identityKey } from '../../middleware/rate-limiter'
 import { config } from '../../config'
 import { issueLaunchToken } from '../test-sessions/launch-token'
 import { bankContentVersion } from './bank-version'
+import { getPublishedVersion, isQbankSubject } from '../content/qbank-publish'
 
 const router = Router()
 
@@ -255,8 +256,18 @@ router.get('/questions/version', contentLimit, wrap(async (req, res) => {
   const entry    = resolveSubject(parsed.data.subject)
   const provider = getProvider(entry.dataSourceId)
   const v = await bankContentVersion(provider)
+  // R2/Worker delivery (fizika pilot): r2v = oxirgi TEKSHIRILGAN R2 nashri
+  // (published.json markeri, 30s in-lambda cache). `v` (Neon counter) legacy
+  // yo'l haqiqati bo'lib qoladi — ikkalasi ADDITIVE (eski client r2v'ni ignore
+  // qiladi). Marker yo'q/R2 uzilgan/flag o'chiq → r2v field'i umuman yo'q —
+  // client legacy yo'lga tushadi (server-side kill switch: QBANK_R2_ENABLED).
+  let r2v: string | null = null
+  if (config.qbank.enabled && isQbankSubject(entry.id)) {
+    const published = await getPublishedVersion(entry.id)
+    if (published !== null) r2v = `cv${published}`
+  }
   res.set('Cache-Control', VERSION_CACHE)
-  res.json({ v })
+  res.json(r2v ? { v, r2v } : { v })
 }))
 
 // GET /api/topics?subject=fizika

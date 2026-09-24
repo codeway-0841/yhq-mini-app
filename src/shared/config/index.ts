@@ -3,6 +3,8 @@ const WS_ENV       = import.meta.env['VITE_WS_URL']       as string | undefined
 const BOT_USERNAME = import.meta.env['VITE_BOT_USERNAME'] as string | undefined
 const TEST_SESSIONS_V2 = import.meta.env['VITE_TEST_SESSIONS_V2'] as string | undefined
 const LIBRARY_PDF_BASE = import.meta.env['VITE_LIBRARY_PDF_BASE_URL'] as string | undefined
+const CONTENT_WORKER_URL = import.meta.env['VITE_CONTENT_WORKER_URL'] as string | undefined
+const R2_QBANK = import.meta.env['VITE_R2_QUESTION_BANK'] as string | undefined
 
 /** Derivation uchun minimal env ko'rinishi — testlar to'g'ridan-to'g'ri chaqiradi. */
 export interface ClientEnv {
@@ -42,6 +44,13 @@ export function resolveWsUrl(env: ClientEnv, location?: { protocol: string; host
   return `${proto}://${location.host}/ws/octagon`
 }
 
+/** Content Worker bazasi (R2 savol kontenti) — trailing slash'siz, bo'sh bo'lsa null.
+ *  Sof funksiya (test uchun): runtime-config.test.ts naqshi. */
+export function resolveContentWorkerUrl(raw?: string): string | null {
+  const trimmed = raw?.trim().replace(/\/+$/, '')
+  return trimmed && /^https:\/\//.test(trimmed) ? trimmed : null
+}
+
 /** Kutubxona PDF bazasi — env (trailing slash'siz), bo'sh bo'lsa lokal fallback.
  *  Sof funksiya (test uchun): runtime-config.test.ts naqshi. */
 export function resolveLibraryPdfBase(raw?: string): string {
@@ -75,4 +84,14 @@ export const config = {
    * Berilmasa lokal `/kutubxona/pdf` (dev fallback).
    */
   libraryPdfBaseUrl: resolveLibraryPdfBase(LIBRARY_PDF_BASE),
+  /** R2/Worker savol kontenti (fizika pilot) — Worker domeni (https, trailing slash'siz).
+   *  null bo'lsa R2 yo'li butunlay o'chiq (legacy /api/questions ishlatiladi). */
+  contentWorkerUrl: resolveContentWorkerUrl(CONTENT_WORKER_URL),
+  /**
+   * Savol banklarini R2/Worker'dan yuklash flag'i (BARCHA fanlar — per-fan
+   * gate server'da: /questions/version javobida r2v bo'lmasa client legacy
+   * yo'lga tushadi). Worker URL'siz BEMA'NI — ikkalasi birga tekshiriladi.
+   * Server-side kill switch: QBANK_R2_ENABLED=false → r2v yo'qoladi.
+   */
+  r2QuestionBank: R2_QBANK === 'true' && resolveContentWorkerUrl(CONTENT_WORKER_URL) !== null,
 } as const

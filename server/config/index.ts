@@ -101,6 +101,22 @@ const envSchema = z.object({
   CLOUDFLARE_R2_SECRET_ACCESS_KEY: z.string().optional(),
   CLOUDFLARE_R2_BUCKET:            z.string().optional(),
   CLOUDFLARE_PUBLIC_URL:           z.string().optional(),
+
+  /** Question Bank → PRIVATE R2 + Worker delivery (AUDIT-NEON-EGRESS phase 2,
+   *  fizika pilot). Alohida PRIVATE bucket (media bucket'idan FARQLI — u public).
+   *  QBANK_R2_ENABLED=false → /questions/version'da r2v yo'q → client legacy
+   *  yo'lda qoladi (server-side kill switch, redeploy'siz rollback).
+   *  CONTENT_TOKEN_SECRET — 5-15 daqiqalik kontent tokeni HMAC kaliti;
+   *  Worker shu secret bilan LOKAL tekshiradi (Neon chaqirilmaydi). */
+  QBANK_R2_ENABLED:            z.enum(['true', 'false']).optional().default('false'),
+  CLOUDFLARE_R2_QBANK_BUCKET:  z.string().optional(),
+  CONTENT_TOKEN_SECRET:        z.string().optional()
+    .transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined))
+    .pipe(z.string().min(32).optional()),
+  /** Kontent token TTL (sekund) — default 600 (10 daqiq) */
+  CONTENT_TOKEN_TTL_SECONDS:   z.string().regex(/^\d+$/).optional(),
+  /** Bitta user uchun token issuance kunlik kvota — anti-scrape cap */
+  CONTENT_TOKEN_DAILY_CAP:     z.string().regex(/^\d+$/).optional(),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -153,6 +169,13 @@ export function assertProdConfig(): void {
     // origin tekshiruvi FAIL-OPEN ishlaydi va CORS localhost:5173 default'ga
     // tushadi — prod'da ikkalasi ham xavfli.
     if (parseOrigins(env.ALLOWED_ORIGIN).length === 0) missing.push('ALLOWED_ORIGIN')
+    // R2 question-bank delivery yoqilgan bo'lsa: token secret (Worker imzo
+    // tekshiruvi) + private bucket nomi MAJBURIY — aks holda token endpoint
+    // fail-open ishga tushib qolardi.
+    if (env.QBANK_R2_ENABLED === 'true') {
+      if (!env.CONTENT_TOKEN_SECRET) missing.push('CONTENT_TOKEN_SECRET')
+      if (!env.CLOUDFLARE_R2_QBANK_BUCKET) missing.push('CLOUDFLARE_R2_QBANK_BUCKET')
+    }
     if (missing.length > 0) {
       throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
     }
@@ -312,6 +335,23 @@ export const config = {
       env.CLOUDFLARE_R2_ACCESS_KEY_ID &&
       env.CLOUDFLARE_R2_SECRET_ACCESS_KEY &&
       env.CLOUDFLARE_R2_BUCKET
+    ),
+  },
+
+  /** Question Bank → PRIVATE R2 + Worker (phase 2 egress, fizika pilot).
+   *  Account/credential'lar umumiy (config.r2), bucket ALOHIDA va PRIVATE. */
+  qbank: {
+    enabled: env.QBANK_R2_ENABLED === 'true',
+    bucket: env.CLOUDFLARE_R2_QBANK_BUCKET,
+    tokenSecret: env.CONTENT_TOKEN_SECRET,
+    tokenTtlSeconds: Math.min(3600, Math.max(300, Number(env.CONTENT_TOKEN_TTL_SECONDS ?? '600'))),
+    tokenDailyCap: Math.max(10, Number(env.CONTENT_TOKEN_DAILY_CAP ?? '60')),
+    /** Credential'lar + bucket to'liqmi (token endpoint/bank publish uchun) */
+    isConfigured: Boolean(
+      env.CLOUDFLARE_ACCOUNT_ID &&
+      env.CLOUDFLARE_R2_ACCESS_KEY_ID &&
+      env.CLOUDFLARE_R2_SECRET_ACCESS_KEY &&
+      env.CLOUDFLARE_R2_QBANK_BUCKET
     ),
   },
 } as const

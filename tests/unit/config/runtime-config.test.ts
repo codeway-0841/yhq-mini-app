@@ -12,7 +12,7 @@
  * localhost'ga ishora qilmasligi kerak.
  */
 import { describe, it, expect } from 'vitest'
-import { resolveWsUrl, resolveApiBase } from '../../../src/shared/config'
+import { resolveWsUrl, resolveApiBase, resolveContentWorkerUrl } from '../../../src/shared/config'
 
 const PROD_WS = 'wss://yhq-websocket-server.onrender.com/ws/octagon'
 const PROD_API = 'https://www.kivvi.uz/api'
@@ -54,5 +54,27 @@ describe('resolveApiBase', () => {
   it('prod build: VITE_API_BASE_URL, bo\'lmasa /api fallback', () => {
     expect(resolveApiBase({ DEV: false, MODE: 'production', VITE_API_BASE_URL: PROD_API })).toBe(PROD_API)
     expect(resolveApiBase({ DEV: false, MODE: 'production' })).toBe('/api')
+  })
+})
+
+describe('resolveContentWorkerUrl — R2 Worker domeni (fizika pilot)', () => {
+  it('https URL → trailing slash olib tashlanadi', () => {
+    expect(resolveContentWorkerUrl('https://content.kivvi.uz/')).toBe('https://content.kivvi.uz')
+    expect(resolveContentWorkerUrl('https://content.kivvi.uz')).toBe('https://content.kivvi.uz')
+  })
+
+  it('bo\'sh/yo\'q → null (R2 yo\'li butunlay o\'chiq)', () => {
+    expect(resolveContentWorkerUrl(undefined)).toBeNull()
+    expect(resolveContentWorkerUrl('')).toBeNull()
+    expect(resolveContentWorkerUrl('   ')).toBeNull()
+  })
+
+  it('http:// RAD ETILADI — faqat https (token TLS himoyasida)', () => {
+    expect(resolveContentWorkerUrl('http://content.kivvi.uz')).toBeNull()
+  })
+
+  it('ws:// yoki boshqa sxema → null', () => {
+    expect(resolveContentWorkerUrl('ws://content.kivvi.uz')).toBeNull()
+    expect(resolveContentWorkerUrl('javascript:alert(1)')).toBeNull()
   })
 })

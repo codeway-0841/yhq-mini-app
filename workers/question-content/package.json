@@ -1,0 +1,17 @@
+{
+  "name": "kivvi-question-content-worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "PRIVATE R2 question-bank delivery worker (auth + edge cache)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260921.1",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.20.0"
+  }
+}

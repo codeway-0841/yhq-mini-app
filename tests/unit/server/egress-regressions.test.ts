@@ -57,3 +57,50 @@ describe("EGRESS regression — public endpoint'larga correct_answer tortilmaydi
     expect(src).toContain('questionBanks.contentVersion')
   })
 })
+
+describe('EGRESS regression — R2 qbank eksporti (fizika pilot)', () => {
+  it('exporter Neon\'dan EXPLICIT proyeksiya o\'qiydi — select() (SELECT *) YO\'Q', () => {
+    const src = readSrc('server/modules/content/qbank-publish.ts')
+    // SELECT * taqiqlangan: ustunlar aniq sanalgan (correctAnswer kirmaydi)
+    expect(src).not.toMatch(/\.select\(\s*\)/)
+    expect(src).toContain('externalId: questions.externalId')
+    expect(src).not.toContain('questions.correctAnswer')
+    expect(src).not.toContain('correctAnswer')
+  })
+
+  it('exporter xavfsizlik skani bilan (assertExportClean + validateExport)', () => {
+    const src = readSrc('server/modules/content/qbank-publish.ts')
+    expect(src).toContain('assertExportClean')
+    expect(src).toContain('validateExport')
+  })
+
+  it('marker ENG OXIRIDA yoziladi (atomik publish) — verify\'dan keyin', () => {
+    const src = readSrc('server/modules/content/qbank-publish.ts')
+    const verifyIdx = src.indexOf('qbank_publish_verify_failed')
+    const markerIdx = src.indexOf('markerKey(pathSegment),')
+    expect(verifyIdx).toBeGreaterThan(-1)
+    expect(markerIdx).toBeGreaterThan(verifyIdx)
+  })
+
+  it('exporter server boot va runtime router\'larga KIRMAYDI (CLI-only)', () => {
+    expect(readSrc('server/index.ts')).not.toContain('export-question-bank')
+    expect(readSrc('server/index.ts')).not.toContain('publishQuestionBank')
+    // Octagon lazy-pool arxitekturasi buzilmaydi
+    expect(readSrc('server/index.ts')).not.toContain('loadOctagonPools')
+  })
+
+  it('/questions/version butun bankni o\'qimaydi — faqat counter + (fizika) marker', () => {
+    const src = readSrc('server/modules/questions/questions.router.ts')
+    // r2v kompozitsiyasi mavjud, lekin full-bank o'qish yo'q
+    expect(src).toContain('getPublishedVersion')
+    expect(src).not.toContain('getAllQuestions')
+  })
+
+  it('Worker R2 key\'ini FAQAT parse-segmentlardan quradi (xom URL emas)', () => {
+    const src = readSrc('workers/question-content/src/index.ts')
+    expect(src).toContain('env.QBANK.get(path.key)')
+    // Xom so'rov URL'i key sifatida ishlatilmasligi shart
+    expect(src).not.toContain('QBANK.get(url')
+    expect(src).not.toContain('QBANK.get(request.url')
+  })
+})
