@@ -35,8 +35,11 @@ const request = (await import('supertest')).default
 
 const app = createApp()
 
-const FREE = '990000006001'
-const PREM = '990000006002'
+/** leaderboard.test.ts U1/U2 (990000006001/2) bilan KESISHMASIN — umumiy test
+ *  DB'da parallel fayllar bir-birining user'larini cascade o'chirardi
+ *  (ai-tests 401 + leaderboard totalCorrect 0). */
+const FREE = '990000010001'
+const PREM = '990000010002'
 const IDS = [FREE, PREM]
 const TOKENS: Record<string, string> = {}
 const FAKE_DATE = '1999-01-01'
