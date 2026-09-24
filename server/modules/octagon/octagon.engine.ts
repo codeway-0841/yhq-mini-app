@@ -156,21 +156,69 @@ export function getEngineStats(): { queue: number; duels: number; matches: numbe
 
 // ── Question Pools ─────────────────────────────────────────────────────────
 
+type PoolSourceRow = {
+  id: number
+  correctAnswer: string
+  questionUz?: string
+  questionRu?: string
+  optionsUz?: unknown
+  optionsRu?: unknown
+  image?: unknown
+}
+
+function toPoolItems(rows: PoolSourceRow[]): QuestionPoolItem[] {
+  return rows.map((r) => ({
+    id: r.id,
+    correct: r.correctAnswer,
+    textUz: r.questionUz,
+    textRu: r.questionRu,
+    optionsUz: r.optionsUz as Record<string, string>,
+    optionsRu: r.optionsRu as Record<string, string>,
+    image: (r.image as string | null) ?? null,
+  }))
+}
+
 export async function loadOctagonPools(): Promise<OctagonPools> {
   const pools: OctagonPools = new Map()
   for (const dsId of new Set(SUBJECT_REGISTRY.map((s) => s.dataSourceId))) {
     const rows = await getProvider(dsId).getAllQuestions()
-    pools.set(dsId, rows.map((r) => ({
-      id: r.id,
-      correct: r.correctAnswer,
-      textUz: r.questionUz,
-      textRu: r.questionRu,
-      optionsUz: r.optionsUz as Record<string, string>,
-      optionsRu: r.optionsRu as Record<string, string>,
-      image: (r.image as string | null) ?? null,
-    })))
+    pools.set(dsId, toPoolItems(rows))
   }
   return pools
+}
+
+/**
+ * LAZY POOL (EGRESS 2026-09-24, AUDIT-NEON-EGRESS #1): server boot'da
+ * 0 bank yuklanadi — ilgari boot'da 11 bank (52.7MB) SELECT * qilinardi va
+ * Render free plan har uyqu/uyg'onishda buni takrorlardi (Neon overage'ning
+ * eng katta manbai). Endi pool FAQAT shu fanda birinchi duel so'rovida
+ * yuklanadi; parallel so'rovlar bitta inflight Promise'ni bo'lishadi;
+ * yuklangan pool QUESTION_POOLS'da (RAM) qoladi. Xato bo'lsa inflight
+ * tozalanadi — keyingi so'rov qayta urinadi.
+ */
+const poolInflight = new Map<string, Promise<QuestionPoolItem[]>>()
+
+export function ensurePool(subjectId: string): Promise<QuestionPoolItem[]> {
+  const { dataSourceId } = resolveSubject(subjectId)
+  const existing = QUESTION_POOLS.get(dataSourceId)
+  if (existing) return Promise.resolve(existing)
+  let inflight = poolInflight.get(dataSourceId)
+  if (!inflight) {
+    inflight = getProvider(dataSourceId)
+      .getAllQuestions()
+      .then((rows) => {
+        const pool = toPoolItems(rows)
+        QUESTION_POOLS.set(dataSourceId, pool)
+        poolInflight.delete(dataSourceId)
+        return pool
+      })
+      .catch((err) => {
+        poolInflight.delete(dataSourceId)
+        throw err
+      })
+    poolInflight.set(dataSourceId, inflight)
+  }
+  return inflight
 }
 
 /** WS `question`/`match_state` payload — javob kalitisiz (kalit round_result/ack'da). */

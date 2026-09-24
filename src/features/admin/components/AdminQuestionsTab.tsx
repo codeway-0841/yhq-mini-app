@@ -15,7 +15,6 @@ import {
 import { api, type AdminDbQuestion, type AdminQuestionListItem, type DbTopic } from '../../../shared/api'
 import { type SubjectId } from '../../../../shared/subjects'
 import { SUBJECTS } from '../../../shared/config/subjects'
-import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
@@ -339,8 +338,10 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
               setCreating(false)
               setEditing(null)
               await refresh()
-              // Synchronize client-side test questions store immediately!
-              await useQuestionsStore.getState().reload().catch(() => {})
+              // EGRESS (2026-09-24, AUDIT-NEON-EGRESS #4): global reload() OLIB
+              // TASHLANDI — u butun bankni (5-13MB) `_t` cache-bust bilan qayta
+              // tortardi. Client'lar keyingi launch'da /questions/version
+              // (content_version) farqini ko'rib o'zlari yangilaydi.
               showToast(editing ? "Savol muvaffaqiyatli yangilandi!" : "Yangi savol muvaffaqiyatli saqlandi!")
             } catch (e) {
               alert(e instanceof Error ? e.message : 'Xato')
@@ -375,7 +376,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                     await api.deleteQuestion(deleteConfirm.id)
                     setConfirm(null)
                     await refresh()
-                    await useQuestionsStore.getState().reload().catch(() => {})
+                    // EGRESS (2026-09-24): reload() YO'Q — yuqoridagi izohga qarang.
                   } finally { setBusy(false) }
                 }}
                 className="font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 bg-pdanger w-full py-3.5 rounded-2xl text-[14px] text-white mb-2 disabled:opacity-50"
@@ -403,7 +404,8 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           onSuccess={async (count) => {
             showToast(`${count} ta savol muvaffaqiyatli yuklandi!`)
             await refresh()
-            await useQuestionsStore.getState().reload().catch(() => {})
+            // EGRESS (2026-09-24): reload() YO'Q — client'lar content_version
+            // orqali keyingi launch'da yangilanadi.
           }}
         />
       )}

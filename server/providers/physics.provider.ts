@@ -1,4 +1,4 @@
-import type { QuestionBankProvider, QuestionRow, TopicRow } from './QuestionBankProvider'
+import type { QuestionBankProvider, PublicQuestionRow, QuestionRow, TopicRow } from './QuestionBankProvider'
 import { questionsRepository } from '../modules/questions/questions.repository'
 
 /** Fizika Test Print banki uchun alohida provider. */
@@ -6,6 +6,7 @@ export class PhysicsQuestionBankProvider implements QuestionBankProvider {
   readonly sourceId = 'physics_db'
 
   getAllQuestions(): Promise<QuestionRow[]> { return questionsRepository.findAll(this.sourceId) }
+  getPublicQuestions(): Promise<PublicQuestionRow[]> { return questionsRepository.findAllPublic(this.sourceId) }
   getQuestionById(questionId: number): Promise<QuestionRow | null> {
     return questionsRepository.findById(questionId, this.sourceId)
   }

@@ -33,6 +33,7 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
 
       vi.spyOn(providers, 'getProvider').mockReturnValue({
         getAllQuestions: vi.fn().mockResolvedValue(mockQuestions),
+        getPublicQuestions: vi.fn().mockResolvedValue(mockQuestions),
         getQuestionsByTopic: vi.fn().mockResolvedValue(mockQuestions),
         getTopics: vi.fn().mockResolvedValue([]),
         getQuestionById: vi.fn().mockResolvedValue(mockQuestions[0]),
@@ -43,6 +44,56 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
       expect(res.body).toHaveLength(1)
       expect(res.body[0].correctAnswer).toBeUndefined()
       expect(res.body[0].questionUz).toBe('Savol 1')
+    })
+
+    it('EGRESS (2026-09-24): full-bank yo\'li getPublicQuestions ishlatadi — getAllQuestions EMAS', async () => {
+      const publicRows = [
+        {
+          id: 1,
+          questionUz: 'Savol 1',
+          questionRu: 'Вопрос 1',
+          optionsUz: { a: '1', b: '2' },
+          optionsRu: { a: '1', b: '2' },
+          topicId: 1,
+        },
+      ]
+      const getAllQuestions = vi.fn()
+      const getPublicQuestions = vi.fn().mockResolvedValue(publicRows)
+      vi.spyOn(providers, 'getProvider').mockReturnValue({
+        getAllQuestions,
+        getPublicQuestions,
+        getQuestionsByTopic: vi.fn(),
+        getTopics: vi.fn().mockResolvedValue([]),
+        getQuestionById: vi.fn(),
+      } as any)
+
+      const res = await request(app).get('/api/questions').expect(200)
+
+      // correct_answer Neon'dan umuman tortilmaydi — faqat public proyeksiya:
+      expect(getPublicQuestions).toHaveBeenCalledTimes(1)
+      expect(getAllQuestions).not.toHaveBeenCalled()
+      expect(res.body[0]).not.toHaveProperty('correctAnswer')
+    })
+
+    it('topicId yo\'li getQuestionsByTopic\'da qoladi (o\'zgarishsiz)', async () => {
+      const getQuestionsByTopic = vi.fn().mockResolvedValue([
+        { id: 9, questionUz: 'T', questionRu: 'T', optionsUz: {}, optionsRu: {}, correctAnswer: 'a', topicId: 5 },
+      ])
+      const getPublicQuestions = vi.fn()
+      vi.spyOn(providers, 'getProvider').mockReturnValue({
+        getAllQuestions: vi.fn(),
+        getPublicQuestions,
+        getQuestionsByTopic,
+        getTopics: vi.fn().mockResolvedValue([]),
+        getQuestionById: vi.fn(),
+      } as any)
+
+      const res = await request(app).get('/api/questions?topicId=5').expect(200)
+
+      expect(getQuestionsByTopic).toHaveBeenCalledWith(5)
+      expect(getPublicQuestions).not.toHaveBeenCalled()
+      // topicId yo'li hali to'liq qator — toPublic() defense-in-depth kesadi:
+      expect(res.body[0]).not.toHaveProperty('correctAnswer')
     })
 
     it('returns 400 for invalid query parameters', async () => {

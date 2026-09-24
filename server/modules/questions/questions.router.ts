@@ -96,9 +96,17 @@ const VERSION_CACHE = 'public, max-age=30, s-maxage=60, stale-while-revalidate=3
  * Feedback endi POST /progress/:userId/result javobidan olinadi
  * (post-answer reveal: foydalanuvchi allaqachon javob bergan).
  * Admin'ga to'liq qatorlar alohida GET /api/admin/questions orqali.
+ *
+ * EGRESS (2026-09-24): full-bank yo'li endi SQL darajasida ham kalitsiz
+ * (provider.getPublicQuestions → findAllPublic — correct_answer Neon'dan
+ * umuman chiqmaydi). toPublic() defense-in-depth sifatida SAQLANADI —
+ * topicId yo'li (getQuestionsByTopic) hali to'liq qator qaytaradi.
  */
-function toPublic<T extends { correctAnswer: string }>(rows: T[]): Array<Omit<T, 'correctAnswer'>> {
-  return rows.map(({ correctAnswer: _hidden, ...rest }) => rest)
+function toPublic<T>(rows: T[]): Array<Omit<T, 'correctAnswer'>> {
+  return rows.map((row) => {
+    const { correctAnswer: _hidden, ...rest } = row as T & { correctAnswer?: string }
+    return rest
+  })
 }
 
 /**
@@ -174,7 +182,8 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
 
   const rows = topicId
     ? await provider.getQuestionsByTopic(Number(topicId))
-    : await provider.getAllQuestions()
+    // EGRESS (2026-09-24): public full-bank — correct_answer SQL'da ham yo'q
+    : await provider.getPublicQuestions()
 
   res.set('Cache-Control', CONTENT_CACHE)
   res.set('X-Data-Source', entry.dataSourceId)

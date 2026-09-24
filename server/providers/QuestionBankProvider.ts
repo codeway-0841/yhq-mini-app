@@ -10,9 +10,15 @@ import type { topics, questions } from '../schema'
 export type TopicRow   = typeof topics.$inferSelect
 export type QuestionRow = typeof questions.$inferSelect
 
+/** /api/questions PUBLIC payload — `correctAnswer` Neon'dan ham tortilmaydi
+ *  (EGRESS 2026-09-24, AUDIT-NEON-EGRESS #3). */
+export type PublicQuestionRow = Omit<QuestionRow, 'correctAnswer'>
+
 export interface QuestionBankProvider {
   readonly sourceId: string
   getAllQuestions(): Promise<QuestionRow[]>
+  /** Public endpoint (to'g'ri javobsiz) — client'ga yuboriladigan ustunlargina. */
+  getPublicQuestions(): Promise<PublicQuestionRow[]>
   getQuestionById(questionId: number): Promise<QuestionRow | null>
   getQuestionsByTopic(topicId: number): Promise<QuestionRow[]>
   getTopics(): Promise<TopicRow[]>

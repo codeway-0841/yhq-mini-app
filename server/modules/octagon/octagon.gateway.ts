@@ -31,6 +31,7 @@ import {
   setEngineLimits,
   setEnginePools,
   getEngineStats,
+  ensurePool,
   rejoinMatch,
   handleDisconnect,
   leaveDuelByUser,
@@ -412,6 +413,17 @@ function parseWsMessage(raw: unknown): Record<string, unknown> | null {
               const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
                 ? String(msg.subjectId)
                 : DEFAULT_SUBJECT_ID
+
+              // LAZY POOL (EGRESS 2026-09-24): duel boshlanishidan OLDIN faqat
+              // shu fan pool'i yuklanadi (boot'da 0 bank). Parallel so'rovlar
+              // bitta inflight promise'ni bo'lishadi; yuklangan pool RAM'da.
+              try {
+                await ensurePool(subjectId)
+              } catch (poolErr) {
+                Sentry.captureException(poolErr, { tags: { ws: 'pool_load' } })
+                send(ws, { type: 'error', message: 'questions_unavailable' })
+                return
+              }
 
               const rawCode = typeof msg.duelCode === 'string' ? msg.duelCode.trim().toLowerCase() : ''
               if (rawCode === 'new') {

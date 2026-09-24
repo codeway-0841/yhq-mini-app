@@ -1,4 +1,4 @@
-import type { QuestionBankProvider, QuestionRow, TopicRow } from './QuestionBankProvider'
+import type { QuestionBankProvider, PublicQuestionRow, QuestionRow, TopicRow } from './QuestionBankProvider'
 import { questionsRepository } from '../modules/questions/questions.repository'
 
 /**
@@ -18,6 +18,10 @@ export class DefaultQuestionBankProvider implements QuestionBankProvider {
 
   getAllQuestions(): Promise<QuestionRow[]> {
     return questionsRepository.findAll(this.sourceId)
+  }
+
+  getPublicQuestions(): Promise<PublicQuestionRow[]> {
+    return questionsRepository.findAllPublic(this.sourceId)
   }
 
   getQuestionById(questionId: number): Promise<QuestionRow | null> {

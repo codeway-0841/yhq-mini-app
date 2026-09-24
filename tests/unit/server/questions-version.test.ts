@@ -1,16 +1,35 @@
 /**
  * Bank kontent versiyasi (GET /api/questions/version) — client persist-keshining
- * ishonch manbai (EGRESS "A" bosqich, 2026-09-21).
+ * ishonch manbai.
+ *
+ * EGRESS FIX (2026-09-24, AUDIT-NEON-EGRESS #2): versiya endi BUTUN bankni
+ * (0.6–11.8MB) SELECT * qilib md5 olmaydi — FAQAT `question_banks.content_version`
+ * yagona-qator counter'i o'qiladi (~50 bayt). Admin CRUD counter'ni atomik
+ * oshiradi — client kesh-invalidation semantikasi o'zgarmagan.
  *
  * Kritik invariantlar:
- *  - DETERMINISTIK: bir xil kontent → har safar bir xil hash (lambda'lararo)
- *  - public payload o'zgarsa → hash o'zgaradi (client keshi yangilanadi)
- *  - correctAnswer ATAYLAB hash'ga kirmaydi: client uni hech ko'rmaydi —
- *    admin faqat javob kalitini tuzatsa millionlab client keshi bekorga
- *    bekor qilinmasligi kerak
+ *  - javob { v } — opaque string, faqat counter'dan (`cv<n>`)
+ *  - provider.getAllQuestions/getTopics HECH QACHON chaqirilmaydi (full-bank YO'Q)
+ *  - PER-LAMBDA KESH YO'Q: har so'rov yangi counter — admin tahriri barcha
+ *    Vercel instance'lariga darhol ko'rinadi (multi-instance to'g'rilik)
+ *  - counter oshsa → v o'zgaradi (client bankni qayta tortadi)
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import request from 'supertest'
+
+// db/connection mock — bankContentVersion endi db.select({ v: content_version })
+// zanjirini ishlatadi. Zanjir: select(...).from(...).where(...) → rows.
+const h = vi.hoisted(() => {
+  const whereFn = vi.fn()
+  const fromFn = vi.fn(() => ({ where: whereFn }))
+  const selectFn = vi.fn(() => ({ from: fromFn }))
+  return { whereFn, fromFn, selectFn }
+})
+
+vi.mock('../../../server/db/connection', () => ({
+  db: { select: h.selectFn },
+}))
+
 import { createApp } from '../../../server/app'
 import * as providers from '../../../server/providers'
 import { hashBankContent, invalidateBankVersions } from '../../../server/modules/questions/bank-version'
@@ -35,7 +54,19 @@ const t = (id: number, name = `Mavzu ${id}`): TopicRow => ({
   id, nameUz: name, nameRu: `Тема ${id}`, slug: `mavzu-${id}`, bankId: 'traffic_rules_db',
 } as TopicRow)
 
-describe('hashBankContent — deterministik fingerprint', () => {
+function mockProvider() {
+  return {
+    sourceId: 'traffic_rules_db',
+    getAllQuestions: vi.fn(),
+    getPublicQuestions: vi.fn(),
+    getQuestionsByTopic: vi.fn(),
+    getTopics: vi.fn(),
+    getQuestionById: vi.fn(),
+    getStats: vi.fn(),
+  } as any
+}
+
+describe('hashBankContent — deterministik fingerprint (test/diagnostika util)', () => {
   it('bir xil kontent → bir xil hash', () => {
     const rows = [q(1), q(2)]
     const topics = [t(1)]
@@ -67,38 +98,89 @@ describe('hashBankContent — deterministik fingerprint', () => {
   })
 })
 
-describe('GET /api/questions/version', () => {
+describe('GET /api/questions/version — content_version counter (EGRESS fix)', () => {
   beforeEach(() => {
     vi.restoreAllMocks()
     invalidateBankVersions()
+    h.whereFn.mockReset()
+    h.fromFn.mockClear()
+    h.selectFn.mockClear()
   })
 
-  it('200 + { v } + public cache header', async () => {
-    vi.spyOn(providers, 'getProvider').mockReturnValue({
-      sourceId: 'traffic_rules_db',
-      getAllQuestions: vi.fn().mockResolvedValue([q(1), q(2)]),
-      getQuestionsByTopic: vi.fn(),
-      getTopics: vi.fn().mockResolvedValue([t(1)]),
-      getQuestionById: vi.fn(),
-      getStats: vi.fn(),
-    } as any)
+  it('200 + { v: "cv<n>" } + public cache header', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([{ v: 7 }])
 
     const res = await request(app).get('/api/questions/version').expect(200)
-    expect(typeof res.body.v).toBe('string')
-    expect(res.body.v).toMatch(/^[0-9a-f]{32}$/)
+    expect(res.body).toEqual({ v: 'cv7' })
     expect(res.headers['cache-control']).toContain('public')
     expect(res.headers['cache-control']).toContain('s-maxage=60')
   })
 
-  it('javobda kontent YO\'Q — faqat fingerprint (egress minimal)', async () => {
-    vi.spyOn(providers, 'getProvider').mockReturnValue({
-      sourceId: 'traffic_rules_db',
-      getAllQuestions: vi.fn().mockResolvedValue([q(1)]),
-      getQuestionsByTopic: vi.fn(),
-      getTopics: vi.fn().mockResolvedValue([]),
-      getQuestionById: vi.fn(),
-      getStats: vi.fn(),
-    } as any)
+  it('EGRESS: FAQAT yagona-qator content_version o\'qiladi — butun bank TORTILMAYDI', async () => {
+    const provider = mockProvider()
+    vi.spyOn(providers, 'getProvider').mockReturnValue(provider)
+    h.whereFn.mockResolvedValue([{ v: 3 }])
+
+    await request(app).get('/api/questions/version').expect(200)
+
+    // Full-bank o'qishlar — HECH QACHON:
+    expect(provider.getAllQuestions).not.toHaveBeenCalled()
+    expect(provider.getPublicQuestions).not.toHaveBeenCalled()
+    expect(provider.getTopics).not.toHaveBeenCalled()
+    // SQL proyeksiya FAQAT content_version ustunini so'raydi:
+    expect(h.selectFn).toHaveBeenCalledTimes(1)
+    const projection = h.selectFn.mock.calls[0][0] as Record<string, unknown>
+    expect(Object.keys(projection)).toEqual(['v'])
+  })
+
+  it('PER-LAMBDA KESH YO\'Q — har so\'rov DB\'dan yangi o\'qiydi (multi-instance to\'g\'rilik)', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([{ v: 5 }])
+
+    await request(app).get('/api/questions/version').expect(200)
+    await request(app).get('/api/questions/version').expect(200)
+    // Bitta integer'lik PK lookup arzon — to'g'rilik keshdan muhim:
+    // admin tahriri boshqa lambda instance'larida ham darhol ko'rinishi SHART.
+    expect(h.whereFn).toHaveBeenCalledTimes(2)
+  })
+
+  it('counter oshsa KEYINGI so\'rovda darhol yangi versiya — invalidate SHART EMAS (multi-instance xavfsiz)', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([{ v: 5 }])
+    const r1 = await request(app).get('/api/questions/version').expect(200)
+
+    // Admin CRUD simulyatsiyasi: content_version 5 → 6. E'tibor bering:
+    // invalidateBankVersions() CHAQIRILMAYDI — kesh bo'lmagani uchun
+    // keyingi so'rov o'zi yangi qiymatni ko'radi (eski lambda'da qotish YO'Q).
+    h.whereFn.mockResolvedValue([{ v: 6 }])
+    const r2 = await request(app).get('/api/questions/version').expect(200)
+
+    expect(r1.body.v).toBe('cv5')
+    expect(r2.body.v).toBe('cv6')
+    expect(r1.body.v).not.toBe(r2.body.v)
+    expect(h.whereFn).toHaveBeenCalledTimes(2)
+  })
+
+  it('invalidateBankVersions() no-op bo\'lsa ham xavfsiz chaqiriladi (repository integratsiyasi)', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([{ v: 9 }])
+    invalidateBankVersions() // no-op — lekin mavjud va throw qilmaydi
+    const res = await request(app).get('/api/questions/version').expect(200)
+    expect(res.body).toEqual({ v: 'cv9' })
+  })
+
+  it('bank qatori topilmasa → "cv1" fallback', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([])
+
+    const res = await request(app).get('/api/questions/version').expect(200)
+    expect(res.body).toEqual({ v: 'cv1' })
+  })
+
+  it('javobda kontent YO\'Q — faqat versiya (egress minimal)', async () => {
+    vi.spyOn(providers, 'getProvider').mockReturnValue(mockProvider())
+    h.whereFn.mockResolvedValue([{ v: 12 }])
 
     const res = await request(app).get('/api/questions/version').expect(200)
     expect(Object.keys(res.body)).toEqual(['v'])
@@ -107,26 +189,5 @@ describe('GET /api/questions/version', () => {
 
   it('noto\'g\'ri parametr → 400', async () => {
     await request(app).get('/api/questions/version?topicId=abc').expect(400)
-  })
-
-  it('kontent o\'zgarsa versiya ham o\'zgaradi (kesh miss → yangi hash)', async () => {
-    const provider = {
-      sourceId: 'traffic_rules_db',
-      getAllQuestions: vi.fn().mockResolvedValue([q(1, 'eski')]),
-      getQuestionsByTopic: vi.fn(),
-      getTopics: vi.fn().mockResolvedValue([]),
-      getQuestionById: vi.fn(),
-      getStats: vi.fn(),
-    } as any
-    const spy = vi.spyOn(providers, 'getProvider').mockReturnValue(provider)
-
-    const r1 = await request(app).get('/api/questions/version').expect(200)
-    // Admin tahriri simulyatsiyasi: kontent o'zgardi + kesh tozalandi
-    provider.getAllQuestions.mockResolvedValue([q(1, 'yangi')])
-    invalidateBankVersions()
-    const r2 = await request(app).get('/api/questions/version').expect(200)
-
-    expect(r1.body.v).not.toBe(r2.body.v)
-    expect(spy).toHaveBeenCalled()
   })
 })

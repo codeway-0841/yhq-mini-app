@@ -1,4 +1,4 @@
-import type { QuestionBankProvider, QuestionRow, TopicRow } from './QuestionBankProvider'
+import type { QuestionBankProvider, PublicQuestionRow, QuestionRow, TopicRow } from './QuestionBankProvider'
 import { db } from '../db/connection'
 import { questions, topics } from '../schema'
 import { eq, asc, and } from 'drizzle-orm'
@@ -26,6 +26,26 @@ export class RussianQuestionBankProvider implements QuestionBankProvider {
     return cached('russian:questions:all', () =>
       db
         .select()
+        .from(questions)
+        .where(eq(questions.bankId, this.sourceId))
+        .orderBy(asc(questions.id)),
+    )
+  }
+
+  getPublicQuestions(): Promise<PublicQuestionRow[]> {
+    return cached('russian:questions:public', () =>
+      db
+        .select({
+          id: questions.id,
+          bankId: questions.bankId,
+          externalId: questions.externalId,
+          questionUz: questions.questionUz,
+          questionRu: questions.questionRu,
+          optionsUz: questions.optionsUz,
+          optionsRu: questions.optionsRu,
+          image: questions.image,
+          topicId: questions.topicId,
+        })
         .from(questions)
         .where(eq(questions.bankId, this.sourceId))
         .orderBy(asc(questions.id)),

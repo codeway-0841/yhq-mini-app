@@ -23,6 +23,7 @@ export {
 export {
   loadOctagonPools,
   reloadOctagonPools,
+  ensurePool,
   buildDuelResultRows,
   joinAttemptAllowed,
   ROUNDS,

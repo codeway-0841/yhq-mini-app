@@ -48,6 +48,8 @@ function buildApp(): express.Express {
 
 const emptyProvider = {
   getAllQuestions: vi.fn().mockResolvedValue([]),
+  // EGRESS (2026-09-24): full-bank yo'li endi getPublicQuestions orqali ketadi
+  getPublicQuestions: vi.fn().mockResolvedValue([]),
   getQuestionsByTopic: vi.fn().mockResolvedValue([]),
   getTopics: vi.fn().mockResolvedValue([]),
   getQuestionById: vi.fn().mockResolvedValue(null),
@@ -76,7 +78,7 @@ describe('GET /api/questions — full-bank cap KUZATUV rejimida', () => {
     // Bloklash YO'Q — aks holda bitta CGNAT shlyuzidagi begona odamlar
     // bir-birini kun bo'yi ilovadan mahrum qilardi.
     expect(res.status).toBe(200)
-    expect(emptyProvider.getAllQuestions).toHaveBeenCalled()
+    expect(emptyProvider.getPublicQuestions).toHaveBeenCalled()
     // Signal esa saqlanadi — suiiste'mol ko'rinsa qaror qabul qilish uchun
     expect(authRepository.createAuditLog).toHaveBeenCalledWith(
       expect.objectContaining({

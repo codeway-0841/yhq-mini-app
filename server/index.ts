@@ -13,7 +13,7 @@ import http                from 'http'
 import { WebSocketServer } from 'ws'
 import { config }          from './config'
 import { createApp }       from './app'
-import { attachOctagon, loadOctagonPools, getOctagonStats } from './octagon'
+import { attachOctagon, getOctagonStats } from './octagon'
 import { startAiTestScheduler } from './modules/ai-tests/scheduler'
 import { stopAllIntervals } from './utils/shutdown'
 
@@ -73,19 +73,17 @@ server.on('clientError', (err, socket) => {
   socket.destroy()
 })
 
-loadOctagonPools()
-  .then((pools) => {
-    attachOctagon(wss, pools)
-    const total = [...pools.values()].reduce((s, p) => s + p.length, 0)
-    server.listen(config.server.port, () => {
-      console.log(`Server :${config.server.port} (HTTP + WS) — ${total} questions (${pools.size} banks)`)
-      // AI kunlik test generatsiyasi — soatlik ensure (bugun + ertaga).
-      // Vercel'da EMAS: bu faqat Render (24/7) entry'si; 45-topshiriqli 2
-      // variant generatsiyasi serverless 60s limitiga sig'maydi.
-      startAiTestScheduler()
-    })
-  })
-  .catch((err) => {
-    console.error('Failed to load questions from DB at startup:', err)
-    process.exit(1)
-  })
+// EGRESS (2026-09-24, AUDIT-NEON-EGRESS #1): boot'da 0 SAVOL BANKI yuklanadi.
+// Ilgari boot'da 11 bank (52.7MB) SELECT * qilinib xotiraga tortilardi va
+// Render free plan har uyqu/uyg'onish + har deploy'da buni takrorlardi —
+// Neon network overage'ning eng katta manbai. Endi pool'lar LAZY: birinchi duel
+// so'rovida FAQAT o'sha fan pool'i yuklanadi (octagon.engine.ensurePool —
+// parallel so'rovlar bitta inflight Promise'ni bo'lishadi).
+attachOctagon(wss, new Map())
+server.listen(config.server.port, () => {
+  console.log(`Server :${config.server.port} (HTTP + WS) — lazy question pools (0 banks at boot)`)
+  // AI kunlik test generatsiyasi — soatlik ensure (bugun + ertaga).
+  // Vercel'da EMAS: bu faqat Render (24/7) entry'si; 45-topshiriqli 2
+  // variant generatsiyasi serverless 60s limitiga sig'maydi.
+  startAiTestScheduler()
+})

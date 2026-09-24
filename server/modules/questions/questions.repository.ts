@@ -2,6 +2,7 @@ import { and, asc, eq, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import { questions, topics, questionExplanations } from '../../schema'
 import { invalidateBankVersions } from './bank-version'
+import type { PublicQuestionRow } from '../../providers/QuestionBankProvider'
 
 // In-memory TTL cache — questions/topics change rarely (manual seed only),
 // so there's no need to hit the DB on every request.
@@ -26,6 +27,32 @@ export const questionsRepository = {
     return cached(`questions:all:${bankId}`, () =>
       db
         .select()
+        .from(questions)
+        .where(eq(questions.bankId, bankId))
+        .orderBy(asc(questions.id)),
+    )
+  },
+
+  /**
+   * PUBLIC payload (EGRESS 2026-09-24, AUDIT-NEON-EGRESS #3): /api/questions
+   * client'iga yuboriladigan ustunlargina — `correct_answer` Neon'dan UMUMAN
+   * chiqmaydi (ilgari SELECT * qilinib, kalit lambda'da JS bilan kesilardi).
+   * Octagon pool'i (kalit kerak) findAll'da qoladi.
+   */
+  findAllPublic(bankId = 'traffic_rules_db'): Promise<PublicQuestionRow[]> {
+    return cached(`questions:public:${bankId}`, () =>
+      db
+        .select({
+          id: questions.id,
+          bankId: questions.bankId,
+          externalId: questions.externalId,
+          questionUz: questions.questionUz,
+          questionRu: questions.questionRu,
+          optionsUz: questions.optionsUz,
+          optionsRu: questions.optionsRu,
+          image: questions.image,
+          topicId: questions.topicId,
+        })
         .from(questions)
         .where(eq(questions.bankId, bankId))
         .orderBy(asc(questions.id)),
