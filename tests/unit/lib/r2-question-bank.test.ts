@@ -135,7 +135,7 @@ describe('loadPhysicsBankR2 — muvaffaqiyat', () => {
 
   it('correctAnswer chunk\'da bo\'lsa ham CLIENT payload\'iga kirmaydi (whitelist map)', async () => {
     const dirty = { ...q(1), correctAnswer: 'A', explanation: 'sir' }
-    const { } = mockFetch({
+    mockFetch({
       '/questions/physics/v12/manifest.json': {
         body: manifest(12, [{ path: 'chunks/chunk-001.json', questionCount: 1 }], 1),
       },

@@ -32,7 +32,7 @@ vi.mock('../../../src/shared/config', () => ({
 }))
 
 vi.mock('../../../src/shared/lib/r2-question-bank', () => ({
-  loadSubjectBankR2: vi.fn(async (version: string) => {
+  loadSubjectBankR2: vi.fn(async (_subjectId: string, _version: string) => {
     if (h.r2Error) throw h.r2Error
     return [
       { id: 1, questionUz: 'S1', questionRu: 'V1', optionsUz: { A: 'a' }, optionsRu: { A: 'а' }, image: null, topicId: 1 },

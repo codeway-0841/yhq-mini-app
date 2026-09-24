@@ -26,7 +26,7 @@ function makeStorage(opts: { failHead?: string[] } = {}): QbankStorage & { calls
   const existing = new Set<string>()
   return {
     calls,
-    async uploadObject(key, body) {
+    async uploadObject(key, _body) {
       calls.push({ op: 'put', key })
       existing.add(key)
     },
