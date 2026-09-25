@@ -154,7 +154,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
         <div className="flex flex-col gap-3 mb-5">
           {(ru ? lesson.bodyRu : lesson.bodyUz).map((p, i) => (
             <div key={i} className="flex gap-3">
-              <span className="flex-none size-5 rounded-full text-[10px] font-semibold flex items-center justify-center mt-0.5 bg-pprimary/15 text-pprimary">
+              <span className="flex-none size-5 rounded-full text-[10px] font-semibold flex items-center justify-center mt-0.5 bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary">
                 {i + 1}
               </span>
               <p className="text-sm leading-relaxed text-pmuted">{p}</p>
@@ -349,8 +349,8 @@ export default function Darslik() {
   }
 
   return (
-    <div ref={rootRef} className="lesson-course px-4 pb-4" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
-      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center justify-between mb-4">
+    <div ref={rootRef} className="lesson-course px-4 pb-4 lg:px-8 lg:pb-8 lg:max-w-4xl lg:mx-auto lg:w-full" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
+      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 lg:-mx-8 px-4 lg:px-8 py-2.5 page-header flex items-center justify-between mb-4">
         <div className="flex items-center gap-1.5">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="-ml-2 grid size-11 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
@@ -373,7 +373,7 @@ export default function Darslik() {
         const title = ru ? item.titleRu : item.title
         return <section key={item.id} id={`lesson-module-${item.id}`} aria-labelledby={`lesson-module-title-${item.id}`}
           ref={(node) => { if (node) moduleRefs.current.set(item.id, node); else moduleRefs.current.delete(item.id) }}
-          className="lesson-module-section mx-auto max-w-[440px]" data-module-state={done === list.length ? 'done' : item.id === currentModule?.id ? 'current' : 'upcoming'} style={{ '--module-color': item.color } as CSSProperties}>
+          className="lesson-module-section mx-auto w-full max-w-[440px] lg:max-w-none" data-module-state={done === list.length ? 'done' : item.id === currentModule?.id ? 'current' : 'upcoming'} style={{ '--module-color': item.color } as CSSProperties}>
           <div className="lesson-module-sticky">
             <div className="lesson-module-banner rounded-2xl">
               <span className="lesson-module-icon"><Icon aria-hidden="true" size={21} strokeWidth={1.75} /></span>
