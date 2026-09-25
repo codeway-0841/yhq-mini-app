@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ChevronDown, ChevronUp, Dumbbell, Crown } from 'lucide-react'
+import { ChevronDown, ChevronUp, Dumbbell, Crown, X } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import { registerModal } from '../../shared/lib/navigation'
 import { useT, type Lang } from '../../shared/i18n'
@@ -36,7 +36,15 @@ export default function LessonPreview({ title, selectionKey, check, current, don
         <span className="lesson-practice-disc" aria-hidden="true" /><Dumbbell aria-hidden="true" />
       </button>}
     </div>
-    {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl" aria-labelledby="lesson-preview-title">
+    {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl relative" aria-labelledby="lesson-preview-title">
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
+        className="absolute top-3.5 right-3.5 grid size-7 place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
+      >
+        <X size={16} strokeWidth={2} />
+      </button>
       <div key={selectionKey} className="lesson-preview-copy">
         <h2 id="lesson-preview-title">{title}</h2>
       </div>
