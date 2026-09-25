@@ -13,17 +13,72 @@
 .lesson-module-progress { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: conic-gradient(var(--module-color, var(--p-primary)) var(--module-progress), var(--p-surface) 0); }
 .lesson-module-progress span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--p-card); color: var(--p-fg); font-size: 10px; font-weight: 800; }
 .lesson-module-section:last-of-type { padding-bottom: 280px; }
-.learning-row { min-height: clamp(160px, 48vw, 205px); display: flex; align-items: center; }
-.learning-node {
-  display: flex; align-items: center; gap: 3%; width: 100%; padding: 0 2% 0 6%;
-  border-radius: 16px; text-align: left; scroll-margin-top: 170px; scroll-margin-bottom: 260px;
+.learning-row {
+  min-height: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
-.learning-row[data-turn='1'] .learning-node, .learning-row[data-turn='3'] .learning-node { padding-left: 20%; }
-.learning-row[data-turn='2'] .learning-node { padding-left: 34%; }
+.learning-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 220px + 52px);
+  width: 2px;
+  background: var(--p-line);
+  z-index: 0;
+}
+@media (max-width: 479px) {
+  .learning-row::before {
+    left: 52px;
+  }
+}
+.learning-row:first-child::before {
+  top: 44px;
+}
+.learning-row:last-child::before {
+  bottom: 44px;
+}
+.learning-node {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 16px !important;
+  margin: 0 auto;
+  border-radius: 16px;
+  text-align: left;
+  scroll-margin-top: 170px;
+  scroll-margin-bottom: 260px;
+  cursor: pointer;
+  z-index: 1;
+}
+.learning-row[data-turn='0'] .learning-node,
+.learning-row[data-turn='1'] .learning-node,
+.learning-row[data-turn='2'] .learning-node,
+.learning-row[data-turn='3'] .learning-node {
+  padding-left: 16px !important;
+  transform: none !important;
+}
 .learning-node:focus,
 .learning-node:focus-visible,
 .learning-node:active { outline: none !important; box-shadow: none !important; }
-.learning-node-copy { display: flex; flex-direction: column; gap: 5px; min-width: 0; padding-top: 36px; transition: opacity 240ms ease-out; }
+.learning-node-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+  padding-top: 0;
+  transition: opacity 240ms ease-out;
+  opacity: 1 !important;
+}
 .learning-node[aria-pressed='true'] .learning-node-copy,
 .learning-node:focus-visible .learning-node-copy,
 .lesson-course[data-has-selection='false'] .learning-node[aria-current='step'] .learning-node-copy { opacity: 1; }
@@ -31,7 +86,7 @@
 .learning-node-title { display: block; font-size: 15px; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; color: var(--p-fg); }
 .learning-current-label { font-size: 10px; font-weight: 700; color: var(--p-success); }
 .learning-tile {
-  --token-size: clamp(100px, 30vw, 132px);
+  --token-size: 72px;
   --tile-color: var(--p-primary); --tile-light: color-mix(in srgb, var(--p-primary) 40%, white);
   --tile-side: color-mix(in srgb, var(--p-primary) 65%, #17202e); --tile-edge: var(--p-primary);
   position: relative; display: block; flex: none; width: var(--token-size); height: calc(var(--token-size) * 1.0833);
@@ -236,56 +291,45 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .learning-row {
-    min-height: 104px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 92px;
+    height: 92px;
   }
   .learning-node {
-    width: auto;
-    min-width: 360px;
-    max-width: 480px;
-    padding: 0;
+    width: 440px;
+    max-width: 440px;
     gap: 20px;
   }
-  .learning-row[data-turn='0'] .learning-node { transform: translateX(-24px); }
-  .learning-row[data-turn='1'] .learning-node { transform: translateX(0); }
-  .learning-row[data-turn='2'] .learning-node { transform: translateX(24px); }
-  .learning-row[data-turn='3'] .learning-node { transform: translateX(0); }
+  .learning-row::before {
+    left: calc(50% - 220px + 52px);
+  }
   .learning-tile {
-    --token-size: 84px;
-  }
-  .learning-node-copy {
-    padding-top: 0;
-    gap: 3px;
-  }
-  .learning-node-title {
-    font-size: 16px;
-    font-weight: 600;
+    --token-size: 72px;
   }
   .lesson-preview-wrap {
     position: fixed;
-    bottom: 24px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 420px;
+    inset: 0;
     z-index: 50;
-    padding: 0;
-    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(4px);
+    padding: 24px;
+    pointer-events: auto;
   }
   .lesson-preview-tools {
     display: none;
   }
   .lesson-preview {
     max-width: 420px;
+    width: 100%;
     border-radius: 1.25rem;
     border: 1px solid var(--p-line);
     background: var(--p-card);
-    box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.25);
-    padding: 22px 24px 20px;
+    box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.4);
+    padding: 28px 24px 24px;
     pointer-events: auto;
+    position: relative;
   }
   .lesson-preview h2 {
     font-size: 20px;
