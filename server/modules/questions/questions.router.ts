@@ -100,8 +100,8 @@ const VERSION_CACHE = 'public, max-age=30, s-maxage=60, stale-while-revalidate=3
  *
  * EGRESS (2026-09-24): full-bank yo'li endi SQL darajasida ham kalitsiz
  * (provider.getPublicQuestions → findAllPublic — correct_answer Neon'dan
- * umuman chiqmaydi). toPublic() defense-in-depth sifatida SAQLANADI —
- * topicId yo'li (getQuestionsByTopic) hali to'liq qator qaytaradi.
+ * umuman chiqmaydi). toPublic() defense-in-depth sifatida SAQLANADI.
+ * topicId yo'li ham kalitsiz (getPublicQuestionsByTopic → findByTopicPublic).
  */
 function toPublic<T>(rows: T[]): Array<Omit<T, 'correctAnswer'>> {
   return rows.map((row) => {
@@ -182,7 +182,10 @@ router.get('/questions', contentLimit, wrap(async (req, res) => {
   const provider = getProvider(entry.dataSourceId)
 
   const rows = topicId
-    ? await provider.getQuestionsByTopic(Number(topicId))
+    // EGRESS gigiyena (2026-09-24): topic yo'li ham kalitsiz proyeksiya —
+    // client bu branch'ni chaqirmaydi, lekin to'g'ridan-to'g'ri URL probda
+    // ham kalit Neon'dan chiqmasligi kerak.
+    ? await provider.getPublicQuestionsByTopic(Number(topicId))
     // EGRESS (2026-09-24): public full-bank — correct_answer SQL'da ham yo'q
     : await provider.getPublicQuestions()
 

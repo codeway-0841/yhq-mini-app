@@ -32,6 +32,10 @@ export class DefaultQuestionBankProvider implements QuestionBankProvider {
     return questionsRepository.findByTopic(topicId, this.sourceId)
   }
 
+  getPublicQuestionsByTopic(topicId: number): Promise<PublicQuestionRow[]> {
+    return questionsRepository.findByTopicPublic(topicId, this.sourceId)
+  }
+
   getTopics(): Promise<TopicRow[]> {
     return questionsRepository.findTopics(this.sourceId)
   }

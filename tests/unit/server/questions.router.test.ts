@@ -75,24 +75,27 @@ describe('server/modules/questions/questions.router.ts - Questions Router Tests'
       expect(res.body[0]).not.toHaveProperty('correctAnswer')
     })
 
-    it('topicId yo\'li getQuestionsByTopic\'da qoladi (o\'zgarishsiz)', async () => {
-      const getQuestionsByTopic = vi.fn().mockResolvedValue([
-        { id: 9, questionUz: 'T', questionRu: 'T', optionsUz: {}, optionsRu: {}, correctAnswer: 'a', topicId: 5 },
+    it('topicId yo\'li ham kalitsiz: getPublicQuestionsByTopic (EGRESS gigiyena)', async () => {
+      const getPublicQuestionsByTopic = vi.fn().mockResolvedValue([
+        { id: 9, questionUz: 'T', questionRu: 'T', optionsUz: {}, optionsRu: {}, topicId: 5 },
       ])
+      const getQuestionsByTopic = vi.fn()
       const getPublicQuestions = vi.fn()
       vi.spyOn(providers, 'getProvider').mockReturnValue({
         getAllQuestions: vi.fn(),
         getPublicQuestions,
         getQuestionsByTopic,
+        getPublicQuestionsByTopic,
         getTopics: vi.fn().mockResolvedValue([]),
         getQuestionById: vi.fn(),
       } as any)
 
       const res = await request(app).get('/api/questions?topicId=5').expect(200)
 
-      expect(getQuestionsByTopic).toHaveBeenCalledWith(5)
+      expect(getPublicQuestionsByTopic).toHaveBeenCalledWith(5)
+      // Kalitli to'liq o'qish bu yo'lda HECH QACHON chaqirilmaydi:
+      expect(getQuestionsByTopic).not.toHaveBeenCalled()
       expect(getPublicQuestions).not.toHaveBeenCalled()
-      // topicId yo'li hali to'liq qator — toPublic() defense-in-depth kesadi:
       expect(res.body[0]).not.toHaveProperty('correctAnswer')
     })
 

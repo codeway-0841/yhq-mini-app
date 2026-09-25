@@ -51,6 +51,12 @@ describe("EGRESS regression — public endpoint'larga correct_answer tortilmaydi
     expect(src).not.toContain('provider.getAllQuestions()')
   })
 
+  it('/api/questions?topicId= yo\'li ham kalitsiz (getPublicQuestionsByTopic)', () => {
+    const src = readSrc('server/modules/questions/questions.router.ts')
+    expect(src).toContain('provider.getPublicQuestionsByTopic(')
+    expect(src).not.toContain('provider.getQuestionsByTopic(')
+  })
+
   it("bank-version.ts butun bankni o'qimaydi (md5-full-bank YO'Q)", () => {
     const src = readSrc('server/modules/questions/bank-version.ts')
     expect(src).not.toContain('getAllQuestions')

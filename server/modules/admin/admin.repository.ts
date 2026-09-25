@@ -95,10 +95,6 @@ export const adminRepository = {
     })
   },
 
-  async listQuestionsByBank(bankId: string) {
-    return db.select().from(questions).where(eq(questions.bankId, bankId)).orderBy(asc(questions.id))
-  },
-
   /**
    * Admin ro'yxat (v2 hardening): paginated + JAVOB KALITSIZ.
    * `correctAnswer` faqat detail endpoint'da (audit'li) ochiladi — ro'yxat

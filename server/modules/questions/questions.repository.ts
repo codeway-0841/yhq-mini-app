@@ -59,6 +59,32 @@ export const questionsRepository = {
     )
   },
 
+  /**
+   * PUBLIC topic payload — findAllPublic bilan bir xil whitelist proyeksiya
+   * (`correct_answer` Neon'dan chiqmaydi) + topic filtri. /api/questions?topicId=
+   * yo'li uchun (EGRESS gigiyena 2026-09-24: ilgari findByTopic — SELECT * bilan
+   * kalitni tortib JS'da kesardi).
+   */
+  findByTopicPublic(topicId: number, bankId = 'traffic_rules_db'): Promise<PublicQuestionRow[]> {
+    return cached(`questions:public-topic:${bankId}:${topicId}`, () =>
+      db
+        .select({
+          id: questions.id,
+          bankId: questions.bankId,
+          externalId: questions.externalId,
+          questionUz: questions.questionUz,
+          questionRu: questions.questionRu,
+          optionsUz: questions.optionsUz,
+          optionsRu: questions.optionsRu,
+          image: questions.image,
+          topicId: questions.topicId,
+        })
+        .from(questions)
+        .where(and(eq(questions.bankId, bankId), eq(questions.topicId, topicId)))
+        .orderBy(asc(questions.id)),
+    )
+  },
+
   countByBank(bankId = 'traffic_rules_db'): Promise<number> {
     return cached(`questions:count:${bankId}`, async () => {
       const [row] = await db

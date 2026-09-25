@@ -21,6 +21,8 @@ export interface QuestionBankProvider {
   getPublicQuestions(): Promise<PublicQuestionRow[]>
   getQuestionById(questionId: number): Promise<QuestionRow | null>
   getQuestionsByTopic(topicId: number): Promise<QuestionRow[]>
+  /** Topic yo'li ham PUBLIC (kalitsiz) — /api/questions?topicId= uchun. */
+  getPublicQuestionsByTopic(topicId: number): Promise<PublicQuestionRow[]>
   getTopics(): Promise<TopicRow[]>
   getStats(): Promise<{ totalQuestions: number; totalTopics: number }>
 }

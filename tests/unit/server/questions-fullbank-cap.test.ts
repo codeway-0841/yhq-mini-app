@@ -51,6 +51,7 @@ const emptyProvider = {
   // EGRESS (2026-09-24): full-bank yo'li endi getPublicQuestions orqali ketadi
   getPublicQuestions: vi.fn().mockResolvedValue([]),
   getQuestionsByTopic: vi.fn().mockResolvedValue([]),
+  getPublicQuestionsByTopic: vi.fn().mockResolvedValue([]),
   getTopics: vi.fn().mockResolvedValue([]),
   getQuestionById: vi.fn().mockResolvedValue(null),
 }
@@ -108,7 +109,7 @@ describe('GET /api/questions — full-bank cap KUZATUV rejimida', () => {
     h.count = 99
     const res = await request(buildApp()).get('/api/questions?topicId=1')
     expect(res.status).toBe(200)
-    expect(emptyProvider.getQuestionsByTopic).toHaveBeenCalled()
+    expect(emptyProvider.getPublicQuestionsByTopic).toHaveBeenCalled()
   })
 
   it('anonim so\'rov ham sanaladi — kalit IP\'ga qaytadi', async () => {

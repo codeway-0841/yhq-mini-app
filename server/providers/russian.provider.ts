@@ -72,6 +72,26 @@ export class RussianQuestionBankProvider implements QuestionBankProvider {
     )
   }
 
+  getPublicQuestionsByTopic(topicId: number): Promise<PublicQuestionRow[]> {
+    return cached(`russian:questions:public-topic:${topicId}`, () =>
+      db
+        .select({
+          id: questions.id,
+          bankId: questions.bankId,
+          externalId: questions.externalId,
+          questionUz: questions.questionUz,
+          questionRu: questions.questionRu,
+          optionsUz: questions.optionsUz,
+          optionsRu: questions.optionsRu,
+          image: questions.image,
+          topicId: questions.topicId,
+        })
+        .from(questions)
+        .where(and(eq(questions.topicId, topicId), eq(questions.bankId, this.sourceId)))
+        .orderBy(asc(questions.id)),
+    )
+  }
+
   getTopics(): Promise<TopicRow[]> {
     return cached('russian:topics:all', () =>
       db.select().from(topics).where(eq(topics.bankId, this.sourceId)),
