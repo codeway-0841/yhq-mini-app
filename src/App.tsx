@@ -176,7 +176,7 @@ function Layout({ children }: { children: ReactNode }) {
         // ichida scroll bo'ladi); lg:min-h-0 flex stretch'da siqilishi uchun SHART.
         // overflow-x:clip + overflow-y:auto kombinatsiyasi xavfsiz (clip scrollport
         // yaratmaydi). Mobil'da document scroll (o'zgarish YO'Q).
-        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-pline lg:shadow-sm lg:overflow-y-auto lg:overscroll-contain lg:bg-pcanvas flex flex-col"
+        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-plineStrong lg:shadow-md lg:overflow-y-auto lg:overscroll-contain lg:bg-pcanvas flex flex-col"
       >
         <Suspense fallback={<PageLoader />}>
           {children}
