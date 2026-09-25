@@ -96,12 +96,7 @@ function Top3ArcStage({ top3, tt }: {
   if (!first) return null
 
   return (
-    <div className="relative flex flex-col items-center justify-center pt-2 pb-6 px-4 overflow-hidden">
-      {/* Yumshoq nurlanuvchi radial fon nurlari */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-        <div className="size-[280px] rounded-full bg-gradient-to-b from-amber-400/15 via-purple-500/10 to-transparent blur-2xl" />
-      </div>
-
+    <div className="relative flex flex-col items-center justify-center pt-2 pb-6 px-4">
       {/* 3 ta Avatar: Chapda #2 (Kumush badge), O'rtada #1 (Oltin badge), O'ngda #3 (Bronza badge) */}
       <div className="relative z-10 flex items-center justify-center gap-4 sm:gap-7 mt-1">
         {/* 2-o'rin (Kumush / Silver badge) */}
