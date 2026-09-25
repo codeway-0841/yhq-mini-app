@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
 import { pageScrollOffsetOf, scrollPageTo } from '../../shared/lib/page-scroll'
 import { config } from '../../shared/config'
-import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle, ArrowDown } from 'lucide-react'
+import { Play, Check, ChevronLeft, MessageCircle, Dumbbell, GraduationCap, AlertTriangle, ArrowDown, BookOpen, Sparkles, Zap, Share2 } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { MODULE_TOPICS } from '../../content/modules'
 import { lessons, TOTAL_LESSONS, type Lesson } from '../../content/lessons'
@@ -283,6 +283,7 @@ export default function Darslik() {
   const [toast, setToast] = useState<string | null>(null)
 
   const ru = settings.language === 'ru'
+  const subject = useSubjectStore((s) => s.subject)
   const totalDone = modules.reduce((sum, m) => sum + (lessons[m.id] ?? []).filter((_, i) => doneFor[m.id]?.includes(i)).length, 0)
   const markDone = useLessonsStore((s) => s.markDone)
   const jumpToCurrent = () => {
@@ -350,7 +351,8 @@ export default function Darslik() {
 
   return (
     <div ref={rootRef} className="lesson-course px-4 pb-4 lg:px-8 lg:pb-8 lg:max-w-4xl lg:mx-auto lg:w-full" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
-      <header ref={headerRef} className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 lg:-mx-8 px-4 lg:px-8 py-2.5 page-header flex items-center justify-between mb-4">
+      {/* Mobile Page Header */}
+      <header ref={headerRef} className="lg:hidden sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center justify-between mb-4">
         <div className="flex items-center gap-1.5">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
             className="-ml-2 grid size-11 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
@@ -366,6 +368,53 @@ export default function Darslik() {
         </span>
       </header>
 
+      {/* Desktop Wondering Course Header Card */}
+      <div className="lesson-course-header hidden lg:flex">
+        <div className="flex items-center gap-4">
+          <div className="size-14 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.12)] text-pprimary grid place-items-center flex-none">
+            <GraduationCap size={28} strokeWidth={1.75} />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <h2 className="font-display text-xl font-bold tracking-tight text-pfg">
+                {ru ? (subject.nameRu || subject.name) : subject.name} — {ru ? 'Учебник' : 'Darslik'}
+              </h2>
+            </div>
+            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-pmuted">
+              <span className="flex items-center gap-1.5 text-pfg font-semibold">
+                <BookOpen size={14} className="text-pprimary" />
+                {totalDone}/{TOTAL_LESSONS} {ru ? 'уроков пройдено' : 'dars tugatilgan'}
+              </span>
+              <span className="w-1 h-1 rounded-full bg-plineStrong" />
+              <button onClick={() => navigate('/mavzular')} className="flex items-center gap-1 hover:text-pprimary transition-colors">
+                <Sparkles size={14} />
+                {tt('topics')}
+              </button>
+              <span className="w-1 h-1 rounded-full bg-plineStrong" />
+              <button onClick={() => practiceModule(modules[0])} className="flex items-center gap-1 hover:text-pprimary transition-colors">
+                <Zap size={14} />
+                {ru ? 'Быстрая практика' : 'Tezkor mashq'}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          <button onClick={() => {
+            const shareUrl = window.location.origin
+            const text = `${ru ? (subject.nameRu || subject.name) : subject.name} — KIVVI ta'lim platformasi`
+            if (navigator.share) {
+              void navigator.share({ title: 'KIVVI', text, url: shareUrl })
+            } else {
+              openTelegramLink('https://t.me/share/url?url=' + encodeURIComponent(shareUrl) + '&text=' + encodeURIComponent(text))
+            }
+          }}
+          className="lesson-header-action flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-pmuted hover:text-pfg transition-colors">
+            <Share2 size={14} />
+            <span>{ru ? 'Поделиться' : 'Ulashish'}</span>
+          </button>
+        </div>
+      </div>
+
       {modules.map((item) => {
         const list = lessons[item.id] ?? []
         const done = list.filter((_, i) => doneFor[item.id]?.includes(i)).length
@@ -378,11 +427,20 @@ export default function Darslik() {
             <div className="lesson-module-banner rounded-2xl">
               <span className="lesson-module-icon"><Icon aria-hidden="true" size={21} strokeWidth={1.75} /></span>
               <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-bold uppercase tracking-[.1em] opacity-90">{item.id} · {tt('pathModule')} · {list.length} {tt('lessonWord')}</p>
-                <h2 id={`lesson-module-title-${item.id}`} tabIndex={-1} className="mt-0.5 break-words font-display text-[16px] font-bold leading-tight focus-visible:outline-none">{title}</h2>
+                <h2 id={`lesson-module-title-${item.id}`} tabIndex={-1} className="font-display text-[16px] lg:text-[17px] font-bold leading-tight focus-visible:outline-none">{item.id}. {title}</h2>
+                <p className="text-[10px] lg:text-[13px] font-medium text-pmuted mt-0.5">{done}/{list.length} {tt('lessonWord')}{done === list.length ? ` • ${tt('pathDone')}` : ''}</p>
+              </div>
+              <div
+                tabIndex={0}
+                onClick={() => practiceModule(item)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); practiceModule(item) } }}
+                title={ru ? 'Практика модуля' : 'Modul mashqi'}
+                className="lesson-module-notebook hidden lg:grid size-10 place-items-center rounded-xl text-pmuted hover:text-pfg transition-colors cursor-pointer"
+              >
+                <BookOpen size={18} strokeWidth={1.75} />
               </div>
               <div role="progressbar" aria-label={`${title} — ${tt('pathProgress')}`} aria-valuenow={done} aria-valuemin={0} aria-valuemax={list.length}
-                className="lesson-module-progress" style={{ '--module-progress': `${list.length ? done / list.length * 100 : 0}%` } as CSSProperties}>
+                className="lesson-module-progress lg:hidden" style={{ '--module-progress': `${list.length ? done / list.length * 100 : 0}%` } as CSSProperties}>
                 <span>{done}/{list.length}</span>
               </div>
             </div>

@@ -198,6 +198,33 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
 }
 
 /* Desktop layout (Wondering.app uslubi — keng banner, markazlashgan yo'l, toza preview) */
+.lesson-course-header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  border-radius: 1.25rem;
+  background: var(--p-card);
+  border: 1px solid var(--p-line);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.lesson-header-action {
+  border: 1px solid var(--p-line);
+  background: var(--p-surface);
+}
+.lesson-header-action:hover {
+  border-color: var(--p-lineStrong, var(--p-line));
+}
+.lesson-module-notebook {
+  border: 1px solid var(--p-line);
+  background: var(--p-surface);
+}
+.lesson-module-notebook:hover {
+  border-color: var(--p-lineStrong, var(--p-line));
+  color: var(--p-fg);
+}
+
 @media (min-width: 1024px) {
   .lesson-module-banner {
     padding: 16px 24px;
@@ -206,26 +233,35 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     border-radius: 1rem;
     border: 1px solid var(--p-line);
     background: var(--p-card);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .learning-row {
-    min-height: 140px;
+    min-height: 104px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .learning-node {
     width: auto;
+    min-width: 360px;
     max-width: 480px;
     padding: 0;
     gap: 20px;
   }
-  .learning-row[data-turn='0'] .learning-node { transform: translateX(-36px); padding-left: 0; }
-  .learning-row[data-turn='1'] .learning-node { transform: translateX(0); padding-left: 0; }
-  .learning-row[data-turn='2'] .learning-node { transform: translateX(36px); padding-left: 0; }
-  .learning-row[data-turn='3'] .learning-node { transform: translateX(0); padding-left: 0; }
+  .learning-row[data-turn='0'] .learning-node { transform: translateX(-24px); }
+  .learning-row[data-turn='1'] .learning-node { transform: translateX(0); }
+  .learning-row[data-turn='2'] .learning-node { transform: translateX(24px); }
+  .learning-row[data-turn='3'] .learning-node { transform: translateX(0); }
   .learning-tile {
-    --token-size: 110px;
+    --token-size: 84px;
+  }
+  .learning-node-copy {
+    padding-top: 0;
+    gap: 3px;
+  }
+  .learning-node-title {
+    font-size: 16px;
+    font-weight: 600;
   }
   .lesson-preview-wrap {
     position: fixed;
