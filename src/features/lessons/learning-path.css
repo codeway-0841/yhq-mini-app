@@ -86,7 +86,16 @@
 }
 .learning-orbit { opacity: 0; stroke-dasharray: 82 18; transition: opacity 240ms; }
 .learning-node[aria-pressed='true'] .learning-orbit { opacity: 1; }
-.learning-tile .learning-tile-icon { position: absolute; left: calc(50% - 11px); top: 58%; width: 22px; height: 22px; color: white; transform: scaleY(.8); }
+.learning-tile .learning-tile-icon {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  width: 22px;
+  height: 22px;
+  color: white;
+  transform: translate(-50%, -50%) scaleY(0.85);
+  pointer-events: none;
+}
 .learning-mascot {
   position: absolute; top: -2%; left: 27%; width: 46%; height: 58%;
   display: block; transform-origin: 50% 92%;
