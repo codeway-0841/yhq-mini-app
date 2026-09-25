@@ -59,7 +59,7 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(routePage).toContain('lg:border')
     expect(routePage).toContain('lg:border-plineStrong')
     expect(routePage).toContain('lg:shadow-md')
-    expect(routePage).toContain('lg:bg-pcanvas')
+    expect(routePage).toContain('dark:lg:bg-black/40')
     expect(routePage).toContain('lg:pb-0')
     expect(routePage).toContain('lg:min-h-0')
     expect(routePage).toContain('lg:overflow-y-auto')

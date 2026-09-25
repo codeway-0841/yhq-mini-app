@@ -170,13 +170,13 @@ function Layout({ children }: { children: ReactNode }) {
         // (Profil, Reyting, Topics, Adaptive...) o'z `lg:max-w-2xl` cap'iga ega,
         // grid sahifalar (Dashboard, Testlar, Shop...) kenglikni to'liq ishlatadi.
         // Desktop PANEL (wondering.app uslubi): lg'da border+radius+soya bilan
-        // suzuvchi panel — fon lg:bg-pcanvas (sahifalar foniga 1:1 mos, ostida oq chiziq yo'q),
+        // suzuvchi panel — fon to'qroq (dark:lg:bg-black/40 lg:bg-black/[0.04]) bo'lib tashqi canvas'dan yaqqol ajraladi.
         // padding YO'Q (px-0 SAQLANADI: PageHeader -mx-4 full-bleed shu'ga tayanadi).
         // lg:overflow-y-auto — panel ICHKI scrollport (border qotadi, kontent
         // ichida scroll bo'ladi); lg:min-h-0 flex stretch'da siqilishi uchun SHART.
         // overflow-x:clip + overflow-y:auto kombinatsiyasi xavfsiz (clip scrollport
         // yaratmaydi). Mobil'da document scroll (o'zgarish YO'Q).
-        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-plineStrong lg:shadow-md lg:overflow-y-auto lg:overscroll-contain lg:bg-pcanvas flex flex-col"
+        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-plineStrong lg:shadow-md lg:overflow-y-auto lg:overscroll-contain dark:lg:bg-black/40 lg:bg-black/[0.04] flex flex-col"
       >
         <Suspense fallback={<PageLoader />}>
           {children}
