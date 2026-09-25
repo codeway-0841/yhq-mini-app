@@ -282,10 +282,18 @@ export default function CamAiPage() {
   if (phase === 'setup') {
     return (
       <div className="px-4">
-        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} size="lg" onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
+        {/* size="md" (default): CamAi — back'li ichki sahifa, tab-root emas.
+            size="lg" (2026-09-24 shell restyle) sticky header'ni shishirib,
+            desktop panel scrollport'da manba tugmalarini header ostiga
+            tiqib qo'ygandi — Playwright "subtree intercepts pointer events"
+            bilan yiqilgan (UI kontrakt: lg = back'SIZ tab-root). */}
+        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
 
-        {/* Manba tanlash */}
-        <div className="mb-4 grid grid-cols-2 gap-2">
+        {/* Manba tanlash — scroll-mt: brauzer/Playwright scrollIntoView
+            tugmani sticky header ostiga park qilmasligi uchun (real user:
+            klaviatura fokusi ham header ostida qolmaydi). Vizualga ta'sir
+            qilmaydi (faqat scroll pozitsiyasi). */}
+        <div className="mb-4 grid scroll-mt-24 grid-cols-2 gap-2">
           {(['bank', 'custom'] as const).map((s) => (
             <button
               key={s}
