@@ -6,8 +6,9 @@
  * pattern'i). Yuzlar on-device aniqlanadi (MediaPipe WASM) — video hech qayerga
  * yuborilmaydi, biometrik ma'lumot saqlanmaydi, slotlar anonim.
  *
- * Savollar: (1) KIVVI savol banki (requestPublic, correctAnswer'siz — javobni
- * o'qituvchi baholaydi, scoring trust boundary buzilmaydi) yoki (2) o'qituvchi
+ * Savollar: (1) KIVVI savol banki — UMUMIY useQuestionsStore orqali
+ * (R2/Worker + IndexedDB kesh; correctAnswer'siz — javobni o'qituvchi
+ * baholaydi, scoring trust boundary buzilmaydi) yoki (2) o'qituvchi
  * yozgan erkin savollar (localStorage 'yhq-camai-custom').
  *
  * Kamera bo'lmasa/ruxsat berilmasa — kamerasiz rejim (raqamli slotlar).
@@ -15,8 +16,9 @@
 import { useCallback, useMemo, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Check, Dices, Loader2, Shuffle, Trophy, Users, X } from 'lucide-react'
-import { api, type DbQuestion } from '@/shared/api'
+import { type Question } from '@/shared/api'
 import { useAppStore } from '@/shared/store/useAppStore'
+import { useQuestionsStore } from '@/shared/store/useQuestionsStore'
 import { useT } from '@/shared/i18n'
 import { useToast } from '@/shared/components/ToastContainer'
 import { PageHeader } from '@/shared/components/ui/page-header'
@@ -47,14 +49,17 @@ const CUSTOM_KEY = 'yhq-camai-custom'
 type Phase = 'setup' | 'game'
 type GameStep = 'idle' | 'roulette' | 'question' | 'done'
 
-function dbToCamAi(q: DbQuestion, lang: 'uz' | 'ru'): CamAiQuestion {
-  const opts = lang === 'ru' ? q.optionsRu : q.optionsUz
+/** Store'dagi til-mapping qilingan savol → CamAi savoli.
+ *  Store allaqachon joriy tilda map qilgan (load ichida) — qayta til
+ *  tanlash shart emas. answer har doim null (bank kaliti client'ga
+ *  chiqmaydi — scoring trust boundary). */
+function questionToCamAi(q: Question): CamAiQuestion {
   return {
     id: `bank-${q.id}`,
-    text: lang === 'ru' ? q.questionRu : q.questionUz,
-    options: Object.values(opts),
+    text: q.text,
+    options: q.options.map((o) => o.text),
     image: q.image,
-    answer: null, // bank javob kaliti client'ga chiqmaydi (scoring trust boundary)
+    answer: null,
   }
 }
 
@@ -134,20 +139,23 @@ export default function CamAiPage() {
       }
       try { localStorage.setItem(CUSTOM_KEY, customText) } catch { /* private mode */ }
     } else {
+      // Savol banki — UMUMIY store orqali (R2/Worker yo'li + IndexedDB kesh).
+      // To'g'ridan-to'g'ri api.getQuestions() chaqirilsa legacy full-bank
+      // endpoint'ga tushib Neon egress yeydi (2026-09-24 CamAi bypass fix).
+      // retry() — "Boshlash" foydalanuvchi harakati: oldingi muvaffaqiyatsiz
+      // urinishdan keyin ham qayta urinadi; yuklangan bank bo'lsa fetch YO'Q.
       setLoading(true)
       try {
-        const raw = await api.getQuestions(subjectId)
-        questions = raw.map((q) => dbToCamAi(q, lang))
-      } catch {
+        await useQuestionsStore.getState().retry(lang, subjectId)
+      } finally {
         setLoading(false)
-        showError(tt('camaiLoadError'))
+      }
+      const bank = useQuestionsStore.getState()
+      if (!bank.loaded || bank.subjectId !== subjectId || bank.questions.length === 0) {
+        showError(tt(bank.error ? 'camaiLoadError' : 'camaiBankEmpty'))
         return
       }
-      setLoading(false)
-      if (questions.length === 0) {
-        showError(tt('camaiBankEmpty'))
-        return
-      }
+      questions = bank.questions.map(questionToCamAi)
     }
     clearRouletteTimers()
     setPool(questions)
