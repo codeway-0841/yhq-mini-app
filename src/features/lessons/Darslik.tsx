@@ -154,8 +154,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
         <div className="flex flex-col gap-3 mb-5">
           {(ru ? lesson.bodyRu : lesson.bodyUz).map((p, i) => (
             <div key={i} className="flex gap-3">
-              <span className="flex-none w-5 h-5 rounded-full text-[10px] font-semibold flex items-center justify-center mt-0.5"
-                style={{ background: `${mod.color}22`, color: mod.color }}>
+              <span className="flex-none size-5 rounded-full text-[10px] font-semibold flex items-center justify-center mt-0.5 bg-pprimary/15 text-pprimary">
                 {i + 1}
               </span>
               <p className="text-sm leading-relaxed text-pmuted">{p}</p>
