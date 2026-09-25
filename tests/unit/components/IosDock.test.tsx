@@ -49,6 +49,22 @@ describe('IosDock component', () => {
     expect(aiBtn.textContent).not.toContain('✨')
   })
 
+  it('kamera tugmasi asosiy nav dockidan tashqarida o\'ng tomonda alohida kapsula bo\'lib turadi', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <IosDock />
+      </MemoryRouter>,
+    )
+
+    const nav = screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })
+    const cameraBtn = screen.getByRole('button', { name: 'AI Yechish' })
+
+    // Kamera tugmasi nav ichida emas, alohida mustaqil kapsula
+    expect(nav).not.toContainElement(cameraBtn)
+    expect(cameraBtn.className).toMatch(/rounded-full/)
+    expect(cameraBtn.className).toMatch(/backdrop-blur/)
+  })
+
   it('marks active tab with aria-current="page"', () => {
     render(
       <MemoryRouter initialEntries={['/testlar']}>
@@ -171,8 +187,8 @@ describe('IosDock component', () => {
     const cases: Array<[string, string]> = [
       ['/', 'translateX(0%)'],
       ['/testlar', 'translateX(100%)'],
-      ['/octagon', 'translateX(300%)'],
-      ['/rejimlar', 'translateX(400%)'],
+      ['/octagon', 'translateX(200%)'],
+      ['/rejimlar', 'translateX(300%)'],
     ]
     for (const [path, expected] of cases) {
       const { unmount } = render(
