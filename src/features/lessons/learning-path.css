@@ -90,8 +90,8 @@
   position: absolute;
   left: 50%;
   top: 65%;
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   color: white;
   transform: translate(-50%, -50%) scaleY(0.85);
   pointer-events: none;
