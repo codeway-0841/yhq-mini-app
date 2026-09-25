@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ChevronDown, ChevronUp, Dumbbell, Crown, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Dumbbell, Crown } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import { registerModal } from '../../shared/lib/navigation'
 import { useT, type Lang } from '../../shared/i18n'
@@ -26,7 +26,7 @@ export default function LessonPreview({ title, selectionKey, check, current, don
     return () => { unregister(); document.removeEventListener('keydown', escape) }
   }, [collapsed])
   const jump = !current && !done
-  return <div className="lesson-preview-wrap" data-collapsed={collapsed} onClick={(e) => { if (e.target === e.currentTarget) onClose() }}>
+  return <div className="lesson-preview-wrap" data-collapsed={collapsed}>
     <div className="lesson-preview-tools">
       {onJump ? <Button variant="secondary" size="icon" className="lesson-preview-toggle rounded-full" onClick={onJump}
         aria-label={tt('pathJump')}>
@@ -36,15 +36,7 @@ export default function LessonPreview({ title, selectionKey, check, current, don
         <span className="lesson-practice-disc" aria-hidden="true" /><Dumbbell aria-hidden="true" />
       </button>}
     </div>
-    {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl relative" aria-labelledby="lesson-preview-title">
-      <button
-        type="button"
-        onClick={onClose}
-        aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-        className="absolute top-4 right-4 grid size-8 place-items-center rounded-xl text-pmuted hover:bg-psurface hover:text-pfg transition-colors"
-      >
-        <X size={18} strokeWidth={2} />
-      </button>
+    {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl" aria-labelledby="lesson-preview-title">
       <div key={selectionKey} className="lesson-preview-copy">
         <h2 id="lesson-preview-title">{title}</h2>
       </div>
