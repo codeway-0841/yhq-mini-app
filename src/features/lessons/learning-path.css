@@ -15,14 +15,14 @@
 .lesson-module-section:last-of-type { padding-bottom: 220px; }
 .learning-row {
   position: relative;
-  min-height: 96px;
+  min-height: 104px;
   display: flex;
   align-items: center;
 }
 .learning-row::before {
   content: '';
   position: absolute;
-  left: 55px;
+  left: 61px;
   top: 0;
   bottom: 0;
   width: 2px;
@@ -30,10 +30,10 @@
   z-index: 0;
 }
 .learning-row:first-child::before {
-  top: 48px;
+  top: 52px;
 }
 .learning-row:last-child::before {
-  bottom: 48px;
+  bottom: 52px;
 }
 .learning-row:first-child:last-child::before {
   display: none;
@@ -70,11 +70,11 @@
 .learning-node-title { display: block; font-size: 15px; font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; color: var(--p-fg); }
 .learning-current-label { font-size: 10px; font-weight: 700; color: var(--p-success); }
 .learning-tile {
-  --token-size: 80px;
+  --token-size: 92px;
   --tile-color: var(--p-primary); --tile-light: color-mix(in srgb, var(--p-primary) 40%, white);
   --tile-side: color-mix(in srgb, var(--p-primary) 65%, #17202e); --tile-edge: var(--p-primary);
   position: relative; display: block; flex: none; width: var(--token-size); height: calc(var(--token-size) * 1.0833);
-  top: -15px;
+  top: -17px;
   transition: transform 180ms ease-out;
   z-index: 1;
 }
@@ -90,8 +90,8 @@
   position: absolute;
   left: 50%;
   top: 65%;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   color: white;
   transform: translate(-50%, -50%) scaleY(0.85);
   pointer-events: none;
@@ -286,8 +286,8 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .learning-row {
-    min-height: 100px;
-    height: 100px;
+    min-height: 116px;
+    height: 116px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,17 +295,17 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     width: 100%;
   }
   .learning-row::before {
-    left: calc(50% - 175px);
+    left: calc(50% - 179px);
   }
   .learning-row:first-child::before {
-    top: 50px;
+    top: 58px;
   }
   .learning-row:last-child::before {
-    bottom: 50px;
+    bottom: 58px;
   }
   .learning-node {
-    width: 460px;
-    max-width: 460px;
+    width: 480px;
+    max-width: 480px;
     padding: 0 16px !important;
     margin: 0 auto !important;
     transform: none !important;
@@ -320,7 +320,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     background: var(--p-surface);
   }
   .learning-tile {
-    --token-size: 80px;
+    --token-size: 92px;
   }
   .learning-node-copy {
     padding-top: 0 !important;

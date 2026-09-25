@@ -62,6 +62,6 @@ export default function LessonToken({ done, current, check = false }: {
         ? <polygon className="learning-orbit" points={octagon} pathLength="100" fill="none" stroke="var(--p-primary)" strokeWidth="3" strokeLinecap="round" />
         : <ellipse className="learning-orbit" cx="60" cy="89" rx="57" ry="33" pathLength="100" fill="none" stroke="var(--p-primary)" strokeWidth="3" strokeLinecap="round" />}
     </svg>
-    {current ? <PathMascot /> : done && !check ? <Check aria-hidden="true" className="learning-tile-icon" size={22} strokeWidth={3.5} /> : !check ? <Lock aria-hidden="true" className="learning-tile-icon opacity-60" size={18} strokeWidth={2.5} /> : null}
+    {current ? <PathMascot /> : done && !check ? <Check aria-hidden="true" className="learning-tile-icon" size={24} strokeWidth={3.5} /> : !check ? <Lock aria-hidden="true" className="learning-tile-icon opacity-60" size={20} strokeWidth={2.5} /> : null}
   </span>
 }
