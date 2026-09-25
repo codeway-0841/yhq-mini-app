@@ -74,6 +74,7 @@
   --tile-color: var(--p-primary); --tile-light: color-mix(in srgb, var(--p-primary) 40%, white);
   --tile-side: color-mix(in srgb, var(--p-primary) 65%, #17202e); --tile-edge: var(--p-primary);
   position: relative; display: block; flex: none; width: var(--token-size); height: calc(var(--token-size) * 1.0833);
+  top: -15px;
   transition: transform 180ms ease-out;
   z-index: 1;
 }
