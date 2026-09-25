@@ -75,6 +75,15 @@ export default function DesktopSidebar() {
   const collapsed = useSidebarStore((s) => s.collapsed)
   const toggleSidebar = useSidebarStore((s) => s.toggle)
 
+  // Desktop sidebar kengligini CSS o'zgaruvchisi orqali sinxronlash (preview kartasi markazlanishi uchun)
+  useEffect(() => {
+    const root = document.documentElement
+    root.style.setProperty('--sidebar-w', collapsed ? '4rem' : '16rem')
+    return () => {
+      root.style.removeProperty('--sidebar-w')
+    }
+  }, [collapsed])
+
   const [userDropdownOpen, setUserDropdownOpen] = useState(false)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)

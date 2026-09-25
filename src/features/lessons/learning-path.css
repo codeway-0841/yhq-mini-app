@@ -197,9 +197,9 @@
   body:not([data-no-animation='true']) .lesson-preview-copy { animation: learning-copy-in 180ms ease-out; }
   body:not([data-no-animation='true']) .lesson-practice-float > svg { animation: learning-idle 3s ease-in-out infinite; }
 }
-@media (prefers-reduced-motion: reduce) { .learning-tile, .learning-orbit, .learning-node-copy { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .learning-tile, .learning-orbit, .learning-node-copy, .lesson-preview-wrap { transition: none; } }
 body[data-no-animation='true'] .learning-tile, body[data-no-animation='true'] .learning-orbit,
-body[data-no-animation='true'] .learning-node-copy { transition: none; }
+body[data-no-animation='true'] .learning-node-copy, body[data-no-animation='true'] .lesson-preview-wrap { transition: none; }
 @media (max-width: 359px) {
   .learning-node-title { font-size: 13px; }
   .lesson-preview h2 { font-size: 18px; }
@@ -332,7 +332,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
   .lesson-preview-wrap {
     position: fixed;
     bottom: 24px;
-    left: 50%;
+    left: calc(50vw + var(--sidebar-w, 16rem) / 2);
     right: auto;
     transform: translateX(-50%);
     width: 100%;
@@ -340,6 +340,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     z-index: 50;
     padding: 0;
     pointer-events: none;
+    transition: left 200ms ease-out;
   }
   .lesson-preview-tools {
     display: none;

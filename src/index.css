@@ -21,9 +21,17 @@
   --theme-line:        rgba(255, 255, 255, 0.07);
   --theme-line-strong: rgba(255, 255, 255, 0.14);
   --theme-shadow:      #000000;
+  /* Desktop sidebar kengligi (DesktopSidebar.tsx dinamik yangilaydi: 16rem yoki 4rem) */
+  --sidebar-w: 0px;
 
   /* RGB triplet — Tailwind opacity modifier (bg-[rgb(var(--p-primary-rgb)/X)] ...) uchun */
   --p-primary-rgb: 20 111 221;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --sidebar-w: 16rem;
+  }
 }
 
 body[data-theme='light'] {
