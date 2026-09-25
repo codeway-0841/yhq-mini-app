@@ -1426,6 +1426,19 @@ body[data-no-animation='true'] .animate-scorePop {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
+  /* Desktop panel scrollport + sticky header tuzağı (2026-09-25 camai e2e):
+     PageHeader'dagi `-mt-[var(--safe-top-body)]` pull-up TG-fullscreen
+     telefonlar uchun (inset ostiga kirish) — lekin desktop PANEL
+     scrollport'da sticky header panel tepasiga yopishib, in-flow'dagi
+     keyingi kontent yopishgan header qutisi OSTIDA qoladi: kalta
+     sahifalarda (scroll YO'Q) yuqori blok abadiy bosilmaydigan bo'ladi
+     (Playwright "subtree intercepts pointer events"). Desktop'da pull-up
+     MANOSIZ (TG tugmalari yo'q) — o'chiramiz: header in-flow panel
+     tepasida, kontent undan keyin (scroll'da sticky baribir ishlaydi).
+     Mobil/TG rejimga TEGILMAYDI (faqat lg media). */
+  .page-header {
+    margin-top: 0;
+  }
   /* Desktop: panel ichidagi cardlar nozik hairline border bilan aniq ajraladi */
   .route-page .bg-pcard {
     border: 1px solid var(--p-line);

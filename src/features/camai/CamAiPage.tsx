@@ -282,11 +282,9 @@ export default function CamAiPage() {
   if (phase === 'setup') {
     return (
       <div className="px-4">
-        {/* size="md" (default): CamAi — back'li ichki sahifa, tab-root emas.
-            size="lg" (2026-09-24 shell restyle) sticky header'ni shishirib,
-            desktop panel scrollport'da manba tugmalarini header ostiga
-            tiqib qo'ygandi — Playwright "subtree intercepts pointer events"
-            bilan yiqilgan (UI kontrakt: lg = back'SIZ tab-root). */}
+        {/* size="md" (default): CamAi — back'li ichki sahifa, tab-root emas
+            (UI kontrakt: lg = back'SIZ tab-root). Asosiy tuzatish index.css'da
+            (desktop .page-header margin-top:0) — qarang. */}
         <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
 
         {/* Manba tanlash — scroll-mt: brauzer/Playwright scrollIntoView
