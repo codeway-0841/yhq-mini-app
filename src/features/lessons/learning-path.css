@@ -14,36 +14,17 @@
 .lesson-module-progress span { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--p-card); color: var(--p-fg); font-size: 10px; font-weight: 800; }
 .lesson-module-section:last-of-type { padding-bottom: 220px; }
 .learning-row {
-  position: relative;
-  min-height: 104px;
+  min-height: clamp(140px, 40vw, 175px);
   display: flex;
   align-items: center;
-}
-.learning-row::before {
-  content: '';
-  position: absolute;
-  left: 61px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--p-line);
-  z-index: 0;
-}
-.learning-row:first-child::before {
-  top: 52px;
-}
-.learning-row:last-child::before {
-  bottom: 52px;
-}
-.learning-row:first-child:last-child::before {
-  display: none;
+  position: relative;
 }
 .learning-node {
   display: flex;
   align-items: center;
   gap: 16px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 2% 0 6%;
   border-radius: 16px;
   text-align: left;
   scroll-margin-top: 170px;
@@ -51,6 +32,13 @@
   position: relative;
   z-index: 1;
   cursor: pointer;
+}
+.learning-row[data-turn='1'] .learning-node,
+.learning-row[data-turn='3'] .learning-node {
+  padding-left: 20%;
+}
+.learning-row[data-turn='2'] .learning-node {
+  padding-left: 34%;
 }
 .learning-node:focus,
 .learning-node:focus-visible,
@@ -285,35 +273,34 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
     background: var(--p-card);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
+  .learning-path {
+    max-width: 480px;
+    margin: 0 auto;
+  }
   .learning-row {
-    min-height: 116px;
-    height: 116px;
+    min-height: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
     width: 100%;
   }
-  .learning-row::before {
-    left: calc(50% - 179px);
-  }
-  .learning-row:first-child::before {
-    top: 58px;
-  }
-  .learning-row:last-child::before {
-    bottom: 58px;
-  }
   .learning-node {
-    width: 480px;
-    max-width: 480px;
-    padding: 0 16px !important;
-    margin: 0 auto !important;
-    transform: none !important;
+    width: 100%;
+    padding: 0 2% 0 6%;
+    margin: 0;
+    transform: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     border-radius: 1rem;
     transition: background 150ms ease-out;
+  }
+  .learning-row[data-turn='1'] .learning-node,
+  .learning-row[data-turn='3'] .learning-node {
+    padding-left: 20%;
+  }
+  .learning-row[data-turn='2'] .learning-node {
+    padding-left: 34%;
   }
   .learning-node:hover,
   .learning-node[aria-pressed='true'] {

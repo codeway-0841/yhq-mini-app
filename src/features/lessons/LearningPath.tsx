@@ -20,12 +20,12 @@ export default function LearningPath({ mod, doneList, lang, selected, activeModu
   ]
   return <div className="learning-path">
     <ol aria-label={tt('pathLabel')} className="m-0 list-none p-0">
-      {nodes.map((node) => {
+      {nodes.map((node, i) => {
         const done = !node.check && doneList.includes(node.idx)
         const current = !node.check && mod.id === activeModuleId && node.idx === activeIdx
         const chosen = selected?.moduleId === mod.id && selected.idx === node.idx && selected.check === node.check
         const status = node.check ? tt('pathCheckHint') : done ? tt('pathDone') : current ? tt('pathCurrent') : tt('pathUnread')
-        return <li key={node.idx} className="learning-row">
+        return <li key={node.idx} className="learning-row" data-turn={i % 4}>
           <button type="button" data-path-node data-module={mod.id} data-lesson={node.idx} data-check={node.check}
             aria-current={current ? 'step' : undefined} aria-pressed={chosen}
             aria-controls={chosen ? 'lesson-preview' : undefined}
