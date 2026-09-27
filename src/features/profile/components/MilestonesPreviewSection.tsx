@@ -53,6 +53,7 @@ function MilestonePreviewItem({
               alt=""
               className="size-11 object-contain select-none pointer-events-none transition-transform duration-200 group-hover:scale-105"
               loading="lazy"
+              decoding="async"
             />
           ) : null}
         </div>

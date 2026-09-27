@@ -189,6 +189,7 @@ export const BadgeCard3D = memo(function BadgeCard3D({
               src={badgeUrl}
               alt=""
               loading="lazy"
+              decoding="async"
               draggable={false}
               className={cn(
                 'w-full h-full object-contain filter drop-shadow-[0_10px_16px_rgba(0,0,0,0.35)] pointer-events-none',

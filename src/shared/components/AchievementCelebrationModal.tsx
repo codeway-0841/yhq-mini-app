@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useMemo } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Forward, CheckCircle2, Sparkles, ArrowRight } from 'lucide-react'
 import { useAchievementCelebrationStore } from '../store/useAchievementCelebrationStore'
@@ -55,14 +55,6 @@ export default function AchievementCelebrationModal() {
     shareUrl(link, text)
   }, [currentBadge, tt])
 
-  const formattedDate = useMemo(() => {
-    return new Intl.DateTimeFormat(lang === 'ru' ? 'ru-RU' : 'uz-UZ', {
-      day: 'numeric',
-      month: 'short',
-      year: 'numeric',
-    }).format(new Date())
-  }, [lang])
-
   if (!currentBadge) return null
   if (typeof document === 'undefined') return null
 
@@ -79,112 +71,84 @@ export default function AchievementCelebrationModal() {
       {/* Confetti celebration pieces */}
       <Confetti count={40} />
 
-      {/* ── Apple / Taphey Style Milestone Sheet (Full-height Scroll Container) ── */}
+      {/* ── Apple / Taphey Style Milestone Sheet (Full-height Scroll Container, Always Pristine Light) ── */}
       <div
-        className="relative w-full max-w-sm sm:max-w-[420px] rounded-t-[38px] sm:rounded-[38px] bg-[#f4f5f9] dark:bg-[#0f141c] text-gray-900 dark:text-white shadow-2xl overflow-y-auto max-h-[93dvh] flex flex-col animate-slideUp overscroll-contain"
+        className="relative w-full max-w-sm sm:max-w-[420px] rounded-t-[36px] sm:rounded-[36px] bg-[#FAF9FC] text-gray-900 shadow-2xl overflow-y-auto max-h-[92dvh] flex flex-col animate-slideUp overscroll-contain"
       >
-        {/* Dynamic Ambient Glow + Subtle Grid (Upper half only) */}
+        {/* Dynamic Ambient Glow + Subtle Grid (Upper half, pastel badgeColor on light canvas) */}
         <div
-          className="absolute inset-x-0 top-0 h-[720px] pointer-events-none z-0 transition-colors duration-500"
+          className="absolute inset-x-0 top-0 h-[620px] pointer-events-none z-0 transition-colors duration-500"
           style={{
-            backgroundImage: `radial-gradient(circle at 78% 8%, ${hexToRgba(badgeColor, 0.34)} 0%, ${hexToRgba(badgeColor, 0.10)} 42%, transparent 72%), radial-gradient(circle at 20% 22%, rgba(255,255,255,0.82) 0%, transparent 52%), linear-gradient(${hexToRgba(badgeColor, 0.10)} 1px, transparent 1px), linear-gradient(90deg, ${hexToRgba(badgeColor, 0.10)} 1px, transparent 1px)`,
-            backgroundSize: 'auto, auto, 32px 32px, 32px 32px',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 58%, transparent 96%)',
-            maskImage: 'linear-gradient(to bottom, black 0%, black 58%, transparent 96%)',
+            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(badgeColor, 0.22)} 0%, ${hexToRgba(badgeColor, 0.05)} 45%, transparent 70%), radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95) 0%, transparent 55%), linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px)`,
+            backgroundSize: 'auto, auto, 28px 28px, 28px 28px',
+            WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
+            maskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
           }}
         />
 
-        {/* ── STICKY TOP CONTROLS (Seamlessly floating on the ambient glow, NO box, NO border!) ── */}
+        {/* ── STICKY TOP CONTROLS (Floating cleanly without boxes, with white circle buttons) ── */}
         <div
           data-floating-controls
-          className="pointer-events-none sticky top-0 z-30 w-full min-h-[98px] bg-transparent pb-5 px-4 safe-top"
+          className="pointer-events-none sticky top-0 z-30 w-full bg-transparent pt-2.5 pb-1 px-4"
         >
           {/* Top Sheet Grab Handle */}
-          <div className="w-9 h-1 rounded-full bg-gray-400/40 dark:bg-gray-600/40 mx-auto mb-4" />
+          <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2" />
 
-          {/* Top Bar: Close (X) · "Milestone" · Share */}
+          {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
           <div className="flex items-center justify-between">
             <button
               type="button"
               onClick={dismissCurrent}
               aria-label={tt('close')}
-              className="pointer-events-auto size-11 rounded-full bg-white/85 dark:bg-[#1c2431]/85 backdrop-blur-xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] flex items-center justify-center text-gray-800 dark:text-gray-200 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
-              <X size={20} strokeWidth={2.2} />
+              <X size={18} strokeWidth={2.4} />
             </button>
 
-            <div className="rounded-full bg-white/25 dark:bg-[#0f141c]/25 backdrop-blur-xl px-4 py-2 shadow-[0_2px_18px_rgba(255,255,255,0.18)] flex items-center justify-center">
-              <span id="milestone-modal-title" className="text-[18px] font-bold text-gray-900 dark:text-white tracking-tight">
-                {tt('achMilestoneTitle')}
-              </span>
-            </div>
+            <span id="milestone-modal-title" className="text-[17px] font-semibold text-gray-900 tracking-tight">
+              {tt('achMilestoneTitle')}
+            </span>
 
             <button
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="pointer-events-auto size-11 rounded-full bg-white/85 dark:bg-[#1c2431]/85 backdrop-blur-xl shadow-[0_2px_12px_rgba(0,0,0,0.08)] flex items-center justify-center text-gray-800 dark:text-gray-200 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
-              <Forward size={20} strokeWidth={2.2} fill="currentColor" />
+              <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>
           </div>
         </div>
 
         {/* ── SCROLLABLE BODY CONTENT ── */}
-        <div className="relative z-10 px-5 pt-2 pb-6 flex flex-col items-center text-center">
-          {/* Brand Label: Kivvi */}
-          <div className="flex items-center justify-center gap-1.5 mt-1 mb-1">
-            <div className="size-5 rounded-md bg-[#22c55e] flex items-center justify-center text-white text-[11px] font-black shadow-xs">
-              K
-            </div>
-            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">Kivvi</span>
-          </div>
-
+        <div className="relative z-10 px-5 pt-1 pb-6 flex flex-col items-center text-center">
           {/* ── 3D FLOATING ROTATABLE BADGE ── */}
           <MilestonePlaque3D
             achievement={currentBadge}
             unlocked={true}
-            className="-mt-3 -mb-4 !py-2"
+            className="my-1 !py-1"
           />
 
           {/* Status Pill: Achieved */}
-          <div className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold shadow-2xs mt-3 bg-sky-100 dark:bg-sky-950/50 text-[#007aff] dark:text-sky-400">
+          <div className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-semibold shadow-2xs mt-3 bg-[#EBF3FF] text-[#0066FF] border border-[#D0E2FF]/80">
             <CheckCircle2 size={13} fill="currentColor" />
             <span>{tt('achStatusAchieved')}</span>
           </div>
 
           {/* Big Bold Milestone Title */}
-          <h2 className="text-[26px] sm:text-[28px] font-extrabold text-gray-900 dark:text-white tracking-tight mt-3 leading-snug px-2">
+          <h2 className="text-[25px] sm:text-[27px] font-bold text-gray-900 tracking-tight mt-2.5 leading-snug px-3">
             {tt(currentBadge.titleKey)}
           </h2>
 
           {/* Reward Subtitle */}
-          <p className="text-[16px] sm:text-[17px] font-bold mt-1 text-[#007aff] dark:text-sky-400">
+          <p className="text-[15px] sm:text-[16px] font-semibold mt-1 text-[#0066FF]">
             +{currentBadge.reward.xp} XP · +{currentBadge.reward.coins} 🪙
           </p>
 
           {/* Description Paragraph */}
-          <p className="text-[14px] text-gray-500 dark:text-gray-400 max-w-[340px] mt-2.5 leading-relaxed px-4">
+          <p className="text-[14px] text-gray-500 max-w-[340px] mt-2 leading-relaxed px-4">
             {tt(currentBadge.descKey)}
           </p>
-
-          {/* ── MILESTONE REACHED PROGRESS CARD ── */}
-          <div className="mt-6 w-full max-w-[370px] rounded-2xl bg-white dark:bg-[#18202e] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.03)] text-left">
-            <div className="flex items-center justify-between text-[15px] font-bold text-gray-900 dark:text-white">
-              <span>{tt('achMilestoneReached')}</span>
-              <span className="tabular-nums">100%</span>
-            </div>
-
-            {/* Progress Bar (Standard blue, independent of badge color) */}
-            <div className="h-1.5 w-full bg-gray-200 dark:bg-gray-700 rounded-full mt-3 overflow-hidden">
-              <div className="h-full rounded-full w-full transition-all duration-700 bg-[#007aff]" />
-            </div>
-
-            {/* Recorded Date */}
-            <p className="mt-3 text-[12px] text-gray-400 dark:text-gray-500">
-              {tt('achFirstRecorded')} {formattedDate}
-            </p>
-          </div>
 
           {/* Claim Reward Button */}
           <div className="mt-6 w-full max-w-[370px] flex flex-col gap-2">

@@ -139,8 +139,8 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
           transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
         }}
       >
-        {/* ── 3D PHYSICAL DEPTH EXTRUSION SLICES (Thickness ~12px) ── */}
-        {badgeUrl && [-5, -3, -1, 1, 3, 5].map((z) => (
+        {/* ── 3D PHYSICAL DEPTH EXTRUSION SLICES (Optimized to 3 lightweight slices for instant GPU rendering) ── */}
+        {badgeUrl && [-4, 0, 3].map((z) => (
           <div
             key={z}
             className="absolute inset-0 pointer-events-none flex items-center justify-center"
@@ -153,6 +153,8 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
             <img
               src={badgeUrl}
               alt=""
+              loading="eager"
+              decoding="async"
               draggable={false}
               className="w-full h-full object-contain pointer-events-none select-none"
             />
@@ -171,6 +173,8 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
             <img
               src={badgeUrl}
               alt={title}
+              loading="eager"
+              decoding="async"
               draggable={false}
               className={cn(
                 'w-full h-full object-contain pointer-events-none select-none transition-all duration-300',
