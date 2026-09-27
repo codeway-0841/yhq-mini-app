@@ -64,6 +64,25 @@ export default function StatistikaPage() {
   const weekTotal   = week.reduce((s, r) => s + r.answered, 0)
   const weekLabels  = lang === 'ru' ? WEEK_RU : WEEK_UZ
 
+  const { linePathStroke, linePathArea, linePoints } = useMemo(() => {
+    const pts = week.map((r, i) => {
+      const x = 7 + (i * 86) / Math.max(week.length - 1, 1)
+      const pct = r.answered / maxAnswered
+      const y = 38 - pct * 28
+      return { x, y, answered: r.answered }
+    })
+    if (pts.length === 0) return { linePathStroke: '', linePathArea: '', linePoints: [] }
+    let stroke = `M ${pts[0].x} ${pts[0].y}`
+    for (let i = 1; i < pts.length; i++) {
+      const prev = pts[i - 1]
+      const curr = pts[i]
+      const cX = (prev.x + curr.x) / 2
+      stroke += ` C ${cX} ${prev.y}, ${cX} ${curr.y}, ${curr.x} ${curr.y}`
+    }
+    const area = `${stroke} L ${pts[pts.length - 1].x} 48 L ${pts[0].x} 48 Z`
+    return { linePathStroke: stroke, linePathArea: area, linePoints: pts }
+  }, [week, maxAnswered])
+
   // Zaif mavzular — xato savollar mavzular kesimida (top 3, FAQAT joriy fan)
   const { questions, topics } = useQuestionsStore()
   const loadTopics = useQuestionsStore((s) => s.loadTopics)
@@ -150,33 +169,77 @@ export default function StatistikaPage() {
         ))}
       </div>
 
-      {/* Haftalik faollik — bar chart */}
+      {/* Haftalik faollik — bar yoki line chart */}
       <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em]">
         {lang === 'ru' ? `Неделя · ${weekTotal} вопросов` : `Hafta · ${weekTotal} savol`}
       </p>
       <div className="mx-5 rounded-2xl bg-pcard p-5 shadow-xs">
-        <div className="flex items-end justify-between gap-2 h-28">
-          {week.map((r) => {
-            const pct = r.answered / maxAnswered
-            return (
-              <div key={r.date} className="flex-1 flex flex-col items-center gap-1.5">
-                <span className="text-[9px] font-semibold text-psubtle tabular-nums">
-                  {r.answered > 0 ? r.answered : ''}
-                </span>
-                <div className="w-full h-20 rounded-xl flex items-end overflow-hidden" style={{ background: 'var(--p-surface)' }}>
-                  <div className="w-full rounded-t-lg transition-all duration-500"
-                    style={{
-                      height: `${Math.max(pct * 100, r.answered > 0 ? 6 : 0)}%`,
-                      background: r.answered > 0 ? 'var(--p-primary)' : 'transparent',
-                    }} />
+        {settings.chartStyle === 'line' ? (
+          <div className="flex flex-col h-28 justify-between">
+            <div className="relative flex-1 w-full pt-1">
+              <svg viewBox="0 0 100 48" className="w-full h-full overflow-visible" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="statWeekGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="var(--p-primary)" stopOpacity="0.25" />
+                    <stop offset="100%" stopColor="var(--p-primary)" stopOpacity="0.0" />
+                  </linearGradient>
+                </defs>
+                <path d={linePathArea} fill="url(#statWeekGrad)" />
+                <path
+                  d={linePathStroke}
+                  fill="none"
+                  stroke="var(--p-primary)"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                {linePoints.map((pt, idx) => (
+                  <circle
+                    key={idx}
+                    cx={pt.x}
+                    cy={pt.y}
+                    r={pt.answered > 0 ? 3 : 2}
+                    fill={pt.answered > 0 ? 'var(--p-primary)' : 'var(--p-surface)'}
+                    stroke="var(--p-card)"
+                    strokeWidth="1.5"
+                  />
+                ))}
+              </svg>
+            </div>
+            <div className="flex justify-between w-full pt-1.5 border-t border-pline">
+              {week.map((r) => (
+                <div key={r.date} className="flex-1 text-center">
+                  <span className="text-[9.5px] font-semibold text-psubtle">
+                    {weekLabels[new Date(r.date + 'T00:00:00').getDay() === 0 ? 6 : new Date(r.date + 'T00:00:00').getDay() - 1]}
+                  </span>
                 </div>
-                <span className="text-[9.5px] font-semibold text-psubtle">
-                  {weekLabels[new Date(r.date + 'T00:00:00').getDay() === 0 ? 6 : new Date(r.date + 'T00:00:00').getDay() - 1]}
-                </span>
-              </div>
-            )
-          })}
-        </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="flex items-end justify-between gap-2 h-28">
+            {week.map((r) => {
+              const pct = r.answered / maxAnswered
+              return (
+                <div key={r.date} className="flex-1 flex flex-col items-center gap-1.5">
+                  <span className="text-[9px] font-semibold text-psubtle tabular-nums">
+                    {r.answered > 0 ? r.answered : ''}
+                  </span>
+                  <div className="w-full h-20 rounded-xl flex items-end overflow-hidden" style={{ background: 'var(--p-surface)' }}>
+                    <div className="w-full rounded-t-lg transition-all duration-500"
+                      style={{
+                        height: `${Math.max(pct * 100, r.answered > 0 ? 6 : 0)}%`,
+                        background: r.answered > 0 ? 'var(--p-primary)' : 'transparent',
+                      }} />
+                  </div>
+                  <span className="text-[9.5px] font-semibold text-psubtle">
+                    {weekLabels[new Date(r.date + 'T00:00:00').getDay() === 0 ? 6 : new Date(r.date + 'T00:00:00').getDay() - 1]}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        )}
       </div>
 
       {/* Zaif mavzular */}

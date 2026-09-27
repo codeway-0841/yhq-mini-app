@@ -289,6 +289,8 @@ export interface ApiSettings {
   dailyReminderTime?: string
   swipeToNavigate?: boolean
   shakeToClear?: boolean
+  chartStyle?: 'line' | 'bars'
+  appIcon?: 'default' | 'red' | 'green' | 'pro'
 }
 
 export interface FullProfile {

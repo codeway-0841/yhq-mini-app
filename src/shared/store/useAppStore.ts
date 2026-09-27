@@ -128,6 +128,8 @@ const DEFAULT_SETTINGS: ApiSettings = {
   dailyReminderTime: '20:00',
   swipeToNavigate:   true,
   shakeToClear:      true,
+  chartStyle:        'line',
+  appIcon:           'default',
 }
 
 export const useAppStore = create<AppState>()(

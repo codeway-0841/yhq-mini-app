@@ -89,7 +89,7 @@ export default function AchievementCelebrationModal() {
         {/* ── STICKY TOP CONTROLS (Floating cleanly without boxes, with white circle buttons) ── */}
         <div
           data-floating-controls
-          className="pointer-events-none sticky top-0 z-30 w-full bg-transparent pt-2.5 pb-1 px-4"
+          className="pointer-events-none sticky top-[var(--safe-top)] z-30 w-full bg-transparent pt-2.5 pb-1 px-4"
         >
           {/* Top Sheet Grab Handle */}
           <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2" />

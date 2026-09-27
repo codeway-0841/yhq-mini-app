@@ -5,10 +5,11 @@ import { config } from '../../shared/config'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import {
   Copy, Phone, Lock, Globe, CreditCard,
-  RotateCcw, Moon, Sun, Monitor, MessageCircle,
+  RotateCcw, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, X,
+  BarChart2, CloudUpload, Ticket, Award, X, SlidersHorizontal,
 } from 'lucide-react'
+import AppearanceModal from '../../shared/components/AppearanceModal'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -17,7 +18,6 @@ import { api, avatarSrcFor, type AchievementStats } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { flushOutbox, getOutboxCount, onOutboxChange } from '../../shared/lib/outbox'
 import { openTelegramLink, shareUrl, promptAddToHomeScreen } from '../../platform/telegram'
-import { transitionTheme } from '../../shared/lib/theme-transition'
 import PickerSheet from '../../shared/components/PickerSheet'
 import { Button } from '../../shared/components/ui/button'
 import { useToast } from '../../shared/components/ToastContainer'
@@ -99,7 +99,7 @@ export default function Profil() {
   const [showPhotoEdit, setShowPhotoEdit] = useState(false)
   const [showLevelInfo, setShowLevelInfo] = useState(false)
   const [showLangPicker, setShowLangPicker]   = useState(false)
-  const [showThemePicker, setShowThemePicker] = useState(false)
+  const [showAppearance, setShowAppearance] = useState(false)
   const [showPromoModal, setShowPromoModal]   = useState(false)
   const [showCertModal, setShowCertModal]     = useState(false)
   const [showPhoneSheet, setShowPhoneSheet]   = useState(false)
@@ -140,12 +140,6 @@ export default function Profil() {
       setOtpBusy(false)
     }
   }
-
-  const themeLabel = settings.theme === 'dark'
-    ? tt('darkTheme')
-    : settings.theme === 'light'
-      ? tt('lightTheme')
-      : tt('themeSystem')
 
   const setLanguage = (lang: 'uz' | 'ru') => {
     updateSettings({ language: lang })
@@ -420,9 +414,9 @@ export default function Profil() {
         <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}
           onPress={handleReset} />
 
-        <Item icon={Moon} label={tt('themeLabel')}
-          right={<span className="text-[12px] text-pmuted">{themeLabel}</span>}
-          onPress={() => setShowThemePicker(true)} />
+        <Item icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}
+          right={<span className="text-[12px] text-pmuted flex items-center gap-1">{settings.theme === 'dark' ? (settings.language === 'ru' ? 'Тёмная' : 'Dark') : (settings.language === 'ru' ? 'Светлая' : 'Light')} <ChevronRight size={13} /></span>}
+          onPress={() => setShowAppearance(true)} />
 
         {syncPending > 0 && (
           <Item
@@ -534,20 +528,9 @@ export default function Profil() {
         />
       )}
 
-      {/* Mavzu tanlash */}
-      {showThemePicker && (
-        <PickerSheet
-          title={tt('themeLabel')}
-          titleIcon={<Sun size={18} className="text-pmuted" />}
-          value={settings.theme}
-          options={[
-            { value: 'light',  label: tt('lightTheme'),  desc: tt('lightThemeDesc'),  icon: <Sun size={18} className="text-pmuted" /> },
-            { value: 'dark',   label: tt('darkTheme'),   desc: tt('darkThemeDesc'),   icon: <Moon size={18} className="text-pmuted" /> },
-            { value: 'system', label: tt('themeSystem'), desc: tt('themeSystemDesc'), icon: <Monitor size={18} className="text-pmuted" /> },
-          ]}
-          onSelect={(v) => void transitionTheme(v as 'dark' | 'light' | 'system')}
-          onClose={() => setShowThemePicker(false)}
-        />
+      {/* Tashqi ko'rinish (Appearance) — Apple 3-tab sheet */}
+      {showAppearance && (
+        <AppearanceModal onClose={() => setShowAppearance(false)} />
       )}
 
       {/* Promokod kiritish modali */}

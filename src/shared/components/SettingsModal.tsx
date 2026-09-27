@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal, Smartphone,
+  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal, Smartphone, SlidersHorizontal,
 } from 'lucide-react'
+import AppearanceModal from './AppearanceModal'
 import { CoinIcon } from './CoinIcon'
 import { PremiumIcon } from './PremiumIcon'
 import { useAppStore, type ApiSettings } from '../store/useAppStore'
@@ -54,7 +55,17 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
   const ownedSet   = useMemo(() => new Set(ownedItems), [ownedItems])
   const [local, setLocal] = useState<ApiSettings>({ ...settings })
   const [picker, setPicker] = useState<PickerKey>(initialPicker)
+  const [showAppearance, setShowAppearance] = useState(false)
   const tt = useT(local.language)
+
+  useEffect(() => {
+    setLocal((prev) => ({
+      ...prev,
+      theme: settings.theme,
+      chartStyle: settings.chartStyle,
+      appIcon: settings.appIcon,
+    }))
+  }, [settings.theme, settings.chartStyle, settings.appIcon])
 
   // 3 soniyalik SINOV (preview) — lock'langan temani sotib olmasdan ko'rish
   const [preview, setPreview] = useState<string | null>(null)
@@ -159,6 +170,16 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
           <button className="w-full text-left" onClick={() => setPicker('language')} aria-label={`${tt('langLabel')}: ${languageLabel}`}>
             <Row icon={Globe} label={tt('langLabel')}>
               <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
+            </Row>
+          </button>
+
+          {/* Tashqi ko'rinish (Appearance) — Apple 3-tab sheet */}
+          <button className="w-full text-left" onClick={() => setShowAppearance(true)} aria-label={tt('appearanceTitle')}>
+            <Row icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}>
+              <span className={valueBtn}>
+                {local.theme === 'dark' ? (local.language === 'ru' ? 'Тёмная' : 'Dark') : (local.language === 'ru' ? 'Светлая' : 'Light')}
+                <ChevronRight size={14} />
+              </span>
             </Row>
           </button>
 
@@ -347,6 +368,9 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
           ]}
         />
       )}
+
+      {/* Tashqi ko'rinish modal */}
+      {showAppearance && <AppearanceModal onClose={() => setShowAppearance(false)} />}
     </DialogOverlay>
   )
 }
