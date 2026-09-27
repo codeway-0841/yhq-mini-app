@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { RotateCcw, Share2, X, BookOpen, Award, ImageDown, Check, Minus } from 'lucide-react'
+import { RotateCcw, Share2, X, BookOpen, Award, ImageDown, Check, Minus, Sparkles } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -14,6 +14,10 @@ import DialogOverlay from '../../shared/components/DialogOverlay'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
+import { fetchAchievements, invalidateAchievementsCache } from '../../shared/lib/achievements-cache'
+import { checkAndCelebrateAchievements, getCelebratedBadgeIds, markBadgesCelebrated } from '../../shared/lib/achievement-detector'
+import { ACHIEVEMENTS } from '../../shared/config/achievements'
+import { useAchievementCelebrationStore } from '../../shared/store/useAchievementCelebrationStore'
 import type { TopicBreakdownItem } from './topic-diagnosis'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' | 'pending' }
@@ -151,6 +155,52 @@ export default function ResultsModal({
     }
   }, [disqualifiedByCheat, passed, percent])
 
+  // Test yakunlanganda yangi erishilgan yutuqlarni tekshirib, tantana oynasini ochish
+  useEffect(() => {
+    if (disqualifiedByCheat) return
+    const uid = useAppStore.getState().user?.id
+
+    // Mehmon yoki lokal testda: agar 100% bo'lsa, 'perfectRun' nishoni tantanasini ko'rsatish
+    if (!uid || uid === '0') {
+      if (percent === 100 && total >= 1) {
+        const timer = setTimeout(() => {
+          const perfect = ACHIEVEMENTS.find((b) => b.id === 'perfectRun')
+          if (perfect) {
+            useAchievementCelebrationStore.getState().triggerCelebration(perfect)
+          }
+        }, 900)
+        return () => clearTimeout(timer)
+      }
+      return
+    }
+
+    const timer = setTimeout(() => {
+      invalidateAchievementsCache()
+      fetchAchievements(uid)
+        .then((stats) => {
+          if (stats) {
+            if (percent === 100) {
+              const perfect = ACHIEVEMENTS.find((b) => b.id === 'perfectRun')
+              if (perfect && !getCelebratedBadgeIds().has(perfect.id)) {
+                useAchievementCelebrationStore.getState().triggerCelebration(perfect)
+                markBadgesCelebrated([perfect.id])
+              }
+            }
+            checkAndCelebrateAchievements(stats)
+          }
+        })
+        .catch(() => {
+          if (percent === 100) {
+            const perfectBadge = ACHIEVEMENTS.find((b) => b.id === 'perfectRun')
+            if (perfectBadge) {
+              useAchievementCelebrationStore.getState().triggerCelebration(perfectBadge)
+            }
+          }
+        })
+    }, 850)
+    return () => clearTimeout(timer)
+  }, [disqualifiedByCheat, percent, total])
+
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
@@ -287,10 +337,25 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={() => setShowCertificate(true)}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs"
+            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs cursor-pointer"
           >
             <Award size={17} strokeWidth={1.75} />
             {tt('viewCertificate')}
+          </button>
+        )}
+
+        {/* Yutuq tantanasini ko'rish */}
+        {!disqualifiedByCheat && (
+          <button
+            type="button"
+            onClick={() => {
+              const badge = (percent === 100 ? ACHIEVEMENTS.find((b) => b.id === 'perfectRun') : null) || ACHIEVEMENTS[0]
+              useAchievementCelebrationStore.getState().triggerCelebration(badge)
+            }}
+            className="bg-psurface text-pfg font-semibold hover:bg-[rgb(var(--p-surface-rgb)/0.8)] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm shadow-xs cursor-pointer"
+          >
+            <Sparkles size={17} className="text-pgold" />
+            <span>{tt('achViewCelebration')}</span>
           </button>
         )}
 

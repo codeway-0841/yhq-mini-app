@@ -8,6 +8,8 @@ import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
+import AchievementCelebrationModal from './shared/components/AchievementCelebrationModal'
+import AchievementDetailSheet from './shared/components/AchievementDetailSheet'
 import IosDock, { isTabRootRoute } from './shared/components/IosDock'
 import DesktopSidebar from './shared/components/DesktopSidebar'
 
@@ -326,6 +328,8 @@ export default function App() {
     <HashRouter>
       <ThemeEffect />
       <StreakSaveToast />
+      <AchievementCelebrationModal />
+      <AchievementDetailSheet />
       <Layout>
         <Routes>
           <Route path="/"           element={<Dashboard />} />

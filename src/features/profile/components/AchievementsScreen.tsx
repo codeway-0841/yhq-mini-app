@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowLeft, Check } from 'lucide-react'
+import { ArrowLeft, Check, Sparkles } from 'lucide-react'
 import { createPortal } from 'react-dom'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { ACHIEVEMENTS, isUnlocked, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
@@ -8,42 +8,45 @@ import { type useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
 import { haptics } from '../../../platform/haptics'
 
+import { useAchievementCelebrationStore } from '../../../shared/store/useAchievementCelebrationStore'
+import { BadgeCard3D } from '../../../shared/components/BadgeCard3D'
+
 export type TabKey = 'all' | AchievementCategory
 
-/** Bitta yutuq katakchasi — transparent 3D badge + nom + progress */
+/** Bitta yutuq katakchasi — 3D badge + nom + progress + tap to inspect */
 function AchievementTile({ a, stats, tt }: {
   a: AchievementDef
   stats: AchievementStats
   tt: ReturnType<typeof useT>
 }) {
+  const openDetailSheet = useAchievementCelebrationStore((s) => s.openDetailSheet)
   const unlocked = isUnlocked(a, stats)
   const cur      = Math.min(a.get(stats), a.target)
   const pct      = a.target > 1 ? Math.round((cur / a.target) * 100) : (unlocked ? 100 : 0)
-  const Icon     = a.icon
+
+  const handleClick = () => {
+    haptics.selection()
+    openDetailSheet(a, { current: cur, target: a.target, unlocked })
+  }
 
   return (
-    <div className="flex flex-col items-center px-1 text-center select-none">
-      <div className="relative mb-2 flex size-14 items-center justify-center">
-        <div
-          className={cn(
-            'flex size-14 items-center justify-center transition-all duration-200 ease-out',
-            !unlocked && 'opacity-60 saturate-[0.5]',
-          )}
-        >
-          {a.badgeImage ? (
-            <img
-              src={a.badgeImage}
-              alt=""
-              className="size-14 object-contain select-none pointer-events-none transition-transform duration-200"
-              loading="lazy"
-            />
-          ) : Icon ? (
-            <Icon size={28} strokeWidth={1.75} style={{ color: unlocked ? a.color : 'var(--p-subtle)' }} />
-          ) : null}
-        </div>
+    <button
+      type="button"
+      onClick={handleClick}
+      aria-label={`${tt(a.titleKey)}, ${unlocked ? tt('achStatusUnlocked') : `${cur}/${a.target}`}`}
+      className="group flex flex-col items-center px-1 text-center select-none cursor-pointer focus-visible:outline-none transition-transform duration-150 active:scale-95"
+    >
+      <div className="relative mb-1.5 flex size-14 items-center justify-center">
+        <BadgeCard3D
+          achievement={a}
+          unlocked={unlocked}
+          size="sm"
+          interactive={false}
+          showTierGlow={unlocked}
+        />
 
         {unlocked && (
-          <span className="absolute -bottom-0.5 -right-0.5 grid size-[18px] place-items-center rounded-full border-2 border-pcanvas bg-psuccess shadow-xs">
+          <span className="absolute -bottom-0.5 -right-0.5 grid size-[18px] place-items-center rounded-full border-2 border-pcanvas bg-psuccess shadow-xs z-20">
             <Check size={9} strokeWidth={3} className="text-white" />
           </span>
         )}
@@ -66,7 +69,7 @@ function AchievementTile({ a, stats, tt }: {
       >
         {cur}/{a.target}
       </p>
-    </div>
+    </button>
   )
 }
 
@@ -107,16 +110,30 @@ export default function AchievementsScreen({
     <DialogOverlay onClose={onClose} labelId="ach-screen-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
       <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
         {/* Header — SSOT safe-top header */}
-        <header className="shrink-0 flex items-center gap-3 px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-pcanvas border-b border-pline">
+        <header className="shrink-0 flex items-center justify-between px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-pcanvas border-b border-pline">
+          <div className="flex items-center gap-3">
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label={tt('backWord')}
+              className="size-9 rounded-xl bg-psurface flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all cursor-pointer"
+            >
+              <ArrowLeft size={20} strokeWidth={2} />
+            </button>
+            <p id="ach-screen-title" className="text-[17px] font-bold text-pfg">{tt('achTitle')}</p>
+          </div>
           <button
             type="button"
-            onClick={onClose}
-            aria-label={tt('backWord')}
-            className="size-9 rounded-xl bg-psurface flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all cursor-pointer"
+            onClick={() => {
+              const demoBadge = tabAchievements.find((a) => a.id === 'perfectRun') || tabAchievements[0] || ACHIEVEMENTS[0]
+              useAchievementCelebrationStore.getState().triggerCelebration(demoBadge)
+            }}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-psurface text-xs font-semibold text-pfg hover:bg-[rgb(var(--p-surface-rgb)/0.8)] active:scale-95 transition-all cursor-pointer shadow-xs"
+            title={tt('achViewCelebration')}
           >
-            <ArrowLeft size={20} strokeWidth={2} />
+            <Sparkles size={13} className="text-pgold" />
+            <span>{tt('achViewCelebration')}</span>
           </button>
-          <p id="ach-screen-title" className="text-[17px] font-bold text-pfg">{tt('achTitle')}</p>
         </header>
 
         {/* Tab Controls (Barchasi | Nishonlar | Marralar) */}

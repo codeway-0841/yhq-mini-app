@@ -109,6 +109,7 @@ export type SoundKind =
   | 'coins'
   | 'chime'
   | 'win'
+  | 'achievement'
   | 'combo'
   | 'match'
   | 'toggle'
@@ -152,6 +153,15 @@ export function playSound(kind: SoundKind) {
       crystalTing(base, t, 0.08)
       crystalTing(base * 1.25, t + 0.12, 0.08)
       coinsCascade(base, t + 0.24)
+      break
+    case 'achievement':
+      // 🌟 Yutuq ochilishi tantanasi — 4-notali tantanavor akkord + kristall zang + tangalar
+      tone(base * 0.75, t, 0.12, 'sine', 0.06)
+      tone(base, t + 0.09, 0.14, 'sine', 0.065)
+      tone(base * 1.25, t + 0.18, 0.16, 'sine', 0.07)
+      tone(base * 1.5, t + 0.28, 0.28, 'triangle', 0.08)
+      crystalTing(base * 2.0, t + 0.32, 0.09)
+      coinsCascade(base * 1.2, t + 0.45)
       break
     case 'combo':
       // 🔥 3+ to'g'ri javob ketma-ketligi — shiddatli quvvat akkordi

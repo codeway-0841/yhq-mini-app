@@ -6,6 +6,8 @@ import { type useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
 import { haptics } from '../../../platform/haptics'
 
+import { useAchievementCelebrationStore } from '../../../shared/store/useAchievementCelebrationStore'
+
 interface MilestonesPreviewSectionProps {
   stats: AchievementStats | null
   tt: ReturnType<typeof useT>
@@ -16,21 +18,26 @@ function MilestonePreviewItem({
   a,
   stats,
   tt,
-  onClick,
 }: {
   a: AchievementDef
   stats: AchievementStats | null
   tt: ReturnType<typeof useT>
-  onClick: () => void
 }) {
+  const openDetailSheet = useAchievementCelebrationStore((s) => s.openDetailSheet)
   const unlocked = stats ? isUnlocked(a, stats) : false
   const cur = stats ? Math.min(a.get(stats), a.target) : 0
   const pct = a.target > 1 ? Math.round((cur / a.target) * 100) : (unlocked ? 100 : 0)
 
+  const handleClick = () => {
+    haptics.selection()
+    openDetailSheet(a, { current: cur, target: a.target, unlocked })
+  }
+
   return (
     <button
       type="button"
-      onClick={onClick}
+      onClick={handleClick}
+      aria-label={`${tt(a.titleKey)}, ${unlocked ? tt('achStatusUnlocked') : `${cur}/${a.target}`}`}
       className="group flex flex-col items-center text-center focus-visible:outline-none select-none transition-transform duration-150 active:scale-95 cursor-pointer"
     >
       <div className="relative mb-1 flex size-11 items-center justify-center">
@@ -124,10 +131,6 @@ export function MilestonesPreviewSection({ stats, tt, onOpenAll }: MilestonesPre
             a={a}
             stats={stats}
             tt={tt}
-            onClick={() => {
-              haptics.impact('light')
-              onOpenAll('milestone')
-            }}
           />
         ))}
       </div>

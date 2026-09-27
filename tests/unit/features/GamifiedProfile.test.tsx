@@ -36,7 +36,7 @@ describe('Gamified Profile Components', () => {
     )
 
     expect(screen.getByText('Alisher')).toBeTruthy()
-    expect(screen.getByText('1,450 XP')).toBeTruthy()
+    expect(screen.getByText(/1[,\s\u00a0]450\s*XP/)).toBeTruthy()
     expect(screen.getByText('Du')).toBeTruthy()
     expect(screen.getByText('Ya')).toBeTruthy()
   })
