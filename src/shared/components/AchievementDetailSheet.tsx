@@ -43,6 +43,8 @@ export default function AchievementDetailSheet() {
   const targetVal = progress ? progress.target : badge.target
   const pct = targetVal > 0 ? Math.min(100, Math.round((currentVal / targetVal) * 100)) : (isUnlocked ? 100 : 0)
   const remaining = Math.max(0, targetVal - currentVal)
+  const glowColor = isUnlocked ? badgeColor : '#94a3b8'
+  const glowOpacity = isUnlocked ? 0.22 : 0.08
 
   return createPortal(
     <div
@@ -61,20 +63,20 @@ export default function AchievementDetailSheet() {
         <div
           className="absolute inset-x-0 top-0 h-[620px] pointer-events-none z-0 transition-colors duration-500"
           style={{
-            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(badgeColor, 0.22)} 0%, ${hexToRgba(badgeColor, 0.05)} 45%, transparent 70%), radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95) 0%, transparent 55%), linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(glowColor, glowOpacity)} 0%, ${hexToRgba(glowColor, glowOpacity * 0.25)} 45%, transparent 70%), radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95) 0%, transparent 55%), linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px)`,
             backgroundSize: 'auto, auto, 28px 28px, 28px 28px',
             WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
             maskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
           }}
         />
 
-        {/* ── STICKY TOP CONTROLS (Floating cleanly without boxes, with white circle buttons) ── */}
+        {/* ── TOP HEADER (Frosted Apple Sheet Bar, safe-top compliant) ── */}
         <div
           data-floating-controls
-          className="pointer-events-none sticky top-[var(--safe-top)] z-30 w-full bg-transparent pt-2.5 pb-1 px-4"
+          className="sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-[#FAF9FC]/90 backdrop-blur-md pt-3 pb-2.5 px-4 transition-colors border-b border-black/[0.04]"
         >
           {/* Top Sheet Grab Handle */}
-          <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2" />
+          <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2.5" />
 
           {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
           <div className="flex items-center justify-between">
@@ -82,7 +84,7 @@ export default function AchievementDetailSheet() {
               type="button"
               onClick={closeDetailSheet}
               aria-label={tt('close')}
-              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <X size={18} strokeWidth={2.4} />
             </button>
@@ -95,7 +97,7 @@ export default function AchievementDetailSheet() {
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>
@@ -103,13 +105,13 @@ export default function AchievementDetailSheet() {
         </div>
 
         {/* ── SCROLLABLE BODY CONTENT ── */}
-        <div className="relative z-10 px-5 pt-1 pb-6 flex flex-col items-center text-center">
+        <div className="relative z-10 px-5 pt-4 pb-8 flex flex-col items-center text-center">
           {/* ── 3D FLOATING ROTATABLE BADGE ── */}
           <MilestonePlaque3D
             achievement={badge}
             unlocked={isUnlocked}
             progress={{ current: currentVal, target: targetVal, unlocked: isUnlocked }}
-            className="my-1 !py-1"
+            className="my-2"
           />
 
           {/* Status Pill: Achieved or In Progress */}

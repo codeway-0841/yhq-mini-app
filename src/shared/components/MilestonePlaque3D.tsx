@@ -128,12 +128,20 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
+      {/* ── Soft Dashed Orbit Ring (Taphey Showcase Style) ── */}
+      <div
+        className={cn(
+          'absolute size-[256px] sm:size-[276px] rounded-full border border-dashed pointer-events-none transition-opacity duration-300',
+          isCompleted ? 'border-black/10 opacity-70' : 'border-black/5 opacity-40',
+        )}
+      />
+
       {/* 3D ROOT OBJECT: Rotates strictly on Y-axis (left/right only, no up/down, no back face) */}
       <div
         className="relative"
         style={{
-          width: 282,
-          height: 300,
+          width: 232,
+          height: 248,
           transformStyle: 'preserve-3d',
           transform: `rotateY(${rotateY}deg)`,
           transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
@@ -146,8 +154,10 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
             className="absolute inset-0 pointer-events-none flex items-center justify-center"
             style={{
               transform: `translateZ(${z}px)`,
-              filter: 'brightness(0.82) contrast(1.05)',
-              opacity: 0.95,
+              filter: isCompleted
+                ? 'brightness(0.82) contrast(1.05)'
+                : 'grayscale(1) contrast(0.8) brightness(1.02)',
+              opacity: isCompleted ? 0.95 : 0.22,
             }}
           >
             <img
@@ -161,12 +171,14 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
           </div>
         ))}
 
-        {/* ── FRONT FACE: THE VIBRANT, COLORFUL BADGE ARTWORK at translateZ(7px) ── */}
+        {/* ── FRONT FACE: THE VIBRANT BADGE ARTWORK OR SLEEK MONOCHROME SILVER at translateZ(7px) ── */}
         <div
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
           style={{
             transform: 'translateZ(7px)',
-            filter: 'drop-shadow(0 14px 22px rgba(0,0,0,0.14))',
+            filter: isCompleted
+              ? 'drop-shadow(0 14px 22px rgba(0,0,0,0.14))'
+              : 'drop-shadow(0 8px 18px rgba(0,0,0,0.06))',
           }}
         >
           {badgeUrl ? (
@@ -178,11 +190,11 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
               draggable={false}
               className={cn(
                 'w-full h-full object-contain pointer-events-none select-none transition-all duration-300',
-                !isCompleted && 'grayscale opacity-50 brightness-75',
+                !isCompleted && 'grayscale opacity-40 contrast-80 brightness-100',
               )}
             />
           ) : (
-            <div className="size-48 rounded-3xl bg-pprimary flex items-center justify-center text-white text-5xl font-black">
+            <div className="size-44 rounded-3xl bg-pprimary flex items-center justify-center text-white text-5xl font-black">
               🏆
             </div>
           )}
@@ -191,13 +203,13 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
 
       {/* ── REALISTIC FLOOR PROJECTION SHADOW ── */}
       <div
-        className="w-44 h-6 rounded-full pointer-events-none transition-all duration-150"
+        className="w-36 sm:w-40 h-5 rounded-full pointer-events-none transition-all duration-150"
         style={{
           marginTop: 10,
           background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 50%, transparent 75%)',
-          filter: 'blur(8px)',
+          filter: 'blur(7px)',
           transform: `translateX(${shadowOffsetX}px) scaleX(${shadowScaleX}) scaleY(0.5)`,
-          opacity: 0.4 + absCosY * 0.2,
+          opacity: (0.35 + absCosY * 0.2) * (isCompleted ? 1 : 0.55),
         }}
       />
     </div>

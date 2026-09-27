@@ -86,13 +86,13 @@ export default function AchievementCelebrationModal() {
           }}
         />
 
-        {/* ── STICKY TOP CONTROLS (Floating cleanly without boxes, with white circle buttons) ── */}
+        {/* ── TOP HEADER (Frosted Apple Sheet Bar, safe-top compliant) ── */}
         <div
           data-floating-controls
-          className="pointer-events-none sticky top-[var(--safe-top)] z-30 w-full bg-transparent pt-2.5 pb-1 px-4"
+          className="sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-[#FAF9FC]/90 backdrop-blur-md pt-3 pb-2.5 px-4 transition-colors border-b border-black/[0.04]"
         >
           {/* Top Sheet Grab Handle */}
-          <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2" />
+          <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2.5" />
 
           {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
           <div className="flex items-center justify-between">
@@ -100,7 +100,7 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={dismissCurrent}
               aria-label={tt('close')}
-              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <X size={18} strokeWidth={2.4} />
             </button>
@@ -113,7 +113,7 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>
@@ -121,12 +121,12 @@ export default function AchievementCelebrationModal() {
         </div>
 
         {/* ── SCROLLABLE BODY CONTENT ── */}
-        <div className="relative z-10 px-5 pt-1 pb-6 flex flex-col items-center text-center">
+        <div className="relative z-10 px-5 pt-4 pb-8 flex flex-col items-center text-center">
           {/* ── 3D FLOATING ROTATABLE BADGE ── */}
           <MilestonePlaque3D
             achievement={currentBadge}
             unlocked={true}
-            className="my-1 !py-1"
+            className="my-2"
           />
 
           {/* Status Pill: Achieved */}
