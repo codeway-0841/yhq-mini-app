@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react'
 import { ArrowLeft, CheckCircle2, Lock } from 'lucide-react'
-import { createPortal } from 'react-dom'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { ACHIEVEMENTS, isUnlocked, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
@@ -147,9 +146,17 @@ export default function AchievementsScreen({
   const gridLine = isDark ? 'rgba(255, 255, 255, 0.045)' : 'rgba(0, 0, 0, 0.03)'
 
   const content = (
-    <DialogOverlay onClose={onClose} labelId="ach-screen-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
+    <DialogOverlay
+      onClose={onClose}
+      labelId="ach-screen-title"
+      position="bottom"
+      swipeToDismiss
+      className="!p-0"
+      backdropClassName="bg-black/50 backdrop-blur-xs"
+      zIndex={60}
+    >
       {/* ── Apple / Taphey Style Collection Screen (Always Pristine) ── */}
-      <div className="relative w-full h-full bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col animate-premiumIn overflow-hidden transition-colors">
+      <div className="relative w-full max-w-2xl mx-auto h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] rounded-t-[28px] sm:rounded-t-[32px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col overflow-hidden shadow-2xl transition-colors">
         {/* Subtle Ambient Radial Glow + Math Grid */}
         <div
           className="absolute inset-x-0 top-0 h-[420px] pointer-events-none z-0"
@@ -162,10 +169,15 @@ export default function AchievementsScreen({
         />
 
         {/* Top Sheet Grab Handle */}
-        <div className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-2.5 mb-1 relative z-10" />
+        <div
+          data-drag-handle
+          className="pt-2.5 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10"
+        >
+          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
+        </div>
 
         {/* Sticky Header: Back (✕) · Title · Spacer */}
-        <header className="shrink-0 flex items-center justify-between px-4 py-2 relative z-10">
+        <header className="shrink-0 flex items-center justify-between px-4 py-1.5 relative z-10">
           <button
             type="button"
             onClick={onClose}
@@ -270,5 +282,5 @@ export default function AchievementsScreen({
   )
 
   if (typeof document === 'undefined') return null
-  return createPortal(content, document.body)
+  return content
 }

@@ -110,6 +110,7 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
 
   return (
     <div
+      data-no-swipe
       className={cn(
         'relative flex flex-col items-center justify-center select-none touch-none py-6',
         interactive && 'cursor-grab active:cursor-grabbing',

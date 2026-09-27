@@ -7,7 +7,7 @@ import { shareUrl } from '../../platform/telegram'
 import { config } from '../config'
 import { cn } from '../lib/cn'
 import { MilestonePlaque3D, hexToRgba } from './MilestonePlaque3D'
-import { createPortal } from 'react-dom'
+import DialogOverlay from './DialogOverlay'
 
 export default function AchievementDetailSheet() {
   const badge = useAchievementCelebrationStore((s) => s.inspectBadge)
@@ -50,18 +50,19 @@ export default function AchievementDetailSheet() {
   const pct = targetVal > 0 ? Math.min(100, Math.round((currentVal / targetVal) * 100)) : (isUnlocked ? 100 : 0)
   const remaining = Math.max(0, targetVal - currentVal)
 
-  return createPortal(
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="milestone-detail-title"
-      className="fixed inset-0 z-[70] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/45 dark:bg-black/75 backdrop-blur-sm animate-fadeIn select-none overflow-hidden"
-      onClick={closeDetailSheet}
+  return (
+    <DialogOverlay
+      onClose={closeDetailSheet}
+      labelId="milestone-detail-title"
+      position="bottom"
+      swipeToDismiss
+      zIndex={70}
+      className="!p-0"
+      backdropClassName="bg-black/45 dark:bg-black/75 backdrop-blur-sm"
     >
       {/* ── Apple / Taphey Style Milestone Sheet (Full-height Scroll Container, Always Pristine) ── */}
       <div
-        className="relative w-full max-w-sm sm:max-w-[420px] rounded-t-[36px] sm:rounded-[36px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[92dvh] flex flex-col animate-slideUp overscroll-contain transition-colors"
-        onClick={(e) => e.stopPropagation()}
+        className="relative w-full sm:max-w-[440px] rounded-t-[32px] sm:rounded-[36px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
       >
         {/* Dynamic Ambient Glow + Subtle Grid (Upper half, pastel badgeColor on light canvas or vivid deep on dark) */}
         <div
@@ -80,7 +81,9 @@ export default function AchievementDetailSheet() {
           className="pointer-events-none sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-transparent pt-3 pb-1 px-4"
         >
           {/* Top Sheet Grab Handle */}
-          <div className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mb-2.5" />
+          <div data-drag-handle className="pointer-events-auto flex justify-center py-1 cursor-grab active:cursor-grabbing touch-none select-none">
+            <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mb-2" />
+          </div>
 
           {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
           <div className="flex items-center justify-between">
@@ -196,7 +199,6 @@ export default function AchievementDetailSheet() {
           </button>
         </div>
       </div>
-    </div>,
-    document.body
+    </DialogOverlay>
   )
 }
