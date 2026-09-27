@@ -108,13 +108,6 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
     }, 1500)
   }, [isDragging])
 
-  // Floor shadow math following horizontal tilt
-  const radY = (rotateY * Math.PI) / 180
-  const cosY = Math.cos(radY)
-  const absCosY = Math.abs(cosY)
-  const shadowScaleX = Math.max(0.6, absCosY)
-  const shadowOffsetX = Math.sin(radY) * 20
-
   return (
     <div
       className={cn(
@@ -128,25 +121,38 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
       onPointerUp={handlePointerUp}
       onPointerCancel={handlePointerUp}
     >
-      {/* ── Soft Dashed Orbit Ring (Taphey Showcase Style) ── */}
-      <div
-        className={cn(
-          'absolute size-[256px] sm:size-[276px] rounded-full border border-dashed pointer-events-none transition-opacity duration-300',
-          isCompleted ? 'border-black/10 opacity-70' : 'border-black/5 opacity-40',
-        )}
-      />
+      {/* ── PLAQUE & ORBIT ANCHOR (232x248) ── */}
+      <div className="relative flex items-center justify-center" style={{ width: 232, height: 248 }}>
+        {/* ── Soft Dotted Hexagon Orbit (Taphey Showcase Style - strictly concentric with 3D badge) ── */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-10">
+          <svg
+            viewBox="0 0 280 300"
+            className={cn(
+              'w-[276px] h-[296px] pointer-events-none transition-opacity duration-300 shrink-0',
+              isCompleted ? 'text-black/25 dark:text-white/25 opacity-90' : 'text-black/10 dark:text-white/10 opacity-40',
+            )}
+            aria-hidden="true"
+          >
+            <path
+              d="M 158.8 38.4 L 235.2 84.5 Q 254.0 95.9 254.0 117.9 L 254.0 182.1 Q 254.0 204.1 235.2 215.5 L 158.8 261.6 Q 140.0 273.0 121.2 261.6 L 44.8 215.5 Q 26.0 204.1 26.0 182.1 L 26.0 117.9 Q 26.0 95.9 44.8 84.5 L 121.2 38.4 Q 140.0 27.0 158.8 38.4 Z"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeDasharray="0.1 5.5"
+              strokeLinecap="round"
+            />
+          </svg>
+        </div>
 
-      {/* 3D ROOT OBJECT: Rotates strictly on Y-axis (left/right only, no up/down, no back face) */}
-      <div
-        className="relative"
-        style={{
-          width: 232,
-          height: 248,
-          transformStyle: 'preserve-3d',
-          transform: `rotateY(${rotateY}deg)`,
-          transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
-        }}
-      >
+        {/* 3D ROOT OBJECT: Rotates strictly on Y-axis (left/right only, no up/down, no back face) */}
+        <div
+          className="w-full h-full relative"
+          style={{
+            transformStyle: 'preserve-3d',
+            transform: `rotateY(${rotateY}deg)`,
+            transition: isDragging ? 'none' : 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
+          }}
+        >
         {/* ── 3D PHYSICAL DEPTH EXTRUSION SLICES (Optimized to 3 lightweight slices for instant GPU rendering) ── */}
         {badgeUrl && [-4, 0, 3].map((z) => (
           <div
@@ -200,18 +206,7 @@ export const MilestonePlaque3D = memo(function MilestonePlaque3D({
           )}
         </div>
       </div>
-
-      {/* ── REALISTIC FLOOR PROJECTION SHADOW ── */}
-      <div
-        className="w-36 sm:w-40 h-5 rounded-full pointer-events-none transition-all duration-150"
-        style={{
-          marginTop: 10,
-          background: 'radial-gradient(ellipse at center, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 50%, transparent 75%)',
-          filter: 'blur(7px)',
-          transform: `translateX(${shadowOffsetX}px) scaleX(${shadowScaleX}) scaleY(0.5)`,
-          opacity: (0.35 + absCosY * 0.2) * (isCompleted ? 1 : 0.55),
-        }}
-      />
     </div>
+  </div>
   )
 })
