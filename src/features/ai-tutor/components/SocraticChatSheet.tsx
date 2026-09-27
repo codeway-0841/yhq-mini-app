@@ -7,6 +7,7 @@ import TutorRichMessage from '../../../shared/components/TutorRichMessage'
 import { speak, stopSpeaking } from '../../../shared/lib/speech'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { haptics } from '../../../platform/haptics'
 import { streamSocraticChat, TutorError } from '../../../shared/lib/tutor'
 
@@ -180,11 +181,12 @@ export default function SocraticChatSheet({
         role="dialog"
         aria-modal="true"
       >
+        <ModalMathGrid glowColor="#A855F7" height={320} />
         {/* Drag handle */}
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto my-2.5 shrink-0 select-none" />
+        <div className="relative z-10 w-10 h-1 bg-plineStrong rounded-full mx-auto my-2.5 shrink-0 select-none" />
 
         {/* Header */}
-        <div className="flex items-center justify-between px-5 pb-3 bg-pcard">
+        <div className="relative z-10 flex items-center justify-between px-5 pb-3">
           <div className="flex items-center gap-2.5">
             <Bot size={20} strokeWidth={1.75} className="text-pmuted shrink-0" />
             <div>

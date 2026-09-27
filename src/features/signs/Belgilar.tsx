@@ -8,6 +8,7 @@ import { rulesChapters } from '../../content/rules'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 
 function renderBoldText(str: string) {
   const parts = str.split(/(\*\*.*?\*\*)/g)
@@ -64,11 +65,12 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title">
       <div
-        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl"
+        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <div className="flex items-center justify-between mb-4">
+        <ModalMathGrid glowColor="#0066FF" height={320} />
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 relative z-10" />
+        <div className="flex items-center justify-between mb-4 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-xl shadow-2xs">
             {sign.code}
           </span>
@@ -80,26 +82,28 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
             <X size={16} />
           </button>
         </div>
-        <div className="size-40 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3">
+        <div className="size-40 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3 relative z-10">
           {sign.image ? (
             <img src={sign.image} alt={signName} className="w-full h-full object-contain" />
           ) : (
             <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />
           )}
         </div>
-        <h3 id="sign-modal-title" className="text-center font-display font-semibold text-lg text-pfg mb-1">
-          {signName}
-        </h3>
-        <p className="text-center text-xs text-pmuted mb-4 font-medium">{legalRef}</p>
-        <div className="bg-pcard shadow-xs p-4 rounded-2xl mb-5">
-          <FormattedDescription text={signDesc} lang={lang} />
+        <div className="relative z-10">
+          <h3 id="sign-modal-title" className="text-center font-display font-semibold text-lg text-pfg mb-1">
+            {signName}
+          </h3>
+          <p className="text-center text-xs text-pmuted mb-4 font-medium">{legalRef}</p>
+          <div className="bg-pcard shadow-xs p-4 rounded-2xl mb-5">
+            <FormattedDescription text={signDesc} lang={lang} />
+          </div>
+          <button
+            onClick={onClose}
+            className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all shadow-xs"
+          >
+            {isRu ? 'Закрыть' : 'Yopish'}
+          </button>
         </div>
-        <button
-          onClick={onClose}
-          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all shadow-xs"
-        >
-          {isRu ? 'Закрыть' : 'Yopish'}
-        </button>
       </div>
     </DialogOverlay>
   )

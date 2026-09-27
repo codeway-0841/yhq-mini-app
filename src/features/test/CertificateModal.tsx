@@ -10,6 +10,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 import { Button } from '../../shared/components/ui/button'
 import { drawCertificate } from './certificate-canvas'
 
@@ -179,7 +180,8 @@ export default function CertificateModal({ score, total, percent, sample = false
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-2xl bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl">
+      <div className="relative w-full max-w-lg rounded-2xl bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#F59E0B" height={420} />
         {/* Close Button */}
         <button
           onClick={onClose}

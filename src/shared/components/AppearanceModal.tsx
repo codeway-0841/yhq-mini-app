@@ -3,6 +3,7 @@ import { X, Check } from 'lucide-react'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import DialogOverlay from './DialogOverlay'
+import ModalMathGrid from './ModalMathGrid'
 import { cn } from '../lib/cn'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../lib/sounds'
@@ -63,17 +64,8 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
           'max-h-[88vh] flex flex-col shadow-2xl overflow-hidden pb-8 select-none'
         )}
       >
-        {/* Apple subtle blueprint/grid background in header */}
-        <div
-          className="absolute inset-x-0 top-0 h-40 pointer-events-none opacity-40"
-          style={{
-            backgroundImage:
-              'linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-            maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
-          }}
-        />
+        {/* Apple subtle blueprint/math grid background in header */}
+        <ModalMathGrid glowColor="#0066FF" height={420} />
 
         {/* Top Drag Handle */}
         <div

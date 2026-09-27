@@ -10,6 +10,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 export interface AiTutorSessionRef {
   sessionId: string
@@ -178,11 +179,12 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="upsell-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <div className="flex flex-col items-center text-center">
+          <ModalMathGrid glowColor="#A855F7" height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div className="flex flex-col items-center text-center relative z-10">
             <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center mb-3">
               <PremiumIcon size={28} className="text-pwarning" />
             </div>
@@ -217,11 +219,12 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="static-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <div className="flex items-center gap-2 mb-3 flex-shrink-0">
+          <ModalMathGrid glowColor="#0066FF" height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div className="flex items-center gap-2 mb-3 flex-shrink-0 relative z-10">
             <div className="size-9 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
               <Info size={17} className="text-pwarning" />
             </div>
@@ -237,7 +240,7 @@ export default function AiTutorModal({
               <Volume2 size={14} />
             </button>
           </div>
-          <div className="overflow-y-auto min-h-[60px]">
+          <div className="overflow-y-auto min-h-[60px] relative z-10">
             <p className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap">
               {staticText}
             </p>
@@ -248,7 +251,7 @@ export default function AiTutorModal({
               setShowStatic(false)
               setShowUpsell(true)
             }}
-            className="mt-4 w-full py-2.5 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs"
+            className="mt-4 w-full py-2.5 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs relative z-10"
           >
             <PremiumIcon size={14} />
             {tt('staticExplainAiHint')}
@@ -263,11 +266,12 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="ai-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl"
+          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <div className="flex items-center gap-2 mb-3 flex-shrink-0">
+          <ModalMathGrid glowColor="#A855F7" height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div className="flex items-center gap-2 mb-3 flex-shrink-0 relative z-10">
             <div className="size-9 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
               <GraduationCap size={17} className="text-ppurple" />
             </div>

@@ -1,4 +1,5 @@
 import { ShieldAlert, AlertTriangle, AlertOctagon } from 'lucide-react'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { useT } from '../../../shared/i18n'
 import type { Lang } from '../../../shared/i18n'
 
@@ -24,12 +25,14 @@ export default function AntiCheatModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
       <div className="w-full max-w-sm rounded-2xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden ring-2 ring-[rgb(var(--p-danger-rgb)/0.5)]">
+        <ModalMathGrid glowColor="#EF4444" height={260} />
         {/* Yuqori aksent nuri */}
         <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-36 h-36 bg-[rgb(var(--p-danger-rgb)/0.25)] rounded-full blur-2xl pointer-events-none" />
 
-        <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] flex items-center justify-center mx-auto mb-4 text-pdanger">
-          {isFinalWarning ? <AlertOctagon size={34} /> : <ShieldAlert size={34} />}
-        </div>
+        <div className="relative z-10">
+          <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] flex items-center justify-center mx-auto mb-4 text-pdanger">
+            {isFinalWarning ? <AlertOctagon size={34} /> : <ShieldAlert size={34} />}
+          </div>
 
         <h3 id="anticheat-title" className="text-lg font-semibold text-pfg mb-1">
           {tt('antiCheatWarningTitle')}
@@ -72,6 +75,7 @@ export default function AntiCheatModal({
         >
           {tt('antiCheatUnderstood')}
         </button>
+        </div>
       </div>
     </div>
   )

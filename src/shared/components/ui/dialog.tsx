@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { X } from 'lucide-react'
 import DialogOverlay from '../DialogOverlay'
+import ModalMathGrid from '../ModalMathGrid'
 import { Button } from './button'
 import { cn } from '@/shared/lib/cn'
 
@@ -17,12 +18,13 @@ interface DialogProps {
   children: React.ReactNode
   className?: string
   zIndex?: number
+  glowColor?: string
 }
 
 /** Sarlavha id'si — HAR dialog uchun unikal (nested modalda to'qnashmasin). */
 const DialogTitleIdContext = React.createContext<string | undefined>(undefined)
 
-function Dialog({ open = true, onClose, children, className, zIndex }: DialogProps) {
+function Dialog({ open = true, onClose, children, className, zIndex, glowColor = '#0066FF' }: DialogProps) {
   const titleId = React.useId()
   if (!open) return null
   return (
@@ -31,12 +33,13 @@ function Dialog({ open = true, onClose, children, className, zIndex }: DialogPro
       <div
         className={cn(
           'relative z-10 w-full max-w-sm',
-          'rounded-3xl bg-pcard shadow-2xl',
+          'rounded-3xl bg-pcard shadow-2xl overflow-hidden',
           'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:zoom-in-95 motion-safe:duration-200',
           'max-h-[85dvh] overflow-y-auto',
           className,
         )}
       >
+        <ModalMathGrid glowColor={glowColor} height={260} />
         {children}
       </div>
     </DialogOverlay>
@@ -78,7 +81,7 @@ function DialogClose({ onClose, label = 'Yopish' }: { onClose: () => void; label
       onClick={onClose}
       aria-label={label}
       className={cn(
-        'absolute right-2 top-2 grid size-11 place-items-center rounded-xl text-pmuted',
+        'absolute right-2 top-2 z-10 grid size-11 place-items-center rounded-xl text-pmuted',
         'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
       )}

@@ -5,6 +5,7 @@ import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface CustomRoomModalProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -72,7 +73,9 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 shadow-2xl space-y-4 relative">
+      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 shadow-2xl relative overflow-hidden">
+        <ModalMathGrid glowColor="#A855F7" height={260} />
+        <div className="relative z-10 space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -194,6 +197,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             </button>
           </div>
         )}
+        </div>
       </div>
     </DialogOverlay>
   )

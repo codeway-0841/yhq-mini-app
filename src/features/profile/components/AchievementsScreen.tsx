@@ -1,13 +1,13 @@
 import { useState, useMemo } from 'react'
 import { ArrowLeft, CheckCircle2, Lock } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { ACHIEVEMENTS, isUnlocked, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
 import { type useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
 import { haptics } from '../../../platform/haptics'
 import { useAchievementCelebrationStore } from '../../../shared/store/useAchievementCelebrationStore'
-import { useAppStore } from '../../../shared/store/useAppStore'
 
 export type TabKey = 'all' | AchievementCategory
 
@@ -141,10 +141,6 @@ export default function AchievementsScreen({
   const formattedMetric = new Intl.NumberFormat('fr-FR').format(totalMetric)
   const pct = Math.min(100, Math.round((unlockedCount / Math.max(tabAchievements.length, 1)) * 100))
 
-  const theme = useAppStore((s) => s.settings.theme)
-  const isDark = theme === 'dark' || (theme === 'system' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  const gridLine = isDark ? 'rgba(255, 255, 255, 0.045)' : 'rgba(0, 0, 0, 0.03)'
-
   const content = (
     <DialogOverlay
       onClose={onClose}
@@ -158,15 +154,7 @@ export default function AchievementsScreen({
       {/* ── Apple / Taphey Style Collection Screen (Always Pristine) ── */}
       <div className="relative w-full max-w-2xl mx-auto h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] rounded-t-[28px] sm:rounded-t-[32px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col overflow-hidden shadow-2xl transition-colors">
         {/* Subtle Ambient Radial Glow + Math Grid */}
-        <div
-          className="absolute inset-x-0 top-0 h-[420px] pointer-events-none z-0"
-          style={{
-            backgroundImage: `radial-gradient(circle at 80% 10%, rgba(0, 102, 255, ${isDark ? 0.18 : 0.08}) 0%, transparent 60%), linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`,
-            backgroundSize: 'auto, 28px 28px, 28px 28px',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 65%, transparent 95%)',
-            maskImage: 'linear-gradient(to bottom, black 0%, black 65%, transparent 95%)',
-          }}
-        />
+        <ModalMathGrid glowColor="#0066FF" height={420} maskEnd="95%" />
 
         {/* Top Sheet Grab Handle */}
         <div

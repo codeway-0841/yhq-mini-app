@@ -13,6 +13,7 @@ import { X, Loader2, Sparkles, Target } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import { api, ApiError } from '../../shared/api'
@@ -166,8 +167,9 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
     <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
       {celebrate && <Confetti count={50} />}
       <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-pcard p-5 pt-4 shadow-2xl">
+        <ModalMathGrid glowColor="#F59E0B" height={300} />
         {/* Header */}
-        <div className="flex items-center justify-between mb-1">
+        <div className="relative z-10 flex items-center justify-between mb-1">
           <div className="flex items-center gap-1.5">
             <Sparkles size={18} className="text-pgold animate-pulse" />
             <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
@@ -180,7 +182,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
             <X size={18} />
           </button>
         </div>
-        <p className="mb-4 text-[11.5px] leading-snug text-pmuted">{tt('spinDesc')}</p>
+        <p className="relative z-10 mb-4 text-[11.5px] leading-snug text-pmuted">{tt('spinDesc')}</p>
 
         {/* ── G'ildirak Sahnasi ── */}
         <div className="relative mx-auto my-2 flex size-[280px] items-center justify-center">

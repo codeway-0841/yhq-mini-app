@@ -17,6 +17,7 @@ import { getShopItem } from '../../../shared/shop-items'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
+import ModalMathGrid from './ModalMathGrid'
 import { Button } from './ui/button'
 import { cn } from '../lib/cn'
 
@@ -133,8 +134,9 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
-      <div className="relative w-full rounded-t-sheet bg-pcard max-h-[85vh] flex flex-col shadow-2xl">
-        <div className="p-5 pb-0">
+      <div className="relative w-full rounded-t-sheet bg-pcard max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={400} />
+        <div className="p-5 pb-0 relative z-10">
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
           <div data-drag-handle className="flex items-center justify-between mb-2 select-none">
             <h2 id="settings-title" className="text-base font-semibold text-pfg">{tt('settingsTitle')}</h2>
@@ -265,9 +267,10 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
       {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
-          <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl">
-            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none" />
-            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-semibold text-pfg mb-1 flex-none">
+          <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
+            <ModalMathGrid glowColor="#A855F7" height={360} />
+            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none relative z-10" />
+            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-semibold text-pfg mb-1 flex-none relative z-10">
               <Palette size={18} className="text-pprimary" />
               {tt('accentThemeLabel')}
             </p>

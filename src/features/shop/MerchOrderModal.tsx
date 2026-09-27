@@ -13,6 +13,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
   item: MerchItem
@@ -60,7 +61,9 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
 
   return (
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title">
-      <div className="relative w-full max-w-sm bg-pcard rounded-3xl p-5 shadow-2xl motion-safe:animate-premiumIn">
+      <div className="relative w-full max-w-sm bg-pcard rounded-3xl p-5 shadow-2xl motion-safe:animate-premiumIn overflow-hidden">
+        <ModalMathGrid glowColor="#F59E0B" height={260} />
+        <div className="relative z-10">
         <p id="merch-order-title" className="text-[15px] font-semibold text-center flex items-center justify-center gap-2">
           <Package size={17} className="text-pgold" /> {tt('merchFormTitle')}
         </p>
@@ -119,6 +122,7 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
             {busy ? <Loader2 size={15} className="animate-spin" /> : <CoinIcon size={15} />}
             {tt('merchFormSubmit')}
           </button>
+        </div>
         </div>
       </div>
     </DialogOverlay>

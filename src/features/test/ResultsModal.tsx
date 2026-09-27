@@ -11,6 +11,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
@@ -204,12 +205,13 @@ export default function ResultsModal({
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
-      <div className="relative w-full max-w-lg bg-pcard rounded-t-sheet p-4 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
+      <div className="relative w-full max-w-lg bg-pcard rounded-t-sheet p-4 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+        <ModalMathGrid glowColor="#0066FF" height={420} />
         {/* Drag handle */}
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* Modal Header: Title & Close Button on the Right */}
-        <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center justify-between mb-2 relative z-10">
           <div className="size-8" aria-hidden="true" />
           <h2 id="results-title" data-drag-handle className="text-center text-base font-bold text-pfg select-none">
             {tt('results')}

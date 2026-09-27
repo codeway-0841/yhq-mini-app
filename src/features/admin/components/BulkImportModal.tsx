@@ -25,6 +25,7 @@ import {
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface BulkImportModalProps {
   subjectId: string
@@ -226,8 +227,9 @@ export default function BulkImportModal({
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-lg rounded-3xl bg-pcard p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+        <ModalMathGrid glowColor="#A855F7" height={280} />
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-pline">
+        <div className="relative z-10 flex items-center justify-between pb-3 border-b border-pline">
           <div>
             <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center gap-2">
               <Upload size={18} className="text-ppurple" />

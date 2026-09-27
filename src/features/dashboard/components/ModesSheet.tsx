@@ -1,6 +1,7 @@
 import { ArrowLeft } from 'lucide-react'
 import { createPortal } from 'react-dom'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { useT } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { ModeGridCard } from './GridCards'
@@ -29,9 +30,10 @@ export default function ModesSheet({ title, items, onClose }: {
 
   const content = (
     <DialogOverlay onClose={onClose} labelId="modes-sheet-title" position="center" className="!p-0" backdropClassName="hidden" zIndex={60}>
-      <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn">
+      <div className="relative w-full h-full bg-pcanvas flex flex-col animate-premiumIn overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={420} />
         {/* Header — SSOT safe-top header (to'liq ekranda manfiy marginsiz) */}
-        <header className="shrink-0 flex items-center gap-3 px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-pcanvas border-b border-pline">
+        <header className="shrink-0 flex items-center gap-3 px-4 pb-3 pt-[calc(var(--safe-top,0px)+0.75rem)] bg-[rgb(var(--p-canvas-rgb)/0.8)] backdrop-blur-xs border-b border-pline relative z-10">
           <button
             type="button"
             onClick={onClose}

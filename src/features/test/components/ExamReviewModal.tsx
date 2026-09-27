@@ -8,6 +8,7 @@ import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import MathText from '../../../shared/components/MathText'
 
 function formatImageSrc(src?: string | null): string | undefined {
@@ -63,8 +64,9 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="exam-review-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       <div className="relative w-full max-w-xl bg-psurface rounded-2xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+        <ModalMathGrid glowColor="#0066FF" height={420} />
         {/* Header */}
-        <div className="p-4 border-b border-pline flex items-center justify-between bg-card/60">
+        <div className="p-4 border-b border-pline flex items-center justify-between bg-card/60 relative z-10">
           <div>
             <h3 id="exam-review-title" className="text-base font-semibold text-pfg flex items-center gap-2">
               <BookOpen size={18} className="text-pprimary" />

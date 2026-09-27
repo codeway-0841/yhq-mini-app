@@ -8,6 +8,7 @@ import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
 import DialogOverlay from './DialogOverlay'
+import ModalMathGrid from './ModalMathGrid'
 import { Button } from './ui/button'
 
 interface PromoCodeModalProps {
@@ -70,10 +71,11 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
       <div className="relative w-full max-w-sm rounded-2xl bg-pcard p-6 shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#8B5CF6" height={360} />
         <button
           onClick={onClose}
           aria-label={tt('cancelExit')}
-          className="absolute top-4 right-4 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
+          className="absolute top-4 right-4 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
         >
           <X size={16} strokeWidth={1.75} />
         </button>

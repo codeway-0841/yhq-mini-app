@@ -20,6 +20,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import DialogOverlay from '../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../shared/components/ModalMathGrid'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -235,10 +236,11 @@ export default function StreakPage() {
       {/* Qanday ishlaydi? — Alohida zamonaviy BottomSheet */}
       {showInfo && (
         <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title" swipeToDismiss>
-          <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-sheet px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn">
-            <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
+          <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-sheet px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn overflow-hidden">
+            <ModalMathGrid glowColor="#F97316" height={360} />
+            <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
-            <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center justify-between mb-2 relative z-10">
               <h2 id="streak-info-title" className="text-base font-bold text-pfg">
                 {tt('howItWorks')}
               </h2>

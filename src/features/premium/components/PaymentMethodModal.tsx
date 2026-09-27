@@ -9,6 +9,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 const ClickLogo = memo(function ClickLogo({ className }: { className?: string }) {
   return (
@@ -149,9 +150,11 @@ export default function PaymentMethodModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none"
+        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
+        <ModalMathGrid glowColor="#F59E0B" height={280} />
+        <div className="relative z-10">
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-pline">
           <div className="flex items-center gap-2">
@@ -296,6 +299,7 @@ export default function PaymentMethodModal({
             </button>
           </div>
         )}
+        </div>
       </div>
     </DialogOverlay>
   )

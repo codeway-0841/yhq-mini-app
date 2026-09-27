@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect, useCallback } from 'react'
 import type { RoadSign } from '../../../content/signs'
 import { X, TrafficCone, ExternalLink } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -61,11 +62,12 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/75 z-50" labelId="sign-detail-modal-title" swipeToDismiss>
       <div
-        className="relative w-full max-w-md max-h-[80vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-7 shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-150"
+        className="relative w-full max-w-md max-h-[80vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-7 shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-150 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none" />
-        <div className="flex items-center justify-between mb-3">
+        <ModalMathGrid glowColor="#0066FF" height={340} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div className="flex items-center justify-between mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.1)] rounded-full">
             {sign.code}
           </span>

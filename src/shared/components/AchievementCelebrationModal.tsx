@@ -9,7 +9,8 @@ import { haptics } from '../../platform/haptics'
 import { shareUrl } from '../../platform/telegram'
 import { config } from '../config'
 import Confetti from './Confetti'
-import { MilestonePlaque3D, hexToRgba } from './MilestonePlaque3D'
+import { MilestonePlaque3D } from './MilestonePlaque3D'
+import ModalMathGrid from './ModalMathGrid'
 import { cn } from '../lib/cn'
 
 export default function AchievementCelebrationModal() {
@@ -17,7 +18,6 @@ export default function AchievementCelebrationModal() {
   const unlockedQueue = useAchievementCelebrationStore((s) => s.unlockedQueue)
   const dismissCurrent = useAchievementCelebrationStore((s) => s.dismissCurrent)
   const lang = useAppStore((s) => s.settings.language)
-  const theme = useAppStore((s) => s.settings.theme)
   const tt = useT(lang)
 
   const [isClaiming, setIsClaiming] = useState(false)
@@ -59,11 +59,6 @@ export default function AchievementCelebrationModal() {
   if (!currentBadge) return null
   if (typeof document === 'undefined') return null
 
-  const isDark = theme === 'dark' || (theme === 'system' && typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches)
-  const gridLine = isDark ? 'rgba(255, 255, 255, 0.045)' : 'rgba(0, 0, 0, 0.035)'
-  const glowAlpha1 = isDark ? 0.35 : 0.22
-  const glowAlpha2 = isDark ? 0.08 : 0.05
-
   const badgeColor = currentBadge.color || '#941B44'
   const totalCount = unlockedQueue.length + 1
 
@@ -84,16 +79,8 @@ export default function AchievementCelebrationModal() {
       <div
         className="relative w-full sm:max-w-[440px] rounded-t-[32px] sm:rounded-[36px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
       >
-        {/* Dynamic Ambient Glow + Subtle Grid (Upper half, pastel badgeColor on light canvas or vivid deep on dark) */}
-        <div
-          className="absolute inset-x-0 top-0 h-[620px] pointer-events-none z-0 transition-colors duration-500"
-          style={{
-            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(badgeColor, glowAlpha1)} 0%, ${hexToRgba(badgeColor, glowAlpha2)} 45%, transparent 70%), linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`,
-            backgroundSize: 'auto, 28px 28px, 28px 28px',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
-            maskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
-          }}
-        />
+        {/* Dynamic Ambient Glow + Subtle Grid */}
+        <ModalMathGrid glowColor={badgeColor} height={620} maskEnd="95%" />
 
         {/* ── TOP HEADER (Transparent so math grid / kataklar show seamlessly to the top) ── */}
         <div

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ExternalLink, Lightbulb, Lock, Megaphone, Sparkles, Users } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { ClaudeTreeIcon } from '../../../shared/components/ClaudeTreeIcon'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -61,8 +62,9 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
 
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title" swipeToDismiss>
-      <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div data-drag-handle className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none" />
+      <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={380} />
+        <div data-drag-handle className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (

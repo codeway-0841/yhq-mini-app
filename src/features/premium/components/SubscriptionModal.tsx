@@ -15,6 +15,7 @@ import {
   ChevronRight,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { ClaudeTreeIcon } from '../../../shared/components/ClaudeTreeIcon'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -235,8 +236,9 @@ export default function SubscriptionModal({
         className="w-full max-w-lg mx-auto bg-pcard rounded-t-sheet shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
+        <ModalMathGrid glowColor="#F59E0B" height={420} />
         {/* Yuqori surish tutqichi (Drag Handle) */}
-        <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none">
+        <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
           <div data-drag-handle className="w-10 h-1 rounded-full bg-plineStrong" />
         </div>
 

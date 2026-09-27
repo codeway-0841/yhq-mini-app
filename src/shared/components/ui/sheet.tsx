@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { X } from 'lucide-react'
 import DialogOverlay from '../DialogOverlay'
+import ModalMathGrid from '../ModalMathGrid'
 import { cn } from '@/shared/lib/cn'
 
 /**
@@ -25,6 +26,7 @@ interface SheetProps {
   swipeToDismiss?: boolean
   /** Gesture faqat drag-handle yoki header zonasi orqali boshlanishi (default: false — full surface drag) */
   dragHandleOnly?: boolean
+  glowColor?: string
 }
 
 /** Sarlavha id'si — HAR sheet uchun unikal (nested sheet'da aria-labelledby
@@ -39,6 +41,7 @@ function Sheet({
   zIndex,
   swipeToDismiss = true,
   dragHandleOnly = false,
+  glowColor = '#0066FF',
 }: SheetProps) {
   const titleId = React.useId()
   if (!open) return null
@@ -55,7 +58,7 @@ function Sheet({
       <div
         className={cn(
           'relative z-10 w-full max-w-lg mx-auto',
-          'rounded-t-sheet bg-pcard shadow-2xl',
+          'rounded-t-sheet bg-pcard shadow-2xl overflow-hidden',
           'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
           'max-h-[88dvh] overflow-y-auto',
           // Pastki safe-area MARKAZIY: DialogOverlay (position='bottom')
@@ -64,11 +67,12 @@ function Sheet({
           className,
         )}
       >
+        <ModalMathGrid glowColor={glowColor} height={320} />
         {/* Tortish dastagi — sheet ekanini bildiradi (affordance) */}
         <div
           data-drag-handle
           aria-hidden="true"
-          className="mx-auto mt-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>
@@ -116,7 +120,7 @@ function SheetClose({ onClose, label = 'Yopish' }: { onClose: () => void; label?
       onClick={onClose}
       aria-label={label}
       className={cn(
-        'absolute right-3 top-3 grid size-11 place-items-center rounded-xl text-pmuted',
+        'absolute right-3 top-3 z-10 grid size-11 place-items-center rounded-xl text-pmuted',
         'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
       )}

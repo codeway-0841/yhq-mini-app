@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Camera, ImagePlus, Trash2, X, Pencil, Phone, Send, MessageSquare } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -17,9 +18,10 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
   const tt = useT(useAppStore((s) => s.settings.language))
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
-      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none" />
-        <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg select-none">
+      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={300} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg select-none relative z-10">
           <Camera size={14} className="text-pprimary" />
           {tt('photoEditTitle')}
         </p>
@@ -78,15 +80,16 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
       closeOnBackdrop={!isDirty}
       canDismiss={() => !isDirty}
     >
-      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none" />
+      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={320} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
-        <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.1)]">
+        <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.1)] relative z-10">
           <Phone size={28} strokeWidth={1.75} className="text-pprimary" />
         </div>
 
         {step === 'confirm' && currentPhone && (
-          <>
+          <div className="relative z-10">
             <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg">
               {tt('phoneChangeTitle')}
             </p>
@@ -100,11 +103,11 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
               <Button block variant="outline" onClick={onClose}>{tt('cancel')}</Button>
               <Button block onClick={() => setStep('method')}>{tt('continueAction')}</Button>
             </div>
-          </>
+          </div>
         )}
 
         {step === 'method' && (
-          <>
+          <div className="relative z-10">
             <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg">
               {tt('phoneMethodTitle')}
             </p>
@@ -121,11 +124,11 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
                 {tt('viaSms')}
               </Button>
             </div>
-          </>
+          </div>
         )}
 
         {step === 'sms' && (
-          <>
+          <div className="relative z-10">
             <p id="phone-edit-title" className="text-center text-[17px] font-bold text-pfg mb-4">
               {tt('viaSms')}
             </p>
@@ -151,7 +154,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
                 {tt('backWord')}
               </Button>
             </div>
-          </>
+          </div>
         )}
       </div>
     </DialogOverlay>
@@ -168,9 +171,10 @@ export function NameEditSheet({ current, onClose, onSave }: {
   const [name, setName] = useState(current)
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl">
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
-        <p id="name-edit-title" className="text-sm font-semibold mb-3 flex items-center justify-center gap-2 text-pfg">
+      <div className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="#0066FF" height={280} />
+        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 relative z-10" />
+        <p id="name-edit-title" className="text-sm font-semibold mb-3 flex items-center justify-center gap-2 text-pfg relative z-10">
           <Pencil size={14} className="text-pblue" />
           {tt('nameEditTitle')}
         </p>
@@ -180,11 +184,13 @@ export function NameEditSheet({ current, onClose, onSave }: {
           maxLength={32}
           placeholder={tt('yourNamePlaceholder')}
           autoFocus
-          className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-base text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
+          className="relative z-10 w-full bg-pcard rounded-2xl px-4 py-3.5 text-base text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
         />
-        <Button block onClick={() => { onSave(name); onClose() }}>
-          {tt('saveBtn')}
-        </Button>
+        <div className="relative z-10">
+          <Button block onClick={() => { onSave(name); onClose() }}>
+            {tt('saveBtn')}
+          </Button>
+        </div>
       </div>
     </DialogOverlay>
   )
