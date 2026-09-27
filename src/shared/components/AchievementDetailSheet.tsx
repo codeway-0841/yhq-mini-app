@@ -43,8 +43,6 @@ export default function AchievementDetailSheet() {
   const targetVal = progress ? progress.target : badge.target
   const pct = targetVal > 0 ? Math.min(100, Math.round((currentVal / targetVal) * 100)) : (isUnlocked ? 100 : 0)
   const remaining = Math.max(0, targetVal - currentVal)
-  const glowColor = isUnlocked ? badgeColor : '#94a3b8'
-  const glowOpacity = isUnlocked ? 0.22 : 0.08
 
   return createPortal(
     <div
@@ -63,17 +61,17 @@ export default function AchievementDetailSheet() {
         <div
           className="absolute inset-x-0 top-0 h-[620px] pointer-events-none z-0 transition-colors duration-500"
           style={{
-            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(glowColor, glowOpacity)} 0%, ${hexToRgba(glowColor, glowOpacity * 0.25)} 45%, transparent 70%), radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95) 0%, transparent 55%), linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(circle at 82% 14%, ${hexToRgba(badgeColor, 0.22)} 0%, ${hexToRgba(badgeColor, 0.05)} 45%, transparent 70%), radial-gradient(circle at 18% 18%, rgba(255,255,255,0.95) 0%, transparent 55%), linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px)`,
             backgroundSize: 'auto, auto, 28px 28px, 28px 28px',
             WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
             maskImage: 'linear-gradient(to bottom, black 0%, black 55%, transparent 95%)',
           }}
         />
 
-        {/* ── TOP HEADER (Frosted Apple Sheet Bar, safe-top compliant) ── */}
+        {/* ── TOP HEADER (Transparent so math grid / kataklar show seamlessly to the top) ── */}
         <div
           data-floating-controls
-          className="sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-[#FAF9FC]/90 backdrop-blur-md pt-3 pb-2.5 px-4 transition-colors border-b border-black/[0.04]"
+          className="pointer-events-none sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-transparent pt-3 pb-1 px-4"
         >
           {/* Top Sheet Grab Handle */}
           <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2.5" />
@@ -84,7 +82,7 @@ export default function AchievementDetailSheet() {
               type="button"
               onClick={closeDetailSheet}
               aria-label={tt('close')}
-              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <X size={18} strokeWidth={2.4} />
             </button>
@@ -97,7 +95,7 @@ export default function AchievementDetailSheet() {
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>

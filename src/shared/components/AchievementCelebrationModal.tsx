@@ -86,10 +86,10 @@ export default function AchievementCelebrationModal() {
           }}
         />
 
-        {/* ── TOP HEADER (Frosted Apple Sheet Bar, safe-top compliant) ── */}
+        {/* ── TOP HEADER (Transparent so math grid / kataklar show seamlessly to the top) ── */}
         <div
           data-floating-controls
-          className="sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-[#FAF9FC]/90 backdrop-blur-md pt-3 pb-2.5 px-4 transition-colors border-b border-black/[0.04]"
+          className="pointer-events-none sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-transparent pt-3 pb-1 px-4"
         >
           {/* Top Sheet Grab Handle */}
           <div className="w-9 h-1 rounded-full bg-gray-300 mx-auto mb-2.5" />
@@ -100,7 +100,7 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={dismissCurrent}
               aria-label={tt('close')}
-              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <X size={18} strokeWidth={2.4} />
             </button>
@@ -113,7 +113,7 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto size-10 rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] flex items-center justify-center text-gray-700 active:scale-95 transition-transform cursor-pointer"
             >
               <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>
