@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { ExternalLink, Lightbulb, Lock, Megaphone, Sparkles, Users } from 'lucide-react'
+import { ExternalLink, Lightbulb, Megaphone, Users } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import { ClaudeTreeIcon } from '../../../shared/components/ClaudeTreeIcon'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -63,58 +63,44 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title" swipeToDismiss>
       <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#0066FF" height={380} />
-        <div data-drag-handle className="mx-auto mb-5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <ModalMathGrid glow={false} height={380} />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
+        <div data-drag-handle className="mx-auto mb-4 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (
-          <div>
-            {/* Header */}
-            <div className="relative mx-auto mb-3 w-fit">
-              <div className="grid size-14 place-items-center rounded-2xl bg-pcard shadow-xs">
-                <Users size={26} strokeWidth={1.75} className="text-pprimary" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 grid size-5 place-items-center rounded-full bg-pcard shadow-xs">
-                <Sparkles size={11} strokeWidth={2} className="text-pgold" />
-              </div>
+          <div className="relative z-10">
+            {/* Minimalist Premium Header */}
+            <div className="text-center mb-5 pt-1">
+              <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
+                {tt('closedGroupTitle')}
+              </h2>
+              <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+                {lang === 'ru'
+                  ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
+                  : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`}
+              </p>
             </div>
 
-            <p id="closed-group-title" className="text-center text-[17px] font-bold text-pfg">
-              {tt('closedGroupTitle')}
-            </p>
-            <p className="mt-1 text-center text-[12px] text-pmuted">
-              {lang === 'ru'
-                ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
-                : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`}
-            </p>
-
-            {/* Joriy faol fan kartasi (katta, markaziy karta) */}
-            <div className="mt-4 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.05)] p-4">
-              <div className="flex items-center gap-3.5">
-                <div
-                  className="grid size-12 flex-none place-items-center rounded-xl text-white shadow-sm"
-                  style={{ backgroundColor: currentSubject.color }}
-                >
-                  <currentSubject.icon size={24} strokeWidth={2} />
+            {/* Joriy faol fan kartasi */}
+            <div className="rounded-2xl bg-pcard p-4 shadow-xs">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-pprimary">
+                    {tt('closedGroupCurrentSubject')}
+                  </span>
+                  <span className="inline-flex size-2 rounded-full bg-psuccess animate-pulse" />
                 </div>
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2 mb-0.5">
-                    <span className="text-[10.5px] font-bold uppercase tracking-wider text-pprimary">
-                      {tt('closedGroupCurrentSubject')}
-                    </span>
-                    <span className="inline-flex size-2 rounded-full bg-psuccess animate-pulse" />
-                  </div>
-                  <p className="truncate text-[15px] font-bold text-pfg">
-                    {lang === 'ru' ? currentSubject.nameRu : currentSubject.name}
-                  </p>
-                </div>
+                <p className="text-[17px] font-bold text-pfg">
+                  {lang === 'ru' ? currentSubject.nameRu : currentSubject.name}
+                </p>
               </div>
 
               <Button
                 block
                 size="lg"
                 loading={loading}
-                className="mt-4 font-bold shadow-sm"
+                className="mt-4 font-bold rounded-xl shadow-xs"
                 onClick={() => handleJoinGroup(currentSubject.id, currentSubject.closedGroupUrl)}
               >
                 <span>{tt('closedGroupEnterBtn')}</span>
@@ -127,10 +113,10 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
               {FEATURES.map((f) => (
                 <div
                   key={f.key}
-                  className="flex items-center gap-3 rounded-2xl bg-pcard px-3.5 py-2.5 shadow-xs"
+                  className="flex items-center gap-3 rounded-2xl bg-pcard px-4 py-3 shadow-2xs"
                 >
-                  <f.icon size={16} strokeWidth={1.75} className="flex-none text-pmuted" />
-                  <p className="text-[12.5px] font-semibold text-pfg">{tt(f.key)}</p>
+                  <f.icon size={16} strokeWidth={1.75} className="flex-none text-pprimary" />
+                  <p className="text-[13px] font-medium text-pfg">{tt(f.key)}</p>
                 </div>
               ))}
             </div>
@@ -142,65 +128,60 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
           </div>
         ) : (
           /* ── BEPUL FOYDALANUVCHILAR UCHUN: UPSELL SHEET ── */
-          <div>
-            {/* Brend ikonkasi — neytral blok + qulf badge'i */}
-            <div className="relative mx-auto mb-4 w-fit">
-              <div className="grid size-16 place-items-center rounded-2xl bg-pcard shadow-xs">
-                <Users size={30} strokeWidth={1.75} className="text-pmuted" />
-              </div>
-              <div className="absolute -bottom-1.5 -right-1.5 grid size-6 place-items-center rounded-full bg-pcard shadow-xs">
-                <Lock size={12} strokeWidth={2} className="text-psubtle" />
-              </div>
+          <div className="relative z-10">
+            {/* Minimalist Premium Header */}
+            <div className="text-center mb-5 pt-1">
+              <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
+                {tt('closedGroupTitle')}
+              </h2>
+              <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+                {lang === 'ru'
+                  ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
+                  : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot"}
+              </p>
             </div>
 
-            <p id="closed-group-title" className="text-center text-[17px] font-bold text-pfg">
-              {tt('closedGroupTitle')}
-            </p>
-
             {/* Imkoniyatlar — neytral qatorlar */}
-            <div className="mt-5 flex flex-col gap-2.5">
+            <div className="flex flex-col gap-2">
               {FEATURES.map((f) => (
                 <div
                   key={f.key}
-                  className="flex items-center gap-3 rounded-2xl bg-pcard px-4 py-3 shadow-xs"
+                  className="flex items-center gap-3 rounded-2xl bg-pcard px-4 py-3 shadow-2xs"
                 >
-                  <f.icon size={18} strokeWidth={1.75} className="flex-none text-pmuted" />
-                  <p className="text-[13px] font-semibold text-pfg">{tt(f.key)}</p>
+                  <f.icon size={17} strokeWidth={1.75} className="flex-none text-pprimary" />
+                  <p className="text-[13px] font-medium text-pfg">{tt(f.key)}</p>
                 </div>
               ))}
             </div>
 
             {/* Guruh ochiladigan tariflar */}
-            <p className="mt-5 mb-2.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">
+            <p className="mt-5 mb-2.5 text-[10.5px] font-bold uppercase tracking-[0.12em] text-psubtle">
               {tt('closedGroupPlansHint')}
             </p>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2.5">
               {GROUP_PLANS.map((key) => {
                 const plan = getPlan(key)
                 if (!plan) return null
                 return (
                   <button
                     key={key}
+                    type="button"
                     onClick={() => onGetPlan(key)}
-                    className="flex items-center gap-2.5 rounded-2xl bg-pcard p-3.5 text-left transition-transform active:scale-[0.97] shadow-xs"
+                    className="rounded-2xl bg-pcard p-3.5 text-left transition-all active:scale-[0.97] shadow-2xs cursor-pointer"
                   >
-                    {/* Obuna modalidagi tarif ikonkasi (YAGONA MANBA) — neytral rang */}
-                    <ClaudeTreeIcon className="size-9 flex-none text-pmuted" />
-                    <div className="min-w-0">
-                      <p className="truncate text-[15px] font-bold text-pfg">
-                        {lang === 'ru' ? plan.tierNameRu : plan.tierNameUz}
-                      </p>
-                      <p className="text-[10.5px] text-psubtle">
-                        {lang === 'ru' ? plan.titleRu : plan.titleUz}
-                      </p>
-                    </div>
+                    <p className="truncate text-[15px] font-bold text-pfg">
+                      {lang === 'ru' ? plan.tierNameRu : plan.tierNameUz}
+                    </p>
+                    <p className="text-[11px] text-psubtle mt-0.5">
+                      {lang === 'ru' ? plan.titleRu : plan.titleUz}
+                    </p>
                   </button>
                 )
               })}
             </div>
 
             {/* CTA */}
-            <Button block size="lg" className="mt-5 shadow-sm font-bold" onClick={() => onGetPlan()}>
+            <Button block size="lg" className="mt-5 shadow-sm font-bold rounded-xl" onClick={() => onGetPlan()}>
               {tt('closedGroupCta')}
             </Button>
           </div>

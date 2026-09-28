@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useMemo, type ReactNode } from 'react'
 import {
-  X, Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal, Smartphone, SlidersHorizontal,
+  Zap, Shuffle, Type, Globe, Flag, ChevronRight, Palette, Check, Bell, Clock, Timer, MoveHorizontal, Smartphone, SlidersHorizontal,
 } from 'lucide-react'
 import AppearanceModal from './AppearanceModal'
 import { CoinIcon } from './CoinIcon'
@@ -18,6 +18,7 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
+import ModalCloseButton from './ModalCloseButton'
 import { Button } from './ui/button'
 import { cn } from '../lib/cn'
 
@@ -134,99 +135,106 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
-      <div className="relative w-full rounded-t-sheet bg-pcard max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#0066FF" height={400} />
-        <div className="p-5 pb-0 relative z-10">
+      <div className="relative w-full rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+        <ModalMathGrid glow={false} height={400} />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
+        <div className="pt-3 pb-2 relative z-10">
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <div data-drag-handle className="flex items-center justify-between mb-2 select-none">
-            <h2 id="settings-title" className="text-base font-semibold text-pfg">{tt('settingsTitle')}</h2>
-            <button onClick={onClose} aria-label={tt('close')} className="size-11 grid place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors">
-              <X size={20} strokeWidth={1.75} />
-            </button>
+          <div data-drag-handle className="text-center px-12 select-none">
+            <h2 id="settings-title" className="text-[19px] font-bold text-pfg tracking-tight">{tt('settingsTitle')}</h2>
           </div>
         </div>
 
         {/* Kontent — scrollable */}
-        <div className="flex-1 overflow-y-auto px-5">
-          <Row icon={Zap} label={tt('noAnimation')}>
-            <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
-          </Row>
-          <Row icon={Shuffle} label={tt('shuffleOptions')}>
-            <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
-          </Row>
-          <Row icon={MoveHorizontal} label={tt('swipeNavigation')}>
-            <Toggle label={tt('swipeNavigation')} checked={local.swipeToNavigate !== false} onChange={(v) => set('swipeToNavigate', v)} />
-          </Row>
-          <Row icon={Smartphone} label={tt('shakeToClear')}>
-            <Toggle label={tt('shakeToClear')} checked={local.shakeToClear !== false} onChange={(v) => set('shakeToClear', v)} />
-          </Row>
-
-          {/* Shrift uslubi — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
-            <Row icon={Type} label={tt('fontStyle')}>
-              <span className={valueBtn}>{fontStyleLabel} <ChevronRight size={14} /></span>
+        <div className="flex-1 overflow-y-auto px-5 py-2 space-y-3.5 relative z-10">
+          {/* Card 1: Xatti-harakatlar */}
+          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+            <Row icon={Zap} label={tt('noAnimation')}>
+              <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
             </Row>
-          </button>
-
-          {/* Ilova tili — picker */}
-          <button className="w-full text-left" onClick={() => setPicker('language')} aria-label={`${tt('langLabel')}: ${languageLabel}`}>
-            <Row icon={Globe} label={tt('langLabel')}>
-              <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
+            <Row icon={Shuffle} label={tt('shuffleOptions')}>
+              <Toggle label={tt('shuffleOptions')} checked={local.shuffleOptions} onChange={(v) => set('shuffleOptions', v)} />
             </Row>
-          </button>
-
-          {/* Tashqi ko'rinish (Appearance) — Apple 3-tab sheet */}
-          <button className="w-full text-left" onClick={() => setShowAppearance(true)} aria-label={tt('appearanceTitle')}>
-            <Row icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}>
-              <span className={valueBtn}>
-                {local.theme === 'dark' ? (local.language === 'ru' ? 'Тёмная' : 'Dark') : (local.language === 'ru' ? 'Светлая' : 'Light')}
-                <ChevronRight size={14} />
-              </span>
+            <Row icon={MoveHorizontal} label={tt('swipeNavigation')}>
+              <Toggle label={tt('swipeNavigation')} checked={local.swipeToNavigate !== false} onChange={(v) => set('swipeToNavigate', v)} />
             </Row>
-          </button>
-
-          {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
-          <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
-            <Row icon={Palette} label={tt('accentThemeLabel')}>
-              <span className={valueBtn}>
-                <span className="w-4 h-4 rounded-full shadow-2xs"
-                  style={{ background: getAccentTheme(accent).color }} />
-                {getAccentTheme(accent).label[local.language]}
-                {!isPremium && <PremiumIcon size={12} className="text-pmuted" />}
-                <ChevronRight size={14} />
-              </span>
+            <Row icon={Smartphone} label={tt('shakeToClear')}>
+              <Toggle label={tt('shakeToClear')} checked={local.shakeToClear !== false} onChange={(v) => set('shakeToClear', v)} />
             </Row>
-          </button>
+          </div>
 
-          {/* Kunlik eslatma — switch */}
-          <Row icon={Bell} label={tt('dailyReminder')}>
-            <Toggle checked={local.dailyReminder !== false}
-              onChange={(c) => {
-                set('dailyReminder', c)
-                if (c) void requestNotificationPermission()
-              }} />
-          </Row>
-
-          {/* Eslatma vaqti — faqat eslatma yoqiq bo'lsa */}
-          {local.dailyReminder !== false && (
-            <button className="w-full text-left" onClick={() => setPicker('reminderTime')} aria-label={`${tt('dailyReminderTime')}: ${local.dailyReminderTime || '20:00'}`}>
-              <Row icon={Clock} label={tt('dailyReminderTime')}>
-                <span className={valueBtn}>{local.dailyReminderTime || '20:00'} <ChevronRight size={14} /></span>
+          {/* Card 2: Ko'rinish va Til */}
+          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+            {/* Shrift uslubi — picker */}
+            <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
+              <Row icon={Type} label={tt('fontStyle')}>
+                <span className={valueBtn}>{fontStyleLabel} <ChevronRight size={14} /></span>
               </Row>
             </button>
-          )}
 
-          {/* Xatolik haqida xabar — Row bilan bir xil ritm (dublikat chip markup'i yo'q) */}
-          <button className="w-full text-left" onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)} aria-label={tt('reportIssue')}>
-            <Row icon={Flag} label={tt('reportIssue')}>
-              <ChevronRight size={14} className="text-psubtle" />
+            {/* Ilova tili — picker */}
+            <button className="w-full text-left" onClick={() => setPicker('language')} aria-label={`${tt('langLabel')}: ${languageLabel}`}>
+              <Row icon={Globe} label={tt('langLabel')}>
+                <span className={valueBtn}>{languageLabel} <ChevronRight size={14} /></span>
+              </Row>
+            </button>
+
+            {/* Tashqi ko'rinish (Appearance) — Apple 3-tab sheet */}
+            <button className="w-full text-left" onClick={() => setShowAppearance(true)} aria-label={tt('appearanceTitle')}>
+              <Row icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}>
+                <span className={valueBtn}>
+                  {local.theme === 'dark' ? (local.language === 'ru' ? 'Тёмная' : 'Dark') : (local.language === 'ru' ? 'Светлая' : 'Light')}
+                  <ChevronRight size={14} />
+                </span>
+              </Row>
+            </button>
+
+            {/* Tema rangi (aksent) — Premium temalar faqat obunachilarga */}
+            <button className="w-full text-left" onClick={() => setPicker('accent')} aria-label={`${tt('accentThemeLabel')}: ${getAccentTheme(accent).label[local.language]}`}>
+              <Row icon={Palette} label={tt('accentThemeLabel')}>
+                <span className={valueBtn}>
+                  <span className="w-4 h-4 rounded-full shadow-2xs"
+                    style={{ background: getAccentTheme(accent).color }} />
+                  {getAccentTheme(accent).label[local.language]}
+                  {!isPremium && <PremiumIcon size={12} className="text-pmuted" />}
+                  <ChevronRight size={14} />
+                </span>
+              </Row>
+            </button>
+          </div>
+
+          {/* Card 3: Eslatmalar va Yordam */}
+          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+            {/* Kunlik eslatma — switch */}
+            <Row icon={Bell} label={tt('dailyReminder')}>
+              <Toggle checked={local.dailyReminder !== false}
+                onChange={(c) => {
+                  set('dailyReminder', c)
+                  if (c) void requestNotificationPermission()
+                }} />
             </Row>
-          </button>
+
+            {/* Eslatma vaqti — faqat eslatma yoqiq bo'lsa */}
+            {local.dailyReminder !== false && (
+              <button className="w-full text-left" onClick={() => setPicker('reminderTime')} aria-label={`${tt('dailyReminderTime')}: ${local.dailyReminderTime || '20:00'}`}>
+                <Row icon={Clock} label={tt('dailyReminderTime')}>
+                  <span className={valueBtn}>{local.dailyReminderTime || '20:00'} <ChevronRight size={14} /></span>
+                </Row>
+              </button>
+            )}
+
+            {/* Xatolik haqida xabar — Row bilan bir xil ritm */}
+            <button className="w-full text-left" onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)} aria-label={tt('reportIssue')}>
+              <Row icon={Flag} label={tt('reportIssue')}>
+                <ChevronRight size={14} className="text-pmuted" />
+              </Row>
+            </button>
+          </div>
         </div>
 
         {/* Saqlash — doim pastda sticky */}
-        <div className="p-5 pt-3 bg-pcard rounded-b-sheet">
-          <Button block size="lg" onClick={save}>
+        <div className="p-4 pt-2 pb-5 bg-psurface border-t border-pline relative z-10">
+          <Button block size="lg" onClick={save} className="rounded-xl font-bold shadow-xs">
             {tt('saveBtn')}
           </Button>
         </div>
@@ -268,13 +276,13 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
       {picker === 'accent' && (
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
           <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
-            <ModalMathGrid glowColor="#A855F7" height={360} />
+            <ModalMathGrid glow={false} height={360} />
+            <ModalCloseButton onClick={() => setPicker(null)} label="Yopish" />
             <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none relative z-10" />
-            <p id="accent-title" className="flex items-center justify-center gap-2 text-base font-semibold text-pfg mb-1 flex-none relative z-10">
-              <Palette size={18} className="text-pprimary" />
+            <h2 id="accent-title" className="text-center text-lg font-bold text-pfg mb-1 flex-none relative z-10">
               {tt('accentThemeLabel')}
-            </p>
-            <p className="text-center text-[11px] text-pmuted mb-3 flex-none">{tt('accentThemeDesc')}</p>
+            </h2>
+            <p className="text-center text-xs text-pmuted mb-4 flex-none relative z-10">{tt('accentThemeDesc')}</p>
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
               <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">
@@ -290,7 +298,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
               </div>
             )}
             {/* Scrollable ro'yxat — 10+ tema sig'adi, tepasi kesilmaydi */}
-            <div className="flex flex-col gap-3 overflow-y-auto -mx-1 px-1 pb-1">
+            <div className="flex flex-col gap-2.5 overflow-y-auto -mx-1 px-1 pb-1">
               {ACCENT_THEMES.map((theme) => {
                 const selected = theme.id === accent
                 const unlocked = isAccentUnlocked(theme.id, isPremium, ownedSet)
@@ -311,9 +319,9 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                       playSound('chime') // tema unlock — tema-mos chime
                       setPicker(null)
                     }}
-                    className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
-                      selected ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]' :
-                      preview === theme.id ? 'ring-2 ring-pwarning bg-[rgb(var(--p-warning-rgb)/0.10)]' : 'bg-pcard hover:bg-psurface'
+                    className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] ${
+                      selected ? 'ring-2 ring-pprimary bg-pcard shadow-md' :
+                      preview === theme.id ? 'ring-2 ring-pwarning bg-pcard shadow-md' : 'bg-pcard shadow-2xs hover:bg-psurface'
                     }`}
                   >
                     {/* Mini atmosfera preview: fon + karta + aksent */}

@@ -153,7 +153,7 @@ export default function PaymentMethodModal({
         className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <ModalMathGrid glowColor="#F59E0B" height={280} />
+        <ModalMathGrid glowColor="theme" height={280} />
         <div className="relative z-10">
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-pline">

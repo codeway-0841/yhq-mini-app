@@ -4,6 +4,7 @@ import { useSubjectStore } from '../store/useSubjectStore'
 import { useAppStore } from '../store/useAppStore'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
+import ModalCloseButton from './ModalCloseButton'
 
 export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   const { subjectId, setSubject } = useSubjectStore()
@@ -16,14 +17,15 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss backdropClassName="bg-black/40 backdrop-blur-sm">
-      <div className="relative w-full bg-pcard rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[80vh] overflow-y-auto shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#0066FF" height={380} />
+    <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss backdropClassName="bg-black/60">
+      <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[82vh] overflow-y-auto shadow-2xl overflow-hidden">
+        <ModalMathGrid glow={false} height={380} />
+        <ModalCloseButton onClick={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} />
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <p id="subject-title" data-drag-handle className="text-center text-base font-semibold mb-5 text-pfg select-none relative z-10">
+        <h2 id="subject-title" data-drag-handle className="text-center text-lg font-bold mb-4 text-pfg select-none relative z-10">
           {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
-        </p>
-        <div className="flex flex-col gap-2">
+        </h2>
+        <div className="flex flex-col gap-2.5">
           {SUBJECTS.map((s, i) => {
             const active = s.id === subjectId
             const Icon = s.icon
@@ -33,15 +35,14 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
                 onClick={() => pick(s.id, s.available)}
                 disabled={!s.available}
                 style={active ? {
-                  backgroundColor: `${s.color}2E`,
                   boxShadow: `inset 0 0 0 2px ${s.color}, 0 4px 14px ${s.color}20`
                 } : { animationDelay: `${Math.min(i, 7) * 28}ms` }}
-                className={`relative flex items-center gap-3.5 w-full p-3 rounded-2xl text-left transition-[transform,background-color] duration-150 ease-out shadow-xs animate-sheetItemIn ${
+                className={`relative flex items-center gap-3.5 w-full p-3.5 rounded-2xl text-left transition-[transform,box-shadow] duration-150 ease-out animate-sheetItemIn ${
                   !s.available
-                    ? 'opacity-50 cursor-not-allowed bg-[rgb(var(--p-surface-rgb)/0.6)]'
+                    ? 'opacity-50 cursor-not-allowed bg-pcard'
                     : active
-                      ? 'scale-[1.01] subject-picked'
-                      : 'bg-psurface [@media(hover:hover)]:hover:bg-pcard [@media(hover:hover)]:hover:ring-2 [@media(hover:hover)]:hover:ring-[rgb(var(--p-muted-rgb)/0.4)] active:scale-[0.99]'
+                      ? 'bg-pcard scale-[1.01] subject-picked shadow-md'
+                      : 'bg-pcard shadow-2xs hover:shadow-xs active:scale-[0.99]'
                 }`}
               >
                 {/* Har fan o'z gradientida (color → colorDark), oq ikonka */}

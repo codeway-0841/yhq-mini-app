@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, CheckCircle2, XCircle, HelpCircle, BookOpen, GraduationCap, Check, ZoomIn, Clock } from 'lucide-react'
+import { X, CheckCircle2, XCircle, HelpCircle, GraduationCap, Check, ZoomIn, Clock } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
 import type { Lang } from '../../../shared/i18n'
 import type { Question } from '../../../shared/api'
@@ -9,7 +9,9 @@ import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import MathText from '../../../shared/components/MathText'
+import { cn } from '../../../shared/lib/cn'
 
 function formatImageSrc(src?: string | null): string | undefined {
   if (!src) return undefined
@@ -63,56 +65,50 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="exam-review-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-xl bg-psurface rounded-2xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
-        <ModalMathGrid glowColor="#0066FF" height={420} />
-        {/* Header */}
-        <div className="p-4 border-b border-pline flex items-center justify-between bg-card/60 relative z-10">
-          <div>
-            <h3 id="exam-review-title" className="text-base font-semibold text-pfg flex items-center gap-2">
-              <BookOpen size={18} className="text-pprimary" />
-              {tt('examReviewTitle')}
-            </h3>
-            <p className="text-xs text-psubtle mt-0.5">
-              {items.filter((x) => x.status === 'correct').length} {tt('correct')} · {wrongCount} {tt('wrong')}
-            </p>
-          </div>
-          <button
-            onClick={onClose}
-            aria-label={tt('closeResults')}
-            className="w-8 h-8 rounded-full bg-psurface flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
-          >
-            <X size={16} />
-          </button>
+      <div className="relative w-full max-w-xl bg-psurface rounded-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+        <ModalMathGrid glowColor="theme" height={420} />
+        <ModalCloseButton onClick={onClose} label={tt('closeResults')} />
+
+        {/* Minimalist Centered Header */}
+        <div className="text-center pt-3 pb-2.5 px-12 relative z-10">
+          <h3 id="exam-review-title" className="text-[17px] font-bold text-pfg tracking-tight">
+            {tt('examReviewTitle')}
+          </h3>
+          <p className="text-xs text-pmuted mt-0.5 font-medium">
+            {items.filter((x) => x.status === 'correct').length} {tt('correct')} · {wrongCount} {tt('wrong')}
+          </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="p-3 border-b border-pline flex gap-2 bg-[rgb(var(--p-canvas-rgb)/0.4)]">
+        <div className="px-4 pb-3 flex gap-2 relative z-10">
           <button
             type="button"
             onClick={() => setFilter('mistakes')}
-            className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={cn(
+              'flex-1 py-2.5 rounded-2xl text-xs font-bold transition-all active:scale-[0.98]',
               filter === 'mistakes'
-                ? 'bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger shadow-xs'
-                : 'text-pmuted hover:bg-psurface'
-            }`}
+                ? 'bg-pcard text-pdanger shadow-2xs'
+                : 'text-pmuted hover:text-pfg'
+            )}
           >
             {tt('filterOnlyMistakes')} ({wrongCount})
           </button>
           <button
             type="button"
             onClick={() => setFilter('all')}
-            className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={cn(
+              'flex-1 py-2.5 rounded-2xl text-xs font-bold transition-all active:scale-[0.98]',
               filter === 'all'
-                ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary shadow-xs'
-                : 'text-pmuted hover:bg-psurface'
-            }`}
+                ? 'bg-pcard text-pprimary shadow-2xs'
+                : 'text-pmuted hover:text-pfg'
+            )}
           >
             {tt('filterAllQuestions')} ({items.length})
           </button>
         </div>
 
         {/* Question List */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-4">
+        <div className="flex-1 overflow-y-auto px-4 pb-4 space-y-3.5 relative z-10">
           {displayedItems.length === 0 ? (
             <div className="text-center py-12 px-4">
               <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center mx-auto mb-3 text-pprimary">
@@ -130,15 +126,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
               return (
                 <div
                   key={q.id}
-                  className={`rounded-2xl p-4 bg-pcard shadow-xs transition-all ${
-                    item.status === 'correct'
-                      ? 'ring-1 ring-[rgb(var(--p-primary-rgb)/0.3)]'
-                      : item.status === 'incorrect'
-                      ? 'ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)] bg-pdanger/[0.02]'
-                      : item.status === 'pending'
-                      ? 'ring-1 ring-[rgb(var(--p-blue-rgb)/0.4)] bg-pblue/[0.02]'
-                      : ''
-                  }`}
+                  className="rounded-2xl p-4 bg-pcard shadow-2xs transition-all relative z-10"
                 >
                   {/* Top Bar */}
                   <div className="flex items-center justify-between gap-2 mb-2.5">
@@ -251,11 +239,11 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
         </div>
 
         {/* Footer */}
-        <div className="p-3 border-t border-pline bg-card flex justify-end">
+        <div className="p-3.5 px-4 bg-psurface flex justify-end relative z-10">
           <button
             type="button"
             onClick={onClose}
-            className="bg-pprimary text-ponprimary active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-[transform,background-color,filter] duration-150 px-6 py-2.5 rounded-xl text-xs font-semibold shadow-xs"
+            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 px-6 py-2.5 rounded-2xl text-xs font-bold shadow-2xs hover:text-pfg"
           >
             {tt('closeResults')}
           </button>

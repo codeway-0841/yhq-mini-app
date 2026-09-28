@@ -1,5 +1,6 @@
 import { memo } from 'react'
 import { useAppStore } from '../store/useAppStore'
+import { getAccentTheme } from '../config/themes'
 import { cn } from '../lib/cn'
 
 export function hexToRgba(hex: string, alpha: number): string {
@@ -20,7 +21,7 @@ export function hexToRgba(hex: string, alpha: number): string {
 }
 
 export interface ModalMathGridProps {
-  /** Markaziy/burchakdagi ambient glow rangi (default: #0066FF). 'none' bo'lsa glow bo'lmaydi */
+  /** Markaziy/burchakdagi ambient glow rangi. 'theme' bo'lsa joriy tema rangi olinadi. 'none' bo'lsa glow bo'lmaydi */
   glowColor?: string
   /** Glow yoqilgan/o'chirilgan (default: true) */
   glow?: boolean
@@ -43,19 +44,21 @@ export const ModalMathGrid = memo(function ModalMathGrid({
   className,
 }: ModalMathGridProps) {
   const theme = useAppStore((s) => s.settings.theme)
+  const accent = useAppStore((s) => s.accent)
   const isDark =
     theme === 'dark' ||
     (theme === 'system' &&
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-color-scheme: dark)').matches)
 
+  const activeGlowColor = glowColor === 'theme' ? getAccentTheme(accent).color : glowColor
   const gridLine = isDark ? 'rgba(255, 255, 255, 0.045)' : 'rgba(0, 0, 0, 0.035)'
   const glowAlpha1 = isDark ? 0.28 : 0.16
   const glowAlpha2 = isDark ? 0.07 : 0.04
 
-  const hasGlow = glow && glowColor !== 'none'
+  const hasGlow = glow && activeGlowColor !== 'none'
   const bgImage = hasGlow
-    ? `radial-gradient(circle at 80% 10%, ${hexToRgba(glowColor, glowAlpha1)} 0%, ${hexToRgba(glowColor, glowAlpha2)} 45%, transparent 70%), linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`
+    ? `radial-gradient(circle at 80% 10%, ${hexToRgba(activeGlowColor, glowAlpha1)} 0%, ${hexToRgba(activeGlowColor, glowAlpha2)} 45%, transparent 70%), linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`
     : `linear-gradient(${gridLine} 1px, transparent 1px), linear-gradient(90deg, ${gridLine} 1px, transparent 1px)`
 
   const bgSize = hasGlow ? 'auto, 28px 28px, 28px 28px' : '28px 28px, 28px 28px'

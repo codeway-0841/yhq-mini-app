@@ -243,7 +243,7 @@ export default function TestCalculatorSheet({
         ) : (
           <>
             {/* Display screen */}
-            <div className="flex flex-col justify-end rounded-2xl bg-psurface p-4 min-h-[96px] text-right shadow-inner select-all">
+            <div className="flex flex-col justify-end rounded-2xl bg-pcard p-4 min-h-[96px] text-right shadow-2xs select-all">
               <span className="text-xs font-mono text-pmuted tracking-wide overflow-x-auto whitespace-nowrap [scrollbar-width:none]">
                 {calc.expression || ' '}
               </span>
@@ -258,21 +258,21 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={handleClear}
-                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pdanger font-bold shadow-2xs active:scale-95 transition-all"
               >
                 C
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('(')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 (
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend(')')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 )
               </button>
@@ -280,7 +280,7 @@ export default function TestCalculatorSheet({
                 type="button"
                 onClick={handleBackspace}
                 aria-label="Backspace"
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pmuted hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pmuted hover:text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 <Delete size={18} />
               </button>
@@ -289,28 +289,28 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={handleSqrt}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pprimary hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 √
               </button>
               <button
                 type="button"
                 onClick={handleSquare}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pprimary hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 x²
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('%')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pprimary hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 %
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('÷')}
-                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 ÷
               </button>
@@ -319,28 +319,28 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('7')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 7
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('8')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 8
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('9')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 9
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('×')}
-                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 ×
               </button>
@@ -349,28 +349,28 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('4')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 4
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('5')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 5
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('6')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 6
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('-')}
-                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 -
               </button>
@@ -379,28 +379,28 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={() => handleAppend('1')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 1
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('2')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 2
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('3')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 3
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('+')}
-                className="grid h-12 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.2)] active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pprimary font-bold shadow-2xs active:scale-95 transition-all"
               >
                 +
               </button>
@@ -409,28 +409,28 @@ export default function TestCalculatorSheet({
               <button
                 type="button"
                 onClick={handleToggleSign}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 ±
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('0')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 0
               </button>
               <button
                 type="button"
                 onClick={() => handleAppend('.')}
-                className="grid h-12 place-items-center rounded-xl bg-psurface text-pfg hover:bg-psurfaceHover active:scale-95 transition-all"
+                className="grid h-12 place-items-center rounded-xl bg-pcard text-pfg shadow-2xs active:scale-95 transition-all"
               >
                 .
               </button>
               <button
                 type="button"
                 onClick={handleCalculate}
-                className="grid h-12 place-items-center rounded-xl bg-pprimary text-white shadow-md hover:brightness-110 active:scale-95 transition-all font-bold"
+                className="grid h-12 place-items-center rounded-xl bg-pprimary text-ponprimary shadow-xs font-bold active:scale-95 transition-all hover:brightness-[1.06]"
               >
                 =
               </button>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, Sparkles, AlertCircle } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 import { useT } from '../i18n'
 import type { Lang } from '../i18n'
 import { api, ApiError } from '../api'
@@ -9,6 +9,7 @@ import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
+import ModalCloseButton from './ModalCloseButton'
 import { Button } from './ui/button'
 
 interface PromoCodeModalProps {
@@ -70,19 +71,13 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
-      <div className="relative w-full max-w-sm rounded-2xl bg-pcard p-6 shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#8B5CF6" height={360} />
-        <button
-          onClick={onClose}
-          aria-label={tt('cancelExit')}
-          className="absolute top-4 right-4 size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
-        >
-          <X size={16} strokeWidth={1.75} />
-        </button>
+      <div className="relative w-full max-w-sm rounded-2xl bg-psurface p-6 shadow-2xl overflow-hidden">
+        <ModalMathGrid glowColor="theme" height={360} />
+        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} />
 
         {successData ? (
-          <div className="text-center py-4">
-            <h3 className="text-lg font-semibold text-pfg mb-2">
+          <div className="text-center py-4 relative z-10">
+            <h3 className="text-lg font-bold text-pfg mb-2">
               {tt('promoCodeSuccessTitle')}
             </h3>
 
@@ -97,8 +92,8 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
             </Button>
           </div>
         ) : (
-          <div>
-            <h3 id="promo-code-title" className="text-base font-semibold text-pfg text-center mb-1">
+          <div className="relative z-10">
+            <h3 id="promo-code-title" className="text-lg font-bold text-pfg text-center mt-2 mb-1">
               {tt('promoCodeTitle')}
             </h3>
 
@@ -118,7 +113,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                   placeholder={tt('promoCodePlaceholder')}
                   autoFocus
                   maxLength={30}
-                  className="w-full bg-psurface rounded-2xl px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:ring-2 focus:ring-ppurple shadow-xs transition-all"
+                  className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:ring-2 focus:ring-pprimary shadow-2xs transition-all"
                 />
               </div>
 
@@ -135,7 +130,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                 loading={loading}
                 disabled={code.trim().length < 3}
               >
-                <Sparkles size={16} />
                 {tt('promoCodeActivateBtn')}
               </Button>
             </form>

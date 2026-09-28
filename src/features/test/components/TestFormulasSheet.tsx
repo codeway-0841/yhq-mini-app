@@ -125,7 +125,7 @@ export default function TestFormulasSheet({
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder={tt('formulasSearch')}
-            className="w-full rounded-2xl bg-psurface py-2 pl-9 pr-8 text-xs font-medium text-pfg placeholder:text-pmuted focus:outline-none focus:ring-2 focus:ring-pprimary"
+            className="w-full rounded-2xl bg-pcard py-2.5 pl-9 pr-8 text-xs font-medium text-pfg placeholder:text-pmuted shadow-2xs focus:outline-none focus:ring-2 focus:ring-pprimary"
           />
           {search && (
             <button
@@ -145,8 +145,8 @@ export default function TestFormulasSheet({
             onClick={() => setActiveTopicId('all')}
             className={`flex-none rounded-xl px-2.5 py-1 text-[11px] font-medium transition-all ${
               activeTopicId === 'all'
-                ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-semibold'
-                : 'bg-psurface text-pmuted hover:text-pfg'
+                ? 'bg-pcard text-pprimary font-bold shadow-2xs'
+                : 'text-pmuted hover:text-pfg'
             }`}
           >
             {tt('formulasAllTopics')}
@@ -158,8 +158,8 @@ export default function TestFormulasSheet({
               onClick={() => setActiveTopicId(t.id)}
               className={`flex-none rounded-xl px-2.5 py-1 text-[11px] font-medium transition-all ${
                 activeTopicId === t.id
-                  ? 'bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-semibold'
-                  : 'bg-psurface text-pmuted hover:text-pfg'
+                  ? 'bg-pcard text-pprimary font-bold shadow-2xs'
+                  : 'text-pmuted hover:text-pfg'
               }`}
             >
               {language === 'ru' ? t.nameRu : t.name}
@@ -177,7 +177,7 @@ export default function TestFormulasSheet({
             filteredFormulas.map((f) => (
               <div
                 key={f.id}
-                className="flex flex-col gap-1 rounded-2xl bg-psurface p-3 transition-colors hover:bg-psurfaceHover"
+                className="flex flex-col gap-1.5 rounded-2xl bg-pcard p-3.5 shadow-2xs transition-all"
               >
                 <div className="flex items-center justify-between gap-2">
                   <span className="text-[13px] font-semibold text-pfg">
@@ -189,17 +189,17 @@ export default function TestFormulasSheet({
                         type="button"
                         onClick={() => openGraph(f.id)}
                         aria-label={tt('graphTitle')}
-                        className="grid size-7 place-items-center rounded-lg bg-pcard text-pmuted transition-colors hover:text-pprimary"
+                        className="grid size-7 place-items-center rounded-lg bg-psurface text-pmuted transition-colors hover:text-pprimary"
                       >
                         <LineChart size={14} />
                       </button>
                     )}
-                    <span className="text-[10px] text-pmuted font-medium bg-pcard px-2 py-0.5 rounded-full">
+                    <span className="text-[10px] text-pmuted font-medium bg-psurface px-2 py-0.5 rounded-full shadow-2xs">
                       {f.topicName}
                     </span>
                   </div>
                 </div>
-                <div className="rounded-xl bg-pcard px-3 py-2 text-center font-mono text-sm font-bold text-pprimary shadow-2xs tracking-wide select-all">
+                <div className="rounded-xl bg-psurface px-3 py-2 text-center font-mono text-sm font-bold text-pprimary tracking-wide select-all">
                   {f.formula}
                 </div>
                 {(f.note || f.noteRu) && (

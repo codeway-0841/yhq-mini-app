@@ -30,7 +30,7 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
   return (
     <DialogOverlay onClose={onClose} labelId="tg-qr-title" position="center">
       <div className="app-modal relative max-h-[calc(100dvh-2rem)] w-full max-w-[400px] overflow-y-auto p-5 motion-safe:animate-premiumIn sm:p-6 overflow-hidden">
-        <ModalMathGrid glowColor="#0066FF" height={280} />
+        <ModalMathGrid glow={false} height={280} />
         <button
           type="button"
           onClick={onClose}

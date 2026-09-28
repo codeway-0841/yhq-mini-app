@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Download, Share2, Copy, Check, X, Award, Send, ExternalLink, Lightbulb } from 'lucide-react'
+import { Download, Share2, Copy, Check, Send, ExternalLink, Lightbulb } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -11,6 +11,7 @@ import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 import { Button } from '../../shared/components/ui/button'
 import { drawCertificate } from './certificate-canvas'
 
@@ -179,31 +180,25 @@ export default function CertificateModal({ score, total, percent, sample = false
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-2xl bg-pcard p-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#F59E0B" height={420} />
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          aria-label={tt('close')}
-          className="absolute top-4 right-4 size-9 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors z-10"
-        >
-          <X size={18} />
-        </button>
+    <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/60">
+      <div className="relative w-full max-w-lg rounded-3xl bg-psurface px-5 pt-3 pb-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl overflow-hidden">
+        <ModalMathGrid glow={false} height={420} />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
 
         {/* Title */}
-        <div className="flex items-center gap-2 mb-3 mt-1">
-          <Award className="text-pgold" size={24} />
-          <h3 id="certificate-title" className="text-base font-semibold text-pfg">{tt('certOfficialTitle')}</h3>
+        <div className="relative z-10 text-center mb-3 pt-0.5 px-12">
+          <h2 id="certificate-title" className="text-[17px] font-bold text-pfg select-none">
+            {lang === 'ru' ? 'Сертификат' : 'Sertifikat'}
+          </h2>
           {sample && (
-            <span className="rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs">
+            <span className="inline-block mt-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs">
               {tt('certSampleBadge')}
             </span>
           )}
         </div>
 
         {/* Direct High-Resolution Canvas Display */}
-        <div className="w-full rounded-2xl overflow-hidden shadow-2xl mb-3 bg-black/40">
+        <div className="w-full rounded-2xl overflow-hidden shadow-2xs mb-3 bg-black/40 relative z-10">
           <canvas
             ref={canvasRef}
             className="w-full h-auto block object-contain select-none"
@@ -213,22 +208,22 @@ export default function CertificateModal({ score, total, percent, sample = false
 
         {/* Certificate Metadata Pill — namunada yashirin */}
         {!sample && (
-        <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-psurface shadow-xs mb-3 text-xs font-semibold text-pmuted">
-          <span className="truncate">ID: <span className="font-mono text-pfg">{certId}</span></span>
-          <button
-            onClick={handleCopyId}
-            className="flex items-center gap-1 text-pblue hover:underline ml-2 flex-shrink-0"
-          >
-            {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
-            <span>{copied ? tt('copied') : tt('copy')}</span>
-          </button>
-        </div>
+          <div className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-pcard shadow-2xs mb-3 text-xs font-semibold text-pmuted relative z-10">
+            <span className="truncate">ID: <span className="font-mono text-pfg">{certId}</span></span>
+            <button
+              onClick={handleCopyId}
+              className="flex items-center gap-1 text-pprimary hover:underline ml-2 flex-shrink-0"
+            >
+              {copied ? <Check size={14} className="text-psuccess" /> : <Copy size={14} />}
+              <span>{copied ? tt('copied') : tt('copy')}</span>
+            </button>
+          </div>
         )}
 
         {/* Bot Sent Success Alert */}
         {botSentSuccess && (
-          <div className="w-full bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center animate-fadeIn shadow-xs">
-            <p className="text-xs font-semibold text-pprimary mb-1">
+          <div className="w-full bg-pcard rounded-2xl p-3.5 mb-3 flex flex-col items-center text-center shadow-2xs relative z-10">
+            <p className="text-xs font-semibold text-psuccess mb-1">
               {tt('certSentSuccess')}
             </p>
             <button
@@ -243,12 +238,12 @@ export default function CertificateModal({ score, total, percent, sample = false
 
         {/* Action Buttons — namunada soxta sertifikat tarqalmasligi uchun o'chiq */}
         {sample ? (
-          <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted">
+          <p className="flex items-start justify-center gap-1.5 px-2 text-center text-[11px] leading-snug text-pmuted relative z-10">
             <Lightbulb size={12} strokeWidth={1.75} className="mt-px flex-none text-psubtle" aria-hidden="true" />
             {tt('certSampleHint')}
           </p>
         ) : (
-          <>
+          <div className="w-full relative z-10">
             <div className="w-full flex flex-col gap-2 mb-2">
               {/* Primary CTA: Telegram Botga jo'natish (Rasmni saqlash) */}
               <Button
@@ -263,25 +258,25 @@ export default function CertificateModal({ score, total, percent, sample = false
               </Button>
 
               {/* Secondary CTA: Qurilmaga to'g'ridan-to'g'ri yuklash */}
-              <Button
-                variant="secondary"
-                block
-                loading={downloading}
+              <button
+                type="button"
+                disabled={downloading}
                 onClick={handleDownload}
+                className="w-full py-3 rounded-2xl bg-pcard shadow-2xs text-[13.5px] font-semibold text-pfg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-50"
               >
                 <Download size={16} />
-                {downloading ? tt('downloading') : tt('downloadCertificate')}
-              </Button>
+                <span>{downloading ? tt('downloading') : tt('downloadCertificate')}</span>
+              </button>
 
               {/* Share CTA */}
-              <Button
-                variant="secondary"
-                block
+              <button
+                type="button"
                 onClick={handleShare}
+                className="w-full py-3 rounded-2xl bg-pcard shadow-2xs text-[13.5px] font-semibold text-pfg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
               >
-                <Share2 size={15} className="text-pblue" />
-                {tt('shareCertificate')}
-              </Button>
+                <Share2 size={15} className="text-pprimary" />
+                <span>{tt('shareCertificate')}</span>
+              </button>
             </div>
 
             {/* Mobile helper hint */}
@@ -291,7 +286,7 @@ export default function CertificateModal({ score, total, percent, sample = false
                 ? 'Сертификат отправляется прямо в ваш диалог с ботом в высоком качестве.'
                 : 'Sertifikat botingiz bilan bo‘lgan shaxsiy chatga original yuqori sifatda yuboriladi.'}
             </p>
-          </>
+          </div>
         )}
       </div>
     </DialogOverlay>

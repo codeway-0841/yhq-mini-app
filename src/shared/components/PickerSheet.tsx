@@ -2,6 +2,8 @@ import type { ReactNode } from 'react'
 import { Check } from 'lucide-react'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
+import ModalCloseButton from './ModalCloseButton'
+import { cn } from '../lib/cn'
 
 export interface PickerOption {
   value:   string
@@ -10,9 +12,9 @@ export interface PickerOption {
   icon?:   ReactNode
 }
 
-export default function PickerSheet({ title, titleIcon, options, value, onSelect, onClose }: {
+export default function PickerSheet({ title, titleIcon: _titleIcon, options, value, onSelect, onClose }: {
   title:    string
-  titleIcon: ReactNode
+  titleIcon?: ReactNode
   options:  PickerOption[]
   value:    string
   onSelect: (value: string) => void
@@ -20,42 +22,51 @@ export default function PickerSheet({ title, titleIcon, options, value, onSelect
 }) {
   return (
     <DialogOverlay onClose={onClose} labelId="picker-title" swipeToDismiss>
-      <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="#0066FF" height={360} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+        <ModalMathGrid glow={false} height={360} />
+        <ModalCloseButton onClick={onClose} label="Yopish" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
-        <p id="picker-title" data-drag-handle className="flex items-center justify-center gap-2 text-base font-semibold mb-5 text-pfg select-none relative z-10">
-          <span className="text-pprimary">{titleIcon}</span>
-          {title}
-        </p>
+        {/* Minimalist Centered Header */}
+        <div className="text-center mb-5 pt-1 px-12 relative z-10">
+          <h2 id="picker-title" className="text-[19px] font-bold text-pfg tracking-tight">
+            {title}
+          </h2>
+        </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5 relative z-10">
           {options.map((opt) => {
             const selected = opt.value === value
             return (
               <button
                 key={opt.value}
+                type="button"
                 onClick={() => { onSelect(opt.value); onClose() }}
-                className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] shadow-xs ${
+                className={cn(
+                  'flex items-center justify-between w-full rounded-2xl p-4 text-left transition-all active:scale-[0.98] cursor-pointer bg-pcard',
                   selected
-                    ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.15)]'
-                    : 'bg-pcard hover:bg-psurface'
-                }`}
-              >
-                {opt.icon && (
-                  <div className="size-10 rounded-full bg-psurface shadow-xs flex items-center justify-center flex-none">
-                    {opt.icon}
-                  </div>
+                    ? 'ring-2 ring-pprimary shadow-md'
+                    : 'shadow-2xs hover:shadow-xs'
                 )}
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-pfg">
-                    {opt.label}
-                  </p>
-                  {opt.desc && (
-                    <p className="text-[11px] text-pmuted mt-0.5">{opt.desc}</p>
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  {opt.icon && (
+                    <div className="size-9 rounded-xl bg-psurface flex items-center justify-center flex-none text-pfg">
+                      {opt.icon}
+                    </div>
                   )}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-[15px] font-bold text-pfg">
+                      {opt.label}
+                    </p>
+                    {opt.desc && (
+                      <p className="text-[11.5px] text-pmuted mt-0.5">{opt.desc}</p>
+                    )}
+                  </div>
                 </div>
-                {selected && <Check size={18} strokeWidth={2} className="text-pprimary flex-none" />}
+                {selected && (
+                  <Check size={18} strokeWidth={2.4} className="text-pprimary flex-none" />
+                )}
               </button>
             )
           })}

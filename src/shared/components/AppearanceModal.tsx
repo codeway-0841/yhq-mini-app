@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import { X, Check } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
+import ModalCloseButton from './ModalCloseButton'
 import { cn } from '../lib/cn'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../lib/sounds'
@@ -57,43 +58,35 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="appearance-modal-title" swipeToDismiss zIndex={65}>
+    <DialogOverlay onClose={onClose} labelId="appearance-modal-title" swipeToDismiss zIndex={65} backdropClassName="bg-black/60">
       <div
         className={cn(
-          'relative w-full rounded-t-sheet bg-[#FAF9FC] text-gray-900',
+          'relative w-full rounded-t-sheet bg-psurface text-pfg',
           'max-h-[88vh] flex flex-col shadow-2xl overflow-hidden pb-8 select-none'
         )}
       >
         {/* Apple subtle blueprint/math grid background in header */}
-        <ModalMathGrid glowColor="#0066FF" height={420} />
+        <ModalMathGrid glowColor="theme" height={420} />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
 
         {/* Top Drag Handle */}
         <div
           data-drag-handle
-          className="w-9 h-1 rounded-full bg-gray-300/90 mx-auto mt-2.5 mb-1 cursor-grab active:cursor-grabbing touch-none relative z-10"
+          className="w-10 h-1 rounded-full bg-plineStrong mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
         />
 
         {/* Header Bar */}
-        <div className="relative z-10 flex items-center justify-between px-5 pt-1 pb-4">
-          <button
-            onClick={onClose}
-            aria-label={tt('close')}
-            className="size-9 rounded-full bg-white shadow-xs border border-black/[0.06] text-gray-700 flex items-center justify-center hover:bg-gray-50 active:scale-95 transition-transform"
-          >
-            <X size={17} strokeWidth={2.25} />
-          </button>
+        <div className="relative z-10 flex items-center justify-center px-5 pt-1 pb-4">
           <h2
             id="appearance-modal-title"
-            className="text-[17px] font-bold text-gray-900 tracking-tight"
+            className="text-lg font-bold text-pfg tracking-tight text-center"
           >
             {tt('appearanceTitle')}
           </h2>
-          {/* Balance spacer */}
-          <div className="size-9 pointer-events-none" />
         </div>
 
         {/* 3-Pill Segmented Control: Theme | Charts | Icons */}
-        <div className="relative z-10 mx-5 mb-5 p-1 rounded-full bg-[#EEEEF2] flex items-center shadow-inner">
+        <div className="relative z-10 mx-5 mb-5 p-1 rounded-full bg-pcard flex items-center shadow-2xs">
           {(
             [
               { key: 'theme', label: tt('appearanceTabTheme') },
@@ -113,8 +106,8 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                 className={cn(
                   'flex-1 py-1.5 text-center text-[13px] rounded-full transition-all duration-150',
                   isActive
-                    ? 'bg-[#E5F0FF] text-[#0066FF] font-bold shadow-2xs'
-                    : 'text-gray-500 font-semibold hover:text-gray-800'
+                    ? 'bg-pprimary text-ponprimary font-bold shadow-xs'
+                    : 'text-pmuted font-semibold hover:text-pfg'
                 )}
               >
                 {tab.label}
@@ -134,27 +127,27 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectTheme('light')}
                   className={cn(
-                    'bg-white rounded-2xl p-3 border transition-all text-left flex flex-col justify-between shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentTheme === 'light'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
-                  <div className="w-full h-[88px] rounded-xl bg-[#F2F3F7] p-2 flex flex-col justify-between border border-black/[0.03]">
-                    <div className="w-full h-full rounded-lg bg-white p-2.5 shadow-2xs border border-black/[0.05] flex flex-col justify-between">
+                  <div className="w-full h-[88px] rounded-xl bg-psurface p-2 flex flex-col justify-between">
+                    <div className="w-full h-full rounded-lg bg-pcard p-2.5 shadow-2xs flex flex-col justify-between">
                       <div>
-                        <div className="w-12 h-2 rounded-full bg-black" />
-                        <div className="w-16 h-1 rounded-full bg-gray-400 mt-1.5" />
+                        <div className="w-12 h-2 rounded-full bg-pfg" />
+                        <div className="w-16 h-1 rounded-full bg-pmuted mt-1.5" />
                       </div>
-                      <div className="w-8 h-1 rounded-full bg-gray-300 mt-auto" />
+                      <div className="w-8 h-1 rounded-full bg-plineStrong mt-auto" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">
+                    <span className="text-[14px] font-semibold text-pfg">
                       {settings.language === 'ru' ? 'Светлая' : 'Light'}
                     </span>
                     {currentTheme === 'light' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -166,14 +159,14 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectTheme('dark')}
                   className={cn(
-                    'bg-white rounded-2xl p-3 border transition-all text-left flex flex-col justify-between shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentTheme === 'dark'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
-                  <div className="w-full h-[88px] rounded-xl bg-[#0E131D] p-2 flex flex-col justify-between border border-white/[0.05]">
-                    <div className="w-full h-full rounded-lg bg-[#000000] p-2.5 shadow-2xs border border-white/[0.08] flex flex-col justify-between">
+                  <div className="w-full h-[88px] rounded-xl bg-[#0E131D] p-2 flex flex-col justify-between">
+                    <div className="w-full h-full rounded-lg bg-[#000000] p-2.5 shadow-2xs flex flex-col justify-between">
                       <div>
                         <div className="w-12 h-2 rounded-full bg-white" />
                         <div className="w-16 h-1 rounded-full bg-gray-600 mt-1.5" />
@@ -182,11 +175,11 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">
+                    <span className="text-[14px] font-semibold text-pfg">
                       {settings.language === 'ru' ? 'Тёмная' : 'Dark'}
                     </span>
                     {currentTheme === 'dark' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -195,7 +188,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
               </div>
 
               {/* Footnote */}
-              <p className="mt-4 text-[13px] text-gray-500 leading-relaxed font-normal">
+              <p className="mt-4 text-[13px] text-pmuted leading-relaxed font-normal">
                 {tt('themeFootnote')}
               </p>
             </div>
@@ -210,19 +203,19 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectChart('line')}
                   className={cn(
-                    'bg-white rounded-2xl p-3 border transition-all text-left flex flex-col justify-between shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentChart === 'line'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
-                  <div className="w-full h-[88px] rounded-xl bg-[#F2F3F7] p-2 flex flex-col justify-between border border-black/[0.03]">
-                    <div className="w-full h-full rounded-lg bg-white p-1.5 shadow-2xs border border-black/[0.05] flex items-center justify-center relative overflow-hidden">
+                  <div className="w-full h-[88px] rounded-xl bg-psurface p-2 flex flex-col justify-between">
+                    <div className="w-full h-full rounded-lg bg-pcard p-1.5 shadow-2xs flex items-center justify-center relative overflow-hidden">
                       <svg viewBox="0 0 100 48" className="w-full h-full overflow-hidden" preserveAspectRatio="none">
                         <defs>
                           <linearGradient id="chartLineGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stopColor="#007AFF" stopOpacity="0.35" />
-                            <stop offset="100%" stopColor="#007AFF" stopOpacity="0.0" />
+                            <stop offset="0%" stopColor="var(--p-primary)" stopOpacity="0.35" />
+                            <stop offset="100%" stopColor="var(--p-primary)" stopOpacity="0.0" />
                           </linearGradient>
                         </defs>
                         <path
@@ -232,7 +225,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                         <path
                           d="M 6 34 C 14 34, 18 28, 28 30 C 38 32, 44 24, 54 26 C 64 28, 70 18, 80 20 C 88 22, 92 12, 96 14"
                           fill="none"
-                          stroke="#007AFF"
+                          stroke="var(--p-primary)"
                           strokeWidth="2.5"
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -241,11 +234,11 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">
+                    <span className="text-[14px] font-semibold text-pfg">
                       {settings.language === 'ru' ? 'Линия' : 'Line'}
                     </span>
                     {currentChart === 'line' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -257,34 +250,34 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectChart('bars')}
                   className={cn(
-                    'bg-white rounded-2xl p-3 border transition-all text-left flex flex-col justify-between shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentChart === 'bars'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
-                  <div className="w-full h-[88px] rounded-xl bg-[#F2F3F7] p-2 flex flex-col justify-between border border-black/[0.03]">
-                    <div className="w-full h-full rounded-lg bg-white p-2 shadow-2xs border border-black/[0.05] flex flex-col justify-end relative overflow-hidden">
+                  <div className="w-full h-[88px] rounded-xl bg-psurface p-2 flex flex-col justify-between">
+                    <div className="w-full h-full rounded-lg bg-pcard p-2 shadow-2xs flex flex-col justify-end relative overflow-hidden">
                       {/* Dashed baseline guide */}
-                      <div className="absolute top-2.5 left-2 right-2 border-b border-dashed border-gray-300" />
+                      <div className="absolute top-2.5 left-2 right-2 border-b border-dashed border-pline" />
                       {/* 9 vertical bars */}
                       <div className="flex items-end justify-between gap-1 w-full h-[38px] px-1 relative z-10">
                         {[24, 38, 18, 56, 32, 78, 46, 92, 64].map((h, idx) => (
                           <div
                             key={idx}
                             style={{ height: `${h}%` }}
-                            className="flex-1 rounded-t-[3px] rounded-b-[1px] bg-[#007AFF]"
+                            className="flex-1 rounded-t-[3px] rounded-b-[1px] bg-pprimary"
                           />
                         ))}
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">
+                    <span className="text-[14px] font-semibold text-pfg">
                       {settings.language === 'ru' ? 'Столбцы' : 'Bars'}
                     </span>
                     {currentChart === 'bars' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -293,7 +286,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
               </div>
 
               {/* Footnote */}
-              <p className="mt-4 text-[13px] text-gray-500 leading-relaxed font-normal">
+              <p className="mt-4 text-[13px] text-pmuted leading-relaxed font-normal">
                 {tt('chartFootnote')}
               </p>
             </div>
@@ -308,10 +301,10 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('default')}
                   className={cn(
-                    'bg-white rounded-2xl p-3.5 border transition-all text-left flex flex-col items-center shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'default'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
                   <div className="size-16 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#00C0FF] shadow-md flex items-center justify-center relative overflow-hidden">
@@ -327,9 +320,9 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </svg>
                   </div>
                   <div className="w-full flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">Default</span>
+                    <span className="text-[14px] font-semibold text-pfg">Default</span>
                     {currentIcon === 'default' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -341,10 +334,10 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('red')}
                   className={cn(
-                    'bg-white rounded-2xl p-3.5 border transition-all text-left flex flex-col items-center shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'red'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
                   <div className="size-16 rounded-2xl bg-gradient-to-br from-[#FF2D55] to-[#FF6B8B] shadow-md flex items-center justify-center relative overflow-hidden">
@@ -358,9 +351,9 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </svg>
                   </div>
                   <div className="w-full flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">Red</span>
+                    <span className="text-[14px] font-semibold text-pfg">Red</span>
                     {currentIcon === 'red' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -372,10 +365,10 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('green')}
                   className={cn(
-                    'bg-white rounded-2xl p-3.5 border transition-all text-left flex flex-col items-center shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'green'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
                   <div className="size-16 rounded-2xl bg-gradient-to-br from-[#10B981] to-[#34D399] shadow-md flex items-center justify-center relative overflow-hidden">
@@ -389,9 +382,9 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </svg>
                   </div>
                   <div className="w-full flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">Green</span>
+                    <span className="text-[14px] font-semibold text-pfg">Green</span>
                     {currentIcon === 'green' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -403,10 +396,10 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('pro')}
                   className={cn(
-                    'bg-white rounded-2xl p-3.5 border transition-all text-left flex flex-col items-center shadow-2xs group',
+                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'pro'
-                      ? 'border-[#007AFF] ring-2 ring-[#007AFF]/25'
-                      : 'border-black/[0.08] hover:border-black/[0.14]'
+                      ? 'ring-2 ring-pprimary shadow-md'
+                      : 'hover:shadow-xs'
                   )}
                 >
                   <div className="size-16 rounded-2xl bg-[#141416] shadow-md flex items-center justify-center relative overflow-hidden">
@@ -452,9 +445,9 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                     </svg>
                   </div>
                   <div className="w-full flex items-center justify-between mt-3 px-1">
-                    <span className="text-[14px] font-semibold text-gray-900">Pro</span>
+                    <span className="text-[14px] font-semibold text-pfg">Pro</span>
                     {currentIcon === 'pro' && (
-                      <span className="size-5 rounded-full bg-black text-white flex items-center justify-center">
+                      <span className="size-5 rounded-full bg-pprimary text-ponprimary flex items-center justify-center shadow-xs">
                         <Check size={11} strokeWidth={3} />
                       </span>
                     )}
@@ -463,7 +456,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
               </div>
 
               {/* Footnote */}
-              <p className="mt-4 text-[13px] text-gray-500 leading-relaxed font-normal">
+              <p className="mt-4 text-[13px] text-pmuted leading-relaxed font-normal">
                 {tt('iconFootnote')}
               </p>
             </div>

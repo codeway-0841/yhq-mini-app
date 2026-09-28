@@ -3,7 +3,7 @@
  * buyurtmani yuborish. Telefon user.phone'dan prefill (agar bo'lsa).
  */
 import { useState } from 'react'
-import { Loader2, Package } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError } from '../../shared/api'
@@ -14,6 +14,7 @@ import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
   item: MerchItem
@@ -60,69 +61,74 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
   }
 
   return (
-    <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title">
-      <div className="relative w-full max-w-sm bg-pcard rounded-3xl p-5 shadow-2xl motion-safe:animate-premiumIn overflow-hidden">
-        <ModalMathGrid glowColor="#F59E0B" height={260} />
+    <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title" backdropClassName="bg-black/60">
+      <div className="relative w-full max-w-sm bg-psurface rounded-3xl px-5 pt-3 pb-5 shadow-2xl motion-safe:animate-premiumIn overflow-hidden">
+        <ModalMathGrid glowColor="theme" height={280} />
+        <ModalCloseButton onClick={busy ? () => {} : onClose} label={tt('close')} />
         <div className="relative z-10">
-        <p id="merch-order-title" className="text-[15px] font-semibold text-center flex items-center justify-center gap-2">
-          <Package size={17} className="text-pgold" /> {tt('merchFormTitle')}
-        </p>
-        {/* Buyum sarlavhasi */}
-        <div className="mt-3 flex items-center gap-3 rounded-2xl bg-psurface p-3.5 shadow-xs">
-          {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="shrink-0 text-pgold" /> })()}
-          <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-semibold truncate">{item.label[lang]}</p>
-            <p className="text-[11px] text-pgold font-semibold flex items-center gap-1 mt-0.5">
-              <CoinIcon size={13} /> {item.price.toLocaleString('ru-RU')}
-            </p>
+          {/* Minimalist Centered Header (ilova tiliday) */}
+          <div className="text-center mb-3 pt-0.5 px-12">
+            <h2 id="merch-order-title" className="text-[17px] font-bold text-pfg tracking-tight">
+              {tt('merchFormTitle')}
+            </h2>
           </div>
-        </div>
 
-        {/* Forma */}
-        <div className="mt-4 space-y-2.5">
-          <input
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            placeholder={tt('merchFormName')}
-            maxLength={80}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
-          />
-          <input
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder={tt('merchFormPhone')}
-            inputMode="tel"
-            maxLength={20}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
-          />
-          <input
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            placeholder={tt('merchFormNote')}
-            maxLength={200}
-            className="w-full bg-psurface rounded-xl px-3.5 py-3 text-base font-semibold outline-none focus:ring-2 focus:ring-[rgb(var(--p-primary-rgb)/0.6)] transition-all shadow-xs"
-          />
-        </div>
+          {/* Buyum sarlavhasi (Oq taktil karta) */}
+          <div className="mt-3.5 flex items-center gap-3 rounded-2xl bg-pcard p-3.5 shadow-2xs">
+            {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="shrink-0 text-pprimary" /> })()}
+            <div className="flex-1 min-w-0">
+              <p className="text-[13.5px] font-semibold text-pfg truncate">{item.label[lang]}</p>
+              <p className="text-[11.5px] text-pgold font-semibold flex items-center gap-1 mt-0.5">
+                <CoinIcon size={13} /> {item.price.toLocaleString('ru-RU')}
+              </p>
+            </div>
+          </div>
 
-        {error && (
-          <p className="mt-2.5 text-center text-[11.5px] font-semibold text-pwarning animate-fadeIn">{error}</p>
-        )}
+          {/* Forma (Oq taktil inputlar) */}
+          <div className="mt-4 space-y-2.5">
+            <input
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              placeholder={tt('merchFormName')}
+              maxLength={80}
+              className="w-full bg-pcard text-pfg placeholder:text-psubtle rounded-2xl px-4 py-3 text-sm font-medium outline-none focus:ring-2 focus:ring-pprimary transition-all shadow-2xs"
+            />
+            <input
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder={tt('merchFormPhone')}
+              inputMode="tel"
+              maxLength={20}
+              className="w-full bg-pcard text-pfg placeholder:text-psubtle rounded-2xl px-4 py-3 text-sm font-medium outline-none focus:ring-2 focus:ring-pprimary transition-all shadow-2xs"
+            />
+            <input
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              placeholder={tt('merchFormNote')}
+              maxLength={200}
+              className="w-full bg-pcard text-pfg placeholder:text-psubtle rounded-2xl px-4 py-3 text-sm font-medium outline-none focus:ring-2 focus:ring-pprimary transition-all shadow-2xs"
+            />
+          </div>
 
-        <div className="mt-4 flex gap-2">
-          <button
-            onClick={onClose}
-            disabled={busy}
-            className="flex-1 min-h-11 py-2.5 rounded-xl text-[13px] font-semibold text-pmuted bg-psurface active:scale-[0.97] transition-transform disabled:opacity-50 shadow-xs">
-            {tt('merchFormCancel')}
-          </button>
-          <button
-            onClick={submit}
-            disabled={busy}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 flex-[2] min-h-11 py-2.5 rounded-xl text-[13px] font-semibold flex items-center justify-center gap-1.5 active:scale-[0.97] transition-transform disabled:opacity-60 shadow-xs">
-            {busy ? <Loader2 size={15} className="animate-spin" /> : <CoinIcon size={15} />}
-            {tt('merchFormSubmit')}
-          </button>
-        </div>
+          {error && (
+            <p className="mt-2.5 text-center text-[11.5px] font-semibold text-pwarning animate-fadeIn">{error}</p>
+          )}
+
+          <div className="mt-4 flex gap-2.5">
+            <button
+              onClick={onClose}
+              disabled={busy}
+              className="flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-semibold text-pmuted bg-pcard active:scale-[0.97] transition-transform disabled:opacity-50 shadow-2xs hover:text-pfg">
+              {tt('merchFormCancel')}
+            </button>
+            <button
+              onClick={submit}
+              disabled={busy}
+              className="flex-[2] min-h-11 py-2.5 rounded-2xl text-[13px] font-bold text-ponprimary bg-pprimary hover:brightness-[1.06] active:scale-[0.97] transition-transform disabled:opacity-60 flex items-center justify-center gap-1.5 shadow-xs">
+              {busy ? <Loader2 size={16} className="animate-spin" /> : <CoinIcon size={16} />}
+              {tt('merchFormSubmit')}
+            </button>
+          </div>
         </div>
       </div>
     </DialogOverlay>

@@ -9,11 +9,12 @@
  *    premium → syncFromServer (tariff/premium_until o'zgarishi).
  */
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { X, Loader2, Sparkles, Target } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import { api, ApiError } from '../../shared/api'
@@ -166,28 +167,18 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
   return (
     <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
       {celebrate && <Confetti count={50} />}
-      <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-pcard p-5 pt-4 shadow-2xl">
-        <ModalMathGrid glowColor="#F59E0B" height={300} />
+      <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-psurface px-5 pt-3 pb-5 shadow-2xl">
+        <ModalMathGrid glowColor="theme" height={320} />
+        <ModalCloseButton onClick={onClose} label={tt('spinClose')} />
         {/* Header */}
-        <div className="relative z-10 flex items-center justify-between mb-1">
-          <div className="flex items-center gap-1.5">
-            <Sparkles size={18} className="text-pgold animate-pulse" />
-            <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
-          </div>
-          <button
-            onClick={onClose}
-            aria-label={tt('spinClose')}
-            className="size-11 grid place-items-center rounded-full text-psubtle hover:bg-psurface hover:text-pfg transition-colors"
-          >
-            <X size={18} />
-          </button>
+        <div className="text-center mb-3 pt-0.5 px-12 relative z-10">
+          <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
         </div>
-        <p className="relative z-10 mb-4 text-[11.5px] leading-snug text-pmuted">{tt('spinDesc')}</p>
 
         {/* ── G'ildirak Sahnasi ── */}
         <div className="relative mx-auto my-2 flex size-[280px] items-center justify-center">
           {/* 3D Needled Pointer (Yuqorida, ko'rsatkich) */}
-          <div className="pointer-events-none absolute -top-1.5 left-1/2 z-30 -translate-x-1/2 drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
+          <div className="pointer-events-none absolute -top-1.5 left-1/2 z-30 -translate-x-1/2">
             <svg width="32" height="38" viewBox="0 0 32 38" fill="none">
               <path
                 d="M16 36L4 12C2.5 9 4.5 4 8 4H24C27.5 4 29.5 9 28 12L16 36Z"
@@ -213,7 +204,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               transition: `transform ${SPIN_MS}ms cubic-bezier(0.15, 0.9, 0.25, 1)`,
             }}
           >
-            <svg width="280" height="280" viewBox="0 0 300 300" className="drop-shadow-[0_8px_20px_rgba(0,0,0,0.45)]">
+            <svg width="280" height="280" viewBox="0 0 300 300">
               <defs>
                 {/* Oltin tashqi gardish gradienti */}
                 <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -321,12 +312,11 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
                   fill={pin.active ? '#fef08a' : '#d97706'}
                   stroke="#ffffff"
                   strokeWidth="0.75"
-                  style={{ filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.5))' }}
                 />
               ))}
 
               {/* 5. Markaziy 3D Oltin Hub */}
-              <circle cx="150" cy="150" r="26" fill="url(#centerHubGold)" stroke="#ffffff" strokeWidth="2" style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.4))' }} />
+              <circle cx="150" cy="150" r="26" fill="url(#centerHubGold)" stroke="#ffffff" strokeWidth="2" />
               <circle cx="150" cy="150" r="20" fill="#92400e" opacity="0.4" />
               {/* Lucide crown (emoji o'rniga vektor) */}
               <g transform="translate(150 150) scale(1.05) translate(-12 -12)" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -345,8 +335,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
         <div className="mt-3 min-h-[44px] flex items-center justify-center text-center">
           {phase === 'loading' && <Loader2 size={20} className="animate-spin text-psubtle" />}
           {phase === 'idle' && !error && (
-            <p className="text-[12.5px] font-semibold text-pmuted flex items-center gap-1.5">
-              <Target size={14} strokeWidth={1.75} className="text-psubtle" />
+            <p className="text-[12.5px] font-semibold text-pmuted">
               {lang === 'ru' ? 'Вращайте и выигрывайте призы!' : 'Aylantiring va sovrin yuting!'}
             </p>
           )}
@@ -378,10 +367,10 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
         </div>
 
         {/* Harakat tugmasi */}
-        <div className="mt-3">
+        <div className="mt-3 relative z-10">
           {phase === 'used' || phase === 'done' ? (
-            <div className="rounded-2xl bg-psurface py-3.5 text-center shadow-xs">
-              <p className="text-[12px] font-semibold text-pmuted">{tt('spinUsed')}</p>
+            <div className="rounded-2xl bg-pcard py-3.5 text-center shadow-2xs">
+              <p className="text-xs font-semibold text-pmuted">{tt('spinUsed')}</p>
             </div>
           ) : (
             <Button
@@ -392,7 +381,6 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
               disabled={busy || phase === 'loading'}
               onClick={spin}
             >
-              <Sparkles size={16} strokeWidth={1.75} />
               {tt('spinButton')}
             </Button>
           )}

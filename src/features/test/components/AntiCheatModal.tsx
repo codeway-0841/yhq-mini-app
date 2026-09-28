@@ -24,57 +24,55 @@ export default function AntiCheatModal({
     // (Escape/backdrop-yopish anti-cheat ogohlantirishini aylanib o'tishga yo'l qo'ymasligi shart)
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
-      <div className="w-full max-w-sm rounded-2xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden ring-2 ring-[rgb(var(--p-danger-rgb)/0.5)]">
-        <ModalMathGrid glowColor="#EF4444" height={260} />
-        {/* Yuqori aksent nuri */}
-        <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-36 h-36 bg-[rgb(var(--p-danger-rgb)/0.25)] rounded-full blur-2xl pointer-events-none" />
+      <div className="w-full max-w-sm rounded-3xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden">
+        <ModalMathGrid glowColor="theme" height={260} />
 
         <div className="relative z-10">
-          <div className="w-16 h-16 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] flex items-center justify-center mx-auto mb-4 text-pdanger">
-            {isFinalWarning ? <AlertOctagon size={34} /> : <ShieldAlert size={34} />}
+          <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mx-auto mb-3.5 text-pdanger">
+            {isFinalWarning ? <AlertOctagon size={30} /> : <ShieldAlert size={30} />}
           </div>
 
-        <h3 id="anticheat-title" className="text-lg font-semibold text-pfg mb-1">
-          {tt('antiCheatWarningTitle')}
-        </h3>
+          <h3 id="anticheat-title" className="text-[17px] font-bold text-pfg tracking-tight mb-1.5">
+            {tt('antiCheatWarningTitle')}
+          </h3>
 
-        <p id="anticheat-desc" className="text-xs text-psubtle leading-relaxed mb-4">
-          {tt('antiCheatWarningDesc')}
-        </p>
+          <p id="anticheat-desc" className="text-xs text-pmuted leading-relaxed mb-4">
+            {tt('antiCheatWarningDesc')}
+          </p>
 
-        {/* Ogohlantirish indikatori */}
-        <div className="bg-pcard rounded-2xl p-3.5 mb-5 flex items-center justify-between shadow-xs">
-          <span className="text-xs font-semibold text-pmuted flex items-center gap-1.5">
-            <AlertTriangle size={14} className={isFinalWarning ? 'text-pdanger' : 'text-pwarning'} />
-            {tt('antiCheatStrikeCount')}:
-          </span>
-          <div className="flex items-center gap-1.5">
-            {Array.from({ length: maxStrikes }).map((_, i) => (
-              <span
-                key={i}
-                className={`w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-semibold transition-all ${
-                  i < strike
-                    ? 'bg-pdanger text-white scale-110 shadow-[0_0_8px_rgba(239,68,68,0.5)]'
-                    : 'bg-plineStrong text-psubtle'
-                }`}
-              >
-                {i + 1}
-              </span>
-            ))}
+          {/* Ogohlantirish indikatori */}
+          <div className="bg-pcard rounded-2xl p-3.5 mb-4 flex items-center justify-between shadow-2xs">
+            <span className="text-xs font-semibold text-pmuted flex items-center gap-1.5">
+              <AlertTriangle size={14} className={isFinalWarning ? 'text-pdanger' : 'text-pwarning'} />
+              {tt('antiCheatStrikeCount')}:
+            </span>
+            <div className="flex items-center gap-1.5">
+              {Array.from({ length: maxStrikes }).map((_, i) => (
+                <span
+                  key={i}
+                  className={`size-4 rounded-full flex items-center justify-center text-[10px] font-bold transition-all ${
+                    i < strike
+                      ? 'bg-pdanger text-white shadow-2xs'
+                      : 'bg-psurface text-psubtle'
+                  }`}
+                >
+                  {i + 1}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        <p className="text-[12px] font-semibold text-pdanger mb-6">
-          {isFinalWarning ? tt('antiCheatStrikeHint2') : tt('antiCheatStrikeHint1')}
-        </p>
+          <p className="text-[12px] font-semibold text-pdanger mb-5">
+            {isFinalWarning ? tt('antiCheatStrikeHint2') : tt('antiCheatStrikeHint1')}
+          </p>
 
-        <button
-          type="button"
-          onClick={onDismiss}
-          className="w-full py-3.5 rounded-2xl bg-pdanger text-white font-semibold text-sm shadow-md hover:bg-[rgb(var(--p-danger-rgb)/0.9)] active:scale-[0.98] transition-all"
-        >
-          {tt('antiCheatUnderstood')}
-        </button>
+          <button
+            type="button"
+            onClick={onDismiss}
+            className="w-full min-h-11 py-3 rounded-2xl bg-pdanger text-white font-bold text-sm shadow-xs hover:brightness-[1.06] active:scale-[0.98] transition-all"
+          >
+            {tt('antiCheatUnderstood')}
+          </button>
         </div>
       </div>
     </div>

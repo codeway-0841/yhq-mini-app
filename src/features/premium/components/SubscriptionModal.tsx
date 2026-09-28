@@ -11,12 +11,10 @@ import {
   Loader2,
   CheckCircle2,
   AlertCircle,
-  Sparkles,
-  ChevronRight,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import { ClaudeTreeIcon } from '../../../shared/components/ClaudeTreeIcon'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -233,45 +231,28 @@ export default function SubscriptionModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full max-w-lg mx-auto bg-pcard rounded-t-sheet shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
+        className="w-full max-w-lg mx-auto bg-psurface rounded-t-sheet shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
-        <ModalMathGrid glowColor="#F59E0B" height={420} />
+        <ModalMathGrid glowColor="theme" height={420} />
+        {step === 'choose_plan' && <ModalCloseButton onClick={onClose} label="Yopish" />}
         {/* Yuqori surish tutqichi (Drag Handle) */}
         <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
           <div data-drag-handle className="w-10 h-1 rounded-full bg-plineStrong" />
         </div>
 
-        {/* ── STEP 1: TARIFNI TANLANG (Claude Style Accordion) ── */}
+        {/* ── STEP 1: TARIFNI TANLANG ── */}
         {step === 'choose_plan' && (
           <div className="flex flex-col flex-1 overflow-hidden">
-            {/* Header: ← Upgrade */}
-            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-pline shrink-0">
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label={tt('backWord')}
-                >
-                  <ChevronLeft size={20} />
-                </button>
-                <h2 id="subscription-modal-title" className="text-[17px] font-semibold text-pfg tracking-tight">
-                  {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
-                </h2>
-              </div>
-              <button
-                type="button"
-                onClick={onClose}
-                aria-label="Yopish"
-                className="size-8 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-              >
-                <X size={17} />
-              </button>
+            {/* Header: Centered Minimalist */}
+            <div className="pt-1 pb-3 text-center shrink-0 relative z-10 px-12">
+              <h2 id="subscription-modal-title" className="text-[19px] font-bold text-pfg tracking-tight">
+                {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
+              </h2>
             </div>
 
             {/* Plans List (Claude.ai bosilganda ochiladigan akordeon kartalari) */}
-            <div className="p-4 sm:p-5 space-y-3.5 overflow-y-auto flex-1 overscroll-contain">
+            <div className="p-4 sm:p-5 space-y-3 overflow-y-auto flex-1 overscroll-contain relative z-10">
               {PREMIUM_PLANS.map((plan) => {
                 const isSelected = selectedPlanKey === plan.key
                 const tierName = lang === 'ru' ? plan.tierNameRu : plan.tierNameUz
@@ -286,34 +267,31 @@ export default function SubscriptionModal({
                       setSelectedPlanKey(plan.key)
                     }}
                     className={cn(
-                      'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden shadow-xs',
+                      'rounded-2xl transition-all duration-200 text-left p-4 cursor-pointer relative overflow-hidden bg-pcard',
                       isSelected
-                        ? 'ring-2 ring-pprimary bg-psurface shadow-md'
-                        : 'bg-[rgb(var(--p-surface-rgb)/0.4)] hover:bg-psurface active:scale-[0.99]'
+                        ? 'ring-2 ring-pprimary shadow-md'
+                        : 'shadow-2xs hover:shadow-xs active:scale-[0.99]'
                     )}
                   >
-                    {/* Yuqori qator: Claude Geometrik Daraxt Ikonkasi + Nom + Tavsif + Narx */}
+                    {/* Yuqori qator: Nom + Tavsif + Narx */}
                     <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-center gap-3.5 min-w-0">
-                        <ClaudeTreeIcon className={cn('size-10 shrink-0 transition-opacity', isSelected ? 'text-pprimary' : 'text-pmuted')} />
-                        <div className="min-w-0">
-                          <span className="text-[17px] font-bold text-pfg tracking-tight block">
-                            {tierName}
-                          </span>
-                          <p className="text-[12.5px] text-pmuted mt-0.5 leading-snug font-normal">
-                            {badgeText}
-                          </p>
-                        </div>
+                      <div className="min-w-0 flex-1">
+                        <span className="text-[17px] font-bold text-pfg tracking-tight block">
+                          {tierName}
+                        </span>
+                        <p className="text-[12.5px] text-pmuted mt-0.5 leading-snug font-normal">
+                          {badgeText}
+                        </p>
                       </div>
 
                       {/* Narx va Muddat */}
                       <div className="text-right flex flex-col items-end shrink-0">
-                        <div className="flex items-center gap-1 rounded-full bg-psurface px-2.5 py-0.5 text-[10.5px] shadow-2xs">
+                        <div className="flex items-center gap-1.5 rounded-full bg-psurface px-2.5 py-0.5 text-[10.5px]">
                           <span className="font-semibold text-pfg">
                             {lang === 'ru' ? plan.periodRu : plan.periodUz}
                           </span>
                           {plan.discountPercent > 0 && (
-                            <span className="font-bold text-pblue">
+                            <span className="font-bold text-pprimary">
                               -{plan.discountPercent}%
                             </span>
                           )}
@@ -341,19 +319,11 @@ export default function SubscriptionModal({
                           <div key={idx} className="flex items-start gap-2.5">
                             {/* Claude uslubidagi oddiy, dumaloqsiz pitechka */}
                             <Check size={15} strokeWidth={2.2} className="mt-0.5 shrink-0 text-pprimary" />
-                            <span className="text-[13px] text-[rgb(var(--p-fg-rgb)/0.9)] font-normal leading-relaxed">
+                            <span className="text-[13px] text-pfg font-normal leading-relaxed">
                               {feat}
                             </span>
                           </div>
                         ))}
-
-                        {plan.key === 'lifetime' && (
-                          <div className="pt-1 flex items-center gap-1 text-[11.5px] font-semibold text-pprimary">
-                            <Sparkles size={13} />
-                            <span>{tt('specialOfferDetail')}</span>
-                            <ChevronRight size={13} />
-                          </div>
-                        )}
                       </div>
                     )}
                   </div>
@@ -362,7 +332,7 @@ export default function SubscriptionModal({
             </div>
 
             {/* Pastki Harakat Tugmasi: Davom etish (Theme-adaptive CTA) */}
-            <div className="p-4 sm:p-5 border-t border-pline bg-pcard shrink-0">
+            <div className="p-4 sm:p-5 border-t border-pline bg-psurface shrink-0">
               <button
                 type="button"
                 onClick={() => {
@@ -382,26 +352,24 @@ export default function SubscriptionModal({
         {step === 'payment_method' && (
           <div className="flex flex-col flex-1 overflow-hidden">
             {/* Header with Back button & Help link */}
-            <div className="flex items-center justify-between px-5 pb-3 pt-1 border-b border-pline shrink-0">
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => setStep('choose_plan')}
-                  className="size-8 rounded-full hover:bg-psurface text-pmuted hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
-                  aria-label={tt('backWord')}
-                >
-                  <ChevronLeft size={20} />
-                </button>
-                <h2 className="text-[17px] font-bold tracking-tight text-pfg">
-                  {tt('selectPaymentTitle')}
-                </h2>
-              </div>
+            <div className="flex items-center justify-between px-4 pb-3 pt-2 border-b border-pline shrink-0">
+              <button
+                type="button"
+                onClick={() => setStep('choose_plan')}
+                className="size-9 rounded-full bg-white dark:bg-[#1E2530] text-slate-800 dark:text-white shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
+                aria-label={tt('backWord')}
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <h2 className="text-[17px] font-bold tracking-tight text-pfg text-center">
+                {tt('selectPaymentTitle')}
+              </h2>
 
               <div className="flex items-center gap-1.5">
                 <button
                   type="button"
                   onClick={handleGetHelp}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-psurface hover:bg-pcanvas px-3 py-1 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer shadow-xs"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-white dark:bg-[#1E2530] px-3 py-1.5 text-[11px] font-semibold text-pmuted hover:text-pfg shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 transition-colors cursor-pointer"
                 >
                   <Headphones size={12} />
                   <span>{tt('getHelp')}</span>
@@ -410,9 +378,9 @@ export default function SubscriptionModal({
                   type="button"
                   onClick={onClose}
                   aria-label="Yopish"
-                  className="size-8 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
+                  className="size-9 rounded-full bg-white dark:bg-[#1E2530] text-slate-800 dark:text-white shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
                 >
-                  <X size={18} />
+                  <X size={16} strokeWidth={2.4} />
                 </button>
               </div>
             </div>
@@ -446,18 +414,15 @@ export default function SubscriptionModal({
               ) : (
                 <>
                   {/* Tanlangan Tarif Kartasi */}
-                  <div className="rounded-2xl bg-psurface p-4 flex items-center justify-between gap-3 shadow-xs">
-                    <div className="flex items-center gap-3.5">
-                      <ClaudeTreeIcon className="size-8 text-pprimary shrink-0" />
-                      <div>
-                        <p className="text-[16px] font-bold text-pfg">
-                          {lang === 'ru' ? selectedPlan.tierNameRu : selectedPlan.tierNameUz}
-                        </p>
-                        <div className="flex items-center gap-2 mt-0.5">
-                          <span className="text-[11px] text-pmuted">
-                            {lang === 'ru' ? selectedPlan.periodRu : selectedPlan.periodUz} · {lang === 'ru' ? selectedPlan.badgeRu : selectedPlan.badgeUz}
-                          </span>
-                        </div>
+                  <div className="rounded-2xl bg-pcard p-4 flex items-center justify-between gap-3 shadow-2xs">
+                    <div>
+                      <p className="text-[16px] font-bold text-pfg">
+                        {lang === 'ru' ? selectedPlan.tierNameRu : selectedPlan.tierNameUz}
+                      </p>
+                      <div className="flex items-center gap-2 mt-0.5">
+                        <span className="text-[11px] text-pmuted">
+                          {lang === 'ru' ? selectedPlan.periodRu : selectedPlan.periodUz} · {lang === 'ru' ? selectedPlan.badgeRu : selectedPlan.badgeUz}
+                        </span>
                       </div>
                     </div>
                     <div className="text-right">
@@ -477,7 +442,7 @@ export default function SubscriptionModal({
                     <p className="text-[12px] font-semibold text-pmuted">
                       {tt('verifiedPhone')}
                     </p>
-                    <div className="rounded-2xl bg-psurface p-3.5 flex items-center justify-between gap-2 shadow-xs">
+                    <div className="rounded-2xl bg-pcard p-3.5 flex items-center justify-between gap-2 shadow-2xs">
                       <div className="flex items-center gap-2.5">
                         <ShieldCheck size={19} className="text-pmuted" />
                         <span className="text-[14px] font-semibold text-pfg tabular-nums tracking-wide">
@@ -512,10 +477,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('click')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-2xs',
                           selectedProvider === 'click'
-                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
-                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
+                            ? 'ring-2 ring-pprimary bg-pcard text-pfg font-bold shadow-xs'
+                            : 'bg-pcard text-pmuted hover:text-pfg'
                         )}
                       >
                         <ClickLogo className="h-[18px] w-auto" />
@@ -529,10 +494,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('payme')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-2xs',
                           selectedProvider === 'payme'
-                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
-                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
+                            ? 'ring-2 ring-pprimary bg-pcard text-pfg font-bold shadow-xs'
+                            : 'bg-pcard text-pmuted hover:text-pfg'
                         )}
                       >
                         <img src="/payme.svg" alt="Payme" className="h-[18px] w-auto" />
@@ -546,10 +511,10 @@ export default function SubscriptionModal({
                           setSelectedProvider('stars')
                         }}
                         className={cn(
-                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-xs',
+                          'flex flex-col items-center justify-center min-h-[52px] p-3 rounded-2xl transition-all active:scale-95 cursor-pointer shadow-2xs',
                           selectedProvider === 'stars'
-                            ? 'ring-2 ring-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg font-bold'
-                            : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
+                            ? 'ring-2 ring-pprimary bg-pcard text-pfg font-bold shadow-xs'
+                            : 'bg-pcard text-pmuted hover:text-pfg'
                         )}
                       >
                         <div className="flex items-center gap-1.5">

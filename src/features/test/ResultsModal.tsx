@@ -12,6 +12,7 @@ import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
@@ -205,28 +206,21 @@ export default function ResultsModal({
   return (
     <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
-      <div className="relative w-full max-w-lg bg-pcard rounded-t-sheet p-4 pb-8 max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
-        <ModalMathGrid glowColor="#0066FF" height={420} />
+      <div className="relative w-full max-w-lg bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+        <ModalMathGrid glowColor="theme" height={420} />
+        <ModalCloseButton onClick={onFinish} label={tt('closeResults')} />
         {/* Drag handle */}
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
-        {/* Modal Header: Title & Close Button on the Right */}
-        <div className="flex items-center justify-between mb-2 relative z-10">
-          <div className="size-8" aria-hidden="true" />
-          <h2 id="results-title" data-drag-handle className="text-center text-base font-bold text-pfg select-none">
+        {/* Minimalist Centered Header */}
+        <div className="text-center mb-4 pt-0.5 px-12 relative z-10">
+          <h2 id="results-title" data-drag-handle className="text-[17px] font-bold text-pfg tracking-tight select-none">
             {tt('results')}
           </h2>
-          <button
-            onClick={onFinish}
-            aria-label={tt('closeResults')}
-            className="size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors active:scale-95"
-          >
-            <X size={16} />
-          </button>
         </div>
 
         {disqualifiedByCheat && (
-          <div className="mb-3 bg-[rgb(var(--p-danger-rgb)/0.15)] rounded-2xl p-3 text-center shadow-xs">
+          <div className="mb-3 bg-pcard rounded-2xl p-3.5 text-center shadow-2xs relative z-10 ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)]">
             <p className="text-sm font-semibold text-pdanger mb-1">
               {tt('antiCheatDisqualifiedTitle')}
             </p>
@@ -237,8 +231,8 @@ export default function ResultsModal({
         )}
 
         {pending > 0 && (
-          <div className="mb-3 bg-[rgb(var(--p-blue-rgb)/0.15)] rounded-2xl p-3 flex items-center gap-2.5 shadow-xs">
-            <div className="w-2 h-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
+          <div className="mb-3 bg-pcard rounded-2xl p-3.5 flex items-center gap-2.5 shadow-2xs relative z-10">
+            <div className="size-2 rounded-full bg-pblue animate-ping flex-shrink-0" />
             <p className="text-xs text-pfg font-medium">
               {pending} {tt('pendingSyncNotice') || `${pending} ta javob oflayn saqlandi (internet ulanganda natija yangilanadi)`}
             </p>
@@ -250,56 +244,55 @@ export default function ResultsModal({
 
         {/* Authoritative mukofotlar (XP & Tangalar) */}
         {(Boolean(earnedXp) || Boolean(earnedCoins)) ? (
-          <div className="mb-3.5 flex items-center justify-center gap-3 animate-scorePop">
+          <div className="mb-3.5 flex items-center justify-center gap-2.5 animate-scorePop relative z-10">
             {Boolean(earnedXp) && (
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary font-bold text-xs shadow-xs">
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pcard text-pprimary font-bold text-xs shadow-2xs">
                 <span>+{earnedXp} XP</span>
               </div>
             )}
             {Boolean(earnedCoins) && (
-              <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] text-pgold font-bold text-xs shadow-xs">
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pcard text-pgold font-bold text-xs shadow-2xs">
                 <span>+{earnedCoins} 🪙</span>
               </div>
             )}
           </div>
         ) : pending > 0 ? (
-          <div className="mb-3.5 flex items-center justify-center animate-scorePop">
-            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-psubtle font-medium text-xs shadow-xs">
+          <div className="mb-3.5 flex items-center justify-center animate-scorePop relative z-10">
+            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pcard text-psubtle font-medium text-xs shadow-2xs">
               <span>⏳ {useAppStore.getState().settings.language === 'ru' ? 'Награды будут начислены при подключении к сети' : 'Mukofotlar internet tiklangach hisoblanadi'}</span>
             </div>
           </div>
         ) : null}
 
-        <div className="grid grid-cols-3 gap-2 mb-4 animate-scorePop">
-          <div className="rounded-2xl bg-pwash p-2.5 text-center shadow-xs transition-all duration-300">
-            <Check size={16} strokeWidth={2} className="mx-auto text-pprimary" aria-hidden="true" />
-            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{correct}</p>
+        <div className="grid grid-cols-3 gap-2.5 mb-4 animate-scorePop relative z-10">
+          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
+            <Check size={16} strokeWidth={2.4} className="mx-auto text-pprimary" aria-hidden="true" />
+            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{correct}</p>
             <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
           </div>
-          <div className="rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-2.5 text-center shadow-xs transition-all duration-300">
-            <X size={16} strokeWidth={2} className="mx-auto text-pdanger" aria-hidden="true" />
-            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{wrong}</p>
+          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
+            <X size={16} strokeWidth={2.4} className="mx-auto text-pdanger" aria-hidden="true" />
+            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{wrong}</p>
             <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
           </div>
-          <div className="rounded-2xl bg-psurface p-2.5 text-center shadow-xs transition-all duration-300">
-            <Minus size={16} strokeWidth={2} className="mx-auto text-psubtle" aria-hidden="true" />
-            <p className="mt-1 font-display text-[24px] font-semibold tabular-nums leading-none text-pfg">{unanswered}</p>
+          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
+            <Minus size={16} strokeWidth={2.4} className="mx-auto text-psubtle" aria-hidden="true" />
+            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{unanswered}</p>
             <p className="mt-1 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
           </div>
         </div>
 
-        {/* Mavzular kesimida diagnostika — rasmiy imtihon presetlarida.
-            Eng zaif mavzu yuqorida: nima takrorlash kerak darhol ko'rinadi. */}
+        {/* Mavzular kesimida diagnostika — rasmiy imtihon presetlarida */}
         {topicBreakdown && topicBreakdown.length > 0 && (
-          <div className="mb-4">
-            <p className="text-sm font-semibold mb-2">{tt('topicBreakdownTitle')}</p>
-            <div className="flex flex-col gap-2">
+          <div className="mb-4 bg-pcard rounded-2xl p-4 shadow-2xs relative z-10">
+            <p className="text-[13px] font-bold text-pfg mb-2.5">{tt('topicBreakdownTitle')}</p>
+            <div className="flex flex-col gap-2.5">
               {topicBreakdown.map((t) => {
                 const color = t.pct >= 70 ? 'var(--p-success)' : t.pct >= 40 ? 'var(--p-warning)' : 'var(--p-danger)'
                 return (
                   <div key={t.topicId ?? -1}>
                     <div className="flex items-baseline justify-between gap-2 mb-1">
-                      <p className="text-[12.5px] font-semibold text-pfg truncate">{t.name}</p>
+                      <p className="text-[12px] font-semibold text-pfg truncate">{t.name}</p>
                       <p className="text-[11px] font-semibold text-pmuted flex-shrink-0 tabular-nums">
                         {t.correct}/{t.total} · {t.pct}%
                       </p>
@@ -316,7 +309,7 @@ export default function ResultsModal({
         )}
 
         {/* Savollar katakchalari (barcha savollar gridi — 10 ustunli ixcham va qulay tartib) */}
-        <div className="grid grid-cols-10 gap-1.5 sm:gap-2 mb-5 max-h-56 overflow-y-auto overscroll-contain p-0.5">
+        <div className="grid grid-cols-10 gap-1.5 sm:gap-2 mb-4 max-h-52 overflow-y-auto overscroll-contain p-0.5 relative z-10">
           {results.map((r, i) => (
             <button
               key={r.questionId}
@@ -325,8 +318,8 @@ export default function ResultsModal({
               className={`aspect-square rounded-full flex items-center justify-center text-[10.5px] sm:text-[11px] font-bold tabular-nums transition-all active:scale-90 shadow-2xs ${
                 r.status === 'correct'   ? 'bg-pprimary text-ponprimary shadow-xs' :
                 r.status === 'incorrect' ? 'bg-pdanger text-white shadow-xs'   :
-                r.status === 'pending'   ? 'bg-[rgb(var(--p-blue-rgb)/0.2)] text-pblue ring-1 ring-[rgb(var(--p-blue-rgb)/0.5)]' :
-                                           'bg-psurface text-pmuted'
+                r.status === 'pending'   ? 'bg-pcard text-pblue ring-1 ring-[rgb(var(--p-blue-rgb)/0.5)]' :
+                                           'bg-pcard text-pmuted hover:text-pfg'
               }`}
             >
               {i + 1}
@@ -339,7 +332,7 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={() => setShowCertificate(true)}
-            className="bg-pgold text-pongold font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm font-semibold shadow-xs cursor-pointer"
+            className="bg-pgold text-pongold font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-12 w-full items-center justify-center gap-2 text-sm shadow-xs cursor-pointer relative z-10"
           >
             <Award size={17} strokeWidth={1.75} />
             {tt('viewCertificate')}
@@ -354,9 +347,9 @@ export default function ResultsModal({
               const badge = (percent === 100 ? ACHIEVEMENTS.find((b) => b.id === 'perfectRun') : null) || ACHIEVEMENTS[0]
               useAchievementCelebrationStore.getState().triggerCelebration(badge)
             }}
-            className="bg-psurface text-pfg font-semibold hover:bg-[rgb(var(--p-surface-rgb)/0.8)] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm shadow-xs cursor-pointer"
+            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg cursor-pointer relative z-10"
           >
-            <Sparkles size={17} className="text-pgold" />
+            <Sparkles size={16} className="text-pgold" />
             <span>{tt('achViewCelebration')}</span>
           </button>
         )}
@@ -365,8 +358,8 @@ export default function ResultsModal({
           <button
             type="button"
             onClick={onOpenReview}
-            className={`font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 rounded-2xl mb-3 flex h-12 w-full items-center justify-center gap-2 text-sm shadow-xs ${
-              wrong > 0 ? 'bg-pdanger text-white shadow-md' : 'bg-pprimary text-ponprimary'
+            className={`font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-12 w-full items-center justify-center gap-2 text-sm shadow-xs relative z-10 ${
+              wrong > 0 ? 'bg-pdanger text-white shadow-xs' : 'bg-pprimary text-ponprimary'
             }`}
           >
             <BookOpen size={16} strokeWidth={1.75} />
@@ -374,46 +367,48 @@ export default function ResultsModal({
           </button>
         )}
 
-        <div className="flex gap-3">
+        <div className="flex gap-2.5 mb-2.5 relative z-10">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl flex h-11 flex-1 items-center justify-center gap-2 font-semibold shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
-            <RotateCcw size={16} strokeWidth={1.75} aria-hidden="true" />
+            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-2xl flex min-h-11 flex-1 items-center justify-center gap-2 text-xs font-bold shadow-2xs hover:text-pfg">
+            <RotateCcw size={15} strokeWidth={2} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl h-11 flex-[2] font-semibold shadow-xs">
+            className="bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl min-h-11 flex-[2] text-xs shadow-xs">
             {tt('finish')}
           </button>
         </div>
 
         {/* Natijani RASM qilib ulashish (#48) — Web Share → bot chat → matn fallback */}
-        <button
-          onClick={handleShareImage}
-          disabled={sharingImage}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
-          <ImageDown size={15} strokeWidth={1.75} />
-          {sharingImage ? '...' : tt('shareResultImage')}
-        </button>
-        {imageSentToBot && (
-          <p className="mt-2 text-center text-[11.5px] font-semibold text-pprimary animate-fadeIn">
-            {tt('shareResultImageSent')}
-          </p>
-        )}
+        <div className="flex flex-col gap-2 relative z-10">
+          <button
+            onClick={handleShareImage}
+            disabled={sharingImage}
+            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-2xl flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg disabled:opacity-50">
+            <ImageDown size={15} strokeWidth={1.75} />
+            {sharingImage ? '...' : tt('shareResultImage')}
+          </button>
+          {imageSentToBot && (
+            <p className="text-center text-[11.5px] font-semibold text-pprimary animate-fadeIn">
+              {tt('shareResultImageSent')}
+            </p>
+          )}
 
-        {/* Matn + referal link bilan ulashish */}
-        <button
-          onClick={() => {
-            const uid  = useAppStore.getState().user?.id
-            const lang = useAppStore.getState().settings.language
-            const streak = useAppStore.getState().streak
-            const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
-            shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid ?? '0'}`, text)
-          }}
-          className="bg-psurface text-pfg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none transition-all duration-150 rounded-2xl mt-3 flex h-11 w-full items-center justify-center gap-2 text-[13px] font-semibold text-pblue shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]">
-          <Share2 size={15} strokeWidth={1.75} />
-          {tt('shareResult')}
-        </button>
+          {/* Matn + referal link bilan ulashish */}
+          <button
+            onClick={() => {
+              const uid  = useAppStore.getState().user?.id
+              const lang = useAppStore.getState().settings.language
+              const streak = useAppStore.getState().streak
+              const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
+              shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid ?? '0'}`, text)
+            }}
+            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-2xl flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg">
+            <Share2 size={15} strokeWidth={1.75} />
+            {tt('shareResult')}
+          </button>
+        </div>
 
         {showCertificate && (
           <CertificateModal

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
-import { Loader2, GraduationCap, Info, Volume2 } from 'lucide-react'
+import { Loader2, Volume2 } from 'lucide-react'
 import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { explainQuestion, explainSessionQuestion, fetchStaticExplanation, TutorError } from '../../../shared/lib/tutor'
 import { api } from '../../../shared/api'
@@ -11,6 +11,7 @@ import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 
 export interface AiTutorSessionRef {
   sessionId: string
@@ -179,17 +180,23 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="upsell-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden"
+          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="#A855F7" height={360} />
+          <ModalMathGrid glowColor="theme" height={360} />
+          <ModalCloseButton onClick={handleClose} label={tt('close')} />
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+
+          {/* Minimalist Centered Header */}
+          <div className="text-center pt-0.5 px-12 mb-3 relative z-10">
+            <h3 id="upsell-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('premiumNeedTitle')}</h3>
+          </div>
+
           <div className="flex flex-col items-center text-center relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center mb-3">
+            <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mb-3">
               <PremiumIcon size={28} className="text-pwarning" />
             </div>
-            <p id="upsell-title" className="text-[17px] font-semibold text-pfg">{tt('premiumNeedTitle')}</p>
-            <p className="text-[13px] text-pmuted mt-1.5 mb-4 leading-snug">
+            <p className="text-[13px] text-pmuted mb-5 leading-snug max-w-xs">
               {tt('premiumNeedDesc')}
             </p>
             <button
@@ -197,14 +204,14 @@ export default function AiTutorModal({
                 handleClose()
                 openTelegramLink(`https://t.me/${config.botUsername}?start=premium`)
               }}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl font-semibold text-[14px] flex items-center justify-center gap-2 mb-2 shadow-md"
+              className="bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all w-full min-h-11 py-3 rounded-2xl text-[13.5px] flex items-center justify-center gap-2 mb-2.5 shadow-xs"
             >
               <PremiumIcon size={16} />
               {tt('buyPremium')}
             </button>
             <button
               onClick={handleClose}
-              className="w-full py-3 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted active:scale-[0.98] transition-transform shadow-xs"
+              className="w-full min-h-11 py-3 rounded-2xl bg-pcard text-[13px] font-semibold text-pmuted hover:text-pfg active:scale-[0.98] transition-all shadow-2xs"
             >
               {tt('cancel')}
             </button>
@@ -219,41 +226,43 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="static-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
+          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="#0066FF" height={360} />
+          <ModalMathGrid glowColor="theme" height={360} />
+          <ModalCloseButton onClick={handleClose} label={tt('close')} />
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-          <div className="flex items-center gap-2 mb-3 flex-shrink-0 relative z-10">
-            <div className="size-9 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
-              <Info size={17} className="text-pwarning" />
-            </div>
-            <p id="static-title" className="text-[15px] font-semibold text-pfg">{tt('staticExplainTitle')}</p>
+
+          {/* Minimalist Centered Header */}
+          <div className="text-center pt-0.5 px-12 mb-3.5 relative z-10 flex items-center justify-center gap-2">
+            <h3 id="static-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('staticExplainTitle')}</h3>
             <button
               onClick={(e) => {
                 e.stopPropagation()
                 speakExplanation(staticText)
               }}
               aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-              className="ml-auto size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
+              className="size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
             >
-              <Volume2 size={14} />
+              <Volume2 size={15} />
             </button>
           </div>
-          <div className="overflow-y-auto min-h-[60px] relative z-10">
+
+          <div className="overflow-y-auto min-h-[60px] relative z-10 bg-pcard rounded-2xl p-4 shadow-2xs">
             <p className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap">
               {staticText}
             </p>
           </div>
+
           {/* Soft upsell */}
           <button
             onClick={() => {
               setShowStatic(false)
               setShowUpsell(true)
             }}
-            className="mt-4 w-full py-2.5 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple text-[12.5px] font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform flex-shrink-0 shadow-xs relative z-10"
+            className="mt-3.5 w-full min-h-11 py-2.5 rounded-2xl bg-pcard text-ppurple hover:text-ppurple text-[12.5px] font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-all flex-shrink-0 shadow-2xs relative z-10"
           >
-            <PremiumIcon size={14} />
+            <PremiumIcon size={15} />
             {tt('staticExplainAiHint')}
           </button>
         </div>
@@ -266,17 +275,17 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="ai-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
+          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="#A855F7" height={360} />
+          <ModalMathGrid glowColor="theme" height={360} />
+          <ModalCloseButton onClick={handleClose} label={tt('close')} />
           <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-          <div className="flex items-center gap-2 mb-3 flex-shrink-0 relative z-10">
-            <div className="size-9 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center flex-shrink-0 shadow-2xs">
-              <GraduationCap size={17} className="text-ppurple" />
-            </div>
-            <p id="ai-title" className="text-[15px] font-semibold text-pfg">AI Tutor</p>
-            {aiBusy && <Loader2 size={15} className="text-ppurple animate-spin ml-auto" />}
+
+          {/* Minimalist Centered Header */}
+          <div className="text-center pt-0.5 px-12 mb-3.5 relative z-10 flex items-center justify-center gap-2">
+            <h3 id="ai-title" className="text-[17px] font-bold text-pfg tracking-tight">AI Ustoz</h3>
+            {aiBusy && <Loader2 size={15} className="text-pprimary animate-spin" />}
             {!aiBusy && aiText && (
               <button
                 onClick={(e) => {
@@ -284,13 +293,14 @@ export default function AiTutorModal({
                   speakExplanation(aiText)
                 }}
                 aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-                className="ml-auto size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-90 transition-all"
+                className="size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
               >
-                <Volume2 size={14} />
+                <Volume2 size={15} />
               </button>
             )}
           </div>
-          <div className="overflow-y-auto min-h-[80px]">
+
+          <div className="overflow-y-auto min-h-[80px] bg-pcard rounded-2xl p-4 shadow-2xs relative z-10">
             {aiText ? (
               <p className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap">{aiText}</p>
             ) : (

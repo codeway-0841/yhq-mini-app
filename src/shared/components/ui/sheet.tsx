@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { X } from 'lucide-react'
 import DialogOverlay from '../DialogOverlay'
 import ModalMathGrid from '../ModalMathGrid'
+import ModalCloseButton from '../ModalCloseButton'
 import { cn } from '@/shared/lib/cn'
 
 /**
@@ -41,7 +41,7 @@ function Sheet({
   zIndex,
   swipeToDismiss = true,
   dragHandleOnly = false,
-  glowColor = '#0066FF',
+  glowColor = 'theme',
 }: SheetProps) {
   const titleId = React.useId()
   if (!open) return null
@@ -58,7 +58,7 @@ function Sheet({
       <div
         className={cn(
           'relative z-10 w-full max-w-lg mx-auto',
-          'rounded-t-sheet bg-pcard shadow-2xl overflow-hidden',
+          'rounded-t-sheet bg-psurface shadow-2xl overflow-hidden',
           'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
           'max-h-[88dvh] overflow-y-auto',
           // Pastki safe-area MARKAZIY: DialogOverlay (position='bottom')
@@ -83,7 +83,7 @@ function Sheet({
 
 function SheetHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div data-drag-handle className={cn('flex flex-col gap-1 px-5 pb-3 pt-4 select-none', className)} {...props}>
+    <div data-drag-handle className={cn('flex flex-col gap-1 px-12 pb-3 pt-1 select-none text-center relative z-10', className)} {...props}>
       {children}
     </div>
   )
@@ -94,40 +94,27 @@ function SheetTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingEle
   return (
     <h2
       id={titleId}
-      className={cn('font-display text-[19px] font-semibold tracking-[-0.015em] text-pfg', className)}
+      className={cn('font-display text-[17px] font-bold tracking-tight text-pfg', className)}
       {...props}
     />
   )
 }
 
 function SheetDescription({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('text-[13.5px] text-pmuted', className)} {...props} />
+  return <p className={cn('text-[12.5px] text-pmuted', className)} {...props} />
 }
 
 function SheetBody({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('px-5 pb-5', className)} {...props} />
+  return <div className={cn('px-5 pb-5 relative z-10', className)} {...props} />
 }
 
 function SheetFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex flex-col gap-2 px-5 pb-5 pt-1', className)} {...props} />
+  return <div className={cn('flex flex-col gap-2 px-5 pb-5 pt-1 relative z-10', className)} {...props} />
 }
 
-/** O'ng yuqori burchakdagi yopish tugmasi — 44px target. */
+/** Yuqori chap burchakdagi Apple-uslubidagi yopish tugmasi */
 function SheetClose({ onClose, label = 'Yopish' }: { onClose: () => void; label?: string }) {
-  return (
-    <button
-      type="button"
-      onClick={onClose}
-      aria-label={label}
-      className={cn(
-        'absolute right-3 top-3 z-10 grid size-11 place-items-center rounded-xl text-pmuted',
-        'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-      )}
-    >
-      <X className="size-[18px]" />
-    </button>
-  )
+  return <ModalCloseButton onClick={onClose} label={label} />
 }
 
 export { Sheet, SheetHeader, SheetTitle, SheetDescription, SheetBody, SheetFooter, SheetClose }
