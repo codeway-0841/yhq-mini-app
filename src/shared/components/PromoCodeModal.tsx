@@ -72,13 +72,11 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
       <div className="relative w-full max-w-sm rounded-3xl bg-psurface p-6 shadow-2xl overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
-          <ModalMathGrid glow={false} height={360} />
-        </div>
-        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} className="absolute left-4 top-3.5" />
+        <ModalMathGrid glow={false} height={360} />
+        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} />
 
         {successData ? (
-          <div className="text-center py-4 relative z-10">
+          <div className="text-center py-4 relative z-10 px-4">
             <h3 className="text-lg font-bold text-pfg mb-2">
               {tt('promoCodeSuccessTitle')}
             </h3>
@@ -95,7 +93,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         ) : (
           <div className="relative z-10">
-            <h3 id="promo-code-title" className="text-lg font-bold text-pfg text-center mt-2 mb-1">
+            <h3 id="promo-code-title" className="text-lg font-bold text-pfg text-center mt-2 mb-1 px-8 select-none">
               {tt('promoCodeTitle')}
             </h3>
 

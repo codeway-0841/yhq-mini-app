@@ -207,16 +207,14 @@ export default function ResultsModal({
     <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
       <div className="relative w-full max-w-lg bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
-          <ModalMathGrid glow={false} height={420} />
-        </div>
+        <ModalMathGrid glow={false} height={420} />
+        <ModalCloseButton onClick={onFinish} label={tt('closeResults')} />
         {/* Drag handle */}
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="relative flex items-center justify-center min-h-10 mb-4 pt-0.5 px-12 z-10">
-          <ModalCloseButton onClick={onFinish} label={tt('closeResults')} className="absolute left-0 top-1/2 -translate-y-1/2" />
-          <h2 id="results-title" data-drag-handle className="text-[17px] font-bold text-pfg tracking-tight select-none text-center">
+        <div className="text-center mb-4 pt-0.5 px-12 relative z-10 select-none">
+          <h2 id="results-title" data-drag-handle className="text-[17px] font-bold text-pfg tracking-tight">
             {tt('results')}
           </h2>
         </div>

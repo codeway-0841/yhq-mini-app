@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { X } from 'lucide-react'
 import DialogOverlay from '../DialogOverlay'
 import ModalMathGrid from '../ModalMathGrid'
+import ModalCloseButton from '../ModalCloseButton'
 import { Button } from './button'
 import { cn } from '@/shared/lib/cn'
 
@@ -76,20 +76,9 @@ function DialogFooter({ className, ...props }: React.HTMLAttributes<HTMLDivEleme
   return <div className={cn('flex flex-col-reverse gap-2 p-5 pt-1 sm:flex-row sm:justify-end', className)} {...props} />
 }
 
-function DialogClose({ onClose, label = 'Yopish' }: { onClose: () => void; label?: string }) {
+function DialogClose({ onClose, label = 'Yopish', className }: { onClose: () => void; label?: string; className?: string }) {
   return (
-    <button
-      type="button"
-      onClick={onClose}
-      aria-label={label}
-      className={cn(
-        'absolute right-2 top-2 z-10 grid size-11 place-items-center rounded-xl text-pmuted',
-        'transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-      )}
-    >
-      <X className="size-[18px]" />
-    </button>
+    <ModalCloseButton onClick={onClose} label={label} className={className} />
   )
 }
 

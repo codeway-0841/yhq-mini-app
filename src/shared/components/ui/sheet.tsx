@@ -116,7 +116,7 @@ function SheetFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElemen
 
 /** Yuqori chap burchakdagi Apple-uslubidagi yopish tugmasi */
 function SheetClose({ onClose, label = 'Yopish', className }: { onClose: () => void; label?: string; className?: string }) {
-  return <ModalCloseButton onClick={onClose} label={label} className={cn('top-3.5 left-4', className)} />
+  return <ModalCloseButton onClick={onClose} label={label} className={className} />
 }
 
 export { Sheet, SheetHeader, SheetTitle, SheetDescription, SheetBody, SheetFooter, SheetClose }

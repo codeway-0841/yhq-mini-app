@@ -237,7 +237,7 @@ export default function SubscriptionModal({
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
           <ModalMathGrid glow={false} height={420} />
         </div>
-        {step === 'choose_plan' && <ModalCloseButton onClick={onClose} label="Yopish" className="top-3.5 left-4" />}
+        {step === 'choose_plan' && <ModalCloseButton onClick={onClose} label="Yopish" />}
         {/* Yuqori surish tutqichi (Drag Handle) */}
         <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
           <div data-drag-handle className="w-10 h-1 rounded-full bg-plineStrong" />
