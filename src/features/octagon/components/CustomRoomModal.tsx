@@ -74,7 +74,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
       <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 shadow-2xl relative overflow-hidden">
-        <ModalMathGrid glowColor="#A855F7" height={260} />
+        <ModalMathGrid glow={false} height={260} />
         <div className="relative z-10 space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between">

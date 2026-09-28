@@ -168,11 +168,13 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
     <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
       {celebrate && <Confetti count={50} />}
       <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-psurface px-5 pt-3 pb-5 shadow-2xl">
-        <ModalMathGrid glowColor="theme" height={320} />
-        <ModalCloseButton onClick={onClose} label={tt('spinClose')} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={320} />
+        </div>
         {/* Header */}
-        <div className="text-center mb-3 pt-0.5 px-12 relative z-10">
-          <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
+        <div className="relative flex items-center justify-center min-h-10 mb-3 pt-0.5 px-12 z-10">
+          <ModalCloseButton onClick={onClose} label={tt('spinClose')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+          <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg text-center">{tt('spinTitle')}</h2>
         </div>
 
         {/* ── G'ildirak Sahnasi ── */}

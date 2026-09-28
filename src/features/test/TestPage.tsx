@@ -632,15 +632,27 @@ export default function TestPage() {
           onOpenLesson={explanation ? () => navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } }) : undefined} />
       )}
 
-      <Sheet open={showMenu} onClose={() => setShowMenu(false)}>
-        <SheetHeader><SheetTitle>{tt('testMenu')}</SheetTitle></SheetHeader>
+      <Sheet open={showMenu} onClose={() => setShowMenu(false)} className="overflow-hidden">
         <SheetClose onClose={() => setShowMenu(false)} label={tt('pathClose')} />
-        <SheetBody className="space-y-2">
-          <Button variant="secondary" block onClick={() => { setShowMenu(false); setShowSettings(true) }}>
-            <SettingsIcon className="size-[18px]" />{tt('settingsTitle')}
+        <SheetHeader><SheetTitle>{tt('testMenu')}</SheetTitle></SheetHeader>
+        <SheetBody className="space-y-2.5 pt-1">
+          <Button
+            variant="secondary"
+            block
+            size="lg"
+            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-2xl active:scale-[0.98]"
+            onClick={() => { setShowMenu(false); setShowSettings(true) }}
+          >
+            <SettingsIcon className="size-5 text-pmuted mr-2" />{tt('settingsTitle')}
           </Button>
-          <Button variant="secondary" block onClick={handleYakunlash}>
-            {isFinished ? <BarChart2 /> : <Flag />}{tt(isFinished ? 'results' : 'finish')}
+          <Button
+            variant="secondary"
+            block
+            size="lg"
+            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-2xl active:scale-[0.98]"
+            onClick={handleYakunlash}
+          >
+            {isFinished ? <BarChart2 className="size-5 text-pmuted mr-2" /> : <Flag className="size-5 text-pmuted mr-2" />}{tt(isFinished ? 'results' : 'finish')}
           </Button>
         </SheetBody>
       </Sheet>

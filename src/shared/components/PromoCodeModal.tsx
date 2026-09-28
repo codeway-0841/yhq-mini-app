@@ -71,9 +71,11 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
       {successData && <Confetti />}
-      <div className="relative w-full max-w-sm rounded-2xl bg-psurface p-6 shadow-2xl overflow-hidden">
-        <ModalMathGrid glowColor="theme" height={360} />
-        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} />
+      <div className="relative w-full max-w-sm rounded-3xl bg-psurface p-6 shadow-2xl overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={360} />
+        </div>
+        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} className="absolute left-4 top-3.5" />
 
         {successData ? (
           <div className="text-center py-4 relative z-10">

@@ -21,8 +21,8 @@ export default function TestExplanation({ loading, text, lesson, language, onClo
   return (
     <Sheet onClose={onClose} className="flex max-h-[75dvh] flex-col overflow-visible">
       <div className="pointer-events-none absolute -top-8 right-5"><TestHelperAvatar /></div>
-      <SheetHeader className="shrink-0 pr-16"><SheetTitle>{tt('whyThis')}</SheetTitle></SheetHeader>
       <SheetClose onClose={onClose} label={tt('pathClose')} />
+      <SheetHeader className="shrink-0 px-12"><SheetTitle>{tt('whyThis')}</SheetTitle></SheetHeader>
       <SheetBody className="min-h-0 overflow-y-auto" aria-live="polite" aria-busy={loading}>
         {loading ? <p className="py-3 text-sm text-pmuted">{tt('loadingDots')}</p>
           : text ? <MarkdownExplanation content={text} />

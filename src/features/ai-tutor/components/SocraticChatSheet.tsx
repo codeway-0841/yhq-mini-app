@@ -181,7 +181,7 @@ export default function SocraticChatSheet({
         role="dialog"
         aria-modal="true"
       >
-        <ModalMathGrid glowColor="#A855F7" height={320} />
+        <ModalMathGrid glow={false} height={320} />
         {/* Drag handle */}
         <div className="relative z-10 w-10 h-1 bg-plineStrong rounded-full mx-auto my-2.5 shrink-0 select-none" />
 

@@ -183,13 +183,13 @@ export default function AiTutorModal({
           className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="theme" height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <ModalMathGrid glow={false} height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center pt-0.5 px-12 mb-3 relative z-10">
-            <h3 id="upsell-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('premiumNeedTitle')}</h3>
+          <div className="relative flex items-center justify-center min-h-10 px-12 mb-3 pt-0.5 z-10">
+            <ModalCloseButton onClick={handleClose} label={tt('close')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <h3 id="upsell-title" className="text-[17px] font-bold text-pfg tracking-tight text-center">{tt('premiumNeedTitle')}</h3>
           </div>
 
           <div className="flex flex-col items-center text-center relative z-10">
@@ -229,20 +229,20 @@ export default function AiTutorModal({
           className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="theme" height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <ModalMathGrid glow={false} height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center pt-0.5 px-12 mb-3.5 relative z-10 flex items-center justify-center gap-2">
-            <h3 id="static-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('staticExplainTitle')}</h3>
+          <div className="relative flex items-center justify-center min-h-10 px-12 mb-3.5 pt-0.5 z-10">
+            <ModalCloseButton onClick={handleClose} label={tt('close')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <h3 id="static-title" className="text-[17px] font-bold text-pfg tracking-tight text-center">{tt('staticExplainTitle')}</h3>
             <button
               onClick={(e) => {
                 e.stopPropagation()
                 speakExplanation(staticText)
               }}
               aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-              className="size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
+              className="absolute right-0 top-1/2 -translate-y-1/2 size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
             >
               <Volume2 size={15} />
             </button>
@@ -278,14 +278,16 @@ export default function AiTutorModal({
           className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
-          <ModalMathGrid glowColor="theme" height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <ModalMathGrid glow={false} height={360} />
+          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center pt-0.5 px-12 mb-3.5 relative z-10 flex items-center justify-center gap-2">
-            <h3 id="ai-title" className="text-[17px] font-bold text-pfg tracking-tight">AI Ustoz</h3>
-            {aiBusy && <Loader2 size={15} className="text-pprimary animate-spin" />}
+          <div className="relative flex items-center justify-center min-h-10 px-12 mb-3.5 pt-0.5 z-10">
+            <ModalCloseButton onClick={handleClose} label={tt('close')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <div className="flex items-center justify-center gap-2">
+              <h3 id="ai-title" className="text-[17px] font-bold text-pfg tracking-tight text-center">AI Ustoz</h3>
+              {aiBusy && <Loader2 size={15} className="text-pprimary animate-spin" />}
+            </div>
             {!aiBusy && aiText && (
               <button
                 onClick={(e) => {
@@ -293,7 +295,7 @@ export default function AiTutorModal({
                   speakExplanation(aiText)
                 }}
                 aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-                className="size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
+                className="absolute right-0 top-1/2 -translate-y-1/2 size-8 rounded-xl bg-pcard shadow-2xs flex items-center justify-center text-pmuted hover:text-pfg active:scale-95 transition-all"
               >
                 <Volume2 size={15} />
               </button>

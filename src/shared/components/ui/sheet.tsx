@@ -41,7 +41,7 @@ function Sheet({
   zIndex,
   swipeToDismiss = true,
   dragHandleOnly = false,
-  glowColor = 'theme',
+  glowColor: _glowColor,
 }: SheetProps) {
   const titleId = React.useId()
   if (!open) return null
@@ -67,12 +67,14 @@ function Sheet({
           className,
         )}
       >
-        <ModalMathGrid glowColor={glowColor} height={320} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
+          <ModalMathGrid glow={false} height={320} />
+        </div>
         {/* Tortish dastagi — sheet ekanini bildiradi (affordance) */}
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mt-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>
@@ -83,7 +85,7 @@ function Sheet({
 
 function SheetHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div data-drag-handle className={cn('flex flex-col gap-1 px-12 pb-3 pt-1 select-none text-center relative z-10', className)} {...props}>
+    <div data-drag-handle className={cn('relative z-10 flex flex-col items-center justify-center min-h-10 px-12 pb-3 pt-0.5 select-none text-center', className)} {...props}>
       {children}
     </div>
   )
@@ -113,8 +115,8 @@ function SheetFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElemen
 }
 
 /** Yuqori chap burchakdagi Apple-uslubidagi yopish tugmasi */
-function SheetClose({ onClose, label = 'Yopish' }: { onClose: () => void; label?: string }) {
-  return <ModalCloseButton onClick={onClose} label={label} />
+function SheetClose({ onClose, label = 'Yopish', className }: { onClose: () => void; label?: string; className?: string }) {
+  return <ModalCloseButton onClick={onClose} label={label} className={cn('top-3.5 left-4', className)} />
 }
 
 export { Sheet, SheetHeader, SheetTitle, SheetDescription, SheetBody, SheetFooter, SheetClose }

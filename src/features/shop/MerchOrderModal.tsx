@@ -63,12 +63,14 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
   return (
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title" backdropClassName="bg-black/60">
       <div className="relative w-full max-w-sm bg-psurface rounded-3xl px-5 pt-3 pb-5 shadow-2xl motion-safe:animate-premiumIn overflow-hidden">
-        <ModalMathGrid glowColor="theme" height={280} />
-        <ModalCloseButton onClick={busy ? () => {} : onClose} label={tt('close')} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={280} />
+        </div>
         <div className="relative z-10">
           {/* Minimalist Centered Header (ilova tiliday) */}
-          <div className="text-center mb-3 pt-0.5 px-12">
-            <h2 id="merch-order-title" className="text-[17px] font-bold text-pfg tracking-tight">
+          <div className="relative flex items-center justify-center min-h-10 mb-3 pt-0.5 px-12">
+            <ModalCloseButton onClick={busy ? () => {} : onClose} label={tt('close')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+            <h2 id="merch-order-title" className="text-[17px] font-bold text-pfg tracking-tight text-center">
               {tt('merchFormTitle')}
             </h2>
           </div>

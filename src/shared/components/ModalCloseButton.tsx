@@ -29,7 +29,7 @@ export function ModalCloseButton({
         'dark:bg-[#1E2530] dark:text-white dark:border-white/10 dark:shadow-[0_2px_12px_rgba(0,0,0,0.4)]',
         'transition-all duration-150 ease-out hover:scale-105 active:scale-95 cursor-pointer',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-        size === 'md' ? 'left-3.5 top-2.5 size-9' : 'left-3 top-2 size-8',
+        size === 'md' ? 'left-3.5 top-3 size-9' : 'left-3 top-2.5 size-8',
         className,
       )}
     >

@@ -25,7 +25,9 @@ export default function AntiCheatModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
       <div className="w-full max-w-sm rounded-3xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden">
-        <ModalMathGrid glowColor="theme" height={260} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={260} />
+        </div>
 
         <div className="relative z-10">
           <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mx-auto mb-3.5 text-pdanger">

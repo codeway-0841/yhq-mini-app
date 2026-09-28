@@ -66,8 +66,9 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
         )}
       >
         {/* Apple subtle blueprint/math grid background in header */}
-        <ModalMathGrid glowColor="theme" height={420} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
+          <ModalMathGrid glow={false} height={420} />
+        </div>
 
         {/* Top Drag Handle */}
         <div
@@ -76,7 +77,8 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
         />
 
         {/* Header Bar */}
-        <div className="relative z-10 flex items-center justify-center px-5 pt-1 pb-4">
+        <div className="relative z-10 flex items-center justify-center min-h-10 px-12 pt-0.5 pb-4">
+          <ModalCloseButton onClick={onClose} label={tt('close')} className="absolute left-4 top-1/2 -translate-y-1/2" />
           <h2
             id="appearance-modal-title"
             className="text-lg font-bold text-pfg tracking-tight text-center"

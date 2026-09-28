@@ -24,7 +24,7 @@ interface DialogProps {
 /** Sarlavha id'si — HAR dialog uchun unikal (nested modalda to'qnashmasin). */
 const DialogTitleIdContext = React.createContext<string | undefined>(undefined)
 
-function Dialog({ open = true, onClose, children, className, zIndex, glowColor = '#0066FF' }: DialogProps) {
+function Dialog({ open = true, onClose, children, className, zIndex, glowColor: _glowColor }: DialogProps) {
   const titleId = React.useId()
   if (!open) return null
   return (
@@ -39,7 +39,9 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor =
           className,
         )}
       >
-        <ModalMathGrid glowColor={glowColor} height={260} />
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={260} />
+        </div>
         {children}
       </div>
     </DialogOverlay>

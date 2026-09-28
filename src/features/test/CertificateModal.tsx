@@ -181,24 +181,28 @@ export default function CertificateModal({ score, total, percent, sample = false
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/60">
-      <div className="relative w-full max-w-lg rounded-3xl bg-psurface px-5 pt-3 pb-5 max-h-[92vh] overflow-y-auto flex flex-col items-center shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={420} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
+      <div className="relative w-full max-w-lg rounded-3xl bg-psurface px-5 pt-3 pb-5 max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+          <ModalMathGrid glow={false} height={420} />
+        </div>
 
-        {/* Title */}
-        <div className="relative z-10 text-center mb-3 pt-0.5 px-12">
-          <h2 id="certificate-title" className="text-[17px] font-bold text-pfg select-none">
+        {/* Pinned Header */}
+        <div className="relative z-10 w-full flex items-center justify-center min-h-10 mb-3 pt-0.5 px-12 shrink-0">
+          <ModalCloseButton onClick={onClose} label={tt('close')} className="absolute left-0 top-1/2 -translate-y-1/2" />
+          <h2 id="certificate-title" className="text-[17px] font-bold text-pfg select-none text-center">
             {lang === 'ru' ? 'Сертификат' : 'Sertifikat'}
           </h2>
           {sample && (
-            <span className="inline-block mt-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs">
+            <span className="ml-2 rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs shrink-0">
               {tt('certSampleBadge')}
             </span>
           )}
         </div>
 
-        {/* Direct High-Resolution Canvas Display */}
-        <div className="w-full rounded-2xl overflow-hidden shadow-2xs mb-3 bg-black/40 relative z-10">
+        {/* Scrollable Body */}
+        <div className="w-full flex-1 overflow-y-auto flex flex-col items-center min-h-0 relative z-10 pr-0.5">
+          {/* Direct High-Resolution Canvas Display */}
+          <div className="w-full rounded-2xl overflow-hidden shadow-2xs mb-3 bg-black/40">
           <canvas
             ref={canvasRef}
             className="w-full h-auto block object-contain select-none"
@@ -288,6 +292,7 @@ export default function CertificateModal({ score, total, percent, sample = false
             </p>
           </div>
         )}
+        </div>
       </div>
     </DialogOverlay>
   )

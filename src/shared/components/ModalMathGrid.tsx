@@ -23,7 +23,7 @@ export function hexToRgba(hex: string, alpha: number): string {
 export interface ModalMathGridProps {
   /** Markaziy/burchakdagi ambient glow rangi. 'theme' bo'lsa joriy tema rangi olinadi. 'none' bo'lsa glow bo'lmaydi */
   glowColor?: string
-  /** Glow yoqilgan/o'chirilgan (default: true) */
+  /** Glow yoqilgan/o'chirilgan (default: false — sof toza kataklar) */
   glow?: boolean
   /** Kataklar balandligi (default: 460px) */
   height?: number | string
@@ -33,12 +33,12 @@ export interface ModalMathGridProps {
 }
 
 /**
- * ModalMathGrid — Kivvi'ning signatura "kataklar" (Apple / Taphey 28px math grid + ambient glow)
+ * ModalMathGrid — Kivvi'ning signatura "kataklar" (Apple / Taphey 28px math grid)
  * foni. Barcha modal va pastki sheet'lar uchun yagona ko'rinish va o'lcham kafolatlaydi.
  */
 export const ModalMathGrid = memo(function ModalMathGrid({
-  glowColor = '#0066FF',
-  glow = true,
+  glowColor = 'none',
+  glow = false,
   height = 460,
   maskEnd = '95%',
   className,
