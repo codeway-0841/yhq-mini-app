@@ -1137,8 +1137,9 @@ export default function SnapSolveHub() {
 
       {/* ── MANUAL FORMULA / PROBLEM INPUT MODAL (CALCULATOR) ──── */}
       {isManualInputOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 text-pfg shadow-2xl space-y-4">
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
+          <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
+            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Calculator size={20} className="text-pprimary" />
@@ -1149,7 +1150,7 @@ export default function SnapSolveHub() {
               <button
                 type="button"
                 onClick={() => setIsManualInputOpen(false)}
-                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-psurface hover:text-pfg transition-colors"
+                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-pcard hover:text-pfg transition-colors"
               >
                 <X size={18} />
               </button>
@@ -1166,14 +1167,14 @@ export default function SnapSolveHub() {
               value={manualText}
               onChange={(e) => setManualText(e.target.value)}
               placeholder={language === 'ru' ? 'Например: 2x + 5 = 15, x = ?' : 'Masalan: 2x + 5 = 15, x = ?'}
-              className="w-full rounded-2xl bg-psurface p-3 text-base text-pfg placeholder:text-pmuted focus:outline-none focus:ring-2 focus:ring-pprimary resize-none"
+              className="w-full rounded-2xl bg-pcard p-3 text-base text-pfg placeholder:text-pmuted focus:outline-none focus:ring-2 focus:ring-pprimary resize-none shadow-2xs"
             />
 
             <div className="flex justify-end gap-2 pt-1">
               <button
                 type="button"
                 onClick={() => setIsManualInputOpen(false)}
-                className="px-4 py-2.5 rounded-xl bg-psurface text-xs font-semibold text-pmuted hover:text-pfg"
+                className="px-4 py-2.5 rounded-xl bg-pcard text-xs font-semibold text-pmuted hover:text-pfg shadow-2xs"
               >
                 {tt('close')}
               </button>
@@ -1192,9 +1193,10 @@ export default function SnapSolveHub() {
 
       {/* ── HISTORY MODAL ────────────────────────────────────────── */}
       {isHistoryOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 animate-in fade-in duration-200">
-          <div className="w-full max-w-sm max-h-[80vh] flex flex-col rounded-3xl bg-pcard p-5 text-pfg shadow-2xl">
-            <div className="flex items-center justify-between pb-3 border-b border-pline">
+        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
+          <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
+            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
+            <div className="flex items-center justify-between pb-3 border-b border-pline shrink-0">
               <div className="flex items-center gap-2">
                 <History size={18} className="text-pprimary" />
                 <h3 className="text-[15px] font-bold">
@@ -1204,7 +1206,7 @@ export default function SnapSolveHub() {
               <button
                 type="button"
                 onClick={() => setIsHistoryOpen(false)}
-                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-psurface hover:text-pfg"
+                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-pcard hover:text-pfg"
               >
                 <X size={18} />
               </button>

@@ -180,10 +180,11 @@ export default function CertificateModal({ score, total, percent, sample = false
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="certificate-title" className="animate-fadeIn" backdropClassName="bg-black/60">
-      <div className="relative w-full max-w-lg rounded-3xl bg-psurface px-5 pt-3 pb-5 max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="certificate-title" backdropClassName="bg-black/60">
+      <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={420} />
         <ModalCloseButton onClick={onClose} label={tt('close')} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Pinned Header */}
         <div className="text-center mb-3 pt-0.5 px-12 relative z-10 select-none shrink-0 flex items-center justify-center gap-2">

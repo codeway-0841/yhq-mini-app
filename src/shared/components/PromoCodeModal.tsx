@@ -69,11 +69,12 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="promo-code-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
+    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="promo-code-title" backdropClassName="bg-black/60">
       {successData && <Confetti />}
-      <div className="relative w-full max-w-sm rounded-3xl bg-psurface p-6 shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={360} />
         <ModalCloseButton onClick={onClose} label={tt('cancelExit')} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {successData ? (
           <div className="text-center py-4 relative z-10 px-4">
@@ -93,9 +94,11 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         ) : (
           <div className="relative z-10">
-            <h3 id="promo-code-title" className="text-lg font-bold text-pfg text-center mt-2 mb-1 px-8 select-none">
-              {tt('promoCodeTitle')}
-            </h3>
+            <div className="text-center mb-1 pt-0.5 px-12 select-none">
+              <h3 id="promo-code-title" className="text-lg font-bold text-pfg">
+                {tt('promoCodeTitle')}
+              </h3>
+            </div>
 
             <p className="text-xs text-pmuted text-center mb-5 leading-relaxed">
               {tt('promoCodeDesc')}

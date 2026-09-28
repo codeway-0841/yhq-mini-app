@@ -11,7 +11,7 @@
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, Flame, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle, X } from 'lucide-react'
+import { Zap, Flame, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle } from 'lucide-react'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { api, type DailyHistory } from '../../shared/api'
@@ -21,6 +21,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -236,27 +237,23 @@ export default function StreakPage() {
       {/* Qanday ishlaydi? — Alohida zamonaviy BottomSheet */}
       {showInfo && (
         <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title" swipeToDismiss>
-          <div className="relative w-full max-w-md mx-auto bg-pcard rounded-t-sheet px-5 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl animate-premiumIn overflow-hidden">
-            <ModalMathGrid glowColor="#F97316" height={360} />
-            <div data-drag-handle className="w-10 h-1 bg-pline rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+            <ModalMathGrid glow={false} height={360} />
+            <ModalCloseButton onClick={() => setShowInfo(false)} label={tt('close')} />
+            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
-            <div className="flex items-center justify-between mb-2 relative z-10">
-              <h2 id="streak-info-title" className="text-base font-bold text-pfg">
+            {/* Minimalist Centered Header */}
+            <div className="text-center mb-4 pt-0.5 px-12 relative z-10 select-none">
+              <h2 id="streak-info-title" className="text-[17px] font-bold text-pfg tracking-tight">
                 {tt('howItWorks')}
               </h2>
-              <button
-                type="button"
-                onClick={() => setShowInfo(false)}
-                aria-label={tt('close')}
-                className="grid size-7 place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors"
-              >
-                <X size={16} />
-              </button>
             </div>
 
-            <p className="text-xs text-psubtle leading-relaxed mb-4">
-              {tt('intizomDesc')}
-            </p>
+            <div className="rounded-2xl bg-pcard p-4 shadow-2xs relative z-10 space-y-3 mb-4">
+              <p className="text-xs text-psubtle leading-relaxed">
+                {tt('intizomDesc')}
+              </p>
+            </div>
 
             <div className="space-y-2.5 mb-5">
               {([

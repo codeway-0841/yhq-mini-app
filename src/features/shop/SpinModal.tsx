@@ -165,15 +165,16 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
   const busy = phase === 'requesting' || phase === 'spinning'
 
   return (
-    <DialogOverlay onClose={onClose} position="center" zIndex={60} className="animate-premiumIn">
+    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss zIndex={60} labelId="spin-title">
       {celebrate && <Confetti count={50} />}
-      <div className="relative w-[340px] max-w-[92vw] overflow-hidden rounded-3xl bg-psurface px-5 pt-3 pb-5 shadow-2xl">
-        <ModalMathGrid glow={false} height={320} />
+      <div className="relative w-full max-w-lg mx-auto overflow-hidden rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
+        <ModalMathGrid glow={false} height={360} />
         <ModalCloseButton onClick={onClose} label={tt('spinClose')} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Header */}
         <div className="text-center mb-3 pt-0.5 px-12 relative z-10 select-none">
-          <h2 className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
+          <h2 id="spin-title" className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
         </div>
 
         {/* ── G'ildirak Sahnasi ── */}

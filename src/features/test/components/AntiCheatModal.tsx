@@ -22,12 +22,11 @@ export default function AntiCheatModal({
   return (
     // QASDDAN DialogOverlay'siz: ogohlantirish faqat "Tushundim" tugmasi bilan yopiladi
     // (Escape/backdrop-yopish anti-cheat ogohlantirishini aylanib o'tishga yo'l qo'ymasligi shart)
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-premiumIn"
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-md animate-in slide-in-from-bottom duration-200"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
-      <div className="w-full max-w-sm rounded-3xl bg-psurface p-6 text-center shadow-2xl relative overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
-          <ModalMathGrid glow={false} height={260} />
-        </div>
+      <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-center shadow-2xl relative overflow-hidden">
+        <ModalMathGrid glow={false} height={280} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">
           <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mx-auto mb-3.5 text-pdanger">

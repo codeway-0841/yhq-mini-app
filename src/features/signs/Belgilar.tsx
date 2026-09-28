@@ -9,6 +9,7 @@ import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../shared/components/ModalCloseButton'
 
 function renderBoldText(str: string) {
   const parts = str.split(/(\*\*.*?\*\*)/g)
@@ -63,24 +64,18 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
   const legalRef = isRu ? `ПДД Приложение 1 ${sign.code}` : sign.legalRef
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title">
+    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title" swipeToDismiss>
       <div
-        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden"
+        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        <ModalMathGrid glowColor="#0066FF" height={320} />
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 relative z-10" />
-        <div className="flex items-center justify-between mb-4 relative z-10">
+        <ModalMathGrid glow={false} height={320} />
+        <ModalCloseButton onClick={onClose} label={isRu ? 'Закрыть' : 'Yopish'} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-xl shadow-2xs">
             {sign.code}
           </span>
-          <button
-            onClick={onClose}
-            className="size-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
-            aria-label={isRu ? 'Закрыть' : 'Yopish'}
-          >
-            <X size={16} />
-          </button>
         </div>
         <div className="size-40 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3 relative z-10">
           {sign.image ? (

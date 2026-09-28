@@ -61,10 +61,11 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
   }
 
   return (
-    <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="center" labelId="merch-order-title" backdropClassName="bg-black/60">
-      <div className="relative w-full max-w-sm bg-psurface rounded-3xl px-5 pt-3 pb-5 shadow-2xl motion-safe:animate-premiumIn overflow-hidden">
-        <ModalMathGrid glow={false} height={280} />
+    <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="bottom" swipeToDismiss labelId="merch-order-title" backdropClassName="bg-black/60">
+      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+        <ModalMathGrid glow={false} height={320} />
         <ModalCloseButton onClick={busy ? () => {} : onClose} label={tt('close')} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">
           {/* Minimalist Centered Header */}

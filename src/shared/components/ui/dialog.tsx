@@ -29,19 +29,24 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
   if (!open) return null
   return (
     <DialogTitleIdContext.Provider value={titleId}>
-    <DialogOverlay onClose={onClose} labelId={titleId} position="center" zIndex={zIndex}>
+    <DialogOverlay onClose={onClose} labelId={titleId} position="bottom" swipeToDismiss zIndex={zIndex}>
       <div
         className={cn(
-          'relative z-10 w-full max-w-sm',
-          'rounded-3xl bg-pcard shadow-2xl overflow-hidden',
-          'motion-safe:animate-in motion-safe:fade-in-0 motion-safe:zoom-in-95 motion-safe:duration-200',
-          'max-h-[85dvh] overflow-y-auto',
+          'relative z-10 w-full max-w-lg mx-auto',
+          'rounded-t-sheet bg-psurface shadow-2xl overflow-hidden',
+          'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
+          'pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[88dvh] overflow-y-auto',
           className,
         )}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-3xl z-0">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
           <ModalMathGrid glow={false} height={260} />
         </div>
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
         {children}
       </div>
     </DialogOverlay>
@@ -50,7 +55,7 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
 }
 
 function DialogHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex flex-col gap-1.5 p-5 pb-3', className)} {...props} />
+  return <div className={cn('flex flex-col items-center justify-center gap-1 px-12 pt-1 pb-3 text-center relative z-10', className)} {...props} />
 }
 
 function DialogTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
@@ -58,22 +63,22 @@ function DialogTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingEl
   return (
     <h2
       id={titleId}
-      className={cn('font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg', className)}
+      className={cn('font-display text-[17px] font-bold tracking-tight text-pfg', className)}
       {...props}
     />
   )
 }
 
 function DialogDescription({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) {
-  return <p className={cn('text-[13.5px] text-pmuted', className)} {...props} />
+  return <p className={cn('text-[13px] text-pmuted leading-relaxed', className)} {...props} />
 }
 
 function DialogBody({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('px-5 pb-4', className)} {...props} />
+  return <div className={cn('px-5 pb-4 relative z-10', className)} {...props} />
 }
 
 function DialogFooter({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex flex-col-reverse gap-2 p-5 pt-1 sm:flex-row sm:justify-end', className)} {...props} />
+  return <div className={cn('flex flex-col gap-2.5 px-5 pt-2 relative z-10', className)} {...props} />
 }
 
 function DialogClose({ onClose, label = 'Yopish', className }: { onClose: () => void; label?: string; className?: string }) {

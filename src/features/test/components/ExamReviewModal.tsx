@@ -64,13 +64,14 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="exam-review-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-xl bg-psurface rounded-3xl max-h-[90vh] flex flex-col overflow-hidden shadow-2xl">
+    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="exam-review-title" backdropClassName="bg-black/60">
+      <div className="relative w-full max-w-xl mx-auto bg-psurface rounded-t-sheet max-h-[90vh] flex flex-col overflow-hidden shadow-2xl pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <ModalMathGrid glow={false} height={420} />
         <ModalCloseButton onClick={onClose} label={tt('closeResults')} />
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="text-center pt-3 pb-2.5 px-12 relative z-10 select-none">
+        <div className="text-center pt-1 pb-2.5 px-12 relative z-10 select-none">
           <h3 id="exam-review-title" className="text-[17px] font-bold text-pfg tracking-tight">
             {tt('examReviewTitle')}
           </h3>

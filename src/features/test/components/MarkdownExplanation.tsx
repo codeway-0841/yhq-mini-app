@@ -1,8 +1,9 @@
 import { useState, useMemo, useEffect, useCallback } from 'react'
 import type { RoadSign } from '../../../content/signs'
-import { X, TrafficCone, ExternalLink } from 'lucide-react'
+import { TrafficCone, ExternalLink } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -62,22 +63,16 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/75 z-50" labelId="sign-detail-modal-title" swipeToDismiss>
       <div
-        className="relative w-full max-w-md max-h-[80vh] overflow-y-auto bg-psurface rounded-t-sheet p-5 pb-7 shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-150 overflow-hidden"
+        className="relative w-full max-w-lg max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl z-50 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={340} />
+        <ModalCloseButton onClick={onClose} label="Yopish" />
         <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-        <div className="flex items-center justify-between mb-3 relative z-10">
+        <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.1)] rounded-full">
             {sign.code}
           </span>
-          <button
-            onClick={onClose}
-            className="size-8 rounded-full bg-pcard shadow-xs flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
-            aria-label="Yopish"
-          >
-            <X size={16} />
-          </button>
         </div>
 
         <div className="size-36 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3">
