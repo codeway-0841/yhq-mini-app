@@ -91,8 +91,8 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
       {/* Header — fixed inset-0 sahifa (body padding tegmaydi) → .safe-top SHART */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-pline safe-top">
         <button onClick={onClose} aria-label={ru ? 'Закрыть' : 'Yopish'}
-          className="grid size-11 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-          <ChevronLeft size={20} strokeWidth={1.75} />
+          className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
+          <ChevronLeft size={22} strokeWidth={2.25} />
         </button>
         <span className="text-base font-semibold">{idx + 1}-{ru ? 'урок' : 'dars'}</span>
         <span className="text-xs font-semibold text-pmuted bg-psurface px-2.5 py-1 rounded-xl shadow-2xs">
@@ -355,8 +355,8 @@ export default function Darslik() {
       <header ref={headerRef} className="lg:hidden sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center justify-between mb-4">
         <div className="flex items-center gap-1.5">
           <button onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}
-            className="-ml-2 grid size-11 shrink-0 place-items-center rounded-xl text-pmuted transition-colors duration-150 ease-out hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-            <ChevronLeft size={20} strokeWidth={1.75} />
+            className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
+            <ChevronLeft size={22} strokeWidth={2.25} />
           </button>
           <h1 ref={headingRef} tabIndex={-1} className="font-display text-[22px] font-bold leading-tight tracking-tight text-pfg">
             {ru ? 'Учебник' : 'Darslik'}

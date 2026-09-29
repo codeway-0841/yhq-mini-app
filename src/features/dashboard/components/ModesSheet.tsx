@@ -38,7 +38,7 @@ export default function ModesSheet({ title, items, onClose }: {
             type="button"
             onClick={onClose}
             aria-label={tt('backWord')}
-            className="size-9 rounded-xl bg-psurface flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all"
+            className="size-12 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all"
           >
             <ArrowLeft size={20} strokeWidth={2} />
           </button>

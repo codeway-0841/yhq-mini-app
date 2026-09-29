@@ -131,13 +131,13 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                       : 'hover:shadow-xs'
                   )}
                 >
-                  <div className="w-full h-[88px] rounded-xl bg-psurface p-2 flex flex-col justify-between">
-                    <div className="w-full h-full rounded-lg bg-pcard p-2.5 shadow-2xs flex flex-col justify-between">
+                  <div className="w-full h-[88px] rounded-xl bg-[#E8EBF1] p-2 flex flex-col justify-between">
+                    <div className="w-full h-full rounded-lg bg-white p-2.5 shadow-2xs flex flex-col justify-between">
                       <div>
-                        <div className="w-12 h-2 rounded-full bg-pfg" />
-                        <div className="w-16 h-1 rounded-full bg-pmuted mt-1.5" />
+                        <div className="w-12 h-2 rounded-full bg-[#0F172A]" />
+                        <div className="w-16 h-1 rounded-full bg-[#94A3B8] mt-1.5" />
                       </div>
-                      <div className="w-8 h-1 rounded-full bg-plineStrong mt-auto" />
+                      <div className="w-8 h-1 rounded-full bg-[#CBD5E1] mt-auto" />
                     </div>
                   </div>
                   <div className="flex items-center justify-between mt-3 px-1">

@@ -658,8 +658,8 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         >
           <div className="mb-2 flex items-center gap-2">
             <p className="min-w-0 flex-1 text-xs font-medium text-pmuted">{position + 1} / {snapshot.total}</p>
-            <Button
-              variant="ghost" size="icon"
+            <button
+              type="button"
               onClick={() => {
                 if (isSpeaking()) stopSpeaking()
                 else speak(question.text, settings.language)
@@ -667,19 +667,19 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
               }}
               aria-label={speaking ? (isRu ? 'Остановить' : 'Ovozni to‘xtatish') : (isRu ? 'Озвучить вопрос' : 'Savolni o‘qib berish')}
               aria-pressed={speaking}
-              className={`flex-none ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
+              className={`grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
             >
-              {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={16} strokeWidth={1.75} />}
-            </Button>
-            <Button
-              variant="ghost" size="icon"
+              {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={18} strokeWidth={2} />}
+            </button>
+            <button
+              type="button"
               onClick={() => void toggleSave()}
               aria-label={savedPositions.has(position) ? (isRu ? 'Убрать из сохранённых' : 'Saqlanganlardan olish') : (isRu ? 'Сохранить' : 'Saqlash')}
               aria-pressed={savedPositions.has(position)}
-              className="flex-none"
+              className="grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white text-pmuted shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer"
             >
-              <Bookmark fill={savedPositions.has(position) ? 'currentColor' : 'none'} className={savedPositions.has(position) ? 'text-pwarning' : ''} />
-            </Button>
+              <Bookmark size={18} fill={savedPositions.has(position) ? 'currentColor' : 'none'} className={savedPositions.has(position) ? 'text-pwarning' : ''} />
+            </button>
           </div>
           <MathText as="p" text={question.text} className="mb-5 text-left font-display text-[18px] font-semibold leading-relaxed text-pfg" />
           {question.media && (

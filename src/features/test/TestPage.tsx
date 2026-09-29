@@ -463,9 +463,9 @@ export default function TestPage() {
     <div className="relative flex flex-col bg-pcanvas">
       <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
         <div className={`mx-auto flex w-full items-center justify-between gap-3 px-4 py-2 ${q.image ? 'max-w-6xl' : 'max-w-2xl'}`}>
-          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')} className="h-12 w-12 rounded-2xl [&_svg]:size-5">
+          <button type="button" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')} className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5">
             {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
-          </Button>
+          </button>
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
               <Timer size={16} className={timerIconTone} aria-hidden="true" />
@@ -479,9 +479,9 @@ export default function TestPage() {
               </span>
             )}
           </div>
-          <Button variant="secondary" size="icon" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="h-12 w-12 rounded-2xl [&_svg]:size-5">
+          <button type="button" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5">
             <MoreHorizontal />
-          </Button>
+          </button>
         </div>
       </div>
 
@@ -522,7 +522,7 @@ export default function TestPage() {
                 {current + 1} / {activeQuestions.length}
                 {topicLabel ? ` · ${topicLabel}` : ''}
               </p>
-              <Button variant="secondary" size="icon"
+              <button type="button"
                 onClick={(e) => {
                   e.stopPropagation()
                   if (isSpeaking()) stopSpeaking()
@@ -531,13 +531,14 @@ export default function TestPage() {
                 }}
                 aria-label={tt(speaking ? 'stopReading' : 'readQuestion')}
                 aria-pressed={speaking}
-                className={`flex-none ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
+                className={`grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
               >
-                {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={16} strokeWidth={1.75} />}
-              </Button>
-              <Button variant="ghost" size="icon" onClick={() => toggleSaved(q.id)} aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')} aria-pressed={isSaved}>
-                <Bookmark fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
-              </Button>
+                {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={18} strokeWidth={2} />}
+              </button>
+              <button type="button" onClick={() => toggleSaved(q.id)} aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')} aria-pressed={isSaved}
+                className="grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white text-pmuted shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer">
+                <Bookmark size={18} fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
+              </button>
             </div>
             <MathText
               as="p"

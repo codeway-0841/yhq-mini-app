@@ -243,9 +243,9 @@ export default function AiTutorModal({
                   speakExplanation(staticText)
                 }}
                 aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-                className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
               >
-                <Volume2 size={16} />
+                <Volume2 size={18} />
               </button>
             )}
           >
@@ -297,9 +297,9 @@ export default function AiTutorModal({
                   speakExplanation(aiText)
                 }}
                 aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-                className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
               >
-                <Volume2 size={16} />
+                <Volume2 size={18} />
               </button>
             ) : undefined}
           >

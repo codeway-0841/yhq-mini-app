@@ -7,7 +7,6 @@ import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { useT } from '../../../shared/i18n'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { transitionTheme } from '../../../shared/lib/theme-transition'
-import { Button } from '../../../shared/components/ui/button'
 import CoinIcon from '../../../shared/components/CoinIcon'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -122,20 +121,18 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
           </div>
 
           {/* Dark / Light rejim toggle tugmasi */}
-          {/* Dark / Light rejim toggle tugmasi */}
-          <Button
-            variant="ghost"
-            size="icon"
+          <button
+            type="button"
             onClick={toggleTheme}
             aria-label={isDark ? 'Light mode' : 'Dark mode'}
-            className="theme-toggle-btn text-pmuted hover:text-pfg transition-colors"
+            className="theme-toggle-btn grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
           >
             {isDark ? (
-              <Moon size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />
+              <Moon size={20} strokeWidth={2} />
             ) : (
-              <Sun size={18} strokeWidth={1.75} className="text-pmuted hover:text-pfg" />
+              <Sun size={20} strokeWidth={2} />
             )}
-          </Button>
+          </button>
         </div>
       </div>
     </header>

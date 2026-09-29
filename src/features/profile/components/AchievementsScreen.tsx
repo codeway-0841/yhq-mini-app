@@ -170,9 +170,9 @@ export default function AchievementsScreen({
             type="button"
             onClick={onClose}
             aria-label={tt('backWord')}
-            className="size-10 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
+            className="size-12 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
           >
-            <ArrowLeft size={18} strokeWidth={2.4} />
+            <ArrowLeft size={20} strokeWidth={2.25} />
           </button>
 
           <h2 id="ach-screen-title" className="text-[17px] font-bold text-gray-900 dark:text-white tracking-tight">

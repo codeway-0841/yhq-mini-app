@@ -360,10 +360,10 @@ export default function SubscriptionModal({
               <button
                 type="button"
                 onClick={() => setStep('choose_plan')}
-                className="size-10 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
+                className="size-12 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
                 aria-label={tt('backWord')}
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={22} strokeWidth={2.25} />
               </button>
               <h2 className="min-w-0 flex-1 text-[17px] font-bold tracking-tight text-pfg text-center">
                 {tt('selectPaymentTitle')}

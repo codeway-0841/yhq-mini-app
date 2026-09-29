@@ -388,9 +388,9 @@ function ReaderHeader({ title, subtitle, onBack, backLabel, action }: {
         type="button"
         onClick={onBack}
         aria-label={backLabel}
-        className="grid size-10 shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+        className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
       >
-        <ChevronLeft size={20} strokeWidth={1.75} />
+        <ChevronLeft size={22} strokeWidth={2.25} />
       </button>
       <div className="min-w-0 flex-1">
         <h1 className="truncate text-[15px] font-bold text-pfg">{title}</h1>
