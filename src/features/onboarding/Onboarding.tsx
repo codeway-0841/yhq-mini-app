@@ -97,8 +97,8 @@ function SubjectStep({ onNext, onBack }: { onNext: () => void; onBack: () => voi
   return (
     <Screen>
       <button type="button" onClick={onBack} aria-label={tt('obBack')}
-        className="flex size-11 shrink-0 items-center justify-center self-start rounded-xl text-pmuted transition-colors hover:bg-pcard hover:text-pfg active:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-        <ChevronLeft size={24} />
+        className="flex size-12 shrink-0 items-center justify-center self-start rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
+        <ChevronLeft size={22} strokeWidth={2.25} />
       </button>
       <div className="mb-[clamp(0.75rem,3dvh,1.5rem)] mt-1 shrink-0">
         <GreenTitle>{tt('obSubjectA')} <span className="text-pprimary">{tt('obSubjectB')}</span><br />{tt('obSubjectC')}</GreenTitle>
@@ -177,8 +177,8 @@ function GoalStep({ onDone, onBack }: { onDone: (goal: string) => void; onBack: 
   return (
     <Screen>
       <button type="button" onClick={onBack} aria-label={tt('obBack')}
-        className="flex size-11 shrink-0 items-center justify-center self-start rounded-xl text-pmuted transition-colors hover:bg-pcard hover:text-pfg active:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-        <ChevronLeft size={24} />
+        className="flex size-12 shrink-0 items-center justify-center self-start rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
+        <ChevronLeft size={22} strokeWidth={2.25} />
       </button>
       <div className="mb-[clamp(0.75rem,3dvh,1.5rem)] mt-1 shrink-0">
         <GreenTitle>{tt('obGoalA')}<br />{tt('obGoalB')}</GreenTitle>

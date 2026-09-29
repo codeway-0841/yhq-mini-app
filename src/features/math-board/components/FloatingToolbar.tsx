@@ -45,7 +45,7 @@ function ToolButton({ active, disabled, onClick, label, children }: {
       aria-label={label}
       aria-pressed={active}
       className={cn(
-        'grid size-11 place-items-center rounded-2xl shadow-md transition-colors',
+        'grid size-11 place-items-center rounded-full shadow-md transition-colors',
         'disabled:opacity-30 disabled:pointer-events-none',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
         active ? 'bg-pprimary text-white' : 'bg-pcard text-pmuted',

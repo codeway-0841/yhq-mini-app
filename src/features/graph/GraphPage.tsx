@@ -594,7 +594,7 @@ export default function GraphPage() {
               onClick={undo}
               disabled={history.length === 0}
               aria-label={tt('graphUndo')}
-              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="grid size-10 place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <Undo2 size={18} strokeWidth={1.75} />
             </button>
@@ -603,7 +603,7 @@ export default function GraphPage() {
               onClick={redo}
               disabled={future.length === 0}
               aria-label={tt('graphRedo')}
-              className="grid size-10 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="grid size-10 place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pfg disabled:opacity-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <Redo2 size={18} strokeWidth={1.75} />
             </button>
@@ -670,7 +670,7 @@ export default function GraphPage() {
               type="button"
               onClick={resetViewport}
               aria-label={tt('graphResetView')}
-              className="absolute right-2 top-2 grid size-9 place-items-center rounded-xl bg-pcard text-pmuted shadow-xs transition-colors hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="absolute right-2 top-2 grid size-9 place-items-center rounded-full bg-pcard text-pmuted shadow-xs transition-colors hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <RotateCcw size={16} strokeWidth={1.75} />
             </button>

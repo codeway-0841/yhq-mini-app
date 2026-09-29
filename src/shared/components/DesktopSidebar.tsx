@@ -164,7 +164,7 @@ export default function DesktopSidebar() {
         <div className={cn('flex items-center gap-2.5 px-4 pb-3 pt-3.5', collapsed && 'flex-col gap-2 px-2')}>
           <span
             aria-hidden="true"
-            className="grid size-8 place-items-center rounded-xl bg-pprimary text-base font-bold text-ponprimary shadow-xs"
+            className="grid size-8 place-items-center rounded-full bg-pprimary text-base font-bold text-ponprimary shadow-xs"
           >
             K
           </span>
@@ -175,7 +175,7 @@ export default function DesktopSidebar() {
             aria-label={collapsed ? tt('sidebarExpand') : tt('sidebarCollapse')}
             aria-expanded={!collapsed}
             title={collapsed ? tt('sidebarExpand') : tt('sidebarCollapse')}
-            className="grid size-8 shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
+            className="grid size-8 shrink-0 place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
           >
             {collapsed ? <PanelLeftOpen size={18} /> : <PanelLeftClose size={18} />}
           </button>

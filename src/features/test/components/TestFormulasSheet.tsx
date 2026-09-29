@@ -130,7 +130,7 @@ export default function TestFormulasSheet({
             <button
               type="button"
               onClick={() => setSearch('')}
-              className="absolute right-2.5 top-1/2 -translate-y-1/2 text-pmuted hover:text-pfg p-1"
+              className="absolute right-2 top-1/2 -translate-y-1/2 grid size-7 place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors"
             >
               <X size={14} />
             </button>

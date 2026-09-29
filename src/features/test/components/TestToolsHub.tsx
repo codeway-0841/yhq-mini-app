@@ -175,7 +175,7 @@ export default function TestToolsHub({
           aria-expanded={menuOpen}
           aria-haspopup="menu"
           title={tt('testTools')}
-          className={`grid size-11 place-items-center rounded-xl transition-all active:scale-95 ${
+          className={`grid size-11 place-items-center rounded-full transition-all active:scale-95 ${
             menuOpen
               ? 'bg-pprimary text-ponprimary ring-2 ring-white/40 ring-inset shadow-md shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)]'
               : 'bg-psurface text-pprimary hover:bg-pcard hover:text-pfg'
@@ -194,7 +194,7 @@ export default function TestToolsHub({
           }}
           aria-label={tt('drawingOpen')}
           title={tt('toolDrawing')}
-          className="grid size-11 place-items-center rounded-xl bg-pprimary text-ponprimary shadow-lg shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)] hover:brightness-110 active:scale-95 transition-all"
+          className="grid size-11 place-items-center rounded-full bg-pprimary text-ponprimary shadow-lg shadow-[0_4px_14px_rgb(var(--p-primary-rgb)/0.35)] hover:brightness-110 active:scale-95 transition-all"
         >
           <PenLine size={20} />
         </button>

@@ -395,7 +395,7 @@ export default function WonderCreateView() {
             <button
               type="button"
               onClick={() => setFlowState('step2_goal')}
-              className="p-1.5 rounded-xl border border-[#DCD6CA] dark:border-stone-700 bg-[#FAF8F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300 shadow-[0_2px_0_0_#DCD6CA] dark:shadow-[0_2px_0_0_#292524] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer"
+              className="p-1.5 rounded-full border border-[#DCD6CA] dark:border-stone-700 bg-[#FAF8F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300 shadow-[0_2px_0_0_#DCD6CA] dark:shadow-[0_2px_0_0_#292524] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer"
             >
               <ChevronLeft size={18} />
             </button>

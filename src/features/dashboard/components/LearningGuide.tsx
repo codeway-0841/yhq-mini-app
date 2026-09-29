@@ -96,7 +96,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
     <div className="home-learning-guide px-4 pb-3">
       <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
         <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
-          <div className="grid size-9 place-items-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
+          <div className="grid size-9 place-items-center rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400">
             <BookOpen size={19} strokeWidth={2} />
           </div>
           <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('dashboardLearn')}</span>
@@ -108,14 +108,14 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           aria-label={tt('lessons')}
           className={`home-learning-shortcut ${interactive}`}
         >
-          <div className="grid size-9 place-items-center rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400">
+          <div className="grid size-9 place-items-center rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
             <GraduationCap size={19} strokeWidth={2} />
           </div>
           <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('lessons')}</span>
           <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideLessonsShort')}</span>
         </button>
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
-          <div className="grid size-9 place-items-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+          <div className="grid size-9 place-items-center rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
             <Ticket size={19} strokeWidth={2} />
           </div>
           <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('tickets')}</span>
@@ -127,7 +127,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           aria-label={tt('adaptiveTitle')}
           className={`home-learning-shortcut ${interactive}`}
         >
-          <div className="grid size-9 place-items-center rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400">
+          <div className="grid size-9 place-items-center rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400">
             <Brain size={19} strokeWidth={2} />
           </div>
           <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('adaptiveTitle')}</span>

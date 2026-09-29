@@ -129,8 +129,8 @@ export default function SearchPage() {
           />
           {query && (
             <button onClick={() => setQuery('')} aria-label={tt('clearSearch')}
-              className="text-pmuted hover:text-pfg p-1">
-              <X size={16} />
+              className="text-pmuted hover:text-pfg grid size-7 shrink-0 place-items-center rounded-full hover:bg-psurface transition-colors cursor-pointer">
+              <X size={14} />
             </button>
           )}
         </div>

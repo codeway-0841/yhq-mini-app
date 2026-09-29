@@ -146,7 +146,7 @@ function DrawingToolbar({
               onClick={() => onColorChange(item.value)}
               aria-label={tt(item.key)}
               aria-pressed={color === item.value}
-              className={`grid size-11 place-items-center rounded-xl bg-white/10 transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+              className={`grid size-11 place-items-center rounded-full bg-white/10 transition-transform active:scale-95 hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
                 color === item.value ? 'ring-2 ring-pprimary ring-offset-2 ring-offset-slate-900 bg-white/20' : ''
               }`}
             >
@@ -184,7 +184,7 @@ function DrawingToolbar({
             disabled={drawing.undo.length === 0}
             aria-label={tt('drawingUndo')}
             title={tt('drawingUndo')}
-            className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
+            className="grid size-10 place-items-center rounded-full bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
           >
             <Undo2 size={18} />
           </button>
@@ -194,7 +194,7 @@ function DrawingToolbar({
             disabled={drawing.redo.length === 0}
             aria-label={tt('drawingRedo')}
             title={tt('drawingRedo')}
-            className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
+            className="grid size-10 place-items-center rounded-full bg-white/10 hover:bg-white/20 text-white disabled:opacity-25 active:scale-95 transition-all"
           >
             <Redo2 size={18} />
           </button>
@@ -216,7 +216,7 @@ function DrawingToolbar({
               onClick={onToggleVisibility}
               aria-label={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
               title={tt(visible ? 'toolEyeHide' : 'toolEyeShow')}
-              className={`grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 active:scale-95 transition-all ${!visible ? 'text-amber-400' : 'text-white'}`}
+              className={`grid size-10 place-items-center rounded-full bg-white/10 hover:bg-white/20 active:scale-95 transition-all ${!visible ? 'text-amber-400' : 'text-white'}`}
             >
               {visible ? <Eye size={18} /> : <EyeOff size={18} />}
             </button>
@@ -232,7 +232,7 @@ function DrawingToolbar({
                 onClick={onFormulas}
                 aria-label={tt('toolFormulas')}
                 title={tt('toolFormulas')}
-                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
+                className="grid size-10 place-items-center rounded-full bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
               >
                 <BookOpen size={18} />
               </button>
@@ -243,7 +243,7 @@ function DrawingToolbar({
                 onClick={onCalculator}
                 aria-label={tt('toolCalculator')}
                 title={tt('toolCalculator')}
-                className="grid size-10 place-items-center rounded-xl bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
+                className="grid size-10 place-items-center rounded-full bg-white/10 hover:bg-white/20 text-pprimary hover:text-white active:scale-95 transition-all"
               >
                 <Calculator size={18} />
               </button>
@@ -253,7 +253,7 @@ function DrawingToolbar({
                 type="button"
                 onClick={onScratchpad}
                 aria-label={tt('drawingScratchpad')}
-                className="flex items-center h-10 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3 active:scale-95 transition-all gap-1.5"
+                className="flex items-center h-10 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/15 px-3 active:scale-95 transition-all gap-1.5"
               >
                 <NotebookPen size={18} />
                 <span className="hidden min-[410px]:inline text-xs font-semibold">{tt('drawingScratchpad')}</span>

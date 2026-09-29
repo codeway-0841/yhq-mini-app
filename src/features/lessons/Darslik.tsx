@@ -435,7 +435,7 @@ export default function Darslik() {
                 onClick={() => practiceModule(item)}
                 onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); practiceModule(item) } }}
                 title={ru ? 'Практика модуля' : 'Modul mashqi'}
-                className="lesson-module-notebook hidden lg:grid size-10 place-items-center rounded-xl text-pmuted hover:text-pfg transition-colors cursor-pointer"
+                className="lesson-module-notebook hidden lg:grid size-10 place-items-center rounded-full text-pmuted hover:text-pfg transition-colors cursor-pointer"
               >
                 <BookOpen size={18} strokeWidth={1.75} />
               </div>

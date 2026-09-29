@@ -52,7 +52,7 @@ export default function WonderHeader({
               type="button"
               onClick={() => goBack(navigate)}
               aria-label="Orqaga"
-              className="p-2 rounded-xl bg-stone-100 dark:bg-stone-800/70 text-stone-800 dark:text-stone-200 border border-stone-300 dark:border-stone-700 active:scale-95 transition-all shrink-0"
+              className="p-2 rounded-full bg-stone-100 dark:bg-stone-800/70 text-stone-800 dark:text-stone-200 border border-stone-300 dark:border-stone-700 active:scale-95 transition-all shrink-0"
             >
               <ArrowLeft size={18} />
             </button>

@@ -221,7 +221,7 @@ export default function LibraryReaderPage() {
       <div className="fixed inset-0 z-50 flex flex-col bg-pcanvas text-pfg">
         <ReaderHeader title={tt('library')} subtitle={tt('libraryBookNotFound')} onBack={closeReader} backLabel={tt('backWord')} />
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
-          <div className="grid size-16 place-items-center rounded-2xl bg-psurface text-pmuted">
+          <div className="grid size-16 place-items-center rounded-full bg-psurface text-pmuted">
             <BookOpen size={28} strokeWidth={1.5} />
           </div>
           <p className="text-sm text-pmuted">{tt('libraryBookNotFound')}</p>
@@ -286,7 +286,7 @@ export default function LibraryReaderPage() {
       <div ref={viewportRef} className="relative min-h-0 flex-1">
         {status === 'loading' ? (
           <div role="status" className="flex h-full flex-col items-center justify-center gap-4 px-8 text-center">
-            <div className="grid size-14 place-items-center rounded-2xl bg-psurface text-pprimary shadow-sm">
+            <div className="grid size-14 place-items-center rounded-full bg-psurface text-pprimary shadow-sm">
               <Loader2 className="animate-spin" size={26} strokeWidth={1.75} />
             </div>
             <div>
@@ -306,7 +306,7 @@ export default function LibraryReaderPage() {
           </div>
         ) : status === 'error' ? (
           <div role="alert" className="flex h-full flex-col items-center justify-center gap-4 px-7 text-center">
-            <div className="grid size-16 place-items-center rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger">
+            <div className="grid size-16 place-items-center rounded-full bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger">
               <BookOpen size={28} strokeWidth={1.5} />
             </div>
             <div className="max-w-sm">

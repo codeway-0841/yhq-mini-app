@@ -31,6 +31,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 
 interface AdminBroadcastTabProps {
   lang: 'uz' | 'ru'
@@ -698,12 +699,14 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
       {/* Confirmation Modal */}
       {confirmOpen && (
         <DialogOverlay onClose={() => setConfirmOpen(false)} position="center" zIndex={60} labelId="broadcast-confirm-title" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 space-y-4 shadow-2xl text-center relative">
+          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 pt-4 space-y-4 shadow-2xl text-center relative">
+            <ModalHeaderRow onClose={() => setConfirmOpen(false)} label="Yopish">
+              <h3 id="broadcast-confirm-title" className="text-base font-semibold text-pfg">Ommaviy xabarni tasdiqlaysizmi?</h3>
+            </ModalHeaderRow>
             <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.2)] border border-[rgb(var(--p-purple-rgb)/0.4)] flex items-center justify-center mx-auto text-ppurple">
               <Send size={26} />
             </div>
             <div>
-              <h3 id="broadcast-confirm-title" className="text-base font-semibold text-pfg">Ommaviy xabarni tasdiqlaysizmi?</h3>
               <p className="text-xs text-pmuted mt-1 leading-relaxed">
                 Ushbu xabar <strong className="text-pfg">{TARGET_LABELS[target].title}</strong> guruhidagi{' '}
                 <strong className="text-ppurple">{targetCount} ta</strong> foydalanuvchiga Telegram bot orqali yuboriladi.

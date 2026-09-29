@@ -1,4 +1,4 @@
-import DialogOverlay from '../../../shared/components/DialogOverlay'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import StepList from './StepList'
 import type { AcceptedStep } from '../hooks/useBoardSession'
 import type { Keys } from '../../../shared/i18n'
@@ -21,10 +21,11 @@ export default function SolutionSheet({
   problemLatex, steps, title, closeLabel, statusLabel, onClose,
 }: SolutionSheetProps) {
   return (
-    <DialogOverlay onClose={onClose} position="bottom" labelId="solution-sheet-title">
-      <span id="solution-sheet-title" className="sr-only">{title}</span>
-      <div className="flex max-h-[75vh] flex-col gap-2.5 overflow-y-auto p-4">
-        <p className="text-[15px] font-bold text-pfg">{title}</p>
+    <Sheet onClose={onClose}>
+      <SheetHeader onClose={onClose} closeLabel={closeLabel}>
+        <SheetTitle>{title}</SheetTitle>
+      </SheetHeader>
+      <SheetBody className="flex flex-col gap-2.5">
         <StepList problemLatex={problemLatex} steps={steps} statusLabel={statusLabel} />
         <button
           type="button"
@@ -33,7 +34,7 @@ export default function SolutionSheet({
         >
           {closeLabel}
         </button>
-      </div>
-    </DialogOverlay>
+      </SheetBody>
+    </Sheet>
   )
 }

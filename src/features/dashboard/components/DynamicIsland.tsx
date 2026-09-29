@@ -13,6 +13,7 @@ import {
   Play,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -56,10 +57,12 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
   if (stats) return <AchievementsScreen stats={stats} tt={tt} onClose={onClose} />
   return (
     <DialogOverlay onClose={onClose} labelId={titleId} position="center">
-      <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 text-pfg shadow-xl">
-        <h2 id={titleId} className="mb-4 text-lg font-semibold">
-          {tt('achTitle')}
-        </h2>
+      <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 text-pfg shadow-xl">
+        <ModalHeaderRow onClose={onClose} label={tt('close')}>
+          <h2 id={titleId} className="text-lg font-semibold">
+            {tt('achTitle')}
+          </h2>
+        </ModalHeaderRow>
         <p role="status" className="text-sm text-pmuted">
           {failed || !userId
             ? lang === 'ru'

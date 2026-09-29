@@ -9,7 +9,6 @@ import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 const ClickLogo = memo(function ClickLogo({ className }: { className?: string }) {
@@ -161,9 +160,9 @@ export default function PaymentMethodModal({
           className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         <div className="relative z-10">
-        {/* Header */}
-        <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} className="border-b border-pline">
-          <div className="mx-auto mb-2 grid size-10 place-items-center rounded-2xl bg-psurface text-pgold shadow-2xs">
+        {/* Header (X'siz — yopish CTA tugmalar orqali) */}
+        <div className="px-4 pb-4 border-b border-pline text-center">
+          <div className="mx-auto mb-2 grid size-10 place-items-center rounded-full bg-psurface text-pgold shadow-2xs">
             <Sparkles size={18} strokeWidth={1.75} />
           </div>
           <h2 id="payment-method-title" className="text-base font-semibold">
@@ -172,7 +171,7 @@ export default function PaymentMethodModal({
           <p className="text-xs text-pmuted">
             {lang === 'ru' ? plan.titleRu : plan.titleUz} ({lang === 'ru' ? plan.periodRu : plan.periodUz})
           </p>
-        </ModalHeaderRow>
+        </div>
 
         {/* Success View */}
         {isSuccess ? (

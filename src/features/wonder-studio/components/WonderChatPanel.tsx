@@ -284,7 +284,7 @@ export default function WonderChatPanel({ course, activeLesson }: WonderChatPane
             }}
             title="Reset conversation"
             aria-label="Reset conversation"
-            className="p-2 rounded-xl text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+            className="p-2 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
           >
             <RotateCcw size={15} />
           </button>
@@ -293,7 +293,7 @@ export default function WonderChatPanel({ course, activeLesson }: WonderChatPane
             onClick={() => setChatOpen(false)}
             title="Close AI Tutor"
             aria-label="Close AI Tutor"
-            className="p-2 rounded-xl text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+            className="p-2 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
           >
             <X size={18} />
           </button>

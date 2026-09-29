@@ -1235,7 +1235,7 @@ export default function WonderLessonView({
             type="button"
             onClick={onClose}
             aria-label="Go back to path"
-            className="p-1.5 rounded-xl border border-[#DCD6CA] dark:border-stone-700 bg-[#FAF8F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300 shadow-[0_2px_0_0_#DCD6CA] dark:shadow-[0_2px_0_0_#292524] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer"
+            className="p-1.5 rounded-full border border-[#DCD6CA] dark:border-stone-700 bg-[#FAF8F2] dark:bg-stone-800 text-stone-700 dark:text-stone-300 shadow-[0_2px_0_0_#DCD6CA] dark:shadow-[0_2px_0_0_#292524] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer"
           >
             <X size={18} />
           </button>
@@ -1834,7 +1834,7 @@ export default function WonderLessonView({
             <button
               type="button"
               onClick={() => setIsDiscussOpen(false)}
-              className="p-1 text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 cursor-pointer"
+              className="p-1 rounded-full text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
             >
               <X size={18} />
             </button>
@@ -1897,7 +1897,7 @@ export default function WonderLessonView({
             <button
               type="button"
               onClick={() => setActiveKeyword(null)}
-              className="p-1 text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 cursor-pointer"
+              className="p-1 rounded-full text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 cursor-pointer"
             >
               <X size={18} />
             </button>

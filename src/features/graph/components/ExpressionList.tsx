@@ -87,7 +87,7 @@ export default function ExpressionList({
                   type="button"
                   onClick={() => onToggleVisible(e.id)}
                   aria-label={tt('graphToggleVisible')}
-                  className="grid size-8 flex-shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                  className="grid size-8 flex-shrink-0 place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                 >
                   {e.visible ? <Eye size={16} strokeWidth={1.75} /> : <EyeOff size={16} strokeWidth={1.75} />}
                 </button>
@@ -97,7 +97,7 @@ export default function ExpressionList({
                   type="button"
                   onClick={() => onRemove(e.id)}
                   aria-label={tt('graphDelete')}
-                  className="grid size-8 flex-shrink-0 place-items-center rounded-xl text-pmuted transition-colors hover:bg-psurface hover:text-pdanger focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+                  className="grid size-8 flex-shrink-0 place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pdanger focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
                 >
                   <Trash2 size={16} strokeWidth={1.75} />
                 </button>

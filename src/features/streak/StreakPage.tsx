@@ -179,16 +179,16 @@ export default function StreakPage() {
         <div className="w-full max-w-[340px] sm:max-w-[360px] mx-auto">
           <div className="flex items-center justify-between mb-2.5 px-0.5">
             <button onClick={() => shiftMonth(-1)} aria-label={lang === 'ru' ? 'Предыдущий месяц' : 'Oldingi oy'}
-              className="grid size-7 sm:size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-              <ChevronLeft size={16} strokeWidth={1.75} />
+              className="grid size-8 sm:size-9 place-items-center rounded-full text-psubtle transition-all hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
+              <ChevronLeft size={17} strokeWidth={2} />
             </button>
             <p className="text-[13px] sm:text-[14px] font-bold text-pfg capitalize">
               {months[m - 1]} {y}
             </p>
             <button onClick={() => shiftMonth(1)} aria-label={lang === 'ru' ? 'Следующий месяц' : 'Keyingi oy'}
               disabled={month >= today.slice(0, 7)}
-              className="grid size-7 sm:size-8 place-items-center rounded-xl text-psubtle transition-colors hover:bg-psurface hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
-              <ChevronRight size={16} strokeWidth={1.75} />
+              className="grid size-8 sm:size-9 place-items-center rounded-full text-psubtle transition-all hover:bg-psurface hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary disabled:opacity-30">
+              <ChevronRight size={17} strokeWidth={2} />
             </button>
           </div>
           <div className="grid grid-cols-7 gap-1.5 sm:gap-2 text-center">

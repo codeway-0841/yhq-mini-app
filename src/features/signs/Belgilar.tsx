@@ -419,7 +419,7 @@ export default function Belgilar() {
               <button
                 onClick={() => setQuery('')}
                 aria-label={isRu ? 'Очистить' : 'Tozalash'}
-                className="size-11 grid shrink-0 place-items-center rounded-xl text-pmuted hover:text-pfg"
+                className="size-7 grid shrink-0 place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
               >
                 <X size={14} />
               </button>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Check, ScanLine } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import StepInput from './StepInput'
 import { Latex } from './StepList'
 
@@ -54,10 +54,11 @@ export default function RecognitionReviewSheet({
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="bottom" labelId="recognition-review-title">
-      <span id="recognition-review-title" className="sr-only">{title}</span>
-      <div className="flex max-h-[75vh] flex-col gap-2.5 overflow-y-auto p-4">
-        <p className="text-[15px] font-bold text-pfg">{title}</p>
+    <Sheet onClose={onClose}>
+      <SheetHeader onClose={onClose} closeLabel={closeLabel}>
+        <SheetTitle>{title}</SheetTitle>
+      </SheetHeader>
+      <SheetBody className="flex max-h-[70dvh] flex-col gap-2.5 overflow-y-auto">
         {blocks.map((b, i) => (
           <div key={b.id} className="flex flex-col gap-2 rounded-2xl bg-psurface p-3">
             <span className="flex items-center gap-2 text-[13px] font-semibold text-pmuted">
@@ -123,7 +124,7 @@ export default function RecognitionReviewSheet({
         >
           {closeLabel}
         </button>
-      </div>
-    </DialogOverlay>
+      </SheetBody>
+    </Sheet>
   )
 }

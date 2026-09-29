@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react'
 import {
-  X,
   Upload,
   FileSpreadsheet,
   FileCode,
@@ -15,6 +14,7 @@ import {
   Lightbulb,
   type LucideIcon,
 } from 'lucide-react'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -25,7 +25,6 @@ import {
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface BulkImportModalProps {
@@ -546,13 +545,10 @@ export default function BulkImportModal({
       {/* In-Modal Single Question Edit Popup (nested overlay: Escape faqat shuni yopadi) */}
       {editingItem && (
         <DialogOverlay onClose={() => setEditingItem(null)} position="center" zIndex={60} labelId="bulk-edit-title" backdropClassName="bg-black/85 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 space-y-3 shadow-2xl relative">
-            <div className="flex items-center justify-between">
+          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 pt-4 space-y-3 shadow-2xl relative">
+            <ModalHeaderRow onClose={() => setEditingItem(null)} label="Yopish">
               <h3 id="bulk-edit-title" className="text-sm font-semibold text-pfg">Savolni tahrirlash</h3>
-              <button onClick={() => setEditingItem(null)} aria-label="Yopish" className="p-1 text-pmuted">
-                <X size={16} />
-              </button>
-            </div>
+            </ModalHeaderRow>
 
             <div>
               <label className="text-[11px] text-pmuted font-semibold block mb-1">Savol matni</label>

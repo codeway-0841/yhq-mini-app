@@ -599,7 +599,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     <div className="relative flex flex-col bg-pcanvas">
       <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
         <div className="flex w-full items-center justify-between px-4 py-2">
-          <Button variant="secondary" size="icon" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="h-12 w-12 rounded-2xl [&_svg]:size-5"><ChevronLeft /></Button>
+          <button type="button" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5"><ChevronLeft /></button>
           <div className="text-center">
             <p className="text-sm font-semibold text-pfg">
               {title ?? (mode === 'saved' || mode === 'mistakes'
