@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react'
-import { X, Copy, Check, Share2, Users, KeyRound, Swords } from 'lucide-react'
+import { Copy, Check, Share2, Users, KeyRound, Swords } from 'lucide-react'
 import { shareUrl } from '../../../platform/telegram'
 import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface CustomRoomModalProps {
@@ -73,27 +74,22 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 pt-4 shadow-2xl relative overflow-hidden">
         <ModalMathGrid glow={false} height={260} />
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
         <div className="relative z-10 space-y-4">
         {/* Header */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-[rgb(var(--p-purple-rgb)/0.15)] flex items-center justify-center text-ppurple">
-              <Swords size={18} />
-            </div>
-            <div>
-              <h2 id="custom-room-title" className="text-sm font-black text-pfg">{tt('customRoomTitle')}</h2>
-              <p className="text-[10px] text-pmuted">{tt('customRoomDesc')}</p>
-            </div>
+        <div className="px-10 text-center">
+          <div className="mx-auto mb-2 flex size-10 items-center justify-center rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple">
+            <Swords size={18} />
           </div>
-          <button
-            onClick={onClose}
-            aria-label={tt('close')}
-            className="grid size-11 shrink-0 place-items-center rounded-full bg-psurface hover:bg-pcard flex items-center justify-center text-pmuted hover:text-pfg transition-colors"
-          >
-            <X size={16} />
-          </button>
+          <h2 id="custom-room-title" className="text-sm font-black text-pfg">{tt('customRoomTitle')}</h2>
+          <p className="text-[10px] text-pmuted">{tt('customRoomDesc')}</p>
         </div>
 
         {/* Tab switcher */}

@@ -4,7 +4,6 @@ import {
   Pencil,
   Trash2,
   Search,
-  X,
   Loader2,
   AlertTriangle,
   RotateCw,
@@ -18,6 +17,7 @@ import { SUBJECTS } from '../../../shared/config/subjects'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import { t } from '../../../shared/i18n'
 
 interface AdminQuestionsTabProps {
@@ -531,13 +531,13 @@ function QuestionForm({
         className="relative w-full bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3" />
-        <div className="flex items-center justify-between mb-3">
+        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none" />
+        <ModalCloseButton onClick={onCancel} label={t(lang, 'close')} />
+        <div className="mb-3 px-12 text-center">
           <div>
             <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
             <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>
           </div>
-          <button onClick={onCancel} aria-label={t(lang, 'close')} className="grid size-11 shrink-0 place-items-center rounded-xl text-pmuted hover:text-pfg hover:bg-psurface transition-colors"><X size={18} /></button>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-3">

@@ -317,22 +317,23 @@ export default function DynamicIsland() {
           <div className="dynamic-island-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-sm justify-center px-4">
             <div className="dynamic-island-dock pointer-events-auto w-full rounded-3xl p-4 animate-dynamic-island-expand">
               {/* Dock Header */}
-              <div data-drag-handle className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10 select-none cursor-grab active:cursor-grabbing">
-                <div className="flex items-center gap-2">
-                  <span className="size-2 rounded-full bg-pprimary animate-pulse" />
-                  <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-slate-800 dark:text-white">
-                    {menuLabel}
-                  </h2>
-                </div>
+              <div data-drag-handle className="flex items-center gap-2.5 pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10 select-none cursor-grab active:cursor-grabbing">
                 <button
                   type="button"
                   aria-label={tt('close')}
                   onClick={close}
                   onPointerDown={() => haptics.selection()}
-                  className="grid size-7 place-items-center rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-90 transition-transform text-slate-600 dark:text-white/80"
+                  className="grid size-8 shrink-0 place-items-center rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-90 transition-transform text-slate-600 dark:text-white/80"
                 >
                   <X size={15} />
                 </button>
+                <div className="flex flex-1 items-center justify-center gap-2">
+                  <span className="size-2 rounded-full bg-pprimary animate-pulse" />
+                  <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-slate-800 dark:text-white">
+                    {menuLabel}
+                  </h2>
+                </div>
+                <span aria-hidden="true" className="size-8 shrink-0" />
               </div>
 
               {/* 2x2 Icon Grid (Dashboard Grid Card Style) */}

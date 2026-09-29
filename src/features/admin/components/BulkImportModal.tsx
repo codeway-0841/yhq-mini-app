@@ -25,6 +25,7 @@ import {
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface BulkImportModalProps {
@@ -226,27 +227,24 @@ export default function BulkImportModal({
 
   return (
     <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-3xl bg-pcard p-5 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+      <div className="relative w-full max-w-lg rounded-3xl bg-pcard p-5 pt-4 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
         <ModalMathGrid glowColor="#A855F7" height={280} />
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalCloseButton onClick={onClose} label="Yopish" />
         {/* Header */}
-        <div className="relative z-10 flex items-center justify-between pb-3 border-b border-pline">
-          <div>
-            <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center gap-2">
-              <Upload size={18} className="text-ppurple" />
-              Mukammal Savollar Importi
-            </h2>
-            <p className="text-xs text-pmuted flex items-center gap-1.5 mt-0.5">
-              <SubjectIcon size={13} strokeWidth={1.75} />
-              <span className="font-semibold text-pfg">{subjectName}</span> fani uchun
-            </p>
-          </div>
-          <button
-            onClick={onClose}
-            aria-label="Yopish"
-            className="w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
-          >
-            <X size={16} />
-          </button>
+        <div className="relative z-10 px-12 pb-3 border-b border-pline text-center">
+          <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center justify-center gap-2">
+            <Upload size={18} className="text-ppurple" />
+            Mukammal Savollar Importi
+          </h2>
+          <p className="text-xs text-pmuted flex items-center justify-center gap-1.5 mt-0.5">
+            <SubjectIcon size={13} strokeWidth={1.75} />
+            <span className="font-semibold text-pfg">{subjectName}</span> fani uchun
+          </p>
         </div>
 
         {/* Download Template Bar */}

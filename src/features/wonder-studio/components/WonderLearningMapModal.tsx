@@ -95,8 +95,16 @@ export default function WonderLearningMapModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-xs font-sans select-none animate-in fade-in duration-150">
       <div className="relative w-full max-w-5xl h-[88vh] rounded-3xl bg-[#FFFCF6] dark:bg-[#1C1411] border border-stone-200 dark:border-stone-800 shadow-2xl flex flex-col overflow-hidden">
         {/* Top Header Bar (1:1 with learning_map_view.png) */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-stone-100 dark:border-stone-800 shrink-0">
-          <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-3 px-6 py-4 border-b border-stone-100 dark:border-stone-800 shrink-0">
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close"
+            className="size-8 shrink-0 rounded-full border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+          >
+            <X size={17} strokeWidth={2} />
+          </button>
+          <div className="flex min-w-0 flex-1 items-center gap-2.5">
             <h2 className="text-sm sm:text-base font-bold text-stone-900 dark:text-stone-100">
               {course.title} learning map
             </h2>
@@ -131,15 +139,6 @@ export default function WonderLearningMapModal({
                 <Maximize2 size={13} />
               </button>
             </div>
-
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Close"
-              className="size-8 rounded-xl border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors cursor-pointer"
-            >
-              <X size={17} strokeWidth={2} />
-            </button>
           </div>
         </div>
 

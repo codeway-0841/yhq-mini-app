@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import QRCode from 'qrcode'
-import { QrCode, X } from 'lucide-react'
+import { QrCode } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { useT } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -29,16 +30,14 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
 
   return (
     <DialogOverlay onClose={onClose} labelId="tg-qr-title" position="center">
-      <div className="app-modal relative max-h-[calc(100dvh-2rem)] w-full max-w-[400px] overflow-y-auto p-5 motion-safe:animate-premiumIn sm:p-6 overflow-hidden">
+      <div className="app-modal relative max-h-[calc(100dvh-2rem)] w-full max-w-[400px] overflow-y-auto p-5 pt-4 motion-safe:animate-premiumIn sm:p-6 sm:pt-5 overflow-hidden">
         <ModalMathGrid glow={false} height={280} />
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label={tt('close')}
-          className="absolute right-3 top-3 z-10 flex size-11 cursor-pointer items-center justify-center rounded-full bg-psurface text-pmuted shadow-xs transition-colors hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <X size={16} strokeWidth={2.5} />
-        </button>
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalCloseButton onClick={onClose} label={tt('close')} />
 
         <div className="relative z-10">
         <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-psurface">

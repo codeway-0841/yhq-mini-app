@@ -186,8 +186,20 @@ export default function SocraticChatSheet({
         <div className="relative z-10 w-10 h-1 bg-plineStrong rounded-full mx-auto my-2.5 shrink-0 select-none" />
 
         {/* Header */}
-        <div className="relative z-10 flex items-center justify-between px-5 pb-3">
-          <div className="flex items-center gap-2.5">
+        <div className="relative z-10 flex items-center gap-3 px-5 pb-3">
+          <button
+            type="button"
+            onClick={() => {
+              stopSpeaking()
+              if (abortControllerRef.current) abortControllerRef.current.abort()
+              onClose()
+            }}
+            className="grid size-9 shrink-0 place-items-center rounded-full bg-psurface text-pmuted shadow-xs transition-colors hover:text-pfg"
+            aria-label="Yopish"
+          >
+            <X size={16} strokeWidth={2.4} />
+          </button>
+          <div className="flex flex-1 items-center justify-center gap-2.5 text-center">
             <Bot size={20} strokeWidth={1.75} className="text-pmuted shrink-0" />
             <div>
               <div className="flex items-center gap-1.5">
@@ -201,18 +213,7 @@ export default function SocraticChatSheet({
               <p className="text-[12px] text-pmuted">{tt('socraticChatSubtitle')}</p>
             </div>
           </div>
-          <button
-            type="button"
-            onClick={() => {
-              stopSpeaking()
-              if (abortControllerRef.current) abortControllerRef.current.abort()
-              onClose()
-            }}
-            className="size-8 rounded-xl grid place-items-center text-pmuted hover:text-pfg hover:bg-psurface transition-colors"
-            aria-label="Yopish"
-          >
-            <X size={18} strokeWidth={1.75} />
-          </button>
+          <span aria-hidden="true" className="size-9 shrink-0" />
         </div>
 
         {/* Question Context Preview (kichik panel) */}

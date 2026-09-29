@@ -336,8 +336,16 @@ export default function WonderPodcastModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs font-sans select-none animate-in fade-in duration-150">
       <div className="relative w-full max-w-lg rounded-3xl bg-[#FFFDF8] dark:bg-[#1C1411] border border-[#E7E2D6] dark:border-stone-800 shadow-2xl p-5 sm:p-7 space-y-5 max-h-[92vh] overflow-y-auto">
         {/* Top Header (1:1 with podcast_player_view.png) */}
-        <div className="flex items-center justify-between pb-2 border-b border-stone-100 dark:border-stone-800">
-          <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 pb-2 border-b border-stone-100 dark:border-stone-800">
+          <button
+            type="button"
+            onClick={handleClose}
+            aria-label="Close"
+            className="size-8 shrink-0 rounded-full border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+          >
+            <X size={17} strokeWidth={2} />
+          </button>
+          <div className="flex min-w-0 flex-1 items-center gap-3">
             <Headphones size={22} className="text-stone-700 dark:text-stone-300 shrink-0" strokeWidth={1.8} />
             <div>
               <div className="flex items-center gap-2">
@@ -354,14 +362,6 @@ export default function WonderPodcastModal({
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={handleClose}
-            aria-label="Close"
-            className="size-8 rounded-xl border border-stone-200 dark:border-stone-700 flex items-center justify-center text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors cursor-pointer"
-          >
-            <X size={17} strokeWidth={2} />
-          </button>
         </div>
 
         {/* Current Episode Title & Status Box (1:1 with podcast_player_view.png) */}

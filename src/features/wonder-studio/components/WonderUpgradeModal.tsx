@@ -49,7 +49,7 @@ export default function WonderUpgradeModal({ onClose }: WonderUpgradeModalProps)
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-5 right-5 z-20 p-1.5 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
+          className="absolute top-5 left-5 z-20 p-1.5 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
         >
           <X size={20} />
         </button>

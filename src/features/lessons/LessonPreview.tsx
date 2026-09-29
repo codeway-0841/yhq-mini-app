@@ -41,7 +41,7 @@ export default function LessonPreview({ title, selectionKey, check, current, don
         type="button"
         onClick={onClose}
         aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-        className="absolute top-3.5 right-3.5 grid size-7 place-items-center rounded-full text-pmuted hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
+        className="absolute left-3 top-3 grid size-7 place-items-center rounded-full bg-psurface text-pmuted shadow-xs hover:text-pfg transition-colors cursor-pointer"
       >
         <X size={16} strokeWidth={2} />
       </button>

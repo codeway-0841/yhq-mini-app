@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, X, Calendar, Users, Percent } from 'lucide-react'
+import { Plus, Ticket, Copy, Check, Trash2, Power, AlertCircle, Loader2, Sparkles, Calendar, Users, Percent } from 'lucide-react'
 import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 
 export default function AdminPromoTab() {
   const [codes, setCodes] = useState<AdminPromoCode[]>([])
@@ -275,15 +276,15 @@ export default function AdminPromoTab() {
       {/* Create Modal */}
       {creating && (
         <DialogOverlay onClose={() => setCreating(false)} position="center" labelId="promo-create-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 shadow-2xl overflow-hidden">
-            <button
-              onClick={() => setCreating(false)}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
-            >
-              <X size={16} />
-            </button>
+          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 shadow-2xl overflow-hidden">
+            <div
+              data-drag-handle
+              aria-hidden="true"
+              className="mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+            />
+            <ModalCloseButton onClick={() => setCreating(false)} label="Yopish" />
 
-            <h3 id="promo-create-title" className="text-base font-semibold text-pfg mb-4 flex items-center gap-2">
+            <h3 id="promo-create-title" className="text-base font-semibold text-pfg mb-4 flex items-center gap-2 pl-11">
               <Ticket size={18} className="text-ppurple" />
               Yangi promokod yaratish
             </h3>

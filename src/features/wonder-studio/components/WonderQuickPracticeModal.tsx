@@ -291,7 +291,7 @@ export default function WonderQuickPracticeModal({
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-xl text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+            className="p-1.5 rounded-full text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
             aria-label="Close"
           >
             <X size={20} />

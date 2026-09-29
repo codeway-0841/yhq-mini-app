@@ -70,21 +70,22 @@ export default function WonderCertificateModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-stone-950/80 backdrop-blur-md animate-in fade-in duration-200 overflow-y-auto">
       <div className="relative w-full max-w-2xl bg-stone-900 border border-stone-800 rounded-3xl shadow-2xl overflow-hidden my-auto animate-in zoom-in-95 duration-200">
         {/* Header Close button */}
-        <div className="flex items-center justify-between p-4 border-b border-stone-800/80 bg-stone-900/60">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3 p-4 border-b border-stone-800/80 bg-stone-900/60">
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-1.5 shrink-0 rounded-full border border-stone-700 bg-stone-800 text-stone-300 hover:text-white transition-colors cursor-pointer"
+            aria-label="Yopish"
+          >
+            <X size={18} />
+          </button>
+          <div className="flex flex-1 items-center justify-center gap-2">
             <Award className="size-5 text-amber-400" />
             <span className="font-mono text-xs font-bold uppercase tracking-wider text-amber-300">
               Rasmiy Sertifikat
             </span>
           </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-1.5 rounded-xl border border-stone-700 bg-stone-800 text-stone-300 hover:text-white transition-colors cursor-pointer"
-            aria-label="Yopish"
-          >
-            <X size={18} />
-          </button>
+          <span aria-hidden="true" className="w-9 shrink-0" />
         </div>
 
         {/* Certificate Card Content */}

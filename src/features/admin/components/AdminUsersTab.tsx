@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
-import { Search, User, Shield, Loader2, X, RotateCw, AlertCircle, Phone } from 'lucide-react'
+import { Search, User, Shield, Loader2, RotateCw, AlertCircle, Phone } from 'lucide-react'
 import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 
 export default function AdminUsersTab() {
   const [users, setUsers] = useState<AdminUserItem[]>([])
@@ -219,15 +220,15 @@ export default function AdminUsersTab() {
       {/* Grant Modal */}
       {selectedUser && (
         <DialogOverlay onClose={() => setSelectedUser(null)} position="center" labelId="grant-premium-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 shadow-2xl overflow-hidden">
-            <button
-              onClick={() => setSelectedUser(null)}
-              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-psurface shadow-xs flex items-center justify-center text-pmuted hover:text-pfg"
-            >
-              <X size={16} />
-            </button>
+          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 shadow-2xl overflow-hidden">
+            <div
+              data-drag-handle
+              aria-hidden="true"
+              className="mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+            />
+            <ModalCloseButton onClick={() => setSelectedUser(null)} label="Yopish" />
 
-            <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center gap-2">
+            <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center gap-2 pl-11">
               <PremiumIcon size={18} className="text-ppurple" />
               Premium berish
             </h3>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, memo } from 'react'
-import { X, Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
+import { Sparkles, ExternalLink, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
 import { type PremiumPlan, formatUzs } from '../../../../shared/premium-plans'
 import { api } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -9,6 +9,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
+import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 const ClickLogo = memo(function ClickLogo({ className }: { className?: string }) {
@@ -154,14 +155,19 @@ export default function PaymentMethodModal({
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={280} />
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalCloseButton onClick={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} />
         <div className="relative z-10">
         {/* Header */}
-        <div className="flex items-center justify-between pb-4 border-b border-pline">
-          <div className="flex items-center gap-2">
-            <div className="size-8 rounded-xl bg-psurface flex items-center justify-center text-pgold shadow-2xs">
-              <Sparkles size={16} strokeWidth={1.75} />
-            </div>
-            <div>
+        <div className="px-12 pb-4 border-b border-pline text-center">
+          <div className="mx-auto mb-2 grid size-10 place-items-center rounded-2xl bg-psurface text-pgold shadow-2xs">
+            <Sparkles size={18} strokeWidth={1.75} />
+          </div>
+          <div>
               <h2 id="payment-method-title" className="text-base font-semibold">
                 {lang === 'ru' ? 'Оплата подписки' : "To'lov usulini tanlang"}
               </h2>
@@ -169,14 +175,6 @@ export default function PaymentMethodModal({
                 {lang === 'ru' ? plan.titleRu : plan.titleUz} ({lang === 'ru' ? plan.periodRu : plan.periodUz})
               </p>
             </div>
-          </div>
-          <button
-            onClick={onClose}
-            aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-            className="p-2 rounded-full hover:bg-psurface text-psubtle hover:text-pfg transition-colors"
-          >
-            <X size={18} />
-          </button>
         </div>
 
         {/* Success View */}

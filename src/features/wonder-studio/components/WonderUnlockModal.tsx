@@ -29,7 +29,7 @@ export default function WonderUnlockModal({
         <button
           type="button"
           onClick={onClose}
-          className="absolute top-4 right-4 p-1 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
+          className="absolute top-4 left-4 p-1 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
           aria-label="Close"
         >
           <X size={18} />
