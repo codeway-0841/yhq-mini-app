@@ -65,7 +65,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
       <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
         <div data-drag-handle className="mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={tt('close')}>
+        <ModalHeaderRow onClose={onClose} label={tt('close')} className="px-1.5">
           <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
             {tt('closedGroupTitle')}
           </h2>
