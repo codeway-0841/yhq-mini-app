@@ -4,6 +4,7 @@ import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { Button } from '../../../shared/components/ui/button'
+import { Sheet, SheetBody, SheetDescription, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import { usePhoneInput } from '../../auth'
@@ -75,35 +76,31 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
   const isDirty = (step === 'sms' && phone.digits.length > 0) || busy
 
   return (
-    <DialogOverlay
+    <Sheet
       onClose={onClose}
       backdropClassName="bg-black/60"
-      labelId="phone-edit-title"
-      swipeToDismiss
       closeOnBackdrop={!isDirty}
       canDismiss={() => !isDirty}
     >
-      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={320} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <ModalHeaderRow onClose={isDirty ? () => {} : onClose} label={tt('cancel')}>
-          <h2 id="phone-edit-title" className="text-[19px] font-bold text-pfg tracking-tight">
+        <SheetHeader onClose={isDirty ? () => {} : onClose} closeLabel={tt('cancel')}>
+          <SheetTitle className="text-[19px]">
             {step === 'confirm' ? tt('phoneChangeTitle') : step === 'method' ? tt('phoneMethodTitle') : tt('viaSms')}
-          </h2>
+          </SheetTitle>
           {step === 'method' && (
-            <p className="mt-1.5 text-[13px] text-pmuted max-w-xs mx-auto leading-relaxed">
+            <SheetDescription className="mt-1.5 text-[13px] max-w-xs mx-auto leading-relaxed">
               {tt('phoneMethodHint')}
-            </p>
+            </SheetDescription>
           )}
           {step === 'sms' && (
-            <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+            <SheetDescription className="mt-1 text-[13px] leading-relaxed max-w-xs mx-auto">
               {tt('phoneMethodHint')}
-            </p>
+            </SheetDescription>
           )}
-        </ModalHeaderRow>
+        </SheetHeader>
 
+        <SheetBody className="pb-7 pt-1">
         {step === 'confirm' && currentPhone && (
-          <div className="relative z-10 pt-1">
+          <div className="relative z-10">
             <div className="my-3 py-2 px-4 rounded-xl bg-pcard shadow-2xs w-fit mx-auto text-[16px] font-bold text-pprimary tracking-wide font-mono">
               {formatPhoneDisplay(currentPhone)}
             </div>
@@ -118,7 +115,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
         )}
 
         {step === 'method' && (
-          <div className="relative z-10 pt-1">
+          <div className="relative z-10">
             <div className="flex flex-col gap-2.5">
               <Button block size="lg" loading={busy} className="font-semibold shadow-xs" onClick={onTelegram}>
                 <Send size={16} />
@@ -133,7 +130,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
         )}
 
         {step === 'sms' && (
-          <div className="relative z-10 pt-1">
+          <div className="relative z-10">
             <div className="mb-4 flex items-center gap-2 rounded-2xl bg-pcard px-4 focus-within:ring-2 focus-within:ring-pprimary shadow-xs">
               <span className="text-pmuted font-semibold select-none">+998</span>
               <input
@@ -158,8 +155,8 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
             </div>
           </div>
         )}
-      </div>
-    </DialogOverlay>
+        </SheetBody>
+    </Sheet>
   )
 }
 

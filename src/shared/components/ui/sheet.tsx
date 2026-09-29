@@ -1,5 +1,5 @@
 import * as React from 'react'
-import DialogOverlay from '../DialogOverlay'
+import DialogOverlay, { type CloseReason } from '../DialogOverlay'
 import ModalMathGrid from '../ModalMathGrid'
 import ModalCloseButton from '../ModalCloseButton'
 import ModalHeaderRow from '../ModalHeaderRow'
@@ -27,6 +27,12 @@ interface SheetProps {
   swipeToDismiss?: boolean
   /** Gesture faqat drag-handle yoki header zonasi orqali boshlanishi (default: false — full surface drag) */
   dragHandleOnly?: boolean
+  /** Backdrop bosilganda yopilish siyosati (dirty form'lar uchun). */
+  closeOnBackdrop?: boolean
+  /** Escape/back/swipe/backdrop yopilishiga ruxsat beruvchi guard. */
+  canDismiss?: (reason: CloseReason) => boolean
+  /** Maxsus backdrop ko'rinishi. */
+  backdropClassName?: string
   glowColor?: string
 }
 
@@ -42,6 +48,9 @@ function Sheet({
   zIndex,
   swipeToDismiss = true,
   dragHandleOnly = false,
+  closeOnBackdrop = true,
+  canDismiss,
+  backdropClassName,
   glowColor: _glowColor,
 }: SheetProps) {
   const titleId = React.useId()
@@ -55,6 +64,9 @@ function Sheet({
       zIndex={zIndex}
       swipeToDismiss={swipeToDismiss}
       dragHandleOnly={dragHandleOnly}
+      closeOnBackdrop={closeOnBackdrop}
+      canDismiss={canDismiss}
+      backdropClassName={backdropClassName}
     >
       <div
         className={cn(
@@ -75,7 +87,7 @@ function Sheet({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>

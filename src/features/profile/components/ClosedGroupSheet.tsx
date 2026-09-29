@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { ExternalLink, Lightbulb, Megaphone, Users } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { Button } from '../../../shared/components/ui/button'
+import { Sheet, SheetBody, SheetDescription, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { getSubject } from '../../../shared/config/subjects'
@@ -61,15 +59,12 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
   }
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title" swipeToDismiss>
-      <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={380} />
-        <div data-drag-handle className="mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={tt('close')} className="px-1.5">
-          <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
+    <Sheet onClose={onClose} backdropClassName="bg-black/60" className="max-h-[85dvh]">
+        <SheetHeader onClose={onClose} closeLabel={tt('close')}>
+          <SheetTitle className="text-[19px]">
             {tt('closedGroupTitle')}
-          </h2>
-          <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+          </SheetTitle>
+          <SheetDescription className="mt-1 text-[13px] leading-relaxed max-w-xs mx-auto">
             {isSubscribed
               ? (lang === 'ru'
                 ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
@@ -77,9 +72,10 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
               : (lang === 'ru'
                 ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
                 : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot")}
-          </p>
-        </ModalHeaderRow>
+          </SheetDescription>
+        </SheetHeader>
 
+        <SheetBody className="pb-7">
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (
           <div className="relative z-10">
@@ -175,7 +171,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </Button>
           </div>
         )}
-      </div>
-    </DialogOverlay>
+        </SheetBody>
+    </Sheet>
   )
 }

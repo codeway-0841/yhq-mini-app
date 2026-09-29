@@ -11,7 +11,7 @@ export interface ModalCloseButtonProps {
 /**
  * ModalCloseButton — Achievement-uslubidagi dumaloq X tugmasi (SSOT):
  * oq fonli doira (dark'da white/10), nafis soya, ingichka border,
- * o'rtadagi 18px X. Barcha modal/sheet'lar SHU tugmadan foydalanadi.
+ * o'rtadagi 20px X. Barcha modal/sheet'lar SHU tugmadan foydalanadi.
  */
 export function ModalCloseButton({
   onClick,
@@ -30,11 +30,11 @@ export function ModalCloseButton({
         'dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none',
         'transition-transform duration-150 ease-out hover:scale-105 active:scale-95 cursor-pointer',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-        size === 'md' ? 'size-10' : 'size-9',
+        size === 'md' ? 'size-12' : 'size-9',
         className,
       )}
     >
-      <X className={size === 'md' ? 'size-[18px]' : 'size-4'} strokeWidth={2.4} />
+      <X className={size === 'md' ? 'size-5' : 'size-4'} strokeWidth={2.25} />
     </button>
   )
 }

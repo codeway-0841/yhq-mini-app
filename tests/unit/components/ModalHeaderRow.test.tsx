@@ -34,7 +34,8 @@ describe('ModalHeaderRow', () => {
     // O'ngda simmetriya spacer'i (sarlavha rostdan markazda)
     const spacer = titleWrap.nextElementSibling as HTMLElement
     expect(spacer.getAttribute('aria-hidden')).toBe('true')
-    expect(spacer.className).toMatch(/size-10/)
+    expect(closeBtn.className).toMatch(/size-12/)
+    expect(spacer.className).toMatch(/size-12/)
 
     fireEvent.click(closeBtn)
     expect(onClose).toHaveBeenCalledTimes(1)

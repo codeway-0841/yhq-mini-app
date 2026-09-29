@@ -20,7 +20,7 @@ export interface ModalHeaderRowProps {
  *
  *   [dumaloq X | chapda]  [sarlavha | o'rtada]  [spacer/action | o'ngda]
  *
- * X — `ModalCloseButton` (in-flow: `relative left-auto top-auto`),
+ * X — `ModalCloseButton` (in-flow: `relative left-auto top-auto`, 48px),
  * sarlavha — `flex-1 text-center`, o'ngda — X bilan bir xil o'lchamdagi
  * spacer (sarlavha ROSDAN markazda turishi uchun).
  */
@@ -33,14 +33,14 @@ export function ModalHeaderRow({
   right,
 }: ModalHeaderRowProps) {
   return (
-    <div className={cn('relative z-10 flex items-center gap-3 px-4 pb-3', className)}>
+    <div className={cn('relative z-10 flex min-h-14 items-center gap-2 px-5 pb-3', className)}>
       <ModalCloseButton
         onClick={onClose}
         label={label}
         className={cn('relative left-auto top-auto shrink-0', closeClassName)}
       />
       <div className="min-w-0 flex-1 text-center">{children}</div>
-      {right ?? <span aria-hidden="true" className="size-10 shrink-0" />}
+      {right ?? <span aria-hidden="true" className="size-12 shrink-0" />}
     </div>
   )
 }
