@@ -10,7 +10,7 @@
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
-const CACHE = 'yhq-app-v3'
+const CACHE = 'yhq-app-v4'
 
 // Savol rasmlari ALOHIDA keshda: /public/images ~84 MB va user ko'rgan har bir
 // rasm keshga tushardi — cheklovsiz. Qurilma xotirasi vaqt o'tib shuncha tomon
@@ -136,12 +136,14 @@ async function touchImage(request, response) {
   } catch { /* ignore */ }
 }
 
-/** Keshdagi app shell ('/' yoki '/index.html').
- *  Global caches.match() EMAS — u BARCHA keshlarni, jumladan yuzlab yozuvli
- *  IMG_CACHE ni ham skanerlaydi. Navigatsiya har ochilishda shu yo'ldan
- *  o'tgani uchun qidiruv CACHE bilan cheklanadi. */
-async function cachedShell() {
+/** Keshdagi app shell — SO'ROV URL'i bo'yicha (har path o'z kalitida).
+ *  Ilgari hamma navigatsiya '/' kalitiga yozilardi: '/' (landing) shell'i
+ *  '/app.html' navigatsiyasiga berilishi mumkin edi. Endi har path o'z
+ *  kalitida saqlanadi, '/' va '/index.html' faqat zaxira fallback. */
+async function cachedShell(request) {
   const cache = await caches.open(CACHE)
+  const own = await cache.match(request)
+  if (own) return own
   return (await cache.match('/')) || (await cache.match('/index.html'))
 }
 
@@ -149,12 +151,13 @@ const NAV_TIMEOUT_MS = 1500
 
 async function handleNavigate(request) {
   // Tarmoq so'rovi HAR DOIM yuboriladi — timeout'da ham u keshni yangilaydi.
+  // Shell SO'ROVNING O'Z kalitida saqlanadi ('/' emas).
   const network = fetch(request).then((res) => {
-    if (res.ok) void putInCache('/', res.clone())
+    if (res.ok) void putInCache(request, res.clone())
     return res
   })
 
-  const shell = await cachedShell()
+  const shell = await cachedShell(request)
   if (!shell) {
     // Kesh bo'sh (birinchi kirish) — tarmoqdan boshqa chora yo'q
     return network.catch(() => new Response('', { status: 504 }))
