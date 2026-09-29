@@ -9,6 +9,15 @@ import type {
 
 export type MediaState = 'idle' | 'connecting' | 'connected' | 'failed'
 
+/** getUserMedia xato farqi — UI yo'riqnomasi shunga qarab chiqadi. */
+export type MicErrorKind = 'denied' | 'nodevice'
+
+export function mapMicError(err: unknown): MicErrorKind {
+  const name = (err as { name?: string })?.name ?? ''
+  if (name === 'NotFoundError' || name === 'OverconstrainedError' || name === 'NotReadableError') return 'nodevice'
+  return 'denied'
+}
+
 export interface RemoteVideo {
   identity: string
   sid: string
@@ -39,6 +48,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   const [state, setState] = useState<MediaState>('idle')
   const [micOn, setMicOn] = useState(false)
   const [micBlocked, setMicBlocked] = useState(false)
+  const [micError, setMicError] = useState<MicErrorKind | null>(null)
   const [cameraOn, setCameraOn] = useState(false)
   const [cameraBlocked, setCameraBlocked] = useState(false)
   const [screenOn, setScreenOn] = useState(false)
@@ -137,9 +147,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         if (canSpeakRef.current) {
           try {
             await room.localParticipant.setMicrophoneEnabled(true)
-            if (!cancelled) setMicOn(true)
-          } catch {
-            if (!cancelled) setMicBlocked(true)
+            if (!cancelled) { setMicOn(true); setMicBlocked(false); setMicError(null) }
+          } catch (err) {
+            if (!cancelled) { setMicBlocked(true); setMicError(mapMicError(err)) }
           }
         }
       } catch {
@@ -165,7 +175,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     const room = roomRef.current
     if (!room || state !== 'connected') return
     if (canSpeak && !micOn && !micBlocked) {
-      room.localParticipant.setMicrophoneEnabled(true).then(() => setMicOn(true)).catch(() => setMicBlocked(true))
+      room.localParticipant.setMicrophoneEnabled(true)
+        .then(() => { setMicOn(true); setMicError(null) })
+        .catch((err: unknown) => { setMicBlocked(true); setMicError(mapMicError(err)) })
     } else if (!canSpeak && micOn) {
       room.localParticipant.setMicrophoneEnabled(false).then(() => setMicOn(false)).catch(() => {})
     }
@@ -179,9 +191,10 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       const next = !micOn
       await room.localParticipant.setMicrophoneEnabled(next)
       setMicOn(next)
-      if (next) setMicBlocked(false)
-    } catch {
+      if (next) { setMicBlocked(false); setMicError(null) }
+    } catch (err) {
       setMicBlocked(true)
+      setMicError(mapMicError(err))
     }
   }, [micOn, state])
 
@@ -218,7 +231,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [screenOn, state])
 
-  return { state, micOn, micBlocked, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen }
+  return { state, micOn, micBlocked, micError, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */

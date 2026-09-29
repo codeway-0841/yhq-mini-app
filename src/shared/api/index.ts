@@ -1279,11 +1279,12 @@ export const api = {
     return request<{
       ok: true
       mediaEnabled: boolean
+      recordingEnabled: boolean
       rooms: import('../../../shared/live').LiveRoomPublic[]
     }>('GET', `/live/rooms${qs ? `?${qs}` : ''}`)
   },
   getLiveRoom: (id: number) =>
-    request<{ ok: true; mediaEnabled: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
+    request<{ ok: true; mediaEnabled: boolean; recordingEnabled: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
       'GET', `/live/rooms/${id}`,
     ),
   joinLiveRoom: (id: number) =>

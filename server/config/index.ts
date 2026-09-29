@@ -123,6 +123,8 @@ const envSchema = z.object({
   LIVEKIT_API_KEY:        z.string().optional(),
   LIVEKIT_API_SECRET:     z.string().optional(),
   LIVEKIT_WEBHOOK_SECRET: z.string().optional(),
+  /** Dars yozuvi (Egress → R2 → kutubxona VOD) — default O'CHIQ, kerak bo'lganda 'true' */
+  LIVE_RECORDING_ENABLED: z.enum(['true', 'false']).optional().default('false'),
   /** Live join-token HMAC kaliti (10 daqiqalik xona bileti) */
   LIVE_TOKEN_SECRET: z.string().optional()
     .transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined))
@@ -379,6 +381,8 @@ export const config = {
     joinTokenSecret: env.LIVE_TOKEN_SECRET
       ?? (env.NODE_ENV === 'production' ? undefined : 'kivvi-live-dev-only-secret-32chars!!'),
     joinTokenTtlSeconds: 600,
+    /** Yozuv o'chiq bo'lsa record endpoint'lar 503 + UI'da tugma va ro'yxat yashirin */
+    recordingEnabled: env.LIVE_RECORDING_ENABLED === 'true',
   },
 } as const
 

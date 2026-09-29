@@ -94,7 +94,7 @@ router.get(
     const q = req.query as z.infer<typeof ListRoomsQuerySchema>
     if (q.subject && !SUBJECT_IDS.has(q.subject)) throw new AppError(400, 'INVALID_SUBJECT')
     const rows = await liveRepository.listRooms({ subjectId: q.subject, status: q.status, limit: q.limit ?? 20 })
-    res.json({ ok: true, rooms: rows.map(toPublicRow), mediaEnabled: config.live.mediaEnabled })
+    res.json({ ok: true, rooms: rows.map(toPublicRow), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled })
   }),
 )
 
@@ -130,7 +130,7 @@ router.get(
     const { id } = req.params as unknown as { id: number }
     const room = await liveRepository.getRoom(id)
     if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    res.json({ ok: true, room: toPublicRow(room), mediaEnabled: config.live.mediaEnabled })
+    res.json({ ok: true, room: toPublicRow(room), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled })
   }),
 )
 
@@ -407,11 +407,15 @@ router.post(
   }),
 )
 
-// GET /api/live/recordings — tayyor yozuvlar (VOD ro'yxati)
+// GET /api/live/recordings — tayyor yozuvlar (VOD ro'yxati; flag o'chiq bo'lsa bo'sh)
 router.get(
   '/live/recordings',
   wrap(async (req, res) => {
     requireUserId(req)
+    if (!config.live.recordingEnabled) {
+      res.json({ ok: true, recordings: [] })
+      return
+    }
     const rows = await liveRepository.listRecordings(30)
     const base = config.r2.publicUrl?.replace(/\/+$/, '') ?? null
     res.json({
@@ -452,6 +456,7 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
+    if (!config.live.recordingEnabled) throw new AppError(503, 'RECORDING_DISABLED')
     await requireRoomTeacher(id, userId)
     const room = await liveRepository.getRoom(id)
     if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
@@ -486,6 +491,7 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
+    if (!config.live.recordingEnabled) throw new AppError(503, 'RECORDING_DISABLED')
     await requireRoomTeacher(id, userId)
     const room = await liveRepository.getRoom(id)
     if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')

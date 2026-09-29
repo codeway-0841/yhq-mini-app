@@ -23,6 +23,7 @@ export default function LiveListPage() {
   const tt = useT(lang)
   const [rooms, setRooms] = useState<LiveRoomPublic[]>([])
   const [recordings, setRecordings] = useState<import('../../../shared/live').LiveRecordingPublic[]>([])
+  const [recordingEnabled, setRecordingEnabled] = useState(false)
   const [loading, setLoading] = useState(true)
   const [title, setTitle] = useState('')
   const [creating, setCreating] = useState(false)
@@ -40,7 +41,7 @@ export default function LiveListPage() {
   useEffect(() => {
     let alive = true
     api.listLiveRooms({ limit: 20 })
-      .then((r) => { if (alive) setRooms(r.rooms) })
+      .then((r) => { if (alive) { setRooms(r.rooms); setRecordingEnabled(r.recordingEnabled) } })
       .catch(() => { if (alive) setRooms([]) })
       .finally(() => { if (alive) setLoading(false) })
     api.listLiveRecordings()
@@ -111,7 +112,7 @@ export default function LiveListPage() {
             </CardContent>
           </Card>
         ))}
-        {recordings.length > 0 && (
+        {recordingEnabled && recordings.length > 0 && (
           <div className="flex flex-col gap-2 pt-2">
             <span className="text-sm font-semibold text-pfg">{tt('liveRecordings')}</span>
             {recordings.map((rec) => (
@@ -144,6 +145,7 @@ function LiveRoomPage() {
   const user = useAppStore((s) => s.user)
   const tt = useT(lang)
   const [room, setRoom] = useState<LiveRoomPublic | null>(null)
+  const [recordingEnabled, setRecordingEnabled] = useState(false)
   const [role, setRole] = useState<'teacher' | 'student' | null>(null)
   const [canSpeak, setCanSpeak] = useState(false)
   const [livekitToken, setLivekitToken] = useState<string | null>(null)
@@ -173,7 +175,7 @@ function LiveRoomPage() {
     if (!Number.isInteger(roomId) || roomId <= 0) return
     let alive = true
     api.getLiveRoom(roomId)
-      .then((r) => { if (alive) setRoom(r.room) })
+      .then((r) => { if (alive) { setRoom(r.room); setRecordingEnabled(r.recordingEnabled) } })
       .catch(() => { if (alive) setRoom(null) })
     return () => { alive = false }
   }, [roomId])
@@ -309,7 +311,11 @@ function LiveRoomPage() {
                   ? (voice.micOn ? tt('liveMicOn') : tt('liveMicOff'))
                   : handStatus === 'pending' ? tt('liveHandPending') : tt('liveVideoSoon')}
               </p>
-              {voice.micBlocked && <p className="text-xs text-pdanger">{tt('liveMicBlocked')}</p>}
+              {voice.micBlocked && (
+                <p className="text-xs text-pdanger">
+                  {voice.micError === 'nodevice' ? tt('liveMicNoDevice') : tt('liveMicBlocked')}
+                </p>
+              )}
               {voice.speakers.length > 0 && (
                 <p className="text-xs text-psuccess">{voice.speakers.slice(0, 3).join(', ')} {tt('liveSpeaking')}</p>
               )}
@@ -357,7 +363,7 @@ function LiveRoomPage() {
           </div>
           {role === 'teacher' && room.status !== 'ended' && (
             <>
-              <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} />
+              <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} recordingEnabled={recordingEnabled} />
               <HandsPanel
                 roomId={roomId}
                 hands={hands}
@@ -374,7 +380,7 @@ function LiveRoomPage() {
   )
 }
 
-function TeacherControls({ roomId, status, onChanged }: { roomId: number; status: string; onChanged: (r: LiveRoomPublic) => void }) {
+function TeacherControls({ roomId, status, onChanged, recordingEnabled }: { roomId: number; status: string; onChanged: (r: LiveRoomPublic) => void; recordingEnabled: boolean }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const [busy, setBusy] = useState(false)
@@ -412,12 +418,12 @@ function TeacherControls({ roomId, status, onChanged }: { roomId: number; status
           {tt('liveEnd')}
         </Button>
       )}
-      {status === 'live' && (
+      {status === 'live' && recordingEnabled && (
         <Button variant="secondary" loading={recBusy} onClick={toggleRecord}>
           {recording ? tt('liveStopRecord') : tt('liveRecord')}
         </Button>
       )}
-      {recording && <Badge variant="danger">{tt('liveRecording')}</Badge>}
+      {recording && recordingEnabled && <Badge variant="danger">{tt('liveRecording')}</Badge>}
     </div>
   )
 }
