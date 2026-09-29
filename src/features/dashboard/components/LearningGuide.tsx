@@ -140,8 +140,8 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
             <div className="min-w-0 flex-1">
-              {contextLabel && <p className="text-[11.5px] leading-relaxed text-pmuted">{contextLabel}</p>}
-              <h2 className="text-[16px] font-bold leading-snug text-pfg">{title}</h2>
+              {contextLabel && <p className="text-[11.5px] leading-normal text-pmuted">{contextLabel}</p>}
+              <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
               {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
             </div>
             {allComplete && !resume && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}

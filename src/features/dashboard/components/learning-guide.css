@@ -1,7 +1,7 @@
 .home-learning-hero { padding: 4px 0 2px; }
 .home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
 .home-learning-step { padding: 14px; border: 1px solid var(--p-line); border-radius: 18px; background: var(--p-card); }
-.home-learning-path-row { display: flex; align-items: center; gap: 10px; width: 100%; position: relative; padding: 2px 0; }
+.home-learning-path-row { display: flex; align-items: center; gap: 12px; width: 100%; position: relative; padding: 2px 0; }
 .home-learning-shortcut { min-height: 94px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px 10px; text-align: center; border: 1px solid var(--p-line); border-radius: 18px; background: var(--p-card); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); }
 @media (hover: hover) and (pointer: fine) {
   .home-learning-shortcut:hover { background: var(--p-surface); transform: translateY(-2px); box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.08); }
@@ -10,11 +10,12 @@
 /* Desktop: karta ichi nafasli (gap-4 ritmiga mos) — mobil zichligicha qoladi */
 @media (min-width: 1024px) { .home-learning-step { padding: 20px; } .home-learning-path-row { gap: 14px; } }
 @media (min-width: 600px) { .home-learning-hero { width: 100%; } }
-.home-learning-token { display: block; flex: 0 0 52px; width: 52px; height: 58px; }
-.home-learning-token .learning-tile { --token-size: 52px; }
+.home-learning-token { display: flex; align-items: center; justify-content: center; flex: 0 0 52px; width: 52px; height: 56px; position: relative; }
+.home-learning-token .learning-tile { --token-size: 52px; top: 0; margin: 0; }
 .home-learning-token .learning-tile[data-state='current'] .learning-orbit { opacity: 1; }
 @media (prefers-reduced-motion: no-preference) {
   body:not([data-no-animation='true']) .home-learning-token .learning-tile[data-state='current'] .learning-orbit {
     animation: learning-orbit 2.4s linear infinite;
   }
 }
+
