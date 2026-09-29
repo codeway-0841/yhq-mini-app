@@ -18,6 +18,7 @@ import {
   Compass,
   PenLine,
   ScanFace,
+  Radio,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -84,6 +85,7 @@ export default function ModesPage() {
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
     { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
     { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
+    { icon: Radio,         label: tt('liveTitle'),        onClick: () => navigate('/live') },
   ]
 
   const handleBack = useCallback(() => {

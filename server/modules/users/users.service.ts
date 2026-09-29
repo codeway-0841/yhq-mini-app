@@ -36,6 +36,7 @@ export function toApiUser(row: UserRow | SlimUserRow, economy: { coins: number; 
     phone:     row.phone     ?? null,
     tariff:    isPremium ? 'premium' as const : 'free' as const,
     isAdmin:   row.isAdmin,
+    isTeacher: row.isTeacher,
     /** SMS marketing roziligi (opt-in) — Profil toggle holati */
     smsOptIn:  row.smsOptIn,
     /** #40: coin balansi + do'konbuyumlari egaligi + joriy avatar ramkasi */

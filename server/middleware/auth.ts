@@ -117,6 +117,13 @@ const PUBLIC_PAYMENT_POST = new Set([
   'payments/payme',
 ])
 
+/** LiveKit server webhook — provider imzosi bilan keladi (imzo route'da tekshiriladi).
+ *  DIQQAT: payment webhook'lari kabi bu ro'yxat route bilan sinxron saqlansin —
+ *  qo'shilmasa prod'da LiveKit event'lari 401 oladi. */
+const PUBLIC_LIVE_WEBHOOK = new Set([
+  'live/webhook',
+])
+
 // `export` faqat unit-testlar uchun (allowlist desync'ini ushlab turish).
 export function isPublicGet(req: Request): boolean {
   if (req.method !== 'GET') return false
@@ -155,6 +162,15 @@ export function isPublicPaymentPost(req: Request): boolean {
   if (!normalized) return false
   const path = normalized.split('/').filter(Boolean).join('/')
   return PUBLIC_PAYMENT_POST.has(path)
+}
+
+// `export` faqat unit-testlar uchun (webhook desync himoyasi).
+export function isPublicLiveWebhook(req: Request): boolean {
+  if (req.method !== 'POST') return false
+  const normalized = normalizePath(req.path)
+  if (!normalized) return false
+  const path = normalized.split('/').filter(Boolean).join('/')
+  return PUBLIC_LIVE_WEBHOOK.has(path)
 }
 
 export function isAuthEnforced(): boolean {
@@ -225,7 +241,7 @@ export async function telegramAuth(req: Request, res: Response, next: NextFuncti
       next(); return
     }
 
-    if (isPublicAuthPost(req) || isPublicAuthGet(req) || isPublicPaymentPost(req)) { next(); return }
+    if (isPublicAuthPost(req) || isPublicAuthGet(req) || isPublicPaymentPost(req) || isPublicLiveWebhook(req)) { next(); return }
 
     const initData = getInitData(req)
     const bearer   = getBearerToken(req)

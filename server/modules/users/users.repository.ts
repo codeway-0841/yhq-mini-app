@@ -244,6 +244,7 @@ export const usersRepository = {
       premiumUntil:         users.premiumUntil,
       trialGrantedAt:       users.trialGrantedAt,
       isAdmin:              users.isAdmin,
+      isTeacher:            users.isTeacher,
       avatarFrame:          users.avatarFrame,
       avatarKey:            users.avatarKey,
       hasAvatar:            sql<boolean>`(${users.avatarWebp} IS NOT NULL)`,

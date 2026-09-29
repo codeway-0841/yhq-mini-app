@@ -251,6 +251,8 @@ export interface ApiUser {
   premiumUntil?: string | null
   /** Admin panel (savol CRUD) huquqi */
   isAdmin?: boolean
+  /** Jonli dars ustozi — /live da xona yaratish huquqi */
+  isTeacher?: boolean
   /** SMS marketing roziligi (opt-in) — faqat user o'zi yoqadi */
   smsOptIn?: boolean
   /** #40: coin balansi (server SSOT — client faqat ko'rsatadi, o'zi yozmaydi) */
@@ -1262,6 +1264,77 @@ export const api = {
 
   getSharedGraph: (code: string) =>
     request<{ ok: boolean; graph: SavedGraph }>('GET', `/graphs/share/${encodeURIComponent(code)}`),
+
+  // ── Jonli dars (Live) Faza 0 — jadval + xona + chat + davomat ────────
+  createLiveRoom: (data: { subjectId: string; title: string; description?: string | null; scheduledAt?: string | null }) =>
+    request<{ ok: true; room: import('../../../shared/live').LiveRoomPublic }>(
+      'POST', '/live/rooms', data,
+    ),
+  listLiveRooms: (opts?: { subject?: string; status?: 'scheduled' | 'live' | 'ended'; limit?: number }) => {
+    const p = new URLSearchParams()
+    if (opts?.subject) p.set('subject', opts.subject)
+    if (opts?.status) p.set('status', opts.status)
+    if (opts?.limit) p.set('limit', String(opts.limit))
+    const qs = p.toString()
+    return request<{
+      ok: true
+      mediaEnabled: boolean
+      rooms: import('../../../shared/live').LiveRoomPublic[]
+    }>('GET', `/live/rooms${qs ? `?${qs}` : ''}`)
+  },
+  getLiveRoom: (id: number) =>
+    request<{ ok: true; mediaEnabled: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
+      'GET', `/live/rooms/${id}`,
+    ),
+  joinLiveRoom: (id: number) =>
+    request<{
+      ok: true; role: 'teacher' | 'student'; canSpeak: boolean
+      roomName: string; token: string
+      expiresIn: number; mediaEnabled: boolean; mediaUrl: string | null
+      livekitToken: string | null
+    }>('POST', `/live/rooms/${id}/join`, {}),
+  leaveLiveRoom: (id: number) =>
+    request<{ ok: true }>('POST', `/live/rooms/${id}/leave`, {}),
+  listLiveParticipants: (id: number) =>
+    request<{ ok: true; participants: { userId: string; userName: string | null; role: string; canSpeak: boolean; joinedAt: string }[] }>(
+      'GET', `/live/rooms/${id}/participants`,
+    ),
+  raiseLiveHand: (id: number) =>
+    request<{ ok: true; status: 'pending' | 'approved' }>('POST', `/live/rooms/${id}/raise`, {}),
+  lowerLiveHand: (id: number) =>
+    request<{ ok: true }>('DELETE', `/live/rooms/${id}/raise`),
+  listLiveHands: (id: number, pendingOnly = true) =>
+    request<{ ok: true; hands: { userId: string; userName: string | null; status: string; createdAt: string }[] }>(
+      'GET', `/live/rooms/${id}/hands${pendingOnly ? '' : '?pendingOnly=false'}`,
+    ),
+  approveLiveHand: (id: number, targetUserId: string) =>
+    request<{ ok: true; status: string }>('POST', `/live/rooms/${id}/hands/${encodeURIComponent(targetUserId)}/approve`, {}),
+  rejectLiveHand: (id: number, targetUserId: string) =>
+    request<{ ok: true; status: string }>('POST', `/live/rooms/${id}/hands/${encodeURIComponent(targetUserId)}/reject`, {}),
+  listLiveMessages: (id: number, after = 0, limit = 50) =>
+    request<{ ok: true; messages: import('../../../shared/live').LiveMessagePublic[] }>(
+      'GET', `/live/rooms/${id}/messages?after=${after}&limit=${limit}`,
+    ),
+  postLiveMessage: (id: number, body: string) =>
+    request<{ ok: true; message: import('../../../shared/live').LiveMessagePublic }>(
+      'POST', `/live/rooms/${id}/messages`, { body },
+    ),
+  startLiveRoom: (id: number) =>
+    request<{ ok: true; room: import('../../../shared/live').LiveRoomPublic | null }>(
+      'POST', `/live/rooms/${id}/start`, {},
+    ),
+  endLiveRoom: (id: number) =>
+    request<{ ok: true; room: import('../../../shared/live').LiveRoomPublic | null }>(
+      'POST', `/live/rooms/${id}/end`, {},
+    ),
+  startLiveRecording: (id: number) =>
+    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/start`, {}),
+  stopLiveRecording: (id: number) =>
+    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/stop`, {}),
+  listLiveRecordings: () =>
+    request<{ ok: true; recordings: import('../../../shared/live').LiveRecordingPublic[] }>(
+      'GET', '/live/recordings',
+    ),
 }
 
 export interface PaymentHistoryRow {

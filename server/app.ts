@@ -48,6 +48,7 @@ import storageRouter      from './modules/storage/storage.router'
 import shareRouter        from './modules/share/share.router'
 import graphsRouter       from './modules/graphs/graphs.router'
 import mathBoardRouter    from './modules/math-board/math-board.router'
+import liveRouter          from './modules/live/live.router'
 import { paymentRouter }  from './modules/payments/payment.router'
 
 export function createApp() {
@@ -82,6 +83,10 @@ export function createApp() {
   app.use('/api/tutor/solve-photo', express.json({ limit: '6mb' }))
   // AI Tutor grafik tahlili — canvas PNG base64 (grafik quruvchi)
   app.use('/api/tutor/graph-analyze', express.json({ limit: '6mb' }))
+  // LiveKit webhook — imzo xom body'dan tekshiriladi (live.router'da), shuning
+  // uchun global json parser'dan OLDIN raw ushlanadi (req._body flag keyingi
+  // parser'larni o'tkazib yuboradi — admin/questions pattern'i bilan bir xil).
+  app.use('/api/live/webhook', express.raw({ type: 'application/json', limit: '100kb' }))
   // Matematik doska qo'lyozma snapshot PNG base64 (BoardCanvas, 512px)
   app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))
   // Matematik doska blokli recognition (Faza 4: N blok/rasm, 6mb jami)
@@ -190,6 +195,7 @@ export function createApp() {
   app.use('/api', shareRouter)
   app.use('/api', graphsRouter)
   app.use('/api', mathBoardRouter)
+  app.use('/api', liveRouter)
   app.use('/api/payments', paymentRouter)
 
   // 404 catch-all for unmatched /api routes

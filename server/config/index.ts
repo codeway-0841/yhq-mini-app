@@ -117,6 +117,16 @@ const envSchema = z.object({
   CONTENT_TOKEN_TTL_SECONDS:   z.string().regex(/^\d+$/).optional(),
   /** Bitta user uchun token issuance kunlik kvota — anti-scrape cap */
   CONTENT_TOKEN_DAILY_CAP:     z.string().regex(/^\d+$/).optional(),
+
+  /** Jonli dars (LiveKit SFU, Faza 1b) — yo'q bo'lsa video o'chiq, jadval/chat ishlaydi */
+  LIVEKIT_URL:            z.string().url().optional(),
+  LIVEKIT_API_KEY:        z.string().optional(),
+  LIVEKIT_API_SECRET:     z.string().optional(),
+  LIVEKIT_WEBHOOK_SECRET: z.string().optional(),
+  /** Live join-token HMAC kaliti (10 daqiqalik xona bileti) */
+  LIVE_TOKEN_SECRET: z.string().optional()
+    .transform((v) => (v && v.trim().length > 0 ? v.trim() : undefined))
+    .pipe(z.string().min(32).optional()),
 }).refine((data) => {
   // SMS enabled bo'lsa credentials MAJBURIY — fail-fast startup validation
   if (data.SMS_ENABLED === 'true') {
@@ -353,6 +363,22 @@ export const config = {
       env.CLOUDFLARE_R2_SECRET_ACCESS_KEY &&
       env.CLOUDFLARE_R2_QBANK_BUCKET
     ),
+  },
+
+  /** Jonli dars — control-plane har doim ON; media (LiveKit) faqat key'lar bo'lsa.
+   *  joinTokenSecret: prod'da LIVE_TOKEN_SECRET majburiy EMAS (join-token
+   *  imzosiz bo'lsa xona bileti soxtalashtiriladi — lekin join baribir DB
+   *  participant upsert + room status gate'dan o'tadi; secret bo'lmasa token
+   *  faqat opaque reference). Test/dev'da deterministik dev kalit. */
+  live: {
+    url: env.LIVEKIT_URL,
+    apiKey: env.LIVEKIT_API_KEY,
+    apiSecret: env.LIVEKIT_API_SECRET,
+    webhookSecret: env.LIVEKIT_WEBHOOK_SECRET,
+    mediaEnabled: Boolean(env.LIVEKIT_URL && env.LIVEKIT_API_KEY && env.LIVEKIT_API_SECRET),
+    joinTokenSecret: env.LIVE_TOKEN_SECRET
+      ?? (env.NODE_ENV === 'production' ? undefined : 'kivvi-live-dev-only-secret-32chars!!'),
+    joinTokenTtlSeconds: 600,
   },
 } as const
 

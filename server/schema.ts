@@ -43,6 +43,8 @@ export const users = pgTable('users', {
   trialGrantedAt: timestamp('trial_granted_at'),
   /** Admin panel ruxsati (savol CRUD). Faqat qo'lda DB orqali beriladi. */
   isAdmin:    boolean('is_admin').default(false).notNull(),
+  /** Jonli dars ustozi — live xona yaratish/start huquqi (admin paneldan beriladi). */
+  isTeacher:  boolean('is_teacher').default(false).notNull(),
   /** Joriy avatar ramkasi (do'kon buyumi, avatar-frames config id'si).
    *  NULL — ramkasiz. Egalik faqat user_items orqali tekshiriladi (equip guard). */
   avatarFrame: text('avatar_frame'),
@@ -1175,5 +1177,96 @@ export const images = pgTable('images', {
   index('idx_images_type').on(t.type),
   check('chk_images_ref_count', sql`${t.refCount} >= 0`),
   check('chk_images_dimensions', sql`${t.width} > 0 AND ${t.height} > 0 AND ${t.sizeBytes} > 0`),
+])
+
+// ─── JONLI DARS (LIVE) — Faza 0 control-plane ───────────────────────────────
+// Media-plane (LiveKit SFU) stateless: roomName = `live_<id>` deterministik.
+// Davomat `live_participants` dan (join/leave webhook emas, HTTP join/leave).
+export const liveRooms = pgTable('live_rooms', {
+  id:          serial('id').primaryKey(),
+  subjectId:   text('subject_id').notNull(),
+  teacherId:   text('teacher_id').notNull().references(() => users.id, { onDelete: 'restrict', onUpdate: 'cascade' }),
+  title:       text('title').notNull(),
+  description: text('description'),
+  /** 'scheduled' | 'live' | 'ended' */
+  status:      text('status').notNull().default('scheduled'),
+  scheduledAt: timestamp('scheduled_at'),
+  startedAt:   timestamp('started_at'),
+  endedAt:     timestamp('ended_at'),
+  /** Deterministik SFU xona nomi (`live_<id>`) — INSERT'dan keyin UPDATE bilan o'rnatiladi */
+  roomName:    text('room_name').notNull().unique(),
+  createdAt:   timestamp('created_at').defaultNow().notNull(),
+  updatedAt:   timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  index('idx_live_rooms_status_time').on(t.status, t.scheduledAt),
+  index('idx_live_rooms_subject').on(t.subjectId, t.status),
+  index('idx_live_rooms_teacher').on(t.teacherId),
+  check('chk_live_rooms_status', sql`${t.status} IN ('scheduled','live','ended')`),
+  check('chk_live_rooms_title_len', sql`char_length(${t.title}) BETWEEN 3 AND 120`),
+])
+
+/** Xona ishtirokchisi — PK (room, user): bitta user bitta xonada bitta qator. */
+export const liveParticipants = pgTable('live_participants', {
+  roomId:      integer('room_id').notNull().references(() => liveRooms.id, { onDelete: 'cascade' }),
+  userId:      text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** 'teacher' | 'student' — kirish paytida server resolve qiladi */
+  role:        text('role').notNull().default('student'),
+  /** Gapirish ruxsati — teacher'da doim true; student'da faqat raise-hand approve'dan keyin */
+  canSpeak:    boolean('can_speak').default(false).notNull(),
+  joinedAt:    timestamp('joined_at').defaultNow().notNull(),
+  leftAt:      timestamp('left_at'),
+  /** Sekund — leave'da joinedAt'dan hisoblanadi (davomat) */
+  durationSec: integer('duration_sec').default(0).notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.roomId, t.userId] }),
+  index('idx_live_participants_room').on(t.roomId),
+  check('chk_live_participants_role', sql`${t.role} IN ('teacher','student')`),
+  check('chk_live_participants_duration', sql`${t.durationSec} >= 0`),
+])
+
+/** Qo'l ko'tarishlar — ovoz ruxsati so'rovi navbati (1 user = 1 qator, status bilan). */
+export const liveHandRaises = pgTable('live_hand_raises', {
+  roomId:    integer('room_id').notNull().references(() => liveRooms.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** 'pending' | 'approved' | 'rejected' */
+  status:    text('status').notNull().default('pending'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.roomId, t.userId] }),
+  index('idx_live_hands_room_status').on(t.roomId, t.status),
+  check('chk_live_hands_status', sql`${t.status} IN ('pending','approved','rejected')`),
+])
+
+/** Xona chat'i — HTTP polling (5s) + LiveKit data-channel Faza 1b'da ephemeral. */
+export const liveMessages = pgTable('live_messages', {
+  id:        serial('id').primaryKey(),
+  roomId:    integer('room_id').notNull().references(() => liveRooms.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  body:      text('body').notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  index('idx_live_messages_room_time').on(t.roomId, t.createdAt),
+  check('chk_live_messages_len', sql`char_length(${t.body}) BETWEEN 1 AND 500`),
+])
+
+/**
+ * Dars yozuvlari — LiveKit RoomComposite Egress → R2 (MP4).
+ * `egressId` UNIQUE (webhook idempotency); `r2Key` egress_ended'da to'ladi.
+ * Playback: R2 public URL + key (kutubxona/k forged link emas — public bucket).
+ */
+export const liveRecordings = pgTable('live_recordings', {
+  id:        serial('id').primaryKey(),
+  roomId:    integer('room_id').notNull().references(() => liveRooms.id, { onDelete: 'cascade' }),
+  egressId:  text('egress_id').notNull(),
+  /** R2 object key (masalan 'live-recordings/live_5-1700000000.mp4') */
+  r2Key:     text('r2_key'),
+  /** 'started' | 'ready' | 'failed' */
+  status:    text('status').notNull().default('started'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  unique('uq_live_recording_egress').on(t.egressId),
+  index('idx_live_recordings_room').on(t.roomId),
+  check('chk_live_recordings_status', sql`${t.status} IN ('started','ready','failed')`),
 ])
 
