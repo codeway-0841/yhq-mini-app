@@ -55,6 +55,8 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   const [speakers, setSpeakers] = useState<string[]>([])
   const [videos, setVideos] = useState<RemoteVideo[]>([])
   const [localVideo, setLocalVideo] = useState<LocalVideoTrack | null>(null)
+  /** Brauzer avtopley bloklaganda true — user bosgan tugma bilan ochiladi */
+  const [audioBlocked, setAudioBlocked] = useState(false)
   const roomRef = useRef<Room | null>(null)
   const livekitRef = useRef<typeof import('livekit-client') | null>(null)
   const canSpeakRef = useRef(canSpeak)
@@ -128,6 +130,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         room.on(Lk.RoomEvent.ActiveSpeakersChanged, (list) => {
           setSpeakers(list.map((p) => p.identity))
         })
+        room.on(Lk.RoomEvent.AudioPlaybackStatusChanged, (playing) => {
+          setAudioBlocked(!playing)
+        })
         room.on(Lk.RoomEvent.Disconnected, () => {
           if (!cancelled) {
             setState('idle')
@@ -144,6 +149,13 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         }
         roomRef.current = room
         setState('connected')
+        // Avtopley: join bosilgan gesture'dan keyin darhol urinamiz (best-effort);
+        // brauzer rad etsa AudioPlaybackStatusChanged → audioBlocked → UI tugma.
+        try {
+          await room.startAudio()
+        } catch {
+          setAudioBlocked(true)
+        }
         if (canSpeakRef.current) {
           try {
             await room.localParticipant.setMicrophoneEnabled(true)
@@ -163,6 +175,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       setSpeakers([])
       setVideos([])
       setLocalVideo(null)
+      setAudioBlocked(false)
       setMicOn(false)
       setCameraOn(false)
       setScreenOn(false)
@@ -231,7 +244,19 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [screenOn, state])
 
-  return { state, micOn, micBlocked, micError, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen }
+  /** Avtopley blokini user gesture bilan ochish (Chrome autoplay policy). */
+  const unlockAudio = useCallback(async () => {
+    const room = roomRef.current
+    if (!room) return
+    try {
+      await room.startAudio()
+      setAudioBlocked(false)
+    } catch {
+      setAudioBlocked(true)
+    }
+  }, [])
+
+  return { state, micOn, micBlocked, micError, audioBlocked, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */

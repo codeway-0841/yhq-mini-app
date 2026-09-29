@@ -910,6 +910,7 @@ const UZ = {
   liveSpeaking: "gapiryapti", liveVoiceConnecting: "Ovoz ulanmoqda...",
   liveRecord: "Yozuvni boshlash", liveRecording: "Yozilmoqda...",
   liveStopRecord: "Yozuvni to'xtatish", liveRecordings: "Dars yozuvlari",
+  liveEnableAudio: "Ovozni yoqish",
 } as const
 
 type Keys = keyof typeof UZ
@@ -1813,6 +1814,7 @@ const RU: Record<Keys, string> = {
   liveSpeaking: "говорит", liveVoiceConnecting: "Подключение звука...",
   liveRecord: "Начать запись", liveRecording: "Идёт запись...",
   liveStopRecord: "Остановить запись", liveRecordings: "Записи уроков",
+  liveEnableAudio: "Включить звук",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

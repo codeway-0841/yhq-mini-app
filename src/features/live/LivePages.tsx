@@ -319,6 +319,11 @@ function LiveRoomPage() {
               {voice.speakers.length > 0 && (
                 <p className="text-xs text-psuccess">{voice.speakers.slice(0, 3).join(', ')} {tt('liveSpeaking')}</p>
               )}
+              {voice.audioBlocked && (
+                <Button size="sm" onClick={() => void voice.unlockAudio()}>
+                  {tt('liveEnableAudio')}
+                </Button>
+              )}
             </>
           ) : voice.state === 'failed' ? (
             <p className="text-sm text-pmuted">{tt('liveVideoSoon')}</p>
