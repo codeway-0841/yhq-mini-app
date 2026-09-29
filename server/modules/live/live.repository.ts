@@ -165,10 +165,14 @@ export const liveRepository = {
 
   async joinRoom(roomId: number, userId: string, role: LiveRole): Promise<{ canSpeak: boolean }> {
     // Qayta join can_speak'ni O'CHIRMAYDI (approve qilingan student qaytsa ham gapiradi).
-    // Teacher roli har doim can_speak=true.
+    // Teacher roli har doim can_speak=true. Avval approved qo'l bilan kirsa ham true.
     const rows = await executeRows<{ can_speak: boolean }>(sql`
       INSERT INTO live_participants (room_id, user_id, role, can_speak, joined_at, left_at)
-      VALUES (${roomId}, ${userId}, ${role}, ${role === 'teacher'}, now(), NULL)
+      VALUES (${roomId}, ${userId}, ${role},
+        (${role} = 'teacher' OR EXISTS (
+          SELECT 1 FROM live_hand_raises h
+          WHERE h.room_id = ${roomId} AND h.user_id = ${userId} AND h.status = 'approved'
+        )), now(), NULL)
       ON CONFLICT (room_id, user_id) DO UPDATE SET
         role = EXCLUDED.role,
         can_speak = (live_participants.can_speak OR EXCLUDED.can_speak),

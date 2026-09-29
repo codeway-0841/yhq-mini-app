@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Hand, Mic, MicOff, MonitorUp, Radio, Send, Users, Video, VideoOff } from 'lucide-react'
 import { PageHeader } from '@/shared/components/ui/page-header'
@@ -156,6 +156,8 @@ function LiveRoomPage() {
   const [draft, setDraft] = useState('')
   const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved'>('none')
   const [cloudCount, setCloudCount] = useState<number | null>(null)
+  const canSpeakRef = useRef(canSpeak)
+  canSpeakRef.current = canSpeak
   const [hands, setHands] = useState<{ userId: string; userName: string | null; status: string; createdAt: string }[]>([])
   const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended')
   const voice = useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo: canSpeak, enabled: joined && mediaEnabled })
@@ -188,6 +190,35 @@ function LiveRoomPage() {
     const t = setInterval(load, 10_000)
     return () => { alive = false; clearInterval(t) }
   }, [joined, role, roomId])
+
+  // Student: o'z ruxsatimni kuzatish (5s). Approve LiveKit token grant'ini
+  // o'zgartirmaydi (token join paytida muhrlangan) — shuning uchun yangi
+  // token olib qayta ulanamiz, aks holda publish rad etilib audio: 0 qoladi.
+  useEffect(() => {
+    if (!joined || role !== 'student') return
+    let alive = true
+    const load = async () => {
+      try {
+        const r = await api.listLiveParticipants(roomId)
+        if (!alive) return
+        const me = r.participants.find((p) => p.userId === user?.id)
+        if (!me) return
+        if (me.canSpeak && !canSpeakRef.current) {
+          const j = await api.joinLiveRoom(roomId)
+          if (!alive) return
+          setCanSpeak(true)
+          setHandStatus('approved')
+          setLivekitToken(j.livekitToken)
+          setMediaUrl(j.mediaUrl)
+        } else if (!me.canSpeak && canSpeakRef.current) {
+          setCanSpeak(false)
+        }
+      } catch { /* ignore */ }
+    }
+    load()
+    const t = setInterval(load, 5000)
+    return () => { alive = false; clearInterval(t) }
+  }, [joined, role, roomId, user?.id])
 
   useEffect(() => {
     if (!Number.isInteger(roomId) || roomId <= 0) return
