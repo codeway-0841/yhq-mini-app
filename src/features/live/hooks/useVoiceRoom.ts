@@ -176,7 +176,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     if (!room || state !== 'connected') return
     if (canSpeak && !micOn && !micBlocked) {
       room.localParticipant.setMicrophoneEnabled(true)
-        .then(() => { setMicOn(true); setMicError(null) })
+        .then(() => { setMicOn(true); setMicBlocked(false); setMicError(null) })
         .catch((err: unknown) => { setMicBlocked(true); setMicError(mapMicError(err)) })
     } else if (!canSpeak && micOn) {
       room.localParticipant.setMicrophoneEnabled(false).then(() => setMicOn(false)).catch(() => {})

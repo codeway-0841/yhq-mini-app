@@ -311,7 +311,7 @@ function LiveRoomPage() {
                   ? (voice.micOn ? tt('liveMicOn') : tt('liveMicOff'))
                   : handStatus === 'pending' ? tt('liveHandPending') : tt('liveVideoSoon')}
               </p>
-              {voice.micBlocked && (
+              {voice.micBlocked && !voice.micOn && (
                 <p className="text-xs text-pdanger">
                   {voice.micError === 'nodevice' ? tt('liveMicNoDevice') : tt('liveMicBlocked')}
                 </p>
