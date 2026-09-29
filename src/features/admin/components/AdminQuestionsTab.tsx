@@ -17,7 +17,7 @@ import { SUBJECTS } from '../../../shared/config/subjects'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { t } from '../../../shared/i18n'
 
 interface AdminQuestionsTabProps {
@@ -359,12 +359,14 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
             className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4" />
+            <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2" />
+            <ModalHeaderRow onClose={() => setConfirm(null)} label={t(lang, 'close')}>
+              <p id="delete-question-title" className="text-[17px] font-semibold text-pfg">#{deleteConfirm.id} savolni o'chirish</p>
+            </ModalHeaderRow>
             <div className="flex flex-col items-center text-center">
               <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.15)] border border-[rgb(var(--p-danger-rgb)/0.4)] flex items-center justify-center mb-3">
                 <AlertTriangle size={28} className="text-pdanger" />
               </div>
-              <p id="delete-question-title" className="text-[17px] font-semibold text-pfg mb-1">#{deleteConfirm.id} savolni o'chirish</p>
               <p className="text-[13px] text-pmuted mb-4">
                 Bu amalni ortga qaytarib bo'lmaydi. Savol bazadan butunlay o'chiriladi.
               </p>
@@ -531,14 +533,11 @@ function QuestionForm({
         className="relative w-full bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none" />
-        <ModalCloseButton onClick={onCancel} label={t(lang, 'close')} />
-        <div className="mb-3 px-12 text-center">
-          <div>
-            <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
-            <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>
-          </div>
-        </div>
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+        <ModalHeaderRow onClose={onCancel} label={t(lang, 'close')}>
+          <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
+          <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>
+        </ModalHeaderRow>
 
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>

@@ -9,7 +9,7 @@ import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 
 function renderBoldText(str: string) {
   const parts = str.split(/(\*\*.*?\*\*)/g)
@@ -70,8 +70,13 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={320} />
-        <ModalCloseButton onClick={onClose} label={isRu ? 'Закрыть' : 'Yopish'} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={isRu ? 'Закрыть' : 'Yopish'}>
+          <h3 id="sign-modal-title" className="font-display font-semibold text-lg text-pfg">
+            {signName}
+          </h3>
+          <p className="text-xs text-pmuted font-medium mt-0.5">{legalRef}</p>
+        </ModalHeaderRow>
         <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-xl shadow-2xs">
             {sign.code}
@@ -85,10 +90,6 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
           )}
         </div>
         <div className="relative z-10">
-          <h3 id="sign-modal-title" className="text-center font-display font-semibold text-lg text-pfg mb-1">
-            {signName}
-          </h3>
-          <p className="text-center text-xs text-pmuted mb-4 font-medium">{legalRef}</p>
           <div className="bg-pcard shadow-xs p-4 rounded-2xl mb-5">
             <FormattedDescription text={signDesc} lang={lang} />
           </div>

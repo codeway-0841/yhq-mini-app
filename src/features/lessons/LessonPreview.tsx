@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
-import { ChevronDown, ChevronUp, Dumbbell, Crown, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Dumbbell, Crown } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import { registerModal } from '../../shared/lib/navigation'
 import { useT, type Lang } from '../../shared/i18n'
 
@@ -37,17 +38,11 @@ export default function LessonPreview({ title, selectionKey, check, current, don
       </button>}
     </div>
     {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl relative" aria-labelledby="lesson-preview-title">
-      <button
-        type="button"
-        onClick={onClose}
-        aria-label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-        className="absolute left-3 top-3 grid size-7 place-items-center rounded-full bg-psurface text-pmuted shadow-xs hover:text-pfg transition-colors cursor-pointer"
-      >
-        <X size={16} strokeWidth={2} />
-      </button>
-      <div key={selectionKey} className="lesson-preview-copy">
-        <h2 id="lesson-preview-title">{title}</h2>
-      </div>
+      <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} className="px-1 pb-2">
+        <div key={selectionKey} className="lesson-preview-copy">
+          <h2 id="lesson-preview-title">{title}</h2>
+        </div>
+      </ModalHeaderRow>
       {premiumRequired && <p className="mb-4 text-center text-xs text-pmuted">{tt('pathPremiumHint')}</p>}
       <Button size="lg" block className="lesson-preview-start" data-jump={jump || premiumRequired} onClick={onStart}>
         {premiumRequired && <Crown aria-hidden="true" />}

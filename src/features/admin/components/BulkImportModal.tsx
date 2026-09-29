@@ -25,7 +25,7 @@ import {
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface BulkImportModalProps {
@@ -232,11 +232,9 @@ export default function BulkImportModal({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
-        <ModalCloseButton onClick={onClose} label="Yopish" />
-        {/* Header */}
-        <div className="relative z-10 px-12 pb-3 border-b border-pline text-center">
+        <ModalHeaderRow onClose={onClose} label="Yopish" className="border-b border-pline">
           <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center justify-center gap-2">
             <Upload size={18} className="text-ppurple" />
             Mukammal Savollar Importi
@@ -245,7 +243,7 @@ export default function BulkImportModal({
             <SubjectIcon size={13} strokeWidth={1.75} />
             <span className="font-semibold text-pfg">{subjectName}</span> fani uchun
           </p>
-        </div>
+        </ModalHeaderRow>
 
         {/* Download Template Bar */}
         <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-2xl text-xs shadow-xs">

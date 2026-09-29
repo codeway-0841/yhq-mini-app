@@ -5,7 +5,7 @@
  */
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { RotateCcw } from 'lucide-react'
-import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import MathText from '../../../shared/components/MathText'
 import { useT } from '../../../shared/i18n'
 import { api, ApiError } from '../../../shared/api'
@@ -69,10 +69,9 @@ export default function GraphAiSheet({ open, onClose, language, canvasRef, conte
 
   return (
     <Sheet open={open} onClose={onClose}>
-      <SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('graphClose')}>
         <SheetTitle>{tt('graphAiVisionTitle')}</SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('graphClose')} />
       <SheetBody className="flex max-h-[70dvh] flex-col gap-3 overflow-y-auto">
         {image && (
           <img

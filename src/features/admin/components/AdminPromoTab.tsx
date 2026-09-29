@@ -5,7 +5,7 @@ import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 
 export default function AdminPromoTab() {
   const [codes, setCodes] = useState<AdminPromoCode[]>([])
@@ -280,14 +280,14 @@ export default function AdminPromoTab() {
             <div
               data-drag-handle
               aria-hidden="true"
-              className="mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+              className="mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
             />
-            <ModalCloseButton onClick={() => setCreating(false)} label="Yopish" />
-
-            <h3 id="promo-create-title" className="text-base font-semibold text-pfg mb-4 flex items-center gap-2 pl-11">
-              <Ticket size={18} className="text-ppurple" />
-              Yangi promokod yaratish
-            </h3>
+            <ModalHeaderRow onClose={() => setCreating(false)} label="Yopish">
+              <h3 id="promo-create-title" className="text-base font-semibold text-pfg mb-4 flex items-center justify-center gap-2">
+                <Ticket size={18} className="text-ppurple" />
+                Yangi promokod yaratish
+              </h3>
+            </ModalHeaderRow>
 
             <form onSubmit={handleCreate} className="space-y-4">
               {/* Promokod turi */}

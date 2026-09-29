@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Delete, AlertCircle } from 'lucide-react'
-import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
 import { haptics } from '../../../platform/haptics'
 import {
@@ -224,10 +224,9 @@ export default function TestCalculatorSheet({
 
   return (
     <Sheet open={open} onClose={onClose} zIndex={70} className="max-w-md">
-      <SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('calculatorClose')}>
         <SheetTitle>{tt('calculatorTitle')}</SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('calculatorClose')} />
 
       <SheetBody className="space-y-4 px-4 pb-6">
         {disabledReason ? (

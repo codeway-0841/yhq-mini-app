@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import MathText from '../../../shared/components/MathText'
 import { cn } from '../../../shared/lib/cn'
 
@@ -67,18 +67,17 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
     <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="exam-review-title" backdropClassName="bg-black/60">
       <div className="relative w-full max-w-xl mx-auto bg-psurface rounded-t-sheet max-h-[90vh] flex flex-col overflow-hidden shadow-2xl pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <ModalMathGrid glow={false} height={420} />
-        <ModalCloseButton onClick={onClose} label={tt('closeResults')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="text-center pt-1 pb-2.5 px-12 relative z-10 select-none">
+        <ModalHeaderRow onClose={onClose} label={tt('closeResults')}>
           <h3 id="exam-review-title" className="text-[17px] font-bold text-pfg tracking-tight">
             {tt('examReviewTitle')}
           </h3>
           <p className="text-xs text-pmuted mt-0.5 font-medium">
             {items.filter((x) => x.status === 'correct').length} {tt('correct')} · {wrongCount} {tt('wrong')}
           </p>
-        </div>
+        </ModalHeaderRow>
 
         {/* Filter Tabs */}
         <div className="px-4 pb-3 flex gap-2 relative z-10">

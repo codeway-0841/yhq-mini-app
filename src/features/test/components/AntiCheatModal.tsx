@@ -26,7 +26,7 @@ export default function AntiCheatModal({
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
       <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-center shadow-2xl relative overflow-hidden">
         <ModalMathGrid glow={false} height={280} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">
           <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mx-auto mb-3.5 text-pdanger">

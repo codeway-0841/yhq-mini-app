@@ -18,7 +18,7 @@ import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
-import ModalCloseButton from './ModalCloseButton'
+import ModalHeaderRow from './ModalHeaderRow'
 import { Button } from './ui/button'
 import { cn } from '../lib/cn'
 
@@ -137,12 +137,11 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
     <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
       <div className="relative w-full rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={400} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
         <div className="pt-3 pb-2 relative z-10">
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <div data-drag-handle className="text-center px-12 select-none">
+          <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+          <ModalHeaderRow onClose={onClose} label={tt('close')} className="pb-0">
             <h2 id="settings-title" className="text-[19px] font-bold text-pfg tracking-tight">{tt('settingsTitle')}</h2>
-          </div>
+          </ModalHeaderRow>
         </div>
 
         {/* Kontent — scrollable */}
@@ -277,12 +276,13 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
           <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
             <ModalMathGrid glow={false} height={360} />
-            <ModalCloseButton onClick={() => setPicker(null)} label="Yopish" />
-            <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 flex-none relative z-10" />
-            <h2 id="accent-title" className="text-center text-lg font-bold text-pfg mb-1 flex-none relative z-10">
-              {tt('accentThemeLabel')}
-            </h2>
-            <p className="text-center text-xs text-pmuted mb-4 flex-none relative z-10">{tt('accentThemeDesc')}</p>
+            <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 flex-none relative z-10" />
+            <ModalHeaderRow onClose={() => setPicker(null)} label="Yopish">
+              <h2 id="accent-title" className="text-lg font-bold text-pfg flex-none">
+                {tt('accentThemeLabel')}
+              </h2>
+              <p className="text-xs text-pmuted flex-none">{tt('accentThemeDesc')}</p>
+            </ModalHeaderRow>
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
               <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">

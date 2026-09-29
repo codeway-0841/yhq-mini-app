@@ -12,7 +12,7 @@ import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
@@ -208,16 +208,15 @@ export default function ResultsModal({
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
       <div className="relative w-full max-w-lg bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
         <ModalMathGrid glow={false} height={420} />
-        <ModalCloseButton onClick={onFinish} label={tt('closeResults')} />
         {/* Drag handle */}
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="text-center mb-4 pt-0.5 px-12 relative z-10 select-none">
+        <ModalHeaderRow onClose={onFinish} label={tt('closeResults')}>
           <h2 id="results-title" data-drag-handle className="text-[17px] font-bold text-pfg tracking-tight">
             {tt('results')}
           </h2>
-        </div>
+        </ModalHeaderRow>
 
         {disqualifiedByCheat && (
           <div className="mb-3 bg-pcard rounded-2xl p-3.5 text-center shadow-2xs relative z-10 ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)]">

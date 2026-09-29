@@ -2,6 +2,7 @@ import * as React from 'react'
 import DialogOverlay from '../DialogOverlay'
 import ModalMathGrid from '../ModalMathGrid'
 import ModalCloseButton from '../ModalCloseButton'
+import ModalHeaderRow from '../ModalHeaderRow'
 import { Button } from './button'
 import { cn } from '@/shared/lib/cn'
 
@@ -45,7 +46,7 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>
@@ -54,8 +55,27 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
   )
 }
 
-function DialogHeader({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('flex flex-col items-center justify-center gap-1 px-12 pt-1 pb-3 text-center relative z-10', className)} {...props} />
+function DialogHeader({
+  className,
+  children,
+  onClose,
+  closeLabel = 'Yopish',
+  right,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement> & {
+  /** Berilsa — standart qator: [X chapda | sarlavha o'rtada] (ModalHeaderRow) */
+  onClose?: () => void
+  closeLabel?: string
+  right?: React.ReactNode
+}) {
+  if (onClose) {
+    return (
+      <ModalHeaderRow onClose={onClose} label={closeLabel} right={right} className={className}>
+        {children}
+      </ModalHeaderRow>
+    )
+  }
+  return <div className={cn('flex flex-col items-center justify-center gap-1 px-12 pt-1 pb-3 text-center relative z-10', className)} {...props}>{children}</div>
 }
 
 function DialogTitle({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
@@ -121,7 +141,7 @@ function ConfirmDialog({
 }: ConfirmDialogProps) {
   return (
     <Dialog open={open} onClose={onClose} zIndex={zIndex}>
-      <DialogHeader>
+      <DialogHeader onClose={onClose}>
         <DialogTitle>{title}</DialogTitle>
         {description && <DialogDescription>{description}</DialogDescription>}
       </DialogHeader>

@@ -3,7 +3,7 @@
  * Nuqtalarni qo'lda kiritish yoki grafikni bosib yig'ish mumkin.
  */
 import { Plus, Trash2 } from 'lucide-react'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
 import { Switch } from '../../../shared/components/ui/switch'
 import { useT } from '../../../shared/i18n'
 import { linearRegression } from '../lib/math'
@@ -38,10 +38,9 @@ export default function LabSheet({
 
   return (
     <Sheet open={open} onClose={onClose}>
-      <SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('graphClose')}>
         <SheetTitle>{tt('graphLab')}</SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('graphClose')} />
       <SheetBody className="flex flex-col gap-3">
         <div className="flex items-center justify-between gap-3 rounded-2xl bg-psurface p-3">
           <div className="min-w-0 flex-1">

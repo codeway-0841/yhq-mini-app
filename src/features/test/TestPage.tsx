@@ -21,7 +21,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { Button } from '../../shared/components/ui/button'
 import { ConfirmDialog } from '../../shared/components/ui/dialog'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../shared/components/ui/sheet'
 import TestExplanation from './components/TestExplanation'
 import TestHelperAvatar from './components/TestHelperAvatar'
 import { useT } from '../../shared/i18n'
@@ -633,8 +633,7 @@ export default function TestPage() {
       )}
 
       <Sheet open={showMenu} onClose={() => setShowMenu(false)} className="overflow-hidden">
-        <SheetClose onClose={() => setShowMenu(false)} label={tt('pathClose')} />
-        <SheetHeader><SheetTitle>{tt('testMenu')}</SheetTitle></SheetHeader>
+        <SheetHeader onClose={() => setShowMenu(false)} closeLabel={tt('pathClose')}><SheetTitle>{tt('testMenu')}</SheetTitle></SheetHeader>
         <SheetBody className="space-y-2.5 pt-1">
           <Button
             variant="secondary"

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import {
   Camera, Image as ImageIcon, ChevronLeft, Loader2,
   RefreshCw, MessageSquareQuote, Crown, BookOpen,
-  History, Scan, Flashlight, Calculator, X, Sparkles, AlertCircle,
+  History, Scan, Flashlight, Calculator, Sparkles, AlertCircle,
   FlipHorizontal,
 } from 'lucide-react'
 import { api, ApiError, type TutorQuota } from '../../shared/api'
@@ -20,6 +20,7 @@ import {
   rememberCameraAccess,
 } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { nearestCenterIndex } from './subject-carousel'
 import { haptics } from '../../platform/haptics'
@@ -1139,22 +1140,15 @@ export default function SnapSolveHub() {
       {isManualInputOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
           <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
-            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
+            <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+            <ModalHeaderRow onClose={() => setIsManualInputOpen(false)} label={tt('close')} className="px-0">
+              <span className="flex items-center justify-center gap-2">
                 <Calculator size={20} className="text-pprimary" />
                 <h3 className="text-[16px] font-bold">
                   {language === 'ru' ? 'Ввести задачу вручную' : 'Masalani qo‘lda yozish'}
                 </h3>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsManualInputOpen(false)}
-                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-pcard hover:text-pfg transition-colors"
-              >
-                <X size={18} />
-              </button>
-            </div>
+              </span>
+            </ModalHeaderRow>
 
             <p className="text-xs text-pmuted leading-relaxed">
               {language === 'ru'
@@ -1195,22 +1189,15 @@ export default function SnapSolveHub() {
       {isHistoryOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
           <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
-            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
-            <div className="flex items-center justify-between pb-3 border-b border-pline shrink-0">
-              <div className="flex items-center gap-2">
+            <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
+            <ModalHeaderRow onClose={() => setIsHistoryOpen(false)} label={tt('close')} className="px-0 pb-3 border-b border-pline shrink-0">
+              <span className="flex items-center justify-center gap-2">
                 <History size={18} className="text-pprimary" />
                 <h3 className="text-[15px] font-bold">
                   {language === 'ru' ? 'Недавние решения' : 'Oxirgi yechimlar'}
                 </h3>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsHistoryOpen(false)}
-                className="grid size-8 place-items-center rounded-full text-pmuted hover:bg-pcard hover:text-pfg"
-              >
-                <X size={18} />
-              </button>
-            </div>
+              </span>
+            </ModalHeaderRow>
 
             <div className="flex-1 overflow-y-auto py-3 space-y-2 no-scrollbar">
               {history.map((item) => (

@@ -104,7 +104,7 @@ export default function WonderLearningMapModal({
           >
             <X size={17} strokeWidth={2} />
           </button>
-          <div className="flex min-w-0 flex-1 items-center gap-2.5">
+          <div className="flex min-w-0 flex-1 items-center justify-center gap-2.5 text-center">
             <h2 className="text-sm sm:text-base font-bold text-stone-900 dark:text-stone-100">
               {course.title} learning map
             </h2>

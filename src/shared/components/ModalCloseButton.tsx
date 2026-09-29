@@ -9,8 +9,9 @@ export interface ModalCloseButtonProps {
 }
 
 /**
- * ModalCloseButton — Apple / Craft / iOS style suzuvchi dumaloq X tugmasi
- * (oq fonli doira, nafis soya va o'rtaga joylashgan to'q X ikonka).
+ * ModalCloseButton — Achievement-uslubidagi dumaloq X tugmasi (SSOT):
+ * oq fonli doira (dark'da white/10), nafis soya, ingichka border,
+ * o'rtadagi 18px X. Barcha modal/sheet'lar SHU tugmadan foydalanadi.
  */
 export function ModalCloseButton({
   onClick,
@@ -25,15 +26,15 @@ export function ModalCloseButton({
       aria-label={label}
       className={cn(
         'absolute left-3.5 top-3 z-30 flex items-center justify-center rounded-full',
-        'bg-white text-slate-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06]',
-        'dark:bg-[#1E2530] dark:text-white dark:border-white/10 dark:shadow-[0_2px_12px_rgba(0,0,0,0.4)]',
-        'transition-all duration-150 ease-out hover:scale-105 active:scale-95 cursor-pointer',
+        'bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04]',
+        'dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none',
+        'transition-transform duration-150 ease-out hover:scale-105 active:scale-95 cursor-pointer',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-        size === 'md' ? 'size-9' : 'size-8',
+        size === 'md' ? 'size-10' : 'size-9',
         className,
       )}
     >
-      <X className={size === 'md' ? 'size-4' : 'size-3.5'} strokeWidth={2.4} />
+      <X className={size === 'md' ? 'size-[18px]' : 'size-4'} strokeWidth={2.4} />
     </button>
   )
 }

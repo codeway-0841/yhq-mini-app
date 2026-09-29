@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   XCircle,
 } from 'lucide-react'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -170,28 +171,29 @@ export default function WonderLiveChallengeModal({
   if (!hasStarted) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-sm p-4 animate-in fade-in duration-200 select-none">
-        <div className="relative w-full max-w-md rounded-3xl border-2 border-stone-200 dark:border-stone-800 bg-[#FFFDF8] dark:bg-[#1C1411] p-6 sm:p-8 text-center shadow-2xl animate-in zoom-in-95 duration-200">
-          <button
-            type="button"
-            onClick={onClose}
-            className="absolute top-4 left-4 p-2 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 cursor-pointer"
-            aria-label="Close"
+        <div className="relative w-full max-w-md rounded-3xl border-2 border-stone-200 dark:border-stone-800 bg-[#FFFDF8] dark:bg-[#1C1411] p-6 sm:p-8 pt-5 text-center shadow-2xl animate-in zoom-in-95 duration-200">
+          <div
+            data-drag-handle
+            aria-hidden="true"
+            className="mx-auto mb-2 h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+          />
+          <ModalHeaderRow
+            onClose={onClose}
+            label="Close"
+            closeClassName="border-transparent bg-transparent shadow-none dark:border-transparent dark:bg-transparent text-stone-400 hover:text-stone-700 dark:text-stone-400 dark:hover:text-stone-200"
           >
-            <X size={20} />
-          </button>
+            <span className="inline-block px-3 py-1 rounded-full bg-amber-500/15 text-amber-900 dark:text-amber-300 font-mono text-xs font-black uppercase tracking-wider">
+              60s LIVE CHALLENGE
+            </span>
+            <h2 className="text-xl sm:text-2xl font-serif font-black text-stone-900 dark:text-stone-100 mt-2">
+              {sectionTitle}
+            </h2>
+          </ModalHeaderRow>
 
           {/* Glowing Boss Icon */}
           <div className="relative mx-auto mb-5 size-24 rounded-3xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-amber-400 flex items-center justify-center text-white shadow-[0_8px_0_0_#0369A1] animate-bounce duration-1000">
             <Zap size={44} className="fill-current text-white" />
           </div>
-
-          <span className="inline-block px-3 py-1 rounded-full bg-amber-500/15 text-amber-900 dark:text-amber-300 font-mono text-xs font-black uppercase tracking-wider mb-2">
-            60s LIVE CHALLENGE
-          </span>
-
-          <h2 className="text-xl sm:text-2xl font-serif font-black text-stone-900 dark:text-stone-100">
-            {sectionTitle}
-          </h2>
 
           <p className="text-xs sm:text-sm text-stone-600 dark:text-stone-400 mt-2 leading-relaxed">
             {lang === 'ru'
@@ -326,7 +328,7 @@ export default function WonderLiveChallengeModal({
             type="button"
             onClick={onClose}
             aria-label="Close"
-            className="p-1 text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 cursor-pointer"
+            className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-stone-500 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-stone-200 dark:border-white/10 dark:shadow-none hover:text-stone-800 dark:hover:text-white active:scale-95 transition-all cursor-pointer"
           >
             <X size={20} />
           </button>

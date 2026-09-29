@@ -4,7 +4,7 @@ import { modules } from '../../content/modules'
 import { useT, type Lang } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
-import { Dialog, DialogBody, DialogHeader, DialogTitle, DialogDescription } from '../../shared/components/ui/dialog'
+import { Dialog, DialogBody, DialogHeader, DialogTitle, DialogDescription, DialogClose } from '../../shared/components/ui/dialog'
 import { getModuleIcon } from './module-icons'
 
 export const MODULE_TRANSITION_MS = 5000
@@ -32,6 +32,7 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
 
   return <Dialog onClose={onStay} className="module-complete text-center" zIndex={60}>
     <Confetti count={24} />
+    <DialogClose onClose={onStay} />
     <DialogHeader className="module-complete-header relative items-center pt-8">
       <div className="module-medal" aria-hidden="true">
         <span className="module-medal-orbit" />

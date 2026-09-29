@@ -15,6 +15,7 @@ import {
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -237,21 +238,21 @@ export default function SubscriptionModal({
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
           <ModalMathGrid glow={false} height={420} />
         </div>
-        {step === 'choose_plan' && <ModalCloseButton onClick={onClose} label="Yopish" />}
+        {step === 'choose_plan' && (
+          <ModalHeaderRow onClose={onClose} label="Yopish">
+            <h2 id="subscription-modal-title" className="text-[19px] font-bold text-pfg tracking-tight">
+              {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
+            </h2>
+          </ModalHeaderRow>
+        )}
         {/* Yuqori surish tutqichi (Drag Handle) */}
         <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
-          <div data-drag-handle className="w-10 h-1 rounded-full bg-plineStrong" />
+          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
         </div>
 
         {/* ── STEP 1: TARIFNI TANLANG ── */}
         {step === 'choose_plan' && (
           <div className="flex flex-col flex-1 overflow-hidden">
-            {/* Header: Centered Minimalist */}
-            <div className="pt-1 pb-3 text-center shrink-0 relative z-10 px-12">
-              <h2 id="subscription-modal-title" className="text-[19px] font-bold text-pfg tracking-tight">
-                {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
-              </h2>
-            </div>
 
             {/* Plans List (Claude.ai bosilganda ochiladigan akordeon kartalari) */}
             <div className="p-4 sm:p-5 space-y-3 overflow-y-auto flex-1 overscroll-contain relative z-10">
@@ -354,37 +355,28 @@ export default function SubscriptionModal({
         {step === 'payment_method' && (
           <div className="flex flex-col flex-1 overflow-hidden">
             {/* Header with Back button & Help link */}
-            <div className="flex items-center justify-between px-4 pb-3 pt-2 border-b border-pline shrink-0">
+            <div className="relative z-10 flex items-center gap-2.5 px-4 pb-3 border-b border-pline shrink-0">
+              <ModalCloseButton onClick={onClose} label="Yopish" className="relative left-auto top-auto shrink-0" />
               <button
                 type="button"
                 onClick={() => setStep('choose_plan')}
-                className="size-9 rounded-full bg-white dark:bg-[#1E2530] text-slate-800 dark:text-white shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
+                className="size-10 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
                 aria-label={tt('backWord')}
               >
                 <ChevronLeft size={20} />
               </button>
-              <h2 className="text-[17px] font-bold tracking-tight text-pfg text-center">
+              <h2 className="min-w-0 flex-1 text-[17px] font-bold tracking-tight text-pfg text-center">
                 {tt('selectPaymentTitle')}
               </h2>
 
-              <div className="flex items-center gap-1.5">
-                <button
-                  type="button"
-                  onClick={handleGetHelp}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-white dark:bg-[#1E2530] px-3 py-1.5 text-[11px] font-semibold text-pmuted hover:text-pfg shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 transition-colors cursor-pointer"
-                >
-                  <Headphones size={12} />
-                  <span>{tt('getHelp')}</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={onClose}
-                  aria-label="Yopish"
-                  className="size-9 rounded-full bg-white dark:bg-[#1E2530] text-slate-800 dark:text-white shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:border-white/10 flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
-                >
-                  <X size={16} strokeWidth={2.4} />
-                </button>
-              </div>
+              <button
+                type="button"
+                onClick={handleGetHelp}
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[11px] font-semibold text-gray-700 hover:text-pfg shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 transition-colors cursor-pointer"
+              >
+                <Headphones size={12} />
+                <span>{tt('getHelp')}</span>
+              </button>
             </div>
 
             {/* Main Content */}

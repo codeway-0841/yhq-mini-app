@@ -3,7 +3,7 @@ import {
   ArrowUpRight, BookOpen, Calculator, Circle, Eraser, Eye, EyeOff, Hand,
   Highlighter, Minus, NotebookPen, PenLine, Redo2, Square, Trash2, Undo2, X,
 } from 'lucide-react'
-import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useShakeGesture } from '../../../shared/hooks/useShakeGesture'
@@ -454,8 +454,7 @@ export default function TestDrawingLayer({
 
       {/* Qoralama doskasi (Sheet) */}
       <Sheet open={isScratchpadOpen} onClose={() => setScratchpadOpen(false)} zIndex={70} className="max-w-2xl overflow-hidden" dragHandleOnly>
-        <SheetHeader><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
-        <SheetClose onClose={() => setScratchpadOpen(false)} label={tt('drawingScratchpadClose')} />
+        <SheetHeader onClose={() => setScratchpadOpen(false)} closeLabel={tt('drawingScratchpadClose')}><SheetTitle>{tt('drawingScratchpadTitle')}</SheetTitle></SheetHeader>
         <SheetBody className="relative space-y-3 px-3 pb-3">
           {shakeFeedback && (
             <div className="pointer-events-none absolute top-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-900/95 text-white text-xs font-semibold shadow-xl backdrop-blur-md border border-slate-700/80 motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95">

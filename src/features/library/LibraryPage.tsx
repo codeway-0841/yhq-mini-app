@@ -24,7 +24,6 @@ import { EmptyState } from '../../shared/components/ui/empty-state'
 import {
   Sheet,
   SheetBody,
-  SheetClose,
   SheetHeader,
   SheetTitle,
 } from '../../shared/components/ui/sheet'
@@ -279,10 +278,9 @@ export default function LibraryPage() {
 
       {/* Sinf tanlash pastki modal oynasi */}
       <Sheet open={gradeSheetOpen} onClose={() => setGradeSheetOpen(false)}>
-        <SheetHeader>
+        <SheetHeader onClose={() => setGradeSheetOpen(false)} closeLabel={tt('close')}>
           <SheetTitle>{language === 'ru' ? 'Выберите класс' : 'Sinfni tanlang'}</SheetTitle>
         </SheetHeader>
-        <SheetClose onClose={() => setGradeSheetOpen(false)} label={tt('close')} />
         <SheetBody className="max-h-[65svh] overflow-y-auto pb-6">
           <div className="grid grid-cols-3 gap-2">
             <button
@@ -321,10 +319,9 @@ export default function LibraryPage() {
 
       {/* Fan tanlash pastki modal oynasi */}
       <Sheet open={subjectSheetOpen} onClose={() => setSubjectSheetOpen(false)}>
-        <SheetHeader>
+        <SheetHeader onClose={() => setSubjectSheetOpen(false)} closeLabel={tt('close')}>
           <SheetTitle>{language === 'ru' ? 'Выберите предмет' : 'Fanni tanlang'}</SheetTitle>
         </SheetHeader>
-        <SheetClose onClose={() => setSubjectSheetOpen(false)} label={tt('close')} />
         <SheetBody className="max-h-[65svh] overflow-y-auto pb-6">
           <div className="flex flex-col gap-2">
             <button

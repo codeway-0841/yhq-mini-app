@@ -2,6 +2,7 @@ import * as React from 'react'
 import DialogOverlay from '../DialogOverlay'
 import ModalMathGrid from '../ModalMathGrid'
 import ModalCloseButton from '../ModalCloseButton'
+import ModalHeaderRow from '../ModalHeaderRow'
 import { cn } from '@/shared/lib/cn'
 
 /**
@@ -74,7 +75,7 @@ function Sheet({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>
@@ -83,7 +84,26 @@ function Sheet({
   )
 }
 
-function SheetHeader({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement>) {
+function SheetHeader({
+  className,
+  children,
+  onClose,
+  closeLabel = 'Yopish',
+  right,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement> & {
+  /** Berilsa — standart qator: [X chapda | sarlavha o'rtada] (ModalHeaderRow) */
+  onClose?: () => void
+  closeLabel?: string
+  right?: React.ReactNode
+}) {
+  if (onClose) {
+    return (
+      <ModalHeaderRow onClose={onClose} label={closeLabel} right={right} className={className}>
+        {children}
+      </ModalHeaderRow>
+    )
+  }
   return (
     <div data-drag-handle className={cn('relative z-10 flex flex-col items-center justify-center min-h-10 px-12 pb-3 pt-0.5 select-none text-center', className)} {...props}>
       {children}

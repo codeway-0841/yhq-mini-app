@@ -14,7 +14,7 @@ import { buildSpeedRounds, buildMatchPairs, type SpeedRound, type MatchTile } fr
 import SignIcon from './SignIcon'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
-import { Dialog, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from '../../shared/components/ui/dialog'
+import { Dialog, DialogHeader, DialogTitle, DialogDescription, DialogFooter, DialogClose } from '../../shared/components/ui/dialog'
 import { Button } from '../../shared/components/ui/button'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -243,6 +243,7 @@ function MatchGame({ onExit }: { onExit: () => void }) {
 
       {doneMs !== null && (
         <Dialog open onClose={onExit}>
+          <DialogClose onClose={onExit} />
           <DialogHeader className="items-center text-center">
             <Trophy size={40} className="text-pgold mx-auto" fill="currentColor" />
             <DialogTitle>{tt('signsGameWin')}</DialogTitle>

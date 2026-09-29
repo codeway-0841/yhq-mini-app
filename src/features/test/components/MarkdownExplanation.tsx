@@ -3,7 +3,7 @@ import type { RoadSign } from '../../../content/signs'
 import { TrafficCone, ExternalLink } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -67,8 +67,13 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={340} />
-        <ModalCloseButton onClick={onClose} label="Yopish" />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label="Yopish">
+          <h3 id="sign-detail-modal-title" className="font-display font-semibold text-base text-pfg">
+            {sign.name}
+          </h3>
+          <p className="text-xs text-pmuted font-medium mt-0.5">{sign.legalRef}</p>
+        </ModalHeaderRow>
         <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.1)] rounded-full">
             {sign.code}
@@ -83,12 +88,8 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
           )}
         </div>
 
-        <h3 id="sign-detail-modal-title" className="text-center font-display font-semibold text-base text-pfg mb-1">
-          {sign.name}
-        </h3>
-        <p className="text-center text-xs text-pmuted mb-4 font-medium">{sign.legalRef}</p>
-
-        <div className="bg-pcard shadow-xs p-3.5 rounded-2xl mb-4">
+        <div className="relative z-10">
+          <div className="bg-pcard shadow-xs p-3.5 rounded-2xl mb-4">
           <FormattedSignDescription text={sign.description} />
         </div>
 
@@ -98,6 +99,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
         >
           Tushunarli
         </button>
+        </div>
       </div>
     </DialogOverlay>
   )

@@ -1,5 +1,5 @@
 import { GraduationCap, Sparkles } from 'lucide-react'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose, SheetFooter } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetFooter } from '../../../shared/components/ui/sheet'
 import { Button } from '../../../shared/components/ui/button'
 import { useT, type Lang } from '../../../shared/i18n'
 import MarkdownExplanation from './MarkdownExplanation'
@@ -21,8 +21,7 @@ export default function TestExplanation({ loading, text, lesson, language, onClo
   return (
     <Sheet onClose={onClose} className="flex max-h-[75dvh] flex-col overflow-visible">
       <div className="pointer-events-none absolute -top-8 right-5"><TestHelperAvatar /></div>
-      <SheetClose onClose={onClose} label={tt('pathClose')} />
-      <SheetHeader className="shrink-0 px-12"><SheetTitle>{tt('whyThis')}</SheetTitle></SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('pathClose')} className="shrink-0"><SheetTitle>{tt('whyThis')}</SheetTitle></SheetHeader>
       <SheetBody className="min-h-0 overflow-y-auto" aria-live="polite" aria-busy={loading}>
         {loading ? <p className="py-3 text-sm text-pmuted">{tt('loadingDots')}</p>
           : text ? <MarkdownExplanation content={text} />

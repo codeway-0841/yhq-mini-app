@@ -4,7 +4,6 @@ import { Button } from '../../../shared/components/ui/button'
 import {
   Sheet,
   SheetBody,
-  SheetClose,
   SheetFooter,
   SheetHeader,
   SheetTitle,
@@ -36,10 +35,9 @@ export function BookDetailSheet({ book, language, gradeText, onClose, onRead }: 
     <Sheet open={book != null} onClose={onClose}>
       {book && (
         <>
-          <SheetHeader>
-            <SheetTitle className="pr-12">{book.title}</SheetTitle>
+          <SheetHeader onClose={onClose} closeLabel={tt('close')}>
+            <SheetTitle>{book.title}</SheetTitle>
           </SheetHeader>
-          <SheetClose onClose={onClose} label={tt('close')} />
 
           <SheetBody className="flex gap-4 pb-3">
             <img

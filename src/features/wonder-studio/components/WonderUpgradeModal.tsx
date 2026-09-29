@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X } from 'lucide-react'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import {
   WonderRedBear,
   WonderProCheckmark,
@@ -34,7 +34,7 @@ export default function WonderUpgradeModal({ onClose }: WonderUpgradeModalProps)
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs font-sans select-none animate-in fade-in duration-150">
-      <div className="relative w-full max-w-xl rounded-3xl bg-[#F6F4EE] dark:bg-[#150F0D] border border-stone-200/90 dark:border-stone-800 shadow-2xl p-6 sm:p-8 space-y-6 overflow-hidden">
+      <div className="relative w-full max-w-xl rounded-3xl bg-[#F6F4EE] dark:bg-[#150F0D] border border-stone-200/90 dark:border-stone-800 shadow-2xl p-6 sm:p-8 pt-5 space-y-6 overflow-hidden">
         {/* Radial Soft Blue Ambient Glow (1:1 with node_clicked_detail.png) */}
         <div
           aria-hidden="true"
@@ -45,23 +45,32 @@ export default function WonderUpgradeModal({ onClose }: WonderUpgradeModalProps)
           }}
         />
 
-        {/* Close Button in top right */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-5 left-5 z-20 p-1.5 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
+        {/* Close + Title Row */}
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="relative z-20 mx-auto h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalHeaderRow
+          onClose={onClose}
+          label="Close"
+          className="relative z-20"
+          closeClassName="border-transparent bg-transparent shadow-none dark:border-transparent dark:bg-transparent text-stone-400 hover:text-stone-700 dark:text-stone-400 dark:hover:text-stone-200"
         >
-          <X size={20} />
-        </button>
+          <h2 className="text-xl sm:text-2xl font-serif font-bold text-stone-900 dark:text-stone-100 tracking-tight leading-tight">
+            {isSuccess ? (
+              'Welcome to Wondering Pro!'
+            ) : (
+              <>Learn without limits <br /><span className="text-[#67C2F9]">with Pro</span></>
+            )}
+          </h2>
+        </ModalHeaderRow>
 
         {isSuccess ? (
           <div className="py-12 text-center space-y-3 relative z-10">
             <div className="size-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-3xl">
               ✓
             </div>
-            <h2 className="text-xl font-bold text-stone-900 dark:text-stone-100">
-              Welcome to Wondering Pro!
-            </h2>
             <p className="text-xs text-stone-500">
               Your free week has been activated. Enjoy unlimited learning without limits.
             </p>
@@ -70,11 +79,6 @@ export default function WonderUpgradeModal({ onClose }: WonderUpgradeModalProps)
           <div className="relative z-10 space-y-6">
             {/* Mascot & Title (1:1 with node_clicked_detail.png) */}
             <div className="text-center space-y-2">
-              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-stone-900 dark:text-stone-100 tracking-tight leading-tight">
-                Learn without limits <br />
-                <span className="text-[#67C2F9]">with Pro</span>
-              </h2>
-
               {/* 1:1 Red Mascot Bear SVG Illustration */}
               <div className="py-1 flex items-center justify-center">
                 <WonderRedBear size={110} />

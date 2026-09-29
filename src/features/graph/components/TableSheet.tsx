@@ -4,7 +4,7 @@
  */
 import { useMemo } from 'react'
 import { Copy } from 'lucide-react'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
 import { useToast } from '../../../shared/components/ToastContainer'
 import { useT } from '../../../shared/i18n'
 import type { CompiledExpression } from '../lib/math'
@@ -70,10 +70,9 @@ export default function TableSheet({
 
   return (
     <Sheet open={open} onClose={onClose}>
-      <SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('graphClose')}>
         <SheetTitle>{tt('graphTable')}</SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('graphClose')} />
       <SheetBody className="flex flex-col gap-3">
         <button
           type="button"

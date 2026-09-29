@@ -9,7 +9,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 const ClickLogo = memo(function ClickLogo({ className }: { className?: string }) {
@@ -158,24 +158,21 @@ export default function PaymentMethodModal({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
-        <ModalCloseButton onClick={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} />
         <div className="relative z-10">
         {/* Header */}
-        <div className="px-12 pb-4 border-b border-pline text-center">
+        <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} className="border-b border-pline">
           <div className="mx-auto mb-2 grid size-10 place-items-center rounded-2xl bg-psurface text-pgold shadow-2xs">
             <Sparkles size={18} strokeWidth={1.75} />
           </div>
-          <div>
-              <h2 id="payment-method-title" className="text-base font-semibold">
-                {lang === 'ru' ? 'Оплата подписки' : "To'lov usulini tanlang"}
-              </h2>
-              <p className="text-xs text-pmuted">
-                {lang === 'ru' ? plan.titleRu : plan.titleUz} ({lang === 'ru' ? plan.periodRu : plan.periodUz})
-              </p>
-            </div>
-        </div>
+          <h2 id="payment-method-title" className="text-base font-semibold">
+            {lang === 'ru' ? 'Оплата подписки' : "To'lov usulini tanlang"}
+          </h2>
+          <p className="text-xs text-pmuted">
+            {lang === 'ru' ? plan.titleRu : plan.titleUz} ({lang === 'ru' ? plan.periodRu : plan.periodUz})
+          </p>
+        </ModalHeaderRow>
 
         {/* Success View */}
         {isSuccess ? (

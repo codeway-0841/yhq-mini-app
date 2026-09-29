@@ -1,4 +1,4 @@
-import { X } from 'lucide-react'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { WonderRedBear } from './WonderIcons'
 
 interface WonderUnlockModalProps {
@@ -24,16 +24,24 @@ export default function WonderUnlockModal({
 }: WonderUnlockModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-xs font-sans select-none animate-in fade-in duration-150">
-      <div className="relative w-full max-w-md rounded-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border border-stone-200/90 dark:border-stone-800 shadow-2xl p-6 sm:p-8 text-center space-y-4">
-        {/* Close Button */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-4 left-4 p-1 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 transition-colors cursor-pointer"
-          aria-label="Close"
+      <div className="relative w-full max-w-md rounded-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border border-stone-200/90 dark:border-stone-800 shadow-2xl p-6 sm:p-8 pt-5 text-center space-y-4">
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="mx-auto h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+        />
+        <ModalHeaderRow
+          onClose={onClose}
+          label="Close"
+          closeClassName="border-transparent bg-transparent shadow-none dark:border-transparent dark:bg-transparent text-stone-400 hover:text-stone-700 dark:text-stone-400 dark:hover:text-stone-200"
         >
-          <X size={18} />
-        </button>
+          <h3 className="text-base sm:text-lg font-bold text-stone-900 dark:text-stone-100">
+            {isEnrolled ? 'Jump ahead to this lesson' : 'Import course to unlock'}
+          </h3>
+          <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-medium max-w-xs mx-auto leading-relaxed mt-1">
+            {lessonTitle}
+          </p>
+        </ModalHeaderRow>
 
         {/* 1:1 Mascot: Red Bear for Pro Jump Ahead, Star for Course Import */}
         <div className="flex justify-center pt-2">
@@ -47,16 +55,6 @@ export default function WonderUnlockModal({
             />
           )}
         </div>
-
-        {/* Title */}
-        <h3 className="text-base sm:text-lg font-bold text-stone-900 dark:text-stone-100">
-          {isEnrolled ? 'Jump ahead to this lesson' : 'Import course to unlock'}
-        </h3>
-
-        {/* Subtitle / Lesson Name */}
-        <p className="text-xs sm:text-sm text-stone-700 dark:text-stone-300 font-medium max-w-xs mx-auto leading-relaxed">
-          {lessonTitle}
-        </p>
 
         {isEnrolled && (
           <p className="text-[11px] sm:text-xs text-stone-500 dark:text-stone-400 max-w-xs mx-auto">

@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { Loader2, Receipt } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { api, type PaymentHistoryRow } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -45,18 +45,17 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="pay-history-title" swipeToDismiss>
       <div className="relative flex max-h-[80vh] w-full flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
-        <ModalCloseButton onClick={onClose} label={tt('cancel')} />
-        <div data-drag-handle className="mx-auto mb-4 h-1 w-10 flex-none rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="mx-auto mb-2 h-1 w-9 flex-none rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="text-center mb-4 pt-1 px-12 relative z-10">
+        <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
           <h2 id="pay-history-title" className="text-[19px] font-bold text-pfg tracking-tight">
             {tt('payHistory')}
           </h2>
           <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
             {tt('payHistorySubtitle')}
           </p>
-        </div>
+        </ModalHeaderRow>
 
         {failed ? (
           /* Xato — qayta urinish */

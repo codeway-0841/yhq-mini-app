@@ -21,7 +21,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -239,15 +239,14 @@ export default function StreakPage() {
         <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title" swipeToDismiss>
           <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
             <ModalMathGrid glow={false} height={360} />
-            <ModalCloseButton onClick={() => setShowInfo(false)} label={tt('close')} />
-            <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+            <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
             {/* Minimalist Centered Header */}
-            <div className="text-center mb-4 pt-0.5 px-12 relative z-10 select-none">
+            <ModalHeaderRow onClose={() => setShowInfo(false)} label={tt('close')}>
               <h2 id="streak-info-title" className="text-[17px] font-bold text-pfg tracking-tight">
                 {tt('howItWorks')}
               </h2>
-            </div>
+            </ModalHeaderRow>
 
             <div className="rounded-2xl bg-pcard p-4 shadow-2xs relative z-10 space-y-3 mb-4">
               <p className="text-xs text-psubtle leading-relaxed">

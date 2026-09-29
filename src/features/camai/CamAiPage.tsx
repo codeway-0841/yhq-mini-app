@@ -583,7 +583,7 @@ export default function CamAiPage() {
       {/* Ism yozish dialogi — scoreboard chip'iga bosilganda */}
       {renamingId !== null && (
         <Dialog open onClose={() => setRenamingId(null)} className="max-w-xs">
-          <DialogHeader>
+          <DialogHeader onClose={() => setRenamingId(null)}>
             <DialogTitle>{tt('camaiRename')}</DialogTitle>
           </DialogHeader>
           <DialogBody>

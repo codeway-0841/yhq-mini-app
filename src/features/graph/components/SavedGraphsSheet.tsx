@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Share2, Trash2 } from 'lucide-react'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
 import { Button } from '../../../shared/components/ui/button'
 import { Input } from '../../../shared/components/ui/input'
 import { ConfirmDialog } from '../../../shared/components/ui/dialog'
@@ -120,10 +120,9 @@ export default function SavedGraphsSheet({
   return (
     <>
       <Sheet open={open} onClose={onClose}>
-        <SheetHeader>
+        <SheetHeader onClose={onClose} closeLabel={tt('graphClose')}>
           <SheetTitle>{tt('graphSavedGraphs')}</SheetTitle>
         </SheetHeader>
-        <SheetClose onClose={onClose} label={tt('graphClose')} />
         <SheetBody className="flex flex-col gap-4">
           <div className="flex gap-2">
             <Input

@@ -4,7 +4,7 @@ import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
-import ModalCloseButton from './ModalCloseButton'
+import ModalHeaderRow from './ModalHeaderRow'
 import { cn } from '../lib/cn'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../lib/sounds'
@@ -66,23 +66,22 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
         )}
       >
         <ModalMathGrid glow={false} height={420} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
 
         {/* Top Drag Handle */}
         <div
           data-drag-handle
-          className="w-10 h-1 rounded-full bg-plineStrong mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
+          className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
         />
 
         {/* Header Bar */}
-        <div className="text-center pt-0.5 pb-4 px-12 relative z-10 select-none">
+        <ModalHeaderRow onClose={onClose} label={tt('close')}>
           <h2
             id="appearance-modal-title"
             className="text-lg font-bold text-pfg tracking-tight"
           >
             {tt('appearanceTitle')}
           </h2>
-        </div>
+        </ModalHeaderRow>
 
         {/* 3-Pill Segmented Control: Theme | Charts | Icons */}
         <div className="relative z-10 mx-5 mb-5 p-1 rounded-full bg-pcard flex items-center shadow-2xs">

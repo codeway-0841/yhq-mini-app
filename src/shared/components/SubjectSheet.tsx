@@ -4,7 +4,7 @@ import { useSubjectStore } from '../store/useSubjectStore'
 import { useAppStore } from '../store/useAppStore'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
-import ModalCloseButton from './ModalCloseButton'
+import ModalHeaderRow from './ModalHeaderRow'
 
 export default function SubjectSheet({ onClose }: { onClose: () => void }) {
   const { subjectId, setSubject } = useSubjectStore()
@@ -20,11 +20,12 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
     <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss backdropClassName="bg-black/60">
       <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[82vh] overflow-y-auto shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
-        <ModalCloseButton onClick={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-5 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <h2 id="subject-title" data-drag-handle className="text-center text-lg font-bold mb-4 text-pfg select-none relative z-10">
-          {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
-        </h2>
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'}>
+          <h2 id="subject-title" data-drag-handle className="text-lg font-bold text-pfg select-none">
+            {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}
+          </h2>
+        </ModalHeaderRow>
         <div className="flex flex-col gap-2.5">
           {SUBJECTS.map((s, i) => {
             const active = s.id === subjectId

@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Search, BookOpen, X, LineChart } from 'lucide-react'
-import { Sheet, SheetBody, SheetClose, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
 import { FORMULA_SUBJECTS, FORMULA_PLOTS, type FormulaSubject, type FormulaTopic } from '../../../content/formulas'
 
@@ -78,13 +78,12 @@ export default function TestFormulasSheet({
 
   return (
     <Sheet open={open} onClose={onClose} zIndex={70} className="max-w-xl">
-      <SheetHeader>
-        <SheetTitle className="flex items-center gap-2">
+      <SheetHeader onClose={onClose} closeLabel={tt('formulasClose')}>
+        <SheetTitle className="flex items-center justify-center gap-2">
           <BookOpen className="size-5 text-pprimary" />
           {tt('formulasTitle')}
         </SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('formulasClose')} />
 
       <SheetBody className="space-y-3 px-4 pb-6">
         {/* Fan tanlash tabs */}

@@ -14,7 +14,7 @@ import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import { api, ApiError } from '../../shared/api'
@@ -169,13 +169,12 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
       {celebrate && <Confetti count={50} />}
       <div className="relative w-full max-w-lg mx-auto overflow-hidden rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
         <ModalMathGrid glow={false} height={360} />
-        <ModalCloseButton onClick={onClose} label={tt('spinClose')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Header */}
-        <div className="text-center mb-3 pt-0.5 px-12 relative z-10 select-none">
+        <ModalHeaderRow onClose={onClose} label={tt('spinClose')}>
           <h2 id="spin-title" className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
-        </div>
+        </ModalHeaderRow>
 
         {/* ── G'ildirak Sahnasi ── */}
         <div className="relative mx-auto my-2 flex size-[280px] items-center justify-center">

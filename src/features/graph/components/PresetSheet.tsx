@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Plus } from 'lucide-react'
-import { Sheet, SheetHeader, SheetTitle, SheetBody, SheetClose } from '../../../shared/components/ui/sheet'
+import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
 import { GRAPH_PRESETS, type GraphPreset } from '../../../content/graph-presets'
 import { useT } from '../../../shared/i18n'
 
@@ -25,10 +25,9 @@ export default function PresetSheet({ open, onClose, language, onApply }: Props)
 
   return (
     <Sheet open={open} onClose={onClose}>
-      <SheetHeader>
+      <SheetHeader onClose={onClose} closeLabel={tt('graphClose')}>
         <SheetTitle>{tt('graphPresets')}</SheetTitle>
       </SheetHeader>
-      <SheetClose onClose={onClose} label={tt('graphClose')} />
       <SheetBody>
         <div className="mb-3 flex gap-2">
           {subjects.map((s) => (

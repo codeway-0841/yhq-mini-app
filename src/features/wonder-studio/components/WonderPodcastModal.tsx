@@ -334,7 +334,12 @@ export default function WonderPodcastModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs font-sans select-none animate-in fade-in duration-150">
-      <div className="relative w-full max-w-lg rounded-3xl bg-[#FFFDF8] dark:bg-[#1C1411] border border-[#E7E2D6] dark:border-stone-800 shadow-2xl p-5 sm:p-7 space-y-5 max-h-[92vh] overflow-y-auto">
+      <div className="relative w-full max-w-lg rounded-3xl bg-[#FFFDF8] dark:bg-[#1C1411] border border-[#E7E2D6] dark:border-stone-800 shadow-2xl p-5 sm:p-7 pt-4 space-y-5 max-h-[92vh] overflow-y-auto">
+        <div
+          data-drag-handle
+          aria-hidden="true"
+          className="mx-auto h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+        />
         {/* Top Header (1:1 with podcast_player_view.png) */}
         <div className="flex items-center gap-3 pb-2 border-b border-stone-100 dark:border-stone-800">
           <button
@@ -345,10 +350,10 @@ export default function WonderPodcastModal({
           >
             <X size={17} strokeWidth={2} />
           </button>
-          <div className="flex min-w-0 flex-1 items-center gap-3">
+          <div className="flex min-w-0 flex-1 items-center justify-center gap-3 text-center">
             <Headphones size={22} className="text-stone-700 dark:text-stone-300 shrink-0" strokeWidth={1.8} />
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center gap-2">
                 <h2 className="text-base font-bold text-stone-900 dark:text-stone-100">
                   Podcast
                 </h2>
@@ -361,7 +366,7 @@ export default function WonderPodcastModal({
               </p>
             </div>
           </div>
-
+          <span aria-hidden="true" className="size-8 shrink-0" />
         </div>
 
         {/* Current Episode Title & Status Box (1:1 with podcast_player_view.png) */}

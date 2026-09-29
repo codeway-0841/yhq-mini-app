@@ -5,7 +5,7 @@ import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 
 export default function AdminUsersTab() {
   const [users, setUsers] = useState<AdminUserItem[]>([])
@@ -224,17 +224,17 @@ export default function AdminUsersTab() {
             <div
               data-drag-handle
               aria-hidden="true"
-              className="mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+              className="mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
             />
-            <ModalCloseButton onClick={() => setSelectedUser(null)} label="Yopish" />
-
-            <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center gap-2 pl-11">
-              <PremiumIcon size={18} className="text-ppurple" />
-              Premium berish
-            </h3>
-            <p className="text-xs text-pmuted mb-4 truncate">
-              Foydalanuvchi: <b className="text-pfg">{selectedUser.firstName}</b> ({selectedUser.id})
-            </p>
+            <ModalHeaderRow onClose={() => setSelectedUser(null)} label="Yopish">
+              <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center justify-center gap-2">
+                <PremiumIcon size={18} className="text-ppurple" />
+                Premium berish
+              </h3>
+              <p className="text-xs text-pmuted mb-4 truncate">
+                Foydalanuvchi: <b className="text-pfg">{selectedUser.firstName}</b> ({selectedUser.id})
+              </p>
+            </ModalHeaderRow>
 
             {grantBusy ? (
               <div className="py-8 text-center text-pmuted">

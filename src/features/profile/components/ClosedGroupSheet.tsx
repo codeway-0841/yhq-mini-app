@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ExternalLink, Lightbulb, Megaphone, Users } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -64,24 +64,25 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="closed-group-title" swipeToDismiss>
       <div className="relative max-h-[85vh] w-full overflow-y-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
-        <div data-drag-handle className="mx-auto mb-4 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={tt('close')}>
+          <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
+            {tt('closedGroupTitle')}
+          </h2>
+          <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+            {isSubscribed
+              ? (lang === 'ru'
+                ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
+                : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`)
+              : (lang === 'ru'
+                ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
+                : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot")}
+          </p>
+        </ModalHeaderRow>
 
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (
           <div className="relative z-10">
-            {/* Minimalist Premium Header */}
-            <div className="text-center mb-5 pt-1">
-              <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
-                {tt('closedGroupTitle')}
-              </h2>
-              <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
-                {lang === 'ru'
-                  ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
-                  : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`}
-              </p>
-            </div>
-
             {/* Joriy faol fan kartasi */}
             <div className="rounded-2xl bg-pcard p-4 shadow-xs">
               <div>
@@ -129,18 +130,6 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
         ) : (
           /* ── BEPUL FOYDALANUVCHILAR UCHUN: UPSELL SHEET ── */
           <div className="relative z-10">
-            {/* Minimalist Premium Header */}
-            <div className="text-center mb-5 pt-1">
-              <h2 id="closed-group-title" className="text-[19px] font-bold text-pfg tracking-tight">
-                {tt('closedGroupTitle')}
-              </h2>
-              <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
-                {lang === 'ru'
-                  ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
-                  : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot"}
-              </p>
-            </div>
-
             {/* Imkoniyatlar — neytral qatorlar */}
             <div className="flex flex-col gap-2">
               {FEATURES.map((f) => (

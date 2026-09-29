@@ -9,7 +9,7 @@ import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
-import ModalCloseButton from './ModalCloseButton'
+import ModalHeaderRow from './ModalHeaderRow'
 import { Button } from './ui/button'
 
 interface PromoCodeModalProps {
@@ -73,15 +73,20 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
       {successData && <Confetti />}
       <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={360} />
-        <ModalCloseButton onClick={onClose} label={tt('cancelExit')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={tt('cancelExit')}>
+          <h3 id="promo-code-title" className="text-lg font-bold text-pfg">
+            {successData ? tt('promoCodeSuccessTitle') : tt('promoCodeTitle')}
+          </h3>
+          {!successData && (
+            <p className="text-xs text-pmuted leading-relaxed mt-1">
+              {tt('promoCodeDesc')}
+            </p>
+          )}
+        </ModalHeaderRow>
 
         {successData ? (
           <div className="text-center py-4 relative z-10 px-4">
-            <h3 className="text-lg font-bold text-pfg mb-2">
-              {tt('promoCodeSuccessTitle')}
-            </h3>
-
             <p className="text-xs text-pmuted leading-relaxed mb-6">
               {language === 'ru'
                 ? `Вам успешно предоставлен Premium доступ на ${successData.value} дней!`
@@ -94,16 +99,6 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
           </div>
         ) : (
           <div className="relative z-10">
-            <div className="text-center mb-1 pt-0.5 px-12 select-none">
-              <h3 id="promo-code-title" className="text-lg font-bold text-pfg">
-                {tt('promoCodeTitle')}
-              </h3>
-            </div>
-
-            <p className="text-xs text-pmuted text-center mb-5 leading-relaxed">
-              {tt('promoCodeDesc')}
-            </p>
-
             <form onSubmit={handleRedeem} className="space-y-4">
               <div>
                 <input

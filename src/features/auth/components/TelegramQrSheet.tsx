@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import QRCode from 'qrcode'
 import { QrCode } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { useT } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -35,21 +35,21 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
+        <ModalHeaderRow onClose={onClose} label={tt('close')}>
+          <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-psurface">
+            <QrCode size={26} strokeWidth={1.75} className="text-pmuted" />
+          </div>
+          <h2 id="tg-qr-title" className="text-[19px] font-semibold text-pfg mt-3">
+            {tt('authQrTitle')}
+          </h2>
+          <p className="text-[13px] text-pmuted mt-1.5 leading-relaxed">
+            {tt('authQrDesc')}
+          </p>
+        </ModalHeaderRow>
 
         <div className="relative z-10">
-        <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-psurface">
-          <QrCode size={26} strokeWidth={1.75} className="text-pmuted" />
-        </div>
-
-        <h2 id="tg-qr-title" className="text-[19px] font-semibold text-pfg text-center mt-4">
-          {tt('authQrTitle')}
-        </h2>
-        <p className="text-[13px] text-pmuted text-center mt-1.5 leading-relaxed">
-          {tt('authQrDesc')}
-        </p>
 
         <div className="mt-5 mx-auto w-fit bg-white rounded-2xl p-3 shadow-[0_8px_30px_rgb(0_0_0/0.25)]">
           {qrSrc ? (

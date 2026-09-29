@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import {
-  X,
   Plus,
   Trash2,
   Pin,
@@ -11,6 +10,7 @@ import {
   FileText,
   Check,
 } from 'lucide-react'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { WonderSectionNotebookIcon } from './WonderIcons'
 import { useWonderStore } from '../store/useWonderStore'
 import { haptics } from '../../../platform/haptics'
@@ -129,30 +129,27 @@ export default function WonderNotesDrawer({ course, activeLesson }: WonderNotesD
   return (
     <div className="fixed inset-y-0 right-0 top-[var(--safe-top,0px)] z-[60] w-full sm:w-[420px] bg-[#FFFDF8] dark:bg-[#1E1512] border-l border-stone-200/90 dark:border-stone-800 shadow-2xl flex flex-col font-sans select-none animate-in slide-in-from-right-4 duration-200">
       {/* Header (1:1 with authentic Wondering Notes Drawer) */}
-      <div className="flex items-center gap-2.5 p-4 border-b border-stone-200/80 dark:border-stone-800 shrink-0 bg-[#FBF9F4] dark:bg-[#18110F]">
-        <button
-          type="button"
-          onClick={() => setNotesDrawerOpen(false)}
-          title="Close notes"
-          aria-label="Close notes"
-          className="p-2 shrink-0 rounded-full text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors cursor-pointer"
+      <div className="p-4 pt-3 border-b border-stone-200/80 dark:border-stone-800 shrink-0 bg-[#FBF9F4] dark:bg-[#18110F]">
+        <ModalHeaderRow
+          onClose={() => setNotesDrawerOpen(false)}
+          label="Close notes"
+          className="px-0 pb-0"
+          closeClassName="border-stone-200 dark:border-stone-700 bg-[#FAF8F2] dark:bg-stone-800 text-stone-500 dark:text-stone-300 shadow-none hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-700"
         >
-          <X size={18} />
-        </button>
-        <div className="flex flex-1 items-center gap-2.5 min-w-0">
-          <div className="size-9 rounded-2xl bg-[#EBE7DE] dark:bg-stone-800 border border-stone-300/70 dark:border-stone-700 flex items-center justify-center text-stone-700 dark:text-stone-300 shrink-0">
-            <WonderSectionNotebookIcon size={18} />
-          </div>
-          <div className="min-w-0">
-            <h2 className="text-sm font-bold text-stone-900 dark:text-stone-100 font-serif leading-tight">
-              Notes & Saved Concepts
-            </h2>
-            <div className="text-[11px] text-stone-500 dark:text-stone-400 truncate mt-0.5">
-              {lessonTitle}
-            </div>
-          </div>
-        </div>
-
+          <span className="flex items-center justify-center gap-2.5">
+            <span className="size-9 rounded-2xl bg-[#EBE7DE] dark:bg-stone-800 border border-stone-300/70 dark:border-stone-700 flex items-center justify-center text-stone-700 dark:text-stone-300 shrink-0">
+              <WonderSectionNotebookIcon size={18} />
+            </span>
+            <span className="min-w-0 text-left">
+              <h2 className="text-sm font-bold text-stone-900 dark:text-stone-100 font-serif leading-tight">
+                Notes & Saved Concepts
+              </h2>
+              <span className="block text-[11px] text-stone-500 dark:text-stone-400 truncate mt-0.5">
+                {lessonTitle}
+              </span>
+            </span>
+          </span>
+        </ModalHeaderRow>
       </div>
 
       {/* Tabs */}

@@ -5,7 +5,7 @@ import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface CustomRoomModalProps {
@@ -79,18 +79,17 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-plineStrong cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
         <div className="relative z-10 space-y-4">
         {/* Header */}
-        <div className="px-10 text-center">
+        <ModalHeaderRow onClose={onClose} label={tt('close')}>
           <div className="mx-auto mb-2 flex size-10 items-center justify-center rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple">
             <Swords size={18} />
           </div>
           <h2 id="custom-room-title" className="text-sm font-black text-pfg">{tt('customRoomTitle')}</h2>
           <p className="text-[10px] text-pmuted">{tt('customRoomDesc')}</p>
-        </div>
+        </ModalHeaderRow>
 
         {/* Tab switcher */}
         <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard shadow-xs">

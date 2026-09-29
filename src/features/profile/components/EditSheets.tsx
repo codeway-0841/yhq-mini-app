@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Camera, ImagePlus, Trash2, X, Pencil, Send, MessageSquare } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { Button } from '../../../shared/components/ui/button'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -21,11 +21,13 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={300} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold mb-4 flex items-center justify-center gap-2 text-pfg select-none relative z-10">
-          <Camera size={14} className="text-pprimary" />
-          {tt('photoEditTitle')}
-        </p>
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
+          <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg select-none">
+            <Camera size={14} className="text-pprimary" />
+            {tt('photoEditTitle')}
+          </p>
+        </ModalHeaderRow>
         <div className="flex flex-col gap-2.5">
           <Button block loading={busy} onClick={onPick}>
             <ImagePlus size={16} />
@@ -83,14 +85,25 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
     >
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={320} />
-        <ModalCloseButton onClick={isDirty ? () => {} : onClose} label={tt('cancel')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <ModalHeaderRow onClose={isDirty ? () => {} : onClose} label={tt('cancel')}>
+          <h2 id="phone-edit-title" className="text-[19px] font-bold text-pfg tracking-tight">
+            {step === 'confirm' ? tt('phoneChangeTitle') : step === 'method' ? tt('phoneMethodTitle') : tt('viaSms')}
+          </h2>
+          {step === 'method' && (
+            <p className="mt-1.5 text-[13px] text-pmuted max-w-xs mx-auto leading-relaxed">
+              {tt('phoneMethodHint')}
+            </p>
+          )}
+          {step === 'sms' && (
+            <p className="mt-1 text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
+              {tt('phoneMethodHint')}
+            </p>
+          )}
+        </ModalHeaderRow>
 
         {step === 'confirm' && currentPhone && (
           <div className="relative z-10 pt-1">
-            <h2 id="phone-edit-title" className="text-center text-[19px] font-bold text-pfg tracking-tight">
-              {tt('phoneChangeTitle')}
-            </h2>
             <div className="my-3 py-2 px-4 rounded-xl bg-pcard shadow-2xs w-fit mx-auto text-[16px] font-bold text-pprimary tracking-wide font-mono">
               {formatPhoneDisplay(currentPhone)}
             </div>
@@ -106,12 +119,6 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
 
         {step === 'method' && (
           <div className="relative z-10 pt-1">
-            <h2 id="phone-edit-title" className="text-center text-[19px] font-bold text-pfg tracking-tight">
-              {tt('phoneMethodTitle')}
-            </h2>
-            <p className="mt-1.5 mb-5 text-center text-[13px] text-pmuted max-w-xs mx-auto leading-relaxed">
-              {tt('phoneMethodHint')}
-            </p>
             <div className="flex flex-col gap-2.5">
               <Button block size="lg" loading={busy} className="font-semibold shadow-xs" onClick={onTelegram}>
                 <Send size={16} />
@@ -127,12 +134,6 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
 
         {step === 'sms' && (
           <div className="relative z-10 pt-1">
-            <h2 id="phone-edit-title" className="text-center text-[19px] font-bold text-pfg tracking-tight mb-2">
-              {tt('viaSms')}
-            </h2>
-            <p className="mb-4 text-center text-[13px] text-pmuted leading-relaxed max-w-xs mx-auto">
-              {tt('phoneMethodHint')}
-            </p>
             <div className="mb-4 flex items-center gap-2 rounded-2xl bg-pcard px-4 focus-within:ring-2 focus-within:ring-pprimary shadow-xs">
               <span className="text-pmuted font-semibold select-none">+998</span>
               <input
@@ -174,11 +175,13 @@ export function NameEditSheet({ current, onClose, onSave }: {
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
       <div className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={280} />
-        <div className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 relative z-10" />
-        <p id="name-edit-title" className="text-sm font-semibold mb-3 flex items-center justify-center gap-2 text-pfg relative z-10">
-          <Pencil size={14} className="text-pblue" />
-          {tt('nameEditTitle')}
-        </p>
+        <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 relative z-10" />
+        <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
+          <p id="name-edit-title" className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg">
+            <Pencil size={14} className="text-pblue" />
+            {tt('nameEditTitle')}
+          </p>
+        </ModalHeaderRow>
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}

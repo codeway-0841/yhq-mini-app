@@ -11,7 +11,7 @@ import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 
 export interface AiTutorSessionRef {
   sessionId: string
@@ -184,13 +184,12 @@ export default function AiTutorModal({
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center mb-3 pt-0.5 px-12 relative z-10 select-none">
+          <ModalHeaderRow onClose={handleClose} label={tt('close')}>
             <h3 id="upsell-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('premiumNeedTitle')}</h3>
-          </div>
+          </ModalHeaderRow>
 
           <div className="flex flex-col items-center text-center relative z-10">
             <div className="size-14 rounded-2xl bg-pcard shadow-2xs flex items-center justify-center mb-3">
@@ -230,24 +229,28 @@ export default function AiTutorModal({
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation()
-              speakExplanation(staticText)
-            }}
-            aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-            className="absolute right-3.5 top-3 z-30 size-9 rounded-full bg-white text-slate-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:bg-[#1E2530] dark:text-white dark:border-white/10 flex items-center justify-center hover:scale-105 active:scale-95 transition-all cursor-pointer"
-          >
-            <Volume2 size={16} />
-          </button>
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center mb-3.5 pt-0.5 px-12 relative z-10 select-none">
+          <ModalHeaderRow
+            onClose={handleClose}
+            label={tt('close')}
+            right={(
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  speakExplanation(staticText)
+                }}
+                aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
+                className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              >
+                <Volume2 size={16} />
+              </button>
+            )}
+          >
             <h3 id="static-title" className="text-[17px] font-bold text-pfg tracking-tight">{tt('staticExplainTitle')}</h3>
-          </div>
+          </ModalHeaderRow>
 
           <div className="overflow-y-auto min-h-[60px] relative z-10 bg-pcard rounded-2xl p-4 shadow-2xs">
             <p className="text-[13.5px] text-pfg leading-relaxed whitespace-pre-wrap">
@@ -280,27 +283,31 @@ export default function AiTutorModal({
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />
-          <ModalCloseButton onClick={handleClose} label={tt('close')} />
-          {!aiBusy && aiText && (
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation()
-                speakExplanation(aiText)
-              }}
-              aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-              className="absolute right-3.5 top-3 z-30 size-9 rounded-full bg-white text-slate-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border border-black/[0.06] dark:bg-[#1E2530] dark:text-white dark:border-white/10 flex items-center justify-center hover:scale-105 active:scale-95 transition-all cursor-pointer"
-            >
-              <Volume2 size={16} />
-            </button>
-          )}
-          <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+          <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
           {/* Minimalist Centered Header */}
-          <div className="text-center mb-3.5 pt-0.5 px-12 relative z-10 select-none flex items-center justify-center gap-2">
-            <h3 id="ai-title" className="text-[17px] font-bold text-pfg tracking-tight">AI Ustoz</h3>
-            {aiBusy && <Loader2 size={15} className="text-pprimary animate-spin" />}
-          </div>
+          <ModalHeaderRow
+            onClose={handleClose}
+            label={tt('close')}
+            right={(!aiBusy && aiText) ? (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  speakExplanation(aiText)
+                }}
+                aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
+                className="grid size-10 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none hover:scale-105 active:scale-95 transition-all cursor-pointer"
+              >
+                <Volume2 size={16} />
+              </button>
+            ) : undefined}
+          >
+            <span className="flex items-center justify-center gap-2">
+              <h3 id="ai-title" className="text-[17px] font-bold text-pfg tracking-tight">AI Ustoz</h3>
+              {aiBusy && <Loader2 size={15} className="text-pprimary animate-spin" />}
+            </span>
+          </ModalHeaderRow>
 
           <div className="overflow-y-auto min-h-[80px] bg-pcard rounded-2xl p-4 shadow-2xs relative z-10">
             {aiText ? (

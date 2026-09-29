@@ -11,7 +11,7 @@ import { api } from '../../shared/api'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import { Button } from '../../shared/components/ui/button'
 import { drawCertificate } from './certificate-canvas'
 
@@ -183,20 +183,21 @@ export default function CertificateModal({ score, total, percent, sample = false
     <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="certificate-title" backdropClassName="bg-black/60">
       <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={420} />
-        <ModalCloseButton onClick={onClose} label={tt('close')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Pinned Header */}
-        <div className="text-center mb-3 pt-0.5 px-12 relative z-10 select-none shrink-0 flex items-center justify-center gap-2">
-          <h2 id="certificate-title" className="text-[17px] font-bold text-pfg">
-            {lang === 'ru' ? 'Сертификат' : 'Sertifikat'}
-          </h2>
-          {sample && (
-            <span className="rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs shrink-0">
-              {tt('certSampleBadge')}
-            </span>
-          )}
-        </div>
+        <ModalHeaderRow onClose={onClose} label={tt('close')} className="shrink-0">
+          <span className="flex items-center justify-center gap-2">
+            <h2 id="certificate-title" className="text-[17px] font-bold text-pfg">
+              {lang === 'ru' ? 'Сертификат' : 'Sertifikat'}
+            </h2>
+            {sample && (
+              <span className="rounded-full bg-[rgb(var(--p-gold-rgb)/0.15)] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.08em] text-pgold shadow-2xs shrink-0">
+                {tt('certSampleBadge')}
+              </span>
+            )}
+          </span>
+        </ModalHeaderRow>
 
         {/* Scrollable Body */}
         <div className="w-full flex-1 overflow-y-auto flex flex-col items-center min-h-0 relative z-10 pr-0.5">

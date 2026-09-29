@@ -14,7 +14,7 @@ import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalCloseButton from '../../shared/components/ModalCloseButton'
+import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
   item: MerchItem
@@ -64,16 +64,15 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
     <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="bottom" swipeToDismiss labelId="merch-order-title" backdropClassName="bg-black/60">
       <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={320} />
-        <ModalCloseButton onClick={busy ? () => {} : onClose} label={tt('close')} />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">
           {/* Minimalist Centered Header */}
-          <div className="text-center mb-3 pt-0.5 px-12 select-none">
+          <ModalHeaderRow onClose={busy ? () => {} : onClose} label={tt('close')}>
             <h2 id="merch-order-title" className="text-[17px] font-bold text-pfg tracking-tight">
               {tt('merchFormTitle')}
             </h2>
-          </div>
+          </ModalHeaderRow>
 
           {/* Buyum sarlavhasi (Oq taktil karta) */}
           <div className="mt-3.5 flex items-center gap-3 rounded-2xl bg-pcard p-3.5 shadow-2xs">

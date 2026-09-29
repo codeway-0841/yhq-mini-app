@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 import { Check } from 'lucide-react'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
-import ModalCloseButton from './ModalCloseButton'
+import ModalHeaderRow from './ModalHeaderRow'
 import { cn } from '../lib/cn'
 
 export interface PickerOption {
@@ -24,15 +24,14 @@ export default function PickerSheet({ title, titleIcon: _titleIcon, options, val
     <DialogOverlay onClose={onClose} labelId="picker-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={360} />
-        <ModalCloseButton onClick={onClose} label="Yopish" />
-        <div data-drag-handle className="w-10 h-1 bg-plineStrong rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* Minimalist Centered Header */}
-        <div className="text-center mb-5 pt-1 px-12 relative z-10">
+        <ModalHeaderRow onClose={onClose} label="Yopish">
           <h2 id="picker-title" className="text-[19px] font-bold text-pfg tracking-tight">
             {title}
           </h2>
-        </div>
+        </ModalHeaderRow>
 
         <div className="flex flex-col gap-2.5 relative z-10">
           {options.map((opt) => {
