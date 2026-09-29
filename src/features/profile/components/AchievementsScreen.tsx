@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { ArrowLeft, CheckCircle2, Lock } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import { ACHIEVEMENTS, isUnlocked, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
+import { ACHIEVEMENTS, isUnlocked, getBadgeUrl, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
 import { type useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
@@ -24,7 +24,7 @@ function AchievementCard({
   const openDetailSheet = useAchievementCelebrationStore((s) => s.openDetailSheet)
   const unlocked = isUnlocked(a, stats)
   const cur = Math.min(a.get(stats), a.target)
-  const badgeUrl = a.badgeImage
+  const badgeUrl = getBadgeUrl(a)
 
   const handleClick = () => {
     haptics.selection()

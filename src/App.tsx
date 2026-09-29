@@ -118,6 +118,9 @@ const routeChunkPrefetchers = [
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
+  // Achievement badge'lar ham shu IDLE oynada keshga olinadi —
+  // Profil'ga birinchi kirishda rasmlar bir zumda chiqadi.
+  void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
 }
 
 function Layout({ children }: { children: ReactNode }) {

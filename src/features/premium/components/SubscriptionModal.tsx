@@ -238,17 +238,17 @@ export default function SubscriptionModal({
         <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
           <ModalMathGrid glow={false} height={420} />
         </div>
+        {/* Yuqori surish tutqichi (Drag Handle) — ENG TEPADA */}
+        <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
+          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
+        </div>
         {step === 'choose_plan' && (
-          <ModalHeaderRow onClose={onClose} label="Yopish">
+          <ModalHeaderRow onClose={onClose} label="Yopish" className="pt-1">
             <h2 id="subscription-modal-title" className="text-[19px] font-bold text-pfg tracking-tight">
               {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
             </h2>
           </ModalHeaderRow>
         )}
-        {/* Yuqori surish tutqichi (Drag Handle) */}
-        <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
-          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
-        </div>
 
         {/* ── STEP 1: TARIFNI TANLANG ── */}
         {step === 'choose_plan' && (

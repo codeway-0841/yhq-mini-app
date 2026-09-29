@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { ChevronRight, Check } from 'lucide-react'
-import { MILESTONES, isUnlocked, type AchievementDef } from '../../../shared/config/achievements'
+import { MILESTONES, isUnlocked, getBadgeUrl, type AchievementDef } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
 import { type useT } from '../../../shared/i18n'
 import { cn } from '../../../shared/lib/cn'
@@ -27,6 +27,7 @@ function MilestonePreviewItem({
   const unlocked = stats ? isUnlocked(a, stats) : false
   const cur = stats ? Math.min(a.get(stats), a.target) : 0
   const pct = a.target > 1 ? Math.round((cur / a.target) * 100) : (unlocked ? 100 : 0)
+  const badgeUrl = getBadgeUrl(a)
 
   const handleClick = () => {
     haptics.selection()
@@ -47,9 +48,9 @@ function MilestonePreviewItem({
             !unlocked && 'opacity-60 saturate-[0.5]',
           )}
         >
-          {a.badgeImage ? (
+          {badgeUrl ? (
             <img
-              src={a.badgeImage}
+              src={badgeUrl}
               alt=""
               className="size-11 object-contain select-none pointer-events-none transition-transform duration-200 group-hover:scale-105"
               loading="lazy"
