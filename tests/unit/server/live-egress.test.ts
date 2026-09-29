@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
-import { buildEgressToken, livekitHttpUrl, parseEgressEnded, parseLiveRoomName, summarizeParticipants, twirpUrl } from '../../../server/modules/live/egress'
+import { buildEgressToken, parseEgressEnded, parseLiveRoomName, summarizeParticipants } from '../../../server/modules/live/egress'
+import { livekitHttpUrl, twirpUrl } from '../../../server/modules/live/livekit-control'
 
 const KEY = 'devkey'
 const SECRET = 'egress-test-secret-32chars-minimum!'

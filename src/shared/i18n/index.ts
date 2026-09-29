@@ -911,6 +911,8 @@ const UZ = {
   liveRecord: "Yozuvni boshlash", liveRecording: "Yozilmoqda...",
   liveStopRecord: "Yozuvni to'xtatish", liveRecordings: "Dars yozuvlari",
   liveEnableAudio: "Ovozni yoqish",
+  liveStatusEnding: "Tugatilmoqda", liveEndingHint: "Efir tugatilmoqda — biroz kuting",
+  liveRevoke: "Ovozini o'chirish", liveCloudError: "Cloud tekshiruvi mavjud emas",
   liveDbgRemote: "uzoqda", liveDbgAudio: "audio", liveDbgCloud: "cloud",
 } as const
 
@@ -1816,6 +1818,8 @@ const RU: Record<Keys, string> = {
   liveRecord: "Начать запись", liveRecording: "Идёт запись...",
   liveStopRecord: "Остановить запись", liveRecordings: "Записи уроков",
   liveEnableAudio: "Включить звук",
+  liveStatusEnding: "Завершается", liveEndingHint: "Эфир завершается — подождите",
+  liveRevoke: "Отключить звук", liveCloudError: "Проверка Cloud недоступна",
   liveDbgRemote: "удалённо", liveDbgAudio: "аудио", liveDbgCloud: "cloud",
 }
 

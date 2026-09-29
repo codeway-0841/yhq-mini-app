@@ -1201,7 +1201,7 @@ export const liveRooms = pgTable('live_rooms', {
   index('idx_live_rooms_status_time').on(t.status, t.scheduledAt),
   index('idx_live_rooms_subject').on(t.subjectId, t.status),
   index('idx_live_rooms_teacher').on(t.teacherId),
-  check('chk_live_rooms_status', sql`${t.status} IN ('scheduled','live','ended')`),
+  check('chk_live_rooms_status', sql`${t.status} IN ('scheduled','live','ending','ended')`),
   check('chk_live_rooms_title_len', sql`char_length(${t.title}) BETWEEN 3 AND 120`),
 ])
 
@@ -1267,6 +1267,6 @@ export const liveRecordings = pgTable('live_recordings', {
 }, (t) => [
   unique('uq_live_recording_egress').on(t.egressId),
   index('idx_live_recordings_room').on(t.roomId),
-  check('chk_live_recordings_status', sql`${t.status} IN ('started','ready','failed')`),
+  check('chk_live_recordings_status', sql`${t.status} IN ('starting','started','stopping','ready','failed')`),
 ])
 

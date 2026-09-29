@@ -1290,10 +1290,15 @@ export const api = {
   joinLiveRoom: (id: number) =>
     request<{
       ok: true; role: 'teacher' | 'student'; canSpeak: boolean
+      capabilities: import('../../../shared/live').LiveCapabilities
       roomName: string; token: string
       expiresIn: number; mediaEnabled: boolean; mediaUrl: string | null
       livekitToken: string | null
     }>('POST', `/live/rooms/${id}/join`, {}),
+  getLiveMe: (id: number) =>
+    request<{ ok: true; me: import('../../../shared/live').LiveMeState }>(
+      'GET', `/live/rooms/${id}/me`,
+    ),
   leaveLiveRoom: (id: number) =>
     request<{ ok: true }>('POST', `/live/rooms/${id}/leave`, {}),
   listLiveParticipants: (id: number) =>
@@ -1312,6 +1317,8 @@ export const api = {
     request<{ ok: true; status: string }>('POST', `/live/rooms/${id}/hands/${encodeURIComponent(targetUserId)}/approve`, {}),
   rejectLiveHand: (id: number, targetUserId: string) =>
     request<{ ok: true; status: string }>('POST', `/live/rooms/${id}/hands/${encodeURIComponent(targetUserId)}/reject`, {}),
+  revokeLiveHand: (id: number, targetUserId: string) =>
+    request<{ ok: true; status: string }>('POST', `/live/rooms/${id}/participants/${encodeURIComponent(targetUserId)}/revoke`, {}),
   listLiveMessages: (id: number, after = 0, limit = 50) =>
     request<{ ok: true; messages: import('../../../shared/live').LiveMessagePublic[] }>(
       'GET', `/live/rooms/${id}/messages?after=${after}&limit=${limit}`,

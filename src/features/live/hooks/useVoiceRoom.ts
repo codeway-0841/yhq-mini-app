@@ -270,59 +270,23 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [])
 
-  /** Lokal mic daraja o'lchagich — yuboruvchi mikrofon jonli ovoz olayotganini ko'rsatadi.
-   *  Throttle: 120ms'da 1 marta, 5% bucket — har frame'da React render YO'Q. */
+  /** Lokal mic daraja — LiveKit PUBLISHED track'dan (2-gUM YO'Q, §9).
+   *  Throttle: 125ms polling, 5% bucket — har frame'da React render YO'Q. */
   useEffect(() => {
     if (!micOn || state !== 'connected') {
       setMicLevel(0)
       return
     }
-    let stopped = false
-    let stream: MediaStream | null = null
-    let ctx: AudioContext | null = null
-    let timer = 0
-    ;(async () => {
-      try {
-        stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-        if (stopped) {
-          stream.getTracks().forEach((t) => t.stop())
-          return
-        }
-        const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
-        if (!AC) return
-        ctx = new AC()
-        const src = ctx.createMediaStreamSource(stream)
-        const analyser = ctx.createAnalyser()
-        analyser.fftSize = 512
-        src.connect(analyser)
-        const buf = new Uint8Array(analyser.frequencyBinCount)
-        let lastBucket = -1
-        let smooth = 0
-        timer = window.setInterval(() => {
-          if (stopped) return
-          analyser.getByteTimeDomainData(buf)
-          let peak = 0
-          for (let i = 0; i < buf.length; i++) {
-            const v = Math.abs((buf[i] ?? 128) - 128) / 128
-            if (v > peak) peak = v
-          }
-          smooth = smooth * 0.7 + peak * 0.3
-          const bucket = Math.round(smooth * 20)
-          if (bucket !== lastBucket) {
-            lastBucket = bucket
-            setMicLevel(bucket / 20)
-          }
-        }, 120)
-      } catch {
-        // O'lchagich ixtiyoriy — ishlamasa daraja 0 qoladi (asosiy mic'ga tegmaydi)
+    let lastBucket = -1
+    const timer = window.setInterval(() => {
+      const level = roomRef.current?.localParticipant.audioLevel ?? 0
+      const bucket = Math.round(Math.min(1, Math.max(0, level)) * 20)
+      if (bucket !== lastBucket) {
+        lastBucket = bucket
+        setMicLevel(bucket / 20)
       }
-    })()
-    return () => {
-      stopped = true
-      window.clearInterval(timer)
-      stream?.getTracks().forEach((t) => t.stop())
-      void ctx?.close().catch(() => {})
-    }
+    }, 125)
+    return () => window.clearInterval(timer)
   }, [micOn, state])
 
   return { state, micOn, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }

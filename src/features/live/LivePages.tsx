@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Hand, Mic, MicOff, MonitorUp, Radio, Send, Users, Video, VideoOff } from 'lucide-react'
 import { PageHeader } from '@/shared/components/ui/page-header'
@@ -10,7 +10,7 @@ import { useAppStore } from '@/shared/store/useAppStore'
 import { useSubjectStore } from '@/shared/store/useSubjectStore'
 import { api } from '@/shared/api'
 import { goBack } from '@/shared/lib/navigation'
-import type { LiveRoomPublic } from '../../../shared/live'
+import type { LiveCapabilities, LiveRoomPublic } from '../../../shared/live'
 import { useLiveMessages } from './hooks/useLiveMessages'
 import { useMediaRoom } from './hooks/useVoiceRoom'
 import { VideoView } from './components/MediaTiles'
@@ -147,104 +147,77 @@ function LiveRoomPage() {
   const [room, setRoom] = useState<LiveRoomPublic | null>(null)
   const [recordingEnabled, setRecordingEnabled] = useState(false)
   const [recordingActive, setRecordingActive] = useState(false)
-  const [role, setRole] = useState<'teacher' | 'student' | null>(null)
   const [canSpeak, setCanSpeak] = useState(false)
+  const [caps, setCaps] = useState<LiveCapabilities>({ canManage: false, canModerate: false, canRecord: false, canPublish: false })
   const [livekitToken, setLivekitToken] = useState<string | null>(null)
   const [mediaUrl, setMediaUrl] = useState<string | null>(null)
   const [mediaEnabled, setMediaEnabled] = useState(false)
   const [joined, setJoined] = useState(false)
   const [busy, setBusy] = useState(false)
   const [draft, setDraft] = useState('')
-  const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved'>('none')
-  const [cloudCount, setCloudCount] = useState<number | null>(null)
-  const canSpeakRef = useRef(canSpeak)
-  canSpeakRef.current = canSpeak
+  const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved' | 'rejected'>('none')
+  const [cloud, setCloud] = useState<{ participants: { identity: string; audioTracks: number; audioMuted: boolean; videoTracks: number }[] } | { error: true } | null>(null)
   const [hands, setHands] = useState<{ userId: string; userName: string | null; status: string; createdAt: string }[]>([])
-  const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended')
+  const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended' || room?.status === 'ending')
   const voice = useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo: canSpeak, enabled: joined && mediaEnabled })
 
-  // Teacher: kutilayotgan qo'llar ro'yxati (5s polling)
+  // Manager: qo'llar ro'yxati (5s polling) — capability bo'yicha, rol taxmini YO'Q
   useEffect(() => {
-    if (!joined || role !== 'teacher') return
+    if (!joined || !caps.canModerate) return
     let alive = true
     const load = () => {
-      api.listLiveHands(roomId).then((r) => { if (alive) setHands(r.hands) }).catch(() => {})
+      api.listLiveHands(roomId, false).then((r) => { if (alive) setHands(r.hands) }).catch(() => {})
     }
     load()
     const t = setInterval(load, 5000)
     return () => { alive = false; clearInterval(t) }
-  }, [joined, role, roomId])
+  }, [joined, caps.canModerate, roomId])
 
-  // Xona status kuzatuvi (10s): ustoz efirni tugatsa — media uziladi (join holatidan chiqamiz)
+  // /me polling (5s, barcha joined): canSpeak/hand/role/capability/roomStatus.
+  // Approve server'da LiveKit permission'ni ham yangilaydi — qayta ulanish SHART EMAS.
   useEffect(() => {
     if (!joined) return
     let alive = true
     const load = async () => {
       try {
-        const r = await api.getLiveRoom(roomId)
+        const r = await api.getLiveMe(roomId)
         if (!alive) return
-        setRoom(r.room)
-        setRecordingActive(r.recordingActive)
-        if (r.room.status === 'ended') {
+        const me = r.me
+        setCanSpeak(me.canSpeak)
+        setHandStatus(me.handStatus)
+        setCaps(me.capabilities)
+        setRecordingActive(me.recordingStatus !== null)
+        setRoom((prev) => (prev && prev.status !== me.roomStatus ? { ...prev, status: me.roomStatus } : prev))
+        if (me.roomStatus === 'ended') {
           try { await api.leaveLiveRoom(roomId) } catch { /* ignore */ }
           if (!alive) return
           setJoined(false)
-          setRole(null)
           setCanSpeak(false)
           setLivekitToken(null)
           setHandStatus('none')
         }
       } catch { /* ignore */ }
     }
-    const t = setInterval(load, 10_000)
+    const t = setInterval(load, 5000)
     return () => { alive = false; clearInterval(t) }
   }, [joined, roomId])
 
-  // Teacher: Cloud diagnostika (10s polling) — yuboruvchi Cloud'ga yetganmi
+  // Manager: Cloud diagnostika (10s polling) — xato jim yutilmaydi
   useEffect(() => {
-    if (!joined || role !== 'teacher') {
-      setCloudCount(null)
+    if (!joined || !caps.canModerate) {
+      setCloud(null)
       return
     }
     let alive = true
     const load = () => {
       api.getLiveCloudHealth(roomId)
-        .then((r) => { if (alive) setCloudCount(r.participants.length) })
-        .catch(() => {})
+        .then((r) => { if (alive) setCloud({ participants: r.participants }) })
+        .catch(() => { if (alive) setCloud({ error: true }) })
     }
     load()
     const t = setInterval(load, 10_000)
     return () => { alive = false; clearInterval(t) }
-  }, [joined, role, roomId])
-
-  // Student: o'z ruxsatimni kuzatish (5s). Approve LiveKit token grant'ini
-  // o'zgartirmaydi (token join paytida muhrlangan) — shuning uchun yangi
-  // token olib qayta ulanamiz, aks holda publish rad etilib audio: 0 qoladi.
-  useEffect(() => {
-    if (!joined || role !== 'student') return
-    let alive = true
-    const load = async () => {
-      try {
-        const r = await api.listLiveParticipants(roomId)
-        if (!alive) return
-        const me = r.participants.find((p) => p.userId === user?.id)
-        if (!me) return
-        if (me.canSpeak && !canSpeakRef.current) {
-          const j = await api.joinLiveRoom(roomId)
-          if (!alive) return
-          setCanSpeak(true)
-          setHandStatus('approved')
-          setLivekitToken(j.livekitToken)
-          setMediaUrl(j.mediaUrl)
-        } else if (!me.canSpeak && canSpeakRef.current) {
-          setCanSpeak(false)
-        }
-      } catch { /* ignore */ }
-    }
-    load()
-    const t = setInterval(load, 5000)
-    return () => { alive = false; clearInterval(t) }
-  }, [joined, role, roomId, user?.id])
+  }, [joined, caps.canModerate, roomId])
 
   useEffect(() => {
     if (!Number.isInteger(roomId) || roomId <= 0) return
@@ -259,8 +232,8 @@ function LiveRoomPage() {
     setBusy(true)
     try {
       const r = await api.joinLiveRoom(roomId)
-      setRole(r.role)
       setCanSpeak(r.role === 'teacher' || r.canSpeak)
+      setCaps(r.capabilities)
       setLivekitToken(r.livekitToken)
       setMediaUrl(r.mediaUrl)
       setMediaEnabled(r.mediaEnabled)
@@ -273,8 +246,8 @@ function LiveRoomPage() {
   const handleLeave = async () => {
     try { await api.leaveLiveRoom(roomId) } catch { /* ignore */ }
     setJoined(false)
-    setRole(null)
     setCanSpeak(false)
+    setCaps({ canManage: false, canModerate: false, canRecord: false, canPublish: false })
     setLivekitToken(null)
     setHandStatus('none')
   }
@@ -315,8 +288,8 @@ function LiveRoomPage() {
         size="md"
         onBack={() => goBack(navigate)}
         actions={
-          <Badge variant={room.status === 'live' ? 'danger' : room.status === 'scheduled' ? 'accent' : 'default'}>
-            {room.status === 'live' ? tt('liveStatusLive') : room.status === 'scheduled' ? tt('liveStatusScheduled') : tt('liveStatusEnded')}
+          <Badge variant={room.status === 'live' ? 'danger' : room.status === 'scheduled' ? 'accent' : room.status === 'ending' ? 'warning' : 'default'}>
+            {room.status === 'live' ? tt('liveStatusLive') : room.status === 'scheduled' ? tt('liveStatusScheduled') : room.status === 'ending' ? tt('liveStatusEnding') : tt('liveStatusEnded')}
           </Badge>
         }
       />
@@ -364,7 +337,7 @@ function LiveRoomPage() {
                     >
                       {voice.cameraOn ? <Video size={18} /> : <VideoOff size={18} />}
                     </Button>
-                    {role === 'teacher' && (
+                    {caps.canManage && (
                       <Button
                         size="icon"
                         variant={voice.screenOn ? 'default' : 'secondary'}
@@ -375,7 +348,7 @@ function LiveRoomPage() {
                       </Button>
                     )}
                   </>
-                ) : role === 'student' && (
+                ) : (
                   handStatus === 'pending'
                     ? <Button variant="secondary" size="sm" onClick={handleLower}><Hand size={15} />{tt('liveLowerHand')}</Button>
                     : <Button variant="secondary" size="sm" onClick={handleRaise}><Hand size={15} />{tt('liveRaiseHand')}</Button>
@@ -402,7 +375,7 @@ function LiveRoomPage() {
               {/* Diagnostika qatori — muammo qayerdaligini ko'rsatadi */}
               <p className="text-[11px] text-pmuted">
                 {tt('liveDbgRemote')}: {voice.remoteCount} · {tt('liveDbgAudio')}: {voice.remoteAudioCount}
-                {role === 'teacher' && cloudCount !== null ? ` · ${tt('liveDbgCloud')}: ${cloudCount}` : ''}
+                {cloud ? ('error' in cloud ? ` · ${tt('liveCloudError')}` : ` · ${tt('liveDbgCloud')}: ${cloud.participants.length}`) : ''}
               </p>
               {voice.micOn && (
                 <div className="h-1.5 w-full overflow-hidden rounded-full bg-psurface" aria-hidden="true">
@@ -416,11 +389,12 @@ function LiveRoomPage() {
             <p className="text-sm text-pmuted">{tt('liveVoiceConnecting')}</p>
           )}
           {room.status === 'ended' && <p className="text-xs text-pmuted">{tt('liveEndedHint')}</p>}
+          {room.status === 'ending' && <p className="text-xs text-pmuted">{tt('liveEndingHint')}</p>}
         </CardContent>
       </Card>
 
       {!joined ? (
-        <Button block className="mt-3" loading={busy} disabled={room.status === 'ended'} onClick={handleJoin}>
+        <Button block className="mt-3" loading={busy} disabled={room.status === 'ended' || room.status === 'ending'} onClick={handleJoin}>
           {tt('liveJoin')}
         </Button>
       ) : (
@@ -451,7 +425,7 @@ function LiveRoomPage() {
               <Send size={18} />
             </Button>
           </div>
-          {role === 'teacher' && room.status !== 'ended' && (
+          {caps.canManage && room.status !== 'ended' && room.status !== 'ending' && (
             <>
               <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} recordingEnabled={recordingEnabled} recordingActive={recordingActive} />
               <HandsPanel
@@ -541,6 +515,15 @@ function HandsPanel({ roomId, hands, onResolved }: {
       setBusyId(null)
     }
   }
+  const revoke = async (targetUserId: string) => {
+    setBusyId(targetUserId)
+    try {
+      await api.revokeLiveHand(roomId, targetUserId)
+      onResolved(targetUserId, false)
+    } catch { /* ignore */ } finally {
+      setBusyId(null)
+    }
+  }
   return (
     <Card>
       <CardContent className="flex flex-col gap-2 p-4">
@@ -549,13 +532,22 @@ function HandsPanel({ roomId, hands, onResolved }: {
           <div key={h.userId} className="flex items-center gap-2">
             <span className="min-w-0 flex-1 truncate text-sm text-pfg">
               <Hand size={14} className="mr-1 inline text-pmuted" />{h.userName ?? h.userId}
+              {h.status === 'approved' ? ' · ✓' : ''}
             </span>
-            <Button variant="secondary" size="sm" loading={busyId === h.userId} onClick={() => void decide(h.userId, true)}>
-              {tt('liveApprove')}
-            </Button>
-            <Button variant="ghost" size="sm" disabled={busyId === h.userId} onClick={() => void decide(h.userId, false)}>
-              {tt('liveReject')}
-            </Button>
+            {h.status === 'pending' ? (
+              <>
+                <Button variant="secondary" size="sm" loading={busyId === h.userId} onClick={() => void decide(h.userId, true)}>
+                  {tt('liveApprove')}
+                </Button>
+                <Button variant="ghost" size="sm" disabled={busyId === h.userId} onClick={() => void decide(h.userId, false)}>
+                  {tt('liveReject')}
+                </Button>
+              </>
+            ) : (
+              <Button variant="ghost" size="sm" disabled={busyId === h.userId} onClick={() => void revoke(h.userId)}>
+                {tt('liveRevoke')}
+              </Button>
+            )}
           </div>
         ))}
       </CardContent>

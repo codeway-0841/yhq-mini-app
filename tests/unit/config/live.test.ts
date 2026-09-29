@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { ApiUserSchema } from '../../../shared/contracts/profile'
 import { config } from '../../../server/config'
-import { LIVE_ROLES, LIVE_STATUSES, isLiveJoinable, isLiveRole, isLiveStatus, liveRoomName } from '../../../shared/live'
+import { LIVE_ROLES, LIVE_STATUSES, capabilitiesFor, isLiveJoinable, isLiveRole, isLiveStatus, liveRoomName } from '../../../shared/live'
 
 describe('live SSOT (shared/live.ts)', () => {
   it('room name deterministik va LiveKit-safe', () => {
@@ -40,5 +40,24 @@ describe('live SSOT (shared/live.ts)', () => {
 
   it("recording flag env'dan (default OFF — kutubxona VOD keyin)", () => {
     expect(config.live.recordingEnabled).toBe(process.env['LIVE_RECORDING_ENABLED'] === 'true')
+  })
+
+  it("join gate: ending kirmaydi (yopilmoqda), status guard 'ending'ni taniydi", () => {
+    expect(isLiveJoinable('ending')).toBe(false)
+    expect(isLiveStatus('ending')).toBe(true)
+    expect(LIVE_STATUSES).toContain('ending')
+  })
+
+  it('capabilities: faqat owner/admin manager (§5)', () => {
+    const owner = capabilitiesFor({ isOwner: true, isAdmin: false, role: 'teacher', canSpeak: true })
+    expect(owner).toMatchObject({ canManage: true, canModerate: true, canRecord: true, canPublish: true })
+    const admin = capabilitiesFor({ isOwner: false, isAdmin: true, role: 'teacher', canSpeak: true })
+    expect(admin.canManage).toBe(true)
+    // Global teacher boshqa xonada moderator EMAS
+    const guestTeacher = capabilitiesFor({ isOwner: false, isAdmin: false, role: 'student', canSpeak: false })
+    expect(guestTeacher).toMatchObject({ canManage: false, canModerate: false, canRecord: false, canPublish: false })
+    // Approved student gapiradi, lekin boshqara olmaydi
+    const speaker = capabilitiesFor({ isOwner: false, isAdmin: false, role: 'student', canSpeak: true })
+    expect(speaker).toMatchObject({ canManage: false, canPublish: true })
   })
 })

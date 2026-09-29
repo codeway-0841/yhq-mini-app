@@ -122,7 +122,12 @@ const envSchema = z.object({
   LIVEKIT_URL:            z.string().url().optional(),
   LIVEKIT_API_KEY:        z.string().optional(),
   LIVEKIT_API_SECRET:     z.string().optional(),
+  /** LiveKit server webhook imzo kaliti — BO'SH bo'lsa API_SECRET ishlatiladi
+   *  (standart holat: LiveKit webhook JWT'ni API_SECRET bilan imzolaydi).
+   *  Alohida secret faqat custom webhook proksi uchun kerak. */
   LIVEKIT_WEBHOOK_SECRET: z.string().optional(),
+  /** Live modul master switch (rollback: 'false' → barcha live route 503, webhook'dan tashqari) */
+  LIVE_ENABLED: z.enum(['true', 'false']).optional().default('true'),
   /** Dars yozuvi (Egress → R2 → kutubxona VOD) — default O'CHIQ, kerak bo'lganda 'true' */
   LIVE_RECORDING_ENABLED: z.enum(['true', 'false']).optional().default('false'),
   /** Live join-token HMAC kaliti (10 daqiqalik xona bileti) */
@@ -383,6 +388,8 @@ export const config = {
     joinTokenTtlSeconds: 600,
     /** Yozuv o'chiq bo'lsa record endpoint'lar 503 + UI'da tugma va ro'yxat yashirin */
     recordingEnabled: env.LIVE_RECORDING_ENABLED === 'true',
+    /** Master switch (rollback) — o'chiq bo'lsa router 503 (webhook'dan tashqari) */
+    enabled: env.LIVE_ENABLED !== 'false',
   },
 } as const
 

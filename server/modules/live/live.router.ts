@@ -1,12 +1,6 @@
 /**
- * Live router — jonli dars control-plane (Faza 0).
- *
- * Trust boundary:
- *  - userId FAQAT telegramAuth'dan (req.userId) — client id'ga ishonilmaydi.
- *  - Rol server resolve qiladi: xona egasi (teacherId) yoki is_teacher/is_admin
- *    bo'lsa 'teacher', aks holda 'student'. Join-token shu rolni imzolaydi.
- *  - Yaratish/start/end: admin YOKI ustoz (is_teacher) — student 403.
- *  - Chat yozish/o'qish: faqat join qilgan participant (membership gate).
+ * Live router — yupqa qatlam (§3): zod validation → auth → service → HTTP.
+ * Biznes-logika `live.service.ts`da; rol/kapabiliti server hisoblaydi.
  */
 import { Router } from 'express'
 import { z } from 'zod'
@@ -15,16 +9,47 @@ import { validate } from '../../middleware/validate'
 import { dbRateLimit as rateLimit } from '../../middleware/db-rate-limiter'
 import { identityKey } from '../../middleware/rate-limiter'
 import { config } from '../../config'
-import { SUBJECT_BASES } from '../../../shared/subjects'
-import { isLiveJoinable, LIVE_MESSAGE_MAX_LEN, LIVE_TITLE_MAX_LEN } from '../../../shared/live'
+import { LIVE_MESSAGE_MAX_LEN, LIVE_TITLE_MAX_LEN } from '../../../shared/live'
 import { liveRepository } from './live.repository'
-import { issueLiveJoinToken } from './live.token'
-import { buildLivekitToken, verifyLivekitWebhook } from './livekit'
-import { parseEgressEnded, startRoomEgress, stopRoomEgress, listRoomParticipants, deleteLivekitRoom } from './egress'
+import { getCachedCloudHealth, isLiveEnabled, isManager, liveService, type ServiceError } from './live.service'
+import { verifyLivekitWebhook } from './livekit'
+import { parseEgressEnded } from './egress'
 
 const router = Router()
 
-const SUBJECT_IDS = new Set((SUBJECT_BASES as readonly { id: string }[]).map((s) => s.id))
+// Master switch (rollback) — webhook har doim ochiq (in-flight egress yakunlanishi uchun).
+router.use((req, res, next) => {
+  if (isLiveEnabled() || req.path === '/live/webhook') {
+    next()
+    return
+  }
+  res.status(503).json({ error: 'LIVE_DISABLED' })
+})
+
+const ERROR_MAP: Record<ServiceError, { status: number; code: string }> = {
+  NOT_FOUND: { status: 404, code: 'LIVE_NOT_FOUND' },
+  FORBIDDEN: { status: 403, code: 'FORBIDDEN' },
+  TEACHER_REQUIRED: { status: 403, code: 'TEACHER_REQUIRED' },
+  INVALID_SUBJECT: { status: 400, code: 'INVALID_SUBJECT' },
+  NOT_SCHEDULED: { status: 409, code: 'LIVE_NOT_SCHEDULED' },
+  ENDED: { status: 409, code: 'LIVE_ENDED' },
+  JOIN_REQUIRED: { status: 403, code: 'LIVE_JOIN_REQUIRED' },
+  ALREADY_SPEAKER: { status: 409, code: 'ALREADY_SPEAKER' },
+  HAND_NOT_PENDING: { status: 409, code: 'HAND_NOT_PENDING' },
+  MEDIA_NOT_CONFIGURED: { status: 503, code: 'LIVE_MEDIA_NOT_CONFIGURED' },
+  STORAGE_NOT_CONFIGURED: { status: 503, code: 'RECORDING_STORAGE_NOT_CONFIGURED' },
+  RECORDING_DISABLED: { status: 503, code: 'RECORDING_DISABLED' },
+  RECORDING_CONFLICT: { status: 409, code: 'RECORDING_ALREADY_ACTIVE' },
+  RECORDING_NOT_ACTIVE: { status: 409, code: 'RECORDING_NOT_ACTIVE' },
+  NOT_LIVE: { status: 409, code: 'LIVE_NOT_LIVE' },
+  CREATE_FAILED: { status: 500, code: 'LIVE_CREATE_FAILED' },
+  LIVE_DISABLED: { status: 503, code: 'LIVE_DISABLED' },
+}
+
+function fail(error: ServiceError): never {
+  const m = ERROR_MAP[error]
+  throw new AppError(m.status, m.code)
+}
 
 function requireUserId(req: unknown): string {
   const userId = (req as { userId?: string }).userId
@@ -32,9 +57,20 @@ function requireUserId(req: unknown): string {
   return userId
 }
 
+/** Manager guard: xona egasi yoki admin (oddiy teacher YO'Q — §5). */
+async function requireManager(roomId: number, userId: string): Promise<void> {
+  const priv = await liveRepository.getPrivileges(roomId, userId)
+  if (!priv) throw new AppError(404, 'LIVE_NOT_FOUND')
+  if (!isManager(priv)) throw new AppError(403, 'TEACHER_REQUIRED')
+}
+
 const createLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:create', keyFn: identityKey })
 const joinLimiter = rateLimit({ maxPerMinute: 20, bucket: 'live:join', keyFn: identityKey })
 const messageLimiter = rateLimit({ maxPerMinute: 30, bucket: 'live:message', keyFn: identityKey })
+const raiseLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:raise', keyFn: identityKey })
+const handsLimiter = rateLimit({ maxPerMinute: 20, bucket: 'live:hands', keyFn: identityKey })
+const recordLimiter = rateLimit({ maxPerMinute: 5, bucket: 'live:record', keyFn: identityKey })
+const healthLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:health', keyFn: identityKey })
 
 const CreateRoomBodySchema = z.object({
   subjectId: z.string().min(1).max(32),
@@ -45,7 +81,7 @@ const CreateRoomBodySchema = z.object({
 
 const ListRoomsQuerySchema = z.object({
   subject: z.string().min(1).max(32).optional(),
-  status: z.enum(['scheduled', 'live', 'ended']).optional(),
+  status: z.enum(['scheduled', 'live', 'ending', 'ended']).optional(),
   limit: z.coerce.number().int().min(1).max(50).optional(),
 })
 
@@ -62,28 +98,10 @@ const ListMessagesQuerySchema = z.object({
   limit: z.coerce.number().int().min(1).max(100).optional(),
 })
 
-function toPublicRow(r: {
-  id: number; subject_id: string; teacher_id: string; teacher_name: string | null
-  title: string; description: string | null; status: string
-  scheduled_at: string | null; started_at: string | null; ended_at: string | null
-  room_name: string; participant_count: number; created_at: string
-}) {
-  return {
-    id: r.id,
-    subjectId: r.subject_id,
-    teacherId: r.teacher_id,
-    teacherName: r.teacher_name,
-    title: r.title,
-    description: r.description,
-    status: r.status,
-    scheduledAt: r.scheduled_at,
-    startedAt: r.started_at,
-    endedAt: r.ended_at,
-    roomName: r.room_name,
-    participantCount: Number(r.participant_count ?? 0),
-    createdAt: r.created_at,
-  }
-}
+const HandTargetParamSchema = z.object({
+  id: z.coerce.number().int().positive(),
+  userId: z.string().min(1).max(64),
+})
 
 // GET /api/live/rooms?subject=&status=&limit=
 router.get(
@@ -92,9 +110,8 @@ router.get(
   wrap(async (req, res) => {
     requireUserId(req)
     const q = req.query as z.infer<typeof ListRoomsQuerySchema>
-    if (q.subject && !SUBJECT_IDS.has(q.subject)) throw new AppError(400, 'INVALID_SUBJECT')
-    const rows = await liveRepository.listRooms({ subjectId: q.subject, status: q.status, limit: q.limit ?? 20 })
-    res.json({ ok: true, rooms: rows.map(toPublicRow), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled })
+    const rooms = await liveService.listRooms({ subjectId: q.subject, status: q.status, limit: q.limit ?? 20 })
+    res.json({ ok: true, rooms, mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled })
   }),
 )
 
@@ -106,18 +123,14 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const body = req.body as z.infer<typeof CreateRoomBodySchema>
-    if (!SUBJECT_IDS.has(body.subjectId)) throw new AppError(400, 'INVALID_SUBJECT')
-    const priv = await liveRepository.getPrivilegesForUser(userId)
-    if (!priv || (!priv.isAdmin && !priv.isTeacher)) throw new AppError(403, 'TEACHER_REQUIRED')
-    const room = await liveRepository.createRoom({
+    const r = await liveService.createRoom(userId, {
       subjectId: body.subjectId,
-      teacherId: userId,
       title: body.title,
       description: body.description ?? null,
       scheduledAt: body.scheduledAt ?? null,
     })
-    if (!room) throw new AppError(500, 'LIVE_CREATE_FAILED')
-    res.json({ ok: true, room: toPublicRow(room) })
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, room: r.room })
   }),
 )
 
@@ -128,66 +141,46 @@ router.get(
   wrap(async (req, res) => {
     requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    const recordingActive = config.live.recordingEnabled
-      ? (await liveRepository.getActiveRecording(id)) !== null
-      : false
-    res.json({ ok: true, room: toPublicRow(room), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled, recordingActive })
+    const d = await liveService.getRoomDetails(id)
+    if (!d) fail('NOT_FOUND')
+    res.json({
+      ok: true, room: d.room, mediaEnabled: config.live.mediaEnabled,
+      recordingEnabled: config.live.recordingEnabled, recordingActive: d.recordingActive,
+    })
   }),
 )
 
-// POST /api/live/rooms/:id/start — faqat xona egasi yoki admin
+// POST /api/live/rooms/:id/start — faqat manager
 router.post(
   '/live/rooms/:id/start',
   validate({ params: RoomIdParamSchema }),
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const priv = await liveRepository.getPrivileges(id, userId)
-    if (!priv) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (!priv.isOwner && !priv.isAdmin) throw new AppError(403, 'TEACHER_REQUIRED')
-    const ok = await liveRepository.startRoom(id)
-    if (!ok) throw new AppError(409, 'LIVE_NOT_SCHEDULED')
-    const room = await liveRepository.getRoom(id)
-    res.json({ ok: true, room: room ? toPublicRow(room) : null })
+    await requireManager(id, userId)
+    const r = await liveService.startRoom(id)
+    if (!r.ok) fail(r.error)
+    const d = await liveService.getRoomDetails(id)
+    res.json({ ok: true, room: d?.room ?? null })
   }),
 )
 
-// POST /api/live/rooms/:id/end — faqat xona egasi yoki admin.
-// DB ended + faol yozuv STOP + LiveKit xona DELETE (participantlar uziladi).
-// Media/Egress sozlanmagan bo'lsa DB qismi baribir bajariladi (best-effort media).
+// POST /api/live/rooms/:id/end — faqat manager (ending → media → ended)
 router.post(
   '/live/rooms/:id/end',
   validate({ params: RoomIdParamSchema }),
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const priv = await liveRepository.getPrivileges(id, userId)
-    if (!priv) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (!priv.isOwner && !priv.isAdmin) throw new AppError(403, 'TEACHER_REQUIRED')
-    await liveRepository.endRoom(id)
-    const room = await liveRepository.getRoom(id)
-    if (room && config.live.mediaEnabled && config.live.apiKey && config.live.apiSecret && config.live.url) {
-      const lk = { livekitUrl: config.live.url, apiKey: config.live.apiKey, apiSecret: config.live.apiSecret }
-      // Faol yozuv bo'lsa to'xtatish (yakuniy MP4 webhook'dan keladi)
-      try {
-        const active = await liveRepository.getActiveRecording(id)
-        if (active) {
-          await stopRoomEgress({ ...lk, room: room.room_name, egressId: active.egressId }).catch(() => {})
-        }
-      } catch { /* best-effort */ }
-      // Xonani yopish — barcha participant uziladi
-      try {
-        await deleteLivekitRoom({ ...lk, room: room.room_name })
-      } catch { /* best-effort (xona bo'sh/yopiq bo'lishi mumkin) */ }
-    }
-    res.json({ ok: true, room: room ? toPublicRow(room) : null })
+    await requireManager(id, userId)
+    const r = await liveService.endRoom(id)
+    if (!r.ok) fail(r.error)
+    const d = await liveService.getRoomDetails(id)
+    res.json({ ok: true, room: d?.room ?? null })
   }),
 )
 
-// POST /api/live/rooms/:id/join — participant upsert + imzolangan join-token
-// + LiveKit JWT (media yoqilgan bo'lsa; canPublish = teacher yoki approved student)
+// POST /api/live/rooms/:id/join — participant upsert + tokenlar + capability
 router.post(
   '/live/rooms/:id/join',
   joinLimiter,
@@ -195,71 +188,62 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (!isLiveJoinable(room.status)) throw new AppError(409, 'LIVE_ENDED')
-    const priv = await liveRepository.getPrivileges(id, userId)
-    const role = priv && (priv.isOwner || priv.isAdmin || priv.isTeacher) ? 'teacher' : 'student'
-    const { canSpeak } = await liveRepository.joinRoom(id, userId, role)
-    const secret = config.live.joinTokenSecret
-    const token = secret
-      ? issueLiveJoinToken(secret, {
-          roomId: id, room: room.room_name, sub: userId, role, canSpeak, ttlSeconds: config.live.joinTokenTtlSeconds,
-        })
-      : `dev:${id}:${userId}:${role}`
-    const canPublish = role === 'teacher' || canSpeak
-    const livekitToken = config.live.mediaEnabled && config.live.apiKey && config.live.apiSecret
-      ? buildLivekitToken({
-          apiKey: config.live.apiKey,
-          apiSecret: config.live.apiSecret,
-          identity: userId,
-          room: room.room_name,
-          canPublish,
-          ttlSeconds: config.live.joinTokenTtlSeconds,
-        })
-      : null
+    const r = await liveService.joinRoom(id, userId)
+    if (!r.ok) fail(r.error)
     res.json({
       ok: true,
-      role,
-      canSpeak,
-      roomName: room.room_name,
-      token,
+      role: r.role,
+      canSpeak: r.canSpeak,
+      capabilities: r.capabilities,
+      roomName: r.roomName,
+      token: r.token,
       expiresIn: config.live.joinTokenTtlSeconds,
       mediaEnabled: config.live.mediaEnabled,
       mediaUrl: config.live.url ?? null,
-      livekitToken,
+      livekitToken: r.livekitToken,
     })
   }),
 )
 
-// POST /api/live/rooms/:id/leave — davomat yoziladi
+// POST /api/live/rooms/:id/leave — davomat + LiveKit remove (idempotent)
 router.post(
   '/live/rooms/:id/leave',
   validate({ params: RoomIdParamSchema }),
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    await liveRepository.leaveRoom(id, userId)
+    await liveService.leaveRoom(id, userId)
     res.json({ ok: true })
   }),
 )
 
-// GET /api/live/rooms/:id/participants — faqat participant ko'radi
+// GET /api/live/rooms/:id/me — o'z holatim (student polling shu orqali)
+router.get(
+  '/live/rooms/:id/me',
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    const r = await liveService.getMe(id, userId)
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, me: r.me })
+  }),
+)
+
+// GET /api/live/rooms/:id/participants — faqat faol participant ko'radi
 router.get(
   '/live/rooms/:id/participants',
   validate({ params: RoomIdParamSchema }),
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (!(await liveRepository.isParticipant(id, userId))) throw new AppError(403, 'LIVE_JOIN_REQUIRED')
+    if (!(await liveRepository.isParticipant(id, userId))) fail('JOIN_REQUIRED')
     const rows = await liveRepository.listParticipants(id)
     res.json({ ok: true, participants: rows })
   }),
 )
 
-// GET /api/live/rooms/:id/messages?after=&limit= — faqat participant
+// GET /api/live/rooms/:id/messages?after=&limit= — faqat faol participant
 router.get(
   '/live/rooms/:id/messages',
   validate({ params: RoomIdParamSchema, query: ListMessagesQuerySchema }),
@@ -267,7 +251,7 @@ router.get(
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
     const q = req.query as unknown as { after?: number; limit?: number }
-    if (!(await liveRepository.isParticipant(id, userId))) throw new AppError(403, 'LIVE_JOIN_REQUIRED')
+    if (!(await liveRepository.isParticipant(id, userId))) fail('JOIN_REQUIRED')
     const rows = await liveRepository.listMessages(id, q.after ?? 0, q.limit ?? 50)
     res.json({
       ok: true,
@@ -279,7 +263,7 @@ router.get(
   }),
 )
 
-// POST /api/live/rooms/:id/messages — faqat participant yozadi
+// POST /api/live/rooms/:id/messages — faqat faol participant yozadi
 router.post(
   '/live/rooms/:id/messages',
   messageLimiter,
@@ -288,10 +272,10 @@ router.post(
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
     const body = req.body as z.infer<typeof PostMessageBodySchema>
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (room.status === 'ended') throw new AppError(409, 'LIVE_ENDED')
-    if (!(await liveRepository.isParticipant(id, userId))) throw new AppError(403, 'LIVE_JOIN_REQUIRED')
+    const room = await liveService.getRoom(id)
+    if (!room) fail('NOT_FOUND')
+    if (room.status === 'ended' || room.status === 'ending') fail('ENDED')
+    if (!(await liveRepository.isParticipant(id, userId))) fail('JOIN_REQUIRED')
     const m = await liveRepository.postMessage(id, userId, body.body)
     if (!m) throw new AppError(500, 'LIVE_MESSAGE_FAILED')
     res.json({
@@ -304,22 +288,7 @@ router.post(
   }),
 )
 
-const raiseLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:raise', keyFn: identityKey })
-const handsLimiter = rateLimit({ maxPerMinute: 20, bucket: 'live:hands', keyFn: identityKey })
-const recordLimiter = rateLimit({ maxPerMinute: 5, bucket: 'live:record', keyFn: identityKey })
-
-const HandTargetParamSchema = z.object({
-  id: z.coerce.number().int().positive(),
-  userId: z.string().min(1).max(64),
-})
-
-async function requireRoomTeacher(roomId: number, userId: string): Promise<void> {
-  const priv = await liveRepository.getPrivileges(roomId, userId)
-  if (!priv) throw new AppError(404, 'LIVE_NOT_FOUND')
-  if (!priv.isOwner && !priv.isAdmin && !priv.isTeacher) throw new AppError(403, 'TEACHER_REQUIRED')
-}
-
-// POST /api/live/rooms/:id/raise — student qo'l ko'taradi (ovoz so'rovi)
+// POST /api/live/rooms/:id/raise — student qo'l ko'taradi
 router.post(
   '/live/rooms/:id/raise',
   raiseLimiter,
@@ -327,18 +296,13 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (room.status === 'ended') throw new AppError(409, 'LIVE_ENDED')
-    if (!(await liveRepository.isParticipant(id, userId))) throw new AppError(403, 'LIVE_JOIN_REQUIRED')
-    const priv = await liveRepository.getPrivileges(id, userId)
-    if (priv && (priv.isOwner || priv.isAdmin || priv.isTeacher)) throw new AppError(409, 'ALREADY_SPEAKER')
-    const status = await liveRepository.raiseHand(id, userId)
-    res.json({ ok: true, status })
+    const r = await liveService.raiseHand(id, userId)
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, status: r.status })
   }),
 )
 
-// DELETE /api/live/rooms/:id/raise — qo'lni tushirish (o'z pending so'rovi)
+// DELETE /api/live/rooms/:id/raise — qo'lni tushirish
 router.delete(
   '/live/rooms/:id/raise',
   validate({ params: RoomIdParamSchema }),
@@ -350,21 +314,21 @@ router.delete(
   }),
 )
 
-// GET /api/live/rooms/:id/hands?pendingOnly= — faqat teacher ko'radi
+// GET /api/live/rooms/:id/hands — faqat manager
 router.get(
   '/live/rooms/:id/hands',
   validate({ params: RoomIdParamSchema }),
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
-    await requireRoomTeacher(id, userId)
+    await requireManager(id, userId)
     const pendingOnly = req.query['pendingOnly'] !== 'false'
     const rows = await liveRepository.listHands(id, pendingOnly)
     res.json({ ok: true, hands: rows })
   }),
 )
 
-// POST /api/live/rooms/:id/hands/:userId/approve — teacher ruxsat beradi (can_speak=true)
+// POST /api/live/rooms/:id/hands/:userId/approve — faqat manager
 router.post(
   '/live/rooms/:id/hands/:userId/approve',
   handsLimiter,
@@ -372,14 +336,14 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id, userId: target } = req.params as unknown as { id: number; userId: string }
-    await requireRoomTeacher(id, userId)
-    const ok = await liveRepository.resolveHand(id, target, true)
-    if (!ok) throw new AppError(409, 'HAND_NOT_PENDING')
+    await requireManager(id, userId)
+    const r = await liveService.approveHand(id, target)
+    if (!r.ok) fail(r.error)
     res.json({ ok: true, status: 'approved' })
   }),
 )
 
-// POST /api/live/rooms/:id/hands/:userId/reject — teacher rad etadi
+// POST /api/live/rooms/:id/hands/:userId/reject — faqat manager
 router.post(
   '/live/rooms/:id/hands/:userId/reject',
   handsLimiter,
@@ -387,46 +351,76 @@ router.post(
   wrap(async (req, res) => {
     const userId = requireUserId(req)
     const { id, userId: target } = req.params as unknown as { id: number; userId: string }
-    await requireRoomTeacher(id, userId)
-    const ok = await liveRepository.resolveHand(id, target, false)
-    if (!ok) throw new AppError(409, 'HAND_NOT_PENDING')
+    await requireManager(id, userId)
+    const r = await liveService.rejectHand(id, target)
+    if (!r.ok) fail(r.error)
     res.json({ ok: true, status: 'rejected' })
   }),
 )
 
-// POST /api/live/webhook — LiveKit server webhook (imzo bilan, credentials'siz).
-// DIQQAT: telegramAuth'dan OLDIN o'tishi uchun auth.ts PUBLIC_LIVE_WEBHOOK'da;
-// raw body app.ts'da express.raw bilan ushlanadi (hash aynan kelgan baytlardan).
+// POST /api/live/rooms/:id/participants/:userId/revoke — speaker huquqni qaytarish (manager)
 router.post(
-  '/live/webhook',
+  '/live/rooms/:id/participants/:userId/revoke',
+  handsLimiter,
+  validate({ params: HandTargetParamSchema }),
   wrap(async (req, res) => {
-    const secret = config.live.webhookSecret ?? config.live.apiSecret
-    if (!secret) {
-      res.status(503).json({ error: 'LIVE_WEBHOOK_NOT_CONFIGURED' })
-      return
-    }
-    const raw = Buffer.isBuffer(req.body) ? req.body.toString('utf8') : JSON.stringify(req.body ?? {})
-    const auth = Array.isArray(req.headers['authorization']) ? req.headers['authorization'][0] : req.headers['authorization']
-    const evt = verifyLivekitWebhook(secret, raw, auth)
-    if (!evt) {
-      res.status(401).json({ error: 'INVALID_WEBHOOK_SIGNATURE' })
-      return
-    }
-    // Yozuv yakuni — R2 key DB'ga (idempotent, best-effort).
-    if (evt.event === 'egress_ended') {
-      const info = parseEgressEnded(raw)
-      if (info) {
-        try {
-          await liveRepository.finishRecording(info.egressId, info.ready, info.r2Key)
-        } catch { /* best-effort — LiveKit retry qilmasligi uchun baribir 200 */ }
-      }
-    }
-    // Best-effort kuzatuv — noma'lum event'lar ham 200 (LiveKit retry qilmasligi uchun).
-    res.json({ ok: true, event: evt.event })
+    const userId = requireUserId(req)
+    const { id, userId: target } = req.params as unknown as { id: number; userId: string }
+    await requireManager(id, userId)
+    const r = await liveService.revokeSpeaker(id, target)
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, status: 'revoked' })
   }),
 )
 
-// GET /api/live/recordings — tayyor yozuvlar (VOD ro'yxati; flag o'chiq bo'lsa bo'sh)
+// GET /api/live/rooms/:id/cloud-health — faqat manager (8s server cache)
+router.get(
+  '/live/rooms/:id/cloud-health',
+  healthLimiter,
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireManager(id, userId)
+    const room = await liveService.getRoom(id)
+    if (!room) fail('NOT_FOUND')
+    const r = await getCachedCloudHealth(id, room.roomName)
+    if ('error' in r) fail('MEDIA_NOT_CONFIGURED')
+    res.json({ ok: true, roomName: room.roomName, cached: r.cached, participants: r.participants })
+  }),
+)
+
+// POST /api/live/rooms/:id/record/start — faqat manager (state machine)
+router.post(
+  '/live/rooms/:id/record/start',
+  recordLimiter,
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireManager(id, userId)
+    const r = await liveService.startRecording(id)
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, egressId: r.egressId })
+  }),
+)
+
+// POST /api/live/rooms/:id/record/stop — faqat manager
+router.post(
+  '/live/rooms/:id/record/stop',
+  recordLimiter,
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireManager(id, userId)
+    const r = await liveService.stopRecording(id)
+    if (!r.ok) fail(r.error)
+    res.json({ ok: true, egressId: r.egressId })
+  }),
+)
+
+// GET /api/live/recordings — tayyor yozuvlar (flag o'chiq bo'lsa bo'sh)
 router.get(
   '/live/recordings',
   wrap(async (req, res) => {
@@ -453,94 +447,32 @@ router.get(
   }),
 )
 
-function requireLiveMedia(): { url: string; apiKey: string; apiSecret: string } {
-  const { url, apiKey, apiSecret, mediaEnabled } = config.live
-  if (!mediaEnabled || !url || !apiKey || !apiSecret) throw new AppError(503, 'LIVE_MEDIA_NOT_CONFIGURED')
-  return { url, apiKey, apiSecret }
-}
-
-function requireR2(): { accountId: string; accessKey: string; secretKey: string; bucket: string } {
-  const r = config.r2
-  if (!r.isConfigured || !r.accountId || !r.accessKeyId || !r.secretAccessKey || !r.bucket) {
-    throw new AppError(503, 'RECORDING_STORAGE_NOT_CONFIGURED')
-  }
-  return { accountId: r.accountId, accessKey: r.accessKeyId, secretKey: r.secretAccessKey, bucket: r.bucket }
-}
-
-// POST /api/live/rooms/:id/record/start — faqat teacher (jonli efirda)
+// POST /api/live/webhook — LiveKit server webhook (imzo bilan, credentials'siz).
+// Master switch'dan MUSTASNO (in-flight egress yakunlanishi uchun).
 router.post(
-  '/live/rooms/:id/record/start',
-  recordLimiter,
-  validate({ params: RoomIdParamSchema }),
+  '/live/webhook',
   wrap(async (req, res) => {
-    const userId = requireUserId(req)
-    const { id } = req.params as unknown as { id: number }
-    if (!config.live.recordingEnabled) throw new AppError(503, 'RECORDING_DISABLED')
-    await requireRoomTeacher(id, userId)
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    if (room.status !== 'live') throw new AppError(409, 'LIVE_NOT_LIVE')
-    if (await liveRepository.getActiveRecording(id)) throw new AppError(409, 'RECORDING_ALREADY_ACTIVE')
-    const media = requireLiveMedia()
-    const r2 = requireR2()
-    const egressId = await startRoomEgress({
-      livekitUrl: media.url,
-      apiKey: media.apiKey,
-      apiSecret: media.apiSecret,
-      room: room.room_name,
-      filepathPrefix: `live-recordings/${room.room_name}`,
-      s3: {
-        endpoint: `https://${r2.accountId}.r2.cloudflarestorage.com`,
-        region: 'auto',
-        accessKey: r2.accessKey,
-        secret: r2.secretKey,
-        bucket: r2.bucket,
-      },
-    })
-    await liveRepository.createRecording(id, egressId)
-    res.json({ ok: true, egressId })
-  }),
-)
-
-// POST /api/live/rooms/:id/record/stop — faqat teacher
-router.post(
-  '/live/rooms/:id/record/stop',
-  recordLimiter,
-  validate({ params: RoomIdParamSchema }),
-  wrap(async (req, res) => {
-    const userId = requireUserId(req)
-    const { id } = req.params as unknown as { id: number }
-    if (!config.live.recordingEnabled) throw new AppError(503, 'RECORDING_DISABLED')
-    await requireRoomTeacher(id, userId)
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    const active = await liveRepository.getActiveRecording(id)
-    if (!active) throw new AppError(409, 'RECORDING_NOT_ACTIVE')
-    const media = requireLiveMedia()
-    await stopRoomEgress({
-      livekitUrl: media.url, apiKey: media.apiKey, apiSecret: media.apiSecret,
-      room: room.room_name, egressId: active.egressId,
-    })
-    res.json({ ok: true, egressId: active.egressId })
-  }),
-)
-
-// GET /api/live/rooms/:id/cloud-health — LiveKit Cloud'dagi jonli holat (faqat teacher).
-// Diagnostika: yuboruvchi Cloud'ga yetib boryaptimi (client aybini ajratish uchun).
-router.get(
-  '/live/rooms/:id/cloud-health',
-  validate({ params: RoomIdParamSchema }),
-  wrap(async (req, res) => {
-    const userId = requireUserId(req)
-    const { id } = req.params as unknown as { id: number }
-    await requireRoomTeacher(id, userId)
-    const room = await liveRepository.getRoom(id)
-    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    const media = requireLiveMedia()
-    const participants = await listRoomParticipants({
-      livekitUrl: media.url, apiKey: media.apiKey, apiSecret: media.apiSecret, room: room.room_name,
-    })
-    res.json({ ok: true, roomName: room.room_name, participants })
+    const secret = config.live.webhookSecret ?? config.live.apiSecret
+    if (!secret) {
+      res.status(503).json({ error: 'LIVE_WEBHOOK_NOT_CONFIGURED' })
+      return
+    }
+    const raw = Buffer.isBuffer(req.body) ? req.body.toString('utf8') : JSON.stringify(req.body ?? {})
+    const auth = Array.isArray(req.headers['authorization']) ? req.headers['authorization'][0] : req.headers['authorization']
+    const evt = verifyLivekitWebhook(secret, raw, auth, { expectedIss: config.live.apiKey })
+    if (!evt) {
+      res.status(401).json({ error: 'INVALID_WEBHOOK_SIGNATURE' })
+      return
+    }
+    if (evt.event === 'egress_ended') {
+      const info = parseEgressEnded(raw)
+      if (info) {
+        try {
+          await liveRepository.finishRecording(info.egressId, info.ready, info.r2Key)
+        } catch { /* best-effort — LiveKit retry qilmasligi uchun baribir 200 */ }
+      }
+    }
+    res.json({ ok: true, event: evt.event })
   }),
 )
 

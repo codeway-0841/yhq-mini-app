@@ -74,12 +74,13 @@ export interface LivekitWebhookEvent {
  * LiveKit webhook tekshiruvi. Qaytadi: { event } yoki null (fail-closed).
  * `rawBody` — Express json parser'dan OLDINGI xom string bo'lishi shart
  * (hash body'ning aynan kelgan baytlaridan hisoblanadi).
+ * Qat'iy qoidalar (§2): iss API key'ga teng, exp MAJBURIY va kelajakda.
  */
 export function verifyLivekitWebhook(
   apiSecret: string,
   rawBody: string,
   authHeader: string | undefined,
-  nowMs?: number,
+  opts: { expectedIss?: string; nowMs?: number } = {},
 ): LivekitWebhookEvent | null {
   if (!authHeader?.startsWith('Bearer ')) return null
   const token = authHeader.slice(7).trim()
@@ -97,10 +98,14 @@ export function verifyLivekitWebhook(
   if (sigBuf.length !== expBuf.length || !timingSafeEqual(sigBuf, expBuf)) return null
   let claims: { sha256?: unknown; exp?: unknown; iss?: unknown }
   try {
-    claims = JSON.parse(b64urlDecode(body).toString('utf8')) as { sha256?: unknown; exp?: unknown }
+    claims = JSON.parse(b64urlDecode(body).toString('utf8')) as { sha256?: unknown; exp?: unknown; iss?: unknown }
   } catch {
     return null
   }
+  if (opts.expectedIss !== undefined && claims.iss !== opts.expectedIss) return null
+  if (typeof claims.exp !== 'number') return null
+  const nowSec = Math.floor((opts.nowMs ?? Date.now()) / 1000)
+  if (claims.exp <= nowSec) return null
   if (typeof claims.sha256 !== 'string') return null
   const actual = createHash('sha256').update(rawBody, 'utf8').digest('hex')
   let hashOk: boolean
@@ -110,10 +115,6 @@ export function verifyLivekitWebhook(
     return null
   }
   if (!hashOk) return null
-  if (typeof claims.exp === 'number') {
-    const nowSec = Math.floor((nowMs ?? Date.now()) / 1000)
-    if (claims.exp <= nowSec) return null
-  }
   try {
     const evt = JSON.parse(rawBody) as LivekitWebhookEvent
     if (!evt || typeof evt.event !== 'string') return null

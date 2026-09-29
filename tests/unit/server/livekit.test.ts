@@ -41,6 +41,20 @@ describe('livekit JWT (hand-rolled AccessToken)', () => {
     }
     const good = mkJwt(SECRET, hash, nowSec + 300)
     expect(verifyLivekitWebhook(SECRET, raw, `Bearer ${good}`)?.event).toBe('participant_joined')
+    // iss tekshiruvi: begona key imzolagan token o'tmaydi
+    expect(verifyLivekitWebhook(SECRET, raw, `Bearer ${good}`, { expectedIss: 'APIother' })).toBeNull()
+    expect(verifyLivekitWebhook(SECRET, raw, `Bearer ${good}`, { expectedIss: KEY })?.event).toBe('participant_joined')
+    // exp'siz token — fail-closed
+    const noExp = (() => {
+      const h = Buffer.from(JSON.stringify({ alg: 'HS256', typ: 'JWT' }), 'utf8')
+        .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+      const b = Buffer.from(JSON.stringify({ iss: KEY, sha256: hash }), 'utf8')
+        .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+      const s = createHmac('sha256', SECRET).update(`${h}.${b}`).digest()
+        .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+      return `${h}.${b}.${s}`
+    })()
+    expect(verifyLivekitWebhook(SECRET, raw, `Bearer ${noExp}`)).toBeNull()
     // noto‘g‘ri secret
     expect(verifyLivekitWebhook('wrong-secret-32chars-minimum-0000', raw, `Bearer ${good}`)).toBeNull()
     // body o‘zgargan (hash mos emas)

@@ -171,6 +171,33 @@ export const liveRepository = {
     return true
   },
 
+  /** End-flow 1-qadam: `ending` — yangi join darhol bloklanadi (idempotent). */
+  async markEnding(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE live_rooms SET status = 'ending', updated_at = now()
+      WHERE id = ${id} AND status IN ('scheduled', 'live')
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  /** End-flow yakuni: `ending` → `ended` + davomat yopish (idempotent retry). */
+  async markEnded(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE live_rooms SET status = 'ended', ended_at = now(), updated_at = now()
+      WHERE id = ${id} AND status IN ('live', 'ending', 'scheduled')
+      RETURNING id
+    `)
+    if (rows.length === 0) return false
+    await executeRows(sql`
+      UPDATE live_participants SET
+        left_at = now(),
+        duration_sec = duration_sec + GREATEST(0, EXTRACT(EPOCH FROM (now() - joined_at))::int)
+      WHERE room_id = ${id} AND left_at IS NULL
+    `)
+    return true
+  },
+
   async joinRoom(roomId: number, userId: string, role: LiveRole): Promise<{ canSpeak: boolean }> {
     // Qayta join can_speak'ni O'CHIRMAYDI (approve qilingan student qaytsa ham gapiradi).
     // Teacher roli har doim can_speak=true. Avval approved qo'l bilan kirsa ham true.
@@ -273,6 +300,23 @@ export const liveRepository = {
     `)
   },
 
+  /** Speaker huquqini bevosita o'rnatish (revoke/admin). */
+  async setCanSpeak(roomId: number, userId: string, canSpeak: boolean): Promise<void> {
+    await executeRows(sql`
+      UPDATE live_participants SET can_speak = ${canSpeak}
+      WHERE room_id = ${roomId} AND user_id = ${userId}
+    `)
+  },
+
+  /** /me uchun o'z qo'l holati (qator yo'q = 'none'). */
+  async getHandStatus(roomId: number, userId: string): Promise<'pending' | 'approved' | 'rejected' | 'none'> {
+    const rows = await executeRows<{ status: string }>(sql`
+      SELECT status FROM live_hand_raises WHERE room_id = ${roomId} AND user_id = ${userId} LIMIT 1
+    `)
+    const s = rows[0]?.status
+    return s === 'pending' || s === 'approved' || s === 'rejected' ? s : 'none'
+  },
+
   // ── Yozuvlar (Egress → R2) ─────────────────────────────────────────────
   async createRecording(roomId: number, egressId: string): Promise<void> {
     await executeRows(sql`
@@ -282,10 +326,58 @@ export const liveRepository = {
     `)
   },
 
+  /**
+   * ATOMIK reservation (§8): faqat faol recording YO'Q bo'lsa `starting`
+   * qatori yaratiladi. Parallel start'lardan bittasi g'olib (qaytgani null).
+   */
+  async reserveRecording(roomId: number): Promise<{ id: number } | null> {
+    const rows = await executeRows<{ id: number }>(sql`
+      INSERT INTO live_recordings (room_id, egress_id, status)
+      SELECT ${roomId}, 'pending:' || gen_random_uuid()::text, 'starting'
+      WHERE NOT EXISTS (
+        SELECT 1 FROM live_recordings
+        WHERE room_id = ${roomId} AND status IN ('starting', 'started', 'stopping')
+      )
+      RETURNING id
+    `)
+    return rows[0] ?? null
+  },
+
+  async activateRecording(id: number, egressId: string): Promise<void> {
+    await executeRows(sql`
+      UPDATE live_recordings SET egress_id = ${egressId}, status = 'started'
+      WHERE id = ${id} AND status = 'starting'
+    `)
+  },
+
+  async markStopping(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE live_recordings SET status = 'stopping'
+      WHERE id = ${id} AND status IN ('starting', 'started')
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  async failRecording(id: number): Promise<void> {
+    await executeRows(sql`
+      UPDATE live_recordings SET status = 'failed'
+      WHERE id = ${id} AND status IN ('starting', 'started', 'stopping')
+    `)
+  },
+
+  async getRecordingStatusById(id: number): Promise<'starting' | 'started' | 'stopping' | null> {
+    const rows = await executeRows<{ status: string }>(sql`
+      SELECT status FROM live_recordings WHERE id = ${id} LIMIT 1
+    `)
+    const s = rows[0]?.status
+    return s === 'starting' || s === 'started' || s === 'stopping' ? s : null
+  },
+
   async getActiveRecording(roomId: number): Promise<{ id: number; egressId: string } | null> {
     const rows = await executeRows<{ id: number; egress_id: string }>(sql`
       SELECT id, egress_id FROM live_recordings
-      WHERE room_id = ${roomId} AND status = 'started'
+      WHERE room_id = ${roomId} AND status IN ('starting', 'started', 'stopping')
       ORDER BY id DESC LIMIT 1
     `)
     const r = rows[0]
@@ -296,7 +388,7 @@ export const liveRepository = {
   async finishRecording(egressId: string, ready: boolean, r2Key: string | null): Promise<void> {
     await executeRows(sql`
       UPDATE live_recordings SET status = ${ready && r2Key ? 'ready' : 'failed'}, r2_key = ${r2Key}
-      WHERE egress_id = ${egressId} AND status = 'started'
+      WHERE egress_id = ${egressId} AND status IN ('starting', 'started', 'stopping')
     `)
   },
 
