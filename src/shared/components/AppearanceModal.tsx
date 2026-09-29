@@ -70,7 +70,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
         {/* Top Drag Handle */}
         <div
           data-drag-handle
-          className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
+          className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
         />
 
         {/* Header Bar */}

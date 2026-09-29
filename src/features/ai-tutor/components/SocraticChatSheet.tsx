@@ -183,7 +183,7 @@ export default function SocraticChatSheet({
       >
         <ModalMathGrid glow={false} height={320} />
         {/* Drag handle */}
-        <div className="relative z-10 w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto my-2.5 shrink-0 select-none" />
+        <div className="relative z-10 w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto my-2.5 shrink-0 select-none" />
 
         {/* Header */}
         <div className="relative z-10 flex items-center gap-3 px-5 pb-3">

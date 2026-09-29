@@ -138,7 +138,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
       <div className="relative w-full rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={400} />
         <div className="pt-3 pb-2 relative z-10">
-          <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+          <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
           <ModalHeaderRow onClose={onClose} label={tt('close')} className="pb-0">
             <h2 id="settings-title" className="text-[19px] font-bold text-pfg tracking-tight">{tt('settingsTitle')}</h2>
           </ModalHeaderRow>
@@ -276,7 +276,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
           <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
             <ModalMathGrid glow={false} height={360} />
-            <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 flex-none relative z-10" />
+            <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 flex-none relative z-10" />
             <ModalHeaderRow onClose={() => setPicker(null)} label="Yopish">
               <h2 id="accent-title" className="text-lg font-bold text-pfg flex-none">
                 {tt('accentThemeLabel')}

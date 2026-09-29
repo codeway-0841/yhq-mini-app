@@ -161,7 +161,7 @@ export default function AchievementsScreen({
           data-drag-handle
           className="pt-2.5 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10"
         >
-          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
+          <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
         </div>
 
         {/* Sticky Header: Back (✕) · Title · Spacer */}

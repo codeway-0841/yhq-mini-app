@@ -338,7 +338,7 @@ export default function WonderPodcastModal({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="mx-auto h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="mx-auto h-1 w-10 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {/* Top Header (1:1 with podcast_player_view.png) */}
         <div className="flex items-center gap-3 pb-2 border-b border-stone-100 dark:border-stone-800">

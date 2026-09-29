@@ -67,7 +67,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={340} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
         <ModalHeaderRow onClose={onClose} label="Yopish">
           <h3 id="sign-detail-modal-title" className="font-display font-semibold text-base text-pfg">
             {sign.name}

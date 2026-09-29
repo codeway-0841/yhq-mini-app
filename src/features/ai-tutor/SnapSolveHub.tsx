@@ -1140,7 +1140,7 @@ export default function SnapSolveHub() {
       {isManualInputOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
           <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
-            <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
             <ModalHeaderRow onClose={() => setIsManualInputOpen(false)} label={tt('close')} className="px-0">
               <span className="flex items-center justify-center gap-2">
                 <Calculator size={20} className="text-pprimary" />
@@ -1189,7 +1189,7 @@ export default function SnapSolveHub() {
       {isHistoryOpen && (
         <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
           <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
-            <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
+            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
             <ModalHeaderRow onClose={() => setIsHistoryOpen(false)} label={tt('close')} className="px-0 pb-3 border-b border-pline shrink-0">
               <span className="flex items-center justify-center gap-2">
                 <History size={18} className="text-pprimary" />

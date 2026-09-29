@@ -232,7 +232,7 @@ export default function BulkImportModal({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-2 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         <ModalHeaderRow onClose={onClose} label="Yopish" className="border-b border-pline">
           <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center justify-center gap-2">

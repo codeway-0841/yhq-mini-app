@@ -175,7 +175,7 @@ export default function WonderLiveChallengeModal({
           <div
             data-drag-handle
             aria-hidden="true"
-            className="mx-auto mb-2 h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+            className="mx-auto mb-2 h-1 w-10 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
           />
           <ModalHeaderRow
             onClose={onClose}

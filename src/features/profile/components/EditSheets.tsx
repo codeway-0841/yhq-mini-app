@@ -22,7 +22,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={300} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
         <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
           <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg select-none">
             <Camera size={14} className="text-pprimary" />
@@ -172,7 +172,7 @@ export function NameEditSheet({ current, onClose, onSave }: {
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
       <div className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={280} />
-        <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 relative z-10" />
+        <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 relative z-10" />
         <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
           <p id="name-edit-title" className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg">
             <Pencil size={14} className="text-pblue" />

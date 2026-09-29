@@ -49,7 +49,7 @@ export default function WonderUpgradeModal({ onClose }: WonderUpgradeModalProps)
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-20 mx-auto h-1 w-9 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-20 mx-auto h-1 w-10 rounded-full bg-stone-300 dark:bg-stone-700 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         <ModalHeaderRow
           onClose={onClose}

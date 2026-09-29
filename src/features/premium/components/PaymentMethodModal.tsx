@@ -158,7 +158,7 @@ export default function PaymentMethodModal({
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         <div className="relative z-10">
         {/* Header */}

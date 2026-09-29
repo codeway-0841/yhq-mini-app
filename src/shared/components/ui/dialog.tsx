@@ -46,7 +46,7 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
         <div
           data-drag-handle
           aria-hidden="true"
-          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
+          className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
         />
         {children}
       </div>

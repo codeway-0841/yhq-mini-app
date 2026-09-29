@@ -67,7 +67,7 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
     <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="exam-review-title" backdropClassName="bg-black/60">
       <div className="relative w-full max-w-xl mx-auto bg-psurface rounded-t-sheet max-h-[90vh] flex flex-col overflow-hidden shadow-2xl pb-[calc(1.75rem+var(--safe-bottom,0px))]">
         <ModalMathGrid glow={false} height={420} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         {/* Minimalist Centered Header */}
         <ModalHeaderRow onClose={onClose} label={tt('closeResults')}>

@@ -240,7 +240,7 @@ export default function SubscriptionModal({
         </div>
         {/* Yuqori surish tutqichi (Drag Handle) — ENG TEPADA */}
         <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
-          <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
+          <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
         </div>
         {step === 'choose_plan' && (
           <ModalHeaderRow onClose={onClose} label="Yopish" className="pt-1">

@@ -224,7 +224,7 @@ export default function AdminUsersTab() {
             <div
               data-drag-handle
               aria-hidden="true"
-              className="mx-auto mb-3 h-1 w-9 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
+              className="mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
             />
             <ModalHeaderRow onClose={() => setSelectedUser(null)} label="Yopish">
               <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center justify-center gap-2">

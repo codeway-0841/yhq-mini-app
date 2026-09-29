@@ -359,7 +359,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
             className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2" />
+            <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2" />
             <ModalHeaderRow onClose={() => setConfirm(null)} label={t(lang, 'close')}>
               <p id="delete-question-title" className="text-[17px] font-semibold text-pfg">#{deleteConfirm.id} savolni o'chirish</p>
             </ModalHeaderRow>
@@ -533,7 +533,7 @@ function QuestionForm({
         className="relative w-full bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
         <ModalHeaderRow onClose={onCancel} label={t(lang, 'close')}>
           <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
           <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>

@@ -73,7 +73,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
       {successData && <Confetti />}
       <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={360} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
         <ModalHeaderRow onClose={onClose} label={tt('cancelExit')}>
           <h3 id="promo-code-title" className="text-lg font-bold text-pfg">
             {successData ? tt('promoCodeSuccessTitle') : tt('promoCodeTitle')}

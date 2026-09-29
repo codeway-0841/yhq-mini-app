@@ -69,7 +69,7 @@ export default function AchievementDetailSheet() {
         >
           {/* Top Sheet Grab Handle */}
           <div data-drag-handle className="pointer-events-auto flex justify-center py-1 cursor-grab active:cursor-grabbing touch-none select-none">
-            <div data-drag-handle className="w-9 h-1 rounded-full bg-gray-300 dark:bg-white/20 mb-2" />
+            <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mb-2" />
           </div>
 
           {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}

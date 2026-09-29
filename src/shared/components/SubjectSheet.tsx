@@ -20,7 +20,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
     <DialogOverlay onClose={onClose} labelId="subject-title" swipeToDismiss backdropClassName="bg-black/60">
       <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[82vh] overflow-y-auto shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
         <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'}>
           <h2 id="subject-title" data-drag-handle className="text-lg font-bold text-pfg select-none">
             {lang === 'ru' ? 'Выбрать предмет' : 'Fan tanlash'}

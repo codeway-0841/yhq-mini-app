@@ -21,7 +21,7 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
     <DialogOverlay onClose={onClose} labelId="stat-info-title" zIndex={60} swipeToDismiss backdropClassName="bg-black/60">
       <div className="relative w-full bg-psurface rounded-t-sheet px-4 pt-4 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={340} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         <ModalHeaderRow onClose={onClose} label={tt('close') || 'Yopish'}>
           <h2 id="stat-info-title" data-drag-handle className="flex items-center justify-center gap-2 text-lg font-bold text-pfg select-none">

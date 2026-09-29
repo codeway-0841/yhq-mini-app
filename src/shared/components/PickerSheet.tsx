@@ -24,7 +24,7 @@ export default function PickerSheet({ title, titleIcon: _titleIcon, options, val
     <DialogOverlay onClose={onClose} labelId="picker-title" swipeToDismiss>
       <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={360} />
-        <div data-drag-handle className="w-9 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
+        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 
         {/* Minimalist Centered Header */}
         <ModalHeaderRow onClose={onClose} label="Yopish">
