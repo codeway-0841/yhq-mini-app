@@ -155,6 +155,7 @@ function LiveRoomPage() {
   const [busy, setBusy] = useState(false)
   const [draft, setDraft] = useState('')
   const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved'>('none')
+  const [cloudCount, setCloudCount] = useState<number | null>(null)
   const [hands, setHands] = useState<{ userId: string; userName: string | null; status: string; createdAt: string }[]>([])
   const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended')
   const voice = useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo: canSpeak, enabled: joined && mediaEnabled })
@@ -168,6 +169,23 @@ function LiveRoomPage() {
     }
     load()
     const t = setInterval(load, 5000)
+    return () => { alive = false; clearInterval(t) }
+  }, [joined, role, roomId])
+
+  // Teacher: Cloud diagnostika (10s polling) — yuboruvchi Cloud'ga yetganmi
+  useEffect(() => {
+    if (!joined || role !== 'teacher') {
+      setCloudCount(null)
+      return
+    }
+    let alive = true
+    const load = () => {
+      api.getLiveCloudHealth(roomId)
+        .then((r) => { if (alive) setCloudCount(r.participants.length) })
+        .catch(() => {})
+    }
+    load()
+    const t = setInterval(load, 10_000)
     return () => { alive = false; clearInterval(t) }
   }, [joined, role, roomId])
 
@@ -323,6 +341,16 @@ function LiveRoomPage() {
                 <Button size="sm" onClick={() => void voice.unlockAudio()}>
                   {tt('liveEnableAudio')}
                 </Button>
+              )}
+              {/* Diagnostika qatori — muammo qayerdaligini ko'rsatadi */}
+              <p className="text-[11px] text-pmuted">
+                {tt('liveDbgRemote')}: {voice.remoteCount} · {tt('liveDbgAudio')}: {voice.remoteAudioCount}
+                {role === 'teacher' && cloudCount !== null ? ` · ${tt('liveDbgCloud')}: ${cloudCount}` : ''}
+              </p>
+              {voice.micOn && (
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-psurface" aria-hidden="true">
+                  <div className="h-full rounded-full bg-psuccess" style={{ width: `${Math.round(voice.micLevel * 100)}%` }} />
+                </div>
               )}
             </>
           ) : voice.state === 'failed' ? (

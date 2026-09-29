@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { buildEgressToken, parseEgressEnded, parseLiveRoomName } from '../../../server/modules/live/egress'
+import { buildEgressToken, parseEgressEnded, parseLiveRoomName, summarizeParticipants } from '../../../server/modules/live/egress'
 
 const KEY = 'devkey'
 const SECRET = 'egress-test-secret-32chars-minimum!'
@@ -24,8 +24,7 @@ describe('live egress (recording → R2)', () => {
     expect(parseLiveRoomName('live_abc')).toBeNull()
   })
 
-  it('egress_ended parse: ready + R2 key (s3/https/key formatlar)', () => {
-    const mk = (location: string, status = 3) => JSON.stringify({
+  it('egress_ended parse: ready + R2 key (s3/https/key formatlar)', () => {    const mk = (location: string, status = 3) => JSON.stringify({
       event: 'egress_ended',
       egressInfo: { egressId: 'eg_1', roomName: 'live_5', status, fileResults: [{ location }] },
     })
@@ -40,5 +39,22 @@ describe('live egress (recording → R2)', () => {
     // buzuq body → null
     expect(parseEgressEnded('not-json')).toBeNull()
     expect(parseEgressEnded(JSON.stringify({ event: 'x' }))).toBeNull()
+  })
+
+  it('summarizeParticipants: tracklar + mute hisoblanadi', () => {
+    const rows = summarizeParticipants({
+      participants: [
+        { identity: 't1', name: 'Ustoz', tracks: [{ type: 1, muted: false }, { type: 2, muted: false }], joinedAt: 'x' },
+        { identity: 's9', tracks: [{ type: 1, muted: true }], joinedAt: 'y' },
+        { identity: 's10', tracks: [], joinedAt: 'z' },
+        { nope: true },
+      ],
+    })
+    expect(rows).toHaveLength(3)
+    expect(rows[0]).toMatchObject({ identity: 't1', audioTracks: 1, audioMuted: false, videoTracks: 1 })
+    expect(rows[1]).toMatchObject({ identity: 's9', audioTracks: 1, audioMuted: true })
+    expect(rows[2]).toMatchObject({ identity: 's10', audioTracks: 0, audioMuted: true })
+    expect(summarizeParticipants({})).toEqual([])
+    expect(summarizeParticipants({ participants: 'x' as unknown as [] })).toEqual([])
   })
 })

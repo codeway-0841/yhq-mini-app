@@ -20,7 +20,7 @@ import { isLiveJoinable, LIVE_MESSAGE_MAX_LEN, LIVE_TITLE_MAX_LEN } from '../../
 import { liveRepository } from './live.repository'
 import { issueLiveJoinToken } from './live.token'
 import { buildLivekitToken, verifyLivekitWebhook } from './livekit'
-import { parseEgressEnded, startRoomEgress, stopRoomEgress } from './egress'
+import { parseEgressEnded, startRoomEgress, stopRoomEgress, listRoomParticipants } from './egress'
 
 const router = Router()
 
@@ -503,6 +503,25 @@ router.post(
       room: room.room_name, egressId: active.egressId,
     })
     res.json({ ok: true, egressId: active.egressId })
+  }),
+)
+
+// GET /api/live/rooms/:id/cloud-health — LiveKit Cloud'dagi jonli holat (faqat teacher).
+// Diagnostika: yuboruvchi Cloud'ga yetib boryaptimi (client aybini ajratish uchun).
+router.get(
+  '/live/rooms/:id/cloud-health',
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireRoomTeacher(id, userId)
+    const room = await liveRepository.getRoom(id)
+    if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
+    const media = requireLiveMedia()
+    const participants = await listRoomParticipants({
+      livekitUrl: media.url, apiKey: media.apiKey, apiSecret: media.apiSecret, room: room.room_name,
+    })
+    res.json({ ok: true, roomName: room.room_name, participants })
   }),
 )
 

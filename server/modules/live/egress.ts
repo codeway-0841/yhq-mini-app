@@ -99,6 +99,72 @@ export async function stopRoomEgress(args: {
   await twirpPost(args.livekitUrl, 'StopEgress', token, { egressId: args.egressId })
 }
 
+export interface CloudParticipantSummary {
+  identity: string
+  name: string
+  audioTracks: number
+  audioMuted: boolean
+  videoTracks: number
+  joinedAt: string
+}
+
+/** LiveKit Cloud'dagi xona holati (diagnostika: yuboruvchi yetib boryaptimi?). */
+export async function listRoomParticipants(args: {
+  livekitUrl: string
+  apiKey: string
+  apiSecret: string
+  room: string
+}): Promise<CloudParticipantSummary[]> {
+  const nowSec = Math.floor(Date.now() / 1000)
+  const header = b64urlEncode(Buffer.from(JSON.stringify({ alg: 'HS256', typ: 'JWT' }), 'utf8'))
+  const body = b64urlEncode(Buffer.from(JSON.stringify({
+    iss: args.apiKey,
+    sub: args.apiKey,
+    nbf: nowSec,
+    exp: nowSec + 60,
+    video: { roomAdmin: true, room: args.room },
+  }), 'utf8'))
+  const sig = b64urlEncode(createHmac('sha256', args.apiSecret).update(`${header}.${body}`).digest())
+  const out = (await twirpPost(
+    args.livekitUrl,
+    'RoomService/ListParticipants',
+    `${header}.${body}.${sig}`,
+    { room: args.room },
+  )) as { participants?: unknown[] };
+  return summarizeParticipants(out)
+}
+
+/** ListParticipants javobini xavfsiz parse (LiveKit versiya farqiga chidamli). */
+export function summarizeParticipants(out: { participants?: unknown[] }): CloudParticipantSummary[] {
+  if (!out || !Array.isArray(out.participants)) return []
+  const rows: CloudParticipantSummary[] = []
+  for (const p of out.participants) {
+    const r = p as Record<string, unknown>
+    if (typeof r['identity'] !== 'string') continue
+    const tracks = Array.isArray(r['tracks']) ? (r['tracks'] as Record<string, unknown>[]) : []
+    let audio = 0
+    let muted = true
+    let video = 0
+    for (const t of tracks) {
+      if (t['type'] === 1 || t['type'] === 'AUDIO') {
+        audio += 1
+        if (t['muted'] === false) muted = false
+      } else if (t['type'] === 2 || t['type'] === 'VIDEO') {
+        video += 1
+      }
+    }
+    rows.push({
+      identity: r['identity'] as string,
+      name: typeof r['name'] === 'string' ? (r['name'] as string) : '',
+      audioTracks: audio,
+      audioMuted: audio === 0 ? true : muted,
+      videoTracks: video,
+      joinedAt: typeof r['joinedAt'] === 'string' ? (r['joinedAt'] as string) : '',
+    })
+  }
+  return rows
+}
+
 /** `live_<id>` room nomidan room id — webhook reconcile uchun. */
 export function parseLiveRoomName(roomName: string): number | null {
   const m = /^live_(\d+)$/.exec(roomName)

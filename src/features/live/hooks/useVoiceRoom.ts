@@ -57,6 +57,11 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   const [localVideo, setLocalVideo] = useState<LocalVideoTrack | null>(null)
   /** Brauzer avtopley bloklaganda true — user bosgan tugma bilan ochiladi */
   const [audioBlocked, setAudioBlocked] = useState(false)
+  /** Diagnostika: uzoq ishtirokchilar + obuna audio tracklar soni */
+  const [remoteCount, setRemoteCount] = useState(0)
+  const [remoteAudioCount, setRemoteAudioCount] = useState(0)
+  /** Lokal mic darajasi 0..1 (yuboruvchi tomoni jonli ekanini isbotlaydi) */
+  const [micLevel, setMicLevel] = useState(0)
   const roomRef = useRef<Room | null>(null)
   const livekitRef = useRef<typeof import('livekit-client') | null>(null)
   const canSpeakRef = useRef(canSpeak)
@@ -74,6 +79,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         el.autoplay = true
         track.attach(el)
         audios.set(track.sid ?? '', el)
+        setRemoteAudioCount((n) => n + 1)
         return
       }
       if (track.kind === Lk.Track.Kind.Video) {
@@ -91,6 +97,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         track.detach(el)
         el.remove()
         audios.delete(sid)
+        setRemoteAudioCount((n) => Math.max(0, n - 1))
       }
       setVideos((prev) => prev.filter((v) => v.sid !== sid))
     }
@@ -133,6 +140,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         room.on(Lk.RoomEvent.AudioPlaybackStatusChanged, (playing) => {
           setAudioBlocked(!playing)
         })
+        const syncCount = () => setRemoteCount(room.remoteParticipants.size)
+        room.on(Lk.RoomEvent.ParticipantConnected, syncCount)
+        room.on(Lk.RoomEvent.ParticipantDisconnected, syncCount)
         room.on(Lk.RoomEvent.Disconnected, () => {
           if (!cancelled) {
             setState('idle')
@@ -149,6 +159,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         }
         roomRef.current = room
         setState('connected')
+        setRemoteCount(room.remoteParticipants.size)
         // Avtopley: join bosilgan gesture'dan keyin darhol urinamiz (best-effort);
         // brauzer rad etsa AudioPlaybackStatusChanged → audioBlocked → UI tugma.
         try {
@@ -176,6 +187,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       setVideos([])
       setLocalVideo(null)
       setAudioBlocked(false)
+      setRemoteCount(0)
+      setRemoteAudioCount(0)
+      setMicLevel(0)
       setMicOn(false)
       setCameraOn(false)
       setScreenOn(false)
@@ -256,7 +270,56 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [])
 
-  return { state, micOn, micBlocked, micError, audioBlocked, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
+  /** Lokal mic daraja o'lchagich — yuboruvchi mikrofon jonli ovoz olayotganini ko'rsatadi. */
+  useEffect(() => {
+    if (!micOn || state !== 'connected') {
+      setMicLevel(0)
+      return
+    }
+    let stopped = false
+    let raf = 0
+    let stream: MediaStream | null = null
+    let ctx: AudioContext | null = null
+    ;(async () => {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true })
+        if (stopped) {
+          stream.getTracks().forEach((t) => t.stop())
+          return
+        }
+        const AC = window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
+        if (!AC) return
+        ctx = new AC()
+        const src = ctx.createMediaStreamSource(stream)
+        const analyser = ctx.createAnalyser()
+        analyser.fftSize = 512
+        src.connect(analyser)
+        const buf = new Uint8Array(analyser.frequencyBinCount)
+        const tick = () => {
+          if (stopped) return
+          analyser.getByteTimeDomainData(buf)
+          let peak = 0
+          for (let i = 0; i < buf.length; i++) {
+            const v = Math.abs((buf[i] ?? 128) - 128) / 128
+            if (v > peak) peak = v
+          }
+          setMicLevel((prev) => prev * 0.7 + peak * 0.3)
+          raf = requestAnimationFrame(tick)
+        }
+        tick()
+      } catch {
+        // O'lchagich ixtiyoriy — ishlamasa daraja 0 qoladi (asosiy mic'ga tegmaydi)
+      }
+    })()
+    return () => {
+      stopped = true
+      cancelAnimationFrame(raf)
+      stream?.getTracks().forEach((t) => t.stop())
+      void ctx?.close().catch(() => {})
+    }
+  }, [micOn, state])
+
+  return { state, micOn, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */

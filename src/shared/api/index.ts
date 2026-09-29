@@ -1336,6 +1336,12 @@ export const api = {
     request<{ ok: true; recordings: import('../../../shared/live').LiveRecordingPublic[] }>(
       'GET', '/live/recordings',
     ),
+  /** Cloud diagnostika (faqat teacher): xonadagi jonli ishtirokchilar + tracklar */
+  getLiveCloudHealth: (id: number) =>
+    request<{
+      ok: true; roomName: string
+      participants: { identity: string; name: string; audioTracks: number; audioMuted: boolean; videoTracks: number; joinedAt: string }[]
+    }>('GET', `/live/rooms/${id}/cloud-health`),
 }
 
 export interface PaymentHistoryRow {
