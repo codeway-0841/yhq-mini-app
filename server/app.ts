@@ -86,7 +86,8 @@ export function createApp() {
   // LiveKit webhook — imzo xom body'dan tekshiriladi (live.router'da), shuning
   // uchun global json parser'dan OLDIN raw ushlanadi (req._body flag keyingi
   // parser'larni o'tkazib yuboradi — admin/questions pattern'i bilan bir xil).
-  app.use('/api/live/webhook', express.raw({ type: 'application/json', limit: '100kb' }))
+  // LiveKit webhook'lar `application/webhook+json` yuboradi (application/json EMAS).
+  app.use('/api/live/webhook', express.raw({ type: ['application/json', 'application/webhook+json'], limit: '100kb' }))
   // Matematik doska qo'lyozma snapshot PNG base64 (BoardCanvas, 512px)
   app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))
   // Matematik doska blokli recognition (Faza 4: N blok/rasm, 6mb jami)

@@ -160,7 +160,15 @@ export const liveRepository = {
       WHERE id = ${id} AND status <> 'ended'
       RETURNING id
     `)
-    return rows.length > 0
+    if (rows.length === 0) return false
+    // Xonada qolgan participant'larning davomatini yopish (qayta join left_at'ni tozalaydi).
+    await executeRows(sql`
+      UPDATE live_participants SET
+        left_at = now(),
+        duration_sec = duration_sec + GREATEST(0, EXTRACT(EPOCH FROM (now() - joined_at))::int)
+      WHERE room_id = ${id} AND left_at IS NULL
+    `)
+    return true
   },
 
   async joinRoom(roomId: number, userId: string, role: LiveRole): Promise<{ canSpeak: boolean }> {
@@ -201,8 +209,10 @@ export const liveRepository = {
   },
 
   async isParticipant(roomId: number, userId: string): Promise<boolean> {
+    // Chiqqan (left_at o'rnatilgan) user participant EMAS — chat/raise eshiklari shunga tayanadi.
     const rows = await executeRows<{ n: number }>(sql`
-      SELECT 1 AS n FROM live_participants WHERE room_id = ${roomId} AND user_id = ${userId} LIMIT 1
+      SELECT 1 AS n FROM live_participants
+      WHERE room_id = ${roomId} AND user_id = ${userId} AND left_at IS NULL LIMIT 1
     `)
     return rows.length > 0
   },

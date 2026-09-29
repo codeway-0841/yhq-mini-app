@@ -146,6 +146,7 @@ function LiveRoomPage() {
   const tt = useT(lang)
   const [room, setRoom] = useState<LiveRoomPublic | null>(null)
   const [recordingEnabled, setRecordingEnabled] = useState(false)
+  const [recordingActive, setRecordingActive] = useState(false)
   const [role, setRole] = useState<'teacher' | 'student' | null>(null)
   const [canSpeak, setCanSpeak] = useState(false)
   const [livekitToken, setLivekitToken] = useState<string | null>(null)
@@ -173,6 +174,31 @@ function LiveRoomPage() {
     const t = setInterval(load, 5000)
     return () => { alive = false; clearInterval(t) }
   }, [joined, role, roomId])
+
+  // Xona status kuzatuvi (10s): ustoz efirni tugatsa — media uziladi (join holatidan chiqamiz)
+  useEffect(() => {
+    if (!joined) return
+    let alive = true
+    const load = async () => {
+      try {
+        const r = await api.getLiveRoom(roomId)
+        if (!alive) return
+        setRoom(r.room)
+        setRecordingActive(r.recordingActive)
+        if (r.room.status === 'ended') {
+          try { await api.leaveLiveRoom(roomId) } catch { /* ignore */ }
+          if (!alive) return
+          setJoined(false)
+          setRole(null)
+          setCanSpeak(false)
+          setLivekitToken(null)
+          setHandStatus('none')
+        }
+      } catch { /* ignore */ }
+    }
+    const t = setInterval(load, 10_000)
+    return () => { alive = false; clearInterval(t) }
+  }, [joined, roomId])
 
   // Teacher: Cloud diagnostika (10s polling) — yuboruvchi Cloud'ga yetganmi
   useEffect(() => {
@@ -224,7 +250,7 @@ function LiveRoomPage() {
     if (!Number.isInteger(roomId) || roomId <= 0) return
     let alive = true
     api.getLiveRoom(roomId)
-      .then((r) => { if (alive) { setRoom(r.room); setRecordingEnabled(r.recordingEnabled) } })
+      .then((r) => { if (alive) { setRoom(r.room); setRecordingEnabled(r.recordingEnabled); setRecordingActive(r.recordingActive) } })
       .catch(() => { if (alive) setRoom(null) })
     return () => { alive = false }
   }, [roomId])
@@ -427,7 +453,7 @@ function LiveRoomPage() {
           </div>
           {role === 'teacher' && room.status !== 'ended' && (
             <>
-              <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} recordingEnabled={recordingEnabled} />
+              <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} recordingEnabled={recordingEnabled} recordingActive={recordingActive} />
               <HandsPanel
                 roomId={roomId}
                 hands={hands}
@@ -444,11 +470,15 @@ function LiveRoomPage() {
   )
 }
 
-function TeacherControls({ roomId, status, onChanged, recordingEnabled }: { roomId: number; status: string; onChanged: (r: LiveRoomPublic) => void; recordingEnabled: boolean }) {
+function TeacherControls({ roomId, status, onChanged, recordingEnabled, recordingActive }: {
+  roomId: number; status: string; onChanged: (r: LiveRoomPublic) => void; recordingEnabled: boolean; recordingActive: boolean
+}) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const [busy, setBusy] = useState(false)
-  const [recording, setRecording] = useState(false)
+  const [recording, setRecording] = useState(recordingActive)
+  // Server holati yangilanganda (reload/serverdan) sinxronlash
+  useEffect(() => { setRecording(recordingActive) }, [recordingActive])
   const [recBusy, setRecBusy] = useState(false)
   const toggleRecord = async () => {
     setRecBusy(true)

@@ -20,7 +20,7 @@ import { isLiveJoinable, LIVE_MESSAGE_MAX_LEN, LIVE_TITLE_MAX_LEN } from '../../
 import { liveRepository } from './live.repository'
 import { issueLiveJoinToken } from './live.token'
 import { buildLivekitToken, verifyLivekitWebhook } from './livekit'
-import { parseEgressEnded, startRoomEgress, stopRoomEgress, listRoomParticipants } from './egress'
+import { parseEgressEnded, startRoomEgress, stopRoomEgress, listRoomParticipants, deleteLivekitRoom } from './egress'
 
 const router = Router()
 
@@ -130,7 +130,10 @@ router.get(
     const { id } = req.params as unknown as { id: number }
     const room = await liveRepository.getRoom(id)
     if (!room) throw new AppError(404, 'LIVE_NOT_FOUND')
-    res.json({ ok: true, room: toPublicRow(room), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled })
+    const recordingActive = config.live.recordingEnabled
+      ? (await liveRepository.getActiveRecording(id)) !== null
+      : false
+    res.json({ ok: true, room: toPublicRow(room), mediaEnabled: config.live.mediaEnabled, recordingEnabled: config.live.recordingEnabled, recordingActive })
   }),
 )
 
@@ -151,7 +154,9 @@ router.post(
   }),
 )
 
-// POST /api/live/rooms/:id/end — faqat xona egasi yoki admin
+// POST /api/live/rooms/:id/end — faqat xona egasi yoki admin.
+// DB ended + faol yozuv STOP + LiveKit xona DELETE (participantlar uziladi).
+// Media/Egress sozlanmagan bo'lsa DB qismi baribir bajariladi (best-effort media).
 router.post(
   '/live/rooms/:id/end',
   validate({ params: RoomIdParamSchema }),
@@ -163,6 +168,20 @@ router.post(
     if (!priv.isOwner && !priv.isAdmin) throw new AppError(403, 'TEACHER_REQUIRED')
     await liveRepository.endRoom(id)
     const room = await liveRepository.getRoom(id)
+    if (room && config.live.mediaEnabled && config.live.apiKey && config.live.apiSecret && config.live.url) {
+      const lk = { livekitUrl: config.live.url, apiKey: config.live.apiKey, apiSecret: config.live.apiSecret }
+      // Faol yozuv bo'lsa to'xtatish (yakuniy MP4 webhook'dan keladi)
+      try {
+        const active = await liveRepository.getActiveRecording(id)
+        if (active) {
+          await stopRoomEgress({ ...lk, room: room.room_name, egressId: active.egressId }).catch(() => {})
+        }
+      } catch { /* best-effort */ }
+      // Xonani yopish — barcha participant uziladi
+      try {
+        await deleteLivekitRoom({ ...lk, room: room.room_name })
+      } catch { /* best-effort (xona bo'sh/yopiq bo'lishi mumkin) */ }
+    }
     res.json({ ok: true, room: room ? toPublicRow(room) : null })
   }),
 )

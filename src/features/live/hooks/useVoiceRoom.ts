@@ -270,16 +270,17 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [])
 
-  /** Lokal mic daraja o'lchagich — yuboruvchi mikrofon jonli ovoz olayotganini ko'rsatadi. */
+  /** Lokal mic daraja o'lchagich — yuboruvchi mikrofon jonli ovoz olayotganini ko'rsatadi.
+   *  Throttle: 120ms'da 1 marta, 5% bucket — har frame'da React render YO'Q. */
   useEffect(() => {
     if (!micOn || state !== 'connected') {
       setMicLevel(0)
       return
     }
     let stopped = false
-    let raf = 0
     let stream: MediaStream | null = null
     let ctx: AudioContext | null = null
+    let timer = 0
     ;(async () => {
       try {
         stream = await navigator.mediaDevices.getUserMedia({ audio: true })
@@ -295,7 +296,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         analyser.fftSize = 512
         src.connect(analyser)
         const buf = new Uint8Array(analyser.frequencyBinCount)
-        const tick = () => {
+        let lastBucket = -1
+        let smooth = 0
+        timer = window.setInterval(() => {
           if (stopped) return
           analyser.getByteTimeDomainData(buf)
           let peak = 0
@@ -303,17 +306,20 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
             const v = Math.abs((buf[i] ?? 128) - 128) / 128
             if (v > peak) peak = v
           }
-          setMicLevel((prev) => prev * 0.7 + peak * 0.3)
-          raf = requestAnimationFrame(tick)
-        }
-        tick()
+          smooth = smooth * 0.7 + peak * 0.3
+          const bucket = Math.round(smooth * 20)
+          if (bucket !== lastBucket) {
+            lastBucket = bucket
+            setMicLevel(bucket / 20)
+          }
+        }, 120)
       } catch {
         // O'lchagich ixtiyoriy — ishlamasa daraja 0 qoladi (asosiy mic'ga tegmaydi)
       }
     })()
     return () => {
       stopped = true
-      cancelAnimationFrame(raf)
+      window.clearInterval(timer)
       stream?.getTracks().forEach((t) => t.stop())
       void ctx?.close().catch(() => {})
     }

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { buildEgressToken, parseEgressEnded, parseLiveRoomName, summarizeParticipants } from '../../../server/modules/live/egress'
+import { buildEgressToken, livekitHttpUrl, parseEgressEnded, parseLiveRoomName, summarizeParticipants, twirpUrl } from '../../../server/modules/live/egress'
 
 const KEY = 'devkey'
 const SECRET = 'egress-test-secret-32chars-minimum!'
@@ -41,20 +41,35 @@ describe('live egress (recording → R2)', () => {
     expect(parseEgressEnded(JSON.stringify({ event: 'x' }))).toBeNull()
   })
 
-  it('summarizeParticipants: tracklar + mute hisoblanadi', () => {
+  it('summarizeParticipants: tracklar + mute hisoblanadi (TrackType AUDIO=0 VIDEO=1)', () => {
     const rows = summarizeParticipants({
       participants: [
-        { identity: 't1', name: 'Ustoz', tracks: [{ type: 1, muted: false }, { type: 2, muted: false }], joinedAt: 'x' },
-        { identity: 's9', tracks: [{ type: 1, muted: true }], joinedAt: 'y' },
+        { identity: 't1', name: 'Ustoz', tracks: [{ type: 0, muted: false }, { type: 1, muted: false }], joinedAt: 'x' },
+        { identity: 's9', tracks: [{ type: 0, muted: true }], joinedAt: 'y' },
         { identity: 's10', tracks: [], joinedAt: 'z' },
+        { identity: 's11', tracks: [{ type: 2 }], joinedAt: 'w' },
+        { identity: 's12', tracks: [{ type: 'AUDIO', muted: false }, { type: 'VIDEO', muted: false }], joinedAt: 'v' },
         { nope: true },
       ],
     })
-    expect(rows).toHaveLength(3)
+    expect(rows).toHaveLength(5)
     expect(rows[0]).toMatchObject({ identity: 't1', audioTracks: 1, audioMuted: false, videoTracks: 1 })
     expect(rows[1]).toMatchObject({ identity: 's9', audioTracks: 1, audioMuted: true })
     expect(rows[2]).toMatchObject({ identity: 's10', audioTracks: 0, audioMuted: true })
+    expect(rows[3]).toMatchObject({ identity: 's11', audioTracks: 0, videoTracks: 0 })
+    expect(rows[4]).toMatchObject({ identity: 's12', audioTracks: 1, audioMuted: false, videoTracks: 1 })
     expect(summarizeParticipants({})).toEqual([])
     expect(summarizeParticipants({ participants: 'x' as unknown as [] })).toEqual([])
+  })
+
+  it('twirpUrl: servis aniq + wss→https', () => {
+    expect(twirpUrl('wss://x.livekit.cloud', 'livekit.Egress', 'StartRoomCompositeEgress'))
+      .toBe('https://x.livekit.cloud/twirp/livekit.Egress/StartRoomCompositeEgress')
+    expect(twirpUrl('wss://x.livekit.cloud/', 'livekit.RoomService', 'ListParticipants'))
+      .toBe('https://x.livekit.cloud/twirp/livekit.RoomService/ListParticipants')
+    // Helper servisni verbatim ishlatadi — caller to'g'ri juftlik berishi shart
+    // (avvalgi bug: 'livekit.Egress' servisi + 'RoomService/...' metodi).
+    expect(livekitHttpUrl('wss://a.b/')).toBe('https://a.b')
+    expect(livekitHttpUrl('ws://a.b')).toBe('http://a.b')
   })
 })

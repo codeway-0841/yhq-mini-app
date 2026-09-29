@@ -1284,7 +1284,7 @@ export const api = {
     }>('GET', `/live/rooms${qs ? `?${qs}` : ''}`)
   },
   getLiveRoom: (id: number) =>
-    request<{ ok: true; mediaEnabled: boolean; recordingEnabled: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
+    request<{ ok: true; mediaEnabled: boolean; recordingEnabled: boolean; recordingActive: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
       'GET', `/live/rooms/${id}`,
     ),
   joinLiveRoom: (id: number) =>

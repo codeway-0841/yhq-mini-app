@@ -41,20 +41,52 @@ export interface EgressS3Config {
   bucket: string
 }
 
-async function twirpPost(baseUrl: string, method: string, token: string, body: unknown): Promise<unknown> {
-  const url = `${baseUrl.replace(/\/+$/, '')}/twirp/livekit.Egress/${method}`
+/** wss:// URL'ni Twirp/fetch uchun https:// ga o'tkazadi (LiveKit URL WebSocket shaklida). */
+export function livekitHttpUrl(wssUrl: string): string {
+  return wssUrl.replace(/^wss:/, 'https:').replace(/^ws:/, 'http:').replace(/\/+$/, '')
+}
+
+/** Twirp manzil qurish — servis nomi (`livekit.Egress` / `livekit.RoomService`) HAR DOIM aniq. */
+export function twirpUrl(baseUrl: string, service: string, method: string): string {
+  return `${livekitHttpUrl(baseUrl)}/twirp/${service}/${method}`
+}
+
+async function twirpPost(baseUrl: string, service: string, method: string, token: string, body: unknown): Promise<unknown> {
+  const url = twirpUrl(baseUrl, service, method)
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
     body: JSON.stringify(body),
   })
   const text = await res.text()
-  if (!res.ok) throw new Error(`egress ${method} failed: ${res.status} ${text.slice(0, 200)}`)
+  if (!res.ok) throw new Error(`livekit ${service}/${method} failed: ${res.status} ${text.slice(0, 200)}`)
   try {
     return JSON.parse(text) as unknown
   } catch {
-    throw new Error(`egress ${method}: bad_response`)
+    throw new Error(`livekit ${service}/${method}: bad_response`)
   }
+}
+
+/** Service JWT (Egress/RoomService API) — grant metodga qarab (rasmiy SDK bilan 1:1). */
+export function buildServiceToken(args: {
+  apiKey: string
+  apiSecret: string
+  grant: Record<string, unknown>
+  ttlSeconds: number
+  nowMs?: number
+}): string {
+  const nowSec = Math.floor((args.nowMs ?? Date.now()) / 1000)
+  const payload = {
+    iss: args.apiKey,
+    sub: args.apiKey,
+    nbf: nowSec,
+    exp: nowSec + args.ttlSeconds,
+    video: args.grant,
+  }
+  const header = b64urlEncode(Buffer.from(JSON.stringify({ alg: 'HS256', typ: 'JWT' }), 'utf8'))
+  const body = b64urlEncode(Buffer.from(JSON.stringify(payload), 'utf8'))
+  const sig = b64urlEncode(createHmac('sha256', args.apiSecret).update(`${header}.${body}`).digest())
+  return `${header}.${body}.${sig}`
 }
 
 /** Yozuvni boshlash — qaytadi: LiveKit egressId. */
@@ -67,7 +99,7 @@ export async function startRoomEgress(args: {
   s3: EgressS3Config
 }): Promise<string> {
   const token = buildEgressToken({ apiKey: args.apiKey, apiSecret: args.apiSecret, room: args.room, ttlSeconds: 300 })
-  const out = (await twirpPost(args.livekitUrl, 'StartRoomCompositeEgress', token, {
+  const out = (await twirpPost(args.livekitUrl, 'livekit.Egress', 'StartRoomCompositeEgress', token, {
     roomName: args.room,
     layout: 'speaker',
     audioOnly: false,
@@ -96,7 +128,7 @@ export async function stopRoomEgress(args: {
   egressId: string
 }): Promise<void> {
   const token = buildEgressToken({ apiKey: args.apiKey, apiSecret: args.apiSecret, room: args.room, ttlSeconds: 300 })
-  await twirpPost(args.livekitUrl, 'StopEgress', token, { egressId: args.egressId })
+  await twirpPost(args.livekitUrl, 'livekit.Egress', 'StopEgress', token, { egressId: args.egressId })
 }
 
 export interface CloudParticipantSummary {
@@ -115,23 +147,32 @@ export async function listRoomParticipants(args: {
   apiSecret: string
   room: string
 }): Promise<CloudParticipantSummary[]> {
-  const nowSec = Math.floor(Date.now() / 1000)
-  const header = b64urlEncode(Buffer.from(JSON.stringify({ alg: 'HS256', typ: 'JWT' }), 'utf8'))
-  const body = b64urlEncode(Buffer.from(JSON.stringify({
-    iss: args.apiKey,
-    sub: args.apiKey,
-    nbf: nowSec,
-    exp: nowSec + 60,
-    video: { roomAdmin: true, room: args.room },
-  }), 'utf8'))
-  const sig = b64urlEncode(createHmac('sha256', args.apiSecret).update(`${header}.${body}`).digest())
+  const token = buildServiceToken({
+    apiKey: args.apiKey, apiSecret: args.apiSecret,
+    grant: { roomAdmin: true, room: args.room }, ttlSeconds: 60,
+  })
   const out = (await twirpPost(
     args.livekitUrl,
-    'RoomService/ListParticipants',
-    `${header}.${body}.${sig}`,
+    'livekit.RoomService',
+    'ListParticipants',
+    token,
     { room: args.room },
   )) as { participants?: unknown[] };
   return summarizeParticipants(out)
+}
+
+/** LiveKit xonasini yopish — barcha participant uziladi (end-room'da best-effort). */
+export async function deleteLivekitRoom(args: {
+  livekitUrl: string
+  apiKey: string
+  apiSecret: string
+  room: string
+}): Promise<void> {
+  const token = buildServiceToken({
+    apiKey: args.apiKey, apiSecret: args.apiSecret,
+    grant: { roomCreate: true }, ttlSeconds: 60,
+  })
+  await twirpPost(args.livekitUrl, 'livekit.RoomService', 'DeleteRoom', token, { room: args.room })
 }
 
 /** ListParticipants javobini xavfsiz parse (LiveKit versiya farqiga chidamli). */
@@ -146,10 +187,12 @@ export function summarizeParticipants(out: { participants?: unknown[] }): CloudP
     let muted = true
     let video = 0
     for (const t of tracks) {
-      if (t['type'] === 1 || t['type'] === 'AUDIO') {
+      // Protobuf TrackType: AUDIO=0, VIDEO=1, DATA=2 (Twirp JSON'da raqam; ba'zi
+      // proksi/versiyalar string ko'rinishda ham yuborishi mumkin).
+      if (t['type'] === 0 || t['type'] === 'AUDIO') {
         audio += 1
         if (t['muted'] === false) muted = false
-      } else if (t['type'] === 2 || t['type'] === 'VIDEO') {
+      } else if (t['type'] === 1 || t['type'] === 'VIDEO') {
         video += 1
       }
     }
