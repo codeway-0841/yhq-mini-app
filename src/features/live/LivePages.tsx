@@ -374,7 +374,7 @@ function LiveRoomPage() {
               )}
               {/* Diagnostika qatori — muammo qayerdaligini ko'rsatadi */}
               <p className="text-[11px] text-pmuted">
-                {tt('liveDbgRemote')}: {voice.remoteCount} · {tt('liveDbgAudio')}: {voice.remoteAudioCount}
+                {tt('liveDbgRemote')}: {voice.remoteCount} · {tt('liveDbgAudio')}: {voice.remoteAudioCount}{voice.connState ? ` · ${voice.connState}` : ''}{voice.localPub ? ` · pub:${voice.localPub}` : ''}
                 {cloud ? ('error' in cloud ? ` · ${tt('liveCloudError')}` : ` · ${tt('liveDbgCloud')}: ${cloud.participants.map((p) => `…${p.identity.slice(-4)}:a${p.audioTracks}${p.audioMuted ? '(m)' : ''}`).join(' ')}`) : ''}
               </p>
               {voice.micOn && (

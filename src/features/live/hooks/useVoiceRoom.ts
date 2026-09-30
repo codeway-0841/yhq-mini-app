@@ -65,6 +65,10 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   /** Diagnostika: uzoq ishtirokchilar + obuna audio tracklar soni */
   const [remoteCount, setRemoteCount] = useState(0)
   const [remoteAudioCount, setRemoteAudioCount] = useState(0)
+  /** Publish telemetriya (cloud a0 lekin micOn holatini ajratish uchun):
+   *  conn = LiveKit room.state, pub = lokal audio nashr holati. */
+  const [connState, setConnState] = useState('')
+  const [localPub, setLocalPub] = useState('')
   /** Lokal mic darajasi 0..1 (yuboruvchi tomoni jonli ekanini isbotlaydi) */
   const [micLevel, setMicLevel] = useState(0)
   const roomRef = useRef<Room | null>(null)
@@ -148,6 +152,32 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         const syncCount = () => setRemoteCount(room.remoteParticipants.size)
         room.on(Lk.RoomEvent.ParticipantConnected, syncCount)
         room.on(Lk.RoomEvent.ParticipantDisconnected, syncCount)
+        /** Publish telemetriya: conn + lokal audio nashr (live/muted/none). */
+        const syncPub = () => {
+          try {
+            setConnState(String(room.state ?? ''))
+            const pubs = [...room.localParticipant.audioTrackPublications.values()] as {
+              isMuted?: boolean
+              trackSid?: string
+              track?: { isMuted?: boolean } | undefined
+            }[]
+            if (pubs.length === 0) {
+              setLocalPub('none')
+            } else {
+              const muted = pubs.every((p) => p.isMuted === true || p.track?.isMuted === true)
+              setLocalPub(muted ? `muted(${pubs.length})` : `live(${pubs.length})`)
+            }
+          } catch {
+            setLocalPub('?')
+          }
+        }
+        room.on(Lk.RoomEvent.LocalTrackPublished, syncPub)
+        room.on(Lk.RoomEvent.LocalTrackUnpublished, syncPub)
+        room.on(Lk.RoomEvent.TrackMuted, syncPub)
+        room.on(Lk.RoomEvent.TrackUnmuted, syncPub)
+        room.on(Lk.RoomEvent.Reconnecting, syncPub)
+        room.on(Lk.RoomEvent.Reconnected, syncPub)
+        room.on(Lk.RoomEvent.SignalReconnecting, syncPub)
         room.on(Lk.RoomEvent.Disconnected, () => {
           if (!cancelled) {
             setState('idle')
@@ -165,6 +195,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         roomRef.current = room
         setState('connected')
         setRemoteCount(room.remoteParticipants.size)
+        syncPub()
         // Avtopley: join bosilgan gesture'dan keyin darhol urinamiz (best-effort);
         // brauzer rad etsa AudioPlaybackStatusChanged → audioBlocked → UI tugma.
         try {
@@ -175,9 +206,13 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         if (canSpeakRef.current) {
           try {
             await room.localParticipant.setMicrophoneEnabled(true)
-            if (!cancelled) { setMicOn(true); setMicBlocked(false); setMicError(null) }
+            // eslint-disable-next-line no-console
+            console.debug('[live-voice] mic enabled ok')
+            if (!cancelled) { setMicOn(true); setMicBlocked(false); setMicError(null); syncPub() }
           } catch (err) {
-            if (!cancelled) { setMicBlocked(true); setMicError(mapMicError(err)) }
+            // eslint-disable-next-line no-console
+            console.warn('[live-voice] mic enable failed:', (err as { name?: string })?.name, err)
+            if (!cancelled) { setMicBlocked(true); setMicError(mapMicError(err)); syncPub() }
           }
         }
       } catch {
@@ -194,6 +229,8 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       setAudioBlocked(false)
       setRemoteCount(0)
       setRemoteAudioCount(0)
+      setConnState('')
+      setLocalPub('')
       setMicLevel(0)
       setMicOn(false)
       setCameraOn(false)
@@ -208,8 +245,16 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     if (!room || state !== 'connected') return
     if (canSpeak && !micOn && !micBlocked) {
       room.localParticipant.setMicrophoneEnabled(true)
-        .then(() => { setMicOn(true); setMicBlocked(false); setMicError(null) })
-        .catch((err: unknown) => { setMicBlocked(true); setMicError(mapMicError(err)) })
+        .then(() => {
+          // eslint-disable-next-line no-console
+          console.debug('[live-voice] mic enabled ok (approve)')
+          setMicOn(true); setMicBlocked(false); setMicError(null)
+        })
+        .catch((err: unknown) => {
+          // eslint-disable-next-line no-console
+          console.warn('[live-voice] mic enable failed (approve):', (err as { name?: string })?.name, err)
+          setMicBlocked(true); setMicError(mapMicError(err))
+        })
     } else if (!canSpeak && micOn) {
       room.localParticipant.setMicrophoneEnabled(false).then(() => setMicOn(false)).catch(() => {})
     }
@@ -225,6 +270,8 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       setMicOn(next)
       if (next) { setMicBlocked(false); setMicError(null) }
     } catch (err) {
+      // eslint-disable-next-line no-console
+      console.warn('[live-voice] mic toggle failed:', (err as { name?: string })?.name, err)
       setMicBlocked(true)
       setMicError(mapMicError(err))
     }
@@ -294,7 +341,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     return () => window.clearInterval(timer)
   }, [micOn, state])
 
-  return { state, micOn, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
+  return { state, micOn, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, connState, localPub, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */
