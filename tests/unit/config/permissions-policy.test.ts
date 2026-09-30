@@ -28,7 +28,7 @@ describe('config/permissions-policy', () => {
     )
 
     expect(directives.get('camera')).toBe('(self)')
-    expect(directives.get('microphone')).toBe('()')
+    expect(directives.get('microphone')).toBe('(self)')
     expect(directives.get('geolocation')).toBe('()')
   })
 })
