@@ -87,7 +87,9 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     const onSubscribed = (track: RemoteTrack, pub: RemoteTrackPublication, p: RemoteParticipant) => {
       if (track.kind === Lk.Track.Kind.Audio) {
         const el = document.createElement('audio')
-        el.autoplay = true
+        el.autoplay = true;
+        el.style.display = 'none';
+        document.body.appendChild(el);
         track.attach(el)
         audios.set(track.sid ?? '', el)
         setRemoteAudioCount((n) => n + 1)
