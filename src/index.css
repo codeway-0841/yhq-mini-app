@@ -695,6 +695,20 @@ body[data-theme='dark'][data-accent='obsidian'] {
   --theme-shadow: #000000;
 }
 
+/* Linear Official — tokens from linear.app */
+body[data-theme='dark'][data-accent='linear'] {
+  --p-fg: #f7f8f8; --p-fg-rgb: 247 248 248; --p-muted: #8a8f98; --p-muted-rgb: 138 143 152; --p-subtle: #7a7f88;
+  --theme-fg: #f7f8f8; --theme-fg-muted: #8a8f98; --theme-fg-subtle: #7a7f88;
+  --p-primary: #5e6ad2; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 94 106 210;
+  --p-purple: #5e6ad2; --p-purple-rgb: 94 106 210;
+  --p-canvas: #08090a; --p-canvas-rgb: 8 9 10; --p-surface: #1c1c1f; --p-surface-rgb: 28 28 31; --p-card: #1c1c1f; --p-card-rgb: 28 28 31;
+  --p-line: #26262a; --p-line-rgb: 38 38 42;
+  --p-line-strong: #36363a;
+  --theme-canvas: #08090a; --theme-surface: #1c1c1f; --theme-elevated: #1c1c1f;
+  --theme-line: #26262a; --theme-line-strong: #36363a;
+  --theme-shadow: #000000;
+}
+
 /* Gamified Neo — jonli Duolingo emerald yashili, to'q slate navy */
 body[data-theme='dark'][data-accent='neo'] {
   --p-fg: #f8fafc; --p-fg-rgb: 248 250 252; --p-muted: #94a3b8; --p-muted-rgb: 148 163 184; --p-subtle: #8693a4;
@@ -894,6 +908,13 @@ body[data-theme='light'][data-accent='obsidian'] {
   --p-canvas: #f1f3f7; --p-canvas-rgb: 241 243 247; --p-surface: #e4e8ee; --p-surface-rgb: 228 232 238; --p-card: #ffffff; --p-card-rgb: 255 255 255;
   --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
   --theme-canvas: #f1f3f7; --theme-surface: #e4e8ee; --theme-elevated: #ffffff;
+  --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
+}
+body[data-theme='light'][data-accent='linear'] {
+  --p-primary: #5e6ad2; --p-on-primary: #ffffff; --p-on-primary-rgb: 255 255 255; --p-glow: transparent; --p-primary-rgb: 94 106 210;
+  --p-canvas: #f7f8f8; --p-canvas-rgb: 247 248 248; --p-surface: #eceef0; --p-surface-rgb: 236 238 240; --p-card: #ffffff; --p-card-rgb: 255 255 255;
+  --p-line: rgba(0,0,0,0.08); --p-line-rgb: 0 0 0; --p-line-strong: rgba(0,0,0,0.15);
+  --theme-canvas: #f7f8f8; --theme-surface: #eceef0; --theme-elevated: #ffffff;
   --theme-line: rgba(0,0,0,0.08); --theme-line-strong: rgba(0,0,0,0.15);
 }
 body[data-theme='light'][data-accent='neo'] {

@@ -69,6 +69,7 @@ export const SHOP_ITEMS = [
   { id: 'arctic',  kind: 'accent-theme', price: 1000 },
   // ── Mavjud premium temalar — coin'ga ham (premium obunasi ALTERNATIVASI) ──
   { id: 'obsidian', kind: 'accent-theme', price: 1600 },
+  { id: 'linear',   kind: 'accent-theme', price: 1600 },
   { id: 'neo',      kind: 'accent-theme', price: 1600 },
   { id: 'nordic',   kind: 'accent-theme', price: 1600 },
   { id: 'carplay',  kind: 'accent-theme', price: 1600 },

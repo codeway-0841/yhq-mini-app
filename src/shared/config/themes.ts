@@ -50,6 +50,7 @@ export const ACCENT_THEMES: AccentTheme[] = [
   // ko'k aksent oladi, migratsiya shart emas.
   { id: 'kiwi',     label: { uz: 'KIVVI Blue (standart)', ru: 'KIVVI Blue (стандарт)' }, color: '#146fdd', bg: '#0d1117', card: '#161b22', glow: false, premium: false },
   { id: 'obsidian', label: { uz: 'Linear Tech',             ru: 'Linear Tech'             }, color: '#3471d7', bg: '#08090a', card: '#111215', glow: false, premium: true  },
+  { id: 'linear',   label: { uz: 'Linear Official',         ru: 'Linear Official'         }, color: '#5e6ad2', bg: '#08090a', card: '#1c1c1f', glow: false, premium: true  },
   { id: 'neo',      label: { uz: 'Gamified Neo',            ru: 'Gamified Neo'            }, color: '#178540', bg: '#0f172a', card: '#1e293b', glow: false, premium: true  },
   { id: 'nordic',   label: { uz: 'Nordic Glass',            ru: 'Nordic Glass'            }, color: '#38bdf8', bg: '#0c1017', card: '#131924', glow: false, premium: true  },
   { id: 'carplay',  label: { uz: 'CarPlay Luxury',          ru: 'CarPlay Luxury'          }, color: '#f97316', bg: '#0b0d11', card: '#14171f', glow: false, premium: true  },
