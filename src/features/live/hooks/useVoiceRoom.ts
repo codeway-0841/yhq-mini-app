@@ -52,6 +52,7 @@ interface MediaRoomArgs {
 export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo, enabled }: MediaRoomArgs) {
   const [state, setState] = useState<MediaState>('idle')
   const [micOn, setMicOn] = useState(false)
+  const [micPending, setMicPending] = useState(false)
   const [micBlocked, setMicBlocked] = useState(false)
   const [micError, setMicError] = useState<MicErrorKind | null>(null)
   const [cameraOn, setCameraOn] = useState(false)
@@ -72,6 +73,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   /** Lokal mic darajasi 0..1 (yuboruvchi tomoni jonli ekanini isbotlaydi) */
   const [micLevel, setMicLevel] = useState(0)
   const roomRef = useRef<Room | null>(null)
+  const micOperationRef = useRef<{ room: Room; promise: Promise<void> } | null>(null)
   const livekitRef = useRef<typeof import('livekit-client') | null>(null)
   const canSpeakRef = useRef(canSpeak)
   canSpeakRef.current = canSpeak
@@ -127,6 +129,46 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     }
   }, [])
 
+  /** SDK `undefined` qaytarishi mumkin: UI faqat haqiqiy, unmuted nashrni "on" deydi.
+   *  Avto-yoqish, approve va qo'lda toggle bitta xona ichida ketma-ket bajariladi. */
+  const requestMicrophone = useCallback((room: Room, enabled: boolean): Promise<void> => {
+    const previous = micOperationRef.current?.room === room
+      ? micOperationRef.current.promise
+      : Promise.resolve()
+    const promise = previous.catch(() => {}).then(async () => {
+      if (roomRef.current !== room) return
+      setMicPending(true)
+      try {
+        const publication = await room.localParticipant.setMicrophoneEnabled(enabled)
+        if (roomRef.current !== room) return
+        const source = livekitRef.current?.Track.Source.Microphone
+        const current = source ? room.localParticipant.getTrackPublication(source) : undefined
+        if (enabled && (!publication || !current?.audioTrack || current.isMuted)) {
+          throw new Error('Microphone track was not published')
+        }
+        setMicOn(enabled)
+        if (enabled) { setMicBlocked(false); setMicError(null) }
+      } catch (err) {
+        if (roomRef.current !== room) return
+        // Xato bo'lsa ham tugma SDK'dagi real holatni aks ettirsin.
+        const source = livekitRef.current?.Track.Source.Microphone
+        const current = source ? room.localParticipant.getTrackPublication(source) : undefined
+        setMicOn(Boolean(current?.audioTrack && !current.isMuted))
+        if (enabled) { setMicBlocked(true); setMicError(mapMicError(err)) }
+        console.warn('[live-voice] mic publish failed:', (err as { name?: string })?.name, err)
+      }
+    })
+    const operation = { room, promise }
+    micOperationRef.current = operation
+    void promise.finally(() => {
+      if (micOperationRef.current === operation) {
+        micOperationRef.current = null
+        if (roomRef.current === room) setMicPending(false)
+      }
+    })
+    return promise
+  }, [])
+
   useEffect(() => {
     if (!enabled || !mediaUrl || !livekitToken) return
     let cancelled = false
@@ -159,8 +201,10 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
             const pubs = [...room.localParticipant.audioTrackPublications.values()] as {
               isMuted?: boolean
               trackSid?: string
+              audioTrack?: unknown
               track?: { isMuted?: boolean } | undefined
             }[]
+            setMicOn(pubs.some((p) => Boolean(p.audioTrack) && p.isMuted !== true && p.track?.isMuted !== true))
             if (pubs.length === 0) {
               setLocalPub('none')
             } else {
@@ -203,18 +247,6 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         } catch {
           setAudioBlocked(true)
         }
-        if (canSpeakRef.current) {
-          try {
-            await room.localParticipant.setMicrophoneEnabled(true)
-            // eslint-disable-next-line no-console
-            console.debug('[live-voice] mic enabled ok')
-            if (!cancelled) { setMicOn(true); setMicBlocked(false); setMicError(null); syncPub() }
-          } catch (err) {
-            // eslint-disable-next-line no-console
-            console.warn('[live-voice] mic enable failed:', (err as { name?: string })?.name, err)
-            if (!cancelled) { setMicBlocked(true); setMicError(mapMicError(err)); syncPub() }
-          }
-        }
       } catch {
         if (!cancelled) setState('failed')
       }
@@ -223,6 +255,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       cancelled = true
       const r = roomRef.current
       roomRef.current = null
+      micOperationRef.current = null
       setSpeakers([])
       setVideos([])
       setLocalVideo(null)
@@ -233,6 +266,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
       setLocalPub('')
       setMicLevel(0)
       setMicOn(false)
+      setMicPending(false)
       setCameraOn(false)
       setScreenOn(false)
       if (r) void r.disconnect().catch(() => {})
@@ -243,39 +277,16 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
   useEffect(() => {
     const room = roomRef.current
     if (!room || state !== 'connected') return
-    if (canSpeak && !micOn && !micBlocked) {
-      room.localParticipant.setMicrophoneEnabled(true)
-        .then(() => {
-          // eslint-disable-next-line no-console
-          console.debug('[live-voice] mic enabled ok (approve)')
-          setMicOn(true); setMicBlocked(false); setMicError(null)
-        })
-        .catch((err: unknown) => {
-          // eslint-disable-next-line no-console
-          console.warn('[live-voice] mic enable failed (approve):', (err as { name?: string })?.name, err)
-          setMicBlocked(true); setMicError(mapMicError(err))
-        })
-    } else if (!canSpeak && micOn) {
-      room.localParticipant.setMicrophoneEnabled(false).then(() => setMicOn(false)).catch(() => {})
-    }
+    if (canSpeak && !micOn && !micBlocked) void requestMicrophone(room, true)
+    else if (!canSpeak && (micOn || micOperationRef.current?.room === room)) void requestMicrophone(room, false)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [canSpeak, state])
+  }, [canSpeak, state, requestMicrophone])
 
   const toggleMic = useCallback(async () => {
     const room = roomRef.current
-    if (!room || state !== 'connected' || !canSpeakRef.current) return
-    try {
-      const next = !micOn
-      await room.localParticipant.setMicrophoneEnabled(next)
-      setMicOn(next)
-      if (next) { setMicBlocked(false); setMicError(null) }
-    } catch (err) {
-      // eslint-disable-next-line no-console
-      console.warn('[live-voice] mic toggle failed:', (err as { name?: string })?.name, err)
-      setMicBlocked(true)
-      setMicError(mapMicError(err))
-    }
-  }, [micOn, state])
+    if (!room || state !== 'connected' || !canSpeakRef.current || micOperationRef.current?.room === room) return
+    await requestMicrophone(room, !micOn)
+  }, [micOn, state, requestMicrophone])
 
   const toggleCamera = useCallback(async () => {
     const room = roomRef.current
@@ -341,7 +352,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     return () => window.clearInterval(timer)
   }, [micOn, state])
 
-  return { state, micOn, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, connState, localPub, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
+  return { state, micOn, micPending, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, connState, localPub, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */

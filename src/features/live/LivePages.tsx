@@ -325,6 +325,7 @@ function LiveRoomPage() {
                       size="icon"
                       variant={voice.micOn ? 'default' : 'secondary'}
                       aria-label={voice.micOn ? tt('liveMicOn') : tt('liveMicOff')}
+                      disabled={voice.micPending}
                       onClick={() => void voice.toggleMic()}
                     >
                       {voice.micOn ? <Mic size={18} /> : <MicOff size={18} />}
