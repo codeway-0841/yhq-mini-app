@@ -358,10 +358,11 @@ export default function DialogOverlay({
       suppressNextClickRef.current = true
     }
 
-    // Rubber banding: tepaga tortilsa 0.12 elastik qarshilik
+    // Rubber banding: faqat pastga tortish uchun. 
+    // Zamonaviy UI'larda (iOS) modalni yuqoriga ortiqcha tortib bo'lmaydi (gap ko'rinmasligi uchun 0 ga taqaladi).
     let currentY = deltaY
     if (currentY < 0) {
-      currentY = deltaY * 0.12
+      currentY = 0
     }
 
     const sheetHeight = state.sheetHeight
