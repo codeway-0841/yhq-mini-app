@@ -106,7 +106,10 @@ export async function listParticipants(cfg: ControlConfig, room: string): Promis
   return { participants: Array.isArray(out.participants) ? out.participants : [] }
 }
 
-/** Speaker permission jonli yangilash (qayta ulanishsiz) — grant: roomAdmin+room. */
+/** Speaker permission jonli yangilash (qayta ulanishsiz) — grant: roomAdmin+room.
+ *  UpdateParticipant to'liq permission obyektini ALMASHTIRADI — shuning uchun
+ *  canSubscribe/canPublishData doim true yuboriladi (faqat canPublish yuborilsa
+ *  approved student ustoz audiosini eshitmay qoladi + data (qo'l/chat) sinadi). */
 export async function updateParticipantPermission(
   cfg: ControlConfig,
   room: string,
@@ -118,7 +121,7 @@ export async function updateParticipantPermission(
     'livekit.RoomService',
     'UpdateParticipant',
     { roomAdmin: true, room },
-    { room, identity, permission: { canPublish } },
+    { room, identity, permission: { canPublish, canSubscribe: true, canPublishData: true } },
   )
 }
 

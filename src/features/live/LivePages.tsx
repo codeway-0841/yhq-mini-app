@@ -361,7 +361,7 @@ function LiveRoomPage() {
               </p>
               {voice.micBlocked && !voice.micOn && (
                 <p className="text-xs text-pdanger">
-                  {voice.micError === 'nodevice' ? tt('liveMicNoDevice') : tt('liveMicBlocked')}
+                  {voice.micError === 'nodevice' ? tt('liveMicNoDevice') : voice.micError === 'failed' ? tt('liveMicFailed') : tt('liveMicBlocked')}
                 </p>
               )}
               {voice.speakers.length > 0 && (

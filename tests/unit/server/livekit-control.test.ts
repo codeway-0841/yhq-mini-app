@@ -60,6 +60,25 @@ describe('livekit-control transport', () => {
     expect(seen[0]).toBe('https://x.livekit.cloud/twirp/livekit.RoomService/ListParticipants')
   })
 
+  it('updatePermission — to‘liq permission kontrakti (canSubscribe/canPublishData saqlanadi)', async () => {
+    const bodies: unknown[] = []
+    vi.stubGlobal('fetch', vi.fn(async (_url: string, init?: { body?: unknown }) => {
+      try {
+        bodies.push(JSON.parse(String(init?.body ?? '{}')) as unknown)
+      } catch {
+        bodies.push({})
+      }
+      return okJson({})
+    }))
+    await updateParticipantPermission(CFG, 'live_5', 'u1', true)
+    await updateParticipantPermission(CFG, 'live_5', 'u2', false)
+    // UpdateParticipant to'liq almashtiradi — revoke'da ham subscribe/data qolishi SHART
+    expect(bodies).toEqual([
+      { room: 'live_5', identity: 'u1', permission: { canPublish: true, canSubscribe: true, canPublishData: true } },
+      { room: 'live_5', identity: 'u2', permission: { canPublish: false, canSubscribe: true, canPublishData: true } },
+    ])
+  })
+
   it('update/remove/delete/start/stop — servis yo‘llari', async () => {
     const seen: string[] = []
     vi.stubGlobal('fetch', vi.fn(async (url: string) => {

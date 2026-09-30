@@ -9,13 +9,18 @@ import type {
 
 export type MediaState = 'idle' | 'connecting' | 'connected' | 'failed'
 
-/** getUserMedia xato farqi — UI yo'riqnomasi shunga qarab chiqadi. */
-export type MicErrorKind = 'denied' | 'nodevice'
+/** getUserMedia xato farqi — UI yo'riqnomasi shunga qarab chiqadi.
+ *  'denied' = user ruxsat bermadi; 'nodevice' = qurilma yo'q;
+ *  'failed' = LiveKit publish/network xatosi (mic ruxsati bilan adashtirmang!). */
+export type MicErrorKind = 'denied' | 'nodevice' | 'failed'
 
 export function mapMicError(err: unknown): MicErrorKind {
   const name = (err as { name?: string })?.name ?? ''
   if (name === 'NotFoundError' || name === 'OverconstrainedError' || name === 'NotReadableError') return 'nodevice'
-  return 'denied'
+  if (name === 'NotAllowedError' || name === 'SecurityError') return 'denied'
+  // Noma'lum/publish/network xatolar (TrackInvalidError, LiveKit permission,
+  // AbortError va b.) — "ruxsat berilmadi" deb ko'rsatish haqiqiy sababni yashiradi.
+  return 'failed'
 }
 
 export interface RemoteVideo {
