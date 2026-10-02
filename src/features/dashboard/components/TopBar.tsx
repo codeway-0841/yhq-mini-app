@@ -1,6 +1,6 @@
-import { memo } from 'react'
+import { memo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Sun, Moon, ChevronDown, Flame } from 'lucide-react'
+import { Sun, Moon, ChevronDown, ChevronRight, Flame } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -10,6 +10,8 @@ import { transitionTheme } from '../../../shared/lib/theme-transition'
 import CoinIcon from '../../../shared/components/CoinIcon'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
+import { useUpdateStore } from '../../../platform/version-check'
+import UpdateSheet from '../../../shared/components/UpdateSheet'
 
 // ── Avatar ──────────────────────────────────────────────────────────────────
 // DIQQAT: bu avatar DOIRA bo'lib qoladi (ui/Avatar squircle emas) — sotib
@@ -74,6 +76,15 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
 
   const isDark = theme === 'light' ? false : (theme === 'dark' ? true : (typeof document !== 'undefined' ? document.body.dataset.theme !== 'light' : true))
 
+  // Soft update holati (agar yangilanish bo'lsa, profil bilan toggle o'rtasida aynan bir qatorda chiqadi)
+  const [showUpdateSheet, setShowUpdateSheet] = useState(false)
+  const updateStatus = useUpdateStore((s) => s.status)
+  const updateInfo = useUpdateStore((s) => s.info)
+  const updateDismissed = useUpdateStore((s) => s.dismissed)
+  const dismissUpdate = useUpdateStore((s) => s.dismiss)
+
+  const hasSoftUpdate = updateStatus === 'soft' && !updateDismissed && Boolean(updateInfo)
+
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3 lg:static lg:mt-0 lg:pt-3 lg:bg-transparent lg:backdrop-blur-none lg:[-webkit-backdrop-filter:none] lg:border-none lg:shadow-none">
       <div className="flex items-center justify-between gap-2 px-4 py-2">
@@ -85,16 +96,51 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
         >
           <Avatar name={name} photoUrl={avatarSrcFor(user) ?? undefined} />
         </button>
-        <button
-          type="button"
-          onClick={onSubjects}
-          aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
-          className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-0 lg:flex-initial lg:border lg:border-pline lg:bg-pwash hover:lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs cursor-pointer"
-        >
-          <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
-          <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
-          <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
-        </button>
+
+        {/* Profil logo bilan toggle o'rtasida: yangi versiya bo'lsa yaxlit Update kapsulasi, aks holda Fanni tanlash */}
+        {hasSoftUpdate && updateInfo ? (
+          <button
+            type="button"
+            onClick={() => {
+              playSound('click')
+              haptics.impact('light')
+              setShowUpdateSheet(true)
+            }}
+            className="flex min-h-11 h-11 min-w-0 flex-1 items-center justify-between gap-2.5 rounded-full px-4 bg-[rgb(var(--p-card-rgb)/0.92)] text-pfg backdrop-blur-2xl saturate-150 border border-plineStrong shadow-2xs active:scale-[0.98] transition-transform cursor-pointer select-none"
+          >
+            <div className="flex min-w-0 items-center gap-2.5">
+              {/* Dashboard Dynamic Island'dagi kabi nafis pulse */}
+              <span className="relative flex size-2.5 shrink-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75" />
+                <span className="relative inline-flex size-2.5 rounded-full bg-blue-500" />
+              </span>
+
+              <span className="truncate text-[13.5px] font-semibold tracking-tight">
+                {lang === 'ru' ? 'Доступно обновление' : 'Yangi versiya mavjud'}
+              </span>
+            </div>
+
+            <div className="flex shrink-0 items-center gap-1.5">
+              {updateInfo.latestVersion && updateInfo.latestVersion !== '0.0.0' && (
+                <span className="shrink-0 text-[12px] font-medium text-pmuted">
+                  v{updateInfo.latestVersion}
+                </span>
+              )}
+              <ChevronRight size={15} className="text-pmuted shrink-0" />
+            </div>
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={onSubjects}
+            aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
+            className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-0 lg:flex-initial lg:border lg:border-pline lg:bg-pwash hover:lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs cursor-pointer"
+          >
+            <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
+            <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
+            <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
+          </button>
+        )}
 
         <div className="flex flex-shrink-0 items-center gap-2 lg:mr-0">
           {/* Wondering-uslub Flame (Olov) va Coin (Tanga) kapsulasi */}
@@ -135,6 +181,19 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
           </button>
         </div>
       </div>
+
+      {showUpdateSheet && updateInfo && (
+        <UpdateSheet
+          isOpen={showUpdateSheet}
+          info={updateInfo}
+          lang={lang}
+          onClose={() => setShowUpdateSheet(false)}
+          onDismiss={() => {
+            dismissUpdate()
+            setShowUpdateSheet(false)
+          }}
+        />
+      )}
     </header>
   )
 })

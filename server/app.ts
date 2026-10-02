@@ -126,6 +126,19 @@ export function createApp() {
     if (!poolReady) throw new Error('Question pool not loaded')
   }))
 
+  // APK majburiy yangilash — public endpoint (auth shart emas, boot'da chaqiriladi).
+  // Versiyalar env'dan (MIN_APP_VERSION, LATEST_APP_VERSION) — Vercel/Render dashboard'dan
+  // o'zgartiring, REDEPLOY kerak. CDN cache 5 daqiqa (tez tarqaladi).
+  app.get('/api/app-version', (_req, res) => {
+    const { minVersion, latestVersion } = config.appVersion
+    res.setHeader('Cache-Control', 'public, s-maxage=300, max-age=300')
+    res.json({
+      minVersion:    minVersion ?? '0.0.0',
+      latestVersion: latestVersion ?? minVersion ?? '0.0.0',
+      updateUrl:     'https://play.google.com/store/apps/details?id=uz.kivvi.app',
+    })
+  })
+
   // ── Qatlam 1: DoS qalqoni (auth'dan OLDIN, IP bo'yicha) ──────────────────
   //
   // DIQQAT — bu limit ATAYLAB juda bo'sh. Ilgari shu joyda 120/min turardi va

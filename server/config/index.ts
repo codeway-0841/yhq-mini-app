@@ -118,6 +118,12 @@ const envSchema = z.object({
   /** Bitta user uchun token issuance kunlik kvota — anti-scrape cap */
   CONTENT_TOKEN_DAILY_CAP:     z.string().regex(/^\d+$/).optional(),
 
+  /** APK majburiy yangilash — minimum va oxirgi versiyalar (semver).
+   *  MIN_APP_VERSION: shudan PAST versiyali APK BLOKIROVKA ekrani ko'radi.
+   *  LATEST_APP_VERSION: shudan PAST — yumshoq taklif (dismiss qilinadi). */
+  MIN_APP_VERSION:    z.string().regex(/^\d+\.\d+\.\d+$/).optional(),
+  LATEST_APP_VERSION: z.string().regex(/^\d+\.\d+\.\d+$/).optional(),
+
   /** Jonli dars (LiveKit SFU, Faza 1b) — yo'q bo'lsa video o'chiq, jadval/chat ishlaydi */
   LIVEKIT_URL:            z.string().url().optional(),
   LIVEKIT_API_KEY:        z.string().optional(),
@@ -390,6 +396,13 @@ export const config = {
     recordingEnabled: env.LIVE_RECORDING_ENABLED === 'true',
     /** Master switch (rollback) — o'chiq bo'lsa router 503 (webhook'dan tashqari) */
     enabled: env.LIVE_ENABLED !== 'false',
+  },
+
+  /** APK majburiy/yumshoq yangilash — env orqali nazorat.
+   *  Qiymatlar Vercel + Render dashboard'da yoziladi (AGENTS.md qoida 7). */
+  appVersion: {
+    minVersion:    env.MIN_APP_VERSION ?? null,
+    latestVersion: env.LATEST_APP_VERSION ?? null,
   },
 } as const
 

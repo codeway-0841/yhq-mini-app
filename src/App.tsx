@@ -8,10 +8,13 @@ import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
+import ForceUpdateScreen from './features/app/components/ForceUpdateScreen'
 import AchievementCelebrationModal from './shared/components/AchievementCelebrationModal'
 import AchievementDetailSheet from './shared/components/AchievementDetailSheet'
 import IosDock, { isTabRootRoute } from './shared/components/IosDock'
 import DesktopSidebar from './shared/components/DesktopSidebar'
+import { checkAppUpdate, useUpdateStore, type UpdateStatus, type AppVersionInfo } from './platform/version-check'
+import { config } from './shared/config'
 
 // Lazy-loaded pages — each becomes its own chunk (code splitting)
 // Dashboard — 100% userlar ko'radigan yagona sahifa. Uning chunk'i splash
@@ -208,6 +211,42 @@ export default function App() {
     try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }
   })
 
+  // APK majburiy yangilash tekshiruvi — native APK'da boot'da chaqiriladi.
+  // Telegram/brauzer'da updateStatus null qoladi (tekshiruv o'tkazib yuboriladi).
+  const [updateStatus, setUpdateStatus] = useState<UpdateStatus | null>(null)
+  const [updateInfo, setUpdateInfo] = useState<AppVersionInfo | null>(null)
+  const [currentVersion, setCurrentVersion] = useState('')
+
+  useEffect(() => {
+    // Lokal tekshirish uchun: ?previewUpdate=soft yoki ?previewUpdate=force
+    const preview = new URLSearchParams(window.location.search).get('previewUpdate')
+    if (preview === 'force' || preview === 'soft') {
+      const data = {
+        status: preview as UpdateStatus,
+        info: {
+          minVersion: '1.1.0',
+          latestVersion: '1.2.0',
+          updateUrl: 'https://play.google.com/store/apps/details?id=uz.kivvi.app',
+        },
+        currentVersion: '1.0.3',
+      }
+      setUpdateStatus(data.status)
+      setUpdateInfo(data.info)
+      setCurrentVersion(data.currentVersion)
+      useUpdateStore.getState().setUpdate(data)
+      return
+    }
+
+    checkAppUpdate(config.apiBaseUrl).then((result) => {
+      if (result) {
+        setUpdateStatus(result.status)
+        setUpdateInfo(result.info)
+        setCurrentVersion(result.currentVersion)
+        useUpdateStore.getState().setUpdate(result)
+      }
+    }).catch(() => {}) // xato bo'lsa xavfsiz skip
+  }, [])
+
   // Splash yopilgach — sahifa chunk'larini IDLE vaqtda prefetch.
   // Boot kritik yo'lidan tashqarida: faqat idle callback yoki kichik timeout.
   useEffect(() => {
@@ -258,6 +297,17 @@ export default function App() {
             </button>
           </div>
         </div>
+      </>
+    )
+  }
+
+  // APK versiyasi serverning minVersion'dan past — ilovani ishlatish MUMKIN EMAS.
+  // Bu ekran splash/auth'dan OLDIN turadi (yangilanmagan app'da boot ma'nosiz).
+  if (updateStatus === 'force' && updateInfo) {
+    return (
+      <>
+        <ThemeEffect />
+        <ForceUpdateScreen lang={lang} info={updateInfo} currentVersion={currentVersion} />
       </>
     )
   }
