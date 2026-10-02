@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { MessageSquare, ChevronRight } from 'lucide-react'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -129,6 +130,24 @@ export default function Dashboard() {
               />
 
               <LearningGuide mistakesCount={mistakesCount} />
+
+              {/* Reviews Card (Screenshot 1 1-to-1) */}
+              <div
+                onClick={() => navigate('/sharhlar')}
+                role="button"
+                tabIndex={0}
+                className="bg-pcard rounded-2xl px-5 py-3.5 shadow-xs flex items-center justify-between cursor-pointer active:scale-[0.98] transition-all hover:opacity-90"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-500">
+                    <MessageSquare className="w-4 h-4 fill-amber-500/20" />
+                  </div>
+                  <span className="text-[15px] font-bold text-ptext tracking-tight">
+                    Reviews
+                  </span>
+                </div>
+                <ChevronRight size={18} className="text-psubtle stroke-[2.2]" />
+              </div>
             </div>
 
             {/* O'ng ustun: Vazifalar, Boss jang va Reyting */}

@@ -25,8 +25,8 @@ const blocks = [
 describe('RecognitionReviewSheet', () => {
   it('bloklar raqami + failed qator', () => {
     render(<RecognitionReviewSheet {...base} blocks={blocks} onUse={() => {}} />)
-    // Ko'rinadigan sarlavha + sr-only a11y label (DialogOverlay labelId)
-    expect(screen.getAllByText('Natija')).toHaveLength(2)
+    // Sarlavha (visible + aria-labelledby)
+    expect(screen.getByText('Natija')).toBeTruthy()
     expect(screen.getByText('Tanilmadi')).toBeTruthy()
     // Muqobil chip
     expect(screen.getByText('x = 1')).toBeTruthy()

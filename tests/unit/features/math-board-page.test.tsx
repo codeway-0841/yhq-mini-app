@@ -107,8 +107,8 @@ describe('MathBoardPage completion (Faza 6: solve → next → solution)', () =>
     renderPage()
     solveLog1()
     fireEvent.click(screen.getByText("Yechimni ko'rish"))
-    // Ko'rinadigan sarlavha + sr-only a11y label
-    expect(screen.getAllByText('Qabul qilingan yechim')).toHaveLength(2)
+    // Sarlavha (visible + aria-labelledby)
+    expect(screen.getByText('Qabul qilingan yechim')).toBeTruthy()
   })
 
   it('Keyingi masala — katalog tartibida', () => {
