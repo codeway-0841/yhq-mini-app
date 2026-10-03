@@ -1,11 +1,14 @@
 import { useState, useMemo } from 'react'
-import { Star, X, Check } from 'lucide-react'
+import { Star, Check } from 'lucide-react'
 import { api } from '@/shared/api'
 import { haptics } from '@/platform/haptics'
 import { useAppStore } from '@/shared/store/useAppStore'
 import { useT } from '@/shared/i18n'
 import { SUBJECTS } from '@/shared/config/subjects'
 import { useToast } from '@/shared/components/ToastContainer'
+import DialogOverlay from '@/shared/components/DialogOverlay'
+import ModalMathGrid from '@/shared/components/ModalMathGrid'
+import ModalHeaderRow from '@/shared/components/ModalHeaderRow'
 
 interface Props {
   onClose: () => void
@@ -73,39 +76,39 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
   const ratingCaption = lang === 'ru' ? RATING_LABELS_RU[rating] : RATING_LABELS_UZ[rating]
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center" onClick={onClose}>
-      {/* Orqa qorong'ulatish */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm animate-in fade-in" />
-
-      {/* Sheet kartasi */}
+    <DialogOverlay
+      onClose={onClose}
+      labelId="write-review-title"
+      swipeToDismiss
+      backdropClassName="bg-black/60"
+    >
       <div
-        className="relative w-full max-w-lg bg-white dark:bg-card rounded-t-[32px] px-5 pb-9 pt-3 animate-in slide-in-from-bottom duration-300 max-h-[90vh] overflow-y-auto no-scrollbar shadow-2xl"
+        className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto no-scrollbar"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Yuqori drag-handle */}
-        <div className="w-10 h-1.5 bg-slate-200 dark:bg-white/20 rounded-full mx-auto mb-4" />
+        <ModalMathGrid glow={false} height={360} />
 
-        {/* Header satri */}
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-xl font-extrabold text-slate-900 dark:text-foreground tracking-tight">
+        {/* Sensorda surish uchun tepa drag handle */}
+        <div
+          data-drag-handle
+          className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
+        />
+
+        {/* Global modal header (X tugmasi chapda, sarlavha o'rtada) */}
+        <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'}>
+          <div data-drag-handle className="select-none">
+            <h2 id="write-review-title" className="text-lg font-bold text-pfg tracking-tight">
               {tt('reviewsWriteTitle')}
             </h2>
-            <p className="text-xs text-slate-400 dark:text-muted-foreground mt-0.5">
+            <p className="text-[11.5px] text-pmuted mt-0.5">
               {lang === 'ru' ? 'Поделитесь вашим честным опытом' : 'Platforma haqida samimiy fikringiz'}
             </p>
           </div>
-          <button
-            onClick={onClose}
-            className="w-8 h-8 rounded-full bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-600 dark:text-slate-300 active:scale-90 transition-transform"
-          >
-            <X size={16} />
-          </button>
-        </div>
+        </ModalHeaderRow>
 
         {/* ── 1. Yulduzli Baholash (Interactive 5 Stars) ───────────────────── */}
-        <div className="bg-slate-50 dark:bg-white/5 rounded-2xl p-4 mb-4 text-center border border-slate-100 dark:border-white/5">
-          <div className="flex justify-center items-center gap-2 mb-2">
+        <div className="bg-pcard rounded-2xl p-3.5 mb-3.5 text-center border border-pline shadow-2xs relative z-10">
+          <div className="flex justify-center items-center gap-2 mb-1.5">
             {[1, 2, 3, 4, 5].map((n) => {
               const filled = n <= rating
               return (
@@ -116,14 +119,14 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
                     haptics.impact('light')
                     setRating(n)
                   }}
-                  className="p-1 active:scale-125 transition-transform"
+                  className="p-1 active:scale-125 transition-transform cursor-pointer"
                 >
                   <Star
-                    size={38}
+                    size={36}
                     className={`transition-all duration-200 ${
                       filled
                         ? 'fill-[#c7820a] text-[#c7820a] drop-shadow-[0_2px_8px_rgba(199,130,10,0.35)]'
-                        : 'fill-slate-200 text-slate-200 dark:fill-slate-700 dark:text-slate-700'
+                        : 'fill-slate-200 text-slate-200 dark:fill-white/10 dark:text-white/10'
                     }`}
                   />
                 </button>
@@ -135,13 +138,13 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
           </span>
         </div>
 
-        {/* ── 2. Fan Tanlash (Professional Apple-grade Horizontal Carousel) ── */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between px-1 mb-2">
-            <label className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-muted-foreground">
+        {/* ── 2. Fan Tanlash (Toza matnli gorizontal pilla, iconsiz) ────────── */}
+        <div className="mb-3.5 relative z-10">
+          <div className="flex items-center justify-between px-1 mb-1.5">
+            <label className="text-[11px] font-bold uppercase tracking-wider text-psubtle">
               {lang === 'ru' ? 'О каком предмете отзыв?' : 'Qaysi fan haqida fikr?'}
             </label>
-            <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">
+            <span className="text-xs font-semibold text-pprimary">
               {selectedSubject
                 ? lang === 'ru'
                   ? selectedSubject.nameRu
@@ -152,8 +155,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
             </span>
           </div>
 
-          {/* Gorizontal svayp qilinadigan fanlar ro'yxati (toza matnli pill, iconsiz) */}
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 px-1">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
             {/* 1-variant: Umumiy KIVVI platformasi */}
             <button
               type="button"
@@ -161,14 +163,14 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
                 haptics.selection()
                 setSubjectId('')
               }}
-              className={`shrink-0 px-4 py-2 rounded-full border text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 ${
+              className={`shrink-0 px-3.5 py-1.5 rounded-full border text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer ${
                 subjectId === ''
                   ? 'bg-blue-600 border-blue-600 text-white shadow-xs'
-                  : 'bg-white dark:bg-card border-slate-200/80 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50'
+                  : 'bg-pcard border-pline text-pfg hover:bg-psurface'
               }`}
             >
               <span>{lang === 'ru' ? 'Вся платформа' : 'Umumiy KIVVI'}</span>
-              {subjectId === '' && <Check size={13} className="text-white stroke-[2.5]" />}
+              {subjectId === '' && <Check size={12} className="text-white stroke-[2.5]" />}
             </button>
 
             {/* Barcha faol fanlar — FAQAT TOZA MATN (iconsiz) */}
@@ -182,14 +184,14 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
                     haptics.selection()
                     setSubjectId(s.id)
                   }}
-                  className={`shrink-0 px-4 py-2 rounded-full border text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 ${
+                  className={`shrink-0 px-3.5 py-1.5 rounded-full border text-xs font-bold transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer ${
                     isSelected
                       ? 'bg-blue-600 border-blue-600 text-white shadow-xs'
-                      : 'bg-white dark:bg-card border-slate-200/80 dark:border-white/10 text-slate-700 dark:text-slate-300 hover:bg-slate-50'
+                      : 'bg-pcard border-pline text-pfg hover:bg-psurface'
                   }`}
                 >
                   <span>{lang === 'ru' ? s.nameRu : s.name}</span>
-                  {isSelected && <Check size={13} className="text-white stroke-[2.5]" />}
+                  {isSelected && <Check size={12} className="text-white stroke-[2.5]" />}
                 </button>
               )
             })}
@@ -197,7 +199,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
         </div>
 
         {/* ── 3. Sarlavha Kiritish (Title Input) ────────────────────────────── */}
-        <div className="mb-3">
+        <div className="mb-2.5 relative z-10">
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -207,12 +209,12 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
                 : 'Qisqa sarlavha (masalan: "Juda foydali bo\'ldi!")'
             }
             maxLength={100}
-            className="w-full px-4 py-3 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-sm font-semibold text-slate-900 dark:text-foreground placeholder:text-slate-400 dark:placeholder:text-muted-foreground outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-card transition-all"
+            className="w-full px-4 py-2.5 rounded-2xl bg-pcard border border-pline text-sm font-semibold text-pfg placeholder:text-psubtle outline-none focus:border-pprimary transition-all"
           />
         </div>
 
         {/* ── 4. Sharh Matni (Comment Textarea) ────────────────────────────── */}
-        <div className="mb-4">
+        <div className="mb-3.5 relative z-10">
           <textarea
             value={comment}
             onChange={(e) => setComment(e.target.value)}
@@ -223,9 +225,9 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
             }
             maxLength={1000}
             rows={4}
-            className="w-full px-4 py-3 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200/80 dark:border-white/10 text-sm font-normal text-slate-800 dark:text-slate-200 placeholder:text-slate-400 dark:placeholder:text-muted-foreground outline-none focus:border-blue-500 focus:bg-white dark:focus:bg-card transition-all resize-none leading-relaxed"
+            className="w-full px-4 py-2.5 rounded-2xl bg-pcard border border-pline text-sm font-normal text-pfg placeholder:text-psubtle outline-none focus:border-pprimary transition-all resize-none leading-relaxed"
           />
-          <div className="flex justify-between items-center px-1 text-[11px] text-slate-400">
+          <div className="flex justify-between items-center px-1 text-[11px] text-psubtle mt-1">
             <span>{comment.length >= 3 ? '✓ Yetarli uzunlik' : 'Kamida 3 ta belgi'}</span>
             <span>{comment.length}/1000</span>
           </div>
@@ -233,9 +235,10 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
 
         {/* ── 5. Yuborish Tugmasi ───────────────────────────────────────────── */}
         <button
+          type="button"
           onClick={handleSubmit}
           disabled={!canSubmit || submitting}
-          className="w-full py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-base disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-md shadow-blue-500/20"
+          className="w-full py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-md shadow-blue-500/20 relative z-10 cursor-pointer"
         >
           {submitting
             ? lang === 'ru'
@@ -246,6 +249,6 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
               : 'Fikrni yuborish'}
         </button>
       </div>
-    </div>
+    </DialogOverlay>
   )
 }
