@@ -64,13 +64,19 @@ export function useFaceDetection(
     void (async () => {
       try {
         const { FilesetResolver, FaceDetector } = await loadModule()
+        if (cancelled) return
         const vision = await FilesetResolver.forVisionTasks(WASM_BASE)
+        if (cancelled) return
         detector = await FaceDetector.createFromOptions(vision, {
           baseOptions: { modelAssetPath: MODEL_PATH },
           runningMode: 'VIDEO',
           minDetectionConfidence: 0.5,
         })
-        if (cancelled) return
+        // Cleanup may have run while creation was pending, before it owned a detector.
+        if (cancelled) {
+          detector.close()
+          return
+        }
 
         setStatus('camera')
         try {
@@ -80,6 +86,7 @@ export function useFaceDetection(
             audio: false,
           })
         } catch {
+          if (cancelled) return
           // Orqa kamera yo'q/rad etildi — old kamera bilan urinib ko'ramiz
           try {
             stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false })
@@ -88,7 +95,12 @@ export function useFaceDetection(
             return
           }
         }
-        if (cancelled) return
+        // A permission prompt can resolve after unmount/deactivation. Stop the
+        // newly acquired tracks here; the earlier cleanup could not see them.
+        if (cancelled) {
+          stream.getTracks().forEach((t) => t.stop())
+          return
+        }
 
         const video = videoRef.current
         if (!video) {
