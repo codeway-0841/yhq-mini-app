@@ -147,17 +147,17 @@ export default function ReviewsPage() {
   }, [timeRange])
 
   return (
-    <div className="flex-1 flex flex-col min-h-screen bg-[#f4f5f9] dark:bg-background text-foreground">
+    <div className="w-full max-w-2xl mx-auto flex flex-col min-h-full bg-[#f4f5f9] dark:bg-background text-foreground">
       {/* ── Top App Bar (1-to-1 Reference Design) ─────────────────────────── */}
-      <header className="sticky top-0 z-30 pt-[var(--safe-top,8px)] px-4 py-3 bg-[#f4f5f9]/85 dark:bg-background/85 backdrop-blur-xl flex items-center justify-between border-b border-black/[0.03] dark:border-white/[0.04]">
-        <div className="flex items-center gap-2.5">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-4 py-2.5 bg-[#f4f5f9]/90 dark:bg-background/90 backdrop-blur-xl flex items-center justify-between border-b border-black/[0.04] dark:border-white/[0.04]">
+        <div className="flex items-center gap-2">
           {/* Orqaga tugmasi (< aylana) */}
           <button
             onClick={() => goBack(navigate)}
             aria-label="Back"
-            className="w-10 h-10 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-90 transition-transform"
+            className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
           >
-            <ChevronLeft size={22} className="text-slate-800 dark:text-foreground stroke-[2.4]" />
+            <ChevronLeft size={20} className="text-slate-800 dark:text-foreground stroke-[2.4]" />
           </button>
 
           {/* Filter/Sort tugmasi (3 gorizontal chiziqcha) */}
@@ -167,11 +167,11 @@ export default function ReviewsPage() {
               setShowFilterSheet(true)
             }}
             aria-label="Filter"
-            className="w-10 h-10 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-90 transition-transform"
+            className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
           >
             <svg
-              width="18"
-              height="18"
+              width="16"
+              height="16"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -186,7 +186,7 @@ export default function ReviewsPage() {
           </button>
 
           {/* Sarlavha: Reviews */}
-          <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-foreground ml-1">
+          <h1 className="text-lg font-bold tracking-tight text-slate-900 dark:text-foreground ml-0.5">
             Reviews
           </h1>
         </div>
@@ -198,9 +198,9 @@ export default function ReviewsPage() {
               haptics.selection()
               setShowFilterSheet(true)
             }}
-            className="flex items-center gap-1.5 bg-white dark:bg-card px-3 py-1.5 rounded-full shadow-xs border border-blue-200 dark:border-blue-900 active:scale-95 transition-transform"
+            className="flex items-center gap-1.5 bg-white dark:bg-card px-2.5 py-1 rounded-full shadow-xs border border-blue-200 dark:border-blue-900 active:scale-95 transition-transform"
           >
-            <span className="text-[12px] font-bold text-blue-600 dark:text-blue-400 max-w-[100px] truncate">
+            <span className="text-[11px] font-bold text-blue-600 dark:text-blue-400 max-w-[100px] truncate">
               {lang === 'ru' ? currentSubject.nameRu : currentSubject.name}
             </span>
             <span
@@ -208,9 +208,9 @@ export default function ReviewsPage() {
                 e.stopPropagation()
                 handleSubjectFilterChange(undefined)
               }}
-              className="w-4 h-4 rounded-full bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-500 hover:text-slate-900"
+              className="w-3.5 h-3.5 rounded-full bg-slate-100 dark:bg-white/10 flex items-center justify-center text-slate-500 hover:text-slate-900"
             >
-              <X size={10} strokeWidth={3} />
+              <X size={9} strokeWidth={3} />
             </span>
           </button>
         ) : (
@@ -220,12 +220,12 @@ export default function ReviewsPage() {
               setShowFilterSheet(true)
             }}
             aria-label="Fan tanlash"
-            className="flex items-center gap-1.5 bg-white dark:bg-card px-3 py-1.5 rounded-full shadow-xs border border-black/5 dark:border-white/10 active:scale-95 transition-transform"
+            className="flex items-center gap-1.5 bg-white dark:bg-card px-2.5 py-1 rounded-full shadow-xs border border-black/5 dark:border-white/10 active:scale-95 transition-transform"
           >
             <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300">
               {lang === 'ru' ? 'Предметы' : 'Fanlar'}
             </span>
-            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 dark:bg-white/10 px-1.5 py-0.5 rounded-full">
+            <span className="text-[10px] font-bold text-slate-500 bg-slate-100 dark:bg-white/10 px-1.5 py-0.2 rounded-full">
               {activeSubjects.length}
             </span>
           </button>
@@ -233,23 +233,23 @@ export default function ReviewsPage() {
       </header>
 
       {/* ── Subheader (LAST 7 DAYS · Updated in 0 sec) ────────────────────── */}
-      <div className="flex items-center justify-between px-5 pt-3.5 pb-2 text-[11px] font-bold tracking-wider text-slate-400 dark:text-muted-foreground uppercase">
+      <div className="flex items-center justify-between px-4 pt-2 pb-1 text-[10.5px] font-bold tracking-wider text-slate-400 dark:text-muted-foreground uppercase">
         <span>{timeRangeLabel}</span>
         <span>Updated in 0 sec</span>
       </div>
 
       {/* ── Asosiy kontent ────────────────────────────────────────────────── */}
-      <main className="flex-1 pb-28">
+      <main className="flex-1 pb-16">
         {/* 1. Katta Reyting Kartasi (4.1 + 20 reviews + 5 ta Bar) */}
         {summary && <RatingSummary summary={summary} />}
 
         {/* ── 2. FANLAR RO'YXATI (Toza matnli pill filtr, iconsiz) ─────────── */}
-        <div className="mb-2">
-          <div className="flex items-center gap-2 px-4 pb-2.5 overflow-x-auto no-scrollbar">
+        <div className="mt-2 mb-1">
+          <div className="flex items-center gap-1.5 px-4 pb-1.5 overflow-x-auto no-scrollbar">
             {/* Hammasi */}
             <button
               onClick={() => handleSubjectFilterChange(undefined)}
-              className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all active:scale-95 ${
+              className={`shrink-0 px-3 py-1 rounded-full text-[11px] font-bold transition-all active:scale-95 ${
                 !selectedSubject
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white dark:bg-card text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-white/10 hover:bg-slate-50'
@@ -265,7 +265,7 @@ export default function ReviewsPage() {
                 <button
                   key={s.id}
                   onClick={() => handleSubjectFilterChange(isSelected ? undefined : s.id)}
-                  className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all active:scale-95 ${
+                  className={`shrink-0 px-3 py-1 rounded-full text-[11px] font-bold transition-all active:scale-95 ${
                     isSelected
                       ? 'bg-blue-600 text-white shadow-xs'
                       : 'bg-white dark:bg-card text-slate-700 dark:text-slate-300 border border-slate-200/80 dark:border-white/10 hover:bg-slate-50'
@@ -279,14 +279,14 @@ export default function ReviewsPage() {
         </div>
 
         {/* ── 3. Yulduzlar Filtr Tablari (All, 5★, 4★, 3★, 2★, 1★) ─────────── */}
-        <div className="flex items-center gap-2 px-4 pb-3 overflow-x-auto no-scrollbar">
+        <div className="flex items-center gap-1.5 px-4 pb-2.5 overflow-x-auto no-scrollbar">
           {RATING_FILTERS.map((f) => {
             const isSelected = activeRatingFilter === f.value
             return (
               <button
                 key={f.label}
                 onClick={() => handleRatingFilterChange(f.value)}
-                className={`px-4 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all duration-150 active:scale-95 ${
+                className={`px-3 py-1 rounded-full text-[11px] font-bold whitespace-nowrap transition-all duration-150 active:scale-95 ${
                   isSelected
                     ? 'bg-[#dcebff] text-[#1a56db] dark:bg-blue-950/60 dark:text-blue-300 shadow-2xs'
                     : 'bg-white dark:bg-card text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-white/10 shadow-2xs hover:bg-slate-50'

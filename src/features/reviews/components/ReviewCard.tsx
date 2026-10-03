@@ -40,7 +40,7 @@ export default function ReviewCard({ review, isLiked, onLikeToggle, animationDel
 
   return (
     <div
-      className="bg-white dark:bg-card rounded-2xl p-5 shadow-xs border border-slate-100 dark:border-white/5 space-y-2.5 transition-all"
+      className="bg-white dark:bg-card rounded-2xl p-4 sm:p-4.5 shadow-xs border border-slate-100 dark:border-white/5 space-y-2 transition-all"
       style={{ animationDelay: `${animationDelay}ms`, animationFillMode: 'both' }}
     >
       {/* Yuqori qator: Yulduzlar + Badge + Sana + Ulashish */}
