@@ -1,6 +1,7 @@
 import { Loader2, Check, X } from 'lucide-react'
 import type { Question } from '../../../shared/api'
 import MathText from '../../../shared/components/MathText'
+import { formatImageSrc } from '../../test'
 
 /** Raund ekrani — progress, savol va variantlar.
  *  To'g'ri variant FAQAT server ack/reveal'dan ko'rsatiladi (lokal kalit yo'q). */
@@ -48,7 +49,7 @@ export function RoundScreen({ tt, q, deadline, roundPct, timeLeft, roundIndex, r
       <MathText as="p" text={q.text} className="text-base sm:text-lg font-bold text-center mb-5 leading-snug text-pfg max-w-2xl mx-auto" />
       {q.image && (
         <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-pcard shadow-xs max-w-xl mx-auto">
-          <img src={q.image} alt={tt('duelQuestionImage')} loading="lazy"
+          <img src={formatImageSrc(q.image)} alt={tt('duelQuestionImage')} loading="lazy"
             className="max-w-full max-h-[45vh] w-auto h-auto object-contain" />
         </div>
       )}

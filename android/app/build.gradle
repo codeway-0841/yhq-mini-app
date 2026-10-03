@@ -48,9 +48,22 @@ android {
         }
     }
     // APK chiqish fayl nomi: kivvi-debug.apk / kivvi-release.apk
+    // Og'ir media fayllar (yhq, math-print, physics-print, kutubxona) CDN orqali
+    // yuklanadi — APK hajmini 18-20MB ga tushirish uchun bundle ichidan chiqariladi.
     applicationVariants.all { variant ->
         variant.outputs.all {
             outputFileName = "kivvi-${variant.buildType.name}.apk"
+        }
+        variant.mergeAssetsProvider.configure {
+            doLast {
+                delete fileTree(dir: outputDir, includes: [
+                    'public/images/yhq/**',
+                    'public/math-print/**',
+                    'public/physics-print/**',
+                    'public/kutubxona/**',
+                    'public/mediapipe/**'
+                ])
+            }
         }
     }
 }

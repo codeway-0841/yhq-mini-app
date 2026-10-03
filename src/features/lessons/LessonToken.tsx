@@ -16,7 +16,7 @@ export function PathMascot({ animation = 'idle' }: { animation?: PathMascotAnima
   return <span className="learning-mascot" data-animation={animation} aria-hidden="true">
     <img
       className="learning-mascot-img"
-      src="/images/kivvi-mascot-cutout.png"
+      src="/images/kivvi-mascot-cutout.webp"
       alt=""
       draggable={false}
       loading="eager"

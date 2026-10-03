@@ -14,7 +14,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
 import { api }              from '../../shared/api'
 import { config }           from '../../shared/config'
-import { ServerPracticePage } from '../test'
+import { ServerPracticePage, formatImageSrc } from '../test'
 import { type SRCard }      from '../../shared/lib/spaced-repetition'
 import { shuffleArray }     from '../../shared/lib/seeded'
 import { isEffectivePremium } from '../../../shared/test-access'
@@ -285,7 +285,7 @@ export default function AdaptivePage() {
         <MathText as="p" text={q.text} className="text-base font-semibold leading-snug mb-5" />
         {q.image && (
           <div className="rounded-2xl overflow-hidden mb-4 flex items-center justify-center bg-psurface shadow-xs">
-            <img src={q.image} alt={q.text} loading="lazy"
+            <img src={formatImageSrc(q.image)} alt={q.text} loading="lazy"
               className="max-w-full max-h-[55vh] w-auto h-auto object-contain" />
           </div>
         )}

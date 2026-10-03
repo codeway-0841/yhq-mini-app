@@ -23,6 +23,7 @@ import { useT } from '@/shared/i18n'
 import { useToast } from '@/shared/components/ToastContainer'
 import { PageHeader } from '@/shared/components/ui/page-header'
 import { Button } from '@/shared/components/ui/button'
+import { formatImageSrc } from '../test'
 import { Input } from '@/shared/components/ui/input'
 import { Dialog, DialogHeader, DialogTitle, DialogBody, DialogFooter } from '@/shared/components/ui/dialog'
 import { goBack } from '@/shared/lib/navigation'
@@ -516,7 +517,7 @@ export default function CamAiPage() {
           </p>
           <p className="text-[16px] font-semibold leading-snug text-pfg">{currentQuestion.text}</p>
           {currentQuestion.image && (
-            <img src={currentQuestion.image} alt="" className="mt-3 max-h-44 rounded-xl object-contain" />
+            <img src={formatImageSrc(currentQuestion.image)} alt="" className="mt-3 max-h-44 rounded-xl object-contain" />
           )}
           {currentQuestion.options.length > 0 && (
             <ul className="mt-3 space-y-1.5">

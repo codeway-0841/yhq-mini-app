@@ -12,14 +12,7 @@ import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import MathText from '../../../shared/components/MathText'
 import { cn } from '../../../shared/lib/cn'
-
-function formatImageSrc(src?: string | null): string | undefined {
-  if (!src) return undefined
-  if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('data:') || src.startsWith('/')) {
-    return src
-  }
-  return `/${src}`
-}
+import { formatImageSrc } from '../hooks/useImagePreload'
 
 export interface ExamReviewItem {
   question: Question
