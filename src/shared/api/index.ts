@@ -1349,6 +1349,56 @@ export const api = {
       ok: true; roomName: string
       participants: { identity: string; name: string; audioTracks: number; audioMuted: boolean; videoTracks: number; joinedAt: string }[]
     }>('GET', `/live/rooms/${id}/cloud-health`),
+
+  // ── Reviews ─────────────────────────────────────────────────────────────
+  getReviews: (params?: { subjectId?: string; rating?: number; limit?: number; offset?: number }) => {
+    const qs = new URLSearchParams()
+    if (params?.subjectId) qs.set('subjectId', params.subjectId)
+    if (params?.rating) qs.set('rating', String(params.rating))
+    if (params?.limit) qs.set('limit', String(params.limit))
+    if (params?.offset) qs.set('offset', String(params.offset))
+    const qStr = qs.toString()
+    return request<ReviewsResponse>('GET', `/reviews${qStr ? `?${qStr}` : ''}`)
+  },
+  createReview: (data: { subjectId?: string; rating: number; title: string; comment: string }) =>
+    request<{ ok: boolean; review: ReviewItem }>('POST', '/reviews', data),
+  toggleHelpfulReview: (id: number) =>
+    request<{ ok: boolean; liked: boolean }>('POST', `/reviews/${id}/helpful`),
+}
+
+export interface ReviewUser {
+  id: string
+  firstName: string
+  lastName: string | null
+  photoUrl: string | null
+  avatarFrame: string | null
+}
+
+export interface ReviewItem {
+  id: number
+  rating: number
+  title: string
+  comment: string
+  subjectId: string | null
+  helpfulCount: number
+  createdAt: string
+  flag?: string
+  location?: string
+  appVersion?: string
+  user: ReviewUser
+}
+
+export interface ReviewSummary {
+  average: number
+  total: number
+  distribution: Record<number, number>
+}
+
+export interface ReviewsResponse {
+  ok: boolean
+  reviews: ReviewItem[]
+  summary: ReviewSummary
+  likedIds: number[]
 }
 
 export interface PaymentHistoryRow {

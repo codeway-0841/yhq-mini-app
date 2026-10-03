@@ -67,6 +67,7 @@ const wonderStudioChunk    = () => import('./features/wonder-studio/WonderStudio
 const mathBoardChunk       = () => import('./features/math-board/MathBoardPage')
 const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
+const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -106,6 +107,7 @@ const MathBoardPage    = lazy(mathBoardChunk)
 const CamAiPage        = lazy(camaiChunk)
 const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).default }))
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
+const ReviewsPage      = lazy(reviewsChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -118,7 +120,7 @@ const routeChunkPrefetchers = [
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
-  graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk,
+  graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk, reviewsChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk,
 ]
@@ -424,6 +426,7 @@ export default function App() {
           <Route path="/wonder" element={<WonderStudioPage />} />
           <Route path="/ai-tutor"   element={<SnapSolveHub />} />
           <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
+          <Route path="/sharhlar"   element={<ReviewsPage />} />
           <Route path="/admin"      element={<AdminPage />} />
           <Route path="*"           element={<NotFound />} />
         </Routes>

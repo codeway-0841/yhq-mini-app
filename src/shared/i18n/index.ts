@@ -921,6 +921,12 @@ const UZ = {
   liveStatusEnding: "Tugatilmoqda", liveEndingHint: "Efir tugatilmoqda — biroz kuting",
   liveRevoke: "Ovozini o'chirish", liveCloudError: "Cloud tekshiruvi mavjud emas",
   liveDbgRemote: "uzoqda", liveDbgAudio: "audio", liveDbgCloud: "cloud",
+  // Sharhlar (Reviews)
+  reviewsTitle: "Sharhlar",
+  reviewsSubmitSuccess: "Fikringiz uchun rahmat! Sharhingiz darhol e'lon qilindi",
+  reviewsWriteTitle: "Sharh qoldirish",
+  reviewsEmptyTitle: "Hozircha sharhlar yo‘q",
+  reviewsEmptyDesc: "Birinchi bo‘lib o‘z fikringizni bildiring!",
 } as const
 
 type Keys = keyof typeof UZ
@@ -1835,6 +1841,12 @@ const RU: Record<Keys, string> = {
   liveStatusEnding: "Завершается", liveEndingHint: "Эфир завершается — подождите",
   liveRevoke: "Отключить звук", liveCloudError: "Проверка Cloud недоступна",
   liveDbgRemote: "удалённо", liveDbgAudio: "аудио", liveDbgCloud: "cloud",
+  // Отзывы
+  reviewsTitle: "Отзывы",
+  reviewsSubmitSuccess: "Спасибо за ваш отзыв! Он сразу опубликован",
+  reviewsWriteTitle: "Оставить отзыв",
+  reviewsEmptyTitle: "Пока нет отзывов",
+  reviewsEmptyDesc: "Будьте первым, кто оставит свой отзыв!",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

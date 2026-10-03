@@ -1270,3 +1270,44 @@ export const liveRecordings = pgTable('live_recordings', {
   check('chk_live_recordings_status', sql`${t.status} IN ('starting','started','stopping','ready','failed')`),
 ])
 
+// ─── SHARHLAR (Reviews) ──────────────────────────────────────────────────────
+
+/**
+ * Foydalanuvchi sharhlari — platformaga yoki alohida fanga baho va izoh.
+ * status: 'pending' → admin ko'rib chiqadi → 'approved' | 'rejected'.
+ * Har user faqat 1 ta faol sharh (approved/pending) — ikkinchisini yozmaydi.
+ */
+export const reviews = pgTable('reviews', {
+  id:        serial('id').primaryKey(),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  /** Qaysi fan haqida (null = umumiy platformaga) */
+  subjectId: text('subject_id'),
+  rating:    integer('rating').notNull(),
+  title:     text('title').notNull(),
+  comment:   text('comment').notNull(),
+  /** pending → admin tekshiradi → approved | rejected */
+  status:    text('status').$type<'pending' | 'approved' | 'rejected'>().default('pending').notNull(),
+  /** Nechta kishi "foydali" deb belgilagan */
+  helpfulCount: integer('helpful_count').default(0).notNull(),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+  updatedAt: timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
+}, (t) => [
+  index('idx_reviews_user').on(t.userId),
+  index('idx_reviews_status_created').on(t.status, t.createdAt.desc()),
+  index('idx_reviews_subject').on(t.subjectId),
+  check('chk_reviews_rating_range', sql`${t.rating} >= 1 AND ${t.rating} <= 5`),
+  check('chk_reviews_title_len', sql`char_length(${t.title}) BETWEEN 1 AND 100`),
+  check('chk_reviews_comment_len', sql`char_length(${t.comment}) BETWEEN 3 AND 1000`),
+  check('chk_reviews_helpful_nonneg', sql`${t.helpfulCount} >= 0`),
+  check('chk_reviews_status_valid', sql`${t.status} IN ('pending','approved','rejected')`),
+])
+
+/** Foydali ovoz berish — user bitta sharhga faqat 1 marta ovoz beradi. */
+export const reviewHelpful = pgTable('review_helpful', {
+  reviewId:  integer('review_id').notNull().references(() => reviews.id, { onDelete: 'cascade' }),
+  userId:    text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.reviewId, t.userId] }),
+])
+

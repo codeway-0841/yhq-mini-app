@@ -50,6 +50,7 @@ import graphsRouter       from './modules/graphs/graphs.router'
 import mathBoardRouter    from './modules/math-board/math-board.router'
 import liveRouter          from './modules/live/live.router'
 import { paymentRouter }  from './modules/payments/payment.router'
+import reviewsRouter      from './modules/reviews/reviews.router'
 
 export function createApp() {
   const app = express()
@@ -211,6 +212,7 @@ export function createApp() {
   app.use('/api', mathBoardRouter)
   app.use('/api', liveRouter)
   app.use('/api/payments', paymentRouter)
+  app.use('/api', reviewsRouter)
 
   // 404 catch-all for unmatched /api routes
   app.use('/api', (_req, res) => {

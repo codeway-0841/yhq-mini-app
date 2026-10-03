@@ -405,6 +405,14 @@ export default function Profil() {
           onPress={() => setShowPromoModal(true)}
         />
 
+        <Item
+          icon={Star}
+          iconColor="#EAB308"
+          label={tt('reviewsTitle')}
+          right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
+          onPress={() => navigate('/sharhlar')}
+        />
+
         <Item icon={BarChart2} label={tt('statsTitle')}
           onPress={() => navigate('/statistika')} />
 
