@@ -13,7 +13,7 @@ export const DEFAULT_WONDER_COURSES: WonderCourse[] = [
     totalXp: 450,
     author: 'Barbara Oakley, Terrence Sejnowski, and Alistair McConville',
     category: 'Productivity',
-    localCoverImage: '/courses/covers/cognitive-psychology-for-daily.png',
+    localCoverImage: '/courses/covers/cognitive-psychology-for-daily.webp',
     sections: [
       {
         id: 'sec-brain',

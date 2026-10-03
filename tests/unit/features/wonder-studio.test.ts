@@ -166,7 +166,7 @@ describe('Wonder Studio Feature Tests', () => {
       const course = DEFAULT_WONDER_COURSES.find((c) => c.id === courseId)
       expect(course).toBeDefined()
       expect(course?.title.length).toBeGreaterThan(0)
-      expect(course?.localCoverImage).toMatch(/^\/courses\/covers\/.*\.png$/)
+      expect(course?.localCoverImage).toMatch(/^\/courses\/covers\/.*\.(png|webp)$/)
       expect(course?.author).toBeDefined()
       expect(course?.category).toBeDefined()
       expect(course?.sections.length).toBeGreaterThan(0)

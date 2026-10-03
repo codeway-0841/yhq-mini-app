@@ -18,7 +18,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/a2e165c6-c313-4fd6-b7a7-e8852dba01a7.png",
-    "localCoverImage": "/courses/covers/how-to-design-whatsapp.png",
+    "localCoverImage": "/courses/covers/how-to-design-whatsapp.webp",
     "sections": [
       {
         "id": "how-to-design-whatsapp-sec-1",
@@ -1010,7 +1010,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/3deb6530-8bd5-4c80-9a97-96aca3521407.png",
-    "localCoverImage": "/courses/covers/the-art-of-meaningful.png",
+    "localCoverImage": "/courses/covers/the-art-of-meaningful.webp",
     "sections": [
       {
         "id": "the-art-of-meaningful-sec-1",
@@ -1854,7 +1854,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/82e5abbd-4598-4d83-a2d2-f29b5238018a.png",
-    "localCoverImage": "/courses/covers/architecture-patterns-and-trade.png",
+    "localCoverImage": "/courses/covers/architecture-patterns-and-trade.webp",
     "sections": [
       {
         "id": "architecture-patterns-and-trade-sec-1",
@@ -2616,7 +2616,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/the-design-of-everyday-things.png",
-    "localCoverImage": "/courses/covers/everyday-design-fundamentals-5349d3c629bce3acfc6cd7af.png",
+    "localCoverImage": "/courses/covers/everyday-design-fundamentals-5349d3c629bce3acfc6cd7af.webp",
     "sections": [
       {
         "id": "everyday-design-fundamentals-5349d3c629bce3acfc6cd7af-sec-1",
@@ -4742,7 +4742,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/a8399637-56cf-414f-9b44-c3b23461f971-478662a9-a28f-4a55-9c1f-b4f8a395921e.png",
-    "localCoverImage": "/courses/covers/cdn-for-engineers-beyond.png",
+    "localCoverImage": "/courses/covers/cdn-for-engineers-beyond.webp",
     "sections": [
       {
         "id": "cdn-for-engineers-beyond-sec-1",
@@ -5504,7 +5504,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/6f1ac83d-317c-47c8-8ee0-55ed146b09fc-f845ffe8-c589-4d34-a273-ef1c9131b272.png",
-    "localCoverImage": "/courses/covers/asking-good-questions-as.png",
+    "localCoverImage": "/courses/covers/asking-good-questions-as.webp",
     "sections": [
       {
         "id": "asking-good-questions-as-sec-1",
@@ -6192,7 +6192,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/cbf83a19-127b-4249-a249-f021908c5618.png",
-    "localCoverImage": "/courses/covers/ai-software-engineering-for.png",
+    "localCoverImage": "/courses/covers/ai-software-engineering-for.webp",
     "sections": [
       {
         "id": "ai-software-engineering-for-sec-1",
@@ -7488,7 +7488,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/7f72fa54-db0d-4559-930a-e137649ca115.png",
-    "localCoverImage": "/courses/covers/enterprise-llm-architecture-and.png",
+    "localCoverImage": "/courses/covers/enterprise-llm-architecture-and.webp",
     "sections": [
       {
         "id": "enterprise-llm-architecture-and-sec-1",
@@ -8998,7 +8998,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/the-mom-test.png",
-    "localCoverImage": "/courses/covers/the-mom-test-for.png",
+    "localCoverImage": "/courses/covers/the-mom-test-for.webp",
     "sections": [
       {
         "id": "the-mom-test-for-sec-1",
@@ -11132,7 +11132,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/offline/solve-the-rubiks-cube-nukdx3.png",
-    "localCoverImage": "/courses/covers/solve-the-rubiks-cube.png",
+    "localCoverImage": "/courses/covers/solve-the-rubiks-cube.webp",
     "sections": [
       {
         "id": "solve-the-rubiks-cube-sec-1",
@@ -12494,7 +12494,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/09b8993b-4b60-4276-8610-98abda0a58d3.png",
-    "localCoverImage": "/courses/covers/securing-software-development-lifecycles.png",
+    "localCoverImage": "/courses/covers/securing-software-development-lifecycles.webp",
     "sections": [
       {
         "id": "securing-software-development-lifecycles-sec-1",
@@ -13182,7 +13182,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/8298858f-0b29-47e3-9af2-8e532b55da44.png",
-    "localCoverImage": "/courses/covers/penetration-testing-for-azure.png",
+    "localCoverImage": "/courses/covers/penetration-testing-for-azure.webp",
     "sections": [
       {
         "id": "penetration-testing-for-azure-sec-1",
@@ -14100,7 +14100,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/32cdc2c8-7305-40fd-b70a-3c55a6fd3460.png",
-    "localCoverImage": "/courses/covers/beginner-long-term-investing.png",
+    "localCoverImage": "/courses/covers/beginner-long-term-investing.webp",
     "sections": [
       {
         "id": "beginner-long-term-investing-sec-1",
@@ -15018,7 +15018,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/13b709e6-74cd-471e-9294-dcb503d7741f.png",
-    "localCoverImage": "/courses/covers/cognitive-psychology-for-daily.png",
+    "localCoverImage": "/courses/covers/cognitive-psychology-for-daily.webp",
     "sections": [
       {
         "id": "cognitive-psychology-for-daily-sec-1",
@@ -15862,7 +15862,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/user/08955754-b4ff-4d62-8801-5889b0edc675.png",
-    "localCoverImage": "/courses/covers/the-creative-technologist-playbook.png",
+    "localCoverImage": "/courses/covers/the-creative-technologist-playbook.webp",
     "sections": [
       {
         "id": "the-creative-technologist-playbook-sec-1",
@@ -16706,7 +16706,7 @@ export const WONDER_CATALOG_COURSES: WonderCourse[] = [
     "author": "Wondering",
     "category": "Software Engineering",
     "coverImage": "https://mvhwfzawowaxyivkmjdv.supabase.co/storage/v1/object/public/course-covers/public/deep-dive-into-llms-like-chatgpt-andrej-karpathy.png",
-    "localCoverImage": "/courses/covers/llm-fundamentals-dd100aabe0be6e58837f4b31.png",
+    "localCoverImage": "/courses/covers/llm-fundamentals-dd100aabe0be6e58837f4b31.webp",
     "sections": [
       {
         "id": "llm-fundamentals-dd100aabe0be6e58837f4b31-sec-1",

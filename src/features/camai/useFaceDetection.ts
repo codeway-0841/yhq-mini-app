@@ -14,7 +14,8 @@ import { matchDetectionsToSlots, computeFaceCrop, type FaceBox, type Slot } from
 
 export type CamStatus = 'idle' | 'loading' | 'camera' | 'running' | 'denied' | 'error'
 
-const WASM_BASE = '/mediapipe/wasm'
+// WASM rasmiy CDN orqali yuklanadi (APK va web bundle'dan 34MB tejaydi, 1 yil immutable keshlangan)
+const WASM_BASE = 'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@1.0.1/wasm'
 const MODEL_PATH = '/models/blaze_face_short_range.tflite'
 
 interface DetectorModule {
