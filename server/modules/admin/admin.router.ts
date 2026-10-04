@@ -417,6 +417,34 @@ router.post(
   }),
 )
 
+router.get(
+  '/admin/ai/blueprints',
+  wrap(async (_req, res) => {
+    const { listAvailableBlueprints } = await import('./blueprints')
+    res.json({ ok: true, blueprints: listAvailableBlueprints() })
+  }),
+)
+
+router.post(
+  '/admin/ai/generate-exam-variant',
+  wrap(async (req, res) => {
+    const { GenerateExamVariantInputSchema, generateExamVariant } = await import(
+      './exam-variant-generator.service'
+    )
+    const input = GenerateExamVariantInputSchema.safeParse(req.body)
+    if (!input.success) {
+      throw new AppError(
+        400,
+        'Validation failed',
+        input.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`).join('; ')
+      )
+    }
+    const variant = await generateExamVariant(input.data)
+    res.json({ ok: true, variant })
+  }),
+)
+
+
 // ── SMS MARKETING (FAQAT sms_opt_in userlar) ──
 
 const SmsCampaignSchema = z.object({
