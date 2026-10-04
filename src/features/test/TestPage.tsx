@@ -62,11 +62,11 @@ export default function TestPage() {
   const questionsLoaded  = useQuestionsStore((s) => s.loaded)
   const questionsError   = useQuestionsStore((s) => s.error)
 
+  const subjectId      = useSubjectStore((s) => s.subjectId)
   const mode           = (location.state?.mode as string | undefined) ?? null
-  const examPreset     = resolveExamMode(mode)
+  const examPreset     = resolveExamMode(mode, subjectId)
   const isOfficialExam = Boolean(examPreset) || mode === 'exam'
 
-  const subjectId  = useSubjectStore((s) => s.subjectId)
   const stateTitle = location.state?.title as string | undefined
   // Capture before save effects run, so mount cannot overwrite saved answers before restore.
   // eslint-disable-next-line react-hooks/exhaustive-deps -- Re-capture only when a new route/subject starts.
@@ -678,6 +678,7 @@ export default function TestPage() {
         onGoToQuestion={handleGoToQuestion}
         earnedXp={earnedXpTotal}
         earnedCoins={earnedCoinsTotal}
+        examPresetId={examPreset?.id ?? (mode?.startsWith('exam:') ? mode.slice('exam:'.length) : null)}
 
         showSettings={showSettings}
         onCloseSettings={() => setShowSettings(false)}

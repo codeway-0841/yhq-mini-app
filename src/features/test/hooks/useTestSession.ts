@@ -125,7 +125,7 @@ export function useTestSession(params: UseTestSessionParams) {
     shuffleOptions = false,
   } = params
 
-  const examPreset = resolveExamMode(mode)
+  const examPreset = resolveExamMode(mode, subjectId)
   const sessionKey = makeSessionKey(mode, questionIds)
 
   // ── Resumable session — activeQuestions computation ──
@@ -189,7 +189,18 @@ export function useTestSession(params: UseTestSessionParams) {
       options: shuffleArray(q.options),
     }))
   // eslint-disable-next-line react-hooks/exhaustive-deps -- locationKey QASDDAN: yangi aralashtirish trigger'i
-  }, [questionIds, mode, questions, locationKey, sessionKey, subjectId, examPreset, shuffleOptions])
+  }, [
+    questionIds,
+    mode,
+    questions,
+    locationKey,
+    sessionKey,
+    subjectId,
+    examPreset?.id,
+    examPreset?.questionCount,
+    examPreset?.durationMinutes,
+    shuffleOptions,
+  ])
 
   // Backward compatibility: hook har doim unconditional chaqiriladi,
   // guard mantiqi hook ichidagi effect'da bajariladi (Rules of Hooks).

@@ -107,7 +107,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
         </ModalHeaderRow>
 
         {/* ── 1. Yulduzli Baholash (Interactive 5 Stars) ───────────────────── */}
-        <div className="bg-pcard rounded-2xl p-3.5 mb-3.5 text-center border border-pline shadow-2xs relative z-10">
+        <div className="bg-pcard rounded-2xl p-3.5 mb-3.5 text-center shadow-2xs relative z-10">
           <div className="flex justify-center items-center gap-2 mb-1.5">
             {[1, 2, 3, 4, 5].map((n) => {
               const filled = n <= rating
@@ -209,7 +209,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
                 : 'Qisqa sarlavha (masalan: "Juda foydali bo\'ldi!")'
             }
             maxLength={100}
-            className="w-full px-4 py-2.5 rounded-2xl bg-pcard border border-pline text-sm font-semibold text-pfg placeholder:text-psubtle outline-none focus:border-pprimary transition-all"
+            className="w-full px-4 py-2.5 rounded-2xl bg-pcard shadow-2xs text-sm font-semibold text-pfg placeholder:text-psubtle outline-none focus:ring-1 focus:ring-pprimary transition-all"
           />
         </div>
 
@@ -225,7 +225,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
             }
             maxLength={1000}
             rows={4}
-            className="w-full px-4 py-2.5 rounded-2xl bg-pcard border border-pline text-sm font-normal text-pfg placeholder:text-psubtle outline-none focus:border-pprimary transition-all resize-none leading-relaxed"
+            className="w-full px-4 py-2.5 rounded-2xl bg-pcard shadow-2xs text-sm font-normal text-pfg placeholder:text-psubtle outline-none focus:ring-1 focus:ring-pprimary transition-all resize-none leading-relaxed"
           />
           <div className="flex justify-between items-center px-1 text-[11px] text-psubtle mt-1">
             <span>{comment.length >= 3 ? '✓ Yetarli uzunlik' : 'Kamida 3 ta belgi'}</span>

@@ -578,6 +578,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
             topicBreakdown={topicBreakdown}
             earnedXp={earnedXpTotal}
             earnedCoins={earnedCoinsTotal}
+            examPresetId={selector.type === 'exam' ? selector.presetId : null}
             onRetry={() => void retryTest()}
             onFinish={() => { setShowResults(false); goBack(navigate) }}
             onGoToQuestion={goToResultQuestion}

@@ -95,7 +95,7 @@ async function adaptiveOrderedIds(
   return premium ? ordered : ordered.slice(0, ADAPTIVE_FREE_SESSION_LIMIT)
 }
 
-function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number {
+function sessionTtlMinutes(selector: CreateTestSessionInput['selector'], subjectId?: string): number {
   if (selector.type === 'marathon') {
     return config.testSessions.marathonTtlMinutes
   }
@@ -104,7 +104,7 @@ function sessionTtlMinutes(selector: CreateTestSessionInput['selector']): number
     return config.testSessions.ttlMinutes
   }
   const productMinutes = selector.type === 'exam'
-    ? getExamPreset(selector.presetId)?.durationMinutes ?? 25
+    ? getExamPreset(selector.presetId, subjectId)?.durationMinutes ?? 25
     : selector.type === 'mock' || selector.type === 'topic' || selector.type === 'ticket'
       || selector.type === 'lesson' || selector.type === 'module'
       || selector.type === 'saved' || selector.type === 'mistakes' || selector.type === 'single'
@@ -345,7 +345,7 @@ export const testSessionsService = {
               ? 1
             : input.selector.type === 'mock'
               ? 20
-              : getExamPreset(input.selector.presetId)!.questionCount
+              : getExamPreset(input.selector.presetId, input.subjectId)!.questionCount
       if (input.selector.type !== 'topic' && candidateIds.length < requestedCount) {
         throw new AppError(409, 'not_enough_questions')
       }
@@ -359,7 +359,7 @@ export const testSessionsService = {
         ? candidateIds
         : selectQuestionIds(candidateIds, selectionSeed, requestedCount)
       const initialIssued = Math.min(questionIds.length, config.testSessions.bufferSize) - 1
-      const expiresAt = new Date(Date.now() + sessionTtlMinutes(input.selector) * 60_000)
+      const expiresAt = new Date(Date.now() + sessionTtlMinutes(input.selector, input.subjectId) * 60_000)
       const row = await testSessionsRepository.create({
         id: randomUUID(),
         userId,

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { RotateCcw, Share2, X, BookOpen, Award, ImageDown, Check, Minus, Sparkles } from 'lucide-react'
+import { RotateCcw, Share2, X, BookOpen, Award, ImageDown, Check, Minus, Sparkles, Landmark } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -21,6 +21,7 @@ import { checkAndCelebrateAchievements, getCelebratedBadgeIds, markBadgesCelebra
 import { ACHIEVEMENTS } from '../../shared/config/achievements'
 import { useAchievementCelebrationStore } from '../../shared/store/useAchievementCelebrationStore'
 import type { TopicBreakdownItem } from './topic-diagnosis'
+import { calculateRashScore, calculateDtmBenefit } from '../../../shared/milliy-sertifikat'
 
 export type QuestionResult = { questionId: number; status: 'correct' | 'incorrect' | 'unanswered' | 'pending' }
 
@@ -36,6 +37,7 @@ export default function ResultsModal({
   disqualifiedByCheat = false,
   earnedXp,
   earnedCoins,
+  examPresetId,
 }: {
   results: QuestionResult[]
   onRetry: () => void
@@ -54,18 +56,28 @@ export default function ResultsModal({
   earnedXp?: number
   /** Olingan authoritative tangalar (serverdan) */
   earnedCoins?: number
+  /** Rasmiy imtihon preset identifikatori (masalan: 'milliy-sertifikat') */
+  examPresetId?: string | null
 }) {
   const [showCertificate, setShowCertificate] = useState(false)
   const [sharingImage, setSharingImage] = useState(false)
   const [imageSentToBot, setImageSentToBot] = useState(false)
-  const tt           = useT(useAppStore((s) => s.settings.language))
+  const lang       = useAppStore((s) => s.settings.language)
+  const isRu       = lang === 'ru'
+  const tt         = useT(lang)
   const total      = results.length
   const correct    = results.filter((r) => r.status === 'correct').length
   const wrong      = results.filter((r) => r.status === 'incorrect').length
   const pending    = results.filter((r) => r.status === 'pending').length
   const unanswered = results.filter((r) => r.status === 'unanswered' || r.status === 'pending').length
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
-  const passed     = percent >= threshold && !disqualifiedByCheat
+
+  const isMilliySertifikat = examPresetId === 'milliy-sertifikat'
+  const rashScore = isMilliySertifikat ? calculateRashScore(correct, total) : 0
+  const dtmBenefit = isMilliySertifikat ? calculateDtmBenefit(rashScore) : null
+  const passed = isMilliySertifikat
+    ? (dtmBenefit?.isPassed ?? false) && !disqualifiedByCheat
+    : percent >= threshold && !disqualifiedByCheat
 
   /** #48 — natijani RASM qilib ulashish. Muhimlilik tartibi:
    *  1) Web Share (files) — brauzer/tashqi WebView'da ishlaydi
@@ -281,6 +293,110 @@ export default function ResultsModal({
           </div>
         </div>
 
+        {/* Milliy sertifikat rasmiy baholash va DTM imtiyozi kartasi */}
+        {isMilliySertifikat && dtmBenefit && (
+          <div className="mb-4 bg-pcard rounded-2xl p-4 shadow-2xs relative z-10">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-[11px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full bg-psurface text-pmuted">
+                Milliy sertifikat
+              </span>
+              <span className="text-[12px] font-bold text-pfg tabular-nums">
+                Maks. 75 ball
+              </span>
+            </div>
+
+            {/* Daraja va ball banner */}
+            <div
+              className="rounded-2xl p-4 mb-3 flex items-center justify-between shadow-2xs"
+              style={{
+                backgroundColor: dtmBenefit.gradeMeta?.bg ?? 'rgba(239, 68, 68, 0.1)',
+              }}
+            >
+              <div>
+                <span className="text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  {isRu ? 'Уровень' : 'Rasmiy daraja'}
+                </span>
+                <div
+                  className="text-2xl font-black tracking-tight mt-0.5"
+                  style={{ color: dtmBenefit.gradeMeta?.color ?? 'var(--p-danger)' }}
+                >
+                  {dtmBenefit.grade ? `${dtmBenefit.grade} daraja` : (isRu ? 'Сертификат не выдается' : 'Sertifikat berilmaydi')}
+                </div>
+                <p className="text-[12px] font-semibold text-pfg opacity-90 mt-1">
+                  {isRu ? dtmBenefit.summaryRu : dtmBenefit.summaryUz}
+                </p>
+              </div>
+
+              <div className="text-right shrink-0">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  {isRu ? 'Балл' : 'Ball'}
+                </span>
+                <div className="text-2xl font-black tabular-nums text-pfg">
+                  {dtmBenefit.rashScore}
+                  <span className="text-sm font-semibold text-pmuted">/75</span>
+                </div>
+                <span className="text-[11px] font-semibold text-pmuted">
+                  {percent}% aniqlik
+                </span>
+              </div>
+            </div>
+
+            {/* DTM Imtiyozlari */}
+            <div className="bg-psurface rounded-xl p-3 mb-2 shadow-2xs">
+              <p className="text-[11.5px] font-bold text-pfg mb-2 flex items-center gap-1.5">
+                <Landmark size={15} className="text-pprimary shrink-0" /> {isRu ? 'Льготы DTM:' : 'DTM kirish imtiyozi:'}
+              </p>
+
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="bg-pcard rounded-lg p-2.5 shadow-2xs">
+                  <p className="text-[10.5px] font-medium text-pmuted mb-0.5">
+                    {isRu ? '1-й предмет' : '1-mutaxassislik'}
+                  </p>
+                  <p className="font-bold text-pfg tabular-nums text-[13px]">
+                    {dtmBenefit.isPassed ? `${dtmBenefit.major1Score} / 93` : '0 ball'}
+                  </p>
+                  {dtmBenefit.isPassed && (
+                    <p className="text-[10px] text-psuccess font-semibold mt-0.5">
+                      {dtmBenefit.percentOfMax}% {isRu ? 'макс.' : 'maks.'}
+                    </p>
+                  )}
+                </div>
+
+                <div className="bg-pcard rounded-lg p-2.5 shadow-2xs">
+                  <p className="text-[10.5px] font-medium text-pmuted mb-0.5">
+                    {isRu ? '2-й предмет' : '2-mutaxassislik'}
+                  </p>
+                  <p className="font-bold text-pfg tabular-nums text-[13px]">
+                    {dtmBenefit.isPassed ? `${dtmBenefit.major2Score} / 63` : '0 ball'}
+                  </p>
+                  {dtmBenefit.isPassed && (
+                    <p className="text-[10px] text-psuccess font-semibold mt-0.5">
+                      {dtmBenefit.percentOfMax}% {isRu ? 'макс.' : 'maks.'}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-2.5 pt-2 flex items-center justify-between text-[11px]">
+                <span className="text-pmuted">
+                  {isRu ? 'Обязательный блок:' : 'Majburiy blok:'}
+                </span>
+                <span className={`font-bold ${dtmBenefit.isPassed ? 'text-psuccess' : 'text-pmuted'}`}>
+                  {dtmBenefit.isPassed
+                    ? (isRu ? '100% максимум' : '100% maksimal')
+                    : (isRu ? '0 ball' : '0 ball')}
+                </span>
+              </div>
+            </div>
+
+            <p className="text-[10.5px] text-psubtle text-center mt-1">
+              {isRu
+                ? 'Срок действия — 3 года (Постановление № 646)'
+                : 'Amal qilish muddati — 3 yil (646-son qaror)'}
+            </p>
+          </div>
+        )}
+
         {/* Mavzular kesimida diagnostika — rasmiy imtihon presetlarida */}
         {topicBreakdown && topicBreakdown.length > 0 && (
           <div className="mb-4 bg-pcard rounded-2xl p-4 shadow-2xs relative z-10">
@@ -414,6 +530,8 @@ export default function ResultsModal({
             score={correct}
             total={total}
             percent={percent}
+            grade={dtmBenefit?.grade ?? undefined}
+            rashScore={dtmBenefit?.rashScore ?? undefined}
             onClose={() => setShowCertificate(false)}
           />
         )}

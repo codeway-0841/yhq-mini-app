@@ -22,6 +22,7 @@ interface TestModalsProps {
   onGoToQuestion:      (index: number) => void
   earnedXp?:           number
   earnedCoins?:        number
+  examPresetId?:       string | null
 
   // Settings
   showSettings:        boolean
@@ -64,6 +65,7 @@ export default function TestModals({
   onGoToQuestion,
   earnedXp,
   earnedCoins,
+  examPresetId,
 
   showSettings,
   onCloseSettings,
@@ -103,6 +105,7 @@ export default function TestModals({
           onGoToQuestion={onGoToQuestion}
           earnedXp={earnedXp}
           earnedCoins={earnedCoins}
+          examPresetId={examPresetId}
         />
       )}
 

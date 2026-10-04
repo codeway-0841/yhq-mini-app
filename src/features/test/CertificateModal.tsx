@@ -21,6 +21,8 @@ interface CertificateModalProps {
   percent: number
   /** true — Profil'dagi ko'rgazmali namuna: yuborish/ulashish o'chiq, "Namuna" badge */
   sample?: boolean
+  grade?: string
+  rashScore?: number
   onClose: () => void
 }
 
@@ -36,7 +38,15 @@ function dataUrlToBlob(dataUrl: string): Blob {
   return new Blob([u8arr], { type: mime })
 }
 
-export default function CertificateModal({ score, total, percent, sample = false, onClose }: CertificateModalProps) {
+export default function CertificateModal({
+  score,
+  total,
+  percent,
+  sample = false,
+  grade,
+  rashScore,
+  onClose,
+}: CertificateModalProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const [copied, setCopied] = useState(false)
   const [sendingBot, setSendingBot] = useState(false)
@@ -73,8 +83,10 @@ export default function CertificateModal({ score, total, percent, sample = false
       date: formattedDate,
       certId,
       lang,
+      grade,
+      rashScore,
     })
-  }, [fullName, subjectName, score, total, percent, formattedDate, certId, lang])
+  }, [fullName, subjectName, score, total, percent, formattedDate, certId, lang, grade, rashScore])
 
   /** 1. Telegram Bot orqali to'g'ridan-to'g'ri jo'natish (100% kafolatlangan Telegram usuli) */
   const handleSendToTelegramBot = async () => {

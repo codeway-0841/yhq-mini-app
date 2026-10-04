@@ -13,8 +13,8 @@
 import { resolveExamMode } from '../../../shared/exam-presets'
 
 /** Shared duration for the countdown and dashboard expiry label. */
-export function testDurationSeconds(mode: string | null): number {
-  const preset = resolveExamMode(mode)
+export function testDurationSeconds(mode: string | null, subjectId?: string): number {
+  const preset = resolveExamMode(mode, subjectId)
   if (preset) return preset.durationMinutes * 60
   if (mode === 'marathon') return 300 * 60
   if (mode === 'exam' || mode === 'random20') return 30 * 60

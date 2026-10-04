@@ -59,4 +59,38 @@ describe('resolveExamMode', () => {
     expect(resolveExamMode(null)).toBeNull()
     expect(resolveExamMode(undefined)).toBeNull()
   })
+
+  it('fanlar bo\'yicha Milliy sertifikat spetsifikatsiyasini to\'g\'ri moslaydi', () => {
+    // Matematika: 45 savol / 150 daqiqa
+    expect(getExamPreset('milliy-sertifikat', 'matematika')).toMatchObject({ questionCount: 45, durationMinutes: 150 })
+    expect(resolveExamMode('exam:milliy-sertifikat', 'matematika')).toMatchObject({ questionCount: 45, durationMinutes: 150 })
+
+    // Fizika: 45 savol / 150 daqiqa
+    expect(getExamPreset('milliy-sertifikat', 'fizika')).toMatchObject({ questionCount: 45, durationMinutes: 150 })
+
+    // Tarix: 45 savol / 90 daqiqa
+    expect(getExamPreset('milliy-sertifikat', 'tarix')).toMatchObject({ questionCount: 45, durationMinutes: 90 })
+    expect(resolveExamMode('exam:milliy-sertifikat', 'tarix')).toMatchObject({ questionCount: 45, durationMinutes: 90 })
+
+    // Kimyo: 43 savol / 180 daqiqa
+    expect(getExamPreset('milliy-sertifikat', 'kimyo')).toMatchObject({ questionCount: 43, durationMinutes: 180 })
+
+    // Boshqa fanlar (masalan onatili): default 45 savol / 180 daqiqa
+    expect(getExamPreset('milliy-sertifikat', 'onatili')).toMatchObject({ questionCount: 45, durationMinutes: 180 })
+  })
+
+  it('referensial barqarorlik (Audit H6): getExamPreset va resolveExamMode ayni obyekt referensini qaytaradi', () => {
+    const p1 = getExamPreset('milliy-sertifikat', 'matematika')
+    const p2 = getExamPreset('milliy-sertifikat', 'matematika')
+    expect(p1).toBe(p2) // Same object reference!
+
+    const r1 = resolveExamMode('exam:milliy-sertifikat', 'fizika')
+    const r2 = resolveExamMode('exam:milliy-sertifikat', 'fizika')
+    expect(r1).toBe(r2) // Same object reference!
+
+    const base1 = getExamPreset('attestatsiya')
+    const base2 = getExamPreset('attestatsiya')
+    expect(base1).toBe(base2)
+  })
 })
+

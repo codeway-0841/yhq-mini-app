@@ -16,6 +16,8 @@ export interface CertificateData {
   date: string
   certId: string
   lang?: 'uz' | 'ru'
+  grade?: string
+  rashScore?: number
 }
 
 export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData): void {
@@ -152,20 +154,38 @@ export function drawCertificate(canvas: HTMLCanvasElement, data: CertificateData
   ctx.textAlign = 'left'
   ctx.fillStyle = '#94a3b8'
   ctx.font = '14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText(isRu ? 'ТОЧНОСТЬ:' : 'NATIJA:', cardX + 30, cardY + 34)
+  ctx.fillText(
+    data.rashScore !== undefined
+      ? (isRu ? 'RASH БАЛЛ:' : 'RASH BALL:')
+      : (isRu ? 'ТОЧНОСТЬ:' : 'NATIJA:'),
+    cardX + 30,
+    cardY + 34
+  )
 
   ctx.fillStyle = '#22c55e'
   ctx.font = 'bold 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText(`${data.percent}% (${data.score}/${data.total})`, cardX + 30, cardY + 62)
+  const leftText = data.rashScore !== undefined
+    ? `${data.rashScore}/75 (${data.percent}%)`
+    : `${data.percent}% (${data.score}/${data.total})`
+  ctx.fillText(leftText, cardX + 30, cardY + 62)
 
   ctx.textAlign = 'right'
   ctx.fillStyle = '#94a3b8'
   ctx.font = '14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText(isRu ? 'СТАТУС:' : 'HOLAT:', cardX + cardW - 30, cardY + 34)
+  ctx.fillText(
+    data.grade
+      ? (isRu ? 'УРОВЕНЬ:' : 'DARAJA:')
+      : (isRu ? 'СТАТУС:' : 'HOLAT:'),
+    cardX + cardW - 30,
+    cardY + 34
+  )
 
   ctx.fillStyle = '#f59e0b'
   ctx.font = 'bold 22px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText(isRu ? '✓ СДАНО' : '✓ TOPSHIRILDI', cardX + cardW - 30, cardY + 62)
+  const rightText = data.grade
+    ? `★ ${data.grade} DARAJA`
+    : (isRu ? '✓ СДАНО' : '✓ TOPSHIRILDI')
+  ctx.fillText(rightText, cardX + cardW - 30, cardY + 62)
 
   // 9. Golden Seal (Center bottom)
   const sealX = W / 2
