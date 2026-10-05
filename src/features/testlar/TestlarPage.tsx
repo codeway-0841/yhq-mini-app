@@ -72,11 +72,9 @@ export default function TestlarPage() {
     // AI Suratdan yechish (barcha fanlar uchun)
     { id: 'snap-solve', iconBox: 'camera' as const,
       titleKey: 'snapSolveTitle' as const, meta: tt('snapSolveSubtitle') },
-    // AI Kunlik Test (rustili) — har kuni 2 ta yangi variant (SSOT: shared/ai-daily-test.ts)
-    ...(subjectId === 'rustili'
-      ? [{ id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
-           titleKey: 'aiTestTitle' as const, meta: tt('aiTestMeta'), diff: 'mid' as const }]
-      : []),
+    // Test AI — Rasmiy Milliy sertifikat va Attestatsiya AI variantlari
+    { id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
+      titleKey: 'aiTestTitle' as const, meta: tt('aiTestMeta'), diff: 'mid' as const },
     ...(subjectId === 'yhq'
       ? [
           { id: 'mock',     iconBox: 'cap' as const, danger: true,

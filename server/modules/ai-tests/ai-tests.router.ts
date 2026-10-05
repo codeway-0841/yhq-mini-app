@@ -245,53 +245,52 @@ router.post(
 router.get(
   '/ai-variants',
   wrap(async (req, res) => {
-    const fs = await import('node:fs')
-    const path = await import('node:path')
+    const { getCatalogVariants } = await import('./variants-catalog')
     const subject = typeof req.query.subject === 'string' ? req.query.subject : undefined
 
-    const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
-    const results: Array<{
-      variantId: string
-      subjectId: string
-      examType: string
-      variantNumber: number
-      title: string
-      totalQuestions: number
-      durationMinutes: number
-      specificationSource: string
-      createdAt: string
-    }> = []
+    const catalogList = getCatalogVariants(subject)
+    const map = new Map(catalogList.map((v) => [v.variantId, v]))
 
-    if (fs.existsSync(rootBanksDir)) {
-      const subjectFolders = fs.readdirSync(rootBanksDir)
-      for (const subj of subjectFolders) {
-        if (subject && subj !== subject) continue
-        const variantsDir = path.join(rootBanksDir, subj, 'variants')
-        if (fs.existsSync(variantsDir)) {
-          const files = fs.readdirSync(variantsDir).filter((f) => f.endsWith('.json'))
-          for (const f of files) {
-            try {
-              const content = JSON.parse(fs.readFileSync(path.join(variantsDir, f), 'utf-8'))
-              results.push({
-                variantId: content.variantId || f.replace('.json', ''),
-                subjectId: content.subjectId || subj,
-                examType: content.examType || 'milliy-sertifikat',
-                variantNumber: content.variantNumber || 1,
-                title: content.title || f,
-                totalQuestions: content.totalQuestions || (content.questions?.length ?? 0),
-                durationMinutes: content.durationMinutes || 180,
-                specificationSource: content.specificationSource || '',
-                createdAt: content.createdAt || '',
-              })
-            } catch {
-              // skip unparseable files
+    // Diskdan qo'shimcha yangi variantlarni ham tekshiramiz (agar mavjud bo'lsa)
+    try {
+      const fs = await import('node:fs')
+      const path = await import('node:path')
+      const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
+      if (fs.existsSync(rootBanksDir)) {
+        const subjectFolders = fs.readdirSync(rootBanksDir)
+        for (const subj of subjectFolders) {
+          if (subject && subj !== subject) continue
+          const variantsDir = path.join(rootBanksDir, subj, 'variants')
+          if (fs.existsSync(variantsDir)) {
+            const files = fs.readdirSync(variantsDir).filter((f) => f.endsWith('.json'))
+            for (const f of files) {
+              const vId = f.replace('.json', '')
+              if (map.has(vId)) continue
+              try {
+                const content = JSON.parse(fs.readFileSync(path.join(variantsDir, f), 'utf-8'))
+                map.set(vId, {
+                  variantId: content.variantId || vId,
+                  subjectId: content.subjectId || subj,
+                  examType: content.examType || 'milliy-sertifikat',
+                  variantNumber: content.variantNumber || 1,
+                  title: content.title || f,
+                  totalQuestions: content.totalQuestions || (content.questions?.length ?? 0),
+                  durationMinutes: content.durationMinutes || 180,
+                  specificationSource: content.specificationSource || '',
+                  createdAt: content.createdAt || '',
+                })
+              } catch {
+                // skip
+              }
             }
           }
         }
       }
+    } catch {
+      // filesystem xatosi bo'lsa katalog yetarli
     }
 
-    res.json({ ok: true, variants: results })
+    res.json({ ok: true, variants: Array.from(map.values()) })
   }),
 )
 
@@ -299,21 +298,32 @@ router.get(
 router.get(
   '/ai-variants/:id',
   wrap(async (req, res) => {
-    const fs = await import('node:fs')
-    const path = await import('node:path')
+    const { getCatalogVariantById } = await import('./variants-catalog')
     const variantId = String(req.params.id)
 
-    const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
-    if (fs.existsSync(rootBanksDir)) {
-      const subjectFolders = fs.readdirSync(rootBanksDir)
-      for (const subj of subjectFolders) {
-        const filePath = path.join(rootBanksDir, subj, 'variants', `${variantId}.json`)
-        if (fs.existsSync(filePath)) {
-          const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-          res.json({ ok: true, variant: content })
-          return
+    const staticItem = getCatalogVariantById(variantId)
+    if (staticItem) {
+      res.json({ ok: true, variant: staticItem })
+      return
+    }
+
+    try {
+      const fs = await import('node:fs')
+      const path = await import('node:path')
+      const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
+      if (fs.existsSync(rootBanksDir)) {
+        const subjectFolders = fs.readdirSync(rootBanksDir)
+        for (const subj of subjectFolders) {
+          const filePath = path.join(rootBanksDir, subj, 'variants', `${variantId}.json`)
+          if (fs.existsSync(filePath)) {
+            const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+            res.json({ ok: true, variant: content })
+            return
+          }
         }
       }
+    } catch {
+      // skip
     }
 
     throw new AppError(404, 'VARIANT_NOT_FOUND')

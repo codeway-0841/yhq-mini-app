@@ -74,6 +74,8 @@ describe('auth.middleware — public route allowlist (C1)', () => {
     expect(isPublicGet(req('GET', '/topics'))).toBe(true)
     // v2 ticket manifest — faqat sonlar, savol kontenti yo'q (public CDN)
     expect(isPublicGet(req('GET', '/ticket-catalog'))).toBe(true)
+    // Rasmiy AI imtihon variantlari (public CDN)
+    expect(isPublicGet(req('GET', '/ai-variants'))).toBe(true)
     // R2 kontent tokeni (qoida 8h) — ANONIM YO'Q: anti-scrape userId kvotasi
     // + audit izi shart, shuning uchun hech qanday public ro'yxatga KIRMAYDI.
     expect(isPublicAuthPost(req('POST', '/content/token'))).toBe(false)

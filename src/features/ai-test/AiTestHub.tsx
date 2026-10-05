@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom'
 import { Sparkles, Lock, CheckCircle2, Award, Clock } from 'lucide-react'
 import { api, type AiTestTodayItem } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
@@ -20,6 +19,7 @@ interface AiVariantMeta {
   variantId: string
   subjectId: string
   examType: string
+  variantNumber: number
   title: string
   totalQuestions: number
   durationMinutes: number
@@ -30,7 +30,6 @@ export default function AiTestHub() {
   const navigate = useNavigate()
   const settings  = useAppStore((s) => s.settings)
   const isPremium = useAppStore((s) => s.tariff === 'premium')
-  const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
 
   const [tests, setTests] = useState<AiTestTodayItem[] | null>(null)
@@ -44,12 +43,12 @@ export default function AiTestHub() {
       .then((r) => { if (!cancelled) setTests(r.tests) })
       .catch(() => { if (!cancelled) setError(true) })
 
-    api.getAiVariants(subjectId)
+    api.getAiVariants()
       .then((r) => { if (!cancelled) setVariants(r.variants) })
       .catch(() => {})
 
     return () => { cancelled = true }
-  }, [subjectId])
+  }, [])
 
   const open = (t: AiTestTodayItem) => {
     track('ai_test_open', { slot: t.slot, attempted: t.attempted })
@@ -131,7 +130,10 @@ export default function AiTestHub() {
                         <span className="text-[10px] font-bold uppercase tracking-wider text-ppurple">
                           {v.examType === 'milliy-sertifikat' ? 'Milliy Sertifikat' : 'Attestatsiya'}
                         </span>
-                        <span className="text-[10px] text-psubtle">· 1-variant</span>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-psurface text-psubtle font-semibold">
+                          {v.subjectId === 'rustili' ? 'Rus tili' : v.subjectId}
+                        </span>
+                        <span className="text-[10px] text-psubtle">· {v.variantNumber}-variant</span>
                       </div>
                       <p className="text-[15px] font-semibold text-pfg leading-snug mt-0.5">
                         {v.title}

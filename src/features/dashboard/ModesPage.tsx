@@ -19,6 +19,7 @@ import {
   PenLine,
   ScanFace,
   Radio,
+  Sparkles,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -81,6 +82,7 @@ export default function ModesPage() {
     ...(['matematika', 'fizika'].includes(subject.id)
       ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
       : []),
+    { icon: Sparkles,      label: 'Test AI',           onClick: () => navigate('/ai-test') },
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
     { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
