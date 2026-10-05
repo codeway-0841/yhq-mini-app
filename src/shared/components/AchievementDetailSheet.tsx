@@ -7,6 +7,7 @@ import { shareUrl } from '../../platform/telegram'
 import { config } from '../config'
 import { cn } from '../lib/cn'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
+import { CoinIcon } from './CoinIcon'
 import DialogOverlay from './DialogOverlay'
 import ModalMathGrid from './ModalMathGrid'
 
@@ -135,9 +136,11 @@ export default function AchievementDetailSheet() {
             {tt(badge.titleKey)}
           </h2>
 
-          {/* Reward Subtitle */}
-          <p className="text-[15px] sm:text-[16px] font-semibold mt-1 text-[#0066FF] dark:text-[#3894FF]">
-            +{badge.reward.xp} XP · +{badge.reward.coins} 🪙
+          {/* Reward Subtitle — tanga GLOBAL CoinIcon bilan (endi emoji vizuali,
+              lekin bitta komponent orqali — butun ilova bir xil ko'rinadi) */}
+          <p className="mt-1 inline-flex flex-wrap items-center justify-center gap-1.5 text-[15px] font-semibold text-[#0066FF] dark:text-[#3894FF] sm:text-[16px]">
+            <span className="tabular-nums">+{badge.reward.xp} XP · +{badge.reward.coins}</span>
+            <CoinIcon size={17} />
           </p>
 
           {/* Description Paragraph */}

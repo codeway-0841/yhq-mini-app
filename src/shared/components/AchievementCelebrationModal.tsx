@@ -9,6 +9,7 @@ import { haptics } from '../../platform/haptics'
 import { shareUrl } from '../../platform/telegram'
 import { config } from '../config'
 import Confetti from './Confetti'
+import { CoinIcon } from './CoinIcon'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
 import ModalMathGrid from './ModalMathGrid'
 import { cn } from '../lib/cn'
@@ -138,9 +139,11 @@ export default function AchievementCelebrationModal() {
             {tt(currentBadge.titleKey)}
           </h2>
 
-          {/* Reward Subtitle */}
-          <p className="text-[15px] sm:text-[16px] font-semibold mt-1 text-[#0066FF] dark:text-[#3894FF]">
-            +{currentBadge.reward.xp} XP · +{currentBadge.reward.coins} 🪙
+          {/* Reward Subtitle — tanga GLOBAL CoinIcon bilan (endi emoji vizuali,
+              lekin bitta komponent orqali — butun ilova bir xil ko'rinadi) */}
+          <p className="mt-1 inline-flex flex-wrap items-center justify-center gap-1.5 text-[15px] font-semibold text-[#0066FF] dark:text-[#3894FF] sm:text-[16px]">
+            <span className="tabular-nums">+{currentBadge.reward.xp} XP · +{currentBadge.reward.coins}</span>
+            <CoinIcon size={17} />
           </p>
 
           {/* Description Paragraph */}

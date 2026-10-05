@@ -1,68 +1,64 @@
-import React, { memo } from 'react'
+import { memo, type CSSProperties, type SVGProps } from 'react'
+import { cn } from '../lib/cn'
 
-export interface CoinIconProps extends React.SVGProps<SVGSVGElement> {
+export interface CoinIconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
+  /** Piksel balandligi (eski SVG o'lchami) — emoji shrift o'lchamiga aylanadi */
   size?: number | string
   className?: string
+  style?: CSSProperties
+}
+
+/** SVG o'lcham → emoji shrift o'lchami nisbati (vizual balandlik mos bo'lsin) */
+const FONT_RATIO = 0.92
+
+function toFontSize(size: number | string): string {
+  if (typeof size === 'number') return `${(size * FONT_RATIO).toFixed(2)}px`
+  // '1em', '1.5rem' kabi qiymatlar uchun — shu birlikda qoldiramiz
+  const m = /^(-?[\d.]+)([a-z%]*)$/i.exec(size.trim())
+  if (!m) return size
+  const n = Number(m[1])
+  return Number.isFinite(n) ? `${(n * FONT_RATIO).toFixed(3)}${m[2] || 'px'}` : size
 }
 
 /**
- * Tangalar (Coin Stack) ikonkasi — brend tanga ustunlari SVG ikonkasi.
- * Lucide `Coins` o'rniga YHQ platformasi bo'ylab yagona tanga vizuali.
+ * TANGA ikonkasi — platforma bo'ylab YAGONA brend vizuali.
+ *
+ * Ilgari bu yerda qo'lda chizilgan SVG (tanga ustunlari) bor edi; Achievements'dagi
+ * ko'rinish (oltin tanga) tanlandi va endi HAMMA JOYGA shu tarqatiladi. Barcha
+ * chaqiruv joylari (`size` / `className` / `style`) o'zgarishsiz ishlaydi — faqat
+ * ICHKI ko'rinish almashdi, shu sababli bitta joyda tuzatish butun ilovaga
+ * (Do'kon, Profil, TopBar, Sidebar, natijalar modali, AI test...) tegadi.
+ *
+ * ⚠️ MUHIM: emoji `currentColor`ni QABUL QILMAYDI — tanga doim o'z oltin rangida
+ * chiziladi. Chaqiruv joyidagi `text-pgold` / `text-amber-500` endi tangaga ta'sir
+ * qilmaydi (matn/raqamlar esa avvalgidek rangni oladi). Bu ATAYLAB — tanga vizuali
+ * doim bir xil bo'lishi brend uchun muhimroq. Agar bir joyda tanga fon bilan
+ * qo'shilib ketsa, o'z joyida kontrast beruvchi FON qo'shing, rangni emas.
+ *
+ * SVG-only proplar (`strokeWidth`, `fill`, `viewBox`...) ATAYLAB yutiladi: ularni
+ * `<span>`ga uzatish DOM ogohlantirishi berardi, `<svg>` esa endi yo'q.
+ *
+ * `className` TO'LIQ o'ramga beriladi (`shrink-0`, `ml-auto`, `text-*` — hammasi).
+ * Baza klasslar ataylab minimal (`inline-flex items-center leading-none`) —
+ * `shrink-0` kabi konfliktli klass qo'shilsa, `cn` (twMerge) uni chaqiruv
+ * joyining o'z klassi bilan almashib qo'yardi.
+ *
+ * `aria-hidden` — dekorativ: tanga yonida har doim raqam matni bo'ladi (ekran
+ * o'quvchi uchun raqam yetarli, "tanga" so'zi ortiqcha takrorlanmaydi).
  */
 export const CoinIcon = memo(function CoinIcon({
   size = 16,
   className = '',
   style,
-  ...props
 }: CoinIconProps) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      className={className}
-      style={style}
+    <span
+      className={cn('inline-flex items-center leading-none', className)}
+      style={{ fontSize: toFontSize(size), ...style }}
       aria-hidden="true"
-      {...props}
     >
-      <g fill="none">
-        {/* Tanga tanasining engil foni */}
-        <path
-          fill="currentColor"
-          fillOpacity="0.18"
-          d="M20 9.5h-5l-2.5 1.429V5.5L9 3.5H4l-3.5 2v15l3.5 2h5l3-1.714l3 1.714h5l3.5-2v-9z"
-        />
-        {/* Soyali qirrasi */}
-        <path
-          fill="currentColor"
-          fillOpacity="0.32"
-          d="M6.5 22.5H9l2.999-1.714l-.499-.286v-9l1-.572V5.5L9 7.5H6.5zm11 0H20l3.5-2v-9l-3.5 2h-2.5z"
-        />
-        {/* Tanga ustunlari qirralari va konturi */}
-        <path
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12.5 8.5v-3L9 7.5H4l-3.5-2v15"
-        />
-        <path
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m12.5 8.5l-3.5 2H4l-3.5-2m8.975 4.729L9 13.5H4l-3.5-2m8.975 4.729L9 16.5H4l-3.5-2m8.975 4.729L9 19.5H4l-3.5-2m8.975 4.729L9 22.5H4l-3.5-2m0-15l3.5-2h5l3.5 2m11 15v-9l-3.5 2h-5l-3.5-2v9"
-        />
-        <path
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="m23.5 14.5l-3.5 2h-5l-3.5-2m12 3l-3.5 2h-5l-3.5-2m12 3l-3.5 2h-5l-3.5-2m0-9l3.5-2h5l3.5 2m-5-10v1m0 4v1m3-3h-1m-4 0h-1"
-        />
-      </g>
-    </svg>
+      <span className="leading-none">🪙</span>
+    </span>
   )
 })
 

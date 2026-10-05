@@ -29,6 +29,7 @@ import {
 import { useAiTestStore, countAnsweredTasks } from './useAiTestStore'
 import { McqTaskView, MatchingTaskView, ShortTaskView, EssayTaskView } from './components/TaskCards'
 import MathText from '../../shared/components/MathText'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 
 type Phase = 'loading' | 'error' | 'premium' | 'session' | 'submitting' | 'result'
 
@@ -257,7 +258,10 @@ export default function AiTestSession() {
           <p className="text-[12.5px] text-psubtle mt-1">{tt('aiTestCorrectWord')} · 1–3 {tt('aiTestTaskWord').toLowerCase()}</p>
           <div className="mt-3 flex items-center justify-center gap-4 text-[13px] font-semibold">
             <span className="text-pfg">{tt('aiTestEssayScore')}: {g.essay ? `${g.essayScore}/10` : '—'}</span>
-            <span style={{ color: 'var(--p-gold)' }}>+{result.coinsAwarded} 🪙</span>
+            <span className="inline-flex items-center gap-1" style={{ color: 'var(--p-gold)' }}>
+              <CoinIcon size={15} className="shrink-0" />
+              <span className="tabular-nums">+{result.coinsAwarded}</span>
+            </span>
           </div>
           {g.essay === null && (
             <p className="mt-2 text-[12px] text-pwarning">{tt('aiTestEssayUngraded')}</p>

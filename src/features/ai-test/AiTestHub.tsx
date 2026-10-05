@@ -14,6 +14,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { track } from '../../shared/lib/analytics'
 import { AI_TEST_SUBJECT_ID, AI_TEST_MAX_COINS, AI_TEST_GRADED_TASKS } from '../../../shared/ai-daily-test'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 
 interface AiVariantMeta {
   variantId: string
@@ -216,7 +217,13 @@ export default function AiTestHub() {
                     <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold text-psuccess">
                       <span className="size-2 rounded-full bg-psuccess" />
                       {tt('aiTestDone')} · {t.scoreCorrect}/{AI_TEST_GRADED_TASKS} {tt('aiTestCorrectWord').toLowerCase()}
-                      {t.coinsAwarded != null && ` · +${t.coinsAwarded}🪙`}
+                      {t.coinsAwarded != null && (
+                        <>
+                          <span aria-hidden="true">·</span>
+                          <CoinIcon size={12} className="shrink-0" />
+                          <span className="tabular-nums">+{t.coinsAwarded}</span>
+                        </>
+                      )}
                     </span>
                   ) : locked ? (
                     <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold text-ppurple">

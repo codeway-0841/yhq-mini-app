@@ -10,6 +10,7 @@ import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
+import { CoinIcon } from '../../shared/components/CoinIcon'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalMathGrid from '../../shared/components/ModalMathGrid'
 import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
@@ -263,7 +264,10 @@ export default function ResultsModal({
             )}
             {Boolean(earnedCoins) && (
               <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pcard text-pgold font-bold text-xs shadow-2xs">
-                <span>+{earnedCoins} 🪙</span>
+                {/* Tanga — GLOBAL CoinIcon SVG (emoji emas: platformaga qarab
+                    har xil chiziladi va brend vizuali emas) */}
+                <CoinIcon size={14} className="shrink-0" />
+                <span className="tabular-nums">+{earnedCoins}</span>
               </div>
             )}
           </div>
