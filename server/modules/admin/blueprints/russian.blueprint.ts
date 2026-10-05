@@ -1,6 +1,6 @@
 /**
  * Russian Language (Rus tili) Exam Blueprints
- * Fully aligned with official UzBMB (former DTM) Decree №646 specification and https://5ball.uz/rus-tili-test/
+ * Fully aligned with official UzBMB (former DTM) Decree №646 specification.
  */
 
 import type { SubjectExamBlueprint } from './types'
@@ -13,7 +13,7 @@ export const RUSSIAN_MILLIY_SERTIFIKAT_BLUEPRINT: SubjectExamBlueprint = {
   totalQuestions: 45,
   durationMinutes: 180,
   maxScore: 75,
-  specificationSource: 'UzBMB Decree №646 / 5ball.uz rasmiy spetsifikatsiyasi',
+  specificationSource: 'UzBMB 646-son qarori rasmiy standarti',
   blocks: [
     {
       blockId: 'block-1-theory-literature',

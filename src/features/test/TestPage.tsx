@@ -130,7 +130,7 @@ export default function TestPage() {
   const { activeQuestions, sessionKey } = useTestSession({
     mode,
     questionIds: location.state?.questionIds as number[] | undefined,
-    questions,
+    questions: (location.state?.customQuestions as typeof questions | undefined) ?? questions,
     subjectId,
     stateTitle,
     locationKey: location.key,

@@ -7,7 +7,7 @@ import {
 } from '../../../server/modules/admin/blueprints'
 import { buildExamBlockPrompt } from '../../../server/modules/admin/exam-prompt-engine'
 
-describe('Official Russian Exam Blueprints (UzBMB / 5ball.uz)', () => {
+describe('Official Russian Exam Blueprints (UzBMB)', () => {
   describe('Milliy Sertifikat Blueprint', () => {
     it('has exactly 45 questions according to UzBMB Decree №646', () => {
       expect(RUSSIAN_MILLIY_SERTIFIKAT_BLUEPRINT.totalQuestions).toBe(45)

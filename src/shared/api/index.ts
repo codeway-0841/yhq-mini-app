@@ -908,6 +908,51 @@ export const api = {
       test: AiTestPublicPayload & { id: number; slot: number; date: string }
     }>('GET', `/ai-tests/${testId}/result`),
 
+  // ── AI Imtihon Variantlari (Milliy Sertifikat / Attestatsiya) ───────────
+  getAiVariants: (subjectId?: string) =>
+    requestPublic<{
+      ok: true
+      variants: Array<{
+        variantId: string
+        subjectId: string
+        examType: string
+        variantNumber: number
+        title: string
+        totalQuestions: number
+        durationMinutes: number
+        specificationSource: string
+        createdAt: string
+      }>
+    }>(`/ai-variants${subjectId ? `?subject=${encodeURIComponent(subjectId)}` : ''}`),
+
+  getAiVariant: (variantId: string) =>
+    requestPublic<{
+      ok: true
+      variant: {
+        variantId: string
+        subjectId: string
+        examType: string
+        variantNumber: number
+        title: string
+        totalQuestions: number
+        durationMinutes: number
+        specificationSource: string
+        createdAt: string
+        questions: Array<{
+          number: number
+          topic: string
+          topicCategory: string
+          difficulty: 'easy' | 'medium' | 'hard'
+          questionUz: string
+          questionRu: string
+          optionsUz: Array<{ id: string; text: string }>
+          optionsRu: Array<{ id: string; text: string }>
+          correctAnswer: string
+          explanation: string
+        }>
+      }
+    }>(`/ai-variants/${encodeURIComponent(variantId)}`),
+
   // ── AI Kurslar (user-created courses) ────────────────────────────────────
   /** Kurs yaratish (mock outline; 429 COURSE_LIMIT_REACHED) */
   createAiCourse: (data: AiCourseCreateInput) =>

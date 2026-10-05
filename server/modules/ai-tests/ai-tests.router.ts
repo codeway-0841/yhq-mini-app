@@ -241,4 +241,84 @@ router.post(
   }),
 )
 
+// ── GET /api/ai-variants ─────────────────────────────────────────────────────
+router.get(
+  '/ai-variants',
+  wrap(async (req, res) => {
+    const fs = await import('node:fs')
+    const path = await import('node:path')
+    const subject = typeof req.query.subject === 'string' ? req.query.subject : undefined
+
+    const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
+    const results: Array<{
+      variantId: string
+      subjectId: string
+      examType: string
+      variantNumber: number
+      title: string
+      totalQuestions: number
+      durationMinutes: number
+      specificationSource: string
+      createdAt: string
+    }> = []
+
+    if (fs.existsSync(rootBanksDir)) {
+      const subjectFolders = fs.readdirSync(rootBanksDir)
+      for (const subj of subjectFolders) {
+        if (subject && subj !== subject) continue
+        const variantsDir = path.join(rootBanksDir, subj, 'variants')
+        if (fs.existsSync(variantsDir)) {
+          const files = fs.readdirSync(variantsDir).filter((f) => f.endsWith('.json'))
+          for (const f of files) {
+            try {
+              const content = JSON.parse(fs.readFileSync(path.join(variantsDir, f), 'utf-8'))
+              results.push({
+                variantId: content.variantId || f.replace('.json', ''),
+                subjectId: content.subjectId || subj,
+                examType: content.examType || 'milliy-sertifikat',
+                variantNumber: content.variantNumber || 1,
+                title: content.title || f,
+                totalQuestions: content.totalQuestions || (content.questions?.length ?? 0),
+                durationMinutes: content.durationMinutes || 180,
+                specificationSource: content.specificationSource || '',
+                createdAt: content.createdAt || '',
+              })
+            } catch {
+              // skip unparseable files
+            }
+          }
+        }
+      }
+    }
+
+    res.json({ ok: true, variants: results })
+  }),
+)
+
+// ── GET /api/ai-variants/:id ─────────────────────────────────────────────────
+router.get(
+  '/ai-variants/:id',
+  wrap(async (req, res) => {
+    const fs = await import('node:fs')
+    const path = await import('node:path')
+    const variantId = String(req.params.id)
+
+    const rootBanksDir = path.resolve(process.cwd(), 'content-banks')
+    if (fs.existsSync(rootBanksDir)) {
+      const subjectFolders = fs.readdirSync(rootBanksDir)
+      for (const subj of subjectFolders) {
+        const filePath = path.join(rootBanksDir, subj, 'variants', `${variantId}.json`)
+        if (fs.existsSync(filePath)) {
+          const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+          res.json({ ok: true, variant: content })
+          return
+        }
+      }
+    }
+
+    throw new AppError(404, 'VARIANT_NOT_FOUND')
+  }),
+)
+
 export default router
+

@@ -165,7 +165,9 @@ export function useTestSession(params: UseTestSessionParams) {
       const uniquePool = deduplicateQuestions(eligibleQuestions)
       const shuffled = () => [...uniquePool].sort(() => Math.random() - 0.5)
       if (examPreset) {
-        result = shuffled().slice(0, Math.min(examPreset.questionCount, uniquePool.length))
+        result = mode?.includes('variant')
+          ? uniquePool
+          : shuffled().slice(0, Math.min(examPreset.questionCount, uniquePool.length))
       } else {
         switch (mode) {
           case 'marathon':  result = shuffled(); break

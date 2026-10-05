@@ -29,7 +29,7 @@ export const EXAM_PRESETS = [
 export type ExamPresetId = (typeof EXAM_PRESETS)[number]['id']
 
 /**
- * Rasmiy fan spetsifikatsiyalari (UzBMB / 5ball.uz) bo'yicha Milliy sertifikat
+ * Rasmiy fan spetsifikatsiyalari (UzBMB rasmiy standarti) bo'yicha Milliy sertifikat
  * davomiyligi va savollar soni taqsimoti.
  * Boshqa fanlar (yoki berilmagan holat) default 45 savol / 180 daqiqadan foydalanadi.
  */
@@ -90,6 +90,9 @@ export function getExamPreset(id: string, subjectId?: string): ExamPreset | null
  * Boshqa modellar ('exam', 'mock', 'marathon'...) → null.
  */
 export function resolveExamMode(mode: string | null | undefined, subjectId?: string): ExamPreset | null {
-  if (!mode || !mode.startsWith('exam:')) return null
-  return getExamPreset(mode.slice('exam:'.length), subjectId)
+  if (!mode) return null
+  if (mode.startsWith('exam:')) return getExamPreset(mode.slice('exam:'.length), subjectId)
+  if (mode.includes('milliy')) return getExamPreset('milliy-sertifikat', subjectId)
+  if (mode.includes('attestatsiya')) return getExamPreset('attestatsiya', subjectId)
+  return null
 }
