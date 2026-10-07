@@ -136,5 +136,53 @@ describe('MathText Component & KaTeX Security', () => {
       expect(wrapperSpan?.classList.contains('inline')).toBe(true)
     })
   })
+
+  describe('Heuristic Math Detection & Normalization (GrowMock & DTM patterns)', () => {
+    it('$ belgisiz kelgan tengsizliklar va taqqoslashlarni (<=, >=, !=) to\'g\'ri parse qiladi', () => {
+      const segs = parseMathSegments('x <= 5')
+      expect(segs.length).toBe(1)
+      expect(segs[0].type).toBe('math')
+      expect(segs[0].content).toContain('\\le')
+
+      const segs2 = parseMathSegments('x != 0')
+      expect(segs2.length).toBe(1)
+      expect(segs2[0].type).toBe('math')
+      expect(segs2[0].content).toContain('\\ne')
+    })
+
+    it('Oralliqlar va cheksizlik (inf, [-2; 5), (-inf; 3] U (5; +inf)) toza render bo\'ladi', () => {
+      const segs = parseMathSegments('[-2; 5)')
+      expect(segs.length).toBe(1)
+      expect(segs[0].type).toBe('math')
+
+      const segs2 = parseMathSegments('(-inf; 3] U (5; +inf)')
+      expect(segs2.length).toBe(1)
+      expect(segs2[0].type).toBe('math')
+      expect(segs2[0].content).toContain('\\infty')
+      expect(segs2[0].content).toContain('\\cup')
+    })
+
+    it('Trigonometriya va qavsli ildizlar (sin x + cos x = 1, sqrt(x + 1)) avtomatik aniqlanadi', () => {
+      const segs = parseMathSegments('sin x + cos x = 1')
+      expect(segs.length).toBe(1)
+      expect(segs[0].type).toBe('math')
+      expect(segs[0].content).toContain('\\sin')
+
+      const segs2 = parseMathSegments('sqrt(x + 1)')
+      expect(segs2.length).toBe(1)
+      expect(segs2[0].type).toBe('math')
+      expect(segs2[0].content).toBe('\\sqrt{x + 1}')
+    })
+
+    it('Oddiy sonli kasrlar (2/3) va tenglamalar (a = 5) math deb tan olinadi', () => {
+      const segs = parseMathSegments('2/3')
+      expect(segs.length).toBe(1)
+      expect(segs[0].type).toBe('math')
+
+      const segs2 = parseMathSegments('a = 5')
+      expect(segs2.length).toBe(1)
+      expect(segs2[0].type).toBe('math')
+    })
+  })
 })
 

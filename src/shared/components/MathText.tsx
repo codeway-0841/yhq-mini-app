@@ -47,17 +47,49 @@ function findClosingBrace(str: string, startIdx: number): number {
 
 /**
  * Normalizes mathematical formulas to ensure standard functions have backslashes
- * (e.g. \sqrt{tan x} -> \sqrt{\tan x}, sin x -> \sin x) and clean spacing.
+ * (e.g. \sqrt{tan x} -> \sqrt{\tan x}, sin x -> \sin x), comparison operators,
+ * interval unions, and clean spacing.
  */
 export function normalizeMathFormula(math: string): string {
   let m = math.trim()
   // Replace unescaped standard functions after operators, braces or at string boundary:
   // e.g. \sqrt{tan x} -> \sqrt{\tan x}, (sin x) -> (\sin x), + cos x -> + \cos x
-  m = m.replace(/([{+\-*/=(,\s])(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\b\s*/g, '$1\\$2 ')
-  m = m.replace(/^\\?(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\b\s*/g, '\\$1 ')
+  m = m.replace(/([{+\-*/=(,\s])(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|arcctg|sec|csc|lim)\b\s*/g, '$1\\$2 ')
+  m = m.replace(/^\\?(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|arcctg|sec|csc|lim)\b\s*/g, '\\$1 ')
   // Clean up any double spaces created after backslashed functions
-  m = m.replace(/\\(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|sec|csc)\s+/g, '\\$1 ')
+  m = m.replace(/\\(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|arcctg|sec|csc|lim)\s+/g, '\\$1 ')
+  // Fix unescaped \sqrt(expr) or sqrt(expr) -> \sqrt{expr}
+  m = m.replace(/\\?sqrt\s*\(([^)]+)\)/g, '\\sqrt{$1}')
+  // Fix unescaped ^(expr) -> ^{expr}
+  m = m.replace(/\^\(([^)]+)\)/g, '^{$1}')
+  // Normalize comparison operators
+  m = m.replace(/<=/g, '\\le ')
+  m = m.replace(/>=/g, '\\ge ')
+  m = m.replace(/!=/g, '\\ne ')
+  // Normalize infinity (inf -> \infty, -inf -> -\infty)
+  m = m.replace(/\b(-?)inf\b/gi, '$1\\infty')
+  // Normalize interval union (e.g. [-1; 2) U (3; 5] -> [-1; 2) \cup (3; 5])
+  m = m.replace(/([)\]])\s*[uU]\s*([([])/g, '$1 \\cup $2')
   return m
+}
+
+/**
+ * Heuristic detector for mathematical formula candidates (inspired by GrowMock & DTM math patterns).
+ * Identifies formulas that lack explicit LaTeX delimiters ($).
+ */
+export function isMathCandidate(str: string): boolean {
+  return (
+    str.includes('\\') ||
+    str.includes('^') ||
+    /_[0-9a-zA-Z]/.test(str) ||
+    /[<>]=|!=/.test(str) ||
+    /\b(sin|cos|tan|tg|ctg|ln|log|arcsin|arccos|arctg|arcctg|sec|csc|lim|sqrt)\b/i.test(str) ||
+    /[αβγδεζηθλμπρσφψω∞∪∩]/.test(str) ||
+    /^[[(]\s*[-+]?(?:\d+|inf|\\infty)\s*;\s*[-+]?(?:\d+|inf|\\infty)\s*[\])]/i.test(str) ||
+    /([)\]])\s*[uU]\s*([([])/.test(str) ||
+    /^[a-zA-Z]\s*=\s*[-+]?\d+/.test(str) ||
+    /^\s*[-+]?\d+\s*\/\s*\d+\s*$/.test(str)
+  )
 }
 
 /**
@@ -184,7 +216,7 @@ export function parseMathSegments(text: string): MathSegment[] {
   // NOTE: both Uzbek apostrophes U+2018 (‘) and U+2019 (’) are in the class.
   const trimmed = text.trim()
   const stripPunct = (w: string) => w.replace(/^[^a-zA-Z'ʻ`’‘]+|[^a-zA-Z'ʻ`’‘]+$/g, '')
-  const words = trimmed.split(/\s+/).map(stripPunct).filter(w => /^[a-zA-Z'ʻ`’‘]{4,}$/.test(w) && !/^(const|frac|sqrt|text|left|right|cdot|times|approx|infty|delta|alpha|beta|gamma|pi|circ|le|ge|ne|in|cup|cap|log|ln|sin|cos|tg|ctg|lim|vec|operatorname|frac)$/i.test(w))
+  const words = trimmed.split(/\s+/).map(stripPunct).filter(w => /^[a-zA-Z'ʻ`’‘]{4,}$/.test(w) && !/^(const|frac|sqrt|text|left|right|cdot|times|approx|infty|delta|alpha|beta|gamma|pi|circ|le|ge|ne|in|cup|cap|log|ln|sin|cos|tan|cot|tg|ctg|arcsin|arccos|arctg|arcctg|sec|csc|lim|vec|operatorname|frac)$/i.test(w))
   const hasUzbekApostrophe = /[‘’'`′]/.test(trimmed) && /[a-zA-Z]/.test(trimmed)
   // '%' never belongs to pure math (KaTeX comment char); with a prose word
   // it proves the field is a sentence, not a formula.
@@ -193,12 +225,13 @@ export function parseMathSegments(text: string): MathSegment[] {
   // pure math never has both (variables are short, functions excluded).
   const isLikelyProse = words.length >= 2 || (words.length >= 1 && (hasUzbekApostrophe || hasPercent))
 
-  if (!isLikelyProse && (trimmed.includes('\\') || trimmed.includes('^') || /_[0-9a-zA-Z]/.test(trimmed))) {
+  if (!isLikelyProse && isMathCandidate(trimmed)) {
     const hasDot = trimmed.endsWith('.')
     const cleanMath = hasDot ? trimmed.slice(0, -1) : trimmed
-    const rendered = isValidKaTeX(cleanMath, false)
+    const normalized = normalizeMathFormula(cleanMath)
+    const rendered = isValidKaTeX(normalized, false)
     if (rendered) {
-      const segments: MathSegment[] = [{ type: 'math', content: cleanMath, displayMode: false }]
+      const segments: MathSegment[] = [{ type: 'math', content: normalized, displayMode: false }]
       if (hasDot) {
         segments.push({ type: 'text', content: '.' })
       }
@@ -219,6 +252,26 @@ export function parseMathSegments(text: string): MathSegment[] {
   }
 
   while (i < text.length) {
+    // Unescaped or round-parenthesis square root: sqrt(x) or \sqrt(x)
+    if (
+      (text.startsWith('sqrt(', i) && (i === 0 || /[\s(+\-*/=]/.test(text[i - 1]))) ||
+      text.startsWith('\\sqrt(', i)
+    ) {
+      const startParen = text.indexOf('(', i)
+      const close = text.indexOf(')', startParen)
+      if (close !== -1) {
+        const inner = text.slice(startParen + 1, close)
+        const sqrt = `\\sqrt{${inner}}`
+        const rendered = isValidKaTeX(sqrt)
+        if (rendered) {
+          flushText()
+          segments.push({ type: 'math', content: sqrt })
+          i = close + 1
+          continue
+        }
+      }
+    }
+
     // LaTeX commands starting with \
     if (text[i] === '\\') {
       if (text.startsWith('\\frac{', i)) {

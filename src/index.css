@@ -1421,7 +1421,7 @@ body[data-no-animation='true'] .animate-scorePop {
 /* ═══ KaTeX Formula Rendering & Mobile Responsiveness ═══ */
 .katex {
   color: inherit !important;
-  font-size: 1.02em;
+  font-size: 1.05em;
 }
 .katex-display {
   overflow-x: auto;
@@ -1431,9 +1431,18 @@ body[data-no-animation='true'] .animate-scorePop {
   margin: 0.5rem 0;
   -webkit-overflow-scrolling: touch;
 }
+.katex-display > .katex {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
+}
 .katex-rendered-token {
   vertical-align: middle;
   line-height: normal;
+}
+.math-fallback {
+  font-style: italic;
+  color: inherit;
 }
 
 /* ═══ DESKTOP APP SHELL + PRODUCTION POLISH (2026-09-15) ═══════════════════
