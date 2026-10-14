@@ -90,9 +90,6 @@ export function getExamPreset(id: string, subjectId?: string): ExamPreset | null
  * Boshqa modellar ('exam', 'mock', 'marathon'...) → null.
  */
 export function resolveExamMode(mode: string | null | undefined, subjectId?: string): ExamPreset | null {
-  if (!mode) return null
-  if (mode.startsWith('exam:')) return getExamPreset(mode.slice('exam:'.length), subjectId)
-  if (mode.includes('milliy')) return getExamPreset('milliy-sertifikat', subjectId)
-  if (mode.includes('attestatsiya')) return getExamPreset('attestatsiya', subjectId)
-  return null
+  if (!mode || !mode.startsWith('exam:')) return null
+  return getExamPreset(mode.slice('exam:'.length), subjectId)
 }

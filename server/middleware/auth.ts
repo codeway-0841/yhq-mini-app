@@ -72,8 +72,6 @@ const PUBLIC_GET = new Set(['questions', 'topics', 'ticket-catalog', 'dashboard'
   // 'avatar/:userId' — public profil rasmi (leaderboard/duel <img src> auth
   // header yubora olmaydi; rasm user O'ZI global ko'rsatish uchun yuklagan)
   'avatar',
-  // 'ai-variants' — rasmiy milliy sertifikat va attestatsiya AI variantlari (ommaviy test kontenti)
-  'ai-variants',
 ])
 
 /**

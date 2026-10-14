@@ -145,7 +145,7 @@ const UZ = {
   // Rasmiy imtihon simulyatori preset'lari (shared/exam-presets)
   examPresetMilliy: "Milliy sertifikat", examPresetAttestatsiya: "Attestatsiya",
   // AI Kunlik Test (rustili)
-  aiTestTitle: "Test AI", aiTestMeta: "Rasmiy Milliy sertifikat va attestatsiya variantlari",
+  aiTestTitle: "AI Kunlik Test", aiTestMeta: "45 ta topshiriq · har kuni 2 ta yangi variant",
   aiTestNew: "YANGI", aiTestStart: "Boshlash", aiTestDone: "Yechilgan",
   aiTestPremiumOnly: "Premium", aiTestEmpty: "Testlar tayyorlanmoqda — birozdan so'ng qayta kiring.",
   aiTestSubmit: "Topshirish", aiTestSubmitting: "AI baholamoqda…",
@@ -1078,7 +1078,7 @@ const RU: Record<Keys, string> = {
   // Режимы официального экзамена (shared/exam-presets)
   examPresetMilliy: "Национальный сертификат", examPresetAttestatsiya: "Аттестация",
   // AI Kunlik Test (rustili)
-  aiTestTitle: "Тест AI", aiTestMeta: "Официальные варианты Национального сертификата и аттестации",
+  aiTestTitle: "AI-тест дня", aiTestMeta: "45 заданий · каждый день 2 новых варианта",
   aiTestNew: "НОВЫЙ", aiTestStart: "Начать", aiTestDone: "Пройден",
   aiTestPremiumOnly: "Premium", aiTestEmpty: "Тесты готовятся — загляните чуть позже.",
   aiTestSubmit: "Отправить", aiTestSubmitting: "AI проверяет…",
