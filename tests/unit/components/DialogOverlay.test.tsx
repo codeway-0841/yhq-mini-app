@@ -24,6 +24,7 @@ describe('DialogOverlay component', () => {
     expect(dialog).toHaveAttribute('aria-modal', 'true')
     expect(dialog).toHaveAttribute('aria-labelledby', 'modal-title')
     expect(screen.getByText('Modal Title')).toBeInTheDocument()
+    expect(dialog.querySelector('[data-dialog-sheet="true"]')).toHaveClass('dialog-sheet-motion')
   })
 
   it('calls onClose when clicking backdrop overlay', () => {
@@ -179,6 +180,7 @@ describe('DialogOverlay component', () => {
       )
       const wrapper = baseElement.querySelector('.will-change-transform')
       expect(wrapper).toBeInTheDocument()
+      expect(wrapper).toHaveClass('dialog-sheet-motion')
     })
 
     it('dragHandleOnly=true: pointer down outside drag handle does not start drag', () => {

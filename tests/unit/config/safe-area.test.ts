@@ -84,16 +84,16 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
 
   /**
    * STICKY VIEWPORT GUARD (2026-09-01 Admin panel incident): haqiqiy scroll'ni
-   * DOCUMENT bajaradi (html/body height:100% + kontent o'sadi). Layout
+   * DOCUMENT bajaradi (html/body height:100% + kontent o'sadi). MobileAppShell
    * konteynerlarida overflow-y:auto/hidden bo'lsa, u scroll bo'lmasa ham
    * STICKY elementlar uchun scrollport (containing block) bo'lib qoladi —
    * sticky header viewport'ga yopishmay, kontent ustidan "suzadi" (tasdiq:
    * Playwright repro, stickyTop=-340). Ruxsat FAQAT overflow-x:clip
    * (clip scrollport yaratmaydi).
    */
-  it('App.tsx Layout konteynerlari scrollport EMAS (sticky viewport\'ga ishlashi shart)', () => {
-    const app = fs.readFileSync(path.join(SRC, 'App.tsx'), 'utf8')
-    const layoutRoot = app.match(/<div className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
+  it('MobileAppShell konteynerlari mobilda scrollport EMAS (sticky viewport\'ga ishlashi shart)', () => {
+    const shell = fs.readFileSync(path.join(SRC, 'features/app/components/MobileAppShell.tsx'), 'utf8')
+    const layoutRoot = shell.match(/className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
     expect(layoutRoot, 'Layout root topilmadi').not.toBe('')
     expect(layoutRoot).toContain('overflow-x-clip')
     // MOBIL rejimda prefixsiz overflow TAQIQLANADI; desktop (lg:) panel
@@ -101,7 +101,7 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     // kontent ichida scroll bo'ladi; sticky headerlar panelga yopishadi).
     expect(layoutRoot).not.toMatch(/(^|[\s"'])overflow-(hidden|y-auto|auto|scroll)([\s"']|$)/)
     expect(layoutRoot).toContain('lg:overflow-hidden')
-    const routePage = app.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
+    const routePage = shell.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
     expect(routePage, 'route-page konteyneri topilmadi').not.toBe('')
     expect(routePage).not.toMatch(/(^|[\s"'])overflow-(hidden|y-auto|auto|scroll)([\s"']|$)/)
     expect(routePage).toContain('lg:overflow-y-auto')

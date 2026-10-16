@@ -193,7 +193,7 @@ body[data-platform='native'] {
 /* Route transition — sahifalar orasida silliq o'tish (0 dan boshlash header'ni yo'qotib miltillatardi) */
 .route-page { animation: routeIn 140ms ease-out both; }
 /* Dock'siz (ichki) sahifalarda dock-zaxira padding o'lik bo'shliqqa aylanmasin
-   (App.tsx data-tabroot; className STATIK — safe-area testi regex'i uchun).
+   (MobileAppShell data-tabroot; className STATIK — safe-area testi regex'i uchun).
    Specificity (class+attr) Tailwind pb-* utilitasini yengadi. */
 .route-page[data-tabroot="false"] { padding-bottom: max(0.5rem, var(--safe-bottom, 0px)); }
 @keyframes routeIn {
@@ -525,6 +525,7 @@ body[data-theme='light'] .ios-glass {
   --radius-control:   8px;    /* tugma, input, badge */
   --radius-container: 14px;   /* card, panel */
   --radius-sheet:     20px;   /* sheet — pastki modal */
+  --radius-dialog-sheet: 30px; /* Claude-mobile uslubi: FAQAT modalning tepa burchaklari */
   --radius: var(--radius-control);   /* shadcn/ui base */
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-apple-spring: cubic-bezier(0.32, 0.72, 0, 1);
@@ -1294,6 +1295,65 @@ body[data-no-animation='true'] .confetti-piece { display: none; }
 .animate-premiumIn { animation: premiumIn 0.2s ease-out both; }
 body[data-no-animation='true'] .animate-premiumIn { animation: none; }
 
+/* ── Claude-mobile sheet motion ─────────────────────────────────────────────
+   DialogOverlay barcha bottom-sheet'larni shu qatlamdan o'tkazadi. Harakat
+   gesture transformidan alohida: drag tashqi wrapperda, kirish animatsiyasi
+   esa ichki surface'da. Shu sabab ochilish paytida swipe mexanikasi buzilmaydi. */
+@keyframes dialogBackdropIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes dialogSheetIn {
+  from {
+    opacity: 0.72;
+    transform: translate3d(0, 28px, 0) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.dialog-backdrop-motion {
+  animation: dialogBackdropIn 180ms ease-out both;
+}
+
+.dialog-sheet-motion > :first-child {
+  border-top-left-radius: var(--radius-dialog-sheet) !important;
+  border-top-right-radius: var(--radius-dialog-sheet) !important;
+  transform-origin: center bottom;
+  animation: dialogSheetIn 360ms var(--ease-apple-spring) both;
+  box-shadow:
+    0 -18px 54px -28px rgb(0 0 0 / 0.52),
+    inset 0 1px 0 var(--p-line-strong);
+}
+
+/* Claude mobile'dagi sokin grabber: faqat BO'SH handle bar'ning geometriyasini
+   o'zgartiradi. `[data-drag-handle]` header/title'larda ham gesture zona sifatida
+   ishlatiladi — umumiy selector ularga 36x4px berib matnni sindirmasligi shart. */
+.dialog-sheet-motion div[data-drag-handle]:empty,
+.dialog-sheet-motion [data-sheet-handle],
+.dialog-sheet-motion .sheet-drag-handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--p-line-strong);
+  background: color-mix(in srgb, var(--p-fg) 22%, transparent);
+  transition: transform 160ms ease-out, background-color 160ms ease-out;
+}
+
+.dialog-sheet-motion div[data-drag-handle]:empty:active,
+.dialog-sheet-motion [data-sheet-handle]:active,
+.dialog-sheet-motion .sheet-drag-handle:active {
+  transform: scaleX(0.88);
+}
+
+body[data-no-animation='true'] .dialog-backdrop-motion,
+body[data-no-animation='true'] .dialog-sheet-motion > :first-child {
+  animation: none;
+}
+
 /* ── Do'kon hero vitrinasi (v2 redesign) ─────────────────────────────────────
    "Bugun" karuseli kartalari ketma-ket kiradi; stagger `--hero-delay` bilan
    beriladi (inline style). `both` — animatsiya boshida opacity 0'dan boshlanadi,
@@ -1375,6 +1435,7 @@ body[data-no-animation='true'] .animate-scorePop {
   .animate-flyUp, .animate-wiggle, .coin-pop,
   .animate-premiumIn, .animate-sheetItemIn, .animate-swapRollIn, .animate-correctPop, .animate-scorePop, .animate-shake,
   .animate-heroCard,
+  .dialog-backdrop-motion, .dialog-sheet-motion > :first-child,
   .animate-dynamic-island-expand, .dashboard-menu-action,
   .animate-spin, .animate-pulse, .animate-bounce {
     animation: none !important;

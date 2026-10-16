@@ -31,20 +31,26 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     }
   })
 
-  it('App.tsx Layout: sidebar + responsive container (safe-area regex prefixlari saqlangan)', () => {
+  it('App.tsx MobileAppShell composition root orqali responsive shellni ulaydi', () => {
     const app = read('App.tsx')
-    expect(app).toContain('DesktopSidebar')
-    expect(app).toContain('<DesktopSidebar />')
+    expect(app).toContain("import { MobileAppShell } from './features/app'")
+    expect(app).toContain('<MobileAppShell>')
+    expect(app).toContain('</MobileAppShell>')
+
+    const shell = read('features/app/components/MobileAppShell.tsx')
+    expect(shell).toContain('DesktopSidebar')
+    expect(shell).toContain('<DesktopSidebar />')
+    expect(shell).toContain('data-chrome-mode={chrome.mode}')
     // safe-area testi regex'lari uchun prefix shart:
-    expect(app).toMatch(/<div className="relative flex flex-col min-h-screen[^"]*"/)
-    expect(app).toMatch(/className="route-page relative z-10[^"]*"/)
-    const layoutRoot = app.match(/<div className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
+    expect(shell).toMatch(/className="relative flex flex-col min-h-screen[^"]*"/)
+    expect(shell).toMatch(/className="route-page relative z-10[^"]*"/)
+    const layoutRoot = shell.match(/className="relative flex flex-col min-h-screen[^"]*"/)?.[0] ?? ''
     expect(layoutRoot).toContain('overflow-x-clip')
     expect(layoutRoot).toContain('lg:flex-row')
     // Desktop fixed shell: root viewport'da qulflangan, scroll panel ichida
     expect(layoutRoot).toContain('lg:overflow-hidden')
     expect(layoutRoot).toContain('lg:h-[calc(100dvh')
-    const routePage = app.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
+    const routePage = shell.match(/className="route-page relative z-10[^"]*"/)?.[0] ?? ''
     expect(routePage).toContain('px-0')
     // FULL-WIDTH shell (2026-09-24): route-page'da max-w cap YO'Q — tor sahifalar
     // o'z lg:max-w-2xl'iga ega, grid sahifalar kenglikni to'liq ishlatadi.

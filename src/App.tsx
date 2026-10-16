@@ -1,18 +1,16 @@
-import { useEffect, lazy, Suspense, useState, type ReactNode } from 'react'
-import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
+import { useEffect, lazy, Suspense, useState } from 'react'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import PageLoader from './shared/components/PageLoader'
 import SplashScreen from './features/onboarding/SplashScreen'
 import { t } from './shared/i18n'
-import { getStartParam, closeMiniApp } from './platform/telegram'
+import { closeMiniApp } from './platform/telegram'
 import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
-import { usePlatformNavigation } from './features/app/hooks/usePlatformNavigation'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
 import ForceUpdateScreen from './features/app/components/ForceUpdateScreen'
+import { MobileAppShell } from './features/app'
 import AchievementCelebrationModal from './shared/components/AchievementCelebrationModal'
 import AchievementDetailSheet from './shared/components/AchievementDetailSheet'
-import IosDock, { isTabRootRoute } from './shared/components/IosDock'
-import DesktopSidebar from './shared/components/DesktopSidebar'
 import { checkAppUpdate, useUpdateStore, type UpdateStatus, type AppVersionInfo } from './platform/version-check'
 import { config } from './shared/config'
 
@@ -68,6 +66,7 @@ const mathBoardChunk       = () => import('./features/math-board/MathBoardPage')
 const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
+const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -108,6 +107,7 @@ const CamAiPage        = lazy(camaiChunk)
 const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).default }))
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
 const ReviewsPage      = lazy(reviewsChunk)
+const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -122,82 +122,13 @@ const routeChunkPrefetchers = [
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
   graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk, reviewsChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
-  verifyEmailChunk, resetPasswordChunk,
+  verifyEmailChunk, resetPasswordChunk, interactiveLessonsChunk,
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
   // Achievement badge'lar ham shu IDLE oynada keshga olinadi —
   // Profil'ga birinchi kirishda rasmlar bir zumda chiqadi.
   void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
-}
-
-function Layout({ children }: { children: ReactNode }) {
-  const { pageRef, navigate } = usePlatformNavigation()
-  // Dock FAQAT tab-root'larda (IosDock allowlist) — ichki sahifalarda pastki
-  // suzuvchi-pill zaxira o'lik bo'shliqqa aylanmasligi uchun data-atribut orqali
-  // CSS'da toraytiriladi (className STATIK qoladi — safe-area testi regex'i).
-  const { pathname } = useLocation()
-
-  // Duel invite-link (ikki manba):
-  //  1) startapp deep-link: ?startapp=duel-xxxx yoki 6-digit PIN → start_param
-  //  2) bot tugmasidan: URL'dagi ?duel=xxxx query param
-  useEffect(() => {
-    const sp = getStartParam()
-    const fromTg = sp && (sp.startsWith('duel-') || /^\d{4,8}$/.test(sp)) ? sp : undefined
-    const fromQuery = new URLSearchParams(window.location.search).get('duel') ?? undefined
-    const rawCode = fromTg ?? fromQuery
-    if (rawCode) {
-      const cleanCode = rawCode.trim().toLowerCase().replace(/^(?:duel|room)-/, '')
-      navigate(`/octagon/${cleanCode}`)
-    }
-  }, [navigate])
-
-  if (pathname.startsWith('/wonder')) {
-    return (
-      <div className="w-full h-screen overflow-hidden bg-[#F6F4EE] dark:bg-[#150F0D]">
-        <Suspense fallback={<PageLoader />}>
-          {children}
-        </Suspense>
-      </div>
-    )
-  }
-
-  return (
-    // MUHIM (2026-09-01 sticky incident): MOBILDA bu konteynerlarda overflow-y:auto/hidden
-    // TAQIQLANADI — haqiqiy scroll'ni DOCUMENT bajaradi (html/body height:100% +
-    // kontent o'sadi), lekin overflow'li har qanday ajdod STICKY elementlar uchun
-    // scrollport bo'lib qoladi. overflow-x:clip — yagona ruxsat.
-    // DESKTOP (lg+, 2026-09-24 wondering-shell): route-page ATAYLAB scrollport
-    // (lg:overflow-y-auto) — border qotib turadi, kontent panel ICHIDA scroll
-    // bo'ladi; sticky headerlar panel tepasiga yopishadi. Yagona rejali
-    // scrollport — insidentdagi tasodifiy oraliq scrollport EMAS. Root lg'da
-    // viewport balandlikda qulflanadi (document scroll YO'Q).
-    <div className="relative flex flex-col min-h-screen bg-pcanvas text-pfg overflow-x-clip lg:flex-row lg:items-stretch lg:justify-center lg:h-[calc(100dvh-var(--safe-top-body,0px))] lg:overflow-hidden">
-      <DesktopSidebar />
-      <div
-        ref={pageRef}
-        data-tabroot={isTabRootRoute(pathname) ? 'true' : 'false'}
-        // pb: 4.5rem bazaviy (suzuvchi pill balandligi + 1rem nafas olish masofasi) + --safe-bottom (TG fullscreen/APK gesture bar himoyasi)
-        // Desktop (lg+): dock yashirin — pastki padding lg:pb-0 bilan o'chiriladi (o'lik oq bo'shliq yo'q).
-        // konteyner FULL-WIDTH (2026-09-24): max-w cap YO'Q — tor sahifalar
-        // (Profil, Reyting, Topics, Adaptive...) o'z `lg:max-w-2xl` cap'iga ega,
-        // grid sahifalar (Dashboard, Testlar, Shop...) kenglikni to'liq ishlatadi.
-        // Desktop PANEL (wondering.app uslubi): lg'da border+radius+soya bilan
-        // suzuvchi panel — fon lg:bg-pcanvas (sahifalar foniga 1:1 mos, ostida oq chiziq yo'q),
-        // padding YO'Q (px-0 SAQLANADI: PageHeader -mx-4 full-bleed shu'ga tayanadi).
-        // lg:overflow-y-auto — panel ICHKI scrollport (border qotadi, kontent
-        // ichida scroll bo'ladi); lg:min-h-0 flex stretch'da siqilishi uchun SHART.
-        // overflow-x:clip + overflow-y:auto kombinatsiyasi xavfsiz (clip scrollport
-        // yaratmaydi). Mobil'da document scroll (o'zgarish YO'Q).
-        className="route-page relative z-10 flex-1 w-full pb-[calc(4.5rem+var(--safe-bottom,0px))] lg:pb-0 px-0 lg:min-w-0 lg:min-h-0 lg:my-2 lg:mr-2 lg:ml-2 lg:rounded-2xl lg:border lg:border-plineStrong lg:shadow-md lg:overflow-y-auto lg:overscroll-contain lg:bg-pcanvas flex flex-col"
-      >
-        <Suspense fallback={<PageLoader />}>
-          {children}
-        </Suspense>
-      </div>
-      <IosDock />
-    </div>
-  )
 }
 
 export default function App() {
@@ -388,7 +319,7 @@ export default function App() {
       <StreakSaveToast />
       <AchievementCelebrationModal />
       <AchievementDetailSheet />
-      <Layout>
+      <MobileAppShell>
         <Routes>
           <Route path="/"           element={<Dashboard />} />
           <Route path="/testlar"    element={<TestlarPage />} />
@@ -427,10 +358,11 @@ export default function App() {
           <Route path="/ai-tutor"   element={<SnapSolveHub />} />
           <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
           <Route path="/sharhlar"   element={<ReviewsPage />} />
+          <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
           <Route path="/admin"      element={<AdminPage />} />
           <Route path="*"           element={<NotFound />} />
         </Routes>
-      </Layout>
+      </MobileAppShell>
     </HashRouter>
   )
 }

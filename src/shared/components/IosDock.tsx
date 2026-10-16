@@ -5,7 +5,10 @@ import { useModalCount } from '../lib/navigation'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
+import { isTabRootRoute } from '../config/route-chrome'
 import { haptics } from '../../platform/haptics'
+
+export { isTabRootRoute, TAB_ROOT_PATHS } from '../config/route-chrome'
 
 /**
  * Pastki dock FAQAT tab-root (asosiy bo'lim) sahifalarda ko'rinadi.
@@ -18,11 +21,6 @@ import { haptics } from '../../platform/haptics'
  * `/ai-tutor` ro'yxatda EMAS: kamera-first fullscreen ekran (o'z back tugmasi bor),
  * dock kamera UI'ni to'sib qoladi (2026-09-16). Markaz tugma baribir o'sha yerga olib boradi.
  */
-export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
-export function isTabRootRoute(pathname: string): boolean {
-  return (TAB_ROOT_PATHS as readonly string[]).includes(pathname)
-}
-
 interface NavItem {
   id: string
   path: string

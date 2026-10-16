@@ -614,19 +614,20 @@ export default function DialogOverlay({
     >
       <div
         ref={backdropRef}
-        className={`absolute inset-0 ${backdropClassName}`}
+        className={`dialog-backdrop-motion absolute inset-0 ${backdropClassName}`}
         onClick={() => requestClose('backdrop')}
       />
-      {swipeToDismiss && position === 'bottom' ? (
+      {position === 'bottom' ? (
         <div
-          ref={sheetRef}
-          onPointerDown={e => { if (e.pointerType !== 'touch') handlePointerDown(e) }}
-          onPointerMove={e => { if (e.pointerType !== 'touch') handlePointerMove(e) }}
-          onPointerUp={e => { if (e.pointerType !== 'touch') handlePointerUp(e) }}
-          onPointerCancel={e => { if (e.pointerType !== 'touch') handlePointerCancel(e) }}
-          onClickCapture={handleClickCapture}
-          onKeyDownCapture={() => { suppressNextClickRef.current = false }}
-          className="relative z-10 w-full flex justify-center will-change-transform"
+          ref={swipeToDismiss ? sheetRef : undefined}
+          data-dialog-sheet="true"
+          onPointerDown={swipeToDismiss ? (e => { if (e.pointerType !== 'touch') handlePointerDown(e) }) : undefined}
+          onPointerMove={swipeToDismiss ? (e => { if (e.pointerType !== 'touch') handlePointerMove(e) }) : undefined}
+          onPointerUp={swipeToDismiss ? (e => { if (e.pointerType !== 'touch') handlePointerUp(e) }) : undefined}
+          onPointerCancel={swipeToDismiss ? (e => { if (e.pointerType !== 'touch') handlePointerCancel(e) }) : undefined}
+          onClickCapture={swipeToDismiss ? handleClickCapture : undefined}
+          onKeyDownCapture={swipeToDismiss ? (() => { suppressNextClickRef.current = false }) : undefined}
+          className={`dialog-sheet-motion relative z-10 w-full flex justify-center ${swipeToDismiss ? 'will-change-transform' : ''}`}
         >
           {children}
         </div>
