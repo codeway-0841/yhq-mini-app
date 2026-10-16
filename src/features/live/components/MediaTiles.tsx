@@ -26,7 +26,7 @@ export function VideoView({ track, label, speaking, muted = false, large = false
       large ? 'aspect-video w-full' : 'aspect-[4/3] w-full',
       speaking && 'ring-2 ring-psuccess',
     )}>
-      <video ref={ref} muted={muted} playsInline autoPlay className="h-full w-full object-cover" />
+      <video ref={ref} muted={muted} playsInline autoPlay aria-label={label} className="h-full w-full object-cover" />
       <span className="absolute bottom-1.5 left-1.5 max-w-[80%] truncate rounded-xl bg-black/60 px-2 py-0.5 text-[11px] font-semibold text-white">
         {label}
       </span>
