@@ -19,6 +19,7 @@ import {
   PenLine,
   ScanFace,
   Radio,
+  Sparkles,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -67,6 +68,7 @@ export default function ModesPage() {
     { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
     { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
     { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate('/darslik') },
+    { icon: Sparkles,      label: tt('interactiveLessons'), onClick: () => navigate('/interaktiv') },
     { icon: LibraryBig,    label: tt('library'),       onClick: () => navigate('/kutubxona') },
     { icon: Bookmark,      label: tt('saved'),         onClick: goSaved },
     ...(subject.id === 'yhq'

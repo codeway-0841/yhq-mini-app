@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+// Observe aborted incoming transitions before the first rendering opportunity.
+addEventListener('pagereveal', e => e.viewTransition?.ready.catch(() => {}));
+</script>
+<title>Interaktiv Fizika — Kivvi</title>
+<meta name="description" content="Fizika qonuniyatlarini jonli animatsiyalar va ovozli tushuntirish orqali o'rganing.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d2b27'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='48' fill='%23f0b45a'%3E∞%3C/text%3E%3C/svg%3E">
+<link rel="expect" href="#ch01" blocking="render">
+<style>
+:root {
+  --page: #0f1613; --board: #1d2b27; --panel: #22322d; --edge: #3a5047;
+  --chalk: #ece8dc; --dim: #9aaba3; --faint: #5d7068; --task: #f0b45a; --quiz: #86c9e8; --good: #8fd6b0;
+  --ui: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --book: "Iowan Old Style", Palatino, Georgia, serif;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 90px; }
+body { margin: 0; min-height: 100svh; background: var(--board); color: var(--chalk); font: 18px/1.5 var(--ui); }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 42%, transparent 55%, rgba(0, 0, 0, .38)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .92 0 0 0 0 .95 0 0 0 0 .9 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23g)'/%3E%3C/svg%3E"); }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--task); outline-offset: 3px; }
+.kicker { margin: 0; font-size: 15px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--quiz); }
+
+/* ---------- cover ---------- */
+#cover { position: relative; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 48px 16px 64px; text-align: center; overflow: hidden; }
+.open #cover, body:not(.open) #contents { display: none; }
+#cover > * { animation: rise .8s var(--ease) backwards; }
+#cover .mascot { animation: none; margin-bottom: 26px; view-transition-name: guide; }
+#cover .kicker { animation-delay: .9s; }
+#cover h1 { animation-delay: 1s; }
+#cover .lede { animation-delay: 1.12s; }
+#cover .acts { animation-delay: 1.24s; }
+#cover .meta { animation-delay: 1.36s; }
+h1 { margin: 14px 0 18px; font: 500 clamp(44px, 8.4vw, 92px)/1.02 var(--book); letter-spacing: -.01em; view-transition-name: book; }
+h1 i { color: var(--task); font-style: italic; }
+.lede { max-width: 36em; margin: 0 0 34px; color: var(--dim); font-size: clamp(17px, 2.2vw, 20px); text-wrap: balance; }
+.acts { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 30px; border-radius: 999px; font-weight: 600; font-size: 19px; text-decoration: none;
+  transition: transform .25s var(--ease), background-color .25s, border-color .25s; }
+.btn[hidden] { display: none; }
+.btn:hover { transform: translateY(-2px); }
+.btn.go { background: var(--chalk); color: var(--board); }
+.btn.quiet { border: 1.5px solid var(--edge); color: var(--chalk); }
+.btn.quiet:hover { border-color: var(--dim); }
+.btn svg { width: 15px; height: 15px; fill: currentColor; }
+.meta { margin: 30px 0 0; color: var(--faint); font-size: 15px; letter-spacing: .04em; }
+
+/* ---------- contents ---------- */
+#contents { max-width: 1040px; margin: 0 auto; padding: 32px 20px 80px; }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0 32px; border-bottom: 1.5px solid var(--edge); }
+.top .home { display: flex; align-items: center; gap: 14px; text-decoration: none; font-size: 22px; font-weight: 600; }
+.top .home strong { font-family: var(--book); font-weight: 500; font-size: 26px; }
+.top .prog { font-size: 16px; color: var(--dim); }
+.top .prog b { color: var(--good); }
+
+#units { margin-top: 36px; display: flex; flex-direction: column; gap: 48px; }
+.unit h2 { margin: 0 0 18px; font-size: 28px; font-weight: 600; color: var(--c); display: flex; align-items: baseline; gap: 14px; }
+.unit h2 span { font-size: 14px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--dim); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.ch { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 22px; border-radius: 16px;
+  background: var(--panel); border: 1.5px solid var(--edge); text-decoration: none; min-height: 120px;
+  transition: transform .2s var(--ease), border-color .2s; }
+.ch:hover { transform: translateY(-3px); border-color: var(--c); }
+.ch b { font-size: 14px; font-weight: 700; color: var(--c); margin-bottom: 8px; }
+.ch span { font-size: 19px; font-weight: 600; line-height: 1.3; }
+.ch small { margin-top: 14px; font-size: 14px; color: var(--dim); }
+.ch.done b::after { content: " ✓"; color: var(--good); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } }
+</style>
+</head>
+<body>
+
+<section id="cover">
+  <svg class="mascot" width="120" height="84"></svg>
+  <p class="kicker">KIVVI TA'LIM PLATFORMASI</p>
+  <h1>Interaktiv <i>Fizika</i></h1>
+  <p class="lede">Fizika qonuniyatlarini jonli animatsiyalar, diktor ovozi va interaktiv sinovlar orqali o'rganing.</p>
+  <div class="acts">
+    <a class="btn go" href="#contents">Darslarni boshlash<svg viewBox="0 0 16 16"><path d="M6 2.5 11.5 8 6 13.5 4.6 12.1 8.7 8 4.6 3.9z"/></svg></a>
+    <a class="btn quiet" id="resume" hidden></a>
+  </div>
+  <p class="meta" id="meta"></p>
+</section>
+
+<main id="contents">
+  <header class="top">
+    <a class="home" href="#book" aria-label="Muqovaga qaytish"><svg class="mascot" id="guideSmall" width="52" height="36"></svg><strong>Interaktiv <i>Fizika</i></strong></a>
+    <span class="prog" id="prog"></span>
+  </header>
+  <div id="units"></div>
+</main>
+
+<script>
+'use strict';
+const UNITS = [
+  ['Kinematika', [["To'g'ri chiziqli tekis harakat", 4]]],
+  ['Molekulyar fizika va Termodinamika', [["Termodinamik sikllar va P-V diagramma", 5]]]
+];
+const HUES = ['#86c9e8', '#f3c95c', '#8fd6b0', '#f4a48c', '#bba8ee'];
+const id = n => 'ch' + String(n).padStart(2, '0');
+let P = {};
+const BOOK_PROGRESS_KEY = 'animebook:progress:' + new URL('.', location.href).pathname;
+try {
+  const saved = JSON.parse(localStorage.getItem(BOOK_PROGRESS_KEY) || '{}');
+  if (saved && typeof saved === 'object' && !Array.isArray(saved)) P = saved;
+} catch {}
+const done = new Set(Array.isArray(P.done) ? P.done.filter(n => Number.isInteger(n) && n > 0) : []);
+
+let n = 0, total = 0, i = 0;
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+document.getElementById('units').innerHTML = UNITS.map(([name, chs], u) => {
+  return `<section class="unit" style="--c:${HUES[u % HUES.length]};--i:${i++}"><h2><span>${u + 1}-Bo'lim</span>${esc(name)}</h2><div class="grid">` +
+    chs.map(([t, min]) => { n++;
+      const cls = 'ch' + (done.has(n) ? ' done' : '') + (P.last === n ? ' last' : '');
+      return `<a class="${cls}" id="${id(n)}" href="${id(n)}/" style="--i:${i++}"><b>${n}-Mavzu</b><span>${esc(t)}</span><small>${min} daqiqa</small></a>`;
+    }).join('') + '</div></section>';
+}).join('');
+total = n;
+
+const finished = [...done].filter(k => k <= total).length;
+document.getElementById('prog').innerHTML = finished ? `<b>${finished}</b> / ${total} yakunlandi` : `${total} ta dars mavjud`;
+document.getElementById('meta').textContent = `${total} ta mavzu · ${UNITS.length} ta bo'lim · Ovozli va interaktiv`;
+const last = Number.isInteger(P.last) && document.getElementById(id(P.last));
+if (last) {
+  const r = document.getElementById('resume');
+  r.hidden = false;
+  r.href = last.getAttribute('href');
+  r.textContent = `Davom etish · ${P.last}-Mavzu`;
+}
+
+function lemniscate(cx, cy, a, k) {
+  let d = '';
+  for (let i = 0; i <= 96; i++) {
+    const t = i / 96 * 2 * Math.PI, sn = Math.sin(t), q = 1 + sn * sn;
+    d += (i ? 'L' : 'M') + (cx + a * Math.cos(t) / q).toFixed(1) + ' ' + (cy + k * a * sn * Math.cos(t) / q).toFixed(1);
+  }
+  return d + 'Z';
+}
+for (const svg of document.querySelectorAll('svg.mascot')) {
+  svg.setAttribute('viewBox', '0 0 120 84');
+  svg.setAttribute('aria-hidden', 'true');
+  const ln = 'fill="none" stroke="#ece8dc" stroke-linecap="round" stroke-linejoin="round"';
+  svg.innerHTML = `<g class="mbody"><path class="loop" pathLength="1" d="${lemniscate(60, 40, 52, 1.5)}" ${ln} stroke-width="6"/><g class="face">` +
+    [33, 87].map(x => `<circle class="pupil" cx="${x}" cy="40" r="6.5" fill="#ece8dc"/><path class="joy" d="M${x - 7} 43Q${x} 32 ${x + 7} 43" ${ln} stroke-width="4"/>`).join('') +
+    `<path d="M55 62Q60 67 65 62" ${ln} stroke-width="3.5"/></g></g>`;
+}
+
+function show(animate) {
+  const open = location.hash.length > 1 && location.hash !== '#book';
+  document.body.classList.toggle('open', open);
+  const here = open ? document.getElementById(location.hash.slice(1)) : null;
+  if (here?.classList.contains('ch')) here.scrollIntoView({ block: 'center' });
+  else scrollTo(0, 0);
+}
+addEventListener('hashchange', () => show(true));
+show(false);
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "voice": "uz-UZ-MadinaNeural",
+  "rate": "+0%",
+  "beats": {
+    "intro": "Ikkinchi bob. [[piston]]Termodinamik sikllar, birinchi qonun va Karno dvigateli. Gaz bajargan ish, ichki energiya va foydali ish koeffitsiyenti.",
+    "expansion": "Silindr ichidagi ideal gazni ko'rib chiqaylik. Gaz molekulalari [[molecules]]tinimsiz harakatlanib, porshenga bosim beradi. Pastdan issiqlik berilsa, molekulalar tezlashadi va porshenni itarib [[push]]kengayadi. O'zgarmas bosimda gaz bajargan ish [[formula]]a teng pe ko'paytirilgan delta ve ga teng bo'ladi.",
+    "first_law": "Endi termodinamikaning birinchi qonunini ko'ramiz. Gazga berilgan issiqlik miqdori uning [[internal]]ichki energiyasini oshirishga va tashqi kuchlarga qarshi [[work]]ish bajarishga sarflanadi. Q teng delta u qo'shilgan a. Bir atomli gaz uchun ichki energiya o'zgarishi [[delta_u]]uch taqsim ikki nyu er delta tega teng.",
+    "pv_area": "Buni pe ve diagrammada tasvirlaymiz. Gorizontal o'qda hajm, vertikal o'qda bosim. Izobarik kengayish — gorizontal to'g'ri chiziq. Bu yerda eng muhim qonuniyat: [[area]]bu chiziq ostidagi sohaning yuzasi aynan gaz bajargan ishga teng!",
+    "carnot_cycle": "Fransuz fizigi Sadi Karno isbotlagan ideal issiqlik dvigatelini ko'ramiz. Karno sikli to'rtta bosqichdan iborat: [[iso1]]birinchi bosqichda gaz izotermik kengayadi, [[ad1]]ikkinchi bosqichda adiabatik kengayib soviydi, [[iso2]]uchinchi bosqichda izotermik siqiladi va [[ad2]]to'rtinchi bosqichda adiabatik siqilib boshlang'ich holatga qaytadi.",
+    "efficiency": "Dvigatel isitkichdan ku bir issiqlik oladi va sovutkichga ku ikki issiqlikni beradi. Farqi esa [[work_net]]foydali ishga aylanadi. Foydali ish koeffitsiyenti eta teng a taqsim ku bir. Karno sikli uchun bu [[formula_eta]]te bir ayirilgan te ikki taqsim te bir formulasiga teng.",
+    "check_dtm": "DTM imtihon masalasi. Isitkich harorati olti yuz kelvin, sovutkich harorati uch yuz kelvin. Dvigatel isitkichdan bir ming ikki yuz joul issiqlik olsa, uning foydali ish koeffitsiyenti va bajargan sof ishi qancha?",
+    "wrap": "Ushbu darsning to'rtta fundamental qoidasi. [[w1]]Birinchidan, ku teng delta u qo'shilgan a. [[w2]]Ikkinchidan, pe ve grafikda chiziq ostidagi yuza bajarilgan ishga teng. [[w3]]Uchinchidan, sikl ichidagi yopiq yuza dvigatelning sof foydali ishini beradi. [[w4]]To'rtinchidan, Karno siklining effekti eta teng te bir ayirilgan te ikki taqsim te bir ga teng.",
+    "practice": "Mavzu bo'yicha yakuniy amaliy mashg'ulot.",
+    "finish": "Dars yakunlandi. Natijalaringiz bilan tanishing."
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "intro": {
+    "key": "b829c07c3ef1a957add35d293272a8607b3055cb",
+    "dur": 6.792,
+    "words": [
+      [
+        0.1625,
+        "Birinchi"
+      ],
+      [
+        0.55,
+        "bob"
+      ],
+      [
+        1.775,
+        "To'g'ri"
+      ],
+      [
+        2.125,
+        "chiziqli"
+      ],
+      [
+        2.6,
+        "tekis"
+      ],
+      [
+        2.9125,
+        "harakat"
+      ],
+      [
+        4.4,
+        "Tezlik"
+      ],
+      [
+        4.875,
+        "vaqt"
+      ],
+      [
+        5.2,
+        "va"
+      ],
+      [
+        5.3,
+        "masofa"
+      ]
+    ],
+    "marks": {
+      "motion": 1.775
+    },
+    "cues": [
+      [
+        0.163,
+        "Birinchi bob."
+      ],
+      [
+        1.775,
+        "To'g'ri chiziqli tekis harakat."
+      ],
+      [
+        4.4,
+        "Tezlik, vaqt va masofa."
+      ]
+    ]
+  },
+  "speed": {
+    "key": "9615c6141bfe3f9cc23572911997f60d1dfca71c",
+    "dur": 12.456,
+    "words": [
+      [
+        0.15,
+        "Jism"
+      ],
+      [
+        0.5125,
+        "to'g'ri"
+      ],
+      [
+        0.875,
+        "chiziq"
+      ],
+      [
+        1.225,
+        "bo'ylab"
+      ],
+      [
+        1.6,
+        "harakatlanmoqda"
+      ],
+      [
+        3.55,
+        "U"
+      ],
+      [
+        3.65,
+        "har"
+      ],
+      [
+        3.925,
+        "bir"
+      ],
+      [
+        4.0875,
+        "soniyada"
+      ],
+      [
+        4.625,
+        "bir"
+      ],
+      [
+        4.8125,
+        "xil"
+      ],
+      [
+        5.0,
+        "masofani"
+      ],
+      [
+        5.575,
+        "bosib"
+      ],
+      [
+        5.9375,
+        "o'tadi"
+      ],
+      [
+        7.2875,
+        "Harakat"
+      ],
+      [
+        7.7375,
+        "davomida"
+      ],
+      [
+        8.2125,
+        "tezlik"
+      ],
+      [
+        8.6375,
+        "o'zgarmas"
+      ],
+      [
+        9.2,
+        "saqlansa"
+      ],
+      [
+        9.875,
+        "bu"
+      ],
+      [
+        10.075,
+        "tekis"
+      ],
+      [
+        10.3875,
+        "harakat"
+      ],
+      [
+        10.825,
+        "deb"
+      ],
+      [
+        11.025,
+        "ataladi"
+      ]
+    ],
+    "marks": {
+      "start": 1.6,
+      "equal": 4.625,
+      "uniform": 10.075
+    },
+    "cues": [
+      [
+        0.15,
+        "Jism to'g'ri chiziq bo'ylab harakatlanmoqda."
+      ],
+      [
+        3.55,
+        "U har bir soniyada bir xil masofani bosib o'tadi."
+      ],
+      [
+        7.287,
+        "Harakat davomida tezlik o'zgarmas saqlansa, bu tekis harakat deb ataladi."
+      ]
+    ]
+  },
+  "formula": {
+    "key": "dc1b0c957f9d146f6b9a1c43de2433ba85232f00",
+    "dur": 17.928,
+    "words": [
+      [
+        0.175,
+        "Masalan"
+      ],
+      [
+        0.75,
+        "avtomobil"
+      ],
+      [
+        1.4125,
+        "oltmish"
+      ],
+      [
+        1.875,
+        "metr"
+      ],
+      [
+        2.2,
+        "masofani"
+      ],
+      [
+        2.8,
+        "uch"
+      ],
+      [
+        2.9875,
+        "soniyada"
+      ],
+      [
+        3.475,
+        "bosib"
+      ],
+      [
+        3.8625,
+        "o'tdi"
+      ],
+      [
+        5.175,
+        "Bir"
+      ],
+      [
+        5.35,
+        "soniyada"
+      ],
+      [
+        5.8625,
+        "bosib"
+      ],
+      [
+        6.225,
+        "o'tilgan"
+      ],
+      [
+        6.7125,
+        "masofani"
+      ],
+      [
+        7.3,
+        "topish"
+      ],
+      [
+        7.65,
+        "uchun"
+      ],
+      [
+        7.925,
+        "masofani"
+      ],
+      [
+        8.5,
+        "vaqtga"
+      ],
+      [
+        8.8625,
+        "bo'lamiz"
+      ],
+      [
+        10.3375,
+        "Oltmish"
+      ],
+      [
+        10.7625,
+        "bo'lingan"
+      ],
+      [
+        11.3125,
+        "uch"
+      ],
+      [
+        11.5875,
+        "yigirma"
+      ],
+      [
+        12.075,
+        "metr"
+      ],
+      [
+        12.4125,
+        "taqsim"
+      ],
+      [
+        12.8125,
+        "sekund"
+      ],
+      [
+        14.2375,
+        "Demak"
+      ],
+      [
+        14.675,
+        "tezlik"
+      ],
+      [
+        15.0875,
+        "masofaning"
+      ],
+      [
+        15.7375,
+        "vaqtga"
+      ],
+      [
+        16.1125,
+        "nisbatiga"
+      ],
+      [
+        16.6875,
+        "teng"
+      ]
+    ],
+    "marks": {
+      "calc": 10.338,
+      "form": 14.675
+    },
+    "cues": [
+      [
+        0.175,
+        "Masalan, avtomobil oltmish metr masofani uch soniyada bosib o'tdi."
+      ],
+      [
+        5.175,
+        "Bir soniyada bosib o'tilgan masofani topish uchun masofani vaqtga bo'lamiz."
+      ],
+      [
+        10.338,
+        "Oltmish bo'lingan uch, yigirma metr taqsim sekund."
+      ],
+      [
+        14.238,
+        "Demak, tezlik masofaning vaqtga nisbatiga teng."
+      ]
+    ]
+  },
+  "check1": {
+    "key": "90aa5eb731b7ef2fef90be5b2994334258dea382",
+    "dur": 9.024,
+    "words": [
+      [
+        0.1375,
+        "Tezkor"
+      ],
+      [
+        0.5625,
+        "sinov"
+      ],
+      [
+        2.0,
+        "Avtomobil"
+      ],
+      [
+        2.5875,
+        "yuz"
+      ],
+      [
+        2.85,
+        "yigirma"
+      ],
+      [
+        3.275,
+        "metr"
+      ],
+      [
+        3.6,
+        "masofani"
+      ],
+      [
+        4.2,
+        "to'rt"
+      ],
+      [
+        4.5,
+        "soniyada"
+      ],
+      [
+        4.9875,
+        "bosib"
+      ],
+      [
+        5.3625,
+        "o'tdi"
+      ],
+      [
+        6.6875,
+        "Uning"
+      ],
+      [
+        6.9625,
+        "tezligini"
+      ],
+      [
+        7.525,
+        "hisoblang"
+      ]
+    ],
+    "marks": {},
+    "cues": [
+      [
+        0.138,
+        "Tezkor sinov."
+      ],
+      [
+        2.0,
+        "Avtomobil yuz yigirma metr masofani to'rt soniyada bosib o'tdi."
+      ],
+      [
+        6.688,
+        "Uning tezligini hisoblang."
+      ]
+    ]
+  },
+  "graph": {
+    "key": "3eb386c189612f18b748fe77762e72a9daa553d4",
+    "dur": 12.576,
+    "words": [
+      [
+        0.1625,
+        "Endi"
+      ],
+      [
+        0.425,
+        "harakatni"
+      ],
+      [
+        1.0,
+        "grafikda"
+      ],
+      [
+        1.525,
+        "ko'ramiz"
+      ],
+      [
+        3.075,
+        "Vaqt"
+      ],
+      [
+        3.375,
+        "o'tishi"
+      ],
+      [
+        3.7,
+        "bilan"
+      ],
+      [
+        3.9875,
+        "bosib"
+      ],
+      [
+        4.3375,
+        "o'tilgan"
+      ],
+      [
+        4.8625,
+        "masofa"
+      ],
+      [
+        5.3375,
+        "to'g'ri"
+      ],
+      [
+        5.7,
+        "chiziq"
+      ],
+      [
+        6.05,
+        "bo'yicha"
+      ],
+      [
+        6.4125,
+        "ortib"
+      ],
+      [
+        6.7875,
+        "boradi"
+      ],
+      [
+        8.1375,
+        "Agar"
+      ],
+      [
+        8.45,
+        "tezlik"
+      ],
+      [
+        8.8625,
+        "kattaroq"
+      ],
+      [
+        9.375,
+        "bo'lsa"
+      ],
+      [
+        9.8125,
+        "chiziq"
+      ],
+      [
+        10.2,
+        "yanada"
+      ],
+      [
+        10.5625,
+        "tikroq"
+      ],
+      [
+        11.0,
+        "ko'tariladi"
+      ]
+    ],
+    "marks": {
+      "line": 3.987,
+      "fast": 9.812
+    },
+    "cues": [
+      [
+        0.163,
+        "Endi harakatni grafikda ko'ramiz."
+      ],
+      [
+        3.075,
+        "Vaqt o'tishi bilan bosib o'tilgan masofa to'g'ri chiziq bo'yicha ortib boradi."
+      ],
+      [
+        8.137,
+        "Agar tezlik kattaroq bo'lsa, chiziq yanada tikroq ko'tariladi."
+      ]
+    ]
+  },
+  "check2": {
+    "key": "d070c4a74c98b36d1cd18ef065c5dc1e694904d1",
+    "dur": 6.816,
+    "words": [
+      [
+        0.1375,
+        "Grafik"
+      ],
+      [
+        0.575,
+        "bo'yicha"
+      ],
+      [
+        0.925,
+        "savol"
+      ],
+      [
+        2.2875,
+        "Grafigimizga"
+      ],
+      [
+        3.0375,
+        "ko'ra"
+      ],
+      [
+        3.45,
+        "ikki"
+      ],
+      [
+        3.725,
+        "soniyada"
+      ],
+      [
+        4.2375,
+        "qancha"
+      ],
+      [
+        4.6,
+        "masofa"
+      ],
+      [
+        5.0375,
+        "bosib"
+      ],
+      [
+        5.3875,
+        "o'tilgan"
+      ]
+    ],
+    "marks": {},
+    "cues": [
+      [
+        0.138,
+        "Grafik bo'yicha savol."
+      ],
+      [
+        2.288,
+        "Grafigimizga ko'ra, ikki soniyada qancha masofa bosib o'tilgan?"
+      ]
+    ]
+  },
+  "wrap": {
+    "key": "e1c2976417eb57c5b1d33a59d65fcabecb72dd96",
+    "dur": 17.832,
+    "words": [
+      [
+        0.1625,
+        "Ushbu"
+      ],
+      [
+        0.475,
+        "darsning"
+      ],
+      [
+        0.9375,
+        "uchta"
+      ],
+      [
+        1.225,
+        "asosiy"
+      ],
+      [
+        1.675,
+        "qoidasi"
+      ],
+      [
+        3.2375,
+        "Birinchidan"
+      ],
+      [
+        3.9,
+        "tezlik"
+      ],
+      [
+        4.3125,
+        "masofaning"
+      ],
+      [
+        4.95,
+        "vaqtga"
+      ],
+      [
+        5.325,
+        "nisbatiga"
+      ],
+      [
+        5.9,
+        "teng"
+      ],
+      [
+        7.2,
+        "Ikkinchidan"
+      ],
+      [
+        7.95,
+        "xalqaro"
+      ],
+      [
+        8.4625,
+        "birliklar"
+      ],
+      [
+        9.0125,
+        "sistemasida"
+      ],
+      [
+        9.675,
+        "tezlik"
+      ],
+      [
+        10.1125,
+        "metr"
+      ],
+      [
+        10.45,
+        "taqsim"
+      ],
+      [
+        10.875,
+        "sekundda"
+      ],
+      [
+        11.3375,
+        "o'lchanadi"
+      ],
+      [
+        12.9125,
+        "Uchinchidan"
+      ],
+      [
+        13.5625,
+        "tekis"
+      ],
+      [
+        13.875,
+        "harakatning"
+      ],
+      [
+        14.475,
+        "masofa"
+      ],
+      [
+        14.95,
+        "grafigi"
+      ],
+      [
+        15.4625,
+        "to'g'ri"
+      ],
+      [
+        15.8375,
+        "chiziqdan"
+      ],
+      [
+        16.3625,
+        "iborat"
+      ]
+    ],
+    "marks": {
+      "w1": 3.237,
+      "w2": 7.2,
+      "w3": 12.912
+    },
+    "cues": [
+      [
+        0.163,
+        "Ushbu darsning uchta asosiy qoidasi."
+      ],
+      [
+        3.237,
+        "Birinchidan, tezlik masofaning vaqtga nisbatiga teng."
+      ],
+      [
+        7.2,
+        "Ikkinchidan, xalqaro birliklar sistemasida tezlik metr taqsim sekundda o'lchanadi."
+      ],
+      [
+        12.912,
+        "Uchinchidan, tekis harakatning masofa grafigi to'g'ri chiziqdan iborat."
+      ]
+    ]
+  },
+  "practice": {
+    "key": "5c04cb83a09ad3a5e50a5aa6465baac9d96cb968",
+    "dur": 3.072,
+    "words": [
+      [
+        0.175,
+        "Mavzu"
+      ],
+      [
+        0.5625,
+        "bo'yicha"
+      ],
+      [
+        0.95,
+        "yakuniy"
+      ],
+      [
+        1.4125,
+        "amaliy"
+      ],
+      [
+        1.8,
+        "mashq"
+      ]
+    ],
+    "marks": {},
+    "cues": [
+      [
+        0.175,
+        "Mavzu bo'yicha yakuniy amaliy mashq."
+      ]
+    ]
+  },
+  "finish": {
+    "key": "197dbda5c7f03edc4835934bbd596c1ecff9008c",
+    "dur": 4.8,
+    "words": [
+      [
+        0.1375,
+        "Dars"
+      ],
+      [
+        0.45,
+        "yakunlandi"
+      ],
+      [
+        2.15,
+        "Natijalaringiz"
+      ],
+      [
+        3.0625,
+        "bilan"
+      ],
+      [
+        3.3625,
+        "tanishing"
+      ]
+    ],
+    "marks": {},
+    "cues": [
+      [
+        0.138,
+        "Dars yakunlandi."
+      ],
+      [
+        2.15,
+        "Natijalaringiz bilan tanishing."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "voice": "uz-UZ-MadinaNeural",
+  "rate": "+0%",
+  "beats": {
+    "intro": "Birinchi bob. [[motion]]To'g'ri chiziqli tekis harakat. Tezlik, vaqt va masofa.",
+    "speed": "Jism to'g'ri chiziq bo'ylab [[start]]harakatlanmoqda. U har bir soniyada [[equal]]bir xil masofani bosib o'tadi. Harakat davomida tezlik o'zgarmas saqlansa, bu [[uniform]]tekis harakat deb ataladi.",
+    "formula": "Masalan, avtomobil oltmish metr masofani uch soniyada bosib o'tdi. Bir soniyada bosib o'tilgan masofani topish uchun masofani vaqtga bo'lamiz. [[calc]]Oltmish bo'lingan uch, yigirma metr taqsim sekund. Demak, [[form]]tezlik masofaning vaqtga nisbatiga teng.",
+    "check1": "Tezkor sinov. Avtomobil yuz yigirma metr masofani to'rt soniyada bosib o'tdi. Uning tezligini hisoblang.",
+    "graph": "Endi harakatni grafikda ko'ramiz. Vaqt o'tishi bilan [[line]]bosib o'tilgan masofa to'g'ri chiziq bo'yicha ortib boradi. Agar tezlik kattaroq bo'lsa, [[fast]]chiziq yanada tikroq ko'tariladi.",
+    "check2": "Grafik bo'yicha savol. Grafigimizga ko'ra, ikki soniyada qancha masofa bosib o'tilgan?",
+    "wrap": "Ushbu darsning uchta asosiy qoidasi. [[w1]]Birinchidan, tezlik masofaning vaqtga nisbatiga teng. [[w2]]Ikkinchidan, xalqaro birliklar sistemasida tezlik metr taqsim sekundda o'lchanadi. [[w3]]Uchinchidan, tekis harakatning masofa grafigi to'g'ri chiziqdan iborat.",
+    "practice": "Mavzu bo'yicha yakuniy amaliy mashq.",
+    "finish": "Dars yakunlandi. Natijalaringiz bilan tanishing."
+  }
+}

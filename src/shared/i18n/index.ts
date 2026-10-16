@@ -192,6 +192,11 @@ const UZ = {
   mistakeFixDesc: "Xato tuzatish",
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
   tryWord: "Sinash",
+  // Interaktiv darslik (Papermorph animated engine)
+  interactiveLessons: "Interaktiv Darslik",
+  interactiveLessonsDesc: "3Blue1Brown uslubidagi jonli animatsiyalar va diktor ovozi",
+  interactiveLessonsCta: "Animatsion darsni ochish",
+  interactiveLessonsReward: "Dars yakunlandi! +{coins} tanga va +{xp} XP hisobingizga qo'shildi!",
   // Shpargalkalar (formulalar)
   cheatsheets: "Shpargalkalar", cheatsheetsDesc: "Barcha fanlar uchun formulalar to'plami",
   searchFormula: "Qidirish...", favFormulas: "Sevimli formulalarim",
@@ -1153,6 +1158,11 @@ const RU: Record<Keys, string> = {
   mistakeFixDesc: "Исправление ошибок",
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
   tryWord: "Попробовать",
+  // Интерактивный учебник (Papermorph animated engine)
+  interactiveLessons: "Интерактивный учебник",
+  interactiveLessonsDesc: "Живые анимации и голос диктора в стиле 3Blue1Brown",
+  interactiveLessonsCta: "Открыть интерактивный урок",
+  interactiveLessonsReward: "Урок завершен! +{coins} монет и +{xp} XP начислено!",
   // Шпаргалки (формулы)
   cheatsheets: "Шпаргалки", cheatsheetsDesc: "Формулы по всем предметам",
   searchFormula: "Поиск...", favFormulas: "Избранные формулы",

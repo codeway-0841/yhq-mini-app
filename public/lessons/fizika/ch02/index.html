@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termodinamik sikllar va Karno dvigateli — Fizika</title>
+<link rel="stylesheet" href="../../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render">
+<style>
+  .pulse-gold { animation: pulseG 1.8s infinite; }
+  @keyframes pulseG { 0%, 100% { opacity: 0.95; } 50% { opacity: 0.45; } }
+  .flame-glow { filter: drop-shadow(0 0 18px rgba(255, 140, 20, 0.85)); }
+  .piston-shadow { filter: drop-shadow(0 6px 14px rgba(0,0,0,0.6)); }
+  .carnot-flow { stroke-dasharray: 8 6; animation: flowDash 2.5s linear infinite; }
+  @keyframes flowDash { to { stroke-dashoffset: -28; } }
+</style>
+</head>
+<body>
+<script src="../../lib/engine.js"></script>
+<script src="audio/uz/timings.js"></script>
+<script>
+'use strict';
+
+const CHAPTER = {
+  number: 2,
+  title: "Termodinamik sikllar va Karno dvigateli",
+  subject: "fizika",
+  minutes: 6,
+  language: "uz",
+  next: null
+};
+
+/* ---------- helper wrappers ---------- */
+const mline = (p, parts, x, y, t0, fill = COL.chalk, size = 48, anchor = 'middle') => {
+  const e = M(p, [].concat(parts), { x, y, size, fill, anchor, o: 0 });
+  show(e, t0);
+  return e;
+};
+
+const text = (p, str, x, y, t0, { size = 30, fill = COL.chalk, anchor = 'start', weight = 500 } = {}) => {
+  const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 });
+  show(e, t0);
+  return e;
+};
+
+/* ---------- BEATS ---------- */
+const BEATS = [
+  ['intro', 'Kirish', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    chip(g, ['2-Bob', ' • ', 'Termodinamika'], COL.quiz, { x: 800, y: 260, size: 24 });
+    T(g, "Termodinamik sikllar va Karno dvigateli", { x: 800, y: 370, size: 62, weight: 700, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.0, out);
+
+    const sub = text(scene, "1-qonun, ichki energiya va foydali ish koeffitsiyenti", 800, 480, m('piston', .2), {
+      size: 34, fill: COL.dim, anchor: 'middle', weight: 500
+    });
+
+    const fPreview = mline(scene, ['Q = ΔU + A', '     |     ', 'η = ', F('T_1 - T_2', 'T_1')], 800, 610, m('piston', .6), COL.task, 46);
+
+    tw(g, { o: 0, y: -24 }, D - .8, .7);
+    hide(sub, D - .8, .7);
+    hide(fPreview, D - .8, .7);
+  }],
+
+  ['expansion', 'Kengayish va ish', (m, D) => {
+    const p = panel(0);
+
+    text(p, "Silindr ichidagi gazning kengayishi va bajarilgan ish", 800, 110, .2, { size: 38, weight: 600, anchor: 'middle' });
+
+    // Left visual: Mechanical Cylinder
+    const cylX = 380, cylY = 210, cylW = 280, cylH = 460;
+    const gCyl = G(p, { o: 0 });
+    show(gCyl, .3);
+
+    // Cylinder chamber walls
+    path(gCyl, `M ${cylX} ${cylY} V ${cylY + cylH} H ${cylX + cylW} V ${cylY}`, {
+      fill: 'rgba(255,255,255,0.03)',
+      stroke: COL.dim,
+      'stroke-width': 4
+    });
+
+    // Piston
+    const pistonInitY = cylY + 220;
+    const pistonFinalY = cylY + 90;
+    const gPiston = G(gCyl, { y: pistonInitY, class: 'piston-shadow' });
+
+    mk('rect', { x: cylX + 4, y: 0, width: cylW - 8, height: 26, rx: 4, fill: '#3a4b60', stroke: COL.chalk, 'stroke-width': 2 }, gPiston);
+    mk('rect', { x: cylX + cylW/2 - 12, y: -160, width: 24, height: 160, rx: 4, fill: '#556980', stroke: COL.chalk, 'stroke-width': 2 }, gPiston);
+
+    // Gas molecules
+    const gGas = G(gCyl, {});
+    const dots = [
+      [cylX + 60, cylY + 280], [cylX + 140, cylY + 310], [cylX + 220, cylY + 270],
+      [cylX + 90, cylY + 370], [cylX + 190, cylY + 360], [cylX + 140, cylY + 410],
+      [cylX + 70, cylY + 430], [cylX + 230, cylY + 420]
+    ];
+    const dotEls = dots.map(([x, y]) => mk('circle', { cx: x, cy: y, r: 7, fill: COL.task }, gGas));
+
+    const vol1 = text(gCyl, "Hajm: V₁", cylX + cylW/2, cylY + 330, .4, { size: 26, fill: COL.dim, anchor: 'middle' });
+
+    // Flame underneath
+    const gFlame = G(gCyl, { o: 0, class: 'flame-glow' });
+    path(gFlame, `M ${cylX + cylW/2 - 35} ${cylY + cylH + 30} Q ${cylX + cylW/2} ${cylY + cylH - 15} ${cylX + cylW/2 + 35} ${cylY + cylH + 30} Q ${cylX + cylW/2} ${cylY + cylH + 10} ${cylX + cylW/2 - 35} ${cylY + cylH + 30}`, {
+      fill: '#f59e0b', stroke: '#ef4444', 'stroke-width': 2
+    });
+
+    show(gFlame, m('push', -0.5));
+    dotEls.forEach((dot, idx) => {
+      tw(dot, { fill: '#f97316' }, m('push', -0.3 + idx * 0.05), .4);
+    });
+
+    tw(gPiston, { y: pistonFinalY }, m('push', 0.2), 1.8, io);
+    hide(vol1, m('push', 0.2), .3);
+    text(gCyl, "Hajm: V₂ (V₂ > V₁)", cylX + cylW/2, cylY + 330, m('push', 1.2), { size: 28, fill: COL.good, weight: 600, anchor: 'middle' });
+
+    // Right side: Derivation Cards
+    const rx = 780;
+    const gDeriv = G(p, { x: rx, y: 210, o: 0 });
+    show(gDeriv, .4);
+
+    text(gDeriv, "Gaz bajargan ish formulasi:", 0, 0, .4, { size: 30, weight: 600, fill: COL.quiz });
+
+    const step1 = G(gDeriv, { y: 60, o: 0 });
+    text(step1, "1. Porshenga ta'sir qiluvchi bosim kuchi:", 0, 0, .6, { size: 24, fill: COL.dim });
+    mline(step1, ['F = p · S'], 30, 45, .8, COL.chalk, 34, 'start');
+    show(step1, .6);
+
+    const step2 = G(gDeriv, { y: 170, o: 0 });
+    text(step2, "2. Porshen ko'tarilganda bajarilgan mexanik ish:", 0, 0, m('formula', -1.0), { size: 24, fill: COL.dim });
+    mline(step2, ['A = F · Δh = p · (S · Δh)'], 30, 45, m('formula', -0.8), COL.chalk, 34, 'start');
+    show(step2, m('formula', -1.0));
+
+    const step3 = G(gDeriv, { y: 280, o: 0 });
+    text(step3, "3. Asos yuzasi ko'paytirilgan balandlik — hajm o'zgarishi (ΔV):", 0, 0, m('formula', 0.1), { size: 24, fill: COL.dim });
+    mk('rect', { x: 20, y: 35, width: 360, height: 75, rx: 12, fill: 'rgba(79, 163, 227, 0.15)', stroke: COL.task, 'stroke-width': 2.5 }, step3);
+    mline(step3, ['A = p · ΔV'], 200, 84, m('formula', 0.3), COL.task, 46, 'middle');
+    show(step3, m('formula', 0.1));
+  }],
+
+  ['first_law', '1-Qonun va ichki energiya', (m, D) => {
+    const p = panel(0);
+
+    text(p, "Termodinamikaning 1-qonuni: Q = ΔU + A", 800, 110, .2, { size: 40, weight: 700, anchor: 'middle' });
+
+    // Energy balance visual flow
+    const gFlow = G(p, { x: 220, y: 220, o: 0 });
+    show(gFlow, .3);
+
+    // Box: Berilgan issiqlik Q
+    mk('rect', { x: 0, y: 60, width: 260, height: 160, rx: 16, fill: '#1f1610', stroke: '#f59e0b', 'stroke-width': 3 }, gFlow);
+    T(gFlow, "Berilgan Issiqlik", { x: 130, y: 110, size: 24, fill: '#f59e0b', weight: 700, anchor: 'middle' });
+    mline(gFlow, ['Q'], 130, 175, .4, '#f59e0b', 56, 'middle');
+
+    // Split arrows to ΔU and A
+    path(gFlow, `M 260 140 H 420`, { stroke: COL.chalk, 'stroke-width': 4 });
+    path(gFlow, `M 420 140 V 40 H 540`, { stroke: '#f97316', 'stroke-width': 3.5 });
+    path(gFlow, `M 420 140 V 240 H 540`, { stroke: COL.task, 'stroke-width': 3.5 });
+
+    // Arrowheads
+    path(gFlow, `M 530 33 L 545 40 L 530 47 Z`, { fill: '#f97316' });
+    path(gFlow, `M 530 233 L 545 240 L 530 247 Z`, { fill: COL.task });
+
+    // Box: Ichki energiya o'zgarishi ΔU
+    const gU = G(gFlow, { x: 550, y: -20, o: 0 });
+    mk('rect', { x: 0, y: 0, width: 560, height: 120, rx: 14, fill: '#21130d', stroke: '#f97316', 'stroke-width': 2.5 }, gU);
+    T(gU, "1. Ichki energiya ortishi (Gaz qiziydi):", { x: 20, y: 35, size: 22, fill: '#f97316', weight: 600 });
+    mline(gU, ['ΔU = ', F('3', '2'), ' νR ΔT = ', F('3', '2'), ' p · ΔV'], 20, 85, m('internal', 0.2), COL.chalk, 30, 'start');
+    show(gU, m('internal', 0.1));
+
+    // Box: Gaz bajargan ish A
+    const gA = G(gFlow, { x: 550, y: 180, o: 0 });
+    mk('rect', { x: 0, y: 0, width: 560, height: 120, rx: 14, fill: '#0f1a26', stroke: COL.task, 'stroke-width': 2.5 }, gA);
+    T(gA, "2. Tashqi kuchlarga qarshi bajarilgan ish:", { x: 20, y: 35, size: 22, fill: COL.task, weight: 600 });
+    mline(gA, ['A = p · ΔV'], 20, 85, m('work', 0.2), COL.task, 34, 'start');
+    show(gA, m('work', 0.1));
+
+    // Bottom summary card: Izobarik taqsimot
+    const gSum = G(p, { x: 220, y: 550, o: 0 });
+    mk('rect', { x: 0, y: 0, width: 1140, height: 130, rx: 16, fill: '#141d2b', stroke: COL.quiz, 'stroke-width': 2 }, gSum);
+    chip(gSum, ['DTM Muhim qoida'], COL.quiz, { x: 30, y: 30, size: 20 });
+    T(gSum, "Izobarik kengayishda issiqlikning taqsimlanishi:", { x: 210, y: 35, size: 22, fill: COL.chalk, weight: 600 });
+    mline(gSum, ['Q = ΔU + A = ', F('3', '2'), ' pΔV + pΔV = ', F('5', '2'), ' pΔV'], 30, 95, m('delta_u', 0.2), COL.quiz, 30, 'start');
+    T(gSum, "Ish gazga berilgan issiqlikning atigi 40% ini tashkil qiladi (A = 0.4 · Q)", { x: 540, y: 95, size: 22, fill: COL.dim, weight: 500 });
+    show(gSum, m('delta_u', 0.1));
+  }],
+
+  ['pv_area', 'P-V diagramma', (m, D) => {
+    const p = panel(0);
+
+    text(p, "P-V koordinata sistemasida gaz bajargan ish", 800, 110, .2, { size: 38, weight: 600, anchor: 'middle' });
+
+    const x0 = 360, y0 = 560, gw = 680, gh = 340;
+    const VX = v => x0 + ((v - 0) / 5) * gw;
+    const PY = pr => y0 - ((pr - 0) / 400) * gh;
+
+    const gAxes = G(p, { o: 0 });
+    path(gAxes, `M ${x0} ${y0 - gh - 20} V ${y0} H ${x0 + gw + 40}`, { stroke: COL.chalk, 'stroke-width': 3 });
+    path(gAxes, `M ${x0 - 8} ${y0 - gh - 10} L ${x0} ${y0 - gh - 25} L ${x0 + 8} ${y0 - gh - 10}`, { fill: COL.chalk });
+    path(gAxes, `M ${x0 + gw + 30} ${y0 - 8} L ${x0 + gw + 45} ${y0} L ${x0 + gw + 30} ${y0 + 8}`, { fill: COL.chalk });
+
+    text(gAxes, "p [kPa]", x0 - 20, y0 - gh - 35, .3, { size: 26, fill: COL.task, weight: 600, anchor: 'end' });
+    text(gAxes, "V [m³]", x0 + gw + 50, y0 + 10, .3, { size: 26, fill: COL.quiz, weight: 600, anchor: 'start' });
+
+    for (let v = 1; v <= 5; v++) {
+      path(gAxes, `M ${VX(v)} ${y0} V ${y0 + 10}`, { stroke: COL.dim, 'stroke-width': 2 });
+      text(gAxes, String(v), VX(v), y0 + 38, .4, { size: 24, fill: COL.dim, anchor: 'middle' });
+    }
+    for (let pr = 100; pr <= 400; pr += 100) {
+      path(gAxes, `M ${x0 - 10} ${PY(pr)} H ${x0}`, { stroke: COL.dim, 'stroke-width': 2 });
+      text(gAxes, String(pr), x0 - 20, PY(pr) + 8, .4, { size: 24, fill: COL.dim, anchor: 'end' });
+    }
+    show(gAxes, .2);
+
+    const pt1 = { x: VX(1), y: PY(300) };
+    const pt2 = { x: VX(4), y: PY(300) };
+
+    const gArea = G(p, { o: 0 });
+    mk('polygon', {
+      points: `${pt1.x},${y0} ${pt1.x},${pt1.y} ${pt2.x},${pt2.y} ${pt2.x},${y0}`,
+      fill: 'rgba(79, 163, 227, 0.28)',
+      stroke: COL.task,
+      'stroke-width': 1.5,
+      'stroke-dasharray': '6 4'
+    }, gArea);
+    show(gArea, m('area', 0.1));
+
+    const gProj = G(p, { o: 0 });
+    path(gProj, `M ${pt1.x} ${pt1.y} V ${y0} M ${pt2.x} ${pt2.y} V ${y0} M ${pt1.x} ${pt1.y} H ${x0}`, { stroke: COL.dim, 'stroke-dasharray': '5 5', 'stroke-width': 2 });
+    show(gProj, .5);
+
+    const lineExp = path(p, `M ${pt1.x} ${pt1.y} L ${pt2.x} ${pt2.y}`, { stroke: COL.good, 'stroke-width': 5 }, { d: 0 });
+    draw(lineExp, .8, 1.0);
+    mk('circle', { cx: pt1.x, cy: pt1.y, r: 8, fill: COL.good }, p);
+    mk('circle', { cx: pt2.x, cy: pt2.y, r: 8, fill: COL.good }, p);
+    text(p, "1", pt1.x - 20, pt1.y - 15, .8, { size: 26, fill: COL.good, weight: 700 });
+    text(p, "2", pt2.x + 12, pt2.y - 15, 1.6, { size: 26, fill: COL.good, weight: 700 });
+
+    const gBadge = G(p, { x: (pt1.x + pt2.x) / 2, y: (pt1.y + y0) / 2, o: 0 });
+    mk('rect', { x: -140, y: -38, width: 280, height: 76, rx: 12, fill: '#142032', stroke: COL.task, 'stroke-width': 2.5 }, gBadge);
+    T(gBadge, "Yuza = Ish (A)", { x: 0, y: -6, size: 26, fill: COL.task, weight: 700, anchor: 'middle' });
+    T(gBadge, "A = 300 kPa · 3 m³ = 900 kJ", { x: 0, y: 24, size: 20, fill: COL.chalk, anchor: 'middle', font: MATH });
+    show(gBadge, m('area', 0.2));
+
+    const rx = 1120;
+    const gCard = G(p, { x: rx, y: 220, o: 0 });
+    mk('rect', { x: 0, y: 0, width: 400, height: 320, rx: 16, fill: '#111824', stroke: COL.dim, 'stroke-width': 2 }, gCard);
+    chip(gCard, ['Asosiy qoida'], COL.quiz, { x: 30, y: 35, size: 22 });
+    T(gCard, "P-V Geometrik Qoidasi", { x: 30, y: 90, size: 28, weight: 700, fill: COL.chalk });
+    T(gCard, "Har qanday termodinamik", { x: 30, y: 135, size: 22, fill: COL.dim });
+    T(gCard, "jarayonda chiziq ostidagi", { x: 30, y: 168, size: 22, fill: COL.dim });
+    T(gCard, "sohaning geometrik yuzasi —", { x: 30, y: 201, size: 22, fill: COL.dim });
+    T(gCard, "gaz bajargan ishga teng!", { x: 30, y: 236, size: 24, weight: 700, fill: COL.task });
+    show(gCard, m('area', 0.2));
+  }],
+
+  ['carnot_cycle', 'Karno sikli', (m, D) => {
+    const p = panel(0);
+    S.carnotPanel = p;
+
+    text(p, "Ideal Karno sikli (2 ta izoterma va 2 ta adiabata)", 800, 100, .2, { size: 38, weight: 600, anchor: 'middle' });
+
+    // Coordinate system: Origin at (260, 580), w = 720, h = 380
+    const x0 = 260, y0 = 580, gw = 720, gh = 380;
+    const VX = v => x0 + ((v - 0) / 5) * gw;
+    const PY = pr => y0 - ((pr - 0) / 400) * gh;
+    S.VX = VX; S.PY = PY;
+
+    const gAxes = G(p, { o: 0 });
+    path(gAxes, `M ${x0} ${y0 - gh - 20} V ${y0} H ${x0 + gw + 40}`, { stroke: COL.chalk, 'stroke-width': 3 });
+    text(gAxes, "p [bosim]", x0 - 20, y0 - gh - 35, .3, { size: 26, fill: COL.task, weight: 600, anchor: 'end' });
+    text(gAxes, "V [hajm]", x0 + gw + 50, y0 + 10, .3, { size: 26, fill: COL.quiz, weight: 600, anchor: 'start' });
+    show(gAxes, .2);
+
+    // 4 States of Carnot cycle
+    const p1 = { x: VX(1.1), y: PY(350) }; // State 1: High P, low V, T1
+    const p2 = { x: VX(2.3), y: PY(220) }; // State 2: Isothermal expansion at T1
+    const p3 = { x: VX(3.8), y: PY(100) }; // State 3: Adiabatic expansion to T2
+    const p4 = { x: VX(2.0), y: PY(150) }; // State 4: Isothermal compression at T2
+
+    // Shaded net work area inside Carnot cycle
+    const carnotPathD = `M ${p1.x} ${p1.y} C ${p1.x + 50} ${p1.y + 70}, ${p2.x - 40} ${p2.y - 20}, ${p2.x} ${p2.y} ` +
+      `C ${p2.x + 60} ${p2.y + 60}, ${p3.x - 60} ${p3.y - 20}, ${p3.x} ${p3.y} ` +
+      `C ${p3.x - 70} ${p3.y + 10}, ${p4.x + 70} ${p4.y + 10}, ${p4.x} ${p4.y} ` +
+      `C ${p4.x - 40} ${p4.y - 60}, ${p1.x - 40} ${p1.y + 60}, ${p1.x} ${p1.y} Z`;
+
+    const gNet = G(p, { o: 0 });
+    mk('path', { d: carnotPathD, fill: 'rgba(232, 168, 56, 0.3)', stroke: COL.quiz, 'stroke-width': 2.5 }, gNet);
+    show(gNet, m('ad2', 0.8));
+
+    // 1 -> 2: Isothermal expansion (T1 = const, Q1 kiradi)
+    const curve1 = path(p, `M ${p1.x} ${p1.y} C ${p1.x + 50} ${p1.y + 70}, ${p2.x - 40} ${p2.y - 20}, ${p2.x} ${p2.y}`, { stroke: '#ef4444', 'stroke-width': 4.5 }, { d: 0 });
+    draw(curve1, m('iso1', 0.1), 1.0);
+    mk('circle', { cx: p1.x, cy: p1.y, r: 8, fill: '#ef4444' }, p);
+    text(p, "1", p1.x - 22, p1.y - 12, .4, { size: 28, fill: COL.chalk, weight: 700 });
+
+    // 2 -> 3: Adiabatic expansion (Q = 0, T1 -> T2)
+    const curve2 = path(p, `M ${p2.x} ${p2.y} C ${p2.x + 60} ${p2.y + 60}, ${p3.x - 60} ${p3.y - 20}, ${p3.x} ${p3.y}`, { stroke: '#f59e0b', 'stroke-width': 4.5 }, { d: 0 });
+    draw(curve2, m('ad1', 0.1), 1.0);
+    mk('circle', { cx: p2.x, cy: p2.y, r: 8, fill: '#f59e0b' }, p);
+    text(p, "2", p2.x + 12, p2.y - 12, m('ad1', 0.2), { size: 28, fill: COL.chalk, weight: 700 });
+
+    // 3 -> 4: Isothermal compression (T2 = const, Q2 chiqadi)
+    const curve3 = path(p, `M ${p3.x} ${p3.y} C ${p3.x - 70} ${p3.y + 10}, ${p4.x + 70} ${p4.y + 10}, ${p4.x} ${p4.y}`, { stroke: '#3b82f6', 'stroke-width': 4.5 }, { d: 0 });
+    draw(curve3, m('iso2', 0.1), 1.0);
+    mk('circle', { cx: p3.x, cy: p3.y, r: 8, fill: '#3b82f6' }, p);
+    text(p, "3", p3.x + 12, p3.y + 24, m('iso2', 0.2), { size: 28, fill: COL.chalk, weight: 700 });
+
+    // 4 -> 1: Adiabatic compression (Q = 0, T2 -> T1)
+    const curve4 = path(p, `M ${p4.x} ${p4.y} C ${p4.x - 40} ${p4.y - 60}, ${p1.x - 40} ${p1.y + 60}, ${p1.x} ${p1.y}`, { stroke: '#06b6d4', 'stroke-width': 4.5 }, { d: 0 });
+    draw(curve4, m('ad2', 0.1), 1.0);
+    mk('circle', { cx: p4.x, cy: p4.y, r: 8, fill: '#06b6d4' }, p);
+    text(p, "4", p4.x - 22, p4.y + 24, m('ad2', 0.2), { size: 28, fill: COL.chalk, weight: 700 });
+
+    // Right Side: 4 Stages description
+    const rx = 1060;
+    const gList = G(p, { x: rx, y: 170, o: 0 });
+    show(gList, .4);
+    text(gList, "Karno siklining 4 bosqichi:", 0, 0, .4, { size: 30, weight: 700, fill: COL.chalk });
+
+    const s1 = G(gList, { y: 45, o: 0 });
+    mk('circle', { cx: 16, cy: 12, r: 12, fill: '#ef4444' }, s1);
+    T(s1, "1→2", { x: 16, y: 17, size: 14, fill: '#fff', weight: 800, anchor: 'middle' });
+    T(s1, "Izotermik kengayish (T₁, Q₁ olinadi)", { x: 40, y: 18, size: 21, fill: '#ef4444', weight: 600 });
+    show(s1, m('iso1', 0.2));
+
+    const s2 = G(gList, { y: 105, o: 0 });
+    mk('circle', { cx: 16, cy: 12, r: 12, fill: '#f59e0b' }, s2);
+    T(s2, "2→3", { x: 16, y: 17, size: 14, fill: '#000', weight: 800, anchor: 'middle' });
+    T(s2, "Adiabatik kengayish (Q=0, soviydi)", { x: 40, y: 18, size: 21, fill: '#f59e0b', weight: 600 });
+    show(s2, m('ad1', 0.2));
+
+    const s3 = G(gList, { y: 165, o: 0 });
+    mk('circle', { cx: 16, cy: 12, r: 12, fill: '#3b82f6' }, s3);
+    T(s3, "3→4", { x: 16, y: 17, size: 14, fill: '#fff', weight: 800, anchor: 'middle' });
+    T(s3, "Izotermik siqish (T₂, Q₂ beriladi)", { x: 40, y: 18, size: 21, fill: '#3b82f6', weight: 600 });
+    show(s3, m('iso2', 0.2));
+
+    const s4 = G(gList, { y: 225, o: 0 });
+    mk('circle', { cx: 16, cy: 12, r: 12, fill: '#06b6d4' }, s4);
+    T(s4, "4→1", { x: 16, y: 17, size: 14, fill: '#000', weight: 800, anchor: 'middle' });
+    T(s4, "Adiabatik siqish (Q=0, qiziydi)", { x: 40, y: 18, size: 21, fill: '#06b6d4', weight: 600 });
+    show(s4, m('ad2', 0.2));
+
+    // Center tag in Carnot loop
+    const tag = G(gNet, { x: (p1.x + p3.x) / 2 - 30, y: (p1.y + p3.y) / 2 + 30 });
+    mk('rect', { x: -120, y: -28, width: 240, height: 56, rx: 10, fill: '#161d2b', stroke: COL.quiz, 'stroke-width': 2 }, tag);
+    T(tag, "Karno Sikli", { x: 0, y: -4, size: 20, fill: COL.quiz, weight: 700, anchor: 'middle' });
+    T(tag, "Sof ish: A_net", { x: 0, y: 18, size: 16, fill: COL.chalk, anchor: 'middle' });
+  }],
+
+  ['efficiency', 'F.I.K. va issiqlik balansi', (m, D) => {
+    const p = panel(0);
+    S.effPanel = p;
+
+    text(p, "Foydali ish koeffitsiyenti (F.I.K.) va issiqlik oqimi", 800, 110, .2, { size: 38, weight: 700, anchor: 'middle' });
+
+    // Sankey Heat Flow diagram
+    const sx = 260, sy = 220;
+    const gFlow = G(p, { x: sx, y: sy, o: 0 });
+    show(gFlow, .3);
+
+    // Top: Isitkich T1
+    mk('rect', { x: -140, y: 0, width: 280, height: 75, rx: 14, fill: '#2a120a', stroke: '#ef4444', 'stroke-width': 2.5 }, gFlow);
+    T(gFlow, "Isitkich (Harorat: T₁)", { x: 0, y: 46, size: 24, fill: '#ef4444', weight: 700, anchor: 'middle' });
+
+    // Downward arrow Q1
+    path(gFlow, `M 0 75 V 170`, { stroke: '#ef4444', 'stroke-width': 12, strokeLinecap: 'round' });
+    T(gFlow, "Q₁", { x: 30, y: 135, size: 26, fill: '#ef4444', weight: 700 });
+
+    // Engine Circle
+    mk('circle', { cx: 0, cy: 220, r: 50, fill: '#141d2b', stroke: COL.quiz, 'stroke-width': 3 }, gFlow);
+    T(gFlow, "Dvigatel", { x: 0, y: 227, size: 20, fill: COL.quiz, weight: 700, anchor: 'middle' });
+
+    // Right Arrow: Work A = Q1 - Q2
+    const gWork = G(gFlow, { o: 0 });
+    path(gWork, `M 50 220 H 180`, { stroke: COL.task, 'stroke-width': 10, strokeLinecap: 'round' });
+    path(gWork, `M 175 210 L 195 220 L 175 230 Z`, { fill: COL.task });
+    T(gWork, "Sof ish: A = Q₁ - Q₂", { x: 210, y: 228, size: 24, fill: COL.task, weight: 700 });
+    show(gWork, m('work_net', 0.2));
+
+    // Downward continuation to Sovutkich T2: Q2
+    path(gFlow, `M 0 270 V 365`, { stroke: '#3b82f6', 'stroke-width': 8, strokeLinecap: 'round' });
+    T(gFlow, "Q₂", { x: 25, y: 325, size: 24, fill: '#3b82f6', weight: 700 });
+
+    // Bottom: Sovutkich T2
+    mk('rect', { x: -140, y: 365, width: 280, height: 75, rx: 14, fill: '#0a1628', stroke: '#3b82f6', 'stroke-width': 2.5 }, gFlow);
+    T(gFlow, "Sovutkich (Harorat: T₂)", { x: 0, y: 411, size: 24, fill: '#3b82f6', weight: 700, anchor: 'middle' });
+
+    // Right Side: Formulas
+    const rx = 860;
+    const gForm = G(p, { x: rx, y: 210, o: 0 });
+    show(gForm, .4);
+
+    // Box 1: Umumiy F.I.K.
+    const f1 = G(gForm, { y: 0 });
+    mk('rect', { x: 0, y: 0, width: 560, height: 140, rx: 16, fill: '#141d2b', stroke: COL.dim, 'stroke-width': 2 }, f1);
+    T(f1, "1. Har qanday dvigatel uchun umumiy F.I.K.:", { x: 25, y: 35, size: 22, fill: COL.dim, weight: 600 });
+    mline(f1, ['η = ', F('A', 'Q_1'), ' = ', F('Q_1 - Q_2', 'Q_1'), ' = 1 - ', F('Q_2', 'Q_1')], 25, 95, .8, COL.chalk, 32, 'start');
+
+    // Box 2: Karno formulasi
+    const f2 = G(gForm, { y: 180, o: 0 });
+    mk('rect', { x: 0, y: 0, width: 560, height: 170, rx: 16, fill: '#21180d', stroke: COL.quiz, 'stroke-width': 3 }, f2);
+    chip(f2, ['Fundamental formula'], COL.quiz, { x: 25, y: 30, size: 20 });
+    T(f2, "2. Karno ideal dvigateli F.I.K. formulasi:", { x: 25, y: 80, size: 24, fill: COL.quiz, weight: 700 });
+    mline(f2, ['η = ', F('T_1 - T_2', 'T_1'), ' = 1 - ', F('T_2', 'T_1')], 25, 135, m('formula_eta', 0.2), COL.quiz, 34, 'start');
+    show(f2, m('formula_eta', 0.1));
+  }],
+
+  ['check_dtm', 'DTM Sinovi', () => {}, {
+    ask: done => quiz(BAND, [{
+      id: 'c-dtm-carnot',
+      prompt: ["Isitkich harorati T₁ = 600 K, sovutkich T₂ = 300 K. Agar isitkichdan Q₁ = 1200 J issiqlik olingan bo'lsa, dvigatelning F.I.K. (η) va sof ishi (A) qancha?"],
+      build: choice([
+        ['η = 50%,   A = 600 J'],
+        ['η = 25%,   A = 300 J'],
+        ['η = 50%,   A = 1200 J']
+      ], 0, "To'g'ri! η = (600 - 300) / 600 = 0.5 (50%). Bajarilgan sof ish: A = η · Q₁ = 0.5 · 1200 J = 600 J bo'ladi!", [
+        null,
+        "Xato. Haroratlar nisbati: (600 - 300) / 600 = 300/600 = 0.5 (50%) bo'ladi, 25% emas.",
+        "Xato. Barcha olingan issiqlik ishga aylanmaydi. Q₂ = 600 J sovutkichga ketadi, ish A = 600 J bo'ladi."
+      ], () => {
+        floatText('To\'g\'ri: η = 50%, A = 600 J!', 800, 340, COL.good);
+      })
+    }], done, "DTM Imtihon Sinovi")
+  }],
+
+  ['wrap', 'Asosiy xulosalar', (m) => {
+    const p = panel(0);
+    text(p, "Mavzuning to'rtta fundamental xulosasi", 800, 120, .2, { size: 42, weight: 700, anchor: 'middle' });
+
+    const rules = [
+      { num: '1', title: "1-Qonun balansi:", math: ['Q = ΔU + A'], sub: "Gazga berilgan issiqlik ichki energiyani oshirish va ish bajarishga ketadi", mark: 'w1' },
+      { num: '2', title: "P-V grafik qoidasi:", math: ['A = ∫ p · dV'], sub: "P-V koordinata sistemasida har qanday chiziq ostidagi yuza bajarilgan ishdir", mark: 'w2' },
+      { num: '3', title: "Yopiq sikl ishi:", math: ['A_sikl = Q_1 - Q_2'], sub: "Sikl ichidagi yopiq soha yuzasi dvigatel bajargan sof foydali ishni beradi", mark: 'w3' },
+      { num: '4', title: "Karno formulasi:", math: ['η = ', F('T_1 - T_2', 'T_1')], sub: "Hech qanday real dvigatel F.I.K. jihatdan Karno siklidan osha olmaydi", mark: 'w4' }
+    ];
+
+    rules.forEach((r, i) => {
+      const g = G(p, { x: 260, y: 220 + i * 135, o: 0 });
+      mk('circle', { cx: 40, cy: 30, r: 26, fill: COL.task }, g);
+      T(g, r.num, { x: 40, y: 40, size: 30, fill: COL.board, weight: 700, anchor: 'middle' });
+
+      T(g, r.title, { x: 85, y: 28, size: 28, fill: COL.chalk, weight: 600 });
+      M(g, r.math, { x: 460, y: 28, size: 32, fill: COL.quiz });
+      T(g, r.sub, { x: 85, y: 68, size: 22, fill: COL.dim, weight: 500 });
+
+      tw(g, { o: 1, x: 260 }, m(r.mark, 0.1), .6);
+    });
+  }],
+
+  ['practice', 'Yakuniy amaliyot', () => { reset(); panel(0); }, {
+    ask: done => quiz(SCREEN, [{
+      id: 'p-carnot-final',
+      prompt: ["Karno dvigatelida isitkich harorati ", $m('T_1 = 800 K'), ", sovutkich harorati ", $m('T_2 = 200 K'), ". Dvigatelning eng yuqori foydali ish koeffitsiyenti (η) necha foiz?"],
+      build: choice([
+        ['η = 75%'],
+        ['η = 25%'],
+        ['η = 60%']
+      ], 0, "To'g'ri! Karno formulasi bo'yicha: η = (800 - 200) / 800 = 600 / 800 = 0.75, ya'ni 75% bo'ladi!", [
+        null,
+        "Xato. Formulani tekshiring: η = (T₁ - T₂) / T₁. T₁ ga bo'linadi, T₂ ga emas.",
+        "Xato. (800 - 200) / 800 = 600/800 = 3/4 = 75% bo'ladi."
+      ])
+    }], done, "Yakuniy amaliy mashg'ulot")
+  }],
+
+  ['finish', 'Yakunlandi', () => { reset(); panel(0); }, { ask: finishCard }]
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+boot();
+</script>
+</body>
+</html>

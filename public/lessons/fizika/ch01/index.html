@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To'g'ri chiziqli tekis harakat — Fizika</title>
+<link rel="stylesheet" href="../../lib/engine.css">
+<link rel="expect" href="#bar" blocking="render">
+<style>
+  /* Custom physics styling */
+  .car-body { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4)); }
+  .pulse-gold { animation: pulseG 1.8s infinite; }
+  @keyframes pulseG { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.4; } }
+</style>
+</head>
+<body>
+<script src="../../lib/engine.js"></script>
+<script src="audio/uz/timings.js"></script>
+<script>
+'use strict';
+
+const CHAPTER = {
+  number: 1,
+  title: "To'g'ri chiziqli tekis harakat",
+  subject: "fizika",
+  minutes: 4,
+  language: "uz",
+  next: "../ch02/index.html"
+};
+
+/* ---------- helper wrappers ---------- */
+const mline = (p, parts, x, y, t0, fill = COL.chalk, size = 48, anchor = 'middle') => {
+  const e = M(p, [].concat(parts), { x, y, size, fill, anchor, o: 0 });
+  show(e, t0);
+  return e;
+};
+
+const text = (p, str, x, y, t0, { size = 30, fill = COL.chalk, anchor = 'start', weight = 500 } = {}) => {
+  const e = T(p, str, { x, y, size, fill, anchor, weight, o: 0 });
+  show(e, t0);
+  return e;
+};
+
+/* Minimalist physics car SVG */
+function drawCar(p, x, y) {
+  const g = G(p, { x, y, s: 1 });
+  // Car chassis
+  const body = mk('path', {
+    d: 'M -40 0 L -30 -16 L -10 -28 L 20 -28 L 38 -12 L 48 0 Z',
+    fill: COL.task,
+    stroke: COL.chalk,
+    'stroke-width': 2.5
+  }, g);
+  // Wheels
+  mk('circle', { cx: -24, cy: 4, r: 9, fill: '#111', stroke: COL.chalk, 'stroke-width': 2 }, g);
+  mk('circle', { cx: 24, cy: 4, r: 9, fill: '#111', stroke: COL.chalk, 'stroke-width': 2 }, g);
+  // Headlight beam
+  const light = path(g, 'M 48 -4 L 85 -10 L 85 8 Z', { fill: 'rgba(240, 180, 90, 0.25)', stroke: 'none' });
+  return g;
+}
+
+/* ---------- BEATS ---------- */
+const BEATS = [
+  ['intro', 'Kirish', (m, D) => {
+    const g = G(scene, { o: 0, y: 24 });
+    chip(g, ['1-Bob', ' • ', 'Kinematika'], COL.quiz, { x: 800, y: 280, size: 24 });
+    T(g, "To'g'ri chiziqli tekis harakat", { x: 800, y: 390, size: 76, weight: 700, anchor: 'middle' });
+    tw(g, { o: 1, y: 0 }, .2, 1.0, out);
+
+    const sub = text(scene, "Tezlik, vaqt va masofa o'rtasidagi bog'lanish", 800, 520, m('motion', .2), {
+      size: 36, fill: COL.dim, anchor: 'middle', weight: 500
+    });
+
+    const fPreview = mline(scene, ['v = ', F('s', 't')], 800, 640, m('motion', .7), COL.task, 58);
+
+    tw(g, { o: 0, y: -24 }, D - .8, .7);
+    hide(sub, D - .8, .7);
+    hide(fPreview, D - .8, .7);
+  }],
+
+  ['speed', 'Tekis harakat', (m, D) => {
+    const p = panel(0);
+
+    // Title label
+    text(p, "Jismning to'g'ri chiziq bo'ylab harakati", 800, 140, .2, { size: 38, weight: 600, anchor: 'middle' });
+
+    // Road / Distance Axis at y = 520
+    const roadY = 520;
+    const roadStart = 200, roadEnd = 1400;
+    const ax = path(p, `M${roadStart} ${roadY}H${roadEnd}`, { stroke: COL.chalk, 'stroke-width': 3 }, { d: 0 });
+    draw(ax, .2, .8);
+
+    // Meter ticks (0m to 100m)
+    const toPx = mVal => roadStart + (mVal / 100) * (roadEnd - roadStart);
+    for (let d = 0; d <= 100; d += 20) {
+      const gTick = G(p, { o: 0 });
+      path(gTick, `M${toPx(d)} ${roadY - 10}V${roadY + 10}`, { stroke: COL.dim, 'stroke-width': 2 });
+      T(gTick, `${d} m`, { x: toPx(d), y: roadY + 45, size: 26, fill: COL.dim, anchor: 'middle', font: MATH });
+      show(gTick, .4 + d * .006);
+    }
+
+    // Car object starts at 0m
+    const car = drawCar(p, toPx(0), roadY - 14);
+    put(car, { o: 0 });
+    show(car, .5, .4);
+
+    // Car moves from 0m to 60m smoothly over 4.5 seconds starting at m('start')
+    const tStart = m('start', 0.2);
+    tw(car, { x: toPx(60) }, tStart, 4.5, lin);
+
+    // Equal distance intervals (0->20, 20->40, 40->60) with badges
+    [
+      { from: 0, to: 20, time: '1-soniya', delay: 0 },
+      { from: 20, to: 40, time: '2-soniya', delay: 1.5 },
+      { from: 40, to: 60, time: '3-soniya', delay: 3.0 }
+    ].forEach((seg, i) => {
+      const tSeg = tStart + seg.delay + 0.8;
+      const x1 = toPx(seg.from), x2 = toPx(seg.to);
+      const bracket = path(p, `M${x1 + 6} ${roadY - 45}H${x2 - 6}`, { stroke: COL.quiz, 'stroke-width': 2.5 }, { d: 0 });
+      draw(bracket, tSeg, .4);
+
+      const markDot = G(p, { x: x2, y: roadY, o: 0 });
+      mk('circle', { r: 6, fill: COL.quiz }, markDot);
+      show(markDot, tSeg);
+
+      const lbl = text(p, "20 m", (x1 + x2) / 2, roadY - 60, tSeg, { size: 24, fill: COL.quiz, anchor: 'middle', weight: 600 });
+    });
+
+    // Key takeaway badge at m('uniform')
+    const badge = chip(p, ["v = const", " (Tezlik o'zgarmas)"], COL.good, { x: 800, y: 720, size: 32 });
+    put(badge, { o: 0, s: 0.8 });
+    tw(badge, { o: 1, s: 1 }, m('uniform', 0.2), .6, back);
+  }],
+
+  ['formula', 'Tezlik formulasi', (m, D) => {
+    const p = panel(0);
+
+    text(p, "Tezlikni hisoblash", 800, 110, .2, { size: 38, weight: 700, anchor: 'middle' });
+
+    // Given data cards
+    const gGiven = G(p, { o: 0 });
+    chip(gGiven, ["Masofa: ", "s = 60 m"], COL.whole, { x: 580, y: 195, size: 28 });
+    chip(gGiven, ["Vaqt: ", "t = 3 s"], COL.nat, { x: 1020, y: 195, size: 28 });
+    tw(gGiven, { o: 1 }, .4, .6);
+
+    // Formula step 1: v = s / t
+    const f1 = mline(p, ['v = ', F('s', 't')], 800, 310, .8, COL.chalk, 60);
+
+    // Calculation step at m('calc')
+    const f2 = mline(p, ['v = ', F('60 m', '3 s'), ' = ', '20 ', F('m', 's')], 800, 430, m('calc', 0.2), COL.task, 56);
+
+    // Definition box at m('form')
+    const defBox = G(p, { o: 0, y: 20 });
+    put(mk('rect', { x: 320, y: 520, width: 960, height: 80, rx: 16, fill: '#14201c', stroke: COL.good, 'stroke-width': 2.5 }, defBox), {});
+    text(defBox, "Tezlik — jismning vaqt birligi ichida bosib o'tgan masofasidir", 800, 570, 0, {
+      size: 28, fill: COL.good, anchor: 'middle', weight: 600
+    });
+    tw(defBox, { o: 1, y: 0 }, m('form', 0.2), .6, out);
+  }],
+
+  ['check1', 'Tezkor sinov 1', () => {}, {
+    ask: done => quiz(BAND, [{
+      id: 'c-speed1',
+      prompt: ["Avtomobil ", $m('s = 120 m'), " masofani ", $m('t = 4 s'), " vaqtda bosib o'tdi. Tezlik ", $m('v'), " ni toping:"],
+      build: blanks([{
+        parts: ['v = ', F('120', '4'), ' = ', { box: '30' }, ' m/s'],
+        why: "To'g'ri! v = s / t = 120 / 4 = 30 m/s.",
+        hint: "120 ni 4 ga bo'ling."
+      }])
+    }], done, "Tezkor sinov   1/2")
+  }],
+
+  ['graph', 'Harakat grafigi', (m, D) => {
+    const p = panel(0);
+
+    text(p, "Masofaning vaqtga bog'liqlik grafigi: s(t)", 800, 85, .2, { size: 36, weight: 600, anchor: 'middle' });
+
+    // Coordinate grid fits comfortably above BAND (y0 = 570, h = 360 -> y from 210 to 570)
+    const axMap = axes(p, {
+      x0: 500, y0: 570, w: 600, h: 360,
+      xs: [0, 4, 1], ys: [0, 80, 20],
+      xl: 't, vaqt (s)', yl: 's, masofa (m)',
+      t0: .4
+    });
+
+    const { PX, PY } = axMap;
+
+    // Line 1: v = 20 m/s (from (0,0) to (4,80))
+    const line1 = path(p, `M${PX(0)} ${PY(0)}L${PX(4)} ${PY(80)}`, { stroke: COL.quiz, 'stroke-width': 4.5 }, { d: 0 });
+    draw(line1, m('line', 0.2), 1.2);
+
+    // Plot key points with dots
+    [
+      { t: 1, s: 20 },
+      { t: 2, s: 40, key: 'pt2' },
+      { t: 3, s: 60 }
+    ].forEach((pt, i) => {
+      const gPt = G(p, { o: 0 });
+      path(gPt, `M${PX(pt.t)} ${PY(0)}V${PY(pt.s)}H${PX(0)}`, { stroke: COL.dim, 'stroke-dasharray': '5 5', 'stroke-width': 2 });
+      mk('circle', { cx: PX(pt.t), cy: PY(pt.s), r: 8, fill: COL.task }, gPt);
+      if (pt.key) S[pt.key] = gPt;
+      show(gPt, m('line', 0.8 + i * 0.4));
+    });
+
+    // Label for Line 1
+    text(p, "v = 20 m/s", PX(3) + 20, PY(60) + 10, m('line', 1.8), { size: 26, fill: COL.quiz, weight: 600 });
+
+    // Line 2 (Steeper line for faster speed v = 40 m/s) at m('fast')
+    const line2 = path(p, `M${PX(0)} ${PY(0)}L${PX(2)} ${PY(80)}`, { stroke: COL.bad, 'stroke-width': 4 }, { d: 0 });
+    draw(line2, m('fast', 0.1), 1.0);
+    text(p, "v = 40 m/s (Kattaroq tezlik)", PX(2) + 16, PY(70), m('fast', 0.6), {
+      size: 26, fill: COL.bad, weight: 600, anchor: 'start'
+    });
+  }],
+
+  ['check2', 'Tezkor sinov 2', () => {}, {
+    ask: done => quiz(BAND, [{
+      id: 'c-graph1',
+      prompt: ["Grafigimizga ko'ra, ", $m('t = 2 s'), " vaqtda jism qancha masofa bosib o'tgan?"],
+      build: choice([
+        ['40 m'],
+        ['20 m'],
+        ['60 m']
+      ], 0, "To'g'ri! 2 soniyada to'g'ri chiziq 40 metr nuqtasiga mos keladi.", [
+        null,
+        "20 m — bu 1 soniyada bosib o'tilgan masofa.",
+        "60 m — bu 3 soniyadagi masofa."
+      ], () => {
+        if (S.pt2) pulseFx(S.pt2, 2.2);
+        floatText('2 s da: 40 m', 800, 340, COL.good);
+      })
+    }], done, "Tezkor sinov   2/2")
+  }],
+
+  ['wrap', 'Asosiy xulosalar', (m) => {
+    const p = panel(0);
+    text(p, "Mavzuning asosiy xulosalari", 800, 160, .2, { size: 44, weight: 700, anchor: 'middle' });
+
+    const rules = [
+      { num: '1', title: "Tezlik formulasi:", math: ['v = ', F('s', 't')], sub: "Masofani vaqtga bo'lish orqali topiladi", mark: 'w1' },
+      { num: '2', title: "O'lchov birligi:", math: ['[v] = 1 ', F('m', 's')], sub: "Xalqaro birliklar sistemasida metr taqsim sekund", mark: 'w2' },
+      { num: '3', title: "Masofa grafigi:", math: ['s = v · t'], sub: "Tekis harakatda masofa grafigi to'g'ri chiziq bo'ladi", mark: 'w3' }
+    ];
+
+    rules.forEach((r, i) => {
+      const g = G(p, { x: 300, y: 280 + i * 150, o: 0 });
+      // Number circle
+      mk('circle', { cx: 40, cy: 30, r: 28, fill: COL.task }, g);
+      T(g, r.num, { x: 40, y: 41, size: 32, fill: COL.board, weight: 700, anchor: 'middle' });
+      // Text & math
+      T(g, r.title, { x: 90, y: 30, size: 30, fill: COL.chalk, weight: 600 });
+      M(g, r.math, { x: 460, y: 30, size: 36, fill: COL.quiz });
+      T(g, r.sub, { x: 90, y: 72, size: 24, fill: COL.dim, weight: 500 });
+
+      tw(g, { o: 1, x: 300 }, m(r.mark, 0.1), .7);
+    });
+  }],
+
+  ['practice', 'Yakuniy amaliyot', () => { reset(); panel(0); }, {
+    ask: done => quiz(SCREEN, [{
+      id: 'p-speed-final',
+      prompt: ["Piyoda ", $m('v = 5 m/s'), " tezlik bilan ", $m('t = 20 s'), " tekis harakatlandi. U qancha masofani bosib o'tgan?"],
+      build: choice([
+        ['s = 100 m'],
+        ['s = 4 m'],
+        ['s = 25 m']
+      ], 0, "To'g'ri! Masofa s = v · t = 5 · 20 = 100 metr bo'ladi.", [
+        null,
+        "Xato. Masofani topish uchun tezlikni vaqtga ko'paytirish kerak, bo'lish emas.",
+        "Xato. Tezlik va vaqt qo'shilmaydi, ko'paytiriladi: s = v · t."
+      ])
+    }], done, "Yakuniy amaliy mashg'ulot")
+  }],
+
+  ['finish', 'Yakunlandi', () => { reset(); panel(0); }, { ask: finishCard }]
+].map(([id, title, run, extra]) => ({ id, title, run, ...extra }));
+
+boot();
+</script>
+</body>
+</html>

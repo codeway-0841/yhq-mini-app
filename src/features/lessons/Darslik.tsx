@@ -415,6 +415,29 @@ export default function Darslik() {
         </div>
       </div>
 
+      {/* Interaktiv Animatsion Darslik CTA Banner */}
+      <div className="mb-6 p-4 rounded-2xl bg-gradient-to-r from-blue-600/15 via-indigo-600/15 to-purple-600/15 border border-blue-500/25 flex items-center justify-between gap-3 shadow-xs">
+        <div className="flex items-center gap-3 min-w-0">
+          <div className="size-11 rounded-xl bg-blue-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+            <Sparkles size={20} />
+          </div>
+          <div className="min-w-0">
+            <h3 className="text-sm font-bold text-pfg truncate">
+              {ru ? 'Интерактивный учебник (3Blue1Brown)' : 'Interaktiv Animatsion Darslik'}
+            </h3>
+            <p className="text-xs text-pmuted truncate">
+              {ru ? 'Живые анимации, диктор и формулы' : "3Blue1Brown animatsiyalari va ovozli diktor"}
+            </p>
+          </div>
+        </div>
+        <button
+          onClick={() => navigate('/interaktiv')}
+          className="px-3.5 py-2 rounded-xl bg-pprimary text-ponprimary text-xs font-semibold shrink-0 shadow-xs hover:brightness-105 active:scale-95 transition-all cursor-pointer"
+        >
+          {ru ? 'Открыть' : 'Ochish'}
+        </button>
+      </div>
+
       {modules.map((item) => {
         const list = lessons[item.id] ?? []
         const done = list.filter((_, i) => doneFor[item.id]?.includes(i)).length
