@@ -199,6 +199,19 @@ export function assertProdConfig(): void {
       if (!env.CONTENT_TOKEN_SECRET) missing.push('CONTENT_TOKEN_SECRET')
       if (!env.CLOUDFLARE_R2_QBANK_BUCKET) missing.push('CLOUDFLARE_R2_QBANK_BUCKET')
     }
+    // Recording faylining o'zi Neon'ga kirmaydi: LiveKit Egress bevosita R2'ga
+    // yozadi. Feature yoqilgan bo'lsa yarim konfiguratsiyada boot qilish xavfli —
+    // yozuv start bo'lib, saqlash/playback ishlamasligi mumkin.
+    if (env.LIVE_RECORDING_ENABLED === 'true') {
+      if (!env.LIVEKIT_URL) missing.push('LIVEKIT_URL')
+      if (!env.LIVEKIT_API_KEY) missing.push('LIVEKIT_API_KEY')
+      if (!env.LIVEKIT_API_SECRET) missing.push('LIVEKIT_API_SECRET')
+      if (!env.CLOUDFLARE_ACCOUNT_ID) missing.push('CLOUDFLARE_ACCOUNT_ID')
+      if (!env.CLOUDFLARE_R2_ACCESS_KEY_ID) missing.push('CLOUDFLARE_R2_ACCESS_KEY_ID')
+      if (!env.CLOUDFLARE_R2_SECRET_ACCESS_KEY) missing.push('CLOUDFLARE_R2_SECRET_ACCESS_KEY')
+      if (!env.CLOUDFLARE_R2_BUCKET) missing.push('CLOUDFLARE_R2_BUCKET')
+      if (!env.CLOUDFLARE_PUBLIC_URL) missing.push('CLOUDFLARE_PUBLIC_URL')
+    }
     if (missing.length > 0) {
       throw new Error(`FATAL: required in production but missing: ${missing.join(', ')}`)
     }

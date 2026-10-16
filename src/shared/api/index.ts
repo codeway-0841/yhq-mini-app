@@ -1284,9 +1284,11 @@ export const api = {
     }>('GET', `/live/rooms${qs ? `?${qs}` : ''}`)
   },
   getLiveRoom: (id: number) =>
-    request<{ ok: true; mediaEnabled: boolean; recordingEnabled: boolean; recordingActive: boolean; room: import('../../../shared/live').LiveRoomPublic }>(
+    request<{ ok: true; mediaEnabled: boolean; recordingEnabled: boolean; recordingActive: boolean; recordingStatus: 'starting' | 'started' | 'stopping' | null; room: import('../../../shared/live').LiveRoomPublic }>(
       'GET', `/live/rooms/${id}`,
     ),
+  archiveLiveRoom: (id: number) =>
+    request<{ ok: true }>('DELETE', `/live/rooms/${id}`, undefined, 20_000),
   joinLiveRoom: (id: number) =>
     request<{
       ok: true; role: 'teacher' | 'student'; canSpeak: boolean
@@ -1294,7 +1296,7 @@ export const api = {
       roomName: string; token: string
       expiresIn: number; mediaEnabled: boolean; mediaUrl: string | null
       livekitToken: string | null
-    }>('POST', `/live/rooms/${id}/join`, {}),
+    }>('POST', `/live/rooms/${id}/join`, {}, 20_000),
   getLiveMe: (id: number) =>
     request<{ ok: true; me: import('../../../shared/live').LiveMeState }>(
       'GET', `/live/rooms/${id}/me`,
@@ -1329,16 +1331,18 @@ export const api = {
     ),
   startLiveRoom: (id: number) =>
     request<{ ok: true; room: import('../../../shared/live').LiveRoomPublic | null }>(
-      'POST', `/live/rooms/${id}/start`, {},
+      'POST', `/live/rooms/${id}/start`, {}, 20_000,
     ),
   endLiveRoom: (id: number) =>
     request<{ ok: true; room: import('../../../shared/live').LiveRoomPublic | null }>(
-      'POST', `/live/rooms/${id}/end`, {},
+      'POST', `/live/rooms/${id}/end`, {}, 20_000,
     ),
   startLiveRecording: (id: number) =>
-    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/start`, {}),
+    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/start`, {}, 20_000),
   stopLiveRecording: (id: number) =>
-    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/stop`, {}),
+    request<{ ok: true; egressId: string }>('POST', `/live/rooms/${id}/record/stop`, {}, 20_000),
+  reconcileLiveRecording: (id: number) =>
+    request<{ ok: true; status: string | null }>('POST', `/live/rooms/${id}/record/reconcile`, {}, 20_000),
   listLiveRecordings: () =>
     request<{ ok: true; recordings: import('../../../shared/live').LiveRecordingPublic[] }>(
       'GET', '/live/recordings',

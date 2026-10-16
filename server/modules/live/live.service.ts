@@ -24,14 +24,16 @@ import { issueLiveJoinToken } from './live.token'
 import { buildLivekitToken } from './livekit'
 import {
   deleteRoom as controlDeleteRoom,
+  listEgress as controlListEgress,
   listParticipants as controlListParticipants,
   removeParticipant as controlRemoveParticipant,
+  sendRoomRefresh as controlSendRoomRefresh,
   startEgress as controlStartEgress,
   stopEgress as controlStopEgress,
   updateParticipantPermission as controlUpdatePermission,
   type ControlConfig,
 } from './livekit-control'
-import type { CloudParticipantSummary } from './egress'
+import { isEgressTerminal, parseEgressEnded, type CloudParticipantSummary } from './egress'
 
 const SUBJECT_IDS = new Set((SUBJECT_BASES as readonly { id: string }[]).map((s) => s.id))
 
@@ -61,6 +63,17 @@ function controlConfig(): ControlConfig | null {
   return { url: l.url, apiKey: l.apiKey, apiSecret: l.apiSecret }
 }
 
+async function notifyRoomRefresh(roomName: string, kind: 'state' | 'chat' = 'state'): Promise<void> {
+  const cfg = controlConfig()
+  if (!cfg) return
+  try {
+    await controlSendRoomRefresh(cfg, roomName, kind)
+  } catch {
+    // HTTP polling fallback davom etadi; signal xatosi mutation'ni rollback qilmaydi.
+    console.warn('[live] room refresh signal failed', roomName)
+  }
+}
+
 function toPublicRow(r: LiveRoomRow): LiveRoomPublic {
   return {
     id: r.id,
@@ -70,7 +83,7 @@ function toPublicRow(r: LiveRoomRow): LiveRoomPublic {
     title: r.title,
     description: r.description,
     status: r.status,
-    scheduledAt: r.scheduled_at,
+    scheduledAt: r.scheduled_at ? new Date(r.scheduled_at).toISOString() : null,
     startedAt: r.started_at,
     endedAt: r.ended_at,
     roomName: r.room_name,
@@ -97,6 +110,9 @@ export type ServiceError =
   | 'NOT_LIVE'
   | 'CREATE_FAILED'
   | 'LIVE_DISABLED'
+  | 'ARCHIVE_REQUIRES_END'
+  | 'MEDIA_CONTROL_FAILED'
+  | 'TOO_EARLY'
 
 export function isLiveEnabled(): boolean {
   return config.live.enabled
@@ -104,6 +120,7 @@ export function isLiveEnabled(): boolean {
 
 export const liveService = {
   capabilitiesFor,
+  notifyRoomRefresh,
 
   async listRooms(filter: { subjectId?: string; status?: LiveStatus; limit: number }): Promise<LiveRoomPublic[]> {
     const rows = await liveRepository.listRooms(filter)
@@ -127,7 +144,16 @@ export const liveService = {
 
   async startRoom(id: number): Promise<{ ok: true } | { ok: false; error: ServiceError }> {
     const ok = await liveRepository.startRoom(id)
-    return ok ? { ok: true } : { ok: false, error: 'NOT_SCHEDULED' }
+    if (ok) {
+      const room = await liveRepository.getRoom(id)
+      if (room) await notifyRoomRefresh(room.room_name)
+      return { ok: true }
+    }
+    const room = await liveRepository.getRoom(id)
+    if (room?.status === 'scheduled' && room.scheduled_at && new Date(room.scheduled_at).getTime() > Date.now()) {
+      return { ok: false, error: 'TOO_EARLY' }
+    }
+    return { ok: false, error: 'NOT_SCHEDULED' }
   },
 
   /**
@@ -139,22 +165,54 @@ export const liveService = {
     const room = await liveRepository.getRoom(id)
     if (!room) return { ok: false, error: 'NOT_FOUND' }
     if (!marked && room.status === 'ended') return { ok: true }
-    if (!marked) return { ok: false, error: 'ENDED' }
+    if (!marked && room.status !== 'ending') return { ok: false, error: 'ENDED' }
+    await notifyRoomRefresh(room.room_name)
     const cfg = controlConfig()
     if (cfg) {
-      try {
-        const active = await liveRepository.getActiveRecording(id)
-        if (active) {
+      const active = await liveRepository.getActiveRecording(id)
+      if (active) {
+        if (active.egressId.startsWith('pending:')) {
+          // Start javobi hali yo'q: noma'lum egress'ni to'xtata olmaymiz.
+          if (Date.now() - new Date(active.updatedAt).getTime() < 60_000) {
+            return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+          }
+          await liveRepository.failRecording(active.id)
+        } else {
           await liveRepository.markStopping(active.id)
-          await controlStopEgress(cfg, active.egressId).catch(() => {})
+          try {
+            await controlStopEgress(cfg, active.egressId)
+          } catch (error) {
+            if ((error as { status?: number }).status !== 404) {
+              return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+            }
+          }
         }
-      } catch { /* best-effort */ }
+      }
       try {
         await controlDeleteRoom(cfg, room.room_name)
-      } catch { /* best-effort (bo'sh/yopiq xona) */ }
+      } catch (error) {
+        if ((error as { status?: number }).status !== 404) {
+          return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+        }
+      }
     }
     await liveRepository.markEnded(id)
     return { ok: true }
+  },
+
+  /** Scheduled xona yopiladi, jonli efir esa avval alohida yakunlanishi shart. */
+  async archiveRoom(id: number): Promise<{ ok: true } | { ok: false; error: ServiceError }> {
+    const state = await liveRepository.getArchiveState(id)
+    if (!state) return { ok: false, error: 'NOT_FOUND' }
+    if (state.archived) return { ok: true }
+    if (state.status === 'live' || state.status === 'ending') return { ok: false, error: 'ARCHIVE_REQUIRES_END' }
+    if (state.status === 'scheduled') {
+      const ended = await this.endRoom(id)
+      if (!ended.ok) return ended
+    }
+    const archived = await liveRepository.archiveRoom(id)
+    if (archived || (await liveRepository.getArchiveState(id))?.archived) return { ok: true }
+    return { ok: false, error: 'ARCHIVE_REQUIRES_END' }
   },
 
   async joinRoom(roomId: number, userId: string): Promise<
@@ -166,7 +224,9 @@ export const liveService = {
     if (!isLiveJoinable(room.status)) return { ok: false, error: 'ENDED' }
     const priv = await liveRepository.getPrivileges(roomId, userId)
     const role = resolveJoinRole(priv)
-    const { canSpeak } = await liveRepository.joinRoom(roomId, userId, role)
+    const joined = await liveRepository.joinRoom(roomId, userId, role)
+    if (!joined) return { ok: false, error: room.status === 'scheduled' && role === 'student' ? 'NOT_LIVE' : 'ENDED' }
+    const { canSpeak } = joined
     const capabilities = capabilitiesFor({
       isOwner: priv?.isOwner ?? false,
       isAdmin: priv?.isAdmin ?? false,
@@ -208,16 +268,12 @@ export const liveService = {
     if (!room) return { ok: false, error: 'NOT_FOUND' }
     const priv = await liveRepository.getPrivileges(roomId, userId)
     const role = resolveJoinRole(priv)
-    const active = await liveRepository.isParticipant(roomId, userId)
-    const [handStatus, rec] = await Promise.all([
+    const [participant, handStatus, rec] = await Promise.all([
+      liveRepository.getParticipantState(roomId, userId),
       liveRepository.getHandStatus(roomId, userId),
       liveRepository.getActiveRecording(roomId),
     ])
-    const canSpeak = role === 'teacher'
-      ? true
-      : (await liveRepository.isParticipant(roomId, userId))
-        ? await this.getCanSpeak(roomId, userId)
-        : false
+    const canSpeak = participant.active && (role === 'teacher' || participant.canSpeak)
     const capabilities = capabilitiesFor({
       isOwner: priv?.isOwner ?? false,
       isAdmin: priv?.isAdmin ?? false,
@@ -229,18 +285,13 @@ export const liveService = {
       me: {
         roomStatus: room.status,
         role,
-        active,
+        active: participant.active,
         canSpeak,
         handStatus: handStatus as LiveHandState,
-        recordingStatus: rec ? await this.getRecordingStatus(roomId) : null,
+        recordingStatus: rec?.status ?? null,
         capabilities,
       },
     }
-  },
-
-  async getCanSpeak(roomId: number, userId: string): Promise<boolean> {
-    const rows = await liveRepository.listParticipants(roomId)
-    return rows.find((p) => p.userId === userId)?.canSpeak ?? false
   },
 
   async getRoomDetails(id: number): Promise<{
@@ -250,15 +301,9 @@ export const liveService = {
   } | null> {
     const room = await liveRepository.getRoom(id)
     if (!room) return null
-    const status = await this.getRecordingStatus(id)
+    const rec = await liveRepository.getActiveRecording(id)
+    const status = rec?.status ?? null
     return { room: toPublicRow(room), recordingActive: status !== null, recordingStatus: status }
-  },
-
-  async getRecordingStatus(roomId: number): Promise<'starting' | 'started' | 'stopping' | null> {
-    const rec = await liveRepository.getActiveRecording(roomId)
-    if (!rec) return null
-    const rows = await liveRepository.getRecordingStatusById(rec.id)
-    return rows
   },
 
   async raiseHand(roomId: number, userId: string): Promise<{ ok: true; status: 'pending' | 'approved' } | { ok: false; error: ServiceError }> {
@@ -269,6 +314,7 @@ export const liveService = {
     const priv = await liveRepository.getPrivileges(roomId, userId)
     if (priv && (priv.isOwner || priv.isAdmin)) return { ok: false, error: 'ALREADY_SPEAKER' }
     const status = await liveRepository.raiseHand(roomId, userId)
+    await notifyRoomRefresh(room.room_name)
     return { ok: true, status }
   },
 
@@ -285,11 +331,16 @@ export const liveService = {
     if (cfg) {
       await controlUpdatePermission(cfg, room.room_name, targetUserId, true).catch(() => {})
     }
+    await notifyRoomRefresh(room.room_name)
     return { ok: true }
   },
 
   async rejectHand(roomId: number, targetUserId: string): Promise<{ ok: true } | { ok: false; error: ServiceError }> {
     const ok = await liveRepository.resolveHand(roomId, targetUserId, false)
+    if (ok) {
+      const room = await liveRepository.getRoom(roomId)
+      if (room) await notifyRoomRefresh(room.room_name)
+    }
     return ok ? { ok: true } : { ok: false, error: 'HAND_NOT_PENDING' }
   },
 
@@ -298,13 +349,26 @@ export const liveService = {
     const room = await liveRepository.getRoom(roomId)
     if (!room) return { ok: false, error: 'NOT_FOUND' }
     const priv = await liveRepository.getPrivileges(roomId, targetUserId)
-    if (priv?.isOwner) return { ok: false, error: 'FORBIDDEN' }
-    await liveRepository.setCanSpeak(roomId, targetUserId, false)
-    await liveRepository.resolveHand(roomId, targetUserId, false).catch(() => {})
+    if (priv?.isOwner || priv?.isAdmin) return { ok: false, error: 'FORBIDDEN' }
+    await liveRepository.revokeSpeaker(roomId, targetUserId)
     const cfg = controlConfig()
     if (cfg) {
-      await controlUpdatePermission(cfg, room.room_name, targetUserId, false).catch(() => {})
+      try {
+        await controlUpdatePermission(cfg, room.room_name, targetUserId, false)
+      } catch (error) {
+        // Offline participant 404 — DB desired-state keyingi join'da ishlaydi.
+        if ((error as { status?: number }).status !== 404) {
+          try {
+            await controlRemoveParticipant(cfg, room.room_name, targetUserId)
+          } catch (removeError) {
+            if ((removeError as { status?: number }).status !== 404) {
+              return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+            }
+          }
+        }
+      }
     }
+    await notifyRoomRefresh(room.room_name)
     return { ok: true }
   },
 
@@ -328,8 +392,9 @@ export const liveService = {
       throw e
     }
     if (!reserved) return { ok: false, error: 'RECORDING_CONFLICT' }
+    let egressId: string | null = null
     try {
-      const egressId = await controlStartEgress(cfg, room.room_name, `live-recordings/${room.room_name}`, {
+      egressId = await controlStartEgress(cfg, room.room_name, `live-recordings/${room.room_name}`, {
         endpoint: `https://${r2.accountId}.r2.cloudflarestorage.com`,
         region: 'auto',
         accessKey: r2.accessKeyId,
@@ -337,8 +402,11 @@ export const liveService = {
         bucket: r2.bucket,
       })
       await liveRepository.activateRecording(reserved.id, egressId)
+      await notifyRoomRefresh(room.room_name)
       return { ok: true, egressId }
     } catch (e) {
+      // Egress yaratilib, DB aktivatsiya yiqilsa R2'ga yozishda davom etmasin.
+      if (egressId) await controlStopEgress(cfg, egressId).catch(() => {})
       await liveRepository.failRecording(reserved.id).catch(() => {})
       throw e
     }
@@ -352,9 +420,54 @@ export const liveService = {
     if (!active) return { ok: false, error: 'RECORDING_NOT_ACTIVE' }
     const cfg = controlConfig()
     if (!cfg) return { ok: false, error: 'MEDIA_NOT_CONFIGURED' }
+    if (active.egressId.startsWith('pending:')) return { ok: false, error: 'RECORDING_CONFLICT' }
     await liveRepository.markStopping(active.id)
-    await controlStopEgress(cfg, active.egressId)
+    try {
+      await controlStopEgress(cfg, active.egressId)
+    } catch (error) {
+      if ((error as { status?: number }).status !== 404) {
+        return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+      }
+    }
+    await notifyRoomRefresh(room.room_name)
     return { ok: true, egressId: active.egressId }
+  },
+
+  /** Webhook yo'qolsa manager sahifasi 60s backoff bilan cloud holatini tiklaydi. */
+  async reconcileRecording(roomId: number): Promise<{ ok: true; status: string | null } | { ok: false; error: ServiceError }> {
+    const room = await liveRepository.getRoom(roomId)
+    if (!room) return { ok: false, error: 'NOT_FOUND' }
+    const active = await liveRepository.getActiveRecording(roomId)
+    if (!active) return { ok: true, status: null }
+    if (!(await liveRepository.claimStaleRecording(active.id))) {
+      return { ok: true, status: active.status }
+    }
+    if (active.status === 'starting' && active.egressId.startsWith('pending:')) {
+      await liveRepository.failRecording(active.id)
+      await notifyRoomRefresh(room.room_name)
+      return { ok: true, status: 'failed' }
+    }
+    const cfg = controlConfig()
+    if (!cfg) return { ok: false, error: 'MEDIA_NOT_CONFIGURED' }
+    try {
+      const infos = await controlListEgress(cfg, room.room_name, active.egressId)
+      const info = infos.find((item) => item['egressId'] === active.egressId)
+      if (info && isEgressTerminal(info['status'])) {
+        const parsed = parseEgressEnded(JSON.stringify({ event: 'egress_ended', egressInfo: info }))
+        if (parsed) {
+          await liveRepository.finishRecording(parsed.egressId, parsed.ready, parsed.r2Key)
+          await notifyRoomRefresh(room.room_name)
+          return { ok: true, status: parsed.ready && parsed.r2Key ? 'ready' : 'failed' }
+        }
+      }
+      if (info && active.status === 'stopping') {
+        await controlStopEgress(cfg, active.egressId)
+      }
+      if (!info) console.warn('[live] egress not found during reconcile', room.room_name, active.id)
+      return { ok: true, status: active.status }
+    } catch {
+      return { ok: false, error: 'MEDIA_CONTROL_FAILED' }
+    }
   },
 }
 

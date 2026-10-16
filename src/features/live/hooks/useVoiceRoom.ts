@@ -6,6 +6,7 @@ import type {
   RemoteTrackPublication,
   Room,
 } from 'livekit-client'
+import { LIVE_SIGNAL_TOPIC } from '../../../../shared/live'
 
 export type MediaState = 'idle' | 'connecting' | 'connected' | 'failed'
 
@@ -70,6 +71,8 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
    *  conn = LiveKit room.state, pub = lokal audio nashr holati. */
   const [connState, setConnState] = useState('')
   const [localPub, setLocalPub] = useState('')
+  const [stateSignalVersion, setStateSignalVersion] = useState(0)
+  const [chatSignalVersion, setChatSignalVersion] = useState(0)
   /** Lokal mic darajasi 0..1 (yuboruvchi tomoni jonli ekanini isbotlaydi) */
   const [micLevel, setMicLevel] = useState(0)
   const roomRef = useRef<Room | null>(null)
@@ -193,6 +196,13 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         room.on(Lk.RoomEvent.AudioPlaybackStatusChanged, (playing) => {
           setAudioBlocked(!playing)
         })
+        room.on(Lk.RoomEvent.DataReceived, (payload, sender, _kind, topic) => {
+          // Server signalining o'zi ma'lumot emas: API'dan qayta o'qiladi.
+          if (sender || topic !== LIVE_SIGNAL_TOPIC) return
+          const kind = new TextDecoder().decode(payload)
+          if (kind === 'chat') setChatSignalVersion((v) => v + 1)
+          if (kind === 'state') setStateSignalVersion((v) => v + 1)
+        })
         const syncCount = () => setRemoteCount(room.remoteParticipants.size)
         room.on(Lk.RoomEvent.ParticipantConnected, syncCount)
         room.on(Lk.RoomEvent.ParticipantDisconnected, syncCount)
@@ -226,6 +236,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
         room.on(Lk.RoomEvent.SignalReconnecting, syncPub)
         room.on(Lk.RoomEvent.Disconnected, () => {
           if (!cancelled) {
+            setStateSignalVersion((v) => v + 1)
             setState('idle')
             setMicOn(false)
             setCameraOn(false)
@@ -354,7 +365,7 @@ export function useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo
     return () => window.clearInterval(timer)
   }, [micOn, state])
 
-  return { state, micOn, micPending, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, connState, localPub, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
+  return { state, stateSignalVersion, chatSignalVersion, micOn, micPending, micBlocked, micError, audioBlocked, remoteCount, remoteAudioCount, connState, localPub, micLevel, cameraOn, cameraBlocked, screenOn, speakers, videos, localVideo, toggleMic, toggleCamera, toggleScreen, unlockAudio }
 }
 
 /** Eski nom — backward compat (yangi kod useMediaRoom ishlatsin). */

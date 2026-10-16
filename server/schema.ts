@@ -1188,12 +1188,15 @@ export const liveRooms = pgTable('live_rooms', {
   teacherId:   text('teacher_id').notNull().references(() => users.id, { onDelete: 'restrict', onUpdate: 'cascade' }),
   title:       text('title').notNull(),
   description: text('description'),
-  /** 'scheduled' | 'live' | 'ended' */
+  /** 'scheduled' | 'live' | 'ending' | 'ended' */
   status:      text('status').notNull().default('scheduled'),
-  scheduledAt: timestamp('scheduled_at'),
+  /** UTC instant; eski naive qiymatlar 0072 migratsiyada UTC deb talqin qilinadi. */
+  scheduledAt: timestamp('scheduled_at', { withTimezone: true }),
   startedAt:   timestamp('started_at'),
   endedAt:     timestamp('ended_at'),
-  /** Deterministik SFU xona nomi (`live_<id>`) — INSERT'dan keyin UPDATE bilan o'rnatiladi */
+  /** Ro'yxatdan yashirish; davomat, chat va R2 recording metadata saqlanadi. */
+  archivedAt:  timestamp('archived_at'),
+  /** Deterministik SFU xona nomi (`live_<id>`) — sequence ID bilan bitta INSERT'da */
   roomName:    text('room_name').notNull().unique(),
   createdAt:   timestamp('created_at').defaultNow().notNull(),
   updatedAt:   timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
@@ -1264,6 +1267,8 @@ export const liveRecordings = pgTable('live_recordings', {
   /** 'started' | 'ready' | 'failed' */
   status:    text('status').notNull().default('started'),
   createdAt: timestamp('created_at').defaultNow().notNull(),
+  /** Stale starting/stopping diagnostikasi va retry uchun oxirgi o'tish. */
+  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
 }, (t) => [
   unique('uq_live_recording_egress').on(t.egressId),
   index('idx_live_recordings_room').on(t.roomId),

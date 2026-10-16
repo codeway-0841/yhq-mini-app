@@ -45,6 +45,22 @@ beforeEach(() => {
 })
 
 describe('useMediaRoom microphone publication', () => {
+  it('server-origin refresh signal triggers API invalidation, client-origin packet does not', async () => {
+    const { result } = renderHook(() => useMediaRoom({ ...args, canSpeak: false }))
+    await waitFor(() => expect(result.current.state).toBe('connected'))
+    const handlers = sdk.events.get('DataReceived') ?? new Set()
+    await act(async () => {
+      for (const handler of handlers) {
+        const emit = handler as (...eventArgs: unknown[]) => void
+        emit(new TextEncoder().encode('state'), undefined, 0, 'kivvi.live.refresh.v1')
+        emit(new TextEncoder().encode('chat'), undefined, 0, 'kivvi.live.refresh.v1')
+        emit(new TextEncoder().encode('state'), { identity: 'student' }, 0, 'kivvi.live.refresh.v1')
+      }
+    })
+    expect(result.current.stateSignalVersion).toBe(1)
+    expect(result.current.chatSignalVersion).toBe(1)
+  })
+
   it('does not show an enabled mic when LiveKit resolves without publishing a track', async () => {
     sdk.room.localParticipant.setMicrophoneEnabled.mockResolvedValue(undefined)
     const { result } = renderHook(() => useMediaRoom({ ...args, canSpeak: true }))

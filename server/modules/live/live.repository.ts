@@ -10,7 +10,7 @@
  */
 import { sql } from 'drizzle-orm'
 import { executeRows } from '../../db/connection'
-import { liveRoomName, type LiveRole, type LiveStatus } from '../../../shared/live'
+import type { LiveRole, LiveStatus } from '../../../shared/live'
 
 export interface LiveRoomRow {
   id: number
@@ -56,19 +56,18 @@ export const liveRepository = {
     description: string | null
     scheduledAt: string | null
   }): Promise<LiveRoomRow | null> {
-    // room_name UNIQUE — deterministik bo'lgani uchun avval placeholder,
-    // id chiqqach `live_<id>` ga yangilanadi (2 statement, lekin idempotent emas —
-    // create kam chaqiriladi, race yo'q).
+    // Sequence id va deterministik room_name bitta INSERT'da: parallel create
+    // placeholder UNIQUE collision yoki yarim yozilgan xona qoldirmaydi.
     const rows = await executeRows<{ id: number }>(sql`
-      INSERT INTO live_rooms (subject_id, teacher_id, title, description, scheduled_at, room_name)
-      VALUES (${args.subjectId}, ${args.teacherId}, ${args.title}, ${args.description}, ${args.scheduledAt}::timestamptz, 'pending:' || extract(epoch from now())::bigint || ':' || ${args.teacherId})
+      WITH next_id AS (SELECT nextval(pg_get_serial_sequence('live_rooms', 'id')) AS id)
+      INSERT INTO live_rooms (id, subject_id, teacher_id, title, description, scheduled_at, room_name)
+      SELECT next_id.id, ${args.subjectId}, ${args.teacherId}, ${args.title}, ${args.description},
+             ${args.scheduledAt}::timestamptz, 'live_' || next_id.id::text
+      FROM next_id
       RETURNING id
     `)
     const id = rows[0]?.id
     if (!id) return null
-    await executeRows(sql`
-      UPDATE live_rooms SET room_name = ${liveRoomName(id)}, updated_at = now() WHERE id = ${id}
-    `)
     return this.getRoom(id)
   },
 
@@ -78,8 +77,8 @@ export const liveRepository = {
              (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
              r.title, r.description, r.status,
              r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
-             (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id) AS participant_count
-      FROM live_rooms r WHERE r.id = ${id} LIMIT 1
+             (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
+      FROM live_rooms r WHERE r.id = ${id} AND r.archived_at IS NULL LIMIT 1
     `)
     return rows[0] ?? null
   },
@@ -92,9 +91,9 @@ export const liveRepository = {
                (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
-               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id) AS participant_count
+               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
         FROM live_rooms r
-        WHERE r.subject_id = ${filter.subjectId} AND r.status = ${filter.status}
+        WHERE r.subject_id = ${filter.subjectId} AND r.status = ${filter.status} AND r.archived_at IS NULL
         ORDER BY r.scheduled_at NULLS LAST, r.id DESC LIMIT ${limit}
       `)
     }
@@ -104,9 +103,9 @@ export const liveRepository = {
                (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
-               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id) AS participant_count
+               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
         FROM live_rooms r
-        WHERE r.subject_id = ${filter.subjectId}
+        WHERE r.subject_id = ${filter.subjectId} AND r.archived_at IS NULL
         ORDER BY r.scheduled_at NULLS LAST, r.id DESC LIMIT ${limit}
       `)
     }
@@ -116,9 +115,9 @@ export const liveRepository = {
                (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
-               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id) AS participant_count
+               (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
         FROM live_rooms r
-        WHERE r.status = ${filter.status}
+        WHERE r.status = ${filter.status} AND r.archived_at IS NULL
         ORDER BY r.scheduled_at NULLS LAST, r.id DESC LIMIT ${limit}
       `)
     }
@@ -127,8 +126,8 @@ export const liveRepository = {
              (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
              r.title, r.description, r.status,
              r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
-             (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id) AS participant_count
-      FROM live_rooms r
+             (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
+      FROM live_rooms r WHERE r.archived_at IS NULL
       ORDER BY r.scheduled_at NULLS LAST, r.id DESC LIMIT ${limit}
     `)
   },
@@ -148,7 +147,8 @@ export const liveRepository = {
   async startRoom(id: number): Promise<boolean> {
     const rows = await executeRows<{ id: number }>(sql`
       UPDATE live_rooms SET status = 'live', started_at = now(), updated_at = now()
-      WHERE id = ${id} AND status = 'scheduled'
+      WHERE id = ${id} AND status = 'scheduled' AND archived_at IS NULL
+        AND (scheduled_at IS NULL OR scheduled_at <= now())
       RETURNING id
     `)
     return rows.length > 0
@@ -175,7 +175,7 @@ export const liveRepository = {
   async markEnding(id: number): Promise<boolean> {
     const rows = await executeRows<{ id: number }>(sql`
       UPDATE live_rooms SET status = 'ending', updated_at = now()
-      WHERE id = ${id} AND status IN ('scheduled', 'live')
+      WHERE id = ${id} AND status IN ('scheduled', 'live') AND archived_at IS NULL
       RETURNING id
     `)
     return rows.length > 0
@@ -198,23 +198,42 @@ export const liveRepository = {
     return true
   },
 
-  async joinRoom(roomId: number, userId: string, role: LiveRole): Promise<{ canSpeak: boolean }> {
-    // Qayta join can_speak'ni O'CHIRMAYDI (approve qilingan student qaytsa ham gapiradi).
-    // Teacher roli har doim can_speak=true. Avval approved qo'l bilan kirsa ham true.
+  /** Idempotent soft-delete: faqat tugagan xona yashiriladi. */
+  async archiveRoom(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE live_rooms SET archived_at = now(), updated_at = now()
+      WHERE id = ${id} AND status = 'ended' AND archived_at IS NULL
+      RETURNING id
+    `)
+    return rows.length > 0
+  },
+
+  async getArchiveState(id: number): Promise<{ status: LiveStatus; archived: boolean } | null> {
+    const rows = await executeRows<{ status: LiveStatus; archived: boolean }>(sql`
+      SELECT status, (archived_at IS NOT NULL) AS archived FROM live_rooms WHERE id = ${id} LIMIT 1
+    `)
+    return rows[0] ?? null
+  },
+
+  async joinRoom(roomId: number, userId: string, role: LiveRole): Promise<{ canSpeak: boolean } | null> {
+    // Huquq har join'da tasdiqlangan qo'l/rol manbasidan qayta hisoblanadi.
     const rows = await executeRows<{ can_speak: boolean }>(sql`
       INSERT INTO live_participants (room_id, user_id, role, can_speak, joined_at, left_at)
-      VALUES (${roomId}, ${userId}, ${role},
+      SELECT r.id, ${userId}, ${role},
         (${role} = 'teacher' OR EXISTS (
           SELECT 1 FROM live_hand_raises h
           WHERE h.room_id = ${roomId} AND h.user_id = ${userId} AND h.status = 'approved'
-        )), now(), NULL)
+        )), now(), NULL
+      FROM live_rooms r WHERE r.id = ${roomId} AND r.archived_at IS NULL
+        AND (r.status = 'live' OR (${role} = 'teacher' AND r.status = 'scheduled'))
+      FOR UPDATE OF r
       ON CONFLICT (room_id, user_id) DO UPDATE SET
         role = EXCLUDED.role,
-        can_speak = (live_participants.can_speak OR EXCLUDED.can_speak),
+        can_speak = EXCLUDED.can_speak,
         joined_at = now(), left_at = NULL
       RETURNING can_speak
     `)
-    return { canSpeak: rows[0]?.can_speak ?? role === 'teacher' }
+    return rows[0] ? { canSpeak: rows[0].can_speak } : null
   },
 
   async leaveRoom(roomId: number, userId: string): Promise<void> {
@@ -242,6 +261,25 @@ export const liveRepository = {
       WHERE room_id = ${roomId} AND user_id = ${userId} AND left_at IS NULL LIMIT 1
     `)
     return rows.length > 0
+  },
+
+  /** Kech kelgan webhook yangi join davomatini yopmasligi kerak. */
+  async leaveRoomFromWebhook(roomId: number, userId: string, eventSeconds: number): Promise<void> {
+    await executeRows(sql`
+      UPDATE live_participants SET
+        left_at = to_timestamp(${eventSeconds})::timestamp,
+        duration_sec = duration_sec + GREATEST(0, EXTRACT(EPOCH FROM (to_timestamp(${eventSeconds})::timestamp - joined_at))::int)
+      WHERE room_id = ${roomId} AND user_id = ${userId} AND left_at IS NULL
+        AND joined_at <= to_timestamp(${eventSeconds})::timestamp
+    `)
+  },
+
+  async getParticipantState(roomId: number, userId: string): Promise<{ active: boolean; canSpeak: boolean }> {
+    const rows = await executeRows<{ active: boolean; can_speak: boolean }>(sql`
+      SELECT (left_at IS NULL) AS active, can_speak FROM live_participants
+      WHERE room_id = ${roomId} AND user_id = ${userId} LIMIT 1
+    `)
+    return { active: rows[0]?.active ?? false, canSpeak: rows[0]?.can_speak ?? false }
   },
 
   // ── Qo'l ko'tarish (raise-hand) ──────────────────────────────────────────
@@ -300,10 +338,14 @@ export const liveRepository = {
     `)
   },
 
-  /** Speaker huquqini bevosita o'rnatish (revoke/admin). */
-  async setCanSpeak(roomId: number, userId: string, canSpeak: boolean): Promise<void> {
+  /** Revoke approved holatini ham bekor qiladi; bitta DB statement. */
+  async revokeSpeaker(roomId: number, userId: string): Promise<void> {
     await executeRows(sql`
-      UPDATE live_participants SET can_speak = ${canSpeak}
+      WITH hand AS (
+        UPDATE live_hand_raises SET status = 'rejected', updated_at = now()
+        WHERE room_id = ${roomId} AND user_id = ${userId}
+      )
+      UPDATE live_participants SET can_speak = false
       WHERE room_id = ${roomId} AND user_id = ${userId}
     `)
   },
@@ -345,14 +387,14 @@ export const liveRepository = {
 
   async activateRecording(id: number, egressId: string): Promise<void> {
     await executeRows(sql`
-      UPDATE live_recordings SET egress_id = ${egressId}, status = 'started'
+      UPDATE live_recordings SET egress_id = ${egressId}, status = 'started', updated_at = now()
       WHERE id = ${id} AND status = 'starting'
     `)
   },
 
   async markStopping(id: number): Promise<boolean> {
     const rows = await executeRows<{ id: number }>(sql`
-      UPDATE live_recordings SET status = 'stopping'
+      UPDATE live_recordings SET status = 'stopping', updated_at = now()
       WHERE id = ${id} AND status IN ('starting', 'started')
       RETURNING id
     `)
@@ -361,7 +403,7 @@ export const liveRepository = {
 
   async failRecording(id: number): Promise<void> {
     await executeRows(sql`
-      UPDATE live_recordings SET status = 'failed'
+      UPDATE live_recordings SET status = 'failed', updated_at = now()
       WHERE id = ${id} AND status IN ('starting', 'started', 'stopping')
     `)
   },
@@ -374,20 +416,31 @@ export const liveRepository = {
     return s === 'starting' || s === 'started' || s === 'stopping' ? s : null
   },
 
-  async getActiveRecording(roomId: number): Promise<{ id: number; egressId: string } | null> {
-    const rows = await executeRows<{ id: number; egress_id: string }>(sql`
-      SELECT id, egress_id FROM live_recordings
+  async getActiveRecording(roomId: number): Promise<{ id: number; egressId: string; status: 'starting' | 'started' | 'stopping'; updatedAt: string } | null> {
+    const rows = await executeRows<{ id: number; egress_id: string; status: 'starting' | 'started' | 'stopping'; updated_at: string }>(sql`
+      SELECT id, egress_id, status, updated_at FROM live_recordings
       WHERE room_id = ${roomId} AND status IN ('starting', 'started', 'stopping')
       ORDER BY id DESC LIMIT 1
     `)
     const r = rows[0]
-    return r ? { id: r.id, egressId: r.egress_id } : null
+    return r ? { id: r.id, egressId: r.egress_id, status: r.status, updatedAt: r.updated_at } : null
+  },
+
+  /** Ko'p serverless instance'da bitta reconcile g'olib bo'ladi; retry 60s backoff. */
+  async claimStaleRecording(id: number): Promise<boolean> {
+    const rows = await executeRows<{ id: number }>(sql`
+      UPDATE live_recordings SET updated_at = now()
+      WHERE id = ${id} AND status IN ('starting', 'started', 'stopping')
+        AND updated_at < now() - interval '60 seconds'
+      RETURNING id
+    `)
+    return rows.length > 0
   },
 
   /** Webhook idempotent: egressId bo'yicha (roomId nomuvofiq bo'lsa ham topiladi). */
   async finishRecording(egressId: string, ready: boolean, r2Key: string | null): Promise<void> {
     await executeRows(sql`
-      UPDATE live_recordings SET status = ${ready && r2Key ? 'ready' : 'failed'}, r2_key = ${r2Key}
+      UPDATE live_recordings SET status = ${ready && r2Key ? 'ready' : 'failed'}, r2_key = ${r2Key}, updated_at = now()
       WHERE egress_id = ${egressId} AND status IN ('starting', 'started', 'stopping')
     `)
   },
@@ -399,7 +452,7 @@ export const liveRepository = {
              (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
              rec.r2_key, rec.status, rec.created_at
       FROM live_recordings rec JOIN live_rooms r ON r.id = rec.room_id
-      WHERE rec.status = 'ready'
+      WHERE rec.status = 'ready' AND r.archived_at IS NULL
       ORDER BY rec.id DESC LIMIT ${lim}
     `)
   },

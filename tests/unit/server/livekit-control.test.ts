@@ -8,8 +8,10 @@ import {
   buildServiceToken,
   deleteRoom,
   listParticipants,
+  listEgress,
   livekitHttpUrl,
   removeParticipant,
+  sendRoomRefresh,
   startEgress,
   stopEgress,
   twirpUrl,
@@ -97,6 +99,25 @@ describe('livekit-control transport', () => {
       'https://x.livekit.cloud/twirp/livekit.Egress/StartRoomCompositeEgress',
       'https://x.livekit.cloud/twirp/livekit.Egress/StopEgress',
     ])
+  })
+
+  it('server refresh signali LiveKit data kanaliga reliable paket yuboradi', async () => {
+    let body: Record<string, unknown> = {}
+    let url = ''
+    vi.stubGlobal('fetch', vi.fn(async (input: string, init?: { body?: string }) => {
+      url = input
+      body = JSON.parse(init?.body ?? '{}') as Record<string, unknown>
+      return okJson({})
+    }))
+    await sendRoomRefresh(CFG, 'live_5')
+    expect(url).toContain('/livekit.RoomService/SendData')
+    expect(body).toMatchObject({ room: 'live_5', kind: 0, topic: 'kivvi.live.refresh.v1' })
+    expect(Buffer.from(String(body['data']), 'base64').toString('utf8')).toBe('state')
+  })
+
+  it('ListEgress ID bilan so‘raydi va noto‘g‘ri javobni bo‘shga tushiradi', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => okJson({ egressInfos: [{ egressId: 'eg_1', status: 3 }] })))
+    expect(await listEgress(CFG, 'live_5', 'eg_1')).toEqual([{ egressId: 'eg_1', status: 3 }])
   })
 
   it('startEgress egressId yo‘q bo‘lsa xato', async () => {

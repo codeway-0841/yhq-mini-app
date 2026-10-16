@@ -1,0 +1,1 @@
+ALTER TABLE "live_recordings" ADD COLUMN "updated_at" timestamp with time zone DEFAULT now() NOT NULL;

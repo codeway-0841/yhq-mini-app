@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { Hand, Mic, MicOff, MonitorUp, Radio, Send, Users, Video, VideoOff } from 'lucide-react'
+import { Hand, Mic, MicOff, MonitorUp, Radio, Send, Trash2, Users, Video, VideoOff } from 'lucide-react'
 import { PageHeader } from '@/shared/components/ui/page-header'
 import { Card, CardContent } from '@/shared/components/ui/card'
 import { Badge } from '@/shared/components/ui/badge'
 import { Button } from '@/shared/components/ui/button'
+import { ConfirmDialog } from '@/shared/components/ui/dialog'
 import { useT } from '@/shared/i18n'
 import { useAppStore } from '@/shared/store/useAppStore'
 import { useSubjectStore } from '@/shared/store/useSubjectStore'
@@ -26,17 +27,13 @@ export default function LiveListPage() {
   const [recordingEnabled, setRecordingEnabled] = useState(false)
   const [loading, setLoading] = useState(true)
   const [title, setTitle] = useState('')
+  const [description, setDescription] = useState('')
+  const [scheduledAt, setScheduledAt] = useState('')
   const [creating, setCreating] = useState(false)
+  const [archiveTarget, setArchiveTarget] = useState<LiveRoomPublic | null>(null)
+  const [archiving, setArchiving] = useState(false)
+  const [error, setError] = useState('')
   const canCreate = user?.isAdmin === true || user?.isTeacher === true
-
-  const reload = () => {
-    setLoading(true)
-    api.listLiveRooms({ limit: 20 })
-      .then((r) => setRooms(r.rooms))
-      .catch(() => setRooms([]))
-      .finally(() => setLoading(false))
-    api.listLiveRecordings().then((r) => setRecordings(r.recordings)).catch(() => {})
-  }
 
   useEffect(() => {
     let alive = true
@@ -54,21 +51,42 @@ export default function LiveListPage() {
     const t = title.trim()
     if (t.length < 3 || creating) return
     setCreating(true)
+    setError('')
     try {
-      const r = await api.createLiveRoom({ subjectId, title: t })
+      const r = await api.createLiveRoom({
+        subjectId, title: t, description: description.trim() || null,
+        scheduledAt: scheduledAt ? new Date(scheduledAt).toISOString() : null,
+      })
       setTitle('')
+      setDescription('')
+      setScheduledAt('')
       setRooms((prev) => [r.room, ...prev])
     } catch {
-      // 403 = huquq yo'q — forma ko'rinmay qoladi (canCreate false bo'lganda)
+      setError(tt('liveActionFailed'))
     } finally {
       setCreating(false)
-      void reload()
+    }
+  }
+
+  const handleArchive = async () => {
+    if (!archiveTarget || archiving) return
+    setArchiving(true)
+    setError('')
+    try {
+      await api.archiveLiveRoom(archiveTarget.id)
+      setRooms((prev) => prev.filter((room) => room.id !== archiveTarget.id))
+      setArchiveTarget(null)
+    } catch {
+      setError(tt('liveActionFailed'))
+    } finally {
+      setArchiving(false)
     }
   }
 
   return (
     <div className="flex flex-1 flex-col px-4 pb-8">
       <PageHeader title={tt('liveTitle')} subtitle={tt('liveSubtitle')} size="md" onBack={() => goBack(navigate)} />
+      {error && <p role="alert" className="mb-3 rounded-xl bg-red-500/10 px-4 py-3 text-sm text-red-600">{error}</p>}
       {canCreate && (
         <Card>
           <CardContent className="flex flex-col gap-2 p-4">
@@ -86,6 +104,22 @@ export default function LiveListPage() {
                 {tt('liveCreateBtn')}
               </Button>
             </div>
+            <input
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              placeholder={tt('liveDescriptionPlaceholder')}
+              maxLength={500}
+              className="h-11 rounded-2xl bg-psurface px-4 text-[15px] text-pfg outline-none placeholder:text-pmuted focus:ring-2 focus:ring-pprimary"
+            />
+            <label className="flex flex-col gap-1 text-xs text-pmuted">
+              {tt('liveScheduleLabel')}
+              <input
+                type="datetime-local"
+                value={scheduledAt}
+                onChange={(e) => setScheduledAt(e.target.value)}
+                className="h-11 rounded-2xl bg-psurface px-4 text-[15px] text-pfg outline-none focus:ring-2 focus:ring-pprimary"
+              />
+            </label>
           </CardContent>
         </Card>
       )}
@@ -95,20 +129,33 @@ export default function LiveListPage() {
           <Card><CardContent className="p-4 text-sm text-pmuted">{tt('liveEmpty')}</CardContent></Card>
         )}
         {rooms.map((r) => (
-          <Card key={r.id} interactive onClick={() => navigate(`/live/${r.id}`)}>
+          <Card key={r.id}>
             <CardContent className="flex items-center gap-3 p-4">
-              <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-psurface text-pmuted">
-                <Radio size={20} />
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="block truncate text-[15px] font-semibold text-pfg">{r.title}</span>
-                <span className="mt-0.5 flex items-center gap-2 text-xs text-pmuted">
-                  <Badge variant={r.status === 'live' ? 'danger' : r.status === 'scheduled' ? 'accent' : 'default'}>
-                    {r.status === 'live' ? tt('liveStatusLive') : r.status === 'scheduled' ? tt('liveStatusScheduled') : tt('liveStatusEnded')}
-                  </Badge>
-                  <span className="inline-flex items-center gap-1"><Users size={13} />{r.participantCount}</span>
+              <button type="button" onClick={() => navigate(`/live/${r.id}`)} className="flex min-w-0 flex-1 items-center gap-3 text-left">
+                <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-psurface text-pmuted">
+                  <Radio size={20} />
                 </span>
-              </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-[15px] font-semibold text-pfg">{r.title}</span>
+                  <span className="mt-0.5 flex items-center gap-2 text-xs text-pmuted">
+                    <Badge variant={r.status === 'live' ? 'danger' : r.status === 'scheduled' ? 'accent' : 'default'}>
+                      {r.status === 'live' ? tt('liveStatusLive') : r.status === 'scheduled' ? tt('liveStatusScheduled') : tt('liveStatusEnded')}
+                    </Badge>
+                    <span className="inline-flex items-center gap-1"><Users size={13} />{r.participantCount}</span>
+                  </span>
+                  {r.scheduledAt && <span className="mt-1 block text-xs text-pmuted">{new Date(r.scheduledAt).toLocaleString(lang === 'ru' ? 'ru-RU' : 'uz-UZ')}</span>}
+                </span>
+              </button>
+              {(user?.isAdmin || user?.id === r.teacherId) && (
+                <button
+                  type="button"
+                  aria-label={tt('liveArchive')}
+                  title={r.status === 'live' || r.status === 'ending' ? tt('liveArchiveActive') : tt('liveArchive')}
+                  disabled={r.status === 'live' || r.status === 'ending'}
+                  onClick={() => setArchiveTarget(r)}
+                  className="grid size-10 shrink-0 place-items-center rounded-xl text-pmuted hover:bg-red-500/10 hover:text-red-600 disabled:opacity-40"
+                ><Trash2 size={18} /></button>
+              )}
             </CardContent>
           </Card>
         ))}
@@ -129,6 +176,17 @@ export default function LiveListPage() {
           </div>
         )}
       </div>
+      <ConfirmDialog
+        open={archiveTarget !== null}
+        title={archiveTarget?.title ?? tt('liveArchive')}
+        description={tt('liveArchiveConfirm')}
+        confirmLabel={tt('liveArchive')}
+        cancelLabel={tt('liveCancel')}
+        loading={archiving}
+        destructive
+        onConfirm={() => { void handleArchive() }}
+        onClose={() => { if (!archiving) setArchiveTarget(null) }}
+      />
     </div>
   )
 }
@@ -146,7 +204,7 @@ function LiveRoomPage() {
   const tt = useT(lang)
   const [room, setRoom] = useState<LiveRoomPublic | null>(null)
   const [recordingEnabled, setRecordingEnabled] = useState(false)
-  const [recordingActive, setRecordingActive] = useState(false)
+  const [recordingStatus, setRecordingStatus] = useState<'starting' | 'started' | 'stopping' | null>(null)
   const [canSpeak, setCanSpeak] = useState(false)
   const [caps, setCaps] = useState<LiveCapabilities>({ canManage: false, canModerate: false, canRecord: false, canPublish: false })
   const [livekitToken, setLivekitToken] = useState<string | null>(null)
@@ -154,12 +212,14 @@ function LiveRoomPage() {
   const [mediaEnabled, setMediaEnabled] = useState(false)
   const [joined, setJoined] = useState(false)
   const [busy, setBusy] = useState(false)
+  const [roomError, setRoomError] = useState('')
   const [draft, setDraft] = useState('')
   const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved' | 'rejected'>('none')
   const [cloud, setCloud] = useState<{ participants: { identity: string; audioTracks: number; audioMuted: boolean; videoTracks: number }[] } | { error: true } | null>(null)
   const [hands, setHands] = useState<{ userId: string; userName: string | null; status: string; createdAt: string }[]>([])
-  const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended' || room?.status === 'ending')
+  const isRoomManager = user?.isAdmin === true || user?.id === room?.teacherId
   const voice = useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo: canSpeak, enabled: joined && mediaEnabled })
+  const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended' || room?.status === 'ending', voice.chatSignalVersion, voice.state === 'connected')
 
   // Manager: qo'llar ro'yxati (5s polling) — capability bo'yicha, rol taxmini YO'Q
   useEffect(() => {
@@ -169,9 +229,9 @@ function LiveRoomPage() {
       api.listLiveHands(roomId, false).then((r) => { if (alive) setHands(r.hands) }).catch(() => {})
     }
     load()
-    const t = setInterval(load, 5000)
+    const t = setInterval(load, voice.state === 'connected' ? 30_000 : 5_000)
     return () => { alive = false; clearInterval(t) }
-  }, [joined, caps.canModerate, roomId])
+  }, [joined, caps.canModerate, roomId, voice.stateSignalVersion, voice.state])
 
   // /me polling (5s, barcha joined): canSpeak/hand/role/capability/roomStatus.
   // Approve server'da LiveKit permission'ni ham yangilaydi — qayta ulanish SHART EMAS.
@@ -186,7 +246,7 @@ function LiveRoomPage() {
         setCanSpeak(me.canSpeak)
         setHandStatus(me.handStatus)
         setCaps(me.capabilities)
-        setRecordingActive(me.recordingStatus !== null)
+        setRecordingStatus(me.recordingStatus)
         setRoom((prev) => (prev && prev.status !== me.roomStatus ? { ...prev, status: me.roomStatus } : prev))
         if (me.roomStatus === 'ended') {
           try { await api.leaveLiveRoom(roomId) } catch { /* ignore */ }
@@ -198,9 +258,10 @@ function LiveRoomPage() {
         }
       } catch { /* ignore */ }
     }
-    const t = setInterval(load, 5000)
+    load()
+    const t = setInterval(load, voice.state === 'connected' ? 30_000 : 5_000)
     return () => { alive = false; clearInterval(t) }
-  }, [joined, roomId])
+  }, [joined, roomId, voice.stateSignalVersion, voice.state])
 
   // Manager: Cloud diagnostika (10s polling) — xato jim yutilmaydi
   useEffect(() => {
@@ -215,21 +276,51 @@ function LiveRoomPage() {
         .catch(() => { if (alive) setCloud({ error: true }) })
     }
     load()
-    const t = setInterval(load, 10_000)
+    const t = setInterval(load, voice.state === 'connected' ? 30_000 : 10_000)
     return () => { alive = false; clearInterval(t) }
-  }, [joined, caps.canModerate, roomId])
+  }, [joined, caps.canModerate, roomId, voice.state])
+
+  useEffect(() => {
+    if (!joined || !caps.canManage || recordingStatus === null) return
+    let alive = true
+    const reconcile = () => {
+      api.reconcileLiveRecording(roomId)
+        .then((result) => {
+          if (!alive) return
+          const status = result.status
+          setRecordingStatus(status === 'starting' || status === 'started' || status === 'stopping' ? status : null)
+        })
+        .catch(() => {})
+    }
+    reconcile()
+    const timer = window.setInterval(reconcile, 60_000)
+    return () => { alive = false; window.clearInterval(timer) }
+  }, [joined, caps.canManage, recordingStatus, roomId])
 
   useEffect(() => {
     if (!Number.isInteger(roomId) || roomId <= 0) return
     let alive = true
     api.getLiveRoom(roomId)
-      .then((r) => { if (alive) { setRoom(r.room); setRecordingEnabled(r.recordingEnabled); setRecordingActive(r.recordingActive) } })
+      .then((r) => { if (alive) { setRoom(r.room); setRecordingEnabled(r.recordingEnabled); setRecordingStatus(r.recordingStatus) } })
       .catch(() => { if (alive) setRoom(null) })
     return () => { alive = false }
   }, [roomId])
 
+  // Student efir boshlanishini kutayotganda hali LiveKit signaliga ulanmagan.
+  useEffect(() => {
+    if (joined || room?.status !== 'scheduled') return
+    let alive = true
+    const timer = window.setInterval(() => {
+      api.getLiveRoom(roomId)
+        .then((result) => { if (alive) setRoom(result.room) })
+        .catch(() => {})
+    }, 15_000)
+    return () => { alive = false; window.clearInterval(timer) }
+  }, [joined, room?.status, roomId])
+
   const handleJoin = async () => {
     setBusy(true)
+    setRoomError('')
     try {
       const r = await api.joinLiveRoom(roomId)
       setCanSpeak(r.role === 'teacher' || r.canSpeak)
@@ -238,6 +329,8 @@ function LiveRoomPage() {
       setMediaUrl(r.mediaUrl)
       setMediaEnabled(r.mediaEnabled)
       setJoined(true)
+    } catch {
+      setRoomError(tt('liveActionFailed'))
     } finally {
       setBusy(false)
     }
@@ -293,6 +386,10 @@ function LiveRoomPage() {
           </Badge>
         }
       />
+      {roomError && <p role="alert" className="mb-3 rounded-xl bg-red-500/10 px-4 py-3 text-sm text-red-600">{roomError}</p>}
+      {room.status === 'scheduled' && !isRoomManager && (
+        <p className="mb-3 text-sm text-pmuted">{tt('liveWaitForStart')}</p>
+      )}
       {/* Media paneli — LiveKit ovoz+kamera+screen (Faza 1c). Media o'chiq bo'lsa chat rejimi. */}
       <Card>
         <CardContent className="flex flex-col items-center gap-2 p-4 text-center">
@@ -395,7 +492,7 @@ function LiveRoomPage() {
       </Card>
 
       {!joined ? (
-        <Button block className="mt-3" loading={busy} disabled={room.status === 'ended' || room.status === 'ending'} onClick={handleJoin}>
+        <Button block className="mt-3" loading={busy} disabled={room.status !== 'live' && !(room.status === 'scheduled' && isRoomManager)} onClick={handleJoin}>
           {tt('liveJoin')}
         </Button>
       ) : (
@@ -426,17 +523,17 @@ function LiveRoomPage() {
               <Send size={18} />
             </Button>
           </div>
-          {caps.canManage && room.status !== 'ended' && room.status !== 'ending' && (
+          {caps.canManage && room.status !== 'ended' && (
             <>
-              <TeacherControls roomId={roomId} status={room.status} onChanged={setRoom} recordingEnabled={recordingEnabled} recordingActive={recordingActive} />
-              <HandsPanel
+              <TeacherControls roomId={roomId} status={room.status} scheduledAt={room.scheduledAt} onChanged={setRoom} recordingEnabled={recordingEnabled} recordingStatus={recordingStatus} onRecordingChanged={setRecordingStatus} />
+              {room.status !== 'ending' && <HandsPanel
                 roomId={roomId}
                 hands={hands}
                 onResolved={(targetUserId, approved) => {
                   setHands((prev) => prev.filter((h) => h.userId !== targetUserId))
                   if (approved) void api.listLiveParticipants(roomId).catch(() => {})
                 }}
-              />
+              />}
             </>
           )}
         </div>
@@ -445,54 +542,66 @@ function LiveRoomPage() {
   )
 }
 
-function TeacherControls({ roomId, status, onChanged, recordingEnabled, recordingActive }: {
-  roomId: number; status: string; onChanged: (r: LiveRoomPublic) => void; recordingEnabled: boolean; recordingActive: boolean
+function TeacherControls({ roomId, status, scheduledAt, onChanged, recordingEnabled, recordingStatus, onRecordingChanged }: {
+  roomId: number; status: string; scheduledAt: string | null; onChanged: (r: LiveRoomPublic) => void; recordingEnabled: boolean; recordingStatus: 'starting' | 'started' | 'stopping' | null; onRecordingChanged: (status: 'starting' | 'started' | 'stopping' | null) => void
 }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const [busy, setBusy] = useState(false)
-  const [recording, setRecording] = useState(recordingActive)
-  // Server holati yangilanganda (reload/serverdan) sinxronlash
-  useEffect(() => { setRecording(recordingActive) }, [recordingActive])
+  const [nowMs, setNowMs] = useState(() => Date.now())
+  const [error, setError] = useState('')
+  const tooEarly = status === 'scheduled' && scheduledAt !== null && new Date(scheduledAt).getTime() > nowMs
+  useEffect(() => {
+    if (status !== 'scheduled' || !scheduledAt) return
+    const timer = window.setInterval(() => setNowMs(Date.now()), 15_000)
+    return () => window.clearInterval(timer)
+  }, [status, scheduledAt])
   const [recBusy, setRecBusy] = useState(false)
   const toggleRecord = async () => {
     setRecBusy(true)
+    setError('')
     try {
-      if (recording) {
+      if (recordingStatus === 'started') {
         await api.stopLiveRecording(roomId)
-        setRecording(false)
+        onRecordingChanged('stopping')
       } else {
         await api.startLiveRecording(roomId)
-        setRecording(true)
+        onRecordingChanged('started')
       }
-    } catch { /* 503 = media/R2 sozlanmagan — jim qolamiz */ } finally {
+    } catch { setError(tt('liveActionFailed')) } finally {
       setRecBusy(false)
     }
   }
   return (
     <div className="flex flex-wrap gap-2">
+      {error && <p role="alert" className="w-full text-sm text-red-600">{error}</p>}
       {status === 'scheduled' && (
-        <Button variant="secondary" loading={busy} onClick={async () => {
-          setBusy(true)
-          try { const r = await api.startLiveRoom(roomId); if (r.room) onChanged(r.room) } finally { setBusy(false) }
+        <Button variant="secondary" loading={busy} disabled={tooEarly} onClick={async () => {
+          setBusy(true); setError('')
+          try { const r = await api.startLiveRoom(roomId); if (r.room) onChanged(r.room) }
+          catch { setError(tt('liveActionFailed')) }
+          finally { setBusy(false) }
         }}>
           {tt('liveStart')}
         </Button>
       )}
+      {tooEarly && <p className="w-full text-xs text-pmuted">{tt('liveTooEarly')}</p>}
       {status !== 'ended' && (
         <Button variant="destructive" loading={busy} onClick={async () => {
-          setBusy(true)
-          try { const r = await api.endLiveRoom(roomId); if (r.room) onChanged(r.room) } finally { setBusy(false) }
+          setBusy(true); setError('')
+          try { const r = await api.endLiveRoom(roomId); if (r.room) onChanged(r.room) }
+          catch { setError(tt('liveActionFailed')) }
+          finally { setBusy(false) }
         }}>
-          {tt('liveEnd')}
+          {status === 'ending' ? tt('liveRetryEnd') : tt('liveEnd')}
         </Button>
       )}
       {status === 'live' && recordingEnabled && (
-        <Button variant="secondary" loading={recBusy} onClick={toggleRecord}>
-          {recording ? tt('liveStopRecord') : tt('liveRecord')}
+        <Button variant="secondary" loading={recBusy} disabled={recordingStatus === 'starting' || recordingStatus === 'stopping'} onClick={toggleRecord}>
+          {recordingStatus === 'started' ? tt('liveStopRecord') : tt('liveRecord')}
         </Button>
       )}
-      {recording && recordingEnabled && <Badge variant="danger">{tt('liveRecording')}</Badge>}
+      {recordingStatus && recordingEnabled && <Badge variant={recordingStatus === 'stopping' ? 'warning' : 'danger'}>{recordingStatus === 'stopping' ? tt('liveRecordingStopping') : tt('liveRecording')}</Badge>}
     </div>
   )
 }

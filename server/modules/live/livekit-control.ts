@@ -7,6 +7,7 @@
  * kabi metod-grant mosligi Twirp 401 sababi edi).
  */
 import { createHmac } from 'node:crypto'
+import { LIVE_SIGNAL_TOPIC } from '../../../shared/live'
 import type { EgressS3Config } from './egress'
 
 export interface ControlConfig {
@@ -130,6 +131,23 @@ export async function removeParticipant(cfg: ControlConfig, room: string, identi
   await twirpCall(cfg, 'livekit.RoomService', 'RemoveParticipant', { roomAdmin: true, room }, { room, identity })
 }
 
+/** Server-origin invalidation: no client data trusted; all readers re-fetch API. */
+export async function sendRoomRefresh(cfg: ControlConfig, room: string, kind: 'state' | 'chat' = 'state'): Promise<void> {
+  await twirpCall(
+    { ...cfg, timeoutMs: 2_000 },
+    'livekit.RoomService',
+    'SendData',
+    { roomAdmin: true, room },
+    {
+      room,
+      data: Buffer.from(kind, 'utf8').toString('base64'),
+      kind: 0, // DataPacket.Kind.RELIABLE
+      destinationIdentities: [],
+      topic: LIVE_SIGNAL_TOPIC,
+    },
+  )
+}
+
 /** Xonani yopish (barcha uziladi) — grant: roomCreate (rasmiy SDK bilan 1:1). */
 export async function deleteRoom(cfg: ControlConfig, room: string): Promise<void> {
   await twirpCall(cfg, 'livekit.RoomService', 'DeleteRoom', { roomCreate: true }, { room })
@@ -173,4 +191,14 @@ export async function startEgress(
 /** Egress stop — grant: roomRecord. */
 export async function stopEgress(cfg: ControlConfig, egressId: string): Promise<void> {
   await twirpCall(cfg, 'livekit.Egress', 'StopEgress', { roomRecord: true }, { egressId })
+}
+
+/** Stuck stopping'ni webhook yo'qolganida tekshirish (faqat manager-trigger). */
+export async function listEgress(cfg: ControlConfig, room: string, egressId: string): Promise<Record<string, unknown>[]> {
+  const out = await twirpCall(cfg, 'livekit.Egress', 'ListEgress', { roomRecord: true, room }, { egressId }) as {
+    egressInfos?: unknown
+  }
+  return Array.isArray(out.egressInfos)
+    ? out.egressInfos.filter((info): info is Record<string, unknown> => typeof info === 'object' && info !== null)
+    : []
 }

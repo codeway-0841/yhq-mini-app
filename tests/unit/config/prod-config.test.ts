@@ -9,6 +9,9 @@ const KEYS = [
   'NODE_ENV', 'BOT_TOKEN', 'BOT_WEBHOOK_SECRET', 'CRON_SECRET', 'OTP_PEPPER',
   'CLICK_SERVICE_ID', 'CLICK_MERCHANT_ID', 'CLICK_SECRET_KEY',
   'DATABASE_URL', 'ALLOWED_ORIGIN',
+  'LIVE_RECORDING_ENABLED', 'LIVEKIT_URL', 'LIVEKIT_API_KEY', 'LIVEKIT_API_SECRET',
+  'CLOUDFLARE_ACCOUNT_ID', 'CLOUDFLARE_R2_ACCESS_KEY_ID',
+  'CLOUDFLARE_R2_SECRET_ACCESS_KEY', 'CLOUDFLARE_R2_BUCKET', 'CLOUDFLARE_PUBLIC_URL',
 ] as const
 
 const saved = new Map<string, string | undefined>()
@@ -70,6 +73,41 @@ describe('server/config assertProdConfig (audit fix)', () => {
     process.env['NODE_ENV'] = 'development'
     process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
     delete process.env['BOT_TOKEN']
+    const assert = await boot()
+    expect(() => assert()).not.toThrow()
+  })
+
+  it('production: live recording yoqilsa LiveKit + R2 + playback URL to\'liq bo\'lishi shart', async () => {
+    process.env['NODE_ENV'] = 'production'
+    process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
+    process.env['BOT_TOKEN'] = 'x'
+    process.env['CRON_SECRET'] = 'x'
+    process.env['OTP_PEPPER'] = '0123456789abcdef'
+    process.env['ALLOWED_ORIGIN'] = 'https://app.example.com'
+    process.env['LIVE_RECORDING_ENABLED'] = 'true'
+    delete process.env['CLOUDFLARE_R2_BUCKET']
+    delete process.env['CLOUDFLARE_PUBLIC_URL']
+    const assert = await boot()
+    expect(() => assert()).toThrowError(/CLOUDFLARE_R2_BUCKET/)
+    expect(() => assert()).toThrowError(/CLOUDFLARE_PUBLIC_URL/)
+  })
+
+  it('production: live recording to\'liq R2 konfiguratsiyasi bilan o\'tadi', async () => {
+    process.env['NODE_ENV'] = 'production'
+    process.env['DATABASE_URL'] = 'postgresql://u:p@h/db'
+    process.env['BOT_TOKEN'] = 'x'
+    process.env['CRON_SECRET'] = 'x'
+    process.env['OTP_PEPPER'] = '0123456789abcdef'
+    process.env['ALLOWED_ORIGIN'] = 'https://app.example.com'
+    process.env['LIVE_RECORDING_ENABLED'] = 'true'
+    process.env['LIVEKIT_URL'] = 'wss://live.example.com'
+    process.env['LIVEKIT_API_KEY'] = 'key'
+    process.env['LIVEKIT_API_SECRET'] = 'secret'
+    process.env['CLOUDFLARE_ACCOUNT_ID'] = 'account'
+    process.env['CLOUDFLARE_R2_ACCESS_KEY_ID'] = 'access'
+    process.env['CLOUDFLARE_R2_SECRET_ACCESS_KEY'] = 'secret'
+    process.env['CLOUDFLARE_R2_BUCKET'] = 'live-recordings'
+    process.env['CLOUDFLARE_PUBLIC_URL'] = 'https://recordings.example.com'
     const assert = await boot()
     expect(() => assert()).not.toThrow()
   })

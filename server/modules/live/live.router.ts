@@ -13,7 +13,7 @@ import { LIVE_MESSAGE_MAX_LEN, LIVE_TITLE_MAX_LEN } from '../../../shared/live'
 import { liveRepository } from './live.repository'
 import { getCachedCloudHealth, isLiveEnabled, isManager, liveService, type ServiceError } from './live.service'
 import { verifyLivekitWebhook } from './livekit'
-import { parseEgressEnded } from './egress'
+import { parseEgressEnded, parseLiveRoomName } from './egress'
 
 const router = Router()
 
@@ -44,6 +44,9 @@ const ERROR_MAP: Record<ServiceError, { status: number; code: string }> = {
   NOT_LIVE: { status: 409, code: 'LIVE_NOT_LIVE' },
   CREATE_FAILED: { status: 500, code: 'LIVE_CREATE_FAILED' },
   LIVE_DISABLED: { status: 503, code: 'LIVE_DISABLED' },
+  ARCHIVE_REQUIRES_END: { status: 409, code: 'LIVE_ARCHIVE_REQUIRES_END' },
+  MEDIA_CONTROL_FAILED: { status: 503, code: 'LIVE_MEDIA_CONTROL_FAILED' },
+  TOO_EARLY: { status: 409, code: 'LIVE_TOO_EARLY' },
 }
 
 function fail(error: ServiceError): never {
@@ -65,6 +68,7 @@ async function requireManager(roomId: number, userId: string): Promise<void> {
 }
 
 const createLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:create', keyFn: identityKey })
+const archiveLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:archive', keyFn: identityKey })
 const joinLimiter = rateLimit({ maxPerMinute: 20, bucket: 'live:join', keyFn: identityKey })
 const messageLimiter = rateLimit({ maxPerMinute: 30, bucket: 'live:message', keyFn: identityKey })
 const raiseLimiter = rateLimit({ maxPerMinute: 10, bucket: 'live:raise', keyFn: identityKey })
@@ -146,7 +150,23 @@ router.get(
     res.json({
       ok: true, room: d.room, mediaEnabled: config.live.mediaEnabled,
       recordingEnabled: config.live.recordingEnabled, recordingActive: d.recordingActive,
+      recordingStatus: d.recordingStatus,
     })
+  }),
+)
+
+// DELETE /api/live/rooms/:id — faqat manager, soft archive
+router.delete(
+  '/live/rooms/:id',
+  archiveLimiter,
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireManager(id, userId)
+    const result = await liveService.archiveRoom(id)
+    if (!result.ok) fail(result.error)
+    res.json({ ok: true })
   }),
 )
 
@@ -278,6 +298,7 @@ router.post(
     if (!(await liveRepository.isParticipant(id, userId))) fail('JOIN_REQUIRED')
     const m = await liveRepository.postMessage(id, userId, body.body)
     if (!m) throw new AppError(500, 'LIVE_MESSAGE_FAILED')
+    await liveService.notifyRoomRefresh(room.roomName, 'chat')
     res.json({
       ok: true,
       message: {
@@ -310,6 +331,8 @@ router.delete(
     const userId = requireUserId(req)
     const { id } = req.params as unknown as { id: number }
     await liveRepository.lowerHand(id, userId)
+    const room = await liveRepository.getRoom(id)
+    if (room) await liveService.notifyRoomRefresh(room.room_name)
     res.json({ ok: true })
   }),
 )
@@ -420,6 +443,21 @@ router.post(
   }),
 )
 
+// POST /api/live/rooms/:id/record/reconcile — webhook yo'qolganida Cloud statusni tiklash
+router.post(
+  '/live/rooms/:id/record/reconcile',
+  recordLimiter,
+  validate({ params: RoomIdParamSchema }),
+  wrap(async (req, res) => {
+    const userId = requireUserId(req)
+    const { id } = req.params as unknown as { id: number }
+    await requireManager(id, userId)
+    const result = await liveService.reconcileRecording(id)
+    if (!result.ok) fail(result.error)
+    res.json(result)
+  }),
+)
+
 // GET /api/live/recordings — tayyor yozuvlar (flag o'chiq bo'lsa bo'sh)
 router.get(
   '/live/recordings',
@@ -467,9 +505,19 @@ router.post(
     if (evt.event === 'egress_ended') {
       const info = parseEgressEnded(raw)
       if (info) {
-        try {
-          await liveRepository.finishRecording(info.egressId, info.ready, info.r2Key)
-        } catch { /* best-effort — LiveKit retry qilmasligi uchun baribir 200 */ }
+        await liveRepository.finishRecording(info.egressId, info.ready, info.r2Key)
+        if (info.roomId) {
+          const room = await liveRepository.getRoom(info.roomId)
+          if (room) await liveService.notifyRoomRefresh(room.room_name)
+        }
+      }
+    }
+    if (evt.event === 'participant_left' || evt.event === 'participant_connection_aborted') {
+      const eventRoomId = parseLiveRoomName(evt.room?.name ?? '')
+      const identity = evt.participant?.identity
+      const eventSeconds = Number(evt.createdAt)
+      if (eventRoomId && identity && Number.isSafeInteger(eventSeconds) && eventSeconds > 0) {
+        await liveRepository.leaveRoomFromWebhook(eventRoomId, identity, eventSeconds)
       }
     }
     res.json({ ok: true, event: evt.event })

@@ -141,3 +141,5 @@ export interface LiveRecordingPublic {
 export const LIVE_JOIN_TOKEN_TTL_SECONDS = 600
 export const LIVE_MESSAGE_MAX_LEN = 500
 export const LIVE_TITLE_MAX_LEN = 120
+/** Server yuboradigan invalidation signal; client faqat API'dan qayta o'qiydi. */
+export const LIVE_SIGNAL_TOPIC = 'kivvi.live.refresh.v1'

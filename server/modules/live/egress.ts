@@ -51,6 +51,10 @@ function isEgressComplete(status: unknown): boolean {
   return status === 3 || status === 'EGRESS_COMPLETE' || status === 'COMPLETE'
 }
 
+export function isEgressTerminal(status: unknown): boolean {
+  return [3, 4, 5, 6, 'EGRESS_COMPLETE', 'EGRESS_FAILED', 'EGRESS_ABORTED', 'EGRESS_LIMIT_REACHED', 'COMPLETE', 'FAILED', 'ABORTED'].includes(status as string)
+}
+
 /**
  * egress_ended webhook body parse (defensive — LiveKit versiyalari farq qiladi).
  * R2 key `fileResults[0].location` (s3://bucket/key yoki https) yoki filename'dan.

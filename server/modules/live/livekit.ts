@@ -66,6 +66,7 @@ export function buildLivekitToken(args: {
 
 export interface LivekitWebhookEvent {
   event: string
+  createdAt?: number | string
   room?: { name?: string }
   participant?: { identity?: string }
 }
