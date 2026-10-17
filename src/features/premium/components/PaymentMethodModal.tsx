@@ -150,7 +150,7 @@ export default function PaymentMethodModal({
       {isSuccess && <Confetti count={40} />}
 
       <div
-        className="w-full sm:max-w-md bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none overflow-hidden"
+        className="w-full max-w-md mx-auto bg-pcard rounded-t-sheet sm:rounded-3xl p-6 shadow-2xl relative animate-slideUp text-pfg select-none overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={280} />

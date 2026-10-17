@@ -152,7 +152,7 @@ export default function AchievementsScreen({
       zIndex={60}
     >
       {/* ── Apple / Taphey Style Collection Screen (Always Pristine) ── */}
-      <div className="relative w-full max-w-2xl mx-auto h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] rounded-t-[28px] sm:rounded-t-[32px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col overflow-hidden shadow-2xl transition-colors">
+      <div className="relative w-full max-w-2xl mx-auto h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] rounded-t-[28px] sm:rounded-t-[32px] rounded-b-none bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col overflow-hidden shadow-2xl transition-colors">
         {/* Subtle Ambient Radial Glow + Math Grid */}
         <ModalMathGrid glowColor="#0066FF" height={420} maskEnd="95%" />
 

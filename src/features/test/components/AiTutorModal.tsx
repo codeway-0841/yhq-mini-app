@@ -180,7 +180,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="upsell-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
+          className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />
@@ -225,7 +225,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="static-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
+          className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />
@@ -279,7 +279,7 @@ export default function AiTutorModal({
     return (
       <DialogOverlay onClose={handleClose} labelId="ai-title" swipeToDismiss>
         <div
-          className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
+          className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[75vh] flex flex-col shadow-2xl overflow-hidden"
           onClick={(e) => e.stopPropagation()}
         >
           <ModalMathGrid glow={false} height={360} />

@@ -43,7 +43,7 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
 
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="pay-history-title" swipeToDismiss>
-      <div className="relative flex max-h-[80vh] w-full flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+      <div className="relative flex max-h-[80vh] w-full max-w-lg mx-auto flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={380} />
         <div data-drag-handle className="mx-auto mb-2 h-1 w-10 flex-none rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none relative z-10" />
 

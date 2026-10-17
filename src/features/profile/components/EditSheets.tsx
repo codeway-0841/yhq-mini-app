@@ -20,7 +20,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
   const tt = useT(useAppStore((s) => s.settings.language))
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
-      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={300} />
         <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
         <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
@@ -170,7 +170,7 @@ export function NameEditSheet({ current, onClose, onSave }: {
   const [name, setName] = useState(current)
   return (
     <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
-      <div className="relative w-full bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={280} />
         <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 relative z-10" />
         <ModalHeaderRow onClose={onClose} label={tt('cancel')}>

@@ -61,7 +61,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
     <DialogOverlay onClose={onClose} labelId="appearance-modal-title" swipeToDismiss zIndex={65} backdropClassName="bg-black/60">
       <div
         className={cn(
-          'relative w-full rounded-t-sheet bg-psurface text-pfg',
+          'relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface text-pfg',
           'max-h-[88vh] flex flex-col shadow-2xl overflow-hidden pb-8 select-none'
         )}
       >

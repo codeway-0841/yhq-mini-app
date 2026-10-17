@@ -58,7 +58,7 @@ export default function AchievementDetailSheet() {
     >
       {/* ── Apple / Taphey Style Milestone Sheet (Full-height Scroll Container, Always Pristine) ── */}
       <div
-        className="relative w-full sm:max-w-[440px] rounded-t-[32px] sm:rounded-[36px] bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
+        className="relative w-full sm:max-w-[440px] mx-auto rounded-t-[32px] sm:rounded-t-[36px] rounded-b-none bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
       >
         {/* Dynamic Ambient Glow + Subtle Grid */}
         <ModalMathGrid glowColor={badgeColor} height={620} maskEnd="95%" />

@@ -56,7 +56,7 @@ export default function MilliySertifikatCalculatorModal({
   return (
     <DialogOverlay onClose={onClose} labelId="calc-modal-title" swipeToDismiss>
       <div
-        className="relative w-full max-w-lg bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[90vh] overflow-y-auto no-scrollbar shadow-2xl overflow-hidden"
+        className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[90vh] overflow-y-auto no-scrollbar shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <ModalMathGrid glow={false} height={380} />

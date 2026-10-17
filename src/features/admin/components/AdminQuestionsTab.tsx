@@ -356,7 +356,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
       {deleteConfirm && (
         <DialogOverlay onClose={() => setConfirm(null)} backdropClassName="bg-black/60 backdrop-blur-sm" labelId="delete-question-title">
           <div
-            className="relative w-full bg-pcard rounded-t-sheet p-5 pb-8"
+            className="relative w-full max-w-lg mx-auto bg-pcard rounded-t-sheet p-5 pb-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2" />
@@ -530,7 +530,7 @@ function QuestionForm({
   return (
     <DialogOverlay onClose={onCancel} labelId="question-editor-title">
       <div
-        className="relative w-full bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-2xl mx-auto bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />

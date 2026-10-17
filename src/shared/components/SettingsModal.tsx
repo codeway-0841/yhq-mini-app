@@ -135,7 +135,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
   return (
     <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
-      <div className="relative w-full rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+      <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
         <ModalMathGrid glow={false} height={400} />
         <div className="pt-3 pb-2 relative z-10">
           <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
@@ -274,7 +274,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
       {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
         <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
-          <div className="relative w-full bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
+          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
             <ModalMathGrid glow={false} height={360} />
             <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 flex-none relative z-10" />
             <ModalHeaderRow onClose={() => setPicker(null)} label="Yopish">

@@ -44,7 +44,7 @@ export const UpdateSheet = memo(function UpdateSheet({
 
   return (
     <DialogOverlay onClose={onClose} labelId="update-sheet-title" swipeToDismiss backdropClassName="bg-black/60">
-      <div className="relative w-full bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden text-pfg">
+      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden text-pfg">
         <ModalMathGrid glow={false} height={320} />
         
         {/* iOS Drag Handle */}
