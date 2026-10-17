@@ -37,8 +37,10 @@ export function initWaveGrid(canvas: HTMLCanvasElement, options: WaveGridOptions
 
   function resize() {
     const rect = canvas.getBoundingClientRect()
-    width = Math.max(rect.width, 1)
-    height = Math.max(rect.height, 1)
+    const winW = typeof window !== 'undefined' ? window.innerWidth : 390
+    const winH = typeof window !== 'undefined' ? window.innerHeight : 844
+    width = Math.max(rect.width || winW, 1)
+    height = Math.max(rect.height || winH, 1)
     dpr = Math.min(window.devicePixelRatio || 1, 2.5)
 
     canvas.width = Math.floor(width * dpr)
@@ -46,6 +48,8 @@ export function initWaveGrid(canvas: HTMLCanvasElement, options: WaveGridOptions
   }
 
   resize()
+  // Birinchi kadrni birdanoq sinxron chizib qo'yish (bo'sh oq/qora kadr miltillamasligi uchun)
+  drawFrame((performance.now() - startTimeMs) / 1000)
 
   let ro: ResizeObserver | null = null
   if (typeof ResizeObserver !== 'undefined') {

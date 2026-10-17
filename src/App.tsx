@@ -142,18 +142,32 @@ export default function App() {
     lang,
   } = useAppBootstrap()
 
-  // LAUNCH ANIMATSIYASI (katak ochilishi) KO'RINISHI KAFOLATI (2026-10-17
-  // "videodagi kabi animatsiya bo'lsin"): boot tez bo'lganda splash ~150ms'da
-  // almashib, butun animatsiya sezilmay yo'qolardi. Minimal ushlab turish —
-  // faqat harakat yoqilganda (reduced-motion'da kutish behuda).
-  const [launchMinElapsed, setLaunchMinElapsed] = useState(false)
+  // LAUNCH ANIMATSIYASI KO'RINISHI VA SILLIQ CHIQISH (pirpirashsiz in-place cross-fade)
+  const isSplashPreview = typeof window !== 'undefined'
+    && (new URLSearchParams(window.location.search).has('splash') || window.location.hash.includes('splash'))
+
+  const [splashExiting, setSplashExiting] = useState(false)
+  const [splashComplete, setSplashComplete] = useState(false)
+
   useEffect(() => {
+    if (!initialized || isSplashPreview) return
     const reduced = typeof window.matchMedia === 'function'
       && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduced) { setLaunchMinElapsed(true); return }
-    const id = setTimeout(() => setLaunchMinElapsed(true), LAUNCH_MIN_VISIBLE_MS)
-    return () => clearTimeout(id)
-  }, [])
+    if (reduced) {
+      setSplashComplete(true)
+      return
+    }
+
+    const tShow = setTimeout(() => {
+      setSplashExiting(true)
+      const tExit = setTimeout(() => {
+        setSplashComplete(true)
+      }, 340) // matches splashFadeOut duration in index.css
+      return () => clearTimeout(tExit)
+    }, LAUNCH_MIN_VISIBLE_MS)
+
+    return () => clearTimeout(tShow)
+  }, [initialized, isSplashPreview])
 
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {
@@ -261,10 +275,7 @@ export default function App() {
     )
   }
 
-  const isSplashPreview = typeof window !== 'undefined'
-    && (new URLSearchParams(window.location.search).has('splash') || window.location.hash.includes('splash'))
-
-  if (!initialized || !launchMinElapsed || isSplashPreview) {
+  if (isSplashPreview || !initialized) {
     return (
       <>
         <ThemeEffect />
@@ -278,110 +289,102 @@ export default function App() {
   const hash = window.location.hash
   const pathname = window.location.pathname
 
+  let content: React.ReactNode = null
   if (pathname.startsWith('/verify-email') || hash.startsWith('#/verify-email')) {
-    return (
-      <>
-        <ThemeEffect />
-        <HashRouter>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/verify-email" element={<VerifyEmailPage />} />
-              <Route path="*" element={<VerifyEmailPage />} />
-            </Routes>
-          </Suspense>
-        </HashRouter>
-      </>
-    )
-  }
-  if (pathname.startsWith('/reset-password') || hash.startsWith('#/reset-password')) {
-    return (
-      <>
-        <ThemeEffect />
-        <HashRouter>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/reset-password" element={<ResetPasswordPage />} />
-              <Route path="*" element={<ResetPasswordPage />} />
-            </Routes>
-          </Suspense>
-        </HashRouter>
-      </>
-    )
-  }
-
-  // Auth gate: Mini App (initData) YOKI Bearer sessiya YOKI hydrate bo'lgan cache user.
-  if (!isAuthed) {
-    return (
-      <>
-        <ThemeEffect />
-        <Suspense fallback={<SplashScreen />}>
-          <LoginPage />
+    content = (
+      <HashRouter>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/verify-email" element={<VerifyEmailPage />} />
+            <Route path="*" element={<VerifyEmailPage />} />
+          </Routes>
         </Suspense>
-      </>
+      </HashRouter>
     )
-  }
-
-  if (!onboarded) {
-    return (
-      <>
-        <ThemeEffect />
-        <Suspense fallback={<SplashScreen />}>
-          <Onboarding onDone={finishOnboarding} />
+  } else if (pathname.startsWith('/reset-password') || hash.startsWith('#/reset-password')) {
+    content = (
+      <HashRouter>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/reset-password" element={<ResetPasswordPage />} />
+            <Route path="*" element={<ResetPasswordPage />} />
+          </Routes>
         </Suspense>
-      </>
+      </HashRouter>
+    )
+  } else if (!isAuthed) {
+    content = (
+      <Suspense fallback={<PageLoader />}>
+        <LoginPage />
+      </Suspense>
+    )
+  } else if (!onboarded) {
+    content = (
+      <Suspense fallback={<PageLoader />}>
+        <Onboarding onDone={finishOnboarding} />
+      </Suspense>
+    )
+  } else {
+    content = (
+      <HashRouter>
+        <StreakSaveToast />
+        <AchievementCelebrationModal />
+        <AchievementDetailSheet />
+        <MobileAppShell>
+          <Routes>
+            <Route path="/"           element={<Dashboard />} />
+            <Route path="/testlar"    element={<TestlarPage />} />
+            <Route path="/test/yim"   element={<Navigate to="/testlar" replace />} />
+            <Route path="/test/:id"   element={<TestPage />} />
+            <Route path="/darslik"    element={<Darslik />} />
+            <Route path="/kutubxona"  element={<LibraryPage />} />
+            <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />
+            <Route path="/biletlar"   element={<Biletlar />} />
+            <Route path="/belgilar"   element={<Belgilar />} />
+            <Route path="/belgilar-oyini" element={<SignsGamePage />} />
+            <Route path="/profil"     element={<Profil />} />
+            <Route path="/mavzular"   element={<TopicsPage />} />
+            <Route path="/adaptive"   element={<AdaptivePage />} />
+            <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
+            <Route path="/reyting"    element={<LeaderboardPage />} />
+            <Route path="/xatolar"    element={<XatolarPage />} />
+            <Route path="/streak"     element={<StreakPage />} />
+            <Route path="/rejimlar"   element={<ModesPage />} />
+            <Route path="/premium"    element={<PremiumPage />} />
+            <Route path="/shop"       element={<ShopPage />} />
+            <Route path="/statistika" element={<StatistikaPage />} />
+            <Route path="/speed"      element={<SpeedPage />} />
+            <Route path="/flashcards" element={<FlashcardsPage />} />
+            <Route path="/shpargalkalar" element={<FormulasPage />} />
+            <Route path="/grafik"     element={<GraphPage />} />
+            <Route path="/qidiruv"    element={<SearchPage />} />
+            <Route path="/ai-test"    element={<AiTestHub />} />
+            <Route path="/ai-test/:id" element={<AiTestSession />} />
+            <Route path="/wonder-studio" element={<WonderStudioPage />} />
+            <Route path="/doska" element={<MathBoardPage />} />
+            <Route path="/camai" element={<CamAiPage />} />
+            <Route path="/live" element={<LiveListPage />} />
+            <Route path="/live/:id" element={<LiveRoomPage />} />
+            <Route path="/wonder" element={<WonderStudioPage />} />
+            <Route path="/ai-tutor"   element={<SnapSolveHub />} />
+            <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
+            <Route path="/sharhlar"   element={<ReviewsPage />} />
+            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
+            <Route path="/admin"      element={<AdminPage />} />
+            <Route path="*"           element={<NotFound />} />
+          </Routes>
+        </MobileAppShell>
+      </HashRouter>
     )
   }
 
   return (
-    <HashRouter>
+    <>
       <ThemeEffect />
-      <StreakSaveToast />
-      <AchievementCelebrationModal />
-      <AchievementDetailSheet />
-      <MobileAppShell>
-        <Routes>
-          <Route path="/"           element={<Dashboard />} />
-          <Route path="/testlar"    element={<TestlarPage />} />
-          <Route path="/test/yim"   element={<Navigate to="/testlar" replace />} />
-          <Route path="/test/:id"   element={<TestPage />} />
-          <Route path="/darslik"    element={<Darslik />} />
-          <Route path="/kutubxona"  element={<LibraryPage />} />
-          <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />
-          <Route path="/biletlar"   element={<Biletlar />} />
-          <Route path="/belgilar"   element={<Belgilar />} />
-          <Route path="/belgilar-oyini" element={<SignsGamePage />} />
-          <Route path="/profil"     element={<Profil />} />
-          <Route path="/mavzular"   element={<TopicsPage />} />
-          <Route path="/adaptive"   element={<AdaptivePage />} />
-          <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
-          <Route path="/reyting"    element={<LeaderboardPage />} />
-          <Route path="/xatolar"    element={<XatolarPage />} />
-          <Route path="/streak"     element={<StreakPage />} />
-          <Route path="/rejimlar"   element={<ModesPage />} />
-          <Route path="/premium"    element={<PremiumPage />} />
-          <Route path="/shop"       element={<ShopPage />} />
-          <Route path="/statistika" element={<StatistikaPage />} />
-          <Route path="/speed"      element={<SpeedPage />} />
-          <Route path="/flashcards" element={<FlashcardsPage />} />
-          <Route path="/shpargalkalar" element={<FormulasPage />} />
-          <Route path="/grafik"     element={<GraphPage />} />
-          <Route path="/qidiruv"    element={<SearchPage />} />
-          <Route path="/ai-test"    element={<AiTestHub />} />
-          <Route path="/ai-test/:id" element={<AiTestSession />} />
-          <Route path="/wonder-studio" element={<WonderStudioPage />} />
-          <Route path="/doska" element={<MathBoardPage />} />
-          <Route path="/camai" element={<CamAiPage />} />
-          <Route path="/live" element={<LiveListPage />} />
-          <Route path="/live/:id" element={<LiveRoomPage />} />
-          <Route path="/wonder" element={<WonderStudioPage />} />
-          <Route path="/ai-tutor"   element={<SnapSolveHub />} />
-          <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
-          <Route path="/sharhlar"   element={<ReviewsPage />} />
-          <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
-          <Route path="/admin"      element={<AdminPage />} />
-          <Route path="*"           element={<NotFound />} />
-        </Routes>
-      </MobileAppShell>
-    </HashRouter>
+      {content}
+      {!splashComplete && (
+        <SplashScreen exiting={splashExiting} />
+      )}
+    </>
   )
 }

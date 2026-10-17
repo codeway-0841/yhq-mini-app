@@ -4,7 +4,7 @@
 // Kirish animatsiyasi app.html loader'ida boshlanadi (birinchi kadrdayoq
 // ko'rinadi). Bu komponent o'sha taymline'dan DAVOM etadi — `__kivviSplashStart`
 // bo'lmasa (test, kechki Suspense fallback) 0 dan o'ynaydi.
-import { useEffect, useLayoutEffect, useRef, type CSSProperties } from 'react'
+import { useLayoutEffect, useRef, type CSSProperties } from 'react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { notifyLaunchDismissed } from './launch-exit'
@@ -39,7 +39,7 @@ export default function SplashScreen({ exiting = false }: { exiting?: boolean })
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const cleanup = initWaveGrid(canvas, {

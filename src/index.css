@@ -439,17 +439,16 @@ body[data-theme='light'] .hero-gradient-card {
   }
 }
 
-@keyframes splashFadeIn {
-  from { opacity: 0; transform: scale(0.96); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .splash-mark {
-    animation:
-      splashFadeIn 350ms cubic-bezier(0.16, 1, 0.3, 1) var(--splash-shift) both,
-      splashMarkBreathe 3.8s ease-in-out 400ms infinite;
+    /* Hech qanday opacity:0 dan boshlanadigan fade-in yo'q — pirpirashni yo'qotish uchun */
+    animation: splashMarkBreathe 3.8s ease-in-out infinite;
   }
+}
+
+.splash-screen-exiting {
+  pointer-events: none;
+  animation: splashFadeOut 340ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 body[data-no-animation='true'] .splash-cell,
