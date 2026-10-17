@@ -238,20 +238,31 @@ body[data-platform='native'] {
 
 
 /* ── Fintech / iOS Hero Gradient Card ───────────────────────────────────────
-   Boy, yorqin va splash ekrani bilan 1:1 uyg'un organik 3D to'lqin to'rli karta. */
+   Boy, yorqin va har bir tanlangan tema (--p-primary) bilan uyg'unlashuvchi 3D to'lqin to'rli karta. */
 .hero-gradient-card {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-sheet);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  background: radial-gradient(circle at 50% 35%, #2089ff 0%, #126ee6 58%, #0952b8 100%);
-  box-shadow: 0 10px 30px -10px rgba(18, 110, 230, 0.35);
+  border: 1px solid color-mix(in srgb, var(--p-primary) 35%, rgba(255, 255, 255, 0.18));
+  background: radial-gradient(
+    circle at 50% 35%,
+    color-mix(in srgb, var(--p-primary) 85%, #ffffff 15%) 0%,
+    var(--p-primary) 58%,
+    color-mix(in srgb, var(--p-primary) 52%, #040915 48%) 100%
+  );
+  box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--p-primary) 40%, transparent);
+  transition: background 300ms ease, border-color 300ms ease, box-shadow 300ms ease;
 }
 
 body[data-theme='light'] .hero-gradient-card {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: radial-gradient(circle at 50% 35%, #258aff 0%, #126ee6 58%, #0952b8 100%);
-  box-shadow: 0 10px 30px -10px rgba(18, 110, 230, 0.25);
+  border: 1px solid color-mix(in srgb, var(--p-primary) 30%, rgba(255, 255, 255, 0.28));
+  background: radial-gradient(
+    circle at 50% 35%,
+    color-mix(in srgb, var(--p-primary) 88%, #ffffff 12%) 0%,
+    var(--p-primary) 58%,
+    color-mix(in srgb, var(--p-primary) 56%, #0b1424 44%) 100%
+  );
+  box-shadow: 0 10px 30px -10px color-mix(in srgb, var(--p-primary) 30%, transparent);
 }
 
 /* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */
