@@ -7,7 +7,7 @@ import {
   Copy, Phone, Lock, Globe, CreditCard,
   RotateCcw, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, X, SlidersHorizontal,
+  BarChart2, CloudUpload, Ticket, Award, X, SlidersHorizontal, ShoppingBag,
 } from 'lucide-react'
 import AppearanceModal from '../../shared/components/AppearanceModal'
 import { CoinIcon } from '../../shared/components/CoinIcon'
@@ -31,7 +31,6 @@ import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import { CertificateModal } from '../test'
 import AchievementsScreen, { type TabKey } from './components/AchievementsScreen'
 import { LinkAccountSection } from './components/LinkAccountSection'
-import { BadgesPreviewSection } from './components/BadgesPreviewSection'
 import { MilestonesPreviewSection } from './components/MilestonesPreviewSection'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
@@ -342,14 +341,7 @@ export default function Profil() {
         />
       </Section>
 
-      {/* ── NISHONLAR (BADGES) — IXCHAM PREVIEW ── */}
-      <BadgesPreviewSection
-        stats={achStats}
-        tt={tt}
-        onOpenAll={handleOpenAchievements}
-      />
-
-      {/* ── MARRALAR (MILESTONES) — IXCHAM PREVIEW ── */}
+      {/* ── NISHONLAR (MARRALAR) — IXCHAM PREVIEW ── */}
       <MilestonesPreviewSection
         stats={achStats}
         tt={tt}
@@ -375,13 +367,13 @@ export default function Profil() {
       <Section title={tt('generalSection')}>
         {/* Do'kon (#40) — coin balansi + do'kon sahifasiga o'tish */}
         <Item
-          icon={CoinIcon}
+          icon={ShoppingBag}
           label={tt('shopMenuItem')}
           right={
             <span className="flex items-center gap-1.5 text-[13px] font-semibold tabular-nums text-pgold">
               <CoinIcon size={15} />
               {coins}
-              <ChevronRight size={15} strokeWidth={1.75} className="text-psubtle" />
+              <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />
             </span>
           }
           onPress={() => navigate('/shop')}
@@ -407,7 +399,6 @@ export default function Profil() {
 
         <Item
           icon={Star}
-          iconColor="#EAB308"
           label={tt('reviewsTitle')}
           right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
           onPress={() => navigate('/sharhlar')}
@@ -419,16 +410,16 @@ export default function Profil() {
         <Item icon={CreditCard} label={tt('payHistory')}
           onPress={() => setShowPayHistory(true)} />
 
-        <Item icon={RotateCcw} iconColor="var(--p-danger)" label={tt('resetProgress')}
+        <Item icon={RotateCcw} label={tt('resetProgress')}
           onPress={handleReset} />
 
-        <Item icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}
+        <Item icon={SlidersHorizontal} label={tt('appearanceTitle')}
           right={<span className="text-[12px] text-pmuted flex items-center gap-1">{settings.theme === 'dark' ? (settings.language === 'ru' ? 'Тёмная' : 'Dark') : (settings.language === 'ru' ? 'Светлая' : 'Light')} <ChevronRight size={13} /></span>}
           onPress={() => setShowAppearance(true)} />
 
         {syncPending > 0 && (
           <Item
-            icon={CloudUpload} iconColor="var(--p-warning)"
+            icon={CloudUpload}
             label={`${tt('syncPending')}: ${syncPending}`}
             right={<span className="text-[11px] text-pmuted">{tt('syncPendingDesc')}</span>}
             onPress={() => { if (user?.id) void flushOutbox(user.id) }}

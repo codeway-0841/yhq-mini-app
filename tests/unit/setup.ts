@@ -99,6 +99,17 @@ if (typeof window !== 'undefined') {
       }
       return node
     }
+    createBiquadFilter() {
+      const node = {
+        connect: vi.fn().mockImplementation((dest) => dest ?? node),
+        type: 'lowpass',
+        frequency: {
+          setValueAtTime: vi.fn(),
+          value: 3200,
+        },
+      }
+      return node
+    }
     get destination() {
       return {}
     }

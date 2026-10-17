@@ -106,7 +106,7 @@ export function MilestonesPreviewSection({ stats, tt, onOpenAll }: MilestonesPre
       {/* Header with Barchasi > */}
       <div className="flex items-center justify-between mb-2.5">
         <h3 className="font-display text-[14.5px] font-bold text-pfg tracking-tight">
-          {tt('milestonesTitle')}
+          {tt('badgesTitle')}
         </h3>
 
         <button

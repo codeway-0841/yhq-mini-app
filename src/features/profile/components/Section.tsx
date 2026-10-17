@@ -15,7 +15,7 @@ export function Section({ title, children }: { title: string; children: React.Re
 }
 
 // ── List Item ───────────────────────────────────────────────────────────
-// Rang intizomi (v3): ikonkalar NEYTRAL (ModeRow / Grid uslubi), faqat semantik ma'nolilar rangli
+// Rang intizomi (v3): barcha ikonkalar NEYTRAL va bir xil (text-pmuted, 20px)
 export interface ItemProps {
   icon: React.ElementType
   iconColor?: string
@@ -24,7 +24,7 @@ export interface ItemProps {
   onPress?: () => void
   disabled?: boolean
 }
-export function Item({ icon: Icon, iconColor, label, right, onPress, disabled }: ItemProps) {
+export function Item({ icon: Icon, label, right, onPress, disabled }: ItemProps) {
   const Comp = onPress ? 'button' : 'div'
   return (
     <Comp
@@ -43,8 +43,7 @@ export function Item({ icon: Icon, iconColor, label, right, onPress, disabled }:
       <Icon
         size={20}
         strokeWidth={1.75}
-        className={cn('shrink-0', !iconColor && 'text-pmuted')}
-        style={iconColor ? { color: iconColor } : undefined}
+        className="shrink-0 text-pmuted"
       />
       <span className="flex-1 text-left text-[14.5px] font-medium text-pfg">{label}</span>
       {right !== undefined ? right : <ChevronRight size={16} strokeWidth={1.75} className="shrink-0 text-psubtle" />}

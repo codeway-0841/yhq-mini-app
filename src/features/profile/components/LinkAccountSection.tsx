@@ -164,7 +164,6 @@ export function LinkAccountSection() {
         <Section title={tt('authLinkAccount')}>
           <Item
             icon={LogOut}
-            iconColor="var(--p-danger)"
             label={tt('authLogout')}
             onPress={handleLogout}
           />
@@ -189,7 +188,6 @@ export function LinkAccountSection() {
       {/* ── Telegram provider ── */}
       <Item
         icon={Send}
-        iconColor="#0284c7"
         label="Telegram"
         right={
           providers === null
@@ -205,7 +203,6 @@ export function LinkAccountSection() {
       {/* ── Telefon provider ── */}
       <Item
         icon={Phone}
-        iconColor="#10b981"
         label={tt('authPhone')}
         right={
           providers === null
@@ -299,7 +296,6 @@ export function LinkAccountSection() {
       {!isTelegram && hasSession && (
         <Item
           icon={LogOut}
-          iconColor="var(--p-danger)"
           label={tt('authLogout')}
           onPress={handleLogout}
         />

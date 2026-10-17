@@ -58,7 +58,7 @@ describe('Gamified Profile Components', () => {
     const onOpenAll = vi.fn()
     render(<MilestonesPreviewSection stats={mockStats} tt={tt} onOpenAll={onOpenAll} />)
 
-    expect(screen.getByText(tt('milestonesTitle'))).toBeTruthy()
+    expect(screen.getByText(tt('badgesTitle'))).toBeTruthy()
     expect(screen.getByText(tt('viewAll'))).toBeTruthy()
 
     fireEvent.click(screen.getByText(tt('viewAll')))

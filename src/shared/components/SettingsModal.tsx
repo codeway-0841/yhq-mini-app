@@ -180,7 +180,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
             {/* Tashqi ko'rinish (Appearance) — Apple 3-tab sheet */}
             <button className="w-full text-left" onClick={() => setShowAppearance(true)} aria-label={tt('appearanceTitle')}>
-              <Row icon={SlidersHorizontal} iconColor="#8B5CF6" label={tt('appearanceTitle')}>
+              <Row icon={SlidersHorizontal} label={tt('appearanceTitle')}>
                 <span className={valueBtn}>
                   {local.theme === 'dark' ? (local.language === 'ru' ? 'Тёмная' : 'Dark') : (local.language === 'ru' ? 'Светлая' : 'Light')}
                   <ChevronRight size={14} />
