@@ -131,8 +131,6 @@ function prefetchRouteChunks() {
   void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
 }
 
-/** Launch ekrani (to'lqinli to'r animatsiyasi) kamida 2-3 soniya (2500ms) ko'rinadi. */
-const LAUNCH_MIN_VISIBLE_MS = 2500
 
 export default function App() {
   const {
@@ -146,28 +144,12 @@ export default function App() {
   const isSplashPreview = typeof window !== 'undefined'
     && (new URLSearchParams(window.location.search).has('splash') || window.location.hash.includes('splash'))
 
-  const [splashExiting, setSplashExiting] = useState(false)
-  const [splashComplete, setSplashComplete] = useState(false)
-
   useEffect(() => {
-    if (!initialized || isSplashPreview) return
-    const reduced = typeof window.matchMedia === 'function'
-      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduced) {
-      setSplashComplete(true)
-      return
+    if (!initialized) return
+    if (typeof window !== 'undefined' && typeof (window as any).__kivviSplashReady === 'function') {
+      ;(window as any).__kivviSplashReady()
     }
-
-    const tShow = setTimeout(() => {
-      setSplashExiting(true)
-      const tExit = setTimeout(() => {
-        setSplashComplete(true)
-      }, 340) // matches splashFadeOut duration in index.css
-      return () => clearTimeout(tExit)
-    }, LAUNCH_MIN_VISIBLE_MS)
-
-    return () => clearTimeout(tShow)
-  }, [initialized, isSplashPreview])
+  }, [initialized])
 
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {
@@ -275,14 +257,7 @@ export default function App() {
     )
   }
 
-  if (isSplashPreview || !initialized) {
-    return (
-      <>
-        <ThemeEffect />
-        <SplashScreen />
-      </>
-    )
-  }
+
 
   // Email verification/reset pages — accessible without auth (user clicks link from email).
   // Links arrive as /#/verify-email?token=xxx or /verify-email?token=xxx
@@ -378,12 +353,22 @@ export default function App() {
     )
   }
 
+  const hasHtmlSplash = typeof document !== 'undefined' && Boolean(document.getElementById('kivvi-splash-screen'))
+  if (isSplashPreview && !hasHtmlSplash) {
+    return (
+      <>
+        <ThemeEffect />
+        <SplashScreen />
+      </>
+    )
+  }
+
   return (
     <>
       <ThemeEffect />
       {content}
-      {!splashComplete && (
-        <SplashScreen exiting={splashExiting} />
+      {!hasHtmlSplash && !initialized && (
+        <SplashScreen />
       )}
     </>
   )

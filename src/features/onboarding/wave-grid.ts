@@ -64,9 +64,9 @@ export function initWaveGrid(canvas: HTMLCanvasElement, options: WaveGridOptions
 
   function drawFrame(elapsedSec: number) {
     if (!ctx) return
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
     ctx.save()
     ctx.scale(dpr, dpr)
-    ctx.clearRect(0, 0, width, height)
 
     // Mobil ekranda ~7-8 ta ustun (48px - 54px qadami)
     const step = Math.max(46, Math.min(54, width / 7.5))
@@ -89,25 +89,29 @@ export function initWaveGrid(canvas: HTMLCanvasElement, options: WaveGridOptions
       for (let i = 0; i < cols; i++) {
         const x0 = startX + i * step
 
-        // 3D garmonik to'lqin formulasi
-        // To'lqin 1: diagonal yo'nalishli asosiy to'lqin
-        const th1 = x0 * 0.016 + y0 * 0.011 - elapsedSec * 1.65
-        const w1 = Math.sin(th1) * 8.5
+        // Tabiiy, mayin va muvozanatli 3D to'lqin fizikasi
+        // Asosiy to'lqin: diagonal oqim
+        const th1 = x0 * 0.014 + y0 * 0.016 - elapsedSec * 1.2
+        const s1 = Math.sin(th1)
+        const c1 = Math.cos(th1)
 
-        // To'lqin 2: qarama-qarshi o'zaro ta'sir rippli
-        const th2 = -x0 * 0.012 + y0 * 0.019 + elapsedSec * 1.25
-        const w2 = Math.cos(th2) * 5.5
+        // Ikkilamchi mayin to'lqin: ko'ndalang oqim
+        const th2 = -x0 * 0.016 + y0 * 0.012 + elapsedSec * 0.95
+        const s2 = Math.sin(th2)
+        const c2 = Math.cos(th2)
 
-        // To'lqin 3: markazdan tarqaluvchi radial pulsatsiya
+        // Markaziy mayin radial tarqalish
         const dxCenter = x0 - cx
         const dyCenter = y0 - cy
         const dist = Math.hypot(dxCenter, dyCenter)
-        const th3 = dist * 0.015 - elapsedSec * 1.9
-        const w3 = Math.sin(th3) * 4.0
+        const th3 = dist * 0.012 - elapsedSec * 1.1
+        const s3 = Math.sin(th3) * 3.5
 
         const normFactor = dist > 1 ? 1 / dist : 0
-        const px = x0 + Math.cos(x0 * 0.009 + elapsedSec * 1.1) * (w1 * 0.35) + dxCenter * normFactor * w3
-        const py = y0 + w1 + w2 + dyCenter * normFactor * w3
+
+        // Gorizontal va vertikal chiziqlar BIR XIL kuchda va silliqlikda to'lqinlanadi
+        const px = x0 + s1 * 6.5 + c2 * 4.5 + dxCenter * normFactor * s3
+        const py = y0 + c1 * 6.5 + s2 * 4.5 + dyCenter * normFactor * s3
 
         row[i] = { x: px, y: py }
       }
