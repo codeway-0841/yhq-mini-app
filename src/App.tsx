@@ -131,8 +131,8 @@ function prefetchRouteChunks() {
   void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
 }
 
-/** Launch ekrani (katak animatsiyasi) kamida shuncha vaqt ko'rinadi. */
-const LAUNCH_MIN_VISIBLE_MS = 620
+/** Launch ekrani (to'lqinli to'r animatsiyasi) kamida 2-3 soniya (2500ms) ko'rinadi. */
+const LAUNCH_MIN_VISIBLE_MS = 2500
 
 export default function App() {
   const {

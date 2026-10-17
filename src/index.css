@@ -390,15 +390,13 @@ body[data-theme='light'] .hero-gradient-card {
 
 /* Orqa fon qatlami — z-index tartibi va testlar mosligi */
 .splash-grid {
+  display: none;
   opacity: 0;
 }
 
-/* Brend-ko'k qatlam ichida to'r konteyneri (JS/Canvas yo'q bo'lsa fallback) */
+/* Brend-ko'k qatlam ichida to'r konteyneri: FAQAT bitta harakatlanuvchi Canvas to'ri qoladi */
 .splash-cell-grid {
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-  background-size: 50px 50px;
+  background: transparent !important;
 }
 
 .splash-cell {
