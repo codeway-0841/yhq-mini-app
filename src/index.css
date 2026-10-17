@@ -238,28 +238,20 @@ body[data-platform='native'] {
 
 
 /* ── Fintech / iOS Hero Gradient Card ───────────────────────────────────────
-   Boy, yorqin va har bir temaga silliq moslashuvchi gradient karta. */
+   Boy, yorqin va splash ekrani bilan 1:1 uyg'un organik 3D to'lqin to'rli karta. */
 .hero-gradient-card {
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-sheet);
-  border: 1px solid color-mix(in srgb, var(--p-primary) 32%, rgba(255, 255, 255, 0.14));
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--p-primary) 76%, #000000) 0%,
-    color-mix(in srgb, var(--p-primary) 48%, #081614) 52%,
-    color-mix(in srgb, var(--p-primary) 28%, #0c1215) 100%
-  );
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: radial-gradient(circle at 50% 35%, #2089ff 0%, #126ee6 58%, #0952b8 100%);
+  box-shadow: 0 10px 30px -10px rgba(18, 110, 230, 0.35);
 }
 
 body[data-theme='light'] .hero-gradient-card {
-  border: 1px solid color-mix(in srgb, var(--p-primary) 32%, rgba(0, 0, 0, 0.12));
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, var(--p-primary) 88%, #000000) 0%,
-    color-mix(in srgb, var(--p-primary) 56%, #0a121d) 52%,
-    color-mix(in srgb, var(--p-primary) 30%, #0f172a) 100%
-  );
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: radial-gradient(circle at 50% 35%, #258aff 0%, #126ee6 58%, #0952b8 100%);
+  box-shadow: 0 10px 30px -10px rgba(18, 110, 230, 0.25);
 }
 
 /* ══ v3 — Jade & Stone komponent utilitilari ════════════════════════════════ */

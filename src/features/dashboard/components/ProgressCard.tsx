@@ -1,4 +1,4 @@
-import { memo, useRef, useState } from 'react'
+import { memo, useLayoutEffect, useRef, useState } from 'react'
 import { Flame, Star, Trophy } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -8,8 +8,9 @@ import { useCountUp } from '../../../shared/hooks/useCountUp'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { cn } from '../../../shared/lib/cn'
+import { initWaveGrid } from '../../../shared/lib/wave-grid'
 
-// ── Interaktiv StatButton (Streak, XP, Reyting bir xil premium hover & active shaklda) ──
+// ── Interaktiv StatButton (Streak, XP, Reyting bir xil sodda va toza shaklda) ──
 const StatButton = memo(function StatButton({
   icon: Icon,
   value,
@@ -49,9 +50,9 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex min-w-0 items-center gap-1.5 rounded-xl bg-black/25 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
-        'transition-[background-color] duration-150 ease-out',
-        '[@media(hover:hover)]:hover:bg-black/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
+        'flex min-w-0 items-center gap-1.5 rounded-xl bg-black/20 backdrop-blur-xs border border-white/10 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
+        'transition-[background-color,border-color] duration-150 ease-out',
+        '[@media(hover:hover)]:hover:bg-black/30 [@media(hover:hover)]:hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
       <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />
@@ -80,6 +81,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
   const total = totalPool > 0 ? totalPool : 0
   const [xpInfoOpen, setXpInfoOpen] = useState(false)
   const [leagueInfoOpen, setLeagueInfoOpen] = useState(false)
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
   // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000/1000 = 100%
   const progressPct = total > 0
@@ -96,62 +98,109 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
   // Count-up animatsiya — sahifa ochilganda foiz "o'sib" chiqadi
   const shown = useCountUp(progressPct, 900)
 
+  // Organik 3D to'lqin to'ri: karta ko'rinayotganda 60 FPS o'ynaydi,
+  // sahifani pastga skroll qilganda CPU/batareyani tejash uchun to'xtaydi.
+  useLayoutEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    let cleanup: (() => void) | null = null
+
+    if (typeof IntersectionObserver !== 'undefined') {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const [entry] = entries
+          if (entry.isIntersecting) {
+            if (!cleanup) cleanup = initWaveGrid(canvas)
+          } else {
+            if (cleanup) {
+              cleanup()
+              cleanup = null
+            }
+          }
+        },
+        { threshold: 0.05 },
+      )
+      observer.observe(canvas)
+      return () => {
+        observer.disconnect()
+        if (cleanup) cleanup()
+      }
+    }
+
+    cleanup = initWaveGrid(canvas)
+    return () => {
+      if (cleanup) cleanup()
+    }
+  }, [])
+
   return (
     <>
-      <div className="hero-gradient-card mx-4 mb-4 px-4 py-3 sm:px-5 sm:py-4">
-        <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
-          <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
+      <div className="hero-gradient-card relative mx-4 mb-4 overflow-hidden px-4 py-3 sm:px-5 sm:py-4">
+        {/* Organik to'lqinli to'r: Canvas 2D liquid mesh */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+          <canvas
+            ref={canvasRef}
+            className="pointer-events-none absolute inset-0 h-full w-full block"
+            aria-hidden="true"
+          />
         </div>
 
-        <div className="flex items-baseline gap-2">
-          <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
-            {total > 0 ? shown : '—'}
-          </span>
-          {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
-        </div>
+        {/* Kontent — to'r ustida ravshan va toza ko'rinishi uchun nisbiy z-[2] qatlam */}
+        <div className="relative z-[2]">
+          <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+            <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
+          </div>
 
-        <div className="mt-3 flex items-center gap-3">
-          <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
-            <div
-              className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
-              style={{ width: `${shown}%` }}
+          <div className="flex items-baseline gap-2">
+            <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
+              {total > 0 ? shown : '—'}
+            </span>
+            {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
+          </div>
+
+          <div className="mt-3 flex items-center gap-3">
+            <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
+              <div
+                className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
+                style={{ width: `${shown}%` }}
+              />
+            </div>
+            <span className="shrink-0 text-[12px] font-semibold tabular-nums text-white/90">
+              {totalAnswered} / {total || '…'}
+            </span>
+          </div>
+
+          <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
+
+          {/* Pastki statistika: Seriya / XP / Reyting — bir xil bosiluvchi mini-panellar */}
+          <div className="mt-2 grid grid-cols-3 gap-2">
+            {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
+            <StatButton
+              icon={Flame}
+              value={`${streak} ${tt('daysWord')}`}
+              label={tt('streakDays')}
+              onClick={() => navigate('/streak')}
+              onLongPress={onStreakPreview}
+              ariaLabel={tt('intizomTitle')}
+            />
+            {/* XP — bosilsa XP ma'lumot sheet'i */}
+            <StatButton
+              icon={Star}
+              value={`${xp} XP`}
+              label={tt('totalXp')}
+              onClick={() => setXpInfoOpen(true)}
+              ariaLabel={tt('xpInfoTitle')}
+            />
+            {/* Reyting — bosilsa Reyting sahifasi; 700ms bosib turilsa → liga qoidalari sheet'i */}
+            <StatButton
+              icon={Trophy}
+              value={tt(LEAGUE_TT_KEY[league])}
+              label={tt('ratingWord')}
+              onClick={() => navigate('/reyting')}
+              onLongPress={() => setLeagueInfoOpen(true)}
+              ariaLabel={tt('leagueInfoTitle')}
             />
           </div>
-          <span className="shrink-0 text-[12px] font-semibold tabular-nums text-white/90">
-            {totalAnswered} / {total || '…'}
-          </span>
-        </div>
-
-        <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
-
-        {/* Pastki statistika: Seriya / XP / Reyting — 3 ta alohida toza shisha pill kartalar */}
-        <div className="mt-2 grid grid-cols-3 gap-2">
-          {/* Streak — bosilsa "Intizom" sahifasi; 700ms bosib turilsa → milestone PREVIEW (demo) */}
-          <StatButton
-            icon={Flame}
-            value={`${streak} ${tt('daysWord')}`}
-            label={tt('streakDays')}
-            onClick={() => navigate('/streak')}
-            onLongPress={onStreakPreview}
-            ariaLabel={tt('intizomTitle')}
-          />
-          {/* XP — bosilsa XP ma'lumot sheet'i */}
-          <StatButton
-            icon={Star}
-            value={`${xp} XP`}
-            label={tt('totalXp')}
-            onClick={() => setXpInfoOpen(true)}
-            ariaLabel={tt('xpInfoTitle')}
-          />
-          {/* Reyting — bosilsa Reyting sahifasi; 700ms bosib turilsa → liga qoidalari sheet'i */}
-          <StatButton
-            icon={Trophy}
-            value={tt(LEAGUE_TT_KEY[league])}
-            label={tt('ratingWord')}
-            onClick={() => navigate('/reyting')}
-            onLongPress={() => setLeagueInfoOpen(true)}
-            ariaLabel={tt('leagueInfoTitle')}
-          />
         </div>
       </div>
 
