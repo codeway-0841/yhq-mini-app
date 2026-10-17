@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, GraduationCap, Ticket, Brain, CheckCircle2 } from 'lucide-react'
+import { BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -95,43 +95,43 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   return (
     <div className="home-learning-guide px-4 pb-3">
       <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
-        <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
-          <div className="grid size-9 place-items-center rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400">
+        <button onClick={() => navigate(learnPath)} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+          <div className="home-learning-shortcut-icon">
             <BookOpen size={19} strokeWidth={2} />
           </div>
-          <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('dashboardLearn')}</span>
-          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt(subject.id === 'yhq' ? 'guideLessonsShort' : 'guideTopicsShort')}</span>
+          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('dashboardLearn')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
           type="button"
           onClick={() => navigate('/darslik')}
           aria-label={tt('lessons')}
-          className={`home-learning-shortcut ${interactive}`}
+          className={`home-learning-shortcut app-card-interactive ${interactive}`}
         >
-          <div className="grid size-9 place-items-center rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400">
+          <div className="home-learning-shortcut-icon">
             <GraduationCap size={19} strokeWidth={2} />
           </div>
-          <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('lessons')}</span>
-          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideLessonsShort')}</span>
+          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('lessons')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
-        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
-          <div className="grid size-9 place-items-center rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+          <div className="home-learning-shortcut-icon">
             <Ticket size={19} strokeWidth={2} />
           </div>
-          <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('tickets')}</span>
-          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideTicketsShort')}</span>
+          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('tickets')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
           type="button"
           onClick={() => navigate('/adaptive')}
           aria-label={tt('adaptiveTitle')}
-          className={`home-learning-shortcut ${interactive}`}
+          className={`home-learning-shortcut app-card-interactive ${interactive}`}
         >
-          <div className="grid size-9 place-items-center rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400">
+          <div className="home-learning-shortcut-icon">
             <Brain size={19} strokeWidth={2} />
           </div>
-          <span className="mt-2 block text-[14px] font-bold text-pfg">{tt('adaptiveTitle')}</span>
-          <span className="mt-0.5 block text-[11px] leading-snug text-pmuted">{tt('guideAdaptiveShort')}</span>
+          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('dashboardReviewShort')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
       </div>
 

@@ -1,0 +1,6 @@
+interface:
+  display_name: "KIVVI Lead"
+  short_description: "Plan and govern KIVVI engineering work"
+  default_prompt: "Use $kivvi-lead to scope and plan this KIVVI task."
+policy:
+  allow_implicit_invocation: true

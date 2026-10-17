@@ -1,0 +1,6 @@
+interface:
+  display_name: "KIVVI Task Auditor"
+  short_description: "Audit tasks with minimal token usage"
+  default_prompt: "Use $task-auditor to audit this task with minimal repository reading."
+policy:
+  allow_implicit_invocation: true

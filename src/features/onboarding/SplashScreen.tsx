@@ -1,49 +1,96 @@
-// KIWI — Splash ekran (brend rasm + progress bar)
-// v2 premium: yumshoq kirish animatsiyasi + aksent-mos halo + shine progress
+// KIVVI — launch screen: ilova ko'k fonida to'r kataklar (organik 3D to'lqin)
+// silliq chayqaladi, markazdagi brend belgisi esa tabiiy chuqurlik bilan nafas oladi.
+//
+// Kirish animatsiyasi app.html loader'ida boshlanadi (birinchi kadrdayoq
+// ko'rinadi). Bu komponent o'sha taymline'dan DAVOM etadi — `__kivviSplashStart`
+// bo'lmasa (test, kechki Suspense fallback) 0 dan o'ynaydi.
+import { useEffect, useLayoutEffect, useRef, type CSSProperties } from 'react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
+import { notifyLaunchDismissed } from './launch-exit'
+import { initWaveGrid } from './wave-grid'
 
-export default function SplashScreen() {
+/** Katak + belgi animatsiyasi tugaydigan vaqt (index.css bilan bir xil). */
+const LAUNCH_SETTLE_MS = 900
+
+type SplashWindow = Window & { __kivviSplashStart?: number }
+
+function elapsedSinceHtmlLoader(): number {
+  if (typeof window === 'undefined') return 0
+  const startedAt = (window as SplashWindow).__kivviSplashStart
+  if (typeof startedAt !== 'number') return 0
+  const elapsed = performance.now() - startedAt
+  return Number.isFinite(elapsed) && elapsed > 0 ? elapsed : 0
+}
+
+function getHtmlLoaderStartTime(): number {
+  if (typeof window === 'undefined') return performance.now()
+  const startedAt = (window as SplashWindow).__kivviSplashStart
+  return typeof startedAt === 'number' && Number.isFinite(startedAt) ? startedAt : performance.now()
+}
+
+export default function SplashScreen({ exiting = false }: { exiting?: boolean }) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
+  // HTML loader allaqachon boshlagan — animatsiyalar shu siljishdan davom
+  // etadi (manfiy delay = taymline o'rtasidan boshlash).
+  const elapsed = Math.min(Math.round(elapsedSinceHtmlLoader()), LAUNCH_SETTLE_MS)
+  const shift: CSSProperties = { ['--splash-shift' as string]: elapsed > 0 ? `-${elapsed}ms` : '0ms' }
+
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const cleanup = initWaveGrid(canvas, {
+      startTimeMs: getHtmlLoaderStartTime(),
+    })
+    return cleanup
+  }, [])
+
+  // Chiqish cross-fade'i (video 3.8–4.6s): unmount paytida signal beramiz,
+  // LaunchExitOverlay splash'ning so'nayotgan nusxasini ilova ustida chizadi.
+  const mountedAt = useRef(0)
+  useLayoutEffect(() => { mountedAt.current = performance.now() }, [])
+  useLayoutEffect(() => {
+    if (exiting) return
+    return () => {
+      // StrictMode qayta mount'ida (0ms) yoki bir kadrlik almashishda
+      // signal bermaymiz — faqat haqiqiy chiqishda
+      if (performance.now() - mountedAt.current > 120) notifyLaunchDismissed()
+    }
+  }, [exiting])
+
   return (
     <div
       role="status"
       aria-live="polite"
       aria-label={tt('splashLoadingLabel')}
-      className="first-launch-screen font-display flex flex-col items-center justify-center relative overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, var(--p-canvas) 0%, var(--p-surface) 100%)' }}>
+      style={shift}
+      className={`splash-screen fixed inset-0 z-[70] flex items-center justify-center overflow-hidden select-none ${exiting ? 'splash-screen-exiting' : ''}`}>
 
-      {/* Brend kartochkasi — yumshoq kirish; soya/glow YO'Q (toza) */}
-      <div className="relative animate-premiumIn">
-        {/* webp = 87 KB, png = 1.42 MB (16x). Splash birinchi ko'rinadigan
-            rasm — png versiyasi boot'da bir necha soniya yeyardi. <picture>
-            webp'ni qo'llamaydigan eski WebView'lar uchun png'ga tushadi. */}
+      {/* Matematik to'r — fon qatlami */}
+      <div className="splash-grid" aria-hidden="true" />
+
+      <div className="splash-cell">
+        {/* Organik to'lqinli to'r: Canvas 2D liquid mesh */}
+        <div className="splash-cell-grid" aria-hidden="true">
+          <canvas ref={canvasRef} className="splash-wave-canvas" aria-hidden="true" />
+        </div>
+        {/* webp 30 KB / png 52 KB — belgi birinchi ko'rinadigan rasm, shuning
+            uchun avval webp, uni qo'llamagan WebView'da png'ga tushadi. */}
         <picture>
-          <source srcSet="/images/splash-brand.webp" type="image/webp" />
+          <source srcSet="/images/splash-mark.webp" type="image/webp" />
           <img
-            src="/images/splash-brand.png"
+            src="/images/splash-mark.png"
             alt="KIVVI"
-            width={260}
-            height={260}
+            width={512}
+            height={512}
             decoding="async"
-            className="relative h-auto w-[min(68vw,260px)] max-h-[42dvh] object-contain"
+            className="splash-mark select-none"
           />
         </picture>
-      </div>
-
-      {/* Progress bar — neytral, neonsiz */}
-      <div className="absolute bottom-[calc(2rem+var(--safe-bottom,0px))] w-48">
-        <div className="w-full h-[6px] rounded-full overflow-hidden"
-          style={{ background: 'var(--p-line)' }}>
-          <div className="h-full rounded-full splash-progress"
-            style={{ background: 'var(--p-muted)' }} />
-        </div>
-        <p className="text-center text-xs font-medium mt-3 text-psubtle tracking-wide">
-          {tt('loadingDots')}
-        </p>
       </div>
     </div>
   )
 }
-

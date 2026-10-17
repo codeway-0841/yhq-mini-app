@@ -1,0 +1,6 @@
+interface:
+  display_name: "KIVVI Security"
+  short_description: "Audit sensitive KIVVI security boundaries"
+  default_prompt: "Use $kivvi-security to review this security-sensitive change."
+policy:
+  allow_implicit_invocation: true

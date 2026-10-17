@@ -136,7 +136,7 @@ const UZ = {
   guidePracticeHint: "Test tanlang va bilimingizni tekshiring.", guideAllModes: "Barcha rejimlar",
   guideYourProgress: "Sizning natijangiz", guideMotivation: "Vazifalar, haftalik jang va reyting",
   guideCoverage: "Bu ko‘rsatkich javob berilgan savollar ulushini bildiradi.",
-  dashboardPractice: "Mashq qilish", dashboardLearn: "O‘rganish",
+  dashboardPractice: "Mashq qilish", dashboardLearn: "O‘rganish", dashboardReviewShort: "Takrorlash",
   // Testlar sahifasi (mode chooser)
   t20: "20 talik tezkor test",
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
@@ -1102,7 +1102,7 @@ const RU: Record<Keys, string> = {
   guidePracticeHint: "Выберите тест и проверьте свои знания.", guideAllModes: "Все режимы",
   guideYourProgress: "Ваш результат", guideMotivation: "Задания, битва недели и рейтинг",
   guideCoverage: "Этот показатель отражает долю вопросов, на которые вы ответили.",
-  dashboardPractice: "Практика", dashboardLearn: "Обучение",
+  dashboardPractice: "Практика", dashboardLearn: "Обучение", dashboardReviewShort: "Повторение",
   // Testlar sahifasi (mode chooser)
   t20: "Быстрый тест (20)",
   examDesc: "Симулятор реального экзамена", diffEasy: "Простой", diffMid: "Средний",

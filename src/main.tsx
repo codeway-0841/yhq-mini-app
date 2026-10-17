@@ -7,6 +7,7 @@ import ErrorBoundary from './shared/components/ErrorBoundary'
 import { ToastProvider } from './shared/components/ToastContainer'
 import { stripAppHtmlFromAddressBar } from './shared/lib/clean-url'
 import { applyNativeChrome } from './platform/native'
+import LaunchExitOverlay from './features/onboarding/LaunchExitOverlay'
 import './index.css'
 import 'katex/dist/katex.min.css'
 
@@ -36,6 +37,9 @@ if (rootEl) {
             lokal implementatsiyalardan shu API'ga ko'chadi). */}
         <ToastProvider>
           <App />
+          {/* Launch ekranining so'nishi (App qaysi ekranda bo'lishidan
+              qat'i nazar, ilova ustida) — video'dagi cross-fade */}
+          <LaunchExitOverlay />
         </ToastProvider>
       </ErrorBoundary>
     </React.StrictMode>

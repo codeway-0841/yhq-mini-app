@@ -31,6 +31,8 @@ jobs:
           # 20.19.1'da). Major pin — patch'ni setup-node yangilab turadi.
           node-version: 22
           cache: npm
+      - name: Agent workflow validation
+        run: node scripts/agent-workflow-validate.mjs
       - name: Dependency audit (prod deps only)
         run: npm audit --omit=dev --audit-level=high
       - run: npm ci --include=dev

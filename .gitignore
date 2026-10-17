@@ -4,7 +4,17 @@ dist
 .env.local
 .claude
 
-.agents
+.agents/*
+!.agents/skills/
+.agents/skills/*
+!.agents/skills/kivvi-qa/
+!.agents/skills/kivvi-memory/
+!.agents/skills/kivvi-workflow/
+!.agents/skills/task-auditor/
+!.agents/skills/kivvi-lead/
+!.agents/skills/kivvi-frontend/
+!.agents/skills/kivvi-backend/
+!.agents/skills/kivvi-security/
 .vercel
 scratch/
 tmp/
@@ -79,6 +89,7 @@ walkthrough.md
 # Sessiya rejasi — lokal fayl, ichida keystore paroli bor (repo'ga kirmasligi SHART)
 NEXT-SESSION-TASKS.md
 .verify-shots/
+.agent-local/
 
 # Python bytecode (scripts/*.py ishga tushirilganda hosil bo'ladi)
 __pycache__/

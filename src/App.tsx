@@ -131,6 +131,9 @@ function prefetchRouteChunks() {
   void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
 }
 
+/** Launch ekrani (katak animatsiyasi) kamida shuncha vaqt ko'rinadi. */
+const LAUNCH_MIN_VISIBLE_MS = 620
+
 export default function App() {
   const {
     initialized,
@@ -138,6 +141,19 @@ export default function App() {
     isAuthed,
     lang,
   } = useAppBootstrap()
+
+  // LAUNCH ANIMATSIYASI (katak ochilishi) KO'RINISHI KAFOLATI (2026-10-17
+  // "videodagi kabi animatsiya bo'lsin"): boot tez bo'lganda splash ~150ms'da
+  // almashib, butun animatsiya sezilmay yo'qolardi. Minimal ushlab turish —
+  // faqat harakat yoqilganda (reduced-motion'da kutish behuda).
+  const [launchMinElapsed, setLaunchMinElapsed] = useState(false)
+  useEffect(() => {
+    const reduced = typeof window.matchMedia === 'function'
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduced) { setLaunchMinElapsed(true); return }
+    const id = setTimeout(() => setLaunchMinElapsed(true), LAUNCH_MIN_VISIBLE_MS)
+    return () => clearTimeout(id)
+  }, [])
 
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {
@@ -245,7 +261,10 @@ export default function App() {
     )
   }
 
-  if (!initialized) {
+  const isSplashPreview = typeof window !== 'undefined'
+    && (new URLSearchParams(window.location.search).has('splash') || window.location.hash.includes('splash'))
+
+  if (!initialized || !launchMinElapsed || isSplashPreview) {
     return (
       <>
         <ThemeEffect />

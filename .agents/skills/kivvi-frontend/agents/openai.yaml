@@ -1,0 +1,6 @@
+interface:
+  display_name: "KIVVI Frontend"
+  short_description: "Build and review KIVVI frontend changes"
+  default_prompt: "Use $kivvi-frontend to implement or review this frontend task."
+policy:
+  allow_implicit_invocation: true

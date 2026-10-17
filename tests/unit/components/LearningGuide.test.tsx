@@ -41,7 +41,7 @@ describe('learning guide', () => {
     expect(buttons[0]).toHaveTextContent('O‘rganish')
     expect(buttons[1]).toHaveTextContent('Darslik')
     expect(buttons[2]).toHaveTextContent('Biletlar')
-    expect(buttons[3]).toHaveTextContent('Aqlli takrorlash')
+    expect(buttons[3]).toHaveTextContent('Takrorlash')
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
 
     fireEvent.click(buttons[1])

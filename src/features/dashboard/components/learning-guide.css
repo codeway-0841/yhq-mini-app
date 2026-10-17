@@ -2,11 +2,14 @@
 .home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
 .home-learning-step { padding: 14px; border: 1px solid var(--p-line); border-radius: 18px; background: var(--p-card); }
 .home-learning-path-row { display: flex; align-items: center; gap: 12px; width: 100%; position: relative; padding: 2px 0; }
-.home-learning-shortcut { min-height: 94px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px 10px; text-align: center; border: 1px solid var(--p-line); border-radius: 18px; background: var(--p-card); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); }
+.home-learning-shortcut { position: relative; min-height: 78px; display: flex; align-items: center; justify-content: flex-start; gap: 11px; padding: 12px 34px 12px 12px; text-align: left; }
+.home-learning-shortcut-icon { display: grid; width: 36px; height: 36px; flex: 0 0 36px; place-items: center; border-radius: 9999px; background: var(--p-surface); color: var(--p-subtle); }
+.home-learning-shortcut-chevron { position: absolute; top: 50%; right: 11px; width: 15px; height: 15px; color: var(--p-muted); opacity: 0.56; transform: translateY(-50%); transition: transform 180ms ease, opacity 180ms ease; }
 @media (hover: hover) and (pointer: fine) {
-  .home-learning-shortcut:hover { background: var(--p-surface); transform: translateY(-2px); box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.08); }
+  .home-learning-shortcut:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.32); }
+  .home-learning-shortcut:hover .home-learning-shortcut-chevron { transform: translate(2px, -50%); opacity: 0.9; }
 }
-@media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 20px; } .home-learning-step { padding: 10px; } .home-learning-shortcut { min-height: 76px; padding: 6px 8px; } }
+@media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 20px; } .home-learning-step { padding: 10px; } .home-learning-shortcut { min-height: 72px; gap: 9px; padding: 10px 30px 10px 10px; } .home-learning-shortcut-icon { width: 32px; height: 32px; flex-basis: 32px; } }
 /* Desktop: karta ichi nafasli (gap-4 ritmiga mos) — mobil zichligicha qoladi */
 @media (min-width: 1024px) { .home-learning-step { padding: 20px; } .home-learning-path-row { gap: 14px; } }
 @media (min-width: 600px) { .home-learning-hero { width: 100%; } }

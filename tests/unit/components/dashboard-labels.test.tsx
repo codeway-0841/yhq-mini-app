@@ -11,12 +11,19 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 
 describe('dashboard localized labels', () => {
   it.each([
-    ['uz', 'Biletlar Biletli testlar'],
-    ['ru', 'Билеты Тесты по билетам'],
-  ] as const)('shows the short ticket description in %s', (language, name) => {
+    ['uz', 'Biletlar'],
+    ['ru', 'Билеты'],
+  ] as const)('shows the concise ticket label in %s', (language, name) => {
     useAppStore.setState((s) => ({ settings: { ...s.settings, language } }))
     render(<MemoryRouter><LearningGuide mistakesCount={0} /></MemoryRouter>)
-    expect(screen.getByRole('button', { name })).toBeVisible()
+    expect(screen.getByRole('button', { name, exact: true })).toBeVisible()
+  })
+
+  it('renders all four shortcuts as consistent interactive cards', () => {
+    const { container } = render(<MemoryRouter><LearningGuide mistakesCount={0} /></MemoryRouter>)
+    const cards = container.querySelectorAll('.home-learning-shortcut.app-card-interactive')
+    expect(cards).toHaveLength(4)
+    expect(container.querySelectorAll('.home-learning-shortcut-chevron')).toHaveLength(4)
   })
 
   it('uses the selected language for the subject after a language change', () => {
