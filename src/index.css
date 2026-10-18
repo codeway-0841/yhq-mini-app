@@ -364,14 +364,22 @@ body[data-theme='light'] .hero-gradient-card {
    Animatsiya `no-preference` ichida: reduced-motion / `data-no-animation`
    bo'lsa elementlar darhol YAKUNIY sokin holatda turadi. */
 :root {
-  --splash-bg: #1a80fa;
-  --splash-bg-center: #2089ff;
-  --splash-bg-edge: #0952b8;
+  --splash-bg: #0d3fd6;
+  --splash-bg-center: #3884ff;
+  --splash-bg-edge: #04123f;
 }
 
+/* Splash = onboarding foni BILAN AYNAN bir xil gradient (2026-10 final):
+   yuqorida brend nur, pastda chuqur navy. Launch → onboarding o'tishida
+   rang sakrashi yo'q. Onboarding: `.ob-bg`. */
 .splash-screen {
   --splash-shift: 0ms;
-  background: radial-gradient(circle at 50% 42%, var(--splash-bg-center) 0%, #126ee6 58%, var(--splash-bg-edge) 100%);
+  background:
+    radial-gradient(120% 42% at 50% 0%,
+      rgba(56, 132, 255, 0.88) 0%,
+      rgba(22, 76, 232, 0.38) 52%,
+      rgba(4, 18, 63, 0) 100%),
+    linear-gradient(180deg, #0d3fd6 0%, #0a2a93 32%, #061c63 62%, var(--splash-bg-edge) 100%);
 }
 
 .splash-grid,
@@ -389,6 +397,10 @@ body[data-theme='light'] .hero-gradient-card {
   height: 100%;
   display: block;
   pointer-events: none;
+  /* Onboarding to'ri bilan bir xil intensivlik/mask — o'tish uzluksiz */
+  opacity: 0.42;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 46%, transparent 82%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 46%, transparent 82%);
 }
 
 /* Orqa fon qatlami — z-index tartibi va testlar mosligi */
@@ -412,7 +424,7 @@ body[data-theme='light'] .hero-gradient-card {
   width: 100%;
   height: 100%;
   border-radius: 0;
-  background: radial-gradient(circle at 50% 42%, var(--splash-bg-center) 0%, #126ee6 58%, var(--splash-bg-edge) 100%);
+  background: transparent;
 }
 
 /* Markazdagi belgi to'r ustida chizilishi uchun */
@@ -429,25 +441,10 @@ body[data-theme='light'] .hero-gradient-card {
   width: min(28vw, 122px);
   height: auto;
   filter: drop-shadow(0 10px 30px rgba(3, 27, 78, 0.32));
-  will-change: transform;
 }
 
-/* Belgi nafas olishi (video 00:01–00:03: mayin, elastik) */
-@keyframes splashMarkBreathe {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-4px) scale(1.025);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .splash-mark {
-    /* Hech qanday opacity:0 dan boshlanadigan fade-in yo'q — pirpirashni yo'qotish uchun */
-    animation: splashMarkBreathe 3.8s ease-in-out infinite;
-  }
-}
+/* Splash belgisi STATIK — video kabi qimirlamaydi (2026-10 qarori).
+   Ilgari bu yerda `splashMarkBreathe` animatsiyasi bor edi. */
 
 .splash-screen-exiting {
   pointer-events: none;
@@ -504,6 +501,172 @@ body[data-no-animation='true'] .splash-mark { animation: none; }
   50%      { transform: translateY(-10px); }
 }
 .onboarding-float { animation: onboardingFloat 3s ease-in-out infinite; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ONBOARDING — IMG_0928.MOV bilan 1:1 (2026-10-18 kadr tahlili)
+   Video taymline (sekund): 8.0 launch → 9.55 welcome → 12.15 blur-out →
+   13.0 sync (spinner) → 18.6 fan tanlash → 21.0 makon → 23.3 yakun.
+   Vaqtlar Onboarding.tsx dagi OB_TIMING bilan AYNAN bir xil bo'lishi shart.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Onboarding foni status bar ortigacha cho'ziladi (video: nur y=0 dan
+   boshlanadi). fixed — layout'ga ta'sir qilmaydi, xavfsiz zona padding'i
+   faqat mazmunga tegadi. */
+
+/* Fon: video tuzilmasi (yuqorida nur, pastda chuqurlik) — lekin QORA emas.
+   Splash oilasidagi to'q ko'k: yuqorida brend ko'k, pastda chuqur navy.
+   --ob-bottom — pastki rang (bir joydan o'zgartiriladi). */
+.ob-bg {
+  --ob-bottom: #04123F;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 42% at 50% 0%,
+      rgba(56, 132, 255, 0.88) 0%,
+      rgba(22, 76, 232, 0.38) 52%,
+      rgba(4, 18, 63, 0) 100%),
+    linear-gradient(180deg, #0D3FD6 0%, #0A2A93 32%, #061C63 62%, var(--ob-bottom) 100%);
+  pointer-events: none;
+  animation: ob-bg-in 520ms ease both;
+}
+
+@keyframes ob-bg-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* KIVVI imzosi — splash bilan bir xil ANIMATSIYALI to'lqinli to'r (Canvas,
+   wave-grid.ts); yuqori 40% da ko'rinadi, pastga so'nadi. */
+.ob-bg-wave {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 520ms ease;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 40%, transparent 74%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 40%, transparent 74%);
+}
+.ob-bg[data-grid='true'] .ob-bg-wave { opacity: 0.38; }
+
+/* Sync bosqichida ekran chuqurlashadi (video 15.0s: nur so'nadi) */
+.ob-bg-dim {
+  position: absolute;
+  inset: 0;
+  background: #020a24;
+  opacity: 0;
+  transition: opacity 520ms ease;
+}
+.ob-bg[data-dim='true'] .ob-bg-dim { opacity: 0.4; }
+
+/* Kirish: har element alohida blur-in (video 9.7–11.0s stagger) */
+@keyframes ob-reveal {
+  from { opacity: 0; filter: blur(16px); }
+  to   { opacity: 1; filter: blur(0); }
+}
+/* Chiqish: butun kontent blurlanib so'nadi (video 12.15–12.45s) */
+@keyframes ob-hide {
+  from { opacity: 1; filter: blur(0); }
+  to   { opacity: 0; filter: blur(18px); }
+}
+
+.ob-reveal {
+  opacity: 0;
+  animation: ob-reveal 460ms cubic-bezier(0.22, 0.61, 0.36, 1) var(--ob-delay, 0ms) both;
+}
+
+.ob-stage[data-phase='exit'] .ob-reveal {
+  animation: ob-hide 300ms cubic-bezier(0.4, 0, 1, 1) var(--ob-exit-delay, 0ms) both;
+}
+
+/* Ochilishdagi "KIVVI" yozuvi (video 9.2–9.9s): logo ostida DOIMIY turadi.
+   Layout'ga ta'sir qilmaydi (absolute) — sarlavha orasidagi 51px saqlanadi. */
+.brand-wordmark {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 7px);
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-indent: 0.18em;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/* iOS 12 tayoqchali spinner (video 13.0s yulduz ko'rinishi) */.ob-spinner {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  animation: ob-spin 1s steps(12, end) infinite;
+}
+.ob-spinner i {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 20%;
+  margin-left: -1px;
+  border-radius: 1px;
+  background: currentColor;
+  transform-origin: 50% 250%;
+}
+@keyframes ob-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Qadam indikatori: 3 nuqta, faol qadam kapsula (video 70–91px) */
+.ob-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 21px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.ob-pill i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+  transition:
+    width 320ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    height 320ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    background-color 320ms ease;
+}
+.ob-pill i[data-active='true'] {
+  width: 19px;
+  height: 10px;
+  background: #ffffff;
+}
+
+/* Fanlar ro'yxati (onboarding): scrollbar ko'rinmaydi, pastki qirra yumshoq
+   so'nadi — ro'yxat davom etayotganini bildiradi (modal emas, inline tanlov). */
+.ob-list-scroll {
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.ob-list-scroll::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ob-reveal,
+  .ob-stage[data-phase='exit'] .ob-reveal {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+  }
+  .ob-bg,
+  .ob-bg-drift--a,
+  .ob-bg-drift--b { animation: none; }
+  .ob-spinner { animation-duration: 2.4s; }
+  .ob-pill i { transition: none; }
+}
 
 /* ── Octagon Live Emotes Animation ── */
 @keyframes flyUp {

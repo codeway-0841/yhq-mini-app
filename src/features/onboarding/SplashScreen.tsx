@@ -78,7 +78,8 @@ export default function SplashScreen({ exiting = false }: { exiting?: boolean })
           <canvas ref={canvasRef} className="splash-wave-canvas" aria-hidden="true" />
         </div>
         {/* webp 30 KB / png 52 KB — belgi birinchi ko'rinadigan rasm, shuning
-            uchun avval webp, uni qo'llamagan WebView'da png'ga tushadi. */}
+            uchun avval webp, uni qo'llamagan WebView'da png'ga tushadi.
+            Yozuv yo'q, belgi qimirlamaydi (2026-10 qarori). */}
         <picture>
           <source srcSet="/images/splash-mark.webp" type="image/webp" />
           <img

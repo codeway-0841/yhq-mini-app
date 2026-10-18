@@ -9,3 +9,6 @@ export { authErrorKey, isValidPhone, isValidPassword, toE164 } from './validatio
 export { usePhoneInput } from './hooks/usePhoneInput'
 // Profil (LinkAccountSection) adaptiv OTP bosqichi uchun — barrel orqali (qoida 1a)
 export { default as OTPInput } from './components/OTPInput'
+// Onboarding 3-qadami (Telegram orqali kirish) uchun — yagona sessiya hydrate yo'li
+export { TelegramLoginPanel } from './components/TelegramLoginPanel'
+export { applyAuthSession } from './apply-auth-session'

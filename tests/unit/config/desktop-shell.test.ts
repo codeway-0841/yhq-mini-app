@@ -171,9 +171,10 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(graph).toContain('lg:grid-cols-4')
   })
 
-  it('batch-6: Onboarding 2-ustun + var-rang opacity fix (onboarding/login)', () => {
+  it('batch-6: Onboarding desktop split + var-rang opacity fix (onboarding/login)', () => {
     const ob = read('features/onboarding/Onboarding.tsx')
-    expect(ob).toContain('sm:grid-cols-2')
+    // Desktop: brend panel + qadam ustuni (2 ustunli split)
+    expect(ob).toContain('lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)]')
     expect(ob).not.toContain('bg-pprimary/10')
     expect(ob).not.toContain('bg-pprimary/15')
     const login = read('features/auth/LoginPage.tsx')
@@ -188,7 +189,8 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(login).toContain('lg:grid-cols-2')
     expect(login).toContain('lg:min-h-[calc(100dvh-var(--safe-top-body,0px))]')
     const ob = read('features/onboarding/Onboarding.tsx')
-    expect(ob).toContain('splash-float-safe')
+    // Logo MUZLATILGAN (IMG_0928.MOV: welcome'da belgi suzmaydi)
+    expect(ob).not.toContain('splash-float-safe')
     const css = read('index.css')
     expect(css).toContain('.splash-float-safe')
     expect(css).toContain('@media (prefers-reduced-motion: no-preference)')

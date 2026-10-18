@@ -67,6 +67,7 @@ const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
+const driveChunk              = () => import('./features/drive/DrivePage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -108,6 +109,7 @@ const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).de
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
 const ReviewsPage      = lazy(reviewsChunk)
 const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
+const DrivePage        = lazy(driveChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -123,6 +125,7 @@ const routeChunkPrefetchers = [
   graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk, reviewsChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, interactiveLessonsChunk,
+  driveChunk,
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
@@ -153,7 +156,12 @@ export default function App() {
 
   // Onboarding faqat birinchi kirishda ko'rsatiladi
   const [onboarded, setOnboarded] = useState(() => {
-    try { return localStorage.getItem('yhq-onboarded') === '1' } catch { return true }
+    try {
+      if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).has('previewOnboarding')) {
+        return false
+      }
+      return localStorage.getItem('yhq-onboarded') === '1'
+    } catch { return true }
   })
 
   // APK majburiy yangilash tekshiruvi — native APK'da boot'da chaqiriladi.
@@ -287,16 +295,19 @@ export default function App() {
         </Suspense>
       </HashRouter>
     )
+  // ONBOARDING BIRINCHI (2026-10 oqim o'zgarishi): 3-qadam Telegram orqali
+  // KIRISH. Shuning uchun auth'dan oldin ko'rsatiladi — login sahifasi faqat
+  // onboarding tugagan, lekin sessiya yo'q holatda qoladi (fallback).
+  } else if (!onboarded) {
+    content = (
+      <Suspense fallback={<PageLoader />}>
+        <Onboarding onDone={finishOnboarding} authed={isAuthed} />
+      </Suspense>
+    )
   } else if (!isAuthed) {
     content = (
       <Suspense fallback={<PageLoader />}>
         <LoginPage />
-      </Suspense>
-    )
-  } else if (!onboarded) {
-    content = (
-      <Suspense fallback={<PageLoader />}>
-        <Onboarding onDone={finishOnboarding} />
       </Suspense>
     )
   } else {
@@ -345,6 +356,7 @@ export default function App() {
             <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
             <Route path="/sharhlar"   element={<ReviewsPage />} />
             <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
+            <Route path="/drive"       element={<DrivePage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>

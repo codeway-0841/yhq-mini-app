@@ -27,6 +27,9 @@ describe('SplashScreen component', () => {
     // Katak — kattalashib butun ekranni egallaydigan qatlam
     expect(img.closest('div')).toHaveClass('splash-cell')
     expect(img).toHaveClass('splash-mark')
+    // Splash'da yozuv yo'q (2026-10 qarori) va belgi statik
+    expect(status.querySelector('.brand-wordmark')).toBeNull()
+    expect(status.querySelector('.splash-mark-wrap')).toBeNull()
     expect(img.closest('picture')?.querySelector('source')).toHaveAttribute('srcset', '/images/splash-mark.webp')
     // Referensda progress bar ham, matn ham yo'q — faqat belgi
     expect(screen.queryByText('Yuklanmoqda...')).not.toBeInTheDocument()

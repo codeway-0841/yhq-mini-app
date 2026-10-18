@@ -1,18 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import { api, type AuthResponse } from '../../shared/api'
 import { config } from '../../shared/config'
-import { setSessionToken } from '../../shared/lib/session'
 import { track } from '../../shared/lib/analytics'
-import { ensureAccountOwner } from '../../shared/store/account'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { getTelegramUser, getTelegramWebApp } from '../../platform/telegram'
 import { isNativeApp } from '../../platform/native'
-import { flushOutbox } from '../../shared/lib/outbox'
 import { useT } from '../../shared/i18n'
 import { useToast } from '../../shared/components/ToastContainer'
 import { authErrorKey } from './validation'
 import { usePhoneInput } from './hooks/usePhoneInput'
+import { applyAuthSession } from './apply-auth-session'
+import { applyDevGuestSession } from './dev-guest'
 import PasswordInput from './components/PasswordInput'
 import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
@@ -55,21 +53,8 @@ export default function LoginPage() {
 
   /** Login/register/link muvaffaqiyatining YAGONA hydrate yo'li (App boot bilan bir xil). */
   const applyAuth = (data: AuthResponse) => {
-    ensureAccountOwner(data.user.id)
-    setSessionToken(data.sessionToken)
-    useAppStore.getState().hydrateFromProfile(data)
+    applyAuthSession(data)
     success(tt('authLoginSuccess'))
-    // v2: faqat metadata (full-bank preload YO'Q)
-    if (config.testSessionsV2Enabled) {
-      void useQuestionsStore.getState().loadTopics().catch(() => {})
-    } else {
-      void useQuestionsStore.getState().load(data.settings.language).catch(() => {})
-    }
-    void flushOutbox(data.user.id)
-    if (typeof window !== 'undefined') {
-      window.location.hash = '#/'
-    }
-    useAppStore.setState({ initialized: true })
   }
 
   const submitForm = async (e: React.FormEvent) => {
@@ -160,45 +145,8 @@ export default function LoginPage() {
       }
     } catch (err) {
       if (import.meta.env.DEV) {
-        applyAuth({
-          user: {
-            id: '999999999',
-            firstName: 'Lokal Mehmon',
-            lastName: '',
-            username: 'lokal_user',
-            photoUrl: undefined,
-            phone: undefined,
-            tariff: 'free',
-            coins: 100,
-            ownedItems: [],
-            avatarFrame: null,
-          },
-          progress: {
-            totalCorrect: 0,
-            totalWrong: 0,
-            totalAnswered: 0,
-            streak: 1,
-            wrongByTicket: {},
-            solvedQuestions: [],
-            xp: 50,
-          },
-          settings: {
-            autoNextCorrect: true,
-            autoNextWrong: false,
-            noAnimation: false,
-            shuffleOptions: false,
-            fontSize: 'medium',
-            fontStyle: 'default',
-            language: language ?? 'uz',
-            theme: 'dark',
-            offlineMode: false,
-            dailyReminder: true,
-            dailyReminderTime: '20:00',
-          },
-          savedQuestions: [],
-          providers: ['telegram'],
-          sessionToken: '0123456789abcdef0123456789abcdef',
-        })
+        applyDevGuestSession(language ?? 'uz')
+        success(tt('authLoginSuccess'))
         return
       }
       setError(tt(authErrorKey(err)))
