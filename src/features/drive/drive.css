@@ -1,0 +1,331 @@
+.drive-page {
+  --drive-road: #202832;
+  --drive-road-edge: #111820;
+  --drive-ground: #c8b998;
+  --drive-ground-dark: #a89876;
+  --drive-blue: #2bb9f3;
+  --drive-amber: #f4ad32;
+  min-height: 100%;
+  color: var(--p-fg);
+}
+
+[data-theme='dark'] .drive-page {
+  --drive-road: #171d25;
+  --drive-road-edge: #0b1016;
+  --drive-ground: #34362d;
+  --drive-ground-dark: #252820;
+}
+
+.drive-stage {
+  width: min(100%, 620px);
+  margin: 0 auto;
+}
+
+.drive-stage-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 2px 12px;
+}
+
+.drive-kicker {
+  margin: 0 0 4px;
+  color: var(--p-primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.drive-stage-head h1 {
+  margin: 0;
+  font-size: clamp(20px, 6vw, 28px);
+  font-weight: 750;
+  letter-spacing: -.025em;
+  line-height: 1.08;
+}
+
+.drive-progress-count {
+  flex: none;
+  color: var(--p-muted);
+  font-size: 12px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.drive-progress-track {
+  height: 3px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: var(--p-line);
+}
+
+.drive-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--p-primary);
+  transition: width 360ms ease;
+}
+
+.drive-scene-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--drive-road-edge);
+  box-shadow: 0 18px 50px rgb(8 14 22 / .24), inset 0 0 0 1px rgb(255 255 255 / .06);
+}
+
+.drive-scene {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  touch-action: manipulation;
+}
+
+.drive-ground { fill: var(--drive-ground); }
+.drive-road { fill: var(--drive-road); stroke: var(--drive-road-edge); stroke-width: 5; }
+.drive-asphalt-texture { fill: url(#drive-asphalt); opacity: .25; }
+.drive-asphalt-texture + * { color: white; }
+#drive-asphalt circle, #drive-asphalt path { fill: #fff; stroke: #fff; opacity: .34; }
+
+.drive-road-markings path {
+  fill: none;
+  stroke: rgb(255 255 255 / .34);
+  stroke-width: 1.5;
+}
+
+.drive-road-markings .drive-lane-dash {
+  stroke: #f3d55b;
+  stroke-width: 2;
+  stroke-dasharray: 8 8;
+}
+
+.drive-road-markings .drive-stop-line { stroke: rgb(255 255 255 / .78); stroke-width: 3; }
+
+.drive-traffic-light rect { fill: #0b1016; stroke: rgb(255 255 255 / .18); }
+.drive-traffic-light circle { fill: #303842; }
+.drive-traffic-light .drive-light-red { fill: #7b3038; }
+.drive-traffic-light .drive-light-amber { fill: #745e2c; }
+.drive-traffic-light .drive-light-green.is-on { fill: #56e39f; filter: drop-shadow(0 0 6px #56e39f); }
+
+.drive-main-road-sign path:first-child { fill: #fff; stroke: #1f2937; stroke-width: 1; }
+.drive-main-road-sign path:nth-child(2) { fill: #f4c542; }
+.drive-main-road-sign path:last-child { fill: none; stroke: #64748b; stroke-width: 3; }
+
+.drive-uncontrolled-marker circle { fill: rgb(255 255 255 / .09); stroke: rgb(255 255 255 / .23); }
+.drive-uncontrolled-marker path { fill: none; stroke: rgb(255 255 255 / .55); stroke-width: 2; }
+
+.drive-car {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.drive-car.is-selected .drive-car-body {
+  stroke: #fff;
+  stroke-width: 2.5;
+}
+
+.drive-car-hit {
+  position: absolute;
+  z-index: 3;
+  top: var(--drive-hit-y);
+  left: var(--drive-hit-x);
+  width: 56px;
+  height: 56px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  background: transparent;
+  touch-action: manipulation;
+}
+
+.drive-car-hit:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--p-primary);
+}
+
+.drive-car-hit:disabled { pointer-events: none; }
+
+.drive-car-shadow { fill: rgb(0 0 0 / .42); transform: translateY(3px); }
+.drive-car--blue .drive-car-body { fill: var(--drive-blue); }
+.drive-car--amber .drive-car-body { fill: var(--drive-amber); }
+.drive-car-glass { fill: rgb(12 24 38 / .72); }
+.drive-car-divider { fill: none; stroke: rgb(255 255 255 / .4); stroke-width: 1; }
+.drive-car-light { fill: #fff7c2; }
+
+.drive-order-badge circle { fill: var(--p-primary); stroke: #fff; stroke-width: 1.5; }
+.drive-order-badge text { fill: var(--p-on-primary); font-size: 11px; font-weight: 800; }
+
+.drive-compass circle { fill: rgb(3 8 15 / .46); stroke: rgb(255 255 255 / .16); }
+.drive-compass path { fill: #fff; }
+.drive-compass text { fill: rgb(255 255 255 / .62); font-size: 7px; font-weight: 800; }
+
+.drive-conflict circle {
+  fill: rgb(var(--p-danger-rgb) / .22);
+  stroke: var(--p-danger);
+  stroke-width: 2;
+  animation: drive-conflict-pulse 900ms ease-in-out infinite;
+}
+
+.drive-conflict path { fill: none; stroke: #fff; stroke-linecap: round; stroke-width: 4; }
+
+.drive-command {
+  position: relative;
+  z-index: 2;
+  margin: -18px 10px 0;
+  padding: 18px;
+  border-radius: 24px;
+  background: var(--p-card);
+  box-shadow: 0 14px 40px rgb(8 15 28 / .17);
+}
+
+.drive-command-copy > span {
+  color: var(--p-primary);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.drive-command-copy > strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.drive-command-copy > p,
+.drive-feedback p {
+  margin: 5px 0 0;
+  color: var(--p-muted);
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.drive-order-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.drive-order-slot {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: var(--p-surface);
+  color: var(--p-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.drive-order-slot b {
+  display: grid;
+  width: 21px;
+  height: 21px;
+  flex: none;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--p-card);
+  color: var(--p-subtle);
+  font-size: 10px;
+}
+
+.drive-order-slot.is-blue { color: #0789bf; }
+.drive-order-slot.is-amber { color: #b86e00; }
+[data-theme='dark'] .drive-order-slot.is-blue { color: #67cef7; }
+[data-theme='dark'] .drive-order-slot.is-amber { color: #ffc866; }
+
+.drive-feedback {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  margin-top: 14px;
+  padding: 13px;
+  border-radius: 16px;
+  background: var(--p-surface);
+}
+
+.drive-feedback-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  place-items: center;
+  border-radius: 999px;
+}
+
+.drive-feedback-icon svg { width: 17px; height: 17px; }
+.drive-feedback.is-correct .drive-feedback-icon { color: var(--p-success); background: rgb(var(--p-success-rgb) / .14); }
+.drive-feedback.is-wrong .drive-feedback-icon { color: var(--p-danger); background: rgb(var(--p-danger-rgb) / .14); }
+.drive-feedback strong { font-size: 14px; }
+
+.drive-actions { display: flex; gap: 9px; margin-top: 15px; }
+.drive-actions > button[aria-label] { width: 52px; padding-inline: 0; }
+
+.drive-finish {
+  width: min(100%, 440px);
+  margin: 48px auto 0;
+  padding: 32px 24px 24px;
+  border-radius: 24px;
+  background: var(--p-card);
+  box-shadow: 0 20px 60px rgb(8 15 28 / .14);
+  text-align: center;
+}
+
+.drive-finish-mark {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 18px;
+  place-items: center;
+  border-radius: 22px;
+  background: var(--p-primary);
+  color: var(--p-on-primary);
+  box-shadow: 0 12px 30px rgb(var(--p-primary-rgb) / .26);
+}
+
+.drive-finish-mark svg { width: 31px; height: 31px; }
+.drive-finish h1 { margin: 5px 0 7px; font-size: 25px; letter-spacing: -.025em; }
+.drive-finish > p:not(.drive-kicker) { margin: 0 auto; color: var(--p-muted); font-size: 14px; line-height: 1.5; }
+
+.drive-finish-score {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 26px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.drive-finish-score strong { font-size: 54px; line-height: 1; letter-spacing: -.05em; }
+.drive-finish-score span { color: var(--p-muted); font-size: 19px; font-weight: 700; }
+
+.drive-move-east { animation: drive-east 1.25s var(--drive-delay) cubic-bezier(.45, 0, .2, 1) both; }
+.drive-move-west { animation: drive-west 1.25s var(--drive-delay) cubic-bezier(.45, 0, .2, 1) both; }
+.drive-move-south { animation: drive-south 1.25s var(--drive-delay) cubic-bezier(.45, 0, .2, 1) both; }
+.drive-move-north { animation: drive-north 1.25s var(--drive-delay) cubic-bezier(.45, 0, .2, 1) both; }
+
+@keyframes drive-east { to { transform: translateX(280px); } }
+@keyframes drive-west { to { transform: translateX(-280px); } }
+@keyframes drive-south { to { transform: translateY(280px); } }
+@keyframes drive-north { to { transform: translateY(-280px); } }
+@keyframes drive-conflict-pulse { 50% { opacity: .42; transform: scale(1.22); } }
+
+@media (min-width: 640px) {
+  .drive-scene-wrap { margin-inline: 24px; }
+  .drive-command { margin-inline: 48px; padding: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drive-move-east,
+  .drive-move-west,
+  .drive-move-south,
+  .drive-move-north,
+  .drive-conflict circle { animation-duration: .01ms; animation-iteration-count: 1; }
+}
