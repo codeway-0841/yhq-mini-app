@@ -67,7 +67,6 @@ const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
-const driveChunk              = () => import('./features/drive/DrivePage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -109,7 +108,6 @@ const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).de
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
 const ReviewsPage      = lazy(reviewsChunk)
 const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
-const DrivePage        = lazy(driveChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -125,7 +123,6 @@ const routeChunkPrefetchers = [
   graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk, reviewsChunk,
   notFoundChunk, adminChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, interactiveLessonsChunk,
-  driveChunk,
 ]
 function prefetchRouteChunks() {
   for (const load of routeChunkPrefetchers) void load()
@@ -355,9 +352,7 @@ export default function App() {
             <Route path="/ai-tutor"   element={<SnapSolveHub />} />
             <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
             <Route path="/sharhlar"   element={<ReviewsPage />} />
-            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
-            <Route path="/drive"       element={<DrivePage />} />
-            <Route path="/admin"      element={<AdminPage />} />
+            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />            <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
         </MobileAppShell>
