@@ -166,4 +166,55 @@ describe('ModesPage', () => {
     expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
     expect(screen.getByRole('button', { name: 'Aqlli takrorlash' })).toBeTruthy()
   })
+
+  it('milliy sertifikatli fanlarda Ball kalkulyatori kartasi chiqadi va bosilganda modal ochiladi', () => {
+    useSubjectStore.setState({
+      subject: {
+        id: 'fizika',
+        name: 'Fizika',
+        icon: vi.fn() as any,
+        color: '#3b82f6',
+        available: true,
+        examPresets: [],
+      },
+    })
+
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    const calcBtn = screen.getByRole('button', { name: 'Ball kalkulyatori' })
+    expect(calcBtn).toBeTruthy()
+
+    fireEvent.click(calcBtn)
+    expect(screen.getByRole('dialog')).toBeTruthy()
+    expect(screen.getByText('Sertifikat bali')).toBeTruthy()
+  })
+
+  it('YHQ fanida Ball kalkulyatori kartasi chiqmaydi', () => {
+    useSubjectStore.setState({
+      subject: {
+        id: 'yhq',
+        name: "Yo'l harakati qoidalari",
+        icon: vi.fn() as any,
+        color: '#10b981',
+        available: true,
+        examPresets: [],
+      },
+    })
+
+    render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    expect(screen.queryByRole('button', { name: 'Ball kalkulyatori' })).toBeNull()
+  })
 })

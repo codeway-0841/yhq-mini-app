@@ -168,6 +168,7 @@ const UZ = {
   aiTestCorrectAnswer: "To'g'ri javob", aiTestEssayScore: "Esse bahosi",
   aiTestCoinsEarned: "Yutilgan coin", aiTestBackToList: "Variantlarga qaytish",
   // AI Tutor & Snap Solve (Suratdan yechish va Sokratik repetitor)
+  scoreCalculator: "Ball kalkulyatori",
   snapSolveTitle: "Suratdan yechish (AI)",
   snapSolveSubtitle: "Masala yoki testni rasmga oling — AI soniyalar ichida bosqichma-bosqich yechib beradi",
   snapSolveTakeCamera: "Kamera orqali suratga olish",
@@ -1221,6 +1222,7 @@ const RU: Record<Keys, string> = {
   aiTestCorrectAnswer: "Правильный ответ", aiTestEssayScore: "Оценка эссе",
   aiTestCoinsEarned: "Заработано монет", aiTestBackToList: "К вариантам",
   // AI Tutor & Snap Solve (Решение по фото и Сократический репетитор)
+  scoreCalculator: "Калькулятор баллов",
   snapSolveTitle: "Решение по фото (AI)",
   snapSolveSubtitle: "Сфотографируйте задачу или тест — AI пошагово решит её за секунды",
   snapSolveTakeCamera: "Сделать фото",

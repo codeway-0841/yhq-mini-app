@@ -73,4 +73,13 @@ describe('TestlarPage — Mode Card Availability', () => {
       state: { mode: 'marathon', title: 'Marafon' },
     })
   })
+
+  it("suratdan yechish va ball kalkulyatori TestlarPage ichida ko'rinmaydi", () => {
+    useSubjectStore.setState({ subjectId: 'fizika' })
+    render(<TestlarPage />)
+
+    expect(screen.queryByText(/suratdan yechish/i)).toBeNull()
+    expect(screen.queryByText(/ball kalkulyatori/i)).toBeNull()
+    expect(screen.queryByText(/dtm imtiyozlari/i)).toBeNull()
+  })
 })

@@ -5,9 +5,8 @@
  * Soxta "N marta yechilgan" ijtimoiy-dalillarni QO'SHMADIK (ma'lumot yo'q — yolg'on bo'lardi).
  */
 
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, ClipboardCheck, ChevronRight, Search, Sparkles, Lock, Camera, Calculator } from 'lucide-react'
+import { Zap, ClipboardCheck, ChevronRight, Search, Sparkles, Lock } from 'lucide-react'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -17,14 +16,13 @@ import { goBack } from '../../shared/lib/navigation'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
 import { isEffectivePremium, isTestModePremium } from '../../../shared/test-access'
-import MilliySertifikatCalculatorModal from './components/MilliySertifikatCalculatorModal'
 
 type Diff = 'easy' | 'mid' | 'hard'
 type TKey = Parameters<ReturnType<typeof useT>>[0]
 
 interface ModeCard {
   id: string
-  iconBox: 'zap' | 'cap' | 'ai' | 'camera'
+  iconBox: 'zap' | 'cap' | 'ai'
   numText?: string
   danger?: boolean
   /** AI kunlik test — "YANGI" badge + binafsha (AI) aksent */
@@ -43,7 +41,6 @@ export default function TestlarPage() {
   const subjectId = useSubjectStore((s) => s.subjectId)
   const tt = useT(settings.language)
   const isPremium = isEffectivePremium({ tariff, premiumUntil: user?.premiumUntil })
-  const [showCalculator, setShowCalculator] = useState(false)
 
   const DIFF: Record<Diff, { label: string; color: string }> = {
     easy: { label: tt('diffEasy'), color: 'var(--p-success)' },
@@ -54,7 +51,6 @@ export default function TestlarPage() {
   // Rasmiy imtihon simulyatori — fan konfigidan (shared/subjects.ts examPresets).
   // YHQ: o'z 'mock' + 'exam' formatlari bor (quyida); qolgan fanlar: preset kartalari.
   const subjectBase = SUBJECT_BASES.find((s) => s.id === subjectId)
-  const hasMilliyPreset = (subjectBase?.examPresets as readonly string[] | undefined)?.includes('milliy-sertifikat') ?? false
   const examPresetCards: ModeCard[] = (subjectBase?.examPresets ?? []).flatMap((pid) => {
     const p = getExamPreset(pid, subjectId)
     if (!p) return []
@@ -69,9 +65,6 @@ export default function TestlarPage() {
   })
 
   const cards: ModeCard[] = [
-    // AI Suratdan yechish (barcha fanlar uchun)
-    { id: 'snap-solve', iconBox: 'camera' as const,
-      titleKey: 'snapSolveTitle' as const, meta: tt('snapSolveSubtitle') },
     // AI Kunlik Test (rustili) — har kuni 2 ta yangi variant (SSOT: shared/ai-daily-test.ts)
     ...(subjectId === 'rustili'
       ? [{ id: 'ai-daily', iconBox: 'ai' as const, aiCard: true,
@@ -95,7 +88,6 @@ export default function TestlarPage() {
     const locked = isTestModePremium(m.id) && !isPremium
     track('test_start', { mode: m.id })
     if (locked) { navigate('/premium'); return }
-    if (m.id === 'snap-solve') { navigate('/ai-tutor'); return }
     if (m.id === 'ai-daily') { navigate('/ai-test'); return }
     navigate('/test/1', { state: { mode: m.id, title: tt(m.titleKey) } })
   }
@@ -123,35 +115,6 @@ export default function TestlarPage() {
         </button>
       </div>
 
-      {/* Milliy sertifikat ball kalkulyatori */}
-      {hasMilliyPreset && (
-        <div className="mb-3">
-          <button
-            type="button"
-            onClick={() => setShowCalculator(true)}
-            className="group relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface cursor-pointer"
-          >
-            {/* Flat Icon — toza, fonsiz, boshqalar bilan bir xil neytral ikonka */}
-            <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
-              <Calculator size={24} strokeWidth={1.75} />
-            </div>
-
-            {/* Matn */}
-            <div className="flex-1 min-w-0 text-left">
-              <p className="text-[16px] font-semibold text-pfg leading-tight truncate">
-                {settings.language === 'ru' ? 'Калькулятор баллов' : 'Ball kalkulyatori'}
-              </p>
-              <p className="text-[11.5px] text-pmuted mt-0.5 truncate">
-                {settings.language === 'ru' ? 'Льготы DTM' : 'DTM imtiyozlari'}
-              </p>
-            </div>
-
-            {/* O'tish ko'rsatkichi */}
-            <ChevronRight size={18} strokeWidth={2} className="flex-shrink-0 text-psubtle group-hover:text-pfg transition-colors" />
-          </button>
-        </div>
-      )}
-
       <div className="flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:items-stretch">
         {cards.map((m) => {
           const d = m.diff ? DIFF[m.diff] : null
@@ -169,7 +132,6 @@ export default function TestlarPage() {
               <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
                 {m.iconBox === 'zap' && <Zap size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'cap' && <ClipboardCheck size={24} strokeWidth={1.75} />}
-                {m.iconBox === 'camera' && <Camera size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'ai' && <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
               </div>
 
@@ -194,16 +156,6 @@ export default function TestlarPage() {
           )
         })}
       </div>
-
-      {showCalculator && (
-        <MilliySertifikatCalculatorModal
-          onClose={() => setShowCalculator(false)}
-          onStartExam={() => {
-            setShowCalculator(false)
-            navigate('/test/1', { state: { mode: 'exam:milliy-sertifikat', title: tt('examPresetMilliy') } })
-          }}
-        />
-      )}
     </div>
   )
 }
