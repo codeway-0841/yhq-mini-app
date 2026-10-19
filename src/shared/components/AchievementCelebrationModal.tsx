@@ -11,7 +11,6 @@ import { config } from '../config'
 import Confetti from './Confetti'
 import { CoinIcon } from './CoinIcon'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
-import ModalMathGrid from './ModalMathGrid'
 import { cn } from '../lib/cn'
 
 export default function AchievementCelebrationModal() {
@@ -60,7 +59,6 @@ export default function AchievementCelebrationModal() {
   if (!currentBadge) return null
   if (typeof document === 'undefined') return null
 
-  const badgeColor = currentBadge.color || '#941B44'
   const totalCount = unlockedQueue.length + 1
 
   return (
@@ -80,8 +78,6 @@ export default function AchievementCelebrationModal() {
       <div
         className="relative w-full sm:max-w-[440px] mx-auto rounded-t-[32px] sm:rounded-t-[36px] rounded-b-none bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
       >
-        {/* Dynamic Ambient Glow + Subtle Grid */}
-        <ModalMathGrid glowColor={badgeColor} height={620} maskEnd="95%" />
 
         {/* ── TOP HEADER (Transparent so math grid / kataklar show seamlessly to the top) ── */}
         <div

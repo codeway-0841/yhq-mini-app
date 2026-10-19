@@ -11,9 +11,8 @@ import { playSound } from '../../shared/lib/sounds'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import { CoinIcon } from '../../shared/components/CoinIcon'
-import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
+import ModalShell from '../../shared/components/ModalShell'
+import { SpecCard, SpecRow, SpecList } from '../../shared/components/ui/spec'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
@@ -231,20 +230,14 @@ export default function ResultsModal({
   }, [disqualifiedByCheat, percent, total])
 
   return (
-    <DialogOverlay onClose={onFinish} labelId="results-title" swipeToDismiss>
+    <>
       {confettiCount > 0 && !hideVerdict && !disqualifiedByCheat && <Confetti count={confettiCount} />}
-      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[88vh] overflow-y-auto shadow-2xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
-        <ModalMathGrid glow={false} height={420} />
-        {/* Drag handle */}
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-
-        {/* Minimalist Centered Header */}
-        <ModalHeaderRow onClose={onFinish} label={tt('closeResults')}>
-          <h2 id="results-title" data-drag-handle className="text-[17px] font-bold text-pfg tracking-tight">
-            {tt('results')}
-          </h2>
-        </ModalHeaderRow>
-
+      <ModalShell
+        title={tt('results')}
+        onClose={onFinish}
+        labelId="results-title"
+        closeLabel={tt('closeResults')}
+      >
         {disqualifiedByCheat && (
           <div className="mb-3 bg-pcard rounded-2xl p-3.5 text-center shadow-2xs relative z-10 ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)]">
             <p className="text-sm font-semibold text-pdanger mb-1">
@@ -268,48 +261,29 @@ export default function ResultsModal({
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}
           passedLabel={tt('passed')} failedLabel={tt('failed')} />
 
-        {/* Authoritative mukofotlar (XP & Tangalar) */}
-        {(Boolean(earnedXp) || Boolean(earnedCoins)) ? (
-          <div className="mb-3.5 flex items-center justify-center gap-2.5 animate-scorePop relative z-10">
-            {Boolean(earnedXp) && (
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pcard text-pprimary font-bold text-xs shadow-2xs">
-                <span>+{earnedXp} XP</span>
-              </div>
-            )}
-            {Boolean(earnedCoins) && (
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-pcard text-pgold font-bold text-xs shadow-2xs">
-                {/* Tanga — GLOBAL CoinIcon SVG (emoji emas: platformaga qarab
-                    har xil chiziladi va brend vizuali emas) */}
-                <CoinIcon size={14} className="shrink-0" />
-                <span className="tabular-nums">+{earnedCoins}</span>
-              </div>
-            )}
-          </div>
-        ) : pending > 0 ? (
-          <div className="mb-3.5 flex items-center justify-center animate-scorePop relative z-10">
-            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pcard text-psubtle font-medium text-xs shadow-2xs">
-              <span>⏳ {useAppStore.getState().settings.language === 'ru' ? 'Награды будут начислены при подключении к сети' : 'Mukofotlar internet tiklangach hisoblanadi'}</span>
-            </div>
-          </div>
-        ) : null}
+        {/* Chek uslubidagi natija qatorlari (App Store "Transaction" tili) */}
+        <SpecCard className="mb-4">
+          <SpecList>
+            <SpecRow tone="green" icon={<Check />} label={tt('correct')} value={correct} />
+            <SpecRow tone="pink" icon={<X />} label={tt('wrong')} value={wrong} />
+            <SpecRow tone="neutral" icon={<Minus />} label={tt('unanswered')} value={unanswered} />
+            {earnedXp ? <SpecRow tone="primary" icon={<Sparkles />} label="XP" value={`+${earnedXp}`} /> : null}
+            {earnedCoins ? (
+              <SpecRow
+                tone="gold"
+                icon={<CoinIcon size={16} />}
+                label={isRu ? 'Монеты' : 'Tangalar'}
+                value={`+${earnedCoins}`}
+              />
+            ) : null}
+          </SpecList>
+        </SpecCard>
 
-        <div className="grid grid-cols-3 gap-2.5 mb-4 animate-scorePop relative z-10">
-          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
-            <Check size={16} strokeWidth={2.4} className="mx-auto text-pprimary" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{correct}</p>
-            <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('correct')}</p>
-          </div>
-          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
-            <X size={16} strokeWidth={2.4} className="mx-auto text-pdanger" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{wrong}</p>
-            <p className="mt-1 text-[11px] font-medium text-pmuted">{tt('wrong')}</p>
-          </div>
-          <div className="rounded-2xl bg-pcard p-3 text-center shadow-2xs transition-all duration-300">
-            <Minus size={16} strokeWidth={2.4} className="mx-auto text-psubtle" aria-hidden="true" />
-            <p className="mt-1.5 font-display text-[24px] font-bold tabular-nums leading-none text-pfg">{unanswered}</p>
-            <p className="mt-1 text-[11px] font-medium text-psubtle">{tt('unanswered')}</p>
-          </div>
-        </div>
+        {pending > 0 && !earnedXp && !earnedCoins ? (
+          <p className="relative z-10 mb-3.5 text-center text-[11.5px] font-medium text-psubtle">
+            ⏳ {isRu ? 'Награды будут начислены при подключении к сети' : 'Mukofotlar internet tiklangach hisoblanadi'}
+          </p>
+        ) : null}
 
         {/* Milliy sertifikat rasmiy baholash va DTM imtiyozi kartasi */}
         {isMilliySertifikat && dtmBenefit && (
@@ -553,7 +527,7 @@ export default function ResultsModal({
             onClose={() => setShowCertificate(false)}
           />
         )}
-      </div>
-    </DialogOverlay>
+      </ModalShell>
+    </>
   )
 }

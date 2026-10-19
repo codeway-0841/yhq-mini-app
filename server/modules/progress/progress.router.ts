@@ -26,6 +26,36 @@ const MistakesOverviewQuery = z.object({
   language: z.enum(['uz', 'ru']).default('uz'),
 })
 
+const LearningSummaryQuery = z.object({
+  subjectId: z.string().refine((id) => SUBJECT_IDS.includes(id), 'Unknown subject'),
+})
+
+router.get(
+  '/progress/learning-summary',
+  validate({ query: LearningSummaryQuery }),
+  wrap(async (req, res) => {
+    const userId = (req as { userId?: string }).userId
+    if (!userId || userId === '0') {
+      res.status(401).json({ error: 'authentication_required' })
+      return
+    }
+
+    const { subjectId } = req.query as z.infer<typeof LearningSummaryQuery>
+    const subject = resolveSubject(subjectId)
+    const aggregate = await progressRepository.getLearningSummary(userId, subject.id)
+    const mastered = Math.max(0, aggregate.answered - aggregate.unresolvedMistakes)
+
+    res.set('Cache-Control', 'private, no-store')
+    res.json({
+      subjectId: subject.id,
+      answered: aggregate.answered,
+      mastered,
+      unresolvedMistakes: aggregate.unresolvedMistakes,
+      dueNow: aggregate.dueNow,
+    })
+  }),
+)
+
 router.get(
   '/progress/mistakes/overview',
   wrap(async (req, res) => {

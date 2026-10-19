@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import { Camera, ImagePlus, Trash2, X, Pencil, Send, MessageSquare } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import { ImagePlus, Trash2, X, Send, MessageSquare } from 'lucide-react'
+import ModalShell from '../../../shared/components/ModalShell'
+import { SpecCard } from '../../../shared/components/ui/spec'
 import { Button } from '../../../shared/components/ui/button'
-import { Sheet, SheetBody, SheetDescription, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import { usePhoneInput } from '../../auth'
@@ -19,16 +17,13 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
 }) {
   const tt = useT(useAppStore((s) => s.settings.language))
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="photo-edit-title" swipeToDismiss>
-      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-5 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={300} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
-          <p id="photo-edit-title" data-drag-handle className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg select-none">
-            <Camera size={14} className="text-pprimary" />
-            {tt('photoEditTitle')}
-          </p>
-        </ModalHeaderRow>
+    <ModalShell
+      title={tt('photoEditTitle')}
+      onClose={onClose}
+      labelId="photo-edit-title"
+      closeLabel={tt('cancel')}
+      backdropClassName="bg-black/60"
+    >
         <div className="flex flex-col gap-2.5">
           <Button block loading={busy} onClick={onPick}>
             <ImagePlus size={16} />
@@ -45,8 +40,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
             {tt('cancel')}
           </Button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }
 
@@ -69,94 +63,96 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
   onTelegram: () => void
   onSms: (phone: string) => void
 }) {
-  const tt = useT(useAppStore((s) => s.settings.language))
+  const language = useAppStore((s) => s.settings.language)
+  const tt = useT(language)
   const phone = usePhoneInput()
   // Change rejimida avval tasdiqlash; add rejimida to'g'ridan-to'g'ri usul
   const [step, setStep] = useState<'confirm' | 'method' | 'sms'>(currentPhone ? 'confirm' : 'method')
   const isDirty = (step === 'sms' && phone.digits.length > 0) || busy
 
+  const title =
+    step === 'confirm'
+      ? tt('phoneChangeTitle')
+      : step === 'method'
+        ? tt('phoneMethodTitle')
+        : tt('viaSms')
+
+  const subtitle =
+    step === 'confirm'
+      ? tt('phoneChangeHint')
+      : tt('phoneMethodHint')
+
   return (
-    <Sheet
-      onClose={onClose}
+    <ModalShell
+      title={title}
+      subtitle={subtitle}
+      onClose={isDirty ? () => {} : onClose}
       backdropClassName="bg-black/60"
       closeOnBackdrop={!isDirty}
       canDismiss={() => !isDirty}
     >
-        <SheetHeader onClose={isDirty ? () => {} : onClose} closeLabel={tt('cancel')}>
-          <SheetTitle className="text-[19px]">
-            {step === 'confirm' ? tt('phoneChangeTitle') : step === 'method' ? tt('phoneMethodTitle') : tt('viaSms')}
-          </SheetTitle>
-          {step === 'method' && (
-            <SheetDescription className="mt-1.5 text-[13px] max-w-xs mx-auto leading-relaxed">
-              {tt('phoneMethodHint')}
-            </SheetDescription>
-          )}
-          {step === 'sms' && (
-            <SheetDescription className="mt-1 text-[13px] leading-relaxed max-w-xs mx-auto">
-              {tt('phoneMethodHint')}
-            </SheetDescription>
-          )}
-        </SheetHeader>
-
-        <SheetBody className="pb-7 pt-1">
-        {step === 'confirm' && currentPhone && (
-          <div className="relative z-10">
-            <div className="my-3 py-2 px-4 rounded-xl bg-pcard shadow-2xs w-fit mx-auto text-[16px] font-bold text-pprimary tracking-wide font-mono">
+      {step === 'confirm' && currentPhone && (
+        <div className="relative z-10 space-y-4">
+          <SpecCard className="p-4 text-center">
+            <span className="text-[12px] font-medium text-pmuted">
+              {language === 'ru' ? 'Текущий номер' : 'Joriy raqam'}
+            </span>
+            <p className="mt-1 font-mono text-[18px] font-bold tracking-wider text-pprimary">
               {formatPhoneDisplay(currentPhone)}
-            </div>
-            <p className="mt-1 mb-5 text-center text-[13px] text-pmuted max-w-xs mx-auto leading-relaxed">
-              {tt('phoneChangeHint')}
             </p>
-            <div className="flex gap-3">
-              <Button block variant="outline" onClick={onClose}>{tt('cancel')}</Button>
-              <Button block onClick={() => setStep('method')}>{tt('continueAction')}</Button>
-            </div>
+          </SpecCard>
+          <div className="flex gap-3">
+            <Button block variant="outline" onClick={onClose}>{tt('cancel')}</Button>
+            <Button block onClick={() => setStep('method')}>{tt('continueAction')}</Button>
           </div>
-        )}
+        </div>
+      )}
 
-        {step === 'method' && (
-          <div className="relative z-10">
-            <div className="flex flex-col gap-2.5">
-              <Button block size="lg" loading={busy} className="font-semibold shadow-xs" onClick={onTelegram}>
-                <Send size={16} />
-                {tt('viaTelegram')}
-              </Button>
-              <Button block size="lg" variant="outline" disabled={busy} className="font-semibold" onClick={() => setStep('sms')}>
-                <MessageSquare size={16} />
-                {tt('viaSms')}
-              </Button>
-            </div>
-          </div>
-        )}
+      {step === 'method' && (
+        <div className="relative z-10 flex flex-col gap-2.5">
+          <Button block size="lg" loading={busy} className="font-semibold shadow-xs" onClick={onTelegram}>
+            <Send size={16} />
+            {tt('viaTelegram')}
+          </Button>
+          <Button block size="lg" variant="outline" disabled={busy} className="font-semibold" onClick={() => setStep('sms')}>
+            <MessageSquare size={16} />
+            {tt('viaSms')}
+          </Button>
+          {currentPhone && (
+            <Button block variant="ghost" disabled={busy} onClick={() => setStep('confirm')}>
+              {tt('backWord')}
+            </Button>
+          )}
+        </div>
+      )}
 
-        {step === 'sms' && (
-          <div className="relative z-10">
-            <div className="mb-4 flex items-center gap-2 rounded-2xl bg-pcard px-4 focus-within:ring-2 focus-within:ring-pprimary shadow-xs">
-              <span className="text-pmuted font-semibold select-none">+998</span>
-              <input
-                value={phone.digits}
-                onChange={(e) => phone.setDigits(e.target.value)}
-                inputMode="numeric"
-                autoComplete="tel-national"
-                placeholder="90 123 45 67"
-                maxLength={11}
-                disabled={busy}
-                autoFocus
-                className="flex-1 min-w-0 bg-transparent outline-none py-3 text-base text-pfg placeholder:text-pmuted tracking-widest"
-              />
-            </div>
-            <div className="flex flex-col gap-2.5">
-              <Button block size="lg" loading={busy} disabled={!phone.isValid} className="font-bold shadow-xs" onClick={() => onSms(phone.value)}>
-                {tt('sendSmsCode')}
-              </Button>
-              <Button block variant="ghost" disabled={busy} onClick={() => setStep('method')}>
-                {tt('backWord')}
-              </Button>
-            </div>
+      {step === 'sms' && (
+        <div className="relative z-10 space-y-4">
+          <div className="flex items-center gap-2 rounded-2xl bg-pcard px-4 focus-within:ring-2 focus-within:ring-pprimary shadow-xs">
+            <span className="text-pmuted font-semibold select-none">+998</span>
+            <input
+              value={phone.digits}
+              onChange={(e) => phone.setDigits(e.target.value)}
+              inputMode="numeric"
+              autoComplete="tel-national"
+              placeholder="90 123 45 67"
+              maxLength={11}
+              disabled={busy}
+              autoFocus
+              className="flex-1 min-w-0 bg-transparent py-3.5 text-base text-pfg placeholder:text-pmuted tracking-widest outline-none"
+            />
           </div>
-        )}
-        </SheetBody>
-    </Sheet>
+          <div className="flex flex-col gap-2.5">
+            <Button block size="lg" loading={busy} disabled={!phone.isValid} className="font-bold shadow-xs" onClick={() => onSms(phone.value)}>
+              {tt('sendSmsCode')}
+            </Button>
+            <Button block variant="ghost" disabled={busy} onClick={() => setStep('method')}>
+              {tt('backWord')}
+            </Button>
+          </div>
+        </div>
+      )}
+    </ModalShell>
   )
 }
 
@@ -169,16 +165,13 @@ export function NameEditSheet({ current, onClose, onSave }: {
   const tt = useT(useAppStore((s) => s.settings.language))
   const [name, setName] = useState(current)
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="name-edit-title">
-      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-5 pb-8 shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={280} />
-        <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={tt('cancel')}>
-          <p id="name-edit-title" className="text-sm font-semibold flex items-center justify-center gap-2 text-pfg">
-            <Pencil size={14} className="text-pblue" />
-            {tt('nameEditTitle')}
-          </p>
-        </ModalHeaderRow>
+    <ModalShell
+      title={tt('nameEditTitle')}
+      onClose={onClose}
+      labelId="name-edit-title"
+      closeLabel={tt('cancel')}
+      backdropClassName="bg-black/60"
+    >
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -192,7 +185,6 @@ export function NameEditSheet({ current, onClose, onSave }: {
             {tt('saveBtn')}
           </Button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

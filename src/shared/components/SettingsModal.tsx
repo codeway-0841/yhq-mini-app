@@ -16,16 +16,15 @@ import { ACCENT_THEMES, getAccentTheme, resolveAccent, isAccentUnlocked } from '
 import { getShopItem } from '../../../shared/shop-items'
 import Toggle from './Toggle'
 import PickerSheet from './PickerSheet'
-import DialogOverlay from './DialogOverlay'
-import ModalMathGrid from './ModalMathGrid'
-import ModalHeaderRow from './ModalHeaderRow'
+import ModalShell from './ModalShell'
+import { SpecCard } from './ui/spec'
 import { Button } from './ui/button'
 import { cn } from '../lib/cn'
 
 type LucideIcon = typeof Zap
 type PickerKey = 'fontStyle' | 'language' | 'accent' | 'reminderTime' | null
 
-/** Qator: chapda flat neytral ikonka + label + o'ngda boshqaruv (ModeRow / Grid uslubi). */
+/** Qator — global chek qatori ritmi: 28px yumshoq chip + label + o'ngda boshqaruv. */
 function Row({ icon: Icon, iconColor, label, children }: {
   icon: LucideIcon
   iconColor?: string
@@ -33,14 +32,18 @@ function Row({ icon: Icon, iconColor, label, children }: {
   children: ReactNode
 }) {
   return (
-    <div className="flex items-center gap-3.5 py-3.5 border-b border-pline last:border-0">
-      <Icon
-        size={20}
-        strokeWidth={1.75}
-        className={cn('shrink-0', !iconColor && 'text-pmuted')}
-        style={iconColor ? { color: iconColor } : undefined}
-      />
-      <span className="flex-1 text-[14.5px] font-medium text-pfg">{label}</span>
+    <div className="flex items-center gap-3 px-4 py-3.5">
+      <span
+        aria-hidden="true"
+        className={cn(
+          'grid size-7 flex-none place-items-center rounded-full',
+          !iconColor && 'bg-[rgb(var(--p-fg-rgb)/0.06)] text-pmuted',
+        )}
+        style={iconColor ? { background: `${iconColor}22`, color: iconColor } : undefined}
+      >
+        <Icon size={16} strokeWidth={1.9} />
+      </span>
+      <span className="flex-1 text-[15px] leading-tight text-pfg">{label}</span>
       {children}
     </div>
   )
@@ -134,20 +137,21 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
   const valueBtn = 'flex items-center gap-1 text-[12px] text-pmuted active:text-pfg transition-colors'
 
   return (
-    <DialogOverlay onClose={onClose} labelId="settings-title" swipeToDismiss>
-      <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={400} />
-        <div className="pt-3 pb-2 relative z-10">
-          <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
-          <ModalHeaderRow onClose={onClose} label={tt('close')} className="pb-0">
-            <h2 id="settings-title" className="text-[19px] font-bold text-pfg tracking-tight">{tt('settingsTitle')}</h2>
-          </ModalHeaderRow>
-        </div>
-
-        {/* Kontent — scrollable */}
-        <div className="flex-1 overflow-y-auto px-5 py-2 space-y-3.5 relative z-10">
+    <>
+      <ModalShell
+        title={tt('settingsTitle')}
+        onClose={onClose}
+        labelId="settings-title"
+        closeLabel={tt('close')}
+        footer={
+          <Button block size="lg" onClick={save} className="rounded-xl font-bold shadow-xs">
+            {tt('saveBtn')}
+          </Button>
+        }
+      >
+        <div className="space-y-3.5 pt-1">
           {/* Card 1: Xatti-harakatlar */}
-          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+          <SpecCard>
             <Row icon={Zap} label={tt('noAnimation')}>
               <Toggle label={tt('noAnimation')} checked={!local.noAnimation} onChange={(enabled) => set('noAnimation', !enabled)} />
             </Row>
@@ -160,10 +164,10 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
             <Row icon={Smartphone} label={tt('shakeToClear')}>
               <Toggle label={tt('shakeToClear')} checked={local.shakeToClear !== false} onChange={(v) => set('shakeToClear', v)} />
             </Row>
-          </div>
+          </SpecCard>
 
           {/* Card 2: Ko'rinish va Til */}
-          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+          <SpecCard>
             {/* Shrift uslubi — picker */}
             <button className="w-full text-left" onClick={() => setPicker('fontStyle')} aria-label={`${tt('fontStyle')}: ${fontStyleLabel}`}>
               <Row icon={Type} label={tt('fontStyle')}>
@@ -200,10 +204,10 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                 </span>
               </Row>
             </button>
-          </div>
+          </SpecCard>
 
           {/* Card 3: Eslatmalar va Yordam */}
-          <div className="rounded-2xl bg-pcard px-4 shadow-2xs overflow-hidden">
+          <SpecCard>
             {/* Kunlik eslatma — switch */}
             <Row icon={Bell} label={tt('dailyReminder')}>
               <Toggle checked={local.dailyReminder !== false}
@@ -228,16 +232,9 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                 <ChevronRight size={14} className="text-pmuted" />
               </Row>
             </button>
-          </div>
+          </SpecCard>
         </div>
-
-        {/* Saqlash — doim pastda sticky */}
-        <div className="p-4 pt-2 pb-5 bg-psurface border-t border-pline relative z-10">
-          <Button block size="lg" onClick={save} className="rounded-xl font-bold shadow-xs">
-            {tt('saveBtn')}
-          </Button>
-        </div>
-      </div>
+      </ModalShell>
 
       {/* Picker sheet'lar */}
       {picker === 'fontStyle' && (
@@ -273,16 +270,15 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
       {/* Aksent temasi sheet'i — premium temalar 🔒 (nested overlay: Escape faqat shuni yopadi) */}
       {picker === 'accent' && (
-        <DialogOverlay onClose={() => setPicker(null)} zIndex={60} backdropClassName="bg-black/60" labelId="accent-title">
-          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet p-4 pb-8 max-h-[82vh] flex flex-col shadow-2xl overflow-hidden">
-            <ModalMathGrid glow={false} height={360} />
-            <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 flex-none relative z-10" />
-            <ModalHeaderRow onClose={() => setPicker(null)} label="Yopish">
-              <h2 id="accent-title" className="text-lg font-bold text-pfg flex-none">
-                {tt('accentThemeLabel')}
-              </h2>
-              <p className="text-xs text-pmuted flex-none">{tt('accentThemeDesc')}</p>
-            </ModalHeaderRow>
+        <ModalShell
+          title={tt('accentThemeLabel')}
+          subtitle={tt('accentThemeDesc')}
+          onClose={() => setPicker(null)}
+          labelId="accent-title"
+          closeLabel={tt('close')}
+          zIndex={60}
+          backdropClassName="bg-black/60"
+        >
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
               <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">
@@ -359,8 +355,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                 )
               })}
             </div>
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
 
       {picker === 'reminderTime' && (
@@ -382,6 +377,6 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
 
       {/* Tashqi ko'rinish modal */}
       {showAppearance && <AppearanceModal onClose={() => setShowAppearance(false)} />}
-    </DialogOverlay>
+    </>
   )
 }

@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react'
 import {
-  Upload,
   FileSpreadsheet,
   FileCode,
   FileText,
@@ -14,7 +13,7 @@ import {
   Lightbulb,
   type LucideIcon,
 } from 'lucide-react'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 import { api } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
@@ -24,8 +23,6 @@ import {
   parseSmartTextQuestions,
   type ParsedQuestion,
 } from '../lib/universalQuestionParser'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 
 interface BulkImportModalProps {
   subjectId: string
@@ -225,24 +222,20 @@ export default function BulkImportModal({
   })
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="bulk-import-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-3xl bg-pcard p-5 pt-4 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
-        <ModalMathGrid glowColor="#A855F7" height={280} />
-        <div
-          data-drag-handle
-          aria-hidden="true"
-          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
-        />
-        <ModalHeaderRow onClose={onClose} label="Yopish" className="border-b border-pline">
-          <h2 id="bulk-import-title" className="text-base font-semibold text-pfg flex items-center justify-center gap-2">
-            <Upload size={18} className="text-ppurple" />
-            Mukammal Savollar Importi
-          </h2>
-          <p className="text-xs text-pmuted flex items-center justify-center gap-1.5 mt-0.5">
-            <SubjectIcon size={13} strokeWidth={1.75} />
-            <span className="font-semibold text-pfg">{subjectName}</span> fani uchun
-          </p>
-        </ModalHeaderRow>
+    <>
+    <ModalShell
+      title="Mukammal Savollar Importi"
+      subtitle={
+        <span className="inline-flex items-center justify-center gap-1.5">
+          <SubjectIcon size={13} strokeWidth={1.75} />
+          <span className="font-semibold text-pfg">{subjectName}</span> fani uchun
+        </span>
+      }
+      onClose={onClose}
+      labelId="bulk-import-title"
+      closeLabel="Yopish"
+      backdropClassName="bg-black/80 backdrop-blur-md"
+    >
 
         {/* Download Template Bar */}
         <div className="flex items-center justify-between p-2.5 my-2.5 bg-psurface rounded-2xl text-xs shadow-xs">
@@ -540,15 +533,18 @@ export default function BulkImportModal({
             )}
           </button>
         </div>
-      </div>
+    </ModalShell>
 
       {/* In-Modal Single Question Edit Popup (nested overlay: Escape faqat shuni yopadi) */}
       {editingItem && (
-        <DialogOverlay onClose={() => setEditingItem(null)} position="center" zIndex={60} labelId="bulk-edit-title" backdropClassName="bg-black/85 backdrop-blur-md">
-          <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 pt-4 space-y-3 shadow-2xl relative">
-            <ModalHeaderRow onClose={() => setEditingItem(null)} label="Yopish">
-              <h3 id="bulk-edit-title" className="text-sm font-semibold text-pfg">Savolni tahrirlash</h3>
-            </ModalHeaderRow>
+        <ModalShell
+          title="Savolni tahrirlash"
+          onClose={() => setEditingItem(null)}
+          labelId="bulk-edit-title"
+          closeLabel="Yopish"
+          zIndex={60}
+          backdropClassName="bg-black/85 backdrop-blur-md"
+        >
 
             <div>
               <label className="text-[11px] text-pmuted font-semibold block mb-1">Savol matni</label>
@@ -608,9 +604,8 @@ export default function BulkImportModal({
             >
               Saqlash
             </button>
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
-    </DialogOverlay>
+    </>
   )
 }

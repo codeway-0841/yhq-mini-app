@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react'
 import { Check } from 'lucide-react'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
-import DialogOverlay from './DialogOverlay'
-import ModalMathGrid from './ModalMathGrid'
-import ModalHeaderRow from './ModalHeaderRow'
+import ModalShell from './ModalShell'
 import { cn } from '../lib/cn'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../lib/sounds'
@@ -58,33 +56,16 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="appearance-modal-title" swipeToDismiss zIndex={65} backdropClassName="bg-black/60">
-      <div
-        className={cn(
-          'relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface text-pfg',
-          'max-h-[88vh] flex flex-col shadow-2xl overflow-hidden pb-8 select-none'
-        )}
-      >
-        <ModalMathGrid glow={false} height={420} />
-
-        {/* Top Drag Handle */}
-        <div
-          data-drag-handle
-          className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-2.5 mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
-        />
-
-        {/* Header Bar */}
-        <ModalHeaderRow onClose={onClose} label={tt('close')}>
-          <h2
-            id="appearance-modal-title"
-            className="text-lg font-bold text-pfg tracking-tight"
-          >
-            {tt('appearanceTitle')}
-          </h2>
-        </ModalHeaderRow>
-
-        {/* 3-Pill Segmented Control: Theme | Charts | Icons */}
-        <div className="relative z-10 mx-5 mb-5 p-1 rounded-full bg-pcard flex items-center shadow-2xs">
+    <ModalShell
+      title={tt('appearanceTitle')}
+      onClose={onClose}
+      labelId="appearance-modal-title"
+      closeLabel={tt('close')}
+      zIndex={65}
+      backdropClassName="bg-black/60"
+      headerExtra={
+        /* 3-Pill Segmented Control: Theme | Charts | Icons */
+        <div className="relative z-10 mx-5 mb-4 mt-1 p-1 rounded-full bg-pcard flex items-center shadow-2xs">
           {(
             [
               { key: 'theme', label: tt('appearanceTabTheme') },
@@ -113,9 +94,10 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
             )
           })}
         </div>
-
-        {/* Scrollable Tab Content */}
-        <div className="relative z-10 flex-1 overflow-y-auto px-5 pb-2">
+      }
+    >
+        {/* Tab kontenti */}
+        <div className="relative z-10">
           {/* ══════════════ TAB 1: THEME ══════════════ */}
           {activeTab === 'theme' && (
             <div>
@@ -460,7 +442,6 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
             </div>
           )}
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

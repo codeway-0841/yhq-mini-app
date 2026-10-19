@@ -1,5 +1,4 @@
 import { ShieldAlert, AlertTriangle, AlertOctagon } from 'lucide-react'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import { useT } from '../../../shared/i18n'
 import type { Lang } from '../../../shared/i18n'
 
@@ -25,7 +24,6 @@ export default function AntiCheatModal({
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-md animate-in slide-in-from-bottom duration-200"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
       <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-center shadow-2xl relative overflow-hidden">
-        <ModalMathGrid glow={false} height={280} />
         <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-4 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">

@@ -12,9 +12,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Loader2 } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
-import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
+import ModalShell from '../../shared/components/ModalShell'
 import Confetti from '../../shared/components/Confetti'
 import { Button } from '../../shared/components/ui/button'
 import { api, ApiError } from '../../shared/api'
@@ -165,17 +163,15 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
   const busy = phase === 'requesting' || phase === 'spinning'
 
   return (
-    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss zIndex={60} labelId="spin-title">
+    <>
       {celebrate && <Confetti count={50} />}
-      <div className="relative w-full max-w-lg mx-auto overflow-hidden rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl">
-        <ModalMathGrid glow={false} height={360} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-
-        {/* Header */}
-        <ModalHeaderRow onClose={onClose} label={tt('spinClose')}>
-          <h2 id="spin-title" className="font-display text-[17px] font-bold tracking-tight text-pfg">{tt('spinTitle')}</h2>
-        </ModalHeaderRow>
-
+      <ModalShell
+        title={tt('spinTitle')}
+        onClose={onClose}
+        labelId="spin-title"
+        closeLabel={tt('spinClose')}
+        zIndex={60}
+      >
         {/* ── G'ildirak Sahnasi ── */}
         <div className="relative mx-auto my-2 flex size-[280px] items-center justify-center">
           {/* 3D Needled Pointer (Yuqorida, ko'rsatkich) */}
@@ -386,7 +382,7 @@ export default function SpinModal({ onClose }: { onClose: () => void }) {
             </Button>
           )}
         </div>
-      </div>
-    </DialogOverlay>
+      </ModalShell>
+    </>
   )
 }

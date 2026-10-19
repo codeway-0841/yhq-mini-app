@@ -16,8 +16,7 @@ import { type SubjectId } from '../../../../shared/subjects'
 import { SUBJECTS } from '../../../shared/config/subjects'
 import { haptics } from '../../../platform/haptics'
 import BulkImportModal from './BulkImportModal'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 import { t } from '../../../shared/i18n'
 
 interface AdminQuestionsTabProps {
@@ -354,15 +353,13 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
 
       {/* Delete Confirmation Modal */}
       {deleteConfirm && (
-        <DialogOverlay onClose={() => setConfirm(null)} backdropClassName="bg-black/60 backdrop-blur-sm" labelId="delete-question-title">
-          <div
-            className="relative w-full max-w-lg mx-auto bg-pcard rounded-t-sheet p-5 pb-8"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2" />
-            <ModalHeaderRow onClose={() => setConfirm(null)} label={t(lang, 'close')}>
-              <p id="delete-question-title" className="text-[17px] font-semibold text-pfg">#{deleteConfirm.id} savolni o'chirish</p>
-            </ModalHeaderRow>
+        <ModalShell
+          title={`#${deleteConfirm.id} savolni o'chirish`}
+          onClose={() => setConfirm(null)}
+          labelId="delete-question-title"
+          closeLabel={t(lang, 'close')}
+          backdropClassName="bg-black/60 backdrop-blur-sm"
+        >
             <div className="flex flex-col items-center text-center">
               <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.15)] border border-[rgb(var(--p-danger-rgb)/0.4)] flex items-center justify-center mb-3">
                 <AlertTriangle size={28} className="text-pdanger" />
@@ -392,8 +389,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 Bekor qilish
               </button>
             </div>
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
 
       {/* Bulk Import Modal */}
@@ -528,17 +524,14 @@ function QuestionForm({
   }
 
   return (
-    <DialogOverlay onClose={onCancel} labelId="question-editor-title">
-      <div
-        className="relative w-full max-w-2xl mx-auto bg-pcard rounded-t-sheet p-4 pb-8 max-h-[90vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
-        <ModalHeaderRow onClose={onCancel} label={t(lang, 'close')}>
-          <h2 id="question-editor-title" className="font-semibold text-pfg">{initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}</h2>
-          <span className="text-[11px] text-ppurple font-semibold">Fan: {subjectName}</span>
-        </ModalHeaderRow>
-
+    <ModalShell
+      title={initial ? `Tahrirlash #${initial.id}` : 'Yangi savol'}
+      subtitle={`Fan: ${subjectName}`}
+      onClose={onCancel}
+      labelId="question-editor-title"
+      closeLabel={t(lang, 'close')}
+      className="max-w-2xl"
+    >
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label className="text-[11px] font-semibold text-pmuted uppercase">Savol matni (UZ)</label>
@@ -685,7 +678,6 @@ function QuestionForm({
             {busy ? <Loader2 size={16} className="motion-safe:animate-spin inline" /> : 'Saqlash'}
           </button>
         </form>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

@@ -12,9 +12,8 @@ import { newId } from '../../shared/lib/outbox'
 import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
-import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
+import ModalShell from '../../shared/components/ModalShell'
+import { SpecCard, SpecRow } from '../../shared/components/ui/spec'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
   item: MerchItem
@@ -61,29 +60,30 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
   }
 
   return (
-    <DialogOverlay onClose={busy ? () => {} : onClose} zIndex={60} position="bottom" swipeToDismiss labelId="merch-order-title" backdropClassName="bg-black/60">
-      <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={320} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-
-        <div className="relative z-10">
-          {/* Minimalist Centered Header */}
-          <ModalHeaderRow onClose={busy ? () => {} : onClose} label={tt('close')}>
-            <h2 id="merch-order-title" className="text-[17px] font-bold text-pfg tracking-tight">
-              {tt('merchFormTitle')}
-            </h2>
-          </ModalHeaderRow>
-
-          {/* Buyum sarlavhasi (Oq taktil karta) */}
-          <div className="mt-3.5 flex items-center gap-3 rounded-2xl bg-pcard p-3.5 shadow-2xs">
-            {(() => { const Icon = getMerchIcon(item.id); return <Icon size={26} strokeWidth={1.75} className="shrink-0 text-pprimary" /> })()}
-            <div className="flex-1 min-w-0">
-              <p className="text-[13.5px] font-semibold text-pfg truncate">{item.label[lang]}</p>
-              <p className="text-[11.5px] text-pgold font-semibold flex items-center gap-1 mt-0.5">
-                <CoinIcon size={13} /> {item.price.toLocaleString('ru-RU')}
-              </p>
-            </div>
-          </div>
+    <ModalShell
+      title={tt('merchFormTitle')}
+      onClose={busy ? () => {} : onClose}
+      labelId="merch-order-title"
+      closeLabel={tt('close')}
+      zIndex={60}
+      canDismiss={() => !busy}
+      backdropClassName="bg-black/60"
+    >
+          {/* Buyum sarlavhasi — chek qatori */}
+          <SpecCard className="mt-3.5">
+            <SpecRow
+              icon={(() => { const Icon = getMerchIcon(item.id); return <Icon strokeWidth={1.9} /> })()}
+              tone="primary"
+              label={item.label[lang]}
+              value={
+                <span className="inline-flex items-center gap-1">
+                  <CoinIcon size={14} />
+                  {item.price.toLocaleString('ru-RU')}
+                </span>
+              }
+              valueClassName="font-semibold text-pgold"
+            />
+          </SpecCard>
 
           {/* Forma (Oq taktil inputlar) */}
           <div className="mt-4 space-y-2.5">
@@ -130,8 +130,6 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
               {tt('merchFormSubmit')}
             </button>
           </div>
-        </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

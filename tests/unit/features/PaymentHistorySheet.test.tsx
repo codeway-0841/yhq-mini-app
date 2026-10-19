@@ -61,8 +61,9 @@ describe('PaymentHistorySheet', () => {
     expect(screen.getByText('79 000 so\'m')).toBeInTheDocument()
     // Oylik model (2026-08-29): month va year ikkalasi ham "Oylik" nomli
     expect(screen.getAllByText('Oylik')).toHaveLength(2)
-    expect(screen.getByText('· Click')).toBeInTheDocument()
-    expect(screen.getByText('· Payme')).toBeInTheDocument()
+    // Provayder — qator izohida ("Click · 20-avg")
+    expect(screen.getByText(/^Click ·/)).toBeInTheDocument()
+    expect(screen.getByText(/^Payme ·/)).toBeInTheDocument()
     expect(screen.getByText("To'langan")).toBeInTheDocument()
     expect(screen.getByText('Kutilmoqda')).toBeInTheDocument()
   })

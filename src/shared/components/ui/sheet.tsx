@@ -1,6 +1,5 @@
 import * as React from 'react'
 import DialogOverlay, { type CloseReason } from '../DialogOverlay'
-import ModalMathGrid from '../ModalMathGrid'
 import ModalCloseButton from '../ModalCloseButton'
 import ModalHeaderRow from '../ModalHeaderRow'
 import { cn } from '@/shared/lib/cn'
@@ -80,9 +79,6 @@ function Sheet({
           className,
         )}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
-          <ModalMathGrid glow={false} height={320} />
-        </div>
         {/* Tortish dastagi — sheet ekanini bildiradi (affordance) */}
         <div
           data-drag-handle

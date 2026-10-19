@@ -313,6 +313,23 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         className="-mx-4 mb-4"
       />
 
+      {subjectId === 'rustili' && (
+        <button
+          type="button"
+          onClick={() => navigate('/darslik/rus-tili')}
+          className="mb-3 flex w-full items-center gap-3 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.08)] p-3.5 text-left shadow-xs transition-transform active:scale-[0.99]"
+        >
+          <span aria-hidden="true" className="grid size-10 flex-none place-items-center rounded-xl bg-pprimary text-ponprimary">
+            <BookOpen size={18} strokeWidth={2} />
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block truncate text-[14.5px] font-semibold text-pfg">{tt('rusDarslikTitle')}</span>
+            <span className="mt-0.5 block truncate text-[11.5px] text-pmuted">{tt('rusDarslikSubtitle')}</span>
+          </span>
+          <ChevronRight size={16} strokeWidth={1.75} className="flex-none text-psubtle" aria-hidden="true" />
+        </button>
+      )}
+
       {loading && rows.length === 0 && (
         <div className="grid place-items-center py-16">
           <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />

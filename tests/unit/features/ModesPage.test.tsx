@@ -120,6 +120,29 @@ describe('ModesPage', () => {
     expect(mockNavigate).toHaveBeenCalledWith('/adaptive')
   })
 
+  it('KIVVI Drive faqat YHQ fanida ko‘rinadi va alohida simulyatorga olib boradi', () => {
+    const view = render(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: 'Haydash simulyatori' }))
+    expect(mockNavigate).toHaveBeenCalledWith('/drive')
+
+    useSubjectStore.getState().setSubject('fizika')
+    view.rerender(
+      <ToastProvider>
+        <MemoryRouter>
+          <ModesPage />
+        </MemoryRouter>
+      </ToastProvider>
+    )
+    expect(screen.queryByRole('button', { name: 'Haydash simulyatori' })).toBeNull()
+  })
+
   it('aniq fanlarda (fizika, matematika) Tezkor test kartasi ko\'rinmaydi', () => {
     useSubjectStore.setState({
       subject: {

@@ -15,7 +15,8 @@ describe('StatInfoSheet typography', () => {
 
     const title = screen.getByRole('heading', { name: "XP qanday to'planadi?" })
     expect(title).not.toHaveAttribute('data-drag-handle')
-    expect(title.className).toContain('text-[19px]')
+    // 2026-10: barcha modal sarlavhalari yagona shkala — 17px (ModalShell/SheetTitle)
+    expect(title.className).toContain('text-[17px]')
     expect(screen.getAllByRole('listitem')).toHaveLength(2)
     expect(screen.getByText('XP darajani oshiradi.')).toBeInTheDocument()
 

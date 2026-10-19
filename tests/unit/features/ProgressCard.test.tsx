@@ -26,7 +26,10 @@ beforeEach(() => {
 })
 
 const renderCard = () =>
-  render(<ProgressCard totalWrong={0} totalAnswered={5} streak={2} totalPool={100} lang="uz" />)
+  render(<ProgressCard summary={{
+    subjectId: 'yhq', totalQuestions: 100, answered: 7, mastered: 5,
+    unresolvedMistakes: 2, dueNow: 0, readinessPercent: 5,
+  }} streak={2} lang="uz" />)
 
 describe('ProgressCard — liga yorlig\'i', () => {
   it('REGRESSIYA: kam progress bilan ham store\'dagi haqiqiy league ko\'rsatiladi (guess emas)', () => {

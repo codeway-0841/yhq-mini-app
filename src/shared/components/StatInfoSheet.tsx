@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
-import DialogOverlay from './DialogOverlay'
-import ModalMathGrid from './ModalMathGrid'
-import ModalHeaderRow from './ModalHeaderRow'
+import ModalShell from './ModalShell'
+import { SpecCard } from './ui/spec'
 import { Button } from './ui/button'
 import { useT } from '../i18n'
 import { useAppStore } from '../store/useAppStore'
@@ -43,18 +42,15 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
   const sections = parseInfoBody(body)
 
   return (
-    <DialogOverlay onClose={onClose} labelId="stat-info-title" zIndex={60} swipeToDismiss backdropClassName="bg-black/60">
-      <div className="relative mx-auto w-full max-w-lg overflow-hidden rounded-t-sheet bg-psurface px-4 pt-3 pb-[calc(1.5rem+var(--safe-bottom,0px))] shadow-2xl">
-        <ModalMathGrid glow={false} height={340} />
-        <div data-drag-handle aria-hidden="true" className="relative z-10 mx-auto mb-2 h-1 w-10 cursor-grab touch-none rounded-full bg-gray-300 active:cursor-grabbing dark:bg-white/20" />
-
-        <ModalHeaderRow onClose={onClose} label={tt('close') || 'Yopish'} className="px-3 pb-4">
-          <h2 id="stat-info-title" className="text-balance font-display text-[19px] font-bold leading-snug tracking-tight text-pfg">
-            {title}
-          </h2>
-        </ModalHeaderRow>
-
-        <div className="relative z-10 rounded-2xl border border-pline bg-pcard p-5 shadow-2xs">
+    <ModalShell
+      title={title}
+      onClose={onClose}
+      labelId="stat-info-title"
+      closeLabel={tt('close') || 'Yopish'}
+      zIndex={60}
+      backdropClassName="bg-black/60"
+    >
+        <SpecCard className="p-5">
           {icon && (
             <div className="mb-4 flex size-10 items-center justify-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.14)] text-pprimary" aria-hidden="true">
               {icon}
@@ -83,14 +79,13 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
               {extra}
             </div>
           )}
-        </div>
+        </SpecCard>
 
         <div className="relative z-10 mt-4">
           <Button block onClick={onClose}>
             {tt('gotItBtn')}
           </Button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

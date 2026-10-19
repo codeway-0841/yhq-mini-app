@@ -4,8 +4,7 @@ import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminUserItem } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 
 export default function AdminUsersTab() {
   const [users, setUsers] = useState<AdminUserItem[]>([])
@@ -219,22 +218,19 @@ export default function AdminUsersTab() {
 
       {/* Grant Modal */}
       {selectedUser && (
-        <DialogOverlay onClose={() => setSelectedUser(null)} position="center" labelId="grant-premium-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 shadow-2xl overflow-hidden">
-            <div
-              data-drag-handle
-              aria-hidden="true"
-              className="mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
-            />
-            <ModalHeaderRow onClose={() => setSelectedUser(null)} label="Yopish">
-              <h3 id="grant-premium-title" className="text-base font-semibold text-pfg mb-1 flex items-center justify-center gap-2">
-                <PremiumIcon size={18} className="text-ppurple" />
-                Premium berish
-              </h3>
-              <p className="text-xs text-pmuted mb-4 truncate">
-                Foydalanuvchi: <b className="text-pfg">{selectedUser.firstName}</b> ({selectedUser.id})
-              </p>
-            </ModalHeaderRow>
+        <ModalShell
+          title={
+            <span className="inline-flex items-center justify-center gap-2">
+              <PremiumIcon size={18} className="text-ppurple" />
+              Premium berish
+            </span>
+          }
+          subtitle={`Foydalanuvchi: ${selectedUser.firstName} (${selectedUser.id})`}
+          onClose={() => setSelectedUser(null)}
+          labelId="grant-premium-title"
+          closeLabel="Yopish"
+          backdropClassName="bg-black/80 backdrop-blur-md"
+        >
 
             {grantBusy ? (
               <div className="py-8 text-center text-pmuted">
@@ -309,8 +305,7 @@ export default function AdminUsersTab() {
                 </button>
               </div>
             )}
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
 
       {/* Toast */}

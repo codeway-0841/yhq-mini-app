@@ -19,9 +19,7 @@ import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
-import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
+import ModalShell from '../../shared/components/ModalShell'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -236,18 +234,12 @@ export default function StreakPage() {
 
       {/* Qanday ishlaydi? — Alohida zamonaviy BottomSheet */}
       {showInfo && (
-        <DialogOverlay onClose={() => setShowInfo(false)} labelId="streak-info-title" swipeToDismiss>
-          <div className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-            <ModalMathGrid glow={false} height={360} />
-            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-
-            {/* Minimalist Centered Header */}
-            <ModalHeaderRow onClose={() => setShowInfo(false)} label={tt('close')}>
-              <h2 id="streak-info-title" className="text-[17px] font-bold text-pfg tracking-tight">
-                {tt('howItWorks')}
-              </h2>
-            </ModalHeaderRow>
-
+        <ModalShell
+          title={tt('howItWorks')}
+          onClose={() => setShowInfo(false)}
+          labelId="streak-info-title"
+          closeLabel={tt('close')}
+        >
             <div className="rounded-2xl bg-pcard p-4 shadow-2xs relative z-10 space-y-3 mb-4">
               <p className="text-xs text-psubtle leading-relaxed">
                 {tt('intizomDesc')}
@@ -280,8 +272,7 @@ export default function StreakPage() {
             >
               {tt('gotItBtn')}
             </button>
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
     </div>
   )

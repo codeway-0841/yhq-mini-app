@@ -4,8 +4,7 @@ import { PremiumIcon } from '../../../shared/components/PremiumIcon'
 import { api, type AdminPromoCode } from '../../../shared/api'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 
 export default function AdminPromoTab() {
   const [codes, setCodes] = useState<AdminPromoCode[]>([])
@@ -275,19 +274,18 @@ export default function AdminPromoTab() {
 
       {/* Create Modal */}
       {creating && (
-        <DialogOverlay onClose={() => setCreating(false)} position="center" labelId="promo-create-title" className="animate-premiumIn" backdropClassName="bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 shadow-2xl overflow-hidden">
-            <div
-              data-drag-handle
-              aria-hidden="true"
-              className="mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
-            />
-            <ModalHeaderRow onClose={() => setCreating(false)} label="Yopish">
-              <h3 id="promo-create-title" className="text-base font-semibold text-pfg mb-4 flex items-center justify-center gap-2">
-                <Ticket size={18} className="text-ppurple" />
-                Yangi promokod yaratish
-              </h3>
-            </ModalHeaderRow>
+        <ModalShell
+          title={
+            <span className="inline-flex items-center justify-center gap-2">
+              <Ticket size={18} className="text-ppurple" />
+              Yangi promokod yaratish
+            </span>
+          }
+          onClose={() => setCreating(false)}
+          labelId="promo-create-title"
+          closeLabel="Yopish"
+          backdropClassName="bg-black/80 backdrop-blur-md"
+        >
 
             <form onSubmit={handleCreate} className="space-y-4">
               {/* Promokod turi */}
@@ -480,8 +478,7 @@ export default function AdminPromoTab() {
                 {formBusy ? <Loader2 size={16} className="motion-safe:animate-spin" /> : "Promokod yaratish"}
               </button>
             </form>
-          </div>
-        </DialogOverlay>
+        </ModalShell>
       )}
 
       {/* Toast Notification */}

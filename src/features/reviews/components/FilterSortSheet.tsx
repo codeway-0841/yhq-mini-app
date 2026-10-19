@@ -2,9 +2,7 @@ import { Check } from 'lucide-react'
 import { SUBJECTS } from '@/shared/config/subjects'
 import { haptics } from '@/platform/haptics'
 import { useAppStore } from '@/shared/store/useAppStore'
-import DialogOverlay from '@/shared/components/DialogOverlay'
-import ModalMathGrid from '@/shared/components/ModalMathGrid'
-import ModalHeaderRow from '@/shared/components/ModalHeaderRow'
+import ModalShell from '@/shared/components/ModalShell'
 
 export type TimeRange = '7D' | '30D' | '90D' | '1Y'
 export type SortOrder = 'newest' | 'highest' | 'helpful'
@@ -52,42 +50,22 @@ export default function FilterSortSheet({
   }
 
   return (
-    <DialogOverlay
+    <ModalShell
+      title={lang === 'ru' ? 'Фильтр и сортировка' : 'Filtr va saralash'}
       onClose={onClose}
       labelId="filter-sheet-title"
-      swipeToDismiss
+      closeLabel={lang === 'ru' ? 'Закрыть' : 'Yopish'}
       backdropClassName="bg-black/60"
-    >
-      <div
-        className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden max-h-[88vh] overflow-y-auto no-scrollbar"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ModalMathGrid glow={false} height={380} />
-
-        {/* Sensorda surish uchun tepa drag handle */}
-        <div
-          data-drag-handle
-          className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
-        />
-
-        {/* Global modal header: X tugmasi chapda, sarlavha o'rtada, o'ngda tozalash (reset) */}
-        <ModalHeaderRow
-          onClose={onClose}
-          label={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-          right={
-            <button
-              type="button"
-              onClick={handleReset}
-              className="text-xs font-semibold text-pprimary hover:opacity-80 active:scale-95 transition-all cursor-pointer px-2 py-1 select-none"
-            >
-              {lang === 'ru' ? 'Сброс' : 'Tozalash'}
-            </button>
-          }
+      headerRight={
+        <button
+          type="button"
+          onClick={handleReset}
+          className="relative left-auto top-auto shrink-0 px-2 py-1 text-xs font-semibold text-pprimary hover:opacity-80 active:scale-95 transition-all cursor-pointer select-none"
         >
-          <h2 id="filter-sheet-title" data-drag-handle className="text-lg font-bold text-pfg select-none tracking-tight">
-            {lang === 'ru' ? 'Фильтр и сортировка' : 'Filtr va saralash'}
-          </h2>
-        </ModalHeaderRow>
+          {lang === 'ru' ? 'Сброс' : 'Tozalash'}
+        </button>
+      }
+    >
 
         {/* 1. Vaqt oralig'i */}
         <div className="mb-4 relative z-10">
@@ -204,11 +182,10 @@ export default function FilterSortSheet({
             haptics.impact('medium')
             onClose()
           }}
-          className="w-full py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm active:scale-[0.98] transition-all shadow-md shadow-blue-500/20 relative z-10 cursor-pointer"
+          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary hover:brightness-[1.06] font-bold text-sm active:scale-[0.98] transition-all shadow-xs relative z-10 cursor-pointer"
         >
           {lang === 'ru' ? 'Применить фильтр' : 'Filtrni qo‘llash'}
         </button>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

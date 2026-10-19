@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import QRCode from 'qrcode'
 import { QrCode } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import ModalShell from '../../../shared/components/ModalShell'
 import { useT } from '../../../shared/i18n'
 import { useAppStore } from '../../../shared/store/useAppStore'
 
@@ -29,26 +27,19 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
   const steps = [tt('authQrStep1'), tt('authQrStep2'), tt('authQrStep3')]
 
   return (
-    <DialogOverlay onClose={onClose} labelId="tg-qr-title" position="center">
-      <div className="app-modal relative max-h-[calc(100dvh-2rem)] w-full max-w-[400px] overflow-y-auto p-5 pt-4 motion-safe:animate-premiumIn sm:p-6 sm:pt-5 overflow-hidden">
-        <ModalMathGrid glow={false} height={280} />
-        <div
-          data-drag-handle
-          aria-hidden="true"
-          className="relative z-10 mx-auto mb-3 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
-        />
-        <ModalHeaderRow onClose={onClose} label={tt('close')}>
-          <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-psurface">
-            <QrCode size={26} strokeWidth={1.75} className="text-pmuted" />
-          </div>
-          <h2 id="tg-qr-title" className="text-[19px] font-semibold text-pfg mt-3">
-            {tt('authQrTitle')}
-          </h2>
-          <p className="text-[13px] text-pmuted mt-1.5 leading-relaxed">
-            {tt('authQrDesc')}
-          </p>
-        </ModalHeaderRow>
-
+    <ModalShell
+      title={
+        <span className="inline-flex items-center justify-center gap-2">
+          <QrCode size={16} className="text-pmuted" />
+          {tt('authQrTitle')}
+        </span>
+      }
+      subtitle={tt('authQrDesc')}
+      onClose={onClose}
+      labelId="tg-qr-title"
+      closeLabel={tt('close')}
+      className="sm:max-w-[400px]"
+    >
         <div className="relative z-10">
 
         <div className="mt-5 mx-auto w-fit bg-white rounded-2xl p-3 shadow-[0_8px_30px_rgb(0_0_0/0.25)]">
@@ -87,7 +78,6 @@ export default function TelegramQrSheet({ url, onClose }: { url: string; onClose
           <span className="text-[12px]">{tt('authQrWaiting')}</span>
         </div>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

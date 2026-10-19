@@ -4,9 +4,7 @@ import { shareUrl } from '../../../platform/telegram'
 import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import ModalShell from '../../../shared/components/ModalShell'
 
 interface CustomRoomModalProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -73,25 +71,20 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="center" labelId="custom-room-title" className="animate-premiumIn" backdropClassName="bg-black/70 backdrop-blur-sm">
-      <div className="w-full max-w-sm rounded-3xl bg-pcard p-5 pt-4 shadow-2xl relative overflow-hidden">
-        <ModalMathGrid glow={false} height={260} />
-        <div
-          data-drag-handle
-          aria-hidden="true"
-          className="relative z-10 mx-auto mb-2 h-1 w-10 rounded-full bg-gray-300 dark:bg-white/20 cursor-grab active:cursor-grabbing touch-none select-none"
-        />
+    <ModalShell
+      title={
+        <span className="inline-flex items-center justify-center gap-2">
+          <Swords size={16} className="text-ppurple" />
+          {tt('customRoomTitle')}
+        </span>
+      }
+      subtitle={tt('customRoomDesc')}
+      onClose={onClose}
+      labelId="custom-room-title"
+      closeLabel={tt('close')}
+      backdropClassName="bg-black/70 backdrop-blur-sm"
+    >
         <div className="relative z-10 space-y-4">
-        {/* Header */}
-        <ModalHeaderRow onClose={onClose} label={tt('close')}>
-          <div className="mx-auto mb-2 flex size-10 items-center justify-center rounded-2xl bg-[rgb(var(--p-purple-rgb)/0.15)] text-ppurple">
-            <Swords size={18} />
-          </div>
-          <h2 id="custom-room-title" className="text-sm font-black text-pfg">{tt('customRoomTitle')}</h2>
-          <p className="text-[10px] text-pmuted">{tt('customRoomDesc')}</p>
-        </ModalHeaderRow>
-
-        {/* Tab switcher */}
         <div className="grid grid-cols-2 gap-1.5 p-1 rounded-2xl bg-pcard shadow-xs">
           <button
             type="button"
@@ -193,7 +186,6 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
           </div>
         )}
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

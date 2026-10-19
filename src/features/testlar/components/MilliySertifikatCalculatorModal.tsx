@@ -2,9 +2,7 @@ import { useState, useId } from 'react'
 import { RotateCcw, ShieldCheck, Landmark } from 'lucide-react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { haptics } from '../../../platform/haptics'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 import { Button } from '../../../shared/components/ui/button'
 import {
   calculateDtmBenefit,
@@ -54,26 +52,12 @@ export default function MilliySertifikatCalculatorModal({
   }
 
   return (
-    <DialogOverlay onClose={onClose} labelId="calc-modal-title" swipeToDismiss>
-      <div
-        className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] max-h-[90vh] overflow-y-auto no-scrollbar shadow-2xl overflow-hidden"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ModalMathGrid glow={false} height={380} />
-
-        {/* Drag handle */}
-        <div
-          data-drag-handle
-          className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10"
-        />
-
-        {/* Header */}
-        <ModalHeaderRow onClose={onClose} label={isRu ? 'Закрыть' : 'Yopish'}>
-          <h2 id="calc-modal-title" className="text-[17px] font-bold text-pfg tracking-tight">
-            {isRu ? 'Калькулятор баллов' : 'Ball kalkulyatori'}
-          </h2>
-        </ModalHeaderRow>
-
+    <ModalShell
+      title={isRu ? 'Калькулятор баллов' : 'Ball kalkulyatori'}
+      onClose={onClose}
+      labelId="calc-modal-title"
+      closeLabel={isRu ? 'Закрыть' : 'Yopish'}
+    >
         {/* Input & Slider Card */}
         <div className="bg-pcard rounded-2xl p-4 mb-3.5 shadow-2xs relative z-10">
           <div className="flex items-center justify-between mb-2">
@@ -268,7 +252,6 @@ export default function MilliySertifikatCalculatorModal({
             {isRu ? 'Начать экзамен' : 'Sinov testini boshlash'}
           </Button>
         )}
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

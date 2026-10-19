@@ -1,9 +1,7 @@
 import { useState, useMemo, useEffect, useCallback } from 'react'
 import type { RoadSign } from '../../../content/signs'
 import { TrafficCone, ExternalLink } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -61,19 +59,14 @@ function FormattedSignDescription({ text }: { text: string }) {
 
 function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => void }) {
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/75 z-50" labelId="sign-detail-modal-title" swipeToDismiss>
-      <div
-        className="relative w-full max-w-lg mx-auto max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl z-50 overflow-hidden"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ModalMathGrid glow={false} height={340} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label="Yopish">
-          <h3 id="sign-detail-modal-title" className="font-display font-semibold text-base text-pfg">
-            {sign.name}
-          </h3>
-          <p className="text-xs text-pmuted font-medium mt-0.5">{sign.legalRef}</p>
-        </ModalHeaderRow>
+    <ModalShell
+      title={sign.name}
+      subtitle={sign.legalRef}
+      onClose={onClose}
+      labelId="sign-detail-modal-title"
+      closeLabel="Yopish"
+      backdropClassName="bg-black/75"
+    >
         <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.1)] rounded-full">
             {sign.code}
@@ -100,8 +93,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
           Tushunarli
         </button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }
 

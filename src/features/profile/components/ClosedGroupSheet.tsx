@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ExternalLink, Lightbulb, Megaphone, Users } from 'lucide-react'
 import { Button } from '../../../shared/components/ui/button'
-import { Sheet, SheetBody, SheetDescription, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import ModalShell from '../../../shared/components/ModalShell'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { getSubject } from '../../../shared/config/subjects'
@@ -59,23 +59,21 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
   }
 
   return (
-    <Sheet onClose={onClose} backdropClassName="bg-black/60" className="max-h-[85dvh]">
-        <SheetHeader onClose={onClose} closeLabel={tt('close')}>
-          <SheetTitle className="text-[19px]">
-            {tt('closedGroupTitle')}
-          </SheetTitle>
-          <SheetDescription className="mt-1 text-[13px] leading-relaxed max-w-xs mx-auto">
-            {isSubscribed
-              ? (lang === 'ru'
-                ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
-                : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`)
-              : (lang === 'ru'
-                ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
-                : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot")}
-          </SheetDescription>
-        </SheetHeader>
-
-        <SheetBody className="pb-7">
+    <ModalShell
+      title={tt('closedGroupTitle')}
+      subtitle={
+        isSubscribed
+          ? (lang === 'ru'
+            ? `Закрытая VIP группа по предмету «${currentSubject.nameRu}»`
+            : `«${currentSubject.name}» fani bo'yicha yopiq VIP guruh`)
+          : (lang === 'ru'
+            ? 'Эксклюзивное сообщество и прямая связь с преподавателями'
+            : "Eksklyuziv hamjamiyat va ustozlar bilan bevosita muloqot")
+      }
+      onClose={onClose}
+      closeLabel={tt('close')}
+      backdropClassName="bg-black/60"
+    >
         {/* ── OBUNA BO'LGAN FOYDALANUVCHILAR UCHUN: Faqat joriy fan guruhi ── */}
         {isSubscribed ? (
           <div className="relative z-10">
@@ -171,7 +169,6 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </Button>
           </div>
         )}
-        </SheetBody>
-    </Sheet>
+    </ModalShell>
   )
 }

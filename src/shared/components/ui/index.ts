@@ -23,6 +23,9 @@ export { Input } from './input'
 export { Textarea } from './textarea'
 export { Label, Field, FieldHint } from './label'
 export { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from './card'
+export {
+  SpecCard, SpecRow, SpecList, SpecHero, SpecAmount, type SpecTone,
+} from './spec'
 export { Badge, badgeVariants, type BadgeProps } from './badge'
 export { Alert, AlertTitle, AlertDescription, alertVariants, type AlertProps } from './alert'
 export { Skeleton, SkeletonRow, SkeletonCard } from './skeleton'
@@ -34,6 +37,7 @@ export { Avatar, AvatarImage, AvatarFallback } from './avatar'
 export { ScrollArea, ScrollBar } from './scroll-area'
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from './tooltip'
 export { EmptyState } from './empty-state'
+export { ModalShell, type ModalShellProps } from '../ModalShell'
 export {
   Sheet, SheetHeader, SheetTitle, SheetDescription, SheetBody, SheetFooter, SheetClose,
 } from './sheet'

@@ -1,3 +1,7 @@
 export { getModuleIcon } from './module-icons'
 export { default as LessonToken } from './LessonToken'
 export { PathMascot } from './LessonToken'
+export { default as LearningPath } from './LearningPath'
+export type { PathSelection } from './LearningPath'
+export { default as LessonPreview } from './LessonPreview'
+export { usePathFocus } from './usePathFocus'

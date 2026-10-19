@@ -29,6 +29,7 @@ const Dashboard       = lazy(dashboardChunk)
 const testPageChunk        = () => import('./features/test/TestRoutePage')
 const testlarChunk         = () => import('./features/testlar/TestlarPage')
 const darslikChunk         = () => import('./features/lessons/Darslik')
+const rusDarslikChunk      = () => import('./features/darslik-rustili/RussianDarslikPage')
 const biletlarChunk        = () => import('./features/tickets/Biletlar')
 const belgilarChunk        = () => import('./features/signs/Belgilar')
 const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
@@ -72,6 +73,7 @@ const interactiveLessonsChunk = () => import('./features/interactive-lessons/Int
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
 const Darslik         = lazy(darslikChunk)
+const RussianDarslikPage = lazy(rusDarslikChunk)
 const Biletlar        = lazy(biletlarChunk)
 const Belgilar        = lazy(belgilarChunk)
 const SignsGamePage   = lazy(signsGameChunk)
@@ -116,7 +118,7 @@ const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
 // (Dashboard) chunk kelguncha ekranda qolib ketardi. Boot tugagach
 // IDLE vaqtda barcha sahifa chunk'larini oldindan yuklab qo'yamiz.
 const routeChunkPrefetchers = [
-  testlarChunk, darslikChunk, biletlarChunk, topicsChunk, testPageChunk,
+  testlarChunk, darslikChunk, rusDarslikChunk, biletlarChunk, topicsChunk, testPageChunk,
   belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
   octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
   statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
@@ -323,6 +325,7 @@ export default function App() {
             <Route path="/test/yim"   element={<Navigate to="/testlar" replace />} />
             <Route path="/test/:id"   element={<TestPage />} />
             <Route path="/darslik"    element={<Darslik />} />
+            <Route path="/darslik/rus-tili" element={<RussianDarslikPage />} />
             <Route path="/kutubxona"  element={<LibraryPage />} />
             <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />
             <Route path="/biletlar"   element={<Biletlar />} />
@@ -355,7 +358,8 @@ export default function App() {
             <Route path="/ai-tutor"   element={<SnapSolveHub />} />
             <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
             <Route path="/sharhlar"   element={<ReviewsPage />} />
-            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />            <Route path="/admin"      element={<AdminPage />} />
+            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
+            <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>
         </MobileAppShell>

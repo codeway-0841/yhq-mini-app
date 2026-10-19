@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
-import { BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight } from 'lucide-react'
+import {
+  BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight,
+  Clock3, ListChecks, Gauge,
+} from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -11,11 +14,17 @@ import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { Button } from '../../../shared/components/ui/button'
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
-import { resumeRouteState } from '../next-step'
+import { resumeRouteState, selectDailyPlan } from '../next-step'
 import { LessonToken } from '../../lessons'
+import type { LearningSummary } from '../../../shared/api'
+import { track } from '../../../shared/lib/analytics'
 import './learning-guide.css'
 
-export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
+export function LearningGuide({ summary, mistakesCount = 0 }: {
+  summary?: LearningSummary
+  /** Eski embed/testlar uchun fallback; Dashboard server xulosasini beradi. */
+  mistakesCount?: number
+}) {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions)
@@ -70,26 +79,71 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
   const completedTopics = topicChoices.filter((t) => t.complete)
   const allComplete = topicChoices.length > 0 && completedTopics.length === topicChoices.length
   const currentTopic = topicChoices.find((t) => !t.complete)
+  const openMistakes = summary?.unresolvedMistakes ?? mistakesCount
+  const dueReviews = summary?.dueNow ?? 0
+  const remainingSessionItems = resume && session
+    ? Math.max(1, session.answers.filter((answer) => answer === null).length)
+    : 0
+  const plan = selectDailyPlan({
+    remainingSessionItems,
+    unresolvedMistakes: openMistakes,
+    dueReviews,
+    hasCurrentTopic: !!currentTopic,
+    allTopicsComplete: allComplete,
+  })
   const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
-  const title = expired ? tt('guideExpiredTest') : resume ? (session?.title || tt('guideResumeTest')) : allComplete ? tt('guideTopicsDone') : currentTopic?.title
-    ?? (mistakesCount > 0 ? tt('guideReviewTitle') : tt('topics'))
-  const description = expired ? tt('guideExpiredHint') : resume ? tt('guideResumeHint') : allComplete ? tt('guideTopicsDoneHint') : currentTopic ? null
-    : mistakesCount > 0 ? tt('guideReviewGentle') : tt('guideChooseTopic')
+  const title = expired ? tt('guideExpiredTest')
+    : plan.kind === 'resume' ? (session?.title || tt('guideResumeTest'))
+    : plan.kind === 'mistakes' ? tt('guideReviewTitle')
+    : plan.kind === 'review' ? tt('dailyReviewTitle')
+    : plan.kind === 'completed' ? tt('guideTopicsDone')
+    : plan.kind === 'topic' ? currentTopic?.title ?? tt('topics')
+    : tt('guideStartTitle')
+  const description = expired ? tt('guideExpiredHint')
+    : plan.kind === 'resume' ? tt('guideResumeHint')
+    : plan.kind === 'mistakes' ? tt('dailyMistakesHint').replace('{count}', String(openMistakes))
+    : plan.kind === 'review' ? tt('dailyReviewHint').replace('{count}', String(dueReviews))
+    : plan.kind === 'completed' ? tt('guideTopicsDoneHint')
+    : plan.kind === 'topic' ? tt('dailyTopicHint')
+    : tt('guideStartHint')
   const start = () => {
+    track('daily_plan_start', {
+      subject_id: subject.id,
+      kind: plan.kind,
+      item_count: plan.itemCount,
+      readiness: summary?.readinessPercent ?? null,
+    })
     if (resume) navigate('/test/1', { state: resume })
-    else if (currentTopic) navigate(currentTopic.path, { state: currentTopic.state })
-    else if (allComplete) navigate(topicChoices[0].path, {state: topicChoices[0].state})
-    else navigate(mistakesCount > 0 ? '/xatolar' : '/testlar')
+    else if (plan.kind === 'mistakes') {
+      if (config.testSessionsV2Enabled) {
+        navigate('/test/1', {
+          state: { mode: 'mistakes', serverSelector: 'mistakes', title: tt('fixMistakes') },
+        })
+      } else {
+        navigate('/xatolar')
+      }
+    }
+    else if (plan.kind === 'review') navigate('/adaptive')
+    else if (plan.kind === 'topic' && currentTopic) navigate(currentTopic.path, { state: currentTopic.state })
+    else if (plan.kind === 'completed' && topicChoices[0]) navigate(topicChoices[0].path, {state: topicChoices[0].state})
+    else navigate('/testlar')
   }
   const learnPath = subject.id === 'yhq' ? '/darslik' : '/mavzular'
-  const contextLabel = expired ? null : resume ? tt('guidePendingTest') : currentTopic
-    ? tt(hasContinue ? 'guideCurrentTopic' : 'guideNextTopic') : null
-  const actionLabel = expired ? tt('guideViewResults') : resume ? tt('guideContinueTest')
-    : allComplete ? tt('guideReviewTopics') : currentTopic
+  // Rus tili uchun alohida darslik (15 blok konspekti) mavjud.
+  const darslikPath = subject.id === 'rustili' ? '/darslik/rus-tili' : '/darslik'
+  const contextLabel = expired ? null : plan.kind === 'resume' ? tt('guidePendingTest')
+    : plan.kind === 'mistakes' ? tt('dailyPriorityMistakes')
+    : plan.kind === 'review' ? tt('dailyPriorityMemory')
+    : plan.kind === 'topic' ? tt(hasContinue ? 'guideCurrentTopic' : 'guideNextTopic')
+    : null
+  const actionLabel = expired ? tt('guideViewResults') : plan.kind === 'resume' ? tt('guideContinueTest')
+    : plan.kind === 'mistakes' ? tt('dailyStartPlan')
+    : plan.kind === 'review' ? tt('dailyStartReview')
+    : plan.kind === 'completed' ? tt('guideReviewTopics') : plan.kind === 'topic' && currentTopic
       ? subject.id === 'yhq'
         ? tt(hasContinue ? 'guideContinueLesson' : 'guideStartLesson')
         : tt(hasContinue ? 'guideContinueTest' : 'guideStartTest')
-      : mistakesCount > 0 ? tt('guideReviewAction') : tt('allTests')
+      : tt('allTests')
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
   return (
@@ -104,7 +158,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
         </button>
         <button
           type="button"
-          onClick={() => navigate('/darslik')}
+          onClick={() => navigate(darslikPath)}
           aria-label={tt('lessons')}
           className={`home-learning-shortcut app-card-interactive ${interactive}`}
         >
@@ -137,6 +191,7 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
 
       <section className="home-learning-hero mt-4">
         <div className="home-learning-step">
+          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.12em] text-pprimary">{tt('guideToday')}</p>
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
             <div className="min-w-0 flex-1">
@@ -144,8 +199,15 @@ export function LearningGuide({ mistakesCount }: { mistakesCount: number }) {
               <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
               {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
             </div>
-            {allComplete && !resume && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
+            {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
+          {!expired && (
+            <div className="daily-plan-metrics" aria-label={tt('dailyPlanDetails')}>
+              <span><Clock3 aria-hidden="true" />{plan.estimatedMinutes} {tt('minWord')}</span>
+              <span><ListChecks aria-hidden="true" />{plan.itemCount} {tt('dailyTasksUnit')}</span>
+              <span><Gauge aria-hidden="true" />{summary?.readinessPercent ?? 0}%</span>
+            </div>
+          )}
           <Button block size="lg" className="mt-2.5 whitespace-normal" onClick={start}>
             {actionLabel}
           </Button>

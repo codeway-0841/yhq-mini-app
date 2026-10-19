@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react'
-import { ArrowLeft, CheckCircle2, Lock } from 'lucide-react'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
+import { CheckCircle2, Lock } from 'lucide-react'
+import ModalShell from '../../../shared/components/ModalShell'
 import { ACHIEVEMENTS, isUnlocked, getBadgeUrl, type AchievementDef, type AchievementCategory } from '../../../shared/config/achievements'
 import type { AchievementStats } from '../../../shared/api'
 import { type useT } from '../../../shared/i18n'
@@ -142,48 +141,18 @@ export default function AchievementsScreen({
   const pct = Math.min(100, Math.round((unlockedCount / Math.max(tabAchievements.length, 1)) * 100))
 
   const content = (
-    <DialogOverlay
+    <ModalShell
+      title={tt('achTitle')}
       onClose={onClose}
       labelId="ach-screen-title"
-      position="bottom"
-      swipeToDismiss
-      className="!p-0"
-      backdropClassName="bg-black/50 backdrop-blur-xs"
+      closeLabel={tt('backWord')}
       zIndex={60}
+      backdropClassName="bg-black/50 backdrop-blur-xs"
+      className="h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] sm:max-w-2xl"
+      bodyClassName="px-4"
     >
-      {/* ── Apple / Taphey Style Collection Screen (Always Pristine) ── */}
-      <div className="relative w-full max-w-2xl mx-auto h-[calc(100dvh-max(var(--safe-top,0px),16px))] max-h-[calc(100dvh-max(var(--safe-top,0px),16px))] rounded-t-[28px] sm:rounded-t-[32px] rounded-b-none bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white flex flex-col overflow-hidden shadow-2xl transition-colors">
-        {/* Subtle Ambient Radial Glow + Math Grid */}
-        <ModalMathGrid glowColor="#0066FF" height={420} maskEnd="95%" />
-
-        {/* Top Sheet Grab Handle */}
-        <div
-          data-drag-handle
-          className="pt-2.5 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10"
-        >
-          <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
-        </div>
-
-        {/* Sticky Header: Back (✕) · Title · Spacer */}
-        <header className="shrink-0 flex items-center justify-between px-4 py-1.5 relative z-10">
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label={tt('backWord')}
-            className="size-12 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
-          >
-            <ArrowLeft size={20} strokeWidth={2.25} />
-          </button>
-
-          <h2 id="ach-screen-title" className="text-[17px] font-bold text-gray-900 dark:text-white tracking-tight">
-            {tt('achTitle')}
-          </h2>
-
-          <div className="size-10" />
-        </header>
-
         {/* Tab Controls (Barchasi | Marralar | Nishonlar) */}
-        <div className="mx-4 mt-1 mb-2.5 flex items-center rounded-xl bg-gray-200/60 dark:bg-white/10 p-1 relative z-10">
+        <div className="mb-2.5 flex items-center rounded-xl bg-psurface p-1">
           {tabs.map((t) => {
             const isSelected = activeTab === t.key
             return (
@@ -208,7 +177,7 @@ export default function AchievementsScreen({
         </div>
 
         {/* Scrollable Container */}
-        <div className="flex-1 overflow-y-auto px-4 pb-12 safe-bottom relative z-10">
+        <div className="pb-6">
           {/* ── TOP STATS / SUMMARY CARD (Taphey Archives Style) ── */}
           <div className="mt-1 mb-5 rounded-2xl bg-white dark:bg-[#15161E] p-5 shadow-[0_2px_12px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] border border-gray-100 dark:border-white/10">
             <div className="flex items-start justify-between">
@@ -265,8 +234,7 @@ export default function AchievementsScreen({
             ))}
           </div>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 
   if (typeof document === 'undefined') return null

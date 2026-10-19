@@ -13,7 +13,6 @@ import {
   AlertCircle,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
 import ModalCloseButton from '../../../shared/components/ModalCloseButton'
 import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
@@ -235,16 +234,13 @@ export default function SubscriptionModal({
         className="w-full max-w-lg mx-auto bg-psurface rounded-t-sheet shadow-2xl relative animate-slideUp text-pfg select-none max-h-[94vh] flex flex-col overflow-hidden font-display"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
-          <ModalMathGrid glow={false} height={420} />
-        </div>
         {/* Yuqori surish tutqichi (Drag Handle) — ENG TEPADA */}
         <div data-drag-handle className="pt-3 pb-1 flex justify-center shrink-0 cursor-grab active:cursor-grabbing touch-none select-none relative z-10">
           <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
         </div>
         {step === 'choose_plan' && (
           <ModalHeaderRow onClose={onClose} label="Yopish" className="pt-1">
-            <h2 id="subscription-modal-title" className="text-[19px] font-bold text-pfg tracking-tight">
+            <h2 id="subscription-modal-title" className="text-[17px] font-bold text-pfg tracking-tight">
               {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
             </h2>
           </ModalHeaderRow>

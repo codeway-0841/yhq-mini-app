@@ -69,6 +69,43 @@ describe('GET /api/progress/mistakes/overview (v2 Top-10 safe launch)', () => {
   })
 })
 
+describe('GET /api/progress/learning-summary', () => {
+  beforeEach(() => vi.restoreAllMocks())
+
+  it('requires authentication and validates the subject', async () => {
+    const spy = vi.spyOn(progressRepository, 'getLearningSummary')
+    await request(overviewApp())
+      .get('/api/progress/learning-summary?subjectId=yhq')
+      .expect(401)
+    await request(overviewApp('user-1'))
+      .get('/api/progress/learning-summary?subjectId=nope')
+      .expect(400)
+    expect(spy).not.toHaveBeenCalled()
+  })
+
+  it('returns a private subject-scoped readiness summary', async () => {
+    vi.spyOn(progressRepository, 'getLearningSummary').mockResolvedValue({
+      answered: 80,
+      unresolvedMistakes: 12,
+      dueNow: 7,
+    })
+    const res = await request(overviewApp('user-1'))
+      .get('/api/progress/learning-summary?subjectId=yhq')
+      .expect(200)
+
+    expect(res.headers['cache-control']).toBe('private, no-store')
+    expect(res.body).toEqual({
+      subjectId: 'yhq',
+      answered: 80,
+      mastered: 68,
+      unresolvedMistakes: 12,
+      dueNow: 7,
+    })
+    expect(res.body).not.toHaveProperty('questionIds')
+    expect(res.body).not.toHaveProperty('correctAnswer')
+  })
+})
+
 describe('GET /api/progress/:userId/topic-progress (v2 aggregate)', () => {
   beforeEach(() => vi.restoreAllMocks())
 

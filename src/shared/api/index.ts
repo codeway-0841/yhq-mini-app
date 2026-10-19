@@ -277,6 +277,19 @@ export interface ApiProgress {
   league?: 'bronze' | 'silver' | 'gold' | 'platinum'
 }
 
+export interface LearningSummaryAggregate {
+  subjectId: string
+  answered: number
+  mastered: number
+  unresolvedMistakes: number
+  dueNow: number
+}
+
+export interface LearningSummary extends LearningSummaryAggregate {
+  totalQuestions: number
+  readinessPercent: number
+}
+
 export interface ApiSettings {
   autoNextCorrect: boolean
   autoNextWrong: boolean
@@ -583,6 +596,12 @@ export const api = {
     }>(
       'GET',
       `/progress/mistakes/overview?subjectId=${encodeURIComponent(subjectId)}&language=${encodeURIComponent(language)}`,
+    ),
+
+  getLearningSummary: (subjectId: string) =>
+    request<LearningSummaryAggregate>(
+      'GET',
+      `/progress/learning-summary?subjectId=${encodeURIComponent(subjectId)}`,
     ),
 
   /** Referal statistikasi (Profil kartasi).

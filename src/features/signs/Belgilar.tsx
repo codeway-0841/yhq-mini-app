@@ -7,9 +7,7 @@ import { signCategories, getSignsByCategory, searchSigns, type RoadSign, type Si
 import { rulesChapters } from '../../content/rules'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
-import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
+import ModalShell from '../../shared/components/ModalShell'
 
 function renderBoldText(str: string) {
   const parts = str.split(/(\*\*.*?\*\*)/g)
@@ -64,19 +62,14 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
   const legalRef = isRu ? `ПДД Приложение 1 ${sign.code}` : sign.legalRef
 
   return (
-    <DialogOverlay onClose={onClose} backdropClassName="bg-black/60" labelId="sign-modal-title" swipeToDismiss>
-      <div
-        className="relative w-full max-w-lg mx-auto max-h-[85vh] overflow-y-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ModalMathGrid glow={false} height={320} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={isRu ? 'Закрыть' : 'Yopish'}>
-          <h3 id="sign-modal-title" className="font-display font-semibold text-lg text-pfg">
-            {signName}
-          </h3>
-          <p className="text-xs text-pmuted font-medium mt-0.5">{legalRef}</p>
-        </ModalHeaderRow>
+    <ModalShell
+      title={signName}
+      subtitle={legalRef}
+      onClose={onClose}
+      labelId="sign-modal-title"
+      closeLabel={isRu ? 'Закрыть' : 'Yopish'}
+      backdropClassName="bg-black/60"
+    >
         <div className="flex items-center justify-end mb-3 relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-pprimary px-2.5 py-1 bg-[rgb(var(--p-primary-rgb)/0.15)] rounded-xl shadow-2xs">
             {sign.code}
@@ -100,8 +93,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
             {isRu ? 'Закрыть' : 'Yopish'}
           </button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }
 

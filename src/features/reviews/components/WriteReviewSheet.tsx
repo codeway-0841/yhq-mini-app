@@ -6,9 +6,7 @@ import { useAppStore } from '@/shared/store/useAppStore'
 import { useT } from '@/shared/i18n'
 import { SUBJECTS } from '@/shared/config/subjects'
 import { useToast } from '@/shared/components/ToastContainer'
-import DialogOverlay from '@/shared/components/DialogOverlay'
-import ModalMathGrid from '@/shared/components/ModalMathGrid'
-import ModalHeaderRow from '@/shared/components/ModalHeaderRow'
+import ModalShell from '@/shared/components/ModalShell'
 
 interface Props {
   onClose: () => void
@@ -76,38 +74,14 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
   const ratingCaption = lang === 'ru' ? RATING_LABELS_RU[rating] : RATING_LABELS_UZ[rating]
 
   return (
-    <DialogOverlay
+    <ModalShell
+      title={tt('reviewsWriteTitle')}
+      subtitle={lang === 'ru' ? 'Оцените и оставьте отзыв' : 'Baholang va fikringizni yozib qoldiring'}
       onClose={onClose}
       labelId="write-review-title"
-      swipeToDismiss
+      closeLabel={lang === 'ru' ? 'Закрыть' : 'Yopish'}
       backdropClassName="bg-black/60"
     >
-      <div
-        className="relative w-full max-w-lg mx-auto bg-psurface rounded-t-sheet px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto no-scrollbar"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <ModalMathGrid glow={false} height={360} />
-
-        {/* Sensorda surish uchun tepa drag handle */}
-        <div
-          data-drag-handle
-          className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none relative z-10"
-        />
-
-        {/* Global modal header (X tugmasi chapda, sarlavha o'rtada) */}
-        <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'}>
-          <div data-drag-handle className="select-none">
-            <h2 id="write-review-title" className="text-lg font-bold text-pfg tracking-tight">
-              {tt('reviewsWriteTitle')}
-            </h2>
-            <p className="text-[11.5px] text-pmuted mt-0.5">
-              {lang === 'ru'
-                ? 'Оцените и оставьте отзыв'
-                : 'Baholang va fikringizni yozib qoldiring'}
-            </p>
-          </div>
-        </ModalHeaderRow>
-
         {/* ── 1. Yulduzli Baholash (Interactive 5 Stars) ───────────────────── */}
         <div className="bg-pcard rounded-2xl p-3.5 mb-3.5 text-center shadow-2xs relative z-10">
           <div className="flex justify-center items-center gap-2 mb-1.5">
@@ -244,7 +218,7 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
           type="button"
           onClick={handleSubmit}
           disabled={!canSubmit || submitting}
-          className="w-full py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-md shadow-blue-500/20 relative z-10 cursor-pointer"
+          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary hover:brightness-[1.06] font-bold text-sm disabled:opacity-40 disabled:cursor-not-allowed active:scale-[0.98] transition-all shadow-xs relative z-10 cursor-pointer"
         >
           {submitting
             ? lang === 'ru'
@@ -254,7 +228,6 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
               ? 'Опубликовать отзыв'
               : 'Fikrni yuborish'}
         </button>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

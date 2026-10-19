@@ -22,7 +22,12 @@ import { MilestoneScene, LevelUpScene } from './components/Celebrations'
 import { DailyTasksCard } from '../shop'
 import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
-import { useDashboardSync, useSubjectBadges, useDashboardQuestionCount } from './hooks/useDashboardData'
+import {
+  useDashboardSync,
+  useSubjectBadges,
+  useDashboardQuestionCount,
+  useLearningSummary,
+} from './hooks/useDashboardData'
 import { config } from '../../shared/config'
 import { todayStr } from '../../shared/store/useDailyStore'
 
@@ -36,7 +41,6 @@ export default function Dashboard() {
   const displayName     = useAppStore((s) => s.displayName)
   const settings        = useAppStore((s) => s.settings)
   const xp              = useAppStore((s) => s.xp)
-  const totalWrong      = useAppStore((s) => s.totalWrong)
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
   const subject         = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
@@ -44,12 +48,20 @@ export default function Dashboard() {
   // Savollar hali yuklanmagan bo'lsa oxirgi ma'lum SONdan foydalanamiz —
   // aks holda birinchi kadrda "0%" chizilib, keyin haqiqiy foizga sakrardi.
   const questionsCount = useDashboardQuestionCount(subject.id)
+  const { mistakesCount } = useSubjectBadges(subject.id)
 
   // Joriy fan bo'yicha UNIQUE yechilgan savollar soni (1 ta savolni 10 marta yechsa ham 1 ta hisoblanadi)
   const uniqueSolvedCount = useMemo(() => {
     const prefix = `${subject.id}:`
     return solvedQuestions.filter((k) => k.startsWith(prefix)).length
   }, [solvedQuestions, subject.id])
+  const learningSummary = useLearningSummary({
+    userId: user?.id,
+    subjectId: subject.id,
+    totalQuestions: questionsCount,
+    answered: uniqueSolvedCount,
+    unresolvedMistakes: mistakesCount,
+  })
 
   useDashboardSync(user?.id, subject.id, settings.language)
 
@@ -78,8 +90,6 @@ export default function Dashboard() {
     }
   })
   const tt = useT(settings.language)
-
-  const { mistakesCount } = useSubjectBadges(subject.id)
 
   const goProfile = useCallback(() => navigate('/profil'), [navigate])
 
@@ -121,15 +131,13 @@ export default function Dashboard() {
             {/* Chap ustun: Progress va O'quv yo'li */}
             <div className="lg:col-span-7 xl:col-span-8 space-y-2">
               <ProgressCard
-                totalWrong={totalWrong}
-                totalAnswered={uniqueSolvedCount}
+                summary={learningSummary}
                 streak={dailyStreak}
-                totalPool={questionsCount}
                 lang={settings.language}
                 onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
               />
 
-              <LearningGuide mistakesCount={mistakesCount} />
+              <LearningGuide summary={learningSummary} />
             </div>
 
             {/* O'ng ustun: Vazifalar, Boss jang va Reyting */}

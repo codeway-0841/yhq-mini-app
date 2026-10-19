@@ -16,8 +16,8 @@ beforeEach(() => {
 })
 
 it.each([
-  ['uz', 'Xatolar ustida ishlang', 'Xato qilgan savollaringizni qayta yeching.', 'Takrorlash'],
-  ['ru', 'Работа над ошибками', 'Решите заново вопросы с ошибками.', 'Повторить'],
+  ['uz', 'Xatolar ustida ishlang', 'Tuzatilmagan xatolar: 3 ta. Avval shularni yoping — eng katta o‘sish shu yerdan boshlanadi.', 'Bugungi rejani boshlash'],
+  ['ru', 'Работа над ошибками', 'Неисправленных ошибок: 3. Начните с них — здесь самый быстрый рост.', 'Начать план на сегодня'],
 ] as const)('shows concise mistake review copy in %s', (language, title, hint, action) => {
   useSubjectStore.getState().setSubject('rustili')
   useQuestionsStore.setState({ subjectId: 'rustili', loaded: true, questions: [], topics: [] })

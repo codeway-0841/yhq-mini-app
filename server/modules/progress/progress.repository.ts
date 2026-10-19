@@ -477,6 +477,53 @@ export const progressRepository = {
     return rows[0] ?? { total: 0, dueNow: 0, dueNext24h: 0, dueNext7d: 0, avgEf: null }
   },
 
+  /**
+   * Dashboard uchun fan kesimidagi ixcham o'quv xulosasi.
+   *
+   * `progress`dagi umumiy counterlar ko'p fanli akkauntda aralashib ketadi;
+   * shu sababli tayyorgarlik va kunlik reja faqat subject-scoped jadvallardan
+   * hisoblanadi. Savol IDlari yoki javob kalitlari clientga chiqmaydi.
+   */
+  async getLearningSummary(userId: string, subjectId: string): Promise<{
+    answered: number
+    unresolvedMistakes: number
+    dueNow: number
+  }> {
+    const rows = await executeRows<{
+      answered: number
+      unresolvedMistakes: number
+      dueNow: number
+    }>(sql`
+      SELECT
+        (
+          SELECT COUNT(*)::int
+          FROM progress_questions pq
+          WHERE pq.user_id = ${userId} AND pq.subject_id = ${subjectId}
+        ) AS "answered",
+        (
+          SELECT COUNT(*)::int
+          FROM progress p
+          CROSS JOIN LATERAL jsonb_each_text(COALESCE(p.wrong_by_ticket, '{}'::jsonb)) mistake
+          WHERE p.user_id = ${userId}
+            AND mistake.key LIKE (${subjectId} || ':%')
+            AND mistake.value::int > 0
+        ) AS "unresolvedMistakes",
+        (
+          SELECT COUNT(*)::int
+          FROM card_progress cp
+          WHERE cp.user_id = ${userId}
+            AND cp.subject_id = ${subjectId}
+            AND cp.due_at <= now()
+        ) AS "dueNow"
+    `)
+    const row = rows[0]
+    return {
+      answered: Number(row?.answered ?? 0),
+      unresolvedMistakes: Number(row?.unresolvedMistakes ?? 0),
+      dueNow: Number(row?.dueNow ?? 0),
+    }
+  },
+
   /** Moslashuvchan rejim (Spaced Repetition) kartalarini yuklash */
   async getCards(userId: string, subjectId: string) {
     const { cardProgress } = await import('../../schema')

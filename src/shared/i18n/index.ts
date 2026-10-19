@@ -1037,6 +1037,20 @@ const UZ = {
   // Kontekstli sharh so'rovi (ReviewPromptSheet) — yutuqdan keyin, takrorlanmaydi
   reviewPromptTitle: "Boshqalarga yordam bering",
   reviewPromptBody: "Siz yaxshi natijaga erishdingiz — bir daqiqalik fikringiz boshqalarga yo‘l ko‘rsatadi.",
+  // Rus tili darsligi (/darslik/rus-tili)
+  rusDarslikTitle: "Rus tili darsligi",
+  rusDarslikSubtitle: "Attestatsiya va milliy sertifikat uchun 15 blok",
+  rusDarslikSectionsCount: "{count} mavzu",
+  rusDarslikContents: "Mundarija",
+  rusDarslikHideContents: "Mundarijani yopish",
+  rusDarslikMarkRead: "O‘qib bo‘ldim",
+  rusDarslikReadBadge: "O‘qilgan",
+  rusDarslikNextSection: "Keyingi mavzu",
+  rusDarslikPrevSection: "Oldingi mavzu",
+  rusDarslikSection: "mavzu",
+  rusDarslikLoadFailed: "Blok matnini yuklab bo‘lmadi.",
+  rusDarslikRetry: "Qayta urinish",
+  rusDarslikCloseReader: "O‘qishni yopish",
 } as const
 
 type Keys = keyof typeof UZ
@@ -2067,6 +2081,20 @@ const RU: Record<Keys, string> = {
   // Контекстный запрос отзыва (ReviewPromptSheet)
   reviewPromptTitle: "Помогите другим ученикам",
   reviewPromptBody: "Вы уже добились результата — минутный отзыв поможет другим ученикам.",
+  // Учебник русского языка (/darslik/rus-tili)
+  rusDarslikTitle: "Учебник русского языка",
+  rusDarslikSubtitle: "15 блоков для аттестации и национального сертификата",
+  rusDarslikSectionsCount: "{count} тем",
+  rusDarslikContents: "Содержание",
+  rusDarslikHideContents: "Закрыть содержание",
+  rusDarslikMarkRead: "Тема прочитана",
+  rusDarslikReadBadge: "Прочитано",
+  rusDarslikNextSection: "Следующая тема",
+  rusDarslikPrevSection: "Предыдущая тема",
+  rusDarslikSection: "тема",
+  rusDarslikLoadFailed: "Не удалось загрузить текст блока.",
+  rusDarslikRetry: "Повторить",
+  rusDarslikCloseReader: "Закрыть блок",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

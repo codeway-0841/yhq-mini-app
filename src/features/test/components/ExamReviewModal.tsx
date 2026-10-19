@@ -7,9 +7,7 @@ import { lessons } from '../../../content/lessons'
 import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
-import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalMathGrid from '../../../shared/components/ModalMathGrid'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
+import ModalShell from '../../../shared/components/ModalShell'
 import MathText from '../../../shared/components/MathText'
 import { cn } from '../../../shared/lib/cn'
 import { formatImageSrc } from '../hooks/useImagePreload'
@@ -57,23 +55,17 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="exam-review-title" backdropClassName="bg-black/60">
-      <div className="relative w-full max-w-xl mx-auto bg-psurface rounded-t-sheet max-h-[90vh] flex flex-col overflow-hidden shadow-2xl pb-[calc(1.75rem+var(--safe-bottom,0px))]">
-        <ModalMathGrid glow={false} height={420} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-3 mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-
-        {/* Minimalist Centered Header */}
-        <ModalHeaderRow onClose={onClose} label={tt('closeResults')}>
-          <h3 id="exam-review-title" className="text-[17px] font-bold text-pfg tracking-tight">
-            {tt('examReviewTitle')}
-          </h3>
-          <p className="text-xs text-pmuted mt-0.5 font-medium">
-            {items.filter((x) => x.status === 'correct').length} {tt('correct')} · {wrongCount} {tt('wrong')}
-          </p>
-        </ModalHeaderRow>
-
+    <ModalShell
+      title={tt('examReviewTitle')}
+      subtitle={`${items.filter((x) => x.status === 'correct').length} ${tt('correct')} · ${wrongCount} ${tt('wrong')}`}
+      onClose={onClose}
+      labelId="exam-review-title"
+      closeLabel={tt('closeResults')}
+      backdropClassName="bg-black/60"
+      className="max-w-xl"
+    >
         {/* Filter Tabs */}
-        <div className="px-4 pb-3 flex gap-2 relative z-10">
+        <div className="pb-3 flex gap-2 relative z-10">
           <button
             type="button"
             onClick={() => setFilter('mistakes')}
@@ -241,7 +233,6 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
             {tt('closeResults')}
           </button>
         </div>
-      </div>
 
       {/* Fullscreen image zoom */}
       {zoomedImage && (
@@ -251,6 +242,6 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
           onClose={() => setZoomedImage(null)}
         />
       )}
-    </DialogOverlay>
+    </ModalShell>
   )
 }

@@ -468,7 +468,9 @@ export default function Darslik() {
               </div>
             </div>
           </div>
-          <LearningPath mod={item} doneList={doneFor[item.id] ?? []} lang={settings.language} selected={selected} activeModuleId={currentModule?.id}
+          <LearningPath moduleId={item.id} nodes={list.map((lesson) => (ru ? lesson.titleRu : lesson.titleUz))}
+            nodeLabel={tt('lessonWord')} moduleTitle={title}
+            checkLabel={tt('pathLevelCheck')} doneList={doneFor[item.id] ?? []} lang={settings.language} selected={selected} activeModuleId={currentModule?.id}
             onSelect={(selection, trigger) => { selectPathNode(selection, trigger); setCollapsed(false) }} />
         </section>
       })}

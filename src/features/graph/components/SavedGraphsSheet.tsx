@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Share2, Trash2 } from 'lucide-react'
 import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
+import { SpecCard } from '../../../shared/components/ui/spec'
 import { Button } from '../../../shared/components/ui/button'
 import { Input } from '../../../shared/components/ui/input'
 import { ConfirmDialog } from '../../../shared/components/ui/dialog'
@@ -142,9 +143,9 @@ export default function SavedGraphsSheet({
           ) : graphs.length === 0 ? (
             <p className="py-4 text-center text-[12px] text-psubtle">{tt('graphNoSaved')}</p>
           ) : (
-            <div className="flex flex-col gap-2">
+            <SpecCard>
               {graphs.map((g) => (
-                <div key={g.id} className="flex items-center gap-2 rounded-2xl bg-psurface p-3">
+                <div key={g.id} className="flex items-center gap-2 px-4 py-3">
                   <button
                     type="button"
                     onClick={() => handleOpen(g)}
@@ -171,7 +172,7 @@ export default function SavedGraphsSheet({
                   </button>
                 </div>
               ))}
-            </div>
+            </SpecCard>
           )}
         </SheetBody>
       </Sheet>

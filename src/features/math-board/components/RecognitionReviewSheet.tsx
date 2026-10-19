@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Check, ScanLine } from 'lucide-react'
 import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
+import { SpecCard } from '../../../shared/components/ui/spec'
 import StepInput from './StepInput'
 import { Latex } from './StepList'
 
@@ -60,9 +61,9 @@ export default function RecognitionReviewSheet({
       </SheetHeader>
       <SheetBody className="flex max-h-[70dvh] flex-col gap-2.5 overflow-y-auto">
         {blocks.map((b, i) => (
-          <div key={b.id} className="flex flex-col gap-2 rounded-2xl bg-psurface p-3">
+          <SpecCard key={b.id} className="flex flex-col gap-2 p-3">
             <span className="flex items-center gap-2 text-[13px] font-semibold text-pmuted">
-              <span className="flex size-6 items-center justify-center rounded-full bg-pcard text-[12px] font-bold">
+              <span className="flex size-6 items-center justify-center rounded-full bg-psurface text-[12px] font-bold">
                 {i + 1}
               </span>
               {b.failed ? (
@@ -96,7 +97,7 @@ export default function RecognitionReviewSheet({
                         key={a}
                         type="button"
                         onClick={() => pickAlternative(b.id, a)}
-                        className="rounded-xl bg-pcard px-2.5 py-1.5 text-[13px] text-pfg shadow-2xs"
+                        className="rounded-xl bg-psurface px-2.5 py-1.5 text-[13px] text-pfg shadow-2xs"
                       >
                         <Latex latex={a} />
                       </button>
@@ -114,7 +115,7 @@ export default function RecognitionReviewSheet({
                 </button>
               </>
             )}
-          </div>
+          </SpecCard>
         ))}
         <button
           type="button"

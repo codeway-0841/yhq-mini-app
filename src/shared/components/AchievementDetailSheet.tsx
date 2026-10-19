@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react'
-import { X, Forward, CheckCircle2, Lock, Sparkles } from 'lucide-react'
+import { Forward, CheckCircle2, Lock, Sparkles } from 'lucide-react'
 import { useAchievementCelebrationStore } from '../store/useAchievementCelebrationStore'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
@@ -8,8 +8,7 @@ import { config } from '../config'
 import { cn } from '../lib/cn'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
 import { CoinIcon } from './CoinIcon'
-import DialogOverlay from './DialogOverlay'
-import ModalMathGrid from './ModalMathGrid'
+import ModalShell from './ModalShell'
 
 export default function AchievementDetailSheet() {
   const badge = useAchievementCelebrationStore((s) => s.inspectBadge)
@@ -39,7 +38,6 @@ export default function AchievementDetailSheet() {
   if (!badge) return null
   if (typeof document === 'undefined') return null
 
-  const badgeColor = badge.color || '#941B44'
   const isUnlocked = progress ? progress.unlocked : true
   const currentVal = progress ? Math.min(progress.current, progress.target) : badge.target
   const targetVal = progress ? progress.target : badge.target
@@ -47,60 +45,26 @@ export default function AchievementDetailSheet() {
   const remaining = Math.max(0, targetVal - currentVal)
 
   return (
-    <DialogOverlay
+    <ModalShell
+      title={tt('achMilestoneTitle')}
       onClose={closeDetailSheet}
       labelId="milestone-detail-title"
-      position="bottom"
-      swipeToDismiss
+      closeLabel={tt('close')}
       zIndex={70}
-      className="!p-0"
       backdropClassName="bg-black/45 dark:bg-black/75 backdrop-blur-sm"
-    >
-      {/* ── Apple / Taphey Style Milestone Sheet (Full-height Scroll Container, Always Pristine) ── */}
-      <div
-        className="relative w-full sm:max-w-[440px] mx-auto rounded-t-[32px] sm:rounded-t-[36px] rounded-b-none bg-[#FAF9FC] dark:bg-[#0B0C10] text-gray-900 dark:text-white shadow-2xl dark:shadow-[0_25px_60px_rgba(0,0,0,0.8)] overflow-y-auto max-h-[calc(100dvh-max(var(--safe-top,0px),24px))] flex flex-col overscroll-contain transition-colors"
-      >
-        {/* Dynamic Ambient Glow + Subtle Grid */}
-        <ModalMathGrid glowColor={badgeColor} height={620} maskEnd="95%" />
-
-        {/* ── TOP HEADER (Transparent so math grid / kataklar show seamlessly to the top) ── */}
-        <div
-          data-floating-controls
-          className="pointer-events-none sticky top-[0px] /* safe-top: sheet header */ z-30 w-full shrink-0 bg-transparent pt-3 pb-1 px-4"
+      headerRight={
+        <button
+          type="button"
+          onClick={handleShare}
+          aria-label={tt('achShareBadge')}
+          className="relative left-auto top-auto flex size-12 shrink-0 items-center justify-center rounded-full border border-black/[0.04] bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-transform duration-150 ease-out hover:scale-105 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none cursor-pointer"
         >
-          {/* Top Sheet Grab Handle */}
-          <div data-drag-handle className="pointer-events-auto flex justify-center py-1 cursor-grab active:cursor-grabbing touch-none select-none">
-            <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mb-2" />
-          </div>
-
-          {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
-          <div className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={closeDetailSheet}
-              aria-label={tt('close')}
-              className="pointer-events-auto size-10 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
-            >
-              <X size={18} strokeWidth={2.4} />
-            </button>
-
-            <span id="milestone-detail-title" className="text-[17px] font-semibold text-gray-900 dark:text-white tracking-tight">
-              {tt('achMilestoneTitle')}
-            </span>
-
-            <button
-              type="button"
-              onClick={handleShare}
-              aria-label={tt('achShareBadge')}
-              className="pointer-events-auto size-10 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
-            >
-              <Forward size={18} strokeWidth={2.2} fill="currentColor" />
-            </button>
-          </div>
-        </div>
-
-        {/* ── SCROLLABLE BODY CONTENT ── */}
-        <div className="relative z-10 px-5 pt-4 pb-8 flex flex-col items-center text-center">
+          <Forward size={18} strokeWidth={2.2} fill="currentColor" />
+        </button>
+      }
+    >
+        {/* ── BODY CONTENT ── */}
+        <div className="relative z-10 flex flex-col items-center pt-2 pb-4 text-center">
           {/* ── 3D FLOATING ROTATABLE BADGE ── */}
           <MilestonePlaque3D
             achievement={badge}
@@ -188,7 +152,6 @@ export default function AchievementDetailSheet() {
             <span>{tt('achViewCelebration')}</span>
           </button>
         </div>
-      </div>
-    </DialogOverlay>
+    </ModalShell>
   )
 }

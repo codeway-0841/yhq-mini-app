@@ -10,7 +10,10 @@ describe('compact dashboard progress card', () => {
   it.each(['uz', 'ru'] as const)('keeps readable content and stat controls in %s', (lang) => {
     const { container } = render(
       <MemoryRouter>
-        <ProgressCard totalWrong={0} totalAnswered={25} totalPool={100} streak={7} lang={lang} />
+        <ProgressCard summary={{
+          subjectId: 'yhq', totalQuestions: 100, answered: 30, mastered: 25,
+          unresolvedMistakes: 5, dueNow: 3, readinessPercent: 25,
+        }} streak={7} lang={lang} />
       </MemoryRouter>,
     )
     const card = container.querySelector('.hero-gradient-card')!

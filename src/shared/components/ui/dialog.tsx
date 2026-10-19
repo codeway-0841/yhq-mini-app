@@ -1,6 +1,5 @@
 import * as React from 'react'
 import DialogOverlay from '../DialogOverlay'
-import ModalMathGrid from '../ModalMathGrid'
 import ModalCloseButton from '../ModalCloseButton'
 import ModalHeaderRow from '../ModalHeaderRow'
 import { Button } from './button'
@@ -40,9 +39,6 @@ function Dialog({ open = true, onClose, children, className, zIndex, glowColor: 
           className,
         )}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-t-sheet z-0">
-          <ModalMathGrid glow={false} height={260} />
-        </div>
         <div
           data-drag-handle
           aria-hidden="true"

@@ -9,6 +9,7 @@ import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { cn } from '../../../shared/lib/cn'
 import { initWaveGrid } from '../../../shared/lib/wave-grid'
+import type { LearningSummary } from '../../../shared/api'
 
 // ── Interaktiv StatButton (Streak, XP, Reyting bir xil sodda va toza shaklda) ──
 const StatButton = memo(function StatButton({
@@ -70,23 +71,22 @@ const LEAGUE_TT_KEY = {
 } as const
 
 // ── Hero: umumiy progress ───────────────────────────────────────────────────
-export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, totalPool, lang, onStreakPreview }: {
-  totalWrong: number; totalAnswered: number; streak: number
-  totalPool: number
+export const ProgressCard = memo(function ProgressCard({ summary, streak, lang, onStreakPreview }: {
+  summary: LearningSummary
+  streak: number
   lang: 'uz' | 'ru'
   onStreakPreview?: () => void
 }) {
   const tt = useT(lang)
   const navigate = useNavigate()
-  const total = totalPool > 0 ? totalPool : 0
+  const total = summary.totalQuestions > 0 ? summary.totalQuestions : 0
   const [xpInfoOpen, setXpInfoOpen] = useState(false)
   const [leagueInfoOpen, setLeagueInfoOpen] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
 
-  // Baza bo'yicha yechilgan testlar foizi: 0 ta = 0%, 1 ta = 1% ... 1000/1000 = 100%
-  const progressPct = total > 0
-    ? (totalAnswered === 0 ? 0 : Math.min(100, Math.max(1, Math.round((totalAnswered / total) * 100))))
-    : 0
+  // Server joriy fan bo'yicha hisoblaydi: yechilgan UNIQUE savollar minus
+  // hozir ochiq qolgan xatolar. Umumiy akkaunt counterlaridan guess qilinmaydi.
+  const progressPct = total > 0 ? summary.readinessPercent : 0
   // XP endi SERVER hisobi (o'rganish hodisasiga qarab) — avval bu yerda
   // totalCorrect * 10 edi, ya'ni XP javob sonining ko'paytmasi bo'lib qolardi
   const xp = useAppStore((s) => s.xp)
@@ -148,7 +148,7 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
         {/* Kontent — to'r ustida ravshan va toza ko'rinishi uchun nisbiy z-[2] qatlam */}
         <div className="relative z-[2]">
           <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
-            <p className="text-[12.5px] font-medium text-white/80">{tt('subjectProgress')}</p>
+            <p className="text-[12.5px] font-medium text-white/80">{tt('readinessTitle')}</p>
           </div>
 
           <div className="flex items-baseline gap-2">
@@ -166,11 +166,11 @@ export const ProgressCard = memo(function ProgressCard({ totalAnswered, streak, 
               />
             </div>
             <span className="shrink-0 text-[12px] font-semibold tabular-nums text-white/90">
-              {totalAnswered} / {total || '…'}
+              {summary.mastered} / {total || '…'}
             </span>
           </div>
 
-          <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('guideCoverage')}</p>
+          <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('readinessHint')}</p>
 
           {/* Pastki statistika: Seriya / XP / Reyting — bir xil bosiluvchi mini-panellar */}
           <div className="mt-2 grid grid-cols-3 gap-2">

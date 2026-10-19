@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Plus } from 'lucide-react'
 import { Sheet, SheetHeader, SheetTitle, SheetBody } from '../../../shared/components/ui/sheet'
+import { SpecCard } from '../../../shared/components/ui/spec'
 import { GRAPH_PRESETS, type GraphPreset } from '../../../content/graph-presets'
 import { useT } from '../../../shared/i18n'
 
@@ -44,16 +45,16 @@ export default function PresetSheet({ open, onClose, language, onApply }: Props)
           ))}
         </div>
 
-        <div className="flex flex-col gap-2">
+        <SpecCard>
           {presets.map((p) => (
             <button
               key={p.id}
               type="button"
               onClick={() => onApply(p)}
-              className="flex items-center gap-3 rounded-2xl bg-psurface p-3 text-left transition-colors hover:bg-pcard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+              className="flex w-full items-center gap-3 px-4 py-3 text-left transition-colors hover:bg-[rgb(var(--p-surface-rgb)/0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
               <div className="min-w-0 flex-1">
-                <p className="text-[14px] font-semibold text-pfg">{isRu ? p.titleRu : p.title}</p>
+                <p className="text-[15px] font-semibold text-pfg">{isRu ? p.titleRu : p.title}</p>
                 <p className="mt-0.5 truncate font-mono text-[12px] text-pmuted">{p.expr}</p>
                 {(isRu ? p.noteRu : p.note) && (
                   <p className="mt-0.5 text-[11px] text-psubtle">{isRu ? p.noteRu : p.note}</p>
@@ -62,7 +63,7 @@ export default function PresetSheet({ open, onClose, language, onApply }: Props)
               <Plus size={16} className="flex-shrink-0 text-psubtle" />
             </button>
           ))}
-        </div>
+        </SpecCard>
       </SheetBody>
     </Sheet>
   )

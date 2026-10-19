@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { MemoryRouter, useLocation } from 'react-router-dom'
 import { LearningGuide } from '../../../src/features/dashboard/components/LearningGuide'
 import { config } from '../../../src/shared/config'
-import { resumeRouteState } from '../../../src/features/dashboard/next-step'
+import { resumeRouteState, selectDailyPlan } from '../../../src/features/dashboard/next-step'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useTestSessionStore } from '../../../src/shared/store/useTestSessionStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
@@ -71,11 +71,18 @@ describe('learning guide', () => {
   })
 
   it('explains and opens the current-subject mistake recommendation', () => {
+    const original = config.testSessionsV2Enabled
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
     useSubjectStore.getState().setSubject('rustili')
     guide(7)
-    expect(screen.getByText(/Xato qilgan savollaringizni/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Takrorlash' }))
-    expect(screen.getByTestId('destination')).toHaveTextContent('/xatolar')
+    expect(screen.getByText(/Tuzatilmagan xatolar: 7 ta/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Bugungi rejani boshlash' }))
+    const target = JSON.parse(screen.getByTestId('destination').textContent!)
+    expect(target).toEqual({
+      path: '/test/1',
+      state: { mode: 'mistakes', serverSelector: 'mistakes', title: 'Xatolarni tuzatish' },
+    })
+    ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = original
   })
 
   it('resumes the original session key even when the stored questions were shuffled', () => {
@@ -244,5 +251,32 @@ describe('resume eligibility', () => {
     expect(resumeRouteState({ ...snapshot, mode: 'numeric', key: 'mode:numeric' }, 'yhq')?.mode).toBe('numeric')
     const state = resumeRouteState({ ...snapshot, key: 'all' }, 'yhq')!
     expect(makeSessionKey(state.mode, state.questionIds)).toBe('all')
+  })
+})
+
+describe('daily plan priority', () => {
+  it('keeps an unfinished session above every new recommendation', () => {
+    expect(selectDailyPlan({
+      remainingSessionItems: 4,
+      unresolvedMistakes: 9,
+      dueReviews: 12,
+      hasCurrentTopic: true,
+      allTopicsComplete: false,
+    })).toEqual({ kind: 'resume', itemCount: 4, estimatedMinutes: 4 })
+  })
+
+  it('prioritizes open mistakes, then due reviews, then the next topic', () => {
+    expect(selectDailyPlan({
+      remainingSessionItems: 0, unresolvedMistakes: 18, dueReviews: 12,
+      hasCurrentTopic: true, allTopicsComplete: false,
+    })).toEqual({ kind: 'mistakes', itemCount: 10, estimatedMinutes: 12 })
+    expect(selectDailyPlan({
+      remainingSessionItems: 0, unresolvedMistakes: 0, dueReviews: 12,
+      hasCurrentTopic: true, allTopicsComplete: false,
+    }).kind).toBe('review')
+    expect(selectDailyPlan({
+      remainingSessionItems: 0, unresolvedMistakes: 0, dueReviews: 0,
+      hasCurrentTopic: true, allTopicsComplete: false,
+    }).kind).toBe('topic')
   })
 })

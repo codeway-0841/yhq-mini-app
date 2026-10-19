@@ -7,9 +7,7 @@ import { useAppStore } from '../store/useAppStore'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
-import DialogOverlay from './DialogOverlay'
-import ModalMathGrid from './ModalMathGrid'
-import ModalHeaderRow from './ModalHeaderRow'
+import ModalShell from './ModalShell'
 import { Button } from './ui/button'
 
 interface PromoCodeModalProps {
@@ -69,25 +67,19 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
   }
 
   return (
-    <DialogOverlay onClose={onClose} position="bottom" swipeToDismiss labelId="promo-code-title" backdropClassName="bg-black/60">
+    <>
       {successData && <Confetti />}
-      <div className="relative w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] shadow-2xl overflow-hidden">
-        <ModalMathGrid glow={false} height={360} />
-        <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
-        <ModalHeaderRow onClose={onClose} label={tt('cancelExit')}>
-          <h3 id="promo-code-title" className="text-lg font-bold text-pfg">
-            {successData ? tt('promoCodeSuccessTitle') : tt('promoCodeTitle')}
-          </h3>
-          {!successData && (
-            <p className="text-xs text-pmuted leading-relaxed mt-1">
-              {tt('promoCodeDesc')}
-            </p>
-          )}
-        </ModalHeaderRow>
-
+      <ModalShell
+        title={successData ? tt('promoCodeSuccessTitle') : tt('promoCodeTitle')}
+        subtitle={successData ? undefined : tt('promoCodeDesc')}
+        onClose={onClose}
+        labelId="promo-code-title"
+        closeLabel={tt('cancelExit')}
+        backdropClassName="bg-black/60"
+      >
         {successData ? (
-          <div className="text-center py-4 relative z-10 px-4">
-            <p className="text-xs text-pmuted leading-relaxed mb-6">
+          <div className="relative z-10 px-2 py-2 text-center">
+            <p className="mb-6 text-[13.5px] leading-relaxed text-pmuted">
               {language === 'ru'
                 ? `Вам успешно предоставлен Premium доступ на ${successData.value} дней!`
                 : `Sizga ${successData.value} kunlik bepul Premium obuna faollashtirildi!`}
@@ -111,12 +103,12 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                   placeholder={tt('promoCodePlaceholder')}
                   autoFocus
                   maxLength={30}
-                  className="w-full bg-pcard rounded-2xl px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg placeholder:text-psubtle placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:ring-2 focus:ring-pprimary shadow-2xs transition-all"
+                  className="w-full rounded-2xl bg-pcard px-4 py-3.5 text-center text-base font-semibold tracking-widest text-pfg shadow-2xs transition-all placeholder:font-normal placeholder:tracking-normal placeholder:text-psubtle focus:outline-none focus:ring-2 focus:ring-pprimary"
                 />
               </div>
 
               {error && (
-                <div className="flex items-center gap-2 p-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] text-pdanger text-xs font-semibold shadow-xs">
+                <div className="flex items-center gap-2 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] p-3 text-xs font-semibold text-pdanger shadow-xs">
                   <AlertCircle size={15} className="flex-shrink-0" />
                   <span>{error}</span>
                 </div>
@@ -133,7 +125,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
             </form>
           </div>
         )}
-      </div>
-    </DialogOverlay>
+      </ModalShell>
+    </>
   )
 }

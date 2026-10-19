@@ -20,6 +20,7 @@ import {
   ScanFace,
   Radio,
   Sparkles,
+  CarFront,
 } from 'lucide-react'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
@@ -67,12 +68,15 @@ export default function ModesPage() {
     { icon: Ticket,        label: tt('tickets'),       onClick: () => navigate('/biletlar') },
     { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
     { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
-    { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate('/darslik') },
+    { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate(subject.id === 'rustili' ? '/darslik/rus-tili' : '/darslik') },
     { icon: Sparkles,      label: tt('interactiveLessons'), onClick: () => navigate('/interaktiv') },
     { icon: LibraryBig,    label: tt('library'),       onClick: () => navigate('/kutubxona') },
     { icon: Bookmark,      label: tt('saved'),         onClick: goSaved },
     ...(subject.id === 'yhq'
-      ? [{ icon: Signpost, label: tt('roadSigns'),     onClick: () => navigate('/belgilar') }]
+      ? [
+          { icon: CarFront, label: tt('driveMode'),    onClick: () => navigate('/drive') },
+          { icon: Signpost, label: tt('roadSigns'),    onClick: () => navigate('/belgilar') },
+        ]
       : []),
     { icon: Hash,          label: tt('numeric'),       onClick: goMode('numeric', tt('numeric')) },
     { icon: Brain,         label: tt('adaptiveTitle'), onClick: () => navigate('/adaptive') },
