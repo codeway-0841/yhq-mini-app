@@ -36,5 +36,21 @@
   o'qiladi, shuning uchun deploy eski progressni bloklamaydi. XP `progress.xp` + `daily_limits`,
   streak/kunlik vazifalar `dailyRepository.touchActivity` orqali — yangi gamification tizimi yo'q.
   2–15-bloklar va 537 mavzuning qolganlari o'zgarishsiz. Revisit next block migration.
+- 2026-10-19 (darslik kesh integrity): `darslik_checks` endi `content_hash`, `source`
+  (`curated|ai|fallback|legacy`) va `generated_at` saqlaydi (0075). Curated SSOT har
+  `POST /darslik/:topicId/check`da o'qiladi; hash farq qilsa `ensureCurated` qatorni
+  majburiy upsert qiladi, shuning uchun deploydan keyin eski AI/eski curated dars qolmaydi.
+  Admin regeneratsiya: `POST /api/admin/darslik/regenerate` `{topicIds | blockId}` —
+  keshni o'chiradi, curated mavzularni darhol qayta yozadi, `audit_logs`ga yozadi.
+  AI/fallback generation `onConflictDoNothing` bo'lib qoladi (parallel generatorlarda
+  birinchi yozgan yutadi). Revisit: kesh revision'ini clientga pin qilish kerak bo'lsa.
+- 2026-10-19 (darslik gamification qarorlari): dars mashqlari `progress.totalCorrect`,
+  liga yoki achievement statistikasiga YOZILMAYDI — ular o'rganish faolligi, imtihon savoli
+  emas (integration test qulflagan). XP va kunlik faollik faqat birinchi v2 mastery passda;
+  takroriy submit yoki boshqa kuni eski mavzuni qayta topshirish streak/XP yozmaydi.
+  Pass chegarasi pilotda 100% (xato bo'lsa butun dars retry); 80%+requeue hozircha
+  qabul qilinmagan. `/answer` — learning feedback endpointi, javobni ataylab darhol
+  qaytaradi; auth + topic lock + 60/min limit bilan cheklangan, imtihon boundary emas.
+  Revisit: darslik XP liga/reytingga ta'sir qilsa yoki requeue mahsulot talabi bo'lsa.
 
 Store new confirmed decisions with evidence and revisit conditions, not daily activity logs.

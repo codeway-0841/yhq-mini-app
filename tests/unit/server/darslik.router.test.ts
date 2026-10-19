@@ -5,8 +5,11 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 const repo = vi.hoisted(() => ({
   passed: vi.fn(),
   check: vi.fn(),
+  checkRecord: vi.fn(),
   findCheck: vi.fn(),
+  ensureCurated: vi.fn(),
   saveCheck: vi.fn(),
+  invalidate: vi.fn(),
   passWithXp: vi.fn(),
 }))
 const daily = vi.hoisted(() => ({ touchActivity: vi.fn() }))
@@ -73,7 +76,9 @@ function answersFor(check: DarslikCheck): DarslikAnswers {
 beforeEach(() => {
   repo.passed.mockReset().mockResolvedValue([])
   repo.check.mockReset().mockResolvedValue(null)
+  repo.checkRecord.mockReset().mockResolvedValue(null)
   repo.findCheck.mockReset().mockResolvedValue(null)
+  repo.ensureCurated.mockReset().mockImplementation(async (_topicId: string, payload: unknown) => payload)
   repo.saveCheck.mockReset().mockImplementation(async (_topicId: string, payload: unknown) => payload)
   repo.passWithXp.mockReset().mockResolvedValue({ passedNow: true, xp: 132, xpEarned: 32 })
   daily.touchActivity.mockReset().mockResolvedValue({ dailyStreak: 4, coinSaved: false })
@@ -123,7 +128,8 @@ describe('darslik router — curated pilot darsi', () => {
     expect(JSON.stringify(res.body)).not.toContain('correctIndex')
     expect(JSON.stringify(res.body)).not.toContain('"explanation"')
     expect(JSON.stringify(res.body)).not.toContain('"correctAnswer"')
-    expect(repo.saveCheck).toHaveBeenCalledWith('1:0', block01Checks['1:0'])
+    expect(repo.ensureCurated).toHaveBeenCalledWith('1:0', block01Checks['1:0'])
+    expect(repo.saveCheck).not.toHaveBeenCalled()
     expect(meta.callMetaJson).not.toHaveBeenCalled()
   })
 
@@ -148,6 +154,21 @@ describe('darslik router — curated pilot darsi', () => {
       xp: 32,
     }))
     expect(daily.touchActivity).toHaveBeenCalledWith('u1', expect.any(String), 'rustili', 6, 6)
+  })
+
+  it('takroriy pass kunlik faollik/streakni qayta yozmaydi', async () => {
+    const check = block01Checks['1:0']
+    repo.findCheck.mockResolvedValue({ version: 2, payload: check })
+    repo.passed.mockResolvedValue(['1:0'])
+    repo.passWithXp.mockResolvedValue({ passedNow: false, xp: 132, xpEarned: 0 })
+
+    const res = await request(makeApp('u1'))
+      .post('/api/darslik/' + topicPath('1:0') + '/submit')
+      .send({ answers: answersFor(check) })
+
+    expect(res.status).toBe(200)
+    expect(res.body).toMatchObject({ passed: true, alreadyPassed: true, xpEarned: 0, xp: 132 })
+    expect(daily.touchActivity).not.toHaveBeenCalled()
   })
 
   it('bitta xato bo‘lsa mastery yozilmaydi va XP berilmaydi', async () => {
@@ -239,10 +260,21 @@ describe('darslik router — v1 moslik va fallback', () => {
     expect(res.body.questions).toHaveLength(3)
     expect(res.body.questions.filter((question: { kind: string }) => question.kind === 'mcq')).toHaveLength(2)
     expect(res.body.questions.filter((question: { kind: string }) => question.kind === 'input')).toHaveLength(1)
-    expect(repo.saveCheck).toHaveBeenCalled()
+    expect(repo.saveCheck).toHaveBeenCalledWith(expect.any(String), expect.any(Object), { source: 'fallback' })
 
     const payload = repo.saveCheck.mock.calls[repo.saveCheck.mock.calls.length - 1]?.[1]
     expect(DarslikCheckSchema.safeParse(payload).success).toBe(true)
+  })
+
+  it('AI javobi valid bo‘lsa source ai bilan keshlanadi', async () => {
+    repo.passed.mockResolvedValue(BLOCK_1_PASSED)
+    meta.callMetaJson.mockResolvedValue(block01Checks['1:0'])
+
+    const res = await request(makeApp('u1')).post('/api/darslik/' + topicPath('2:0') + '/check')
+
+    expect(res.status).toBe(200)
+    expect(res.body.format).toBe('lesson')
+    expect(repo.saveCheck).toHaveBeenCalledWith('2:0', block01Checks['1:0'], { source: 'ai' })
   })
 
   it('curated dars javob kalitlari bilan ham o‘z-o‘zidan o‘tadi', () => {

@@ -1,16 +1,22 @@
 import { and, eq, inArray, sql } from 'drizzle-orm'
 import { db, executeRows } from '../../db/connection'
-import { darslikChecks, darslikMastery } from '../../schema'
+import { darslikChecks, darslikMastery, type DarslikCheckSource } from '../../schema'
 import {
   DARSLIK_CHECK_VERSION,
   DARSLIK_CHECK_VERSIONS,
   type DarslikCheck,
 } from '../../../shared/darslik-mastery'
 import { XP_DAILY_CAP } from '../../../shared/xp'
+import { darslikCheckHash } from './check-cache'
 
 export interface StoredDarslikCheck {
   version: number
   payload: DarslikCheck
+}
+
+export type StoredDarslikCheckRecord = StoredDarslikCheck & {
+  contentHash: string
+  source: DarslikCheckSource
 }
 
 export const darslikRepository = {
@@ -27,31 +33,107 @@ export const darslikRepository = {
     return [...new Set(rows.map(row => row.topicId))]
   },
 
-  async check(topicId: string, version: number = DARSLIK_CHECK_VERSION) {
+  async checkRecord(topicId: string, version: number = DARSLIK_CHECK_VERSION) {
     const [row] = await db.select().from(darslikChecks)
       .where(and(eq(darslikChecks.topicId, topicId), eq(darslikChecks.version, version)))
       .limit(1)
-    return row?.payload
+    return row ?? null
+  },
+
+  async check(topicId: string, version: number = DARSLIK_CHECK_VERSION) {
+    return (await this.checkRecord(topicId, version))?.payload
   },
 
   /**
    * v2 ni afzal ko'radi, lekin deploy paytida yuklangan v1 darsni ham topadi —
    * foydalanuvchi yarim yo'lda bloklanib qolmasligi uchun.
    */
-  async findCheck(topicId: string): Promise<StoredDarslikCheck | null> {
+  async findCheck(topicId: string): Promise<StoredDarslikCheckRecord | null> {
     for (const version of DARSLIK_CHECK_VERSIONS) {
-      const payload = await this.check(topicId, version)
-      if (payload) return { version, payload }
+      const record = await this.checkRecord(topicId, version)
+      if (record) {
+        return {
+          version,
+          payload: record.payload,
+          contentHash: record.contentHash,
+          source: record.source,
+        }
+      }
     }
     return null
   },
 
-  async saveCheck(topicId: string, payload: DarslikCheck): Promise<DarslikCheck> {
-    await db.insert(darslikChecks).values({ topicId, version: DARSLIK_CHECK_VERSION, payload }).onConflictDoNothing()
+  /**
+   * Curated kontent — hash bo'yicha keshni invalidation qiladi.
+   *
+   * Har mavzu ochilishida DB o'qiladi (kichik PK lookup), lekin yozuv faqat
+   * kontent haqiqatan o'zgarganda bo'ladi. Shu bilan curated tuzatish deploy
+   * qilingan zahoti keyingi `/check`da foydalanuvchiga yetib boradi.
+   */
+  async ensureCurated(topicId: string, payload: DarslikCheck): Promise<DarslikCheck> {
+    const contentHash = darslikCheckHash(payload)
+    const current = await this.checkRecord(topicId)
+    if (
+      current
+      && current.version === DARSLIK_CHECK_VERSION
+      && current.contentHash === contentHash
+      && current.source === 'curated'
+    ) {
+      return current.payload
+    }
+    return this.saveCheck(topicId, payload, { source: 'curated', force: true })
+  },
+
+  /**
+   * `force` — curated/admin regeneratsiyasi: mavjud qatorni majburiy yangilaydi.
+   * `force`siz — AI/fallback generation: parallel generatorlar ichida birinchi
+   * yozgan yutadi, ikkinchisi yo'qotgan javob kalitini qaytarmaydi.
+   */
+  async saveCheck(
+    topicId: string,
+    payload: DarslikCheck,
+    options: { source: DarslikCheckSource; force?: boolean },
+  ): Promise<DarslikCheck> {
+    const contentHash = darslikCheckHash(payload)
+    const values = {
+      topicId,
+      version: DARSLIK_CHECK_VERSION,
+      payload,
+      contentHash,
+      source: options.source,
+    }
+
+    if (options.force) {
+      const [saved] = await db.insert(darslikChecks).values(values)
+        .onConflictDoUpdate({
+          target: [darslikChecks.topicId, darslikChecks.version],
+          set: {
+            payload,
+            contentHash,
+            source: options.source,
+            generatedAt: new Date(),
+          },
+        })
+        .returning({ payload: darslikChecks.payload })
+      if (!saved) throw new Error('Darslik check persistence failed')
+      return saved.payload
+    }
+
+    await db.insert(darslikChecks).values(values).onConflictDoNothing()
     // Concurrent generators must return the persisted winner, never their losing answer key.
     const saved = await this.check(topicId)
     if (!saved) throw new Error('Darslik check persistence failed')
     return saved
+  },
+
+  /** Admin regeneratsiyasi: keshni o'chiradi, keyingi `/check` qayta yaratadi. */
+  async invalidate(topicIds: readonly string[]): Promise<number> {
+    const unique = [...new Set(topicIds)]
+    if (unique.length === 0) return 0
+    const rows = await db.delete(darslikChecks)
+      .where(inArray(darslikChecks.topicId, unique))
+      .returning({ topicId: darslikChecks.topicId })
+    return rows.length
   },
 
   /**
@@ -110,7 +192,12 @@ export const darslikRepository = {
       SELECT
         EXISTS (SELECT 1 FROM pass) AS passed_now,
         (SELECT COUNT(*)::int FROM prog) AS progress_updated,
-        (SELECT xp::int FROM prog) AS xp,
+        -- Takroriy submitda prog bo'sh bo'ladi; baribir joriy XP'ni qaytaramiz,
+        -- shunda client har javobdan keyin serverdagi qiymatni sinxronlaydi.
+        COALESCE(
+          (SELECT xp::int FROM prog),
+          (SELECT xp::int FROM progress WHERE user_id = ${input.userId})
+        ) AS xp,
         (SELECT amount::int FROM xp_award) AS xp_earned
     `)
     const row = rows[0]

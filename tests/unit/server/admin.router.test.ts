@@ -4,6 +4,7 @@ import { createApp } from '../../../server/app'
 import { db } from '../../../server/db/connection'
 import { authRepository } from '../../../server/modules/auth/auth.repository'
 import { adminRepository } from '../../../server/modules/admin/admin.repository'
+import { darslikRepository } from '../../../server/modules/darslik/darslik.repository'
 
 const app = createApp()
 
@@ -143,6 +144,61 @@ describe('server/modules/admin/admin.router.ts - Admin Router Tests', () => {
 
       const res = await adminGet('/api/admin/questions/meta?subject=yhq').expect(200)
       expect(res.body).toEqual({ total: 10, withTopic: 8 })
+    })
+  })
+
+  describe('Darslik testi keshini regeneratsiya qilish', () => {
+    const adminPost = (body: unknown) =>
+      request(app)
+        .post('/api/admin/darslik/regenerate')
+        .set('Authorization', 'Bearer admin_bearer_token')
+        .send(body as object)
+
+    beforeEach(() => {
+      vi.spyOn(db, 'select').mockReturnValue({
+        from: vi.fn().mockReturnValue({
+          where: vi.fn().mockResolvedValue([{ isAdmin: true }]),
+        }),
+      } as any)
+      vi.spyOn(authRepository, 'createAuditLog').mockResolvedValue(undefined)
+    })
+
+    it('credentials’siz 401, oddiy user uchun 403', async () => {
+      await request(app).post('/api/admin/darslik/regenerate').send({ blockId: 1 }).expect(401)
+
+      vi.spyOn(db, 'select').mockReturnValue({
+        from: vi.fn().mockReturnValue({
+          where: vi.fn().mockResolvedValue([{ isAdmin: false }]),
+        }),
+      } as any)
+      await adminPost({ blockId: 1 }).expect(403)
+    })
+
+    it('topicIds va blockId birga yuborilsa 400', async () => {
+      const invalidate = vi.spyOn(darslikRepository, 'invalidate')
+      await adminPost({ blockId: 1, topicIds: ['1:0'] }).expect(400)
+      expect(invalidate).not.toHaveBeenCalled()
+    })
+
+    it('noma’lum mavzu 404 — kesh o‘chirilmaydi', async () => {
+      const invalidate = vi.spyOn(darslikRepository, 'invalidate')
+      const res = await adminPost({ topicIds: ['99:0'] }).expect(404)
+      expect(res.body.error).toBe('TOPIC_NOT_FOUND')
+      expect(invalidate).not.toHaveBeenCalled()
+    })
+
+    it('1-blok keshini o‘chiradi va 12 curated darsni qayta yozadi', async () => {
+      const invalidate = vi.spyOn(darslikRepository, 'invalidate').mockResolvedValue(12)
+      const save = vi.spyOn(darslikRepository, 'saveCheck')
+        .mockImplementation(async (_topicId, payload) => payload)
+
+      const res = await adminPost({ blockId: 1 }).expect(200)
+
+      expect(res.body).toEqual({ topics: 12, invalidated: 12, curatedReseeded: 12 })
+      expect(invalidate).toHaveBeenCalledWith(expect.arrayContaining(['1:0', '1:11']))
+      expect(invalidate.mock.calls[0]?.[0]).toHaveLength(12)
+      expect(save).toHaveBeenCalledTimes(12)
+      expect(save).toHaveBeenCalledWith('1:0', expect.objectContaining({ format: 'lesson' }), { source: 'curated', force: true })
     })
   })
 })

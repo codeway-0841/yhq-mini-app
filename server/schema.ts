@@ -1129,11 +1129,25 @@ export const aiCourseProgress = pgTable('ai_course_progress', {
   check('chk_ai_course_progress_scores', sql`${t.scoreCorrect} >= 0 AND ${t.scoreTotal} > 0 AND ${t.scoreCorrect} <= ${t.scoreTotal} AND ${t.coinsAwarded} >= 0`),
 ])
 
-/** Textbook answer keys stay on the server; read markers never count as mastery. */
+/** Kesh qatorining kelib chiqishi — admin regeneratsiyasi va audit uchun. */
+export type DarslikCheckSource = 'curated' | 'ai' | 'fallback' | 'legacy'
+
+/**
+ * Darslik testi keshi — javob kalitlari faqat serverda.
+ *
+ * `content_hash` — payload'ning kanonik SHA-256'si. Curated kontent
+ * o'zgarganda hash farq qiladi va `/check` eski qatorni majburiy yangilaydi;
+ * busiz deploydan keyin ham foydalanuvchilar eski (xato) darsni ko'raverardi.
+ * `source` — qator qanday yaratilgani (curated/AI/fallback/legacy): admin
+ * regeneratsiya va audit uchun provenance.
+ */
 export const darslikChecks = pgTable('darslik_checks', {
   topicId: text('topic_id').notNull(),
   version: integer('version').notNull(),
   payload: jsonb('payload').$type<DarslikCheck>().notNull(),
+  contentHash: text('content_hash').notNull().default(''),
+  source: text('source').$type<DarslikCheckSource>().notNull().default('legacy'),
+  generatedAt: timestamp('generated_at').defaultNow().notNull(),
 }, t => [primaryKey({ columns: [t.topicId, t.version] })])
 
 export const darslikMastery = pgTable('darslik_mastery', {

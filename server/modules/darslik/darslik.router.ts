@@ -86,11 +86,9 @@ const AI_FORMAT = {
 }
 
 async function generateCheck(topicId: string, topic: { title: string; source: string }): Promise<DarslikCheck | null> {
-  const curated = curatedDarslikCheck(topicId)
-  if (curated) return darslikRepository.saveCheck(topicId, curated)
-
+  // Curated kontent router'da, AI'dan oldin hal qilinadi (ensureCurated).
   // 1:0 uchun eski qo'lda yozilgan test — curated topilmasa ham zaxira.
-  if (topicId === '1:0') return darslikRepository.saveCheck(topicId, firstTopicCheck)
+  if (topicId === '1:0') return darslikRepository.saveCheck(topicId, firstTopicCheck, { source: 'legacy' })
 
   let aiError: unknown
   if (config.ai.metaApiKey) {
@@ -102,7 +100,7 @@ async function generateCheck(topicId: string, topic: { title: string; source: st
         { timeoutMs: 45_000, maxTokens: 4200 },
       )
       const parsed = DarslikCheckSchema.safeParse(normalizeAiCheck(raw))
-      if (parsed.success) return darslikRepository.saveCheck(topicId, parsed.data)
+      if (parsed.success) return darslikRepository.saveCheck(topicId, parsed.data, { source: 'ai' })
       aiError = new Error('AI check schema invalid')
     } catch (error) {
       aiError = error
@@ -119,13 +117,13 @@ async function generateCheck(topicId: string, topic: { title: string; source: st
     aiError instanceof Error ? aiError.message.slice(0, 200) : String(aiError),
   )
   const fallback = buildFallbackCheck(topic, topics)
-  if (fallback) return darslikRepository.saveCheck(topicId, fallback)
+  if (fallback) return darslikRepository.saveCheck(topicId, fallback, { source: 'fallback' })
 
   // Oxirgi chora: eski v1 test bo'lsa, uni v2 jurnaliga ko'chiramiz.
   const legacy = await darslikRepository.check(topicId, DARSLIK_LEGACY_CHECK_VERSION)
   if (legacy) {
     const parsed = DarslikCheckSchema.safeParse(legacy)
-    if (parsed.success) return darslikRepository.saveCheck(topicId, parsed.data)
+    if (parsed.success) return darslikRepository.saveCheck(topicId, parsed.data, { source: 'legacy' })
   }
   return null
 }
@@ -134,7 +132,12 @@ router.post('/darslik/:topicId/check', dbRateLimit({ maxPerMinute: 6, bucket: 'd
   const topicId = req.params.topicId as string
   await requireTopicAccess((req as unknown as { userId: string }).userId, topicId)
 
-  let check: DarslikCheck | null = await darslikRepository.check(topicId)
+  // Curated — SSOT. DB'dagi eski (AI yoki eski curated) qator hash bo'yicha
+  // yangilanadi; aks holda tuzatilgan dars deploydan keyin ham ko'rinmasdi.
+  const curated = curatedDarslikCheck(topicId)
+  let check: DarslikCheck | null = curated
+    ? await darslikRepository.ensureCurated(topicId, curated)
+    : await darslikRepository.check(topicId)
   if (!check) check = await generateCheck(topicId, topics[topicId])
   if (!check) throw new AppError(503, 'PRACTICE_UNAVAILABLE')
   const parsed = DarslikCheckSchema.safeParse(check)
@@ -191,20 +194,25 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
     })
     xpEarned = pass.xpEarned
     xp = pass.xp
-    try {
-      // Mavjud kunlik faollik/streak tizimi — yangi streak store yaratilmaydi.
-      const daily = await dailyRepository.touchActivity(
-        userId,
-        date,
-        DARSLIK_SUBJECT_ID,
-        pass.passedNow ? result.total : 0,
-        pass.passedNow ? result.correct : 0,
-      )
-      dailyStreak = daily.dailyStreak
-      coinSaved = daily.coinSaved
-    } catch (error) {
-      // Dars pass bo'ldi — streak xatosi natijani yoki keyingi mavzuni buzmaydi.
-      console.warn('[darslik] daily activity update failed:', topicId, error instanceof Error ? error.message : String(error))
+    // Kunlik faollik FAQAT birinchi mastery passda yoziladi. Takroriy submit
+    // (yoki boshqa kuni eski mavzuni qayta topshirish) 0/0 qator yaratib
+    // streak'ni soxta davom ettirardi — bu gamification integrity buzilishi.
+    if (pass.passedNow) {
+      try {
+        // Mavjud kunlik faollik/streak tizimi — yangi streak store yaratilmaydi.
+        const daily = await dailyRepository.touchActivity(
+          userId,
+          date,
+          DARSLIK_SUBJECT_ID,
+          result.total,
+          result.correct,
+        )
+        dailyStreak = daily.dailyStreak
+        coinSaved = daily.coinSaved
+      } catch (error) {
+        // Dars pass bo'ldi — streak xatosi natijani yoki keyingi mavzuni buzmaydi.
+        console.warn('[darslik] daily activity update failed:', topicId, error instanceof Error ? error.message : String(error))
+      }
     }
   }
 
