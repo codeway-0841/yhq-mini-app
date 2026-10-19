@@ -1363,6 +1363,60 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
    sirt ierarxiyasi bilan beriladi. */
 .dashboard-page { background-color: var(--p-canvas); }
 
+/* ── Dashboard "Personal" qatori (IMG_0928.MOV bilan 1:1) ───────────────────
+   Video kadri 384×832 (≈393pt ekran, 1 kadr px ≈ 1pt). O'lchangan qiymatlar:
+     qator balandligi 42 · shaxs pill'i 108×42 · qiymat pill'i 104×42
+     avatar doirasi 30 · ichidagi glif 14–15 · qator ikonkalari 18–19
+     doira tugmalar 42×42 · chekka padding 16 · o'ng guruh oralig'i 15
+   Shisha (glass) retsepti bitta: fill --p-fg'dan 6%, border --p-line-strong.
+   `var(--p-fg)` light temada qora, dark'da oq — shu sababli 20+ aksent mavzusi
+   va ikkala temada ham bir xil kod ishlaydi (aksentga bog'lanib qolmaydi). */
+.dash-top-pill,
+.dash-top-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid var(--p-line-strong);
+  background: rgba(255, 255, 255, 0.06);           /* color-mix yo'q WebView */
+  background: color-mix(in srgb, var(--p-fg) 6%, transparent);
+  box-shadow: inset 0 1px 0 var(--p-line-strong);
+  -webkit-backdrop-filter: blur(18px) saturate(1.6);
+  backdrop-filter: blur(18px) saturate(1.6);
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 160ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    background-color 160ms ease-out;
+}
+.dash-top-circle {
+  width: 42px;
+  flex-shrink: 0;
+  justify-content: center;
+  color: var(--p-fg);
+}
+/* Video: pill'lar ham, doiralar ham bir xil "bosilish" effekti beradi */
+.dash-top-press:active { transform: scale(0.965); }
+@media (prefers-reduced-motion: reduce) {
+  .dash-top-pill,
+  .dash-top-circle { transition: none; }
+  .dash-top-press:active { transform: none; }
+}
+
+/* Avatar doirasi — video: to'yingan ko'k gradient + oq glif */
+.dash-top-avatar {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 999px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #4a86ff 0%, #1d51e8 56%, #0b32c9 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.38);
+}
+
 .dashboard-menu-anchor { bottom: calc(var(--safe-bottom, 0px) + 16px); }
 .floating-menu-btn {
   background-color: rgba(24, 30, 38, 0.90);

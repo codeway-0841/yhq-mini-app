@@ -1,45 +1,62 @@
 import { memo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Sun, Moon, ChevronDown, ChevronRight, Flame } from 'lucide-react'
+import { Sun, Moon, ChevronDown, ChevronRight, ChartNoAxesColumn } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { useT } from '../../../shared/i18n'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { transitionTheme } from '../../../shared/lib/theme-transition'
-import CoinIcon from '../../../shared/components/CoinIcon'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { useUpdateStore } from '../../../platform/version-check'
 import UpdateSheet from '../../../shared/components/UpdateSheet'
 
+// ── Person glifi ────────────────────────────────────────────────────────────
+// IMG_0928.MOV (Expensa "Personal" qatori) dagi TO'LDIRILGAN odam ikonkasi.
+// lucide `User` stroke-based — video ko'rinishi bilan mos kelmaydi, shuning
+// uchun 24×24 to'ldirilgan profil qo'lda chizildi (bosh doira + yelka yoyi).
+export const PersonGlyph = memo(function PersonGlyph({ size = 17 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="7.4" r="4.4" />
+      <path d="M12 13.7c-4.3 0-7.7 2.7-7.7 6 0 .5.4.9.9.9h13.6c.5 0 .9-.4.9-.9 0-3.3-3.4-6-7.7-6Z" />
+    </svg>
+  )
+})
+
 // ── Avatar ──────────────────────────────────────────────────────────────────
-// DIQQAT: bu avatar DOIRA bo'lib qoladi (ui/Avatar squircle emas) — sotib
+// DIQQAT: avatar DOIRA bo'lib qoladi (ui/Avatar squircle emas) — sotib
 // olinadigan ramka kosmetikasi (avatar-frames) doira halqa uchun chizilgan.
-const Avatar = memo(function Avatar({ name, photoUrl }: { name: string; photoUrl?: string }) {
+// O'lcham video bilan 1:1: 30px doira (qator balandligi 42).
+const Avatar = memo(function Avatar({ photoUrl }: { photoUrl?: string }) {
   const customAvatar = useAppStore((s) => s.customAvatar)
   const avatarFrame  = useAppStore((s) => s.avatarFrame)
   const frameClass = getAvatarFrame(avatarFrame)?.cssClass ?? null
   const src = customAvatar ?? photoUrl
-  const letter = name?.[0]?.toUpperCase() || 'F'
-  const inner = src ? (
-    <img src={src} alt="" className="size-11 rounded-full object-cover shadow-2xs" />
-  ) : (
-    <div className="flex size-11 items-center justify-center rounded-full bg-pwash text-lg font-bold text-pprimary shadow-2xs">
-      {letter}
-    </div>
+  const inner = (
+    <span className="dash-top-avatar">
+      {src ? <img src={src} alt="" className="size-full object-cover" /> : <PersonGlyph />}
+    </span>
   )
   return (
-    <div className="relative flex-shrink-0">
-      {/* #40: sotib olingan avatar ramkasi (CSS-only, avatar-frames config) */}
-      {frameClass ? (
-        <span className={`avatar-frame ${frameClass}`}>{inner}</span>
-      ) : inner}
-    </div>
+    <span className="relative flex flex-shrink-0">
+      {frameClass ? <span className={`avatar-frame ${frameClass}`}>{inner}</span> : inner}
+    </span>
   )
 })
 
-// ── Top Bar (v3 KIWI) ───────────────────────────────────────────────────────
+// ── Top Bar (v4 — "Personal qatori", IMG_0928.MOV bilan 1:1) ────────────────
+// Qator 4 elementdan iborat (video bilan bir xil tartib):
+//   1) shaxs pill   — [ko'k avatar doirasi] + ism      → Profil
+//   2) qiymat pill  — [nuqta] + fan nomi               → Fan tanlash
+//   3) doira        — ustunli grafik (analytics)       → Statistika
+//   4) doira        — quyosh/oy                        → Tema almashtirish
+// Statistika ataylab tanga o'rnida: u ilovada eng chuqur yashiringan
+// ekran edi (faqat Profil orqali, Dynamic Island o'chirilgan), tanga/do'kon
+// esa Profil'dan ochiladi va kundalik o'quv loop'iga kirmaydi.
+// O'lchovlar: balandlik 42 · avatar 30 · doira ichidagi ikonka 18–19 ·
+// chekka padding 16 · o'ng guruh oralig'i 14 (index.css: .dash-top-*).
 export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onSettings, onProfile, onSubjects }: {
   user: ApiUser | null
   displayName: string | null
@@ -52,9 +69,8 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
   const tt = useT(lang)
   const subject = useSubjectStore((s) => s.subject)
   const theme = useAppStore((s) => s.settings.theme)
-  const streak = useAppStore((s) => s.streak)
-  const coins = useAppStore((s) => s.coins)
   const name = displayName ?? user?.firstName ?? tt('guestName')
+  const subjectName = lang === 'ru' ? subject.nameRu : subject.name
 
   // Dark / Light rejimini bir bosishda silliq aylanma ochilish (circular reveal) bilan almashtirish
   const toggleTheme = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -76,7 +92,7 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
 
   const isDark = theme === 'light' ? false : (theme === 'dark' ? true : (typeof document !== 'undefined' ? document.body.dataset.theme !== 'light' : true))
 
-  // Soft update holati (agar yangilanish bo'lsa, profil bilan toggle o'rtasida aynan bir qatorda chiqadi)
+  // Soft update holati (agar yangilanish bo'lsa, fan pill'i o'rnida chiqadi)
   const [showUpdateSheet, setShowUpdateSheet] = useState(false)
   const updateStatus = useUpdateStore((s) => s.status)
   const updateInfo = useUpdateStore((s) => s.info)
@@ -87,17 +103,21 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
 
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3 lg:static lg:mt-0 lg:pt-3 lg:bg-transparent lg:backdrop-blur-none lg:[-webkit-backdrop-filter:none] lg:border-none lg:shadow-none">
-      <div className="flex items-center justify-between gap-2 px-4 py-2">
+      <div className="flex items-center gap-2.5 px-4 py-2">
+        {/* 1 — Shaxs pill: ko'k avatar doirasi + ism (video: odam ikonkasi + "Personal") */}
         <button
           type="button"
-          aria-label={tt('profile')}
           onClick={onProfile}
-          className="flex shrink-0 items-center rounded-xl transition-opacity active:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas lg:hidden"
+          aria-label={`${tt('profile')}: ${name}`}
+          className="dash-top-pill dash-top-press max-w-[112px] shrink-0 gap-2.5 overflow-hidden xs:max-w-[136px] pr-3.5 pl-1.5 lg:hidden"
         >
-          <Avatar name={name} photoUrl={avatarSrcFor(user) ?? undefined} />
+          <Avatar photoUrl={avatarSrcFor(user) ?? undefined} />
+          <span className="min-w-0 truncate text-[15px] font-semibold leading-none tracking-[-0.01em] text-pfg">
+            {name}
+          </span>
         </button>
 
-        {/* Profil logo bilan toggle o'rtasida: yangi versiya bo'lsa yaxlit Update kapsulasi, aks holda Fanni tanlash */}
+        {/* 2 — Qiymat pill: fan (video: bayroq + balans) yoki yangilanish */}
         {hasSoftUpdate && updateInfo ? (
           <button
             type="button"
@@ -106,78 +126,55 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
               haptics.impact('light')
               setShowUpdateSheet(true)
             }}
-            className="flex min-h-11 h-11 min-w-0 flex-1 items-center justify-between gap-2.5 rounded-full px-4 bg-[rgb(var(--p-card-rgb)/0.92)] text-pfg backdrop-blur-2xl saturate-150 border border-plineStrong shadow-2xs active:scale-[0.98] transition-transform cursor-pointer select-none"
+            className="dash-top-pill dash-top-press min-w-0 flex-1 gap-2 px-3.5 lg:max-w-[320px]"
           >
-            <div className="flex min-w-0 items-center gap-2.5">
-              {/* Dashboard Dynamic Island'dagi kabi nafis pulse */}
-              <span className="relative flex size-2.5 shrink-0">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75" />
-                <span className="relative inline-flex size-2.5 rounded-full bg-blue-500" />
-              </span>
-
-              <span className="truncate text-[13.5px] font-semibold tracking-tight">
-                {lang === 'ru' ? 'Доступно обновление' : 'Yangi versiya mavjud'}
-              </span>
-            </div>
-
-            <div className="flex shrink-0 items-center gap-1.5">
-              {updateInfo.latestVersion && updateInfo.latestVersion !== '0.0.0' && (
-                <span className="shrink-0 text-[12px] font-medium text-pmuted">
-                  v{updateInfo.latestVersion}
-                </span>
-              )}
-              <ChevronRight size={15} className="text-pmuted shrink-0" />
-            </div>
+            <span className="relative flex size-2.5 shrink-0">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75" />
+              <span className="relative inline-flex size-2.5 rounded-full bg-blue-500" />
+            </span>
+            <span className="truncate text-[14px] font-semibold leading-none tracking-[-0.01em] text-pfg">
+              {lang === 'ru' ? 'Доступно обновление' : 'Yangi versiya mavjud'}
+            </span>
+            <ChevronRight size={15} className="shrink-0 text-pmuted" aria-hidden="true" />
           </button>
         ) : (
           <button
             type="button"
             onClick={onSubjects}
-            aria-label={`${tt('subjectSelect')}: ${lang === 'ru' ? subject.nameRu : subject.name}`}
-            className="flex min-h-11 min-w-0 flex-1 items-center gap-2 rounded-xl px-2 text-left text-pfg transition-[transform,background-color] duration-150 ease-out motion-safe:active:scale-[0.98] [@media(hover:hover)]:hover:bg-psurface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary lg:ml-0 lg:flex-initial lg:border lg:border-pline lg:bg-pwash hover:lg:bg-psurface lg:px-3.5 lg:py-1.5 lg:shadow-2xs cursor-pointer"
+            aria-label={`${tt('subjectSelect')}: ${subjectName}`}
+            className="dash-top-pill dash-top-press min-w-0 flex-1 gap-2 pr-2.5 pl-3.5 lg:max-w-[320px]"
           >
-            <span aria-hidden="true" className="size-2.5 shrink-0 rounded-full shadow-2xs" style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }} />
-            <span className="min-w-0 text-[14px] font-semibold leading-snug">{lang === 'ru' ? subject.nameRu : subject.name}</span>
-            <ChevronDown size={16} className="shrink-0 text-pmuted" aria-hidden="true" />
+            <span
+              aria-hidden="true"
+              className="size-2.5 shrink-0 rounded-full shadow-2xs"
+              style={{ backgroundImage: `linear-gradient(135deg, ${subject.color}, ${subject.colorDark})` }}
+            />
+            <span className="truncate text-[14px] font-semibold leading-none tracking-[-0.01em] text-pfg">
+              {subjectName}
+            </span>
+            <ChevronDown size={15} className="shrink-0 text-pmuted" aria-hidden="true" />
           </button>
         )}
 
-        <div className="flex flex-shrink-0 items-center gap-2 lg:mr-0">
-          {/* Wondering-uslub Flame (Olov) va Coin (Tanga) kapsulasi */}
-          <div className="hidden sm:flex items-center rounded-xl border border-pline bg-pwash px-3 py-1.5 shadow-2xs gap-3 text-[13px] font-semibold text-pfg">
-            <button
-              type="button"
-              onClick={() => { playSound('click'); navigate('/streak') }}
-              title={tt('intizomTitle')}
-              className="flex items-center gap-1.5 transition-colors hover:text-orange-500 cursor-pointer"
-            >
-              <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
-              <span>{streak || 0}</span>
-            </button>
-            <span className="h-3 w-px bg-pline" aria-hidden="true" />
-            <button
-              type="button"
-              onClick={() => { playSound('click'); navigate('/shop') }}
-              title={tt('shopTitle')}
-              className="flex items-center gap-1.5 transition-colors hover:text-amber-500 cursor-pointer"
-            >
-              <CoinIcon size={15} className="text-amber-500 shrink-0" />
-              <span>{coins || 0}</span>
-            </button>
-          </div>
+        {/* 3–4 — O'ng guruh: ikkita shisha doira (video bilan bir xil o'lcham) */}
+        <div className="ml-auto flex shrink-0 items-center gap-3.5">
+          {/* 3 — Analitika (video: bars ikonkasi) → Statistika */}
+          <button
+            type="button"
+            onClick={() => { playSound('click'); haptics.impact('light'); navigate('/statistika') }}
+            aria-label={tt('statsTitle')}
+            className="dash-top-circle dash-top-press"
+          >
+            <ChartNoAxesColumn size={19} strokeWidth={2.2} />
+          </button>
 
-          {/* Dark / Light rejim toggle tugmasi */}
           <button
             type="button"
             onClick={toggleTheme}
             aria-label={isDark ? 'Light mode' : 'Dark mode'}
-            className="theme-toggle-btn grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer"
+            className="dash-top-circle dash-top-press"
           >
-            {isDark ? (
-              <Moon size={20} strokeWidth={2} />
-            ) : (
-              <Sun size={20} strokeWidth={2} />
-            )}
+            {isDark ? <Moon size={19} strokeWidth={2} /> : <Sun size={19} strokeWidth={2} />}
           </button>
         </div>
       </div>
@@ -197,5 +194,3 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
     </header>
   )
 })
-
-

@@ -7,7 +7,7 @@ import {
   Copy, Phone, Lock, Globe, CreditCard,
   RotateCcw, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
-  BarChart2, CloudUpload, Ticket, Award, X, SlidersHorizontal, ShoppingBag,
+  CloudUpload, Ticket, Award, X, SlidersHorizontal, ShoppingBag,
 } from 'lucide-react'
 import AppearanceModal from '../../shared/components/AppearanceModal'
 import { CoinIcon } from '../../shared/components/CoinIcon'
@@ -403,9 +403,6 @@ export default function Profil() {
           right={<ChevronRight size={16} strokeWidth={1.75} className="text-psubtle" />}
           onPress={() => navigate('/sharhlar')}
         />
-
-        <Item icon={BarChart2} label={tt('statsTitle')}
-          onPress={() => navigate('/statistika')} />
 
         <Item icon={CreditCard} label={tt('payHistory')}
           onPress={() => setShowPayHistory(true)} />

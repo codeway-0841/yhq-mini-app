@@ -52,7 +52,10 @@ export const ModalMathGrid = memo(function ModalMathGrid({
       window.matchMedia('(prefers-color-scheme: dark)').matches)
 
   const activeGlowColor = glowColor === 'theme' ? getAccentTheme(accent).color : glowColor
-  const gridLine = isDark ? 'rgba(255, 255, 255, 0.045)' : 'rgba(0, 0, 0, 0.035)'
+  // To'r kuchi — GLOBAL standart (2026-10-19): 0.045/0.035 juda nozik edi, foydalanuvchi
+  // amalda ko'rmasdi (ayniqsa qisqa sheet'larda). 0.075/0.055 — imzo to'ri sezilarli,
+  // lekin matn bilan raqobatlashmaydi. Barcha modal/sheet shu yagona qiymatni oladi.
+  const gridLine = isDark ? 'rgba(255, 255, 255, 0.075)' : 'rgba(0, 0, 0, 0.055)'
   const glowAlpha1 = isDark ? 0.28 : 0.16
   const glowAlpha2 = isDark ? 0.07 : 0.04
 
