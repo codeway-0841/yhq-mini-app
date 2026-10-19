@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ChevronDown, ChevronUp, Dumbbell, Crown } from 'lucide-react'
+import { ChevronDown, ChevronUp, Dumbbell, Crown, Lock } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import { registerModal } from '../../shared/lib/navigation'
@@ -9,10 +9,18 @@ import { useT, type Lang } from '../../shared/i18n'
 const SHOW_PATH_PRACTICE = false
 
 /** Browsing stays available while the dock follows the scroll-selected lesson. */
-export default function LessonPreview({ title, selectionKey, check, current, done, premiumRequired, lang, collapsed, onJump, jumpDirection, onClose, onStart, onPractice }: {
+export default function LessonPreview({ title, selectionKey, check, current, done, premiumRequired, lang, collapsed, onJump, jumpDirection, onClose, onStart, onPractice, locked = false, lockedHint, quizPending = false, onQuiz }: {
   title: string; selectionKey: string; check: boolean; current: boolean; done: boolean; lang: Lang; collapsed: boolean
   premiumRequired: boolean
   onJump?: () => void; jumpDirection: 'up' | 'down'; onClose: () => void; onStart: () => void; onPractice: () => void
+  /** Ketma-ket ochilish: oldingi mavzu testidan o'tilmagan */
+  locked?: boolean
+  /** Qulf sababi (tarjima qilingan matn) */
+  lockedHint?: string
+  /** Mavzu o'qilgan, lekin testdan o'tilmagan */
+  quizPending?: boolean
+  /** Testni ochish */
+  onQuiz?: () => void
 }) {
   const tt = useT(lang)
   const closeRef = useRef(onClose)
@@ -44,10 +52,32 @@ export default function LessonPreview({ title, selectionKey, check, current, don
         </div>
       </ModalHeaderRow>
       {premiumRequired && <p className="mb-4 text-center text-xs text-pmuted">{tt('pathPremiumHint')}</p>}
-      <Button size="lg" block className="lesson-preview-start" data-jump={jump || premiumRequired} onClick={onStart}>
-        {premiumRequired && <Crown aria-hidden="true" />}
-        {premiumRequired ? tt('pathPremiumOpen') : check ? tt('pathCheckStart') : done ? tt('pathReview') : current ? tt('pathStart') : tt('pathJumpAhead')}
-      </Button>
+      {locked ? (
+        <>
+          <p className="mb-4 flex items-start justify-center gap-2 rounded-xl bg-psurface px-3 py-2.5 text-center text-xs font-medium text-pmuted">
+            <Lock aria-hidden="true" size={14} strokeWidth={2.25} className="mt-0.5 shrink-0" />
+            <span>{lockedHint ?? tt('pathLocked')}</span>
+          </p>
+          <Button size="lg" block className="lesson-preview-start" disabled>
+            <Lock aria-hidden="true" />
+            {tt('pathLocked')}
+          </Button>
+        </>
+      ) : quizPending && onQuiz ? (
+        <div className="flex flex-col gap-2">
+          <Button size="lg" block className="lesson-preview-start" data-jump={jump} onClick={onQuiz}>
+            {tt('rusDarslikQuizOpen')}
+          </Button>
+          <Button size="sm" variant="secondary" block onClick={onStart}>
+            {tt('pathReview')}
+          </Button>
+        </div>
+      ) : (
+        <Button size="lg" block className="lesson-preview-start" data-jump={jump || premiumRequired} onClick={onStart}>
+          {premiumRequired && <Crown aria-hidden="true" />}
+          {premiumRequired ? tt('pathPremiumOpen') : check ? tt('pathCheckStart') : done ? tt('pathReview') : current ? tt('pathStart') : tt('pathJumpAhead')}
+        </Button>
+      )}
     </section>}
   </div>
 }

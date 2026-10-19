@@ -8,6 +8,8 @@ import type {
   AiCoursePayload, AiCourseAnswers, AiCourseGrading,
 } from '../shared/ai-courses'
 import type { GraphPayload } from '../shared/contracts/graph'
+import type { DarslikCheck } from '../shared/darslik-mastery'
+
 
 export const tariffEnum   = pgEnum('tariff',     ['free', 'premium'])
 export const fontSizeEnum = pgEnum('font_size',  ['small', 'medium', 'large'])
@@ -1126,6 +1128,20 @@ export const aiCourseProgress = pgTable('ai_course_progress', {
   index('idx_ai_course_progress_user_course').on(t.userId, t.courseId),
   check('chk_ai_course_progress_scores', sql`${t.scoreCorrect} >= 0 AND ${t.scoreTotal} > 0 AND ${t.scoreCorrect} <= ${t.scoreTotal} AND ${t.coinsAwarded} >= 0`),
 ])
+
+/** Textbook answer keys stay on the server; read markers never count as mastery. */
+export const darslikChecks = pgTable('darslik_checks', {
+  topicId: text('topic_id').notNull(),
+  version: integer('version').notNull(),
+  payload: jsonb('payload').$type<DarslikCheck>().notNull(),
+}, t => [primaryKey({ columns: [t.topicId, t.version] })])
+
+export const darslikMastery = pgTable('darslik_mastery', {
+  userId: text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  topicId: text('topic_id').notNull(),
+  version: integer('version').notNull(),
+  passedAt: timestamp('passed_at').defaultNow().notNull(),
+}, t => [primaryKey({ columns: [t.userId, t.topicId, t.version] })])
 
 /**
  * Grafik quruvchi — user saqlagan workspace'lar.

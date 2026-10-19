@@ -1,23 +1,38 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type UIEvent } from 'react'
-import { Check, ChevronLeft, ChevronRight, List as ListIcon, X } from 'lucide-react'
-import { loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
+import { Check, ChevronLeft, ChevronRight, HelpCircle, List as ListIcon, Lock, X } from 'lucide-react'
+import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
 import { MarkdownView } from './MarkdownView'
 import { extractOutline, parseMarkdown } from './markdown'
+import { nextSection } from './progress'
+import TopicCheck from './TopicCheck'
+import { darslikTopicId } from '../../../shared/darslik-mastery'
 
 interface BlockReaderProps {
   block: DarslikBlockMeta
   /** Ochiq mavzu (section) indeksi — learning path tuguni bilan bir xil */
   sectionIndex: number
-  /** O'qilgan mavzular indekslari */
+  /** Testdan o'tilgan mavzular indekslari */
   doneSections: number[]
+  /** O'qilgan, lekin testdan o'tilmagan mavzular */
+  readSections: number[]
+  /** Ketma-ket ochilish: qulflangan mavzular */
+  lockedSections: number[]
+  /** Preview'dan "testni boshlash" bilan ochilgan bo'lsa */
+  initialQuizOpen?: boolean
   onClose: () => void
   onSelectSection: (idx: number) => void
-  /** "O'qib bo'ldim" — mavzuni belgilash va keyingisiga o'tish */
-  onDone: (idx: number) => void
+  /** Mavzu o'qildi — lekin hali testdan o'tilmadi */
+  onMarkRead: (idx: number) => void
+  /** Mavzu testi muvaffaqiyatli topshirildi */
+  onQuizPass: (idx: number) => void
+  /** Test natijasidan keyingi mavzuga o'tish (bloklar orasida ham) */
+  onNextTopic?: () => void
+  /** Server 403 TOPIC_LOCKED qaytardi — progressni qayta yuklash */
+  onLockedSection?: () => void
 }
 
 /**
@@ -25,7 +40,20 @@ interface BlockReaderProps {
  * Mundarija, scroll progressi, oldingi/keyingi mavzu — learning path bilan
  * bir xil progress indeksidan foydalanadi.
  */
-export function BlockReader({ block, sectionIndex, doneSections, onClose, onSelectSection, onDone }: BlockReaderProps) {
+export function BlockReader({
+  block,
+  sectionIndex,
+  doneSections,
+  readSections,
+  lockedSections,
+  initialQuizOpen = false,
+  onClose,
+  onSelectSection,
+  onMarkRead,
+  onQuizPass,
+  onNextTopic,
+  onLockedSection,
+}: BlockReaderProps) {
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const isRu = lang === 'ru'
@@ -35,6 +63,7 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
   const [attempt, setAttempt] = useState(0)
   const [tocOpen, setTocOpen] = useState(false)
   const [scrollPct, setScrollPct] = useState(0)
+  const [quizOpen, setQuizOpen] = useState(false)
   const bodyRef = useRef<HTMLDivElement | null>(null)
 
   // Android hardware back / Telegram BackButton — o'quvchini yopadi.
@@ -45,6 +74,7 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
 
   useEffect(() => {
     let cancelled = false
+    setSource(null)
     setFailed(false)
     loadDarslikBlock(block.id)
       .then((text) => { if (!cancelled) setSource(text) })
@@ -54,8 +84,15 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
 
   const blocks = useMemo(() => (source ? parseMarkdown(source) : []), [source])
   const outline = useMemo(() => extractOutline(blocks), [blocks])
-  const total = outline.length
+  const fallbackTitles = useMemo(() => getBlockOutline(block.id), [block.id])
+  const total = outline.length || fallbackTitles.length
   const current = outline[sectionIndex]
+  const sectionTitle = current?.title ?? fallbackTitles[sectionIndex] ?? (isRu ? block.titleRu : block.titleUz)
+  const passed = doneSections.includes(sectionIndex)
+  const read = readSections.includes(sectionIndex) || passed
+  const next = nextSection(block.id, sectionIndex)
+  const hasNext = next != null
+  const lastSectionKey = useRef(block.id + ':' + sectionIndex)
 
   const scrollTo = useCallback((anchor?: string) => {
     const container = bodyRef.current
@@ -75,6 +112,18 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
     scrollTo(current?.anchor)
     setTocOpen(false)
   }, [current?.anchor, scrollTo])
+
+  // Preview'dan "testni boshlash" bosilganda testni darhol ochamiz.
+  useEffect(() => {
+    if (initialQuizOpen) setQuizOpen(true)
+  }, [initialQuizOpen])
+
+  useEffect(() => {
+    const key = block.id + ':' + sectionIndex
+    if (lastSectionKey.current === key) return
+    lastSectionKey.current = key
+    setQuizOpen(false)
+  }, [block.id, sectionIndex])
 
   const handleScroll = (event: UIEvent<HTMLDivElement>) => {
     const el = event.currentTarget
@@ -96,9 +145,10 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
   const title = isRu ? block.titleRu : block.titleUz
   const blockLabel = isRu ? `Блок ${block.id}` : `${block.id}-blok`
   const position = `${Math.min(sectionIndex + 1, total || 1)}/${total || 1}`
-  const read = doneSections.includes(sectionIndex)
   const hasPrev = sectionIndex > 0
-  const hasNext = sectionIndex < total - 1
+  const hasNextInBlock = sectionIndex < total - 1
+  const nextInBlockLocked = hasNextInBlock && lockedSections.includes(sectionIndex + 1)
+  const canGoNext = hasNextInBlock && !nextInBlockLocked
 
   return (
     <div className="lesson-reader fixed inset-0 z-50 flex flex-col bg-pcanvas">
@@ -142,23 +192,36 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
               {tt('rusDarslikContents')} · {tt('rusDarslikSectionsCount').replace('{count}', String(total))}
             </p>
             <ol className="flex flex-col">
-              {outline.map((entry, index) => (
-                <li key={entry.anchor}>
-                  <button
-                    type="button"
-                    onClick={() => onSelectSection(index)}
-                    aria-current={index === sectionIndex ? 'true' : undefined}
-                    className={cn(
-                      'flex w-full cursor-pointer items-start gap-2 rounded-xl px-1.5 py-2 text-left text-[13px] leading-snug hover:bg-psurface active:opacity-80',
-                      index === sectionIndex ? 'bg-[rgb(var(--p-primary-rgb)/0.10)] font-semibold text-pfg' : 'text-pfg',
-                    )}
-                  >
-                    <span className="mt-0.5 w-5 flex-none text-right text-[11px] font-semibold text-pprimary">{index + 1}.</span>
-                    <span className="min-w-0 flex-1">{entry.title}</span>
-                    {doneSections.includes(index) && <Check size={13} strokeWidth={3} className="mt-0.5 flex-none text-pprimary" />}
-                  </button>
-                </li>
-              ))}
+              {outline.map((entry, index) => {
+                const locked = lockedSections.includes(index)
+                const done = doneSections.includes(index)
+                const pending = readSections.includes(index) && !done
+                return (
+                  <li key={entry.anchor}>
+                    <button
+                      type="button"
+                      onClick={() => { if (!locked) onSelectSection(index) }}
+                      disabled={locked}
+                      aria-current={index === sectionIndex ? 'true' : undefined}
+                      className={cn(
+                        'flex w-full items-start gap-2 rounded-xl px-1.5 py-2 text-left text-[13px] leading-snug',
+                        locked ? 'cursor-not-allowed opacity-45' : 'cursor-pointer hover:bg-psurface active:opacity-80',
+                        index === sectionIndex ? 'bg-[rgb(var(--p-primary-rgb)/0.10)] font-semibold text-pfg' : 'text-pfg',
+                      )}
+                    >
+                      <span className="mt-0.5 w-5 flex-none text-right text-[11px] font-semibold text-pprimary">{index + 1}.</span>
+                      <span className="min-w-0 flex-1">{entry.title}</span>
+                      {locked
+                        ? <Lock size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pmuted" />
+                        : done
+                          ? <Check size={13} strokeWidth={3} className="mt-0.5 flex-none text-pprimary" />
+                          : pending
+                            ? <HelpCircle size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pwarning" />
+                            : null}
+                    </button>
+                  </li>
+                )
+              })}
             </ol>
           </div>
         )}
@@ -198,26 +261,47 @@ export function BlockReader({ block, sectionIndex, doneSections, onClose, onSele
 
         <button
           type="button"
-          onClick={() => onDone(sectionIndex)}
+          disabled={failed || source === null}
+          onClick={() => {
+            if (!read) onMarkRead(sectionIndex)
+            setQuizOpen(true)
+          }}
           className={cn(
-            'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold transition-transform active:scale-[0.98]',
-            read ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pprimary' : 'bg-pprimary text-ponprimary',
+            'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50',
+            passed
+              ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
+              : read
+                ? 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pwarning'
+                : 'bg-pprimary text-ponprimary',
           )}
         >
-          <Check size={16} strokeWidth={2.5} />
-          {read ? tt('rusDarslikReadBadge') : tt('rusDarslikMarkRead')}
+          {passed || read ? <HelpCircle size={16} strokeWidth={2.5} /> : <Check size={16} strokeWidth={2.5} />}
+          {passed ? tt('rusDarslikQuizAgain') : read ? tt('rusDarslikQuizOpen') : tt('rusDarslikMarkRead')}
         </button>
 
         <button
           type="button"
-          disabled={!hasNext}
-          onClick={() => onSelectSection(sectionIndex + 1)}
+          disabled={!canGoNext}
+          onClick={() => { if (canGoNext) onSelectSection(sectionIndex + 1) }}
           aria-label={tt('rusDarslikNextSection')}
           className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
         >
           <ChevronRight size={20} strokeWidth={2.25} />
         </button>
       </div>
+
+      {quizOpen && (
+        <TopicCheck
+          key={block.id + ':' + sectionIndex}
+          topicId={darslikTopicId(block.id, sectionIndex)}
+          title={sectionTitle}
+          onClose={() => setQuizOpen(false)}
+          onPassed={() => onQuizPass(sectionIndex)}
+          onNext={onNextTopic}
+          hasNext={hasNext}
+          onLocked={onLockedSection}
+        />
+      )}
     </div>
   )
 }

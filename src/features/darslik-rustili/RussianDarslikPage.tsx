@@ -18,38 +18,65 @@ import {
 import { LearningPath, LessonPreview, type PathSelection } from '../lessons'
 import { BlockReader } from './BlockReader'
 import { LazyPath } from './LazyPath'
+import {
+  lockedSectionsInBlock,
+  nextSection,
+  previousSection,
+  sectionKey,
+} from './progress'
+import { darslikTopicId } from '../../../shared/darslik-mastery'
+import { useDarslikMastery } from './useDarslikMastery'
 
 const EMPTY_PROGRESS: Record<number, number[]> = {}
 const EMPTY_SECTIONS: number[] = []
 
 /**
  * Rus tili darsligi — 15 blok, har bir blok mavzulari **learning path**
- * ko'rinishida (YHQ darsligi bilan bir xil UI). Tugun = blok ichidagi mavzu;
- * progress `useLessonsStore` da modul `100 + blokId`, dars indeksi = mavzu indeksi.
+ * ko'rinishida (YHQ darsligi bilan bir xil UI). Tugun = blok ichidagi mavzu.
+ *
+ * O'tilgan mavzular serverda (`darslik_mastery`) saqlanadi; lokal
+ * `useLessonsStore` faqat o'qilgan mavzular va offline cache uchun.
  */
 export default function RussianDarslikPage() {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
-  const byUser = useLessonsStore((s) => s.byUser)
-  const markDone = useLessonsStore((s) => s.markDone)
+  const readByUser = useLessonsStore((s) => s.readByUser)
+  const markRead = useLessonsStore((s) => s.markRead)
+  const mastery = useDarslikMastery()
+  const passed = mastery.passed
   const tt = useT(lang)
   const isRu = lang === 'ru'
 
   const [selected, setSelected] = useState<PathSelection | null>(null)
   const [collapsed, setCollapsed] = useState(false)
   const [jumpDirection, setJumpDirection] = useState<'up' | 'down'>('down')
-  const [reader, setReader] = useState<{ blockId: number; sectionIdx: number } | null>(null)
+  const [reader, setReader] = useState<{ blockId: number; sectionIdx: number; quiz?: boolean } | null>(null)
 
   const rootRef = useRef<HTMLDivElement>(null)
   const headerRef = useRef<HTMLElement>(null)
   const selectedTrigger = useRef<HTMLButtonElement | null>(null)
   const moduleRefs = useRef(new Map<number, HTMLElement>())
 
-  const doneMap = byUser[userId] ?? EMPTY_PROGRESS
+  const readMap = readByUser[userId] ?? EMPTY_PROGRESS
   const doneFor = useCallback(
-    (blockId: number) => doneMap[DARSLIK_PROGRESS_MODULE_OFFSET + blockId] ?? EMPTY_SECTIONS,
-    [doneMap],
+    (blockId: number) => getBlockOutline(blockId)
+      .map((_, idx) => idx)
+      .filter((idx) => passed.has(sectionKey(blockId, idx))),
+    [passed],
+  )
+  const readFor = useCallback(
+    (blockId: number) => readMap[DARSLIK_PROGRESS_MODULE_OFFSET + blockId] ?? EMPTY_SECTIONS,
+    [readMap],
+  )
+  const lockedByBlock = useMemo(() => {
+    const map: Record<number, number[]> = {}
+    for (const block of DARSLIK_BLOCKS) map[block.id] = lockedSectionsInBlock(block.id, passed)
+    return map
+  }, [passed])
+  const lockedFor = useCallback(
+    (blockId: number) => lockedByBlock[blockId] ?? EMPTY_SECTIONS,
+    [lockedByBlock],
   )
 
   const totalDone = useMemo(
@@ -91,10 +118,13 @@ export default function RussianDarslikPage() {
   // Dock faqat foydalanuvchi tugunni bosganda chiqadi: yo'l qismlarga bo'lib
   // mount bo'lgani uchun scroll'ni "kuzatib borish" ishonchli emas.
   //
-  // Qayta ochilganda joriy blokga suriladi — 688 mavzuli yo'lni tepadan
+  // Qayta ochilganda joriy blokga suriladi — 537 mavzuli yo'lni tepadan
   // boshlash noqulay (YHQ'dagi `resetPathScroll` bilan bir xil maqsad).
   const scrolledToCurrent = useRef(false)
   useEffect(() => {
+    // Server progressi kelguncha kutamiz: aks holda qaytgan foydalanuvchi
+    // har doim 1-blokdan boshlab ko'radi.
+    if (mastery.loading) return
     if (scrolledToCurrent.current) return
     scrolledToCurrent.current = true
     if (currentBlock.id === DARSLIK_BLOCKS[0].id) return
@@ -102,7 +132,7 @@ export default function RussianDarslikPage() {
     if (section && typeof section.scrollIntoView === 'function') {
       section.scrollIntoView({ block: 'start', behavior: 'auto' })
     }
-  }, [currentBlock.id])
+  }, [currentBlock.id, mastery.loading])
 
   const jumpToCurrent = () => {
     const section = moduleRefs.current.get(currentBlock.id)
@@ -120,20 +150,55 @@ export default function RussianDarslikPage() {
     if (typeof section.scrollIntoView === 'function') section.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  const openSection = (blockId: number, sectionIdx: number) => {
-    track('rus_darslik_open_topic', { block_id: blockId, section_idx: sectionIdx })
-    setReader({ blockId, sectionIdx })
-  }
+  const openSection = useCallback((blockId: number, sectionIdx: number, quiz = false) => {
+    if (lockedFor(blockId).includes(sectionIdx)) return
+    track('rus_darslik_open_topic', { block_id: blockId, section_idx: sectionIdx, quiz })
+    setReader({ blockId, sectionIdx, quiz })
+  }, [lockedFor])
 
   const closeReader = useCallback(() => {
     setReader(null)
     selectedTrigger.current?.focus({ preventScroll: true })
   }, [])
 
+  const markTopicRead = useCallback((blockId: number, idx: number) => {
+    track('rus_darslik_topic_read', { block_id: blockId, section_idx: idx })
+    markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + blockId, idx)
+  }, [markRead, userId])
+
+  const passTopicQuiz = useCallback((blockId: number, idx: number) => {
+    const topicId = darslikTopicId(blockId, idx)
+    track('rus_darslik_check_pass', { topic_id: topicId })
+    markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + blockId, idx)
+    mastery.markPassed(topicId)
+  }, [markRead, mastery, userId])
+
+  const advanceReader = useCallback(() => {
+    if (!reader) return
+    const next = nextSection(reader.blockId, reader.sectionIdx)
+    if (!next) {
+      closeReader()
+      return
+    }
+    setReader({ blockId: next.blockId, sectionIdx: next.idx, quiz: false })
+    setSelected({ moduleId: next.blockId, idx: next.idx, check: false })
+    setCollapsed(false)
+  }, [reader, closeReader])
+
   const selectedTitle = selected ? getBlockOutline(selected.moduleId)[selected.idx] ?? '' : ''
   const isSelectedCurrent = !!selected
     && selected.moduleId === currentBlock.id
     && selected.idx === currentSectionIdx
+  const selectedDone = selected ? doneFor(selected.moduleId).includes(selected.idx) : false
+  const selectedLocked = selected ? lockedFor(selected.moduleId).includes(selected.idx) : false
+  const selectedPending = selected ? !selectedDone && !selectedLocked && readFor(selected.moduleId).includes(selected.idx) : false
+  const selectedPrevious = selected ? previousSection(selected.moduleId, selected.idx) : null
+  const selectedLockedHint = selectedLocked && selectedPrevious
+    ? tt('rusDarslikQuizLockedHint').replace(
+      '{title}',
+      getBlockOutline(selectedPrevious.blockId)[selectedPrevious.idx] ?? '',
+    )
+    : undefined
   const activeBlock = reader ? getDarslikBlock(reader.blockId) : undefined
 
   return (
@@ -197,6 +262,22 @@ export default function RussianDarslikPage() {
         </div>
       </div>
 
+      {mastery.error && (
+        <div
+          role="status"
+          className="mx-auto mb-3 flex max-w-[440px] items-center justify-between gap-3 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-[12px] font-medium leading-snug text-pfg lg:max-w-none"
+        >
+          <span>{tt('rusDarslikProgressError')}</span>
+          <button
+            type="button"
+            onClick={mastery.refresh}
+            className="shrink-0 cursor-pointer rounded-lg bg-psurface px-2.5 py-1.5 text-[11.5px] font-semibold text-pfg active:scale-95"
+          >
+            {tt('rusDarslikRetry')}
+          </button>
+        </div>
+      )}
+
       {DARSLIK_BLOCKS.map((block) => {
         const outline = getBlockOutline(block.id)
         const done = doneFor(block.id)
@@ -259,6 +340,8 @@ export default function RussianDarslikPage() {
                 nodes={outline}
                 nodeLabel={tt('rusDarslikSection')}
                 doneList={done}
+                readList={readFor(block.id)}
+                lockedList={lockedFor(block.id)}
                 lang={lang}
                 selected={selected}
                 activeModuleId={currentBlock.id}
@@ -284,14 +367,18 @@ export default function RussianDarslikPage() {
           selectionKey={`${selected.moduleId}:${selected.idx}`}
           check={false}
           current={isSelectedCurrent}
-          done={doneFor(selected.moduleId).includes(selected.idx)}
+          done={selectedDone}
           premiumRequired={false}
           lang={lang}
           collapsed={collapsed}
+          locked={selectedLocked}
+          lockedHint={selectedLockedHint}
+          quizPending={selectedPending}
           onJump={currentBlock ? jumpToCurrent : undefined}
           jumpDirection={jumpDirection}
           onClose={() => { setCollapsed(true); selectedTrigger.current?.focus({ preventScroll: true }) }}
           onStart={() => openSection(selected.moduleId, selected.idx)}
+          onQuiz={() => openSection(selected.moduleId, selected.idx, true)}
           onPractice={() => {}}
         />
       )}
@@ -301,18 +388,22 @@ export default function RussianDarslikPage() {
           block={activeBlock}
           sectionIndex={reader.sectionIdx}
           doneSections={doneFor(reader.blockId)}
+          readSections={readFor(reader.blockId)}
+          lockedSections={lockedFor(reader.blockId)}
+          initialQuizOpen={reader.quiz}
           onClose={closeReader}
           onSelectSection={(idx) => {
+            if (lockedFor(reader.blockId).includes(idx)) return
             const outline = getBlockOutline(reader.blockId)
-            setReader({ ...reader, sectionIdx: Math.max(0, Math.min(idx, outline.length - 1)) })
+            const sectionIdx = Math.max(0, Math.min(idx, outline.length - 1))
+            setReader({ blockId: reader.blockId, sectionIdx, quiz: false })
+            setSelected({ moduleId: reader.blockId, idx: sectionIdx, check: false })
+            setCollapsed(false)
           }}
-          onDone={(idx) => {
-            track('rus_darslik_topic_done', { block_id: reader.blockId, section_idx: idx })
-            markDone(userId, DARSLIK_PROGRESS_MODULE_OFFSET + reader.blockId, idx)
-            const outline = getBlockOutline(reader.blockId)
-            if (idx < outline.length - 1) setReader({ ...reader, sectionIdx: idx + 1 })
-            else closeReader()
-          }}
+          onMarkRead={(idx) => markTopicRead(reader.blockId, idx)}
+          onQuizPass={(idx) => passTopicQuiz(reader.blockId, idx)}
+          onNextTopic={advanceReader}
+          onLockedSection={mastery.refresh}
         />
       )}
     </div>

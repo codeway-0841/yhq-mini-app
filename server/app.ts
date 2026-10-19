@@ -42,6 +42,7 @@ import contentRouter      from './modules/content/content.router'
 import bossRouter         from './modules/boss/boss.router'
 import aiTestsRouter      from './modules/ai-tests/ai-tests.router'
 import aiCoursesRouter    from './modules/ai-courses/ai-courses.router'
+import darslikRouter from './modules/darslik/darslik.router'
 import testSessionsRouter from './modules/test-sessions/test-sessions.router'
 import certificateRouter  from './modules/certificate/certificate.router'
 import storageRouter      from './modules/storage/storage.router'
@@ -205,6 +206,7 @@ export function createApp() {
   // requireAdmin'dan o'tadi (router.use('/admin', requireAdmin) prefix-match).
   app.use('/api', aiTestsRouter)
   app.use('/api', aiCoursesRouter)
+  app.use('/api', darslikRouter)
   app.use('/api', certificateRouter)
   app.use('/api', storageRouter)
   app.use('/api', shareRouter)

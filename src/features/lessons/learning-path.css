@@ -72,6 +72,22 @@
   --tile-light: color-mix(in srgb, var(--p-muted) 55%, #fff);
   --tile-side: color-mix(in srgb, var(--p-muted) 45%, var(--p-surface)); --tile-edge: var(--p-surface);
 }
+.learning-tile[data-state='locked'] {
+  --tile-color: color-mix(in srgb, var(--p-muted) 55%, var(--p-surface));
+  --tile-light: color-mix(in srgb, var(--p-muted) 45%, #fff);
+  --tile-side: color-mix(in srgb, var(--p-muted) 38%, var(--p-surface)); --tile-edge: var(--p-surface);
+  opacity: .5;
+  filter: grayscale(.45);
+}
+.learning-tile[data-state='read'] {
+  --tile-color: var(--p-warning);
+  --tile-light: color-mix(in srgb, var(--p-warning) 38%, #fff);
+  --tile-side: color-mix(in srgb, var(--p-warning) 60%, #17202e); --tile-edge: var(--p-warning);
+}
+.learning-node[data-locked='true'] { cursor: not-allowed; }
+.learning-node[data-locked='true'] .learning-node-title { color: var(--p-muted); }
+.learning-node[data-locked='true'] .learning-node-copy { opacity: .72; }
+.learning-current-label--pending { color: var(--p-warning); }
 .learning-orbit { opacity: 0; stroke-dasharray: 82 18; transition: opacity 240ms; }
 .learning-node[aria-pressed='true'] .learning-orbit { opacity: 1; }
 .learning-tile .learning-tile-icon {

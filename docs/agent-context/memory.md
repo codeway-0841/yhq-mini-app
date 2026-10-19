@@ -17,5 +17,24 @@
   index, so it never collides with the YHQ lessons (1–8) or the interactive book (999). Block text
   is Russian (source conversation for teacher attestation); block titles and summaries are UZ+RU.
   Revisit if the textbook becomes DB-backed.
+- 2026-10-19: Russian textbook topics now require a server-checked mastery test. `darslik_checks` caches
+  one 2-MCQ + 1-input check per topic (first topic pre-seeded, others AI-generated on first request);
+  `darslik_mastery` unlocks a topic only after every earlier topic passed. Client: `useDarslikMastery`
+  fetches `/darslik/progress`, `TopicCheck` renders/submits, `useLessonsStore.readByUser` is local
+  read state only. If AI is missing/fails (seen: Meta 402 billing_not_configured), the router logs the
+  reason and `fallback-check.ts` builds a deterministic 2-MCQ + 1-input check from the topic source, so
+  progress is not blocked by AI billing. `shared/darslik-mastery.ts` is the SSOT for topic order, grading,
+  and check schema; `scripts/export-darslik-source.ts` regenerates `server/modules/darslik/source.json`
+  (tail-cut summary/mini-test). Revisit if offline mastery or richer fallback questions are required.
+- 2026-10-19 (1-blok piloti): `DARSLIK_CHECK_VERSION = 2` — 5–7 mashq, 4+ tur
+  (`mcq`, `input`, `word_bank`, `match`, `listening`), kamida 1 listening. 1-blokning 12 mavzusi
+  `server/modules/darslik/curated/block-01.ts`da qo'lda yozilgan (6 mashq, 5 tur) va AI'dan oldin
+  ishlatiladi; AI faqat boshqa bloklar uchun draft, oxirgi chora legacy fallback. `LessonRunner`
+  qadam-baqadam feedback, progress/combo/mascot, TTS va natija ekranini beradi; `TopicCheck` shu
+  engine ustidagi wrapper, 2-MCQ + 1-input legacy oqimi saqlanadi. Javoblar public payloadda yo'q;
+  `/answer` darhol feedback, `/submit` yakuniy server gating. v1 mastery `[2, 1]` versiyalari bilan
+  o'qiladi, shuning uchun deploy eski progressni bloklamaydi. XP `progress.xp` + `daily_limits`,
+  streak/kunlik vazifalar `dailyRepository.touchActivity` orqali — yangi gamification tizimi yo'q.
+  2–15-bloklar va 537 mavzuning qolganlari o'zgarishsiz. Revisit next block migration.
 
 Store new confirmed decisions with evidence and revisit conditions, not daily activity logs.

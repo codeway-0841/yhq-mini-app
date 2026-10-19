@@ -1,5 +1,5 @@
 import { useId } from 'react'
-import { Check, Lock } from 'lucide-react'
+import { Check, HelpCircle, Lock } from 'lucide-react'
 import './learning-path.css'
 
 export type PathMascotAnimation =
@@ -27,12 +27,13 @@ export function PathMascot({ animation = 'idle' }: { animation?: PathMascotAnima
   </span>
 }
 
-export default function LessonToken({ done, current, check = false }: {
-  done: boolean; current: boolean; check?: boolean
+export default function LessonToken({ done, current, check = false, locked = false, read = false }: {
+  done: boolean; current: boolean; check?: boolean; locked?: boolean; read?: boolean
 }) {
   const id = useId()
   const octagon = '38,54 82,54 113,72 113,99 82,117 38,117 7,99 7,72'
-  return <span className="learning-tile" data-state={current ? 'current' : done ? 'done' : 'unread'} data-check={check}>
+  const state = locked ? 'locked' : current ? 'current' : done ? 'done' : read ? 'read' : 'unread'
+  return <span className="learning-tile" data-state={state} data-check={check}>
     <svg aria-hidden="true" viewBox="0 0 120 130" width="120" height="130">
       <defs>
         <linearGradient id={id + '-top'} x2=".8" y2="1">
@@ -62,6 +63,16 @@ export default function LessonToken({ done, current, check = false }: {
         ? <polygon className="learning-orbit" points={octagon} pathLength="100" fill="none" stroke="var(--p-primary)" strokeWidth="3" strokeLinecap="round" />
         : <ellipse className="learning-orbit" cx="60" cy="89" rx="57" ry="33" pathLength="100" fill="none" stroke="var(--p-primary)" strokeWidth="3" strokeLinecap="round" />}
     </svg>
-    {current ? <PathMascot /> : done && !check ? <Check aria-hidden="true" className="learning-tile-icon" size={18} strokeWidth={3} /> : !check ? <Lock aria-hidden="true" className="learning-tile-icon opacity-60" size={16} strokeWidth={2.25} /> : null}
+    {current
+      ? <PathMascot />
+      : done && !check
+        ? <Check aria-hidden="true" className="learning-tile-icon" size={18} strokeWidth={3} />
+        : locked
+          ? <Lock aria-hidden="true" className="learning-tile-icon" size={16} strokeWidth={2.25} />
+          : read && !check
+            ? <HelpCircle aria-hidden="true" className="learning-tile-icon" size={17} strokeWidth={2.5} />
+            : !check
+              ? <Lock aria-hidden="true" className="learning-tile-icon opacity-60" size={16} strokeWidth={2.25} />
+              : null}
   </span>
 }

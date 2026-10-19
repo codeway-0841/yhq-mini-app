@@ -37,6 +37,9 @@ export interface SubjectBase {
   telegramChatId?: string
 }
 
+/** Rus tili — darslik va kunlik streak integratsiyasi uchun yagona ID. */
+export const RUSSIAN_SUBJECT_ID = 'rustili' as const
+
 /**
  * `as const` — har bir maydon literal type bo'ladi:
  *   - SubjectId union compile-time'da avtomatik hosil bo'ladi (typo'lar ushlanadi)
@@ -44,7 +47,7 @@ export interface SubjectBase {
  */
 export const SUBJECT_BASES = [
   { id: 'yhq',        name: "Yo'l harakati qoidalari", nameRu: 'Правила дорожного движения', icon: '🚗', dataSourceId: 'traffic_rules_db', available: true,  demoData: false, examPresets: [],                                          closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_yhq' },
-  { id: 'rustili',    name: 'Rus tili',                nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_rustili', telegramChatId: '-1003975984861' },
+  { id: RUSSIAN_SUBJECT_ID, name: 'Rus tili',         nameRu: 'Русский язык',               icon: '🇷🇺', dataSourceId: 'russian_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/kiwi_uz_bot?start=group_rustili', telegramChatId: '-1003975984861' },
   // Physics Test Print banki qo'shilgan; qolgan fanlar kontent kiritilguncha
   // `available: false` holatida qoladi.
   { id: 'fizika',     name: 'Fizika',                  nameRu: 'Физика',                     icon: '⚡', dataSourceId: 'physics_db',       available: true,  demoData: false, examPresets: ['milliy-sertifikat', 'attestatsiya'], closedGroupUrl: 'https://t.me/+kiwi_fizika_group' },

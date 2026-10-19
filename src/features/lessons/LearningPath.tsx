@@ -22,6 +22,8 @@ export default function LearningPath({
   onSelect,
   checkLabel,
   moduleTitle,
+  lockedList,
+  readList,
 }: {
   moduleId: number
   nodes: readonly string[]
@@ -36,6 +38,10 @@ export default function LearningPath({
   checkLabel?: string
   /** `checkLabel` tugunining aria-label'i uchun modul nomi */
   moduleTitle?: string
+  /** Ketma-ket ochilish: oldingi mavzular testlaridan o'tilmaguncha qulflangan tugunlar */
+  lockedList?: number[]
+  /** O'qilgan, lekin testdan o'tilmagan mavzular */
+  readList?: number[]
 }) {
   const tt = useT(lang)
   const activeIdx = nodes.findIndex((_, idx) => !doneList.includes(idx))
@@ -48,21 +54,39 @@ export default function LearningPath({
     <ol aria-label={tt('pathLabel')} className="m-0 list-none p-0">
       {list.map((node, i) => {
         const done = !node.check && doneList.includes(node.idx)
-        const current = !node.check && moduleId === activeModuleId && node.idx === activeIdx
+        const locked = !node.check && (lockedList?.includes(node.idx) ?? false)
+        const pending = !node.check && !done && !locked && (readList?.includes(node.idx) ?? false)
+        const current = !node.check && !locked && moduleId === activeModuleId && node.idx === activeIdx
         const chosen = selected?.moduleId === moduleId && selected.idx === node.idx && selected.check === node.check
-        const status = node.check ? tt('pathCheckHint') : done ? tt('pathDone') : current ? tt('pathCurrent') : tt('pathUnread')
+        const status = node.check
+          ? tt('pathCheckHint')
+          : locked
+            ? tt('pathLocked')
+            : done
+              ? tt('pathDone')
+              : pending
+                ? tt('rusDarslikQuizPending')
+                : current
+                  ? tt('pathCurrent')
+                  : tt('pathUnread')
         return <li key={node.check ? 'check' : node.idx} className="learning-row" data-turn={i % 4}>
           <button type="button" data-path-node data-module={moduleId} data-lesson={node.idx} data-check={node.check}
+            data-locked={locked ? 'true' : undefined}
             aria-current={current ? 'step' : undefined} aria-pressed={chosen}
+            aria-disabled={locked || undefined}
             aria-controls={chosen ? 'lesson-preview' : undefined}
             aria-label={node.check ? node.title + ' — ' + (moduleTitle ?? node.title) : `${node.idx + 1}. ${node.title} — ${status}`}
             onClick={(event) => onSelect({ moduleId, idx: node.idx, check: node.check }, event.currentTarget)}
-            className="learning-node">
-            <LessonToken done={done} current={current} check={node.check} />
+            className={locked ? 'learning-node learning-node--locked' : 'learning-node'}>
+            <LessonToken done={done} current={current} check={node.check} locked={locked} read={pending} />
             <span className="learning-node-copy">
               <span className="learning-node-meta">{node.check ? tt('pathModule') : node.idx + 1 + ' · ' + label}</span>
               <span className="learning-node-title">{node.title}</span>
-              {current && <span className="learning-current-label">{tt('pathCurrent')}</span>}
+              {current && (
+                <span className={pending ? 'learning-current-label learning-current-label--pending' : 'learning-current-label'}>
+                  {pending ? tt('rusDarslikQuizPending') : tt('pathCurrent')}
+                </span>
+              )}
             </span>
           </button>
         </li>
