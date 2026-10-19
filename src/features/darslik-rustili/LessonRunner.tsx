@@ -121,6 +121,8 @@ export default function LessonRunner({
   const [submitError, setSubmitError] = useState(false)
   const [result, setResult] = useState<DarslikCheckResult | null>(null)
   const [speaking, setSpeaking] = useState(false)
+  /** Admin darsni o'rtada regeneratsiya qildi — yangi versiya yuklandi. */
+  const [checkUpdated, setCheckUpdated] = useState(false)
 
   const lesson = check?.format === 'lesson'
   const total = check?.questions.length ?? 0
@@ -145,6 +147,10 @@ export default function LessonRunner({
 
   useEffect(() => subscribeSpeaking(() => setSpeaking(isSpeaking())), [])
   useEffect(() => () => stopSpeaking(), [])
+
+  useEffect(() => {
+    setCheckUpdated(false)
+  }, [topicId])
 
   useEffect(() => {
     let cancelled = false
@@ -212,7 +218,9 @@ export default function LessonRunner({
     setSubmitting(true)
     setSubmitError(false)
     try {
-      const graded = await api.submitDarslikCheck(topicId, answers)
+      const graded = check.revision
+        ? await api.submitDarslikCheck(topicId, answers, check.revision)
+        : await api.submitDarslikCheck(topicId, answers)
       setResult(graded)
       track('lesson_complete', {
         topic_id: topicId,
@@ -254,6 +262,12 @@ export default function LessonRunner({
         onLockedRef.current?.()
         return
       }
+      if (error instanceof ApiError && error.status === 409) {
+        // Kontent o'rtada yangilandi: eski javoblar yangi savollarga mos emas.
+        setCheckUpdated(true)
+        setReload((value) => value + 1)
+        return
+      }
       setSubmitError(true)
     } finally {
       setSubmitting(false)
@@ -266,7 +280,9 @@ export default function LessonRunner({
     setChecking(true)
     setAnswerError(false)
     try {
-      const graded = await api.checkDarslikExercise(topicId, current.id, value)
+      const graded = check.revision
+        ? await api.checkDarslikExercise(topicId, current.id, value, check.revision)
+        : await api.checkDarslikExercise(topicId, current.id, value)
       setFeedback(graded)
       setPhase('feedback')
       if (typeof requestAnimationFrame === 'function') {
@@ -296,11 +312,16 @@ export default function LessonRunner({
         onLockedRef.current?.()
         return
       }
+      if (error instanceof ApiError && error.status === 409) {
+        setCheckUpdated(true)
+        setReload((value) => value + 1)
+        return
+      }
       setAnswerError(true)
     } finally {
       setChecking(false)
     }
-  }, [answers, checking, combo, current, currentAnswered, index, phase, topicId])
+  }, [answers, check, checking, combo, current, currentAnswered, index, phase, topicId])
 
   const continueLesson = useCallback(() => {
     if (!check) return
@@ -593,6 +614,15 @@ export default function LessonRunner({
 
         <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 pb-[calc(6.5rem+var(--safe-bottom,0px))]">
           <div className="mx-auto w-full max-w-[440px]">
+            {checkUpdated && (
+              <p
+                role="status"
+                data-testid="lesson-updated"
+                className="mb-3 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 py-2 text-[12.5px] font-medium text-pwarning"
+              >
+                {tt('rusDarslikLessonUpdated')}
+              </p>
+            )}
             <div className="mb-3 flex items-center gap-2.5">
               <span className="relative block size-11 shrink-0">
                 <PathMascot animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'} />
@@ -692,6 +722,15 @@ export default function LessonRunner({
     <div className="fixed inset-0 z-[60] flex flex-col bg-pcanvas" data-testid="topic-check" data-format="legacy" role="dialog" aria-modal="true" aria-labelledby="rus-check-title">
       {header}
       <div className="flex-1 overflow-y-auto px-4 py-4">
+        {checkUpdated && (
+          <p
+            role="status"
+            data-testid="lesson-updated"
+            className="mb-3 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 py-2 text-[12.5px] font-medium text-pwarning"
+          >
+            {tt('rusDarslikLessonUpdated')}
+          </p>
+        )}
         <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.12em] text-psubtle">
           {tt('rusDarslikCheckCount').replace('{count}', String(check.questions.length))}
         </p>

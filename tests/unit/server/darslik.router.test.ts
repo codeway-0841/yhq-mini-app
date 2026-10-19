@@ -32,6 +32,7 @@ import darslikRouter from '../../../server/modules/darslik/darslik.router'
 import { errorHandler } from '../../../server/middleware/error-handler'
 import { firstTopicCheck } from '../../../server/modules/darslik/first-topic'
 import { block01Checks } from '../../../server/modules/darslik/curated/block-01'
+import { darslikCheckHash } from '../../../server/modules/darslik/check-cache'
 import {
   DARSLIK_CHECK_VERSION,
   DarslikCheckSchema,
@@ -131,6 +132,7 @@ describe('darslik router — curated pilot darsi', () => {
     expect(repo.ensureCurated).toHaveBeenCalledWith('1:0', block01Checks['1:0'])
     expect(repo.saveCheck).not.toHaveBeenCalled()
     expect(meta.callMetaJson).not.toHaveBeenCalled()
+    expect(res.body.revision).toBe(darslikCheckHash(block01Checks['1:0']))
   })
 
   it('barcha javoblar to‘g‘ri bo‘lsa XP, streak va mastery qaytaradi', async () => {
@@ -154,6 +156,44 @@ describe('darslik router — curated pilot darsi', () => {
       xp: 32,
     }))
     expect(daily.touchActivity).toHaveBeenCalledWith('u1', expect.any(String), 'rustili', 6, 6)
+  })
+
+  it('revision mos kelsa submit o‘tadi, eski revision 409 qaytaradi', async () => {
+    const check = block01Checks['1:0']
+    repo.findCheck.mockResolvedValue({ version: 2, payload: check })
+    const revision = darslikCheckHash(check)
+
+    const ok = await request(makeApp('u1'))
+      .post('/api/darslik/' + topicPath('1:0') + '/submit')
+      .send({ answers: answersFor(check), revision })
+    expect(ok.status).toBe(200)
+    expect(repo.passWithXp).toHaveBeenCalledTimes(1)
+
+    repo.passWithXp.mockClear()
+    const stale = await request(makeApp('u1'))
+      .post('/api/darslik/' + topicPath('1:0') + '/submit')
+      .send({ answers: answersFor(check), revision: 'a'.repeat(64) })
+    expect(stale.status).toBe(409)
+    expect(stale.body.error).toBe('PRACTICE_CHANGED')
+    expect(repo.passWithXp).not.toHaveBeenCalled()
+  })
+
+  it('eski revision bilan /answer 409, revision’siz eski client ishlaydi', async () => {
+    const check = block01Checks['1:0']
+    repo.findCheck.mockResolvedValue({ version: 2, payload: check })
+    const app = makeApp('u1')
+
+    const stale = await request(app)
+      .post('/api/darslik/' + topicPath('1:0') + '/answer')
+      .send({ exerciseId: '1:0:1', answer: '1', revision: 'b'.repeat(64) })
+    expect(stale.status).toBe(409)
+    expect(stale.body.error).toBe('PRACTICE_CHANGED')
+
+    const legacy = await request(app)
+      .post('/api/darslik/' + topicPath('1:0') + '/answer')
+      .send({ exerciseId: '1:0:1', answer: '1' })
+    expect(legacy.status).toBe(200)
+    expect(legacy.body.correct).toBe(true)
   })
 
   it('takroriy pass kunlik faollik/streakni qayta yozmaydi', async () => {

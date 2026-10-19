@@ -43,7 +43,10 @@
   Admin regeneratsiya: `POST /api/admin/darslik/regenerate` `{topicIds | blockId}` —
   keshni o'chiradi, curated mavzularni darhol qayta yozadi, `audit_logs`ga yozadi.
   AI/fallback generation `onConflictDoNothing` bo'lib qoladi (parallel generatorlarda
-  birinchi yozgan yutadi). Revisit: kesh revision'ini clientga pin qilish kerak bo'lsa.
+  birinchi yozgan yutadi). `/check` javobi `revision` (SHA-256) qaytaradi; client uni
+  `/answer` va `/submit`da yuboradi, mos kelmasa 409 `PRACTICE_CHANGED` va LessonRunner
+  darsni avtomatik qayta yuklaydi (eski revision yubormagan clientlar ishlashda davom etadi).
+  Revisit: revision'ni majburiy qilish kerak bo'lsa (barcha clientlar yangilangach).
 - 2026-10-19 (darslik gamification qarorlari): dars mashqlari `progress.totalCorrect`,
   liga yoki achievement statistikasiga YOZILMAYDI — ular o'rganish faolligi, imtihon savoli
   emas (integration test qulflagan). XP va kunlik faollik faqat birinchi v2 mastery passda;

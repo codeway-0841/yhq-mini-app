@@ -47,6 +47,7 @@ const IDS = {
   v1: '998877682006',
   cache: '998877682007',
   admin: '998877682008',
+  revision: '998877682009',
 } as const
 const ALL_IDS = Object.values(IDS)
 
@@ -300,6 +301,30 @@ describe('darslik kesh invalidation — curated va admin', () => {
     expect(row?.source).toBe('curated')
     expect(row?.contentHash).toBe(darslikCheckHash(curated))
     expect(row?.payload).toEqual(curated)
+  })
+
+  it('eski revision bilan submit 409, to‘g‘ri revision bilan pass bo‘ladi', async () => {
+    await resetUser(IDS.revision)
+    const checkRes = await post(IDS.revision, '/api/darslik/1%3A0/check')
+    expect(checkRes.status).toBe(200)
+    expect(checkRes.body.revision).toMatch(/^[a-f0-9]{64}$/)
+
+    const answers = answersFor(block01Checks['1:0'])
+    const stale = await post(IDS.revision, '/api/darslik/1%3A0/submit', {
+      answers,
+      revision: '0'.repeat(64),
+    })
+    expect(stale.status).toBe(409)
+    expect(stale.body.error).toBe('PRACTICE_CHANGED')
+    expect(await masteryRows(IDS.revision)).toHaveLength(0)
+
+    const fresh = await post(IDS.revision, '/api/darslik/1%3A0/submit', {
+      answers,
+      revision: checkRes.body.revision,
+    })
+    expect(fresh.status).toBe(200)
+    expect(fresh.body).toMatchObject({ passed: true, xpEarned: 32 })
+    expect(await masteryRows(IDS.revision)).toHaveLength(1)
   })
 
   it('admin 1-blok keshini regeneratsiya qiladi, oddiy user 403 oladi', async () => {

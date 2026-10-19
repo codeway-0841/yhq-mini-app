@@ -408,10 +408,18 @@ export function dbToQuestion(q: DbQuestion, lang: 'uz' | 'ru'): Question {
 export const api = {
   getDarslikProgress: () => request<{ passed: string[] }>('GET', '/darslik/progress'),
   getDarslikCheck: (topicId: string) => request<DarslikPublicCheck>('POST', `/darslik/${encodeURIComponent(topicId)}/check`, {}, 55_000),
-  checkDarslikExercise: (topicId: string, exerciseId: string, answer: DarslikAnswerValue) =>
-    request<DarslikAnswerFeedback>('POST', `/darslik/${encodeURIComponent(topicId)}/answer`, { exerciseId, answer }),
-  submitDarslikCheck: (topicId: string, answers: DarslikAnswers) =>
-    request<DarslikCheckResult>('POST', `/darslik/${encodeURIComponent(topicId)}/submit`, { answers }),
+  checkDarslikExercise: (topicId: string, exerciseId: string, answer: DarslikAnswerValue, revision?: string) =>
+    request<DarslikAnswerFeedback>(
+      'POST',
+      `/darslik/${encodeURIComponent(topicId)}/answer`,
+      revision ? { exerciseId, answer, revision } : { exerciseId, answer },
+    ),
+  submitDarslikCheck: (topicId: string, answers: DarslikAnswers, revision?: string) =>
+    request<DarslikCheckResult>(
+      'POST',
+      `/darslik/${encodeURIComponent(topicId)}/submit`,
+      revision ? { answers, revision } : { answers },
+    ),
   /**
    * Serverless backend'ni "uyg'otish" — fire-and-forget (javob MUHIM EMAS).
    *

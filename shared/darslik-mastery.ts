@@ -164,7 +164,16 @@ export type DarslikPublicExercise =
   | { id: string; kind: 'match'; prompt: string; left: string[]; right: string[] }
   | { id: string; kind: 'listening'; prompt: string; options: string[]; audioText: string }
 
-export type DarslikPublicCheck = { format?: DarslikCheckFormat; questions: DarslikPublicExercise[] }
+export type DarslikPublicCheck = {
+  format?: DarslikCheckFormat
+  /**
+   * Kontent fingerprint'i (server SHA-256). Client uni /answer va /submit'da
+   * qaytaradi: admin darsni o'rtada regeneratsiya qilsa, eski javoblar yangi
+   * savollar to'plamiga tushib qolmaydi — server 409 PRACTICE_CHANGED beradi.
+   */
+  revision?: string
+  questions: DarslikPublicExercise[]
+}
 
 export type DarslikAnswerFeedback = {
   correct: boolean
@@ -306,9 +315,10 @@ function publicExercise(question: DarslikQuestion): DarslikPublicExercise {
   }
 }
 
-export function publicDarslikCheck(check: DarslikCheck): DarslikPublicCheck {
+export function publicDarslikCheck(check: DarslikCheck, revision?: string): DarslikPublicCheck {
   return {
     format: check.format === 'lesson' ? 'lesson' : 'legacy',
+    ...(revision ? { revision } : {}),
     questions: check.questions.map(publicExercise),
   }
 }

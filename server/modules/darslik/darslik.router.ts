@@ -24,6 +24,7 @@ import { darslikRepository } from './darslik.repository'
 import { firstTopicCheck } from './first-topic'
 import { buildFallbackCheck } from './fallback-check'
 import { curatedDarslikCheck } from './curated'
+import { darslikCheckHash } from './check-cache'
 import { dailyRepository } from '../daily/daily.repository'
 import source from './source.json'
 
@@ -63,6 +64,21 @@ async function loadStoredCheck(topicId: string): Promise<StoredCheck | null> {
   if (!parsed.success) return null
   return { version: stored.version, check: parsed.data }
 }
+
+/**
+ * Client qaysi kontent versiyasini ko'rganini pin qiladi. Admin o'rtada
+ * regeneratsiya qilsa, eski javoblar yangi savollar to'plamiga TUSHMASLIGI
+ * kerak: 400 "incomplete" o'rniga 409 PRACTICE_CHANGED qaytaramiz va client
+ * darsni qayta yuklaydi. Revision yubormagan eski clientlar ishlashda davom
+ * etadi (deploy paytida majburiy migratsiya yo'q).
+ */
+function assertCheckRevision(stored: StoredCheck, revision: string | undefined): void {
+  if (revision && revision !== darslikCheckHash(stored.check)) {
+    throw new AppError(409, 'PRACTICE_CHANGED')
+  }
+}
+
+const CheckRevision = z.string().regex(/^[a-f0-9]{64}$/)
 
 /** AI javobi format maydonini tushirib qoldirsa, 5+ mashqni v2 deb qabul qilamiz. */
 function normalizeAiCheck(raw: unknown): unknown {
@@ -142,7 +158,7 @@ router.post('/darslik/:topicId/check', dbRateLimit({ maxPerMinute: 6, bucket: 'd
   if (!check) throw new AppError(503, 'PRACTICE_UNAVAILABLE')
   const parsed = DarslikCheckSchema.safeParse(check)
   if (!parsed.success) throw new AppError(503, 'PRACTICE_UNAVAILABLE')
-  res.json(publicDarslikCheck(parsed.data))
+  res.json(publicDarslikCheck(parsed.data, darslikCheckHash(parsed.data)))
 }))
 
 const AnswerBody = z.object({
@@ -151,6 +167,7 @@ const AnswerBody = z.object({
     z.string().max(400),
     z.array(z.string().max(100)).max(12),
   ]),
+  revision: CheckRevision.optional(),
 })
 
 router.post('/darslik/:topicId/answer', dbRateLimit({ maxPerMinute: 60, bucket: 'darslik-answer', keyFn: req => (req as { userId?: string }).userId ?? req.ip }), validate({ params, body: AnswerBody }), wrap(async (req, res) => {
@@ -159,18 +176,20 @@ router.post('/darslik/:topicId/answer', dbRateLimit({ maxPerMinute: 60, bucket: 
   await requireTopicAccess(userId, topicId)
   const stored = await loadStoredCheck(topicId)
   if (!stored) throw new AppError(409, 'PRACTICE_NOT_STARTED')
+  assertCheckRevision(stored, req.body.revision)
   const exercise = stored.check.questions.find(question => question.id === req.body.exerciseId)
   if (!exercise) throw new AppError(404, 'EXERCISE_NOT_FOUND')
   const answer = req.body.answer as DarslikAnswerValue
   res.json(gradeDarslikExercise(exercise, answer))
 }))
 
-router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 'darslik-submit', keyFn: req => (req as { userId?: string }).userId ?? req.ip }), validate({ params, body: z.object({ answers: DarslikAnswersSchema }) }), wrap(async (req, res) => {
+router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 'darslik-submit', keyFn: req => (req as { userId?: string }).userId ?? req.ip }), validate({ params, body: z.object({ answers: DarslikAnswersSchema, revision: CheckRevision.optional() }) }), wrap(async (req, res) => {
   const userId = (req as unknown as { userId: string }).userId
   const topicId = req.params.topicId as string
   const passedTopics = await requireTopicAccess(userId, topicId)
   const stored = await loadStoredCheck(topicId)
   if (!stored) throw new AppError(409, 'PRACTICE_NOT_STARTED')
+  assertCheckRevision(stored, req.body.revision)
   const { check } = stored
   const answers = req.body.answers as Record<string, DarslikAnswerValue>
   if (!check.questions.every(question => isDarslikAnswerComplete(question, answers[question.id]))) {

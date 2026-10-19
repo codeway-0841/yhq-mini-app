@@ -1,7 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import LessonRunner from '../../../src/features/darslik-rustili/LessonRunner'
-import { api } from '../../../src/shared/api'
+import { ApiError, api } from '../../../src/shared/api'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import type {
@@ -261,6 +261,30 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
 
     fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
     expect(onNext).toHaveBeenCalledTimes(1)
+  })
+
+  it('submitda 409 bo‘lsa darsni yangi revision bilan qayta yuklaydi', async () => {
+    const revision = 'c'.repeat(64)
+    vi.mocked(api.getDarslikCheck).mockResolvedValue({ ...CHECK, revision })
+    vi.mocked(api.submitDarslikCheck).mockRejectedValueOnce(
+      new ApiError(409, 'PRACTICE_CHANGED', 'PRACTICE_CHANGED'),
+    )
+    const onPassed = vi.fn()
+    renderRunner({ onPassed })
+    const runner = await screen.findByTestId('lesson-runner')
+
+    await completeLesson(runner)
+
+    await waitFor(() => expect(api.getDarslikCheck).toHaveBeenCalledTimes(2))
+    const reloaded = await screen.findByTestId('lesson-runner')
+    expect(within(reloaded).getByTestId('lesson-updated')).toBeInTheDocument()
+    expect(within(reloaded).getByText(/Dars yangilandi/)).toBeInTheDocument()
+    expect(api.submitDarslikCheck).toHaveBeenCalledWith(
+      '1:0',
+      expect.objectContaining({ q1: '1' }),
+      revision,
+    )
+    expect(onPassed).not.toHaveBeenCalled()
   })
 
   it('pass bo‘lmasa retry boshlanadi va keyingi mavzu chaqirilmaydi', async () => {
