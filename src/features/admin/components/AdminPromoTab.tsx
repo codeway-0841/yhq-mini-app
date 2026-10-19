@@ -174,7 +174,7 @@ export default function AdminPromoTab() {
 
             if (!c.isActive) {
               statusBadge = (
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-muted/20 text-pmuted border border-pline">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[rgb(var(--p-muted-rgb)/0.18)] text-pmuted border border-pline">
                   To'xtatilgan
                 </span>
               )

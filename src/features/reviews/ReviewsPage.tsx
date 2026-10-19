@@ -166,7 +166,7 @@ export default function ReviewsPage() {
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col min-h-full bg-[#f4f5f9] dark:bg-background text-foreground">
       {/* ── Top App Bar (1-to-1 Reference Design) ─────────────────────────── */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-4 py-2.5 bg-[#f4f5f9]/90 dark:bg-background/90 backdrop-blur-xl flex items-center justify-between border-b border-black/[0.04] dark:border-white/[0.04]">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-4 py-2.5 bg-[#f4f5f9]/90 dark:bg-[rgb(var(--p-canvas-rgb)/0.9)] backdrop-blur-xl flex items-center justify-between border-b border-black/[0.04] dark:border-white/[0.04]">
         <div className="flex items-center gap-2">
           {/* Orqaga tugmasi (< aylana) */}
           <button
