@@ -18,9 +18,11 @@ import { questionsRepository } from '../questions/questions.repository'
 import { adminRepository } from './admin.repository'
 import { authRepository } from '../auth/auth.repository'
 import { SUBJECT_REGISTRY } from '../../config/subjects'
-import { darslikRepository } from '../darslik/darslik.repository'
-import { curatedDarslikCheck } from '../darslik/curated'
-import { DARSLIK_TOPIC_IDS } from '../../../shared/darslik-mastery'
+import {
+  regenerateDarslikChecks,
+  DarslikRegenerationInputError,
+  DarslikTopicNotFoundError,
+} from '../darslik/regenerate'
 
 const router = Router()
 
@@ -57,18 +59,13 @@ const DarslikRegenerateBody = z.object({
 
 router.post('/admin/darslik/regenerate', validate({ body: DarslikRegenerateBody }), wrap(async (req, res) => {
   const body = req.body as z.infer<typeof DarslikRegenerateBody>
-  const requested = body.topicIds ?? DARSLIK_TOPIC_IDS.filter(topicId => topicId.startsWith(String(body.blockId) + ':'))
-  const topicIds = [...new Set(requested)]
-  const unknown = topicIds.filter(topicId => !DARSLIK_TOPIC_IDS.includes(topicId))
-  if (unknown.length > 0) throw new AppError(404, 'TOPIC_NOT_FOUND')
-
-  // Avval o'chirish: curated re-seed muvaffaqiyatsiz bo'lsa ham keyingi
-  // /check deterministik curated bilan qayta quradi (AI'ga bog'lanmaydi).
-  const invalidated = await darslikRepository.invalidate(topicIds)
-  const curatedTopics = topicIds.filter(topicId => curatedDarslikCheck(topicId) !== null)
-  for (const topicId of curatedTopics) {
-    const curated = curatedDarslikCheck(topicId)
-    if (curated) await darslikRepository.saveCheck(topicId, curated, { source: 'curated', force: true })
+  let result
+  try {
+    result = await regenerateDarslikChecks(body)
+  } catch (error) {
+    if (error instanceof DarslikTopicNotFoundError) throw new AppError(404, 'TOPIC_NOT_FOUND')
+    if (error instanceof DarslikRegenerationInputError) throw new AppError(400, 'INVALID_SELECTION')
+    throw error
   }
 
   // Audit: kim qaysi mavzu keshini qayta yaratdi (payload/javoblar log'ga yozilmaydi).
@@ -77,15 +74,15 @@ router.post('/admin/darslik/regenerate', validate({ body: DarslikRegenerateBody 
     action: 'admin_darslik_cache_regenerate',
     resourceType: 'darslik_checks',
     resourceId: body.blockId !== undefined ? `block:${body.blockId}` : 'manual',
-    changes: { topics: topicIds.length, invalidated, curatedReseeded: curatedTopics.length },
+    changes: {
+      topics: result.topics,
+      invalidated: result.invalidated,
+      curatedReseeded: result.curatedReseeded,
+    },
     ipAddress: req.ip,
   }).catch(() => {})
 
-  res.json({
-    topics: topicIds.length,
-    invalidated,
-    curatedReseeded: curatedTopics.length,
-  })
+  res.json(result)
 }))
 
 const OptionsSchema = z

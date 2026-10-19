@@ -40,8 +40,10 @@
   (`curated|ai|fallback|legacy`) va `generated_at` saqlaydi (0075). Curated SSOT har
   `POST /darslik/:topicId/check`da o'qiladi; hash farq qilsa `ensureCurated` qatorni
   majburiy upsert qiladi, shuning uchun deploydan keyin eski AI/eski curated dars qolmaydi.
-  Admin regeneratsiya: `POST /api/admin/darslik/regenerate` `{topicIds | blockId}` —
-  keshni o'chiradi, curated mavzularni darhol qayta yozadi, `audit_logs`ga yozadi.
+  Admin regeneratsiya: `POST /api/admin/darslik/regenerate` `{topicIds | blockId}` yoki
+  `npm run darslik:regenerate -- --block=1 --yes` (dry-run mavjud) — yagona service
+  (`server/modules/darslik/regenerate.ts`) keshni o'chiradi, curated mavzularni darhol
+  qayta yozadi; API yo'li `audit_logs`ga yozadi.
   AI/fallback generation `onConflictDoNothing` bo'lib qoladi (parallel generatorlarda
   birinchi yozgan yutadi). `/check` javobi `revision` (SHA-256) qaytaradi; client uni
   `/answer` va `/submit`da yuboradi, mos kelmasa 409 `PRACTICE_CHANGED` va LessonRunner

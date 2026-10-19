@@ -106,6 +106,7 @@
     "db:seed:yhq": "tsx server/seed-yhq.ts",
     "db:seed:explanations": "tsx server/seed-explanations.ts",
     "db:seed:russian": "tsx server/seed-russian.ts",
+    "darslik:regenerate": "tsx scripts/darslik-regenerate.ts",
     "db:seed:physics": "tsx server/seed-physics-print.ts",
     "bot:profile": "tsx server/set-bot-profile.ts",
     "loadtest:octagon": "tsx server/load-test-octagon.ts",
