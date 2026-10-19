@@ -55,6 +55,9 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-math-board',
   // CamAi o'qituvchi savollari qoralamasi (features/camai — user-scoped)
   'yhq-camai-custom',
+  // "Sharh yozdim / keyinroq" holati (shared/store/useReviewPromptStore) —
+  // aynan shu akkaunt haqidagi ma'lumot, keyingi akkauntga o'tmasligi shart
+  'yhq-review-prompt',
 ] as const
 
 /**

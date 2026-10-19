@@ -7,6 +7,7 @@ import { closeMiniApp } from './platform/telegram'
 import { useAppBootstrap } from './features/app/hooks/useAppBootstrap'
 import ThemeEffect from './features/app/components/ThemeEffect'
 import StreakSaveToast from './features/app/components/StreakSaveToast'
+import ReviewPromptSheet from './shared/components/ReviewPromptSheet'
 import ForceUpdateScreen from './features/app/components/ForceUpdateScreen'
 import { MobileAppShell } from './features/app'
 import AchievementCelebrationModal from './shared/components/AchievementCelebrationModal'
@@ -313,6 +314,8 @@ export default function App() {
         <StreakSaveToast />
         <AchievementCelebrationModal />
         <AchievementDetailSheet />
+        {/* Kontekstli sharh so'rovi — faqat boshqa modal yopilgach ko'rinadi */}
+        <ReviewPromptSheet />
         <MobileAppShell>
           <Routes>
             <Route path="/"           element={<Dashboard />} />

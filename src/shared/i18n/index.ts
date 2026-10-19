@@ -1034,6 +1034,9 @@ const UZ = {
   reviewsWriteTitle: "Sharh qoldirish",
   reviewsEmptyTitle: "Hozircha sharhlar yo‘q",
   reviewsEmptyDesc: "Birinchi bo‘lib o‘z fikringizni bildiring!",
+  // Kontekstli sharh so'rovi (ReviewPromptSheet) — yutuqdan keyin, takrorlanmaydi
+  reviewPromptTitle: "Boshqalarga yordam bering",
+  reviewPromptBody: "Siz yaxshi natijaga erishdingiz — bir daqiqalik fikringiz boshqalarga yo‘l ko‘rsatadi.",
 } as const
 
 type Keys = keyof typeof UZ
@@ -2061,6 +2064,9 @@ const RU: Record<Keys, string> = {
   reviewsWriteTitle: "Оставить отзыв",
   reviewsEmptyTitle: "Пока нет отзывов",
   reviewsEmptyDesc: "Будьте первым, кто оставит свой отзыв!",
+  // Контекстный запрос отзыва (ReviewPromptSheet)
+  reviewPromptTitle: "Помогите другим ученикам",
+  reviewPromptBody: "Вы уже добились результата — минутный отзыв поможет другим ученикам.",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

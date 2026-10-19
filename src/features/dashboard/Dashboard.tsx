@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useReviewPromptStore } from '../../shared/store/useReviewPromptStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
@@ -178,7 +179,16 @@ export default function Dashboard() {
         <MilestoneScene streak={milestone} lang={settings.language} onClose={closeMilestone} />
       )}
       {levelUp !== null && (
-        <LevelUpScene level={levelUp} lang={settings.language} onClose={closeLevelUp} />
+        <LevelUpScene
+          level={levelUp}
+          lang={settings.language}
+          onClose={() => {
+            closeLevelUp()
+            // Kontekstli sharh so'rovi — level-up celebration YOPILGACH
+            // (celebration ustiga chiqmasligi uchun navbatga qo'yiladi)
+            useReviewPromptStore.getState().request('level-up')
+          }}
+        />
       )}
     </div>
   )

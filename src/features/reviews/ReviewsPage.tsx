@@ -1,8 +1,9 @@
 import { useEffect, useState, useCallback, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Plus, MessageSquare, ChevronLeft, X } from 'lucide-react'
 import { goBack } from '@/shared/lib/navigation'
 import { useAppStore } from '@/shared/store/useAppStore'
+import { useReviewPromptStore } from '@/shared/store/useReviewPromptStore'
 import { useT } from '@/shared/i18n'
 import { api, type ReviewItem, type ReviewSummary } from '@/shared/api'
 import { haptics } from '@/platform/haptics'
@@ -40,6 +41,10 @@ export default function ReviewsPage() {
   const [loading, setLoading] = useState(true)
   const [showWriteSheet, setShowWriteSheet] = useState(false)
   const [showFilterSheet, setShowFilterSheet] = useState(false)
+
+  // Kontekstli sharh so'rovidan kelgan chuqur havola: /sharhlar?write=1
+  const [searchParams] = useSearchParams()
+  const writeRequested = searchParams.get('write') === '1'
 
   const activeSubjects = useMemo(() => SUBJECTS.filter((s) => s.available), [])
   const currentSubject = useMemo(
@@ -121,8 +126,18 @@ export default function ReviewsPage() {
 
   const handleReviewSubmitted = () => {
     setShowWriteSheet(false)
+    // Kontekstli promptdan kelgan bo'lsa ham, sharh yozilgach boshqa so'ramaymiz
+    useReviewPromptStore.getState().markWritten()
     fetchReviews(activeRatingFilter, selectedSubject)
   }
+
+  // Kontekstli prompt `?write=1` bilan keladi — sheet darhol ochiladi
+  useEffect(() => {
+    if (writeRequested) {
+      setShowWriteSheet(true)
+      useReviewPromptStore.getState().clearPending()
+    }
+  }, [writeRequested])
 
   // Saralash
   const sortedReviews = useMemo(() => {
@@ -139,12 +154,14 @@ export default function ReviewsPage() {
     )
   }, [reviews, sortOrder])
 
+  // Subheader davr yorlig'i — UZ/RU (ilgari qattiq inglizcha edi)
   const timeRangeLabel = useMemo(() => {
-    if (timeRange === '7D') return 'LAST 7 DAYS'
-    if (timeRange === '30D') return 'LAST 30 DAYS'
-    if (timeRange === '90D') return 'LAST 90 DAYS'
-    return 'ALL TIME'
-  }, [timeRange])
+    const ru = lang === 'ru'
+    if (timeRange === '7D') return ru ? 'ПОСЛЕДНИЕ 7 ДНЕЙ' : "SO'NGGI 7 KUN"
+    if (timeRange === '30D') return ru ? 'ПОСЛЕДНИЕ 30 ДНЕЙ' : "SO'NGGI 30 KUN"
+    if (timeRange === '90D') return ru ? 'ПОСЛЕДНИЕ 90 ДНЕЙ' : "SO'NGGI 90 KUN"
+    return ru ? 'ЗА ВСЁ ВРЕМЯ' : 'BUTUN DAVR'
+  }, [timeRange, lang])
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col min-h-full bg-[#f4f5f9] dark:bg-background text-foreground">
@@ -154,7 +171,7 @@ export default function ReviewsPage() {
           {/* Orqaga tugmasi (< aylana) */}
           <button
             onClick={() => goBack(navigate)}
-            aria-label="Back"
+            aria-label={lang === 'ru' ? 'Назад' : 'Orqaga'}
             className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
           >
             <ChevronLeft size={20} className="text-slate-800 dark:text-foreground stroke-[2.4]" />
@@ -166,7 +183,7 @@ export default function ReviewsPage() {
               haptics.impact('light')
               setShowFilterSheet(true)
             }}
-            aria-label="Filter"
+            aria-label={lang === 'ru' ? 'Фильтр' : 'Filtr'}
             className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
           >
             <svg
@@ -185,9 +202,9 @@ export default function ReviewsPage() {
             </svg>
           </button>
 
-          {/* Sarlavha: Reviews */}
+          {/* Sarlavha: Sharhlar / Отзывы */}
           <h1 className="text-lg font-bold tracking-tight text-slate-900 dark:text-foreground ml-0.5">
-            Reviews
+            {tt('reviewsTitle')}
           </h1>
         </div>
 
@@ -232,10 +249,10 @@ export default function ReviewsPage() {
         )}
       </header>
 
-      {/* ── Subheader (LAST 7 DAYS · Updated in 0 sec) ────────────────────── */}
+      {/* ── Subheader (davr · oxirgi yangilanish) ─────────────────────────── */}
       <div className="flex items-center justify-between px-4 pt-2 pb-1 text-[10.5px] font-bold tracking-wider text-slate-400 dark:text-muted-foreground uppercase">
         <span>{timeRangeLabel}</span>
-        <span>Updated in 0 sec</span>
+        <span>{lang === 'ru' ? 'Обновлено сейчас' : 'Hozir yangilandi'}</span>
       </div>
 
       {/* ── Asosiy kontent ────────────────────────────────────────────────── */}
@@ -292,7 +309,7 @@ export default function ReviewsPage() {
                     : 'bg-white dark:bg-card text-slate-600 dark:text-slate-300 border border-slate-200/80 dark:border-white/10 shadow-2xs hover:bg-slate-50'
                 }`}
               >
-                {f.label}
+                {f.value === undefined ? (lang === 'ru' ? 'Все' : 'Hammasi') : f.label}
               </button>
             )
           })}
@@ -344,7 +361,7 @@ export default function ReviewsPage() {
           haptics.impact('medium')
           setShowWriteSheet(true)
         }}
-        aria-label="Write Review"
+        aria-label={tt('reviewsWriteTitle')}
         className="fixed bottom-[calc(1.5rem+var(--safe-bottom,0px))] right-5 z-40 w-14 h-14 rounded-full bg-blue-600 text-white shadow-xl flex items-center justify-center active:scale-90 transition-transform hover:bg-blue-700"
         style={{
           boxShadow: '0 8px 24px rgba(37, 99, 235, 0.38)',

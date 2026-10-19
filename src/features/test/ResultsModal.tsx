@@ -21,6 +21,7 @@ import { fetchAchievements, invalidateAchievementsCache } from '../../shared/lib
 import { checkAndCelebrateAchievements, getCelebratedBadgeIds, markBadgesCelebrated } from '../../shared/lib/achievement-detector'
 import { ACHIEVEMENTS } from '../../shared/config/achievements'
 import { useAchievementCelebrationStore } from '../../shared/store/useAchievementCelebrationStore'
+import { useReviewPromptStore } from '../../shared/store/useReviewPromptStore'
 import type { TopicBreakdownItem } from './topic-diagnosis'
 import { calculateRashScore, calculateDtmBenefit } from '../../../shared/milliy-sertifikat'
 
@@ -79,6 +80,19 @@ export default function ResultsModal({
   const passed = isMilliySertifikat
     ? (dtmBenefit?.isPassed ?? false) && !disqualifiedByCheat
     : percent >= threshold && !disqualifiedByCheat
+
+  /**
+   * Kontekstli sharh so'rovi — FAQAT yutuq momentida.
+   * Shart: diskvalifikatsiya yo'q, yetarli savol (≥5) va yaxshi natija (≥70%).
+   * Bu yerda faqat NAVBATGA qo'yiladi; sheet natija modal YOPILGANDAN keyin
+   * chiqadi (ReviewPromptSheet `useModalCount()` ni kutadi) — natija ekranini
+   * to'sib qo'ymaydi. Takrorlanmaslik/cooldown `useReviewPromptStore` da.
+   */
+  useEffect(() => {
+    if (disqualifiedByCheat) return
+    if (total < 5 || percent < 70) return
+    useReviewPromptStore.getState().request('test-result')
+  }, [disqualifiedByCheat, total, percent])
 
   /** #48 — natijani RASM qilib ulashish. Muhimlilik tartibi:
    *  1) Web Share (files) — brauzer/tashqi WebView'da ishlaydi

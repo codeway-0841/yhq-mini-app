@@ -101,7 +101,9 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
               {tt('reviewsWriteTitle')}
             </h2>
             <p className="text-[11.5px] text-pmuted mt-0.5">
-              {lang === 'ru' ? 'Поделитесь вашим честным опытом' : 'Platforma haqida samimiy fikringiz'}
+              {lang === 'ru'
+                ? 'Оцените и оставьте отзыв'
+                : 'Baholang va fikringizni yozib qoldiring'}
             </p>
           </div>
         </ModalHeaderRow>
@@ -220,15 +222,19 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
             onChange={(e) => setComment(e.target.value)}
             placeholder={
               lang === 'ru'
-                ? 'Напишите подробнее, что вам понравилось, а что можно улучшить...'
-                : "Batafsil fikringiz: nimalar yoqdi va yana nimalarni qo'shish kerak..."
+                ? 'Что понравилось и что улучшить?'
+                : 'Nima yoqdi va nimani yaxshilash kerak?'
             }
             maxLength={1000}
             rows={4}
             className="w-full px-4 py-2.5 rounded-2xl bg-pcard shadow-2xs text-sm font-normal text-pfg placeholder:text-psubtle outline-none focus:ring-1 focus:ring-pprimary transition-all resize-none leading-relaxed"
           />
           <div className="flex justify-between items-center px-1 text-[11px] text-psubtle mt-1">
-            <span>{comment.length >= 3 ? '✓ Yetarli uzunlik' : 'Kamida 3 ta belgi'}</span>
+            <span>
+              {comment.length >= 3
+                ? lang === 'ru' ? '✓ Достаточно' : '✓ Yetarli uzunlik'
+                : lang === 'ru' ? 'Минимум 3 символа' : 'Kamida 3 ta belgi'}
+            </span>
             <span>{comment.length}/1000</span>
           </div>
         </div>
