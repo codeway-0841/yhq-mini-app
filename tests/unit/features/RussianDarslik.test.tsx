@@ -8,7 +8,6 @@ import type { DarslikCheckResult, DarslikPublicCheck } from '../../../shared/dar
 import {
   DARSLIK_BLOCKS,
   DARSLIK_PROGRESS_MODULE_OFFSET,
-  DARSLIK_SECTION_COUNT,
   getBlockOutline,
 } from '../../../src/content/darslik-rustili'
 
@@ -86,7 +85,17 @@ async function answerCheck(quiz: HTMLElement) {
 }
 
 async function waitReaderReady(reader: HTMLElement) {
-  await waitFor(() => expect(within(reader).getByRole('button', { name: /qib bo/ })).toBeEnabled())
+  await waitFor(() => expect(within(reader).getByTestId('micro-lesson-card')).toBeInTheDocument())
+}
+
+async function advanceToPractice(reader: HTMLElement) {
+  await waitReaderReady(reader)
+  for (let step = 0; step < 20; step++) {
+    const next = within(reader).queryByRole('button', { name: 'Davom etish' })
+    if (!next) break
+    fireEvent.click(next)
+  }
+  return within(reader).getByRole('button', { name: 'Mashqni boshlash' })
 }
 
 beforeEach(() => {
@@ -113,18 +122,20 @@ describe('RussianDarslikPage — learning path', () => {
 
     // Mobil header va desktop karta — ikkalasi ham sarlavhani beradi
     expect(screen.getAllByRole('heading', { name: 'Rus tili darsligi' }).length).toBeGreaterThan(0)
-    expect(screen.getByText(`0/${DARSLIK_SECTION_COUNT}`)).toBeInTheDocument()
+    expect(screen.getAllByText(`0/${getBlockOutline(1).length}`).length).toBeGreaterThan(0)
 
     for (const block of DARSLIK_BLOCKS) {
       const section = document.getElementById(`rus-block-${block.id}`)
       expect(section).toBeTruthy()
-      expect(section!.querySelectorAll('[data-path-node]').length).toBe(getBlockOutline(block.id).length)
     }
+    expect(document.getElementById('rus-block-1')!.querySelectorAll('[data-path-node]')).toHaveLength(8)
+    expect(document.getElementById('rus-block-2')!.querySelectorAll('[data-path-node]')).toHaveLength(0)
 
     // Ketma-ket ochilish: faqat birinchi mavzu ochiq, qolganlari qulflangan.
     expect(pathNode(1, 0)).not.toHaveAttribute('aria-disabled')
     expect(pathNode(1, 1)).toHaveAttribute('aria-disabled', 'true')
     expect(pathNode(1, 2)).toHaveAttribute('aria-disabled', 'true')
+    fireEvent.click(within(document.getElementById('rus-block-2')!).getByRole('button', { name: 'Blokni ochish' }))
     expect(pathNode(2, 0)).toHaveAttribute('aria-disabled', 'true')
   })
 
@@ -132,7 +143,7 @@ describe('RussianDarslikPage — learning path', () => {
     vi.mocked(api.getDarslikProgress).mockResolvedValue({ passed: ['1:0', '1:1'] })
     render(<RussianDarslikPage />)
 
-    await waitFor(() => expect(screen.getByText(`2/${DARSLIK_SECTION_COUNT}`)).toBeInTheDocument())
+    await waitFor(() => expect(screen.getAllByText(`2/${getBlockOutline(1).length}`).length).toBeGreaterThan(0))
     expect(pathNode(1, 1)).not.toHaveAttribute('aria-disabled')
     expect(pathNode(1, 2)).not.toHaveAttribute('aria-disabled')
     expect(pathNode(1, 3)).toHaveAttribute('aria-disabled', 'true')
@@ -140,11 +151,26 @@ describe('RussianDarslikPage — learning path', () => {
     expect(banner.textContent).toContain(`2/${getBlockOutline(1).length}`)
   })
 
+  it('katta blokni 8 mavzuli oynalarda ko‘rsatadi va asl indekslarni saqlaydi', async () => {
+    render(<RussianDarslikPage />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const firstBlock = document.getElementById('rus-block-1')!
+    expect(pathNode(1, 0)).toBeInTheDocument()
+    fireEvent.click(within(firstBlock).getByRole('button', { name: 'Keyingi mavzular' }))
+
+    expect(pathNode(1, 0)).not.toBeInTheDocument()
+    expect(pathNode(1, 8)).toBeInTheDocument()
+    expect(firstBlock).toHaveTextContent(`9–12 / ${getBlockOutline(1).length} mavzu`)
+  })
+
   it('mavzuni o‘qib, server testini topshirgach keyingi mavzu ochiladi', async () => {
     render(<RussianDarslikPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
     fireEvent.click(pathNode(1, 0))
+    expect(await screen.findByText('Qisqa nazariya, misollar va interaktiv mashq.')).toBeInTheDocument()
+    expect(screen.getByText('3–5 daqiqa')).toBeInTheDocument()
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
 
     const reader = document.querySelector('.lesson-reader') as HTMLElement
@@ -153,10 +179,10 @@ describe('RussianDarslikPage — learning path', () => {
     })
     await waitReaderReady(reader)
     expect(within(reader).getAllByText(/ЗВУКИ И БУКВЫ/).length).toBeGreaterThan(0)
+    expect(within(reader).queryByRole('heading', { name: /ГЛАСНЫЕ И СОГЛАСНЫЕ/ })).not.toBeInTheDocument()
 
     // O'qishning o'zi yetarli emas: server testi ochiladi, mavzu hali "passed" emas.
-    await waitReaderReady(reader)
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
     expect(useLessonsStore.getState().readByUser[uid][moduleIdOf(1)]).toEqual([0])
     expect(checkElement()).toBeTruthy()
     await waitFor(() => expect(api.getDarslikCheck).toHaveBeenCalledWith('1:0'))
@@ -189,8 +215,7 @@ describe('RussianDarslikPage — learning path', () => {
       expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
     })
 
-    await waitReaderReady(reader)
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
     await within(checkElement()).findByText(CHECK.questions[0].prompt)
     fireEvent.click(within(checkElement()).getByRole('button', { name: 'Testni yopish' }))
     expect(document.querySelector('[data-testid="topic-check"]')).not.toBeInTheDocument()
@@ -198,7 +223,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(within(reader).getByRole('button', { name: 'O‘qishni yopish' }))
 
-    expect(screen.getByText(`0/${DARSLIK_SECTION_COUNT}`)).toBeInTheDocument()
+    expect(screen.getAllByText(`0/${getBlockOutline(1).length}`).length).toBeGreaterThan(0)
     expect(pathNode(1, 0)).toHaveTextContent('Test kutilmoqda')
     expect(pathNode(1, 1)).toHaveAttribute('aria-disabled', 'true')
     expect(useLessonsStore.getState().byUser[uid]?.[moduleIdOf(1)]).toBeUndefined()
@@ -216,8 +241,7 @@ describe('RussianDarslikPage — learning path', () => {
       expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
     })
 
-    await waitReaderReady(reader)
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
     await answerCheck(checkElement())
 
     expect(await screen.findByText('Test o‘tilmadi')).toBeInTheDocument()
@@ -225,7 +249,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(within(checkElement()).getByRole('button', { name: 'Mavzuga qaytish' }))
     expect(within(reader).getByRole('button', { name: 'Testni boshlash' })).toBeInTheDocument()
-    expect(within(reader).getByRole('button', { name: 'Keyingi mavzu' })).toBeDisabled()
+    expect(within(reader).queryByRole('button', { name: 'Keyingi mavzu' })).not.toBeInTheDocument()
   })
 
   it('server testi mavjud bo‘lmasa qayta urinishni taklif qiladi', async () => {
@@ -240,8 +264,7 @@ describe('RussianDarslikPage — learning path', () => {
       expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
     })
 
-    await waitReaderReady(reader)
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
     expect(await screen.findByText('Test vaqtincha mavjud emas. Keyinroq qayta urinib ko‘ring.')).toBeInTheDocument()
     fireEvent.click(within(checkElement()).getByRole('button', { name: 'Qayta urinish' }))
     await waitFor(() => expect(vi.mocked(api.getDarslikCheck).mock.calls.length).toBeGreaterThan(1))
@@ -259,8 +282,7 @@ describe('RussianDarslikPage — learning path', () => {
       expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
     })
 
-    await waitReaderReady(reader)
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
     expect(await screen.findByText('Mavzu qulflangan')).toBeInTheDocument()
     await waitFor(() => expect(vi.mocked(api.getDarslikProgress).mock.calls.length).toBeGreaterThan(1))
   })

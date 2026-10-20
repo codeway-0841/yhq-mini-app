@@ -1,12 +1,12 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type UIEvent } from 'react'
-import { Check, ChevronLeft, ChevronRight, HelpCircle, List as ListIcon, Lock, X } from 'lucide-react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, X } from 'lucide-react'
 import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
 import { MarkdownView } from './MarkdownView'
-import { extractOutline, parseMarkdown } from './markdown'
+import { buildLessonPages, extractOutline, extractSectionBlocks, parseMarkdown } from './markdown'
 import { nextSection } from './progress'
 import TopicCheck from './TopicCheck'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
@@ -62,7 +62,7 @@ export function BlockReader({
   const [failed, setFailed] = useState(false)
   const [attempt, setAttempt] = useState(0)
   const [tocOpen, setTocOpen] = useState(false)
-  const [scrollPct, setScrollPct] = useState(0)
+  const [pageIndex, setPageIndex] = useState(0)
   const [quizOpen, setQuizOpen] = useState(false)
   const bodyRef = useRef<HTMLDivElement | null>(null)
 
@@ -84,6 +84,8 @@ export function BlockReader({
 
   const blocks = useMemo(() => (source ? parseMarkdown(source) : []), [source])
   const outline = useMemo(() => extractOutline(blocks), [blocks])
+  const sectionBlocks = useMemo(() => extractSectionBlocks(blocks, sectionIndex), [blocks, sectionIndex])
+  const lessonPages = useMemo(() => buildLessonPages(sectionBlocks), [sectionBlocks])
   const fallbackTitles = useMemo(() => getBlockOutline(block.id), [block.id])
   const total = outline.length || fallbackTitles.length
   const current = outline[sectionIndex]
@@ -94,24 +96,17 @@ export function BlockReader({
   const hasNext = next != null
   const lastSectionKey = useRef(block.id + ':' + sectionIndex)
 
-  const scrollTo = useCallback((anchor?: string) => {
+  const scrollToTop = useCallback(() => {
     const container = bodyRef.current
-    if (!container || !anchor) return
-    const target = container.querySelector<HTMLElement>(`#${anchor}`)
-    if (!target) return
-    if (typeof container.scrollTo === 'function') {
-      // `offsetTop` offsetParent'ga nisbatan — scroll konteyneriga nisbatan hisoblanadi,
-      // aks holda sarlavha yopishqoq header ostida qolib ketadi.
-      const top = target.getBoundingClientRect().top - container.getBoundingClientRect().top + container.scrollTop - 10
-      container.scrollTo({ top: Math.max(0, top), behavior: 'auto' })
-    }
+    if (container && typeof container.scrollTo === 'function') container.scrollTo({ top: 0, behavior: 'auto' })
   }, [])
 
-  // Mavzu almashganda (yoki matn yuklanganda) shu sarlavhaga suriladi.
+  // Mavzu almashganda mikro-dars birinchi kartadan boshlanadi.
   useEffect(() => {
-    scrollTo(current?.anchor)
+    setPageIndex(0)
+    scrollToTop()
     setTocOpen(false)
-  }, [current?.anchor, scrollTo])
+  }, [block.id, sectionIndex, source, scrollToTop])
 
   // Preview'dan "testni boshlash" bosilganda testni darhol ochamiz.
   useEffect(() => {
@@ -125,30 +120,34 @@ export function BlockReader({
     setQuizOpen(false)
   }, [block.id, sectionIndex])
 
-  const handleScroll = (event: UIEvent<HTMLDivElement>) => {
-    const el = event.currentTarget
-    const max = el.scrollHeight - el.clientHeight
-    setScrollPct(max > 0 ? Math.min(1, el.scrollTop / max) : 0)
-  }
-
   const toggleToc = () => {
     setTocOpen((open) => {
-      if (!open) {
-        // Mundarija scroll boshida chiziladi — ochilganda yuqoriga qaytamiz.
-        const container = bodyRef.current
-        if (container && typeof container.scrollTo === 'function') container.scrollTo({ top: 0, behavior: 'auto' })
-      }
+      if (!open) scrollToTop()
       return !open
     })
   }
 
-  const title = isRu ? block.titleRu : block.titleUz
   const blockLabel = isRu ? `Блок ${block.id}` : `${block.id}-blok`
   const position = `${Math.min(sectionIndex + 1, total || 1)}/${total || 1}`
-  const hasPrev = sectionIndex > 0
-  const hasNextInBlock = sectionIndex < total - 1
-  const nextInBlockLocked = hasNextInBlock && lockedSections.includes(sectionIndex + 1)
-  const canGoNext = hasNextInBlock && !nextInBlockLocked
+  const pageCount = Math.max(1, lessonPages.length)
+  const safePageIndex = Math.min(pageIndex, pageCount - 1)
+  const isLastPage = safePageIndex >= pageCount - 1
+  const openPractice = () => {
+    if (!read) onMarkRead(sectionIndex)
+    setQuizOpen(true)
+  }
+  const nextPage = () => {
+    if (isLastPage) {
+      openPractice()
+      return
+    }
+    setPageIndex((value) => Math.min(value + 1, pageCount - 1))
+    scrollToTop()
+  }
+  const previousPage = () => {
+    setPageIndex((value) => Math.max(0, value - 1))
+    scrollToTop()
+  }
 
   return (
     <div className="lesson-reader fixed inset-0 z-50 flex flex-col bg-pcanvas">
@@ -165,7 +164,7 @@ export function BlockReader({
           <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-pmuted">
             {blockLabel} · {position}
           </p>
-          <h2 className="truncate text-[15px] font-semibold leading-snug text-pfg">{title}</h2>
+          <h2 className="truncate text-[15px] font-semibold leading-snug text-pfg">{sectionTitle}</h2>
         </div>
         <button
           type="button"
@@ -181,11 +180,21 @@ export function BlockReader({
         </button>
       </div>
 
-      <div className="h-0.5 bg-psurface">
-        <div className="h-full transition-[width] duration-150" style={{ width: `${Math.round(scrollPct * 100)}%`, background: 'var(--p-primary)' }} />
+      <div
+        className="h-1.5 bg-psurface"
+        role="progressbar"
+        aria-label={tt('rusDarslikTheoryProgress')}
+        aria-valuemin={1}
+        aria-valuemax={pageCount}
+        aria-valuenow={safePageIndex + 1}
+      >
+        <div
+          className="h-full rounded-r-full bg-pprimary transition-[width] duration-300"
+          style={{ width: `${Math.round(((safePageIndex + 1) / pageCount) * 100)}%` }}
+        />
       </div>
 
-      <div ref={bodyRef} onScroll={handleScroll} className="flex-1 overflow-y-auto px-4 py-4">
+      <div ref={bodyRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
         {tocOpen && (
           <div className="mb-4 rounded-2xl bg-pcard p-3 shadow-xs">
             <p className="mb-2 px-1 text-[11px] font-semibold uppercase tracking-wide text-psubtle">
@@ -214,7 +223,7 @@ export function BlockReader({
                       {locked
                         ? <Lock size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pmuted" />
                         : done
-                          ? <Check size={13} strokeWidth={3} className="mt-0.5 flex-none text-pprimary" />
+                          ? <CheckCircle2 size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-psuccess" />
                           : pending
                             ? <HelpCircle size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pwarning" />
                             : null}
@@ -244,16 +253,40 @@ export function BlockReader({
             ))}
           </div>
         ) : (
-          <MarkdownView source={source} className="pb-6" />
+          <article className="mx-auto w-full max-w-[560px] pb-5" aria-labelledby="rus-lesson-topic-title">
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <span className="inline-flex items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.10)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-pprimary shadow-2xs">
+                <BookOpen size={13} strokeWidth={2.25} />
+                {tt('rusDarslikTheory')}
+              </span>
+              <span className="text-[11.5px] font-semibold tabular-nums text-pmuted">
+                {tt('rusDarslikTheoryStep')
+                  .replace('{current}', String(safePageIndex + 1))
+                  .replace('{total}', String(pageCount))}
+              </span>
+            </div>
+            <h1 id="rus-lesson-topic-title" className="mb-2 font-display text-[22px] font-bold leading-tight tracking-tight text-pfg">
+              {sectionTitle}
+            </h1>
+            <p className="mb-4 text-[13px] leading-relaxed text-pmuted">{tt('rusDarslikTheoryHint')}</p>
+            <section
+              key={`${block.id}:${sectionIndex}:${safePageIndex}`}
+              data-testid="micro-lesson-card"
+              data-lesson-step={safePageIndex + 1}
+              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs sm:px-5"
+            >
+              <MarkdownView blocks={lessonPages[safePageIndex] ?? []} />
+            </section>
+          </article>
         )}
       </div>
 
-      <div className="flex items-center gap-2 border-t border-pline px-3 py-2.5 pb-[calc(0.625rem+var(--safe-bottom,0px))]">
+      <div className="flex items-center gap-2 border-t border-pline bg-pcanvas px-3 py-2.5 pb-[calc(0.625rem+var(--safe-bottom,0px))]">
         <button
           type="button"
-          disabled={!hasPrev}
-          onClick={() => onSelectSection(sectionIndex - 1)}
-          aria-label={tt('rusDarslikPrevSection')}
+          disabled={safePageIndex === 0 || failed || source === null}
+          onClick={previousPage}
+          aria-label={tt('rusDarslikPreviousStep')}
           className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
         >
           <ChevronLeft size={20} strokeWidth={2.25} />
@@ -262,31 +295,30 @@ export function BlockReader({
         <button
           type="button"
           disabled={failed || source === null}
-          onClick={() => {
-            if (!read) onMarkRead(sectionIndex)
-            setQuizOpen(true)
-          }}
+          onClick={nextPage}
           className={cn(
-            'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50',
-            passed
+            'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-3 py-3 text-sm font-bold shadow-md transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50',
+            !isLastPage
+              ? 'bg-pprimary text-ponprimary'
+              : passed
               ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
               : read
                 ? 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pwarning'
                 : 'bg-pprimary text-ponprimary',
           )}
         >
-          {passed || read ? <HelpCircle size={16} strokeWidth={2.5} /> : <Check size={16} strokeWidth={2.5} />}
-          {passed ? tt('rusDarslikQuizAgain') : read ? tt('rusDarslikQuizOpen') : tt('rusDarslikMarkRead')}
-        </button>
-
-        <button
-          type="button"
-          disabled={!canGoNext}
-          onClick={() => { if (canGoNext) onSelectSection(sectionIndex + 1) }}
-          aria-label={tt('rusDarslikNextSection')}
-          className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          <ChevronRight size={20} strokeWidth={2.25} />
+          {isLastPage
+            ? passed
+              ? <CheckCircle2 size={17} strokeWidth={2.5} />
+              : <HelpCircle size={17} strokeWidth={2.5} />
+            : <ArrowRight size={17} strokeWidth={2.5} />}
+          {isLastPage
+            ? passed
+              ? tt('rusDarslikQuizAgain')
+              : read
+                ? tt('rusDarslikQuizOpen')
+                : tt('rusDarslikStartPractice')
+            : tt('rusDarslikTheoryContinue')}
         </button>
       </div>
 

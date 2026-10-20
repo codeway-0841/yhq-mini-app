@@ -69,6 +69,7 @@ const CHECKBOX_RE = /^\[([ xX])]\s*(.*)$/
 const ORDERED_RE = /^\d+[.)]\s+(.*)$/
 const DIVIDER_RE = /^-{3,}\s*$|^\*{3,}\s*$|^_{3,}\s*$/
 const SECTION_NUMBER_RE = /^\d{1,2}[.)]\s+/
+const EMBEDDED_PRACTICE_RE = /^(?:🎯\s*)?(?:мини[-\s]?тест|mini[-\s]?test|mustahkamlash testi)/i
 const TABLE_DIVIDER_RE = /^\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?$/
 
 function isTableStart(lines: string[], i: number): boolean {
@@ -186,7 +187,7 @@ export function parseMarkdown(src: string): MdBlock[] {
 }
 
 /** O'quvchi uchun mundarija: 1–2 darajali sarlavhalar. */
-export function extractOutline(blocks: MdBlock[]): MdOutlineEntry[] {
+function outlineCandidates(blocks: MdBlock[]) {
   const candidates: { index: number; level: 1 | 2; text: string }[] = []
   blocks.forEach((block, index) => {
     if (block.kind !== 'heading') return
@@ -201,7 +202,11 @@ export function extractOutline(blocks: MdBlock[]): MdOutlineEntry[] {
   // raqamsiz bo'lishi mumkin. Mavzu = RAQAMLANGAN sarlavha; agar blokda
   // raqamlangan sarlavha umuman bo'lmasa — barcha 1–2 darajalilar olinadi.
   const numbered = candidates.filter((entry) => SECTION_NUMBER_RE.test(entry.text))
-  const chosen = numbered.length > 0 ? numbered : candidates
+  return numbered.length > 0 ? numbered : candidates
+}
+
+export function extractOutline(blocks: MdBlock[]): MdOutlineEntry[] {
+  const chosen = outlineCandidates(blocks)
 
   return chosen.map((entry) => ({
     anchor: `md-h-${entry.index}`,
@@ -209,4 +214,52 @@ export function extractOutline(blocks: MdBlock[]): MdOutlineEntry[] {
     title: entry.text.replace(SECTION_NUMBER_RE, '').trim(),
     level: entry.level,
   }))
+}
+
+/**
+ * Bitta learning-path tuguniga tegishli bloklarni ajratadi.
+ * Reader endi butun blokni emas, faqat tanlangan mikro-mavzuni ko'rsatadi.
+ * Markdown ichidagi eski mini-testlar server-authoritative mashqni takrorlamasligi
+ * va javob kalitini oshkor qilmasligi uchun reader'dan kesiladi.
+ */
+export function extractSectionBlocks(blocks: MdBlock[], sectionIndex: number): MdBlock[] {
+  const sections = outlineCandidates(blocks)
+  const current = sections[sectionIndex]
+  if (!current) return []
+  const end = sections[sectionIndex + 1]?.index ?? blocks.length
+  const section = blocks.slice(current.index, end)
+  const embeddedPractice = section.findIndex(
+    (block) => block.kind === 'heading' && EMBEDDED_PRACTICE_RE.test(plainText(block.text)),
+  )
+  return embeddedPractice < 0 ? section : section.slice(0, embeddedPractice)
+}
+
+/**
+ * Nazariyani mobilga mos qisqa kartalarga bo'ladi. Heading keyingi izoh bilan
+ * birga qoladi; dividerlar vizual sahifa chegarasi sifatida ishlaydi.
+ */
+export function buildLessonPages(blocks: MdBlock[], maxBlocks = 4): MdBlock[][] {
+  const content = blocks[0]?.kind === 'heading' ? blocks.slice(1) : blocks
+  const pages: MdBlock[][] = []
+  let page: MdBlock[] = []
+
+  const flush = () => {
+    if (!page.length) return
+    pages.push(page)
+    page = []
+  }
+
+  for (const block of content) {
+    if (block.kind === 'divider') {
+      flush()
+      continue
+    }
+    if (block.kind === 'heading' && page.length >= 2) flush()
+    if (page.length >= maxBlocks) flush()
+    page.push(block)
+  }
+  flush()
+
+  // Juda qisqa yoki noodatiy manba ham bo'sh lesson bermasin.
+  return pages.length ? pages : [content.length ? content : blocks]
 }

@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import {
+  buildLessonPages,
   extractOutline,
+  extractSectionBlocks,
   parseInline,
   parseMarkdown,
   plainText,
@@ -102,5 +104,30 @@ describe('mundarija va hajm', () => {
     expect(outline.map((o) => o.title)).toEqual(['Bir', 'Ikki'])
     expect(outline[0].anchor).toBe('md-h-0')
     expect(outline[1].anchor).toBe('md-h-2')
+  })
+
+  it('reader uchun faqat tanlangan mavzu bloklarini ajratadi', () => {
+    const blocks = parseMarkdown('# 1. Birinchi\n\nBirinchi izoh\n\n### Misol\n\nA\n\n# 2. Ikkinchi\n\nIkkinchi izoh')
+    const first = extractSectionBlocks(blocks, 0)
+    const second = extractSectionBlocks(blocks, 1)
+
+    expect(first.some((block) => block.kind === 'paragraph' && block.lines.includes('Ikkinchi izoh'))).toBe(false)
+    expect(second.some((block) => block.kind === 'paragraph' && block.lines.includes('Ikkinchi izoh'))).toBe(true)
+  })
+
+  it('markdown ichidagi eski mini-test va javob kalitini readerdan kesadi', () => {
+    const blocks = parseMarkdown('# 1. Mavzu\n\nNazariya\n\n## 🎯 Мини-тест для закрепления\n\nSavol\n\n**Ответы:** 1 — A')
+    const section = extractSectionBlocks(blocks, 0)
+
+    expect(section.some((block) => block.kind === 'heading' && block.text.includes('Мини-тест'))).toBe(false)
+    expect(section.some((block) => block.kind === 'paragraph' && block.lines.join(' ').includes('Ответы'))).toBe(false)
+  })
+
+  it('nazariyani mobil mikro-kartalarga bo‘ladi', () => {
+    const blocks = parseMarkdown('# 1. Mavzu\n\n### Bir\n\nA\n\nB\n\nC\n\nD\n\n### Ikki\n\nE')
+    const pages = buildLessonPages(extractSectionBlocks(blocks, 0), 3)
+
+    expect(pages.length).toBeGreaterThan(1)
+    expect(pages.every((page) => page.length <= 3)).toBe(true)
   })
 })

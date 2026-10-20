@@ -76,6 +76,16 @@ async function continueExercise(runner: HTMLElement) {
   await waitFor(() => expect(within(runner).queryByTestId('lesson-feedback')).not.toBeInTheDocument())
 }
 
+async function advanceToPractice(reader: HTMLElement) {
+  await waitFor(() => expect(within(reader).getByTestId('micro-lesson-card')).toBeInTheDocument())
+  for (let step = 0; step < 20; step++) {
+    const next = within(reader).queryByRole('button', { name: 'Davom etish' })
+    if (!next) break
+    fireEvent.click(next)
+  }
+  return within(reader).getByRole('button', { name: 'Mashqni boshlash' })
+}
+
 async function completePilotLesson(runner: HTMLElement) {
   fireEvent.click(within(runner).getByRole('button', { name: 'Звуки' }))
   fireEvent.click(within(runner).getByRole('button', { name: 'Tekshirish' }))
@@ -148,8 +158,7 @@ describe('RussianDarslikPage — v2 pilot darsi', () => {
 
     const reader = document.querySelector('.lesson-reader') as HTMLElement
     await waitFor(() => expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`))
-    await waitFor(() => expect(within(reader).getByRole('button', { name: /qib bo/ })).toBeEnabled())
-    fireEvent.click(within(reader).getByRole('button', { name: /qib bo/ }))
+    fireEvent.click(await advanceToPractice(reader))
 
     const runner = await screen.findByTestId('lesson-runner')
     await completePilotLesson(runner)

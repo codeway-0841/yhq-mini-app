@@ -24,6 +24,7 @@ export default function LearningPath({
   moduleTitle,
   lockedList,
   readList,
+  startIndex = 0,
 }: {
   moduleId: number
   nodes: readonly string[]
@@ -42,12 +43,14 @@ export default function LearningPath({
   lockedList?: number[]
   /** O'qilgan, lekin testdan o'tilmagan mavzular */
   readList?: number[]
+  /** Katta modullarni oynalab ko'rsatganda asl mavzu indeksi. */
+  startIndex?: number
 }) {
   const tt = useT(lang)
-  const activeIdx = nodes.findIndex((_, idx) => !doneList.includes(idx))
+  const activeIdx = nodes.findIndex((_, idx) => !doneList.includes(startIndex + idx))
   const list = [
-    ...nodes.map((title, idx) => ({ idx, check: false, title })),
-    ...(checkLabel ? [{ idx: nodes.length, check: true, title: checkLabel }] : []),
+    ...nodes.map((title, idx) => ({ idx: startIndex + idx, check: false, title })),
+    ...(checkLabel ? [{ idx: startIndex + nodes.length, check: true, title: checkLabel }] : []),
   ]
   const label = nodeLabel ?? tt('lessonWord')
   return <div className="learning-path">
@@ -56,7 +59,7 @@ export default function LearningPath({
         const done = !node.check && doneList.includes(node.idx)
         const locked = !node.check && (lockedList?.includes(node.idx) ?? false)
         const pending = !node.check && !done && !locked && (readList?.includes(node.idx) ?? false)
-        const current = !node.check && !locked && moduleId === activeModuleId && node.idx === activeIdx
+        const current = !node.check && !locked && moduleId === activeModuleId && node.idx === startIndex + activeIdx
         const chosen = selected?.moduleId === moduleId && selected.idx === node.idx && selected.check === node.check
         const status = node.check
           ? tt('pathCheckHint')

@@ -9,7 +9,12 @@ import {
   getDarslikBlock,
   loadDarslikBlock,
 } from '../../../src/content/darslik-rustili'
-import { extractOutline, parseMarkdown } from '../../../src/features/darslik-rustili/markdown'
+import {
+  buildLessonPages,
+  extractOutline,
+  extractSectionBlocks,
+  parseMarkdown,
+} from '../../../src/features/darslik-rustili/markdown'
 
 /**
  * Rus tili darsligi kontenti — 15 blok konspekti.
@@ -71,6 +76,16 @@ describe('rus tili darsligi — blok matnlari', () => {
 
       // `outline.json` (learning path tugunlari) matn bilan sinxron bo'lishi shart
       expect(getBlockOutline(block.id)).toEqual(outline.map((entry) => entry.title))
+
+      // Har bir path tuguni alohida mikro-darsga ajralishi va kamida bitta
+      // o'qiladigan sahifa berishi shart.
+      for (let sectionIndex = 0; sectionIndex < outline.length; sectionIndex += 1) {
+        const sectionBlocks = extractSectionBlocks(blocks, sectionIndex)
+        const pages = buildLessonPages(sectionBlocks)
+        expect(sectionBlocks.length).toBeGreaterThan(0)
+        expect(pages.length).toBeGreaterThan(0)
+        expect(pages.every((page) => page.length > 0)).toBe(true)
+      }
 
       // Inline `**` juftliklari balansda bo'lishi kerak (buzilgan belgi = noto'g'ri render)
       const paragraphs = blocks.filter((b) => b.kind === 'paragraph')

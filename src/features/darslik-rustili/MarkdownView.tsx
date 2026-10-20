@@ -147,9 +147,20 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
   }
 }
 
-/** Markdown matnini ilova dizayn tilidagi bloklarga aylantirib ko'rsatadi. */
-export const MarkdownView = memo(function MarkdownView({ source, className }: { source: string; className?: string }) {
-  const blocks = useMemo(() => parseMarkdown(source), [source])
+/** Markdown matnini yoki oldindan ajratilgan bloklarni ilova dizaynida ko'rsatadi. */
+export const MarkdownView = memo(function MarkdownView({
+  source,
+  blocks: providedBlocks,
+  className,
+}: {
+  source?: string
+  blocks?: readonly MdBlock[]
+  className?: string
+}) {
+  const blocks = useMemo(
+    () => providedBlocks ? [...providedBlocks] : parseMarkdown(source ?? ''),
+    [providedBlocks, source],
+  )
   return (
     <div className={cn('flex flex-col gap-3', className)}>
       {blocks.map((block, index) => (
