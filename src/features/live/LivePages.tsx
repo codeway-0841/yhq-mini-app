@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { AlertCircle, CalendarClock, ChevronDown, Hand, Mic, MicOff, MonitorUp, Radio, RefreshCw, Send, Trash2, Users, Video, VideoOff } from 'lucide-react'
+import { AlertCircle, CalendarClock, ChevronDown, Hand, Mic, MicOff, MonitorUp, PictureInPicture2, Radio, RefreshCw, Send, Trash2, Users, Video, VideoOff } from 'lucide-react'
 import { PageHeader } from '@/shared/components/ui/page-header'
 import { Card, CardContent } from '@/shared/components/ui/card'
 import { Badge } from '@/shared/components/ui/badge'
@@ -13,6 +13,9 @@ import { useAppStore } from '@/shared/store/useAppStore'
 import { useSubjectStore } from '@/shared/store/useSubjectStore'
 import { api } from '@/shared/api'
 import { goBack } from '@/shared/lib/navigation'
+import { bindNativePictureInPictureMode, setNativePictureInPictureActive } from '@/platform/native'
+import { getTelegramUser } from '@/platform/telegram'
+import { toggleWebPictureInPicture } from '@/platform/picture-in-picture'
 import type { LiveCapabilities, LiveRoomPublic } from '../../../shared/live'
 import { useLiveMessages } from './hooks/useLiveMessages'
 import { useMediaRoom } from './hooks/useVoiceRoom'
@@ -273,12 +276,25 @@ function LiveRoomPage() {
   const [sending, setSending] = useState(false)
   const [interactionError, setInteractionError] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const mediaPanelRef = useRef<HTMLDivElement>(null)
   const [handStatus, setHandStatus] = useState<'none' | 'pending' | 'approved' | 'rejected'>('none')
   const [cloud, setCloud] = useState<{ participants: { identity: string; audioTracks: number; audioMuted: boolean; videoTracks: number }[] } | { error: true } | null>(null)
   const [hands, setHands] = useState<{ userId: string; userName: string | null; status: string; createdAt: string }[]>([])
+  const [pictureInPicture, setPictureInPicture] = useState(false)
+  const [webPictureInPictureBusy, setWebPictureInPictureBusy] = useState(false)
+  const isTelegramMiniApp = Boolean(getTelegramUser()?.id)
   const isRoomManager = user?.isAdmin === true || user?.id === room?.teacherId
   const voice = useMediaRoom({ mediaUrl, livekitToken, canSpeak, canPublishVideo: canSpeak, enabled: joined && mediaEnabled })
   const { messages, send } = useLiveMessages(roomId, joined, room?.status === 'ended' || room?.status === 'ending', voice.chatSignalVersion, voice.state === 'connected')
+  const pictureInPictureEligible = joined && mediaEnabled && voice.state === 'connected' && room?.status === 'live'
+
+  useEffect(() => bindNativePictureInPictureMode(setPictureInPicture), [])
+
+  useEffect(() => {
+    void setNativePictureInPictureActive(pictureInPictureEligible)
+    if (!pictureInPictureEligible) setPictureInPicture(false)
+    return () => { void setNativePictureInPictureActive(false) }
+  }, [pictureInPictureEligible])
 
   // Manager: qo'llar ro'yxati (5s polling) — capability bo'yicha, rol taxmini YO'Q
   useEffect(() => {
@@ -452,6 +468,17 @@ function LiveRoomPage() {
     finally { setSending(false) }
   }
 
+  const handleWebPictureInPicture = async () => {
+    if (webPictureInPictureBusy) return
+    setWebPictureInPictureBusy(true)
+    setInteractionError('')
+    const result = await toggleWebPictureInPicture(mediaPanelRef.current)
+    if (result === 'unsupported') setInteractionError(tt('livePipUnsupported'))
+    else if (result === 'no-video') setInteractionError(tt('livePipNoVideo'))
+    else if (result === 'failed') setInteractionError(tt('livePipFailed'))
+    setWebPictureInPictureBusy(false)
+  }
+
   if (roomLoading) {
     return (
       <div className="flex flex-1 flex-col px-4 pb-8">
@@ -487,9 +514,33 @@ function LiveRoomPage() {
         <div className="mb-3 flex items-start gap-3 rounded-2xl bg-psurface px-4 py-3"><CalendarClock size={18} className="mt-0.5 shrink-0 text-pprimary" /><div><p className="text-sm font-semibold text-pfg">{tt('liveStatusScheduled')}</p><p className="mt-0.5 text-xs leading-relaxed text-pmuted">{tt('liveWaitForStart')}</p>{room.scheduledAt && <p className="mt-1 text-xs font-medium text-pfg">{formatLiveDate(room.scheduledAt, lang)}</p>}</div></div>
       )}
       {/* Media paneli — LiveKit ovoz+kamera+screen (Faza 1c). Media o'chiq bo'lsa chat rejimi. */}
-      <Card className="overflow-hidden border-black/10 bg-[#111827] text-white">
-        <CardContent className="flex min-h-[220px] flex-col items-center justify-center gap-3 p-3 text-center sm:min-h-[300px]">
-          {!joined || !mediaEnabled ? (
+      <Card className={cn(
+        'overflow-hidden border-black/10 bg-[#111827] text-white',
+        pictureInPicture && 'fixed inset-0 z-[9999] m-0 rounded-none border-0',
+      )}>
+        <CardContent ref={mediaPanelRef} className={cn(
+          'flex min-h-[220px] flex-col items-center justify-center gap-3 p-3 text-center sm:min-h-[300px]',
+          pictureInPicture && 'h-dvh min-h-0 gap-0 p-0 sm:min-h-0',
+        )}>
+          {pictureInPicture ? (() => {
+            const remote = voice.videos.find((video) => video.source === 'screen')
+              ?? voice.videos.find((video) => video.source === 'camera')
+            const teacherName = room.teacherName || 'Diana Mustafaeva'
+            if (remote) {
+              return <VideoView track={remote.track} label={remote.identity === room.teacherId ? teacherName : remote.identity} pictureInPicture />
+            }
+            if (voice.localVideo) {
+              return <VideoView track={voice.localVideo} label={user?.firstName || (lang === 'ru' ? 'Вы' : 'Siz')} muted pictureInPicture />
+            }
+            return (
+              <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-black text-white">
+                <span className="grid size-20 place-items-center rounded-full bg-sky-600 text-4xl font-medium" aria-hidden="true">
+                  {teacherName.trim().charAt(0).toLocaleUpperCase() || 'K'}
+                </span>
+                <span className="max-w-[85%] truncate text-sm font-semibold">{teacherName}</span>
+              </div>
+            )
+          })() : !joined || !mediaEnabled ? (
             <>
               <span className="grid size-14 place-items-center rounded-full bg-white/10"><Radio size={26} className={cn(room.status === 'live' ? 'text-red-400 motion-safe:animate-pulse' : 'text-white/60')} /></span>
               <div><p className="text-sm font-semibold text-white">{room.status === 'live' ? tt('liveBroadcastReady') : room.status === 'ended' ? tt('liveStatusEnded') : tt('liveWaitingRoom')}</p><p className="mt-1 max-w-sm text-xs leading-relaxed text-white/60">{room.status === 'ended' ? tt('liveEndedHint') : tt('liveMediaHint')}</p></div>
@@ -498,16 +549,22 @@ function LiveRoomPage() {
             <>
               {/* Screen-share katta tile */}
               {voice.videos.filter((v) => v.source === 'screen').map((v) => (
-                <VideoView key={v.sid} track={v.track} label={v.identity} large />
+                <VideoView key={v.sid} track={v.track} label={v.identity} large pipPriority={1} />
               ))}
               {/* Kamera grid: lokal + uzoq */}
               {(voice.localVideo || voice.videos.some((v) => v.source === 'camera')) && (
                 <div className="grid w-full grid-cols-2 gap-2">
                   {voice.localVideo && (
-                    <VideoView track={voice.localVideo} label="Siz" muted speaking={voice.speakers.includes(user?.id ?? '')} />
+                    <VideoView track={voice.localVideo} label="Siz" muted speaking={voice.speakers.includes(user?.id ?? '')} pipPriority={4} />
                   )}
                   {voice.videos.filter((v) => v.source === 'camera').slice(0, 3).map((v) => (
-                    <VideoView key={v.sid} track={v.track} label={v.identity} speaking={voice.speakers.includes(v.identity)} />
+                    <VideoView
+                      key={v.sid}
+                      track={v.track}
+                      label={v.identity}
+                      speaking={voice.speakers.includes(v.identity)}
+                      pipPriority={v.identity === room?.teacherId ? 2 : 3}
+                    />
                   ))}
                 </div>
               )}
@@ -546,6 +603,18 @@ function LiveRoomPage() {
                   handStatus === 'pending'
                     ? <Button variant="secondary" onClick={handleLower}><Hand size={16} />{tt('liveLowerHand')}</Button>
                     : <Button variant="secondary" onClick={handleRaise}><Hand size={16} />{tt('liveRaiseHand')}</Button>
+                )}
+                {isTelegramMiniApp && (
+                  <Button
+                    size="icon"
+                    variant="secondary"
+                    aria-label={tt('livePipOpen')}
+                    title={tt('livePipOpen')}
+                    loading={webPictureInPictureBusy}
+                    onClick={() => void handleWebPictureInPicture()}
+                  >
+                    <PictureInPicture2 size={18} />
+                  </Button>
                 )}
               </div>
               <p className="text-xs text-white/65">

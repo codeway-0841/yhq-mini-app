@@ -12,6 +12,9 @@ const {
   setStyleMock,
   cameraCheckMock,
   cameraRequestMock,
+  registerPluginMock,
+  pipSetActiveMock,
+  pipAddListenerMock,
 } = vi.hoisted(() => ({
   addListenerMock: vi.fn(),
   splashHideMock: vi.fn(),
@@ -20,9 +23,15 @@ const {
   setStyleMock: vi.fn(),
   cameraCheckMock: vi.fn(),
   cameraRequestMock: vi.fn(),
+  registerPluginMock: vi.fn(),
+  pipSetActiveMock: vi.fn(),
+  pipAddListenerMock: vi.fn(),
 }))
 
-vi.mock('@capacitor/core', () => ({ Capacitor: { isNativePlatform: isNativeMock } }))
+vi.mock('@capacitor/core', () => ({
+  Capacitor: { isNativePlatform: isNativeMock },
+  registerPlugin: registerPluginMock,
+}))
 vi.mock('@capacitor/app', () => ({ App: { addListener: addListenerMock } }))
 vi.mock('@capacitor/splash-screen', () => ({ SplashScreen: { hide: splashHideMock } }))
 vi.mock('@capacitor/status-bar', () => ({
@@ -44,6 +53,8 @@ import {
   applyNativeChrome,
   requestNativeCameraPermission,
   syncStatusBarStyle,
+  bindNativePictureInPictureMode,
+  setNativePictureInPictureActive,
 } from '../../../src/platform/native'
 
 const win: Record<string, unknown> = {}
@@ -58,6 +69,12 @@ beforeEach(() => {
   isNativeMock.mockReset().mockReturnValue(false)
   cameraCheckMock.mockReset()
   cameraRequestMock.mockReset()
+  pipSetActiveMock.mockReset().mockResolvedValue(undefined)
+  pipAddListenerMock.mockReset().mockResolvedValue({ remove: vi.fn().mockResolvedValue(undefined) })
+  registerPluginMock.mockReset().mockReturnValue({
+    setActive: pipSetActiveMock,
+    addListener: pipAddListenerMock,
+  })
   splashHideMock.mockResolvedValue(undefined)
   addListenerMock.mockResolvedValue({ remove: vi.fn().mockResolvedValue(undefined) })
   delete document.body.dataset.platform
@@ -213,5 +230,33 @@ describe('syncStatusBarStyle — app temasi bilan sinxron', () => {
   it('brauzer/Telegram: no-op', () => {
     syncStatusBarStyle(true)
     expect(setStyleMock).not.toHaveBeenCalled()
+  })
+})
+
+describe('Android picture-in-picture bridge', () => {
+  it('brauzerda native plugin chaqirilmaydi', async () => {
+    await setNativePictureInPictureActive(true)
+    expect(registerPluginMock).not.toHaveBeenCalled()
+    expect(bindNativePictureInPictureMode(() => {})).toBeUndefined()
+  })
+
+  it('APKda faqat faol live holatini uzatadi va mode listenerni tozalaydi', async () => {
+    isNativeMock.mockReturnValue(true)
+    const onChange = vi.fn()
+
+    await setNativePictureInPictureActive(true)
+    expect(registerPluginMock).toHaveBeenCalledWith('PictureInPicture')
+    expect(pipSetActiveMock).toHaveBeenCalledWith({ active: true })
+
+    const cleanup = bindNativePictureInPictureMode(onChange)
+    expect(pipAddListenerMock).toHaveBeenCalledWith('modeChanged', expect.any(Function))
+    const listener = pipAddListenerMock.mock.calls[0]![1] as (state: { active: boolean }) => void
+    listener({ active: true })
+    expect(onChange).toHaveBeenCalledWith(true)
+
+    const handle = await pipAddListenerMock.mock.results[0]!.value as { remove: ReturnType<typeof vi.fn> }
+    cleanup?.()
+    await Promise.resolve()
+    expect(handle.remove).toHaveBeenCalledOnce()
   })
 })

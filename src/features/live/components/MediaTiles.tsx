@@ -6,12 +6,14 @@ import { cn } from '@/shared/lib/cn'
  * LiveKit video tile — track attach/detach lifecycle.
  * Rounded + muted local (echo yo'q), remote ovoz alohida audio el'da.
  */
-export function VideoView({ track, label, speaking, muted = false, large = false }: {
+export function VideoView({ track, label, speaking, muted = false, large = false, pictureInPicture = false, pipPriority }: {
   track: RemoteTrack | LocalVideoTrack
   label: string
   speaking?: boolean
   muted?: boolean
   large?: boolean
+  pictureInPicture?: boolean
+  pipPriority?: number
 }) {
   const ref = useRef<HTMLVideoElement>(null)
   useEffect(() => {
@@ -22,11 +24,20 @@ export function VideoView({ track, label, speaking, muted = false, large = false
   }, [track])
   return (
     <div className={cn(
-      'relative overflow-hidden rounded-2xl bg-black/80',
-      large ? 'aspect-video w-full' : 'aspect-[4/3] w-full',
+      'relative overflow-hidden bg-black/80',
+      pictureInPicture ? 'h-full w-full rounded-none' : 'rounded-2xl',
+      !pictureInPicture && (large ? 'aspect-video w-full' : 'aspect-[4/3] w-full'),
       speaking && 'ring-2 ring-psuccess',
     )}>
-      <video ref={ref} muted={muted} playsInline autoPlay aria-label={label} className="h-full w-full object-cover" />
+      <video
+        ref={ref}
+        muted={muted}
+        playsInline
+        autoPlay
+        aria-label={label}
+        data-live-pip-priority={pipPriority}
+        className="h-full w-full object-cover"
+      />
       <span className="absolute bottom-1.5 left-1.5 max-w-[80%] truncate rounded-xl bg-black/60 px-2 py-0.5 text-[11px] font-semibold text-white">
         {label}
       </span>

@@ -10,7 +10,8 @@
  * @capacitor/* paketlari brauzerda xavfsiz import qilinadi (web fallback)
  * — shuning uchun static import ixtiyoriy.
  */
-import { Capacitor } from '@capacitor/core'
+import { Capacitor, registerPlugin } from '@capacitor/core'
+import type { PluginListenerHandle } from '@capacitor/core'
 import { App } from '@capacitor/app'
 import { SplashScreen } from '@capacitor/splash-screen'
 import { StatusBar, Style } from '@capacitor/status-bar'
@@ -19,6 +20,43 @@ import { bindBackButton, getTelegramWebApp } from './telegram'
 /** Haqiqiy native APK ichidaymi? Telegram WebView / brauzer — false. */
 export function isNativeApp(): boolean {
   try { return Capacitor.isNativePlatform() } catch { return false }
+}
+
+interface PictureInPicturePlugin {
+  setActive(options: { active: boolean }): Promise<void>
+  addListener(
+    eventName: 'modeChanged',
+    listener: (state: { active: boolean }) => void,
+  ): Promise<PluginListenerHandle>
+}
+
+let pictureInPicturePlugin: PictureInPicturePlugin | null = null
+
+function getPictureInPicturePlugin(): PictureInPicturePlugin {
+  pictureInPicturePlugin ??= registerPlugin<PictureInPicturePlugin>('PictureInPicture')
+  return pictureInPicturePlugin
+}
+
+/** Jonli media ulanganida Android PiP'ni qurollantiradi; web/Telegram'da no-op. */
+export async function setNativePictureInPictureActive(active: boolean): Promise<void> {
+  if (!isNativeApp()) return
+  try {
+    await getPictureInPicturePlugin().setActive({ active })
+  } catch (error) {
+    console.warn('[PiP] Native picture-in-picture unavailable:', error)
+  }
+}
+
+/** Native PiP oynasi ochilib/yopilganda React ko'rinishini video-only holatga o'tkazadi. */
+export function bindNativePictureInPictureMode(onChange: (active: boolean) => void): (() => void) | undefined {
+  if (!isNativeApp()) return undefined
+  const handle = getPictureInPicturePlugin().addListener('modeChanged', ({ active }) => onChange(active))
+  let removed = false
+  return () => {
+    if (removed) return
+    removed = true
+    handle.then((listener) => listener.remove()).catch(() => {})
+  }
 }
 
 export type NativeCameraPermissionResult = 'granted' | 'denied' | 'unavailable'

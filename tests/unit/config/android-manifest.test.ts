@@ -22,3 +22,11 @@ describe('AndroidManifest — mic permission', () => {
     expect(xml).toContain('android.hardware.microphone')
   })
 })
+
+describe('AndroidManifest — live picture-in-picture', () => {
+  const xml = readFileSync(join(__dirname, '../../../android/app/src/main/AndroidManifest.xml'), 'utf8')
+
+  it('MainActivity Android PiP imkoniyatini e\'lon qiladi', () => {
+    expect(xml).toContain('android:supportsPictureInPicture="true"')
+  })
+})

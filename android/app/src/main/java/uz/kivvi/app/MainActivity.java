@@ -1,10 +1,16 @@
 package uz.kivvi.app;
 
+import android.app.PictureInPictureParams;
+import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.content.IntentSender;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Rational;
 import androidx.appcompat.app.AlertDialog;
 import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.PluginHandle;
 import com.google.android.gms.tasks.Task;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -29,11 +35,59 @@ public class MainActivity extends BridgeActivity {
 
     private AppUpdateManager appUpdateManager;
     private InstallStateUpdatedListener installStateUpdatedListener;
+    private boolean pictureInPictureActive = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        registerPlugin(PictureInPicturePlugin.class);
         super.onCreate(savedInstanceState);
         initPlayInAppUpdate();
+    }
+
+    /** Live sahifa ulangan paytdagina Android auto-PiP'ni qurollantiradi. */
+    public void setPictureInPictureActive(boolean active) {
+        pictureInPictureActive = active;
+        if (!supportsPictureInPicture()) return;
+
+        PictureInPictureParams.Builder builder = new PictureInPictureParams.Builder()
+            .setAspectRatio(new Rational(16, 9));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            builder.setAutoEnterEnabled(active);
+        }
+        setPictureInPictureParams(builder.build());
+    }
+
+    private boolean supportsPictureInPicture() {
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
+            && getPackageManager().hasSystemFeature(PackageManager.FEATURE_PICTURE_IN_PICTURE);
+    }
+
+    @Override
+    public void onUserLeaveHint() {
+        super.onUserLeaveHint();
+        // Android 12+ setAutoEnterEnabled bilan silliq o'tadi. Eski Androidlarda
+        // Home/Recent bosilishi shu callback orqali qo'lda PiP'ga o'tkaziladi.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O
+            && Build.VERSION.SDK_INT < Build.VERSION_CODES.S
+            && pictureInPictureActive
+            && supportsPictureInPicture()
+            && !isInPictureInPictureMode()) {
+            try {
+                enterPictureInPictureMode();
+            } catch (IllegalStateException error) {
+                Log.w(TAG, "Picture-in-picture entry skipped: " + error.getMessage());
+            }
+        }
+    }
+
+    @Override
+    public void onPictureInPictureModeChanged(boolean isInPictureInPictureMode, Configuration newConfig) {
+        super.onPictureInPictureModeChanged(isInPictureInPictureMode, newConfig);
+        if (bridge == null) return;
+        PluginHandle handle = bridge.getPlugin("PictureInPicture");
+        if (handle != null && handle.getInstance() instanceof PictureInPicturePlugin) {
+            ((PictureInPicturePlugin) handle.getInstance()).notifyModeChanged(isInPictureInPictureMode);
+        }
     }
 
     private void initPlayInAppUpdate() {
