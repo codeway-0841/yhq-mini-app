@@ -105,6 +105,13 @@
 .lesson-course[data-course='russian'] .lesson-module-section:last-of-type { padding-bottom: 120px; }
 .lesson-course[data-course='russian'] .learning-row { min-height: clamp(118px, 34vw, 145px); }
 .lesson-course[data-course='russian'] .learning-tile { --token-size: 84px; top: -14px; }
+.lesson-course[data-course='russian'] .learning-tile:is([data-state='done'], [data-state='current']) {
+  --tile-color: var(--module-color, var(--p-primary));
+  --tile-light: color-mix(in srgb, var(--module-color, var(--p-primary)) 42%, white);
+  --tile-side: color-mix(in srgb, var(--module-color, var(--p-primary)) 65%, #17202e);
+  --tile-edge: var(--module-color, var(--p-primary));
+}
+.lesson-course[data-course='russian'] .lesson-module-icon { width: 42px; height: 42px; border-radius: 14px; }
 .learning-mascot {
   position: absolute; top: -2%; left: 27%; width: 46%; height: 58%;
   display: block; transform-origin: 50% 92%;

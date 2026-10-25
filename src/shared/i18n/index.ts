@@ -1147,6 +1147,13 @@ const UZ = {
   rusDarslikLessonPickPair: "Tanlang",
   rusDarslikLessonRemoveToken: "{token} so‘zini olib tashlash",
   rusDarslikLessonClear: "Tozalash",
+  rusDarslikUnitBadge: "{unit}-bo‘lim",
+  rusDarslikStageBadge: "{stage}-bosqich",
+  rusDarslikCourseProgress: "Kurs progressi",
+  rusDarslikListenExample: "Talaffuzni eshitish",
+  rusDarslikCyrillicHint: "Maxsus harflar",
+  rusDarslikMatchedCount: "{done}/{total} juftlik",
+  rusDarslikReviewTitle: "Javoblar tahlili",
 } as const
 
 type Keys = keyof typeof UZ
@@ -2287,6 +2294,13 @@ const RU: Record<Keys, string> = {
   rusDarslikLessonPickPair: "Выбрать",
   rusDarslikLessonRemoveToken: "Убрать слово «{token}»",
   rusDarslikLessonClear: "Очистить",
+  rusDarslikUnitBadge: "Раздел {unit}",
+  rusDarslikStageBadge: "Этап {stage}",
+  rusDarslikCourseProgress: "Прогресс курса",
+  rusDarslikListenExample: "Прослушать произношение",
+  rusDarslikCyrillicHint: "Спецсимволы",
+  rusDarslikMatchedCount: "{done}/{total} пар",
+  rusDarslikReviewTitle: "Разбор ответов",
 }
 
 export const LANGS = { uz: UZ as Record<Keys, string>, ru: RU }

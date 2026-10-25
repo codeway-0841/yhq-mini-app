@@ -345,4 +345,19 @@ describe('RussianDarslikPage — learning path', () => {
     const banner = document.getElementById('rus-block-1')!
     expect(banner.textContent).toContain(DARSLIK_BLOCKS[0].titleRu)
   })
+
+  it('bo‘lim nishoni, bosqich indikatori va nazariya kartasida talaffuz tugmasini ko‘rsatadi', async () => {
+    render(<RussianDarslikPage />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const firstBlock = document.getElementById('rus-block-1')!
+    expect(firstBlock).toHaveTextContent('1-bo‘lim')
+    expect(firstBlock).toHaveTextContent('1-bosqich')
+
+    fireEvent.click(pathNode(1, 0))
+    fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
+    const reader = document.querySelector('.lesson-reader') as HTMLElement
+    await waitReaderReady(reader)
+    expect(within(reader).getByRole('button', { name: 'Talaffuzni eshitish' })).toBeInTheDocument()
+  })
 })

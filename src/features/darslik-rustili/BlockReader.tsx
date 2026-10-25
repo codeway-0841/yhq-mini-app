@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, X } from 'lucide-react'
+import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
 import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
+import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
+import { PathMascot } from '../lessons'
 import { MarkdownView } from './MarkdownView'
-import { buildLessonPages, extractOutline, extractSectionBlocks, parseMarkdown } from './markdown'
+import { buildLessonPages, extractOutline, extractSectionBlocks, parseMarkdown, plainText, type MdBlock } from './markdown'
 import { nextSection } from './progress'
 import TopicCheck from './TopicCheck'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
@@ -33,6 +35,24 @@ interface BlockReaderProps {
   onNextTopic?: () => void
   /** Server 403 TOPIC_LOCKED qaytardi — progressni qayta yuklash */
   onLockedSection?: () => void
+}
+
+const EMPTY_BLOCKS: readonly MdBlock[] = []
+
+function extractSpeechText(blocks: readonly MdBlock[]): string {
+  const parts: string[] = []
+  for (const block of blocks) {
+    if (block.kind === 'heading') parts.push(plainText(block.text))
+    else if (block.kind === 'paragraph' || block.kind === 'quote') parts.push(plainText(block.lines.join(' ')))
+    else if (block.kind === 'list') parts.push(block.items.map((item) => plainText(item.text)).join('. '))
+    else if (block.kind === 'table') parts.push(block.rows.map((row) => row.map(plainText).join(' — ')).join('. '))
+  }
+  return parts
+    .join('. ')
+    .replace(/\[[^\]]*]/g, '')
+    .replace(/⚠️|🔹|•/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 /**
@@ -64,6 +84,7 @@ export function BlockReader({
   const [tocOpen, setTocOpen] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
   const [quizOpen, setQuizOpen] = useState(false)
+  const [speaking, setSpeaking] = useState(false)
   const bodyRef = useRef<HTMLDivElement | null>(null)
 
   // Android hardware back / Telegram BackButton — o'quvchini yopadi.
@@ -71,6 +92,9 @@ export function BlockReader({
     const id = Symbol('rus-darslik-reader')
     return registerModal(id, onClose)
   }, [onClose])
+
+  useEffect(() => subscribeSpeaking(() => setSpeaking(isSpeaking())), [])
+  useEffect(() => () => stopSpeaking(), [])
 
   useEffect(() => {
     let cancelled = false
@@ -103,6 +127,7 @@ export function BlockReader({
 
   // Mavzu almashganda mikro-dars birinchi kartadan boshlanadi.
   useEffect(() => {
+    stopSpeaking()
     setPageIndex(0)
     scrollToTop()
     setTocOpen(false)
@@ -132,11 +157,19 @@ export function BlockReader({
   const pageCount = Math.max(1, lessonPages.length)
   const safePageIndex = Math.min(pageIndex, pageCount - 1)
   const isLastPage = safePageIndex >= pageCount - 1
+  const currentCardBlocks = lessonPages[safePageIndex] ?? EMPTY_BLOCKS
+  const speechText = useMemo(
+    () => extractSpeechText(currentCardBlocks) || sectionTitle,
+    [currentCardBlocks, sectionTitle],
+  )
+
   const openPractice = () => {
+    stopSpeaking()
     if (!read) onMarkRead(sectionIndex)
     setQuizOpen(true)
   }
   const nextPage = () => {
+    stopSpeaking()
     if (isLastPage) {
       openPractice()
       return
@@ -145,62 +178,92 @@ export function BlockReader({
     scrollToTop()
   }
   const previousPage = () => {
+    stopSpeaking()
     setPageIndex((value) => Math.max(0, value - 1))
     scrollToTop()
   }
 
+  const handleSpeakCard = () => {
+    if (speaking) {
+      stopSpeaking()
+      return
+    }
+    speak(speechText, 'ru')
+  }
+
   return (
     <div className="lesson-reader fixed inset-0 z-50 flex flex-col bg-pcanvas">
-      <div className="flex items-center gap-2 border-b border-pline px-3 py-2.5 safe-top">
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label={tt('rusDarslikCloseReader')}
-          className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full border border-black/[0.04] bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all duration-150 ease-out active:scale-95 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none"
-        >
-          <ChevronLeft size={22} strokeWidth={2.25} />
-        </button>
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-pmuted">
-            {blockLabel} · {position}
-          </p>
-          <h2 className="truncate text-[15px] font-semibold leading-snug text-pfg">{sectionTitle}</h2>
+      <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 safe-top">
+        <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={tt('rusDarslikCloseReader')}
+            className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg shadow-2xs transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          >
+            <ChevronLeft size={21} strokeWidth={2.25} />
+          </button>
+          <div className="min-w-0 flex-1">
+            <p className="truncate text-[10.5px] font-extrabold uppercase tracking-wider text-pprimary">
+              {blockLabel} · {position}
+            </p>
+            <h2 className="truncate text-[15px] font-bold leading-snug text-pfg">{sectionTitle}</h2>
+          </div>
+          <button
+            type="button"
+            onClick={toggleToc}
+            aria-label={tocOpen ? tt('rusDarslikHideContents') : tt('rusDarslikContents')}
+            aria-expanded={tocOpen}
+            className={cn(
+              'grid size-10 shrink-0 cursor-pointer place-items-center rounded-full transition-colors',
+              tocOpen ? 'bg-pprimary text-ponprimary shadow-xs' : 'bg-psurface text-pfg',
+            )}
+          >
+            {tocOpen ? <X size={18} strokeWidth={2.2} /> : <ListIcon size={18} strokeWidth={2.2} />}
+          </button>
         </div>
-        <button
-          type="button"
-          onClick={toggleToc}
-          aria-label={tocOpen ? tt('rusDarslikHideContents') : tt('rusDarslikContents')}
-          aria-expanded={tocOpen}
-          className={cn(
-            'grid size-11 shrink-0 cursor-pointer place-items-center rounded-full transition-colors',
-            tocOpen ? 'bg-pprimary text-ponprimary' : 'bg-psurface text-pfg',
-          )}
-        >
-          {tocOpen ? <X size={19} strokeWidth={2} /> : <ListIcon size={19} strokeWidth={2} />}
-        </button>
-      </div>
 
-      <div
-        className="h-1.5 bg-psurface"
-        role="progressbar"
-        aria-label={tt('rusDarslikTheoryProgress')}
-        aria-valuemin={1}
-        aria-valuemax={pageCount}
-        aria-valuenow={safePageIndex + 1}
-      >
+        {/* Duolingo Segmented Story Progress Bar */}
         <div
-          className="h-full rounded-r-full bg-pprimary transition-[width] duration-300"
-          style={{ width: `${Math.round(((safePageIndex + 1) / pageCount) * 100)}%` }}
-        />
+          className="mx-auto mt-2.5 flex w-full max-w-[560px] items-center gap-1.5"
+          role="progressbar"
+          aria-label={tt('rusDarslikTheoryProgress')}
+          aria-valuemin={1}
+          aria-valuemax={pageCount}
+          aria-valuenow={safePageIndex + 1}
+        >
+          {Array.from({ length: pageCount }).map((_, idx) => {
+            const isCompleted = idx < safePageIndex
+            const isActive = idx === safePageIndex
+            return (
+              <div
+                key={idx}
+                aria-hidden="true"
+                className="h-2.5 flex-1 overflow-hidden rounded-full bg-psurface p-0.5"
+              >
+                <div
+                  className={cn(
+                    'relative h-full rounded-full transition-all duration-300',
+                    isCompleted || isActive ? 'w-full bg-pprimary' : 'w-0 bg-transparent',
+                  )}
+                >
+                  {(isCompleted || isActive) && (
+                    <span className="absolute inset-x-1 top-0.5 h-0.5 rounded-full bg-white/35" />
+                  )}
+                </div>
+              </div>
+            )
+          })}
+        </div>
       </div>
 
       <div ref={bodyRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
         {tocOpen && (
-          <div className="mb-4 rounded-2xl bg-pcard p-3 shadow-xs">
-            <p className="mb-2 px-1 text-[11px] font-semibold uppercase tracking-wide text-psubtle">
+          <div className="mx-auto mb-4 w-full max-w-[560px] rounded-3xl bg-pcard p-3.5 shadow-xs">
+            <p className="mb-2 px-1 text-[11px] font-extrabold uppercase tracking-wider text-psubtle">
               {tt('rusDarslikContents')} · {tt('rusDarslikSectionsCount').replace('{count}', String(total))}
             </p>
-            <ol className="flex flex-col">
+            <ol className="flex flex-col gap-0.5">
               {outline.map((entry, index) => {
                 const locked = lockedSections.includes(index)
                 const done = doneSections.includes(index)
@@ -213,19 +276,19 @@ export function BlockReader({
                       disabled={locked}
                       aria-current={index === sectionIndex ? 'true' : undefined}
                       className={cn(
-                        'flex w-full items-start gap-2 rounded-xl px-1.5 py-2 text-left text-[13px] leading-snug',
+                        'flex w-full items-start gap-2.5 rounded-xl px-2.5 py-2 text-left text-[13px] leading-snug transition-colors',
                         locked ? 'cursor-not-allowed opacity-45' : 'cursor-pointer hover:bg-psurface active:opacity-80',
-                        index === sectionIndex ? 'bg-[rgb(var(--p-primary-rgb)/0.10)] font-semibold text-pfg' : 'text-pfg',
+                        index === sectionIndex ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] font-bold text-pfg' : 'text-pfg',
                       )}
                     >
-                      <span className="mt-0.5 w-5 flex-none text-right text-[11px] font-semibold text-pprimary">{index + 1}.</span>
+                      <span className="mt-0.5 w-5 flex-none text-right text-[11px] font-extrabold tabular-nums text-pprimary">{index + 1}.</span>
                       <span className="min-w-0 flex-1">{entry.title}</span>
                       {locked
                         ? <Lock size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pmuted" />
                         : done
-                          ? <CheckCircle2 size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-psuccess" />
+                          ? <CheckCircle2 size={14} strokeWidth={2.5} className="mt-0.5 flex-none text-psuccess" />
                           : pending
-                            ? <HelpCircle size={13} strokeWidth={2.5} className="mt-0.5 flex-none text-pwarning" />
+                            ? <HelpCircle size={14} strokeWidth={2.5} className="mt-0.5 flex-none text-pwarning" />
                             : null}
                     </button>
                   </li>
@@ -236,7 +299,7 @@ export function BlockReader({
         )}
 
         {failed ? (
-          <div className="flex flex-col items-center gap-3 rounded-2xl bg-pcard px-4 py-10 text-center">
+          <div className="mx-auto flex w-full max-w-[560px] flex-col items-center gap-3 rounded-3xl bg-pcard px-4 py-10 text-center shadow-xs">
             <p className="text-sm text-pmuted">{tt('rusDarslikLoadFailed')}</p>
             <button
               type="button"
@@ -247,79 +310,124 @@ export function BlockReader({
             </button>
           </div>
         ) : source === null ? (
-          <div className="flex flex-col gap-2.5" aria-busy="true" aria-live="polite">
+          <div className="mx-auto flex w-full max-w-[560px] flex-col gap-2.5 rounded-3xl bg-pcard p-5 shadow-xs" aria-busy="true" aria-live="polite">
             {[92, 100, 74, 88, 96, 60].map((width, i) => (
               <div key={i} className="h-3.5 animate-pulse rounded-full bg-psurface" style={{ width: `${width}%` }} />
             ))}
           </div>
         ) : (
           <article className="mx-auto w-full max-w-[560px] pb-5" aria-labelledby="rus-lesson-topic-title">
-            <div className="mb-3 flex items-center justify-between gap-3">
-              <span className="inline-flex items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.10)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-pprimary shadow-2xs">
-                <BookOpen size={13} strokeWidth={2.25} />
-                {tt('rusDarslikTheory')}
-              </span>
-              <span className="text-[11.5px] font-semibold tabular-nums text-pmuted">
-                {tt('rusDarslikTheoryStep')
-                  .replace('{current}', String(safePageIndex + 1))
-                  .replace('{total}', String(pageCount))}
-              </span>
+            {/* Mascot Guidebook Header Card */}
+            <div className="mb-3.5 flex items-center gap-3 rounded-3xl bg-pcard p-3.5 shadow-xs">
+              <div className="relative grid size-12 shrink-0 place-items-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.12)]">
+                <span className="relative block size-11">
+                  <PathMascot animation="idle" />
+                </span>
+              </div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1 rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
+                    <BookOpen size={11} strokeWidth={2.5} />
+                    {tt('rusDarslikTheory')}
+                  </span>
+                  <span className="text-[11px] font-bold tabular-nums text-pmuted">
+                    {tt('rusDarslikTheoryStep')
+                      .replace('{current}', String(safePageIndex + 1))
+                      .replace('{total}', String(pageCount))}
+                  </span>
+                </div>
+                <h1 id="rus-lesson-topic-title" className="mt-1 truncate font-display text-[18px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[20px]">
+                  {sectionTitle}
+                </h1>
+              </div>
+              <button
+                type="button"
+                onClick={handleSpeakCard}
+                aria-label={tt('rusDarslikListenExample')}
+                className={cn(
+                  'grid size-10 shrink-0 cursor-pointer place-items-center rounded-2xl transition-all active:scale-95',
+                  speaking
+                    ? 'bg-pprimary text-ponprimary shadow-xs ring-2 ring-[rgb(var(--p-primary-rgb)/0.3)]'
+                    : 'bg-psurface text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.12)]',
+                )}
+              >
+                <Volume2 size={18} strokeWidth={2.25} className={cn(speaking && 'animate-pulse')} />
+              </button>
             </div>
-            <h1 id="rus-lesson-topic-title" className="mb-2 font-display text-[22px] font-bold leading-tight tracking-tight text-pfg">
-              {sectionTitle}
-            </h1>
-            <p className="mb-4 text-[13px] leading-relaxed text-pmuted">{tt('rusDarslikTheoryHint')}</p>
+
+            <p className="mb-3 px-1 text-[12.5px] font-medium leading-relaxed text-pmuted">{tt('rusDarslikTheoryHint')}</p>
+
             <section
               key={`${block.id}:${sectionIndex}:${safePageIndex}`}
               data-testid="micro-lesson-card"
               data-lesson-step={safePageIndex + 1}
-              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs sm:px-5"
+              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs ring-1 ring-pline sm:px-5"
             >
-              <MarkdownView blocks={lessonPages[safePageIndex] ?? []} />
+              <MarkdownView blocks={currentCardBlocks} />
             </section>
+
+            {pageCount > 1 && (
+              <div className="mt-3.5 flex items-center justify-center gap-1.5" aria-hidden="true">
+                {Array.from({ length: pageCount }).map((_, idx) => (
+                  <span
+                    key={idx}
+                    className={cn(
+                      'h-1.5 rounded-full transition-all duration-200',
+                      idx === safePageIndex
+                        ? 'w-5 bg-pprimary'
+                        : idx < safePageIndex
+                          ? 'w-1.5 bg-[rgb(var(--p-primary-rgb)/0.45)]'
+                          : 'w-1.5 bg-pline',
+                    )}
+                  />
+                ))}
+              </div>
+            )}
           </article>
         )}
       </div>
 
-      <div className="flex items-center gap-2 border-t border-pline bg-pcanvas px-3 py-2.5 pb-[calc(0.625rem+var(--safe-bottom,0px))]">
-        <button
-          type="button"
-          disabled={safePageIndex === 0 || failed || source === null}
-          onClick={previousPage}
-          aria-label={tt('rusDarslikPreviousStep')}
-          className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg transition-opacity disabled:cursor-not-allowed disabled:opacity-40"
-        >
-          <ChevronLeft size={20} strokeWidth={2.25} />
-        </button>
+      <div className="border-t border-pline bg-pcanvas px-3.5 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
+        <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
+          <button
+            type="button"
+            disabled={safePageIndex === 0 || failed || source === null}
+            onClick={previousPage}
+            aria-label={tt('rusDarslikPreviousStep')}
+            className="grid size-12 shrink-0 cursor-pointer place-items-center rounded-2xl bg-psurface text-pfg shadow-[0_3px_0_var(--p-line)] transition-all active:translate-y-[2px] disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
+          >
+            <ChevronLeft size={21} strokeWidth={2.25} />
+          </button>
 
-        <button
-          type="button"
-          disabled={failed || source === null}
-          onClick={nextPage}
-          className={cn(
-            'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-3 py-3 text-sm font-bold shadow-md transition-transform active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50',
-            !isLastPage
-              ? 'bg-pprimary text-ponprimary'
-              : passed
-              ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
-              : read
-                ? 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pwarning'
-                : 'bg-pprimary text-ponprimary',
-          )}
-        >
-          {isLastPage
-            ? passed
-              ? <CheckCircle2 size={17} strokeWidth={2.5} />
-              : <HelpCircle size={17} strokeWidth={2.5} />
-            : <ArrowRight size={17} strokeWidth={2.5} />}
-          {isLastPage
-            ? passed
-              ? tt('rusDarslikQuizAgain')
-              : read
-                ? tt('rusDarslikQuizOpen')
-                : tt('rusDarslikStartPractice')
-            : tt('rusDarslikTheoryContinue')}
-        </button>
+          <button
+            type="button"
+            disabled={failed || source === null}
+            onClick={nextPage}
+            className={cn(
+              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] disabled:cursor-not-allowed disabled:opacity-50',
+              !isLastPage
+                ? 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]'
+                : passed
+                  ? 'bg-psuccess text-white shadow-[0_4px_0_color-mix(in_srgb,var(--p-success)_65%,#0f172a)]'
+                  : read
+                    ? 'bg-pwarning text-white shadow-[0_4px_0_color-mix(in_srgb,var(--p-warning)_65%,#0f172a)]'
+                    : 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]',
+            )}
+          >
+            {isLastPage
+              ? passed
+                ? <CheckCircle2 size={18} strokeWidth={2.5} />
+                : <HelpCircle size={18} strokeWidth={2.5} />
+              : <ArrowRight size={18} strokeWidth={2.5} />}
+            {isLastPage
+              ? passed
+                ? tt('rusDarslikQuizAgain')
+                : read
+                  ? tt('rusDarslikQuizOpen')
+                  : tt('rusDarslikStartPractice')
+              : tt('rusDarslikTheoryContinue')}
+          </button>
+        </div>
       </div>
 
       {quizOpen && (

@@ -8,21 +8,21 @@ function Inline({ parts, className }: { parts: MdInline[]; className?: string })
       {parts.map((part, i) => {
         if (part.bold) {
           return (
-            <strong key={i} className="font-semibold text-pfg">
+            <strong key={i} className="font-bold text-pfg">
               {part.text}
             </strong>
           )
         }
         if (part.italic) {
           return (
-            <em key={i} className="italic">
+            <em key={i} className="italic text-pfg">
               {part.text}
             </em>
           )
         }
         if (part.code) {
           return (
-            <code key={i} className="rounded bg-psurface px-1 py-0.5 text-[0.92em] text-pprimary">
+            <code key={i} className="rounded-md bg-psurface px-1.5 py-0.5 font-mono text-[0.92em] font-semibold text-pprimary">
               {part.text}
             </code>
           )
@@ -39,21 +39,37 @@ function InlineText({ text, className }: { text: string; className?: string }) {
 }
 
 function HeadingBlock({ level, text, anchor }: { level: 1 | 2 | 3 | 4; text: string; anchor: string }) {
+  const lower = text.toLowerCase()
+  const isWarning = text.includes('⚠️') || lower.includes('ошибк') || lower.includes('ловушк')
+  const isImportant = lower.includes('важно') || lower.includes('главное') || lower.includes('запомн')
+
   if (level <= 2) {
     return (
       <h3
         id={anchor}
         className={cn(
-          'scroll-mt-20 text-pfg',
-          level === 1 ? 'mt-7 text-[17px] font-bold leading-snug' : 'mt-6 text-[15.5px] font-bold leading-snug',
+          'mt-4 scroll-mt-20 border-l-3 border-pprimary pl-3 text-pfg first:mt-0',
+          level === 1 ? 'text-[17px] font-extrabold leading-snug' : 'text-[15.5px] font-bold leading-snug',
         )}
       >
         <InlineText text={text} />
       </h3>
     )
   }
+
   return (
-    <h4 className={cn('mt-4 text-[14px] font-semibold leading-snug text-pfg', level === 4 && 'text-[13px] text-pmuted')}>
+    <h4
+      className={cn(
+        'mt-3 text-[14px] font-bold leading-snug first:mt-0',
+        isWarning
+          ? ' rounded-xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-3 py-1.5 text-pwarning'
+          : isImportant
+            ? 'rounded-xl bg-[rgb(var(--p-primary-rgb)/0.10)] px-3 py-1.5 text-pprimary'
+            : level === 4
+              ? 'text-[13px] text-pmuted'
+              : 'text-pfg',
+      )}
+    >
       <InlineText text={text} />
     </h4>
   )
@@ -66,35 +82,37 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'paragraph':
       return (
-        <p className="whitespace-pre-line text-[14px] leading-[1.75] text-pmuted">
+        <p className="whitespace-pre-line text-[14.5px] leading-[1.72] text-pmuted">
           <InlineText text={block.lines.join('\n')} />
         </p>
       )
 
     case 'list':
       return block.ordered ? (
-        <ol className="flex flex-col gap-1.5 pl-1">
+        <ol className="flex flex-col gap-2 pl-0.5">
           {block.items.map((item, i) => (
-            <li key={i} className="flex gap-2.5 text-[14px] leading-[1.7] text-pmuted">
-              <span className="mt-0.5 min-w-4 flex-none text-right text-[12px] font-semibold text-pprimary">{i + 1}.</span>
-              <span className="whitespace-pre-line">
+            <li key={i} className="flex items-start gap-2.5 text-[14.5px] leading-[1.68] text-pmuted">
+              <span className="mt-0.5 grid size-5 flex-none place-items-center rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] text-[11px] font-extrabold tabular-nums text-pprimary">
+                {i + 1}
+              </span>
+              <span className="min-w-0 flex-1 whitespace-pre-line">
                 <InlineText text={item.text} />
               </span>
             </li>
           ))}
         </ol>
       ) : (
-        <ul className="flex flex-col gap-1.5 pl-1">
+        <ul className="flex flex-col gap-2 pl-0.5">
           {block.items.map((item, i) => (
-            <li key={i} className="flex gap-2.5 text-[14px] leading-[1.7] text-pmuted">
+            <li key={i} className="flex items-start gap-2.5 text-[14.5px] leading-[1.68] text-pmuted">
               <span
                 aria-hidden="true"
                 className={cn(
-                  'mt-[9px] size-1.5 flex-none rounded-full',
-                  item.checked === true ? 'bg-emerald-500' : 'bg-[rgb(var(--p-primary-rgb)/0.55)]',
+                  'mt-[9px] size-2 flex-none rounded-full',
+                  item.checked === true ? 'bg-psuccess' : 'bg-pprimary',
                 )}
               />
-              <span className="whitespace-pre-line">
+              <span className="min-w-0 flex-1 whitespace-pre-line">
                 <InlineText text={item.text} />
               </span>
             </li>
@@ -104,8 +122,8 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'quote':
       return (
-        <blockquote className="rounded-xl border-l-[3px] border-pprimary bg-[rgb(var(--p-primary-rgb)/0.06)] px-3.5 py-2.5">
-          <span className="whitespace-pre-line text-[13.5px] leading-[1.7] text-pfg">
+        <blockquote className="rounded-2xl border-l-4 border-pprimary bg-[rgb(var(--p-primary-rgb)/0.08)] px-4 py-3 shadow-2xs">
+          <span className="whitespace-pre-line text-[14px] font-medium leading-[1.68] text-pfg">
             <InlineText text={block.lines.join('\n')} />
           </span>
         </blockquote>
@@ -113,12 +131,12 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'table':
       return (
-        <div className="overflow-x-auto rounded-xl border border-pline">
-          <table className="w-full border-collapse text-left text-[13px]">
+        <div className="overflow-x-auto rounded-2xl bg-psurface p-1">
+          <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-[13.5px]">
             <thead>
-              <tr className="bg-psurface">
+              <tr className="bg-pcard">
                 {block.head.map((cell, i) => (
-                  <th key={i} className="border-b border-pline px-3 py-2 font-semibold text-pfg">
+                  <th key={i} className="border-b border-pline px-3.5 py-2.5 font-bold text-pfg">
                     <InlineText text={cell} />
                   </th>
                 ))}
@@ -126,9 +144,9 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
             </thead>
             <tbody>
               {block.rows.map((row, r) => (
-                <tr key={r} className="align-top">
+                <tr key={r} className="align-top odd:bg-pcanvas even:bg-pcard">
                   {row.map((cell, c) => (
-                    <td key={c} className="border-b border-pline px-3 py-2 text-pmuted">
+                    <td key={c} className="border-b border-pline px-3.5 py-2 text-pmuted last:border-b-0">
                       <InlineText text={cell} />
                     </td>
                   ))}
@@ -162,7 +180,7 @@ export const MarkdownView = memo(function MarkdownView({
     [providedBlocks, source],
   )
   return (
-    <div className={cn('flex flex-col gap-3', className)}>
+    <div className={cn('flex flex-col gap-3.5', className)}>
       {blocks.map((block, index) => (
         <BlockView key={index} block={block} anchor={`md-h-${index}`} />
       ))}

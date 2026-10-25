@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronLeft, Flame, Lock, RefreshCw, XCircle, Zap,
+  CheckCircle2, ChevronLeft, Flame, Lock, RefreshCw, Sparkles, Target, XCircle, Zap,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
+import Confetti from '../../shared/components/Confetti'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useT, type Keys } from '../../shared/i18n'
@@ -359,38 +360,73 @@ export default function LessonRunner({
     [answers, check],
   )
 
+  const progressPercent = total > 0
+    ? Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, total)) * 100)
+    : 0
+
   const header = (
-    <div className="flex items-center gap-2 border-b border-pline px-3 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
-      <button
-        type="button"
-        onClick={onClose}
-        aria-label={tt('rusDarslikQuizClose')}
-        className="grid size-11 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg active:scale-95"
-      >
-        <ChevronLeft size={22} strokeWidth={2.25} />
-      </button>
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
-          <h2 className="truncate text-[15px] font-semibold leading-tight text-pfg">
-            {lesson ? tt('rusDarslikLessonTitle') : tt('rusDarslikQuizTitle')}
-          </h2>
-          {lesson && combo >= 2 && (
-            <span
-              data-testid="lesson-combo"
-              className="flex shrink-0 items-center gap-1 rounded-full bg-[rgb(var(--p-warning-rgb)/0.16)] px-2 py-0.5 text-[11px] font-bold text-pwarning"
+    <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
+      <div className="mx-auto flex w-full max-w-[520px] items-center gap-3">
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label={tt('rusDarslikQuizClose')}
+          className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg shadow-2xs transition-transform active:scale-95"
+        >
+          <ChevronLeft size={21} strokeWidth={2.25} />
+        </button>
+
+        {lesson && check && !result ? (
+          <div className="min-w-0 flex-1">
+            <div className="mb-1 flex items-center justify-between gap-2">
+              <div className="flex min-w-0 items-center gap-1.5">
+                <h2 className="sr-only">{tt('rusDarslikLessonTitle')}</h2>
+                <p className="truncate text-[11.5px] font-bold text-pmuted">{title}</p>
+              </div>
+              <div className="flex shrink-0 items-center gap-1.5">
+                {combo >= 2 && (
+                  <span
+                    data-testid="lesson-combo"
+                    className="flex shrink-0 items-center gap-1 rounded-full bg-[rgb(var(--p-warning-rgb)/0.16)] px-2 py-0.5 text-[10.5px] font-extrabold text-pwarning"
+                  >
+                    <Flame size={11} strokeWidth={2.5} />
+                    {tt('rusDarslikLessonCombo').replace('{count}', String(combo))}
+                  </span>
+                )}
+                <span className="rounded-full bg-psurface px-2 py-0.5 text-[11px] font-bold tabular-nums text-pmuted">
+                  {Math.min(index + 1, total)}/{total}
+                </span>
+              </div>
+            </div>
+
+            <div
+              className="h-3.5 w-full overflow-hidden rounded-full bg-psurface p-0.5"
+              role="progressbar"
+              aria-label={tt('rusDarslikLessonProgress')}
+              aria-valuemin={0}
+              aria-valuemax={total}
+              aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}
             >
-              <Flame size={11} strokeWidth={2.5} />
-              {tt('rusDarslikLessonCombo').replace('{count}', String(combo))}
-            </span>
-          )}
-        </div>
-        <p className="truncate text-[11px] font-medium text-pmuted">{title}</p>
+              <div
+                className="relative h-full rounded-full bg-pprimary transition-[width] duration-300 ease-out"
+                style={{ width: `${Math.max(8, progressPercent)}%` }}
+              >
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-x-1.5 top-0.5 h-1 rounded-full bg-white/35"
+                />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="min-w-0 flex-1">
+            <h2 className="truncate text-[15px] font-bold leading-tight text-pfg">
+              {lesson ? tt('rusDarslikLessonTitle') : tt('rusDarslikQuizTitle')}
+            </h2>
+            <p className="truncate text-[11.5px] font-medium text-pmuted">{title}</p>
+          </div>
+        )}
       </div>
-      {lesson && check && (
-        <span className="shrink-0 rounded-full bg-psurface px-2.5 py-1 text-[11.5px] font-semibold tabular-nums text-pmuted">
-          {Math.min(index + 1, total)}/{total}
-        </span>
-      )}
     </div>
   )
 
@@ -399,12 +435,12 @@ export default function LessonRunner({
       <div className="fixed inset-0 z-[60] flex flex-col bg-pcanvas" data-testid="topic-check" role="dialog" aria-modal="true" aria-busy="true">
         {header}
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
-          <span className="grid size-14 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.12)]">
-            <span className="size-7 animate-spin rounded-full border-2 border-pprimary border-t-transparent" />
-          </span>
+          <div className="relative grid size-20 place-items-center rounded-3xl bg-pcard shadow-xs">
+            <span className="size-9 animate-spin rounded-full border-3 border-pprimary border-t-transparent" />
+          </div>
           <div>
-            <p className="text-[15px] font-semibold text-pfg">{tt('rusDarslikCheckLoading')}</p>
-            <p className="mt-1 text-[12.5px] leading-relaxed text-pmuted">{tt('rusDarslikCheckLoadingHint')}</p>
+            <p className="text-[16px] font-bold text-pfg">{tt('rusDarslikCheckLoading')}</p>
+            <p className="mt-1 text-[13px] leading-relaxed text-pmuted">{tt('rusDarslikCheckLoadingHint')}</p>
           </div>
         </div>
       </div>
@@ -423,10 +459,10 @@ export default function LessonRunner({
         {header}
         <div className="flex flex-1 flex-col items-center justify-center gap-3 px-6 text-center">
           <span className={cn(
-            'grid size-16 place-items-center rounded-full',
-            locked ? 'bg-psurface text-pmuted' : 'bg-[rgb(var(--p-warning-rgb)/0.12)] text-pwarning',
+            'grid size-16 place-items-center rounded-3xl shadow-xs',
+            locked ? 'bg-pcard text-pmuted' : 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pwarning',
           )}>
-            {locked ? <Lock size={30} strokeWidth={2} /> : <XCircle size={30} strokeWidth={2} />}
+            {locked ? <Lock size={30} strokeWidth={2.2} /> : <XCircle size={30} strokeWidth={2.2} />}
           </span>
           <h3 className="text-[18px] font-bold text-pfg">
             {locked ? tt('rusDarslikCheckLockedTitle') : tt('rusDarslikQuizUnavailable')}
@@ -451,6 +487,7 @@ export default function LessonRunner({
   if (!check) return null
 
   if (result) {
+    const accuracyPct = Math.round((result.correct / Math.max(1, result.total)) * 100)
     return (
       <div
         className="fixed inset-0 z-[60] flex flex-col bg-pcanvas"
@@ -459,132 +496,166 @@ export default function LessonRunner({
         role="dialog"
         aria-modal="true"
       >
+        {result.passed && <Confetti count={28} />}
         {header}
         <div className="flex-1 overflow-y-auto px-4 py-5 pb-[calc(5rem+var(--safe-bottom,0px))]">
-          <div className="flex flex-col items-center text-center">
-            {lesson && result.passed ? (
-              <span className="relative -mb-6 block size-24" data-testid="lesson-result-mascot">
-                <PathMascot animation="celebrate" />
-              </span>
-            ) : (
-              <span className={cn(
-                'grid size-20 place-items-center rounded-full',
-                result.passed
-                  ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
-                  : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
-              )}>
-                {result.passed ? <CheckCircle2 size={40} strokeWidth={2} /> : <XCircle size={40} strokeWidth={2} />}
-              </span>
-            )}
-            <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-pfg">
-              {result.passed
-                ? (lesson ? tt('rusDarslikLessonPassed') : tt('rusDarslikQuizPassed'))
-                : (lesson ? tt('rusDarslikLessonFailed') : tt('rusDarslikQuizFailed'))}
-            </h3>
-            <p className="mt-1 text-sm font-semibold text-pmuted">{title}</p>
-
-            {lesson ? (
-              <>
-                <div className="mt-4 grid w-full max-w-[360px] grid-cols-3 gap-2">
-                  <div className="rounded-2xl bg-pcard px-2 py-3 shadow-xs">
-                    <p className="text-[10px] font-bold uppercase tracking-wide text-psubtle">{tt('rusDarslikLessonAccuracy')}</p>
-                    <p className="mt-1 text-[19px] font-bold tabular-nums text-pfg">
-                      {Math.round((result.correct / Math.max(1, result.total)) * 100)}%
-                    </p>
-                  </div>
-                  <div className="rounded-2xl bg-pcard px-2 py-3 shadow-xs">
-                    <p className="flex items-center justify-center gap-1 text-[10px] font-bold uppercase tracking-wide text-psubtle">
-                      <Zap size={10} strokeWidth={2.5} /> XP
-                    </p>
-                    <p className="mt-1 text-[19px] font-bold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
-                  </div>
-                  <div className="rounded-2xl bg-pcard px-2 py-3 shadow-xs">
-                    <p className="flex items-center justify-center gap-1 text-[10px] font-bold uppercase tracking-wide text-psubtle">
-                      <Flame size={10} strokeWidth={2.5} /> {tt('rusDarslikLessonStreak')}
-                    </p>
-                    <p className="mt-1 text-[19px] font-bold tabular-nums text-pfg">
-                      {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
-                    </p>
-                  </div>
+          <div className="mx-auto w-full max-w-[460px]">
+            <div className="flex flex-col items-center rounded-3xl bg-pcard px-5 py-6 text-center shadow-xs">
+              {lesson && result.passed ? (
+                <div className="relative mb-2 grid size-28 place-items-center">
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-0 rounded-full bg-[rgb(var(--p-primary-rgb)/0.16)] blur-xl"
+                  />
+                  <span className="relative block size-24" data-testid="lesson-result-mascot">
+                    <PathMascot animation="celebrate" />
+                  </span>
                 </div>
-                <p className="mt-3 rounded-2xl bg-pcard px-4 py-2.5 text-[13px] font-semibold tabular-nums text-pfg shadow-xs">
-                  {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
-                  {maxCombo >= 2 ? ' · ' + tt('rusDarslikLessonBestCombo').replace('{count}', String(maxCombo)) : ''}
-                </p>
-                {result.passed && result.alreadyPassed && (result.xpEarned ?? 0) === 0 && (
-                  <p className="mt-2 max-w-[330px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonAlreadyPassedHint')}</p>
-                )}
-                {result.passed && (result.xpEarned ?? 0) > 0 && (
-                  <p className="mt-2 max-w-[330px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonXpHint')}</p>
-                )}
-                {!result.passed && (
-                  <p className="mt-2 max-w-[330px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikCheckNeedAll')}</p>
-                )}
-              </>
-            ) : (
-              <>
-                <p className="mt-3 rounded-2xl bg-pcard px-4 py-3 text-[15px] font-bold tabular-nums text-pfg shadow-xs">
-                  {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
-                </p>
-                <p className="mt-3 max-w-[330px] text-[12.5px] leading-relaxed text-pmuted">
-                  {result.passed ? tt('rusDarslikQuizPassHint') : tt('rusDarslikCheckNeedAll')}
-                </p>
-              </>
-            )}
-          </div>
+              ) : (
+                <span className={cn(
+                  'grid size-20 place-items-center rounded-3xl',
+                  result.passed
+                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
+                    : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                )}>
+                  {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
+                </span>
+              )}
+              <h3 className="mt-3 font-display text-[24px] font-extrabold tracking-tight text-pfg">
+                {result.passed
+                  ? (lesson ? tt('rusDarslikLessonPassed') : tt('rusDarslikQuizPassed'))
+                  : (lesson ? tt('rusDarslikLessonFailed') : tt('rusDarslikQuizFailed'))}
+              </h3>
+              <p className="mt-1 text-[13.5px] font-semibold text-pmuted">{title}</p>
 
-          <div className="mt-6 flex flex-col gap-2">
-            {check.questions.map((question, questionIndex) => {
-              const item = result.feedback.find((entry) => entry.id === question.id)
-              const correct = item?.correct ?? false
-              return (
-                <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
-                  <p className="text-[10px] font-bold uppercase tracking-wide text-psubtle">
-                    {questionIndex + 1}/{check.questions.length} · {tt(EXERCISE_LABEL[question.kind])}
+              {lesson ? (
+                <>
+                  <div className="mt-5 grid w-full grid-cols-3 gap-2.5">
+                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
+                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-success-rgb)/0.16)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
+                        <Target size={11} strokeWidth={2.5} />
+                        {tt('rusDarslikLessonAccuracy')}
+                      </div>
+                      <div className="rounded-b-xl bg-pcard py-2.5">
+                        <p className="text-[20px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
+                      </div>
+                    </div>
+
+                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
+                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-primary-rgb)/0.16)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
+                        <Zap size={11} strokeWidth={2.5} /> XP
+                      </div>
+                      <div className="rounded-b-xl bg-pcard py-2.5">
+                        <p className="text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
+                      </div>
+                    </div>
+
+                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
+                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-warning-rgb)/0.18)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
+                        <Flame size={11} strokeWidth={2.5} /> {tt('rusDarslikLessonStreak')}
+                      </div>
+                      <div className="rounded-b-xl bg-pcard py-2.5">
+                        <p className="text-[20px] font-extrabold tabular-nums text-pwarning">
+                          {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="mt-3.5 rounded-2xl bg-psurface px-4 py-2 text-[12.5px] font-bold tabular-nums text-pfg">
+                    {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
+                    {maxCombo >= 2 ? ' · ' + tt('rusDarslikLessonBestCombo').replace('{count}', String(maxCombo)) : ''}
                   </p>
-                  <p className="mt-1 text-[13px] font-semibold leading-snug text-pfg">{question.prompt}</p>
-                  <p className={cn('mt-1.5 text-[12px] font-bold', correct ? 'text-psuccess' : 'text-pdanger')}>
-                    {correct ? tt('rusDarslikQuizCorrect') : tt('rusDarslikQuizWrong')}
+                  {result.passed && result.alreadyPassed && (result.xpEarned ?? 0) === 0 && (
+                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonAlreadyPassedHint')}</p>
+                  )}
+                  {result.passed && (result.xpEarned ?? 0) > 0 && (
+                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonXpHint')}</p>
+                  )}
+                  {!result.passed && (
+                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikCheckNeedAll')}</p>
+                  )}
+                </>
+              ) : (
+                <>
+                  <p className="mt-3.5 rounded-2xl bg-psurface px-4 py-2.5 text-[15px] font-bold tabular-nums text-pfg">
+                    {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
                   </p>
-                  {!correct && (
-                    <p className="mt-1 text-[12px] leading-relaxed text-pmuted">
-                      {tt('rusDarslikCheckYourAnswer')}: {answerText(question, answers[question.id])}
-                    </p>
-                  )}
-                  {lesson && !correct && item?.correctAnswer && (
-                    <p className="mt-1 text-[12px] font-semibold leading-relaxed text-psuccess">
-                      {tt('rusDarslikQuizCorrectAnswer')}: {item.correctAnswer}
-                    </p>
-                  )}
-                  {item?.explanation && (
-                    <p className="mt-1 text-[12px] leading-relaxed text-pmuted">
-                      {tt('rusDarslikQuizExplanation')}: {item.explanation}
-                    </p>
-                  )}
-                </div>
-              )
-            })}
+                  <p className="mt-2.5 max-w-[330px] text-[12.5px] leading-relaxed text-pmuted">
+                    {result.passed ? tt('rusDarslikQuizPassHint') : tt('rusDarslikCheckNeedAll')}
+                  </p>
+                </>
+              )}
+            </div>
+
+            <div className="mt-5 flex flex-col gap-2.5">
+              <p className="px-1 text-[11px] font-extrabold uppercase tracking-wider text-psubtle">
+                {tt('rusDarslikReviewTitle')}
+              </p>
+              {check.questions.map((question, questionIndex) => {
+                const item = result.feedback.find((entry) => entry.id === question.id)
+                const correct = item?.correct ?? false
+                return (
+                  <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="text-[10.5px] font-bold uppercase tracking-wide text-psubtle">
+                        {questionIndex + 1}/{check.questions.length} · {tt(EXERCISE_LABEL[question.kind])}
+                      </p>
+                      <span
+                        className={cn(
+                          'inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold',
+                          correct
+                            ? 'bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess'
+                            : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                        )}
+                      >
+                        {correct ? <CheckCircle2 size={12} strokeWidth={2.5} /> : <XCircle size={12} strokeWidth={2.5} />}
+                        {correct ? tt('rusDarslikQuizCorrect') : tt('rusDarslikQuizWrong')}
+                      </span>
+                    </div>
+                    <p className="mt-1.5 text-[13.5px] font-bold leading-snug text-pfg">{question.prompt}</p>
+                    {!correct && (
+                      <p className="mt-1.5 text-[12px] leading-relaxed text-pmuted">
+                        {tt('rusDarslikCheckYourAnswer')}: <span className="font-semibold text-pdanger">{answerText(question, answers[question.id])}</span>
+                      </p>
+                    )}
+                    {lesson && !correct && item?.correctAnswer && (
+                      <p className="mt-1 text-[12px] font-semibold leading-relaxed text-psuccess">
+                        {tt('rusDarslikQuizCorrectAnswer')}: {item.correctAnswer}
+                      </p>
+                    )}
+                    {item?.explanation && (
+                      <p className="mt-1.5 rounded-xl bg-psurface px-2.5 py-1.5 text-[12px] leading-relaxed text-pmuted">
+                        {tt('rusDarslikQuizExplanation')}: {item.explanation}
+                      </p>
+                    )}
+                  </div>
+                )
+              })}
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-pline px-3 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
-          {result.passed ? (
-            <div className="flex flex-col gap-2">
-              {lesson && hasNext && onNext ? (
-                <Button size="lg" block onClick={onNext}>{tt('rusDarslikLessonContinue')}</Button>
-              ) : hasNext && onNext ? (
-                <Button size="lg" block onClick={onNext}>{tt('rusDarslikQuizNextTopic')}</Button>
-              ) : (
-                <Button size="lg" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
-              )}
-              <Button size="sm" variant="secondary" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
-            </div>
-          ) : (
-            <div className="flex flex-col gap-2">
-              <Button size="lg" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
-              <Button size="sm" variant="secondary" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
-            </div>
-          )}
+        <div className="border-t border-pline bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
+          <div className="mx-auto w-full max-w-[460px]">
+            {result.passed ? (
+              <div className="flex flex-col gap-2">
+                {lesson && hasNext && onNext ? (
+                  <Button size="lg" block onClick={onNext}>{tt('rusDarslikLessonContinue')}</Button>
+                ) : hasNext && onNext ? (
+                  <Button size="lg" block onClick={onNext}>{tt('rusDarslikQuizNextTopic')}</Button>
+                ) : (
+                  <Button size="lg" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
+                )}
+                <Button size="sm" variant="secondary" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-2">
+                <Button size="lg" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
+                <Button size="sm" variant="secondary" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     )
@@ -605,46 +676,55 @@ export default function LessonRunner({
       >
         {header}
 
-        <div className="h-1.5 bg-psurface" role="progressbar" aria-label={tt('rusDarslikLessonProgress')} aria-valuemin={0} aria-valuemax={total} aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}>
-          <div
-            className="h-full rounded-r-full bg-pprimary transition-[width] duration-300"
-            style={{ width: String(Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, total)) * 100)) + '%' }}
-          />
-        </div>
-
         <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 pb-[calc(6.5rem+var(--safe-bottom,0px))]">
-          <div className="mx-auto w-full max-w-[440px]">
+          <div className="mx-auto w-full max-w-[460px]">
             {checkUpdated && (
               <p
                 role="status"
                 data-testid="lesson-updated"
-                className="mb-3 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 py-2 text-[12.5px] font-medium text-pwarning"
+                className="mb-3 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-3.5 py-2.5 text-[12.5px] font-semibold text-pwarning"
               >
                 {tt('rusDarslikLessonUpdated')}
               </p>
             )}
-            <div className="mb-3 flex items-center gap-2.5">
-              <span className="relative block size-11 shrink-0">
-                <PathMascot animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'} />
+
+            <div className="mb-3 flex items-center justify-between gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
+                <Sparkles size={12} strokeWidth={2.5} />
+                {tt(EXERCISE_LABEL[current.kind])}
               </span>
-              <div className="min-w-0">
-                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-pprimary">
-                  {tt(EXERCISE_LABEL[current.kind])}
-                </p>
-                <p className="text-[11px] font-medium text-pmuted">{tt('rusDarslikLessonSource')}</p>
+              <span className="text-[11px] font-semibold text-pmuted">{tt('rusDarslikLessonSource')}</span>
+            </div>
+
+            {/* Duolingo Character + Speech Bubble Prompt */}
+            <div className="mb-5 flex items-start gap-3">
+              <div className="relative mt-1 grid size-14 shrink-0 place-items-center">
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-1 rounded-full bg-[rgb(var(--p-primary-rgb)/0.14)] blur-md"
+                />
+                <span className="relative block size-14">
+                  <PathMascot animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'} />
+                </span>
+              </div>
+
+              <div className="relative min-w-0 flex-1 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs ring-1 ring-pline">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-1.5 top-5 size-3 rotate-45 bg-pcard"
+                />
+                <h3
+                  id="lesson-runner-title"
+                  ref={headingRef}
+                  tabIndex={-1}
+                  className="relative text-[17px] font-bold leading-snug text-pfg focus-visible:outline-none sm:text-[18px]"
+                >
+                  {current.prompt}
+                </h3>
               </div>
             </div>
 
-            <h3
-              id="lesson-runner-title"
-              ref={headingRef}
-              tabIndex={-1}
-              className="text-[18px] font-semibold leading-snug text-pfg focus-visible:outline-none"
-            >
-              {current.prompt}
-            </h3>
-
-            <div className="mt-4">
+            <div>
               <LessonExercise
                 key={current.id}
                 exercise={current}
@@ -656,6 +736,31 @@ export default function LessonRunner({
               />
             </div>
 
+            {answerError && (
+              <p role="alert" className="mt-3 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] px-3.5 py-2.5 text-[12.5px] font-semibold text-pdanger">
+                {tt('rusDarslikLessonAnswerError')}
+              </p>
+            )}
+            {submitError && (
+              <p role="alert" className="mt-3 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] px-3.5 py-2.5 text-[12.5px] font-semibold text-pdanger">
+                {tt('rusDarslikCheckSubmitError')}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Duolingo Bottom Dock: Check CTA or Slide-up Feedback Drawer */}
+        <div
+          className={cn(
+            'border-t px-4 py-3.5 pb-[calc(0.875rem+var(--safe-bottom,0px))] transition-colors',
+            phase === 'feedback' && feedback
+              ? feedback.correct
+                ? 'border-[rgb(var(--p-success-rgb)/0.35)] bg-[rgb(var(--p-success-rgb)/0.10)]'
+                : 'border-[rgb(var(--p-danger-rgb)/0.35)] bg-[rgb(var(--p-danger-rgb)/0.09)]'
+              : 'border-pline bg-pcanvas',
+          )}
+        >
+          <div className="mx-auto w-full max-w-[460px]">
             {phase === 'feedback' && feedback && (
               <div
                 ref={feedbackRef}
@@ -663,47 +768,56 @@ export default function LessonRunner({
                 data-correct={feedback.correct ? 'true' : 'false'}
                 role="status"
                 aria-live="polite"
-                className={cn(
-                  'mt-4 rounded-2xl border p-3.5',
-                  feedback.correct
-                    ? 'border-[rgb(var(--p-success-rgb)/0.35)] bg-[rgb(var(--p-success-rgb)/0.08)]'
-                    : 'border-[rgb(var(--p-danger-rgb)/0.35)] bg-[rgb(var(--p-danger-rgb)/0.07)]',
-                )}
+                className="mb-3.5"
               >
-                <p className={cn('flex items-center gap-1.5 text-[14px] font-bold', feedback.correct ? 'text-psuccess' : 'text-pdanger')}>
-                  {feedback.correct ? <CheckCircle2 size={17} strokeWidth={2.5} /> : <XCircle size={17} strokeWidth={2.5} />}
-                  {feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}
-                </p>
-                {!feedback.correct && (
-                  <p className="mt-1.5 text-[13px] font-semibold leading-snug text-pfg">
-                    {tt('rusDarslikQuizCorrectAnswer')}: <span className="text-psuccess">{feedback.correctAnswer}</span>
-                  </p>
-                )}
-                <p className="mt-1 text-[12.5px] leading-relaxed text-pmuted">{feedback.explanation}</p>
+                <div className="flex items-start gap-3">
+                  <span
+                    aria-hidden="true"
+                    className={cn(
+                      'mt-0.5 grid size-8 shrink-0 place-items-center rounded-full text-white shadow-xs',
+                      feedback.correct ? 'bg-psuccess' : 'bg-pdanger',
+                    )}
+                  >
+                    {feedback.correct ? <CheckCircle2 size={18} strokeWidth={2.5} /> : <XCircle size={18} strokeWidth={2.5} />}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className={cn('text-[16px] font-extrabold leading-tight', feedback.correct ? 'text-psuccess' : 'text-pdanger')}>
+                      {feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}
+                    </p>
+                    {!feedback.correct && (
+                      <p className="mt-1 text-[13px] font-semibold leading-snug text-pfg">
+                        {tt('rusDarslikQuizCorrectAnswer')}: <span className="font-bold text-psuccess">{feedback.correctAnswer}</span>
+                      </p>
+                    )}
+                    <p className="mt-1 text-[12.5px] leading-relaxed text-pfg opacity-85">{feedback.explanation}</p>
+                  </div>
+                </div>
               </div>
             )}
 
-            {answerError && (
-              <p role="alert" className="mt-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-3 py-2 text-[12.5px] font-medium text-pdanger">
-                {tt('rusDarslikLessonAnswerError')}
-              </p>
-            )}
-            {submitError && (
-              <p role="alert" className="mt-3 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-3 py-2 text-[12.5px] font-medium text-pdanger">
-                {tt('rusDarslikCheckSubmitError')}
-              </p>
-            )}
-          </div>
-        </div>
-
-        <div className="border-t border-pline bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
-          <div className="mx-auto w-full max-w-[440px]">
             {phase === 'exercise' ? (
-              <Button size="lg" block onClick={() => { void checkAnswer() }} disabled={!currentAnswered || checking}>
+              <Button
+                size="lg"
+                block
+                onClick={() => { void checkAnswer() }}
+                disabled={!currentAnswered || checking}
+                className="shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] active:translate-y-[2px]"
+              >
                 {checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
               </Button>
             ) : (
-              <Button size="lg" block onClick={continueLesson} disabled={submitting}>
+              <Button
+                size="lg"
+                block
+                onClick={continueLesson}
+                disabled={submitting}
+                className={cn(
+                  'text-white active:translate-y-[2px]',
+                  feedback?.correct
+                    ? 'bg-psuccess hover:bg-psuccess shadow-[0_4px_0_color-mix(in_srgb,var(--p-success)_65%,#0f172a)]'
+                    : 'bg-pdanger hover:bg-pdanger shadow-[0_4px_0_color-mix(in_srgb,var(--p-danger)_65%,#0f172a)]',
+                )}
+              >
                 {submitting
                   ? tt('rusDarslikCheckSubmitting')
                   : isLast
@@ -722,55 +836,59 @@ export default function LessonRunner({
     <div className="fixed inset-0 z-[60] flex flex-col bg-pcanvas" data-testid="topic-check" data-format="legacy" role="dialog" aria-modal="true" aria-labelledby="rus-check-title">
       {header}
       <div className="flex-1 overflow-y-auto px-4 py-4">
-        {checkUpdated && (
-          <p
-            role="status"
-            data-testid="lesson-updated"
-            className="mb-3 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3 py-2 text-[12.5px] font-medium text-pwarning"
-          >
-            {tt('rusDarslikLessonUpdated')}
+        <div className="mx-auto w-full max-w-[460px]">
+          {checkUpdated && (
+            <p
+              role="status"
+              data-testid="lesson-updated"
+              className="mb-3 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-3.5 py-2.5 text-[12.5px] font-semibold text-pwarning"
+            >
+              {tt('rusDarslikLessonUpdated')}
+            </p>
+          )}
+          <p className="mb-1 text-[10.5px] font-extrabold uppercase tracking-[0.12em] text-pprimary">
+            {tt('rusDarslikCheckCount').replace('{count}', String(check.questions.length))}
           </p>
-        )}
-        <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.12em] text-psubtle">
-          {tt('rusDarslikCheckCount').replace('{count}', String(check.questions.length))}
-        </p>
-        <h3 id="rus-check-title" className="text-[17px] font-semibold leading-snug text-pfg">{title}</h3>
+          <h3 id="rus-check-title" className="text-[18px] font-bold leading-snug text-pfg">{title}</h3>
 
-        <div className="mt-4 flex flex-col gap-4">
-          {check.questions.map((question, questionIndex) => (
-            <section key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs" aria-labelledby={'rus-check-q-' + questionIndex}>
-              <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-psubtle">
-                {tt(EXERCISE_LABEL[question.kind])} · {questionIndex + 1}/{check.questions.length}
-              </p>
-              <h4 id={'rus-check-q-' + questionIndex} className="mt-1 text-[14px] font-semibold leading-snug text-pfg">
-                {question.prompt}
-              </h4>
-              <div className="mt-3">
-                <LessonExercise
-                  exercise={question}
-                  value={answers[question.id] ?? answerOrEmpty(question)}
-                  onChange={(value) => setAnswers((previous) => ({ ...previous, [question.id]: value }))}
-                  disabled={submitting}
-                />
-              </div>
-            </section>
-          ))}
+          <div className="mt-4 flex flex-col gap-4">
+            {check.questions.map((question, questionIndex) => (
+              <section key={question.id} className="rounded-3xl bg-pcard p-4 shadow-xs" aria-labelledby={'rus-check-q-' + questionIndex}>
+                <p className="text-[10.5px] font-extrabold uppercase tracking-[0.12em] text-pprimary">
+                  {tt(EXERCISE_LABEL[question.kind])} · {questionIndex + 1}/{check.questions.length}
+                </p>
+                <h4 id={'rus-check-q-' + questionIndex} className="mt-1.5 text-[15px] font-bold leading-snug text-pfg">
+                  {question.prompt}
+                </h4>
+                <div className="mt-3">
+                  <LessonExercise
+                    exercise={question}
+                    value={answers[question.id] ?? answerOrEmpty(question)}
+                    onChange={(value) => setAnswers((previous) => ({ ...previous, [question.id]: value }))}
+                    disabled={submitting}
+                  />
+                </div>
+              </section>
+            ))}
+          </div>
+
+          {submitError && (
+            <p role="alert" className="mt-4 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.12)] px-3.5 py-2.5 text-[12.5px] font-semibold text-pdanger">
+              {tt('rusDarslikCheckSubmitError')}
+            </p>
+          )}
+          {!legacyAnswered && (
+            <p className="mt-4 text-center text-[12px] font-medium text-pmuted">{tt('rusDarslikCheckAllRequired')}</p>
+          )}
         </div>
-
-        {submitError && (
-          <p role="alert" className="mt-4 rounded-xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-3 py-2 text-[12.5px] font-medium text-pdanger">
-            {tt('rusDarslikCheckSubmitError')}
-          </p>
-        )}
-        {!legacyAnswered && (
-          <p className="mt-4 text-center text-[11.5px] font-medium text-pmuted">{tt('rusDarslikCheckAllRequired')}</p>
-        )}
       </div>
 
-      <div className="border-t border-pline px-3 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
-        <Button size="lg" block onClick={() => { void submit() }} disabled={!legacyAnswered || submitting}>
-          {submitting ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
-        </Button>
+      <div className="border-t border-pline bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
+        <div className="mx-auto w-full max-w-[460px]">
+          <Button size="lg" block onClick={() => { void submit() }} disabled={!legacyAnswered || submitting}>
+            {submitting ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
+          </Button>
+        </div>
       </div>
     </div>
   )
