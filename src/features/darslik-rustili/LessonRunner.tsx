@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronLeft, Flame, Lock, RefreshCw, Sparkles, Target, XCircle, Zap,
+  CheckCircle2, ChevronLeft, Lock, RefreshCw, XCircle,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import Confetti from '../../shared/components/Confetti'
@@ -387,9 +387,8 @@ export default function LessonRunner({
                 {combo >= 2 && (
                   <span
                     data-testid="lesson-combo"
-                    className="flex shrink-0 items-center gap-1 rounded-full bg-[rgb(var(--p-warning-rgb)/0.16)] px-2 py-0.5 text-[10.5px] font-extrabold text-pwarning"
+                    className="flex shrink-0 items-center rounded-full bg-[rgb(var(--p-warning-rgb)/0.16)] px-2.5 py-0.5 text-[10.5px] font-extrabold text-pwarning"
                   >
-                    <Flame size={11} strokeWidth={2.5} />
                     {tt('rusDarslikLessonCombo').replace('{count}', String(combo))}
                   </span>
                 )}
@@ -400,7 +399,7 @@ export default function LessonRunner({
             </div>
 
             <div
-              className="h-3.5 w-full overflow-hidden rounded-full bg-psurface p-0.5"
+              className="h-2 w-full overflow-hidden rounded-full bg-psurface"
               role="progressbar"
               aria-label={tt('rusDarslikLessonProgress')}
               aria-valuemin={0}
@@ -408,14 +407,9 @@ export default function LessonRunner({
               aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}
             >
               <div
-                className="relative h-full rounded-full bg-pprimary transition-[width] duration-300 ease-out"
+                className="h-full rounded-full bg-pprimary transition-[width] duration-300 ease-out"
                 style={{ width: `${Math.max(8, progressPercent)}%` }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-x-1.5 top-0.5 h-1 rounded-full bg-white/35"
-                />
-              </div>
+              />
             </div>
           </div>
         ) : (
@@ -502,13 +496,9 @@ export default function LessonRunner({
           <div className="mx-auto w-full max-w-[460px]">
             <div className="flex flex-col items-center rounded-3xl bg-pcard px-5 py-6 text-center shadow-xs">
               {lesson && result.passed ? (
-                <div className="relative mb-2 grid size-28 place-items-center">
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-0 rounded-full bg-[rgb(var(--p-primary-rgb)/0.16)] blur-xl"
-                  />
-                  <span className="relative block size-24" data-testid="lesson-result-mascot">
-                    <PathMascot animation="celebrate" />
+                <div className="relative mb-2 grid size-24 place-items-center rounded-3xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-2.5">
+                  <span className="relative block size-full" data-testid="lesson-result-mascot">
+                    <PathMascot variant="avatar" animation="celebrate" />
                   </span>
                 </div>
               ) : (
@@ -531,34 +521,27 @@ export default function LessonRunner({
               {lesson ? (
                 <>
                   <div className="mt-5 grid w-full grid-cols-3 gap-2.5">
-                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
-                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-success-rgb)/0.16)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
-                        <Target size={11} strokeWidth={2.5} />
+                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
                         {tt('rusDarslikLessonAccuracy')}
-                      </div>
-                      <div className="rounded-b-xl bg-pcard py-2.5">
-                        <p className="text-[20px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
-                      </div>
+                      </span>
+                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
                     </div>
 
-                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
-                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-primary-rgb)/0.16)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
-                        <Zap size={11} strokeWidth={2.5} /> XP
-                      </div>
-                      <div className="rounded-b-xl bg-pcard py-2.5">
-                        <p className="text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
-                      </div>
+                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
+                        XP
+                      </span>
+                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
                     </div>
 
-                    <div className="overflow-hidden rounded-2xl bg-psurface p-0.5">
-                      <div className="flex items-center justify-center gap-1 rounded-t-xl bg-[rgb(var(--p-warning-rgb)/0.18)] py-1 text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
-                        <Flame size={11} strokeWidth={2.5} /> {tt('rusDarslikLessonStreak')}
-                      </div>
-                      <div className="rounded-b-xl bg-pcard py-2.5">
-                        <p className="text-[20px] font-extrabold tabular-nums text-pwarning">
-                          {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
-                        </p>
-                      </div>
+                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
+                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
+                        {tt('rusDarslikLessonStreak')}
+                      </span>
+                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pwarning">
+                        {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
+                      </p>
                     </div>
                   </div>
 
@@ -689,26 +672,23 @@ export default function LessonRunner({
             )}
 
             <div className="mb-3 flex items-center justify-between gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
-                <Sparkles size={12} strokeWidth={2.5} />
+              <span className="inline-flex items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
                 {tt(EXERCISE_LABEL[current.kind])}
               </span>
               <span className="text-[11px] font-semibold text-pmuted">{tt('rusDarslikLessonSource')}</span>
             </div>
 
-            {/* Duolingo Character + Speech Bubble Prompt */}
+            {/* Mascot Avatar + Speech Bubble Prompt */}
             <div className="mb-5 flex items-start gap-3">
-              <div className="relative mt-1 grid size-14 shrink-0 place-items-center">
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-1 rounded-full bg-[rgb(var(--p-primary-rgb)/0.14)] blur-md"
+              <div className="relative mt-0.5 size-12 shrink-0 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-1.5 shadow-2xs">
+                <PathMascot
+                  key={phase === 'feedback' ? `${current.id}:${feedback?.correct ? 'happy' : 'oops'}` : `${current.id}:idle`}
+                  variant="avatar"
+                  animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'}
                 />
-                <span className="relative block size-14">
-                  <PathMascot animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'} />
-                </span>
               </div>
 
-              <div className="relative min-w-0 flex-1 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs ring-1 ring-pline">
+              <div className="relative min-w-0 flex-1 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
                 <span
                   aria-hidden="true"
                   className="absolute -left-1.5 top-5 size-3 rotate-45 bg-pcard"
@@ -781,9 +761,16 @@ export default function LessonRunner({
                     {feedback.correct ? <CheckCircle2 size={18} strokeWidth={2.5} /> : <XCircle size={18} strokeWidth={2.5} />}
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className={cn('text-[16px] font-extrabold leading-tight', feedback.correct ? 'text-psuccess' : 'text-pdanger')}>
-                      {feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}
-                    </p>
+                    <div className="flex items-center justify-between gap-2">
+                      <p className={cn('text-[16px] font-extrabold leading-tight', feedback.correct ? 'text-psuccess' : 'text-pdanger')}>
+                        {feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}
+                      </p>
+                      {feedback.correct && (
+                        <span className="inline-flex shrink-0 items-center rounded-full bg-[rgb(var(--p-success-rgb)/0.16)] px-2.5 py-0.5 text-[11px] font-extrabold tabular-nums text-psuccess">
+                          +{combo >= 3 ? 5 : 3} XP
+                        </span>
+                      )}
+                    </div>
                     {!feedback.correct && (
                       <p className="mt-1 text-[13px] font-semibold leading-snug text-pfg">
                         {tt('rusDarslikQuizCorrectAnswer')}: <span className="font-bold text-psuccess">{feedback.correctAnswer}</span>
@@ -801,7 +788,7 @@ export default function LessonRunner({
                 block
                 onClick={() => { void checkAnswer() }}
                 disabled={!currentAnswered || checking}
-                className="shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] active:translate-y-[2px]"
+                className="shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-all active:translate-y-[2px] active:shadow-none disabled:shadow-none"
               >
                 {checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
               </Button>
@@ -812,7 +799,7 @@ export default function LessonRunner({
                 onClick={continueLesson}
                 disabled={submitting}
                 className={cn(
-                  'text-white active:translate-y-[2px]',
+                  'text-white transition-all active:translate-y-[2px] active:shadow-none',
                   feedback?.correct
                     ? 'bg-psuccess hover:bg-psuccess shadow-[0_4px_0_color-mix(in_srgb,var(--p-success)_65%,#0f172a)]'
                     : 'bg-pdanger hover:bg-pdanger shadow-[0_4px_0_color-mix(in_srgb,var(--p-danger)_65%,#0f172a)]',

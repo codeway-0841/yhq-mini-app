@@ -306,4 +306,18 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     expect(within(screen.getByTestId('lesson-runner')).getByText('1/5')).toBeInTheDocument()
     expect(onNext).not.toHaveBeenCalled()
   })
+
+  it('maskotni avatar variantida (yasama qovoqlarsiz) ko‘rsatadi va javob holatiga moslashtiradi', async () => {
+    renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+    const mascotIdle = runner.querySelector('.learning-mascot')
+    expect(mascotIdle).toHaveAttribute('data-variant', 'avatar')
+    expect(mascotIdle).toHaveAttribute('data-animation', 'idle')
+    expect(runner.querySelector('.learning-mascot-eyelid')).toBeNull()
+
+    await answerMcq(runner, 'Звуки')
+    const mascotHappy = runner.querySelector('.learning-mascot')
+    expect(mascotHappy).toHaveAttribute('data-variant', 'avatar')
+    expect(mascotHappy).toHaveAttribute('data-animation', 'happy')
+  })
 })

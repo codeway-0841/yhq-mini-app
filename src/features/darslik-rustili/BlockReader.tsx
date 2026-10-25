@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
+import { ArrowRight, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
 import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -203,12 +203,53 @@ export function BlockReader({
           >
             <ChevronLeft size={21} strokeWidth={2.25} />
           </button>
+
           <div className="min-w-0 flex-1">
-            <p className="truncate text-[10.5px] font-extrabold uppercase tracking-wider text-pprimary">
-              {blockLabel} · {position}
-            </p>
-            <h2 className="truncate text-[15px] font-bold leading-snug text-pfg">{sectionTitle}</h2>
+            <div className="mb-1.5 flex items-center justify-between gap-2">
+              <p className="truncate text-[11px] font-extrabold uppercase tracking-wider text-pprimary">
+                {blockLabel} · {position}
+              </p>
+              <span className="shrink-0 text-[11px] font-bold tabular-nums text-pmuted">
+                {tt('rusDarslikTheoryStep')
+                  .replace('{current}', String(safePageIndex + 1))
+                  .replace('{total}', String(pageCount))}
+              </span>
+            </div>
+
+            {/* Segmented Story Progress Bar */}
+            <div
+              className="flex w-full items-center gap-1.5"
+              role="progressbar"
+              aria-label={tt('rusDarslikTheoryProgress')}
+              aria-valuemin={1}
+              aria-valuemax={pageCount}
+              aria-valuenow={safePageIndex + 1}
+            >
+              {Array.from({ length: pageCount }).map((_, idx) => {
+                const isCompleted = idx < safePageIndex
+                const isActive = idx === safePageIndex
+                return (
+                  <div
+                    key={idx}
+                    aria-hidden="true"
+                    className="h-2 flex-1 overflow-hidden rounded-full bg-psurface"
+                  >
+                    <div
+                      className={cn(
+                        'h-full rounded-full transition-all duration-300',
+                        isCompleted
+                          ? 'w-full bg-pprimary'
+                          : isActive
+                            ? 'w-full bg-pprimary'
+                            : 'w-0 bg-transparent',
+                      )}
+                    />
+                  </div>
+                )
+              })}
+            </div>
           </div>
+
           <button
             type="button"
             onClick={toggleToc}
@@ -221,39 +262,6 @@ export function BlockReader({
           >
             {tocOpen ? <X size={18} strokeWidth={2.2} /> : <ListIcon size={18} strokeWidth={2.2} />}
           </button>
-        </div>
-
-        {/* Duolingo Segmented Story Progress Bar */}
-        <div
-          className="mx-auto mt-2.5 flex w-full max-w-[560px] items-center gap-1.5"
-          role="progressbar"
-          aria-label={tt('rusDarslikTheoryProgress')}
-          aria-valuemin={1}
-          aria-valuemax={pageCount}
-          aria-valuenow={safePageIndex + 1}
-        >
-          {Array.from({ length: pageCount }).map((_, idx) => {
-            const isCompleted = idx < safePageIndex
-            const isActive = idx === safePageIndex
-            return (
-              <div
-                key={idx}
-                aria-hidden="true"
-                className="h-2.5 flex-1 overflow-hidden rounded-full bg-psurface p-0.5"
-              >
-                <div
-                  className={cn(
-                    'relative h-full rounded-full transition-all duration-300',
-                    isCompleted || isActive ? 'w-full bg-pprimary' : 'w-0 bg-transparent',
-                  )}
-                >
-                  {(isCompleted || isActive) && (
-                    <span className="absolute inset-x-1 top-0.5 h-0.5 rounded-full bg-white/35" />
-                  )}
-                </div>
-              </div>
-            )
-          })}
         </div>
       </div>
 
@@ -318,25 +326,15 @@ export function BlockReader({
         ) : (
           <article className="mx-auto w-full max-w-[560px] pb-5" aria-labelledby="rus-lesson-topic-title">
             {/* Mascot Guidebook Header Card */}
-            <div className="mb-3.5 flex items-center gap-3 rounded-3xl bg-pcard p-3.5 shadow-xs">
-              <div className="relative grid size-12 shrink-0 place-items-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.12)]">
-                <span className="relative block size-11">
-                  <PathMascot animation="idle" />
-                </span>
+            <div className="mb-3 flex items-center gap-3 rounded-3xl bg-pcard p-3.5 shadow-xs">
+              <div className="relative size-11 shrink-0 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-1.5">
+                <PathMascot variant="avatar" animation="idle" />
               </div>
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2">
-                  <span className="inline-flex items-center gap-1 rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
-                    <BookOpen size={11} strokeWidth={2.5} />
-                    {tt('rusDarslikTheory')}
-                  </span>
-                  <span className="text-[11px] font-bold tabular-nums text-pmuted">
-                    {tt('rusDarslikTheoryStep')
-                      .replace('{current}', String(safePageIndex + 1))
-                      .replace('{total}', String(pageCount))}
-                  </span>
-                </div>
-                <h1 id="rus-lesson-topic-title" className="mt-1 truncate font-display text-[18px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[20px]">
+                <span className="inline-flex items-center rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
+                  {tt('rusDarslikTheory')}
+                </span>
+                <h1 id="rus-lesson-topic-title" className="mt-1 font-display text-[17px] font-extrabold leading-snug tracking-tight text-pfg sm:text-[19px]">
                   {sectionTitle}
                 </h1>
               </div>
@@ -355,34 +353,14 @@ export function BlockReader({
               </button>
             </div>
 
-            <p className="mb-3 px-1 text-[12.5px] font-medium leading-relaxed text-pmuted">{tt('rusDarslikTheoryHint')}</p>
-
             <section
               key={`${block.id}:${sectionIndex}:${safePageIndex}`}
               data-testid="micro-lesson-card"
               data-lesson-step={safePageIndex + 1}
-              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs ring-1 ring-pline sm:px-5"
+              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs sm:px-5"
             >
               <MarkdownView blocks={currentCardBlocks} />
             </section>
-
-            {pageCount > 1 && (
-              <div className="mt-3.5 flex items-center justify-center gap-1.5" aria-hidden="true">
-                {Array.from({ length: pageCount }).map((_, idx) => (
-                  <span
-                    key={idx}
-                    className={cn(
-                      'h-1.5 rounded-full transition-all duration-200',
-                      idx === safePageIndex
-                        ? 'w-5 bg-pprimary'
-                        : idx < safePageIndex
-                          ? 'w-1.5 bg-[rgb(var(--p-primary-rgb)/0.45)]'
-                          : 'w-1.5 bg-pline',
-                    )}
-                  />
-                ))}
-              </div>
-            )}
           </article>
         )}
       </div>
@@ -394,7 +372,7 @@ export function BlockReader({
             disabled={safePageIndex === 0 || failed || source === null}
             onClick={previousPage}
             aria-label={tt('rusDarslikPreviousStep')}
-            className="grid size-12 shrink-0 cursor-pointer place-items-center rounded-2xl bg-psurface text-pfg shadow-[0_3px_0_var(--p-line)] transition-all active:translate-y-[2px] disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
+            className="grid size-12 shrink-0 cursor-pointer place-items-center rounded-2xl bg-psurface text-pfg shadow-[0_3px_0_var(--p-line)] transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
           >
             <ChevronLeft size={21} strokeWidth={2.25} />
           </button>
@@ -404,7 +382,7 @@ export function BlockReader({
             disabled={failed || source === null}
             onClick={nextPage}
             className={cn(
-              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] disabled:cursor-not-allowed disabled:opacity-50',
+              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50',
               !isLastPage
                 ? 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]'
                 : passed

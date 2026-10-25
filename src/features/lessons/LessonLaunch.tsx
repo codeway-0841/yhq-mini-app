@@ -3,8 +3,8 @@ import DialogOverlay from '../../shared/components/DialogOverlay'
 import { useT, type Lang } from '../../shared/i18n'
 import { PathMascot } from './LessonToken'
 
-export const LESSON_LAUNCH_REVEAL_MS = 1600
-export const LESSON_LAUNCH_MS = 1800
+export const LESSON_LAUNCH_REVEAL_MS = 650
+export const LESSON_LAUNCH_MS = 780
 export type LaunchOrigin = { x: number; y: number; size: number; sink: number }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Check, Eraser, Link2, Sparkles, Volume2 } from 'lucide-react'
+import { Eraser, Link2, Volume2 } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
 import { useT } from '../../shared/i18n'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -57,7 +57,7 @@ export default function LessonExercise({
                 speaking && 'ring-4 ring-[rgb(var(--p-primary-rgb)/0.24)]',
               )}
             >
-              <Volume2 size={28} strokeWidth={2.25} className={cn(speaking && 'animate-bounce')} />
+              <Volume2 size={28} strokeWidth={2.25} className={cn(speaking && 'animate-pulse')} />
             </button>
             <div className="min-w-0 flex-1">
               <div className="mb-1.5 flex items-center gap-1.5" aria-hidden="true">
@@ -106,17 +106,6 @@ export default function LessonExercise({
                   {numberLabel(optionIndex)}
                 </span>
                 <span className="min-w-0 flex-1 break-words">{option}</span>
-                <span
-                  aria-hidden="true"
-                  className={cn(
-                    'grid size-5 shrink-0 place-items-center rounded-full transition-all',
-                    isSelected
-                      ? 'bg-pprimary text-ponprimary scale-100'
-                      : 'bg-psurface text-transparent ring-1 ring-pline',
-                  )}
-                >
-                  <Check size={12} strokeWidth={3} />
-                </span>
               </button>
             )
           })}
@@ -159,7 +148,7 @@ export default function LessonExercise({
                   type="button"
                   tabIndex={-1}
                   onClick={() => onChange(text + char)}
-                  className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-[13.5px] font-bold text-pfg shadow-[0_2px_0_var(--p-line)] transition-transform active:translate-y-[1px]"
+                  className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-[13.5px] font-bold text-pfg shadow-[0_2px_0_var(--p-line)] transition-all active:translate-y-[1px] active:shadow-none"
                 >
                   {char}
                 </button>
@@ -193,14 +182,13 @@ export default function LessonExercise({
             'relative flex min-h-[88px] flex-wrap content-start gap-2 rounded-3xl p-3.5 transition-colors',
             chosen.length
               ? 'bg-[rgb(var(--p-primary-rgb)/0.07)] ring-2 ring-[rgb(var(--p-primary-rgb)/0.35)]'
-              : 'bg-pcard ring-1 ring-pline shadow-xs',
+              : 'bg-pcard shadow-xs',
           )}
           aria-label={tt('rusDarslikLessonWordBankHint')}
         >
           {chosen.length === 0 && (
             <div className="flex w-full flex-col justify-center gap-2 py-2">
-              <span className="flex items-center gap-1.5 text-[12.5px] font-medium text-psubtle">
-                <Sparkles size={13} className="text-pprimary" />
+              <span className="text-[12.5px] font-medium text-psubtle">
                 {tt('rusDarslikLessonWordBankHint')}
               </span>
               <div className="h-px w-full border-b border-dashed border-pline" aria-hidden="true" />
@@ -214,9 +202,8 @@ export default function LessonExercise({
               disabled={locked}
               onClick={() => onChange(chosen.filter((_, itemIndex) => itemIndex !== index))}
               aria-label={tt('rusDarslikLessonRemoveToken').replace('{token}', token)}
-              className="flex cursor-pointer items-center gap-1.5 rounded-xl bg-pprimary px-3 py-2 text-[14px] font-bold text-ponprimary shadow-[0_3px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-transform active:translate-y-[2px] disabled:opacity-70"
+              className="flex cursor-pointer items-center rounded-xl bg-pprimary px-3 py-2 text-[14px] font-bold text-ponprimary shadow-[0_3px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-all active:translate-y-[1px] active:shadow-none disabled:opacity-70"
             >
-              <Check size={12} strokeWidth={3} />
               {token}
             </button>
           ))}
@@ -235,8 +222,8 @@ export default function LessonExercise({
                 className={cn(
                   'rounded-xl px-3.5 py-2.5 text-[14px] font-bold transition-all',
                   isUsed
-                    ? 'translate-y-[2px] cursor-default bg-psurface text-psubtle opacity-35 ring-1 ring-pline'
-                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px]',
+                    ? 'cursor-default bg-psurface text-psubtle opacity-40'
+                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
                 )}
               >
                 {token}
@@ -306,7 +293,7 @@ export default function LessonExercise({
                   isActive
                     ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)]'
                     : matched
-                      ? 'bg-[rgb(var(--p-success-rgb)/0.10)] ring-2 ring-[rgb(var(--p-success-rgb)/0.45)] shadow-[0_3px_0_rgb(var(--p-success-rgb)/0.35)]'
+                      ? 'bg-[rgb(var(--p-success-rgb)/0.10)] ring-2 ring-[rgb(var(--p-success-rgb)/0.45)] shadow-[0_3px_0_rgb(var(--p-success-rgb)/0.45)]'
                       : 'bg-pcard ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface',
                 )}
               >
@@ -356,8 +343,8 @@ export default function LessonExercise({
                 className={cn(
                   'flex min-h-[64px] items-center justify-between gap-2 rounded-2xl px-3 py-2.5 text-left text-[13.5px] font-semibold leading-snug transition-all',
                   isUsed
-                    ? 'translate-y-[2px] cursor-default bg-[rgb(var(--p-success-rgb)/0.07)] text-psuccess opacity-65 ring-1 ring-[rgb(var(--p-success-rgb)/0.35)]'
-                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px]',
+                    ? 'cursor-default bg-[rgb(var(--p-success-rgb)/0.08)] text-psuccess opacity-65'
+                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
                 )}
               >
                 <span className="break-words">{right}</span>

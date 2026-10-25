@@ -128,7 +128,7 @@ describe('RussianDarslikPage — learning path', () => {
       const section = document.getElementById(`rus-block-${block.id}`)
       expect(section).toBeTruthy()
     }
-    expect(document.getElementById('rus-block-1')!.querySelectorAll('[data-path-node]')).toHaveLength(8)
+    expect(document.getElementById('rus-block-1')!.querySelectorAll('[data-path-node]')).toHaveLength(getBlockOutline(1).length)
     expect(document.getElementById('rus-block-2')!.querySelectorAll('[data-path-node]')).toHaveLength(0)
 
     // Ketma-ket ochilish: faqat birinchi mavzu ochiq, qolganlari qulflangan.
@@ -151,17 +151,14 @@ describe('RussianDarslikPage — learning path', () => {
     expect(banner.textContent).toContain(`2/${getBlockOutline(1).length}`)
   })
 
-  it('katta blokni 8 mavzuli oynalarda ko‘rsatadi va asl indekslarni saqlaydi', async () => {
+  it('ochiq blokning barcha mavzularini bitta uzluksiz yo‘lda ko‘rsatadi', async () => {
     render(<RussianDarslikPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
     const firstBlock = document.getElementById('rus-block-1')!
+    expect(firstBlock.querySelectorAll('[data-path-node]')).toHaveLength(getBlockOutline(1).length)
     expect(pathNode(1, 0)).toBeInTheDocument()
-    fireEvent.click(within(firstBlock).getByRole('button', { name: 'Keyingi mavzular' }))
-
-    expect(pathNode(1, 0)).not.toBeInTheDocument()
-    expect(pathNode(1, 8)).toBeInTheDocument()
-    expect(firstBlock).toHaveTextContent(`9–12 / ${getBlockOutline(1).length} mavzu`)
+    expect(pathNode(1, getBlockOutline(1).length - 1)).toBeInTheDocument()
   })
 
   it('mavzuni o‘qib, server testini topshirgach keyingi mavzu ochiladi', async () => {
@@ -346,13 +343,12 @@ describe('RussianDarslikPage — learning path', () => {
     expect(banner.textContent).toContain(DARSLIK_BLOCKS[0].titleRu)
   })
 
-  it('bo‘lim nishoni, bosqich indikatori va nazariya kartasida talaffuz tugmasini ko‘rsatadi', async () => {
+  it('bo‘lim nishoni va nazariya kartasida talaffuz tugmasini ko‘rsatadi', async () => {
     render(<RussianDarslikPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
     const firstBlock = document.getElementById('rus-block-1')!
     expect(firstBlock).toHaveTextContent('1-bo‘lim')
-    expect(firstBlock).toHaveTextContent('1-bosqich')
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))

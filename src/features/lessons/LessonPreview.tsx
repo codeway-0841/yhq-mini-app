@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { BookOpen, ChevronDown, ChevronUp, Clock3, Dumbbell, Crown, Lock, Zap } from 'lucide-react'
+import { ChevronDown, ChevronUp, Dumbbell, Crown, Lock } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import { registerModal } from '../../shared/lib/navigation'
@@ -51,11 +51,10 @@ export default function LessonPreview({ title, selectionKey, check, current, don
       </button>}
     </div>
     {!collapsed && <section id="lesson-preview" className="lesson-preview rounded-3xl bg-pcard shadow-2xl relative" aria-labelledby="lesson-preview-title">
-      <ModalHeaderRow onClose={onClose} label={lang === 'ru' ? 'Закрыть' : 'Yopish'} className="px-1 pb-2">
+      <ModalHeaderRow onClose={onClose} label={tt('darslikClose')} className="px-1 pb-2">
         <div key={selectionKey} className="lesson-preview-copy">
           {eyebrow && (
-            <p className="mb-1 flex items-center justify-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-pprimary">
-              <BookOpen size={12} strokeWidth={2.25} />
+            <p className="mb-1 text-[11px] font-extrabold uppercase tracking-[0.10em] text-pprimary">
               {eyebrow}
             </p>
           )}
@@ -66,14 +65,12 @@ export default function LessonPreview({ title, selectionKey, check, current, don
       {(duration || reward) && (
         <div className="mb-4 flex items-center justify-center gap-2" aria-label={description}>
           {duration && (
-            <span className="inline-flex items-center gap-1.5 rounded-xl bg-psurface px-2.5 py-1.5 text-[11px] font-semibold text-pmuted shadow-2xs">
-              <Clock3 size={13} strokeWidth={2.25} className="text-psubtle" />
+            <span className="inline-flex items-center rounded-xl bg-psurface px-2.5 py-1.5 text-[11px] font-bold text-pmuted shadow-2xs">
               {duration}
             </span>
           )}
           {reward && (
-            <span className="inline-flex items-center gap-1.5 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.10)] px-2.5 py-1.5 text-[11px] font-semibold text-pprimary shadow-2xs">
-              <Zap size={13} strokeWidth={2.4} />
+            <span className="inline-flex items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1.5 text-[11px] font-extrabold text-pprimary shadow-2xs">
               {reward}
             </span>
           )}

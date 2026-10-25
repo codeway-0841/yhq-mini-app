@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ArrowDown, BookOpen, CheckCircle2, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Flame, GraduationCap, Zap,
+  ArrowDown, ChevronDown, ChevronUp,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { goBack } from '../../shared/lib/navigation'
 import { track } from '../../shared/lib/analytics'
-import { cn } from '../../shared/lib/cn'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
@@ -34,26 +33,6 @@ import { useDarslikMastery } from './useDarslikMastery'
 
 const EMPTY_PROGRESS: Record<number, number[]> = {}
 const EMPTY_SECTIONS: number[] = []
-const PATH_PAGE_SIZE = 8
-
-/** Duolingo uslubidagi har bir bo'lim (unit) uchun o'ziga xos aksent palitrasi */
-const UNIT_COLORS: readonly string[] = [
-  '#58cc02', // 1: Emerald (Fonetika)
-  '#1cb0f6', // 2: Sky Blue (Leksikologiya)
-  '#ce82ff', // 3: Violet (Frazeologiya)
-  '#ff9600', // 4: Amber (Morfemika)
-  '#ff4b4b', // 5: Coral Red (Morfologiya)
-  '#00cd9c', // 6: Teal (Sintaksis)
-  '#6366f1', // 7: Indigo (Punktuatsiya)
-  '#ec4899', // 8: Pink (Orfografiya)
-  '#14b8a6', // 9: Cyan (Fonetika va grafika)
-  '#f59e0b', // 10: Gold (Orfoepiya)
-  '#8b5cf6', // 11: Purple (Stilistika)
-  '#10b981', // 12: Green (Nutq madaniyati)
-  '#3b82f6', // 13: Blue (Nutqshunoslik)
-  '#f97316', // 14: Orange (Matn lingvistikasi)
-  '#eab308', // 15: Trophy Gold (Adabiy til me'yorlari)
-]
 
 /**
  * Rus tili darsligi — 15 blok, har bir blok mavzulari **learning path**
@@ -80,10 +59,8 @@ export default function RussianDarslikPage() {
   const [jumpDirection, setJumpDirection] = useState<'up' | 'down'>('down')
   const [reader, setReader] = useState<{ blockId: number; sectionIdx: number; quiz?: boolean } | null>(null)
   const [expandedBlockId, setExpandedBlockId] = useState(DARSLIK_BLOCKS[0].id)
-  const [pathPageByBlock, setPathPageByBlock] = useState<Record<number, number>>({})
 
   const rootRef = useRef<HTMLDivElement>(null)
-  const headerRef = useRef<HTMLDivElement>(null)
   const selectedTrigger = useRef<HTMLButtonElement | null>(null)
   const moduleRefs = useRef(new Map<number, HTMLElement>())
   const syncedPathWindow = useRef('')
@@ -123,25 +100,19 @@ export default function RussianDarslikPage() {
   const totalPassedCount = passed.size
   const overallCoursePct = Math.min(100, Math.round((totalPassedCount / Math.max(1, DARSLIK_SECTION_COUNT)) * 100))
 
-  // Faqat bitta blok yo'lini ochiq tutamiz; katta bloklar 8 mavzuli
-  // oynalarda ko'rsatiladi. Progress o'zgarsa yangi joriy oynaga o'tadi.
+  // Faqat bitta blok yo'lini ochiq tutamiz; progress o'zgarsa joriy blokka o'tadi.
   useEffect(() => {
     if (mastery.loading) return
     if (syncedPathWindow.current === 'manual') return
-    const page = Math.floor(currentSectionIdx / PATH_PAGE_SIZE)
-    const key = `${currentBlock.id}:${page}`
+    const key = String(currentBlock.id)
     if (syncedPathWindow.current === key) return
     syncedPathWindow.current = key
     setExpandedBlockId(currentBlock.id)
-    setPathPageByBlock((previous) => ({
-      ...previous,
-      [currentBlock.id]: page,
-    }))
-  }, [currentBlock.id, currentSectionIdx, mastery.loading])
+  }, [currentBlock.id, mastery.loading])
 
   // Sticky modul banner'i header ostida qolishi uchun balandlikni o'lchaymiz.
   useEffect(() => {
-    const header = headerRef.current
+    const header = rootRef.current?.querySelector<HTMLElement>('.page-header')
     if (!header) return
     const measure = () => rootRef.current?.style.setProperty('--lesson-header-height', `${header.getBoundingClientRect().height}px`)
     measure()
@@ -176,10 +147,6 @@ export default function RussianDarslikPage() {
     const section = moduleRefs.current.get(currentBlock.id)
     if (!section) return
     setExpandedBlockId(currentBlock.id)
-    setPathPageByBlock((previous) => ({
-      ...previous,
-      [currentBlock.id]: Math.floor(currentSectionIdx / PATH_PAGE_SIZE),
-    }))
     const node = section.querySelector<HTMLButtonElement>('[aria-current="step"]')
     setCollapsed(false)
     if (node) {
@@ -252,65 +219,35 @@ export default function RussianDarslikPage() {
       data-preview-open={!!selected && !collapsed}
       data-has-selection={!!selected}
     >
-      <div ref={headerRef} className="-mx-4 mb-3 lg:hidden">
-        <PageHeader
-          title={tt('rusDarslikTitle')}
-          subtitle={isRu ? currentBlock.titleRu : currentBlock.titleUz}
-          onBack={() => goBack(navigate)}
-          backLabel={tt('backWord')}
-          actions={(
-            <div className="flex items-center gap-1.5">
-              {streak > 0 && (
-                <span className="flex items-center gap-1 rounded-xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-2 py-1 text-[11px] font-extrabold tabular-nums text-pwarning">
-                  <Flame size={12} strokeWidth={2.5} />
-                  {streak}
-                </span>
-              )}
-              <span className="flex items-center gap-1.5 rounded-xl bg-psurface px-2.5 py-1.5 text-[11.5px] font-bold tabular-nums text-pmuted shadow-2xs">
-                <GraduationCap size={13} strokeWidth={1.75} className="text-pprimary" />
-                {doneFor(currentBlock.id).length}/{getBlockOutline(currentBlock.id).length}
+      <PageHeader
+        className="-mx-4 mb-2 lg:hidden"
+        title={tt('rusDarslikTitle')}
+        onBack={() => goBack(navigate)}
+        backLabel={tt('backWord')}
+        actions={(
+          <div className="flex items-center gap-1.5">
+            {streak > 0 && (
+              <span className="flex items-center rounded-xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-2 py-1 text-[11px] font-extrabold tabular-nums text-pwarning">
+                {streak}d
               </span>
-            </div>
-          )}
-        />
-      </div>
-
-      {/* Mobil Duolingo Kurs Progress HUD kartasi */}
-      <div className="mx-auto mb-4 flex max-w-[440px] items-center justify-between gap-3 rounded-2xl bg-pcard px-3.5 py-2.5 shadow-xs lg:hidden">
-        <div className="min-w-0 flex-1">
-          <div className="flex items-center justify-between gap-2 text-[11px] font-bold">
-            <span className="uppercase tracking-wider text-psubtle">{tt('rusDarslikCourseProgress')}</span>
-            <span className="tabular-nums text-pfg">
-              {totalPassedCount}/{DARSLIK_SECTION_COUNT} {tt('rusDarslikSection')}
-            </span>
+            )}
+            {xp > 0 && (
+              <span className="flex items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1 text-[11px] font-extrabold tabular-nums text-pprimary">
+                {xp} XP
+              </span>
+            )}
           </div>
-          <div className="mt-1.5 h-2 w-full overflow-hidden rounded-full bg-psurface p-0.5">
-            <div
-              className="h-full rounded-full bg-pprimary transition-[width] duration-300"
-              style={{ width: `${Math.max(totalPassedCount > 0 ? 4 : 0, overallCoursePct)}%` }}
-            />
-          </div>
-        </div>
-        {xp > 0 && (
-          <span className="flex shrink-0 items-center gap-1 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1.5 text-[11.5px] font-extrabold tabular-nums text-pprimary">
-            <Zap size={12} strokeWidth={2.5} />
-            {xp}
-          </span>
         )}
-      </div>
+      />
 
-      {/* Desktop sarlavha kartasi (YHQ darsligi bilan bir xil ko'rinish) */}
+      {/* Desktop sarlavha kartasi */}
       <div className="lesson-course-header hidden lg:flex">
         <div className="flex items-center gap-4">
-          <div className="grid size-14 flex-none place-items-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.12)] text-pprimary">
-            <GraduationCap size={28} strokeWidth={1.75} />
-          </div>
           <div>
             <h2 className="font-display text-xl font-bold tracking-tight text-pfg">{tt('rusDarslikTitle')}</h2>
             <p className="mt-1 text-xs font-medium text-pmuted">{isRu ? currentBlock.titleRu : currentBlock.titleUz}</p>
             <div className="mt-2 flex items-center gap-3 text-xs font-medium text-pmuted">
-              <span className="flex items-center gap-1.5 font-semibold text-pfg">
-                <BookOpen size={14} className="text-pprimary" />
+              <span className="font-semibold tabular-nums text-pfg">
                 {doneFor(currentBlock.id).length}/{getBlockOutline(currentBlock.id).length} {tt('rusDarslikSection')}
               </span>
               <span className="h-1 w-1 rounded-full bg-plineStrong" />
@@ -354,26 +291,9 @@ export default function RussianDarslikPage() {
         const title = isRu ? block.titleRu : block.titleUz
         const state = complete ? 'done' : block.id === currentBlock.id ? 'current' : 'upcoming'
         const expanded = expandedBlockId === block.id
-        const unitColor = UNIT_COLORS[(block.id - 1) % UNIT_COLORS.length]
-        const firstIncomplete = outline.findIndex((_, index) => !done.includes(index))
-        const recommendedPage = Math.floor(Math.max(0, firstIncomplete) / PATH_PAGE_SIZE)
-        const maxPage = Math.max(0, Math.ceil(outline.length / PATH_PAGE_SIZE) - 1)
-        const pathPage = Math.min(maxPage, pathPageByBlock[block.id] ?? recommendedPage)
-        const pathStart = pathPage * PATH_PAGE_SIZE
-        const visibleOutline = outline.slice(pathStart, pathStart + PATH_PAGE_SIZE)
-        const pathEnd = Math.min(outline.length, pathStart + visibleOutline.length)
         const toggleBlock = () => {
           syncedPathWindow.current = 'manual'
           setExpandedBlockId((previous) => previous === block.id ? 0 : block.id)
-          setPathPageByBlock((previous) => previous[block.id] === undefined
-            ? { ...previous, [block.id]: recommendedPage }
-            : previous)
-          setSelected(null)
-          setCollapsed(false)
-        }
-        const setPathPage = (page: number) => {
-          syncedPathWindow.current = 'manual'
-          setPathPageByBlock((previous) => ({ ...previous, [block.id]: Math.max(0, Math.min(maxPage, page)) }))
           setSelected(null)
           setCollapsed(false)
         }
@@ -387,41 +307,30 @@ export default function RussianDarslikPage() {
             data-module-state={state}
             data-expanded={expanded ? 'true' : 'false'}
             style={{
-              '--module-color': unitColor,
               scrollMarginTop: 'calc(var(--lesson-header-height, 61px) + 8px)',
             } as CSSProperties}
           >
             <div className={expanded ? 'lesson-module-sticky' : undefined}>
-              <div className="lesson-module-banner rounded-3xl">
-                <span className="lesson-module-icon text-[20px] shadow-2xs" aria-hidden="true">{block.icon}</span>
+              <div className="lesson-module-banner rounded-2xl">
                 <div className="min-w-0 flex-1">
-                  <div className="mb-0.5 flex items-center gap-1.5">
-                    <span
-                      className="rounded-md px-1.5 py-0.5 text-[9.5px] font-extrabold uppercase tracking-wider"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, var(--module-color, var(--p-primary)) 15%, transparent)',
-                        color: 'var(--module-color, var(--p-primary))',
-                      }}
-                    >
+                  <div className="mb-0.5 flex items-center gap-2">
+                    <span className="rounded-md bg-[rgb(var(--p-primary-rgb)/0.14)] px-1.5 py-0.5 text-[9.5px] font-extrabold uppercase tracking-wider text-pprimary">
                       {tt('rusDarslikUnitBadge').replace('{unit}', String(block.id))}
                     </span>
                     <span className="text-[10.5px] font-semibold text-pmuted">
                       ~{DARSLIK_BLOCK_STATS[block.id].minutes}{isRu ? ' мин' : ' daq'}
                     </span>
-                    {complete && (
-                      <CheckCircle2 size={13} strokeWidth={2.5} className="text-psuccess" aria-hidden="true" />
-                    )}
                   </div>
                   <h2
                     id={`rus-block-title-${block.id}`}
                     tabIndex={-1}
-                    className="font-display text-[15.5px] font-extrabold leading-tight text-pfg focus-visible:outline-none lg:text-[17px]"
+                    className="font-display text-[15px] font-extrabold leading-snug text-pfg focus-visible:outline-none lg:text-[17px]"
                   >
                     <button type="button" onClick={toggleBlock} className="w-full cursor-pointer text-left">
                       {block.id}. {title}
                     </button>
                   </h2>
-                  <p className="mt-0.5 text-[11px] font-semibold text-pmuted lg:text-[12.5px]">
+                  <p className="mt-0.5 hidden text-[12px] font-semibold text-pmuted lg:block">
                     {done.length}/{outline.length} {tt('rusDarslikSection')}
                     {complete ? ` • ${tt('pathDone')}` : ''}
                   </p>
@@ -443,67 +352,17 @@ export default function RussianDarslikPage() {
                   aria-expanded={expanded}
                   aria-controls={`rus-block-path-${block.id}`}
                   aria-label={expanded ? tt('rusDarslikHideUnit') : tt('rusDarslikShowUnit')}
-                  className="grid size-9 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pmuted shadow-2xs transition-transform active:scale-95"
+                  className="grid size-8 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pmuted shadow-2xs transition-transform active:scale-95"
                 >
-                  {expanded ? <ChevronUp size={17} /> : <ChevronDown size={17} />}
+                  {expanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                 </button>
               </div>
             </div>
             {expanded && (
-              <p className="mx-auto mb-1 mt-2.5 max-w-[440px] px-3 text-[12px] font-medium leading-relaxed text-pmuted lg:max-w-none lg:px-2">
-                {isRu ? block.summaryRu : block.summaryUz}
-              </p>
-            )}
-            {expanded && (
               <div id={`rus-block-path-${block.id}`}>
-                {maxPage > 0 && (
-                  <div className="mx-auto mt-3 flex max-w-[380px] items-center justify-between gap-2 rounded-2xl bg-pcard p-2 shadow-xs">
-                    <button
-                      type="button"
-                      disabled={pathPage === 0}
-                      onClick={() => setPathPage(pathPage - 1)}
-                      aria-label={tt('rusDarslikPreviousSet')}
-                      className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg shadow-[0_2px_0_var(--p-line)] transition-transform active:translate-y-[1px] disabled:cursor-not-allowed disabled:opacity-35 disabled:shadow-none"
-                    >
-                      <ChevronLeft size={18} strokeWidth={2.25} />
-                    </button>
-                    <div className="flex min-w-0 flex-1 flex-col items-center">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
-                        {tt('rusDarslikStageBadge').replace('{stage}', String(pathPage + 1))} · {pathPage + 1}/{maxPage + 1}
-                      </span>
-                      <span className="mt-0.5 text-center text-[11.5px] font-bold tabular-nums text-pfg">
-                        {tt('rusDarslikTopicsRange')
-                          .replace('{start}', String(pathStart + 1))
-                          .replace('{end}', String(pathEnd))
-                          .replace('{total}', String(outline.length))}
-                      </span>
-                      <div className="mt-1.5 flex items-center gap-1" aria-hidden="true">
-                        {Array.from({ length: maxPage + 1 }).map((_, stageIdx) => (
-                          <span
-                            key={stageIdx}
-                            className={cn(
-                              'h-1.5 rounded-full transition-all',
-                              stageIdx === pathPage ? 'w-4 bg-pprimary' : 'w-1.5 bg-pline',
-                            )}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      disabled={pathPage >= maxPage}
-                      onClick={() => setPathPage(pathPage + 1)}
-                      aria-label={tt('rusDarslikNextSet')}
-                      className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-xl bg-psurface text-pfg shadow-[0_2px_0_var(--p-line)] transition-transform active:translate-y-[1px] disabled:cursor-not-allowed disabled:opacity-35 disabled:shadow-none"
-                    >
-                      <ChevronRight size={18} strokeWidth={2.25} />
-                    </button>
-                  </div>
-                )}
                 <LearningPath
                   moduleId={block.id}
-                  nodes={visibleOutline}
-                  startIndex={pathStart}
+                  nodes={outline}
                   nodeLabel={tt('rusDarslikSection')}
                   doneList={done}
                   readList={readFor(block.id)}
@@ -521,7 +380,7 @@ export default function RussianDarslikPage() {
 
       {currentBlock && !selected && (
         <div className="pointer-events-none fixed bottom-[calc(2rem+var(--safe-bottom,0px))] left-0 right-0 z-20 flex justify-center lg:hidden">
-          <Button className="pointer-events-auto rounded-full bg-psuccess text-white shadow-lg" onClick={jumpToCurrent}>
+          <Button className="pointer-events-auto rounded-full bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]" onClick={jumpToCurrent}>
             <ArrowDown size={17} />
             {tt('pathJump')}
           </Button>
