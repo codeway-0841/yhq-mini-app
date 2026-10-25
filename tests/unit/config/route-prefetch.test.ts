@@ -59,4 +59,26 @@ describe('route chunk prefetch (navigatsiya flash regression)', () => {
   it('dashboardChunk module load\'da prefetch qilinadi (regression)', () => {
     expect(APP).toMatch(/void dashboardChunk\(\)/)
   })
+
+  it('prefetch ustuvorlik to\'lqinlariga bo\'lingan va Data Saver / 2G tarmoqni hurmat qiladi', () => {
+    const entries = prefetchListEntries(APP)
+    // 1-to'lqinda 4 tab-root va birlamchi test/profil oqimlari turishi shart
+    expect(entries.slice(0, 6)).toEqual([
+      'testlarChunk',
+      'octagonChunk',
+      'modesChunk',
+      'testPageChunk',
+      'profilChunk',
+      'biletlarChunk',
+    ])
+    // Kam kiriladigan admin va auth recovery chunk'lar oxirgi to'lqinda
+    expect(entries.slice(-4)).toEqual([
+      'loginChunk',
+      'verifyEmailChunk',
+      'resetPasswordChunk',
+      'adminChunk',
+    ])
+    expect(APP).toContain('isConstrainedConnection')
+    expect(APP).toContain('PREFETCH_BATCH_SIZE')
+  })
 })

@@ -117,21 +117,58 @@ const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
 // yuklanmagan bo'lsa Suspense fallback (PageLoader) EMAS, ESKI sahifa
 // (Dashboard) chunk kelguncha ekranda qolib ketardi. Boot tugagach
 // IDLE vaqtda barcha sahifa chunk'larini oldindan yuklab qo'yamiz.
+const CORE_PREFETCH_COUNT = 6
+const PREFETCH_BATCH_SIZE = 6
+
 const routeChunkPrefetchers = [
-  testlarChunk, darslikChunk, rusDarslikChunk, biletlarChunk, topicsChunk, testPageChunk,
-  belgilarChunk, xatolarChunk, adaptiveChunk, profilChunk, leaderboardChunk,
-  octagonChunk, signsGameChunk, streakChunk, shopChunk, premiumChunk,
-  statistikaChunk, speedChunk, flashcardsChunk, formulasChunk, searchChunk,
-  aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, modesChunk, libraryChunk, libraryReaderChunk,
-  graphChunk, wonderStudioChunk, mathBoardChunk, camaiChunk, liveListChunk, reviewsChunk,
-  notFoundChunk, adminChunk, onboardingChunk, loginChunk,
-  verifyEmailChunk, resetPasswordChunk, interactiveLessonsChunk,
+  // 1-to'lqin (Core tab-root va birlamchi oqimlar — Data Saver / 2G da faqat shular tortiladi):
+  testlarChunk, octagonChunk, modesChunk, testPageChunk, profilChunk, biletlarChunk,
+  // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
+  topicsChunk, darslikChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
+  streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, speedChunk, flashcardsChunk,
+  formulasChunk, searchChunk, signsGameChunk, rusDarslikChunk, libraryChunk, libraryReaderChunk,
+  interactiveLessonsChunk, reviewsChunk,
+  // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
+  aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
+  liveListChunk, wonderStudioChunk, notFoundChunk, onboardingChunk, loginChunk,
+  verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
+
+function isConstrainedConnection(): boolean {
+  if (typeof navigator === 'undefined') return false
+  const conn = (navigator as Navigator & {
+    connection?: { saveData?: boolean; effectiveType?: string }
+  }).connection
+  if (!conn) return false
+  return Boolean(conn.saveData || conn.effectiveType === 'slow-2g' || conn.effectiveType === '2g')
+}
+
 function prefetchRouteChunks() {
-  for (const load of routeChunkPrefetchers) void load()
-  // Achievement badge'lar ham shu IDLE oynada keshga olinadi —
-  // Profil'ga birinchi kirishda rasmlar bir zumda chiqadi.
-  void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
+  const constrained = isConstrainedConnection()
+  const queue = constrained
+    ? routeChunkPrefetchers.slice(0, CORE_PREFETCH_COUNT)
+    : routeChunkPrefetchers
+
+  let index = 0
+  const loadNextBatch = () => {
+    const batch = queue.slice(index, index + PREFETCH_BATCH_SIZE)
+    index += PREFETCH_BATCH_SIZE
+    for (const load of batch) void load()
+
+    if (index < queue.length) {
+      if (typeof window !== 'undefined' && typeof window.requestIdleCallback === 'function') {
+        window.requestIdleCallback(loadNextBatch, { timeout: 2500 })
+      } else {
+        setTimeout(loadNextBatch, 180)
+      }
+    } else if (!constrained) {
+      // Achievement badge'lar asosiy sahifa chunk'laridan SO'NG keshga olinadi —
+      // Profil'ga birinchi kirishda rasmlar bir zumda chiqadi va JS yuklanishiga xalaqit bermaydi.
+      void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
+    }
+  }
+
+  loadNextBatch()
 }
 
 

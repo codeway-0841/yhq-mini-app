@@ -181,7 +181,7 @@ export default function WonderSidebar({
   // Collapsed Mode
   if (isSidebarCollapsed) {
     return (
-      <aside className="hidden md:flex flex-col items-center justify-between py-4 px-2 w-16 bg-[#F6F4EE] dark:bg-[#150F0D] shrink-0 h-screen sticky top-[var(--safe-top,0px)] transition-all select-none z-40">
+      <aside className="hidden md:flex flex-col items-center justify-between py-4 px-2 w-16 bg-[#F6F4EE] dark:bg-[#150F0D] shrink-0 h-full sticky top-[var(--safe-top,0px)] transition-all select-none z-40">
         <div className="flex flex-col items-center gap-4 w-full">
           <button
             type="button"
@@ -236,7 +236,7 @@ export default function WonderSidebar({
 
   // Expanded Mode (1:1 with Wondering production bundle)
   return (
-    <aside className="w-64 bg-[#F6F4EE] dark:bg-[#150F0D] flex flex-col justify-between shrink-0 h-screen sticky top-[var(--safe-top,0px)] font-sans z-30 transition-all select-none">
+    <aside className="w-64 bg-[#F6F4EE] dark:bg-[#150F0D] flex flex-col justify-between shrink-0 h-full sticky top-[var(--safe-top,0px)] font-sans z-30 transition-all select-none">
       {/* Top Header & Navigation */}
       <div className="p-3 space-y-4 overflow-y-auto flex-1">
         {/* Brand & Collapse Header (1:1 with live_auth_dashboard.png) */}

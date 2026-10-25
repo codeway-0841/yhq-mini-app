@@ -141,4 +141,12 @@ describe('safe-area qoidalari (APK edge-to-edge + TG fullscreen)', () => {
     expect(css).toMatch(/html\s*\{\s*scrollbar-width:\s*none/)
     expect(css).toMatch(/html::?-webkit-scrollbar\s*\{\s*display:\s*none/)
   })
+
+  it('Fullscreen shell 100vh (h-screen) EMAS, safe-top hisobga olingan first-launch-screen va tokenlardan foydalanadi', () => {
+    const shell = fs.readFileSync(path.join(SRC, 'features/app/components/MobileAppShell.tsx'), 'utf8')
+    const fullscreenMatch = shell.match(/if \(chrome\.shell === 'fullscreen'\)[\s\S]*?data-app-shell="fullscreen"/)?.[0] ?? ''
+    expect(fullscreenMatch).toContain('first-launch-screen')
+    expect(fullscreenMatch).toContain('bg-pcanvas')
+    expect(fullscreenMatch).not.toMatch(/(?:^|[\s"'])h-screen(?:[\s"']|$)/)
+  })
 })

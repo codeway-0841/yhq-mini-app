@@ -38,7 +38,7 @@ export default function MobileAppShell({ children }: MobileAppShellProps) {
   if (chrome.shell === 'fullscreen') {
     return (
       <div
-        className="w-full h-screen overflow-hidden bg-[#F6F4EE] dark:bg-[#150F0D]"
+        className="first-launch-screen bg-pcanvas text-pfg overflow-hidden"
         data-app-shell="fullscreen"
         data-chrome-mode={chrome.mode}
       >

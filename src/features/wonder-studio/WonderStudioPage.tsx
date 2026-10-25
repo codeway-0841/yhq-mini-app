@@ -163,9 +163,9 @@ export default function WonderStudioPage() {
   }, [lessonParam, activeCourse])
 
   return (
-    <div className="h-screen bg-[#F6F4EE] dark:bg-[#150F0D] text-stone-900 dark:text-stone-100 flex font-public-sans overflow-hidden selection:bg-amber-300 selection:text-stone-900">
+    <div className="h-full bg-[#F6F4EE] dark:bg-[#150F0D] text-stone-900 dark:text-stone-100 flex font-public-sans overflow-hidden selection:bg-amber-300 selection:text-stone-900">
       {/* Desktop Persistent Sidebar */}
-      <div className="hidden md:block shrink-0">
+      <div className="hidden md:block shrink-0 h-full">
         <WonderSidebar
           courses={allCourses}
           activeCourse={activeCourse}
@@ -199,7 +199,7 @@ export default function WonderStudioPage() {
       )}
 
       {/* Main Workspace Layout */}
-      <div className="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
+      <div className="flex-1 flex flex-col min-w-0 h-full overflow-hidden">
         {/* Mobile Header Bar */}
         <div className="md:hidden flex items-center justify-between p-3 bg-[#F6F4EE] dark:bg-[#150F0D] border-b border-stone-200 dark:border-stone-800 sticky top-[var(--safe-top,0px)] z-20">
           <button
