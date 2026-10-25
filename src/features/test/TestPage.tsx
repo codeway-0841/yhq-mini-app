@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useMemo, useSyncExternalStore } from 'react'
+import { useState, useEffect, useCallback, useMemo, useSyncExternalStore } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal } from 'lucide-react'
@@ -184,7 +184,7 @@ export default function TestPage() {
     answerTimer,
     goTo,
     onToast: handleToast,
-    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || drawingOpen || isFinished,
+    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || confirmExit || drawingOpen || isFinished,
   })
 
   // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
@@ -265,6 +265,7 @@ export default function TestPage() {
     !showAiTutor &&
     !showMenu &&
     !confirmFinish &&
+    !confirmExit &&
     !isFinished &&
     !showResults
 
@@ -404,19 +405,15 @@ export default function TestPage() {
     return stopSpeaking
   }, [q?.id, settings.language])
 
-  const exitTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-
   const handleBack = useCallback(() => {
     const answered = answers.filter((a) => a !== null && a !== 'unanswered').length
     if (isFinished || answered === 0 || confirmExit) {
       goBack(navigate)
       return
     }
+    cancelAutoNext()
     setConfirmExit(true)
-    setToast(tt('exitConfirm'))
-    if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
-    exitTimerRef.current = setTimeout(() => { setConfirmExit(false); setToast(null) }, 8000)
-  }, [answers, isFinished, confirmExit, navigate, tt])
+  }, [answers, isFinished, confirmExit, navigate, cancelAutoNext])
 
   useEffect(() => {
     const answeredCount = answers.filter((a) => a !== null && a !== 'unanswered').length
@@ -425,10 +422,6 @@ export default function TestPage() {
     window.addEventListener('beforeunload', handler)
     return () => window.removeEventListener('beforeunload', handler)
   }, [answers, isFinished])
-
-  useEffect(() => () => {
-    if (exitTimerRef.current) clearTimeout(exitTimerRef.current)
-  }, [])
 
   if (!q) {
     if (questionsError && !questionsLoaded) {
@@ -656,6 +649,17 @@ export default function TestPage() {
           </Button>
         </SheetBody>
       </Sheet>
+      <ConfirmDialog
+        open={confirmExit}
+        title={settings.language === 'ru' ? 'Выйти из теста?' : 'Testdan chiqilsinmi?'}
+        description={settings.language === 'ru'
+          ? 'Отвеченные вопросы сохранены — тест можно продолжить позже.'
+          : 'Berilgan javoblar saqlangan — testni keyin davom ettirish mumkin.'}
+        confirmLabel={settings.language === 'ru' ? 'Выйти' : 'Chiqish'}
+        cancelLabel={settings.language === 'ru' ? 'Остаться' : 'Qolish'}
+        onClose={() => setConfirmExit(false)}
+        onConfirm={() => { setConfirmExit(false); goBack(navigate) }}
+      />
       <ConfirmDialog open={confirmFinish && !showResults} title={tt('testFinishTitle')}
         description={answers.some((a) => a === null || a === 'unanswered')
           ? tt('testFinishUnanswered').replace('{count}', String(answers.filter((a) => a === null || a === 'unanswered').length))

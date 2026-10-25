@@ -43,8 +43,9 @@ export {
 } from './sheet'
 export {
   Dialog, DialogHeader, DialogTitle, DialogDescription, DialogBody, DialogFooter,
-  DialogClose, ConfirmDialog,
+  DialogClose, ConfirmDialog, ConfirmMascot,
 } from './dialog'
+export { type ConfirmMascotEmotion, type ConfirmMascotProps } from './confirm-mascot'
 export {
   DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuCheckboxItem, DropdownMenuRadioItem, DropdownMenuRadioGroup,
