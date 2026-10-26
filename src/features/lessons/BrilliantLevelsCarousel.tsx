@@ -1,4 +1,4 @@
-﻿import { useId } from 'react'
+import { useId } from 'react'
 
 export interface BrilliantModuleTheme {
   accent: string
@@ -374,26 +374,44 @@ export function BrilliantHeroIllustration({ moduleId }: { moduleId: number }) {
  * - done: Isometric 3D cylinder platform + two grey cones/pawns on top
  * - upcoming: Flat hatched grey isometric oval disc
  */
-export function BrilliantLessonRowIcon({ state }: { state: 'done' | 'current' | 'upcoming' }) {
+export function BrilliantLessonRowIcon({
+  state,
+  accentColor = '#3557ff',
+}: {
+  state: 'done' | 'current' | 'upcoming'
+  accentColor?: string
+}) {
   const uid = useId()
 
   if (state === 'current') {
     return (
       <svg viewBox="0 0 54 50" className="w-12 h-11 shrink-0 overflow-visible" aria-hidden="true">
-        {/* Bottom Isometric Ring Platform */}
-        <ellipse cx="27" cy="37" rx="22" ry="9.5" fill="#94a3b8" />
-        <ellipse cx="27" cy="35" rx="22" ry="9.5" fill="#cbd5e1" />
-        <ellipse cx="27" cy="35" rx="16.5" ry="6.8" fill="#1e293b" />
-        <ellipse cx="27" cy="36" rx="11.5" ry="4.5" fill="#f8fafc" />
+        <defs>
+          <radialGradient id={`${uid}-halo`} cx="50%" cy="50%" r="50%">
+            <stop offset="60%" stopColor={accentColor} stopOpacity="0.45" />
+            <stop offset="100%" stopColor={accentColor} stopOpacity="0" />
+          </radialGradient>
+        </defs>
 
-        {/* Floating Green 3D Gem / Crown */}
+        {/* Outer Level-Themed Glowing Halo Ring (as highlighted in DailyDesignChallenge breakdown) */}
+        <ellipse cx="27" cy="36" rx="25" ry="11" fill={`url(#${uid}-halo)`} />
+        <ellipse cx="27" cy="36" rx="23" ry="10" fill="none" stroke={accentColor} strokeWidth="2.2" strokeOpacity="0.85" />
+
+        {/* Isometric Platform Base */}
+        <ellipse cx="27" cy="37" rx="20" ry="8.5" fill="#94a3b8" />
+        <ellipse cx="27" cy="35" rx="20" ry="8.5" fill="#e2e8f0" />
+        <ellipse cx="27" cy="35" rx="15" ry="6.2" fill="#1e293b" />
+        <ellipse cx="27" cy="35" rx="10.5" ry="4" fill="#0f172a" />
+
+        {/* Floating Green 3D Gem / Mascot Head with subtle float */}
         <g className="transition-transform duration-300">
-          <polygon points="27,6 39,14 35,25 19,25 15,14" fill="#22c55e" />
-          <polygon points="27,6 39,14 27,20 15,14" fill="#4ade80" />
-          <polygon points="15,14 27,20 27,27 19,25" fill="#16a34a" />
-          <polygon points="39,14 27,20 27,27 35,25" fill="#15803d" />
-          <circle cx="24" cy="14" r="2.2" fill="#ffffff" opacity="0.9" />
-          <circle cx="30" cy="14" r="2.2" fill="#ffffff" opacity="0.9" />
+          <polygon points="27,5 40,14 36,26 18,26 14,14" fill="#22c55e" />
+          <polygon points="27,5 40,14 27,21 14,14" fill="#4ade80" />
+          <polygon points="14,14 27,21 27,28 18,26" fill="#16a34a" />
+          <polygon points="40,14 27,21 27,28 36,26" fill="#15803d" />
+          {/* Mascot eye / core details */}
+          <rect x="22" y="13" width="10" height="9" rx="2" fill="#0f172a" />
+          <circle cx="27" cy="17.5" r="2.2" fill="#4ade80" />
         </g>
       </svg>
     )

@@ -609,7 +609,7 @@ export default function Darslik() {
                   }}
                   className="flex h-[57px] w-full cursor-pointer items-center gap-3 px-1 text-left"
                 >
-                  <BrilliantLessonRowIcon state={rowState} />
+                  <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 
                   <span
                     className={
