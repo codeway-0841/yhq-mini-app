@@ -1,12 +1,10 @@
-import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
-import { pageScrollOffsetOf, scrollPageTo } from '../../shared/lib/page-scroll'
 import { config } from '../../shared/config'
-import { Play, Check, ChevronLeft, AlertTriangle, ArrowDown, Share2 } from 'lucide-react'
-import { modules } from '../../content/modules'
-import { MODULE_TOPICS } from '../../content/modules'
-import { lessons, TOTAL_LESSONS, type Lesson } from '../../content/lessons'
+import { Play, Check, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react'
+import { modules, MODULE_TOPICS } from '../../content/modules'
+import { lessons, type Lesson } from '../../content/lessons'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
 import videosData from '../../content/videos.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
@@ -15,15 +13,18 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { openTelegramLink } from '../../platform/telegram'
-import LearningPath, { type PathSelection } from './LearningPath'
-import LessonPreview from './LessonPreview'
+import { haptics } from '../../platform/haptics'
+import { type PathSelection } from './LearningPath'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
-import { usePathFocus } from './usePathFocus'
 import { canReadLesson } from './lesson-access'
 import ModuleComplete, { type CompletedModule } from './ModuleComplete'
+import {
+  BrilliantHeroIllustration,
+  BrilliantLessonRowIcon,
+  getBrilliantTheme,
+} from './BrilliantLevelsCarousel'
 import { useT } from '../../shared/i18n'
-import { Button } from '../../shared/components/ui/button'
-import { PageHeader } from '../../shared/components/ui/page-header'
+import './learning-path.css'
 
 type Mod = typeof modules[number]
 
@@ -62,7 +63,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
     if (!allowed) onPremiumRef.current()
   }, [allowed])
 
-  // Android hardware/sensor orqaga surish va Telegram BackButton orqali darslikka qaytish
   useEffect(() => {
     const id = Symbol('lesson-reader')
     const unregister = registerModal(id, () => {
@@ -90,7 +90,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
 
   return (
     <div className="lesson-reader fixed inset-0 z-50 bg-pcanvas flex flex-col">
-      {/* Header — fixed inset-0 sahifa (body padding tegmaydi) → .safe-top SHART */}
       <div className="flex items-center justify-between px-4 py-2.5 border-b border-pline safe-top">
         <button onClick={onClose} aria-label={tt('darslikClose')}
           className="grid size-10 shrink-0 place-items-center rounded-full bg-psurface text-pfg shadow-2xs active:scale-95 transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
@@ -102,10 +101,7 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
         </span>
       </div>
 
-      {/* pb calc: fixed inset-0 sahifa (body padding tegmaydi) — scroll kontent
-          gesture bar/home indicator ostida qolmasligi uchun bazaviy 24px + inset */}
       <div className="flex-1 overflow-y-auto px-4 py-4 pb-[calc(1.5rem+var(--safe-bottom,0px))]">
-        {/* Video Player / HD Karta */}
         <div className="rounded-2xl bg-psurface aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
           {videoInfo?.vimeoId && isPlaying ? (
             <iframe
@@ -158,7 +154,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
           {ordinal}. {ru ? lesson.titleRu : lesson.titleUz}
         </h2>
 
-        {/* Tanishuv matni */}
         <div className="flex flex-col gap-3 mb-5">
           {(ru ? lesson.bodyRu : lesson.bodyUz).map((p, i) => (
             <div key={i} className="flex gap-3">
@@ -170,7 +165,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
           ))}
         </div>
 
-        {/* Mavzu bo'yicha mashq kartasi */}
         <button onClick={() => onPractice(idx)}
           className="w-full rounded-2xl bg-pcard p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
           <p className="text-sm font-semibold mb-1 text-pfg">
@@ -182,7 +176,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
         </button>
       </div>
 
-      {/* Pastki tugmalar */}
       <div className="flex gap-2.5 px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))] border-t border-pline bg-pcanvas">
         <button onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)}
           className="flex-1 py-3.5 px-3 rounded-2xl bg-psurface text-pfg hover:bg-pcard font-semibold flex items-center justify-center gap-2 shadow-2xs transition-all active:scale-[0.98] cursor-pointer">
@@ -195,7 +188,6 @@ function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }
         </button>
       </div>
 
-      {/* progress bar — o'qish progressi (aksent) */}
       <div className="h-1 bg-psurface">
         <div className="h-full transition-all" style={{ width: `${((idx + 1) / list.length) * 100}%`, background: 'var(--p-primary)' }} />
       </div>
@@ -212,7 +204,7 @@ export default function Darslik() {
   const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
   const questions = useQuestionsStore((s) => s.questions)
   const topics = useQuestionsStore((s) => s.topics)
-  // "Davom etish" kartasidan kelish — aniq darsni ochish
+
   const [reader, setReader] = useState<{ mod: Mod; idx: number } | null>(() => {
     const st = location.state as { moduleId?: number; lessonIdx?: number } | null
     if (st?.moduleId != null && st?.lessonIdx != null) {
@@ -221,79 +213,47 @@ export default function Darslik() {
     }
     return null
   })
+
   const [moduleId, setModuleId] = useState(() => {
     const st = location.state as { moduleId?: number } | null
     return modules.find((m) => m.id === st?.moduleId)?.id
       ?? modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))?.id
       ?? modules[0].id
   })
+
   const [completion, setCompletion] = useState<CompletedModule | null>(null)
   const [selected, setSelected] = useState<PathSelection | null>(null)
-  const [collapsed, setCollapsed] = useState(false)
   const [launch, setLaunch] = useState<{ mod: Mod; idx: number; origin: LaunchOrigin } | null>(null)
-  const [jumpDirection, setJumpDirection] = useState<'up' | 'down'>('down')
+  const [swipeDir, setSwipeDir] = useState<'left' | 'right'>('right')
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+  const dragStartX = useRef<number | null>(null)
+  const dragOffsetRef = useRef(0)
   const selectedTrigger = useRef<HTMLButtonElement | null>(null)
-  const selectedLesson = selected ? lessons[selected.moduleId]?.[selected.idx] : undefined
-  const rootRef = useRef<HTMLDivElement>(null)
-  const moduleRefs = useRef(new Map<number, HTMLElement>())
-  const resetPathScroll = useRef(moduleId !== modules[0].id)
-  useEffect(() => {
-    const header = rootRef.current?.querySelector<HTMLElement>('.page-header')
-    if (!header) return
-    const measure = () => rootRef.current?.style.setProperty('--lesson-header-height', `${header.getBoundingClientRect().height}px`)
-    measure()
-    if (typeof ResizeObserver === 'undefined') return
-    const observer = new ResizeObserver(measure)
-    observer.observe(header)
-    return () => observer.disconnect()
-  }, [])
-  const continueModule = useCallback(() => {
-    if (!completion?.next) return
-    resetPathScroll.current = true
-    setModuleId(completion.next.id)
-    setCompletion(null)
-  }, [completion])
-  useEffect(() => {
-    // Wait for the completion dialog's scroll lock to be released first.
-    if (completion || reader || !resetPathScroll.current) return
-    resetPathScroll.current = false
-    const section = moduleRefs.current.get(moduleId)
-    if (!section) return
-    const headerHeight = rootRef.current?.querySelector<HTMLElement>('.page-header')?.getBoundingClientRect().height ?? 0
-    const top = pageScrollOffsetOf(section, -headerHeight - 8)
-    const reduceMotion = settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    scrollPageTo(top, reduceMotion ? 'instant' : 'smooth')
-    section.querySelector('h2')?.focus({ preventScroll: true })
-  }, [completion, moduleId, reader, settings.noAnimation])
-  const tt = useT(settings.language)
-  const currentModule = modules.find((m) => (lessons[m.id] ?? []).some((_, i) => !doneFor[m.id]?.includes(i)))
-  const selectedMod = modules.find((m) => m.id === selected?.moduleId)
-  const isSelectedCurrent = !!selected && selected.moduleId === currentModule?.id
-    && selected.idx === (lessons[selected.moduleId] ?? []).findIndex((_, i) => !doneFor[selected.moduleId]?.includes(i))
-  const selectPathNode = useCallback((selection: PathSelection, trigger: HTMLButtonElement) => {
-    selectedTrigger.current = trigger
-    const current = rootRef.current?.querySelector('[aria-current="step"]')
-    if (current) setJumpDirection(current.getBoundingClientRect().top > trigger.getBoundingClientRect().top ? 'down' : 'up')
-    setSelected(previous => previous?.moduleId === selection.moduleId && previous.idx === selection.idx && previous.check === selection.check ? previous : selection)
-  }, [])
-  usePathFocus(rootRef, !!reader || !!completion || !!launch, selectPathNode)
+  const pendingFocusModId = useRef<number | null>(null)
+  const listRef = useRef<HTMLDivElement | null>(null)
   const [toast, setToast] = useState<string | null>(null)
 
+  const tt = useT(settings.language)
   const ru = settings.language === 'ru'
-  const subject = useSubjectStore((s) => s.subject)
   const subjectId = useSubjectStore((s) => s.subjectId)
   const streak = useDailyStore((s) => s.streaks[subjectId] ?? 0)
   const totalDone = modules.reduce((sum, m) => sum + (lessons[m.id] ?? []).filter((_, i) => doneFor[m.id]?.includes(i)).length, 0)
   const markDone = useLessonsStore((s) => s.markDone)
-  const jumpToCurrent = () => {
-    if (!currentModule) return
-    const node = moduleRefs.current.get(currentModule.id)?.querySelector<HTMLButtonElement>('[aria-current="step"]')
-    if (!node) return
-    setCollapsed(false)
-    selectPathNode({ moduleId: currentModule.id, idx: Number(node.dataset.lesson), check: false }, node)
-    node.scrollIntoView({ behavior: settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center' })
-    node.focus({ preventScroll: true })
-  }
+
+  const currentModIdx = Math.max(0, modules.findIndex((m) => m.id === moduleId))
+  const activeMod = modules[currentModIdx] ?? modules[0]
+  const prevMod = currentModIdx > 0 ? modules[currentModIdx - 1] : null
+  const nextMod = currentModIdx < modules.length - 1 ? modules[currentModIdx + 1] : null
+  const theme = getBrilliantTheme(activeMod.id)
+
+  const activeLessons = lessons[activeMod.id] ?? []
+  const activeDoneList = doneFor[activeMod.id] ?? []
+  const firstUnreadIdx = activeLessons.findIndex((_, i) => !activeDoneList.includes(i))
+  const defaultLessonIdx = firstUnreadIdx >= 0 ? firstUnreadIdx : 0
+  const activeLessonIdx = selected?.moduleId === activeMod.id && !selected.check
+    ? selected.idx
+    : defaultLessonIdx
 
   const showToast = (msg: string) => { setToast(msg); setTimeout(() => setToast(null), 3000) }
   const requestPremium = () => {
@@ -301,6 +261,37 @@ export default function Darslik() {
     setLaunch(null)
     navigate('/premium')
   }
+
+  const switchToModuleIndex = useCallback((nextIdx: number) => {
+    const clamped = Math.max(0, Math.min(modules.length - 1, nextIdx))
+    const targetMod = modules[clamped]
+    if (!targetMod || targetMod.id === moduleId) return
+    setSwipeDir(clamped > currentModIdx ? 'right' : 'left')
+    setModuleId(targetMod.id)
+    setSelected(null)
+    haptics.selection()
+  }, [currentModIdx, moduleId])
+
+  const continueModule = useCallback(() => {
+    if (!completion?.next) return
+    pendingFocusModId.current = completion.next.id
+    setSwipeDir('right')
+    setModuleId(completion.next.id)
+    setCompletion(null)
+  }, [completion])
+
+  useEffect(() => {
+    if (pendingFocusModId.current === activeMod.id && !reader) {
+      pendingFocusModId.current = null
+      document.getElementById(`lesson-module-title-${activeMod.id}`)?.focus({ preventScroll: true })
+    }
+  }, [activeMod.id, reader])
+
+  // The card shows a two-row window (previous + current lesson), as in the video.
+  useEffect(() => {
+    const list = listRef.current
+    if (list) list.scrollTop = Math.max(0, activeLessonIdx - 1) * 57
+  }, [activeMod.id, activeLessonIdx])
 
   const practiceLesson = (mod: Mod, lessonIdx: number) => {
     if (!canReadLesson(isPremium, mod.id, lessonIdx)) { requestPremium(); return }
@@ -348,155 +339,339 @@ export default function Darslik() {
     navigate('/test/1', { state: { questionIds: ids, title: `${ru ? mod.titleRu : mod.title} — ${ru ? 'практика' : 'mashq'}` } })
   }
 
+  const openLessonAt = (mod: Mod, idx: number, triggerEl?: HTMLButtonElement | null) => {
+    if (launch) return
+    if (!canReadLesson(isPremium, mod.id, idx)) {
+      requestPremium()
+      return
+    }
+    const target = { mod, idx }
+    if (settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setReader(target)
+    } else {
+      setLaunch({ ...target, origin: lessonLaunchOrigin(triggerEl ?? selectedTrigger.current) })
+    }
+  }
+
+  // Horizontal touch / pointer swipe handlers on the 3D Hero Stage
+  const handleSwipeStart = (clientX: number) => {
+    dragStartX.current = clientX
+    dragOffsetRef.current = 0
+    setIsDragging(true)
+  }
+
+  const handleSwipeMove = (clientX: number) => {
+    if (dragStartX.current === null) return
+    const dx = clientX - dragStartX.current
+    // Rubber-band resistance at the ends
+    const effectiveDx =
+      (currentModIdx === 0 && dx > 0) || (currentModIdx === modules.length - 1 && dx < 0)
+        ? dx * 0.28
+        : dx
+    dragOffsetRef.current = effectiveDx
+    setDragOffset(effectiveDx)
+  }
+
+  const handleSwipeEnd = () => {
+    if (dragStartX.current === null) return
+    const dx = dragOffsetRef.current
+    dragStartX.current = null
+    dragOffsetRef.current = 0
+    setIsDragging(false)
+    setDragOffset(0)
+    if (dx <= -42 && currentModIdx < modules.length - 1) {
+      switchToModuleIndex(currentModIdx + 1)
+    } else if (dx >= 42 && currentModIdx > 0) {
+      switchToModuleIndex(currentModIdx - 1)
+    }
+  }
+
+  const activeTitle = ru ? activeMod.titleRu : activeMod.title
+
   return (
-    <div ref={rootRef} className="lesson-course px-4 pb-4 lg:px-8 lg:pb-8 lg:max-w-4xl lg:mx-auto lg:w-full" data-preview-open={!!selected && !collapsed} data-has-selection={!!selected} data-launching={!!launch}>
-      {/* Mobile Page Header (SSOT) — to'g'ridan-to'g'ri .lesson-course ichida bo'lishi shart (sticky ishlashi uchun) */}
-      <PageHeader
-        className="-mx-4 mb-2 lg:hidden"
-        title={tt('darslikTitle')}
-        onBack={() => goBack(navigate)}
-        backLabel={tt('darslikBack')}
-        actions={(
-          <div className="flex items-center gap-1.5">
-            {streak > 0 && (
-              <span className="flex items-center rounded-xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-2 py-1 text-[11px] font-extrabold tabular-nums text-pwarning">
-                {streak}d
-              </span>
-            )}
-            <span className="flex items-center rounded-xl bg-psurface px-2.5 py-1 text-[11px] font-bold tabular-nums text-pfg shadow-2xs">
-              {totalDone}/{TOTAL_LESSONS}
-            </span>
-          </div>
-        )}
-      />
-
-      {/* Desktop Wondering Course Header Card */}
-      <div className="lesson-course-header hidden lg:flex">
-        <div className="flex items-center gap-4">
-          <div>
-            <div className="flex items-center gap-2">
-              <h2 className="font-display text-xl font-bold tracking-tight text-pfg">
-                {subject.name === undefined ? '' : (ru ? (subject.nameRu || subject.name) : subject.name)} — {tt('darslikTitle')}
-              </h2>
-            </div>
-            <div className="flex items-center gap-4 mt-2 text-xs font-medium text-pmuted">
-              <span className="text-pfg font-semibold tabular-nums">
-                {totalDone}/{TOTAL_LESSONS} {tt('darslikLessonsDone')}
-              </span>
-              <span className="w-1 h-1 rounded-full bg-plineStrong" />
-              <button onClick={() => navigate('/mavzular')} className="hover:text-pprimary transition-colors">
-                {tt('topics')}
-              </button>
-              <span className="w-1 h-1 rounded-full bg-plineStrong" />
-              <button onClick={() => practiceModule(modules[0])} className="hover:text-pprimary transition-colors">
-                {tt('darslikQuickPractice')}
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <button onClick={() => {
-            const shareUrl = window.location.origin
-            const text = `${ru ? (subject.nameRu || subject.name) : subject.name} — KIVVI ta'lim platformasi`
-            if (navigator.share) {
-              void navigator.share({ title: 'KIVVI', text, url: shareUrl })
-            } else {
-              openTelegramLink('https://t.me/share/url?url=' + encodeURIComponent(shareUrl) + '&text=' + encodeURIComponent(text))
-            }
-          }}
-          className="lesson-header-action flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-pmuted hover:text-pfg transition-colors">
-            <Share2 size={14} />
-            <span>{tt('darslikShare')}</span>
-          </button>
-        </div>
-      </div>
-
-      {/* Interaktiv Animatsion Darslik CTA Banner */}
-      <div className="mb-6 flex items-center justify-between gap-3 rounded-2xl bg-pcard p-4 shadow-xs">
-        <div className="min-w-0">
-          <h3 className="truncate text-sm font-bold text-pfg">
-            {tt('darslikInteractiveTitle')}
-          </h3>
-          <p className="truncate text-xs text-pmuted">
-            {tt('darslikInteractiveDesc')}
-          </p>
-        </div>
+    <div className="flex-1 w-full min-h-full bg-white flex flex-col items-center">
+      <div
+        data-testid="brilliant-darslik-screen"
+        className="w-full bg-white text-[#0b0b0f] flex flex-col px-3.5 pt-3 pb-6 mx-auto max-w-[430px] select-none"
+      >
+      {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
+      <div className="flex items-center justify-between">
         <button
           type="button"
-          onClick={() => navigate('/interaktiv')}
-          className="shrink-0 cursor-pointer rounded-xl bg-pprimary px-3.5 py-2 text-xs font-semibold text-ponprimary shadow-xs transition-all hover:brightness-105 active:scale-95"
+          onClick={() => goBack(navigate)}
+          aria-label={tt('darslikBack')}
+          className="inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5 transition-transform active:scale-95"
         >
-          {tt('darslikOpen')}
+          <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+            {Math.max(1, totalDone)}
+          </span>
+          {/* Golden key icon */}
+          <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
+            <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
+            <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
+            <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
+            <circle cx="8" cy="17" r="2" fill="#fff" />
+          </svg>
         </button>
+
+        <div
+          data-testid="brilliant-streak-pill"
+          className="inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5"
+        >
+          {streak > 0 && (
+            <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+              {streak}
+            </span>
+          )}
+          {/* Lightning icon: lime when the streak is alive, faint outline at 0 */}
+          <svg viewBox="0 0 18 22" className="size-4 shrink-0" aria-hidden="true">
+            {streak > 0 ? (
+              <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="#d4e82a" stroke="#b9cf1c" strokeWidth="1.1" strokeLinejoin="round" />
+            ) : (
+              <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="none" stroke="#dddddd" strokeWidth="1.3" strokeLinejoin="round" />
+            )}
+          </svg>
+        </div>
       </div>
 
-      {modules.map((item) => {
-        const list = lessons[item.id] ?? []
-        const done = list.filter((_, i) => doneFor[item.id]?.includes(i)).length
-        const title = ru ? item.titleRu : item.title
-        return <section key={item.id} id={`lesson-module-${item.id}`} aria-labelledby={`lesson-module-title-${item.id}`}
-          ref={(node) => { if (node) moduleRefs.current.set(item.id, node); else moduleRefs.current.delete(item.id) }}
-          className="lesson-module-section mx-auto w-full max-w-[440px] lg:max-w-none" data-module-state={done === list.length ? 'done' : item.id === currentModule?.id ? 'current' : 'upcoming'} style={{ '--module-color': item.color } as CSSProperties}>
-          <div className="lesson-module-sticky">
-            <div className="lesson-module-banner rounded-2xl">
-              <div className="min-w-0 flex-1">
-                <div className="mb-0.5 flex items-center gap-2">
-                  <span className="rounded-md bg-[rgb(var(--p-primary-rgb)/0.14)] px-1.5 py-0.5 text-[9.5px] font-extrabold uppercase tracking-wider text-pprimary">
-                    {tt('rusDarslikUnitBadge').replace('{unit}', String(item.id))}
-                  </span>
-                </div>
-                <h2 id={`lesson-module-title-${item.id}`} tabIndex={-1} className="font-display text-[15px] lg:text-[17px] font-extrabold leading-snug focus-visible:outline-none">{item.id}. {title}</h2>
-                <p className="mt-0.5 hidden text-[12px] font-semibold text-pmuted lg:block">{done}/{list.length} {tt('lessonWord')}{done === list.length ? ` • ${tt('pathDone')}` : ''}</p>
-              </div>
-              <div
-                tabIndex={0}
-                onClick={() => practiceModule(item)}
-                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); practiceModule(item) } }}
-                title={tt('darslikModulePractice')}
-                aria-label={`${title} — ${tt('darslikModulePractice')}`}
-                className="lesson-module-notebook hidden lg:flex items-center px-3 py-1.5 rounded-xl text-xs font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-              >
-                {tt('darslikModulePractice')}
-              </div>
-              <div role="progressbar" aria-label={`${title} — ${tt('pathProgress')}`} aria-valuenow={done} aria-valuemin={0} aria-valuemax={list.length}
-                className="lesson-module-progress lg:hidden" style={{ '--module-progress': `${list.length ? done / list.length * 100 : 0}%` } as CSSProperties}>
-                <span>{done}/{list.length}</span>
-              </div>
-            </div>
-          </div>
-          <LearningPath moduleId={item.id} nodes={list.map((lesson) => (ru ? lesson.titleRu : lesson.titleUz))}
-            nodeLabel={tt('lessonWord')} moduleTitle={title}
-            checkLabel={tt('pathLevelCheck')} doneList={doneFor[item.id] ?? []} lang={settings.language} selected={selected} activeModuleId={currentModule?.id}
-            onSelect={(selection, trigger) => { selectPathNode(selection, trigger); setCollapsed(false) }} />
-        </section>
-      })}
-      {currentModule && !selected && <div className="pointer-events-none fixed bottom-[calc(2rem+var(--safe-bottom,0px))] left-0 right-0 z-20 flex justify-center">
-        <Button className="pointer-events-auto rounded-full bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]" onClick={jumpToCurrent}><ArrowDown size={17} />{tt('pathJump')}</Button>
-      </div>}
+      {/* 2. Centered header: RECOMMENDED pill + module title + colored LEVEL subtitle */}
+      <div className="flex flex-col items-center text-center">
+        <div className="mt-0.5 flex h-[22px] items-center justify-center">
+          {theme.recommended && (
+            <span
+              data-testid="brilliant-recommended-badge"
+              className="inline-flex items-center rounded-full px-3 py-[3px] text-[10px] font-extrabold uppercase tracking-[0.04em] transition-colors duration-300"
+              style={{ backgroundColor: theme.badgeBg, color: theme.accent }}
+            >
+              RECOMMENDED
+            </span>
+          )}
+        </div>
 
-      {selected && selectedMod && !reader && !completion && <LessonPreview
-        title={selected.check ? tt('pathLevelCheck') : selectedLesson ? (ru ? selectedLesson.titleRu : selectedLesson.titleUz) : ''}
-        selectionKey={`${selected.moduleId}:${selected.idx}`} check={selected.check} current={isSelectedCurrent}
-        premiumRequired={selected.check ? !isPremium : !canReadLesson(isPremium, selected.moduleId, selected.idx)}
-        done={!selected.check && !!doneFor[selected.moduleId]?.includes(selected.idx)} lang={settings.language} collapsed={collapsed}
-        onJump={currentModule ? jumpToCurrent : undefined} jumpDirection={jumpDirection}
-        onClose={() => { setCollapsed(true); selectedTrigger.current?.focus({ preventScroll: true }) }}
-        onPractice={() => selected.check ? practiceModule(selectedMod) : practiceLesson(selectedMod, selected.idx)}
-        onStart={() => {
-          if (launch) return
-          if (!canReadLesson(isPremium, selected.moduleId, selected.idx) || (selected.check && !isPremium)) { requestPremium(); return }
-          if (selected.check) { practiceModule(selectedMod); return }
-          const target = { mod: selectedMod, idx: selected.idx }
-          if (settings.noAnimation || window.matchMedia('(prefers-reduced-motion: reduce)').matches) setReader(target)
-          else setLaunch({ ...target, origin: lessonLaunchOrigin(selectedTrigger.current) })
-        }} />}
-      {launch && <LessonLaunch origin={launch.origin} lang={settings.language}
-        onReveal={() => {
-          if (!canReadLesson(isPremium, launch.mod.id, launch.idx)) { requestPremium(); return }
-          setReader({ mod: launch.mod, idx: launch.idx })
-        }}
-        onFinish={() => setLaunch(null)}
-        onCancel={() => { setLaunch(null); setReader(null) }} />}
+        <h1
+          id={`lesson-module-title-${activeMod.id}`}
+          tabIndex={-1}
+          className="mt-5 font-display text-[24px] font-bold tracking-[-0.01em] text-[#0b0b0f] leading-[30px] focus-visible:outline-none"
+        >
+          {activeTitle}
+        </h1>
+
+        <p
+          data-testid="brilliant-level-subtitle"
+          className="mt-6 text-[14px] font-extrabold uppercase leading-4 tracking-[0.01em] transition-colors duration-300"
+          style={{ color: theme.accent }}
+        >
+          LEVEL {activeMod.id}
+        </p>
+      </div>
+
+      {/* 3. Center hero illustration swipe stage */}
+      <div
+        data-testid="brilliant-swipe-stage"
+        onPointerDown={(e) => handleSwipeStart(e.clientX)}
+        onPointerMove={(e) => handleSwipeMove(e.clientX)}
+        onPointerUp={handleSwipeEnd}
+        onPointerCancel={handleSwipeEnd}
+        onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
+        onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
+        onTouchEnd={handleSwipeEnd}
+        className="relative mt-[15px] flex h-[220px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing"
+      >
+        {/* Peeking Previous 3D Illustration on the Left Edge */}
+        {prevMod && (
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 transition-transform duration-300 ease-out"
+            style={{
+              transform: `translate3d(${-138 + dragOffset * 0.55}px, -50%, 0) scale(0.62)`,
+              opacity: dragOffset > 0 ? Math.min(0.85, 0.35 + dragOffset / 220) : 0,
+            }}
+          >
+            <BrilliantHeroIllustration moduleId={prevMod.id} />
+          </div>
+        )}
+
+        {/* Active Center 3D Illustration with Spring Overshoot */}
+        <div
+          key={activeMod.id}
+          data-testid={`brilliant-hero-${activeMod.id}`}
+          className={swipeDir === 'right' ? 'brilliant-hero-enter-right' : 'brilliant-hero-enter-left'}
+          style={{
+            transform: dragOffset !== 0
+              ? `translate3d(${dragOffset}px, 0, 0) scale(${1 - Math.min(0.14, Math.abs(dragOffset) / 800)})`
+              : undefined,
+            transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+          }}
+        >
+          <BrilliantHeroIllustration moduleId={activeMod.id} />
+        </div>
+
+        {/* Peeking Next 3D Illustration on the Right Edge */}
+        {nextMod && (
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 transition-transform duration-300 ease-out"
+            style={{
+              transform: `translate3d(${138 + dragOffset * 0.55}px, -50%, 0) scale(0.62)`,
+              opacity: dragOffset < 0 ? Math.min(0.85, 0.35 + Math.abs(dragOffset) / 220) : 0,
+            }}
+          >
+            <BrilliantHeroIllustration moduleId={nextMod.id} />
+          </div>
+        )}
+
+        {/* Subtle Left / Right Edge Chevrons (matching the subtle grey chevron in the video) */}
+        {prevMod && (
+          <button
+            type="button"
+            aria-label="Oldingi daraja"
+            onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx - 1) }}
+            className="absolute left-0 top-1/2 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+          >
+            <ChevronLeft size={14} strokeWidth={2.25} />
+          </button>
+        )}
+        {nextMod && (
+          <button
+            type="button"
+            aria-label="Keyingi daraja"
+            onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx + 1) }}
+            className="absolute right-0 top-1/2 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+          >
+            <ChevronRight size={14} strokeWidth={2.25} />
+          </button>
+        )}
+      </div>
+
+      {/* 4. Centered Pagination Dots */}
+      <div
+        className="mt-[59px] flex items-center justify-center gap-[9px]"
+        role="tablist"
+        aria-label="Darajalar"
+      >
+        {modules.map((m, idx) => {
+          const isActive = idx === currentModIdx
+          return (
+            <button
+              key={m.id}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              aria-label={`LEVEL ${m.id}`}
+              onClick={() => switchToModuleIndex(idx)}
+              className="size-[7px] rounded-full cursor-pointer transition-colors duration-300"
+              style={{
+                backgroundColor: isActive ? theme.dotColor : '#d3d3d3',
+              }}
+            />
+          )
+        })}
+      </div>
+
+      {/* 5. Bottom Rounded Card Container: Staggered Lesson Rows + Full-Width 3D Glossy Start Button */}
+      <section
+        id={`lesson-module-${activeMod.id}`}
+        aria-labelledby={`lesson-module-title-${activeMod.id}`}
+        className="mt-12 rounded-[28px] border-2 border-[#e8e8e8] bg-white px-3 pt-3 pb-5"
+      >
+        <div
+          key={activeMod.id}
+          ref={listRef}
+          role="list"
+          className="h-[114px] overflow-y-auto no-scrollbar scroll-smooth"
+        >
+          {activeLessons.map((lesson, idx) => {
+            const isDone = activeDoneList.includes(idx)
+            const isStepCurrent = idx === firstUnreadIdx
+            const isSelected = selected?.moduleId === activeMod.id && selected.idx === idx
+            const isHighlighted = idx === activeLessonIdx
+            const rowState = isDone ? 'done' : isHighlighted ? 'current' : 'upcoming'
+            const lessonTitle = ru ? lesson.titleRu : lesson.titleUz
+
+            return (
+              <div
+                key={idx}
+                role="listitem"
+                style={{ animationDelay: `${idx * 50}ms` }}
+                className="brilliant-lesson-row-stagger"
+              >
+                <button
+                  type="button"
+                  data-path-node
+                  data-module={activeMod.id}
+                  data-lesson={idx}
+                  aria-current={isStepCurrent ? 'step' : undefined}
+                  aria-pressed={isSelected}
+                  onClick={(e) => {
+                    selectedTrigger.current = e.currentTarget
+                    setSelected({ moduleId: activeMod.id, idx, check: false })
+                    haptics.selection()
+                  }}
+                  className="flex h-[57px] w-full cursor-pointer items-center gap-3 px-1 text-left"
+                >
+                  <BrilliantLessonRowIcon state={rowState} />
+
+                  <span
+                    className={
+                      isHighlighted && !isDone
+                        ? 'min-w-0 flex-1 text-[14px] font-bold leading-snug text-[#0b0b0f]'
+                        : 'min-w-0 flex-1 text-[14px] font-medium leading-snug text-[#6b6b6b]'
+                    }
+                  >
+                    {lessonTitle}
+                  </span>
+
+                  {isDone ? (
+                    <span
+                      className="grid size-[22px] shrink-0 place-items-center rounded-full text-white"
+                      style={{ backgroundColor: theme.checkBg }}
+                    >
+                      <Check size={13} strokeWidth={3.2} />
+                    </span>
+                  ) : (
+                    <span
+                      className="size-[22px] shrink-0 rounded-full"
+                      style={{ backgroundColor: isHighlighted ? '#dddddd' : '#ebebeb' }}
+                    />
+                  )}
+                </button>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Pill 3D Start Button: morphs color with the active module, two diagonal sheen stripes sweep across */}
+        <button
+          type="button"
+          data-testid="brilliant-start-button"
+          onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
+          className="relative mt-2 flex h-[46px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[16px] font-bold transition-[background-color,box-shadow,color] duration-300 active:translate-y-[2px] active:shadow-none"
+          style={{
+            backgroundColor: theme.buttonBg,
+            color: theme.buttonText,
+            boxShadow: `0 4px 0 ${theme.buttonShadow}`,
+          }}
+        >
+          <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full">
+            <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/30" />
+            <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/30" />
+          </span>
+          <span className="relative z-10">Start</span>
+        </button>
+      </section>
+
+      {launch && (
+        <LessonLaunch
+          origin={launch.origin}
+          lang={settings.language}
+          onReveal={() => {
+            if (!canReadLesson(isPremium, launch.mod.id, launch.idx)) { requestPremium(); return }
+            setReader({ mod: launch.mod, idx: launch.idx })
+          }}
+          onFinish={() => setLaunch(null)}
+          onCancel={() => { setLaunch(null); setReader(null) }}
+        />
+      )}
 
       {toast && (
         <div role="status" className="fixed bottom-[calc(5rem+var(--safe-bottom,0px))] left-5 right-5 z-40 flex items-center justify-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.15)] px-4 py-3 text-center text-[13px] font-medium text-pfg shadow-lg">
@@ -509,7 +684,12 @@ export default function Darslik() {
         <LessonScreen
           mod={reader.mod}
           lessonIdx={reader.idx}
-          onClose={() => { setReader(null); setLaunch(null) }}
+          onClose={() => {
+            pendingFocusModId.current = reader.mod.id
+            setModuleId(reader.mod.id)
+            setReader(null)
+            setLaunch(null)
+          }}
           onPremium={requestPremium}
           onDone={(idx) => {
             if (!canReadLesson(useAppStore.getState().tariff === 'premium', reader.mod.id, idx)) { requestPremium(); return }
@@ -524,7 +704,6 @@ export default function Darslik() {
               setReader(null)
               setCompletion({ finished, next: courseDone ? undefined : modules[modules.findIndex((m) => m.id === finished.id) + 1], courseDone })
             }
-            // Dars bilan shug'ullanish ham kunlik faollik — streak yoziladi (kunda 1 marta)
             void useDailyStore.getState().touchActivity(
               userId, todayStr(), useSubjectStore.getState().subjectId,
             )
@@ -532,8 +711,16 @@ export default function Darslik() {
           onPractice={(idx) => practiceLesson(reader.mod, idx)}
         />
       )}
-      {completion && <ModuleComplete completion={completion} lang={settings.language}
-        onContinue={continueModule} onStay={() => setCompletion(null)} />}
+
+      {completion && (
+        <ModuleComplete
+          completion={completion}
+          lang={settings.language}
+          onContinue={continueModule}
+          onStay={() => setCompletion(null)}
+        />
+      )}
+      </div>
     </div>
   )
 }

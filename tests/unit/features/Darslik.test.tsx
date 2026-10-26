@@ -19,8 +19,9 @@ vi.mock('react-router-dom', async (original) => ({
 }))
 
 const uid = 'learning-path-test'
-const pathButtons = (id = 1) => {
-  return within(document.getElementById(`lesson-module-${id}`)!).getAllByRole('button')
+const lessonRowButtons = (id = 1) => {
+  const section = document.getElementById(`lesson-module-${id}`)!
+  return within(within(section).getByRole('list')).getAllByRole('button')
 }
 
 beforeEach(() => {
@@ -44,12 +45,12 @@ function finishFirstModule() {
   fireEvent.click(screen.getByRole('button', { name: 'Modulni yakunlash' }))
 }
 
-describe('Darslik learning path', () => {
+describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
   it('allows the first lesson for free, then asks for Premium instead of opening lesson two', () => {
     useAppStore.setState({ tariff: 'free' })
     render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    fireEvent.click(screen.getByRole('button', { name: 'Boshlash', exact: true }))
+    fireEvent.click(lessonRowButtons()[0])
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('heading', { name: `1-dars. ${lessons[1][0].titleUz}` })).toBeInTheDocument()
     expect(navigate).not.toHaveBeenCalled()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
@@ -62,8 +63,10 @@ describe('Darslik learning path', () => {
     useAppStore.setState({ tariff: 'free' })
     useLessonsStore.setState({ byUser: { [uid]: { [moduleId]: [idx] } } })
     render(<Darslik />)
-    fireEvent.click(pathButtons(moduleId)[idx])
-    fireEvent.click(screen.getByRole('button', { name: 'Premium bilan ochish' }))
+    const tab = screen.getByRole('tab', { name: `LEVEL ${moduleId}` })
+    fireEvent.click(tab)
+    fireEvent.click(lessonRowButtons(moduleId)[idx])
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(navigate).toHaveBeenCalledWith('/premium')
     expect(screen.queryByRole('dialog', { name: 'Dars ochilmoqda' })).not.toBeInTheDocument()
     expect(document.querySelector('.lesson-reader')).not.toBeInTheDocument()
@@ -77,15 +80,6 @@ describe('Darslik learning path', () => {
     expect(document.querySelector('.lesson-reader')).not.toBeInTheDocument()
   })
 
-  it('requires Premium for the module check, including the first module', () => {
-    useAppStore.setState({ tariff: 'free' })
-    render(<Darslik />)
-    fireEvent.click(pathButtons()[lessons[1].length])
-    fireEvent.click(screen.getByRole('button', { name: 'Premium bilan ochish' }))
-    expect(navigate).toHaveBeenCalledWith('/premium')
-    expect(navigate).not.toHaveBeenCalledWith('/test/1', expect.anything())
-  })
-
   it('closes paid reading when the existing entitlement becomes free', () => {
     location.state = { moduleId: 1, lessonIdx: 0 }
     render(<Darslik />)
@@ -97,16 +91,15 @@ describe('Darslik learning path', () => {
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
   })
 
-  it('celebrates a newly finished module and automatically opens the next path', () => {
+  it('celebrates a newly finished module and automatically switches to the next level', () => {
     vi.useFakeTimers()
     finishFirstModule()
     expect(screen.getByRole('dialog')).toHaveAccessibleName('Modul tugallandi!')
     expect(within(screen.getByRole('dialog')).getByText('Chorrahalar')).toBeInTheDocument()
-    expect(document.getElementById('lesson-module-title-2')).not.toHaveFocus()
     act(() => vi.advanceTimersByTime(MODULE_TRANSITION_MS))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
     expect(document.getElementById('lesson-module-title-2')).toHaveFocus()
-    expect(pathButtons(2)[0]).toHaveAttribute('aria-current', 'step')
+    expect(lessonRowButtons(2)[0]).toHaveAttribute('aria-current', 'step')
     expect(useLessonsStore.getState().byUser[uid][1]).toHaveLength(lessons[1].length)
     expect(useLessonsStore.getState().byUser[uid][2]).toBeUndefined()
   })
@@ -126,7 +119,7 @@ describe('Darslik learning path', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Shu modulda qolish' }))
     act(() => vi.advanceTimersByTime(MODULE_TRANSITION_MS * 2))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
-    expect(document.getElementById('lesson-module-title-2')).not.toHaveFocus()
+    expect(document.getElementById('lesson-module-title-2')).not.toBeInTheDocument()
   })
 
   it.each(['gap', 'review'])('does not auto-advance on %s completion', (scenario) => {
@@ -136,7 +129,6 @@ describe('Darslik learning path', () => {
     render(<Darslik />)
     fireEvent.click(screen.getByRole('button', { name: 'Modulni yakunlash' }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
-    expect(document.getElementById('lesson-module-title-2')).not.toHaveFocus()
   })
 
   it('finishes the course without attempting to open a nonexistent module', () => {
@@ -154,43 +146,47 @@ describe('Darslik learning path', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Darslikka qaytish' }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
-  it('shows lessons plus one level check per module, with one global current step', () => {
+
+  it('renders the 1-to-1 Brilliant layout without the old snake path and switches levels via swipe or dots', () => {
     render(<Darslik />)
-    expect(screen.getAllByRole('region')).toHaveLength(modules.length)
-    expect(screen.getAllByRole('list')).toHaveLength(modules.length)
-    expect(screen.getAllByRole('button', { name: 'Joriy darsga' })).toHaveLength(1)
-    const buttons = pathButtons()
-    expect(buttons).toHaveLength(lessons[1].length + 1)
+    expect(screen.getByTestId('brilliant-darslik-screen')).toBeInTheDocument()
+    expect(screen.queryByTestId('brilliant-recommended-badge')).not.toBeInTheDocument()
+    expect(screen.getByTestId('brilliant-level-subtitle')).toHaveTextContent('LEVEL 1')
+    expect(screen.getByTestId('brilliant-hero-1')).toBeInTheDocument()
+
+    const buttons = lessonRowButtons(1)
+    expect(buttons).toHaveLength(lessons[1].length)
     expect(buttons[0]).toHaveAttribute('aria-current', 'step')
-    expect(buttons[0]).toBeEnabled()
-    expect(buttons[1]).toBeEnabled()
-    expect(buttons[2]).toBeEnabled()
-    expect(document.querySelectorAll('[aria-current="step"]')).toHaveLength(1)
-    expect(buttons[2].querySelector('.learning-tile')).toHaveAttribute('data-state', 'unread')
-    fireEvent.click(buttons[2])
-    expect(screen.getByRole('button', { name: 'Shu darsga o‘tish' })).toBeInTheDocument()
-    expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
+
+    // Swipe left on the 3D Hero Stage to go to Level 2
+    const stage = screen.getByTestId('brilliant-swipe-stage')
+    fireEvent.touchStart(stage, { touches: [{ clientX: 250 }] })
+    fireEvent.touchMove(stage, { touches: [{ clientX: 160 }] })
+    fireEvent.touchEnd(stage)
+
+    expect(screen.getByTestId('brilliant-level-subtitle')).toHaveTextContent('LEVEL 2')
+    expect(screen.getByTestId('brilliant-hero-2')).toBeInTheDocument()
+
+    // Click pagination dot for Level 4 to verify RECOMMENDED badge appears
+    fireEvent.click(screen.getByRole('tab', { name: 'LEVEL 4' }))
+    expect(screen.getByTestId('brilliant-level-subtitle')).toHaveTextContent('LEVEL 4')
+    expect(screen.getByTestId('brilliant-recommended-badge')).toHaveTextContent('RECOMMENDED')
   })
 
-  it('opens a lesson, saves reading progress and unlocks the next step', () => {
+  it('opens a lesson via the Start button, saves reading progress and advances the current step', () => {
     render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    expect(screen.getByRole('region', { name: lessons[1][0].titleUz })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Boshlash', exact: true }))
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
     fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
-    expect(pathButtons()[1]).toBeEnabled()
-    expect(pathButtons()[1]).toHaveAttribute('aria-current', 'step')
-    expect(within(document.getElementById('lesson-module-1')!).getByRole('progressbar')).toHaveAttribute('aria-valuenow', '1')
+    expect(lessonRowButtons(1)[1]).toHaveAttribute('aria-current', 'step')
   })
 
   it('opens practice with the curated question IDs without marking practice completed', () => {
     useLessonsStore.setState({ byUser: { [uid]: { 1: [0] } } })
     render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    expect(screen.queryByRole('button', { name: 'Mashqni boshlash' })).not.toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Qayta o‘qish' }))
+    fireEvent.click(lessonRowButtons(1)[0])
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     fireEvent.click(screen.getByRole('button', { name: /Mavzu bo'yicha mashq/ }))
     expect(navigate).toHaveBeenCalledWith('/test/1', {
       state: {
@@ -203,82 +199,22 @@ describe('Darslik learning path', () => {
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
   })
 
-  it('keeps other modules directly available for review on the continuous path', () => {
-    useLessonsStore.setState({ byUser: { [uid]: { 2: [0] } } })
+  it('jumps to a future lesson row when selected without crediting skipped lessons', () => {
     render(<Darslik />)
-    expect(pathButtons(2)).toHaveLength(lessons[2].length + 1)
-    fireEvent.click(pathButtons(2)[0])
-    expect(screen.getByRole('region', { name: lessons[2][0].titleUz })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Qayta o‘qish' })).toBeEnabled()
-    fireEvent.keyDown(document, { key: 'Escape' })
-    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
-    expect(screen.queryByRole('region', { name: lessons[2][0].titleUz })).not.toBeInTheDocument()
-    expect(pathButtons(2)[0]).toHaveFocus()
-  })
-
-  it('switches the single preview between modules without locking page scroll', () => {
-    render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    expect(pathButtons()[0]).toHaveAttribute('aria-pressed', 'true')
-    expect(document.body.style.overflow).not.toBe('hidden')
-    fireEvent.click(pathButtons(2)[0])
-    expect(pathButtons()[0]).toHaveAttribute('aria-pressed', 'false')
-    expect(pathButtons(2)[0]).toHaveAttribute('aria-pressed', 'true')
-    expect(document.querySelectorAll('#lesson-preview')).toHaveLength(1)
-    expect(screen.getByRole('region', { name: lessons[2][0].titleUz })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Shu darsga o‘tish' }))
-    expect(document.getElementById('lesson-preview')).not.toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: `1-dars. ${lessons[2][0].titleUz}` })).toBeInTheDocument()
-  })
-
-  it('jumps to a future lesson without crediting skipped lessons', () => {
-    render(<Darslik />)
-    fireEvent.click(pathButtons()[3])
-    fireEvent.click(screen.getByRole('button', { name: 'Shu darsga o‘tish' }))
+    fireEvent.click(lessonRowButtons(1)[3])
+    expect(lessonRowButtons(1)[3]).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('heading', { name: `4-dars. ${lessons[1][3].titleUz}` })).toBeInTheDocument()
     expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([3])
   })
 
-  it('starts the level check using all unique curated module questions', () => {
-    render(<Darslik />)
-    const check = pathButtons()[lessons[1].length]
-    expect(check.querySelector('[data-check="true"] polygon.learning-orbit')).toBeInTheDocument()
-    fireEvent.click(check)
-    fireEvent.click(screen.getByRole('button', { name: 'Sinovni boshlash' }))
-    const map = lessonMap as Record<string, number[]>
-    const ids = [...new Set(lessons[1].flatMap((_, idx) => map[`1:${idx}`] ?? []))]
-    expect(navigate).toHaveBeenCalledWith('/test/1', {
-      state: {
-        questionIds: ids,
-        mode: 'module',
-        serverSelector: { type: 'module', moduleId: 1 },
-        title: "Yo'l belgilari — Modul sinovi",
-      },
-    })
-    expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
-  })
-
-  it('returns to the current lesson with the floating arrow after browsing ahead', () => {
-    render(<Darslik />)
-    const scroll = vi.fn()
-    pathButtons()[0].scrollIntoView = scroll
-    fireEvent.click(pathButtons()[3])
-    expect(screen.getByRole('button', { name: 'Shu darsga o‘tish' })).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Joriy darsga' }))
-    expect(pathButtons()[0]).toHaveAttribute('aria-pressed', 'true')
-    expect(pathButtons()[0]).toHaveFocus()
-    expect(scroll).toHaveBeenCalledWith({ behavior: 'instant', block: 'center' })
-    expect(screen.getByRole('button', { name: 'Boshlash', exact: true })).toBeInTheDocument()
-  })
-
   it('reveals the reader behind the launch scene before fading the scene away', () => {
     vi.useFakeTimers()
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, noAnimation: false } })
     render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    fireEvent.click(screen.getByRole('button', { name: 'Boshlash', exact: true }))
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('dialog', { name: 'Dars ochilmoqda' })).toBeInTheDocument()
     expect(screen.queryByRole('heading', { name: `1-dars. ${lessons[1][0].titleUz}` })).not.toBeInTheDocument()
     act(() => vi.advanceTimersByTime(LESSON_LAUNCH_REVEAL_MS))
@@ -295,8 +231,7 @@ describe('Darslik learning path', () => {
     vi.useFakeTimers()
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, noAnimation: false } })
     render(<Darslik />)
-    fireEvent.click(pathButtons()[0])
-    fireEvent.click(screen.getByRole('button', { name: 'Boshlash', exact: true }))
+    fireEvent.click(screen.getByTestId('brilliant-start-button'))
     act(() => vi.advanceTimersByTime(elapsed))
     fireEvent.keyDown(document, { key: 'Escape' })
     act(() => vi.advanceTimersByTime(LESSON_LAUNCH_MS))
@@ -306,41 +241,15 @@ describe('Darslik learning path', () => {
     expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
   })
 
-  it('changes selection and dock title on scroll without moving keyboard focus', () => {
-    vi.useFakeTimers()
-    let scrolled = false
-    vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockImplementation(function (this: HTMLElement) {
-      let top = 2000
-      let height = 130
-      if (this.tagName === 'HEADER') { top = 0; height = 60 }
-      if (this.dataset.module === '1') {
-        const idx = Number(this.dataset.lesson)
-        top = scrolled ? idx === 2 ? 280 : -200 : idx === 1 ? 280 : -200
-      }
-      return { top, bottom: top + height, left: 0, right: 320, width: 320, height, x: 0, y: top, toJSON() {} }
-    })
-    render(<Darslik />)
-    const first = pathButtons()[0]
-    first.focus()
-    fireEvent.scroll(window)
-    act(() => vi.advanceTimersByTime(32))
-    expect(pathButtons()[1]).toHaveAttribute('aria-pressed', 'true')
-    expect(screen.getByRole('region', { name: lessons[1][1].titleUz })).toBeInTheDocument()
-    scrolled = true
-    fireEvent.scroll(window)
-    act(() => vi.advanceTimersByTime(32))
-    expect(pathButtons()[2]).toHaveAttribute('aria-pressed', 'true')
-    expect(pathButtons()[1]).toHaveAttribute('aria-pressed', 'false')
-    expect(first).toHaveFocus()
-  })
-
   it('uses Russian labels and handles a completed module without a current step', () => {
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, language: 'ru' } })
     useLessonsStore.setState({ byUser: { [uid]: { 1: lessons[1].map((_, i) => i) } } })
+    location.state = { moduleId: 1, lessonIdx: 0 }
     render(<Darslik />)
+    fireEvent.click(screen.getByRole('button', { name: 'Закрыть' }))
     expect(screen.queryByText('Модуль пройден!')).not.toBeInTheDocument()
-    expect(pathButtons().every((b) => !b.hasAttribute('aria-current'))).toBe(true)
-    expect(pathButtons().every((b) => !(b as HTMLButtonElement).disabled)).toBe(true)
+    expect(lessonRowButtons(1).every((b) => !b.hasAttribute('aria-current'))).toBe(true)
+    expect(lessonRowButtons(1).every((b) => !(b as HTMLButtonElement).disabled)).toBe(true)
   })
 
   it('preserves the dashboard deep link and returns to its module', () => {
