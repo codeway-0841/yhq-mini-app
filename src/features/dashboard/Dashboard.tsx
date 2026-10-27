@@ -1,5 +1,6 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ChevronDown } from 'lucide-react'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useReviewPromptStore } from '../../shared/store/useReviewPromptStore'
@@ -156,10 +157,11 @@ export default function Dashboard() {
               {/* Mobil ko'rinishi (ixcham collapsible) */}
               <div className="lg:hidden">
                 <details className="mb-5 group">
-                  <summary className="mx-4 mb-3 cursor-pointer rounded-xl px-1 py-3 text-[14px] font-semibold text-pmuted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary">
-                    {tt('guideMotivation')}
+                  <summary className="mx-4 mb-3 flex cursor-pointer list-none items-center justify-between rounded-2xl border border-pline/60 bg-pcard/50 px-3.5 py-2.5 text-[14px] font-semibold text-pmuted transition-colors duration-150 hover:bg-pcard hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary select-none touch-manipulation [&::-webkit-details-marker]:hidden">
+                    <span>{tt('guideMotivation')}</span>
+                    <ChevronDown size={17} className="text-pmuted transition-transform duration-200 ease-out group-open:rotate-180" aria-hidden="true" />
                   </summary>
-                  <div className="space-y-4">
+                  <div className="space-y-4 pt-1">
                     <DailyTasksCard />
                     <BossCard />
                     <LeaguePreview

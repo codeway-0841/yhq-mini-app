@@ -51,12 +51,12 @@ const StatButton = memo(function StatButton({
       onPointerUp={cancel}
       onPointerLeave={cancel}
       className={cn(
-        'flex min-w-0 items-center gap-1.5 rounded-xl bg-black/20 backdrop-blur-xs border border-white/10 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
-        'transition-[background-color,border-color] duration-150 ease-out',
+        'group flex min-w-0 items-center gap-1.5 rounded-xl bg-black/20 backdrop-blur-xs border border-white/10 px-2 py-2 text-left shadow-2xs sm:gap-2 sm:px-2.5',
+        'transition-[background-color,border-color,transform] duration-150 ease-out active:scale-95 active:bg-black/35 select-none touch-manipulation',
         '[@media(hover:hover)]:hover:bg-black/30 [@media(hover:hover)]:hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white',
       )}
     >
-      <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85" />
+      <Icon size={19} strokeWidth={1.75} className="shrink-0 text-white/85 transition-transform duration-150 group-active:scale-110" />
       <div className="min-w-0">
         <p className="truncate text-[13px] font-bold leading-tight tabular-nums text-white">{value}</p>
         <p className="truncate text-[12px] font-medium text-white/80">{label}</p>

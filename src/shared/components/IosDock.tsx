@@ -144,21 +144,21 @@ export default function IosDock() {
                   aria-label={tt(item.labelKey)}
                   aria-current={isActive ? 'page' : undefined}
                   title={tt(item.labelKey)}
-                  className={`group relative z-10 flex min-w-0 flex-1 flex-col items-center justify-center rounded-full py-1.5 transition-all duration-150 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
-                    isActive ? 'text-pprimary font-semibold' : 'text-pmuted hover:text-pfg'
+                  className={`group relative z-10 flex min-w-0 flex-1 flex-col items-center justify-center rounded-full py-1.5 select-none touch-manipulation transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
+                    isActive ? 'text-pprimary font-semibold' : 'text-pmuted [@media(hover:hover)]:hover:text-pfg'
                   }`}
                 >
                   <Icon
                     size={23}
                     strokeWidth={isActive ? 2.4 : 1.8}
-                    className={`transition-colors duration-200 ${
-                      isActive ? 'text-pprimary' : 'text-pmuted group-hover:text-pfg'
+                    className={`transition-all duration-200 ${
+                      isActive ? 'text-pprimary scale-105' : 'text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
                     }`}
                   />
 
                   <span
                     className={`mt-1 whitespace-nowrap text-[11px] leading-tight tracking-tight transition-colors duration-200 ${
-                      isActive ? 'font-semibold text-pprimary' : 'font-medium text-pmuted group-hover:text-pfg'
+                      isActive ? 'font-semibold text-pprimary' : 'font-medium text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
                     }`}
                   >
                     {item.shortLabel[lang]}
@@ -175,13 +175,13 @@ export default function IosDock() {
           onClick={() => handleNav(cameraItem)}
           aria-label={cameraItem.shortLabel[lang]}
           title={tt(cameraItem.labelKey)}
-          className="pointer-events-auto group relative flex size-[54px] shrink-0 items-center justify-center rounded-full bg-[rgb(var(--p-card-rgb)/0.92)] p-[3px] shadow-2xl shadow-black/40 backdrop-blur-2xl saturate-150 transition-all duration-200 active:scale-90 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          className="pointer-events-auto group relative flex size-[54px] shrink-0 items-center justify-center rounded-full bg-[rgb(var(--p-card-rgb)/0.92)] p-[3px] shadow-2xl shadow-black/40 backdrop-blur-2xl saturate-150 select-none touch-manipulation transition-all duration-200 active:scale-90 [@media(hover:hover)]:hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
         >
-          <span className="flex size-full items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.18)] text-pprimary dark:bg-[rgb(var(--p-primary-rgb)/0.25)] transition-colors duration-200 group-hover:bg-[rgb(var(--p-primary-rgb)/0.28)]">
+          <span className="flex size-full items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.18)] text-pprimary dark:bg-[rgb(var(--p-primary-rgb)/0.25)] transition-colors duration-200 [@media(hover:hover)]:group-hover:bg-[rgb(var(--p-primary-rgb)/0.28)]">
             <Camera
               size={24}
               strokeWidth={2.2}
-              className="transition-transform duration-200 group-hover:scale-110"
+              className="transition-transform duration-200 [@media(hover:hover)]:group-hover:scale-110"
             />
           </span>
         </button>
