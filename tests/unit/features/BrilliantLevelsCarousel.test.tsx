@@ -27,10 +27,10 @@ describe('BrilliantLevelsCarousel primitives', () => {
     expect(level5.recommended).toBe(true)
   })
 
-  it('renders bespoke 3D hero SVG illustrations for all 5 levels', () => {
+  it('renders bespoke 3D hero illustrations for all 5 levels', () => {
     for (const moduleId of [1, 2, 3, 4, 5]) {
       const { container, unmount } = render(<BrilliantHeroIllustration moduleId={moduleId} />)
-      expect(container.querySelector('svg')).toBeInTheDocument()
+      expect(container.querySelector('img, svg')).toBeInTheDocument()
       unmount()
     }
   })
@@ -38,7 +38,7 @@ describe('BrilliantLevelsCarousel primitives', () => {
   it('renders 3D isometric lesson row icons for done, current, and upcoming states', () => {
     for (const state of ['done', 'current', 'upcoming'] as const) {
       const { container, unmount } = render(<BrilliantLessonRowIcon state={state} />)
-      expect(container.querySelector('svg')).toBeInTheDocument()
+      expect(container.querySelector('img, svg')).toBeInTheDocument()
       unmount()
     }
   })

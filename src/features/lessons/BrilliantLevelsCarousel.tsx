@@ -112,9 +112,37 @@ export function getBrilliantTheme(moduleId: number): BrilliantModuleTheme {
  * - Frame 4: 3D Geometric Mondrian Easel (Blue/Yellow/White)
  * - Frame 5: Purple & Yellow 3D Code Blocks with Play Button & Pointer Hand
  */
-export function BrilliantHeroIllustration({ moduleId }: { moduleId: number }) {
+const HERO_PNGS: Record<number, string> = {
+  1: '/brilliant/hero_scale.png',
+  2: '/brilliant/hero_code.png',
+  3: '/brilliant/hero_gears.png',
+  4: '/brilliant/hero_dice.png',
+  5: '/brilliant/hero_math.png',
+}
+
+export function BrilliantHeroIllustration({
+  moduleId,
+  forceSvg = false,
+}: {
+  moduleId: number
+  forceSvg?: boolean
+}) {
   const uid = useId()
   const variant = ((moduleId - 1) % 5) + 1
+
+  if (!forceSvg && HERO_PNGS[variant]) {
+    return (
+      <div className="relative flex items-center justify-center w-[234px] h-[192px] select-none pointer-events-none">
+        <img
+          src={HERO_PNGS[variant]}
+          alt=""
+          width={234}
+          height={192}
+          className="max-w-full max-h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] select-none pointer-events-none"
+        />
+      </div>
+    )
+  }
 
   if (variant === 1) {
     // Frame 00:00 вЂ” Solving Equations: 3D Blue Balance Scale + Grey Weight + Spheres
@@ -381,69 +409,58 @@ export function BrilliantLessonRowIcon({
   state: 'done' | 'current' | 'upcoming'
   accentColor?: string
 }) {
-  const uid = useId()
-
-  if (state === 'current') {
-    return (
-      <svg viewBox="0 0 54 50" className="w-12 h-11 shrink-0 overflow-visible" aria-hidden="true">
-        <defs>
-          <radialGradient id={`${uid}-halo`} cx="50%" cy="50%" r="50%">
-            <stop offset="60%" stopColor={accentColor} stopOpacity="0.45" />
-            <stop offset="100%" stopColor={accentColor} stopOpacity="0" />
-          </radialGradient>
-        </defs>
-
-        {/* Outer Level-Themed Glowing Halo Ring (as highlighted in DailyDesignChallenge breakdown) */}
-        <ellipse cx="27" cy="36" rx="25" ry="11" fill={`url(#${uid}-halo)`} />
-        <ellipse cx="27" cy="36" rx="23" ry="10" fill="none" stroke={accentColor} strokeWidth="2.2" strokeOpacity="0.85" />
-
-        {/* Isometric Platform Base */}
-        <ellipse cx="27" cy="37" rx="20" ry="8.5" fill="#94a3b8" />
-        <ellipse cx="27" cy="35" rx="20" ry="8.5" fill="#e2e8f0" />
-        <ellipse cx="27" cy="35" rx="15" ry="6.2" fill="#1e293b" />
-        <ellipse cx="27" cy="35" rx="10.5" ry="4" fill="#0f172a" />
-
-        {/* Floating Green 3D Gem / Mascot Head with subtle float */}
-        <g className="transition-transform duration-300">
-          <polygon points="27,5 40,14 36,26 18,26 14,14" fill="#22c55e" />
-          <polygon points="27,5 40,14 27,21 14,14" fill="#4ade80" />
-          <polygon points="14,14 27,21 27,28 18,26" fill="#16a34a" />
-          <polygon points="40,14 27,21 27,28 36,26" fill="#15803d" />
-          {/* Mascot eye / core details */}
-          <rect x="22" y="13" width="10" height="9" rx="2" fill="#0f172a" />
-          <circle cx="27" cy="17.5" r="2.2" fill="#4ade80" />
-        </g>
-      </svg>
-    )
-  }
-
   if (state === 'done') {
     return (
-      <svg viewBox="0 0 54 50" className="w-12 h-11 shrink-0 overflow-visible" aria-hidden="true">
-        {/* 3D Isometric Platform */}
-        <path d="M5 31 V36 A22 9.5 0 0 0 49 36 V31 Z" fill="#9ca3af" />
-        <ellipse cx="27" cy="31" rx="22" ry="9.5" fill="#d1d5db" />
-        {/* Two 3D Grey Pawns / Cones */}
-        <polygon points="22,12 29,28 15,28" fill="#6b7280" />
-        <circle cx="22" cy="11" r="4" fill="#9ca3af" />
-        <polygon points="32,16 38,31 26,31" fill="#4b5563" />
-        <circle cx="32" cy="15" r="3.5" fill="#6b7280" />
-      </svg>
+      <div className="flex h-11 w-12 shrink-0 items-center justify-center">
+        <img
+          src="/brilliant/mascot_done.png"
+          alt=""
+          width={40}
+          height={40}
+          className="size-10 shrink-0 select-none object-contain pointer-events-none drop-shadow-sm"
+        />
+      </div>
     )
   }
 
-  // Upcoming: Flat Hatched Grey Isometric Disc
+  if (state === 'upcoming') {
+    return (
+      <div className="flex h-11 w-12 shrink-0 items-center justify-center">
+        <img
+          src="/brilliant/mascot_upcoming.png"
+          alt=""
+          width={42}
+          height={32}
+          className="h-8 w-11 shrink-0 select-none object-contain pointer-events-none opacity-85"
+        />
+      </div>
+    )
+  }
+
+  // Current level - pick mascot by theme accent color
+  let mascotSrc = '/brilliant/mascot_blue.png'
+  const normalized = accentColor.toLowerCase()
+  if (normalized.includes('8a4cff') || normalized.includes('purple')) {
+    mascotSrc = '/brilliant/mascot_purple.png'
+  } else if (
+    normalized.includes('f6b31f') ||
+    normalized.includes('gold') ||
+    normalized.includes('amber') ||
+    normalized.includes('yellow')
+  ) {
+    mascotSrc = '/brilliant/mascot_gold.png'
+  }
+
   return (
-    <svg viewBox="0 0 54 50" className="w-12 h-11 shrink-0 overflow-visible" aria-hidden="true">
-      <defs>
-        <pattern id={`${uid}-hatch`} width="5" height="5" patternTransform="rotate(35)" patternUnits="userSpaceOnUse">
-          <line x1="0" y1="0" x2="0" y2="5" stroke="#9ca3af" strokeWidth="1.6" opacity="0.45" />
-        </pattern>
-      </defs>
-      <path d="M6 27 V31 A21 9 0 0 0 48 31 V27 Z" fill="#9ca3af" opacity="0.7" />
-      <ellipse cx="27" cy="27" rx="21" ry="9" fill="#e5e7eb" />
-      <ellipse cx="27" cy="27" rx="19" ry="7.8" fill={`url(#${uid}-hatch)`} />
-    </svg>
+    <div className="flex h-11 w-12 shrink-0 items-center justify-center">
+      <img
+        src={mascotSrc}
+        alt=""
+        width={46}
+        height={42}
+        className="h-11 w-12 shrink-0 select-none object-contain pointer-events-none drop-shadow"
+      />
+    </div>
   )
 }
 
