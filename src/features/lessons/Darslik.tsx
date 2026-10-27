@@ -228,6 +228,7 @@ export default function Darslik() {
   const [dragOffset, setDragOffset] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const dragStartX = useRef<number | null>(null)
+  const dragStartTime = useRef<number>(0)
   const dragOffsetRef = useRef(0)
   const selectedTrigger = useRef<HTMLButtonElement | null>(null)
   const pendingFocusModId = useRef<number | null>(null)
@@ -353,9 +354,10 @@ export default function Darslik() {
     }
   }
 
-  // Horizontal touch / pointer swipe handlers on the 3D Hero Stage
+  // Horizontal touch / pointer swipe handlers matching Brilliant Android carousel physics
   const handleSwipeStart = (clientX: number) => {
     dragStartX.current = clientX
+    dragStartTime.current = performance.now()
     dragOffsetRef.current = 0
     setIsDragging(true)
   }
@@ -363,10 +365,10 @@ export default function Darslik() {
   const handleSwipeMove = (clientX: number) => {
     if (dragStartX.current === null) return
     const dx = clientX - dragStartX.current
-    // Rubber-band resistance at the ends
+    // Rubber-band resistance at the ends (0.22 factor)
     const effectiveDx =
       (currentModIdx === 0 && dx > 0) || (currentModIdx === modules.length - 1 && dx < 0)
-        ? dx * 0.28
+        ? dx * 0.22
         : dx
     dragOffsetRef.current = effectiveDx
     setDragOffset(effectiveDx)
@@ -375,13 +377,21 @@ export default function Darslik() {
   const handleSwipeEnd = () => {
     if (dragStartX.current === null) return
     const dx = dragOffsetRef.current
+    const dt = Math.max(16, performance.now() - dragStartTime.current)
+    const velocity = (dx / dt) * 1000 // pixels per second
+
     dragStartX.current = null
     dragOffsetRef.current = 0
     setIsDragging(false)
     setDragOffset(0)
-    if (dx <= -42 && currentModIdx < modules.length - 1) {
+
+    // Velocity-sensitive flick (>320px/s) OR distance drag (>38px)
+    const isFlingLeft = velocity < -320 || dx <= -38
+    const isFlingRight = velocity > 320 || dx >= 38
+
+    if (isFlingLeft && currentModIdx < modules.length - 1) {
       switchToModuleIndex(currentModIdx + 1)
-    } else if (dx >= 42 && currentModIdx > 0) {
+    } else if (isFlingRight && currentModIdx > 0) {
       switchToModuleIndex(currentModIdx - 1)
     }
   }
@@ -481,10 +491,15 @@ export default function Darslik() {
         {prevMod && (
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 transition-transform duration-300 ease-out"
+            className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 select-none"
             style={{
-              transform: `translate3d(${-138 + dragOffset * 0.55}px, -50%, 0) scale(0.62)`,
-              opacity: dragOffset > 0 ? Math.min(0.85, 0.35 + dragOffset / 220) : 0,
+              transform: `translate3d(${-146 + dragOffset * 0.65}px, -50%, 0) scale(${
+                0.62 + (dragOffset > 0 ? Math.min(0.38, (dragOffset / 200) * 0.38) : 0)
+              })`,
+              opacity: dragOffset > 0
+                ? Math.min(1, 0.45 + dragOffset / 180)
+                : 0.45,
+              transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
             }}
           >
             <BrilliantHeroIllustration moduleId={prevMod.id} />
@@ -498,9 +513,12 @@ export default function Darslik() {
           className={swipeDir === 'right' ? 'brilliant-hero-enter-right' : 'brilliant-hero-enter-left'}
           style={{
             transform: dragOffset !== 0
-              ? `translate3d(${dragOffset}px, 0, 0) scale(${1 - Math.min(0.14, Math.abs(dragOffset) / 800)})`
+              ? `translate3d(${dragOffset}px, 0, 0) scale(${1 - Math.min(0.16, Math.abs(dragOffset) / 600)})`
               : undefined,
-            transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+            opacity: dragOffset !== 0
+              ? 1 - Math.min(0.35, Math.abs(dragOffset) / 400)
+              : 1,
+            transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
           }}
         >
           <BrilliantHeroIllustration moduleId={activeMod.id} />
@@ -510,10 +528,15 @@ export default function Darslik() {
         {nextMod && (
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 transition-transform duration-300 ease-out"
+            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none"
             style={{
-              transform: `translate3d(${138 + dragOffset * 0.55}px, -50%, 0) scale(0.62)`,
-              opacity: dragOffset < 0 ? Math.min(0.85, 0.35 + Math.abs(dragOffset) / 220) : 0,
+              transform: `translate3d(${146 + dragOffset * 0.65}px, -50%, 0) scale(${
+                0.62 + (dragOffset < 0 ? Math.min(0.38, (Math.abs(dragOffset) / 200) * 0.38) : 0)
+              })`,
+              opacity: dragOffset < 0
+                ? Math.min(1, 0.45 + Math.abs(dragOffset) / 180)
+                : 0.45,
+              transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
             }}
           >
             <BrilliantHeroIllustration moduleId={nextMod.id} />
