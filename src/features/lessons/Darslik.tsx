@@ -582,11 +582,11 @@ export default function Darslik() {
           </div>
         </div>
 
-        {/* Bottom Group: Centered Pagination Dots (close to start div line) + Rounded Card */}
+        {/* Bottom Group: Centered Pagination Dots + Rounded Card */}
         <div className="mt-auto shrink-0 flex flex-col w-full">
-          {/* 4. Centered Pagination Dots (docked directly above Start card line) */}
+          {/* 4. Centered Pagination Dots (sal teparoq, start karta ustida nafas bilan) */}
           <div
-            className="mb-2.5 flex items-center justify-center gap-2.5"
+            className="mb-[18px] flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
