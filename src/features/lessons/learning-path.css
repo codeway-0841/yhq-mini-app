@@ -599,59 +599,9 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
   animation: brilliant-start-sheen 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-/* Koji Mascot: 60fps breathing float matching Brilliant Android live app */
-@keyframes brilliant-koji-float {
-  0%, 100% {
-    transform: translateY(0px) scale(1);
-  }
-  50% {
-    transform: translateY(-4px) scale(1.025);
-  }
-}
-
-.brilliant-koji-animated {
-  animation: brilliant-koji-float 2.4s ease-in-out infinite;
-  will-change: transform;
-}
-
-/* Pulsing ambient aura under the portal ring */
-@keyframes brilliant-portal-glow {
-  0%, 100% {
-    opacity: 0.35;
-    transform: scale(0.92);
-  }
-  50% {
-    opacity: 0.85;
-    transform: scale(1.1);
-  }
-}
-
-.brilliant-portal-glow {
-  animation: brilliant-portal-glow 2.4s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-/* Hero 3D illustration continuous subtle levitation */
-@keyframes brilliant-hero-float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-5px) rotate(0.4deg);
-  }
-}
-
-.brilliant-hero-floating {
-  animation: brilliant-hero-float 3.4s ease-in-out infinite;
-  will-change: transform;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .brilliant-start-sheen,
-  .brilliant-koji-animated,
-  .brilliant-portal-glow,
-  .brilliant-hero-floating {
+  .brilliant-start-sheen {
     animation: none;
-    transform: none;
+    transform: translateX(0);
   }
 }
