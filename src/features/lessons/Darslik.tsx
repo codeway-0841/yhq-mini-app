@@ -288,7 +288,7 @@ export default function Darslik() {
   // The card shows a two-row window (previous + current lesson), as in the video.
   useEffect(() => {
     const list = listRef.current
-    if (list) list.scrollTop = Math.max(0, activeLessonIdx - 1) * 57
+    if (list) list.scrollTop = Math.max(0, activeLessonIdx - 1) * 68
   }, [activeMod.id, activeLessonIdx])
 
   const practiceLesson = (mod: Mod, lessonIdx: number) => {
@@ -442,7 +442,7 @@ export default function Darslik() {
       </div>
 
       {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
-      <div className="flex flex-col items-center text-center px-4 mt-1">
+      <div className="flex flex-col items-center text-center px-4 mt-3">
         <h1
           id={`lesson-module-title-${activeMod.id}`}
           tabIndex={-1}
@@ -472,7 +472,7 @@ export default function Darslik() {
         </div>
       </div>
 
-      {/* 3. Center hero illustration swipe stage */}
+      {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
       <div
         data-testid="brilliant-swipe-stage"
         onPointerDown={(e) => {
@@ -496,15 +496,15 @@ export default function Darslik() {
         onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
         onTouchEnd={handleSwipeEnd}
         onTouchCancel={handleSwipeEnd}
-        className="relative mt-2 flex h-[210px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
+        className="relative mt-4 flex h-[196px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
       >
-        {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager */}
+        {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 240px pitch */}
         {modules.map((m, i) => {
-          const offset = (i - currentModIdx) * 230 + dragOffset
+          const offset = (i - currentModIdx) * 240 + dragOffset
           const dist = Math.abs(offset)
-          const scale = Math.max(0.62, 1 - (dist / 230) * 0.38)
-          const opacity = Math.max(0, 1 - (dist / 230) * 0.55)
-          const isFar = dist > 460
+          const scale = Math.max(0.64, 1 - (dist / 240) * 0.36)
+          const opacity = Math.max(0, 1 - (dist / 240) * 0.55)
+          const isFar = dist > 480
 
           return (
             <div
@@ -552,7 +552,7 @@ export default function Darslik() {
 
       {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
       <div
-        className="mt-3 mb-2 flex items-center justify-center gap-2"
+        className="mt-4 mb-3 flex items-center justify-center gap-2.5"
         role="tablist"
         aria-label="Darajalar"
       >
@@ -566,13 +566,17 @@ export default function Darslik() {
               aria-selected={isActive}
               aria-label={`LEVEL ${m.id}`}
               onClick={() => switchToModuleIndex(idx)}
-              className={`rounded-full cursor-pointer transition-all duration-300 ${
-                isActive ? 'size-2' : 'size-1.5'
-              }`}
-              style={{
-                backgroundColor: isActive ? theme.dotColor : '#d1d5db',
-              }}
-            />
+              className="p-1 cursor-pointer flex items-center justify-center"
+            >
+              <span
+                className={`block rounded-full transition-all duration-300 ${
+                  isActive ? 'size-2' : 'size-1.5'
+                }`}
+                style={{
+                  backgroundColor: isActive ? theme.dotColor : '#d1d5db',
+                }}
+              />
+            </button>
           )
         })}
       </div>
@@ -581,13 +585,13 @@ export default function Darslik() {
       <section
         id={`lesson-module-${activeMod.id}`}
         aria-labelledby={`lesson-module-title-${activeMod.id}`}
-        className="mt-4 rounded-[28px] border border-[#e5e7eb] bg-white p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+        className="mt-2 rounded-[28px] border border-[#e5e7eb] bg-white p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
       >
         <div
           key={activeMod.id}
           ref={listRef}
           role="list"
-          className="h-[126px] overflow-y-auto no-scrollbar scroll-smooth space-y-1"
+          className="h-[136px] overflow-y-auto no-scrollbar scroll-smooth space-y-2"
         >
           {activeLessons.map((lesson, idx) => {
             const isDone = activeDoneList.includes(idx)
@@ -616,7 +620,7 @@ export default function Darslik() {
                     setSelected({ moduleId: activeMod.id, idx, check: false })
                     haptics.selection()
                   }}
-                  className="flex h-[58px] w-full cursor-pointer items-center gap-3 px-1 text-left rounded-2xl hover:bg-slate-50 transition-colors"
+                  className="flex h-[60px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 

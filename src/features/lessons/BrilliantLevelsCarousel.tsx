@@ -123,21 +123,21 @@ const HERO_PNGS: Record<number, string> = {
 export function BrilliantHeroIllustration({
   moduleId,
   forceSvg = false,
+  className = 'w-[204px] h-[168px]',
 }: {
   moduleId: number
   forceSvg?: boolean
+  className?: string
 }) {
   const uid = useId()
   const variant = ((moduleId - 1) % 5) + 1
 
   if (!forceSvg && HERO_PNGS[variant]) {
     return (
-      <div className="relative flex items-center justify-center w-[234px] h-[192px] select-none pointer-events-none">
+      <div className={`relative flex items-center justify-center ${className} select-none pointer-events-none`}>
         <img
           src={HERO_PNGS[variant]}
           alt=""
-          width={234}
-          height={192}
           className="max-w-full max-h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] select-none pointer-events-none"
         />
       </div>
@@ -145,9 +145,9 @@ export function BrilliantHeroIllustration({
   }
 
   if (variant === 1) {
-    // Frame 00:00 вЂ” Solving Equations: 3D Blue Balance Scale + Grey Weight + Spheres
+    // Frame 00:00 — Solving Equations: 3D Blue Balance Scale + Grey Weight + Spheres
     return (
-      <svg viewBox="0 0 220 175" className="w-[234px] h-[192px] overflow-visible select-none" aria-hidden="true">
+      <svg viewBox="0 0 220 175" className={`${className} overflow-visible select-none`} aria-hidden="true">
         <defs>
           <linearGradient id={`${uid}-scale-blue`} x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#3b82f6" />
@@ -205,9 +205,9 @@ export function BrilliantHeroIllustration({
   }
 
   if (variant === 2) {
-    // Frame 00:01 вЂ” Science Puzzles: Golden 3D Jigsaw Piece + Glowing 3D Lightbulb
+    // Frame 00:01 — Science Puzzles: Golden 3D Jigsaw Piece + Glowing 3D Lightbulb
     return (
-      <svg viewBox="0 0 220 175" className="w-[234px] h-[192px] overflow-visible select-none" aria-hidden="true">
+      <svg viewBox="0 0 220 175" className={`${className} overflow-visible select-none`} aria-hidden="true">
         <defs>
           <linearGradient id={`${uid}-gold-front`} x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stopColor="#fde047" />
@@ -267,9 +267,9 @@ export function BrilliantHeroIllustration({
   }
 
   if (variant === 3) {
-    // Frame 00:02 вЂ” Logic: Blue 3D Magnifying Glass with Checkmark + Golden 3D Cube with X
+    // Frame 00:02 — Logic: Blue 3D Magnifying Glass with Checkmark + Golden 3D Cube with X
     return (
-      <svg viewBox="0 0 220 175" className="w-[234px] h-[192px] overflow-visible select-none" aria-hidden="true">
+      <svg viewBox="0 0 220 175" className={`${className} overflow-visible select-none`} aria-hidden="true">
         {/* Golden 3D Cube on Right */}
         <g transform="translate(108, 52)">
           {/* Top Face */}
@@ -302,9 +302,9 @@ export function BrilliantHeroIllustration({
   }
 
   if (variant === 4) {
-    // Frame 00:03 вЂ” Mathematical Thinking: 3D Geometric Mondrian Board on Easel
+    // Frame 00:03 — Mathematical Thinking: 3D Geometric Mondrian Board on Easel
     return (
-      <svg viewBox="0 0 220 175" className="w-[234px] h-[192px] overflow-visible select-none" aria-hidden="true">
+      <svg viewBox="0 0 220 175" className={`${className} overflow-visible select-none`} aria-hidden="true">
         {/* Easel Wooden Legs & Top Clamp */}
         <rect x="103" y="12" width="14" height="12" rx="2" fill="#d97706" />
         <rect x="97" y="17" width="26" height="6" rx="2" fill="#92400e" />
@@ -339,9 +339,9 @@ export function BrilliantHeroIllustration({
     )
   }
 
-  // Frame 00:04 вЂ” Thinking in Code: Purple & Yellow 3D Code Blocks + Play Button + Hand
+  // Frame 00:04 — Thinking in Code: Purple & Yellow 3D Code Blocks + Play Button + Hand
   return (
-    <svg viewBox="0 0 220 175" className="w-[234px] h-[192px] overflow-visible select-none" aria-hidden="true">
+    <svg viewBox="0 0 220 175" className={`${className} overflow-visible select-none`} aria-hidden="true">
       {/* Top Golden Repeat/Loop Bracket Block */}
       <g transform="translate(46, 22)">
         <path
