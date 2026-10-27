@@ -530,6 +530,13 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
   }
 }
 
+/* Brilliant Darslik full-bleed pure white canvas — eliminates grey/dark top/bottom margins */
+.route-page[data-route-path="/darslik"],
+[data-app-shell]:has(.route-page[data-route-path="/darslik"]) {
+  background-color: #ffffff !important;
+  padding-bottom: 0 !important;
+}
+
 @keyframes brilliant-row-fade-in {
   from {
     opacity: 0;

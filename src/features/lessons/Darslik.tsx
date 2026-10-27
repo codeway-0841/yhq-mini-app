@@ -12,7 +12,7 @@ import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { openTelegramLink } from '../../platform/telegram'
+import { getTelegramWebApp, openTelegramLink, syncTelegramTheme } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
 import { type PathSelection } from './LearningPath'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
@@ -285,6 +285,28 @@ export default function Darslik() {
     }
   }, [activeMod.id, reader])
 
+  // Brilliant Darslik immersive pure white canvas: sync Telegram header & document background
+  useEffect(() => {
+    const tg = getTelegramWebApp()
+    const metaTheme = document.querySelector('meta[name="theme-color"]')
+    const prevMeta = metaTheme?.getAttribute('content')
+
+    try {
+      tg?.setHeaderColor?.('#ffffff')
+      tg?.setBackgroundColor?.('#ffffff')
+    } catch {}
+    if (metaTheme) metaTheme.setAttribute('content', '#ffffff')
+    document.documentElement.style.backgroundColor = '#ffffff'
+    document.body.style.backgroundColor = '#ffffff'
+
+    return () => {
+      syncTelegramTheme(settings.theme === 'dark')
+      if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
+      document.documentElement.style.backgroundColor = ''
+      document.body.style.backgroundColor = ''
+    }
+  }, [settings.theme])
+
   // The card shows a two-row window (previous + current lesson), as in the video.
   useEffect(() => {
     const list = listRef.current
@@ -396,197 +418,203 @@ export default function Darslik() {
   const activeTitle = ru ? activeMod.titleRu : activeMod.title
 
   return (
-    <div className="flex-1 w-full min-h-full bg-white flex flex-col items-center">
+    <div className="flex-1 w-full min-h-[100dvh] bg-white flex flex-col items-center">
       <div
         data-testid="brilliant-darslik-screen"
-        className="w-full bg-white text-[#0b0b0f] flex flex-col px-3.5 pt-3 pb-6 mx-auto max-w-[430px] select-none"
+        className="w-full flex-1 min-h-[100dvh] bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-3 pb-[max(1.25rem,env(safe-area-inset-bottom))] mx-auto max-w-[430px] select-none"
       >
-      {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
-      <div className="flex items-center justify-between">
-        <button
-          type="button"
-          onClick={() => goBack(navigate)}
-          aria-label={tt('darslikBack')}
-          className="inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5 transition-transform active:scale-95"
-        >
-          <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
-            {Math.max(1, totalDone)}
-          </span>
-          {/* Golden key icon */}
-          <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
-            <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
-            <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
-            <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
-            <circle cx="8" cy="17" r="2" fill="#fff" />
-          </svg>
-        </button>
+        {/* Top: Status bar + Header */}
+        <div className="flex flex-col shrink-0">
+          {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
+          <div className="flex items-center justify-between">
+            <button
+              type="button"
+              onClick={() => goBack(navigate)}
+              aria-label={tt('darslikBack')}
+              className="inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5 transition-transform active:scale-95"
+            >
+              <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+                {Math.max(1, totalDone)}
+              </span>
+              {/* Golden key icon */}
+              <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
+                <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
+                <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
+                <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
+                <circle cx="8" cy="17" r="2" fill="#fff" />
+              </svg>
+            </button>
 
-        <div
-          data-testid="brilliant-streak-pill"
-          className="inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5"
-        >
-          {streak > 0 && (
-            <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
-              {streak}
-            </span>
-          )}
-          {/* Lightning icon: lime when the streak is alive, faint outline at 0 */}
-          <svg viewBox="0 0 18 22" className="size-4 shrink-0" aria-hidden="true">
-            {streak > 0 ? (
-              <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="#d4e82a" stroke="#b9cf1c" strokeWidth="1.1" strokeLinejoin="round" />
-            ) : (
-              <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="none" stroke="#dddddd" strokeWidth="1.3" strokeLinejoin="round" />
-            )}
-          </svg>
-        </div>
-      </div>
+            <div
+              data-testid="brilliant-streak-pill"
+              className="inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5"
+            >
+              {streak > 0 && (
+                <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+                  {streak}
+                </span>
+              )}
+              {/* Lightning icon: lime when the streak is alive, faint outline at 0 */}
+              <svg viewBox="0 0 18 22" className="size-4 shrink-0" aria-hidden="true">
+                {streak > 0 ? (
+                  <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="#d4e82a" stroke="#b9cf1c" strokeWidth="1.1" strokeLinejoin="round" />
+                ) : (
+                  <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="none" stroke="#dddddd" strokeWidth="1.3" strokeLinejoin="round" />
+                )}
+              </svg>
+            </div>
+          </div>
 
-      {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
-      <div className="flex flex-col items-center text-center px-4 mt-3">
-        <h1
-          id={`lesson-module-title-${activeMod.id}`}
-          tabIndex={-1}
-          className="font-display text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
-        >
-          {activeTitle}
-        </h1>
+          {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
+          <div className="flex flex-col items-center text-center px-4 mt-3">
+            <h1
+              id={`lesson-module-title-${activeMod.id}`}
+              tabIndex={-1}
+              className="font-display text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
+            >
+              {activeTitle}
+            </h1>
 
-        <div className="mt-2 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
-          <span
-            data-testid="brilliant-level-subtitle"
-            style={{ color: theme.accent }}
-          >
-            LEVEL {activeMod.id}
-          </span>
-          {theme.recommended && (
-            <>
-              <span className="opacity-40" style={{ color: theme.accent }}>·</span>
+            <div className="mt-2 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
               <span
-                data-testid="brilliant-recommended-badge"
+                data-testid="brilliant-level-subtitle"
                 style={{ color: theme.accent }}
               >
-                RECOMMENDED
+                LEVEL {activeMod.id}
               </span>
-            </>
-          )}
-        </div>
-      </div>
-
-      {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
-      <div
-        data-testid="brilliant-swipe-stage"
-        onPointerDown={(e) => {
-          if (e.pointerType === 'touch') return
-          ;(e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId)
-          handleSwipeStart(e.clientX)
-        }}
-        onPointerMove={(e) => {
-          if (e.pointerType === 'touch') return
-          handleSwipeMove(e.clientX)
-        }}
-        onPointerUp={(e) => {
-          if (e.pointerType === 'touch') return
-          handleSwipeEnd()
-        }}
-        onPointerCancel={(e) => {
-          if (e.pointerType === 'touch') return
-          handleSwipeEnd()
-        }}
-        onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
-        onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
-        onTouchEnd={handleSwipeEnd}
-        onTouchCancel={handleSwipeEnd}
-        className="relative mt-4 flex h-[196px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
-      >
-        {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 240px pitch */}
-        {modules.map((m, i) => {
-          const offset = (i - currentModIdx) * 240 + dragOffset
-          const dist = Math.abs(offset)
-          const scale = Math.max(0.64, 1 - (dist / 240) * 0.36)
-          const opacity = Math.max(0, 1 - (dist / 240) * 0.55)
-          const isFar = dist > 480
-
-          return (
-            <div
-              key={m.id}
-              data-testid={`brilliant-hero-${m.id}`}
-              aria-hidden={i !== currentModIdx}
-              className="absolute pointer-events-none select-none flex items-center justify-center"
-              style={{
-                transform: `translate3d(${offset}px, 0, 0) scale(${scale})`,
-                opacity: isFar ? 0 : opacity,
-                zIndex: isFar ? 0 : 10 - Math.min(9, Math.round(dist / 25)),
-                visibility: isFar ? 'hidden' : 'visible',
-                transition: isDragging
-                  ? 'none'
-                  : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
-              }}
-            >
-              <BrilliantHeroIllustration moduleId={m.id} />
+              {theme.recommended && (
+                <>
+                  <span className="opacity-40" style={{ color: theme.accent }}>·</span>
+                  <span
+                    data-testid="brilliant-recommended-badge"
+                    style={{ color: theme.accent }}
+                  >
+                    RECOMMENDED
+                  </span>
+                </>
+              )}
             </div>
-          )
-        })}
+          </div>
+        </div>
 
-        {/* Subtle Left / Right Edge Chevrons */}
-        {prevMod && (
-          <button
-            type="button"
-            aria-label="Oldingi daraja"
-            onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx - 1) }}
-            className="absolute left-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+        {/* Center: 3D Hero Carousel Track + Pagination Dots (Floating vertically in the middle) */}
+        <div className="my-auto flex flex-col items-center justify-center py-2 shrink-0">
+          {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
+          <div
+            data-testid="brilliant-swipe-stage"
+            onPointerDown={(e) => {
+              if (e.pointerType === 'touch') return
+              ;(e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId)
+              handleSwipeStart(e.clientX)
+            }}
+            onPointerMove={(e) => {
+              if (e.pointerType === 'touch') return
+              handleSwipeMove(e.clientX)
+            }}
+            onPointerUp={(e) => {
+              if (e.pointerType === 'touch') return
+              handleSwipeEnd()
+            }}
+            onPointerCancel={(e) => {
+              if (e.pointerType === 'touch') return
+              handleSwipeEnd()
+            }}
+            onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
+            onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
+            onTouchEnd={handleSwipeEnd}
+            onTouchCancel={handleSwipeEnd}
+            className="relative mt-2 flex h-[196px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
           >
-            <ChevronLeft size={14} strokeWidth={2.25} />
-          </button>
-        )}
-        {nextMod && (
-          <button
-            type="button"
-            aria-label="Keyingi daraja"
-            onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx + 1) }}
-            className="absolute right-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 240px pitch */}
+            {modules.map((m, i) => {
+              const offset = (i - currentModIdx) * 240 + dragOffset
+              const dist = Math.abs(offset)
+              const scale = Math.max(0.64, 1 - (dist / 240) * 0.36)
+              const opacity = Math.max(0, 1 - (dist / 240) * 0.55)
+              const isFar = dist > 480
+
+              return (
+                <div
+                  key={m.id}
+                  data-testid={`brilliant-hero-${m.id}`}
+                  aria-hidden={i !== currentModIdx}
+                  className="absolute pointer-events-none select-none flex items-center justify-center"
+                  style={{
+                    transform: `translate3d(${offset}px, 0, 0) scale(${scale})`,
+                    opacity: isFar ? 0 : opacity,
+                    zIndex: isFar ? 0 : 10 - Math.min(9, Math.round(dist / 25)),
+                    visibility: isFar ? 'hidden' : 'visible',
+                    transition: isDragging
+                      ? 'none'
+                      : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+                  }}
+                >
+                  <BrilliantHeroIllustration moduleId={m.id} />
+                </div>
+              )
+            })}
+
+            {/* Subtle Left / Right Edge Chevrons */}
+            {prevMod && (
+              <button
+                type="button"
+                aria-label="Oldingi daraja"
+                onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx - 1) }}
+                className="absolute left-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+              >
+                <ChevronLeft size={14} strokeWidth={2.25} />
+              </button>
+            )}
+            {nextMod && (
+              <button
+                type="button"
+                aria-label="Keyingi daraja"
+                onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx + 1) }}
+                className="absolute right-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+              >
+                <ChevronRight size={14} strokeWidth={2.25} />
+              </button>
+            )}
+          </div>
+
+          {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
+          <div
+            className="mt-4 flex items-center justify-center gap-2.5"
+            role="tablist"
+            aria-label="Darajalar"
           >
-            <ChevronRight size={14} strokeWidth={2.25} />
-          </button>
-        )}
-      </div>
+            {modules.map((m, idx) => {
+              const isActive = idx === currentModIdx
+              return (
+                <button
+                  key={m.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={isActive}
+                  aria-label={`LEVEL ${m.id}`}
+                  onClick={() => switchToModuleIndex(idx)}
+                  className="p-1 cursor-pointer flex items-center justify-center"
+                >
+                  <span
+                    className={`block rounded-full transition-all duration-300 ${
+                      isActive ? 'size-2' : 'size-1.5'
+                    }`}
+                    style={{
+                      backgroundColor: isActive ? theme.dotColor : '#d1d5db',
+                    }}
+                  />
+                </button>
+              )
+            })}
+          </div>
+        </div>
 
-      {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
-      <div
-        className="mt-4 mb-3 flex items-center justify-center gap-2.5"
-        role="tablist"
-        aria-label="Darajalar"
-      >
-        {modules.map((m, idx) => {
-          const isActive = idx === currentModIdx
-          return (
-            <button
-              key={m.id}
-              type="button"
-              role="tab"
-              aria-selected={isActive}
-              aria-label={`LEVEL ${m.id}`}
-              onClick={() => switchToModuleIndex(idx)}
-              className="p-1 cursor-pointer flex items-center justify-center"
-            >
-              <span
-                className={`block rounded-full transition-all duration-300 ${
-                  isActive ? 'size-2' : 'size-1.5'
-                }`}
-                style={{
-                  backgroundColor: isActive ? theme.dotColor : '#d1d5db',
-                }}
-              />
-            </button>
-          )
-        })}
-      </div>
-
-      {/* 5. Bottom Rounded Card Container: Staggered Lesson Rows + Full-Width 56px Pill Start Button */}
-      <section
-        id={`lesson-module-${activeMod.id}`}
-        aria-labelledby={`lesson-module-title-${activeMod.id}`}
-        className="mt-4 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-5 pb-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
-      >
+        {/* Bottom: Rounded Card Container (Pinned to the bottom, thumb-reachable Start button) */}
+        <section
+          id={`lesson-module-${activeMod.id}`}
+          aria-labelledby={`lesson-module-title-${activeMod.id}`}
+          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-5 pb-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+        >
         <div
           key={activeMod.id}
           ref={listRef}
