@@ -127,7 +127,12 @@ export default function WonderNotesDrawer({ course, activeLesson }: WonderNotesD
   }
 
   return (
-    <div className="fixed inset-y-0 right-0 top-[var(--safe-top,0px)] z-[60] w-full sm:w-[420px] bg-[#FFFDF8] dark:bg-[#1E1512] border-l border-stone-200/90 dark:border-stone-800 shadow-2xl flex flex-col font-sans select-none animate-in slide-in-from-right-4 duration-200">
+    <>
+      <div
+        className="fixed inset-0 z-[59] bg-black/40 backdrop-blur-xs animate-in fade-in duration-200"
+        onClick={() => setNotesDrawerOpen(false)}
+      />
+      <div className="fixed inset-y-0 right-0 top-[var(--safe-top,0px)] z-[60] w-full sm:w-[420px] bg-[#FFFDF8] dark:bg-[#1E1512] border-l border-stone-200/90 dark:border-stone-800 shadow-2xl flex flex-col font-sans select-none animate-in slide-in-from-right duration-300 ease-out">
       {/* Header (1:1 with authentic Wondering Notes Drawer) */}
       <div className="p-4 pt-3 border-b border-stone-200/80 dark:border-stone-800 shrink-0 bg-[#FBF9F4] dark:bg-[#18110F]">
         <ModalHeaderRow
@@ -341,6 +346,7 @@ export default function WonderNotesDrawer({ course, activeLesson }: WonderNotesD
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   )
 }

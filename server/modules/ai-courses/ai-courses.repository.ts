@@ -19,6 +19,7 @@ import {
   AI_COURSE_COINS_PER_LESSON,
   AI_COURSE_LEDGER_REASON,
   aiCourseLedgerRef,
+  masteredCourseLessonIds,
   type AiCourseAnswers,
   type AiCourseCreateInput,
   type AiCourseGrading,
@@ -139,7 +140,8 @@ export const aiCoursesRepository = {
     const rows = await executeRows<Record<string, unknown>>(sql`
       SELECT c.id, c.user_id, c.title, c.topic, c.input_kind, c.input_ref,
              c.lesson_length, c.language, c.payload, c.created_at,
-             COUNT(p.id)::int AS completed_lessons
+             COALESCE(jsonb_agg(jsonb_build_object('lessonId', p.lesson_id, 'answers', p.answers))
+               FILTER (WHERE p.id IS NOT NULL), '[]'::jsonb) AS attempts
       FROM ai_courses c
       LEFT JOIN ai_course_progress p
         ON p.course_id = c.id AND p.user_id = ${userId}
@@ -148,7 +150,9 @@ export const aiCoursesRepository = {
       ORDER BY c.id DESC
       LIMIT ${limit}
     `)
-    return rows.map((r) => ({ ...mapCourse(r), completedLessons: Number(r.completed_lessons ?? 0) }))
+    return rows.map((r) => ({ ...mapCourse(r), completedLessons: masteredCourseLessonIds(
+      r.payload as AiCoursePayload, r.attempts as Array<{ lessonId: string; answers: AiCourseAnswers }>,
+    ).length }))
   },
   async getById(id: number): Promise<AiCourseRow | null> {
     const rows = await executeRows<Record<string, unknown>>(sql`
@@ -209,13 +213,14 @@ export const aiCoursesRepository = {
     courseId: number; lessonId: string; userId: string
     answers: AiCourseAnswers; grading: AiCourseGrading; clientToken: string
   }): Promise<
-    | { status: 'ok'; balance: number }
+    | { status: 'ok'; balance: number; coinsAwarded: number }
     | { status: 'already_completed' }
   > {
+    if (input.grading.passed !== true) throw new Error('LESSON_NOT_PASSED')
     const coins = AI_COURSE_COINS_PER_LESSON
     const refId = aiCourseLedgerRef(input.courseId, input.lessonId, input.userId)
     const rows = await executeRows<{
-      inserted: boolean; balance: number | null; current_balance: number | null
+      inserted: boolean; balance: number | null; current_balance: number | null; coins_awarded: number
     }>(sql`
       WITH progress AS (
         INSERT INTO ai_course_progress
@@ -226,31 +231,37 @@ export const aiCoursesRepository = {
           ${input.grading.correctCount}::int, ${input.grading.totalCount}::int,
           ${coins}::int, ${input.clientToken}
         )
+        ON CONFLICT (course_id, lesson_id, user_id) DO UPDATE SET
+          answers = EXCLUDED.answers, grading = EXCLUDED.grading,
+          score_correct = EXCLUDED.score_correct, score_total = EXCLUDED.score_total,
+          client_token = EXCLUDED.client_token, completed_at = now()
+        WHERE ai_course_progress.grading->>'passed' IS DISTINCT FROM 'true'
+        RETURNING id
+      ), ledger AS (
+        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
+        SELECT ${input.userId}, ${coins}::int, ${AI_COURSE_LEDGER_REASON}, ${refId}
+        WHERE EXISTS (SELECT 1 FROM progress)
+          AND EXISTS (SELECT 1 FROM users WHERE id = ${input.userId})
         ON CONFLICT DO NOTHING
         RETURNING id
       ), award AS (
         INSERT INTO user_coins (user_id, balance, updated_at)
         SELECT ${input.userId}, ${coins}::int, now()
-        WHERE EXISTS (SELECT 1 FROM progress) AND ${coins}::int > 0
+        WHERE EXISTS (SELECT 1 FROM ledger) AND ${coins}::int > 0
           AND EXISTS (SELECT 1 FROM users WHERE id = ${input.userId})
         ON CONFLICT (user_id) DO UPDATE SET
           balance = user_coins.balance + ${coins}::int,
           updated_at = now()
         RETURNING balance
-      ), ledger AS (
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${input.userId}, ${coins}::int, ${AI_COURSE_LEDGER_REASON}, ${refId}
-        WHERE EXISTS (SELECT 1 FROM award)
-        ON CONFLICT DO NOTHING
-        RETURNING id
       )
       SELECT
         EXISTS (SELECT 1 FROM progress) AS inserted,
+        CASE WHEN EXISTS (SELECT 1 FROM ledger) THEN ${coins}::int ELSE 0 END AS coins_awarded,
         (SELECT balance::int FROM award) AS balance,
         (SELECT balance::int FROM user_coins WHERE user_id = ${input.userId}) AS current_balance
     `)
     const row = rows[0]
     if (!row?.inserted) return { status: 'already_completed' }
-    return { status: 'ok', balance: Number(row.balance ?? row.current_balance ?? 0) }
+    return { status: 'ok', balance: Number(row.balance ?? row.current_balance ?? 0), coinsAwarded: Number(row.coins_awarded) }
   },
 }

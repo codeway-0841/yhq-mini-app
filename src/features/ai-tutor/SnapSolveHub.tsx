@@ -20,6 +20,7 @@ import {
   rememberCameraAccess,
 } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
+import DialogOverlay from '../../shared/components/DialogOverlay'
 import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { nearestCenterIndex } from './subject-carousel'
@@ -1138,7 +1139,7 @@ export default function SnapSolveHub() {
 
       {/* ── MANUAL FORMULA / PROBLEM INPUT MODAL (CALCULATOR) ──── */}
       {isManualInputOpen && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
+        <DialogOverlay onClose={() => setIsManualInputOpen(false)} position="bottom" swipeToDismiss labelId="manual-calc-title">
           <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
             <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
             <ModalHeaderRow onClose={() => setIsManualInputOpen(false)} label={tt('close')} className="px-0">
@@ -1182,12 +1183,12 @@ export default function SnapSolveHub() {
               </button>
             </div>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* ── HISTORY MODAL ────────────────────────────────────────── */}
       {isHistoryOpen && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-sm animate-in slide-in-from-bottom duration-200">
+        <DialogOverlay onClose={() => setIsHistoryOpen(false)} position="bottom" swipeToDismiss labelId="snap-history-title">
           <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
             <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
             <ModalHeaderRow onClose={() => setIsHistoryOpen(false)} label={tt('close')} className="px-0 pb-3 border-b border-pline shrink-0">
@@ -1226,7 +1227,7 @@ export default function SnapSolveHub() {
               ))}
             </div>
           </div>
-        </div>
+        </DialogOverlay>
       )}
 
       {/* ── SOCRATIC CHAT DRAWER ─────────────────────────────────── */}

@@ -74,7 +74,7 @@ export const liveRepository = {
   async getRoom(id: number): Promise<LiveRoomRow | null> {
     const rows = await executeRows<LiveRoomRow>(sql`
       SELECT r.id, r.subject_id, r.teacher_id,
-             (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+             COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
              r.title, r.description, r.status,
              r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
              (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
@@ -88,7 +88,7 @@ export const liveRepository = {
     if (filter.subjectId && filter.status) {
       return executeRows<LiveRoomRow>(sql`
         SELECT r.id, r.subject_id, r.teacher_id,
-               (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+               COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
                (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
@@ -100,7 +100,7 @@ export const liveRepository = {
     if (filter.subjectId) {
       return executeRows<LiveRoomRow>(sql`
         SELECT r.id, r.subject_id, r.teacher_id,
-               (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+               COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
                (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
@@ -112,7 +112,7 @@ export const liveRepository = {
     if (filter.status) {
       return executeRows<LiveRoomRow>(sql`
         SELECT r.id, r.subject_id, r.teacher_id,
-               (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+               COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
                r.title, r.description, r.status,
                r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
                (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
@@ -123,7 +123,7 @@ export const liveRepository = {
     }
     return executeRows<LiveRoomRow>(sql`
       SELECT r.id, r.subject_id, r.teacher_id,
-             (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+             COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
              r.title, r.description, r.status,
              r.scheduled_at, r.started_at, r.ended_at, r.room_name, r.created_at,
              (SELECT COUNT(*)::int FROM live_participants p WHERE p.room_id = r.id AND p.left_at IS NULL) AS participant_count
@@ -449,7 +449,7 @@ export const liveRepository = {
     const lim = Math.min(50, Math.max(1, limit))
     return executeRows<{ id: number; room_id: number; room_title: string; subject_id: string; teacher_name: string | null; r2_key: string | null; status: string; created_at: string }>(sql`
       SELECT rec.id, rec.room_id, r.title AS room_title, r.subject_id,
-             (SELECT u.first_name FROM users u WHERE u.id = r.teacher_id) AS teacher_name,
+             COALESCE((SELECT NULLIF(TRIM(CONCAT(u.first_name, ' ', COALESCE(u.last_name, ''))), '') FROM users u WHERE u.id = r.teacher_id), 'Diana Mustafaeva') AS teacher_name,
              rec.r2_key, rec.status, rec.created_at
       FROM live_recordings rec JOIN live_rooms r ON r.id = rec.room_id
       WHERE rec.status = 'ready' AND r.archived_at IS NULL

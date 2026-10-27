@@ -251,7 +251,12 @@ export default function WonderChatPanel({ course, activeLesson }: WonderChatPane
   }
 
   return (
-    <div className="fixed inset-y-0 right-0 top-[var(--safe-top,0px)] z-50 w-full sm:w-[420px] bg-[#FFFDF8] dark:bg-[#1E1512] border-l border-stone-200/90 dark:border-stone-800 shadow-2xl flex flex-col font-sans select-none animate-in slide-in-from-right-4 duration-200">
+    <>
+      <div
+        className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs animate-in fade-in duration-200"
+        onClick={() => setChatOpen(false)}
+      />
+      <div className="fixed inset-y-0 right-0 top-[var(--safe-top,0px)] z-50 w-full sm:w-[420px] bg-[#FFFDF8] dark:bg-[#1E1512] border-l border-stone-200/90 dark:border-stone-800 shadow-2xl flex flex-col font-sans select-none animate-in slide-in-from-right duration-300 ease-out">
       {/* Header (1:1 with authentic Wondering ChatPanel) */}
       <div className="flex items-center justify-between p-4 border-b border-stone-200/80 dark:border-stone-800 shrink-0 bg-[#FBF9F4] dark:bg-[#18110F]">
         <div className="flex items-center gap-2.5 min-w-0">
@@ -422,6 +427,7 @@ export default function WonderChatPanel({ course, activeLesson }: WonderChatPane
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

@@ -1162,6 +1162,9 @@ const UZ = {
   rusDarslikListenExample: "Talaffuzni eshitish",
   rusDarslikCyrillicHint: "Maxsus harflar",
   rusDarslikMatchedCount: "{done}/{total} juftlik",
+  darslikLevelPill: "{n}-daraja",
+  darslikSwipeLevelHint: "Modullarni suring",
+  darslikGoToModule: "Modulga o‘tish",
   rusDarslikReviewTitle: "Javoblar tahlili",
 } as const
 
@@ -2318,6 +2321,9 @@ const RU: Record<Keys, string> = {
   rusDarslikListenExample: "Прослушать произношение",
   rusDarslikCyrillicHint: "Спецсимволы",
   rusDarslikMatchedCount: "{done}/{total} пар",
+  darslikLevelPill: "Уровень {n}",
+  darslikSwipeLevelHint: "Листайте уровни",
+  darslikGoToModule: "Перейти к модулю",
   rusDarslikReviewTitle: "Разбор ответов",
 }
 

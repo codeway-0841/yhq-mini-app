@@ -466,13 +466,13 @@ export default function DialogOverlay({
       if (sheet) {
         sheet.style.transition = prefersReduced
           ? 'none'
-          : `transform ${exitDuration}ms cubic-bezier(.32, 0, .67, 0)`
+          : `transform ${exitDuration}ms cubic-bezier(0.32, 0.72, 0, 1)`
         sheet.style.transform = `translate3d(0, ${sheetHeight + 80}px, 0)`
       }
       if (backdrop) {
         backdrop.style.transition = prefersReduced
           ? 'none'
-          : `opacity ${Math.min(200, exitDuration)}ms ease-out`
+          : `opacity ${Math.min(200, exitDuration)}ms cubic-bezier(0.16, 1, 0.3, 1)`
         backdrop.style.opacity = '0'
       }
 
@@ -632,7 +632,12 @@ export default function DialogOverlay({
           {children}
         </div>
       ) : (
-        children
+        <div
+          data-dialog-center="true"
+          className="dialog-center-motion relative z-10 w-full flex items-center justify-center pointer-events-none [&>*]:pointer-events-auto"
+        >
+          {children}
+        </div>
       )}
     </div>
   )

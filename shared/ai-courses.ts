@@ -32,7 +32,7 @@ export const AI_COURSE_PREMIUM_MONTHLY_LIMIT = 15
 export const AI_COURSE_MOCK_SECTIONS = 3
 export const AI_COURSE_MOCK_LESSONS_PER_SECTION = 3
 
-/** Darsni birinchi yakunlash uchun coin (javob sifatidan qat'iy nazar — anti-farm: 1 marta) */
+/** Award only after successful reinforcement, once per lesson. */
 export const AI_COURSE_COINS_PER_LESSON = 2
 
 /** Ledger reason (coin_transactions.reason) — ShopPage reasonLabel'da ham bo'ladi */
@@ -301,6 +301,7 @@ export interface AiCourseGrading {
   perTask: Record<string, { correct: boolean }>
   correctCount: number
   totalCount: number
+  passed?: boolean
 }
 
 function norm(s: string): string {
@@ -339,7 +340,35 @@ export function gradeCoursePractices(
     perTask[p.id] = { correct }
   }
   const correctCount = Object.values(perTask).filter((r) => r.correct).length
-  return { perTask, correctCount, totalCount: practices.length }
+  const objective = practices.filter((p) => p.kind !== 'flashcard')
+  const passed = objective.length > 0 && isLessonFullyAnswered(practices, answers)
+    && objective.every((p) => perTask[p.id].correct)
+  return { perTask, correctCount, totalCount: practices.length, passed }
+}
+
+/** Every earlier lesson must be mastered, including gaps in legacy progress. */
+export function isCourseLessonUnlocked(
+  payload: AiCoursePayload | AiCoursePayloadPublic,
+  lessonId: string,
+  completedIds: ReadonlySet<string> | readonly string[],
+): boolean {
+  const done = new Set(completedIds)
+  const ordered = [...payload.sections].sort((a, b) => a.ord - b.ord)
+    .flatMap((s) => [...s.lessons].sort((a, b) => a.ord - b.ord))
+  const index = ordered.findIndex((lesson) => lesson.id === lessonId)
+  return index >= 0 && ordered.slice(0, index).every((lesson) => done.has(lesson.id))
+}
+
+/** Re-evaluate historical attempts: old failed submissions are not completion. */
+export function masteredCourseLessonIds(
+  payload: AiCoursePayload,
+  progress: Iterable<{ lessonId: string; answers: AiCourseAnswers }>,
+): string[] {
+  const attempts = new Map(Array.from(progress, (p) => [p.lessonId, p.answers]))
+  return payload.sections.flatMap((s) => s.lessons).filter((lesson) => {
+    const answers = attempts.get(lesson.id)
+    return answers && gradeCoursePractices(lesson.practices, answers).passed === true
+  }).map((lesson) => lesson.id)
 }
 
 /** Darsdagi barcha mashqlarga javob berilganmi (yakunlash sharti) — public payload'da ham ishlaydi */

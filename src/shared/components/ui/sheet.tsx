@@ -71,7 +71,6 @@ function Sheet({
         className={cn(
           'relative z-10 w-full max-w-lg mx-auto',
           'rounded-t-sheet bg-psurface shadow-2xl overflow-hidden',
-          'motion-safe:animate-in motion-safe:slide-in-from-bottom motion-safe:duration-200',
           'max-h-[88dvh] overflow-y-auto',
           // Pastki safe-area MARKAZIY: DialogOverlay (position='bottom')
           // konteyneri --safe-bottom'ga ko'taradi (env+TG var max) — bu yerda

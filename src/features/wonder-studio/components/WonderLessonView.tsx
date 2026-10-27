@@ -1823,7 +1823,12 @@ export default function WonderLessonView({
 
       {/* Socratic AI Tutor Discuss Drawer */}
       {isDiscussOpen && (
-        <div className="fixed inset-x-0 bottom-0 pb-[var(--safe-bottom,0px)] h-96 max-w-3xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 flex flex-col animate-in slide-in-from-bottom duration-200">
+        <>
+          <div
+            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs animate-in fade-in duration-200"
+            onClick={() => setIsDiscussOpen(false)}
+          />
+          <div className="fixed inset-x-0 bottom-0 pb-[var(--safe-bottom,0px)] h-96 max-w-3xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 flex flex-col animate-in slide-in-from-bottom duration-300 ease-out">
           <div className="px-5 py-3 border-b border-[#E7E2D6] dark:border-stone-800 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img src="/star.svg" alt="" className="size-5 shrink-0" />
@@ -1885,11 +1890,17 @@ export default function WonderLessonView({
             </button>
           </div>
         </div>
+        </>
       )}
 
       {/* Keyword Definition Drawer */}
       {activeKeyword && (
-        <div className="fixed inset-x-0 bottom-0 pb-[calc(1.25rem+var(--safe-bottom,0px))] p-5 max-w-3xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 animate-in slide-in-from-bottom duration-150">
+        <>
+          <div
+            className="fixed inset-0 z-40 bg-black/40 backdrop-blur-xs animate-in fade-in duration-200"
+            onClick={() => setActiveKeyword(null)}
+          />
+          <div className="fixed inset-x-0 bottom-0 pb-[calc(1.25rem+var(--safe-bottom,0px))] p-5 max-w-3xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 animate-in slide-in-from-bottom duration-300 ease-out">
           <div className="flex items-start justify-between gap-2 mb-2">
             <span className="text-xs font-black text-amber-700 dark:text-amber-300 uppercase tracking-wide">
               📖 Tushuncha izohi
@@ -1909,6 +1920,7 @@ export default function WonderLessonView({
             {activeKeyword.definition}
           </p>
         </div>
+        </>
       )}
     </div>
   )

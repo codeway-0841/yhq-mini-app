@@ -22,9 +22,9 @@ export default function AntiCheatModal({
   return (
     // QASDDAN DialogOverlay'siz: ogohlantirish faqat "Tushundim" tugmasi bilan yopiladi
     // (Escape/backdrop-yopish anti-cheat ogohlantirishini aylanib o'tishga yo'l qo'ymasligi shart)
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-md animate-in slide-in-from-bottom duration-200"
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
       role="alertdialog" aria-modal="true" aria-labelledby="anticheat-title" aria-describedby="anticheat-desc">
-      <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-[#050308] text-white pt-3 pb-[calc(1rem+var(--safe-bottom,0px))] text-center shadow-2xl relative overflow-hidden">
+      <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-[#050308] text-white pt-3 pb-[calc(1rem+var(--safe-bottom,0px))] text-center shadow-2xl relative overflow-hidden animate-in slide-in-from-bottom duration-300 ease-out">
         <div data-drag-handle className="w-10 h-1 bg-white/20 rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none relative z-10" />
 
         <div className="relative z-10">

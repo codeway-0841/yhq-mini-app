@@ -625,7 +625,7 @@ export default function WonderQuickPracticeModal({
 
       {/* AI Companion Discuss Drawer */}
       {isDiscussOpen && (
-        <div className="fixed inset-x-0 bottom-0 pb-[var(--safe-bottom,0px)] h-96 max-w-2xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 flex flex-col animate-in slide-in-from-bottom duration-200">
+        <div className="fixed inset-x-0 bottom-0 pb-[var(--safe-bottom,0px)] h-96 max-w-2xl mx-auto rounded-t-3xl bg-[#FFFDF8] dark:bg-[#1E1512] border-t-2 border-stone-300 dark:border-stone-700 shadow-2xl z-50 flex flex-col animate-in slide-in-from-bottom duration-300 ease-out">
           <div className="px-4 py-3 border-b border-stone-200 dark:border-stone-800 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <img src="/star.svg" alt="" className="size-4 shrink-0" />

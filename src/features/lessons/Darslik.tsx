@@ -572,7 +572,7 @@ export default function Darslik() {
       <section
         id={`lesson-module-${activeMod.id}`}
         aria-labelledby={`lesson-module-title-${activeMod.id}`}
-        className="mt-12 rounded-[28px] border-2 border-[#e8e8e8] bg-white px-3 pt-3 pb-5"
+        className="mt-12 rounded-3xl border-2 border-[#e8e8e8] bg-white px-3 pt-3 pb-5"
       >
         <div
           key={activeMod.id}

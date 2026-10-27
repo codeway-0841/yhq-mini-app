@@ -16,7 +16,7 @@ const room = {
   id: 7,
   subjectId: 'fizika',
   teacherId: 'teacher-1',
-  teacherName: 'Ustoz Ali',
+  teacherName: 'Diana Mustafaeva',
   title: 'Mexanika: real loyiha',
   description: null,
   status: 'live' as const,
@@ -45,6 +45,7 @@ describe('LiveListPage', () => {
 
     expect(await screen.findByText('Mexanika: real loyiha')).toBeTruthy()
     expect(screen.getByText('JONLI EFIR')).toBeTruthy()
+    expect(screen.getByText('Diana Mustafaeva')).toBeTruthy()
     expect(screen.getByText('18')).toBeTruthy()
     expect(apiMock.listLiveRooms).toHaveBeenCalledWith({ limit: 20 })
     expect(apiMock.listLiveRecordings).toHaveBeenCalledTimes(1)

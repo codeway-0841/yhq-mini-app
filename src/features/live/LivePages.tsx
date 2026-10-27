@@ -180,7 +180,9 @@ export default function LiveListPage() {
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="block truncate text-[15px] font-semibold text-pfg">{r.title}</span>
-                  <span className="mt-0.5 flex items-center gap-2 text-xs text-pmuted">
+                  <span className="mt-0.5 flex flex-wrap items-center gap-1.5 text-xs text-pmuted">
+                    <span className="truncate font-medium text-[rgb(var(--p-fg-rgb)/0.85)]">{r.teacherName || 'Diana Mustafaeva'}</span>
+                    <span aria-hidden="true">·</span>
                     <Badge variant={r.status === 'live' ? 'danger' : r.status === 'scheduled' ? 'accent' : r.status === 'ending' ? 'warning' : 'default'}>
                       {r.status === 'live' ? tt('liveStatusLive') : r.status === 'scheduled' ? tt('liveStatusScheduled') : r.status === 'ending' ? tt('liveStatusEnding') : tt('liveStatusEnded')}
                     </Badge>
@@ -209,7 +211,7 @@ export default function LiveListPage() {
               <Card key={rec.id}>
                 <CardContent className="flex flex-col gap-3 p-3">
                   <div className="flex items-start justify-between gap-3 px-1">
-                    <div className="min-w-0"><h3 className="truncate text-[15px] font-semibold text-pfg">{rec.roomTitle}</h3><p className="mt-0.5 text-xs text-pmuted">{[rec.teacherName, formatLiveDate(rec.createdAt, lang)].filter(Boolean).join(' · ')}</p></div>
+                    <div className="min-w-0"><h3 className="truncate text-[15px] font-semibold text-pfg">{rec.roomTitle}</h3><p className="mt-0.5 text-xs text-pmuted">{[rec.teacherName || 'Diana Mustafaeva', formatLiveDate(rec.createdAt, lang)].filter(Boolean).join(' · ')}</p></div>
                     <Badge variant="success">{tt('liveRecordingReady')}</Badge>
                   </div>
                   {rec.playbackUrl && (
@@ -499,7 +501,12 @@ function LiveRoomPage() {
     <div className="flex flex-1 flex-col px-4 pb-[calc(1rem+var(--safe-bottom,0px))]">
       <PageHeader
         title={room.title}
-        subtitle={room.teacherName ?? undefined}
+        subtitle={(() => {
+          const name = room.teacherName || 'Diana Mustafaeva'
+          return name.toLowerCase().includes('ustoz') || name.toLowerCase().includes('учитель')
+            ? name
+            : `${tt('liveTeacher')}: ${name}`
+        })()}
         size="md"
         onBack={() => goBack(navigate)}
         actions={
@@ -543,7 +550,7 @@ function LiveRoomPage() {
           })() : !joined || !mediaEnabled ? (
             <>
               <span className="grid size-14 place-items-center rounded-full bg-white/10"><Radio size={26} className={cn(room.status === 'live' ? 'text-red-400 motion-safe:animate-pulse' : 'text-white/60')} /></span>
-              <div><p className="text-sm font-semibold text-white">{room.status === 'live' ? tt('liveBroadcastReady') : room.status === 'ended' ? tt('liveStatusEnded') : tt('liveWaitingRoom')}</p><p className="mt-1 max-w-sm text-xs leading-relaxed text-white/60">{room.status === 'ended' ? tt('liveEndedHint') : tt('liveMediaHint')}</p></div>
+              <div><p className="text-sm font-semibold text-white">{room.status === 'live' ? tt('liveBroadcastReady') : room.status === 'ended' ? tt('liveStatusEnded') : tt('liveWaitingRoom')}</p><p className="mt-1 text-xs font-medium text-white/80">{tt('liveTeacher')}: {room.teacherName || 'Diana Mustafaeva'}</p><p className="mt-1 max-w-sm text-xs leading-relaxed text-white/60">{room.status === 'ended' ? tt('liveEndedHint') : tt('liveMediaHint')}</p></div>
             </>
           ) : voice.state === 'connected' ? (
             <>
@@ -561,7 +568,7 @@ function LiveRoomPage() {
                     <VideoView
                       key={v.sid}
                       track={v.track}
-                      label={v.identity}
+                      label={v.identity === room?.teacherId ? (room?.teacherName || 'Diana Mustafaeva') : v.identity}
                       speaking={voice.speakers.includes(v.identity)}
                       pipPriority={v.identity === room?.teacherId ? 2 : 3}
                     />
@@ -667,7 +674,7 @@ function LiveRoomPage() {
             {messages.map((m) => (
               <div key={m.id} className={cn('flex flex-col', m.userId === user?.id ? 'items-end' : 'items-start')}>
                 <div className={cn('max-w-[88%] rounded-2xl px-3 py-2', m.userId === user?.id ? 'rounded-br-md bg-pprimary text-ponprimary' : 'rounded-bl-md bg-psurface text-pfg')}>
-                  <div className={cn('flex items-center gap-1.5 text-[11px] font-semibold', m.userId === user?.id ? 'text-[rgb(var(--p-on-primary-rgb)/0.75)]' : 'text-pmuted')}><span className="truncate">{m.userName ?? m.userId}</span>{m.role === 'teacher' && <Badge variant="accent">{tt('liveTeacher')}</Badge>}<time className="font-normal tabular-nums" dateTime={m.createdAt}>{new Date(m.createdAt).toLocaleTimeString(lang === 'ru' ? 'ru-RU' : 'uz-UZ', { hour: '2-digit', minute: '2-digit' })}</time></div>
+                  <div className={cn('flex items-center gap-1.5 text-[11px] font-semibold', m.userId === user?.id ? 'text-[rgb(var(--p-on-primary-rgb)/0.75)]' : 'text-pmuted')}><span className="truncate">{m.userId === room?.teacherId ? (m.userName ?? room?.teacherName ?? 'Diana Mustafaeva') : (m.userName ?? m.userId)}</span>{m.role === 'teacher' && <Badge variant="accent">{tt('liveTeacher')}</Badge>}<time className="font-normal tabular-nums" dateTime={m.createdAt}>{new Date(m.createdAt).toLocaleTimeString(lang === 'ru' ? 'ru-RU' : 'uz-UZ', { hour: '2-digit', minute: '2-digit' })}</time></div>
                   <div className="whitespace-pre-wrap break-words text-sm leading-relaxed">{m.body}</div>
                 </div>
               </div>

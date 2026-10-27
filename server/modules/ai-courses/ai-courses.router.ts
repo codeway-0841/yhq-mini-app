@@ -26,7 +26,6 @@ import { db } from '../../db/connection'
 import { users } from '../../schema'
 import { eq } from 'drizzle-orm'
 import {
-  AI_COURSE_COINS_PER_LESSON,
   AI_COURSE_FREE_MONTHLY_LIMIT,
   AI_COURSE_PREMIUM_MONTHLY_LIMIT,
   AiCourseCompleteSchema,
@@ -36,6 +35,8 @@ import {
   findCourseLesson,
   gradeCoursePractices,
   isLessonFullyAnswered,
+  isCourseLessonUnlocked,
+  masteredCourseLessonIds,
   toPublicCourseLesson,
   toPublicCoursePayload,
 } from '../../../shared/ai-courses'
@@ -176,6 +177,7 @@ router.get(
     if (!course || course.userId !== userId) throw new AppError(404, 'COURSE_NOT_FOUND')
 
     const progress = await aiCoursesRepository.getProgressMap(id, userId)
+    const masteredIds = masteredCourseLessonIds(course.payload, progress.values())
 
     res.setHeader('Cache-Control', 'private, no-store')
     res.json({
@@ -188,8 +190,8 @@ router.get(
         lessonLength: course.lessonLength,
         language: course.language,
         totalLessons: aiCourseLessonCount(course.payload),
-        completedLessons: progress.size,
-        completedLessonIds: [...progress.keys()],
+        completedLessons: masteredIds.length,
+        completedLessonIds: masteredIds,
         createdAt: course.createdAt,
         ...toPublicCoursePayload(course.payload),
       },
@@ -239,21 +241,31 @@ router.post(
     const found = findCourseLesson(parsed.data, lessonId)
     if (!found) throw new AppError(404, 'LESSON_NOT_FOUND')
     const lesson = found.lesson
+    res.setHeader('Cache-Control', 'private, no-store')
+    const progress = await aiCoursesRepository.getProgressMap(courseId, userId)
+    const masteredIds = masteredCourseLessonIds(parsed.data, progress.values())
+    if (!isCourseLessonUnlocked(parsed.data, lessonId, masteredIds)) {
+      throw new AppError(403, 'LESSON_LOCKED')
+    }
     if (!isLessonFullyAnswered(lesson.practices, answers)) {
       throw new AppError(400, 'LESSON_INCOMPLETE')
     }
 
     // Idempotency fast-path: allaqachon yakunlangan — saqlangan natija
-    const existing = await aiCoursesRepository.getProgress(courseId, lessonId, userId)
-    if (existing) {
+    const existing = progress.get(lessonId)
+    if (existing && masteredIds.includes(lessonId)) {
       res.json({
-        ok: true, duplicate: true, grading: existing.grading,
-        coinsAwarded: existing.coinsAwarded,
+        ok: true, passed: true, duplicate: true, grading: gradeCoursePractices(lesson.practices, existing.answers),
+        coinsAwarded: 0,
       })
       return
     }
 
     const grading = gradeCoursePractices(lesson.practices, answers)
+    if (!grading.passed) {
+      res.json({ ok: true, passed: false, duplicate: false, grading, coinsAwarded: 0 })
+      return
+    }
     const result = await aiCoursesRepository.completeLesson({
       courseId, lessonId, userId, answers, grading, clientToken,
     })
@@ -262,17 +274,18 @@ router.post(
       const winner = await aiCoursesRepository.getProgress(courseId, lessonId, userId)
       if (!winner) throw new AppError(500, 'PROGRESS_STATE_ERROR')
       res.json({
-        ok: true, duplicate: true, grading: winner.grading,
-        coinsAwarded: winner.coinsAwarded,
+        ok: true, passed: true, duplicate: true, grading: winner.grading,
+        coinsAwarded: 0,
       })
       return
     }
 
     res.json({
       ok: true,
+      passed: true,
       duplicate: false,
       grading,
-      coinsAwarded: AI_COURSE_COINS_PER_LESSON,
+      coinsAwarded: result.coinsAwarded,
       balance: result.balance,
       // Reveal: yakunlangach bilim kartalari + to'g'ri javoblar o'z egasiga
       knowledgeCards: lesson.knowledgeCards,
