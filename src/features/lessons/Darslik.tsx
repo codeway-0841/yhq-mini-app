@@ -285,7 +285,7 @@ export default function Darslik() {
     }
   }, [activeMod.id, reader])
 
-  // Brilliant Darslik immersive pure white canvas: sync Telegram header & document background
+  // Brilliant Darslik immersive pure white canvas: sync Telegram header & background
   useEffect(() => {
     const tg = getTelegramWebApp()
     const metaTheme = document.querySelector('meta[name="theme-color"]')
@@ -294,6 +294,7 @@ export default function Darslik() {
     try {
       tg?.setHeaderColor?.('#ffffff')
       tg?.setBackgroundColor?.('#ffffff')
+      tg?.disableVerticalSwipes?.()
     } catch {}
     if (metaTheme) metaTheme.setAttribute('content', '#ffffff')
     document.documentElement.style.backgroundColor = '#ffffff'
@@ -304,6 +305,9 @@ export default function Darslik() {
       if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
       document.documentElement.style.backgroundColor = ''
       document.body.style.backgroundColor = ''
+      try {
+        tg?.enableVerticalSwipes?.()
+      } catch {}
     }
   }, [settings.theme])
 
@@ -418,10 +422,10 @@ export default function Darslik() {
   const activeTitle = ru ? activeMod.titleRu : activeMod.title
 
   return (
-    <div className="flex-1 w-full min-h-[100dvh] bg-white flex flex-col items-center">
+    <div className="fixed inset-0 z-20 w-full h-full bg-white flex flex-col items-center overflow-hidden overscroll-none select-none lg:relative lg:inset-auto lg:z-auto">
       <div
         data-testid="brilliant-darslik-screen"
-        className="w-full flex-1 min-h-[100dvh] bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-3 pb-[max(1.25rem,env(safe-area-inset-bottom))] mx-auto max-w-[430px] select-none"
+        className="w-full flex-1 h-full max-h-full bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.75rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-hidden touch-pan-x"
       >
         {/* Top: Status bar + Header */}
         <div className="flex flex-col shrink-0">
@@ -466,16 +470,16 @@ export default function Darslik() {
           </div>
 
           {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
-          <div className="flex flex-col items-center text-center px-4 mt-3">
+          <div className="flex flex-col items-center text-center px-4 mt-2">
             <h1
               id={`lesson-module-title-${activeMod.id}`}
               tabIndex={-1}
-              className="font-display text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
+              className="font-display text-[24px] sm:text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
             >
               {activeTitle}
             </h1>
 
-            <div className="mt-2 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
+            <div className="mt-1.5 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
               <span
                 data-testid="brilliant-level-subtitle"
                 style={{ color: theme.accent }}
@@ -498,7 +502,7 @@ export default function Darslik() {
         </div>
 
         {/* Center: 3D Hero Carousel Track + Pagination Dots (Floating vertically in the middle) */}
-        <div className="my-auto flex flex-col items-center justify-center py-2 shrink-0">
+        <div className="my-auto flex flex-col items-center justify-center py-1 shrink-0">
           {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
           <div
             data-testid="brilliant-swipe-stage"
@@ -523,7 +527,7 @@ export default function Darslik() {
             onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
             onTouchEnd={handleSwipeEnd}
             onTouchCancel={handleSwipeEnd}
-            className="relative mt-2 flex h-[196px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
+            className="relative flex h-[180px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
           >
             {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 240px pitch */}
             {modules.map((m, i) => {
@@ -579,7 +583,7 @@ export default function Darslik() {
 
           {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
           <div
-            className="mt-4 flex items-center justify-center gap-2.5"
+            className="mt-3 flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
@@ -613,7 +617,7 @@ export default function Darslik() {
         <section
           id={`lesson-module-${activeMod.id}`}
           aria-labelledby={`lesson-module-title-${activeMod.id}`}
-          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-5 pb-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-4 pb-4 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
         >
         <div
           key={activeMod.id}

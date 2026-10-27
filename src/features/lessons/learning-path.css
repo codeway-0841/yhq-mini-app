@@ -530,11 +530,15 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
   }
 }
 
-/* Brilliant Darslik full-bleed pure white canvas — eliminates grey/dark top/bottom margins */
+/* Brilliant Darslik full-bleed pure white canvas — eliminates grey margins & locks vertical scroll */
 .route-page[data-route-path="/darslik"],
 [data-app-shell]:has(.route-page[data-route-path="/darslik"]) {
   background-color: #ffffff !important;
   padding-bottom: 0 !important;
+  overflow: hidden !important;
+  height: calc(100dvh - var(--safe-top-body, 0px)) !important;
+  max-height: calc(100dvh - var(--safe-top-body, 0px)) !important;
+  overscroll-behavior-y: none !important;
 }
 
 @keyframes brilliant-row-fade-in {
