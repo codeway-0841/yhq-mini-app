@@ -425,7 +425,7 @@ export default function Darslik() {
     <div className="fixed inset-0 z-20 w-full h-full bg-white flex flex-col items-center overflow-hidden overscroll-none select-none lg:relative lg:inset-auto lg:z-auto">
       <div
         data-testid="brilliant-darslik-screen"
-        className="w-full flex-1 h-full max-h-full bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.75rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-hidden touch-pan-x"
+        className="w-full flex-1 h-full max-h-full bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.35rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-hidden touch-pan-x"
       >
         {/* Top: Status bar + Header */}
         <div className="flex flex-col shrink-0">
@@ -527,15 +527,15 @@ export default function Darslik() {
             onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
             onTouchEnd={handleSwipeEnd}
             onTouchCancel={handleSwipeEnd}
-            className="relative flex h-[180px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
+            className="relative flex h-[200px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
           >
-            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 240px pitch */}
+            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 250px pitch */}
             {modules.map((m, i) => {
-              const offset = (i - currentModIdx) * 240 + dragOffset
+              const offset = (i - currentModIdx) * 250 + dragOffset
               const dist = Math.abs(offset)
-              const scale = Math.max(0.64, 1 - (dist / 240) * 0.36)
-              const opacity = Math.max(0, 1 - (dist / 240) * 0.55)
-              const isFar = dist > 480
+              const scale = Math.max(0.68, 1 - (dist / 250) * 0.32)
+              const opacity = Math.max(0, 1 - (dist / 250) * 0.55)
+              const isFar = dist > 500
 
               return (
                 <div
@@ -553,7 +553,7 @@ export default function Darslik() {
                       : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
                   }}
                 >
-                  <BrilliantHeroIllustration moduleId={m.id} />
+                  <BrilliantHeroIllustration moduleId={m.id} className="w-[236px] h-[192px]" />
                 </div>
               )
             })}
@@ -583,7 +583,7 @@ export default function Darslik() {
 
           {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
           <div
-            className="mt-3 flex items-center justify-center gap-2.5"
+            className="mt-2.5 flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
@@ -617,7 +617,7 @@ export default function Darslik() {
         <section
           id={`lesson-module-${activeMod.id}`}
           aria-labelledby={`lesson-module-title-${activeMod.id}`}
-          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-4 pb-4 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-3.5 pb-3 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
         >
         <div
           key={activeMod.id}
@@ -685,12 +685,12 @@ export default function Darslik() {
           })}
         </div>
 
-        {/* 1-to-1 56px Pill Start Button matching Brilliant with generous breathing space */}
+        {/* 1-to-1 56px Pill Start Button matching Brilliant */}
         <button
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-6 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
+          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,
