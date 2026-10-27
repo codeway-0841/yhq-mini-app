@@ -133,12 +133,17 @@ export function BrilliantHeroIllustration({
   if (!forceSvg && HERO_PNGS[variant]) {
     return (
       <div className="relative flex items-center justify-center w-[234px] h-[192px] select-none pointer-events-none">
+        {/* Soft atmospheric radial glow matching theme */}
+        <div
+          className="absolute inset-0 m-auto size-36 rounded-full blur-2xl opacity-20 pointer-events-none"
+          style={{ backgroundColor: BRILLIANT_MODULE_THEMES[moduleId]?.accent || '#3557ff' }}
+        />
         <img
           src={HERO_PNGS[variant]}
           alt=""
           width={234}
           height={192}
-          className="max-w-full max-h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] select-none pointer-events-none"
+          className="relative z-10 max-w-full max-h-full object-contain drop-shadow-[0_10px_24px_rgba(0,0,0,0.1)] select-none pointer-events-none brilliant-hero-floating"
         />
       </div>
     )
@@ -452,13 +457,18 @@ export function BrilliantLessonRowIcon({
   }
 
   return (
-    <div className="flex h-11 w-12 shrink-0 items-center justify-center">
+    <div className="relative flex h-11 w-12 shrink-0 items-center justify-center">
+      {/* Dynamic pulsing halo portal glow behind Koji */}
+      <div
+        className="absolute bottom-0.5 size-7 rounded-full blur-md pointer-events-none brilliant-portal-glow"
+        style={{ backgroundColor: accentColor }}
+      />
       <img
         src={mascotSrc}
         alt=""
         width={46}
         height={42}
-        className="h-11 w-12 shrink-0 select-none object-contain pointer-events-none drop-shadow"
+        className="relative z-10 h-11 w-12 shrink-0 select-none object-contain pointer-events-none drop-shadow-sm brilliant-koji-animated"
       />
     </div>
   )
