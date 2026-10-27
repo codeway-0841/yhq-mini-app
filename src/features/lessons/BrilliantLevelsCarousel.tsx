@@ -123,7 +123,7 @@ const HERO_PNGS: Record<number, string> = {
 export function BrilliantHeroIllustration({
   moduleId,
   forceSvg = false,
-  className = 'w-[236px] h-[192px]',
+  className = 'w-[270px] h-[220px]',
 }: {
   moduleId: number
   forceSvg?: boolean

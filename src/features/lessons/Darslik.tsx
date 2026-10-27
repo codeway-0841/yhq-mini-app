@@ -501,8 +501,8 @@ export default function Darslik() {
           </div>
         </div>
 
-        {/* Center: 3D Hero Carousel Track + Pagination Dots (Floating vertically in the middle) */}
-        <div className="my-auto flex flex-col items-center justify-center py-1 shrink-0">
+        {/* Center: 3D Hero Carousel Track (Floating vertically in the middle with generous breathing space) */}
+        <div className="my-auto flex flex-col items-center justify-center py-2 shrink-0">
           {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
           <div
             data-testid="brilliant-swipe-stage"
@@ -527,15 +527,15 @@ export default function Darslik() {
             onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
             onTouchEnd={handleSwipeEnd}
             onTouchCancel={handleSwipeEnd}
-            className="relative flex h-[200px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
+            className="relative flex h-[220px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
           >
-            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 250px pitch */}
+            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 270px pitch */}
             {modules.map((m, i) => {
-              const offset = (i - currentModIdx) * 250 + dragOffset
+              const offset = (i - currentModIdx) * 270 + dragOffset
               const dist = Math.abs(offset)
-              const scale = Math.max(0.68, 1 - (dist / 250) * 0.32)
-              const opacity = Math.max(0, 1 - (dist / 250) * 0.55)
-              const isFar = dist > 500
+              const scale = Math.max(0.7, 1 - (dist / 270) * 0.3)
+              const opacity = Math.max(0, 1 - (dist / 270) * 0.55)
+              const isFar = dist > 540
 
               return (
                 <div
@@ -553,7 +553,7 @@ export default function Darslik() {
                       : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
                   }}
                 >
-                  <BrilliantHeroIllustration moduleId={m.id} className="w-[236px] h-[192px]" />
+                  <BrilliantHeroIllustration moduleId={m.id} className="w-[270px] h-[220px]" />
                 </div>
               )
             })}
@@ -580,10 +580,13 @@ export default function Darslik() {
               </button>
             )}
           </div>
+        </div>
 
-          {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
+        {/* Bottom Group: Centered Pagination Dots (close to start div line) + Rounded Card */}
+        <div className="mt-auto shrink-0 flex flex-col w-full">
+          {/* 4. Centered Pagination Dots (docked directly above Start card line) */}
           <div
-            className="mt-2.5 flex items-center justify-center gap-2.5"
+            className="mb-2.5 flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
@@ -611,14 +614,13 @@ export default function Darslik() {
               )
             })}
           </div>
-        </div>
 
-        {/* Bottom: Rounded Card Container (Pinned to the bottom, thumb-reachable Start button) */}
-        <section
-          id={`lesson-module-${activeMod.id}`}
-          aria-labelledby={`lesson-module-title-${activeMod.id}`}
-          className="mt-auto shrink-0 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-3.5 pb-3 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
-        >
+          {/* Bottom: Rounded Card Container (Pinned to the bottom, thumb-reachable Start button) */}
+          <section
+            id={`lesson-module-${activeMod.id}`}
+            aria-labelledby={`lesson-module-title-${activeMod.id}`}
+            className="w-full rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-3.5 pb-3 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+          >
         <div
           key={activeMod.id}
           ref={listRef}
@@ -703,6 +705,7 @@ export default function Darslik() {
           <span className="relative z-10">Start</span>
         </button>
       </section>
+      </div>
 
       {launch && (
         <LessonLaunch
