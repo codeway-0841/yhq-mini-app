@@ -434,35 +434,35 @@ export default function Darslik() {
         </div>
       </div>
 
-      {/* 2. Centered header: RECOMMENDED pill + module title + colored LEVEL subtitle */}
-      <div className="flex flex-col items-center text-center">
-        <div className="mt-0.5 flex h-[22px] items-center justify-center">
-          {theme.recommended && (
-            <span
-              data-testid="brilliant-recommended-badge"
-              className="inline-flex items-center rounded-full px-3 py-[3px] text-[10px] font-extrabold uppercase tracking-[0.04em] transition-colors duration-300"
-              style={{ backgroundColor: theme.badgeBg, color: theme.accent }}
-            >
-              RECOMMENDED
-            </span>
-          )}
-        </div>
-
+      {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
+      <div className="flex flex-col items-center text-center px-4 mt-1">
         <h1
           id={`lesson-module-title-${activeMod.id}`}
           tabIndex={-1}
-          className="mt-5 font-display text-[24px] font-bold tracking-[-0.01em] text-[#0b0b0f] leading-[30px] focus-visible:outline-none"
+          className="font-display text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
         >
           {activeTitle}
         </h1>
 
-        <p
-          data-testid="brilliant-level-subtitle"
-          className="mt-6 text-[14px] font-extrabold uppercase leading-4 tracking-[0.01em] transition-colors duration-300"
-          style={{ color: theme.accent }}
-        >
-          LEVEL {activeMod.id}
-        </p>
+        <div className="mt-2 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
+          <span
+            data-testid="brilliant-level-subtitle"
+            style={{ color: theme.accent }}
+          >
+            LEVEL {activeMod.id}
+          </span>
+          {theme.recommended && (
+            <>
+              <span className="opacity-40" style={{ color: theme.accent }}>·</span>
+              <span
+                data-testid="brilliant-recommended-badge"
+                style={{ color: theme.accent }}
+              >
+                RECOMMENDED
+              </span>
+            </>
+          )}
+        </div>
       </div>
 
       {/* 3. Center hero illustration swipe stage */}
@@ -475,7 +475,7 @@ export default function Darslik() {
         onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
         onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
         onTouchEnd={handleSwipeEnd}
-        className="relative mt-[15px] flex h-[220px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing"
+        className="relative mt-2 flex h-[210px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
       >
         {/* Peeking Previous 3D Illustration on the Left Edge */}
         {prevMod && (
@@ -520,7 +520,7 @@ export default function Darslik() {
           </div>
         )}
 
-        {/* Subtle Left / Right Edge Chevrons (matching the subtle grey chevron in the video) */}
+        {/* Subtle Left / Right Edge Chevrons */}
         {prevMod && (
           <button
             type="button"
@@ -543,9 +543,9 @@ export default function Darslik() {
         )}
       </div>
 
-      {/* 4. Centered Pagination Dots */}
+      {/* 4. Centered Pagination Dots (directly under hero, matching Brilliant) */}
       <div
-        className="mt-[59px] flex items-center justify-center gap-[9px]"
+        className="mt-3 mb-2 flex items-center justify-center gap-2"
         role="tablist"
         aria-label="Darajalar"
       >
@@ -559,26 +559,28 @@ export default function Darslik() {
               aria-selected={isActive}
               aria-label={`LEVEL ${m.id}`}
               onClick={() => switchToModuleIndex(idx)}
-              className="size-[7px] rounded-full cursor-pointer transition-colors duration-300"
+              className={`rounded-full cursor-pointer transition-all duration-300 ${
+                isActive ? 'size-2' : 'size-1.5'
+              }`}
               style={{
-                backgroundColor: isActive ? theme.dotColor : '#d3d3d3',
+                backgroundColor: isActive ? theme.dotColor : '#d1d5db',
               }}
             />
           )
         })}
       </div>
 
-      {/* 5. Bottom Rounded Card Container: Staggered Lesson Rows + Full-Width 3D Glossy Start Button */}
+      {/* 5. Bottom Rounded Card Container: Staggered Lesson Rows + Full-Width 56px Pill Start Button */}
       <section
         id={`lesson-module-${activeMod.id}`}
         aria-labelledby={`lesson-module-title-${activeMod.id}`}
-        className="mt-12 rounded-3xl border-2 border-[#e8e8e8] bg-white px-3 pt-3 pb-5"
+        className="mt-4 rounded-[28px] border border-[#e5e7eb] bg-white p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
       >
         <div
           key={activeMod.id}
           ref={listRef}
           role="list"
-          className="h-[114px] overflow-y-auto no-scrollbar scroll-smooth"
+          className="h-[126px] overflow-y-auto no-scrollbar scroll-smooth space-y-1"
         >
           {activeLessons.map((lesson, idx) => {
             const isDone = activeDoneList.includes(idx)
@@ -607,15 +609,15 @@ export default function Darslik() {
                     setSelected({ moduleId: activeMod.id, idx, check: false })
                     haptics.selection()
                   }}
-                  className="flex h-[57px] w-full cursor-pointer items-center gap-3 px-1 text-left"
+                  className="flex h-[58px] w-full cursor-pointer items-center gap-3 px-1 text-left rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 
                   <span
                     className={
                       isHighlighted && !isDone
-                        ? 'min-w-0 flex-1 text-[14px] font-bold leading-snug text-[#0b0b0f]'
-                        : 'min-w-0 flex-1 text-[14px] font-medium leading-snug text-[#6b6b6b]'
+                        ? 'min-w-0 flex-1 text-[16px] font-bold leading-snug text-[#0b0b0f]'
+                        : 'min-w-0 flex-1 text-[16px] font-medium leading-snug text-[#9ca3af]'
                     }
                   >
                     {lessonTitle}
@@ -623,15 +625,15 @@ export default function Darslik() {
 
                   {isDone ? (
                     <span
-                      className="grid size-[22px] shrink-0 place-items-center rounded-full text-white"
+                      className="grid size-5 shrink-0 place-items-center rounded-full text-white"
                       style={{ backgroundColor: theme.checkBg }}
                     >
-                      <Check size={13} strokeWidth={3.2} />
+                      <Check size={12} strokeWidth={3.2} />
                     </span>
                   ) : (
                     <span
-                      className="size-[22px] shrink-0 rounded-full"
-                      style={{ backgroundColor: isHighlighted ? '#dddddd' : '#ebebeb' }}
+                      className="size-4 shrink-0 rounded-full"
+                      style={{ backgroundColor: isHighlighted ? '#9ca3af' : '#e5e7eb' }}
                     />
                   )}
                 </button>
@@ -640,16 +642,15 @@ export default function Darslik() {
           })}
         </div>
 
-        {/* Pill 3D Start Button: morphs color with the active module, two diagonal sheen stripes sweep across */}
+        {/* 1-to-1 56px Pill Start Button matching Brilliant */}
         <button
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-2 flex h-[46px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[16px] font-bold transition-[background-color,box-shadow,color] duration-300 active:translate-y-[2px] active:shadow-none"
+          className="relative mt-4 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,
-            boxShadow: `0 4px 0 ${theme.buttonShadow}`,
           }}
         >
           <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full">
