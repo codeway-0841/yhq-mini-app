@@ -585,13 +585,13 @@ export default function Darslik() {
       <section
         id={`lesson-module-${activeMod.id}`}
         aria-labelledby={`lesson-module-title-${activeMod.id}`}
-        className="mt-2 rounded-[28px] border border-[#e5e7eb] bg-white p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+        className="mt-4 rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-5 pb-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
       >
         <div
           key={activeMod.id}
           ref={listRef}
           role="list"
-          className="h-[136px] overflow-y-auto no-scrollbar scroll-smooth space-y-2"
+          className="h-[126px] overflow-y-auto no-scrollbar scroll-smooth space-y-2.5"
         >
           {activeLessons.map((lesson, idx) => {
             const isDone = activeDoneList.includes(idx)
@@ -620,7 +620,7 @@ export default function Darslik() {
                     setSelected({ moduleId: activeMod.id, idx, check: false })
                     haptics.selection()
                   }}
-                  className="flex h-[60px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl hover:bg-slate-50 transition-colors"
+                  className="flex h-[58px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl hover:bg-slate-50 transition-colors"
                 >
                   <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 
@@ -653,12 +653,12 @@ export default function Darslik() {
           })}
         </div>
 
-        {/* 1-to-1 56px Pill Start Button matching Brilliant */}
+        {/* 1-to-1 56px Pill Start Button matching Brilliant with generous breathing space */}
         <button
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-4 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
+          className="relative mt-6 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,
