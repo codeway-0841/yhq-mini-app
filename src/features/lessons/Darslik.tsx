@@ -224,7 +224,6 @@ export default function Darslik() {
   const [completion, setCompletion] = useState<CompletedModule | null>(null)
   const [selected, setSelected] = useState<PathSelection | null>(null)
   const [launch, setLaunch] = useState<{ mod: Mod; idx: number; origin: LaunchOrigin } | null>(null)
-  const [swipeDir, setSwipeDir] = useState<'left' | 'right'>('right')
   const [dragOffset, setDragOffset] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const dragStartX = useRef<number | null>(null)
@@ -267,16 +266,14 @@ export default function Darslik() {
     const clamped = Math.max(0, Math.min(modules.length - 1, nextIdx))
     const targetMod = modules[clamped]
     if (!targetMod || targetMod.id === moduleId) return
-    setSwipeDir(clamped > currentModIdx ? 'right' : 'left')
     setModuleId(targetMod.id)
     setSelected(null)
     haptics.selection()
-  }, [currentModIdx, moduleId])
+  }, [moduleId])
 
   const continueModule = useCallback(() => {
     if (!completion?.next) return
     pendingFocusModId.current = completion.next.id
-    setSwipeDir('right')
     setModuleId(completion.next.id)
     setCompletion(null)
   }, [completion])
@@ -478,70 +475,57 @@ export default function Darslik() {
       {/* 3. Center hero illustration swipe stage */}
       <div
         data-testid="brilliant-swipe-stage"
-        onPointerDown={(e) => handleSwipeStart(e.clientX)}
-        onPointerMove={(e) => handleSwipeMove(e.clientX)}
-        onPointerUp={handleSwipeEnd}
-        onPointerCancel={handleSwipeEnd}
+        onPointerDown={(e) => {
+          if (e.pointerType === 'touch') return
+          ;(e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId)
+          handleSwipeStart(e.clientX)
+        }}
+        onPointerMove={(e) => {
+          if (e.pointerType === 'touch') return
+          handleSwipeMove(e.clientX)
+        }}
+        onPointerUp={(e) => {
+          if (e.pointerType === 'touch') return
+          handleSwipeEnd()
+        }}
+        onPointerCancel={(e) => {
+          if (e.pointerType === 'touch') return
+          handleSwipeEnd()
+        }}
         onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
         onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
         onTouchEnd={handleSwipeEnd}
+        onTouchCancel={handleSwipeEnd}
         className="relative mt-2 flex h-[210px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
       >
-        {/* Peeking Previous 3D Illustration on the Left Edge */}
-        {prevMod && (
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 select-none"
-            style={{
-              transform: `translate3d(${-146 + dragOffset * 0.65}px, -50%, 0) scale(${
-                0.62 + (dragOffset > 0 ? Math.min(0.38, (dragOffset / 200) * 0.38) : 0)
-              })`,
-              opacity: dragOffset > 0
-                ? Math.min(1, 0.45 + dragOffset / 180)
-                : 0.45,
-              transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
-            }}
-          >
-            <BrilliantHeroIllustration moduleId={prevMod.id} />
-          </div>
-        )}
+        {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager */}
+        {modules.map((m, i) => {
+          const offset = (i - currentModIdx) * 230 + dragOffset
+          const dist = Math.abs(offset)
+          const scale = Math.max(0.62, 1 - (dist / 230) * 0.38)
+          const opacity = Math.max(0, 1 - (dist / 230) * 0.55)
+          const isFar = dist > 460
 
-        {/* Active Center 3D Illustration with Spring Overshoot */}
-        <div
-          key={activeMod.id}
-          data-testid={`brilliant-hero-${activeMod.id}`}
-          className={swipeDir === 'right' ? 'brilliant-hero-enter-right' : 'brilliant-hero-enter-left'}
-          style={{
-            transform: dragOffset !== 0
-              ? `translate3d(${dragOffset}px, 0, 0) scale(${1 - Math.min(0.16, Math.abs(dragOffset) / 600)})`
-              : undefined,
-            opacity: dragOffset !== 0
-              ? 1 - Math.min(0.35, Math.abs(dragOffset) / 400)
-              : 1,
-            transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
-          }}
-        >
-          <BrilliantHeroIllustration moduleId={activeMod.id} />
-        </div>
-
-        {/* Peeking Next 3D Illustration on the Right Edge */}
-        {nextMod && (
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 select-none"
-            style={{
-              transform: `translate3d(${146 + dragOffset * 0.65}px, -50%, 0) scale(${
-                0.62 + (dragOffset < 0 ? Math.min(0.38, (Math.abs(dragOffset) / 200) * 0.38) : 0)
-              })`,
-              opacity: dragOffset < 0
-                ? Math.min(1, 0.45 + Math.abs(dragOffset) / 180)
-                : 0.45,
-              transition: isDragging ? 'none' : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms ease-out',
-            }}
-          >
-            <BrilliantHeroIllustration moduleId={nextMod.id} />
-          </div>
-        )}
+          return (
+            <div
+              key={m.id}
+              data-testid={`brilliant-hero-${m.id}`}
+              aria-hidden={i !== currentModIdx}
+              className="absolute pointer-events-none select-none flex items-center justify-center"
+              style={{
+                transform: `translate3d(${offset}px, 0, 0) scale(${scale})`,
+                opacity: isFar ? 0 : opacity,
+                zIndex: isFar ? 0 : 10 - Math.min(9, Math.round(dist / 25)),
+                visibility: isFar ? 'hidden' : 'visible',
+                transition: isDragging
+                  ? 'none'
+                  : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
+              }}
+            >
+              <BrilliantHeroIllustration moduleId={m.id} />
+            </div>
+          )
+        })}
 
         {/* Subtle Left / Right Edge Chevrons */}
         {prevMod && (
@@ -549,7 +533,7 @@ export default function Darslik() {
             type="button"
             aria-label="Oldingi daraja"
             onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx - 1) }}
-            className="absolute left-0 top-1/2 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+            className="absolute left-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
           >
             <ChevronLeft size={14} strokeWidth={2.25} />
           </button>
@@ -559,7 +543,7 @@ export default function Darslik() {
             type="button"
             aria-label="Keyingi daraja"
             onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx + 1) }}
-            className="absolute right-0 top-1/2 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+            className="absolute right-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
           >
             <ChevronRight size={14} strokeWidth={2.25} />
           </button>
