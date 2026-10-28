@@ -29,7 +29,7 @@ const Dashboard       = lazy(dashboardChunk)
 const testPageChunk        = () => import('./features/test/TestRoutePage')
 const testlarChunk         = () => import('./features/testlar/TestlarPage')
 const darslikChunk         = () => import('./features/lessons/Darslik')
-const rusDarslikChunk      = () => import('./features/darslik-rustili/RussianDarslikPage')
+const courseMapChunk       = () => import('./features/darslik-rustili/CourseMapPage')
 const biletlarChunk        = () => import('./features/tickets/Biletlar')
 const belgilarChunk        = () => import('./features/signs/Belgilar')
 const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
@@ -73,7 +73,7 @@ const interactiveLessonsChunk = () => import('./features/interactive-lessons/Int
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
 const Darslik         = lazy(darslikChunk)
-const RussianDarslikPage = lazy(rusDarslikChunk)
+const CourseMapPage      = lazy(courseMapChunk)
 const Biletlar        = lazy(biletlarChunk)
 const Belgilar        = lazy(belgilarChunk)
 const SignsGamePage   = lazy(signsGameChunk)
@@ -126,7 +126,7 @@ const routeChunkPrefetchers = [
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
   topicsChunk, darslikChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
   streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, speedChunk, flashcardsChunk,
-  formulasChunk, searchChunk, signsGameChunk, rusDarslikChunk, libraryChunk, libraryReaderChunk,
+  formulasChunk, searchChunk, signsGameChunk, courseMapChunk, libraryChunk, libraryReaderChunk,
   interactiveLessonsChunk, reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
@@ -362,7 +362,8 @@ export default function App() {
             <Route path="/test/yim"   element={<Navigate to="/testlar" replace />} />
             <Route path="/test/:id"   element={<TestPage />} />
             <Route path="/darslik"    element={<Darslik />} />
-            <Route path="/darslik/rus-tili" element={<RussianDarslikPage />} />
+            <Route path="/darslik/rus-tili" element={<CourseMapPage />} />
+            <Route path="/darslik/xarita" element={<Navigate to="/darslik/rus-tili" replace />} />
             <Route path="/kutubxona"  element={<LibraryPage />} />
             <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />
             <Route path="/biletlar"   element={<Biletlar />} />

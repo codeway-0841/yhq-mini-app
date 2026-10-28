@@ -1,0 +1,549 @@
+/* ============================================================
+   “Xarita” — darslik kurs xaritasi (Brilliant uslubidagi ko'rinish).
+   Faqat shu sahifaga tegishli; ranglar ilova tokenlaridan olinadi,
+   shuning uchun mavzu (light / dark / accent) bilan birga o'zgaradi.
+   ============================================================ */
+
+/* Ilovadagi shrift — geometrik, bir qavatli “g” (CoFo Brilliant o'rniga DM Sans). */
+@font-face {
+  font-family: 'Cmap Sans';
+  src: url('/fonts/dm-sans-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+.cmap {
+  font-family: 'Cmap Sans', system-ui, sans-serif;
+  --cmap-surface: #fff;
+  --cmap-ink: #000;
+  --cmap-muted: #d0d0d0;
+  --cmap-edge: #e5e5e5;
+  color: var(--cmap-ink);
+  background: var(--cmap-surface);
+  /* Reference map geometry: every lesson slot is a 128×134 art box. */
+  --cmap-node-w: 128px;
+  --cmap-node-h: 134px;
+  --cmap-label-gap: 8px;
+  /* ilovadan olingan ramka ranglari */
+  --cmap-ring: #7491ff;
+  --cmap-ring-idle: #b3b3b3;
+  --cmap-deep: #294bc6;
+}
+
+body[data-theme='dark'] .cmap {
+  --cmap-surface: var(--p-card);
+  --cmap-ink: var(--p-fg);
+  --cmap-muted: var(--p-muted);
+  --cmap-edge: var(--p-line);
+  --cmap-ring-idle: var(--p-line);
+}
+
+body[data-theme='dark'] .cmap-hero-sub,
+body[data-theme='dark'] .cmap-hero-meta,
+body[data-theme='dark'] .cmap-pill-tag { color: var(--p-muted); }
+body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap-ring); }
+
+/* ---------------- yuqori panel (ilovadagidek, mobil) ---------------- */
+
+.cmap-bar { display: none; }
+
+@media (max-width: 1023px) {
+  .cmap-bar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    /* ilovada: status bar 24 + panel 96; qator markazi 70 dp */
+    height: 96px;
+    margin: 0 -1rem;
+    padding: 44px 24px 0;
+    background: var(--cmap-surface);
+  }
+}
+
+.cmap-bar-back {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--cmap-ink);
+  cursor: pointer;
+  transition: transform 0.16s ease;
+}
+
+.cmap-bar-back:active { transform: scale(0.9); }
+
+/* streak pill — 73×37, 2 px #e6e6e6, radius 20 */
+.cmap-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 37px;
+  min-width: 73px;
+  margin-left: 12px;
+  padding: 0 12px 0 14px;
+  border: 2px solid var(--p-line);
+  border-radius: 20px;
+  background: var(--cmap-surface);
+}
+
+.cmap-streak-n {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.3px;
+  color: var(--cmap-ink);
+}
+
+/* scrollda markazda paydo bo'ladigan kurs belgisi */
+.cmap-bar-art {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 22px);
+  width: 40px;
+  height: 48px;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.32s cubic-bezier(0.32, 1.16, 0.36, 1);
+}
+
+.cmap-bar-art[data-visible='true'] { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.cmap-bar-art img { display: block; width: 40px; height: 48px; object-fit: contain; }
+
+.cmap-bar-power {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  padding: 0;
+  border: 2px solid var(--p-line);
+  border-radius: 50%;
+  background: var(--cmap-surface);
+  color: var(--cmap-edge);
+  cursor: pointer;
+  transition: transform 0.16s ease, color 0.2s ease;
+}
+
+.cmap-bar-power:active { transform: scale(0.92); color: var(--p-fg); }
+
+/* ---------------- kurs sarlavhasi (ilovadagi hero) ---------------- */
+
+/* o'lchovlar ilovadan: art 80×96, nom 33/31, tavsif 20/22.7, meta 18 */
+.cmap-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 7px 0 0;
+  text-align: center;
+}
+
+.cmap-hero-art {
+  width: 80px;
+  height: 96px;
+  object-fit: contain;
+}
+
+.cmap-hero-title {
+  margin: 42px 0 0;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: -0.6px;
+  color: var(--cmap-ink);
+}
+
+.cmap-hero-sub {
+  margin: 16px 0 0;
+  max-width: 330px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22.7px;
+  color: #666;
+}
+
+.cmap-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin: 27px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+}
+
+.cmap-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgb(var(--p-warning-rgb, 245 158 11) / 0.14);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.cmap-retry {
+  flex: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--p-surface);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cmap-map {
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 190px; /* karta uchun joy */
+}
+
+.cmap-glow {
+  position: fixed;
+  inset: auto 0 0;
+  height: 160px;
+  z-index: 9;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgb(116 145 255 / 0.2));
+}
+
+.cmap[data-scrolled='true'] .cmap-glow { height: 260px; }
+
+/* ---------------- level (blok) ---------------- */
+
+.cmap-level + .cmap-level { margin-top: 34px; }
+
+.cmap-level-sticky {
+  position: sticky;
+  /* ilovada karta panel ostidan 24 dp pastda yopishadi */
+  top: calc(var(--cmap-header, 96px) + 4px);
+  z-index: 20;
+  padding: 6px 0 8px;
+  background: var(--cmap-surface);
+  box-shadow: 0 -20px 0 var(--cmap-surface);
+}
+
+.cmap-pill-wrap { margin: 0 8px; }
+
+.cmap-pill {
+  display: flex;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  /* Reference: 344×68 face with a 4px raised lower edge. */
+  min-height: 68px;
+  height: 68px;
+  padding: 8px 16px;
+  border: 2px solid var(--cmap-ring-idle, #cccccc);
+  border-radius: 18px;
+  background: var(--cmap-surface);
+  text-align: center;
+  box-shadow: 0 4px 0 var(--cmap-ring-idle);
+}
+
+.cmap-pill.is-current {
+  border-color: var(--cmap-ring, #7491ff);
+  box-shadow: 0 4px 0 var(--cmap-ring, #7491ff);
+}
+
+.cmap-pill-tag {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: #6f6f6f;
+}
+
+.cmap-pill.is-current .cmap-pill-tag { color: var(--cmap-deep, #294bc6); }
+
+.cmap-pill-title {
+  display: block;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--cmap-ink);
+}
+
+.cmap-level[data-complete='true'] .cmap-pill { border-color: var(--cmap-ring, #99aeff); }
+.cmap-level[data-complete='true'] .cmap-pill-tag { color: var(--cmap-deep, #294bc6); }
+
+/* ---------------- tugunlar ---------------- */
+
+.cmap-lessons {
+  list-style: none;
+  /* First gem starts below the pill; 134px art + 14px gap = 148px pitch. */
+  margin: 18px 0 0;
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cmap-row {
+  position: relative;
+  height: 134px;
+  --cmap-effective-off: var(--off, 0px);
+}
+
+@media (max-width: 360px) {
+  .cmap-row { --cmap-effective-off: min(var(--off, 0px), max(0px, calc(100vw - 288px))); }
+}
+
+.cmap-node {
+  position: relative;
+  display: block;
+  height: 134px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cmap-node-art-wrap {
+  position: relative;
+  display: block;
+  width: var(--cmap-node-w);
+  height: var(--cmap-node-h);
+  margin-left: var(--cmap-effective-off);
+}
+
+.cmap-node-art {
+  width: var(--cmap-node-w);
+  height: var(--cmap-node-h);
+  display: block;
+  transition: filter 0.12s ease;
+}
+
+.cmap-node.is-focus:not(.is-active) .cmap-node-art-wrap::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 4px;
+  top: 56px;
+  width: 120px;
+  height: 73px;
+  border: 5px solid #7895ff;
+  border-top-color: #e3e9ff;
+  border-right-color: #e3e9ff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px #fff;
+  pointer-events: none;
+}
+
+.cmap-node-label {
+  position: absolute;
+  top: 79px;
+  left: calc(var(--cmap-effective-off) + 136px);
+  width: min(200px, calc(100% - var(--cmap-effective-off) - 136px));
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--cmap-muted);
+}
+
+.cmap-node.is-focus .cmap-node-label { color: var(--cmap-ink); font-weight: 400; }
+
+.cmap-node.is-done:not(.is-focus) .cmap-node-label { color: var(--cmap-muted); }
+
+.cmap-node[aria-disabled='true'] { cursor: default; }
+
+.cmap-node:focus-visible {
+  outline: 2px solid var(--p-primary);
+  outline-offset: 6px;
+  border-radius: 18px;
+}
+
+@media (hover: hover) {
+  .cmap-node:hover:not([aria-disabled='true']) .cmap-node-art { filter: brightness(0.92); }
+}
+
+/* ---------------- tanlangan mavzu kartasi ---------------- */
+
+/* Ilovada bu qator ekran tubida turadi (191 px baland varaq), shuning uchun
+   u yerda qotirilgan — mavzu o'zgarsa faqat sarlavha yangilanadi. */
+.cmap-sheet {
+  position: fixed;
+  left: var(--cmap-center, 50%);
+  bottom: calc(24px + var(--safe-bottom, 0px));
+  z-index: 30;
+  width: min(calc(100vw - 48px), 472px);
+  min-height: 167px;
+  padding: 32px 16px 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 40px;
+  background: var(--cmap-surface);
+  box-shadow: 0 5px 0 var(--cmap-edge), 0 20px 44px rgb(69 109 255 / 0.15);
+  transform: translate(-50%, 130%);
+  transition: transform 0.46s cubic-bezier(0.32, 1.16, 0.36, 1);
+}
+
+.cmap-sheet[data-open='true'] { transform: translate(-50%, 0); }
+
+.cmap-sheet-title {
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: var(--cmap-ink);
+}
+
+.cmap-start {
+  /* yuz va qirra — ilovadan piksel bo'yicha olingan */
+  --cta-face: #456dff;
+  --cta-lip: #3757cc;
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 24px;
+  overflow: hidden;
+  height: 53px;
+  border: 0;
+  border-radius: 27px;
+  background: var(--cta-lip);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  cursor: pointer;
+  transition: transform 0.12s ease, color 0.3s ease;
+}
+
+/* yuza — qirraning ustida, ostida 5 px to'q qirra ko'rinib turadi */
+.cmap-start::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 5px;
+  border-radius: 27px;
+  background: var(--cta-face);
+  transition: inset 0.12s ease;
+}
+
+/* bosilganda 3 px cho'kadi, qirra siqiladi (ilovadagi kadrlardan) */
+.cmap-start:active { transform: translateY(3px); }
+.cmap-start:active::before { inset: 0 0 2px; }
+
+.cmap-start-label { position: relative; z-index: 2; }
+
+.cmap-start-sheen {
+  position: absolute;
+  inset: 0 0 5px;
+  z-index: 2;
+  border-radius: 27px;
+  pointer-events: none;
+  background: linear-gradient(105deg, rgb(255 255 255 / 0) 32%, rgb(255 255 255 / 0.45) 46%, rgb(255 255 255 / 0) 60%);
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.cmap-start:active .cmap-start-sheen {
+  animation: cmap-sheen 0.5s ease-out;
+}
+
+@keyframes cmap-sheen {
+  0% { transform: translateX(-120%); opacity: 0.9; }
+  100% { transform: translateX(120%); opacity: 0; }
+}
+
+/* Oldindagi (hali ochilmagan) mavzu — ilovadagi “Jump ahead” gradienti.
+   Yuz — 7 to'xtashli gradient, qirra — o'sha gradientning 70 % yorqinligi
+   (ilovada piksel bo'yicha tekshirilgan), matn to'q (#221131). */
+.cmap-sheet[data-ahead='true'] .cmap-start {
+  --cta-face: linear-gradient(
+    93deg,
+    #7891fe 1%,
+    #a491f4 16%,
+    #d190ea 31%,
+    #ff94d8 50%,
+    #fdabaa 68%,
+    #fbbe85 83%,
+    #f9cf62 97%
+  );
+  --cta-lip: linear-gradient(
+    93deg,
+    #5465b2 1%,
+    #7265aa 16%,
+    #9265a3 31%,
+    #b26797 50%,
+    #b17776 68%,
+    #af855d 83%,
+    #ae9044 97%
+  );
+  color: #221131;
+}
+
+.cmap-bonus-art {
+  position: fixed;
+  z-index: 24;
+  left: min(calc(var(--cmap-center, 50%) + 74px), calc(100vw - 112px));
+  bottom: calc(34px + var(--safe-bottom, 0px));
+  width: 100px;
+  height: 94px;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 8px rgb(101 65 169 / 0.17));
+}
+
+.cmap-bonus-art[data-scrolled='true'] {
+  bottom: calc(198px + var(--safe-bottom, 0px));
+}
+
+.cmap-jump {
+  position: fixed;
+  left: max(24px, calc(var(--cmap-center, 50%) - 172px));
+  bottom: calc(40px + var(--safe-bottom, 0px));
+  z-index: 25;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 50%;
+  background: var(--cmap-surface);
+  color: var(--cmap-ink);
+  cursor: pointer;
+}
+
+.cmap-jump[data-scrolled='true'] {
+  bottom: calc(191px + var(--safe-bottom, 0px));
+}
+
+.cmap-jump[data-scrolled='true'] svg { transform: rotate(180deg); }
+
+@media (min-width: 1024px) {
+  .cmap-glow { display: none; }
+}
+
+@media (min-width: 1024px) {
+  .cmap { --cmap-node-w: 128px; --cmap-node-h: 134px; }
+  .cmap-map { padding-bottom: 210px; }
+}
