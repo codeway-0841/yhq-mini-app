@@ -133,17 +133,15 @@ export function BlockReader({
     setTocOpen(false)
   }, [block.id, sectionIndex, source, scrollToTop])
 
-  // Preview'dan "testni boshlash" bosilganda testni darhol ochamiz.
-  useEffect(() => {
-    if (initialQuizOpen) setQuizOpen(true)
-  }, [initialQuizOpen])
-
   useEffect(() => {
     const key = block.id + ':' + sectionIndex
-    if (lastSectionKey.current === key) return
-    lastSectionKey.current = key
-    setQuizOpen(false)
-  }, [block.id, sectionIndex])
+    if (lastSectionKey.current !== key) {
+      lastSectionKey.current = key
+      setQuizOpen(initialQuizOpen)
+    } else if (initialQuizOpen) {
+      setQuizOpen(true)
+    }
+  }, [block.id, sectionIndex, initialQuizOpen])
 
   const toggleToc = () => {
     setTocOpen((open) => {

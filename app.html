@@ -175,26 +175,9 @@
          preload'ni butunlay o'tkazib yuboradi (behuda trafik yo'q), rasmning
          o'zi esa <picture> orqali png'ga tushadi. -->
     <link rel="preload" as="image" type="image/webp" href="/images/splash-mark.webp" />
+    <link rel="preload" href="/fonts/onest-variable.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--
-      Shriftlar ikkiga bo'lingan (boot perf):
-        1) DEFAULT (Inter Tight + Bricolage Grotesque) — har bir userga kerak.
-           media="print" + onload hiylasi: <link> render'ni BLOKLAMAYDI, lekin
-           darhol yuklanadi. font-display=swap tufayli matn system-font bilan
-           birinchi kadrdayoq chiqadi.
-        2) OPTIONAL (Jakarta/Outfit/Lora/JetBrains) — faqat user Sozlamalarda
-           o'sha shriftni tanlasa yuklanadi (src/shared/lib/fonts.ts).
-    -->
-    <link
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all';this.onload=null"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
-    />
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    </noscript>
     <style>
       /* LAUNCH SCREEN — referens (video 00:00–00:04): to'r kataklar (organik 3D to'lqin)
          ko'k fonda chayqaladi, markazdagi belgi esa mayin nafas oladi.

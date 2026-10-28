@@ -90,8 +90,8 @@ export default {
       },
       fontFamily: {
         // Dinamik shriftlar — src/index.css dagi --font-sans va --font-display ga bog'langan (body[data-font])
-        sans:    ['var(--font-sans)', 'Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'Bricolage Grotesque', 'Inter Tight', '-apple-system', 'system-ui', 'sans-serif'],
+        sans:    ['var(--font-sans)', 'Onest', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Onest', '-apple-system', 'system-ui', 'sans-serif'],
         serif:   ['"Young Serif"', 'serif'],
         mono:    ['"Share Tech Mono"', 'monospace'],
       },

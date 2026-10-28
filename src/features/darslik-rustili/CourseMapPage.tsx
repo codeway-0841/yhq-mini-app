@@ -6,6 +6,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller, pageScrollY, scrollPageToTop } from '../../shared/lib/page-scroll'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import {
@@ -15,6 +16,7 @@ import {
   getDarslikBlock,
 } from '../../content/darslik-rustili'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
+import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { BlockReader } from './BlockReader'
 import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
@@ -31,8 +33,8 @@ const reduceMotion = typeof window !== 'undefined'
 const NODE_ART = {
   puck: '/darslik-map/node-puck.svg',
   check: '/darslik-map/node-check.svg',
-  // APNG: 4.07 s loop, 12 fps, 256x268. WebP animations printed by Pillow are
-  // ignored by Chrome, APNG is not.
+  completed: '/darslik-map/node-completed.svg',
+  // Keep the original badge and ring together so no frame is cropped.
   active: reduceMotion ? '/darslik-map/node-active.png' : '/darslik-map/node-active-anim.png',
 }
 
@@ -52,7 +54,7 @@ export default function CourseMapPage() {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
-  const streak = useAppStore((s) => s.streak)
+  const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
   const readByUser = useLessonsStore((s) => s.readByUser)
   const markRead = useLessonsStore((s) => s.markRead)
   const mastery = useDarslikMastery()
@@ -63,7 +65,7 @@ export default function CourseMapPage() {
   const [picked, setPicked] = useState<{ blockId: number; idx: number } | null>(null)
   /** Scroll bilan aniqlanadigan “eng yaqin mavzu” — karta shunga ergashadi. */
   const [focus, setFocus] = useState<{ blockId: number; idx: number } | null>(null)
-  const [reader, setReader] = useState<{ blockId: number; idx: number } | null>(null)
+  const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(null)
   const [openBlocks, setOpenBlocks] = useState<Set<number>>(
     () => new Set(DARSLIK_BLOCKS.map((block) => block.id)),
   )
@@ -117,18 +119,20 @@ export default function CourseMapPage() {
 
   /** Tanlanmagan bo'lsa — ekran tubidagi eng yaqin mavzu, u ham bo'lmasa joriy mavzu. */
   const active = picked ?? focus ?? { blockId: currentBlock.id, idx: currentIdx }
-  /** Gem (animatsiyali tugun) faqat tanlangan yoki joriy mavzuda turadi. */
-  const gemActive = picked ?? { blockId: currentBlock.id, idx: currentIdx }
+  /** Mascot va uning halqasi kartada ko'rsatilayotgan mavzuga birga o'tadi. */
   const outline = getBlockOutline(active.blockId)
-  const activeTitle = outline[active.idx] ?? ''
-  const activeDone = doneFor(active.blockId).includes(active.idx)
-  const activeLocked = lockedFor(active.blockId).includes(active.idx)
+  const activeCheck = active.idx === outline.length
+  const activeTitle = activeCheck ? tt('rusDarslikUnitCheck') : outline[active.idx] ?? ''
+  const activeDone = !activeCheck && doneFor(active.blockId).includes(active.idx)
+  const activeLocked = activeCheck
+    ? doneFor(active.blockId).length < outline.length
+    : lockedFor(active.blockId).includes(active.idx)
   /* Joriy mavzudan oldindagi mavzu — ilovada “Jump ahead” gradienti bilan ko'rsatiladi. */
   const activeAhead = active.blockId > currentBlock.id
     || (active.blockId === currentBlock.id && active.idx > currentIdx)
-  const ctaLabel = activeLocked || activeAhead
+  const ctaLabel = activeLocked || (activeAhead && !activeCheck)
     ? tt('pathJumpAhead')
-    : activeDone ? tt('pathReview') : tt('pathStart')
+    : activeDone || activeCheck ? tt('rusDarslikStartPractice') : tt('pathStart')
 
   /* Panel balandligi (sticky karta uchun) va markazi (pastdagi varaq uchun). */
   useEffect(() => {
@@ -196,6 +200,7 @@ export default function CourseMapPage() {
 
   const jumpMap = useCallback(() => {
     if (scrolled) {
+      setPicked(null)
       scrollPageToTop('smooth')
       return
     }
@@ -241,23 +246,23 @@ export default function CourseMapPage() {
     }
   }, [openBlock])
 
-  const openReader = useCallback(() => {
-    if (lockedFor(active.blockId).includes(active.idx)) return
-    track('rus_darslik_map_open_topic', { block_id: active.blockId, section_idx: active.idx })
-    setReader({ blockId: active.blockId, idx: active.idx })
-  }, [active.blockId, active.idx, lockedFor])
+  const openReader = useCallback((quiz = false) => {
+    if (activeLocked) return
+    track('rus_darslik_map_open_topic', { block_id: active.blockId, section_idx: active.idx, quiz })
+    setReader({ blockId: active.blockId, idx: activeCheck ? outline.length - 1 : active.idx, quiz: quiz || activeCheck })
+  }, [active.blockId, active.idx, activeCheck, activeLocked, outline.length])
 
   /* Ochilmagan mavzuda tugma joriy mavzuga olib boradi (ilovadagi “Jump ahead”). */
   const startCta = useCallback(() => {
-    if (!lockedFor(active.blockId).includes(active.idx)) {
-      openReader()
+    if (!activeLocked) {
+      openReader(activeDone || activeCheck)
       return
     }
     const current = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
     if (current && typeof current.scrollIntoView === 'function') {
       current.scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
-  }, [active.blockId, active.idx, currentBlock.id, currentIdx, lockedFor, openReader])
+  }, [activeLocked, activeDone, activeCheck, currentBlock.id, currentIdx, openReader])
 
   const advanceReader = useCallback(() => {
     if (!reader) return
@@ -376,12 +381,12 @@ export default function CourseMapPage() {
                   <ul className="cmap-lessons" id={`cmap-nodes-${block.id}`}>
                     {sections.map((title, idx) => {
                       const key = keyOf(block.id, idx)
-                      const isActive = gemActive.blockId === block.id && gemActive.idx === idx
+                      const isActive = active.blockId === block.id && active.idx === idx
+                      const isCurrent = currentBlock.id === block.id && currentIdx === idx
                       const isFocus = scrolled && active.blockId === block.id && active.idx === idx
                       const isDone = done.includes(idx)
                       const isLocked = locked.includes(idx)
-                      const isLast = idx === sections.length - 1
-                      const art = isActive ? NODE_ART.active : isLast ? NODE_ART.check : NODE_ART.puck
+                      const art = isActive ? NODE_ART.active : isDone ? NODE_ART.completed : NODE_ART.puck
                       return (
                         <li key={key} className="cmap-row" style={{ '--off': `${wave[idx % wave.length]}px` } as CSSProperties}>
                           <button
@@ -391,7 +396,7 @@ export default function CourseMapPage() {
                               else nodeRefs.current.delete(key)
                             }}
                             className={`cmap-node${isActive ? ' is-active' : ''}${isFocus ? ' is-focus' : ''}${isDone ? ' is-done' : ''}`}
-                            aria-current={isActive ? 'step' : undefined}
+                            aria-current={isCurrent ? 'step' : undefined}
                             aria-disabled={isLocked || undefined}
                             onClick={() => pick(block.id, idx)}
                           >
@@ -403,6 +408,24 @@ export default function CourseMapPage() {
                         </li>
                       )
                     })}
+                    <li className="cmap-row cmap-check-row" style={{ '--off': `${wave[sections.length % wave.length]}px` } as CSSProperties}>
+                      <button
+                        type="button"
+                        ref={(node) => {
+                          const key = keyOf(block.id, sections.length)
+                          if (node) nodeRefs.current.set(key, node)
+                          else nodeRefs.current.delete(key)
+                        }}
+                        className={`cmap-node${scrolled && active.blockId === block.id && active.idx === sections.length ? ' is-focus' : ''}`}
+                        aria-disabled={!complete || undefined}
+                        onClick={() => pick(block.id, sections.length)}
+                      >
+                        <span className="cmap-node-art-wrap">
+                          <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />
+                        </span>
+                        <span className="cmap-node-label">{tt('rusDarslikUnitCheck')}</span>
+                      </button>
+                    </li>
                   </ul>
                 )}
               </section>
@@ -410,43 +433,23 @@ export default function CourseMapPage() {
           })}
 
           {openBlocks.has(active.blockId) && (
-            <div className="cmap-sheet" ref={sheetRef} data-open={scrolled ? 'true' : 'false'} data-ahead={activeLocked || activeAhead ? 'true' : 'false'} data-locked={activeLocked ? 'true' : 'false'}>
+            <div className="cmap-sheet" ref={sheetRef} data-open={scrolled ? 'true' : 'false'} data-ahead={activeLocked || activeAhead ? 'true' : 'false'} data-locked={activeLocked ? 'true' : 'false'} data-done={activeDone ? 'true' : 'false'}>
               <p className="cmap-sheet-title" aria-live="polite">{activeTitle}</p>
               <button type="button" className="cmap-start" onClick={startCta}>
                 <span className="cmap-start-sheen" aria-hidden="true" />
                 <span className="cmap-start-label">{ctaLabel}</span>
               </button>
+              {activeDone && (
+                <button type="button" className="cmap-revisit" onClick={() => openReader(false)} aria-label={tt('pathReview')} title={tt('pathReview')}>
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M4 11a8 8 0 1 1 1.5 5M4 5v6h6" />
+                  </svg>
+                </button>
+              )}
             </div>
           )}
         </div>
       </div>
-
-      <svg className="cmap-bonus-art" data-scrolled={scrolled ? 'true' : 'false'} viewBox="0 0 112 104" fill="none" aria-hidden="true">
-        <defs>
-          <radialGradient id="cmap-pedestal" cx="0" cy="0" r="1" gradientTransform="translate(55 72) rotate(90) scale(28 49)" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#303030" />
-            <stop offset="1" stopColor="#6d6d6d" />
-          </radialGradient>
-          <linearGradient id="cmap-hammer-head" x1="57" y1="18" x2="80" y2="46" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#ff9ad4" /><stop offset="0.58" stopColor="#ffb179" /><stop offset="1" stopColor="#ffd35c" />
-          </linearGradient>
-          <linearGradient id="cmap-hammer-base" x1="20" y1="41" x2="53" y2="67" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#a59aff" /><stop offset="0.55" stopColor="#df85ee" /><stop offset="1" stopColor="#ff8ac9" />
-          </linearGradient>
-        </defs>
-        <ellipse cx="57" cy="81" rx="46" ry="19" fill="#747474" />
-        <ellipse cx="57" cy="74" rx="44" ry="21" fill="url(#cmap-pedestal)" />
-        <g transform="rotate(42 53 42)">
-          <rect x="48" y="30" width="11" height="35" rx="5.5" fill="#f38cbd" />
-          <rect x="47" y="29" width="5" height="33" rx="2.5" fill="#ffb3d3" opacity=".72" />
-          <rect x="39" y="16" width="29" height="23" rx="10" fill="url(#cmap-hammer-head)" />
-          <ellipse cx="42" cy="27.5" rx="10" ry="12" fill="#ffb0d8" />
-          <ellipse cx="66" cy="27.5" rx="8" ry="11.5" fill="#ffbe6b" opacity=".58" />
-          <rect x="36" y="58" width="34" height="25" rx="11" fill="url(#cmap-hammer-base)" />
-          <ellipse cx="38" cy="70.5" rx="11" ry="12.5" fill="#b7a5ff" />
-          <path d="M33 65c5 0 8 3 8 7" stroke="#906fea" strokeWidth="3" strokeLinecap="round" opacity=".7" />
-        </g>
-      </svg>
 
       <button type="button" className="cmap-jump" data-scrolled={scrolled ? 'true' : 'false'} onClick={jumpMap} aria-label={scrolled ? 'Tepaga qaytish' : 'Mavzularga o‘tish'}>
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -461,7 +464,7 @@ export default function CourseMapPage() {
           doneSections={doneFor(reader.blockId)}
           readSections={readFor(reader.blockId)}
           lockedSections={lockedFor(reader.blockId)}
-          initialQuizOpen={false}
+          initialQuizOpen={reader.quiz ?? false}
           onClose={() => setReader(null)}
           onSelectSection={(idx) => setReader({ blockId: reader.blockId, idx })}
           onMarkRead={(idx) => markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + reader.blockId, idx)}

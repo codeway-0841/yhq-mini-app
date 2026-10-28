@@ -16,8 +16,8 @@ export default {
     extend: {
       fontFamily: {
         // styles.css :root'dagi --font-sans/--font-display'ga bog'langan (asosiy config bilan bir xil)
-        sans:    ['var(--font-sans)', 'Inter Tight', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'Bricolage Grotesque', 'Inter Tight', '-apple-system', 'system-ui', 'sans-serif'],
+        sans:    ['var(--font-sans)', 'Onest', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Onest', '-apple-system', 'system-ui', 'sans-serif'],
       },
     },
   },

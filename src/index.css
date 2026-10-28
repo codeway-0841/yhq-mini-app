@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Onest';
+  src: url('/fonts/onest-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* ── Tema tokenlari (v3 "Jade & Stone") ──────────────────────────────────────
    Default: dark (#0e1210 — jade-tomonga iliq grafit; pure black EMAS, navy EMAS,
    GitHub-dark #0d1117 ham EMAS — "tayyor shablon" taassurotini uzoqlashtiradi).
@@ -1297,12 +1305,13 @@ body[data-theme='light'][data-accent='arctic']   { /* Arctic light o'zi — shar
 
 
 /* ── Shrift uslublari (Settings -> Shrift uslubi) ───────────────────────────
-   6 xil zamonaviy font: Inter, Plus Jakarta Sans, Outfit, Bricolage, Lora, JetBrains Mono */
+   Standart Onest lotin va kirillni bir xil oilada ko'rsatadi; qolganlari
+   foydalanuvchining ixtiyoriy tanlovi bo'lib qoladi. */
 :root,
 body,
 body[data-font='default'] {
-  --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-display: 'Bricolage Grotesque', 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-sans: 'Onest', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Onest', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-family: var(--font-sans);
 }
 body[data-font='jakarta'] {

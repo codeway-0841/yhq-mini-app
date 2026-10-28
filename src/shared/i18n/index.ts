@@ -648,7 +648,7 @@ const UZ = {
   shakeToClear: "Tozalash uchun silkitish (Shake)",
   scratchpadCleared: "Qoralama tozalandi 📳",
   shakeHint: "Tozalash uchun silking",
-  fontStyle: "Shrift uslubi", fontDefault: "Inter (Standart)", fontJakarta: "Plus Jakarta (Nafis)", fontRounded: "Outfit (Yumaloq)", fontGrotesk: "Bricolage (Grotesk)", fontSerif: "Lora (Kitobiy)", fontMono: "JetBrains (Kod)",
+  fontStyle: "Shrift uslubi", fontDefault: "Onest (Standart)", fontJakarta: "Plus Jakarta (Nafis)", fontRounded: "Outfit (Yumaloq)", fontGrotesk: "Bricolage (Grotesk)", fontSerif: "Lora (Kitobiy)", fontMono: "JetBrains (Kod)",
   reportIssue: "Xatolik haqida xabar berish", saveBtn: "Saqlash",
   uzLang: "O'zbekcha", ruLang: "Русский",
   // Daily Challenge
@@ -1157,6 +1157,7 @@ const UZ = {
   rusDarslikLessonRemoveToken: "{token} so‘zini olib tashlash",
   rusDarslikLessonClear: "Tozalash",
   rusDarslikUnitBadge: "{unit}-bo‘lim",
+  rusDarslikUnitCheck: "Bo‘lim tekshiruvi",
   rusDarslikStageBadge: "{stage}-bosqich",
   rusDarslikCourseProgress: "Kurs progressi",
   rusDarslikListenExample: "Talaffuzni eshitish",
@@ -1807,7 +1808,7 @@ const RU: Record<Keys, string> = {
   shakeToClear: "Встряхнуть для очистки",
   scratchpadCleared: "Черновик очищен 📳",
   shakeHint: "Встряхните для очистки",
-  fontStyle: "Стиль шрифта", fontDefault: "Inter (Стандарт)", fontJakarta: "Plus Jakarta (Эстетичный)", fontRounded: "Outfit (Скругленный)", fontGrotesk: "Bricolage (Гротеск)", fontSerif: "Lora (Книжный)", fontMono: "JetBrains (Моно)",
+  fontStyle: "Стиль шрифта", fontDefault: "Onest (Стандарт)", fontJakarta: "Plus Jakarta (Эстетичный)", fontRounded: "Outfit (Скругленный)", fontGrotesk: "Bricolage (Гротеск)", fontSerif: "Lora (Книжный)", fontMono: "JetBrains (Моно)",
   reportIssue: "Сообщить об ошибке", saveBtn: "Сохранить",
   uzLang: "O'zbekcha", ruLang: "Русский",
   // Daily Challenge
@@ -2316,6 +2317,7 @@ const RU: Record<Keys, string> = {
   rusDarslikLessonRemoveToken: "Убрать слово «{token}»",
   rusDarslikLessonClear: "Очистить",
   rusDarslikUnitBadge: "Раздел {unit}",
+  rusDarslikUnitCheck: "Проверка раздела",
   rusDarslikStageBadge: "Этап {stage}",
   rusDarslikCourseProgress: "Прогресс курса",
   rusDarslikListenExample: "Прослушать произношение",

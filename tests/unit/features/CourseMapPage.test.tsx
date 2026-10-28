@@ -1,4 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { readFileSync } from 'node:fs'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import CourseMapPage from '../../../src/features/darslik-rustili/CourseMapPage'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
@@ -36,20 +37,43 @@ afterEach(() => {
 })
 
 describe('CourseMapPage — kurs xaritasi', () => {
+  it('faol tugun animatsiyasida aylanishlar orasida uzun pauza yo‘q', () => {
+    const png = readFileSync('public/darslik-map/node-active-anim.png')
+    const frameDurations: number[] = []
+    for (let offset = 8; offset + 12 <= png.length;) {
+      const length = png.readUInt32BE(offset)
+      const type = png.toString('ascii', offset + 4, offset + 8)
+      if (type === 'fcTL') {
+        const numerator = png.readUInt16BE(offset + 28)
+        const denominator = png.readUInt16BE(offset + 30)
+        frameDurations.push(Math.round(1000 * numerator / denominator))
+      }
+      offset += length + 12
+      if (type === 'IEND') break
+    }
+    expect(frameDurations).toHaveLength(41)
+    expect(frameDurations.every((duration) => duration === 83)).toBe(true)
+  })
+
   it('har bir blok uchun pill va mavzu tugunlarini chizadi', async () => {
     render(<CourseMapPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
     expect(screen.getAllByRole('heading', { name: 'Rus tili darsligi' }).length).toBeGreaterThan(0)
     expect(document.querySelectorAll('.cmap-level')).toHaveLength(DARSLIK_BLOCKS.length)
-    expect(nodesOf(1)).toHaveLength(getBlockOutline(1).length)
-    expect(nodesOf(2)).toHaveLength(getBlockOutline(2).length)
+    expect(document.querySelector('.cmap-bonus-art')).toBeNull()
+    expect(nodesOf(1)).toHaveLength(getBlockOutline(1).length + 1)
+    expect(nodesOf(2)).toHaveLength(getBlockOutline(2).length + 1)
     expect(document.querySelectorAll('.cmap-pill[aria-expanded="true"]')).toHaveLength(DARSLIK_BLOCKS.length)
     expect(nodesOf(1)[0].parentElement?.style.getPropertyValue('--off')).toBe('0px')
     expect(nodesOf(2)[0].parentElement?.style.getPropertyValue('--off')).toBe('50px')
 
     // pill sarlavhasi — blok nomi
     expect(document.getElementById('cmap-level-1')!.textContent).toContain(DARSLIK_BLOCKS[0].titleUz)
+    expect(nodesOf(1)[getBlockOutline(1).length]).toHaveTextContent('Bo‘lim tekshiruvi')
+    expect(nodesOf(1)[getBlockOutline(1).length - 1].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
+    expect(nodesOf(1)[getBlockOutline(1).length].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-check.svg')
+    expect(nodesOf(1)[getBlockOutline(1).length]).toHaveAttribute('aria-disabled', 'true')
   })
 
   it('birinchi mavzu joriy holatda, karta uning nomini ko‘rsatadi', async () => {
@@ -58,11 +82,13 @@ describe('CourseMapPage — kurs xaritasi', () => {
 
     const first = nodesOf(1)[0]
     expect(first).toHaveAttribute('aria-current', 'step')
+    expect(first.querySelector('.cmap-node-art')).toHaveAttribute('src', '/darslik-map/node-active-anim.png')
+    expect(first.querySelector('.cmap-gem')).toBeNull()
     expect(sheet().querySelector('.cmap-sheet-title')!.textContent).toBe(getBlockOutline(1)[0])
     expect(within(sheet()).getByRole('button', { name: 'Boshlash' })).toBeEnabled()
   })
 
-  it('boshqa tugun tanlansa karta sarlavhasi va joriy tugun yangilanadi', async () => {
+  it('boshqa tugun tanlansa karta bilan mascot va ko‘k halqa ham unga o‘tadi', async () => {
     render(<CourseMapPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
@@ -70,8 +96,26 @@ describe('CourseMapPage — kurs xaritasi', () => {
     fireEvent.click(nodesOf(1)[target])
 
     await waitFor(() => expect(sheet().querySelector('.cmap-sheet-title')!.textContent).toBe(getBlockOutline(1)[target]))
-    expect(nodesOf(1)[target]).toHaveAttribute('aria-current', 'step')
+    expect(nodesOf(1)[target]).not.toHaveAttribute('aria-current')
+    expect(nodesOf(1)[0]).toHaveAttribute('aria-current', 'step')
+    expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
+    expect(nodesOf(1)[target].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-anim.png')
+    expect(document.querySelectorAll('img[src="/darslik-map/node-active-anim.png"]')).toHaveLength(1)
+  })
+
+  it('o‘tilgan mavzu ko‘k belgi va alohida mashq/qayta o‘qish tugmalarini ko‘rsatadi', async () => {
+    vi.mocked(api.getDarslikProgress).mockResolvedValue({ passed: ['1:0'] })
+    render(<CourseMapPage />)
+
+    await waitFor(() => expect(nodesOf(1)[1]).toHaveAttribute('aria-current', 'step'))
+    expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-completed.svg')
+    fireEvent.click(nodesOf(1)[0])
+
     expect(nodesOf(1)[0]).not.toHaveAttribute('aria-current')
+    expect(nodesOf(1)[1]).toHaveAttribute('aria-current', 'step')
+    expect(sheet()).toHaveAttribute('data-done', 'true')
+    expect(within(sheet()).getByRole('button', { name: 'Mashqni boshlash' })).toBeEnabled()
+    expect(within(sheet()).getByRole('button', { name: 'Qayta o‘qish' })).toBeEnabled()
   })
 
   it('ketma-ketlik yopiq mavzuni tanlashda “Boshlash” o‘chirilgan bo‘ladi', async () => {
@@ -83,5 +127,20 @@ describe('CourseMapPage — kurs xaritasi', () => {
 
     await waitFor(() => expect(sheet()).toHaveAttribute('data-locked', 'true'))
     expect(nodesOf(1)[lockedIdx]).toHaveAttribute('aria-disabled', 'true')
+  })
+
+  it('bo‘lim tekshiruvi mavzulardan alohida, blok tugagach mashqqa olib kiradi', async () => {
+    vi.mocked(api.getDarslikProgress).mockResolvedValue({
+      passed: getBlockOutline(1).map((_, idx) => `1:${idx}`),
+    })
+    render(<CourseMapPage />)
+    await waitFor(() => expect(nodesOf(2)[0]).toHaveAttribute('aria-current', 'step'))
+
+    fireEvent.click(nodesOf(1)[getBlockOutline(1).length])
+    expect(nodesOf(1)[getBlockOutline(1).length]).not.toHaveAttribute('aria-disabled')
+    expect(sheet()).toHaveAttribute('data-locked', 'false')
+    expect(sheet().querySelector('.cmap-sheet-title')).toHaveTextContent('Bo‘lim tekshiruvi')
+    fireEvent.click(within(sheet()).getByRole('button', { name: 'Mashqni boshlash' }))
+    await waitFor(() => expect(document.querySelector('[data-testid="topic-check"]')).not.toBeNull())
   })
 })

@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Onest';
+  src: url('/fonts/onest-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 /* ── KIVVI Landing — dizayn tizimi (Linear × Termius, faqat dark) ────────────
    Alohida entry: app'dagi tema tokenlariga bog'liq EMAS. Sovuq near-black,
    brend ko'k aksent (#146fdd — logo'dan; 2026-09 kontrast fix: oq matn 4.83:1), nozik grid + glow + spotlight kartalar.
@@ -26,8 +34,8 @@
   --l-red: #f45d5d;
 
   /* tailwind.config fontFamily bog'lanadi */
-  --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-display: 'Bricolage Grotesque', 'Inter Tight', -apple-system, system-ui, sans-serif;
+  --font-sans: 'Onest', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: 'Onest', -apple-system, system-ui, sans-serif;
 
   color-scheme: dark;
 }

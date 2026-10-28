@@ -1,19 +1,11 @@
 /* ============================================================
    “Xarita” — darslik kurs xaritasi (Brilliant uslubidagi ko'rinish).
-   Faqat shu sahifaga tegishli; ranglar ilova tokenlaridan olinadi,
-   shuning uchun mavzu (light / dark / accent) bilan birga o'zgaradi.
+   Faqat shu sahifaga tegishli. Xarita referensdagidek oq sirtli,
+   ilovaning umumiy dark/light temasi bu sahifa ranglarini o'zgartirmaydi.
    ============================================================ */
 
-/* Ilovadagi shrift — geometrik, bir qavatli “g” (CoFo Brilliant o'rniga DM Sans). */
-@font-face {
-  font-family: 'Cmap Sans';
-  src: url('/fonts/dm-sans-latin.woff2') format('woff2');
-  font-weight: 100 900;
-  font-display: swap;
-}
-
 .cmap {
-  font-family: 'Cmap Sans', system-ui, sans-serif;
+  font-family: var(--font-sans);
   --cmap-surface: #fff;
   --cmap-ink: #000;
   --cmap-muted: #d0d0d0;
@@ -29,19 +21,6 @@
   --cmap-ring-idle: #b3b3b3;
   --cmap-deep: #294bc6;
 }
-
-body[data-theme='dark'] .cmap {
-  --cmap-surface: var(--p-card);
-  --cmap-ink: var(--p-fg);
-  --cmap-muted: var(--p-muted);
-  --cmap-edge: var(--p-line);
-  --cmap-ring-idle: var(--p-line);
-}
-
-body[data-theme='dark'] .cmap-hero-sub,
-body[data-theme='dark'] .cmap-hero-meta,
-body[data-theme='dark'] .cmap-pill-tag { color: var(--p-muted); }
-body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap-ring); }
 
 /* ---------------- yuqori panel (ilovadagidek, mobil) ---------------- */
 
@@ -86,7 +65,7 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   min-width: 73px;
   margin-left: 12px;
   padding: 0 12px 0 14px;
-  border: 2px solid var(--p-line);
+  border: 2px solid var(--cmap-edge);
   border-radius: 20px;
   background: var(--cmap-surface);
 }
@@ -123,7 +102,7 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   height: 44px;
   margin-left: auto;
   padding: 0;
-  border: 2px solid var(--p-line);
+  border: 2px solid var(--cmap-edge);
   border-radius: 50%;
   background: var(--cmap-surface);
   color: var(--cmap-edge);
@@ -131,7 +110,7 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   transition: transform 0.16s ease, color 0.2s ease;
 }
 
-.cmap-bar-power:active { transform: scale(0.92); color: var(--p-fg); }
+.cmap-bar-power:active { transform: scale(0.92); color: var(--cmap-ink); }
 
 /* ---------------- kurs sarlavhasi (ilovadagi hero) ---------------- */
 
@@ -196,7 +175,7 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   flex: none;
   padding: 6px 10px;
   border-radius: 10px;
-  background: var(--p-surface);
+  background: #f8f8f8;
   font-size: 11.5px;
   font-weight: 600;
   cursor: pointer;
@@ -334,26 +313,11 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   transition: filter 0.12s ease;
 }
 
-.cmap-node.is-focus:not(.is-active) .cmap-node-art-wrap::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  left: 4px;
-  top: 56px;
-  width: 120px;
-  height: 73px;
-  border: 5px solid #7895ff;
-  border-top-color: #e3e9ff;
-  border-right-color: #e3e9ff;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 4px #fff;
-  pointer-events: none;
-}
-
 .cmap-node-label {
   position: absolute;
-  top: 79px;
+  top: 93px;
   left: calc(var(--cmap-effective-off) + 136px);
+  transform: translateY(-50%);
   width: min(200px, calc(100% - var(--cmap-effective-off) - 136px));
   display: -webkit-box;
   overflow: hidden;
@@ -368,12 +332,14 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
 
 .cmap-node.is-focus .cmap-node-label { color: var(--cmap-ink); font-weight: 400; }
 
+.cmap-node.is-active .cmap-node-label { top: 101px; }
+
 .cmap-node.is-done:not(.is-focus) .cmap-node-label { color: var(--cmap-muted); }
 
 .cmap-node[aria-disabled='true'] { cursor: default; }
 
 .cmap-node:focus-visible {
-  outline: 2px solid var(--p-primary);
+  outline: 2px solid var(--cmap-ring);
   outline-offset: 6px;
   border-radius: 18px;
 }
@@ -454,6 +420,26 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
 
 .cmap-start-label { position: relative; z-index: 2; }
 
+.cmap-sheet[data-done='true'] .cmap-start { right: 80px; }
+
+.cmap-revisit {
+  position: absolute;
+  right: 16px;
+  bottom: 24px;
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 50%;
+  background: var(--cmap-surface);
+  color: var(--cmap-ink);
+  cursor: pointer;
+}
+
+.cmap-revisit:focus-visible { outline: 2px solid var(--cmap-ring); outline-offset: 3px; }
+
 .cmap-start-sheen {
   position: absolute;
   inset: 0 0 5px;
@@ -501,21 +487,6 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   color: #221131;
 }
 
-.cmap-bonus-art {
-  position: fixed;
-  z-index: 24;
-  left: min(calc(var(--cmap-center, 50%) + 74px), calc(100vw - 112px));
-  bottom: calc(34px + var(--safe-bottom, 0px));
-  width: 100px;
-  height: 94px;
-  pointer-events: none;
-  filter: drop-shadow(0 8px 8px rgb(101 65 169 / 0.17));
-}
-
-.cmap-bonus-art[data-scrolled='true'] {
-  bottom: calc(198px + var(--safe-bottom, 0px));
-}
-
 .cmap-jump {
   position: fixed;
   left: max(24px, calc(var(--cmap-center, 50%) - 172px));
@@ -531,13 +502,19 @@ body[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap
   background: var(--cmap-surface);
   color: var(--cmap-ink);
   cursor: pointer;
+  transition: bottom 0.36s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .cmap-jump[data-scrolled='true'] {
-  bottom: calc(191px + var(--safe-bottom, 0px));
+  /* Asl ilovada tugma pastki varaqning yuqori chizig'idan 17 px ajralgan. */
+  bottom: calc(208px + var(--safe-bottom, 0px));
 }
 
 .cmap-jump[data-scrolled='true'] svg { transform: rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cmap-jump { transition: none; }
+}
 
 @media (min-width: 1024px) {
   .cmap-glow { display: none; }

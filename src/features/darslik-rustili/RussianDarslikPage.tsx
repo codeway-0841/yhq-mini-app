@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
-  ArrowDown, ChevronDown, ChevronUp,
+  ArrowDown, ChevronDown, ChevronUp, Map as MapIcon,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import { PageHeader } from '../../shared/components/ui/page-header'
@@ -226,6 +226,15 @@ export default function RussianDarslikPage() {
         backLabel={tt('backWord')}
         actions={(
           <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => navigate('/darslik/xarita')}
+              aria-label={lang === 'ru' ? 'Карта курса' : 'Kurs xaritasi'}
+              title={lang === 'ru' ? 'Карта курса' : 'Kurs xaritasi'}
+              className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-pmuted active:scale-95"
+            >
+              <MapIcon size={16} />
+            </button>
             {streak > 0 && (
               <span className="flex items-center rounded-xl bg-[rgb(var(--p-warning-rgb)/0.14)] px-2 py-1 text-[11px] font-extrabold tabular-nums text-pwarning">
                 {streak}d

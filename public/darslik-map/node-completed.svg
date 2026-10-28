@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="134" viewBox="0 0 128 134" fill="none">
+  <defs>
+    <clipPath id="completed-disk-outline">
+      <ellipse cx="64" cy="88.5" rx="46" ry="27.5"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(1 0)">
+    <ellipse cx="64" cy="88.5" rx="46" ry="27.5" fill="#3a62f4"/>
+    <g clip-path="url(#completed-disk-outline)">
+      <path d="M37 96c8 5 17 8 27 8s19-3 27-8l15 18-42 12-42-12 15-18Z" fill="#5f82ff"/>
+    </g>
+    <ellipse cx="64" cy="83" rx="37.5" ry="22" fill="#9bb1ff"/>
+    <path d="M62 65c-16 0-28 8-28 18s12 18 28 18v-5c-12 0-21-6-21-13s9-13 21-13v-5Z" fill="#cfd9ff"/>
+    <path d="M66 65c16 0 28 8 28 18s-12 18-28 18v-5c12 0 21-6 21-13s-9-13-21-13v-5Z" fill="#cfd9ff"/>
+    <path d="m55 82 3-2 4 3 10-6 2 3-12 9-7-7Z" fill="#fff"/>
+  </g>
+</svg>
