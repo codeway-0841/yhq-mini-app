@@ -10,7 +10,7 @@
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
-const CACHE = 'yhq-app-v4'
+const CACHE = 'yhq-app-v5'
 
 // Savol rasmlari ALOHIDA keshda: /public/images ~84 MB va user ko'rgan har bir
 // rasm keshga tushardi — cheklovsiz. Qurilma xotirasi vaqt o'tib shuncha tomon
@@ -25,7 +25,9 @@ const isImageAsset = (path) => path.startsWith('/images/')
 
 const isStaticAsset = (path) =>
   path.startsWith('/assets/') ||
-  /\.(js|css|jpg|jpeg|png|webp|svg|woff2?)$/.test(path)
+  path.startsWith('/brilliant/') ||
+  path.startsWith('/darslik-map/') ||
+  /\.(js|css|jpg|jpeg|png|webp|svg|woff2?|riv|wasm)$/.test(path)
 
 // Avatar — /api/ ostida, lekin bu RASM va deyarli o'zgarmaydi. Keshsiz
 // bo'lgani uchun har ochilishda Vercel funksiyasi + DB ga round-trip ketardi

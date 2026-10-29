@@ -20,6 +20,13 @@
   --cmap-ring: #7491ff;
   --cmap-ring-idle: #b3b3b3;
   --cmap-deep: #294bc6;
+  --cmap-header: calc(52px + var(--safe-top, 0px));
+}
+
+@media (min-width: 1024px) {
+  .cmap {
+    --cmap-header: 0px;
+  }
 }
 
 /* ---------------- yuqori panel (ilovadagidek, mobil) ---------------- */
@@ -33,10 +40,9 @@
     z-index: 30;
     display: flex;
     align-items: center;
-    /* ilovada: status bar 24 + panel 96; qator markazi 70 dp */
-    height: 96px;
-    margin: 0 -1rem;
-    padding: 44px 24px 0;
+    height: calc(52px + var(--safe-top, 0px));
+    margin: calc(-1 * var(--safe-top-body, 0px)) -1rem 0;
+    padding: var(--safe-top, 0px) 16px 0;
     background: var(--cmap-surface);
   }
 }
@@ -82,7 +88,7 @@
 .cmap-bar-art {
   position: absolute;
   left: 50%;
-  top: calc(50% + 22px);
+  top: calc(50% + var(--safe-top, 0px) / 2);
   width: 40px;
   height: 48px;
   transform: translate(-50%, -50%) scale(0.9);
@@ -114,46 +120,46 @@
 
 /* ---------------- kurs sarlavhasi (ilovadagi hero) ---------------- */
 
-/* o'lchovlar ilovadan: art 80×96, nom 33/31, tavsif 20/22.7, meta 18 */
+/* o'lchovlar: art 68×82, nom 26/28, ixcham va toza */
 .cmap-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 7px 0 0;
+  padding: 10px 0 0;
   text-align: center;
 }
 
 .cmap-hero-art {
-  width: 80px;
-  height: 96px;
+  width: 68px;
+  height: 82px;
   object-fit: contain;
 }
 
 .cmap-hero-title {
-  margin: 42px 0 0;
-  font-size: 33px;
+  margin: 12px 0 0;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 31px;
-  letter-spacing: -0.6px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
   color: var(--cmap-ink);
 }
 
 .cmap-hero-sub {
-  margin: 16px 0 0;
-  max-width: 330px;
-  font-size: 20px;
+  margin: 6px 0 0;
+  max-width: 320px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 22.7px;
+  line-height: 20px;
   color: #666;
 }
 
 .cmap-hero-meta {
   display: flex;
   align-items: center;
-  gap: 34px;
-  margin: 27px 0 0;
-  font-size: 18px;
+  gap: 18px;
+  margin: 10px 0 0;
+  font-size: 13.5px;
   font-weight: 500;
   color: #111;
 }
@@ -183,7 +189,7 @@
 
 .cmap-map {
   position: relative;
-  padding-top: 53px;
+  padding-top: 14px;
   padding-bottom: 190px; /* karta uchun joy */
 }
 
@@ -204,10 +210,9 @@
 
 .cmap-level-sticky {
   position: sticky;
-  /* ilovada karta panel ostidan 24 dp pastda yopishadi */
-  top: calc(var(--cmap-header, 96px) + 4px);
+  top: calc(var(--cmap-header, 52px) + 2px);
   z-index: 20;
-  padding: 6px 0 8px;
+  padding: 4px 0 6px;
   background: var(--cmap-surface);
   box-shadow: 0 -20px 0 var(--cmap-surface);
 }
