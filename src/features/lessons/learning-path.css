@@ -199,6 +199,22 @@
 }
 .learning-tile > svg { width: 100%; height: 100%; }
 
+.learning-tile[data-state='current'] {
+  --tile-color: #2563eb;
+  --tile-cap-top: #60a5fa;
+  --tile-light: #93c5fd;
+  --tile-side: #1d4ed8;
+  --tile-edge: #3b82f6;
+  filter: drop-shadow(0 4px 14px rgba(37, 99, 235, 0.45));
+}
+.learning-tile[data-state='current'] .learning-orbit {
+  opacity: 1;
+  stroke: #60a5fa;
+  stroke-width: 3.5;
+  stroke-dasharray: 26 74;
+  filter: drop-shadow(0 0 6px #3b82f6) drop-shadow(0 0 10px rgba(96, 165, 250, 0.8));
+}
+
 .learning-tile[data-state='unread'] {
   --tile-color: color-mix(in srgb, var(--p-primary) 26%, var(--p-surface));
   --tile-cap-top: color-mix(in srgb, var(--p-primary) 22%, var(--p-card));
