@@ -4,6 +4,21 @@ import './rive-canvas.css'
 
 type CanvasStatus = 'loading' | 'ready' | 'error'
 
+let wasmConfigured = false
+const rivBufferCache = new Map<string, Promise<ArrayBuffer>>()
+
+function getRivBuffer(file: string): Promise<ArrayBuffer> {
+  let p = rivBufferCache.get(file)
+  if (!p) {
+    p = fetch(`/brilliant/${file}`).then((r) => {
+      if (!r.ok) throw new Error(`Failed to load /brilliant/${file}: HTTP ${r.status}`)
+      return r.arrayBuffer()
+    })
+    rivBufferCache.set(file, p)
+  }
+  return p
+}
+
 export function RiveCanvas({
   file,
   animation,
@@ -38,12 +53,24 @@ export function RiveCanvas({
     let resizeObserver: ResizeObserver | null = null
     setStatus('loading')
 
-    void import('@rive-app/webgl2').then(async ({ Rive, RuntimeLoader, Layout, Fit }) => {
-      const { default: wasmUrl } = await import('@rive-app/webgl2/rive.wasm?url')
+    void Promise.all([
+      import('@rive-app/webgl2'),
+      getRivBuffer(file).catch(() => null),
+    ]).then(async ([pkg, buffer]) => {
+      const riveModule = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2')
+      const { Rive, RuntimeLoader, Layout, Fit } = riveModule
+      if (!wasmConfigured) {
+        try {
+          const wasmMod = await import('@rive-app/webgl2/rive.wasm?url')
+          const wasmUrl = (wasmMod as { default?: string }).default ?? wasmMod
+          if (RuntimeLoader && typeof wasmUrl === 'string') {
+            RuntimeLoader.setWasmUrl(wasmUrl)
+            wasmConfigured = true
+          }
+        } catch (_) {}
+      }
       if (disposed) return
-      RuntimeLoader.setWasmUrl(wasmUrl)
-      instance = new Rive({
-        src: `/brilliant/${file}`,
+      const riveConfig: ConstructorParameters<typeof Rive>[0] = {
         canvas,
         animations: [animationRef.current],
         autoplay: playRef.current,
@@ -51,7 +78,9 @@ export function RiveCanvas({
         isTouchScrollEnabled: true,
         onLoad: () => {
           if (disposed) return
-          instance?.resizeDrawingSurfaceToCanvas()
+          try {
+            instance?.resizeDrawingSurfaceToCanvas()
+          } catch (_) {}
           if (playRef.current) {
             instance?.play(animationRef.current)
           } else {
@@ -63,9 +92,19 @@ export function RiveCanvas({
         onLoadError: () => {
           if (!disposed) setStatus('error')
         },
-      })
+      }
+      if (buffer) {
+        riveConfig.buffer = buffer.slice(0)
+      } else {
+        riveConfig.src = `/brilliant/${file}`
+      }
+      instance = new Rive(riveConfig)
       if (typeof ResizeObserver !== 'undefined') {
-        resizeObserver = new ResizeObserver(() => instance?.resizeDrawingSurfaceToCanvas())
+        resizeObserver = new ResizeObserver(() => {
+          try {
+            instance?.resizeDrawingSurfaceToCanvas()
+          } catch (_) {}
+        })
         resizeObserver.observe(canvas)
       }
     }).catch(() => {
