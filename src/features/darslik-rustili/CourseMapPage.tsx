@@ -23,9 +23,9 @@ import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
 import './course-map.css'
 
-/** Birinchi blok chapdan, keyingi bloklar esa o'rta nuqtadan boshlanadi. */
-const FIRST_WAVE = [0, 50, 100, 50]
-const NEXT_WAVE = [50, 0, 50, 100]
+/** Bo'sh joy bo'ylab 50% → 0% → 50% → 100% egri yo'l. */
+const HALF_WAVE = 'calc(var(--cmap-wave-space) / 2)'
+const WAVE_OFFSETS = [HALF_WAVE, '0px', HALF_WAVE, 'var(--cmap-wave-space)']
 
 const NODE_ART = {
   puck: '/darslik-map/node-puck.svg',
@@ -139,7 +139,8 @@ export default function CourseMapPage() {
     const measure = () => {
       root.style.setProperty('--cmap-header', `${header.getBoundingClientRect().height}px`)
       const rect = root.getBoundingClientRect()
-      root.style.setProperty('--cmap-center', `${Math.round(rect.left + rect.width / 2)}px`)
+      const pill = root.querySelector<HTMLElement>('.cmap-pill')?.getBoundingClientRect()
+      root.style.setProperty('--cmap-center', `${Math.round(pill ? pill.left + pill.width / 2 : rect.left + rect.width / 2)}px`)
     }
     measure()
     window.addEventListener('resize', measure)
@@ -319,7 +320,7 @@ export default function CourseMapPage() {
         </button>
       </header>
 
-      <div className="mx-auto w-full max-w-[520px]">
+      <div className="cmap-layout mx-auto w-full">
         <section className="cmap-hero">
           <img className="cmap-hero-art" src="/darslik-map/course-art.png" alt="" width={80} height={96} />
           <h1 className="cmap-hero-title">{tt('rusDarslikTitle')}</h1>
@@ -346,7 +347,6 @@ export default function CourseMapPage() {
             const done = doneFor(block.id)
             const complete = done.length >= sections.length
             const locked = lockedFor(block.id)
-            const wave = block.id === DARSLIK_BLOCKS[0].id ? FIRST_WAVE : NEXT_WAVE
             const isCurrentLevel = block.id === currentBlock.id
             const isOpen = openBlocks.has(block.id)
             return (
@@ -385,7 +385,7 @@ export default function CourseMapPage() {
                       const isLocked = locked.includes(idx)
                       const art = isActive ? NODE_ART.active : isDone ? NODE_ART.completed : NODE_ART.puck
                       return (
-                        <li key={key} className="cmap-row" style={{ '--off': `${wave[idx % wave.length]}px` } as CSSProperties}>
+                        <li key={key} className="cmap-row" style={{ '--off': WAVE_OFFSETS[idx % WAVE_OFFSETS.length] } as CSSProperties}>
                           <button
                             type="button"
                             ref={(node) => {
@@ -410,7 +410,7 @@ export default function CourseMapPage() {
                         </li>
                       )
                     })}
-                    <li className="cmap-row cmap-check-row" style={{ '--off': `${wave[sections.length % wave.length]}px` } as CSSProperties}>
+                    <li className="cmap-row cmap-check-row" style={{ '--off': WAVE_OFFSETS[sections.length % WAVE_OFFSETS.length] } as CSSProperties}>
                       <button
                         type="button"
                         ref={(node) => {
@@ -437,17 +437,36 @@ export default function CourseMapPage() {
           {openBlocks.has(active.blockId) && (
             <div className="cmap-sheet" ref={sheetRef} data-open={scrolled ? 'true' : 'false'} data-ahead={activeLocked || activeAhead ? 'true' : 'false'} data-locked={activeLocked ? 'true' : 'false'} data-done={activeDone ? 'true' : 'false'}>
               <p className="cmap-sheet-title" aria-live="polite">{activeTitle}</p>
-              <button type="button" className="cmap-start" onClick={startCta}>
-                <span className="cmap-start-sheen" aria-hidden="true" />
-                <span className="cmap-start-label">{ctaLabel}</span>
-              </button>
-              {activeDone && (
-                <button type="button" className="cmap-revisit" onClick={() => openReader(false)} aria-label={tt('pathReview')} title={tt('pathReview')}>
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M4 11a8 8 0 1 1 1.5 5M4 5v6h6" />
-                  </svg>
+              <div className="cmap-sheet-actions">
+                <button type="button" className="cmap-start" onClick={startCta}>
+                  <span className="cmap-start-sheen" aria-hidden="true">
+                    <span className="cmap-start-sheen-mover">
+                      <svg viewBox="0 0 150 56" width="150" height="56" fill="none" aria-hidden="true">
+                        <defs>
+                          <linearGradient id="cmap-sheen-wide" x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
+                            <stop offset="27%" stopColor="#f5efff" />
+                            <stop offset="71%" stopColor="#fff" stopOpacity="0" />
+                          </linearGradient>
+                          <linearGradient id="cmap-sheen-narrow" x1="140.826" y1="-28.1328" x2="140.826" y2="121.8672" gradientUnits="userSpaceOnUse">
+                            <stop offset="8%" stopColor="#f5efff" />
+                            <stop offset="57%" stopColor="#fff" stopOpacity="0" />
+                          </linearGradient>
+                        </defs>
+                        <rect x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill="url(#cmap-sheen-wide)" opacity=".4" />
+                        <rect x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill="url(#cmap-sheen-narrow)" opacity=".4" />
+                      </svg>
+                    </span>
+                  </span>
+                  <span className="cmap-start-label">{ctaLabel}</span>
                 </button>
-              )}
+                {activeDone && (
+                  <button type="button" className="cmap-revisit" onClick={() => openReader(false)} aria-label={tt('pathReview')} title={tt('pathReview')}>
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M4 11a8 8 0 1 1 1.5 5M4 5v6h6" />
+                    </svg>
+                  </button>
+                )}
+              </div>
             </div>
           )}
         </div>

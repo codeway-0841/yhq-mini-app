@@ -1,5 +1,4 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { readFileSync } from 'node:fs'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import CourseMapPage from '../../../src/features/darslik-rustili/CourseMapPage'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
@@ -37,22 +36,15 @@ afterEach(() => {
 })
 
 describe('CourseMapPage — kurs xaritasi', () => {
-  it('faol tugun animatsiyasida aylanishlar orasida uzun pauza yo‘q', () => {
-    const png = readFileSync('public/darslik-map/node-active-anim.png')
-    const frameDurations: number[] = []
-    for (let offset = 8; offset + 12 <= png.length;) {
-      const length = png.readUInt32BE(offset)
-      const type = png.toString('ascii', offset + 4, offset + 8)
-      if (type === 'fcTL') {
-        const numerator = png.readUInt16BE(offset + 28)
-        const denominator = png.readUInt16BE(offset + 30)
-        frameDurations.push(Math.round(1000 * numerator / denominator))
-      }
-      offset += length + 12
-      if (type === 'IEND') break
-    }
-    expect(frameDurations).toHaveLength(41)
-    expect(frameDurations.every((duration) => duration === 83)).toBe(true)
+  it('tugma yaltirashi matnni yashirmaydi va o‘qib berilmaydi', async () => {
+    render(<CourseMapPage />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const start = within(sheet()).getByRole('button', { name: 'Boshlash' })
+    const shimmer = start.querySelector('.cmap-start-sheen')
+    expect(shimmer).toHaveAttribute('aria-hidden', 'true')
+    expect(shimmer?.querySelectorAll('svg rect')).toHaveLength(2)
+    expect(start).toHaveTextContent('Boshlash')
   })
 
   it('har bir blok uchun pill va mavzu tugunlarini chizadi', async () => {
@@ -65,8 +57,9 @@ describe('CourseMapPage — kurs xaritasi', () => {
     expect(nodesOf(1)).toHaveLength(getBlockOutline(1).length + 1)
     expect(nodesOf(2)).toHaveLength(getBlockOutline(2).length + 1)
     expect(document.querySelectorAll('.cmap-pill[aria-expanded="true"]')).toHaveLength(DARSLIK_BLOCKS.length)
-    expect(nodesOf(1)[0].parentElement?.style.getPropertyValue('--off')).toBe('0px')
-    expect(nodesOf(2)[0].parentElement?.style.getPropertyValue('--off')).toBe('50px')
+    expect(nodesOf(1)[0].parentElement?.style.getPropertyValue('--off')).toBe('calc(var(--cmap-wave-space) / 2)')
+    expect(nodesOf(1)[1].parentElement?.style.getPropertyValue('--off')).toBe('0px')
+    expect(nodesOf(2)[0].parentElement?.style.getPropertyValue('--off')).toBe('calc(var(--cmap-wave-space) / 2)')
 
     // pill sarlavhasi — blok nomi
     expect(document.getElementById('cmap-level-1')!.textContent).toContain(DARSLIK_BLOCKS[0].titleUz)
@@ -82,7 +75,7 @@ describe('CourseMapPage — kurs xaritasi', () => {
 
     const first = nodesOf(1)[0]
     expect(first).toHaveAttribute('aria-current', 'step')
-    expect(first.querySelector('.cmap-node-art')).toHaveAttribute('src', '/darslik-map/node-active-anim.png')
+    expect(first.querySelector('.cmap-node-art')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
     expect(first.querySelector('.cmap-gem')).toBeNull()
     expect(sheet().querySelector('.cmap-sheet-title')!.textContent).toBe(getBlockOutline(1)[0])
     expect(within(sheet()).getByRole('button', { name: 'Boshlash' })).toBeEnabled()
@@ -99,8 +92,8 @@ describe('CourseMapPage — kurs xaritasi', () => {
     expect(nodesOf(1)[target]).not.toHaveAttribute('aria-current')
     expect(nodesOf(1)[0]).toHaveAttribute('aria-current', 'step')
     expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
-    expect(nodesOf(1)[target].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-anim.png')
-    expect(document.querySelectorAll('img[src="/darslik-map/node-active-anim.png"]')).toHaveLength(1)
+    expect(nodesOf(1)[target].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
+    expect(document.querySelectorAll('img[src="/darslik-map/node-active-base.png"]')).toHaveLength(1)
   })
 
   it('o‘tilgan mavzu ko‘k belgi va alohida mashq/qayta o‘qish tugmalarini ko‘rsatadi', async () => {
