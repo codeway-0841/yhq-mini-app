@@ -1,0 +1,5 @@
+.mascot-canvas-host { position: relative; display: grid; place-items: center; height: 216px; overflow: hidden; border-radius: 16px; background: var(--p-surface); }
+.mascot-canvas { width: 100%; height: 100%; display: block; }
+.mascot-canvas-poster { position: absolute; width: 92px; height: 92px; object-fit: contain; pointer-events: none; transition: opacity 180ms ease; }
+.mascot-canvas-error { position: absolute; right: 10px; bottom: 10px; color: var(--p-muted); }
+@media (prefers-reduced-motion: reduce) { .mascot-canvas-poster { transition: none; } }

@@ -1,4 +1,6 @@
 import { useId } from 'react'
+import { useAppStore } from '../../shared/store/useAppStore'
+import { RiveCanvas } from '../mascot-studio'
 import './learning-path.css'
 
 export type PathMascotAnimation =
@@ -13,6 +15,12 @@ export type PathMascotAnimation =
 
 export type PathMascotVariant = 'tile' | 'avatar'
 
+const RIVE_ANIMATION: Record<PathMascotAnimation, string> = {
+  idle: 'idle', wave: 'powerUp_one', happy: 'powerUp_two',
+  oops: 'idle', thinking: 'powerUp_idle ', celebrate: 'powerUp_three',
+  level_up: 'powerUp_three', sleep: 'idle',
+}
+
 export function PathMascot({
   animation = 'idle',
   variant = 'tile',
@@ -20,15 +28,16 @@ export function PathMascot({
   animation?: PathMascotAnimation
   variant?: PathMascotVariant
 } = {}) {
+  const noAnimation = useAppStore((s) => s.settings.noAnimation)
+  const reducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
   return (
     <span className="learning-mascot" data-variant={variant} data-animation={animation} aria-hidden="true">
-      <img
-        className="learning-mascot-img"
-        src="/images/kivvi-mascot-cutout.webp"
-        alt=""
-        draggable={false}
-        loading="eager"
-        decoding="async"
+      <RiveCanvas
+        file="koji_speech_apr_22_26.riv"
+        animation={RIVE_ANIMATION[animation] || 'idle'}
+        label="Koji"
+        fit="contain"
+        play={!noAnimation && !reducedMotion}
       />
     </span>
   )

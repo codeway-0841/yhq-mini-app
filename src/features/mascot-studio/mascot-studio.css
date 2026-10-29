@@ -1,0 +1,11 @@
+.mascot-studio { max-width: 1080px; margin-inline: auto; }
+.mascot-studio-intro { max-width: 680px; margin: 18px 0 20px; color: var(--p-muted); font-size: 14px; line-height: 1.5; }
+.mascot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); gap: 16px; }
+.mascot-card { min-width: 0; padding: 16px; display: flex; flex-direction: column; }
+.mascot-card-copy { flex: 1; padding: 16px 2px 12px; }
+.mascot-card-copy h2 { margin: 0; font-size: 16px; font-weight: 750; color: var(--p-fg); }
+.mascot-card-copy p { margin: 5px 0 0; color: var(--p-muted); font-size: 12px; line-height: 1.45; }
+.mascot-actions { display: flex; flex-wrap: wrap; gap: 7px; }
+.mascot-action { max-width: 100%; min-height: 36px; padding: 7px 10px; overflow-wrap: anywhere; background: var(--p-surface); color: var(--p-fg); font-size: 11px; font-weight: 650; }
+.mascot-action[aria-pressed='true'] { background: var(--p-primary); color: var(--p-on-primary); }
+.mascot-action:focus-visible { outline: 2px solid var(--p-primary); outline-offset: 2px; }

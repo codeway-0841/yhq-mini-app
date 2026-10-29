@@ -272,6 +272,8 @@
   display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom;
   transform-origin: 50% 92%; user-select: none;
 }
+.learning-mascot .mascot-canvas-host { width: 100%; height: 100%; overflow: visible; border-radius: 0; background: transparent; }
+.learning-mascot .mascot-canvas-poster { width: 100%; height: 100%; object-position: center bottom; }
 .learning-mascot[data-variant='avatar'] .learning-mascot-img {
   object-position: center center;
   transform-origin: 50% 50%;
@@ -334,7 +336,10 @@
   filter: drop-shadow(0 12px 20px color-mix(in srgb, var(--p-primary) 40%, transparent));
   animation: none !important;
 }
-.lesson-launch-scene .learning-mascot-img { animation: lesson-launch-mascot var(--launch-duration) ease-in-out both !important; }
+.lesson-launch-scene .learning-mascot-img,
+.lesson-launch-scene .mascot-canvas-host {
+  animation: lesson-launch-mascot var(--launch-duration) ease-in-out both !important;
+}
 @keyframes lesson-launch-sink {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }

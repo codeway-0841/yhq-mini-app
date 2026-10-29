@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="268" viewBox="0 0 128 134" fill="none">
+  <defs>
+    <radialGradient id="active-glow" cx="64" cy="88" r="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="0.6" stop-color="#2563eb" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="active-disk-outline">
+      <ellipse cx="64" cy="88.5" rx="46" ry="27.5"/>
+    </clipPath>
+  </defs>
+  <!-- Ambient outer glow -->
+  <ellipse cx="64" cy="88" rx="60" ry="36" fill="url(#active-glow)"/>
+  
+  <!-- Outer deep blue bevel -->
+  <ellipse cx="64" cy="88.5" rx="46" ry="27.5" fill="#2563eb"/>
+  <g clip-path="url(#active-disk-outline)">
+    <path d="M37 96c8 5 17 8 27 8s19-3 27-8l15 18-42 12-42-12 15-18Z" fill="#3b82f6"/>
+  </g>
+
+  <!-- Blue rim -->
+  <ellipse cx="64" cy="84" rx="39" ry="23" fill="#60a5fa"/>
+
+  <!-- Bright glowing platform floor for mascot -->
+  <ellipse cx="64" cy="82" rx="33" ry="19" fill="#ffffff"/>
+  <ellipse cx="64" cy="82" rx="28" ry="15.5" fill="#f0f6ff"/>
+  <ellipse cx="64" cy="82" rx="21" ry="11.5" fill="#dbeafe"/>
+</svg>

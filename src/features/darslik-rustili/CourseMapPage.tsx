@@ -17,6 +17,7 @@ import {
 } from '../../content/darslik-rustili'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
+import { PathMascot } from '../lessons'
 import { BlockReader } from './BlockReader'
 import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
@@ -26,16 +27,12 @@ import './course-map.css'
 const FIRST_WAVE = [0, 50, 100, 50]
 const NEXT_WAVE = [50, 0, 50, 100]
 
-const reduceMotion = typeof window !== 'undefined'
-  && typeof window.matchMedia === 'function'
-  && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
 const NODE_ART = {
   puck: '/darslik-map/node-puck.svg',
   check: '/darslik-map/node-check.svg',
   completed: '/darslik-map/node-completed.svg',
-  // Keep the original badge and ring together so no frame is cropped.
-  active: reduceMotion ? '/darslik-map/node-active.png' : '/darslik-map/node-active-anim.png',
+  // Keep the original pedestal ring without the static gem icon.
+  active: '/darslik-map/node-active-base.png',
 }
 
 const EMPTY_SECTIONS: number[] = []
@@ -402,6 +399,11 @@ export default function CourseMapPage() {
                           >
                             <span className="cmap-node-art-wrap">
                               <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />
+                              {isActive && (
+                                <span className="cmap-node-mascot" aria-hidden="true">
+                                  <PathMascot animation="idle" variant="tile" />
+                                </span>
+                              )}
                             </span>
                             <span className="cmap-node-label">{title}</span>
                           </button>
