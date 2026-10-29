@@ -1,15 +1,16 @@
 /* ============================================================
    “Xarita” — darslik kurs xaritasi (Brilliant uslubidagi ko'rinish).
-   Faqat shu sahifaga tegishli. Xarita referensdagidek oq sirtli,
-   ilovaning umumiy dark/light temasi bu sahifa ranglarini o'zgartirmaydi.
+   Light va Dark rejimlar to'liq qo'llab-quvvatlanadi (Brilliant uslubida).
+   https://brilliant.org/courses/math-fundamentals/
    ============================================================ */
 
 .cmap {
   font-family: var(--font-sans);
-  --cmap-surface: #fff;
-  --cmap-ink: #000;
-  --cmap-muted: #d0d0d0;
-  --cmap-edge: #e5e5e5;
+  --cmap-surface: #ffffff;
+  --cmap-card-bg: #ffffff;
+  --cmap-ink: #0b0b0f;
+  --cmap-muted: #9c9ca3;
+  --cmap-edge: #e5e5e7;
   color: var(--cmap-ink);
   background: var(--cmap-surface);
   /* Reference map geometry: every lesson slot is a 128×134 art box. */
@@ -21,6 +22,38 @@
   --cmap-ring-idle: #b3b3b3;
   --cmap-deep: #294bc6;
   --cmap-header: calc(52px + var(--safe-top, 0px));
+}
+
+/* ---------------- Dark rejim (Brilliant Math Fundamentals) ---------------- */
+[data-theme='dark'] .cmap,
+:root[data-theme='dark'] .cmap,
+body[data-theme='dark'] .cmap {
+  --cmap-surface: #0c0d12;
+  --cmap-card-bg: #131620;
+  --cmap-ink: #ffffff;
+  --cmap-muted: #94a3b8;
+  --cmap-edge: #222634;
+  --cmap-ring: #3b82f6;
+  --cmap-ring-idle: #334155;
+  --cmap-deep: #60a5fa;
+  color: var(--cmap-ink);
+  background: var(--cmap-surface);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cmap,
+  body:not([data-theme='light']) .cmap {
+    --cmap-surface: #0c0d12;
+    --cmap-card-bg: #131620;
+    --cmap-ink: #ffffff;
+    --cmap-muted: #94a3b8;
+    --cmap-edge: #222634;
+    --cmap-ring: #3b82f6;
+    --cmap-ring-idle: #334155;
+    --cmap-deep: #60a5fa;
+    color: var(--cmap-ink);
+    background: var(--cmap-surface);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -356,17 +389,27 @@
   overflow-wrap: anywhere;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
   color: var(--cmap-muted);
+  transition: font-size 0.18s ease, color 0.18s ease;
 }
 
-.cmap-node.is-focus .cmap-node-label { color: var(--cmap-ink); font-weight: 400; }
+.cmap-node.is-focus .cmap-node-label,
+.cmap-node.is-active .cmap-node-label {
+  top: 93px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--cmap-ink);
+}
 
-.cmap-node.is-active .cmap-node-label { top: 101px; }
-
-.cmap-node.is-done:not(.is-focus) .cmap-node-label { color: var(--cmap-muted); }
+.cmap-node.is-done:not(.is-focus) .cmap-node-label {
+  color: var(--cmap-muted);
+  font-size: 15px;
+  font-weight: 400;
+}
 
 .cmap-node[aria-disabled='true'] { cursor: default; }
 
@@ -555,4 +598,109 @@
 @media (min-width: 1024px) {
   .cmap { --cmap-node-w: 128px; --cmap-node-h: 134px; }
   .cmap-map { padding-bottom: 210px; }
+}
+
+/* ---------------- Dark tema qo'shimcha komponentlari (Brilliant dark mode) ---------------- */
+[data-theme='dark'] .cmap-streak {
+  background: #161922;
+  border-color: #27272a;
+}
+[data-theme='dark'] .cmap-bar-power {
+  background: #161922;
+  border-color: #27272a;
+  color: #f59e0b;
+}
+[data-theme='dark'] .cmap-hero-sub {
+  color: #94a3b8;
+}
+[data-theme='dark'] .cmap-hero-meta {
+  color: #cbd5e1;
+}
+[data-theme='dark'] .cmap-pill {
+  background: #131620;
+  border-color: #222634;
+  box-shadow: 0 4px 0 #1b1e2a;
+  color: #ffffff;
+}
+[data-theme='dark'] .cmap-pill.is-current {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 0 #1d4ed8;
+}
+[data-theme='dark'] .cmap-pill-tag {
+  color: #94a3b8;
+}
+[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag {
+  color: #60a5fa;
+}
+[data-theme='dark'] .cmap-node-art[src*='node-puck'] {
+  filter: brightness(0.68) contrast(1.15);
+}
+[data-theme='dark'] .cmap-node-art[src*='node-check'] {
+  filter: brightness(0.85) contrast(1.1);
+}
+[data-theme='dark'] .cmap-sheet {
+  background: #131620;
+  border-color: #222634;
+  box-shadow: 0 5px 0 #1b1e2a, 0 20px 44px rgb(0 0 0 / 0.5);
+}
+[data-theme='dark'] .cmap-jump {
+  background: #161922;
+  border-color: #27272a;
+  color: #ffffff;
+}
+[data-theme='dark'] .cmap-glow {
+  background: linear-gradient(to bottom, transparent, rgb(37 99 235 / 0.15));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cmap-streak {
+    background: #161922;
+    border-color: #27272a;
+  }
+  :root:not([data-theme='light']) .cmap-bar-power {
+    background: #161922;
+    border-color: #27272a;
+    color: #f59e0b;
+  }
+  :root:not([data-theme='light']) .cmap-hero-sub {
+    color: #94a3b8;
+  }
+  :root:not([data-theme='light']) .cmap-hero-meta {
+    color: #cbd5e1;
+  }
+  :root:not([data-theme='light']) .cmap-pill {
+    background: #131620;
+    border-color: #222634;
+    box-shadow: 0 4px 0 #1b1e2a;
+    color: #ffffff;
+  }
+  :root:not([data-theme='light']) .cmap-pill.is-current {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 0 #1d4ed8;
+  }
+  :root:not([data-theme='light']) .cmap-pill-tag {
+    color: #94a3b8;
+  }
+  :root:not([data-theme='light']) .cmap-pill.is-current .cmap-pill-tag {
+    color: #60a5fa;
+  }
+  :root:not([data-theme='light']) .cmap-node-art[src*='node-puck'] {
+    filter: brightness(0.68) contrast(1.15);
+  }
+  :root:not([data-theme='light']) .cmap-node-art[src*='node-check'] {
+    filter: brightness(0.85) contrast(1.1);
+  }
+  :root:not([data-theme='light']) .cmap-sheet {
+    background: #131620;
+    border-color: #222634;
+    box-shadow: 0 5px 0 #1b1e2a, 0 20px 44px rgb(0 0 0 / 0.5);
+  }
+  :root:not([data-theme='light']) .cmap-jump {
+    background: #161922;
+    border-color: #27272a;
+    color: #ffffff;
+  }
+  :root:not([data-theme='light']) .cmap-glow {
+    background: linear-gradient(to bottom, transparent, rgb(37 99 235 / 0.15));
+  }
 }
