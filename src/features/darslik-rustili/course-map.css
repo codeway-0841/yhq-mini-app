@@ -314,7 +314,6 @@ body[data-theme='dark'] .cmap {
 @media (max-width: 600px) {
   .cmap-pill-wrap { margin: 0 15px 0 0; }
   .cmap-pill { min-height: 64px; height: auto; }
-  .cmap-level-sticky { top: calc(var(--cmap-header, 52px) + 54px); }
 }
 
 /* ---------------- tugunlar ---------------- */
@@ -459,11 +458,17 @@ body[data-theme='dark'] .cmap {
   border-radius: 40px;
   background: var(--cmap-card-bg);
   box-shadow: 0 5px 0 var(--cmap-edge), 0 20px 44px rgb(69 109 255 / 0.15);
-  transform: translate(-50%, 130%);
-  transition: transform 0.46s cubic-bezier(0.32, 1.16, 0.36, 1);
+  transform: translate(-50%, calc(100% + 60px + var(--safe-bottom, 0px)));
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.46s cubic-bezier(0.32, 1.16, 0.36, 1), opacity 0.25s ease;
 }
 
-.cmap-sheet[data-open='true'] { transform: translate(-50%, 0); }
+.cmap-sheet[data-open='true'] {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .cmap-sheet-title {
   margin: 0;
