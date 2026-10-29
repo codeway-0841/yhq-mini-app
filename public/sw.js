@@ -10,7 +10,7 @@
  *   - Everything else (POST/mutations)  → bypass (never cached — per-user auth)
  */
 
-const CACHE = 'yhq-app-v8'
+const CACHE = 'yhq-app-v9'
 
 // Savol rasmlari ALOHIDA keshda: /public/images ~84 MB va user ko'rgan har bir
 // rasm keshga tushardi — cheklovsiz. Qurilma xotirasi vaqt o'tib shuncha tomon

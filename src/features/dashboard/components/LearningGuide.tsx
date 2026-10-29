@@ -15,7 +15,7 @@ import { Button } from '../../../shared/components/ui/button'
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState, selectDailyPlan } from '../next-step'
-import { LessonToken } from '../../lessons'
+import { PathMascot } from '../../lessons'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
 import './learning-guide.css'
@@ -193,7 +193,18 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
         <div className="home-learning-step">
           <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.12em] text-pprimary">{tt('guideToday')}</p>
           <div className="home-learning-path-row">
-            <span className="home-learning-token" aria-hidden="true"><LessonToken done={allComplete && !resume} current={!allComplete || !!resume} /></span>
+            <span className="home-learning-token" aria-hidden="true">
+              {allComplete && !resume ? (
+                <img src="/darslik-map/node-completed.svg" alt="" width={64} height={67} className="home-learning-disk" />
+              ) : (
+                <span className="home-learning-disk-wrap">
+                  <img src="/darslik-map/node-active-base.png" alt="" width={64} height={67} className="home-learning-disk" />
+                  <span className="home-learning-mascot">
+                    <PathMascot animation="idle" variant="tile" />
+                  </span>
+                </span>
+              )}
+            </span>
             <div className="min-w-0 flex-1">
               {contextLabel && <p className="text-[11.5px] leading-normal text-pmuted">{contextLabel}</p>}
               <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
