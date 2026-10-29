@@ -30,4 +30,10 @@ describe('config/csp — vercel.json Content-Security-Policy', () => {
     expect(imgSrc).toBeTruthy()
     expect(imgSrc).toContain('blob:')
   })
+
+  it("script-src 'wasm-unsafe-eval'ni o'z ichiga oladi (Rive animatsiya Wasm uchun shart)", () => {
+    const scriptSrc = readCsp().split(';').map((d) => d.trim()).find((d) => d.startsWith('script-src'))
+    expect(scriptSrc).toBeTruthy()
+    expect(scriptSrc).toContain("'wasm-unsafe-eval'")
+  })
 })

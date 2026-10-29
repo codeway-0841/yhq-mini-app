@@ -58,7 +58,7 @@ export function RiveCanvas({
       getRivBuffer(file).catch(() => null),
     ]).then(async ([pkg, buffer]) => {
       const riveModule = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2')
-      const { Rive, RuntimeLoader, Layout, Fit } = riveModule
+      const { Rive, RuntimeLoader, Layout, Fit, Alignment } = riveModule
       if (!wasmConfigured) {
         try {
           const wasmMod = await import('@rive-app/webgl2/rive.wasm?url')
@@ -70,17 +70,26 @@ export function RiveCanvas({
         } catch (_) {}
       }
       if (disposed) return
+      const safeResize = () => {
+        if (!instance || !canvas) return
+        if (canvas.clientWidth > 0 && canvas.clientHeight > 0) {
+          try {
+            instance.resizeDrawingSurfaceToCanvas()
+          } catch (_) {}
+        }
+      }
       const riveConfig: ConstructorParameters<typeof Rive>[0] = {
         canvas,
         animations: [animationRef.current],
         autoplay: playRef.current,
-        layout: new Layout({ fit: fit === 'cover' ? Fit.Cover : Fit.Contain }),
+        layout: new Layout({
+          fit: fit === 'cover' ? Fit.Cover : Fit.Contain,
+          alignment: Alignment ? Alignment.Center : undefined,
+        }),
         isTouchScrollEnabled: true,
         onLoad: () => {
           if (disposed) return
-          try {
-            instance?.resizeDrawingSurfaceToCanvas()
-          } catch (_) {}
+          safeResize()
           if (playRef.current) {
             instance?.play(animationRef.current)
           } else {
@@ -101,9 +110,7 @@ export function RiveCanvas({
       instance = new Rive(riveConfig)
       if (typeof ResizeObserver !== 'undefined') {
         resizeObserver = new ResizeObserver(() => {
-          try {
-            instance?.resizeDrawingSurfaceToCanvas()
-          } catch (_) {}
+          safeResize()
         })
         resizeObserver.observe(canvas)
       }
