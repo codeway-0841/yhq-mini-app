@@ -9,7 +9,7 @@ const mocks = vi.hoisted(() => ({ instances: [] as Array<{
 
 vi.mock('@rive-app/webgl2-course', () => {
   class MockRive {
-    inputs = ['color', 'dark-mode', 'select', 'koji_appear'].map((name) => ({ name, value: false as boolean | number, fire: vi.fn() }))
+    inputs = ['color', 'dark-mode', 'select', 'completed', 'icon', 'koji_appear'].map((name) => ({ name, value: false as boolean | number, fire: vi.fn() }))
     cleanup = vi.fn()
     resizeDrawingSurfaceToCanvas = vi.fn()
     constructor(config: { onLoad: () => void }) { mocks.instances.push(this); queueMicrotask(config.onLoad) }
@@ -48,6 +48,17 @@ describe('HomeLessonNode', () => {
     const view = render(<HomeLessonNode color={5} fallback="/purple.png" />)
     expect(view.container.querySelector('img')).toHaveAttribute('src', '/purple.png')
     expect(mocks.instances).toHaveLength(0)
+  })
+
+  it('o‘tilgan darsga check diskini qo‘yadi va maskotni ko‘chirmaydi', async () => {
+    const view = render(<HomeLessonNode color={4} fallback="/darslik-map/node-completed.svg" completed />)
+    await waitFor(() => expect(view.container.querySelector('canvas')).toHaveStyle({ visibility: 'visible' }))
+    const inputs = mocks.instances[0].inputs
+    expect(inputs.find((input) => input.name === 'color')?.value).toBe(4)
+    expect(inputs.find((input) => input.name === 'completed')?.value).toBe(true)
+    expect(inputs.find((input) => input.name === 'icon')?.value).toBe(1)
+    expect(inputs.find((input) => input.name === 'select')?.value).toBe(false)
+    expect(inputs.find((input) => input.name === 'koji_appear')?.fire).not.toHaveBeenCalled()
   })
 
   it('tema o‘zgarganda Rive diskini dark holatga moslaydi', async () => {

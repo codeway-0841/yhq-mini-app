@@ -37,11 +37,21 @@ beforeEach(() => {
 })
 afterEach(() => { vi.useRealTimers() })
 
+function advanceReaderToPractice() {
+  for (let i = 0; i < 12; i++) {
+    const next = screen.queryByRole('button', { name: 'Davom etish' })
+    if (!next) return
+    fireEvent.click(next)
+  }
+  throw new Error('Lesson steps did not reach practice')
+}
+
 function finishFirstModule() {
   const last = lessons[1].length - 1
   useLessonsStore.setState({ byUser: { [uid]: { 1: Array.from({ length: last }, (_, i) => i) } } })
   location.state = { moduleId: 1, lessonIdx: last }
   render(<Darslik />)
+  advanceReaderToPractice()
   fireEvent.click(screen.getByRole('button', { name: 'Modulni yakunlash' }))
 }
 
@@ -53,6 +63,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('heading', { name: `1-dars. ${lessons[1][0].titleUz}` })).toBeInTheDocument()
     expect(navigate).not.toHaveBeenCalled()
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(navigate).toHaveBeenCalledWith('/premium')
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
@@ -83,6 +94,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
   it('closes paid reading when the existing entitlement becomes free', () => {
     location.state = { moduleId: 1, lessonIdx: 0 }
     render(<Darslik />)
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(screen.getByRole('heading', { name: `2-dars. ${lessons[1][1].titleUz}` })).toBeInTheDocument()
     act(() => useAppStore.setState({ tariff: 'free' }))
@@ -127,6 +139,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     useLessonsStore.setState({ byUser: { [uid]: { 1: scenario === 'review' ? lessons[1].map((_, i) => i) : [] } } })
     location.state = { moduleId: 1, lessonIdx: last }
     render(<Darslik />)
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: 'Modulni yakunlash' }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
@@ -139,6 +152,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     useLessonsStore.setState({ byUser: { [uid]: progress } })
     location.state = { moduleId: final.id, lessonIdx: last }
     render(<Darslik />)
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: 'Modulni yakunlash' }))
     expect(screen.getByRole('dialog')).toHaveAccessibleName('Barcha modullar tugallandi!')
     act(() => vi.advanceTimersByTime(MODULE_TRANSITION_MS * 2))
@@ -181,6 +195,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
   it('opens a lesson via the Start button, saves reading progress and advances the current step', () => {
     render(<Darslik />)
     fireEvent.click(screen.getByTestId('brilliant-start-button'))
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
     fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
@@ -207,6 +222,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     render(<Darslik />)
     fireEvent.click(lessonRowButtons(1)[0])
     fireEvent.click(screen.getByTestId('brilliant-start-button'))
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: /Mavzu bo'yicha mashq/ }))
     expect(navigate).toHaveBeenCalledWith('/test/1', {
       state: {
@@ -226,6 +242,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('heading', { name: `4-dars. ${lessons[1][3].titleUz}` })).toBeInTheDocument()
     expect(useLessonsStore.getState().byUser[uid]).toBeUndefined()
+    advanceReaderToPractice()
     fireEvent.click(screen.getByRole('button', { name: "O'qib bo'ldim — keyingi" }))
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([3])
   })

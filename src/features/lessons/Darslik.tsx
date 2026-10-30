@@ -1,22 +1,21 @@
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { goBack, registerModal } from '../../shared/lib/navigation'
-import { config } from '../../shared/config'
-import { Play, Check, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react'
+import { goBack } from '../../shared/lib/navigation'
+import { Check, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react'
 import { modules, MODULE_TOPICS } from '../../content/modules'
-import { lessons, type Lesson } from '../../content/lessons'
+import { lessons } from '../../content/lessons'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
-import videosData from '../../content/videos.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { getTelegramWebApp, openTelegramLink, syncTelegramTheme } from '../../platform/telegram'
+import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
 import { type PathSelection } from './LearningPath'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
 import { canReadLesson } from './lesson-access'
+import LessonReader from './LessonReader'
 import ModuleComplete, { type CompletedModule } from './ModuleComplete'
 import {
   BrilliantHeroIllustration,
@@ -27,173 +26,6 @@ import { useT } from '../../shared/i18n'
 import './learning-path.css'
 
 type Mod = typeof modules[number]
-
-interface VideoInfo {
-  vimeoId: string
-  poster: string
-  title: string
-  topicName?: string
-}
-
-// ── Lesson screen (telefon ilovasidagi dizayn kabi) ─────────────────────────
-function LessonScreen({ mod, lessonIdx, onClose, onDone, onPractice, onPremium }: {
-  mod: Mod
-  lessonIdx: number
-  onClose: () => void
-  onDone: (idx: number) => void
-  onPractice: (idx: number) => void
-  onPremium: () => void
-}) {
-  const [idx, setIdx] = useState(lessonIdx)
-  const [isPlaying, setIsPlaying] = useState(false)
-  const settings = useAppStore((s) => s.settings)
-  const isPremium = useAppStore((s) => s.tariff === 'premium')
-  const list = lessons[mod.id] ?? []
-  const lesson: Lesson | undefined = list[idx]
-  const ru = settings.language === 'ru'
-  const tt = useT(settings.language)
-  const ordinal = tt('darslikLessonOrdinal').replace('{n}', String(idx + 1))
-  const videoInfo: VideoInfo | undefined = (videosData as Record<string, VideoInfo | undefined>)[`${mod.id}:${idx}`]
-  const onCloseRef = useRef(onClose)
-  onCloseRef.current = onClose
-  const onPremiumRef = useRef(onPremium)
-  onPremiumRef.current = onPremium
-  const allowed = canReadLesson(isPremium, mod.id, idx)
-  useEffect(() => {
-    if (!allowed) onPremiumRef.current()
-  }, [allowed])
-
-  useEffect(() => {
-    const id = Symbol('lesson-reader')
-    const unregister = registerModal(id, () => {
-      onCloseRef.current()
-    })
-    return () => {
-      unregister()
-    }
-  }, [])
-
-  useEffect(() => {
-    setIsPlaying(false)
-  }, [idx])
-
-  if (!lesson || !allowed) return null
-
-  const advance = (i: number) => {
-    onDone(i)
-    if (i < list.length - 1) {
-      if (!canReadLesson(isPremium, mod.id, i + 1)) { onPremium(); return }
-      setIdx(i + 1)
-    }
-    else onClose()
-  }
-
-  return (
-    <div className="lesson-reader fixed inset-0 z-50 bg-pcanvas flex flex-col">
-      <div className="flex items-center justify-between px-4 py-2.5 border-b border-pline safe-top">
-        <button onClick={onClose} aria-label={tt('darslikClose')}
-          className="grid size-10 shrink-0 place-items-center rounded-full bg-psurface text-pfg shadow-2xs active:scale-95 transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer">
-          <ChevronLeft size={21} strokeWidth={2.25} />
-        </button>
-        <span className="text-base font-semibold text-pfg">{ordinal}</span>
-        <span className="text-xs font-semibold tabular-nums text-pmuted bg-psurface px-2.5 py-1 rounded-xl shadow-2xs">
-          {idx + 1}/{list.length}
-        </span>
-      </div>
-
-      <div className="flex-1 overflow-y-auto px-4 py-4 pb-[calc(1.5rem+var(--safe-bottom,0px))]">
-        <div className="rounded-2xl bg-psurface aspect-video flex items-center justify-center relative overflow-hidden mb-4 shadow-sm">
-          {videoInfo?.vimeoId && isPlaying ? (
-            <iframe
-              src={`https://player.vimeo.com/video/${videoInfo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
-              className="w-full h-full border-0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-              title={videoInfo.title || lesson.titleUz}
-            />
-          ) : (
-            <div
-              role={videoInfo?.vimeoId ? 'button' : undefined}
-              tabIndex={videoInfo?.vimeoId ? 0 : undefined}
-              aria-label={videoInfo?.vimeoId ? tt('darslikPlayVideo') : undefined}
-              onClick={() => {
-                if (videoInfo?.vimeoId) setIsPlaying(true)
-              }}
-              onKeyDown={(e) => {
-                if (videoInfo?.vimeoId && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); setIsPlaying(true) }
-              }}
-              className="w-full h-full relative flex items-center justify-center cursor-pointer group select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-            >
-              {videoInfo?.poster ? (
-                <img
-                  src={videoInfo.poster}
-                  alt={ru ? lesson.titleRu : lesson.titleUz}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  loading="lazy"
-                />
-              ) : null}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
-              <div className="relative z-10 flex flex-col items-center gap-2 px-4 text-center">
-                <div className="grid size-14 place-items-center rounded-full bg-black/60 backdrop-blur-md shadow-xl transition-transform group-hover:scale-110 group-active:scale-95">
-                  <Play size={24} strokeWidth={2} className="ml-0.5 text-white" />
-                </div>
-                <p className="text-sm font-semibold text-white/95 line-clamp-1 drop-shadow-sm">
-                  {ru ? lesson.titleRu : lesson.titleUz}
-                </p>
-                {videoInfo?.vimeoId && (
-                  <span className="text-[11px] font-medium text-white/90 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-xs shadow-2xs">
-                    {tt('darslikWatchHd')}
-                  </span>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-
-        <h2 className="text-base font-semibold mb-3">
-          {ordinal}. {ru ? lesson.titleRu : lesson.titleUz}
-        </h2>
-
-        <div className="flex flex-col gap-3 mb-5">
-          {(ru ? lesson.bodyRu : lesson.bodyUz).map((p, i) => (
-            <div key={i} className="flex gap-3">
-              <span className="flex-none size-5 rounded-full text-[10px] font-semibold flex items-center justify-center mt-0.5 bg-[rgb(var(--p-primary-rgb)/0.15)] text-pprimary">
-                {i + 1}
-              </span>
-              <p className="text-sm leading-relaxed text-pmuted">{p}</p>
-            </div>
-          ))}
-        </div>
-
-        <button onClick={() => onPractice(idx)}
-          className="w-full rounded-2xl bg-pcard p-4 text-left active:scale-[0.98] transition-all shadow-xs hover:bg-psurface">
-          <p className="text-sm font-semibold mb-1 text-pfg">
-            {tt('darslikPracticeTitle')}
-          </p>
-          <p className="text-xs text-pmuted">
-            {tt('darslikPracticeHint')}
-          </p>
-        </button>
-      </div>
-
-      <div className="flex gap-2.5 px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))] border-t border-pline bg-pcanvas">
-        <button onClick={() => openTelegramLink(`https://t.me/${config.botUsername}`)}
-          className="flex-1 py-3.5 px-3 rounded-2xl bg-psurface text-pfg hover:bg-pcard font-semibold flex items-center justify-center gap-2 shadow-2xs transition-all active:scale-[0.98] cursor-pointer">
-          {tt('darslikAsk')}
-        </button>
-        <button onClick={() => advance(idx)}
-          className="flex-[1.5] py-3.5 px-4 rounded-2xl text-ponprimary font-semibold flex items-center justify-center gap-2 bg-pprimary shadow-md transition-all active:scale-[0.98] cursor-pointer">
-          <Check size={16} />
-          {idx < list.length - 1 ? tt('darslikReadNext') : tt('darslikFinishModule')}
-        </button>
-      </div>
-
-      <div className="h-1 bg-psurface">
-        <div className="h-full transition-all" style={{ width: `${((idx + 1) / list.length) * 100}%`, background: 'var(--p-primary)' }} />
-      </div>
-    </div>
-  )
-}
 
 export default function Darslik() {
   const navigate = useNavigate()
@@ -431,6 +263,7 @@ export default function Darslik() {
     <div className="yhq-home fixed inset-0 z-20 w-full h-full flex flex-col items-center overflow-hidden overscroll-none select-none lg:relative lg:inset-auto lg:z-auto">
       <div
         data-testid="brilliant-darslik-screen"
+        style={{ '--yhq-accent': theme.accent } as CSSProperties}
         className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.35rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-y-auto"
       >
         {/* Top: Status bar + Header */}
@@ -489,16 +322,16 @@ export default function Darslik() {
             <div className="mt-1.5 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
               <span
                 data-testid="brilliant-level-subtitle"
-                style={{ color: theme.accent }}
+                className="yhq-home-accent"
               >
                 LEVEL {activeMod.id}
               </span>
               {theme.recommended && (
                 <>
-                  <span className="opacity-40" style={{ color: theme.accent }}>·</span>
+                  <span className="yhq-home-accent opacity-40">·</span>
                   <span
                     data-testid="brilliant-recommended-badge"
-                    style={{ color: theme.accent }}
+                    className="yhq-home-accent"
                   >
                     RECOMMENDED
                   </span>
@@ -544,7 +377,7 @@ export default function Darslik() {
               const offset = (i - currentModIdx) * 215 + dragOffset
               const dist = Math.abs(offset)
               const scale = Math.max(0.7, 1 - (dist / 215) * 0.3)
-              const opacity = Math.max(0, 1 - (dist / 215) * 0.55)
+              const opacity = Math.max(0, 1 - (dist / 215) * 0.2)
               const isFar = dist > 430
 
               return (
@@ -708,6 +541,7 @@ export default function Darslik() {
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,
+            boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
           }}
         >
           <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full">
@@ -740,7 +574,7 @@ export default function Darslik() {
       )}
 
       {reader && (
-        <LessonScreen
+        <LessonReader
           mod={reader.mod}
           lessonIdx={reader.idx}
           onClose={() => {

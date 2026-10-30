@@ -1,0 +1,70 @@
+.lesson-reader {
+  --reader-bg: #fff;
+  --reader-text: #111;
+  --reader-muted: #707174;
+  --reader-track: #dedede;
+  --reader-cta: #e8e8e8;
+  --reader-cta-shadow: #c5c5c5;
+  --reader-edge: #e2e2e2;
+  background: var(--reader-bg);
+  color: var(--reader-text);
+}
+body[data-theme='dark'] .lesson-reader {
+  --reader-bg: #111;
+  --reader-text: #f7f7f7;
+  --reader-muted: #a5a5a5;
+  --reader-track: #3d3d3d;
+  --reader-cta: #e7e7e7;
+  --reader-cta-shadow: #aaa;
+  --reader-edge: #3c3c3c;
+}
+.lesson-reader-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding-inline: 16px;
+  padding-bottom: 10px;
+  min-height: 60px;
+}
+.lesson-reader-icon, .lesson-reader-previous {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  place-items: center;
+  color: var(--reader-muted);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.lesson-reader-icon:focus-visible, .lesson-reader-previous:focus-visible, .lesson-reader-mascot:focus-visible, .lesson-reader-next:focus-visible { outline: 2px solid #4869f5; outline-offset: 2px; }
+.lesson-reader-progress { flex: 1; height: 8px; overflow: hidden; border-radius: 999px; background: var(--reader-track); }
+.lesson-reader-progress span { display: block; height: 100%; border-radius: inherit; background: #22c95e; transition: width 180ms ease; }
+.lesson-reader-panel { display: flex; flex: 1; min-height: 0; flex-direction: column; width: 100%; margin: 0 auto; }
+.lesson-reader-content { flex: 1; min-height: 0; overflow-y: auto; padding: 16px 20px 32px; }
+.lesson-reader-content h1 { max-width: 640px; margin: 18px auto 0; font-size: clamp(28px, 6vw, 38px); font-weight: 750; line-height: 1.12; letter-spacing: -.025em; }
+.lesson-reader-content > p, .lesson-reader-practice > p { max-width: 640px; margin: 24px auto 0; font-size: 17px; line-height: 1.6; }
+.lesson-reader-art { display: flex; align-items: center; justify-content: center; width: min(100%, 340px); height: clamp(180px, 30dvh, 270px); margin: 3dvh auto 0; }
+.lesson-reader-illustration { display: grid; width: 146px; height: 146px; place-items: center; border-radius: 40px; background: #f8c53d; color: #263d93; box-shadow: 10px 10px 0 #d99810; transform: rotate(-5deg); }
+.lesson-reader-illustration svg { transform: rotate(5deg); }
+.lesson-reader-practice { max-width: 640px; margin: 0 auto; }
+.lesson-reader-practice > button:not(.lesson-reader-video) { display: block; width: 100%; padding: 16px; margin-top: 24px; text-align: left; border-radius: 16px; background: var(--reader-track); font-weight: 700; cursor: pointer; }
+.lesson-reader-practice iframe, .lesson-reader-video { width: 100%; aspect-ratio: 16/9; margin-top: 20px; border: 0; border-radius: 16px; overflow: hidden; }
+.lesson-reader-video { position: relative; display: grid; place-items: center; background: var(--reader-track); cursor: pointer; }
+.lesson-reader-video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.lesson-reader-video span { position: relative; display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-radius: 999px; background: #111c; color: white; }
+.lesson-reader-footer { display: flex; align-items: center; gap: 10px; padding: 12px 16px calc(12px + var(--safe-bottom, 0px)); }
+.lesson-reader-mascot { position: relative; display: grid; width: 54px; height: 54px; flex: none; place-items: center; cursor: pointer; }
+.lesson-reader-mascot .learning-mascot { width: 54px; height: 54px; }
+.lesson-reader-next { min-height: 54px; flex: 1; border-radius: 999px; background: var(--reader-cta); box-shadow: inset 0 -4px 0 var(--reader-cta-shadow); color: #111; font-size: 17px; font-weight: 700; cursor: pointer; }
+.lesson-reader-next:active { transform: translateY(2px); }
+@media (min-width: 1024px) {
+  .lesson-reader-header { min-height: 64px; }
+  .lesson-reader-panel { width: calc(100% - 64px); max-width: 1400px; margin-bottom: 24px; border: 1px solid var(--reader-edge); border-radius: 24px; }
+  .lesson-reader-content { padding: 24px 40px 32px; }
+  .lesson-reader-content h1 { font-size: 32px; }
+  .lesson-reader-footer { max-width: 760px; width: 100%; margin: 0 auto; padding: 12px 24px 20px; }
+  .lesson-reader-art { height: 220px; margin-top: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .lesson-reader-progress span { transition: none; } }

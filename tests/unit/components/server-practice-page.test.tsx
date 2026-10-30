@@ -80,6 +80,39 @@ describe('ServerPracticePage vertical slice', () => {
     expect(useServerTestSessionStore.getState().snapshot?.answers[0]).toBe('correct')
   })
 
+  it('dars mashqidagi xatoda savolda qolib, yordam va keyingi savolni taklif qiladi', async () => {
+    vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false },
+      append: [{ position: 1, deliveryToken: 'v1.delivery-token-for-position-one', expiresAt: EXPIRES, text: 'Keyingi server savoli', options: [{ id: 'F1', text: 'A' }, { id: 'F2', text: 'B' }], media: null, topic: null }],
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 1, total: 20, expiresAt: EXPIRES },
+    })
+    render(<MemoryRouter><ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} /></MemoryRouter>)
+    expect(await screen.findByText('Server bergan savol')).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Variant ikki'))
+    expect(await screen.findByText('Javob xato. Keling, birga tushunib olamiz.')).toBeInTheDocument()
+    expect(screen.getByText('Server bergan savol')).toBeInTheDocument()
+    expect(useServerTestSessionStore.getState().snapshot?.answers[0]).toBe('wrong')
+    fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
+    expect(await screen.findByText('Keyingi server savoli')).toBeInTheDocument()
+  })
+
+  it('oxirgi xato javobni ko‘rsatib, keyin natijaga o‘tadi', async () => {
+    const first = { position: 0, deliveryToken: 'v1.delivery-token-for-position-zero', expiresAt: EXPIRES, text: 'Yakuniy savol', options: [{ id: 'F1', text: 'To‘g‘ri' }, { id: 'F2', text: 'Xato' }], media: null, topic: null }
+    vi.mocked(api.createTestSession).mockResolvedValueOnce({ session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 1, expiresAt: EXPIRES }, questions: [first], review: [] })
+    vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false },
+      append: [], session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'completed', answered: 1, total: 1, expiresAt: EXPIRES },
+    })
+    render(<MemoryRouter><ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} /></MemoryRouter>)
+    expect(await screen.findByText('Yakuniy savol')).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Xato'))
+    expect(await screen.findByText('Javob xato. Keling, birga tushunib olamiz.')).toBeInTheDocument()
+    expect(screen.getByText('Yakuniy savol')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
+    await waitFor(() => expect(screen.queryByText('Yakuniy savol')).not.toBeInTheDocument())
+    expect(api.submitTestSessionAnswer).toHaveBeenCalledTimes(1)
+  })
+
   it('uses the selected bounded random mode when creating a session', async () => {
     vi.mocked(api.createTestSession).mockResolvedValueOnce({
       session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 20, expiresAt: EXPIRES },

@@ -42,6 +42,7 @@ import TestModals from './components/TestModals'
 import TestDrawingLayer from './components/TestDrawingLayer'
 import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
+import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
 import { clearDrawingSession } from './components/drawing-model'
 
 export default function TestPage() {
@@ -186,6 +187,10 @@ export default function TestPage() {
     onToast: handleToast,
     pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || confirmExit || drawingOpen || isFinished,
   })
+
+  useEffect(() => {
+    if (mode === 'lesson' && answers[current] === 'wrong') cancelAutoNext()
+  }, [answers, cancelAutoNext, current, mode])
 
   // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
   useTestSessionSave({
@@ -584,6 +589,12 @@ export default function TestPage() {
           <TestHelperAvatar />
           <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
         </Button>
+      )}
+      {mode === 'lesson' && answers[current] === 'wrong' && !drawingOpen && !showExplain && !showAiTutor && !isFinished && !showResults && (
+        <LessonMistakeFeedback language={settings.language} onAsk={() => { cancelAutoNext(); setShowAiTutor(true) }} onContinue={() => {
+          if (current + 1 < activeQuestions.length) goTo(current + 1, 'left')
+          else handleYakunlash()
+        }} />
       )}
 
       {!isFinished && !showResults && (

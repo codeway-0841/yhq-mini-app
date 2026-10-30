@@ -32,6 +32,7 @@ import AiTutorModal from './components/AiTutorModal'
 import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
 import TestExplanation from './components/TestExplanation'
 import TestHelperAvatar from './components/TestHelperAvatar'
+import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
 import TestDrawingLayer from './components/TestDrawingLayer'
 import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
@@ -334,7 +335,8 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       // bo'lsa). firstAvailable faqat resume/zaxira uchun — aks holda strip'da
       // sakrab yurganda kutilmagan orqaga sakrash bo'lardi.
       const delivered = new Set(next.questions.map((item) => item.position))
-      next.current = delivered.has(position + 1) ? position + 1 : firstAvailable(next)
+      next.current = mode === 'lesson' && !response.attempt.correct
+        ? position : delivered.has(position + 1) ? position + 1 : firstAvailable(next)
       persist(next)
       if (response.attempt.correct) {
         haptics.success()
@@ -357,7 +359,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         setEarnedXpTotal((value) => value + response.attempt.xpEarned)
         setEarnedCoinsTotal((value) => value + response.attempt.coinsEarned)
       }
-      if (response.session.status === 'completed' || next.answers.every(Boolean)) {
+      if ((response.session.status === 'completed' || next.answers.every(Boolean)) && !(mode === 'lesson' && !response.attempt.correct)) {
         setFinished(true)
         setShowResults(true)
       }
@@ -760,6 +762,14 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           <TestHelperAvatar />
           <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
         </Button>
+      )}
+      {mode === 'lesson' && answer === 'wrong' && !drawingOpen && !showExplain && !showAiTutor && !finished && !showResults && (
+        <LessonMistakeFeedback language={settings.language} onAsk={() => setShowAiTutor(true)} onContinue={() => {
+          if (snapshot.answers.every(Boolean)) { setFinished(true); setShowResults(true); return }
+          const next = snapshot.questions.some((item) => item.position === position + 1) ? position + 1 : firstAvailable(snapshot)
+          setSlideDirection('left')
+          persist({ ...snapshot, current: next })
+        }} />
       )}
       <ConfirmDialog
         open={confirmExit}

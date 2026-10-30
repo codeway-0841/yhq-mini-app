@@ -11,7 +11,7 @@ function loadAsset() {
   return asset
 }
 
-export function HomeLessonNode({ color, fallback }: { color: number; fallback: string }) {
+export function HomeLessonNode({ color, fallback, completed = false }: { color: number; fallback: string; completed?: boolean }) {
   const canvas = useRef<HTMLCanvasElement>(null)
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
   const [ready, setReady] = useState(false)
@@ -60,12 +60,16 @@ export function HomeLessonNode({ color, fallback }: { color: number; fallback: s
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
           set('color', color)
+          set('completed', completed)
+          set('icon', completed ? 1 : 0)
           resize()
           frame = requestAnimationFrame(() => {
             frame = requestAnimationFrame(() => {
               if (disposed) return
-              set('select', true)
-              inputs.find((input) => input.name === 'koji_appear')?.fire()
+              if (!completed) {
+                set('select', true)
+                inputs.find((input) => input.name === 'koji_appear')?.fire()
+              }
               setReady(true)
             })
           })
@@ -84,10 +88,10 @@ export function HomeLessonNode({ color, fallback }: { color: number; fallback: s
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [color, noAnimation])
+  }, [color, completed, noAnimation])
 
   return (
-    <span className="relative block h-12 w-12 shrink-0" aria-hidden="true">
+    <span className="relative block h-14 w-14 shrink-0" aria-hidden="true">
       <canvas ref={canvas} className="absolute inset-0 h-full w-full" style={{ visibility: ready ? 'visible' : 'hidden' }} />
       {!ready && <img src={fallback} alt="" className="h-full w-full object-contain" />}
     </span>

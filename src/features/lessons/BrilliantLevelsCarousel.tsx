@@ -114,10 +114,10 @@ export function getBrilliantTheme(moduleId: number): BrilliantModuleTheme {
  * - Frame 5: Purple & Yellow 3D Code Blocks with Play Button & Pointer Hand
  */
 const HERO_PNGS: Record<number, string> = {
-  1: '/brilliant/hero_scale.png',
-  2: '/brilliant/hero_code.png',
-  3: '/brilliant/hero_gears.png',
-  4: '/brilliant/hero_dice.png',
+  1: '/brilliant/hero_scale.png?v=2',
+  2: '/brilliant/hero_code.png?v=2',
+  3: '/brilliant/hero_gears.png?v=2',
+  4: '/brilliant/hero_dice.png?v=2',
   5: '/brilliant/hero_math.png',
 }
 
@@ -139,7 +139,7 @@ export function BrilliantHeroIllustration({
         <img
           src={HERO_PNGS[variant]}
           alt=""
-          className="max-w-full max-h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.08)] select-none pointer-events-none"
+          className="max-w-full max-h-full object-contain select-none pointer-events-none"
         />
       </div>
     )
@@ -400,7 +400,7 @@ export function BrilliantHeroIllustration({
 /**
  * 1-to-1 3D Isometric Row Icon from the bottom card of 03_brilliant-swipe-levels-interaction.mp4:
  * - current: Isometric grey ring platform + floating 3D green gem/crown above it
- * - done: Isometric 3D cylinder platform + two grey cones/pawns on top
+ * - done: completed disk with a checkmark
  * - upcoming: Flat hatched grey isometric oval disc
  */
 export function BrilliantLessonRowIcon({
@@ -410,29 +410,22 @@ export function BrilliantLessonRowIcon({
   state: 'done' | 'current' | 'upcoming'
   accentColor?: string
 }) {
+  const normalized = accentColor.toLowerCase()
+  const color = normalized.includes('8a4cff') || normalized.includes('purple') ? 5
+    : ['f6b31f', 'gold', 'amber', 'yellow'].some((value) => normalized.includes(value)) ? 4 : 1
   if (state === 'done') {
-    return (
-      <div className="flex h-11 w-12 shrink-0 items-center justify-center">
-        <img
-          src="/brilliant/mascot_done.png"
-          alt=""
-          width={40}
-          height={40}
-          className="size-10 shrink-0 select-none object-contain pointer-events-none drop-shadow-sm"
-        />
-      </div>
-    )
+    return <HomeLessonNode color={color} fallback="/darslik-map/node-completed.svg" completed />
   }
 
   if (state === 'upcoming') {
     return (
-      <div className="flex h-11 w-12 shrink-0 items-center justify-center">
+      <div className="yhq-home-upcoming flex h-14 w-14 shrink-0 items-center justify-center">
         <img
-          src="/brilliant/mascot_upcoming.png"
+          src="/darslik-map/node-puck.svg"
           alt=""
           width={42}
           height={32}
-          className="h-8 w-11 shrink-0 select-none object-contain pointer-events-none opacity-85"
+          className="h-14 w-14 shrink-0 select-none object-contain pointer-events-none"
         />
       </div>
     )
@@ -440,7 +433,6 @@ export function BrilliantLessonRowIcon({
 
   // Current level - pick mascot by theme accent color
   let mascotSrc = '/brilliant/mascot_blue.png'
-  const normalized = accentColor.toLowerCase()
   if (normalized.includes('8a4cff') || normalized.includes('purple')) {
     mascotSrc = '/brilliant/mascot_purple.png'
   } else if (
@@ -452,7 +444,6 @@ export function BrilliantLessonRowIcon({
     mascotSrc = '/brilliant/mascot_gold.png'
   }
 
-  const color = mascotSrc.includes('purple') ? 5 : mascotSrc.includes('gold') ? 4 : 1
   return <HomeLessonNode color={color} fallback={mascotSrc} />
 }
 

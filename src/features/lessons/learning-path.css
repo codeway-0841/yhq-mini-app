@@ -554,6 +554,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
 /* Brilliant Darslik full-bleed pure white canvas — eliminates grey margins & locks vertical scroll */
 .yhq-home {
   --yhq-canvas: #fff;
+  --yhq-card: #fff;
   --yhq-text: #0b0b0f;
   --yhq-muted: #8b8d93;
   --yhq-border: #e5e7eb;
@@ -565,6 +566,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
 }
 body[data-theme='dark'] .yhq-home {
   --yhq-canvas: #111;
+  --yhq-card: #1b1b1b;
   --yhq-text: #f7f7f7;
   --yhq-muted: #929294;
   --yhq-border: #424242;
@@ -573,7 +575,11 @@ body[data-theme='dark'] .yhq-home {
   --yhq-dot-active: #666;
 }
 .yhq-home-screen { background: var(--yhq-canvas); color: var(--yhq-text); }
-.yhq-home-pill, .yhq-home-card { border-color: var(--yhq-border); background: var(--yhq-canvas); }
+.yhq-home-pill { border-color: var(--yhq-border); background: var(--yhq-canvas); }
+.yhq-home-card { border-color: var(--yhq-border); background: var(--yhq-card); }
+.yhq-home-accent { color: var(--yhq-accent); }
+body[data-theme='dark'] .yhq-home-accent { color: color-mix(in srgb, var(--yhq-accent), white 30%); }
+body[data-theme='dark'] .yhq-home-upcoming img { filter: brightness(.5); }
 .yhq-home-row:hover { background: var(--yhq-hover); }
 .yhq-home-progress { display: none; }
 
@@ -597,7 +603,7 @@ body[data-theme='dark'] .yhq-home {
     border-radius: 24px;
     pointer-events: none;
   }
-  .yhq-home-screen > * { position: relative; }
+  .yhq-home-hero, .yhq-home-card-group { position: relative; }
   .yhq-home-hero { order: 1; margin: 0; padding: 0; }
   .yhq-home-hero [data-testid='brilliant-swipe-stage'] { height: 180px; width: 100%; overflow: visible; }
   .yhq-home-hero-item { transform: translate3d(var(--yhq-desktop-x), 0, 0) scale(var(--yhq-desktop-scale)) !important; }
