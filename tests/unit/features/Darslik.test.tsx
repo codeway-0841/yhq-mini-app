@@ -165,7 +165,12 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     fireEvent.touchEnd(stage)
 
     expect(screen.getByTestId('brilliant-level-subtitle')).toHaveTextContent('LEVEL 2')
+    expect(screen.getByTestId('brilliant-start-button')).toHaveStyle({ backgroundColor: '#f6b31f' })
+    expect(screen.getByRole('tab', { name: 'LEVEL 2' })).toHaveAttribute('aria-selected', 'true')
     expect(screen.getByTestId('brilliant-hero-2')).toBeInTheDocument()
+
+    fireEvent.click(screen.getByRole('button', { name: 'Keyingi daraja' }))
+    expect(screen.getByTestId('brilliant-level-subtitle')).toHaveTextContent('LEVEL 3')
 
     // Click pagination dot for Level 4 to verify RECOMMENDED badge appears
     fireEvent.click(screen.getByRole('tab', { name: 'LEVEL 4' }))
@@ -180,6 +185,21 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     expect(useLessonsStore.getState().byUser[uid][1]).toEqual([0])
     fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
     expect(lessonRowButtons(1)[1]).toHaveAttribute('aria-current', 'step')
+  })
+
+  it('desktop kurs progressini ko‘rsatadi va tema o‘zgarishini fon bilan sinxronlaydi', async () => {
+    document.body.dataset.theme = 'dark'
+    useLessonsStore.setState({ byUser: { [uid]: { 1: [0, 1] } } })
+    location.state = { moduleId: 1 }
+    const view = render(<Darslik />)
+    const progress = document.querySelector('.yhq-home-progress')
+    expect(progress).toHaveAttribute('aria-valuenow', '2')
+    expect(progress).toHaveAttribute('aria-valuemax', String(lessons[1].length))
+    expect(document.body.style.backgroundColor).toBe('rgb(17, 17, 17)')
+    await act(async () => { document.body.dataset.theme = 'light'; await Promise.resolve() })
+    expect(document.body.style.backgroundColor).toBe('rgb(255, 255, 255)')
+    view.unmount()
+    delete document.body.dataset.theme
   })
 
   it('opens practice with the curated question IDs without marking practice completed', () => {

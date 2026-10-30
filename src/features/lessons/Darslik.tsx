@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { goBack, registerModal } from '../../shared/lib/navigation'
 import { config } from '../../shared/config'
@@ -285,23 +285,29 @@ export default function Darslik() {
     }
   }, [activeMod.id, reader])
 
-  // Brilliant Darslik immersive pure white canvas: sync Telegram header & background
+  // Keep the native chrome in sync with the course canvas.
   useEffect(() => {
     const tg = getTelegramWebApp()
     const metaTheme = document.querySelector('meta[name="theme-color"]')
     const prevMeta = metaTheme?.getAttribute('content')
-
-    try {
-      tg?.setHeaderColor?.('#ffffff')
-      tg?.setBackgroundColor?.('#ffffff')
-      tg?.disableVerticalSwipes?.()
-    } catch {}
-    if (metaTheme) metaTheme.setAttribute('content', '#ffffff')
-    document.documentElement.style.backgroundColor = '#ffffff'
-    document.body.style.backgroundColor = '#ffffff'
+    const updateTheme = () => {
+      const background = document.body.dataset.theme === 'dark' ? '#111111' : '#ffffff'
+      try {
+        tg?.setHeaderColor?.(background)
+        tg?.setBackgroundColor?.(background)
+      } catch {}
+      if (metaTheme) metaTheme.setAttribute('content', background)
+      document.documentElement.style.backgroundColor = background
+      document.body.style.backgroundColor = background
+    }
+    updateTheme()
+    const themeObserver = new MutationObserver(updateTheme)
+    themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
+    try { tg?.disableVerticalSwipes?.() } catch {}
 
     return () => {
-      syncTelegramTheme(settings.theme === 'dark')
+      themeObserver.disconnect()
+      syncTelegramTheme(document.body.dataset.theme === 'dark')
       if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
       document.documentElement.style.backgroundColor = ''
       document.body.style.backgroundColor = ''
@@ -422,26 +428,27 @@ export default function Darslik() {
   const activeTitle = ru ? activeMod.titleRu : activeMod.title
 
   return (
-    <div className="fixed inset-0 z-20 w-full h-full bg-white flex flex-col items-center overflow-hidden overscroll-none select-none lg:relative lg:inset-auto lg:z-auto">
+    <div className="yhq-home fixed inset-0 z-20 w-full h-full flex flex-col items-center overflow-hidden overscroll-none select-none lg:relative lg:inset-auto lg:z-auto">
       <div
         data-testid="brilliant-darslik-screen"
-        className="w-full flex-1 h-full max-h-full bg-white text-[#0b0b0f] flex flex-col justify-between px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.35rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-hidden touch-pan-x"
+        className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.35rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-y-auto"
       >
         {/* Top: Status bar + Header */}
-        <div className="flex flex-col shrink-0">
+        <div className="yhq-home-header flex flex-col shrink-0">
           {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
-          <div className="flex items-center justify-between">
+          <div className="yhq-home-status flex items-center justify-between">
             <button
               type="button"
               onClick={() => goBack(navigate)}
               aria-label={tt('darslikBack')}
-              className="inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5 transition-transform active:scale-95"
+              className="yhq-home-pill inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 px-3.5 transition-transform active:scale-95"
             >
-              <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+              <ChevronLeft className="hidden lg:block" size={20} aria-hidden="true" />
+              <span className="text-[15px] font-extrabold tabular-nums lg:hidden">
                 {Math.max(1, totalDone)}
               </span>
               {/* Golden key icon */}
-              <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
+              <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0 lg:hidden" aria-hidden="true">
                 <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
                 <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
                 <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
@@ -451,10 +458,10 @@ export default function Darslik() {
 
             <div
               data-testid="brilliant-streak-pill"
-              className="inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 border-[#e8e8e8] bg-white px-3.5"
+              className="yhq-home-pill inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 px-3.5"
             >
               {streak > 0 && (
-                <span className="text-[15px] font-extrabold tabular-nums text-[#0b0b0f]">
+                <span className="text-[15px] font-extrabold tabular-nums">
                   {streak}
                 </span>
               )}
@@ -474,7 +481,7 @@ export default function Darslik() {
             <h1
               id={`lesson-module-title-${activeMod.id}`}
               tabIndex={-1}
-              className="font-display text-[24px] sm:text-[26px] font-bold tracking-tight text-[#0b0b0f] leading-tight focus-visible:outline-none"
+              className="font-display text-[24px] sm:text-[26px] font-bold tracking-tight leading-tight focus-visible:outline-none"
             >
               {activeTitle}
             </h1>
@@ -498,16 +505,19 @@ export default function Darslik() {
                 </>
               )}
             </div>
+            <div className="yhq-home-progress" role="progressbar" aria-label={tt('pathProgress')} aria-valuemin={0} aria-valuemax={activeLessons.length} aria-valuenow={activeLessons.filter((_, idx) => activeDoneList.includes(idx)).length}>
+              <span style={{ width: `${activeLessons.length ? activeLessons.filter((_, idx) => activeDoneList.includes(idx)).length / activeLessons.length * 100 : 0}%`, background: theme.accent }} />
+            </div>
           </div>
         </div>
 
         {/* Center: 3D Hero Carousel Track (Floating vertically in the middle with generous breathing space) */}
-        <div className="my-auto flex flex-col items-center justify-center py-2 shrink-0">
+        <div className="yhq-home-hero my-auto flex flex-col items-center justify-center py-2 shrink-0">
           {/* 3. Center hero illustration swipe stage with generous lateral breathing room */}
           <div
             data-testid="brilliant-swipe-stage"
             onPointerDown={(e) => {
-              if (e.pointerType === 'touch') return
+              if (e.pointerType === 'touch' || (e.target as HTMLElement).closest('button')) return
               ;(e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId)
               handleSwipeStart(e.clientX)
             }}
@@ -523,37 +533,39 @@ export default function Darslik() {
               if (e.pointerType === 'touch') return
               handleSwipeEnd()
             }}
-            onTouchStart={(e) => { if (e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
+            onTouchStart={(e) => { if (!(e.target as HTMLElement).closest('button') && e.touches[0]) handleSwipeStart(e.touches[0].clientX) }}
             onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
             onTouchEnd={handleSwipeEnd}
             onTouchCancel={handleSwipeEnd}
-            className="relative flex h-[220px] w-full cursor-grab items-center justify-center overflow-hidden touch-pan-x active:cursor-grabbing select-none"
+            className="relative flex h-[clamp(160px,26dvh,220px)] w-[calc(100%+2rem)] cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
           >
-            {/* Continuous 3D Hero Carousel Track matching Android Compose HorizontalPager with 270px pitch */}
+            {/* The neighboring illustrations remain partially visible at the edges. */}
             {modules.map((m, i) => {
-              const offset = (i - currentModIdx) * 270 + dragOffset
+              const offset = (i - currentModIdx) * 215 + dragOffset
               const dist = Math.abs(offset)
-              const scale = Math.max(0.7, 1 - (dist / 270) * 0.3)
-              const opacity = Math.max(0, 1 - (dist / 270) * 0.55)
-              const isFar = dist > 540
+              const scale = Math.max(0.7, 1 - (dist / 215) * 0.3)
+              const opacity = Math.max(0, 1 - (dist / 215) * 0.55)
+              const isFar = dist > 430
 
               return (
                 <div
                   key={m.id}
                   data-testid={`brilliant-hero-${m.id}`}
                   aria-hidden={i !== currentModIdx}
-                  className="absolute pointer-events-none select-none flex items-center justify-center"
+                  className="yhq-home-hero-item absolute pointer-events-none select-none flex items-center justify-center"
                   style={{
                     transform: `translate3d(${offset}px, 0, 0) scale(${scale})`,
                     opacity: isFar ? 0 : opacity,
                     zIndex: isFar ? 0 : 10 - Math.min(9, Math.round(dist / 25)),
                     visibility: isFar ? 'hidden' : 'visible',
+                    '--yhq-desktop-x': `${(i - currentModIdx) * 105 + dragOffset}px`,
+                    '--yhq-desktop-scale': i === currentModIdx ? 0.8 : 0.25,
                     transition: isDragging
                       ? 'none'
                       : 'transform 380ms cubic-bezier(0.34, 1.56, 0.64, 1), opacity 380ms cubic-bezier(0.34, 1.56, 0.64, 1)',
-                  }}
+                  } as CSSProperties}
                 >
-                  <BrilliantHeroIllustration moduleId={m.id} className="w-[270px] h-[220px]" />
+                  <BrilliantHeroIllustration moduleId={m.id} className="w-[250px] h-[220px]" />
                 </div>
               )
             })}
@@ -564,7 +576,7 @@ export default function Darslik() {
                 type="button"
                 aria-label="Oldingi daraja"
                 onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx - 1) }}
-                className="absolute left-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+                className="yhq-home-previous absolute left-0 top-1/2 z-20 grid h-24 w-20 -translate-y-1/2 cursor-pointer place-items-center text-transparent focus-visible:text-[#b8b8b8]"
               >
                 <ChevronLeft size={14} strokeWidth={2.25} />
               </button>
@@ -574,7 +586,7 @@ export default function Darslik() {
                 type="button"
                 aria-label="Keyingi daraja"
                 onClick={(e) => { e.stopPropagation(); switchToModuleIndex(currentModIdx + 1) }}
-                className="absolute right-0 top-1/2 z-20 grid size-6 -translate-y-1/2 cursor-pointer place-items-center text-[#b8b8b8] opacity-0 transition-opacity focus-visible:opacity-100"
+                className="yhq-home-next absolute right-0 top-1/2 z-20 grid h-24 w-20 -translate-y-1/2 cursor-pointer place-items-center text-transparent focus-visible:text-[#b8b8b8]"
               >
                 <ChevronRight size={14} strokeWidth={2.25} />
               </button>
@@ -583,10 +595,10 @@ export default function Darslik() {
         </div>
 
         {/* Bottom Group: Centered Pagination Dots + Rounded Card */}
-        <div className="mt-auto shrink-0 flex flex-col w-full">
+        <div className="yhq-home-card-group mt-auto shrink-0 flex flex-col w-full">
           {/* 4. Centered Pagination Dots (sal teparoq, start karta ustida nafas bilan) */}
           <div
-            className="mb-[18px] flex items-center justify-center gap-2.5"
+            className="yhq-home-dots mb-[18px] flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
@@ -607,7 +619,7 @@ export default function Darslik() {
                       isActive ? 'size-2' : 'size-1.5'
                     }`}
                     style={{
-                      backgroundColor: isActive ? theme.dotColor : '#d1d5db',
+                      backgroundColor: isActive ? theme.dotColor : 'var(--yhq-dot)',
                     }}
                   />
                 </button>
@@ -619,7 +631,7 @@ export default function Darslik() {
           <section
             id={`lesson-module-${activeMod.id}`}
             aria-labelledby={`lesson-module-title-${activeMod.id}`}
-            className="w-full rounded-[28px] border border-[#e5e7eb] bg-white px-5 pt-3.5 pb-3 shadow-[0_4px_24px_rgba(0,0,0,0.04)]"
+            className="yhq-home-card w-full rounded-[28px] border px-5 pt-3.5 pb-3"
           >
         <div
           key={activeMod.id}
@@ -654,15 +666,15 @@ export default function Darslik() {
                     setSelected({ moduleId: activeMod.id, idx, check: false })
                     haptics.selection()
                   }}
-                  className="flex h-[58px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl hover:bg-slate-50 transition-colors"
+                  className="yhq-home-row flex h-[58px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl transition-colors"
                 >
                   <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 
                   <span
                     className={
                       isHighlighted && !isDone
-                        ? 'min-w-0 flex-1 text-[16px] font-bold leading-snug text-[#0b0b0f]'
-                        : 'min-w-0 flex-1 text-[16px] font-medium leading-snug text-[#9ca3af]'
+                        ? 'min-w-0 flex-1 text-[16px] font-bold leading-snug'
+                        : 'min-w-0 flex-1 text-[16px] font-medium leading-snug text-[var(--yhq-muted)]'
                     }
                   >
                     {lessonTitle}
@@ -678,7 +690,7 @@ export default function Darslik() {
                   ) : (
                     <span
                       className="size-4 shrink-0 rounded-full"
-                      style={{ backgroundColor: isHighlighted ? '#9ca3af' : '#e5e7eb' }}
+                      style={{ backgroundColor: isHighlighted ? 'var(--yhq-dot-active)' : 'var(--yhq-dot)' }}
                     />
                   )}
                 </button>

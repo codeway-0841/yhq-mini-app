@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import { HomeLessonNode } from './HomeLessonNode'
 
 export interface BrilliantModuleTheme {
   accent: string
@@ -451,17 +452,8 @@ export function BrilliantLessonRowIcon({
     mascotSrc = '/brilliant/mascot_gold.png'
   }
 
-  return (
-    <div className="flex h-11 w-12 shrink-0 items-center justify-center">
-      <img
-        src={mascotSrc}
-        alt=""
-        width={46}
-        height={42}
-        className="h-11 w-12 shrink-0 select-none object-contain pointer-events-none drop-shadow"
-      />
-    </div>
-  )
+  const color = mascotSrc.includes('purple') ? 5 : mascotSrc.includes('gold') ? 4 : 1
+  return <HomeLessonNode color={color} fallback={mascotSrc} />
 }
 
 export default BrilliantHeroIllustration
