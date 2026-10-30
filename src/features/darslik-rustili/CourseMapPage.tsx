@@ -17,8 +17,8 @@ import {
 } from '../../content/darslik-rustili'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
-import { PathMascot } from '../lessons'
 import { BlockReader } from './BlockReader'
+import { CourseMapNodeArt } from './CourseMapNodeArt'
 import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
 import './course-map.css'
@@ -116,7 +116,7 @@ export default function CourseMapPage() {
 
   /** Tanlanmagan bo'lsa — ekran tubidagi eng yaqin mavzu, u ham bo'lmasa joriy mavzu. */
   const active = picked ?? focus ?? { blockId: currentBlock.id, idx: currentIdx }
-  /** Mascot va uning halqasi kartada ko'rsatilayotgan mavzuga birga o'tadi. */
+  /** Karta scroll bilan ergashadi; ko'k disk esa haqiqiy joriy darsda qoladi. */
   const outline = getBlockOutline(active.blockId)
   const activeCheck = active.idx === outline.length
   const activeTitle = activeCheck ? tt('rusDarslikUnitCheck') : outline[active.idx] ?? ''
@@ -378,12 +378,12 @@ export default function CourseMapPage() {
                   <ul className="cmap-lessons" id={`cmap-nodes-${block.id}`}>
                     {sections.map((title, idx) => {
                       const key = keyOf(block.id, idx)
-                      const isActive = active.blockId === block.id && active.idx === idx
+                      const isSelected = active.blockId === block.id && active.idx === idx
                       const isCurrent = currentBlock.id === block.id && currentIdx === idx
-                      const isFocus = scrolled && active.blockId === block.id && active.idx === idx
+                      const isFocus = isSelected && !isCurrent
                       const isDone = done.includes(idx)
                       const isLocked = locked.includes(idx)
-                      const art = isActive ? NODE_ART.active : isDone ? NODE_ART.completed : NODE_ART.puck
+                      const art = isCurrent ? NODE_ART.active : isDone ? NODE_ART.completed : NODE_ART.puck
                       return (
                         <li key={key} className="cmap-row" style={{ '--off': WAVE_OFFSETS[idx % WAVE_OFFSETS.length] } as CSSProperties}>
                           <button
@@ -392,18 +392,15 @@ export default function CourseMapPage() {
                               if (node) nodeRefs.current.set(key, node)
                               else nodeRefs.current.delete(key)
                             }}
-                            className={`cmap-node${isActive ? ' is-active' : ''}${isFocus ? ' is-focus' : ''}${isDone ? ' is-done' : ''}`}
+                            className={`cmap-node${isCurrent ? ' is-active' : ''}${isFocus ? ' is-focus' : ''}${isDone ? ' is-done' : ''}`}
                             aria-current={isCurrent ? 'step' : undefined}
                             aria-disabled={isLocked || undefined}
                             onClick={() => pick(block.id, idx)}
                           >
                             <span className="cmap-node-art-wrap">
-                              <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />
-                              {isActive && (
-                                <span className="cmap-node-mascot" aria-hidden="true">
-                                  <PathMascot animation="idle" variant="tile" />
-                                </span>
-                              )}
+                              {isCurrent || isFocus
+                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} />
+                                : <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />}
                             </span>
                             <span className="cmap-node-label">{title}</span>
                           </button>
@@ -418,12 +415,14 @@ export default function CourseMapPage() {
                           if (node) nodeRefs.current.set(key, node)
                           else nodeRefs.current.delete(key)
                         }}
-                        className={`cmap-node${scrolled && active.blockId === block.id && active.idx === sections.length ? ' is-focus' : ''}`}
+                        className={`cmap-node${active.blockId === block.id && active.idx === sections.length ? ' is-focus' : ''}`}
                         aria-disabled={!complete || undefined}
                         onClick={() => pick(block.id, sections.length)}
                       >
                         <span className="cmap-node-art-wrap">
-                          <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />
+                          {active.blockId === block.id && active.idx === sections.length
+                            ? <CourseMapNodeArt current={false} src={NODE_ART.check} levelReview />
+                            : <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />}
                         </span>
                         <span className="cmap-node-label">{tt('rusDarslikUnitCheck')}</span>
                       </button>

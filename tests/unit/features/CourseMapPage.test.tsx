@@ -76,12 +76,13 @@ describe('CourseMapPage — kurs xaritasi', () => {
     const first = nodesOf(1)[0]
     expect(first).toHaveAttribute('aria-current', 'step')
     expect(first.querySelector('.cmap-node-art')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
+    expect(first.querySelector('.cmap-node-rive')).toHaveAttribute('aria-hidden', 'true')
     expect(first.querySelector('.cmap-gem')).toBeNull()
     expect(sheet().querySelector('.cmap-sheet-title')!.textContent).toBe(getBlockOutline(1)[0])
     expect(within(sheet()).getByRole('button', { name: 'Boshlash' })).toBeEnabled()
   })
 
-  it('boshqa tugun tanlansa karta bilan mascot va ko‘k halqa ham unga o‘tadi', async () => {
+  it('boshqa mavzu tanlansa karta unga o‘tadi, ko‘k disk joriy darsda qoladi va orbit tanlovni ko‘rsatadi', async () => {
     render(<CourseMapPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
@@ -91,9 +92,43 @@ describe('CourseMapPage — kurs xaritasi', () => {
     await waitFor(() => expect(sheet().querySelector('.cmap-sheet-title')!.textContent).toBe(getBlockOutline(1)[target]))
     expect(nodesOf(1)[target]).not.toHaveAttribute('aria-current')
     expect(nodesOf(1)[0]).toHaveAttribute('aria-current', 'step')
-    expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
-    expect(nodesOf(1)[target].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
+    expect(nodesOf(1)[0]).toHaveClass('is-active')
+    expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
+    expect(nodesOf(1)[target]).toHaveClass('is-focus')
+    expect(nodesOf(1)[target].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
+    expect(nodesOf(1)[target].querySelector('.cmap-node-rive')).toHaveAttribute('aria-hidden', 'true')
+    expect(nodesOf(1)[target + 1].querySelector('.cmap-node-rive')).toBeNull()
+    expect(nodesOf(1)[0].querySelector('.cmap-node-mascot')).not.toBeNull()
+    expect(nodesOf(1)[target].querySelector('.cmap-node-mascot')).toBeNull()
     expect(document.querySelectorAll('img[src="/darslik-map/node-active-base.png"]')).toHaveLength(1)
+  })
+
+  it('scroll boshqa mavzuga ergashganda ham ko‘k diskni ko‘chirmaydi', async () => {
+    render(<CourseMapPage />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const target = nodesOf(1)[1]
+    vi.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(function (this: Element) {
+      if (!this.classList.contains('cmap-node')) return { top: 0, bottom: 0, height: 0 } as DOMRect
+      const top = this === target ? 100 : 10000
+      return { top, bottom: top + 134, height: 134 } as DOMRect
+    })
+    vi.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => {
+      cb(0)
+      return 1
+    })
+    const originalScrollY = window.scrollY
+    window.scrollY = 300
+    try {
+      fireEvent.scroll(window)
+      await waitFor(() => expect(sheet().querySelector('.cmap-sheet-title')).toHaveTextContent(getBlockOutline(1)[1]))
+      expect(nodesOf(1)[0]).toHaveClass('is-active')
+      expect(nodesOf(1)[0].querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
+      expect(target).toHaveClass('is-focus')
+      expect(target.querySelector('img')).toHaveAttribute('src', '/darslik-map/node-puck.svg')
+    } finally {
+      window.scrollY = originalScrollY
+    }
   })
 
   it('o‘tilgan mavzu ko‘k belgi va alohida mashq/qayta o‘qish tugmalarini ko‘rsatadi', async () => {
