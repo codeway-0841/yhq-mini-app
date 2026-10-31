@@ -54,4 +54,13 @@ describe('ModalShell', () => {
     render(<ModalShell title="T" onClose={() => {}} showHandle={false} />)
     expect(document.querySelector('[data-drag-handle]')).toBeNull()
   })
+
+  it('vizual sarlavhasiz ham dialog nomi va yopish tugmasi mavjud', () => {
+    const onClose = vi.fn()
+    render(<ModalShell title="Yordamchi" onClose={onClose} showHeader={false} />)
+    const dialog = screen.getByRole('dialog', { name: 'Yordamchi' })
+    expect(dialog).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
+    expect(onClose).toHaveBeenCalledTimes(1)
+  })
 })

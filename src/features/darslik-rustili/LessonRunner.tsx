@@ -1,9 +1,10 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronLeft, Lock, RefreshCw, XCircle,
+  CheckCircle2, ChevronLeft, Lock, RefreshCw, X, XCircle, Zap,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import Confetti from '../../shared/components/Confetti'
+import ModalShell from '../../shared/components/ModalShell'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useT, type Keys } from '../../shared/i18n'
@@ -17,6 +18,7 @@ import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
 import LessonExercise from './LessonExercise'
+import './rus-lesson-feedback.css'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import {
   isDarslikPublicAnswerComplete,
@@ -30,6 +32,7 @@ import {
 
 type LoadError = 'locked' | 'unavailable' | 'network'
 type Phase = 'exercise' | 'feedback'
+const Tutor = lazy(() => import('../ai-tutor').then((module) => ({ default: module.SocraticChatSheet })))
 
 const EXERCISE_LABEL: Record<DarslikPublicExercise['kind'], Keys> = {
   mcq: 'rusDarslikExerciseMcq',
@@ -114,6 +117,9 @@ export default function LessonRunner({
   const [index, setIndex] = useState(0)
   const [phase, setPhase] = useState<Phase>('exercise')
   const [feedback, setFeedback] = useState<DarslikAnswerFeedback | null>(null)
+  const [revealed, setRevealed] = useState(false)
+  const [showExplanation, setShowExplanation] = useState(false)
+  const [showTutor, setShowTutor] = useState(false)
   const [checking, setChecking] = useState(false)
   const [answerError, setAnswerError] = useState(false)
   const [combo, setCombo] = useState(0)
@@ -137,14 +143,14 @@ export default function LessonRunner({
 
   useEffect(() => {
     const escape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
+      if (event.key === 'Escape' && !showExplanation && !showTutor) {
         event.preventDefault()
         closeRef.current()
       }
     }
     document.addEventListener('keydown', escape)
     return () => document.removeEventListener('keydown', escape)
-  }, [])
+  }, [showExplanation, showTutor])
 
   useEffect(() => subscribeSpeaking(() => setSpeaking(isSpeaking())), [])
   useEffect(() => () => stopSpeaking(), [])
@@ -163,6 +169,9 @@ export default function LessonRunner({
     setIndex(0)
     setPhase('exercise')
     setFeedback(null)
+    setRevealed(false)
+    setShowExplanation(false)
+    setShowTutor(false)
     setAnswerError(false)
     setSubmitError(false)
     setCombo(0)
@@ -334,6 +343,8 @@ export default function LessonRunner({
     setIndex((value) => value + 1)
     setPhase('exercise')
     setFeedback(null)
+    setRevealed(false)
+    setShowExplanation(false)
     setAnswerError(false)
   }, [check, index, submit])
 
@@ -343,6 +354,8 @@ export default function LessonRunner({
     setIndex(0)
     setPhase('exercise')
     setFeedback(null)
+    setRevealed(false)
+    setShowExplanation(false)
     setResult(null)
     setAnswerError(false)
     setSubmitError(false)
@@ -364,7 +377,19 @@ export default function LessonRunner({
     ? Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, total)) * 100)
     : 0
 
-  const header = (
+  const header = lesson && check && !result ? (
+    <header className="rus-lesson-header pt-[calc(0.625rem+var(--safe-top,0px))]">
+      <button type="button" onClick={onClose} aria-label={tt('rusDarslikQuizClose')} className="rus-lesson-close"><X size={24} /></button>
+      <div className="rus-lesson-progress" role="progressbar" aria-label={tt('rusDarslikLessonProgress')}
+        aria-valuemin={0} aria-valuemax={total} aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}>
+        <span style={{ width: `${Math.max(3, progressPercent)}%` }} />
+      </div>
+      <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
+      {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
+      <span className="rus-lesson-dots" aria-hidden="true"><i /><i /><i /></span>
+      <Zap size={25} className="rus-lesson-lightning" aria-hidden="true" />
+    </header>
+  ) : (
     <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
       <div className="mx-auto flex w-full max-w-[520px] items-center gap-3">
         <button
@@ -407,7 +432,7 @@ export default function LessonRunner({
               aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}
             >
               <div
-                className="h-full rounded-full bg-pprimary transition-[width] duration-300 ease-out"
+                className="h-full rounded-full bg-psuccess transition-[width] duration-300 ease-out"
                 style={{ width: `${Math.max(8, progressPercent)}%` }}
               />
             </div>
@@ -649,7 +674,7 @@ export default function LessonRunner({
     const isLast = index + 1 >= check.questions.length
     return (
       <div
-        className="fixed inset-0 z-[60] flex flex-col bg-pcanvas"
+        className="rus-lesson-runner fixed inset-0 z-[60] flex flex-col bg-pcanvas"
         data-testid="lesson-runner"
         data-format="lesson"
         data-phase={phase}
@@ -671,44 +696,14 @@ export default function LessonRunner({
               </p>
             )}
 
-            <div className="mb-3 flex items-center justify-between gap-2">
-              <span className="inline-flex items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.12)] px-2.5 py-1 text-[11px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
-                {tt(EXERCISE_LABEL[current.kind])}
-              </span>
-              <span className="text-[11px] font-semibold text-pmuted">{tt('rusDarslikLessonSource')}</span>
-            </div>
-
-            {/* Mascot Avatar + Speech Bubble Prompt */}
-            <div className="mb-5 flex items-start gap-3">
-              <div className="relative mt-0.5 size-12 shrink-0 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-1.5 shadow-2xs">
-                <PathMascot
-                  key={phase === 'feedback' ? `${current.id}:${feedback?.correct ? 'happy' : 'oops'}` : `${current.id}:idle`}
-                  variant="avatar"
-                  animation={phase === 'feedback' ? (feedback?.correct ? 'happy' : 'oops') : 'idle'}
-                />
-              </div>
-
-              <div className="relative min-w-0 flex-1 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
-                <span
-                  aria-hidden="true"
-                  className="absolute -left-1.5 top-5 size-3 rotate-45 bg-pcard"
-                />
-                <h3
-                  id="lesson-runner-title"
-                  ref={headingRef}
-                  tabIndex={-1}
-                  className="relative text-[17px] font-bold leading-snug text-pfg focus-visible:outline-none sm:text-[18px]"
-                >
-                  {current.prompt}
-                </h3>
-              </div>
-            </div>
+            <h3 id="lesson-runner-title" ref={headingRef} tabIndex={-1} className="mb-7 mt-8 text-[20px] font-semibold leading-relaxed text-pfg focus-visible:outline-none sm:text-[22px]">{current.prompt}</h3>
 
             <div>
               <LessonExercise
                 key={current.id}
                 exercise={current}
-                value={answers[current.id] ?? answerOrEmpty(current)}
+                value={revealed && feedback && (current.kind === 'mcq' || current.kind === 'listening') ? String(current.options.indexOf(feedback.correctAnswer)) : answers[current.id] ?? answerOrEmpty(current)}
+                outcome={phase === 'feedback' ? (revealed ? 'revealed' : feedback?.correct ? 'correct' : 'wrong') : undefined}
                 onChange={setAnswer}
                 disabled={phase === 'feedback' || checking}
                 onSpeak={playAudio}
@@ -729,91 +724,44 @@ export default function LessonRunner({
           </div>
         </div>
 
-        {/* Duolingo Bottom Dock: Check CTA or Slide-up Feedback Drawer */}
-        <div
-          className={cn(
-            'border-t px-4 py-3.5 pb-[calc(0.875rem+var(--safe-bottom,0px))] transition-colors',
-            phase === 'feedback' && feedback
-              ? feedback.correct
-                ? 'border-[rgb(var(--p-success-rgb)/0.35)] bg-[rgb(var(--p-success-rgb)/0.10)]'
-                : 'border-[rgb(var(--p-danger-rgb)/0.35)] bg-[rgb(var(--p-danger-rgb)/0.09)]'
-              : 'border-pline bg-pcanvas',
-          )}
-        >
-          <div className="mx-auto w-full max-w-[460px]">
+        <div className="rus-lesson-dock rounded-t-3xl px-4 py-5 pb-[calc(1.25rem+var(--safe-bottom,0px))]"
+          data-state={phase !== 'feedback' || !feedback ? 'exercise' : revealed ? 'revealed' : feedback.correct ? 'correct' : 'wrong'}>
+          <div className="relative mx-auto w-full max-w-[460px]">
             {phase === 'feedback' && feedback && (
-              <div
-                ref={feedbackRef}
-                data-testid="lesson-feedback"
-                data-correct={feedback.correct ? 'true' : 'false'}
-                role="status"
-                aria-live="polite"
-                className="mb-3.5"
-              >
-                <div className="flex items-start gap-3">
-                  <span
-                    aria-hidden="true"
-                    className={cn(
-                      'mt-0.5 grid size-8 shrink-0 place-items-center rounded-full text-white shadow-xs',
-                      feedback.correct ? 'bg-psuccess' : 'bg-pdanger',
-                    )}
-                  >
-                    {feedback.correct ? <CheckCircle2 size={18} strokeWidth={2.5} /> : <XCircle size={18} strokeWidth={2.5} />}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className={cn('text-[16px] font-extrabold leading-tight', feedback.correct ? 'text-psuccess' : 'text-pdanger')}>
-                        {feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}
-                      </p>
-                      {feedback.correct && (
-                        <span className="inline-flex shrink-0 items-center rounded-full bg-[rgb(var(--p-success-rgb)/0.16)] px-2.5 py-0.5 text-[11px] font-extrabold tabular-nums text-psuccess">
-                          +{combo >= 3 ? 5 : 3} XP
-                        </span>
-                      )}
-                    </div>
-                    {!feedback.correct && (
-                      <p className="mt-1 text-[13px] font-semibold leading-snug text-pfg">
-                        {tt('rusDarslikQuizCorrectAnswer')}: <span className="font-bold text-psuccess">{feedback.correctAnswer}</span>
-                      </p>
-                    )}
-                    <p className="mt-1 text-[12.5px] leading-relaxed text-pfg opacity-85">{feedback.explanation}</p>
-                  </div>
-                </div>
+              <div ref={feedbackRef} data-testid="lesson-feedback" data-correct={feedback.correct ? 'true' : 'false'} data-revealed={revealed ? 'true' : 'false'} role="status" aria-live="polite" className="mb-5 flex items-center justify-between gap-3">
+                <div className="min-w-0"><p className="text-[20px] font-extrabold leading-tight text-pfg">{revealed ? tt('rusDarslikAnswerShown') : feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}</p>
+                  {revealed && <p className="mt-1 break-words text-[15px] font-semibold text-pfg">{feedback.correctAnswer}</p>}</div>
+                {feedback.correct || revealed
+                  ? <Button variant="secondary" onClick={() => setShowExplanation(true)} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikWhy')}</Button>
+                  : <Button variant="secondary" onClick={() => setRevealed(true)} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikSeeAnswer')}</Button>}
               </div>
             )}
-
-            {phase === 'exercise' ? (
-              <Button
-                size="lg"
-                block
-                onClick={() => { void checkAnswer() }}
-                disabled={!currentAnswered || checking}
-                className="shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-all active:translate-y-[2px] active:shadow-none disabled:shadow-none"
-              >
-                {checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
-              </Button>
-            ) : (
-              <Button
-                size="lg"
-                block
-                onClick={continueLesson}
-                disabled={submitting}
-                className={cn(
-                  'text-white transition-all active:translate-y-[2px] active:shadow-none',
-                  feedback?.correct
-                    ? 'bg-psuccess hover:bg-psuccess shadow-[0_4px_0_color-mix(in_srgb,var(--p-success)_65%,#0f172a)]'
-                    : 'bg-pdanger hover:bg-pdanger shadow-[0_4px_0_color-mix(in_srgb,var(--p-danger)_65%,#0f172a)]',
-                )}
-              >
-                {submitting
-                  ? tt('rusDarslikCheckSubmitting')
-                  : isLast
-                    ? tt('rusDarslikLessonFinish')
-                    : tt('rusDarslikLessonContinue')}
-              </Button>
-            )}
+            {phase === 'exercise' ? <div className="flex items-center gap-3"><button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="idle" /></button><Button size="lg" block className="rus-lesson-check flex-1" onClick={() => { void checkAnswer() }} disabled={!currentAnswered || checking}>{checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}</Button></div>
+              : feedback && !feedback.correct && !revealed ? <div className="flex items-center gap-3">
+                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="oops" /></button>
+                <Button size="lg" className="rus-lesson-action min-w-0 flex-1" onClick={() => { setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) })); setFeedback(null); setPhase('exercise') }}>{tt('rusDarslikTryAgain')}</Button>
+              </div> : <div className="flex items-center gap-3">
+                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation={feedback?.correct ? 'happy' : 'idle'} /></button>
+                <Button size="lg" block onClick={continueLesson} disabled={submitting} className="rus-lesson-action flex-1">
+                  {submitting ? tt('rusDarslikCheckSubmitting') : revealed ? tt('rusDarslikSkipExplanation') : isLast ? tt('rusDarslikLessonFinish') : tt('rusDarslikLessonContinue')}
+                </Button>
+              </div>}
           </div>
         </div>
+        {showExplanation && feedback && <ModalShell title={tt('rusDarslikQuizExplanation')} onClose={() => setShowExplanation(false)} zIndex={80} footer={<Button size="lg" block onClick={() => setShowExplanation(false)}>{tt('rusDarslikGotIt')}</Button>}>
+          <p className="py-5 text-[17px] leading-relaxed text-pfg">{feedback.explanation}</p>
+          <div className="rounded-2xl bg-pcard p-4 text-[15px] leading-relaxed text-pfg"><p className="font-bold">{current.prompt}</p><p className="mt-3">{tt('rusDarslikQuizCorrectAnswer')}: <strong>{feedback.correctAnswer}</strong></p></div>
+        </ModalShell>}
+        {showTutor && <Suspense fallback={null}><Tutor isOpen onClose={() => setShowTutor(false)} zIndex={80} variant="lesson"
+          mascot={<PathMascot variant="avatar" animation="idle" />} context={{
+          subjectId: RUSSIAN_SUBJECT_ID,
+          topicName: title,
+          questionText: current.prompt,
+          options: current.kind === 'mcq' || current.kind === 'listening'
+            ? Object.fromEntries(current.options.map((option, optionIndex) => [String(optionIndex + 1), option]))
+            : undefined,
+          userSelectedOption: answers[current.id] === undefined ? undefined : answerText(current, answers[current.id]),
+        }} /></Suspense>}
       </div>
     )
   }

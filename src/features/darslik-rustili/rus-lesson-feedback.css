@@ -1,0 +1,87 @@
+.rus-lesson-runner {
+  background: #fff;
+}
+
+.rus-lesson-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding-inline: 16px;
+  padding-bottom: 12px;
+  min-height: 58px;
+}
+.rus-lesson-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: none;
+  place-items: center;
+  color: #888;
+  cursor: pointer;
+}
+.rus-lesson-progress { height: 12px; flex: 1; overflow: hidden; border-radius: 999px; background: #dedede; }
+.rus-lesson-progress span { display: block; height: 100%; border-radius: inherit; background: #21c65b; transition: width 180ms ease; }
+.rus-lesson-dots { display: flex; gap: 7px; }
+.rus-lesson-dots i { display: block; width: 10px; height: 10px; border-radius: 50%; background: #dedede; }
+.rus-lesson-lightning { flex: none; color: #aaa; }
+body[data-theme='dark'] .rus-lesson-progress { background: #3c3c3c; }
+body[data-theme='dark'] .rus-lesson-dots i { background: #1f1f1f; }
+body[data-theme='dark'] .rus-lesson-lightning { color: #3c3c3c; }
+
+body[data-theme='dark'] .rus-lesson-runner,
+body[data-theme='dark'] .rus-lesson-runner > div:first-child,
+body[data-theme='dark'] .rus-lesson-dock[data-state='exercise'] {
+  background: #111;
+}
+
+.rus-lesson-dock[data-state='wrong'] { background: #fff2c4; }
+.rus-lesson-dock[data-state='correct'] { background: #d8f5df; }
+.rus-lesson-dock[data-state='revealed'] { background: #ececec; }
+
+body[data-theme='dark'] .rus-lesson-dock[data-state='wrong'] { background: #3b2d00; }
+body[data-theme='dark'] .rus-lesson-dock[data-state='correct'] { background: #003309; }
+body[data-theme='dark'] .rus-lesson-dock[data-state='revealed'] { background: #323232; }
+
+.rus-lesson-dock .rus-lesson-action,
+.rus-lesson-dock .rus-lesson-secondary,
+.rus-lesson-dock .rus-lesson-check {
+  min-height: 52px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.rus-lesson-dock .rus-lesson-check {
+  background: #e7e7e7;
+  color: #111;
+  box-shadow: inset 0 -4px 0 #aaa;
+}
+.rus-lesson-dock .rus-lesson-check:disabled {
+  background: #ccc;
+  color: #888;
+  box-shadow: none;
+}
+body[data-theme='dark'] .rus-lesson-dock .rus-lesson-check:disabled {
+  background: #1e1e1e;
+  color: #494949;
+}
+.rus-lesson-dock[data-state='wrong'] .rus-lesson-action {
+  background: #e8ae0c;
+  color: #4c3600;
+  box-shadow: inset 0 -4px 0 #a47900;
+}
+.rus-lesson-dock[data-state='correct'] .rus-lesson-action {
+  background: #20b748;
+  color: white;
+  box-shadow: inset 0 -4px 0 #168438;
+}
+.rus-lesson-dock[data-state='revealed'] .rus-lesson-action {
+  background: #777;
+  color: white;
+  box-shadow: inset 0 -4px 0 #555;
+}
+body[data-theme='dark'] .rus-lesson-dock .rus-lesson-secondary {
+  background: rgb(255 255 255 / 12%);
+  color: white;
+}
+@media (prefers-reduced-motion: reduce) { .rus-lesson-progress span { transition: none; } }

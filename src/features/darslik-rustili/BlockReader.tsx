@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
 import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
@@ -12,6 +12,9 @@ import { buildLessonPages, extractOutline, extractSectionBlocks, parseMarkdown, 
 import { nextSection } from './progress'
 import TopicCheck from './TopicCheck'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
+import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
+
+const Tutor = lazy(() => import('../ai-tutor').then((module) => ({ default: module.SocraticChatSheet })))
 
 interface BlockReaderProps {
   block: DarslikBlockMeta
@@ -85,6 +88,7 @@ export function BlockReader({
   const [pageIndex, setPageIndex] = useState(0)
   const [quizOpen, setQuizOpen] = useState(false)
   const [speaking, setSpeaking] = useState(false)
+  const [showTutor, setShowTutor] = useState(false)
   const bodyRef = useRef<HTMLDivElement | null>(null)
 
   // Android hardware back / Telegram BackButton — o'quvchini yopadi.
@@ -129,6 +133,7 @@ export function BlockReader({
   useEffect(() => {
     stopSpeaking()
     setPageIndex(0)
+    setShowTutor(false)
     scrollToTop()
     setTocOpen(false)
   }, [block.id, sectionIndex, source, scrollToTop])
@@ -236,7 +241,7 @@ export function BlockReader({
                       className={cn(
                         'h-full rounded-full transition-all duration-300',
                         isCompleted
-                          ? 'w-full bg-pprimary'
+                          ? 'w-full bg-psuccess'
                           : isActive
                             ? 'w-full bg-pprimary'
                             : 'w-0 bg-transparent',
@@ -323,39 +328,17 @@ export function BlockReader({
           </div>
         ) : (
           <article className="mx-auto w-full max-w-[560px] pb-5" aria-labelledby="rus-lesson-topic-title">
-            {/* Mascot Guidebook Header Card */}
-            <div className="mb-3 flex items-center gap-3 rounded-3xl bg-pcard p-3.5 shadow-xs">
-              <div className="relative size-11 shrink-0 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-1.5">
-                <PathMascot variant="avatar" animation="idle" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <span className="inline-flex items-center rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-pprimary">
-                  {tt('rusDarslikTheory')}
-                </span>
-                <h1 id="rus-lesson-topic-title" className="mt-1 font-display text-[17px] font-extrabold leading-snug tracking-tight text-pfg sm:text-[19px]">
-                  {sectionTitle}
-                </h1>
-              </div>
-              <button
-                type="button"
-                onClick={handleSpeakCard}
-                aria-label={tt('rusDarslikListenExample')}
-                className={cn(
-                  'grid size-10 shrink-0 cursor-pointer place-items-center rounded-2xl transition-all active:scale-95',
-                  speaking
-                    ? 'bg-pprimary text-ponprimary shadow-xs ring-2 ring-[rgb(var(--p-primary-rgb)/0.3)]'
-                    : 'bg-psurface text-pprimary hover:bg-[rgb(var(--p-primary-rgb)/0.12)]',
-                )}
-              >
-                <Volume2 size={18} strokeWidth={2.25} className={cn(speaking && 'animate-pulse')} />
-              </button>
+            {safePageIndex === 0 && <div className="flex min-h-[180px] items-center justify-center py-8 sm:min-h-[220px]" aria-hidden="true"><div className="grid size-28 -rotate-6 place-items-center rounded-3xl bg-amber-400 text-blue-900 shadow-[8px_8px_0_#d39914]"><BookOpen size={64} strokeWidth={1.7} /></div></div>}
+            <div className="mb-5 flex items-start gap-3">
+              <h1 id="rus-lesson-topic-title" className="min-w-0 flex-1 font-display text-[28px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[32px]">{sectionTitle}</h1>
+              <button type="button" onClick={handleSpeakCard} aria-label={tt('rusDarslikListenExample')} className={cn('grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg', speaking && 'text-pprimary')}><Volume2 size={20} className={cn(speaking && 'animate-pulse')} /></button>
             </div>
 
             <section
               key={`${block.id}:${sectionIndex}:${safePageIndex}`}
               data-testid="micro-lesson-card"
               data-lesson-step={safePageIndex + 1}
-              className="rounded-3xl bg-pcard px-4 py-5 shadow-xs sm:px-5"
+              className="py-2 text-[17px] leading-relaxed text-pfg"
             >
               <MarkdownView blocks={currentCardBlocks} />
             </section>
@@ -365,6 +348,7 @@ export function BlockReader({
 
       <div className="border-t border-pline bg-pcanvas px-3.5 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
         <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
+          <button type="button" className="relative block size-12 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="idle" /></button>
           <button
             type="button"
             disabled={safePageIndex === 0 || failed || source === null}
@@ -380,7 +364,7 @@ export function BlockReader({
             disabled={failed || source === null}
             onClick={nextPage}
             className={cn(
-              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-2xl px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50',
+              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-full px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50',
               !isLastPage
                 ? 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]'
                 : passed
@@ -405,6 +389,10 @@ export function BlockReader({
           </button>
         </div>
       </div>
+
+      {showTutor && !quizOpen && <Suspense fallback={null}><Tutor isOpen onClose={() => setShowTutor(false)} zIndex={80} variant="lesson"
+        mascot={<PathMascot variant="avatar" animation="idle" />}
+        context={{ subjectId: RUSSIAN_SUBJECT_ID, topicName: sectionTitle, questionText: speechText.slice(0, 3000) }} /></Suspense>}
 
       {quizOpen && (
         <TopicCheck

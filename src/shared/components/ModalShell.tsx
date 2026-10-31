@@ -32,6 +32,8 @@ export interface ModalShellProps {
   backdropClassName?: string
   /** Tortish dastagi (default: true) */
   showHandle?: boolean
+  /** Sarlavhani vizual yashirish; dialog nomi va yopish tugmasi saqlanadi. */
+  showHeader?: boolean
   /**
    * Body o'zi scroll bo'lsin (default: true). `false` — chat/vosita kabi
    * ichki scroll va sticky input'li kontent uchun (body `flex-1 min-h-0`).
@@ -74,6 +76,7 @@ export function ModalShell({
   canDismiss,
   backdropClassName,
   showHandle = true,
+  showHeader = true,
   bodyScroll = true,
 }: ModalShellProps) {
   const generatedId = React.useId()
@@ -107,12 +110,20 @@ export function ModalShell({
           />
         ) : null}
 
-        <ModalHeaderRow onClose={onClose} label={closeLabel} right={headerRight}>
-          <h2 id={titleId} className="text-balance font-display text-[17px] font-bold leading-snug tracking-tight text-pfg">
-            {title}
-          </h2>
-          {subtitle ? <p className="mt-1 text-[13px] leading-snug text-pmuted">{subtitle}</p> : null}
-        </ModalHeaderRow>
+        {showHeader ? (
+          <ModalHeaderRow onClose={onClose} label={closeLabel} right={headerRight}>
+            <h2 id={titleId} className="text-balance font-display text-[17px] font-bold leading-snug tracking-tight text-pfg">{title}</h2>
+            {subtitle ? <p className="mt-1 text-[13px] leading-snug text-pmuted">{subtitle}</p> : null}
+          </ModalHeaderRow>
+        ) : (
+          <>
+            <h2 id={titleId} className="sr-only">{title}</h2>
+            <button type="button" onClick={onClose} aria-label={closeLabel}
+              className="absolute right-3 top-2 z-20 grid size-9 place-items-center rounded-full text-pmuted focus-visible:outline-2 focus-visible:outline-pprimary">
+              <span aria-hidden="true">×</span>
+            </button>
+          </>
+        )}
 
         {headerExtra ? <div className="relative z-10 flex-none">{headerExtra}</div> : null}
 

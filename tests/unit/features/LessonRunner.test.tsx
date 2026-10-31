@@ -23,6 +23,11 @@ vi.mock('../../../src/shared/lib/speech', () => ({
 vi.mock('../../../src/shared/lib/analytics', () => ({
   track: analytics.track,
 }))
+vi.mock('../../../src/features/ai-tutor', () => ({
+  SocraticChatSheet: ({ context, onClose }: { context: { questionText: string; subjectId: string }; onClose: () => void }) => (
+    <div data-testid="lesson-tutor"><span>{context.subjectId}: {context.questionText}</span><button onClick={onClose}>Yopish yordam</button></div>
+  ),
+}))
 
 const CHECK: DarslikPublicCheck = {
   format: 'lesson',
@@ -195,18 +200,56 @@ afterEach(() => {
 })
 
 describe('LessonRunner — v2 Duolingo oqimi', () => {
-  it('birinchi mashqda progress, xato feedback va to‘g‘ri javobni ko‘rsatadi', async () => {
+  it('mascot orqali joriy savol konteksti bilan yordamchini ochadi va yopadi', async () => {
+    renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+    fireEvent.click(within(runner).getByRole('button', { name: 'AI yordamchidan so‘rash' }))
+    const tutor = await screen.findByTestId('lesson-tutor')
+    expect(within(tutor).getByText('rustili: Что мы произносим и слышим?')).toBeInTheDocument()
+    fireEvent.click(within(tutor).getByRole('button', { name: 'Yopish yordam' }))
+    expect(screen.queryByTestId('lesson-tutor')).not.toBeInTheDocument()
+  })
+  it('xato javob, javobni ko‘rish va izohni alohida ko‘rsatadi', async () => {
     const { onPassed } = renderRunner()
     const runner = await screen.findByTestId('lesson-runner')
-    expect(within(runner).getByText('1/5')).toBeInTheDocument()
-    expect(within(runner).getByRole('button', { name: 'Tekshirish' })).toBeDisabled()
-
     const feedback = await answerMcq(runner, 'Буквы')
     expect(feedback).toHaveAttribute('data-correct', 'false')
-    expect(within(feedback).getByText(/To‘g‘ri javob/)).toBeInTheDocument()
+    expect(within(feedback).queryByText('Звуки')).not.toBeInTheDocument()
+    fireEvent.click(within(runner).getByRole('button', { name: 'Javobni ko‘rish' }))
+    expect(feedback).toHaveAttribute('data-revealed', 'true')
     expect(within(feedback).getByText('Звуки')).toBeInTheDocument()
-    expect(within(feedback).getByText(/Изох q1/)).toBeInTheDocument()
-    expect(screen.queryByTestId('lesson-combo')).not.toBeInTheDocument()
+    expect(within(runner).getByRole('button', { name: 'Звуки' })).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(within(runner).getByRole('button', { name: 'Nima uchun?' }))
+    expect(await screen.findByText('Изох q1')).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Tushundim' }))
+    fireEvent.click(within(runner).getByRole('button', { name: 'Izohni o‘tkazish' }))
+    await waitFor(() => expect(within(runner).getByText('2/5')).toBeInTheDocument())
+    expect(onPassed).not.toHaveBeenCalled()
+  })
+
+  it('xatodan keyin qayta urinishda yangi javobni serverga tekshirtiradi', async () => {
+    renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+    await answerMcq(runner, 'Буквы')
+    fireEvent.click(within(runner).getByRole('button', { name: 'Qayta urinish' }))
+    expect(within(runner).getByRole('button', { name: 'Tekshirish' })).toBeDisabled()
+    const feedback = await answerMcq(runner, 'Звуки')
+    expect(feedback).toHaveAttribute('data-correct', 'true')
+    expect(api.checkDarslikExercise).toHaveBeenLastCalledWith('1:0', 'q1', '1')
+    fireEvent.click(within(runner).getByRole('button', { name: 'Nima uchun?' }))
+    expect(await screen.findByText('Изох q1')).toBeInTheDocument()
+  })
+
+  it('javobni ko‘rish foydalanuvchining javobini almashtirmaydi', async () => {
+    vi.mocked(api.getDarslikCheck).mockResolvedValue({ format: 'lesson', questions: [CHECK.questions[0]] })
+    vi.mocked(api.submitDarslikCheck).mockResolvedValue(resultFor(false))
+    const { onPassed } = renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+    await answerMcq(runner, 'Буквы')
+    fireEvent.click(within(runner).getByRole('button', { name: 'Javobni ko‘rish' }))
+    fireEvent.click(within(runner).getByRole('button', { name: 'Izohni o‘tkazish' }))
+    await screen.findByTestId('lesson-result')
+    expect(api.submitDarslikCheck).toHaveBeenCalledWith('1:0', { q1: '0' })
     expect(onPassed).not.toHaveBeenCalled()
   })
 

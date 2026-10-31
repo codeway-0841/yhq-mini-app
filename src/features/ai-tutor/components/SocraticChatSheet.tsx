@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
 import {
   Send, Sparkles, Volume2, VolumeX, Loader2, Crown, Bot, User,
 } from 'lucide-react'
@@ -10,6 +10,7 @@ import { useT } from '../../../shared/i18n'
 import ModalShell from '../../../shared/components/ModalShell'
 import { haptics } from '../../../platform/haptics'
 import { streamSocraticChat, TutorError } from '../../../shared/lib/tutor'
+import './socratic-lesson.css'
 
 export interface SocraticContextData {
   questionText?: string
@@ -25,6 +26,9 @@ interface SocraticChatSheetProps {
   onClose: () => void
   context: SocraticContextData
   initialPrompt?: string
+  zIndex?: number
+  variant?: 'default' | 'lesson'
+  mascot?: ReactNode
 }
 
 interface ChatMessage {
@@ -38,6 +42,9 @@ export default function SocraticChatSheet({
   onClose,
   context,
   initialPrompt,
+  zIndex,
+  variant = 'default',
+  mascot,
 }: SocraticChatSheetProps) {
   const navigate = useNavigate()
   const language = useAppStore((s) => s.settings.language)
@@ -142,7 +149,9 @@ export default function SocraticChatSheet({
         void sendMessage(initialPrompt)
       } else {
         // Kirish xabari
-        const welcomeText = language === 'ru'
+        const welcomeText = variant === 'lesson'
+          ? tt('socraticLessonWelcome')
+          : language === 'ru'
           ? 'Привет! Я твой персональный AI-репетитор. Давай разберем эту задачу вместе! Что именно вызвало затруднение?'
           : "Assalomu alaykum! Men sizning shaxsiy Kivvi AI repetitoringizman. Keling, bu masalani birgalikda tahlil qilamiz. Qaysi qismiga tushunmadingiz?"
         setMessages([
@@ -154,7 +163,7 @@ export default function SocraticChatSheet({
         ])
       }
     }
-  }, [isOpen, messages.length, initialPrompt, language, sendMessage])
+  }, [isOpen, messages.length, initialPrompt, language, sendMessage, variant, tt])
 
   const handleSpeechToggle = (id: string, text: string) => {
     if (isSpeakingId === id) {
@@ -191,15 +200,20 @@ export default function SocraticChatSheet({
           )}
         </span>
       }
-      subtitle={tt('socraticChatSubtitle')}
+      subtitle={variant === 'lesson' ? undefined : tt('socraticChatSubtitle')}
       onClose={closeSheet}
+      zIndex={zIndex}
       labelId="socratic-chat-title"
       closeLabel="Yopish"
-      className="h-[88dvh] max-h-[780px] sm:max-w-2xl"
+      className={variant === 'lesson' ? 'socratic-lesson !overflow-visible h-[32dvh] min-h-[240px] max-h-[560px] sm:max-w-2xl' : 'h-[88dvh] max-h-[780px] sm:max-w-2xl'}
+      showHeader={variant !== 'lesson'}
+      backdropClassName={variant === 'lesson' ? 'bg-transparent' : undefined}
       bodyClassName="px-0 pb-0"
       bodyScroll={false}
       headerExtra={
-        context.questionText ? (
+        variant === 'lesson' && mascot ? (
+          <span className="socratic-lesson-mascot" aria-hidden="true">{mascot}</span>
+        ) : variant !== 'lesson' && context.questionText ? (
           <div className="px-5 py-2 bg-[rgb(var(--p-surface-rgb)/0.6)] flex items-center justify-between text-[12px] text-pmuted gap-2">
             <span className="truncate flex-1">{context.questionText}</span>
             {context.subjectId && (
@@ -213,7 +227,7 @@ export default function SocraticChatSheet({
     >
 
         {/* Message List */}
-        <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
+        <div className={`flex-1 overflow-y-auto px-4 py-4 space-y-4 ${variant === 'lesson' ? 'socratic-lesson-messages' : ''}`}>
           {messages.map((msg) => {
             const isAss = msg.role === 'assistant'
             return (
@@ -221,13 +235,13 @@ export default function SocraticChatSheet({
                 key={msg.id}
                 className={`flex gap-2.5 ${isAss ? 'justify-start' : 'justify-end'}`}
               >
-                {isAss && (
+                {isAss && variant !== 'lesson' && (
                   <div className="flex size-7 items-center justify-center rounded-full bg-psurface text-pmuted shrink-0 mt-0.5">
                     <Bot size={15} strokeWidth={1.75} />
                   </div>
                 )}
                 <div
-                  className={`relative max-w-[85%] rounded-2xl px-4 py-3 text-[13.5px] leading-relaxed ${
+                  className={`relative max-w-[85%] rounded-2xl px-4 py-3 text-[13.5px] leading-relaxed ${variant === 'lesson' && isAss ? 'socratic-lesson-answer' : ''} ${
                     isAss
                       ? 'bg-psurface text-pfg shadow-2xs'
                       : 'bg-pprimary text-white rounded-br-xs shadow-2xs'
@@ -239,7 +253,7 @@ export default function SocraticChatSheet({
                     onSelectOption={(opt) => void sendMessage(opt)}
                   />
 
-                  {isAss && msg.content.length > 20 && (
+                  {variant !== 'lesson' && isAss && msg.content.length > 20 && (
                     <div className="mt-2 flex items-center justify-end gap-2 text-pmuted">
                       <button
                         type="button"
@@ -316,7 +330,7 @@ export default function SocraticChatSheet({
         </div>
 
         {/* Quick Suggestion Chips */}
-        {!isStreaming && !quotaError && (
+        {variant !== 'lesson' && !isStreaming && !quotaError && (
           <div className="px-4 py-2 flex items-center gap-1.5 overflow-x-auto no-scrollbar bg-pcard">
             <button
               type="button"
@@ -350,7 +364,7 @@ export default function SocraticChatSheet({
         )}
 
         {/* Input Bar */}
-        <div className="p-3 bg-pcard">
+        <div className={variant === 'lesson' ? 'socratic-lesson-input p-3' : 'p-3 bg-pcard'}>
           <form
             onSubmit={(e) => {
               e.preventDefault()
@@ -362,7 +376,8 @@ export default function SocraticChatSheet({
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder={tt('socraticChatAskHint')}
+              placeholder={tt(variant === 'lesson' ? 'socraticLessonHint' : 'socraticChatAskHint')}
+              aria-label={tt(variant === 'lesson' ? 'socraticLessonHint' : 'socraticChatAskHint')}
               disabled={isStreaming}
               className="flex-1 bg-psurface rounded-2xl px-4 py-2.5 text-base text-pfg placeholder:text-[rgb(var(--p-muted-rgb)/0.6)] focus:outline-none focus:ring-2 focus:ring-pprimary shadow-xs"
             />

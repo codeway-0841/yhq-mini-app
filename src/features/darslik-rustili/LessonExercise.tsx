@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Eraser, Link2, Volume2 } from 'lucide-react'
+import { Check, Eraser, Link2, Volume2, X } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
 import { useT } from '../../shared/i18n'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -10,6 +10,7 @@ interface LessonExerciseProps {
   value: DarslikAnswerValue | undefined
   onChange: (value: DarslikAnswerValue) => void
   disabled?: boolean
+  outcome?: 'correct' | 'wrong' | 'revealed'
   onSpeak?: (text: string) => void
   speaking?: boolean
   /** Natija ekranida javobni ko'rsatish uchun (o'zgartirish o'chiriladi). */
@@ -32,6 +33,7 @@ export default function LessonExercise({
   value,
   onChange,
   disabled = false,
+  outcome,
   onSpeak,
   speaking = false,
   readOnly = false,
@@ -90,7 +92,13 @@ export default function LessonExercise({
                 aria-label={option}
                 className={cn(
                   'group flex w-full cursor-pointer items-center gap-3.5 rounded-2xl px-4 py-3.5 text-left text-[15px] font-semibold leading-snug transition-all active:translate-y-[2px] disabled:cursor-default',
-                  isSelected
+                  isSelected && outcome === 'correct'
+                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-pfg ring-2 ring-psuccess'
+                    : isSelected && outcome === 'wrong'
+                    ? 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pfg ring-2 ring-pwarning'
+                    : isSelected && outcome === 'revealed'
+                    ? 'bg-psurface text-pfg ring-2 ring-pmuted'
+                    : isSelected
                     ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pfg ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)]'
                     : 'bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface',
                 )}
@@ -106,6 +114,7 @@ export default function LessonExercise({
                   {numberLabel(optionIndex)}
                 </span>
                 <span className="min-w-0 flex-1 break-words">{option}</span>
+                {isSelected && outcome && (outcome === 'wrong' ? <X aria-hidden="true" className="text-pwarning" /> : <Check aria-hidden="true" className={outcome === 'correct' ? 'text-psuccess' : 'text-pmuted'} />)}
               </button>
             )
           })}
