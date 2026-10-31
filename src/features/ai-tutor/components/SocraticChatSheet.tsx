@@ -204,9 +204,10 @@ export default function SocraticChatSheet({
       onClose={closeSheet}
       zIndex={zIndex}
       labelId="socratic-chat-title"
-      closeLabel="Yopish"
+      closeLabel={tt('close')}
       className={variant === 'lesson' ? 'socratic-lesson !overflow-visible h-[32dvh] min-h-[240px] max-h-[560px] sm:max-w-2xl' : 'h-[88dvh] max-h-[780px] sm:max-w-2xl'}
       showHeader={variant !== 'lesson'}
+      showHandle={variant !== 'lesson'}
       backdropClassName={variant === 'lesson' ? 'bg-transparent' : undefined}
       bodyClassName="px-0 pb-0"
       bodyScroll={false}

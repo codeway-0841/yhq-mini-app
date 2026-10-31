@@ -36,6 +36,27 @@ afterEach(() => {
 })
 
 describe('CourseMapPage — kurs xaritasi', () => {
+  it('tanlangan bob rangini xarita va tugmaga uzatadi', async () => {
+    const { container } = render(<CourseMapPage initialBlockId={2} />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+    const root = container.querySelector<HTMLElement>('.cmap')!
+    expect(root).toHaveAttribute('data-node-color', '4')
+    expect(root.style.getPropertyValue('--cmap-button')).toBe('#f6b31f')
+    expect(root.style.getPropertyValue('--cmap-button-text')).toBe('#111827')
+  })
+  it('tanlangan bobning birinchi mavzusiga o‘tadi', async () => {
+    const scroll = vi.fn()
+    const previous = HTMLElement.prototype.scrollIntoView
+    HTMLElement.prototype.scrollIntoView = scroll
+    try {
+      render(<CourseMapPage initialBlockId={15} />)
+      await waitFor(() => expect(scroll).toHaveBeenCalled())
+      expect(within(sheet()).getByText(getBlockOutline(15)[0])).toBeInTheDocument()
+      expect(nodesOf(15)[0]).toHaveAttribute('aria-disabled', 'true')
+    } finally {
+      HTMLElement.prototype.scrollIntoView = previous
+    }
+  })
   it('tugma yaltirashi matnni yashirmaydi va o‘qib berilmaydi', async () => {
     render(<CourseMapPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())

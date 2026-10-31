@@ -198,6 +198,16 @@ describe('AI Tutor Frontend Components', () => {
     expect(screen.getByText(/Boshqa usuli bormi/)).toBeInTheDocument()
   })
 
+  it('renders the lesson mascot and closes the lesson tutor', () => {
+    const onClose = vi.fn()
+    render(<MemoryRouter><SocraticChatSheet isOpen onClose={onClose} variant="lesson" mascot={<span data-testid="lesson-mascot" />} context={{ topicName: 'Fonetika' }} /></MemoryRouter>)
+    expect(screen.getByTestId('lesson-mascot')).toBeInTheDocument()
+    expect(screen.getByText(/Qaysi joyini tushunmadingiz/)).toBeInTheDocument()
+    expect(screen.getByRole('textbox', { name: /Qanday yordam bera olaman/ })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Yopish' }))
+    expect(onClose).toHaveBeenCalledOnce()
+  })
+
   it('renders SnapSolveFab on standard routes and navigates to /ai-tutor on click', async () => {
     const { default: SnapSolveFab } = await import('../../../src/features/ai-tutor/components/SnapSolveFab')
     render(

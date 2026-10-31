@@ -253,6 +253,7 @@ describe('Darslik Brilliant 1-to-1 Swipe Levels screen', () => {
     render(<Darslik />)
     fireEvent.click(screen.getByTestId('brilliant-start-button'))
     expect(screen.getByRole('dialog', { name: 'Dars ochilmoqda' })).toBeInTheDocument()
+    expect(document.querySelector('.lesson-launch-rive canvas')).toBeInTheDocument()
     expect(screen.queryByRole('heading', { name: `1-dars. ${lessons[1][0].titleUz}` })).not.toBeInTheDocument()
     act(() => vi.advanceTimersByTime(LESSON_LAUNCH_REVEAL_MS))
     expect(screen.getByRole('heading', { name: `1-dars. ${lessons[1][0].titleUz}` })).toBeInTheDocument()

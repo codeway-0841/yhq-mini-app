@@ -31,11 +31,12 @@ function setInput(inputs: StateMachineInput[], name: string, value: boolean | nu
 }
 
 /** Only the current and selected nodes mount the Rive animation. */
-export function CourseMapNodeArt({ current, src, completed = false, levelReview = false }: {
+export function CourseMapNodeArt({ current, src, completed = false, levelReview = false, color = 1 }: {
   current: boolean
   src: string
   completed?: boolean
   levelReview?: boolean
+  color?: number
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
@@ -93,7 +94,7 @@ export function CourseMapNodeArt({ current, src, completed = false, levelReview 
           const inputs = instance.stateMachineInputs(MACHINE) ?? []
           const updateTheme = () => setInput(inputs, 'dark-mode', isDarkTheme())
           updateTheme()
-          setInput(inputs, 'color', 1)
+          setInput(inputs, 'color', color)
           setInput(inputs, 'level', levelReview)
           setInput(inputs, 'completed', completed)
           setInput(inputs, 'icon', completed ? 1 : 0)
@@ -125,7 +126,7 @@ export function CourseMapNodeArt({ current, src, completed = false, levelReview 
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [completed, current, levelReview, noAnimation, reducedMotion])
+  }, [completed, current, levelReview, color, noAnimation, reducedMotion])
 
   return (
     <>

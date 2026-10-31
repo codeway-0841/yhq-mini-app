@@ -332,48 +332,26 @@
 
 @keyframes lesson-reader-in { from { opacity: .4; } to { opacity: 1; } }
 .lesson-course[data-launching='true'] .learning-node[aria-pressed='true'] > .learning-tile > .learning-mascot { visibility: hidden; }
-.lesson-launch-scene { position: absolute; inset: 0; z-index: 1; overflow: hidden; outline: none; }
+.lesson-launch-overlay .dialog-center-motion > .lesson-launch-scene { position: fixed; inset: 0; z-index: 1; overflow: hidden; outline: none; animation: none; transform: none; }
 .lesson-launch-departure {
   position: absolute; left: calc(var(--launch-x) - var(--launch-size) / 2);
   top: calc(var(--launch-y) - var(--launch-size) / 2); width: var(--launch-size); height: var(--launch-size);
   animation: lesson-launch-sink 500ms cubic-bezier(.4,0,.6,1) both;
 }
 .lesson-launch-departure .learning-mascot { inset: 0; width: 100%; height: 100%; animation: none !important; }
-.lesson-launch-canvas { position: absolute; inset: 0; background: var(--p-canvas); animation: lesson-launch-curtain var(--launch-duration) linear both; }
-.lesson-launch-flight {
-  --flight-size: clamp(48px, 14vw, 64px);
-  position: absolute; left: calc(50% - var(--flight-size) / 2); top: calc(-100dvh - 120px);
-  width: var(--flight-size); height: calc(100dvh + 120px);
-  background: linear-gradient(transparent 35%, color-mix(in srgb, var(--p-primary) 14%, var(--p-canvas)));
-  animation: lesson-launch-flight var(--launch-duration) ease-in-out both;
+.lesson-launch-canvas { position: absolute; inset: 0; background: #fff; animation: lesson-launch-curtain var(--launch-duration) linear both; }
+body[data-theme='dark'] .lesson-launch-canvas { background: #111; }
+.lesson-launch-rive.mascot-canvas-host {
+  position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden;
+  border-radius: 0; background: transparent;
 }
-.lesson-launch-flight .learning-mascot {
-  top: auto; bottom: calc(var(--flight-size) / -2); left: 0; width: var(--flight-size); height: var(--flight-size);
-  filter: drop-shadow(0 12px 20px color-mix(in srgb, var(--p-primary) 40%, transparent));
-  animation: none !important;
-}
-.lesson-launch-scene .learning-mascot-img,
-.lesson-launch-scene .mascot-canvas-host {
-  animation: lesson-launch-mascot var(--launch-duration) ease-in-out both !important;
-}
+.lesson-launch-rive .mascot-canvas { width: 100%; height: 100%; }
 @keyframes lesson-launch-sink {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }
   100% { transform: translateY(var(--launch-sink)) scale(.15); opacity: 0; }
 }
 @keyframes lesson-launch-curtain { 0%, 27% { opacity: 0; } 35%, 91% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes lesson-launch-flight {
-  0%, 30% { transform: translateY(-60px); }
-  38% { transform: translateY(38dvh); }
-  57% { transform: translateY(70dvh); }
-  73% { transform: translateY(66dvh); }
-  88%, 100% { transform: translateY(68dvh); }
-}
-@keyframes lesson-launch-mascot {
-  0%, 40% { opacity: .35; transform: scale(.72); }
-  50%, 70%, 100% { opacity: 1; transform: scale(1); }
-  80%, 87% { opacity: .65; transform: scale(.9) translateY(4px); }
-}
 @keyframes learning-orbit { to { stroke-dashoffset: -100; } }
 @keyframes learning-float {
   0%, 100% { transform: translateY(0); }

@@ -2,9 +2,10 @@ import { useEffect, useId, useRef, type CSSProperties } from 'react'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import { useT, type Lang } from '../../shared/i18n'
 import { PathMascot } from './LessonToken'
+import { RiveCanvas } from '../mascot-studio'
 
-export const LESSON_LAUNCH_REVEAL_MS = 650
-export const LESSON_LAUNCH_MS = 780
+export const LESSON_LAUNCH_REVEAL_MS = 1150
+export const LESSON_LAUNCH_MS = 1350
 export type LaunchOrigin = { x: number; y: number; size: number; sink: number }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
@@ -19,8 +20,9 @@ export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
 }
 
 /** Departure → full-screen beam → settled mascot → reader reveal. */
-export default function LessonLaunch({ origin, lang, onReveal, onFinish, onCancel }: {
+export default function LessonLaunch({ origin, lang, onReveal, onFinish, onCancel, accent }: {
   origin: LaunchOrigin; lang: Lang
+  accent?: string
   onReveal: () => void; onFinish: () => void; onCancel: () => void
 }) {
   const titleId = useId()
@@ -37,6 +39,7 @@ export default function LessonLaunch({ origin, lang, onReveal, onFinish, onCance
     '--launch-x': origin.x + 'px', '--launch-y': origin.y + 'px',
     '--launch-size': origin.size + 'px', '--launch-sink': origin.sink + 'px',
     '--launch-duration': LESSON_LAUNCH_MS + 'ms',
+    '--launch-accent': accent ?? 'var(--p-primary)',
   } as CSSProperties
   return <DialogOverlay onClose={onCancel} position="center" zIndex={60} labelId={titleId}
     backdropClassName="bg-transparent" className="lesson-launch-overlay">
@@ -44,7 +47,13 @@ export default function LessonLaunch({ origin, lang, onReveal, onFinish, onCance
       <span id={titleId} className="sr-only">{tt('pathLaunching')}</span>
       <div className="lesson-launch-departure" aria-hidden="true"><PathMascot /></div>
       <div className="lesson-launch-canvas" aria-hidden="true">
-        <div className="lesson-launch-flight"><PathMascot /></div>
+        <RiveCanvas
+          file="lesson_loader_apr_13_26.riv"
+          animation="Loop_down_v03_Minimal"
+          label={tt('pathLaunching')}
+          className="lesson-launch-rive"
+          fit="cover"
+        />
       </div>
     </div>
   </DialogOverlay>

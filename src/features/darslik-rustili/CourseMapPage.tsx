@@ -9,6 +9,8 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
+import { LessonLaunch, PathMascot, getBrilliantTheme, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
+import { playSound } from '../../shared/lib/sounds'
 import {
   DARSLIK_BLOCKS,
   DARSLIK_PROGRESS_MODULE_OFFSET,
@@ -47,9 +49,10 @@ const keyOf = (blockId: number, idx: number) => `${blockId}:${idx}`
  * (`darslik_mastery` + `useLessonsStore`), shuning uchun ikkala sahifa
  * bir-biriga zid ma'lumot ko'rsatmaydi.
  */
-export default function CourseMapPage() {
+export default function CourseMapPage({ initialBlockId, onBackHome }: { initialBlockId?: number; onBackHome?: () => void } = {}) {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
+  const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
   const readByUser = useLessonsStore((s) => s.readByUser)
@@ -63,6 +66,7 @@ export default function CourseMapPage() {
   /** Scroll bilan aniqlanadigan “eng yaqin mavzu” — karta shunga ergashadi. */
   const [focus, setFocus] = useState<{ blockId: number; idx: number } | null>(null)
   const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(null)
+  const [launch, setLaunch] = useState<{ origin: LaunchOrigin; reader: { blockId: number; idx: number; quiz?: boolean } } | null>(null)
   const [openBlocks, setOpenBlocks] = useState<Set<number>>(
     () => new Set(DARSLIK_BLOCKS.map((block) => block.id)),
   )
@@ -116,6 +120,9 @@ export default function CourseMapPage() {
 
   /** Tanlanmagan bo'lsa — ekran tubidagi eng yaqin mavzu, u ham bo'lmasa joriy mavzu. */
   const active = picked ?? focus ?? { blockId: currentBlock.id, idx: currentIdx }
+  const mapTheme = getBrilliantTheme((((initialBlockId ?? active.blockId) - 1) % 8) + 1)
+  const nodeColor = mapTheme.accent === '#f6b31f' ? 4 : mapTheme.accent === '#8a4cff' ? 5 : 1
+  const selectedMeta = initialBlockId ? getDarslikBlock(initialBlockId) : undefined
   /** Karta scroll bilan ergashadi; ko'k disk esa haqiqiy joriy darsda qoladi. */
   const outline = getBlockOutline(active.blockId)
   const activeCheck = active.idx === outline.length
@@ -227,12 +234,16 @@ export default function CourseMapPage() {
   useEffect(() => {
     if (mastery.loading || autoScrolled.current) return
     autoScrolled.current = true
-    if (currentBlock.id === DARSLIK_BLOCKS[0].id) return
-    const button = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
+    const blockId = initialBlockId ?? currentBlock.id
+    const firstIncomplete = getBlockOutline(blockId).findIndex((_, idx) => !passed.has(sectionKey(blockId, idx)))
+    const idx = initialBlockId ? Math.max(0, firstIncomplete) : currentIdx
+    if (initialBlockId) setPicked({ blockId, idx })
+    if (!initialBlockId && blockId === DARSLIK_BLOCKS[0].id) return
+    const button = nodeRefs.current.get(keyOf(blockId, idx))
     if (button && typeof button.scrollIntoView === 'function') {
       button.scrollIntoView({ block: 'center', behavior: 'auto' })
     }
-  }, [mastery.loading, currentBlock.id, currentIdx])
+  }, [mastery.loading, currentBlock.id, currentIdx, initialBlockId, passed])
 
   const pick = useCallback((blockId: number, idx: number) => {
     openBlock(blockId)
@@ -247,8 +258,20 @@ export default function CourseMapPage() {
   const openReader = useCallback((quiz = false) => {
     if (activeLocked) return
     track('rus_darslik_map_open_topic', { block_id: active.blockId, section_idx: active.idx, quiz })
-    setReader({ blockId: active.blockId, idx: activeCheck ? outline.length - 1 : active.idx, quiz: quiz || activeCheck })
-  }, [active.blockId, active.idx, activeCheck, activeLocked, outline.length])
+    const target = { blockId: active.blockId, idx: activeCheck ? outline.length - 1 : active.idx, quiz: quiz || activeCheck }
+    if (!initialBlockId || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      setReader(target)
+      return
+    }
+    const node = nodeRefs.current.get(keyOf(active.blockId, active.idx)) ?? null
+    const origin = lessonLaunchOrigin(node)
+    if (node) {
+      const rect = node.getBoundingClientRect()
+      origin.x = rect.left + rect.width / 2
+      origin.y = rect.top + rect.height / 2
+    }
+    setLaunch({ origin, reader: target })
+  }, [active.blockId, active.idx, activeCheck, activeLocked, outline.length, initialBlockId, noAnimation])
 
   /* Ochilmagan mavzuda tugma joriy mavzuga olib boradi (ilovadagi “Jump ahead”). */
   const startCta = useCallback(() => {
@@ -284,12 +307,17 @@ export default function CourseMapPage() {
       className="cmap px-4 pb-24 lg:px-8 lg:pb-16"
       data-course="russian-map"
       data-scrolled={scrolled ? 'true' : 'false'}
+      data-node-color={nodeColor}
+      data-themed={initialBlockId ? 'true' : undefined}
+      data-no-animation={noAnimation ? 'true' : undefined}
+      style={{ '--cmap-ring': mapTheme.accent, '--cmap-deep': mapTheme.buttonShadow, '--cmap-accent': mapTheme.accent, '--cmap-button': mapTheme.buttonBg, '--cmap-button-shadow': mapTheme.buttonShadow, '--cmap-button-text': mapTheme.buttonText } as CSSProperties}
+      onClickCapture={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('click') }}
     >
       <header className="cmap-bar">
         <button
           type="button"
           className="cmap-bar-back"
-          onClick={() => goBack(navigate)}
+          onClick={() => onBackHome ? onBackHome() : goBack(navigate)}
           aria-label={tt('backWord')}
         >
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -305,7 +333,7 @@ export default function CourseMapPage() {
         </span>
 
         <span className="cmap-bar-art" data-visible={scrolled ? 'true' : 'false'} aria-hidden="true">
-          <img src="/darslik-map/course-art.png" alt="" width={40} height={48} />
+          {selectedMeta ? <PathMascot animation="idle" /> : <img src="/darslik-map/course-art.png" alt="" width={40} height={48} />}
         </span>
 
         <button
@@ -322,9 +350,9 @@ export default function CourseMapPage() {
 
       <div className="cmap-layout mx-auto w-full">
         <section className="cmap-hero">
-          <img className="cmap-hero-art" src="/darslik-map/course-art.png" alt="" width={80} height={96} />
-          <h1 className="cmap-hero-title">{tt('rusDarslikTitle')}</h1>
-          <p className="cmap-hero-sub">{tt('rusDarslikSubtitle')}</p>
+          {selectedMeta ? <span className="cmap-hero-mascot"><PathMascot animation="wave" /></span> : <img className="cmap-hero-art" src="/darslik-map/course-art.png" alt="" width={80} height={96} />}
+          <h1 className="cmap-hero-title">{selectedMeta ? (isRu ? selectedMeta.titleRu : selectedMeta.titleUz) : tt('rusDarslikTitle')}</h1>
+          <p className="cmap-hero-sub">{selectedMeta ? `${isRu ? 'БЛОК' : 'BOB'} ${selectedMeta.id}` : tt('rusDarslikSubtitle')}</p>
           <p className="cmap-hero-meta">
             <span>{doneTotal}/{totalSections} {tt('rusDarslikSection')}</span>
             <span>{DARSLIK_BLOCKS.length} {isRu ? 'раздел' : "bo'lim"}</span>
@@ -347,7 +375,7 @@ export default function CourseMapPage() {
             const done = doneFor(block.id)
             const complete = done.length >= sections.length
             const locked = lockedFor(block.id)
-            const isCurrentLevel = block.id === currentBlock.id
+            const isCurrentLevel = block.id === (initialBlockId ?? currentBlock.id)
             const isOpen = openBlocks.has(block.id)
             return (
               <section
@@ -399,7 +427,7 @@ export default function CourseMapPage() {
                           >
                             <span className="cmap-node-art-wrap">
                               {isCurrent || isFocus
-                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} />
+                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} color={nodeColor} />
                                 : <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />}
                             </span>
                             <span className="cmap-node-label">{title}</span>
@@ -421,7 +449,7 @@ export default function CourseMapPage() {
                       >
                         <span className="cmap-node-art-wrap">
                           {active.blockId === block.id && active.idx === sections.length
-                            ? <CourseMapNodeArt current={false} src={NODE_ART.check} levelReview />
+                            ? <CourseMapNodeArt current={false} src={NODE_ART.check} levelReview color={nodeColor} />
                             : <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />}
                         </span>
                         <span className="cmap-node-label">{tt('rusDarslikUnitCheck')}</span>
@@ -476,6 +504,8 @@ export default function CourseMapPage() {
           <path d="m5 9 7 7 7-7" />
         </svg>
       </button>
+
+      {launch && <LessonLaunch origin={launch.origin} lang={lang} accent={mapTheme.accent} onReveal={() => setReader(launch.reader)} onFinish={() => setLaunch(null)} onCancel={() => { setLaunch(null); setReader(null) }} />}
 
       {reader && activeBlockMeta && (
         <BlockReader

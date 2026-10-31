@@ -8,14 +8,25 @@
 .socratic-lesson-mascot {
   position: absolute;
   z-index: 21;
-  left: 8px;
-  top: -58px;
-  width: 72px;
-  height: 72px;
+  left: 20px;
+  top: -36px;
+  width: 68px;
+  height: 68px;
   pointer-events: none;
 }
+.socratic-lesson > .relative.z-10.flex-none { position: static; }
+.socratic-lesson > button[aria-label] {
+  position: absolute;
+  left: auto;
+  right: 12px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 1;
+}
 .socratic-lesson .socratic-lesson-messages {
-  padding: 18px 20px 8px;
+  padding: 44px 20px 8px;
 }
 .socratic-lesson .socratic-lesson-answer {
   max-width: 100%;
