@@ -6,7 +6,6 @@ import { goBack } from '../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller, pageScrollY, scrollPageToTop } from '../../shared/lib/page-scroll'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import { LessonLaunch, PathMascot, getBrilliantTheme, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
@@ -18,7 +17,6 @@ import {
   getDarslikBlock,
 } from '../../content/darslik-rustili'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
-import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { BlockReader } from './BlockReader'
 import { CourseMapNodeArt } from './CourseMapNodeArt'
 import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
@@ -54,7 +52,6 @@ export default function CourseMapPage({ initialBlockId, onBackHome }: { initialB
   const lang = useAppStore((s) => s.settings.language)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
-  const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
   const readByUser = useLessonsStore((s) => s.readByUser)
   const markRead = useLessonsStore((s) => s.markRead)
   const mastery = useDarslikMastery()
@@ -325,27 +322,9 @@ export default function CourseMapPage({ initialBlockId, onBackHome }: { initialB
           </svg>
         </button>
 
-        <span className="cmap-streak">
-          <span className="cmap-streak-n">{streak}</span>
-          <svg viewBox="0 0 24 32" width="19" height="27" aria-hidden="true">
-            <path fill="#f7bd23" d="M11 1h6v15l4 4v8l-8 4-8-4v-8l6-4V1Zm5 4h-3v2h3V5Zm0 5h-3v2h3v-2Zm-3 10-3 2v4l3 2 3-2v-4l-3-2Z" />
-          </svg>
-        </span>
-
         <span className="cmap-bar-art" data-visible={scrolled ? 'true' : 'false'} aria-hidden="true">
           {selectedMeta ? <PathMascot animation="idle" /> : <img src="/darslik-map/course-art.png" alt="" width={40} height={48} />}
         </span>
-
-        <button
-          type="button"
-          className="cmap-bar-power"
-          onClick={() => navigate('/premium')}
-          aria-label="Premium"
-        >
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true">
-            <path d="M13 2 4.5 13.5H11L10 22l9-11.5h-6.5L13 2Z" />
-          </svg>
-        </button>
       </header>
 
       <div className="cmap-layout mx-auto w-full">

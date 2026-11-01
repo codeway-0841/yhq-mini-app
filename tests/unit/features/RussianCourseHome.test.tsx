@@ -29,6 +29,10 @@ describe('Russian course home', () => {
     render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
     await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[0].titleUz })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Orqaga' })).toBeInTheDocument()
+    expect(screen.queryByText('🔑')).not.toBeInTheDocument()
+    expect(screen.queryByText('⚡')).not.toBeInTheDocument()
+
     fireEvent.click(screen.getByRole('button', { name: `Bob 15: ${DARSLIK_BLOCKS[14].titleUz}` }))
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[14].titleUz })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
@@ -36,6 +40,14 @@ describe('Russian course home', () => {
     fireEvent.click(screen.getByRole('button', { name: 'back to blocks' }))
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[14].titleUz })).toBeInTheDocument()
   })
+
+  it('starts the course when clicking the active bob illustration or title button', async () => {
+    render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
+    fireEvent.click(screen.getByRole('button', { name: DARSLIK_BLOCKS[0].titleUz }))
+    expect(screen.getByText('map 1')).toBeInTheDocument()
+  })
+
   it('shows Russian labels and responds to a swipe', async () => {
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, language: 'ru' } })
     render(<MemoryRouter><RussianCourseHome /></MemoryRouter>)
@@ -49,6 +61,7 @@ describe('Russian course home', () => {
     fireEvent.click(screen.getByRole('button', { name: DARSLIK_BLOCKS[0].titleRu }))
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[1].titleRu })).toBeInTheDocument()
   })
+
   it('syncs body background with course canvas and avoids duplicate safe-top padding', async () => {
     document.body.dataset.theme = 'dark'
     const view = render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)

@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronLeft, Lock, RefreshCw, X, XCircle, Zap,
+  CheckCircle2, ChevronLeft, Lock, RefreshCw, X, XCircle,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import Confetti from '../../shared/components/Confetti'
@@ -387,7 +387,6 @@ export default function LessonRunner({
       <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
       {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
       <span className="rus-lesson-dots" aria-hidden="true"><i /><i /><i /></span>
-      <Zap size={25} className="rus-lesson-lightning" aria-hidden="true" />
     </header>
   ) : (
     <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">

@@ -6,8 +6,6 @@ import { goBack } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore } from '../../shared/store/useDailyStore'
-import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme, LessonLaunch, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
 import { sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
@@ -20,7 +18,6 @@ export default function RussianCourseHome() {
   const lang = useAppStore((s) => s.settings.language)
   const themeSetting = useAppStore((s) => s.settings.theme)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
-  const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
   const mastery = useDarslikMastery()
   const refreshMastery = mastery.refresh
   const [selected, setSelected] = useState<number | null>(null)
@@ -131,11 +128,26 @@ export default function RussianCourseHome() {
         <div className="rus-home-inner">
           <header className="rus-home-header">
             <div className="rus-home-status">
-              <button className="rus-home-pill" type="button" onClick={() => goBack(navigate)} aria-label={ru ? 'Назад' : 'Orqaga'}>‹ <span>{mastery.passed.size}</span> <span aria-hidden="true">🔑</span></button>
-              <div className="rus-home-pill" aria-label={ru ? `Серия: ${streak}` : `Ketma-ketlik: ${streak}`}>{streak > 0 && streak} <span aria-hidden="true">⚡</span></div>
+              <button
+                className="rus-home-back"
+                type="button"
+                onClick={() => goBack(navigate)}
+                aria-label={ru ? 'Назад' : 'Orqaga'}
+              >
+                ‹
+              </button>
             </div>
-            <h1>{ru ? block.titleRu : block.titleUz}</h1>
-            <div className="rus-home-level">{ru ? 'БЛОК' : 'BOB'} {block.id}</div>
+            <div
+              className="rus-home-title-btn"
+              role="button"
+              tabIndex={0}
+              onClick={(event) => start(event.currentTarget)}
+              onKeyDown={(e) => { if (e.key === 'Enter') start(e.currentTarget) }}
+              aria-label={ru ? 'Начать блок' : 'Bobni boshlash'}
+            >
+              <h1>{ru ? block.titleRu : block.titleUz}</h1>
+              <div className="rus-home-level">{ru ? 'БЛОК' : 'BOB'} {block.id}</div>
+            </div>
           </header>
           <div className="rus-home-hero">
             <div className="rus-home-stage" data-dragging={dragging ? 'true' : undefined}
@@ -149,7 +161,22 @@ export default function RussianCourseHome() {
               onPointerCancel={() => endDrag(undefined, true)}
               onClickCapture={(event) => { if (suppressClick.current) { suppressClick.current = false; event.preventDefault(); event.stopPropagation() } }}
               onKeyDown={(event) => { if (event.key === 'ArrowRight') change(index + 1); if (event.key === 'ArrowLeft') change(index - 1) }} tabIndex={0} aria-label={ru ? 'Выбор блока' : 'Bob tanlash'}>
-              {DARSLIK_BLOCKS.map((item, i) => Math.abs(i - index) <= 2 && <button key={item.id} type="button" className="rus-home-art" style={{ '--offset': i - index, '--drag': `${dragOffset}px` } as CSSProperties} onClick={() => change(i)} aria-label={ru ? item.titleRu : item.titleUz} aria-current={i === index ? 'true' : undefined}><BrilliantHeroIllustration moduleId={item.id} className="rus-home-illustration" /></button>)}
+              {DARSLIK_BLOCKS.map((item, i) => Math.abs(i - index) <= 2 && (
+                <button
+                  key={item.id}
+                  type="button"
+                  className="rus-home-art"
+                  style={{ '--offset': i - index, '--drag': `${dragOffset}px` } as CSSProperties}
+                  onClick={(event) => {
+                    if (i === index) start(event.currentTarget)
+                    else change(i)
+                  }}
+                  aria-label={ru ? item.titleRu : item.titleUz}
+                  aria-current={i === index ? 'true' : undefined}
+                >
+                  <BrilliantHeroIllustration moduleId={item.id} className="rus-home-illustration" />
+                </button>
+              ))}
             </div>
             <div className="rus-home-dots" aria-label={ru ? 'Блоки' : 'Boblar'}>{DARSLIK_BLOCKS.map((item, i) => <button type="button" key={item.id} aria-label={`${ru ? 'Блок' : 'Bob'} ${item.id}: ${ru ? item.titleRu : item.titleUz}`} aria-current={i === index ? 'true' : undefined} onClick={() => change(i)}><span style={{ background: i === index ? theme.dotColor : undefined }} /></button>)}</div>
           </div>

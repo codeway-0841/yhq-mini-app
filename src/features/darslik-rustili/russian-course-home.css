@@ -1,17 +1,49 @@
 .rus-home { min-height: calc(100dvh - var(--safe-top-body, 0px)); }
 .rus-home-inner { width: min(100%, 430px); min-height: calc(100dvh - var(--safe-top-body, 0px)); margin: auto; padding: 8px 16px max(12px, var(--safe-bottom, 0px)); display: flex; flex-direction: column; }
 .rus-home-header { flex: none; }
-.rus-home-status { display: flex; justify-content: space-between; align-items: center; }
-.rus-home-pill { min-height: 38px; min-width: 48px; padding: 0 13px; display: flex; align-items: center; justify-content: center; gap: 5px; border: 2px solid var(--yhq-border); border-radius: 999px; background: transparent; color: inherit; font-weight: 800; }
+.rus-home-status { display: flex; justify-content: flex-start; align-items: center; }
+.rus-home-back {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--yhq-border);
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.16s ease;
+}
+.rus-home-back:active { transform: scale(0.92); }
+.rus-home-title-btn {
+  text-align: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.rus-home-title-btn:active { transform: scale(0.98); opacity: 0.85; }
 .rus-home-header h1 { margin: 14px 8px 0; text-align: center; font-size: clamp(22px, 6vw, 28px); font-weight: 800; line-height: 1.15; }
 .rus-home-level { margin-top: 8px; color: var(--yhq-accent); text-align: center; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
-.rus-home-hero { flex: 1; min-height: 200px; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
+.rus-home-hero { flex: 1; min-height: 200px; display: flex; flex-direction: column; justify-content: center; }
 .rus-home-stage { position: relative; height: clamp(160px, 26dvh, 230px); margin: 0 -16px; overflow: hidden; touch-action: pan-y; }
-.rus-home-art { position: absolute; top: 0; left: 50%; height: 100%; width: 240px; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(1); opacity: 1; transition: transform 260ms cubic-bezier(.22, 1, .36, 1), opacity 260ms ease; }
+.rus-home-art { position: absolute; top: 0; left: 50%; height: 100%; width: 240px; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(1); opacity: 1; transition: transform 260ms cubic-bezier(.22, 1, .36, 1), opacity 260ms ease; cursor: pointer; }
 .rus-home-art:not([aria-current='true']) { opacity: .4; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(.72); }
 .rus-home-stage[data-dragging='true'] .rus-home-art { transition: none; }
 .rus-home-illustration { width: 100%; height: 100%; }
-.rus-home-dots { display: flex; justify-content: center; align-items: center; }
+.rus-home-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
 .rus-home-dots button { padding: 5px; }
 .rus-home-dots span { display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--yhq-dot); }
 .rus-home-dots [aria-current='true'] span { transform: scale(1.25); }

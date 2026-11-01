@@ -205,7 +205,7 @@ export default function SocraticChatSheet({
       zIndex={zIndex}
       labelId="socratic-chat-title"
       closeLabel={tt('close')}
-      className={variant === 'lesson' ? 'socratic-lesson !overflow-visible h-[32dvh] min-h-[240px] max-h-[560px] sm:max-w-2xl' : 'h-[88dvh] max-h-[780px] sm:max-w-2xl'}
+      className={variant === 'lesson' ? 'socratic-lesson !overflow-visible h-auto max-h-[64dvh] sm:max-w-2xl' : 'h-[88dvh] max-h-[780px] sm:max-w-2xl'}
       showHeader={variant !== 'lesson'}
       showHandle={variant !== 'lesson'}
       backdropClassName={variant === 'lesson' ? 'bg-transparent' : undefined}
