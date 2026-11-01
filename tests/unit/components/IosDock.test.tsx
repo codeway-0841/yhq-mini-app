@@ -49,7 +49,7 @@ describe('IosDock component', () => {
     expect(aiBtn.textContent).not.toContain('✨')
   })
 
-  it('kamera tugmasi asosiy nav dockidan tashqarida o\'ng tomonda alohida kapsula bo\'lib turadi', () => {
+  it('kamera tugmasi nav ichida markazda (3-o\'rinda) joylashgan', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <IosDock />
@@ -59,10 +59,9 @@ describe('IosDock component', () => {
     const nav = screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })
     const cameraBtn = screen.getByRole('button', { name: 'AI Yechish' })
 
-    // Kamera tugmasi nav ichida emas, alohida mustaqil kapsula
-    expect(nav).not.toContainElement(cameraBtn)
-    expect(cameraBtn.className).toMatch(/rounded-full/)
-    expect(cameraBtn.className).toMatch(/backdrop-blur/)
+    // Kamera tugmasi nav ichida markazda joylashadi
+    expect(nav).toContainElement(cameraBtn)
+    expect(cameraBtn).toBeInTheDocument()
   })
 
   it('marks active tab with aria-current="page"', () => {
@@ -165,39 +164,27 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
-  it('sliding pill Telegram Android v12.10.1 uslubida: rounded-full kapsula va moviy aksent', () => {
+  it('Brilliant uslubida faol tab ikonasida pill va aksent', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <IosDock />
       </MemoryRouter>,
     )
     const pill = screen.getByTestId('dock-active-pill')
-    // Telegram Android pill ikona va yozuvni birgalikda o'raydi (inset-y-0, rounded-full)
-    expect(pill.className).toMatch(/inset-y-0 left-0/)
-    const innerPill = pill.firstElementChild
-    expect(innerPill).not.toBeNull()
-    expect(innerPill?.className).toMatch(/rounded-full/)
-    expect(innerPill?.className).toMatch(/--p-primary-rgb/)
-    // Active tab matni AK SENT (Telegram moviy — kapsula ichida)
+    expect(pill.className).toMatch(/rounded-full/)
     const homeBtn = screen.getByRole('button', { name: /Bosh sahifa/i })
-    expect(homeBtn.className).toMatch(/text-pprimary/)
+    expect(homeBtn).toHaveAttribute('aria-current', 'page')
   })
 
-  it('sliding pill active tab ortidan ergashadi (tabs-sliding)', () => {
-    const cases: Array<[string, string]> = [
-      ['/', 'translateX(0%)'],
-      ['/testlar', 'translateX(100%)'],
-      ['/octagon', 'translateX(200%)'],
-      ['/rejimlar', 'translateX(300%)'],
-    ]
-    for (const [path, expected] of cases) {
+  it('Brilliant uslubida har bir faol tab o\'zining pill belgisi bilan chiqadi', () => {
+    for (const path of ['/', '/testlar', '/octagon', '/rejimlar']) {
       const { unmount } = render(
         <MemoryRouter initialEntries={[path]}>
           <IosDock />
         </MemoryRouter>,
       )
       const pill = screen.getByTestId('dock-active-pill')
-      expect(pill.style.transform, path).toBe(expected)
+      expect(pill).toBeInTheDocument()
       unmount()
     }
   })

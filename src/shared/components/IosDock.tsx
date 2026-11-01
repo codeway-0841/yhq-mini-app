@@ -13,13 +13,10 @@ export { isTabRootRoute, TAB_ROOT_PATHS } from '../config/route-chrome'
 /**
  * Pastki dock FAQAT tab-root (asosiy bo'lim) sahifalarda ko'rinadi.
  *
- * Qonun (iOS HIG "Tab Bars" + Material 3 "Navigation bar"): tab bar FAQAT
- * top-level destination'larda — ichki/detail/flow ekranlarda yashirinadi
- * (`hidesBottomBarWhenPushed`). Ichki sahifalarda orqaga qaytish —
- * PageHeader'dagi back tugma orqali (2026-09-15 "har joyda nav" fix:
- * eski HIDDEN_PREFIXES denylist o'rniga allowlist).
- * `/ai-tutor` ro'yxatda EMAS: kamera-first fullscreen ekran (o'z back tugmasi bor),
- * dock kamera UI'ni to'sib qoladi (2026-09-16). Markaz tugma baribir o'sha yerga olib boradi.
+ * Brilliant 1:1 uslubi:
+ * - Pastki qismga yopishgan to'liq kenglikdagi navigatsiya paneli (edge-to-edge).
+ * - Markazda Kamera (AI Yechish) joylashgan: 5 ta mutanosib bo'lim (2 chap + 1 markaz + 2 o'ng).
+ * - Faol bo'lim ikonasida Brilliant'ga xos yumshoq squircle/pill fon, qora/oq matn va qalin shrift.
  */
 interface NavItem {
   id: string
@@ -56,6 +53,14 @@ export default function IosDock() {
       icon: BookOpen,
     },
     {
+      id: 'ai-tutor',
+      path: '/ai-tutor',
+      labelKey: 'snapSolveTitle',
+      shortLabel: { uz: 'AI Yechish', ru: 'Решить AI' },
+      icon: Camera,
+      isCenter: true,
+    },
+    {
       id: 'octagon',
       path: '/octagon',
       labelKey: 'duelTitle',
@@ -71,15 +76,6 @@ export default function IosDock() {
     },
   ], [])
 
-  const cameraItem: NavItem = useMemo(() => ({
-    id: 'ai-tutor',
-    path: '/ai-tutor',
-    labelKey: 'snapSolveTitle',
-    shortLabel: { uz: 'AI Yechish', ru: 'Решить AI' },
-    icon: Camera,
-    isCenter: true,
-  }), [])
-
   const handleNav = useCallback((item: NavItem) => {
     playSound('click')
     if (item.isCenter) {
@@ -90,102 +86,76 @@ export default function IosDock() {
     navigate(item.path)
   }, [navigate])
 
-  // Sliding active indicator (Telegram Android v12.10.1 / Material 3 uslubi):
-  // Faol kapsula aynan tanlangan tab katakchasini o'raydi. Barcha 4 ustun flex-1 (= aniq 25%)
-  // bo'lgani uchun pill w-1/4 + translateX(idx*100%) orqali sirg'aladi.
-  const activeIndex = useMemo(() => navItems.findIndex((item) => {
-    return item.path === '/'
-      ? location.pathname === '/'
-      : location.pathname.startsWith(item.path)
-  }), [navItems, location.pathname])
-
   if (!isTabRoot) return null
 
   return (
     <div
       aria-hidden={!isVisible}
-      className={`fixed inset-x-0 bottom-0 z-40 flex justify-center pb-[max(0.5rem,var(--safe-bottom,0px))] px-3 sm:px-4 pointer-events-none transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none lg:hidden ${
+      className={`fixed inset-x-0 bottom-0 z-40 w-full pointer-events-none pb-[calc(var(--safe-bottom,0px)*0)] transition-[transform,opacity] duration-200 ease-out motion-reduce:transition-none lg:hidden ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
-      <div className="flex w-full max-w-[440px] items-center gap-2">
-        {/* Asosiy 4 ta bo'lim docki (Telegram Android / iOS liquid glass uslubi):
-            To'liq yumaloq (rounded-full), shaffof shisha (backdrop-blur-2xl), yumshoq soya. */}
-        <nav
-          role="navigation"
-          aria-label="Asosiy navigatsiya"
-          className="pointer-events-auto flex-1 rounded-full bg-[rgb(var(--p-card-rgb)/0.92)] p-[3px] shadow-2xl shadow-black/40 backdrop-blur-2xl saturate-150"
-        >
-          <div className="relative flex items-center justify-around">
-            {/* Sliding active indicator:
-                Faol kapsula dock chegarasiga 2-3px masofada to'liq joylashadi (w-1/4 = 25%). */}
-            <span
-              aria-hidden="true"
-              data-testid="dock-active-pill"
-              className={`pointer-events-none absolute inset-y-0 left-0 flex w-1/4 items-center justify-center transition-[transform,opacity] duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:transition-none ${
-                activeIndex >= 0 ? 'opacity-100' : 'opacity-0'
-              }`}
-              style={{ transform: `translateX(${Math.max(activeIndex, 0) * 100}%)` }}
-            >
-              <span className="h-full w-[64px] sm:w-[70px] rounded-full bg-[rgb(var(--p-primary-rgb)/0.22)] shadow-xs dark:bg-[rgb(var(--p-primary-rgb)/0.28)]" />
-            </span>
+      <nav
+        role="navigation"
+        aria-label="Asosiy navigatsiya"
+        className="pointer-events-auto w-full bg-pcanvas pt-2 pb-[max(1.25rem,calc(var(--safe-bottom,0px)+0.5rem))] px-1 select-none"
+        style={{ backgroundColor: 'var(--p-canvas)' }}
+      >
+        <div className="mx-auto flex max-w-[480px] items-center justify-around">
+          {navItems.map((item) => {
+            const isActive = item.path === '/'
+              ? location.pathname === '/'
+              : location.pathname.startsWith(item.path)
+            const Icon = item.icon
 
-            {navItems.map((item) => {
-              const isActive = item.path === '/'
-                ? location.pathname === '/'
-                : location.pathname.startsWith(item.path)
-              const Icon = item.icon
-
-              return (
-                <button
-                  key={item.id}
-                  type="button"
-                  onClick={() => handleNav(item)}
-                  aria-label={tt(item.labelKey)}
-                  aria-current={isActive ? 'page' : undefined}
-                  title={tt(item.labelKey)}
-                  className={`group relative z-10 flex min-w-0 flex-1 flex-col items-center justify-center rounded-full py-1.5 select-none touch-manipulation transition-all duration-150 active:scale-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary ${
-                    isActive ? 'text-pprimary font-semibold' : 'text-pmuted [@media(hover:hover)]:hover:text-pfg'
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => handleNav(item)}
+                aria-label={item.isCenter ? item.shortLabel[lang] : tt(item.labelKey)}
+                aria-current={isActive ? 'page' : undefined}
+                title={tt(item.labelKey)}
+                className="group relative flex min-w-0 flex-1 flex-col items-center justify-center py-0.5 touch-manipulation transition-transform duration-150 active:scale-95 focus-visible:outline-none"
+              >
+                {/* Brilliant 1:1 icon squircle/pill: faol bo'lsa yumaloq fon, nofaol bo'lsa shaffof */}
+                <span
+                  data-testid={isActive ? 'dock-active-pill' : undefined}
+                  className={`flex h-[30px] w-[52px] items-center justify-center rounded-full transition-colors duration-200 ${
+                    item.isCenter
+                      ? isActive
+                        ? 'bg-[rgb(var(--p-primary-rgb)/0.2)] text-pprimary dark:text-white'
+                        : 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pprimary dark:bg-[rgb(var(--p-primary-rgb)/0.18)] dark:text-sky-300'
+                      : isActive
+                        ? 'bg-black/[0.07] text-pfg dark:bg-white/10 dark:text-white'
+                        : 'bg-transparent text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
                   }`}
                 >
                   <Icon
-                    size={23}
-                    strokeWidth={isActive ? 2.4 : 1.8}
-                    className={`transition-all duration-200 ${
-                      isActive ? 'text-pprimary scale-105' : 'text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
-                    }`}
+                    size={21}
+                    strokeWidth={isActive ? 2.3 : item.isCenter ? 2.1 : 1.9}
+                    className="transition-transform duration-150"
                   />
+                </span>
 
-                  <span
-                    className={`mt-1 whitespace-nowrap text-[11px] leading-tight tracking-tight transition-colors duration-200 ${
-                      isActive ? 'font-semibold text-pprimary' : 'font-medium text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
-                    }`}
-                  >
-                    {item.shortLabel[lang]}
-                  </span>
-                </button>
-              )
-            })}
-          </div>
-        </nav>
-
-        {/* O'ng tarafdagi alohida Kamera (AI Yechish) kapsulasi — iPhone Lock Screen / Action uslubi */}
-        <button
-          type="button"
-          onClick={() => handleNav(cameraItem)}
-          aria-label={cameraItem.shortLabel[lang]}
-          title={tt(cameraItem.labelKey)}
-          className="pointer-events-auto group relative flex size-[54px] shrink-0 items-center justify-center rounded-full bg-[rgb(var(--p-card-rgb)/0.92)] p-[3px] shadow-2xl shadow-black/40 backdrop-blur-2xl saturate-150 select-none touch-manipulation transition-all duration-200 active:scale-90 [@media(hover:hover)]:hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-        >
-          <span className="flex size-full items-center justify-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.18)] text-pprimary dark:bg-[rgb(var(--p-primary-rgb)/0.25)] transition-colors duration-200 [@media(hover:hover)]:group-hover:bg-[rgb(var(--p-primary-rgb)/0.28)]">
-            <Camera
-              size={24}
-              strokeWidth={2.2}
-              className="transition-transform duration-200 [@media(hover:hover)]:group-hover:scale-110"
-            />
-          </span>
-        </button>
-      </div>
+                <span
+                  className={`mt-1 whitespace-nowrap text-[11px] leading-tight tracking-tight transition-colors duration-150 ${
+                    item.isCenter
+                      ? isActive
+                        ? 'font-bold text-pprimary dark:text-white'
+                        : 'font-semibold text-pprimary dark:text-sky-300'
+                      : isActive
+                        ? 'font-bold text-pfg dark:text-white'
+                        : 'font-medium text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
+                  }`}
+                >
+                  {item.shortLabel[lang]}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </nav>
     </div>
   )
 }
