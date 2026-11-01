@@ -12,6 +12,8 @@ import { useDarslikMastery } from './useDarslikMastery'
 import CourseMapPage from './CourseMapPage'
 import './russian-course-home.css'
 
+const VISIBLE_DOTS = 5
+
 export default function RussianCourseHome() {
   const navigate = useNavigate()
   const location = useLocation()
@@ -39,6 +41,8 @@ export default function RussianCourseHome() {
   const firstIncomplete = outline.findIndex((_, idx) => !mastery.passed.has(sectionKey(block.id, idx)))
   const first = firstIncomplete < 0 ? Math.max(0, outline.length - 2) : Math.min(firstIncomplete, Math.max(0, outline.length - 2))
   const ru = lang === 'ru'
+  const dotShift = Math.max(0, Math.min(DARSLIK_BLOCKS.length - VISIBLE_DOTS, index - Math.floor(VISIBLE_DOTS / 2)))
+
   const start = (node: HTMLElement) => {
     if (mastery.loading || launch) return
     if (noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
@@ -178,7 +182,24 @@ export default function RussianCourseHome() {
                 </button>
               ))}
             </div>
-            <div className="rus-home-dots" aria-label={ru ? 'Блоки' : 'Boblar'}>{DARSLIK_BLOCKS.map((item, i) => <button type="button" key={item.id} aria-label={`${ru ? 'Блок' : 'Bob'} ${item.id}: ${ru ? item.titleRu : item.titleUz}`} aria-current={i === index ? 'true' : undefined} onClick={() => change(i)}><span style={{ background: i === index ? theme.dotColor : undefined }} /></button>)}</div>
+            {/* Brilliant 1:1 sliding 5-dots pagination window */}
+            <div className="rus-home-dots" aria-label={ru ? 'Блоки' : 'Boblar'}>
+              <div className="rus-home-dots-window">
+                <div className="rus-home-dots-track" style={{ '--dot-shift': dotShift } as CSSProperties}>
+                  {DARSLIK_BLOCKS.map((item, i) => (
+                    <button
+                      type="button"
+                      key={item.id}
+                      aria-label={`${ru ? 'Блок' : 'Bob'} ${item.id}: ${ru ? item.titleRu : item.titleUz}`}
+                      aria-current={i === index ? 'true' : undefined}
+                      onClick={() => change(i)}
+                    >
+                      <span style={{ background: i === index ? (theme.dotColor || '#2862ff') : undefined }} />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
           <section className="rus-home-card yhq-home-card" aria-label={ru ? 'Темы блока' : 'Bob mavzulari'}>
             <div className="rus-home-rows">{outline.slice(first, first + 2).map((title, offset) => {

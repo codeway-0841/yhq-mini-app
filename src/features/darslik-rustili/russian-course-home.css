@@ -31,22 +31,59 @@
 .rus-home-title-btn:active { transform: scale(0.98); opacity: 0.85; }
 .rus-home-header h1 { margin: 14px 8px 0; text-align: center; font-size: clamp(22px, 6vw, 28px); font-weight: 800; line-height: 1.15; }
 .rus-home-level { margin-top: 8px; color: var(--yhq-accent); text-align: center; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
-.rus-home-hero { flex: 1; min-height: 200px; display: flex; flex-direction: column; justify-content: center; }
-.rus-home-stage { position: relative; height: clamp(160px, 26dvh, 230px); margin: 0 -16px; overflow: hidden; touch-action: pan-y; }
+.rus-home-hero { flex: 1; min-height: 200px; display: flex; flex-direction: column; }
+.rus-home-stage { position: relative; height: clamp(160px, 26dvh, 230px); margin: auto -16px 0; overflow: hidden; touch-action: pan-y; }
 .rus-home-art { position: absolute; top: 0; left: 50%; height: 100%; width: 240px; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(1); opacity: 1; transition: transform 260ms cubic-bezier(.22, 1, .36, 1), opacity 260ms ease; cursor: pointer; }
 .rus-home-art:not([aria-current='true']) { opacity: .4; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(.72); }
 .rus-home-stage[data-dragging='true'] .rus-home-art { transition: none; }
 .rus-home-illustration { width: 100%; height: 100%; }
+
+/* Brilliant 1:1 pagination dots (exact 5-dot window centered equally between illustration and card) */
 .rus-home-dots {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 6px;
+  margin: auto 0;
+  padding: 8px 0;
 }
-.rus-home-dots button { padding: 5px; }
-.rus-home-dots span { display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--yhq-dot); }
-.rus-home-dots [aria-current='true'] span { transform: scale(1.25); }
+.rus-home-dots-window {
+  width: 75px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+.rus-home-dots-track {
+  display: flex;
+  align-items: center;
+  transform: translateX(calc(-1 * var(--dot-shift, 0) * 15px));
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.rus-home-dots-track button {
+  width: 15px;
+  height: 22px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex: none;
+}
+.rus-home-dots-track span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c9cfde;
+  transition: transform 220ms ease, background-color 220ms ease;
+}
+.rus-home-dots-track [aria-current='true'] span {
+  transform: scale(1.15);
+}
+body[data-theme='dark'] .rus-home-dots-track span {
+  background: #3a3e48;
+}
+
 .rus-home-card { border: 1px solid var(--yhq-border); border-radius: 28px; padding: 14px 16px 16px; }
 .rus-home-rows { display: flex; flex-direction: column; gap: 8px; }
 .rus-home-row { min-height: 60px; display: flex; align-items: center; gap: 14px; }
