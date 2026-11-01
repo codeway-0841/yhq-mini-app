@@ -30,6 +30,7 @@ const testPageChunk        = () => import('./features/test/TestRoutePage')
 const testlarChunk         = () => import('./features/testlar/TestlarPage')
 const darslikChunk         = () => import('./features/lessons/Darslik')
 const courseMapChunk       = () => import('./features/darslik-rustili/RussianCourseHome')
+const literatureMapChunk   = () => import('./features/darslik-rusadabiyot/LiteratureCourseHome')
 const biletlarChunk        = () => import('./features/tickets/Biletlar')
 const belgilarChunk        = () => import('./features/signs/Belgilar')
 const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
@@ -75,6 +76,7 @@ const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
 const Darslik         = lazy(darslikChunk)
 const CourseMapPage      = lazy(courseMapChunk)
+const LiteratureCoursePage = lazy(literatureMapChunk)
 const Biletlar        = lazy(biletlarChunk)
 const Belgilar        = lazy(belgilarChunk)
 const SignsGamePage   = lazy(signsGameChunk)
@@ -128,7 +130,7 @@ const routeChunkPrefetchers = [
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
   topicsChunk, darslikChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
   streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, speedChunk, flashcardsChunk,
-  formulasChunk, searchChunk, signsGameChunk, courseMapChunk, libraryChunk, libraryReaderChunk,
+  formulasChunk, searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   interactiveLessonsChunk, reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
@@ -365,6 +367,8 @@ export default function App() {
             <Route path="/test/:id"   element={<TestPage />} />
             <Route path="/darslik"    element={<Darslik />} />
             <Route path="/darslik/rus-tili" element={<CourseMapPage />} />
+            <Route path="/darslik/rus-adabiyot" element={<LiteratureCoursePage />} />
+            <Route path="/darslik/literatura" element={<Navigate to="/darslik/rus-adabiyot" replace />} />
             <Route path="/darslik/xarita" element={<Navigate to="/darslik/rus-tili" replace />} />
             <Route path="/kutubxona"  element={<LibraryPage />} />
             <Route path="/kutubxona/kitob/:slug" element={<LibraryReaderPage />} />

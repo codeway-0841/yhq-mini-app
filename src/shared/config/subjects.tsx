@@ -52,6 +52,7 @@ PiGlyph.displayName = 'PiGlyph'
 const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: string }> = {
   yhq:        { icon: Car,          color: '#2e8b78', colorDark: '#24705f' },
   rustili:    { icon: Languages,    color: '#37718e', colorDark: '#2b5a72' },
+  rusadabiyot:{ icon: BookOpen,     color: '#6d28d9', colorDark: '#5b21b6' },
   fizika:     { icon: Zap,          color: '#b0822b', colorDark: '#8e6821' },
   matematika: { icon: PiGlyph,      color: '#74589b', colorDark: '#5d467d' },
   kimyo:      { icon: FlaskConical, color: '#5566a8', colorDark: '#44528a' },

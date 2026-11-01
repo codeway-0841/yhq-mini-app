@@ -129,8 +129,8 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
     else navigate('/testlar')
   }
   const learnPath = subject.id === 'yhq' ? '/darslik' : '/mavzular'
-  // Rus tili uchun alohida darslik (15 blok konspekti) mavjud.
-  const darslikPath = subject.id === 'rustili' ? '/darslik/rus-tili' : '/darslik'
+  // Rus tili va rus adabiyoti uchun alohida darsliklar mavjud.
+  const darslikPath = subject.id === 'rustili' ? '/darslik/rus-tili' : subject.id === 'rusadabiyot' ? '/darslik/rus-adabiyot' : '/darslik'
   const contextLabel = expired ? null : plan.kind === 'resume' ? tt('guidePendingTest')
     : plan.kind === 'mistakes' ? tt('dailyPriorityMistakes')
     : plan.kind === 'review' ? tt('dailyPriorityMemory')

@@ -76,7 +76,7 @@ export default function ModesPage() {
     { icon: Ticket,        label: tt('tickets'),       onClick: () => navigate('/biletlar') },
     { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
     { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
-    { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate(subject.id === 'rustili' ? '/darslik/rus-tili' : '/darslik') },
+    { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate(subject.id === 'rustili' ? '/darslik/rus-tili' : subject.id === 'rusadabiyot' ? '/darslik/rus-adabiyot' : '/darslik') },
     { icon: Sparkles,      label: tt('interactiveLessons'), onClick: () => navigate('/interaktiv') },
     { icon: Clapperboard,   label: tt('mascotStudioTitle'), onClick: () => navigate('/maskotlar') },
     { icon: LibraryBig,    label: tt('library'),       onClick: () => navigate('/kutubxona') },

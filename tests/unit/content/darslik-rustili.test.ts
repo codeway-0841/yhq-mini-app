@@ -17,17 +17,17 @@ import {
 } from '../../../src/features/darslik-rustili/markdown'
 
 /**
- * Rus tili darsligi kontenti — 15 blok konspekti.
+ * Rus tili darsligi kontenti — 24 blok konspekti.
  *
  * Bu testlar kontent bilan UI o'rtasidagi shartnomani ushlaydi: blok matni
  * mavjud, markdown buzilmagan, mundarija bandlari `DARSLIK_BLOCK_STATS` bilan
  * mos (ro'yxat sahifasi matnni yuklamasdan to'g'ri raqam ko'rsatadi).
  */
 describe('rus tili darsligi — meta', () => {
-  it('15 blok, id 1..15 ketma-ket va takrorlanmas', () => {
-    expect(DARSLIK_BLOCK_COUNT).toBe(15)
-    expect(DARSLIK_BLOCKS).toHaveLength(15)
-    expect(DARSLIK_BLOCKS.map((b) => b.id)).toEqual(Array.from({ length: 15 }, (_, i) => i + 1))
+  it('24 blok, id 1..24 ketma-ket va takrorlanmas', () => {
+    expect(DARSLIK_BLOCK_COUNT).toBe(24)
+    expect(DARSLIK_BLOCKS).toHaveLength(24)
+    expect(DARSLIK_BLOCKS.map((b) => b.id)).toEqual(Array.from({ length: 24 }, (_, i) => i + 1))
   })
 
   it('har bir blokda UZ/RU sarlavha, tavsif va ikonka bor', () => {

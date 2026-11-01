@@ -107,6 +107,18 @@ export const SUBJECT_CHAPTERS: Record<string, ChapterDef[]> = {
     { id: 'rus-mor',    labelUz: 'Morfologiya',          labelRu: 'Морфология' },
     { id: 'rus-lit',    labelUz: 'Rus adabiyoti',        labelRu: 'Литература' },
   ],
+  rusadabiyot: [
+    { id: 'all',        labelUz: 'Barchasi',             labelRu: 'Все' },
+    { id: 'lit-teo',    labelUz: 'Nazariya',             labelRu: 'Теория' },
+    { id: 'lit-drev',   labelUz: 'Qadimgi rus',          labelRu: 'Древнерусская' },
+    { id: 'lit-xviii',  labelUz: 'XVIII asr',            labelRu: 'XVIII век' },
+    { id: 'lit-xix-1',  labelUz: 'XIX asr 1-yarmi',      labelRu: 'XIX в. (1-пол.)' },
+    { id: 'lit-xix-2',  labelUz: 'XIX asr 2-yarmi',      labelRu: 'XIX в. (2-пол.)' },
+    { id: 'lit-sereb',  labelUz: 'Kumush davr',          labelRu: 'Серебряный век' },
+    { id: 'lit-sov',    labelUz: 'Sovet davri',          labelRu: '1920–1930-е' },
+    { id: 'lit-urush',  labelUz: 'Urush adabiyoti',      labelRu: 'Военная' },
+    { id: 'lit-xx-2',   labelUz: 'Zamonaviy',            labelRu: 'Современная' },
+  ],
 }
 
 const CHAPTER_WEIGHTS: Record<string, number> = {

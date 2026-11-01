@@ -21,10 +21,10 @@ const blockSource = (block: number) =>
   readFileSync(resolve(process.cwd(), `src/content/darslik-rustili/block-${String(block).padStart(2, '0')}.md`), 'utf8')
 
 describe('darslik mastery — ketma-ket ochilish', () => {
-  it('537 mavzu id’si outline tartibida', () => {
-    expect(DARSLIK_TOPIC_IDS).toHaveLength(537)
+  it('645 mavzu id’si outline tartibida', () => {
+    expect(DARSLIK_TOPIC_IDS).toHaveLength(645)
     expect(DARSLIK_TOPIC_IDS[0]).toBe('1:0')
-    expect(DARSLIK_TOPIC_IDS.at(-1)).toBe('15:16')
+    expect(DARSLIK_TOPIC_IDS.at(-1)).toBe('24:10')
   })
 
   it('birinchi mavzu ochiq, keyingilari oldingilarisiz yopiq', () => {
@@ -132,7 +132,7 @@ describe('darslik mastery — manba bo‘linishi', () => {
 
   it('server source.json barcha mavzularni va toza manbani saqlaydi', () => {
     const source = JSON.parse(readFileSync(resolve(process.cwd(), 'server/modules/darslik/source.json'), 'utf8')) as Record<string, { title: string; source: string }>
-    expect(Object.keys(source)).toHaveLength(537)
+    expect(Object.keys(source)).toHaveLength(645)
     expect(source['1:0'].title).toBe('ЗВУКИ И БУКВЫ')
     expect(source['1:0'].source).toContain('**Звук** — это то, что мы произносим и слышим.')
     expect(source['1:0'].source).not.toContain('Мини-тест')
