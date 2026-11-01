@@ -23,6 +23,7 @@ export type MdBlock =
   | { kind: 'table'; head: string[]; rows: string[][] }
   | { kind: 'divider' }
   | { kind: 'quiz'; questions: QuizQuestion[] }
+  | { kind: 'image'; src: string; alt: string; caption?: string }
 
 export interface MdListItem {
   text: string
@@ -110,6 +111,21 @@ export function parseMarkdown(src: string): MdBlock[] {
 
     if (DIVIDER_RE.test(line)) {
       blocks.push({ kind: 'divider' })
+      i++
+      continue
+    }
+
+    const imgMatch = line.match(/^!\[(.*?)\]\((.*?)\)$/)
+    if (imgMatch) {
+      const alt = imgMatch[1].trim()
+      let srcPart = imgMatch[2].trim()
+      let caption: string | undefined
+      const titleMatch = srcPart.match(/^([^\s]+)\s+["'](.*?)["']$/)
+      if (titleMatch) {
+        srcPart = titleMatch[1]
+        caption = titleMatch[2]
+      }
+      blocks.push({ kind: 'image', src: srcPart, alt, caption })
       i++
       continue
     }

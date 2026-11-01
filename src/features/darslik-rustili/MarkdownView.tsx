@@ -1,5 +1,5 @@
 import { memo, useMemo, useState, useCallback } from 'react'
-import { CheckCircle2, XCircle, RotateCcw, Lightbulb, Award } from 'lucide-react'
+import { CheckCircle2, XCircle, RotateCcw, Lightbulb, Award, AlertTriangle, BookOpen } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { playSound } from '../../shared/lib/sounds'
@@ -124,13 +124,87 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
         </ul>
       )
 
-    case 'quote':
+    case 'quote': {
+      const quoteText = block.lines.join('\n')
+      const lower = quoteText.toLowerCase()
+      const isTrap = lower.includes('ловушк') || lower.includes('ошибк') || quoteText.includes('⚠️')
+      const isTip = lower.includes('шпаргалк') || lower.includes('важно') || lower.includes('запомн') || quoteText.includes('💡')
+      const isBook = lower.includes('анализ') || lower.includes('сюжет') || quoteText.includes('📖')
+
+      if (isTrap) {
+        return (
+          <div className="my-3 rounded-2xl border border-rose-500/30 bg-gradient-to-r from-rose-950/30 to-amber-950/20 p-4 shadow-sm">
+            <div className="flex items-center gap-2 mb-1.5 text-rose-400 font-bold text-xs uppercase tracking-wider">
+              <AlertTriangle className="size-4 shrink-0 text-rose-400" />
+              <span>Ловушка для экзамена</span>
+            </div>
+            <div className="text-[14px] leading-relaxed text-slate-200">
+              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+            </div>
+          </div>
+        )
+      }
+
+      if (isTip) {
+        return (
+          <div className="my-3 rounded-2xl border border-purple-500/30 bg-gradient-to-r from-purple-950/30 to-indigo-950/20 p-4 shadow-sm">
+            <div className="flex items-center gap-2 mb-1.5 text-purple-300 font-bold text-xs uppercase tracking-wider">
+              <Lightbulb className="size-4 shrink-0 text-amber-300" />
+              <span>Важная памятка</span>
+            </div>
+            <div className="text-[14px] leading-relaxed text-slate-200">
+              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+            </div>
+          </div>
+        )
+      }
+
+      if (isBook) {
+        return (
+          <div className="my-3 rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-950/30 to-teal-950/20 p-4 shadow-sm">
+            <div className="flex items-center gap-2 mb-1.5 text-emerald-300 font-bold text-xs uppercase tracking-wider">
+              <BookOpen className="size-4 shrink-0 text-emerald-400" />
+              <span>Разбор произведения</span>
+            </div>
+            <div className="text-[14px] leading-relaxed text-slate-200">
+              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+            </div>
+          </div>
+        )
+      }
+
       return (
-        <blockquote className="rounded-2xl border-l-4 border-pprimary bg-[rgb(var(--p-primary-rgb)/0.08)] px-4 py-3 shadow-2xs">
-          <span className="whitespace-pre-line text-[14px] font-medium leading-[1.68] text-pfg">
-            <InlineText text={block.lines.join('\n')} />
+        <blockquote className="rounded-2xl border-l-4 border-purple-500 bg-purple-500/10 px-4 py-3 shadow-2xs">
+          <span className="whitespace-pre-line text-[14px] font-medium leading-[1.68] text-slate-200">
+            <InlineText text={quoteText} />
           </span>
         </blockquote>
+      )
+    }
+
+    case 'image':
+      return (
+        <figure className="my-6 flex flex-col items-center">
+          <div className="relative overflow-hidden rounded-2xl border border-purple-500/30 bg-slate-900/90 shadow-2xl max-w-xs sm:max-w-sm w-full group">
+            <img
+              src={block.src}
+              alt={block.alt}
+              className="w-full object-cover max-h-72 sm:max-h-80 transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent pointer-events-none" />
+            <div className="absolute bottom-2.5 left-3 right-3 text-left">
+              <span className="text-xs font-bold text-slate-100 drop-shadow">
+                {block.alt}
+              </span>
+            </div>
+          </div>
+          {block.caption && (
+            <figcaption className="mt-2 text-center text-xs font-medium text-slate-400 italic max-w-sm">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
       )
 
     case 'table':
