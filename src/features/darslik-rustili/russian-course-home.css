@@ -1,12 +1,12 @@
 .rus-home { min-height: calc(100dvh - var(--safe-top-body, 0px)); }
-.rus-home-inner { width: min(100%, 430px); min-height: calc(100dvh - var(--safe-top-body, 0px)); margin: auto; padding: max(12px, var(--safe-top, 0px)) 16px max(16px, var(--safe-bottom, 0px)); display: flex; flex-direction: column; }
+.rus-home-inner { width: min(100%, 430px); min-height: calc(100dvh - var(--safe-top-body, 0px)); margin: auto; padding: 8px 16px max(12px, var(--safe-bottom, 0px)); display: flex; flex-direction: column; }
 .rus-home-header { flex: none; }
 .rus-home-status { display: flex; justify-content: space-between; align-items: center; }
 .rus-home-pill { min-height: 38px; min-width: 48px; padding: 0 13px; display: flex; align-items: center; justify-content: center; gap: 5px; border: 2px solid var(--yhq-border); border-radius: 999px; background: transparent; color: inherit; font-weight: 800; }
-.rus-home-header h1 { margin: 20px 8px 0; text-align: center; font-size: clamp(22px, 6vw, 28px); font-weight: 800; line-height: 1.15; }
-.rus-home-level { margin-top: 14px; color: var(--yhq-accent); text-align: center; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
-.rus-home-hero { flex: 1; min-height: 260px; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
-.rus-home-stage { position: relative; height: clamp(180px, 30dvh, 260px); margin: 0 -16px; overflow: hidden; touch-action: pan-y; }
+.rus-home-header h1 { margin: 14px 8px 0; text-align: center; font-size: clamp(22px, 6vw, 28px); font-weight: 800; line-height: 1.15; }
+.rus-home-level { margin-top: 8px; color: var(--yhq-accent); text-align: center; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+.rus-home-hero { flex: 1; min-height: 200px; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
+.rus-home-stage { position: relative; height: clamp(160px, 26dvh, 230px); margin: 0 -16px; overflow: hidden; touch-action: pan-y; }
 .rus-home-art { position: absolute; top: 0; left: 50%; height: 100%; width: 240px; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(1); opacity: 1; transition: transform 260ms cubic-bezier(.22, 1, .36, 1), opacity 260ms ease; }
 .rus-home-art:not([aria-current='true']) { opacity: .4; transform: translateX(calc(-50% + var(--offset) * 240px + var(--drag, 0px))) scale(.72); }
 .rus-home-stage[data-dragging='true'] .rus-home-art { transition: none; }
@@ -24,5 +24,46 @@
 .rus-home-start { width: 100%; min-height: 56px; margin-top: 12px; border-radius: 999px; font-size: 17px; font-weight: 800; }
 .rus-home-start:disabled { opacity: .55; }
 body[data-theme='dark'] .rus-home-level { color: color-mix(in srgb, var(--yhq-accent), white 30%); }
+
+/* Tepa (body safe-top) va pastki (route-page) qatlamlar ham sof kurs foni bilan bir xil bo'lsin */
+html:has(.rus-home),
+body:has(.rus-home),
+.route-page:has(.rus-home),
+[data-app-shell]:has(.rus-home) {
+  background-color: #ffffff !important;
+  padding-bottom: 0 !important;
+}
+body[data-theme='dark']:has(.rus-home),
+html:has(body[data-theme='dark'] .rus-home),
+body[data-theme='dark'] .route-page:has(.rus-home),
+body[data-theme='dark'] [data-app-shell]:has(.rus-home) {
+  background-color: #111111 !important;
+}
+@media (max-width: 1023px) {
+  .route-page:has(.rus-home),
+  [data-app-shell]:has(.rus-home) {
+    overflow: hidden !important;
+    height: calc(100dvh - var(--safe-top-body, 0px)) !important;
+    max-height: calc(100dvh - var(--safe-top-body, 0px)) !important;
+    overscroll-behavior-y: none !important;
+  }
+}
+
+html:has(.cmap),
+body:has(.cmap),
+.route-page:has(.cmap),
+[data-app-shell]:has(.cmap) {
+  background-color: #ffffff !important;
+}
+body[data-theme='dark']:has(.cmap),
+html:has(body[data-theme='dark'] .cmap),
+body[data-theme='dark'] .route-page:has(.cmap),
+body[data-theme='dark'] [data-app-shell]:has(.cmap) {
+  background-color: #141414 !important;
+}
+.route-page:has(.cmap) {
+  padding-bottom: 0 !important;
+}
+
 @media (min-width: 1024px) { .rus-home { min-height: 100%; } .rus-home-inner { width: min(100%, 590px); min-height: 680px; padding: 32px 30px; } .rus-home-stage { overflow: hidden; } .rus-home-card { max-width: 500px; width: 100%; margin: auto; } }
 @media (prefers-reduced-motion: reduce) { .rus-home-art { transition: none; } }

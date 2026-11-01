@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../content/darslik-rustili'
+import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
 import { goBack } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { playSound } from '../../shared/lib/sounds'
@@ -17,6 +18,7 @@ export default function RussianCourseHome() {
   const navigate = useNavigate()
   const location = useLocation()
   const lang = useAppStore((s) => s.settings.language)
+  const themeSetting = useAppStore((s) => s.settings.theme)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
   const mastery = useDarslikMastery()
@@ -85,6 +87,43 @@ export default function RussianCourseHome() {
     }
     wasMap.current = Boolean(mapBlock)
   }, [mapBlock, refreshMastery])
+
+  // Tepa (status bar / Back tugmasi osti) va pastki fonni kurs kanvasi bilan sinxron tutish
+  useEffect(() => {
+    const tg = getTelegramWebApp()
+    const metaTheme = document.querySelector('meta[name="theme-color"]')
+    const prevMeta = metaTheme?.getAttribute('content')
+    const updateTheme = () => {
+      const isDark = document.body.dataset.theme === 'dark'
+      const background = isDark ? (mapBlock ? '#141414' : '#111111') : '#ffffff'
+      try {
+        tg?.setHeaderColor?.(background)
+        tg?.setBackgroundColor?.(background)
+      } catch {}
+      if (metaTheme) metaTheme.setAttribute('content', background)
+      document.documentElement.style.backgroundColor = background
+      document.body.style.backgroundColor = background
+    }
+    updateTheme()
+    const themeObserver = new MutationObserver(updateTheme)
+    themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
+    if (!mapBlock) {
+      try { tg?.disableVerticalSwipes?.() } catch {}
+    } else {
+      try { tg?.enableVerticalSwipes?.() } catch {}
+    }
+
+    return () => {
+      themeObserver.disconnect()
+      syncTelegramTheme(document.body.dataset.theme === 'dark')
+      if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
+      document.documentElement.style.backgroundColor = ''
+      document.body.style.backgroundColor = ''
+      try {
+        tg?.enableVerticalSwipes?.()
+      } catch {}
+    }
+  }, [themeSetting, mapBlock])
 
   return <>
     {mapBlock ? <CourseMapPage key={mapBlock.id} initialBlockId={mapBlock.id} onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })} /> :

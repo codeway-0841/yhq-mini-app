@@ -1,5 +1,7 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import RussianCourseHome from '../../../src/features/darslik-rustili/RussianCourseHome'
 import { DARSLIK_BLOCKS } from '../../../src/content/darslik-rustili'
@@ -46,5 +48,25 @@ describe('Russian course home', () => {
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[1].titleRu })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: DARSLIK_BLOCKS[0].titleRu }))
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[1].titleRu })).toBeInTheDocument()
+  })
+  it('syncs body background with course canvas and avoids duplicate safe-top padding', async () => {
+    document.body.dataset.theme = 'dark'
+    const view = render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
+    expect(document.body.style.backgroundColor).toBe('rgb(17, 17, 17)')
+    await act(async () => {
+      document.body.dataset.theme = 'light'
+      await Promise.resolve()
+    })
+    expect(document.body.style.backgroundColor).toBe('rgb(255, 255, 255)')
+    view.unmount()
+    delete document.body.dataset.theme
+
+    const css = fs.readFileSync(
+      path.resolve(__dirname, '../../../src/features/darslik-rustili/russian-course-home.css'),
+      'utf8',
+    )
+    expect(css).not.toContain('max(12px, var(--safe-top, 0px))')
+    expect(css).toContain('.route-page:has(.rus-home)')
   })
 })
