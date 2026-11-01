@@ -109,15 +109,15 @@ export interface RusadabiyotBlockStats {
 }
 
 export const RUSADABIYOT_BLOCK_STATS: Record<number, RusadabiyotBlockStats> = {
-  1: { sections: 38, minutes: 44 },
-  2: { sections: 64, minutes: 40 },
-  3: { sections: 78, minutes: 59 },
-  4: { sections: 19, minutes: 51 },
-  5: { sections: 28, minutes: 37 },
-  6: { sections: 91, minutes: 91 },
-  7: { sections: 85, minutes: 90 },
-  8: { sections: 141, minutes: 125 },
-  9: { sections: 154, minutes: 153 },
+  1: { sections: 38, minutes: 56 },
+  2: { sections: 64, minutes: 53 },
+  3: { sections: 78, minutes: 80 },
+  4: { sections: 19, minutes: 77 },
+  5: { sections: 9, minutes: 37 },
+  6: { sections: 91, minutes: 127 },
+  7: { sections: 85, minutes: 123 },
+  8: { sections: 141, minutes: 172 },
+  9: { sections: 136, minutes: 195 },
 }
 
 const BLOCK_LOADERS: Record<number, () => Promise<{ default: string }>> = {

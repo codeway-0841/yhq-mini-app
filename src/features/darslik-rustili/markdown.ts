@@ -8,6 +8,13 @@
 
 export type MdInline = { text: string; bold?: boolean; italic?: boolean; code?: boolean }
 
+export interface QuizQuestion {
+  q: string
+  o: string[]
+  a: number
+  e?: string
+}
+
 export type MdBlock =
   | { kind: 'heading'; level: 1 | 2 | 3 | 4; text: string }
   | { kind: 'paragraph'; lines: string[] }
@@ -15,6 +22,7 @@ export type MdBlock =
   | { kind: 'quote'; lines: string[] }
   | { kind: 'table'; head: string[]; rows: string[][] }
   | { kind: 'divider' }
+  | { kind: 'quiz'; questions: QuizQuestion[] }
 
 export interface MdListItem {
   text: string
@@ -104,6 +112,73 @@ export function parseMarkdown(src: string): MdBlock[] {
       blocks.push({ kind: 'divider' })
       i++
       continue
+    }
+
+    if (line.startsWith('```')) {
+      const tag = line.slice(3).trim()
+      i++
+      const codeLines: string[] = []
+      while (i < lines.length && !lines[i].trim().startsWith('```')) {
+        codeLines.push(lines[i])
+        i++
+      }
+      if (i < lines.length) i++
+      if (tag === 'quiz') {
+        try {
+          const parsed = JSON.parse(codeLines.join('\n'))
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            blocks.push({ kind: 'quiz', questions: parsed })
+            continue
+          }
+        } catch {
+          // ignore error
+        }
+      }
+      continue
+    }
+
+    if (line.startsWith('{q:') || line.startsWith(',{q:') || line.startsWith(', {q:')) {
+      const qLines: string[] = []
+      while (i < lines.length) {
+        const cur = lines[i].trim()
+        if (!cur || cur.startsWith('#') || cur.startsWith('---') || cur.startsWith('```')) break
+        if (
+          cur.includes('{q:') ||
+          cur.includes('o:[') ||
+          cur.includes('a:[') ||
+          cur.includes('</radio-group>') ||
+          cur === ']}' ||
+          cur === ')}' ||
+          cur === ','
+        ) {
+          qLines.push(cur)
+          i++
+        } else {
+          break
+        }
+      }
+      const rawChunk = qLines.join('\n')
+      const qRegex =
+        /\{q\s*:\s*["']([\s\S]*?)["']\s*,\s*(?:o|a)\s*:\s*\[([\s\S]*?)\]\s*,\s*(?:a|c)\s*:\s*(\d+)(?:\s*,\s*e\s*:\s*["']([\s\S]*?)["'])?\s*\}/g
+      const questions: QuizQuestion[] = []
+      let qm: RegExpExecArray | null
+      while ((qm = qRegex.exec(rawChunk)) !== null) {
+        const q = qm[1].replace(/\\"/g, '"')
+        const rawOpts = qm[2]
+        const a = parseInt(qm[3], 10)
+        const e = (qm[4] || '').replace(/\\"/g, '"')
+        const optRegex = /["'](.*?)["']/g
+        const options: string[] = []
+        let om: RegExpExecArray | null
+        while ((om = optRegex.exec(rawOpts)) !== null) {
+          options.push(om[1].replace(/\\"/g, '"'))
+        }
+        questions.push({ q, o: options, a, e })
+      }
+      if (questions.length > 0) {
+        blocks.push({ kind: 'quiz', questions })
+        continue
+      }
     }
 
     const heading = line.match(HEADING_RE)
