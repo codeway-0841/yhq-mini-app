@@ -180,7 +180,7 @@ export default function Profil() {
       <PageHeader title={tt('profile')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
 
       {/* ── Gorizontal Profil Kartasi ── */}
-      <div className="mx-5 mb-6 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 transition-all duration-150 shadow-xs">
+      <div className="mx-4 mb-5 flex items-center gap-3.5 rounded-2xl bg-pcard p-4 transition-colors duration-150 shadow-xs">
         {/* Avatar (chapda) */}
         <Avatar
           name={name}
@@ -239,7 +239,7 @@ export default function Profil() {
       </div>
 
       {/* ── SIZNING TARIFINGIZ ── */}
-      <Section title={tt('yourTariff').toUpperCase()}>
+      <Section title={tt('yourTariff')}>
         {/* Tariff card */}
         <div className="px-4 py-3.5 flex items-center gap-3.5">
           <PremiumIcon size={22} className="shrink-0 text-pmuted" />
@@ -353,7 +353,7 @@ export default function Profil() {
 
       {/* ── ADMIN (faqat is_admin foydalanuvchilariga ko'rinadi) ── */}
       {user?.isAdmin && (
-        <Section title="ADMIN">
+        <Section title="Admin">
           <Item
             icon={Pencil}
             label="Savollar boshqaruvi"

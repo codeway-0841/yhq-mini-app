@@ -56,7 +56,7 @@ const Scene = memo(function Scene({
         >
           <Icon size={26} strokeWidth={1.75} style={{ color: `var(${tone})` }} />
         </div>
-        <p id={labelId} className="mb-1 text-[12px] font-semibold uppercase tracking-[0.14em]" style={{ color: `var(${tone})` }}>
+        <p id={labelId} className="mb-1 text-[12px] font-semibold" style={{ color: `var(${tone})` }}>
           {eyebrow}
         </p>
         <p className="font-display text-[44px] font-semibold leading-none tracking-[-0.03em] tabular-nums text-pfg">

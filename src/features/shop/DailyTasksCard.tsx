@@ -76,7 +76,7 @@ export default function DailyTasksCard() {
   // Yuklanmoqda/xato — sahifa paypoqni buzmaslik uchun ixcham qaytamiz
   if (tasks === null) {
     return error ? null : (
-      <div className="mx-4 mb-5 rounded-2xl bg-pcard p-4 shadow-xs">
+      <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 rounded-2xl bg-pcard p-4 shadow-xs">
         <Skeleton className="mb-3 h-2.5 w-28" />
         <div className="space-y-3">
           <Skeleton className="h-3 w-full" />
@@ -97,9 +97,9 @@ export default function DailyTasksCard() {
   if (visible.length === 0) return null
 
   return (
-    <div className="mx-4 mb-5 rounded-2xl bg-pcard p-4 shadow-xs">
+    <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 rounded-2xl bg-pcard p-4 shadow-xs">
       {celebrate && <Confetti count={32} />}
-      <p className="mb-3 flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-pmuted">
+      <p className="mb-3 flex items-center gap-1.5 text-[13px] font-semibold text-pmuted">
         <ClipboardCheck size={14} strokeWidth={1.75} /> {tt('dailyTasksTitle')}
       </p>
       <div className="flex flex-col gap-2.5">
@@ -113,9 +113,9 @@ export default function DailyTasksCard() {
                   <p className="text-[14px] leading-snug font-semibold text-pfg">{def.label[lang]}</p>
                   <span className="flex-none text-[12px] font-semibold tabular-nums text-pmuted">{task.progress}/{task.target}</span>
                 </div>
-                <div className="h-[3px] overflow-hidden rounded-[2px] bg-plineStrong">
+                <div className="h-1.5 overflow-hidden rounded-full bg-psurface">
                   <div
-                    className="h-full rounded-[2px] transition-[width] duration-500 ease-out"
+                    className="h-full rounded-full transition-[width] duration-500 ease-out"
                     style={{
                       width: `${pct}%`,
                       background: task.completed ? 'var(--p-success)' : 'var(--p-primary)',

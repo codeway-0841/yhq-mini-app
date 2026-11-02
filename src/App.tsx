@@ -45,7 +45,7 @@ const streakChunk          = () => import('./features/streak/StreakPage')
 const premiumChunk         = () => import('./features/premium/PremiumPage')
 const shopChunk            = () => import('./features/shop/ShopPage')
 const statistikaChunk      = () => import('./features/stats/StatistikaPage')
-const speedChunk           = () => import('./features/speed/SpeedPage')
+
 const flashcardsChunk      = () => import('./features/flashcards/FlashcardsPage')
 const formulasChunk        = () => import('./features/formulas/FormulasPage')
 const searchChunk           = () => import('./features/search/SearchPage')
@@ -64,7 +64,7 @@ const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
 const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
 const graphChunk           = () => import('./features/graph/GraphPage')
-const wonderStudioChunk    = () => import('./features/wonder-studio/WonderStudioPage')
+
 const mathBoardChunk       = () => import('./features/math-board/MathBoardPage')
 const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
@@ -91,7 +91,7 @@ const StreakPage      = lazy(streakChunk)
 const PremiumPage     = lazy(premiumChunk)
 const ShopPage        = lazy(shopChunk)
 const StatistikaPage  = lazy(statistikaChunk)
-const SpeedPage       = lazy(speedChunk)
+
 const FlashcardsPage  = lazy(flashcardsChunk)
 const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
@@ -107,7 +107,7 @@ const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
 const LibraryReaderPage = lazy(libraryReaderChunk)
 const GraphPage        = lazy(graphChunk)
-const WonderStudioPage = lazy(wonderStudioChunk)
+
 const MathBoardPage    = lazy(mathBoardChunk)
 const CamAiPage        = lazy(camaiChunk)
 const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).default }))
@@ -129,12 +129,12 @@ const routeChunkPrefetchers = [
   testlarChunk, octagonChunk, modesChunk, testPageChunk, profilChunk, biletlarChunk,
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
   topicsChunk, darslikChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
-  streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, speedChunk, flashcardsChunk,
+  streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, flashcardsChunk,
   formulasChunk, searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   interactiveLessonsChunk, reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
-  liveListChunk, wonderStudioChunk, mascotStudioChunk, notFoundChunk, onboardingChunk, loginChunk,
+  liveListChunk, mascotStudioChunk, notFoundChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
 
@@ -386,19 +386,19 @@ export default function App() {
             <Route path="/premium"    element={<PremiumPage />} />
             <Route path="/shop"       element={<ShopPage />} />
             <Route path="/statistika" element={<StatistikaPage />} />
-            <Route path="/speed"      element={<SpeedPage />} />
+
             <Route path="/flashcards" element={<FlashcardsPage />} />
             <Route path="/shpargalkalar" element={<FormulasPage />} />
             <Route path="/grafik"     element={<GraphPage />} />
             <Route path="/qidiruv"    element={<SearchPage />} />
             <Route path="/ai-test"    element={<AiTestHub />} />
             <Route path="/ai-test/:id" element={<AiTestSession />} />
-            <Route path="/wonder-studio" element={<WonderStudioPage />} />
+
             <Route path="/doska" element={<MathBoardPage />} />
             <Route path="/camai" element={<CamAiPage />} />
             <Route path="/live" element={<LiveListPage />} />
             <Route path="/live/:id" element={<LiveRoomPage />} />
-            <Route path="/wonder" element={<WonderStudioPage />} />
+
             <Route path="/ai-tutor"   element={<SnapSolveHub />} />
             <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
             <Route path="/sharhlar"   element={<ReviewsPage />} />

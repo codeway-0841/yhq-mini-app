@@ -111,7 +111,7 @@ const UZ = {
   ticketTest: "Bilet test", realExam: "Real imtihon", fifty: "50/100 talik",
   distracting: "Chalg'ituvchi", saved: "Saqlanganlar",
   roadSigns: "Yo'l belgilari", numeric: "Raqamli savollar",
-  adaptive: "Aqlli takrorlash", speedRound: "Tezkor test",
+  adaptive: "Aqlli takrorlash",
   // v1.1 Dashboard (Neon)
   greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
   continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
@@ -152,7 +152,7 @@ const UZ = {
   guideStartHint: "Test bilan bilimingizni tekshiring. Yangi mavzu bo‘lsa, avval “O‘rganish” bo‘limidan boshlang.",
   guideLearnHint: "Mavzuni darslar orqali tushunib oling.", guideTopicsHint: "Fan mavzulari va ularga oid savollarni ko‘ring.",
   guidePracticeHint: "Test tanlang va bilimingizni tekshiring.", guideAllModes: "Barcha rejimlar",
-  guideYourProgress: "Sizning natijangiz", guideMotivation: "Vazifalar, haftalik jang va reyting",
+  guideYourProgress: "Sizning natijangiz", guideMotivation: "Vazifalar va haftalik jang",
   guideCoverage: "Bu ko‘rsatkich javob berilgan savollar ulushini bildiradi.",
   dashboardPractice: "Mashq qilish", dashboardLearn: "O‘rganish", dashboardReviewShort: "Takrorlash",
   readinessTitle: "Imtihonga tayyorgarlik",
@@ -186,7 +186,7 @@ const UZ = {
   aiTestCorrectAnswer: "To'g'ri javob", aiTestEssayScore: "Esse bahosi",
   aiTestCoinsEarned: "Yutilgan coin", aiTestBackToList: "Variantlarga qaytish",
   // AI Tutor & Snap Solve (Suratdan yechish va Sokratik repetitor)
-  scoreCalculator: "Ball kalkulyatori",
+
   snapSolveTitle: "Suratdan yechish (AI)",
   snapSolveSubtitle: "Masala yoki testni rasmga oling — AI soniyalar ichida bosqichma-bosqich yechib beradi",
   snapSolveTakeCamera: "Kamera orqali suratga olish",
@@ -218,7 +218,7 @@ const UZ = {
   aiTestAlreadyDone: "Bu variant allaqachon yechilgan", aiTestEssayUngraded: "Esse AI kvotasi tugagani uchun baholanmadi",
   aiTestLoadError: "Test yuklanmadi", aiTestPremiumCta: "2-variant faqat Premium uchun",
   aiTestTaskWord: "topshiriq",
-  wonderStudioTitle: "AI Wonder Studio",
+
   coinReasonAiCourse: "AI kurs darsi",
   hourWord: "soat", topicGeneral: "Umumiy", topicBreakdownTitle: "Mavzular kesimida",
   mistakes: "Xatolar", lessonWord: "dars", allDoneWord: "Barcha darslar tugal ✓",
@@ -1297,7 +1297,7 @@ const RU: Record<Keys, string> = {
   ticketTest: "Тест по билету", realExam: "Реальный экзамен", fifty: "50/100 вопросов",
   distracting: "Каверзные", saved: "Сохранённые",
   roadSigns: "Дорожные знаки", numeric: "Числовые вопросы",
-  adaptive: "Умное повторение", speedRound: "Быстрый тест",
+  adaptive: "Умное повторение",
   // v1.1 Dashboard (Neon)
   greeting: "Привет", level: "Уровень", overallProgress: "Общий прогресс",
   continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
@@ -1338,7 +1338,7 @@ const RU: Record<Keys, string> = {
   guideStartHint: "Проверьте знания в тесте. Если тема новая, начните с учебных материалов ниже.",
   guideLearnHint: "Разберитесь в теме с помощью уроков.", guideTopicsHint: "Посмотрите темы предмета и вопросы к ним.",
   guidePracticeHint: "Выберите тест и проверьте свои знания.", guideAllModes: "Все режимы",
-  guideYourProgress: "Ваш результат", guideMotivation: "Задания, битва недели и рейтинг",
+  guideYourProgress: "Ваш результат", guideMotivation: "Задания и битва недели",
   guideCoverage: "Этот показатель отражает долю вопросов, на которые вы ответили.",
   dashboardPractice: "Практика", dashboardLearn: "Обучение", dashboardReviewShort: "Повторение",
   readinessTitle: "Готовность к экзамену",
@@ -1372,7 +1372,7 @@ const RU: Record<Keys, string> = {
   aiTestCorrectAnswer: "Правильный ответ", aiTestEssayScore: "Оценка эссе",
   aiTestCoinsEarned: "Заработано монет", aiTestBackToList: "К вариантам",
   // AI Tutor & Snap Solve (Решение по фото и Сократический репетитор)
-  scoreCalculator: "Калькулятор баллов",
+
   snapSolveTitle: "Решение по фото (AI)",
   snapSolveSubtitle: "Сфотографируйте задачу или тест — AI пошагово решит её за секунды",
   snapSolveTakeCamera: "Сделать фото",
@@ -1404,7 +1404,7 @@ const RU: Record<Keys, string> = {
   aiTestAlreadyDone: "Этот вариант уже пройден", aiTestEssayUngraded: "Эссе не оценено — дневная квота AI исчерпана",
   aiTestLoadError: "Не удалось загрузить тест", aiTestPremiumCta: "Вариант 2 — только для Premium",
   aiTestTaskWord: "заданий",
-  wonderStudioTitle: "AI Wonder Studio",
+
   coinReasonAiCourse: "Урок AI-курса",
   hourWord: "часа", topicGeneral: "Общие", topicBreakdownTitle: "По темам",
   mistakes: "Ошибки", lessonWord: "урок", allDoneWord: "Все уроки завершены ✓",

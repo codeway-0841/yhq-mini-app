@@ -152,15 +152,11 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(read('features/ai-test/AiTestHub.tsx')).toContain('lg:grid-cols-2')
   })
 
-  it('batch-5: Formulalar/Qidiruv/Speed/Adaptive desktop', () => {
+  it('batch-5: Formulalar/Qidiruv/Adaptive desktop', () => {
     const formulas = read('features/formulas/FormulasPage.tsx')
     expect(formulas).toContain('sm:grid-cols-3')
     expect(formulas).toContain('xl:grid-cols-4')
     expect(read('features/search/SearchPage.tsx')).toContain('lg:grid-cols-2')
-    const speed = read('features/speed/SpeedPage.tsx')
-    expect(speed).toContain('lg:max-w-2xl')
-    expect(speed).not.toContain('bg-pprimary/15')
-    expect(speed).not.toContain('bg-pdanger/15')
     expect(read('features/adaptive/AdaptivePage.tsx')).toContain('lg:max-w-2xl')
   })
 

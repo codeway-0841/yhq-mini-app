@@ -39,11 +39,6 @@ const IMMERSIVE_CHROME: RouteChrome = {
   shell: 'standard',
 }
 
-const FULLSCREEN_CHROME: RouteChrome = {
-  mode: 'immersive',
-  bottomNavigation: false,
-  shell: 'fullscreen',
-}
 
 const WORKSPACE_PREFIXES = ['/ai-tutor', '/snap-solve', '/ai-test', '/camai', '/doska'] as const
 const IMMERSIVE_PREFIXES = ['/test/', '/octagon/', '/belgilar-oyini', '/kutubxona/kitob/', '/live/'] as const
@@ -64,10 +59,6 @@ export function getRouteChrome(pathname: string): RouteChrome {
     return TAB_CHROME
   }
 
-  // Wonder Studio o'zining to'liq ekranli canvas/shell'iga ega.
-  if (isPathOrDescendant(normalized, '/wonder') || isPathOrDescendant(normalized, '/wonder-studio')) {
-    return FULLSCREEN_CHROME
-  }
 
   if (WORKSPACE_PREFIXES.some((prefix) => isPathOrDescendant(normalized, prefix))) {
     return WORKSPACE_CHROME

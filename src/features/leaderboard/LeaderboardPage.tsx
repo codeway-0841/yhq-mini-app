@@ -111,8 +111,8 @@ function Top3ArcStage({ top3, tt }: {
               </div>
             </div>
             <p className="mt-3.5 max-w-[80px] truncate text-center text-[12px] font-bold text-pfg">{second.name}</p>
-            <p className="font-display text-[12px] font-extrabold text-slate-500 dark:text-slate-300 tabular-nums">
-              {second.score} <span className="text-[9px] font-normal text-psubtle">{tt('scoreUnit')}</span>
+            <p className="font-display text-[12px] font-bold text-slate-500 dark:text-slate-300 tabular-nums">
+              {second.score} <span className="text-[11px] font-normal text-psubtle">{tt('scoreUnit')}</span>
             </p>
           </div>
         )}
@@ -122,7 +122,7 @@ function Top3ArcStage({ top3, tt }: {
           <div className="relative flex flex-col items-center">
             {/* Oltin Toj — avatar borderi ustida nafis tegib turadi */}
             <div className="-mb-0.5 z-20">
-              <Crown size={25} className="fill-amber-400 stroke-amber-500 drop-shadow-[0_2px_8px_rgba(245,158,11,0.55)]" />
+              <Crown size={25} className="fill-amber-400 stroke-amber-500" />
             </div>
             <div className="relative z-10 rounded-full shadow-lg overflow-hidden bg-pcard ring-2 ring-psurface">
               <UserAvatar name={first.name} src={avatarSrcFor(first)} frame={first.avatarFrame} size="top1" />
@@ -131,9 +131,9 @@ function Top3ArcStage({ top3, tt }: {
               1
             </div>
           </div>
-          <p className="mt-4 max-w-[95px] truncate text-center text-[13.5px] font-extrabold text-pfg">{first.name}</p>
-          <p className="font-display text-[13.5px] font-black text-amber-500 dark:text-amber-400 tabular-nums">
-            {first.score} <span className="text-[9.5px] font-normal text-psubtle">{tt('scoreUnit')}</span>
+          <p className="mt-4 max-w-[95px] truncate text-center text-[13.5px] font-bold text-pfg">{first.name}</p>
+          <p className="font-display text-[13.5px] font-bold text-amber-500 dark:text-amber-400 tabular-nums">
+            {first.score} <span className="text-[11px] font-normal text-psubtle">{tt('scoreUnit')}</span>
           </p>
         </div>
 
@@ -149,7 +149,7 @@ function Top3ArcStage({ top3, tt }: {
               </div>
             </div>
             <p className="mt-3.5 max-w-[80px] truncate text-center text-[12px] font-bold text-pfg">{third.name}</p>
-            <p className="font-display text-[12px] font-extrabold text-amber-700 dark:text-amber-500 tabular-nums">
+            <p className="font-display text-[12px] font-bold text-amber-700 dark:text-amber-500 tabular-nums">
               {third.score} <span className="text-[9px] font-normal text-psubtle">{tt('scoreUnit')}</span>
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function LeaderboardPage() {
                 )}>
                   {entry.name}
                   {isYou && (
-                    <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] px-1.5 py-0.2 text-[9px] font-extrabold text-pprimary">
+                    <span className="ml-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.20)] px-1.5 py-0.5 text-[11px] font-semibold text-pprimary">
                       {tt('youLabel')}
                     </span>
                   )}
@@ -394,7 +394,7 @@ export default function LeaderboardPage() {
                   type="button"
                   onClick={() => { playSound('click'); haptics.select(); setTab(t) }}
                   className={cn(
-                    'flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98] cursor-pointer',
+                    'flex-1 min-h-11 py-2 rounded-xl text-xs font-semibold transition-[background-color,color,transform] duration-150 ease-out active:scale-[0.98] cursor-pointer',
                     active
                       ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
                       : 'text-pmuted hover:text-pfg'

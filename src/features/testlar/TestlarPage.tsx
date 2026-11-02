@@ -108,7 +108,7 @@ export default function TestlarPage() {
         <button
           type="button"
           onClick={() => navigate('/qidiruv')}
-          className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-all active:scale-[0.99] shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]"
+          className="flex w-full items-center gap-2.5 rounded-2xl bg-psurface px-4 py-3 text-left transition-[background-color,transform] duration-150 active:scale-[0.99] shadow-xs hover:bg-[rgb(var(--p-surface-rgb)/0.8)]"
         >
           <Search size={16} strokeWidth={1.75} className="flex-shrink-0 text-pprimary" />
           <span className="text-sm text-pmuted">{tt('searchPlaceholder')}</span>
@@ -121,10 +121,10 @@ export default function TestlarPage() {
           const locked = isTestModePremium(m.id) && !isPremium
           return (
             <button key={m.id} onClick={() => start(m)}
-              className="group relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface">
+              className="group relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-[background-color,transform] duration-150 text-left shadow-xs hover:bg-psurface">
               {/* AI kunlik test — YANGI badge (yangi testlar ekanligi ko'rinib tursin) */}
               {m.aiCard && (
-                <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">
+                <span className="absolute -top-2 right-3 rounded-full border border-pline bg-psurface px-2 py-0.5 text-[11px] font-semibold text-pprimary">
                   {tt('aiTestNew')}
                 </span>
               )}
@@ -132,7 +132,7 @@ export default function TestlarPage() {
               <div className="flex size-11 shrink-0 items-center justify-center text-pmuted">
                 {m.iconBox === 'zap' && <Zap size={24} strokeWidth={1.75} />}
                 {m.iconBox === 'cap' && <ClipboardCheck size={24} strokeWidth={1.75} />}
-                {m.iconBox === 'ai' && <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
+                {m.iconBox === 'ai' && <Sparkles size={24} strokeWidth={1.75} className="text-pmuted" />}
               </div>
 
               {/* Matn */}

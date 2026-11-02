@@ -147,13 +147,13 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
   return (
-    <div className="home-learning-guide px-4 pb-3">
+    <div className="home-learning-guide px-4 lg:px-0 pb-3">
       <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
         <button type="button" onClick={() => navigate(learnPath)} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
           <div className="home-learning-shortcut-icon">
             <BookOpen size={19} strokeWidth={2} />
           </div>
-          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('dashboardLearn')}</span>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('dashboardLearn')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
@@ -165,14 +165,14 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           <div className="home-learning-shortcut-icon">
             <GraduationCap size={19} strokeWidth={2} />
           </div>
-          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('lessons')}</span>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('lessons')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
           <div className="home-learning-shortcut-icon">
             <Ticket size={19} strokeWidth={2} />
           </div>
-          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('tickets')}</span>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('tickets')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
@@ -184,14 +184,14 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           <div className="home-learning-shortcut-icon">
             <Brain size={19} strokeWidth={2} />
           </div>
-          <span className="min-w-0 flex-1 text-[15px] font-bold leading-tight text-pfg">{tt('dashboardReviewShort')}</span>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('dashboardReviewShort')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
       </div>
 
       <section className="home-learning-hero mt-4">
         <div className="home-learning-step">
-          <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.12em] text-pprimary">{tt('guideToday')}</p>
+          <p className="mb-2 text-[12px] font-semibold text-pprimary">{tt('guideToday')}</p>
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
               {allComplete && !resume ? (

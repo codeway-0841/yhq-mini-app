@@ -67,10 +67,10 @@ export default function AiTestHub() {
             <button
               key={t.id}
               onClick={() => open(t)}
-              className="relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-all text-left shadow-xs hover:bg-psurface"
+              className="relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-[background-color,transform] duration-150 text-left shadow-xs hover:bg-psurface"
             >
               {!t.attempted && (
-                <span className="absolute -top-2 right-3 rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wide text-ponprimary bg-ppurple animate-pulse">
+                <span className="absolute -top-2 right-3 rounded-full border border-pline bg-psurface px-2 py-0.5 text-[11px] font-semibold text-pprimary">
                   {tt('aiTestNew')}
                 </span>
               )}
@@ -79,7 +79,7 @@ export default function AiTestHub() {
                   ? <Lock size={24} strokeWidth={1.75} />
                   : t.attempted
                     ? <CheckCircle2 size={24} strokeWidth={1.75} className="text-psuccess" />
-                    : <Sparkles size={24} strokeWidth={1.75} className="text-ppurple" />}
+                    : <Sparkles size={24} strokeWidth={1.75} className="text-pmuted" />}
               </div>
 
               <div className="flex-1 min-w-0">

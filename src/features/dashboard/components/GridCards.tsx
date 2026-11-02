@@ -73,13 +73,12 @@ export const ModeGridCard = memo(function ModeGridCard({ icon: Icon, label, onCl
         'group relative flex w-full flex-col items-center justify-center gap-1.5 py-3 px-2 min-h-[78px]',
         'sm:gap-2.5 sm:py-4 sm:px-3 sm:min-h-[96px]',
         'lg:gap-3 lg:py-5 lg:px-4 lg:min-h-[120px]',
-        'rounded-xl sm:rounded-2xl bg-pcard shadow-xs active:scale-95 transition-all duration-150',
-        'lg:hover:shadow-md lg:hover:-translate-y-0.5',
+        'rounded-xl sm:rounded-2xl bg-pcard shadow-xs active:scale-[0.98]',
         interactive,
         '[@media(hover:hover)]:hover:bg-psurface',
       )}
     >
-      <div className="grid place-items-center size-8 sm:size-10 lg:size-12 rounded-full bg-psurface text-pfg shrink-0 transition-transform duration-200 group-hover:scale-110">
+      <div className="grid place-items-center size-8 sm:size-10 lg:size-12 rounded-full bg-psurface text-pfg shrink-0">
         <Icon size={20} strokeWidth={1.8} className="sm:hidden text-pmuted group-hover:text-pfg transition-colors" />
         <Icon size={22} strokeWidth={1.8} className="hidden sm:block lg:hidden text-pmuted group-hover:text-pfg transition-colors" />
         <Icon size={26} strokeWidth={1.8} className="hidden lg:block text-pmuted group-hover:text-pfg transition-colors" />

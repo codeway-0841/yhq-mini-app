@@ -66,10 +66,10 @@ describe('Dashboard "Personal" qatori (video 1:1)', () => {
     expect(props.onSubjects).toHaveBeenCalledTimes(1)
   })
 
-  it('analitika doirasi Statistikaga, tema doirasi mavjud (aria-label almashadi)', () => {
+  it('reyting doirasi Reytingga, tema doirasi mavjud (aria-label almashadi)', () => {
     useAppStore.setState((s) => ({ settings: { ...s.settings, theme: 'dark' } }))
     renderBar()
-    expect(screen.getByRole('button', { name: 'Statistika' })).toBeTruthy()
+    expect(screen.getByRole('button', { name: 'Reyting' })).toBeTruthy()
     expect(screen.getByRole('button', { name: 'Light mode' })).toBeTruthy()
     useAppStore.setState((s) => ({ settings: { ...s.settings, theme: 'light' } }))
     renderBar()

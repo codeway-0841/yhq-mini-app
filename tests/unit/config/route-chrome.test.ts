@@ -40,15 +40,6 @@ describe('route chrome registry', () => {
     }
   })
 
-  it('Wonder route-larini to\'liq ekranli shellga chiqaradi', () => {
-    for (const pathname of ['/wonder', '/wonder/session-1', '/wonder-studio']) {
-      expect(getRouteChrome(pathname), pathname).toEqual({
-        mode: 'immersive',
-        bottomNavigation: false,
-        shell: 'fullscreen',
-      })
-    }
-  })
 
   it('trailing slash route siyosatini o\'zgartirmaydi', () => {
     expect(getRouteChrome('/testlar/')).toEqual(getRouteChrome('/testlar'))

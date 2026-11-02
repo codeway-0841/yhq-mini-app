@@ -16,7 +16,6 @@ import { TopBar } from './components/TopBar'
 import DynamicIsland, { SHOW_DYNAMIC_ISLAND } from './components/DynamicIsland'
 import { ProgressCard } from './components/ProgressCard'
 import { LearningGuide } from './components/LearningGuide'
-import { LeaguePreview } from './components/LeaguePreview'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
@@ -141,34 +140,24 @@ export default function Dashboard() {
               <LearningGuide summary={learningSummary} />
             </div>
 
-            {/* O'ng ustun: Vazifalar, Boss jang va Reyting */}
+            {/* O'ng ustun: Vazifalar va Boss jang */}
             <div className="lg:col-span-5 xl:col-span-4">
               {/* Desktop ko'rinishi (doim ochiq, chiroyli bento blok) */}
               <div className="hidden lg:flex lg:flex-col lg:gap-4">
                 <DailyTasksCard />
                 <BossCard />
-                <LeaguePreview
-                  lang={settings.language}
-                  userId={user?.id}
-                  onSeeAll={() => navigate('/reyting')}
-                />
               </div>
 
               {/* Mobil ko'rinishi (ixcham collapsible) */}
               <div className="lg:hidden">
                 <details className="mb-5 group">
-                  <summary className="mx-4 mb-3 flex cursor-pointer list-none items-center justify-between rounded-2xl border border-pline/60 bg-pcard/50 px-3.5 py-2.5 text-[14px] font-semibold text-pmuted transition-colors duration-150 hover:bg-pcard hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary select-none touch-manipulation [&::-webkit-details-marker]:hidden">
+                  <summary className="mx-4 flex cursor-pointer list-none items-center justify-between rounded-2xl border border-pline/60 bg-pcard/50 px-3.5 py-2.5 text-[14px] font-semibold text-pmuted transition-colors duration-150 hover:bg-pcard hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary select-none touch-manipulation [&::-webkit-details-marker]:hidden group-open:mb-3">
                     <span>{tt('guideMotivation')}</span>
                     <ChevronDown size={17} className="text-pmuted transition-transform duration-200 ease-out group-open:rotate-180" aria-hidden="true" />
                   </summary>
-                  <div className="space-y-4 pt-1">
+                  <div className="pt-1">
                     <DailyTasksCard />
                     <BossCard />
-                    <LeaguePreview
-                      lang={settings.language}
-                      userId={user?.id}
-                      onSeeAll={() => navigate('/reyting')}
-                    />
                   </div>
                 </details>
               </div>

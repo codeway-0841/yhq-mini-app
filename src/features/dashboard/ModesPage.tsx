@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {
   BookOpen,
@@ -11,12 +11,10 @@ import {
   Signpost,
   Hash,
   Brain,
-  Zap,
   NotebookText,
-  Calculator,
   Camera,
   LineChart,
-  Compass,
+
   PenLine,
   ScanFace,
   Radio,
@@ -29,8 +27,6 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useToast } from '../../shared/components/ToastContainer'
 import { useT } from '../../shared/i18n'
 import { PageHeader } from '../../shared/components/ui/page-header'
-import { SUBJECT_BASES } from '../../../shared/subjects'
-import { MilliySertifikatCalculatorModal } from '../testlar'
 import { ModeGridCard } from './components/GridCards'
 
 export default function ModesPage() {
@@ -40,10 +36,6 @@ export default function ModesPage() {
   const subject = useSubjectStore((s) => s.subject)
   const { info: showToast } = useToast()
   const tt = useT(language)
-  const [showCalculator, setShowCalculator] = useState(false)
-
-  const subjectBase = SUBJECT_BASES.find((s) => s.id === subject.id)
-  const hasMilliyPreset = (subjectBase?.examPresets as readonly string[] | undefined)?.includes('milliy-sertifikat') ?? false
 
   const goSaved = useCallback(() => {
     const prefix = `${subject.id}:`
@@ -68,9 +60,6 @@ export default function ModesPage() {
     navigate('/test/1', { state: { mode: m, title } })
   }
 
-  // Aniq fanlar (hisob-kitob, formulali): 10 soniyalik speed test ularga mos emas
-  const isExactScience = ['matematika', 'fizika', 'kimyo'].includes(subject.id)
-
   const items = [
     { icon: BookOpen,      label: tt('topics'),        onClick: () => navigate('/mavzular') },
     { icon: Ticket,        label: tt('tickets'),       onClick: () => navigate('/biletlar') },
@@ -89,19 +78,13 @@ export default function ModesPage() {
       : []),
     { icon: Hash,          label: tt('numeric'),       onClick: goMode('numeric', tt('numeric')) },
     { icon: Brain,         label: tt('adaptiveTitle'), onClick: () => navigate('/adaptive') },
-    ...(!isExactScience
-      ? [{ icon: Zap,      label: tt('speedRound'),    onClick: () => navigate('/speed') }]
-      : []),
     { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
     ...(['matematika', 'fizika'].includes(subject.id)
       ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
       : []),
-    ...(hasMilliyPreset
-      ? [{ icon: Calculator, label: tt('scoreCalculator'), onClick: () => setShowCalculator(true) }]
-      : []),
     { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
-    { icon: Compass,       label: tt('wonderStudioTitle'), onClick: () => navigate('/wonder-studio') },
+
     { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
     { icon: Radio,         label: tt('liveTitle'),        onClick: () => navigate('/live') },
   ]
@@ -135,16 +118,6 @@ export default function ModesPage() {
           />
         ))}
       </div>
-
-      {showCalculator && (
-        <MilliySertifikatCalculatorModal
-          onClose={() => setShowCalculator(false)}
-          onStartExam={() => {
-            setShowCalculator(false)
-            navigate('/test/1', { state: { mode: 'exam:milliy-sertifikat', title: tt('examPresetMilliy') } })
-          }}
-        />
-      )}
     </div>
   )
 }

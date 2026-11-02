@@ -78,8 +78,8 @@ describe('ModesPage', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Mavzular' }))
     expect(mockNavigate).toHaveBeenCalledWith('/mavzular')
 
-    fireEvent.click(screen.getByRole('button', { name: 'AI Wonder Studio' }))
-    expect(mockNavigate).toHaveBeenCalledWith('/wonder-studio')
+    fireEvent.click(screen.getByRole('button', { name: 'Xatolar' }))
+    expect(mockNavigate).toHaveBeenCalledWith('/xatolar')
   })
 
   it('saqlangan mashqni v2 uchun server selector bilan belgilaydi', () => {
@@ -100,7 +100,7 @@ describe('ModesPage', () => {
     })
   })
 
-  it('YHQ fanida Tezkor test va Aqlli takrorlash kartalari chiqadi va mos marshrutga olib boradi', () => {
+  it('Aqlli takrorlash kartasi chiqadi va mos marshrutga olib boradi, Tezkor test esa olib tashlangan', () => {
     render(
       <ToastProvider>
         <MemoryRouter>
@@ -109,10 +109,7 @@ describe('ModesPage', () => {
       </ToastProvider>
     )
 
-    const speedBtn = screen.getByRole('button', { name: 'Tezkor test' })
-    expect(speedBtn).toBeTruthy()
-    fireEvent.click(speedBtn)
-    expect(mockNavigate).toHaveBeenCalledWith('/speed')
+    expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
 
     const adaptiveBtn = screen.getByRole('button', { name: 'Aqlli takrorlash' })
     expect(adaptiveBtn).toBeTruthy()
@@ -143,7 +140,7 @@ describe('ModesPage', () => {
     expect(screen.queryByRole('button', { name: 'Haydash simulyatori' })).toBeNull()
   })
 
-  it('aniq fanlarda (fizika, matematika) Tezkor test kartasi ko\'rinmaydi', () => {
+  it('Ball kalkulyatori va Tezkor test ModesPage ichida ko\'rinmaydi', () => {
     useSubjectStore.setState({
       subject: {
         id: 'fizika',
@@ -151,59 +148,7 @@ describe('ModesPage', () => {
         icon: vi.fn() as any,
         color: '#3b82f6',
         available: true,
-        examPresets: [],
-      },
-    })
-
-    render(
-      <ToastProvider>
-        <MemoryRouter>
-          <ModesPage />
-        </MemoryRouter>
-      </ToastProvider>
-    )
-
-    expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
-    expect(screen.getByRole('button', { name: 'Aqlli takrorlash' })).toBeTruthy()
-  })
-
-  it('milliy sertifikatli fanlarda Ball kalkulyatori kartasi chiqadi va bosilganda modal ochiladi', () => {
-    useSubjectStore.setState({
-      subject: {
-        id: 'fizika',
-        name: 'Fizika',
-        icon: vi.fn() as any,
-        color: '#3b82f6',
-        available: true,
-        examPresets: [],
-      },
-    })
-
-    render(
-      <ToastProvider>
-        <MemoryRouter>
-          <ModesPage />
-        </MemoryRouter>
-      </ToastProvider>
-    )
-
-    const calcBtn = screen.getByRole('button', { name: 'Ball kalkulyatori' })
-    expect(calcBtn).toBeTruthy()
-
-    fireEvent.click(calcBtn)
-    expect(screen.getByRole('dialog')).toBeTruthy()
-    expect(screen.getByText('Sertifikat bali')).toBeTruthy()
-  })
-
-  it('YHQ fanida Ball kalkulyatori kartasi chiqmaydi', () => {
-    useSubjectStore.setState({
-      subject: {
-        id: 'yhq',
-        name: "Yo'l harakati qoidalari",
-        icon: vi.fn() as any,
-        color: '#10b981',
-        available: true,
-        examPresets: [],
+        examPresets: ['milliy-sertifikat'],
       },
     })
 
@@ -216,5 +161,7 @@ describe('ModesPage', () => {
     )
 
     expect(screen.queryByRole('button', { name: 'Ball kalkulyatori' })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'AI Wonder Studio' })).toBeNull()
   })
 })

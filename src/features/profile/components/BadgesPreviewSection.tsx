@@ -102,7 +102,7 @@ export function BadgesPreviewSection({ stats, tt, onOpenAll }: BadgesPreviewSect
   }, [stats])
 
   return (
-    <div className="mx-5 mb-4 rounded-2xl bg-pcard p-3.5 shadow-xs">
+    <div className="mx-4 mb-5 rounded-2xl bg-pcard p-3.5 shadow-xs">
       {/* Header with Barchasi > */}
       <div className="flex items-center justify-between mb-2.5">
         <h3 className="font-display text-[14.5px] font-bold text-pfg tracking-tight">

@@ -135,7 +135,7 @@ export const ProgressCard = memo(function ProgressCard({ summary, streak, lang, 
 
   return (
     <>
-      <div className="hero-gradient-card relative mx-4 mb-4 overflow-hidden px-4 py-3 sm:px-5 sm:py-4">
+      <div className="hero-gradient-card relative mx-4 lg:mx-0 mb-4 overflow-hidden px-4 py-3 sm:px-5 sm:py-4">
         {/* Organik to'lqinli to'r: Canvas 2D liquid mesh */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
           <canvas

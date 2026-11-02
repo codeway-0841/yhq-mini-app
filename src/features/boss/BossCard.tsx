@@ -54,7 +54,7 @@ export default function BossCard() {
   if (failed && !state) return null
   if (!state) {
     return (
-      <div className="mx-5 mb-6 rounded-2xl bg-pcard p-4 shadow-xs">
+      <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 rounded-2xl bg-pcard p-4 shadow-xs">
         <Skeleton className="mb-3 h-2.5 w-24" />
         <div className="flex items-center gap-3">
           <Skeleton className="size-12 shrink-0 rounded-2xl" />
@@ -82,16 +82,16 @@ export default function BossCard() {
     : { text: `${daysLeft} ${tt('bossDaysLeft')}`, color: 'var(--p-muted)' }
 
   return (
-    <div className="mx-4 mb-5 overflow-hidden rounded-2xl bg-pcard p-4 transition-all shadow-xs">
+    <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 overflow-hidden rounded-2xl bg-pcard p-4 transition-colors shadow-xs">
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-1.5 text-[12px] font-bold uppercase tracking-[0.14em] text-psubtle">
+        <div className="flex items-center gap-1.5 text-[13px] font-semibold text-pmuted">
           <Swords size={14} strokeWidth={1.75} className="text-pmuted" />
           <span>{tt('bossTitle')}</span>
         </div>
         <span
           className={cn(
-            'rounded-full px-2 py-0.5 text-[12px] font-bold tracking-tight',
+            'rounded-full px-2.5 py-0.5 text-[12px] font-semibold',
             isDefeated ? 'bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess' : 'bg-psurface text-pmuted'
           )}
           style={{ color: statusBadge.color }}
@@ -116,7 +116,7 @@ export default function BossCard() {
 
           {/* Qolgan HP: raqam va progress bar bir xil miqdorni ko‘rsatadi. */}
           <div role="progressbar" aria-label={tt('bossRemainingHp')} aria-valuemin={0} aria-valuemax={state.hpTotal} aria-valuenow={remainingHp}
-            className="mt-2 h-2 w-full overflow-hidden rounded-full bg-psurface">
+            className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-psurface">
             <div
               className="h-full rounded-full bg-pprimary transition-[width] duration-700 ease-out"
               style={{
@@ -140,7 +140,7 @@ export default function BossCard() {
       {/* Top-3 zarba beruvchilar — ixcham micro-avatarlar */}
       {state.top.length > 0 && (
         <div className="mt-3 flex items-center justify-between border-t border-pline pt-2.5">
-          <span className="flex items-center gap-1 text-[12px] font-bold uppercase tracking-wide text-psubtle">
+          <span className="flex items-center gap-1.5 text-[12px] font-semibold text-pmuted">
             <Trophy size={11} strokeWidth={1.75} className="text-pmuted" /> {tt('bossTopHitters')}
           </span>
           <div className="flex items-center gap-2">
@@ -176,7 +176,7 @@ export default function BossCard() {
 
       {/* G'alaba holati eslatmasi */}
       {isDefeated && (
-        <div className="mt-3 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.10)] p-3 text-center shadow-xs motion-safe:animate-premiumIn">
+        <div className="mt-3 rounded-xl bg-[rgb(var(--p-success-rgb)/0.10)] p-3 text-center shadow-xs motion-safe:animate-premiumIn">
           <p className="text-[13px] font-bold text-psuccess">
             {tt('bossDefeatedHint')}
           </p>

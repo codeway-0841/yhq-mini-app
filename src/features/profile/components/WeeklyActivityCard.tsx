@@ -40,10 +40,8 @@ export function WeeklyActivityCard({ name, xp, streak, tt }: WeeklyActivityCardP
       role="button"
       tabIndex={0}
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') navigate('/streak') }}
-      className="group relative mx-4 mb-4 cursor-pointer overflow-hidden rounded-2xl bg-pcard p-4 transition-all duration-200 active:scale-[0.99] shadow-xs select-none"
+      className="group relative mx-4 mb-4 cursor-pointer overflow-hidden rounded-2xl bg-pcard p-4 transition-[background-color,transform] duration-200 active:scale-[0.99] shadow-xs select-none"
     >
-      {/* Background soft glow */}
-      <div className="pointer-events-none absolute -right-12 -top-12 size-36 rounded-full bg-psurface blur-2xl opacity-40" />
 
       {/* 7-Day Dot-Line Timeline Graph */}
       <div className="relative pt-2 pb-1">
@@ -81,9 +79,9 @@ export function WeeklyActivityCard({ name, xp, streak, tt }: WeeklyActivityCardP
                     className={cn(
                       'grid size-3.5 place-items-center rounded-full transition-all duration-300',
                       isPassedOrToday
-                        ? 'bg-pprimary shadow-[0_0_8px_rgba(59,130,246,0.6)] ring-2 ring-pcard'
+                        ? 'bg-pprimary ring-2 ring-pcard'
                         : 'bg-psurface border-2 border-plineStrong',
-                      isToday && 'size-4.5 ring-2 ring-pprimary animate-pulse',
+                      isToday && 'size-4.5 ring-2 ring-pprimary',
                     )}
                   >
                     {isPassedOrToday && (
@@ -125,7 +123,7 @@ export function WeeklyActivityCard({ name, xp, streak, tt }: WeeklyActivityCardP
       {/* User Status Bottom Row: ● Ruslan Abl ... 0 XP */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2 min-w-0 flex-1">
-          <span className="size-2 rounded-full bg-pprimary animate-pulse shrink-0" />
+          <span className="size-2 rounded-full bg-pprimary shrink-0" />
           <p className="truncate text-[13.5px] font-semibold text-pfg tracking-tight">
             {name}
           </p>
