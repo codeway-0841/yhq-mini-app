@@ -32,7 +32,12 @@ export default function RussianCourseHome() {
   const activeRow = useRef<HTMLDivElement>(null)
   const wasMap = useRef(false)
   const current = DARSLIK_BLOCKS.find((block) => getBlockOutline(block.id).some((_, idx) => !mastery.passed.has(sectionKey(block.id, idx)))) ?? DARSLIK_BLOCKS[DARSLIK_BLOCKS.length - 1]
-  const requestedBlock = Number(new URLSearchParams(location.search).get('block'))
+  const searchParams = new URLSearchParams(location.search)
+  const requestedBlock = Number(searchParams.get('block'))
+  const requestedSectionRaw = searchParams.get('section')
+  const requestedSection = requestedSectionRaw !== null && Number.isInteger(Number(requestedSectionRaw))
+    ? Number(requestedSectionRaw)
+    : undefined
   const mapBlock = DARSLIK_BLOCKS.find((block) => block.id === requestedBlock)
   const index = selected ?? DARSLIK_BLOCKS.findIndex((block) => block.id === current.id)
   const block = DARSLIK_BLOCKS[index]
@@ -127,7 +132,7 @@ export default function RussianCourseHome() {
   }, [themeSetting, mapBlock])
 
   return <>
-    {mapBlock ? <CourseMapPage key={mapBlock.id} initialBlockId={mapBlock.id} onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })} /> :
+    {mapBlock ? <CourseMapPage key={`${mapBlock.id}:${requestedSection ?? ''}`} initialBlockId={mapBlock.id} initialSectionIdx={requestedSection} onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })} /> :
       <main className="rus-home yhq-home" style={{ '--yhq-accent': theme.accent } as CSSProperties} data-testid="russian-course-home" onClick={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('click') }}>
         <div className="rus-home-inner">
           <header className="rus-home-header">

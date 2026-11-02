@@ -47,7 +47,15 @@ const keyOf = (blockId: number, idx: number) => `${blockId}:${idx}`
  * (`darslik_mastery` + `useLessonsStore`), shuning uchun ikkala sahifa
  * bir-biriga zid ma'lumot ko'rsatmaydi.
  */
-export default function CourseMapPage({ initialBlockId, onBackHome }: { initialBlockId?: number; onBackHome?: () => void } = {}) {
+export default function CourseMapPage({
+  initialBlockId,
+  initialSectionIdx,
+  onBackHome,
+}: {
+  initialBlockId?: number
+  initialSectionIdx?: number
+  onBackHome?: () => void
+} = {}) {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
@@ -232,15 +240,25 @@ export default function CourseMapPage({ initialBlockId, onBackHome }: { initialB
     if (mastery.loading || autoScrolled.current) return
     autoScrolled.current = true
     const blockId = initialBlockId ?? currentBlock.id
-    const firstIncomplete = getBlockOutline(blockId).findIndex((_, idx) => !passed.has(sectionKey(blockId, idx)))
-    const idx = initialBlockId ? Math.max(0, firstIncomplete) : currentIdx
-    if (initialBlockId) setPicked({ blockId, idx })
-    if (!initialBlockId && blockId === DARSLIK_BLOCKS[0].id) return
+    const blockOutline = getBlockOutline(blockId)
+    const firstIncomplete = blockOutline.findIndex((_, idx) => !passed.has(sectionKey(blockId, idx)))
+    const hasValidInitialSection =
+      initialSectionIdx !== undefined &&
+      Number.isInteger(initialSectionIdx) &&
+      initialSectionIdx >= 0 &&
+      initialSectionIdx < blockOutline.length
+    const idx = hasValidInitialSection
+      ? initialSectionIdx
+      : initialBlockId
+        ? Math.max(0, firstIncomplete)
+        : currentIdx
+    if (initialBlockId || hasValidInitialSection) setPicked({ blockId, idx })
+    if (!initialBlockId && !hasValidInitialSection && blockId === DARSLIK_BLOCKS[0].id) return
     const button = nodeRefs.current.get(keyOf(blockId, idx))
     if (button && typeof button.scrollIntoView === 'function') {
       button.scrollIntoView({ block: 'center', behavior: 'auto' })
     }
-  }, [mastery.loading, currentBlock.id, currentIdx, initialBlockId, passed])
+  }, [mastery.loading, currentBlock.id, currentIdx, initialBlockId, initialSectionIdx, passed])
 
   const pick = useCallback((blockId: number, idx: number) => {
     openBlock(blockId)

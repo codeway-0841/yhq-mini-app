@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
@@ -10,140 +10,397 @@ import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
 import { lessons as lessonsData } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
+import {
+  DARSLIK_BLOCKS,
+  DARSLIK_BLOCK_STATS,
+  getBlockOutline,
+} from '../../content/darslik-rustili'
+import {
+  RUSADABIYOT_BLOCKS,
+  RUSADABIYOT_BLOCK_STATS,
+  getRusadabiyotBlockOutline,
+} from '../../content/darslik-rusadabiyot'
+import { useDarslikMastery, sectionKey } from '../darslik-rustili'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
-import { Lock, Play, Check, ChevronDown, ChevronRight, BookOpen } from 'lucide-react'
-import { getModuleIcon } from '../lessons'
-import { sortTopicsForTickets } from '../tickets'
-import { cn } from '../../shared/lib/cn'
+import { Lock, Check, ChevronDown, ChevronRight, ChevronLeft, BookOpen, ClipboardCheck } from 'lucide-react'
+import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
+import {
+  YHQ_BRILLIANT_PATHS,
+  getBrilliantTopicImage,
+  getDarslikBlockPathMeta,
+  getRusadabiyotBlockPathMeta,
+  getSubjectChapterPathMeta,
+  getSubjectChaptersList,
+  parseOutlineTopicHeading,
+  type BrilliantPathMeta,
+} from './brilliant-courses-data'
+import './brilliant-topics.css'
 
-/** ── Dars-bobliq test (v1.1: CURATED mapping — runtime keyword emas!) ──────
- *
- *  Runtime da savollarni keyword bilan taxmin qilmaymiz — buning o'rniga
- *  `src/content/lessonMap.yhq.json` ichida manual curate qilingan DARS → questionIds
- *  jadvalini o'qiymiz. Bu:
- *   ✓ deterministik: bir xil darsda bir xil test har doim
- *   ✓ haqiqiy: har savol manual review qilingan (tramvay kabi maxsuslar manual
- *     kiritilgan)
- *   ✓ multi-fan: kelajakda `lessonMap.fizika.json` qo'shilganda hech qanday
- *     runtime o'zgarish kerak emas — faqat JSON fayl!
- *
- *  Format: { "modulID:darsIdx": [savolID, savolID, ...] }
- *
- *  HIDE qoidasi saqlanadi — manual mapping bo'lmasa (yashirin) yoki 3'tan kam
- *  boʻlsa, yashirin ("so'xta" kichik testlar ko'rsatilmaydi). */
+interface LessonMeta {
+  idx: number
+  title: string
+  ids: number[]
+}
 
-const MIN_VISIBLE = 3   // kam savol — test deb ko'rinmaslik (kam bo'lsa dars yashirin)
-
-interface LessonMeta { idx: number; title: string; ids: number[] }
-
-/** Bitta dars qatori holati (Darslik qoidasi: oldingi dars tugallanmagan — keyingisi quful) */
 type LessonState = 'done' | 'active' | 'locked'
 
-function ModuleCard({ mod, lessons, doneIdx, lang, open, onToggle, onLesson }: {
-  mod: typeof modules[number]
-  lessons: LessonMeta[]          // FAQAT visible (test bor) darslar
-  doneIdx: number[]
+interface TopicCardItem {
+  key: string | number
+  eyebrow: string
+  shortEyebrow: string
+  title: string
+  image: string
+  done: number
+  count: number
+  showFractionAlways?: boolean
+  state: LessonState
+  isNew?: boolean
+  onClick: () => void
+}
+
+interface PathSectionData {
+  meta: BrilliantPathMeta
+  headingTitle: string
+  items: TopicCardItem[]
+  doneCount: number
+  totalCount: number
+}
+
+/**
+ * Brilliant.org /courses/ 1:1 Path Section:
+ * - Mobile (< 1024px): Eyebrow + H3 + NEW badge + description + vertical connected 3D cards
+ * - Desktop (>= 1024px): 72x72 3D Path Icon + Eyebrow + H3 + Chevron + collapsible #f5f5f5 tray with horizontal 164x164 square cards
+ */
+function BrilliantPathSection({
+  section,
+  lang,
+  open,
+  onToggle,
+}: {
+  section: PathSectionData
   lang: 'uz' | 'ru'
   open: boolean
   onToggle: () => void
-  onLesson: (l: LessonMeta) => void
 }) {
-  const total = lessons.length
-  const done  = lessons.filter((l) => doneIdx.includes(l.idx)).length
-  const pct   = total > 0 ? Math.round((done / total) * 100) : 0
-  const name  = lang === 'ru' ? mod.titleRu : mod.title
-  const state = (idx: number): LessonState =>
-    doneIdx.includes(idx) ? 'done' : idx === 0 || doneIdx.includes(idx - 1) ? 'active' : 'locked'
+  const trackRef = useRef<HTMLDivElement | null>(null)
+  const [canScrollLeft, setCanScrollLeft] = useState(false)
+  const [canScrollRight, setCanScrollRight] = useState(section.items.length > 5)
+
+  const { meta, headingTitle, items, doneCount, totalCount } = section
+  const eyebrow = lang === 'ru' ? meta.eyebrowRu : meta.eyebrowUz
+  const desc = lang === 'ru' ? meta.descRu : meta.descUz
+  const newLabel = lang === 'ru' ? 'НОВОЕ' : 'YANGI'
+
+  const updateScrollState = useCallback(() => {
+    const el = trackRef.current
+    if (!el) return
+    const maxScroll = el.scrollWidth - el.clientWidth
+    setCanScrollLeft(el.scrollLeft > 12)
+    setCanScrollRight(maxScroll - el.scrollLeft > 12)
+  }, [])
+
+  useEffect(() => {
+    if (!open) return
+    updateScrollState()
+    const el = trackRef.current
+    if (!el) return
+    el.addEventListener('scroll', updateScrollState, { passive: true })
+    window.addEventListener('resize', updateScrollState)
+    return () => {
+      el.removeEventListener('scroll', updateScrollState)
+      window.removeEventListener('resize', updateScrollState)
+    }
+  }, [open, items.length, updateScrollState])
+
+  const scrollTrack = (dir: -1 | 1) => {
+    if (!trackRef.current) return
+    trackRef.current.scrollBy({ left: dir * 540, behavior: 'smooth' })
+  }
 
   return (
-    <div className="rounded-2xl bg-pcard overflow-hidden shadow-xs">
-      {/* Modul sarlavhasi — bosilganda ochiladi/yopiladi */}
-      <button onClick={onToggle} className="w-full flex items-center gap-3 p-3.5 text-left active:opacity-80">
-        <div className="size-10 rounded-xl bg-psurface flex items-center justify-center flex-shrink-0">
-          {(() => { const ModIcon = getModuleIcon(mod.id); return <ModIcon size={18} strokeWidth={1.75} className="text-pmuted" /> })()}
+    <section
+      id={`br-path-${meta.id}`}
+      data-path-id={meta.id}
+      className="scroll-mt-36 py-7 first:pt-3 border-b border-pline last:border-b-0"
+    >
+      {/* Path Header — Bosilganda ochiladi/yopiladi */}
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        className="br-path-header-btn group"
+      >
+        {/* Desktop 72x72 3D Path Icon */}
+        <div className="hidden lg:flex size-[72px] shrink-0 items-center justify-center select-none">
+          <img
+            src={meta.pathImage}
+            alt=""
+            className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-105"
+            loading="lazy"
+          />
         </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-[15px] font-semibold text-pfg truncate">{name}</p>
-          <p className="text-[11px] text-psubtle">{total} {lang === 'ru' ? 'тестов' : 'ta test'}</p>
-        </div>
-        <div className="flex items-center gap-2.5 flex-shrink-0">
-          <div className="text-right">
-            <p className="text-[11px] font-semibold text-pfg leading-none">{done}/{total}</p>
-            <div className="w-20 h-1.5 rounded-full bg-plineStrong mt-1 overflow-hidden">
-              <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
-            </div>
+
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="br-path-eyebrow">
+              {eyebrow}
+            </span>
+            {totalCount > 0 && doneCount > 0 && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-psurface px-2 py-0.5 text-[10.5px] font-bold text-pprimary tabular-nums">
+                {doneCount}/{totalCount}
+              </span>
+            )}
           </div>
-          <ChevronDown size={16} strokeWidth={1.75} className={`text-psubtle transition-transform ${open ? 'rotate-180' : ''}`} />
+
+          <div className="mt-1 flex items-center gap-2.5 flex-wrap">
+            <h3 className="text-[20px] lg:text-[20px] font-bold tracking-tight text-pfg leading-snug">
+              {headingTitle}
+            </h3>
+            {meta.isNew && <span className="br-new-badge">{newLabel}</span>}
+            <ChevronDown
+              size={17}
+              strokeWidth={2.25}
+              className={`text-psubtle transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+            />
+          </div>
+
+          <p className="mt-1 br-path-desc max-w-3xl">
+            {desc}
+          </p>
         </div>
       </button>
 
-      {/* Modul ichidagi FAQAT ko'rinadigan darslar (real test bor) */}
+      {/* Mavzular / Darslar zanjiri */}
       {open && (
-        <div className="border-t border-pline">
-          {total === 0 && (
-            <p className="text-center text-pmuted text-xs py-4">{lang === 'ru' ? 'Уроки скоро' : 'Darslar tez kunda'}</p>
-          )}
-          {lessons.map((l) => {
-            const st = state(l.idx)
-            return (
-              <button key={l.idx} onClick={() => st !== 'locked' && onLesson(l)} disabled={st === 'locked'}
-                className={`w-full flex items-center gap-3 px-3.5 py-3 text-left transition-colors ${
-                  st === 'locked' ? 'opacity-45 cursor-not-allowed' : 'hover:bg-psurface active:opacity-80'}`}>
-                {/* Chap icon — holat bo'yicha (borderlarsiz, toza fonda) */}
-                <div className={cn(
-                  "w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0",
-                  st === 'done'
-                    ? "bg-[color-mix(in_srgb,var(--p-primary)_15%,transparent)] text-pprimary"
-                    : st === 'active'
-                      ? "bg-[color-mix(in_srgb,var(--p-blue)_15%,transparent)] text-pblue"
-                      : "bg-psurface text-pmuted"
-                )}>
-                  {st === 'done'
-                    ? <Check size={16} strokeWidth={2} />
-                    : st === 'active'
-                      ? <Play size={14} strokeWidth={2} />
-                      : <Lock size={13} strokeWidth={1.75} />}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-[13px] font-semibold text-pfg truncate">
-                    {lang === 'ru' ? `Урок ${l.idx + 1}. ${l.title}` : `${l.idx + 1}-dars. ${l.title}`}
-                  </p>
-                  <p className="text-[10px] text-psubtle">{l.ids.length} {lang === 'ru' ? 'вопросов' : 'savol'}</p>
-                </div>
-                <div className="flex-shrink-0">
-                  {st === 'done'
-                    ? <Check size={17} strokeWidth={1.75} className="text-pprimary" />
-                    : st === 'locked'
-                      ? <Lock size={14} strokeWidth={1.75} className="text-pmuted" />
-                      : null}
-                </div>
+        <div className="br-topics-tray">
+          {canScrollLeft && items.length > 5 && (
+            <>
+              <div className="hidden lg:block br-tray-fade-left" aria-hidden="true" />
+              <button
+                type="button"
+                onClick={() => scrollTrack(-1)}
+                aria-label={lang === 'ru' ? 'Прокрутить влево' : 'Chapga surish'}
+                className="hidden lg:grid br-tray-nav-btn left-3"
+              >
+                <ChevronLeft size={18} strokeWidth={2.25} />
               </button>
-            )
-          })}
+            </>
+          )}
+
+          <div ref={trackRef} className="br-topics-track">
+            {items.map((item, idx) => {
+              const isLocked = item.state === 'locked'
+              const isDone = item.state === 'done'
+              const pct = item.count > 0 ? Math.round((Math.min(item.done, item.count) / item.count) * 100) : 0
+
+              return (
+                <div key={item.key} className="br-topic-node">
+                  <button
+                    type="button"
+                    disabled={isLocked}
+                    onClick={() => !isLocked && item.onClick()}
+                    className="br-topic-card"
+                  >
+                    {/* Mobile top-right corner badge (NEW or Lock) matching Brilliant 1:1 */}
+                    {item.isNew && !isDone && !isLocked && (
+                      <span className="br-new-badge lg:hidden absolute top-3 right-3.5">
+                        {newLabel}
+                      </span>
+                    )}
+                    {isLocked && (
+                      <Lock
+                        size={14}
+                        strokeWidth={2}
+                        className="text-pmuted lg:hidden absolute top-3.5 right-3.5"
+                      />
+                    )}
+
+                    {/* Visual Square (Desktop 164x164 box / Mobile 72x72 left icon container) */}
+                    <div className="br-topic-square shrink-0">
+                      {/* Desktop Top Meta Row inside Square */}
+                      <div className="hidden lg:flex w-full items-center justify-between gap-1">
+                        <span className="text-[10.5px] font-bold tracking-wider text-psubtle uppercase truncate">
+                          {item.shortEyebrow}
+                        </span>
+                        {isDone ? (
+                          <span
+                            className="grid size-5 place-items-center rounded-full text-white shrink-0"
+                            style={{ background: 'var(--br-green)' }}
+                          >
+                            <Check size={12} strokeWidth={2.75} />
+                          </span>
+                        ) : isLocked ? (
+                          <Lock size={13} strokeWidth={2} className="text-pmuted shrink-0" />
+                        ) : item.isNew ? (
+                          <span className="br-new-badge">{newLabel}</span>
+                        ) : null}
+                      </div>
+
+                      {/* 3D Brilliant Topic Illustration */}
+                      <div className="relative size-[72px] lg:size-[86px] flex items-center justify-center my-auto select-none">
+                        <img
+                          src={item.image}
+                          alt=""
+                          className="max-w-full max-h-full object-contain pointer-events-none select-none"
+                          loading="lazy"
+                        />
+                        {isDone && (
+                          <span
+                            className="lg:hidden absolute -bottom-1 -right-1 grid size-5 place-items-center rounded-full text-white shadow-xs"
+                            style={{ background: 'var(--br-green)' }}
+                          >
+                            <Check size={12} strokeWidth={2.75} />
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Desktop Bottom Mini Progress Bar inside Square (only when progress started) */}
+                      {pct > 0 ? (
+                        <div className="hidden lg:flex w-full items-center gap-1.5 pt-1">
+                          <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
+                            <div
+                              className="h-full rounded-full transition-all"
+                              style={{ width: `${pct}%`, background: 'var(--br-green)' }}
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="hidden lg:block h-1.5 w-full" aria-hidden="true" />
+                      )}
+                    </div>
+
+                    {/* Text & Progress Block */}
+                    <div className="min-w-0 flex-1 lg:w-full pr-10 lg:pr-0">
+                      {/* Mobile Top Eyebrow */}
+                      <div className="flex items-center gap-2 lg:hidden mb-1">
+                        <span className="text-[11.5px] font-bold tracking-wider text-psubtle uppercase">
+                          {item.eyebrow}
+                        </span>
+                      </div>
+
+                      {/* Topic / Lesson Title */}
+                      <p className="text-[16px] lg:text-[13.5px] font-semibold lg:font-medium text-pfg leading-snug line-clamp-2">
+                        {item.title}
+                      </p>
+
+                      {/* Progress Bar & Fraction (shown for practice test topics or when started) */}
+                      {(item.showFractionAlways || item.done > 0) && item.count > 1 && (
+                        <div className="mt-2 lg:mt-1 flex items-center lg:justify-center gap-2">
+                          <div className="h-1.5 flex-1 lg:hidden rounded-full bg-plineStrong overflow-hidden">
+                            <div
+                              className="h-full rounded-full transition-all"
+                              style={{ width: `${pct}%`, background: 'var(--br-blue)' }}
+                            />
+                          </div>
+                          <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
+                            {Math.min(item.done, item.count)}/{item.count}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  </button>
+
+                  {/* Connector Line (Vertical on Mobile, Horizontal on Desktop) */}
+                  {idx < items.length - 1 && (
+                    <div className="br-connector" aria-hidden="true" />
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {/* Desktop Right Horizontal Scroll Arrow + Gradient Fade */}
+          {canScrollRight && items.length >= 5 && (
+            <>
+              <div className="hidden lg:block br-tray-fade-right" aria-hidden="true" />
+              <button
+                type="button"
+                onClick={() => scrollTrack(1)}
+                aria-label={lang === 'ru' ? 'Прокрутить вправо' : "O'ngga surish"}
+                className="hidden lg:grid br-tray-nav-btn right-3"
+              >
+                <ChevronRight size={18} strokeWidth={2.25} />
+              </button>
+            </>
+          )}
         </div>
       )}
-    </div>
+    </section>
   )
 }
 
-/** YHQ — curated dars/modul ko'rinishi (lessonMap.yhq.json, progress bilan). */
+/**
+ * Tepa gorizontal Learning Path Icon Strip (Mobil < 1024px uchun, Brilliant 1:1).
+ */
+function MobilePathStrip({
+  sections,
+  activeId,
+  lang,
+  onSelect,
+}: {
+  sections: PathSectionData[]
+  activeId: string
+  lang: 'uz' | 'ru'
+  onSelect: (id: string) => void
+}) {
+  const stripRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (!stripRef.current || !activeId) return
+    const btn = stripRef.current.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
+    if (btn && typeof btn.scrollIntoView === 'function') {
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+    }
+  }, [activeId])
+
+  if (sections.length <= 1) return null
+  return (
+    <nav className="br-path-strip lg:hidden" aria-label={lang === 'ru' ? 'Разделы курса' : "O'quv bo'limlari"}>
+      <div ref={stripRef} className="br-path-strip-scroll">
+        {sections.map(({ meta }) => {
+          const isActive = meta.id === activeId
+          const label = lang === 'ru' ? meta.shortTabRu : meta.shortTabUz
+          return (
+            <button
+              key={meta.id}
+              type="button"
+              data-tab-id={meta.id}
+              data-active={isActive ? 'true' : undefined}
+              onClick={() => onSelect(meta.id)}
+              className="br-path-tab"
+            >
+              <div className="br-path-tab-box">
+                <img
+                  src={meta.pathImage}
+                  alt=""
+                  className="size-10 object-contain select-none pointer-events-none"
+                />
+              </div>
+              <span className="br-path-tab-label">{label}</span>
+              <span className="br-path-tab-indicator" aria-hidden="true" />
+            </button>
+          )
+        })}
+      </div>
+    </nav>
+  )
+}
+
+/** YHQ — barcha 8 modul va ularning barcha darslari (Brilliant /courses/ 1:1 formatida). */
 function YhqTopics() {
   const navigate = useNavigate()
-  // Selector'li obuna — whole-store EMAS
-  const settings    = useAppStore((s) => s.settings)
-  const user        = useAppStore((s) => s.user)
+  const settings = useAppStore((s) => s.settings)
+  const user = useAppStore((s) => s.user)
   const tt = useT(settings.language)
   const lang = settings.language
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
 
-  const [openId, setOpenId] = useState<number>(1)   // birinchi modul default ochiq
-
-  /** Har modul uchun VISIBLE darslar: FAQAT curated mapping'da borlar (3+ savol) */
+  /** Har modul uchun barcha darslar */
   const visibleByMod = useMemo(() => {
     const perMod: Record<number, LessonMeta[]> = {}
-    const map = (lessonMap as Record<string, number[]>)
+    const map = lessonMap as Record<string, number[]>
     for (const mod of modules) {
       const list = lessonsData[mod.id] ?? []
       const rows = list.map((lesson, idx) => ({
@@ -151,53 +408,153 @@ function YhqTopics() {
         title: lang === 'ru' ? lesson.titleRu : lesson.titleUz,
         ids: map[`${mod.id}:${idx}`] ?? [],
       }))
-      perMod[mod.id] = rows.filter((r) => r.ids.length >= MIN_VISIBLE)
+      const withQuestions = rows.filter((r) => r.ids.length > 0)
+      perMod[mod.id] = withQuestions.length > 0 ? withQuestions : rows
     }
     return perMod
   }, [lang])
 
-  const startLesson = (modId: number, l: LessonMeta) => {
-    const lessonTitle = lang === 'ru' ? `Урок ${l.idx + 1}: ${l.title}` : `${l.idx + 1}-dars: ${l.title}`
-    // v2: curated lesson server session orqali (master ID'siz)
-    navigate('/test/1', config.testSessionsV2Enabled
-      ? {
-          state: {
-            mode: 'lesson',
-            serverSelector: { type: 'lesson', moduleId: modId, lessonIndex: l.idx },
-            title: lessonTitle,
-          },
+  const startLesson = useCallback(
+    (modId: number, l: LessonMeta) => {
+      const lessonTitle = lang === 'ru' ? `Урок ${l.idx + 1}: ${l.title}` : `${l.idx + 1}-dars: ${l.title}`
+      navigate(
+        '/test/1',
+        config.testSessionsV2Enabled
+          ? {
+              state: {
+                mode: 'lesson',
+                serverSelector: { type: 'lesson', moduleId: modId, lessonIndex: l.idx },
+                title: lessonTitle,
+              },
+            }
+          : {
+              state: { questionIds: l.ids, title: lessonTitle },
+            },
+      )
+    },
+    [lang, navigate],
+  )
+
+  const sections = useMemo<PathSectionData[]>(() => {
+    const result: PathSectionData[] = []
+    let globalLessonIdx = 0
+
+    for (const mod of modules) {
+      const lessons = visibleByMod[mod.id] ?? []
+      if (lessons.length === 0) continue
+      const doneIdx = lessonsProg?.[mod.id] ?? []
+      const doneCount = lessons.filter((l) => doneIdx.includes(l.idx)).length
+      const pMeta = YHQ_BRILLIANT_PATHS[mod.id] ?? YHQ_BRILLIANT_PATHS[1]
+      const modTitle = lang === 'ru' ? mod.titleRu : mod.title
+
+      const items: TopicCardItem[] = lessons.map((l, i) => {
+        const st: LessonState = doneIdx.includes(l.idx)
+          ? 'done'
+          : l.idx === 0 || doneIdx.includes(l.idx - 1)
+            ? 'active'
+            : 'locked'
+        const img = getBrilliantTopicImage(l.title, globalLessonIdx++, '')
+        return {
+          key: `${mod.id}:${l.idx}`,
+          eyebrow:
+            lang === 'ru'
+              ? `УРОК ${l.idx + 1} · ${l.ids.length} ВОПР.`
+              : `${l.idx + 1}-DARS · ${l.ids.length} SAVOL`,
+          shortEyebrow: lang === 'ru' ? `УРОК ${l.idx + 1}` : `${l.idx + 1}-DARS`,
+          title: lang === 'ru' ? `Урок ${l.idx + 1}. ${l.title}` : `${l.idx + 1}-dars. ${l.title}`,
+          image: img,
+          done: st === 'done' ? l.ids.length : 0,
+          count: l.ids.length,
+          showFractionAlways: false,
+          state: st,
+          isNew: i === 0 && pMeta.isNew,
+          onClick: () => startLesson(mod.id, l),
         }
-      : {
-          state: { questionIds: l.ids, title: lessonTitle },
-        })
+      })
+
+      result.push({
+        meta: {
+          id: String(mod.id),
+          shortTabUz: pMeta.shortTabUz,
+          shortTabRu: pMeta.shortTabRu,
+          eyebrowUz: pMeta.eyebrowUz,
+          eyebrowRu: pMeta.eyebrowRu,
+          titleUz: mod.title,
+          titleRu: mod.titleRu,
+          descUz: pMeta.descUz,
+          descRu: pMeta.descRu,
+          pathImage: pMeta.pathImage,
+          isNew: pMeta.isNew,
+          categoryGroupUz: pMeta.categoryGroupUz,
+          categoryGroupRu: pMeta.categoryGroupRu,
+          kind: 'curriculum',
+        },
+        headingTitle: modTitle,
+        items,
+        doneCount,
+        totalCount: lessons.length,
+      })
+    }
+    return result
+  }, [visibleByMod, lessonsProg, lang, startLesson])
+
+  const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '1')
+  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
+
+  const toggleSection = (id: string) => {
+    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
+    setActivePathId(id)
+  }
+
+  const handleSelectTab = (id: string) => {
+    setActivePathId(id)
+    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
+    const el = document.getElementById(`br-path-${id}`)
+    el?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
   }
 
   return (
-    <div className="px-4 pb-8">
+    <div className="br-courses-page px-4 pb-12 max-w-6xl mx-auto">
       <PageHeader
         title={tt('topics')}
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-4"
-      />
+        className="-mx-4 mb-2"
+      >
+        <MobilePathStrip
+          sections={sections}
+          activeId={activePathId}
+          lang={lang}
+          onSelect={handleSelectTab}
+        />
+      </PageHeader>
 
-      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:gap-3 lg:items-start">
-        {modules.map((mod) => {
-          const lessons = visibleByMod[mod.id] ?? []
-          if (lessons.length === 0) return null   // testli darsi yo'q modul — ko'rsatilmaydi
-          const doneLessonsIdx = lessonsProg?.[mod.id] ?? []
+      <div className="flex flex-col">
+        {sections.map((sec, idx) => {
+          const prevGroup =
+            idx > 0
+              ? lang === 'ru'
+                ? sections[idx - 1].meta.categoryGroupRu
+                : sections[idx - 1].meta.categoryGroupUz
+              : null
+          const curGroup = lang === 'ru' ? sec.meta.categoryGroupRu : sec.meta.categoryGroupUz
+          const showGroupHeading = curGroup && curGroup !== prevGroup
+
           return (
-            <ModuleCard
-              key={mod.id}
-              mod={mod}
-              lessons={lessons}
-              doneIdx={doneLessonsIdx}
-              lang={lang}
-              open={openId === mod.id}
-              onToggle={() => setOpenId((o) => o === mod.id ? 0 : mod.id)}
-              onLesson={(l) => startLesson(mod.id, l)}
-            />
+            <div key={sec.meta.id}>
+              {showGroupHeading && (
+                <h2 className="text-[22px] lg:text-[24px] font-bold tracking-tight text-pfg mt-8 mb-1 first:mt-4">
+                  {curGroup}
+                </h2>
+              )}
+              <BrilliantPathSection
+                section={sec}
+                lang={lang}
+                open={!collapsedMap[sec.meta.id]}
+                onToggle={() => toggleSection(sec.meta.id)}
+              />
+            </div>
           )
         })}
       </div>
@@ -205,7 +562,11 @@ function YhqTopics() {
   )
 }
 
-/** Boshqa fanlar — server'dagi REAL mavzular (har fanda o'z mavzulari). */
+/**
+ * Rus tili, Rus adabiyoti va boshqa fanlar:
+ * 1) O'quv kurslari / Darslik bloklari (Rus tilida barcha 24 blok va 537 mavzu; Rus adabiyotida barcha 9 davr va 79 mavzu)
+ * 2) Alohida ajratilgan "Mavzulashtirilgan amaliy testlar" bo'limi (useQuestionsStore.topics -> /test/1)
+ */
 function SubjectTopics({ subjectId }: { subjectId: string }) {
   const navigate = useNavigate()
   const settings = useAppStore((s) => s.settings)
@@ -222,13 +583,16 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const tt = useT(settings.language)
   const lang = settings.language
   const userId = useAppStore((s) => s.user?.id)
+  const darslikMastery = useDarslikMastery()
 
-  // v2: mavzular metadata'dan, ochilish server topic session orqali.
-  // Progress chiziqlari uchun savol-darajali mapping kerak — metadata'da yo'q,
-  // shuning uchun v2'da faqat sonlar (keyingi bosqichda server agregati).
   const isV2 = config.testSessionsV2Enabled
   const [topicsFailed, setTopicsFailed] = useState(false)
   const [topicsRetry, setTopicsRetry] = useState(0)
+  const [filterMode, setFilterMode] = useState<'all' | 'curriculum' | 'practice'>('all')
+
+  useEffect(() => {
+    setFilterMode('all')
+  }, [subjectId])
 
   useEffect(() => {
     if (!isV2) {
@@ -248,14 +612,109 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   useEffect(() => {
     if (!isV2 || !userId || userId === '0') return
     let cancelled = false
-    api.getTopicProgress(userId, subjectId)
+    api
+      .getTopicProgress(userId, subjectId)
       .then((r) => {
         if (!cancelled) setSolvedByTopic(Object.fromEntries(r.topics.map((t) => [t.topicId, t.solved])))
       })
       .catch(() => {})
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+    }
   }, [isV2, userId, subjectId])
 
+  // ── 1-BO'LIM: DARSLIK BLOKLARI VA BARCHA MAVZULARI (Rus tili: 24 blok, Rus adabiyoti: 9 blok) ──
+  const curriculumSections = useMemo<PathSectionData[]>(() => {
+    if (subjectId === 'rustili') {
+      let globalImgIdx = 0
+      return DARSLIK_BLOCKS.map((block, bIdx) => {
+        const outline = getBlockOutline(block.id)
+        const stats = DARSLIK_BLOCK_STATS[block.id]
+        const meta = getDarslikBlockPathMeta(block, bIdx, outline.length, stats?.minutes ?? 15)
+        const headingTitle =
+          lang === 'ru'
+            ? `Блок ${block.id}. ${block.titleRu}`
+            : `${block.id}-blok. ${block.titleUz}`
+
+        let doneTopics = 0
+        const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {
+          const isPassed = darslikMastery.passed.has(sectionKey(block.id, itemIdx))
+          if (isPassed) doneTopics++
+          const parsed = parseOutlineTopicHeading(rawTopicTitle, block.id, itemIdx, lang)
+          const img = getBrilliantTopicImage(parsed.cleanTitle, globalImgIdx++)
+
+          return {
+            key: `rustili-${block.id}-${itemIdx}`,
+            eyebrow: parsed.fullEyebrow,
+            shortEyebrow: parsed.shortCode,
+            title: parsed.cleanTitle,
+            image: img,
+            done: isPassed ? 1 : 0,
+            count: 1,
+            showFractionAlways: false,
+            state: isPassed ? 'done' : 'active',
+            isNew: itemIdx === 0 && meta.isNew,
+            onClick: () => navigate(`/darslik/rus-tili?block=${block.id}&section=${itemIdx}`),
+          }
+        })
+
+        return {
+          meta,
+          headingTitle,
+          items,
+          doneCount: doneTopics,
+          totalCount: outline.length,
+        }
+      })
+    }
+
+    if (subjectId === 'rusadabiyot') {
+      let globalImgIdx = 12
+      return RUSADABIYOT_BLOCKS.map((block, bIdx) => {
+        const outline = getRusadabiyotBlockOutline(block.id)
+        const stats = RUSADABIYOT_BLOCK_STATS[block.id]
+        const meta = getRusadabiyotBlockPathMeta(block, bIdx, outline.length, stats?.minutes ?? 45)
+        const headingTitle =
+          lang === 'ru'
+            ? `Эпоха ${block.id}. ${block.titleRu}`
+            : `${block.id}-davr. ${block.titleUz}`
+
+        const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {
+          const parsed = parseOutlineTopicHeading(rawTopicTitle, block.id, itemIdx, lang)
+          const img = getBrilliantTopicImage(parsed.cleanTitle, globalImgIdx++)
+
+          return {
+            key: `rusadabiyot-${block.id}-${itemIdx}`,
+            eyebrow:
+              lang === 'ru'
+                ? `ЭПОХА ${block.id} · ТЕМА ${itemIdx + 1}`
+                : `${block.id}-DAVR · ${itemIdx + 1}-MAVZU`,
+            shortEyebrow: parsed.shortCode,
+            title: parsed.cleanTitle,
+            image: img,
+            done: 0,
+            count: 1,
+            showFractionAlways: false,
+            state: 'active',
+            isNew: itemIdx === 0 && meta.isNew,
+            onClick: () => navigate(`/darslik/rus-adabiyot?block=${block.id}`),
+          }
+        })
+
+        return {
+          meta,
+          headingTitle,
+          items,
+          doneCount: 0,
+          totalCount: outline.length,
+        }
+      })
+    }
+
+    return []
+  }, [subjectId, lang, darslikMastery.passed, navigate])
+
+  // ── 2-BO'LIM: MAVZULASHTIRILGAN AMALIY TESTLAR (useQuestionsStore.topics) ──
   const rows = useMemo(() => {
     if (isV2) {
       return sortTopicsForTickets(subjectId, topics)
@@ -297,47 +756,299 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       .filter((r) => r.ids.length > 0)
   }, [isV2, solvedByTopic, questions, topics, solvedQuestions, subjectId])
 
-  const startTopic = (topicId: number, title: string, ids: number[]) => {
-    navigate('/test/1', isV2
-      ? { state: { mode: 'topic', serverSelector: { type: 'topic', topicId }, title } }
-      : { state: { questionIds: ids, title } })
+  const startTopic = useCallback(
+    (topicId: number, title: string, ids: number[]) => {
+      navigate(
+        '/test/1',
+        isV2
+          ? { state: { mode: 'topic', serverSelector: { type: 'topic', topicId }, title } }
+          : { state: { questionIds: ids, title } },
+      )
+    },
+    [isV2, navigate],
+  )
+
+  const practiceSections = useMemo<PathSectionData[]>(() => {
+    if (rows.length === 0) return []
+    const chapters = getSubjectChaptersList(subjectId)
+    const grouped = new Map<string, typeof rows>()
+
+    for (const r of rows) {
+      const chId = chapters.length > 0 ? getTopicChapterId(subjectId, r.topic.slug, r.topic.nameUz) : 'main'
+      const list = grouped.get(chId)
+      if (list) list.push(r)
+      else grouped.set(chId, [r])
+    }
+
+    const orderedChapterDefs =
+      chapters.length > 0
+        ? [
+            ...chapters.filter((c) => grouped.has(c.id)),
+            ...(grouped.has('other')
+              ? [{ id: 'other', labelUz: "Qo'shimcha test mavzulari", labelRu: 'Дополнительные темы тестов' }]
+              : []),
+          ]
+        : [{ id: 'main', labelUz: 'Asosiy testlar', labelRu: 'Основные тесты' }]
+
+    const finalDefs =
+      orderedChapterDefs.length > 0
+        ? orderedChapterDefs
+        : [{ id: 'other', labelUz: 'Asosiy testlar', labelRu: 'Основные тесты' }]
+
+    let globalIdx = curriculumSections.length > 0 ? 35 : 0
+    return finalDefs
+      .map((ch, chIdx) => {
+        const chRows = grouped.get(ch.id) ?? rows
+        if (chRows.length === 0) return null
+        const meta = getSubjectChapterPathMeta(subjectId, ch.id, chIdx, ch.labelUz, ch.labelRu, chRows.length)
+        const headingTitle = lang === 'ru' ? meta.titleRu : meta.titleUz
+
+        let doneTopics = 0
+        const items: TopicCardItem[] = chRows.map(({ topic, ids, done, count }, itemIdx) => {
+          const name = lang === 'ru' ? topic.nameRu || topic.nameUz : topic.nameUz || topic.nameRu
+          const shownDone = Math.min(done, count)
+          if (shownDone >= count && count > 0) doneTopics++
+          const st: LessonState = shownDone >= count && count > 0 ? 'done' : 'active'
+          const img = getBrilliantTopicImage(name, globalIdx++, topic.slug)
+
+          return {
+            key: `test-topic-${topic.id}`,
+            eyebrow:
+              lang === 'ru'
+                ? `ТЕСТ ${itemIdx + 1} · ${count} ВОПР.`
+                : `${itemIdx + 1}-TEST · ${count} SAVOL`,
+            shortEyebrow: lang === 'ru' ? `ТЕСТ ${itemIdx + 1}` : `${itemIdx + 1}-TEST`,
+            title: name,
+            image: img,
+            done: shownDone,
+            count,
+            showFractionAlways: true,
+            state: st,
+            isNew: itemIdx === 0 && meta.isNew,
+            onClick: () => startTopic(topic.id, name, ids),
+          }
+        })
+
+        return {
+          meta,
+          headingTitle,
+          items,
+          doneCount: doneTopics,
+          totalCount: chRows.length,
+        }
+      })
+      .filter((s): s is PathSectionData => s !== null)
+  }, [rows, subjectId, lang, startTopic, curriculumSections.length])
+
+  const hasCurriculum = curriculumSections.length > 0
+  const hasPractice = practiceSections.length > 0
+
+  const displayedCurriculumSections = useMemo(
+    () => (filterMode === 'practice' ? [] : curriculumSections),
+    [filterMode, curriculumSections],
+  )
+  const displayedPracticeSections = useMemo(
+    () => (filterMode === 'curriculum' ? [] : practiceSections),
+    [filterMode, practiceSections],
+  )
+  const allDisplayedSections = useMemo(
+    () => [...displayedCurriculumSections, ...displayedPracticeSections],
+    [displayedCurriculumSections, displayedPracticeSections],
+  )
+
+  const [activePathId, setActivePathId] = useState<string>('')
+  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
+
+  useEffect(() => {
+    if (allDisplayedSections.length > 0 && !allDisplayedSections.some((s) => s.meta.id === activePathId)) {
+      setActivePathId(allDisplayedSections[0].meta.id)
+    }
+  }, [allDisplayedSections, activePathId])
+
+  const toggleSection = (id: string) => {
+    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
+    setActivePathId(id)
   }
 
+  const handleSelectTab = (id: string) => {
+    setActivePathId(id)
+    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
+    const el = document.getElementById(`br-path-${id}`)
+    el?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
+  }
+
+  const totalCurriculumTopics = useMemo(
+    () => curriculumSections.reduce((sum, s) => sum + s.totalCount, 0),
+    [curriculumSections],
+  )
+
   return (
-    <div className="px-4 pb-8">
+    <div className="br-courses-page px-4 pb-12 max-w-6xl mx-auto">
       <PageHeader
         title={tt('topics')}
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-4"
-      />
+        className="-mx-4 mb-2"
+      >
+        <MobilePathStrip
+          sections={allDisplayedSections}
+          activeId={activePathId}
+          lang={lang}
+          onSelect={handleSelectTab}
+        />
+      </PageHeader>
 
-      {(subjectId === 'rustili' || subjectId === 'rusadabiyot') && (
-        <button
-          type="button"
-          onClick={() => navigate(subjectId === 'rustili' ? '/darslik/rus-tili' : '/darslik/rus-adabiyot')}
-          className="mb-3 flex w-full items-center gap-3 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.08)] p-3.5 text-left shadow-xs transition-transform active:scale-[0.99]"
-        >
-          <span aria-hidden="true" className="grid size-10 flex-none place-items-center rounded-xl bg-pprimary text-ponprimary">
-            <BookOpen size={18} strokeWidth={2} />
-          </span>
-          <span className="min-w-0 flex-1">
-            <span className="block truncate text-[14.5px] font-semibold text-pfg">{subjectId === 'rustili' ? tt('rusDarslikTitle') : (settings.language === 'ru' ? 'Учебник русской литературы' : 'Rus adabiyoti darsligi')}</span>
-            <span className="mt-0.5 block truncate text-[11.5px] text-pmuted">{tt('rusDarslikSubtitle')}</span>
-          </span>
-          <ChevronRight size={16} strokeWidth={1.75} className="flex-none text-psubtle" aria-hidden="true" />
-        </button>
+      {/* Darslik va Amaliy Testlarni ajratib ko'rsatuvchi filtr + tezkor o'tish paneli */}
+      {hasCurriculum && (
+        <div className="mt-2 mb-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-pcard p-3 shadow-xs">
+          <div className="flex flex-wrap items-center gap-1.5" role="tablist" aria-label={lang === 'ru' ? 'Фильтр разделов' : "Bo'limlar filtri"}>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={filterMode === 'all'}
+              onClick={() => setFilterMode('all')}
+              className={`px-3.5 py-2 rounded-xl text-[13px] font-bold transition-colors ${
+                filterMode === 'all'
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'bg-psurface text-pmuted hover:text-pfg'
+              }`}
+            >
+              {lang === 'ru' ? 'Все разделы' : "Barcha bo'limlar"}
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={filterMode === 'curriculum'}
+              onClick={() => setFilterMode('curriculum')}
+              className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-[13px] font-bold transition-colors ${
+                filterMode === 'curriculum'
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'bg-psurface text-pmuted hover:text-pfg'
+              }`}
+            >
+              <BookOpen size={15} strokeWidth={2.2} />
+              <span>
+                {lang === 'ru'
+                  ? `Учебные блоки (${curriculumSections.length} блоков · ${totalCurriculumTopics} тем)`
+                  : `O'quv bloklari (${curriculumSections.length} ta blok · ${totalCurriculumTopics} ta mavzu)`}
+              </span>
+            </button>
+            {hasPractice && (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={filterMode === 'practice'}
+                onClick={() => setFilterMode('practice')}
+                className={`inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-[13px] font-bold transition-colors ${
+                  filterMode === 'practice'
+                    ? 'bg-pprimary text-ponprimary shadow-xs'
+                    : 'bg-psurface text-pmuted hover:text-pfg'
+                }`}
+              >
+                <ClipboardCheck size={15} strokeWidth={2.2} />
+                <span>
+                  {lang === 'ru'
+                    ? `Практические тесты (${rows.length})`
+                    : `Amaliy testlar (${rows.length} ta)`}
+                </span>
+              </button>
+            )}
+          </div>
+
+          <button
+            type="button"
+            onClick={() => navigate(subjectId === 'rustili' ? '/darslik/rus-tili' : '/darslik/rus-adabiyot')}
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary text-[13px] font-bold hover:opacity-90 active:scale-[0.99] transition-all"
+          >
+            <span>
+              {subjectId === 'rustili'
+                ? tt('rusDarslikTitle')
+                : lang === 'ru'
+                  ? 'Открыть учебник литературы'
+                  : 'Adabiyot darsligini ochish'}
+            </span>
+            <ChevronRight size={16} strokeWidth={2.25} />
+          </button>
+        </div>
       )}
 
-      {loading && rows.length === 0 && (
+      {/* 1-BO'LIM: DARSLIK O'QUV BLOKLARI VA BARCHA MAVZULARI */}
+      {displayedCurriculumSections.length > 0 && (
+        <div className="flex flex-col">
+          {displayedCurriculumSections.map((sec, idx) => {
+            const prevGroup =
+              idx > 0
+                ? lang === 'ru'
+                  ? displayedCurriculumSections[idx - 1].meta.categoryGroupRu
+                  : displayedCurriculumSections[idx - 1].meta.categoryGroupUz
+                : null
+            const curGroup = lang === 'ru' ? sec.meta.categoryGroupRu : sec.meta.categoryGroupUz
+            const showGroupHeading = curGroup && curGroup !== prevGroup
+
+            return (
+              <div key={sec.meta.id}>
+                {showGroupHeading && (
+                  <h2 className="text-[22px] lg:text-[24px] font-bold tracking-tight text-pfg mt-8 mb-1 first:mt-2">
+                    {curGroup}
+                  </h2>
+                )}
+                <BrilliantPathSection
+                  section={sec}
+                  lang={lang}
+                  open={!collapsedMap[sec.meta.id]}
+                  onToggle={() => toggleSection(sec.meta.id)}
+                />
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {/* 2-BO'LIM: ALOHIDA AJRATILGAN MAVZULASHTIRILGAN AMALIY TESTLAR */}
+      {displayedPracticeSections.length > 0 && (
+        <div className={displayedCurriculumSections.length > 0 ? 'mt-12 pt-8 border-t-2 border-pline' : 'flex flex-col'}>
+          {hasCurriculum && (
+            <div className="mb-4 flex items-center gap-3">
+              <span className="grid size-10 place-items-center rounded-xl bg-pprimary text-ponprimary shrink-0">
+                <ClipboardCheck size={20} strokeWidth={2.2} />
+              </span>
+              <div>
+                <h2 className="text-[22px] lg:text-[24px] font-bold tracking-tight text-pfg leading-snug">
+                  {lang === 'ru' ? 'Практические тесты по темам' : 'Mavzulashtirilgan amaliy testlar'}
+                </h2>
+                <p className="text-[13.5px] text-pmuted">
+                  {lang === 'ru'
+                    ? 'Выберите тему, чтобы сразу начать решение проверочных тестовых вопросов'
+                    : "Savollar bazasidan mavzu bo'yicha bilimingizni sinash uchun testni tanlang"}
+                </p>
+              </div>
+            </div>
+          )}
+
+          <div className="flex flex-col">
+            {displayedPracticeSections.map((sec) => (
+              <BrilliantPathSection
+                key={sec.meta.id}
+                section={sec}
+                lang={lang}
+                open={!collapsedMap[sec.meta.id]}
+                onToggle={() => toggleSection(sec.meta.id)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Loading & Error holatlari */}
+      {!hasCurriculum && loading && rows.length === 0 && (
         <div className="grid place-items-center py-16">
           <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
         </div>
       )}
 
-      {error && rows.length === 0 && !loading && (
-        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs">
+      {!hasCurriculum && error && rows.length === 0 && !loading && (
+        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs mt-4">
           <p className="text-sm text-pmuted mb-3">{tt('qLoadFailed')}</p>
           <button
             type="button"
@@ -349,18 +1060,18 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         </div>
       )}
 
-      {loaded && !loading && rows.length === 0 && !error && (
+      {!hasCurriculum && loaded && !loading && rows.length === 0 && !error && (
         <p className="text-center text-sm text-pmuted py-16">{tt('topicsEmpty')}</p>
       )}
 
-      {isV2 && rows.length === 0 && !topicsFailed && (
+      {!hasCurriculum && isV2 && rows.length === 0 && !topicsFailed && (
         <div className="grid place-items-center py-16">
           <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
         </div>
       )}
 
-      {isV2 && topicsFailed && rows.length === 0 && (
-        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs">
+      {!hasCurriculum && isV2 && topicsFailed && rows.length === 0 && (
+        <div className="rounded-2xl bg-pcard p-6 text-center shadow-xs mt-4">
           <p className="text-sm text-pmuted mb-3">{tt('qLoadFailed')}</p>
           <button
             type="button"
@@ -371,38 +1082,6 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           </button>
         </div>
       )}
-
-      <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:gap-3 lg:items-start">
-        {rows.map(({ topic, ids, done, count }) => {
-          const name = lang === 'ru' ? (topic.nameRu || topic.nameUz) : (topic.nameUz || topic.nameRu)
-          const shownDone = Math.min(done, count)
-          const pct = count > 0 ? Math.round((shownDone / count) * 100) : 0
-          return (
-            <button
-              key={topic.id}
-              type="button"
-              onClick={() => startTopic(topic.id, name, ids)}
-              className="w-full flex items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left shadow-xs active:scale-[0.99] transition-all"
-            >
-              <div className="size-10 rounded-xl bg-psurface flex items-center justify-center shrink-0">
-                <BookOpen size={18} strokeWidth={1.75} className="text-pmuted" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="truncate text-[15px] font-semibold text-pfg">{name}</p>
-                <div className="mt-1.5 flex items-center gap-2">
-                  <div className="h-1.5 flex-1 rounded-full bg-plineStrong overflow-hidden">
-                    <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, background: 'var(--p-primary)' }} />
-                  </div>
-                  <span className="text-[11px] font-semibold text-pmuted tabular-nums shrink-0">
-                    {shownDone}/{count}
-                  </span>
-                </div>
-              </div>
-              <ChevronRight size={16} strokeWidth={1.75} className="text-psubtle shrink-0" />
-            </button>
-          )
-        })}
-      </div>
     </div>
   )
 }

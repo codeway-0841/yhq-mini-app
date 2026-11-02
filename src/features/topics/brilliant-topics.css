@@ -1,0 +1,377 @@
+/* ==========================================================================
+   Brilliant.org /courses/ (Topics) — Senior 1:1 Pixel-Accurate Replica Styles
+   Supports Light and Dark KIVVI themes via --p-* tokens
+   ========================================================================== */
+
+.br-courses-page {
+  --br-blue: #3557ff;
+  --br-blue-tint: rgba(53, 87, 255, 0.07);
+  --br-green: #18a94b;
+  --br-card-bg: #ffffff;
+  --br-card-border: #e5e5e5;
+  --br-card-lip: #e0e0e0;
+  --br-card-hover-border: #cccccc;
+  --br-card-hover-lip: #cccccc;
+  --br-tray-bg: #f5f5f5;
+  --br-connector-color: #dcdcdc;
+  --br-eyebrow-color: #737373;
+  --br-desc-color: #525252;
+  width: 100%;
+  max-width: 100vw;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+body[data-theme='dark'] .br-courses-page {
+  --br-blue: #5273ff;
+  --br-blue-tint: rgba(82, 115, 255, 0.15);
+  --br-green: #1db954;
+  --br-card-bg: var(--p-card, #181c24);
+  --br-card-border: rgba(255, 255, 255, 0.12);
+  --br-card-lip: rgba(0, 0, 0, 0.5);
+  --br-card-hover-border: rgba(255, 255, 255, 0.24);
+  --br-card-hover-lip: rgba(0, 0, 0, 0.65);
+  --br-tray-bg: rgba(255, 255, 255, 0.04);
+  --br-connector-color: rgba(255, 255, 255, 0.16);
+  --br-eyebrow-color: #9ca3af;
+  --br-desc-color: #9ca3af;
+}
+
+/* ── Top Horizontal Path Strip (Mobile < 1024px) ─────────────────────────── */
+.br-path-strip {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  background: var(--p-canvas);
+  border-bottom: 1px solid var(--br-card-border);
+}
+
+.br-path-strip-scroll {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px 16px 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.br-path-strip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.br-path-tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 82px;
+  padding: 0 2px 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.br-path-tab:active {
+  transform: scale(0.96);
+}
+
+.br-path-tab-box {
+  width: 76px;
+  height: 56px;
+  border-radius: 14px;
+  border: 2px solid var(--br-card-border);
+  background: var(--br-card-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.br-path-tab[data-active='true'] .br-path-tab-box {
+  border-color: var(--br-blue);
+  background: var(--br-blue-tint);
+  box-shadow: 0 2px 8px rgba(53, 87, 255, 0.12);
+}
+
+.br-path-tab-label {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--br-eyebrow-color);
+  text-align: center;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.br-path-tab[data-active='true'] .br-path-tab-label {
+  font-weight: 700;
+  color: var(--p-fg);
+}
+
+.br-path-tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  right: 6px;
+  height: 3px;
+  border-radius: 999px;
+  background: transparent;
+  transition: background-color 0.18s ease;
+}
+
+.br-path-tab[data-active='true'] .br-path-tab-indicator {
+  background: var(--br-blue);
+}
+
+/* ── "NEW" Green Pill Badge (Brilliant 1:1) ──────────────────────────────── */
+.br-new-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--br-green);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  flex-shrink: 0;
+}
+
+/* ── Path Section Header (Mobile & Desktop) ──────────────────────────────── */
+.br-path-header-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.br-path-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--br-eyebrow-color);
+}
+
+.br-path-desc {
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--br-desc-color);
+}
+
+/* ── Topic Cards Track & Tray ────────────────────────────────────────────── */
+.br-topics-tray {
+  margin-top: 18px;
+  width: 100%;
+  position: relative;
+}
+
+.br-topics-track {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.br-topic-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tactile 3D Brilliant Card on Mobile (< 1024px) — 1:1 with brilliant_courses_mobile.png */
+.br-topic-card {
+  position: relative;
+  width: 100%;
+  min-height: 116px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: var(--br-card-bg);
+  border: 2px solid var(--br-card-border);
+  box-shadow: 0 3px 0 0 var(--br-card-lip);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
+}
+
+.br-topic-card:hover:not(:disabled) {
+  border-color: var(--br-card-hover-border);
+  box-shadow: 0 4px 0 0 var(--br-card-hover-lip);
+  transform: translateY(-1px);
+}
+
+.br-topic-card:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 0 var(--br-card-lip);
+}
+
+.br-topic-card:disabled {
+  opacity: 0.58;
+  cursor: not-allowed;
+}
+
+/* Connector line between consecutive topic cards */
+.br-connector {
+  width: 2px;
+  height: 14px;
+  background: var(--br-connector-color);
+  flex-shrink: 0;
+}
+
+/* ── Desktop Layout (>= 1024px): Gray Rounded Tray + 164x164 Square Cards ── */
+@media (min-width: 1024px) {
+  .br-topics-tray {
+    position: relative;
+    margin-top: 20px;
+    padding: 28px 32px;
+    border-radius: 20px;
+    background: var(--br-tray-bg);
+    overflow: hidden;
+  }
+
+  .br-topics-track {
+    flex-direction: row;
+    align-items: flex-start;
+    overflow-x: auto;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+
+  .br-topics-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .br-topic-node {
+    flex-direction: row;
+    align-items: flex-start;
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  /* On Desktop, .br-topic-card is a column: 164x164 white square box + title underneath */
+  .br-topic-card,
+  .br-topic-card:hover:not(:disabled),
+  .br-topic-card:active:not(:disabled) {
+    width: 164px;
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .br-topic-card:hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+
+  .br-topic-card:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  .br-topic-square {
+    position: relative;
+    width: 164px;
+    height: 164px;
+    border-radius: 16px;
+    background: var(--br-card-bg);
+    border: 2px solid var(--br-card-border);
+    box-shadow: 0 3px 0 0 var(--br-card-lip);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    transition: border-color 0.14s ease, box-shadow 0.14s ease;
+  }
+
+  .br-topic-card:hover:not(:disabled) .br-topic-square {
+    border-color: var(--br-card-hover-border);
+    box-shadow: 0 4px 0 0 var(--br-card-hover-lip);
+  }
+
+  .br-topic-card:active:not(:disabled) .br-topic-square {
+    box-shadow: 0 1px 0 0 var(--br-card-lip);
+  }
+
+  /* Horizontal connector centered vertically against the 164px square box (82px from top) */
+  .br-connector {
+    width: 16px;
+    height: 2px;
+    margin-top: 82px;
+  }
+
+  /* Right & Left soft gradient fades inside Desktop Tray */
+  .br-tray-fade-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 72px;
+    background: linear-gradient(90deg, transparent, var(--br-tray-bg) 75%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .br-tray-fade-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 56px;
+    background: linear-gradient(270deg, transparent, var(--br-tray-bg) 75%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .br-tray-nav-btn {
+    position: absolute;
+    top: 110px;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: var(--br-card-bg);
+    border: 1px solid var(--br-card-border);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    display: grid;
+    place-items: center;
+    color: var(--p-fg);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .br-tray-nav-btn:hover {
+    transform: translateY(-50%) scale(1.06);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  }
+
+  .br-tray-nav-btn:active {
+    transform: translateY(-50%) scale(0.96);
+  }
+}

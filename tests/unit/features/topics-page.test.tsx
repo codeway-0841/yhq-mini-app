@@ -171,4 +171,64 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(await screen.findByText('1/2')).toBeTruthy()
     expect(progressSpy).toHaveBeenCalledWith('u1', 'fizika')
   })
+
+  it('Brilliant /courses 3D rasmlari va o\'quv yo\'nalishi akordeoni ishlaydi', () => {
+    setFizikaMeta()
+    const { container } = render(<TopicsPage />)
+
+    const imgs = Array.from(container.querySelectorAll('img')).map((img) => img.getAttribute('src') ?? '')
+    expect(imgs.some((src) => src.startsWith('/brilliant/courses/path-'))).toBe(true)
+    expect(imgs.some((src) => src.startsWith('/brilliant/courses/topic-'))).toBe(true)
+
+    const pathHeaderBtn = screen.getByRole('button', { name: /Mexanika: Kinematika asoslari/i })
+    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
+
+    fireEvent.click(pathHeaderBtn)
+    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'false')
+
+    fireEvent.click(pathHeaderBtn)
+    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
+  })
+
+  it('rus tilida barcha 24 ta darslik bloki va ularning mavzulari hamda alohida ajratilgan amaliy testlar chiqadi', () => {
+    useSubjectStore.getState().setSubject('rustili')
+    useQuestionsStore.setState({
+      questions: [],
+      topics: [
+        { id: 101, nameUz: 'Fonetika amaliy test', nameRu: 'Фонетика тест', slug: 'fonetika-test', questionCount: 15 },
+      ],
+      loaded: false,
+      loading: false,
+      error: null,
+      subjectId: 'rustili',
+      lang: 'uz',
+      failedKey: null,
+    })
+
+    const { container } = render(<TopicsPage />)
+
+    // Barcha 24 ta o'quv bloki + 1 ta amaliy test bloki = 25 ta Brilliant path qatori
+    const pathSections = container.querySelectorAll('section[id^="br-path-"]')
+    expect(pathSections.length).toBeGreaterThanOrEqual(25)
+
+    // 1-blok va 15-blok sarlavhalari mavjud
+    expect(screen.getByText(/1-blok\. Fonetika, grafika va orfoepiya/i)).toBeInTheDocument()
+    expect(screen.getByText(/15-blok\. Adabiy til me’yorlari va nutq madaniyati/i)).toBeInTheDocument()
+
+    // Darslik blokidagi mavzu bosilganda /darslik/rus-tili?block=1&section=0 ga o'tadi
+    const firstOutlineTopic = screen.getByText(/Звуки и буквы/i)
+    fireEvent.click(firstOutlineTopic)
+    expect(mockNavigate).toHaveBeenCalledWith('/darslik/rus-tili?block=1&section=0')
+
+    // Alohida ajratilgan Amaliy testlar bo'limi mavjud va bosilganda /test/1 ochiladi
+    expect(screen.getByText(/Mavzulashtirilgan amaliy testlar/i)).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Fonetika amaliy test'))
+    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
+      state: {
+        mode: 'topic',
+        serverSelector: { type: 'topic', topicId: 101 },
+        title: 'Fonetika amaliy test',
+      },
+    })
+  })
 })
