@@ -139,7 +139,7 @@ export function WeeklyActivityCard({ name, xp, streak, tt }: WeeklyActivityCardP
           <span className="text-[13.5px] font-bold tabular-nums text-pprimary tracking-tight">
             {xp.toLocaleString()} XP
           </span>
-          <ChevronRight size={15} strokeWidth={2} className="text-psubtle group-hover:text-pfg group-hover:translate-x-0.5 transition-all" />
+          <ChevronRight size={15} strokeWidth={2} className="text-psubtle group-hover:text-pfg group-hover:translate-x-0.5 transition-[color,transform] duration-150" />
         </div>
       </div>
     </div>

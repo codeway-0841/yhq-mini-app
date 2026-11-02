@@ -53,7 +53,7 @@ function SectionLabel({
   children, icon, accent = false,
 }: { children: React.ReactNode; icon: React.ReactNode; accent?: boolean }) {
   return (
-    <p className={`mb-2.5 flex items-center gap-1.5 px-5 text-[10px] font-semibold uppercase tracking-[0.14em] ${accent ? 'text-pprimary' : 'text-psubtle'}`}>
+    <p className={`mb-2.5 flex items-center gap-1.5 px-4 text-[12px] font-semibold ${accent ? 'text-pprimary' : 'text-pmuted'}`}>
       {icon} {children}
     </p>
   )
@@ -325,7 +325,7 @@ export default function ShopPage() {
       </PageHeader>
 
       {/* Balans hero — ixcham "hamyon" kartasi */}
-      <div className="mx-5 mt-2">
+      <div className="mx-4 mt-2">
         <BalanceHero
           coins={safeCoins}
           isPremium={isPremium}
@@ -336,7 +336,7 @@ export default function ShopPage() {
 
       {error && (
         <div
-          className="mx-5 mt-3 animate-fadeIn rounded-2xl px-4 py-3 text-[12.5px] font-semibold text-pwarning shadow-xs"
+          className="mx-4 mt-3 animate-fadeIn rounded-2xl px-4 py-3 text-[12.5px] font-semibold text-pwarning shadow-xs"
           style={{ background: 'rgb(var(--p-warning-rgb) / 0.12)' }}
         >
           {error}
@@ -358,7 +358,7 @@ export default function ShopPage() {
         <SectionLabel icon={<Palette size={11} className="text-pprimary" />}>
           {tt('shopThemesTitle')}
         </SectionLabel>
-        <div className="grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 px-4 lg:grid-cols-3 xl:grid-cols-4">
           <Stagger>
             {themeItems.map((item) => {
               const theme = getAccentTheme(item.id)
@@ -393,7 +393,7 @@ export default function ShopPage() {
             <SectionLabel icon={<Sparkles size={11} />} accent>
               {tt('shopSeasonalTitle')}
             </SectionLabel>
-            <div className="mb-4 grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="mb-4 grid grid-cols-2 gap-3 px-4 lg:grid-cols-3 xl:grid-cols-4">
               {seasonalFrameItems.map((item) => {
                 const left = item.seasonal ? seasonalDaysLeft(item.seasonal, now) : null
                 return renderFrameCard(item, left !== null ? `${tt('shopSeasonalLeft')} ${left} ${tt('shopSeasonalDays')}` : null)
@@ -402,7 +402,7 @@ export default function ShopPage() {
           </>
         )}
 
-        <div className="grid grid-cols-2 gap-3 px-5 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 px-4 lg:grid-cols-3 xl:grid-cols-4">
           <Stagger>{frameItems.map((item) => renderFrameCard(item))}</Stagger>
         </div>
       </section>

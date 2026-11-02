@@ -44,7 +44,7 @@ function MilestonePreviewItem({
       <div className="relative mb-1 flex size-11 items-center justify-center">
         <div
           className={cn(
-            'flex size-11 items-center justify-center transition-all duration-200 ease-out',
+            'flex size-11 items-center justify-center transition-[transform,opacity] duration-200 ease-out',
             !unlocked && 'opacity-60 saturate-[0.5]',
           )}
         >
@@ -121,7 +121,7 @@ export function MilestonesPreviewSection({ stats, tt, onOpenAll }: MilestonesPre
           <span className="text-[11px] font-bold text-pprimary tabular-nums">
             {unlockedCount}/{MILESTONES.length}
           </span>
-          <ChevronRight size={14} strokeWidth={2} className="text-psubtle group-hover:text-pfg group-hover:translate-x-0.5 transition-all" />
+          <ChevronRight size={14} strokeWidth={2} className="text-psubtle group-hover:text-pfg group-hover:translate-x-0.5 transition-[color,transform] duration-150" />
         </button>
       </div>
 

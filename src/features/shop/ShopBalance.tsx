@@ -32,7 +32,7 @@ export function BalanceHero({ coins, isPremium, label, earnHint }: BalanceHeroPr
     <div className="rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">{label}</p>
+          <p className="text-[12px] font-semibold text-pmuted">{label}</p>
           <p className="mt-1 flex items-center gap-1.5 text-[30px] font-semibold leading-none tracking-tight tabular-nums">
             <CoinIcon size={24} className="flex-none text-pgold" />
             {formatCoins(shown)}

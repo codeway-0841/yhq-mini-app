@@ -69,7 +69,7 @@ function HeroCardView({ card, index, fullWidth }: { card: HeroCard; index: numbe
         >
           {card.icon}
         </span>
-        <p className="min-w-0 flex-1 truncate text-[10px] font-semibold uppercase tracking-[0.14em] text-psubtle">
+        <p className="min-w-0 flex-1 truncate text-[12px] font-semibold text-pmuted">
           {card.eyebrow}
         </p>
         {card.badge && (
@@ -123,7 +123,7 @@ export default function ShopHeroCarousel({ cards }: { cards: HeroCard[] }) {
   return (
     <div
       className={cn(
-        'flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-1',
+        'flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-1',
         // Scrollport FAQAT gorizontal — vertikal sticky/scroll'ga ta'sir qilmaydi.
         single ? 'lg:block lg:overflow-visible' : 'lg:grid lg:grid-cols-3 lg:overflow-visible',
       )}

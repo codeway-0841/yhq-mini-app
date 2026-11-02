@@ -23,7 +23,7 @@ export const SubjectSwitcher = memo(function SubjectSwitcher({ onOpen }: { onOpe
   useEffect(() => setImgOk(true), [subject.id]) // fan almashganda qayta urinib ko'rish
   const imgUrl = `/fan-${subject.id}.webp`
   return (
-    <div className="mb-6 px-5">
+    <div className="mb-5 px-4">
       <div className="relative overflow-hidden rounded-2xl bg-pcard p-5 pr-[118px] sm:pr-[132px] shadow-xs">
         {/* O'ng taraf: fan rasmi — karta ichida sig'adi, matnni bosmaydi */}
         {imgOk && (
@@ -65,7 +65,7 @@ export const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch:
   const lang    = useAppStore((s) => s.settings.language)
   const Icon    = subject.icon
   return (
-    <div className="mx-5 mt-6 flex flex-col items-center rounded-2xl bg-psurface p-8 text-center shadow-xs">
+    <div className="mx-4 mt-5 flex flex-col items-center rounded-2xl bg-psurface p-8 text-center shadow-xs">
       <Icon size={36} strokeWidth={1.75} className="mb-3 shrink-0 text-pmuted" />
       <h3 className="font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg">
         {lang === 'ru' ? subject.nameRu : subject.name}

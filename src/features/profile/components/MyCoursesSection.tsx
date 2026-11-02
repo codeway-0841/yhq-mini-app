@@ -45,7 +45,7 @@ export function MyCoursesSection({ lang, tt }: MyCoursesSectionProps) {
               type="button"
               onClick={() => handleSelectSubject(s.id)}
               className={cn(
-                'group flex min-w-[130px] shrink-0 items-center justify-between gap-2.5 rounded-xl px-3 py-2.5 transition-all duration-150 active:scale-95 text-left select-none shadow-2xs',
+                'group flex min-w-[130px] shrink-0 items-center justify-between gap-2.5 rounded-xl px-3 py-2.5 transition-[background-color,opacity,transform] duration-150 active:scale-[0.98] text-left select-none shadow-2xs',
                 isSelected
                   ? 'bg-psurface ring-1.5 ring-pprimary'
                   : 'bg-psurface hover:opacity-90',
@@ -63,7 +63,7 @@ export function MyCoursesSection({ lang, tt }: MyCoursesSectionProps) {
               <ChevronRight
                 size={14}
                 strokeWidth={2}
-                className="text-psubtle shrink-0 group-hover:text-pfg group-hover:translate-x-0.5 transition-all"
+                className="text-psubtle shrink-0 group-hover:text-pfg group-hover:translate-x-0.5 transition-[color,transform] duration-150"
               />
             </button>
           )

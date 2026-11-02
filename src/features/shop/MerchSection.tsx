@@ -40,10 +40,10 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
 
   return (
     <>
-      <p className="px-5 mt-6 mb-2.5 text-[10px] font-semibold text-psubtle uppercase tracking-[0.14em] flex items-center gap-1.5">
+      <p className="px-4 mt-6 mb-2.5 text-[12px] font-semibold text-pmuted flex items-center gap-1.5">
         <ShoppingBag size={11} /> {tt('merchTitle')}
       </p>
-      <div className="grid grid-cols-1 gap-3 px-5">
+      <div className="grid grid-cols-1 gap-3 px-4">
         {MERCH_ITEMS.map((item) => {
           const state = catalog?.find((c) => c.id === item.id)
           const remaining = state?.remaining ?? item.stock
@@ -96,7 +96,7 @@ export default function MerchSection({ onCelebration }: { onCelebration?: () => 
 
       {/* Muvaffaqiyat holati */}
       {ordered && (
-        <div className="mx-5 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-[rgb(var(--p-success-rgb)/0.15)] shadow-xs">
+        <div className="mx-4 mt-4 rounded-2xl px-4 py-3.5 text-center animate-fadeIn bg-[rgb(var(--p-success-rgb)/0.15)] shadow-xs">
           <p className="flex items-center justify-center gap-1.5 text-[13.5px] font-semibold text-psuccess">
             <Check size={15} strokeWidth={2} /> {tt('merchOrdered')}
           </p>
