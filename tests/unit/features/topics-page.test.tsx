@@ -220,11 +220,17 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(mockNavigate).toHaveBeenCalledWith('/darslik/rus-tili?block=1&section=0')
 
     // Foydalanuvchi boshqa blokni tanlaganda (masalan, 15-blok tabi):
+    const tab1 = container.querySelector('[data-tab-id="darslik-block-1"]') as HTMLElement
     const tab15 = container.querySelector('[data-tab-id="darslik-block-15"]') as HTMLElement
+    expect(tab1).toHaveAttribute('data-active', 'true')
     expect(tab15).toBeInTheDocument()
     fireEvent.click(tab15)
 
-    // Endi pastda 15-blok chiqadi
+    // 15-blok tabi va seksiyasi faol bo'ladi
+    expect(tab15).toHaveAttribute('data-active', 'true')
+    expect(tab1).not.toHaveAttribute('data-active')
+    const section15 = container.querySelector('#br-path-darslik-block-15') as HTMLElement
+    expect(section15).toHaveAttribute('data-section-active', 'true')
     expect(screen.getByText(/15-blok\. Adabiy til me’yorlari va nutq madaniyati/i)).toBeInTheDocument()
   })
 })

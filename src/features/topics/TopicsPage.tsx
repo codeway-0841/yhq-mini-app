@@ -20,7 +20,7 @@ import {
 } from '../../content/darslik-rusadabiyot'
 import { useDarslikMastery, sectionKey } from '../darslik-rustili'
 import { goBack } from '../../shared/lib/navigation'
-import { getPageScroller } from '../../shared/lib/page-scroll'
+import { addPageScrollListener, getPageScroller } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Check, Lock } from 'lucide-react'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
@@ -66,33 +66,242 @@ interface PathSectionData {
 }
 
 /**
- * Aniq element boshiga silliq (smooth) scroll qilish —
- * KIVVI desktop panel scroller yoki mobil document scroll'ni to'liq qo'llab-quvvatlaydi.
+ * Haqiqiy vertikal scroll konteynerini aniqlash:
+ * Desktop (>=1024px) rejimda `.route-page`, mobil rejimda `window`/`document`.
  */
-function smoothScrollToSection(sectionId: string) {
+function getActiveScrollElement(): HTMLElement | null {
+  const scroller = getPageScroller()
+  if (scroller) return scroller
+  if (typeof document !== 'undefined' && typeof window !== 'undefined') {
+    const routeEl = document.querySelector('.route-page')
+    if (routeEl instanceof HTMLElement) {
+      const style = window.getComputedStyle?.(routeEl)
+      if (style && (style.overflowY === 'auto' || style.overflowY === 'scroll')) {
+        return routeEl
+      }
+    }
+  }
+  return null
+}
+
+function getVerticalScrollTop(): number {
+  const el = getActiveScrollElement()
+  if (el) return el.scrollTop
+  if (typeof window === 'undefined') return 0
+  return window.scrollY || document.documentElement?.scrollTop || document.body?.scrollTop || 0
+}
+
+function setVerticalScrollTop(y: number): void {
+  const next = Math.max(0, y)
+  const el = getActiveScrollElement()
+  if (el) {
+    el.scrollTop = next
+    return
+  }
+  if (typeof window !== 'undefined') {
+    window.scrollTo(0, next)
+  }
+  if (typeof document !== 'undefined') {
+    if (document.scrollingElement) document.scrollingElement.scrollTop = next
+    if (document.documentElement) document.documentElement.scrollTop = next
+  }
+}
+
+function getSectionTargetY(sectionId: string): number | null {
+  if (typeof document === 'undefined') return null
   const el = document.getElementById(`br-path-${sectionId}`)
-  if (!el) return
+  if (!el) return null
 
   const header = document.querySelector('.page-header')
-  const headerHeight = header ? header.getBoundingClientRect().height : 120
+  const rect = el.getBoundingClientRect()
+  const scroller = getActiveScrollElement()
 
-  const scroller = getPageScroller()
   if (scroller) {
     const srect = scroller.getBoundingClientRect()
-    const rect = el.getBoundingClientRect()
-    const targetTop = scroller.scrollTop + (rect.top - srect.top) - headerHeight - 12
-    scroller.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' })
-  } else {
-    const rect = el.getBoundingClientRect()
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-    const targetTop = scrollTop + rect.top - headerHeight - 12
-    window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' })
+    const headerHeight = header ? header.getBoundingClientRect().height : 148
+    return Math.max(0, scroller.scrollTop + (rect.top - srect.top) - headerHeight - 4)
+  }
+
+  const headerBottom = header ? Math.max(0, header.getBoundingClientRect().bottom) : 148
+  const currentY = getVerticalScrollTop()
+  return Math.max(0, currentY + rect.top - headerBottom - 4)
+}
+
+/**
+ * Senior-level Ikki Tomonlama Scroll Engine (Tab <-> Content Sync):
+ * 1. Tepadagi gorizontal tab bosilganda: maxsus requestAnimationFrame (720ms easeInOutCubic)
+ *    bilan sahifani o'sha bobning boshiga silliq olib boradi (OS/brauzer smooth-scroll
+ *    cheklo'vlariga bog'liq emas va scrollIntoView tomonidan bekor qilinmaydi).
+ * 2. Foydalanuvchi pastga/tepaga scroll qilganda: Scroll-Spy joriy bobni aniqlab,
+ *    yuqoridagi tabni avtomatik faollashtiradi va markazga silliq suradi.
+ */
+function useBrilliantScrollNavigation(sections: PathSectionData[]) {
+  const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '')
+  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
+  const activePathIdRef = useRef<string>(activePathId)
+  const isProgrammaticScrollRef = useRef<boolean>(false)
+  const scrollRafRef = useRef<number>(0)
+
+  useEffect(() => {
+    activePathIdRef.current = activePathId
+  }, [activePathId])
+
+  useEffect(() => {
+    if (sections.length > 0 && !sections.some((s) => s.meta.id === activePathId)) {
+      const firstId = sections[0].meta.id
+      activePathIdRef.current = firstId
+      setActivePathId(firstId)
+    }
+  }, [sections, activePathId])
+
+  const cancelProgrammaticScroll = useCallback(() => {
+    if (scrollRafRef.current && typeof window !== 'undefined') {
+      window.cancelAnimationFrame(scrollRafRef.current)
+      scrollRafRef.current = 0
+    }
+    isProgrammaticScrollRef.current = false
+  }, [])
+
+  const toggleSection = useCallback((id: string) => {
+    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
+  }, [])
+
+  const handleSelectTab = useCallback(
+    (id: string) => {
+      cancelProgrammaticScroll()
+      activePathIdRef.current = id
+      setActivePathId(id)
+      setCollapsedMap((prev) => (prev[id] ? { ...prev, [id]: false } : prev))
+
+      if (typeof window === 'undefined' || typeof document === 'undefined') return
+
+      isProgrammaticScrollRef.current = true
+      const startY = getVerticalScrollTop()
+      const initialTargetY = getSectionTargetY(id)
+
+      if (initialTargetY === null || typeof window.requestAnimationFrame !== 'function') {
+        isProgrammaticScrollRef.current = false
+        return
+      }
+
+      if (Math.abs(initialTargetY - startY) < 2) {
+        setVerticalScrollTop(initialTargetY)
+        isProgrammaticScrollRef.current = false
+        return
+      }
+
+      const duration = 720 // ~0.72 sekund silliq animatsiya
+      const startTime = performance.now()
+
+      const step = (now: number) => {
+        const elapsed = Math.max(0, now - startTime)
+        const progress = Math.min(1, elapsed / duration)
+        // easeInOutCubic
+        const eased =
+          progress < 0.5
+            ? 4 * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2
+
+        const liveTargetY = getSectionTargetY(id) ?? initialTargetY
+        const nextY = startY + (liveTargetY - startY) * eased
+        setVerticalScrollTop(nextY)
+
+        if (progress < 1) {
+          scrollRafRef.current = window.requestAnimationFrame(step)
+        } else {
+          setVerticalScrollTop(liveTargetY)
+          scrollRafRef.current = 0
+          window.requestAnimationFrame(() => {
+            isProgrammaticScrollRef.current = false
+          })
+        }
+      }
+
+      scrollRafRef.current = window.requestAnimationFrame(step)
+    },
+    [cancelProgrammaticScroll],
+  )
+
+  useEffect(() => {
+    if (sections.length <= 1 || typeof window === 'undefined') return
+
+    let spyRaf = 0
+
+    const evaluateActiveSection = () => {
+      spyRaf = 0
+      if (isProgrammaticScrollRef.current || sections.length === 0) return
+
+      const currentScroll = getVerticalScrollTop()
+      if (currentScroll <= 12) {
+        const firstId = sections[0].meta.id
+        if (firstId !== activePathIdRef.current) {
+          activePathIdRef.current = firstId
+          setActivePathId(firstId)
+        }
+        return
+      }
+
+      const header = document.querySelector('.page-header')
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 148
+      const triggerLine = headerBottom + 76
+
+      let candidateId = sections[0].meta.id
+      for (const sec of sections) {
+        const el = document.getElementById(`br-path-${sec.meta.id}`)
+        if (!el) continue
+        const rect = el.getBoundingClientRect()
+        if (rect.top <= triggerLine) {
+          candidateId = sec.meta.id
+        } else {
+          break
+        }
+      }
+
+      if (candidateId && candidateId !== activePathIdRef.current) {
+        activePathIdRef.current = candidateId
+        setActivePathId(candidateId)
+      }
+    }
+
+    const onScroll = () => {
+      if (isProgrammaticScrollRef.current) return
+      if (!spyRaf) {
+        spyRaf = window.requestAnimationFrame(evaluateActiveSection)
+      }
+    }
+
+    // Qo'lda g'ildirak yoki touch bosilganda dasturiy scroll animatsiyasini to'xtatib, boshqaruvni foydalanuvchiga berish
+    const onUserInterrupt = () => {
+      if (isProgrammaticScrollRef.current) {
+        cancelProgrammaticScroll()
+      }
+    }
+
+    const removeScrollListener = addPageScrollListener(onScroll)
+    window.addEventListener('wheel', onUserInterrupt, { passive: true })
+    window.addEventListener('touchstart', onUserInterrupt, { passive: true })
+
+    return () => {
+      removeScrollListener()
+      window.removeEventListener('wheel', onUserInterrupt)
+      window.removeEventListener('touchstart', onUserInterrupt)
+      if (spyRaf) window.cancelAnimationFrame(spyRaf)
+      cancelProgrammaticScroll()
+    }
+  }, [sections, cancelProgrammaticScroll])
+
+  return {
+    activePathId,
+    collapsedMap,
+    toggleSection,
+    handleSelectTab,
   }
 }
 
 /**
  * Brilliant App 1:1 Yuqori Gorizontal Tablar (Math, Basic Algebra, Algebra...)
- * Tanlangan tab o'zgarganda lentaning o'zi ham o'sha tabni markazga scroll qiladi.
+ * MUHIM: scrollIntoView() o'rniga faqat strip.scrollLeft'ni requestAnimationFrame
+ * orqali silliq animatsiya qiladi — shunda vertikal sahifa scrolli HECH QACHON uzilib qolmaydi.
  */
 function BrilliantPathTabs({
   sections,
@@ -106,12 +315,58 @@ function BrilliantPathTabs({
   onSelect: (id: string) => void
 }) {
   const stripRef = useRef<HTMLDivElement | null>(null)
+  const hScrollRafRef = useRef<number>(0)
 
   useEffect(() => {
-    if (!stripRef.current || !activeId) return
-    const btn = stripRef.current.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
-    if (btn && typeof btn.scrollIntoView === 'function') {
-      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+    const strip = stripRef.current
+    if (!strip || !activeId || typeof window === 'undefined') return
+    const btn = strip.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
+    if (!btn) return
+
+    if (hScrollRafRef.current) {
+      window.cancelAnimationFrame(hScrollRafRef.current)
+      hScrollRafRef.current = 0
+    }
+
+    const stripRect = strip.getBoundingClientRect()
+    const btnRect = btn.getBoundingClientRect()
+    if (stripRect.width <= 0) return
+
+    const delta = btnRect.left + btnRect.width / 2 - (stripRect.left + stripRect.width / 2)
+    const maxScroll = Math.max(0, strip.scrollWidth - strip.clientWidth)
+    const startLeft = strip.scrollLeft
+    const targetLeft = Math.max(0, Math.min(maxScroll, startLeft + delta))
+
+    if (Math.abs(targetLeft - startLeft) < 2 || typeof window.requestAnimationFrame !== 'function') {
+      strip.scrollLeft = targetLeft
+      return
+    }
+
+    const duration = 340
+    const startTime = performance.now()
+
+    const step = (now: number) => {
+      const elapsed = Math.max(0, now - startTime)
+      const progress = Math.min(1, elapsed / duration)
+      // easeOutCubic
+      const eased = 1 - Math.pow(1 - progress, 3)
+      strip.scrollLeft = startLeft + (targetLeft - startLeft) * eased
+
+      if (progress < 1) {
+        hScrollRafRef.current = window.requestAnimationFrame(step)
+      } else {
+        strip.scrollLeft = targetLeft
+        hScrollRafRef.current = 0
+      }
+    }
+
+    hScrollRafRef.current = window.requestAnimationFrame(step)
+
+    return () => {
+      if (hScrollRafRef.current) {
+        window.cancelAnimationFrame(hScrollRafRef.current)
+        hScrollRafRef.current = 0
+      }
     }
   }, [activeId])
 
@@ -131,6 +386,7 @@ function BrilliantPathTabs({
                 type="button"
                 data-tab-id={meta.id}
                 data-active={isActive ? 'true' : undefined}
+                aria-current={isActive ? 'true' : undefined}
                 onClick={() => onSelect(meta.id)}
                 className="br-path-tab"
               >
@@ -158,11 +414,13 @@ function BrilliantPathTabs({
 function BrilliantCourseSection({
   section,
   lang,
+  isActiveSection = false,
   open = true,
   onToggle,
 }: {
   section: PathSectionData
   lang: 'uz' | 'ru'
+  isActiveSection?: boolean
   open?: boolean
   onToggle?: () => void
 }) {
@@ -172,7 +430,11 @@ function BrilliantCourseSection({
   const newLabel = 'NEW'
 
   return (
-    <section id={`br-path-${meta.id}`} className="br-path-section">
+    <section
+      id={`br-path-${meta.id}`}
+      data-section-active={isActiveSection ? 'true' : undefined}
+      className="br-path-section"
+    >
       {/* ── Path Header Hero: Sarlavha chapda, 3D rasm o'ngda, sariq yulduzcha ⭐ ── */}
       <div className="br-path-hero-wrap">
         <button
@@ -401,65 +663,15 @@ function YhqTopics() {
     return result
   }, [visibleByMod, lessonsProg, lang, startLesson])
 
-  const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '1')
-  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
-  const isClickingRef = useRef(false)
-  const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-
-  const toggleSection = (id: string) => {
-    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
-  }
-
-  // 1. Tepadagi tab bosilganda: pastdagi o'sha blokka 1 sekund silliq animatsiya bilan scroll qilish
-  const handleSelectTab = (id: string) => {
-    setActivePathId(id)
-    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    isClickingRef.current = true
-    if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
-
-    smoothScrollToSection(id)
-
-    clickTimerRef.current = setTimeout(() => {
-      isClickingRef.current = false
-    }, 900)
-  }
-
-  // 2. Pastdan scroll qilinganda: qaysi bob (blok) kelsa, tepadagi tab ham avtomatik o'zgaradi va scroll bo'ladi
-  useEffect(() => {
-    if (sections.length <= 1) return
-    const scroller = getPageScroller()
-    const target = scroller ?? window
-
-    const onScroll = () => {
-      if (isClickingRef.current) return
-
-      const header = document.querySelector('.page-header')
-      const headerBottom = header ? header.getBoundingClientRect().bottom : 120
-
-      let activeId = sections[0]?.meta.id
-      for (const sec of sections) {
-        const el = document.getElementById(`br-path-${sec.meta.id}`)
-        if (!el) continue
-        const rect = el.getBoundingClientRect()
-        if (rect.top <= headerBottom + 60) {
-          activeId = sec.meta.id
-        }
-      }
-
-      if (activeId && activeId !== activePathId) {
-        setActivePathId(activeId)
-      }
-    }
-
-    target.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      target.removeEventListener('scroll', onScroll)
-      if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
-    }
-  }, [sections, activePathId])
+  const {
+    activePathId,
+    collapsedMap,
+    toggleSection,
+    handleSelectTab,
+  } = useBrilliantScrollNavigation(sections)
 
   return (
-    <div className="br-courses-page pb-16 min-h-screen">
+    <div className="br-courses-page pb-16">
       <PageHeader
         title={tt('topics')}
         size="lg"
@@ -482,6 +694,7 @@ function YhqTopics() {
             key={sec.meta.id}
             section={sec}
             lang={lang}
+            isActiveSection={sec.meta.id === activePathId}
             open={!collapsedMap[sec.meta.id]}
             onToggle={() => toggleSection(sec.meta.id)}
           />
@@ -755,71 +968,15 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     [curriculumSections, practiceSections],
   )
 
-  const [activePathId, setActivePathId] = useState<string>('')
-  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
-  const isClickingRef = useRef(false)
-  const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-
-  const toggleSection = (id: string) => {
-    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
-  }
-
-  useEffect(() => {
-    if (allSections.length > 0 && !allSections.some((s) => s.meta.id === activePathId)) {
-      setActivePathId(allSections[0].meta.id)
-    }
-  }, [allSections, activePathId])
-
-  // 1. Tepadagi tab bosilganda: pastdagi o'sha blokka 1 sekund silliq animatsiya bilan scroll qilish
-  const handleSelectTab = (id: string) => {
-    setActivePathId(id)
-    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    isClickingRef.current = true
-    if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
-
-    smoothScrollToSection(id)
-
-    clickTimerRef.current = setTimeout(() => {
-      isClickingRef.current = false
-    }, 900)
-  }
-
-  // 2. Pastdan scroll qilinganda: qaysi bob (blok) kelsa, tepadagi tab ham avtomatik o'zgaradi va scroll bo'ladi
-  useEffect(() => {
-    if (allSections.length <= 1) return
-    const scroller = getPageScroller()
-    const target = scroller ?? window
-
-    const onScroll = () => {
-      if (isClickingRef.current) return
-
-      const header = document.querySelector('.page-header')
-      const headerBottom = header ? header.getBoundingClientRect().bottom : 120
-
-      let activeId = allSections[0]?.meta.id
-      for (const sec of allSections) {
-        const el = document.getElementById(`br-path-${sec.meta.id}`)
-        if (!el) continue
-        const rect = el.getBoundingClientRect()
-        if (rect.top <= headerBottom + 60) {
-          activeId = sec.meta.id
-        }
-      }
-
-      if (activeId && activeId !== activePathId) {
-        setActivePathId(activeId)
-      }
-    }
-
-    target.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      target.removeEventListener('scroll', onScroll)
-      if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
-    }
-  }, [allSections, activePathId])
+  const {
+    activePathId,
+    collapsedMap,
+    toggleSection,
+    handleSelectTab,
+  } = useBrilliantScrollNavigation(allSections)
 
   return (
-    <div className="br-courses-page pb-16 min-h-screen">
+    <div className="br-courses-page pb-16">
       <PageHeader
         title={tt('topics')}
         size="lg"
@@ -842,6 +999,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             key={sec.meta.id}
             section={sec}
             lang={lang}
+            isActiveSection={sec.meta.id === activePathId}
             open={!collapsedMap[sec.meta.id]}
             onToggle={() => toggleSection(sec.meta.id)}
           />
