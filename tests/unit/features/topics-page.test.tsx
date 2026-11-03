@@ -190,7 +190,7 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
   })
 
-  it('rus tilida barcha 24 ta darslik bloki va ularning mavzulari hamda alohida ajratilgan amaliy testlar chiqadi', () => {
+  it('rus tilida barcha 24 ta darslik bloki tablari chiqadi va boshqa blok tanlanganda pastdagi darslik bloki almashadi (A-varianti)', () => {
     useSubjectStore.getState().setSubject('rustili')
     useQuestionsStore.setState({
       questions: [],
@@ -207,28 +207,24 @@ describe('TopicsPage v2 (metadata-only)', () => {
 
     const { container } = render(<TopicsPage />)
 
-    // Barcha 24 ta o'quv bloki + 1 ta amaliy test bloki = 25 ta Brilliant path qatori
-    const pathSections = container.querySelectorAll('section[id^="br-path-"]')
-    expect(pathSections.length).toBeGreaterThanOrEqual(25)
+    // Tepada barcha 24 ta blok tablari mavjud
+    const tabs = container.querySelectorAll('.br-path-tab')
+    expect(tabs.length).toBeGreaterThanOrEqual(24)
 
-    // 1-blok va 15-blok sarlavhalari mavjud
+    // Boshlang'ich holatda 1-blok ochiq
     expect(screen.getByText(/1-blok\. Fonetika, grafika va orfoepiya/i)).toBeInTheDocument()
-    expect(screen.getByText(/15-blok\. Adabiy til me’yorlari va nutq madaniyati/i)).toBeInTheDocument()
 
-    // Darslik blokidagi mavzu bosilganda /darslik/rus-tili?block=1&section=0 ga o'tadi
+    // 1-blokdagi mavzu bosilganda darslikka o'tadi
     const firstOutlineTopic = screen.getByText(/Звуки и буквы/i)
     fireEvent.click(firstOutlineTopic)
     expect(mockNavigate).toHaveBeenCalledWith('/darslik/rus-tili?block=1&section=0')
 
-    // Alohida ajratilgan Amaliy testlar bo'limi mavjud va bosilganda /test/1 ochiladi
-    expect(screen.getByText(/Mavzulashtirilgan amaliy testlar/i)).toBeInTheDocument()
-    fireEvent.click(screen.getByText('Fonetika amaliy test'))
-    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
-      state: {
-        mode: 'topic',
-        serverSelector: { type: 'topic', topicId: 101 },
-        title: 'Fonetika amaliy test',
-      },
-    })
+    // Foydalanuvchi boshqa blokni tanlaganda (masalan, 15-blok tabi):
+    const tab15 = container.querySelector('[data-tab-id="darslik-block-15"]') as HTMLElement
+    expect(tab15).toBeInTheDocument()
+    fireEvent.click(tab15)
+
+    // Endi pastda 15-blok chiqadi
+    expect(screen.getByText(/15-blok\. Adabiy til me’yorlari va nutq madaniyati/i)).toBeInTheDocument()
   })
 })

@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useCallback, useRef } from 'react'
+import { useMemo, useState, useEffect, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
@@ -20,7 +20,6 @@ import {
 } from '../../content/darslik-rusadabiyot'
 import { useDarslikMastery, sectionKey } from '../darslik-rustili'
 import { goBack } from '../../shared/lib/navigation'
-import { pageScrollOffsetOf, scrollPageTo } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Check, Lock } from 'lucide-react'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
@@ -65,71 +64,6 @@ interface PathSectionData {
   totalCount: number
 }
 
-function scrollToPathSection(id: string) {
-  const el = document.getElementById(`br-path-${id}`)
-  if (!el) return
-  const targetY = pageScrollOffsetOf(el, -135)
-  scrollPageTo(targetY, 'smooth')
-  try {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  } catch {}
-}
-
-function usePathScrollSpy(
-  sections: PathSectionData[],
-  activeId: string,
-  onActivate: (id: string) => void,
-) {
-  const isClicking = useRef(false)
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-
-  const triggerScrollTo = useCallback((id: string) => {
-    isClicking.current = true
-    if (timerRef.current) clearTimeout(timerRef.current)
-    scrollToPathSection(id)
-    timerRef.current = setTimeout(() => {
-      isClicking.current = false
-    }, 850)
-  }, [])
-
-  useEffect(() => {
-    if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') return
-    if (sections.length <= 1) return
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (isClicking.current) return
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-
-        if (visible.length > 0) {
-          const sectionId = visible[0].target.id.replace('br-path-', '')
-          if (sectionId && sectionId !== activeId) {
-            onActivate(sectionId)
-          }
-        }
-      },
-      {
-        rootMargin: '-120px 0px -40% 0px',
-        threshold: [0, 0.1, 0.25],
-      },
-    )
-
-    for (const sec of sections) {
-      const el = document.getElementById(`br-path-${sec.meta.id}`)
-      if (el) observer.observe(el)
-    }
-
-    return () => {
-      observer.disconnect()
-      if (timerRef.current) clearTimeout(timerRef.current)
-    }
-  }, [sections, activeId, onActivate])
-
-  return { triggerScrollTo }
-}
-
 /**
  * Brilliant App 1:1 Yuqori Gorizontal Tablar (Math, Basic Algebra, Algebra...)
  */
@@ -144,21 +78,11 @@ function BrilliantPathTabs({
   lang: 'uz' | 'ru'
   onSelect: (id: string) => void
 }) {
-  const stripRef = useRef<HTMLDivElement | null>(null)
-
-  useEffect(() => {
-    if (!stripRef.current || !activeId) return
-    const btn = stripRef.current.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
-    if (btn && typeof btn.scrollIntoView === 'function') {
-      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-    }
-  }, [activeId])
-
   if (sections.length <= 1) return null
 
   return (
     <nav className="br-path-strip" aria-label={lang === 'ru' ? 'Разделы курса' : "O'quv bo'limlari"}>
-      <div ref={stripRef} className="br-path-strip-scroll">
+      <div className="br-path-strip-scroll">
         {sections.map(({ meta }, idx) => {
           const isActive = meta.id === activeId
           const label = lang === 'ru' ? meta.shortTabRu : meta.shortTabUz
@@ -193,17 +117,18 @@ function BrilliantPathTabs({
 
 /**
  * Brilliant App 1:1 Path Section (Hero + Connected Cards Stack)
+ * Faol tanlangan blok uchun sarlavha, 3D rasm va uning zanjir kartochkalari.
  */
 function BrilliantCourseSection({
   section,
   lang,
-  open,
+  open = true,
   onToggle,
 }: {
   section: PathSectionData
   lang: 'uz' | 'ru'
-  open: boolean
-  onToggle: () => void
+  open?: boolean
+  onToggle?: () => void
 }) {
   const { meta, headingTitle, items } = section
   const eyebrow = lang === 'ru' ? meta.eyebrowRu : meta.eyebrowUz
@@ -211,7 +136,7 @@ function BrilliantCourseSection({
   const newLabel = 'NEW'
 
   return (
-    <section id={`br-path-${meta.id}`} className="br-path-section">
+    <section id={`br-path-${meta.id}`} className="br-path-section transition-opacity duration-200">
       {/* ── Path Header Hero: Sarlavha chapda, 3D rasm o'ngda, sariq yulduzcha ⭐ ── */}
       <div className="br-path-hero-wrap">
         <button
@@ -441,20 +366,11 @@ function YhqTopics() {
   }, [visibleByMod, lessonsProg, lang, startLesson])
 
   const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '1')
-  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
 
-  const { triggerScrollTo } = usePathScrollSpy(sections, activePathId, setActivePathId)
-
-  const toggleSection = (id: string) => {
-    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
-    setActivePathId(id)
-  }
-
-  const handleSelectTab = (id: string) => {
-    setActivePathId(id)
-    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    triggerScrollTo(id)
-  }
+  // A-varianti: Faol tanlangan blok pastda to'liq ochiladi
+  const currentSection = useMemo(() => {
+    return sections.find((s) => s.meta.id === activePathId) ?? sections[0]
+  }, [sections, activePathId])
 
   return (
     <div className="br-courses-page pb-16 min-h-screen">
@@ -469,21 +385,17 @@ function YhqTopics() {
           sections={sections}
           activeId={activePathId}
           lang={lang}
-          onSelect={handleSelectTab}
+          onSelect={setActivePathId}
         />
       </PageHeader>
 
-      <div className="flex flex-col gap-6">
-        {sections.map((sec) => (
-          <BrilliantCourseSection
-            key={sec.meta.id}
-            section={sec}
-            lang={lang}
-            open={!collapsedMap[sec.meta.id]}
-            onToggle={() => toggleSection(sec.meta.id)}
-          />
-        ))}
-      </div>
+      {currentSection && (
+        <BrilliantCourseSection
+          key={currentSection.meta.id}
+          section={currentSection}
+          lang={lang}
+        />
+      )}
     </div>
   )
 }
@@ -588,7 +500,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       return RUSADABIYOT_BLOCKS.map((block, bIdx) => {
         const outline = getRusadabiyotBlockOutline(block.id)
         const meta = getRusadabiyotBlockPathMeta(block, bIdx, outline.length)
-        const headingTitle = lang === 'ru' ? `Блок ${block.id}. ${block.titleRu}` : `${block.id}-blok. ${block.titleUz}`
+        const headingTitle = lang === 'ru' ? `Эпоха ${block.id}. ${block.titleRu}` : `${block.id}-davr. ${block.titleUz}`
 
         const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {
           const parsed = parseOutlineTopicHeading(rawTopicTitle, block.id, itemIdx, lang)
@@ -747,6 +659,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       .filter((s): s is PathSectionData => s !== null)
   }, [rows, subjectId, lang, startTopic])
 
+  // Barcha tablar ro'yxati (curriculum bloklari yoki amaliy testlar)
   const allSections = useMemo(
     () => [...curriculumSections, ...practiceSections],
     [curriculumSections, practiceSections],
@@ -755,7 +668,9 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const [activePathId, setActivePathId] = useState<string>('')
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
 
-  const { triggerScrollTo } = usePathScrollSpy(allSections, activePathId, setActivePathId)
+  const toggleSection = (id: string) => {
+    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
+  }
 
   useEffect(() => {
     if (allSections.length > 0 && !allSections.some((s) => s.meta.id === activePathId)) {
@@ -763,16 +678,12 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     }
   }, [allSections, activePathId])
 
-  const toggleSection = (id: string) => {
-    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
-    setActivePathId(id)
-  }
+  const hasCurriculum = curriculumSections.length > 0
 
-  const handleSelectTab = (id: string) => {
-    setActivePathId(id)
-    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    triggerScrollTo(id)
-  }
+  // A-varianti: Tepadan qaysi tab tanlansa, pastda FAQAT o'sha blok ochiladi!
+  const currentSection = useMemo(() => {
+    return allSections.find((s) => s.meta.id === activePathId) ?? allSections[0]
+  }, [allSections, activePathId])
 
   return (
     <div className="br-courses-page pb-16 min-h-screen">
@@ -787,47 +698,31 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           sections={allSections}
           activeId={activePathId}
           lang={lang}
-          onSelect={handleSelectTab}
+          onSelect={setActivePathId}
         />
       </PageHeader>
 
-      <div className="flex flex-col gap-6">
-        {curriculumSections.length > 0 && (
-          <div className="flex flex-col gap-6">
-            {curriculumSections.map((sec) => (
-              <BrilliantCourseSection
-                key={sec.meta.id}
-                section={sec}
-                lang={lang}
-                open={!collapsedMap[sec.meta.id]}
-                onToggle={() => toggleSection(sec.meta.id)}
-              />
-            ))}
-          </div>
-        )}
+      {/* A-varianti: Darslik kurslarida (Rus tili, Rus adabiyoti) tepada qaysi blok tanlansa, pastda FAQAT o'sha blok ochiladi */}
+      {hasCurriculum && currentSection && (
+        <BrilliantCourseSection
+          key={currentSection.meta.id}
+          section={currentSection}
+          lang={lang}
+          open={!collapsedMap[currentSection.meta.id]}
+          onToggle={() => toggleSection(currentSection.meta.id)}
+        />
+      )}
 
-        {practiceSections.length > 0 && curriculumSections.length > 0 && (
-          <div className="w-full max-w-[580px] mx-auto pt-8 pb-2 px-4">
-            <h3 className="text-[20px] font-extrabold text-pfg tracking-tight">
-              {lang === 'ru' ? 'Практические тесты по темам' : 'Mavzulashtirilgan amaliy testlar'}
-            </h3>
-          </div>
-        )}
-
-        {practiceSections.length > 0 && (
-          <div className="flex flex-col gap-6">
-            {practiceSections.map((sec) => (
-              <BrilliantCourseSection
-                key={sec.meta.id}
-                section={sec}
-                lang={lang}
-                open={!collapsedMap[sec.meta.id]}
-                onToggle={() => toggleSection(sec.meta.id)}
-              />
-            ))}
-          </div>
-        )}
-      </div>
+      {/* Umumiy test fanlarida barcha bo'limlar / mavzular ketma-ket chiqadi */}
+      {!hasCurriculum && allSections.map((sec) => (
+        <BrilliantCourseSection
+          key={sec.meta.id}
+          section={sec}
+          lang={lang}
+          open={!collapsedMap[sec.meta.id]}
+          onToggle={() => toggleSection(sec.meta.id)}
+        />
+      ))}
 
       {/* Agar mavzular bo'sh bo'lsa */}
       {allSections.length === 0 && !loading && (
