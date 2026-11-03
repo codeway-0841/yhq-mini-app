@@ -226,19 +226,14 @@ function useBrilliantScrollNavigation(sections: PathSectionData[]) {
     if (sections.length <= 1 || typeof window === 'undefined') return
 
     let spyRaf = 0
+    let settleTimer: ReturnType<typeof setTimeout> | null = null
+    let lastScrollY = getVerticalScrollTop()
 
-    const evaluateActiveSection = () => {
-      spyRaf = 0
-      if (isProgrammaticScrollRef.current || sections.length === 0) return
-
+    const detectCurrentSectionId = (): string | undefined => {
+      if (sections.length === 0) return undefined
       const currentScroll = getVerticalScrollTop()
       if (currentScroll <= 12) {
-        const firstId = sections[0].meta.id
-        if (firstId !== activePathIdRef.current) {
-          activePathIdRef.current = firstId
-          setActivePathId(firstId)
-        }
-        return
+        return sections[0].meta.id
       }
 
       const header = document.querySelector('.page-header')
@@ -256,21 +251,47 @@ function useBrilliantScrollNavigation(sections: PathSectionData[]) {
           break
         }
       }
+      return candidateId
+    }
 
+    const commitActiveSection = () => {
+      if (isProgrammaticScrollRef.current) return
+      const candidateId = detectCurrentSectionId()
       if (candidateId && candidateId !== activePathIdRef.current) {
         activePathIdRef.current = candidateId
         setActivePathId(candidateId)
       }
     }
 
-    const onScroll = () => {
-      if (isProgrammaticScrollRef.current) return
-      if (!spyRaf) {
-        spyRaf = window.requestAnimationFrame(evaluateActiveSection)
+    const evaluateOnScrollFrame = () => {
+      spyRaf = 0
+      if (isProgrammaticScrollRef.current || sections.length === 0) return
+
+      const currentScroll = getVerticalScrollTop()
+      const velocity = Math.abs(currentScroll - lastScrollY)
+      lastScrollY = currentScroll
+
+      if (settleTimer) {
+        clearTimeout(settleTimer)
+        settleTimer = null
+      }
+
+      // Tez vertikal scroll qilinganda oraliqdagi barcha tablar birma-bir miltillab
+      // shovqin yaratmasligi uchun tezlik pasayishini (85ms) kutib silliq o'tkazadi.
+      if (velocity > 18) {
+        settleTimer = setTimeout(commitActiveSection, 85)
+      } else {
+        commitActiveSection()
       }
     }
 
-    // Qo'lda g'ildirak yoki touch bosilganda dasturiy scroll animatsiyasini to'xtatib, boshqaruvni foydalanuvchiga berish
+    const onScroll = () => {
+      if (isProgrammaticScrollRef.current) return
+      if (!spyRaf) {
+        spyRaf = window.requestAnimationFrame(evaluateOnScrollFrame)
+      }
+    }
+
     const onUserInterrupt = () => {
       if (isProgrammaticScrollRef.current) {
         cancelProgrammaticScroll()
@@ -286,6 +307,7 @@ function useBrilliantScrollNavigation(sections: PathSectionData[]) {
       window.removeEventListener('wheel', onUserInterrupt)
       window.removeEventListener('touchstart', onUserInterrupt)
       if (spyRaf) window.cancelAnimationFrame(spyRaf)
+      if (settleTimer) clearTimeout(settleTimer)
       cancelProgrammaticScroll()
     }
   }, [sections, cancelProgrammaticScroll])
@@ -300,8 +322,8 @@ function useBrilliantScrollNavigation(sections: PathSectionData[]) {
 
 /**
  * Brilliant App 1:1 Yuqori Gorizontal Tablar (Math, Basic Algebra, Algebra...)
- * MUHIM: scrollIntoView() o'rniga faqat strip.scrollLeft'ni requestAnimationFrame
- * orqali silliq animatsiya qiladi — shunda vertikal sahifa scrolli HECH QACHON uzilib qolmaydi.
+ * Uzluksiz (continuous) exponential damping (lerp) orqali strip.scrollLeft'ni
+ * shovqinsiz, ipakdek silliq markazga olib keladi.
  */
 function BrilliantPathTabs({
   sections,
@@ -316,6 +338,7 @@ function BrilliantPathTabs({
 }) {
   const stripRef = useRef<HTMLDivElement | null>(null)
   const hScrollRafRef = useRef<number>(0)
+  const targetLeftRef = useRef<number | null>(null)
 
   useEffect(() => {
     const strip = stripRef.current
@@ -323,52 +346,56 @@ function BrilliantPathTabs({
     const btn = strip.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
     if (!btn) return
 
-    if (hScrollRafRef.current) {
-      window.cancelAnimationFrame(hScrollRafRef.current)
-      hScrollRafRef.current = 0
-    }
+    const stripWidth = strip.clientWidth
+    if (stripWidth <= 0) return
 
-    const stripRect = strip.getBoundingClientRect()
-    const btnRect = btn.getBoundingClientRect()
-    if (stripRect.width <= 0) return
+    const maxScroll = Math.max(0, strip.scrollWidth - stripWidth)
+    const btnCenter = btn.offsetLeft + btn.offsetWidth / 2
+    const targetLeft = Math.max(0, Math.min(maxScroll, btnCenter - stripWidth / 2))
+    targetLeftRef.current = targetLeft
 
-    const delta = btnRect.left + btnRect.width / 2 - (stripRect.left + stripRect.width / 2)
-    const maxScroll = Math.max(0, strip.scrollWidth - strip.clientWidth)
-    const startLeft = strip.scrollLeft
-    const targetLeft = Math.max(0, Math.min(maxScroll, startLeft + delta))
-
-    if (Math.abs(targetLeft - startLeft) < 2 || typeof window.requestAnimationFrame !== 'function') {
+    if (typeof window.requestAnimationFrame !== 'function') {
       strip.scrollLeft = targetLeft
       return
     }
 
-    const duration = 340
-    const startTime = performance.now()
+    // Agar animatsiya allaqachon ishlayotgan bo'lsa, uni qayta noldan boshlamasdan
+    // yangi targetLeftRef tomonga uzluksiz (jerk'siz) davom ettiradi.
+    if (hScrollRafRef.current) return
 
-    const step = (now: number) => {
-      const elapsed = Math.max(0, now - startTime)
-      const progress = Math.min(1, elapsed / duration)
-      // easeOutCubic
-      const eased = 1 - Math.pow(1 - progress, 3)
-      strip.scrollLeft = startLeft + (targetLeft - startLeft) * eased
-
-      if (progress < 1) {
-        hScrollRafRef.current = window.requestAnimationFrame(step)
-      } else {
-        strip.scrollLeft = targetLeft
+    const tick = () => {
+      const el = stripRef.current
+      const dest = targetLeftRef.current
+      if (!el || dest === null) {
         hScrollRafRef.current = 0
+        return
       }
+
+      const current = el.scrollLeft
+      const diff = dest - current
+
+      if (Math.abs(diff) <= 0.8) {
+        el.scrollLeft = dest
+        hScrollRafRef.current = 0
+        return
+      }
+
+      // Critically-damped lerp: shovqinsiz, tabiiy sekinlashuv
+      el.scrollLeft = current + diff * 0.16
+      hScrollRafRef.current = window.requestAnimationFrame(tick)
     }
 
-    hScrollRafRef.current = window.requestAnimationFrame(step)
+    hScrollRafRef.current = window.requestAnimationFrame(tick)
+  }, [activeId])
 
+  useEffect(() => {
     return () => {
-      if (hScrollRafRef.current) {
+      if (hScrollRafRef.current && typeof window !== 'undefined') {
         window.cancelAnimationFrame(hScrollRafRef.current)
         hScrollRafRef.current = 0
       }
     }
-  }, [activeId])
+  }, [])
 
   if (sections.length <= 1) return null
 
