@@ -73,3 +73,37 @@ claims against current code/state; references are not proof of current productio
 - UI: inspect the affected state at mobile width; check close/back, overflow and readable text.
 - Integration: explicit test DB only; check/migrate test schema first. Never use production fixtures.
 - CI already runs lint, types, unit/API, builds and E2E; do not duplicate a green unchanged run.
+
+## Working Rules
+
+### Core principle
+- Do exactly what is asked. No extra features, refactors, or "improvements" unless requested.
+- Make the smallest possible diff. Follow the existing code style, naming, and structure.
+
+### No re-analysis
+- Do not re-analyze or rewrite previous work, earlier answers, or code that already works.
+- Do not touch files or functions I did not mention.
+- Do not rescan the whole project on every request. Read only the files relevant to the task.
+
+### Workflow
+1. Read the relevant file(s) before editing. Never guess their contents.
+2. Make the change.
+3. Run a quick check (lint, build, or test) scoped to what changed, when available.
+4. Report the result briefly.
+
+### Communication
+- No long plans, preambles, or explanations. Act directly.
+- Reply format: what changed (file + one-line note), and what was verified, if anything.
+- Ask a question only when blocked, and ask exactly one specific question. Otherwise make a reasonable assumption, proceed, and state it in one line.
+- If you notice a real bug, risk, or conflict related to the task, flag it in one line. Do not fix it unprompted.
+
+### Safety
+- Ask before deleting files, folders, or data.
+- Never hardcode or print secrets, API keys, or credentials.
+- Before adding a new dependency, justify it in one line.
+
+### Frontend
+- Take colors, fonts, and spacing from design tokens in one place. No hardcoded values.
+- Mobile-first, then larger screens.
+- Reuse existing components. Create new ones only when necessary.
+
