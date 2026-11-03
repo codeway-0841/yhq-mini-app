@@ -1,15 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
-import {
-  ArrowLeft,
-  BookOpen,
-  Clock,
-  ChevronRight,
-  X,
-  Volume2,
-  Sparkles,
-  Play,
-} from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { ArrowLeft, BookOpen, Clock, ChevronRight, X, Volume2, Sparkles, User } from 'lucide-react'
 import {
   RUSADABIYOT_BLOCKS,
   RUSADABIYOT_BLOCK_STATS,
@@ -21,8 +12,6 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { parseMarkdown, type MdBlock } from '../darslik-rustili/markdown'
 import { MarkdownView } from '../darslik-rustili/MarkdownView'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
-import LiteratureBrilliantLesson from './LiteratureBrilliantLesson'
-import { findAuthorPortrait } from './literature-brilliant-data'
 import '../darslik-rustili/russian-course-home.css'
 
 interface AuthorItem {
@@ -112,13 +101,8 @@ const ERA_GRADIENTS: Record<number, string> = {
 
 export default function LiteratureCourseHome() {
   const navigate = useNavigate()
-  const [searchParams] = useSearchParams()
   const lang = useAppStore((s) => s.settings.language)
-
   const [selectedBlock, setSelectedBlock] = useState<DarslikBlockMeta | null>(null)
-  const [viewMode, setViewMode] = useState<'brilliant' | 'reference'>('brilliant')
-  const [activeBrilliantTopic, setActiveBrilliantTopic] = useState<{ index: number; title: string } | null>(null)
-
   const [blockContent, setBlockContent] = useState<string>('')
   const [blocksParsed, setBlocksParsed] = useState<MdBlock[]>([])
   const [loading, setLoading] = useState(false)
@@ -127,26 +111,6 @@ export default function LiteratureCourseHome() {
 
   const ru = lang === 'ru'
 
-  // URL parametrlari orqali avtomatik ochish (?block=1&topic=1)
-  useEffect(() => {
-    const b = searchParams.get('block')
-    const t = searchParams.get('topic')
-    if (b) {
-      const blockNum = Number(b)
-      const found = RUSADABIYOT_BLOCKS.find((x) => x.id === blockNum)
-      if (found) {
-        setSelectedBlock(found)
-        if (t !== null) {
-          const tIdx = Number(t)
-          const outline = getRusadabiyotBlockOutline(found.id)
-          const title = outline[tIdx] || `Тема ${tIdx + 1}`
-          setActiveBrilliantTopic({ index: tIdx, title })
-        }
-      }
-    }
-  }, [searchParams])
-
-  // Blok yuklash
   useEffect(() => {
     if (!selectedBlock) {
       setBlockContent('')
@@ -155,22 +119,20 @@ export default function LiteratureCourseHome() {
       setSpeaking(false)
       return
     }
-
-    if (viewMode === 'reference' && !blockContent) {
-      setLoading(true)
-      loadRusadabiyotBlock(selectedBlock.id)
-        .then((text) => {
-          setBlockContent(text)
-          setBlocksParsed(parseMarkdown(text))
-        })
-        .catch((err) => {
-          console.error('Failed to load block:', err)
-        })
-        .finally(() => {
-          setLoading(false)
-        })
-    }
-  }, [selectedBlock, viewMode, blockContent])
+    setLoading(true)
+    loadRusadabiyotBlock(selectedBlock.id)
+      .then((text) => {
+        setBlockContent(text)
+        setBlocksParsed(parseMarkdown(text))
+      })
+      .catch((err) => {
+        console.error('Failed to load block:', err)
+      })
+      .finally(() => {
+        setLoading(false)
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      })
+  }, [selectedBlock])
 
   const toggleSpeech = () => {
     if (speaking) {
@@ -183,45 +145,24 @@ export default function LiteratureCourseHome() {
     }
   }
 
-  const currentOutline = selectedBlock ? getRusadabiyotBlockOutline(selectedBlock.id) : []
-
-  // Keyingi mavzuga o'tish
-  const handleNextBrilliantTopic = () => {
-    if (!selectedBlock || activeBrilliantTopic === null) return
-    const nextIdx = activeBrilliantTopic.index + 1
-    if (nextIdx < currentOutline.length) {
-      setActiveBrilliantTopic({
-        index: nextIdx,
-        title: currentOutline[nextIdx],
-      })
-    } else {
-      setActiveBrilliantTopic(null)
+  const scrollToAuthor = (name: string) => {
+    const headings = document.querySelectorAll('h1, h2, h3, h4, figure')
+    for (const h of headings) {
+      if (h.textContent?.toLowerCase().includes(name.toLowerCase())) {
+        h.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        return
+      }
     }
   }
 
   return (
     <div className="russian-course-home min-h-screen pb-20">
-      {/* Brilliant Interaktiv Dars Modali */}
-      {selectedBlock && activeBrilliantTopic && (
-        <LiteratureBrilliantLesson
-          blockId={selectedBlock.id}
-          topicIndex={activeBrilliantTopic.index}
-          topicTitle={activeBrilliantTopic.title}
-          onClose={() => setActiveBrilliantTopic(null)}
-          onNextTopic={
-            activeBrilliantTopic.index + 1 < currentOutline.length
-              ? handleNextBrilliantTopic
-              : undefined
-          }
-        />
-      )}
-
       {/* Header */}
       <header className="sticky top-[var(--safe-top,0px)] z-20 flex items-center justify-between px-4 py-3 bg-[var(--surface-primary,#121826)]/95 backdrop-blur-md border-b border-[var(--border-subtle,#1e293b)]">
         <div className="flex items-center gap-3">
           <button
             onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}
-            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 transition-colors cursor-pointer"
+            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 transition-colors"
             aria-label={ru ? 'Назад' : 'Orqaga'}
           >
             <ArrowLeft className="w-5 h-5" />
@@ -229,12 +170,12 @@ export default function LiteratureCourseHome() {
           <div>
             <h1 className="text-lg font-bold text-slate-100 flex items-center gap-2">
               <span className="text-xl">📚</span>
-              <span>{ru ? 'Русская литература' : 'Rus adabiyoti'}</span>
+              <span>{ru ? 'Русская классическая литература' : 'Rus mumtoz adabiyoti'}</span>
             </h1>
             <p className="text-xs text-slate-400">
               {ru
-                ? 'Интерактивный Brilliant-курс для аттестации'
-                : 'Attestatsiya uchun Brilliant uslubidagi interaktiv darslik'}
+                ? 'Иллюстрированный академический курс для учителей'
+                : "O'qituvchilar uchun rasmli akademik darslik"}
             </p>
           </div>
         </div>
@@ -249,18 +190,18 @@ export default function LiteratureCourseHome() {
               <div className="absolute -right-8 -top-8 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
               <div className="relative z-10">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-3">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{ru ? '9 эпох в стиле Brilliant' : 'Brilliant uslubidagi 9 davr'}</span>
+                  <Sparkles className="w-3.5 h-3.5" />
+                  <span>{ru ? '9 эпох русской словесности' : 'Rus adabiyotining 9 davri'}</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-extrabold text-slate-100 mb-2 leading-snug">
                   {ru
-                    ? 'Интерактивный курс русской литературы'
-                    : 'Rus adabiyotining to‘liq interaktiv darsligi'}
+                    ? 'Полный иллюстрированный курс для аттестации'
+                    : 'Attestatsiya uchun to‘liq rasmli qo‘llanma'}
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
                   {ru
-                    ? 'Каждая тема разбита на пошаговые карточки: краткая теория, подлинные портреты классиков, интерактивные контрольные вопросы с мгновенной проверкой и разбором экзаменационных ловушек.'
-                    : "Har bir mavzu qadamma-qadam kartochkalarga ajratilgan: qisqa tushunarli nazariya, klassiklarning asl portretlari, matn ichidagi tezkor testlar va imtihon tuzoqlari tahlili."}
+                    ? 'От древнерусских летописей и классицизма до Золотого и Серебряного веков, военной прозы и современности. Подлинные портреты классиков, конспекты, экзаменационные ловушки и интерактивные тесты.'
+                    : "Qadimgi rus qo'lyozmalaridan to Oltin va Kumush davrlar, urush adabiyoti va zamonaviy davrgacha. Klassiklarning asl portretlari, tahlillar, imtihon tuzoqlari va interaktiv testlar."}
                 </p>
               </div>
             </div>
@@ -276,11 +217,8 @@ export default function LiteratureCourseHome() {
                 return (
                   <button
                     key={block.id}
-                    onClick={() => {
-                      setSelectedBlock(block)
-                      setViewMode('brilliant')
-                    }}
-                    className={`w-full text-left p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${gradient} bg-slate-900/60 hover:bg-slate-800/80 border transition-all duration-300 group hover:scale-[1.01] hover:shadow-xl cursor-pointer`}
+                    onClick={() => setSelectedBlock(block)}
+                    className={`w-full text-left p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${gradient} bg-slate-900/60 hover:bg-slate-800/80 border transition-all duration-300 group hover:scale-[1.01] hover:shadow-xl`}
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1 min-w-0">
@@ -332,7 +270,7 @@ export default function LiteratureCourseHome() {
                           </span>
                           <span className="flex items-center gap-1 font-medium">
                             <Clock className="w-3.5 h-3.5 text-purple-400" />
-                            {stats?.minutes ?? 30} {ru ? 'мин интерактив' : 'daqiqa'}
+                            {stats?.minutes ?? 30} {ru ? 'мин чтения' : 'daqiqa'}
                           </span>
                         </div>
                       </div>
@@ -346,9 +284,9 @@ export default function LiteratureCourseHome() {
           </div>
         ) : (
           <div className="space-y-6">
-            {/* Top Bar for Selected Era */}
+            {/* Block Reader Top Bar */}
             <div className="sticky top-[57px] z-10 -mx-4 px-4 py-3 bg-[var(--surface-primary,#121826)]/95 backdrop-blur-md border-b border-slate-800 shadow-md">
-              <div className="flex items-center justify-between gap-3 mb-2.5">
+              <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
                   <span className="text-xs font-bold uppercase tracking-wider text-purple-400">
                     {ru ? `Эпоха ${selectedBlock.id}` : `${selectedBlock.id}-davr`}
@@ -359,8 +297,19 @@ export default function LiteratureCourseHome() {
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   <button
+                    onClick={toggleSpeech}
+                    className={`p-2 rounded-xl transition-colors ${
+                      speaking
+                        ? 'bg-purple-600 text-white shadow-md'
+                        : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                    }`}
+                    aria-label={ru ? 'Озвучить' : 'Ovoz berish'}
+                  >
+                    <Volume2 className="w-4 h-4" />
+                  </button>
+                  <button
                     onClick={() => setSelectedBlock(null)}
-                    className="p-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors cursor-pointer"
+                    className="p-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors"
                     aria-label={ru ? 'Закрыть' : 'Yopish'}
                   >
                     <X className="w-4 h-4" />
@@ -368,134 +317,42 @@ export default function LiteratureCourseHome() {
                 </div>
               </div>
 
-              {/* View Mode Toggle: Brilliant vs Full Reference */}
-              <div className="flex items-center gap-2 border-t border-slate-800/80 pt-2.5">
-                <button
-                  type="button"
-                  onClick={() => setViewMode('brilliant')}
-                  className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    viewMode === 'brilliant'
-                      ? 'bg-purple-600 text-white shadow-md'
-                      : 'bg-slate-800/70 text-slate-400 hover:text-slate-200'
-                  }`}
-                >
-                  <Sparkles size={14} className="text-amber-400" />
-                  <span>{ru ? 'Brilliant уроки' : 'Brilliant darslar'}</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setViewMode('reference')}
-                  className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    viewMode === 'reference'
-                      ? 'bg-purple-600 text-white shadow-md'
-                      : 'bg-slate-800/70 text-slate-400 hover:text-slate-200'
-                  }`}
-                >
-                  <BookOpen size={14} />
-                  <span>{ru ? 'Полный конспект' : "To'liq konspekt"}</span>
-                </button>
-              </div>
+              {/* Quick Jump Authors Carousel */}
+              {ERA_AUTHORS[selectedBlock.id] && ERA_AUTHORS[selectedBlock.id].length > 1 && (
+                <div className="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+                  <span className="text-[11px] font-semibold text-slate-400 shrink-0 flex items-center gap-1">
+                    <User className="size-3 text-purple-400" />
+                    {ru ? 'Авторы:' : 'Mualliflar:'}
+                  </span>
+                  {ERA_AUTHORS[selectedBlock.id].map((author, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => scrollToAuthor(author.name)}
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-purple-900/40 border border-slate-700/60 hover:border-purple-500/40 text-xs font-medium text-slate-200 transition-all shrink-0 active:scale-95"
+                    >
+                      <img
+                        src={author.img}
+                        alt={author.name}
+                        className="size-4 rounded-full object-cover"
+                        loading="lazy"
+                      />
+                      <span>{author.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* BRILLIANT MODE: List of Topics with Interactive Launchers */}
-            {viewMode === 'brilliant' ? (
-              <div className="space-y-3 pt-2">
-                <div className="p-4 rounded-2xl bg-purple-950/20 border border-purple-500/20 flex items-center gap-3">
-                  <span className="text-2xl p-2 rounded-xl bg-purple-500/10 shrink-0">✨</span>
-                  <div>
-                    <h3 className="text-sm font-bold text-slate-100">
-                      {ru ? 'Пошаговые интерактивные карточки' : 'Qadamma-qadam interaktiv kartochkalar'}
-                    </h3>
-                    <p className="text-xs text-slate-400 mt-0.5">
-                      {ru
-                        ? 'Выберите любую тему, чтобы начать интерактивный урок с вопросами и портретами'
-                        : 'Mavzuni tanlang va Brilliant uslubida o‘rganishni boshlang'}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-2.5">
-                  {currentOutline.map((topicTitle, idx) => {
-                    const portrait = findAuthorPortrait(topicTitle)
-
-                    return (
-                      <div
-                        key={idx}
-                        className="group flex items-center justify-between gap-3 p-4 rounded-2xl bg-slate-900/70 hover:bg-slate-800/90 border border-slate-800 hover:border-purple-500/40 transition-all shadow-xs"
-                      >
-                        <div className="flex items-center gap-3.5 min-w-0">
-                          {portrait ? (
-                            <img
-                              src={portrait.img}
-                              alt={portrait.name}
-                              className="size-11 rounded-xl object-cover ring-2 ring-purple-500/30 shrink-0"
-                            />
-                          ) : (
-                            <span className="grid size-11 place-items-center rounded-xl bg-purple-500/10 text-purple-400 font-extrabold text-sm shrink-0">
-                              {idx + 1}
-                            </span>
-                          )}
-
-                          <div className="min-w-0">
-                            <h4 className="text-sm sm:text-base font-bold text-slate-100 truncate group-hover:text-purple-300 transition-colors">
-                              {topicTitle}
-                            </h4>
-                            <div className="flex items-center gap-2 mt-1 text-xs text-slate-400">
-                              <span className="flex items-center gap-1 font-medium text-purple-400">
-                                <Sparkles size={12} />
-                                <span>{ru ? 'Brilliant-урок' : 'Brilliant dars'}</span>
-                              </span>
-                              <span>•</span>
-                              <span>~4 мин</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <button
-                          type="button"
-                          onClick={() => setActiveBrilliantTopic({ index: idx, title: topicTitle })}
-                          className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 active:scale-95 text-white font-bold text-xs sm:text-sm shrink-0 transition-transform cursor-pointer shadow-md"
-                        >
-                          <Play size={14} className="fill-white" />
-                          <span>{ru ? 'Начать' : 'Boshlash'}</span>
-                        </button>
-                      </div>
-                    )
-                  })}
-                </div>
+            {loading ? (
+              <div className="py-24 text-center">
+                <div className="inline-block size-8 animate-spin rounded-full border-3 border-purple-500 border-t-transparent mb-3" />
+                <p className="text-slate-400 text-sm font-medium">
+                  {ru ? 'Загрузка академического конспекта...' : 'Akademik konspekt yuklanmoqda...'}
+                </p>
               </div>
             ) : (
-              /* REFERENCE MODE: Full Markdown */
-              <div className="space-y-6">
-                <div className="flex items-center justify-between pb-2 border-b border-slate-800">
-                  <span className="text-xs text-slate-400 font-medium">
-                    {ru ? 'Академический полный текст' : 'Akademik to‘liq matn'}
-                  </span>
-                  <button
-                    onClick={toggleSpeech}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer ${
-                      speaking
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                    }`}
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                    <span>{speaking ? (ru ? 'Остановить' : "To'xtatish") : (ru ? 'Озвучить' : 'Ovoz berish')}</span>
-                  </button>
-                </div>
-
-                {loading ? (
-                  <div className="py-24 text-center">
-                    <div className="inline-block size-8 animate-spin rounded-full border-3 border-purple-500 border-t-transparent mb-3" />
-                    <p className="text-slate-400 text-sm font-medium">
-                      {ru ? 'Загрузка академического конспекта...' : 'Akademik konspekt yuklanmoqda...'}
-                    </p>
-                  </div>
-                ) : (
-                  <div className="prose prose-invert max-w-none text-slate-200">
-                    <MarkdownView blocks={blocksParsed} />
-                  </div>
-                )}
+              <div className="prose prose-invert max-w-none text-slate-200">
+                <MarkdownView blocks={blocksParsed} />
               </div>
             )}
           </div>

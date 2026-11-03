@@ -847,7 +847,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             progressPct: itemIdx === 0 ? 15 : 0,
             state: 'active',
             isNew: itemIdx === 0 && meta.isNew,
-            onClick: () => navigate(`/darslik/rus-adabiyot?block=${block.id}&topic=${itemIdx}`),
+            onClick: () => navigate(`/darslik/rus-adabiyot?block=${block.id}`),
           }
         })
 

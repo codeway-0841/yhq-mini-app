@@ -11,7 +11,6 @@ import { registerModal } from '../../../shared/lib/navigation'
 import { getDuelHistory, type DuelHistoryRecord } from '../duel-history'
 import { DuelLeaderboardView } from './DuelLeaderboardView'
 import { PageHeader } from '../../../shared/components/ui/page-header'
-import { BossCard } from '../../boss'
 
 interface IdleScreenProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -488,11 +487,6 @@ export function IdleScreen({
           <span>{connected ? effectiveOnlineCount : '—'}</span>
           <ArrowRight size={16} className="text-pmuted" />
         </button>
-      </div>
-
-      {/* Haftalik jang (Boss Battle) — duel kirganda pastda ko'rinadi */}
-      <div className="lg:col-span-12 w-full pt-1">
-        <BossCard />
       </div>
     </div>
   )
