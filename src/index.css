@@ -107,6 +107,17 @@ html::-webkit-scrollbar { display: none; }
 .route-page { scrollbar-width: none; }
 .route-page::-webkit-scrollbar { display: none; }
 
+/* .no-scrollbar yordamchi utility */
+.no-scrollbar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
 /* ═══ SAFE-AREA TIZIMI — YAGONA MANBA (2026-09-01 TG fullscreen/APK audit) ═══
    UCH muhit qamrab olinadi (qaysi kattaroq bo'lsa o'sha g'alaba qozonadi):
    - Telegram Mini App FULLSCREEN (Bot API 8.0+): TG client CSS var inject

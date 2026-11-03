@@ -6,9 +6,6 @@ import { leaderboardPageCaches } from '../../../shared/lib/leaderboard-cache'
 import type { LeagueWeekly } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
-import ModalShell from '../../../shared/components/ModalShell'
-import { Button } from '../../../shared/components/ui/button'
-import { SpecCard } from '../../../shared/components/ui/spec'
 
 export const BRILLIANT_LEAGUES = [
   { id: 'hydrogen', name: 'Hydrogen', level: 1 },
@@ -172,16 +169,16 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
 
   return (
     <>
-      <div className="mx-4 mb-2 rounded-2xl bg-pcard border-2 border-pline p-3.5 shadow-[0_2px_0_var(--p-line)] transition-colors">
+      <div className="mx-4 mb-3 rounded-3xl bg-pcard border border-pline/50 p-4 transition-colors">
         {/* ── Karta Sarlavhasi (Brilliant rasmi, Liga nomi, 5d left va info ikonkasi) ── */}
-        <div className="flex items-center justify-between pb-2.5">
+        <div className="flex items-center justify-between pb-3">
           <div className="flex items-center gap-3">
-            <LeagueShield tierId={currentTierId} size={40} />
+            <LeagueShield tierId={currentTierId} size={42} />
             <div>
-              <h3 className="font-display text-[17.5px] font-bold tracking-tight text-pfg leading-tight">
+              <h3 className="font-display text-[18px] font-bold tracking-tight text-pfg leading-tight">
                 {leagueTitle}
               </h3>
-              <p className="mt-0.5 text-[12.5px] font-semibold text-pmuted">
+              <p className="mt-0.5 text-[12.5px] font-normal text-pmuted">
                 {subtitle}
               </p>
             </div>
@@ -194,10 +191,10 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
               setSelectedModalTierId(currentTierId)
               setShowInfoModal(true)
             }}
-            className="flex size-8 shrink-0 items-center justify-center rounded-xl text-pmuted transition-colors hover:bg-pline/40 hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
+            className="flex size-8 shrink-0 items-center justify-center rounded-full text-pmuted transition-colors hover:bg-pline/40 hover:text-pfg active:scale-95 focus-visible:outline-none cursor-pointer"
             aria-label="Liga ma'lumotlari"
           >
-            <Info size={20} strokeWidth={2} />
+            <Info size={20} strokeWidth={1.8} />
           </button>
         </div>
 
@@ -220,9 +217,9 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                   ref={isUser ? userRowRef : undefined}
                   key={`${entry.rank}-${entry.userId || entry.name}`}
                   className={cn(
-                    'flex items-center gap-2.5 px-2.5 py-2 rounded-xl transition-colors duration-150',
+                    'flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-colors duration-150',
                     isUser
-                      ? 'bg-psurface'
+                      ? 'bg-black/[0.05] dark:bg-white/[0.08]'
                       : 'hover:bg-psurface/40'
                   )}
                 >
@@ -270,78 +267,68 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
       </div>
     </div>
 
-      {/* ── KIVVI Kanonik Liga Modali (ModalShell + SpecCard + Primary Footer) ── */}
+      {/* ── Brilliant 1:1 League Bottom Sheet (media_1793701590218_d0ac11ce.png) ── */}
       {showInfoModal && (
-        <ModalShell
-          title={`${activeModalLeague.name} League`}
-          subtitle={
-            settings.language === 'ru'
-              ? 'Еженедельный рейтинг лиги'
-              : 'Haftalik liga reytingi'
-          }
-          onClose={() => setShowInfoModal(false)}
-          closeLabel={tt('close')}
-          zIndex={60}
-          footer={
-            <Button
-              variant="default"
-              size="lg"
-              className="w-full font-bold cursor-pointer shadow-sm"
+        <div
+          className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 backdrop-blur-xs dialog-backdrop-motion"
+          onClick={() => {
+            haptics.impact('light')
+            setShowInfoModal(false)
+          }}
+        >
+          <div
+            className="w-full max-w-lg rounded-t-[32px] bg-pcard px-6 pt-8 pb-8 shadow-2xl flex flex-col items-center cursor-default"
+            style={{ animation: 'dialogSheetIn 300ms cubic-bezier(0.16, 1, 0.3, 1) both' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* 1. Qalqonlar karuseli — mutlaqo toza, scrollbarsiz, ichki borderlarsiz */}
+            <div
+              className="w-full flex items-center justify-start gap-4 py-5 px-3 overflow-x-auto overflow-y-visible select-none [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {BRILLIANT_LEAGUES.map((league, idx) => {
+                const isLocked = idx > currentTierIndex
+                const isSelected = league.id === activeModalTierId
+                return (
+                  <button
+                    key={league.id}
+                    type="button"
+                    onClick={() => {
+                      haptics.impact('light')
+                      setSelectedModalTierId(league.id)
+                    }}
+                    className={cn(
+                      'relative p-1 rounded-2xl transition-all duration-200 active:scale-95 flex flex-col items-center shrink-0 cursor-pointer outline-none border-none bg-transparent shadow-none',
+                      isSelected
+                        ? 'scale-115 opacity-100 drop-shadow-md z-10'
+                        : 'opacity-35 hover:opacity-65 scale-95'
+                    )}
+                    aria-label={`${league.name} League`}
+                  >
+                    <LeagueShield tierId={league.id} locked={isLocked} size={64} />
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* 2. Liga nomi (Markazda, qalin) */}
+            <h3 className="mt-6 text-center font-display text-[22px] font-bold text-pfg tracking-tight">
+              {activeModalLeague.name} League
+            </h3>
+
+            {/* 3. Okay tugmasi */}
+            <button
+              type="button"
               onClick={() => {
                 haptics.impact('light')
                 setShowInfoModal(false)
               }}
+              className="mt-8 w-full py-4 px-6 rounded-2xl bg-[#232323] text-white dark:bg-white dark:text-[#121212] font-bold text-[16px] transition-transform active:scale-[0.98] cursor-pointer shadow-sm text-center border-none outline-none"
             >
-              {settings.language === 'ru' ? 'Понятно' : 'Tushunarli'}
-            </Button>
-          }
-        >
-          <div className="space-y-3.5">
-            {/* Ligalar nishonlari karuseli */}
-            <SpecCard className="p-3">
-              <div className="flex items-center gap-2.5 sm:gap-3.5 py-1 overflow-x-auto no-scrollbar max-w-full px-1">
-                {BRILLIANT_LEAGUES.map((league, idx) => {
-                  const isLocked = idx > currentTierIndex
-                  const isSelected = league.id === activeModalTierId
-                  return (
-                    <button
-                      key={league.id}
-                      type="button"
-                      onClick={() => {
-                        haptics.impact('light')
-                        setSelectedModalTierId(league.id)
-                      }}
-                      className={cn(
-                        'relative p-1 rounded-2xl transition-all duration-200 active:scale-95 flex flex-col items-center shrink-0 cursor-pointer',
-                        isSelected
-                          ? 'scale-110 opacity-100 drop-shadow-sm'
-                          : 'opacity-40 hover:opacity-75 scale-95'
-                      )}
-                      aria-label={`${league.name} League`}
-                    >
-                      <LeagueShield tierId={league.id} locked={isLocked} size={56} />
-                      {isSelected && (
-                        <span className="mt-1 size-1.5 rounded-full bg-pfg shrink-0" />
-                      )}
-                    </button>
-                  )
-                })}
-              </div>
-            </SpecCard>
-
-            {/* Qoidalar matni SpecCard ichida */}
-            <SpecCard className="p-4 text-center space-y-1.5">
-              <h5 className="font-display text-[15.5px] font-bold text-pfg">
-                {settings.language === 'ru' ? 'Правила перехода' : "Ko'tarilish qoidalari"}
-              </h5>
-              <p className="text-[13px] leading-relaxed text-pmuted">
-                {settings.language === 'ru'
-                  ? 'Каждую неделю топ-15 активных участников переходят в следующую лигу. Рейтинг обновляется каждый понедельник.'
-                  : "Har haftada eng faol TOP 15 ishtirokchilar keyingi ligaga ko'tariladi. Reyting har dushanba yangilanadi."}
-              </p>
-            </SpecCard>
+              Okay
+            </button>
           </div>
-        </ModalShell>
+        </div>
       )}
     </>
   )

@@ -34,7 +34,7 @@ import AchievementsScreen, { type TabKey } from './components/AchievementsScreen
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { MilestonesPreviewSection } from './components/MilestonesPreviewSection'
 import { LeagueLeaderboardCard } from './components/LeagueLeaderboardCard'
-import { BrilliantFlameIcon, BrilliantXpIcon } from './components/BrilliantStatsIcons'
+import { BrilliantStreakIcon, BrilliantXpIcon } from './components/BrilliantStatsIcons'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
@@ -471,24 +471,24 @@ export default function Profil() {
         </div>
       </div>
 
-      {/* ── Max Streak & Lifetime XP Kartalari (Brilliant Muted Uslubi) ── */}
-      <div className="mx-4 mb-2 grid grid-cols-2 gap-2.5">
+      {/* ── Max Streak & Lifetime XP Kartalari (Brilliant 1:1 Muted Uslubi) ── */}
+      <div className="mx-4 mb-3 grid grid-cols-2 gap-2.5">
         {/* Max streak */}
         <div
           onClick={() => {
             haptics.impact('light')
             navigate('/streak')
           }}
-          className="cursor-pointer rounded-2xl bg-psurface/70 border border-pline/70 p-3 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
+          className="cursor-pointer rounded-2xl bg-psurface/80 border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
         >
           <div className="flex items-center gap-2">
-            <BrilliantFlameIcon className="size-5 shrink-0" />
-            <span className="font-display text-[21px] font-bold leading-none tracking-tight text-pfg tabular-nums">
+            <BrilliantStreakIcon className="size-5 shrink-0" />
+            <span className="font-display text-[22px] font-bold leading-none tracking-tight text-pfg tabular-nums">
               {streak || 0}
             </span>
           </div>
-          <p className="mt-1 text-[11.5px] font-medium text-pmuted">
-            {settings.language === 'ru' ? 'Серия дней' : 'Maksimal seriya'}
+          <p className="mt-1.5 text-[12px] font-normal text-pmuted">
+            {settings.language === 'ru' ? 'Макс. серия' : 'Maksimal seriya'}
           </p>
         </div>
 
@@ -498,15 +498,15 @@ export default function Profil() {
             haptics.impact('light')
             setShowLevelInfo(true)
           }}
-          className="cursor-pointer rounded-2xl bg-psurface/70 border border-pline/70 p-3 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
+          className="cursor-pointer rounded-2xl bg-psurface/80 border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
         >
           <div className="flex items-center gap-2">
             <BrilliantXpIcon className="size-5 shrink-0" />
-            <span className="font-display text-[21px] font-bold leading-none tracking-tight text-pfg tabular-nums">
+            <span className="font-display text-[22px] font-bold leading-none tracking-tight text-pfg tabular-nums">
               {xp?.toLocaleString() || 0}
             </span>
           </div>
-          <p className="mt-1 text-[11.5px] font-medium text-pmuted">
+          <p className="mt-1.5 text-[12px] font-normal text-pmuted">
             {settings.language === 'ru' ? 'Всего XP' : 'Umumiy XP'}
           </p>
         </div>
