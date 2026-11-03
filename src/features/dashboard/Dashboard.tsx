@@ -1,6 +1,5 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ChevronDown } from 'lucide-react'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useReviewPromptStore } from '../../shared/store/useReviewPromptStore'
@@ -19,8 +18,6 @@ import { LearningGuide } from './components/LearningGuide'
 import { PromoBanner, SHOW_PROMO } from './components/PromoBanner'
 import { SubjectEmpty } from './components/SubjectSwitcher'
 import { MilestoneScene, LevelUpScene } from './components/Celebrations'
-import { DailyTasksCard } from '../shop'
-import { BossCard } from '../boss'
 import { useCelebrations } from './hooks/useCelebrations'
 import {
   useDashboardSync,
@@ -126,42 +123,16 @@ export default function Dashboard() {
             </Alert>
           )}
 
-          {/* Desktop 2-ustunli Bento-grid, Mobilda esa toza 1 ustun */}
-          <div className="lg:grid lg:grid-cols-12 lg:gap-5 lg:px-4">
-            {/* Chap ustun: Progress va O'quv yo'li */}
-            <div className="lg:col-span-7 xl:col-span-8 space-y-2">
-              <ProgressCard
-                summary={learningSummary}
-                streak={dailyStreak}
-                lang={settings.language}
-                onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
-              />
+          {/* Progress va O'quv yo'li */}
+          <div className="max-w-3xl mx-auto space-y-2 lg:px-4">
+            <ProgressCard
+              summary={learningSummary}
+              streak={dailyStreak}
+              lang={settings.language}
+              onStreakPreview={() => previewMilestone(Math.max(dailyStreak, 7))}
+            />
 
-              <LearningGuide summary={learningSummary} />
-            </div>
-
-            {/* O'ng ustun: Vazifalar va Boss jang */}
-            <div className="lg:col-span-5 xl:col-span-4">
-              {/* Desktop ko'rinishi (doim ochiq, chiroyli bento blok) */}
-              <div className="hidden lg:flex lg:flex-col lg:gap-4">
-                <DailyTasksCard />
-                <BossCard />
-              </div>
-
-              {/* Mobil ko'rinishi (ixcham collapsible) */}
-              <div className="lg:hidden">
-                <details className="mb-5 group">
-                  <summary className="mx-4 flex cursor-pointer list-none items-center justify-between rounded-2xl border border-pline/60 bg-pcard/50 px-3.5 py-2.5 text-[14px] font-semibold text-pmuted transition-colors duration-150 hover:bg-pcard hover:text-pfg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary select-none touch-manipulation [&::-webkit-details-marker]:hidden group-open:mb-3">
-                    <span>{tt('guideMotivation')}</span>
-                    <ChevronDown size={17} className="text-pmuted transition-transform duration-200 ease-out group-open:rotate-180" aria-hidden="true" />
-                  </summary>
-                  <div className="pt-1">
-                    <DailyTasksCard />
-                    <BossCard />
-                  </div>
-                </details>
-              </div>
-            </div>
+            <LearningGuide summary={learningSummary} />
           </div>
 
           {/* Promo banner */}

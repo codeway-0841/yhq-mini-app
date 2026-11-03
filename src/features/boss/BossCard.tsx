@@ -35,7 +35,11 @@ function usableCachedState(): State | null {
   return daysLeftOf(cached.periodKey) > 0 ? cached : null
 }
 
-export default function BossCard() {
+interface BossCardProps {
+  className?: string
+}
+
+export default function BossCard({ className }: BossCardProps = {}) {
   const lang     = useAppStore((s) => s.settings.language)
   const tt       = useT(lang)
   const [state, setState] = useState<State | null>(usableCachedState)
@@ -54,7 +58,7 @@ export default function BossCard() {
   if (failed && !state) return null
   if (!state) {
     return (
-      <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 rounded-2xl bg-pcard p-4 shadow-xs">
+      <div className={cn('rounded-2xl bg-pcard p-4 shadow-xs', className)}>
         <Skeleton className="mb-3 h-2.5 w-24" />
         <div className="flex items-center gap-3">
           <Skeleton className="size-12 shrink-0 rounded-2xl" />
@@ -82,7 +86,7 @@ export default function BossCard() {
     : { text: `${daysLeft} ${tt('bossDaysLeft')}`, color: 'var(--p-muted)' }
 
   return (
-    <div className="mx-4 mb-5 lg:mx-0 lg:mb-0 overflow-hidden rounded-2xl bg-pcard p-4 transition-colors shadow-xs">
+    <div className={cn('overflow-hidden rounded-2xl bg-pcard p-4 transition-colors shadow-xs', className)}>
       {/* Sarlavha qatori */}
       <div className="mb-3 flex items-center justify-between gap-2">
         <div className="flex items-center gap-1.5 text-[13px] font-semibold text-pmuted">
