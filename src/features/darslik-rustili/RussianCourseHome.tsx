@@ -23,7 +23,7 @@ export default function RussianCourseHome() {
   const mastery = useDarslikMastery()
   const refreshMastery = mastery.refresh
   const [selected, setSelected] = useState<number | null>(null)
-  const [launch, setLaunch] = useState<{ blockId: number; sectionIdx: number; origin: LaunchOrigin } | null>(null)
+  const [launch, setLaunch] = useState<{ blockId: number; origin: LaunchOrigin } | null>(null)
   const dragStart = useRef<{ x: number; time: number } | null>(null)
   const dragDistance = useRef(0)
   const suppressClick = useRef(false)
@@ -38,7 +38,6 @@ export default function RussianCourseHome() {
   const requestedSection = requestedSectionRaw !== null && Number.isInteger(Number(requestedSectionRaw))
     ? Number(requestedSectionRaw)
     : undefined
-  const autoOpenReader = searchParams.get('read') === '1'
   const mapBlock = DARSLIK_BLOCKS.find((block) => block.id === requestedBlock)
   const index = selected ?? DARSLIK_BLOCKS.findIndex((block) => block.id === current.id)
   const block = DARSLIK_BLOCKS[index]
@@ -51,9 +50,8 @@ export default function RussianCourseHome() {
 
   const start = (node: HTMLElement) => {
     if (mastery.loading || launch) return
-    const targetIdx = Math.max(0, firstIncomplete === -1 ? 0 : firstIncomplete)
     if (noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
-      navigate({ pathname: location.pathname, search: `?block=${block.id}&section=${targetIdx}&read=1` })
+      navigate({ pathname: location.pathname, search: `?block=${block.id}` })
     } else {
       const source = activeRow.current ?? node
       const rect = source.getBoundingClientRect()
@@ -62,7 +60,7 @@ export default function RussianCourseHome() {
         origin.x = rect.left + Math.min(28, rect.width / 2)
         origin.y = rect.top + rect.height / 2
       }
-      setLaunch({ blockId: block.id, sectionIdx: targetIdx, origin })
+      setLaunch({ blockId: block.id, origin })
     }
   }
   const change = (next: number) => setSelected(Math.max(0, Math.min(DARSLIK_BLOCKS.length - 1, next)))
@@ -134,7 +132,7 @@ export default function RussianCourseHome() {
   }, [themeSetting, mapBlock])
 
   return <>
-    {mapBlock ? <CourseMapPage key={`${mapBlock.id}:${requestedSection ?? ''}`} initialBlockId={mapBlock.id} initialSectionIdx={requestedSection} autoOpenReader={autoOpenReader} onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })} /> :
+    {mapBlock ? <CourseMapPage key={`${mapBlock.id}:${requestedSection ?? ''}`} initialBlockId={mapBlock.id} initialSectionIdx={requestedSection} onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })} /> :
       <main className="rus-home yhq-home" style={{ '--yhq-accent': theme.accent } as CSSProperties} data-testid="russian-course-home" onClick={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('click') }}>
         <div className="rus-home-inner">
           <header className="rus-home-header">
@@ -219,6 +217,6 @@ export default function RussianCourseHome() {
           </section>
         </div>
       </main>}
-    {launch && <LessonLaunch origin={launch.origin} lang={lang} accent={theme.accent} onReveal={() => navigate({ pathname: location.pathname, search: `?block=${launch.blockId}&section=${launch.sectionIdx}&read=1` })} onFinish={() => setLaunch(null)} onCancel={() => setLaunch(null)} />}
+    {launch && <LessonLaunch origin={launch.origin} lang={lang} accent={theme.accent} onReveal={() => navigate({ pathname: location.pathname, search: `?block=${launch.blockId}` })} onFinish={() => setLaunch(null)} onCancel={() => setLaunch(null)} />}
   </>
 }

@@ -50,12 +50,10 @@ const keyOf = (blockId: number, idx: number) => `${blockId}:${idx}`
 export default function CourseMapPage({
   initialBlockId,
   initialSectionIdx,
-  autoOpenReader = false,
   onBackHome,
 }: {
   initialBlockId?: number
   initialSectionIdx?: number
-  autoOpenReader?: boolean
   onBackHome?: () => void
 } = {}) {
   const navigate = useNavigate()
@@ -72,12 +70,7 @@ export default function CourseMapPage({
   const [picked, setPicked] = useState<{ blockId: number; idx: number } | null>(null)
   /** Scroll bilan aniqlanadigan “eng yaqin mavzu” — karta shunga ergashadi. */
   const [focus, setFocus] = useState<{ blockId: number; idx: number } | null>(null)
-  const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(() => {
-    if (autoOpenReader && initialBlockId !== undefined) {
-      return { blockId: initialBlockId, idx: initialSectionIdx ?? 0 }
-    }
-    return null
-  })
+  const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(null)
   const [launch, setLaunch] = useState<{ origin: LaunchOrigin; reader: { blockId: number; idx: number; quiz?: boolean } } | null>(null)
   const [openBlocks, setOpenBlocks] = useState<Set<number>>(
     () => new Set(DARSLIK_BLOCKS.map((block) => block.id)),

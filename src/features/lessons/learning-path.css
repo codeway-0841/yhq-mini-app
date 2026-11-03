@@ -351,27 +351,28 @@ body[data-theme='dark'] .lesson-launch-canvas { background: var(--p-canvas, #0a0
   animation: lesson-launch-dive var(--launch-duration) cubic-bezier(0.2, 0, 0, 1) both;
 }
 @keyframes lesson-launch-dive {
-  0%, 20% {
-    /* Koji hovering in center with cosmic particles */
+  0%, 15% {
+    /* Uchish boshlanishi: Koji hovering in cosmic particle stream */
     transform: translateY(0) scale(1);
     opacity: 1;
   }
-  55% {
-    /* Slow descent — drifting deeper into the cosmos */
-    transform: translateY(12vh) scale(0.98);
+  50% {
+    /* Kosmos bo'ylab tez uchish: deep cruise */
+    transform: translateY(14vh) scale(0.98);
     opacity: 1;
   }
-  72% {
-    /* Bir siltab: anticipation spring — pulls UP before the dive */
-    transform: translateY(-16px) scale(0.96);
+  70% {
+    /* Bir siltab: tormozlanish va qo'nishga tayyorlanish */
+    transform: translateY(-14px) scale(0.96);
     opacity: 1;
   }
   88% {
-    /* Tez pastga dars ichiga uchish: supersonic dive into lesson */
+    /* Pastga sho'ng'ish: landing descent */
     transform: translateY(115vh) scale(0.88, 1.35);
     opacity: 1;
   }
   100% {
+    /* Qo'nish (touchdown): srazi ochilish nuqtasi */
     transform: translateY(130vh) scale(0.85, 1.4);
     opacity: 0;
   }
@@ -381,7 +382,7 @@ body[data-theme='dark'] .lesson-launch-canvas { background: var(--p-canvas, #0a0
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }
   100% { transform: translateY(var(--launch-sink)) scale(.15); opacity: 0; }
 }
-@keyframes lesson-launch-curtain { 0% { opacity: 1; } 92% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes lesson-launch-curtain { 0% { opacity: 1; } 96% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes learning-orbit { to { stroke-dashoffset: -100; } }
 @keyframes learning-float {
   0%, 100% { transform: translateY(0); }
