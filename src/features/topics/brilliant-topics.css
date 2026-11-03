@@ -1,58 +1,55 @@
 /* ==========================================================================
-   Brilliant.org /courses/ (Topics) — Senior 1:1 Pixel-Accurate Replica Styles
-   Supports Light and Dark KIVVI themes via --p-* tokens
+   Brilliant.org App Mobile & Desktop 1:1 Pixel-Accurate UI
+   Matches native Brilliant app courses screen directly from reference screenshot
    ========================================================================== */
 
 .br-courses-page {
   --br-blue: #3557ff;
-  --br-blue-tint: rgba(53, 87, 255, 0.07);
+  --br-blue-tint: #edf2fe;
   --br-green: #18a94b;
   --br-card-bg: #ffffff;
-  --br-card-border: #e5e5e5;
-  --br-card-lip: #e0e0e0;
-  --br-card-hover-border: #cccccc;
-  --br-card-hover-lip: #cccccc;
-  --br-tray-bg: #f5f5f5;
-  --br-connector-color: #dcdcdc;
-  --br-eyebrow-color: #737373;
-  --br-desc-color: #525252;
+  --br-card-border: #e6e8ec;
+  --br-card-lip: #e2e4e9;
+  --br-tray-bg: #f8fafc;
+  --br-connector-color: #e2e8f0;
+  --br-subtle: #94a3b8;
+  --br-header-gradient: linear-gradient(180deg, #f0f4ff 0%, rgba(240, 244, 255, 0.4) 60%, transparent 100%);
   width: 100%;
   max-width: 100vw;
   min-width: 0;
   overflow-x: clip;
+  background-color: var(--p-canvas, #ffffff);
 }
 
 body[data-theme='dark'] .br-courses-page {
-  --br-blue: #5273ff;
-  --br-blue-tint: rgba(82, 115, 255, 0.15);
-  --br-green: #1db954;
-  --br-card-bg: var(--p-card, #181c24);
+  --br-blue: #4f75ff;
+  --br-blue-tint: rgba(79, 117, 255, 0.15);
+  --br-green: #22c55e;
+  --br-card-bg: var(--p-card, #161920);
   --br-card-border: rgba(255, 255, 255, 0.12);
-  --br-card-lip: rgba(0, 0, 0, 0.5);
-  --br-card-hover-border: rgba(255, 255, 255, 0.24);
-  --br-card-hover-lip: rgba(0, 0, 0, 0.65);
-  --br-tray-bg: rgba(255, 255, 255, 0.04);
-  --br-connector-color: rgba(255, 255, 255, 0.16);
-  --br-eyebrow-color: #9ca3af;
-  --br-desc-color: #9ca3af;
+  --br-card-lip: rgba(0, 0, 0, 0.4);
+  --br-tray-bg: rgba(255, 255, 255, 0.03);
+  --br-connector-color: rgba(255, 255, 255, 0.15);
+  --br-subtle: #64748b;
+  --br-header-gradient: linear-gradient(180deg, rgba(53, 87, 255, 0.1) 0%, transparent 100%);
 }
 
-/* ── Top Horizontal Path Strip (Mobile < 1024px) ─────────────────────────── */
+/* ── Top Horizontal Tabs (Brilliant App 1:1) ─────────────────────────────── */
 .br-path-strip {
   width: 100%;
-  max-width: 100vw;
-  overflow: hidden;
-  background: var(--p-canvas);
+  background: var(--p-canvas, #ffffff);
   border-bottom: 1px solid var(--br-card-border);
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
 .br-path-strip-scroll {
   display: flex;
   align-items: stretch;
-  gap: 8px;
   width: 100%;
   overflow-x: auto;
-  padding: 10px 16px 0;
+  padding: 10px 14px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -61,19 +58,35 @@ body[data-theme='dark'] .br-courses-page {
   display: none;
 }
 
+.br-path-tab-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.br-path-tab-divider {
+  width: 1px;
+  height: 44px;
+  background-color: #f1f5f9;
+  margin: 0 4px;
+}
+
+body[data-theme='dark'] .br-path-tab-divider {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
 .br-path-tab {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  width: 82px;
-  padding: 0 2px 10px;
+  width: 86px;
+  padding: 0 4px 8px;
   background: transparent;
   border: none;
   cursor: pointer;
   flex-shrink: 0;
-  transition: transform 0.15s ease;
+  transition: transform 0.12s ease;
 }
 
 .br-path-tab:active {
@@ -83,44 +96,57 @@ body[data-theme='dark'] .br-courses-page {
 .br-path-tab-box {
   width: 76px;
   height: 56px;
-  border-radius: 14px;
-  border: 2px solid var(--br-card-border);
-  background: var(--br-card-bg);
+  border-radius: 16px;
+  border: 1.5px solid transparent;
+  background: #f8fafc;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
+  transition: all 0.18s ease;
+}
+
+body[data-theme='dark'] .br-path-tab-box {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-box {
-  border-color: var(--br-blue);
-  background: var(--br-blue-tint);
+  border: 2px solid var(--br-blue);
+  background: #ffffff;
   box-shadow: 0 2px 8px rgba(53, 87, 255, 0.12);
+}
+
+body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-box {
+  background: var(--br-card-bg);
+  box-shadow: 0 2px 8px rgba(79, 117, 255, 0.2);
 }
 
 .br-path-tab-label {
   margin-top: 6px;
   font-size: 12px;
-  line-height: 1.2;
-  font-weight: 500;
-  color: var(--br-eyebrow-color);
+  line-height: 1.25;
+  font-weight: 600;
+  color: #64748b;
   text-align: center;
-  max-width: 80px;
+  max-width: 82px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-label {
-  font-weight: 700;
-  color: var(--p-fg);
+  font-weight: 800;
+  color: #0f172a;
+}
+
+body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
+  color: #ffffff;
 }
 
 .br-path-tab-indicator {
   position: absolute;
   bottom: 0;
-  left: 6px;
-  right: 6px;
+  left: 12px;
+  right: 12px;
   height: 3px;
   border-radius: 999px;
   background: transparent;
@@ -131,61 +157,64 @@ body[data-theme='dark'] .br-courses-page {
   background: var(--br-blue);
 }
 
-/* ── "NEW" Green Pill Badge (Brilliant 1:1) ──────────────────────────────── */
+/* ── Path Section Hero (Gradient background, Text left, 3D Art right) ───── */
+.br-path-hero-wrap {
+  position: relative;
+  width: 100%;
+  padding: 24px 16px 12px;
+  background: var(--br-header-gradient);
+}
+
+.br-path-hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.br-path-hero-art {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.br-path-star-badge {
+  position: absolute;
+  top: -8px;
+  right: 4px;
+  font-size: 18px;
+  line-height: 1;
+  color: #fbbf24;
+  filter: drop-shadow(0 1px 2px rgba(251, 191, 36, 0.4));
+}
+
+/* ── "NEW" Green Pill Badge (Brilliant App 1:1) ──────────────────────────── */
 .br-new-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: 999px;
   background: var(--br-green);
   color: #ffffff;
   font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.35;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
   flex-shrink: 0;
 }
 
-/* ── Path Section Header (Mobile & Desktop) ──────────────────────────────── */
-.br-path-header-btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.br-path-eyebrow {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--br-eyebrow-color);
-}
-
-.br-path-desc {
-  font-size: 15px;
-  line-height: 1.45;
-  color: var(--br-desc-color);
-}
-
-/* ── Topic Cards Track & Tray ────────────────────────────────────────────── */
-.br-topics-tray {
-  margin-top: 18px;
-  width: 100%;
-  position: relative;
-}
-
+/* ── Topic Cards & Vertical Connected Stack (Brilliant App 1:1) ─────────── */
 .br-topics-track {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
+  padding: 6px 16px 24px;
 }
 
 .br-topic-node {
@@ -193,185 +222,82 @@ body[data-theme='dark'] .br-courses-page {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 580px;
 }
 
-/* Tactile 3D Brilliant Card on Mobile (< 1024px) — 1:1 with brilliant_courses_mobile.png */
+/* Card 1:1 with Brilliant screenshot */
 .br-topic-card {
   position: relative;
   width: 100%;
-  min-height: 116px;
+  min-height: 108px;
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 18px 20px;
-  border-radius: 16px;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 20px;
   background: var(--br-card-bg);
-  border: 2px solid var(--br-card-border);
-  box-shadow: 0 3px 0 0 var(--br-card-lip);
+  border: 1.5px solid var(--br-card-border);
   text-align: left;
   cursor: pointer;
-  transition: transform 0.14s ease, border-color 0.14s ease, box-shadow 0.14s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
 }
 
 .br-topic-card:hover:not(:disabled) {
-  border-color: var(--br-card-hover-border);
-  box-shadow: 0 4px 0 0 var(--br-card-hover-lip);
+  border-color: #cbd5e1;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .br-topic-card:active:not(:disabled) {
-  transform: translateY(2px);
-  box-shadow: 0 1px 0 0 var(--br-card-lip);
+  transform: scale(0.99);
 }
 
 .br-topic-card:disabled {
-  opacity: 0.58;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* Connector line between consecutive topic cards */
+/* Connector line between consecutive topic cards (2px thick, clean light gray) */
 .br-connector {
   width: 2px;
-  height: 14px;
+  height: 22px;
   background: var(--br-connector-color);
   flex-shrink: 0;
 }
 
-/* ── Desktop Layout (>= 1024px): Gray Rounded Tray + 164x164 Square Cards ── */
+/* Mini Progress Bar inside Card (Brilliant App 1:1: thin 3.5px line) */
+.br-card-progress-track {
+  width: 100%;
+  max-width: 140px;
+  height: 3.5px;
+  border-radius: 999px;
+  background-color: #e2e8f0;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+body[data-theme='dark'] .br-card-progress-track {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.br-card-progress-bar {
+  height: 100%;
+  border-radius: 999px;
+  background-color: var(--br-blue);
+  transition: width 0.3s ease;
+}
+
+/* Desktop optimization for larger screens */
 @media (min-width: 1024px) {
-  .br-topics-tray {
-    position: relative;
-    margin-top: 20px;
-    padding: 28px 32px;
-    border-radius: 20px;
-    background: var(--br-tray-bg);
-    overflow: hidden;
+  .br-path-hero-wrap {
+    padding: 32px 32px 16px;
+    border-radius: 24px;
+    margin-top: 16px;
   }
 
   .br-topics-track {
-    flex-direction: row;
-    align-items: flex-start;
-    overflow-x: auto;
-    padding-top: 2px;
-    padding-bottom: 4px;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-  }
-
-  .br-topics-track::-webkit-scrollbar {
-    display: none;
-  }
-
-  .br-topic-node {
-    flex-direction: row;
-    align-items: flex-start;
-    width: auto;
-    flex-shrink: 0;
-  }
-
-  /* On Desktop, .br-topic-card is a column: 164x164 white square box + title underneath */
-  .br-topic-card,
-  .br-topic-card:hover:not(:disabled),
-  .br-topic-card:active:not(:disabled) {
-    width: 164px;
-    min-height: 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    text-align: center;
-  }
-
-  .br-topic-card:hover:not(:disabled) {
-    transform: translateY(-2px);
-  }
-
-  .br-topic-card:active:not(:disabled) {
-    transform: translateY(1px);
-  }
-
-  .br-topic-square {
-    position: relative;
-    width: 164px;
-    height: 164px;
-    border-radius: 16px;
-    background: var(--br-card-bg);
-    border: 2px solid var(--br-card-border);
-    box-shadow: 0 3px 0 0 var(--br-card-lip);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 14px;
-    transition: border-color 0.14s ease, box-shadow 0.14s ease;
-  }
-
-  .br-topic-card:hover:not(:disabled) .br-topic-square {
-    border-color: var(--br-card-hover-border);
-    box-shadow: 0 4px 0 0 var(--br-card-hover-lip);
-  }
-
-  .br-topic-card:active:not(:disabled) .br-topic-square {
-    box-shadow: 0 1px 0 0 var(--br-card-lip);
-  }
-
-  /* Horizontal connector centered vertically against the 164px square box (82px from top) */
-  .br-connector {
-    width: 16px;
-    height: 2px;
-    margin-top: 82px;
-  }
-
-  /* Right & Left soft gradient fades inside Desktop Tray */
-  .br-tray-fade-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 72px;
-    background: linear-gradient(90deg, transparent, var(--br-tray-bg) 75%);
-    pointer-events: none;
-    z-index: 5;
-  }
-
-  .br-tray-fade-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 56px;
-    background: linear-gradient(270deg, transparent, var(--br-tray-bg) 75%);
-    pointer-events: none;
-    z-index: 5;
-  }
-
-  .br-tray-nav-btn {
-    position: absolute;
-    top: 110px;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 38px;
-    height: 38px;
-    border-radius: 999px;
-    background: var(--br-card-bg);
-    border: 1px solid var(--br-card-border);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
-    display: grid;
-    place-items: center;
-    color: var(--p-fg);
-    cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .br-tray-nav-btn:hover {
-    transform: translateY(-50%) scale(1.06);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
-  }
-
-  .br-tray-nav-btn:active {
-    transform: translateY(-50%) scale(0.96);
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
