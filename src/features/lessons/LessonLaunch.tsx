@@ -4,9 +4,9 @@ import { useT, type Lang } from '../../shared/i18n'
 import { PathMascot } from './LessonToken'
 import { RiveCanvas } from '../mascot-studio'
 
-export const LESSON_LAUNCH_REVEAL_MS = 9500
-export const LESSON_LAUNCH_MS = 10000
-export type LaunchOrigin = { x: number; y: number; size: number; sink: number }
+export const LESSON_LAUNCH_REVEAL_MS = 6500
+export const LESSON_LAUNCH_MS = 7000
+export type LaunchOrigin = { x: number; y: number; size: number; sink: number; hasMascot?: boolean }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
   const mascot = node?.querySelector<HTMLElement>('.learning-mascot')
@@ -16,7 +16,7 @@ export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
   const x = bounds ? bounds.left + bounds.width / 2 : tile ? tile.left + tile.width / 2 : window.innerWidth / 2
   const y = bounds ? bounds.top + bounds.height / 2 : tile ? tile.top + tile.height * .3 : window.innerHeight * .4
   const sink = tile ? Math.max(12, tile.top + tile.height * (87 / 130) - y) : 36
-  return { x, y, size, sink }
+  return { x, y, size, sink, hasMascot: Boolean(mascot) }
 }
 
 /** Departure → full-screen beam → settled mascot → reader reveal. */
@@ -45,7 +45,7 @@ export default function LessonLaunch({ origin, lang, onReveal, onFinish, onCance
     backdropClassName="bg-transparent" className="lesson-launch-overlay">
     <div className="lesson-launch-scene" style={style} tabIndex={0}>
       <span id={titleId} className="sr-only">{tt('pathLaunching')}</span>
-      <div className="lesson-launch-departure" aria-hidden="true"><PathMascot /></div>
+      {origin.hasMascot && <div className="lesson-launch-departure" aria-hidden="true"><PathMascot /></div>}
       <div className="lesson-launch-canvas" aria-hidden="true">
         <RiveCanvas
           file="lesson_loader_apr_13_26.riv"

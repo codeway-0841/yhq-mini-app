@@ -351,8 +351,8 @@ body[data-theme='dark'] .lesson-launch-canvas { background: var(--p-canvas, #0a0
   animation: lesson-launch-dive var(--launch-duration) cubic-bezier(0.2, 0, 0, 1) both;
 }
 @keyframes lesson-launch-dive {
-  0%, 15% {
-    /* Koji hovering in center — particles swirling */
+  0%, 20% {
+    /* Koji hovering in center with cosmic particles */
     transform: translateY(0) scale(1);
     opacity: 1;
   }
@@ -361,9 +361,9 @@ body[data-theme='dark'] .lesson-launch-canvas { background: var(--p-canvas, #0a0
     transform: translateY(12vh) scale(0.98);
     opacity: 1;
   }
-  70% {
+  72% {
     /* Bir siltab: anticipation spring — pulls UP before the dive */
-    transform: translateY(-15px) scale(0.96);
+    transform: translateY(-16px) scale(0.96);
     opacity: 1;
   }
   88% {
@@ -381,7 +381,7 @@ body[data-theme='dark'] .lesson-launch-canvas { background: var(--p-canvas, #0a0
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }
   100% { transform: translateY(var(--launch-sink)) scale(.15); opacity: 0; }
 }
-@keyframes lesson-launch-curtain { 0% { opacity: 0; } 5% { opacity: 1; } 93% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes lesson-launch-curtain { 0% { opacity: 1; } 92% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes learning-orbit { to { stroke-dashoffset: -100; } }
 @keyframes learning-float {
   0%, 100% { transform: translateY(0); }
