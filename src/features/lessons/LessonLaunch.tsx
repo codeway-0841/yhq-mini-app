@@ -4,8 +4,8 @@ import { useT, type Lang } from '../../shared/i18n'
 import { PathMascot } from './LessonToken'
 import { RiveCanvas } from '../mascot-studio'
 
-export const LESSON_LAUNCH_REVEAL_MS = 450
-export const LESSON_LAUNCH_MS = 600
+export const LESSON_LAUNCH_REVEAL_MS = 9500
+export const LESSON_LAUNCH_MS = 10000
 export type LaunchOrigin = { x: number; y: number; size: number; sink: number }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
