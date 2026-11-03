@@ -25,7 +25,7 @@ export const BRILLIANT_LEAGUES = [
 
 export type BrilliantLeagueId = (typeof BRILLIANT_LEAGUES)[number]['id']
 
-export const LOCKED_SHIELD_IMG = '/leagues/locked.png'
+export const LOCKED_SHIELD_IMG = '/leagues/locked.svg'
 
 const AVATAR_GRADIENTS = [
   'from-amber-400 to-yellow-500',
@@ -53,7 +53,7 @@ function getDaysLeftInWeek(): number {
 }
 
 /**
- * Brilliant liganing haqiqiy rasmi (Shield) komponenti
+ * Brilliant liganing qalqoni (Shield)
  */
 export function LeagueShield({
   tierId,
@@ -312,14 +312,17 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                         setSelectedModalTierId(league.id)
                       }}
                       className={cn(
-                        'relative p-1.5 rounded-2xl transition-all duration-150 active:scale-95 flex flex-col items-center shrink-0 cursor-pointer',
+                        'relative p-1 rounded-2xl transition-all duration-200 active:scale-95 flex flex-col items-center shrink-0 cursor-pointer',
                         isSelected
-                          ? 'ring-2 ring-pprimary bg-pline/30 scale-105 shadow-xs'
-                          : 'opacity-65 hover:opacity-90'
+                          ? 'scale-110 opacity-100 drop-shadow-sm'
+                          : 'opacity-40 hover:opacity-75 scale-95'
                       )}
                       aria-label={`${league.name} League`}
                     >
-                      <LeagueShield tierId={league.id} locked={isLocked} size={54} />
+                      <LeagueShield tierId={league.id} locked={isLocked} size={56} />
+                      {isSelected && (
+                        <span className="mt-1 size-1.5 rounded-full bg-pfg shrink-0" />
+                      )}
                     </button>
                   )
                 })}

@@ -8,7 +8,7 @@ import {
   RotateCcw, MessageCircle,
   Radio, Star, Share2, Download, ChevronRight, Check, Pencil,
   CloudUpload, Ticket, Award, X, SlidersHorizontal, ShoppingBag,
-  Zap, Sparkles, Settings,
+  Settings,
 } from 'lucide-react'
 import AppearanceModal from '../../shared/components/AppearanceModal'
 import { CoinIcon } from '../../shared/components/CoinIcon'
@@ -34,6 +34,7 @@ import AchievementsScreen, { type TabKey } from './components/AchievementsScreen
 import { LinkAccountSection } from './components/LinkAccountSection'
 import { MilestonesPreviewSection } from './components/MilestonesPreviewSection'
 import { LeagueLeaderboardCard } from './components/LeagueLeaderboardCard'
+import { BrilliantFlameIcon, BrilliantXpIcon } from './components/BrilliantStatsIcons'
 import { useAvatarUpload } from './hooks/useAvatarUpload'
 import { usePhoneContact } from './hooks/usePhoneContact'
 import { OTPInput } from '../auth'
@@ -470,7 +471,7 @@ export default function Profil() {
         </div>
       </div>
 
-      {/* ── Max Streak & Lifetime XP Kartalari (2-Ustun) ── */}
+      {/* ── Max Streak & Lifetime XP Kartalari (Brilliant Muted Uslubi) ── */}
       <div className="mx-4 mb-2 grid grid-cols-2 gap-2.5">
         {/* Max streak */}
         <div
@@ -478,15 +479,15 @@ export default function Profil() {
             haptics.impact('light')
             navigate('/streak')
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border-2 border-pline p-3 shadow-[0_2px_0_var(--p-line)] transition-[transform,border-color] duration-150 active:translate-y-0.5 select-none hover:border-plineStrong"
+          className="cursor-pointer rounded-2xl bg-psurface/70 border border-pline/70 p-3 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
         >
           <div className="flex items-center gap-2">
-            <Zap size={20} className="text-amber-400 fill-amber-400 shrink-0" />
-            <span className="font-display text-[22px] font-extrabold leading-none tracking-tight text-pfg tabular-nums">
+            <BrilliantFlameIcon className="size-5 shrink-0" />
+            <span className="font-display text-[21px] font-bold leading-none tracking-tight text-pfg tabular-nums">
               {streak || 0}
             </span>
           </div>
-          <p className="mt-1 text-[11px] font-semibold text-pmuted">
+          <p className="mt-1 text-[11.5px] font-medium text-pmuted">
             {settings.language === 'ru' ? 'Серия дней' : 'Maksimal seriya'}
           </p>
         </div>
@@ -497,20 +498,20 @@ export default function Profil() {
             haptics.impact('light')
             setShowLevelInfo(true)
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border-2 border-pline p-3 shadow-[0_2px_0_var(--p-line)] transition-[transform,border-color] duration-150 active:translate-y-0.5 select-none hover:border-plineStrong"
+          className="cursor-pointer rounded-2xl bg-psurface/70 border border-pline/70 p-3 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
         >
           <div className="flex items-center gap-2">
-            <Sparkles size={20} className="text-emerald-500 shrink-0" />
-            <span className="font-display text-[22px] font-extrabold leading-none tracking-tight text-pfg tabular-nums">
+            <BrilliantXpIcon className="size-5 shrink-0" />
+            <span className="font-display text-[21px] font-bold leading-none tracking-tight text-pfg tabular-nums">
               {xp?.toLocaleString() || 0}
             </span>
           </div>
-          <p className="mt-1 text-[11px] font-semibold text-pmuted">
+          <p className="mt-1 text-[11.5px] font-medium text-pmuted">
             {settings.language === 'ru' ? 'Всего XP' : 'Umumiy XP'}
           </p>
         </div>
-      </div>
-
+      </div>
+
       {/* ── REYTING / LIGA KARTASI (Brilliant uslubida) ── */}
       <LeagueLeaderboardCard />
 
