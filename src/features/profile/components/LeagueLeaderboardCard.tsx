@@ -203,7 +203,6 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
         <div
           ref={listRef}
           className="mt-1 divide-y divide-transparent space-y-1 max-h-[210px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
-          tabIndex={0}
           aria-label="Liga reyting jadvali"
         >
           {displayEntries.length === 0 ? (
@@ -218,9 +217,9 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                   ref={isUser ? userRowRef : undefined}
                   key={`${entry.rank}-${entry.userId || entry.name}`}
                   className={cn(
-                    'flex items-center gap-2.5 px-2.5 py-1.5 rounded-xl transition-[background-color,transform] duration-150',
+                    'flex items-center gap-2.5 px-2.5 py-2 rounded-xl transition-colors duration-150',
                     isUser
-                      ? 'bg-psurface ring-1 ring-pline/60 shadow-xs'
+                      ? 'bg-psurface'
                       : 'hover:bg-psurface/40'
                   )}
                 >
