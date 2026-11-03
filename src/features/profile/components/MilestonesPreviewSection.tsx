@@ -102,9 +102,9 @@ export function MilestonesPreviewSection({ stats, tt, onOpenAll }: MilestonesPre
   }, [stats])
 
   return (
-    <div className="mx-4 mb-5 rounded-2xl bg-pcard p-3.5 shadow-xs">
+    <div className="mx-4 mb-2.5 rounded-2xl bg-pcard p-3 shadow-xs shrink-0">
       {/* Header with Barchasi > */}
-      <div className="flex items-center justify-between mb-2.5">
+      <div className="flex items-center justify-between mb-2">
         <h3 className="font-display text-[14.5px] font-bold text-pfg tracking-tight">
           {tt('badgesTitle')}
         </h3>

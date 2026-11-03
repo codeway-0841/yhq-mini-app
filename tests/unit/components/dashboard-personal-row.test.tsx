@@ -39,13 +39,13 @@ function renderBar(over: Partial<React.ComponentProps<typeof TopBar>> = {}) {
 }
 
 describe('Dashboard "Personal" qatori (video 1:1)', () => {
-  it('aniq 4 element: shaxs pill, fan pill, analitika doirasi, tema doirasi', () => {
+  it('shaxs pill, fan pill, tema doirasi', () => {
     useSubjectStore.getState().setSubject('yhq')
     const { container } = renderBar()
     const pills = container.querySelectorAll('.dash-top-pill')
     const circles = container.querySelectorAll('.dash-top-circle')
     expect(pills).toHaveLength(2)
-    expect(circles).toHaveLength(2)
+    expect(circles).toHaveLength(1)
   })
 
   it('avatar doirasi video o\'lchamida (30px) va ism pill ichida turadi', () => {
@@ -66,10 +66,9 @@ describe('Dashboard "Personal" qatori (video 1:1)', () => {
     expect(props.onSubjects).toHaveBeenCalledTimes(1)
   })
 
-  it('reyting doirasi Reytingga, tema doirasi mavjud (aria-label almashadi)', () => {
+  it('tema doirasi mavjud (aria-label almashadi)', () => {
     useAppStore.setState((s) => ({ settings: { ...s.settings, theme: 'dark' } }))
     renderBar()
-    expect(screen.getByRole('button', { name: 'Reyting' })).toBeTruthy()
     expect(screen.getByRole('button', { name: 'Light mode' })).toBeTruthy()
     useAppStore.setState((s) => ({ settings: { ...s.settings, theme: 'light' } }))
     renderBar()
@@ -78,7 +77,7 @@ describe('Dashboard "Personal" qatori (video 1:1)', () => {
 
   it('tanga/do\'kon qatordan olib tashlangan (coin Profil orqali ochiladi)', () => {
     const { container } = renderBar()
-    expect(container.querySelectorAll('.dash-top-circle')).toHaveLength(2)
+    expect(container.querySelectorAll('.dash-top-circle')).toHaveLength(1)
     expect(screen.queryByRole('button', { name: /Do'kon/ })).toBeNull()
   })
 

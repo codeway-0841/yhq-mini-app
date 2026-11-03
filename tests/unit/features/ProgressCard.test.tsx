@@ -1,10 +1,5 @@
 /**
- * Dashboard progress kartasi — liga yorlig'i.
- *
- * Avval `totalCorrect >= 1000 ? 'Platinum' : ...` bilan "o'ylab topilardi",
- * haqiqiy liga esa `progress.league`da (haftalik cron yuritadi) — ikkalasi
- * mos kelmasligi mumkin edi (FIXPLAN #60). Endi karta store'dagi haqiqiy
- * qiymatni ko'rsatadi.
+ * Dashboard progress kartasi — tayyorgarlik foizi va qisqa ko'rinish.
  */
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
@@ -31,23 +26,10 @@ const renderCard = () =>
     unresolvedMistakes: 2, dueNow: 0, readinessPercent: 5,
   }} streak={2} lang="uz" />)
 
-describe('ProgressCard — liga yorlig\'i', () => {
-  it('REGRESSIYA: kam progress bilan ham store\'dagi haqiqiy league ko\'rsatiladi (guess emas)', () => {
-    // Eski heuristika totalCorrect>=1000 talab qilardi — bu yerda progress
-    // atigi 5/100, lekin server league='platinum' desa shu ko'rsatilishi kerak.
-    useAppStore.setState({ league: 'platinum' })
+describe('ProgressCard — tayyorgarlik foizi', () => {
+  it('kam progress bilan ham tayyorgarlik foizi to\'g\'ri ko\'rsatiladi', () => {
     renderCard()
-    expect(screen.getByText('Platina')).toBeInTheDocument()
-  })
-
-  it.each([
-    ['bronze', 'Bronza'],
-    ['silver', 'Kumush'],
-    ['gold', 'Oltin'],
-    ['platinum', 'Platina'],
-  ] as const)('league=%s → "%s" ko\'rsatiladi', (league, label) => {
-    useAppStore.setState({ league })
-    renderCard()
-    expect(screen.getByText(label)).toBeInTheDocument()
+    expect(screen.getByText('5')).toBeInTheDocument()
+    expect(screen.getByText('5 / 100')).toBeInTheDocument()
   })
 })

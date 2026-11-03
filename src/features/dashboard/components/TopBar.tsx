@@ -1,6 +1,5 @@
 import { memo, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Sun, Moon, ChevronDown, ChevronRight, Trophy } from 'lucide-react'
+import { Sun, Moon, ChevronDown, ChevronRight } from 'lucide-react'
 import { useAppStore, type ApiUser } from '../../../shared/store/useAppStore'
 import { avatarSrcFor } from '../../../shared/api'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -61,7 +60,6 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
   onSettings?: () => void
   onProfile: () => void
 }) {
-  const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
   const subject = useSubjectStore((s) => s.subject)
@@ -153,18 +151,8 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
           </button>
         )}
 
-        {/* 3–4 — O'ng guruh: ikkita shisha doira (video bilan bir xil o'lcham) */}
+        {/* O'ng guruh: mavzu almashtirish doirasi */}
         <div className="ml-auto flex shrink-0 items-center gap-2 xs:gap-3 sm:gap-3.5">
-          {/* 3 — Reyting (kubok) */}
-          <button
-            type="button"
-            onClick={() => { playSound('click'); haptics.impact('light'); navigate('/reyting') }}
-            aria-label={tt('leaderboard')}
-            className="dash-top-circle dash-top-press"
-          >
-            <Trophy size={19} strokeWidth={2} />
-          </button>
-
           <button
             type="button"
             onClick={toggleTheme}
