@@ -16,9 +16,9 @@ export type PathMascotAnimation =
 export type PathMascotVariant = 'tile' | 'avatar'
 
 const RIVE_ANIMATION: Record<PathMascotAnimation, string> = {
-  idle: 'idle', wave: 'powerUp_one', happy: 'powerUp_two',
-  oops: 'idle', thinking: 'powerUp_idle ', celebrate: 'powerUp_three',
-  level_up: 'powerUp_three', sleep: 'idle',
+  idle: 'wave_oneBubble', wave: 'powerUp_one', happy: 'powerUp_two',
+  oops: 'wave_oneBubble', thinking: 'wave_oneBubble', celebrate: 'powerUp_three',
+  level_up: 'powerUp_three', sleep: 'wave_oneBubble',
 }
 
 export function PathMascot({
@@ -34,7 +34,7 @@ export function PathMascot({
     <span className="learning-mascot" data-variant={variant} data-animation={animation} aria-hidden="true">
       <RiveCanvas
         file="koji_speech_apr_22_26.riv"
-        animation={RIVE_ANIMATION[animation] || 'idle'}
+        animation={RIVE_ANIMATION[animation] || 'wave_oneBubble'}
         label="Koji"
         fit="contain"
         play={!noAnimation && !reducedMotion}

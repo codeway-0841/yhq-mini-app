@@ -471,7 +471,7 @@ export default function Profil() {
         </div>
       </div>
 
-      {/* ── Max Streak & Lifetime XP Kartalari (Brilliant 1:1 Muted Uslubi) ── */}
+      {/* ── Max Streak & Lifetime XP Kartalari (Brilliant 1:1 Oq Karta Uslubi) ── */}
       <div className="mx-4 mb-3 grid grid-cols-2 gap-2.5">
         {/* Max streak */}
         <div
@@ -479,7 +479,7 @@ export default function Profil() {
             haptics.impact('light')
             navigate('/streak')
           }}
-          className="cursor-pointer rounded-2xl bg-psurface/80 border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
+          className="cursor-pointer rounded-2xl bg-pcard border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
         >
           <div className="flex items-center gap-2">
             <BrilliantStreakIcon className="size-5 shrink-0" />
@@ -498,7 +498,7 @@ export default function Profil() {
             haptics.impact('light')
             setShowLevelInfo(true)
           }}
-          className="cursor-pointer rounded-2xl bg-psurface/80 border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:bg-psurface"
+          className="cursor-pointer rounded-2xl bg-pcard border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
         >
           <div className="flex items-center gap-2">
             <BrilliantXpIcon className="size-5 shrink-0" />

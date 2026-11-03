@@ -27,7 +27,10 @@ export function applyAuthSession(data: AuthResponse): void {
   void flushOutbox(data.user.id)
 
   if (typeof window !== 'undefined') {
-    window.location.hash = '#/'
+    const h = window.location.hash
+    if (!h.startsWith('#/verify-email') && !h.startsWith('#/reset-password') && !h.startsWith('#/maskotlar')) {
+      window.location.hash = '#/'
+    }
   }
   useAppStore.setState({ initialized: true })
 }

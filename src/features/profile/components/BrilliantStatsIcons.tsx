@@ -25,27 +25,26 @@ export const BrilliantStreakIcon = memo(function BrilliantStreakIcon({ className
 
 /**
  * Brilliant.org ning original 4 qirrali zumrad yulduzcha (XP Sparkle) ikonasi
- * Katta 4 burchakli yulduz va tepasida kichik yordamchi uchqun.
+ * Rasmga mos: kattaligi Streak chaqmog'i bilan teng (size-5), to'qroq zumrad (#00A86B / #059669)
  */
 export const BrilliantXpIcon = memo(function BrilliantXpIcon({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 24 24"
+      viewBox="0 0 20 20"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={cn('size-5 shrink-0 select-none text-[#10B981]', className)}
+      className={cn('size-5 shrink-0 select-none text-[#00A86B]', className)}
       aria-hidden="true"
     >
       {/* Asosiy 4 qirrali yulduz */}
       <path
-        d="M10 3C10.2 7.4 13.6 10.8 18 11C13.6 11.2 10.2 14.6 10 19C9.8 14.6 6.4 11.2 2 11C6.4 10.8 9.8 7.4 10 3Z"
+        d="M10 2C10.2 6.4 13.6 9.8 18 10C13.6 10.2 10.2 13.6 10 18C9.8 13.6 6.4 10.2 2 10C6.4 9.8 9.8 6.4 10 2Z"
         fill="currentColor"
       />
       {/* Yuqori o'ng burchakdagi kichik uchqun */}
       <path
-        d="M19 2C19.1 3.5 20.5 4.9 22 5C20.5 5.1 19.1 6.5 19 8C18.9 6.5 17.5 5.1 16 5C17.5 4.9 18.9 3.5 19 2Z"
+        d="M16 1.5C16.1 2.8 17.2 3.9 18.5 4C17.2 4.1 16.1 5.2 16 6.5C15.9 5.2 14.8 4.1 13.5 4C14.8 3.9 15.9 2.8 16 1.5Z"
         fill="currentColor"
-        opacity="0.9"
       />
     </svg>
   )

@@ -20,9 +20,8 @@ describe('maskot animatsiyalari', () => {
     useAppStore.setState((state) => ({ settings: { ...state.settings, language: 'uz' } }))
   })
 
-  it('registers all seven local Rive assets and offers their exact timeline names', () => {
-    expect(MASCOT_ANIMATIONS).toHaveLength(7)
-    expect(new Set(MASCOT_ANIMATIONS.map((item) => item.file)).size).toBe(7)
+  it('registers all local Rive assets and offers their exact timeline names', () => {
+    expect(MASCOT_ANIMATIONS).toHaveLength(13)
     for (const item of MASCOT_ANIMATIONS) {
       expect(item.file).toMatch(/\.riv$/)
       expect(item.animations.length).toBeGreaterThan(1)
@@ -34,9 +33,9 @@ describe('maskot animatsiyalari', () => {
   it('changes the live animation when a card action is pressed', () => {
     render(<MemoryRouter><MascotStudioPage /></MemoryRouter>)
     const group = screen.getByRole('group', { name: /Gapirayotgan Koji: Harakatlar/ })
-    expect(screen.getByTestId('canvas-Gapirayotgan Koji')).toHaveTextContent('idle')
+    expect(screen.getByTestId('canvas-Gapirayotgan Koji')).toHaveTextContent('wave_oneBubble')
     fireEvent.click(group.querySelectorAll('button')[1])
-    expect(screen.getByTestId('canvas-Gapirayotgan Koji')).toHaveTextContent('powerUp_one')
+    expect(screen.getByTestId('canvas-Gapirayotgan Koji')).toHaveTextContent('wave_twoBubble')
     expect(group.querySelectorAll('button')[1]).toHaveAttribute('aria-pressed', 'true')
   })
 
@@ -44,7 +43,7 @@ describe('maskot animatsiyalari', () => {
     const { container } = render(<PathMascot />)
     const canvas = screen.getByTestId('canvas-Koji')
     expect(canvas).toBeInTheDocument()
-    expect(canvas).toHaveTextContent('idle')
+    expect(canvas).toHaveTextContent('wave_oneBubble')
     expect(container.querySelector('img')).toBeNull()
   })
 })

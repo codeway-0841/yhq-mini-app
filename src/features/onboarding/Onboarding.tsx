@@ -1,45 +1,19 @@
-import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import type { LucideIcon } from 'lucide-react'
-import { Check, Send, Sparkles, BookOpen, Zap, Trophy } from 'lucide-react'
-import { SUBJECTS } from '../../shared/config/subjects'
-import { useSubjectStore } from '../../shared/store/useSubjectStore'
-import { useAppStore } from '../../shared/store/useAppStore'
-import { useT, type Keys } from '../../shared/i18n'
-import { getTelegramUser } from '../../platform/telegram'
-import { TelegramLoginPanel } from '../auth'
-import { SegmentedProgressPill } from './components/SegmentedProgressPill'
-import { FeatureBenefitCard } from './components/FeatureBenefitCard'
-import { SyncScreen } from './components/SyncScreen'
-import { OnboardingBackground } from './components/OnboardingBackground'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { ChevronLeft } from 'lucide-react'
+import { SignalIndicator } from './illustrations/SignalIndicator'
+import { KojiMascot } from './KojiMascot'
+import {
+  type OnboardingStep,
+  type OnboardingState,
+  ONBOARDING_STEPS_ORDER,
+  STEP_PROGRESS,
+} from './types'
 
-/**
- * ═══════════════════════════════════════════════════════════════════════════
- * ONBOARDING — IMG_0928.MOV bilan 1:1 (kadrma-kadr o'lchangan taymline)
- *
- * Video (384×832 kadr, 91.6s) — animatsiya taymline'i:
- *   9.55  welcome paydo bo'ladi — elementlar navbat bilan blur-in
- *         logo 9.70 · sarlavha 10.00 · izoh 10.10 · qatorlar 10.25/10.40/
- *         10.50/10.65 · tugma 10.95
- *   12.15–12.45  butun kontent blurlanib so'nadi
- *   13.0  loading: spinner + "Looking for your data..." (18.5 gacha turadi)
- *   18.6–19.1  keyingi ekran blur-in bilan kiradi
- *
- * BOSQICHLAR TARTIBI (2026-10): welcome → fan → Telegram kirish → LOADING →
- * ilova. Ya'ni video'dagi loading ekrani oxiriga ko'chirildi: ma'lumotlar
- * login'dan keyin yuklanadi va shundan keyingina ilova ochiladi.
- *
- * Har bir vaqt CSS (index.css: .ob-reveal / .ob-hide) va shu fayldagi
- * OB_TIMING orqali boshqariladi — ikkalasi birga o'zgartirilishi kerak.
- * ═══════════════════════════════════════════════════════════════════════════
- */
 export const OB_TIMING = {
-  /** Bitta elementning blur-in davomiyligi (CSS .ob-reveal bilan bir xil) */
-  reveal: 460,
-  /** Blur-out davomiyligi (CSS .ob-hide bilan bir xil) */
+  slide: 300,
+  reveal: 250,
   exit: 300,
-  /** Yakuniy LOADING ekrani ushlab turiladigan vaqt (video: 13.0 → 18.6) */
   syncHold: 5400,
-  /** Yakuniy CTA bosilgach chiqish animatsiyasi boshlanishigacha (press feedback) */
   finish: 120,
   welcome: {
     logo: 0,
@@ -49,17 +23,7 @@ export const OB_TIMING = {
     cardStep: 120,
     button: 1160,
   },
-  picker: {
-    title: 0,
-    sub: 60,
-    card: 130,
-    /** Birlamchi CTA */
-    cta: 270,
-  },
 } as const
-
-type Stage = 'welcome' | 'sync' | 'subject' | 'telegram'
-type Phase = 'enter' | 'exit'
 
 const isUnitTest =
   typeof process !== 'undefined' &&
@@ -76,445 +40,671 @@ function prefersReducedMotion(): boolean {
   }
 }
 
-/** CSS maxsus xususiyat bilan reveal kechikishi */
-function reveal(delayMs: number): CSSProperties {
-  return { '--ob-delay': `${delayMs}ms` } as CSSProperties
-}
-
-const FEATURES: ReadonlyArray<{ key: Keys; icon: LucideIcon; color: string }> = [
-  { key: 'obFeatAiTitle', icon: Sparkles, color: 'text-[#FFB74D]' },
-  { key: 'obFeatBankTitle', icon: BookOpen, color: 'text-[#7CC8FF]' },
-  { key: 'obFeatOfflineTitle', icon: Zap, color: 'text-[#CDA6FF]' },
-  { key: 'obFeatCommunityTitle', icon: Trophy, color: 'text-[#FF9AAE]' },
-]
-
-// ══════════════════════ 1. WELCOME (video 9.55 – 12.15) ══════════════════════
-function WelcomeStep({ onNext, instant }: { onNext: () => void; instant: boolean }) {
-  const lang = useAppStore((s) => s.settings.language)
-  const tt = useT(lang)
-  const T = OB_TIMING.welcome
-  const d = (ms: number) => reveal(instant ? 0 : ms)
-
-  return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      {/* Qadam indikatori — video: y≈70px, 67×21 kapsula */}
-      <header className="mt-3 flex h-11 shrink-0 items-center">
-        <SegmentedProgressPill active={0} />
-      </header>
-
-      {/* Video: kapsula→logo oralig'i 88px. Ortiqcha bo'shliq FAQAT shu yerda
-          to'planadi — qatorlar va CTA orasidagi masofa hech qachon o'zgarmaydi
-          (video bilan bir xil 34px). */}
-      <div className="min-h-0 flex-1" aria-hidden="true" />
-
-      {/* Brend belgisi — oq monogramma 46px, MUZLATILGAN (video: suzmaydi) +
-          ochilishdagi "KIVVI" yozuvi (video 9.2-9.9s: yozuv so'nib ketadi) */}
-      <div className="ob-reveal relative flex shrink-0 flex-col items-center lg:hidden" style={d(T.logo)}>
-        <picture className="flex items-center justify-center">
-          <source srcSet="/images/splash-mark.webp" type="image/webp" />
-          <img
-            src="/images/splash-mark.png"
-            alt="KIVVI"
-            width={46}
-            height={46}
-            decoding="async"
-            className="size-[46px] object-contain drop-shadow-[0_6px_18px_rgba(10,132,255,0.4)]"
-          />
-        </picture>
-        <span className="brand-wordmark select-none" aria-hidden="true">
-          KIVVI
-        </span>
-      </div>
-
-      {/* Sarlavha — 2 qator, 40px/42px, markazda (video: y≈288–372) */}
-      <h1
-        className="ob-reveal mt-[clamp(16px,6.4vh,51px)] shrink-0 text-center text-[clamp(26px,10.25vw,42px)] font-bold leading-[1.05] tracking-[-0.022em] text-white"
-        style={d(T.title)}
-      >
-        {tt('obWelcomeA')} {tt('obWelcomeB')}
-        <br />
-        {tt('obHeroLine2')}
-      </h1>
-
-      <p
-        className="ob-reveal mt-[clamp(10px,3.5vh,28px)] shrink-0 text-center text-[16px] leading-[22px] text-white/70"
-        style={d(T.sub)}
-      >
-        {tt('obWelcomeSub')}
-      </p>
-
-      {/* 4 ta afzallik qatori — har biri alohida blur-in (video 10.25–10.75) */}
-      <div className="mt-[clamp(12px,3.8vh,30px)] grid shrink-0 grid-cols-1 gap-[9px] lg:grid-cols-1">
-        {FEATURES.map((f, i) => (
-          <div key={f.key} className="ob-reveal" style={d(T.cardFirst + i * T.cardStep)}>
-            <FeatureBenefitCard
-              icon={f.icon}
-              iconColor={f.color}
-              title={tt(f.key)}
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Video: qatorlar→CTA oralig'i QAT'IY 34px */}
-      <div
-        className="ob-reveal shrink-0 pt-[34px] pb-[calc(25px+var(--safe-bottom,0px))]"
-        style={d(T.button)}
-      >
-        <button
-          type="button"
-          onClick={onNext}
-          className="flex h-[54px] w-full items-center justify-center rounded-full bg-white px-5 text-[17px] font-semibold text-black transition-transform duration-150 active:scale-[0.97] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-        >
-          {tt('obStart')}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-// ══════════════════ 2. FAN TANLASH (video 18.6 – 20.8) ═════════════════════
-function SubjectStep({
-  onNext,
-  onBack,
-  instant,
-}: {
-  onNext: () => void
-  onBack: () => void
-  instant: boolean
-}) {
-  const lang = useAppStore((s) => s.settings.language)
-  const tt = useT(lang)
-  const { subjectId, setSubject } = useSubjectStore()
-  const [picked, setPicked] = useState(subjectId)
-  const T = OB_TIMING.picker
-  const d = (ms: number) => reveal(instant ? 0 : ms)
-
-  const handleSelect = (id: string) => {
-    setPicked(id)
-    setSubject(id)
-  }
-
-  return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <header className="mt-3 flex h-11 shrink-0 items-center">
-        <SegmentedProgressPill active={1} onBack={onBack} backLabel={tt('obBack')} />
-      </header>
-
-      <h2
-        className="ob-reveal mt-[clamp(16px,5.2vh,40px)] shrink-0 text-center text-[19px] font-semibold leading-[23px] tracking-[-0.015em] text-white"
-        style={d(T.title)}
-      >
-        {tt('obSubjectTitle')}
-      </h2>
-
-      {/* Fanlar — 2 USTUNLI grid (tile): tanlov shu ekranda, modal YO'Q.
-          Izoh matni olib tashlandi (2026-10) — sarlavha o'zi yetarli. */}
-      <div
-        className="ob-reveal mt-[clamp(16px,3vh,26px)] min-h-0 flex-1"
-        style={d(T.card)}
-      >
-        <div
-          role="radiogroup"
-          aria-label={tt('obSubjectTitle')}
-          className="ob-list-scroll grid h-full grid-cols-2 content-start gap-[8px] overflow-y-auto overscroll-contain px-[7px] pb-3"
-        >
-          {SUBJECTS.map((s) => {
-            const active = picked === s.id
-            const name = lang === 'ru' ? s.nameRu : s.name
-            return (
-              <button
-                key={s.id}
-                type="button"
-                role="radio"
-                aria-checked={active}
-                aria-label={name}
-                disabled={!s.available}
-                onClick={() => s.available && handleSelect(s.id)}
-                className={`relative flex h-[56px] shrink-0 items-center justify-center rounded-2xl px-3 text-center transition-[background-color,transform] duration-150 ${
-                  !s.available
-                    ? 'cursor-not-allowed bg-white/[0.05] opacity-40'
-                    : active
-                      ? 'bg-white/[0.22] cursor-pointer'
-                      : 'bg-white/[0.07] cursor-pointer hover:bg-white/[0.12] active:scale-[0.98]'
-                }`}
-              >
-                {/* Ikonka (logo) YO'Q — nom; tanlanganda nom oldida yashil "pitechka".
-                    Badge burchakda EMAS: highlight bilan ustma-ust tushmasin. */}
-                <span className="flex items-center justify-center gap-1.5">
-                  {active && (
-                    <Check size={13} strokeWidth={3.4} className="shrink-0 text-[#34C759]" />
-                  )}
-                  <span className="line-clamp-2 text-[13.5px] font-semibold leading-[17px] tracking-[-0.01em] text-white">
-                    {name}
-                  </span>
-                </span>
-
-                {!s.available && (
-                  <span className="absolute bottom-1 text-[10px] font-semibold uppercase tracking-wide text-white/55">
-                    {lang === 'ru' ? 'Скоро' : 'Tez kunda'}
-                  </span>
-                )}
-              </button>
-            )
-          })}
-        </div>
-      </div>
-
-      <div className="ob-reveal shrink-0 pt-2 pb-[calc(25px+var(--safe-bottom,0px))]" style={d(T.cta)}>
-        <button
-          type="button"
-          onClick={onNext}
-          className="flex h-[54px] w-full items-center justify-center rounded-full bg-white px-5 text-[17px] font-semibold text-black transition-transform duration-150 active:scale-[0.97] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-        >
-          {tt('obContinue')}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-// ═════════════ 3. TELEGRAM ORQALI KIRISH (login bosqichi) ══════════════════
-function TelegramStep({
-  onBack,
-  onDone,
-  authed,
-  instant,
-}: {
-  onBack: () => void
+export interface OnboardingProps {
   onDone: () => void
-  authed: boolean
-  instant: boolean
-}) {
-  const lang = useAppStore((s) => s.settings.language)
-  const tt = useT(lang)
-  const user = useAppStore((s) => s.user)
-  const tgUser = getTelegramUser()
-  const T = OB_TIMING.picker
-  const d = (ms: number) => reveal(instant ? 0 : ms)
-
-  const displayName =
-    [user?.firstName, user?.lastName].filter(Boolean).join(' ') || tgUser?.first_name || ''
-  const username = user?.username || tgUser?.username || ''
-  const photoUrl = user?.photoUrl || tgUser?.photo_url || ''
-  const initial = (displayName || username || 'K').charAt(0).toUpperCase()
-
-  return (
-    <div className="flex min-h-0 flex-1 flex-col">
-      <header className="mt-3 flex h-11 shrink-0 items-center">
-        <SegmentedProgressPill active={2} onBack={onBack} backLabel={tt('obBack')} />
-      </header>
-
-      <h2
-        className="ob-reveal mt-[clamp(16px,5.2vh,40px)] shrink-0 text-center text-[19px] font-semibold leading-[23px] tracking-[-0.015em] text-white"
-        style={d(T.title)}
-      >
-        {tt('obTgTitle')}
-      </h2>
-      <p
-        className="ob-reveal mx-auto mt-1.5 shrink-0 max-w-[290px] text-center text-[13.5px] leading-[18px] text-white/65"
-        style={d(T.sub)}
-      >
-        {tt('obTgSubA')}
-        <br />
-        {tt('obTgSubB')}
-      </p>
-
-      {/* Akkaunt kartasi — video 3-ekran geometriyasi: avatar 74px, ism 17px, kapsula */}
-      <div className="flex min-h-0 flex-1 items-center justify-center py-4">
-        <div className="ob-reveal w-full" style={d(T.card)}>
-          <div className="flex w-full flex-col items-center rounded-2xl bg-white/[0.08] pt-4 pb-[22px]">
-            {photoUrl ? (
-              <img
-                src={photoUrl}
-                alt=""
-                className="size-[66px] rounded-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-            ) : (
-              <div
-                className={`flex size-[66px] items-center justify-center rounded-full text-[25px] font-semibold leading-none text-white ${
-                  authed ? 'bg-[#229ED9]' : 'bg-white/[0.14]'
-                }`}
-              >
-                {authed ? initial : <Send size={26} strokeWidth={2} className="text-white/70" />}
-              </div>
-            )}
-
-            <p className="mt-4 max-w-[calc(100%-32px)] truncate text-[16px] font-semibold leading-[22px] tracking-[-0.01em] text-white">
-              {authed ? displayName || username || tt('obTgAccount') : tt('obTgAccount')}
-            </p>
-            {username && (
-              <p className="max-w-[calc(100%-32px)] truncate text-[13px] leading-[17px] text-white/70">
-                @{username}
-              </p>
-            )}
-
-            <div className="mt-2.5 flex h-[26px] items-center gap-1.5 rounded-full bg-black/25 px-2.5">
-              <span
-                className={`size-[7px] rounded-full ${authed ? 'bg-[#34C759]' : 'bg-white/40'}`}
-              />
-              <span className="text-[13px] font-medium leading-none text-white/90">
-                {authed ? tt('obTgConnected') : tt('obTgNotConnected')}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="ob-reveal flex shrink-0 flex-col gap-[9px] pt-2 pb-[calc(25px+var(--safe-bottom,0px))]"
-        style={d(T.cta)}
-      >
-        {authed ? (
-          <button
-            type="button"
-            onClick={onDone}
-            className="flex h-[54px] w-full items-center justify-center rounded-full bg-white px-5 text-[17px] font-semibold text-black transition-transform duration-150 active:scale-[0.97] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-          >
-            {tt('obStart')}
-          </button>
-        ) : (
-          <>
-            <TelegramLoginPanel onAuthed={onDone} />
-            <button
-              type="button"
-              onClick={onDone}
-              className="flex h-[54px] w-full items-center justify-center rounded-full bg-white/[0.1] px-5 text-[17px] font-semibold text-white transition-transform duration-150 active:scale-[0.97] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-            >
-              {tt('obTgOther')}
-            </button>
-          </>
-        )}
-      </div>
-    </div>
-  )
+  authed?: boolean
 }
 
-// ══════════════════════ ONBOARDING ORKESTRATORI ═════════════════════════════
-export default function Onboarding({ onDone, authed = false }: { onDone: () => void; authed?: boolean }) {
-  const lang = useAppStore((s) => s.settings.language)
-  const tt = useT(lang)
+export default function Onboarding({ onDone }: OnboardingProps) {
   const instant = useMemo(() => isUnitTest || prefersReducedMotion(), [])
-  const [stage, setStage] = useState<Stage>('welcome')
-  const [phase, setPhase] = useState<Phase>('enter')
-  const timers = useRef<number[]>([])
-  const busy = useRef(false)
 
-  const schedule = useCallback((fn: () => void, delay: number) => {
-    if (typeof window === 'undefined') return
-    const id = window.setTimeout(fn, delay)
-    timers.current.push(id)
-  }, [])
+  // Splash animation at start (0:00 - 0:02)
+  const [showSplash, setShowSplash] = useState(!instant)
+  useEffect(() => {
+    if (instant) return
+    const timer = setTimeout(() => setShowSplash(false), 1400)
+    return () => clearTimeout(timer)
+  }, [instant])
 
-  // Unmount'da hamma taymer tozalanadi (onDone chaqirilmaydi)
-  useEffect(
-    () => () => {
-      timers.current.forEach((id) => window.clearTimeout(id))
-      timers.current = []
-    },
-    [],
-  )
+  const [stepIndex, setStepIndex] = useState(0)
+  const [direction, setDirection] = useState<'forward' | 'backward'>('forward')
+  const [animating, setAnimating] = useState(false)
 
-  /** Blur-out → blur-in ketma-ketligi (video: 300ms chiqish + kirish stagger) */
-  const go = useCallback(
-    (next: Stage) => {
-      if (busy.current) return
+  const [answers, setAnswers] = useState<OnboardingState>({
+    persona: null,
+    interest: null,
+    dailyGoal: null,
+    level: null,
+    notificationsAllowed: null,
+  })
+
+  const currentStep: OnboardingStep = ONBOARDING_STEPS_ORDER[stepIndex]
+  const progressPercent = STEP_PROGRESS[currentStep]
+
+  const goToStep = useCallback(
+    (nextIndex: number, dir: 'forward' | 'backward') => {
+      if (animating && !instant) return
+      setDirection(dir)
       if (instant) {
-        setStage(next)
-        setPhase('enter')
+        setStepIndex(nextIndex)
         return
       }
-      busy.current = true
-      setPhase('exit')
-      schedule(() => {
-        setStage(next)
-        setPhase('enter')
-        busy.current = false
-      }, OB_TIMING.exit)
+      setAnimating(true)
+      setTimeout(() => {
+        setStepIndex(nextIndex)
+        setAnimating(false)
+      }, 180)
     },
-    [instant, schedule],
+    [animating, instant],
   )
 
-  const finish = useCallback(() => {
-    if (instant) {
+  const handleNext = useCallback(() => {
+    if (stepIndex < ONBOARDING_STEPS_ORDER.length - 1) {
+      goToStep(stepIndex + 1, 'forward')
+    } else {
       onDone()
-      return
     }
-    // Chiqish animatsiyasi (blur-out) → app
-    schedule(() => {
-      setPhase('exit')
-      schedule(() => onDone(), OB_TIMING.exit)
-    }, OB_TIMING.finish)
-  }, [instant, onDone, schedule])
+  }, [stepIndex, goToStep, onDone])
 
-  // Sync endi OXIRGI qadam (login'dan keyin): ma'lumotlar yuklanadi va
-  // shundan keyingina ilova ochiladi. Video'da u o'rtada edi (13.0 → 18.6).
-  useEffect(() => {
-    if (stage !== 'sync') return
-    const id = window.setTimeout(() => finish(), instant ? 0 : OB_TIMING.syncHold)
-    return () => window.clearTimeout(id)
-  }, [stage, instant, finish])
-
-  const handleStart = () => go('subject')
+  const handleBack = useCallback(() => {
+    if (stepIndex > 0) {
+      goToStep(stepIndex - 1, 'backward')
+    }
+  }, [stepIndex, goToStep])
 
   return (
-    <main className="first-launch-screen relative flex select-none flex-col overflow-hidden bg-[#04123F] text-white">
-      <OnboardingBackground
-        dim={stage === 'sync'}
-        grid={stage === 'welcome' || stage === 'sync'}
-      />
+    <main className="first-launch-screen relative flex h-full w-full select-none flex-col overflow-hidden bg-white text-[#111827]">
+      <style>{`
+        @keyframes kojiFloat {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-7px); }
+        }
+        @keyframes kojiCurl {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          25% { transform: translateY(-8px) rotate(-1.5deg); }
+          50% { transform: translateY(-13px) rotate(1deg); }
+          75% { transform: translateY(-5px) rotate(0deg); }
+        }
+        @keyframes kojiAura {
+          0%, 100% { transform: scale(0.95); opacity: 0.6; }
+          50% { transform: scale(1.15); opacity: 0.95; }
+        }
+        @keyframes kojiAuraOuter {
+          0%, 100% { transform: scale(1.0); opacity: 0.25; }
+          50% { transform: scale(1.3); opacity: 0.65; }
+        }
+        .animate-koji-float {
+          animation: kojiFloat 3.2s ease-in-out infinite;
+        }
+        .animate-koji-curl {
+          animation: kojiCurl 2.2s ease-in-out infinite;
+        }
+        .animate-koji-aura {
+          animation: kojiAura 2.4s ease-in-out infinite;
+        }
+        .animate-koji-aura-outer {
+          animation: kojiAuraOuter 2.4s ease-in-out infinite;
+        }
+      `}</style>
 
-      <div
-        className="ob-stage relative z-10 mx-auto flex h-full w-full flex-col px-5 lg:my-auto lg:grid lg:h-[min(100%,880px)] lg:max-w-[1080px] lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-16 lg:px-10"
-        data-phase={phase}
-      >
-        {/* Desktop brend paneli — mobil'da YO'Q (faqat lg+).
-            Tuzilma: lockup (yuqori) → statement (markaz) → meta (past). */}
-        <aside className="hidden flex-col justify-between py-14 lg:flex">
-          {/* Lockup — faqat belgi (yozuvsiz, dekorativ) */}
-          <img
-            src="/images/splash-mark.png"
-            alt=""
-            aria-hidden="true"
-            className="size-[44px] object-contain drop-shadow-[0_6px_20px_rgba(10,132,255,0.4)]"
-          />
+      {/* Initial Splash Logo Overlay (video 0:00 - 0:02) */}
+      {showSplash && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-300">
+          <span className="text-[38px] font-black tracking-tight text-[#111827] animate-pulse">
+            Brilliant
+          </span>
+        </div>
+      )}
 
-          <div className="max-w-[400px]">
-            <span aria-hidden="true" className="block h-px w-10 bg-white/30" />
-            <h2 className="mt-6 text-[clamp(26px,2.2vw,34px)] font-semibold leading-[1.16] tracking-[-0.03em] text-white">
-              {tt('obBrandHeadline')}
+      <div className="relative mx-auto flex h-full w-full flex-col lg:grid lg:max-w-[1080px] lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] lg:gap-12 lg:px-8">
+        {/* Desktop Side Column */}
+        <aside className="hidden flex-col justify-between py-12 lg:flex">
+          <div className="flex items-center gap-3">
+            <span className="text-[28px] font-black tracking-tight text-[#111827]">
+              Brilliant
+            </span>
+          </div>
+
+          <div className="max-w-[380px]">
+            <span aria-hidden="true" className="block h-1 w-10 rounded-full bg-[#10B981]" />
+            <h2 className="mt-6 text-[32px] font-bold leading-[1.18] tracking-[-0.02em] text-[#111827]">
+              The best way to learn math and computer science
             </h2>
-            <p className="mt-4 text-[14.5px] leading-[22px] text-white/55">
-              {tt('obWelcomeSub')}
+            <p className="mt-4 text-[15px] leading-[22px] text-gray-500">
+              Effective, hands-on learning, while learning at your level with guided bite-sized lessons.
             </p>
           </div>
 
-          <p className="text-[11px] font-medium tracking-[0.18em] text-white/25">
-            {tt('obBrandMeta')}
+          <p className="text-[12px] font-semibold tracking-wider text-gray-400 uppercase">
+            Interactive Learning
           </p>
         </aside>
 
-        {/* Qadamlar ustuni — mobil bilan bir xil oqim */}
-        <div className="flex min-h-0 w-full flex-1 flex-col">
-          {stage === 'welcome' && <WelcomeStep onNext={handleStart} instant={instant} />}
-          {stage === 'subject' && (
-            <SubjectStep
-              onNext={() => go('telegram')}
-              onBack={() => go('welcome')}
-              instant={instant}
-            />
+        {/* Mobile / Interaction Viewport */}
+        <div className="relative flex h-full w-full flex-1 flex-col overflow-hidden bg-white px-5 pt-3 pb-[calc(18px+var(--safe-bottom,0px))] sm:px-6">
+          {/* Top Progress Header (Steps 1 to 8) */}
+          {currentStep !== 'welcome' && (
+            <header className="flex h-11 shrink-0 items-center gap-3.5" aria-label="Progress">
+              <button
+                type="button"
+                onClick={handleBack}
+                aria-label="Back"
+                className="flex size-9 shrink-0 items-center justify-center rounded-full text-gray-900 transition-colors hover:bg-gray-100 active:scale-95 cursor-pointer"
+              >
+                <ChevronLeft size={26} strokeWidth={2.4} />
+              </button>
+
+              <div className="relative h-2 flex-1 overflow-hidden rounded-full bg-[#EAEAEA]">
+                <div
+                  style={{ width: `${progressPercent}%` }}
+                  className="h-full rounded-full bg-[#10B981] transition-all duration-300 ease-out"
+                />
+              </div>
+            </header>
           )}
-          {stage === 'telegram' && (
-            <TelegramStep
-              onBack={() => go('subject')}
-              onDone={() => go('sync')}
-              authed={authed}
-              instant={instant}
-            />
-          )}
-          {/* Loading — OXIRGI qadam: login'dan keyin, ilova ochilishidan oldin */}
-          {stage === 'sync' && <SyncScreen instant={instant} />}
+
+          {/* Carousel Slide Area */}
+          <div
+            className={`flex min-h-0 flex-1 flex-col transition-all duration-200 ease-out ${
+              animating
+                ? direction === 'forward'
+                  ? 'opacity-0 translate-x-4'
+                  : 'opacity-0 -translate-x-4'
+                : 'opacity-100 translate-x-0'
+            }`}
+          >
+            {/* Step 0: Welcome Screen */}
+            {currentStep === 'welcome' && (
+              <div className="flex h-full flex-col items-center justify-between py-2 text-center">
+                <div className="flex flex-1 flex-col items-center justify-center pt-2">
+                  <KojiMascot mode="hero" className="h-64 w-64" />
+
+                  <h1 className="mt-5 max-w-[360px] text-[24px] sm:text-[26px] font-bold leading-[1.2] tracking-[-0.02em] text-[#111827]">
+                    The best way to learn math and <br />computer science
+                  </h1>
+
+                  <p className="mt-3.5 max-w-[310px] text-[14.5px] leading-[21px] text-[#6B7280]">
+                    Effective, hands-on learning, while learning at your level with guided bite-sized lessons.
+                  </p>
+                </div>
+
+                <div className="flex w-full shrink-0 flex-col gap-2 pt-4">
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
+                  >
+                    Continue
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={onDone}
+                    className="py-2.5 text-[15px] font-semibold text-[#111827] transition-opacity hover:opacity-80 active:opacity-60 cursor-pointer"
+                  >
+                    Log in
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 1: Persona */}
+            {currentStep === 'persona' && (
+              <div className="flex h-full flex-col justify-between pt-2">
+                <div className="flex flex-col items-center text-center">
+                  <h2 className="text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    Which describes you best?
+                  </h2>
+                  <p className="mt-2 text-[14.5px] text-[#6B7280]">
+                    This will help us personalize your experience.
+                  </p>
+                </div>
+
+                <div
+                  role="radiogroup"
+                  aria-label="Which describes you best?"
+                  className="my-auto flex flex-col gap-2.5 overflow-y-auto py-2"
+                >
+                  {[
+                    {
+                      id: 'student',
+                      icon: '/images/onboarding/avatar_student.png',
+                      bold: 'Student',
+                      rest: ' or soon to be enrolled',
+                    },
+                    {
+                      id: 'professional',
+                      icon: '/images/onboarding/avatar_professional.png',
+                      bold: 'Professional',
+                      rest: ' pursuing a career',
+                    },
+                    {
+                      id: 'parent',
+                      icon: '/images/onboarding/avatar_parent.png',
+                      bold: 'Parent',
+                      rest: ' of a school-aged child',
+                    },
+                    {
+                      id: 'lifelong',
+                      icon: '/images/onboarding/avatar_lifelong.png',
+                      bold: 'Lifelong Learner',
+                      rest: '',
+                    },
+                    {
+                      id: 'teacher',
+                      icon: '/images/onboarding/avatar_teacher.png',
+                      bold: 'Teacher',
+                      rest: '',
+                    },
+                    {
+                      id: 'other',
+                      icon: '/images/onboarding/avatar_other.png',
+                      bold: 'Other',
+                      rest: '',
+                    },
+                  ].map((item) => {
+                    const active = answers.persona === item.id
+                    return (
+                      <button
+                        key={item.id}
+                        type="button"
+                        role="radio"
+                        aria-checked={active}
+                        onClick={() => setAnswers((prev) => ({ ...prev, persona: item.id }))}
+                        className={`flex h-[62px] w-full items-center gap-3.5 rounded-2xl border px-4 text-left transition-all cursor-pointer ${
+                          active
+                            ? 'border-[#3B82F6] bg-[#EFF6FF] shadow-xs'
+                            : 'border-[#E5E7EB] bg-white hover:border-gray-300'
+                        }`}
+                      >
+                        <div className="flex size-[42px] shrink-0 items-center justify-center">
+                          <img
+                            src={item.icon}
+                            alt=""
+                            className="max-h-full max-w-full object-contain"
+                          />
+                        </div>
+                        <span className="text-[15px] leading-snug text-[#111827]">
+                          <strong className="font-semibold">{item.bold}</strong>
+                          {item.rest}
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+
+                <div className="shrink-0 pt-3">
+                  <button
+                    type="button"
+                    disabled={!answers.persona}
+                    onClick={handleNext}
+                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
+                      answers.persona
+                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
+                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
+                    }`}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 2: Interests */}
+            {currentStep === 'interest' && (
+              <div className="flex h-full flex-col justify-between pt-2">
+                <div className="flex flex-col items-center text-center">
+                  <h2 className="text-[21px] sm:text-[24px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    Which are you most interested in?
+                  </h2>
+                  <p className="mt-2 max-w-[320px] text-[14px] leading-snug text-[#6B7280]">
+                    Choose just one. This will help us get you started (but won't limit your experience).
+                  </p>
+                </div>
+
+                <div
+                  role="radiogroup"
+                  aria-label="Which are you most interested in?"
+                  className="my-auto flex flex-col gap-2.5 overflow-y-auto py-2"
+                >
+                  {[
+                    {
+                      id: 'skills',
+                      icon: '/images/onboarding/interest_skills.png',
+                      label: 'Gain new skills to progress at work',
+                    },
+                    {
+                      id: 'explore',
+                      icon: '/images/onboarding/interest_explore.png',
+                      label: 'Explore new topics',
+                    },
+                    {
+                      id: 'math',
+                      icon: '/images/onboarding/interest_math.png',
+                      label: 'Refresh my math foundations',
+                    },
+                    {
+                      id: 'brain',
+                      icon: '/images/onboarding/interest_brain.png',
+                      label: 'Exercise my brain to stay sharp',
+                    },
+                    {
+                      id: 'school',
+                      icon: '/images/onboarding/interest_school.png',
+                      label: 'Excel in school',
+                    },
+                    {
+                      id: 'other',
+                      icon: '/images/onboarding/interest_other.png',
+                      label: 'Something else',
+                    },
+                  ].map((item) => {
+                    const active = answers.interest === item.id
+                    return (
+                      <button
+                        key={item.id}
+                        type="button"
+                        role="radio"
+                        aria-checked={active}
+                        onClick={() => setAnswers((prev) => ({ ...prev, interest: item.id }))}
+                        className={`flex h-[62px] w-full items-center gap-3.5 rounded-2xl border px-4 text-left transition-all cursor-pointer ${
+                          active
+                            ? 'border-[#3B82F6] bg-[#EFF6FF] shadow-xs'
+                            : 'border-[#E5E7EB] bg-white hover:border-gray-300'
+                        }`}
+                      >
+                        <div className="flex size-[38px] shrink-0 items-center justify-center">
+                          <img
+                            src={item.icon}
+                            alt=""
+                            className="max-h-full max-w-full object-contain"
+                          />
+                        </div>
+                        <span className="text-[15px] font-medium text-[#111827]">
+                          {item.label}
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+
+                <div className="shrink-0 pt-3">
+                  <button
+                    type="button"
+                    disabled={!answers.interest}
+                    onClick={handleNext}
+                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
+                      answers.interest
+                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
+                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
+                    }`}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 3: Interstitial Place */}
+            {currentStep === 'interstitial_place' && (
+              <div className="flex h-full flex-col items-center justify-between py-2 text-center">
+                <div className="flex flex-1 flex-col items-center justify-center">
+                  <KojiMascot mode="place" className="h-56 w-56 sm:h-64 sm:w-64" />
+
+                  <h2 className="mt-5 text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    You're in the right place
+                  </h2>
+
+                  <p className="mt-3.5 max-w-[320px] text-[14.5px] leading-[22px] text-[#6B7280]">
+                    Brilliant gets you hands-on with a whole universe of concepts in math, science, and computer science. You'll solve fun problems while growing your critical thinking skills.
+                  </p>
+                </div>
+
+                <div className="w-full shrink-0 pt-4">
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 4: Daily Learning Goal */}
+            {currentStep === 'daily_goal' && (
+              <div className="flex h-full flex-col justify-between pt-2">
+                <div className="flex flex-col items-center text-center">
+                  <h2 className="text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    What's your daily learning goal?
+                  </h2>
+                </div>
+
+                <div
+                  role="radiogroup"
+                  aria-label="What's your daily learning goal?"
+                  className="my-auto flex flex-col gap-3 py-2"
+                >
+                  {[
+                    { minutes: 5, bold: 'Casual', rest: '5 min / day' },
+                    { minutes: 10, bold: 'Regular', rest: '10 min / day' },
+                    { minutes: 15, bold: 'Serious', rest: '15 min / day' },
+                    { minutes: 20, bold: 'Intense', rest: '20 min / day' },
+                  ].map((item) => {
+                    const active = answers.dailyGoal === item.minutes
+                    return (
+                      <button
+                        key={item.minutes}
+                        type="button"
+                        role="radio"
+                        aria-checked={active}
+                        onClick={() => setAnswers((prev) => ({ ...prev, dailyGoal: item.minutes }))}
+                        className={`flex h-[64px] w-full items-center rounded-2xl border px-5 text-left transition-all cursor-pointer ${
+                          active
+                            ? 'border-[#3B82F6] bg-[#EFF6FF] shadow-xs'
+                            : 'border-[#E5E7EB] bg-white hover:border-gray-300'
+                        }`}
+                      >
+                        <span className="text-[16px] text-[#111827]">
+                          <strong className="font-bold mr-2">{item.bold}</strong>
+                          <span className="text-gray-700">{item.rest}</span>
+                        </span>
+                      </button>
+                    )
+                  })}
+                </div>
+
+                <div className="shrink-0 pt-3">
+                  <button
+                    type="button"
+                    disabled={answers.dailyGoal === null}
+                    onClick={handleNext}
+                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
+                      answers.dailyGoal !== null
+                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
+                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
+                    }`}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 5: Reminders */}
+            {currentStep === 'reminders' && (
+              <div className="flex h-full flex-col items-center justify-between py-2 text-center">
+                <div className="flex flex-1 flex-col items-center justify-center">
+                  <KojiMascot mode="reminders" className="h-56 w-56 sm:h-64 sm:w-64" />
+
+                  <h2 className="mt-4 text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    Reach your daily goal<br />with reminders
+                  </h2>
+
+                  <p className="mt-3 max-w-[300px] text-[14.5px] leading-[21px] text-[#6B7280]">
+                    Enable push notifications to keep you motivated and on track.
+                  </p>
+                </div>
+
+                <div className="flex w-full shrink-0 flex-col gap-2 pt-3">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setAnswers((prev) => ({ ...prev, notificationsAllowed: true }))
+                      handleNext()
+                    }}
+                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
+                  >
+                    Allow notifications
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setAnswers((prev) => ({ ...prev, notificationsAllowed: false }))
+                      handleNext()
+                    }}
+                    className="py-2.5 text-[15px] font-medium text-gray-700 hover:text-black transition-colors cursor-pointer"
+                  >
+                    No thanks
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 6: Level Comfort */}
+            {currentStep === 'level' && (
+              <div className="flex h-full flex-col justify-between pt-2">
+                <div className="flex flex-col items-center text-center">
+                  <h2 className="text-[23px] sm:text-[25px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    What is your programming<br />comfort level?
+                  </h2>
+                  <p className="mt-2 text-[14px] leading-snug text-[#6B7280] max-w-[320px]">
+                    Choose the highest level you feel confident in — you can always adjust later.
+                  </p>
+                </div>
+
+                <div
+                  role="radiogroup"
+                  aria-label="What is your programming comfort level?"
+                  className="my-auto flex flex-col gap-2.5 overflow-y-auto py-2"
+                >
+                  {[
+                    {
+                      id: 'beginner',
+                      level: 1 as const,
+                      bold: 'Beginner',
+                      rest: "I've never written a line of code",
+                    },
+                    {
+                      id: 'novice',
+                      level: 2 as const,
+                      bold: 'Novice',
+                      rest: "I've written some simple programs",
+                    },
+                    {
+                      id: 'intermediate',
+                      level: 3 as const,
+                      bold: 'Intermediate',
+                      rest: "I've written longer programs",
+                    },
+                    {
+                      id: 'advanced',
+                      level: 4 as const,
+                      bold: 'Advanced',
+                      rest: "I've been coding for a long time",
+                    },
+                  ].map((item) => {
+                    const active = answers.level === item.id
+                    return (
+                      <button
+                        key={item.id}
+                        type="button"
+                        role="radio"
+                        aria-checked={active}
+                        onClick={() => setAnswers((prev) => ({ ...prev, level: item.id }))}
+                        className={`flex h-[66px] w-full items-center gap-3.5 rounded-2xl border px-4 text-left transition-all cursor-pointer ${
+                          active
+                            ? 'border-[#3B82F6] bg-[#EFF6FF] shadow-xs'
+                            : 'border-[#E5E7EB] bg-white hover:border-gray-300'
+                        }`}
+                      >
+                        <SignalIndicator level={item.level} />
+                        <div className="flex flex-col text-left">
+                          <strong className="text-[15px] font-bold text-[#111827]">{item.bold}</strong>
+                          <span className="text-[13px] text-gray-500 leading-tight">{item.rest}</span>
+                        </div>
+                      </button>
+                    )
+                  })}
+                </div>
+
+                <div className="shrink-0 pt-3">
+                  <button
+                    type="button"
+                    disabled={!answers.level}
+                    onClick={handleNext}
+                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
+                      answers.level
+                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
+                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
+                    }`}
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 7: Interstitial Efficacy */}
+            {currentStep === 'interstitial_efficacy' && (
+              <div className="flex h-full flex-col items-center justify-between py-2 text-center">
+                <div className="flex flex-1 flex-col items-center justify-center">
+                  <KojiMascot mode="workout" className="h-56 w-56 sm:h-64 sm:w-64" />
+
+                  <h2 className="mt-5 text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    Learn 6x more effectively
+                  </h2>
+
+                  <p className="mt-3.5 max-w-[320px] text-[14.5px] leading-[22px] text-[#6B7280]">
+                    Brilliant's interactive lessons will start at your level and help you advance. Interactive learning has been shown to be 6x more effective than watching lecture videos.
+                  </p>
+                </div>
+
+                <div className="w-full shrink-0 pt-4">
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Step 8: Testimonial & Completion */}
+            {currentStep === 'testimonial' && (
+              <div className="flex h-full flex-col items-center justify-between py-2 text-center">
+                <div className="flex flex-1 flex-col items-center justify-center">
+                  <KojiMascot mode="testimonial" className="h-52 w-52 sm:h-60 sm:w-60" />
+
+                  <h2 className="mt-4 text-[24px] sm:text-[26px] font-bold leading-tight tracking-[-0.025em] text-[#111827]">
+                    You're on your way!
+                  </h2>
+
+                  <p className="mt-3.5 max-w-[310px] text-[14px] leading-[21px] text-[#6B7280]">
+                    "If you like bending your mind over interesting problems or want to explore a rich world full of beautiful mysteries, this app will be a sure thing for you."
+                  </p>
+
+                  <span className="mt-3 text-[14px] font-medium text-gray-500">
+                    — Bob V.
+                  </span>
+                </div>
+
+                <div className="w-full shrink-0 pt-4">
+                  <button
+                    type="button"
+                    onClick={onDone}
+                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </main>

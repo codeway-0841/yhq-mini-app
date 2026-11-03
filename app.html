@@ -384,7 +384,7 @@
         window.__kivviDismissSplash = dismiss;
 
         // Kamida 2500ms ko'rinadi (2-3 soniya talabi)
-        var minDuration = 2500;
+        var minDuration = location.search.indexOf('previewOnboarding') !== -1 ? 0 : 2500;
         var readyReceived = false;
 
         window.__kivviSplashReady = function() {

@@ -29,24 +29,51 @@ test.describe('Onboarding (Yangi Foydalanuvchi) E2E', () => {
 
   test('kichik ekranda document scrollsiz onboarding oqimini yakunlaydi', async ({ page }) => {
     await page.goto('/app.html#/')
-    await expect(page.getByRole('heading', { name: /Xush kelibsiz/i })).toBeVisible()
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
     await expectDocumentToFitViewport(page)
 
-    const start = page.getByRole('button', { name: /Boshlash/i })
-    await expectControlInViewport(start)
-    await start.click()
-    await expect(page.getByRole('heading', { name: /Qaysi fanni/i })).toBeVisible()
-    await expectDocumentToFitViewport(page)
-
-    const continueButton = page.getByRole('button', { name: /Davom etish/i })
+    const continueButton = page.getByRole('button', { name: /Continue|Davom etish/i })
     await expectControlInViewport(continueButton)
     await continueButton.click()
-    await expect(page.getByRole('heading', { name: /Kuniga qancha vaqt/i })).toBeVisible()
+
+    await expect(page.getByText('Which describes you best?')).toBeVisible()
     await expectDocumentToFitViewport(page)
 
-    const finish = page.getByRole('button', { name: /Boshlash/i })
-    await expectControlInViewport(finish)
-    await finish.click()
+    // Persona tanlash
+    await page.getByText('Student or soon to be enrolled').click()
+    await continueButton.click()
+
+    await expect(page.getByText('Which are you most interested in?')).toBeVisible()
+    await expectDocumentToFitViewport(page)
+    await page.getByText('Explore new topics').click()
+    await continueButton.click()
+
+    // 3. Place
+    await expect(page.getByText("You're in the right place")).toBeVisible()
+    await continueButton.click()
+
+    // 4. Daily Goal
+    await expect(page.getByText("What's your daily learning goal?")).toBeVisible()
+    await page.getByText('Regular').click()
+    await continueButton.click()
+
+    // 5. Reminders
+    await expect(page.getByText(/Reach your daily goal/i)).toBeVisible()
+    await page.getByRole('button', { name: /Allow notifications/i }).click()
+
+    // 6. Level
+    await expect(page.getByText(/What is your programming/i)).toBeVisible()
+    await page.getByText('Intermediate').click()
+    await continueButton.click()
+
+    // 7. Efficacy
+    await expect(page.getByText('Learn 6x more effectively')).toBeVisible()
+    await continueButton.click()
+
+    // 8. Testimonial
+    await expect(page.getByText("You're on your way!")).toBeVisible()
+    await continueButton.click()
+
     await expect(page.locator('main.first-launch-screen')).toHaveCount(0)
   })
 })

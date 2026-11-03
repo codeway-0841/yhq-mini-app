@@ -12,11 +12,25 @@ function AnimationCard({ item }: { item: MascotAnimation }) {
   const language = useAppStore((s) => s.settings.language)
   const tt = useT(language)
   const [active, setActive] = useState(item.animations[0])
+  const [nonce, setNonce] = useState(0)
   const title = tt(item.titleKey)
+
+  const handleSelect = (name: string) => {
+    setActive(name)
+    setNonce((n) => n + 1)
+  }
 
   return (
     <article className="mascot-card rounded-2xl bg-pcard shadow-xs">
-      <RiveCanvas file={item.file} animation={active} poster={item.poster} label={title} />
+      <RiveCanvas
+        file={item.file}
+        animation={active}
+        artboard={item.artboard}
+        alignment={item.alignment}
+        poster={item.poster}
+        label={title}
+        nonce={nonce}
+      />
       <div className="mascot-card-copy">
         <h2>{title}</h2>
         <p>{tt(item.descriptionKey)}</p>
@@ -27,7 +41,7 @@ function AnimationCard({ item }: { item: MascotAnimation }) {
             key={name}
             type="button"
             aria-pressed={active === name}
-            onClick={() => setActive(name)}
+            onClick={() => handleSelect(name)}
             className="mascot-action rounded-xl shadow-2xs"
           >
             {name.trim()}

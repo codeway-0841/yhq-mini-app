@@ -336,6 +336,17 @@ export default function App() {
         </Suspense>
       </HashRouter>
     )
+  } else if (pathname.startsWith('/maskotlar') || hash.startsWith('#/maskotlar')) {
+    content = (
+      <HashRouter>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="*" element={<MascotStudioPage />} />
+          </Routes>
+        </Suspense>
+      </HashRouter>
+    )
   // ONBOARDING BIRINCHI (2026-10 oqim o'zgarishi): 3-qadam Telegram orqali
   // KIRISH. Shuning uchun auth'dan oldin ko'rsatiladi — login sahifasi faqat
   // onboarding tugagan, lekin sessiya yo'q holatda qoladi (fallback).

@@ -134,7 +134,10 @@ export function ensureAccountOwner(verifiedId: string): boolean {
 export function resetAccountToLoggedOut(): void {
   resetAccountState()
   if (typeof window !== 'undefined') {
-    window.location.hash = '#/'
+    const h = window.location.hash
+    if (!h.startsWith('#/verify-email') && !h.startsWith('#/reset-password') && !h.startsWith('#/maskotlar')) {
+      window.location.hash = '#/'
+    }
   }
   useAppStore.setState({ initialized: true })
 }

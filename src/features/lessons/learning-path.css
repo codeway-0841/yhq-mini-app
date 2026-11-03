@@ -330,7 +330,7 @@
   box-shadow: 0 4px 0 #1d4ed8, 0 8px 18px rgba(59, 130, 246, 0.35);
 }
 
-@keyframes lesson-reader-in { from { opacity: .4; } to { opacity: 1; } }
+@keyframes lesson-reader-in { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: scale(1); } }
 .lesson-course[data-launching='true'] .learning-node[aria-pressed='true'] > .learning-tile > .learning-mascot { visibility: hidden; }
 .lesson-launch-overlay .dialog-center-motion > .lesson-launch-scene { position: fixed; inset: 0; z-index: 1; overflow: hidden; outline: none; animation: none; transform: none; }
 .lesson-launch-departure {
@@ -339,8 +339,8 @@
   animation: lesson-launch-sink 500ms cubic-bezier(.4,0,.6,1) both;
 }
 .lesson-launch-departure .learning-mascot { inset: 0; width: 100%; height: 100%; animation: none !important; }
-.lesson-launch-canvas { position: absolute; inset: 0; background: #fff; animation: lesson-launch-curtain var(--launch-duration) linear both; }
-body[data-theme='dark'] .lesson-launch-canvas { background: #111; }
+.lesson-launch-canvas { position: absolute; inset: 0; background: #0a0e17; animation: lesson-launch-curtain var(--launch-duration) linear both; }
+body[data-theme='dark'] .lesson-launch-canvas { background: #0a0e17; }
 .lesson-launch-rive.mascot-canvas-host {
   position: absolute; inset: 0; width: 100%; height: 100%; overflow: hidden;
   border-radius: 0; background: transparent;
@@ -351,7 +351,7 @@ body[data-theme='dark'] .lesson-launch-canvas { background: #111; }
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }
   100% { transform: translateY(var(--launch-sink)) scale(.15); opacity: 0; }
 }
-@keyframes lesson-launch-curtain { 0%, 27% { opacity: 0; } 35%, 91% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes lesson-launch-curtain { 0% { opacity: 0; } 10% { opacity: 1; } 85% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes learning-orbit { to { stroke-dashoffset: -100; } }
 @keyframes learning-float {
   0%, 100% { transform: translateY(0); }
