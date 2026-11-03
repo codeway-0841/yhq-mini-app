@@ -190,7 +190,7 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
   })
 
-  it('rus tilida barcha 24 ta darslik bloki tablari chiqadi va boshqa blok tanlanganda pastdagi darslik bloki almashadi (A-varianti)', () => {
+  it('rus tilida barcha 24 ta darslik bloki tablari chiqadi va tab bosilganda o\'sha blokka o\'tiladi', () => {
     useSubjectStore.getState().setSubject('rustili')
     useQuestionsStore.setState({
       questions: [],

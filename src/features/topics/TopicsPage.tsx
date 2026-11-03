@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect, useCallback } from 'react'
+import { useMemo, useState, useEffect, useCallback, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
@@ -20,6 +20,7 @@ import {
 } from '../../content/darslik-rusadabiyot'
 import { useDarslikMastery, sectionKey } from '../darslik-rustili'
 import { goBack } from '../../shared/lib/navigation'
+import { getPageScroller } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Check, Lock } from 'lucide-react'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
@@ -65,7 +66,33 @@ interface PathSectionData {
 }
 
 /**
+ * Aniq element boshiga silliq (smooth) scroll qilish —
+ * KIVVI desktop panel scroller yoki mobil document scroll'ni to'liq qo'llab-quvvatlaydi.
+ */
+function smoothScrollToSection(sectionId: string) {
+  const el = document.getElementById(`br-path-${sectionId}`)
+  if (!el) return
+
+  const header = document.querySelector('.page-header')
+  const headerHeight = header ? header.getBoundingClientRect().height : 120
+
+  const scroller = getPageScroller()
+  if (scroller) {
+    const srect = scroller.getBoundingClientRect()
+    const rect = el.getBoundingClientRect()
+    const targetTop = scroller.scrollTop + (rect.top - srect.top) - headerHeight - 12
+    scroller.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' })
+  } else {
+    const rect = el.getBoundingClientRect()
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+    const targetTop = scrollTop + rect.top - headerHeight - 12
+    window.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' })
+  }
+}
+
+/**
  * Brilliant App 1:1 Yuqori Gorizontal Tablar (Math, Basic Algebra, Algebra...)
+ * Tanlangan tab o'zgarganda lentaning o'zi ham o'sha tabni markazga scroll qiladi.
  */
 function BrilliantPathTabs({
   sections,
@@ -78,11 +105,21 @@ function BrilliantPathTabs({
   lang: 'uz' | 'ru'
   onSelect: (id: string) => void
 }) {
+  const stripRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (!stripRef.current || !activeId) return
+    const btn = stripRef.current.querySelector<HTMLElement>(`[data-tab-id="${activeId}"]`)
+    if (btn && typeof btn.scrollIntoView === 'function') {
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+    }
+  }, [activeId])
+
   if (sections.length <= 1) return null
 
   return (
     <nav className="br-path-strip" aria-label={lang === 'ru' ? 'Разделы курса' : "O'quv bo'limlari"}>
-      <div className="br-path-strip-scroll">
+      <div ref={stripRef} className="br-path-strip-scroll">
         {sections.map(({ meta }, idx) => {
           const isActive = meta.id === activeId
           const label = lang === 'ru' ? meta.shortTabRu : meta.shortTabUz
@@ -117,7 +154,6 @@ function BrilliantPathTabs({
 
 /**
  * Brilliant App 1:1 Path Section (Hero + Connected Cards Stack)
- * Faol tanlangan blok uchun sarlavha, 3D rasm va uning zanjir kartochkalari.
  */
 function BrilliantCourseSection({
   section,
@@ -136,7 +172,7 @@ function BrilliantCourseSection({
   const newLabel = 'NEW'
 
   return (
-    <section id={`br-path-${meta.id}`} className="br-path-section transition-opacity duration-200">
+    <section id={`br-path-${meta.id}`} className="br-path-section">
       {/* ── Path Header Hero: Sarlavha chapda, 3D rasm o'ngda, sariq yulduzcha ⭐ ── */}
       <div className="br-path-hero-wrap">
         <button
@@ -366,10 +402,60 @@ function YhqTopics() {
   }, [visibleByMod, lessonsProg, lang, startLesson])
 
   const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '1')
+  const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
+  const isClickingRef = useRef(false)
+  const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  // A-varianti: Faol tanlangan blok pastda to'liq ochiladi
-  const currentSection = useMemo(() => {
-    return sections.find((s) => s.meta.id === activePathId) ?? sections[0]
+  const toggleSection = (id: string) => {
+    setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
+  }
+
+  // 1. Tepadagi tab bosilganda: pastdagi o'sha blokka 1 sekund silliq animatsiya bilan scroll qilish
+  const handleSelectTab = (id: string) => {
+    setActivePathId(id)
+    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
+    isClickingRef.current = true
+    if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
+
+    smoothScrollToSection(id)
+
+    clickTimerRef.current = setTimeout(() => {
+      isClickingRef.current = false
+    }, 900)
+  }
+
+  // 2. Pastdan scroll qilinganda: qaysi bob (blok) kelsa, tepadagi tab ham avtomatik o'zgaradi va scroll bo'ladi
+  useEffect(() => {
+    if (sections.length <= 1) return
+    const scroller = getPageScroller()
+    const target = scroller ?? window
+
+    const onScroll = () => {
+      if (isClickingRef.current) return
+
+      const header = document.querySelector('.page-header')
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 120
+
+      let activeId = sections[0]?.meta.id
+      for (const sec of sections) {
+        const el = document.getElementById(`br-path-${sec.meta.id}`)
+        if (!el) continue
+        const rect = el.getBoundingClientRect()
+        if (rect.top <= headerBottom + 60) {
+          activeId = sec.meta.id
+        }
+      }
+
+      if (activeId && activeId !== activePathId) {
+        setActivePathId(activeId)
+      }
+    }
+
+    target.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      target.removeEventListener('scroll', onScroll)
+      if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
+    }
   }, [sections, activePathId])
 
   return (
@@ -385,17 +471,22 @@ function YhqTopics() {
           sections={sections}
           activeId={activePathId}
           lang={lang}
-          onSelect={setActivePathId}
+          onSelect={handleSelectTab}
         />
       </PageHeader>
 
-      {currentSection && (
-        <BrilliantCourseSection
-          key={currentSection.meta.id}
-          section={currentSection}
-          lang={lang}
-        />
-      )}
+      {/* Jami uzun ro'yxat bo'lib qoladi (Brilliant 1:1) */}
+      <div className="flex flex-col gap-6">
+        {sections.map((sec) => (
+          <BrilliantCourseSection
+            key={sec.meta.id}
+            section={sec}
+            lang={lang}
+            open={!collapsedMap[sec.meta.id]}
+            onToggle={() => toggleSection(sec.meta.id)}
+          />
+        ))}
+      </div>
     </div>
   )
 }
@@ -659,7 +750,6 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       .filter((s): s is PathSectionData => s !== null)
   }, [rows, subjectId, lang, startTopic])
 
-  // Barcha tablar ro'yxati (curriculum bloklari yoki amaliy testlar)
   const allSections = useMemo(
     () => [...curriculumSections, ...practiceSections],
     [curriculumSections, practiceSections],
@@ -667,6 +757,8 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
 
   const [activePathId, setActivePathId] = useState<string>('')
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
+  const isClickingRef = useRef(false)
+  const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const toggleSection = (id: string) => {
     setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
@@ -678,11 +770,52 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     }
   }, [allSections, activePathId])
 
-  const hasCurriculum = curriculumSections.length > 0
+  // 1. Tepadagi tab bosilganda: pastdagi o'sha blokka 1 sekund silliq animatsiya bilan scroll qilish
+  const handleSelectTab = (id: string) => {
+    setActivePathId(id)
+    setCollapsedMap((prev) => ({ ...prev, [id]: false }))
+    isClickingRef.current = true
+    if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
 
-  // A-varianti: Tepadan qaysi tab tanlansa, pastda FAQAT o'sha blok ochiladi!
-  const currentSection = useMemo(() => {
-    return allSections.find((s) => s.meta.id === activePathId) ?? allSections[0]
+    smoothScrollToSection(id)
+
+    clickTimerRef.current = setTimeout(() => {
+      isClickingRef.current = false
+    }, 900)
+  }
+
+  // 2. Pastdan scroll qilinganda: qaysi bob (blok) kelsa, tepadagi tab ham avtomatik o'zgaradi va scroll bo'ladi
+  useEffect(() => {
+    if (allSections.length <= 1) return
+    const scroller = getPageScroller()
+    const target = scroller ?? window
+
+    const onScroll = () => {
+      if (isClickingRef.current) return
+
+      const header = document.querySelector('.page-header')
+      const headerBottom = header ? header.getBoundingClientRect().bottom : 120
+
+      let activeId = allSections[0]?.meta.id
+      for (const sec of allSections) {
+        const el = document.getElementById(`br-path-${sec.meta.id}`)
+        if (!el) continue
+        const rect = el.getBoundingClientRect()
+        if (rect.top <= headerBottom + 60) {
+          activeId = sec.meta.id
+        }
+      }
+
+      if (activeId && activeId !== activePathId) {
+        setActivePathId(activeId)
+      }
+    }
+
+    target.addEventListener('scroll', onScroll, { passive: true })
+    return () => {
+      target.removeEventListener('scroll', onScroll)
+      if (clickTimerRef.current) clearTimeout(clickTimerRef.current)
+    }
   }, [allSections, activePathId])
 
   return (
@@ -698,31 +831,22 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
           sections={allSections}
           activeId={activePathId}
           lang={lang}
-          onSelect={setActivePathId}
+          onSelect={handleSelectTab}
         />
       </PageHeader>
 
-      {/* A-varianti: Darslik kurslarida (Rus tili, Rus adabiyoti) tepada qaysi blok tanlansa, pastda FAQAT o'sha blok ochiladi */}
-      {hasCurriculum && currentSection && (
-        <BrilliantCourseSection
-          key={currentSection.meta.id}
-          section={currentSection}
-          lang={lang}
-          open={!collapsedMap[currentSection.meta.id]}
-          onToggle={() => toggleSection(currentSection.meta.id)}
-        />
-      )}
-
-      {/* Umumiy test fanlarida barcha bo'limlar / mavzular ketma-ket chiqadi */}
-      {!hasCurriculum && allSections.map((sec) => (
-        <BrilliantCourseSection
-          key={sec.meta.id}
-          section={sec}
-          lang={lang}
-          open={!collapsedMap[sec.meta.id]}
-          onToggle={() => toggleSection(sec.meta.id)}
-        />
-      ))}
+      {/* Jami uzun ro'yxat bo'lib chiqadi (barcha boblar ketma-ket) */}
+      <div className="flex flex-col gap-6">
+        {allSections.map((sec) => (
+          <BrilliantCourseSection
+            key={sec.meta.id}
+            section={sec}
+            lang={lang}
+            open={!collapsedMap[sec.meta.id]}
+            onToggle={() => toggleSection(sec.meta.id)}
+          />
+        ))}
+      </div>
 
       {/* Agar mavzular bo'sh bo'lsa */}
       {allSections.length === 0 && !loading && (
