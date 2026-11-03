@@ -346,6 +346,30 @@ body[data-theme='dark'] .lesson-launch-canvas { background: #0a0e17; }
   border-radius: 0; background: transparent;
 }
 .lesson-launch-rive .mascot-canvas { width: 100%; height: 100%; }
+
+.lesson-launch-rive.mascot-canvas-host {
+  animation: lesson-launch-dive var(--launch-duration) cubic-bezier(0.2, 0, 0, 1) both;
+}
+@keyframes lesson-launch-dive {
+  0%, 62% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  72% {
+    /* Bir siltab: anticipation pull-back */
+    transform: translateY(-28px) scale(0.96);
+    opacity: 1;
+  }
+  90% {
+    /* Tez pastga oxirigacha uchish: supersonic downward dive through the bottom */
+    transform: translateY(115vh) scale(0.85, 1.38);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(140vh) scale(0.8, 1.5);
+    opacity: 0;
+  }
+}
 @keyframes lesson-launch-sink {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   20% { transform: translateY(-4px) scale(1.03); opacity: 1; }
