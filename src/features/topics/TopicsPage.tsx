@@ -20,6 +20,7 @@ import {
 } from '../../content/darslik-rusadabiyot'
 import { useDarslikMastery, sectionKey } from '../darslik-rustili'
 import { goBack } from '../../shared/lib/navigation'
+import { pageScrollOffsetOf, scrollPageTo } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Check, Lock } from 'lucide-react'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
@@ -62,6 +63,71 @@ interface PathSectionData {
   items: TopicCardItem[]
   doneCount: number
   totalCount: number
+}
+
+function scrollToPathSection(id: string) {
+  const el = document.getElementById(`br-path-${id}`)
+  if (!el) return
+  const targetY = pageScrollOffsetOf(el, -135)
+  scrollPageTo(targetY, 'smooth')
+  try {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  } catch {}
+}
+
+function usePathScrollSpy(
+  sections: PathSectionData[],
+  activeId: string,
+  onActivate: (id: string) => void,
+) {
+  const isClicking = useRef(false)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const triggerScrollTo = useCallback((id: string) => {
+    isClicking.current = true
+    if (timerRef.current) clearTimeout(timerRef.current)
+    scrollToPathSection(id)
+    timerRef.current = setTimeout(() => {
+      isClicking.current = false
+    }, 850)
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof IntersectionObserver === 'undefined') return
+    if (sections.length <= 1) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (isClicking.current) return
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+
+        if (visible.length > 0) {
+          const sectionId = visible[0].target.id.replace('br-path-', '')
+          if (sectionId && sectionId !== activeId) {
+            onActivate(sectionId)
+          }
+        }
+      },
+      {
+        rootMargin: '-120px 0px -40% 0px',
+        threshold: [0, 0.1, 0.25],
+      },
+    )
+
+    for (const sec of sections) {
+      const el = document.getElementById(`br-path-${sec.meta.id}`)
+      if (el) observer.observe(el)
+    }
+
+    return () => {
+      observer.disconnect()
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [sections, activeId, onActivate])
+
+  return { triggerScrollTo }
 }
 
 /**
@@ -145,7 +211,7 @@ function BrilliantCourseSection({
   const newLabel = 'NEW'
 
   return (
-    <section id={`br-path-${meta.id}`} className="w-full flex flex-col items-center">
+    <section id={`br-path-${meta.id}`} className="br-path-section">
       {/* ── Path Header Hero: Sarlavha chapda, 3D rasm o'ngda, sariq yulduzcha ⭐ ── */}
       <div className="br-path-hero-wrap">
         <button
@@ -377,6 +443,8 @@ function YhqTopics() {
   const [activePathId, setActivePathId] = useState<string>(() => sections[0]?.meta.id ?? '1')
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
 
+  const { triggerScrollTo } = usePathScrollSpy(sections, activePathId, setActivePathId)
+
   const toggleSection = (id: string) => {
     setCollapsedMap((prev) => ({ ...prev, [id]: !prev[id] }))
     setActivePathId(id)
@@ -385,8 +453,7 @@ function YhqTopics() {
   const handleSelectTab = (id: string) => {
     setActivePathId(id)
     setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    const el = document.getElementById(`br-path-${id}`)
-    el?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
+    triggerScrollTo(id)
   }
 
   return (
@@ -688,6 +755,8 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const [activePathId, setActivePathId] = useState<string>('')
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({})
 
+  const { triggerScrollTo } = usePathScrollSpy(allSections, activePathId, setActivePathId)
+
   useEffect(() => {
     if (allSections.length > 0 && !allSections.some((s) => s.meta.id === activePathId)) {
       setActivePathId(allSections[0].meta.id)
@@ -702,8 +771,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const handleSelectTab = (id: string) => {
     setActivePathId(id)
     setCollapsedMap((prev) => ({ ...prev, [id]: false }))
-    const el = document.getElementById(`br-path-${id}`)
-    el?.scrollIntoView?.({ behavior: 'smooth', block: 'start' })
+    triggerScrollTo(id)
   }
 
   return (

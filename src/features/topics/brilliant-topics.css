@@ -158,11 +158,20 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 }
 
 /* ── Path Section Hero (Gradient background, Text left, 3D Art right) ───── */
+.br-path-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 140px;
+}
+
 .br-path-hero-wrap {
   position: relative;
   width: 100%;
   padding: 24px 16px 12px;
   background: var(--br-header-gradient);
+  scroll-margin-top: 140px;
 }
 
 .br-path-hero-flex {
