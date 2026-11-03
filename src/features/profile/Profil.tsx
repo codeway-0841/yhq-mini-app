@@ -167,14 +167,7 @@ export default function Profil() {
   }, [isPremiumUser, user?.premiumUntil, settings.language, tt])
 
   return (
-    <div
-      className={cn(
-        'lg:mx-auto lg:w-full lg:max-w-2xl',
-        isSettingsView
-          ? 'pb-8 overflow-y-auto'
-          : 'flex flex-col h-[calc(100dvh-var(--safe-top-body,0px)-max(0.5rem,var(--safe-bottom,0px)))] max-h-screen overflow-hidden'
-      )}
-    >
+    <div className={cn('lg:mx-auto lg:w-full lg:max-w-2xl', isSettingsView ? 'pb-8' : 'pb-2')}>
       {isSettingsView ? (
         <>
           <PageHeader
@@ -414,10 +407,10 @@ export default function Profil() {
         <>
           <PageHeader
         title={tt('profile')}
-        size="lg"
+        size="md"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="mb-2 shrink-0"
+        className="mb-2"
         actions={
           <button
             type="button"
@@ -434,7 +427,7 @@ export default function Profil() {
       />
 
       {/* ── Gorizontal Profil Kartasi ── */}
-      <div className="mx-4 mb-2 flex items-center gap-3 rounded-2xl bg-pcard p-3 transition-colors duration-150 shadow-xs shrink-0">
+      <div className="mx-4 mb-2 flex items-center gap-3.5 rounded-2xl bg-pcard p-3.5 transition-colors duration-150 shadow-xs">
         {/* Avatar (chapda) */}
         <Avatar
           name={name}
@@ -478,7 +471,7 @@ export default function Profil() {
       </div>
 
       {/* ── Max Streak & Lifetime XP Kartalari (2-Ustun) ── */}
-      <div className="mx-4 mb-2 grid grid-cols-2 gap-2.5 shrink-0">
+      <div className="mx-4 mb-2 grid grid-cols-2 gap-2.5">
         {/* Max streak */}
         <div
           onClick={() => {

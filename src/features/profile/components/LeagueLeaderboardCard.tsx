@@ -170,16 +170,16 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
 
   return (
     <>
-      <div className="mx-4 mb-2.5 rounded-2xl bg-pcard border-2 border-pline p-3 shadow-[0_2px_0_var(--p-line)] transition-colors flex-1 min-h-0 flex flex-col overflow-hidden">
+      <div className="mx-4 mb-2 rounded-2xl bg-pcard border-2 border-pline p-3.5 shadow-[0_2px_0_var(--p-line)] transition-colors">
         {/* ── Karta Sarlavhasi (Brilliant rasmi, Liga nomi, 5d left va info ikonkasi) ── */}
-        <div className="flex items-center justify-between pb-2 shrink-0">
-          <div className="flex items-center gap-2.5">
-            <LeagueShield tierId={currentTierId} size={38} />
+        <div className="flex items-center justify-between pb-2.5">
+          <div className="flex items-center gap-3">
+            <LeagueShield tierId={currentTierId} size={40} />
             <div>
-              <h3 className="font-display text-[17px] font-bold tracking-tight text-pfg leading-tight">
+              <h3 className="font-display text-[17.5px] font-bold tracking-tight text-pfg leading-tight">
                 {leagueTitle}
               </h3>
-              <p className="mt-0.5 text-[12px] font-semibold text-pmuted">
+              <p className="mt-0.5 text-[12.5px] font-semibold text-pmuted">
                 {subtitle}
               </p>
             </div>
@@ -202,7 +202,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
         {/* ── Standart balandlikdagi (scroll) Reyting Jadvali ── */}
         <div
           ref={listRef}
-          className="mt-1 divide-y divide-transparent space-y-1 flex-1 min-h-0 overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
+          className="mt-1 divide-y divide-transparent space-y-1 max-h-[210px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
           tabIndex={0}
           aria-label="Liga reyting jadvali"
         >
