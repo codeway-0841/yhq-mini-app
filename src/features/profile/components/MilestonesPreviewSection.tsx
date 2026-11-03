@@ -66,7 +66,7 @@ function MilestonePreviewItem({
         )}
       </div>
 
-      <p className={cn('line-clamp-1 text-[10px] font-semibold text-pfg max-w-[68px]', !unlocked && 'opacity-65')}>
+      <p className={cn('line-clamp-2 h-6 text-[10px] font-semibold leading-tight text-pfg max-w-[74px] text-center', !unlocked && 'opacity-65')}>
         {tt(a.titleKey)}
       </p>
 

@@ -7,6 +7,8 @@ import type { LeagueWeekly } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
+import { SpecCard } from '../../../shared/components/ui/spec'
 
 export const BRILLIANT_LEAGUES = [
   { id: 'hydrogen', name: 'Hydrogen', level: 1 },
@@ -200,11 +202,12 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
         </div>
 
         {/* ── Standart balandlikdagi (scroll) Reyting Jadvali ── */}
-        <div
-          ref={listRef}
-          className="mt-1 divide-y divide-transparent space-y-1 max-h-[210px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
-          aria-label="Liga reyting jadvali"
-        >
+        <div className="relative mt-1">
+          <div
+            ref={listRef}
+            className="divide-y divide-transparent space-y-0.5 max-h-[252px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
+            aria-label="Liga reyting jadvali"
+          >
           {displayEntries.length === 0 ? (
             <div className="py-8 text-center text-[13.5px] font-medium text-pmuted">
               {settings.language === 'ru' ? 'Пока нет данных' : "Hozircha ma'lumot yo'q"}
@@ -261,67 +264,80 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
             })
           )}
         </div>
+        {displayEntries.length > 4 && (
+          <div className="pointer-events-none absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-pcard to-transparent rounded-b-xl" />
+        )}
       </div>
+    </div>
 
-      {/* ── Brilliant Liga Modali (2-rasm: Shield karusel + Title + Okay) ── */}
+      {/* ── KIVVI Kanonik Liga Modali (ModalShell + SpecCard + Primary Footer) ── */}
       {showInfoModal && (
         <ModalShell
-          title=""
-          showHeader={false}
+          title={`${activeModalLeague.name} League`}
+          subtitle={
+            settings.language === 'ru'
+              ? 'Еженедельный рейтинг лиги'
+              : 'Haftalik liga reytingi'
+          }
           onClose={() => setShowInfoModal(false)}
           closeLabel={tt('close')}
-          zIndex={50}
-          backdropClassName="bg-black/60"
-          bodyClassName="px-4 pt-6 pb-6 flex flex-col items-center"
+          zIndex={60}
+          footer={
+            <Button
+              variant="default"
+              size="lg"
+              className="w-full font-bold cursor-pointer shadow-sm"
+              onClick={() => {
+                haptics.impact('light')
+                setShowInfoModal(false)
+              }}
+            >
+              {settings.language === 'ru' ? 'Понятно' : 'Tushunarli'}
+            </Button>
+          }
         >
-          {/* Ligalar nishonlari qatori (Brilliant rasmlari) */}
-          <div className="flex items-center gap-3 sm:gap-4 py-2 overflow-x-auto no-scrollbar max-w-full px-2">
-            {BRILLIANT_LEAGUES.map((league, idx) => {
-              const isLocked = idx > currentTierIndex
-              const isSelected = league.id === activeModalTierId
-              return (
-                <button
-                  key={league.id}
-                  type="button"
-                  onClick={() => {
-                    haptics.impact('light')
-                    setSelectedModalTierId(league.id)
-                  }}
-                  className={cn(
-                    'relative p-2 rounded-2xl transition-all duration-150 active:scale-95 flex flex-col items-center shrink-0',
-                    isSelected ? 'ring-2 ring-pprimary/50 bg-psurface/80 scale-105' : 'opacity-85 hover:opacity-100'
-                  )}
-                  aria-label={`${league.name} League`}
-                >
-                  <LeagueShield tierId={league.id} locked={isLocked} size={62} />
-                </button>
-              )
-            })}
+          <div className="space-y-3.5">
+            {/* Ligalar nishonlari karuseli */}
+            <SpecCard className="p-3">
+              <div className="flex items-center gap-2.5 sm:gap-3.5 py-1 overflow-x-auto no-scrollbar max-w-full px-1">
+                {BRILLIANT_LEAGUES.map((league, idx) => {
+                  const isLocked = idx > currentTierIndex
+                  const isSelected = league.id === activeModalTierId
+                  return (
+                    <button
+                      key={league.id}
+                      type="button"
+                      onClick={() => {
+                        haptics.impact('light')
+                        setSelectedModalTierId(league.id)
+                      }}
+                      className={cn(
+                        'relative p-1.5 rounded-2xl transition-all duration-150 active:scale-95 flex flex-col items-center shrink-0 cursor-pointer',
+                        isSelected
+                          ? 'ring-2 ring-pprimary bg-pline/30 scale-105 shadow-xs'
+                          : 'opacity-65 hover:opacity-90'
+                      )}
+                      aria-label={`${league.name} League`}
+                    >
+                      <LeagueShield tierId={league.id} locked={isLocked} size={54} />
+                    </button>
+                  )
+                })}
+              </div>
+            </SpecCard>
+
+            {/* Qoidalar matni SpecCard ichida */}
+            <SpecCard className="p-4 text-center space-y-1.5">
+              <h5 className="font-display text-[15.5px] font-bold text-pfg">
+                {settings.language === 'ru' ? 'Правила перехода' : "Ko'tarilish qoidalari"}
+              </h5>
+              <p className="text-[13px] leading-relaxed text-pmuted">
+                {settings.language === 'ru'
+                  ? 'Каждую неделю топ-15 активных участников переходят в следующую лигу. Рейтинг обновляется каждый понедельник.'
+                  : "Har haftada eng faol TOP 15 ishtirokchilar keyingi ligaga ko'tariladi. Reyting har dushanba yangilanadi."}
+              </p>
+            </SpecCard>
           </div>
-
-          {/* Tanlangan liga sarlavhasi (2-rasmdagi: Lithium League) */}
-          <h4 className="mt-5 font-display text-[22px] font-extrabold text-pfg text-center tracking-tight">
-            {activeModalLeague.name} League
-          </h4>
-
-          {/* Qoidalar matni */}
-          <p className="mt-2 text-center text-[13.5px] text-pmuted max-w-sm leading-relaxed">
-            {settings.language === 'ru'
-              ? 'Каждую неделю топ-15 активных участников переходят в следующую лигу. Рейтинг обновляется каждый понедельник.'
-              : "Har haftada eng faol TOP 15 ishtirokchilar keyingi ligaga ko'tariladi. Reyting har dushanba yangilanadi."}
-          </p>
-
-          {/* 2-rasmdagi 'Okay' katta tugmasi */}
-          <button
-            type="button"
-            onClick={() => {
-              haptics.impact('light')
-              setShowInfoModal(false)
-            }}
-            className="mt-6 w-full py-3.5 rounded-2xl bg-pfg text-pcanvas font-bold text-[16px] active:scale-[0.98] transition-transform shadow-xs cursor-pointer"
-          >
-            Okay
-          </button>
         </ModalShell>
       )}
     </>
