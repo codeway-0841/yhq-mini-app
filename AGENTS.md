@@ -47,6 +47,7 @@ Repository commands and dependencies: package.json. Prefer existing components a
 - Keep mathematical grid backgrounds unless the user asks to remove them.
 - Safe areas come from index.css; mobile document scroll and desktop panel scroll must survive.
 - Bottom navigation is an allowlist of four tab roots, governed by route-chrome.ts.
+- Sahifa headerlari har doim to'liq no-shaffof (bg-pcanvas); shaffoflik, backdrop-blur va scrolldagi ajratuvchi chiziq (divider) taqiqlanadi.
 
 ## Read only the relevant reference before changing a domain
 Historical incident details are retained verbatim in these references. Verify dated deployment

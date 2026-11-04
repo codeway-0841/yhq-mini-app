@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronDown, SquarePen, Trash2 } from 'lucide-react'
+import { ChevronDown, SquarePen, Trash2 } from 'lucide-react'
 import { MdMan, MdWoman } from 'react-icons/md'
 import { cn } from '../../../shared/lib/cn'
 import { Avatar } from './Avatar'

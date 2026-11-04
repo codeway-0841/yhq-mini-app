@@ -42,12 +42,6 @@ export default function TestlarPage() {
   const tt = useT(settings.language)
   const isPremium = isEffectivePremium({ tariff, premiumUntil: user?.premiumUntil })
 
-  const DIFF: Record<Diff, { label: string; color: string }> = {
-    easy: { label: tt('diffEasy'), color: 'var(--p-success)' },
-    mid:  { label: tt('diffMid'),  color: 'var(--p-warning)' },
-    hard: { label: tt('diffHard'), color: 'var(--p-danger)' },
-  }
-
   // Rasmiy imtihon simulyatori — fan konfigidan (shared/subjects.ts examPresets).
   // YHQ: o'z 'mock' + 'exam' formatlari bor (quyida); qolgan fanlar: preset kartalari.
   const subjectBase = SUBJECT_BASES.find((s) => s.id === subjectId)
@@ -117,7 +111,6 @@ export default function TestlarPage() {
 
       <div className="flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:items-stretch">
         {cards.map((m) => {
-          const d = m.diff ? DIFF[m.diff] : null
           const locked = isTestModePremium(m.id) && !isPremium
           return (
             <button key={m.id} onClick={() => start(m)}
@@ -139,13 +132,6 @@ export default function TestlarPage() {
               <div className="flex-1 min-w-0 text-left">
                 <p className="text-[16px] font-semibold text-pfg leading-tight truncate">{tt(m.titleKey)}</p>
                 <p className="text-[11.5px] text-pmuted mt-0.5 truncate">{m.meta}</p>
-                {d && (
-                  <span className="inline-flex items-center gap-1 mt-2 text-[11px] font-semibold"
-                    style={{ color: d.color }}>
-                    <span className="size-2 rounded-full" style={{ background: d.color }} />
-                    {d.label}
-                  </span>
-                )}
               </div>
 
               {/* O'tish ko'rsatkichi */}

@@ -99,17 +99,14 @@ export const TopBar = memo(function TopBar({ user, displayName, onSettings: _onS
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header mb-3 lg:static lg:mt-0 lg:pt-3 lg:bg-transparent lg:backdrop-blur-none lg:[-webkit-backdrop-filter:none] lg:border-none lg:shadow-none">
       <div className="flex items-center gap-2 xs:gap-2.5 px-4 py-2">
-        {/* 1 — Shaxs pill: ko'k avatar doirasi + ism (video: odam ikonkasi + "Personal") */}
+        {/* 1 — Shaxs doirasi: faqat avatar */}
         <button
           type="button"
           onClick={onProfile}
           aria-label={`${tt('profile')}: ${name}`}
-          className="dash-top-pill dash-top-press max-w-[96px] xs:max-w-[120px] sm:max-w-[140px] shrink-0 gap-2 xs:gap-2.5 overflow-hidden pr-2.5 pl-1.5 xs:pr-3.5 lg:hidden"
+          className="dash-top-circle dash-top-press shrink-0 lg:hidden"
         >
           <Avatar photoUrl={avatarSrcFor(user) ?? undefined} />
-          <span className="min-w-0 truncate text-[14px] xs:text-[15px] font-semibold leading-none tracking-[-0.01em] text-pfg">
-            {name}
-          </span>
         </button>
 
         {/* 2 — Qiymat pill: fan (video: bayroq + balans) yoki yangilanish */}

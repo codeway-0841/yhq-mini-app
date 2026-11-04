@@ -26,14 +26,8 @@ type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext
 
 const ADAPTIVE_FREE_SESSION_LIMIT = 15
 
-function EFBadge({ card }: { card: SRCard | undefined }) {
-  if (!card) return null
-  const ef    = card.ef
-  const label = ef >= 2.2 ? 'Oson' : ef >= 1.7 ? "O'rta" : 'Qiyin'
-  const cls   = ef >= 2.2 ? 'bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess'
-              : ef >= 1.7 ? 'bg-[rgb(var(--p-warning-rgb)/0.12)] text-pwarning'
-              :              'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger'
-  return <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${cls}`}>{label}</span>
+function EFBadge({ card: _card }: { card: SRCard | undefined }) {
+  return null
 }
 
 function Option({ id, text, state, onSelect, answered, label }: {

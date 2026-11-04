@@ -27,7 +27,7 @@ describe('PageHeader', () => {
     expect(h).toContain('text-[22px]')
   })
 
-  it('qalin doimiy divider YO\'Q — faqat .page-header scroll-CSS', () => {
+  it('qalin doimiy divider va shaffoflik YO\'Q — faqat toza .page-header CSS', () => {
     const { container } = render(<PageHeader title="X" onBack={() => {}} />)
     const header = container.querySelector('header')!
     expect(header.className).toContain('page-header')

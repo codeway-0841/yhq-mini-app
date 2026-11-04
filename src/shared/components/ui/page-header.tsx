@@ -7,7 +7,7 @@ import { cn } from '../../lib/cn'
  *
  * Muammo: 25+ sahifada bir xil qalin `bg-pcanvas border-b border-pline`
  * klon-header — veb-sayt hissi berardi, real (native) ilovalarda bunday
- * bo'lmaydi: u yerda fon shaffof-blur, ajratuvchi chiziq FAQAT scroll'da.
+ * bo'lmaydi: fon to'liq no-shaffof (bg-pcanvas), shaffoflik va chiziqlarsiz toza.
  *
  * Qoidalar:
  *  - Oddiy sahifa headeri O'RNIGA SHU komponent (maxsus holat: sessiya/

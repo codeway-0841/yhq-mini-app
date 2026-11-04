@@ -158,7 +158,7 @@ export default function LiteratureCourseHome() {
   return (
     <div className="russian-course-home min-h-screen pb-20">
       {/* Header */}
-      <header className="sticky top-[var(--safe-top,0px)] z-20 flex items-center justify-between px-4 py-3 bg-[var(--surface-primary,#121826)]/95 backdrop-blur-md border-b border-[var(--border-subtle,#1e293b)]">
+      <header className="sticky top-[var(--safe-top,0px)] z-20 flex items-center justify-between px-4 py-3 bg-[var(--surface-primary,#121826)] border-b border-[var(--border-subtle,#1e293b)]">
         <div className="flex items-center gap-3">
           <button
             onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}
@@ -285,7 +285,7 @@ export default function LiteratureCourseHome() {
         ) : (
           <div className="space-y-6">
             {/* Block Reader Top Bar */}
-            <div className="sticky top-[57px] z-10 -mx-4 px-4 py-3 bg-[var(--surface-primary,#121826)]/95 backdrop-blur-md border-b border-slate-800 shadow-md">
+            <div className="sticky top-[57px] z-10 -mx-4 px-4 py-3 bg-[var(--surface-primary,#121826)] border-b border-slate-800 shadow-md">
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
                   <span className="text-xs font-bold uppercase tracking-wider text-purple-400">

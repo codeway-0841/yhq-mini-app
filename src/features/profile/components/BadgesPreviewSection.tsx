@@ -26,7 +26,6 @@ function BadgePreviewItem({
   const openDetailSheet = useAchievementCelebrationStore((s) => s.openDetailSheet)
   const unlocked = stats ? isUnlocked(a, stats) : false
   const cur = stats ? Math.min(a.get(stats), a.target) : 0
-  const pct = a.target > 1 ? Math.round((cur / a.target) * 100) : (unlocked ? 100 : 0)
   const badgeUrl = getBadgeUrl(a)
 
   const handleClick = () => {
@@ -39,20 +38,20 @@ function BadgePreviewItem({
       type="button"
       onClick={handleClick}
       aria-label={`${tt(a.titleKey)}, ${unlocked ? tt('achStatusUnlocked') : `${cur}/${a.target}`}`}
-      className="group flex flex-col items-center text-center focus-visible:outline-none select-none transition-transform duration-150 active:scale-95 cursor-pointer"
+      className="group flex flex-col items-center justify-center text-center focus-visible:outline-none select-none transition-transform duration-150 active:scale-95 cursor-pointer py-1"
     >
-      <div className="relative mb-1 flex size-11 items-center justify-center">
+      <div className="relative flex size-12 items-center justify-center">
         <div
           className={cn(
-            'flex size-11 items-center justify-center transition-[transform,opacity] duration-200 ease-out',
+            'flex size-12 items-center justify-center transition-[transform,opacity] duration-200 ease-out',
             !unlocked && 'opacity-60 saturate-[0.5]',
           )}
         >
           {badgeUrl ? (
             <img
               src={badgeUrl}
-              alt=""
-              className="size-11 object-contain select-none pointer-events-none transition-transform duration-200 group-hover:scale-105"
+              alt={tt(a.titleKey)}
+              className="size-12 object-contain select-none pointer-events-none transition-transform duration-200 group-hover:scale-105"
               loading="lazy"
               decoding="async"
             />
@@ -65,27 +64,11 @@ function BadgePreviewItem({
           </span>
         )}
       </div>
-
-      <p className={cn('line-clamp-1 text-[10px] font-semibold text-pfg max-w-[68px]', !unlocked && 'opacity-65')}>
-        {tt(a.titleKey)}
-      </p>
-
-      <div className="mt-1 h-[2px] w-full max-w-[48px] overflow-hidden rounded-[1px] bg-plineStrong">
-        <div
-          className="h-full rounded-[1px] transition-[width] duration-500 ease-out"
-          style={{ width: `${pct}%`, background: unlocked ? a.color : 'var(--p-subtle)' }}
-        />
-      </div>
     </button>
   )
 }
 
 export function BadgesPreviewSection({ stats, tt, onOpenAll }: BadgesPreviewSectionProps) {
-  const unlockedCount = useMemo(() => {
-    if (!stats) return 0
-    return BADGES.filter((a) => isUnlocked(a, stats)).length
-  }, [stats])
-
   // Select 4 badges: unlocked first, then closest in-progress
   const previewBadges = useMemo(() => {
     if (!stats) return BADGES.slice(0, 4)
@@ -118,9 +101,6 @@ export function BadgesPreviewSection({ stats, tt, onOpenAll }: BadgesPreviewSect
           className="group flex items-center gap-1 text-[12px] font-semibold text-pmuted hover:text-pfg transition-colors active:opacity-70 cursor-pointer"
         >
           <span>{tt('viewAll')}</span>
-          <span className="text-[11px] font-bold text-pprimary tabular-nums">
-            {unlockedCount}/{BADGES.length}
-          </span>
           <ChevronRight size={14} strokeWidth={2} className="text-psubtle group-hover:text-pfg group-hover:translate-x-0.5 transition-[color,transform] duration-150" />
         </button>
       </div>
