@@ -5,6 +5,7 @@ import { useT } from '../../../shared/i18n'
 import { leaderboardPageCaches } from '../../../shared/lib/leaderboard-cache'
 import type { LeagueWeekly } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
+import { Skeleton } from '../../../shared/components/ui/skeleton'
 import { cn } from '../../../shared/lib/cn'
 
 export const BRILLIANT_LEAGUES = [
@@ -88,10 +89,10 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
   const settings = useAppStore((s) => s.settings)
   const storeLeague = useAppStore((s) => s.league)
   const displayName = useAppStore((s) => s.displayName)
-  const xp = useAppStore((s) => s.xp)
   const tt = useT(settings.language)
 
   const [weekly, setWeekly] = useState<LeagueWeekly | null>(() => leaderboardPageCaches.weekly.peek())
+  const [loading, setLoading] = useState(() => leaderboardPageCaches.weekly.peek() === null)
   const [showInfoModal, setShowInfoModal] = useState(false)
   const [selectedModalTierId, setSelectedModalTierId] = useState<BrilliantLeagueId | null>(null)
 
@@ -99,7 +100,19 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
   const userRowRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    leaderboardPageCaches.weekly.fetch(user?.id).then(setWeekly).catch(() => {})
+    let alive = true
+    leaderboardPageCaches.weekly
+      .fetch(user?.id)
+      .then((data) => {
+        if (alive) setWeekly(data)
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (alive) setLoading(false)
+      })
+    return () => {
+      alive = false
+    }
   }, [user?.id])
 
   // KIVVI ligasini Brilliant ligasiga moslashtirish (default: hydrogen)
@@ -136,14 +149,14 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
       }))
     }
 
-    if (user) {
+    if (user && !loading) {
       const myName = displayName || `${user.firstName} ${user.lastName ?? ''}`.trim() || tt('guestName')
       return [
         {
           rank: 1,
           userId: user.id || 'you',
           name: myName,
-          score: xp ?? 0,
+          score: 0,
           isYou: true,
           photoUrl: null,
         },
@@ -151,10 +164,11 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
     }
 
     return []
-  }, [weekly?.entries, user, displayName, xp, tt])
+  }, [weekly?.entries, user, displayName, tt, loading])
 
   // Foydalanuvchining o'z qatoriga avtomatik markaziy scroll qilish
   useEffect(() => {
+    if (loading) return
     const timer = setTimeout(() => {
       if (userRowRef.current && listRef.current) {
         const container = listRef.current
@@ -165,11 +179,11 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
       }
     }, 120)
     return () => clearTimeout(timer)
-  }, [displayEntries])
+  }, [loading, displayEntries])
 
   return (
     <>
-      <div className="mx-4 mb-3 rounded-3xl bg-pcard border border-pline/50 p-4 transition-colors">
+      <div className="mx-4 mb-3 rounded-3xl bg-pcard border border-pline p-4 transition-colors">
         {/* ── Karta Sarlavhasi (Brilliant rasmi, Liga nomi, 5d left va info ikonkasi) ── */}
         <div className="flex items-center justify-between pb-3">
           <div className="flex items-center gap-3">
@@ -191,7 +205,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
               setSelectedModalTierId(currentTierId)
               setShowInfoModal(true)
             }}
-            className="flex size-8 shrink-0 items-center justify-center rounded-full text-pmuted transition-colors hover:bg-pline/40 hover:text-pfg active:scale-95 focus-visible:outline-none cursor-pointer"
+            className="flex size-8 shrink-0 items-center justify-center rounded-full text-pmuted transition-colors hover:bg-pline hover:text-pfg active:scale-95 focus-visible:outline-none cursor-pointer"
             aria-label="Liga ma'lumotlari"
           >
             <Info size={20} strokeWidth={1.8} />
@@ -202,11 +216,24 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
         <div className="relative mt-1">
           <div
             ref={listRef}
-            className="divide-y divide-transparent space-y-0.5 max-h-[252px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
+            className="divide-y divide-transparent space-y-0.5 h-[252px] overflow-y-auto overscroll-contain pr-1 touch-pan-y focus:outline-none"
             aria-label="Liga reyting jadvali"
+            aria-busy={loading}
           >
-          {displayEntries.length === 0 ? (
-            <div className="py-8 text-center text-[13.5px] font-medium text-pmuted">
+          {loading ? (
+            Array.from({ length: 5 }).map((_, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl"
+              >
+                <Skeleton className="w-5 h-4 rounded shrink-0" />
+                <Skeleton className="size-8 rounded-full shrink-0" />
+                <Skeleton className={cn('h-4 rounded', i % 2 === 0 ? 'w-28' : 'w-20')} />
+                <Skeleton className="ml-auto h-4 w-12 rounded shrink-0" />
+              </div>
+            ))
+          ) : displayEntries.length === 0 ? (
+            <div className="flex h-full items-center justify-center text-center text-[13.5px] font-medium text-pmuted">
               {settings.language === 'ru' ? 'Пока нет данных' : "Hozircha ma'lumot yo'q"}
             </div>
           ) : (
@@ -220,7 +247,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                     'flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-colors duration-150',
                     isUser
                       ? 'bg-black/[0.05] dark:bg-white/[0.08]'
-                      : 'hover:bg-psurface/40'
+                      : 'hover:bg-psurface'
                   )}
                 >
                   {/* O'rin raqami */}
@@ -261,7 +288,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
             })
           )}
         </div>
-        {displayEntries.length > 4 && (
+        {(loading || displayEntries.length > 4) && (
           <div className="pointer-events-none absolute bottom-0 inset-x-0 h-6 bg-gradient-to-t from-pcard to-transparent rounded-b-xl" />
         )}
       </div>

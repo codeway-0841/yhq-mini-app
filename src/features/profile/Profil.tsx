@@ -419,7 +419,7 @@ export default function Profil() {
               haptics.impact('light')
               setSearchParams({ view: 'settings' })
             }}
-            className="inline-flex size-10 items-center justify-center rounded-xl text-pmuted transition-colors hover:bg-pline/40 hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
+            className="inline-flex size-10 items-center justify-center rounded-xl text-pmuted transition-colors hover:bg-pline hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
             aria-label={settings.language === 'ru' ? 'Настройки' : 'Sozlamalar'}
           >
             <Settings size={22} strokeWidth={1.8} />
@@ -479,7 +479,7 @@ export default function Profil() {
             haptics.impact('light')
             navigate('/streak')
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
+          className="cursor-pointer rounded-2xl bg-pcard border border-pline p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
         >
           <div className="flex items-center gap-2">
             <BrilliantStreakIcon className="size-5 shrink-0" />
@@ -498,7 +498,7 @@ export default function Profil() {
             haptics.impact('light')
             setShowLevelInfo(true)
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border border-pline/40 p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
+          className="cursor-pointer rounded-2xl bg-pcard border border-pline p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
         >
           <div className="flex items-center gap-2">
             <BrilliantXpIcon className="size-5 shrink-0" />
