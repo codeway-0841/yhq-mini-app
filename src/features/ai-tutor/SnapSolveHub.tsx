@@ -1140,7 +1140,7 @@ export default function SnapSolveHub() {
       {isManualInputOpen && (
         <DialogOverlay onClose={() => setIsManualInputOpen(false)} position="bottom" swipeToDismiss labelId="manual-calc-title">
           <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
-            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
+            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-1 mb-4 cursor-grab active:cursor-grabbing touch-none select-none" />
             <h3 id="manual-calc-title" className="sr-only">
               {language === 'ru' ? 'Ввести задачу вручную' : 'Masalani qo‘lda yozish'}
             </h3>
@@ -1187,7 +1187,7 @@ export default function SnapSolveHub() {
       {isHistoryOpen && (
         <DialogOverlay onClose={() => setIsHistoryOpen(false)} position="bottom" swipeToDismiss labelId="snap-history-title">
           <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
-            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
+            <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mt-1 mb-4 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
             <h3 id="snap-history-title" className="sr-only">
               {language === 'ru' ? 'Недавние решения' : 'Oxirgi yechimlar'}
             </h3>

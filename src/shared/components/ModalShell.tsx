@@ -106,7 +106,7 @@ export function ModalShell({
           <div
             data-drag-handle
             aria-hidden="true"
-            className="relative z-10 mx-auto mt-2.5 mb-1.5 h-1 w-10 flex-none cursor-grab touch-none select-none rounded-full bg-gray-300 active:cursor-grabbing dark:bg-white/20"
+            className={cn('relative z-10 mx-auto h-1 w-10 flex-none cursor-grab touch-none select-none rounded-full bg-gray-300 active:cursor-grabbing dark:bg-white/20', showHeader ? 'mt-2.5 mb-1.5' : 'mt-3 mb-4')}
           />
         ) : null}
 
