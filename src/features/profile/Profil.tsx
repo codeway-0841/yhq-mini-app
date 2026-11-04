@@ -427,47 +427,57 @@ export default function Profil() {
         }
       />
 
-      {/* ── Gorizontal Profil Kartasi ── */}
-      <div className="mx-4 mb-3 flex items-center gap-3.5 rounded-3xl bg-pcard border-2 border-plineStrong p-4 transition-colors duration-150 shadow-xs">
-        {/* Avatar (chapda) */}
-        <Avatar
-          name={name}
-          photoUrl={avatarSrcFor(user) ?? undefined}
-          size="md"
-          onEditPhoto={() => setShowPhotoEdit(true)}
-        />
+      {/* ── Markaziy Profil Hero (Rasmdagidek: Katta Avatar, Ism ›, Pastida raqam) ── */}
+      <div className="mx-4 mb-4 flex flex-col items-center text-center pt-1">
+        {/* Katta markaziy Avatar (o'zimizning tayyor avatarimiz — photoUrl, customAvatar, frame bilan) */}
+        <div className="relative mb-3 flex justify-center">
+          <Avatar
+            name={name}
+            photoUrl={avatarSrcFor(user) ?? undefined}
+            size="lg"
+            onEditPhoto={() => setShowPhotoEdit(true)}
+          />
+        </div>
 
-        {/* Markaziy qism (Ism, ID, Nishonlar) */}
-        <div className="min-w-0 flex-1">
-          {/* Ism */}
-          <div className="flex items-center gap-1.5">
-            <p className="truncate font-display text-[17px] font-semibold tracking-[-0.015em] text-pfg">
-              {name}
-            </p>
-            <button
-              type="button"
-              onClick={() => setShowNameEdit(true)}
-              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center -my-2 -mx-1.5 rounded text-psubtle transition-colors hover:text-pfg active:scale-95 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
-              aria-label={tt('editProfile')}
-            >
-              <Pencil size={12} strokeWidth={1.75} />
-            </button>
-          </div>
+        {/* Ism va o'ngga strelka: masalan "Ruslan Abl >" */}
+        <button
+          type="button"
+          onClick={() => {
+            haptics.impact('light')
+            setShowNameEdit(true)
+          }}
+          className="group inline-flex items-center justify-center gap-1.5 active:opacity-75 transition-opacity"
+          aria-label={tt('editProfile')}
+        >
+          <span className="font-display text-[20px] font-extrabold tracking-tight text-pfg group-hover:text-pprimary transition-colors">
+            {name}
+          </span>
+          <ChevronRight size={18} className="text-pmuted group-hover:text-pfg transition-colors" strokeWidth={2.4} />
+        </button>
 
-          {/* Level X */}
-          <div className="mt-0.5 flex items-center">
-            <button
-              type="button"
-              onClick={() => {
-                haptics.impact('light')
-                setShowLevelInfo(true)
-              }}
-              className="rounded text-[12px] font-semibold text-pmuted transition-colors hover:text-pfg active:opacity-70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-pprimary"
-              aria-label={`${tt('level')} ${level}`}
-            >
-              Level {level}
-            </button>
-          </div>
+        {/* Pastida telefon raqami va level */}
+        <div className="mt-1 flex items-center justify-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              haptics.impact('light')
+              setShowPhoneSheet(true)
+            }}
+            className="text-[13.5px] font-medium text-pmuted hover:text-pfg transition-colors active:opacity-70"
+            aria-label={user?.phone ? `${tt('phoneChangeTitle')}: ${user.phone}` : tt('authLinkPhone')}
+          >
+            {user?.phone ? user.phone : (settings.language === 'ru' ? '+ Добавить номер' : '+ Raqam qo‘shish')}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              haptics.impact('light')
+              setShowLevelInfo(true)
+            }}
+            className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-psurface text-pmuted hover:text-pfg transition-colors"
+          >
+            Level {level}
+          </button>
         </div>
       </div>
 

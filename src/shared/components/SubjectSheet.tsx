@@ -41,7 +41,7 @@ export default function SubjectSheet({ onClose }: { onClose: () => void }) {
         />
 
         <div className="relative z-10 min-h-0 flex-1 px-4 pb-4 overflow-y-auto overscroll-contain">
-          <SpecCard>
+          <SpecCard divided>
             {SUBJECTS.map((s, i) => {
               const active = s.id === subjectId
               const Icon = s.icon

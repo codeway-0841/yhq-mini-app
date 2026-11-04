@@ -440,9 +440,7 @@ export function IdleScreen({
             disabled={connFailed || !connected}
             className="arena-primary"
           >
-            <Swords size={20} />
             <span>{tt('findOpponent')}</span>
-            <ArrowRight size={20} />
           </button>
         </section>
 
