@@ -1,5 +1,14 @@
 @tailwind base;
 @tailwind components;
+
+@layer components {
+  /* Brilliant.org 1:1 Card & Block Frames:
+     Barcha kartalar va bloklar Brilliant kabi aniq 2px chegara va toza sirtga ega bo'ladi */
+  .bg-pcard {
+    border: 2px solid var(--p-line-strong);
+  }
+}
+
 @tailwind utilities;
 
 @font-face {
@@ -20,24 +29,24 @@
 :root {
   /* v3 — semantik matn darajalari + Apple/Linear surface'lar.
      fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary. */
-  --theme-canvas:      #0e1210;
-  --theme-surface:     #1c222b;
-  --theme-elevated:    #161b22;
-  --theme-fg:          #f5f5f4;
-  --theme-fg-muted:    #a8a29e;
-  --theme-fg-subtle:   #8a847f;
-  --theme-line:        rgba(255, 255, 255, 0.07);
-  --theme-line-strong: rgba(255, 255, 255, 0.14);
+  --theme-canvas:      #111215;
+  --theme-surface:     #1a1c22;
+  --theme-elevated:    #242832;
+  --theme-fg:          #f7f7f8;
+  --theme-fg-muted:    #9aa0ac;
+  --theme-fg-subtle:   #818896;
+  --theme-line:        #383d47;
+  --theme-line-strong: #4c4c4c;
   --theme-shadow:      #000000;
   /* Desktop sidebar kengligi (DesktopSidebar.tsx dinamik yangilaydi: 16rem yoki 4rem) */
   --sidebar-w: 0px;
 
   /* RGB triplet — Tailwind opacity modifier (bg-[rgb(var(--p-primary-rgb)/X)] ...) uchun */
-  --p-primary-rgb: 20 111 221;
+  --p-primary-rgb: 16 94 199;
 
   /* Launch screen foni — brend belgisi turgan app icon bilan AYNAN bir xil ko'k
      (tema/aksentga bog'lanmaydi: splash har doim brend-ko'k, videodagi kabi). */
-  --splash-bg: #1a80fa;
+  --splash-bg: #105ec7;
 }
 
 @media (min-width: 1024px) {
@@ -47,15 +56,15 @@
 }
 
 body[data-theme='light'] {
-  --theme-canvas:      #f0f3f6;
-  --theme-surface:     #e4e8ee;
+  --theme-canvas:      #f5f3f1;
+  --theme-surface:     #faf8f6;
   --theme-elevated:    #ffffff;
-  --theme-fg:          #0f172a;
-  --theme-fg-muted:    #334155;
-  --theme-fg-subtle:   #4b5563;
-  --theme-line:        rgba(0, 0, 0, 0.08);
-  --theme-line-strong: rgba(0, 0, 0, 0.15);
-  --theme-shadow:      rgba(0, 0, 0, 0.06);
+  --theme-fg:          #121212;
+  --theme-fg-muted:    #5b6470;
+  --theme-fg-subtle:   #6f7785;
+  --theme-line:        #e4e4e4;
+  --theme-line-strong: #d5d5d5;
+  --theme-shadow:      rgba(18, 18, 18, 0.05);
 }
 
 * {
@@ -67,7 +76,9 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: var(--p-canvas, var(--theme-canvas));
+  background-color: var(--p-canvas, var(--theme-canvas));
+  background-image: radial-gradient(color-mix(in srgb, var(--p-fg) 8%, transparent) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
   color: var(--theme-fg);
   font-family: var(--font-sans);
   /* Ta'lim ilovasi = raqam ko'p (ball, foiz, taymer) — tabular figure
@@ -792,40 +803,39 @@ body[data-theme='light'] .ios-glass {
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v3 — sovuq-neytral grafit fon (#0d1117), KIVVI brend ko'k aksent (#146fdd —
-     2026-09-15 kontrast fix: #1a81fc oq matn bilan 3.76:1 (AA 4.5 talab), #146fdd 4.83:1) */
-  --p-canvas:      #0d1117; --p-canvas-rgb: 13 17 23;
-  --p-card:        #161b22; --p-card-rgb: 22 27 34;
-  --p-surface:     #1c222b; --p-surface-rgb: 28 34 43;
-  --p-line:        rgba(255, 255, 255, 0.07); --p-line-rgb: 255 255 255;
-  --p-line-strong: rgba(255, 255, 255, 0.14);
+  /* v3 — Brilliant obsidian dark (#111215), card (#141414), border (#4c4c4c) */
+  --p-canvas:      #111215; --p-canvas-rgb: 17 18 21;
+  --p-card:        #141414; --p-card-rgb: 20 20 20;
+  --p-surface:     #1e1e1e; --p-surface-rgb: 30 30 30;
+  --p-line:        #383d47; --p-line-rgb: 56 61 71;
+  --p-line-strong: #4c4c4c;
 
-  --p-fg:          #f5f5f4; --p-fg-rgb: 245 245 244;   /* Primary text */
-  --p-muted:       #a8a29e; --p-muted-rgb: 168 162 158;   /* Secondary text */
-  --p-subtle:      #8a847f;   /* Tertiary text (2026-09 kontrast: #78716c 3.61 edi) */
-  --p-disabled:    #57534e;   /* Disabled text */
-  --p-link:        #4da3ff;   /* Link */
+  --p-fg:          #f7f7f8; --p-fg-rgb: 247 247 248;   /* Primary text */
+  --p-muted:       #9aa0ac; --p-muted-rgb: 154 160 172;   /* Secondary text */
+  --p-subtle:      #818896;   /* Tertiary text */
+  --p-disabled:    #575b66;   /* Disabled text */
+  --p-link:        #3b82f6;   /* Link */
 
-  /* Aksent — KIVVI Blue (data-accent bilan almashadi) */
-  --p-primary:     #146fdd;
+  /* Aksent — Brilliant Blue (data-accent bilan almashadi) */
+  --p-primary:     #3b82f6;
   --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
-  /* Semantik ranglar — AKSENTDAN ALOHIDA, faqat status uchun */
-  --p-success:     #35c47f;
-  --p-success-rgb: 53 196 127;
-  --p-warning:     #e0a045;
-  --p-warning-rgb: 224 160 69;
-  --p-danger:      #f0546e;
-  --p-danger-rgb:  240 84 110;
-  --p-purple:      #8b7fd4;   /* AI/Premium */
-  --p-purple-rgb:  139 127 212;
-  --p-blue:        #4a90d9;
-  --p-blue-rgb:    74 144 217;
-  --p-gold:        #d9a441;   /* Premium oltin */
-  --p-gold-rgb:    217 164 65;
-  --p-gold-deep:   #b8862c;
-  --p-on-gold:     #241a00;
+  /* Semantik ranglar — Brilliant toza ranglar */
+  --p-success:     #34d399;
+  --p-success-rgb: 52 211 153;
+  --p-warning:     #fb923c;
+  --p-warning-rgb: 251 146 60;
+  --p-danger:      #f87171;
+  --p-danger-rgb:  248 113 113;
+  --p-purple:      #a78bfa;   /* AI/Premium */
+  --p-purple-rgb:  167 139 250;
+  --p-blue:        #60a5fa;
+  --p-blue-rgb:    96 165 250;
+  --p-gold:        #f59e0b;   /* Premium oltin */
+  --p-gold-rgb:    245 158 11;
+  --p-gold-deep:   #d97706;
+  --p-on-gold:     #ffffff;
 
   /* ── Geometriya (Jade & Stone / Vega): nozik va qulay radius shkalasi ── */
   --radius-control:   8px;    /* tugma, input, badge */
@@ -868,37 +878,37 @@ body {
   --ring:               var(--p-primary);
 }
 
-/* v3 "Light High-Contrast" — boy va aniq ajralib turadigan yorug' rejim */
+/* v3 "Light High-Contrast" — Brilliant warm canvas (#f5f3f1) & pure white cards (#ffffff) */
 body[data-theme='light'] {
-  --p-canvas:      #f0f3f6; --p-canvas-rgb: 240 243 246;
+  --p-canvas:      #f5f3f1; --p-canvas-rgb: 245 243 241;
   --p-card:        #ffffff; --p-card-rgb: 255 255 255;
-  --p-surface:     #e4e8ee; --p-surface-rgb: 228 232 238;
-  --p-line:        rgba(0, 0, 0, 0.08); --p-line-rgb: 0 0 0;
-  --p-line-strong: rgba(0, 0, 0, 0.15);
+  --p-surface:     #faf8f6; --p-surface-rgb: 250 248 246;
+  --p-line:        #e4e4e4; --p-line-rgb: 228 228 228;
+  --p-line-strong: #e4e4e4;
 
-  --p-fg:          #0f172a; --p-fg-rgb: 15 23 42;
-  --p-muted:       #334155; --p-muted-rgb: 51 65 85;
-  --p-subtle:      #4b5563;
-  --p-disabled:    #6b7280;
-  --p-link:        #146fdd;
+  --p-fg:          #121212; --p-fg-rgb: 18 18 18;
+  --p-muted:       #5b6470; --p-muted-rgb: 91 100 112;
+  --p-subtle:      #6f7785;
+  --p-disabled:    #8a94a6;
+  --p-link:        #105ec7;
 
-  /* Aksent yorug' fonda to'yingan brend ko'ki */
-  --p-primary:     #146fdd;
-  --p-primary-rgb: 20 111 221;
+  /* Aksent yorug' fonda to'yingan Brilliant ko'ki (WCAG 2.2 AA 5.5:1) */
+  --p-primary:     #105ec7;
+  --p-primary-rgb: 16 94 199;
   --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;
 
-  /* Semantik ranglar — yorug' fon uchun to'q variantlar */
+  /* Semantik ranglar — WCAG AA muvofiq */
   --p-success:     #15803d;
   --p-success-rgb: 21 128 61;
   --p-warning:     #b45309;
   --p-warning-rgb: 180 83 9;
-  --p-danger:      #be123c;
-  --p-danger-rgb:  190 18 60;
+  --p-danger:      #b91c1c;
+  --p-danger-rgb:  185 28 28;
   --p-purple:      #7c3aed;
   --p-purple-rgb:  124 58 237;
-  --p-blue:        #2563eb;
-  --p-blue-rgb:    37 99 235;
+  --p-blue:        #1d4ed8;
+  --p-blue-rgb:    29 78 216;
   --p-gold:        #b45309;
   --p-gold-rgb:    180 83 9;
   --p-gold-deep:   #92400e;
@@ -1378,11 +1388,14 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-/* ── Dashboard foni (v3) ─────────────────────────────────────────────────
-   13 ta temaga 13 ta baland radial+linear gradient sarlavha OLIB TASHLANDI
-   (ortiqcha dekoratsiya). Fon endi oddiy canvas tokeni — atmosfera aksent va
-   sirt ierarxiyasi bilan beriladi. */
-.dashboard-page { background-color: var(--p-canvas); }
+/* ── Dashboard foni (Brilliant Mathematical Dot Grid Canvas) ───────────────
+   Brilliant.org xos radial nuqtali to'r (dot-grid) foni. */
+.dashboard-page,
+.math-canvas-grid {
+  background-color: var(--p-canvas);
+  background-image: radial-gradient(color-mix(in srgb, var(--p-fg) 8%, transparent) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
 
 /* ── Dashboard "Personal" qatori (IMG_0928.MOV bilan 1:1) ───────────────────
    Video kadri 384×832 (≈393pt ekran, 1 kadr px ≈ 1pt). O'lchangan qiymatlar:
@@ -1399,10 +1412,9 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
   align-items: center;
   height: 42px;
   border-radius: 999px;
-  border: 1px solid var(--p-line-strong);
-  background: rgba(255, 255, 255, 0.06);           /* color-mix yo'q WebView */
-  background: color-mix(in srgb, var(--p-fg) 6%, transparent);
-  box-shadow: inset 0 1px 0 var(--p-line-strong);
+  border: 2px solid var(--p-line-strong);
+  background: var(--p-card);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
   -webkit-backdrop-filter: blur(18px) saturate(1.6);
   backdrop-filter: blur(18px) saturate(1.6);
   -webkit-tap-highlight-color: transparent;

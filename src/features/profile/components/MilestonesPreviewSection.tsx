@@ -102,7 +102,7 @@ export function MilestonesPreviewSection({ stats, tt, onOpenAll }: MilestonesPre
   }, [stats])
 
   return (
-    <div className="mx-4 mb-2 rounded-2xl bg-pcard p-3 shadow-xs">
+    <div className="mx-4 mb-3 rounded-3xl bg-pcard border-2 border-plineStrong p-4 shadow-xs">
       {/* Header with Barchasi > */}
       <div className="flex items-center justify-between mb-2">
         <h3 className="font-display text-[14.5px] font-bold text-pfg tracking-tight">

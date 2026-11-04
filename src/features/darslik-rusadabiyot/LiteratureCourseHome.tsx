@@ -162,7 +162,7 @@ export default function LiteratureCourseHome() {
         <div className="flex items-center gap-3">
           <button
             onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}
-            className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 transition-colors"
+            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-slate-200 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             aria-label={ru ? 'Назад' : 'Orqaga'}
           >
             <ArrowLeft className="w-5 h-5" />

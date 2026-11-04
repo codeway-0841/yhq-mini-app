@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { ChevronLeft } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../content/darslik-rustili'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
@@ -143,7 +144,7 @@ export default function RussianCourseHome() {
                 onClick={() => goBack(navigate)}
                 aria-label={ru ? 'Назад' : 'Orqaga'}
               >
-                ‹
+                <ChevronLeft size={24} strokeWidth={2.25} />
               </button>
             </div>
             <div

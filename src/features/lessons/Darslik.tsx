@@ -270,24 +270,28 @@ export default function Darslik() {
         <div className="yhq-home-header flex flex-col shrink-0">
           {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
           <div className="yhq-home-status flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => goBack(navigate)}
-              aria-label={tt('darslikBack')}
-              className="yhq-home-pill inline-flex h-[38px] cursor-pointer items-center gap-1.5 rounded-full border-2 px-3.5 transition-transform active:scale-95"
-            >
-              <ChevronLeft className="hidden lg:block" size={20} aria-hidden="true" />
-              <span className="text-[15px] font-extrabold tabular-nums lg:hidden">
-                {Math.max(1, totalDone)}
-              </span>
-              {/* Golden key icon */}
-              <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0 lg:hidden" aria-hidden="true">
-                <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
-                <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
-                <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
-                <circle cx="8" cy="17" r="2" fill="#fff" />
-              </svg>
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => goBack(navigate)}
+                aria-label={tt('darslikBack')}
+                className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer"
+              >
+                <ChevronLeft size={24} strokeWidth={2.25} />
+              </button>
+              <div className="yhq-home-pill inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 px-3.5 select-none">
+                <span className="text-[15px] font-extrabold tabular-nums">
+                  {Math.max(1, totalDone)}
+                </span>
+                {/* Golden key icon */}
+                <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
+                  <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
+                  <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
+                  <circle cx="8" cy="17" r="2" fill="#fff" />
+                </svg>
+              </div>
+            </div>
 
             <div
               data-testid="brilliant-streak-pill"

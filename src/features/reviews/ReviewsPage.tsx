@@ -172,7 +172,7 @@ export default function ReviewsPage() {
           <button
             onClick={() => goBack(navigate)}
             aria-label={lang === 'ru' ? 'Назад' : 'Orqaga'}
-            className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
+            className="flex size-9 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform"
           >
             <ChevronLeft size={20} className="text-slate-800 dark:text-foreground stroke-[2.4]" />
           </button>
@@ -184,7 +184,7 @@ export default function ReviewsPage() {
               setShowFilterSheet(true)
             }}
             aria-label={lang === 'ru' ? 'Фильтр' : 'Filtr'}
-            className="w-9 h-9 rounded-full bg-white dark:bg-card shadow-xs border border-black/5 dark:border-white/10 flex items-center justify-center active:scale-95 transition-transform"
+            className="flex size-9 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform"
           >
             <svg
               width="16"

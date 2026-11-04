@@ -33,7 +33,7 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           <Skeleton className="h-4 w-24" />
           <Skeleton className="h-3 w-16" />
         </div>
-        <div className="divide-y divide-pline overflow-hidden rounded-2xl bg-pcard shadow-xs">
+        <div className="overflow-hidden rounded-3xl bg-pcard border-2 border-plineStrong p-1.5 shadow-xs space-y-1">
           {[0, 1, 2].map((i) => (
             <div key={i} className="flex items-center gap-3 px-4 py-3">
               <Skeleton className="size-4 shrink-0" />
@@ -60,24 +60,29 @@ export const LeaguePreview = memo(function LeaguePreview({ lang, onSeeAll, userI
           {tt('seeAll')} <ChevronRight size={14} strokeWidth={1.75} />
         </button>
       </div>
-      <div className="divide-y divide-pline overflow-hidden rounded-2xl bg-pcard shadow-xs">
+      <div className="overflow-hidden rounded-3xl bg-pcard border-2 border-plineStrong p-1.5 shadow-xs space-y-1">
         {entries.map((e) => (
           <div
             key={e.rank}
-            className={cn('flex items-center gap-3 px-4 py-3', e.isYou && 'bg-pwash')}
+            className={cn(
+              'flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all duration-150',
+              e.isYou
+                ? 'bg-gradient-to-r from-[#173d87] via-[#1a4698] to-[#133372] border border-blue-400/40 text-white shadow-md'
+                : 'hover:bg-psurface text-pfg'
+            )}
           >
             {/* v3: 🥇🥈🥉 emoji O'RNIGA tabular o'rin raqami — ro'yxatning
                 qolgan qismi bilan bir xil o'qiladi va lokalizatsiyaga bog'liq emas */}
-            <span className="w-5 shrink-0 text-center text-[13px] font-semibold tabular-nums text-psubtle">
+            <span className={cn('w-5 shrink-0 text-center text-[13px] font-semibold tabular-nums', e.isYou ? 'text-blue-100 font-bold' : 'text-pmuted')}>
               {e.rank}
             </span>
             <div className="flex size-8 shrink-0 items-center justify-center rounded-xl bg-psurface text-[11px] font-bold text-pmuted shadow-xs">
               {e.name[0]?.toUpperCase() ?? '?'}
             </div>
-            <span className={cn('min-w-0 flex-1 truncate text-[13px] font-semibold', e.isYou ? 'text-pprimary' : 'text-pfg')}>
+            <span className={cn('min-w-0 flex-1 truncate text-[13.5px]', e.isYou ? 'text-white font-bold' : 'text-pfg font-semibold')}>
               {e.isYou ? `${e.name} (${lang === 'ru' ? 'Вы' : 'Siz'})` : e.name}
             </span>
-            <span className="text-[13px] font-semibold tabular-nums text-pfg">{e.score}</span>
+            <span className={cn('text-[13px] font-bold tabular-nums', e.isYou ? 'text-blue-100' : 'text-pmuted')}>{e.score} XP</span>
           </div>
         ))}
       </div>

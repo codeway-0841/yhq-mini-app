@@ -26,8 +26,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:     'bg-pprimary text-ponprimary hover:brightness-[1.06]',
-        secondary:   'bg-pcard text-pfg shadow-2xs hover:bg-psurface',
+        default:     'bg-pprimary text-ponprimary border-b-[3px] border-b-[rgb(var(--p-primary-rgb)/0.6)] hover:brightness-[1.06] active:translate-y-[2px] active:border-b-0',
+        secondary:   'bg-pcard text-pfg border border-plineStrong border-b-[3px] border-b-plineStrong hover:bg-psurface active:translate-y-[2px] active:border-b-[1px]',
         outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface',
         ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg',
         // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind
@@ -35,7 +35,7 @@ const buttonVariants = cva(
         // (`bg-[rgb(var(--p-danger-rgb)/0.1)]`, design-system testi guard qiladi).
         destructive: 'bg-transparent text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] hover:bg-[rgb(var(--p-danger-rgb)/0.10)]',
         /** Premium obuna CTA — mavzu aksentiga (pprimary) moslashadi */
-        gold:        'bg-pprimary text-ponprimary hover:brightness-[1.06]',
+        gold:        'bg-pprimary text-ponprimary border-b-[3px] border-b-[rgb(var(--p-primary-rgb)/0.6)] hover:brightness-[1.06] active:translate-y-[2px] active:border-b-0',
         /** AI amallari — purple wash (aksentdan alohida signal) */
         ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)]',
         link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:scale-100',

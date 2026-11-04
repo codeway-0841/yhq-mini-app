@@ -202,7 +202,7 @@ export function BlockReader({
             type="button"
             onClick={onClose}
             aria-label={tt('rusDarslikCloseReader')}
-            className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg shadow-2xs transition-transform active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+            className="flex size-10 shrink-0 cursor-pointer items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none"
           >
             <ChevronLeft size={21} strokeWidth={2.25} />
           </button>

@@ -133,7 +133,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
 
   const currentLeagueObj = BRILLIANT_LEAGUES.find((l) => l.id === currentTierId) || BRILLIANT_LEAGUES[0]
   const leagueTitle = currentLeagueObj.name
-  const subtitle = `${daysLeft}d left · Top 15 advance`
+  const subtitle = `Top 15 advance · ${daysLeft} days left`
 
   // Haqiqiy o'yinchilar ro'yxati (hech qanday soxta o'yinchi qo'shilmaydi)
   const displayEntries = useMemo(() => {
@@ -183,7 +183,7 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
 
   return (
     <>
-      <div className="mx-4 mb-3 rounded-3xl bg-pcard border border-pline p-4 transition-colors">
+      <div className="mx-4 mb-3 rounded-3xl bg-pcard border-2 border-plineStrong p-4 transition-colors shadow-xs">
         {/* ── Karta Sarlavhasi (Brilliant rasmi, Liga nomi, 5d left va info ikonkasi) ── */}
         <div className="flex items-center justify-between pb-3">
           <div className="flex items-center gap-3">
@@ -244,14 +244,19 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                   ref={isUser ? userRowRef : undefined}
                   key={`${entry.rank}-${entry.userId || entry.name}`}
                   className={cn(
-                    'flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-colors duration-150',
+                    'flex items-center gap-2.5 px-3 py-2.5 rounded-xl transition-all duration-150',
                     isUser
-                      ? 'bg-black/[0.05] dark:bg-white/[0.08]'
+                      ? 'bg-gradient-to-r from-[#173d87] via-[#1a4698] to-[#133372] border border-blue-400/40 text-white shadow-md'
                       : 'hover:bg-psurface'
                   )}
                 >
                   {/* O'rin raqami */}
-                  <span className="w-5 text-center font-display text-[13.5px] font-semibold text-pmuted tabular-nums shrink-0">
+                  <span
+                    className={cn(
+                      'w-5 text-center font-display text-[13.5px] font-semibold tabular-nums shrink-0',
+                      isUser ? 'text-blue-100 font-bold' : 'text-pmuted'
+                    )}
+                  >
                     {entry.rank}
                   </span>
 
@@ -272,15 +277,20 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
                   {/* Foydalanuvchi ismi */}
                   <span
                     className={cn(
-                      'flex-1 min-w-0 truncate text-[14px] font-semibold tracking-tight',
-                      isUser ? 'text-pfg font-bold' : 'text-pfg'
+                      'flex-1 min-w-0 truncate text-[14px] tracking-tight',
+                      isUser ? 'text-white font-bold' : 'text-pfg font-semibold'
                     )}
                   >
                     {entry.name}
                   </span>
 
                   {/* XP bali */}
-                  <span className="text-[13px] font-bold tabular-nums text-pmuted shrink-0">
+                  <span
+                    className={cn(
+                      'text-[13px] font-bold tabular-nums shrink-0',
+                      isUser ? 'text-blue-100' : 'text-pmuted'
+                    )}
+                  >
                     {entry.score} XP
                   </span>
                 </div>

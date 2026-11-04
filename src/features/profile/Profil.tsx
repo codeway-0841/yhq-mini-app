@@ -428,7 +428,7 @@ export default function Profil() {
       />
 
       {/* ── Gorizontal Profil Kartasi ── */}
-      <div className="mx-4 mb-2 flex items-center gap-3.5 rounded-2xl bg-pcard p-3.5 transition-colors duration-150 shadow-xs">
+      <div className="mx-4 mb-3 flex items-center gap-3.5 rounded-3xl bg-pcard border-2 border-plineStrong p-4 transition-colors duration-150 shadow-xs">
         {/* Avatar (chapda) */}
         <Avatar
           name={name}
@@ -479,15 +479,15 @@ export default function Profil() {
             haptics.impact('light')
             navigate('/streak')
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border border-pline p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
+          className="cursor-pointer rounded-3xl bg-pcard border-2 border-plineStrong p-4 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none shadow-xs hover:border-plineStrong"
         >
           <div className="flex items-center gap-2">
-            <BrilliantStreakIcon className="size-5 shrink-0" />
-            <span className="font-display text-[22px] font-bold leading-none tracking-tight text-pfg tabular-nums">
+            <span className="font-display text-[26px] font-extrabold leading-none tracking-tight text-pfg tabular-nums">
               {streak || 0}
             </span>
+            <BrilliantStreakIcon className="size-6 shrink-0 text-[#A8D31D]" />
           </div>
-          <p className="mt-1.5 text-[12px] font-normal text-pmuted">
+          <p className="mt-2 text-[12.5px] font-medium text-pmuted">
             {settings.language === 'ru' ? 'Макс. серия' : 'Maksimal seriya'}
           </p>
         </div>
@@ -498,15 +498,15 @@ export default function Profil() {
             haptics.impact('light')
             setShowLevelInfo(true)
           }}
-          className="cursor-pointer rounded-2xl bg-pcard border border-pline p-3.5 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none hover:border-pline"
+          className="cursor-pointer rounded-3xl bg-pcard border-2 border-plineStrong p-4 transition-[transform,background-color] duration-150 active:scale-[0.98] select-none shadow-xs hover:border-plineStrong"
         >
           <div className="flex items-center gap-2">
-            <BrilliantXpIcon className="size-5 shrink-0" />
-            <span className="font-display text-[22px] font-bold leading-none tracking-tight text-pfg tabular-nums">
+            <span className="font-display text-[26px] font-extrabold leading-none tracking-tight text-pfg tabular-nums">
               {xp?.toLocaleString() || 0}
             </span>
+            <BrilliantXpIcon className="size-6 shrink-0 text-[#00A86B]" />
           </div>
-          <p className="mt-1.5 text-[12px] font-normal text-pmuted">
+          <p className="mt-2 text-[12.5px] font-medium text-pmuted">
             {settings.language === 'ru' ? 'Всего XP' : 'Umumiy XP'}
           </p>
         </div>

@@ -1,0 +1,104 @@
+/**
+ * Brilliant Design Tokens CSS
+ * Generated via /replica-design for KIVVI
+ * Matched with replica/design/tokens.json
+ */
+
+:root {
+  /* Canvas & Sirtlar */
+  --b-bg: #f5f3f1;
+  --b-bg-rgb: 245 243 241;
+  --b-surface: #faf8f6;
+  --b-surface-rgb: 250 248 246;
+  --b-card: #ffffff;
+  --b-card-rgb: 255 255 255;
+
+  /* Chegaralar */
+  --b-border: #e4e4e4;
+  --b-border-rgb: 228 228 228;
+  --b-border-input: #737a85;
+  --b-border-strong: #d5d5d5;
+
+  /* Matn & Ierarxiya */
+  --b-text: #121212;
+  --b-text-rgb: 18 18 18;
+  --b-text-muted: #5b6470;
+  --b-text-muted-rgb: 91 100 112;
+  --b-text-subtle: #6f7785;
+
+  /* Aksent va Semantik rollar */
+  --b-accent: #105ec7;
+  --b-accent-rgb: 16 94 199;
+  --b-on-accent: #ffffff;
+  --b-danger: #b91c1c;
+  --b-danger-rgb: 185 28 28;
+  --b-success: #15803d;
+  --b-success-rgb: 21 128 61;
+  --b-warning: #b45309;
+  --b-warning-rgb: 180 83 9;
+  --b-brand-green: #22c55e;
+  --b-brand-flame: #ff8000;
+
+  /* Radius shkalasi */
+  --b-radius-sm: 8px;
+  --b-radius-md: 14px;
+  --b-radius-lg: 20px;
+  --b-radius-container: 22px;
+  --b-radius-pill: 9999px;
+
+  /* Soyalar va 3D Taktil effektlar */
+  --b-shadow-card: 0 1px 3px rgba(18, 18, 18, 0.05), 0 1px 2px rgba(18, 18, 18, 0.03);
+  --b-shadow-pop: 0 12px 32px rgba(18, 18, 18, 0.12);
+  --b-shadow-tactile: 0 3px 0 #d0d0d0;
+  --b-shadow-tactile-primary: 0 3px 0 #0c438c;
+  --b-shadow-tactile-success: 0 3px 0 #0f5c2b;
+
+  /* Matematik to'r (Dot Grid) */
+  --b-grid-dot: rgba(18, 18, 18, 0.09);
+  --b-grid-size: 24px;
+}
+
+body[data-theme='dark'] {
+  --b-bg: #111215;
+  --b-bg-rgb: 17 18 21;
+  --b-surface: #242832;
+  --b-surface-rgb: 36 40 50;
+  --b-card: #1a1c22;
+  --b-card-rgb: 26 28 34;
+
+  --b-border: #2e323d;
+  --b-border-rgb: 46 50 61;
+  --b-border-input: #858b9c;
+  --b-border-strong: #3d4352;
+
+  --b-text: #f7f7f8;
+  --b-text-rgb: 247 247 248;
+  --b-text-muted: #9aa0ac;
+  --b-text-muted-rgb: 154 160 172;
+  --b-text-subtle: #818896;
+
+  --b-accent: #3b82f6;
+  --b-accent-rgb: 59 130 246;
+  --b-on-accent: #ffffff;
+  --b-danger: #f87171;
+  --b-danger-rgb: 248 113 113;
+  --b-success: #34d399;
+  --b-success-rgb: 52 211 153;
+  --b-warning: #fb923c;
+  --b-warning-rgb: 251 146 60;
+
+  --b-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.18);
+  --b-shadow-pop: 0 16px 36px rgba(0, 0, 0, 0.45);
+  --b-shadow-tactile: 0 3px 0 #121418;
+  --b-shadow-tactile-primary: 0 3px 0 #1d4ed8;
+  --b-shadow-tactile-success: 0 3px 0 #047857;
+
+  --b-grid-dot: rgba(255, 255, 255, 0.10);
+}
+
+/* Matematik Grid sinfi */
+.brilliant-math-grid {
+  background-color: var(--b-bg);
+  background-image: radial-gradient(var(--b-grid-dot) 1.2px, transparent 1.2px);
+  background-size: var(--b-grid-size) var(--b-grid-size);
+}

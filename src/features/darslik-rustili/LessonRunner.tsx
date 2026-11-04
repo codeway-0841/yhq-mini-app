@@ -395,7 +395,7 @@ export default function LessonRunner({
           type="button"
           onClick={onClose}
           aria-label={tt('rusDarslikQuizClose')}
-          className="grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg shadow-2xs transition-transform active:scale-95"
+          className="flex size-10 shrink-0 cursor-pointer items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none"
         >
           <ChevronLeft size={21} strokeWidth={2.25} />
         </button>
