@@ -24,6 +24,7 @@ import { Button } from '../../shared/components/ui/button'
 import { useToast } from '../../shared/components/ToastContainer'
 import { Section, Item } from './components/Section'
 import { Avatar } from './components/Avatar'
+import { ProfileDetailsView } from './components/ProfileDetailsView'
 import { PhotoEditSheet, NameEditSheet, PhoneEditSheet } from './components/EditSheets'
 import { PaymentHistorySheet } from './components/PaymentHistorySheet'
 import { ClosedGroupSheet } from './components/ClosedGroupSheet'
@@ -52,6 +53,7 @@ export default function Profil() {
   const navigate = useNavigate()
   const [searchParams, setSearchParams] = useSearchParams()
   const isSettingsView = searchParams.get('view') === 'settings'
+  const isDetailsView  = searchParams.get('view') === 'details'
   // Selector'li obuna — whole-store EMAS (har counter o'zgarishida re-render bo'lmasligi uchun)
   const user           = useAppStore((s) => s.user)
   const settings       = useAppStore((s) => s.settings)
@@ -168,8 +170,17 @@ export default function Profil() {
   }, [isPremiumUser, user?.premiumUntil, settings.language, tt])
 
   return (
-    <div className={cn('lg:mx-auto lg:w-full lg:max-w-2xl', isSettingsView ? 'pb-8' : 'pb-2')}>
-      {isSettingsView ? (
+    <div className={cn('lg:mx-auto lg:w-full lg:max-w-2xl', isSettingsView || isDetailsView ? 'pb-8' : 'pb-2')}>
+      {isDetailsView ? (
+        <ProfileDetailsView
+          user={user}
+          name={name}
+          onBack={() => setSearchParams({})}
+          onEditPhoto={() => setShowPhotoEdit(true)}
+          onEditPhone={() => setShowPhoneSheet(true)}
+          lang={settings.language}
+        />
+      ) : isSettingsView ? (
         <>
           <PageHeader
             title={settings.language === 'ru' ? 'Настройки' : 'Sozlamalar'}
@@ -444,7 +455,7 @@ export default function Profil() {
           type="button"
           onClick={() => {
             haptics.impact('light')
-            setShowNameEdit(true)
+            setSearchParams({ view: 'details' })
           }}
           className="group inline-flex items-center justify-center gap-1.5 active:opacity-75 transition-opacity"
           aria-label={tt('editProfile')}
