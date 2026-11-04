@@ -9,6 +9,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { Button } from '../../../shared/components/ui/button'
+import { PageHeader } from '../../../shared/components/ui/page-header'
 
 export interface UserExtraProfile {
   firstName: string
@@ -453,39 +454,31 @@ export function ProfileDetailsView({
   // ══════════════════════════════════════════════════════════════════════════
   if (editMode === 'info') {
     return (
-      <div className="fixed inset-0 z-50 bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
-        {/* Top bar header (Faqat toza ikonlar, dumaloqsiz) */}
-        <div className="flex-none flex items-center justify-between py-1">
-          <button
-            type="button"
-            onClick={() => {
-              playSound('click')
-              haptics.impact('light')
-              setEditMode('none')
-            }}
-            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            aria-label={ru ? 'Назад' : 'Orqaga'}
-          >
-            <ChevronLeft size={24} strokeWidth={2.4} />
-          </button>
+      <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn">
+        <PageHeader
+          title={ru ? 'Редактировать данные' : 'Ma’lumotlarni tahrirlash'}
+          onBack={() => {
+            playSound('click')
+            haptics.impact('light')
+            setEditMode('none')
+          }}
+          backLabel={ru ? 'Назад' : 'Orqaga'}
+          actions={
+            <button
+              type="button"
+              onClick={handleResetInfo}
+              className="flex size-10 items-center justify-center -mr-2 text-red-500 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
+              aria-label={ru ? 'Сбросить' : 'Tozalash'}
+              title={ru ? 'Сбросить данные' : 'Ma’lumotlarni tiklash'}
+            >
+              <Trash2 size={21} strokeWidth={2.2} />
+            </button>
+          }
+          className="-mx-4 mb-2"
+        />
 
-          <h1 className="text-[16.5px] font-extrabold text-pfg tracking-tight">
-            {ru ? 'Редактировать данные' : 'Ma’lumotlarni tahrirlash'}
-          </h1>
-
-          <button
-            type="button"
-            onClick={handleResetInfo}
-            className="flex size-10 items-center justify-center -mr-2 text-red-500 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            aria-label={ru ? 'Сбросить' : 'Tozalash'}
-            title={ru ? 'Сбросить данные' : 'Ma’lumotlarni tiklash'}
-          >
-            <Trash2 size={21} strokeWidth={2.2} />
-          </button>
-        </div>
-
-        {/* Main Content Area (Avatar va kiritish maydonlari mutanosib standart oraliqda) */}
-        <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full my-auto">
+        {/* Main Content Area */}
+        <div className="w-full px-4 mt-2">
           {/* Avatar (Standart 20px oraliqda) */}
           <div className="flex justify-center mb-5">
             <Avatar
@@ -626,18 +619,18 @@ export function ProfileDetailsView({
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Bottom CTA: SAQLASH (Theme Button) */}
-        <div className="flex-none max-w-lg mx-auto w-full pt-2">
-          <Button
-            block
-            size="default"
-            onClick={handleSaveInfo}
-            className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
-          >
-            {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
-          </Button>
+          {/* Bottom CTA: SAQLASH (Theme Button) */}
+          <div className="w-full pt-4 pb-4">
+            <Button
+              block
+              size="default"
+              onClick={handleSaveInfo}
+              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
+            >
+              {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
+            </Button>
+          </div>
         </div>
 
         {/* ── SHEET: Faoliyat turi (1-rasm) ── */}
@@ -714,31 +707,20 @@ export function ProfileDetailsView({
   // ══════════════════════════════════════════════════════════════════════════
   if (editMode === 'address') {
     return (
-      <div className="fixed inset-0 z-50 bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
-        {/* Top bar header (Faqat toza ikonlar, dumaloqsiz) */}
-        <div className="flex-none flex items-center justify-between py-1">
-          <button
-            type="button"
-            onClick={() => {
-              playSound('click')
-              haptics.impact('light')
-              setEditMode('none')
-            }}
-            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            aria-label={ru ? 'Назад' : 'Orqaga'}
-          >
-            <ChevronLeft size={24} strokeWidth={2.4} />
-          </button>
+      <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn">
+        <PageHeader
+          title={ru ? 'Редактировать адрес' : 'Manzilni tahrirlash'}
+          onBack={() => {
+            playSound('click')
+            haptics.impact('light')
+            setEditMode('none')
+          }}
+          backLabel={ru ? 'Назад' : 'Orqaga'}
+          className="-mx-4 mb-2"
+        />
 
-          <h1 className="text-[16.5px] font-extrabold text-pfg tracking-tight">
-            {ru ? 'Редактировать адрес' : 'Manzilni tahrirlash'}
-          </h1>
-
-          <div className="size-10" aria-hidden="true" />
-        </div>
-
-        {/* Address Fields inside SINGLE rounded card at TOP (Tepada, o'rtada emas, mahallasiz) */}
-        <div className="flex-1 max-w-lg mx-auto w-full mt-4">
+        {/* Address Fields inside SINGLE rounded card at TOP */}
+        <div className="w-full px-4 mt-3">
           <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
             {/* Mamlakat (Clickable -> Opens Country Sheet) */}
             <button
@@ -806,18 +788,18 @@ export function ProfileDetailsView({
               <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
             </button>
           </div>
-        </div>
 
-        {/* Bottom CTA: SAQLASH (Theme Button) */}
-        <div className="flex-none max-w-lg mx-auto w-full pt-2">
-          <Button
-            block
-            size="default"
-            onClick={handleSaveAddress}
-            className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
-          >
-            {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
-          </Button>
+          {/* Bottom CTA: SAQLASH (Theme Button) */}
+          <div className="w-full pt-4 pb-4">
+            <Button
+              block
+              size="default"
+              onClick={handleSaveAddress}
+              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
+            >
+              {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
+            </Button>
+          </div>
         </div>
 
         {/* ── SHEET: Mamlakatni tanlang (O'zbekiston) ── */}
@@ -1029,32 +1011,21 @@ export function ProfileDetailsView({
   // VIEW 1: ASOSIY PROFIL MA'LUMOTLARI (CHEVRONSIZ DUMALOQ, DUAL-SLIDE SILIQ ANIMATSIYA)
   // ══════════════════════════════════════════════════════════════════════════
   return (
-    <div className="min-h-screen bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between pb-6 animate-fadeIn select-none">
-      <div>
-        {/* ── Top Bar Header (Faqat toza chevron, dumaloqsiz) ── */}
-        <div className="w-full max-w-lg mx-auto flex items-center justify-between px-4 py-3">
-          <button
-            type="button"
-            onClick={() => {
-              playSound('click')
-              haptics.impact('light')
-              onBack()
-            }}
-            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            aria-label={ru ? 'Назад' : 'Orqaga'}
-          >
-            <ChevronLeft size={24} strokeWidth={2.4} />
-          </button>
+    <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn">
+      {/* ── Top Bar Header (PageHeader SSOT — boshqa sahifalar kabi) ── */}
+      <PageHeader
+        title={ru ? 'Данные профиля' : 'Profil ma’lumotlari'}
+        onBack={() => {
+          playSound('click')
+          haptics.impact('light')
+          onBack()
+        }}
+        backLabel={ru ? 'Назад' : 'Orqaga'}
+        className="-mx-4 mb-2"
+      />
 
-          <h1 className="text-[17px] font-extrabold text-pfg tracking-tight">
-            {ru ? 'Данные профиля' : 'Profil ma’lumotlari'}
-          </h1>
-
-          <div className="w-10 h-10 shrink-0" aria-hidden="true" />
-        </div>
-
-        {/* ── Segment / Tab Switcher (Pill Style, Themes Mos, Silliq) ── */}
-        <div className="w-full max-w-lg mx-auto px-4 mt-1">
+      {/* ── Segment / Tab Switcher (Pill Style, Themes Mos, Silliq) ── */}
+      <div className="w-full px-4 mt-1">
           <div className="grid grid-cols-2 p-1 rounded-full bg-white dark:bg-pcard shadow-sm gap-1">
             <button
               type="button"
@@ -1214,10 +1185,9 @@ export function ProfileDetailsView({
             </div>
           </div>
         </div>
-      </div>
 
-      {/* ── Sticky Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
-      <div className="w-full max-w-lg mx-auto px-4 pt-4 pb-[max(12px,var(--safe-bottom,0px))]">
+      {/* ── Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
+      <div className="w-full px-4 mt-6 pb-4">
         <button
           type="button"
           onClick={() => {

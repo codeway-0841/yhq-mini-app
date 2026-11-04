@@ -170,7 +170,7 @@ export default function Profil() {
   }, [isPremiumUser, user?.premiumUntil, settings.language, tt])
 
   return (
-    <div className={cn('lg:mx-auto lg:w-full lg:max-w-2xl', isSettingsView || isDetailsView ? 'pb-8' : 'pb-2')}>
+    <div className={cn('lg:mx-auto lg:w-full lg:max-w-2xl', isSettingsView ? 'pb-8' : isDetailsView ? 'pb-4' : 'pb-2')}>
       {isDetailsView ? (
         <ProfileDetailsView
           user={user}
