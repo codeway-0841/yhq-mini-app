@@ -87,7 +87,7 @@ export const ProgressCard = memo(function ProgressCard({ summary, lang }: {
           </span>
         </div>
 
-        <p className="mt-2 text-[12px] leading-relaxed text-white/80">{tt('readinessHint')}</p>
+
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronDown, SquarePen, Trash2 } from 'lucide-react'
+import { MdMan, MdWoman } from 'react-icons/md'
 import { cn } from '../../../shared/lib/cn'
 import { Avatar } from './Avatar'
 import { avatarSrcFor, type ApiUser } from '../../../shared/api'
@@ -19,7 +20,7 @@ export interface UserExtraProfile {
   country: string
   region: string
   district: string
-  neighborhood: string
+  neighborhood?: string
 }
 
 const STORAGE_KEY = 'kivvi_user_extra_profile'
@@ -34,8 +35,11 @@ const DEFAULT_EXTRA: UserExtraProfile = {
   country: 'Uzbekistan',
   region: 'Buxoro viloyati',
   district: 'Jondor tumani',
-  neighborhood: 'Darveshi',
 }
+
+const COUNTRIES_LIST = [
+  'Uzbekistan',
+]
 
 const REGIONS_LIST = [
   'Andijon viloyati',
@@ -54,12 +58,248 @@ const REGIONS_LIST = [
   'Xorazm viloyati',
 ]
 
+const REGION_DISTRICTS_MAP: Record<string, string[]> = {
+  'Andijon viloyati': [
+    'Andijon shahri',
+    'Xonobod shahri',
+    'Andijon tumani',
+    'Asaka tumani',
+    'Baliqchi tumani',
+    'Bo‘ston tumani',
+    'Buloqboshi tumani',
+    'Izboskan tumani',
+    'Jalaquduq tumani',
+    'Marhamat tumani',
+    'Oltinko‘l tumani',
+    'Paxtaobod tumani',
+    'Qo‘rg‘ontepa tumani',
+    'Shahrixon tumani',
+    'Ulug‘nor tumani',
+    'Xo‘jaobod tumani',
+  ],
+  'Buxoro viloyati': [
+    'Buxoro shahri',
+    'Kogon shahri',
+    'Buxoro tumani',
+    'G‘ijduvon tumani',
+    'Jondor tumani',
+    'Kogon tumani',
+    'Olot tumani',
+    'Peshku tumani',
+    'Qorako‘l tumani',
+    'Qorovulbozor tumani',
+    'Romitan tumani',
+    'Shofirkon tumani',
+    'Vobkent tumani',
+  ],
+  'Jizzax viloyati': [
+    'Jizzax shahri',
+    'Arnasoy tumani',
+    'Baxmal tumani',
+    'Do‘stlik tumani',
+    'Forish tumani',
+    'G‘allaorol tumani',
+    'Mirzacho‘l tumani',
+    'Paxtakor tumani',
+    'Sharof Rashidov tumani',
+    'Yangiobod tumani',
+    'Zafarobod tumani',
+    'Zarbdor tumani',
+    'Zomin tumani',
+  ],
+  'Qashqadaryo viloyati': [
+    'Qarshi shahri',
+    'Shahrisabz shahri',
+    'Chiroqchi tumani',
+    'Dehqonobod tumani',
+    'G‘uzor tumani',
+    'Kasbi tumani',
+    'Kitob tumani',
+    'Koson tumani',
+    'Ko‘kdala tumani',
+    'Mirishkor tumani',
+    'Muborak tumani',
+    'Nishon tumani',
+    'Qamashi tumani',
+    'Qarshi tumani',
+    'Shahrisabz tumani',
+    'Yakkabog‘ tumani',
+  ],
+  'Qoraqalpog‘iston Respublikasi': [
+    'Nukus shahri',
+    'Amudaryo tumani',
+    'Beruniy tumani',
+    'Bo‘zatov tumani',
+    'Chimboy tumani',
+    'Ellikqala tumani',
+    'Kegeyli tumani',
+    'Mo‘ynoq tumani',
+    'Nukus tumani',
+    'Qonliko‘l tumani',
+    'Qorao‘zak tumani',
+    'Qo‘ng‘irot tumani',
+    'Sho‘manoy tumani',
+    'Taxtako‘pir tumani',
+    'Taxiatosh tumani',
+    'To‘rtko‘l tumani',
+    'Xo‘jayli tumani',
+  ],
+  'Navoiy viloyati': [
+    'Navoiy shahri',
+    'Zarafshon shahri',
+    'Karmana tumani',
+    'Konimex tumani',
+    'Navbahor tumani',
+    'Nurota tumani',
+    'Qiziltepa tumani',
+    'Tomdi tumani',
+    'Uchquduq tumani',
+    'Xatirchi tumani',
+  ],
+  'Namangan viloyati': [
+    'Namangan shahri',
+    'Chortoq tumani',
+    'Chust tumani',
+    'Davlatobod tumani',
+    'Kosonsoy tumani',
+    'Mingbuloq tumani',
+    'Namangan tumani',
+    'Norin tumani',
+    'Pop tumani',
+    'To‘raqo‘rg‘on tumani',
+    'Uchqo‘rg‘on tumani',
+    'Uychi tumani',
+    'Yangi Namangan tumani',
+    'Yangiqo‘rg‘on tumani',
+  ],
+  'Samarqand viloyati': [
+    'Samarqand shahri',
+    'Kattaqo‘rg‘on shahri',
+    'Bulung‘ur tumani',
+    'Ishtixon tumani',
+    'Jomboy tumani',
+    'Kattaqo‘rg‘on tumani',
+    'Narpay tumani',
+    'Nurobod tumani',
+    'Oqdaryo tumani',
+    'Pastdarg‘om tumani',
+    'Paxtachi tumani',
+    'Payariq tumani',
+    'Qo‘shrabot tumani',
+    'Samarqand tumani',
+    'Toyloq tumani',
+    'Urgut tumani',
+  ],
+  'Sirdaryo viloyati': [
+    'Guliston shahri',
+    'Shirin shahri',
+    'Yangiyer shahri',
+    'Boyovut tumani',
+    'Guliston tumani',
+    'Mirzaobod tumani',
+    'Oqoltin tumani',
+    'Sardoba tumani',
+    'Sayxunobod tumani',
+    'Sirdaryo tumani',
+    'Xovos tumani',
+  ],
+  'Surxondaryo viloyati': [
+    'Termiz shahri',
+    'Angor tumani',
+    'Bandixon tumani',
+    'Boysun tumani',
+    'Denov tumani',
+    'Jarqo‘rg‘on tumani',
+    'Muzrabot tumani',
+    'Oltinsoy tumani',
+    'Qiziriq tumani',
+    'Qumqo‘rg‘on tumani',
+    'Sariosiyo tumani',
+    'Sherobod tumani',
+    'Sho‘rchi tumani',
+    'Termiz tumani',
+    'Uzun tumani',
+  ],
+  'Toshkent viloyati': [
+    'Nurafshon shahri',
+    'Angren shahri',
+    'Bekobod shahri',
+    'Chirchiq shahri',
+    'Olmaliq shahri',
+    'Yangiyo‘l shahri',
+    'Bekobod tumani',
+    'Bo‘ka tumani',
+    'Bo‘stonliq tumani',
+    'Chinoz tumani',
+    'Oqqo‘rg‘on tumani',
+    'O‘rtachirchiq tumani',
+    'Parkent tumani',
+    'Piskent tumani',
+    'Qibray tumani',
+    'Quyi Chirchiq tumani',
+    'Toshkent tumani',
+    'Yangiyo‘l tumani',
+    'Yuqori Chirchiq tumani',
+    'Zangiota tumani',
+  ],
+  'Toshkent shahri': [
+    'Bektemir tumani',
+    'Chilonzor tumani',
+    'Mirobod tumani',
+    'Mirzo Ulug‘bek tumani',
+    'Olmazor tumani',
+    'Sergeli tumani',
+    'Shayxontohur tumani',
+    'Uchtepa tumani',
+    'Yakkasaroy tumani',
+    'Yangihayot tumani',
+    'Yashnobod tumani',
+    'Yunusobod tumani',
+  ],
+  'Farg‘ona viloyati': [
+    'Farg‘ona shahri',
+    'Marg‘ilon shahri',
+    'Qo‘qon shahri',
+    'Quvasoy shahri',
+    'Bag‘dod tumani',
+    'Beshariq tumani',
+    'Buvayda tumani',
+    'Dang‘ara tumani',
+    'Farg‘ona tumani',
+    'Furqat tumani',
+    'O‘zbekiston tumani',
+    'Quva tumani',
+    'Rishton tumani',
+    'So‘x tumani',
+    'Toshloq tumani',
+    'Uchko‘prik tumani',
+    'Yozyovon tumani',
+  ],
+  'Xorazm viloyati': [
+    'Urganch shahri',
+    'Xiva shahri',
+    'Bog‘ot tumani',
+    'Gurlan tumani',
+    'Hazorasp tumani',
+    'Qo‘shko‘pir tumani',
+    'Shovot tumani',
+    'Tuproqqal’a tumani',
+    'Urganch tumani',
+    'Xiva tumani',
+    'Xonqa tumani',
+    'Yangiariq tumani',
+    'Yangibozor tumani',
+  ],
+}
+
 const OCCUPATIONS_LIST = [
   'Ishlayman',
   'Universitetda o‘qiyman',
   'Kollej/litseyda o‘qiyman',
   'Maktabda o‘qiyman',
 ]
+
+
 
 function loadExtraProfile(userId?: string, displayName?: string, username?: string): UserExtraProfile {
   if (typeof window === 'undefined') return DEFAULT_EXTRA
@@ -126,20 +366,19 @@ export function ProfileDetailsView({
   const [editCountry, setEditCountry] = useState(extra.country)
   const [editRegion, setEditRegion] = useState(extra.region)
   const [editDistrict, setEditDistrict] = useState(extra.district)
-  const [editNeighborhood, setEditNeighborhood] = useState(extra.neighborhood)
 
   // Bottom Sheets
   const [showOccupationSheet, setShowOccupationSheet] = useState(false)
   const [selectedOccupationTemp, setSelectedOccupationTemp] = useState(extra.occupation)
 
+  const [showCountrySheet, setShowCountrySheet] = useState(false)
+  const [selectedCountryTemp, setSelectedCountryTemp] = useState(extra.country)
+
   const [showRegionSheet, setShowRegionSheet] = useState(false)
   const [selectedRegionTemp, setSelectedRegionTemp] = useState(extra.region)
 
-  const [showDistrictModal, setShowDistrictModal] = useState(false)
-  const [tempDistrict, setTempDistrict] = useState(extra.district)
-
-  const [showNeighborhoodModal, setShowNeighborhoodModal] = useState(false)
-  const [tempNeighborhood, setTempNeighborhood] = useState(extra.neighborhood)
+  const [showDistrictSheet, setShowDistrictSheet] = useState(false)
+  const [selectedDistrictTemp, setSelectedDistrictTemp] = useState(extra.district)
 
   const setDisplayName = useAppStore((s) => s.setDisplayName)
   const ru = lang === 'ru'
@@ -155,7 +394,6 @@ export function ProfileDetailsView({
     setEditCountry(extra.country)
     setEditRegion(extra.region)
     setEditDistrict(extra.district)
-    setEditNeighborhood(extra.neighborhood)
   }, [extra])
 
   const handleSaveInfo = () => {
@@ -187,7 +425,6 @@ export function ProfileDetailsView({
       country: editCountry.trim() || 'Uzbekistan',
       region: editRegion.trim() || 'Buxoro viloyati',
       district: editDistrict.trim() || 'Jondor tumani',
-      neighborhood: editNeighborhood.trim() || 'Darveshi',
     }
     setExtra(updated)
     saveExtraProfile(updated, user?.id)
@@ -212,13 +449,13 @@ export function ProfileDetailsView({
   const phoneDisplay = user?.phone || '+998934440841'
 
   // ══════════════════════════════════════════════════════════════════════════
-  // VIEW 2: MA'LUMOTLARNI TAHRIRLASH (2-rasm: 100% SCROLLSIZ, BORDERSIZ CHEVRON, THEME BUTTON)
+  // VIEW 2: MA'LUMOTLARNI TAHRIRLASH (2-rasm: 100% SCROLLSIZ, DUMALOQ CHEVRON, COMPACT JINS)
   // ══════════════════════════════════════════════════════════════════════════
   if (editMode === 'info') {
     return (
-      <div className="fixed inset-0 z-50 bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
-        {/* Top bar header */}
-        <div className="flex-none flex items-center justify-between py-1.5">
+      <div className="fixed inset-0 z-50 bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
+        {/* Top bar header (Faqat toza ikonlar, dumaloqsiz) */}
+        <div className="flex-none flex items-center justify-between py-1">
           <button
             type="button"
             onClick={() => {
@@ -226,166 +463,167 @@ export function ProfileDetailsView({
               haptics.impact('light')
               setEditMode('none')
             }}
-            className="size-10 rounded-full bg-white dark:bg-pcard shadow-sm flex items-center justify-center text-pfg active:scale-95 transition-transform"
+            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             aria-label={ru ? 'Назад' : 'Orqaga'}
           >
-            <ChevronLeft size={20} strokeWidth={2.4} />
+            <ChevronLeft size={24} strokeWidth={2.4} />
           </button>
 
-          <h1 className="text-[16px] font-extrabold text-pfg tracking-tight">
+          <h1 className="text-[16.5px] font-extrabold text-pfg tracking-tight">
             {ru ? 'Редактировать данные' : 'Ma’lumotlarni tahrirlash'}
           </h1>
 
           <button
             type="button"
             onClick={handleResetInfo}
-            className="size-10 rounded-full bg-white dark:bg-pcard shadow-sm flex items-center justify-center text-red-500 hover:bg-red-50 dark:hover:bg-red-950/20 active:scale-95 transition-transform"
+            className="flex size-10 items-center justify-center -mr-2 text-red-500 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             aria-label={ru ? 'Сбросить' : 'Tozalash'}
             title={ru ? 'Сбросить данные' : 'Ma’lumotlarni tiklash'}
           >
-            <Trash2 size={18} strokeWidth={2.2} />
+            <Trash2 size={21} strokeWidth={2.2} />
           </button>
         </div>
 
-        {/* Avatar (toza, qalamchasiz) */}
-        <div className="flex-none my-1 flex justify-center">
-          <Avatar
-            name={`${editFirstName} ${editLastName}`.trim() || name}
-            photoUrl={avatarSrcFor(user) ?? undefined}
-            size="lg"
-            onEditPhoto={onEditPhoto}
-          />
-        </div>
-
-        {/* Inputs list (tightly spaced, 100% fits viewport) */}
-        <div className="flex-1 flex flex-col justify-center gap-2 max-w-lg mx-auto w-full my-auto">
-          {/* Ismingiz */}
-          <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
-            <label className="block text-[11px] font-medium text-pmuted">
-              {ru ? 'Имя' : 'Ismingiz'}
-            </label>
-            <input
-              type="text"
-              value={editFirstName}
-              onChange={(e) => setEditFirstName(e.target.value)}
-              maxLength={32}
-              className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-              placeholder={ru ? 'Имя' : 'Ismingiz'}
+        {/* Main Content Area (Avatar va kiritish maydonlari mutanosib standart oraliqda) */}
+        <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full my-auto">
+          {/* Avatar (Standart 20px oraliqda) */}
+          <div className="flex justify-center mb-5">
+            <Avatar
+              name={`${editFirstName} ${editLastName}`.trim() || name}
+              photoUrl={avatarSrcFor(user) ?? undefined}
+              size="lg"
+              onEditPhoto={onEditPhoto}
             />
           </div>
 
-          {/* Familiya */}
-          <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
-            <label className="block text-[11px] font-medium text-pmuted">
-              {ru ? 'Фамилия' : 'Familiya'}
-            </label>
-            <input
-              type="text"
-              value={editLastName}
-              onChange={(e) => setEditLastName(e.target.value)}
-              maxLength={32}
-              className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-              placeholder={ru ? 'Фамилия' : 'Familiya'}
-            />
-          </div>
-
-          {/* Username */}
-          <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
-            <label className="block text-[11px] font-medium text-pmuted">
-              Username
-            </label>
-            <input
-              type="text"
-              value={editUsername}
-              onChange={(e) => setEditUsername(e.target.value)}
-              maxLength={32}
-              className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-              placeholder="@username"
-            />
-          </div>
-
-          {/* Yosh */}
-          <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
-            <label className="block text-[11px] font-medium text-pmuted">
-              {ru ? 'Возраст' : 'Yosh'}
-            </label>
-            <input
-              type="number"
-              value={editAge}
-              onChange={(e) => setEditAge(e.target.value)}
-              maxLength={3}
-              className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-              placeholder="28"
-            />
-          </div>
-
-          {/* Faoliyat turi (Dropdown Selector) */}
-          <button
-            type="button"
-            onClick={() => {
-              playSound('click')
-              haptics.impact('light')
-              setSelectedOccupationTemp(editOccupation)
-              setShowOccupationSheet(true)
-            }}
-            className="w-full text-left rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-2 shadow-xs flex items-center justify-between active:scale-[0.99] transition-transform"
-          >
-            <div>
-              <span className="block text-[11px] font-medium text-pmuted">
-                {ru ? 'Род деятельности' : 'Faoliyat turi'}
-              </span>
-              <span className="block text-[14.5px] font-bold text-pfg leading-tight mt-0.5">
-                {editOccupation || (ru ? 'Выберите' : 'Tanlang')}
-              </span>
+          {/* Inputs list (Ixcham, to'liq ekranga mos, 0 scroll) */}
+          <div className="flex flex-col gap-2 w-full">
+            {/* Ismingiz */}
+            <div className="rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Имя' : 'Ismingiz'}
+              </label>
+              <input
+                type="text"
+                value={editFirstName}
+                onChange={(e) => setEditFirstName(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder={ru ? 'Имя' : 'Ismingiz'}
+              />
             </div>
-            <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
-          </button>
 
-          {/* Jins (Segmented Pill Switcher) */}
-          <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-3.5 py-2 shadow-xs">
-            <span className="block text-[11px] font-medium text-pmuted mb-1.5">
-              {ru ? 'Пол' : 'Jins'}
-            </span>
-            <div className="grid grid-cols-2 p-1 rounded-full bg-pcard border-2 border-pline-strong gap-1">
-              <button
-                type="button"
-                onClick={() => {
-                  playSound('click')
-                  haptics.impact('light')
-                  setEditGender('male')
-                }}
-                className={cn(
-                  'py-1.5 rounded-full flex items-center justify-center transition-all select-none',
-                  editGender === 'male'
-                    ? 'bg-pprimary text-ponprimary shadow-xs'
-                    : 'text-pmuted hover:text-pfg'
-                )}
-                aria-label={ru ? 'Мужской' : 'Erkak'}
-              >
-                <svg className="size-4.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </button>
+            {/* Familiya */}
+            <div className="rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Фамилия' : 'Familiya'}
+              </label>
+              <input
+                type="text"
+                value={editLastName}
+                onChange={(e) => setEditLastName(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder={ru ? 'Фамилия' : 'Familiya'}
+              />
+            </div>
 
-              <button
-                type="button"
-                onClick={() => {
-                  playSound('click')
-                  haptics.impact('light')
-                  setEditGender('female')
-                }}
-                className={cn(
-                  'py-1.5 rounded-full flex items-center justify-center transition-all select-none',
-                  editGender === 'female'
-                    ? 'bg-pprimary text-ponprimary shadow-xs'
-                    : 'text-pmuted hover:text-pfg'
-                )}
-                aria-label={ru ? 'Женский' : 'Ayol'}
-              >
-                <svg className="size-4.5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2a4 4 0 0 0-4 4c0 1.5.8 2.8 2 3.5V11c-.5.3-1 .8-1.5 1.3C7.2 13.5 6 15.6 6 18v2h12v-2c0-2.4-1.2-4.5-2.5-5.7-.5-.5-1-1-1.5-1.3V9.5c1.2-.7 2-2 2-3.5a4 4 0 0 0-4-4z" />
-                </svg>
-              </button>
+            {/* Username */}
+            <div className="rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
+              <label className="block text-[11px] font-medium text-pmuted">
+                Username
+              </label>
+              <input
+                type="text"
+                value={editUsername}
+                onChange={(e) => setEditUsername(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder="@username"
+              />
+            </div>
+
+            {/* Yosh */}
+            <div className="rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-1.5 shadow-xs focus-within:border-pprimary transition-colors">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Возраст' : 'Yosh'}
+              </label>
+              <input
+                type="number"
+                value={editAge}
+                onChange={(e) => setEditAge(e.target.value)}
+                maxLength={3}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder="28"
+              />
+            </div>
+
+            {/* Faoliyat turi (Dropdown Selector) */}
+            <button
+              type="button"
+              onClick={() => {
+                playSound('click')
+                haptics.impact('light')
+                setSelectedOccupationTemp(editOccupation)
+                setShowOccupationSheet(true)
+              }}
+              className="w-full text-left rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-2 shadow-xs flex items-center justify-between active:scale-[0.99] transition-transform"
+            >
+              <div>
+                <span className="block text-[11px] font-medium text-pmuted">
+                  {ru ? 'Род деятельности' : 'Faoliyat turi'}
+                </span>
+                <span className="block text-[14.5px] font-bold text-pfg leading-tight mt-0.5">
+                  {editOccupation || (ru ? 'Выберите' : 'Tanlang')}
+                </span>
+              </div>
+              <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
+            </button>
+
+            {/* Jins (Rasmiy MdMan va MdWoman ikonlari - aniq ajraladi) */}
+            <div className="rounded-2xl bg-white dark:bg-psurface border border-pline/40 px-3.5 py-1.5 shadow-xs flex items-center justify-between">
+              <span className="text-[12px] font-medium text-pmuted">
+                {ru ? 'Пол' : 'Jins'}
+              </span>
+              <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-100 dark:bg-pcard border border-pline/40 gap-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    playSound('click')
+                    haptics.impact('light')
+                    setEditGender('male')
+                  }}
+                  className={cn(
+                    'h-8 rounded-lg flex items-center justify-center transition-all select-none',
+                    editGender === 'male'
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'text-pmuted hover:text-pfg'
+                  )}
+                  aria-label={ru ? 'Мужской' : 'Erkak'}
+                  title={ru ? 'Мужской' : 'Erkak'}
+                >
+                  <MdMan size={22} className="shrink-0" />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    playSound('click')
+                    haptics.impact('light')
+                    setEditGender('female')
+                  }}
+                  className={cn(
+                    'h-8 rounded-lg flex items-center justify-center transition-all select-none',
+                    editGender === 'female'
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'text-pmuted hover:text-pfg'
+                  )}
+                  aria-label={ru ? 'Женский' : 'Ayol'}
+                  title={ru ? 'Женский' : 'Ayol'}
+                >
+                  <MdWoman size={22} className="shrink-0" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -472,13 +710,13 @@ export function ProfileDetailsView({
   }
 
   // ══════════════════════════════════════════════════════════════════════════
-  // VIEW 3: MANZILNI TAHRIRLASH (4-rasm: YAXLIT BLOK, 100% SCROLLSIZ, BORDERSIZ CHEVRON, THEME BUTTON)
+  // VIEW 3: MANZILNI TAHRIRLASH (4-rasm: 100% SCROLLSIZ, DUMALOQ CHEVRON, YAXLIT BLOK)
   // ══════════════════════════════════════════════════════════════════════════
   if (editMode === 'address') {
     return (
-      <div className="fixed inset-0 z-50 bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
-        {/* Top bar header */}
-        <div className="flex-none flex items-center justify-between py-1.5">
+      <div className="fixed inset-0 z-50 bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between overflow-hidden px-4 py-2.5 pb-[max(12px,var(--safe-bottom,0px))] select-none">
+        {/* Top bar header (Faqat toza ikonlar, dumaloqsiz) */}
+        <div className="flex-none flex items-center justify-between py-1">
           <button
             type="button"
             onClick={() => {
@@ -486,24 +724,33 @@ export function ProfileDetailsView({
               haptics.impact('light')
               setEditMode('none')
             }}
-            className="size-10 rounded-full bg-white dark:bg-pcard shadow-sm flex items-center justify-center text-pfg active:scale-95 transition-transform"
+            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             aria-label={ru ? 'Назад' : 'Orqaga'}
           >
-            <ChevronLeft size={20} strokeWidth={2.4} />
+            <ChevronLeft size={24} strokeWidth={2.4} />
           </button>
 
-          <h1 className="text-[16px] font-extrabold text-pfg tracking-tight">
+          <h1 className="text-[16.5px] font-extrabold text-pfg tracking-tight">
             {ru ? 'Редактировать адрес' : 'Manzilni tahrirlash'}
           </h1>
 
           <div className="size-10" aria-hidden="true" />
         </div>
 
-        {/* Address Fields inside SINGLE rounded card (4-rasm) */}
-        <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full my-auto">
-          <div className="overflow-hidden rounded-3xl bg-pcard border-2 border-pline-strong p-3 space-y-2.5 shadow-xs">
-            {/* Mamlakat */}
-            <div className="rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 flex items-center justify-between">
+        {/* Address Fields inside SINGLE rounded card at TOP (Tepada, o'rtada emas, mahallasiz) */}
+        <div className="flex-1 max-w-lg mx-auto w-full mt-4">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
+            {/* Mamlakat (Clickable -> Opens Country Sheet) */}
+            <button
+              type="button"
+              onClick={() => {
+                playSound('click')
+                haptics.impact('light')
+                setSelectedCountryTemp(editCountry)
+                setShowCountrySheet(true)
+              }}
+              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+            >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
                   {ru ? 'Страна' : 'Mamlakat'}
@@ -513,7 +760,7 @@ export function ProfileDetailsView({
                 </span>
               </div>
               <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
-            </div>
+            </button>
 
             {/* Viloyat (Clickable -> Opens Region Sheet) */}
             <button
@@ -524,7 +771,7 @@ export function ProfileDetailsView({
                 setSelectedRegionTemp(editRegion)
                 setShowRegionSheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
@@ -537,14 +784,16 @@ export function ProfileDetailsView({
               <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
             </button>
 
-            {/* Tuman */}
+            {/* Tuman (Clickable -> Opens District Sheet) */}
             <button
               type="button"
               onClick={() => {
-                setTempDistrict(editDistrict)
-                setShowDistrictModal(true)
+                playSound('click')
+                haptics.impact('light')
+                setSelectedDistrictTemp(editDistrict)
+                setShowDistrictSheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
@@ -552,26 +801,6 @@ export function ProfileDetailsView({
                 </span>
                 <span className="mt-0.5 block text-[15px] font-bold text-pfg">
                   {editDistrict}
-                </span>
-              </div>
-              <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
-            </button>
-
-            {/* Mahalla */}
-            <button
-              type="button"
-              onClick={() => {
-                setTempNeighborhood(editNeighborhood)
-                setShowNeighborhoodModal(true)
-              }}
-              className="w-full text-left rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
-            >
-              <div>
-                <span className="block text-[11px] font-medium text-pmuted">
-                  {ru ? 'Махалля' : 'Mahalla'}
-                </span>
-                <span className="mt-0.5 block text-[15px] font-bold text-pfg">
-                  {editNeighborhood}
                 </span>
               </div>
               <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
@@ -590,6 +819,72 @@ export function ProfileDetailsView({
             {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
           </Button>
         </div>
+
+        {/* ── SHEET: Mamlakatni tanlang (O'zbekiston) ── */}
+        {showCountrySheet && (
+          <DialogOverlay
+            onClose={() => setShowCountrySheet(false)}
+            position="bottom"
+            swipeToDismiss
+            labelId="country-sheet-title"
+          >
+            <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-pcard px-5 pt-3 pb-[calc(1.5rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
+              <div
+                data-drag-handle
+                className="w-10 h-1.5 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-1 mb-4 cursor-grab touch-none select-none shrink-0"
+              />
+              <h2 id="country-sheet-title" className="text-[18px] font-black text-pfg mb-2 px-1 shrink-0">
+                {ru ? 'Выберите страну' : 'Mamlakatni tanlang'}
+              </h2>
+
+              <div className="divide-y divide-pline">
+                {COUNTRIES_LIST.map((country) => {
+                  const isSelected = selectedCountryTemp === country
+                  return (
+                    <button
+                      key={country}
+                      type="button"
+                      onClick={() => {
+                        playSound('click')
+                        haptics.impact('light')
+                        setSelectedCountryTemp(country)
+                      }}
+                      className="w-full flex items-center justify-between py-3.5 px-1 text-left active:bg-psurface transition-colors"
+                    >
+                      <span className="text-[15px] font-bold text-pfg">
+                        {country}
+                      </span>
+                      <div
+                        className={cn(
+                          'size-5 rounded-full flex items-center justify-center transition-all shrink-0',
+                          isSelected
+                            ? 'border-[3.5px] border-pprimary bg-transparent'
+                            : 'bg-gray-200 dark:bg-white/10'
+                        )}
+                      />
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="pt-3 shrink-0">
+                <Button
+                  block
+                  size="default"
+                  onClick={() => {
+                    setEditCountry(selectedCountryTemp)
+                    playSound('click')
+                    haptics.impact('light')
+                    setShowCountrySheet(false)
+                  }}
+                  className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
+                >
+                  {ru ? 'ВЫБРАТЬ' : 'TANLASH'}
+                </Button>
+              </div>
+            </div>
+          </DialogOverlay>
+        )}
 
         {/* ── SHEET: Viloyatni tanlang (3 va 5-rasmlar) ── */}
         {showRegionSheet && (
@@ -644,6 +939,10 @@ export function ProfileDetailsView({
                   size="default"
                   onClick={() => {
                     setEditRegion(selectedRegionTemp)
+                    const newDistricts = REGION_DISTRICTS_MAP[selectedRegionTemp] || []
+                    if (newDistricts.length > 0 && !newDistricts.includes(editDistrict)) {
+                      setEditDistrict(newDistricts[0])
+                    }
                     playSound('click')
                     haptics.impact('light')
                     setShowRegionSheet(false)
@@ -657,56 +956,62 @@ export function ProfileDetailsView({
           </DialogOverlay>
         )}
 
-        {/* Tuman edit modal */}
-        {showDistrictModal && (
-          <DialogOverlay onClose={() => setShowDistrictModal(false)} position="bottom" swipeToDismiss>
-            <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-pcard px-5 pt-3 pb-[calc(1.5rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
-              <div data-drag-handle className="w-10 h-1.5 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-1 mb-4" />
-              <h3 className="text-[18px] font-black text-pfg mb-3">{ru ? 'Район' : 'Tuman'}</h3>
-              <input
-                type="text"
-                value={tempDistrict}
-                onChange={(e) => setTempDistrict(e.target.value)}
-                className="w-full rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 text-[15px] font-bold text-pfg outline-none focus:border-pprimary"
-                placeholder={ru ? 'Введите район' : 'Tuman nomini kiriting'}
+        {/* ── SHEET: Tumanni tanlang (Tumanlar to'liq ro'yxati) ── */}
+        {showDistrictSheet && (
+          <DialogOverlay
+            onClose={() => setShowDistrictSheet(false)}
+            position="bottom"
+            swipeToDismiss
+            labelId="district-sheet-title"
+          >
+            <div className="w-full max-w-lg mx-auto max-h-[80vh] flex flex-col rounded-t-sheet bg-pcard px-5 pt-3 pb-[calc(1.5rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
+              <div
+                data-drag-handle
+                className="w-10 h-1.5 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-1 mb-4 cursor-grab touch-none select-none shrink-0"
               />
-              <div className="mt-4">
-                <Button
-                  block
-                  size="default"
-                  onClick={() => {
-                    setEditDistrict(tempDistrict.trim() || editDistrict)
-                    setShowDistrictModal(false)
-                  }}
-                  className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
-                >
-                  {ru ? 'ВЫБРАТЬ' : 'TANLASH'}
-                </Button>
-              </div>
-            </div>
-          </DialogOverlay>
-        )}
+              <h2 id="district-sheet-title" className="text-[18px] font-black text-pfg mb-2 px-1 shrink-0">
+                {ru ? 'Выберите район' : 'Tumanni tanlang'}
+              </h2>
 
-        {/* Mahalla edit modal */}
-        {showNeighborhoodModal && (
-          <DialogOverlay onClose={() => setShowNeighborhoodModal(false)} position="bottom" swipeToDismiss>
-            <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-pcard px-5 pt-3 pb-[calc(1.5rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
-              <div data-drag-handle className="w-10 h-1.5 rounded-full bg-gray-300 dark:bg-white/20 mx-auto mt-1 mb-4" />
-              <h3 className="text-[18px] font-black text-pfg mb-3">{ru ? 'Махалля' : 'Mahalla'}</h3>
-              <input
-                type="text"
-                value={tempNeighborhood}
-                onChange={(e) => setTempNeighborhood(e.target.value)}
-                className="w-full rounded-2xl bg-psurface border-2 border-pline-strong px-4 py-3 text-[15px] font-bold text-pfg outline-none focus:border-pprimary"
-                placeholder={ru ? 'Введите махаллю' : 'Mahalla nomini kiriting'}
-              />
-              <div className="mt-4">
+              <div className="overflow-y-auto overscroll-contain flex-1 divide-y divide-pline pr-1">
+                {(REGION_DISTRICTS_MAP[editRegion] || REGION_DISTRICTS_MAP['Buxoro viloyati'] || []).map((dist) => {
+                  const isSelected = selectedDistrictTemp === dist
+                  return (
+                    <button
+                      key={dist}
+                      type="button"
+                      onClick={() => {
+                        playSound('click')
+                        haptics.impact('light')
+                        setSelectedDistrictTemp(dist)
+                      }}
+                      className="w-full flex items-center justify-between py-3.5 px-1 text-left active:bg-psurface transition-colors"
+                    >
+                      <span className="text-[15px] font-bold text-pfg">
+                        {dist}
+                      </span>
+                      <div
+                        className={cn(
+                          'size-5 rounded-full flex items-center justify-center transition-all shrink-0',
+                          isSelected
+                            ? 'border-[3.5px] border-pprimary bg-transparent'
+                            : 'bg-gray-200 dark:bg-white/10'
+                        )}
+                      />
+                    </button>
+                  )
+                })}
+              </div>
+
+              <div className="pt-3 shrink-0">
                 <Button
                   block
                   size="default"
                   onClick={() => {
-                    setEditNeighborhood(tempNeighborhood.trim() || editNeighborhood)
-                    setShowNeighborhoodModal(false)
+                    setEditDistrict(selectedDistrictTemp)
+                    playSound('click')
+                    haptics.impact('light')
+                    setShowDistrictSheet(false)
                   }}
                   className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
                 >
@@ -721,218 +1026,214 @@ export function ProfileDetailsView({
   }
 
   // ══════════════════════════════════════════════════════════════════════════
-  // VIEW 1: ASOSIY PROFIL MA'LUMOTLARI (Ma'lumotlar / Manzil tablari, SILLIQ ANIMATSIYA, BORDERSIZ CHEVRON)
+  // VIEW 1: ASOSIY PROFIL MA'LUMOTLARI (CHEVRONSIZ DUMALOQ, DUAL-SLIDE SILIQ ANIMATSIYA)
   // ══════════════════════════════════════════════════════════════════════════
   return (
-    <div className="min-h-[85vh] flex flex-col pb-28 animate-premiumIn">
-      {/* ── Top Bar Header: BORDERSIZ CHEVRON ── */}
-      <div className="relative flex items-center justify-between px-4 py-3">
-        <button
-          type="button"
-          onClick={() => {
-            playSound('click')
-            haptics.impact('light')
-            onBack()
-          }}
-          className="size-11 rounded-full bg-white dark:bg-pcard shadow-sm flex items-center justify-center text-pfg active:scale-95 transition-transform"
-          aria-label={ru ? 'Назад' : 'Orqaga'}
-        >
-          <ChevronLeft size={22} strokeWidth={2.4} />
-        </button>
-
-        <h1 className="text-[17px] font-extrabold text-pfg tracking-tight">
-          {ru ? 'Данные профиля' : 'Profil ma’lumotlari'}
-        </h1>
-
-        <div className="size-11" aria-hidden="true" />
-      </div>
-
-      {/* ── Segment / Tab Switcher (Pill Style, Themes Mos, Silliq) ── */}
-      <div className="mx-4 mt-2 grid grid-cols-2 p-1 rounded-full bg-white dark:bg-pcard shadow-sm gap-1">
-        <button
-          type="button"
-          onClick={() => {
-            if (activeTab !== 'info') {
-              setActiveTab('info')
-              playSound('click')
-              haptics.impact('light')
-            }
-          }}
-          className={cn(
-            'py-2.5 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
-            activeTab === 'info'
-              ? 'bg-pprimary text-ponprimary shadow-xs'
-              : 'text-pfg hover:text-pfg/80'
-          )}
-        >
-          {ru ? 'Данные' : 'Ma’lumotlar'}
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            if (activeTab !== 'address') {
-              setActiveTab('address')
-              playSound('click')
-              haptics.impact('light')
-            }
-          }}
-          className={cn(
-            'py-2.5 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
-            activeTab === 'address'
-              ? 'bg-pprimary text-ponprimary shadow-xs'
-              : 'text-pfg hover:text-pfg/80'
-          )}
-        >
-          {ru ? 'Адрес' : 'Manzil'}
-        </button>
-      </div>
-
-      {/* ── TAB CONTENT (Key bilan silliq tabSmoothIn animatsiyasi) ── */}
-      <div key={activeTab} className="animate-tabSmoothIn">
-        {/* ── TAB 1: Ma'lumotlar ── */}
-        {activeTab === 'info' && (
-          <div className="flex flex-col">
-            {/* Centered Avatar (toza, qalamchasiz) and Name */}
-            <div className="mt-6 flex flex-col items-center">
-              <div
-                onClick={() => {
-                  playSound('click')
-                  haptics.impact('light')
-                  onEditPhoto()
-                }}
-                className="cursor-pointer active:scale-95 transition-transform"
-                title={ru ? 'Изменить фото' : 'Rasmni o‘zgartirish'}
-              >
-                <Avatar
-                  name={currentFullName}
-                  photoUrl={avatarSrcFor(user) ?? undefined}
-                  size="lg"
-                />
-              </div>
-              <h2 className="mt-3 text-[22px] font-extrabold text-pfg tracking-tight">
-                {currentFullName}
-              </h2>
-            </div>
-
-            {/* Details Card */}
-            <div className="mx-4 mt-5 overflow-hidden rounded-3xl bg-pcard border-2 border-pline-strong divide-y divide-pline shadow-xs">
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Возраст:' : 'Yosh:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.age}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  Username
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.username}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Пол:' : 'Jins:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.gender === 'male' ? (ru ? 'Мужской' : 'Erkak') : (ru ? 'Женский' : 'Ayol')}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Номер телефона:' : 'Telefon raqam:'}
-                </span>
-                <div className="flex items-center gap-2">
-                  <span className="text-[15px] font-bold text-pfg">
-                    {phoneDisplay}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      playSound('click')
-                      haptics.impact('light')
-                      onEditPhone()
-                    }}
-                    className="p-1 rounded-lg text-pprimary hover:bg-psurface transition-colors active:scale-95"
-                    aria-label={ru ? 'Изменить телефон' : 'Telefonni o‘zgartirish'}
-                  >
-                    <SquarePen size={20} strokeWidth={2.2} />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* ── TAB 2: Manzil ── */}
-        {activeTab === 'address' && (
-          <div className="flex flex-col mt-4">
-            <div className="mx-4 overflow-hidden rounded-3xl bg-pcard border-2 border-pline-strong divide-y divide-pline shadow-xs">
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Страна:' : 'Mamlakat:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.country}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Область:' : 'Viloyat:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.region}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Район:' : 'Tuman:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.district}
-                </span>
-              </div>
-
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="text-[14.5px] font-medium text-pmuted">
-                  {ru ? 'Махалля:' : 'Mahalla:'}
-                </span>
-                <span className="text-[15px] font-bold text-pfg">
-                  {extra.neighborhood}
-                </span>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
-      {/* ── Sticky Bottom CTA: TAHRIRLASH ── */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 pb-[max(16px,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20">
-        <div className="mx-auto max-w-lg">
+    <div className="min-h-screen bg-[#f4f6f8] dark:bg-pcanvas flex flex-col justify-between pb-6 animate-fadeIn select-none">
+      <div>
+        {/* ── Top Bar Header (Faqat toza chevron, dumaloqsiz) ── */}
+        <div className="w-full max-w-lg mx-auto flex items-center justify-between px-4 py-3">
           <button
             type="button"
             onClick={() => {
               playSound('click')
               haptics.impact('light')
-              if (activeTab === 'info') {
-                setEditMode('info')
-              } else {
-                setEditMode('address')
-              }
+              onBack()
             }}
-            className="w-full min-h-[52px] rounded-full bg-pcard border-2 border-pline-strong text-pfg font-black text-[15px] uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-xs active:translate-y-[2px] transition-transform"
+            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
+            aria-label={ru ? 'Назад' : 'Orqaga'}
           >
-            <span>{ru ? 'РЕДАКТИРОВАТЬ' : 'TAHRIRLASH'}</span>
-            <SquarePen size={19} strokeWidth={2.2} className="text-pfg" />
+            <ChevronLeft size={24} strokeWidth={2.4} />
           </button>
+
+          <h1 className="text-[17px] font-extrabold text-pfg tracking-tight">
+            {ru ? 'Данные профиля' : 'Profil ma’lumotlari'}
+          </h1>
+
+          <div className="w-10 h-10 shrink-0" aria-hidden="true" />
         </div>
+
+        {/* ── Segment / Tab Switcher (Pill Style, Themes Mos, Silliq) ── */}
+        <div className="w-full max-w-lg mx-auto px-4 mt-1">
+          <div className="grid grid-cols-2 p-1 rounded-full bg-white dark:bg-pcard shadow-sm gap-1">
+            <button
+              type="button"
+              onClick={() => {
+                if (activeTab !== 'info') {
+                  setActiveTab('info')
+                  playSound('click')
+                  haptics.impact('light')
+                }
+              }}
+              className={cn(
+                'py-2 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
+                activeTab === 'info'
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'text-pfg hover:text-pfg/80'
+              )}
+            >
+              {ru ? 'Данные' : 'Ma’lumotlar'}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (activeTab !== 'address') {
+                  setActiveTab('address')
+                  playSound('click')
+                  haptics.impact('light')
+                }
+              }}
+              className={cn(
+                'py-2 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
+                activeTab === 'address'
+                  ? 'bg-pprimary text-ponprimary shadow-xs'
+                  : 'text-pfg hover:text-pfg/80'
+              )}
+            >
+              {ru ? 'Адрес' : 'Manzil'}
+            </button>
+          </div>
+        </div>
+
+        {/* ── DUAL-SLIDE HORIZONTAL CONTAINER (0 qupollik, to'liq silliq) ── */}
+        <div className="w-full max-w-lg mx-auto overflow-hidden mt-2">
+          <div
+            className="flex w-[200%] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            style={{
+              transform: activeTab === 'info' ? 'translateX(0%)' : 'translateX(-50%)',
+            }}
+          >
+            {/* ── SLIDE 1: Ma'lumotlar ── */}
+            <div className="w-1/2 shrink-0 px-4 flex flex-col">
+              {/* Centered Avatar (toza, qalamchasiz) and Name */}
+              <div className="mt-4 flex flex-col items-center">
+                <div
+                  onClick={() => {
+                    playSound('click')
+                    haptics.impact('light')
+                    onEditPhoto()
+                  }}
+                  className="cursor-pointer active:scale-95 transition-transform"
+                  title={ru ? 'Изменить фото' : 'Rasmni o‘zgartirish'}
+                >
+                  <Avatar
+                    name={currentFullName}
+                    photoUrl={avatarSrcFor(user) ?? undefined}
+                    size="lg"
+                  />
+                </div>
+                <h2 className="mt-3 text-[21px] font-extrabold text-pfg tracking-tight">
+                  {currentFullName}
+                </h2>
+              </div>
+
+              {/* Details Card */}
+              <div className="mt-4 overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 divide-y divide-pline shadow-sm">
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Возраст:' : 'Yosh:'}
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.age}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    Username
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.username}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Пол:' : 'Jins:'}
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.gender === 'male' ? (ru ? 'Мужской' : 'Erkak') : (ru ? 'Женский' : 'Ayol')}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Номер телефона:' : 'Telefon raqam:'}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[15px] font-bold text-pfg">
+                      {phoneDisplay}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        playSound('click')
+                        haptics.impact('light')
+                        onEditPhone()
+                      }}
+                      className="p-1 rounded-lg text-pprimary hover:bg-psurface transition-colors active:scale-95 cursor-pointer"
+                      aria-label={ru ? 'Изменить телефон' : 'Telefonni o‘zgartirish'}
+                    >
+                      <SquarePen size={19} strokeWidth={2.2} />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* ── SLIDE 2: Manzil ── */}
+            <div className="w-1/2 shrink-0 px-4 flex flex-col mt-3">
+              <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 divide-y divide-pline shadow-sm">
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Страна:' : 'Mamlakat:'}
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.country}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Область:' : 'Viloyat:'}
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.region}
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between px-5 py-3.5">
+                  <span className="text-[14px] font-medium text-pmuted">
+                    {ru ? 'Район:' : 'Tuman:'}
+                  </span>
+                  <span className="text-[15px] font-bold text-pfg">
+                    {extra.district}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ── Sticky Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
+      <div className="w-full max-w-lg mx-auto px-4 pt-4 pb-[max(12px,var(--safe-bottom,0px))]">
+        <button
+          type="button"
+          onClick={() => {
+            playSound('click')
+            haptics.impact('light')
+            if (activeTab === 'info') {
+              setEditMode('info')
+            } else {
+              setEditMode('address')
+            }
+          }}
+          className="w-full min-h-[50px] rounded-full bg-white dark:bg-pcard border border-pline/50 text-pfg font-black text-[14.5px] uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-sm active:translate-y-[2px] transition-transform cursor-pointer"
+        >
+          <span>{ru ? 'РЕДАКТИРОВАТЬ' : 'TAHRIRLASH'}</span>
+          <SquarePen size={18} strokeWidth={2.2} className="text-pfg" />
+        </button>
       </div>
     </div>
   )

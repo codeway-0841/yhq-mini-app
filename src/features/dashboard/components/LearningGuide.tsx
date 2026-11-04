@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import {
   BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight,
-  Clock3, ListChecks, Gauge,
+
 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
@@ -191,7 +191,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
 
       <section className="home-learning-hero mt-4">
         <div className="home-learning-step">
-          <p className="mb-2 text-[12px] font-semibold text-pprimary">{tt('guideToday')}</p>
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
               {allComplete && !resume ? (
@@ -212,13 +211,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          {!expired && (
-            <div className="daily-plan-metrics" aria-label={tt('dailyPlanDetails')}>
-              <span><Clock3 aria-hidden="true" />{plan.estimatedMinutes} {tt('minWord')}</span>
-              <span><ListChecks aria-hidden="true" />{plan.itemCount} {tt('dailyTasksUnit')}</span>
-              <span><Gauge aria-hidden="true" />{summary?.readinessPercent ?? 0}%</span>
-            </div>
-          )}
           <Button block size="lg" className="mt-2.5 whitespace-normal" onClick={start}>
             {actionLabel}
           </Button>
