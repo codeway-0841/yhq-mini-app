@@ -44,10 +44,12 @@ Repository commands and dependencies: package.json. Prefer existing components a
 - Browser bundle: npm run build. Android start path is /app.html (leading slash required).
 - New behavior/bug fixes need meaningful regression coverage; use existing checks for cosmetic edits.
 - Use design tokens and shared UI primitives. Add translations in both UZ and RU.
-- Keep mathematical grid backgrounds unless the user asks to remove them.
+- Global fonda (html, body, #root) nuqtali/to'rli fon (background-image: radial-gradient, grid) QAT'IYAN TAQIQLANADI; ilova foni doimo sof va no-shaffof bg-pcanvas bo'ladi.
 - Safe areas come from index.css; mobile document scroll and desktop panel scroll must survive.
 - Bottom navigation is an allowlist of four tab roots, governed by route-chrome.ts.
 - Sahifa headerlari har doim to'liq no-shaffof (bg-pcanvas); shaffoflik, backdrop-blur va scrolldagi ajratuvchi chiziq (divider) taqiqlanadi.
+- PageHeader doimo sahifaning eng yuqori darajasida (root levelda, paddingli px-4 konteynerdan tashqarida) joylashishi shart; u -mt-[var(--safe-top-body)] va pt-[var(--safe-top)] orqali safe-areani to'liq qoplaydi va hech qanday ochiq bo'shliq qoldirmaydi.
+- Barcha sahifalar, darsliklar va modallar o'zining qat'iy no-shaffof foniga ega bo'lishi, pastki qatlamlar sirtga sizib chiqmasligi shart.
 
 ## Read only the relevant reference before changing a domain
 Historical incident details are retained verbatim in these references. Verify dated deployment

@@ -77,8 +77,6 @@ html, body, #root {
   margin: 0;
   padding: 0;
   background-color: var(--p-canvas, var(--theme-canvas));
-  background-image: radial-gradient(color-mix(in srgb, var(--p-fg) 8%, transparent) 1.2px, transparent 1.2px);
-  background-size: 24px 24px;
   color: var(--theme-fg);
   font-family: var(--font-sans);
   /* Ta'lim ilovasi = raqam ko'p (ball, foiz, taymer) — tabular figure
