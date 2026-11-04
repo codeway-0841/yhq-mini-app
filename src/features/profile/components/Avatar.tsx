@@ -54,7 +54,6 @@ export function Avatar({
     </div>
   )
 
-  /** Avatar ustidagi kichik amal tugmasi (vizual kichik, hit-area 44px+ — before overlay) */
   const editBtn = cn(
     'absolute z-10 grid place-items-center rounded-full border-[2px] border-pcard transition-transform duration-150 ease-out active:scale-90',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcard',
@@ -82,25 +81,6 @@ export function Avatar({
           <Pencil size={size === 'lg' ? 12 : 10} strokeWidth={1.75} />
         </button>
       )}
-
-      {onEditPhoto && (
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation()
-            onEditPhoto()
-          }}
-          aria-label="Rasmni o'zgartirish"
-          className={cn(
-            'absolute -bottom-2 left-1/2 -translate-x-1/2 z-10 grid place-items-center rounded-full border-2 border-pline-strong bg-pcard text-pfg shadow-xs transition-transform duration-150 ease-out active:scale-90',
-            size === 'lg' ? 'size-8' : size === 'sm' ? 'size-6' : 'size-7'
-          )}
-        >
-          <Pencil size={size === 'lg' ? 14 : size === 'sm' ? 11 : 12} strokeWidth={2.2} />
-        </button>
-      )}
     </div>
   )
 }
-
-
