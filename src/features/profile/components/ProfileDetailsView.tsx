@@ -478,7 +478,7 @@ export function ProfileDetailsView({
         />
 
         {/* Main Content Area */}
-        <div className="w-full px-4 mt-2">
+        <div className="w-full px-4 mt-2 pb-24">
           {/* Avatar (Standart 20px oraliqda) */}
           <div className="flex justify-center mb-5">
             <Avatar
@@ -619,14 +619,16 @@ export function ProfileDetailsView({
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Bottom CTA: SAQLASH (Theme Button) */}
-          <div className="w-full pt-4 pb-4">
+        {/* ── Fixed Bottom CTA: SAQLASH ── */}
+        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+          <div className="w-full max-w-lg mx-auto">
             <Button
               block
               size="default"
               onClick={handleSaveInfo}
-              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
+              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-md rounded-full cursor-pointer"
             >
               {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
             </Button>
@@ -720,7 +722,7 @@ export function ProfileDetailsView({
         />
 
         {/* Address Fields inside SINGLE rounded card at TOP */}
-        <div className="w-full px-4 mt-3">
+        <div className="w-full px-4 mt-3 pb-24">
           <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
             {/* Mamlakat (Clickable -> Opens Country Sheet) */}
             <button
@@ -788,14 +790,16 @@ export function ProfileDetailsView({
               <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
             </button>
           </div>
+        </div>
 
-          {/* Bottom CTA: SAQLASH (Theme Button) */}
-          <div className="w-full pt-4 pb-4">
+        {/* ── Fixed Bottom CTA: SAQLASH ── */}
+        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+          <div className="w-full max-w-lg mx-auto">
             <Button
               block
               size="default"
               onClick={handleSaveAddress}
-              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-sm"
+              className="font-black text-[15px] uppercase tracking-wider h-12 shadow-md rounded-full cursor-pointer"
             >
               {ru ? 'СОХРАНИТЬ' : 'SAQLASH'}
             </Button>
@@ -1011,7 +1015,7 @@ export function ProfileDetailsView({
   // VIEW 1: ASOSIY PROFIL MA'LUMOTLARI (CHEVRONSIZ DUMALOQ, DUAL-SLIDE SILIQ ANIMATSIYA)
   // ══════════════════════════════════════════════════════════════════════════
   return (
-    <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn">
+    <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn pb-28">
       {/* ── Top Bar Header (PageHeader SSOT — boshqa sahifalar kabi) ── */}
       <PageHeader
         title={ru ? 'Данные профиля' : 'Profil ma’lumotlari'}
@@ -1186,24 +1190,26 @@ export function ProfileDetailsView({
           </div>
         </div>
 
-      {/* ── Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
-      <div className="w-full px-4 mt-6 pb-4">
-        <button
-          type="button"
-          onClick={() => {
-            playSound('click')
-            haptics.impact('light')
-            if (activeTab === 'info') {
-              setEditMode('info')
-            } else {
-              setEditMode('address')
-            }
-          }}
-          className="w-full min-h-[50px] rounded-full bg-white dark:bg-pcard border border-pline/50 text-pfg font-black text-[14.5px] uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-sm active:translate-y-[2px] transition-transform cursor-pointer"
-        >
-          <span>{ru ? 'РЕДАКТИРОВАТЬ' : 'TAHRIRLASH'}</span>
-          <SquarePen size={18} strokeWidth={2.2} className="text-pfg" />
-        </button>
+      {/* ── Fixed Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
+      <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+        <div className="w-full max-w-lg mx-auto">
+          <button
+            type="button"
+            onClick={() => {
+              playSound('click')
+              haptics.impact('light')
+              if (activeTab === 'info') {
+                setEditMode('info')
+              } else {
+                setEditMode('address')
+              }
+            }}
+            className="w-full min-h-[50px] rounded-full bg-white dark:bg-pcard border border-pline/50 text-pfg font-black text-[14.5px] uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-md active:translate-y-[2px] transition-transform cursor-pointer"
+          >
+            <span>{ru ? 'РЕДАКТИРОВАТЬ' : 'TAHRIRLASH'}</span>
+            <SquarePen size={18} strokeWidth={2.2} className="text-pfg" />
+          </button>
+        </div>
       </div>
     </div>
   )

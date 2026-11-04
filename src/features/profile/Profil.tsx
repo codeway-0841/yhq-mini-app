@@ -666,7 +666,7 @@ export default function Profil() {
         />
       )}
 
-      <p className="text-center text-[10px] text-lineStrong mt-3">KIVVI · build {__APP_VERSION__}</p>
+
     </div>
   )
 }
