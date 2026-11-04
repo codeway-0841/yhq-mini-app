@@ -541,7 +541,7 @@ export default function Darslik() {
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform] duration-200 active:scale-[0.98] shadow-sm"
+          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform,box-shadow] duration-100 active:translate-y-[2px] shadow-sm"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,

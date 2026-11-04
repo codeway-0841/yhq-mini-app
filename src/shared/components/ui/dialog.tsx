@@ -213,7 +213,7 @@ function ConfirmDialog({
               type="button"
               onClick={onClose}
               disabled={loading}
-              className="flex h-12 items-center justify-center rounded-full bg-[#1e1d24] px-4 font-mono text-[13px] font-bold uppercase tracking-[0.06em] text-white outline-none focus-visible:ring-2 focus-visible:ring-white/40 transition-all hover:bg-[#282730] active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
+              className="flex h-12 items-center justify-center rounded-full bg-[#1e1d24] px-4 font-mono text-[13px] font-bold uppercase tracking-[0.06em] text-white outline-none focus-visible:ring-2 focus-visible:ring-white/40 transition-all hover:bg-[#282730] active:translate-y-[2px] disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
             >
               {cancelLabel}
             </button>
@@ -222,7 +222,7 @@ function ConfirmDialog({
               type="button"
               onClick={onConfirm}
               disabled={loading}
-              className="group relative flex h-12 items-center justify-between rounded-full bg-white pl-5 pr-1.5 font-mono text-[13px] font-bold uppercase tracking-[0.05em] text-[#09070e] shadow-md transition-all hover:brightness-95 active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
+              className="group relative flex h-12 items-center justify-between rounded-full bg-white pl-5 pr-1.5 font-mono text-[13px] font-bold uppercase tracking-[0.05em] text-[#09070e] shadow-md transition-all hover:brightness-95 active:translate-y-[2px] disabled:pointer-events-none disabled:opacity-50 cursor-pointer"
             >
               <span className="truncate pr-2">{confirmLabel}</span>
               <span

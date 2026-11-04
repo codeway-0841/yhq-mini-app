@@ -4,41 +4,33 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/shared/lib/cn'
 
 /**
- * KIWI Button — Brilliant 1:1 Pill Style.
+ * KIWI Button — Brilliant 1:1 Tactile 3D Style.
  *
- * Duolingo qattiq pastki soyasi va translateY YO'Q.
- * Bosish javobi — scale(.98) 150ms + yumshoq inset pastki soya.
- * Brilliant uslubidagi yaltiroq sheen nuri va to'liq yumaloq (rounded-full) shakl.
- *
- * Aksent (default) FAQAT sahifadagi asosiy amal uchun. Ikkilamchi amallar —
- * secondary yoki ghost.
+ * Brilliant dizayni: bosganda element KICHRAYMAYDI (scale yo'q).
+ * Buning o'rniga tugma fizik bosiladi (translateY(2px)) va pastki 3D soya tekislanadi.
+ * Yaltiroq sheen nuri va to'liq yumaloq (rounded-full) shakl.
  */
 const buttonVariants = cva(
   [
     'inline-flex items-center justify-center gap-2 whitespace-nowrap',
     'font-bold select-none relative overflow-hidden',
-    'transition-[transform,background-color,border-color,color,filter,box-shadow] duration-150 ease-out',
-    'active:scale-[0.98]',
+    'transition-[transform,background-color,border-color,color,filter,box-shadow] duration-100 ease-out',
+    'active:translate-y-[2px]',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
-    'disabled:pointer-events-none disabled:opacity-40',
+    'disabled:pointer-events-none disabled:opacity-40 disabled:translate-y-0',
     '[&_svg]:pointer-events-none [&_svg]:shrink-0',
   ],
   {
     variants: {
       variant: {
-        default:     'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-none',
-        secondary:   'bg-pcard text-pfg border border-plineStrong shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] hover:bg-psurface active:shadow-none',
-        outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface',
-        ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg',
-        // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind
-        // opacity modifier (`bg-pdanger/10`) ISHLAMAYDI — rgb triplet ishlatiladi
-        // (`bg-[rgb(var(--p-danger-rgb)/0.1)]`, design-system testi guard qiladi).
-        destructive: 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] shadow-[inset_0_-3px_0_rgba(var(--p-danger-rgb)/0.25)] hover:bg-[rgb(var(--p-danger-rgb)/0.20)] active:shadow-none',
-        /** Premium obuna CTA — mavzu aksentiga (pprimary) moslashadi */
-        gold:        'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-none',
-        /** AI amallari — purple wash (aksentdan alohida signal) */
-        ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] shadow-[inset_0_-3px_0_rgba(var(--p-purple-rgb)/0.2)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)] active:shadow-none',
-        link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:scale-100',
+        default:     'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)]',
+        secondary:   'bg-pcard text-pfg border border-plineStrong shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] hover:bg-psurface active:shadow-[inset_0_-1px_0_rgba(0,0,0,0.08)] dark:active:shadow-[inset_0_-1px_0_rgba(255,255,255,0.08)]',
+        outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface active:translate-y-[1px]',
+        ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg active:translate-y-0',
+        destructive: 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] shadow-[inset_0_-3px_0_rgba(var(--p-danger-rgb)/0.25)] hover:bg-[rgb(var(--p-danger-rgb)/0.20)] active:shadow-[inset_0_-1px_0_rgba(var(--p-danger-rgb)/0.25)]',
+        gold:        'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)]',
+        ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] shadow-[inset_0_-3px_0_rgba(var(--p-purple-rgb)/0.2)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)] active:shadow-[inset_0_-1px_0_rgba(var(--p-purple-rgb)/0.2)]',
+        link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:translate-y-0',
       },
       size: {
         sm:        'h-[36px] rounded-full px-4 text-[13.5px] [&_svg]:size-4 shadow-2xs',
@@ -47,7 +39,6 @@ const buttonVariants = cva(
         icon:      'h-11 w-11 rounded-full [&_svg]:size-[18px]',
         'icon-sm': 'h-[36px] w-[36px] rounded-full [&_svg]:size-4',
       },
-      /** Blok tugma — sahifa pastidagi asosiy CTA uchun */
       block: { true: 'w-full', false: '' },
     },
     defaultVariants: { variant: 'default', size: 'default', block: false },
@@ -58,7 +49,6 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean
-  /** Yuklanish holati — spinner ko'rsatadi va tugmani bloklaydi */
   loading?: boolean
 }
 

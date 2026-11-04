@@ -42,12 +42,11 @@ describe('Button', () => {
     expect(onClick).not.toHaveBeenCalled()
   })
 
-  it("Duolingo 3D qoldig'i yo'q — translate/qattiq soya klasslari ishlatilmaydi", () => {
+  it("Brilliant 3D taktil tugma — bosilganda kichraymaydi (scale yo'q), pastga bosiladi (translate-y)", () => {
     render(<Button>Test</Button>)
     const cls = screen.getByRole('button').className
-    expect(cls).toContain('active:scale-[0.98]')
-    expect(cls).not.toMatch(/active:translate-y/)
-    expect(cls).not.toMatch(/shadow-\[0_2px_0/)
+    expect(cls).not.toMatch(/active:scale/)
+    expect(cls).toContain('active:translate-y-[2px]')
   })
 
   it('asChild — tugma stilini boshqa elementga beradi', () => {

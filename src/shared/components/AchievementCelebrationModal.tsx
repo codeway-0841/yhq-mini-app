@@ -133,7 +133,7 @@ export default function AchievementCelebrationModal() {
               onClick={handleClaim}
               disabled={isClaiming}
               className={cn(
-                'group relative overflow-hidden flex h-14 w-full items-center justify-center gap-2 rounded-full bg-pprimary text-ponprimary font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:scale-[0.98] active:shadow-none transition-all hover:brightness-[1.06] cursor-pointer',
+                'group relative overflow-hidden flex h-14 w-full items-center justify-center gap-2 rounded-full bg-pprimary text-ponprimary font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:translate-y-[2px] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] transition-[transform,box-shadow,filter] duration-100 hover:brightness-[1.06] cursor-pointer',
                 isClaiming && 'opacity-80 scale-98',
               )}
             >

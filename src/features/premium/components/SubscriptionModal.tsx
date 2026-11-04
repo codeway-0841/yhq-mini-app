@@ -341,7 +341,7 @@ export default function SubscriptionModal({
                   haptics.impact('medium')
                   setStep('payment_method')
                 }}
-                className="w-full py-4 px-6 rounded-2xl bg-pprimary text-ponprimary hover:brightness-[1.06] active:scale-[0.98] font-bold text-[15.5px] tracking-wide shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer"
+                className="w-full py-4 px-6 rounded-full bg-pprimary text-ponprimary hover:brightness-[1.06] active:translate-y-[2px] font-bold text-[15.5px] tracking-wide shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] flex items-center justify-center gap-2 transition-[transform,box-shadow,filter] duration-100 cursor-pointer"
               >
                 <span>{tt('continueAction')}</span>
               </button>
@@ -600,7 +600,7 @@ export default function SubscriptionModal({
                   type="button"
                   disabled={loadingProvider !== null || isWaitingPayment}
                   onClick={handleProceedToPayment}
-                  className="relative w-full h-14 overflow-hidden rounded-full bg-pprimary text-ponprimary hover:brightness-[1.06] disabled:opacity-50 active:scale-[0.98] active:shadow-none font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] flex items-center justify-center gap-2 transition-all cursor-pointer"
+                  className="relative w-full h-14 overflow-hidden rounded-full bg-pprimary text-ponprimary hover:brightness-[1.06] disabled:opacity-50 active:translate-y-[2px] font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] flex items-center justify-center gap-2 transition-[transform,box-shadow,filter] duration-100 cursor-pointer"
                 >
                   <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
                     <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />

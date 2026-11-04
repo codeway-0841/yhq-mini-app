@@ -477,12 +477,12 @@ export default function ResultsModal({
         <div className="flex gap-2.5 mb-2.5 relative z-10">
           <button onClick={onRetry}
             aria-label={tt('retry')}
-            className="bg-pcard text-pfg border border-plineStrong active:scale-[0.98] transition-all duration-150 rounded-full flex h-12 flex-1 items-center justify-center gap-2 text-xs font-bold shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] hover:text-pfg">
+            className="bg-pcard text-pfg border border-plineStrong active:translate-y-[2px] transition-[transform,box-shadow] duration-100 rounded-full flex h-12 flex-1 items-center justify-center gap-2 text-xs font-bold shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] active:shadow-[inset_0_-1px_0_rgba(0,0,0,0.08)] hover:text-pfg">
             <RotateCcw size={15} strokeWidth={2} aria-hidden="true" />
             {tt('retry')}
           </button>
           <button onClick={onFinish}
-            className="relative overflow-hidden bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:scale-[0.98] active:shadow-none transition-all duration-150 rounded-full h-12 flex-[2] text-sm shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)]">
+            className="relative overflow-hidden bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:translate-y-[2px] transition-[transform,box-shadow,filter] duration-100 rounded-full h-12 flex-[2] text-sm shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)]">
             <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
               <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
               <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
@@ -496,7 +496,7 @@ export default function ResultsModal({
           <button
             onClick={handleShareImage}
             disabled={sharingImage}
-            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg disabled:opacity-50 border border-plineStrong">
+            className="bg-pcard text-pfg active:translate-y-[1.5px] transition-[transform,background-color] duration-100 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg disabled:opacity-50 border border-plineStrong">
             <ImageDown size={15} strokeWidth={1.75} />
             {sharingImage ? '...' : tt('shareResultImage')}
           </button>
@@ -515,7 +515,7 @@ export default function ResultsModal({
               const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
               shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid ?? '0'}`, text)
             }}
-            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg border border-plineStrong">
+            className="bg-pcard text-pfg active:translate-y-[1.5px] transition-[transform,background-color] duration-100 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg border border-plineStrong">
             <Share2 size={15} strokeWidth={1.75} />
             {tt('shareResult')}
           </button>
