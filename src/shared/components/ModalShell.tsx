@@ -106,7 +106,7 @@ export function ModalShell({
           <div
             data-drag-handle
             aria-hidden="true"
-            className={cn('relative z-10 mx-auto h-1 w-10 flex-none cursor-grab touch-none select-none rounded-full bg-gray-300 active:cursor-grabbing dark:bg-white/20', showHeader ? 'mt-2.5 mb-1.5' : 'mt-3 mb-4')}
+            className={cn('relative z-10 mx-auto h-1 w-10 flex-none cursor-grab touch-none select-none rounded-full bg-gray-300 active:cursor-grabbing dark:bg-white/20', showHeader ? 'mt-2.5 mb-1.5' : 'mt-3.5 mb-5')}
           />
         ) : null}
 
@@ -134,7 +134,7 @@ export function ModalShell({
 
         <div
           className={cn(
-            'relative z-10 min-h-0 flex-1 px-5 pb-5',
+            'relative z-10 min-h-0 flex-1 px-5 pb-5', !showHeader && 'pt-2',
             bodyScroll ? 'overflow-y-auto overscroll-contain' : 'flex flex-col',
             bodyClassName,
           )}
