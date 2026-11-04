@@ -1,4 +1,16 @@
-.rus-home { min-height: 100dvh; margin-top: calc(-1 * var(--safe-top-body, 0px)); padding-top: var(--safe-top, 0px); }
+.rus-home {
+  min-height: 100dvh;
+  margin-top: calc(-1 * var(--safe-top-body, 0px));
+  padding-top: var(--safe-top, 0px);
+  background: #ffffff;
+  background-image: none !important;
+  color: #0b0b0f;
+}
+body[data-theme='dark'] .rus-home {
+  background: #111111;
+  background-image: none !important;
+  color: #f7f7f7;
+}
 .rus-home-inner { width: min(100%, 430px); min-height: calc(100dvh - var(--safe-top-body, 0px)); margin: auto; padding: 8px 16px max(12px, var(--safe-bottom, 0px)); display: flex; flex-direction: column; }
 .rus-home-header { flex: none; }
 .rus-home-status { display: flex; justify-content: flex-start; align-items: center; }
@@ -94,16 +106,20 @@ body[data-theme='dark'] .rus-home-level { color: color-mix(in srgb, var(--yhq-ac
 /* Tepa (body safe-top) va pastki (route-page) qatlamlar ham sof kurs foni bilan bir xil bo'lsin */
 html:has(.rus-home),
 body:has(.rus-home),
+#root:has(.rus-home),
 .route-page:has(.rus-home),
 [data-app-shell]:has(.rus-home) {
   background-color: #ffffff !important;
+  background-image: none !important;
   padding-bottom: 0 !important;
 }
 body[data-theme='dark']:has(.rus-home),
 html:has(body[data-theme='dark'] .rus-home),
+#root:has(body[data-theme='dark'] .rus-home),
 body[data-theme='dark'] .route-page:has(.rus-home),
 body[data-theme='dark'] [data-app-shell]:has(.rus-home) {
   background-color: #111111 !important;
+  background-image: none !important;
 }
 @media (max-width: 1023px) {
   .route-page:has(.rus-home),
@@ -117,15 +133,19 @@ body[data-theme='dark'] [data-app-shell]:has(.rus-home) {
 
 html:has(.cmap),
 body:has(.cmap),
+#root:has(.cmap),
 .route-page:has(.cmap),
 [data-app-shell]:has(.cmap) {
   background-color: #ffffff !important;
+  background-image: none !important;
 }
 body[data-theme='dark']:has(.cmap),
 html:has(body[data-theme='dark'] .cmap),
+#root:has(body[data-theme='dark'] .cmap),
 body[data-theme='dark'] .route-page:has(.cmap),
 body[data-theme='dark'] [data-app-shell]:has(.cmap) {
   background-color: #141414 !important;
+  background-image: none !important;
 }
 .route-page:has(.cmap) {
   padding-bottom: 0 !important;

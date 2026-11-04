@@ -13,6 +13,8 @@
   --cmap-edge: #e5e5e7;
   color: var(--cmap-ink);
   background: var(--cmap-surface);
+  background-image: none !important;
+  min-height: 100dvh;
   /* Reference map geometry: every lesson slot is a 128×134 art box. */
   --cmap-node-w: 128px;
   --cmap-node-h: 134px;

@@ -156,23 +156,23 @@ export default function LiteratureCourseHome() {
   }
 
   return (
-    <div className="russian-course-home min-h-screen pb-20">
+    <div className="russian-course-home min-h-screen pb-20 bg-pcanvas text-pfg">
       {/* Header */}
-      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 flex items-center justify-between bg-[var(--surface-primary,#121826)] border-b border-[var(--border-subtle,#1e293b)]">
+      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 flex items-center justify-between bg-pcanvas border-b border-pline">
         <div className="flex items-center gap-3">
           <button
             onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}
-            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-slate-200 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
+            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             aria-label={ru ? 'Назад' : 'Orqaga'}
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
           <div>
-            <h1 className="text-lg font-bold text-slate-100 flex items-center gap-2">
+            <h1 className="text-lg font-bold text-pfg flex items-center gap-2">
               <span className="text-xl">📚</span>
               <span>{ru ? 'Русская классическая литература' : 'Rus mumtoz adabiyoti'}</span>
             </h1>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-pmuted">
               {ru
                 ? 'Иллюстрированный академический курс для учителей'
                 : "O'qituvchilar uchun rasmli akademik darslik"}

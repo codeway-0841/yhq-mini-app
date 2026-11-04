@@ -571,6 +571,7 @@ body[data-no-animation='true'] .module-auto-progress { animation: none !importan
   --yhq-dot: #d1d5db;
   --yhq-dot-active: #9ca3af;
   background: var(--yhq-canvas);
+  background-image: none !important;
   color: var(--yhq-text);
 }
 body[data-theme='dark'] .yhq-home {
@@ -635,6 +636,7 @@ body[data-theme='dark'] .yhq-home-upcoming img { filter: brightness(.5); }
   padding-bottom: 0 !important;
   overflow: hidden !important;
   margin-top: calc(-1 * var(--safe-top-body, 0px)) !important;
+  background-image: none !important;
   height: 100dvh !important;
   max-height: 100dvh !important;
   overscroll-behavior-y: none !important;
