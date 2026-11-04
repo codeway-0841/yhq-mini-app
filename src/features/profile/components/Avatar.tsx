@@ -1,4 +1,4 @@
-import { Camera, Pencil } from 'lucide-react'
+import { Pencil } from 'lucide-react'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { cn } from '../../../shared/lib/cn'
@@ -91,9 +91,12 @@ export function Avatar({
             onEditPhoto()
           }}
           aria-label="Rasmni o'zgartirish"
-          className={cn(editBtn, 'bg-pprimary text-ponprimary shadow-xs')}
+          className={cn(
+            'absolute -bottom-2 left-1/2 -translate-x-1/2 z-10 grid place-items-center rounded-full border-2 border-pline-strong bg-pcard text-pfg shadow-xs transition-transform duration-150 ease-out active:scale-90',
+            size === 'lg' ? 'size-8' : size === 'sm' ? 'size-6' : 'size-7'
+          )}
         >
-          <Camera size={size === 'lg' ? 13 : size === 'sm' ? 10 : 11} strokeWidth={2} />
+          <Pencil size={size === 'lg' ? 14 : size === 'sm' ? 11 : 12} strokeWidth={2.2} />
         </button>
       )}
     </div>
