@@ -50,7 +50,7 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel, language = '
 
       {/* Duel kutilmoqda — PIN va link ulashish */}
       {duelCode && (
-        <div className="w-full rounded-2xl bg-psurface p-4 flex flex-col items-center gap-3 shadow-md">
+        <div className="w-full rounded-2xl bg-pcard p-4 flex flex-col items-center gap-3 shadow-md">
           {formattedPin && (
             <div className="w-full text-center space-y-1">
               <span className="text-[10px] font-bold text-pmuted uppercase tracking-wider">{tt('yourRoomPin')}</span>

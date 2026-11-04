@@ -81,7 +81,7 @@ body[data-theme='dark'] .rus-home-dots-track span {
   background: #3a3e48;
 }
 
-.rus-home-card { border: 1px solid var(--yhq-border); border-radius: 28px; padding: 14px 16px 16px; }
+.rus-home-card { border: 2px solid var(--p-line-strong); border-radius: 28px; padding: 14px 16px 16px; }
 .rus-home-rows { display: flex; flex-direction: column; gap: 8px; }
 .rus-home-row { min-height: 60px; display: flex; align-items: center; gap: 14px; }
 .rus-home-row-title { flex: 1; min-width: 0; color: var(--yhq-muted); font-size: 16px; line-height: 1.25; }

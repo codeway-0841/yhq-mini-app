@@ -585,7 +585,7 @@ body[data-theme='dark'] .yhq-home {
 }
 .yhq-home-screen { background: var(--yhq-canvas); color: var(--yhq-text); }
 .yhq-home-pill { border-color: var(--yhq-border); background: var(--yhq-canvas); }
-.yhq-home-card { border-color: var(--yhq-border); background: var(--yhq-card); }
+.yhq-home-card { border: 2px solid var(--p-line-strong); background: var(--yhq-card); }
 .yhq-home-accent { color: var(--yhq-accent); }
 body[data-theme='dark'] .yhq-home-accent { color: color-mix(in srgb, var(--yhq-accent), white 30%); }
 body[data-theme='dark'] .yhq-home-upcoming img { filter: brightness(.5); }

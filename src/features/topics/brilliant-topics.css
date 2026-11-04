@@ -250,11 +250,11 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
   padding: 16px 20px;
   border-radius: 20px;
   background: var(--br-card-bg);
-  border: 1.5px solid var(--br-card-border);
+  border: 2px solid var(--p-line-strong);
   text-align: left;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+  transition: transform 100ms cubic-bezier(0.2, 0, 0, 1), border-color 0.12s ease, box-shadow 0.12s ease;
 }
 
 .br-topic-card:hover:not(:disabled) {
@@ -264,7 +264,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 }
 
 .br-topic-card:active:not(:disabled) {
-  transform: scale(0.99);
+  transform: translateY(2px);
 }
 
 .br-topic-card:disabled {
