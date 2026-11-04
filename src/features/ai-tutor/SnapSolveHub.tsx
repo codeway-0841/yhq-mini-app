@@ -21,7 +21,6 @@ import {
 } from '../../shared/lib/camera-capture'
 import MathText from '../../shared/components/MathText'
 import DialogOverlay from '../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../shared/components/ModalHeaderRow'
 import SocraticChatSheet from './components/SocraticChatSheet'
 import { nearestCenterIndex } from './subject-carousel'
 import { haptics } from '../../platform/haptics'
@@ -1142,14 +1141,12 @@ export default function SnapSolveHub() {
         <DialogOverlay onClose={() => setIsManualInputOpen(false)} position="bottom" swipeToDismiss labelId="manual-calc-title">
           <div className="w-full max-w-lg mx-auto rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl space-y-4">
             <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none" />
-            <ModalHeaderRow onClose={() => setIsManualInputOpen(false)} label={tt('close')} className="px-0">
-              <span className="flex items-center justify-center gap-2">
-                <Calculator size={20} className="text-pprimary" />
-                <h3 className="text-[16px] font-bold">
-                  {language === 'ru' ? 'Ввести задачу вручную' : 'Masalani qo‘lda yozish'}
-                </h3>
-              </span>
-            </ModalHeaderRow>
+            <h3 id="manual-calc-title" className="sr-only">
+              {language === 'ru' ? 'Ввести задачу вручную' : 'Masalani qo‘lda yozish'}
+            </h3>
+            <button type="button" onClick={() => setIsManualInputOpen(false)} aria-label={tt('close')} className="sr-only">
+              {tt('close')}
+            </button>
 
             <p className="text-xs text-pmuted leading-relaxed">
               {language === 'ru'
@@ -1191,14 +1188,12 @@ export default function SnapSolveHub() {
         <DialogOverlay onClose={() => setIsHistoryOpen(false)} position="bottom" swipeToDismiss labelId="snap-history-title">
           <div className="w-full max-w-lg mx-auto max-h-[85vh] flex flex-col rounded-t-sheet bg-psurface px-5 pt-3 pb-[calc(1.75rem+var(--safe-bottom,0px))] text-pfg shadow-2xl">
             <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-2 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
-            <ModalHeaderRow onClose={() => setIsHistoryOpen(false)} label={tt('close')} className="px-0 pb-3 border-b border-pline shrink-0">
-              <span className="flex items-center justify-center gap-2">
-                <History size={18} className="text-pprimary" />
-                <h3 className="text-[15px] font-bold">
-                  {language === 'ru' ? 'Недавние решения' : 'Oxirgi yechimlar'}
-                </h3>
-              </span>
-            </ModalHeaderRow>
+            <h3 id="snap-history-title" className="sr-only">
+              {language === 'ru' ? 'Недавние решения' : 'Oxirgi yechimlar'}
+            </h3>
+            <button type="button" onClick={() => setIsHistoryOpen(false)} aria-label={tt('close')} className="sr-only">
+              {tt('close')}
+            </button>
 
             <div className="flex-1 overflow-y-auto py-3 space-y-2 no-scrollbar">
               {history.map((item) => (

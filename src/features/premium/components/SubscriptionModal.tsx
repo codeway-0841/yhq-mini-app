@@ -14,7 +14,6 @@ import {
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import ModalCloseButton from '../../../shared/components/ModalCloseButton'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import { PREMIUM_PLANS, HIGHLIGHT_PLAN, getPlan, formatUzs, applyDiscount, type PlanKey, type PremiumPlan } from '../../../../shared/premium-plans'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
@@ -239,11 +238,14 @@ export default function SubscriptionModal({
           <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20" />
         </div>
         {step === 'choose_plan' && (
-          <ModalHeaderRow onClose={onClose} label="Yopish" className="pt-1">
-            <h2 id="subscription-modal-title" className="text-[17px] font-bold text-pfg tracking-tight">
+          <>
+            <h2 id="subscription-modal-title" className="sr-only">
               {lang === 'ru' ? 'Обновление тарифа' : 'Tarifni yangilash'}
             </h2>
-          </ModalHeaderRow>
+            <button type="button" onClick={onClose} aria-label="Yopish" className="sr-only">
+              Yopish
+            </button>
+          </>
         )}
 
         {/* ── STEP 1: TARIFNI TANLANG ── */}

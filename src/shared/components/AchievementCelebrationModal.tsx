@@ -1,13 +1,11 @@
 import { useEffect, useState, useCallback } from 'react'
 import DialogOverlay from './DialogOverlay'
-import { X, Forward, CheckCircle2, ArrowRight } from 'lucide-react'
+import { CheckCircle2, ArrowRight } from 'lucide-react'
 import { useAchievementCelebrationStore } from '../store/useAchievementCelebrationStore'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
-import { shareUrl } from '../../platform/telegram'
-import { config } from '../config'
 import Confetti from './Confetti'
 import { CoinIcon } from './CoinIcon'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
@@ -47,15 +45,7 @@ export default function AchievementCelebrationModal() {
     }, 280)
   }, [currentBadge, isClaiming, dismissCurrent])
 
-  const handleShare = useCallback(() => {
-    if (!currentBadge) return
-    const uid = useAppStore.getState().user?.id ?? '0'
-    const title = tt(currentBadge.titleKey)
-    const text = `🏆 Men KIVVI platformasida yangi "${title}" nishonini qo'lga kiritdim! Siz ham bilimingizni sinab ko'ring:`
-    const link = `https://t.me/${config.botUsername}?start=ref_${uid}`
-    shareUrl(link, text)
-  }, [currentBadge, tt])
-
+  
   if (!currentBadge) return null
   if (typeof document === 'undefined') return null
 
@@ -89,30 +79,17 @@ export default function AchievementCelebrationModal() {
             <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mb-2" />
           </div>
 
-          {/* Top Bar: Close (X) · "Milestone" (Clean typography) · Share */}
-          <div className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={dismissCurrent}
-              aria-label={tt('close')}
-              className="pointer-events-auto flex size-10 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            >
-              <X size={22} strokeWidth={2.25} />
-            </button>
-
-            <span id="milestone-modal-title" className="text-[17px] font-semibold text-gray-900 dark:text-white tracking-tight">
-              {tt('achMilestoneTitle')}
-            </span>
-
-            <button
-              type="button"
-              onClick={handleShare}
-              aria-label={tt('achShareBadge')}
-              className="pointer-events-auto flex size-10 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            >
-              <Forward size={18} strokeWidth={2.2} fill="currentColor" />
-            </button>
-          </div>
+          <span id="milestone-modal-title" className="sr-only">
+            {tt('achMilestoneTitle')}
+          </span>
+          <button
+            type="button"
+            onClick={dismissCurrent}
+            aria-label={tt('close')}
+            className="sr-only"
+          >
+            {tt('close')}
+          </button>
         </div>
 
         {/* ── SCROLLABLE BODY CONTENT ── */}

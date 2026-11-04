@@ -6,14 +6,12 @@ import {
   Palette,
   ShoppingBag,
   Trophy,
-  X,
   LayoutGrid,
   Flame,
   Sparkles,
   Play,
 } from 'lucide-react'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
-import ModalHeaderRow from '../../../shared/components/ModalHeaderRow'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
@@ -58,11 +56,12 @@ function DashboardAchievements({ onClose }: { onClose: () => void }) {
   return (
     <DialogOverlay onClose={onClose} labelId={titleId} position="center">
       <div className="relative w-full max-w-sm rounded-3xl bg-pcard p-6 pt-5 text-pfg shadow-xl">
-        <ModalHeaderRow onClose={onClose} label={tt('close')}>
-          <h2 id={titleId} className="text-lg font-semibold">
-            {tt('achTitle')}
-          </h2>
-        </ModalHeaderRow>
+        <h2 id={titleId} className="sr-only">
+          {tt('achTitle')}
+        </h2>
+        <button type="button" onClick={onClose} aria-label={tt('close')} className="sr-only">
+          {tt('close')}
+        </button>
         <p role="status" className="text-sm text-pmuted">
           {failed || !userId
             ? lang === 'ru'
@@ -319,25 +318,19 @@ export default function DynamicIsland() {
         <DialogOverlay onClose={close} labelId={titleId} position="bottom" swipeToDismiss backdropClassName="bg-black/50 backdrop-blur-xs">
           <div className="dynamic-island-anchor pointer-events-none fixed inset-x-0 z-40 mx-auto flex max-w-sm justify-center px-4">
             <div className="dynamic-island-dock pointer-events-auto w-full rounded-3xl p-4 animate-dynamic-island-expand">
-              {/* Dock Header */}
-              <div data-drag-handle className="flex items-center gap-2.5 pb-2.5 mb-2.5 border-b border-black/10 dark:border-white/10 select-none cursor-grab active:cursor-grabbing">
-                <button
-                  type="button"
-                  aria-label={tt('close')}
-                  onClick={close}
-                  onPointerDown={() => haptics.selection()}
-                  className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer focus-visible:outline-none"
-                >
-                  <X size={22} strokeWidth={2.25} />
-                </button>
-                <div className="flex flex-1 items-center justify-center gap-2">
-                  <span className="size-2 rounded-full bg-pprimary animate-pulse" />
-                  <h2 id={titleId} className="text-[14px] font-bold tracking-tight text-slate-800 dark:text-white">
-                    {menuLabel}
-                  </h2>
-                </div>
-                <span aria-hidden="true" className="size-12 shrink-0" />
-              </div>
+              {/* Dock Drag Handle */}
+              <div data-drag-handle className="w-10 h-1 bg-gray-300 dark:bg-white/20 rounded-full mx-auto mb-3 cursor-grab active:cursor-grabbing touch-none select-none shrink-0" />
+              <h2 id={titleId} className="sr-only">
+                {menuLabel}
+              </h2>
+              <button
+                type="button"
+                aria-label={tt('close')}
+                onClick={close}
+                className="sr-only"
+              >
+                {tt('close')}
+              </button>
 
               {/* 2x2 Icon Grid (Dashboard Grid Card Style) */}
               <div className="grid grid-cols-2 gap-2.5">

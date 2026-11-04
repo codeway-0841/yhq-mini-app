@@ -76,7 +76,7 @@ export function ModalShell({
   canDismiss,
   backdropClassName,
   showHandle = true,
-  showHeader = true,
+  showHeader = false,
   bodyScroll = true,
 }: ModalShellProps) {
   const generatedId = React.useId()
@@ -118,10 +118,15 @@ export function ModalShell({
         ) : (
           <>
             <h2 id={titleId} className="sr-only">{title}</h2>
-            <button type="button" onClick={onClose} aria-label={closeLabel}
-              className="absolute right-3 top-2 z-20 grid size-9 place-items-center rounded-full text-pmuted focus-visible:outline-2 focus-visible:outline-pprimary">
-              <span aria-hidden="true">×</span>
+            {subtitle ? <p className="sr-only">{subtitle}</p> : null}
+            <button type="button" onClick={onClose} aria-label={closeLabel} className="sr-only">
+              {closeLabel}
             </button>
+            {headerRight ? (
+              <div className="relative z-10 flex justify-end px-5 pt-1">
+                {headerRight}
+              </div>
+            ) : null}
           </>
         )}
 
