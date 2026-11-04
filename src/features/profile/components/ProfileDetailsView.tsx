@@ -453,183 +453,180 @@ export function ProfileDetailsView({
   // VIEW 2: MA'LUMOTLARNI TAHRIRLASH (2-rasm: 100% SCROLLSIZ, DUMALOQ CHEVRON, COMPACT JINS)
   // ══════════════════════════════════════════════════════════════════════════
   // ══════════════════════════════════════════════════════════════════════════
-  // VIEW 2: PROFIL MA'LUMOTLARINI TAHRIRLASH (MANZILDAY BITTA BLOK ICHIDA)
+  // VIEW 2: PROFIL MA'LUMOTLARINI TAHRIRLASH (ISMINGIZDAN JINSGACHA 1 TA BLOK)
   // ══════════════════════════════════════════════════════════════════════════
   if (editMode === 'info') {
     return (
       <div className="w-full max-w-lg mx-auto flex flex-col select-none animate-fadeIn">
-        {/* Main Content Area — Bitta blok ichida (Manzil kabi) */}
-        <div className="w-full px-4 mt-3 pb-24">
-          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-4 space-y-3 shadow-sm">
-            {/* ── Top row inside block: Left icon (chapda) va Udalit (o'ngda) ── */}
-            <div className="flex items-center justify-between pb-1">
-              <button
-                type="button"
-                onClick={() => {
-                  playSound('click')
-                  haptics.impact('light')
-                  setEditMode('none')
-                }}
-                className="size-10 rounded-full bg-[#f0f3f6] dark:bg-psurface flex items-center justify-center text-pfg hover:opacity-80 active:scale-95 transition-all cursor-pointer"
-                aria-label={ru ? 'Назад' : 'Orqaga'}
-              >
-                <ChevronLeft size={20} strokeWidth={2.4} />
-              </button>
+        {/* ── Top Bar Header (O'ng-chap surilgan, fonsiz toza ikonlar) ── */}
+        <div className="flex items-center justify-between px-4 py-2.5">
+          <button
+            type="button"
+            onClick={() => {
+              playSound('click')
+              haptics.impact('light')
+              setEditMode('none')
+            }}
+            className="flex size-10 items-center justify-center -ml-2 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
+            aria-label={ru ? 'Назад' : 'Orqaga'}
+          >
+            <ChevronLeft size={24} strokeWidth={2.25} />
+          </button>
 
-              <span className="text-[16px] font-bold text-pfg tracking-tight">
-                {ru ? 'Редактировать данные' : 'Ma’lumotlarni tahrirlash'}
-              </span>
+          <h1 className="text-[17px] font-bold text-pfg tracking-tight">
+            {ru ? 'Редактировать данные' : 'Ma’lumotlarni tahrirlash'}
+          </h1>
 
-              <button
-                type="button"
-                onClick={handleResetInfo}
-                className="size-10 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center hover:bg-red-500/20 active:scale-95 transition-all cursor-pointer"
-                aria-label={ru ? 'Сбросить' : 'Tozalash'}
-                title={ru ? 'Сбросить данные' : 'Ma’lumotlarni tiklash'}
-              >
-                <Trash2 size={19} strokeWidth={2.2} />
-              </button>
-            </div>
+          <button
+            type="button"
+            onClick={handleResetInfo}
+            className="flex size-10 items-center justify-center -mr-2 text-red-500 hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
+            aria-label={ru ? 'Сбросить' : 'Tozalash'}
+            title={ru ? 'Сбросить данные' : 'Ma’lumotlarni tiklash'}
+          >
+            <Trash2 size={21} strokeWidth={2.2} />
+          </button>
+        </div>
 
-            {/* Avatar (Markazda) */}
-            <div className="flex justify-center py-1">
-              <Avatar
-                name={`${editFirstName} ${editLastName}`.trim() || name}
-                photoUrl={avatarSrcFor(user) ?? undefined}
-                size="lg"
-                onEditPhoto={onEditPhoto}
+        {/* ── Avatar (Blokdan tashqarida, markazda) ── */}
+        <div className="flex justify-center my-3">
+          <Avatar
+            name={`${editFirstName} ${editLastName}`.trim() || name}
+            photoUrl={avatarSrcFor(user) ?? undefined}
+            size="lg"
+            onEditPhoto={onEditPhoto}
+          />
+        </div>
+
+        {/* ── Bitta yaxlit blok (Ismingizdan Jinsgacha) ── */}
+        <div className="w-full px-4 pb-24">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
+            {/* Ismingiz */}
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Имя' : 'Ismingiz'}
+              </label>
+              <input
+                type="text"
+                value={editFirstName}
+                onChange={(e) => setEditFirstName(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder={ru ? 'Имя' : 'Ismingiz'}
               />
             </div>
 
-            {/* Inputs list (Manzilday toza, oq chegarasiz maydonlar) */}
-            <div className="space-y-2.5">
-              {/* Ismingiz */}
-              <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
-                <label className="block text-[11px] font-medium text-pmuted">
-                  {ru ? 'Имя' : 'Ismingiz'}
-                </label>
-                <input
-                  type="text"
-                  value={editFirstName}
-                  onChange={(e) => setEditFirstName(e.target.value)}
-                  maxLength={32}
-                  className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-                  placeholder={ru ? 'Имя' : 'Ismingiz'}
-                />
-              </div>
+            {/* Familiya */}
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Фамилия' : 'Familiya'}
+              </label>
+              <input
+                type="text"
+                value={editLastName}
+                onChange={(e) => setEditLastName(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder={ru ? 'Фамилия' : 'Familiya'}
+              />
+            </div>
 
-              {/* Familiya */}
-              <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
-                <label className="block text-[11px] font-medium text-pmuted">
-                  {ru ? 'Фамилия' : 'Familiya'}
-                </label>
-                <input
-                  type="text"
-                  value={editLastName}
-                  onChange={(e) => setEditLastName(e.target.value)}
-                  maxLength={32}
-                  className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-                  placeholder={ru ? 'Фамилия' : 'Familiya'}
-                />
-              </div>
+            {/* Username */}
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+              <label className="block text-[11px] font-medium text-pmuted">
+                Username
+              </label>
+              <input
+                type="text"
+                value={editUsername}
+                onChange={(e) => setEditUsername(e.target.value)}
+                maxLength={32}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder="@username"
+              />
+            </div>
 
-              {/* Username */}
-              <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
-                <label className="block text-[11px] font-medium text-pmuted">
-                  Username
-                </label>
-                <input
-                  type="text"
-                  value={editUsername}
-                  onChange={(e) => setEditUsername(e.target.value)}
-                  maxLength={32}
-                  className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-                  placeholder="@username"
-                />
-              </div>
+            {/* Yosh */}
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+              <label className="block text-[11px] font-medium text-pmuted">
+                {ru ? 'Возраст' : 'Yosh'}
+              </label>
+              <input
+                type="number"
+                inputMode="numeric"
+                value={editAge}
+                onChange={(e) => setEditAge(e.target.value)}
+                maxLength={3}
+                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                placeholder="28"
+              />
+            </div>
 
-              {/* Yosh */}
-              <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
-                <label className="block text-[11px] font-medium text-pmuted">
-                  {ru ? 'Возраст' : 'Yosh'}
-                </label>
-                <input
-                  type="number"
-                  inputMode="numeric"
-                  value={editAge}
-                  onChange={(e) => setEditAge(e.target.value)}
-                  maxLength={3}
-                  className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
-                  placeholder="28"
-                />
-              </div>
-
-              {/* Faoliyat turi (Dropdown Selector) */}
-              <button
-                type="button"
-                onClick={() => {
-                  playSound('click')
-                  haptics.impact('light')
-                  setSelectedOccupationTemp(editOccupation)
-                  setShowOccupationSheet(true)
-                }}
-                className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2.5 flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer"
-              >
-                <div>
-                  <span className="block text-[11px] font-medium text-pmuted">
-                    {ru ? 'Род деятельности' : 'Faoliyat turi'}
-                  </span>
-                  <span className="block text-[14.5px] font-bold text-pfg leading-tight mt-0.5">
-                    {editOccupation || (ru ? 'Выберите' : 'Tanlang')}
-                  </span>
-                </div>
-                <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
-              </button>
-
-              {/* Jins */}
-              <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 flex items-center justify-between">
-                <span className="text-[12px] font-medium text-pmuted">
-                  {ru ? 'Пол' : 'Jins'}
+            {/* Faoliyat turi (Dropdown Selector) */}
+            <button
+              type="button"
+              onClick={() => {
+                playSound('click')
+                haptics.impact('light')
+                setSelectedOccupationTemp(editOccupation)
+                setShowOccupationSheet(true)
+              }}
+              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2.5 flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer"
+            >
+              <div>
+                <span className="block text-[11px] font-medium text-pmuted">
+                  {ru ? 'Род деятельности' : 'Faoliyat turi'}
                 </span>
-                <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-200/70 dark:bg-pcard border border-pline/40 gap-1">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      playSound('click')
-                      haptics.impact('light')
-                      setEditGender('male')
-                    }}
-                    className={cn(
-                      'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
-                      editGender === 'male'
-                        ? 'bg-pprimary text-ponprimary shadow-xs'
-                        : 'text-pmuted hover:text-pfg'
-                    )}
-                    aria-label={ru ? 'Мужской' : 'Erkak'}
-                    title={ru ? 'Мужской' : 'Erkak'}
-                  >
-                    <MdMan size={22} className="shrink-0" />
-                  </button>
+                <span className="block text-[14.5px] font-bold text-pfg leading-tight mt-0.5">
+                  {editOccupation || (ru ? 'Выберите' : 'Tanlang')}
+                </span>
+              </div>
+              <ChevronDown size={18} className="text-pfg shrink-0" strokeWidth={2.4} />
+            </button>
 
-                  <button
-                    type="button"
-                    onClick={() => {
-                      playSound('click')
-                      haptics.impact('light')
-                      setEditGender('female')
-                    }}
-                    className={cn(
-                      'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
-                      editGender === 'female'
-                        ? 'bg-pprimary text-ponprimary shadow-xs'
-                        : 'text-pmuted hover:text-pfg'
-                    )}
-                    aria-label={ru ? 'Женский' : 'Ayol'}
-                    title={ru ? 'Женский' : 'Ayol'}
-                  >
-                    <MdWoman size={22} className="shrink-0" />
-                  </button>
-                </div>
+            {/* Jins */}
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 flex items-center justify-between">
+              <span className="text-[12px] font-medium text-pmuted">
+                {ru ? 'Пол' : 'Jins'}
+              </span>
+              <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-200/70 dark:bg-pcard border border-pline/40 gap-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    playSound('click')
+                    haptics.impact('light')
+                    setEditGender('male')
+                  }}
+                  className={cn(
+                    'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
+                    editGender === 'male'
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'text-pmuted hover:text-pfg'
+                  )}
+                  aria-label={ru ? 'Мужской' : 'Erkak'}
+                  title={ru ? 'Мужской' : 'Erkak'}
+                >
+                  <MdMan size={22} className="shrink-0" />
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    playSound('click')
+                    haptics.impact('light')
+                    setEditGender('female')
+                  }}
+                  className={cn(
+                    'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
+                    editGender === 'female'
+                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      : 'text-pmuted hover:text-pfg'
+                  )}
+                  aria-label={ru ? 'Женский' : 'Ayol'}
+                  title={ru ? 'Женский' : 'Ayol'}
+                >
+                  <MdWoman size={22} className="shrink-0" />
+                </button>
               </div>
             </div>
           </div>
