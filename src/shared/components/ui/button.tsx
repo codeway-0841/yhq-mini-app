@@ -4,20 +4,20 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/shared/lib/cn'
 
 /**
- * KIWI Button — "Jade & Stone" v3.
+ * KIWI Button — Brilliant 1:1 Pill Style.
  *
- * Duolingo 3D tugmasidan farqi: qattiq pastki soya va `translateY` YO'Q.
- * Bosish javobi — `scale(.98)` 120ms + haptics (call-site'da).
- * Balandlik 44px (touch target), radius 10px (boshqaruv bosqichi).
+ * Duolingo qattiq pastki soyasi va translateY YO'Q.
+ * Bosish javobi — scale(.98) 150ms + yumshoq inset pastki soya.
+ * Brilliant uslubidagi yaltiroq sheen nuri va to'liq yumaloq (rounded-full) shakl.
  *
- * Aksent (`default`) FAQAT sahifadagi asosiy amal uchun. Ikkilamchi amallar —
- * `secondary` yoki `ghost`; aksentni ko'p ishlatish uni ma'nosiz qiladi.
+ * Aksent (default) FAQAT sahifadagi asosiy amal uchun. Ikkilamchi amallar —
+ * secondary yoki ghost.
  */
 const buttonVariants = cva(
   [
     'inline-flex items-center justify-center gap-2 whitespace-nowrap',
-    'font-semibold select-none',
-    'transition-[transform,background-color,border-color,color,filter] duration-150 ease-out',
+    'font-bold select-none relative overflow-hidden',
+    'transition-[transform,background-color,border-color,color,filter,box-shadow] duration-150 ease-out',
     'active:scale-[0.98]',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:pointer-events-none disabled:opacity-40',
@@ -26,26 +26,26 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default:     'bg-pprimary text-ponprimary border-b-[3px] border-b-[rgb(var(--p-primary-rgb)/0.6)] hover:brightness-[1.06] active:translate-y-[2px] active:border-b-0',
-        secondary:   'bg-pcard text-pfg border border-plineStrong border-b-[3px] border-b-plineStrong hover:bg-psurface active:translate-y-[2px] active:border-b-[1px]',
+        default:     'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-none',
+        secondary:   'bg-pcard text-pfg border border-plineStrong shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] hover:bg-psurface active:shadow-none',
         outline:     'bg-transparent text-pfg border border-plineStrong hover:bg-psurface',
         ghost:       'bg-transparent text-pmuted hover:bg-psurface hover:text-pfg',
         // Diqqat: --p-* CSS o'zgaruvchilar HEX saqlaydi, shuning uchun Tailwind
         // opacity modifier (`bg-pdanger/10`) ISHLAMAYDI — rgb triplet ishlatiladi
         // (`bg-[rgb(var(--p-danger-rgb)/0.1)]`, design-system testi guard qiladi).
-        destructive: 'bg-transparent text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] hover:bg-[rgb(var(--p-danger-rgb)/0.10)]',
+        destructive: 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger border border-[rgb(var(--p-danger-rgb)/0.35)] shadow-[inset_0_-3px_0_rgba(var(--p-danger-rgb)/0.25)] hover:bg-[rgb(var(--p-danger-rgb)/0.20)] active:shadow-none',
         /** Premium obuna CTA — mavzu aksentiga (pprimary) moslashadi */
-        gold:        'bg-pprimary text-ponprimary border-b-[3px] border-b-[rgb(var(--p-primary-rgb)/0.6)] hover:brightness-[1.06] active:translate-y-[2px] active:border-b-0',
+        gold:        'bg-pprimary text-ponprimary shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] hover:brightness-[1.06] active:shadow-none',
         /** AI amallari — purple wash (aksentdan alohida signal) */
-        ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)]',
+        ai:          'bg-[rgb(var(--p-purple-rgb)/0.12)] text-ppurple border border-[rgb(var(--p-purple-rgb)/0.30)] shadow-[inset_0_-3px_0_rgba(var(--p-purple-rgb)/0.2)] hover:bg-[rgb(var(--p-purple-rgb)/0.20)] active:shadow-none',
         link:        'bg-transparent text-pprimary underline-offset-4 hover:underline active:scale-100',
       },
       size: {
-        sm:      'h-[34px] rounded-xl px-3 text-[13.5px] [&_svg]:size-4 shadow-2xs',
-        default: 'h-11 rounded-2xl px-[18px] text-[15px] [&_svg]:size-[18px] shadow-xs',
-        lg:      'h-[52px] rounded-2xl px-6 text-base [&_svg]:size-5 shadow-xs',
-        icon:    'h-11 w-11 rounded-xl [&_svg]:size-[18px]',
-        'icon-sm': 'h-[34px] w-[34px] rounded-xl [&_svg]:size-4',
+        sm:        'h-[36px] rounded-full px-4 text-[13.5px] [&_svg]:size-4 shadow-2xs',
+        default:   'h-11 rounded-full px-5 text-[15px] [&_svg]:size-[18px] shadow-sm',
+        lg:        'h-14 rounded-full px-6 text-[17px] [&_svg]:size-5 shadow-sm',
+        icon:      'h-11 w-11 rounded-full [&_svg]:size-[18px]',
+        'icon-sm': 'h-[36px] w-[36px] rounded-full [&_svg]:size-4',
       },
       /** Blok tugma — sahifa pastidagi asosiy CTA uchun */
       block: { true: 'w-full', false: '' },
@@ -65,6 +65,8 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, block, asChild = false, loading = false, disabled, children, ...props }, ref) => {
     const Comp = asChild ? Slot : 'button'
+    const showSheen = !asChild && (!variant || variant === 'default' || variant === 'gold')
+
     return (
       <Comp
         ref={ref}
@@ -73,13 +75,30 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         aria-busy={loading || undefined}
         {...props}
       >
-        {loading ? (
-          <>
-            <Spinner />
-            {children}
-          </>
-        ) : (
+        {asChild ? (
           children
+        ) : (
+          <>
+            {showSheen && (
+              <span
+                aria-hidden="true"
+                className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none"
+              >
+                <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
+                <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
+              </span>
+            )}
+            <span className="relative z-10 inline-flex items-center justify-center gap-2">
+              {loading ? (
+                <>
+                  <Spinner />
+                  {children}
+                </>
+              ) : (
+                children
+              )}
+            </span>
+          </>
         )}
       </Comp>
     )

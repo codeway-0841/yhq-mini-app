@@ -164,7 +164,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </div>
 
             {/* CTA */}
-            <Button block size="lg" className="mt-5 shadow-sm font-bold rounded-xl" onClick={() => onGetPlan()}>
+            <Button block size="lg" className="mt-5" onClick={() => onGetPlan()}>
               {tt('closedGroupCta')}
             </Button>
           </div>

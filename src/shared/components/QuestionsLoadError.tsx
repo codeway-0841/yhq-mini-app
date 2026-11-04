@@ -9,6 +9,7 @@
  * 429 + 24 soatlik blokga olib kelardi. Endi qayta urinish QO'LDA.
  */
 import { AlertTriangle, RotateCw } from 'lucide-react'
+import { Button } from './ui/button'
 import { useQuestionsStore } from '../store/useQuestionsStore'
 import { useT } from '../i18n'
 
@@ -28,15 +29,14 @@ export default function QuestionsLoadError({ error, lang }: { error: string; lan
       <p className="max-w-[34ch] text-[13.5px] leading-relaxed text-pmuted">
         {rateLimited ? tt('qLoadRateLimited') : error}
       </p>
-      <button
-        type="button"
+      <Button
         onClick={() => void retry()}
-        disabled={loading}
-        className="mt-1 inline-flex h-11 items-center gap-2 rounded-2xl bg-pprimary px-5 text-[15px] font-semibold text-ponprimary transition-transform active:scale-[0.97] disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas shadow-xs"
+        loading={loading}
+        className="mt-1"
       >
-        <RotateCw size={16} strokeWidth={2} className={loading ? 'animate-spin' : undefined} />
+        <RotateCw size={16} strokeWidth={2} />
         {tt('qLoadRetry')}
-      </button>
+      </Button>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import { useAdaptiveStore } from '../../shared/store/useAdaptiveStore'
 import { useAnswerTimer } from '../../shared/hooks/useAnswerTimer'
 import { useAppStore }      from '../../shared/store/useAppStore'
 import MathText from '../../shared/components/MathText'
+import { Button } from '../../shared/components/ui/button'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT }             from '../../shared/i18n'
@@ -182,20 +183,21 @@ export default function AdaptivePage() {
           </p>
 
           <div className="flex flex-col gap-2.5 w-full mt-4">
-            <button
-              type="button"
+            <Button
+              block
+              size="lg"
               onClick={() => setShowSubscriptionModal(true)}
-              className="w-full bg-pprimary text-ponprimary font-semibold py-3.5 rounded-2xl text-sm shadow-xs hover:brightness-105 active:scale-[0.98] transition-all cursor-pointer"
             >
               {tt('subscribe')}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant="secondary"
+              block
+              size="lg"
               onClick={() => goBack(navigate)}
-              className="w-full bg-psurface text-pfg font-semibold py-3 rounded-2xl text-sm hover:bg-pcard active:scale-[0.98] transition-all cursor-pointer"
             >
               {tt('backWord')}
-            </button>
+            </Button>
           </div>
         </div>
 
@@ -247,9 +249,9 @@ export default function AdaptivePage() {
             </div>
           )}
 
-          <button onClick={() => startSession()} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 px-8 py-3.5 rounded-2xl text-base shadow-xs">
+          <Button size="lg" className="px-8" onClick={() => startSession()}>
             {tt('adaptive')}
-          </button>
+          </Button>
         </div>
       </div>
     )

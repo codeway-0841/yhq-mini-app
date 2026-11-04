@@ -14,6 +14,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ModalShell from './ModalShell'
+import { Button } from './ui/button'
 import { useAppStore } from '../store/useAppStore'
 import { useReviewPromptStore } from '../store/useReviewPromptStore'
 import { useModalCount } from '../lib/navigation'
@@ -72,13 +73,11 @@ export default function ReviewPromptSheet() {
         {tt('reviewPromptBody')}
       </p>
 
-      <button
-        type="button"
-        onClick={onWrite}
-        className="relative z-10 flex w-full items-center justify-center gap-2 rounded-2xl bg-pprimary px-4 py-3.5 font-bold text-ponprimary shadow-xs transition-all duration-150 hover:brightness-[1.06] active:scale-[0.98] cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-psurface"
-      >
-        {tt('reviewsWriteTitle')}
-      </button>
+      <div className="relative z-10">
+        <Button block size="lg" onClick={onWrite}>
+          {tt('reviewsWriteTitle')}
+        </Button>
+      </div>
     </ModalShell>
   )
 }

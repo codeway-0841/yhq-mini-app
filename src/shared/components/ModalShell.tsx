@@ -117,7 +117,7 @@ export function ModalShell({
           </ModalHeaderRow>
         ) : (
           <>
-            <h2 id={titleId} className="sr-only">{title}</h2>
+            <h2 id={titleId} className="sr-only text-[17px]">{title}</h2>
             {subtitle ? <p className="sr-only">{subtitle}</p> : null}
             <button type="button" onClick={onClose} aria-label={closeLabel} className="sr-only">
               {closeLabel}

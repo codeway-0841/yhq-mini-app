@@ -184,13 +184,12 @@ export default function XatolarPage() {
                 <p className="text-[11px] text-psubtle mt-1">{total} {tt('unansweredWord')}</p>
               </div>
             </div>
-            <button onClick={() => isV2 ? startPracticeAllV2() : startPracticeV1(
+            <Button block size="lg" onClick={() => isV2 ? startPracticeAllV2() : startPracticeV1(
               wrongQuestions.map((q) => q.id), tt('fixMistakes'), 'mistakes',
-            )}
-              className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] transition-[transform,background-color,filter] duration-150 w-full py-3.5 rounded-2xl text-[14px] flex items-center justify-center gap-2 shadow-xs">
+            )}>
               <Play size={16} strokeWidth={1.75} />
               {tt('practiceAll')}
-            </button>
+            </Button>
           </div>
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}

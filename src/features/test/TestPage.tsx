@@ -644,7 +644,7 @@ export default function TestPage() {
             variant="secondary"
             block
             size="lg"
-            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-2xl active:scale-[0.98]"
+            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-full active:scale-[0.98]"
             onClick={() => { setShowMenu(false); setShowSettings(true) }}
           >
             <SettingsIcon className="size-5 text-pmuted mr-2" />{tt('settingsTitle')}
@@ -653,7 +653,7 @@ export default function TestPage() {
             variant="secondary"
             block
             size="lg"
-            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-2xl active:scale-[0.98]"
+            className="h-12 bg-pcard text-pfg shadow-2xs justify-start px-4 font-bold rounded-full active:scale-[0.98]"
             onClick={handleYakunlash}
           >
             {isFinished ? <BarChart2 className="size-5 text-pmuted mr-2" /> : <Flag className="size-5 text-pmuted mr-2" />}{tt(isFinished ? 'results' : 'finish')}

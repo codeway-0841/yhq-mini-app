@@ -1,6 +1,7 @@
 import { memo } from 'react'
 import { ArrowRight, Download } from 'lucide-react'
 import ModalShell from './ModalShell'
+import { Button } from './ui/button'
 import { SpecHero } from './ui/spec'
 import type { AppVersionInfo } from '../../platform/version-check'
 import type { Lang } from '../i18n'
@@ -71,22 +72,14 @@ export const UpdateSheet = memo(function UpdateSheet({
       </p>
 
       <div className="relative z-10 mt-6 flex flex-col gap-2">
-        <button
-          type="button"
-          onClick={handleUpdate}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-pprimary px-4 py-3.5 font-bold text-ponprimary shadow-xs transition-[transform,filter] duration-150 hover:brightness-[1.06] active:scale-[0.98] cursor-pointer"
-        >
+        <Button block size="lg" onClick={handleUpdate}>
           <span>{isRu ? 'Обновить в Google Play' : 'Google Play orqali yangilash'}</span>
           <ArrowRight size={18} />
-        </button>
+        </Button>
 
-        <button
-          type="button"
-          onClick={handleLater}
-          className="w-full rounded-2xl px-4 py-3 text-[14px] font-medium text-pmuted transition-colors hover:bg-[rgb(var(--p-surface-rgb)/0.6)] hover:text-pfg active:scale-[0.98] cursor-pointer"
-        >
+        <Button variant="ghost" block onClick={handleLater}>
           {isRu ? 'Напомнить позже' : 'Keyinroq eslatish'}
-        </button>
+        </Button>
       </div>
     </ModalShell>
   )

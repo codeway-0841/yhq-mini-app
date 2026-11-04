@@ -79,9 +79,11 @@ export default function AchievementCelebrationModal() {
             <div data-drag-handle className="w-10 h-1 rounded-full bg-gray-300 dark:bg-white/20 mt-1 mb-4" />
           </div>
 
-          <span id="milestone-modal-title" className="sr-only">
-            {tt('achMilestoneTitle')}
-          </span>
+          <div className="flex items-center justify-between">
+            <span id="milestone-modal-title" className="sr-only">
+              {tt('achMilestoneTitle')}
+            </span>
+          </div>
           <button
             type="button"
             onClick={dismissCurrent}
@@ -131,10 +133,14 @@ export default function AchievementCelebrationModal() {
               onClick={handleClaim}
               disabled={isClaiming}
               className={cn(
-                'group flex h-12 w-full items-center justify-center gap-2 rounded-2xl bg-pprimary text-ponprimary font-bold text-[15px] shadow-md active:scale-98 transition-all hover:brightness-105 cursor-pointer',
+                'group relative overflow-hidden flex h-14 w-full items-center justify-center gap-2 rounded-full bg-pprimary text-ponprimary font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:scale-[0.98] active:shadow-none transition-all hover:brightness-[1.06] cursor-pointer',
                 isClaiming && 'opacity-80 scale-98',
               )}
             >
+              <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
+                <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
+                <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
+              </span>
               <span>{tt('achClaimReward')}</span>
               {totalCount > 1 && (
                 <span className="ml-1 text-xs opacity-80 flex items-center gap-0.5">
