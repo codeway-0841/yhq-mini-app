@@ -170,10 +170,10 @@ export default function ImageZoomModal({ src, alt = 'Rasm', onClose }: ImageZoom
 
         <button
           onClick={onClose}
-          className="size-11 grid place-items-center rounded-full bg-white/15 text-white hover:bg-white/25 active:scale-95 transition-all shadow-lg"
+          className="flex size-10 shrink-0 items-center justify-center text-white hover:opacity-80 active:scale-90 transition-transform cursor-pointer focus-visible:outline-none"
           aria-label="Yopish"
         >
-          <X size={20} />
+          <X size={24} strokeWidth={2.25} />
         </button>
       </div>
 

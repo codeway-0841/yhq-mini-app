@@ -36,9 +36,9 @@ export default function ModesSheet({ title, items, onClose }: {
             type="button"
             onClick={onClose}
             aria-label={tt('backWord')}
-            className="size-12 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center text-pfg active:scale-95 shadow-xs transition-all"
+            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer"
           >
-            <ArrowLeft size={20} strokeWidth={2} />
+            <ArrowLeft size={24} strokeWidth={2.25} />
           </button>
           <p id="modes-sheet-title" className="text-[17px] font-bold text-pfg">{title}</p>
         </header>

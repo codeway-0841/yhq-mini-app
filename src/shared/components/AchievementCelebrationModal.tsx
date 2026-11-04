@@ -95,9 +95,9 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={dismissCurrent}
               aria-label={tt('close')}
-              className="pointer-events-auto size-10 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto flex size-10 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             >
-              <X size={18} strokeWidth={2.4} />
+              <X size={22} strokeWidth={2.25} />
             </button>
 
             <span id="milestone-modal-title" className="text-[17px] font-semibold text-gray-900 dark:text-white tracking-tight">
@@ -108,7 +108,7 @@ export default function AchievementCelebrationModal() {
               type="button"
               onClick={handleShare}
               aria-label={tt('achShareBadge')}
-              className="pointer-events-auto size-10 rounded-full bg-white dark:bg-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-black/[0.04] dark:border-white/10 flex items-center justify-center text-gray-700 dark:text-white active:scale-95 transition-transform cursor-pointer"
+              className="pointer-events-auto flex size-10 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
             >
               <Forward size={18} strokeWidth={2.2} fill="currentColor" />
             </button>

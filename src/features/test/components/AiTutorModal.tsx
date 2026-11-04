@@ -226,7 +226,7 @@ export default function AiTutorModal({
               speakExplanation(staticText)
             }}
             aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-            className="relative left-auto top-auto grid size-12 shrink-0 place-items-center rounded-full border border-black/[0.04] bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all hover:scale-105 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none cursor-pointer"
+            className="relative left-auto top-auto flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer focus-visible:outline-none"
           >
             <Volume2 size={18} />
           </button>
@@ -274,7 +274,7 @@ export default function AiTutorModal({
               speakExplanation(aiText)
             }}
             aria-label={language === 'ru' ? 'Озвучить объяснение' : "Tushuntirishni o'qib berish"}
-            className="relative left-auto top-auto grid size-12 shrink-0 place-items-center rounded-full border border-black/[0.04] bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all hover:scale-105 active:scale-95 dark:border-white/10 dark:bg-white/10 dark:text-white dark:shadow-none cursor-pointer"
+            className="relative left-auto top-auto flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer focus-visible:outline-none"
           >
             <Volume2 size={18} />
           </button>

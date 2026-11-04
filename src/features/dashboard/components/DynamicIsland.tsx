@@ -326,9 +326,9 @@ export default function DynamicIsland() {
                   aria-label={tt('close')}
                   onClick={close}
                   onPointerDown={() => haptics.selection()}
-                  className="grid size-12 shrink-0 place-items-center rounded-full bg-black/5 dark:bg-white/10 hover:bg-black/10 dark:hover:bg-white/20 active:scale-90 transition-transform text-slate-600 dark:text-white/80"
+                  className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer focus-visible:outline-none"
                 >
-                  <X size={20} />
+                  <X size={22} strokeWidth={2.25} />
                 </button>
                 <div className="flex flex-1 items-center justify-center gap-2">
                   <span className="size-2 rounded-full bg-pprimary animate-pulse" />

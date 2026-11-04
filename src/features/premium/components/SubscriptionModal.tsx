@@ -356,10 +356,10 @@ export default function SubscriptionModal({
               <button
                 type="button"
                 onClick={() => setStep('choose_plan')}
-                className="size-12 shrink-0 rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none flex items-center justify-center active:scale-95 hover:scale-105 transition-all cursor-pointer"
+                className="size-12 shrink-0 rounded-full text-pfg flex items-center justify-center active:scale-90 transition-transform cursor-pointer"
                 aria-label={tt('backWord')}
               >
-                <ChevronLeft size={22} strokeWidth={2.25} />
+                <ChevronLeft size={24} strokeWidth={2.25} />
               </button>
               <h2 className="min-w-0 flex-1 text-[17px] font-bold tracking-tight text-pfg text-center">
                 {tt('selectPaymentTitle')}
@@ -368,7 +368,7 @@ export default function SubscriptionModal({
               <button
                 type="button"
                 onClick={handleGetHelp}
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-[11px] font-semibold text-gray-700 hover:text-pfg shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 transition-colors cursor-pointer"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-psurface px-3 py-1.5 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer"
               >
                 <Headphones size={12} />
                 <span>{tt('getHelp')}</span>

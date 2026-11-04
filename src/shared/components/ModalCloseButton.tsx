@@ -25,16 +25,14 @@ export function ModalCloseButton({
       onClick={onClick}
       aria-label={label}
       className={cn(
-        'absolute left-3.5 top-3 z-30 flex items-center justify-center rounded-full',
-        'bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04]',
-        'dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none',
-        'transition-transform duration-150 ease-out hover:scale-105 active:scale-95 cursor-pointer',
+        'absolute left-3.5 top-3 z-30 flex items-center justify-center rounded-full text-pfg',
+        'transition-transform duration-150 ease-out hover:opacity-80 active:scale-90 cursor-pointer',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
         size === 'md' ? 'size-12' : 'size-9',
         className,
       )}
     >
-      <X className={size === 'md' ? 'size-5' : 'size-4'} strokeWidth={2.25} />
+      <X className={size === 'md' ? 'size-6' : 'size-5'} strokeWidth={2.25} />
     </button>
   )
 }
