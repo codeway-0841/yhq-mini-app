@@ -98,14 +98,15 @@ export default function ModesPage() {
   }, [navigate])
 
   return (
-    <div className="px-4 pb-8">
+    <>
       {/* Tab-root header — chap chevron (orqaga) bilan */}
       <PageHeader
         title={tt('modesTitle')}
         size="lg"
         onBack={handleBack}
-        className="-mx-4 mb-4"
+        className="mb-4"
       />
+      <div className="px-4 pb-8">
 
       {/* 3-ustunli ixcham rejimlar panjarasi (desktop'da keng 4/5 ustun) */}
       <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5 lg:grid-cols-4 xl:grid-cols-5 lg:gap-4 xl:gap-5">
@@ -119,5 +120,6 @@ export default function ModesPage() {
         ))}
       </div>
     </div>
+    </>
   )
 }

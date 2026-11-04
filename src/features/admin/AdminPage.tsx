@@ -42,7 +42,7 @@ export default function AdminPage() {
   ]
 
   return (
-    <div className="font-display bg-pcanvas text-pfg pb-6 px-4">
+    <>
       {/* Top Header (PageHeader SSOT) */}
       <PageHeader
         title={
@@ -55,7 +55,7 @@ export default function AdminPage() {
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={lang === 'ru' ? 'Назад' : 'Orqaga'}
-        className="-mx-4 mb-4"
+        className="mb-4"
       >
         <div className="px-4 pb-2">
           <div className="grid grid-cols-8 gap-1 p-1 bg-psurface rounded-2xl shadow-xs">
@@ -82,6 +82,8 @@ export default function AdminPage() {
         </div>
       </PageHeader>
 
+      <div className="font-display bg-pcanvas text-pfg pb-6 px-4">
+
       {/* Tab Content — desktop'da keng (jadvallar nafas oladi) */}
       <div className="max-w-md mx-auto lg:max-w-2xl">
         {activeTab === 'promos' && <AdminPromoTab />}
@@ -94,5 +96,6 @@ export default function AdminPage() {
         {activeTab === 'orders' && <AdminOrdersTab />}
       </div>
     </div>
+    </>
   )
 }

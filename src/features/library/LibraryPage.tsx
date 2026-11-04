@@ -158,7 +158,7 @@ export default function LibraryPage() {
   const allGradesLabel = language === 'ru' ? 'Классы' : 'Sinflar'
 
   return (
-    <div className="px-4 pb-4">
+    <>
       {/* Sticky header (PageHeader SSOT) + qidiruv */}
       <PageHeader
         title={tt('library')}
@@ -166,7 +166,7 @@ export default function LibraryPage() {
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-2.5"
+        className="mb-2.5"
       >
         <div className="px-4 pb-2.5">
           <div className="relative flex items-center">
@@ -198,6 +198,8 @@ export default function LibraryPage() {
           </div>
         </div>
       </PageHeader>
+
+      <div className="px-4 pb-4">
 
       {/* 50/50 Simmetrik Filtr Tugmalari (Sinf va Fan tanlash) */}
       <div className="grid grid-cols-2 gap-2 mb-3">
@@ -384,5 +386,6 @@ export default function LibraryPage() {
         <ArrowUp size={20} strokeWidth={2.5} />
       </button>
     </div>
+    </>
   )
 }

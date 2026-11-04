@@ -370,14 +370,14 @@ export default function LeaderboardPage() {
   }
 
   return (
-    <div className="px-4 pb-8">
+    <>
       {/* ── Top Bar & Segmented Control Tabs (PageHeader SSOT) ── */}
       <PageHeader
         title={tt('leaderboard')}
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-4"
+        className="mb-4"
       >
         <div className="px-4 pb-2">
           <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs max-w-md mx-auto">
@@ -408,6 +408,8 @@ export default function LeaderboardPage() {
         </div>
       </PageHeader>
 
+      <div className="px-4 pb-8">
+
       {/* Desktop 2-ustunli Bento (Podium + Ro'yxat), Mobilda oddiy vertikal tartib */}
       <div className={cn('w-full', hasTop3 && 'lg:grid lg:grid-cols-12 lg:gap-6 lg:items-start')}>
         {/* Chap ustun (Desktop: 5/12): Top-3 Arc Stage + Chempionlar Tarixi */}
@@ -432,5 +434,6 @@ export default function LeaderboardPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

@@ -87,15 +87,17 @@ export default function TestlarPage() {
   }
 
   return (
-    <div className="px-4 pb-20">
+    <>
       {/* Tab-root header — chap chevron (orqaga) bilan */}
       <PageHeader
         title={tt('testlarTitle')}
         size="lg"
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
-        className="-mx-4 mb-4"
+        className="mb-4"
       />
+
+      <div className="px-4 pb-20">
 
       {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
       <div className="mb-4">
@@ -142,6 +144,7 @@ export default function TestlarPage() {
           )
         })}
       </div>
-    </div>
+      </div>
+    </>
   )
 }

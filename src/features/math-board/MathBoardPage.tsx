@@ -424,14 +424,15 @@ export default function MathBoardPage() {
     }))
 
   return (
-    <div className="px-4 pb-20">
+    <>
       <PageHeader
         title={tt('mathBoardTitle')}
         subtitle={tt('mathBoardSubtitle')}
         size="lg"
         onBack={() => navigate('/rejimlar')}
-        className="-mx-4 mb-4"
+        className="mb-4"
       />
+      <div className="px-4 pb-20">
 
       {/* Masala tanlash */}
       <div className="mb-3 flex gap-2 overflow-x-auto pb-1" role="group" aria-label={tt('mathBoardProblem')}>
@@ -629,5 +630,6 @@ export default function MathBoardPage() {
         />
       )}
     </div>
+    </>
   )
 }

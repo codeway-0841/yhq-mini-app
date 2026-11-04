@@ -282,11 +282,12 @@ export default function CamAiPage() {
   // ── SETUP ─────────────────────────────────────────────────────────────────
   if (phase === 'setup') {
     return (
-      <div className="px-4">
+      <>
         {/* size="md" (default): CamAi — back'li ichki sahifa, tab-root emas
             (UI kontrakt: lg = back'SIZ tab-root). Asosiy tuzatish index.css'da
             (desktop .page-header margin-top:0) — qarang. */}
-        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} onBack={() => goBack(navigate)} className="-mx-4 mb-4" />
+        <PageHeader title={tt('camaiTitle')} subtitle={tt('camaiSubtitle')} onBack={() => goBack(navigate)} className="mb-4" />
+        <div className="px-4">
 
         {/* Manba tanlash — scroll-mt: brauzer/Playwright scrollIntoView
             tugmani sticky header ostiga park qilmasligi uchun (real user:
@@ -351,18 +352,20 @@ export default function CamAiPage() {
         </Button>
         <p className="mt-3 text-center text-[12.5px] text-psubtle">{tt('camaiEndlessHint')}</p>
       </div>
+      </>
     )
   }
 
   // ── GAME ──────────────────────────────────────────────────────────────────
   return (
-    <div className="px-4">
+    <>
       <PageHeader
         title={tt('camaiTitle')}
         subtitle={`${answered} ${tt('camaiQuestionOf')}`}
         onBack={backToSetup}
-        className="-mx-4 mb-3"
+        className="mb-3"
       />
+      <div className="px-4">
 
       {/* Sahnа: kamera YOKI kamerasiz slotlar */}
       {cameraMode ? (
@@ -603,6 +606,7 @@ export default function CamAiPage() {
           </DialogFooter>
         </Dialog>
       )}
-    </div>
+      </div>
+    </>
   )
 }

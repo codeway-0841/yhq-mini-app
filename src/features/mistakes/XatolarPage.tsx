@@ -157,8 +157,9 @@ export default function XatolarPage() {
   const topHardV2 = serverOverview?.top ?? []
 
   return (
-    <div className="px-4 pb-4">
-      <PageHeader title={tt('mistakesTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
+    <>
+      <PageHeader title={tt('mistakesTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
+      <div className="px-4 pb-4">
 
       {/* Bo'sh holat */}
       {total === 0 && (
@@ -300,5 +301,6 @@ export default function XatolarPage() {
         />
       )}
     </div>
+    </>
   )
 }

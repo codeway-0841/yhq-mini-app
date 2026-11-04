@@ -152,7 +152,7 @@ function SignsGrid({
         size="lg"
         onBack={onBack}
         backLabel={isRu ? 'Назад' : 'Orqaga'}
-        className="-mx-4 mb-4"
+        className="mb-4"
         actions={
           <span className="text-xs text-pmuted bg-psurface px-2.5 py-1 rounded-full flex-shrink-0">
             {category.count} {isRu ? 'знаков' : 'ta'}
@@ -348,7 +348,7 @@ export default function Belgilar() {
             size="lg"
             onBack={() => goBack(navigate)}
             backLabel={isRu ? 'Назад' : 'Orqaga'}
-            className="-mx-4 mb-4"
+            className="mb-4"
             actions={
               <>
                 <button

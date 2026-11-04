@@ -1,4 +1,4 @@
-.rus-home { min-height: calc(100dvh - var(--safe-top-body, 0px)); }
+.rus-home { min-height: 100dvh; margin-top: calc(-1 * var(--safe-top-body, 0px)); padding-top: var(--safe-top, 0px); }
 .rus-home-inner { width: min(100%, 430px); min-height: calc(100dvh - var(--safe-top-body, 0px)); margin: auto; padding: 8px 16px max(12px, var(--safe-bottom, 0px)); display: flex; flex-direction: column; }
 .rus-home-header { flex: none; }
 .rus-home-status { display: flex; justify-content: flex-start; align-items: center; }

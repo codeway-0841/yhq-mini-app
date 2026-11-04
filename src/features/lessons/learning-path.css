@@ -634,8 +634,9 @@ body[data-theme='dark'] .yhq-home-upcoming img { filter: brightness(.5); }
   background-color: #ffffff !important;
   padding-bottom: 0 !important;
   overflow: hidden !important;
-  height: calc(100dvh - var(--safe-top-body, 0px)) !important;
-  max-height: calc(100dvh - var(--safe-top-body, 0px)) !important;
+  margin-top: calc(-1 * var(--safe-top-body, 0px)) !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
   overscroll-behavior-y: none !important;
 }
 body[data-theme='dark'] .route-page[data-route-path="/darslik"],

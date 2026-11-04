@@ -158,7 +158,7 @@ export default function LiteratureCourseHome() {
   return (
     <div className="russian-course-home min-h-screen pb-20">
       {/* Header */}
-      <header className="sticky top-[var(--safe-top,0px)] z-20 flex items-center justify-between px-4 py-3 bg-[var(--surface-primary,#121826)] border-b border-[var(--border-subtle,#1e293b)]">
+      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 flex items-center justify-between bg-[var(--surface-primary,#121826)] border-b border-[var(--border-subtle,#1e293b)]">
         <div className="flex items-center gap-3">
           <button
             onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}

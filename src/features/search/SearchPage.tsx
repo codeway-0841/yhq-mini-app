@@ -110,9 +110,9 @@ export default function SearchPage() {
   const isEmpty = debounced.trim().length >= 2 && !hasAny
 
   return (
-    <div className="px-4 pb-4">
+    <>
       {/* Header: back + input */}
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] -mx-4 px-4 py-2.5 page-header flex items-center gap-2 mb-4">
+      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] px-4 py-2.5 page-header flex items-center gap-2 mb-4">
         <button onClick={() => goBack(navigate)} aria-label={tt('backWord')}
           className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer">
           <ChevronLeft size={24} strokeWidth={2.25} />
@@ -135,6 +135,8 @@ export default function SearchPage() {
           )}
         </div>
       </header>
+
+      <div className="px-4 pb-4">
 
       {/* Bo'sh natija */}
       {isEmpty && (
@@ -215,7 +217,7 @@ export default function SearchPage() {
             ))}
           </div>
         </div>
-      )}
-    </div>
+      )}</div>
+    </>
   )
 }

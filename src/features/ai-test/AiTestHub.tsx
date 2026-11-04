@@ -44,8 +44,9 @@ export default function AiTestHub() {
   }
 
   return (
-    <div className="px-4 pb-4">
-      <PageHeader title={tt('aiTestTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="-mx-4 mb-4" />
+    <>
+      <PageHeader title={tt('aiTestTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
+      <div className="px-4 pb-4">
 
       {tests === null && !error && (
         <div className="grid place-items-center py-16">
@@ -117,5 +118,6 @@ export default function AiTestHub() {
         })}
       </div>
     </div>
+    </>
   )
 }
