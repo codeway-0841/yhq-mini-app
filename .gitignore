@@ -94,3 +94,6 @@ NEXT-SESSION-TASKS.md
 # Python bytecode (scripts/*.py ishga tushirilganda hosil bo'ladi)
 __pycache__/
 *.pyc
+
+*.apk
+*.aab
