@@ -50,6 +50,9 @@ Repository commands and dependencies: package.json. Prefer existing components a
 - Sahifa headerlari har doim to'liq no-shaffof (bg-pcanvas); shaffoflik, backdrop-blur va scrolldagi ajratuvchi chiziq (divider) taqiqlanadi.
 - PageHeader doimo sahifaning eng yuqori darajasida (root levelda, paddingli px-4 konteynerdan tashqarida) joylashishi shart; u -mt-[var(--safe-top-body)] va pt-[var(--safe-top)] orqali safe-areani to'liq qoplaydi va hech qanday ochiq bo'shliq qoldirmaydi.
 - Barcha sahifalar, darsliklar va modallar o'zining qat'iy no-shaffof foniga ega bo'lishi, pastki qatlamlar sirtga sizib chiqmasligi shart.
+- Tugmalar tizimi qat'iy 2 asosiy turdan iborat (eski xira yoki qora/kulrang soyali tugmalar QAT'IYAN TAQIQLANADI):
+  1) Primary CTA: Brilliant 1:1 Royal Blue (#3557ff), 3D pastki qirra (#2f49ec), oq matn, rounded-full pill va diagonal SVG sheen animatsiyasi bilan (<Button variant="primary">).
+  2) Secondary: Brilliant 1:1 Inverted 3D tugmasi — Light rejimda qora (#383838, pastki 3D qirra #000000, oq matn), Dark rejimda oq (#f2f2f2, pastki 3D qirra #b3b3b3, qora matn) va 3D bosilishli (<Button variant="secondary">). Barcha asosiy harakatlar faqat ushbu 2 turdagi tugmalardan foydalanadi.
 
 ## Read only the relevant reference before changing a domain
 Historical incident details are retained verbatim in these references. Verify dated deployment

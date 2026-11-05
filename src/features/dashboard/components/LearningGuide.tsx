@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
 import {
   BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight,
 
@@ -11,11 +11,11 @@ import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
 import { config } from '../../../shared/config'
 import { useLessonsStore } from '../../../shared/store/useLessonsStore'
 import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
-import { Button } from '../../../shared/components/ui/button'
+
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState, selectDailyPlan } from '../next-step'
-import { PathMascot } from '../../lessons'
+import { PathMascot, getBrilliantTheme } from '../../lessons'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
 import './learning-guide.css'
@@ -34,6 +34,8 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   const session = useTestSessionStore((s) => s.session)
   const done = useLessonsStore((s) => userId ? s.byUser[userId] : undefined)
   const tt = useT(lang)
+  const sheenId1 = useId()
+  const sheenId2 = useId()
   const resume = resumeRouteState(session, subject.id)
   const [now, setNow] = useState(Date.now)
   const deadline = resume && session ? session.startedAt + testDurationSeconds(session.mode) * 1000 : null
@@ -79,6 +81,8 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   const completedTopics = topicChoices.filter((t) => t.complete)
   const allComplete = topicChoices.length > 0 && completedTopics.length === topicChoices.length
   const currentTopic = topicChoices.find((t) => !t.complete)
+
+
   const openMistakes = summary?.unresolvedMistakes ?? mistakesCount
   const dueReviews = summary?.dueNow ?? 0
   const remainingSessionItems = resume && session
@@ -91,6 +95,8 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
     hasCurrentTopic: !!currentTopic,
     allTopicsComplete: allComplete,
   })
+  const topicTheme = typeof currentTopic?.id === 'number' ? getBrilliantTheme((((currentTopic.id - 1) % 8) + 1)) : getBrilliantTheme(1)
+  const theme = plan.kind === 'topic' ? topicTheme : getBrilliantTheme(1)
   const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
   const title = expired ? tt('guideExpiredTest')
     : plan.kind === 'resume' ? (session?.title || tt('guideResumeTest'))
@@ -211,9 +217,40 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          <Button block size="lg" variant="primary" sheen className="mt-2.5 whitespace-normal" onClick={start}>
-            {actionLabel}
-          </Button>
+          <button
+            type="button"
+            data-testid="brilliant-start-button"
+            onClick={start}
+            className="home-learning-start select-none"
+            style={{
+              backgroundColor: theme.buttonBg,
+              color: theme.buttonText,
+              boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
+            }}
+          >
+            <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] select-none z-0">
+              <span className="absolute top-0 left-0 w-[150px] h-full animate-brilliant-sheen">
+                <svg viewBox="0 0 150 56" width="150" height="56" fill="none" className="h-full w-[150px]" aria-hidden="true">
+                  <defs>
+                    <linearGradient id={sheenId1} x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.27" stopColor="#F5EFFF" />
+                      <stop offset="0.71" stopColor="white" stopOpacity="0" />
+                    </linearGradient>
+                    <linearGradient id={sheenId2} x1="140.826" y1="-28.1328" x2="140.826" y2="121.867" gradientUnits="userSpaceOnUse">
+                      <stop offset="0.081302" stopColor="#F5EFFF" />
+                      <stop offset="0.570844" stopColor="white" stopOpacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <rect opacity="0.4" x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill={`url(#${sheenId1})`} />
+                  <rect opacity="0.4" x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill={`url(#${sheenId2})`} />
+                </svg>
+              </span>
+            </span>
+            <span className="relative z-10">{actionLabel}</span>
+          </button>
+
+
+
           {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
             <summary className="cursor-pointer text-[13px] font-semibold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>
             <div className="mt-2">

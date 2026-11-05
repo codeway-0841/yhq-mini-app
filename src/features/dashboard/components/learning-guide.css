@@ -1,6 +1,36 @@
 .home-learning-hero { padding: 4px 0 2px; }
 .home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
-.home-learning-step { padding: 14px; border: 2px solid var(--p-line-strong); border-radius: 18px; background: var(--p-card); }
+.home-learning-step { padding: 14px 16px 16px; border: 2px solid var(--p-line-strong); border-radius: 28px; background: var(--p-card); }
+.home-learning-start {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  margin-top: 14px;
+  border-radius: 9999px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  transition: transform 100ms ease-out, filter 100ms ease-out;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.home-learning-start:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+.home-learning-start:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22) !important;
+  transition: transform 60ms ease-out, box-shadow 60ms ease-out;
+}
+.home-learning-start:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
 .home-learning-path-row { display: flex; align-items: center; gap: 12px; width: 100%; position: relative; padding: 2px 0; }
 .home-learning-shortcut { position: relative; min-height: 72px; display: flex; align-items: center; justify-content: flex-start; gap: 10px; padding: 10px 28px 10px 10px; text-align: left; }
 .home-learning-shortcut-icon { display: grid; width: 34px; height: 34px; flex: 0 0 34px; place-items: center; border-radius: 9999px; background: var(--p-surface); color: var(--p-subtle); transition: transform 160ms cubic-bezier(0.2, 0.8, 0.4, 1), background-color 160ms ease; }

@@ -77,7 +77,7 @@ export const UpdateSheet = memo(function UpdateSheet({
           <ArrowRight size={18} />
         </Button>
 
-        <Button variant="ghost" block onClick={handleLater}>
+        <Button variant="secondary" block onClick={handleLater}>
           {isRu ? 'Напомнить позже' : 'Keyinroq eslatish'}
         </Button>
       </div>

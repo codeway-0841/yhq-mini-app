@@ -494,7 +494,7 @@ export default function CamAiPage() {
             <Button block variant="secondary" onClick={() => void start()}>
               {tt('camaiRestart')}
             </Button>
-            <Button block variant="ghost" onClick={backToSetup}>
+            <Button block variant="secondary" onClick={backToSetup}>
               {tt('camaiNewSetup')}
             </Button>
           </div>
@@ -601,7 +601,7 @@ export default function CamAiPage() {
             />
           </DialogBody>
           <DialogFooter>
-            <Button variant="ghost" onClick={() => setRenamingId(null)}>{tt('camaiCancel')}</Button>
+            <Button variant="secondary" onClick={() => setRenamingId(null)}>{tt('camaiCancel')}</Button>
             <Button onClick={saveRename}>{tt('camaiSave')}</Button>
           </DialogFooter>
         </Dialog>

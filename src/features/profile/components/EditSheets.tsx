@@ -114,12 +114,12 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
             <Send size={16} />
             {tt('viaTelegram')}
           </Button>
-          <Button block size="lg" variant="outline" disabled={busy} className="font-semibold" onClick={() => setStep('sms')}>
+          <Button block size="lg" variant="secondary" disabled={busy} className="font-semibold" onClick={() => setStep('sms')}>
             <MessageSquare size={16} />
             {tt('viaSms')}
           </Button>
           {currentPhone && (
-            <Button block variant="ghost" disabled={busy} onClick={() => setStep('confirm')}>
+            <Button block variant="secondary" disabled={busy} onClick={() => setStep('confirm')}>
               {tt('backWord')}
             </Button>
           )}
@@ -146,7 +146,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
             <Button block size="lg" loading={busy} disabled={!phone.isValid} className="font-bold shadow-xs" onClick={() => onSms(phone.value)}>
               {tt('sendSmsCode')}
             </Button>
-            <Button block variant="ghost" disabled={busy} onClick={() => setStep('method')}>
+            <Button block variant="secondary" disabled={busy} onClick={() => setStep('method')}>
               {tt('backWord')}
             </Button>
           </div>

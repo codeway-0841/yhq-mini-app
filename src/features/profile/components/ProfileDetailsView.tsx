@@ -1215,10 +1215,10 @@ export function ProfileDetailsView({
                 setEditMode('address')
               }
             }}
-            className="w-full min-h-[50px] rounded-full bg-white dark:bg-pcard border border-pline/50 text-pfg font-black text-[14.5px] uppercase tracking-wider flex items-center justify-center gap-2.5 shadow-md active:translate-y-[2px] transition-transform cursor-pointer"
+            className="w-full h-14 rounded-full bg-[#383838] text-white shadow-[0_4px_0_0_#000000] dark:bg-[#f2f2f2] dark:text-[#141414] dark:shadow-[0_4px_0_0_#b3b3b3] active:translate-y-[2px] active:shadow-none hover:brightness-[1.08] dark:hover:brightness-[0.95] font-black text-[15px] uppercase tracking-wider flex items-center justify-center gap-2.5 transition-transform cursor-pointer select-none"
           >
             <span>{ru ? 'РЕДАКТИРОВАТЬ' : 'TAHRIRLASH'}</span>
-            <SquarePen size={18} strokeWidth={2.2} className="text-pfg" />
+            <SquarePen size={18} strokeWidth={2.2} className="text-current" />
           </button>
         </div>
       </div>
