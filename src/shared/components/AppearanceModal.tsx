@@ -85,7 +85,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                 className={cn(
                   'flex-1 py-1.5 text-center text-[13px] rounded-full transition-all duration-150',
                   isActive
-                    ? 'bg-pprimary text-ponprimary font-bold shadow-xs'
+                    ? 'bg-[#383838] text-white shadow-[0_2px_0_0_#000000] dark:bg-[#f2f2f2] dark:text-[#141414] dark:shadow-[0_2px_0_0_#b3b3b3] font-bold'
                     : 'text-pmuted font-semibold hover:text-pfg'
                 )}
               >

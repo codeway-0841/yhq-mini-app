@@ -1382,7 +1382,7 @@ body[data-theme='dark'] .rounded-2xl.bg-card {
 .dashboard-page,
 .math-canvas-grid {
   background-color: var(--p-canvas);
-  background-image: radial-gradient(color-mix(in srgb, var(--p-fg) 8%, transparent) 1.2px, transparent 1.2px);
+  background-image: none !important;
   background-size: 24px 24px;
 }
 

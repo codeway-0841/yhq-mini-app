@@ -213,6 +213,7 @@ export default function Profil() {
               </div>
               <Button
                 size="sm"
+                variant="secondary"
                 className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
                 onClick={() => {
                   haptics.impact('light')
@@ -267,7 +268,7 @@ export default function Profil() {
                     {tt('authLinkPhoneConfirm')}
                   </Button>
                   <Button
-                    variant="ghost"
+                    variant="secondary"
                     size="icon-sm"
                     aria-label={tt('backWord')}
                     disabled={otpBusy}
@@ -399,6 +400,7 @@ export default function Profil() {
               </div>
               <Button
                 size="sm"
+                variant="secondary"
                 className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
                 onClick={() => {
                   if (!user) return

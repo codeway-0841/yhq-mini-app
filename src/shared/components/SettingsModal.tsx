@@ -144,7 +144,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
         labelId="settings-title"
         closeLabel={tt('close')}
         footer={
-          <Button block size="lg" onClick={save}>
+          <Button block size="lg" variant="secondary" onClick={save}>
             {tt('saveBtn')}
           </Button>
         }

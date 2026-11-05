@@ -35,7 +35,7 @@ export function PhotoEditSheet({ hasCustom, busy, onClose, onPick, onRemove }: {
               {tt('removePhoto')}
             </Button>
           )}
-          <Button block variant="ghost" onClick={onClose}>
+          <Button block variant="secondary" onClick={onClose}>
             <X size={16} />
             {tt('cancel')}
           </Button>
@@ -102,7 +102,7 @@ export function PhoneEditSheet({ currentPhone, busy, onClose, onTelegram, onSms 
             </p>
           </SpecCard>
           <div className="flex gap-3">
-            <Button block variant="outline" onClick={onClose}>{tt('cancel')}</Button>
+            <Button block variant="secondary" onClick={onClose}>{tt('cancel')}</Button>
             <Button block onClick={() => setStep('method')}>{tt('continueAction')}</Button>
           </div>
         </div>
@@ -181,7 +181,7 @@ export function NameEditSheet({ current, onClose, onSave }: {
           className="relative z-10 w-full bg-pcard rounded-2xl px-4 py-3.5 text-base text-pfg outline-none mb-4 focus:ring-2 focus:ring-pprimary shadow-xs"
         />
         <div className="relative z-10">
-          <Button block onClick={() => { onSave(name); onClose() }}>
+          <Button block variant="secondary" onClick={() => { onSave(name); onClose() }}>
             {tt('saveBtn')}
           </Button>
         </div>

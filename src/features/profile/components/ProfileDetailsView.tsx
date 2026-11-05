@@ -600,7 +600,7 @@ export function ProfileDetailsView({
                   className={cn(
                     'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
                     editGender === 'male'
-                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                       : 'text-pmuted hover:text-pfg'
                   )}
                   aria-label={ru ? 'Мужской' : 'Erkak'}
@@ -619,7 +619,7 @@ export function ProfileDetailsView({
                   className={cn(
                     'h-8 rounded-lg flex items-center justify-center transition-all select-none cursor-pointer',
                     editGender === 'female'
-                      ? 'bg-pprimary text-ponprimary shadow-xs'
+                      ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                       : 'text-pmuted hover:text-pfg'
                   )}
                   aria-label={ru ? 'Женский' : 'Ayol'}
@@ -638,6 +638,7 @@ export function ProfileDetailsView({
             <Button
               block
               size="default"
+              variant="secondary"
               onClick={handleSaveInfo}
               className="font-black text-[15px] uppercase tracking-wider h-12 shadow-md rounded-full cursor-pointer"
             >
@@ -697,6 +698,7 @@ export function ProfileDetailsView({
                 <Button
                   block
                   size="default"
+                  variant="secondary"
                   onClick={() => {
                     setEditOccupation(selectedOccupationTemp)
                     playSound('click')
@@ -809,6 +811,7 @@ export function ProfileDetailsView({
             <Button
               block
               size="default"
+              variant="secondary"
               onClick={handleSaveAddress}
               className="font-black text-[15px] uppercase tracking-wider h-12 shadow-md rounded-full cursor-pointer"
             >
@@ -868,6 +871,7 @@ export function ProfileDetailsView({
                 <Button
                   block
                   size="default"
+                  variant="secondary"
                   onClick={() => {
                     setEditCountry(selectedCountryTemp)
                     playSound('click')
@@ -934,6 +938,7 @@ export function ProfileDetailsView({
                 <Button
                   block
                   size="default"
+                  variant="secondary"
                   onClick={() => {
                     setEditRegion(selectedRegionTemp)
                     const newDistricts = REGION_DISTRICTS_MAP[selectedRegionTemp] || []
@@ -1004,6 +1009,7 @@ export function ProfileDetailsView({
                 <Button
                   block
                   size="default"
+                  variant="secondary"
                   onClick={() => {
                     setEditDistrict(selectedDistrictTemp)
                     playSound('click')
@@ -1054,8 +1060,8 @@ export function ProfileDetailsView({
               className={cn(
                 'py-2 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
                 activeTab === 'info'
-                  ? 'bg-pprimary text-ponprimary shadow-xs'
-                  : 'text-pfg hover:text-pfg/80'
+                  ? 'bg-[#383838] text-white shadow-[0_2px_0_0_#000000] dark:bg-[#f2f2f2] dark:text-[#141414] dark:shadow-[0_2px_0_0_#b3b3b3]'
+                  : 'text-pmuted hover:text-pfg'
               )}
             >
               {ru ? 'Данные' : 'Ma’lumotlar'}
@@ -1072,8 +1078,8 @@ export function ProfileDetailsView({
               className={cn(
                 'py-2 px-4 rounded-full text-sm font-extrabold transition-all duration-200 text-center select-none',
                 activeTab === 'address'
-                  ? 'bg-pprimary text-ponprimary shadow-xs'
-                  : 'text-pfg hover:text-pfg/80'
+                  ? 'bg-[#383838] text-white shadow-[0_2px_0_0_#000000] dark:bg-[#f2f2f2] dark:text-[#141414] dark:shadow-[0_2px_0_0_#b3b3b3]'
+                  : 'text-pmuted hover:text-pfg'
               )}
             >
               {ru ? 'Адрес' : 'Manzil'}
