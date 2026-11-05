@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { ChevronLeft } from 'lucide-react'
+import { Button } from '../../shared/components/ui/button'
 import { SignalIndicator } from './illustrations/SignalIndicator'
 import { KojiMascot } from './KojiMascot'
 import {
@@ -219,18 +220,19 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="flex w-full shrink-0 flex-col gap-2 pt-4">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     onClick={handleNext}
-                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
                   >
                     Continue
-                  </button>
+                  </Button>
 
                   <button
                     type="button"
                     onClick={onDone}
-                    className="py-2.5 text-[15px] font-semibold text-[#111827] transition-opacity hover:opacity-80 active:opacity-60 cursor-pointer"
+                    className="py-2.5 text-[15px] font-semibold text-[#111827] dark:text-[#f0f6fc] transition-opacity hover:opacity-80 active:opacity-60 cursor-pointer"
                   >
                     Log in
                   </button>
@@ -324,18 +326,15 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="shrink-0 pt-3">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     disabled={!answers.persona}
                     onClick={handleNext}
-                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
-                      answers.persona
-                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
-                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
-                    }`}
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -419,18 +418,15 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="shrink-0 pt-3">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     disabled={!answers.interest}
                     onClick={handleNext}
-                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
-                      answers.interest
-                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
-                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
-                    }`}
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -451,13 +447,14 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="w-full shrink-0 pt-4">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     onClick={handleNext}
-                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -506,18 +503,15 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="shrink-0 pt-3">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     disabled={answers.dailyGoal === null}
                     onClick={handleNext}
-                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
-                      answers.dailyGoal !== null
-                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
-                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
-                    }`}
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -631,18 +625,15 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="shrink-0 pt-3">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     disabled={!answers.level}
                     onClick={handleNext}
-                    className={`flex h-[52px] w-full items-center justify-center rounded-full text-[17px] font-semibold transition-all ${
-                      answers.level
-                        ? 'bg-[#18181B] text-white active:scale-[0.98] cursor-pointer'
-                        : 'bg-[#EAEAEA] text-[#9E9E9E] cursor-not-allowed'
-                    }`}
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -663,13 +654,14 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="w-full shrink-0 pt-4">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     onClick={handleNext}
-                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
@@ -694,13 +686,14 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                 </div>
 
                 <div className="w-full shrink-0 pt-4">
-                  <button
-                    type="button"
+                  <Button
+                    variant="inverted"
+                    size="lg"
+                    block
                     onClick={onDone}
-                    className="flex h-[52px] w-full items-center justify-center rounded-full bg-[#18181B] px-6 text-[17px] font-semibold text-white shadow-sm transition-transform active:scale-[0.98] cursor-pointer"
                   >
                     Continue
-                  </button>
+                  </Button>
                 </div>
               </div>
             )}
