@@ -510,40 +510,39 @@ body[data-theme='dark'] .cmap {
 }
 
 .cmap-start {
-  /* 3D yuz 4 px yuqorida turadi, pastdagi qirra ko'rinadi. */
   --cta-face: var(--cmap-button, #456dff);
   --cta-lip: var(--cmap-button-shadow, #375ce3);
   position: relative;
   flex: 1;
   min-width: 0;
-  height: 48px;
-  padding: 0;
+  height: 52px;
+  padding: 0 24px;
   border: 0;
-  border-radius: 56px;
-  background: var(--cta-lip);
+  border-radius: 9999px;
+  background: var(--cta-face);
+  box-shadow: 0 4px 0 0 var(--cta-lip);
   color: var(--cmap-button-text, #fff);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.1px;
   cursor: pointer;
-  transition: color 0.12s ease;
+  user-select: none;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 100ms ease-out, filter 100ms ease-out;
 }
 
-.cmap-start::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--cta-face);
-  transform: translateY(-4px);
-  transition: transform 0.1s ease-out;
+.cmap-start:hover:not(:disabled) {
+  filter: brightness(1.06);
 }
 
-.cmap-start:active::before { transform: none; }
-.cmap-start:active .cmap-start-label,
-.cmap-start:active .cmap-start-sheen { transform: translateY(0); }
+.cmap-start:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--cta-lip);
+  transition: transform 60ms ease-out, box-shadow 60ms ease-out;
+}
 
-.cmap-start-label { position: relative; z-index: 3; display: inline-block; transform: translateY(-4px); }
+.cmap-start-label { position: relative; z-index: 3; display: inline-block; }
 
 .cmap-revisit {
   display: grid;
@@ -568,7 +567,6 @@ body[data-theme='dark'] .cmap {
   overflow: hidden;
   border-radius: inherit;
   pointer-events: none;
-  transform: translateY(-4px);
 }
 
 .cmap-start-sheen-mover {
@@ -608,16 +606,7 @@ body[data-theme='dark'] .cmap {
     #fbbe85 83%,
     #f9cf62 97%
   );
-  --cta-lip: linear-gradient(
-    93deg,
-    #5465b2 1%,
-    #7265aa 16%,
-    #9265a3 31%,
-    #b26797 50%,
-    #b17776 68%,
-    #af855d 83%,
-    #ae9044 97%
-  );
+  --cta-lip: #7265aa;
   color: #221131;
 }
 .cmap[data-themed='true'] .cmap-sheet[data-ahead='true'] .cmap-start { --cta-face: var(--cmap-button); --cta-lip: var(--cmap-button-shadow); color: var(--cmap-button-text); }

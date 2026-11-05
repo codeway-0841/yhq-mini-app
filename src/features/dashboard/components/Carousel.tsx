@@ -101,7 +101,7 @@ const CarouselSlide = memo(function CarouselSlide({ config, lang, progressPct = 
       </div>
 
       {/* CTA — vizual element (butun karta allaqachon bosiladi) */}
-      <span className="inline-flex h-[34px] flex-shrink-0 items-center rounded-xl bg-pprimary px-3 text-[12.5px] font-semibold text-ponprimary shadow-xs">
+      <span className="inline-flex h-[34px] flex-shrink-0 items-center rounded-full bg-pprimary px-3.5 text-[12.5px] font-bold text-ponprimary shadow-[0_3px_0_0_rgba(0,0,0,0.22)]">
         {config.useOnContinue ? tt('continueLearn') : tt('startWord')}
       </span>
     </button>

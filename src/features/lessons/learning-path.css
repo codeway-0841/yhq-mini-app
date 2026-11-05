@@ -317,17 +317,17 @@
 .lesson-preview .lesson-preview-copy h2 { margin: 0; }
 .lesson-preview h2 { margin: 0 0 12px; text-align: center; font-size: 19px; font-weight: 700; line-height: 1.3; color: var(--p-fg); overflow-wrap: anywhere; }
 .lesson-preview .lesson-preview-start {
-  box-shadow: 0 4px 0 color-mix(in srgb, var(--p-primary) 62%, #0f172a), 0 8px 18px color-mix(in srgb, var(--p-primary) 24%, transparent);
-  transition: transform 120ms ease, box-shadow 120ms ease;
+
+  transition: transform 100ms ease-out, filter 100ms ease-out;
 }
 .lesson-preview .lesson-preview-start:not(:disabled):active {
   transform: translateY(2px);
-  box-shadow: 0 2px 0 color-mix(in srgb, var(--p-primary) 62%, #0f172a);
+  box-shadow: none;
 }
 .lesson-preview .lesson-preview-start[data-jump='true'] {
-  background: linear-gradient(100deg, #38bdf8, #3b82f6 55%, #6366f1);
+  background: #456dff;
   color: #ffffff;
-  box-shadow: 0 4px 0 #1d4ed8, 0 8px 18px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 4px 0 0 #375ce3;
 }
 
 @keyframes lesson-reader-in { from { opacity: 0; transform: scale(0.985); } to { opacity: 1; transform: scale(1); } }

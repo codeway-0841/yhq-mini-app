@@ -125,6 +125,7 @@ export default function CourseMapPage({
 
   /** Tanlanmagan bo'lsa — ekran tubidagi eng yaqin mavzu, u ham bo'lmasa joriy mavzu. */
   const active = picked ?? focus ?? { blockId: currentBlock.id, idx: currentIdx }
+  const sheetTheme = getBrilliantTheme((((active.blockId - 1) % 8) + 1))
   const mapTheme = getBrilliantTheme((((initialBlockId ?? active.blockId) - 1) % 8) + 1)
   const nodeColor = mapTheme.accent === '#f6b31f' ? 4 : mapTheme.accent === '#8a4cff' ? 5 : 1
   const selectedMeta = initialBlockId ? getDarslikBlock(initialBlockId) : undefined
@@ -462,7 +463,16 @@ export default function CourseMapPage({
             <div className="cmap-sheet" ref={sheetRef} data-open={scrolled ? 'true' : 'false'} data-ahead={activeLocked || activeAhead ? 'true' : 'false'} data-locked={activeLocked ? 'true' : 'false'} data-done={activeDone ? 'true' : 'false'}>
               <p className="cmap-sheet-title" aria-live="polite">{activeTitle}</p>
               <div className="cmap-sheet-actions">
-                <button type="button" className="cmap-start" onClick={startCta}>
+                <button
+                  type="button"
+                  className="cmap-start"
+                  onClick={startCta}
+                  style={{
+                    '--cta-face': (activeLocked || activeAhead) && !activeCheck ? undefined : sheetTheme.buttonBg,
+                    '--cta-lip': (activeLocked || activeAhead) && !activeCheck ? undefined : sheetTheme.buttonShadow,
+                    color: (activeLocked || activeAhead) && !activeCheck ? undefined : sheetTheme.buttonText,
+                  } as CSSProperties}
+                >
                   <span className="cmap-start-sheen" aria-hidden="true">
                     <span className="cmap-start-sheen-mover">
                       <svg viewBox="0 0 150 56" width="150" height="56" fill="none" aria-hidden="true">

@@ -90,7 +90,7 @@ export default function LessonPreview({ title, selectionKey, check, current, don
         </>
       ) : quizPending && onQuiz ? (
         <div className="flex flex-col gap-2">
-          <Button size="lg" block className="lesson-preview-start" data-jump={jump} onClick={onQuiz}>
+          <Button size="lg" block variant="primary" sheen className="lesson-preview-start" data-jump={jump} onClick={onQuiz}>
             {tt('rusDarslikQuizOpen')}
           </Button>
           <Button size="sm" variant="secondary" block onClick={onStart}>
@@ -98,7 +98,7 @@ export default function LessonPreview({ title, selectionKey, check, current, don
           </Button>
         </div>
       ) : (
-        <Button size="lg" block className="lesson-preview-start" data-jump={jump || premiumRequired} onClick={onStart}>
+        <Button size="lg" block variant={jump ? 'blue' : 'primary'} sheen className="lesson-preview-start" data-jump={jump || premiumRequired} onClick={onStart}>
           {premiumRequired && <Crown aria-hidden="true" />}
           {premiumRequired ? tt('pathPremiumOpen') : check ? tt('pathCheckStart') : done ? tt('pathReview') : current ? tt('pathStart') : tt('pathJumpAhead')}
         </Button>

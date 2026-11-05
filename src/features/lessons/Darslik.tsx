@@ -541,16 +541,31 @@ export default function Darslik() {
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[background-color,transform,box-shadow] duration-100 active:translate-y-[2px] shadow-sm"
+          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[transform,filter] duration-100 hover:brightness-[1.06] active:translate-y-[2px] shadow-sm select-none"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,
             boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
           }}
         >
-          <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full">
-            <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/30" />
-            <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/30" />
+          <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] select-none z-0">
+            <span className="absolute top-0 left-0 w-[150px] h-full animate-brilliant-sheen">
+              <svg viewBox="0 0 150 56" width="150" height="56" fill="none" className="h-full w-[150px]" aria-hidden="true">
+                <defs>
+                  <linearGradient id="darslik-sheen-1" x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.27" stopColor="#F5EFFF" />
+                    <stop offset="0.71" stopColor="white" stopOpacity="0" />
+                  </linearGradient>
+                  <linearGradient id="darslik-sheen-2" x1="140.826" y1="-28.1328" x2="140.826" y2="121.867" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.081302" stopColor="#F5EFFF" />
+                    <stop offset="0.570844" stopColor="white" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+                <rect opacity="0.4" x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill="url(#darslik-sheen-1)" />
+                <rect opacity="0.4" x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill="url(#darslik-sheen-2)" />
+              </svg>
+            </span>
+
           </span>
           <span className="relative z-10">Start</span>
         </button>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type CSSProperties } from 'react'
+import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
 import { ChevronLeft } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../content/darslik-rustili'
@@ -16,6 +16,8 @@ import './russian-course-home.css'
 const VISIBLE_DOTS = 5
 
 export default function RussianCourseHome() {
+  const sheenId1 = useId()
+  const sheenId2 = useId()
   const navigate = useNavigate()
   const location = useLocation()
   const lang = useAppStore((s) => s.settings.language)
@@ -214,7 +216,37 @@ export default function RussianCourseHome() {
               const active = !done && idx === firstIncomplete
               return <div className="rus-home-row" key={idx} ref={active ? activeRow : undefined}><BrilliantLessonRowIcon state={done ? 'done' : active ? 'current' : 'upcoming'} accentColor={theme.accent} /><span className={active ? 'rus-home-row-title active' : 'rus-home-row-title'}>{title}</span><span className={`rus-home-marker ${done ? 'done' : ''}`} style={done ? { backgroundColor: theme.checkBg } : undefined}>{done ? '✓' : ''}</span></div>
             })}</div>
-            <button type="button" disabled={mastery.loading} className="rus-home-start" style={{ background: theme.buttonBg, color: theme.buttonText, boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}` }} onClick={(event) => start(event.currentTarget)}>{ru ? 'Начать' : 'Boshlash'}</button>
+            <button
+              type="button"
+              disabled={mastery.loading}
+              className="rus-home-start"
+              style={{
+                background: theme.buttonBg,
+                color: theme.buttonText,
+                boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
+              }}
+              onClick={(event) => start(event.currentTarget)}
+            >
+              <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] select-none z-0">
+                <span className="absolute top-0 left-0 w-[150px] h-full animate-brilliant-sheen">
+                  <svg viewBox="0 0 150 56" width="150" height="56" fill="none" className="h-full w-[150px]" aria-hidden="true">
+                    <defs>
+                      <linearGradient id={sheenId1} x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.27" stopColor="#F5EFFF" />
+                        <stop offset="0.71" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
+                      <linearGradient id={sheenId2} x1="140.826" y1="-28.1328" x2="140.826" y2="121.867" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.081302" stopColor="#F5EFFF" />
+                        <stop offset="0.570844" stopColor="white" stopOpacity="0" />
+                      </linearGradient>
+                    </defs>
+                    <rect opacity="0.4" x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill={`url(#${sheenId1})`} />
+                    <rect opacity="0.4" x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill={`url(#${sheenId2})`} />
+                  </svg>
+                </span>
+              </span>
+              <span className="relative z-10">{ru ? 'Начать' : 'Boshlash'}</span>
+            </button>
           </section>
         </div>
       </main>}

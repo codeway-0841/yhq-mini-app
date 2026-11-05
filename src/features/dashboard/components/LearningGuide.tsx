@@ -211,7 +211,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          <Button block size="lg" className="mt-2.5 whitespace-normal" onClick={start}>
+          <Button block size="lg" variant="primary" sheen className="mt-2.5 whitespace-normal" onClick={start}>
             {actionLabel}
           </Button>
           {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">

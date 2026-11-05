@@ -108,7 +108,8 @@ body[data-theme='dark'] .rus-home-dots-track span {
   border-radius: 999px;
   font-size: 16.5px;
   font-weight: 700;
-  transition: transform 100ms ease-out, box-shadow 100ms ease-out, filter 100ms ease-out;
+  /* Rang o'zgarganda (swipe/mavzu) fon va pastki qirra bir vaqtda (0ms kechikishsiz) almashadi */
+  transition: transform 100ms ease-out, filter 100ms ease-out;
   cursor: pointer;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -119,6 +120,7 @@ body[data-theme='dark'] .rus-home-dots-track span {
 .rus-home-start:active:not(:disabled) {
   transform: translateY(2px);
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22) !important;
+  transition: transform 60ms ease-out, box-shadow 60ms ease-out;
 }
 .rus-home-start:disabled {
   opacity: .55;

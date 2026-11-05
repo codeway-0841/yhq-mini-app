@@ -16,7 +16,7 @@ const buttonVariants = cva(
   [
     'inline-flex items-center justify-center gap-2 whitespace-nowrap',
     'font-bold select-none relative overflow-hidden',
-    'transition-[transform,background-color,border-color,color,filter,box-shadow] duration-100 ease-out',
+    'transition-[transform,filter] duration-100 ease-out',
     'active:translate-y-[2px]',
     'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
     'disabled:pointer-events-none disabled:opacity-40 disabled:translate-y-0 disabled:shadow-none',
@@ -27,6 +27,7 @@ const buttonVariants = cva(
       variant: {
         default:     'bg-pprimary text-ponprimary shadow-[0_4px_0_0_rgba(0,0,0,0.22)] active:shadow-none hover:brightness-[1.06]',
         primary:     'bg-pprimary text-ponprimary shadow-[0_4px_0_0_rgba(0,0,0,0.22)] active:shadow-none hover:brightness-[1.06]',
+        theme:       'bg-[var(--btn-bg)] text-[var(--btn-text,#ffffff)] shadow-[0_4px_0_0_var(--btn-shadow)] active:shadow-none hover:brightness-[1.06]',
         green:       'bg-[#29cc57] text-white shadow-[0_4px_0_0_#15b441] active:shadow-none hover:brightness-[1.06] [text-shadow:0_0_3px_rgba(0,0,0,0.25)]',
         blue:        'bg-[#456dff] text-white shadow-[0_4px_0_0_#375ce3] active:shadow-none hover:brightness-[1.06] [text-shadow:0_0_3px_rgba(0,0,0,0.25)]',
         purple:      'bg-[#9d62ff] text-white shadow-[0_4px_0_0_#874de5] active:shadow-none hover:brightness-[1.06] [text-shadow:0_0_3px_rgba(0,0,0,0.25)]',
@@ -71,7 +72,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const showSheen = !asChild && (sheen ?? (
       variant === 'default' ||
       variant === 'primary' ||
+      variant === 'theme' ||
       variant === 'green' ||
+      variant === 'blue' ||
+      variant === 'purple' ||
+      variant === 'orange' ||
       variant === 'gold'
     ))
 
