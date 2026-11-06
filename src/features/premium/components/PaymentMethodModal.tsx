@@ -9,6 +9,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 import { SpecCard, SpecRow, SpecList, SpecHero, SpecAmount } from '../../../shared/components/ui/spec'
 
 interface PaymentMethodModalProps {
@@ -148,12 +149,15 @@ export default function PaymentMethodModal({
               </SpecList>
             </SpecCard>
 
-            <button
+            <Button
+              variant="secondary"
+              block
+              size="lg"
+              className="mt-4"
               onClick={onClose}
-              className="mt-4 w-full rounded-2xl bg-pprimary py-3 text-sm font-bold text-ponprimary shadow-xs transition-[transform,filter] duration-150 hover:brightness-[1.06] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-psurface cursor-pointer"
             >
               {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
-            </button>
+            </Button>
           </div>
         ) : (
           <div className="relative z-10 pb-2">

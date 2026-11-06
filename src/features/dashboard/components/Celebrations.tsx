@@ -63,7 +63,7 @@ const Scene = memo(function Scene({
           {value}
         </p>
         <p className="mb-6 mt-2 text-[14px] text-pmuted">{message}</p>
-        <Button block onClick={onClose}>{cta}</Button>
+        <Button block variant="secondary" onClick={onClose}>{cta}</Button>
       </div>
     </DialogOverlay>
   )

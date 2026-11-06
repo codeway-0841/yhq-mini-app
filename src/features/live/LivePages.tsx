@@ -667,7 +667,7 @@ function LiveRoomPage() {
         <div className="mt-3 flex flex-col gap-3">
           <div className="flex items-center justify-between gap-3">
             <div><h2 className="text-sm font-semibold text-pfg">{tt('liveChat')}</h2><p className="mt-0.5 text-xs text-pmuted">{tt('liveChatHint')}</p></div>
-            <Button variant="ghost" size="sm" onClick={handleLeave}>{tt('liveLeave')}</Button>
+            <Button variant="secondary" size="sm" onClick={handleLeave}>{tt('liveLeave')}</Button>
           </div>
           <div className="flex max-h-[42dvh] min-h-36 flex-col gap-2 overflow-y-auto rounded-2xl bg-pcard p-3 shadow-xs" aria-live="polite" aria-label={tt('liveChat')}>
             {messages.length === 0 && <p className="text-sm text-pmuted">{tt('liveChatEmpty')}</p>}
@@ -834,12 +834,12 @@ function HandsPanel({ roomId, hands, onResolved }: {
                 <Button variant="secondary" loading={busyId === h.userId} onClick={() => void decide(h.userId, true)}>
                   {tt('liveApprove')}
                 </Button>
-                <Button variant="ghost" disabled={busyId === h.userId} onClick={() => void decide(h.userId, false)}>
+                <Button variant="secondary" disabled={busyId === h.userId} onClick={() => void decide(h.userId, false)}>
                   {tt('liveReject')}
                 </Button>
               </>
             ) : (
-              <Button variant="ghost" disabled={busyId === h.userId} onClick={() => void revoke(h.userId)}>
+              <Button variant="secondary" disabled={busyId === h.userId} onClick={() => void revoke(h.userId)}>
                 {tt('liveRevoke')}
               </Button>
             )}

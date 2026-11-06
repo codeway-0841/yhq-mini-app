@@ -620,7 +620,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
               )}
             </p>
           </div>
-          <Button variant="ghost" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
+          <Button variant="secondary" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
         </div>
       </header>
 

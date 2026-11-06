@@ -261,6 +261,7 @@ export default function Profil() {
                 <div className="flex items-center gap-3 mt-2">
                   <Button
                     size="sm"
+                    variant="secondary"
                     loading={otpBusy}
                     disabled={otpCode.length !== 6}
                     onClick={() => onSubmitPhoneOtp(otpCode)}

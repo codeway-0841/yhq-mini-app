@@ -108,9 +108,9 @@ function SpeedGame({ onExit }: { onExit: () => void }) {
           {tt('signsGameCorrect')}: <b className="text-pfg">{score}</b> / {rounds.length}
           {best !== null && ` · ${tt('signsGameBest')}: ${Math.max(best, score)}`}
         </p>
-        <button onClick={onExit} className="bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 mt-6 px-6 min-h-11 py-2.5 rounded-2xl text-[13.5px] font-black">
+        <Button variant="secondary" onClick={onExit} className="mt-6 px-6 text-[13.5px] font-black">
           {tt('signsGameBack')}
-        </button>
+        </Button>
       </div>
     )
   }

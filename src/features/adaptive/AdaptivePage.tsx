@@ -178,6 +178,7 @@ export default function AdaptivePage() {
 
           <div className="flex flex-col gap-2.5 w-full mt-4">
             <Button
+              variant="secondary"
               block
               size="lg"
               onClick={() => setShowSubscriptionModal(true)}

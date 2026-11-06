@@ -61,7 +61,7 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
       </Button>
       {next && <>
         <p className="mt-3 text-xs text-pmuted">{tt('pathAutoNextHint')}</p>
-        <Button variant="ghost" block className="mt-1" onClick={onStay}>{tt('pathStay')}</Button>
+        <Button variant="secondary" block className="mt-2" onClick={onStay}>{tt('pathStay')}</Button>
       </>}
     </DialogBody>
   </Dialog>

@@ -24,6 +24,7 @@ import { track } from '../../../shared/lib/analytics'
 import { openTelegramLink } from '../../../platform/telegram'
 import { config } from '../../../shared/config'
 import Confetti from '../../../shared/components/Confetti'
+import { Button } from '../../../shared/components/ui/button'
 import { cn } from '../../../shared/lib/cn'
 
 interface SubscriptionModalProps {
@@ -334,17 +335,20 @@ export default function SubscriptionModal({
 
             {/* Pastki Harakat Tugmasi: Davom etish (Theme-adaptive CTA) */}
             <div className="p-4 sm:p-5 border-t border-pline bg-psurface shrink-0">
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                block
+                size="lg"
                 onClick={() => {
                   playSound('toggle')
                   haptics.impact('medium')
                   setStep('payment_method')
                 }}
-                className="w-full py-4 px-6 rounded-full bg-pprimary text-ponprimary hover:brightness-[1.06] active:translate-y-[2px] font-bold text-[15.5px] tracking-wide shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] flex items-center justify-center gap-2 transition-[transform,box-shadow,filter] duration-100 cursor-pointer"
+                className="h-14 font-black text-[16px] tracking-wide"
               >
-                <span>{tt('continueAction')}</span>
-              </button>
+                {tt('continueAction')}
+              </Button>
             </div>
           </div>
         )}
@@ -367,14 +371,16 @@ export default function SubscriptionModal({
                 {tt('selectPaymentTitle')}
               </h2>
 
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                size="sm"
                 onClick={handleGetHelp}
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-psurface px-3 py-1.5 text-[11px] font-semibold text-pmuted hover:text-pfg transition-colors cursor-pointer"
+                className="h-8 rounded-full text-[11px] font-semibold px-3"
               >
                 <Headphones size={12} />
                 <span>{tt('getHelp')}</span>
-              </button>
+              </Button>
             </div>
 
             {/* Main Content */}
@@ -395,13 +401,16 @@ export default function SubscriptionModal({
                         : "Premium obuna faollashdi. Unumli bilim olishingizni tilaymiz!"}
                     </p>
                   </div>
-                  <button
+                  <Button
                     type="button"
+                    variant="secondary"
+                    block
+                    size="lg"
                     onClick={onClose}
-                    className="w-full py-3.5 rounded-xl bg-pprimary text-ponprimary font-bold text-sm hover:brightness-[1.06] active:scale-98 transition-all cursor-pointer shadow-md"
+                    className="h-12 font-bold"
                   >
                     {lang === 'ru' ? 'Отлично' : 'Ajoyib'}
-                  </button>
+                  </Button>
                 </div>
               ) : (
                 <>
@@ -550,14 +559,16 @@ export default function SubscriptionModal({
                             className="flex-1 min-w-0 bg-transparent outline-none py-3 text-base font-semibold text-pfg placeholder:text-psubtle tracking-wider uppercase"
                           />
                         </div>
-                        <button
+                        <Button
                           type="button"
+                          variant="secondary"
                           onClick={handleApplyPromo}
                           disabled={!promoInput.trim() || promoBusy || isWaitingPayment}
-                          className="px-4 py-3 rounded-2xl bg-psurface text-[13px] font-bold text-pfg hover:bg-pcard disabled:opacity-40 active:scale-95 transition-all cursor-pointer shrink-0 shadow-xs"
+                          loading={promoBusy}
+                          className="h-12 px-5 rounded-2xl text-[13px] font-bold shrink-0"
                         >
-                          {promoBusy ? <Loader2 size={15} className="animate-spin" /> : tt('promoApply')}
-                        </button>
+                          {tt('promoApply')}
+                        </Button>
                       </div>
                     )}
                     {promoError && (
@@ -596,29 +607,23 @@ export default function SubscriptionModal({
             {/* Pastki Harakat Tugmasi: To'lash (Theme-adaptive CTA) */}
             {!isSuccess && (
               <div className="p-4 sm:p-5 border-t border-pline bg-pcard shrink-0">
-                <button
+                <Button
                   type="button"
+                  variant="secondary"
+                  block
+                  size="lg"
                   disabled={loadingProvider !== null || isWaitingPayment}
+                  loading={loadingProvider !== null}
                   onClick={handleProceedToPayment}
-                  className="relative w-full h-14 overflow-hidden rounded-full bg-pprimary text-ponprimary hover:brightness-[1.06] disabled:opacity-50 active:translate-y-[2px] font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] flex items-center justify-center gap-2 transition-[transform,box-shadow,filter] duration-100 cursor-pointer"
+                  className="h-14 font-black text-[16px] tracking-wide"
                 >
-                  <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
-                    <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
-                    <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
+                  <span>
+                    {selectedProvider === 'stars'
+                      ? `${tt('payWithStarsAction')} (${selectedPlan.stars} Stars)`
+                      : `${tt('payAmount')} ${formatUzs(finalPriceUzs, lang)}`}
                   </span>
-                  {loadingProvider !== null ? (
-                    <Loader2 size={19} className="animate-spin text-ponprimary" />
-                  ) : (
-                    <>
-                      <span>
-                        {selectedProvider === 'stars'
-                          ? `${tt('payWithStarsAction')} (${selectedPlan.stars} Stars)`
-                          : `${tt('payAmount')} ${formatUzs(finalPriceUzs, lang)}`}
-                      </span>
-                      <ExternalLink size={16} />
-                    </>
-                  )}
-                </button>
+                  <ExternalLink size={16} />
+                </Button>
               </div>
             )}
           </div>

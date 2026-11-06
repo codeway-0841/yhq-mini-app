@@ -577,7 +577,7 @@ export default function CamAiPage() {
               {tt('camaiNoFaces')} — {tt('camaiNoFacesHint')}
             </p>
           )}
-          <Button block variant="ghost" className="mt-2" onClick={finish}>
+          <Button block variant="secondary" className="mt-2" onClick={finish}>
             <Trophy />
             {tt('camaiFinish')}
           </Button>

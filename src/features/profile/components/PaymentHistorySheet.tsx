@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Loader2, Receipt, CreditCard } from 'lucide-react'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 import { SpecCard, SpecRow } from '../../../shared/components/ui/spec'
 import { api, type PaymentHistoryRow } from '../../../shared/api'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -53,12 +54,13 @@ export function PaymentHistorySheet({ onClose }: { onClose: () => void }) {
           /* Xato — qayta urinish */
           <div className="flex flex-col items-center py-14 text-center relative z-10">
             <p className="text-[13px] text-pmuted">{tt('payHistoryError')}</p>
-            <button
+            <Button
+              variant="secondary"
               onClick={load}
-              className="mt-4 rounded-xl bg-pcard px-4 py-2.5 text-[12.5px] font-semibold text-pfg shadow-2xs transition-transform active:scale-[0.97]"
+              className="mt-4"
             >
               {tt('payHistoryRetry')}
-            </button>
+            </Button>
           </div>
         ) : rows === null ? (
           /* Yuklanmoqda */

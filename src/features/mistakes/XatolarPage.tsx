@@ -205,6 +205,7 @@ export default function XatolarPage() {
               </div>
               <Button
                 size="sm"
+                variant="secondary"
                 className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
                 onClick={() => {
                   haptics.impact('light')

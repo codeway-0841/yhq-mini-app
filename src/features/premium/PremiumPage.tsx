@@ -151,7 +151,7 @@ export default function PremiumPage() {
       {/* 3 kunlik BEPUL trial — 1 marta */}
       {!isPremium && !trialDone && (
         <div className="mx-5 mt-5">
-          <Button block size="lg" loading={trialBusy} onClick={startTrial}>
+          <Button variant="secondary" block size="lg" loading={trialBusy} onClick={startTrial}>
             <Gift size={18} strokeWidth={1.75} />
             {lang === 'ru' ? '3 дня Premium — бесплатно' : '3 kun Premium — bepul'}
           </Button>

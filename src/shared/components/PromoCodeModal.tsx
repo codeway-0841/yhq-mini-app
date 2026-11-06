@@ -85,7 +85,7 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
                 : `Sizga ${successData.value} kunlik bepul Premium obuna faollashtirildi!`}
             </p>
 
-            <Button block onClick={onClose}>
+            <Button block variant="secondary" onClick={onClose}>
               {tt('close')}
             </Button>
           </div>
@@ -116,7 +116,9 @@ export default function PromoCodeModal({ language, onClose }: PromoCodeModalProp
 
               <Button
                 type="submit"
+                variant="secondary"
                 block
+                size="lg"
                 loading={loading}
                 disabled={code.trim().length < 3}
               >

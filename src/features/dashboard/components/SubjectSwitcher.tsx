@@ -75,7 +75,7 @@ export const SubjectEmpty = memo(function SubjectEmpty({ onSwitch }: { onSwitch:
           ? 'Этот предмет скоро будет доступен. Следите за обновлениями!'
           : "Bu fan tez kunda qo'shiladi. Yangilanishlarni kuzatib boring!"}
       </p>
-      <Button onClick={onSwitch} size="sm" className="mt-5">
+      <Button variant="secondary" onClick={onSwitch} size="sm" className="mt-5">
         {lang === 'ru' ? 'Выбрать другой предмет' : 'Boshqa fan tanlash'}
       </Button>
     </div>
