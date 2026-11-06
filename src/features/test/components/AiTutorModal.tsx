@@ -10,6 +10,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useT } from '../../../shared/i18n'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 
 export interface AiTutorSessionRef {
   sessionId: string
@@ -189,22 +190,27 @@ export default function AiTutorModal({
             <p className="text-[13px] text-pmuted mb-5 leading-snug max-w-xs">
               {tt('premiumNeedDesc')}
             </p>
-            <button
+            <Button
+              type="button"
+              variant="secondary"
+              block
               onClick={() => {
                 handleClose()
                 openTelegramLink(`https://t.me/${config.botUsername}?start=premium`)
               }}
-              className="bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all w-full min-h-11 py-3 rounded-2xl text-[13.5px] flex items-center justify-center gap-2 mb-2.5 shadow-xs"
+              className="mb-2.5"
             >
               <PremiumIcon size={16} />
-              {tt('buyPremium')}
-            </button>
-            <button
+              <span>{tt('buyPremium')}</span>
+            </Button>
+            <Button
+              type="button"
+              variant="secondary"
+              block
               onClick={handleClose}
-              className="w-full min-h-11 py-3 rounded-2xl bg-pcard text-[13px] font-semibold text-pmuted hover:text-pfg active:scale-[0.98] transition-all shadow-2xs"
             >
               {tt('cancel')}
-            </button>
+            </Button>
           </div>
       </ModalShell>
     )

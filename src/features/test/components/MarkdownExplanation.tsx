@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect, useCallback } from 'react'
 import type { RoadSign } from '../../../content/signs'
 import { TrafficCone, ExternalLink } from 'lucide-react'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -86,12 +87,14 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
           <FormattedSignDescription text={sign.description} />
         </div>
 
-        <button
+        <Button
+          type="button"
+          variant="secondary"
+          block
           onClick={onClose}
-          className="w-full py-3.5 rounded-2xl bg-pprimary text-ponprimary font-semibold text-sm hover:brightness-[1.06] active:scale-[0.98] transition-all shadow-xs"
         >
           Tushunarli
-        </button>
+        </Button>
         </div>
     </ModalShell>
   )

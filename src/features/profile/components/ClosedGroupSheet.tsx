@@ -94,8 +94,9 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
               <Button
                 block
                 size="lg"
+                variant="secondary"
                 loading={loading}
-                className="mt-4 font-bold rounded-xl shadow-xs"
+                className="mt-4 font-bold"
                 onClick={() => handleJoinGroup(currentSubject.id, currentSubject.closedGroupUrl)}
               >
                 <span>{tt('closedGroupEnterBtn')}</span>
@@ -164,7 +165,7 @@ export function ClosedGroupSheet({ onClose, onGetPlan, isSubscribed = false }: C
             </div>
 
             {/* CTA */}
-            <Button block size="lg" className="mt-5" onClick={() => onGetPlan()}>
+            <Button variant="secondary" block size="lg" className="mt-5" onClick={() => onGetPlan()}>
               {tt('closedGroupCta')}
             </Button>
           </div>

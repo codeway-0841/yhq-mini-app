@@ -9,6 +9,7 @@ import { cn } from '../lib/cn'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
 import { CoinIcon } from './CoinIcon'
 import ModalShell from './ModalShell'
+import { Button } from './ui/button'
 
 export default function AchievementDetailSheet() {
   const badge = useAchievementCelebrationStore((s) => s.inspectBadge)
@@ -140,17 +141,18 @@ export default function AchievementDetailSheet() {
           </div>
 
           {/* ── Tantanani ko'rish (Celebration preview) ── */}
-          <button
+          <Button
             type="button"
+            variant="secondary"
             onClick={() => {
               closeDetailSheet()
               useAchievementCelebrationStore.getState().triggerCelebration(badge)
             }}
-            className="mt-4 inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 text-[14px] font-bold text-gray-800 dark:text-white bg-white dark:bg-white/10 border border-gray-200/80 dark:border-white/10 shadow-[0_2px_8px_rgba(0,0,0,0.04)] dark:shadow-none hover:bg-gray-50 dark:hover:bg-white/15 active:scale-95 transition-all cursor-pointer"
+            className="mt-4"
           >
             <Sparkles size={16} className="text-amber-500" />
             <span>{tt('achViewCelebration')}</span>
-          </button>
+          </Button>
         </div>
     </ModalShell>
   )

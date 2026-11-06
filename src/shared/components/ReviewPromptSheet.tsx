@@ -74,7 +74,7 @@ export default function ReviewPromptSheet() {
       </p>
 
       <div className="relative z-10">
-        <Button block size="lg" onClick={onWrite}>
+        <Button variant="secondary" block size="lg" onClick={onWrite}>
           {tt('reviewsWriteTitle')}
         </Button>
       </div>

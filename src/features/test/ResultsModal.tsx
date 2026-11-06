@@ -12,6 +12,7 @@ import { SUBJECT_BASES } from '../../../shared/subjects'
 import Confetti from '../../shared/components/Confetti'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import ModalShell from '../../shared/components/ModalShell'
+import { Button } from '../../shared/components/ui/button'
 import { SpecCard, SpecRow, SpecList } from '../../shared/components/ui/spec'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
@@ -436,70 +437,82 @@ export default function ResultsModal({
 
         {/* Sertifikat tugmasi (imtihon topshirilganda yoki yuqori natijada) */}
         {passed && !disqualifiedByCheat && (
-          <button
+          <Button
             type="button"
+            variant="secondary"
+            block
+            size="lg"
             onClick={() => setShowCertificate(true)}
-            className="bg-pgold text-pongold font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-12 w-full items-center justify-center gap-2 text-sm shadow-xs cursor-pointer relative z-10"
+            className="mb-2.5 relative z-10"
           >
             <Award size={17} strokeWidth={1.75} />
-            {tt('viewCertificate')}
-          </button>
+            <span>{tt('viewCertificate')}</span>
+          </Button>
         )}
 
         {/* Yutuq tantanasini ko'rish */}
         {!disqualifiedByCheat && (
-          <button
+          <Button
             type="button"
+            variant="secondary"
+            block
             onClick={() => {
               const badge = (percent === 100 ? ACHIEVEMENTS.find((b) => b.id === 'perfectRun') : null) || ACHIEVEMENTS[0]
               useAchievementCelebrationStore.getState().triggerCelebration(badge)
             }}
-            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg cursor-pointer relative z-10"
+            className="mb-2.5 relative z-10"
           >
             <Sparkles size={16} className="text-pgold" />
             <span>{tt('achViewCelebration')}</span>
-          </button>
+          </Button>
         )}
 
         {onOpenReview && (
-          <button
+          <Button
             type="button"
+            variant="secondary"
+            block
+            size="lg"
             onClick={onOpenReview}
-            className={`font-bold hover:brightness-[1.06] active:scale-[0.98] transition-all duration-150 rounded-2xl mb-2.5 flex min-h-12 w-full items-center justify-center gap-2 text-sm shadow-xs relative z-10 ${
-              wrong > 0 ? 'bg-pdanger text-white shadow-xs' : 'bg-pprimary text-ponprimary'
-            }`}
+            className="mb-2.5 relative z-10"
           >
             <BookOpen size={16} strokeWidth={1.75} />
-            {wrong > 0 ? `${tt('examReviewBtn')} (${wrong})` : tt('examReviewBtn')}
-          </button>
+            <span>{wrong > 0 ? `${tt('examReviewBtn')} (${wrong})` : tt('examReviewBtn')}</span>
+          </Button>
         )}
 
         <div className="flex gap-2.5 mb-2.5 relative z-10">
-          <button onClick={onRetry}
-            aria-label={tt('retry')}
-            className="bg-pcard text-pfg border border-plineStrong active:translate-y-[2px] transition-[transform,box-shadow] duration-100 rounded-full flex h-12 flex-1 items-center justify-center gap-2 text-xs font-bold shadow-[inset_0_-3px_0_rgba(0,0,0,0.08)] dark:shadow-[inset_0_-3px_0_rgba(255,255,255,0.08)] active:shadow-[inset_0_-1px_0_rgba(0,0,0,0.08)] hover:text-pfg">
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={onRetry}
+            className="flex-1 h-12"
+          >
             <RotateCcw size={15} strokeWidth={2} aria-hidden="true" />
-            {tt('retry')}
-          </button>
-          <button onClick={onFinish}
-            className="relative overflow-hidden bg-pprimary text-ponprimary font-bold hover:brightness-[1.06] active:translate-y-[2px] transition-[transform,box-shadow,filter] duration-100 rounded-full h-12 flex-[2] text-sm shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)]">
-            <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
-              <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
-              <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
-            </span>
-            <span className="relative z-10">{tt('finish')}</span>
-          </button>
+            <span>{tt('retry')}</span>
+          </Button>
+          <Button
+            type="button"
+            onClick={onFinish}
+            className="flex-[2] h-12"
+          >
+            <span>{tt('finish')}</span>
+          </Button>
         </div>
 
         {/* Natijani RASM qilib ulashish (#48) — Web Share → bot chat → matn fallback */}
         <div className="flex flex-col gap-2 relative z-10">
-          <button
-            onClick={handleShareImage}
+          <Button
+            type="button"
+            variant="secondary"
+            block
             disabled={sharingImage}
-            className="bg-pcard text-pfg active:translate-y-[1.5px] transition-[transform,background-color] duration-100 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg disabled:opacity-50 border border-plineStrong">
+            loading={sharingImage}
+            onClick={handleShareImage}
+          >
             <ImageDown size={15} strokeWidth={1.75} />
-            {sharingImage ? '...' : tt('shareResultImage')}
-          </button>
+            <span>{tt('shareResultImage')}</span>
+          </Button>
           {imageSentToBot && (
             <p className="text-center text-[11.5px] font-semibold text-pprimary animate-fadeIn">
               {tt('shareResultImageSent')}
@@ -507,7 +520,10 @@ export default function ResultsModal({
           )}
 
           {/* Matn + referal link bilan ulashish */}
-          <button
+          <Button
+            type="button"
+            variant="secondary"
+            block
             onClick={() => {
               const uid  = useAppStore.getState().user?.id
               const lang = useAppStore.getState().settings.language
@@ -515,10 +531,10 @@ export default function ResultsModal({
               const text = buildResultShareText({ correct, total, percent, passed, streak, lang })
               shareUrl(`https://t.me/${config.botUsername}?start=ref_${uid ?? '0'}`, text)
             }}
-            className="bg-pcard text-pfg active:translate-y-[1.5px] transition-[transform,background-color] duration-100 rounded-full flex min-h-11 w-full items-center justify-center gap-2 text-xs font-semibold shadow-2xs hover:text-pfg border border-plineStrong">
+          >
             <Share2 size={15} strokeWidth={1.75} />
-            {tt('shareResult')}
-          </button>
+            <span>{tt('shareResult')}</span>
+          </Button>
         </div>
 
         {showCertificate && (

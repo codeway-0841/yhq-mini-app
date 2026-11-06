@@ -18,9 +18,9 @@ import { DAILY_TASKS } from '../../../shared/daily-tasks'
 import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
+import { Button } from '../../shared/components/ui/button'
 import { Skeleton } from '../../shared/components/ui/skeleton'
 import { coinTasksCache, fetchCoinTasks } from '../../shared/lib/dashboard-cache'
-import { cn } from '../../shared/lib/cn'
 
 export default function DailyTasksCard() {
   const lang     = useAppStore((s) => s.settings.language)
@@ -129,20 +129,17 @@ export default function DailyTasksCard() {
                     <Check size={13} strokeWidth={1.75} /> {tt('taskClaimed')}
                   </span>
                 ) : task.completed ? (
-                  <button
+                  <Button
+                    variant="secondary"
+                    size="sm"
                     onClick={() => claim(task.id)}
                     disabled={busy !== null}
-                    className={cn(
-                      'flex min-h-11 w-full items-center justify-center gap-1 rounded-xl text-[12px] font-semibold text-pgold shadow-2xs',
-                      'bg-[rgb(var(--p-gold-rgb)/0.18)]',
-                      'transition-transform duration-150 ease-out active:scale-[0.98]',
-                      'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary',
-                      'disabled:pointer-events-none disabled:opacity-40',
-                    )}>
-                    {busy === task.id
-                      ? <span aria-hidden="true" className="size-3 rounded-full border-2 border-current border-t-transparent motion-safe:animate-spin" />
-                      : <><CoinIcon size={12} /> {tt('taskClaim')} +{task.reward}</>}
-                  </button>
+                    loading={busy === task.id}
+                    className="min-h-10 w-full text-[12px] font-bold"
+                  >
+                    <CoinIcon size={12} />
+                    <span>{tt('taskClaim')} +{task.reward}</span>
+                  </Button>
                 ) : (
                   <span className="flex items-center justify-center gap-1 py-1.5 text-[12px] font-medium tabular-nums text-pmuted">
                     <CoinIcon size={12} /> +{task.reward}

@@ -8,6 +8,7 @@ import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 import MathText from '../../../shared/components/MathText'
 import { cn } from '../../../shared/lib/cn'
 import { formatImageSrc } from '../hooks/useImagePreload'
@@ -225,13 +226,13 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
 
         {/* Footer */}
         <div className="p-3.5 px-4 bg-psurface flex justify-end relative z-10">
-          <button
+          <Button
             type="button"
+            variant="secondary"
             onClick={onClose}
-            className="bg-pcard text-pfg active:scale-[0.98] transition-all duration-150 px-6 py-2.5 rounded-2xl text-xs font-bold shadow-2xs hover:text-pfg"
           >
             {tt('closeResults')}
-          </button>
+          </Button>
         </div>
 
       {/* Fullscreen image zoom */}

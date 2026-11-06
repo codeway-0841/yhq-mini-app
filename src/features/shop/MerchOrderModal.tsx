@@ -3,7 +3,6 @@
  * buyurtmani yuborish. Telefon user.phone'dan prefill (agar bo'lsa).
  */
 import { useState } from 'react'
-import { Loader2 } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { api, ApiError } from '../../shared/api'
@@ -13,6 +12,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { useT } from '../../shared/i18n'
 import { getMerchIcon } from './merch-icons'
 import ModalShell from '../../shared/components/ModalShell'
+import { Button } from '../../shared/components/ui/button'
 import { SpecCard, SpecRow } from '../../shared/components/ui/spec'
 
 export default function MerchOrderModal({ item, onClose, onOrdered }: {
@@ -116,19 +116,26 @@ export default function MerchOrderModal({ item, onClose, onOrdered }: {
           )}
 
           <div className="mt-4 flex gap-2.5">
-            <button
+            <Button
+              type="button"
+              variant="secondary"
               onClick={onClose}
               disabled={busy}
-              className="flex-1 min-h-11 py-2.5 rounded-2xl text-[13px] font-semibold text-pmuted bg-pcard active:scale-[0.97] transition-transform disabled:opacity-50 shadow-2xs hover:text-pfg">
+              className="flex-1"
+            >
               {tt('merchFormCancel')}
-            </button>
-            <button
+            </Button>
+            <Button
+              type="button"
+              variant="secondary"
               onClick={submit}
               disabled={busy}
-              className="flex-[2] min-h-11 py-2.5 rounded-2xl text-[13px] font-bold text-ponprimary bg-pprimary hover:brightness-[1.06] active:scale-[0.97] transition-transform disabled:opacity-60 flex items-center justify-center gap-1.5 shadow-xs">
-              {busy ? <Loader2 size={16} className="animate-spin" /> : <CoinIcon size={16} />}
-              {tt('merchFormSubmit')}
-            </button>
+              loading={busy}
+              className="flex-[2]"
+            >
+              <CoinIcon size={16} />
+              <span>{tt('merchFormSubmit')}</span>
+            </Button>
           </div>
     </ModalShell>
   )

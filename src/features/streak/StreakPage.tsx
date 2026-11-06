@@ -20,6 +20,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import ModalShell from '../../shared/components/ModalShell'
+import { Button } from '../../shared/components/ui/button'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -265,13 +266,14 @@ export default function StreakPage() {
               ))}
             </div>
 
-            <button
+            <Button
               type="button"
+              variant="secondary"
+              block
               onClick={() => setShowInfo(false)}
-              className="w-full h-11 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold flex items-center justify-center active:scale-95 transition-transform shadow-xs"
             >
               {tt('gotItBtn')}
-            </button>
+            </Button>
         </ModalShell>
       )}
     </div>

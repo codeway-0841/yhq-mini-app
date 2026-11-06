@@ -82,7 +82,7 @@ export default function StatInfoSheet({ icon, title, body, extra, onClose }: {
         </SpecCard>
 
         <div className="relative z-10 mt-4">
-          <Button block onClick={onClose}>
+          <Button variant="secondary" block onClick={onClose}>
             {tt('gotItBtn')}
           </Button>
         </div>

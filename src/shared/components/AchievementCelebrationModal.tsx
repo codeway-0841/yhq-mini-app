@@ -7,9 +7,9 @@ import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import Confetti from './Confetti'
+import { Button } from './ui/button'
 import { CoinIcon } from './CoinIcon'
 import { MilestonePlaque3D } from './MilestonePlaque3D'
-import { cn } from '../lib/cn'
 
 export default function AchievementCelebrationModal() {
   const currentBadge = useAchievementCelebrationStore((s) => s.currentCelebration)
@@ -128,19 +128,16 @@ export default function AchievementCelebrationModal() {
 
           {/* Claim Reward Button */}
           <div className="mt-6 w-full max-w-[370px] flex flex-col gap-2">
-            <button
+            <Button
               type="button"
+              variant="secondary"
+              block
+              size="lg"
               onClick={handleClaim}
               disabled={isClaiming}
-              className={cn(
-                'group relative overflow-hidden flex h-14 w-full items-center justify-center gap-2 rounded-full bg-pprimary text-ponprimary font-bold text-[17px] shadow-[inset_0_-4px_0_rgba(0,0,0,0.22)] active:translate-y-[2px] active:shadow-[inset_0_-2px_0_rgba(0,0,0,0.22)] transition-[transform,box-shadow,filter] duration-100 hover:brightness-[1.06] cursor-pointer',
-                isClaiming && 'opacity-80 scale-98',
-              )}
+              loading={isClaiming}
+              className="h-14 font-black text-[16px] tracking-wide"
             >
-              <span aria-hidden="true" className="brilliant-start-sheen pointer-events-none absolute inset-y-0 left-0 w-full select-none">
-                <span className="absolute inset-y-0 left-[56%] w-[13%] -skew-x-[28deg] bg-white/25" />
-                <span className="absolute inset-y-0 left-[72%] w-[4%] -skew-x-[28deg] bg-white/25" />
-              </span>
               <span>{tt('achClaimReward')}</span>
               {totalCount > 1 && (
                 <span className="ml-1 text-xs opacity-80 flex items-center gap-0.5">
@@ -148,7 +145,7 @@ export default function AchievementCelebrationModal() {
                   (1/{totalCount})
                 </span>
               )}
-            </button>
+            </Button>
           </div>
         </div>
       </div>

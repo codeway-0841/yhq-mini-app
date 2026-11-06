@@ -269,25 +269,27 @@ export default function CertificateModal({
               </Button>
 
               {/* Secondary CTA: Qurilmaga to'g'ridan-to'g'ri yuklash */}
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                block
                 disabled={downloading}
+                loading={downloading}
                 onClick={handleDownload}
-                className="w-full py-3 rounded-2xl bg-pcard shadow-2xs text-[13.5px] font-semibold text-pfg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform disabled:opacity-50"
               >
                 <Download size={16} />
                 <span>{downloading ? tt('downloading') : tt('downloadCertificate')}</span>
-              </button>
+              </Button>
 
-              {/* Share CTA */}
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                block
                 onClick={handleShare}
-                className="w-full py-3 rounded-2xl bg-pcard shadow-2xs text-[13.5px] font-semibold text-pfg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform"
               >
-                <Share2 size={15} className="text-pprimary" />
+                <Share2 size={15} />
                 <span>{tt('shareCertificate')}</span>
-              </button>
+              </Button>
             </div>
 
             {/* Mobile helper hint */}

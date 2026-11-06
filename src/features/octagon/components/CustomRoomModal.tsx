@@ -5,6 +5,7 @@ import { config } from '../../../shared/config'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import ModalShell from '../../../shared/components/ModalShell'
+import { Button } from '../../../shared/components/ui/button'
 
 interface CustomRoomModalProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -124,32 +125,38 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             </div>
 
             <div className="grid grid-cols-2 gap-2">
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                size="sm"
                 onClick={handleCopyPin}
-                className="py-2.5 px-3 rounded-xl bg-pcard text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
+                className="h-10 text-xs font-bold"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
-              </button>
-              <button
+              </Button>
+              <Button
                 type="button"
+                variant="secondary"
+                size="sm"
                 onClick={handleShare}
-                className="py-2.5 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
+                className="h-10 text-xs font-bold"
               >
                 <Share2 size={14} />
                 <span>{tt('shareInviteBtn')}</span>
-              </button>
+              </Button>
             </div>
 
-            <button
+            <Button
               type="button"
+              variant="secondary"
+              block
+              size="lg"
               onClick={handleStartCreated}
-              className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 active:scale-95 transition-all"
             >
               <Swords size={16} />
               <span>{tt('startWaitingBtn')}</span>
-            </button>
+            </Button>
           </div>
         )}
 
@@ -174,15 +181,17 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
               {errorMsg && <p className="text-[11px] font-bold text-pdanger text-center">{errorMsg}</p>}
             </div>
 
-            <button
+            <Button
               type="button"
+              variant="secondary"
+              block
+              size="lg"
               onClick={handleJoinEntered}
               disabled={!inputPin.trim()}
-              className="w-full bg-pprimary text-ponprimary font-semibold hover:brightness-[1.06] active:scale-[0.98] disabled:opacity-[0.42] disabled:pointer-events-none transition-[transform,filter] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 py-3 rounded-2xl text-xs font-black flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
             >
               <KeyRound size={16} />
               <span>{tt('joinRoomBtn')}</span>
-            </button>
+            </Button>
           </div>
         )}
         </div>
