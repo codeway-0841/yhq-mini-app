@@ -5,6 +5,7 @@ import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
+import { Button } from '../../../shared/components/ui/button'
 
 /** Duel reytingi davrlari — 'all' umrbod counterdan, qolgani duel_results'dan */
 const RANK_TABS = ['daily', 'weekly', 'monthly', 'all'] as const
@@ -178,7 +179,7 @@ export function DuelLeaderboardView({
               className={cn(
                 'flex-1 min-h-11 px-1 rounded-xl text-xs font-semibold transition-all duration-150 ease-out active:scale-[0.98]',
                 active
-                  ? 'bg-pprimary text-ponprimary shadow-xs font-bold'
+                  ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs font-bold'
                   : 'text-pmuted hover:text-pfg'
               )}
             >
@@ -217,14 +218,15 @@ export function DuelLeaderboardView({
           <p className="text-xs text-psubtle mt-1">
             {tt('duelEmptyHint')}
           </p>
-          <button
+          <Button
             type="button"
+            variant="secondary"
             onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
-            className="mt-4 h-10 px-5 rounded-2xl bg-pprimary text-ponprimary text-xs font-bold shadow-xs active:scale-95 transition-all inline-flex items-center gap-2"
+            className="mt-4"
           >
             <Swords size={15} />
             <span>{tt('findOpponent')}</span>
-          </button>
+          </Button>
         </div>
       ) : (
         <div className="overflow-hidden rounded-2xl bg-pcard divide-y divide-pline shadow-xs">

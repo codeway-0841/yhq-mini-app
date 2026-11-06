@@ -1,4 +1,5 @@
 import { Trophy, Flag, Handshake, ArrowRight } from 'lucide-react'
+import { Button } from '../../../shared/components/ui/button'
 
 export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, onExit, onRematch }: {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -27,13 +28,12 @@ export function MatchEndScreen({ tt, result, yourScore, oppScore, opponentName, 
         </div>
       </div>
       <div className="flex gap-3 w-full max-w-xs">
-        <button onClick={onExit}
-          className="flex-1 py-3 rounded-xl bg-psurface text-sm font-semibold">
+        <Button variant="secondary" onClick={onExit} className="flex-1">
           {tt('duelToArena')}
-        </button>
-        <button onClick={onRematch} className="arena-primary flex-[2]">
+        </Button>
+        <Button variant="secondary" onClick={onRematch} className="flex-[2]">
           {tt('duelRematch')} <ArrowRight size={18} />
-        </button>
+        </Button>
       </div>
     </div>
   )

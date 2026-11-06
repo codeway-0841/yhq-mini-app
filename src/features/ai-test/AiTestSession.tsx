@@ -22,6 +22,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import Confetti from '../../shared/components/Confetti'
+import { Button } from '../../shared/components/ui/button'
 import {
   AI_TEST_SECTIONS, AI_TEST_TOTAL_TASKS, AI_TEST_GRADED_TASKS,
   type AiTestAnswers, type AiTestGrading, type AiTestPublicPayload,
@@ -145,7 +146,7 @@ export default function AiTestSession() {
       <div className="px-4 pt-16 text-center">
         <Lock size={36} strokeWidth={1.75} className="mx-auto mb-3" style={{ color: 'var(--p-purple)' }} />
         <p className="text-[16px] font-semibold text-pfg mb-4">{tt('aiTestPremiumCta')}</p>
-        <button onClick={() => navigate('/premium')} className="btn-premium">Premium</button>
+        <Button variant="secondary" onClick={() => navigate('/premium')}>Premium</Button>
         <button onClick={() => goBack(navigate)} className="block mx-auto mt-3 text-[13px] text-psubtle">{tt('backWord')}</button>
       </div>
     )
@@ -156,7 +157,7 @@ export default function AiTestSession() {
       <div className="px-4 pt-16 text-center">
         <AlertTriangle size={32} strokeWidth={1.75} className="mx-auto mb-3 text-pwarning" />
         <p className="text-[15px] text-pmuted mb-4">{tt('aiTestLoadError')}</p>
-        <button onClick={() => goBack(navigate)} className="btn-premium-secondary">{tt('backWord')}</button>
+        <Button variant="secondary" onClick={() => goBack(navigate)}>{tt('backWord')}</Button>
       </div>
     )
   }
@@ -273,9 +274,9 @@ export default function AiTestSession() {
           {renderTasks(true)}
         </div>
 
-        <button onClick={() => navigate('/ai-test')} className="btn-premium w-full mt-5">
+        <Button variant="secondary" block size="lg" onClick={() => navigate('/ai-test')} className="mt-5">
           {tt('aiTestBackToList')}
-        </button>
+        </Button>
       </div>
     )
   }
@@ -314,24 +315,18 @@ export default function AiTestSession() {
 
       {/* Pastki submit paneli (safe-bottom qoidasi 13a) */}
       <div className="fixed inset-x-4 bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-40">
-        <button
+        <Button
+          variant="secondary"
+          block
+          size="lg"
           onClick={() => { setSubmitError(false); if (unanswered > 0) setConfirmOpen(true); else void submit() }}
           disabled={phase === 'submitting'}
-          className="btn-premium w-full flex items-center justify-center gap-2 disabled:opacity-60"
+          loading={phase === 'submitting'}
         >
-          {phase === 'submitting' ? (
-            <>
-              <span className="w-4 h-4 rounded-full border-2 border-ponprimary border-t-transparent animate-spin" />
-              {tt('aiTestSubmitting')}
-            </>
-          ) : (
-            <>
-              <Sparkles size={17} strokeWidth={2} />
-              {tt('aiTestSubmit')}
-              {unanswered > 0 && <span className="opacity-75">({answeredCount}/{AI_TEST_TOTAL_TASKS})</span>}
-            </>
-          )}
-        </button>
+          <Sparkles size={17} strokeWidth={2} />
+          <span>{tt('aiTestSubmit')}</span>
+          {unanswered > 0 && <span className="opacity-75">({answeredCount}/{AI_TEST_TOTAL_TASKS})</span>}
+        </Button>
       </div>
 
       {/* Tasdiq dialogi — javobsiz topshiriqlar qolganda (Dialog SSOT) */}

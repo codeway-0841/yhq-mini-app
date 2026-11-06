@@ -346,7 +346,7 @@ export default function CamAiPage() {
           </>
         )}
 
-        <Button block size="lg" onClick={() => void start()} disabled={loading}>
+        <Button variant="secondary" block size="lg" onClick={() => void start()} disabled={loading}>
           {loading ? <Loader2 className="animate-spin" /> : <Shuffle />}
           {loading ? tt('camaiBankLoading') : tt('camaiStart')}
         </Button>
@@ -568,7 +568,7 @@ export default function CamAiPage() {
         </div>
       ) : (
         <div className="mt-4">
-          <Button block size="lg" onClick={pick} disabled={step === 'roulette' || slots.length === 0}>
+          <Button variant="secondary" block size="lg" onClick={pick} disabled={step === 'roulette' || slots.length === 0}>
             {step === 'roulette' ? <Loader2 className="animate-spin" /> : <Dices />}
             {tt('camaiPickRandom')}
           </Button>
@@ -602,7 +602,7 @@ export default function CamAiPage() {
           </DialogBody>
           <DialogFooter>
             <Button variant="secondary" onClick={() => setRenamingId(null)}>{tt('camaiCancel')}</Button>
-            <Button onClick={saveRename}>{tt('camaiSave')}</Button>
+            <Button variant="secondary" onClick={saveRename}>{tt('camaiSave')}</Button>
           </DialogFooter>
         </Dialog>
       )}

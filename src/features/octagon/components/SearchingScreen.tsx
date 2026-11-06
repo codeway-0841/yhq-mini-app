@@ -4,6 +4,7 @@ import { shareUrl } from '../../../platform/telegram'
 import { haptics } from '../../../platform/haptics'
 import { playSound } from '../../../shared/lib/sounds'
 import { ArenaArtwork } from './ArenaArtwork'
+import { Button } from '../../../shared/components/ui/button'
 
 export function SearchingScreen({ tt, duelCode, duelLink, onCancel, language = 'uz', roomPending = false }: {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -62,34 +63,37 @@ export function SearchingScreen({ tt, duelCode, duelLink, onCancel, language = '
 
           <div className="flex items-center gap-2 w-full">
             {cleanPin && (
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                size="sm"
                 onClick={handleCopyPin}
-                className="flex-1 min-h-12 py-2 px-3 rounded-xl bg-pcard text-pfg text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
+                className="flex-1 min-h-12 text-xs font-bold"
               >
                 {copied ? <Check size={14} className="text-pprimary" /> : <Copy size={14} />}
                 <span>{copied ? tt('pinCopied') : tt('copyPinBtn')}</span>
-              </button>
+              </Button>
             )}
             {duelLink && (
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                size="sm"
                 onClick={() => shareUrl(duelLink, tt('duelShareShort').replace('{pin}', cleanPin || duelCode))}
-                className="flex-1 min-h-12 py-2 px-3 rounded-xl bg-[rgb(var(--p-blue-rgb)/0.15)] text-pblue text-xs font-bold flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-xs"
+                className="flex-1 min-h-12 text-xs font-bold"
               >
                 <Share2 size={14} />
                 <span>{tt('shareInviteBtn')}</span>
-              </button>
+              </Button>
             )}
           </div>
         </div>
       )}
 
       {copyFailed && <p role="alert" className="text-sm text-pdanger">{language === 'ru' ? 'Не удалось скопировать. Выделите код и скопируйте вручную.' : 'Nusxalanmadi. Kodni belgilab, qo‘lda nusxalang.'}</p>}
-      <button onClick={onCancel}
-        className="text-sm min-h-12 text-pmuted bg-psurface px-5 py-2.5 rounded-xl hover:text-pfg transition-colors active:scale-95 shadow-xs">
+      <Button variant="secondary" onClick={onCancel}>
         {tt('cancel')}
-      </button>
+      </Button>
     </div>
   )
 }

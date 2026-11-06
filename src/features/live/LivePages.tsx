@@ -145,7 +145,7 @@ export default function LiveListPage() {
               />
             </label>
             <p className="text-xs leading-relaxed text-pmuted">{tt('liveScheduleHint')}</p>
-            <Button block loading={creating} disabled={title.trim().length < 3} onClick={handleCreate}>
+            <Button variant="secondary" block loading={creating} disabled={title.trim().length < 3} onClick={handleCreate}>
               {tt('liveCreateBtn')}
             </Button>
           </div>
@@ -638,7 +638,7 @@ function LiveRoomPage() {
                 <p className="text-xs text-psuccess">{voice.speakers.slice(0, 3).join(', ')} {tt('liveSpeaking')}</p>
               )}
               {voice.audioBlocked && (
-                <Button size="sm" onClick={() => void voice.unlockAudio()}>
+                <Button variant="secondary" size="sm" onClick={() => void voice.unlockAudio()}>
                   {tt('liveEnableAudio')}
                 </Button>
               )}
@@ -660,7 +660,7 @@ function LiveRoomPage() {
       </Card>
 
       {!joined ? (
-        <div className="sticky bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-20 mt-3 rounded-2xl bg-[rgb(var(--p-canvas-rgb)/0.90)] p-1 backdrop-blur-md"><Button block loading={busy} disabled={room.status !== 'live' && !(room.status === 'scheduled' && isRoomManager)} onClick={handleJoin}>
+        <div className="sticky bottom-[calc(0.75rem+var(--safe-bottom,0px))] z-20 mt-3 rounded-2xl bg-[rgb(var(--p-canvas-rgb)/0.90)] p-1 backdrop-blur-md"><Button variant="secondary" block loading={busy} disabled={room.status !== 'live' && !(room.status === 'scheduled' && isRoomManager)} onClick={handleJoin}>
           {tt('liveJoin')}
         </Button></div>
       ) : (
@@ -692,7 +692,7 @@ function LiveRoomPage() {
               aria-label={tt('liveChatPlaceholder')}
               className="max-h-28 min-h-11 min-w-0 flex-1 resize-y rounded-2xl bg-psurface px-4 py-3 text-[15px] leading-5 text-pfg outline-none placeholder:text-pmuted focus:ring-2 focus:ring-pprimary"
             />
-            <Button size="icon" aria-label={tt('liveSend')} title={tt('liveSend')} loading={sending} onClick={handleSend} disabled={!draft.trim()}>
+            <Button variant="secondary" size="icon" aria-label={tt('liveSend')} title={tt('liveSend')} loading={sending} onClick={handleSend} disabled={!draft.trim()}>
               <Send size={18} />
             </Button>
           </div>

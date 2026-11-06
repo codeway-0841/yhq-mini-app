@@ -5,6 +5,7 @@ import { getAvatarFrame } from '../../../shared/config/avatar-frames'
 import { playSound } from '../../../shared/lib/sounds'
 import { haptics } from '../../../platform/haptics'
 import { ArenaArtwork } from './ArenaArtwork'
+import { Button } from '../../../shared/components/ui/button'
 import type { ConnStatus } from '../../../shared/lib/octagon-ws'
 import { cn } from '../../../shared/lib/cn'
 import { registerModal } from '../../../shared/lib/navigation'
@@ -333,7 +334,7 @@ export function IdleScreen({
                 className={cn(
                   'min-h-12 px-2 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 transition-all',
                   inviteTab === 'create'
-                    ? 'bg-pprimary text-ponprimary shadow-xs'
+                    ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                     : 'text-pmuted hover:text-pfg'
                 )}
               >
@@ -346,7 +347,7 @@ export function IdleScreen({
                 className={cn(
                   'min-h-12 px-2 rounded-xl text-sm font-bold flex items-center justify-center gap-1.5 transition-all',
                   inviteTab === 'join'
-                    ? 'bg-pprimary text-ponprimary shadow-xs'
+                    ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                     : 'text-pmuted hover:text-pfg'
                 )}
               >
@@ -388,15 +389,17 @@ export function IdleScreen({
                   {pinError && <p className="text-[11px] font-bold text-pdanger text-center">{pinError}</p>}
                 </div>
 
-                <button
+                <Button
                   type="button"
+                  variant="secondary"
+                  block
+                  size="lg"
                   onClick={handleJoinPin}
                   disabled={!inputPin.trim() || connection !== 'open'}
-                  className="w-full h-12 rounded-2xl bg-pprimary text-ponprimary text-xs font-extrabold flex items-center justify-center gap-2 shadow-xs disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
                 >
                   <KeyRound size={16} />
                   <span>{tt('joinRoomBtn')}</span>
-                </button>
+                </Button>
               </div>
             )}
           </div>
