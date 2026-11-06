@@ -108,16 +108,19 @@ export const SUBJECT_CHAPTERS: Record<string, ChapterDef[]> = {
     { id: 'rus-lit',    labelUz: 'Rus adabiyoti',        labelRu: 'Литература' },
   ],
   rusadabiyot: [
-    { id: 'all',        labelUz: 'Barchasi',             labelRu: 'Все' },
-    { id: 'lit-teo',    labelUz: 'Nazariya',             labelRu: 'Теория' },
-    { id: 'lit-drev',   labelUz: 'Qadimgi rus',          labelRu: 'Древнерусская' },
-    { id: 'lit-xviii',  labelUz: 'XVIII asr',            labelRu: 'XVIII век' },
-    { id: 'lit-xix-1',  labelUz: 'XIX asr 1-yarmi',      labelRu: 'XIX в. (1-пол.)' },
-    { id: 'lit-xix-2',  labelUz: 'XIX asr 2-yarmi',      labelRu: 'XIX в. (2-пол.)' },
-    { id: 'lit-sereb',  labelUz: 'Kumush davr',          labelRu: 'Серебряный век' },
-    { id: 'lit-sov',    labelUz: 'Sovet davri',          labelRu: '1920–1930-е' },
-    { id: 'lit-urush',  labelUz: 'Urush adabiyoti',      labelRu: 'Военная' },
-    { id: 'lit-xx-2',   labelUz: 'Zamonaviy',            labelRu: 'Современная' },
+    { id: 'all',            labelUz: 'Barchasi',             labelRu: 'Все' },
+    { id: 'lit-teo',        labelUz: '1. Nazariya',          labelRu: '1. Теория' },
+    { id: 'lit-drev',       labelUz: '2. Qadimgi rus',       labelRu: '2. Древнерусская' },
+    { id: 'lit-xviii',      labelUz: '3. XVIII asr',         labelRu: '3. XVIII век' },
+    { id: 'lit-xix-1',      labelUz: '4. XIX asr (1)',       labelRu: '4. XIX в. (1-пол.)' },
+    { id: 'lit-xix-2',      labelUz: '5. XIX asr (2)',       labelRu: '5. XIX в. (2-пол.)' },
+    { id: 'lit-sereb',      labelUz: '6. Kumush davr',       labelRu: '6. Серебряный век' },
+    { id: 'lit-sov',        labelUz: '7. Sovet davri',       labelRu: '7. Советская' },
+    { id: 'lit-ottepel',    labelUz: '8. «Оттепель»',        labelRu: '8. «Оттепель»' },
+    { id: 'lit-zamonaviy',  labelUz: '9. Zamonaviy',         labelRu: '9. Современная' },
+    { id: 'lit-jahon',      labelUz: '10. Jahon adabiyoti',  labelRu: '10. Зарубежная' },
+    { id: 'lit-ozbek-sharq',labelUz: '11. O‘zbek va Sharq',  labelRu: '11. Узбекская и восточная' },
+    { id: 'lit-metodika',   labelUz: '12. Metodika',         labelRu: '12. Методика' },
   ],
 }
 
@@ -132,6 +135,9 @@ const CHAPTER_WEIGHTS: Record<string, number> = {
   'pre-a1': 0, a1: 1, a2: 2, b1: 3, b2: 4, c1: 5,
   // rustili
   'rus-attest': 0, 'rus-fon': 1, 'rus-lek': 2, 'rus-morz': 3, 'rus-orf': 4, 'rus-mor': 5, 'rus-lit': 6,
+  // rusadabiyot
+  'lit-teo': 1, 'lit-drev': 2, 'lit-xviii': 3, 'lit-xix-1': 4, 'lit-xix-2': 5, 'lit-sereb': 6,
+  'lit-sov': 7, 'lit-ottepel': 8, 'lit-zamonaviy': 9, 'lit-jahon': 10, 'lit-ozbek-sharq': 11, 'lit-metodika': 12,
 }
 
 export function getTopicChapterId(subjectId: string, slug?: string, nameUz?: string): string {
@@ -219,6 +225,22 @@ export function getTopicChapterId(subjectId: string, slug?: string, nameUz?: str
     if (s.includes('orfografiya')) return 'rus-orf'
     if (s.includes('morfologiya')) return 'rus-mor'
     if (s.includes('literatura')) return 'rus-lit'
+    return 'other'
+  }
+
+  if (subjectId === 'rusadabiyot') {
+    if (s.includes('lit-teo') || n.includes('Теория') || n.includes('Nazariya')) return 'lit-teo'
+    if (s.includes('lit-drev') || n.includes('Древнерусская') || n.includes('Qadimgi rus')) return 'lit-drev'
+    if (s.includes('lit-xviii') || n.includes('XVIII')) return 'lit-xviii'
+    if (s.includes('lit-xix-1') || n.includes('1-пол') || n.includes('первой половины') || n.includes('1-yarmi')) return 'lit-xix-1'
+    if (s.includes('lit-xix-2') || n.includes('2-пол') || n.includes('второй половины') || n.includes('2-yarmi')) return 'lit-xix-2'
+    if (s.includes('lit-sereb') || n.includes('Серебряный') || n.includes('Kumush')) return 'lit-sereb'
+    if (s.includes('lit-sov') || n.includes('советская') || n.includes('Советская') || n.includes('Sovet')) return 'lit-sov'
+    if (s.includes('lit-ottepel') || n.includes('оттепели') || n.includes('Оттепель') || n.includes('оттепель')) return 'lit-ottepel'
+    if (s.includes('lit-zamonaviy') || n.includes('Современная') || n.includes('Zamonaviy')) return 'lit-zamonaviy'
+    if (s.includes('lit-jahon') || n.includes('Зарубежная') || n.includes('Jahon')) return 'lit-jahon'
+    if (s.includes('lit-ozbek') || n.includes('Узбекская') || n.includes('O‘zbek') || n.includes("O'zbek")) return 'lit-ozbek-sharq'
+    if (s.includes('lit-metodika') || n.includes('Методика') || n.includes('Metodika')) return 'lit-metodika'
     return 'other'
   }
 

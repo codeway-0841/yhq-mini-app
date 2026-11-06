@@ -106,6 +106,21 @@ describe('ticket-chapters', () => {
       expect(getTopicChapterId('rustili', 'russian_db-rus-morfologiya', 'Morfologiya')).toBe('rus-mor')
       expect(getTopicChapterId('rustili', 'russian_db-rus-literatura', 'Rus adabiyoti')).toBe('rus-lit')
     })
+
+    it('rus adabiyoti mavzularini 12 ta bilet / davr bo\'yicha to\'g\'ri tasniflaydi', () => {
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-teo', '1-bilet. Nazariya')).toBe('lit-teo')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-drev', '2-bilet. Qadimgi rus')).toBe('lit-drev')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-xviii', '3-bilet. XVIII asr')).toBe('lit-xviii')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-xix-1', '4-bilet. XIX asr 1-yarmi')).toBe('lit-xix-1')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-xix-2', '5-bilet. XIX asr 2-yarmi')).toBe('lit-xix-2')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-sereb', '6-bilet. Kumush davr')).toBe('lit-sereb')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-sov', '7-bilet. Sovet davri')).toBe('lit-sov')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-ottepel', '8-bilet. «Оттепель»')).toBe('lit-ottepel')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-zamonaviy', '9-bilet. Zamonaviy')).toBe('lit-zamonaviy')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-jahon', '10-bilet. Jahon adabiyoti')).toBe('lit-jahon')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-ozbek-sharq', '11-bilet. O‘zbek va Sharq')).toBe('lit-ozbek-sharq')
+      expect(getTopicChapterId('rusadabiyot', 'rusadabiyot_lit-metodika', '12-bilet. Metodika')).toBe('lit-metodika')
+    })
   })
 
   describe('sortTopicsForTickets', () => {

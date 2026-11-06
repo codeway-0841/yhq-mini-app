@@ -19,6 +19,7 @@ const SUBJECT_LIST = [
   { folder: 'adabiyot', bankId: 'adabiyot_db', bankName: 'Adabiyot savollar bazasi' },
   { folder: 'ingliz', bankId: 'english_db', bankName: 'Ingliz tili savollar bazasi' },
   { folder: 'rustili', bankId: 'russian_db', bankName: 'Rus tili savollar bazasi' },
+  { folder: 'rusadabiyot', bankId: 'rusadabiyot_db', bankName: 'Rus adabiyoti savollar bazasi' },
 ];
 
 const CHUNK_SIZE = 500;
