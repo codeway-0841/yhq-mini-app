@@ -7,7 +7,7 @@ import type { Rive } from '@rive-app/webgl2-course'
  * Brilliant bu artboardlarni oddiy animatsiya sifatida emas, ViewModel (`StreakEndstateVM`,
  * `StreaksForgiveVM`) orqali boshqaradi: `darkMode`, `streakAnimation` yoziladi va
  * `playAnimation` trigger'i bosiladi. Shu sababli oddiy `animation=` bilan ochilganda
- * chaqmoq/Koji ko'rinmaydi.
+ * chaqmoq/Koji yoki Streak Charge batareyasi ko'rinmaydi.
  */
 export type BrilliantEndstateKind = 'streak' | 'charge'
 
@@ -43,6 +43,8 @@ export interface BrilliantEndstateRiveProps {
   nonce?: number
   className?: string
   fallback?: ReactNode
+  /** Rive ichidagi timeline eventlari (`play-streak-sound`, `play-streak-charge-sound`) */
+  onRiveEvent?: (name: string) => void
 }
 
 export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
@@ -53,14 +55,17 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   nonce = 0,
   className = '',
   fallback = null,
+  onRiveEvent,
 }: BrilliantEndstateRiveProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const instanceRef = useRef<ReturnType<NonNullable<ReturnType<Rive['viewModelByName']>>['instance']> | null>(null)
   const darkRef = useRef(dark)
   const variantRef = useRef(variant)
+  const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
   variantRef.current = variant
+  onEventRef.current = onRiveEvent
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -79,7 +84,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
     ]).then(([pkg, wasmMod, fallbackMod, buffer]) => {
       if (disposed) return
       const mod = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
-      const { Rive: RiveCtor, RuntimeLoader, Layout, Fit, Alignment } = mod
+      const { Rive: RiveCtor, RuntimeLoader, Layout, Fit, Alignment, EventType } = mod
       if (!wasmConfigured && RuntimeLoader) {
         const wasmUrl = (wasmMod as { default?: string }).default ?? wasmMod
         const fallbackUrl = (fallbackMod as { default?: string }).default ?? fallbackMod
@@ -103,6 +108,16 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         onLoad: () => {
           if (disposed || !rive) return
           resize()
+          if (EventType?.RiveEvent) {
+            try {
+              rive.on(EventType.RiveEvent, (ev) => {
+                const data = ev?.data as { name?: string } | undefined
+                if (data?.name && onEventRef.current) {
+                  onEventRef.current(data.name)
+                }
+              })
+            } catch { /* event listener ixtiyoriy */ }
+          }
           const vm = rive.viewModelByName(cfg.viewModel)
           const inst = vm?.defaultInstance() ?? vm?.instance() ?? null
           if (!inst) return

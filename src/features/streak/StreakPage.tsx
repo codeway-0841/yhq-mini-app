@@ -50,13 +50,17 @@ export default function StreakPage() {
   const tt        = useT(lang)
 
   const previewParam = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('preview') : null
-  const isPreviewParam = previewParam === 'true' || previewParam === 'charge'
   const today     = todayStr()
   const [history, setHistory]     = useState<DailyHistory | null>(null)
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
   const [selected, setSelected]   = useState(today)                            // 'YYYY-MM-DD'
   const [showInfo, setShowInfo]   = useState(false)
-  const [showCelebration, setShowCelebration] = useState(isPreviewParam)
+  const [modalMode, setModalMode] = useState<'streak' | 'charge' | 'both'>(() =>
+    previewParam === 'charge' ? 'charge' : previewParam === 'both' ? 'both' : 'streak',
+  )
+  const [showCelebration, setShowCelebration] = useState(
+    previewParam === 'true' || previewParam === 'charge' || previewParam === 'both',
+  )
   // Server javobi kelgunicha — lokal (cache) streak darhol ko'rinadi, 0 emas
   const cachedStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
 
@@ -139,13 +143,28 @@ export default function StreakPage() {
         <p className="text-[12.5px] sm:text-[13px] text-psubtle mt-1.5 sm:mt-2 font-medium">
           {streak > 0 ? tt('intizomStreakGood') : tt('intizomStreakStart')}
         </p>
-        <button
-          type="button"
-          onClick={() => setShowCelebration(true)}
-          className="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-        >
-          {lang === 'ru' ? 'Посмотреть анимацию серии ✨' : 'Seriya animatsiyasini ko‘rish ✨'}
-        </button>
+        <div className="mt-2.5 flex flex-wrap items-center justify-center gap-2">
+          <button
+            type="button"
+            onClick={() => {
+              setModalMode('both')
+              setShowCelebration(true)
+            }}
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+          >
+            {lang === 'ru' ? 'Анимация серии ✨' : 'Seriya animatsiyasi ✨'}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setModalMode('charge')
+              setShowCelebration(true)
+            }}
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-[#A8D31D] hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+          >
+            {lang === 'ru' ? 'Заряд серии 🔋' : 'Seriya zaryadi 🔋'}
+          </button>
+        </div>
         <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5">
           <Trophy size={13} strokeWidth={1.75} className="text-pwarning" />
           <span className="text-[11.5px] sm:text-[12px] font-semibold text-psubtle">
@@ -295,7 +314,8 @@ export default function StreakPage() {
       {showCelebration && (
         <BrilliantStreakModal
           streak={streak > 0 ? streak : 1}
-          initialView={previewParam === 'charge' ? 'charge' : 'streak'}
+          initialView={modalMode === 'charge' ? 'charge' : 'streak'}
+          showCharge={modalMode === 'both'}
           onClose={() => setShowCelebration(false)}
         />
       )}
