@@ -130,6 +130,11 @@ export function RiveCanvas({
           if (!disposed) setStatus('error')
         },
       }
+      if (stateMachineRef.current) {
+        riveConfig.stateMachines = [stateMachineRef.current]
+      } else if (animationRef.current) {
+        riveConfig.animations = [animationRef.current]
+      }
       if (buffer) {
         riveConfig.buffer = buffer.slice(0)
       } else {

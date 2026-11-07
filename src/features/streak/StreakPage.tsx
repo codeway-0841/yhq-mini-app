@@ -22,7 +22,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import ModalShell from '../../shared/components/ModalShell'
 import { Button } from '../../shared/components/ui/button'
-import { RiveCanvas } from '../mascot-studio/RiveCanvas'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
@@ -49,7 +49,8 @@ export default function StreakPage() {
   const subject   = useSubjectStore((s) => s.subject)
   const tt        = useT(lang)
 
-  const isPreviewParam = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('preview') === 'true'
+  const previewParam = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('preview') : null
+  const isPreviewParam = previewParam === 'true' || previewParam === 'charge'
   const today     = todayStr()
   const [history, setHistory]     = useState<DailyHistory | null>(null)
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
@@ -127,14 +128,7 @@ export default function StreakPage() {
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
       <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">
         <div className="relative mx-auto mb-2 size-28 sm:size-32 flex items-center justify-center">
-          <RiveCanvas
-            file="endstates.e233a7c3.riv"
-            artboard="MAIN_streak-endstate"
-            stateMachine="StreakEndstate"
-            label="Lightning Streak"
-            className="is-transparent size-full"
-            fit="contain"
-          />
+          <BrilliantEndstateRive kind="streak" variant={0} dark={document.body.dataset.theme === 'dark'} label="Brilliant streak" className="size-full" fallback={<BrilliantStreakIcon size={56} />} />
         </div>
         <div className="flex items-center justify-center gap-2">
           <BrilliantStreakIcon size={28} className="text-[#A8D31D]" />
@@ -148,7 +142,7 @@ export default function StreakPage() {
         <button
           type="button"
           onClick={() => setShowCelebration(true)}
-          className="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:bg-psurface/80 transition-all cursor-pointer shadow-xs active:scale-95"
+          className="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
         >
           {lang === 'ru' ? 'Посмотреть анимацию серии ✨' : 'Seriya animatsiyasini ko‘rish ✨'}
         </button>
@@ -300,7 +294,8 @@ export default function StreakPage() {
 
       {showCelebration && (
         <BrilliantStreakModal
-          streak={streak > 0 ? streak : 3}
+          streak={streak > 0 ? streak : 1}
+          initialView={previewParam === 'charge' ? 'charge' : 'streak'}
           onClose={() => setShowCelebration(false)}
         />
       )}

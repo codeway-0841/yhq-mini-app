@@ -1,7 +1,7 @@
-import { memo, useEffect, useState, useMemo } from 'react'
-import { Check } from 'lucide-react'
+import { memo, useEffect, useMemo, useState } from 'react'
 import { Button } from './ui/button'
-import { RiveCanvas } from '../../features/mascot-studio/RiveCanvas'
+import { BrilliantEndstateRive } from './BrilliantEndstateRive'
+import { BrilliantStreakIcon } from './BrilliantStreakIcon'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { useAppStore } from '../store/useAppStore'
@@ -10,65 +10,71 @@ export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
-  showCharge?: boolean
+  /** 'charge' — "Streak Charge" (batareya) ekrani */
+  initialView?: 'streak' | 'charge'
 }
 
 const SHORT_DAYS_UZ = ['Ya', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh']
 const SHORT_DAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
+const LIME = '#A8D31D'
 
 /**
- * Brilliant.org 1:1 Streak Endstate & Charge Fullscreen Modal.
- *
- * Video 1 (02_brilliant-koji-mascot-gained-new-streak-animation.mp4):
- * - Soft lime ambient radial glow
- * - 3D lightning bolt mascot animation (`MAIN_streak-endstate` in `endstates.e233a7c3.riv`)
- * - Large streak count & "You sparked a new streak!" title
- * - 3-day active streak dots (Yesterday, Today with checkmark, Tomorrow)
- * - Full-width pill "Continue" CTA
- *
- * Video 2 (08_brilliant-streak-charge-animation.mp4):
- * - Streak Charge battery animation (`Streaks Forgive` in `endstates.e233a7c3.riv`)
- * - "You earned 1 Streak Charge!" title & explanation
+ * Brilliant "streak endstate" ekrani (video kadrlari bo'yicha):
+ *  1. Oq ekranda Koji tanga ushlab chiqadi → nurli shar (son "0") → 3D chaqmoq.
+ *  2. Yuqorida laym gradient paydo bo'ladi, "0" → seriya soniga o'tadi.
+ *  3. Sarlavha, 3 kunlik doira (bugun — chaqmoqli) va pastda qora "Davom etish".
+ * Chaqmoq/Koji/shar — `endstates.*.riv` ichidagi `MAIN_streak-endstate` artboard'ining o'zi.
  */
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   streak,
   onClose,
   isOpen = true,
-  showCharge = false,
+  initialView = 'streak',
 }: BrilliantStreakModalProps) {
   const language = useAppStore((s) => s.settings.language)
   const isRu = language === 'ru'
-  const [view, setView] = useState<'streak' | 'charge'>('streak')
+  const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
+  const [view] = useState(initialView)
+  // 0 — faqat animatsiya, 1 — son + gradient, 2 — sarlavha, 3 — kalendar
+  const [stage, setStage] = useState(0)
 
   useEffect(() => {
     if (!isOpen) return
     playSound('win')
     haptics.impact('heavy')
+    const reduce = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    if (reduce) { setStage(4); return }
+    const timers = [
+      window.setTimeout(() => setStage(1), 900),
+      window.setTimeout(() => setStage(2), 3000),
+      window.setTimeout(() => setStage(3), 3400),
+      window.setTimeout(() => setStage(4), 3900),
+    ]
+    return () => timers.forEach(window.clearTimeout)
   }, [isOpen])
 
-  // Bugungi, kechagi va ertangi kunlar hisobi
-  const daysInfo = useMemo(() => {
-    const d = new Date()
-    const todayIndex = d.getDay() // 0 = Ya, 1 = Du...
-    const yesterdayIndex = (todayIndex + 6) % 7
-    const tomorrowIndex = (todayIndex + 1) % 7
+  const days = useMemo(() => {
     const names = isRu ? SHORT_DAYS_RU : SHORT_DAYS_UZ
-
-    return [
-      { name: names[yesterdayIndex], status: 'done' },
-      { name: names[todayIndex], status: 'today' },
-      { name: names[tomorrowIndex], status: 'future' },
-    ]
+    const today = new Date().getDay()
+    return [0, 1, 2].map((offset) => ({ name: names[(today + offset) % 7], active: offset === 0 }))
   }, [isRu])
 
   if (!isOpen) return null
 
+  const title = streak <= 1
+    ? (isRu ? 'Вы начали новую серию!' : 'Yangi seriyani boshladingiz!')
+    : (isRu ? `Серия ${streak} дн.!` : `${streak} kunlik seriya!`)
+  const fade = (on: boolean) => ({
+    opacity: on ? 1 : 0,
+    transform: on ? 'translateY(0)' : 'translateY(12px)',
+    transition: 'opacity 450ms ease-out, transform 450ms cubic-bezier(0.16,1,0.3,1)',
+  })
+  const gradient = dark
+    ? 'linear-gradient(180deg, rgba(120,150,20,0.45) 0%, rgba(120,150,20,0.14) 38%, rgba(20,20,20,0) 62%)'
+    : 'linear-gradient(180deg, rgba(190,216,48,0.62) 0%, rgba(190,216,48,0.22) 38%, rgba(255,255,255,0) 62%)'
+
   const handleContinue = () => {
     haptics.impact('light')
-    if (showCharge && view === 'streak') {
-      setView('charge')
-      return
-    }
     onClose()
   }
 
@@ -77,143 +83,84 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
       role="dialog"
       aria-modal="true"
       aria-labelledby="streak-celebration-title"
-      className="fixed inset-0 z-[100] flex flex-col justify-between bg-pcanvas text-pfg select-none overflow-y-auto px-5 py-6 sm:py-8 motion-safe:animate-fadeIn"
+      className="fixed inset-0 z-[100] flex flex-col bg-pcanvas text-pfg select-none overflow-hidden"
     >
-      {/* Orqa fondagi mayin ohakrang (lime) ambient gradient nuri */}
-      <div
-        className="pointer-events-none fixed inset-0 flex items-center justify-center opacity-70 dark:opacity-40"
-        aria-hidden="true"
-      >
+      {view === 'streak' && (
         <div
-          className="size-[480px] sm:size-[560px] rounded-full blur-3xl"
-          style={{
-            background: 'radial-gradient(circle, rgba(168,211,29,0.35) 0%, rgba(168,211,29,0.12) 40%, transparent 70%)',
-          }}
+          className="pointer-events-none absolute inset-x-0 top-0 h-[70%]"
+          style={{ background: gradient, opacity: stage >= 2 ? 1 : 0, transition: 'opacity 900ms ease-out' }}
+          aria-hidden="true"
         />
-      </div>
+      )}
 
-      {/* Yuqori qism / Bo'sh safe-area */}
-      <div className="w-full flex justify-end">
-        <button
-          type="button"
-          onClick={onClose}
-          className="relative z-10 grid size-10 place-items-center rounded-full bg-psurface/60 text-pmuted hover:text-pfg transition-colors"
-          aria-label={isRu ? 'Закрыть' : 'Yopish'}
-        >
-          ✕
-        </button>
-      </div>
-
-      {/* Asosiy markaziy qism */}
-      <div className="relative z-10 flex flex-1 flex-col items-center justify-center text-center my-auto w-full max-w-[420px] mx-auto">
+      <div className="relative z-10 flex flex-1 flex-col items-center px-6 pt-[calc(var(--safe-top,0px)+1rem)] min-h-0">
         {view === 'streak' ? (
           <>
-            {/* 3D Chaqmoq va Koji maskoti Rive animatsiyasi (Brilliant Video 1) */}
-            <div className="relative mx-auto w-full max-w-[320px] sm:max-w-[360px] aspect-square flex items-center justify-center">
-              <RiveCanvas
-                file="endstates.e233a7c3.riv"
-                artboard="MAIN_streak-endstate"
-                stateMachine="StreakEndstate"
-                animation="streak-animation"
-                label="Brilliant Streak Celebration"
-                className="is-transparent size-full"
-                fit="contain"
-              />
-            </div>
+            <BrilliantEndstateRive
+              kind="streak"
+              variant={0}
+              dark={dark}
+              label="Brilliant Streak Celebration"
+              className="mt-[6vh] aspect-square w-full max-w-[340px] shrink-0"
+              fallback={<BrilliantStreakIcon size={96} />}
+            />
 
-            {/* Raqam va Matn */}
-            <div className="mt-3 sm:mt-4">
-              <h1
-                id="streak-celebration-title"
-                className="font-display text-[56px] sm:text-[64px] font-black leading-none tracking-tight tabular-nums text-pfg"
-              >
-                {streak}
-              </h1>
+            <h1
+              id="streak-celebration-title"
+              className="mt-2 font-display text-[64px] font-black leading-none tabular-nums"
+              style={{
+                color: stage >= 2 ? undefined : LIME,
+                transform: stage >= 2 ? 'scale(1)' : 'scale(0.85)',
+                opacity: stage >= 1 ? 1 : 0,
+                transition: 'transform 500ms cubic-bezier(0.34,1.56,0.64,1), color 300ms',
+              }}
+            >
+              {stage >= 2 ? streak : 0}
+            </h1>
 
-              <p className="mt-2 text-[18px] sm:text-[20px] font-extrabold tracking-tight text-pfg">
-                {streak === 1
-                  ? isRu
-                    ? 'Вы начали новую серию!'
-                    : 'Yangi seriyani boshladingiz!'
-                  : isRu
-                  ? `${streak}-дневная серия!`
-                  : `${streak} kunlik seriya!`}
-              </p>
-            </div>
+            <p className="mt-2 text-[17px] font-extrabold tracking-tight text-center" style={fade(stage >= 3)}>
+              {title}
+            </p>
 
-            {/* 3 kunlik Brilliant faollik nuqtalari (Yesterday, Today, Tomorrow) */}
-            <div className="mt-6 flex items-center justify-center gap-7 sm:gap-9">
-              {daysInfo.map((day, idx) => {
-                const isToday = day.status === 'today'
-                const isDone = day.status === 'done'
-                return (
-                  <div key={idx} className="flex flex-col items-center gap-1.5">
-                    <div
-                      className={`grid size-9 sm:size-10 place-items-center rounded-full transition-all ${
-                        isToday
-                          ? 'bg-[#A8D31D] text-black shadow-[0_0_16px_rgba(168,211,29,0.55)] scale-110'
-                          : isDone
-                          ? 'border-2 border-[#A8D31D] text-[#A8D31D] bg-[#A8D31D]/10'
-                          : 'border-2 border-pline text-psubtle bg-psurface/40'
-                      }`}
-                    >
-                      {isToday || isDone ? (
-                        <Check size={18} strokeWidth={3} className={isToday ? 'text-black' : 'text-[#A8D31D]'} />
-                      ) : null}
-                    </div>
-                    <span
-                      className={`text-[12px] font-bold ${
-                        isToday ? 'text-[#85a812] dark:text-[#A8D31D] font-extrabold' : 'text-pmuted'
-                      }`}
-                    >
-                      {day.name}
-                    </span>
+            <div className="mt-6 flex items-start justify-center gap-6" style={fade(stage >= 4)}>
+              {days.map((d) => (
+                <div key={d.name} className="flex flex-col items-center gap-1.5">
+                  <div
+                    className={`grid size-10 place-items-center rounded-full ${
+                      d.active ? '' : 'border-2 border-pline bg-pcard'
+                    }`}
+                    style={d.active ? { background: LIME } : undefined}
+                  >
+                    {d.active && <BrilliantStreakIcon size={18} className="text-black" />}
                   </div>
-                )
-              })}
+                  <span className={`text-[12px] font-bold ${d.active ? 'text-pfg' : 'text-pmuted'}`}>{d.name}</span>
+                </div>
+              ))}
             </div>
           </>
         ) : (
           <>
-            {/* Streak Charge Batareya animatsiyasi (Brilliant Video 2) */}
-            <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[320px] aspect-square flex items-center justify-center">
-              <RiveCanvas
-                file="endstates.e233a7c3.riv"
-                artboard="Streaks Forgive"
-                stateMachine="StreaksForgiveVM"
-                label="Brilliant Streak Charge"
-                className="is-transparent size-full"
-                fit="contain"
-              />
-            </div>
-
-            <div className="mt-4 max-w-[320px]">
-              <h1
-                id="streak-celebration-title"
-                className="font-display text-[26px] sm:text-[28px] font-black leading-tight text-pfg"
-              >
-                {isRu ? 'Вы получили 1 заряд серии!' : '1 ta Seriya himoyasiga ega bo‘ldingiz!'}
-              </h1>
-
-              <p className="mt-2.5 text-[14px] sm:text-[15px] font-medium leading-relaxed text-pmuted">
-                {isRu
-                  ? 'С зарядом серии вы можете пропустить один день обучения без потери вашей серии.'
-                  : 'Seriya himoyasi bilan dars o‘tkazib yuborsangiz ham seriyangiz bekor bo‘lmaydi.'}
-              </p>
-            </div>
+            <BrilliantEndstateRive
+              kind="charge"
+              dark={dark}
+              label="Brilliant Streak Charge"
+              className="mt-[10vh] aspect-square w-full max-w-[300px] shrink-0"
+              fallback={<BrilliantStreakIcon size={96} />}
+            />
+            <h1 id="streak-celebration-title" className="mt-2 font-display text-[24px] font-black leading-tight text-center">
+              {isRu ? 'Вы получили 1 заряд серии!' : '1 ta seriya zaryadini oldingiz!'}
+            </h1>
+            <p className="mt-2 max-w-[320px] text-center text-[14px] font-medium leading-relaxed text-pmuted">
+              {isRu
+                ? 'С зарядом серии можно пропустить день, не потеряв серию.'
+                : 'Seriya zaryadi bilan bir kunni o‘tkazib yuborsangiz ham seriyangiz saqlanadi.'}
+            </p>
           </>
         )}
       </div>
 
-      {/* Pastki CTA Tugma (Brilliant 1:1 Inverted 3D / Primary Pill Tugmasi) */}
-      <div className="relative z-10 w-full max-w-[380px] mx-auto pb-2">
-        <Button
-          variant="secondary"
-          size="lg"
-          block
-          onClick={handleContinue}
-          className="h-13 rounded-full text-base font-extrabold shadow-sm active:scale-[0.98] transition-transform"
-        >
+      <div className="relative z-10 w-full max-w-[420px] mx-auto px-5 pt-3 pb-[calc(1rem+var(--safe-bottom,0px))]">
+        <Button variant="secondary" size="lg" block onClick={handleContinue} className="rounded-full font-extrabold">
           {isRu ? 'Продолжить' : 'Davom etish'}
         </Button>
       </div>
