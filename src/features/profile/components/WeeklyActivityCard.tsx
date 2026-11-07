@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Flame, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
+import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
 import { type useT } from '../../../shared/i18n'
 import { haptics } from '../../../platform/haptics'
 import { cn } from '../../../shared/lib/cn'
@@ -129,7 +130,7 @@ export function WeeklyActivityCard({ name, xp, streak, tt }: WeeklyActivityCardP
           </p>
           {streak > 0 && (
             <span className="inline-flex items-center gap-1 rounded-full bg-psurface px-2 py-0.5 text-[11px] font-bold text-porange">
-              <Flame size={12} strokeWidth={2.5} />
+              <BrilliantStreakIcon size={13} className="text-[#A8D31D]" />
               {streak}
             </span>
           )}

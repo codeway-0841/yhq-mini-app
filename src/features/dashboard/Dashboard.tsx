@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -68,6 +68,11 @@ export default function Dashboard() {
   const level = levelFromXp(xp)
   const { milestone, levelUp, closeMilestone, closeLevelUp, previewMilestone } =
     useCelebrations(level, dailyStreak, subject.id)
+  useEffect(() => {
+    if (typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('streak_preview') === 'true') {
+      previewMilestone(3)
+    }
+  }, [previewMilestone])
 
   // Pull-to-refresh — pastga tortganda barcha ma'lumotlar yangilanadi
   const ptr = usePullToRefresh(async () => {

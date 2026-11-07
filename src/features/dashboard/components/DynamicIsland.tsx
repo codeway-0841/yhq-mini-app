@@ -7,10 +7,10 @@ import {
   ShoppingBag,
   Trophy,
   LayoutGrid,
-  Flame,
   Sparkles,
   Play,
 } from 'lucide-react'
+import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import { useAppStore } from '../../../shared/store/useAppStore'
@@ -280,7 +280,7 @@ export default function DynamicIsland() {
                   className="flex items-center gap-1.5 active:scale-95 transition-transform"
                   title={tt('intizomTitle')}
                 >
-                  <Flame size={17} className="text-amber-500 fill-amber-500/30" />
+                  <BrilliantStreakIcon size={16} className="text-[#A8D31D]" />
                   <span className="text-[13px] font-bold tracking-tight text-slate-800 dark:text-white">
                     {dailyStreak} {tt('daysWord')}
                   </span>

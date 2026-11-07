@@ -7,7 +7,6 @@ import {
   LayoutGrid,
   Trophy,
   ShoppingBag,
-  Flame,
   ChevronDown,
   User,
   Settings,
@@ -24,6 +23,7 @@ import { avatarSrcFor } from '../api'
 import SettingsModal from './SettingsModal'
 import PremiumIcon from './PremiumIcon'
 import CoinIcon from './CoinIcon'
+import BrilliantStreakIcon from './BrilliantStreakIcon'
 import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
 import { cn } from '../lib/cn'
@@ -206,7 +206,7 @@ export default function DesktopSidebar() {
                   title={tt('intizomTitle')}
                   className="flex flex-col items-center gap-0.5 transition-colors hover:text-orange-500 cursor-pointer w-full py-0.5"
                 >
-                  <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
+                  <BrilliantStreakIcon size={16} className="text-[#A8D31D] shrink-0" />
                   <span>{streak || 0}</span>
                 </button>
                 <span className="w-5 h-px bg-pline" aria-hidden="true" />
@@ -228,7 +228,7 @@ export default function DesktopSidebar() {
                   title={tt('intizomTitle')}
                   className="flex items-center gap-1.5 transition-colors hover:text-orange-500 cursor-pointer"
                 >
-                  <Flame size={15} className="text-orange-500 fill-orange-500 shrink-0" />
+                  <BrilliantStreakIcon size={16} className="text-[#A8D31D] shrink-0" />
                   <span>{streak || 0}</span>
                 </button>
                 <span className="h-3.5 w-px bg-pline" aria-hidden="true" />

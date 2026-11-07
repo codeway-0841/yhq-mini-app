@@ -17,6 +17,8 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
+import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
+import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import LessonExercise from './LessonExercise'
 import './rus-lesson-feedback.css'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
@@ -116,6 +118,7 @@ export default function LessonRunner({
   const [answers, setAnswers] = useState<DarslikAnswers>({})
   const [index, setIndex] = useState(0)
   const [phase, setPhase] = useState<Phase>('exercise')
+  const [showStreakModal, setShowStreakModal] = useState(false)
   const [feedback, setFeedback] = useState<DarslikAnswerFeedback | null>(null)
   const [revealed, setRevealed] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
@@ -461,6 +464,7 @@ export default function LessonRunner({
             <p className="mt-1 text-[13px] leading-relaxed text-pmuted">{tt('rusDarslikCheckLoadingHint')}</p>
           </div>
         </div>
+
       </div>
     )
   }
@@ -559,14 +563,23 @@ export default function LessonRunner({
                       <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
                     </div>
 
-                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (typeof result.dailyStreak === 'number' && result.dailyStreak > 0) {
+                          setShowStreakModal(true)
+                        }
+                      }}
+                      className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3 transition-transform active:scale-95 cursor-pointer"
+                    >
+                      <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
+                        <BrilliantStreakIcon size={12} className="text-[#A8D31D]" />
                         {tt('rusDarslikLessonStreak')}
                       </span>
                       <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pwarning">
                         {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
                       </p>
-                    </div>
+                    </button>
                   </div>
 
                   <p className="mt-3.5 rounded-2xl bg-psurface px-4 py-2 text-[12.5px] font-bold tabular-nums text-pfg">
@@ -664,6 +677,13 @@ export default function LessonRunner({
             )}
           </div>
         </div>
+
+        {showStreakModal && typeof result.dailyStreak === 'number' && result.dailyStreak > 0 && (
+          <BrilliantStreakModal
+            streak={result.dailyStreak}
+            onClose={() => setShowStreakModal(false)}
+          />
+        )}
       </div>
     )
   }

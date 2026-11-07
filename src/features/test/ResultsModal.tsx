@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { RotateCcw, Share2, X, BookOpen, Award, ImageDown, Check, Minus, Sparkles, Landmark } from 'lucide-react'
+import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -16,6 +17,7 @@ import { Button } from '../../shared/components/ui/button'
 import { SpecCard, SpecRow, SpecList } from '../../shared/components/ui/spec'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
+import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
 import { fetchAchievements, invalidateAchievementsCache } from '../../shared/lib/achievements-cache'
 import { checkAndCelebrateAchievements, getCelebratedBadgeIds, markBadgesCelebrated } from '../../shared/lib/achievement-detector'
@@ -62,8 +64,10 @@ export default function ResultsModal({
   examPresetId?: string | null
 }) {
   const [showCertificate, setShowCertificate] = useState(false)
+  const [showStreakModal, setShowStreakModal] = useState(false)
   const [sharingImage, setSharingImage] = useState(false)
   const [imageSentToBot, setImageSentToBot] = useState(false)
+  const streak     = useAppStore((s) => s.streak)
   const lang       = useAppStore((s) => s.settings.language)
   const isRu       = lang === 'ru'
   const tt         = useT(lang)
@@ -276,6 +280,29 @@ export default function ResultsModal({
                 label={isRu ? 'Монеты' : 'Tangalar'}
                 value={`+${earnedCoins}`}
               />
+            ) : null}
+            {passed && streak > 0 ? (
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => {
+                  haptics.impact('light')
+                  setShowStreakModal(true)
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    setShowStreakModal(true)
+                  }
+                }}
+                className="cursor-pointer"
+              >
+                <SpecRow
+                  tone="amber"
+                  icon={<BrilliantStreakIcon size={16} className="text-[#A8D31D]" />}
+                  label={isRu ? 'Серия дней (нажмите)' : 'Kunlik seriya (bosing)'}
+                  value={`${streak} ${tt('daysWord')}`}
+                />
+              </div>
             ) : null}
           </SpecList>
         </SpecCard>
@@ -537,7 +564,14 @@ export default function ResultsModal({
           </Button>
         </div>
 
-        {showCertificate && (
+        {showStreakModal && streak > 0 && (
+        <BrilliantStreakModal
+          streak={streak}
+          onClose={() => setShowStreakModal(false)}
+        />
+      )}
+
+      {showCertificate && (
           <CertificateModal
             score={correct}
             total={total}

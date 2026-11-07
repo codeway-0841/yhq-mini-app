@@ -4,6 +4,7 @@ import Confetti from '../../../shared/components/Confetti'
 import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { playSound } from '../../../shared/lib/sounds'
 import { Button } from '../../../shared/components/ui/button'
+import { BrilliantStreakModal } from '../../../shared/components/BrilliantStreakModal'
 
 // ══ Streak MILESTONE sahna — 7/14/30/60/100 kunga yetganda to'liq ekran ═════
 export const MILESTONES = [7, 14, 30, 60, 100] as const
@@ -69,21 +70,10 @@ const Scene = memo(function Scene({
   )
 })
 
-export const MilestoneScene = memo(function MilestoneScene({ streak, lang, onClose }: {
-  streak: number; lang: 'uz' | 'ru'; onClose: () => void
+export const MilestoneScene = memo(function MilestoneScene({ streak, onClose }: {
+  streak: number; lang?: 'uz' | 'ru'; onClose: () => void
 }) {
-  return (
-    <Scene
-      icon={Flame}
-      tone="--p-warning"
-      labelId="milestone-title"
-      eyebrow={lang === 'ru' ? 'Новый рекорд' : 'Yangi yutuq'}
-      value={streak}
-      message={lang === 'ru' ? 'дней подряд. Невероятная дисциплина.' : 'kun ketma-ket. Ajoyib intizom.'}
-      cta={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
-      onClose={onClose}
-    />
-  )
+  return <BrilliantStreakModal streak={streak} onClose={onClose} />
 })
 
 // ── Level-Up sahna — yangi darajaga yetganda ────────────────────────────────

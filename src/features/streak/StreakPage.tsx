@@ -11,7 +11,8 @@
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, Flame, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle } from 'lucide-react'
+import { Zap, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle } from 'lucide-react'
+import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { api, type DailyHistory } from '../../shared/api'
@@ -21,6 +22,8 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import ModalShell from '../../shared/components/ModalShell'
 import { Button } from '../../shared/components/ui/button'
+import { RiveCanvas } from '../mascot-studio/RiveCanvas'
+import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
 function heatBg(level: number): string {
@@ -46,13 +49,16 @@ export default function StreakPage() {
   const subject   = useSubjectStore((s) => s.subject)
   const tt        = useT(lang)
 
+  const isPreviewParam = typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('preview') === 'true'
   const today     = todayStr()
   const [history, setHistory]     = useState<DailyHistory | null>(null)
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
   const [selected, setSelected]   = useState(today)                            // 'YYYY-MM-DD'
   const [showInfo, setShowInfo]   = useState(false)
+  const [showCelebration, setShowCelebration] = useState(isPreviewParam)
   // Server javobi kelgunicha — lokal (cache) streak darhol ko'rinadi, 0 emas
   const cachedStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+
 
   const subjectId = subject.id
   useEffect(() => {
@@ -120,17 +126,32 @@ export default function StreakPage() {
 
       {/* Streak hero — yumshoq, qattiq oq borderlarsiz silliq karta */}
       <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">
-        <Flame
-          size={36}
-          strokeWidth={1.75}
-          className={`mb-2 sm:mb-3 ${streak > 0 ? 'text-pwarning' : 'text-psubtle'}`}
-        />
-        <p className="font-display text-[36px] sm:text-[40px] font-bold leading-none tabular-nums text-pfg tracking-tight">
-          {streak} <span className="text-base font-semibold text-psubtle">{tt('daysWord')}</span>
-        </p>
+        <div className="relative mx-auto mb-2 size-28 sm:size-32 flex items-center justify-center">
+          <RiveCanvas
+            file="lightning.6513fd63.riv"
+            artboard="In-Lesson Streak Web"
+            animation="Lightning"
+            label="Lightning Streak"
+            className="is-transparent size-full"
+            fit="contain"
+          />
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <BrilliantStreakIcon size={28} className="text-[#A8D31D]" />
+          <p className="font-display text-[36px] sm:text-[40px] font-bold leading-none tabular-nums text-pfg tracking-tight">
+            {streak} <span className="text-base font-semibold text-psubtle">{tt('daysWord')}</span>
+          </p>
+        </div>
         <p className="text-[12.5px] sm:text-[13px] text-psubtle mt-1.5 sm:mt-2 font-medium">
           {streak > 0 ? tt('intizomStreakGood') : tt('intizomStreakStart')}
         </p>
+        <button
+          type="button"
+          onClick={() => setShowCelebration(true)}
+          className="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:bg-psurface/80 transition-all cursor-pointer shadow-xs active:scale-95"
+        >
+          {lang === 'ru' ? 'Посмотреть анимацию серии ✨' : 'Seriya animatsiyasini ko‘rish ✨'}
+        </button>
         <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5">
           <Trophy size={13} strokeWidth={1.75} className="text-pwarning" />
           <span className="text-[11.5px] sm:text-[12px] font-semibold text-psubtle">
@@ -275,6 +296,13 @@ export default function StreakPage() {
               {tt('gotItBtn')}
             </Button>
         </ModalShell>
+      )}
+
+      {showCelebration && (
+        <BrilliantStreakModal
+          streak={streak > 0 ? streak : 3}
+          onClose={() => setShowCelebration(false)}
+        />
       )}
     </div>
   )
