@@ -17,6 +17,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import LessonExercise from './LessonExercise'
@@ -523,21 +524,39 @@ export default function LessonRunner({
         <div className="flex-1 overflow-y-auto px-4 py-5 pb-[calc(5rem+var(--safe-bottom,0px))]">
           <div className="mx-auto w-full max-w-[460px]">
             <div className="flex flex-col items-center rounded-3xl bg-pcard px-5 py-6 text-center shadow-xs">
-              {lesson && result.passed ? (
-                <div className="relative mb-2 grid size-24 place-items-center rounded-3xl bg-[rgb(var(--p-primary-rgb)/0.10)] p-2.5">
+              {lesson ? (
+                <div className="relative mb-2 grid size-40 sm:size-44 place-items-center">
                   <span className="relative block size-full" data-testid="lesson-result-mascot">
-                    <PathMascot variant="avatar" animation="celebrate" />
+                    <BrilliantEndstateRive
+                      kind="lesson"
+                      lessonTrigger={result.passed ? (accuracyPct === 100 ? 'kojiGem' : 'kojiFlip') : 'kojiFail'}
+                      dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                      label="Brilliant Lesson Complete"
+                      className="size-full"
+                      fallback={<PathMascot variant="avatar" animation={result.passed ? 'celebrate' : 'oops'} />}
+                    />
                   </span>
                 </div>
               ) : (
-                <span className={cn(
-                  'grid size-20 place-items-center rounded-3xl',
-                  result.passed
-                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
-                    : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
-                )}>
-                  {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
-                </span>
+                <div className="relative mb-2 grid size-36 sm:size-40 place-items-center">
+                  <BrilliantEndstateRive
+                    kind="practice"
+                    practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
+                    dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                    label="Brilliant Practice Complete"
+                    className="size-full"
+                    fallback={
+                      <span className={cn(
+                        'grid size-20 place-items-center rounded-3xl',
+                        result.passed
+                          ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
+                          : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                      )}>
+                        {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
+                      </span>
+                    }
+                  />
+                </div>
               )}
               <h3 className="mt-3 font-display text-[24px] font-extrabold tracking-tight text-pfg">
                 {result.passed
@@ -556,11 +575,19 @@ export default function LessonRunner({
                       <p className="mt-1 text-[20px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
                     </div>
 
-                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
+                    <div className="relative flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3 overflow-hidden">
+                      {result.passed && (result.xpEarned ?? 0) > 0 && (
+                        <BrilliantEndstateRive
+                          kind="xp"
+                          dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                          label="XP Starburst"
+                          className="pointer-events-none absolute -inset-4 size-24 opacity-80"
+                        />
+                      )}
+                      <span className="relative z-10 text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
                         XP
                       </span>
-                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
+                      <p className="relative z-10 mt-1 text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
                     </div>
 
                     <button

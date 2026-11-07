@@ -1,8 +1,8 @@
 import { memo, useCallback, useEffect, useMemo, useState } from 'react'
-import { ShieldCheck, Zap, CalendarCheck2 } from 'lucide-react'
+import { ShieldCheck, Zap, CalendarCheck2, Sparkles } from 'lucide-react'
 import { Button } from './ui/button'
 import ModalShell from './ModalShell'
-import { BrilliantEndstateRive } from './BrilliantEndstateRive'
+import { BrilliantEndstateRive, type BrilliantLessonTrigger } from './BrilliantEndstateRive'
 import { BrilliantStreakIcon } from './BrilliantStreakIcon'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -12,49 +12,43 @@ export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
-  /** 'charge' — bevosita "Streak Charge" (batareya) ekranini ochadi */
-  initialView?: 'streak' | 'charge'
+  /** 'charge' — batareya ekrani, 'lesson' — Brilliant Lesson Complete ekrani */
+  initialView?: 'streak' | 'charge' | 'lesson'
   /** `true` bo'lsa, seriya ekranidan so'ng "Davom etish" bosilganda Streak Charge ekraniga o'tadi */
   showCharge?: boolean
+  /** Lesson Complete rejimi uchun XP qiymati */
+  xpEarned?: number
 }
 
 const SHORT_DAYS_UZ = ['Ya', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh']
 const SHORT_DAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 const LIME = '#A8D31D'
 
-/**
- * Brilliant 1:1 "Streak Endstate" (`02_brilliant-koji-mascot-gained-new-streak-animation.mp4`)
- * hamda "Streak Charge" (`08_brilliant-streak-charge-animation.mp4`) to'liq ekranli sahnasi.
- *
- * 1) Streak (`view === 'streak'`):
- *    - 0.0s–0.9s: Oq/qora ekranda Koji chaqmoqli tanga bilan chiqadi.
- *    - 0.9s–3.0s: Tanga nurli sharga aylanadi, pastda `0` ko'rinadi.
- *    - 3.0s: 3D chaqmoq portlab chiqadi, Koji uning atrofida sakraydi, tepadan laym gradient
- *      tushadi va `0` -> `streak` soniga aylanadi.
- *    - 3.4s–3.9s: Sarlavha va 3 kunlik kalendar doiralari chiqadi.
- *
- * 2) Streak Charge (`view === 'charge'`):
- *    - 0.0s–0.35s: Qora 3D batareya korpusiga chaqmoq joylashadi (`Streaks Forgive`).
- *    - 0.35s: Sarlavha, 2 qatorli izoh, "Seriya zaryadi nima?" linki va "Davom etish" tugmasi chiqadi.
- *    - 0.85s: Batareya atrofida elektr chaqmoqlar portlab, ichi yorqin laym (`#D9F938`) quvvatga to'ladi
- *      va ichidagi chaqmoq oq rangga o'tadi (`forgive_entry` -> `forgive_idle`).
- */
+const LESSON_TRIGGERS: { id: BrilliantLessonTrigger; uz: string; ru: string }[] = [
+  { id: 'kojiGem',  uz: '💎 Olmos',   ru: '💎 Кристалл' },
+  { id: 'kojiFlip', uz: '🤸 Salto',   ru: '🤸 Сальто' },
+  { id: 'kojiSpin', uz: '🌀 Aylanish', ru: '🌀 Вращение' },
+  { id: 'koji360',  uz: '✨ 360°',    ru: '✨ 360°' },
+]
+
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   streak,
   onClose,
   isOpen = true,
   initialView = 'streak',
   showCharge = false,
+  xpEarned = 20,
 }: BrilliantStreakModalProps) {
   const language = useAppStore((s) => s.settings.language)
   const isRu = language === 'ru'
   const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
 
-  const [view, setView] = useState<'streak' | 'charge'>(initialView)
+  const [view, setView] = useState<'streak' | 'charge' | 'lesson'>(initialView)
   const [riveNonce, setRiveNonce] = useState(0)
+  const [lessonTrigger, setLessonTrigger] = useState<BrilliantLessonTrigger>('kojiGem')
   // Streak stage: 0 — animatsiya, 1 — `0` ko'rinadi, 2 — son + gradient, 3 — sarlavha, 4 — kalendar
   const [stage, setStage] = useState(0)
-  // Charge stage: 0 — batareya kirishi, 1 — matnlar + link, 2 — elektr zaryad portlashi
+  // Charge / Lesson stage: 0 — Rive kirishi, 1 — matnlar, 2 — portlash / XP
   const [chargeStage, setChargeStage] = useState(0)
   const [showChargeInfo, setShowChargeInfo] = useState(false)
 
@@ -80,7 +74,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
       return () => timers.forEach(window.clearTimeout)
     }
 
-    // view === 'charge' (08_brilliant-streak-charge-animation.mp4 xoreografiyasi)
+    // view === 'charge' yoki 'lesson'
     setChargeStage(reduce ? 2 : 0)
     haptics.impact('light')
     if (reduce) {
@@ -99,7 +93,12 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   }, [isOpen, view, riveNonce])
 
   const handleRiveEvent = useCallback((eventName: string) => {
-    if (eventName === 'play-streak-charge-sound' || eventName === 'play-streak-sound') {
+    if (
+      eventName === 'play-streak-charge-sound' ||
+      eventName === 'play-streak-sound' ||
+      eventName === 'reveal_xp' ||
+      eventName === 'reveal_title'
+    ) {
       haptics.impact('medium')
     }
   }, [])
@@ -199,7 +198,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
               ))}
             </div>
           </>
-        ) : (
+        ) : view === 'charge' ? (
           <>
             {/* 08_brilliant-streak-charge-animation.mp4: Markaziy 3D Batareya Rive sahnasi */}
             <BrilliantEndstateRive
@@ -239,12 +238,85 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
               </button>
             </div>
           </>
+        ) : (
+          <>
+            {/* Brilliant MAIN_lesson-endstate (LessonEndstateVM) + MAIN_xp-starburst */}
+            <BrilliantEndstateRive
+              key={`lesson-${lessonTrigger}-${riveNonce}`}
+              kind="lesson"
+              lessonTrigger={lessonTrigger}
+              dark={dark}
+              nonce={riveNonce}
+              onRiveEvent={handleRiveEvent}
+              label="Brilliant Lesson Complete"
+              className="mt-[6vh] aspect-square w-full max-w-[300px] sm:max-w-[330px] shrink-0"
+              fallback={<Sparkles size={72} className="text-pprimary" />}
+            />
+
+            <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
+              <h1
+                id="streak-celebration-title"
+                className="font-display text-[26px] sm:text-[28px] font-extrabold leading-tight tracking-tight text-pfg"
+              >
+                {isRu ? 'Урок пройден!' : 'Dars yakunlandi!'}
+              </h1>
+
+              <p className="mt-1.5 max-w-[300px] text-[14px] font-medium leading-[1.45] text-pmuted">
+                {isRu
+                  ? 'Отличная работа! Вы освоили новый материал и приблизились к цели.'
+                  : 'Ajoyib natija! Siz yangi mavzuni o‘zlashtirdingiz va maqsadga yaqinlashdingiz.'}
+              </p>
+
+              {/* XP Starburst + Mukofot kapsulasi */}
+              <div className="relative mt-4 flex items-center justify-center">
+                <BrilliantEndstateRive
+                  key={`xp-${riveNonce}`}
+                  kind="xp"
+                  dark={dark}
+                  nonce={riveNonce}
+                  label="XP Starburst"
+                  className="pointer-events-none absolute -inset-8 size-28"
+                />
+                <div className="relative z-10 inline-flex items-center gap-2 rounded-2xl bg-psurface px-5 py-2.5 shadow-xs">
+                  <Sparkles size={18} className="text-[#A8D31D]" />
+                  <span className="font-display text-[20px] font-extrabold tabular-nums text-pfg">
+                    +{xpEarned} XP
+                  </span>
+                </div>
+              </div>
+
+              {/* Koji harakat turlarini sinab ko'rish tugmalari */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
+                {LESSON_TRIGGERS.map((t) => {
+                  const active = lessonTrigger === t.id
+                  return (
+                    <button
+                      key={t.id}
+                      type="button"
+                      onClick={() => {
+                        haptics.selection()
+                        setLessonTrigger(t.id)
+                        setRiveNonce((n) => n + 1)
+                      }}
+                      className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
+                        active
+                          ? 'bg-pfg text-pcanvas shadow-xs'
+                          : 'bg-psurface text-pmuted hover:text-pfg'
+                      }`}
+                    >
+                      {isRu ? t.ru : t.uz}
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          </>
         )}
       </div>
 
       <div
         className="relative z-10 w-full max-w-[420px] mx-auto px-5 pt-3 pb-[calc(1rem+var(--safe-bottom,0px))]"
-        style={view === 'charge' ? fade(chargeStage >= 1) : undefined}
+        style={view !== 'streak' ? fade(chargeStage >= 1) : undefined}
       >
         <Button variant="secondary" size="lg" block onClick={handleContinue} className="rounded-full font-extrabold">
           {isRu ? 'Продолжить' : 'Davom etish'}

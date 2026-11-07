@@ -3,6 +3,7 @@ import { ArrowRight, Check, Sparkles, Trophy } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { useT, type Lang } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { Button } from '../../shared/components/ui/button'
 import { Dialog, DialogBody, DialogHeader, DialogTitle, DialogDescription, DialogClose } from '../../shared/components/ui/dialog'
 import { getModuleIcon } from './module-icons'
@@ -33,14 +34,23 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
   return <Dialog onClose={onStay} className="module-complete text-center" zIndex={60}>
     <Confetti count={24} />
     <DialogClose onClose={onStay} />
-    <DialogHeader className="module-complete-header relative items-center pt-8">
-      <div className="module-medal" aria-hidden="true">
-        <span className="module-medal-orbit" />
-        <span className="module-medal-face"><Trophy size={42} strokeWidth={1.5} /></span>
-        <span className="module-medal-check"><Check size={17} strokeWidth={3} /></span>
-        <Sparkles size={21} className="module-medal-spark" />
-      </div>
-      <p className="mt-4 text-[10px] font-bold uppercase tracking-[.22em] text-psuccess">{tt('pathBravo')}</p>
+    <DialogHeader className="module-complete-header relative items-center pt-6">
+      <BrilliantEndstateRive
+        kind="lesson"
+        lessonTrigger={courseDone ? 'koji360' : 'kojiGem'}
+        dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+        label="Brilliant Module Complete"
+        className="mx-auto size-40 sm:size-44"
+        fallback={
+          <div className="module-medal" aria-hidden="true">
+            <span className="module-medal-orbit" />
+            <span className="module-medal-face"><Trophy size={42} strokeWidth={1.5} /></span>
+            <span className="module-medal-check"><Check size={17} strokeWidth={3} /></span>
+            <Sparkles size={21} className="module-medal-spark" />
+          </div>
+        }
+      />
+      <p className="mt-2 text-[10px] font-bold uppercase tracking-[.22em] text-psuccess">{tt('pathBravo')}</p>
       <DialogTitle className="text-[25px] leading-tight">{tt(courseDone ? 'pathCourseDone' : 'pathModuleDone')}</DialogTitle>
       <DialogDescription className="text-base">{lang === 'ru' ? finished.titleRu : finished.title}</DialogDescription>
     </DialogHeader>

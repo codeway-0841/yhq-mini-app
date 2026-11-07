@@ -5,18 +5,22 @@ import type { Rive } from '@rive-app/webgl2-course'
  * Brilliant `endstates.*.riv` artboardlarini view-model orqali ishga tushiradi.
  *
  * Brilliant bu artboardlarni oddiy animatsiya sifatida emas, ViewModel (`StreakEndstateVM`,
- * `StreaksForgiveVM`) orqali boshqaradi: `darkMode`, `streakAnimation` yoziladi va
- * `playAnimation` trigger'i bosiladi. Shu sababli oddiy `animation=` bilan ochilganda
- * chaqmoq/Koji yoki Streak Charge batareyasi ko'rinmaydi.
+ * `StreaksForgiveVM`, `LessonEndstateVM`, `PracticeEndstateVM`, `XPStarburstVM`) orqali boshqaradi:
+ * `darkMode`, `color`, `streakAnimation` yoziladi va tegishli trigger (`playAnimation`, `kojiGem`,
+ * `play100`, va h.k.) bosiladi.
  */
-export type BrilliantEndstateKind = 'streak' | 'charge'
+export type BrilliantEndstateKind = 'streak' | 'charge' | 'lesson' | 'practice' | 'xp'
+export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
+export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
 
 const FILE = 'endstates.e233a7c3.riv'
 
 const KIND = {
-  // Rive faylidan o'qilgan nomlar (artboard / state machine / view model)
-  streak: { artboard: 'MAIN_streak-endstate', stateMachine: 'StreakEndstate', viewModel: 'StreakEndstateVM' },
-  charge: { artboard: 'Streaks Forgive', stateMachine: 'streaksForgive', viewModel: 'StreaksForgiveVM' },
+  streak:   { artboard: 'MAIN_streak-endstate',   stateMachine: 'StreakEndstate',   viewModel: 'StreakEndstateVM' },
+  charge:   { artboard: 'Streaks Forgive',        stateMachine: 'streaksForgive',   viewModel: 'StreaksForgiveVM' },
+  lesson:   { artboard: 'MAIN_lesson-endstate',   stateMachine: 'LessonEndstate',   viewModel: 'LessonEndstateVM' },
+  practice: { artboard: 'MAIN_practice-endstate', stateMachine: 'PracticeEndstate', viewModel: 'PracticeEndstateVM' },
+  xp:       { artboard: 'MAIN_xp-starburst',      stateMachine: 'XPStarburst',      viewModel: 'XPStarburstVM' },
 } as const
 
 let wasmConfigured = false
@@ -36,14 +40,21 @@ function getBuffer(): Promise<ArrayBuffer> {
 export interface BrilliantEndstateRiveProps {
   kind: BrilliantEndstateKind
   label: string
-  /** `streakAnimation` (0 = Koji bilan birinchi seriya sahnasi) */
+  /**
+   * `streak` uchun `streakAnimation` (0 = Koji bilan birinchi seriya sahnasi, 1 = chaqmoq, 2 = marra);
+   * `lesson` / `practice` uchun `color` indeksi (0 = yashil/ko'k default).
+   */
   variant?: number
+  /** `lesson` kind uchun qaysi Koji animatsiyasi o'ynashi ('kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail') */
+  lessonTrigger?: BrilliantLessonTrigger
+  /** `practice` kind uchun qaysi natija animatsiyasi o'ynashi ('play100' | 'play50Plus' | 'playFailure') */
+  practiceTrigger?: BrilliantPracticeTrigger
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
   className?: string
   fallback?: ReactNode
-  /** Rive ichidagi timeline eventlari (`play-streak-sound`, `play-streak-charge-sound`) */
+  /** Rive ichidagi timeline eventlari (`play-streak-sound`, `play-streak-charge-sound`, `reveal_xp`, `reveal_title`, `transition_up`) */
   onRiveEvent?: (name: string) => void
 }
 
@@ -51,6 +62,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   kind,
   label,
   variant = 0,
+  lessonTrigger = 'kojiGem',
+  practiceTrigger = 'play100',
   dark = false,
   nonce = 0,
   className = '',
@@ -61,10 +74,14 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const instanceRef = useRef<ReturnType<NonNullable<ReturnType<Rive['viewModelByName']>>['instance']> | null>(null)
   const darkRef = useRef(dark)
   const variantRef = useRef(variant)
+  const lessonTriggerRef = useRef(lessonTrigger)
+  const practiceTriggerRef = useRef(practiceTrigger)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
   variantRef.current = variant
+  lessonTriggerRef.current = lessonTrigger
+  practiceTriggerRef.current = practiceTrigger
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -123,11 +140,43 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
           if (!inst) return
           rive.bindViewModelInstance(inst)
           instanceRef.current = inst as never
-          const dm = inst.boolean('darkMode')
-          if (dm) dm.value = darkRef.current
-          const sa = inst.number('streakAnimation')
-          if (sa) sa.value = variantRef.current
-          inst.trigger('playAnimation')?.trigger()
+
+          try {
+            const dm = inst.boolean('darkMode')
+            if (dm) dm.value = darkRef.current
+          } catch { /* darkMode mavjud bo'lmasa o'tkazib yuboriladi */ }
+
+          if (kind === 'streak') {
+            try {
+              const sa = inst.number('streakAnimation')
+              if (sa) sa.value = variantRef.current
+            } catch { /* ignore */ }
+            inst.trigger('playAnimation')?.trigger()
+          } else if (kind === 'charge' || kind === 'xp') {
+            inst.trigger('playAnimation')?.trigger()
+          } else if (kind === 'lesson') {
+            try {
+              const col = inst.number('color')
+              if (col) col.value = variantRef.current
+            } catch { /* ignore */ }
+            const trig = lessonTriggerRef.current
+            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            try {
+              const b = inst.boolean(trig)
+              if (b) b.value = true
+            } catch { /* ignore */ }
+          } else if (kind === 'practice') {
+            try {
+              const col = inst.number('color')
+              if (col) col.value = variantRef.current
+            } catch { /* ignore */ }
+            const trig = practiceTriggerRef.current
+            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            try {
+              const b = inst.boolean(trig)
+              if (b) b.value = true
+            } catch { /* ignore */ }
+          }
         },
         onLoadError: () => { if (!disposed) setFailed(true) },
       })
@@ -143,11 +192,13 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, nonce])
+  }, [kind, nonce, lessonTrigger, practiceTrigger])
 
   useEffect(() => {
-    const dm = (instanceRef.current as unknown as { boolean?: (n: string) => { value: boolean } | null } | null)?.boolean?.('darkMode')
-    if (dm) dm.value = dark
+    try {
+      const dm = (instanceRef.current as unknown as { boolean?: (n: string) => { value: boolean } | null } | null)?.boolean?.('darkMode')
+      if (dm) dm.value = dark
+    } catch { /* ignore */ }
   }, [dark])
 
   return (
