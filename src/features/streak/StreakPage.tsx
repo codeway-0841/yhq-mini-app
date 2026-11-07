@@ -11,7 +11,7 @@
  */
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Zap, Trophy, CalendarCheck2, HeartCrack, ChevronLeft, ChevronRight, Snowflake, HelpCircle } from 'lucide-react'
+import { Zap, Trophy, CalendarCheck2, BatteryCharging, ChevronLeft, ChevronRight, HelpCircle } from 'lucide-react'
 import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
@@ -171,15 +171,26 @@ export default function StreakPage() {
             {tt('intizomBest')}: {history?.bestStreak ?? 0} {tt('daysWord')}
           </span>
         </div>
-        {/* Streak Freeze — Premium himoya (1 kunlik chegara) */}
-        {isPremium && (
-          <div className="mt-2 flex items-center gap-1.5 rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 bg-[rgb(var(--p-blue-rgb)/0.10)] text-pblue">
-            <Snowflake size={13} strokeWidth={1.75} />
-            <span className="text-[11px] sm:text-[11.5px] font-semibold">
-              {lang === 'ru' ? 'Заморозка серии активна (1 день)' : 'Streak Freeze faol (1 kun himoya)'}
-            </span>
-          </div>
-        )}
+        {/* Seriya zaryadi (Streak Charge) — yagona himoya ko'rsatkichi */}
+        <button
+          type="button"
+          onClick={() => {
+            setModalMode('charge')
+            setShowCelebration(true)
+          }}
+          className="mt-2 inline-flex items-center gap-1.5 rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5 bg-[rgb(var(--p-primary-rgb)/0.12)] text-[#A8D31D] hover:opacity-85 transition-all cursor-pointer active:scale-95"
+        >
+          <BatteryCharging size={14} strokeWidth={2} />
+          <span className="text-[11px] sm:text-[11.5px] font-semibold">
+            {isPremium
+              ? lang === 'ru'
+                ? 'Заряд серии активен (2/2 — Premium защита)'
+                : 'Seriya zaryadi faol (2/2 — Premium himoya)'
+              : lang === 'ru'
+                ? 'Заряд серии активен (1/2 — защита монетами)'
+                : 'Seriya zaryadi faol (1/2 — tanga himoyasi)'}
+          </span>
+        </button>
       </div>
 
       {/* Tanlangan kun statistikasi — yumshoq borderless 3 ta blok */}
@@ -286,7 +297,7 @@ export default function StreakPage() {
                 { icon: Zap,            color: 'text-pwarning bg-[rgb(var(--p-warning-rgb)/0.12)]', t: 'hw1Title', d: 'hw1Desc' },
                 { icon: CalendarCheck2, color: 'text-pprimary  bg-[rgb(var(--p-primary-rgb)/0.12)]',  t: 'hw2Title', d: 'hw2Desc' },
                 { icon: Trophy,         color: 'text-pwarning bg-[rgb(var(--p-warning-rgb)/0.12)]', t: 'hw3Title', d: 'hw3Desc' },
-                { icon: HeartCrack,     color: 'text-pdanger   bg-[rgb(var(--p-danger-rgb)/0.12)]',   t: 'hw4Title', d: 'hw4Desc' },
+                { icon: BatteryCharging, color: 'text-[#A8D31D] bg-[rgb(var(--p-primary-rgb)/0.12)]',  t: 'hw4Title', d: 'hw4Desc' },
               ] as const).map(({ icon: Icon, color, t: tKey, d: dKey }) => (
                 <div key={tKey} className="flex items-start gap-3 p-3 rounded-2xl bg-psurface">
                   <div className={`size-10 rounded-xl flex items-center justify-center shrink-0 ${color}`}>
