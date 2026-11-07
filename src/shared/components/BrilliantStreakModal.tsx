@@ -1,32 +1,44 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useState, useMemo } from 'react'
 import { Check } from 'lucide-react'
-import DialogOverlay from './DialogOverlay'
-import Confetti from './Confetti'
 import { Button } from './ui/button'
 import { RiveCanvas } from '../../features/mascot-studio/RiveCanvas'
-import { BrilliantStreakIcon } from './BrilliantStreakIcon'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { useAppStore } from '../store/useAppStore'
-import { useT } from '../i18n'
 
 export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
+  showCharge?: boolean
 }
 
-const WEEK_DAYS_UZ = ['Du', 'Se', 'Cho', 'Pa', 'Ju', 'Sha', 'Ya']
-const WEEK_DAYS_RU = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+const SHORT_DAYS_UZ = ['Ya', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh']
+const SHORT_DAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 
+/**
+ * Brilliant.org 1:1 Streak Endstate & Charge Fullscreen Modal.
+ *
+ * Video 1 (02_brilliant-koji-mascot-gained-new-streak-animation.mp4):
+ * - Soft lime ambient radial glow
+ * - 3D lightning bolt mascot animation (`MAIN_streak-endstate` in `endstates.e233a7c3.riv`)
+ * - Large streak count & "You sparked a new streak!" title
+ * - 3-day active streak dots (Yesterday, Today with checkmark, Tomorrow)
+ * - Full-width pill "Continue" CTA
+ *
+ * Video 2 (08_brilliant-streak-charge-animation.mp4):
+ * - Streak Charge battery animation (`Streaks Forgive` in `endstates.e233a7c3.riv`)
+ * - "You earned 1 Streak Charge!" title & explanation
+ */
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   streak,
   onClose,
   isOpen = true,
+  showCharge = false,
 }: BrilliantStreakModalProps) {
   const language = useAppStore((s) => s.settings.language)
   const isRu = language === 'ru'
-  const tt = useT(language)
+  const [view, setView] = useState<'streak' | 'charge'>('streak')
 
   useEffect(() => {
     if (!isOpen) return
@@ -34,118 +46,178 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
     haptics.impact('heavy')
   }, [isOpen])
 
+  // Bugungi, kechagi va ertangi kunlar hisobi
+  const daysInfo = useMemo(() => {
+    const d = new Date()
+    const todayIndex = d.getDay() // 0 = Ya, 1 = Du...
+    const yesterdayIndex = (todayIndex + 6) % 7
+    const tomorrowIndex = (todayIndex + 1) % 7
+    const names = isRu ? SHORT_DAYS_RU : SHORT_DAYS_UZ
+
+    return [
+      { name: names[yesterdayIndex], status: 'done' },
+      { name: names[todayIndex], status: 'today' },
+      { name: names[tomorrowIndex], status: 'future' },
+    ]
+  }, [isRu])
+
   if (!isOpen) return null
 
-  // Haftaning qaysi kuni (0 = Dushanba, 6 = Yakshanba)
-  const todayIndex = (new Date().getDay() + 6) % 7
-  const weekDays = isRu ? WEEK_DAYS_RU : WEEK_DAYS_UZ
+  const handleContinue = () => {
+    haptics.impact('light')
+    if (showCharge && view === 'streak') {
+      setView('charge')
+      return
+    }
+    onClose()
+  }
 
   return (
-    <DialogOverlay
-      onClose={onClose}
-      position="center"
-      zIndex={70}
-      labelId="streak-modal-title"
-      backdropClassName="bg-black/75 backdrop-blur-md"
-      className="p-4 sm:p-6"
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="streak-celebration-title"
+      className="fixed inset-0 z-[100] flex flex-col justify-between bg-pcanvas text-pfg select-none overflow-y-auto px-5 py-6 sm:py-8 motion-safe:animate-fadeIn"
     >
-      <Confetti count={50} />
-      
-      <div className="relative w-full max-w-[360px] overflow-hidden rounded-3xl bg-pcard p-6 sm:p-7 text-center shadow-2xl border-2 border-pline-strong motion-safe:animate-premiumIn">
-        {/* Yuqori orqa fondagi mayin yorug'lik */}
+      {/* Orqa fondagi mayin ohakrang (lime) ambient gradient nuri */}
+      <div
+        className="pointer-events-none fixed inset-0 flex items-center justify-center opacity-70 dark:opacity-40"
+        aria-hidden="true"
+      >
         <div
-          className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 size-48 rounded-full blur-3xl opacity-30"
-          style={{ background: 'var(--p-warning)' }}
-          aria-hidden="true"
+          className="size-[480px] sm:size-[560px] rounded-full blur-3xl"
+          style={{
+            background: 'radial-gradient(circle, rgba(168,211,29,0.35) 0%, rgba(168,211,29,0.12) 40%, transparent 70%)',
+          }}
         />
-
-        {/* Brilliant 1:1 Rive Streak Lightning Bolt */}
-        <div className="relative mx-auto -mt-2 size-44 sm:size-48 flex items-center justify-center">
-          <RiveCanvas
-            file="lightning.6513fd63.riv"
-            artboard="In-Lesson Streak Web"
-            animation="Lightning"
-            label="Lightning Streak Celebration"
-            className="is-transparent size-full"
-            fit="contain"
-          />
-        </div>
-
-        {/* Sarlavha va son */}
-        <div className="mt-1">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-[#A8D31D]/15 text-[#88b012] dark:text-[#A8D31D] mb-2">
-            <BrilliantStreakIcon size={14} className="text-[#A8D31D]" />
-            {isRu ? 'Серия активна' : 'Seriya faol'}
-          </span>
-          
-          <h2
-            id="streak-modal-title"
-            className="font-display text-[38px] sm:text-[44px] font-black leading-none tracking-tight tabular-nums text-pfg"
-          >
-            {streak}{' '}
-            <span className="text-[22px] sm:text-[24px] font-extrabold text-pmuted">
-              {tt('daysWord')}
-            </span>
-          </h2>
-
-          <p className="mt-2 text-[13.5px] sm:text-[14px] font-medium leading-relaxed text-pmuted">
-            {isRu
-              ? 'Отличная работа! Цель на сегодня выполнена. Не прерывайте серию завтра!'
-              : 'Barakalla! Bugungi o‘rganish maqsadi bajarildi. Ertaga ham seriyani davom ettiring!'}
-          </p>
-        </div>
-
-        {/* 7 kunlik haftalik mini-trek (Brilliant uslubi) */}
-        <div className="mt-5 rounded-2xl bg-psurface p-3 border border-pline">
-          <div className="grid grid-cols-7 gap-1.5 sm:gap-2">
-            {weekDays.map((dayName, idx) => {
-              const isPast = idx < todayIndex
-              const isToday = idx === todayIndex
-              return (
-                <div key={dayName} className="flex flex-col items-center gap-1.5">
-                  <span className="text-[10px] font-bold text-psubtle uppercase">
-                    {dayName}
-                  </span>
-                  <div
-                    className={`size-8 sm:size-9 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
-                      isToday
-                        ? 'bg-pwarning text-white shadow-md scale-105 ring-2 ring-[rgb(var(--p-warning-rgb)/0.5)]'
-                        : isPast
-                        ? 'bg-[rgb(var(--p-warning-rgb)/0.25)] text-pwarning'
-                        : 'bg-pcard text-psubtle border border-pline'
-                    }`}
-                  >
-                    {isToday ? (
-                      <BrilliantStreakIcon size={16} className="text-white animate-pulse" />
-                    ) : isPast ? (
-                      <Check size={15} strokeWidth={2.6} />
-                    ) : (
-                      <span className="size-1.5 rounded-full bg-psubtle/40" />
-                    )}
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-
-        {/* Brilliant 1:1 Inverted 3D / Primary Tugma */}
-        <div className="mt-6">
-          <Button
-            variant="primary"
-            size="lg"
-            block
-            onClick={() => {
-              haptics.impact('light')
-              onClose()
-            }}
-            className="h-12 sm:h-13 text-base font-extrabold shadow-md"
-          >
-            {isRu ? 'Продолжить' : 'Davom etish'}
-          </Button>
-        </div>
       </div>
-    </DialogOverlay>
+
+      {/* Yuqori qism / Bo'sh safe-area */}
+      <div className="w-full flex justify-end">
+        <button
+          type="button"
+          onClick={onClose}
+          className="relative z-10 grid size-10 place-items-center rounded-full bg-psurface/60 text-pmuted hover:text-pfg transition-colors"
+          aria-label={isRu ? 'Закрыть' : 'Yopish'}
+        >
+          ✕
+        </button>
+      </div>
+
+      {/* Asosiy markaziy qism */}
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center text-center my-auto w-full max-w-[420px] mx-auto">
+        {view === 'streak' ? (
+          <>
+            {/* 3D Chaqmoq va Koji maskoti Rive animatsiyasi (Brilliant Video 1) */}
+            <div className="relative mx-auto w-full max-w-[320px] sm:max-w-[360px] aspect-square flex items-center justify-center">
+              <RiveCanvas
+                file="endstates.e233a7c3.riv"
+                artboard="MAIN_streak-endstate"
+                stateMachine="StreakEndstate"
+                animation="streak-animation"
+                label="Brilliant Streak Celebration"
+                className="is-transparent size-full"
+                fit="contain"
+              />
+            </div>
+
+            {/* Raqam va Matn */}
+            <div className="mt-3 sm:mt-4">
+              <h1
+                id="streak-celebration-title"
+                className="font-display text-[56px] sm:text-[64px] font-black leading-none tracking-tight tabular-nums text-pfg"
+              >
+                {streak}
+              </h1>
+
+              <p className="mt-2 text-[18px] sm:text-[20px] font-extrabold tracking-tight text-pfg">
+                {streak === 1
+                  ? isRu
+                    ? 'Вы начали новую серию!'
+                    : 'Yangi seriyani boshladingiz!'
+                  : isRu
+                  ? `${streak}-дневная серия!`
+                  : `${streak} kunlik seriya!`}
+              </p>
+            </div>
+
+            {/* 3 kunlik Brilliant faollik nuqtalari (Yesterday, Today, Tomorrow) */}
+            <div className="mt-6 flex items-center justify-center gap-7 sm:gap-9">
+              {daysInfo.map((day, idx) => {
+                const isToday = day.status === 'today'
+                const isDone = day.status === 'done'
+                return (
+                  <div key={idx} className="flex flex-col items-center gap-1.5">
+                    <div
+                      className={`grid size-9 sm:size-10 place-items-center rounded-full transition-all ${
+                        isToday
+                          ? 'bg-[#A8D31D] text-black shadow-[0_0_16px_rgba(168,211,29,0.55)] scale-110'
+                          : isDone
+                          ? 'border-2 border-[#A8D31D] text-[#A8D31D] bg-[#A8D31D]/10'
+                          : 'border-2 border-pline text-psubtle bg-psurface/40'
+                      }`}
+                    >
+                      {isToday || isDone ? (
+                        <Check size={18} strokeWidth={3} className={isToday ? 'text-black' : 'text-[#A8D31D]'} />
+                      ) : null}
+                    </div>
+                    <span
+                      className={`text-[12px] font-bold ${
+                        isToday ? 'text-[#85a812] dark:text-[#A8D31D] font-extrabold' : 'text-pmuted'
+                      }`}
+                    >
+                      {day.name}
+                    </span>
+                  </div>
+                )
+              })}
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Streak Charge Batareya animatsiyasi (Brilliant Video 2) */}
+            <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[320px] aspect-square flex items-center justify-center">
+              <RiveCanvas
+                file="endstates.e233a7c3.riv"
+                artboard="Streaks Forgive"
+                stateMachine="StreaksForgiveVM"
+                label="Brilliant Streak Charge"
+                className="is-transparent size-full"
+                fit="contain"
+              />
+            </div>
+
+            <div className="mt-4 max-w-[320px]">
+              <h1
+                id="streak-celebration-title"
+                className="font-display text-[26px] sm:text-[28px] font-black leading-tight text-pfg"
+              >
+                {isRu ? 'Вы получили 1 заряд серии!' : '1 ta Seriya himoyasiga ega bo‘ldingiz!'}
+              </h1>
+
+              <p className="mt-2.5 text-[14px] sm:text-[15px] font-medium leading-relaxed text-pmuted">
+                {isRu
+                  ? 'С зарядом серии вы можете пропустить один день обучения без потери вашей серии.'
+                  : 'Seriya himoyasi bilan dars o‘tkazib yuborsangiz ham seriyangiz bekor bo‘lmaydi.'}
+              </p>
+            </div>
+          </>
+        )}
+      </div>
+
+      {/* Pastki CTA Tugma (Brilliant 1:1 Inverted 3D / Primary Pill Tugmasi) */}
+      <div className="relative z-10 w-full max-w-[380px] mx-auto pb-2">
+        <Button
+          variant="secondary"
+          size="lg"
+          block
+          onClick={handleContinue}
+          className="h-13 rounded-full text-base font-extrabold shadow-sm active:scale-[0.98] transition-transform"
+        >
+          {isRu ? 'Продолжить' : 'Davom etish'}
+        </Button>
+      </div>
+    </div>
   )
 })
 

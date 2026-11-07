@@ -128,9 +128,9 @@ export default function StreakPage() {
       <div className="rounded-3xl bg-pcard p-4 sm:p-5 flex flex-col items-center text-center mb-3 sm:mb-4 shadow-xs">
         <div className="relative mx-auto mb-2 size-28 sm:size-32 flex items-center justify-center">
           <RiveCanvas
-            file="lightning.6513fd63.riv"
-            artboard="In-Lesson Streak Web"
-            animation="Lightning"
+            file="endstates.e233a7c3.riv"
+            artboard="MAIN_streak-endstate"
+            stateMachine="StreakEndstate"
             label="Lightning Streak"
             className="is-transparent size-full"
             fit="contain"
