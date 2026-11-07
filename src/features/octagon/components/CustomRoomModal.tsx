@@ -92,7 +92,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             onClick={() => { setTab('create'); setErrorMsg(null) }}
             className={`min-h-11 px-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'create'
-                ? 'bg-ppurple text-ponprimary shadow-sm'
+                ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                 : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -104,7 +104,7 @@ export function CustomRoomModal({ tt, onClose, onStartRoom, onJoinRoom }: Custom
             onClick={() => { setTab('join'); setErrorMsg(null) }}
             className={`min-h-11 px-2 rounded-xl text-xs font-black flex items-center justify-center gap-1.5 transition-all ${
               tab === 'join'
-                ? 'bg-ppurple text-ponprimary shadow-sm'
+                ? 'bg-[#383838] text-white dark:bg-[#f2f2f2] dark:text-[#141414] shadow-xs'
                 : 'text-pmuted hover:text-pfg'
             }`}
           >

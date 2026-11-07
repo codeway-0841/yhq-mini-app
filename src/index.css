@@ -29,13 +29,13 @@
 :root {
   /* v3 — semantik matn darajalari + Apple/Linear surface'lar.
      fg=Primary · fg-muted=Secondary · fg-subtle=Tertiary. */
-  --theme-canvas:      #111215;
-  --theme-surface:     #1a1c22;
-  --theme-elevated:    #242832;
-  --theme-fg:          #f7f7f8;
+  --theme-canvas:      #141414;
+  --theme-surface:     #1e1e1e;
+  --theme-elevated:    #1e1e1e;
+  --theme-fg:          #ffffff;
   --theme-fg-muted:    #9aa0ac;
-  --theme-fg-subtle:   #818896;
-  --theme-line:        #383d47;
+  --theme-fg-subtle:   #8890a0;
+  --theme-line:        #383838;
   --theme-line-strong: #4c4c4c;
   --theme-shadow:      #000000;
   /* Desktop sidebar kengligi (DesktopSidebar.tsx dinamik yangilaydi: 16rem yoki 4rem) */
@@ -56,14 +56,14 @@
 }
 
 body[data-theme='light'] {
-  --theme-canvas:      #f5f3f1;
-  --theme-surface:     #faf8f6;
+  --theme-canvas:      #ffffff;
+  --theme-surface:     #f8f8f8;
   --theme-elevated:    #ffffff;
   --theme-fg:          #121212;
   --theme-fg-muted:    #5b6470;
   --theme-fg-subtle:   #6f7785;
-  --theme-line:        #e4e4e4;
-  --theme-line-strong: #d5d5d5;
+  --theme-line:        #e5e5e5;
+  --theme-line-strong: #cccccc;
   --theme-shadow:      rgba(18, 18, 18, 0.05);
 }
 
@@ -793,20 +793,20 @@ body[data-theme='light'] .ios-glass {
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
   /* v3 — Brilliant obsidian dark (#111215), card (#141414), border (#4c4c4c) */
-  --p-canvas:      #111215; --p-canvas-rgb: 17 18 21;
-  --p-card:        #141414; --p-card-rgb: 20 20 20;
+  --p-canvas:      #141414; --p-canvas-rgb: 20 20 20;
+  --p-card:        #1e1e1e; --p-card-rgb: 30 30 30;
   --p-surface:     #1e1e1e; --p-surface-rgb: 30 30 30;
-  --p-line:        #383d47; --p-line-rgb: 56 61 71;
+  --p-line:        #383838; --p-line-rgb: 56 56 56;
   --p-line-strong: #4c4c4c;
 
-  --p-fg:          #f7f7f8; --p-fg-rgb: 247 247 248;   /* Primary text */
+  --p-fg:          #ffffff; --p-fg-rgb: 255 255 255;   /* Primary text */
   --p-muted:       #9aa0ac; --p-muted-rgb: 154 160 172;   /* Secondary text */
-  --p-subtle:      #818896;   /* Tertiary text */
+  --p-subtle:      #8890a0;   /* Tertiary text */
   --p-disabled:    #575b66;   /* Disabled text */
-  --p-link:        #3b82f6;   /* Link */
+  --p-link:        #105ec7;   /* Link */
 
   /* Aksent — Brilliant Blue (data-accent bilan almashadi) */
-  --p-primary:     #3b82f6;
+  --p-primary:     #105ec7;
   --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
@@ -869,11 +869,11 @@ body {
 
 /* v3 "Light High-Contrast" — Brilliant warm canvas (#f5f3f1) & pure white cards (#ffffff) */
 body[data-theme='light'] {
-  --p-canvas:      #f5f3f1; --p-canvas-rgb: 245 243 241;
+  --p-canvas:      #ffffff; --p-canvas-rgb: 255 255 255;
   --p-card:        #ffffff; --p-card-rgb: 255 255 255;
-  --p-surface:     #faf8f6; --p-surface-rgb: 250 248 246;
-  --p-line:        #e4e4e4; --p-line-rgb: 228 228 228;
-  --p-line-strong: #d5d5d5;
+  --p-surface:     #f8f8f8; --p-surface-rgb: 248 248 248;
+  --p-line:        #e5e5e5; --p-line-rgb: 229 229 229;
+  --p-line-strong: #cccccc;
 
   --p-fg:          #121212; --p-fg-rgb: 18 18 18;
   --p-muted:       #5b6470; --p-muted-rgb: 91 100 112;

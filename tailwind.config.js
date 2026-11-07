@@ -10,7 +10,7 @@ export default {
     // yo'qotadi — hover:* faqat sichqoncha/desktop (pointer: fine) da ishlaydi.
     hoverOnlyWhenSupported: true,
   },
-  darkMode: ['selector', "body[data-theme='dark']"],
+  darkMode: ['selector', '[data-theme="dark"], :root:not([data-theme="light"])'],
   theme: {
     extend: {
       colors: {

@@ -362,9 +362,19 @@ export function IdleScreen({
                 <div className="arena-room-art"><ArenaArtwork /></div>
                 <h3>{language === 'ru' ? 'Вызови друга.' : "Do‘stingni chorla."}</h3>
                 <p>{language === 'ru' ? 'Создайте комнату и отправьте другу код.' : 'Xona yarating va do‘stingizga kodni yuboring.'}</p>
-                <button type="button" disabled={connection !== 'open'} onClick={onCreateRoom} className="arena-primary">
-                  <UserPlus size={19} />{tt('tabCreateRoom')}<ArrowRight size={18} />
-                </button>
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="lg"
+                  block
+                  disabled={connection !== 'open'}
+                  onClick={onCreateRoom}
+                  className="h-14 text-base font-extrabold"
+                >
+                  <UserPlus size={19} />
+                  <span>{tt('tabCreateRoom')}</span>
+                  <ArrowRight size={18} />
+                </Button>
               </div>
             )}
 
@@ -437,14 +447,17 @@ export function IdleScreen({
             <span><Layers size={15} />10 {ru ? 'вопросов' : 'savol'}</span>
             <span><Clock3 size={15} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span>
           </div>
-          <button
+          <Button
             type="button"
+            variant="secondary"
+            size="lg"
+            block
             onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
             disabled={connFailed || !connected}
-            className="arena-primary"
+            className="h-14 text-base font-extrabold"
           >
             <span>{tt('findOpponent')}</span>
-          </button>
+          </Button>
         </section>
 
         <button
