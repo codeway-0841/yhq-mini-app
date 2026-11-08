@@ -6,7 +6,8 @@ import type { Rive } from '@rive-app/webgl2-course'
  *
  * Brilliant bu artboardlarni oddiy animatsiya sifatida emas, ViewModel (`StreakEndstateVM`,
  * `StreaksForgiveVM`, `LessonEndstateVM`, `PracticeEndstateVM`, `XPStarburstVM`,
- * `ProgressCheckIntroVM`, `ProgressCheckEndstateVM`) orqali boshqaradi.
+ * `ProgressCheckIntroVM`, `ProgressCheckEndstateVM`, `RateTheAppVM`, `PremiumNudgeVM`,
+ * `RecommendedLevelCheckVM`) orqali boshqaradi.
  */
 export type BrilliantEndstateKind =
   | 'streak'
@@ -16,6 +17,9 @@ export type BrilliantEndstateKind =
   | 'xp'
   | 'progress-intro'
   | 'progress-endstate'
+  | 'rate-app'
+  | 'premium-lock'
+  | 'recommended-level'
 
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
@@ -25,13 +29,16 @@ const ENDSTATES_FILE = 'endstates.e233a7c3.riv'
 const PROGRESS_CHECK_FILE = 'progress-check.ae37b864.riv'
 
 const KIND = {
-  streak:            { file: ENDSTATES_FILE,      artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',        viewModel: 'StreakEndstateVM' },
-  charge:            { file: ENDSTATES_FILE,      artboard: 'Streaks Forgive',            stateMachine: 'streaksForgive',        viewModel: 'StreaksForgiveVM' },
-  lesson:            { file: ENDSTATES_FILE,      artboard: 'MAIN_lesson-endstate',       stateMachine: 'LessonEndstate',        viewModel: 'LessonEndstateVM' },
-  practice:          { file: ENDSTATES_FILE,      artboard: 'MAIN_practice-endstate',     stateMachine: 'PracticeEndstate',      viewModel: 'PracticeEndstateVM' },
-  xp:                { file: ENDSTATES_FILE,      artboard: 'MAIN_xp-starburst',          stateMachine: 'XPStarburst',           viewModel: 'XPStarburstVM' },
-  'progress-intro':    { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',    viewModel: 'ProgressCheckIntroVM' },
-  'progress-endstate': { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate', viewModel: 'ProgressCheckEndstateVM' },
+  streak:              { file: ENDSTATES_FILE,      artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
+  charge:              { file: ENDSTATES_FILE,      artboard: 'Streaks Forgive',            stateMachine: 'streaksForgive',         viewModel: 'StreaksForgiveVM' },
+  lesson:              { file: ENDSTATES_FILE,      artboard: 'MAIN_lesson-endstate',       stateMachine: 'LessonEndstate',         viewModel: 'LessonEndstateVM' },
+  practice:            { file: ENDSTATES_FILE,      artboard: 'MAIN_practice-endstate',     stateMachine: 'PracticeEndstate',       viewModel: 'PracticeEndstateVM' },
+  xp:                  { file: ENDSTATES_FILE,      artboard: 'MAIN_xp-starburst',          stateMachine: 'XPStarburst',            viewModel: 'XPStarburstVM' },
+  'rate-app':          { file: ENDSTATES_FILE,      artboard: 'MAIN_RateTheApp',            stateMachine: 'RateTheApp',             viewModel: 'RateTheAppVM' },
+  'premium-lock':      { file: ENDSTATES_FILE,      artboard: 'MAIN_premium-nudge',         stateMachine: 'PremiumNudgeLockBounce', viewModel: 'PremiumNudgeVM' },
+  'recommended-level': { file: ENDSTATES_FILE,      artboard: 'MAIN_RecommendedLevelCheck', stateMachine: 'RecommendedLevelCheck',  viewModel: 'RecommendedLevelCheckVM' },
+  'progress-intro':    { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',     viewModel: 'ProgressCheckIntroVM' },
+  'progress-endstate': { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate',  viewModel: 'ProgressCheckEndstateVM' },
 } as const
 
 let wasmConfigured = false
@@ -60,6 +67,15 @@ export interface BrilliantEndstateRiveProps {
   variant?: number
   /** `lesson` kind uchun qaysi Koji animatsiyasi o'ynashi */
   lessonTrigger?: BrilliantLessonTrigger
+  /**
+   * `MAIN_lesson-endstate` ichidagi rejim:
+   * - `isLevel = false, skillCheckMastered = false` -> Oddiy dars yakuni (dumaloq podium + 3D checkmark tanga)
+   * - `isLevel = true, skillCheckMastered = false`  -> Bosqich/Daraja yakuni (raqamli 3D Olmos)
+   * - `skillCheckMastered = true`                   -> Skill Check Mastered (to'lqinli oltin nishon + nurlar)
+   */
+  isLevel?: boolean
+  levelNumber?: number
+  skillCheckMastered?: boolean
   /** `practice` kind uchun qaysi natija animatsiyasi o'ynashi */
   practiceTrigger?: BrilliantPracticeTrigger
   /** `progress-endstate` kind uchun qaysi bosqich imtihoni natijasi o'ynashi */
@@ -77,7 +93,10 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   kind,
   label,
   variant = 0,
-  lessonTrigger = 'kojiGem',
+  lessonTrigger = 'kojiFlip',
+  isLevel = false,
+  levelNumber = 1,
+  skillCheckMastered = false,
   practiceTrigger = 'play100',
   progressTrigger = 'playMastered',
   dark = false,
@@ -91,6 +110,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const darkRef = useRef(dark)
   const variantRef = useRef(variant)
   const lessonTriggerRef = useRef(lessonTrigger)
+  const isLevelRef = useRef(isLevel)
+  const levelNumberRef = useRef(levelNumber)
+  const skillCheckMasteredRef = useRef(skillCheckMastered)
   const practiceTriggerRef = useRef(practiceTrigger)
   const progressTriggerRef = useRef(progressTrigger)
   const onEventRef = useRef(onRiveEvent)
@@ -98,6 +120,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   darkRef.current = dark
   variantRef.current = variant
   lessonTriggerRef.current = lessonTrigger
+  isLevelRef.current = isLevel
+  levelNumberRef.current = levelNumber
+  skillCheckMasteredRef.current = skillCheckMastered
   practiceTriggerRef.current = practiceTrigger
   progressTriggerRef.current = progressTrigger
   onEventRef.current = onRiveEvent
@@ -170,9 +195,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
               if (sa) sa.value = variantRef.current
             } catch { /* ignore */ }
             inst.trigger('playAnimation')?.trigger()
-          } else if (kind === 'charge' || kind === 'xp') {
+          } else if (kind === 'charge' || kind === 'xp' || kind === 'rate-app' || kind === 'premium-lock') {
             inst.trigger('playAnimation')?.trigger()
-          } else if (kind === 'progress-intro') {
+          } else if (kind === 'progress-intro' || kind === 'recommended-level') {
             try {
               const col = inst.number('color')
               if (col) col.value = variantRef.current
@@ -185,21 +210,25 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             } catch { /* ignore */ }
             const trig = progressTriggerRef.current
             try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
-            try {
-              const b = inst.boolean(trig)
-              if (b) b.value = true
-            } catch { /* ignore */ }
           } else if (kind === 'lesson') {
             try {
               const col = inst.number('color')
               if (col) col.value = variantRef.current
             } catch { /* ignore */ }
+            try {
+              const lvl = inst.boolean('level')
+              if (lvl) lvl.value = isLevelRef.current
+            } catch { /* ignore */ }
+            try {
+              const scm = inst.boolean('skillCheckMastered')
+              if (scm) scm.value = skillCheckMasteredRef.current
+            } catch { /* ignore */ }
+            try {
+              const ln = inst.number('levelNumber')
+              if (ln) ln.value = levelNumberRef.current
+            } catch { /* ignore */ }
             const trig = lessonTriggerRef.current
             try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
-            try {
-              const b = inst.boolean(trig)
-              if (b) b.value = true
-            } catch { /* ignore */ }
           } else if (kind === 'practice') {
             try {
               const col = inst.number('color')
@@ -207,10 +236,6 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             } catch { /* ignore */ }
             const trig = practiceTriggerRef.current
             try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
-            try {
-              const b = inst.boolean(trig)
-              if (b) b.value = true
-            } catch { /* ignore */ }
           }
         },
         onLoadError: () => { if (!disposed) setFailed(true) },
@@ -227,7 +252,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, variant, nonce, lessonTrigger, practiceTrigger, progressTrigger])
+  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger])
 
   useEffect(() => {
     try {

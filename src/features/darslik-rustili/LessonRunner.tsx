@@ -529,7 +529,9 @@ export default function LessonRunner({
                   <span className="relative block size-full" data-testid="lesson-result-mascot">
                     <BrilliantEndstateRive
                       kind="lesson"
-                      lessonTrigger={result.passed ? (accuracyPct === 100 ? 'kojiGem' : 'kojiFlip') : 'kojiFail'}
+                      isLevel={false}
+                      skillCheckMastered={false}
+                      lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
                       dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
                       label="Brilliant Lesson Complete"
                       className="size-full"

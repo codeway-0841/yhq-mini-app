@@ -28,11 +28,20 @@ const SHORT_DAYS_UZ = ['Ya', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh']
 const SHORT_DAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 const LIME = '#A8D31D'
 
-const LESSON_TRIGGERS: { id: BrilliantLessonTrigger; uz: string; ru: string }[] = [
-  { id: 'kojiGem',  uz: '💎 Olmos',    ru: '💎 Кристалл' },
-  { id: 'kojiFlip', uz: '🤸 Salto',    ru: '🤸 Сальто' },
-  { id: 'kojiSpin', uz: '🌀 Aylanish', ru: '🌀 Вращение' },
-  { id: 'koji360',  uz: '✨ 360°',     ru: '✨ 360°' },
+type LessonPresetId = 'lesson-check' | 'level-gem' | 'skill-mastered' | 'lesson-fail'
+
+const LESSON_PRESETS: {
+  id: LessonPresetId
+  trigger: BrilliantLessonTrigger
+  isLevel: boolean
+  skillCheckMastered: boolean
+  uz: string
+  ru: string
+}[] = [
+  { id: 'lesson-check',   trigger: 'kojiFlip', isLevel: false, skillCheckMastered: false, uz: '✅ Dars (Tanga)',   ru: '✅ Урок (Диск)' },
+  { id: 'level-gem',      trigger: 'kojiGem',  isLevel: true,  skillCheckMastered: false, uz: '💎 Daraja (Olmos)', ru: '💎 Уровень (Кристалл)' },
+  { id: 'skill-mastered', trigger: 'koji360',  isLevel: true,  skillCheckMastered: true,  uz: '🏅 Mahorat (Oltin)', ru: '🏅 Мастер (Золото)' },
+  { id: 'lesson-fail',    trigger: 'kojiFail', isLevel: false, skillCheckMastered: false, uz: '🔄 Yiqildi',        ru: '🔄 Не сдал' },
 ]
 
 type ProgressMode = 'intro' | BrilliantProgressTrigger
@@ -67,7 +76,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
 
   const [view, setView] = useState<'streak' | 'charge' | 'lesson' | 'progress'>(initialView)
   const [riveNonce, setRiveNonce] = useState(0)
-  const [lessonTrigger, setLessonTrigger] = useState<BrilliantLessonTrigger>('kojiGem')
+  const [lessonPreset, setLessonPreset] = useState<LessonPresetId>('lesson-check')
   const [progressMode, setProgressMode] = useState<ProgressMode>('playMastered')
   const [progressColor, setProgressColor] = useState<number>(0)
   // Streak stage: 0 — animatsiya, 1 — `0` ko'rinadi, 2 — son + gradient, 3 — sarlavha, 4 — kalendar
@@ -264,76 +273,116 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
           </>
         ) : view === 'lesson' ? (
           <>
-            {/* Brilliant MAIN_lesson-endstate (LessonEndstateVM) + MAIN_xp-starburst */}
-            <BrilliantEndstateRive
-              key={`lesson-${lessonTrigger}-${riveNonce}`}
-              kind="lesson"
-              lessonTrigger={lessonTrigger}
-              dark={dark}
-              nonce={riveNonce}
-              onRiveEvent={handleRiveEvent}
-              label="Brilliant Lesson Complete"
-              className="mt-[6vh] aspect-square w-full max-w-[300px] sm:max-w-[330px] shrink-0"
-              fallback={<Sparkles size={72} className="text-pprimary" />}
-            />
+            {(() => {
+              const activePreset = LESSON_PRESETS.find((p) => p.id === lessonPreset) ?? LESSON_PRESETS[0]
+              return (
+                <>
+                  {/* Brilliant MAIN_lesson-endstate (LessonEndstateVM) + MAIN_xp-starburst */}
+                  <BrilliantEndstateRive
+                    key={`lesson-${activePreset.id}-${progressColor}-${riveNonce}`}
+                    kind="lesson"
+                    lessonTrigger={activePreset.trigger}
+                    isLevel={activePreset.isLevel}
+                    levelNumber={progressColor + 1}
+                    skillCheckMastered={activePreset.skillCheckMastered}
+                    variant={progressColor}
+                    dark={dark}
+                    nonce={riveNonce}
+                    onRiveEvent={handleRiveEvent}
+                    label="Brilliant Lesson Complete"
+                    className="mt-[4vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
+                    fallback={<Sparkles size={72} className="text-pprimary" />}
+                  />
 
-            <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
-              <h1
-                id="streak-celebration-title"
-                className="font-display text-[26px] sm:text-[28px] font-extrabold leading-tight tracking-tight text-pfg"
-              >
-                {isRu ? 'Урок пройден!' : 'Dars yakunlandi!'}
-              </h1>
-
-              <p className="mt-1.5 max-w-[300px] text-[14px] font-medium leading-[1.45] text-pmuted">
-                {isRu
-                  ? 'Отличная работа! Вы освоили новый материал и приблизились к цели.'
-                  : 'Ajoyib natija! Siz yangi mavzuni o‘zlashtirdingiz va maqsadga yaqinlashdingiz.'}
-              </p>
-
-              {/* XP Starburst + Mukofot kapsulasi */}
-              <div className="relative mt-4 flex items-center justify-center">
-                <BrilliantEndstateRive
-                  key={`xp-${riveNonce}`}
-                  kind="xp"
-                  dark={dark}
-                  nonce={riveNonce}
-                  label="XP Starburst"
-                  className="pointer-events-none absolute -inset-8 size-28"
-                />
-                <div className="relative z-10 inline-flex items-center gap-2 rounded-2xl bg-psurface px-5 py-2.5 shadow-xs">
-                  <Sparkles size={18} className="text-[#A8D31D]" />
-                  <span className="font-display text-[20px] font-extrabold tabular-nums text-pfg">
-                    +{xpEarned} XP
-                  </span>
-                </div>
-              </div>
-
-              {/* Koji harakat turlarini sinab ko'rish tugmalari */}
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
-                {LESSON_TRIGGERS.map((t) => {
-                  const active = lessonTrigger === t.id
-                  return (
-                    <button
-                      key={t.id}
-                      type="button"
-                      onClick={() => {
-                        haptics.selection()
-                        setLessonTrigger(t.id)
-                        setRiveNonce((n) => n + 1)
-                      }}
-                      className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
-                        active
-                          ? 'bg-pfg text-pcanvas shadow-xs'
-                          : 'bg-psurface text-pmuted hover:text-pfg'
-                      }`}
+                  <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
+                    <h1
+                      id="streak-celebration-title"
+                      className="font-display text-[25px] sm:text-[27px] font-extrabold leading-tight tracking-tight text-pfg"
                     >
-                      {isRu ? t.ru : t.uz}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
+                      {activePreset.id === 'lesson-fail'
+                        ? isRu ? 'Урок не пройден' : 'Dars yakunlanmadi'
+                        : activePreset.id === 'level-gem'
+                          ? isRu ? `Уровень ${progressColor + 1} пройден!` : `${progressColor + 1}-daraja yakunlandi!`
+                          : activePreset.id === 'skill-mastered'
+                            ? isRu ? 'Мастерство подтверждено!' : 'Mahorat tasdiqlandi!'
+                            : isRu ? 'Урок пройден!' : 'Dars yakunlandi!'}
+                    </h1>
+
+                    <p className="mt-1.5 max-w-[300px] text-[13.5px] font-medium leading-[1.45] text-pmuted">
+                      {isRu
+                        ? 'Отличная работа! Вы освоили новый материал и приблизились к цели.'
+                        : 'Ajoyib natija! Siz yangi mavzuni o‘zlashtirdingiz va maqsadga yaqinlashdingiz.'}
+                    </p>
+
+                    {/* XP Starburst + Mukofot kapsulasi */}
+                    <div className="relative mt-3.5 flex items-center justify-center">
+                      <BrilliantEndstateRive
+                        key={`xp-${riveNonce}`}
+                        kind="xp"
+                        dark={dark}
+                        nonce={riveNonce}
+                        label="XP Starburst"
+                        className="pointer-events-none absolute -inset-8 size-28"
+                      />
+                      <div className="relative z-10 inline-flex items-center gap-2 rounded-2xl bg-psurface px-5 py-2 shadow-xs">
+                        <Sparkles size={18} className="text-[#A8D31D]" />
+                        <span className="font-display text-[19px] font-extrabold tabular-nums text-pfg">
+                          +{xpEarned} XP
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* MAIN_lesson-endstate 4 ta vizual holati */}
+                    <div className="mt-3.5 flex flex-wrap items-center justify-center gap-1.5">
+                      {LESSON_PRESETS.map((p) => {
+                        const active = lessonPreset === p.id
+                        return (
+                          <button
+                            key={p.id}
+                            type="button"
+                            onClick={() => {
+                              haptics.selection()
+                              setLessonPreset(p.id)
+                              setRiveNonce((n) => n + 1)
+                            }}
+                            className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
+                              active
+                                ? 'bg-pfg text-pcanvas shadow-xs'
+                                : 'bg-psurface text-pmuted hover:text-pfg'
+                            }`}
+                          >
+                            {isRu ? p.ru : p.uz}
+                          </button>
+                        )
+                      })}
+                    </div>
+
+                    {/* 6 xil Brilliant mavzu ranglari */}
+                    <div className="mt-3 flex items-center justify-center gap-2">
+                      {PROGRESS_COLORS.map((c) => {
+                        const active = progressColor === c.id
+                        return (
+                          <button
+                            key={c.id}
+                            type="button"
+                            aria-label={c.label}
+                            onClick={() => {
+                              haptics.selection()
+                              setProgressColor(c.id)
+                              setRiveNonce((n) => n + 1)
+                            }}
+                            className={`size-6 rounded-full transition-transform cursor-pointer ${
+                              active ? 'scale-125 ring-2 ring-pfg ring-offset-2 ring-offset-pcanvas' : 'opacity-75 hover:opacity-100'
+                            }`}
+                            style={{ backgroundColor: c.hex }}
+                          />
+                        )
+                      })}
+                    </div>
+                  </div>
+                </>
+              )
+            })()}
           </>
         ) : (
           <>

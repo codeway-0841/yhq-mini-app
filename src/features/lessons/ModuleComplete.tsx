@@ -37,7 +37,11 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
     <DialogHeader className="module-complete-header relative items-center pt-6">
       <BrilliantEndstateRive
         kind="lesson"
+        isLevel={true}
+        levelNumber={finished.id}
+        skillCheckMastered={courseDone}
         lessonTrigger={courseDone ? 'koji360' : 'kojiGem'}
+        variant={finished.id % 6}
         dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
         label="Brilliant Module Complete"
         className="mx-auto size-40 sm:size-44"
