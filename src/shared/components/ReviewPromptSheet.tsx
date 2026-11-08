@@ -14,6 +14,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ModalShell from './ModalShell'
+import { BrilliantEndstateRive } from './BrilliantEndstateRive'
 import { Button } from './ui/button'
 import { useAppStore } from '../store/useAppStore'
 import { useReviewPromptStore } from '../store/useReviewPromptStore'
@@ -69,6 +70,15 @@ export default function ReviewPromptSheet() {
       zIndex={80}
       backdropClassName="bg-black/60"
     >
+      <div className="relative z-10 mx-auto mb-2 size-36 sm:size-40">
+        <BrilliantEndstateRive
+          kind="rate-app"
+          dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+          label="Brilliant Rate the App"
+          className="size-full"
+        />
+      </div>
+
       <p className="relative z-10 mb-4 px-1 text-center text-[14px] leading-relaxed text-pmuted">
         {tt('reviewPromptBody')}
       </p>

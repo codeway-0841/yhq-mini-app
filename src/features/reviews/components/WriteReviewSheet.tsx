@@ -7,6 +7,7 @@ import { useT } from '@/shared/i18n'
 import { SUBJECTS } from '@/shared/config/subjects'
 import { useToast } from '@/shared/components/ToastContainer'
 import ModalShell from '@/shared/components/ModalShell'
+import { BrilliantEndstateRive } from '@/shared/components/BrilliantEndstateRive'
 
 interface Props {
   onClose: () => void
@@ -84,6 +85,14 @@ export default function WriteReviewSheet({ onClose, onSubmitted }: Props) {
     >
         {/* ── 1. Yulduzli Baholash (Interactive 5 Stars) ───────────────────── */}
         <div className="bg-pcard rounded-2xl p-3.5 mb-3.5 text-center shadow-2xs relative z-10">
+          <div className="mx-auto mb-1 size-32 sm:size-36">
+            <BrilliantEndstateRive
+              kind="rate-app"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Brilliant Rate the App"
+              className="size-full"
+            />
+          </div>
           <div className="flex justify-center items-center gap-2 mb-1.5">
             {[1, 2, 3, 4, 5].map((n) => {
               const filled = n <= rating

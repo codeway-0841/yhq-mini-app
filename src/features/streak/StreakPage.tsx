@@ -55,23 +55,26 @@ export default function StreakPage() {
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
   const [selected, setSelected]   = useState(today)                            // 'YYYY-MM-DD'
   const [showInfo, setShowInfo]   = useState(false)
-  const [modalMode, setModalMode] = useState<'streak' | 'charge' | 'both' | 'lesson' | 'progress'>(() =>
+  const [modalMode, setModalMode] = useState<'streak' | 'charge' | 'both' | 'lesson' | 'progress' | 'rate'>(() =>
     previewParam === 'charge'
       ? 'charge'
       : previewParam === 'lesson'
         ? 'lesson'
         : previewParam === 'progress'
           ? 'progress'
-          : previewParam === 'both'
-            ? 'both'
-            : 'streak',
+          : previewParam === 'rate'
+            ? 'rate'
+            : previewParam === 'both'
+              ? 'both'
+              : 'streak',
   )
   const [showCelebration, setShowCelebration] = useState(
     previewParam === 'true' ||
       previewParam === 'charge' ||
       previewParam === 'both' ||
       previewParam === 'lesson' ||
-      previewParam === 'progress',
+      previewParam === 'progress' ||
+      previewParam === 'rate',
   )
   // Server javobi kelgunicha — lokal (cache) streak darhol ko'rinadi, 0 emas
   const cachedStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
@@ -195,6 +198,16 @@ export default function StreakPage() {
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-psuccess hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
           >
             {lang === 'ru' ? 'Проверка уровня 🛡️' : 'Bosqich imtihoni 🛡️'}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setModalMode('rate')
+              setShowCelebration(true)
+            }}
+            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+          >
+            {lang === 'ru' ? 'Оценка и замки ⭐' : 'Baholash ⭐'}
           </button>
         </div>
         <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5">
@@ -364,7 +377,9 @@ export default function StreakPage() {
                 ? 'lesson'
                 : modalMode === 'progress'
                   ? 'progress'
-                  : 'streak'
+                  : modalMode === 'rate'
+                    ? 'rate'
+                    : 'streak'
           }
           showCharge={modalMode === 'both'}
           onClose={() => setShowCelebration(false)}

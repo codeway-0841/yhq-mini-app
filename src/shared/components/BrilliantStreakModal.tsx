@@ -16,8 +16,8 @@ export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
-  /** 'charge' — batareya ekrani, 'lesson' — Lesson Complete, 'progress' — Progress Check (Intro & Endstate) */
-  initialView?: 'streak' | 'charge' | 'lesson' | 'progress'
+  /** 'charge' — batareya ekrani, 'lesson' — Lesson Complete, 'progress' — Progress Check, 'rate' — Rate App & Premium Lock */
+  initialView?: 'streak' | 'charge' | 'lesson' | 'progress' | 'rate'
   /** `true` bo'lsa, seriya ekranidan so'ng "Davom etish" bosilganda Streak Charge ekraniga o'tadi */
   showCharge?: boolean
   /** Lesson Complete rejimi uchun XP qiymati */
@@ -62,6 +62,14 @@ const PROGRESS_COLORS: { id: number; hex: string; label: string }[] = [
   { id: 2, hex: '#EF4444', label: 'Red' },
 ]
 
+type RatePresetId = 'rate-app' | 'premium-lock' | 'recommended-level'
+
+const RATE_PRESETS: { id: RatePresetId; uz: string; ru: string }[] = [
+  { id: 'rate-app',          uz: '⭐ Baholash (5 yulduz)', ru: '⭐ Оценить (5 звёзд)' },
+  { id: 'premium-lock',      uz: '🔒 Premium qulf',       ru: '🔒 Premium замок' },
+  { id: 'recommended-level', uz: '💎 Tavsiya daraja',     ru: '💎 Рекоменд. уровень' },
+]
+
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   streak,
   onClose,
@@ -74,11 +82,12 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   const isRu = language === 'ru'
   const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
 
-  const [view, setView] = useState<'streak' | 'charge' | 'lesson' | 'progress'>(initialView)
+  const [view, setView] = useState<'streak' | 'charge' | 'lesson' | 'progress' | 'rate'>(initialView)
   const [riveNonce, setRiveNonce] = useState(0)
   const [lessonPreset, setLessonPreset] = useState<LessonPresetId>('lesson-check')
   const [progressMode, setProgressMode] = useState<ProgressMode>('playMastered')
   const [progressColor, setProgressColor] = useState<number>(0)
+  const [ratePreset, setRatePreset] = useState<RatePresetId>('rate-app')
   // Streak stage: 0 — animatsiya, 1 — `0` ko'rinadi, 2 — son + gradient, 3 — sarlavha, 4 — kalendar
   const [stage, setStage] = useState(0)
   // Charge / Lesson / Progress stage: 0 — Rive kirishi, 1 — matnlar, 2 — portlash / XP
@@ -384,7 +393,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
               )
             })()}
           </>
-        ) : (
+        ) : view === 'progress' ? (
           <>
             {/* progress-check.ae37b864.riv: MAIN_ProgressCheckIntro va MAIN_ProgressCheckEndstate */}
             <BrilliantEndstateRive
@@ -475,6 +484,97 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                   )
                 })}
               </div>
+            </div>
+          </>
+        ) : (
+          <>
+            {/* MAIN_RateTheApp / MAIN_premium-nudge / MAIN_RecommendedLevelCheck */}
+            <BrilliantEndstateRive
+              key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
+              kind={ratePreset}
+              variant={progressColor}
+              dark={dark}
+              nonce={riveNonce}
+              onRiveEvent={handleRiveEvent}
+              label="Brilliant Special Endstate"
+              className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
+              fallback={<Sparkles size={72} className="text-pwarning" />}
+            />
+
+            <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
+              <h1
+                id="streak-celebration-title"
+                className="font-display text-[25px] sm:text-[27px] font-extrabold leading-tight tracking-tight text-pfg"
+              >
+                {ratePreset === 'rate-app'
+                  ? isRu ? 'Нравится приложение?' : 'Ilova sizga yoqyaptimi?'
+                  : ratePreset === 'premium-lock'
+                    ? isRu ? 'Откройте полный доступ' : 'To‘liq imkoniyatlarni oching'
+                    : isRu ? 'Рекомендуемый уровень!' : 'Tavsiya etilgan daraja!'}
+              </h1>
+
+              <p className="mt-1.5 max-w-[310px] text-[13.5px] font-medium leading-[1.45] text-pmuted">
+                {ratePreset === 'rate-app'
+                  ? isRu
+                    ? 'Ваша оценка 5 звёзд помогает нам развивать платформу каждый день.'
+                    : 'Sizning 5 yulduzli bahoingiz platformani har kuni yanada yaxshilashga yordam beradi.'
+                  : ratePreset === 'premium-lock'
+                    ? isRu
+                      ? 'Снимите все ограничения с подпиской Premium и учитесь быстрее.'
+                      : 'Premium obuna bilan barcha cheklovlarni olib tashlang va tezroq o‘rganing.'
+                    : isRu
+                      ? 'Мы подобрали оптимальный уровень сложности специально для вас.'
+                      : 'Biz siz uchun eng mos qiyinlik darajasini aniqladik.'}
+              </p>
+
+              {/* 3 ta maxsus Rive artboard tanlagichi */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
+                {RATE_PRESETS.map((r) => {
+                  const active = ratePreset === r.id
+                  return (
+                    <button
+                      key={r.id}
+                      type="button"
+                      onClick={() => {
+                        haptics.selection()
+                        setRatePreset(r.id)
+                        setRiveNonce((n) => n + 1)
+                      }}
+                      className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
+                        active
+                          ? 'bg-pfg text-pcanvas shadow-xs'
+                          : 'bg-psurface text-pmuted hover:text-pfg'
+                      }`}
+                    >
+                      {isRu ? r.ru : r.uz}
+                    </button>
+                  )
+                })}
+              </div>
+
+              {ratePreset === 'recommended-level' && (
+                <div className="mt-3 flex items-center justify-center gap-2">
+                  {PROGRESS_COLORS.map((c) => {
+                    const active = progressColor === c.id
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        aria-label={c.label}
+                        onClick={() => {
+                          haptics.selection()
+                          setProgressColor(c.id)
+                          setRiveNonce((n) => n + 1)
+                        }}
+                        className={`size-6 rounded-full transition-transform cursor-pointer ${
+                          active ? 'scale-125 ring-2 ring-pfg ring-offset-2 ring-offset-pcanvas' : 'opacity-75 hover:opacity-100'
+                        }`}
+                        style={{ backgroundColor: c.hex }}
+                      />
+                    )
+                  })}
+                </div>
+              )}
             </div>
           </>
         )}
