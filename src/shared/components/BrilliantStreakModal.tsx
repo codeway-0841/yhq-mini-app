@@ -2,7 +2,11 @@ import { memo, useCallback, useEffect, useMemo, useState } from 'react'
 import { ShieldCheck, Zap, CalendarCheck2, Sparkles } from 'lucide-react'
 import { Button } from './ui/button'
 import ModalShell from './ModalShell'
-import { BrilliantEndstateRive, type BrilliantLessonTrigger } from './BrilliantEndstateRive'
+import {
+  BrilliantEndstateRive,
+  type BrilliantLessonTrigger,
+  type BrilliantProgressTrigger,
+} from './BrilliantEndstateRive'
 import { BrilliantStreakIcon } from './BrilliantStreakIcon'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -12,8 +16,8 @@ export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
-  /** 'charge' — batareya ekrani, 'lesson' — Brilliant Lesson Complete ekrani */
-  initialView?: 'streak' | 'charge' | 'lesson'
+  /** 'charge' — batareya ekrani, 'lesson' — Lesson Complete, 'progress' — Progress Check (Intro & Endstate) */
+  initialView?: 'streak' | 'charge' | 'lesson' | 'progress'
   /** `true` bo'lsa, seriya ekranidan so'ng "Davom etish" bosilganda Streak Charge ekraniga o'tadi */
   showCharge?: boolean
   /** Lesson Complete rejimi uchun XP qiymati */
@@ -25,10 +29,28 @@ const SHORT_DAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 const LIME = '#A8D31D'
 
 const LESSON_TRIGGERS: { id: BrilliantLessonTrigger; uz: string; ru: string }[] = [
-  { id: 'kojiGem',  uz: '💎 Olmos',   ru: '💎 Кристалл' },
-  { id: 'kojiFlip', uz: '🤸 Salto',   ru: '🤸 Сальто' },
+  { id: 'kojiGem',  uz: '💎 Olmos',    ru: '💎 Кристалл' },
+  { id: 'kojiFlip', uz: '🤸 Salto',    ru: '🤸 Сальто' },
   { id: 'kojiSpin', uz: '🌀 Aylanish', ru: '🌀 Вращение' },
-  { id: 'koji360',  uz: '✨ 360°',    ru: '✨ 360°' },
+  { id: 'koji360',  uz: '✨ 360°',     ru: '✨ 360°' },
+]
+
+type ProgressMode = 'intro' | BrilliantProgressTrigger
+
+const PROGRESS_MODES: { id: ProgressMode; uz: string; ru: string }[] = [
+  { id: 'intro',        uz: '🚀 Kirish (Intro)', ru: '🚀 Старт (Intro)' },
+  { id: 'playMastered', uz: '🏆 100% A’lo',      ru: '🏆 100% Мастер' },
+  { id: 'playPassed',   uz: '✅ O‘tdi',          ru: '✅ Пройден' },
+  { id: 'playPoor',     uz: '🔄 Qayta urinish',  ru: '🔄 Повторить' },
+]
+
+const PROGRESS_COLORS: { id: number; hex: string; label: string }[] = [
+  { id: 0, hex: '#28A745', label: 'Green' },
+  { id: 1, hex: '#3557FF', label: 'Blue' },
+  { id: 4, hex: '#F5B301', label: 'Yellow' },
+  { id: 3, hex: '#FF7A00', label: 'Orange' },
+  { id: 5, hex: '#8B5CF6', label: 'Purple' },
+  { id: 2, hex: '#EF4444', label: 'Red' },
 ]
 
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
@@ -43,12 +65,14 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   const isRu = language === 'ru'
   const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
 
-  const [view, setView] = useState<'streak' | 'charge' | 'lesson'>(initialView)
+  const [view, setView] = useState<'streak' | 'charge' | 'lesson' | 'progress'>(initialView)
   const [riveNonce, setRiveNonce] = useState(0)
   const [lessonTrigger, setLessonTrigger] = useState<BrilliantLessonTrigger>('kojiGem')
+  const [progressMode, setProgressMode] = useState<ProgressMode>('playMastered')
+  const [progressColor, setProgressColor] = useState<number>(0)
   // Streak stage: 0 — animatsiya, 1 — `0` ko'rinadi, 2 — son + gradient, 3 — sarlavha, 4 — kalendar
   const [stage, setStage] = useState(0)
-  // Charge / Lesson stage: 0 — Rive kirishi, 1 — matnlar, 2 — portlash / XP
+  // Charge / Lesson / Progress stage: 0 — Rive kirishi, 1 — matnlar, 2 — portlash / XP
   const [chargeStage, setChargeStage] = useState(0)
   const [showChargeInfo, setShowChargeInfo] = useState(false)
 
@@ -74,7 +98,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
       return () => timers.forEach(window.clearTimeout)
     }
 
-    // view === 'charge' yoki 'lesson'
+    // view === 'charge' | 'lesson' | 'progress'
     setChargeStage(reduce ? 2 : 0)
     haptics.impact('light')
     if (reduce) {
@@ -85,12 +109,12 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
       window.setTimeout(() => setChargeStage(1), 350),
       window.setTimeout(() => {
         setChargeStage(2)
-        playSound('win')
+        playSound(view === 'progress' && progressMode === 'playPoor' ? 'error' : 'win')
         haptics.impact('heavy')
       }, 850),
     ]
     return () => timers.forEach(window.clearTimeout)
-  }, [isOpen, view, riveNonce])
+  }, [isOpen, view, riveNonce, progressMode])
 
   const handleRiveEvent = useCallback((eventName: string) => {
     if (
@@ -238,7 +262,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
               </button>
             </div>
           </>
-        ) : (
+        ) : view === 'lesson' ? (
           <>
             {/* Brilliant MAIN_lesson-endstate (LessonEndstateVM) + MAIN_xp-starburst */}
             <BrilliantEndstateRive
@@ -306,6 +330,99 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                     >
                       {isRu ? t.ru : t.uz}
                     </button>
+                  )
+                })}
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            {/* progress-check.ae37b864.riv: MAIN_ProgressCheckIntro va MAIN_ProgressCheckEndstate */}
+            <BrilliantEndstateRive
+              key={`progress-${progressMode}-${progressColor}-${riveNonce}`}
+              kind={progressMode === 'intro' ? 'progress-intro' : 'progress-endstate'}
+              progressTrigger={progressMode === 'intro' ? 'playMastered' : progressMode}
+              variant={progressColor}
+              dark={dark}
+              nonce={riveNonce}
+              onRiveEvent={handleRiveEvent}
+              label="Brilliant Progress Check"
+              className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
+              fallback={<ShieldCheck size={72} className="text-pprimary" />}
+            />
+
+            <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
+              <h1
+                id="streak-celebration-title"
+                className="font-display text-[25px] sm:text-[27px] font-extrabold leading-tight tracking-tight text-pfg"
+              >
+                {progressMode === 'intro'
+                  ? isRu ? 'Проверка уровня' : 'Bosqich imtihoni'
+                  : progressMode === 'playMastered'
+                    ? isRu ? 'Безупречный результат!' : 'Mukammal natija (100%)!'
+                    : progressMode === 'playPassed'
+                      ? isRu ? 'Испытание пройдено!' : 'Sinov muvaffaqiyatli o‘tildi!'
+                      : isRu ? 'Попробуйте ещё раз' : 'Yana bir bor urinib ko‘ring'}
+              </h1>
+
+              <p className="mt-1.5 max-w-[310px] text-[13.5px] font-medium leading-[1.45] text-pmuted">
+                {progressMode === 'intro'
+                  ? isRu
+                    ? 'Проверьте свои знания по ключевым вопросам и подтвердите мастерство.'
+                    : 'Asosiy savollar bo‘yicha bilimingizni sinovdan o‘tkazing va mahoratingizni tasdiqlang.'
+                  : progressMode === 'playPoor'
+                    ? isRu
+                      ? 'Повторите ошибки и попробуйте пройти проверку снова.'
+                      : 'Xatolarni ko‘rib chiqing va sinovni qayta topshiring.'
+                    : isRu
+                      ? 'Вы успешно подтвердили свои знания на этом этапе!'
+                      : 'Siz ushbu bosqichdagi bilimingizni a’lo darajada tasdiqladingiz!'}
+              </p>
+
+              {/* Progress Check holatlari (Intro / Mastered / Passed / Poor) */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
+                {PROGRESS_MODES.map((m) => {
+                  const active = progressMode === m.id
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      onClick={() => {
+                        haptics.selection()
+                        setProgressMode(m.id)
+                        setRiveNonce((n) => n + 1)
+                      }}
+                      className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
+                        active
+                          ? 'bg-pfg text-pcanvas shadow-xs'
+                          : 'bg-psurface text-pmuted hover:text-pfg'
+                      }`}
+                    >
+                      {isRu ? m.ru : m.uz}
+                    </button>
+                  )
+                })}
+              </div>
+
+              {/* 6 xil Brilliant mavzu ranglari */}
+              <div className="mt-3 flex items-center justify-center gap-2">
+                {PROGRESS_COLORS.map((c) => {
+                  const active = progressColor === c.id
+                  return (
+                    <button
+                      key={c.id}
+                      type="button"
+                      aria-label={c.label}
+                      onClick={() => {
+                        haptics.selection()
+                        setProgressColor(c.id)
+                        setRiveNonce((n) => n + 1)
+                      }}
+                      className={`size-6 rounded-full transition-transform cursor-pointer ${
+                        active ? 'scale-125 ring-2 ring-pfg ring-offset-2 ring-offset-pcanvas' : 'opacity-75 hover:opacity-100'
+                      }`}
+                      style={{ backgroundColor: c.hex }}
+                    />
                   )
                 })}
               </div>

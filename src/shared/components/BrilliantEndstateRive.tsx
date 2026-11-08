@@ -2,39 +2,52 @@ import { memo, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { Rive } from '@rive-app/webgl2-course'
 
 /**
- * Brilliant `endstates.*.riv` artboardlarini view-model orqali ishga tushiradi.
+ * Brilliant `endstates.*.riv` hamda `progress-check.*.riv` artboardlarini view-model orqali ishga tushiradi.
  *
  * Brilliant bu artboardlarni oddiy animatsiya sifatida emas, ViewModel (`StreakEndstateVM`,
- * `StreaksForgiveVM`, `LessonEndstateVM`, `PracticeEndstateVM`, `XPStarburstVM`) orqali boshqaradi:
- * `darkMode`, `color`, `streakAnimation` yoziladi va tegishli trigger (`playAnimation`, `kojiGem`,
- * `play100`, va h.k.) bosiladi.
+ * `StreaksForgiveVM`, `LessonEndstateVM`, `PracticeEndstateVM`, `XPStarburstVM`,
+ * `ProgressCheckIntroVM`, `ProgressCheckEndstateVM`) orqali boshqaradi.
  */
-export type BrilliantEndstateKind = 'streak' | 'charge' | 'lesson' | 'practice' | 'xp'
+export type BrilliantEndstateKind =
+  | 'streak'
+  | 'charge'
+  | 'lesson'
+  | 'practice'
+  | 'xp'
+  | 'progress-intro'
+  | 'progress-endstate'
+
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
+export type BrilliantProgressTrigger = 'playMastered' | 'playPassed' | 'playPoor'
 
-const FILE = 'endstates.e233a7c3.riv'
+const ENDSTATES_FILE = 'endstates.e233a7c3.riv'
+const PROGRESS_CHECK_FILE = 'progress-check.ae37b864.riv'
 
 const KIND = {
-  streak:   { artboard: 'MAIN_streak-endstate',   stateMachine: 'StreakEndstate',   viewModel: 'StreakEndstateVM' },
-  charge:   { artboard: 'Streaks Forgive',        stateMachine: 'streaksForgive',   viewModel: 'StreaksForgiveVM' },
-  lesson:   { artboard: 'MAIN_lesson-endstate',   stateMachine: 'LessonEndstate',   viewModel: 'LessonEndstateVM' },
-  practice: { artboard: 'MAIN_practice-endstate', stateMachine: 'PracticeEndstate', viewModel: 'PracticeEndstateVM' },
-  xp:       { artboard: 'MAIN_xp-starburst',      stateMachine: 'XPStarburst',      viewModel: 'XPStarburstVM' },
+  streak:            { file: ENDSTATES_FILE,      artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',        viewModel: 'StreakEndstateVM' },
+  charge:            { file: ENDSTATES_FILE,      artboard: 'Streaks Forgive',            stateMachine: 'streaksForgive',        viewModel: 'StreaksForgiveVM' },
+  lesson:            { file: ENDSTATES_FILE,      artboard: 'MAIN_lesson-endstate',       stateMachine: 'LessonEndstate',        viewModel: 'LessonEndstateVM' },
+  practice:          { file: ENDSTATES_FILE,      artboard: 'MAIN_practice-endstate',     stateMachine: 'PracticeEndstate',      viewModel: 'PracticeEndstateVM' },
+  xp:                { file: ENDSTATES_FILE,      artboard: 'MAIN_xp-starburst',          stateMachine: 'XPStarburst',           viewModel: 'XPStarburstVM' },
+  'progress-intro':    { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',    viewModel: 'ProgressCheckIntroVM' },
+  'progress-endstate': { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate', viewModel: 'ProgressCheckEndstateVM' },
 } as const
 
 let wasmConfigured = false
-let bufferPromise: Promise<ArrayBuffer> | null = null
+const bufferCache = new Map<string, Promise<ArrayBuffer>>()
 
-function getBuffer(): Promise<ArrayBuffer> {
-  if (!bufferPromise) {
-    bufferPromise = fetch(`/brilliant/${FILE}`).then((r) => {
-      if (!r.ok) throw new Error(`Failed to load /brilliant/${FILE}: HTTP ${r.status}`)
+function getBuffer(file: string): Promise<ArrayBuffer> {
+  let promise = bufferCache.get(file)
+  if (!promise) {
+    promise = fetch(`/brilliant/${file}`).then((r) => {
+      if (!r.ok) throw new Error(`Failed to load /brilliant/${file}: HTTP ${r.status}`)
       return r.arrayBuffer()
     })
-    bufferPromise.catch(() => { bufferPromise = null })
+    promise.catch(() => { bufferCache.delete(file) })
+    bufferCache.set(file, promise)
   }
-  return bufferPromise
+  return promise
 }
 
 export interface BrilliantEndstateRiveProps {
@@ -42,19 +55,21 @@ export interface BrilliantEndstateRiveProps {
   label: string
   /**
    * `streak` uchun `streakAnimation` (0 = Koji bilan birinchi seriya sahnasi, 1 = chaqmoq, 2 = marra);
-   * `lesson` / `practice` uchun `color` indeksi (0 = yashil/ko'k default).
+   * `lesson` / `practice` / `progress-*` uchun `color` indeksi (0 = Green, 1 = Blue, 2 = Red, 3 = Orange, 4 = Yellow, 5 = Purple).
    */
   variant?: number
-  /** `lesson` kind uchun qaysi Koji animatsiyasi o'ynashi ('kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail') */
+  /** `lesson` kind uchun qaysi Koji animatsiyasi o'ynashi */
   lessonTrigger?: BrilliantLessonTrigger
-  /** `practice` kind uchun qaysi natija animatsiyasi o'ynashi ('play100' | 'play50Plus' | 'playFailure') */
+  /** `practice` kind uchun qaysi natija animatsiyasi o'ynashi */
   practiceTrigger?: BrilliantPracticeTrigger
+  /** `progress-endstate` kind uchun qaysi bosqich imtihoni natijasi o'ynashi */
+  progressTrigger?: BrilliantProgressTrigger
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
   className?: string
   fallback?: ReactNode
-  /** Rive ichidagi timeline eventlari (`play-streak-sound`, `play-streak-charge-sound`, `reveal_xp`, `reveal_title`, `transition_up`) */
+  /** Rive ichidagi timeline eventlari */
   onRiveEvent?: (name: string) => void
 }
 
@@ -64,6 +79,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   variant = 0,
   lessonTrigger = 'kojiGem',
   practiceTrigger = 'play100',
+  progressTrigger = 'playMastered',
   dark = false,
   nonce = 0,
   className = '',
@@ -76,12 +92,14 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const variantRef = useRef(variant)
   const lessonTriggerRef = useRef(lessonTrigger)
   const practiceTriggerRef = useRef(practiceTrigger)
+  const progressTriggerRef = useRef(progressTrigger)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
   variantRef.current = variant
   lessonTriggerRef.current = lessonTrigger
   practiceTriggerRef.current = practiceTrigger
+  progressTriggerRef.current = progressTrigger
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -97,7 +115,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       import('@rive-app/webgl2-course'),
       import('@rive-app/webgl2-course/rive.wasm?url'),
       import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
-      getBuffer(),
+      getBuffer(cfg.file),
     ]).then(([pkg, wasmMod, fallbackMod, buffer]) => {
       if (disposed) return
       const mod = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
@@ -154,6 +172,23 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             inst.trigger('playAnimation')?.trigger()
           } else if (kind === 'charge' || kind === 'xp') {
             inst.trigger('playAnimation')?.trigger()
+          } else if (kind === 'progress-intro') {
+            try {
+              const col = inst.number('color')
+              if (col) col.value = variantRef.current
+            } catch { /* ignore */ }
+            inst.trigger('playAnimation')?.trigger()
+          } else if (kind === 'progress-endstate') {
+            try {
+              const col = inst.number('color')
+              if (col) col.value = variantRef.current
+            } catch { /* ignore */ }
+            const trig = progressTriggerRef.current
+            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            try {
+              const b = inst.boolean(trig)
+              if (b) b.value = true
+            } catch { /* ignore */ }
           } else if (kind === 'lesson') {
             try {
               const col = inst.number('color')
@@ -192,7 +227,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, nonce, lessonTrigger, practiceTrigger])
+  }, [kind, variant, nonce, lessonTrigger, practiceTrigger, progressTrigger])
 
   useEffect(() => {
     try {
