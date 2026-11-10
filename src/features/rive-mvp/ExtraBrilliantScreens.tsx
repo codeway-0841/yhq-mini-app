@@ -702,7 +702,12 @@ function AskKojiAiMvp({ ctx }: { ctx: ExtraMvpCtx }) {
   )
 }
 
-/** 11) Gameboard Course Map Node (`icp-node.add6a472.riv` + `koji-gameboard.e2320c48.riv`) */
+const ICP_INIT_BOOLS = { darkMode: false, startIdle: true }
+const ICP_INIT_NUMS = { color: 1, icon: 0 }
+const ICP_INIT_TRIGS = ['kojiAppear']
+const NODE_ALL_INIT_TRIGS = ['koji_appear']
+
+/** 11) Gameboard Course Map Node (`icp-node.add6a472.riv` + `koji-gameboard.e2320c48.riv`) — Brilliant 1:1 */
 function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
   const { lang, dark, nonce, colorVariant, onEvent, onClose } = ctx
   const [completed, setCompleted] = useState(false)
@@ -710,48 +715,71 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
   const [padlock, setPadlock] = useState(false)
   const [premiumNode, setPremiumNode] = useState(false)
   const [progressCheck, setProgressCheck] = useState(false)
-  const [pulse, setPulse] = useState({ name: 'kojiAppear', seq: 1 })
+  const [level, setLevel] = useState(false)
+  const [selected, setSelected] = useState(true)
+  const [hoveredIcp, setHoveredIcp] = useState(false)
+  const [hoveredClassic, setHoveredClassic] = useState(false)
+  const [downIcp, setDownIcp] = useState(false)
+  const [pulseVm, setPulseVm] = useState({ name: 'kojiAppear', seq: 1 })
+  const [pulseSm, setPulseSm] = useState({ name: 'koji_appear', seq: 1 })
+
+  const fireBoth = (vmName: string, smName: string) => {
+    setPulseVm((p) => ({ name: vmName, seq: p.seq + 1 }))
+    setPulseSm((p) => ({ name: smName, seq: p.seq + 1 }))
+    playSound('click')
+    haptics.impact('light')
+  }
+
+  const iconNum = padlock ? 3 : completed && !level ? 1 : 0
 
   return (
     <BrilliantEndstateShell
-      primaryLabel={lang === 'ru' ? 'Появление Koji' : 'Koji chiqishi'}
+      primaryLabel={lang === 'ru' ? 'Появление Koji (Appear)' : 'Koji chiqishi (Appear)'}
       secondaryLabel={lang === 'ru' ? 'Закрыть' : 'Yopish'}
-      onPrimaryClick={() => {
-        setPulse((p) => ({ name: 'kojiAppear', seq: p.seq + 1 }))
-        playSound('click')
-      }}
+      onPrimaryClick={() => fireBoth('kojiAppear', 'koji_appear')}
       onSecondaryClick={onClose}
     >
-      <div className="mx-auto flex w-full max-w-[393px] flex-col items-center gap-4 px-4 pt-12">
-        <div className="grid grid-cols-2 gap-4 w-full max-w-[320px]">
-          <div className="bg-pcard rounded-2xl p-3 flex flex-col items-center gap-1">
-            <div className="size-[120px]">
+      <div className="mx-auto flex w-full max-w-[393px] flex-col items-center gap-3.5 px-4 pt-12 pb-2">
+        <div className="grid grid-cols-2 gap-3 w-full max-w-[340px]">
+          {/* 1. Yangi ICPNodeVM (128x134 Brilliant exact stage) */}
+          <button
+            type="button"
+            onClick={() => fireBoth('kojiEnterLesson', 'koji_enter_lesson')}
+            onPointerEnter={() => setHoveredIcp(true)}
+            onPointerLeave={() => {
+              setHoveredIcp(false)
+              setDownIcp(false)
+            }}
+            onPointerDown={() => setDownIcp(true)}
+            onPointerUp={() => setDownIcp(false)}
+            className="bg-pcard rounded-2xl p-2.5 flex flex-col items-center gap-1 cursor-pointer select-none"
+            style={{ WebkitTapHighlightColor: 'transparent' }}
+          >
+            <div className="h-[134px] w-[128px] shrink-0">
               <MvpRiveStage
                 file="icp-node.add6a472.riv"
                 artboard="Gameboard Node"
                 stateMachine="ICPNode"
                 viewModel="ICPNodeVM"
-                booleans={{
-                  darkMode: dark,
-                  startIdle: true,
-                  completed,
-                  mastered,
-                  padlock,
-                  premiumNode,
-                  progressCheck,
-                }}
-                numbers={{ color: colorVariant, icon: completed ? 1 : 0 }}
-                vmTriggers={['kojiAppear']}
-                pulseVmTrigger={pulse}
+                booleans={ICP_INIT_BOOLS}
+                numbers={ICP_INIT_NUMS}
+                vmTriggers={ICP_INIT_TRIGS}
+                pulseVmTrigger={pulseVm}
                 liveBooleans={{
                   darkMode: dark,
                   completed,
                   mastered,
-                  padlock,
+                  padlock: !completed && padlock,
+                  lockedProgressCheck: !completed && padlock && progressCheck,
                   premiumNode,
                   progressCheck,
+                  level,
+                  select: selected,
+                  hover: hoveredIcp,
+                  cursorDown: downIcp,
+                  startIdle: true,
                 }}
-                liveNumbers={{ color: colorVariant }}
+                liveNumbers={{ color: colorVariant, icon: iconNum }}
                 dark={dark}
                 nonce={nonce}
                 label="ICPNode"
@@ -759,46 +787,96 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
                 onRiveEvent={onEvent}
               />
             </div>
-            <span className="text-[11px] font-bold text-pmuted">ICPNodeVM (Yangi)</span>
-          </div>
+            <span className="text-[11px] font-bold text-pmuted">ICPNodeVM (128×134)</span>
+          </button>
 
-          <div className="bg-pcard rounded-2xl p-3 flex flex-col items-center gap-1">
-            <div className="size-[120px]">
+          {/* 2. Klassik node_all (koji-gameboard.e2320c48.riv — 128x134) */}
+          <button
+            type="button"
+            onClick={() => fireBoth('kojiEnterLesson', 'koji_enter_lesson')}
+            onPointerEnter={() => setHoveredClassic(true)}
+            onPointerLeave={() => setHoveredClassic(false)}
+            className="bg-pcard rounded-2xl p-2.5 flex flex-col items-center gap-1 cursor-pointer select-none"
+            style={{ WebkitTapHighlightColor: 'transparent' }}
+          >
+            <div className="h-[134px] w-[128px] shrink-0">
               <MvpRiveStage
                 file="koji-gameboard.e2320c48.riv"
                 artboard="Gameboard Node"
                 stateMachine="node_all"
+                smTriggers={NODE_ALL_INIT_TRIGS}
+                pulseSmTrigger={pulseSm}
+                liveSmBooleans={{
+                  'dark-mode': dark,
+                  completed,
+                  select: selected,
+                  hover: hoveredClassic,
+                  level,
+                  padlock: !completed && padlock,
+                }}
+                liveSmNumbers={{ color: colorVariant, icon: iconNum }}
                 dark={dark}
                 nonce={nonce}
                 label="Koji Gameboard Node"
                 className="size-full"
               />
             </div>
-            <span className="text-[11px] font-bold text-pmuted">node_all (Klassik)</span>
-          </div>
+            <span className="text-[11px] font-bold text-pmuted">node_all (128×134)</span>
+          </button>
         </div>
 
-        <h1 className="text-[20px] font-extrabold text-pfg">
-          {lang === 'ru' ? 'Узлы карты курса (Gameboard)' : 'Kurs xaritasi tugunlari (Gameboard)'}
-        </h1>
+        <div className="text-center">
+          <h1 className="text-[18px] font-extrabold text-pfg">
+            {lang === 'ru' ? 'Узлы карты курса (Gameboard)' : 'Kurs xaritasi tugunlari (Gameboard)'}
+          </h1>
+          <p className="text-[12px] text-pmuted">
+            {lang === 'ru' ? 'Нажмите узел для kojiEnterLesson' : 'Tugunni bosing — darsga kirish animatsiyasi o‘ynaydi'}
+          </p>
+        </div>
+
+        {/* Boolean holatlar */}
         <div className="flex flex-wrap justify-center gap-1.5">
           {[
+            { label: 'Select', active: selected, toggle: () => setSelected((v) => !v) },
             { label: 'Completed', active: completed, toggle: () => setCompleted((v) => !v) },
             { label: 'Mastered', active: mastered, toggle: () => setMastered((v) => !v) },
             { label: 'Padlock', active: padlock, toggle: () => setPadlock((v) => !v) },
+            { label: 'Level', active: level, toggle: () => setLevel((v) => !v) },
             { label: 'Premium', active: premiumNode, toggle: () => setPremiumNode((v) => !v) },
             { label: 'ProgressCheck', active: progressCheck, toggle: () => setProgressCheck((v) => !v) },
           ].map((btn) => (
             <button
               key={btn.label}
               type="button"
-              onClick={btn.toggle}
+              onClick={() => {
+                playSound('toggle')
+                btn.toggle()
+              }}
               className={cn(
-                'rounded-full border px-3 py-1 text-[12px] font-bold cursor-pointer',
+                'rounded-full border px-2.5 py-1 text-[11px] font-bold cursor-pointer',
                 btn.active ? 'border-pprimary bg-[#3557ff]/15 text-pfg' : 'border-pline text-pmuted',
               )}
             >
               {btn.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Trigger tugmalari */}
+        <div className="flex flex-wrap justify-center gap-1.5">
+          {[
+            { label: 'Appear', vm: 'kojiAppear', sm: 'koji_appear' },
+            { label: 'Appear+Enter', vm: 'kojiAppearEnter', sm: 'koji_appear_enter' },
+            { label: 'Enter Lesson', vm: 'kojiEnterLesson', sm: 'koji_enter_lesson' },
+            { label: 'Disappear', vm: 'kojiDisappear', sm: 'koji_disappear' },
+          ].map((tr) => (
+            <button
+              key={tr.label}
+              type="button"
+              onClick={() => fireBoth(tr.vm, tr.sm)}
+              className="rounded-full border border-plineStrong bg-psurface px-2.5 py-1 text-[11px] font-bold text-pfg cursor-pointer active:scale-95"
+            >
+              {tr.label}
             </button>
           ))}
         </div>

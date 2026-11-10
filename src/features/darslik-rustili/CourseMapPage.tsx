@@ -425,7 +425,7 @@ export default function CourseMapPage({
                           >
                             <span className="cmap-node-art-wrap">
                               {isCurrent || isFocus
-                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} color={nodeColor} />
+                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} locked={isLocked} selected={isFocus} color={nodeColor} />
                                 : <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />}
                             </span>
                             <span className="cmap-node-label">{title}</span>
@@ -447,7 +447,7 @@ export default function CourseMapPage({
                       >
                         <span className="cmap-node-art-wrap">
                           {active.blockId === block.id && active.idx === sections.length
-                            ? <CourseMapNodeArt current={false} src={NODE_ART.check} levelReview color={nodeColor} />
+                            ? <CourseMapNodeArt current={false} src={NODE_ART.check} completed={complete} locked={!complete} selected levelReview color={nodeColor} />
                             : <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />}
                         </span>
                         <span className="cmap-node-label">{tt('rusDarslikUnitCheck')}</span>

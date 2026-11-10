@@ -28,6 +28,9 @@ export interface MvpRiveStageProps {
   /** Mount bo'lgandan keyin dinamik VM boolean/number o'zgartirish */
   liveBooleans?: Record<string, boolean>
   liveNumbers?: Record<string, number>
+  /** Mount bo'lgandan keyin dinamik StateMachine boolean/number o'zgartirish (`node_all` kabi) */
+  liveSmBooleans?: Record<string, boolean>
+  liveSmNumbers?: Record<string, number>
   dark?: boolean
   nonce?: number
   className?: string
@@ -58,6 +61,8 @@ export const MvpRiveStage = memo(function MvpRiveStage({
   pulseVmTrigger,
   liveBooleans,
   liveNumbers,
+  liveSmBooleans,
+  liveSmNumbers,
   dark = false,
   nonce = 0,
   className = '',
@@ -307,6 +312,32 @@ export const MvpRiveStage = memo(function MvpRiveStage({
       }
     }
   }, [liveBooleans, liveNumbers])
+
+  // Dinamik SM boolean & number (`node_all` va h.k. StateMachine inputlari uchun)
+  useEffect(() => {
+    const r = riveRef.current
+    if (!r) return
+    const smName = stateMachine ?? r.stateMachineNames?.[0]
+    if (!smName) return
+    try {
+      const inputs = r.stateMachineInputs(smName) ?? []
+      const byName = new Map(inputs.map((inp) => [inp.name, inp]))
+      if (liveSmBooleans) {
+        for (const [k, v] of Object.entries(liveSmBooleans)) {
+          const inp = byName.get(k)
+          if (inp) inp.value = v
+        }
+      }
+      if (liveSmNumbers) {
+        for (const [k, v] of Object.entries(liveSmNumbers)) {
+          const inp = byName.get(k)
+          if (inp) inp.value = v
+        }
+      }
+    } catch {
+      /* ignore */
+    }
+  }, [liveSmBooleans, liveSmNumbers, stateMachine])
 
   return (
     <div className={`relative ${className}`} role="img" aria-label={label}>

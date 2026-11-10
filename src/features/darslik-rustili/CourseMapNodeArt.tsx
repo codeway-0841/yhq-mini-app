@@ -31,14 +31,28 @@ function setInput(inputs: StateMachineInput[], name: string, value: boolean | nu
 }
 
 /** Only the current and selected nodes mount the Rive animation. */
-export function CourseMapNodeArt({ current, src, completed = false, levelReview = false, color = 1 }: {
+export function CourseMapNodeArt({
+  current,
+  src,
+  completed = false,
+  locked = false,
+  selected = true,
+  levelReview = false,
+  color = 1,
+}: {
   current: boolean
   src: string
   completed?: boolean
+  locked?: boolean
+  selected?: boolean
   levelReview?: boolean
   color?: number
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const inputsRef = useRef<StateMachineInput[]>([])
+  const latestRef = useRef({ current, completed, locked, selected, levelReview, color })
+  latestRef.current = { current, completed, locked, selected, levelReview, color }
+
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
   const [reducedMotion, setReducedMotion] = useState(() =>
     typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,
@@ -92,12 +106,17 @@ export function CourseMapNodeArt({ current, src, completed = false, levelReview 
         onLoad: () => {
           if (disposed || !instance) return
           const inputs = instance.stateMachineInputs(MACHINE) ?? []
+          inputsRef.current = inputs
+          const s = latestRef.current
           const updateTheme = () => setInput(inputs, 'dark-mode', isDarkTheme())
           updateTheme()
-          setInput(inputs, 'color', color)
-          setInput(inputs, 'level', levelReview)
-          setInput(inputs, 'completed', completed)
-          setInput(inputs, 'icon', completed ? 1 : 0)
+          setInput(inputs, 'color', s.color)
+          setInput(inputs, 'level', s.levelReview)
+          setInput(inputs, 'padlock', !s.completed && s.locked)
+          setInput(inputs, 'completed', s.completed)
+          setInput(inputs, 'icon', s.completed && !s.levelReview ? 1 : 0)
+          setInput(inputs, 'select', s.selected)
+          setInput(inputs, 'hover', false)
           resize()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
@@ -105,8 +124,9 @@ export function CourseMapNodeArt({ current, src, completed = false, levelReview 
           frame = window.requestAnimationFrame(() => {
             frame = window.requestAnimationFrame(() => {
               if (disposed) return
-              setInput(inputs, 'select', true)
-              if (current) inputs.find((input) => input.name === 'koji_appear')?.fire()
+              if (latestRef.current.current) {
+                inputs.find((input) => input.name === 'koji_appear')?.fire()
+              }
               setReady(true)
             })
           })
@@ -121,16 +141,41 @@ export function CourseMapNodeArt({ current, src, completed = false, levelReview 
 
     return () => {
       disposed = true
+      inputsRef.current = []
       if (frame) window.cancelAnimationFrame(frame)
       resizeObserver?.disconnect()
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [completed, current, levelReview, color, noAnimation, reducedMotion])
+  }, [noAnimation, reducedMotion])
+
+  useEffect(() => {
+    const inputs = inputsRef.current
+    if (!inputs.length) return
+    const id = window.requestAnimationFrame(() => {
+      try {
+        setInput(inputs, 'color', color)
+        setInput(inputs, 'level', levelReview)
+        setInput(inputs, 'padlock', !completed && locked)
+        setInput(inputs, 'completed', completed)
+        setInput(inputs, 'icon', completed && !levelReview ? 1 : 0)
+        setInput(inputs, 'select', selected)
+        if (current) inputs.find((input) => input.name === 'koji_appear')?.fire()
+      } catch { /* ignore */ }
+    })
+    return () => window.cancelAnimationFrame(id)
+  }, [completed, current, locked, selected, levelReview, color])
 
   return (
     <>
-      <canvas ref={canvasRef} className="cmap-node-rive" aria-hidden="true" style={{ visibility: ready ? 'visible' : 'hidden' }} />
+      <canvas
+        ref={canvasRef}
+        className="cmap-node-rive"
+        aria-hidden="true"
+        style={{ visibility: ready ? 'visible' : 'hidden' }}
+        onPointerEnter={() => setInput(inputsRef.current, 'hover', true)}
+        onPointerLeave={() => setInput(inputsRef.current, 'hover', false)}
+      />
       {!ready && <img className="cmap-node-art" src={src} alt="" width={128} height={134} loading="lazy" />}
       {current && !ready && (
         <span className="cmap-node-mascot" aria-hidden="true">

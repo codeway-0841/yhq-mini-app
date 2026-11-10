@@ -11,10 +11,34 @@ function loadAsset() {
   return asset
 }
 
-export function HomeLessonNode({ color, fallback, completed = false }: { color: number; fallback: string; completed?: boolean }) {
+export function HomeLessonNode({
+  color,
+  fallback,
+  completed = false,
+  locked = false,
+  level = false,
+  selected,
+}: {
+  color: number
+  fallback: string
+  completed?: boolean
+  locked?: boolean
+  level?: boolean
+  selected?: boolean
+}) {
+  const effectiveSelected = selected ?? (!completed && !locked)
   const canvas = useRef<HTMLCanvasElement>(null)
+  const inputsRef = useRef<StateMachineInput[]>([])
+  const latestRef = useRef({ color, completed, locked, level, selected: effectiveSelected })
+  latestRef.current = { color, completed, locked, level, selected: effectiveSelected }
+
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
   const [ready, setReady] = useState(false)
+
+  const setInput = (name: string, value: boolean | number) => {
+    const input = inputsRef.current.find((item) => item.name === name)
+    if (input) input.value = value
+  }
 
   useEffect(() => {
     setReady(false)
@@ -51,6 +75,7 @@ export function HomeLessonNode({ color, fallback, completed = false }: { color: 
         onLoad: () => {
           if (disposed || !instance) return
           const inputs = instance.stateMachineInputs('node_all') ?? []
+          inputsRef.current = inputs
           const set = (name: string, value: boolean | number) => {
             const input: StateMachineInput | undefined = inputs.find((item) => item.name === name)
             if (input) input.value = value
@@ -59,15 +84,19 @@ export function HomeLessonNode({ color, fallback, completed = false }: { color: 
           updateTheme()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
-          set('color', color)
-          set('completed', completed)
-          set('icon', completed ? 1 : 0)
+          const s = latestRef.current
+          set('color', s.color)
+          set('level', s.level)
+          set('padlock', !s.completed && s.locked)
+          set('completed', s.completed)
+          set('icon', s.completed && !s.level ? 1 : 0)
+          set('select', s.selected)
+          set('hover', false)
           resize()
           frame = requestAnimationFrame(() => {
             frame = requestAnimationFrame(() => {
               if (disposed) return
-              if (!completed) {
-                set('select', true)
+              if (!latestRef.current.completed && !latestRef.current.locked) {
                 inputs.find((input) => input.name === 'koji_appear')?.fire()
               }
               setReady(true)
@@ -83,15 +112,36 @@ export function HomeLessonNode({ color, fallback, completed = false }: { color: 
     }).catch(() => { if (!disposed) setReady(false) })
     return () => {
       disposed = true
+      inputsRef.current = []
       if (frame) cancelAnimationFrame(frame)
       resizeObserver?.disconnect()
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [color, completed, noAnimation])
+  }, [noAnimation])
+
+  useEffect(() => {
+    if (!inputsRef.current.length) return
+    const id = requestAnimationFrame(() => {
+      try {
+        setInput('color', color)
+        setInput('level', level)
+        setInput('padlock', !completed && locked)
+        setInput('completed', completed)
+        setInput('icon', completed && !level ? 1 : 0)
+        setInput('select', effectiveSelected)
+      } catch { /* ignore */ }
+    })
+    return () => cancelAnimationFrame(id)
+  }, [color, completed, locked, level, effectiveSelected])
 
   return (
-    <span className="relative block h-14 w-14 shrink-0" aria-hidden="true">
+    <span
+      className="relative block h-14 w-14 shrink-0"
+      aria-hidden="true"
+      onPointerEnter={() => setInput('hover', true)}
+      onPointerLeave={() => setInput('hover', false)}
+    >
       <canvas ref={canvas} className="absolute inset-0 h-full w-full" style={{ visibility: ready ? 'visible' : 'hidden' }} />
       {!ready && <img src={fallback} alt="" className="h-full w-full object-contain" />}
     </span>

@@ -129,8 +129,15 @@ export interface BrilliantEndstateRiveProps {
   levelTitle?: string
   /** `level-insertion` uchun tugun nomlari */
   skillTitles?: string[]
-  /** `icp-node` tugallangan holati */
+  /** `icp-node` tugun holatlari (`ICPNodeVM` 1:1) */
   nodeCompleted?: boolean
+  nodeSelect?: boolean
+  nodeLocked?: boolean
+  nodeLevel?: boolean
+  nodeProgressCheck?: boolean
+  nodeMastered?: boolean
+  nodePremium?: boolean
+  nodeTrigger?: 'kojiAppear' | 'kojiAppearEnter' | 'kojiDisappear' | 'kojiEnterLesson' | 'kojiExitLesson'
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
@@ -155,6 +162,13 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   levelTitle = '',
   skillTitles,
   nodeCompleted = false,
+  nodeSelect = true,
+  nodeLocked = false,
+  nodeLevel = false,
+  nodeProgressCheck = false,
+  nodeMastered = false,
+  nodePremium = false,
+  nodeTrigger = 'kojiAppear',
   dark = false,
   nonce = 0,
   className = '',
@@ -176,6 +190,13 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const levelTitleRef = useRef(levelTitle)
   const skillTitlesRef = useRef(skillTitles)
   const nodeCompletedRef = useRef(nodeCompleted)
+  const nodeSelectRef = useRef(nodeSelect)
+  const nodeLockedRef = useRef(nodeLocked)
+  const nodeLevelRef = useRef(nodeLevel)
+  const nodeProgressCheckRef = useRef(nodeProgressCheck)
+  const nodeMasteredRef = useRef(nodeMastered)
+  const nodePremiumRef = useRef(nodePremium)
+  const nodeTriggerRef = useRef(nodeTrigger)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -191,6 +212,13 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   levelTitleRef.current = levelTitle
   skillTitlesRef.current = skillTitles
   nodeCompletedRef.current = nodeCompleted
+  nodeSelectRef.current = nodeSelect
+  nodeLockedRef.current = nodeLocked
+  nodeLevelRef.current = nodeLevel
+  nodeProgressCheckRef.current = nodeProgressCheck
+  nodeMasteredRef.current = nodeMastered
+  nodePremiumRef.current = nodePremium
+  nodeTriggerRef.current = nodeTrigger
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -306,11 +334,22 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             titles.slice(0, 4).forEach((t, idx) => setStr(`skillTitle0${idx + 1}`, t))
             fire('playAnimation')
           } else if (kind === 'icp-node') {
+            const comp = nodeCompletedRef.current
+            const locked = !comp && nodeLockedRef.current
             setNum('color', variantRef.current)
-            setBool('completed', nodeCompletedRef.current)
+            setBool('completed', comp)
+            setBool('padlock', locked)
+            setBool('lockedProgressCheck', locked && nodeProgressCheckRef.current)
+            setBool('level', nodeLevelRef.current)
+            setBool('progressCheck', nodeProgressCheckRef.current)
+            setBool('mastered', nodeMasteredRef.current)
+            setBool('premiumNode', nodePremiumRef.current)
+            setBool('select', nodeSelectRef.current)
+            setBool('hover', false)
+            setBool('cursorDown', false)
             setBool('startIdle', true)
-            setNum('icon', nodeCompletedRef.current ? 1 : 0)
-            fire('kojiAppear')
+            setNum('icon', locked ? 3 : comp && !nodeLevelRef.current ? 1 : 0)
+            fire(nodeTriggerRef.current)
           } else if (kind === 'progress-endstate') {
             setNum('color', variantRef.current)
             fire(progressTriggerRef.current)
@@ -339,17 +378,52 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle, nodeCompleted])
+  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
 
   useEffect(() => {
+    const inst = instanceRef.current as unknown as {
+      boolean?: (n: string) => { value: boolean } | null
+      number?: (n: string) => { value: number } | null
+    } | null
+    if (!inst) return
     try {
-      const dm = (instanceRef.current as unknown as { boolean?: (n: string) => { value: boolean } | null } | null)?.boolean?.('darkMode')
+      const dm = inst.boolean?.('darkMode')
       if (dm) dm.value = dark
+      if (kind === 'icp-node') {
+        const locked = !nodeCompleted && nodeLocked
+        const setB = (n: string, v: boolean) => { const p = inst.boolean?.(n); if (p) p.value = v }
+        const setN = (n: string, v: number) => { const p = inst.number?.(n); if (p) p.value = v }
+        setB('completed', nodeCompleted)
+        setB('padlock', locked)
+        setB('lockedProgressCheck', locked && nodeProgressCheck)
+        setB('level', nodeLevel)
+        setB('progressCheck', nodeProgressCheck)
+        setB('mastered', nodeMastered)
+        setB('premiumNode', nodePremium)
+        setB('select', nodeSelect)
+        setN('icon', locked ? 3 : nodeCompleted && !nodeLevel ? 1 : 0)
+      }
     } catch { /* ignore */ }
-  }, [dark])
+  }, [dark, kind, nodeCompleted, nodeLocked, nodeLevel, nodeProgressCheck, nodeMastered, nodePremium, nodeSelect])
+
+  const setIcpPointer = (prop: 'hover' | 'cursorDown', val: boolean) => {
+    if (kind !== 'icp-node') return
+    try {
+      const p = (instanceRef.current as unknown as { boolean?: (n: string) => { value: boolean } | null } | null)?.boolean?.(prop)
+      if (p) p.value = val
+    } catch { /* ignore */ }
+  }
 
   return (
-    <div className={`relative ${className}`} role="img" aria-label={label}>
+    <div
+      className={`relative ${className}`}
+      role="img"
+      aria-label={label}
+      onPointerEnter={() => setIcpPointer('hover', true)}
+      onPointerLeave={() => { setIcpPointer('hover', false); setIcpPointer('cursorDown', false) }}
+      onPointerDown={() => setIcpPointer('cursorDown', true)}
+      onPointerUp={() => setIcpPointer('cursorDown', false)}
+    >
       <canvas ref={canvasRef} className="absolute inset-0 size-full" aria-hidden="true" />
       {failed && <div className="absolute inset-0 flex items-center justify-center">{fallback}</div>}
     </div>
