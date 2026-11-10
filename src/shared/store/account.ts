@@ -135,7 +135,7 @@ export function resetAccountToLoggedOut(): void {
   resetAccountState()
   if (typeof window !== 'undefined') {
     const h = window.location.hash
-    if (!h.startsWith('#/verify-email') && !h.startsWith('#/reset-password') && !h.startsWith('#/maskotlar')) {
+    if (!h.startsWith('#/verify-email') && !h.startsWith('#/reset-password') && !h.startsWith('#/maskotlar') && !h.startsWith('#/rive-mvp')) {
       window.location.hash = '#/'
     }
   }

@@ -71,6 +71,7 @@ const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
 const mascotStudioChunk = () => import('./features/mascot-studio/MascotStudioPage')
+const riveMvpChunk      = () => import('./features/rive-mvp/BrilliantMvpPage')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -115,6 +116,7 @@ const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).Li
 const ReviewsPage      = lazy(reviewsChunk)
 const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
 const MascotStudioPage = lazy(mascotStudioChunk)
+const BrilliantMvpPage = lazy(riveMvpChunk)
 
 // NAVIGATSIYA "FLASH" FIX (2026-09-01): react-router v7 joylashuv
 // yangilanishini React.startTransition ichida bajaradi — lazy chunk hali
@@ -134,7 +136,7 @@ const routeChunkPrefetchers = [
   interactiveLessonsChunk, reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
   aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
-  liveListChunk, mascotStudioChunk, notFoundChunk, onboardingChunk, loginChunk,
+  liveListChunk, mascotStudioChunk, riveMvpChunk, notFoundChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
 
@@ -342,7 +344,20 @@ export default function App() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="/rive-mvp"  element={<BrilliantMvpPage />} />
             <Route path="*" element={<MascotStudioPage />} />
+          </Routes>
+        </Suspense>
+      </HashRouter>
+    )
+  } else if (pathname.startsWith('/rive-mvp') || hash.startsWith('#/rive-mvp')) {
+    content = (
+      <HashRouter>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/rive-mvp" element={<BrilliantMvpPage />} />
+            <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="*" element={<BrilliantMvpPage />} />
           </Routes>
         </Suspense>
       </HashRouter>
@@ -415,6 +430,7 @@ export default function App() {
             <Route path="/sharhlar"   element={<ReviewsPage />} />
             <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
             <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="/rive-mvp"  element={<BrilliantMvpPage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />
           </Routes>

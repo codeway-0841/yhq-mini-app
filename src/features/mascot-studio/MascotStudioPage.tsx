@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { PageHeader } from '../../shared/components/ui/page-header'
+import { Button } from '../../shared/components/ui/button'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { goBack } from '../../shared/lib/navigation'
@@ -59,7 +60,17 @@ export default function MascotStudioPage() {
 
   return (
     <main className="mascot-studio px-4 pb-8">
-      <PageHeader title={tt('mascotStudioTitle')} size="md" onBack={() => goBack(navigate)} className="-mx-4" />
+      <PageHeader
+        title={tt('mascotStudioTitle')}
+        size="md"
+        onBack={() => goBack(navigate)}
+        className="-mx-4"
+        actions={
+          <Button variant="primary" size="sm" onClick={() => navigate('/rive-mvp')}>
+            Brilliant 1:1 MVP
+          </Button>
+        }
+      />
       <p className="mascot-studio-intro">{tt('mascotStudioIntro')}</p>
       <div className="mascot-grid">
         {MASCOT_ANIMATIONS.map((item) => <AnimationCard key={item.id} item={item} />)}
