@@ -7,6 +7,7 @@ import {
   type BrilliantLessonTrigger,
   type BrilliantProgressTrigger,
 } from './BrilliantEndstateRive'
+import { BrilliantExtrasRive } from './BrilliantExtrasRive'
 import { BrilliantStreakIcon } from './BrilliantStreakIcon'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -62,12 +63,16 @@ const PROGRESS_COLORS: { id: number; hex: string; label: string }[] = [
   { id: 2, hex: '#EF4444', label: 'Red' },
 ]
 
-type RatePresetId = 'rate-app' | 'premium-lock' | 'recommended-level'
+type RatePresetId = 'rate-app' | 'premium-lock' | 'recommended-level' | 'post-checkout' | 'league' | 'jump-back-in' | 'lightning'
 
 const RATE_PRESETS: { id: RatePresetId; uz: string; ru: string }[] = [
-  { id: 'rate-app',          uz: '⭐ Baholash (5 yulduz)', ru: '⭐ Оценить (5 звёзд)' },
-  { id: 'premium-lock',      uz: '🔒 Premium qulf',       ru: '🔒 Premium замок' },
-  { id: 'recommended-level', uz: '💎 Tavsiya daraja',     ru: '💎 Рекоменд. уровень' },
+  { id: 'rate-app',          uz: '⭐ Baholash',      ru: '⭐ Оценка' },
+  { id: 'premium-lock',      uz: '🔒 Premium qulf',  ru: '🔒 Замок' },
+  { id: 'recommended-level', uz: '💎 Daraja',        ru: '💎 Уровень' },
+  { id: 'post-checkout',     uz: '🎉 Obuna',         ru: '🎉 Покупка' },
+  { id: 'league',            uz: '🏆 Liga nishoni',  ru: '🏆 Лига' },
+  { id: 'jump-back-in',      uz: '👋 Davom etish',   ru: '👋 Возврат' },
+  { id: 'lightning',         uz: '⚡ Chaqmoq',       ru: '⚡ Молния' },
 ]
 
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
@@ -488,18 +493,32 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
           </>
         ) : (
           <>
-            {/* MAIN_RateTheApp / MAIN_premium-nudge / MAIN_RecommendedLevelCheck */}
-            <BrilliantEndstateRive
-              key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
-              kind={ratePreset}
-              variant={progressColor}
-              dark={dark}
-              nonce={riveNonce}
-              onRiveEvent={handleRiveEvent}
-              label="Brilliant Special Endstate"
-              className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
-              fallback={<Sparkles size={72} className="text-pwarning" />}
-            />
+            {/* Maxsus Brilliant artboardlar: Endstates + Extras */}
+            {ratePreset === 'league' || ratePreset === 'jump-back-in' || ratePreset === 'lightning' ? (
+              <BrilliantExtrasRive
+                key={`extra-${ratePreset}-${progressColor}-${riveNonce}`}
+                kind={ratePreset}
+                leagueLevel={(progressColor % 10) + 1}
+                leagueState="promote"
+                boltVisible
+                nonce={riveNonce}
+                label="Brilliant Special Extra"
+                className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
+                fallback={<Sparkles size={72} className="text-pwarning" />}
+              />
+            ) : (
+              <BrilliantEndstateRive
+                key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
+                kind={ratePreset}
+                variant={progressColor}
+                dark={dark}
+                nonce={riveNonce}
+                onRiveEvent={handleRiveEvent}
+                label="Brilliant Special Endstate"
+                className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
+                fallback={<Sparkles size={72} className="text-pwarning" />}
+              />
+            )}
 
             <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
               <h1
@@ -510,7 +529,15 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                   ? isRu ? 'Нравится приложение?' : 'Ilova sizga yoqyaptimi?'
                   : ratePreset === 'premium-lock'
                     ? isRu ? 'Откройте полный доступ' : 'To‘liq imkoniyatlarni oching'
-                    : isRu ? 'Рекомендуемый уровень!' : 'Tavsiya etilgan daraja!'}
+                    : ratePreset === 'post-checkout'
+                      ? isRu ? 'Premium активирован!' : 'Premium faollashdi!'
+                      : ratePreset === 'league'
+                        ? isRu ? `Лига · Уровень ${(progressColor % 10) + 1}` : `Liga · ${(progressColor % 10) + 1}-daraja`
+                        : ratePreset === 'jump-back-in'
+                          ? isRu ? 'С возвращением!' : 'Qaytganingiz bilan!'
+                          : ratePreset === 'lightning'
+                            ? isRu ? 'Энергия серии!' : 'Seriya quvvati!'
+                            : isRu ? 'Рекомендуемый уровень!' : 'Tavsiya etilgan daraja!'}
               </h1>
 
               <p className="mt-1.5 max-w-[310px] text-[13.5px] font-medium leading-[1.45] text-pmuted">
@@ -522,13 +549,29 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                     ? isRu
                       ? 'Снимите все ограничения с подпиской Premium и учитесь быстрее.'
                       : 'Premium obuna bilan barcha cheklovlarni olib tashlang va tezroq o‘rganing.'
-                    : isRu
-                      ? 'Мы подобрали оптимальный уровень сложности специально для вас.'
-                      : 'Biz siz uchun eng mos qiyinlik darajasini aniqladik.'}
+                    : ratePreset === 'post-checkout'
+                      ? isRu
+                        ? 'Теперь все курсы, ИИ-тьютор и тренажёры доступны без ограничений.'
+                        : 'Endi barcha kurslar, AI-tutor va mashqlar cheklovsiz ochiq.'
+                      : ratePreset === 'league'
+                        ? isRu
+                          ? 'Поднимайтесь выше в еженедельной таблице лидеров!'
+                          : 'Haftalik jadvalda yuqori ligalarga ko‘tariling!'
+                        : ratePreset === 'jump-back-in'
+                          ? isRu
+                            ? 'Продолжите обучение с места, где остановились.'
+                            : 'To‘xtagan joyingizdan darsni davom ettiring.'
+                          : ratePreset === 'lightning'
+                            ? isRu
+                              ? 'Живой разряд вашей ежедневной активности.'
+                              : 'Kunlik faolligingizning jonli chaqmoq animatsiyasi.'
+                            : isRu
+                              ? 'Мы подобрали оптимальный уровень сложности специально для вас.'
+                              : 'Biz siz uchun eng mos qiyinlik darajasini aniqladik.'}
               </p>
 
-              {/* 3 ta maxsus Rive artboard tanlagichi */}
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5">
+              {/* Maxsus Rive artboard tanlagichi */}
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5 max-w-[340px]">
                 {RATE_PRESETS.map((r) => {
                   const active = ratePreset === r.id
                   return (
@@ -552,7 +595,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                 })}
               </div>
 
-              {ratePreset === 'recommended-level' && (
+              {(ratePreset === 'recommended-level' || ratePreset === 'league') && (
                 <div className="mt-3 flex items-center justify-center gap-2">
                   {PROGRESS_COLORS.map((c) => {
                     const active = progressColor === c.id

@@ -8,6 +8,7 @@ import { config } from '../../../shared/config'
 import { playSound } from '../../../shared/lib/sounds'
 import { track } from '../../../shared/lib/analytics'
 import Confetti from '../../../shared/components/Confetti'
+import { BrilliantEndstateRive } from '../../../shared/components/BrilliantEndstateRive'
 import ModalShell from '../../../shared/components/ModalShell'
 import { Button } from '../../../shared/components/ui/button'
 import { SpecCard, SpecRow, SpecList, SpecHero, SpecAmount } from '../../../shared/components/ui/spec'
@@ -128,15 +129,28 @@ export default function PaymentMethodModal({
         backdropClassName="bg-black/70"
       >
         {isSuccess ? (
-          <div className="relative z-10 px-5 pb-2">
-            <SpecHero
-              icon={<CheckCircle2 className="size-10 text-white" />}
-              iconClassName="bg-[linear-gradient(160deg,#35c47f,#15803d)]"
-              title={lang === 'ru' ? 'Оплата прошла успешно!' : "To'lov muvaffaqiyatli o'tdi!"}
-              subtitle={lang === 'ru'
+          <div className="relative z-10 px-5 pb-2 text-center">
+            <div className="mx-auto size-40 sm:size-44 flex items-center justify-center">
+              <BrilliantEndstateRive
+                kind="post-checkout"
+                dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                label="Brilliant Premium Unlocked"
+                className="size-full"
+                fallback={
+                  <div className="size-16 rounded-full bg-[linear-gradient(160deg,#35c47f,#15803d)] mx-auto flex items-center justify-center">
+                    <CheckCircle2 className="size-10 text-white" />
+                  </div>
+                }
+              />
+            </div>
+            <h3 className="text-[19px] font-bold text-pfg tracking-tight">
+              {lang === 'ru' ? 'Оплата прошла успешно!' : "To'lov muvaffaqiyatli o'tdi!"}
+            </h3>
+            <p className="mt-1 text-[13px] text-pmuted">
+              {lang === 'ru'
                 ? 'Премиум подписка активирована. Приятного обучения!'
                 : "Premium obuna faollashdi. Unumli bilim olishingizni tilaymiz!"}
-            />
+            </p>
 
             <SpecCard className="mt-6">
               <SpecList>

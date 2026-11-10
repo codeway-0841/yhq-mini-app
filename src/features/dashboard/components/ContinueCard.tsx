@@ -1,6 +1,7 @@
 import { memo, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
+import { BrilliantExtrasRive } from '../../../shared/components/BrilliantExtrasRive'
 import { cn } from '../../../shared/lib/cn'
 
 // ── Davom etayotgan mavzu kartasi ───────────────────────────────────────────
@@ -31,11 +32,18 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
         {/* Dekorativ rasm — fayl yo'q bo'lsa yashirinadi.
             v3: `mix-blend-mode: screen` olib tashlandi (light temada rasm
             butunlay yo'qolardi); o'rniga past opacity ikkala temada ishlaydi. */}
-        {bgOk && (
-          <img src={CONTINUE_BG_URL} alt="" aria-hidden
-            onError={() => setBgOk(false)}
-            className="pointer-events-none absolute right-0 top-1/2 h-full max-w-[45%] -translate-y-1/2 select-none object-contain opacity-[0.14]" />
-        )}
+        <div className="pointer-events-none absolute right-2 top-3 size-16 sm:size-20 select-none">
+          <BrilliantExtrasRive
+            kind="jump-back-in"
+            label="Jump Back In"
+            className="size-full"
+            fallback={bgOk ? (
+              <img src={CONTINUE_BG_URL} alt="" aria-hidden
+                onError={() => setBgOk(false)}
+                className="size-full object-contain opacity-[0.14]" />
+            ) : null}
+          />
+        </div>
         <div className="relative">
           <p className="text-[12px] font-medium text-psubtle">{tt('currentTopic')}</p>
           {/* Mavzu nomi — to'liq qatorda, kesilmaydi */}

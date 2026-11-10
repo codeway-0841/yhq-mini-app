@@ -20,6 +20,7 @@ export type BrilliantEndstateKind =
   | 'rate-app'
   | 'premium-lock'
   | 'recommended-level'
+  | 'post-checkout'
 
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
@@ -27,6 +28,7 @@ export type BrilliantProgressTrigger = 'playMastered' | 'playPassed' | 'playPoor
 
 const ENDSTATES_FILE = 'endstates.e233a7c3.riv'
 const PROGRESS_CHECK_FILE = 'progress-check.ae37b864.riv'
+const POST_CHECKOUT_FILE = 'post-checkout-flow-premium-pro.a15dbd04.riv'
 
 const KIND = {
   streak:              { file: ENDSTATES_FILE,      artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
@@ -39,12 +41,13 @@ const KIND = {
   'recommended-level': { file: ENDSTATES_FILE,      artboard: 'MAIN_RecommendedLevelCheck', stateMachine: 'RecommendedLevelCheck',  viewModel: 'RecommendedLevelCheckVM' },
   'progress-intro':    { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',     viewModel: 'ProgressCheckIntroVM' },
   'progress-endstate': { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate',  viewModel: 'ProgressCheckEndstateVM' },
+  'post-checkout':     { file: POST_CHECKOUT_FILE,  artboard: 'MAIN_PostCheckoutFlow',      stateMachine: 'PostCheckoutFlow',       viewModel: 'PostCheckoutFlowVM' },
 } as const
 
 let wasmConfigured = false
 const bufferCache = new Map<string, Promise<ArrayBuffer>>()
 
-function getBuffer(file: string): Promise<ArrayBuffer> {
+export function getBrilliantBuffer(file: string): Promise<ArrayBuffer> {
   let promise = bufferCache.get(file)
   if (!promise) {
     promise = fetch(`/brilliant/${file}`).then((r) => {
@@ -55,6 +58,23 @@ function getBuffer(file: string): Promise<ArrayBuffer> {
     bufferCache.set(file, promise)
   }
   return promise
+}
+
+export async function loadBrilliantRiveRuntime() {
+  const [pkg, wasmMod, fallbackMod] = await Promise.all([
+    import('@rive-app/webgl2-course'),
+    import('@rive-app/webgl2-course/rive.wasm?url'),
+    import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
+  ])
+  const mod = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
+  if (!wasmConfigured && mod.RuntimeLoader) {
+    const wasmUrl = (wasmMod as { default?: string }).default ?? wasmMod
+    const fallbackUrl = (fallbackMod as { default?: string }).default ?? fallbackMod
+    if (typeof wasmUrl === 'string') mod.RuntimeLoader.setWasmUrl(wasmUrl)
+    if (typeof fallbackUrl === 'string') mod.RuntimeLoader.setWasmFallbackUrl(fallbackUrl)
+    wasmConfigured = true
+  }
+  return mod
 }
 
 export interface BrilliantEndstateRiveProps {
@@ -137,21 +157,11 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
     setFailed(false)
 
     void Promise.all([
-      import('@rive-app/webgl2-course'),
-      import('@rive-app/webgl2-course/rive.wasm?url'),
-      import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
-      getBuffer(cfg.file),
-    ]).then(([pkg, wasmMod, fallbackMod, buffer]) => {
+      loadBrilliantRiveRuntime(),
+      getBrilliantBuffer(cfg.file),
+    ]).then(([mod, buffer]) => {
       if (disposed) return
-      const mod = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
-      const { Rive: RiveCtor, RuntimeLoader, Layout, Fit, Alignment, EventType } = mod
-      if (!wasmConfigured && RuntimeLoader) {
-        const wasmUrl = (wasmMod as { default?: string }).default ?? wasmMod
-        const fallbackUrl = (fallbackMod as { default?: string }).default ?? fallbackMod
-        if (typeof wasmUrl === 'string') RuntimeLoader.setWasmUrl(wasmUrl)
-        if (typeof fallbackUrl === 'string') RuntimeLoader.setWasmFallbackUrl(fallbackUrl)
-        wasmConfigured = true
-      }
+      const { Rive: RiveCtor, Layout, Fit, Alignment, EventType } = mod
       const resize = () => {
         if (rive && canvas.clientWidth > 0 && canvas.clientHeight > 0) {
           try { rive.resizeDrawingSurfaceToCanvas() } catch { /* canvas yo'q bo'lib qolgan */ }
@@ -196,6 +206,12 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             } catch { /* ignore */ }
             inst.trigger('playAnimation')?.trigger()
           } else if (kind === 'charge' || kind === 'xp' || kind === 'rate-app' || kind === 'premium-lock') {
+            inst.trigger('playAnimation')?.trigger()
+          } else if (kind === 'post-checkout') {
+            try {
+              const txt = inst.boolean('text')
+              if (txt) txt.value = false
+            } catch { /* ignore */ }
             inst.trigger('playAnimation')?.trigger()
           } else if (kind === 'progress-intro' || kind === 'recommended-level') {
             try {

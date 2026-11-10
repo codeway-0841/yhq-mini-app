@@ -24,6 +24,7 @@ import { track } from '../../../shared/lib/analytics'
 import { openTelegramLink } from '../../../platform/telegram'
 import { config } from '../../../shared/config'
 import Confetti from '../../../shared/components/Confetti'
+import { BrilliantEndstateRive } from '../../../shared/components/BrilliantEndstateRive'
 import { Button } from '../../../shared/components/ui/button'
 import { cn } from '../../../shared/lib/cn'
 
@@ -387,9 +388,19 @@ export default function SubscriptionModal({
             <div className="p-4 sm:p-5 space-y-4 overflow-y-auto flex-1 overscroll-contain">
               {/* Success Screen */}
               {isSuccess ? (
-                <div className="py-8 text-center space-y-4">
-                  <div className="size-16 rounded-full bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
-                    <CheckCircle2 size={34} />
+                <div className="py-5 text-center space-y-4">
+                  <div className="mx-auto size-40 sm:size-44 flex items-center justify-center">
+                    <BrilliantEndstateRive
+                      kind="post-checkout"
+                      dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                      label="Brilliant Premium Unlocked"
+                      className="size-full"
+                      fallback={
+                        <div className="size-16 rounded-full bg-[rgb(var(--p-success-rgb)/0.15)] text-psuccess mx-auto flex items-center justify-center animate-bounce shadow-md">
+                          <CheckCircle2 size={34} />
+                        </div>
+                      }
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-pfg">

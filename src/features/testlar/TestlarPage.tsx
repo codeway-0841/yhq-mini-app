@@ -16,6 +16,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { SUBJECT_BASES } from '../../../shared/subjects'
 import { getExamPreset } from '../../../shared/exam-presets'
 import { isEffectivePremium, isTestModePremium } from '../../../shared/test-access'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 
 type Diff = 'easy' | 'mid' | 'hard'
 type TKey = Parameters<ReturnType<typeof useT>>[0]
@@ -98,6 +99,29 @@ export default function TestlarPage() {
       />
 
       <div className="px-4 pb-20">
+
+      {/* Bosqich imtihonlari va sinovlar intro kartasi */}
+      <div className="mb-4 flex items-center gap-3 rounded-2xl bg-pcard px-4 py-3 shadow-xs">
+        <div className="size-16 shrink-0 flex items-center justify-center">
+          <BrilliantEndstateRive
+            kind="progress-intro"
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Progress Check Intro"
+            className="size-full"
+            fallback={<ClipboardCheck size={28} className="text-pprimary" />}
+          />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="text-[14px] font-bold text-pfg leading-snug">
+            {settings.language === 'ru' ? 'Проверка уровня и экзамены' : 'Bosqich imtihoni va sinovlar'}
+          </p>
+          <p className="text-[11.5px] text-pmuted mt-0.5 leading-snug">
+            {settings.language === 'ru'
+              ? 'Выберите подходящий режим и проверьте знания в реальном формате.'
+              : 'Mos rejimni tanlang va bilimingizni real imtihon sharoitida sinab ko‘ring.'}
+          </p>
+        </div>
+      </div>
 
       {/* Qidiruvga kirish (#45) — fake input, haqiqiy sahifa /qidiruv */}
       <div className="mb-4">

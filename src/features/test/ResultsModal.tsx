@@ -265,14 +265,24 @@ export default function ResultsModal({
         )}
 
         <div className="mx-auto mb-1 size-36 sm:size-40">
-          <BrilliantEndstateRive
-            kind="progress-endstate"
-            progressTrigger={disqualifiedByCheat || !passed ? 'playPoor' : percent === 100 ? 'playMastered' : 'playPassed'}
-            variant={disqualifiedByCheat || !passed ? 2 : percent === 100 ? 4 : 0}
-            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-            label="Brilliant Progress Check Result"
-            className="size-full"
-          />
+          {hideVerdict && !disqualifiedByCheat ? (
+            <BrilliantEndstateRive
+              kind="recommended-level"
+              variant={percent >= 80 ? 0 : percent >= 50 ? 1 : 4}
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Brilliant Recommended Level Result"
+              className="size-full"
+            />
+          ) : (
+            <BrilliantEndstateRive
+              kind="progress-endstate"
+              progressTrigger={disqualifiedByCheat || !passed ? 'playPoor' : percent === 100 ? 'playMastered' : 'playPassed'}
+              variant={disqualifiedByCheat || !passed ? 2 : percent === 100 ? 4 : 0}
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Brilliant Progress Check Result"
+              className="size-full"
+            />
+          )}
         </div>
 
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}

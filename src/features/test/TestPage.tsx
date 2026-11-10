@@ -43,6 +43,7 @@ import TestDrawingLayer from './components/TestDrawingLayer'
 import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
 import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { clearDrawingSession } from './components/drawing-model'
 
 export default function TestPage() {
@@ -434,8 +435,16 @@ export default function TestPage() {
     }
     if (questionsLoading || !questionsLoaded) {
       return (
-        <div className="flex flex-col items-center justify-center min-h-[60vh] text-pmuted gap-3">
-          <div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />
+        <div className="flex flex-col items-center justify-center min-h-[60vh] text-pmuted gap-2">
+          <div className="size-36 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="progress-intro"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Preparing Test"
+              className="size-full"
+              fallback={<div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />}
+            />
+          </div>
           <p className="text-sm font-semibold">{tt('loadingDots')}</p>
         </div>
       )

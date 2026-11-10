@@ -22,6 +22,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import Confetti from '../../shared/components/Confetti'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { Button } from '../../shared/components/ui/button'
 import {
   AI_TEST_SECTIONS, AI_TEST_TOTAL_TASKS, AI_TEST_GRADED_TASKS,
@@ -143,8 +144,16 @@ export default function AiTestSession() {
 
   if (phase === 'premium') {
     return (
-      <div className="px-4 pt-16 text-center">
-        <Lock size={36} strokeWidth={1.75} className="mx-auto mb-3" style={{ color: 'var(--p-purple)' }} />
+      <div className="px-4 pt-12 text-center">
+        <div className="mx-auto mb-2 size-36 flex items-center justify-center">
+          <BrilliantEndstateRive
+            kind="premium-lock"
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Brilliant Premium Lock"
+            className="size-full"
+            fallback={<Lock size={36} strokeWidth={1.75} className="mx-auto" style={{ color: 'var(--p-purple)' }} />}
+          />
+        </div>
         <p className="text-[16px] font-semibold text-pfg mb-4">{tt('aiTestPremiumCta')}</p>
         <Button variant="secondary" onClick={() => navigate('/premium')}>Premium</Button>
         <button onClick={() => goBack(navigate)} className="block mx-auto mt-3 text-[13px] text-psubtle">{tt('backWord')}</button>

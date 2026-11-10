@@ -26,6 +26,7 @@ import { getAvatarFrame } from '../../shared/config/avatar-frames'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { cn } from '../../shared/lib/cn'
+import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
 
 /** 'YYYY-MM-DD' (hafta dushanbasi) → "10.08–16.08" (dushanba–yakshanba) */
 function fmtWeekRange(periodKey: string): string {
@@ -282,8 +283,19 @@ export default function LeaderboardPage() {
     if (entriesList.length === 0) {
       return (
         <div className="w-full mt-4 flex flex-col items-center justify-center rounded-2xl bg-pcard p-8 text-center shadow-xs">
-          <div className="mb-3 flex size-14 items-center justify-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary">
-            <Trophy size={28} />
+          <div className="mb-3 flex size-24 items-center justify-center">
+            <BrilliantExtrasRive
+              kind="league"
+              leagueLevel={1}
+              leagueState="promote"
+              label="League Badge"
+              className="size-full"
+              fallback={
+                <div className="flex size-14 items-center justify-center rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.1)] text-pprimary">
+                  <Trophy size={28} />
+                </div>
+              }
+            />
           </div>
           <h3 className="font-display text-base font-extrabold text-pfg">
             {tt('emptyLeaderboardTitle')}
@@ -409,6 +421,39 @@ export default function LeaderboardPage() {
       </PageHeader>
 
       <div className="px-4 pb-8">
+      {tab === 'weekly' && !isLoading && entriesList.length > 0 && (() => {
+        const you = entriesList.find((e) => e.isYou)
+        const rank = you?.rank ?? entriesList.length
+        const isPromo = promoteN > 0 && rank <= promoteN
+        const isDemote = demoteN > 0 && n > 0 && rank > n - demoteN
+        const tier = Math.max(1, Math.min(10, Math.ceil(((you?.score ?? 0) + 50) / 100)))
+        return (
+          <div className="mb-4 flex items-center gap-3.5 rounded-2xl bg-pcard px-4 py-3 shadow-xs">
+            <div className="size-16 shrink-0 flex items-center justify-center">
+              <BrilliantExtrasRive
+                kind="league"
+                leagueLevel={tier}
+                leagueState={isPromo ? 'promote' : isDemote ? 'demote' : 'stagnant'}
+                label="Weekly League Badge"
+                className="size-full"
+                fallback={<Trophy size={28} className="text-pwarning" />}
+              />
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="text-[14px] font-bold text-pfg">
+                {settings.language === 'ru' ? `Лига · Уровень ${tier}` : `Liga · ${tier}-daraja`}
+              </p>
+              <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
+                {isPromo
+                  ? (settings.language === 'ru' ? 'Вы в зоне повышения — так держать!' : 'Siz ko‘tarilish zonasidasiz — davom eting!')
+                  : isDemote
+                    ? (settings.language === 'ru' ? 'Решите больше тестов, чтобы сохранить лигу.' : 'Ligani saqlab qolish uchun yana test ishlang.')
+                    : (settings.language === 'ru' ? 'Стабильная позиция в текущей лиге.' : 'Joriy ligada barqaror o‘rindasiz.')}
+              </p>
+            </div>
+          </div>
+        )
+      })()}
 
       {/* Desktop 2-ustunli Bento (Podium + Ro'yxat), Mobilda oddiy vertikal tartib */}
       <div className={cn('w-full', hasTop3 && 'lg:grid lg:grid-cols-12 lg:gap-6 lg:items-start')}>

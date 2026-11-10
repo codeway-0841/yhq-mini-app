@@ -19,6 +19,7 @@ import { PREMIUM_PLANS, HIGHLIGHT_PLAN, type PremiumPlan, formatUzs } from '../.
 import { playSound } from '../../shared/lib/sounds'
 import { track } from '../../shared/lib/analytics'
 import Confetti from '../../shared/components/Confetti'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import PromoCodeModal from '../../shared/components/PromoCodeModal'
 import PaymentMethodModal from './components/PaymentMethodModal'
 import { Button } from '../../shared/components/ui/button'
@@ -80,7 +81,15 @@ export default function PremiumPage() {
       {/* Status kartasi — ixcham, chap tekislangan (profil tarif kartasi ritmi) */}
       <div className="mx-5 mt-2 rounded-2xl bg-pcard px-4 py-3.5 shadow-xs">
         <div className="flex items-center gap-3.5">
-          <PremiumIcon size={24} className="shrink-0 text-pmuted" />
+          <div className="size-14 shrink-0 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind={isPremium ? 'post-checkout' : 'premium-lock'}
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="KIVVI Premium Status"
+              className="size-full"
+              fallback={<PremiumIcon size={24} className="shrink-0 text-pmuted" />}
+            />
+          </div>
           <div className="min-w-0 flex-1">
             <h2 className="text-[16px] font-semibold tracking-tight">KIVVI Premium</h2>
             <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
@@ -165,6 +174,14 @@ export default function PremiumPage() {
       )}
       {trialDone && (
         <div className="mx-5 mt-4 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.09)] p-4 text-center shadow-xs">
+          <div className="mx-auto mb-1 size-28 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="post-checkout"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Premium Trial Activated"
+              className="size-full"
+            />
+          </div>
           <p className="flex items-center justify-center gap-1.5 text-[14px] font-semibold text-psuccess">
             <CheckCircle2 size={16} strokeWidth={1.75} />
             {lang === 'ru' ? 'Пробный период активирован' : 'Sinov muddati faollashdi'}

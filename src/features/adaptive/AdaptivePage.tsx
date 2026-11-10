@@ -20,6 +20,7 @@ import { type SRCard }      from '../../shared/lib/spaced-repetition'
 import { shuffleArray }     from '../../shared/lib/seeded'
 import { isEffectivePremium } from '../../../shared/test-access'
 import { SubscriptionModal } from '../premium'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 
 /** SR dashboard xulosasi (#46) — server javob shakli */
 type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null }
@@ -168,8 +169,18 @@ export default function AdaptivePage() {
         />
 
         <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 px-4 text-center max-w-sm mx-auto">
-          <div className="size-16 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning flex items-center justify-center mb-1">
-            <Sparkles size={32} />
+          <div className="size-36 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="premium-lock"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Brilliant Premium Lock"
+              className="size-full"
+              fallback={
+                <div className="size-16 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning flex items-center justify-center mb-1">
+                  <Sparkles size={32} />
+                </div>
+              }
+            />
           </div>
           <h2 className="text-lg font-bold text-pfg">{tt('adaptiveTitle')}</h2>
           <p className="text-sm text-pmuted leading-relaxed">
