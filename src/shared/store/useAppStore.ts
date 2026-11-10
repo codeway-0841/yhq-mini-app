@@ -46,6 +46,10 @@ export interface ApplySessionAnswerInput {
   date: string
   dailyStreak: number | null
   coinSaved?: boolean
+  chargeSaved?: boolean
+  chargeEarned?: boolean
+  streakCharges?: number
+  suppressCelebration?: boolean
   coinBalance?: number | null
   xp?: number | null
 }
@@ -214,6 +218,12 @@ export const useAppStore = create<AppState>()(
           if (input.dailyStreak !== null) {
             useDailyStore.getState().applyServerResult(
               input.date, input.subjectId, input.dailyStreak, input.coinSaved,
+              {
+                chargeSaved: input.chargeSaved,
+                chargeEarned: input.chargeEarned,
+                streakCharges: input.streakCharges,
+                suppressCelebration: input.suppressCelebration,
+              },
             )
           }
         },

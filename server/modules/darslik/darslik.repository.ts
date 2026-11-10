@@ -4,9 +4,10 @@ import { darslikChecks, darslikMastery, type DarslikCheckSource } from '../../sc
 import {
   DARSLIK_CHECK_VERSION,
   DARSLIK_CHECK_VERSIONS,
+  DARSLIK_LESSON_XP_MAX,
+  DARSLIK_XP_PER_CHECK,
   type DarslikCheck,
 } from '../../../shared/darslik-mastery'
-import { XP_DAILY_CAP } from '../../../shared/xp'
 import { darslikCheckHash } from './check-cache'
 
 export interface StoredDarslikCheck {
@@ -137,40 +138,96 @@ export const darslikRepository = {
   },
 
   /**
-   * Mastery + XP bitta atomik statementda.
-   *
-   * XP FAQAT birinchi passda beriladi: darslik_mastery insert'i
-   * ON CONFLICT DO NOTHING bo'lgani uchun takroriy submit yoki parallel
-   * so'rovlar ikkinchi marta XP yozmaydi. Kunlik shift daily_limits orqali
-   * mavjud XP tizimidan olinadi (yangi XP tizimi yaratilmaydi).
+   * Har bir to'g'ri check uchun darhol +15 XP (1 mavzuda max 150 XP, PK idempotent).
+   * Qayta bosishda 0 XP; kunlik XP shifti qo'llanmaydi.
+   */
+  async awardCheckXp(input: {
+    userId: string
+    topicId: string
+    exerciseId: string
+    date: string
+  }): Promise<{ xpEarned: number; xp: number | null; topicXpTotal: number }> {
+    const rows = await executeRows<{
+      xp: number | null
+      xp_earned: number
+      topic_xp_total: number
+    }>(sql`
+      WITH topic_sum AS (
+        SELECT COALESCE(SUM(xp), 0)::int AS total
+        FROM darslik_check_xp
+        WHERE user_id = ${input.userId} AND topic_id = ${input.topicId}
+      ), grant_amt AS (
+        SELECT GREATEST(0, LEAST(
+          ${DARSLIK_XP_PER_CHECK}::int,
+          ${DARSLIK_LESSON_XP_MAX}::int - (SELECT total FROM topic_sum)
+        )) AS amount
+      ), claim AS (
+        INSERT INTO darslik_check_xp (user_id, topic_id, exercise_id, xp)
+        SELECT ${input.userId}, ${input.topicId}, ${input.exerciseId}, (SELECT amount FROM grant_amt)
+        WHERE (SELECT amount FROM grant_amt) > 0
+        ON CONFLICT (user_id, topic_id, exercise_id) DO NOTHING
+        RETURNING xp
+      ), prog AS (
+        UPDATE progress SET
+          xp = xp + COALESCE((SELECT xp FROM claim), 0),
+          updated_at = now()
+        WHERE user_id = ${input.userId} AND EXISTS (SELECT 1 FROM claim)
+        RETURNING xp
+      ), limits_upsert AS (
+        INSERT INTO daily_limits (user_id, date, xp_earned, coins_earned, updated_at)
+        SELECT ${input.userId}, ${input.date}, (SELECT xp FROM claim), 0, now()
+        WHERE EXISTS (SELECT 1 FROM claim) AND EXISTS (SELECT 1 FROM prog)
+        ON CONFLICT (user_id, date) DO UPDATE SET
+          xp_earned = daily_limits.xp_earned + EXCLUDED.xp_earned,
+          updated_at = now()
+        RETURNING xp_earned
+      )
+      SELECT
+        COALESCE(
+          (SELECT xp::int FROM prog),
+          (SELECT xp::int FROM progress WHERE user_id = ${input.userId})
+        ) AS xp,
+        CASE WHEN EXISTS (SELECT 1 FROM prog) THEN COALESCE((SELECT xp::int FROM claim), 0) ELSE 0 END AS xp_earned,
+        ((SELECT total FROM topic_sum) + CASE WHEN EXISTS (SELECT 1 FROM prog) THEN COALESCE((SELECT xp::int FROM claim), 0) ELSE 0 END)::int AS topic_xp_total
+    `)
+    const row = rows[0]
+    return {
+      xpEarned: Number(row?.xp_earned ?? 0),
+      xp: row?.xp != null ? Number(row.xp) : null,
+      topicXpTotal: Number(row?.topic_xp_total ?? 0),
+    }
+  },
+
+  /**
+   * Mastery + yakuniy XP (150 XP gacha qolgan farq) bitta atomik statementda.
+   * Check'lar /answer orqali allaqachon 15 XP olgan bo'lsa qayta yozilmaydi.
    */
   async passWithXp(input: {
     userId: string
     topicId: string
     date: string
     xp: number
-  }): Promise<{ passedNow: boolean; xp: number | null; xpEarned: number }> {
-    const award = Math.max(0, Math.min(1000, Math.floor(input.xp)))
+  }): Promise<{ passedNow: boolean; xp: number | null; xpEarned: number; lessonXpEarned?: number }> {
+    const target = Math.max(0, Math.min(DARSLIK_LESSON_XP_MAX, Math.floor(input.xp)))
     const rows = await executeRows<{
       passed_now: boolean
       progress_updated: number
       xp: number | null
       xp_earned: number
+      already_awarded: number
     }>(sql`
       WITH pass AS (
         INSERT INTO darslik_mastery (user_id, topic_id, version)
         VALUES (${input.userId}, ${input.topicId}, ${DARSLIK_CHECK_VERSION})
         ON CONFLICT DO NOTHING
         RETURNING topic_id
-      ), limits AS (
-        SELECT xp_earned FROM daily_limits
-        WHERE user_id = ${input.userId} AND date = ${input.date}
+      ), check_sum AS (
+        SELECT COALESCE(SUM(xp), 0)::int AS total
+        FROM darslik_check_xp
+        WHERE user_id = ${input.userId} AND topic_id = ${input.topicId}
       ), xp_award AS (
         SELECT CASE WHEN EXISTS (SELECT 1 FROM pass)
-          THEN GREATEST(0, LEAST(
-            ${award}::int,
-            ${XP_DAILY_CAP}::int - COALESCE((SELECT xp_earned FROM limits), 0)
-          ))
+          THEN GREATEST(0, ${target}::int - (SELECT total FROM check_sum))
           ELSE 0
         END AS amount
       ), prog AS (
@@ -192,20 +249,22 @@ export const darslikRepository = {
       SELECT
         EXISTS (SELECT 1 FROM pass) AS passed_now,
         (SELECT COUNT(*)::int FROM prog) AS progress_updated,
-        -- Takroriy submitda prog bo'sh bo'ladi; baribir joriy XP'ni qaytaramiz,
-        -- shunda client har javobdan keyin serverdagi qiymatni sinxronlaydi.
         COALESCE(
           (SELECT xp::int FROM prog),
           (SELECT xp::int FROM progress WHERE user_id = ${input.userId})
         ) AS xp,
-        (SELECT amount::int FROM xp_award) AS xp_earned
+        (SELECT amount::int FROM xp_award) AS xp_earned,
+        (SELECT total FROM check_sum) AS already_awarded
     `)
     const row = rows[0]
     const progressUpdated = Number(row?.progress_updated ?? 0) > 0
+    const xpEarned = progressUpdated && row?.xp_earned != null ? Number(row.xp_earned) : 0
+    const alreadyAwarded = Number(row?.already_awarded ?? 0)
     return {
       passedNow: row?.passed_now === true,
       xp: row?.xp != null ? Number(row.xp) : null,
-      xpEarned: progressUpdated && row?.xp_earned != null ? Number(row.xp_earned) : 0,
+      xpEarned,
+      lessonXpEarned: Math.min(DARSLIK_LESSON_XP_MAX, alreadyAwarded + xpEarned),
     }
   },
 }

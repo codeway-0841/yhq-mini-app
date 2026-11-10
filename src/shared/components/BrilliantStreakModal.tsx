@@ -26,6 +26,12 @@ export interface BrilliantStreakModalProps {
   initialView?: 'streak' | 'charge' | 'lesson' | 'progress' | 'rate'
   /** `true` bo'lsa, seriya ekranidan so'ng "Davom etish" bosilganda Streak Charge ekraniga o'tadi */
   showCharge?: boolean
+  /** Joriy seriya zaryadlari soni (0..2) */
+  charges?: number
+  /** Kun o'tkazilganda zaryad avtomatik sarflanib seriyani saqladimi */
+  chargeSaved?: boolean
+  /** Yangi zaryad (+1) shu sessiyada qo'lga kiritildimi */
+  chargeEarned?: boolean
   /** Preview rejimida tepada barcha bo'limlar orasida o'tish tablari chiqadi */
   showPreviewTabs?: boolean
   /** Lesson Complete rejimi uchun XP qiymati */
@@ -127,6 +133,9 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   isOpen = true,
   initialView = 'streak',
   showCharge = false,
+  charges,
+  chargeSaved = false,
+  chargeEarned = false,
   showPreviewTabs = false,
   xpEarned = 20,
 }: BrilliantStreakModalProps) {
@@ -336,11 +345,23 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
             />
           ) : view === 'charge' ? (
             <BrilliantChargeStage
-              heading={isRu ? 'Вы получили 1 заряд серии!' : '1 ta Seriya zaryadini oldingiz!'}
+              heading={
+                chargeSaved
+                  ? (isRu ? 'Заряд спас вашу серию!' : 'Seriya zaryadi seriyangizni saqladi!')
+                  : (chargeEarned || charges === undefined)
+                    ? (isRu ? 'Вы получили 1 заряд серии!' : '1 ta Seriya zaryadini oldingiz!')
+                    : (isRu
+                        ? `Заряды серии: ${charges}/2`
+                        : `Seriya zaryadingiz: ${charges}/2`)
+              }
               description={
-                isRu
-                  ? 'С зарядом серии вы можете пропустить день обучения, не потеряв свою серию.'
-                  : 'Seriya zaryadi bilan bir kunlik mashg‘ulotni o‘tkazib yuborsangiz ham seriyangiz yo‘qolmaydi.'
+                chargeSaved
+                  ? (isRu
+                      ? `Пропущенный день закрыт зарядом — серия сохранена (${charges ?? 0}/2 заряда осталось).`
+                      : `O'tkazib yuborilgan kun zaryad bilan yopildi — seriyangiz saqlandi (${charges ?? 0}/2 zaryad qoldi).`)
+                  : (isRu
+                      ? 'С зарядом серии вы можете пропустить день обучения, не потеряв свою серию.'
+                      : 'Seriya zaryadi bilan bir kunlik mashg‘ulotni o‘tkazib yuborsangiz ham seriyangiz yo‘qolmaydi.')
               }
               dark={dark}
               nonce={riveNonce}

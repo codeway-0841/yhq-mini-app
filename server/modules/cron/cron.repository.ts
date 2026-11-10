@@ -1,9 +1,9 @@
 import { and, eq, gte, inArray, lt, sql } from 'drizzle-orm'
 import { db } from '../../db/connection'
 import {
-  analyticsEvents, answerTokens, auditLogs, dailyRecords, dailyStreaks, jobRuns,
+  analyticsEvents, answerTokens, auditLogs, dailyLimits, dailyRecords, dailyStreaks, jobRuns,
   leagueRolloverLog, linkCodes, loginHistory, otpCodes, progress, rateLimits,
-  sessions, telegramLoginCodes, users, userCoins,
+  sessions, telegramLoginCodes, userCoins,
   testSessions,
 } from '../../schema'
 import { authRepository } from '../auth/auth.repository'
@@ -82,49 +82,37 @@ export const cronRepository = {
   },
 
   /**
-   * Streak coin-save ogohlantirishi uchun: har user "ENG SO'NGGI faollik
-   * sanasi" (barcha fanlar bo'yicha eng yaqini) + premium holati + coin
-   * balansi. `gapDaysTomorrow` = agar user BUGUN ham faol bo'lmasa va
-   * ERTAGA qaytsa, `shared/streak-save.ts` formulasidagi `gapDays` qancha
-   * bo'lishi (ya'ni `today - lastActive`, chunki (ertaga - lastActive) - 1
-   * = bugun - lastActive).
+   * Streak Zaryad / Coin-save ogohlantirishi uchun: har user "ENG SO'NGGI faollik
+   * sanasi" + joriy zaryadlari (`charges`) + coin balansi.
    */
   async streakSaveRiskForUsers(userIds: string[], today: string): Promise<Map<string, {
     gapDaysTomorrow: number
-    premium: boolean
+    charges: number
     balance: number
   }>> {
     if (userIds.length === 0) return new Map()
 
     const lastActiveRows = await db
-      .select({ userId: dailyStreaks.userId, lastActive: sql<string | null>`MAX(${dailyStreaks.lastDailyDate})` })
+      .select({
+        userId: dailyStreaks.userId,
+        lastActive: sql<string | null>`MAX(${dailyStreaks.lastDailyDate})`,
+        charges: sql<number>`COALESCE(MAX(${dailyStreaks.charges}), 0)::int`,
+      })
       .from(dailyStreaks)
       .where(inArray(dailyStreaks.userId, userIds))
       .groupBy(dailyStreaks.userId)
-    // lastDailyDate ustuni NULLABLE (schema) — amalda touchActivity/recordAnswer
-    // har doim to'ldiradi, lekin himoya sifatida null qatorlarni tashlaymiz
-    // (aks holda Date(null) → Invalid Date → NaN gap).
-    const lastActive = lastActiveRows.filter((r): r is { userId: string; lastActive: string } => r.lastActive != null)
-
-    const entitlement = await db
-      .select({
-        userId:  users.id,
-        premium: sql<boolean>`(${users.tariff} = 'premium' OR (${users.premiumUntil} IS NOT NULL AND ${users.premiumUntil} > now()))`,
-      })
-      .from(users)
-      .where(inArray(users.id, userIds))
+    const lastActive = lastActiveRows.filter((r): r is { userId: string; lastActive: string; charges: number } => r.lastActive != null)
 
     const balances = await db
       .select({ userId: userCoins.userId, balance: userCoins.balance })
       .from(userCoins)
       .where(inArray(userCoins.userId, userIds))
 
-    const premiumOf = new Map(entitlement.map((r) => [r.userId, r.premium]))
     const balanceOf = new Map(balances.map((r) => [r.userId, r.balance]))
 
     return new Map(lastActive.map((r) => [r.userId, {
       gapDaysTomorrow: Math.floor((new Date(`${today}T00:00:00Z`).getTime() - new Date(`${r.lastActive}T00:00:00Z`).getTime()) / 86_400_000),
-      premium: premiumOf.get(r.userId) ?? false,
+      charges: Number(r.charges ?? 0),
       balance: balanceOf.get(r.userId) ?? 0,
     }]))
   },
@@ -140,17 +128,17 @@ export const cronRepository = {
     }).from(leagueRolloverLog).where(eq(leagueRolloverLog.periodKey, periodKey))
   },
 
-  /** Hafta ballari (progress × daily_records, ligalari bilan) */
+  /** Hafta ballari (progress × daily_limits.xp_earned, ligalari bilan) */
   async leagueWeekScores(prevWeekStart: string, thisWeekStart: string) {
     return db.select({
       userId: progress.userId,
       league: progress.league,
-      score:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)`,
+      score:  sql<number>`COALESCE(SUM(${dailyLimits.xpEarned}), 0)`,
     }).from(progress)
-      .leftJoin(dailyRecords, and(
-        eq(dailyRecords.userId, progress.userId),
-        gte(dailyRecords.date, prevWeekStart),
-        lt(dailyRecords.date, thisWeekStart),
+      .leftJoin(dailyLimits, and(
+        eq(dailyLimits.userId, progress.userId),
+        gte(dailyLimits.date, prevWeekStart),
+        lt(dailyLimits.date, thisWeekStart),
       ))
       .groupBy(progress.userId, progress.league)
   },

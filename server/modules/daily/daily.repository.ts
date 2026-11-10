@@ -12,9 +12,15 @@
  */
 
 import { and, asc, eq, sql } from 'drizzle-orm'
-import { db, executeRows }         from '../../db/connection'
-import { dailyRecords, dailyStreaks, users } from '../../schema'
-import { coinSaveEligibleSql, streakValueSql } from './streak-save-sql'
+import { db, executeRows, type DB } from '../../db/connection'
+import { dailyRecords, dailyStreaks } from '../../schema'
+import {
+  chargeEarnedReturningSql,
+  chargeSaveEligibleSql,
+  chargesValueSql,
+  coinSaveEligibleSql,
+  streakValueSql,
+} from './streak-save-sql'
 import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
@@ -24,40 +30,28 @@ export function prevDate(date: string): string {
   return d.toISOString().slice(0, 10)
 }
 
-/** Premium himoya (🧊 STREAK FREEZE): 1 kunlik uzilish kechiriladi —
- *  seriya 0 GA TUSHMAYDI, faqat "muzlatilgan" holatda turadi.
- *  2+ kunlik uzilish esa har qanday holatda ham reset. */
+/** 1 kunlik tanaffus sanasi (zaryad bilan kechirilishi mumkin) */
 export function isFrozenDay(lastDailyDate: string, today: string): boolean {
   return lastDailyDate === prevDate(prevDate(today))
 }
 
-/** Effective premium: umrbod tarif YOKI muddati tugamagan obuna (trial/ref ham) */
-async function isPremiumUser(userId: string): Promise<boolean> {
-  const [row] = await db.select({ tariff: users.tariff, premiumUntil: users.premiumUntil })
-    .from(users).where(eq(users.id, userId))
-  return !!row && (row.tariff === 'premium' || (row.premiumUntil != null && row.premiumUntil > new Date()))
-}
-
-/** Yangi dailyStreak qiymati (sofun funksiya — unit test uchun ajratilgan)
- *  `frozen` = user premium (1 kunlik chegara faol). */
-export function calcNextStreak(lastDailyDate: string | null, date: string, current: number, frozen = false): number {
-  if (lastDailyDate === date)             return current      // shu kun allaqachon hisoblangan
-  if (lastDailyDate === prevDate(date))   return current + 1  // seriya davomiy
-  // 🧊 Freeze: premium user 1 kun o'tkazsa ham seriya davom etadi (+1)
-  if (frozen && lastDailyDate && isFrozenDay(lastDailyDate, date)) return current + 1
-  return 1                                                    // uzilishdan keyin qayta boshlash
+/** Yangi dailyStreak qiymati (sof funksiya — unit test uchun) */
+export function calcNextStreak(lastDailyDate: string | null, date: string, current: number, hasCharge = false): number {
+  if (lastDailyDate === date)             return current
+  if (lastDailyDate === prevDate(date))   return current + 1
+  // Zaryad bilan saqlanganda seriya saqlanadi (o'smaydi!)
+  if (hasCharge && lastDailyDate && isFrozenDay(lastDailyDate, date)) return current
+  return 1
 }
 
 /**
- * O'qishdagi streak: bir kun o'tkazib yuborilsa 0 ko'rsatadi (bazani yozmaydi —
- * keyingi faollikda calcNextStreak o'zi 1 dan qayta boshlaydi).
- * `frozen` = premium: aynan 1 kunlik uzilishda reset YO'Q (sovuqlangan seriya turadi).
+ * O'qishdagi streak: kecha yoki bugun faol bo'lsa joriy seriya;
+ * 1 kun o'tkazilgan va `charges > 0` bo'lsa himoyalangan joriy seriya; aks holda 0.
  */
-export function effectiveStreak(lastDailyDate: string | null, today: string, current: number, frozen = false): number {
+export function effectiveStreak(lastDailyDate: string | null, today: string, current: number, charges = 0): number {
   if (!lastDailyDate) return 0
   if (lastDailyDate < prevDate(today)) {
-    // 🧊 Freeze: aynan 1 kun o'tkazilgan — Seriya saqlanadi (faqat premium)
-    if (frozen && lastDailyDate === prevDate(prevDate(today))) return current
+    if (charges > 0 && lastDailyDate === prevDate(prevDate(today))) return current
     return 0
   }
   return current
@@ -85,10 +79,11 @@ export interface DailyHistoryRow extends DailyRecordRow {
   fixed: number
 }
 
-/** Shu (user, subject) uchun streak qatorini o'qiydi */
+/** Shu (user, subject) uchun streak va zaryad qatorini o'qiydi */
 async function readStreak(userId: string, subjectId: string) {
   const [row] = await db.select({
     streak:        dailyStreaks.streak,
+    charges:       dailyStreaks.charges,
     lastDailyDate: dailyStreaks.lastDailyDate,
   }).from(dailyStreaks).where(
     and(eq(dailyStreaks.userId, userId), eq(dailyStreaks.subjectId, subjectId)),
@@ -97,10 +92,11 @@ async function readStreak(userId: string, subjectId: string) {
 }
 
 export const dailyRepository = {
-  /** Bugungi yozuv (yo'q bo'lsa null) + SHU FANGA tegishli dailyStreak */
+  /** Bugungi yozuv (yo'q bo'lsa null) + SHU FANGA tegishli dailyStreak + charges */
   async getToday(userId: string, date: string, subjectId: string): Promise<{
     record: DailyRecordRow | null
     dailyStreak: number
+    streakCharges: number
   }> {
     const [record] = await db.select({
       date:      dailyRecords.date,
@@ -115,21 +111,22 @@ export const dailyRepository = {
       ),
     )
 
-    const [row, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
+    const row = await readStreak(userId, subjectId)
+    const streakCharges = row?.charges ?? 0
 
     return {
       record:      record ?? null,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, frozen),
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges),
+      streakCharges,
     }
   },
 
   /**
-   * Kunlik FAOLLIK belgisi — kamida 1 savol yechsa YOKI dars bilan shug'ullansa.
-   * Yangi o'rganuvchilar uchun streak sharti shu: katta test yakunlash shart emas.
-   * Har javobda `answered`/`correct` inkrementlanadi — shu kunni kalendar
-   * xaritasida qancha ko'p yechilsa, shuncha to'q rang beradi.
+   * Kunlik FAOLLIK belgisi — tasdiqlangan faollik (to'liq test sessiyasi, >= 15 savol
+   * yoki interaktiv dars yakuni) orqali chaqiriladi.
    *
    * Streak idempotent: bir xil kun qayta kelsa o'zgarmaydi (kun ko'chsa +1).
+   * Uzilish (gap=1) -> avval `charges`, zaryad 0 bo'lsa 100 coin (`coin_save`).
    */
   async touchActivity(
     userId:    string,
@@ -137,13 +134,24 @@ export const dailyRepository = {
     subjectId: string,
     answeredDelta = 0,
     correctDelta  = 0,
-  ): Promise<{ dailyStreak: number; coinSaved: boolean }> {
-    // Record counters va streak bitta PostgreSQL statement ichida atomik yangilanadi.
-    // ON CONFLICT mavjud row qiymatidan hisoblaydi: parallel request lost-update
-    // qilmaydi, eski/out-of-order sana esa last_daily_date'ni orqaga qaytarmaydi.
+    txOrDb:    DB = db,
+  ): Promise<{
+    dailyStreak: number
+    coinSaved: boolean
+    chargeSaved: boolean
+    chargeEarned: boolean
+    streakCharges: number
+  }> {
     const ctx = { userId, subjectId, date }
-    const eligible = coinSaveEligibleSql(ctx)
-    const rows = await executeRows<{ daily_streak: number; coin_saved: boolean }>(sql`
+    const chargeEligible = chargeSaveEligibleSql(ctx)
+    const coinEligible = coinSaveEligibleSql(ctx)
+    const rows = await executeRows<{
+      daily_streak: number
+      coin_saved: boolean
+      charge_saved: boolean
+      charge_earned: boolean
+      streak_charges: number
+    }>(sql`
       WITH record_upsert AS (
         INSERT INTO daily_records (user_id, date, subject_id, answered, correct, fixed)
         VALUES (${userId}, ${date}, ${subjectId}, ${answeredDelta}, ${correctDelta}, 0)
@@ -152,22 +160,21 @@ export const dailyRepository = {
           correct = daily_records.correct + EXCLUDED.correct
         RETURNING id
       ), streak_upsert AS (
-        -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
-        -- progress.repository.recordAnswer bilan BITTA manba.
-        INSERT INTO daily_streaks (user_id, subject_id, streak, last_daily_date, updated_at)
-        VALUES (${userId}, ${subjectId}, 1, ${date}, now())
+        INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
+        VALUES (${userId}, ${subjectId}, 1, 0, ${date}, now())
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = ${streakValueSql(ctx, eligible)},
+          streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
+          charges = ${chargesValueSql(ctx, chargeEligible)},
           last_daily_date = GREATEST(daily_streaks.last_daily_date, EXCLUDED.last_daily_date),
           updated_at = now()
-        RETURNING streak, ${eligible} AS saved
+        RETURNING streak, charges,
+          (${chargeEligible}) AS charge_saved,
+          ${chargeEarnedReturningSql(ctx, chargeEligible)} AS charge_earned,
+          (${coinEligible}) AS coin_saved
       ), save_ledger AS (
-        -- Idempotentlik gate'i: kuniga BITTA streak_save. Debit shu CTE
-        -- natijasiga bog'langani uchun o'sha kundagi keyingi faolliklar
-        -- coin'ni qayta yechmaydi (ON CONFLICT DO NOTHING → qator yo'q).
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
         SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
-        WHERE (SELECT saved FROM streak_upsert)
+        WHERE (SELECT coin_saved FROM streak_upsert)
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
       ), coin_debit AS (
@@ -179,12 +186,21 @@ export const dailyRepository = {
       )
       SELECT
         (SELECT streak FROM streak_upsert)::int AS daily_streak,
-        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved
-    `)
+        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved,
+        COALESCE((SELECT charge_saved FROM streak_upsert), false) AS charge_saved,
+        COALESCE((SELECT charge_earned FROM streak_upsert), false) AS charge_earned,
+        COALESCE((SELECT charges FROM streak_upsert), 0)::int AS streak_charges
+    `, txOrDb)
 
     const value = Number(rows[0]?.daily_streak)
     if (!Number.isFinite(value)) throw new Error('Daily streak upsert returned no value')
-    return { dailyStreak: value, coinSaved: rows[0]?.coin_saved === true }
+    return {
+      dailyStreak:   value,
+      coinSaved:     rows[0]?.coin_saved === true,
+      chargeSaved:   rows[0]?.charge_saved === true,
+      chargeEarned:  rows[0]?.charge_earned === true,
+      streakCharges: Number(rows[0]?.streak_charges ?? 0),
+    }
   },
 
   /**
@@ -198,6 +214,7 @@ export const dailyRepository = {
     rows: DailyHistoryRow[]
     dailyStreak: number
     bestStreak: number
+    streakCharges: number
   }> {
     const rows = await db.select({
       date:      dailyRecords.date,
@@ -209,14 +226,16 @@ export const dailyRepository = {
       .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
       .orderBy(asc(dailyRecords.date))
 
-    const [row, frozen] = await Promise.all([readStreak(userId, subjectId), isPremiumUser(userId)])
+    const row = await readStreak(userId, subjectId)
     // Yozuv mavjud = o'sha kun faollik (1+ savol yoki dars) — bestStreak shu bo'yicha
     const activeDates = rows.map((r) => r.date)
+    const streakCharges = row?.charges ?? 0
 
     return {
       rows,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, frozen),
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges),
       bestStreak:  calcBestStreak(activeDates),
+      streakCharges,
     }
   },
 

@@ -4,9 +4,11 @@ import { transactionBestEffort } from '../../db/connection'
 import { AppError } from '../../middleware/error-handler'
 import { resolveSubject } from '../../config/subjects'
 import { progressRepository } from '../progress/progress.repository'
+import { dailyRepository } from '../daily/daily.repository'
 import { questionsRepository } from '../questions/questions.repository'
 import { bossRepository } from '../boss/boss.repository'
 import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-battle'
+import { doesTestAnswerQualifyStreak } from '../../../shared/streak-save'
 import { tashkentDate } from '../../utils/date'
 import { Sentry } from '../../utils/sentry'
 import { getExamPreset } from '../../../shared/exam-presets'
@@ -468,17 +470,44 @@ export const testSessionsService = {
         answeredAt: now,
       }, tx)
 
+      const answeredCount = row.answeredCount + 1
+      const status = answeredCount >= row.totalQuestions ? 'completed' : 'active'
+      const streakQualifies = doesTestAnswerQualifyStreak({
+        mode: row.mode,
+        answeredInSession: answeredCount,
+        totalQuestions: row.totalQuestions,
+        completed: status === 'completed',
+      })
+      const today = tashkentDate()
+
       const progressResult = await progressRepository.recordAnswer({
         userId,
         correct,
         questionId: question.id,
-        date: tashkentDate(),
+        date: today,
         subjectId: row.subjectId,
         clientToken: `ts:${sessionId}:${input.clientToken}`,
         elapsedMs: input.elapsedMs,
         txOrDb: tx,
+        streakQualified: streakQualifies,
       })
       if (!progressResult.updated) throw new AppError(404, 'progress_not_initialized')
+
+      // Takroriy savolda XP/coin anti-farm gate ishlagan bo'lsa ham, bilet tugashi yoki
+      // 15-javob urinishiga yetgan foydalanuvchiga kunlik streak baribir yoziladi.
+      let dailyStreak = progressResult.dailyStreak
+      let coinSaved = progressResult.coinSaved
+      let chargeSaved = progressResult.chargeSaved
+      let chargeEarned = progressResult.chargeEarned
+      let streakCharges = progressResult.streakCharges
+      if (streakQualifies && dailyStreak === null && progressResult.reason !== 'replay') {
+        const fallbackDaily = await dailyRepository.touchActivity(userId, today, row.subjectId, 0, 0, tx)
+        dailyStreak = fallbackDaily.dailyStreak
+        coinSaved = coinSaved || fallbackDaily.coinSaved
+        chargeSaved = chargeSaved || fallbackDaily.chargeSaved
+        chargeEarned = chargeEarned || fallbackDaily.chargeEarned
+        streakCharges = fallbackDaily.streakCharges
+      }
 
       // Adaptive SM-2 hook — server-authoritative: karta client'dan KELMAYDI,
       // shu transaction ichida o'qiladi + yangilanadi (attempt + progress +
@@ -510,12 +539,10 @@ export const testSessionsService = {
         }, tx)
       }
 
-      const answeredCount = row.answeredCount + 1
       const issuedThrough = Math.min(
         row.totalQuestions - 1,
         Math.max(row.issuedThrough, answeredCount + config.testSessions.bufferSize - 1),
       )
-      const status = answeredCount >= row.totalQuestions ? 'completed' : 'active'
       await testSessionsRepository.updateProgress(sessionId, {
         issuedThrough,
         answeredCount,
@@ -533,12 +560,15 @@ export const testSessionsService = {
           correct,
           correctOptionId: question.correctAnswer,
           duplicate: progressResult.duplicate,
-          dailyStreak: progressResult.dailyStreak,
+          dailyStreak,
           xp: progressResult.xp,
           xpEarned: progressResult.xpEarned,
           coinsEarned: progressResult.coinsMinted,
           coinBalance: progressResult.coinBalance,
-          coinSaved: progressResult.coinSaved,
+          coinSaved,
+          chargeSaved,
+          chargeEarned,
+          streakCharges,
         },
         append: await deliveredQuestions(updatedRow, newPositions, tx),
         session: stateOf(updatedRow),

@@ -180,7 +180,23 @@ router.post('/darslik/:topicId/answer', dbRateLimit({ maxPerMinute: 60, bucket: 
   const exercise = stored.check.questions.find(question => question.id === req.body.exerciseId)
   if (!exercise) throw new AppError(404, 'EXERCISE_NOT_FOUND')
   const answer = req.body.answer as DarslikAnswerValue
-  res.json(gradeDarslikExercise(exercise, answer))
+  const graded = gradeDarslikExercise(exercise, answer)
+  if (!graded.correct) {
+    res.json({ ...graded, xpEarned: 0 })
+    return
+  }
+  const award = await darslikRepository.awardCheckXp({
+    userId,
+    topicId,
+    exerciseId: exercise.id,
+    date: tashkentDate(),
+  })
+  res.json({
+    ...graded,
+    xpEarned: award.xpEarned,
+    xp: award.xp,
+    topicXpTotal: award.topicXpTotal,
+  })
 }))
 
 router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 'darslik-submit', keyFn: req => (req as { userId?: string }).userId ?? req.ip }), validate({ params, body: z.object({ answers: DarslikAnswersSchema, revision: CheckRevision.optional() }) }), wrap(async (req, res) => {
@@ -199,9 +215,13 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
   const result = gradeDarslikCheck(check, answers)
   const alreadyPassed = passedTopics.includes(topicId)
   let xpEarned = 0
+  let lessonXpEarned = 0
   let xp: number | null = null
   let dailyStreak: number | undefined
   let coinSaved: boolean | undefined
+  let chargeSaved: boolean | undefined
+  let chargeEarned: boolean | undefined
+  let streakCharges: number | undefined
 
   if (result.passed) {
     const date = tashkentDate()
@@ -212,13 +232,10 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
       xp: darslikLessonXp(result.correct, result.total),
     })
     xpEarned = pass.xpEarned
+    lessonXpEarned = pass.lessonXpEarned ?? pass.xpEarned
     xp = pass.xp
-    // Kunlik faollik FAQAT birinchi mastery passda yoziladi. Takroriy submit
-    // (yoki boshqa kuni eski mavzuni qayta topshirish) 0/0 qator yaratib
-    // streak'ni soxta davom ettirardi — bu gamification integrity buzilishi.
     if (pass.passedNow) {
       try {
-        // Mavjud kunlik faollik/streak tizimi — yangi streak store yaratilmaydi.
         const daily = await dailyRepository.touchActivity(
           userId,
           date,
@@ -228,8 +245,10 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
         )
         dailyStreak = daily.dailyStreak
         coinSaved = daily.coinSaved
+        chargeSaved = daily.chargeSaved
+        chargeEarned = daily.chargeEarned
+        streakCharges = daily.streakCharges
       } catch (error) {
-        // Dars pass bo'ldi — streak xatosi natijani yoki keyingi mavzuni buzmaydi.
         console.warn('[darslik] daily activity update failed:', topicId, error instanceof Error ? error.message : String(error))
       }
     }
@@ -238,9 +257,13 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
   res.json({
     ...result,
     xpEarned,
+    lessonXpEarned,
     xp,
     dailyStreak,
     coinSaved,
+    chargeSaved,
+    chargeEarned,
+    streakCharges,
     alreadyPassed,
   })
 }))

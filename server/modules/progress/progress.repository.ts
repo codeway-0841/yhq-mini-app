@@ -7,10 +7,16 @@ import { db, executeRows, type DB } from '../../db/connection'
 import { progress, duelResults } from '../../schema'
 import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shared/shop-items'
 import {
-  XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
+  XP_FIRST_CORRECT, XP_MISTAKE_FIXED, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
-import { STREAK_SAVE_COST } from '../../../shared/streak-save'
-import { coinSaveEligibleSql, streakValueSql } from '../daily/streak-save-sql'
+import { STREAK_DAILY_MIN_ANSWERS, STREAK_SAVE_COST } from '../../../shared/streak-save'
+import {
+  chargeEarnedReturningSql,
+  chargeSaveEligibleSql,
+  chargesValueSql,
+  coinSaveEligibleSql,
+  streakValueSql,
+} from '../daily/streak-save-sql'
 import { issueLaunchToken } from '../test-sessions/launch-token'
 
 /**
@@ -95,7 +101,22 @@ export const progressRepository = {
     /** Test-session v2 progress va canonical attemptni bitta ACID
      *  tranzaksiyada yozishi uchun optional transaction handle. */
     txOrDb?:       DB
-  }): Promise<{ updated: boolean; dailyStreak: number | null; duplicate: boolean; reason?: 'replay' | 'gate'; coinBalance: number | null; coinSaved: boolean; xp: number | null; xpEarned: number; coinsMinted: number }> {
+    /** Server-tasdiqlangan sessiya yakuni (to'liq bilet yoki >= 15 sessiya javobi). */
+    streakQualified?: boolean
+  }): Promise<{
+    updated: boolean
+    dailyStreak: number | null
+    duplicate: boolean
+    reason?: 'replay' | 'gate'
+    coinBalance: number | null
+    coinSaved: boolean
+    chargeSaved: boolean
+    chargeEarned: boolean
+    streakCharges: number
+    xp: number | null
+    xpEarned: number
+    coinsMinted: number
+  }> {
     const { userId, correct, questionId, date, subjectId, clientToken } = input
     const txOrDb = input.txOrDb ?? db
     // Ishonchsiz client qiymati: 0..10 daqiqa oralig'idan tashqarisi tashlanadi
@@ -113,9 +134,24 @@ export const progressRepository = {
     const wrongDelta   = correct ? 0 : 1
 
     const ctx = { userId, subjectId, date }
-    const eligible = coinSaveEligibleSql(ctx)
+    const chargeEligible = chargeSaveEligibleSql(ctx)
+    const coinEligible = coinSaveEligibleSql(ctx)
+    const streakQualifiedFlag = Boolean(input.streakQualified)
 
-    const rows = await executeRows<{ proceed: boolean; prog_updated: number; daily_streak: number; token_inserted: boolean; coin_balance: number | null; coin_saved: boolean; xp: number | null; xp_earned: number; coins_minted: number }>(sql`
+    const rows = await executeRows<{
+      proceed: boolean
+      prog_updated: number
+      daily_streak: number | null
+      token_inserted: boolean
+      coin_balance: number | null
+      coin_saved: boolean
+      charge_saved: boolean
+      charge_earned: boolean
+      streak_charges: number | null
+      xp: number | null
+      xp_earned: number
+      coins_minted: number
+    }>(sql`
       WITH tok AS (
         -- Token user mavjud bo'lgandagina yaratiladi (FK himoyasi):
         -- ghost user'ning birinchi so'rovi ham "duplicate" emas, "not found".
@@ -208,11 +244,8 @@ export const progressRepository = {
           ELSE 0
         END AS raw
       ), xp_award AS (
-        -- Kunlik shift: shiftdan keyin mashq davom etadi, faqat XP to'xtaydi
-        SELECT GREATEST(0, LEAST(
-          (SELECT raw FROM xp_calc),
-          ${XP_DAILY_CAP}::int - COALESCE((SELECT xp_earned FROM limits), 0)
-        )) AS amount
+        -- Kunlik XP shifti hozircha o'chirilgan (1 savol = 1 XP, 1 marta)
+        SELECT COALESCE((SELECT raw FROM xp_calc), 0) AS amount
       ), prog AS (
         UPDATE progress SET
           total_correct  = total_correct + ${correctDelta},
@@ -244,25 +277,37 @@ export const progressRepository = {
           answered = daily_records.answered + EXCLUDED.answered,
           correct = daily_records.correct + EXCLUDED.correct,
           fixed = daily_records.fixed + EXCLUDED.fixed
-        RETURNING id
+        RETURNING id, answered
+      ), streak_qualified AS (
+        -- Streak faqat >= 15 ta savolga urinish (xato/to'g'ri farqsiz) YOKI
+        -- server-tasdiqlangan to'liq bilet/test yakunlanganda beriladi.
+        SELECT (
+          EXISTS (SELECT 1 FROM record_upsert)
+          AND (
+            ${streakQualifiedFlag}::boolean
+            OR (SELECT answered FROM record_upsert) >= ${STREAK_DAILY_MIN_ANSWERS}::int
+          )
+        ) AS ok
       ), streak_upsert AS (
-        -- Streak CASE va coin-save sharti streak-save-sql.ts dan —
-        -- daily.repository.touchActivity bilan BITTA manba.
-        INSERT INTO daily_streaks (user_id, subject_id, streak, last_daily_date, updated_at)
-        SELECT ${userId}, ${subjectId}, 1, ${date}, now()
-        WHERE EXISTS (SELECT 1 FROM prog)
+        INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
+        SELECT ${userId}, ${subjectId}, 1, 0, ${date}, now()
+        WHERE (SELECT ok FROM streak_qualified)
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = ${streakValueSql(ctx, eligible)},
+          streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
+          charges = ${chargesValueSql(ctx, chargeEligible)},
           last_daily_date = GREATEST(COALESCE(daily_streaks.last_daily_date, EXCLUDED.last_daily_date), EXCLUDED.last_daily_date),
           updated_at = now()
-        RETURNING streak, ${eligible} AS saved
+        RETURNING streak, charges,
+          (${chargeEligible}) AS charge_saved,
+          ${chargeEarnedReturningSql(ctx, chargeEligible)} AS charge_earned,
+          (${coinEligible}) AS coin_saved
       ), save_ledger AS (
         -- Idempotentlik gate'i: kuniga BITTA streak_save. Debit shu CTE
         -- natijasiga bog'langani uchun o'sha kundagi keyingi javoblar
         -- coin'ni qayta yechmaydi (ON CONFLICT DO NOTHING → qator yo'q).
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
         SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
-        WHERE (SELECT saved FROM streak_upsert)
+        WHERE (SELECT coin_saved FROM streak_upsert)
         ON CONFLICT (user_id, reason, ref_id) DO NOTHING
         RETURNING id
       ), coin_mint AS (
@@ -342,6 +387,9 @@ export const progressRepository = {
         EXISTS (SELECT 1 FROM tok) AS token_inserted,
         (SELECT balance::int FROM coin_award) AS coin_balance,
         EXISTS (SELECT 1 FROM save_ledger) AS coin_saved,
+        COALESCE((SELECT charge_saved FROM streak_upsert), false) AS charge_saved,
+        COALESCE((SELECT charge_earned FROM streak_upsert), false) AS charge_earned,
+        (SELECT charges::int FROM streak_upsert) AS streak_charges,
         (SELECT xp::int FROM prog) AS xp,
         (SELECT amount::int FROM xp_award) AS xp_earned,
         (SELECT amount::int FROM coin_mint) AS coins_minted
@@ -352,18 +400,35 @@ export const progressRepository = {
     if (!proceed) {
       // Token replay (duplicate) YOKI user/progress yo'q — farqlaymiz:
       const existing = await this.findByUserId(userId, txOrDb)
-      if (!existing) return { updated: false, dailyStreak: null, duplicate: false, coinBalance: null, coinSaved: false, xp: null, xpEarned: 0, coinsMinted: 0 }
+      if (!existing) {
+        return {
+          updated: false, dailyStreak: null, duplicate: false,
+          coinBalance: null, coinSaved: false, chargeSaved: false, chargeEarned: false, streakCharges: 0,
+          xp: null, xpEarned: 0, coinsMinted: 0,
+        }
+      }
       // Sabab: token berilgan-u, lekin tok'da YO'Q → allaqachon mavjud (replay).
       // Yangi token + gate bosilgan bo'lsa tok INSERT bo'lgan → 'gate'.
       const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
-      return { updated: true, dailyStreak: null, duplicate: true, reason, coinBalance: null, coinSaved: false, xp: existing.xp ?? null, xpEarned: 0, coinsMinted: 0 }
+      return {
+        updated: true, dailyStreak: null, duplicate: true, reason,
+        coinBalance: null, coinSaved: false, chargeSaved: false, chargeEarned: false, streakCharges: 0,
+        xp: existing.xp ?? null, xpEarned: 0, coinsMinted: 0,
+      }
     }
     const updated = Number(row?.prog_updated) > 0
     const streakRaw = row?.daily_streak
-    const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : (updated ? 1 : null)
+    const dailyStreak = streakRaw != null && Number.isFinite(Number(streakRaw)) ? Number(streakRaw) : null
     const coinBalance = row?.coin_balance != null ? Number(row.coin_balance) : null
     return {
-      updated, dailyStreak, duplicate: false, coinBalance, coinSaved: row?.coin_saved === true,
+      updated,
+      dailyStreak,
+      duplicate: false,
+      coinBalance,
+      coinSaved: row?.coin_saved === true,
+      chargeSaved: row?.charge_saved === true,
+      chargeEarned: row?.charge_earned === true,
+      streakCharges: row?.streak_charges != null ? Number(row.streak_charges) : 0,
       xp: row?.xp != null ? Number(row.xp) : null,
       xpEarned: row?.xp_earned != null ? Number(row.xp_earned) : 0,
       coinsMinted: row?.coins_minted != null ? Number(row.coins_minted) : 0,

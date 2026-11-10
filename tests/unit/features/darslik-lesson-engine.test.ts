@@ -227,9 +227,11 @@ describe('darslik v2 — baholash', () => {
     expect(isDarslikPublicAnswerComplete(publicCheck.questions[3], ['3 звука', '5 звуков', '4 звука'])).toBe(true)
   })
 
-  it('XP faqat to‘liq passda maksimal bo‘ladi', () => {
-    expect(darslikLessonXp(5, 5)).toBe(10 + 10 + 10)
-    expect(darslikLessonXp(4, 5)).toBe(10 + 8)
+  it('XP har to‘g‘ri mashq uchun 15 XP, 1 darsda max 150 XP beradi', () => {
+    expect(darslikLessonXp(5, 5)).toBe(75)
+    expect(darslikLessonXp(4, 5)).toBe(60)
+    expect(darslikLessonXp(10, 10)).toBe(150)
+    expect(darslikLessonXp(12, 12)).toBe(150)
     expect(darslikLessonXp(0, 0)).toBe(0)
   })
 })

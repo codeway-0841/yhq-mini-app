@@ -23,6 +23,7 @@ const repo = vi.hoisted(() => ({
   listSavedForSubject: vi.fn(),
 }))
 const recordAnswer = vi.hoisted(() => vi.fn())
+const touchActivity = vi.hoisted(() => vi.fn())
 const findExplanation = vi.hoisted(() => vi.fn())
 const findCard = vi.hoisted(() => vi.fn())
 const upsertCard = vi.hoisted(() => vi.fn())
@@ -46,6 +47,9 @@ vi.mock('../../../server/modules/test-sessions/test-sessions.repository', () => 
 }))
 vi.mock('../../../server/modules/progress/progress.repository', () => ({
   progressRepository: { recordAnswer, findCard, upsertCard },
+}))
+vi.mock('../../../server/modules/daily/daily.repository', () => ({
+  dailyRepository: { touchActivity },
 }))
 vi.mock('../../../server/modules/questions/questions.repository', () => ({
   questionsRepository: { findExplanation },
@@ -149,9 +153,19 @@ describe('testSessionsService security invariants', () => {
       duplicate: false,
       coinBalance: 8,
       coinSaved: false,
+      chargeSaved: false,
+      chargeEarned: false,
+      streakCharges: 0,
       xp: 25,
-      xpEarned: 10,
+      xpEarned: 1,
       coinsMinted: 1,
+    })
+    touchActivity.mockResolvedValue({
+      dailyStreak: 3,
+      coinSaved: false,
+      chargeSaved: false,
+      chargeEarned: false,
+      streakCharges: 0,
     })
     isPremiumUser.mockResolvedValue(true)
   })
@@ -563,9 +577,10 @@ describe('testSessionsService security invariants', () => {
       correct: true,
       clientToken: `ts:${SESSION_ID}:client-token-123`,
       txOrDb: TX,
+      streakQualified: false,
     }))
     expect(repo.completeAttempt).toHaveBeenCalledTimes(1)
-    expect(result.attempt).toMatchObject({ correct: true, correctOptionId: 'F2', xpEarned: 10, coinsEarned: 1 })
+    expect(result.attempt).toMatchObject({ correct: true, correctOptionId: 'F2', xpEarned: 1, coinsEarned: 1 })
     expect(result.append).toHaveLength(1)
     expect(result.append[0]).not.toHaveProperty('correctAnswer')
   })
@@ -761,5 +776,45 @@ describe('testSessionsService security invariants', () => {
   it('resolves position questions for the tutor without an attempt gate', async () => {
     await expect(testSessionsService.resolvePositionQuestion('user-1', SESSION_ID, validProof()))
       .resolves.toEqual({ subjectId: 'yhq', bankId: 'traffic_rules_db', questionId: 101 })
+  })
+
+  it('awards daily streak on completed bilet even when final question hits anti-farm gate', async () => {
+    repo.lockOwned.mockResolvedValue(session({
+      mode: 'ticket',
+      answeredCount: 19,
+      issuedThrough: 19,
+      totalQuestions: 20,
+      questionIds: Array.from({ length: 20 }, (_, i) => 101 + i),
+    }))
+    repo.getQuestions.mockResolvedValue([{ ...QUESTION, id: 120 }])
+    recordAnswer.mockResolvedValueOnce({
+      updated: true,
+      dailyStreak: null,
+      duplicate: true,
+      reason: 'gate',
+      coinBalance: null,
+      coinSaved: false,
+      chargeSaved: false,
+      chargeEarned: false,
+      streakCharges: 0,
+      xp: 40,
+      xpEarned: 0,
+      coinsMinted: 0,
+    })
+
+    const expiresAt = EXPIRES.toISOString()
+    const result = await testSessionsService.answer('user-1', SESSION_ID, {
+      ...validAnswer(),
+      position: 19,
+      expiresAt,
+      deliveryToken: createDeliveryToken('0123456789abcdef0123456789abcdef', {
+        userId: 'user-1', sessionId: SESSION_ID, subjectId: 'yhq', position: 19, expiresAt,
+      }),
+    })
+
+    expect(recordAnswer).toHaveBeenCalledWith(expect.objectContaining({ streakQualified: true }))
+    expect(touchActivity).toHaveBeenCalledWith('user-1', expect.any(String), 'yhq', 0, 0, TX)
+    expect(result.attempt.dailyStreak).toBe(3)
+    expect(result.attempt.xpEarned).toBe(0)
   })
 })

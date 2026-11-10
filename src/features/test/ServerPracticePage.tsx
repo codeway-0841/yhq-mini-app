@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 import { AlertTriangle, BarChart2, Bookmark, Check, ChevronLeft, RotateCcw, Square, Timer, Volume2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import type {
@@ -16,7 +16,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { isSpeaking, speak, stopSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
-import { todayStr } from '../../shared/store/useDailyStore'
+import { doneKeyOf, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import {
@@ -154,6 +154,19 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   const [coinPop, setCoinPop] = useState(0)
   const [earnedXpTotal, setEarnedXpTotal] = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
+  const pendingStreakRef = useRef<{
+    streak: number
+    showCharge: boolean
+    charges: number
+    chargeSaved: boolean
+    chargeEarned: boolean
+  } | null>(null)
+  const flushPendingStreak = useCallback(() => {
+    const pending = pendingStreakRef.current
+    if (!pending) return
+    pendingStreakRef.current = null
+    useDailyStore.getState().triggerStreakCelebration(pending.streak, pending)
+  }, [])
   const [zoomed, setZoomed] = useState<string | null>(null)
   const [confirmExit, setConfirmExit] = useState(false)
   const [confirmFinish, setConfirmFinish] = useState(false)
@@ -348,12 +361,31 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       }
       if (response.attempt.coinsEarned > 0) setCoinPop((value) => value + 1)
       if (!response.attempt.duplicate) {
+        const today = todayStr()
+        if (
+          typeof response.attempt.dailyStreak === 'number'
+          && response.attempt.dailyStreak > 0
+          && useDailyStore.getState().activityKey !== doneKeyOf(today, subjectId)
+        ) {
+          const charges = response.attempt.streakCharges ?? useDailyStore.getState().charges[subjectId] ?? 0
+          pendingStreakRef.current = {
+            streak: response.attempt.dailyStreak,
+            showCharge: Boolean(response.attempt.chargeSaved || response.attempt.chargeEarned || charges > 0),
+            charges,
+            chargeSaved: Boolean(response.attempt.chargeSaved),
+            chargeEarned: Boolean(response.attempt.chargeEarned),
+          }
+        }
         applySessionAnswer({
           correct: response.attempt.correct,
           subjectId,
-          date: todayStr(),
+          date: today,
           dailyStreak: response.attempt.dailyStreak,
           coinSaved: response.attempt.coinSaved,
+          chargeSaved: response.attempt.chargeSaved,
+          chargeEarned: response.attempt.chargeEarned,
+          streakCharges: response.attempt.streakCharges,
+          suppressCelebration: true,
           coinBalance: response.attempt.coinBalance,
           xp: response.attempt.xp,
         })
@@ -605,8 +637,8 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
             earnedXp={earnedXpTotal}
             earnedCoins={earnedCoinsTotal}
             examPresetId={selector.type === 'exam' ? selector.presetId : null}
-            onRetry={() => void retryTest()}
-            onFinish={() => { setShowResults(false); goBack(navigate) }}
+            onRetry={() => { flushPendingStreak(); void retryTest() }}
+            onFinish={() => { setShowResults(false); flushPendingStreak(); goBack(navigate) }}
             onGoToQuestion={goToResultQuestion}
             onOpenReview={() => setShowReview(true)}
           />

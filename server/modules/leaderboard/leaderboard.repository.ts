@@ -4,7 +4,7 @@
 
 import { desc, eq, sql } from 'drizzle-orm'
 import { db }                 from '../../db/connection'
-import { users, progress, dailyRecords, duelResults } from '../../schema'
+import { users, progress, dailyLimits, dailyRecords, duelResults } from '../../schema'
 
 export interface LeaderboardEntry {
   rank:   number
@@ -344,7 +344,7 @@ export const leaderboardRepository = {
     }))
   },
 
-  /** Haftalik LIGA reytingi — score = joriy haftadagi to'g'ri javoblar summasi. */
+  /** Haftalik LIGA reytingi — score = joriy haftadagi XP summasi (`daily_limits.xp_earned`). */
   async weeklyTop(limit: number, callerUserId: string | null): Promise<{
     entries: WeeklyEntry[]
     myLeague: string | null
@@ -353,17 +353,15 @@ export const leaderboardRepository = {
     const safeLimit = Math.min(Math.max(1, Math.floor(limit)), 100)
     const weekStart = weekStartTashkent()
 
-    // Filtered join: avval SO'NGGI hafta qatorlari agregatsiyalanadi (idx_daily_date),
-    // keyin users'ga biriktiriladi. Eski variant users × BUTUN daily_records cross
-    // product + CASE-filtr edi — jadval o'shganda to'liq scan'ga aylanardi.
     const weeklyScores = db
       .select({
-        userId: dailyRecords.userId,
-        score:  sql<number>`SUM(${dailyRecords.correct})`.as('score'),
+        userId: dailyLimits.userId,
+        score:  sql<number>`SUM(${dailyLimits.xpEarned})`.as('score'),
       })
-      .from(dailyRecords)
-      .where(sql`${dailyRecords.date} >= ${weekStart}`)
-      .groupBy(dailyRecords.userId)
+      .from(dailyLimits)
+      .where(sql`${dailyLimits.date} >= ${weekStart}`)
+      .groupBy(dailyLimits.userId)
+      .having(sql`SUM(${dailyLimits.xpEarned}) > 0`)
       .as('weekly_scores')
 
     const rows = await db

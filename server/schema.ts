@@ -681,12 +681,15 @@ export const dailyStreaks = pgTable('daily_streaks', {
   subjectId:     text('subject_id').notNull(),
   /** Shu fan bo'yicha ketma-ket bajarilgan kunlar soni */
   streak:        integer('streak').default(0).notNull(),
-  /** Shu fan bo'yicha oxirgi kunlik topshiriq sanasi — 'YYYY-MM-DD' (client local) */
+  /** Seriya himoya zaryadlari (0..2) — kun o'tkazilganda 1 tasi avtomatik saqlaydi */
+  charges:       integer('charges').default(0).notNull(),
+  /** Shu fan bo'yicha oxirgi kunlik faollik sanasi — 'YYYY-MM-DD' */
   lastDailyDate: text('last_daily_date'),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
 }, (t) => [
   unique('uq_daily_streak').on(t.userId, t.subjectId),
   check('chk_daily_streak_nonnegative', sql`${t.streak} >= 0`),
+  check('chk_daily_streak_charges_range', sql`${t.charges} >= 0 AND ${t.charges} <= 2`),
   check('chk_daily_streak_date_fmt', sql`${t.lastDailyDate} IS NULL OR ${t.lastDailyDate} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 
@@ -1156,6 +1159,21 @@ export const darslikMastery = pgTable('darslik_mastery', {
   version: integer('version').notNull(),
   passedAt: timestamp('passed_at').defaultNow().notNull(),
 }, t => [primaryKey({ columns: [t.userId, t.topicId, t.version] })])
+
+/**
+ * Darslik check XP ledger — har to'g'ri mashq uchun 15 XP (1 mavzuda max 150 XP).
+ * PK(user_id, topic_id, exercise_id) — bir mashqni qayta yechganda qayta XP bermaydi.
+ */
+export const darslikCheckXp = pgTable('darslik_check_xp', {
+  userId:     text('user_id').notNull().references(() => users.id, { onDelete: 'cascade', onUpdate: 'cascade' }),
+  topicId:    text('topic_id').notNull(),
+  exerciseId: text('exercise_id').notNull(),
+  xp:         integer('xp').notNull(),
+  awardedAt:  timestamp('awarded_at').defaultNow().notNull(),
+}, (t) => [
+  primaryKey({ columns: [t.userId, t.topicId, t.exerciseId] }),
+  check('chk_darslik_check_xp_pos', sql`${t.xp} > 0`),
+])
 
 /**
  * Grafik quruvchi — user saqlagan workspace'lar.

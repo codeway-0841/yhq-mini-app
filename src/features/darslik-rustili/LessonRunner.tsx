@@ -6,7 +6,7 @@ import { Button } from '../../shared/components/ui/button'
 import Confetti from '../../shared/components/Confetti'
 import ModalShell from '../../shared/components/ModalShell'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { useDailyStore, doneKeyOf, todayStr } from '../../shared/store/useDailyStore'
 import { useT, type Keys } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
@@ -26,6 +26,7 @@ import LessonExercise from './LessonExercise'
 import './rus-lesson-feedback.css'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import {
+  DARSLIK_LESSON_XP_MAX,
   isDarslikPublicAnswerComplete,
   type DarslikAnswerFeedback,
   type DarslikAnswerValue,
@@ -131,6 +132,15 @@ export default function LessonRunner({
   const [answerError, setAnswerError] = useState(false)
   const [combo, setCombo] = useState(0)
   const [maxCombo, setMaxCombo] = useState(0)
+  const [earnedLessonXp, setEarnedLessonXp] = useState(0)
+  const [lastCheckXp, setLastCheckXp] = useState(0)
+  const pendingStreakRef = useRef<{
+    streak: number
+    showCharge: boolean
+    charges: number
+    chargeSaved: boolean
+    chargeEarned: boolean
+  } | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState(false)
   const [result, setResult] = useState<DarslikCheckResult | null>(null)
@@ -184,6 +194,9 @@ export default function LessonRunner({
     setSubmitError(false)
     setCombo(0)
     setMaxCombo(0)
+    setEarnedLessonXp(0)
+    setLastCheckXp(0)
+    pendingStreakRef.current = null
     startedTracked.current = false
     passedNotified.current = false
 
@@ -256,7 +269,31 @@ export default function LessonRunner({
         }
         if (typeof graded.xp === 'number') useAppStore.setState({ xp: graded.xp })
         if (typeof graded.dailyStreak === 'number') {
-          useDailyStore.getState().applyServerResult(todayStr(), RUSSIAN_SUBJECT_ID, graded.dailyStreak, graded.coinSaved === true)
+          const today = todayStr()
+          const alreadyDone = useDailyStore.getState().activityKey === doneKeyOf(today, RUSSIAN_SUBJECT_ID)
+          const charges = graded.streakCharges ?? useDailyStore.getState().charges[RUSSIAN_SUBJECT_ID] ?? 0
+          const showCharge = Boolean(graded.chargeSaved || graded.chargeEarned || charges > 0)
+          if (!alreadyDone && graded.dailyStreak > 0) {
+            pendingStreakRef.current = {
+              streak: graded.dailyStreak,
+              showCharge,
+              charges,
+              chargeSaved: Boolean(graded.chargeSaved),
+              chargeEarned: Boolean(graded.chargeEarned),
+            }
+          }
+          useDailyStore.getState().applyServerResult(
+            today,
+            RUSSIAN_SUBJECT_ID,
+            graded.dailyStreak,
+            graded.coinSaved === true,
+            {
+              suppressCelebration: true,
+              chargeSaved: graded.chargeSaved,
+              chargeEarned: graded.chargeEarned,
+              streakCharges: graded.streakCharges,
+            },
+          )
         }
         // Mavjud yutuq tizimi — yangi achievement store yaratilmaydi.
         const userId = useAppStore.getState().user?.id
@@ -303,6 +340,12 @@ export default function LessonRunner({
         : await api.checkDarslikExercise(topicId, current.id, value)
       setFeedback(graded)
       setPhase('feedback')
+      const stepXp = graded.xpEarned ?? 0
+      setLastCheckXp(stepXp)
+      if (typeof graded.xp === 'number') useAppStore.setState({ xp: graded.xp })
+      if (stepXp > 0) {
+        setEarnedLessonXp((previous) => Math.min(DARSLIK_LESSON_XP_MAX, previous + stepXp))
+      }
       if (typeof requestAnimationFrame === 'function') {
         requestAnimationFrame(() => {
           try { feedbackRef.current?.scrollIntoView?.({ block: 'nearest', behavior: 'smooth' }) } catch { /* eski webview */ }
@@ -351,6 +394,7 @@ export default function LessonRunner({
     setIndex((value) => value + 1)
     setPhase('exercise')
     setFeedback(null)
+    setLastCheckXp(0)
     setRevealed(false)
     setShowExplanation(false)
     setAnswerError(false)
@@ -369,6 +413,9 @@ export default function LessonRunner({
     setSubmitError(false)
     setCombo(0)
     setMaxCombo(0)
+    setEarnedLessonXp(0)
+    setLastCheckXp(0)
+    pendingStreakRef.current = null
     passedNotified.current = false
   }, [])
 
@@ -537,13 +584,22 @@ export default function LessonRunner({
           ? (lesson ? tt('rusDarslikLessonContinue') : tt('rusDarslikQuizNextTopic'))
           : tt('rusDarslikQuizBackToTopic'))
       : tt('rusDarslikQuizRetry')
-    const handlePrimary = result.passed
+    const primaryAction = result.passed
       ? (hasNext && onNext ? onNext : onClose)
       : retry
+    const handlePrimary = () => {
+      if (result.passed && pendingStreakRef.current) {
+        const pending = pendingStreakRef.current
+        pendingStreakRef.current = null
+        useDailyStore.getState().triggerStreakCelebration(pending.streak, pending)
+      }
+      primaryAction()
+    }
     const secondaryLabel = result.passed
       ? tt('rusDarslikQuizRetry')
       : tt('rusDarslikQuizBackToTopic')
     const handleSecondary = result.passed ? retry : onClose
+    const totalLessonXp = result.lessonXpEarned ?? (earnedLessonXp || result.xpEarned || 0)
 
     return (
       <>
@@ -571,8 +627,8 @@ export default function LessonRunner({
             isLevel={false}
             skillCheckMastered={false}
             practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
-            showXp={Boolean(lesson && result.passed && (result.xpEarned ?? 0) > 0)}
-            earnedXp={result.xpEarned ?? 0}
+            showXp={Boolean(lesson && result.passed && totalLessonXp > 0)}
+            earnedXp={totalLessonXp}
             animateXpCount={false}
             fallback={
               lesson ? (
@@ -706,6 +762,10 @@ export default function LessonRunner({
         {showStreakModal && typeof result.dailyStreak === 'number' && result.dailyStreak > 0 && (
           <BrilliantStreakModal
             streak={result.dailyStreak}
+            showCharge={Boolean(result.chargeSaved || result.chargeEarned || (result.streakCharges ?? 0) > 0)}
+            charges={result.streakCharges ?? useDailyStore.getState().charges[RUSSIAN_SUBJECT_ID] ?? 0}
+            chargeSaved={result.chargeSaved}
+            chargeEarned={result.chargeEarned}
             onClose={() => setShowStreakModal(false)}
           />
         )}
@@ -773,7 +833,18 @@ export default function LessonRunner({
           <div className="relative mx-auto w-full max-w-[460px]">
             {phase === 'feedback' && feedback && (
               <div ref={feedbackRef} data-testid="lesson-feedback" data-correct={feedback.correct ? 'true' : 'false'} data-revealed={revealed ? 'true' : 'false'} role="status" aria-live="polite" className="mb-5 flex items-center justify-between gap-3">
-                <div className="min-w-0"><p className="text-[20px] font-extrabold leading-tight text-pfg">{revealed ? tt('rusDarslikAnswerShown') : feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}</p>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <p className="text-[20px] font-extrabold leading-tight text-pfg">{revealed ? tt('rusDarslikAnswerShown') : feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}</p>
+                    {feedback.correct && !revealed && lastCheckXp > 0 && (
+                      <span
+                        data-testid="lesson-check-xp"
+                        className="inline-flex items-center rounded-full bg-[#29cc57]/15 px-2.5 py-0.5 text-[12px] font-extrabold text-[#29cc57] tabular-nums"
+                      >
+                        +{lastCheckXp} XP
+                      </span>
+                    )}
+                  </div>
                   {revealed && <p className="mt-1 break-words text-[15px] font-semibold text-pfg">{feedback.correctAnswer}</p>}</div>
                 {feedback.correct || revealed
                   ? <Button variant="secondary" onClick={() => setShowExplanation(true)} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikWhy')}</Button>

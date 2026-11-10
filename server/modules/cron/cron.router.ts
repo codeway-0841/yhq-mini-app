@@ -83,16 +83,16 @@ async function runDailyReminder(): Promise<CronRunResult> {
       const risk = riskOf.get(uid)
       if (!risk) return ''
       const outcome = decideStreakOutcome({
-        gapDays: risk.gapDaysTomorrow, premium: risk.premium, balance: risk.balance,
+        gapDays: risk.gapDaysTomorrow, charges: risk.charges, balance: risk.balance,
       })
+      if (outcome === 'charge_save') {
+        return `\n\n🔋 Seriya zaryadingiz bor — bugun qolib ketsa, 1 ta zaryad seriyangizni saqlab qoladi.`
+      }
       if (outcome === 'coin_save') {
         return `\n\n🧊 Bugun ham mashq qilmasangiz, ${STREAK_SAVE_COST} coin evaziga seriyangiz saqlanadi.`
       }
       if (outcome === 'reset' && risk.gapDaysTomorrow <= 1) {
-        // Faqat hali "saqlab qolish mumkin edi" bosqichida foydali — coin
-        // yetishmasa aynan shu ogohlantirish sabab bo'lib qolishi mumkin.
-        // gapDaysTomorrow > 1 bo'lsa allaqachon kech — foydasiz xabar.
-        return `\n\n⚠️ Balansingizda ${STREAK_SAVE_COST} coin yo'q — seriyangiz saqlanmaydi, 0 ga tushadi.`
+        return `\n\n⚠️ Zaryad va ${STREAK_SAVE_COST} coin yo'q — seriyangiz saqlanmaydi, 0 ga tushadi.`
       }
       return ''
     }
@@ -101,7 +101,7 @@ async function runDailyReminder(): Promise<CronRunResult> {
       if (s > 0) {
         return (
           `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +
-          `Bugun hali mashq qilmadingiz — 2 daqiqalik test seriyangizni saqlab qoladi. ` +
+          `Bugun hali mashq qilmadingiz — 1 ta bilet yoki 15 ta savol seriyangizni saqlab qoladi. ` +
           `1 kun o'tkazilsa intizom 0 ga tushadi!` +
           coinSaveWarning(uid)
         )
@@ -109,7 +109,7 @@ async function runDailyReminder(): Promise<CronRunResult> {
       return (
         `🔥 Bugungi mashqni qolmang!\n\n` +
         `2 daqiqalik kichik test — katta natijaga birinchi qadam. ` +
-        `Har kuni 1 savol = intizom seriyasi!`
+        `Kamida 1 ta bilet yoki 15 ta savol = intizom seriyasi!`
       )
     }
 

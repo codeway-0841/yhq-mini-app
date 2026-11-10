@@ -1585,6 +1585,7 @@ export interface AdminMerchOrderRow {
 
 export interface DailyState {  record: { date: string; subjectId: string; answered: number; correct: number } | null
   dailyStreak: number
+  streakCharges?: number
 }
 
 export interface DailyHistoryRow {
@@ -1596,9 +1597,10 @@ export interface DailyHistoryRow {
 }
 
 export interface DailyHistory {
-  rows:        DailyHistoryRow[]
-  dailyStreak: number
-  bestStreak:  number
+  rows:           DailyHistoryRow[]
+  dailyStreak:    number
+  bestStreak:     number
+  streakCharges?: number
 }
 
 export interface TutorQuota {

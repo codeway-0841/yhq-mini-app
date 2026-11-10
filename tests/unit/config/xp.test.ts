@@ -10,16 +10,15 @@ import {
 } from '../../../shared/xp'
 
 describe('XP qiymatlari', () => {
-  it('xatoni tuzatish birinchi marta to\'g\'ri yechishdan qimmatroq', () => {
-    expect(XP_MISTAKE_FIXED).toBeGreaterThan(XP_FIRST_CORRECT)
+  it('test savoli to\'g\'ri = 1 XP, xatoni tuzatish = 1 XP, xato = 0 (ataylab xato eksploit yo\'q)', () => {
+    expect(XP_FIRST_CORRECT).toBe(1)
+    expect(XP_MISTAKE_FIXED).toBe(XP_FIRST_CORRECT)
     expect(XP_WRONG).toBe(0)
   })
 
-  it('kunlik shiftlar oqilona chegarada', () => {
-    // Bir sessiya (20-30 savol) ≈ 200-450 XP — kuniga 2-3 sessiya shiftga yetadi
-    expect(XP_DAILY_CAP).toBeGreaterThanOrEqual(XP_FIRST_CORRECT * 20)
+  it('kunlik XP limiti o\'chirilgan (null), coin shifti esa faol', () => {
+    expect(XP_DAILY_CAP).toBeNull()
     expect(COINS_DAILY_ANSWER_CAP).toBeGreaterThan(0)
-    expect(COINS_DAILY_ANSWER_CAP).toBeLessThan(XP_DAILY_CAP)
   })
 })
 
@@ -55,10 +54,10 @@ describe('level egri chizig\'i', () => {
     }
   })
 
-  it('tezlik nazorati: kuniga shiftga urgan odam ham 1 oyda ~15-levelda', () => {
-    const monthMax = XP_DAILY_CAP * 30          // 15 000 XP
-    expect(levelFromXp(monthMax)).toBeGreaterThanOrEqual(13)
-    expect(levelFromXp(monthMax)).toBeLessThanOrEqual(17)
+  it('tezlik nazorati: 15 000 XP to\'plagan o\'quvchi ~15-levelda', () => {
+    const monthSample = 15_000
+    expect(levelFromXp(monthSample)).toBeGreaterThanOrEqual(13)
+    expect(levelFromXp(monthSample)).toBeLessThanOrEqual(17)
   })
 
   it('levelProgress joriy level ichidagi ulushni beradi', () => {

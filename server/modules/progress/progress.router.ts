@@ -130,7 +130,7 @@ router.post(
     const correct = selectedAnswer !== null && selectedAnswer === question.correctAnswer
 
     // Progress counterlari + daily record + streak (+ coin mint) BITTA atomik SQL statement'da.
-    const { updated, dailyStreak, duplicate, reason, coinBalance, coinSaved, xp, xpEarned, coinsMinted } = await progressRepository.recordAnswer({
+    const { updated, dailyStreak, duplicate, reason, coinBalance, coinSaved, chargeSaved, chargeEarned, streakCharges, xp, xpEarned, coinsMinted } = await progressRepository.recordAnswer({
       userId: uid, correct, questionId, date, subjectId, clientToken, elapsedMs,
     })
     if (!updated) throw new AppError(404, 'Progress row not found — call /init first')
@@ -169,7 +169,7 @@ router.post(
     // ko'rsatadi (foydalanuvchi coin nimaga sarflanganini bilishi shart).
     res.json({
       ok: true, correct, correctAnswer: question.correctAnswer, dailyStreak,
-      coinsEarned, coinBalance, coinSaved,
+      coinsEarned, coinBalance, coinSaved, chargeSaved, chargeEarned, streakCharges,
       // XP: jami (level uchun) + shu javobda berilgani (animatsiya uchun)
       xp, xpEarned,
     })

@@ -15,7 +15,7 @@ import {
 } from '../../../server/schema'
 import { tashkentDate } from '../../../server/utils/date'
 import {
-  XP_FIRST_CORRECT, XP_MISTAKE_FIXED, XP_DAILY_CAP, COINS_DAILY_ANSWER_CAP,
+  XP_FIRST_CORRECT, XP_MISTAKE_FIXED, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
 
@@ -97,13 +97,13 @@ describe('XP — o\'rganish hodisasiga qarab', () => {
     expect(await xpOf()).toBe(0)
   })
 
-  it('avval xato qilingan savol tuzatilsa KO\'PROQ XP beradi', async () => {
+  it('avval xato qilingan savol tuzatilsa ham 1 XP beradi (ataylab xato foyda bermaydi)', async () => {
     const q = bank[2]!
     await answer(q, q.wrongAnswer).expect(200)
     const fixed = await answer(q, q.correctAnswer).expect(200)
 
     expect(fixed.body.xpEarned).toBe(XP_MISTAKE_FIXED)
-    expect(XP_MISTAKE_FIXED).toBeGreaterThan(XP_FIRST_CORRECT)
+    expect(XP_MISTAKE_FIXED).toBe(XP_FIRST_CORRECT)
     expect(await xpOf()).toBe(XP_MISTAKE_FIXED)
   })
 
@@ -117,37 +117,20 @@ describe('XP — o\'rganish hodisasiga qarab', () => {
   })
 })
 
-describe('Kunlik XP shifti', () => {
-  it('shift to\'lgach XP berilmaydi, lekin javob HISOBLANADI', async () => {
-    // Shiftni deyarli to'ldirib qo'yamiz — 1 ta javoblik joy qoldiramiz
+describe('Kunlik XP limiti (ochiq)', () => {
+  it('kunlik XP chegarasisiz har yangi to\'g\'ri javob XP beradi va daily_limits yoziladi', async () => {
     await db.insert(dailyLimits).values({
-      userId: UID, date: tashkentDate(), xpEarned: XP_DAILY_CAP - 4, coinsEarned: 0,
+      userId: UID, date: tashkentDate(), xpEarned: 600, coinsEarned: 0,
     })
 
     const q1 = bank[0]!
-    const partial = await answer(q1, q1.correctAnswer).expect(200)
-    expect(partial.body.xpEarned).toBe(4)          // qolgan joy qadar kesildi
-    expect(await xpOf()).toBe(4)
+    const res = await answer(q1, q1.correctAnswer).expect(200)
+    expect(res.body.xpEarned).toBe(XP_FIRST_CORRECT)
+    expect(await xpOf()).toBe(XP_FIRST_CORRECT)
 
-    const q2 = bank[1]!
-    const capped = await answer(q2, q2.correctAnswer).expect(200)
-    expect(capped.body.xpEarned).toBe(0)           // shift to'ldi
-    expect(await xpOf()).toBe(4)
-
-    // Javobning o'zi baribir hisoblanadi (mashq to'xtamaydi)
-    const [prog] = await db.select().from(progress).where(eq(progress.userId, UID))
-    expect(prog!.totalCorrect).toBe(2)
-    expect(prog!.totalAnswered).toBe(2)
-  })
-
-  it('shift kun bo\'yicha yuritiladi (kechagi hisob bugungisiga qo\'shilmaydi)', async () => {
-    await db.insert(dailyLimits).values({
-      userId: UID, date: '2020-01-01', xpEarned: XP_DAILY_CAP, coinsEarned: COINS_DAILY_ANSWER_CAP,
-    })
-
-    const q = bank[0]!
-    const res = await answer(q, q.correctAnswer).expect(200)
-    expect(res.body.xpEarned).toBe(XP_FIRST_CORRECT)   // bugun shift bo'sh
+    const [lim] = await db.select().from(dailyLimits)
+      .where(and(eq(dailyLimits.userId, UID), eq(dailyLimits.date, tashkentDate())))
+    expect(lim!.xpEarned).toBe(600 + XP_FIRST_CORRECT)
   })
 })
 
@@ -165,7 +148,7 @@ describe('Kunlik coin shifti', () => {
     const [coins] = await db.select().from(userCoins).where(eq(userCoins.userId, UID))
     expect(coins!.balance).toBe(100)      // o'zgarmadi
 
-    // XP esa berilishi kerak — ikki shift bir-biriga bog'liq emas
+    // XP esa berilishi kerak
     expect(res.body.xpEarned).toBe(XP_FIRST_CORRECT)
   })
 

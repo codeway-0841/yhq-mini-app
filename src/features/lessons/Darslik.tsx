@@ -6,7 +6,7 @@ import { modules, MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
-import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -616,9 +616,6 @@ export default function Darslik() {
               setReader(null)
               setCompletion({ finished, next: courseDone ? undefined : modules[modules.findIndex((m) => m.id === finished.id) + 1], courseDone })
             }
-            void useDailyStore.getState().touchActivity(
-              userId, todayStr(), useSubjectStore.getState().subjectId,
-            )
           }}
           onPractice={(idx) => practiceLesson(reader.mod, idx)}
         />

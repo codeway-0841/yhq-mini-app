@@ -10,6 +10,7 @@ const repo = vi.hoisted(() => ({
   ensureCurated: vi.fn(),
   saveCheck: vi.fn(),
   invalidate: vi.fn(),
+  awardCheckXp: vi.fn(),
   passWithXp: vi.fn(),
 }))
 const daily = vi.hoisted(() => ({ touchActivity: vi.fn() }))
@@ -81,8 +82,15 @@ beforeEach(() => {
   repo.findCheck.mockReset().mockResolvedValue(null)
   repo.ensureCurated.mockReset().mockImplementation(async (_topicId: string, payload: unknown) => payload)
   repo.saveCheck.mockReset().mockImplementation(async (_topicId: string, payload: unknown) => payload)
-  repo.passWithXp.mockReset().mockResolvedValue({ passedNow: true, xp: 132, xpEarned: 32 })
-  daily.touchActivity.mockReset().mockResolvedValue({ dailyStreak: 4, coinSaved: false })
+  repo.awardCheckXp.mockReset().mockResolvedValue({ xpEarned: 15, xp: 115, topicXpTotal: 15 })
+  repo.passWithXp.mockReset().mockResolvedValue({ passedNow: true, xp: 190, xpEarned: 90, lessonXpEarned: 90 })
+  daily.touchActivity.mockReset().mockResolvedValue({
+    dailyStreak: 4,
+    coinSaved: false,
+    chargeSaved: false,
+    chargeEarned: false,
+    streakCharges: 0,
+  })
   meta.callMetaJson.mockReset()
 })
 
@@ -146,14 +154,15 @@ describe('darslik router — curated pilot darsi', () => {
     expect(res.body.passed).toBe(true)
     expect(res.body.correct).toBe(6)
     expect(res.body.accuracy).toBe(100)
-    expect(res.body.xpEarned).toBe(32)
-    expect(res.body.xp).toBe(132)
+    expect(res.body.xpEarned).toBe(90)
+    expect(res.body.lessonXpEarned).toBe(90)
+    expect(res.body.xp).toBe(190)
     expect(res.body.dailyStreak).toBe(4)
     expect(res.body.alreadyPassed).toBe(false)
     expect(repo.passWithXp).toHaveBeenCalledWith(expect.objectContaining({
       userId: 'u1',
       topicId: '1:0',
-      xp: 32,
+      xp: 90,
     }))
     expect(daily.touchActivity).toHaveBeenCalledWith('u1', expect.any(String), 'rustili', 6, 6)
   })
@@ -248,6 +257,12 @@ describe('darslik router — curated pilot darsi', () => {
       .send({ exerciseId: '1:0:1', answer: '1' })
     expect(correct.status).toBe(200)
     expect(correct.body.correct).toBe(true)
+    expect(correct.body.xpEarned).toBe(15)
+    expect(repo.awardCheckXp).toHaveBeenCalledWith(expect.objectContaining({
+      userId: 'u1',
+      topicId: '1:0',
+      exerciseId: '1:0:1',
+    }))
     expect(correct.body.correctAnswer).toBe('Звуки')
     expect(correct.body.explanation).toContain('Звуки мы произносим')
 
@@ -256,6 +271,7 @@ describe('darslik router — curated pilot darsi', () => {
       .send({ exerciseId: '1:0:1', answer: '0' })
     expect(wrong.status).toBe(200)
     expect(wrong.body.correct).toBe(false)
+    expect(wrong.body.xpEarned).toBe(0)
     expect(wrong.body.correctAnswer).toBe('Звуки')
   })
 

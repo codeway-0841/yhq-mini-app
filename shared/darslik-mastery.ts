@@ -179,6 +179,9 @@ export type DarslikAnswerFeedback = {
   correct: boolean
   explanation: string
   correctAnswer: string
+  xpEarned?: number
+  xp?: number | null
+  topicXpTotal?: number
 }
 
 export type DarslikCheckResult = {
@@ -189,9 +192,14 @@ export type DarslikCheckResult = {
   /** v2 natija ekrani uchun — server hisoblaydi. */
   accuracy?: number
   xpEarned?: number
+  /** Shu mavzuda jami to'plangan dars XP (<= 150, endstate ekrani uchun) */
+  lessonXpEarned?: number
   xp?: number | null
   dailyStreak?: number
   coinSaved?: boolean
+  chargeSaved?: boolean
+  chargeEarned?: boolean
+  streakCharges?: number
   alreadyPassed?: boolean
 }
 
@@ -362,9 +370,12 @@ export function isDarslikPublicAnswerComplete(exercise: DarslikPublicExercise, a
   return answerIsComplete(exercise.kind, exercise.kind === 'match' ? exercise.left.length : 0, answer)
 }
 
-/** v2 dars uchun server hisoblaydigan XP (faqat birinchi passda beriladi). */
+export const DARSLIK_XP_PER_CHECK = 15
+export const DARSLIK_LESSON_XP_MAX = 150
+
+/** Dars/check uchun XP: har bir to'g'ri mashq 15 XP, 1 darsda max 150 XP. */
 export function darslikLessonXp(correct: number, total: number): number {
   if (total <= 0) return 0
   const safeCorrect = Math.max(0, Math.min(correct, total))
-  return 10 + safeCorrect * 2 + (safeCorrect === total ? 10 : 0)
+  return Math.min(DARSLIK_LESSON_XP_MAX, safeCorrect * DARSLIK_XP_PER_CHECK)
 }

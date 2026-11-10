@@ -14,6 +14,7 @@ export default function StreakSaveToast() {
   const coinSaved         = useDailyStore((s) => s.coinSaved)
   const clearCoinSaved    = useDailyStore((s) => s.clearCoinSaved)
   const celebrationStreak = useDailyStore((s) => s.celebrationStreak)
+  const celebrationMeta   = useDailyStore((s) => s.celebrationMeta)
   const clearCelebration  = useDailyStore((s) => s.clearCelebration)
   const language          = useAppStore((s) => s.settings.language)
   const { info } = useToast()
@@ -30,7 +31,10 @@ export default function StreakSaveToast() {
       <BrilliantStreakModal
         streak={celebrationStreak}
         initialView="streak"
-        showCharge={true}
+        showCharge={celebrationMeta?.showCharge ?? true}
+        charges={celebrationMeta?.charges}
+        chargeSaved={celebrationMeta?.chargeSaved}
+        chargeEarned={celebrationMeta?.chargeEarned}
         onClose={clearCelebration}
       />
     )

@@ -76,6 +76,8 @@ function feedbackFor(id: string, correct: boolean): DarslikAnswerFeedback {
     correct,
     explanation: 'Изох ' + id,
     correctAnswer: CORRECT_ANSWERS[id] ?? '—',
+    xpEarned: correct ? 15 : 0,
+    xp: correct ? 115 : 100,
   }
 }
 
@@ -85,9 +87,11 @@ function resultFor(passed: boolean): DarslikCheckResult {
     correct: passed ? 5 : 4,
     total: 5,
     accuracy: passed ? 100 : 80,
-    xpEarned: passed ? 32 : 0,
-    xp: passed ? 132 : 100,
+    xpEarned: 0,
+    lessonXpEarned: passed ? 75 : 0,
+    xp: passed ? 175 : 100,
     dailyStreak: passed ? 4 : undefined,
+    streakCharges: passed ? 1 : 0,
     alreadyPassed: false,
     feedback: CHECK.questions.map(question => ({
       id: question.id,
@@ -261,6 +265,7 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
 
     await answerMcq(runner, 'Звуки')
     expect(within(runner).getByText('To‘g‘ri!')).toBeInTheDocument()
+    expect(within(runner).getByTestId('lesson-check-xp')).toHaveTextContent('+15 XP')
     await continueExercise(runner)
 
     await answerInput(runner, '3')
@@ -285,7 +290,7 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     const result = await screen.findByTestId('lesson-result')
     expect(within(result).getByText('Dars yakunlandi!')).toBeInTheDocument()
     expect(within(result).getByText('100%')).toBeInTheDocument()
-    expect(within(result).getByText('+32')).toBeInTheDocument()
+    expect(within(result).getByText('+75')).toBeInTheDocument()
     expect(within(result).getByText('4')).toBeInTheDocument()
     expect(onPassed).toHaveBeenCalledTimes(1)
     expect(api.submitDarslikCheck).toHaveBeenCalledWith('1:0', expect.objectContaining({
@@ -295,14 +300,16 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
       q4: ['3 звука', '5 звуков', '4 звука'],
       q5: '2',
     }))
-    expect(useAppStore.getState().xp).toBe(132)
+    expect(useAppStore.getState().xp).toBe(175)
     expect(useDailyStore.getState().streaks.rustili).toBe(4)
+    expect(useDailyStore.getState().celebrationStreak).toBeNull()
     expect(analytics.track).toHaveBeenCalledWith('lesson_start', expect.any(Object))
     expect(analytics.track).toHaveBeenCalledWith('exercise_answer', expect.objectContaining({ correct: true }))
     expect(analytics.track).toHaveBeenCalledWith('lesson_complete', expect.any(Object))
     expect(analytics.track).toHaveBeenCalledWith('check_passed', expect.any(Object))
 
     fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
+    expect(useDailyStore.getState().celebrationStreak).toBe(4)
     expect(onNext).toHaveBeenCalledTimes(1)
   })
 

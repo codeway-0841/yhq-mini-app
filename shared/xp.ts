@@ -12,20 +12,18 @@
  */
 
 /** Birinchi marta to'g'ri yechilgan savol */
-export const XP_FIRST_CORRECT = 10
-/** Avval XATO qilingan savol endi to'g'ri yechildi — eng qimmatli hodisa */
-export const XP_MISTAKE_FIXED = 15
+export const XP_FIRST_CORRECT = 1
+/** Avval xato qilingan savol endi to'g'ri yechildi — birinchi urinish bilan teng (eksploit yo'q) */
+export const XP_MISTAKE_FIXED = 1
 /** Xato javob — jarima yo'q (jasorat jazolanmaydi), lekin XP ham yo'q */
 export const XP_WRONG = 0
 
 /**
- * Kunlik XP shifti. Sababi: cheklovsiz "kim ko'p vaqt o'tirsa, o'sha g'olib"
- * bo'lardi (hisob-kitob: grinder oyiga ~60 000 XP, oddiy o'quvchi ~8 000 —
- * 7 barobar farq). Shift bilan farq ~2 barobar.
- *
- * MUHIM: shiftdan keyin mashq DAVOM ETADI — faqat XP to'xtaydi.
+ * Kunlik XP shifti hozircha o'chirilgan (`null` = kunlik cheklov yo'q).
+ * Bir savoldan faqat 1 marta XP olish va `DAILY_ANSWER_CREDIT = 1000`
+ * anti-farm himoyalari alohida ishlaydi.
  */
-export const XP_DAILY_CAP = 500
+export const XP_DAILY_CAP: number | null = null
 
 /**
  * Javoblardan kuniga olinadigan maksimal coin. Boshqa manbalar
