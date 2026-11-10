@@ -265,7 +265,7 @@ function SalePromoMvp({ ctx }: { ctx: ExtraMvpCtx }) {
       }}
       onSecondaryClick={onClose}
     >
-      <BrilliantRiveContainer className="aspect-square">
+      <BrilliantRiveContainer className="aspect-square rounded-3xl overflow-hidden bg-black border border-white/10 shadow-2xl">
         <MvpRiveStage
           file="new_year_endstate_promo.32852c2a.riv"
           artboard="MAIN_new-years-endstate"
@@ -280,7 +280,7 @@ function SalePromoMvp({ ctx }: { ctx: ExtraMvpCtx }) {
       </BrilliantRiveContainer>
       <BrilliantCopyContainer>
         <span className="inline-flex items-center gap-1 rounded-full bg-[#f6b31f]/20 px-3 py-1 text-[12px] font-bold text-[#f6b31f]">
-          <Sparkles size={13} /> -50% PROMO
+          <Sparkles size={13} /> -20% PROMO
         </span>
         <h1 className="text-[24px] sm:text-[26px] font-extrabold text-pfg">
           {lang === 'ru' ? 'Праздничное предложение KIVVI!' : 'KIVVI bayram aksiyasi!'}
@@ -929,14 +929,14 @@ function InsertionAndLoadersMvp({
         onPrimaryClick={onReplay}
         onSecondaryClick={onClose}
       >
-        <BrilliantRiveContainer className="aspect-square">
+        <div className="mx-auto mt-8 h-[410px] w-full max-w-[350px] rounded-2xl overflow-hidden border border-pline bg-pcard/40 p-2">
           <MvpRiveStage
             file="level-insertion-acceptance.0b247613.riv"
             artboard="levelInsertion_Animation"
             stateMachine="State Machine 1"
             viewModel="ICPLevelInsertion"
             booleans={{ darkMode: dark }}
-            numbers={{ lessonCount: 3, levelNumber: 2 }}
+            numbers={{ lessonCount: 5, levelNumber: 2, revealProgress: 100 }}
             vmTriggers={['playInsertion', 'revealHeader', 'revealNodes']}
             dark={dark}
             nonce={nonce}
@@ -944,7 +944,7 @@ function InsertionAndLoadersMvp({
             className="size-full"
             onRiveEvent={onEvent}
           />
-        </BrilliantRiveContainer>
+        </div>
         <BrilliantCopyContainer>
           <h1 className="text-[22px] font-extrabold text-pfg">
             {lang === 'ru' ? 'Встраивание уроков в карту' : 'Darslarni xaritaga qo‘shish'}
@@ -997,7 +997,7 @@ function InsertionAndLoadersMvp({
       }}
       onSecondaryClick={onClose}
     >
-      <BrilliantRiveContainer className="aspect-square">
+      <div className="mx-auto mt-8 size-[310px] sm:size-[350px] rounded-3xl overflow-hidden border border-plineStrong shadow-2xl">
         <MvpRiveStage
           file="nux_loaders.51875c1e.riv"
           artboard="MasterLoader"
@@ -1012,7 +1012,7 @@ function InsertionAndLoadersMvp({
           className="size-full"
           onRiveEvent={onEvent}
         />
-      </BrilliantRiveContainer>
+      </div>
       <BrilliantCopyContainer>
         <h1 className="text-[22px] font-extrabold text-pfg">
           NUX MasterLoader ({['Matematika', 'CS / AI', 'Mantiq'][topic]})
@@ -1289,8 +1289,8 @@ function RuxReactivationMvp({ ctx }: { ctx: ExtraMvpCtx }) {
       onPrimaryClick={onClose}
       onSecondaryClick={() => setVariant((v) => (v === 'book' ? 'briefcase' : 'book'))}
     >
-      {/* 1yx7xrh_iegvh.js: Box height 390px, width 390px */}
-      <div className="mx-auto mt-8 size-[320px] sm:size-[370px] max-w-full">
+      {/* 1yx7xrh_iegvh.js: Box height 390px, width 390px (oq cheti kesilmasligi uchun keng container) */}
+      <div className="mx-auto mt-6 h-[340px] w-full max-w-[376px] px-2">
         {variant === 'book' ? (
           <MvpRiveStage
             file="rux_short_apr_22_26.riv"
@@ -1346,8 +1346,8 @@ function LohpHeroMvp({ ctx }: { ctx: ExtraMvpCtx }) {
       onPrimaryClick={onClose}
     >
       <div className="mx-auto flex w-full max-w-[440px] flex-1 flex-col items-center justify-center gap-4 px-4 pt-10">
-        <div className="bg-pcard w-full rounded-2xl p-4 flex flex-col items-center gap-2">
-          <div className="w-full h-[220px]">
+        <div className="bg-pcard w-full rounded-2xl p-4 flex flex-col items-center gap-0 overflow-hidden">
+          <div className="w-full h-[180px]">
             <MvpRiveStage
               file="lohp-cta-koji-rive.ad3fb542.riv"
               artboard="LOHP_TOP"
@@ -1359,11 +1359,14 @@ function LohpHeroMvp({ ctx }: { ctx: ExtraMvpCtx }) {
               className="size-full"
             />
           </div>
-          <span className="text-[12px] font-bold text-pmuted">lohp-cta-koji-rive (LOHP_TOP Hero)</span>
+          <Button variant="primary" block onClick={onClose}>
+            {lang === 'ru' ? 'Начать обучение' : 'Bepul boshlash'}
+          </Button>
+          <span className="mt-2.5 text-[12px] font-bold text-pmuted">lohp-cta-koji-rive (LOHP_TOP Hero)</span>
         </div>
 
         <div className="bg-pcard w-full rounded-2xl p-4 flex flex-col items-center gap-2">
-          <div className="w-full h-[180px]">
+          <div className="w-full h-[210px]">
             <MvpRiveStage
               file="lohp_koji_entrance.344647d5.riv"
               artboard="MAIN_KojiEntrance"

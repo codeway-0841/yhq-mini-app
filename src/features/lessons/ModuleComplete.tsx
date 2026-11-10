@@ -1,11 +1,11 @@
 import { useEffect, type CSSProperties } from 'react'
-import { ArrowRight, Check, Sparkles, Trophy } from 'lucide-react'
+import { ArrowRight, Check, Sparkles, Trophy, X } from 'lucide-react'
 import { modules } from '../../content/modules'
 import { useT, type Lang } from '../../shared/i18n'
 import Confetti from '../../shared/components/Confetti'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
-import { Button } from '../../shared/components/ui/button'
-import { Dialog, DialogBody, DialogHeader, DialogTitle, DialogDescription, DialogClose } from '../../shared/components/ui/dialog'
+import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstateShell'
+import { BrilliantCompletionStage } from '../../shared/components/BrilliantCompletionContent'
 import { getModuleIcon } from './module-icons'
 
 export const MODULE_TRANSITION_MS = 5000
@@ -25,68 +25,109 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
   const tt = useT(lang)
   const { finished, next, courseDone } = completion
   const NextIcon = next ? getModuleIcon(next.id) : Trophy
+  const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
+
   useEffect(() => {
     if (!next) return
     const timer = window.setTimeout(onContinue, MODULE_TRANSITION_MS)
     return () => window.clearTimeout(timer)
   }, [next, onContinue])
 
-  return <Dialog onClose={onStay} className="module-complete text-center" zIndex={60}>
-    <Confetti count={24} />
-    <DialogClose onClose={onStay} />
-    <DialogHeader className="module-complete-header relative items-center pt-6">
-      <BrilliantEndstateRive
-        kind="lesson"
-        isLevel={true}
-        levelNumber={finished.id}
-        skillCheckMastered={courseDone}
-        lessonTrigger={courseDone ? 'koji360' : 'kojiGem'}
-        variant={finished.id % 6}
-        dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-        label="Brilliant Module Complete"
-        className="mx-auto size-40 sm:size-44"
-        fallback={
-          <div className="module-medal" aria-hidden="true">
-            <span className="module-medal-orbit" />
-            <span className="module-medal-face"><Trophy size={42} strokeWidth={1.5} /></span>
-            <span className="module-medal-check"><Check size={17} strokeWidth={3} /></span>
-            <Sparkles size={21} className="module-medal-spark" />
-          </div>
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="module-complete-title"
+      className="fixed inset-0 z-[60] bg-pcanvas"
+    >
+      <BrilliantEndstateShell
+        primaryLabel={tt(next ? 'pathNextNow' : 'pathBackToPath')}
+        onPrimaryClick={next ? onContinue : onStay}
+        secondaryLabel={next ? tt('pathStay') : undefined}
+        onSecondaryClick={next ? onStay : undefined}
+        overlaySlot={
+          <>
+            <Confetti count={24} />
+            <button
+              type="button"
+              onClick={onStay}
+              aria-label="Yopish"
+              className="fixed right-4 top-[calc(var(--safe-top,0px)+12px)] z-30 flex size-9 items-center justify-center rounded-full bg-pcard/90 text-pmuted border border-pline hover:text-pfg cursor-pointer"
+            >
+              <X size={18} strokeWidth={2.4} />
+            </button>
+          </>
         }
-      />
-      <p className="mt-2 text-[10px] font-bold uppercase tracking-[.22em] text-psuccess">{tt('pathBravo')}</p>
-      <DialogTitle className="text-[25px] leading-tight">{tt(courseDone ? 'pathCourseDone' : 'pathModuleDone')}</DialogTitle>
-      <DialogDescription className="text-base">{lang === 'ru' ? finished.titleRu : finished.title}</DialogDescription>
-    </DialogHeader>
-    <DialogBody className="relative pb-6">
-      <p className="mb-5 text-sm leading-relaxed text-pmuted">{tt(courseDone ? 'pathCourseDoneHint' : 'pathMilestoneHint')}</p>
-      {next && <div className="module-next-preview mb-5 flex items-center gap-3 rounded-2xl bg-psurface p-4 text-left">
-        <div className="size-12 flex-none flex items-center justify-center">
-          <BrilliantEndstateRive
-            kind="icp-node"
-            variant={next.id % 6}
-            nodeCompleted={false}
-            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-            label="Next Module Node"
-            className="size-full"
-            fallback={<span className="grid size-11 flex-none place-items-center rounded-full bg-pcard text-pmuted"><NextIcon size={23} /></span>}
-          />
-        </div>
-        <div className="min-w-0 flex-1">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-pmuted">{tt('pathNextModule')} · {next.id}</p>
-          <p className="mt-1 break-words text-base font-semibold text-pfg">{lang === 'ru' ? next.titleRu : next.title}</p>
-        </div>
-        <ArrowRight aria-hidden="true" size={18} className="flex-none text-pprimary" />
-      </div>}
-      <Button block size="lg" className="relative overflow-hidden" onClick={next ? onContinue : onStay}>
-        {next && <span aria-hidden="true" className="module-auto-progress" style={{ '--module-delay': `${MODULE_TRANSITION_MS}ms` } as CSSProperties} />}
-        <span className="relative">{tt(next ? 'pathNextNow' : 'pathBackToPath')}</span>
-        {next && <ArrowRight size={18} className="relative" />}
-      </Button>
-      {next && <>
-        <p className="mt-3 text-xs text-pmuted">{tt('pathAutoNextHint')}</p>
-        <Button variant="secondary" block className="mt-2" onClick={onStay}>{tt('pathStay')}</Button>
-      </>}
-    </DialogBody>
-  </Dialog>
+        footerCaption={
+          next ? (
+            <div className="flex w-full max-w-[353px] flex-col items-center gap-1.5">
+              <div className="h-1 w-full overflow-hidden rounded-full bg-psurface">
+                <span
+                  aria-hidden="true"
+                  className="block h-full rounded-full bg-pprimary"
+                  style={{ animation: `moduleProgress ${MODULE_TRANSITION_MS}ms linear forwards` } as CSSProperties}
+                />
+              </div>
+              <p className="text-xs text-pmuted">{tt('pathAutoNextHint')}</p>
+            </div>
+          ) : undefined
+        }
+      >
+        <BrilliantCompletionStage
+          mode="lesson"
+          heading={tt(courseDone ? 'pathCourseDone' : 'pathModuleDone')}
+          headingId="module-complete-title"
+          subtitle={lang === 'ru' ? finished.titleRu : finished.title}
+          xpLabel={tt('pathBravo')}
+          dark={dark}
+          variant={finished.id % 6}
+          isLevel
+          levelNumber={finished.id}
+          skillCheckMastered={courseDone}
+          lessonTrigger={courseDone ? 'koji360' : 'kojiGem'}
+          showXp={false}
+          fallback={
+            <div className="module-medal" aria-hidden="true">
+              <span className="module-medal-orbit" />
+              <span className="module-medal-face"><Trophy size={42} strokeWidth={1.5} /></span>
+              <span className="module-medal-check"><Check size={17} strokeWidth={3} /></span>
+              <Sparkles size={21} className="module-medal-spark" />
+            </div>
+          }
+        >
+          <p className="max-w-[330px] text-sm leading-relaxed text-pmuted">
+            {tt(courseDone ? 'pathCourseDoneHint' : 'pathMilestoneHint')}
+          </p>
+          {next && (
+            <div className="module-next-preview mt-1 flex w-full items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left border border-pline">
+              <div className="size-12 flex-none flex items-center justify-center">
+                <BrilliantEndstateRive
+                  kind="icp-node"
+                  variant={next.id % 6}
+                  nodeCompleted={false}
+                  dark={dark}
+                  label="Next Module Node"
+                  className="size-full"
+                  fallback={
+                    <span className="grid size-11 flex-none place-items-center rounded-full bg-psurface text-pmuted">
+                      <NextIcon size={23} />
+                    </span>
+                  }
+                />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-pmuted">
+                  {tt('pathNextModule')} · {next.id}
+                </p>
+                <p className="mt-0.5 break-words text-[15px] font-semibold text-pfg">
+                  {lang === 'ru' ? next.titleRu : next.title}
+                </p>
+              </div>
+              <ArrowRight aria-hidden="true" size={18} className="flex-none text-pprimary" />
+            </div>
+          )}
+        </BrilliantCompletionStage>
+      </BrilliantEndstateShell>
+    </div>
+  )
 }

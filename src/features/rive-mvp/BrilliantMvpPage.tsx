@@ -63,7 +63,7 @@ const CATALOG: CatalogItem[] = [
   {
     id: 'lesson',
     group: 'endstate',
-    kivviStatus: 'needs_layout',
+    kivviStatus: 'wired',
     titleUz: 'Dars yakuni (+ XP Starburst)',
     titleRu: 'Конец урока (+ XP Starburst)',
     meta: 'endstates · MAIN_lesson-endstate · transition_up',
@@ -75,7 +75,7 @@ const CATALOG: CatalogItem[] = [
   {
     id: 'practice',
     group: 'endstate',
-    kivviStatus: 'needs_layout',
+    kivviStatus: 'wired',
     titleUz: 'Mashq natijasi',
     titleRu: 'Итог практики',
     meta: 'endstates · MAIN_practice-endstate · play100/50+/Fail',
@@ -87,7 +87,7 @@ const CATALOG: CatalogItem[] = [
   {
     id: 'streak',
     group: 'endstate',
-    kivviStatus: 'needs_layout',
+    kivviStatus: 'wired',
     titleUz: 'Kunlik seriya (Streak)',
     titleRu: 'Ударная серия (Streak)',
     meta: 'endstates · MAIN_streak-endstate · 5 RiveEvents',
@@ -99,7 +99,7 @@ const CATALOG: CatalogItem[] = [
   {
     id: 'charge',
     group: 'endstate',
-    kivviStatus: 'needs_layout',
+    kivviStatus: 'wired',
     titleUz: 'Seriya himoyasi (Charge)',
     titleRu: 'Заморозка серии',
     meta: 'endstates · Streaks Forgive · PlayStreakChargeSound',
@@ -822,13 +822,15 @@ export default function BrilliantMvpPage() {
       {/* TO'LIQ EKRAN BRILLIANT 1:1 SIMULYATOR */}
       {activeId && (
         <div className="fixed inset-0 z-[120] bg-pcanvas overflow-y-auto overscroll-contain">
-          {/* Tepada ixcham boshqaruv pill (LevelCheck / InLesson navbar bilan to'qnashmaydi) */}
+          {/* Tepada (yoki dars ichidagi chaqmoq uchun pastda) ixcham boshqaruv pill */}
           <div
             className={cn(
               'fixed right-3 z-[140] flex items-center gap-1.5',
-              hasTopHeaderOverlay
-                ? 'top-[calc(var(--safe-top,0px)+58px)]'
-                : 'top-[calc(var(--safe-top,0px)+10px)]',
+              activeId === 'in-lesson-lightning'
+                ? 'bottom-[calc(env(safe-area-inset-bottom,0px)+14px)]'
+                : hasTopHeaderOverlay
+                  ? 'top-[calc(var(--safe-top,0px)+58px)]'
+                  : 'top-[calc(var(--safe-top,0px)+10px)]',
             )}
           >
             <button

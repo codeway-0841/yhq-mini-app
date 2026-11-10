@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronLeft, Lock, RefreshCw, X, XCircle,
+  CheckCircle2, ChevronDown, ChevronLeft, Lock, RefreshCw, X, XCircle,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import Confetti from '../../shared/components/Confetti'
@@ -18,6 +18,8 @@ import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstateShell'
+import { BrilliantCompletionStage } from '../../shared/components/BrilliantCompletionContent'
 import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
 import LessonExercise from './LessonExercise'
@@ -120,6 +122,7 @@ export default function LessonRunner({
   const [index, setIndex] = useState(0)
   const [phase, setPhase] = useState<Phase>('exercise')
   const [showStreakModal, setShowStreakModal] = useState(false)
+  const [showReview, setShowReview] = useState(false)
   const [feedback, setFeedback] = useState<DarslikAnswerFeedback | null>(null)
   const [revealed, setRevealed] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
@@ -176,6 +179,7 @@ export default function LessonRunner({
     setRevealed(false)
     setShowExplanation(false)
     setShowTutor(false)
+    setShowReview(false)
     setAnswerError(false)
     setSubmitError(false)
     setCombo(0)
@@ -521,201 +525,183 @@ export default function LessonRunner({
 
   if (result) {
     const accuracyPct = Math.round((result.correct / Math.max(1, result.total)) * 100)
+    const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
+    const blockNum = Number(topicId.split(':')[0])
+    const colorVariant = Number.isFinite(blockNum) && blockNum > 0 ? (blockNum - 1) % 6 : 0
+    const heading = result.passed
+      ? (lesson ? tt('rusDarslikLessonPassed') : tt('rusDarslikQuizPassed'))
+      : (lesson ? tt('rusDarslikLessonFailed') : tt('rusDarslikQuizFailed'))
+
+    const primaryLabel = result.passed
+      ? (hasNext && onNext
+          ? (lesson ? tt('rusDarslikLessonContinue') : tt('rusDarslikQuizNextTopic'))
+          : tt('rusDarslikQuizBackToTopic'))
+      : tt('rusDarslikQuizRetry')
+    const handlePrimary = result.passed
+      ? (hasNext && onNext ? onNext : onClose)
+      : retry
+    const secondaryLabel = result.passed
+      ? tt('rusDarslikQuizRetry')
+      : tt('rusDarslikQuizBackToTopic')
+    const handleSecondary = result.passed ? retry : onClose
+
     return (
-      <div
-        className="fixed inset-0 z-[60] flex flex-col bg-pcanvas"
-        data-testid={lesson ? 'lesson-result' : 'topic-check'}
-        data-result={result.passed ? 'passed' : 'failed'}
-        role="dialog"
-        aria-modal="true"
-      >
-        {result.passed && <Confetti count={28} />}
-        {header}
-        <div className="flex-1 overflow-y-auto px-4 py-5 pb-[calc(5rem+var(--safe-bottom,0px))]">
-          <div className="mx-auto w-full max-w-[460px]">
-            <div className="flex flex-col items-center rounded-3xl bg-pcard px-5 py-6 text-center shadow-xs">
-              {lesson ? (
-                <div className="relative mb-2 grid size-40 sm:size-44 place-items-center">
-                  <span className="relative block size-full" data-testid="lesson-result-mascot">
-                    <BrilliantEndstateRive
-                      kind="lesson"
-                      isLevel={false}
-                      skillCheckMastered={false}
-                      lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
-                      dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-                      label="Brilliant Lesson Complete"
-                      className="size-full"
-                      fallback={<PathMascot variant="avatar" animation={result.passed ? 'celebrate' : 'oops'} />}
-                    />
-                  </span>
-                </div>
+      <>
+        <BrilliantEndstateShell
+          data-testid={lesson ? 'lesson-result' : 'topic-check'}
+          data-result={result.passed ? 'passed' : 'failed'}
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-[60]"
+          topSlot={header}
+          overlaySlot={result.passed ? <Confetti count={28} /> : undefined}
+          primaryLabel={primaryLabel}
+          onPrimaryClick={handlePrimary}
+          secondaryLabel={secondaryLabel}
+          onSecondaryClick={handleSecondary}
+        >
+          <BrilliantCompletionStage
+            mode={lesson ? 'lesson' : 'practice'}
+            heading={heading}
+            subtitle={title}
+            xpLabel="XP"
+            dark={dark}
+            variant={colorVariant}
+            lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
+            isLevel={false}
+            skillCheckMastered={false}
+            practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
+            showXp={Boolean(lesson && result.passed && (result.xpEarned ?? 0) > 0)}
+            earnedXp={result.xpEarned ?? 0}
+            animateXpCount={false}
+            fallback={
+              lesson ? (
+                <PathMascot variant="avatar" animation={result.passed ? 'celebrate' : 'oops'} />
               ) : (
-                <div className="relative mb-2 grid size-36 sm:size-40 place-items-center">
-                  <BrilliantEndstateRive
-                    kind="practice"
-                    practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
-                    dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-                    label="Brilliant Practice Complete"
-                    className="size-full"
-                    fallback={
-                      <span className={cn(
-                        'grid size-20 place-items-center rounded-3xl',
-                        result.passed
-                          ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
-                          : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
-                      )}>
-                        {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
-                      </span>
-                    }
-                  />
-                </div>
-              )}
-              <h3 className="mt-3 font-display text-[24px] font-extrabold tracking-tight text-pfg">
-                {result.passed
-                  ? (lesson ? tt('rusDarslikLessonPassed') : tt('rusDarslikQuizPassed'))
-                  : (lesson ? tt('rusDarslikLessonFailed') : tt('rusDarslikQuizFailed'))}
-              </h3>
-              <p className="mt-1 text-[13.5px] font-semibold text-pmuted">{title}</p>
-
-              {lesson ? (
-                <>
-                  <div className="mt-5 grid w-full grid-cols-3 gap-2.5">
-                    <div className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
-                      <span className="text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
-                        {tt('rusDarslikLessonAccuracy')}
-                      </span>
-                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
-                    </div>
-
-                    <div className="relative flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3 overflow-hidden">
-                      {result.passed && (result.xpEarned ?? 0) > 0 && (
-                        <BrilliantEndstateRive
-                          kind="xp"
-                          dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-                          label="XP Starburst"
-                          className="pointer-events-none absolute -inset-4 size-24 opacity-80"
-                        />
-                      )}
-                      <span className="relative z-10 text-[10px] font-extrabold uppercase tracking-wider text-pprimary">
-                        XP
-                      </span>
-                      <p className="relative z-10 mt-1 text-[20px] font-extrabold tabular-nums text-pprimary">+{result.xpEarned ?? 0}</p>
-                    </div>
-
-                    <button
-                      type="button"
-                      onClick={() => {
-                        if (typeof result.dailyStreak === 'number' && result.dailyStreak > 0) {
-                          setShowStreakModal(true)
-                        }
-                      }}
-                      className="flex flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3 transition-transform active:scale-95 cursor-pointer"
-                    >
-                      <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
-                        <BrilliantStreakIcon size={12} className="text-[#A8D31D]" />
-                        {tt('rusDarslikLessonStreak')}
-                      </span>
-                      <p className="mt-1 text-[20px] font-extrabold tabular-nums text-pwarning">
-                        {typeof result.dailyStreak === 'number' ? result.dailyStreak : '—'}
-                      </p>
-                    </button>
-                  </div>
-
-                  <p className="mt-3.5 rounded-2xl bg-psurface px-4 py-2 text-[12.5px] font-bold tabular-nums text-pfg">
-                    {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
-                    {maxCombo >= 2 ? ' · ' + tt('rusDarslikLessonBestCombo').replace('{count}', String(maxCombo)) : ''}
-                  </p>
-                  {result.passed && result.alreadyPassed && (result.xpEarned ?? 0) === 0 && (
-                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonAlreadyPassedHint')}</p>
-                  )}
-                  {result.passed && (result.xpEarned ?? 0) > 0 && (
-                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikLessonXpHint')}</p>
-                  )}
-                  {!result.passed && (
-                    <p className="mt-2.5 max-w-[340px] text-[12px] leading-relaxed text-pmuted">{tt('rusDarslikCheckNeedAll')}</p>
-                  )}
-                </>
-              ) : (
-                <>
-                  <p className="mt-3.5 rounded-2xl bg-psurface px-4 py-2.5 text-[15px] font-bold tabular-nums text-pfg">
-                    {tt('rusDarslikQuizScore').replace('{score}', String(result.correct)).replace('{total}', String(result.total))}
-                  </p>
-                  <p className="mt-2.5 max-w-[330px] text-[12.5px] leading-relaxed text-pmuted">
-                    {result.passed ? tt('rusDarslikQuizPassHint') : tt('rusDarslikCheckNeedAll')}
-                  </p>
-                </>
-              )}
-            </div>
-
-            <div className="mt-5 flex flex-col gap-2.5">
-              <p className="px-1 text-[11px] font-extrabold uppercase tracking-wider text-psubtle">
-                {tt('rusDarslikReviewTitle')}
-              </p>
-              {check.questions.map((question, questionIndex) => {
-                const item = result.feedback.find((entry) => entry.id === question.id)
-                const correct = item?.correct ?? false
-                return (
-                  <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="text-[10.5px] font-bold uppercase tracking-wide text-psubtle">
-                        {questionIndex + 1}/{check.questions.length} · {tt(EXERCISE_LABEL[question.kind])}
-                      </p>
-                      <span
-                        className={cn(
-                          'inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold',
-                          correct
-                            ? 'bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess'
-                            : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
-                        )}
-                      >
-                        {correct ? <CheckCircle2 size={12} strokeWidth={2.5} /> : <XCircle size={12} strokeWidth={2.5} />}
-                        {correct ? tt('rusDarslikQuizCorrect') : tt('rusDarslikQuizWrong')}
-                      </span>
-                    </div>
-                    <p className="mt-1.5 text-[13.5px] font-bold leading-snug text-pfg">{question.prompt}</p>
-                    {!correct && (
-                      <p className="mt-1.5 text-[12px] leading-relaxed text-pmuted">
-                        {tt('rusDarslikCheckYourAnswer')}: <span className="font-semibold text-pdanger">{answerText(question, answers[question.id])}</span>
-                      </p>
-                    )}
-                    {lesson && !correct && item?.correctAnswer && (
-                      <p className="mt-1 text-[12px] font-semibold leading-relaxed text-psuccess">
-                        {tt('rusDarslikQuizCorrectAnswer')}: {item.correctAnswer}
-                      </p>
-                    )}
-                    {item?.explanation && (
-                      <p className="mt-1.5 rounded-xl bg-psurface px-2.5 py-1.5 text-[12px] leading-relaxed text-pmuted">
-                        {tt('rusDarslikQuizExplanation')}: {item.explanation}
-                      </p>
-                    )}
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-pline bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
-          <div className="mx-auto w-full max-w-[460px]">
-            {result.passed ? (
-              <div className="flex flex-col gap-2">
-                {lesson && hasNext && onNext ? (
-                  <Button size="lg" block onClick={onNext}>{tt('rusDarslikLessonContinue')}</Button>
-                ) : hasNext && onNext ? (
-                  <Button size="lg" block onClick={onNext}>{tt('rusDarslikQuizNextTopic')}</Button>
-                ) : (
-                  <Button size="lg" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
-                )}
-                <Button size="sm" variant="secondary" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
+                <span className={cn(
+                  'grid size-20 place-items-center rounded-3xl',
+                  result.passed
+                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
+                    : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                )}>
+                  {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
+                </span>
+              )
+            }
+          >
+            {/* ixcham natija ko'rsatkichlari: Aniqlik, To'g'ri/Jami, Kunlik seriya */}
+            <div className="flex w-full max-w-[340px] items-stretch justify-center gap-2 pt-1">
+              <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 border border-pline">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
+                  {lesson ? tt('rusDarslikLessonAccuracy') : tt('rusDarslikQuizCorrect')}
+                </span>
+                <p className="mt-0.5 text-[18px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
               </div>
-            ) : (
-              <div className="flex flex-col gap-2">
-                <Button size="lg" block onClick={retry}>{tt('rusDarslikQuizRetry')}</Button>
-                <Button size="sm" variant="secondary" block onClick={onClose}>{tt('rusDarslikQuizBackToTopic')}</Button>
+
+              <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 border border-pline">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-pmuted">
+                  {tt('rusDarslikReviewTitle')}
+                </span>
+                <p className="mt-0.5 text-[18px] font-extrabold tabular-nums text-pfg">
+                  {result.correct}/{result.total}
+                </p>
+              </div>
+
+              {lesson && typeof result.dailyStreak === 'number' && result.dailyStreak > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setShowStreakModal(true)}
+                  className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 border border-pline transition-transform active:scale-95 cursor-pointer"
+                >
+                  <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-wider text-pwarning">
+                    <BrilliantStreakIcon size={12} className="text-[#A8D31D]" />
+                    {tt('rusDarslikLessonStreak')}
+                  </span>
+                  <p className="mt-0.5 text-[18px] font-extrabold tabular-nums text-pwarning">
+                    {result.dailyStreak}
+                  </p>
+                </button>
+              )}
+            </div>
+
+            {lesson && maxCombo >= 2 && (
+              <p className="rounded-full bg-psurface px-3.5 py-1 text-[12px] font-bold tabular-nums text-pfg">
+                {tt('rusDarslikLessonBestCombo').replace('{count}', String(maxCombo))}
+              </p>
+            )}
+
+            <p className="max-w-[330px] text-[12.5px] leading-relaxed text-pmuted">
+              {lesson
+                ? (!result.passed
+                    ? tt('rusDarslikCheckNeedAll')
+                    : result.alreadyPassed && (result.xpEarned ?? 0) === 0
+                      ? tt('rusDarslikLessonAlreadyPassedHint')
+                      : (result.xpEarned ?? 0) > 0
+                        ? tt('rusDarslikLessonXpHint')
+                        : null)
+                : (result.passed ? tt('rusDarslikQuizPassHint') : tt('rusDarslikCheckNeedAll'))}
+            </p>
+
+            {/* Masalalarni ko'rib chiqish (ixcham ochiladigan ro'yxat) */}
+            <button
+              type="button"
+              onClick={() => setShowReview((v) => !v)}
+              aria-expanded={showReview}
+              className="inline-flex items-center gap-1.5 rounded-full border border-pline bg-psurface px-3.5 py-1.5 text-[12px] font-bold text-pfg transition-colors hover:border-plineStrong cursor-pointer"
+            >
+              <span>{tt('rusDarslikReviewTitle')}</span>
+              <ChevronDown
+                size={14}
+                className={cn('transition-transform duration-200', showReview && 'rotate-180')}
+              />
+            </button>
+
+            {showReview && (
+              <div className="flex w-full flex-col gap-2.5 pt-1 pb-4 text-left">
+                {check.questions.map((question, questionIndex) => {
+                  const item = result.feedback.find((entry) => entry.id === question.id)
+                  const correct = item?.correct ?? false
+                  return (
+                    <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs border border-pline">
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-[10.5px] font-bold uppercase tracking-wide text-psubtle">
+                          {questionIndex + 1}/{check.questions.length} · {tt(EXERCISE_LABEL[question.kind])}
+                        </p>
+                        <span
+                          className={cn(
+                            'inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold',
+                            correct
+                              ? 'bg-[rgb(var(--p-success-rgb)/0.12)] text-psuccess'
+                              : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                          )}
+                        >
+                          {correct ? <CheckCircle2 size={12} strokeWidth={2.5} /> : <XCircle size={12} strokeWidth={2.5} />}
+                          {correct ? tt('rusDarslikQuizCorrect') : tt('rusDarslikQuizWrong')}
+                        </span>
+                      </div>
+                      <p className="mt-1.5 text-[13.5px] font-bold leading-snug text-pfg">{question.prompt}</p>
+                      {!correct && (
+                        <p className="mt-1.5 text-[12px] leading-relaxed text-pmuted">
+                          {tt('rusDarslikCheckYourAnswer')}: <span className="font-semibold text-pdanger">{answerText(question, answers[question.id])}</span>
+                        </p>
+                      )}
+                      {lesson && !correct && item?.correctAnswer && (
+                        <p className="mt-1 text-[12px] font-semibold leading-relaxed text-psuccess">
+                          {tt('rusDarslikQuizCorrectAnswer')}: {item.correctAnswer}
+                        </p>
+                      )}
+                      {item?.explanation && (
+                        <p className="mt-1.5 rounded-xl bg-psurface px-2.5 py-1.5 text-[12px] leading-relaxed text-pmuted">
+                          {tt('rusDarslikQuizExplanation')}: {item.explanation}
+                        </p>
+                      )}
+                    </div>
+                  )
+                })}
               </div>
             )}
-          </div>
-        </div>
+          </BrilliantCompletionStage>
+        </BrilliantEndstateShell>
 
         {showStreakModal && typeof result.dailyStreak === 'number' && result.dailyStreak > 0 && (
           <BrilliantStreakModal
@@ -723,7 +709,7 @@ export default function LessonRunner({
             onClose={() => setShowStreakModal(false)}
           />
         )}
-      </div>
+      </>
     )
   }
 

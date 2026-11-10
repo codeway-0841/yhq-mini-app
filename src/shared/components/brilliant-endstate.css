@@ -1,0 +1,257 @@
+/* Brilliant.org 1:1 Endstate & Streak Calendar Keyframes */
+
+@keyframes brilliantXpCounterPulse {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.brilliant-xp-pulse {
+  animation: brilliantXpCounterPulse var(--xp-counter-duration, 420ms) cubic-bezier(0.25, 0.75, 0.18, 1.09);
+}
+
+@keyframes brilliantFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes brilliantSlideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(var(--slide-from-bottom-distance, 30px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.brilliant-upsell-copy-in {
+  --slide-from-bottom-distance: 30px;
+  animation:
+    brilliantFadeIn 660ms cubic-bezier(0, 0, 0, 1) forwards,
+    brilliantSlideFromBottom 660ms cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+@keyframes brilliantStreakBgFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Brilliant: paywall.iridescentBgFlipped */
+.brilliant-iridescent-flipped {
+  background:
+    radial-gradient(95% 60% at 50% 0%, rgba(53, 87, 255, 0.14) 0%, rgba(157, 98, 255, 0.08) 42%, transparent 78%),
+    radial-gradient(80% 50% at 20% 18%, rgba(41, 204, 87, 0.1) 0%, transparent 70%),
+    var(--p-canvas, var(--theme-canvas));
+}
+
+body[data-theme='dark'] .brilliant-iridescent-flipped {
+  background:
+    radial-gradient(95% 60% at 50% 0%, rgba(53, 87, 255, 0.22) 0%, rgba(157, 98, 255, 0.14) 45%, transparent 78%),
+    radial-gradient(80% 50% at 85% 15%, rgba(41, 204, 87, 0.12) 0%, transparent 70%),
+    var(--p-canvas, var(--theme-canvas));
+}
+
+/* Brilliant: endstate.streakBg */
+.brilliant-streak-bg-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    85% 52% at 50% 24%,
+    rgba(255, 198, 41, 0.24) 0%,
+    rgba(255, 141, 35, 0.09) 46%,
+    transparent 76%
+  );
+  animation: brilliantStreakBgFadeIn 1.6s ease-in-out forwards;
+}
+
+body[data-theme='dark'] .brilliant-streak-bg-glow::before {
+  background: radial-gradient(
+    85% 52% at 50% 24%,
+    rgba(255, 198, 41, 0.18) 0%,
+    rgba(255, 141, 35, 0.07) 46%,
+    transparent 76%
+  );
+}
+
+/* Streak Calendar Animations (Brilliant 27qvs7osh1b7y.js) */
+@keyframes endstateParticleBurstOut {
+  0% {
+    transform: translate(
+      calc(var(--particle-direction-x, 0) * var(--particle-starting-distance, 16px)),
+      calc(var(--particle-direction-y, 0) * var(--particle-starting-distance, 16px))
+    );
+  }
+  100% {
+    transform: translate(
+      calc(var(--particle-direction-x, 0) * var(--particle-ending-distance, 28px)),
+      calc(var(--particle-direction-y, 0) * var(--particle-ending-distance, 28px))
+    );
+  }
+}
+
+@keyframes endstateParticleScaleAndFade {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.4);
+    background-color: #c2e500;
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+    background-color: #d9f23a;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.2);
+    background-color: transparent;
+  }
+}
+
+@keyframes endstateStreakDayRipple {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(calc(var(--ripple-direction, 1) * 3px));
+  }
+}
+
+@keyframes endstateStreakScaleOutline {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.16);
+  }
+  45% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes endstateStreakColorOutline {
+  from {
+    border-color: var(--p-line-strong, #cccccc);
+  }
+  to {
+    border-color: #b7dc00;
+  }
+}
+
+@keyframes endstateStreakFadeOutline {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes endstateStreakScaleBackgroundCircle {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes endstateStreakScaleBolt {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes endstateStreakDayBounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.brilliant-particle-burst {
+  animation: endstateParticleBurstOut 333ms var(--particle-start-delay, 667ms) cubic-bezier(0, 0, 0, 1) forwards;
+}
+
+.brilliant-particle-dot {
+  width: var(--particle-size, 2px);
+  height: var(--particle-size, 2px);
+  background-color: transparent;
+  transform: rotate(45deg);
+  animation: endstateParticleScaleAndFade 333ms var(--particle-start-delay, 667ms) forwards;
+}
+
+.brilliant-streak-ripple[data-animate='true'] {
+  animation: endstateStreakDayRipple 834ms var(--ripple-delay, 833ms);
+}
+
+.brilliant-streak-outline[data-animate='true'] {
+  animation:
+    endstateStreakScaleOutline 1333ms forwards,
+    endstateStreakColorOutline 400ms cubic-bezier(0.5, 0, 0.5, 1) 267ms forwards,
+    endstateStreakFadeOutline 500ms cubic-bezier(0.5, 0, 0.5, 1) 833ms forwards;
+}
+
+.brilliant-streak-bg-circle[data-visible='true'] {
+  opacity: 1;
+}
+
+.brilliant-streak-bg-circle[data-animate='true'] {
+  animation: endstateStreakScaleBackgroundCircle 566ms 667ms forwards;
+}
+
+.brilliant-streak-bolt {
+  opacity: 0;
+}
+
+.brilliant-streak-bolt[data-visible='true'] {
+  opacity: 1;
+}
+
+.brilliant-streak-bolt[data-animate='true'] {
+  animation: endstateStreakScaleBolt 566ms 667ms forwards;
+}
+
+.brilliant-streak-day-label[data-animate='true'] {
+  animation: endstateStreakDayBounce 833ms forwards;
+}
