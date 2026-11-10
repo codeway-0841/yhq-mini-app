@@ -28,8 +28,8 @@ export const XP_WRONG = 0
 export const XP_DAILY_CAP = 500
 
 /**
- * Javoblardan kuniga olinadigan maksimal coin. Kunlik vazifalar (35c) va
- * boshqa manbalar bu shiftga KIRMAYDI.
+ * Javoblardan kuniga olinadigan maksimal coin. Boshqa manbalar
+ * (Lucky Spin, Boss, AI test) bu shiftga KIRMAYDI.
  *
  * Nega hozir kerak: keyinroq balanslar shishib ketsa, yagona chora narxni
  * ma'nosiz ko'tarish yoki balansni nolga tushirish bo'lardi — ikkalasi ham yomon.

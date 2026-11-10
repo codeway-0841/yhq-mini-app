@@ -27,7 +27,6 @@ import {
 } from '../../../shared/shop-items'
 import { SPIN_SEGMENTS, getSpinSegment } from '../../../shared/lucky-spin'
 import { getMerchItem } from '../../../shared/merch-items'
-import { getDailyTask } from '../../../shared/daily-tasks'
 import { tashkentDate } from '../../../server/utils/date'
 
 const app = createApp()
@@ -128,7 +127,6 @@ let tokenA: string
 let tokenB: string
 let tokenC: string
 let tokenD: string
-let tokenF: string
 
 beforeAll(async () => {
   await cleanup()
@@ -138,7 +136,7 @@ beforeAll(async () => {
   tokenC = await createUserWithSession(USER_C)
   tokenD = await createUserWithSession(USER_D)
   await createUserWithSession(USER_E)
-  tokenF = await createUserWithSession(USER_F)
+  await createUserWithSession(USER_F)
   await createUserWithSession(USER_G)
 }, 90_000)
 
@@ -199,10 +197,9 @@ describe('coins mint — faqat gate + to\'g\'ri javob', () => {
 
   it('xato tuzatish HAR SAFAR coin beradi (to\'g\'ri javobning yarmi)', async () => {
     // Avval bu "har 10 ta tuzatishga 1 coin" edi, hisoblagich esa
-    // daily_records.fixed — u har KUNI va har FAN bo'yicha nolga qaytardi.
-    // Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi (DAILY_TASKS fix-5),
-    // ya'ni vazifani bajaradigan foydalanuvchi 10 ga hech qachon yetmay,
-    // tuzatishdan abadiy 0 coin olardi. Endi har bir tuzatish darhol to'lanadi.
+    // daily_records.fixed — u har KUNI va har FAN bo'yicha nolga qaytardi,
+    // shuning uchun ko'pchilik 10 ga yetmay tuzatishdan 0 coin olardi.
+    // Endi har bir tuzatish darhol to'lanadi.
     //
     // Savollarni TESTNING O'ZI yaratadi (beforeAll): CI test bazasida atigi
     // bir nechta savol bor, ya'ni mavjud qatorlar soniga tayanib bo'lmaydi.
@@ -632,107 +629,6 @@ describe('coins — premium-days consumable + equip guard', () => {
       expect(typeof row.delta).toBe('number')
       expect(row.delta).not.toBe(0)
     }
-  })
-})
-
-describe('coins — kunlik vazifalar (#40 Faza 2)', () => {
-  const date = tashkentDate()
-
-  it('GET /coins/tasks — progress server aggregate\'dan; claim atomik (1/kun)', async () => {
-    // 25 javob / 16 to'g'ri / 3 tuzatish: answers-20 ✓, correct-15 ✓, fix-5 ✗
-    await seedDaily(USER_A, 25, 16, 3)
-
-    const res = await request(app).get('/api/coins/tasks')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .expect(200)
-    const byId = new Map(res.body.tasks.map((t: { id: string } & Record<string, unknown>) => [t.id, t]))
-    expect(byId.get('answers-20')).toMatchObject({ progress: 20, completed: true, claimed: false })
-    expect(byId.get('correct-15')).toMatchObject({ progress: 15, completed: true, claimed: false })
-    expect(byId.get('fix-5')).toMatchObject({ progress: 3, completed: false, claimed: false })
-
-    const before = await getBalance(USER_A)
-
-    // 1) Bajarilmaganini claim — 409
-    const notDone = await request(app).post('/api/coins/claim-task')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .send({ taskId: 'fix-5' })
-    expect(notDone.status).toBe(409)
-    expect(notDone.body.error).toBe('TASK_NOT_COMPLETED')
-
-    // 2) Bajarilganini claim — +reward, balans yangilanadi
-    const claimed1 = await request(app).post('/api/coins/claim-task')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .send({ taskId: 'answers-20' })
-      .expect(200)
-    const answersTask = getDailyTask('answers-20')!
-    expect(claimed1.body.reward).toBe(answersTask.reward)
-    expect(claimed1.body.balance).toBe(before + answersTask.reward)
-
-    // 3) XUDDI SHU vazifani qayta claim — 409 (race/refresh'dan himoyalangan)
-    const again = await request(app).post('/api/coins/claim-task')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .send({ taskId: 'answers-20' })
-    expect(again.status).toBe(409)
-    expect(again.body.error).toBe('TASK_ALREADY_CLAIMED')
-    expect(await getBalance(USER_A)).toBe(before + answersTask.reward)   // double-credit YO'Q
-
-    // 4) Holat yangilanganda claimed:true
-    const after = await request(app).get('/api/coins/tasks')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .expect(200)
-    const afterById = new Map(after.body.tasks.map((t: { id: string } & Record<string, unknown>) => [t.id, t]))
-    expect(afterById.get('answers-20')).toMatchObject({ claimed: true })
-
-    // Ledger'da 'task_claim' ref kuni bilan
-    const hist = await coinsRepository.getHistory(USER_A)
-    expect(hist.some((h) => h.reason === 'task_claim' && h.refId === `answers-20:${date}`)).toBe(true)
-  })
-
-  it('parallel task claim — reward faqat bitta yoziladi', async () => {
-    await seedDaily(USER_F, 25, 16, 0)
-    await setBalance(USER_F, 0)
-    const task = getDailyTask('answers-20')!
-
-    const results = await withLockedCoinRow(USER_F, () => Promise.all(
-      Array.from({ length: 8 }, () => coinsRepository.claimTask(USER_F, task.id, date)),
-    ))
-
-    expect(results.filter((r) => r.status === 'ok')).toHaveLength(1)
-    expect(results.filter((r) => r.status === 'already_claimed')).toHaveLength(7)
-    expect(await getBalance(USER_F)).toBe(task.reward)
-
-    const hist = await coinsRepository.getHistory(USER_F)
-    expect(hist.filter((h) => h.reason === 'task_claim' && h.refId === `${task.id}:${date}`)).toHaveLength(1)
-  })
-
-  it('legacy /daily/fix progress bermaydi — fix-5 mukofotini soxta ochib bo\'lmaydi', async () => {
-    await seedDaily(USER_F, 0, 0, 0)
-    await setBalance(USER_F, 0)
-
-    for (let i = 0; i < 5; i++) {
-      await request(app).post(`/api/daily/${USER_F}/fix`)
-        .set('Authorization', `Bearer ${tokenF}`)
-        .send({ subjectId: 'yhq' })
-        .expect(200)
-    }
-
-    const claim = await request(app).post('/api/coins/claim-task')
-      .set('Authorization', `Bearer ${tokenF}`)
-      .send({ taskId: 'fix-5' })
-    expect(claim.status).toBe(409)
-    expect(claim.body.error).toBe('TASK_NOT_COMPLETED')
-    expect(await getBalance(USER_F)).toBe(0)
-  })
-
-  it('noma\'lum taskId — 404; auth\'siz — 401', async () => {
-    await request(app).post('/api/coins/claim-task')
-      .set('Authorization', `Bearer ${tokenA}`)
-      .send({ taskId: 'nonexistent' })
-      .expect(404)
-    await request(app).post('/api/coins/claim-task')
-      .send({ taskId: 'answers-20' })
-      .expect(401)
-    await request(app).get('/api/coins/tasks').expect(401)
   })
 })
 

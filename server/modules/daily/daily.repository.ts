@@ -79,7 +79,6 @@ export interface DailyRecordRow {
   subjectId: string
   answered: number
   correct: number
-  challengeDone: boolean
 }
 
 export interface DailyHistoryRow extends DailyRecordRow {
@@ -108,7 +107,6 @@ export const dailyRepository = {
       subjectId: dailyRecords.subjectId,
       answered:  dailyRecords.answered,
       correct:   dailyRecords.correct,
-      challengeDone: dailyRecords.challengeDone,
     }).from(dailyRecords).where(
       and(
         eq(dailyRecords.userId, userId),
@@ -207,7 +205,6 @@ export const dailyRepository = {
       answered:  dailyRecords.answered,
       correct:   dailyRecords.correct,
       fixed:     dailyRecords.fixed,
-      challengeDone: dailyRecords.challengeDone,
     }).from(dailyRecords)
       .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
       .orderBy(asc(dailyRecords.date))

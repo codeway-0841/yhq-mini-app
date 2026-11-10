@@ -122,7 +122,7 @@ const UZ = {
   // v1.1 Dashboard (Neon)
   greeting: "Salom", level: "Level", overallProgress: "Umumiy progress",
   continueLearn: "Davom etish", seeAll: "Barchasi", league: "Liga",
-  streakConsec: "Ketma-ket", dailyTask: "Kunlik mashq", dailyTaskDesc: "10 ta maxsus savolni yeching",
+  streakConsec: "Ketma-ket",
   // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
   subjectProgress: "Fan bo‘yicha progress",
   todayProgress: "Bugungi progress", switchSubject: "Fanlarni almashtirish",
@@ -159,7 +159,7 @@ const UZ = {
   guideStartHint: "Test bilan bilimingizni tekshiring. Yangi mavzu bo‘lsa, avval “O‘rganish” bo‘limidan boshlang.",
   guideLearnHint: "Mavzuni darslar orqali tushunib oling.", guideTopicsHint: "Fan mavzulari va ularga oid savollarni ko‘ring.",
   guidePracticeHint: "Test tanlang va bilimingizni tekshiring.", guideAllModes: "Barcha rejimlar",
-  guideYourProgress: "Sizning natijangiz", guideMotivation: "Vazifalar va haftalik jang",
+  guideYourProgress: "Sizning natijangiz",
   guideCoverage: "Bu ko‘rsatkich javob berilgan savollar ulushini bildiradi.",
   dashboardPractice: "Mashq qilish", dashboardLearn: "O‘rganish", dashboardReviewShort: "Takrorlash",
   readinessTitle: "Imtihonga tayyorgarlik",
@@ -173,7 +173,6 @@ const UZ = {
   dailyStartPlan: "Bugungi rejani boshlash",
   dailyStartReview: "Takrorlashni boshlash",
   dailyPlanDetails: "Bugungi reja tafsilotlari",
-  dailyTasksUnit: "vazifa",
   // Testlar sahifasi (mode chooser)
   t20: "20 talik tezkor test",
   examDesc: "Asl imtihon simulyatori", diffEasy: "Oson", diffMid: "O'rtacha",
@@ -890,7 +889,7 @@ const UZ = {
   shopHistoryTitle: "Tangalar tarixi", shopHideHistory: "Yashirish",
   shopHistoryEmpty: "Hozircha harakatlar yo'q",
   coinReasonAnswer: "To'g'ri javob", coinReasonPurchase: "Do'kon xaridi",
-  coinReasonTask: "Kunlik vazifa", coinReasonMerch: "Merch buyurtma",
+  coinReasonMerch: "Merch buyurtma",
   coinReasonRefund: "Buyurtma bekor qilindi", coinReasonAdmin: "Admin",
   shopMenuItem: "Do'kon", shopAria: "Do'kon — tangalar balansi",
   shopSeasonalTitle: "Mavsumiy drop",
@@ -933,9 +932,6 @@ const UZ = {
   bossTopHitters: "Top zarbalar", bossDefeatedHint: "Boss yengildi — hafta yakunida mukofotlar taqsimlanadi!",
   coinReasonBoss: "Boss jangi mukofoti",
   coinReasonAiTest: "AI kunlik test mukofoti",
-  // ── Kunlik vazifalar (#40 Faza 2) ──
-  dailyTasksTitle: "Kunlik vazifalar", taskClaim: "Olish",
-  taskClaimed: "Olindi", taskDone: "Bajarildi",
   // ── Merch (#40 Faza 3) ──
   merchTitle: "Merch — haqiqiy sovg'alar",
   merchBuyBtn: "Buyurtma berish", merchSoldOut: "Tugagan",
@@ -1356,7 +1352,7 @@ const RU: Record<Keys, string> = {
   // v1.1 Dashboard (Neon)
   greeting: "Привет", level: "Уровень", overallProgress: "Общий прогресс",
   continueLearn: "Продолжить", seeAll: "Все", league: "Лига",
-  streakConsec: "Подряд", dailyTask: "Ежедневная тренировка", dailyTaskDesc: "Решите 10 специальных вопросов",
+  streakConsec: "Подряд",
   // Mock dizayn (Fizika karta + Bugungi progress + Davom etayotgan mavzu)
   subjectProgress: "Прогресс по предмету",
   todayProgress: "Прогресс сегодня", switchSubject: "Сменить предмет",
@@ -1393,7 +1389,7 @@ const RU: Record<Keys, string> = {
   guideStartHint: "Проверьте знания в тесте. Если тема новая, начните с учебных материалов ниже.",
   guideLearnHint: "Разберитесь в теме с помощью уроков.", guideTopicsHint: "Посмотрите темы предмета и вопросы к ним.",
   guidePracticeHint: "Выберите тест и проверьте свои знания.", guideAllModes: "Все режимы",
-  guideYourProgress: "Ваш результат", guideMotivation: "Задания и битва недели",
+  guideYourProgress: "Ваш результат",
   guideCoverage: "Этот показатель отражает долю вопросов, на которые вы ответили.",
   dashboardPractice: "Практика", dashboardLearn: "Обучение", dashboardReviewShort: "Повторение",
   readinessTitle: "Готовность к экзамену",
@@ -1407,7 +1403,6 @@ const RU: Record<Keys, string> = {
   dailyStartPlan: "Начать план на сегодня",
   dailyStartReview: "Начать повторение",
   dailyPlanDetails: "Подробности плана на сегодня",
-  dailyTasksUnit: "заданий",
   // Testlar sahifasi (mode chooser)
   t20: "Быстрый тест (20)",
   examDesc: "Симулятор реального экзамена", diffEasy: "Простой", diffMid: "Средний",
@@ -2115,7 +2110,7 @@ const RU: Record<Keys, string> = {
   shopHistoryTitle: "История монет", shopHideHistory: "Скрыть",
   shopHistoryEmpty: "Пока нет операций",
   coinReasonAnswer: "Правильный ответ", coinReasonPurchase: "Покупка в магазине",
-  coinReasonTask: "Ежедневное задание", coinReasonMerch: "Заказ мерча",
+  coinReasonMerch: "Заказ мерча",
   coinReasonRefund: "Заказ отменён", coinReasonAdmin: "Админ",
   shopMenuItem: "Магазин", shopAria: "Магазин — баланс монет",
   shopSeasonalTitle: "Сезонный дроп",
@@ -2158,9 +2153,6 @@ const RU: Record<Keys, string> = {
   bossTopHitters: "Топ ударов", bossDefeatedHint: "Босс побеждён — награды будут розданы в конце недели!",
   coinReasonBoss: "Награда за босса",
   coinReasonAiTest: "Награда за AI-тест дня",
-  // ── Ежедневные задания (#40 Faza 2) ──
-  dailyTasksTitle: "Ежедневные задания", taskClaim: "Забрать",
-  taskClaimed: "Получено", taskDone: "Выполнено",
   // ── Мерч (#40 Faza 3) ──
   merchTitle: "Мерч — реальные подарки",
   merchBuyBtn: "Заказать", merchSoldOut: "Распродано",

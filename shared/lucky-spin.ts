@@ -7,11 +7,11 @@
  *
  * QOIDALAR:
  * - `id` segmentlar bo'yicha UNIKAL — daily_spins.reward_id audit'iga yoziladi.
- * - 1/kun guard: `daily_spins` jadvali (PK user_id, atomik claim — claimTask
- *   pattern'i); coin yutuqlar qo'shimcha coin_transactions'da (reason='spin',
+ * - 1/kun guard: `daily_spins` jadvali (PK user_id, atomik claim-first); coin
+ *   yutuqlar qo'shimcha coin_transactions'da (reason='spin',
  *   ref 'spin:<date>') yoziladi — balans invaryanti ikki baravar himoyalangan.
- * - IQTISOD BYUDJETI: kutilgan qiymat (EV) ~17c/kun (~520c/oy) — kunlik vazifalar
- *   (35c/kun) va javob minti (~80c/kun) chegarasida qolishi shart; EV o'zgarishini
+ * - IQTISOD BYUDJETI: kutilgan qiymat (EV) ~17c/kun (~520c/oy) — javob minti
+ *   (~80c/kun) chegarasida qolishi shart; EV o'zgarishini
  *   tests/unit/config/lucky-spin.test.ts ushlaydi.
  */
 

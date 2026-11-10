@@ -1,33 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { api } from '@/shared/api'
-import { fetchCoinTasks, coinTasksCache, fetchBossState, bossCache, normalizeBossState } from '@/shared/lib/dashboard-cache'
-
-/**
- * Dashboard trust-boundary: buzilgan/kutilmagan /coins/tasks payload'ida
- * karta crash qilmasligi SHART (DailyTasksCard `.filter` chaqiradi —
- * e2e mock `{ok:true}` buni ErrorBoundary'ga olib chiqqan edi).
- */
-describe('fetchCoinTasks payload gigiyenasi', () => {
-  beforeEach(() => {
-    try { localStorage.clear() } catch { /* ignore */ }
-    coinTasksCache.invalidate()
-    vi.restoreAllMocks()
-  })
-
-  it("tasks massiv bo'lmasa — BO'SH ro'yxat qaytadi (undefined/null/satr)", async () => {
-    const spy = vi.spyOn(api, 'getCoinTasks')
-    for (const bad of [undefined, null, 'oops', 42]) {
-      spy.mockResolvedValueOnce({ tasks: bad } as never)
-      await expect(fetchCoinTasks()).resolves.toEqual([])
-    }
-  })
-
-  it('sog\'lom payload o\'zgarishsiz o\'tadi', async () => {
-    const rows = [{ id: 'answer_5', progress: 5, target: 5, completed: true, claimed: false }]
-    vi.spyOn(api, 'getCoinTasks').mockResolvedValue({ tasks: rows } as never)
-    await expect(fetchCoinTasks()).resolves.toEqual(rows)
-  })
-})
+import { fetchBossState, bossCache, normalizeBossState } from '@/shared/lib/dashboard-cache'
 
 /**
  * Boss trust-boundary: `{ok:true}` kabi shaklsiz javob — THROW (BossCard

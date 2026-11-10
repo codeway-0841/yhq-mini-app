@@ -4,7 +4,6 @@ import { injectTelegramWebApp } from './helpers/telegram'
 test('dashboard floating menu opens, dismisses, and opens themes', async ({ page }) => {
   test.skip(true, 'Dynamic Island vaqtincha yashirilgan (keyin yoqiladi)')
   await injectTelegramWebApp(page)
-  await page.route('**/api/coins/tasks', (route) => route.fulfill({ json: { ok: true, tasks: [] } }))
   await page.route('**/api/boss/state', (route) => route.fulfill({ status: 503, json: { error: 'Unavailable in menu fixture' } }))
   await page.goto('/app.html#/')
   const trigger = page.getByRole('region', { name: 'Dynamic Island' }).getByRole('button', { name: 'Menyu', exact: true })

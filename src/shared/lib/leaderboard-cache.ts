@@ -65,7 +65,7 @@ export function invalidateLeaderboardCache(): void {
   weeklyCache.invalidate()
   monthlyCache.invalidate()
   seasonsCache.invalidate()
-  // Diskdagi barcha kesh yozuvlari ham (kunlik vazifalar, boss) — ular ham
+  // Diskdagi barcha kesh yozuvlari ham (boss va h.k.) — ular ham
   // user-specific va akkaunt almashganda ko'rinib qolmasligi kerak.
   invalidateAllPersistedCaches()
 }

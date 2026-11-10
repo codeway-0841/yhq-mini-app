@@ -705,7 +705,7 @@ export const dailyRecords = pgTable('daily_records', {
   correct:     integer('correct').default(0).notNull(),
   /** Shu kunda tuzatilgan eski xatolar soni (Intizom sahifasidagi "TUZATILDI") */
   fixed:       integer('fixed').default(0).notNull(),
-  /** Kunlik 5 talik topshiriq yakunlandimi (Dashboard'dagi "Tayyor" belgisi) */
+  /** Legacy ustun — kunlik mashq olib tashlangan, DB mosligi uchun saqlanadi */
   challengeDone: boolean('challenge_done').default(false).notNull(),
   completedAt: timestamp('completed_at').defaultNow().notNull(),
 }, (t) => [
@@ -870,9 +870,9 @@ export const userCoins = pgTable('user_coins', {
 /**
  * Coin tranzaksiyalari ledger — har bir mint/debit/refund qaydi.
  * `UNIQUE(user_id, reason, ref_id)` — idempotency: bir mantiqiy amal
- * (javob clientToken'i, xarid purchaseId'si, task claim kuni, merch order id)
+ * (javob clientToken'i, xarid purchaseId'si, merch order id)
  * hech qachon ikki marta yozilmaydi. Audit: kim, nima uchun, qachon.
- * reason'lar: 'answer' | 'purchase' | 'task_claim' | 'merch' | 'merch_refund' | 'admin'
+ * reason'lar: 'answer' | 'purchase' | 'spin' | 'boss_reward' | 'merch' | 'merch_refund' | 'admin'
  */
 export const coinTransactions = pgTable('coin_transactions', {
   id:        serial('id').primaryKey(),
@@ -880,7 +880,7 @@ export const coinTransactions = pgTable('coin_transactions', {
   /** + mint/refund, − debit (purchase/merch) */
   delta:     integer('delta').notNull(),
   reason:    text('reason').notNull(),
-  /** Idempotency kaliti: javob clientToken | purchaseId | 'taskId:YYYY-MM-DD' | order id */
+  /** Idempotency kaliti: javob clientToken | purchaseId | spin:<date> | order id */
   refId:     text('ref_id').notNull(),
   createdAt: timestamp('created_at').defaultNow().notNull(),
 }, (t) => [

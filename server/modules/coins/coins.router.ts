@@ -17,7 +17,6 @@ import { identityKey } from '../../middleware/rate-limiter'
 import { requireAdmin } from '../../middleware/admin'
 import { getShopItem, isDurableShopItem, isShopItemAvailable } from '../../../shared/shop-items'
 import { getMerchItem } from '../../../shared/merch-items'
-import { getDailyTask } from '../../../shared/daily-tasks'
 import { pickSpinSegment } from '../../../shared/lucky-spin'
 import { tashkentDate } from '../../utils/date'
 import { coinsRepository } from './coins.repository'
@@ -44,7 +43,6 @@ const mkLimiter = (bucket: string) => rateLimit({
 })
 const purchaseLimiter = mkLimiter('coins:purchase')
 const equipLimiter    = mkLimiter('coins:equip')
-const claimLimiter    = mkLimiter('coins:claim')
 const merchLimiter    = mkLimiter('coins:merch')
 const spinLimiter     = mkLimiter('coins:spin')
 
@@ -141,53 +139,6 @@ router.get(
         createdAt: r.createdAt.toISOString(),
       })),
     })
-  }),
-)
-
-// ── KUNLIK VAZIFALAR (#40 Faza 2) ────────────────────────────────────────────
-
-const ClaimBodySchema = z.object({
-  taskId: z.string().min(1).max(64),
-})
-
-/** Kunlik vazifa sanasi — SERVER'da (Toshkent) hisoblanadi; client sanasiga
- *  ishonilmaydi (ertalab/kechki foydalanuvchi vaqt zonasi uddalamaydi). */
-
-// GET /api/coins/tasks — bugungi vazifalar + progress + claim holati
-router.get(
-  '/coins/tasks',
-  wrap(async (req, res) => {
-    const userId = requireUserId(req)
-    const date = tashkentDate()
-    const tasks = await coinsRepository.getTasksState(userId, date)
-    res.json({ ok: true, date, tasks })
-  }),
-)
-
-// POST /api/coins/claim-task — bajarilgan vazifa mukofotini olish (atomik, 1/kun)
-router.post(
-  '/coins/claim-task',
-  claimLimiter,
-  validate({ body: ClaimBodySchema }),
-  wrap(async (req, res) => {
-    const userId = requireUserId(req)
-    const { taskId } = req.body as z.infer<typeof ClaimBodySchema>
-    if (!getDailyTask(taskId)) throw new AppError(404, 'TASK_NOT_FOUND')
-
-    const result = await coinsRepository.claimTask(userId, taskId, tashkentDate())
-    switch (result.status) {
-      case 'unknown_task':
-        throw new AppError(404, 'TASK_NOT_FOUND')
-      case 'user_not_found':
-        throw new AppError(404, 'USER_NOT_FOUND')
-      case 'already_claimed':
-        throw new AppError(409, 'TASK_ALREADY_CLAIMED')
-      case 'not_completed':
-        throw new AppError(409, 'TASK_NOT_COMPLETED')
-      case 'ok':
-        res.json({ ok: true, balance: result.balance, reward: result.reward })
-        return
-    }
   }),
 )
 

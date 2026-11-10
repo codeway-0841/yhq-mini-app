@@ -5,7 +5,6 @@ for (const width of [320, 390]) {
   test(`theme chrome stays aligned at ${width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize({ width, height: 740 })
     await injectTelegramWebApp(page)
-    await page.route('**/api/coins/tasks', (route) => route.fulfill({ json: { tasks: [] } }))
     await page.route('**/api/boss/state', (route) => route.fulfill({ status: 503, json: { error: 'Test offline' } }))
     await page.route('**/api/init', (route) => route.fulfill({
       json: { ...mockProfile, settings: { ...mockProfile.settings, theme: 'light', noAnimation: false } },

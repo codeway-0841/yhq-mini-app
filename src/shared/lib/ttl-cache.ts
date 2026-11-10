@@ -89,7 +89,7 @@ export function createTtlCache<T>(ttlMs: number, options: PersistOptions = {}): 
 
 /**
  * BARCHA persist qilingan keshlarni o'chiradi — akkaunt almashganda SHART:
- * yozuvlar user-specific (leaderboard `isYou`, kunlik vazifa progressi),
+ * yozuvlar user-specific (masalan, leaderboard `isYou`, boss holati),
  * umumiy qurilmada oldingi akkaunt ma'lumoti ko'rinib qolardi.
  *
  * Prefiks bo'yicha supuriladi, ro'yxat bo'yicha emas: kesh modullari lazy

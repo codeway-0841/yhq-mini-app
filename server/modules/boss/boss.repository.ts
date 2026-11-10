@@ -181,7 +181,7 @@ export const bossRepository = {
         -- LEDGER-FIRST (audit H-5): idempotency ('boss:<bossId>:<userId>' UNIQUE)
         -- AVVAL yoziladi, award FAQAT ledger'dan O'TGAN userlarga. Teskari tartibda
         -- (award → ledger) statement qayta ishga tushganda balans IKKI MARTA
-        -- oshardi (claimTask bilan bir xil pattern).
+        -- oshardi.
         INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
         SELECT user_id, amt, 'boss_reward', ${'boss:'} || ${String(bossId)} || ':' || user_id
         FROM grants WHERE amt > 0

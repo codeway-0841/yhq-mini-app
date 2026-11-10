@@ -273,9 +273,7 @@ export const progressRepository = {
         --
         -- Avval bu "har 10 ta tuzatishga 1 coin" edi, hisoblagich esa
         -- daily_records.fixed — u har KUNI va har FAN bo'yicha nolga qaytardi.
-        -- Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi, ya'ni vazifani
-        -- bajaradigan foydalanuvchi 10 ga hech qachon yetmay, tuzatishdan
-        -- abadiy 0 coin olardi.
+        -- shuning uchun kopchilik 10 ga yetmay tuzatishdan 0 coin olardi.
         SELECT CASE
           WHEN ${correct}
            AND EXISTS (SELECT 1 FROM prog)

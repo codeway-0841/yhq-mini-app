@@ -34,7 +34,7 @@
   engine ustidagi wrapper, 2-MCQ + 1-input legacy oqimi saqlanadi. Javoblar public payloadda yo'q;
   `/answer` darhol feedback, `/submit` yakuniy server gating. v1 mastery `[2, 1]` versiyalari bilan
   o'qiladi, shuning uchun deploy eski progressni bloklamaydi. XP `progress.xp` + `daily_limits`,
-  streak/kunlik vazifalar `dailyRepository.touchActivity` orqali — yangi gamification tizimi yo'q.
+  streak `dailyRepository.touchActivity` orqali — yangi gamification tizimi yo'q.
   2–15-bloklar va 537 mavzuning qolganlari o'zgarishsiz. Revisit next block migration.
 - 2026-10-19 (darslik kesh integrity): `darslik_checks` endi `content_hash`, `source`
   (`curated|ai|fallback|legacy`) va `generated_at` saqlaydi (0075). Curated SSOT har

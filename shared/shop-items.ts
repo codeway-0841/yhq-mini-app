@@ -53,9 +53,8 @@ export const COINS_PER_CORRECT_ANSWER = 2
  *
  * Avval bu "har 10 ta tuzatishga 1 tanga" edi (0.1 nisbati), lekin hisoblagich
  * `daily_records.fixed` dan olinardi va u har KUNI hamda har FAN bo'yicha
- * nolga qaytardi. Kunlik vazifaning o'zi 5 ta tuzatishni so'raydi, ya'ni
- * vazifani bajaradigan foydalanuvchi 10 ga hech qachon yetmay, tuzatishdan
- * abadiy 0 tanga olardi. Endi har bir tuzatish darhol to'lanadi.
+ * nolga qaytardi — ko'pchilik 10 ga yetmay tuzatishdan 0 tanga olardi.
+ * Endi har bir tuzatish darhol to'lanadi.
  */
 export const COINS_PER_MISTAKE_FIXED = 1
 

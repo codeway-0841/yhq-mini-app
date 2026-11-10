@@ -14,15 +14,7 @@ import { sql } from 'drizzle-orm'
 import { executeRows, getSqlTx } from '../../db/connection'
 import { getShopItem, isDurableShopItem } from '../../../shared/shop-items'
 import { getMerchItem, MERCH_ITEMS } from '../../../shared/merch-items'
-import { DAILY_TASKS, getDailyTask, type DailyTaskMetric } from '../../../shared/daily-tasks'
 import type { SpinSegment } from '../../../shared/lucky-spin'
-
-/** daily_records ustuni — FAQAT SSOT metrikalari (SQL injection yo'q: identifier) */
-const METRIC_COLUMN: Record<DailyTaskMetric, ReturnType<typeof sql.identifier>> = {
-  answered: sql.identifier('answered'),
-  correct:  sql.identifier('correct'),
-  fixed:    sql.identifier('fixed'),
-}
 
 export type PurchaseResult =
   | { status: 'ok';           balance: number; premiumUntil: Date | null }
@@ -194,114 +186,6 @@ export const coinsRepository = {
     `)
     // neon-http raw SQL: timestamp string qaytadi (Date emas) — normalize
     return rows.map((r) => ({ delta: Number(r.delta), reason: r.reason, refId: r.ref_id, createdAt: new Date(r.created_at) }))
-  },
-
-  // ── KUNLIK VAZIFALAR (#40 Faza 2) ──────────────────────────────────────────
-
-  /** Barcha vazifalar + bugungi progress + claim holati (2 arzon arallel so'rov). */
-  async getTasksState(userId: string, date: string) {
-    const [progressRows, claimedRows] = await Promise.all([
-      executeRows<{ answered: number; correct: number; fixed: number }>(sql`
-        SELECT
-          COALESCE(SUM(answered), 0)::int AS answered,
-          COALESCE(SUM(correct), 0)::int  AS correct,
-          COALESCE(SUM(fixed), 0)::int    AS fixed
-        FROM daily_records
-        WHERE user_id = ${userId} AND date = ${date}
-      `),
-      executeRows<{ ref_id: string }>(sql`
-        SELECT ref_id FROM coin_transactions
-        WHERE user_id = ${userId} AND reason = 'task_claim'
-          AND ref_id LIKE ${'%:' + date}
-      `),
-    ])
-    const p = progressRows[0] ?? { answered: 0, correct: 0, fixed: 0 }
-    const claimed = new Set(claimedRows.map((r) => r.ref_id.split(':')[0]))
-    return DAILY_TASKS.map((task) => {
-      const progress = Number(p[task.metric] ?? 0)
-      return {
-        id: task.id,
-        metric: task.metric,
-        target: task.target,
-        reward: task.reward,
-        progress: Math.min(progress, task.target),   // UI'da 20/20'dan oshib ko'rinmasin
-        rawProgress: progress,
-        completed: progress >= task.target,
-        claimed: claimed.has(task.id),
-      }
-    })
-  },
-
-  /**
-   * Mukofotni olish — BITTA atomik CTE:
-   *  1) SQL'da progress qayta O'LCHANADI (client raqamiga ishonilmaydi)
-   *  2) `ref_id = '<taskId>:<date>'` UNIQUE — bir kunlik bitta claim (retry-safe)
-   *  3) award + ledger bir statement'da
-   */
-  async claimTask(userId: string, taskId: string, date: string): Promise<
-    | { status: 'ok'; balance: number; reward: number }
-    | { status: 'already_claimed' }
-    | { status: 'not_completed'; progress: number }
-    | { status: 'unknown_task' | 'user_not_found' }
-  > {
-    const task = getDailyTask(taskId)
-    if (!task) return { status: 'unknown_task' }
-    const col = METRIC_COLUMN[task.metric]
-    const refId = `${task.id}:${date}`
-
-    const rows = await executeRows<{
-      progress: number; was_claimed: boolean; user_exists: boolean
-      balance: number | null; current_balance: number | null
-    }>(sql`
-      WITH target_user AS (
-        SELECT id FROM users WHERE id = ${userId}
-      ), metric_value AS (
-        SELECT COALESCE(SUM(${col}), 0)::int AS v
-        FROM daily_records
-        WHERE user_id = ${userId} AND date = ${date}
-      ), claimed AS (
-        SELECT 1 FROM coin_transactions
-        WHERE user_id = ${userId} AND reason = 'task_claim' AND ref_id = ${refId}
-      ), ledger AS (
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${task.reward}::int, 'task_claim', ${refId}
-        WHERE EXISTS (SELECT 1 FROM target_user)
-          AND (SELECT v FROM metric_value) >= ${task.target}::int
-          AND NOT EXISTS (SELECT 1 FROM claimed)
-        ON CONFLICT DO NOTHING
-        RETURNING id
-      ), award AS (
-        INSERT INTO user_coins (user_id, balance, updated_at)
-        SELECT ${userId}, ${task.reward}::int, now()
-        WHERE EXISTS (SELECT 1 FROM ledger)
-        ON CONFLICT (user_id) DO UPDATE SET
-          balance = user_coins.balance + ${task.reward}::int,
-          updated_at = now()
-        RETURNING balance
-      )
-      SELECT
-        (SELECT v FROM metric_value) AS progress,
-        EXISTS (SELECT 1 FROM claimed) AS was_claimed,
-        EXISTS (SELECT 1 FROM target_user) AS user_exists,
-        (SELECT balance::int FROM award) AS balance,
-        (SELECT balance::int FROM user_coins WHERE user_id = ${userId}) AS current_balance
-    `)
-
-    const row = rows[0]
-    if (!row?.user_exists) return { status: 'user_not_found' }
-    if (row.was_claimed) return { status: 'already_claimed' }
-    if (row.balance === null) {
-      const progress = Number(row.progress ?? 0)
-      if (progress >= task.target) {
-        const current = await executeRows<{ id: number }>(sql`
-          SELECT id FROM coin_transactions
-          WHERE user_id = ${userId} AND reason = 'task_claim' AND ref_id = ${refId}
-        `)
-        if (current.length > 0) return { status: 'already_claimed' }
-      }
-      return { status: 'not_completed', progress }
-    }
-    return { status: 'ok', balance: Number(row.balance), reward: task.reward }
   },
 
   // ── MERCH (#40 Faza 3) — real fizik tovarlar coin'ga ──────────────────────
@@ -522,7 +406,7 @@ export const coinsRepository = {
   },
 
   /**
-   * Kunlik spin — BITTA atomik CTE, **CLAIM-FIRST** (claimTask kabi):
+   * Kunlik spin — BITTA atomik CTE, **CLAIM-FIRST**:
    *  1) `daily_spins` PK + `ON CONFLICT ... WHERE spin_date < yangi` — kuniga
    *     FAQAT bitta claim; parallel so'rovlar serialize (mag'lub claim'siz).
    *  2) Grant: coins → user_coins upsert + ledger `reason='spin'`

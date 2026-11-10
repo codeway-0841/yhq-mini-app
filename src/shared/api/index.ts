@@ -882,14 +882,6 @@ export const api = {
   getCoinHistory: () =>
     request<{ ok: true; rows: CoinTransactionRow[] }>('GET', '/coins/history'),
 
-  /** Kunlik vazifalar holati (progress server aggregate'idan) */
-  getCoinTasks: () =>
-    request<{ ok: true; date: string; tasks: CoinTaskState[] }>('GET', '/coins/tasks'),
-
-  /** Mukofotni olish — atomik, 1/kun (409 TASK_NOT_COMPLETED / TASK_ALREADY_CLAIMED) */
-  claimCoinTask: (taskId: string) =>
-    request<{ ok: true; balance: number; reward: number }>('POST', '/coins/claim-task', { taskId }),
-
   // ── Lucky Spin (kunlik omad g'ildiragi) ──
   getSpinState: () =>
     request<{ ok: true; date: string; spun: boolean; rewardId: string | null }>('GET', '/coins/spin'),
@@ -1560,17 +1552,6 @@ export interface CoinTransactionRow {
   createdAt: string
 }
 
-/** Kunlik vazifa holati (#40 Faza 2) — server aggregate (client raqami ishonchsiz) */
-export interface CoinTaskState {
-  id: string
-  metric: 'answered' | 'correct' | 'fixed'
-  target: number
-  reward: number
-  progress: number
-  completed: boolean
-  claimed: boolean
-}
-
 /** Merch katalog itemi — server hisoblagan stock + user holati (#40 Faza 3) */
 export interface MerchCatalogItem {
   id: string
@@ -1602,7 +1583,7 @@ export interface AdminMerchOrderRow {
   created_at: string
 }
 
-export interface DailyState {  record: { date: string; subjectId: string; answered: number; correct: number; challengeDone: boolean } | null
+export interface DailyState {  record: { date: string; subjectId: string; answered: number; correct: number } | null
   dailyStreak: number
 }
 
