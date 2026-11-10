@@ -1,9 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { Flame, Lock, Sparkles, Trophy, Zap } from 'lucide-react'
 import {
   BrilliantEndstateRive,
-  getBrilliantBuffer,
-  loadBrilliantRiveRuntime,
   type BrilliantLessonTrigger,
   type BrilliantPracticeTrigger,
   type BrilliantProgressTrigger,
@@ -21,6 +19,8 @@ import {
   BrilliantLevelCheckShell,
   BrilliantRiveContainer,
 } from './BrilliantEndstateShell'
+import { MvpRiveStage } from './MvpRiveStage'
+import { renderExtraMvpScreen, type ExtraMvpScreenId } from './ExtraBrilliantScreens'
 
 export type MvpScreenId =
   | 'lesson'
@@ -34,12 +34,11 @@ export type MvpScreenId =
   | 'leagues'
   | 'review-mistakes'
   | 'post-checkout'
-  | 'warm-up'
-  | 'practice-nudge'
   | 'recommended-level'
   | 'level-insertion'
   | 'lesson-loader'
   | 'jump-back-in'
+  | ExtraMvpScreenId
 
 export interface MvpScreenContext {
   lang: 'uz' | 'ru'
@@ -871,62 +870,76 @@ function LeaguesMvp({ ctx }: { ctx: MvpScreenContext }) {
   )
 }
 
-/** 10. LessonLoader standalone canvas (`lesson-loader.ac940c03.riv`) */
-function LessonLoaderRive({ dark, nonce }: { dark: boolean; nonce: number }) {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    let disposed = false
-    let rive: { cleanup: () => void; resizeDrawingSurfaceToCanvas: () => void } | null = null
-    let observer: ResizeObserver | null = null
+/** 10. LessonLoader standalone (`lesson_loader_apr_13_26.riv` & `lesson-loader.ac940c03.riv`) */
+function LessonLoaderMvp({ ctx }: { ctx: MvpScreenContext }) {
+  const { lang, dark, nonce, colorVariant, onEvent, onReplay, onClose } = ctx
+  const [loaderKind, setLoaderKind] = useState<'lesson' | 'warmup'>('lesson')
 
-    void Promise.all([
-      loadBrilliantRiveRuntime(),
-      getBrilliantBuffer('lesson-loader.ac940c03.riv'),
-    ]).then(([mod, buffer]) => {
-      if (disposed) return
-      const { Rive: RiveCtor, Layout, Fit, Alignment } = mod
-      const inst = new RiveCtor({
-        buffer: buffer.slice(0),
-        canvas,
-        artboard: 'MAIN_Lesson Loader',
-        stateMachines: 'State Machine 1',
-        autoplay: true,
-        layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
-        onLoad: () => {
-          if (disposed) return
-          try {
-            inst.resizeDrawingSurfaceToCanvas()
-            const vm = inst.viewModelByName('LessonLoaderVM')
-            const vmInst = vm?.defaultInstance() ?? vm?.instance()
-            if (vmInst) {
-              inst.bindViewModelInstance(vmInst)
-              const dm = vmInst.boolean('darkMode')
-              if (dm) dm.value = dark
-            }
-          } catch { /* fallback to default state machine */ }
-        },
-      })
-      rive = inst as unknown as typeof rive
-      if (typeof ResizeObserver !== 'undefined') {
-        observer = new ResizeObserver(() => {
-          if (canvas.clientWidth > 0 && canvas.clientHeight > 0) {
-            try { inst.resizeDrawingSurfaceToCanvas() } catch { /* noop */ }
-          }
-        })
-        observer.observe(canvas)
+  return (
+    <BrilliantEndstateShell
+      primaryLabel={
+        loaderKind === 'lesson'
+          ? lang === 'ru'
+            ? 'Показать Warm-Up Loader'
+            : 'Warm-Up Loader ni ko‘rish'
+          : lang === 'ru'
+            ? 'Показать Lesson Loader'
+            : 'Lesson Loader ni ko‘rish'
       }
-    }).catch(() => { /* ignore */ })
-
-    return () => {
-      disposed = true
-      observer?.disconnect()
-      rive?.cleanup()
-    }
-  }, [dark, nonce])
-
-  return <canvas ref={canvasRef} className="size-full" aria-label="Lesson Loader" />
+      secondaryLabel={lang === 'ru' ? 'Назад' : 'Orqaga'}
+      onPrimaryClick={() => {
+        setLoaderKind((k) => (k === 'lesson' ? 'warmup' : 'lesson'))
+        onReplay()
+      }}
+      onSecondaryClick={onClose}
+    >
+      <BrilliantRiveContainer className="aspect-square">
+        {loaderKind === 'lesson' ? (
+          <MvpRiveStage
+            file="lesson_loader_apr_13_26.riv"
+            artboard="MAIN_Lesson Loader"
+            stateMachine="LessonLoader"
+            viewModel="LessonLoaderVM"
+            booleans={{ darkMode: dark, level: false }}
+            numbers={{ color: colorVariant }}
+            vmTriggers={['enter']}
+            dark={dark}
+            nonce={nonce}
+            label="Lesson Loader"
+            className="size-full"
+            onRiveEvent={onEvent}
+          />
+        ) : (
+          <MvpRiveStage
+            file="lesson-loader.ac940c03.riv"
+            artboard="MAIN_practice-warm-up-loader"
+            stateMachine="practice-loader"
+            dark={dark}
+            nonce={nonce}
+            label="Warm-Up Loader"
+            className="size-full"
+            onRiveEvent={onEvent}
+          />
+        )}
+      </BrilliantRiveContainer>
+      <BrilliantCopyContainer>
+        <h1 className="text-[22px] font-extrabold text-pfg">
+          {loaderKind === 'lesson'
+            ? lang === 'ru'
+              ? 'Подбираем задания для вас…'
+              : 'Siz uchun topshiriqlar tayyorlanmoqda…'
+            : lang === 'ru'
+              ? 'Готовим разминку…'
+              : 'Qizdirish mashqi yuklanmoqda…'}
+        </h1>
+        <p className="text-[14px] text-pmuted">
+          {loaderKind === 'lesson'
+            ? 'lesson_loader_apr_13_26.riv · LessonLoaderVM (enter)'
+            : 'lesson-loader.ac940c03.riv · practice-loader'}
+        </p>
+      </BrilliantCopyContainer>
+    </BrilliantEndstateShell>
+  )
 }
 
 /** Qolgan barcha Brilliant ekranlar uchun 1:1 Layout adapteri */
@@ -938,8 +951,6 @@ function GenericEndstateMvp({
   screenId:
     | 'review-mistakes'
     | 'post-checkout'
-    | 'warm-up'
-    | 'practice-nudge'
     | 'recommended-level'
     | 'level-insertion'
     | 'lesson-loader'
@@ -999,8 +1010,14 @@ function GenericEndstateMvp({
         }}
       >
         <BrilliantRiveContainer className="aspect-square">
-          <BrilliantEndstateRive
-            kind="post-checkout"
+          <MvpRiveStage
+            file="post_checkout_apr_01_26.riv"
+            artboard="MAIN_PostCheckoutFlow"
+            stateMachine="PostCheckoutFlow"
+            viewModel="PostCheckoutFlowVM"
+            booleans={{ darkMode: dark, text: false }}
+            numbers={{ copyVariation: 0 }}
+            vmTriggers={['playAnimation']}
             dark={dark}
             nonce={nonce}
             label="Post Checkout Pro"
@@ -1026,22 +1043,50 @@ function GenericEndstateMvp({
   }
 
   if (screenId === 'lesson-loader') {
+    return <LessonLoaderMvp ctx={ctx} />
+  }
+
+  if (screenId === 'level-insertion') {
     return (
       <BrilliantEndstateShell
-        primaryLabel={lang === 'ru' ? 'Перезапустить' : 'Qayta yuklash'}
-        secondaryLabel={lang === 'ru' ? 'Назад' : 'Orqaga'}
-        onPrimaryClick={onReplay}
+        primaryLabel={lang === 'ru' ? 'Посмотреть карту' : 'Xaritani ko‘rish'}
+        secondaryLabel={lang === 'ru' ? 'Позже' : 'Keyinroq'}
+        onPrimaryClick={() => {
+          playSound('click')
+          onReplay()
+        }}
         onSecondaryClick={onClose}
       >
         <BrilliantRiveContainer className="aspect-square">
-          <LessonLoaderRive dark={dark} nonce={nonce} />
+          <MvpRiveStage
+            file="level-insertion-intro.fb376b71.riv"
+            artboard="MAIN_LevelInsertionIntro"
+            stateMachine="LevelInsertionIntro"
+            viewModel="LevelInsertionIntroVM"
+            booleans={{ darkMode: dark, isTalking: false }}
+            numbers={{ color: colorVariant, numberOfSkills1to4: 3 }}
+            strings={{
+              levelTitle: lang === 'ru' ? 'Алгебра II' : 'Algebra II',
+              skillTitle01: lang === 'ru' ? 'Функции' : 'Funksiyalar',
+              skillTitle02: lang === 'ru' ? 'Графики' : 'Grafiklar',
+              skillTitle03: lang === 'ru' ? 'Уравнения' : 'Tenglamalar',
+            }}
+            vmTriggers={['playAnimation']}
+            dark={dark}
+            nonce={nonce}
+            label="Level Insertion Intro"
+            className="size-full"
+            onRiveEvent={onEvent}
+          />
         </BrilliantRiveContainer>
         <BrilliantCopyContainer>
-          <h1 className="text-[22px] font-extrabold text-pfg">
-            {lang === 'ru' ? 'Подбираем задания для вас…' : 'Siz uchun topshiriqlar tayyorlanmoqda…'}
+          <h1 className="text-[24px] sm:text-[26px] font-extrabold text-pfg">
+            {lang === 'ru' ? 'Добавлен новый модуль!' : 'Yangi modul qo‘shildi!'}
           </h1>
-          <p className="text-[14px] text-pmuted">
-            lesson-loader.ac940c03.riv · MAIN_Lesson Loader
+          <p className="text-[15px] text-pmuted leading-relaxed">
+            {lang === 'ru'
+              ? 'Специально подобранные уроки встроены в ваш план обучения.'
+              : 'Bilimingizga mos yangi darslar o‘quv xaritangizga joylashtirildi.'}
           </p>
         </BrilliantCopyContainer>
       </BrilliantEndstateShell>
@@ -1049,24 +1094,6 @@ function GenericEndstateMvp({
   }
 
   const copyMap = {
-    'warm-up': {
-      kind: 'warm-up' as const,
-      title: lang === 'ru' ? 'Быстрая разминка!' : 'Qisqa qizdirish mashqi!',
-      body:
-        lang === 'ru'
-          ? 'Вспомним ключевые идеи перед переходом к новым задачам.'
-          : 'Yangi mavzuga o‘tishdan oldin asosiy g‘oyalarni takrorlab olamiz.',
-      cta: lang === 'ru' ? 'Начать разминку' : 'Qizdirishni boshlash',
-    },
-    'practice-nudge': {
-      kind: 'recommended-level' as const,
-      title: lang === 'ru' ? 'Персональная практика' : 'Shaxsiy mashq rejasi',
-      body:
-        lang === 'ru'
-          ? 'Система адаптирует следующие задания под ваш текущий темп.'
-          : 'Tizim keyingi topshiriqlarni aynan sizning tezligingizga moslaydi.',
-      cta: lang === 'ru' ? 'Попробовать' : 'Sinab ko‘rish',
-    },
     'recommended-level': {
       kind: 'recommended-level' as const,
       title: lang === 'ru' ? 'Перейти на уровень выше?' : 'Yuqori bosqichga sakraymizmi?',
@@ -1075,15 +1102,6 @@ function GenericEndstateMvp({
           ? 'Пройдите быстрый чек и откройте более сложные задания сразу.'
           : 'Tezkor sinovdan o‘ting va keyingi daraja darslarini darhol oching.',
       cta: lang === 'ru' ? 'Пройти проверку' : 'Sinovni boshlash',
-    },
-    'level-insertion': {
-      kind: 'level-insertion' as const,
-      title: lang === 'ru' ? 'Добавлен новый модуль!' : 'Yangi modul qo‘shildi!',
-      body:
-        lang === 'ru'
-          ? 'Специально подобранные уроки встроены в ваш план обучения.'
-          : 'Bilimingizga mos yangi darslar o‘quv xaritangizga joylashtirildi.',
-      cta: lang === 'ru' ? 'Посмотреть карту' : 'Xaritani ko‘rish',
     },
     'jump-back-in': {
       kind: 'recommended-level' as const,
@@ -1099,8 +1117,6 @@ function GenericEndstateMvp({
 
   return (
     <BrilliantEndstateShell
-      viewportClassName={screenId === 'practice-nudge' ? 'brilliant-iridescent-flipped' : undefined}
-      footerBgClassName={screenId === 'practice-nudge' ? 'bg-transparent backdrop-blur-md' : undefined}
       primaryLabel={c.cta}
       secondaryLabel={lang === 'ru' ? 'Позже' : 'Keyinroq'}
       onPrimaryClick={() => {
@@ -1110,9 +1126,9 @@ function GenericEndstateMvp({
       onSecondaryClick={onClose}
     >
       <BrilliantRiveContainer className="aspect-square">
-        {screenId === 'jump-back-in' || screenId === 'practice-nudge' ? (
+        {screenId === 'jump-back-in' ? (
           <BrilliantExtrasRive
-            kind={screenId}
+            kind="jump-back-in"
             dark={dark}
             nonce={nonce}
             label={c.title}
@@ -1122,12 +1138,6 @@ function GenericEndstateMvp({
           <BrilliantEndstateRive
             kind={c.kind}
             variant={colorVariant}
-            levelTitle={lang === 'ru' ? 'Алгебра II' : 'Algebra II'}
-            skillTitles={
-              lang === 'ru'
-                ? ['Функции', 'Графики', 'Уравнения']
-                : ['Funksiyalar', 'Grafiklar', 'Tenglamalar']
-            }
             dark={dark}
             nonce={nonce}
             label={c.title}
@@ -1165,8 +1175,15 @@ export function renderMvpScreen(id: MvpScreenId, ctx: MvpScreenContext) {
       return <ProgressCheckMvp ctx={ctx} phase="endstate" />
     case 'leagues':
       return <LeaguesMvp ctx={ctx} />
-    default:
+    case 'review-mistakes':
+    case 'post-checkout':
+    case 'recommended-level':
+    case 'level-insertion':
+    case 'lesson-loader':
+    case 'jump-back-in':
       return <GenericEndstateMvp ctx={ctx} screenId={id} />
+    default:
+      return renderExtraMvpScreen(id, ctx)
   }
 }
 
