@@ -63,11 +63,11 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
       {next && <div className="module-next-preview mb-5 flex items-center gap-3 rounded-2xl bg-psurface p-4 text-left">
         <div className="size-12 flex-none flex items-center justify-center">
           <BrilliantEndstateRive
-            kind="level-insertion"
+            kind="icp-node"
             variant={next.id % 6}
-            levelTitle={lang === 'ru' ? next.titleRu : next.title}
+            nodeCompleted={false}
             dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-            label="Next Module Level Insertion"
+            label="Next Module Node"
             className="size-full"
             fallback={<span className="grid size-11 flex-none place-items-center rounded-full bg-pcard text-pmuted"><NextIcon size={23} /></span>}
           />

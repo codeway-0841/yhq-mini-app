@@ -1,7 +1,7 @@
 import { memo, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
 import { useT } from '../../../shared/i18n'
-import { BrilliantExtrasRive } from '../../../shared/components/BrilliantExtrasRive'
+import { BrilliantEndstateRive } from '../../../shared/components/BrilliantEndstateRive'
 import { cn } from '../../../shared/lib/cn'
 
 // ── Davom etayotgan mavzu kartasi ───────────────────────────────────────────
@@ -32,10 +32,13 @@ export const ContinueCard = memo(function ContinueCard({ modTitle, lessonLabel, 
         {/* Dekorativ rasm — fayl yo'q bo'lsa yashirinadi.
             v3: `mix-blend-mode: screen` olib tashlandi (light temada rasm
             butunlay yo'qolardi); o'rniga past opacity ikkala temada ishlaydi. */}
-        <div className="pointer-events-none absolute right-2 top-3 size-16 sm:size-20 select-none">
-          <BrilliantExtrasRive
-            kind="jump-back-in"
-            label="Jump Back In"
+        <div className="pointer-events-none absolute right-3 top-2.5 size-16 sm:size-20 select-none">
+          <BrilliantEndstateRive
+            kind="icp-node"
+            variant={0}
+            nodeCompleted={allDone}
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Continue Topic"
             className="size-full"
             fallback={bgOk ? (
               <img src={CONTINUE_BG_URL} alt="" aria-hidden

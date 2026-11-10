@@ -23,7 +23,6 @@ import { useT } from '../../shared/i18n'
 import ModalShell from '../../shared/components/ModalShell'
 import { Button } from '../../shared/components/ui/button'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
-import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
 import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 
 /** Yechilgan savollar soniga qarab yacheyka rangi (0..3 daraja) — aksent temaga bog'liq */
@@ -151,10 +150,11 @@ export default function StreakPage() {
           <BrilliantEndstateRive kind="streak" variant={0} dark={document.body.dataset.theme === 'dark'} label="Brilliant streak" className="size-full" fallback={<BrilliantStreakIcon size={56} />} />
         </div>
         <div className="flex items-center justify-center gap-2">
-          <div className="size-8 shrink-0 flex items-center justify-center">
-            <BrilliantExtrasRive
-              kind="lightning"
-              boltVisible={streak > 0}
+          <div className="size-10 shrink-0 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="streak"
+              variant={1}
+              dark={document.body.dataset.theme === 'dark'}
               label="Streak Lightning"
               className="size-full"
               fallback={<BrilliantStreakIcon size={28} className="text-[#A8D31D]" />}
@@ -391,6 +391,7 @@ export default function StreakPage() {
                     : 'streak'
           }
           showCharge={modalMode === 'both'}
+          showPreviewTabs
           onClose={() => setShowCelebration(false)}
         />
       )}

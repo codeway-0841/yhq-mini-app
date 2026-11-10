@@ -340,10 +340,15 @@ export default function LoginPage() {
         {isWeb ? (
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <picture>
-                <source srcSet="/images/splash-brand.webp" type="image/webp" />
-                <img src="/images/splash-brand.png" alt="KIVVI" width={56} height={56} className="w-14 rounded-2xl shadow-xs" />
-              </picture>
+              <div className="size-14 shrink-0 flex items-center justify-center">
+                <BrilliantEndstateRive
+                  kind="koji-entrance"
+                  dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                  label="KIVVI Mascot"
+                  className="size-full"
+                  fallback={<img src="/images/splash-brand.png" alt="KIVVI" width={56} height={56} className="w-14 rounded-2xl shadow-xs" />}
+                />
+              </div>
               <div>
                 <h1 className="text-[18px] font-semibold text-pfg leading-tight">{tt('authWelcome')}</h1>
                 <p className="text-[12px] text-pmuted">{tt('authTagline')}</p>
@@ -358,10 +363,15 @@ export default function LoginPage() {
           </div>
         ) : (
           <>
-            <picture className="block text-center">
-              <source srcSet="/images/splash-brand.webp" type="image/webp" />
-              <img src="/images/splash-brand.png" alt="KIVVI" width={144} height={144} className="w-36 rounded-3xl mx-auto shadow-md" />
-            </picture>
+            <div className="mx-auto size-32 flex items-center justify-center">
+              <BrilliantEndstateRive
+                kind="koji-entrance"
+                dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                label="KIVVI Mascot"
+                className="size-full"
+                fallback={<img src="/images/splash-brand.png" alt="KIVVI" width={144} height={144} className="w-36 rounded-3xl mx-auto shadow-md" />}
+              />
+            </div>
             <h1 className="text-[22px] font-semibold text-pfg text-center mt-5">{tt('authWelcome')}</h1>
             <p className="text-[13px] text-pmuted text-center mt-1 mb-6">{tt('authTagline')}</p>
           </>

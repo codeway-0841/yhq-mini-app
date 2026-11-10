@@ -17,10 +17,12 @@ export interface BrilliantStreakModalProps {
   streak: number
   onClose: () => void
   isOpen?: boolean
-  /** 'charge' — batareya ekrani, 'lesson' — Lesson Complete, 'progress' — Progress Check, 'rate' — Rate App & Premium Lock */
+  /** 'charge' — batareya ekrani, 'lesson' — Lesson Complete, 'progress' — Progress Check, 'rate' — Barcha maxsus sahnalar */
   initialView?: 'streak' | 'charge' | 'lesson' | 'progress' | 'rate'
   /** `true` bo'lsa, seriya ekranidan so'ng "Davom etish" bosilganda Streak Charge ekraniga o'tadi */
   showCharge?: boolean
+  /** Preview rejimida tepada barcha bo'limlar orasida o'tish tablari chiqadi */
+  showPreviewTabs?: boolean
   /** Lesson Complete rejimi uchun XP qiymati */
   xpEarned?: number
 }
@@ -77,10 +79,17 @@ type RatePresetId =
   | 'lcr-transition'
   | 'koji-entrance'
   | 'league'
-  | 'jump-back-in'
-  | 'lightning'
+  | 'icp-node'
+  | 'lightning-bolt'
   | 'ondemand-node'
-  | 'new-year-promo'
+
+const PREVIEW_TABS: { id: 'streak' | 'charge' | 'lesson' | 'progress' | 'rate'; uz: string; ru: string }[] = [
+  { id: 'streak',   uz: 'Seriya',   ru: 'Серия' },
+  { id: 'charge',   uz: 'Zaryad',   ru: 'Заряд' },
+  { id: 'lesson',   uz: 'Dars',     ru: 'Урок' },
+  { id: 'progress', uz: 'Imtihon',  ru: 'Экзамен' },
+  { id: 'rate',     uz: 'Barchasi', ru: 'Все' },
+]
 
 const RATE_PRESETS: {
   id: RatePresetId
@@ -103,13 +112,12 @@ const RATE_PRESETS: {
   { id: 'assessment-intro',  uz: '🧭 Diagnostika',   ru: '🧭 Диагностика', uzTitle: 'Bilim darajasini tekshirish',   ruTitle: 'Оценка уровня знаний',        uzDesc: 'Qisqa sinov orqali hozirgi darajangizni aniq belgilab oling.',                       ruDesc: 'Определите свой текущий уровень с помощью короткой проверки.', engine: 'endstate', hasColor: true },
   { id: 'warm-up',           uz: '🔥 Qizib olish',   ru: '🔥 Разминка',    uzTitle: 'Mashg‘ulotdan oldingi razminka', ruTitle: 'Быстрая разминка перед тестом', uzDesc: 'Asosiy imtihon oldidan tez va yengil savollar bilan tayyorlaning.',                ruDesc: 'Подготовьтесь к основному тесту на лёгких вопросах.', engine: 'endstate', hasColor: true },
   { id: 'level-insertion',   uz: '🚀 Yangi bob',     ru: '🚀 Новый блок',  uzTitle: 'Yangi bosqich ochildi!',        ruTitle: 'Открыт новый уровень!',       uzDesc: 'Keyingi bobdagi barcha darslar va mashqlar endi siz uchun tayyor.',                 ruDesc: 'Все уроки и задания следующего уровня готовы для прохождения.', engine: 'endstate', hasColor: true },
-  { id: 'lcr-transition',    uz: '🔄 O‘tish',        ru: '🔄 Переход',     uzTitle: 'Keyingi bosqichga o‘tish',      ruTitle: 'Переход к проверке',          uzDesc: 'O‘zlashtirilgan bilimlarni amaliy mashqda sinab ko‘ramiz.',                         ruDesc: 'Закрепим изученный материал на практическом задании.', engine: 'endstate', hasColor: true },
+  { id: 'lcr-transition',    uz: '🔄 O‘tish',        ru: '🔄 Переход',     uzTitle: 'Keyingi bosqichga o‘tish',      ruTitle: 'Переход к проверке',          uzDesc: 'O‘zlashtirilgan bilimlarni amaliy mashqda sinab ko‘ramiz.',                         ruDesc: 'Закрепим изученный материал на практическом задании.', engine: 'endstate' },
   { id: 'koji-entrance',     uz: '🤖 Koji kirish',   ru: '🤖 Приветствие', uzTitle: 'KIVVI bilan o‘rganing!',        ruTitle: 'Учитесь вместе с KIVVI!',     uzDesc: 'Har kunlik interaktiv darslar, sun’iy intellekt va aqlli takrorlash.',               ruDesc: 'Ежедневные интерактивные уроки, ИИ-тьютор и умное повторение.', engine: 'endstate' },
-  { id: 'league',            uz: '🏆 Liga',          ru: '🏆 Лига',        uzTitle: 'Haftalik Liga',                 ruTitle: 'Еженедельная лига',           uzDesc: 'Haftalik jadvalda yuqori ligalarga ko‘tariling!',                                   ruDesc: 'Поднимайтесь выше в еженедельной таблице лидеров!', engine: 'extras', hasColor: true },
-  { id: 'jump-back-in',      uz: '👋 Qaytish',       ru: '👋 Возврат',     uzTitle: 'Qaytganingiz bilan!',           ruTitle: 'С возвращением!',             uzDesc: 'To‘xtagan joyingizdan darsni davom ettiring.',                                      ruDesc: 'Продолжите обучение с места, где остановились.', engine: 'extras' },
-  { id: 'lightning',         uz: '⚡ Chaqmoq',       ru: '⚡ Молния',      uzTitle: 'Seriya quvvati!',               ruTitle: 'Энергия серии!',              uzDesc: 'Kunlik faolligingizning jonli chaqmoq animatsiyasi.',                                ruDesc: 'Живой разряд вашей ежедневной активности.', engine: 'extras' },
+  { id: 'league',            uz: '🏆 Liga',          ru: '🏆 Лига',        uzTitle: 'Haftalik Liga',                 ruTitle: 'Еженедельная лига',           uzDesc: 'Haftalik jadvalda yuqori ligalarga ko‘tariling!',                                   ruDesc: 'Поднимайтесь выше в еженельной таблице лидеров!', engine: 'extras', hasColor: true },
+  { id: 'icp-node',          uz: '👋 Davom tuguni',  ru: '👋 Узел курса',  uzTitle: 'Darsni davom ettiring!',        ruTitle: 'Продолжите курс!',            uzDesc: 'To‘xtagan joyingizdan interaktiv bosqichlarni davom ettiring.',                     ruDesc: 'Продолжите обучение с места, где остановились.', engine: 'endstate', hasColor: true },
+  { id: 'lightning-bolt',    uz: '⚡ Chaqmoq',       ru: '⚡ Молния',      uzTitle: 'Seriya quvvati!',               ruTitle: 'Энергия серии!',              uzDesc: 'Kunlik faolligingizning jonli chaqmoq animatsiyasi.',                                ruDesc: 'Живой разряд вашей ежедневной активности.', engine: 'endstate' },
   { id: 'ondemand-node',     uz: '⭕ Tugun',         ru: '⭕ Узел',        uzTitle: 'Topshiriq tuguni bajarildi!',   ruTitle: 'Узел задания пройден!',       uzDesc: 'Kurs xaritasidagi har bir bosqich uchun Brilliant tugun animatsiyasi.',             ruDesc: 'Анимация завершения каждого узла на карте курса.', engine: 'extras', hasColor: true },
-  { id: 'new-year-promo',    uz: '🎆 Promo',         ru: '🎆 Промо',       uzTitle: 'Bayramona natija!',             ruTitle: 'Праздничный результат!',      uzDesc: 'Maxsus aksiyalar va bayramlar uchun salyutli yakuniy animatsiya.',                  ruDesc: 'Праздничный салют для особых акций и событий.', engine: 'extras' },
 ]
 
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
@@ -118,6 +126,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
   isOpen = true,
   initialView = 'streak',
   showCharge = false,
+  showPreviewTabs = false,
   xpEarned = 20,
 }: BrilliantStreakModalProps) {
   const language = useAppStore((s) => s.settings.language)
@@ -235,6 +244,29 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
       )}
 
       <div className="relative z-10 flex flex-1 flex-col items-center px-6 pt-[calc(var(--safe-top,0px)+1rem)] min-h-0">
+        {showPreviewTabs && (
+          <div className="mb-1 flex flex-wrap items-center justify-center gap-1 rounded-full bg-psurface p-1 shadow-xs">
+            {PREVIEW_TABS.map((t) => {
+              const active = view === t.id
+              return (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() => {
+                    haptics.selection()
+                    setView(t.id)
+                    setRiveNonce((n) => n + 1)
+                  }}
+                  className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
+                    active ? 'bg-pfg text-pcanvas shadow-xs' : 'text-pmuted hover:text-pfg'
+                  }`}
+                >
+                  {isRu ? t.ru : t.uz}
+                </button>
+              )
+            })}
+          </div>
+        )}
         {view === 'streak' ? (
           <>
             <BrilliantEndstateRive
@@ -365,16 +397,18 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                         : 'Ajoyib natija! Siz yangi mavzuni o‘zlashtirdingiz va maqsadga yaqinlashdingiz.'}
                     </p>
 
-                    {/* XP Starburst + Mukofot kapsulasi */}
+                    {/* XP Starburst + Mukofot kapsulasi (chargeStage >= 1 da portlaydi) */}
                     <div className="relative mt-3.5 flex items-center justify-center">
-                      <BrilliantEndstateRive
-                        key={`xp-${riveNonce}`}
-                        kind="xp"
-                        dark={dark}
-                        nonce={riveNonce}
-                        label="XP Starburst"
-                        className="pointer-events-none absolute -inset-8 size-28"
-                      />
+                      {chargeStage >= 1 && (
+                        <BrilliantEndstateRive
+                          key={`xp-${riveNonce}`}
+                          kind="xp"
+                          dark={dark}
+                          nonce={riveNonce}
+                          label="XP Starburst"
+                          className="pointer-events-none absolute -inset-8 size-28"
+                        />
+                      )}
                       <div className="relative z-10 inline-flex items-center gap-2 rounded-2xl bg-psurface px-5 py-2 shadow-xs">
                         <Sparkles size={18} className="text-[#A8D31D]" />
                         <span className="font-display text-[19px] font-extrabold tabular-nums text-pfg">
@@ -537,7 +571,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                 {activeMeta.engine === 'extras' ? (
                   <BrilliantExtrasRive
                     key={`extra-${ratePreset}-${progressColor}-${riveNonce}`}
-                    kind={ratePreset as 'league' | 'jump-back-in' | 'lightning' | 'practice-nudge' | 'new-year-promo' | 'ondemand-node'}
+                    kind={ratePreset as 'league' | 'practice-nudge' | 'ondemand-node'}
                     leagueLevel={(progressColor % 10) + 1}
                     leagueState="promote"
                     boltVisible
@@ -551,11 +585,12 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                 ) : (
                   <BrilliantEndstateRive
                     key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
-                    kind={ratePreset as 'rate-app' | 'premium-lock' | 'recommended-level' | 'post-checkout' | 'review-mistakes' | 'review-complete' | 'assessment-intro' | 'warm-up' | 'level-insertion' | 'lcr-transition' | 'koji-entrance'}
-                    variant={progressColor}
+                    kind={ratePreset === 'lightning-bolt' ? 'streak' : (ratePreset as 'rate-app' | 'premium-lock' | 'recommended-level' | 'post-checkout' | 'review-mistakes' | 'review-complete' | 'assessment-intro' | 'warm-up' | 'level-insertion' | 'lcr-transition' | 'koji-entrance' | 'icp-node')}
+                    variant={ratePreset === 'lightning-bolt' ? 1 : progressColor}
                     correctNum={4}
                     totalNum={6}
                     levelTitle={isRu ? 'Уровень 2' : '2-bosqich'}
+                    skillTitles={isRu ? ['Основы', 'Знаки', 'Практика'] : ['Asoslar', 'Belgilar', 'Amaliyot']}
                     dark={dark}
                     nonce={riveNonce}
                     onRiveEvent={handleRiveEvent}

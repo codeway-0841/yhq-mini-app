@@ -28,6 +28,7 @@ export type BrilliantEndstateKind =
   | 'warm-up'
   | 'level-insertion'
   | 'koji-entrance'
+  | 'icp-node'
 
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
@@ -41,6 +42,7 @@ const LEVEL_CHECK_FILE = 'level-check.e74e7d3c.riv'
 const ASSESSMENT_INTRO_FILE = 'level-check-assessment-intro.1dfae46f.riv'
 const LEVEL_INSERTION_FILE = 'level-insertion-intro.fb376b71.riv'
 const LOHP_ENTRANCE_FILE = 'lohp_koji_entrance.344647d5.riv'
+const ICP_NODE_FILE = 'icp-node.add6a472.riv'
 
 const KIND = {
   streak:              { file: ENDSTATES_FILE,        artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
@@ -55,12 +57,13 @@ const KIND = {
   'progress-endstate': { file: PROGRESS_CHECK_FILE,   artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate',  viewModel: 'ProgressCheckEndstateVM' },
   'post-checkout':     { file: POST_CHECKOUT_FILE,    artboard: 'MAIN_PostCheckoutFlow',      stateMachine: 'PostCheckoutFlow',       viewModel: 'PostCheckoutFlowVM' },
   'review-mistakes':   { file: LCR_TRANSITION_FILE,   artboard: 'MAIN_ReviewMistakes',        stateMachine: 'ReviewMistakes',         viewModel: 'ReviewMistakesVM' },
-  'lcr-transition':    { file: LCR_TRANSITION_FILE,   artboard: 'MAIN_LCR Transition',        stateMachine: 'LCRTransition',          viewModel: 'LCRTransitionVM' },
+  'lcr-transition':    { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_LevelCheckTransition',  stateMachine: 'LevelCheckTransition',   viewModel: 'LevelCheckTransitionVM' },
   'assessment-intro':  { file: ASSESSMENT_INTRO_FILE, artboard: 'MAIN_AssessmentIntro',       stateMachine: 'AssessmentIntro',        viewModel: 'LevelCheckVM' },
   'warm-up':           { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_WarmUp',                stateMachine: 'WarmUp',                 viewModel: 'LevelCheckVM' },
   'review-complete':   { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_ReviewComplete',        stateMachine: 'ReviewComplete',         viewModel: 'ReviewCompleteVM' },
   'level-insertion':   { file: LEVEL_INSERTION_FILE,  artboard: 'MAIN_LevelInsertionIntro',   stateMachine: 'LevelInsertionIntro',    viewModel: 'LevelInsertionIntroVM' },
   'koji-entrance':     { file: LOHP_ENTRANCE_FILE,    artboard: 'MAIN_KojiEntrance',          stateMachine: 'KojiEntrance',           viewModel: 'KojiEntranceVM' },
+  'icp-node':          { file: ICP_NODE_FILE,         artboard: 'Gameboard Node',             stateMachine: 'ICPNode',                viewModel: 'ICPNodeVM' },
 } as const
 
 let wasmConfigured = false
@@ -124,6 +127,10 @@ export interface BrilliantEndstateRiveProps {
   totalNum?: number
   /** `level-insertion` uchun daraja nomi */
   levelTitle?: string
+  /** `level-insertion` uchun tugun nomlari */
+  skillTitles?: string[]
+  /** `icp-node` tugallangan holati */
+  nodeCompleted?: boolean
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
@@ -146,6 +153,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   correctNum = 0,
   totalNum = 5,
   levelTitle = '',
+  skillTitles,
+  nodeCompleted = false,
   dark = false,
   nonce = 0,
   className = '',
@@ -165,6 +174,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const correctNumRef = useRef(correctNum)
   const totalNumRef = useRef(totalNum)
   const levelTitleRef = useRef(levelTitle)
+  const skillTitlesRef = useRef(skillTitles)
+  const nodeCompletedRef = useRef(nodeCompleted)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -178,6 +189,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   correctNumRef.current = correctNum
   totalNumRef.current = totalNum
   levelTitleRef.current = levelTitle
+  skillTitlesRef.current = skillTitles
+  nodeCompletedRef.current = nodeCompleted
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -278,8 +291,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setNum('totalNum', totalNumRef.current)
             fire('playAnimation')
           } else if (kind === 'lcr-transition') {
-            setNum('color', variantRef.current)
-            fire('playSkillCheck')
+            fire('playAnimation')
           } else if (kind === 'assessment-intro') {
             setNum('color', variantRef.current)
             fire('playAssessmentIntro')
@@ -287,10 +299,18 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setNum('color', variantRef.current)
             fire('playWarmUp')
           } else if (kind === 'level-insertion') {
+            const titles = skillTitlesRef.current ?? ['1-dars', '2-dars', '3-dars']
             setNum('color', variantRef.current)
-            setNum('numberOfSkills1to4', 3)
-            if (levelTitleRef.current) setStr('levelTitle', levelTitleRef.current)
+            setNum('numberOfSkills1to4', Math.max(1, Math.min(4, titles.length)))
+            setStr('levelTitle', levelTitleRef.current || 'Yangi bosqich')
+            titles.slice(0, 4).forEach((t, idx) => setStr(`skillTitle0${idx + 1}`, t))
             fire('playAnimation')
+          } else if (kind === 'icp-node') {
+            setNum('color', variantRef.current)
+            setBool('completed', nodeCompletedRef.current)
+            setBool('startIdle', true)
+            setNum('icon', nodeCompletedRef.current ? 1 : 0)
+            fire('kojiAppear')
           } else if (kind === 'progress-endstate') {
             setNum('color', variantRef.current)
             fire(progressTriggerRef.current)
@@ -319,7 +339,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
+  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle, nodeCompleted])
 
   useEffect(() => {
     try {
