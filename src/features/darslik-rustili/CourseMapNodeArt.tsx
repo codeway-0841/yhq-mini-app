@@ -160,7 +160,8 @@ export function CourseMapNodeArt({
         setInput(inputs, 'completed', completed)
         setInput(inputs, 'icon', completed && !levelReview ? 1 : 0)
         setInput(inputs, 'select', selected)
-        if (current) inputs.find((input) => input.name === 'koji_appear')?.fire()
+        if (current && !completed && !locked) inputs.find((input) => input.name === 'koji_appear')?.fire()
+        else if (completed || locked) inputs.find((input) => input.name === 'koji_disappear')?.fire()
       } catch { /* ignore */ }
     })
     return () => window.cancelAnimationFrame(id)

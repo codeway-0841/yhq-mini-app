@@ -77,8 +77,16 @@ export const MvpRiveStage = memo(function MvpRiveStage({
 
   const onEventRef = useRef(onRiveEvent)
   const onStateRef = useRef(onStateChange)
+  const liveBooleansRef = useRef(liveBooleans)
+  const liveNumbersRef = useRef(liveNumbers)
+  const liveSmBooleansRef = useRef(liveSmBooleans)
+  const liveSmNumbersRef = useRef(liveSmNumbers)
   onEventRef.current = onRiveEvent
   onStateRef.current = onStateChange
+  liveBooleansRef.current = liveBooleans
+  liveNumbersRef.current = liveNumbers
+  liveSmBooleansRef.current = liveSmBooleans
+  liveSmNumbersRef.current = liveSmNumbers
 
   const propsKey = JSON.stringify({
     booleans,
@@ -153,23 +161,27 @@ export const MvpRiveStage = memo(function MvpRiveStage({
               }
             }
 
-            // 1) ViewModel binding
-            try {
-              const vm = viewModel
-                ? rive.viewModelByName(viewModel)
-                : rive.defaultViewModel?.()
-              const inst = vm?.defaultInstance() ?? vm?.instance() ?? null
-              if (inst) {
-                rive.bindViewModelInstance(inst)
-                vmInstRef.current = inst as never
-                try {
-                  const dm = inst.boolean('darkMode')
-                  if (dm) dm.value = dark
-                } catch {
-                  /* optional */
-                }
-                if (booleans) {
-                  for (const [k, v] of Object.entries(booleans)) {
+            // 1) ViewModel binding (faqat VM ishlatadigan sahnalarda chaqiriladi)
+            const needsVm = Boolean(
+              viewModel || booleans || numbers || strings || vmTriggers || liveBooleansRef.current || liveNumbersRef.current,
+            )
+            if (needsVm) {
+              try {
+                const vm = viewModel
+                  ? rive.viewModelByName(viewModel)
+                  : rive.defaultViewModel?.()
+                const inst = vm?.defaultInstance() ?? vm?.instance() ?? null
+                if (inst) {
+                  rive.bindViewModelInstance(inst)
+                  vmInstRef.current = inst as never
+                  try {
+                    const dm = inst.boolean('darkMode')
+                    if (dm) dm.value = dark
+                  } catch {
+                    /* optional */
+                  }
+                  const mergedVmBools = { ...(booleans ?? {}), ...(liveBooleansRef.current ?? {}) }
+                  for (const [k, v] of Object.entries(mergedVmBools)) {
                     try {
                       const p = inst.boolean(k)
                       if (p) p.value = v
@@ -177,9 +189,8 @@ export const MvpRiveStage = memo(function MvpRiveStage({
                       /* optional */
                     }
                   }
-                }
-                if (numbers) {
-                  for (const [k, v] of Object.entries(numbers)) {
+                  const mergedVmNums = { ...(numbers ?? {}), ...(liveNumbersRef.current ?? {}) }
+                  for (const [k, v] of Object.entries(mergedVmNums)) {
                     try {
                       const p = inst.number(k)
                       if (p) p.value = v
@@ -187,29 +198,29 @@ export const MvpRiveStage = memo(function MvpRiveStage({
                       /* optional */
                     }
                   }
-                }
-                if (strings) {
-                  for (const [k, v] of Object.entries(strings)) {
-                    try {
-                      const p = inst.string(k)
-                      if (p) p.value = v
-                    } catch {
-                      /* optional */
+                  if (strings) {
+                    for (const [k, v] of Object.entries(strings)) {
+                      try {
+                        const p = inst.string(k)
+                        if (p) p.value = v
+                      } catch {
+                        /* optional */
+                      }
+                    }
+                  }
+                  if (vmTriggers) {
+                    for (const tr of vmTriggers) {
+                      try {
+                        inst.trigger(tr)?.trigger()
+                      } catch {
+                        /* optional */
+                      }
                     }
                   }
                 }
-                if (vmTriggers) {
-                  for (const tr of vmTriggers) {
-                    try {
-                      inst.trigger(tr)?.trigger()
-                    } catch {
-                      /* optional */
-                    }
-                  }
-                }
+              } catch {
+                /* some .riv files use SM inputs only */
               }
-            } catch {
-              /* some .riv files use SM inputs only */
             }
 
             // 2) StateMachine inputs
@@ -218,17 +229,15 @@ export const MvpRiveStage = memo(function MvpRiveStage({
               try {
                 const inputs = rive.stateMachineInputs(smName) ?? []
                 const byName = new Map(inputs.map((inp) => [inp.name, inp]))
-                if (smBooleans) {
-                  for (const [k, v] of Object.entries(smBooleans)) {
-                    const inp = byName.get(k)
-                    if (inp) inp.value = v
-                  }
+                const mergedSmBools = { ...(smBooleans ?? {}), ...(liveSmBooleansRef.current ?? {}) }
+                for (const [k, v] of Object.entries(mergedSmBools)) {
+                  const inp = byName.get(k)
+                  if (inp) inp.value = v
                 }
-                if (smNumbers) {
-                  for (const [k, v] of Object.entries(smNumbers)) {
-                    const inp = byName.get(k)
-                    if (inp) inp.value = v
-                  }
+                const mergedSmNums = { ...(smNumbers ?? {}), ...(liveSmNumbersRef.current ?? {}) }
+                for (const [k, v] of Object.entries(mergedSmNums)) {
+                  const inp = byName.get(k)
+                  if (inp) inp.value = v
                 }
                 if (smTriggers) {
                   for (const tr of smTriggers) {

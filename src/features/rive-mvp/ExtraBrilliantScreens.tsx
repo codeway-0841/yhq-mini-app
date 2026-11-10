@@ -703,7 +703,7 @@ function AskKojiAiMvp({ ctx }: { ctx: ExtraMvpCtx }) {
 }
 
 const ICP_INIT_BOOLS = { darkMode: false, startIdle: true }
-const ICP_INIT_NUMS = { color: 1, icon: 0 }
+const ICP_INIT_NUMS = { icon: 0 }
 const ICP_INIT_TRIGS = ['kojiAppear']
 const NODE_ALL_INIT_TRIGS = ['koji_appear']
 
@@ -838,10 +838,35 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
         <div className="flex flex-wrap justify-center gap-1.5">
           {[
             { label: 'Select', active: selected, toggle: () => setSelected((v) => !v) },
-            { label: 'Completed', active: completed, toggle: () => setCompleted((v) => !v) },
+            {
+              label: 'Completed',
+              active: completed,
+              toggle: () => {
+                const next = !completed
+                setCompleted(next)
+                if (next) fireBoth('kojiDisappear', 'koji_disappear')
+                else if (!padlock && !level) fireBoth('kojiAppear', 'koji_appear')
+              },
+            },
             { label: 'Mastered', active: mastered, toggle: () => setMastered((v) => !v) },
-            { label: 'Padlock', active: padlock, toggle: () => setPadlock((v) => !v) },
-            { label: 'Level', active: level, toggle: () => setLevel((v) => !v) },
+            {
+              label: 'Padlock',
+              active: padlock,
+              toggle: () => {
+                const next = !padlock
+                setPadlock(next)
+                if (next && !completed) fireBoth('kojiDisappear', 'koji_disappear')
+              },
+            },
+            {
+              label: 'Level',
+              active: level,
+              toggle: () => {
+                const next = !level
+                setLevel(next)
+                if (next) fireBoth('kojiDisappear', 'koji_disappear')
+              },
+            },
             { label: 'Premium', active: premiumNode, toggle: () => setPremiumNode((v) => !v) },
             { label: 'ProgressCheck', active: progressCheck, toggle: () => setProgressCheck((v) => !v) },
           ].map((btn) => (

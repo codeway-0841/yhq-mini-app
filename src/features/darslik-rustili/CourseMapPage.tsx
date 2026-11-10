@@ -425,7 +425,7 @@ export default function CourseMapPage({
                           >
                             <span className="cmap-node-art-wrap">
                               {isCurrent || isFocus
-                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} locked={isLocked} selected={isFocus} color={nodeColor} />
+                                ? <CourseMapNodeArt current={isCurrent} src={art} completed={isDone && !isCurrent} locked={isLocked} selected={isSelected} color={nodeColor} />
                                 : <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />}
                             </span>
                             <span className="cmap-node-label">{title}</span>
