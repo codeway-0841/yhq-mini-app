@@ -457,8 +457,18 @@ export default function LessonRunner({
       <div className="fixed inset-0 z-[60] flex flex-col bg-pcanvas" data-testid="topic-check" role="dialog" aria-modal="true" aria-busy="true">
         {header}
         <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 text-center">
-          <div className="relative grid size-20 place-items-center rounded-3xl bg-pcard shadow-xs">
-            <span className="size-9 animate-spin rounded-full border-3 border-pprimary border-t-transparent" />
+          <div className="relative size-32 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="lcr-transition"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Lesson Transition"
+              className="size-full"
+              fallback={
+                <div className="relative grid size-20 place-items-center rounded-3xl bg-pcard shadow-xs">
+                  <span className="size-9 animate-spin rounded-full border-3 border-pprimary border-t-transparent" />
+                </div>
+              }
+            />
           </div>
           <div>
             <p className="text-[16px] font-bold text-pfg">{tt('rusDarslikCheckLoading')}</p>

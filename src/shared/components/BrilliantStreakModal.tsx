@@ -63,16 +63,53 @@ const PROGRESS_COLORS: { id: number; hex: string; label: string }[] = [
   { id: 2, hex: '#EF4444', label: 'Red' },
 ]
 
-type RatePresetId = 'rate-app' | 'premium-lock' | 'recommended-level' | 'post-checkout' | 'league' | 'jump-back-in' | 'lightning'
+type RatePresetId =
+  | 'rate-app'
+  | 'premium-lock'
+  | 'recommended-level'
+  | 'post-checkout'
+  | 'review-mistakes'
+  | 'review-complete'
+  | 'practice-nudge'
+  | 'assessment-intro'
+  | 'warm-up'
+  | 'level-insertion'
+  | 'lcr-transition'
+  | 'koji-entrance'
+  | 'league'
+  | 'jump-back-in'
+  | 'lightning'
+  | 'ondemand-node'
+  | 'new-year-promo'
 
-const RATE_PRESETS: { id: RatePresetId; uz: string; ru: string }[] = [
-  { id: 'rate-app',          uz: '⭐ Baholash',      ru: '⭐ Оценка' },
-  { id: 'premium-lock',      uz: '🔒 Premium qulf',  ru: '🔒 Замок' },
-  { id: 'recommended-level', uz: '💎 Daraja',        ru: '💎 Уровень' },
-  { id: 'post-checkout',     uz: '🎉 Obuna',         ru: '🎉 Покупка' },
-  { id: 'league',            uz: '🏆 Liga nishoni',  ru: '🏆 Лига' },
-  { id: 'jump-back-in',      uz: '👋 Davom etish',   ru: '👋 Возврат' },
-  { id: 'lightning',         uz: '⚡ Chaqmoq',       ru: '⚡ Молния' },
+const RATE_PRESETS: {
+  id: RatePresetId
+  uz: string
+  ru: string
+  uzTitle: string
+  ruTitle: string
+  uzDesc: string
+  ruDesc: string
+  engine: 'endstate' | 'extras'
+  hasColor?: boolean
+}[] = [
+  { id: 'rate-app',          uz: '⭐ Baholash',      ru: '⭐ Оценка',      uzTitle: 'Ilova sizga yoqyaptimi?',       ruTitle: 'Нравится приложение?',        uzDesc: 'Sizning 5 yulduzli bahoingiz platformani har kuni yanada yaxshilashga yordam beradi.', ruDesc: 'Ваша оценка 5 звёзд помогает нам развивать платформу каждый день.', engine: 'endstate' },
+  { id: 'premium-lock',      uz: '🔒 Premium qulf',  ru: '🔒 Замок',       uzTitle: 'To‘liq imkoniyatlarni oching',   ruTitle: 'Откройте полный доступ',      uzDesc: 'Premium obuna bilan barcha cheklovlarni olib tashlang va tezroq o‘rganing.',         ruDesc: 'Снимите все ограничения с подпиской Premium и учитесь быстрее.', engine: 'endstate' },
+  { id: 'recommended-level', uz: '💎 Daraja',        ru: '💎 Уровень',     uzTitle: 'Tavsiya etilgan daraja!',       ruTitle: 'Рекомендуемый уровень!',      uzDesc: 'Biz siz uchun eng mos qiyinlik darajasini aniqladik.',                              ruDesc: 'Мы подобрали оптимальный уровень сложности специально для вас.', engine: 'endstate', hasColor: true },
+  { id: 'post-checkout',     uz: '🎉 Obuna',         ru: '🎉 Покупка',     uzTitle: 'Premium faollashdi!',           ruTitle: 'Premium активирован!',        uzDesc: 'Endi barcha kurslar, AI-tutor va mashqlar cheklovsiz ochiq.',                      ruDesc: 'Теперь все курсы, ИИ-тьютор и тренажёры доступны без ограничений.', engine: 'endstate' },
+  { id: 'review-mistakes',   uz: '🛠️ Xatolar',       ru: '🛠️ Ошибки',      uzTitle: 'Xatolarni tahlil qilamiz!',     ruTitle: 'Разберём ошибки!',            uzDesc: 'Qiyin savollarni qayta ko‘rib chiqish bilimingizni mustahkamlaydi.',                 ruDesc: 'Повторный разбор сложных вопросов закрепляет ваши знания.', engine: 'endstate', hasColor: true },
+  { id: 'review-complete',   uz: '✨ Toza natija',   ru: '✨ Без ошибок',  uzTitle: 'Barcha xatolar tozalandi!',     ruTitle: 'Все ошибки исправлены!',      uzDesc: 'Siz barcha murakkab savollarni muvaffaqiyatli yechib chiqdingiz.',                  ruDesc: 'Вы успешно проработали все сложные вопросы.', engine: 'endstate', hasColor: true },
+  { id: 'practice-nudge',    uz: '🏋️ Mashq',         ru: '🏋️ Тренировка',  uzTitle: 'Shaxsiy mashq vaqti!',          ruTitle: 'Время личной практики!',      uzDesc: 'Koji siz uchun zaif mavzular bo‘yicha maxsus mashq tayyorladi.',                     ruDesc: 'Коджи подготовил персональную подборку для закрепления слабых тем.', engine: 'extras' },
+  { id: 'assessment-intro',  uz: '🧭 Diagnostika',   ru: '🧭 Диагностика', uzTitle: 'Bilim darajasini tekshirish',   ruTitle: 'Оценка уровня знаний',        uzDesc: 'Qisqa sinov orqali hozirgi darajangizni aniq belgilab oling.',                       ruDesc: 'Определите свой текущий уровень с помощью короткой проверки.', engine: 'endstate', hasColor: true },
+  { id: 'warm-up',           uz: '🔥 Qizib olish',   ru: '🔥 Разминка',    uzTitle: 'Mashg‘ulotdan oldingi razminka', ruTitle: 'Быстрая разминка перед тестом', uzDesc: 'Asosiy imtihon oldidan tez va yengil savollar bilan tayyorlaning.',                ruDesc: 'Подготовьтесь к основному тесту на лёгких вопросах.', engine: 'endstate', hasColor: true },
+  { id: 'level-insertion',   uz: '🚀 Yangi bob',     ru: '🚀 Новый блок',  uzTitle: 'Yangi bosqich ochildi!',        ruTitle: 'Открыт новый уровень!',       uzDesc: 'Keyingi bobdagi barcha darslar va mashqlar endi siz uchun tayyor.',                 ruDesc: 'Все уроки и задания следующего уровня готовы для прохождения.', engine: 'endstate', hasColor: true },
+  { id: 'lcr-transition',    uz: '🔄 O‘tish',        ru: '🔄 Переход',     uzTitle: 'Keyingi bosqichga o‘tish',      ruTitle: 'Переход к проверке',          uzDesc: 'O‘zlashtirilgan bilimlarni amaliy mashqda sinab ko‘ramiz.',                         ruDesc: 'Закрепим изученный материал на практическом задании.', engine: 'endstate', hasColor: true },
+  { id: 'koji-entrance',     uz: '🤖 Koji kirish',   ru: '🤖 Приветствие', uzTitle: 'KIVVI bilan o‘rganing!',        ruTitle: 'Учитесь вместе с KIVVI!',     uzDesc: 'Har kunlik interaktiv darslar, sun’iy intellekt va aqlli takrorlash.',               ruDesc: 'Ежедневные интерактивные уроки, ИИ-тьютор и умное повторение.', engine: 'endstate' },
+  { id: 'league',            uz: '🏆 Liga',          ru: '🏆 Лига',        uzTitle: 'Haftalik Liga',                 ruTitle: 'Еженедельная лига',           uzDesc: 'Haftalik jadvalda yuqori ligalarga ko‘tariling!',                                   ruDesc: 'Поднимайтесь выше в еженедельной таблице лидеров!', engine: 'extras', hasColor: true },
+  { id: 'jump-back-in',      uz: '👋 Qaytish',       ru: '👋 Возврат',     uzTitle: 'Qaytganingiz bilan!',           ruTitle: 'С возвращением!',             uzDesc: 'To‘xtagan joyingizdan darsni davom ettiring.',                                      ruDesc: 'Продолжите обучение с места, где остановились.', engine: 'extras' },
+  { id: 'lightning',         uz: '⚡ Chaqmoq',       ru: '⚡ Молния',      uzTitle: 'Seriya quvvati!',               ruTitle: 'Энергия серии!',              uzDesc: 'Kunlik faolligingizning jonli chaqmoq animatsiyasi.',                                ruDesc: 'Живой разряд вашей ежедневной активности.', engine: 'extras' },
+  { id: 'ondemand-node',     uz: '⭕ Tugun',         ru: '⭕ Узел',        uzTitle: 'Topshiriq tuguni bajarildi!',   ruTitle: 'Узел задания пройден!',       uzDesc: 'Kurs xaritasidagi har bir bosqich uchun Brilliant tugun animatsiyasi.',             ruDesc: 'Анимация завершения каждого узла на карте курса.', engine: 'extras', hasColor: true },
+  { id: 'new-year-promo',    uz: '🎆 Promo',         ru: '🎆 Промо',       uzTitle: 'Bayramona natija!',             ruTitle: 'Праздничный результат!',      uzDesc: 'Maxsus aksiyalar va bayramlar uchun salyutli yakuniy animatsiya.',                  ruDesc: 'Праздничный салют для особых акций и событий.', engine: 'extras' },
 ]
 
 export const BrilliantStreakModal = memo(function BrilliantStreakModal({
@@ -492,134 +529,108 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
             </div>
           </>
         ) : (
-          <>
-            {/* Maxsus Brilliant artboardlar: Endstates + Extras */}
-            {ratePreset === 'league' || ratePreset === 'jump-back-in' || ratePreset === 'lightning' ? (
-              <BrilliantExtrasRive
-                key={`extra-${ratePreset}-${progressColor}-${riveNonce}`}
-                kind={ratePreset}
-                leagueLevel={(progressColor % 10) + 1}
-                leagueState="promote"
-                boltVisible
-                nonce={riveNonce}
-                label="Brilliant Special Extra"
-                className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
-                fallback={<Sparkles size={72} className="text-pwarning" />}
-              />
-            ) : (
-              <BrilliantEndstateRive
-                key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
-                kind={ratePreset}
-                variant={progressColor}
-                dark={dark}
-                nonce={riveNonce}
-                onRiveEvent={handleRiveEvent}
-                label="Brilliant Special Endstate"
-                className="mt-[5vh] aspect-square w-full max-w-[290px] sm:max-w-[320px] shrink-0"
-                fallback={<Sparkles size={72} className="text-pwarning" />}
-              />
-            )}
+          (() => {
+            const activeMeta = RATE_PRESETS.find((r) => r.id === ratePreset) ?? RATE_PRESETS[0]
+            return (
+              <>
+                {/* Barcha Brilliant maxsus & qo'shimcha artboardlar */}
+                {activeMeta.engine === 'extras' ? (
+                  <BrilliantExtrasRive
+                    key={`extra-${ratePreset}-${progressColor}-${riveNonce}`}
+                    kind={ratePreset as 'league' | 'jump-back-in' | 'lightning' | 'practice-nudge' | 'new-year-promo' | 'ondemand-node'}
+                    leagueLevel={(progressColor % 10) + 1}
+                    leagueState="promote"
+                    boltVisible
+                    variant={progressColor}
+                    dark={dark}
+                    nonce={riveNonce}
+                    label="Brilliant Special Extra"
+                    className="mt-[2.5vh] aspect-square w-full max-w-[260px] sm:max-w-[290px] shrink-0"
+                    fallback={<Sparkles size={72} className="text-pwarning" />}
+                  />
+                ) : (
+                  <BrilliantEndstateRive
+                    key={`rate-${ratePreset}-${progressColor}-${riveNonce}`}
+                    kind={ratePreset as 'rate-app' | 'premium-lock' | 'recommended-level' | 'post-checkout' | 'review-mistakes' | 'review-complete' | 'assessment-intro' | 'warm-up' | 'level-insertion' | 'lcr-transition' | 'koji-entrance'}
+                    variant={progressColor}
+                    correctNum={4}
+                    totalNum={6}
+                    levelTitle={isRu ? 'Уровень 2' : '2-bosqich'}
+                    dark={dark}
+                    nonce={riveNonce}
+                    onRiveEvent={handleRiveEvent}
+                    label="Brilliant Special Endstate"
+                    className="mt-[2.5vh] aspect-square w-full max-w-[260px] sm:max-w-[290px] shrink-0"
+                    fallback={<Sparkles size={72} className="text-pwarning" />}
+                  />
+                )}
 
-            <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
-              <h1
-                id="streak-celebration-title"
-                className="font-display text-[25px] sm:text-[27px] font-extrabold leading-tight tracking-tight text-pfg"
-              >
-                {ratePreset === 'rate-app'
-                  ? isRu ? 'Нравится приложение?' : 'Ilova sizga yoqyaptimi?'
-                  : ratePreset === 'premium-lock'
-                    ? isRu ? 'Откройте полный доступ' : 'To‘liq imkoniyatlarni oching'
-                    : ratePreset === 'post-checkout'
-                      ? isRu ? 'Premium активирован!' : 'Premium faollashdi!'
-                      : ratePreset === 'league'
-                        ? isRu ? `Лига · Уровень ${(progressColor % 10) + 1}` : `Liga · ${(progressColor % 10) + 1}-daraja`
-                        : ratePreset === 'jump-back-in'
-                          ? isRu ? 'С возвращением!' : 'Qaytganingiz bilan!'
-                          : ratePreset === 'lightning'
-                            ? isRu ? 'Энергия серии!' : 'Seriya quvvati!'
-                            : isRu ? 'Рекомендуемый уровень!' : 'Tavsiya etilgan daraja!'}
-              </h1>
+                <div className="mt-1 flex flex-col items-center text-center" style={fade(chargeStage >= 1)}>
+                  <h1
+                    id="streak-celebration-title"
+                    className="font-display text-[22px] sm:text-[25px] font-extrabold leading-tight tracking-tight text-pfg"
+                  >
+                    {ratePreset === 'league'
+                      ? isRu ? `Лига · Уровень ${(progressColor % 10) + 1}` : `Liga · ${(progressColor % 10) + 1}-daraja`
+                      : isRu ? activeMeta.ruTitle : activeMeta.uzTitle}
+                  </h1>
 
-              <p className="mt-1.5 max-w-[310px] text-[13.5px] font-medium leading-[1.45] text-pmuted">
-                {ratePreset === 'rate-app'
-                  ? isRu
-                    ? 'Ваша оценка 5 звёзд помогает нам развивать платформу каждый день.'
-                    : 'Sizning 5 yulduzli bahoingiz platformani har kuni yanada yaxshilashga yordam beradi.'
-                  : ratePreset === 'premium-lock'
-                    ? isRu
-                      ? 'Снимите все ограничения с подпиской Premium и учитесь быстрее.'
-                      : 'Premium obuna bilan barcha cheklovlarni olib tashlang va tezroq o‘rganing.'
-                    : ratePreset === 'post-checkout'
-                      ? isRu
-                        ? 'Теперь все курсы, ИИ-тьютор и тренажёры доступны без ограничений.'
-                        : 'Endi barcha kurslar, AI-tutor va mashqlar cheklovsiz ochiq.'
-                      : ratePreset === 'league'
-                        ? isRu
-                          ? 'Поднимайтесь выше в еженедельной таблице лидеров!'
-                          : 'Haftalik jadvalda yuqori ligalarga ko‘tariling!'
-                        : ratePreset === 'jump-back-in'
-                          ? isRu
-                            ? 'Продолжите обучение с места, где остановились.'
-                            : 'To‘xtagan joyingizdan darsni davom ettiring.'
-                          : ratePreset === 'lightning'
-                            ? isRu
-                              ? 'Живой разряд вашей ежедневной активности.'
-                              : 'Kunlik faolligingizning jonli chaqmoq animatsiyasi.'
-                            : isRu
-                              ? 'Мы подобрали оптимальный уровень сложности специально для вас.'
-                              : 'Biz siz uchun eng mos qiyinlik darajasini aniqladik.'}
-              </p>
+                  <p className="mt-1 max-w-[310px] text-[13px] font-medium leading-[1.4] text-pmuted">
+                    {isRu ? activeMeta.ruDesc : activeMeta.uzDesc}
+                  </p>
 
-              {/* Maxsus Rive artboard tanlagichi */}
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-1.5 max-w-[340px]">
-                {RATE_PRESETS.map((r) => {
-                  const active = ratePreset === r.id
-                  return (
-                    <button
-                      key={r.id}
-                      type="button"
-                      onClick={() => {
-                        haptics.selection()
-                        setRatePreset(r.id)
-                        setRiveNonce((n) => n + 1)
-                      }}
-                      className={`rounded-full px-3 py-1 text-[11.5px] font-bold transition-all cursor-pointer active:scale-95 ${
-                        active
-                          ? 'bg-pfg text-pcanvas shadow-xs'
-                          : 'bg-psurface text-pmuted hover:text-pfg'
-                      }`}
-                    >
-                      {isRu ? r.ru : r.uz}
-                    </button>
-                  )
-                })}
-              </div>
+                  {/* Artboard tanlagichi (ixcham scroll qilinadigan chip ro'yxati) */}
+                  <div className="mt-3 flex max-h-[104px] max-w-[360px] flex-wrap items-center justify-center gap-1.5 overflow-y-auto px-1 py-0.5">
+                    {RATE_PRESETS.map((r) => {
+                      const active = ratePreset === r.id
+                      return (
+                        <button
+                          key={r.id}
+                          type="button"
+                          onClick={() => {
+                            haptics.selection()
+                            setRatePreset(r.id)
+                            setRiveNonce((n) => n + 1)
+                          }}
+                          className={`rounded-full px-2.5 py-1 text-[11px] font-bold transition-all cursor-pointer active:scale-95 ${
+                            active
+                              ? 'bg-pfg text-pcanvas shadow-xs'
+                              : 'bg-psurface text-pmuted hover:text-pfg'
+                          }`}
+                        >
+                          {isRu ? r.ru : r.uz}
+                        </button>
+                      )
+                    })}
+                  </div>
 
-              {(ratePreset === 'recommended-level' || ratePreset === 'league') && (
-                <div className="mt-3 flex items-center justify-center gap-2">
-                  {PROGRESS_COLORS.map((c) => {
-                    const active = progressColor === c.id
-                    return (
-                      <button
-                        key={c.id}
-                        type="button"
-                        aria-label={c.label}
-                        onClick={() => {
-                          haptics.selection()
-                          setProgressColor(c.id)
-                          setRiveNonce((n) => n + 1)
-                        }}
-                        className={`size-6 rounded-full transition-transform cursor-pointer ${
-                          active ? 'scale-125 ring-2 ring-pfg ring-offset-2 ring-offset-pcanvas' : 'opacity-75 hover:opacity-100'
-                        }`}
-                        style={{ backgroundColor: c.hex }}
-                      />
-                    )
-                  })}
+                  {activeMeta.hasColor && (
+                    <div className="mt-2.5 flex items-center justify-center gap-2">
+                      {PROGRESS_COLORS.map((c) => {
+                        const active = progressColor === c.id
+                        return (
+                          <button
+                            key={c.id}
+                            type="button"
+                            aria-label={c.label}
+                            onClick={() => {
+                              haptics.selection()
+                              setProgressColor(c.id)
+                              setRiveNonce((n) => n + 1)
+                            }}
+                            className={`size-5.5 rounded-full transition-transform cursor-pointer ${
+                              active ? 'scale-125 ring-2 ring-pfg ring-offset-2 ring-offset-pcanvas' : 'opacity-75 hover:opacity-100'
+                            }`}
+                            style={{ backgroundColor: c.hex }}
+                          />
+                        )
+                      })}
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </>
+              </>
+            )
+          })()
         )}
       </div>
 

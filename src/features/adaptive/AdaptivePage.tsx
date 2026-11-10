@@ -21,6 +21,7 @@ import { shuffleArray }     from '../../shared/lib/seeded'
 import { isEffectivePremium } from '../../../shared/test-access'
 import { SubscriptionModal } from '../premium'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
 
 /** SR dashboard xulosasi (#46) — server javob shakli */
 type CardsSummary = { total: number; dueNow: number; dueNext24h: number; dueNext7d: number; avgEf: number | null }
@@ -226,7 +227,25 @@ export default function AdaptivePage() {
         />
 
         <div className="flex flex-col items-center justify-center flex-1 py-8 gap-4 text-pmuted px-4">
-          <Brain size={40} className="text-pprimary" />
+          <div className="size-32 flex items-center justify-center">
+            {summary && summary.dueNow > 0 ? (
+              <BrilliantExtrasRive
+                kind="practice-nudge"
+                dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                label="Personalized Practice Nudge"
+                className="size-full"
+                fallback={<Brain size={40} className="text-pprimary" />}
+              />
+            ) : (
+              <BrilliantEndstateRive
+                kind="assessment-intro"
+                dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                label="Adaptive Assessment"
+                className="size-full"
+                fallback={<Brain size={40} className="text-pprimary" />}
+              />
+            )}
+          </div>
           <p className="text-center text-sm">{tt('adaptiveDesc')}</p>
 
           {/* SR dashboard — bugun tayyorlar + prognoz (#46) */}

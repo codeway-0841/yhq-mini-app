@@ -16,6 +16,7 @@ import OTPInput from './components/OTPInput'
 import EmailAuthForm from './components/EmailAuthForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import TelegramQrSheet from './components/TelegramQrSheet'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import { BarChart3, QrCode, ShieldCheck, Smartphone, Target } from 'lucide-react'
 
 /** Mobil brauzer = Telegram app o'rnatilgan bo'lishi ehtimoli yuqori → to'g'ridan-to'g'ri ochamiz.
@@ -252,6 +253,14 @@ export default function LoginPage() {
                   <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
                 </header>
                 <div className="relative">
+                  <div className="mb-4 size-36 xl:size-44 flex items-center justify-start">
+                    <BrilliantEndstateRive
+                      kind="koji-entrance"
+                      dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                      label="KIVVI Mascot Welcome"
+                      className="size-full"
+                    />
+                  </div>
                   <h1 className="text-[28px] font-bold leading-tight tracking-tight text-pfg xl:text-[34px]">
                     {tt('authWelcome')}
                   </h1>
@@ -266,9 +275,19 @@ export default function LoginPage() {
               </div>
               {/* O'ng forma ustuni — vertikal markazda, tor o'qiladigan kenglik */}
               <div className="lg:flex lg:flex-col lg:items-center lg:justify-center lg:p-12">
-            <header className="telegram-login-brand mb-6 flex items-center justify-center gap-2.5 lg:hidden">
-              <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
-              <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
+            <header className="telegram-login-brand mb-4 flex flex-col items-center justify-center gap-2 lg:hidden">
+              <div className="size-24 flex items-center justify-center">
+                <BrilliantEndstateRive
+                  kind="koji-entrance"
+                  dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                  label="KIVVI Mascot"
+                  className="size-full"
+                />
+              </div>
+              <div className="flex items-center justify-center gap-2.5">
+                <img src="/images/brand-badge.webp" alt="" width={36} height={36} className="size-9" />
+                <img src="/images/brand-wordmark.webp" alt="KIVVI" width={96} height={28} className="h-6 w-auto" />
+              </div>
             </header>
 
             <section aria-label={tt('authWelcome')} className="text-center lg:mx-auto lg:w-full lg:max-w-[440px]">

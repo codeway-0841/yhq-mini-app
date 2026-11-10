@@ -2,7 +2,14 @@ import { memo, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { Rive } from '@rive-app/webgl2-course'
 import { getBrilliantBuffer, loadBrilliantRiveRuntime } from './BrilliantEndstateRive'
 
-export type BrilliantExtrasKind = 'league' | 'jump-back-in' | 'lightning'
+export type BrilliantExtrasKind =
+  | 'league'
+  | 'jump-back-in'
+  | 'lightning'
+  | 'practice-nudge'
+  | 'new-year-promo'
+  | 'ondemand-node'
+
 export type BrilliantLeagueState = 'promote' | 'stagnant' | 'demote'
 
 const EXTRAS_CONFIG = {
@@ -21,6 +28,21 @@ const EXTRAS_CONFIG = {
     artboard: 'Streaks Tooltip Animation',
     stateMachine: 'In-Lesson Streak Mobile',
   },
+  'practice-nudge': {
+    file: 'personalized-practice-nudge.8d7e7c26.riv',
+    artboard: 'MAIN_personalized-practice-nudge',
+    stateMachine: 'personalized-practice-nudge',
+  },
+  'new-year-promo': {
+    file: 'new_year_endstate_promo.32852c2a.riv',
+    artboard: 'MAIN_new-years-endstate',
+    stateMachine: 'new-years-endstate',
+  },
+  'ondemand-node': {
+    file: 'ondemand-gamified.e9b9a0f3.riv',
+    artboard: 'On Demand',
+    stateMachine: 'endstate_complete',
+  },
 } as const
 
 export interface BrilliantExtrasRiveProps {
@@ -34,6 +56,9 @@ export interface BrilliantExtrasRiveProps {
   locked?: boolean
   /** Chaqmoq ko'rinishi (`lightning` uchun) */
   boltVisible?: boolean
+  /** Rang indeksi (`ondemand-node` uchun 0..6) */
+  variant?: number
+  dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
   className?: string
@@ -51,6 +76,8 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
   leagueState = 'promote',
   locked = false,
   boltVisible = true,
+  variant = 0,
+  dark = false,
   nonce = 0,
   className = '',
   fallback = null,
@@ -60,12 +87,16 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
   const stateRef = useRef(leagueState)
   const lockedRef = useRef(locked)
   const boltRef = useRef(boltVisible)
+  const variantRef = useRef(variant)
+  const darkRef = useRef(dark)
   const [failed, setFailed] = useState(false)
 
   levelRef.current = leagueLevel
   stateRef.current = leagueState
   lockedRef.current = locked
   boltRef.current = boltVisible
+  variantRef.current = variant
+  darkRef.current = dark
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -113,6 +144,18 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
             if (bolt) bolt.value = boltRef.current
             const trig = byName.get('Lightning')
             trig?.fire?.()
+          } else if (kind === 'practice-nudge') {
+            const dm = byName.get('dark-mode')
+            if (dm) dm.value = darkRef.current
+            byName.get('play-animation')?.fire?.()
+          } else if (kind === 'new-year-promo') {
+            byName.get('play-animation')?.fire?.()
+          } else if (kind === 'ondemand-node') {
+            const col = byName.get('Color')
+            if (col) col.value = variantRef.current
+            const comp = byName.get('completeNode')
+            if (comp) comp.value = true
+            byName.get('Entry')?.fire?.()
           }
         },
         onLoadError: () => { if (!disposed) setFailed(true) },
@@ -129,7 +172,7 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
       observer?.disconnect()
       rive?.cleanup()
     }
-  }, [kind, leagueLevel, leagueState, locked, boltVisible, nonce])
+  }, [kind, leagueLevel, leagueState, locked, boltVisible, variant, dark, nonce])
 
   return (
     <div className={`relative ${className}`} role="img" aria-label={label}>

@@ -23,6 +23,8 @@ import { questionKey } from '../../../shared/subjects'
 import { useT } from '../../shared/i18n'
 import { Button } from '../../shared/components/ui/button'
 import { SubscriptionModal } from '../premium'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
 import { haptics } from '../../platform/haptics'
 
 export default function XatolarPage() {
@@ -164,8 +166,15 @@ export default function XatolarPage() {
       {/* Bo'sh holat */}
       {total === 0 && (
         <div className="rounded-2xl bg-pcard p-8 flex flex-col items-center text-center shadow-xs">
-          <div className="size-12 flex items-center justify-center mb-4">
-            <HeartCrack size={26} className="text-pmuted" />
+          <div className="size-32 flex items-center justify-center mb-2">
+            <BrilliantEndstateRive
+              kind="review-complete"
+              variant={0}
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="No Mistakes Review Complete"
+              className="size-full"
+              fallback={<HeartCrack size={26} className="text-pmuted" />}
+            />
           </div>
           <p className="text-[17px] font-semibold text-pfg">{tt('mistakesEmptyTitle')}</p>
           <p className="text-[12px] text-psubtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
@@ -177,8 +186,17 @@ export default function XatolarPage() {
           {/* Umumiy holat + "Barchasini mashq qilish" */}
           <div className="rounded-2xl bg-pcard p-4 mb-4 shadow-xs">
             <div className="flex items-center gap-3 mb-3.5">
-              <div className="size-11 flex items-center justify-center flex-shrink-0">
-                <HeartCrack size={22} className="text-pmuted" />
+              <div className="size-14 flex items-center justify-center flex-shrink-0">
+                <BrilliantEndstateRive
+                  kind="review-mistakes"
+                  totalNum={total}
+                  correctNum={0}
+                  variant={2}
+                  dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                  label="Review Mistakes"
+                  className="size-full"
+                  fallback={<HeartCrack size={22} className="text-pmuted" />}
+                />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[24px] font-semibold text-pfg leading-none">{total}</p>
@@ -196,8 +214,14 @@ export default function XatolarPage() {
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
             <div className="rounded-2xl bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-xs">
-              <div className="size-11 flex items-center justify-center flex-shrink-0">
-                <Sparkles size={22} className="text-pmuted" />
+              <div className="size-14 flex items-center justify-center flex-shrink-0">
+                <BrilliantExtrasRive
+                  kind="practice-nudge"
+                  dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                  label="Personalized Practice Nudge"
+                  className="size-full"
+                  fallback={<Sparkles size={22} className="text-pmuted" />}
+                />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[14px] font-semibold text-pfg">{tt('premiumMistakesTitle')}</p>

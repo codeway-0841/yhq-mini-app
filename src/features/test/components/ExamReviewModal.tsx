@@ -8,6 +8,7 @@ import lessonMap from '../../../content/lessonMap.yhq.json'
 import { useNavigate } from 'react-router-dom'
 import ImageZoomModal from '../../../shared/components/ImageZoomModal'
 import ModalShell from '../../../shared/components/ModalShell'
+import { BrilliantEndstateRive } from '../../../shared/components/BrilliantEndstateRive'
 import { Button } from '../../../shared/components/ui/button'
 import MathText from '../../../shared/components/MathText'
 import { cn } from '../../../shared/lib/cn'
@@ -96,9 +97,20 @@ export default function ExamReviewModal({ items, language, onClose }: ExamReview
         {/* Question List */}
         <div className="flex-1 overflow-y-auto px-4 pb-4 space-y-3.5 relative z-10">
           {displayedItems.length === 0 ? (
-            <div className="text-center py-12 px-4">
-              <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center mx-auto mb-3 text-pprimary">
-                <CheckCircle2 size={30} />
+            <div className="text-center py-10 px-4">
+              <div className="size-32 mx-auto mb-2 flex items-center justify-center">
+                <BrilliantEndstateRive
+                  kind="review-complete"
+                  variant={0}
+                  dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+                  label="Review Complete"
+                  className="size-full"
+                  fallback={
+                    <div className="w-14 h-14 rounded-2xl bg-[rgb(var(--p-primary-rgb)/0.15)] flex items-center justify-center text-pprimary">
+                      <CheckCircle2 size={30} />
+                    </div>
+                  }
+                />
               </div>
               <p className="text-sm font-semibold text-pfg">
                 {tt('noMistakesCongrats')}

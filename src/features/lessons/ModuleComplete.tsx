@@ -61,7 +61,17 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
     <DialogBody className="relative pb-6">
       <p className="mb-5 text-sm leading-relaxed text-pmuted">{tt(courseDone ? 'pathCourseDoneHint' : 'pathMilestoneHint')}</p>
       {next && <div className="module-next-preview mb-5 flex items-center gap-3 rounded-2xl bg-psurface p-4 text-left">
-        <span className="grid size-11 flex-none place-items-center rounded-full bg-pcard text-pmuted"><NextIcon size={23} /></span>
+        <div className="size-12 flex-none flex items-center justify-center">
+          <BrilliantEndstateRive
+            kind="level-insertion"
+            variant={next.id % 6}
+            levelTitle={lang === 'ru' ? next.titleRu : next.title}
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Next Module Level Insertion"
+            className="size-full"
+            fallback={<span className="grid size-11 flex-none place-items-center rounded-full bg-pcard text-pmuted"><NextIcon size={23} /></span>}
+          />
+        </div>
         <div className="min-w-0 flex-1">
           <p className="text-[10px] font-bold uppercase tracking-widest text-pmuted">{tt('pathNextModule')} · {next.id}</p>
           <p className="mt-1 break-words text-base font-semibold text-pfg">{lang === 'ru' ? next.titleRu : next.title}</p>

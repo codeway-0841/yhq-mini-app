@@ -21,6 +21,13 @@ export type BrilliantEndstateKind =
   | 'premium-lock'
   | 'recommended-level'
   | 'post-checkout'
+  | 'review-mistakes'
+  | 'review-complete'
+  | 'lcr-transition'
+  | 'assessment-intro'
+  | 'warm-up'
+  | 'level-insertion'
+  | 'koji-entrance'
 
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
@@ -29,19 +36,31 @@ export type BrilliantProgressTrigger = 'playMastered' | 'playPassed' | 'playPoor
 const ENDSTATES_FILE = 'endstates.e233a7c3.riv'
 const PROGRESS_CHECK_FILE = 'progress-check.ae37b864.riv'
 const POST_CHECKOUT_FILE = 'post-checkout-flow-premium-pro.a15dbd04.riv'
+const LCR_TRANSITION_FILE = 'lcr-koji-transition.c8f8f68d.riv'
+const LEVEL_CHECK_FILE = 'level-check.e74e7d3c.riv'
+const ASSESSMENT_INTRO_FILE = 'level-check-assessment-intro.1dfae46f.riv'
+const LEVEL_INSERTION_FILE = 'level-insertion-intro.fb376b71.riv'
+const LOHP_ENTRANCE_FILE = 'lohp_koji_entrance.344647d5.riv'
 
 const KIND = {
-  streak:              { file: ENDSTATES_FILE,      artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
-  charge:              { file: ENDSTATES_FILE,      artboard: 'Streaks Forgive',            stateMachine: 'streaksForgive',         viewModel: 'StreaksForgiveVM' },
-  lesson:              { file: ENDSTATES_FILE,      artboard: 'MAIN_lesson-endstate',       stateMachine: 'LessonEndstate',         viewModel: 'LessonEndstateVM' },
-  practice:            { file: ENDSTATES_FILE,      artboard: 'MAIN_practice-endstate',     stateMachine: 'PracticeEndstate',       viewModel: 'PracticeEndstateVM' },
-  xp:                  { file: ENDSTATES_FILE,      artboard: 'MAIN_xp-starburst',          stateMachine: 'XPStarburst',            viewModel: 'XPStarburstVM' },
-  'rate-app':          { file: ENDSTATES_FILE,      artboard: 'MAIN_RateTheApp',            stateMachine: 'RateTheApp',             viewModel: 'RateTheAppVM' },
-  'premium-lock':      { file: ENDSTATES_FILE,      artboard: 'MAIN_premium-nudge',         stateMachine: 'PremiumNudgeLockBounce', viewModel: 'PremiumNudgeVM' },
-  'recommended-level': { file: ENDSTATES_FILE,      artboard: 'MAIN_RecommendedLevelCheck', stateMachine: 'RecommendedLevelCheck',  viewModel: 'RecommendedLevelCheckVM' },
-  'progress-intro':    { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',     viewModel: 'ProgressCheckIntroVM' },
-  'progress-endstate': { file: PROGRESS_CHECK_FILE, artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate',  viewModel: 'ProgressCheckEndstateVM' },
-  'post-checkout':     { file: POST_CHECKOUT_FILE,  artboard: 'MAIN_PostCheckoutFlow',      stateMachine: 'PostCheckoutFlow',       viewModel: 'PostCheckoutFlowVM' },
+  streak:              { file: ENDSTATES_FILE,        artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
+  charge:              { file: ENDSTATES_FILE,        artboard: 'Streaks Forgive',            stateMachine: 'streaksForgive',         viewModel: 'StreaksForgiveVM' },
+  lesson:              { file: ENDSTATES_FILE,        artboard: 'MAIN_lesson-endstate',       stateMachine: 'LessonEndstate',         viewModel: 'LessonEndstateVM' },
+  practice:            { file: ENDSTATES_FILE,        artboard: 'MAIN_practice-endstate',     stateMachine: 'PracticeEndstate',       viewModel: 'PracticeEndstateVM' },
+  xp:                  { file: ENDSTATES_FILE,        artboard: 'MAIN_xp-starburst',          stateMachine: 'XPStarburst',            viewModel: 'XPStarburstVM' },
+  'rate-app':          { file: ENDSTATES_FILE,        artboard: 'MAIN_RateTheApp',            stateMachine: 'RateTheApp',             viewModel: 'RateTheAppVM' },
+  'premium-lock':      { file: ENDSTATES_FILE,        artboard: 'MAIN_premium-nudge',         stateMachine: 'PremiumNudgeLockBounce', viewModel: 'PremiumNudgeVM' },
+  'recommended-level': { file: ENDSTATES_FILE,        artboard: 'MAIN_RecommendedLevelCheck', stateMachine: 'RecommendedLevelCheck',  viewModel: 'RecommendedLevelCheckVM' },
+  'progress-intro':    { file: PROGRESS_CHECK_FILE,   artboard: 'MAIN_ProgressCheckIntro',    stateMachine: 'ProgressCheckIntro',     viewModel: 'ProgressCheckIntroVM' },
+  'progress-endstate': { file: PROGRESS_CHECK_FILE,   artboard: 'MAIN_ProgressCheckEndstate', stateMachine: 'ProgressCheckEndstate',  viewModel: 'ProgressCheckEndstateVM' },
+  'post-checkout':     { file: POST_CHECKOUT_FILE,    artboard: 'MAIN_PostCheckoutFlow',      stateMachine: 'PostCheckoutFlow',       viewModel: 'PostCheckoutFlowVM' },
+  'review-mistakes':   { file: LCR_TRANSITION_FILE,   artboard: 'MAIN_ReviewMistakes',        stateMachine: 'ReviewMistakes',         viewModel: 'ReviewMistakesVM' },
+  'lcr-transition':    { file: LCR_TRANSITION_FILE,   artboard: 'MAIN_LCR Transition',        stateMachine: 'LCRTransition',          viewModel: 'LCRTransitionVM' },
+  'assessment-intro':  { file: ASSESSMENT_INTRO_FILE, artboard: 'MAIN_AssessmentIntro',       stateMachine: 'AssessmentIntro',        viewModel: 'LevelCheckVM' },
+  'warm-up':           { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_WarmUp',                stateMachine: 'WarmUp',                 viewModel: 'LevelCheckVM' },
+  'review-complete':   { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_ReviewComplete',        stateMachine: 'ReviewComplete',         viewModel: 'ReviewCompleteVM' },
+  'level-insertion':   { file: LEVEL_INSERTION_FILE,  artboard: 'MAIN_LevelInsertionIntro',   stateMachine: 'LevelInsertionIntro',    viewModel: 'LevelInsertionIntroVM' },
+  'koji-entrance':     { file: LOHP_ENTRANCE_FILE,    artboard: 'MAIN_KojiEntrance',          stateMachine: 'KojiEntrance',           viewModel: 'KojiEntranceVM' },
 } as const
 
 let wasmConfigured = false
@@ -100,6 +119,11 @@ export interface BrilliantEndstateRiveProps {
   practiceTrigger?: BrilliantPracticeTrigger
   /** `progress-endstate` kind uchun qaysi bosqich imtihoni natijasi o'ynashi */
   progressTrigger?: BrilliantProgressTrigger
+  /** `review-mistakes` uchun to'g'ri / jami xatolar soni */
+  correctNum?: number
+  totalNum?: number
+  /** `level-insertion` uchun daraja nomi */
+  levelTitle?: string
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
@@ -119,6 +143,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   skillCheckMastered = false,
   practiceTrigger = 'play100',
   progressTrigger = 'playMastered',
+  correctNum = 0,
+  totalNum = 5,
+  levelTitle = '',
   dark = false,
   nonce = 0,
   className = '',
@@ -135,6 +162,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const skillCheckMasteredRef = useRef(skillCheckMastered)
   const practiceTriggerRef = useRef(practiceTrigger)
   const progressTriggerRef = useRef(progressTrigger)
+  const correctNumRef = useRef(correctNum)
+  const totalNumRef = useRef(totalNum)
+  const levelTitleRef = useRef(levelTitle)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -145,6 +175,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   skillCheckMasteredRef.current = skillCheckMastered
   practiceTriggerRef.current = practiceTrigger
   progressTriggerRef.current = progressTrigger
+  correctNumRef.current = correctNum
+  totalNumRef.current = totalNum
+  levelTitleRef.current = levelTitle
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -194,64 +227,82 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
           rive.bindViewModelInstance(inst)
           instanceRef.current = inst as never
 
-          try {
-            const dm = inst.boolean('darkMode')
-            if (dm) dm.value = darkRef.current
-          } catch { /* darkMode mavjud bo'lmasa o'tkazib yuboriladi */ }
+          const setNum = (prop: string, val: number) => {
+            try {
+              const p = inst.number(prop)
+              if (p) p.value = val
+            } catch { /* property may not exist on VM */ }
+          }
+          const setBool = (prop: string, val: boolean) => {
+            try {
+              const p = inst.boolean(prop)
+              if (p) p.value = val
+            } catch { /* property may not exist on VM */ }
+          }
+          const setStr = (prop: string, val: string) => {
+            try {
+              const p = inst.string(prop)
+              if (p) p.value = val
+            } catch { /* property may not exist on VM */ }
+          }
+          const fire = (prop: string) => {
+            try { inst.trigger(prop)?.trigger() } catch { /* ignore */ }
+          }
+
+          setBool('darkMode', darkRef.current)
 
           if (kind === 'streak') {
-            try {
-              const sa = inst.number('streakAnimation')
-              if (sa) sa.value = variantRef.current
-            } catch { /* ignore */ }
-            inst.trigger('playAnimation')?.trigger()
-          } else if (kind === 'charge' || kind === 'xp' || kind === 'rate-app' || kind === 'premium-lock') {
-            inst.trigger('playAnimation')?.trigger()
+            setNum('streakAnimation', variantRef.current)
+            fire('playAnimation')
+          } else if (
+            kind === 'charge' ||
+            kind === 'xp' ||
+            kind === 'rate-app' ||
+            kind === 'premium-lock' ||
+            kind === 'koji-entrance'
+          ) {
+            fire('playAnimation')
           } else if (kind === 'post-checkout') {
-            try {
-              const txt = inst.boolean('text')
-              if (txt) txt.value = false
-            } catch { /* ignore */ }
-            inst.trigger('playAnimation')?.trigger()
-          } else if (kind === 'progress-intro' || kind === 'recommended-level') {
-            try {
-              const col = inst.number('color')
-              if (col) col.value = variantRef.current
-            } catch { /* ignore */ }
-            inst.trigger('playAnimation')?.trigger()
+            setBool('text', false)
+            fire('playAnimation')
+          } else if (
+            kind === 'progress-intro' ||
+            kind === 'recommended-level' ||
+            kind === 'review-complete'
+          ) {
+            setNum('color', variantRef.current)
+            fire('playAnimation')
+          } else if (kind === 'review-mistakes') {
+            setNum('color', variantRef.current)
+            setNum('correctNum', correctNumRef.current)
+            setNum('totalNum', totalNumRef.current)
+            fire('playAnimation')
+          } else if (kind === 'lcr-transition') {
+            setNum('color', variantRef.current)
+            fire('playSkillCheck')
+          } else if (kind === 'assessment-intro') {
+            setNum('color', variantRef.current)
+            fire('playAssessmentIntro')
+          } else if (kind === 'warm-up') {
+            setNum('color', variantRef.current)
+            fire('playWarmUp')
+          } else if (kind === 'level-insertion') {
+            setNum('color', variantRef.current)
+            setNum('numberOfSkills1to4', 3)
+            if (levelTitleRef.current) setStr('levelTitle', levelTitleRef.current)
+            fire('playAnimation')
           } else if (kind === 'progress-endstate') {
-            try {
-              const col = inst.number('color')
-              if (col) col.value = variantRef.current
-            } catch { /* ignore */ }
-            const trig = progressTriggerRef.current
-            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            setNum('color', variantRef.current)
+            fire(progressTriggerRef.current)
           } else if (kind === 'lesson') {
-            try {
-              const col = inst.number('color')
-              if (col) col.value = variantRef.current
-            } catch { /* ignore */ }
-            try {
-              const lvl = inst.boolean('level')
-              if (lvl) lvl.value = isLevelRef.current
-            } catch { /* ignore */ }
-            try {
-              const scm = inst.boolean('skillCheckMastered')
-              if (scm) scm.value = skillCheckMasteredRef.current
-            } catch { /* ignore */ }
-            try {
-              const ln = inst.number('levelNumber')
-              if (ln) ln.value = levelNumberRef.current
-            } catch { /* ignore */ }
-            const trig = lessonTriggerRef.current
-            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            setNum('color', variantRef.current)
+            setBool('level', isLevelRef.current)
+            setBool('skillCheckMastered', skillCheckMasteredRef.current)
+            setNum('levelNumber', levelNumberRef.current)
+            fire(lessonTriggerRef.current)
           } else if (kind === 'practice') {
-            try {
-              const col = inst.number('color')
-              if (col) col.value = variantRef.current
-            } catch { /* ignore */ }
-            const trig = practiceTriggerRef.current
-            try { inst.trigger(trig)?.trigger() } catch { /* ignore */ }
+            setNum('color', variantRef.current)
+            fire(practiceTriggerRef.current)
           }
         },
         onLoadError: () => { if (!disposed) setFailed(true) },
@@ -268,7 +319,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       instanceRef.current = null
       rive?.cleanup()
     }
-  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger])
+  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
 
   useEffect(() => {
     try {

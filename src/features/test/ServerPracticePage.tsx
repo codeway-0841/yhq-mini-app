@@ -33,6 +33,7 @@ import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewMod
 import TestExplanation from './components/TestExplanation'
 import TestHelperAvatar from './components/TestHelperAvatar'
 import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
+import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
 import TestDrawingLayer from './components/TestDrawingLayer'
 import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
@@ -535,8 +536,20 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
 
   if (loading || !snapshot || !question) {
     return (
-      <div className="flex min-h-[70svh] flex-col items-center justify-center gap-3 px-6 text-center text-pmuted">
-        {error ? <AlertTriangle className="text-pdanger" /> : <div className="size-9 animate-spin rounded-full border-2 border-pprimary border-t-transparent" />}
+      <div className="flex min-h-[70svh] flex-col items-center justify-center gap-2 px-6 text-center text-pmuted">
+        {error ? (
+          <AlertTriangle className="text-pdanger" />
+        ) : (
+          <div className="size-36 flex items-center justify-center">
+            <BrilliantEndstateRive
+              kind="warm-up"
+              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+              label="Warm Up"
+              className="size-full"
+              fallback={<div className="size-9 animate-spin rounded-full border-2 border-pprimary border-t-transparent" />}
+            />
+          </div>
+        )}
         <p className="text-sm font-semibold">{error ?? (isRu ? 'Загрузка теста…' : 'Test yuklanmoqda…')}</p>
         {error && <Button onClick={() => window.location.reload()}>{isRu ? 'Повторить' : 'Qayta urinish'}</Button>}
       </div>
@@ -560,9 +573,20 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   }
 
   if (finished) {
+    const ratio = snapshot.total > 0 ? correctCount / snapshot.total : 0
     return (
-      <div className="mx-auto flex min-h-[75svh] max-w-lg flex-col items-center justify-center gap-5 px-5 text-center">
-        <div className="grid size-16 place-items-center rounded-full bg-pwash text-pprimary"><Check size={30} /></div>
+      <div className="mx-auto flex min-h-[75svh] max-w-lg flex-col items-center justify-center gap-4 px-5 text-center">
+        <div className="size-36 flex items-center justify-center">
+          <BrilliantEndstateRive
+            kind="practice"
+            practiceTrigger={ratio >= 0.99 ? 'play100' : ratio >= 0.5 ? 'play50Plus' : 'playFailure'}
+            variant={ratio >= 0.5 ? 0 : 2}
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Practice Complete"
+            className="size-full"
+            fallback={<div className="grid size-16 place-items-center rounded-full bg-pwash text-pprimary"><Check size={30} /></div>}
+          />
+        </div>
         <div>
           <h1 className="font-display text-2xl font-bold text-pfg">{isRu ? 'Тест завершён' : 'Test yakunlandi'}</h1>
           <p className="mt-2 text-pmuted">{correctCount} / {snapshot.total} {isRu ? 'правильных ответов' : 'to‘g‘ri javob'}</p>
