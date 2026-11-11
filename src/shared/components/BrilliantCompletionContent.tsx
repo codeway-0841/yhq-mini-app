@@ -414,39 +414,39 @@ export function BrilliantCompletionStage({
               )}
             </div>
 
-            {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika bloki (Bordersiz, toza Brilliant dizayn) */}
+            {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika (Bloksiz, toza Brilliant minimalist) */}
             {practiceStats && (
-              <div className="relative z-10 mt-1.5 flex w-full items-stretch justify-center gap-2 sm:gap-2.5">
+              <div className="relative z-10 mt-2.5 flex w-full items-center justify-center gap-6 sm:gap-8">
                 {/* To'g'ri (Green) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-[#29cc57]/12 px-2.5 py-3">
-                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-[#29cc57] tabular-nums">
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-[26px] sm:text-[28px] font-black leading-none text-[#29cc57] tabular-nums">
                     <AnimatedNumber active={statsVisible} end={practiceStats.correct} delay={100} />
                   </span>
-                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11.5px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'верно' : 'to‘g‘ri'}
                   </span>
                 </div>
 
                 {/* Xato (Red) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pdanger/12 px-2.5 py-3">
-                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-pdanger tabular-nums">
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-[26px] sm:text-[28px] font-black leading-none text-pdanger tabular-nums">
                     <AnimatedNumber
                       active={statsVisible}
                       end={practiceStats.wrong ?? Math.max(0, practiceStats.total - practiceStats.correct)}
                       delay={180}
                     />
                   </span>
-                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11.5px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'ошибок' : 'xato'}
                   </span>
                 </div>
 
-                {/* Natija / Foiz (Surface) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
-                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-pfg tabular-nums">
+                {/* Natija / Foiz */}
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-[26px] sm:text-[28px] font-black leading-none text-pfg tabular-nums">
                     <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" delay={260} />
                   </span>
-                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11.5px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'результат' : 'natija'}
                   </span>
                 </div>
