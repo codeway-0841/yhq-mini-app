@@ -135,14 +135,10 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
           if (kind === 'league') {
             const lvl = byName.get('level_Number')
             if (lvl) lvl.value = Math.max(1, Math.min(10, Math.round(levelRef.current)))
-            const lvlEnum = byName.get('Level')
-            if (lvlEnum) lvlEnum.value = Math.max(1, Math.min(10, Math.round(levelRef.current)))
             const lck = byName.get('locked')
             if (lck) lck.value = lockedRef.current
             const trig = byName.get(stateRef.current)
-            setTimeout(() => {
-              if (!disposed) trig?.fire?.()
-            }, 80)
+            trig?.fire?.()
           } else if (kind === 'lightning') {
             const bolt = byName.get('Bolt visible')
             if (bolt) bolt.value = boltRef.current
