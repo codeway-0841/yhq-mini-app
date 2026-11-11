@@ -348,7 +348,7 @@ export default function LessonRunner({
       const nextCombo = graded.correct ? combo + 1 : 0
       setCombo(nextCombo)
       if (graded.correct) {
-        playSound(nextCombo >= 3 ? 'xp-tally' : 'correct')
+        playSound('correct')
         haptics.success()
       } else {
         playSound('incorrect')
@@ -820,17 +820,17 @@ export default function LessonRunner({
                   </div>
                   {revealed && <p className="mt-1 break-words text-[15px] font-semibold text-pfg">{feedback.correctAnswer}</p>}</div>
                 {feedback.correct || revealed
-                  ? <Button variant="secondary" onClick={() => setShowExplanation(true)} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikWhy')}</Button>
-                  : <Button variant="secondary" onClick={() => setRevealed(true)} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikSeeAnswer')}</Button>}
+                  ? <Button variant="secondary" onClick={() => { playSound('hint'); setShowExplanation(true) }} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikWhy')}</Button>
+                  : <Button variant="secondary" onClick={() => { playSound('hint'); setRevealed(true) }} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikSeeAnswer')}</Button>}
               </div>
             )}
-            {phase === 'exercise' ? <div className="flex items-center gap-3"><button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="idle" /></button><Button size="lg" block className="rus-lesson-check flex-1" onClick={() => { void checkAnswer() }} disabled={!currentAnswered || checking}>{checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}</Button></div>
+            {phase === 'exercise' ? <div className="flex items-center gap-3"><button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation="idle" /></button><Button size="lg" block className="rus-lesson-check flex-1" onClick={() => { void checkAnswer() }} disabled={!currentAnswered || checking}>{checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}</Button></div>
               : feedback && !feedback.correct && !revealed ? <div className="flex items-center gap-3">
-                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="oops" /></button>
-                <Button size="lg" className="rus-lesson-action min-w-0 flex-1" onClick={() => { setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) })); setFeedback(null); setPhase('exercise') }}>{tt('rusDarslikTryAgain')}</Button>
+                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation="oops" /></button>
+                <Button size="lg" className="rus-lesson-action min-w-0 flex-1" onClick={() => { playSound('skip'); setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) })); setFeedback(null); setPhase('exercise') }}>{tt('rusDarslikTryAgain')}</Button>
               </div> : <div className="flex items-center gap-3">
-                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation={feedback?.correct ? 'happy' : 'idle'} /></button>
-                <Button size="lg" block onClick={continueLesson} disabled={submitting} className="rus-lesson-action flex-1">
+                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation={feedback?.correct ? 'happy' : 'idle'} /></button>
+                <Button size="lg" block onClick={() => { playSound('continue'); continueLesson() }} disabled={submitting} className="rus-lesson-action flex-1">
                   {submitting ? tt('rusDarslikCheckSubmitting') : revealed ? tt('rusDarslikSkipExplanation') : isLast ? tt('rusDarslikLessonFinish') : tt('rusDarslikLessonContinue')}
                 </Button>
               </div>}

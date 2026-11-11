@@ -616,7 +616,7 @@ export default function TestPage() {
           ko'tariladi (raised), maskot 1.5rem'da qoladi → desktop'da ham
           stacked rail, mobilda avvalgi ko'rinish (container cheti = right-4). */}
       {selected && !drawingOpen && (
-        <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={handleOpenExplain}
+        <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={() => { playSound('hint'); handleOpenExplain() }}
           aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
           className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 pointer-events-auto h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
           <TestHelperAvatar />

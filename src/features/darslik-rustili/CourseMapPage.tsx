@@ -262,6 +262,7 @@ export default function CourseMapPage({
   }, [mastery.loading, currentBlock.id, currentIdx, initialBlockId, initialSectionIdx, passed])
 
   const pick = useCallback((blockId: number, idx: number) => {
+    playSound('highlight-node')
     openBlock(blockId)
     setPicked({ blockId, idx })
     track('rus_darslik_map_pick', { block_id: blockId, section_idx: idx })
@@ -273,6 +274,7 @@ export default function CourseMapPage({
 
   const openReader = useCallback((quiz = false) => {
     if (activeLocked) return
+    playSound('start-lesson')
     track('rus_darslik_map_open_topic', { block_id: active.blockId, section_idx: active.idx, quiz })
     const target = { blockId: active.blockId, idx: activeCheck ? outline.length - 1 : active.idx, quiz: quiz || activeCheck }
     if (!initialBlockId || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
@@ -327,7 +329,7 @@ export default function CourseMapPage({
       data-themed={initialBlockId ? 'true' : undefined}
       data-no-animation={noAnimation ? 'true' : undefined}
       style={{ '--cmap-ring': mapTheme.accent, '--cmap-deep': mapTheme.buttonShadow, '--cmap-accent': mapTheme.accent, '--cmap-button': mapTheme.buttonBg, '--cmap-button-shadow': mapTheme.buttonShadow, '--cmap-button-text': mapTheme.buttonText } as CSSProperties}
-      onClickCapture={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('highlight-node') }}
+      onClickCapture={(event) => { if ((event.target as HTMLElement).closest('button.cmap-bar-back, button.cmap-pill, button.cmap-retry')) playSound('click') }}
     >
       <header className="cmap-bar">
         <button

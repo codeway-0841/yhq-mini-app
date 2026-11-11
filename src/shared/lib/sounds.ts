@@ -1,13 +1,14 @@
 import {
   BRILLIANT_SOUNDS,
   playBrilliantSound,
+  playLoopingBrilliantSound,
   stopBrilliantSound,
   type BrilliantSoundId,
 } from './brilliantSounds'
 
 /**
  * KIVVI yagona UI ovoz tizimi — 100% Brilliant.org asl `.mp3` effektlari (`public/brilliant/sounds/*.mp3`).
- * Avvalgi Web Audio sintez kodlari to‘liq olib tashlangan.
+ * Har bir hodisa davomiyligi va vazifasiga qat'iy moslangan (double-trigger va global pointerdown xatolarisiz).
  */
 
 export type LegacySoundKind =
@@ -30,7 +31,7 @@ export type SoundKind = LegacySoundKind | BrilliantSoundId
 const BRILLIANT_ID_SET = new Set<string>(BRILLIANT_SOUNDS.map((s) => s.id))
 
 const LEGACY_TO_BRILLIANT: Record<LegacySoundKind, BrilliantSoundId> = {
-  click: 'lightweight-choice',
+  click: 'assessment-click-option-1', // 131ms toza mikro-tap (avvalgidek 1.25s cho'zilmaydi)
   toggle: 'toggle-on',
   success: 'correct',
   error: 'incorrect',
@@ -38,7 +39,7 @@ const LEGACY_TO_BRILLIANT: Record<LegacySoundKind, BrilliantSoundId> = {
   chime: 'xp-tally',
   win: 'endstate',
   achievement: 'diagnostic-complete',
-  combo: 'tutor-xp-countup-start',
+  combo: 'correct',
   match: 'highlight-node',
   emote_pop: 'drag-started',
   emote_whoosh: 'skip',
@@ -49,7 +50,7 @@ export function resolveBrilliantSound(kind: SoundKind): BrilliantSoundId {
   if (BRILLIANT_ID_SET.has(kind)) {
     return kind as BrilliantSoundId
   }
-  return LEGACY_TO_BRILLIANT[kind as LegacySoundKind] ?? 'lightweight-choice'
+  return LEGACY_TO_BRILLIANT[kind as LegacySoundKind] ?? 'assessment-click-option-1'
 }
 
 /** Master ovoz funksiyasi — ilovadagi barcha ovozlar shu orqali Brilliant `.mp3` sifatida ijro etiladi */
@@ -57,13 +58,14 @@ export function playSound(kind: SoundKind) {
   void playBrilliantSound(resolveBrilliantSound(kind))
 }
 
-export { playBrilliantSound, stopBrilliantSound, type BrilliantSoundId }
-
-/* ── Global: asosiy CTA tugmalar bosilganda Brilliant `continue.mp3` ──────
-   Event delegation — har sahifaga alohida yozish shart emas. */
-if (typeof document !== 'undefined') {
-  document.addEventListener('pointerdown', (e) => {
-    const el = (e.target as HTMLElement | null)?.closest?.('button.bg-pprimary')
-    if (el && !(el as HTMLButtonElement).disabled) playSound('continue')
-  })
+/** Davomiy loop ovoz (masalan XP sanash vaqtida `tutor-xp-countup-start`) */
+export function playLoopingSound(kind: SoundKind) {
+  playLoopingBrilliantSound(resolveBrilliantSound(kind))
 }
+
+/** Joriy tovush(lar)ni to‘xtatadi */
+export function stopSound(kind?: SoundKind) {
+  stopBrilliantSound(kind ? resolveBrilliantSound(kind) : undefined)
+}
+
+export { playBrilliantSound, playLoopingBrilliantSound, stopBrilliantSound, type BrilliantSoundId }
