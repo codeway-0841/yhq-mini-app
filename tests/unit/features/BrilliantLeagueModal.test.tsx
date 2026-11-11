@@ -22,13 +22,13 @@ afterEach(() => {
 })
 
 describe('BrilliantLeagueModal — Brilliant 1:1 League Endstate', () => {
-  it('getLeagueTier 10 ta Brilliant element ligasini to‘g‘ri ajratadi', () => {
+  it('getLeagueTier 10 ta Brilliant ligasini to‘g‘ri ajratadi', () => {
     expect(BRILLIANT_LEAGUES).toHaveLength(10)
-    expect(getLeagueTier(1, 'uz').name).toBe('Vodorod')
-    expect(getLeagueTier(2, 'uz').name).toBe('Litiy')
-    expect(getLeagueTier(3, 'ru').name).toBe('Углерод')
-    expect(getLeagueTier('silver', 'uz').name).toBe('Litiy')
-    expect(getLeagueTier('gold', 'ru').name).toBe('Углерод')
+    expect(getLeagueTier(1, 'uz').name).toBe('Bronza')
+    expect(getLeagueTier(2, 'uz').name).toBe('Kumush')
+    expect(getLeagueTier(3, 'ru').name).toBe('Золото')
+    expect(getLeagueTier('silver', 'uz').name).toBe('Kumush')
+    expect(getLeagueTier('gold', 'ru').name).toBe('Золото')
   })
 
   it('modal ko‘tarilish (promote) holatida 1:1 Brilliant tuzilmasini ko‘rsatadi', () => {
@@ -46,10 +46,9 @@ describe('BrilliantLeagueModal — Brilliant 1:1 League Endstate', () => {
 
     expect(screen.getByTestId('mock-extras-league')).toBeInTheDocument()
     expect(screen.getByText('Yangi ligaga ko‘tarildingiz!')).toBeInTheDocument()
-    expect(screen.getByText(/Litiy ligasi · 2\/10/)).toBeInTheDocument()
-    expect(screen.getByText('#1')).toBeInTheDocument()
-    expect(screen.getByText('+640')).toBeInTheDocument()
-    expect(screen.getByText(/Keyingi marra: Uglerod/)).toBeInTheDocument()
+    expect(screen.getByText(/Kumush ligasi \(2\/10\)/)).toBeInTheDocument()
+    expect(screen.getByText('Siz')).toBeInTheDocument()
+    expect(screen.getByText('640 XP')).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
     expect(onClose).toHaveBeenCalledTimes(1)
@@ -70,7 +69,7 @@ describe('BrilliantLeagueModal — Brilliant 1:1 League Endstate', () => {
     )
 
     expect(screen.getByText('Повышение в лиге!')).toBeInTheDocument()
-    expect(screen.getByText(/Углерод лига · 3\/10/)).toBeInTheDocument()
+    expect(screen.getByText(/Золото лига \(3\/10\)/)).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Продолжить' })).toBeInTheDocument()
   })
 })
