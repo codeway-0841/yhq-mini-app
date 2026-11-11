@@ -344,17 +344,24 @@ export default function App() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="/mvp"       element={<BrilliantMvpPage />} />
             <Route path="/rive-mvp"  element={<BrilliantMvpPage />} />
             <Route path="*" element={<MascotStudioPage />} />
           </Routes>
         </Suspense>
       </HashRouter>
     )
-  } else if (pathname.startsWith('/rive-mvp') || hash.startsWith('#/rive-mvp')) {
+  } else if (
+    pathname.startsWith('/rive-mvp') ||
+    hash.startsWith('#/rive-mvp') ||
+    pathname.startsWith('/mvp') ||
+    hash.startsWith('#/mvp')
+  ) {
     content = (
       <HashRouter>
         <Suspense fallback={<PageLoader />}>
           <Routes>
+            <Route path="/mvp" element={<BrilliantMvpPage />} />
             <Route path="/rive-mvp" element={<BrilliantMvpPage />} />
             <Route path="/maskotlar" element={<MascotStudioPage />} />
             <Route path="*" element={<BrilliantMvpPage />} />
@@ -430,6 +437,7 @@ export default function App() {
             <Route path="/sharhlar"   element={<ReviewsPage />} />
             <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
             <Route path="/maskotlar" element={<MascotStudioPage />} />
+            <Route path="/mvp"       element={<BrilliantMvpPage />} />
             <Route path="/rive-mvp"  element={<BrilliantMvpPage />} />
             <Route path="/admin"      element={<AdminPage />} />
             <Route path="*"           element={<NotFound />} />

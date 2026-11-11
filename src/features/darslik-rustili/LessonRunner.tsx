@@ -464,6 +464,28 @@ export default function LessonRunner({
                     {tt('rusDarslikLessonCombo').replace('{count}', String(combo))}
                   </span>
                 )}
+                {import.meta.env.DEV && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setEarnedLessonXp(25)
+                      setResult({
+                        passed: true,
+                        correct: total || 5,
+                        total: total || 5,
+                        feedback: [],
+                        accuracy: 100,
+                        xpEarned: 25,
+                        lessonXpEarned: 25,
+                        dailyStreak: 3,
+                      })
+                    }}
+                    className="shrink-0 rounded-md bg-amber-500/20 px-1.5 py-0.5 text-[10px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
+                    title="Dev: Yakunni ko'rish (yechmasdan)"
+                  >
+                    ⚡ Yakun
+                  </button>
+                )}
                 <span className="rounded-full bg-psurface px-2 py-0.5 text-[11px] font-bold tabular-nums text-pmuted">
                   {Math.min(index + 1, total)}/{total}
                 </span>
