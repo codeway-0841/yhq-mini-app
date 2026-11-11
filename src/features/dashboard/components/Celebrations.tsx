@@ -5,7 +5,6 @@ import DialogOverlay from '../../../shared/components/DialogOverlay'
 import { playSound } from '../../../shared/lib/sounds'
 import { Button } from '../../../shared/components/ui/button'
 import { BrilliantStreakModal } from '../../../shared/components/BrilliantStreakModal'
-import { BrilliantLeagueModal } from '../../../shared/components/BrilliantLeagueModal'
 
 // ══ Streak MILESTONE sahna — 7/14/30/60/100 kunga yetganda to'liq ekran ═════
 export const MILESTONES = [7, 14, 30, 60, 100] as const
@@ -93,16 +92,4 @@ export const LevelUpScene = memo(function LevelUpScene({ level, lang, onClose }:
       onClose={onClose}
     />
   )
-})
-
-// ── League Promotion sahna — yangi ligaga ko'tarilganda ─────────────────────
-export const LeaguePromotionScene = memo(function LeaguePromotionScene({
-  level = 2,
-  onClose,
-}: {
-  level?: number
-  lang?: 'uz' | 'ru'
-  onClose: () => void
-}) {
-  return <BrilliantLeagueModal leagueLevel={level} leagueState="promote" onClose={onClose} />
 })
