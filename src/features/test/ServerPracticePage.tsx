@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
-import { AlertTriangle, BarChart2, Bookmark, Check, ChevronLeft, RotateCcw, Square, Timer, Volume2 } from 'lucide-react'
+import { AlertTriangle, Bookmark, ChevronLeft, RotateCcw, Square, Timer, Volume2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import type {
   CreateTestSessionInput,
@@ -596,7 +596,6 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   const correctOption = snapshot.correctOptions[position]
   const answer = snapshot.answers[position]
   const answeredCount = snapshot.answers.filter(Boolean).length
-  const correctCount = snapshot.answers.filter((item) => item === 'correct').length
 
   const optionState = (optionId: string): 'correct' | 'wrong' | 'pending' | 'default' => {
     if (correctOption) {
@@ -608,50 +607,21 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   }
 
   if (finished) {
-    const ratio = snapshot.total > 0 ? correctCount / snapshot.total : 0
     return (
-      <div className="mx-auto flex min-h-[75svh] max-w-lg flex-col items-center justify-center gap-4 px-5 text-center">
-        <div className="size-36 flex items-center justify-center">
-          <BrilliantEndstateRive
-            kind="practice"
-            practiceTrigger={ratio >= 0.99 ? 'play100' : ratio >= 0.5 ? 'play50Plus' : 'playFailure'}
-            variant={getSubjectBrilliantColor(subjectId)}
-            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-            label="Practice Complete"
-            className="size-full"
-            fallback={<div className="grid size-16 place-items-center rounded-full bg-pwash text-pprimary"><Check size={30} /></div>}
-          />
-        </div>
-        <div>
-          <h1 className="font-display text-2xl font-bold text-pfg">
-            {ratio >= 0.99
-              ? (isRu ? 'Идеальный результат!' : 'Mukammal natija!')
-              : ratio >= 0.5
-                ? (isRu ? 'Отличная практика!' : "A'lo mashq!")
-                : (isRu ? 'Хорошая попытка!' : 'Yaxshi urinish!')}
-          </h1>
-          <p className="mt-2 text-pmuted">{correctCount} / {snapshot.total} {isRu ? 'правильных ответов' : 'to‘g‘ri javob'}</p>
-        </div>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Button variant="secondary" onClick={() => goBack(navigate)}><ChevronLeft size={17} />{isRu ? 'Назад' : 'Orqaga'}</Button>
-          <Button variant="secondary" onClick={() => setShowResults(true)}><BarChart2 size={17} />{isRu ? 'Результаты' : 'Natijalar'}</Button>
-          <Button onClick={() => void retryTest()}><RotateCcw size={17} />{isRu ? 'Ещё раз' : 'Qayta ishlash'}</Button>
-        </div>
-        {showResults && (
-          <ResultsModal
-            results={results}
-            threshold={v2Threshold(mode)}
-            hideVerdict={mode === 'exam'}
-            topicBreakdown={topicBreakdown}
-            earnedXp={earnedXpTotal}
-            earnedCoins={earnedCoinsTotal}
-            examPresetId={selector.type === 'exam' ? selector.presetId : null}
-            onRetry={() => { flushPendingStreak(); void retryTest() }}
-            onFinish={() => { setShowResults(false); flushPendingStreak(); goBack(navigate) }}
-            onGoToQuestion={goToResultQuestion}
-            onOpenReview={() => setShowReview(true)}
-          />
-        )}
+      <>
+        <ResultsModal
+          results={results}
+          threshold={v2Threshold(mode)}
+          hideVerdict={mode === 'exam'}
+          topicBreakdown={topicBreakdown}
+          earnedXp={earnedXpTotal}
+          earnedCoins={earnedCoinsTotal}
+          examPresetId={selector.type === 'exam' ? selector.presetId : null}
+          onRetry={() => { flushPendingStreak(); void retryTest() }}
+          onFinish={() => { flushPendingStreak(); goBack(navigate) }}
+          onGoToQuestion={goToResultQuestion}
+          onOpenReview={() => setShowReview(true)}
+        />
         {showReview && (
           <ExamReviewModal
             items={reviewItems}
@@ -659,7 +629,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
             onClose={() => setShowReview(false)}
           />
         )}
-      </div>
+      </>
     )
   }
 
@@ -685,7 +655,22 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
               )}
             </p>
           </div>
-          <Button variant="secondary" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
+          <div className="flex items-center gap-1.5">
+            {import.meta.env.DEV && (
+              <button
+                type="button"
+                onClick={() => {
+                  snapshot.answers = Array(snapshot.total).fill('correct')
+                  setFinished(true)
+                }}
+                className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
+                title="Dev: Test Yakuni (Demo)"
+              >
+                ⚡ Yakun
+              </button>
+            )}
+            <Button variant="secondary" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
+          </div>
         </div>
       </header>
 

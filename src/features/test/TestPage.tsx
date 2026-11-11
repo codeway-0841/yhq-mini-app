@@ -487,6 +487,28 @@ export default function TestPage() {
                 {wrongCount}/2 {tt('testErrors')}
               </span>
             )}
+            {import.meta.env.DEV && (
+              <button
+                type="button"
+                onClick={() => {
+                  const len = activeQuestions.length
+                  restoreState(
+                    Array(len).fill('correct'),
+                    Array(len).fill('a'),
+                    Array(len).fill('a'),
+                    30,
+                    10,
+                    [],
+                  )
+                  setIsFinished(true)
+                  setShowResults(true)
+                }}
+                className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
+                title="Dev: Test Yakuni (Demo)"
+              >
+                ⚡ Yakun
+              </button>
+            )}
           </div>
           <button type="button" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5">
             <MoreHorizontal />
