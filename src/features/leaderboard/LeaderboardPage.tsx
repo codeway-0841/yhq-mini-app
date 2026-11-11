@@ -27,6 +27,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { cn } from '../../shared/lib/cn'
 import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
+import { BrilliantLeagueModal } from '../../shared/components/BrilliantLeagueModal'
 
 /** 'YYYY-MM-DD' (hafta dushanbasi) → "10.08–16.08" (dushanba–yakshanba) */
 function fmtWeekRange(periodKey: string): string {
@@ -175,6 +176,7 @@ export default function LeaderboardPage() {
   const [seasons, setSeasons]               = useState<TournamentSeason[] | null>(() => leaderboardPageCaches.seasons.peek())
   const [error, setError]                   = useState(false)
   const [showHistory, setShowHistory]       = useState(false)
+  const [showLeagueModal, setShowLeagueModal] = useState(false)
 
   useEffect(() => {
     leaderboardPageCaches.daily.fetch(user?.id).then(setDailyEntries).catch(() => setError(true))
@@ -390,6 +392,19 @@ export default function LeaderboardPage() {
         onBack={() => goBack(navigate)}
         backLabel={tt('backWord')}
         className="mb-4"
+        actions={
+          <button
+            type="button"
+            onClick={() => {
+              playSound('achievement')
+              haptics.impact('light')
+              setShowLeagueModal(true)
+            }}
+            className="inline-flex items-center gap-1 rounded-full bg-psurface px-2.5 py-1 text-[11.5px] font-extrabold text-pprimary hover:opacity-80 transition-all cursor-pointer shadow-xs active:scale-95"
+          >
+            ⚡ {settings.language === 'ru' ? 'Повышение' : 'Liga'}
+          </button>
+        }
       >
         <div className="px-4 pb-2">
           <div className="flex gap-1.5 bg-psurface p-1 rounded-2xl shadow-xs max-w-md mx-auto">
@@ -428,29 +443,42 @@ export default function LeaderboardPage() {
         const isDemote = demoteN > 0 && n > 0 && rank > n - demoteN
         const tier = Math.max(1, Math.min(10, Math.ceil(((you?.score ?? 0) + 50) / 100)))
         return (
-          <div className="mb-4 flex items-center gap-3.5 rounded-2xl bg-pcard px-4 py-3 shadow-xs">
-            <div className="size-16 shrink-0 flex items-center justify-center">
-              <BrilliantExtrasRive
-                kind="league"
-                leagueLevel={tier}
-                leagueState={isPromo ? 'promote' : isDemote ? 'demote' : 'stagnant'}
-                label="Weekly League Badge"
-                className="size-full"
-                fallback={<Trophy size={28} className="text-pwarning" />}
-              />
+          <div className="mb-4 flex items-center justify-between gap-3.5 rounded-2xl bg-pcard px-4 py-3 shadow-xs">
+            <div className="flex items-center gap-3.5 min-w-0 flex-1">
+              <div className="size-16 shrink-0 flex items-center justify-center">
+                <BrilliantExtrasRive
+                  kind="league"
+                  leagueLevel={tier}
+                  leagueState={isPromo ? 'promote' : isDemote ? 'demote' : 'stagnant'}
+                  label="Weekly League Badge"
+                  className="size-full"
+                  fallback={<Trophy size={28} className="text-pwarning" />}
+                />
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-[14px] font-bold text-pfg">
+                  {settings.language === 'ru' ? `Лига · Уровень ${tier}` : `Liga · ${tier}-daraja`}
+                </p>
+                <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
+                  {isPromo
+                    ? (settings.language === 'ru' ? 'Вы в зоне повышения — так держать!' : 'Siz ko‘tarilish zonasidasiz — davom eting!')
+                    : isDemote
+                      ? (settings.language === 'ru' ? 'Решите больше тестов, чтобы сохранить лигу.' : 'Ligani saqlab qolish uchun yana test ishlang.')
+                      : (settings.language === 'ru' ? 'Стабильная позиция в текущей лиге.' : 'Joriy ligada barqaror o‘rindasiz.')}
+                </p>
+              </div>
             </div>
-            <div className="min-w-0 flex-1">
-              <p className="text-[14px] font-bold text-pfg">
-                {settings.language === 'ru' ? `Лига · Уровень ${tier}` : `Liga · ${tier}-daraja`}
-              </p>
-              <p className="text-[12px] text-pmuted mt-0.5 leading-snug">
-                {isPromo
-                  ? (settings.language === 'ru' ? 'Вы в зоне повышения — так держать!' : 'Siz ko‘tarilish zonasidasiz — davom eting!')
-                  : isDemote
-                    ? (settings.language === 'ru' ? 'Решите больше тестов, чтобы сохранить лигу.' : 'Ligani saqlab qolish uchun yana test ishlang.')
-                    : (settings.language === 'ru' ? 'Стабильная позиция в текущей лиге.' : 'Joriy ligada barqaror o‘rindasiz.')}
-              </p>
-            </div>
+            <button
+              type="button"
+              onClick={() => {
+                playSound('achievement')
+                haptics.impact('light')
+                setShowLeagueModal(true)
+              }}
+              className="shrink-0 inline-flex items-center gap-1 rounded-full bg-[#3557ff]/12 px-3 py-1.5 text-xs font-extrabold text-pprimary hover:bg-[#3557ff]/20 transition-all cursor-pointer active:scale-95"
+            >
+              ⚡ {settings.language === 'ru' ? 'Анимация' : 'Ko‘rish'}
+            </button>
           </div>
         )
       })()}
@@ -479,6 +507,29 @@ export default function LeaderboardPage() {
         </div>
       </div>
     </div>
+
+    {showLeagueModal && (() => {
+      const you = entriesList.find((e) => e.isYou)
+      const rank = you?.rank ?? 2
+      const tier = Math.max(1, Math.min(10, Math.ceil(((you?.score ?? 0) + 50) / 100)))
+      const rivals = entriesList.slice(0, 4).map((e) => ({
+        rank: e.rank,
+        name: e.isYou ? (settings.language === 'ru' ? 'Вы' : 'Siz') : e.name,
+        xp: e.score,
+        me: e.isYou,
+      }))
+      return (
+        <BrilliantLeagueModal
+          isOpen={showLeagueModal}
+          leagueLevel={tier}
+          leagueState="promote"
+          rank={rank}
+          score={you?.score ?? 590}
+          rivals={rivals.length > 0 ? rivals : undefined}
+          onClose={() => setShowLeagueModal(false)}
+        />
+      )
+    })()}
     </>
   )
 }
