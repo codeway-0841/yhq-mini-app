@@ -609,7 +609,6 @@ export default function LessonRunner({
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-[60]"
-          topSlot={header}
           overlaySlot={result.passed ? <Confetti count={28} /> : undefined}
           primaryLabel={primaryLabel}
           onPrimaryClick={handlePrimary}
@@ -622,6 +621,7 @@ export default function LessonRunner({
             subtitle={title}
             xpLabel="XP"
             dark={dark}
+            compact
             variant={colorVariant}
             lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
             isLevel={false}
@@ -690,9 +690,9 @@ export default function LessonRunner({
               {lesson
                 ? (!result.passed
                     ? tt('rusDarslikCheckNeedAll')
-                    : result.alreadyPassed && (result.xpEarned ?? 0) === 0
+                    : result.alreadyPassed && totalLessonXp === 0
                       ? tt('rusDarslikLessonAlreadyPassedHint')
-                      : (result.xpEarned ?? 0) > 0
+                      : totalLessonXp > 0
                         ? tt('rusDarslikLessonXpHint')
                         : null)
                 : (result.passed ? tt('rusDarslikQuizPassHint') : tt('rusDarslikCheckNeedAll'))}

@@ -116,6 +116,7 @@ export function BrilliantCompletionStage({
   showXp = true,
   earnedXp = 0,
   animateXpCount = true,
+  compact = false,
   fallback,
   onRiveEvent,
   children,
@@ -136,6 +137,7 @@ export function BrilliantCompletionStage({
   showXp?: boolean
   earnedXp?: number
   animateXpCount?: boolean
+  compact?: boolean
   fallback?: ReactNode
   onRiveEvent?: (name: string) => void
   children?: ReactNode
@@ -192,7 +194,12 @@ export function BrilliantCompletionStage({
       className="flex flex-col transition-transform duration-500 ease-in-out"
       style={{ transform: untranslated ? 'translateY(0%)' : 'translateY(30%)' }}
     >
-      <BrilliantRiveContainer className="aspect-square">
+      <BrilliantRiveContainer
+        className={cn(
+          'aspect-square',
+          compact && '!h-[clamp(172px,30dvh,272px)] !min-h-[172px] !p-3',
+        )}
+      >
         <BrilliantEndstateRive
           kind={mode}
           dark={dark}
@@ -210,7 +217,7 @@ export function BrilliantCompletionStage({
         />
       </BrilliantRiveContainer>
 
-      <BrilliantCopyContainer className="gap-3.5 pb-4">
+      <BrilliantCopyContainer className={compact ? '!min-h-0 gap-2.5 pb-2' : 'gap-3.5 pb-4'}>
         <div
           className="space-y-1 transition-opacity duration-500 ease-out"
           style={{ opacity: titleVisible ? 1 : 0 }}

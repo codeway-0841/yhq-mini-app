@@ -288,6 +288,7 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     fireEvent.click(within(runner).getByRole('button', { name: 'Yakunlash' }))
 
     const result = await screen.findByTestId('lesson-result')
+    expect(within(result).queryByText('Mavzu darsi')).not.toBeInTheDocument()
     expect(within(result).getByText('Dars yakunlandi!')).toBeInTheDocument()
     expect(within(result).getByText('100%')).toBeInTheDocument()
     expect(within(result).getByText('+75')).toBeInTheDocument()
