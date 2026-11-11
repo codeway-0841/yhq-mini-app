@@ -255,7 +255,7 @@ export default function LessonRunner({
       })
       if (graded.passed) {
         track('check_passed', { topic_id: topicId, correct: graded.correct, total: graded.total })
-        playSound('win')
+        playSound('endstate')
         haptics.success()
         if (!passedNotified.current) {
           passedNotified.current = true
@@ -298,7 +298,7 @@ export default function LessonRunner({
         }
       } else {
         track('check_failed', { topic_id: topicId, correct: graded.correct, total: graded.total })
-        playSound('error')
+        playSound('lesson-failed')
         haptics.error()
       }
       setPhase('feedback')
@@ -348,10 +348,10 @@ export default function LessonRunner({
       const nextCombo = graded.correct ? combo + 1 : 0
       setCombo(nextCombo)
       if (graded.correct) {
-        playSound(nextCombo >= 3 ? 'combo' : 'success')
+        playSound(nextCombo >= 3 ? 'xp-tally' : 'correct')
         haptics.success()
       } else {
-        playSound('error')
+        playSound('incorrect')
         haptics.error()
       }
       track('exercise_answer', {

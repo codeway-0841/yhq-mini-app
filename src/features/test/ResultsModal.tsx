@@ -78,18 +78,15 @@ export default function ResultsModal({
   }, [disqualifiedByCheat, total, percent])
 
   useEffect(() => {
-    if (disqualifiedByCheat) {
-      playSound('error')
+    if (disqualifiedByCheat || !passed) {
+      playSound('lesson-failed')
       haptics.error()
     } else if (percent === 100) {
-      playSound('win')
+      playSound('diagnostic-complete')
       haptics.achievement()
-    } else if (passed) {
-      playSound('win')
-      haptics.success()
     } else {
-      playSound('click')
-      haptics.complete()
+      playSound('endstate')
+      haptics.success()
     }
   }, [disqualifiedByCheat, passed, percent])
 
@@ -110,7 +107,7 @@ export default function ResultsModal({
       <BrilliantEndstateShell
         primaryLabel={primaryLabel}
         onPrimaryClick={() => {
-          playSound('click')
+          playSound('continue')
           haptics.impact('light')
           if (passed) {
             onFinish()
@@ -122,7 +119,7 @@ export default function ResultsModal({
         onSecondaryClick={
           secondaryLabel
             ? () => {
-                playSound('click')
+                playSound('hint')
                 haptics.impact('light')
                 onOpenReview?.()
               }

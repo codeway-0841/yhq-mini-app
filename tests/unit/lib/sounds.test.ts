@@ -1,16 +1,18 @@
 import { describe, it, expect } from 'vitest'
-import { playSound, type SoundKind } from '../../../src/shared/lib/sounds'
+import { playSound, resolveBrilliantSound, type SoundKind } from '../../../src/shared/lib/sounds'
+import { BRILLIANT_SOUNDS } from '../../../src/shared/lib/brilliantSounds'
 import { haptics } from '../../../src/platform/haptics'
 
-describe('shared/lib/sounds — ASMR audio synthesis', () => {
-  it('all sound kinds execute safely without throwing', () => {
-    const kinds: SoundKind[] = [
+describe('shared/lib/sounds — Brilliant.org 1:1 audio mapping', () => {
+  it('all legacy and Brilliant sound kinds resolve and execute safely without throwing', () => {
+    const legacyKinds: SoundKind[] = [
       'click',
       'success',
       'error',
       'coins',
       'chime',
       'win',
+      'achievement',
       'combo',
       'match',
       'toggle',
@@ -18,8 +20,13 @@ describe('shared/lib/sounds — ASMR audio synthesis', () => {
       'emote_whoosh',
       'emote_splash',
     ]
-    for (const k of kinds) {
+    for (const k of legacyKinds) {
+      expect(BRILLIANT_SOUNDS.some((s) => s.id === resolveBrilliantSound(k))).toBe(true)
       expect(() => playSound(k)).not.toThrow()
+    }
+    for (const s of BRILLIANT_SOUNDS) {
+      expect(resolveBrilliantSound(s.id)).toBe(s.id)
+      expect(() => playSound(s.id)).not.toThrow()
     }
   })
 })

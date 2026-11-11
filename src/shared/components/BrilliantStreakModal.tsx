@@ -163,7 +163,7 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
     const reduce = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
 
     if (view === 'streak') {
-      playSound('win')
+      playSound('endstate')
       haptics.impact('heavy')
       return
     }
@@ -173,14 +173,14 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
     setChargeStage(reduce ? 2 : 0)
     haptics.impact('light')
     if (reduce) {
-      playSound('win')
+      playSound('endstate')
       return
     }
     const timers = [
       window.setTimeout(() => setChargeStage(1), 350),
       window.setTimeout(() => {
         setChargeStage(2)
-        playSound(view === 'progress' && progressMode === 'playPoor' ? 'error' : 'win')
+        playSound(view === 'progress' && progressMode === 'playPoor' ? 'lesson-failed' : 'endstate')
         haptics.impact('heavy')
       }, 850),
     ]

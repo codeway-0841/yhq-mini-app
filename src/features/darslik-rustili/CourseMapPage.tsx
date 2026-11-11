@@ -327,7 +327,7 @@ export default function CourseMapPage({
       data-themed={initialBlockId ? 'true' : undefined}
       data-no-animation={noAnimation ? 'true' : undefined}
       style={{ '--cmap-ring': mapTheme.accent, '--cmap-deep': mapTheme.buttonShadow, '--cmap-accent': mapTheme.accent, '--cmap-button': mapTheme.buttonBg, '--cmap-button-shadow': mapTheme.buttonShadow, '--cmap-button-text': mapTheme.buttonText } as CSSProperties}
-      onClickCapture={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('click') }}
+      onClickCapture={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('highlight-node') }}
     >
       <header className="cmap-bar">
         <button

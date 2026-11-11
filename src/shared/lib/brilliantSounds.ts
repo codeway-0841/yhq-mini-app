@@ -112,6 +112,12 @@ export async function playBrilliantSound(id: BrilliantSoundId, volume = 0.85): P
     }
     audio.volume = Math.max(0, Math.min(1, volume))
     audio.currentTime = 0
+    const isJsdomNative =
+      typeof HTMLMediaElement !== 'undefined' &&
+      audio instanceof HTMLMediaElement &&
+      typeof navigator !== 'undefined' &&
+      /jsdom/i.test(navigator.userAgent)
+    if (isJsdomNative) return false
     const res = audio.play()
     if (res && typeof res.then === 'function') {
       await res

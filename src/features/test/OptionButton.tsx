@@ -13,6 +13,17 @@ export type Option = { id: string; text: string }
  * Holat 1px chegara + yumshoq semantik fon + lucide ikonka bilan beriladi;
  * "kalit" chipi (A/B/C/D) holat rangiga to'ladi.
  */
+const OPTION_SOUND_MAP: Record<string, Parameters<typeof playSound>[0]> = {
+  A: 'assessment-click-option-1',
+  '1': 'assessment-click-option-1',
+  B: 'assessment-click-option-2',
+  '2': 'assessment-click-option-2',
+  C: 'assessment-click-option-3',
+  '3': 'assessment-click-option-3',
+  D: 'assessment-click-option-4',
+  '4': 'assessment-click-option-4',
+}
+
 export default function OptionButton({ option, state, onSelect, answered, indexLabel }: {
   option: Option
   state: 'correct' | 'wrong' | 'pending' | 'default'
@@ -22,7 +33,8 @@ export default function OptionButton({ option, state, onSelect, answered, indexL
 }) {
   const handleClick = () => {
     if (!answered) {
-      playSound('click')
+      const sound = (indexLabel && OPTION_SOUND_MAP[indexLabel.trim().toUpperCase()]) || 'lightweight-choice'
+      playSound(sound)
       haptics.impact('light')
       onSelect()
     }

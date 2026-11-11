@@ -148,7 +148,7 @@ export default function AiTutorModal({
   const speakExplanation = useCallback(
     (text: string) => {
       speak(text, language)
-      playSound('click')
+      playSound('hint')
     },
     [language]
   )

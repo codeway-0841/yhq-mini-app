@@ -22,7 +22,7 @@ export default function Toggle({ checked, onChange = () => {}, size = 'md', labe
       aria-checked={!!checked}
       aria-label={label ?? 'Toggle'}
       onClick={() => {
-        playSound('toggle')
+        playSound(!checked ? 'toggle-on' : 'toggle-off')
         haptics.select()
         onChange(!checked)
       }}

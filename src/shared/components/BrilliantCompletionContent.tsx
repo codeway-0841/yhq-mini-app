@@ -278,7 +278,7 @@ export function BrilliantCompletionStage({
       } else if (name === 'reveal_xp') {
         setStatsVisible(true)
         setXpNonce((n) => n + 1)
-        playSound('chime')
+        playSound('xp-tally')
         haptics.notify('success')
       }
     },
@@ -639,7 +639,7 @@ export function BrilliantStreakStage({
         setCounterStage((s) => (s === 'initial' ? 'reveal' : s))
       } else if (name === 'number-scaling') {
         setCounterStage((s) => (s === 'reveal' ? 'scale-and-color' : s))
-        playSound('chime')
+        playSound('correct')
         haptics.impact('medium')
       } else if (name === 'copy-in') {
         setCounterStage('back-to-default')
@@ -738,7 +738,7 @@ export function BrilliantChargeStage({
           onRiveEvent={(name) => {
             onRiveEvent?.(name)
             if (name === 'PlayStreakChargeSound') {
-              playSound('coins')
+              playSound('endstate')
               haptics.notify('success')
             }
           }}
