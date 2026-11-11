@@ -38,7 +38,8 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { goBack } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
 import { haptics } from '../../platform/haptics'
-import { playSound } from '../../shared/lib/sounds'
+import { playBrilliantSound } from '../../shared/lib/brilliantSounds'
+import { BrilliantSoundLab } from './BrilliantSoundLab'
 import { renderMvpScreen, type MvpScreenId } from './RiveMvpScreens'
 import './brilliant-mvp.css'
 
@@ -584,7 +585,7 @@ export default function BrilliantMvpPage() {
   }, [dark])
 
   const openScreen = (id: MvpScreenId) => {
-    playSound('click')
+    void playBrilliantSound(id === 'lesson' || id === 'practice' ? 'start-lesson' : 'lightweight-choice')
     haptics.impact('light')
     setEventsLog([])
     setActiveId(id)
@@ -594,12 +595,14 @@ export default function BrilliantMvpPage() {
   }
 
   const closeScreen = () => {
+    void playBrilliantSound('skip')
     setActiveId(null)
     setDrawerOpen(false)
     setSearchParams({}, { replace: true })
   }
 
   const replay = () => {
+    void playBrilliantSound('continue')
     setEventsLog([])
     setNonce((n) => n + 1)
   }
@@ -691,8 +694,10 @@ export default function BrilliantMvpPage() {
           <button
             type="button"
             onClick={() => {
-              playSound('toggle')
-              setDark((d) => !d)
+              setDark((d) => {
+                void playBrilliantSound(!d ? 'toggle-on' : 'toggle-off')
+                return !d
+              })
             }}
             className="inline-flex h-9 items-center gap-1.5 rounded-full border border-plineStrong bg-psurface px-3 text-[12px] font-bold text-pfg cursor-pointer"
           >
@@ -729,6 +734,9 @@ export default function BrilliantMvpPage() {
             </Button>
           </div>
         </section>
+
+        {/* Brilliant 1:1 26 ta asl .mp3 tovush effektlari laboratoriyasi */}
+        <BrilliantSoundLab lang={lang} />
 
         {/* Holat bo'yicha filter tablar */}
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
@@ -1096,7 +1104,13 @@ export default function BrilliantMvpPage() {
             progressTrigger,
             leagueLevel,
             leagueState,
-            onEvent: (ev) => setEventsLog((prev) => [...prev.slice(-11), ev]),
+            onEvent: (ev) => {
+              setEventsLog((prev) => [...prev.slice(-11), ev])
+              if (ev === 'reveal_xp') void playBrilliantSound('xp-tally')
+              else if (ev === 'reveal_title') void playBrilliantSound('endstate')
+              else if (ev === 'play-streak-sound' || ev === 'play-streak-charge-sound') void playBrilliantSound('correct')
+              else if (ev === 'Play_Text and BG') void playBrilliantSound('hint')
+            },
             onClose: closeScreen,
             onReplay: replay,
           })}

@@ -16,7 +16,7 @@ import {
   BrilliantStreakStage,
 } from '../../shared/components/BrilliantCompletionContent'
 import { haptics } from '../../platform/haptics'
-import { playSound } from '../../shared/lib/sounds'
+import { playBrilliantSound } from '../../shared/lib/brilliantSounds'
 import { cn } from '../../shared/lib/cn'
 import {
   BrilliantCopyContainer,
@@ -103,7 +103,12 @@ function ContentCompletionMvp({
     <BrilliantEndstateShell
       primaryLabel={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
       onPrimaryClick={() => {
-        playSound('click')
+        void playBrilliantSound(
+          (mode === 'lesson' && lessonTrigger === 'kojiFail') ||
+            (mode === 'practice' && practiceTrigger === 'playFailure')
+            ? 'lesson-failed'
+            : 'continue',
+        )
         haptics.impact('light')
         onReplay()
       }}
@@ -163,7 +168,7 @@ function StreaksMvp({ ctx }: { ctx: MvpScreenContext }) {
       primaryLabel={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
       viewportClassName={bgGlow ? 'brilliant-streak-bg-glow' : undefined}
       onPrimaryClick={() => {
-        playSound('click')
+        void playBrilliantSound('continue')
         haptics.impact('light')
         onReplay()
       }}
@@ -189,7 +194,7 @@ function StreakChargeMvp({ ctx }: { ctx: MvpScreenContext }) {
     <BrilliantEndstateShell
       primaryLabel={lang === 'ru' ? 'Супер!' : "Zo'r!"}
       onPrimaryClick={() => {
-        playSound('click')
+        void playBrilliantSound('endstate')
         onReplay()
       }}
     >
@@ -216,12 +221,12 @@ function RateAppMvp({ ctx }: { ctx: MvpScreenContext }) {
       primaryLabel={lang === 'ru' ? 'Оценить сейчас' : 'Hozir baholash'}
       secondaryLabel={lang === 'ru' ? 'Не сейчас' : 'Keyinroq'}
       onPrimaryClick={() => {
-        playSound('success')
+        void playBrilliantSound('correct')
         haptics.notify('success')
         onReplay()
       }}
       onSecondaryClick={() => {
-        playSound('click')
+        void playBrilliantSound('skip')
         onClose()
       }}
     >
@@ -267,12 +272,12 @@ function PremiumLockMvp({ ctx }: { ctx: MvpScreenContext }) {
       primaryLabel={lang === 'ru' ? 'Попробовать Premium' : 'Premiumni yoqish'}
       secondaryLabel={lang === 'ru' ? 'Продолжить бесплатно' : 'Bepul davom etish'}
       onPrimaryClick={() => {
-        playSound('achievement')
+        void playBrilliantSound('endstate')
         haptics.impact('medium')
         onReplay()
       }}
       onSecondaryClick={() => {
-        playSound('click')
+        void playBrilliantSound('skip')
         onClose()
       }}
     >
@@ -287,7 +292,7 @@ function PremiumLockMvp({ ctx }: { ctx: MvpScreenContext }) {
             onEvent?.(name)
             if (name === 'Play_Text and BG') {
               setHeaderShown(true)
-              playSound('chime')
+              void playBrilliantSound('hint')
             }
           }}
         />
@@ -341,7 +346,13 @@ function ProgressCheckMvp({
       }
       secondaryLabel={isEndstate ? (lang === 'ru' ? 'Повторить ошибки' : 'Xatolarni ko‘rish') : undefined}
       onPrimaryClick={() => {
-        playSound('success')
+        void playBrilliantSound(
+          isEndstate && progressTrigger === 'playPoor'
+            ? 'lesson-failed'
+            : isEndstate
+              ? 'endstate'
+              : 'start-lesson',
+        )
         onReplay()
       }}
       onSecondaryClick={isEndstate ? onClose : undefined}
@@ -438,7 +449,7 @@ function LeaguesMvp({ ctx }: { ctx: MvpScreenContext }) {
     <BrilliantEndstateShell
       primaryLabel={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
       onPrimaryClick={() => {
-        playSound('achievement')
+        void playBrilliantSound('endstate')
         onReplay()
       }}
     >
@@ -615,7 +626,7 @@ function GenericEndstateMvp({
         onClose={onClose}
         primaryLabel={lang === 'ru' ? 'Разобрать ошибки' : 'Xatolarni tuzatish'}
         onPrimaryClick={() => {
-          playSound('click')
+          void playBrilliantSound('continue')
           onReplay()
         }}
       >
@@ -653,7 +664,7 @@ function GenericEndstateMvp({
         footerBgClassName="bg-transparent"
         primaryLabel={lang === 'ru' ? 'Начать обучение' : 'O‘rganishni boshlash'}
         onPrimaryClick={() => {
-          playSound('win')
+          void playBrilliantSound('endstate')
           haptics.notify('success')
           onReplay()
         }}
@@ -701,7 +712,7 @@ function GenericEndstateMvp({
         primaryLabel={lang === 'ru' ? 'Посмотреть карту' : 'Xaritani ko‘rish'}
         secondaryLabel={lang === 'ru' ? 'Позже' : 'Keyinroq'}
         onPrimaryClick={() => {
-          playSound('click')
+          void playBrilliantSound('continue')
           onReplay()
         }}
         onSecondaryClick={onClose}
@@ -769,10 +780,13 @@ function GenericEndstateMvp({
       primaryLabel={c.cta}
       secondaryLabel={lang === 'ru' ? 'Позже' : 'Keyinroq'}
       onPrimaryClick={() => {
-        playSound('click')
+        void playBrilliantSound('continue')
         onReplay()
       }}
-      onSecondaryClick={onClose}
+      onSecondaryClick={() => {
+        void playBrilliantSound('skip')
+        onClose()
+      }}
     >
       <BrilliantRiveContainer className="aspect-square">
         {screenId === 'jump-back-in' ? (
