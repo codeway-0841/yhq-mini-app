@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, type CSSProperties, type ReactNode } from 'react'
-import { Zap } from 'lucide-react'
+import { Star } from 'lucide-react'
 import {
   BrilliantEndstateRive,
   type BrilliantLessonTrigger,
@@ -68,6 +68,77 @@ export function AnimatedXpCounter({
   )
 }
 
+/** Sonni 0 dan target ga silliq sanaydi (Brilliant AnimatedCounter) */
+export function AnimatedNumber({
+  active,
+  end,
+  duration = 650,
+  delay = 0,
+  prefix = '',
+  suffix = '',
+  className,
+}: {
+  active: boolean
+  end: number
+  duration?: number
+  delay?: number
+  prefix?: string
+  suffix?: string
+  className?: string
+}) {
+  const [val, setVal] = useState(0)
+  const [pulsing, setPulsing] = useState(false)
+
+  useEffect(() => {
+    if (!active) {
+      setVal(0)
+      setPulsing(false)
+      return
+    }
+    if (prefersReducedMotion()) {
+      setVal(end)
+      setPulsing(false)
+      return
+    }
+    let raf = 0
+    let startTs: number | null = null
+    let timeoutId: ReturnType<typeof setTimeout> | null = null
+    setPulsing(false)
+
+    const startAnimation = () => {
+      const tick = (ts: number) => {
+        if (startTs === null) startTs = ts
+        const p = Math.min(1, (ts - startTs) / duration)
+        setVal(Math.round(end * p))
+        if (p < 1) {
+          raf = requestAnimationFrame(tick)
+        } else {
+          setVal(end)
+          setPulsing(true)
+        }
+      }
+      raf = requestAnimationFrame(tick)
+    }
+
+    if (delay > 0) {
+      timeoutId = setTimeout(startAnimation, delay)
+    } else {
+      startAnimation()
+    }
+
+    return () => {
+      if (raf) cancelAnimationFrame(raf)
+      if (timeoutId) clearTimeout(timeoutId)
+    }
+  }, [active, end, duration, delay])
+
+  return (
+    <span className={cn('tabular-nums', pulsing && 'brilliant-xp-pulse', className)}>
+      {prefix}{val}{suffix}
+    </span>
+  )
+}
+
 function BoltSvg({ variant }: { variant: 'streak' | 'charge' }) {
   if (variant === 'charge') {
     return (
@@ -113,6 +184,7 @@ export function BrilliantCompletionStage({
   levelNumber = 1,
   skillCheckMastered = false,
   practiceTrigger = 'play100',
+  practiceStats,
   showXp = true,
   earnedXp = 0,
   animateXpCount = true,
@@ -134,6 +206,13 @@ export function BrilliantCompletionStage({
   levelNumber?: number
   skillCheckMastered?: boolean
   practiceTrigger?: BrilliantPracticeTrigger
+  practiceStats?: {
+    correct: number
+    wrong?: number
+    total: number
+    percent: number
+    isRu?: boolean
+  }
   showXp?: boolean
   earnedXp?: number
   animateXpCount?: boolean
@@ -145,29 +224,25 @@ export function BrilliantCompletionStage({
   const reduced = prefersReducedMotion()
   const [untranslated, setUntranslated] = useState(reduced)
   const [titleVisible, setTitleVisible] = useState(reduced)
-  const [xpVisible, setXpVisible] = useState(reduced && showXp)
+  const [statsVisible, setStatsVisible] = useState(reduced)
   const [xpNonce, setXpNonce] = useState(reduced && showXp ? 1 : 0)
 
   useEffect(() => {
     if (prefersReducedMotion()) {
       setUntranslated(true)
       setTitleVisible(true)
-      if (showXp) {
-        setXpVisible(true)
-        setXpNonce((n) => n + 1)
-      }
+      setStatsVisible(true)
+      if (showXp) setXpNonce((n) => n + 1)
       return
     }
     setUntranslated(false)
     setTitleVisible(false)
-    setXpVisible(false)
+    setStatsVisible(false)
     const fallbackTimer = setTimeout(() => {
       setUntranslated(true)
       setTitleVisible(true)
-      if (showXp) {
-        setXpVisible(true)
-        setXpNonce((n) => n + 1)
-      }
+      setStatsVisible(true)
+      if (showXp) setXpNonce((n) => n + 1)
     }, 3200)
     return () => clearTimeout(fallbackTimer)
   }, [nonce, mode, variant, lessonTrigger, isLevel, skillCheckMastered, practiceTrigger, showXp])
@@ -179,14 +254,14 @@ export function BrilliantCompletionStage({
         setUntranslated(true)
       } else if (name === 'reveal_title') {
         setTitleVisible(true)
-      } else if (name === 'reveal_xp' && showXp) {
-        setXpVisible(true)
+      } else if (name === 'reveal_xp') {
+        setStatsVisible(true)
         setXpNonce((n) => n + 1)
         playSound('chime')
         haptics.notify('success')
       }
     },
-    [showXp, onRiveEvent],
+    [onRiveEvent],
   )
 
   return (
@@ -233,13 +308,16 @@ export function BrilliantCompletionStage({
           )}
         </div>
 
-        {showXp && (
+        {(showXp || practiceStats) && (
           <div
-            className="relative flex w-full max-w-[301px] flex-col items-center gap-0.5 py-2 transition-opacity duration-500 ease-out"
-            style={{ opacity: xpVisible ? 1 : 0 }}
+            className="relative flex w-full max-w-[360px] flex-col items-center gap-2 py-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            style={{
+              opacity: statsVisible ? 1 : 0,
+              transform: statsVisible ? 'translateY(0)' : 'translateY(28px)',
+            }}
           >
             {/* MAIN_xp-starburst (Brilliant exact 226x174px) */}
-            {xpVisible && (
+            {statsVisible && (
               <div
                 className="pointer-events-none absolute left-1/2 -top-6 h-[174px] w-[226px] -translate-x-1/2"
                 aria-hidden="true"
@@ -255,25 +333,104 @@ export function BrilliantCompletionStage({
             )}
 
             <span className="relative z-10 text-[12px] font-bold uppercase tracking-wider text-pmuted">
-              {xpLabel}
+              {practiceStats
+                ? showXp && earnedXp > 0
+                  ? xpLabel
+                  : practiceStats.isRu
+                    ? 'Общий результат'
+                    : 'Yakuniy natija'
+                : xpLabel}
             </span>
+
             <div className="relative z-10 inline-flex items-center justify-center">
-              {animateXpCount ? (
-                <AnimatedXpCounter active={xpVisible} end={earnedXp} />
+              {practiceStats ? (
+                showXp && earnedXp > 0 ? (
+                  <div className="inline-flex items-center justify-center">
+                    {animateXpCount ? (
+                      <AnimatedXpCounter active={statsVisible} end={earnedXp} />
+                    ) : (
+                      <span
+                        className={cn(
+                          'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
+                          statsVisible && 'brilliant-xp-pulse',
+                        )}
+                      >
+                        +{earnedXp}
+                      </span>
+                    )}
+                    <span className="ml-2 inline-flex items-center text-[#f6b31f]">
+                      <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                    </span>
+                  </div>
+                ) : (
+                  <div className="inline-flex items-baseline justify-center gap-1.5">
+                    <span className="text-[40px] sm:text-[44px] leading-none font-black tracking-tight text-pfg tabular-nums">
+                      <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" />
+                    </span>
+                    <span className="ml-2 inline-flex items-center text-[#f6b31f]">
+                      <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                    </span>
+                  </div>
+                )
               ) : (
-                <span
-                  className={cn(
-                    'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
-                    xpVisible && 'brilliant-xp-pulse',
+                <>
+                  {animateXpCount ? (
+                    <AnimatedXpCounter active={statsVisible} end={earnedXp} />
+                  ) : (
+                    <span
+                      className={cn(
+                        'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
+                        statsVisible && 'brilliant-xp-pulse',
+                      )}
+                    >
+                      +{earnedXp}
+                    </span>
                   )}
-                >
-                  +{earnedXp}
-                </span>
+                  <span className="ml-2 inline-flex items-center text-[#f6b31f]">
+                    <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                  </span>
+                </>
               )}
-              <span className="ml-1.5 inline-flex items-center text-[#29cc57]">
-                <Zap size={24} className="fill-[#29cc57]" />
-              </span>
             </div>
+
+            {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika bloki */}
+            {practiceStats && (
+              <div className="relative z-10 mt-1.5 flex w-full items-stretch justify-center gap-2 sm:gap-2.5">
+                {/* To'g'ri (Green) */}
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-[#29cc57]/10 px-2.5 py-2.5 border border-[#29cc57]/25 shadow-sm">
+                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-[#29cc57] tabular-nums">
+                    <AnimatedNumber active={statsVisible} end={practiceStats.correct} delay={100} />
+                  </span>
+                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                    {practiceStats.isRu ? 'верно' : 'to‘g‘ri'}
+                  </span>
+                </div>
+
+                {/* Xato (Red) */}
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pdanger/10 px-2.5 py-2.5 border border-pdanger/25 shadow-sm">
+                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-pdanger tabular-nums">
+                    <AnimatedNumber
+                      active={statsVisible}
+                      end={practiceStats.wrong ?? Math.max(0, practiceStats.total - practiceStats.correct)}
+                      delay={180}
+                    />
+                  </span>
+                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                    {practiceStats.isRu ? 'ошибок' : 'xato'}
+                  </span>
+                </div>
+
+                {/* Natija / Foiz (Surface) */}
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-2.5 border border-pline shadow-sm">
+                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-pfg tabular-nums">
+                    <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" delay={260} />
+                  </span>
+                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                    {practiceStats.isRu ? 'результат' : 'natija'}
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
         )}
 

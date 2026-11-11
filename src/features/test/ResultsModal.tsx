@@ -142,15 +142,14 @@ export default function ResultsModal({
           practiceTrigger={practiceTrigger}
           showXp={allowXp}
           earnedXp={actualEarnedXp}
+          practiceStats={{
+            correct,
+            wrong,
+            total,
+            percent,
+            isRu,
+          }}
         >
-          {/* Toza Brilliant uslubidagi natija chipi */}
-          <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-psurface px-4 py-1.5 text-[14px] font-bold text-pfg border border-pline">
-            <span className="font-black text-psuccess">{correct}</span>
-            <span className="font-medium text-pmuted">/ {total} {isRu ? 'правильно' : 'to‘g‘ri'}</span>
-            <span className="text-pmuted">•</span>
-            <span className="tabular-nums font-black text-pfg">{percent}%</span>
-          </div>
-
           {disqualifiedByCheat && (
             <div className="mt-3 rounded-2xl bg-pcard p-3 text-center text-xs font-semibold text-pdanger ring-1 ring-[rgb(var(--p-danger-rgb)/0.4)]">
               {tt('antiCheatDisqualifiedTitle')}

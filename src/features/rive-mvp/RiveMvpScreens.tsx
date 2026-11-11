@@ -120,23 +120,21 @@ function ContentCompletionMvp({
         levelNumber={3}
         skillCheckMastered={lessonMode === 'mastered'}
         practiceTrigger={practiceTrigger}
+        practiceStats={
+          mode === 'practice'
+            ? {
+                correct: practiceTrigger === 'play100' ? 20 : practiceTrigger === 'play50Plus' ? 16 : 7,
+                wrong: practiceTrigger === 'play100' ? 0 : practiceTrigger === 'play50Plus' ? 4 : 13,
+                total: 20,
+                percent: practiceTrigger === 'play100' ? 100 : practiceTrigger === 'play50Plus' ? 80 : 35,
+                isRu: lang === 'ru',
+              }
+            : undefined
+        }
         showXp={allowXp}
         earnedXp={earnedXp}
         onRiveEvent={onEvent}
-      >
-        {mode === 'practice' && (
-          <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-psurface px-4 py-1.5 text-[14px] font-bold text-pfg border border-pline">
-            <span className="font-black text-psuccess">
-              {practiceTrigger === 'play100' ? 20 : practiceTrigger === 'play50Plus' ? 16 : 7}
-            </span>
-            <span className="font-medium text-pmuted">/ 20 {lang === 'ru' ? 'правильно' : 'to‘g‘ri'}</span>
-            <span className="text-pmuted">•</span>
-            <span className="tabular-nums font-black text-pfg">
-              {practiceTrigger === 'play100' ? 100 : practiceTrigger === 'play50Plus' ? 80 : 35}%
-            </span>
-          </div>
-        )}
-      </BrilliantCompletionStage>
+      />
     </BrilliantEndstateShell>
   )
 }
