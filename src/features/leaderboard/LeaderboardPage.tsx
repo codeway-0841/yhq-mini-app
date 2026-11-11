@@ -27,7 +27,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { cn } from '../../shared/lib/cn'
 import { BrilliantExtrasRive } from '../../shared/components/BrilliantExtrasRive'
-import { BrilliantLeagueModal } from '../../shared/components/BrilliantLeagueModal'
+import { BrilliantLeagueModal, getLeagueTier } from '../../shared/components/BrilliantLeagueModal'
 
 /** 'YYYY-MM-DD' (hafta dushanbasi) → "10.08–16.08" (dushanba–yakshanba) */
 function fmtWeekRange(periodKey: string): string {
@@ -511,18 +511,23 @@ export default function LeaderboardPage() {
     {showLeagueModal && (() => {
       const you = entriesList.find((e) => e.isYou)
       const rank = you?.rank ?? 2
-      const tier = Math.max(1, Math.min(10, Math.ceil(((you?.score ?? 0) + 50) / 100)))
+      const currentTierNum = Math.max(1, Math.min(10, Math.ceil(((you?.score ?? 0) + 50) / 100)))
+      const targetTierNum = Math.min(10, currentTierNum === 1 ? 2 : currentTierNum)
+      const fromTierNum = Math.max(1, targetTierNum - 1)
+      const isRu = settings.language === 'ru'
       const rivals = entriesList.slice(0, 4).map((e) => ({
         rank: e.rank,
-        name: e.isYou ? (settings.language === 'ru' ? 'Вы' : 'Siz') : e.name,
+        name: e.isYou ? (isRu ? 'Вы' : 'Siz') : e.name,
         xp: e.score,
         me: e.isYou,
       }))
       return (
         <BrilliantLeagueModal
           isOpen={showLeagueModal}
-          leagueLevel={tier}
+          leagueLevel={targetTierNum}
           leagueState="promote"
+          fromLeagueName={getLeagueTier(fromTierNum, isRu ? 'ru' : 'uz').name}
+          toLeagueName={getLeagueTier(targetTierNum, isRu ? 'ru' : 'uz').name}
           rank={rank}
           score={you?.score ?? 590}
           rivals={rivals.length > 0 ? rivals : undefined}

@@ -26,6 +26,7 @@ import {
 } from './BrilliantEndstateShell'
 import { MvpRiveStage } from './MvpRiveStage'
 import { renderExtraMvpScreen, type ExtraMvpScreenId } from './ExtraBrilliantScreens'
+import { BrilliantLeagueModal } from '../../shared/components/BrilliantLeagueModal'
 
 export type MvpScreenId =
   | 'lesson'
@@ -406,116 +407,20 @@ function ProgressCheckMvp({
   )
 }
 
-/** 9. LeaguesScreen (36qja4cbbolyk.js — 190px badge over radial glow + 1s slide-up leaderboard) */
+/** 9. LeaguesScreen (36qja4cbbolyk.js — Brilliant 1:1 League Promotion Modal) */
 function LeaguesMvp({ ctx }: { ctx: MvpScreenContext }) {
-  const { lang, dark, nonce, leagueLevel, leagueState, onReplay } = ctx
-  const [slidUp, setSlidUp] = useState(false)
-  const [boardShown, setBoardShown] = useState(false)
-
-  useEffect(() => {
-    setSlidUp(false)
-    setBoardShown(false)
-    const t1 = setTimeout(() => setSlidUp(true), 1000)
-    const t2 = setTimeout(() => setBoardShown(true), 1150)
-    return () => {
-      clearTimeout(t1)
-      clearTimeout(t2)
-    }
-  }, [nonce, leagueLevel, leagueState])
-
-  const leagueNamesUz = ['Bronza', 'Kumush', 'Oltin', 'Sapfir', 'Zumrad', 'Rubin', 'Ametist', 'Marvarid', 'Obsidian', 'Olmos']
-  const leagueNamesRu = ['Бронза', 'Серебро', 'Золото', 'Сапфир', 'Изумруд', 'Рубин', 'Аметист', 'Жемчуг', 'Обсидиан', 'Алмаз']
-  const tierName = (lang === 'ru' ? leagueNamesRu : leagueNamesUz)[Math.max(0, Math.min(9, leagueLevel - 1))]
-
-  const rows = [
-    { rank: 1, name: 'Azizbek T.', xp: 640, me: false },
-    { rank: 2, name: lang === 'ru' ? 'Вы' : 'Siz', xp: 590, me: true },
-    { rank: 3, name: 'Madina K.', xp: 520, me: false },
-    { rank: 4, name: 'Sardor R.', xp: 475, me: false },
-  ]
-
+  const { leagueLevel, leagueState, onReplay, onClose } = ctx
   return (
-    <BrilliantEndstateShell
-      primaryLabel={lang === 'ru' ? 'Продолжить' : 'Davom etish'}
-      onPrimaryClick={() => {
-        playSound('achievement')
+    <BrilliantLeagueModal
+      leagueLevel={leagueLevel}
+      leagueState={leagueState}
+      rank={2}
+      score={590}
+      onClose={() => {
         onReplay()
+        onClose()
       }}
-    >
-      <div
-        className="flex flex-col items-center transition-transform duration-700 ease-out"
-        style={{ transform: slidUp ? 'translateY(0%)' : 'translateY(28%)' }}
-      >
-        {/* Radial glow + absolute top badge */}
-        <div className="relative mx-auto flex w-full max-w-[536px] flex-col items-center px-4">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-[120px] left-1/2 h-[340px] w-[520px] -translate-x-1/2 rounded-full opacity-55"
-            style={{
-              background:
-                leagueState === 'demote'
-                  ? 'radial-gradient(circle, rgba(148,163,184,0.22) 0%, transparent 68%)'
-                  : 'radial-gradient(circle, rgba(246,179,31,0.28) 0%, rgba(53,87,255,0.12) 45%, transparent 72%)',
-            }}
-          />
-          <div className="relative z-10 mt-6 size-[190px] lg:size-[250px]">
-            <BrilliantExtrasRive
-              kind="league"
-              leagueLevel={leagueLevel}
-              leagueState={leagueState}
-              dark={dark}
-              nonce={nonce}
-              label={`League ${tierName}`}
-              className="size-full"
-            />
-          </div>
-        </div>
-
-        {/* Leaderboard Fade in 800ms */}
-        <div
-          className="mt-4 w-full max-w-[393px] px-4 space-y-3 transition-opacity duration-700 ease-out"
-          style={{ opacity: boardShown ? 1 : 0 }}
-        >
-          <div className="text-center space-y-1">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-psurface px-3 py-1 text-[12px] font-bold text-pfg">
-              <Trophy size={13} className="text-[#f6b31f]" />
-              {tierName} {lang === 'ru' ? 'лига' : 'ligasi'} ({leagueLevel}/10)
-            </span>
-            <h1 className="text-[22px] font-extrabold text-pfg">
-              {leagueState === 'promote'
-                ? lang === 'ru'
-                  ? 'Повышение в лиге!'
-                  : 'Yangi ligaga ko‘tarildingiz!'
-                : leagueState === 'demote'
-                  ? lang === 'ru'
-                    ? 'Лига обновилась'
-                    : 'Liga yangilandi'
-                  : lang === 'ru'
-                    ? 'Вы удержались в лиге!'
-                    : 'Ligada o‘rningizni saqladingiz!'}
-            </h1>
-          </div>
-
-          <div className="bg-pcard rounded-2xl overflow-hidden divide-y divide-pline">
-            {rows.map((r) => (
-              <div
-                key={r.rank}
-                className={cn(
-                  'flex items-center justify-between px-4 py-2.5 text-[14px]',
-                  r.me && 'bg-[#3557ff]/12 font-bold text-pfg',
-                )}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="w-5 text-center font-extrabold text-pmuted">{r.rank}</span>
-                  <span>{r.name}</span>
-                </div>
-                <span className="font-bold text-[#29cc57] tabular-nums">{r.xp} XP</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </BrilliantEndstateShell>
+    />
   )
 }
 
