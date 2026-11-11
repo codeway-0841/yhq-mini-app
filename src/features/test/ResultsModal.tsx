@@ -4,7 +4,6 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
-import Confetti from '../../shared/components/Confetti'
 import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstateShell'
 import { BrilliantCompletionStage } from '../../shared/components/BrilliantCompletionContent'
 import { type BrilliantPracticeTrigger } from '../../shared/components/BrilliantEndstateRive'
@@ -94,8 +93,6 @@ export default function ResultsModal({
     }
   }, [disqualifiedByCheat, passed, percent])
 
-  const confettiCount = percent === 100 ? 45 : percent >= 95 ? 25 : 0
-
   const primaryLabel = passed
     ? (isRu ? 'Продолжить' : 'Davom etish')
     : (isRu ? 'Повторить' : 'Qayta urinish')
@@ -131,7 +128,6 @@ export default function ResultsModal({
               }
             : undefined
         }
-        overlaySlot={confettiCount > 0 && !disqualifiedByCheat ? <Confetti count={confettiCount} /> : undefined}
       >
         <BrilliantCompletionStage
           mode="practice"

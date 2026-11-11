@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState, type CSSProperties, type ReactNode } from 'react'
-import { Star } from 'lucide-react'
 import {
   BrilliantEndstateRive,
   type BrilliantLessonTrigger,
@@ -136,6 +135,28 @@ export function AnimatedNumber({
     <span className={cn('tabular-nums', pulsing && 'brilliant-xp-pulse', className)}>
       {prefix}{val}{suffix}
     </span>
+  )
+}
+
+/** Brilliant 1:1 4-qirrali oltin yulduzcha (Sparkle Star) */
+export function BrilliantSparkleStar({
+  size = 24,
+  className = 'text-[#f6b31f]',
+}: {
+  size?: number
+  className?: string
+}) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M12 2C12.5 7.5 16.5 11.5 22 12C16.5 12.5 12.5 16.5 12 22C11.5 16.5 7.5 12.5 2 12C7.5 11.5 11.5 7.5 12 2Z" />
+    </svg>
   )
 }
 
@@ -359,7 +380,7 @@ export function BrilliantCompletionStage({
                       </span>
                     )}
                     <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                      <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                      <BrilliantSparkleStar size={24} />
                     </span>
                   </div>
                 ) : (
@@ -368,7 +389,7 @@ export function BrilliantCompletionStage({
                       <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" />
                     </span>
                     <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                      <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                      <BrilliantSparkleStar size={24} />
                     </span>
                   </div>
                 )
@@ -387,45 +408,45 @@ export function BrilliantCompletionStage({
                     </span>
                   )}
                   <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                    <Star size={24} className="fill-[#f6b31f] text-[#f6b31f]" />
+                    <BrilliantSparkleStar size={24} />
                   </span>
                 </>
               )}
             </div>
 
-            {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika bloki */}
+            {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika bloki (Bordersiz, toza Brilliant dizayn) */}
             {practiceStats && (
               <div className="relative z-10 mt-1.5 flex w-full items-stretch justify-center gap-2 sm:gap-2.5">
                 {/* To'g'ri (Green) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-[#29cc57]/10 px-2.5 py-2.5 border border-[#29cc57]/25 shadow-sm">
-                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-[#29cc57] tabular-nums">
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-[#29cc57]/12 px-2.5 py-3">
+                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-[#29cc57] tabular-nums">
                     <AnimatedNumber active={statsVisible} end={practiceStats.correct} delay={100} />
                   </span>
-                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'верно' : 'to‘g‘ri'}
                   </span>
                 </div>
 
                 {/* Xato (Red) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pdanger/10 px-2.5 py-2.5 border border-pdanger/25 shadow-sm">
-                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-pdanger tabular-nums">
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pdanger/12 px-2.5 py-3">
+                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-pdanger tabular-nums">
                     <AnimatedNumber
                       active={statsVisible}
                       end={practiceStats.wrong ?? Math.max(0, practiceStats.total - practiceStats.correct)}
                       delay={180}
                     />
                   </span>
-                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'ошибок' : 'xato'}
                   </span>
                 </div>
 
                 {/* Natija / Foiz (Surface) */}
-                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-2.5 border border-pline shadow-sm">
-                  <span className="text-[20px] sm:text-[22px] font-black leading-none text-pfg tabular-nums">
+                <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-psurface px-2.5 py-3">
+                  <span className="text-[22px] sm:text-[24px] font-black leading-none text-pfg tabular-nums">
                     <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" delay={260} />
                   </span>
-                  <span className="mt-1 text-[11px] font-bold uppercase tracking-wider text-pmuted">
+                  <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-pmuted">
                     {practiceStats.isRu ? 'результат' : 'natija'}
                   </span>
                 </div>

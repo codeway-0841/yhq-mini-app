@@ -3,7 +3,6 @@ import {
   CheckCircle2, ChevronDown, ChevronLeft, Lock, RefreshCw, X, XCircle,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
-import Confetti from '../../shared/components/Confetti'
 import ModalShell from '../../shared/components/ModalShell'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useDailyStore, doneKeyOf, todayStr } from '../../shared/store/useDailyStore'
@@ -629,7 +628,6 @@ export default function LessonRunner({
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-[60]"
-          overlaySlot={result.passed ? <Confetti count={28} /> : undefined}
           primaryLabel={primaryLabel}
           onPrimaryClick={handlePrimary}
           secondaryLabel={secondaryLabel}
