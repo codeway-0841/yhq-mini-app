@@ -7,6 +7,7 @@ import SettingsIcon from '../../shared/components/SettingsIcon'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { getSubjectBrilliantColor } from '../../shared/config/subjects'
 import { questionKey } from '../../../shared/subjects'
 import { resolveExamMode } from '../../../shared/exam-presets'
 import { buildTopicBreakdown } from './topic-diagnosis'
@@ -438,9 +439,10 @@ export default function TestPage() {
         <div className="flex flex-col items-center justify-center min-h-[60vh] text-pmuted gap-2">
           <div className="size-36 flex items-center justify-center">
             <BrilliantEndstateRive
-              kind="progress-intro"
+              kind={examPreset ? 'assessment-intro' : 'lesson-loader'}
+              variant={getSubjectBrilliantColor(subjectId)}
               dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-              label="Preparing Test"
+              label={examPreset ? 'Assessment Intro' : 'Preparing Test'}
               className="size-full"
               fallback={<div className="w-8 h-8 rounded-full border-2 border-pprimary border-t-transparent animate-spin" />}
             />

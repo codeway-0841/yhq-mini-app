@@ -17,7 +17,8 @@ import { Button } from '../../shared/components/ui/button'
 import { SpecCard, SpecRow, SpecList } from '../../shared/components/ui/spec'
 import DonutChart from './DonutChart'
 import CertificateModal from './CertificateModal'
-import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { BrilliantEndstateRive, type BrilliantPracticeTrigger } from '../../shared/components/BrilliantEndstateRive'
+import { getSubjectBrilliantColor } from '../../shared/config/subjects'
 import { BrilliantStreakModal } from '../../shared/components/BrilliantStreakModal'
 import { drawResultCard, buildResultShareText } from './result-canvas'
 import { fetchAchievements, invalidateAchievementsCache } from '../../shared/lib/achievements-cache'
@@ -78,6 +79,14 @@ export default function ResultsModal({
   const pending    = results.filter((r) => r.status === 'pending').length
   const unanswered = results.filter((r) => r.status === 'unanswered' || r.status === 'pending').length
   const percent    = total > 0 ? Math.round((correct / total) * 100) : 0
+  const subjectId  = useSubjectStore((s) => s.subjectId)
+  const colorVariant = getSubjectBrilliantColor(subjectId)
+  const practiceTrigger: BrilliantPracticeTrigger =
+    disqualifiedByCheat || percent < 50
+      ? 'playFailure'
+      : percent === 100
+        ? 'play100'
+        : 'play50Plus'
 
   const isMilliySertifikat = examPresetId === 'milliy-sertifikat'
   const rashScore = isMilliySertifikat ? calculateRashScore(correct, total) : 0
@@ -264,25 +273,30 @@ export default function ResultsModal({
           </div>
         )}
 
-        <div className="mx-auto mb-1 size-36 sm:size-40">
-          {hideVerdict && !disqualifiedByCheat ? (
-            <BrilliantEndstateRive
-              kind="recommended-level"
-              variant={percent >= 80 ? 0 : percent >= 50 ? 1 : 4}
-              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-              label="Brilliant Recommended Level Result"
-              className="size-full"
-            />
-          ) : (
-            <BrilliantEndstateRive
-              kind="progress-endstate"
-              progressTrigger={disqualifiedByCheat || !passed ? 'playPoor' : percent === 100 ? 'playMastered' : 'playPassed'}
-              variant={disqualifiedByCheat || !passed ? 2 : percent === 100 ? 4 : 0}
-              dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-              label="Brilliant Progress Check Result"
-              className="size-full"
-            />
-          )}
+        <div className="mx-auto mb-1 size-36 sm:size-40 flex items-center justify-center">
+          <BrilliantEndstateRive
+            kind="practice"
+            practiceTrigger={practiceTrigger}
+            variant={colorVariant}
+            dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
+            label="Brilliant Practice Result"
+            className="size-full"
+            fallback={
+              <div className="grid size-16 place-items-center rounded-full bg-pwash text-pprimary">
+                <Award size={30} />
+              </div>
+            }
+          />
+        </div>
+
+        <div className="text-center mb-1">
+          <h2 className="text-[20px] font-extrabold text-pfg">
+            {practiceTrigger === 'play100'
+              ? (isRu ? 'Идеальный результат!' : 'Mukammal natija!')
+              : practiceTrigger === 'play50Plus'
+                ? (isRu ? 'Отличная практика!' : "A'lo mashq!")
+                : (isRu ? 'Хорошая попытка!' : 'Yaxshi urinish!')}
+          </h2>
         </div>
 
         <DonutChart correct={correct} total={total} threshold={threshold} hideVerdict={hideVerdict || disqualifiedByCheat}

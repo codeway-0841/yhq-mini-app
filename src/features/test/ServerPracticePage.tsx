@@ -25,6 +25,7 @@ import {
   type ServerTestSnapshot,
 } from '../../shared/store/useServerTestSessionStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
+import { getSubjectBrilliantColor } from '../../shared/config/subjects'
 import OptionButton from './OptionButton'
 import QuestionStrip from './QuestionStrip'
 import ResultsModal from './ResultsModal'
@@ -567,6 +568,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   })
 
   if (loading || !snapshot || !question) {
+    const isExamType = mode === 'exam' || selector.type === 'exam'
     return (
       <div className="flex min-h-[70svh] flex-col items-center justify-center gap-2 px-6 text-center text-pmuted">
         {error ? (
@@ -574,9 +576,10 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         ) : (
           <div className="size-36 flex items-center justify-center">
             <BrilliantEndstateRive
-              kind="warm-up"
+              kind={isExamType ? 'assessment-intro' : 'lesson-loader'}
+              variant={getSubjectBrilliantColor(subjectId)}
               dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
-              label="Warm Up"
+              label={isExamType ? 'Assessment Intro' : 'Test Loader'}
               className="size-full"
               fallback={<div className="size-9 animate-spin rounded-full border-2 border-pprimary border-t-transparent" />}
             />
@@ -612,7 +615,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           <BrilliantEndstateRive
             kind="practice"
             practiceTrigger={ratio >= 0.99 ? 'play100' : ratio >= 0.5 ? 'play50Plus' : 'playFailure'}
-            variant={ratio >= 0.5 ? 0 : 2}
+            variant={getSubjectBrilliantColor(subjectId)}
             dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
             label="Practice Complete"
             className="size-full"
@@ -620,7 +623,13 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           />
         </div>
         <div>
-          <h1 className="font-display text-2xl font-bold text-pfg">{isRu ? 'Тест завершён' : 'Test yakunlandi'}</h1>
+          <h1 className="font-display text-2xl font-bold text-pfg">
+            {ratio >= 0.99
+              ? (isRu ? 'Идеальный результат!' : 'Mukammal natija!')
+              : ratio >= 0.5
+                ? (isRu ? 'Отличная практика!' : "A'lo mashq!")
+                : (isRu ? 'Хорошая попытка!' : 'Yaxshi urinish!')}
+          </h1>
           <p className="mt-2 text-pmuted">{correctCount} / {snapshot.total} {isRu ? 'правильных ответов' : 'to‘g‘ri javob'}</p>
         </div>
         <div className="flex flex-wrap justify-center gap-3">

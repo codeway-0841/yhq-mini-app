@@ -64,6 +64,26 @@ const UI_MAP: Record<SubjectId, { icon: LucideIcon; color: string; colorDark: st
   adabiyot:   { icon: Feather,      color: '#a04870', colorDark: '#7f3858' },
 }
 
+/** Brilliant 0..5 color variant: 0=blue, 1=purple, 2=green, 3=orange, 4=red, 5=yellow */
+export const SUBJECT_BRILLIANT_COLOR: Record<SubjectId, number> = {
+  yhq: 2,
+  rustili: 0,
+  rusadabiyot: 1,
+  fizika: 3,
+  matematika: 1,
+  kimyo: 0,
+  ingliz: 3,
+  tarix: 4,
+  biologiya: 2,
+  geografiya: 2,
+  onatili: 0,
+  adabiyot: 4,
+}
+
+export function getSubjectBrilliantColor(id: string): number {
+  return (SUBJECT_BRILLIANT_COLOR as Record<string, number>)[id] ?? 0
+}
+
 export const SUBJECTS: SubjectConfig[] = (SUBJECT_BASES as readonly SubjectBase[]).map((s) => {
   const ui = UI_MAP[s.id as SubjectId] // Record<SubjectId,...> — compile-time'da kafolatlangan
   return {

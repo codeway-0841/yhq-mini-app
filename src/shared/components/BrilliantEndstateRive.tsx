@@ -29,6 +29,7 @@ export type BrilliantEndstateKind =
   | 'level-insertion'
   | 'koji-entrance'
   | 'icp-node'
+  | 'lesson-loader'
 
 export type BrilliantLessonTrigger = 'kojiGem' | 'kojiFlip' | 'kojiSpin' | 'koji360' | 'kojiFail'
 export type BrilliantPracticeTrigger = 'play100' | 'play50Plus' | 'playFailure'
@@ -43,6 +44,7 @@ const ASSESSMENT_INTRO_FILE = 'level-check-assessment-intro.1dfae46f.riv'
 const LEVEL_INSERTION_FILE = 'level-insertion-intro.fb376b71.riv'
 const LOHP_ENTRANCE_FILE = 'lohp_koji_entrance.344647d5.riv'
 const ICP_NODE_FILE = 'icp-node.add6a472.riv'
+const LESSON_LOADER_FILE = 'lesson_loader_apr_13_26.riv'
 
 const KIND = {
   streak:              { file: ENDSTATES_FILE,        artboard: 'MAIN_streak-endstate',       stateMachine: 'StreakEndstate',         viewModel: 'StreakEndstateVM' },
@@ -64,6 +66,7 @@ const KIND = {
   'level-insertion':   { file: LEVEL_INSERTION_FILE,  artboard: 'MAIN_LevelInsertionIntro',   stateMachine: 'LevelInsertionIntro',    viewModel: 'LevelInsertionIntroVM' },
   'koji-entrance':     { file: LOHP_ENTRANCE_FILE,    artboard: 'MAIN_KojiEntrance',          stateMachine: 'KojiEntrance',           viewModel: 'KojiEntranceVM' },
   'icp-node':          { file: ICP_NODE_FILE,         artboard: 'Gameboard Node',             stateMachine: 'ICPNode',                viewModel: 'ICPNodeVM' },
+  'lesson-loader':     { file: LESSON_LOADER_FILE,    artboard: 'MAIN_Lesson Loader',         stateMachine: 'LessonLoader',           viewModel: 'LessonLoaderVM' },
 } as const
 
 let wasmConfigured = false
@@ -359,6 +362,10 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setBool('skillCheckMastered', skillCheckMasteredRef.current)
             setNum('levelNumber', levelNumberRef.current)
             fire(lessonTriggerRef.current)
+          } else if (kind === 'lesson-loader') {
+            setBool('level', false)
+            setNum('color', variantRef.current)
+            fire('enter')
           } else if (kind === 'practice') {
             setNum('color', variantRef.current)
             fire(practiceTriggerRef.current)

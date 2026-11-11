@@ -290,9 +290,10 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     const result = await screen.findByTestId('lesson-result')
     expect(within(result).queryByText('Mavzu darsi')).not.toBeInTheDocument()
     expect(within(result).getByText('Dars yakunlandi!')).toBeInTheDocument()
-    expect(within(result).getByText('100%')).toBeInTheDocument()
+    expect(within(result).getByText('Jami XP')).toBeInTheDocument()
     expect(within(result).getByText('+75')).toBeInTheDocument()
-    expect(within(result).getByText('4')).toBeInTheDocument()
+    expect(within(result).queryByRole('button', { name: 'Qayta urinish' })).not.toBeInTheDocument()
+    expect(within(result).queryByRole('button', { name: 'Mavzuga qaytish' })).not.toBeInTheDocument()
     expect(onPassed).toHaveBeenCalledTimes(1)
     expect(api.submitDarslikCheck).toHaveBeenCalledWith('1:0', expect.objectContaining({
       q1: '1',
@@ -348,7 +349,8 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     await completeLesson(runner)
     const result = await screen.findByTestId('lesson-result')
     expect(within(result).getByText('Dars yakunlanmadi')).toBeInTheDocument()
-    expect(within(result).getByText('80%')).toBeInTheDocument()
+    expect(within(result).queryByRole('button', { name: 'Davom etish' })).not.toBeInTheDocument()
+    expect(within(result).queryByRole('button', { name: 'Mavzuga qaytish' })).not.toBeInTheDocument()
     expect(onPassed).not.toHaveBeenCalled()
     expect(analytics.track).toHaveBeenCalledWith('check_failed', expect.any(Object))
 
