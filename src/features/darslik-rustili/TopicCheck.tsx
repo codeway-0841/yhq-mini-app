@@ -10,6 +10,8 @@ interface TopicCheckProps {
   hasNext: boolean
   /** Server 403 qaytardi — progress eskirgan bo'lishi mumkin */
   onLocked?: () => void
+  /** Kontent yuklanib tayyor bo'lganda (Warm-up parda ochilishi uchun) */
+  onReady?: () => void
 }
 
 /**

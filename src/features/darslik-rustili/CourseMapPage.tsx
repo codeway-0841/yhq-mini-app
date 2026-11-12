@@ -18,6 +18,8 @@ import {
 } from '../../content/darslik-rustili'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
 import { BlockReader } from './BlockReader'
+import TopicCheck from './TopicCheck'
+import PracticeWarmUpLaunch from './PracticeWarmUpLaunch'
 import { CourseMapNodeArt } from './CourseMapNodeArt'
 import { lockedSectionsInBlock, nextSection, sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
@@ -72,6 +74,9 @@ export default function CourseMapPage({
   const [focus, setFocus] = useState<{ blockId: number; idx: number } | null>(null)
   const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(null)
   const [launch, setLaunch] = useState<{ origin: LaunchOrigin; reader: { blockId: number; idx: number; quiz?: boolean } } | null>(null)
+  const [warmUpLaunch, setWarmUpLaunch] = useState<{ blockId: number; idx: number; title: string } | null>(null)
+  const [practiceTopic, setPracticeTopic] = useState<{ blockId: number; idx: number; title: string } | null>(null)
+  const [practiceReady, setPracticeReady] = useState(false)
   const [openBlocks, setOpenBlocks] = useState<Set<number>>(
     () => new Set(DARSLIK_BLOCKS.map((block) => block.id)),
   )
@@ -291,17 +296,35 @@ export default function CourseMapPage({
     setLaunch({ origin, reader: target })
   }, [active.blockId, active.idx, activeCheck, activeLocked, outline.length, initialBlockId, noAnimation])
 
+  const startPracticeWarmUp = useCallback(() => {
+    playSound('start-lesson')
+    track('rus_darslik_map_open_practice', { block_id: active.blockId, section_idx: active.idx })
+    const targetIdx = activeCheck ? outline.length - 1 : active.idx
+    const target = {
+      blockId: active.blockId,
+      idx: targetIdx,
+      title: activeTitle,
+    }
+    setWarmUpLaunch(target)
+    setPracticeTopic(target)
+    setPracticeReady(false)
+  }, [active.blockId, active.idx, activeCheck, outline.length, activeTitle])
+
   /* Ochilmagan mavzuda tugma joriy mavzuga olib boradi (ilovadagi “Jump ahead”). */
   const startCta = useCallback(() => {
-    if (!activeLocked) {
-      openReader(activeDone || activeCheck)
+    if (activeLocked) {
+      const current = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
+      if (current && typeof current.scrollIntoView === 'function') {
+        current.scrollIntoView({ block: 'center', behavior: 'smooth' })
+      }
       return
     }
-    const current = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
-    if (current && typeof current.scrollIntoView === 'function') {
-      current.scrollIntoView({ block: 'center', behavior: 'smooth' })
+    if (activeDone || activeCheck) {
+      startPracticeWarmUp()
+      return
     }
-  }, [activeLocked, activeDone, activeCheck, currentBlock.id, currentIdx, openReader])
+    openReader(activeCheck)
+  }, [activeLocked, activeDone, activeCheck, currentBlock.id, currentIdx, startPracticeWarmUp, openReader])
 
   const advanceReader = useCallback(() => {
     if (!reader) return
@@ -515,6 +538,39 @@ export default function CourseMapPage({
       </button>
 
       {launch && <LessonLaunch origin={launch.origin} lang={lang} accent={mapTheme.accent} onReveal={() => setReader(launch.reader)} onFinish={() => setLaunch(null)} onCancel={() => { setLaunch(null); setReader(null) }} />}
+
+      {warmUpLaunch && (
+        <PracticeWarmUpLaunch
+          lang={lang}
+          colorVariant={nodeColor}
+          isReady={practiceReady}
+          onReveal={() => {}}
+          onFinish={() => setWarmUpLaunch(null)}
+          onCancel={() => {
+            setWarmUpLaunch(null)
+            setPracticeTopic(null)
+            setPracticeReady(false)
+          }}
+        />
+      )}
+
+      {practiceTopic && (
+        <TopicCheck
+          key={`${practiceTopic.blockId}:${practiceTopic.idx}`}
+          topicId={darslikTopicId(practiceTopic.blockId, practiceTopic.idx)}
+          title={practiceTopic.title}
+          onReady={() => setPracticeReady(true)}
+          onClose={() => {
+            setPracticeTopic(null)
+            setPracticeReady(false)
+          }}
+          onPassed={() => {
+            markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + practiceTopic.blockId, practiceTopic.idx)
+            mastery.markPassed(darslikTopicId(practiceTopic.blockId, practiceTopic.idx))
+          }}
+          hasNext={false}
+        />
+      )}
 
       {reader && activeBlockMeta && (
         <BlockReader

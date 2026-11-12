@@ -18,8 +18,7 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
-import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
-import { BrilliantCopyContainer, BrilliantEndstateShell, BrilliantRiveContainer } from '../../shared/components/BrilliantEndstateShell'
+import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstateShell'
 import { BrilliantCompletionStage } from '../../shared/components/BrilliantCompletionContent'
 import LessonExercise from './LessonExercise'
 import './rus-lesson-feedback.css'
@@ -65,6 +64,8 @@ interface LessonRunnerProps {
   hasNext: boolean
   /** Server 403 qaytardi — progress eskirgan bo'lishi mumkin */
   onLocked?: () => void
+  /** Kontent yuklanib tayyor bo'lganda (Warm-up parda ochilishi uchun) */
+  onReady?: () => void
 }
 
 function answerOrEmpty(exercise: DarslikPublicExercise): DarslikAnswerValue {
@@ -101,6 +102,7 @@ export default function LessonRunner({
   onNext,
   hasNext,
   onLocked,
+  onReady,
 }: LessonRunnerProps) {
   const lang = useAppStore((state) => state.settings.language)
   const tt = useT(lang)
@@ -108,6 +110,8 @@ export default function LessonRunner({
   closeRef.current = onClose
   const onLockedRef = useRef(onLocked)
   onLockedRef.current = onLocked
+  const onReadyRef = useRef(onReady)
+  onReadyRef.current = onReady
   const passedNotified = useRef(false)
   const startedTracked = useRef(false)
   const scrollRef = useRef<HTMLDivElement | null>(null)
@@ -204,6 +208,7 @@ export default function LessonRunner({
       .then((loaded) => {
         if (cancelled) return
         setCheck(loaded)
+        onReadyRef.current?.()
         if (!startedTracked.current) {
           startedTracked.current = true
           track('lesson_start', {
@@ -536,37 +541,9 @@ export default function LessonRunner({
   )
 
   if (loading) {
-    const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
-    const blockNum = Number(topicId.split(':')[0])
-    const colorVariant = Number.isFinite(blockNum) && blockNum > 0 ? (blockNum - 1) % 6 : 0
     return (
-      <div
-        className="fixed inset-0 z-[60] flex flex-col justify-between bg-pcanvas pt-[var(--safe-top,0px)]"
-        data-testid="topic-check"
-        role="dialog"
-        aria-modal="true"
-        aria-busy="true"
-      >
-        <div className="flex-1 flex flex-col justify-start">
-          <BrilliantRiveContainer className="aspect-square">
-            <BrilliantEndstateRive
-              kind="lesson-loader"
-              variant={colorVariant}
-              dark={dark}
-              label={tt('rusDarslikCheckLoading')}
-              className="size-full"
-              fallback={
-                <div className="relative grid size-20 place-items-center rounded-3xl bg-pcard shadow-xs">
-                  <span className="size-9 animate-spin rounded-full border-3 border-pprimary border-t-transparent" />
-                </div>
-              }
-            />
-          </BrilliantRiveContainer>
-          <BrilliantCopyContainer>
-            <h1 className="text-[22px] font-extrabold text-pfg">{tt('rusDarslikCheckLoading')}</h1>
-            <p className="text-[14px] text-pmuted">{tt('rusDarslikCheckLoadingHint')}</p>
-          </BrilliantCopyContainer>
-        </div>
+      <div className="fixed inset-0 z-[60] flex items-center justify-center bg-pcanvas">
+        <span className="size-8 animate-spin rounded-full border-3 border-pprimary border-t-transparent" />
       </div>
     )
   }
