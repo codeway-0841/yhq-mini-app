@@ -107,15 +107,15 @@ export default function LessonLaunch({
           {tt('pathLaunching')}
         </span>
 
-        {/* Center: Rive Koji Lesson Loader */}
+        {/* Center: Rive Koji Lesson Loader (Native 393x852 mobil artboard, to'liq ekran, yozuvsiz) */}
         <main
           className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
           aria-labelledby={titleId}
         >
-          <div className="relative size-[min(88vw,400px)] aspect-square flex items-center justify-center">
+          <div className="relative size-full max-w-[560px] flex items-center justify-center scale-110 sm:scale-115">
             <BrilliantEndstateRive
               kind="lesson-loader"
-              fit="contain"
+              fit="cover"
               variant={resolvedColor}
               isLevel={isLevel}
               dark={Boolean(dark)}
