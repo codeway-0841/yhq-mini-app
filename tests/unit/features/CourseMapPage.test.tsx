@@ -1,9 +1,10 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import { act, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import CourseMapPage from '../../../src/features/darslik-rustili/CourseMapPage'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
 import { api } from '../../../src/shared/api'
+import { closeTopModal } from '../../../src/shared/lib/navigation'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../../src/content/darslik-rustili'
 
 const { navigate } = vi.hoisted(() => ({ navigate: vi.fn() }))
@@ -190,6 +191,62 @@ describe('CourseMapPage — kurs xaritasi', () => {
     expect(sheet()).toHaveAttribute('data-locked', 'false')
     expect(sheet().querySelector('.cmap-sheet-title')).toHaveTextContent('Bo‘lim tekshiruvi')
     fireEvent.click(within(sheet()).getByRole('button', { name: 'Mashqni boshlash' }))
-    await waitFor(() => expect(document.querySelector('[data-testid="topic-check"]')).not.toBeNull())
+    await waitFor(() => expect(document.querySelector('[data-testid="topic-check"]')).not.toBeNull(), { timeout: 4000 })
+  })
+
+  it('Boshlash tugmasi 1000ms to‘liq kirish animatsiyasini kutadi va spin ko‘rsatadi', async () => {
+    render(<CourseMapPage initialBlockId={1} />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] })
+    try {
+      const startBtn = within(sheet()).getByRole('button', { name: 'Boshlash' })
+      fireEvent.click(startBtn)
+
+      expect(startBtn).toBeDisabled()
+      expect(startBtn).toHaveAttribute('aria-busy', 'true')
+      expect(startBtn.querySelector('.cmap-start-spinner')).not.toBeNull()
+
+      await vi.advanceTimersByTimeAsync(900)
+      expect(screen.queryByRole('dialog', { name: 'Dars ochilmoqda' })).toBeNull()
+
+      await vi.advanceTimersByTimeAsync(150)
+      expect(screen.getByRole('dialog', { name: 'Dars ochilmoqda' })).toBeInTheDocument()
+      expect(startBtn).not.toBeDisabled()
+    } finally {
+      vi.useRealTimers()
+    }
+  })
+
+  it('Mashqni boshlash 850ms da ochiladi va joriy tugunni yopiq holatda ushlab turadi', async () => {
+    vi.mocked(api.getDarslikProgress).mockResolvedValue({ passed: ['1:0'] })
+    render(<CourseMapPage initialBlockId={1} />)
+    await waitFor(() => expect(nodesOf(1)[1]).toHaveAttribute('aria-current', 'step'))
+
+    fireEvent.click(nodesOf(1)[0])
+    const currentNode = nodesOf(1)[1]
+    expect(currentNode.querySelector('.cmap-node-rive')).not.toBeNull()
+
+    vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout'] })
+    try {
+      const practiceBtn = within(sheet()).getByRole('button', { name: 'Mashqni boshlash' })
+      fireEvent.click(practiceBtn)
+
+      expect(practiceBtn).toBeDisabled()
+      await vi.advanceTimersByTimeAsync(800)
+      expect(screen.queryByText('Mashq yuklanmoqda…')).toBeNull()
+
+      await vi.advanceTimersByTimeAsync(100)
+      expect(screen.getByText('Mashq yuklanmoqda…')).toBeInTheDocument()
+
+      act(() => {
+        expect(closeTopModal()).toBe(true)
+      })
+      expect(screen.queryByText('Mashq yuklanmoqda…')).toBeNull()
+      expect(practiceBtn).not.toBeDisabled()
+      expect(nodesOf(1)[1].querySelector('.cmap-node-rive')).not.toBeNull()
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })

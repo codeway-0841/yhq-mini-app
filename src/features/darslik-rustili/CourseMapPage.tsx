@@ -75,8 +75,15 @@ export default function CourseMapPage({
   const [reader, setReader] = useState<{ blockId: number; idx: number; quiz?: boolean } | null>(null)
   const [launch, setLaunch] = useState<{ origin: LaunchOrigin; reader: { blockId: number; idx: number; quiz?: boolean } } | null>(null)
   const [warmUpLaunch, setWarmUpLaunch] = useState<{ blockId: number; idx: number; title: string } | null>(null)
+  const [pendingEntry, setPendingEntry] = useState<{ blockId: number; idx: number } | null>(null)
   const [practiceTopic, setPracticeTopic] = useState<{ blockId: number; idx: number; title: string } | null>(null)
   const [practiceReady, setPracticeReady] = useState(false)
+  const [mapResetEpoch, setMapResetEpoch] = useState(0)
+  const entryTarget = pendingEntry
+    ?? (launch ? { blockId: launch.reader.blockId, idx: launch.reader.idx } : null)
+    ?? (warmUpLaunch ? { blockId: warmUpLaunch.blockId, idx: warmUpLaunch.idx } : null)
+    ?? (reader ? { blockId: reader.blockId, idx: reader.idx } : null)
+    ?? (practiceTopic ? { blockId: practiceTopic.blockId, idx: practiceTopic.idx } : null)
   const [openBlocks, setOpenBlocks] = useState<Set<number>>(
     () => new Set(DARSLIK_BLOCKS.map((block) => block.id)),
   )
@@ -86,6 +93,14 @@ export default function CourseMapPage({
   const sheetRef = useRef<HTMLDivElement>(null)
   const nodeRefs = useRef(new Map<string, HTMLButtonElement>())
   const autoScrolled = useRef(false)
+  const entryTimerRef = useRef<number | null>(null)
+
+  useEffect(() => () => {
+    if (entryTimerRef.current !== null) {
+      window.clearTimeout(entryTimerRef.current)
+      entryTimerRef.current = null
+    }
+  }, [])
 
   const readMap = readByUser[userId] ?? EMPTY_READ
 
@@ -267,6 +282,7 @@ export default function CourseMapPage({
   }, [mastery.loading, currentBlock.id, currentIdx, initialBlockId, initialSectionIdx, passed])
 
   const pick = useCallback((blockId: number, idx: number) => {
+    if (pendingEntry) return
     playSound('highlight-node')
     openBlock(blockId)
     setPicked({ blockId, idx })
@@ -275,28 +291,50 @@ export default function CourseMapPage({
     if (button && typeof button.scrollIntoView === 'function') {
       button.scrollIntoView({ block: 'center', behavior: 'smooth' })
     }
-  }, [openBlock])
+  }, [openBlock, pendingEntry])
+
+  const scheduleEntry = useCallback((blockId: number, idx: number, onReady: () => void) => {
+    if (pendingEntry) return
+    const reduced = noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    if (reduced) {
+      onReady()
+      return
+    }
+    const isCurrentNode = blockId === currentBlock.id && idx === currentIdx
+    // Match Brilliant's node_all lengths (~1025ms koji_enter_lesson, ~1037ms koji_appear_enter with ~850ms transition).
+    const delayMs = isCurrentNode ? 1000 : 850
+    setPendingEntry({ blockId, idx })
+    entryTimerRef.current = window.setTimeout(() => {
+      entryTimerRef.current = null
+      setPendingEntry(null)
+      onReady()
+    }, delayMs)
+  }, [pendingEntry, noAnimation, currentBlock.id, currentIdx])
 
   const openReader = useCallback((quiz = false) => {
-    if (activeLocked) return
+    if (activeLocked || pendingEntry) return
     playSound('start-lesson')
     track('rus_darslik_map_open_topic', { block_id: active.blockId, section_idx: active.idx, quiz })
     const target = { blockId: active.blockId, idx: activeCheck ? outline.length - 1 : active.idx, quiz: quiz || activeCheck }
-    if (!initialBlockId || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
-      setReader(target)
-      return
+    const launchNow = () => {
+      if (!initialBlockId || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+        setReader(target)
+        return
+      }
+      const node = nodeRefs.current.get(keyOf(active.blockId, active.idx)) ?? null
+      const origin = lessonLaunchOrigin(node)
+      if (node) {
+        const rect = node.getBoundingClientRect()
+        origin.x = rect.left + rect.width / 2
+        origin.y = rect.top + rect.height / 2
+      }
+      setLaunch({ origin, reader: target })
     }
-    const node = nodeRefs.current.get(keyOf(active.blockId, active.idx)) ?? null
-    const origin = lessonLaunchOrigin(node)
-    if (node) {
-      const rect = node.getBoundingClientRect()
-      origin.x = rect.left + rect.width / 2
-      origin.y = rect.top + rect.height / 2
-    }
-    setLaunch({ origin, reader: target })
-  }, [active.blockId, active.idx, activeCheck, activeLocked, outline.length, initialBlockId, noAnimation])
+    scheduleEntry(active.blockId, active.idx, launchNow)
+  }, [active.blockId, active.idx, activeCheck, activeLocked, pendingEntry, outline.length, initialBlockId, noAnimation, scheduleEntry])
 
   const startPracticeWarmUp = useCallback(() => {
+    if (pendingEntry) return
     playSound('start-lesson')
     track('rus_darslik_map_open_practice', { block_id: active.blockId, section_idx: active.idx })
     const targetIdx = activeCheck ? outline.length - 1 : active.idx
@@ -305,10 +343,12 @@ export default function CourseMapPage({
       idx: targetIdx,
       title: activeTitle,
     }
-    setWarmUpLaunch(target)
-    setPracticeTopic(target)
-    setPracticeReady(false)
-  }, [active.blockId, active.idx, activeCheck, outline.length, activeTitle])
+    scheduleEntry(active.blockId, active.idx, () => {
+      setWarmUpLaunch(target)
+      setPracticeTopic(target)
+      setPracticeReady(false)
+    })
+  }, [active.blockId, active.idx, activeCheck, pendingEntry, outline.length, activeTitle, scheduleEntry])
 
   /* Ochilmagan mavzuda tugma joriy mavzuga olib boradi (ilovadagi “Jump ahead”). */
   const startCta = useCallback(() => {
@@ -452,14 +492,17 @@ export default function CourseMapPage({
                               {isCurrent || isFocus
                                 ? (
                                     <CourseMapNodeArt
+                                      key={mapResetEpoch}
                                       current={isCurrent}
                                       src={art}
                                       completed={isDone && !isCurrent}
                                       locked={isLocked}
                                       selected={isSelected}
                                       entering={Boolean(
-                                        (launch && launch.reader.blockId === block.id && !launch.reader.quiz && launch.reader.idx === idx) ||
-                                        (warmUpLaunch && warmUpLaunch.blockId === block.id && warmUpLaunch.idx === idx),
+                                        entryTarget && entryTarget.blockId === block.id && entryTarget.idx === idx,
+                                      )}
+                                      disappearing={Boolean(
+                                        entryTarget && isCurrent && !(entryTarget.blockId === block.id && entryTarget.idx === idx),
                                       )}
                                       color={nodeColor}
                                     />
@@ -487,6 +530,7 @@ export default function CourseMapPage({
                           {active.blockId === block.id && active.idx === sections.length
                             ? (
                                 <CourseMapNodeArt
+                                  key={mapResetEpoch}
                                   current={false}
                                   src={NODE_ART.check}
                                   completed={complete}
@@ -494,8 +538,7 @@ export default function CourseMapPage({
                                   selected
                                   levelReview
                                   entering={Boolean(
-                                    (launch && launch.reader.blockId === block.id && launch.reader.quiz) ||
-                                    (warmUpLaunch && warmUpLaunch.blockId === block.id && warmUpLaunch.idx === sections.length - 1),
+                                    entryTarget && entryTarget.blockId === block.id && (entryTarget.idx === sections.length || (warmUpLaunch && warmUpLaunch.idx === sections.length - 1)),
                                   )}
                                   color={nodeColor}
                                 />
@@ -518,6 +561,9 @@ export default function CourseMapPage({
                 <button
                   type="button"
                   className="cmap-start"
+                  disabled={Boolean(pendingEntry)}
+                  data-loading={pendingEntry ? 'true' : undefined}
+                  aria-busy={pendingEntry ? 'true' : undefined}
                   onClick={startCta}
                   style={{
                     '--cta-face': (activeLocked || activeAhead) && !activeCheck ? undefined : sheetTheme.buttonBg,
@@ -544,9 +590,10 @@ export default function CourseMapPage({
                     </span>
                   </span>
                   <span className="cmap-start-label">{ctaLabel}</span>
+                  {pendingEntry && <span className="cmap-start-spinner" aria-hidden="true" />}
                 </button>
                 {activeDone && (
-                  <button type="button" className="cmap-revisit" onClick={() => openReader(false)} aria-label={tt('pathReview')} title={tt('pathReview')}>
+                  <button type="button" className="cmap-revisit" disabled={Boolean(pendingEntry)} onClick={() => openReader(false)} aria-label={tt('pathReview')} title={tt('pathReview')}>
                     <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M4 11a8 8 0 1 1 1.5 5M4 5v6h6" />
                     </svg>
@@ -579,10 +626,30 @@ export default function CourseMapPage({
             onCancel={() => {
               setLaunch(null)
               setReader(null)
+              setMapResetEpoch((n) => n + 1)
             }}
           />
         )
       })()}
+
+      {practiceTopic && (
+        <TopicCheck
+          key={`${practiceTopic.blockId}:${practiceTopic.idx}`}
+          topicId={darslikTopicId(practiceTopic.blockId, practiceTopic.idx)}
+          title={practiceTopic.title}
+          onReady={() => setPracticeReady(true)}
+          onClose={() => {
+            setPracticeTopic(null)
+            setPracticeReady(false)
+            setMapResetEpoch((n) => n + 1)
+          }}
+          onPassed={() => {
+            markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + practiceTopic.blockId, practiceTopic.idx)
+            mastery.markPassed(darslikTopicId(practiceTopic.blockId, practiceTopic.idx))
+          }}
+          hasNext={false}
+        />
+      )}
 
       {warmUpLaunch && (() => {
         const warmUpTheme = getBrilliantTheme((((warmUpLaunch.blockId - 1) % 8) + 1))
@@ -599,28 +666,11 @@ export default function CourseMapPage({
               setWarmUpLaunch(null)
               setPracticeTopic(null)
               setPracticeReady(false)
+              setMapResetEpoch((n) => n + 1)
             }}
           />
         )
       })()}
-
-      {practiceTopic && (
-        <TopicCheck
-          key={`${practiceTopic.blockId}:${practiceTopic.idx}`}
-          topicId={darslikTopicId(practiceTopic.blockId, practiceTopic.idx)}
-          title={practiceTopic.title}
-          onReady={() => setPracticeReady(true)}
-          onClose={() => {
-            setPracticeTopic(null)
-            setPracticeReady(false)
-          }}
-          onPassed={() => {
-            markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + practiceTopic.blockId, practiceTopic.idx)
-            mastery.markPassed(darslikTopicId(practiceTopic.blockId, practiceTopic.idx))
-          }}
-          hasNext={false}
-        />
-      )}
 
       {reader && activeBlockMeta && (
         <BlockReader
@@ -630,7 +680,10 @@ export default function CourseMapPage({
           readSections={readFor(reader.blockId)}
           lockedSections={lockedFor(reader.blockId)}
           initialQuizOpen={reader.quiz ?? false}
-          onClose={() => setReader(null)}
+          onClose={() => {
+            setReader(null)
+            setMapResetEpoch((n) => n + 1)
+          }}
           onSelectSection={(idx) => setReader({ blockId: reader.blockId, idx })}
           onMarkRead={(idx) => markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + reader.blockId, idx)}
           onQuizPass={(idx) => {

@@ -3,8 +3,8 @@ import DialogOverlay from '../../shared/components/DialogOverlay'
 import { useT, type Lang } from '../../shared/i18n'
 import BrilliantEndstateRive from '../../shared/components/BrilliantEndstateRive'
 
-export const LESSON_LAUNCH_REVEAL_MS = 2800
-export const LESSON_LAUNCH_MS = 3120
+export const LESSON_LAUNCH_REVEAL_MS = 1350
+export const LESSON_LAUNCH_MS = 1600
 export type LaunchOrigin = { x: number; y: number; size: number; sink: number; hasMascot?: boolean }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
@@ -107,15 +107,15 @@ export default function LessonLaunch({
           {tt('pathLaunching')}
         </span>
 
-        {/* Center: Rive Koji Lesson Loader (Native 393x852 mobil artboard, to'liq ekran, yozuvsiz) */}
+        {/* Center: Rive Koji Lesson Loader */}
         <main
           className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
           aria-labelledby={titleId}
         >
-          <div className="relative size-full max-w-[560px] flex items-center justify-center scale-110 sm:scale-115">
+          <div className="relative size-[min(88vw,400px)] aspect-square flex items-center justify-center">
             <BrilliantEndstateRive
               kind="lesson-loader"
-              fit="cover"
+              fit="contain"
               variant={resolvedColor}
               isLevel={isLevel}
               dark={Boolean(dark)}

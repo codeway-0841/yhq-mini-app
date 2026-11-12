@@ -10,7 +10,10 @@ const mocks = vi.hoisted(() => ({ instances: [] as Array<{
 
 vi.mock('@rive-app/webgl2-course', () => {
   class MockRive {
-    inputs = ['select', 'color', 'dark-mode', 'level', 'completed', 'icon', 'koji_appear'].map((name) => ({ name, value: false as boolean | number, fire: vi.fn() }))
+    inputs = [
+      'select', 'color', 'dark-mode', 'level', 'completed', 'icon', 'start_idle',
+      'koji_appear', 'koji_enter_lesson', 'koji_appear_enter', 'koji_disappear', 'koji_exit_lesson',
+    ].map((name) => ({ name, value: false as boolean | number, fire: vi.fn() }))
     cleanup = vi.fn()
     resizeDrawingSurfaceToCanvas = vi.fn()
     config: { artboard: string; stateMachine: string; useOffscreenRenderer: boolean }
@@ -130,6 +133,7 @@ describe('CourseMapNodeArt', () => {
     const rive = mocks.instances[0]
     expect(rive.inputs.find((input) => input.name === 'completed')?.value).toBe(true)
     expect(rive.inputs.find((input) => input.name === 'icon')?.value).toBe(1)
+    expect(rive.inputs.find((input) => input.name === 'start_idle')?.value).toBe(false)
     expect(rive.inputs.find((input) => input.name === 'koji_appear')?.fire).not.toHaveBeenCalled()
     expect(view.container.querySelector('img')).toBeNull()
   })
@@ -143,5 +147,24 @@ describe('CourseMapNodeArt', () => {
     expect(view.container.querySelector('img')).toHaveAttribute('src', '/darslik-map/node-active-base.png')
     expect(view.getByTestId('fallback-mascot')).toBeInTheDocument()
     expect(mocks.instances).toHaveLength(0)
+  })
+
+  it('entering va disappearing holatlarida mos Koji triggerlarini ishga tushiradi', async () => {
+    const currentView = render(<CourseMapNodeArt current src="/darslik-map/node-active-base.png" />)
+    await waitFor(() => expect(currentView.container.querySelector('canvas')).toHaveStyle({ visibility: 'visible' }))
+    const currentRive = mocks.instances[0]
+
+    currentView.rerender(<CourseMapNodeArt current entering src="/darslik-map/node-active-base.png" />)
+    await waitFor(() => expect(currentRive.inputs.find((i) => i.name === 'koji_enter_lesson')?.fire).toHaveBeenCalledOnce())
+
+    currentView.rerender(<CourseMapNodeArt current disappearing src="/darslik-map/node-active-base.png" />)
+    await waitFor(() => expect(currentRive.inputs.find((i) => i.name === 'koji_disappear')?.fire).toHaveBeenCalledOnce())
+
+    const otherView = render(<CourseMapNodeArt current={false} src="/darslik-map/node-puck.svg" />)
+    await waitFor(() => expect(otherView.container.querySelector('canvas')).toHaveStyle({ visibility: 'visible' }))
+    const otherRive = mocks.instances[1]
+
+    otherView.rerender(<CourseMapNodeArt current={false} entering src="/darslik-map/node-puck.svg" />)
+    await waitFor(() => expect(otherRive.inputs.find((i) => i.name === 'koji_appear_enter')?.fire).toHaveBeenCalledOnce())
   })
 })

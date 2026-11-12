@@ -4,8 +4,8 @@ import type { Lang } from '../../shared/i18n'
 import BrilliantEndstateRive from '../../shared/components/BrilliantEndstateRive'
 import { registerModal } from '../../shared/lib/navigation'
 
-export const PRACTICE_WARMUP_REVEAL_MS = 3680
-export const PRACTICE_WARMUP_MS = 4000
+export const PRACTICE_WARMUP_REVEAL_MS = 1200
+export const PRACTICE_WARMUP_MS = 1450
 
 export default function PracticeWarmUpLaunch({
   lang,
@@ -79,7 +79,7 @@ export default function PracticeWarmUpLaunch({
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-all duration-300 ease-out animate-in fade-in duration-200 ${
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-all duration-300 ease-out ${
         fading ? 'opacity-0 scale-[1.015] pointer-events-none' : 'opacity-100 scale-100'
       }`}
       style={{

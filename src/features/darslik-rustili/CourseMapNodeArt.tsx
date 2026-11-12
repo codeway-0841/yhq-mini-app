@@ -39,6 +39,7 @@ export function CourseMapNodeArt({
   selected = true,
   levelReview = false,
   entering = false,
+  disappearing = false,
   color = 1,
 }: {
   current: boolean
@@ -48,13 +49,16 @@ export function CourseMapNodeArt({
   selected?: boolean
   levelReview?: boolean
   entering?: boolean
+  disappearing?: boolean
   color?: number
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const inputsRef = useRef<StateMachineInput[]>([])
-  const latestRef = useRef({ current, completed, locked, selected, levelReview, entering, color })
-  latestRef.current = { current, completed, locked, selected, levelReview, entering, color }
+  const latestRef = useRef({ current, completed, locked, selected, levelReview, entering, disappearing, color })
+  latestRef.current = { current, completed, locked, selected, levelReview, entering, disappearing, color }
   const wasEnteringRef = useRef(false)
+  const wasDisappearingRef = useRef(false)
+  const wasAppearedRef = useRef(false)
 
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
   const [reducedMotion, setReducedMotion] = useState(() =>
@@ -121,7 +125,7 @@ export function CourseMapNodeArt({
           setInput(inputs, 'select', s.selected)
           setInput(inputs, 'hover', false)
           setInput(inputs, 'cursor_down', false)
-          setInput(inputs, 'start_idle', true)
+          setInput(inputs, 'start_idle', false)
           resize()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
@@ -129,8 +133,21 @@ export function CourseMapNodeArt({
           frame = window.requestAnimationFrame(() => {
             frame = window.requestAnimationFrame(() => {
               if (disposed) return
-              if (latestRef.current.current) {
+              const state = latestRef.current
+              if (state.entering) {
+                const trig = state.current && !state.completed && !state.locked
+                  ? 'koji_enter_lesson'
+                  : 'koji_appear_enter'
+                inputs.find((input) => input.name === trig)?.fire()
+                wasEnteringRef.current = true
+                wasAppearedRef.current = false
+              } else if (state.disappearing) {
+                inputs.find((input) => input.name === 'koji_disappear')?.fire()
+                wasDisappearingRef.current = true
+                wasAppearedRef.current = false
+              } else if (state.current && !state.completed && !state.locked) {
                 inputs.find((input) => input.name === 'koji_appear')?.fire()
+                wasAppearedRef.current = true
               }
               setReady(true)
             })
@@ -147,6 +164,9 @@ export function CourseMapNodeArt({
     return () => {
       disposed = true
       inputsRef.current = []
+      wasEnteringRef.current = false
+      wasDisappearingRef.current = false
+      wasAppearedRef.current = false
       if (frame) window.cancelAnimationFrame(frame)
       resizeObserver?.disconnect()
       themeObserver?.disconnect()
@@ -168,18 +188,30 @@ export function CourseMapNodeArt({
         if (entering && !wasEnteringRef.current) {
           const trig = current && !completed && !locked ? 'koji_enter_lesson' : 'koji_appear_enter'
           inputs.find((input) => input.name === trig)?.fire()
+          wasAppearedRef.current = false
+        } else if (disappearing && !wasDisappearingRef.current) {
+          inputs.find((input) => input.name === 'koji_disappear')?.fire()
+          wasAppearedRef.current = false
         } else if (!entering && wasEnteringRef.current && current && !completed && !locked) {
           inputs.find((input) => input.name === 'koji_exit_lesson')?.fire()
-        } else if (current && !completed && !locked) {
-          inputs.find((input) => input.name === 'koji_appear')?.fire()
+          wasAppearedRef.current = true
+        } else if (current && !completed && !locked && !disappearing) {
+          if (!wasAppearedRef.current) {
+            inputs.find((input) => input.name === 'koji_appear')?.fire()
+            wasAppearedRef.current = true
+          }
         } else if (completed || locked) {
-          inputs.find((input) => input.name === 'koji_disappear')?.fire()
+          if (wasAppearedRef.current) {
+            inputs.find((input) => input.name === 'koji_disappear')?.fire()
+            wasAppearedRef.current = false
+          }
         }
         wasEnteringRef.current = entering
+        wasDisappearingRef.current = disappearing
       } catch { /* ignore */ }
     })
     return () => window.cancelAnimationFrame(id)
-  }, [completed, current, locked, selected, levelReview, entering, color])
+  }, [completed, current, locked, selected, levelReview, entering, disappearing, color])
 
   return (
     <>
