@@ -537,7 +537,20 @@ export default function CourseMapPage({
         </svg>
       </button>
 
-      {launch && <LessonLaunch origin={launch.origin} lang={lang} accent={mapTheme.accent} onReveal={() => setReader(launch.reader)} onFinish={() => setLaunch(null)} onCancel={() => { setLaunch(null); setReader(null) }} />}
+      {launch && (
+        <LessonLaunch
+          origin={launch.origin}
+          lang={lang}
+          colorVariant={nodeColor}
+          isLevel={Boolean(launch.reader.quiz)}
+          onReveal={() => setReader(launch.reader)}
+          onFinish={() => setLaunch(null)}
+          onCancel={() => {
+            setLaunch(null)
+            setReader(null)
+          }}
+        />
+      )}
 
       {warmUpLaunch && (
         <PracticeWarmUpLaunch

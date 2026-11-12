@@ -66,7 +66,7 @@ const KIND = {
   'level-insertion':   { file: LEVEL_INSERTION_FILE,  artboard: 'MAIN_LevelInsertionIntro',   stateMachine: 'LevelInsertionIntro',    viewModel: 'LevelInsertionIntroVM' },
   'koji-entrance':     { file: LOHP_ENTRANCE_FILE,    artboard: 'MAIN_KojiEntrance',          stateMachine: 'KojiEntrance',           viewModel: 'KojiEntranceVM' },
   'icp-node':          { file: ICP_NODE_FILE,         artboard: 'Gameboard Node',             stateMachine: 'ICPNode',                viewModel: 'ICPNodeVM' },
-  'lesson-loader':     { file: LESSON_LOADER_FILE,    artboard: 'MAIN_Lesson Loader',         stateMachine: 'LessonLoader',           viewModel: 'LessonLoaderVM' },
+  'lesson-loader':     { file: LESSON_LOADER_FILE,    artboard: 'MAIN_Lesson Loader',         stateMachine: 'LessonLoader',           viewModel: 'LessonLoaderVM', defaultFit: 'cover' as const },
 } as const
 
 let wasmConfigured = false
@@ -105,6 +105,7 @@ export async function loadBrilliantRiveRuntime() {
 export interface BrilliantEndstateRiveProps {
   kind: BrilliantEndstateKind
   label: string
+  fit?: 'contain' | 'cover'
   /**
    * `streak` uchun `streakAnimation` (0 = Koji bilan birinchi seriya sahnasi, 1 = chaqmoq, 2 = marra);
    * `lesson` / `practice` / `progress-*` uchun `color` indeksi (0 = Green, 1 = Blue, 2 = Red, 3 = Orange, 4 = Yellow, 5 = Purple).
@@ -153,6 +154,7 @@ export interface BrilliantEndstateRiveProps {
 export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   kind,
   label,
+  fit,
   variant = 0,
   lessonTrigger = 'kojiFlip',
   isLevel = false,
@@ -244,6 +246,10 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
           try { rive.resizeDrawingSurfaceToCanvas() } catch { /* canvas yo'q bo'lib qolgan */ }
         }
       }
+      const activeFit =
+        (fit ?? ('defaultFit' in cfg ? (cfg as { defaultFit?: 'contain' | 'cover' }).defaultFit : 'contain')) === 'cover'
+          ? Fit.Cover
+          : Fit.Contain
       rive = new RiveCtor({
         buffer: buffer.slice(0),
         canvas,
@@ -251,7 +257,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         stateMachines: cfg.stateMachine,
         autoplay: true,
         autoBind: false,
-        layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
+        layout: new Layout({ fit: activeFit, alignment: Alignment.Center }),
         onLoad: () => {
           if (disposed || !rive) return
           resize()
@@ -364,7 +370,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setNum('levelNumber', levelNumberRef.current)
             fire(lessonTriggerRef.current)
           } else if (kind === 'lesson-loader') {
-            setBool('level', false)
+            setBool('darkMode', Boolean(darkRef.current))
+            setBool('level', Boolean(isLevelRef.current))
             setNum('color', variantRef.current)
             fire('enter')
           } else if (kind === 'practice') {
