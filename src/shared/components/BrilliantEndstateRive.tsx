@@ -61,7 +61,7 @@ const KIND = {
   'review-mistakes':   { file: LCR_TRANSITION_FILE,   artboard: 'MAIN_ReviewMistakes',        stateMachine: 'ReviewMistakes',         viewModel: 'ReviewMistakesVM' },
   'lcr-transition':    { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_LevelCheckTransition',  stateMachine: 'LevelCheckTransition',   viewModel: 'LevelCheckTransitionVM' },
   'assessment-intro':  { file: ASSESSMENT_INTRO_FILE, artboard: 'MAIN_AssessmentIntro',       stateMachine: 'AssessmentIntro',        viewModel: 'LevelCheckVM' },
-  'warm-up':           { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_WarmUp',                stateMachine: 'WarmUp',                 viewModel: 'LevelCheckVM' },
+  'warm-up':           { file: 'lesson_loader_apr_13_26.riv', artboard: 'MAIN_practice-warm-up-loader', stateMachine: 'PracticeWarmUpLoader', viewModel: 'PracticeWarmUpLoaderVM' },
   'review-complete':   { file: LEVEL_CHECK_FILE,      artboard: 'MAIN_ReviewComplete',        stateMachine: 'ReviewComplete',         viewModel: 'ReviewCompleteVM' },
   'level-insertion':   { file: LEVEL_INSERTION_FILE,  artboard: 'MAIN_LevelInsertionIntro',   stateMachine: 'LevelInsertionIntro',    viewModel: 'LevelInsertionIntroVM' },
   'koji-entrance':     { file: LOHP_ENTRANCE_FILE,    artboard: 'MAIN_KojiEntrance',          stateMachine: 'KojiEntrance',           viewModel: 'KojiEntranceVM' },
@@ -327,8 +327,9 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setNum('color', variantRef.current)
             fire('playAssessmentIntro')
           } else if (kind === 'warm-up') {
+            setBool('darkMode', darkRef.current)
             setNum('color', variantRef.current)
-            fire('playWarmUp')
+            fire('playAnimation')
           } else if (kind === 'level-insertion') {
             const titles = skillTitlesRef.current ?? ['1-dars', '2-dars', '3-dars']
             setNum('color', variantRef.current)

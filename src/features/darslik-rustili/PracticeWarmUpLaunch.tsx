@@ -56,18 +56,14 @@ export default function PracticeWarmUpLaunch({
     return () => window.clearTimeout(timer)
   }, [minTimeElapsed, isReady, fading])
 
-  const heading = lang === 'ru' ? 'Быстрая разминка!' : 'Qizdirish mashqi yuklanmoqda…'
-  const sub =
-    lang === 'ru'
-      ? 'Вспомним ключевые идеи перед новыми задачами'
-      : 'Amaliy mashq topshiriqlari saralanmoqda'
+  const label = lang === 'ru' ? 'Загрузка разминки…' : 'Mashq yuklanmoqda…'
 
   const content = (
     <div
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className={`fixed inset-0 flex flex-col justify-between bg-pcanvas text-pfg select-none transition-all duration-300 ease-out animate-in fade-in duration-200 ${
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-all duration-300 ease-out animate-in fade-in duration-200 ${
         fading ? 'opacity-0 scale-[1.015] pointer-events-none' : 'opacity-100 scale-100'
       }`}
       style={{
@@ -76,49 +72,40 @@ export default function PracticeWarmUpLaunch({
         paddingBottom: 'max(env(safe-area-inset-bottom, 0px), var(--safe-bottom, 0px))',
       }}
     >
-      {/* Top bar */}
-      <header className="flex h-14 w-full items-center justify-between px-4">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-[rgb(var(--p-primary-rgb)/0.12)] px-3 py-1 text-[11.5px] font-bold text-pprimary tracking-wide uppercase">
-          {lang === 'ru' ? 'Разминка' : 'Warm-Up'}
-        </span>
+      {/* Top right subtle close button */}
+      <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
         <button
           type="button"
           onClick={() => callbacks.current.onCancel()}
           aria-label={tt('close')}
-          className="flex size-9 items-center justify-center rounded-full text-pmuted hover:bg-psurface hover:text-pfg transition-colors cursor-pointer"
+          className="flex size-9 items-center justify-center rounded-full text-pmuted/30 hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
         >
-          <X size={20} strokeWidth={2.4} />
+          <X size={18} strokeWidth={2.2} />
         </button>
-      </header>
+      </div>
 
-      {/* Center: Rive + Copy */}
+      {/* Center: Rive Dumbbell + Minimal Label */}
       <main
-        className="mx-auto flex w-full max-w-[420px] flex-1 flex-col items-center justify-center gap-6 px-4"
+        className="flex flex-col items-center justify-center px-4"
         aria-labelledby={titleId}
       >
-        <div className="relative size-[260px] md:size-[300px]">
+        <div className="relative size-[220px] sm:size-[260px]">
           <BrilliantEndstateRive
             kind="warm-up"
             variant={colorVariant}
             dark={Boolean(dark)}
-            label={heading}
+            label={label}
             className="size-full"
           />
         </div>
 
-        <div className="flex flex-col items-center gap-2 text-center">
-          <h1
-            id={titleId}
-            className="font-display text-[22px] font-extrabold leading-tight text-pfg sm:text-[24px]"
-          >
-            {heading}
-          </h1>
-          <p className="text-[14px] text-pmuted">{sub}</p>
-        </div>
+        <p
+          id={titleId}
+          className="mt-4 text-[16px] sm:text-[17px] font-medium text-pmuted select-none tracking-normal text-center"
+        >
+          {label}
+        </p>
       </main>
-
-      {/* Bottom spacer */}
-      <div className="h-14 w-full" aria-hidden="true" />
     </div>
   )
 

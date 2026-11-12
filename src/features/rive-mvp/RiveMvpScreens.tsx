@@ -574,6 +574,9 @@ function LessonLoaderMvp({ ctx }: { ctx: MvpScreenContext }) {
             file="lesson-loader.ac940c03.riv"
             artboard="MAIN_practice-warm-up-loader"
             stateMachine="practice-loader"
+            smTriggers={['play-animation']}
+            smBooleans={{ 'dark-mode': dark }}
+            smNumbers={{ color: colorVariant }}
             dark={dark}
             nonce={nonce}
             label="Warm-Up Loader"
