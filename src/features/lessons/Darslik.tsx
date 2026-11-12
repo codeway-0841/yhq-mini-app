@@ -576,6 +576,7 @@ export default function Darslik() {
         <LessonLaunch
           origin={launch.origin}
           lang={settings.language}
+          accent={theme.accent}
           onReveal={() => {
             if (!canReadLesson(isPremium, launch.mod.id, launch.idx)) { requestPremium(); return }
             setReader({ mod: launch.mod, idx: launch.idx })

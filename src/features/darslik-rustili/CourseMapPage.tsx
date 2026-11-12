@@ -537,20 +537,25 @@ export default function CourseMapPage({
         </svg>
       </button>
 
-      {launch && (
-        <LessonLaunch
-          origin={launch.origin}
-          lang={lang}
-          colorVariant={nodeColor}
-          isLevel={Boolean(launch.reader.quiz)}
-          onReveal={() => setReader(launch.reader)}
-          onFinish={() => setLaunch(null)}
-          onCancel={() => {
-            setLaunch(null)
-            setReader(null)
-          }}
-        />
-      )}
+      {launch && (() => {
+        const launchTheme = getBrilliantTheme((((launch.reader.blockId - 1) % 8) + 1))
+        const launchColor = launchTheme.accent === '#f6b31f' ? 4 : launchTheme.accent === '#8a4cff' ? 5 : 1
+        return (
+          <LessonLaunch
+            origin={launch.origin}
+            lang={lang}
+            accent={launchTheme.accent}
+            colorVariant={launchColor}
+            isLevel={Boolean(launch.reader.quiz)}
+            onReveal={() => setReader(launch.reader)}
+            onFinish={() => setLaunch(null)}
+            onCancel={() => {
+              setLaunch(null)
+              setReader(null)
+            }}
+          />
+        )
+      })()}
 
       {warmUpLaunch && (
         <PracticeWarmUpLaunch

@@ -30,7 +30,8 @@ export default function LessonLaunch({
   onReveal,
   onFinish,
   onCancel,
-  colorVariant = 1,
+  accent,
+  colorVariant,
   isLevel = false,
 }: {
   origin: LaunchOrigin
@@ -47,6 +48,22 @@ export default function LessonLaunch({
   const callbacks = useRef({ onReveal, onFinish, onCancel })
   callbacks.current = { onReveal, onFinish, onCancel }
   const [fading, setFading] = useState(false)
+
+  // Fan/Bob accent rangiga mos Brilliant Rive rangi (0..5)
+  const resolvedColor =
+    colorVariant !== undefined
+      ? colorVariant
+      : accent === '#f6b31f' || accent === 'var(--p-warning)'
+      ? 4 // Sariq / Oltin
+      : accent === '#8a4cff' || accent === 'var(--p-purple)'
+      ? 5 // Binafsha
+      : accent === '#22c55e' || accent === 'var(--p-success)'
+      ? 0 // Yashil
+      : accent === '#ef4444' || accent === 'var(--p-danger)'
+      ? 2 // Qizil
+      : accent === '#f97316'
+      ? 3 // To'q sariq
+      : 1 // Standart Royal Blue
 
   const dark =
     typeof document !== 'undefined' &&
@@ -99,7 +116,7 @@ export default function LessonLaunch({
             <BrilliantEndstateRive
               kind="lesson-loader"
               fit="cover"
-              variant={colorVariant}
+              variant={resolvedColor}
               isLevel={isLevel}
               dark={Boolean(dark)}
               label={tt('pathLaunching')}
