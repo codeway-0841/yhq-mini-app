@@ -38,6 +38,7 @@ export function CourseMapNodeArt({
   locked = false,
   selected = true,
   levelReview = false,
+  entering = false,
   color = 1,
 }: {
   current: boolean
@@ -46,12 +47,14 @@ export function CourseMapNodeArt({
   locked?: boolean
   selected?: boolean
   levelReview?: boolean
+  entering?: boolean
   color?: number
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const inputsRef = useRef<StateMachineInput[]>([])
-  const latestRef = useRef({ current, completed, locked, selected, levelReview, color })
-  latestRef.current = { current, completed, locked, selected, levelReview, color }
+  const latestRef = useRef({ current, completed, locked, selected, levelReview, entering, color })
+  latestRef.current = { current, completed, locked, selected, levelReview, entering, color }
+  const wasEnteringRef = useRef(false)
 
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
   const [reducedMotion, setReducedMotion] = useState(() =>
@@ -114,9 +117,11 @@ export function CourseMapNodeArt({
           setInput(inputs, 'level', s.levelReview)
           setInput(inputs, 'padlock', !s.completed && s.locked)
           setInput(inputs, 'completed', s.completed)
-          setInput(inputs, 'icon', s.completed && !s.levelReview ? 1 : 0)
+          setInput(inputs, 'icon', !s.completed && s.locked ? 3 : s.completed && !s.levelReview ? 1 : 0)
           setInput(inputs, 'select', s.selected)
           setInput(inputs, 'hover', false)
+          setInput(inputs, 'cursor_down', false)
+          setInput(inputs, 'start_idle', true)
           resize()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
@@ -158,14 +163,23 @@ export function CourseMapNodeArt({
         setInput(inputs, 'level', levelReview)
         setInput(inputs, 'padlock', !completed && locked)
         setInput(inputs, 'completed', completed)
-        setInput(inputs, 'icon', completed && !levelReview ? 1 : 0)
+        setInput(inputs, 'icon', !completed && locked ? 3 : completed && !levelReview ? 1 : 0)
         setInput(inputs, 'select', selected)
-        if (current && !completed && !locked) inputs.find((input) => input.name === 'koji_appear')?.fire()
-        else if (completed || locked) inputs.find((input) => input.name === 'koji_disappear')?.fire()
+        if (entering && !wasEnteringRef.current) {
+          const trig = current && !completed && !locked ? 'koji_enter_lesson' : 'koji_appear_enter'
+          inputs.find((input) => input.name === trig)?.fire()
+        } else if (!entering && wasEnteringRef.current && current && !completed && !locked) {
+          inputs.find((input) => input.name === 'koji_exit_lesson')?.fire()
+        } else if (current && !completed && !locked) {
+          inputs.find((input) => input.name === 'koji_appear')?.fire()
+        } else if (completed || locked) {
+          inputs.find((input) => input.name === 'koji_disappear')?.fire()
+        }
+        wasEnteringRef.current = entering
       } catch { /* ignore */ }
     })
     return () => window.cancelAnimationFrame(id)
-  }, [completed, current, locked, selected, levelReview, color])
+  }, [completed, current, locked, selected, levelReview, entering, color])
 
   return (
     <>
@@ -175,7 +189,12 @@ export function CourseMapNodeArt({
         aria-hidden="true"
         style={{ visibility: ready ? 'visible' : 'hidden' }}
         onPointerEnter={() => setInput(inputsRef.current, 'hover', true)}
-        onPointerLeave={() => setInput(inputsRef.current, 'hover', false)}
+        onPointerLeave={() => {
+          setInput(inputsRef.current, 'hover', false)
+          setInput(inputsRef.current, 'cursor_down', false)
+        }}
+        onPointerDown={() => setInput(inputsRef.current, 'cursor_down', true)}
+        onPointerUp={() => setInput(inputsRef.current, 'cursor_down', false)}
       />
       {!ready && <img className="cmap-node-art" src={src} alt="" width={128} height={134} loading="lazy" />}
       {current && !ready && (

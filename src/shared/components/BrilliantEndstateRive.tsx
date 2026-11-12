@@ -142,6 +142,8 @@ export interface BrilliantEndstateRiveProps {
   nodeMastered?: boolean
   nodePremium?: boolean
   nodeTrigger?: 'kojiAppear' | 'kojiAppearEnter' | 'kojiDisappear' | 'kojiEnterLesson' | 'kojiExitLesson'
+  /** Bir xil `nodeTrigger`ni qayta ishga tushirish uchun hisoblagich */
+  nodeTriggerSeq?: number
   dark?: boolean
   /** O'zgarsa animatsiya boshidan qayta o'ynaydi */
   nonce?: number
@@ -174,6 +176,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   nodeMastered = false,
   nodePremium = false,
   nodeTrigger = 'kojiAppear',
+  nodeTriggerSeq = 0,
   dark = false,
   nonce = 0,
   className = '',
@@ -202,6 +205,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const nodeMasteredRef = useRef(nodeMastered)
   const nodePremiumRef = useRef(nodePremium)
   const nodeTriggerRef = useRef(nodeTrigger)
+  const nodeTriggerSeqRef = useRef(nodeTriggerSeq)
+  const lastFiredTriggerRef = useRef<{ name: string; seq: number } | null>(null)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -224,6 +229,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   nodeMasteredRef.current = nodeMastered
   nodePremiumRef.current = nodePremium
   nodeTriggerRef.current = nodeTrigger
+  nodeTriggerSeqRef.current = nodeTriggerSeq
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -359,6 +365,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setBool('cursorDown', false)
             setBool('startIdle', true)
             setNum('icon', locked ? 3 : comp && !nodeLevelRef.current ? 1 : 0)
+            lastFiredTriggerRef.current = { name: nodeTriggerRef.current, seq: nodeTriggerSeqRef.current }
             fire(nodeTriggerRef.current)
           } else if (kind === 'progress-endstate') {
             setNum('color', variantRef.current)
@@ -391,6 +398,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       disposed = true
       observer?.disconnect()
       instanceRef.current = null
+      lastFiredTriggerRef.current = null
       rive?.cleanup()
     }
   }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
@@ -420,6 +428,18 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       }
     } catch { /* ignore */ }
   }, [dark, kind, nodeCompleted, nodeLocked, nodeLevel, nodeProgressCheck, nodeMastered, nodePremium, nodeSelect])
+
+  useEffect(() => {
+    if (kind !== 'icp-node') return
+    const inst = instanceRef.current as unknown as {
+      trigger?: (n: string) => { trigger: () => void } | null
+    } | null
+    if (!inst) return
+    const last = lastFiredTriggerRef.current
+    if (last && last.name === nodeTrigger && last.seq === nodeTriggerSeq) return
+    lastFiredTriggerRef.current = { name: nodeTrigger, seq: nodeTriggerSeq }
+    try { inst.trigger?.(nodeTrigger)?.trigger() } catch { /* ignore */ }
+  }, [kind, nodeTrigger, nodeTriggerSeq])
 
   const setIcpPointer = (prop: 'hover' | 'cursorDown', val: boolean) => {
     if (kind !== 'icp-node') return
