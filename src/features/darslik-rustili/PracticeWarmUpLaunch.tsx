@@ -9,13 +9,15 @@ export const PRACTICE_WARMUP_MS = 4000
 
 export default function PracticeWarmUpLaunch({
   lang,
-  colorVariant = 1,
+  accent,
+  colorVariant,
   isReady = true,
   onReveal,
   onFinish,
   onCancel,
 }: {
   lang: Lang
+  accent?: string
   colorVariant?: number
   isReady?: boolean
   onReveal: () => void
@@ -27,6 +29,22 @@ export default function PracticeWarmUpLaunch({
   callbacks.current = { onReveal, onFinish, onCancel }
   const [fading, setFading] = useState(false)
   const [minTimeElapsed, setMinTimeElapsed] = useState(false)
+
+  // Fan/Bob accent rangiga mos Brilliant Rive rangi (0..5)
+  const resolvedColor =
+    colorVariant !== undefined
+      ? colorVariant
+      : accent === '#f6b31f' || accent === 'var(--p-warning)'
+      ? 4 // Sariq / Oltin
+      : accent === '#8a4cff' || accent === 'var(--p-purple)'
+      ? 5 // Binafsha
+      : accent === '#22c55e' || accent === 'var(--p-success)'
+      ? 0 // Yashil
+      : accent === '#ef4444' || accent === 'var(--p-danger)'
+      ? 2 // Qizil
+      : accent === '#f97316'
+      ? 3 // To'q sariq
+      : 1 // Moviy / Ko'k (Brilliant Blue)
 
   const dark =
     typeof document !== 'undefined' &&
@@ -75,10 +93,10 @@ export default function PracticeWarmUpLaunch({
         className="flex flex-col items-center justify-center px-4"
         aria-labelledby={titleId}
       >
-        <div className="relative size-[220px] sm:size-[260px]">
+        <div className="relative size-[310px] sm:size-[360px] max-w-[88vw] aspect-square flex items-center justify-center">
           <BrilliantEndstateRive
             kind="warm-up"
-            variant={colorVariant}
+            variant={resolvedColor}
             dark={Boolean(dark)}
             label={label}
             className="size-full"
@@ -87,7 +105,7 @@ export default function PracticeWarmUpLaunch({
 
         <p
           id={titleId}
-          className="mt-4 text-[16px] sm:text-[17px] font-medium text-pmuted select-none tracking-normal text-center"
+          className="mt-5 text-[17px] sm:text-[18px] font-medium text-pmuted select-none tracking-normal text-center"
         >
           {label}
         </p>

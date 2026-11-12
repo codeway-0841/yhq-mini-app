@@ -557,20 +557,25 @@ export default function CourseMapPage({
         )
       })()}
 
-      {warmUpLaunch && (
-        <PracticeWarmUpLaunch
-          lang={lang}
-          colorVariant={nodeColor}
-          isReady={practiceReady}
-          onReveal={() => {}}
-          onFinish={() => setWarmUpLaunch(null)}
-          onCancel={() => {
-            setWarmUpLaunch(null)
-            setPracticeTopic(null)
-            setPracticeReady(false)
-          }}
-        />
-      )}
+      {warmUpLaunch && (() => {
+        const warmUpTheme = getBrilliantTheme((((warmUpLaunch.blockId - 1) % 8) + 1))
+        const warmUpColor = warmUpTheme.accent === '#f6b31f' ? 4 : warmUpTheme.accent === '#8a4cff' ? 5 : 1
+        return (
+          <PracticeWarmUpLaunch
+            lang={lang}
+            accent={warmUpTheme.accent}
+            colorVariant={warmUpColor}
+            isReady={practiceReady}
+            onReveal={() => {}}
+            onFinish={() => setWarmUpLaunch(null)}
+            onCancel={() => {
+              setWarmUpLaunch(null)
+              setPracticeTopic(null)
+              setPracticeReady(false)
+            }}
+          />
+        )
+      })()}
 
       {practiceTopic && (
         <TopicCheck

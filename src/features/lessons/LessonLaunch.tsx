@@ -112,7 +112,7 @@ export default function LessonLaunch({
           className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
           aria-labelledby={titleId}
         >
-          <div className="relative size-full max-w-[500px] flex items-center justify-center">
+          <div className="relative size-full max-w-[560px] flex items-center justify-center scale-110 sm:scale-115">
             <BrilliantEndstateRive
               kind="lesson-loader"
               fit="cover"
