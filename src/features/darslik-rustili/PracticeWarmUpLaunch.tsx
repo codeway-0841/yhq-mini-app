@@ -1,7 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { X } from 'lucide-react'
-import { useT, type Lang } from '../../shared/i18n'
+import type { Lang } from '../../shared/i18n'
 import BrilliantEndstateRive from '../../shared/components/BrilliantEndstateRive'
 import { registerModal } from '../../shared/lib/navigation'
 
@@ -24,7 +23,6 @@ export default function PracticeWarmUpLaunch({
   onCancel: () => void
 }) {
   const titleId = useId()
-  const tt = useT(lang)
   const callbacks = useRef({ onReveal, onFinish, onCancel })
   callbacks.current = { onReveal, onFinish, onCancel }
   const [fading, setFading] = useState(false)
@@ -72,18 +70,6 @@ export default function PracticeWarmUpLaunch({
         paddingBottom: 'max(env(safe-area-inset-bottom, 0px), var(--safe-bottom, 0px))',
       }}
     >
-      {/* Top right subtle close button */}
-      <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
-        <button
-          type="button"
-          onClick={() => callbacks.current.onCancel()}
-          aria-label={tt('close')}
-          className="flex size-9 items-center justify-center rounded-full text-pmuted/30 hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
-        >
-          <X size={18} strokeWidth={2.2} />
-        </button>
-      </div>
-
       {/* Center: Rive Dumbbell + Minimal Label */}
       <main
         className="flex flex-col items-center justify-center px-4"

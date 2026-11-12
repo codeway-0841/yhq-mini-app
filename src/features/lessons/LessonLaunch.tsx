@@ -1,5 +1,4 @@
 import { useEffect, useId, useRef, useState } from 'react'
-import { X } from 'lucide-react'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import { useT, type Lang } from '../../shared/i18n'
 import BrilliantEndstateRive from '../../shared/components/BrilliantEndstateRive'
@@ -90,18 +89,6 @@ export default function LessonLaunch({
         <span id={titleId} className="sr-only">
           {tt('pathLaunching')}
         </span>
-
-        {/* Top right subtle close button */}
-        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
-          <button
-            type="button"
-            onClick={() => callbacks.current.onCancel()}
-            aria-label={tt('close')}
-            className="flex size-9 items-center justify-center rounded-full text-pmuted/40 hover:text-pfg hover:bg-psurface transition-colors cursor-pointer"
-          >
-            <X size={18} strokeWidth={2.2} />
-          </button>
-        </div>
 
         {/* Center: Rive Koji Lesson Loader (Native 393x852 mobil artboard, to'liq ekran, yozuvsiz) */}
         <main
