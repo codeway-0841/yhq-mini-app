@@ -278,11 +278,13 @@ export function BrilliantCompletionStage({
       } else if (name === 'reveal_xp') {
         setStatsVisible(true)
         setXpNonce((n) => n + 1)
-        playSound('xp-tally')
-        haptics.notify('success')
+        if (showXp && earnedXp > 0) {
+          playSound('xp-tally')
+          haptics.notify('success')
+        }
       }
     },
-    [onRiveEvent],
+    [onRiveEvent, showXp, earnedXp],
   )
 
   return (

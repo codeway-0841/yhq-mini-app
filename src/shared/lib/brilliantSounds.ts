@@ -119,11 +119,12 @@ const DEFAULT_GAIN: Partial<Record<BrilliantSoundId, number>> = {
 const EXCLUSIVE_CHANNEL: Partial<Record<BrilliantSoundId, string>> = {
   correct: 'feedback',
   incorrect: 'feedback',
-  'lesson-failed': 'feedback',
+  'lesson-failed': 'reward',
   endstate: 'reward',
   'diagnostic-complete': 'reward',
-  'xp-tally': 'tally',
-  'tutor-xp-countup-start': 'countup',
+  'xp-tally': 'reward',
+  'tutor-xp-countup-start': 'reward',
+  'tutor-xp-countup-stop': 'reward',
   continue: 'nav',
   'start-lesson': 'nav',
   skip: 'nav',
@@ -211,8 +212,8 @@ function stopChannel(channel: string) {
   try {
     const ctx = getAudioContext()
     if (ctx) {
-      cur.gain.gain.setTargetAtTime(0.0001, ctx.currentTime, 0.01)
-      cur.source.stop(ctx.currentTime + 0.03)
+      cur.gain.gain.setTargetAtTime(0.0001, ctx.currentTime, 0.02)
+      cur.source.stop(ctx.currentTime + 0.06)
     } else {
       cur.source.stop()
     }
@@ -221,9 +222,26 @@ function stopChannel(channel: string) {
   }
 }
 
+function stopHtmlChannel(channel: string, exceptId?: BrilliantSoundId) {
+  htmlPool.forEach((audio, id) => {
+    if (id === exceptId) return
+    if (EXCLUSIVE_CHANNEL[id] !== channel) return
+    if (typeof HTMLMediaElement !== 'undefined' && audio instanceof HTMLMediaElement && isJsdomEnv()) return
+    audio.loop = false
+    try {
+      audio.pause()
+      audio.currentTime = 0
+    } catch {
+      /* jsdom/AudioElement cheklovi */
+    }
+  })
+}
+
 async function playViaHtmlAudio(id: BrilliantSoundId, volume: number, loop: boolean): Promise<boolean> {
   if (typeof Audio === 'undefined') return false
   try {
+    const channel = EXCLUSIVE_CHANNEL[id]
+    if (channel) stopHtmlChannel(channel, id)
     let audio = htmlPool.get(id)
     if (!audio) {
       audio = new Audio(getBrilliantSoundUrl(id))

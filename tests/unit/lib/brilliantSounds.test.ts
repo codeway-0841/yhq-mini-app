@@ -46,4 +46,40 @@ describe('brilliantSounds — 26 ta asl Brilliant .mp3 effektlari', () => {
 
     vi.unstubAllGlobals()
   })
+
+  it('endstate va xp-tally bitta kanalda bo‘lib ustma-ust aralashmaydi', async () => {
+    const events: string[] = []
+    vi.stubGlobal(
+      'Audio',
+      class {
+        src = ''
+        preload = ''
+        volume = 1
+        loop = false
+        currentTime = 0
+        constructor(url: string) {
+          this.src = url
+        }
+        play = vi.fn(() => {
+          events.push(`play:${this.src}`)
+          return Promise.resolve()
+        })
+        pause = vi.fn(() => {
+          events.push(`pause:${this.src}`)
+        })
+      },
+    )
+
+    await playBrilliantSound('endstate')
+    await playBrilliantSound('xp-tally')
+
+    expect(events).toEqual([
+      'play:/brilliant/sounds/endstate.mp3',
+      'pause:/brilliant/sounds/endstate.mp3',
+      'play:/brilliant/sounds/xp-tally.mp3',
+    ])
+
+    stopBrilliantSound()
+    vi.unstubAllGlobals()
+  })
 })

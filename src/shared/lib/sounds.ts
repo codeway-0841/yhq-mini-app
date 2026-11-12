@@ -53,13 +53,41 @@ export function resolveBrilliantSound(kind: SoundKind): BrilliantSoundId {
   return LEGACY_TO_BRILLIANT[kind as LegacySoundKind] ?? 'assessment-click-option-1'
 }
 
-/** Master ovoz funksiyasi — ilovadagi barcha ovozlar shu orqali Brilliant `.mp3` sifatida ijro etiladi */
+/** Hozircha faqat asosiy hodisa tovushlari faol: to‘g‘ri/xato, toggle, A/B/C/D variant, yakun/XP, streak va liga */
+export const ACTIVE_SOUNDS = new Set<BrilliantSoundId>([
+  'correct',
+  'incorrect',
+  'lesson-failed',
+  'toggle-on',
+  'toggle-off',
+  'assessment-click-option-1',
+  'assessment-click-option-2',
+  'assessment-click-option-3',
+  'assessment-click-option-4',
+  'lightweight-choice',
+  'endstate',
+  'diagnostic-complete',
+  'xp-tally',
+  'tutor-xp-countup-start',
+  'tutor-xp-countup-stop',
+])
+
+const MUTED_LEGACY_KINDS = new Set<SoundKind>(['click'])
+
+export function isActiveSound(kind: SoundKind): boolean {
+  if (MUTED_LEGACY_KINDS.has(kind)) return false
+  return ACTIVE_SOUNDS.has(resolveBrilliantSound(kind))
+}
+
+/** Master ovoz funksiyasi — ilovadagi barcha faol ovozlar shu orqali Brilliant `.mp3` sifatida ijro etiladi */
 export function playSound(kind: SoundKind) {
+  if (!isActiveSound(kind)) return
   void playBrilliantSound(resolveBrilliantSound(kind))
 }
 
 /** Davomiy loop ovoz (masalan XP sanash vaqtida `tutor-xp-countup-start`) */
 export function playLoopingSound(kind: SoundKind) {
+  if (!isActiveSound(kind)) return
   playLoopingBrilliantSound(resolveBrilliantSound(kind))
 }
 

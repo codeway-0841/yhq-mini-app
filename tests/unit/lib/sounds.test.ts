@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { playSound, resolveBrilliantSound, type SoundKind } from '../../../src/shared/lib/sounds'
+import { isActiveSound, playSound, resolveBrilliantSound, type SoundKind } from '../../../src/shared/lib/sounds'
 import { BRILLIANT_SOUNDS } from '../../../src/shared/lib/brilliantSounds'
 import { haptics } from '../../../src/platform/haptics'
 
@@ -28,6 +28,43 @@ describe('shared/lib/sounds — Brilliant.org 1:1 audio mapping', () => {
       expect(resolveBrilliantSound(s.id)).toBe(s.id)
       expect(() => playSound(s.id)).not.toThrow()
     }
+  })
+
+  it('faqat ruxsat etilgan tovushlar faol (to‘g‘ri/xato, toggle, A/B/C/D variant, yakun/XP/streak/liga faol; qo‘pol tugma kliklari o‘chirilgan)', () => {
+    const enabled: SoundKind[] = [
+      'correct',
+      'incorrect',
+      'success',
+      'error',
+      'lesson-failed',
+      'toggle',
+      'toggle-on',
+      'toggle-off',
+      'assessment-click-option-1',
+      'assessment-click-option-2',
+      'assessment-click-option-3',
+      'assessment-click-option-4',
+      'lightweight-choice',
+      'endstate',
+      'win',
+      'diagnostic-complete',
+      'achievement',
+      'xp-tally',
+      'coins',
+      'tutor-xp-countup-start',
+      'tutor-xp-countup-stop',
+    ]
+    const muted: SoundKind[] = [
+      'click',
+      'continue',
+      'skip',
+      'hint',
+      'start-lesson',
+      'highlight-node',
+    ]
+
+    for (const k of enabled) expect(isActiveSound(k)).toBe(true)
+    for (const k of muted) expect(isActiveSound(k)).toBe(false)
   })
 })
 
