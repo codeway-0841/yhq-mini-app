@@ -31,7 +31,7 @@ export function markBadgesCelebrated(ids: string[]): void {
  */
 export function checkAndCelebrateAchievements(
   stats: AchievementStats,
-  options?: { forceCelebration?: boolean }
+  options?: { forceCelebration?: boolean; deferCelebration?: boolean }
 ): AchievementDef[] {
   if (!stats) return []
 
@@ -58,7 +58,9 @@ export function checkAndCelebrateAchievements(
 
   if (newlyUnlocked.length > 0) {
     markBadgesCelebrated(newlyUnlocked.map((a) => a.id))
-    useAchievementCelebrationStore.getState().triggerCelebration(newlyUnlocked)
+    if (!options?.deferCelebration) {
+      useAchievementCelebrationStore.getState().triggerCelebration(newlyUnlocked)
+    }
   }
 
   return newlyUnlocked

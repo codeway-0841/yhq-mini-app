@@ -3,6 +3,7 @@ import DialogOverlay from './DialogOverlay'
 import { CheckCircle2, ArrowRight } from 'lucide-react'
 import { useAchievementCelebrationStore } from '../store/useAchievementCelebrationStore'
 import { useAppStore } from '../store/useAppStore'
+import { useDailyStore } from '../store/useDailyStore'
 import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -15,6 +16,7 @@ export default function AchievementCelebrationModal() {
   const currentBadge = useAchievementCelebrationStore((s) => s.currentCelebration)
   const unlockedQueue = useAchievementCelebrationStore((s) => s.unlockedQueue)
   const dismissCurrent = useAchievementCelebrationStore((s) => s.dismissCurrent)
+  const streakModalOpen = useDailyStore((s) => s.celebrationStreak !== null)
   const lang = useAppStore((s) => s.settings.language)
   const tt = useT(lang)
 
@@ -22,10 +24,10 @@ export default function AchievementCelebrationModal() {
 
   // Fanfare and haptic vibration on open
   useEffect(() => {
-    if (!currentBadge) return
+    if (!currentBadge || streakModalOpen) return
     playSound('achievement')
     haptics.achievement()
-  }, [currentBadge])
+  }, [currentBadge, streakModalOpen])
 
   const handleClaim = useCallback(() => {
     if (!currentBadge || isClaiming) return
@@ -46,7 +48,7 @@ export default function AchievementCelebrationModal() {
   }, [currentBadge, isClaiming, dismissCurrent])
 
   
-  if (!currentBadge) return null
+  if (!currentBadge || streakModalOpen) return null
   if (typeof document === 'undefined') return null
 
   const totalCount = unlockedQueue.length + 1

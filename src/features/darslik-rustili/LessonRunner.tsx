@@ -11,7 +11,9 @@ import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
 import { ApiError, api } from '../../shared/api'
 import { track } from '../../shared/lib/analytics'
+import type { AchievementDef } from '../../shared/config/achievements'
 import { checkAndCelebrateAchievements } from '../../shared/lib/achievement-detector'
+import { useAchievementCelebrationStore } from '../../shared/store/useAchievementCelebrationStore'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
@@ -136,6 +138,8 @@ export default function LessonRunner({
     chargeSaved: boolean
     chargeEarned: boolean
   } | null>(null)
+  const pendingAchievementsRef = useRef<AchievementDef[]>([])
+  const completionFlushedRef = useRef(false)
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState(false)
   const [result, setResult] = useState<DarslikCheckResult | null>(null)
@@ -191,6 +195,8 @@ export default function LessonRunner({
     setEarnedLessonXp(0)
     setLastCheckXp(0)
     pendingStreakRef.current = null
+    pendingAchievementsRef.current = []
+    completionFlushedRef.current = false
     startedTracked.current = false
     passedNotified.current = false
 
@@ -289,11 +295,21 @@ export default function LessonRunner({
             },
           )
         }
-        // Mavjud yutuq tizimi — yangi achievement store yaratilmaydi.
+        // Dars yakuni ekrani ustiga yutuq oynasi chiqib ketmasligi uchun yakun tugmasigacha kechiktiriladi.
+        completionFlushedRef.current = false
+        pendingAchievementsRef.current = []
         const userId = useAppStore.getState().user?.id
         if (userId && userId !== '0') {
           void api.getAchievements(userId)
-            .then(({ stats }) => checkAndCelebrateAchievements(stats))
+            .then(({ stats }) => {
+              const unlocked = checkAndCelebrateAchievements(stats, { deferCelebration: true })
+              if (unlocked.length === 0) return
+              if (completionFlushedRef.current) {
+                useAchievementCelebrationStore.getState().triggerCelebration(unlocked)
+              } else {
+                pendingAchievementsRef.current = [...pendingAchievementsRef.current, ...unlocked]
+              }
+            })
             .catch(() => { /* yutuq tekshiruvi dars natijasini buzmaydi */ })
         }
       } else {
@@ -408,6 +424,8 @@ export default function LessonRunner({
     setEarnedLessonXp(0)
     setLastCheckXp(0)
     pendingStreakRef.current = null
+    pendingAchievementsRef.current = []
+    completionFlushedRef.current = false
     passedNotified.current = false
   }, [])
 
@@ -609,10 +627,16 @@ export default function LessonRunner({
       ? (hasNext && onNext ? onNext : onClose)
       : retry
     const handlePrimary = () => {
+      completionFlushedRef.current = true
       if (result.passed && pendingStreakRef.current) {
         const pending = pendingStreakRef.current
         pendingStreakRef.current = null
         useDailyStore.getState().triggerStreakCelebration(pending.streak, pending)
+      }
+      if (result.passed && pendingAchievementsRef.current.length > 0) {
+        const pendingAchievements = pendingAchievementsRef.current
+        pendingAchievementsRef.current = []
+        useAchievementCelebrationStore.getState().triggerCelebration(pendingAchievements)
       }
       primaryAction()
     }

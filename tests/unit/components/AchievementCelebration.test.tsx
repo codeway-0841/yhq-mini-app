@@ -3,6 +3,7 @@ import { render, screen, fireEvent, act } from '@testing-library/react'
 import { ACHIEVEMENTS } from '../../../src/shared/config/achievements'
 import { useAchievementCelebrationStore } from '../../../src/shared/store/useAchievementCelebrationStore'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
+import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import { checkAndCelebrateAchievements } from '../../../src/shared/lib/achievement-detector'
 import AchievementCelebrationModal from '../../../src/shared/components/AchievementCelebrationModal'
 import { BadgeCard3D } from '../../../src/shared/components/BadgeCard3D'
@@ -137,5 +138,27 @@ describe('Senior Achievement Celebration & 3D Badges', () => {
     })
 
     expect(useAchievementCelebrationStore.getState().currentCelebration).toBeNull()
+  })
+
+  it('deferCelebration bilan dars yakunida yutuq darrov ochilmaydi va streak oynasi yopilgandan keyin chiqadi', () => {
+    localStorage.setItem('kivvi_celebrated_badges', JSON.stringify([]))
+    useDailyStore.setState({ celebrationStreak: null, celebrationMeta: null })
+
+    const deferred = checkAndCelebrateAchievements(dummyStats, { deferCelebration: true })
+    expect(deferred.length).toBeGreaterThan(0)
+    expect(useAchievementCelebrationStore.getState().currentCelebration).toBeNull()
+
+    // Streak oynasi ochiq turganda yutuq oynasi ustma-ust chiqmasligi kerak
+    useDailyStore.setState({ celebrationStreak: 3 })
+    useAchievementCelebrationStore.getState().triggerCelebration(deferred)
+
+    render(<AchievementCelebrationModal />)
+    expect(screen.queryByRole('dialog')).toBeNull()
+
+    // Streak oynasi yopilgach yutuq oynasi ko'rinadi
+    act(() => {
+      useDailyStore.setState({ celebrationStreak: null, celebrationMeta: null })
+    })
+    expect(screen.getByRole('dialog')).toBeTruthy()
   })
 })
