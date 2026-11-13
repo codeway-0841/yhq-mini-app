@@ -6,14 +6,17 @@
 .br-courses-page {
   --br-blue: #3557ff;
   --br-blue-tint: #edf2fe;
+  --br-accent: #3557ff;
+  --br-accent-tint: #eef3ff;
   --br-green: #18a94b;
   --br-card-bg: #ffffff;
   --br-card-border: #e6e8ec;
+  --br-card-hover-border: #cbd5e1;
   --br-card-lip: #e2e4e9;
   --br-tray-bg: #f8fafc;
   --br-connector-color: #e2e8f0;
   --br-subtle: #94a3b8;
-  --br-header-gradient: linear-gradient(180deg, #f0f4ff 0%, rgba(240, 244, 255, 0.4) 60%, transparent 100%);
+  --br-header-gradient: linear-gradient(180deg, #eff4ff 0%, rgba(239, 244, 255, 0.35) 65%, transparent 100%);
   width: 100%;
   min-width: 0;
   flex-shrink: 0;
@@ -23,14 +26,41 @@
 body[data-theme='dark'] .br-courses-page {
   --br-blue: #4f75ff;
   --br-blue-tint: rgba(79, 117, 255, 0.15);
+  --br-accent: #4f75ff;
+  --br-accent-tint: rgba(79, 117, 255, 0.16);
   --br-green: #22c55e;
-  --br-card-bg: var(--p-card, #161920);
-  --br-card-border: rgba(255, 255, 255, 0.12);
+  --br-card-bg: #181a1f;
+  --br-card-border: rgba(255, 255, 255, 0.08);
+  --br-card-hover-border: rgba(255, 255, 255, 0.18);
   --br-card-lip: rgba(0, 0, 0, 0.4);
   --br-tray-bg: rgba(255, 255, 255, 0.03);
   --br-connector-color: rgba(255, 255, 255, 0.15);
   --br-subtle: #64748b;
-  --br-header-gradient: linear-gradient(180deg, rgba(53, 87, 255, 0.1) 0%, transparent 100%);
+  --br-header-gradient: linear-gradient(180deg, rgba(53, 87, 255, 0.12) 0%, rgba(53, 87, 255, 0.03) 65%, transparent 100%);
+}
+
+.br-courses-page [data-tone='amber'] {
+  --br-accent: #e59d00;
+  --br-accent-tint: #fef7e0;
+  --br-header-gradient: linear-gradient(180deg, #fef8e4 0%, rgba(254, 248, 228, 0.35) 65%, transparent 100%);
+}
+
+body[data-theme='dark'] .br-courses-page [data-tone='amber'] {
+  --br-accent: #f6b31f;
+  --br-accent-tint: rgba(246, 179, 31, 0.16);
+  --br-header-gradient: linear-gradient(180deg, rgba(246, 179, 31, 0.13) 0%, rgba(246, 179, 31, 0.03) 65%, transparent 100%);
+}
+
+.br-courses-page [data-tone='purple'] {
+  --br-accent: #8a4cff;
+  --br-accent-tint: #f3edff;
+  --br-header-gradient: linear-gradient(180deg, #f5efff 0%, rgba(245, 239, 255, 0.35) 65%, transparent 100%);
+}
+
+body[data-theme='dark'] .br-courses-page [data-tone='purple'] {
+  --br-accent: #a07bff;
+  --br-accent-tint: rgba(138, 76, 255, 0.18);
+  --br-header-gradient: linear-gradient(180deg, rgba(138, 76, 255, 0.15) 0%, rgba(138, 76, 255, 0.03) 65%, transparent 100%);
 }
 
 /* ── Top Header & Horizontal Tabs (Brilliant App 1:1 — Solid, Zero Blur Ghosting) ── */
@@ -115,12 +145,12 @@ body[data-theme='dark'] .br-path-tab-box {
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-box {
-  border: 2px solid var(--br-blue);
-  background: #eef3ff;
+  border: 2px solid var(--br-accent);
+  background: var(--br-accent-tint);
 }
 
 body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-box {
-  background: rgba(79, 117, 255, 0.16);
+  background: var(--br-accent-tint);
 }
 
 .br-path-tab-label {
@@ -153,7 +183,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
   right: 14px;
   height: 3px;
   border-radius: 999px;
-  background: var(--br-blue);
+  background: var(--br-accent);
   opacity: 0;
   transition: opacity 0.18s ease;
 }
@@ -196,14 +226,40 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
   justify-content: center;
 }
 
-.br-path-star-badge {
-  position: absolute;
-  top: -8px;
-  right: 4px;
-  font-size: 18px;
-  line-height: 1;
+.br-pin-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--br-card-border);
+  background: var(--br-card-bg);
+  color: var(--br-subtle);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 120ms ease,
+    color 150ms ease,
+    border-color 150ms ease,
+    background-color 150ms ease;
+}
+
+.br-pin-btn:active {
+  transform: scale(0.94);
+}
+
+.br-pin-btn[aria-pressed='true'] {
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.42);
+  background: rgba(245, 158, 11, 0.12);
+}
+
+body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   color: #fbbf24;
-  filter: drop-shadow(0 1px 2px rgba(251, 191, 36, 0.4));
+  border-color: rgba(251, 191, 36, 0.45);
+  background: rgba(251, 191, 36, 0.16);
 }
 
 /* ── "NEW" Green Pill Badge (Brilliant App 1:1) ──────────────────────────── */
@@ -250,15 +306,19 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
   padding: 16px 20px;
   border-radius: 20px;
   background: var(--br-card-bg);
-  border: 2px solid var(--p-line-strong);
+  border: 1px solid var(--br-card-border);
   text-align: left;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
   transition: transform 100ms cubic-bezier(0.2, 0, 0, 1), border-color 0.12s ease, box-shadow 0.12s ease;
 }
 
+body[data-theme='dark'] .br-topic-card {
+  box-shadow: none;
+}
+
 .br-topic-card:hover:not(:disabled) {
-  border-color: #cbd5e1;
+  border-color: var(--br-card-hover-border);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
@@ -298,7 +358,7 @@ body[data-theme='dark'] .br-card-progress-track {
 .br-card-progress-bar {
   height: 100%;
   border-radius: 999px;
-  background-color: var(--br-blue);
+  background-color: var(--br-accent);
   transition: width 0.3s ease;
 }
 
