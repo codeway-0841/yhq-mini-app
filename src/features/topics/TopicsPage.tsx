@@ -533,7 +533,7 @@ function BrilliantCourseSection({
       <div className="br-path-hero-wrap">
         <div className="w-full max-w-[580px] mx-auto">
           <div className="flex items-center justify-between gap-2 mb-1.5">
-            <span className="text-[11.5px] font-bold tracking-[0.06em] text-psubtle uppercase">
+            <span className="br-hero-eyebrow">
               {eyebrow}
             </span>
             <button
@@ -549,10 +549,10 @@ function BrilliantCourseSection({
 
           <div className="br-path-hero-flex">
             <div className="min-w-0 flex-1 pr-2">
-              <h2 className="text-[22px] font-extrabold tracking-tight text-pfg leading-[1.2]">
+              <h2 className="br-hero-title">
                 {headingTitle}
               </h2>
-              <p className="mt-1.5 text-[13.5px] text-pmuted leading-[1.45]">
+              <p className="br-hero-desc">
                 {desc}
               </p>
             </div>
@@ -627,7 +627,7 @@ function BrilliantCourseSection({
                   {/* O'ng tomondagi toza matnlar va nozik progress chiziqcha */}
                   <div className="min-w-0 flex-1">
                     <div className={`flex items-center justify-between gap-2 ${eyebrowPadClass}`}>
-                      <span className="block text-[11.5px] font-semibold text-psubtle uppercase tracking-[0.04em]">
+                      <span className="br-card-eyebrow">
                         {item.gradeLabel}
                       </span>
                       {item.count > 1 && item.done > 0 && (
@@ -638,7 +638,7 @@ function BrilliantCourseSection({
                     </div>
 
                     {/* Qalin mavzu nomi (keng joy — bejiz sinmaydi) */}
-                    <p className="mt-1 text-[16px] font-bold text-pfg leading-[1.3] line-clamp-2">
+                    <p className="br-card-title">
                       {item.title}
                     </p>
 
@@ -883,7 +883,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       return DARSLIK_BLOCKS.map((block, bIdx) => {
         const outline = getBlockOutline(block.id)
         const meta = getDarslikBlockPathMeta(block, bIdx, outline.length)
-        const headingTitle = lang === 'ru' ? block.titleRu : block.titleUz
+        const headingTitle = lang === 'ru' ? meta.titleRu : meta.titleUz
 
         let doneTopics = 0
         const readList = readByUser?.[DARSLIK_PROGRESS_MODULE_OFFSET + block.id] ?? []
@@ -923,7 +923,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       return RUSADABIYOT_BLOCKS.map((block, bIdx) => {
         const outline = getRusadabiyotBlockOutline(block.id)
         const meta = getRusadabiyotBlockPathMeta(block, bIdx, outline.length)
-        const headingTitle = lang === 'ru' ? block.titleRu : block.titleUz
+        const headingTitle = lang === 'ru' ? meta.titleRu : meta.titleUz
         const isEraDone = (litByUser?.[RUSADABIYOT_PROGRESS_MODULE_OFFSET + block.id]?.length ?? 0) > 0
 
         const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {

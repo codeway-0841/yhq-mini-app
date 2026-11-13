@@ -8,14 +8,17 @@
   --br-blue-tint: #edf2fe;
   --br-accent: #3557ff;
   --br-accent-tint: #eef3ff;
-  --br-green: #1ea84c;
+  --br-green: #29cc57;
   --br-card-bg: #ffffff;
   --br-card-border: #e2e5ea;
   --br-card-hover-border: #cbd5e1;
   --br-card-lip: #d5dbe3;
   --br-tray-bg: #f8fafc;
   --br-connector-color: #dde3ea;
-  --br-subtle: #94a3b8;
+  --br-subtle: #6f7785;
+  --br-hero-eyebrow: #6f7785;
+  --br-card-eyebrow: #6f7785;
+  --br-hero-desc: #5b6470;
   --br-glow-start: rgba(53, 87, 255, 0.14);
   --br-glow-mid: rgba(53, 87, 255, 0.05);
   width: 100%;
@@ -29,14 +32,17 @@ body[data-theme='dark'] .br-courses-page {
   --br-blue-tint: #080f28;
   --br-accent: #456dff;
   --br-accent-tint: #080f28;
-  --br-green: #1ea84c;
+  --br-green: #29cc57;
   --br-card-bg: #1c1c1c;
   --br-card-border: #333333;
   --br-card-hover-border: #48484c;
   --br-card-lip: #333333;
   --br-tray-bg: rgba(255, 255, 255, 0.03);
   --br-connector-color: #2c2c2c;
-  --br-subtle: #8b92a1;
+  --br-subtle: #777777;
+  --br-hero-eyebrow: #6d707b;
+  --br-card-eyebrow: #777777;
+  --br-hero-desc: #a1a1a1;
   --br-glow-start: #080f28;
   --br-glow-mid: rgba(8, 15, 40, 0.45);
 }
@@ -77,7 +83,7 @@ body[data-theme='dark'] .br-courses-page [data-tone='amber'] {
 }
 
 body[data-theme='dark'] .br-courses-page [data-tone='purple'] {
-  --br-accent: #a06bff;
+  --br-accent: #9d62ff;
   --br-accent-tint: #1d1035;
   --br-glow-start: #1d1035;
   --br-glow-mid: rgba(29, 16, 53, 0.45);
@@ -204,6 +210,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-box {
   margin-top: 6px;
   font-size: 12px;
   line-height: 1.25;
+  letter-spacing: -0.01em;
   font-weight: 600;
   color: #64748b;
   text-align: center;
@@ -215,7 +222,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-box {
 }
 
 body[data-theme='dark'] .br-path-tab-label {
-  color: #9aa0ac;
+  color: #a4a4a4;
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-label {
@@ -300,7 +307,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 body[data-theme='dark'] .br-pin-btn {
   border-color: rgba(255, 255, 255, 0.16);
   background: rgba(255, 255, 255, 0.05);
-  color: #9aa0ac;
+  color: #a4a4a4;
 }
 
 .br-pin-btn:active {
@@ -310,8 +317,58 @@ body[data-theme='dark'] .br-pin-btn {
 .br-pin-btn[aria-pressed='true'],
 body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   color: #141414;
-  border-color: #f5b400;
-  background: #f5b400;
+  border-color: #f7c325;
+  background: #f7c325;
+}
+
+/* ── Typography (Brilliant App 1:1 rang, kontrast va qator zichligi) ────── */
+.br-hero-eyebrow {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  color: var(--br-hero-eyebrow);
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.br-hero-title {
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: var(--p-fg);
+}
+
+.br-hero-desc {
+  margin-top: 6px;
+  font-size: 13.5px;
+  line-height: 1.38;
+  color: var(--br-hero-desc);
+}
+
+.br-card-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  color: var(--br-card-eyebrow);
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.br-card-title {
+  margin-top: 4px;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.24;
+  letter-spacing: -0.01em;
+  color: var(--p-fg);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ── "NEW" Green Pill Badge (Brilliant App 1:1) ──────────────────────────── */
@@ -354,8 +411,8 @@ body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   min-height: 108px;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 15px 20px;
+  gap: 14px;
+  padding: 15px 18px;
   border-radius: 18px;
   background: var(--br-card-bg);
   border: 2px solid var(--br-card-border);

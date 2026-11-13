@@ -13,6 +13,7 @@ vi.mock('react-router-dom', async (importOriginal) => {
 })
 
 import TopicsPage from '../../../src/features/topics/TopicsPage'
+import { parseOutlineTopicHeading } from '../../../src/features/topics/brilliant-courses-data'
 import { config } from '../../../src/shared/config'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
@@ -260,5 +261,22 @@ describe('TopicsPage Brilliant parity & multi-subject routing', () => {
     const firstCard = container.querySelector('.br-topic-card') as HTMLButtonElement
     fireEvent.click(firstCard)
     expect(mockNavigate).toHaveBeenCalledWith('/darslik?block=1&section=0')
+  })
+
+  it('kirillcha ALL CAPS sarlavhalar (Ь И Ъ, «ПЕЧЬ», Е/Ё/Ю/Я, НЕ/НИ) to\'g\'ri formatlanadi va ixcham matn chiqadi', () => {
+    expect(parseOutlineTopicHeading('Ь И Ъ', 1, 6, 'uz').cleanTitle).toBe('Ь и Ъ')
+    expect(parseOutlineTopicHeading('БУКВЫ Е, Ё, Ю, Я', 1, 7, 'uz').cleanTitle).toBe('Буквы Е, Ё, Ю, Я')
+    expect(parseOutlineTopicHeading('«ПЕЧЬ»', 5, 0, 'uz').cleanTitle).toBe('«Печь»')
+    expect(parseOutlineTopicHeading('«ТРИ»', 5, 1, 'uz').cleanTitle).toBe('«Три»')
+    expect(parseOutlineTopicHeading('НЕ С ГЛАГОЛАМИ', 8, 23, 'uz').cleanTitle).toBe('НЕ с глаголами')
+    expect(parseOutlineTopicHeading('Н И НН В ПРИЛАГАТЕЛЬНЫХ', 8, 36, 'uz').cleanTitle).toBe('Н и НН в прилагательных')
+    expect(parseOutlineTopicHeading('ДЕФИС И ТИРЕ — НЕ ОДНО И ТО ЖЕ', 8, 52, 'uz').cleanTitle).toBe('Дефис и тире — не одно и то же')
+
+    useSubjectStore.setState({ subjectId: 'rustili' })
+    const { container } = render(<TopicsPage />)
+    expect(container.textContent).toMatch(/1-BLOK · 12 MAVZU/)
+    expect(container.textContent).toMatch(/Fonetika va orfoepiya/)
+    expect(container.textContent).toMatch(/Ь и Ъ/)
+    expect(container.textContent).not.toMatch(/1\.7-MAVZU\s+Ь И Ъ/)
   })
 })

@@ -831,39 +831,40 @@ body[data-theme='light'] .ios-glass {
    Aksent rangi `body[data-accent]` orqali almashadi (Premium funksiya):
    kiwi (default, bepul) | ocean | violet | gold (premium). */
 :root {
-  /* v3 — Brilliant obsidian dark (#111215), card (#141414), border (#4c4c4c) */
+  /* v3 — Brilliant obsidian dark (#141414), card (#1e1e1e), border (#333333) */
   --p-canvas:      #141414; --p-canvas-rgb: 20 20 20;
   --p-card:        #1e1e1e; --p-card-rgb: 30 30 30;
   --p-surface:     #1e1e1e; --p-surface-rgb: 30 30 30;
-  --p-line:        #383838; --p-line-rgb: 56 56 56;
-  --p-line-strong: #4c4c4c;
+  --p-line:        #333333; --p-line-rgb: 51 51 51;
+  --p-line-strong: #494949;
 
   --p-fg:          #ffffff; --p-fg-rgb: 255 255 255;   /* Primary text */
-  --p-muted:       #9aa0ac; --p-muted-rgb: 154 160 172;   /* Secondary text */
-  --p-subtle:      #8890a0;   /* Tertiary text */
+  --p-muted:       #a1a1a1; --p-muted-rgb: 161 161 161;   /* Secondary text (Brilliant 1:1) */
+  --p-subtle:      #777777;   /* Tertiary text (Brilliant 1:1) */
   --p-disabled:    #575b66;   /* Disabled text */
-  --p-link:        #105ec7;   /* Link */
+  --p-link:        #456dff;   /* Link (Brilliant dark blue) */
 
   /* Aksent — Brilliant Blue (data-accent bilan almashadi) */
-  --p-primary:     #105ec7;
+  --p-primary:     #456dff;
+  --p-primary-rgb: 69 109 255;
   --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 
   /* Semantik ranglar — Brilliant toza ranglar */
-  --p-success:     #34d399;
-  --p-success-rgb: 52 211 153;
-  --p-warning:     #fb923c;
-  --p-warning-rgb: 251 146 60;
+  --p-success:     #29cc57;
+  --p-success-rgb: 41 204 87;
+  --p-warning:     #ff8d23;
+  --p-warning-rgb: 255 141 35;
   --p-danger:      #f87171;
   --p-danger-rgb:  248 113 113;
-  --p-purple:      #a78bfa;   /* AI/Premium */
-  --p-purple-rgb:  167 139 250;
-  --p-blue:        #60a5fa;
-  --p-blue-rgb:    96 165 250;
-  --p-gold:        #f59e0b;   /* Premium oltin */
-  --p-gold-rgb:    245 158 11;
+  --p-purple:      #9d62ff;   /* AI/Premium (Brilliant purple) */
+  --p-purple-rgb:  157 98 255;
+  --p-blue:        #456dff;
+  --p-blue-rgb:    69 109 255;
+  --p-gold:        #f7c325;   /* Premium oltin / Pin */
+  --p-gold-rgb:    247 195 37;
   --p-gold-deep:   #d97706;
-  --p-on-gold:     #ffffff;
+  --p-on-gold:     #141414;
 
   /* ── Geometriya (Jade & Stone / Vega): nozik va qulay radius shkalasi ── */
   --radius-control:   8px;    /* tugma, input, badge */
