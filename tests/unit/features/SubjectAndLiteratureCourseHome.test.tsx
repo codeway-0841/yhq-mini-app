@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
@@ -5,6 +7,7 @@ import Darslik from '../../../src/features/lessons/Darslik'
 import LiteratureCourseHome from '../../../src/features/darslik-rusadabiyot/LiteratureCourseHome'
 import { api } from '../../../src/shared/api'
 import { config } from '../../../src/shared/config'
+import * as pageScroll from '../../../src/shared/lib/page-scroll'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
@@ -149,6 +152,58 @@ describe('Universal Brilliant Course Home across subjects', () => {
         expect(screen.getByText('Davr 1')).toBeInTheDocument()
       })
     } finally {
+      dailySpy.mockRestore()
+      histSpy.mockRestore()
+    }
+  })
+
+  it('prevents negative safe-top pull-up CSS on /darslik Brilliant homes and resets scroll to top on mount', async () => {
+    const learningPathCss = fs.readFileSync(
+      path.resolve(__dirname, '../../../src/features/lessons/learning-path.css'),
+      'utf8',
+    )
+    const brilliantCss = fs.readFileSync(
+      path.resolve(__dirname, '../../../src/features/lessons/brilliant-course-home.css'),
+      'utf8',
+    )
+
+    expect(learningPathCss).toContain('.route-page[data-route-path="/darslik"]:not(:has(.rus-home))')
+    expect(learningPathCss).not.toMatch(/data-route-path="\/darslik"[\s\S]{0,400}margin-top:\s*calc\(-1\s*\*\s*var\(--safe-top-body/)
+    expect(brilliantCss).toMatch(/\.rus-home\s*\{[\s\S]*?margin-top:\s*0;/)
+
+    const scrollSpy = vi.spyOn(pageScroll, 'scrollPageToTop').mockImplementation(() => {})
+    const progressSpy = vi.spyOn(api, 'getTopicProgress').mockResolvedValue({ topics: [] })
+    const dailySpy = vi.spyOn(api, 'getDaily').mockResolvedValue({
+      record: { date: '2026-11-13', subjectId: 'fizika', answered: 0, correct: 0 },
+      dailyStreak: 4,
+      streakCharges: 2,
+    })
+    const histSpy = vi.spyOn(api, 'getDailyHistory').mockResolvedValue({
+      rows: [],
+      dailyStreak: 4,
+      bestStreak: 4,
+      streakCharges: 2,
+    })
+
+    try {
+      useSubjectStore.setState({ subjectId: 'fizika' })
+      useQuestionsStore.setState({
+        subjectId: 'fizika',
+        topics: [{ id: 101, titleUz: 'Kinematika', titleRu: 'Кинематика', descriptionUz: '', descriptionRu: '', questionCount: 10 }],
+        loaded: true,
+        loading: false,
+      })
+      render(
+        <MemoryRouter initialEntries={['/darslik']}>
+          <Darslik />
+        </MemoryRouter>,
+      )
+      await waitFor(() => {
+        expect(scrollSpy).toHaveBeenCalled()
+      })
+    } finally {
+      scrollSpy.mockRestore()
+      progressSpy.mockRestore()
       dailySpy.mockRestore()
       histSpy.mockRestore()
     }

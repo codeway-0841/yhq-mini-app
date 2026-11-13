@@ -104,6 +104,10 @@ export default function RussianCourseHome() {
     }
   }
   useEffect(() => {
+    scrollPageToTop()
+  }, [])
+
+  useEffect(() => {
     if (mapBlock) setSelected(DARSLIK_BLOCKS.findIndex((item) => item.id === mapBlock.id))
     else if (wasMap.current) {
       scrollPageToTop()

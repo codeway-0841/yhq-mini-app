@@ -1,5 +1,6 @@
 import { useId, useRef, useState, useEffect, type CSSProperties, type ReactNode } from 'react'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
+import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme } from './BrilliantLevelsCarousel'
@@ -86,10 +87,11 @@ export function BrilliantCourseHome({
   const [dragging, setDragging] = useState(false)
   const activeRow = useRef<HTMLDivElement>(null)
 
-  // Subject almashganda selected carousel indeksini reset qilamiz
+  // Subject almashganda selected carousel indeksini va sahifa scrollini reset qilamiz
   useEffect(() => {
     setSelected(null)
     setLaunch(null)
+    scrollPageToTop()
   }, [subjectId])
 
   // Tepa (status bar) va pastki fonni kurs kanvasi bilan sinxron tutish
