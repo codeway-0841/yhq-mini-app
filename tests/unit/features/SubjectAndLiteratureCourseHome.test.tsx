@@ -171,6 +171,30 @@ describe('Universal Brilliant Course Home across subjects', () => {
     }
   })
 
+  it('opens LiteratureEraReaderOverlay directly when revisiting a completed Era without hanging on PracticeWarmUpLaunch', async () => {
+    useLessonsStore.setState({ byUser: { 'u-global': { 301: [0] } }, readByUser: {} })
+
+    render(
+      <MemoryRouter initialEntries={['/darslik/rus-adabiyot?block=1']}>
+        <Routes>
+          <Route path="/darslik/rus-adabiyot" element={<LiteratureCourseHome />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+
+    await waitFor(() => {
+      expect(document.querySelector('[data-course="rusadabiyot-map"]')).toBeInTheDocument()
+    })
+
+    const reviewBtn = screen.getByRole('button', { name: 'Qayta o‘qish' })
+    fireEvent.click(reviewBtn)
+
+    await waitFor(() => {
+      expect(screen.getByText('Davr 1')).toBeInTheDocument()
+    })
+    expect(screen.queryByText('Mashq yuklanmoqda…')).not.toBeInTheDocument()
+  })
+
   it('prevents negative safe-top pull-up CSS on /darslik Brilliant homes and resets scroll to top on mount', async () => {
     const learningPathCss = fs.readFileSync(
       path.resolve(__dirname, '../../../src/features/lessons/learning-path.css'),

@@ -50,6 +50,7 @@ export function BrilliantCourseMap({
   initialSectionIdx,
   onBackHome,
   includeUnitCheck = true,
+  supportsPractice = false,
   renderOverlay,
   onOpenSection,
   trackEventPrefix = 'darslik_map',
@@ -178,11 +179,14 @@ export function BrilliantCourseMap({
     active.blockId > currentBlock.id
     || (active.blockId === currentBlock.id && active.idx > currentIdx)
   )
+  const hasPractice = Boolean(supportsPractice && renderOverlay)
   const ctaLabel = activeLocked || (activeAhead && !activeCheck)
     ? tt('pathJumpAhead')
-    : activeDone || activeCheck
+    : (activeDone && hasPractice) || activeCheck
       ? tt('rusDarslikStartPractice')
-      : tt('pathStart')
+      : activeDone
+        ? (renderOverlay ? tt('pathReview') : tt('rusDarslikStartPractice'))
+        : tt('pathStart')
 
   /* Panel balandligi (sticky karta uchun) va markazi (pastdagi varaq uchun). */
   useEffect(() => {
@@ -398,12 +402,12 @@ export function BrilliantCourseMap({
       }
       return
     }
-    if ((activeDone || activeCheck) && renderOverlay) {
+    if (((activeDone && hasPractice) || activeCheck) && renderOverlay) {
       openSection(true, true)
       return
     }
     openSection(activeCheck, false)
-  }, [activeLocked, activeDone, activeCheck, currentBlock.id, currentIdx, openSection, renderOverlay])
+  }, [activeLocked, activeDone, activeCheck, hasPractice, currentBlock.id, currentIdx, openSection, renderOverlay])
 
   const closeOverlay = useCallback(() => {
     setOverlay(null)
@@ -667,7 +671,7 @@ export function BrilliantCourseMap({
                   <span className="cmap-start-label">{ctaLabel}</span>
                   {pendingEntry && <span className="cmap-start-spinner" aria-hidden="true" />}
                 </button>
-                {activeDone && renderOverlay && (
+                {activeDone && hasPractice && (
                   <button
                     type="button"
                     className="cmap-revisit"

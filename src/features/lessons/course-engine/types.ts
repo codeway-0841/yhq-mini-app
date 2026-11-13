@@ -64,6 +64,8 @@ export interface BrilliantCourseMapProps {
   onBackHome?: () => void
   /** Append a final unit-check node per block (default true for rustili, false for topic-bank / reader) */
   includeUnitCheck?: boolean
+  /** Whether renderOverlay implements ctx.practiceMode + ctx.onPracticeReady (TopicCheck warm-up) */
+  supportsPractice?: boolean
   /** Optional custom overlay renderer (e.g. BlockReader / TopicCheck for rustili, Markdown Era Reader for rusadabiyot) */
   renderOverlay?: (ctx: CourseSectionLaunchContext) => ReactNode
   /** Direct callback for quiz-only / direct-route sections (e.g. fizika/matematika launching /test/1) */

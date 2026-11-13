@@ -1,1 +1,1 @@
-export { CourseMapNodeArt } from '../lessons/course-engine/CourseMapNodeArt'
+export { CourseMapNodeArt } from '../lessons'

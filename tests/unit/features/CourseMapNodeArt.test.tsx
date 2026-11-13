@@ -36,10 +36,9 @@ vi.mock('@rive-app/webgl2-course', () => {
 
 vi.mock('@rive-app/webgl2-course/rive.wasm?url', () => ({ default: '/rive.wasm' }))
 vi.mock('@rive-app/webgl2-course/rive_fallback.wasm?url', () => ({ default: '/rive-fallback.wasm' }))
-vi.mock('../../../src/features/lessons', () => ({ PathMascot: () => <span data-testid="fallback-mascot" /> }))
 vi.mock('../../../src/features/lessons/LessonToken', () => ({ PathMascot: () => <span data-testid="fallback-mascot" /> }))
 
-import { CourseMapNodeArt } from '../../../src/features/darslik-rustili/CourseMapNodeArt'
+import { CourseMapNodeArt } from '../../../src/features/lessons/course-engine/CourseMapNodeArt'
 
 beforeEach(() => {
   mocks.instances.length = 0

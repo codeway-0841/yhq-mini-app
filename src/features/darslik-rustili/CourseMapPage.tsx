@@ -64,6 +64,7 @@ export default function CourseMapPage({
       initialSectionIdx={initialSectionIdx}
       onBackHome={onBackHome}
       includeUnitCheck
+      supportsPractice
       trackEventPrefix="rus_darslik_map"
       dataCourse="russian-map"
       renderOverlay={(ctx) => {
