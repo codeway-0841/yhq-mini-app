@@ -9,13 +9,20 @@ import {
   loadRusadabiyotBlock,
 } from '../../content/darslik-rusadabiyot'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
+import { registerModal } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { Button } from '../../shared/components/ui/button'
 import { MarkdownView, parseMarkdown, type MdBlock } from '../darslik-rustili'
-import { BrilliantCourseHome, type BrilliantCourseLevel } from '../lessons'
+import {
+  BrilliantCourseHome,
+  BrilliantCourseMap,
+  courseSectionKey,
+  type BrilliantCourseLevel,
+  type CourseBlockMeta,
+} from '../lessons'
 
 interface AuthorItem {
   name: string
@@ -90,37 +97,44 @@ const ERA_AUTHORS: Record<number, AuthorItem[]> = {
   ],
 }
 
-export default function LiteratureCourseHome() {
-  const navigate = useNavigate()
-  const location = useLocation()
-  const lang = useAppStore((s) => s.settings.language)
+/** Rus adabiyoti xaritadagi tugun bosilganda ochiladigan akademik konspekt overlay'i. */
+function LiteratureEraReaderOverlay({
+  blockId,
+  initialSectionTitle,
+  ru,
+  userId,
+  isDone,
+  onMarkDone,
+  onNextEra,
+  onClose,
+}: {
+  blockId: number
+  initialSectionTitle?: string
+  ru: boolean
+  userId: string
+  isDone: boolean
+  onMarkDone: () => void
+  onNextEra?: () => void
+  onClose: () => void
+}) {
   const themeSetting = useAppStore((s) => s.settings.theme)
-  const ru = lang === 'ru'
-  const userId = useAppStore((s) => s.user?.id) ?? 'guest'
-  const byUser = useLessonsStore((s) => s.byUser[userId])
-  const markDone = useLessonsStore((s) => s.markDone)
   const markRead = useLessonsStore((s) => s.markRead)
-
-  const requestedBlockId = Number(new URLSearchParams(location.search).get('block'))
-  const selectedBlock = RUSADABIYOT_BLOCKS.find((b) => b.id === requestedBlockId) ?? null
-
+  const selectedBlock = RUSADABIYOT_BLOCKS.find((b) => b.id === blockId)
   const [blockContent, setBlockContent] = useState('')
   const [blocksParsed, setBlocksParsed] = useState<MdBlock[]>([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [speaking, setSpeaking] = useState(false)
-  const wasReader = useRef(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef(onClose)
+  closeRef.current = onClose
 
   useEffect(() => {
-    if (!selectedBlock) {
-      setBlockContent('')
-      setBlocksParsed([])
-      stopSpeaking()
-      setSpeaking(false)
-      if (wasReader.current) scrollPageToTop()
-      wasReader.current = false
-      return
-    }
-    wasReader.current = true
+    const id = Symbol('literature-era-reader')
+    return registerModal(id, () => closeRef.current())
+  }, [])
+
+  useEffect(() => {
+    if (!selectedBlock) return
     markRead(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id, 0)
     let cancelled = false
     setLoading(true)
@@ -134,15 +148,27 @@ export default function LiteratureCourseHome() {
       .finally(() => {
         if (cancelled) return
         setLoading(false)
-        scrollPageToTop()
       })
     return () => {
       cancelled = true
+      stopSpeaking()
+      setSpeaking(false)
     }
   }, [selectedBlock, userId, markRead])
 
   useEffect(() => {
-    if (!selectedBlock) return
+    if (loading || !initialSectionTitle || !containerRef.current) return
+    const headings = containerRef.current.querySelectorAll('h1, h2, h3, h4')
+    const needle = initialSectionTitle.toLowerCase().trim()
+    for (const h of headings) {
+      if (h.textContent?.toLowerCase().includes(needle)) {
+        h.scrollIntoView({ behavior: 'auto', block: 'start' })
+        return
+      }
+    }
+  }, [loading, initialSectionTitle])
+
+  useEffect(() => {
     const tg = getTelegramWebApp()
     const metaTheme = document.querySelector('meta[name="theme-color"]')
     const prevMeta = metaTheme?.getAttribute('content')
@@ -163,54 +189,9 @@ export default function LiteratureCourseHome() {
       syncTelegramTheme(document.body.dataset.theme === 'dark')
       if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
     }
-  }, [selectedBlock, themeSetting])
+  }, [themeSetting])
 
-  const { levels, completedCount, defaultLevelIndex } = useMemo(() => {
-    let doneCount = 0
-    const builtLevels: BrilliantCourseLevel[] = RUSADABIYOT_BLOCKS.map((block) => {
-      const moduleKey = RUSADABIYOT_PROGRESS_MODULE_OFFSET + block.id
-      const isDone = (byUser?.[moduleKey]?.length ?? 0) > 0
-      if (isDone) doneCount += 1
-      const outline = getRusadabiyotBlockOutline(block.id)
-      const titles = outline.length > 0 ? outline : [ru ? block.titleRu : block.titleUz]
-      return {
-        id: block.id,
-        titleUz: block.titleUz,
-        titleRu: block.titleRu,
-        levelLabelUz: `DAVR ${block.id}`,
-        levelLabelRu: `ЭПОХА ${block.id}`,
-        items: titles.map((title, idx) => ({
-          key: `${block.id}:${idx}`,
-          title,
-          done: isDone,
-          current: !isDone && idx === 0,
-        })),
-      }
-    })
-    const firstIncomplete = builtLevels.findIndex((lvl) => lvl.items.some((i) => !i.done))
-    return {
-      levels: builtLevels,
-      completedCount: doneCount,
-      defaultLevelIndex: firstIncomplete >= 0 ? firstIncomplete : Math.max(0, builtLevels.length - 1),
-    }
-  }, [byUser, ru])
-
-  if (!selectedBlock) {
-    return (
-      <BrilliantCourseHome
-        subjectId={RUSSIAN_LITERATURE_SUBJECT_ID}
-        levels={levels}
-        completedCount={completedCount}
-        defaultLevelIndex={defaultLevelIndex}
-        testId="literature-course-home"
-        cardLabelUz="Davr mavzulari"
-        cardLabelRu="Темы эпохи"
-        stageLabelUz="Davr tanlash"
-        stageLabelRu="Выбор эпохи"
-        onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` })}
-      />
-    )
-  }
+  if (!selectedBlock) return null
 
   const toggleSpeech = () => {
     if (speaking) {
@@ -224,7 +205,7 @@ export default function LiteratureCourseHome() {
   }
 
   const scrollToAuthor = (name: string) => {
-    const headings = document.querySelectorAll('h1, h2, h3, h4, figure')
+    const headings = containerRef.current?.querySelectorAll('h1, h2, h3, h4, figure') ?? []
     for (const h of headings) {
       if (h.textContent?.toLowerCase().includes(name.toLowerCase())) {
         h.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -233,29 +214,16 @@ export default function LiteratureCourseHome() {
     }
   }
 
-  const currentIdx = RUSADABIYOT_BLOCKS.findIndex((b) => b.id === selectedBlock.id)
-  const nextBlock = currentIdx >= 0 ? RUSADABIYOT_BLOCKS[currentIdx + 1] : undefined
-  const isSelectedDone = (byUser?.[RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id]?.length ?? 0) > 0
-
-  const handleCompleteEra = () => {
-    markDone(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id, 0)
-    if (nextBlock) {
-      navigate({ pathname: location.pathname, search: `?block=${nextBlock.id}` }, { replace: true })
-    } else {
-      navigate({ pathname: location.pathname }, { replace: true })
-    }
-  }
-
   const authors = ERA_AUTHORS[selectedBlock.id] ?? []
 
   return (
-    <div className="min-h-screen pb-24 bg-pcanvas text-pfg">
-      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 bg-pcanvas">
+    <div ref={containerRef} role="dialog" aria-modal="true" className="fixed inset-0 z-50 overflow-y-auto bg-pcanvas text-pfg">
+      <header className="sticky top-0 z-20 pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 bg-pcanvas">
         <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 min-w-0">
             <button
               type="button"
-              onClick={() => navigate({ pathname: location.pathname }, { replace: true })}
+              onClick={onClose}
               className="flex size-10 shrink-0 items-center justify-center -ml-1 rounded-xl text-pfg hover:bg-psurface active:scale-90 transition-all cursor-pointer"
               aria-label={ru ? 'Назад' : 'Orqaga'}
             >
@@ -311,7 +279,7 @@ export default function LiteratureCourseHome() {
         )}
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 py-4">
+      <main className="max-w-3xl mx-auto px-4 py-4 pb-[calc(6rem+var(--safe-bottom,0px))]">
         {loading ? (
           <div className="py-24 text-center">
             <div className="inline-block size-8 animate-spin rounded-full border-2 border-pprimary border-t-transparent mb-3" />
@@ -326,19 +294,24 @@ export default function LiteratureCourseHome() {
             </div>
 
             <div className="mt-8 pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-              <Button variant="primary" size="lg" className="flex-1" onClick={handleCompleteEra}>
+              <Button
+                variant="primary"
+                size="lg"
+                className="flex-1"
+                onClick={() => {
+                  onMarkDone()
+                  if (onNextEra) onNextEra()
+                  else onClose()
+                }}
+              >
                 <CheckCircle2 className="w-4 h-4 mr-1.5 inline-block" />
-                {nextBlock
+                {onNextEra
                   ? (ru ? 'Завершить и перейти дальше' : 'Tugatish va keyingisiga o‘tish')
                   : (ru ? 'Завершить курс' : 'Kursni yakunlash')}
               </Button>
-              {isSelectedDone && (
-                <Button
-                  variant="secondary"
-                  size="lg"
-                  onClick={() => navigate({ pathname: location.pathname }, { replace: true })}
-                >
-                  {ru ? 'К списку эпох' : 'Davrlar ro‘yxatiga'}
+              {isDone && (
+                <Button variant="secondary" size="lg" onClick={onClose}>
+                  {ru ? 'К карте эпох' : 'Davrlar xaritasiga'}
                 </Button>
               )}
             </div>
@@ -346,5 +319,143 @@ export default function LiteratureCourseHome() {
         )}
       </main>
     </div>
+  )
+}
+
+export default function LiteratureCourseHome() {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const lang = useAppStore((s) => s.settings.language)
+  const ru = lang === 'ru'
+  const userId = useAppStore((s) => s.user?.id) ?? 'guest'
+  const byUser = useLessonsStore((s) => s.byUser[userId])
+  const markDone = useLessonsStore((s) => s.markDone)
+  const wasMap = useRef(false)
+
+  const searchParams = new URLSearchParams(location.search)
+  const requestedBlockId = Number(searchParams.get('block'))
+  const requestedSectionRaw = searchParams.get('section')
+  const requestedSection = requestedSectionRaw !== null && Number.isInteger(Number(requestedSectionRaw))
+    ? Number(requestedSectionRaw)
+    : undefined
+
+  const { levels, blocks, passedKeys, completedCount, defaultLevelIndex } = useMemo(() => {
+    let doneCount = 0
+    const nextPassed = new Set<string>()
+    const builtLevels: BrilliantCourseLevel[] = []
+    const builtBlocks: CourseBlockMeta[] = []
+
+    RUSADABIYOT_BLOCKS.forEach((block) => {
+      const moduleKey = RUSADABIYOT_PROGRESS_MODULE_OFFSET + block.id
+      const isDone = (byUser?.[moduleKey]?.length ?? 0) > 0
+      if (isDone) doneCount += 1
+      const outline = getRusadabiyotBlockOutline(block.id)
+      const titles = outline.length > 0 ? outline : [ru ? block.titleRu : block.titleUz]
+
+      const items = titles.map((title, idx) => {
+        if (isDone) nextPassed.add(courseSectionKey(block.id, idx))
+        return {
+          key: `${block.id}:${idx}`,
+          title,
+          done: isDone,
+          current: !isDone && idx === 0,
+        }
+      })
+
+      builtLevels.push({
+        id: block.id,
+        titleUz: block.titleUz,
+        titleRu: block.titleRu,
+        levelLabelUz: `DAVR ${block.id}`,
+        levelLabelRu: `ЭПОХА ${block.id}`,
+        items,
+      })
+
+      builtBlocks.push({
+        id: block.id,
+        titleUz: block.titleUz,
+        titleRu: block.titleRu,
+        sections: items.map((item) => ({ key: item.key, title: item.title })),
+      })
+    })
+
+    const firstIncomplete = builtLevels.findIndex((lvl) => lvl.items.some((i) => !i.done))
+    return {
+      levels: builtLevels,
+      blocks: builtBlocks,
+      passedKeys: nextPassed,
+      completedCount: doneCount,
+      defaultLevelIndex: firstIncomplete >= 0 ? firstIncomplete : Math.max(0, builtLevels.length - 1),
+    }
+  }, [byUser, ru])
+
+  const selectedBlock = blocks.find((b) => b.id === requestedBlockId) ?? null
+
+  useEffect(() => {
+    if (!selectedBlock && wasMap.current) {
+      scrollPageToTop()
+    }
+    wasMap.current = Boolean(selectedBlock)
+  }, [selectedBlock])
+
+  if (selectedBlock) {
+    return (
+      <BrilliantCourseMap
+        key={`${selectedBlock.id}:${requestedSection ?? ''}`}
+        subjectId={RUSSIAN_LITERATURE_SUBJECT_ID}
+        blocks={blocks}
+        progress={{
+          passed: passedKeys,
+          lockSequential: false,
+          loading: false,
+          error: false,
+          refresh: () => {},
+        }}
+        courseTitle={ru ? 'Русская литература' : 'Rus adabiyoti'}
+        courseSubtitle={ru ? 'Все эпохи и писатели' : 'Barcha davrlar va adiblar'}
+        sectionCountLabel={ru ? 'тем' : 'mavzu'}
+        unitLabelUz="DAVR"
+        unitLabelRu="ЭПОХА"
+        initialBlockId={selectedBlock.id}
+        initialSectionIdx={requestedSection}
+        includeUnitCheck={false}
+        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        renderOverlay={(ctx) => {
+          const currentIdx = RUSADABIYOT_BLOCKS.findIndex((b) => b.id === ctx.block.id)
+          const nextEra = currentIdx >= 0 ? RUSADABIYOT_BLOCKS[currentIdx + 1] : undefined
+          const isEraDone = (byUser?.[RUSADABIYOT_PROGRESS_MODULE_OFFSET + ctx.block.id]?.length ?? 0) > 0
+          return (
+            <LiteratureEraReaderOverlay
+              blockId={ctx.block.id}
+              initialSectionTitle={ctx.section.title}
+              ru={ru}
+              userId={userId}
+              isDone={isEraDone}
+              onMarkDone={() => markDone(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + ctx.block.id, 0)}
+              onNextEra={nextEra ? () => {
+                ctx.close()
+                navigate({ pathname: location.pathname, search: `?block=${nextEra.id}` }, { replace: true })
+              } : undefined}
+              onClose={ctx.close}
+            />
+          )
+        }}
+      />
+    )
+  }
+
+  return (
+    <BrilliantCourseHome
+      subjectId={RUSSIAN_LITERATURE_SUBJECT_ID}
+      levels={levels}
+      completedCount={completedCount}
+      defaultLevelIndex={defaultLevelIndex}
+      testId="literature-course-home"
+      cardLabelUz="Davr mavzulari"
+      cardLabelRu="Темы эпохи"
+      stageLabelUz="Davr tanlash"
+      stageLabelRu="Выбор эпохи"
+      onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` })}
+    />
   )
 }

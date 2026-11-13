@@ -131,7 +131,7 @@ describe('IosDock component', () => {
   })
 
   it('qonun (allowlist): dock /profil, /biletlar, /mavzular va boshqa detail sahifalarda yashirin', () => {
-    for (const path of ['/profil', '/biletlar', '/mavzular', '/kutubxona', '/reyting', '/xatolar', '/premium', '/shop', '/darslik/rus-tili?block=1', '/darslik/rus-adabiyot?block=1', '/qidiruv', '/grafik']) {
+    for (const path of ['/profil', '/biletlar', '/mavzular', '/kutubxona', '/reyting', '/xatolar', '/premium', '/shop', '/darslik?block=1', '/darslik/rus-tili?block=1', '/darslik/rus-adabiyot?block=1', '/qidiruv', '/grafik']) {
       const { unmount } = render(
         <MemoryRouter initialEntries={[path]}>
           <IosDock />

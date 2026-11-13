@@ -35,7 +35,7 @@ export default function IosDock() {
   const modalCount = useModalCount()
 
   const hasBlockReaderOpen =
-    (location.pathname === '/darslik/rus-tili' || location.pathname === '/darslik/rus-adabiyot') &&
+    location.pathname.startsWith('/darslik') &&
     new URLSearchParams(location.search).has('block')
   const isTabRoot = isTabRootRoute(location.pathname) && !hasBlockReaderOpen
   const isVisible = isTabRoot && modalCount === 0

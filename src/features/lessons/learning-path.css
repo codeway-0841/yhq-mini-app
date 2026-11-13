@@ -636,19 +636,19 @@ body[data-theme='dark'] .yhq-home-upcoming img { filter: brightness(.5); }
   .yhq-home-dots { display: none; }
   .yhq-home-card { border: 0; padding: 0; background: transparent; }
 }
-.route-page[data-route-path="/darslik"]:not(:has(.rus-home)),
-[data-app-shell]:has(.route-page[data-route-path="/darslik"]:not(:has(.rus-home))) {
+.route-page[data-route-path="/darslik"]:has(.yhq-home),
+[data-app-shell]:has(.route-page[data-route-path="/darslik"]:has(.yhq-home)) {
   background-color: #ffffff !important;
   padding-bottom: 0 !important;
   background-image: none !important;
 }
-body[data-theme='dark'] .route-page[data-route-path="/darslik"]:not(:has(.rus-home)),
-body[data-theme='dark'] [data-app-shell]:has(.route-page[data-route-path="/darslik"]:not(:has(.rus-home))) {
+body[data-theme='dark'] .route-page[data-route-path="/darslik"]:has(.yhq-home),
+body[data-theme='dark'] [data-app-shell]:has(.route-page[data-route-path="/darslik"]:has(.yhq-home)) {
   background-color: #141414 !important;
 }
 @media (max-width: 1023px) {
-  .route-page[data-route-path="/darslik"]:not(:has(.rus-home)),
-  [data-app-shell]:has(.route-page[data-route-path="/darslik"]:not(:has(.rus-home))) {
+  .route-page[data-route-path="/darslik"]:has(.yhq-home),
+  [data-app-shell]:has(.route-page[data-route-path="/darslik"]:has(.yhq-home)) {
     overflow: hidden !important;
     height: calc(100dvh - var(--safe-top-body, 0px)) !important;
     max-height: calc(100dvh - var(--safe-top-body, 0px)) !important;

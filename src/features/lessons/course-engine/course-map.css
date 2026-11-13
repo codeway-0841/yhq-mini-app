@@ -1,0 +1,832 @@
+/* ============================================================
+   “Xarita” — darslik kurs xaritasi (Brilliant uslubidagi ko'rinish).
+   Light va Dark rejimlar to'liq qo'llab-quvvatlanadi (Brilliant uslubida).
+   https://brilliant.org/courses/math-fundamentals/
+   ============================================================ */
+
+.cmap {
+  font-family: var(--font-sans);
+  --cmap-surface: #ffffff;
+  --cmap-card-bg: #ffffff;
+  --cmap-ink: #0b0b0f;
+  --cmap-muted: #9c9ca3;
+  --cmap-edge: #e5e5e7;
+  color: var(--cmap-ink);
+  background: var(--cmap-surface);
+  background-image: none !important;
+  min-height: 100dvh;
+  /* Reference map geometry: every lesson slot is a 128×134 art box. */
+  --cmap-node-w: 128px;
+  --cmap-node-h: 134px;
+  --cmap-label-gap: 8px;
+  /* ilovadan olingan ramka ranglari */
+  --cmap-ring: #7491ff;
+  --cmap-ring-idle: #b3b3b3;
+  --cmap-deep: #294bc6;
+  --cmap-header: calc(52px + var(--safe-top, 0px));
+}
+
+/* ---------------- Dark rejim (Brilliant Math Fundamentals) ---------------- */
+[data-theme='dark'] .cmap,
+:root[data-theme='dark'] .cmap,
+body[data-theme='dark'] .cmap {
+  --cmap-surface: #141414;
+  --cmap-card-bg: #1e1e1e;
+  --cmap-ink: #ffffff;
+  --cmap-muted: #767676;
+  --cmap-edge: #4c4c4c;
+  --cmap-ring: #3b82f6;
+  --cmap-ring-idle: #334155;
+  --cmap-deep: #60a5fa;
+  color: var(--cmap-ink);
+  background: var(--cmap-surface);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cmap,
+  body:not([data-theme='light']) .cmap {
+    --cmap-surface: #141414;
+    --cmap-card-bg: #1e1e1e;
+    --cmap-ink: #ffffff;
+    --cmap-muted: #767676;
+    --cmap-edge: #4c4c4c;
+    --cmap-ring: #3b82f6;
+    --cmap-ring-idle: #334155;
+    --cmap-deep: #60a5fa;
+    color: var(--cmap-ink);
+    background: var(--cmap-surface);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cmap {
+    --cmap-header: 0px;
+  }
+}
+
+/* ---------------- yuqori panel (ilovadagidek, mobil) ---------------- */
+
+.cmap-bar { display: none; }
+
+@media (max-width: 1023px) {
+  .cmap-bar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    height: calc(52px + var(--safe-top, 0px));
+    margin: calc(-1 * var(--safe-top-body, 0px)) -1rem 0;
+    padding: var(--safe-top, 0px) 16px 0;
+    background: var(--cmap-surface);
+  }
+}
+
+.cmap-bar-back {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--cmap-ink);
+  cursor: pointer;
+  transition: transform 0.16s ease;
+}
+
+.cmap-bar-back:active { transform: scale(0.9); }
+
+/* streak pill — 73×37, 2 px #e6e6e6, radius 20 */
+.cmap-streak {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 37px;
+  min-width: 73px;
+  margin-left: 12px;
+  padding: 0 12px 0 14px;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 20px;
+  background: var(--cmap-surface);
+}
+
+.cmap-streak-n {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.3px;
+  color: var(--cmap-ink);
+}
+
+/* scrollda markazda paydo bo'ladigan kurs belgisi */
+.cmap-bar-art {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + var(--safe-top, 0px) / 2);
+  width: 40px;
+  height: 48px;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.32s cubic-bezier(0.32, 1.16, 0.36, 1);
+}
+
+.cmap-bar-art[data-visible='true'] { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+
+.cmap-bar-art img { display: block; width: 40px; height: 48px; object-fit: contain; }
+.cmap-bar-art .learning-mascot { inset: 0; width: 40px; height: 48px; }
+
+.cmap-bar-power {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  padding: 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 50%;
+  background: var(--cmap-surface);
+  color: var(--cmap-edge);
+  cursor: pointer;
+  transition: transform 0.16s ease, color 0.2s ease;
+}
+
+.cmap-bar-power:active { transform: scale(0.92); color: var(--cmap-ink); }
+
+/* ---------------- kurs sarlavhasi (ilovadagi hero) ---------------- */
+
+.cmap-layout { max-width: 476px; }
+
+/* o'lchovlar: art 68×82, nom 26/28, ixcham va toza */
+.cmap-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+.cmap-hero-art {
+  width: 68px;
+  height: 82px;
+  object-fit: contain;
+}
+.cmap-hero-mascot { position: relative; display: block; width: 96px; height: 96px; animation: cmap-mascot-arrive 500ms cubic-bezier(.22, 1, .36, 1) both; }
+.cmap-hero-mascot .learning-mascot { inset: 0; width: 100%; height: 100%; }
+@keyframes cmap-mascot-arrive { from { opacity: 0; transform: translateY(-24px) scale(.92); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .cmap-hero-mascot { animation: none; } }
+.cmap[data-no-animation='true'] .cmap-hero-mascot { animation: none; }
+.cmap[data-node-color='4'] .cmap-node-art[src*='node-completed'], .cmap[data-node-color='4'] .cmap-node-art[src*='node-active'] { filter: hue-rotate(168deg) saturate(1.3); }
+.cmap[data-node-color='5'] .cmap-node-art[src*='node-completed'], .cmap[data-node-color='5'] .cmap-node-art[src*='node-active'] { filter: hue-rotate(45deg); }
+
+.cmap-hero-title {
+  margin: 12px 0 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: var(--cmap-ink);
+}
+
+.cmap-hero-sub {
+  margin: 6px 0 0;
+  max-width: 320px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+}
+
+.cmap-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 10px 0 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #111;
+}
+
+.cmap-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgb(var(--p-warning-rgb, 245 158 11) / 0.14);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.cmap-retry {
+  flex: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cmap-map {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 190px; /* karta uchun joy */
+}
+
+@media (max-width: 600px) {
+  .cmap-hero { margin-right: 15px; padding-top: 65px; }
+  .cmap-hero-art { width: 100px; height: 100px; }
+  .cmap-hero-title { margin-top: 32px; }
+  .cmap-hero-sub { margin-top: 18px; line-height: 24px; }
+  .cmap-hero-meta { margin-top: 24px; }
+  .cmap-map { padding-top: 49px; }
+}
+
+.cmap-glow {
+  position: fixed;
+  inset: auto 0 0;
+  height: 160px;
+  z-index: 9;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--cmap-accent, #7491ff) 20%, transparent));
+}
+
+.cmap[data-scrolled='true'] .cmap-glow { height: 260px; }
+
+/* ---------------- level (blok) ---------------- */
+
+.cmap-level + .cmap-level { margin-top: 34px; }
+
+.cmap-level-sticky {
+  position: sticky;
+  top: calc(var(--cmap-header, 52px) + 2px);
+  z-index: 20;
+  padding: 4px 0 6px;
+  background: var(--cmap-surface);
+  box-shadow: 0 -20px 0 var(--cmap-surface);
+}
+
+.cmap-pill-wrap { margin: 0 8px; }
+
+.cmap-pill {
+  display: flex;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  /* Reference: 344×68 face with a 4px raised lower edge. */
+  min-height: 68px;
+  height: 68px;
+  padding: 8px 16px;
+  border: 2px solid var(--cmap-ring-idle, #cccccc);
+  border-radius: 18px;
+  background: var(--cmap-surface);
+  text-align: center;
+  box-shadow: 0 4px 0 var(--cmap-ring-idle);
+}
+
+.cmap-pill.is-current {
+  border-color: var(--cmap-ring, #7491ff);
+  box-shadow: 0 4px 0 var(--cmap-ring, #7491ff);
+}
+
+.cmap-pill-tag {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: #6f6f6f;
+}
+
+.cmap-pill.is-current .cmap-pill-tag { color: var(--cmap-deep, #294bc6); }
+
+.cmap-pill-title {
+  display: block;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 21px;
+  color: var(--cmap-ink);
+}
+
+.cmap-level[data-complete='true'] .cmap-pill { border-color: var(--cmap-ring, #99aeff); }
+.cmap-level[data-complete='true'] .cmap-pill-tag { color: var(--cmap-deep, #294bc6); }
+
+@media (max-width: 600px) {
+  .cmap-pill-wrap { margin: 0 15px 0 0; }
+  .cmap-pill { min-height: 64px; height: auto; }
+}
+
+/* ---------------- tugunlar ---------------- */
+
+.cmap-lessons {
+  list-style: none;
+  /* 134px art + 30px gap = 164px pitch. */
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 600px) {
+  .cmap-lessons { width: calc(100% + 17px); margin: 119px 0 0 -16px; }
+}
+
+.cmap-row {
+  position: relative;
+  height: 134px;
+  --cmap-wave-space: max(0px, calc(100% - 274px));
+  --cmap-effective-off: var(--off, 0px);
+}
+
+.cmap-node {
+  position: relative;
+  display: block;
+  height: 134px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cmap-node-art-wrap {
+  position: relative;
+  display: block;
+  width: var(--cmap-node-w);
+  height: var(--cmap-node-h);
+  margin-left: var(--cmap-effective-off);
+}
+
+.cmap-node-rive {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cmap-node-art {
+  position: relative;
+  width: var(--cmap-node-w);
+  height: var(--cmap-node-h);
+  display: block;
+  transition: filter 0.12s ease;
+}
+
+.cmap-node-mascot {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 68px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.cmap-node-mascot .learning-mascot {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cmap-node-mascot .mascot-canvas-host {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 0;
+  background: transparent;
+}
+
+.cmap-node-label {
+  position: absolute;
+  top: 91px;
+  left: calc(var(--cmap-effective-off) + 136px);
+  transform: translateY(-50%);
+  width: min(138px, calc(100% - var(--cmap-effective-off) - 136px));
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--cmap-muted);
+  transition: font-size 0.18s ease, color 0.18s ease;
+}
+
+.cmap-node.is-focus .cmap-node-label,
+.cmap-node.is-active .cmap-node-label {
+  top: 91px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--cmap-ink);
+}
+
+.cmap-node.is-done:not(.is-focus) .cmap-node-label {
+  color: var(--cmap-muted);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.cmap-node[aria-disabled='true'] { cursor: default; }
+
+.cmap-node:focus-visible {
+  outline: 2px solid var(--cmap-ring);
+  outline-offset: 6px;
+  border-radius: 18px;
+}
+
+@media (hover: hover) {
+  .cmap-node:hover:not([aria-disabled='true']) .cmap-node-art { filter: brightness(0.92); }
+}
+
+/* ---------------- tanlangan mavzu kartasi ---------------- */
+
+/* Ekran tubidagi karta: mavzu o'zgarsa sarlavha yangilanadi. */
+.cmap-sheet {
+  position: fixed;
+  left: var(--cmap-center, 50%);
+  bottom: calc(24px + var(--safe-bottom, 0px));
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: min(calc(100vw - 48px), 456px);
+  min-height: 150px;
+  padding: 24px 16px 16px;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 40px;
+  background: var(--cmap-card-bg);
+  box-shadow: 0 5px 0 var(--cmap-edge), 0 20px 44px rgb(69 109 255 / 0.15);
+  transform: translate(-50%, calc(100% + 60px + var(--safe-bottom, 0px)));
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.46s cubic-bezier(0.32, 1.16, 0.36, 1), opacity 0.25s ease;
+}
+
+.cmap-sheet[data-open='true'] {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cmap-sheet-title {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: var(--cmap-ink);
+}
+
+.cmap-sheet-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.cmap-start {
+  --cta-face: var(--cmap-button, #456dff);
+  --cta-lip: var(--cmap-button-shadow, #375ce3);
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 52px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 9999px;
+  background: var(--cta-face);
+  box-shadow: 0 4px 0 0 var(--cta-lip);
+  color: var(--cmap-button-text, #fff);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 100ms ease-out, filter 100ms ease-out;
+}
+
+.cmap-start:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+
+.cmap-start:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 0 var(--cta-lip);
+  transition: transform 60ms ease-out, box-shadow 60ms ease-out;
+}
+
+.cmap-start-label { position: relative; z-index: 3; display: inline-block; }
+
+.cmap-start[data-loading='true'] .cmap-start-label { opacity: 0; }
+
+.cmap-start-spinner {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid rgb(255 255 255 / 0.35);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: cmap-spin 0.7s linear infinite;
+}
+
+@keyframes cmap-spin { to { transform: rotate(360deg); } }
+
+.cmap-revisit {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 50%;
+  background: var(--cmap-card-bg);
+  color: var(--cmap-ink);
+  cursor: pointer;
+}
+
+.cmap-revisit:focus-visible { outline: 2px solid var(--cmap-ring); outline-offset: 3px; }
+
+.cmap-start-sheen {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.cmap-start-sheen-mover {
+  position: absolute;
+  inset: 0;
+  animation: cmap-sheen 6.4s cubic-bezier(0.16, 1, 0.7, 1) infinite;
+}
+
+.cmap-start-sheen-mover svg { position: absolute; top: 0; left: 0; }
+
+@keyframes cmap-sheen {
+  0% { transform: translateX(-100%); opacity: 1; }
+  25% { transform: translateX(100%); opacity: 1; }
+  26%, 100% { transform: translateX(100%); opacity: 0; }
+}
+
+.cmap-start:focus-visible {
+  outline: 2px solid var(--cmap-ring);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .cmap-sheet { bottom: calc(40px + var(--safe-bottom, 0px)); }
+}
+
+/* Oldindagi (hali ochilmagan) mavzu — ilovadagi “Jump ahead” gradienti.
+   Yuz — 7 to'xtashli gradient, qirra — o'sha gradientning 70 % yorqinligi
+   (ilovada piksel bo'yicha tekshirilgan), matn to'q (#221131). */
+.cmap-sheet[data-ahead='true'] .cmap-start {
+  --cta-face: linear-gradient(
+    93deg,
+    #7891fe 1%,
+    #a491f4 16%,
+    #d190ea 31%,
+    #ff94d8 50%,
+    #fdabaa 68%,
+    #fbbe85 83%,
+    #f9cf62 97%
+  );
+  --cta-lip: #7265aa;
+  color: #221131;
+}
+.cmap[data-themed='true'] .cmap-sheet[data-ahead='true'] .cmap-start { --cta-face: var(--cmap-button); --cta-lip: var(--cmap-button-shadow); color: var(--cmap-button-text); }
+
+.cmap-jump {
+  position: fixed;
+  left: max(24px, calc(var(--cmap-center, 50%) - 172px));
+  bottom: calc(40px + var(--safe-bottom, 0px));
+  z-index: 25;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid var(--cmap-edge);
+  border-radius: 50%;
+  background: var(--cmap-surface);
+  color: var(--cmap-ink);
+  cursor: pointer;
+  transition: bottom 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cmap-jump[data-scrolled='true'] {
+  /* Asl ilovada tugma pastki varaqning yuqori chizig'idan 17 px ajralgan. */
+  bottom: calc(191px + var(--safe-bottom, 0px));
+}
+
+@media (max-width: 600px) {
+  .cmap-jump[data-scrolled='true'] {
+    bottom: calc(206px + var(--safe-bottom, 0px));
+  }
+}
+
+.cmap-jump[data-scrolled='true'] svg { transform: rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cmap-jump { transition: none; }
+  .cmap-start-sheen-mover { animation: none; opacity: 0; }
+}
+
+@media (min-width: 1024px) {
+  .cmap-glow { display: none; }
+}
+
+@media (min-width: 1200px) {
+  .cmap-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 476px;
+    align-items: start;
+    gap: 24px;
+    max-width: 1000px;
+    padding-top: 32px;
+  }
+
+  .cmap-hero {
+    position: sticky;
+    top: 32px;
+    align-items: flex-start;
+    padding: 36px 32px;
+    border: 2px solid var(--cmap-edge);
+    border-radius: 20px;
+    background: var(--cmap-card-bg);
+    text-align: left;
+  }
+
+  .cmap-hero-art { width: 100px; height: 100px; }
+  .cmap-hero-title { margin-top: 24px; }
+  .cmap-hero-sub { margin-top: 16px; max-width: none; }
+  .cmap-hero-meta { margin-top: 24px; }
+  .cmap-map { padding-top: 0; }
+}
+
+@media (min-width: 1024px) {
+  .cmap { --cmap-node-w: 128px; --cmap-node-h: 134px; }
+  .cmap-map { padding-bottom: 210px; }
+}
+
+/* ---------------- Dark tema qo'shimcha komponentlari (Brilliant dark mode) ---------------- */
+[data-theme='dark'] .cmap-streak {
+  background: #161922;
+  border-color: #27272a;
+}
+[data-theme='dark'] .cmap-bar-power {
+  background: #161922;
+  border-color: #27272a;
+  color: #f59e0b;
+}
+[data-theme='dark'] .cmap-hero-sub {
+  color: #a0a0a0;
+}
+[data-theme='dark'] .cmap-hero-meta {
+  color: #cbd5e1;
+}
+[data-theme='dark'] .cmap-pill {
+  background: #141414;
+  border-color: #222634;
+  box-shadow: 0 4px 0 #1b1e2a;
+  color: #ffffff;
+}
+[data-theme='dark'] .cmap-pill.is-current {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 0 #1d4ed8;
+}
+[data-theme='dark'] .cmap-pill-tag {
+  color: #94a3b8;
+}
+[data-theme='dark'] .cmap-pill.is-current .cmap-pill-tag {
+  color: #60a5fa;
+}
+[data-theme='dark'] .cmap-node-art[src*='node-puck'] {
+  filter: brightness(0.68) contrast(1.15);
+}
+[data-theme='dark'] .cmap-node-art[src*='node-check'] {
+  filter: brightness(0.85) contrast(1.1);
+}
+[data-theme='dark'] .cmap-sheet {
+  background: #1e1e1e;
+  border-color: #4c4c4c;
+  box-shadow: 0 4px 0 #363636, 0 20px 44px rgb(0 0 0 / 0.5);
+}
+[data-theme='dark'] .cmap-jump {
+  background: #161922;
+  border-color: #27272a;
+  color: #ffffff;
+}
+[data-theme='dark'] .cmap-glow {
+  background: linear-gradient(to bottom, transparent, rgb(37 99 235 / 0.15));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .cmap-streak {
+    background: #161922;
+    border-color: #27272a;
+  }
+  :root:not([data-theme='light']) .cmap-bar-power {
+    background: #161922;
+    border-color: #27272a;
+    color: #f59e0b;
+  }
+  :root:not([data-theme='light']) .cmap-hero-sub {
+    color: #a0a0a0;
+  }
+  :root:not([data-theme='light']) .cmap-hero-meta {
+    color: #cbd5e1;
+  }
+  :root:not([data-theme='light']) .cmap-pill {
+    background: #141414;
+    border-color: #222634;
+    box-shadow: 0 4px 0 #1b1e2a;
+    color: #ffffff;
+  }
+  :root:not([data-theme='light']) .cmap-pill.is-current {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 0 #1d4ed8;
+  }
+  :root:not([data-theme='light']) .cmap-pill-tag {
+    color: #94a3b8;
+  }
+  :root:not([data-theme='light']) .cmap-pill.is-current .cmap-pill-tag {
+    color: #60a5fa;
+  }
+  :root:not([data-theme='light']) .cmap-node-art[src*='node-puck'] {
+    filter: brightness(0.68) contrast(1.15);
+  }
+  :root:not([data-theme='light']) .cmap-node-art[src*='node-check'] {
+    filter: brightness(0.85) contrast(1.1);
+  }
+  :root:not([data-theme='light']) .cmap-sheet {
+    background: #1e1e1e;
+    border-color: #4c4c4c;
+    box-shadow: 0 4px 0 #363636, 0 20px 44px rgb(0 0 0 / 0.5);
+  }
+  :root:not([data-theme='light']) .cmap-jump {
+    background: #161922;
+    border-color: #27272a;
+    color: #ffffff;
+  }
+  :root:not([data-theme='light']) .cmap-glow {
+    background: linear-gradient(to bottom, transparent, rgb(37 99 235 / 0.15));
+  }
+}
+
+/* Match the selected chapter after the light/dark overrides above. */
+body .cmap[data-themed='true'] .cmap-pill.is-current { border-color: var(--cmap-ring); box-shadow: 0 4px 0 var(--cmap-deep); }
+body .cmap[data-themed='true'] .cmap-pill.is-current .cmap-pill-tag { color: var(--cmap-ring); }
+body .cmap[data-themed='true'] .cmap-glow { background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--cmap-accent) 20%, transparent)); }
+
+html:has(.cmap),
+body:has(.cmap),
+#root:has(.cmap),
+.route-page:has(.cmap),
+[data-app-shell]:has(.cmap) {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+body[data-theme='dark']:has(.cmap),
+html:has(body[data-theme='dark'] .cmap),
+#root:has(body[data-theme='dark'] .cmap),
+body[data-theme='dark'] .route-page:has(.cmap),
+body[data-theme='dark'] [data-app-shell]:has(.cmap) {
+  background-color: #141414 !important;
+  background-image: none !important;
+}
+.route-page:has(.cmap) {
+  padding-bottom: 0 !important;
+}

@@ -84,6 +84,13 @@ describe('Universal Brilliant Course Home across subjects', () => {
 
       fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
       await waitFor(() => {
+        expect(document.querySelector('[data-course="fizika-map"]')).toBeInTheDocument()
+      })
+      expect(screen.getAllByText('BOB 1').length).toBeGreaterThan(0)
+      expect(screen.getAllByText('Termodinamika qonunlari').length).toBeGreaterThan(0)
+
+      fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
+      await waitFor(() => {
         expect(screen.getByTestId('test-route-page')).toBeInTheDocument()
       })
     } finally {
@@ -149,6 +156,13 @@ describe('Universal Brilliant Course Home across subjects', () => {
 
       fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
       await waitFor(() => {
+        expect(document.querySelector('[data-course="rusadabiyot-map"]')).toBeInTheDocument()
+        expect(screen.getByRole('button', { name: 'Boshlash' })).toBeInTheDocument()
+      })
+      expect(screen.getAllByText('DAVR 1').length).toBeGreaterThan(0)
+
+      fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
+      await waitFor(() => {
         expect(screen.getByText('Davr 1')).toBeInTheDocument()
       })
     } finally {
@@ -167,7 +181,7 @@ describe('Universal Brilliant Course Home across subjects', () => {
       'utf8',
     )
 
-    expect(learningPathCss).toContain('.route-page[data-route-path="/darslik"]:not(:has(.rus-home))')
+    expect(learningPathCss).toContain('.route-page[data-route-path="/darslik"]:has(.yhq-home)')
     expect(learningPathCss).not.toMatch(/data-route-path="\/darslik"[\s\S]{0,400}margin-top:\s*calc\(-1\s*\*\s*var\(--safe-top-body/)
     expect(brilliantCss).toMatch(/\.rus-home\s*\{[\s\S]*?margin-top:\s*0;/)
 
