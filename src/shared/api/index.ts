@@ -836,8 +836,11 @@ export const api = {
   getDaily: (userId: string, date: string, subject: string) =>
     request<DailyState>('GET', `/daily/${uid(userId)}?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
 
-  getDailyHistory: (userId: string, date: string, subject: string) =>
-    request<DailyHistory>('GET', `/daily/${uid(userId)}/history?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}`),
+  getDailyHistory: (userId: string, date: string, subject: string, opts?: { global?: boolean }) =>
+    request<DailyHistory>(
+      'GET',
+      `/daily/${uid(userId)}/history?date=${encodeURIComponent(date)}&subject=${encodeURIComponent(subject)}${opts?.global ? '&scope=global' : ''}`,
+    ),
 
   addDailyFix: (userId: string, data: { subjectId: string }) =>
     request<{ ok: true }>('POST', `/daily/${uid(userId)}/fix`, data),
@@ -846,7 +849,7 @@ export const api = {
     request<{ stats: AchievementStats }>('GET', `/achievements/${uid(userId)}`),
 
   touchDailyActivity: (userId: string, data: { subjectId: string }) =>
-    request<{ ok: true; dailyStreak: number; coinSaved?: boolean }>('POST', `/daily/${uid(userId)}/activity`, data),
+    request<{ ok: true; dailyStreak: number; coinSaved?: boolean; streakCharges?: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 
   // ── Spaced Repetition (Adaptive Mode) Cards ────────────────────────────
   getCards: (userId: string, subjectId: string) =>

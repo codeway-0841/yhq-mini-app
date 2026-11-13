@@ -15,6 +15,7 @@ import {
   chargeSaveEligibleSql,
   chargesValueSql,
   coinSaveEligibleSql,
+  lastDailyDateValueSql,
   streakValueSql,
 } from '../daily/streak-save-sql'
 import { issueLaunchToken } from '../test-sessions/launch-token'
@@ -279,23 +280,34 @@ export const progressRepository = {
           fixed = daily_records.fixed + EXCLUDED.fixed
         RETURNING id, answered
       ), streak_qualified AS (
-        -- Streak faqat >= 15 ta savolga urinish (xato/to'g'ri farqsiz) YOKI
+        -- Streak barcha fanlar bo'yicha bugun >= 15 ta savolga urinish YOKI
         -- server-tasdiqlangan to'liq bilet/test yakunlanganda beriladi.
         SELECT (
           EXISTS (SELECT 1 FROM record_upsert)
           AND (
             ${streakQualifiedFlag}::boolean
-            OR (SELECT answered FROM record_upsert) >= ${STREAK_DAILY_MIN_ANSWERS}::int
+            OR (
+              COALESCE((
+                SELECT SUM(dr.answered) FROM daily_records dr
+                WHERE dr.user_id = ${userId} AND dr.date = ${date} AND dr.subject_id <> ${subjectId}
+              ), 0) + (SELECT answered FROM record_upsert)
+            ) >= ${STREAK_DAILY_MIN_ANSWERS}::int
           )
         ) AS ok
       ), streak_upsert AS (
         INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
-        SELECT ${userId}, ${subjectId}, 1, 0, ${date}, now()
+        SELECT
+          ${userId},
+          ${subjectId},
+          ${streakValueSql(ctx, chargeEligible, coinEligible)},
+          ${chargesValueSql(ctx, chargeEligible)},
+          ${lastDailyDateValueSql(ctx)},
+          now()
         WHERE (SELECT ok FROM streak_qualified)
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
           streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
           charges = ${chargesValueSql(ctx, chargeEligible)},
-          last_daily_date = GREATEST(COALESCE(daily_streaks.last_daily_date, EXCLUDED.last_daily_date), EXCLUDED.last_daily_date),
+          last_daily_date = ${lastDailyDateValueSql(ctx)},
           updated_at = now()
         RETURNING streak, charges,
           (${chargeEligible}) AS charge_saved,

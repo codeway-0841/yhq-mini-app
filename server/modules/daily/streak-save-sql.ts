@@ -26,16 +26,28 @@ interface Ctx {
   date:      string
 }
 
-/** Upsert'gacha bo'lgan oxirgi faollik sanasi (NULL — ilk qator) */
-function prevDateSql({ userId, subjectId }: Ctx): SQL {
+/** Upsert'gacha bo'lgan global oxirgi faollik sanasi (NULL — ilk qator) */
+function prevDateSql({ userId }: Ctx): SQL {
   return sql`(SELECT s.last_daily_date FROM daily_streaks s
-              WHERE s.user_id = ${userId} AND s.subject_id = ${subjectId})`
+              WHERE s.user_id = ${userId}
+              ORDER BY s.last_daily_date DESC NULLS LAST, s.updated_at DESC, s.streak DESC
+              LIMIT 1)`
 }
 
-/** Upsert'gacha bo'lgan seriya zaryadlari (0..2) */
-export function prevChargesSql({ userId, subjectId }: Ctx): SQL {
+/** Upsert'gacha bo'lgan global seriya qiymati (0 — ilk qator) */
+export function prevStreakSql({ userId }: Ctx): SQL {
+  return sql`COALESCE((SELECT s.streak FROM daily_streaks s
+                       WHERE s.user_id = ${userId}
+                       ORDER BY s.last_daily_date DESC NULLS LAST, s.updated_at DESC, s.streak DESC
+                       LIMIT 1), 0)`
+}
+
+/** Upsert'gacha bo'lgan global seriya zaryadlari (0..2) */
+export function prevChargesSql({ userId }: Ctx): SQL {
   return sql`COALESCE((SELECT s.charges FROM daily_streaks s
-                       WHERE s.user_id = ${userId} AND s.subject_id = ${subjectId}), 0)`
+                       WHERE s.user_id = ${userId}
+                       ORDER BY s.last_daily_date DESC NULLS LAST, s.updated_at DESC, s.streak DESC
+                       LIMIT 1), 0)`
 }
 
 /** Ketma-ket TO'LIQ o'tkazib yuborilgan kunlar soni (0 = kecha faol bo'lgan) */
@@ -64,43 +76,53 @@ export function coinSaveEligibleSql(ctx: Ctx): SQL {
   ), false)`
 }
 
+/** Yangi `last_daily_date` qiymati (INSERT ham, UPDATE ham global snapshot'ga tayanadi) */
+export function lastDailyDateValueSql(ctx: Ctx): SQL {
+  return sql`GREATEST(COALESCE((${prevDateSql(ctx)}), ${ctx.date}), ${ctx.date})`
+}
+
 /**
- * `streak` ustunining yangi qiymati (`ON CONFLICT DO UPDATE SET streak = ...`).
+ * `streak` ustunining yangi qiymati (INSERT ham, ON CONFLICT UPDATE ham bir xil global formulani ishlatadi).
  * Zaryad yoki coin bilan saqlanganda seriya SAQLANADI (o'smaydi!).
  */
 export function streakValueSql(ctx: Ctx, chargeEligible: SQL, coinEligible: SQL): SQL {
   const gap = gapDaysSql(ctx)
+  const prevDate = prevDateSql(ctx)
+  const prevStreak = prevStreakSql(ctx)
   return sql`CASE
-    WHEN daily_streaks.last_daily_date >= ${ctx.date}
-      THEN daily_streaks.streak
-    WHEN daily_streaks.last_daily_date IS NULL
+    WHEN (${prevDate}) >= ${ctx.date}
+      THEN (${prevStreak})
+    WHEN (${prevDate}) IS NULL
       THEN 1
     WHEN ${gap} = 0
-      THEN daily_streaks.streak + 1
+      THEN (${prevStreak}) + 1
     WHEN ${chargeEligible} OR ${coinEligible}
-      THEN daily_streaks.streak
+      THEN (${prevStreak})
     ELSE 1
   END`
 }
 
 /**
- * `charges` ustunining yangi qiymati (`ON CONFLICT DO UPDATE SET charges = ...`).
- *  - Shu kunda qayta faollik -> o'zgarmaydi
+ * `charges` ustunining yangi qiymati (INSERT ham, ON CONFLICT UPDATE ham global snapshot'ga tayanadi).
+ *  - Shu kunda qayta faollik (boshqa fanda bo'lsa ham) -> o'zgarmaydi
  *  - gapDays = 1 + charge > 0 -> 1 ta zaryad sarflanadi
  *  - gapDays = 0 va yangi streak 7 ga karrali -> +1 zaryad (max STREAK_CHARGE_MAX)
  *  - Qolgan barcha holat -> saqlanadi (zaryad eskirmaydi)
  */
 export function chargesValueSql(ctx: Ctx, chargeEligible: SQL): SQL {
   const gap = gapDaysSql(ctx)
+  const prevDate = prevDateSql(ctx)
+  const prevStreak = prevStreakSql(ctx)
+  const prevCharges = prevChargesSql(ctx)
   return sql`CASE
-    WHEN daily_streaks.last_daily_date >= ${ctx.date}
-      THEN daily_streaks.charges
+    WHEN (${prevDate}) >= ${ctx.date}
+      THEN (${prevCharges})
     WHEN ${chargeEligible}
-      THEN GREATEST(0, daily_streaks.charges - 1)
+      THEN GREATEST(0, (${prevCharges}) - 1)
     WHEN ${gap} = 0
-      AND ((daily_streaks.streak + 1) % ${STREAK_CHARGE_EARN_EVERY}::int = 0)
-      THEN LEAST(${STREAK_CHARGE_MAX}::int, daily_streaks.charges + 1)
-    ELSE daily_streaks.charges
+      AND (((${prevStreak}) + 1) % ${STREAK_CHARGE_EARN_EVERY}::int = 0)
+      THEN LEAST(${STREAK_CHARGE_MAX}::int, (${prevCharges}) + 1)
+    ELSE (${prevCharges})
   END`
 }
 

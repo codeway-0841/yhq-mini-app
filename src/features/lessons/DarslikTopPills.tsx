@@ -6,13 +6,20 @@ import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon
 import ModalShell from '../../shared/components/ModalShell'
 import { Button } from '../../shared/components/ui/button'
 import { haptics } from '../../platform/haptics'
-import type { LeagueWeekly } from '../../shared/api'
+import { api, type DailyHistory, type DailyHistoryRow, type LeagueWeekly } from '../../shared/api'
 import { useT } from '../../shared/i18n'
 import { cn } from '../../shared/lib/cn'
 import { leaderboardPageCaches } from '../../shared/lib/leaderboard-cache'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { doneKeyOf, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
+import {
+  isSubjectExtendedOnDate,
+  selectDailyCharges,
+  selectDailyStreak,
+  todayStr,
+  useDailyStore,
+} from '../../shared/store/useDailyStore'
+import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import {
   BRILLIANT_LEAGUES,
   LeagueShield,
@@ -117,26 +124,40 @@ export const BrilliantBoltBadge = memo(function BrilliantBoltBadge({
 
 function ChargeBatteryIcon({ active }: { active: boolean }) {
   return (
-    <svg viewBox="0 0 20 28" width={19} height={26} fill="none" aria-hidden="true">
+    <svg viewBox="0 0 22 30" width={21} height={29} fill="none" aria-hidden="true">
       <rect
-        x="6.5"
+        x="7"
         y="1"
-        width="7"
-        height="2.8"
-        rx="1.1"
-        fill={active ? '#BBE824' : 'var(--yhq-sheet-battery-off, #e2e2e5)'}
+        width="8"
+        height="3.1"
+        rx="1.2"
+        fill={active ? '#C6EF1D' : 'var(--yhq-sheet-battery-off, #e2e2e5)'}
       />
       <rect
         x="2"
-        y="4.2"
-        width="16"
-        height="22"
-        rx="4"
-        fill={active ? '#C4EB1F' : 'var(--yhq-sheet-battery-off, #e2e2e5)'}
+        y="4.6"
+        width="18"
+        height="24"
+        rx="4.5"
+        fill={active ? '#D2F324' : 'var(--yhq-sheet-battery-off, #e2e2e5)'}
       />
       <path
-        d="M6.8 15.2L10.7 10.2C10.95 9.9 11.42 10.1 11.35 10.48L10.75 14H13.2C13.66 14 13.92 14.52 13.63 14.88L9.75 19.85C9.5 20.16 9.02 19.95 9.09 19.57L9.68 16.05H7.22C6.76 16.05 6.5 15.54 6.8 15.2Z"
+        d="M7.2 16.4L11.4 11C11.67 10.67 12.18 10.89 12.1 11.3L11.46 15.1H14.12C14.62 15.1 14.9 15.66 14.59 16.05L10.38 21.42C10.11 21.75 9.6 21.53 9.68 21.12L10.31 17.32H7.65C7.15 17.32 6.87 16.76 7.2 16.4Z"
         fill={active ? '#111111' : 'var(--yhq-sheet-battery-bolt-off, #ffffff)'}
+      />
+    </svg>
+  )
+}
+
+/** 5-kunlik zanjirda zaryad bilan saqlab qolingan (freeze) kun uchun qora batareya belgisi. */
+function StreakDayBatteryGlyph() {
+  return (
+    <svg viewBox="0 0 18 24" width={16} height={21} fill="none" aria-hidden="true">
+      <rect x="6" y="1" width="6" height="2.4" rx="1" fill="#111111" />
+      <rect x="2" y="3.8" width="14" height="19" rx="3.4" fill="#111111" />
+      <path
+        d="M6.3 13.1L9.5 9C9.71 8.74 10.11 8.91 10.05 9.23L9.56 12.1H11.6C11.98 12.1 12.2 12.53 11.96 12.83L8.75 16.94C8.54 17.2 8.15 17.03 8.21 16.71L8.69 13.8H6.65C6.27 13.8 6.06 13.38 6.3 13.1Z"
+        fill="#d6f329"
       />
     </svg>
   )
@@ -153,6 +174,102 @@ export interface DarslikTopPillsProps {
 const WEEKDAYS_UZ = ['Ya', 'Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh']
 const WEEKDAYS_RU = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
 const AVATAR_COLORS = ['#f5b800', '#3557ff', '#ff5d5d', '#22c55e', '#a855f7', '#0ea5e9']
+
+export type StreakDayStatus = 'completed' | 'saved' | 'idle'
+
+export interface StreakWeekDay {
+  key: string
+  date: string
+  label: string
+  status: StreakDayStatus
+  isToday: boolean
+}
+
+function shiftIsoDate(isoDate: string, deltaDays: number): { date: string; dayIndex: number } {
+  const parts = isoDate.split('-').map(Number)
+  const utc = new Date(Date.UTC(parts[0] || 2026, (parts[1] || 1) - 1, (parts[2] || 1) + deltaDays))
+  return {
+    date: utc.toISOString().slice(0, 10),
+    dayIndex: utc.getUTCDay(),
+  }
+}
+
+/**
+ * Brilliant uslubidagi 5 kunlik oyna (chapdan o'ngga bugun o'ng chetda):
+ * - completed: foydalanuvchi o'sha kuni topshiriq bajargan (chayqalmas chaqmoq)
+ * - saved: faol zanjir ichida 1 kunlik tanaffus batareya zaryadi bilan saqlangan (batareya belgisi)
+ * - idle: bo'sh/hali bajarilmagan kun
+ */
+export function buildStreakWeekDays({
+  today,
+  streak,
+  isExtendedToday,
+  historyRows = [],
+  ru = false,
+}: {
+  today: string
+  streak: number
+  isExtendedToday: boolean
+  historyRows?: DailyHistoryRow[]
+  ru?: boolean
+}): StreakWeekDay[] {
+  const labels = ru ? WEEKDAYS_RU : WEEKDAYS_UZ
+  const activeSet = new Set(historyRows.filter((r) => r.answered > 0).map((r) => r.date))
+  if (isExtendedToday) activeSet.add(today)
+
+  const savedDates = new Set<string>()
+  if (streak > 0 && activeSet.size > 0) {
+    const todayMinus1 = shiftIsoDate(today, -1).date
+    const todayMinus2 = shiftIsoDate(today, -2).date
+    let cursor: string | null = activeSet.has(today)
+      ? today
+      : activeSet.has(todayMinus1)
+        ? todayMinus1
+        : activeSet.has(todayMinus2)
+          ? todayMinus2
+          : null
+
+    let counted = 0
+    while (cursor && counted < streak) {
+      counted += 1
+      const prev1 = shiftIsoDate(cursor, -1).date
+      if (activeSet.has(prev1)) {
+        cursor = prev1
+        continue
+      }
+      const prev2 = shiftIsoDate(cursor, -2).date
+      if (counted < streak && activeSet.has(prev2)) {
+        savedDates.add(prev1)
+        cursor = prev2
+        continue
+      }
+      break
+    }
+  }
+
+  const coveredDays = isExtendedToday ? Math.max(0, streak - 1) : streak
+  const useHistory = activeSet.size > 0
+
+  return Array.from({ length: 5 }, (_, offsetIdx) => {
+    const daysAgo = 4 - offsetIdx
+    const { date, dayIndex } = shiftIsoDate(today, -daysAgo)
+    let status: StreakDayStatus = 'idle'
+    if (useHistory) {
+      if (activeSet.has(date)) status = 'completed'
+      else if (savedDates.has(date)) status = 'saved'
+    } else if (daysAgo === 0 ? isExtendedToday : streak > 0 && daysAgo <= coveredDays) {
+      status = 'completed'
+    }
+
+    return {
+      key: `${offsetIdx}-${date}`,
+      date,
+      label: labels[dayIndex],
+      status,
+      isToday: daysAgo === 0,
+    }
+  })
+}
 
 function pickAvatarColor(seed: string): string {
   let sum = 0
@@ -185,14 +302,38 @@ export const DarslikTopPills = memo(function DarslikTopPills({
   const tt = useT(lang)
   const ru = lang === 'ru'
 
-  const streak = useDailyStore((s) => s.streaks[subjectId] ?? 0)
-  const charges = useDailyStore((s) => s.charges[subjectId] ?? 0)
+  const streak = useDailyStore((s) => selectDailyStreak(s, subjectId))
+  const charges = useDailyStore((s) => selectDailyCharges(s, subjectId))
+  const globalStreak = useDailyStore((s) => s.globalStreak)
+  const globalExtendedDate = useDailyStore((s) => s.globalExtendedDate)
   const activityKey = useDailyStore((s) => s.activityKey)
-  const isExtendedToday = activityKey === doneKeyOf(todayStr(), subjectId)
+  const extendedDates = useDailyStore((s) => s.extendedDates)
+  const today = todayStr()
+  const isExtendedToday = isSubjectExtendedOnDate(
+    { globalExtendedDate, activityKey, extendedDates },
+    today,
+    subjectId,
+  )
 
   const [weekly, setWeekly] = useState<LeagueWeekly | null>(() => leaderboardPageCaches.weekly.peek())
+  const [globalHistory, setGlobalHistory] = useState<DailyHistory | undefined>(undefined)
   const [sheet, setSheet] = useState<'keys' | 'league' | 'streak' | null>(null)
   const keyCount = isPremium ? Math.max(1, completedCount) : 1
+  const currentHistory = globalHistory
+
+  useEffect(() => {
+    if (!user?.id || user.id === '0') return
+    let alive = true
+    const currentDate = todayStr()
+    useDailyStore.getState().sync(user.id, currentDate, subjectId)
+    api.getDailyHistory(user.id, currentDate, subjectId, { global: true })
+      .then((hist) => {
+        if (!alive) return
+        setGlobalHistory(hist)
+      })
+      .catch(() => {})
+    return () => { alive = false }
+  }, [user?.id, subjectId, activityKey, globalStreak, sheet])
 
   useEffect(() => {
     if (!user?.id || user.id === '0') return
@@ -355,24 +496,17 @@ export const DarslikTopPills = memo(function DarslikTopPills({
   }, [sheet, leagueEntries, noAnimation])
 
   // Brilliant uslubidagi 5 kunlik hafta oynasi (so'nggi 5 kun: bugungi kun o'ng chetda)
-  const weekDays = useMemo(() => {
-    const labels = ru ? WEEKDAYS_RU : WEEKDAYS_UZ
-    const now = new Date()
-    const todayDay = now.getDay() // Sun=0 .. Sat=6
-    const coveredDays = isExtendedToday ? Math.max(0, streak - 1) : streak
-
-    return Array.from({ length: 5 }, (_, offsetIdx) => {
-      const daysAgo = 4 - offsetIdx
-      const dayIndex = (todayDay - daysAgo + 7) % 7
-      const lit = daysAgo === 0 ? isExtendedToday : streak > 0 && daysAgo <= coveredDays
-      return {
-        key: `${offsetIdx}-${dayIndex}`,
-        label: labels[dayIndex],
-        lit,
-        isToday: daysAgo === 0,
-      }
-    })
-  }, [ru, streak, isExtendedToday])
+  const weekDays = useMemo(
+    () => buildStreakWeekDays({
+      today,
+      streak,
+      isExtendedToday,
+      historyRows: currentHistory?.rows,
+      ru,
+    }),
+    [today, streak, isExtendedToday, currentHistory?.rows, ru],
+  )
+  const maxStreak = Math.max(streak, currentHistory?.bestStreak ?? 0)
 
   const openSheet = (target: 'keys' | 'league' | 'streak') => {
     playSound('click')
@@ -623,51 +757,63 @@ export const DarslikTopPills = memo(function DarslikTopPills({
         >
           <div className="pt-3 pb-2">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2.5">
-                <span className="font-display text-[42px] font-extrabold leading-none tracking-tight tabular-nums">
+              <div className="flex items-center gap-2">
+                <span className="font-display text-[44px] font-extrabold leading-none tracking-tight tabular-nums">
                   {streak}
                 </span>
-                <BrilliantBoltBadge active={isExtendedToday} size={32} />
+                <BrilliantBoltBadge active={isExtendedToday} size={30} />
               </div>
-              <div className="flex items-center gap-1.5" aria-label={ru ? `Заряды: ${charges}/2` : `Zaryadlar: ${charges}/2`}>
+              <div className="flex items-center gap-2" aria-label={ru ? `Заряды: ${charges}/2` : `Zaryadlar: ${charges}/2`}>
                 {[0, 1].map((slot) => (
                   <ChargeBatteryIcon key={slot} active={slot < charges} />
                 ))}
               </div>
             </div>
 
-            <p className="mt-3.5 text-[15.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
+            <p className="mt-4 text-[15px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
               {isExtendedToday
                 ? (ru ? 'Отлично! Сегодняшняя серия уже засчитана.' : 'Ajoyib! Bugungi seriya hisobga olindi.')
-                : (ru
-                  ? <>Пройдите <strong className="font-bold">1 урок</strong>, чтобы продлить серию</>
-                  : <>Seriyani uzaytirish uchun <strong className="font-bold">1 ta dars</strong> yeching</>)}
+                : subjectId === RUSSIAN_SUBJECT_ID
+                  ? (ru
+                    ? <>Пройдите <strong className="font-bold">1 урок</strong>, чтобы продлить серию</>
+                    : <>Seriyani uzaytirish uchun <strong className="font-bold">1 ta dars</strong> yeching</>)
+                  : (ru
+                    ? <>Решите <strong className="font-bold">5+ вопросов</strong> теста, чтобы продлить серию</>
+                    : <>Seriyani uzaytirish uchun <strong className="font-bold">5+ savollik</strong> test yeching</>)}
             </p>
 
             <div className="mt-5 grid grid-cols-5 gap-2 text-center">
-              {weekDays.map((day) => (
-                <div key={day.key} className="flex flex-col items-center gap-1.5">
-                  <div
-                    className="flex size-[50px] items-center justify-center rounded-full transition-colors"
-                    style={day.lit
-                      ? { backgroundColor: '#d6f329', color: '#111111' }
-                      : { border: '2px solid var(--yhq-sheet-ring)', color: 'var(--yhq-sheet-bolt-muted)' }}
-                  >
-                    <svg viewBox="0 0 18 25" width={18} height={18} fill="none" aria-hidden="true">
-                      <path
-                        d="M1.27498 12.516L10.1761 1.31828C10.7098 0.646883 11.7966 1.11739 11.6606 1.96094L10.3758 9.92921H15.8888C16.9368 9.92921 17.5236 11.1248 16.8757 11.94L7.97457 23.1377C7.44087 23.8091 6.35401 23.3386 6.49003 22.495L7.7748 14.5268H2.26186C1.21381 14.5268 0.62701 13.3312 1.27498 12.516Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+              {weekDays.map((day) => {
+                const isLit = day.status === 'completed' || day.status === 'saved'
+                return (
+                  <div key={day.key} className="flex flex-col items-center gap-2">
+                    <div
+                      data-status={day.status}
+                      className="flex size-[54px] items-center justify-center rounded-full transition-colors"
+                      style={isLit
+                        ? { backgroundColor: '#d6f329', color: '#111111' }
+                        : { border: '2px solid var(--yhq-sheet-ring)', color: 'var(--yhq-sheet-bolt-muted)' }}
+                    >
+                      {day.status === 'saved' ? (
+                        <StreakDayBatteryGlyph />
+                      ) : (
+                        <svg viewBox="0 0 18 25" width={18} height={22} fill="none" aria-hidden="true">
+                          <path
+                            d="M1.27498 12.516L10.1761 1.31828C10.7098 0.646883 11.7966 1.11739 11.6606 1.96094L10.3758 9.92921H15.8888C16.9368 9.92921 17.5236 11.1248 16.8757 11.94L7.97457 23.1377C7.44087 23.8091 6.35401 23.3386 6.49003 22.495L7.7748 14.5268H2.26186C1.21381 14.5268 0.62701 13.3312 1.27498 12.516Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      )}
+                    </div>
+                    <span
+                      className="text-[13.5px] leading-none font-bold"
+                      style={day.isToday ? undefined : { color: 'var(--yhq-sheet-muted)' }}
+                    >
+                      {day.label}
+                    </span>
                   </div>
-                  <span
-                    className="text-[13px] leading-none font-bold"
-                    style={day.isToday ? undefined : { color: 'var(--yhq-sheet-muted)' }}
-                  >
-                    {day.label}
-                  </span>
-                </div>
-              ))}
+                )
+              })}
             </div>
 
             <div
@@ -675,21 +821,21 @@ export const DarslikTopPills = memo(function DarslikTopPills({
               style={{ backgroundColor: 'var(--yhq-sheet-surface)' }}
             >
               <div className="flex flex-col items-center justify-center px-2">
-                <span className="font-display text-[20px] font-extrabold tabular-nums">
-                  {streak}
+                <span className="font-display text-[22px] font-extrabold leading-tight tabular-nums">
+                  {maxStreak}
                 </span>
-                <span className="mt-0.5 text-[13.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
-                  {ru ? 'Текущая серия' : 'Joriy seriya'}
+                <span className="mt-1 text-[13.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
+                  {ru ? 'Макс. серия' : 'Eng uzun seriya'}
                 </span>
               </div>
               <div
                 className="flex flex-col items-center justify-center border-l px-2"
                 style={{ borderColor: 'var(--yhq-sheet-divider)' }}
               >
-                <span className="font-display text-[20px] font-extrabold tabular-nums">
+                <span className="font-display text-[22px] font-extrabold leading-tight tabular-nums">
                   {completedCount}
                 </span>
-                <span className="mt-0.5 text-[13.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
+                <span className="mt-1 text-[13.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
                   {ru ? 'Пройдено уроков' : 'Tugatilgan darslar'}
                 </span>
               </div>

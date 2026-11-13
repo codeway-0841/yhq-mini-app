@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { Navigate, useNavigate, useLocation } from 'react-router-dom'
+import { DEFAULT_SUBJECT_ID, RUSSIAN_LITERATURE_SUBJECT_ID, RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
+import SubjectBrilliantHome from './SubjectBrilliantHome'
 import { Check, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react'
 import { modules, MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
@@ -27,6 +29,14 @@ import './learning-path.css'
 type Mod = typeof modules[number]
 
 export default function Darslik() {
+  const subjectId = useSubjectStore((s) => s.subjectId)
+  if (subjectId === RUSSIAN_SUBJECT_ID) return <Navigate to="/darslik/rus-tili" replace />
+  if (subjectId === RUSSIAN_LITERATURE_SUBJECT_ID) return <Navigate to="/darslik/rus-adabiyot" replace />
+  if (subjectId !== DEFAULT_SUBJECT_ID) return <SubjectBrilliantHome subjectId={subjectId} />
+  return <YhqDarslikHome />
+}
+
+function YhqDarslikHome() {
   const navigate = useNavigate()
   const location = useLocation()
   const settings = useAppStore((s) => s.settings)

@@ -32,10 +32,18 @@ interface DailyChargeMeta {
 }
 
 interface DailyState {
-  /** Fan bo'yicha kunlik seriyalar — `streaks[subjectId]` */
+  /** Barcha fanlar uchun umumiy (global) kunlik seriya (serverdan sinxronlanadi) */
+  globalStreak: number | null
+  /** Barcha fanlar uchun umumiy (global) Seriya Zaryadlari (0..2) */
+  globalCharges: number | null
+  /** Global oxirgi tasdiqlangan faol sana (`YYYY-MM-DD`) */
+  globalExtendedDate: string | null
+  /** Fan bo'yicha zaxira kunlik seriyalar — `streaks[subjectId]` */
   streaks: Record<string, number>
   /** Fan bo'yicha Seriya Zaryadlari (0..2) — `charges[subjectId]` */
   charges: Record<string, number>
+  /** Fan bo'yicha serverdan/lokaldan tasdiqlangan oxirgi faol sana (`YYYY-MM-DD`) */
+  extendedDates: Record<string, string>
   /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` */
   activityKey: string | null
   /**
@@ -73,11 +81,45 @@ interface DailyState {
   resetAccount: () => void
 }
 
+export function selectDailyStreak(
+  state: { globalStreak?: number | null; streaks?: Record<string, number> },
+  subjectId: string,
+): number {
+  return state.globalStreak ?? state.streaks?.[subjectId] ?? 0
+}
+
+export function selectDailyCharges(
+  state: { globalCharges?: number | null; charges?: Record<string, number> },
+  subjectId: string,
+): number {
+  return state.globalCharges ?? state.charges?.[subjectId] ?? 0
+}
+
+export function isSubjectExtendedOnDate(
+  state: {
+    globalExtendedDate?: string | null
+    activityKey?: string | null
+    extendedDates?: Record<string, string>
+  },
+  date: string,
+  subjectId: string,
+): boolean {
+  return (
+    state.globalExtendedDate === date ||
+    state.activityKey === doneKeyOf(date, subjectId) ||
+    state.extendedDates?.[subjectId] === date
+  )
+}
+
 export const useDailyStore = create<DailyState>()(
   persist(
     (set) => ({
+      globalStreak: null,
+      globalCharges: null,
+      globalExtendedDate: null,
       streaks: {},
       charges: {},
+      extendedDates: {},
       activityKey: null,
       coinSaved: false,
       celebrationStreak: null,
@@ -87,10 +129,26 @@ export const useDailyStore = create<DailyState>()(
         if (!userId || userId === '0') return // ghost user — faqat lokal
         try {
           const data = await api.getDaily(userId, date, subjectId)
-          set((s) => ({
-            streaks: { ...s.streaks, [subjectId]: data.dailyStreak },
-            charges: { ...s.charges, [subjectId]: data.streakCharges ?? (s.charges[subjectId] ?? 0) },
-          }))
+          const extendedToday = Boolean(data.record && data.record.answered > 0)
+          set((s) => {
+            const nextCharges = data.streakCharges ?? s.globalCharges ?? (s.charges[subjectId] ?? 0)
+            const nextExtendedDates = { ...(s.extendedDates ?? {}) }
+            if (extendedToday) {
+              nextExtendedDates[subjectId] = date
+            } else if (nextExtendedDates[subjectId] === date) {
+              delete nextExtendedDates[subjectId]
+            }
+            return {
+              globalStreak: data.dailyStreak,
+              globalCharges: nextCharges,
+              globalExtendedDate: extendedToday
+                ? date
+                : (s.globalExtendedDate === date ? null : s.globalExtendedDate),
+              streaks: { ...s.streaks, [subjectId]: data.dailyStreak },
+              charges: { ...s.charges, [subjectId]: nextCharges },
+              extendedDates: nextExtendedDates,
+            }
+          })
         } catch { /* offline — eski lokal holatda qolamiz */ }
       },
 
@@ -100,16 +158,32 @@ export const useDailyStore = create<DailyState>()(
         if (useDailyStore.getState().activityKey === key) return
         try {
           const res = await api.touchDailyActivity(userId, { subjectId })
-          set((s) => ({
-            streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
-            coinSaved: res.coinSaved === true ? true : s.coinSaved,
-          }))
+          set((s) => {
+            const nextCharges = typeof res.streakCharges === 'number'
+              ? res.streakCharges
+              : (s.globalCharges ?? s.charges[subjectId] ?? 0)
+            return {
+              globalStreak: res.dailyStreak,
+              globalCharges: nextCharges,
+              globalExtendedDate: res.dailyStreak > 0 ? date : s.globalExtendedDate,
+              streaks: { ...s.streaks, [subjectId]: res.dailyStreak },
+              charges: { ...s.charges, [subjectId]: nextCharges },
+              extendedDates: res.dailyStreak > 0
+                ? { ...(s.extendedDates ?? {}), [subjectId]: date }
+                : s.extendedDates,
+              coinSaved: res.coinSaved === true ? true : s.coinSaved,
+            }
+          })
         } catch { /* offline */ }
       },
 
       resetAccount: () => set({
+        globalStreak: null,
+        globalCharges: null,
+        globalExtendedDate: null,
         streaks: {},
         charges: {},
+        extendedDates: {},
         activityKey: null,
         coinSaved: false,
         celebrationStreak: null,
@@ -121,13 +195,18 @@ export const useDailyStore = create<DailyState>()(
         set((s) => {
           const nextCharges = typeof meta?.streakCharges === 'number'
             ? meta.streakCharges
-            : (s.charges[subjectId] ?? 0)
-          const shouldCelebrate = !meta?.suppressCelebration && s.activityKey !== key && dailyStreak > 0
+            : (s.globalCharges ?? s.charges[subjectId] ?? 0)
+          const alreadyExtended = isSubjectExtendedOnDate(s, date, subjectId)
+          const shouldCelebrate = !meta?.suppressCelebration && !alreadyExtended && dailyStreak > 0
           const showCharge = Boolean(meta?.chargeSaved || meta?.chargeEarned || nextCharges > 0)
           return {
+            globalStreak: dailyStreak,
+            globalCharges: nextCharges,
+            globalExtendedDate: date,
             activityKey: key,
             streaks: { ...s.streaks, [subjectId]: dailyStreak },
             charges: { ...s.charges, [subjectId]: nextCharges },
+            extendedDates: { ...(s.extendedDates ?? {}), [subjectId]: date },
             coinSaved: coinSaved === true ? true : s.coinSaved,
             celebrationStreak: shouldCelebrate ? dailyStreak : s.celebrationStreak,
             celebrationMeta: shouldCelebrate
@@ -161,16 +240,36 @@ export const useDailyStore = create<DailyState>()(
       name:    'yhq-daily',
       version: 3,
       migrate: (state: unknown) => {
-        const s = (state ?? {}) as { doneKey?: string | null; dailyStreak?: number; streaks?: Record<string, number>; charges?: Record<string, number> }
+        const s = (state ?? {}) as { doneKey?: string | null; dailyStreak?: number; globalStreak?: number | null; globalCharges?: number | null; globalExtendedDate?: string | null; streaks?: Record<string, number>; charges?: Record<string, number>; extendedDates?: Record<string, string> }
         const streaks = s.streaks ?? {}
         const charges = s.charges ?? {}
+        const extendedDates = s.extendedDates ?? {}
         if (s.dailyStreak && s.doneKey) {
           const subjectId = s.doneKey.split('|')[1]
           if (subjectId && !streaks[subjectId]) streaks[subjectId] = s.dailyStreak
         }
-        return { streaks, charges, activityKey: null, coinSaved: false, celebrationStreak: null, celebrationMeta: null }
+        return {
+          globalStreak: s.globalStreak ?? null,
+          globalCharges: s.globalCharges ?? null,
+          globalExtendedDate: s.globalExtendedDate ?? null,
+          streaks,
+          charges,
+          extendedDates,
+          activityKey: null,
+          coinSaved: false,
+          celebrationStreak: null,
+          celebrationMeta: null,
+        }
       },
-      partialize: (s) => ({ streaks: s.streaks, charges: s.charges, activityKey: s.activityKey }),
+      partialize: (s) => ({
+        globalStreak: s.globalStreak,
+        globalCharges: s.globalCharges,
+        globalExtendedDate: s.globalExtendedDate,
+        streaks: s.streaks,
+        charges: s.charges,
+        extendedDates: s.extendedDates,
+        activityKey: s.activityKey,
+      }),
     },
   ),
 )

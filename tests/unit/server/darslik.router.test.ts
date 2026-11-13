@@ -207,7 +207,7 @@ describe('darslik router — curated pilot darsi', () => {
     expect(legacy.body.correct).toBe(true)
   })
 
-  it('takroriy pass kunlik faollik/streakni qayta yozmaydi', async () => {
+  it('takroriy pass XP bermaydi, lekin kunlik faollik/streakni yangilaydi', async () => {
     const check = block01Checks['1:0']
     repo.findCheck.mockResolvedValue({ version: 2, payload: check })
     repo.passed.mockResolvedValue(['1:0'])
@@ -218,8 +218,14 @@ describe('darslik router — curated pilot darsi', () => {
       .send({ answers: answersFor(check) })
 
     expect(res.status).toBe(200)
-    expect(res.body).toMatchObject({ passed: true, alreadyPassed: true, xpEarned: 0, xp: 132 })
-    expect(daily.touchActivity).not.toHaveBeenCalled()
+    expect(res.body).toMatchObject({
+      passed: true,
+      alreadyPassed: true,
+      xpEarned: 0,
+      xp: 132,
+      dailyStreak: 4,
+    })
+    expect(daily.touchActivity).toHaveBeenCalledTimes(1)
   })
 
   it('bitta xato bo‘lsa mastery yozilmaydi va XP berilmaydi', async () => {

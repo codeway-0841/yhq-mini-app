@@ -14,7 +14,7 @@ export interface RouteChrome {
 }
 
 export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
-export const DOCK_HOME_PATHS = ['/darslik', '/darslik/rus-tili'] as const
+export const DOCK_HOME_PATHS = ['/darslik', '/darslik/rus-tili', '/darslik/rus-adabiyot'] as const
 
 const TAB_CHROME: RouteChrome = {
   mode: 'tab',

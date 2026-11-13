@@ -1,16 +1,21 @@
-import { useState, useEffect, useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { ArrowLeft, BookOpen, Clock, ChevronRight, X, Volume2, Sparkles, User } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { ArrowLeft, CheckCircle2, User, Volume2 } from 'lucide-react'
+import { RUSSIAN_LITERATURE_SUBJECT_ID } from '../../../shared/subjects'
 import {
   RUSADABIYOT_BLOCKS,
-  RUSADABIYOT_BLOCK_STATS,
+  RUSADABIYOT_PROGRESS_MODULE_OFFSET,
   getRusadabiyotBlockOutline,
   loadRusadabiyotBlock,
-  type DarslikBlockMeta,
 } from '../../content/darslik-rusadabiyot'
-import { useAppStore } from '../../shared/store/useAppStore'
-import { parseMarkdown, MarkdownView, type MdBlock } from '../darslik-rustili'
+import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
+import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
+import { useAppStore } from '../../shared/store/useAppStore'
+import { useLessonsStore } from '../../shared/store/useLessonsStore'
+import { Button } from '../../shared/components/ui/button'
+import { MarkdownView, parseMarkdown, type MdBlock } from '../darslik-rustili'
+import { BrilliantCourseHome, type BrilliantCourseLevel } from '../lessons'
 
 interface AuthorItem {
   name: string
@@ -85,29 +90,25 @@ const ERA_AUTHORS: Record<number, AuthorItem[]> = {
   ],
 }
 
-const ERA_GRADIENTS: Record<number, string> = {
-  1: 'from-blue-600/20 via-indigo-600/10 to-transparent border-blue-500/30',
-  2: 'from-amber-600/20 via-yellow-600/10 to-transparent border-amber-500/30',
-  3: 'from-emerald-600/20 via-teal-600/10 to-transparent border-emerald-500/30',
-  4: 'from-purple-600/20 via-fuchsia-600/10 to-transparent border-purple-500/30',
-  5: 'from-rose-600/20 via-orange-600/10 to-transparent border-rose-500/30',
-  6: 'from-cyan-600/20 via-sky-600/10 to-transparent border-cyan-500/30',
-  7: 'from-red-600/20 via-rose-600/10 to-transparent border-red-500/30',
-  8: 'from-orange-600/20 via-amber-600/10 to-transparent border-orange-500/30',
-  9: 'from-violet-600/20 via-purple-600/10 to-transparent border-violet-500/30',
-}
-
 export default function LiteratureCourseHome() {
   const navigate = useNavigate()
+  const location = useLocation()
   const lang = useAppStore((s) => s.settings.language)
-  const [selectedBlock, setSelectedBlock] = useState<DarslikBlockMeta | null>(null)
-  const [blockContent, setBlockContent] = useState<string>('')
+  const themeSetting = useAppStore((s) => s.settings.theme)
+  const ru = lang === 'ru'
+  const userId = useAppStore((s) => s.user?.id) ?? 'guest'
+  const byUser = useLessonsStore((s) => s.byUser[userId])
+  const markDone = useLessonsStore((s) => s.markDone)
+  const markRead = useLessonsStore((s) => s.markRead)
+
+  const requestedBlockId = Number(new URLSearchParams(location.search).get('block'))
+  const selectedBlock = RUSADABIYOT_BLOCKS.find((b) => b.id === requestedBlockId) ?? null
+
+  const [blockContent, setBlockContent] = useState('')
   const [blocksParsed, setBlocksParsed] = useState<MdBlock[]>([])
   const [loading, setLoading] = useState(false)
   const [speaking, setSpeaking] = useState(false)
-  const readerTopRef = useRef<HTMLDivElement>(null)
-
-  const ru = lang === 'ru'
+  const wasReader = useRef(false)
 
   useEffect(() => {
     if (!selectedBlock) {
@@ -115,22 +116,101 @@ export default function LiteratureCourseHome() {
       setBlocksParsed([])
       stopSpeaking()
       setSpeaking(false)
+      if (wasReader.current) scrollPageToTop()
+      wasReader.current = false
       return
     }
+    wasReader.current = true
+    markRead(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id, 0)
+    let cancelled = false
     setLoading(true)
     loadRusadabiyotBlock(selectedBlock.id)
       .then((text) => {
+        if (cancelled) return
         setBlockContent(text)
         setBlocksParsed(parseMarkdown(text))
       })
-      .catch((err) => {
-        console.error('Failed to load block:', err)
-      })
+      .catch(() => undefined)
       .finally(() => {
+        if (cancelled) return
         setLoading(false)
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        scrollPageToTop()
       })
-  }, [selectedBlock])
+    return () => {
+      cancelled = true
+    }
+  }, [selectedBlock, userId, markRead])
+
+  useEffect(() => {
+    if (!selectedBlock) return
+    const tg = getTelegramWebApp()
+    const metaTheme = document.querySelector('meta[name="theme-color"]')
+    const prevMeta = metaTheme?.getAttribute('content')
+    const updateTheme = () => {
+      const isDark = document.body.dataset.theme === 'dark'
+      const background = isDark ? '#141414' : '#ffffff'
+      try {
+        tg?.setHeaderColor?.(background)
+        tg?.setBackgroundColor?.(background)
+      } catch {}
+      if (metaTheme) metaTheme.setAttribute('content', background)
+    }
+    updateTheme()
+    const themeObserver = new MutationObserver(updateTheme)
+    themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
+    return () => {
+      themeObserver.disconnect()
+      syncTelegramTheme(document.body.dataset.theme === 'dark')
+      if (metaTheme && prevMeta) metaTheme.setAttribute('content', prevMeta)
+    }
+  }, [selectedBlock, themeSetting])
+
+  const { levels, completedCount, defaultLevelIndex } = useMemo(() => {
+    let doneCount = 0
+    const builtLevels: BrilliantCourseLevel[] = RUSADABIYOT_BLOCKS.map((block) => {
+      const moduleKey = RUSADABIYOT_PROGRESS_MODULE_OFFSET + block.id
+      const isDone = (byUser?.[moduleKey]?.length ?? 0) > 0
+      if (isDone) doneCount += 1
+      const outline = getRusadabiyotBlockOutline(block.id)
+      const titles = outline.length > 0 ? outline : [ru ? block.titleRu : block.titleUz]
+      return {
+        id: block.id,
+        titleUz: block.titleUz,
+        titleRu: block.titleRu,
+        levelLabelUz: `DAVR ${block.id}`,
+        levelLabelRu: `ЭПОХА ${block.id}`,
+        items: titles.map((title, idx) => ({
+          key: `${block.id}:${idx}`,
+          title,
+          done: isDone,
+          current: !isDone && idx === 0,
+        })),
+      }
+    })
+    const firstIncomplete = builtLevels.findIndex((lvl) => lvl.items.some((i) => !i.done))
+    return {
+      levels: builtLevels,
+      completedCount: doneCount,
+      defaultLevelIndex: firstIncomplete >= 0 ? firstIncomplete : Math.max(0, builtLevels.length - 1),
+    }
+  }, [byUser, ru])
+
+  if (!selectedBlock) {
+    return (
+      <BrilliantCourseHome
+        subjectId={RUSSIAN_LITERATURE_SUBJECT_ID}
+        levels={levels}
+        completedCount={completedCount}
+        defaultLevelIndex={defaultLevelIndex}
+        testId="literature-course-home"
+        cardLabelUz="Davr mavzulari"
+        cardLabelRu="Темы эпохи"
+        stageLabelUz="Davr tanlash"
+        stageLabelRu="Выбор эпохи"
+        onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` })}
+      />
+    )
+  }
 
   const toggleSpeech = () => {
     if (speaking) {
@@ -153,207 +233,116 @@ export default function LiteratureCourseHome() {
     }
   }
 
+  const currentIdx = RUSADABIYOT_BLOCKS.findIndex((b) => b.id === selectedBlock.id)
+  const nextBlock = currentIdx >= 0 ? RUSADABIYOT_BLOCKS[currentIdx + 1] : undefined
+  const isSelectedDone = (byUser?.[RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id]?.length ?? 0) > 0
+
+  const handleCompleteEra = () => {
+    markDone(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id, 0)
+    if (nextBlock) {
+      navigate({ pathname: location.pathname, search: `?block=${nextBlock.id}` }, { replace: true })
+    } else {
+      navigate({ pathname: location.pathname }, { replace: true })
+    }
+  }
+
+  const authors = ERA_AUTHORS[selectedBlock.id] ?? []
+
   return (
-    <div className="russian-course-home min-h-screen pb-20 bg-pcanvas text-pfg">
-      {/* Header */}
-      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 flex items-center justify-between bg-pcanvas border-b border-pline">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => (selectedBlock ? setSelectedBlock(null) : navigate(-1))}
-            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform cursor-pointer"
-            aria-label={ru ? 'Назад' : 'Orqaga'}
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </button>
-          <div>
-            <h1 className="text-lg font-bold text-pfg flex items-center gap-2">
-              <span className="text-xl">📚</span>
-              <span>{ru ? 'Русская классическая литература' : 'Rus mumtoz adabiyoti'}</span>
-            </h1>
-            <p className="text-xs text-pmuted">
-              {ru
-                ? 'Иллюстрированный академический курс для учителей'
-                : "O'qituvchilar uchun rasmli akademik darslik"}
-            </p>
+    <div className="min-h-screen pb-24 bg-pcanvas text-pfg">
+      <header className="sticky top-0 z-20 -mt-[var(--safe-top-body,0px)] pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 bg-pcanvas">
+        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 min-w-0">
+            <button
+              type="button"
+              onClick={() => navigate({ pathname: location.pathname }, { replace: true })}
+              className="flex size-10 shrink-0 items-center justify-center -ml-1 rounded-xl text-pfg hover:bg-psurface active:scale-90 transition-all cursor-pointer"
+              aria-label={ru ? 'Назад' : 'Orqaga'}
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </button>
+            <div className="min-w-0">
+              <div className="text-[11px] font-extrabold uppercase tracking-wider text-pprimary">
+                {ru ? `Эпоха ${selectedBlock.id}` : `Davr ${selectedBlock.id}`}
+              </div>
+              <h1 className="text-base font-bold text-pfg truncate">
+                {ru ? selectedBlock.titleRu : selectedBlock.titleUz}
+              </h1>
+            </div>
           </div>
+
+          <button
+            type="button"
+            onClick={toggleSpeech}
+            className={`size-10 rounded-xl flex items-center justify-center shrink-0 transition-colors cursor-pointer ${
+              speaking
+                ? 'bg-pprimary text-white'
+                : 'bg-psurface text-pmuted hover:text-pfg'
+            }`}
+            aria-label={ru ? 'Озвучить' : 'Ovoz berish'}
+          >
+            <Volume2 className="w-4 h-4" />
+          </button>
         </div>
+
+        {authors.length > 1 && (
+          <div className="max-w-3xl mx-auto mt-2.5 flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+            <span className="text-[11px] font-semibold text-pmuted shrink-0 flex items-center gap-1">
+              <User className="size-3 text-pprimary" />
+              {ru ? 'Авторы:' : 'Mualliflar:'}
+            </span>
+            {authors.map((author) => (
+              <button
+                type="button"
+                key={author.name}
+                onClick={() => scrollToAuthor(author.name)}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-psurface text-xs font-medium text-pfg transition-transform shrink-0 active:scale-95 cursor-pointer"
+              >
+                <img
+                  src={author.img}
+                  alt={author.name}
+                  className="size-4 rounded-full object-cover"
+                  loading="lazy"
+                />
+                <span>{author.name}</span>
+              </button>
+            ))}
+          </div>
+        )}
       </header>
 
-      {/* Main Content */}
-      <main className="max-w-3xl mx-auto px-4 py-6" ref={readerTopRef}>
-        {!selectedBlock ? (
-          <div>
-            {/* Hero Welcome Banner */}
-            <div className="mb-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-purple-900/40 via-indigo-950/30 to-slate-900/60 border border-purple-500/30 shadow-2xl relative overflow-hidden">
-              <div className="absolute -right-8 -top-8 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
-              <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300 text-xs font-semibold mb-3">
-                  <Sparkles className="w-3.5 h-3.5" />
-                  <span>{ru ? '9 эпох русской словесности' : 'Rus adabiyotining 9 davri'}</span>
-                </div>
-                <h2 className="text-xl sm:text-2xl font-extrabold text-slate-100 mb-2 leading-snug">
-                  {ru
-                    ? 'Полный иллюстрированный курс для аттестации'
-                    : 'Attestatsiya uchun to‘liq rasmli qo‘llanma'}
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
-                  {ru
-                    ? 'От древнерусских летописей и классицизма до Золотого и Серебряного веков, военной прозы и современности. Подлинные портреты классиков, конспекты, экзаменационные ловушки и интерактивные тесты.'
-                    : "Qadimgi rus qo'lyozmalaridan to Oltin va Kumush davrlar, urush adabiyoti va zamonaviy davrgacha. Klassiklarning asl portretlari, tahlillar, imtihon tuzoqlari va interaktiv testlar."}
-                </p>
-              </div>
-            </div>
-
-            {/* Eras Cards Grid */}
-            <div className="space-y-4">
-              {RUSADABIYOT_BLOCKS.map((block) => {
-                const stats = RUSADABIYOT_BLOCK_STATS[block.id]
-                const outline = getRusadabiyotBlockOutline(block.id)
-                const authors = ERA_AUTHORS[block.id] || []
-                const gradient = ERA_GRADIENTS[block.id] || 'from-purple-900/30 to-slate-900/40'
-
-                return (
-                  <button
-                    key={block.id}
-                    onClick={() => setSelectedBlock(block)}
-                    className={`w-full text-left p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${gradient} bg-slate-900/60 hover:bg-slate-800/80 border transition-all duration-300 group hover:scale-[1.01] hover:shadow-xl`}
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1 min-w-0">
-                        {/* Header Badge */}
-                        <div className="flex items-center gap-2 mb-1.5">
-                          <span className="text-xl p-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 shrink-0">
-                            {block.icon}
-                          </span>
-                          <span className="text-xs font-bold uppercase tracking-wider text-purple-400">
-                            {ru ? `Эпоха ${block.id}` : `${block.id}-davr`}
-                          </span>
-                        </div>
-
-                        {/* Title */}
-                        <h3 className="text-base sm:text-lg font-bold text-slate-100 group-hover:text-purple-300 transition-colors">
-                          {ru ? block.titleRu : block.titleUz}
-                        </h3>
-
-                        {/* Summary */}
-                        <p className="text-xs text-slate-300 line-clamp-2 mt-1.5 leading-relaxed">
-                          {ru ? block.summaryRu : block.summaryUz}
-                        </p>
-
-                        {/* Author Avatars Row */}
-                        {authors.length > 0 && (
-                          <div className="flex items-center gap-2 mt-3 pt-3 border-t border-slate-800/60">
-                            <div className="flex items-center -space-x-2 overflow-hidden">
-                              {authors.slice(0, 5).map((a, i) => (
-                                <img
-                                  key={i}
-                                  src={a.img}
-                                  alt={a.name}
-                                  className="inline-block size-7 rounded-full ring-2 ring-slate-900 object-cover bg-slate-800"
-                                  loading="lazy"
-                                />
-                              ))}
-                            </div>
-                            <span className="text-[11px] font-medium text-slate-400 truncate">
-                              {authors.map((a) => a.name).join(', ')}
-                            </span>
-                          </div>
-                        )}
-
-                        {/* Stats Badges */}
-                        <div className="flex items-center gap-4 mt-2 text-[11px] text-slate-400">
-                          <span className="flex items-center gap-1 font-medium">
-                            <BookOpen className="w-3.5 h-3.5 text-purple-400" />
-                            {stats?.sections ?? outline.length} {ru ? 'тем' : 'mavzu'}
-                          </span>
-                          <span className="flex items-center gap-1 font-medium">
-                            <Clock className="w-3.5 h-3.5 text-purple-400" />
-                            {stats?.minutes ?? 30} {ru ? 'мин чтения' : 'daqiqa'}
-                          </span>
-                        </div>
-                      </div>
-
-                      <ChevronRight className="w-5 h-5 text-slate-500 group-hover:text-purple-400 group-hover:translate-x-1 transition-all shrink-0 mt-3" />
-                    </div>
-                  </button>
-                )
-              })}
-            </div>
+      <main className="max-w-3xl mx-auto px-4 py-4">
+        {loading ? (
+          <div className="py-24 text-center">
+            <div className="inline-block size-8 animate-spin rounded-full border-2 border-pprimary border-t-transparent mb-3" />
+            <p className="text-pmuted text-sm font-medium">
+              {ru ? 'Загрузка академического конспекта...' : 'Akademik konspekt yuklanmoqda...'}
+            </p>
           </div>
         ) : (
-          <div className="space-y-6">
-            {/* Block Reader Top Bar */}
-            <div className="sticky top-[57px] z-10 -mx-4 px-4 py-3 bg-[var(--surface-primary,#121826)] border-b border-slate-800 shadow-md">
-              <div className="flex items-center justify-between gap-3">
-                <div className="min-w-0">
-                  <span className="text-xs font-bold uppercase tracking-wider text-purple-400">
-                    {ru ? `Эпоха ${selectedBlock.id}` : `${selectedBlock.id}-davr`}
-                  </span>
-                  <h2 className="text-base font-bold text-slate-100 truncate">
-                    {ru ? selectedBlock.titleRu : selectedBlock.titleUz}
-                  </h2>
-                </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  <button
-                    onClick={toggleSpeech}
-                    className={`p-2 rounded-xl transition-colors ${
-                      speaking
-                        ? 'bg-purple-600 text-white shadow-md'
-                        : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
-                    }`}
-                    aria-label={ru ? 'Озвучить' : 'Ovoz berish'}
-                  >
-                    <Volume2 className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={() => setSelectedBlock(null)}
-                    className="p-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors"
-                    aria-label={ru ? 'Закрыть' : 'Yopish'}
-                  >
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Quick Jump Authors Carousel */}
-              {ERA_AUTHORS[selectedBlock.id] && ERA_AUTHORS[selectedBlock.id].length > 1 && (
-                <div className="mt-2.5 pt-2 border-t border-slate-800/80 flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-                  <span className="text-[11px] font-semibold text-slate-400 shrink-0 flex items-center gap-1">
-                    <User className="size-3 text-purple-400" />
-                    {ru ? 'Авторы:' : 'Mualliflar:'}
-                  </span>
-                  {ERA_AUTHORS[selectedBlock.id].map((author, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => scrollToAuthor(author.name)}
-                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-800/80 hover:bg-purple-900/40 border border-slate-700/60 hover:border-purple-500/40 text-xs font-medium text-slate-200 transition-all shrink-0 active:scale-95"
-                    >
-                      <img
-                        src={author.img}
-                        alt={author.name}
-                        className="size-4 rounded-full object-cover"
-                        loading="lazy"
-                      />
-                      <span>{author.name}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
+          <>
+            <div className="max-w-none text-pfg">
+              <MarkdownView blocks={blocksParsed} />
             </div>
 
-            {loading ? (
-              <div className="py-24 text-center">
-                <div className="inline-block size-8 animate-spin rounded-full border-3 border-purple-500 border-t-transparent mb-3" />
-                <p className="text-slate-400 text-sm font-medium">
-                  {ru ? 'Загрузка академического конспекта...' : 'Akademik konspekt yuklanmoqda...'}
-                </p>
-              </div>
-            ) : (
-              <div className="prose prose-invert max-w-none text-slate-200">
-                <MarkdownView blocks={blocksParsed} />
-              </div>
-            )}
-          </div>
+            <div className="mt-8 pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <Button variant="primary" size="lg" className="flex-1" onClick={handleCompleteEra}>
+                <CheckCircle2 className="w-4 h-4 mr-1.5 inline-block" />
+                {nextBlock
+                  ? (ru ? 'Завершить и перейти дальше' : 'Tugatish va keyingisiga o‘tish')
+                  : (ru ? 'Завершить курс' : 'Kursni yakunlash')}
+              </Button>
+              {isSelectedDone && (
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  onClick={() => navigate({ pathname: location.pathname }, { replace: true })}
+                >
+                  {ru ? 'К списку эпох' : 'Davrlar ro‘yxatiga'}
+                </Button>
+              )}
+            </div>
+          </>
         )}
       </main>
     </div>

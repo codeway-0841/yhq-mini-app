@@ -77,7 +77,7 @@ describe('Russian course home', () => {
     delete document.body.dataset.theme
 
     const css = fs.readFileSync(
-      path.resolve(__dirname, '../../../src/features/darslik-rustili/russian-course-home.css'),
+      path.resolve(__dirname, '../../../src/features/lessons/brilliant-course-home.css'),
       'utf8',
     )
     expect(css).not.toContain('max(12px, var(--safe-top, 0px))')

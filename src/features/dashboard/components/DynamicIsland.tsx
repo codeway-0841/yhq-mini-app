@@ -15,7 +15,7 @@ import DialogOverlay from '../../../shared/components/DialogOverlay'
 import SettingsModal from '../../../shared/components/SettingsModal'
 import { useAppStore } from '../../../shared/store/useAppStore'
 import { useSubjectStore } from '../../../shared/store/useSubjectStore'
-import { useDailyStore } from '../../../shared/store/useDailyStore'
+import { selectDailyStreak, useDailyStore } from '../../../shared/store/useDailyStore'
 import { useTestSessionStore } from '../../../shared/store/useTestSessionStore'
 import { useT } from '../../../shared/i18n'
 import { type AchievementStats } from '../../../shared/api'
@@ -111,7 +111,7 @@ export default function DynamicIsland() {
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id)
   const subject = useSubjectStore((s) => s.subject)
-  const dailyStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+  const dailyStreak = useDailyStore((s) => selectDailyStreak(s, subject.id))
   const session = useTestSessionStore((s) => s.session)
 
   // Start achievements preload

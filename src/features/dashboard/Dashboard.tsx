@@ -5,7 +5,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useReviewPromptStore } from '../../shared/store/useReviewPromptStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { useDailyStore } from '../../shared/store/useDailyStore'
+import { selectDailyStreak, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
 import { useT } from '../../shared/i18n'
 import { Alert, AlertDescription } from '../../shared/components/ui/alert'
 import { usePullToRefresh } from '../../shared/hooks/usePullToRefresh'
@@ -26,8 +26,6 @@ import {
   useLearningSummary,
 } from './hooks/useDashboardData'
 import { config } from '../../shared/config'
-import { todayStr } from '../../shared/store/useDailyStore'
-
 // ── Main Dashboard ──────────────────────────────────────────────────────────
 export default function Dashboard() {
   const navigate = useNavigate()
@@ -41,7 +39,7 @@ export default function Dashboard() {
   const solvedQuestions = useAppStore((s) => s.solvedQuestions ?? [])
   const subject         = useSubjectStore((s) => s.subject)
   // Progress kartasidagi 🔥 — joriy FANGA tegishli kunlik seriya (Intizom)
-  const dailyStreak     = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+  const dailyStreak     = useDailyStore((s) => selectDailyStreak(s, subject.id))
   // Savollar hali yuklanmagan bo'lsa oxirgi ma'lum SONdan foydalanamiz —
   // aks holda birinchi kadrda "0%" chizilib, keyin haqiqiy foizga sakrardi.
   const questionsCount = useDashboardQuestionCount(subject.id)

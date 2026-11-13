@@ -16,7 +16,7 @@ import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { api, type DailyHistory } from '../../shared/api'
-import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { selectDailyStreak, useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -76,14 +76,14 @@ export default function StreakPage() {
       previewParam === 'progress' ||
       previewParam === 'rate',
   )
-  // Server javobi kelgunicha — lokal (cache) streak darhol ko'rinadi, 0 emas
-  const cachedStreak = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+  // Server javobi kelgunicha — lokal (cache) global streak darhol ko'rinadi, 0 emas
+  const cachedStreak = useDailyStore((s) => selectDailyStreak(s, subject.id))
 
 
   const subjectId = subject.id
   useEffect(() => {
     if (!userId || userId === '0') return
-    api.getDailyHistory(userId, today, subjectId)
+    api.getDailyHistory(userId, today, subjectId, { global: true })
       .then(setHistory)
       .catch(() => { /* offline — jim */ })
   }, [userId, today, subjectId])

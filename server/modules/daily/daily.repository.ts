@@ -11,7 +11,7 @@
  * (user_id, subject_id) juftligi bo'yicha alohida saqlanadi.
  */
 
-import { and, asc, eq, sql } from 'drizzle-orm'
+import { and, asc, desc, eq, sql } from 'drizzle-orm'
 import { db, executeRows, type DB } from '../../db/connection'
 import { dailyRecords, dailyStreaks } from '../../schema'
 import {
@@ -19,6 +19,7 @@ import {
   chargeSaveEligibleSql,
   chargesValueSql,
   coinSaveEligibleSql,
+  lastDailyDateValueSql,
   streakValueSql,
 } from './streak-save-sql'
 import { STREAK_SAVE_COST } from '../../../shared/streak-save'
@@ -79,43 +80,48 @@ export interface DailyHistoryRow extends DailyRecordRow {
   fixed: number
 }
 
-/** Shu (user, subject) uchun streak va zaryad qatorini o'qiydi */
-async function readStreak(userId: string, subjectId: string) {
+/** Foydalanuvchi uchun barcha fanlar kesimidagi global streak va zaryad qatorini o'qiydi */
+async function readStreak(userId: string) {
   const [row] = await db.select({
     streak:        dailyStreaks.streak,
     charges:       dailyStreaks.charges,
     lastDailyDate: dailyStreaks.lastDailyDate,
-  }).from(dailyStreaks).where(
-    and(eq(dailyStreaks.userId, userId), eq(dailyStreaks.subjectId, subjectId)),
-  )
+  }).from(dailyStreaks).where(eq(dailyStreaks.userId, userId))
+    .orderBy(
+      sql`${dailyStreaks.lastDailyDate} DESC NULLS LAST`,
+      desc(dailyStreaks.updatedAt),
+      desc(dailyStreaks.streak),
+    )
+    .limit(1)
   return row ?? null
 }
 
 export const dailyRepository = {
-  /** Bugungi yozuv (yo'q bo'lsa null) + SHU FANGA tegishli dailyStreak + charges */
+  /** Bugungi yozuv (barcha fanlar bo'yicha faollik jamlanmasi) + global dailyStreak + charges */
   async getToday(userId: string, date: string, subjectId: string): Promise<{
     record: DailyRecordRow | null
     dailyStreak: number
     streakCharges: number
   }> {
-    const [record] = await db.select({
-      date:      dailyRecords.date,
-      subjectId: dailyRecords.subjectId,
-      answered:  dailyRecords.answered,
-      correct:   dailyRecords.correct,
+    const [agg] = await db.select({
+      answered: sql<number>`COALESCE(SUM(${dailyRecords.answered}), 0)::int`,
+      correct:  sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)::int`,
     }).from(dailyRecords).where(
       and(
         eq(dailyRecords.userId, userId),
         eq(dailyRecords.date, date),
-        eq(dailyRecords.subjectId, subjectId),
       ),
     )
+    const answered = Number(agg?.answered ?? 0)
+    const record: DailyRecordRow | null = answered > 0
+      ? { date, subjectId, answered, correct: Number(agg?.correct ?? 0) }
+      : null
 
-    const row = await readStreak(userId, subjectId)
+    const row = await readStreak(userId)
     const streakCharges = row?.charges ?? 0
 
     return {
-      record:      record ?? null,
+      record,
       dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges),
       streakCharges,
     }
@@ -161,11 +167,18 @@ export const dailyRepository = {
         RETURNING id
       ), streak_upsert AS (
         INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
-        VALUES (${userId}, ${subjectId}, 1, 0, ${date}, now())
+        VALUES (
+          ${userId},
+          ${subjectId},
+          ${streakValueSql(ctx, chargeEligible, coinEligible)},
+          ${chargesValueSql(ctx, chargeEligible)},
+          ${lastDailyDateValueSql(ctx)},
+          now()
+        )
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
           streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
           charges = ${chargesValueSql(ctx, chargeEligible)},
-          last_daily_date = GREATEST(daily_streaks.last_daily_date, EXCLUDED.last_daily_date),
+          last_daily_date = ${lastDailyDateValueSql(ctx)},
           updated_at = now()
         RETURNING streak, charges,
           (${chargeEligible}) AS charge_saved,
@@ -204,37 +217,51 @@ export const dailyRepository = {
   },
 
   /**
-   * Shu fanga tegishli barcha kunlik yozuvlar (sana bo'yicha o'suvchi) +
-   * joriy streak (kun o'tkazilsa 0) + eng yaxshi (rekord) seriya.
-   * "Intizom" sahifasi uchun.
-   *
-   * HAR BIR qator — o'sha kun faollik bo'lgani (test, xato tuzatish yoki dars).
+   * Kunlik faollik tarixi (`scope = 'global'` barcha fanlar bo'yicha jamlangan kalendar,
+   * `'subject'` esa shu fanga xos grafik uchun). Streak va zaryadlar doimo global.
    */
-  async getHistory(userId: string, date: string, subjectId: string): Promise<{
+  async getHistory(
+    userId: string,
+    date: string,
+    subjectId: string,
+    scope: 'subject' | 'global' = 'subject',
+  ): Promise<{
     rows: DailyHistoryRow[]
     dailyStreak: number
     bestStreak: number
     streakCharges: number
   }> {
-    const rows = await db.select({
-      date:      dailyRecords.date,
-      subjectId: dailyRecords.subjectId,
-      answered:  dailyRecords.answered,
-      correct:   dailyRecords.correct,
-      fixed:     dailyRecords.fixed,
-    }).from(dailyRecords)
-      .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
-      .orderBy(asc(dailyRecords.date))
+    const rows = scope === 'global'
+      ? await db.select({
+          date:      dailyRecords.date,
+          subjectId: sql<string>`'global'`,
+          answered:  sql<number>`COALESCE(SUM(${dailyRecords.answered}), 0)::int`,
+          correct:   sql<number>`COALESCE(SUM(${dailyRecords.correct}), 0)::int`,
+          fixed:     sql<number>`COALESCE(SUM(${dailyRecords.fixed}), 0)::int`,
+        }).from(dailyRecords)
+          .where(eq(dailyRecords.userId, userId))
+          .groupBy(dailyRecords.date)
+          .orderBy(asc(dailyRecords.date))
+      : await db.select({
+          date:      dailyRecords.date,
+          subjectId: dailyRecords.subjectId,
+          answered:  dailyRecords.answered,
+          correct:   dailyRecords.correct,
+          fixed:     dailyRecords.fixed,
+        }).from(dailyRecords)
+          .where(and(eq(dailyRecords.userId, userId), eq(dailyRecords.subjectId, subjectId)))
+          .orderBy(asc(dailyRecords.date))
 
-    const row = await readStreak(userId, subjectId)
-    // Yozuv mavjud = o'sha kun faollik (1+ savol yoki dars) — bestStreak shu bo'yicha
-    const activeDates = rows.map((r) => r.date)
+    const row = await readStreak(userId)
+    // Yozuvda answered > 0 bo'lsa o'sha kun faol hisoblanadi (addFixed answered=0 yozadi)
+    const activeDates = rows.filter((r) => r.answered > 0).map((r) => r.date)
     const streakCharges = row?.charges ?? 0
+    const dailyStreak = effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges)
 
     return {
       rows,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges),
-      bestStreak:  calcBestStreak(activeDates),
+      dailyStreak,
+      bestStreak:  Math.max(calcBestStreak(activeDates), dailyStreak),
       streakCharges,
     }
   },

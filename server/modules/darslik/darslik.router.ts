@@ -234,23 +234,21 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
     xpEarned = pass.xpEarned
     lessonXpEarned = pass.lessonXpEarned ?? pass.xpEarned
     xp = pass.xp
-    if (pass.passedNow) {
-      try {
-        const daily = await dailyRepository.touchActivity(
-          userId,
-          date,
-          DARSLIK_SUBJECT_ID,
-          result.total,
-          result.correct,
-        )
-        dailyStreak = daily.dailyStreak
-        coinSaved = daily.coinSaved
-        chargeSaved = daily.chargeSaved
-        chargeEarned = daily.chargeEarned
-        streakCharges = daily.streakCharges
-      } catch (error) {
-        console.warn('[darslik] daily activity update failed:', topicId, error instanceof Error ? error.message : String(error))
-      }
+    try {
+      const daily = await dailyRepository.touchActivity(
+        userId,
+        date,
+        DARSLIK_SUBJECT_ID,
+        result.total,
+        result.correct,
+      )
+      dailyStreak = daily.dailyStreak
+      coinSaved = daily.coinSaved
+      chargeSaved = daily.chargeSaved
+      chargeEarned = daily.chargeEarned
+      streakCharges = daily.streakCharges
+    } catch (error) {
+      console.warn('[darslik] daily activity update failed:', topicId, error instanceof Error ? error.message : String(error))
     }
   }
 

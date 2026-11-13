@@ -1,3 +1,5 @@
+import './brilliant-course-home.css'
+
 export { getModuleIcon } from './module-icons'
 export { default as LessonToken } from './LessonToken'
 export { PathMascot } from './LessonToken'
@@ -9,3 +11,5 @@ export { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme } 
 export { DarslikTopPills, BrilliantKeyIcon, BrilliantBoltBadge } from './DarslikTopPills'
 export { default as LessonLaunch, lessonLaunchOrigin } from './LessonLaunch'
 export type { LaunchOrigin } from './LessonLaunch'
+export { BrilliantCourseHome, type BrilliantCourseItem, type BrilliantCourseLevel } from './BrilliantCourseHome'
+export { default as SubjectBrilliantHome } from './SubjectBrilliantHome'

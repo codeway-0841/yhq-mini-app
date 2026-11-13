@@ -55,7 +55,8 @@ router.get(
     if (!isCalendarDate(date)) throw new AppError(400, 'Invalid date (YYYY-MM-DD expected)')
     if (!SUBJECT_IDS.includes(subject)) throw new AppError(400, 'Invalid subject')
 
-    const data = await dailyRepository.getHistory(uid, date, subject)
+    const scope = req.query['scope'] === 'global' ? 'global' : 'subject'
+    const data = await dailyRepository.getHistory(uid, date, subject, scope)
     res.json(data)
   }),
 )

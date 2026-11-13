@@ -16,7 +16,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { isSpeaking, speak, stopSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
-import { doneKeyOf, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
+import { isSubjectExtendedOnDate, selectDailyCharges, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import {
@@ -366,9 +366,9 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         if (
           typeof response.attempt.dailyStreak === 'number'
           && response.attempt.dailyStreak > 0
-          && useDailyStore.getState().activityKey !== doneKeyOf(today, subjectId)
+          && !isSubjectExtendedOnDate(useDailyStore.getState(), today, subjectId)
         ) {
-          const charges = response.attempt.streakCharges ?? useDailyStore.getState().charges[subjectId] ?? 0
+          const charges = response.attempt.streakCharges ?? selectDailyCharges(useDailyStore.getState(), subjectId)
           pendingStreakRef.current = {
             streak: response.attempt.dailyStreak,
             showCharge: Boolean(response.attempt.chargeSaved || response.attempt.chargeEarned || charges > 0),

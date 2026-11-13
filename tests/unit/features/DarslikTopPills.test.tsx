@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
-import { DarslikTopPills } from '../../../src/features/lessons/DarslikTopPills'
+import { DarslikTopPills, buildStreakWeekDays } from '../../../src/features/lessons/DarslikTopPills'
+import { api } from '../../../src/shared/api'
 import { invalidateLeaderboardCache, leaderboardPageCaches } from '../../../src/shared/lib/leaderboard-cache'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { doneKeyOf, todayStr, useDailyStore } from '../../../src/shared/store/useDailyStore'
@@ -9,12 +10,17 @@ import { doneKeyOf, todayStr, useDailyStore } from '../../../src/shared/store/us
 beforeEach(() => {
   invalidateLeaderboardCache()
   useAppStore.setState({
+    user: null,
     tariff: 'free',
     settings: { ...useAppStore.getState().settings, language: 'uz', noAnimation: true },
   })
   useDailyStore.setState({
     streaks: { yhq: 5 },
     charges: { yhq: 1 },
+    extendedDates: {},
+    globalStreak: null,
+    globalCharges: null,
+    globalExtendedDate: null,
     activityKey: null,
   })
 })
@@ -76,7 +82,7 @@ describe('DarslikTopPills', () => {
   it('opens the streak bottom sheet with stats and no action button', () => {
     renderPills(7)
     fireEvent.click(screen.getByTestId('brilliant-streak-pill'))
-    expect(screen.getByText('Joriy seriya')).toBeInTheDocument()
+    expect(screen.getByText('Eng uzun seriya')).toBeInTheDocument()
     expect(screen.getByText('Tugatilgan darslar')).toBeInTheDocument()
     expect(screen.getByLabelText('Zaryadlar: 1/2')).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /kalendar/i })).toBeNull()
@@ -157,5 +163,122 @@ describe('DarslikTopPills', () => {
       HTMLElement.prototype.scrollTo = origScrollTo
       rafSpy.mockRestore()
     }
+  })
+
+  it('marks battery-saved freeze days inside an active streak and idle today cleanly', () => {
+    const days = buildStreakWeekDays({
+      today: '2026-11-13',
+      streak: 5,
+      isExtendedToday: false,
+      historyRows: [
+        { date: '2026-11-08', subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        // 2026-11-09 missed -> saved by battery charge!
+        { date: '2026-11-10', subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        { date: '2026-11-11', subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        { date: '2026-11-12', subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+      ],
+      ru: false,
+    })
+
+    expect(days.map((d) => d.status)).toEqual(['saved', 'completed', 'completed', 'completed', 'idle'])
+    expect(days.map((d) => d.label)).toEqual(['Du', 'Se', 'Ch', 'Pa', 'Ju'])
+    expect(days[4].isToday).toBe(true)
+  })
+
+  it('syncs server streak, battery charges, extended state, and bestStreak on mount', async () => {
+    const today = todayStr()
+    const dPrev1 = new Date(`${today}T00:00:00.000Z`)
+    dPrev1.setUTCDate(dPrev1.getUTCDate() - 1)
+    const dPrev2 = new Date(`${today}T00:00:00.000Z`)
+    dPrev2.setUTCDate(dPrev2.getUTCDate() - 2)
+    const dPrev4 = new Date(`${today}T00:00:00.000Z`)
+    dPrev4.setUTCDate(dPrev4.getUTCDate() - 4)
+    const y1 = dPrev1.toISOString().slice(0, 10)
+    const y2 = dPrev2.toISOString().slice(0, 10)
+    const y4 = dPrev4.toISOString().slice(0, 10)
+
+    const getDailySpy = vi.spyOn(api, 'getDaily').mockResolvedValue({
+      record: { date: today, subjectId: 'rus-tili', answered: 6, correct: 6 },
+      dailyStreak: 4,
+      streakCharges: 2,
+    })
+    const getHistSpy = vi.spyOn(api, 'getDailyHistory').mockResolvedValue({
+      rows: [
+        { date: y4, subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        // day -3 was saved by battery charge!
+        { date: y2, subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        { date: y1, subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+        { date: today, subjectId: 'rus-tili', answered: 6, correct: 6, fixed: 0 },
+      ],
+      dailyStreak: 4,
+      bestStreak: 11,
+      streakCharges: 2,
+    })
+
+    useAppStore.setState({
+      user: { id: 'u77', firstName: 'Ruslan' } as never,
+    })
+    useDailyStore.setState({
+      streaks: {},
+      charges: {},
+      extendedDates: {},
+      globalStreak: null,
+      globalCharges: null,
+      globalExtendedDate: null,
+      activityKey: null,
+    })
+
+    try {
+      render(
+        <MemoryRouter initialEntries={['/darslik/rus-tili']}>
+          <Routes>
+            <Route
+              path="/darslik/rus-tili"
+              element={<DarslikTopPills subjectId="rustili" completedCount={9} />}
+            />
+          </Routes>
+        </MemoryRouter>,
+      )
+
+      await waitFor(() => {
+        expect(screen.getByTestId('brilliant-streak-pill')).toHaveTextContent('4')
+      })
+      expect(screen.getByTestId('brilliant-streak-pill').querySelector('.text-\\[\\#A8D31D\\]')).not.toBeNull()
+
+      fireEvent.click(screen.getByTestId('brilliant-streak-pill'))
+      await waitFor(() => {
+        expect(screen.getByText('11')).toBeInTheDocument()
+      })
+      expect(getHistSpy).toHaveBeenCalledWith('u77', expect.any(String), 'rustili', { global: true })
+      expect(screen.getByLabelText('Zaryadlar: 2/2')).toBeInTheDocument()
+      expect(document.querySelectorAll('[data-status="saved"]')).toHaveLength(1)
+      expect(document.querySelectorAll('[data-status="completed"]')).toHaveLength(4)
+    } finally {
+      getDailySpy.mockRestore()
+      getHistSpy.mockRestore()
+    }
+  })
+
+  it('shares global streak and battery charges across any subject such as fizika', () => {
+    const today = todayStr()
+    useDailyStore.setState({
+      streaks: { rustili: 6 },
+      charges: { rustili: 2 },
+      extendedDates: { [`rustili:${today}`]: true },
+      globalStreak: 6,
+      globalCharges: 2,
+      globalExtendedDate: today,
+    })
+    render(
+      <MemoryRouter initialEntries={['/darslik']}>
+        <Routes>
+          <Route path="/darslik" element={<DarslikTopPills subjectId="fizika" completedCount={2} />} />
+        </Routes>
+      </MemoryRouter>,
+    )
+    expect(screen.getByTestId('brilliant-streak-pill')).toHaveTextContent('6')
+    expect(screen.getByTestId('brilliant-streak-pill').querySelector('.text-\\[\\#A8D31D\\]')).not.toBeNull()
+    fireEvent.click(screen.getByTestId('brilliant-streak-pill'))
+    expect(screen.getByLabelText('Zaryadlar: 2/2')).toBeInTheDocument()
   })
 })

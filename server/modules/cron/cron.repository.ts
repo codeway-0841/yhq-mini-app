@@ -93,14 +93,19 @@ export const cronRepository = {
     if (userIds.length === 0) return new Map()
 
     const lastActiveRows = await db
-      .select({
+      .selectDistinctOn([dailyStreaks.userId], {
         userId: dailyStreaks.userId,
-        lastActive: sql<string | null>`MAX(${dailyStreaks.lastDailyDate})`,
-        charges: sql<number>`COALESCE(MAX(${dailyStreaks.charges}), 0)::int`,
+        lastActive: dailyStreaks.lastDailyDate,
+        charges: dailyStreaks.charges,
       })
       .from(dailyStreaks)
       .where(inArray(dailyStreaks.userId, userIds))
-      .groupBy(dailyStreaks.userId)
+      .orderBy(
+        dailyStreaks.userId,
+        sql`${dailyStreaks.lastDailyDate} DESC NULLS LAST`,
+        sql`${dailyStreaks.updatedAt} DESC`,
+        sql`${dailyStreaks.streak} DESC`,
+      )
     const lastActive = lastActiveRows.filter((r): r is { userId: string; lastActive: string; charges: number } => r.lastActive != null)
 
     const balances = await db

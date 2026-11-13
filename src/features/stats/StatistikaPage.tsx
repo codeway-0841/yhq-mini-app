@@ -14,7 +14,7 @@ import { levelFromXp } from '../../../shared/xp'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
-import { useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { selectDailyStreak, useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { parseQuestionKey } from '../../../shared/subjects'
 
 const WEEK_UZ = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya']
@@ -39,7 +39,7 @@ export default function StatistikaPage() {
   const lang     = settings.language
   const userId   = user?.id
 
-  const streak  = useDailyStore((s) => s.streaks[subject.id] ?? 0)
+  const streak  = useDailyStore((s) => selectDailyStreak(s, subject.id))
   // XP endi SERVER hisoblaydi (o'rganish hodisasiga qarab), level shundan —
   // avval ikkalasi ham totalCorrect'ning ko'paytmasi edi (shared/xp.ts)
   const xp      = useAppStore((s) => s.xp)

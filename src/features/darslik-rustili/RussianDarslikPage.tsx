@@ -8,7 +8,7 @@ import { PageHeader } from '../../shared/components/ui/page-header'
 import { goBack } from '../../shared/lib/navigation'
 import { track } from '../../shared/lib/analytics'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore } from '../../shared/store/useDailyStore'
+import { selectDailyStreak, useDailyStore } from '../../shared/store/useDailyStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { useT } from '../../shared/i18n'
 import {
@@ -46,7 +46,7 @@ export default function RussianDarslikPage() {
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const xp = useAppStore((s) => s.xp) ?? 0
-  const streak = useDailyStore((s) => s.streaks[RUSSIAN_SUBJECT_ID] ?? 0)
+  const streak = useDailyStore((s) => selectDailyStreak(s, RUSSIAN_SUBJECT_ID))
   const readByUser = useLessonsStore((s) => s.readByUser)
   const markRead = useLessonsStore((s) => s.markRead)
   const mastery = useDarslikMastery()

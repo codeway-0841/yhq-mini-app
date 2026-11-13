@@ -5,7 +5,7 @@ import { useModalCount } from '../lib/navigation'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
 import { playSound } from '../lib/sounds'
-import { isTabRootRoute } from '../config/route-chrome'
+import { DOCK_HOME_PATHS, isTabRootRoute } from '../config/route-chrome'
 import { haptics } from '../../platform/haptics'
 
 export { isTabRootRoute, TAB_ROOT_PATHS } from '../config/route-chrome'
@@ -34,10 +34,10 @@ export default function IosDock() {
   const tt = useT(lang)
   const modalCount = useModalCount()
 
-  const hasRusMapOpen =
-    location.pathname === '/darslik/rus-tili' &&
+  const hasBlockReaderOpen =
+    (location.pathname === '/darslik/rus-tili' || location.pathname === '/darslik/rus-adabiyot') &&
     new URLSearchParams(location.search).has('block')
-  const isTabRoot = isTabRootRoute(location.pathname) && !hasRusMapOpen
+  const isTabRoot = isTabRootRoute(location.pathname) && !hasBlockReaderOpen
   const isVisible = isTabRoot && modalCount === 0
 
   const navItems: NavItem[] = useMemo(() => [
@@ -107,7 +107,7 @@ export default function IosDock() {
         <div className="mx-auto flex max-w-[480px] items-center justify-around">
           {navItems.map((item) => {
             const isActive = item.path === '/'
-              ? location.pathname === '/' || location.pathname === '/darslik' || location.pathname === '/darslik/rus-tili'
+              ? location.pathname === '/' || (DOCK_HOME_PATHS as readonly string[]).includes(location.pathname)
               : location.pathname.startsWith(item.path)
             const Icon = item.icon
 

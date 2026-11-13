@@ -5,7 +5,7 @@ import {
 import { Button } from '../../shared/components/ui/button'
 import ModalShell from '../../shared/components/ModalShell'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { useDailyStore, doneKeyOf, todayStr } from '../../shared/store/useDailyStore'
+import { useDailyStore, isSubjectExtendedOnDate, selectDailyCharges, todayStr } from '../../shared/store/useDailyStore'
 import { useT, type Keys } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
@@ -275,8 +275,8 @@ export default function LessonRunner({
         if (typeof graded.xp === 'number') useAppStore.setState({ xp: graded.xp })
         if (typeof graded.dailyStreak === 'number') {
           const today = todayStr()
-          const alreadyDone = useDailyStore.getState().activityKey === doneKeyOf(today, RUSSIAN_SUBJECT_ID)
-          const charges = graded.streakCharges ?? useDailyStore.getState().charges[RUSSIAN_SUBJECT_ID] ?? 0
+          const alreadyDone = isSubjectExtendedOnDate(useDailyStore.getState(), today, RUSSIAN_SUBJECT_ID)
+          const charges = graded.streakCharges ?? selectDailyCharges(useDailyStore.getState(), RUSSIAN_SUBJECT_ID)
           const showCharge = Boolean(graded.chargeSaved || graded.chargeEarned || charges > 0)
           if (!alreadyDone && graded.dailyStreak > 0) {
             pendingStreakRef.current = {
