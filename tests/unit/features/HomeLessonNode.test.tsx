@@ -5,12 +5,18 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 const mocks = vi.hoisted(() => ({ instances: [] as Array<{
   inputs: Array<{ name: string; value: boolean | number; fire: ReturnType<typeof vi.fn> }>
   cleanup: ReturnType<typeof vi.fn>
+  pause: ReturnType<typeof vi.fn>
+  play: ReturnType<typeof vi.fn>
+  drawFrame: ReturnType<typeof vi.fn>
 }> }))
 
 vi.mock('@rive-app/webgl2-course', () => {
   class MockRive {
     inputs = ['color', 'dark-mode', 'select', 'completed', 'icon', 'koji_appear'].map((name) => ({ name, value: false as boolean | number, fire: vi.fn() }))
     cleanup = vi.fn()
+    pause = vi.fn()
+    play = vi.fn()
+    drawFrame = vi.fn()
     resizeDrawingSurfaceToCanvas = vi.fn()
     constructor(config: { onLoad: () => void }) { mocks.instances.push(this); queueMicrotask(config.onLoad) }
     stateMachineInputs() { return this.inputs }
@@ -43,11 +49,15 @@ describe('HomeLessonNode', () => {
     expect(rive.cleanup).toHaveBeenCalledOnce()
   })
 
-  it('animatsiya o‘chirilganda statik belgini ko‘rsatadi', () => {
+  it('animatsiya o‘chirilganda Rive 1-kadrni pauzada chizadi (rastr PNG ko‘rsatmaydi)', async () => {
     useAppStore.setState({ settings: { ...useAppStore.getState().settings, noAnimation: true } })
-    const view = render(<HomeLessonNode color={5} fallback="/purple.png" />)
-    expect(view.container.querySelector('img')).toHaveAttribute('src', '/purple.png')
-    expect(mocks.instances).toHaveLength(0)
+    const view = render(<HomeLessonNode color={5} fallback="/darslik-map/node-active-ring.svg" />)
+    await waitFor(() => expect(view.container.querySelector('canvas')).toHaveStyle({ visibility: 'visible' }))
+    expect(view.container.querySelector('img')).toBeNull()
+    expect(mocks.instances).toHaveLength(1)
+    expect(mocks.instances[0].inputs.find((input) => input.name === 'koji_appear')?.fire).toHaveBeenCalledOnce()
+    expect(mocks.instances[0].drawFrame).toHaveBeenCalled()
+    expect(mocks.instances[0].pause).toHaveBeenCalledOnce()
   })
 
   it('o‘tilgan darsga check diskini qo‘yadi va maskotni ko‘chirmaydi', async () => {

@@ -262,7 +262,7 @@ export default function Darslik() {
       <div
         data-testid="brilliant-darslik-screen"
         style={{ '--yhq-accent': theme.accent } as CSSProperties}
-        className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[calc(5.2rem+var(--safe-bottom,0px))] lg:pb-6 mx-auto max-w-[430px] select-none overflow-y-auto"
+        className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-6 pt-[max(0.5rem,var(--safe-top,0px))] pb-[calc(5.6rem+var(--safe-bottom,0px))] lg:pb-6 mx-auto max-w-[430px] select-none overflow-y-auto"
       >
         {/* Top: Status bar + Header */}
         <div className="yhq-home-header flex flex-col shrink-0">
@@ -273,7 +273,7 @@ export default function Darslik() {
           />
 
           {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
-          <div className="flex flex-col items-center text-center px-4 mt-2">
+          <div className="flex flex-col items-center text-center px-2 mt-3.5">
             <h1
               id={`lesson-module-title-${activeMod.id}`}
               tabIndex={-1}
@@ -282,7 +282,7 @@ export default function Darslik() {
               {activeTitle}
             </h1>
 
-            <div className="mt-1.5 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
+            <div className="mt-2 flex items-center justify-center gap-1.5 text-[12px] font-extrabold uppercase tracking-widest">
               <span
                 data-testid="brilliant-level-subtitle"
                 className="yhq-home-accent"
@@ -333,7 +333,7 @@ export default function Darslik() {
             onTouchMove={(e) => { if (e.touches[0]) handleSwipeMove(e.touches[0].clientX) }}
             onTouchEnd={handleSwipeEnd}
             onTouchCancel={handleSwipeEnd}
-            className="relative flex h-[clamp(160px,26dvh,220px)] w-[calc(100%+2rem)] cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
+            className="relative flex h-[clamp(168px,27dvh,242px)] w-[calc(100%+3rem)] cursor-grab items-center justify-center overflow-hidden touch-pan-y active:cursor-grabbing select-none"
           >
             {/* The neighboring illustrations remain partially visible at the edges. */}
             {modules.map((m, i) => {
@@ -394,7 +394,7 @@ export default function Darslik() {
         <div className="yhq-home-card-group mt-auto shrink-0 flex flex-col w-full">
           {/* 4. Centered Pagination Dots (sal teparoq, start karta ustida nafas bilan) */}
           <div
-            className="yhq-home-dots mb-[18px] flex items-center justify-center gap-2.5"
+            className="yhq-home-dots mb-3.5 flex items-center justify-center gap-2.5"
             role="tablist"
             aria-label="Darajalar"
           >
@@ -427,13 +427,13 @@ export default function Darslik() {
           <section
             id={`lesson-module-${activeMod.id}`}
             aria-labelledby={`lesson-module-title-${activeMod.id}`}
-            className="yhq-home-card w-full rounded-3xl border-2 border-pline-strong px-5 pt-3.5 pb-3"
+            className="yhq-home-card w-full rounded-3xl border-2 border-pline-strong p-4 pb-5"
           >
         <div
           key={activeMod.id}
           ref={listRef}
           role="list"
-          className="h-[126px] overflow-y-auto no-scrollbar scroll-smooth space-y-2.5"
+          className="h-[128px] overflow-y-auto no-scrollbar scroll-smooth"
         >
           {activeLessons.map((lesson, idx) => {
             const isDone = activeDoneList.includes(idx)
@@ -462,15 +462,15 @@ export default function Darslik() {
                     setSelected({ moduleId: activeMod.id, idx, check: false })
                     haptics.selection()
                   }}
-                  className="yhq-home-row flex h-[58px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl transition-colors"
+                  className="yhq-home-row flex h-[64px] w-full cursor-pointer items-center gap-3.5 px-2 text-left rounded-2xl transition-colors"
                 >
                   <BrilliantLessonRowIcon state={rowState} accentColor={theme.accent} />
 
                   <span
                     className={
                       isHighlighted && !isDone
-                        ? 'min-w-0 flex-1 text-[16px] font-bold leading-snug'
-                        : 'min-w-0 flex-1 text-[16px] font-medium leading-snug text-[var(--yhq-muted)]'
+                        ? 'min-w-0 flex-1 text-[15px] font-bold leading-snug'
+                        : 'min-w-0 flex-1 text-[15px] font-medium leading-snug text-[var(--yhq-muted)]'
                     }
                   >
                     {lessonTitle}
@@ -495,12 +495,12 @@ export default function Darslik() {
           })}
         </div>
 
-        {/* 1-to-1 56px Pill Start Button matching Brilliant */}
+        {/* 1-to-1 48px Pill Start Button matching Brilliant */}
         <button
           type="button"
           data-testid="brilliant-start-button"
           onClick={(e) => openLessonAt(activeMod, activeLessonIdx, e.currentTarget)}
-          className="relative mt-3.5 flex h-14 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[17px] font-bold transition-[transform,filter] duration-100 hover:brightness-[1.06] active:translate-y-[2px] shadow-sm select-none"
+          className="relative mt-4 flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-full text-[16px] font-bold transition-[transform,filter] duration-100 hover:brightness-[1.06] active:translate-y-[2px] shadow-sm select-none"
           style={{
             backgroundColor: theme.buttonBg,
             color: theme.buttonText,

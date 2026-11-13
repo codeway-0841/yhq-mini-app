@@ -1,4 +1,5 @@
-import { memo, useEffect, useId, useMemo, useState } from 'react'
+import { memo, useCallback, useEffect, useId, useMemo, useRef, useState } from 'react'
+import type { KeyboardEvent as ReactKeyboardEvent, PointerEvent as ReactPointerEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './learning-path.css'
 import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon'
@@ -160,6 +161,12 @@ function pickAvatarColor(seed: string): string {
 }
 
 /**
+ * Brilliant League karuselidagi bitta qalqon uyasining kengligi (px).
+ * Markaziy 84px qalqon va yonma-yon 64-68px qo'shni qalqonlar + chetdagi qisman ko'rinish uchun.
+ */
+const LEAGUE_ITEM_PITCH = 96
+
+/**
  * Brilliant.org Home top baridagi Kalit (🔑), Liga qalqoni (🛡️) va Seriya chaqmog'i (⚡) pill'lari
  * hamda ularni bosganda ochiladigan bottom sheet'lar.
  */
@@ -173,6 +180,7 @@ export const DarslikTopPills = memo(function DarslikTopPills({
   const displayName = useAppStore((s) => s.displayName)
   const storeLeague = useAppStore((s) => s.league)
   const lang = useAppStore((s) => s.settings.language)
+  const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const isPremium = useAppStore((s) => s.tariff === 'premium')
   const tt = useT(lang)
   const ru = lang === 'ru'
@@ -202,11 +210,115 @@ export const DarslikTopPills = memo(function DarslikTopPills({
     () => resolveBrilliantLeagueId(weekly?.myLeague || storeLeague),
     [weekly?.myLeague, storeLeague],
   )
-  const currentTierIndex = BRILLIANT_LEAGUES.findIndex((l) => l.id === currentTierId)
+  const currentTierIndex = Math.max(0, BRILLIANT_LEAGUES.findIndex((l) => l.id === currentTierId))
   const currentLeague = BRILLIANT_LEAGUES[currentTierIndex] ?? BRILLIANT_LEAGUES[0]
-  const prevLeague = currentTierIndex > 0 ? BRILLIANT_LEAGUES[currentTierIndex - 1] : null
-  const nextLeague = currentTierIndex < BRILLIANT_LEAGUES.length - 1 ? BRILLIANT_LEAGUES[currentTierIndex + 1] : null
+  const [selectedTierIdx, setSelectedTierIdx] = useState<number>(currentTierIndex)
+  const [dragOffset, setDragOffset] = useState(0)
+  const [isDragging, setIsDragging] = useState(false)
+
+  const dragRef = useRef<{
+    pointerId: number
+    startX: number
+    startY: number
+    moved: boolean
+    dx: number
+  } | null>(null)
+  const suppressClickRef = useRef(false)
+  const leagueListRef = useRef<HTMLDivElement>(null)
+  const youRowRef = useRef<HTMLDivElement>(null)
+
   const daysLeft = useMemo(() => getDaysLeftInWeek(), [])
+
+  useEffect(() => {
+    if (sheet === 'league') {
+      setSelectedTierIdx(currentTierIndex)
+      setDragOffset(0)
+      setIsDragging(false)
+    }
+  }, [sheet, currentTierIndex])
+
+  const selectLeagueTier = useCallback((idx: number) => {
+    const clamped = Math.max(0, Math.min(BRILLIANT_LEAGUES.length - 1, idx))
+    if (clamped !== selectedTierIdx) {
+      haptics.impact('light')
+      setSelectedTierIdx(clamped)
+    }
+  }, [selectedTierIdx])
+
+  const handleCarouselPointerDown = useCallback((e: ReactPointerEvent<HTMLDivElement>) => {
+    if (e.button !== 0 && e.pointerType === 'mouse') return
+    if (!Number.isFinite(e.clientX) || !Number.isFinite(e.clientY)) return
+    dragRef.current = {
+      pointerId: e.pointerId,
+      startX: e.clientX,
+      startY: e.clientY,
+      moved: false,
+      dx: 0,
+    }
+    suppressClickRef.current = false
+  }, [])
+
+  const handleCarouselPointerMove = useCallback((e: ReactPointerEvent<HTMLDivElement>) => {
+    const st = dragRef.current
+    if (!st || st.pointerId !== e.pointerId) return
+    if (!Number.isFinite(e.clientX) || !Number.isFinite(e.clientY)) return
+    const dx = e.clientX - st.startX
+    const dy = e.clientY - st.startY
+    if (!st.moved) {
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return
+      if (Math.abs(dy) > Math.abs(dx)) {
+        dragRef.current = null
+        return
+      }
+      st.moved = true
+      suppressClickRef.current = true
+      setIsDragging(true)
+      try {
+        e.currentTarget.setPointerCapture(e.pointerId)
+      } catch {
+        // jsdom / fallback
+      }
+    }
+    st.dx = dx
+    const atStartEdge = selectedTierIdx === 0 && dx > 0
+    const atEndEdge = selectedTierIdx === BRILLIANT_LEAGUES.length - 1 && dx < 0
+    setDragOffset(atStartEdge || atEndEdge ? dx * 0.28 : dx)
+  }, [selectedTierIdx])
+
+  const finishCarouselDrag = useCallback((e: ReactPointerEvent<HTMLDivElement>) => {
+    const st = dragRef.current
+    if (!st || st.pointerId !== e.pointerId) return
+    dragRef.current = null
+    if (st.moved) {
+      let step = Math.round(-st.dx / LEAGUE_ITEM_PITCH)
+      if (step === 0 && Math.abs(st.dx) > 26) {
+        step = st.dx < 0 ? 1 : -1
+      }
+      selectLeagueTier(selectedTierIdx + step)
+    }
+    setDragOffset(0)
+    setIsDragging(false)
+    try {
+      if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+        e.currentTarget.releasePointerCapture(e.pointerId)
+      }
+    } catch {
+      // jsdom / fallback
+    }
+  }, [selectLeagueTier, selectedTierIdx])
+
+  const handleCarouselKeyDown = useCallback((e: ReactKeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'ArrowRight') {
+      e.preventDefault()
+      selectLeagueTier(selectedTierIdx + 1)
+    } else if (e.key === 'ArrowLeft') {
+      e.preventDefault()
+      selectLeagueTier(selectedTierIdx - 1)
+    }
+  }, [selectLeagueTier, selectedTierIdx])
+
+  const selectedLeague = BRILLIANT_LEAGUES[selectedTierIdx] ?? currentLeague
+  const isCurrentLeagueSelected = selectedLeague.id === currentTierId
 
   const leagueEntries = useMemo(() => {
     const entries = weekly?.entries ?? []
@@ -222,6 +334,25 @@ export const DarslikTopPills = memo(function DarslikTopPills({
     const myName = displayName || `${user?.firstName ?? ''} ${user?.lastName ?? ''}`.trim() || tt('guestName')
     return [{ rank: 1, userId: user?.id || 'you', name: myName, score: 0, isYou: true }]
   }, [weekly?.entries, user, displayName, tt])
+
+  // Brilliant kabi liga ochilganda foydalanuvchi qatorini ro'yxat o'rtasiga silliq olib kelish
+  useEffect(() => {
+    if (sheet !== 'league') return
+    const raf = window.requestAnimationFrame(() => {
+      const list = leagueListRef.current
+      const row = youRowRef.current
+      if (!list || !row) return
+      const listRect = list.getBoundingClientRect()
+      const rowRect = row.getBoundingClientRect()
+      const relativeTop = listRect.height > 0 && rowRect.height > 0
+        ? list.scrollTop + (rowRect.top - listRect.top)
+        : row.offsetTop
+      const rowHeight = rowRect.height > 0 ? rowRect.height : row.clientHeight
+      const targetTop = Math.max(0, relativeTop - list.clientHeight / 2 + rowHeight / 2)
+      list.scrollTo({ top: targetTop, behavior: noAnimation ? 'auto' : 'smooth' })
+    })
+    return () => window.cancelAnimationFrame(raf)
+  }, [sheet, leagueEntries, noAnimation])
 
   // Brilliant uslubidagi 5 kunlik hafta oynasi (so'nggi 5 kun: bugungi kun o'ng chetda)
   const weekDays = useMemo(() => {
@@ -257,7 +388,7 @@ export const DarslikTopPills = memo(function DarslikTopPills({
           data-testid="brilliant-keys-pill"
           onClick={() => openSheet('keys')}
           aria-label={ru ? `Ключи: ${keyCount}` : `Kalitlar: ${keyCount}`}
-          className="yhq-home-pill inline-flex h-[44px] min-w-[66px] items-center justify-center gap-2 rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
+          className="yhq-home-pill inline-flex h-[48px] min-w-[72px] items-center justify-center gap-2 rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
         >
           <span className="text-[16px] font-extrabold leading-none tabular-nums">
             {keyCount}
@@ -265,15 +396,15 @@ export const DarslikTopPills = memo(function DarslikTopPills({
           <BrilliantKeyIcon size={21} />
         </button>
 
-        <div className="yhq-home-status-right flex items-center gap-2">
+        <div className="yhq-home-status-right flex items-center gap-1.5">
           <button
             type="button"
             data-testid="brilliant-league-pill"
             onClick={() => openSheet('league')}
             aria-label={ru ? `Лига: ${currentLeague.name}` : `Liga: ${currentLeague.name}`}
-            className="yhq-home-pill inline-flex h-[44px] min-w-[66px] items-center justify-center rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
+            className="yhq-home-pill inline-flex h-[48px] min-w-[72px] items-center justify-center rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
           >
-            <LeagueShield tierId={currentTierId} size={23} />
+            <LeagueShield tierId={currentTierId} size={26} />
           </button>
 
           <button
@@ -281,7 +412,7 @@ export const DarslikTopPills = memo(function DarslikTopPills({
             data-testid="brilliant-streak-pill"
             onClick={() => openSheet('streak')}
             aria-label={ru ? `Серия: ${streak}` : `Seriya: ${streak}`}
-            className="yhq-home-pill inline-flex h-[44px] min-w-[68px] items-center justify-center gap-1.5 rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
+            className="yhq-home-pill inline-flex h-[48px] min-w-[74px] items-center justify-center gap-1.5 rounded-full border-2 border-[#e5e5e5] dark:border-[#2c2c2c] bg-transparent px-3.5 transition-opacity focus-visible:outline-none cursor-pointer select-none"
           >
             <span className="text-[16px] font-extrabold leading-none tabular-nums">
               {streak}
@@ -338,69 +469,140 @@ export const DarslikTopPills = memo(function DarslikTopPills({
 
       {sheet === 'league' && (
         <ModalShell
-          title={`${currentLeague.name} League`}
+          title={`${selectedLeague.name} League`}
           showHeader={false}
           showHandle={false}
+          bodyScroll={false}
+          bodyClassName="pt-4 pb-2 flex flex-col"
           onClose={() => setSheet(null)}
           closeLabel={tt('close')}
           className="yhq-brilliant-sheet"
         >
-          <div className="pt-4 pb-1">
-            <div className="flex items-center justify-center gap-5 py-1">
-              <div className="opacity-70 scale-90">
-                {prevLeague ? (
-                  <LeagueShield tierId={prevLeague.id} size={56} />
-                ) : (
-                  <LeagueShield tierId={currentTierId} locked size={56} />
-                )}
-              </div>
-              <LeagueShield tierId={currentTierId} size={72} />
-              <div className="opacity-70 scale-90">
-                {nextLeague ? (
-                  <LeagueShield tierId={nextLeague.id} locked size={56} />
-                ) : (
-                  <LeagueShield tierId={currentTierId} locked size={56} />
-                )}
+          <div className="flex min-h-0 flex-1 flex-col">
+            {/* Brilliant 1:1 gorizontal swipe + tap liga qalqonlari karuseli */}
+            <div
+              role="region"
+              aria-roledescription="carousel"
+              aria-label={ru ? 'Лиги' : 'Ligalar'}
+              tabIndex={0}
+              data-testid="league-carousel"
+              onPointerDown={handleCarouselPointerDown}
+              onPointerMove={handleCarouselPointerMove}
+              onPointerUp={finishCarouselDrag}
+              onPointerCancel={finishCarouselDrag}
+              onKeyDown={handleCarouselKeyDown}
+              className="-mx-5 relative h-[96px] overflow-hidden select-none touch-pan-y focus:outline-none"
+              style={{
+                maskImage: 'linear-gradient(to right, transparent 0%, black 13%, black 87%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 13%, black 87%, transparent 100%)',
+              }}
+            >
+              <div
+                className="flex h-full items-center"
+                style={{
+                  position: 'relative',
+                  left: '50%',
+                  width: 'max-content',
+                  transform: `translate3d(${-(selectedTierIdx * LEAGUE_ITEM_PITCH + LEAGUE_ITEM_PITCH / 2) + dragOffset}px, 0, 0)`,
+                  transition: isDragging || noAnimation
+                    ? 'none'
+                    : 'transform 320ms cubic-bezier(0.22, 1, 0.36, 1)',
+                }}
+              >
+                {BRILLIANT_LEAGUES.map((tier, idx) => {
+                  const distance = Math.abs(idx - selectedTierIdx)
+                  const isSelected = distance === 0
+                  const isLocked = idx > currentTierIndex
+                  const label = ru ? `Лига ${tier.name}` : `${tier.name} ligasi`
+                  return (
+                    <button
+                      key={tier.id}
+                      type="button"
+                      data-testid={`league-tier-${tier.id}`}
+                      aria-label={label}
+                      aria-pressed={isSelected}
+                      onClick={() => {
+                        if (suppressClickRef.current) {
+                          suppressClickRef.current = false
+                          return
+                        }
+                        selectLeagueTier(idx)
+                      }}
+                      className={cn(
+                        'flex h-full shrink-0 items-center justify-center rounded-2xl focus:outline-none',
+                        noAnimation ? '' : 'transition-[transform,opacity] duration-300 ease-out',
+                        isSelected
+                          ? 'scale-100 opacity-100'
+                          : distance === 1
+                            ? 'scale-[0.78] opacity-80'
+                            : 'scale-[0.72] opacity-55',
+                      )}
+                      style={{ width: LEAGUE_ITEM_PITCH }}
+                    >
+                      <LeagueShield tierId={tier.id} locked={isLocked} size={86} />
+                    </button>
+                  )
+                })}
               </div>
             </div>
 
-            <div className="mt-2.5 text-center">
-              <h2 className="font-display text-[22px] font-extrabold tracking-tight">
-                {ru ? `Лига ${currentLeague.name}` : `${currentLeague.name} ligasi`}
+            {/* Qattiq balandlikdagi sarlavha zonasi: joriy ligada muddat/top-15 ko'rinadi, qulflanganida faqat nom markazlashadi */}
+            <div className="mt-3 flex min-h-[54px] flex-col items-center justify-center text-center">
+              <h2
+                data-testid="league-modal-title"
+                className="font-display text-[22px] font-extrabold leading-tight tracking-tight"
+              >
+                {ru ? `Лига ${selectedLeague.name}` : `${selectedLeague.name} ligasi`}
               </h2>
-              <p className="mt-1 text-[14.5px]" style={{ color: 'var(--yhq-sheet-muted)' }}>
-                <strong className="font-bold text-current">
-                  {ru ? `${daysLeft} дн.` : `${daysLeft} kun qoldi`}
-                </strong>
-                {ru ? ' · Топ 15 выше' : ' · Top 15 ko‘tariladi'}
-              </p>
+              {isCurrentLeagueSelected && (
+                <p
+                  data-testid="league-modal-subtitle"
+                  className="mt-1 text-[14.5px] leading-snug"
+                  style={{ color: 'var(--yhq-sheet-muted)' }}
+                >
+                  <strong className="font-bold text-current">
+                    {ru ? `${daysLeft} дн.` : `${daysLeft} kun qoldi`}
+                  </strong>
+                  {ru ? ' · Топ 15 выше' : ' · Top 15 ko‘tariladi'}
+                </p>
+              )}
             </div>
 
-            <div className="mt-4 -mx-5 border-t" style={{ borderColor: 'var(--yhq-sheet-divider)' }} />
+            <div className="-mx-5 mt-4 border-t" style={{ borderColor: 'var(--yhq-sheet-divider)' }} />
 
-            <div className="max-h-[340px] overflow-y-auto pt-2.5 pb-1 space-y-1">
-              {leagueEntries.slice(0, 20).map((entry) => (
+            <div
+              ref={leagueListRef}
+              data-testid="league-entries-list"
+              className="relative h-[376px] max-h-[52dvh] min-h-0 overflow-y-auto overscroll-contain pt-3 pb-2 space-y-1"
+              style={{
+                maskImage: 'linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%)',
+              }}
+            >
+              {leagueEntries.map((entry) => (
                 <div
                   key={`${entry.rank}-${entry.userId}`}
-                  className="flex items-center gap-3.5 rounded-2xl px-3.5 py-3"
+                  ref={entry.isYou ? youRowRef : undefined}
+                  data-testid={entry.isYou ? 'league-you-row' : undefined}
+                  className="flex min-h-[64px] items-center gap-3.5 rounded-2xl px-3.5 py-2.5"
                   style={entry.isYou ? { backgroundColor: 'var(--yhq-sheet-you-bg)' } : undefined}
                 >
                   <span
-                    className="w-6 text-center text-[15px] font-medium tabular-nums shrink-0"
+                    className="w-7 text-center text-[15.5px] font-medium tabular-nums shrink-0"
                     style={entry.isYou ? undefined : { color: 'var(--yhq-sheet-muted)' }}
                   >
                     {entry.rank}
                   </span>
                   <div
-                    className="flex size-10 shrink-0 items-center justify-center rounded-full text-[15px] font-bold text-white"
+                    className="flex size-11 shrink-0 items-center justify-center rounded-full text-[16px] font-bold text-white"
                     style={{ backgroundColor: pickAvatarColor(entry.userId || entry.name) }}
                   >
                     {(entry.name[0] || '?').toUpperCase()}
                   </div>
-                  <span className="min-w-0 flex-1 truncate text-[15.5px] font-medium">
+                  <span className="min-w-0 flex-1 truncate text-[16px] font-medium">
                     {entry.name}
                   </span>
-                  <span className="text-[15px] font-medium tabular-nums shrink-0">
+                  <span className="text-[15.5px] font-medium tabular-nums shrink-0">
                     {entry.score} XP
                   </span>
                 </div>

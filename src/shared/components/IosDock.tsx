@@ -101,7 +101,7 @@ export default function IosDock() {
       <nav
         role="navigation"
         aria-label="Asosiy navigatsiya"
-        className="pointer-events-auto w-full bg-pcanvas pt-2 pb-[max(1.25rem,calc(var(--safe-bottom,0px)+0.5rem))] px-1 select-none"
+        className="pointer-events-auto w-full bg-pcanvas pt-2.5 pb-[max(1.35rem,calc(var(--safe-bottom,0px)+0.65rem))] px-1 select-none"
         style={{ backgroundColor: 'var(--p-canvas)' }}
       >
         <div className="mx-auto flex max-w-[480px] items-center justify-around">
@@ -121,35 +121,27 @@ export default function IosDock() {
                 title={tt(item.labelKey)}
                 className="group relative flex min-w-0 flex-1 flex-col items-center justify-center py-0.5 touch-manipulation transition-transform duration-150 active:scale-95 focus-visible:outline-none"
               >
-                {/* Brilliant 1:1 icon squircle/pill: faol bo'lsa yumaloq fon, nofaol bo'lsa shaffof */}
+                {/* Brilliant 1:1 nav pill: faqat faol tabda yumaloq pill fon, qolgan barchasi bir xil neytral */}
                 <span
                   data-testid={isActive ? 'dock-active-pill' : undefined}
-                  className={`flex h-[30px] w-[52px] items-center justify-center rounded-full transition-colors duration-200 ${
-                    item.isCenter
-                      ? isActive
-                        ? 'bg-[rgb(var(--p-primary-rgb)/0.2)] text-pprimary dark:text-white'
-                        : 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pprimary dark:bg-[rgb(var(--p-primary-rgb)/0.18)] dark:text-sky-300'
-                      : isActive
-                        ? 'bg-black/[0.07] text-pfg dark:bg-white/10 dark:text-white'
-                        : 'bg-transparent text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
+                  className={`flex h-[32px] w-[56px] items-center justify-center rounded-full transition-colors duration-200 ${
+                    isActive
+                      ? 'bg-black/[0.08] text-[#111111] dark:bg-white/[0.11] dark:text-white'
+                      : 'bg-transparent text-[#686b72] dark:text-[#8e9099] [@media(hover:hover)]:group-hover:text-pfg'
                   }`}
                 >
                   <Icon
-                    size={21}
-                    strokeWidth={isActive ? 2.3 : item.isCenter ? 2.1 : 1.9}
+                    size={22}
+                    strokeWidth={isActive ? 2.25 : 1.8}
                     className="transition-transform duration-150"
                   />
                 </span>
 
                 <span
-                  className={`mt-1 whitespace-nowrap text-[11px] leading-tight tracking-tight transition-colors duration-150 ${
-                    item.isCenter
-                      ? isActive
-                        ? 'font-bold text-pprimary dark:text-white'
-                        : 'font-semibold text-pprimary dark:text-sky-300'
-                      : isActive
-                        ? 'font-bold text-pfg dark:text-white'
-                        : 'font-medium text-pmuted [@media(hover:hover)]:group-hover:text-pfg'
+                  className={`mt-1 whitespace-nowrap text-[11.5px] leading-tight tracking-tight transition-colors duration-150 ${
+                    isActive
+                      ? 'font-bold text-[#111111] dark:text-white'
+                      : 'font-medium text-[#686b72] dark:text-[#8e9099] [@media(hover:hover)]:group-hover:text-pfg'
                   }`}
                 >
                   {item.shortLabel[lang]}

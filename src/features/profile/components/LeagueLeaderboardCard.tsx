@@ -24,6 +24,7 @@ export const BRILLIANT_LEAGUES = [
 export type BrilliantLeagueId = (typeof BRILLIANT_LEAGUES)[number]['id']
 
 export const LOCKED_SHIELD_IMG = '/leagues/locked.svg'
+const LEAGUE_ASSET_VER = 'rive2'
 
 const AVATAR_GRADIENTS = [
   'from-amber-400 to-yellow-500',
@@ -74,7 +75,10 @@ export function LeagueShield({
   size?: number
   className?: string
 }) {
-  const imgSrc = locked ? LOCKED_SHIELD_IMG : `/leagues/${tierId}.png`
+  const resolvedId = BRILLIANT_LEAGUES.some((l) => l.id === tierId) ? tierId : 'hydrogen'
+  const imgSrc = locked
+    ? `/leagues/locked-${resolvedId}.png?v=${LEAGUE_ASSET_VER}`
+    : `/leagues/${resolvedId}.png?v=${LEAGUE_ASSET_VER}`
 
   return (
     <div
@@ -85,7 +89,8 @@ export function LeagueShield({
         src={imgSrc}
         alt={tierId}
         className="size-full object-contain filter drop-shadow-sm transition-transform duration-150"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
         onError={(e) => {
           e.currentTarget.src = locked ? LOCKED_SHIELD_IMG : '/leagues/hydrogen.png'
         }}

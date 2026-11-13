@@ -13,6 +13,22 @@ import CourseMapPage from './CourseMapPage'
 import './russian-course-home.css'
 
 const VISIBLE_DOTS = 5
+const LOWER_CYR_CONJUNCTIONS = new Set(['и', 'в', 'с', 'к', 'о', 'у', 'а', 'на', 'по', 'из', 'от', 'до', 'не'])
+
+/** Katta harflarda (CAPS) yoki aralash yozilgan ruscha sarlavhalarni Brilliant uslubida o'qishli qilib formatlaydi. */
+function formatSectionTitle(raw: string): string {
+  const trimmed = raw.trim()
+  if (!/[А-ЯЁ]{2,}/.test(trimmed)) return trimmed
+  const words = trimmed.toLowerCase().split(/\s+/)
+  const formatted = words.map((word, idx) => {
+    const clean = word.replace(/[^а-яё]/g, '')
+    if (idx > 0 && clean.length === 1 && !LOWER_CYR_CONJUNCTIONS.has(clean)) {
+      return word.toUpperCase()
+    }
+    return word
+  }).join(' ')
+  return formatted.charAt(0).toUpperCase() + formatted.slice(1)
+}
 
 export default function RussianCourseHome() {
   const sheenId1 = useId()
@@ -208,7 +224,7 @@ export default function RussianCourseHome() {
               const idx = first + offset
               const done = mastery.passed.has(sectionKey(block.id, idx))
               const active = !done && idx === firstIncomplete
-              return <div className="rus-home-row" key={idx} ref={active ? activeRow : undefined}><BrilliantLessonRowIcon state={done ? 'done' : active ? 'current' : 'upcoming'} accentColor={theme.accent} /><span className={active ? 'rus-home-row-title active' : 'rus-home-row-title'}>{title}</span><span className={`rus-home-marker ${done ? 'done' : ''}`} style={done ? { backgroundColor: theme.checkBg } : undefined}>{done ? '✓' : ''}</span></div>
+              return <div className="rus-home-row" key={idx} ref={active ? activeRow : undefined}><BrilliantLessonRowIcon state={done ? 'done' : active ? 'current' : 'upcoming'} accentColor={theme.accent} /><span className={active ? 'rus-home-row-title active' : 'rus-home-row-title'}>{formatSectionTitle(title)}</span><span className={`rus-home-marker ${done ? 'done' : ''}`} style={done ? { backgroundColor: theme.checkBg } : undefined}>{done ? '✓' : ''}</span></div>
             })}</div>
             <button
               type="button"

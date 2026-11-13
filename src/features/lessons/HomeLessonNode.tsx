@@ -28,12 +28,20 @@ export function HomeLessonNode({
 }) {
   const effectiveSelected = selected ?? (!completed && !locked)
   const canvas = useRef<HTMLCanvasElement>(null)
+  const instanceRef = useRef<Rive | null>(null)
   const inputsRef = useRef<StateMachineInput[]>([])
   const latestRef = useRef({ color, completed, locked, level, selected: effectiveSelected })
   latestRef.current = { color, completed, locked, level, selected: effectiveSelected }
 
   const noAnimation = useAppStore((state) => state.settings.noAnimation)
+  const reducedMotionRef = useRef(false)
+  const reducedMotion = Boolean(
+    noAnimation || (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches),
+  )
+  reducedMotionRef.current = reducedMotion
+
   const [ready, setReady] = useState(false)
+  const [failed, setFailed] = useState(false)
 
   const setInput = (name: string, value: boolean | number) => {
     const input = inputsRef.current.find((item) => item.name === name)
@@ -42,8 +50,9 @@ export function HomeLessonNode({
 
   useEffect(() => {
     setReady(false)
+    setFailed(false)
     const element = canvas.current
-    if (!element || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return
+    if (!element) return
     let disposed = false
     let instance: Rive | null = null
     let frame = 0
@@ -74,13 +83,19 @@ export function HomeLessonNode({
         layout: new rive.Layout({ fit: rive.Fit.Contain, alignment: rive.Alignment.Center }),
         onLoad: () => {
           if (disposed || !instance) return
+          instanceRef.current = instance
           const inputs = instance.stateMachineInputs('node_all') ?? []
           inputsRef.current = inputs
           const set = (name: string, value: boolean | number) => {
             const input: StateMachineInput | undefined = inputs.find((item) => item.name === name)
             if (input) input.value = value
           }
-          const updateTheme = () => set('dark-mode', document.body.dataset.theme === 'dark')
+          const updateTheme = () => {
+            set('dark-mode', document.body.dataset.theme === 'dark')
+            if (reducedMotionRef.current) {
+              instance?.drawFrame?.()
+            }
+          }
           updateTheme()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
@@ -93,32 +108,67 @@ export function HomeLessonNode({
           set('select', s.selected)
           set('hover', false)
           resize()
+          const fireAppearAndSettle = () => {
+            if (!latestRef.current.completed && !latestRef.current.locked) {
+              inputs.find((input) => input.name === 'koji_appear')?.fire()
+            }
+            if (reducedMotionRef.current) {
+              const advancer = (instance as unknown as { advanceAndReportChanges?: (dt: number) => void }).advanceAndReportChanges
+              if (typeof advancer === 'function') {
+                for (const dt of [0.016, 0.25, 0.25, 0.25, 0.25]) {
+                  advancer.call(instance, dt)
+                }
+              }
+              instance?.drawFrame?.()
+              instance?.pause?.()
+            }
+          }
           frame = requestAnimationFrame(() => {
             frame = requestAnimationFrame(() => {
-              if (disposed) return
-              if (!latestRef.current.completed && !latestRef.current.locked) {
-                inputs.find((input) => input.name === 'koji_appear')?.fire()
-              }
+              if (disposed || !instance) return
+              fireAppearAndSettle()
               setReady(true)
             })
           })
         },
-        onLoadError: () => { if (!disposed) setReady(false) },
+        onLoadError: () => {
+          if (!disposed) {
+            setReady(false)
+            setFailed(true)
+          }
+        },
       })
       if (typeof ResizeObserver !== 'undefined') {
         resizeObserver = new ResizeObserver(resize)
         resizeObserver.observe(element)
       }
-    }).catch(() => { if (!disposed) setReady(false) })
+    }).catch(() => {
+      if (!disposed) {
+        setReady(false)
+        setFailed(true)
+      }
+    })
     return () => {
       disposed = true
+      instanceRef.current = null
       inputsRef.current = []
       if (frame) cancelAnimationFrame(frame)
       resizeObserver?.disconnect()
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [noAnimation])
+  }, [])
+
+  useEffect(() => {
+    const instance = instanceRef.current
+    if (!instance) return
+    if (reducedMotion) {
+      instance.drawFrame?.()
+      instance.pause?.()
+    } else {
+      instance.play?.()
+    }
+  }, [reducedMotion])
 
   useEffect(() => {
     if (!inputsRef.current.length) return
@@ -130,6 +180,9 @@ export function HomeLessonNode({
         setInput('completed', completed)
         setInput('icon', completed && !level ? 1 : 0)
         setInput('select', effectiveSelected)
+        if (reducedMotionRef.current) {
+          instanceRef.current?.drawFrame?.()
+        }
       } catch { /* ignore */ }
     })
     return () => cancelAnimationFrame(id)
@@ -143,7 +196,7 @@ export function HomeLessonNode({
       onPointerLeave={() => setInput('hover', false)}
     >
       <canvas ref={canvas} className="absolute inset-0 h-full w-full" style={{ visibility: ready ? 'visible' : 'hidden' }} />
-      {!ready && <img src={fallback} alt="" className="h-full w-full object-contain" />}
+      {failed && !ready && <img src={fallback} alt="" className="h-full w-full object-contain" />}
     </span>
   )
 }

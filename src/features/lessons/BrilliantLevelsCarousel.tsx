@@ -431,20 +431,7 @@ export function BrilliantLessonRowIcon({
     )
   }
 
-  // Current level - pick mascot by theme accent color
-  let mascotSrc = '/brilliant/mascot_blue.png'
-  if (normalized.includes('8a4cff') || normalized.includes('purple')) {
-    mascotSrc = '/brilliant/mascot_purple.png'
-  } else if (
-    normalized.includes('f6b31f') ||
-    normalized.includes('gold') ||
-    normalized.includes('amber') ||
-    normalized.includes('yellow')
-  ) {
-    mascotSrc = '/brilliant/mascot_gold.png'
-  }
-
-  return <HomeLessonNode color={color} fallback={mascotSrc} />
+  return <HomeLessonNode color={color} fallback="/darslik-map/node-active-ring.svg" />
 }
 
 export default BrilliantHeroIllustration

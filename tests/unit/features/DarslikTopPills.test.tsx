@@ -1,11 +1,13 @@
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { DarslikTopPills } from '../../../src/features/lessons/DarslikTopPills'
+import { invalidateLeaderboardCache, leaderboardPageCaches } from '../../../src/shared/lib/leaderboard-cache'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { doneKeyOf, todayStr, useDailyStore } from '../../../src/shared/store/useDailyStore'
 
 beforeEach(() => {
+  invalidateLeaderboardCache()
   useAppStore.setState({
     tariff: 'free',
     settings: { ...useAppStore.getState().settings, language: 'uz', noAnimation: true },
@@ -86,7 +88,74 @@ describe('DarslikTopPills', () => {
     const leagueBtn = screen.getByTestId('brilliant-league-pill')
     expect(leagueBtn).toHaveAttribute('aria-label', 'Liga: Lithium')
     fireEvent.click(leagueBtn)
-    expect(screen.getByText('Lithium ligasi')).toBeInTheDocument()
+    expect(screen.getByTestId('league-modal-title')).toHaveTextContent('Lithium ligasi')
+    expect(screen.getByTestId('league-modal-subtitle')).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /reyting/i })).toBeNull()
+  })
+
+  it('switches league tiers on shield tap and swipe and hides countdown on non-active tiers', () => {
+    useAppStore.setState({ league: 'silver' as never })
+    renderPills(3)
+    fireEvent.click(screen.getByTestId('brilliant-league-pill'))
+
+    fireEvent.click(screen.getByTestId('league-tier-carbon'))
+    expect(screen.getByTestId('league-modal-title')).toHaveTextContent('Carbon ligasi')
+    expect(screen.queryByTestId('league-modal-subtitle')).toBeNull()
+
+    const carousel = screen.getByTestId('league-carousel')
+    const firePointer = (type: 'pointerdown' | 'pointermove' | 'pointerup', clientX: number, clientY: number) => {
+      const ev = new MouseEvent(type, { bubbles: true, cancelable: true, clientX, clientY, button: 0 })
+      Object.defineProperty(ev, 'pointerId', { value: 1 })
+      fireEvent(carousel, ev)
+    }
+    firePointer('pointerdown', 240, 50)
+    firePointer('pointermove', 120, 50)
+    firePointer('pointerup', 120, 50)
+    expect(screen.getByTestId('league-modal-title')).toHaveTextContent('Neon ligasi')
+
+    fireEvent.keyDown(carousel, { key: 'ArrowLeft' })
+    fireEvent.keyDown(carousel, { key: 'ArrowLeft' })
+    expect(screen.getByTestId('league-modal-title')).toHaveTextContent('Lithium ligasi')
+    expect(screen.getByTestId('league-modal-subtitle')).toBeInTheDocument()
+  })
+
+  it('auto-scrolls to center the current user row inside the league list', () => {
+    const rafSpy = vi.spyOn(window, 'requestAnimationFrame').mockImplementation((cb) => {
+      cb(0)
+      return 1
+    })
+    const scrollToSpy = vi.fn()
+    const origScrollTo = HTMLElement.prototype.scrollTo
+    HTMLElement.prototype.scrollTo = scrollToSpy
+
+    useAppStore.setState({
+      league: 'silver' as never,
+      user: { id: 'u12', firstName: 'Ruslan', lastName: 'A' } as never,
+    })
+    const entries = Array.from({ length: 16 }, (_, idx) => ({
+      rank: idx + 1,
+      userId: `u${idx + 1}`,
+      name: `User ${idx + 1}`,
+      score: 900 - idx * 25,
+      isYou: idx === 11,
+    }))
+    const weeklyData = {
+      myLeague: 'lithium',
+      entries,
+    } as never
+    const peekSpy = vi.spyOn(leaderboardPageCaches.weekly, 'peek').mockReturnValue(weeklyData)
+    const fetchSpy = vi.spyOn(leaderboardPageCaches.weekly, 'fetch').mockResolvedValue(weeklyData)
+
+    try {
+      renderPills(3)
+      fireEvent.click(screen.getByTestId('brilliant-league-pill'))
+      expect(screen.getByTestId('league-you-row')).toBeInTheDocument()
+      expect(scrollToSpy).toHaveBeenCalled()
+    } finally {
+      peekSpy.mockRestore()
+      fetchSpy.mockRestore()
+      HTMLElement.prototype.scrollTo = origScrollTo
+      rafSpy.mockRestore()
+    }
   })
 })

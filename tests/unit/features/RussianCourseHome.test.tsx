@@ -83,4 +83,11 @@ describe('Russian course home', () => {
     expect(css).not.toContain('max(12px, var(--safe-top, 0px))')
     expect(css).toContain('.route-page:has(.rus-home)')
   })
+
+  it('formats ALL-CAPS and mixed-case Russian outline titles into readable sentence case', async () => {
+    render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
+    await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
+    expect(screen.getByText('Звуки и буквы')).toBeInTheDocument()
+    expect(screen.getByText('Гласные и согласные звуки')).toBeInTheDocument()
+  })
 })
