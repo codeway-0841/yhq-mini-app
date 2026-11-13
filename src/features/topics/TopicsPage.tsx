@@ -12,6 +12,7 @@ import { lessons as lessonsData } from '../../content/lessons'
 import lessonMap from '../../content/lessonMap.yhq.json'
 import {
   DARSLIK_BLOCKS,
+  DARSLIK_PROGRESS_MODULE_OFFSET,
   getBlockOutline,
 } from '../../content/darslik-rustili'
 import {
@@ -20,7 +21,6 @@ import {
   getRusadabiyotBlockOutline,
 } from '../../content/darslik-rusadabiyot'
 import { useDarslikMastery, sectionKey } from '../darslik-rustili'
-import { getBrilliantTheme } from '../lessons'
 import { goBack } from '../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
@@ -28,6 +28,7 @@ import { Check, Lock, Star } from 'lucide-react'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
 import {
   YHQ_BRILLIANT_PATHS,
+  getBrilliantPathTone,
   getBrilliantTopicImage,
   getDarslikBlockPathMeta,
   getRusadabiyotBlockPathMeta,
@@ -35,6 +36,7 @@ import {
   getSubjectChaptersList,
   parseOutlineTopicHeading,
   type BrilliantPathMeta,
+  type BrilliantSectionTone,
 } from './brilliant-courses-data'
 import './brilliant-topics.css'
 
@@ -65,15 +67,6 @@ interface PathSectionData {
   items: TopicCardItem[]
   doneCount: number
   totalCount: number
-}
-
-type BrilliantSectionTone = 'blue' | 'amber' | 'purple'
-
-function getSectionTone(index: number): BrilliantSectionTone {
-  const accent = getBrilliantTheme((index % 8) + 1).accent.toLowerCase()
-  if (accent === '#f6b31f') return 'amber'
-  if (accent === '#8a4cff') return 'purple'
-  return 'blue'
 }
 
 const PINNED_PATH_STORAGE_PREFIX = 'kivvi-pinned-path:'
@@ -290,6 +283,16 @@ function useBrilliantScrollNavigation(sections: PathSectionData[]) {
         return sections[0].meta.id
       }
 
+      const activeScroller = getActiveScrollElement()
+      const maxScroll = activeScroller
+        ? Math.max(0, activeScroller.scrollHeight - activeScroller.clientHeight)
+        : typeof document !== 'undefined' && typeof window !== 'undefined'
+          ? Math.max(0, (document.documentElement?.scrollHeight ?? 0) - window.innerHeight)
+          : 0
+      if (maxScroll > 0 && currentScroll >= maxScroll - 16) {
+        return sections[sections.length - 1].meta.id
+      }
+
       const header = document.querySelector('.page-header')
       const headerBottom = header ? header.getBoundingClientRect().bottom : 148
       const triggerLine = headerBottom + 76
@@ -469,7 +472,7 @@ function BrilliantPathTabs({
               <button
                 type="button"
                 data-tab-id={meta.id}
-                data-tone={getSectionTone(idx)}
+                data-tone={getBrilliantPathTone(meta.pathImage)}
                 data-active={isActive ? 'true' : undefined}
                 aria-current={isActive ? 'true' : undefined}
                 onClick={() => onSelect(meta.id)}
@@ -479,7 +482,7 @@ function BrilliantPathTabs({
                   <img
                     src={meta.pathImage}
                     alt=""
-                    className="size-10 object-contain select-none pointer-events-none"
+                    className="size-9 object-contain select-none pointer-events-none"
                   />
                 </div>
                 <span className="br-path-tab-label">{label}</span>
@@ -529,8 +532,8 @@ function BrilliantCourseSection({
       {/* ── Path Header Hero: Eyebrow + Pin tugma tepada, sarlavha chapda, 3D rasm o'ngda ── */}
       <div className="br-path-hero-wrap">
         <div className="w-full max-w-[580px] mx-auto">
-          <div className="flex items-center justify-between gap-2 mb-1">
-            <span className="text-[11px] font-bold tracking-wider text-psubtle uppercase">
+          <div className="flex items-center justify-between gap-2 mb-1.5">
+            <span className="text-[11.5px] font-bold tracking-[0.06em] text-psubtle uppercase">
               {eyebrow}
             </span>
             <button
@@ -546,10 +549,10 @@ function BrilliantCourseSection({
 
           <div className="br-path-hero-flex">
             <div className="min-w-0 flex-1 pr-2">
-              <h2 className="text-[22px] font-extrabold tracking-tight text-pfg leading-snug">
+              <h2 className="text-[22px] font-extrabold tracking-tight text-pfg leading-[1.2]">
                 {headingTitle}
               </h2>
-              <p className="mt-1.5 text-[13.5px] text-pmuted leading-relaxed line-clamp-2">
+              <p className="mt-1.5 text-[13.5px] text-pmuted leading-[1.45]">
                 {desc}
               </p>
             </div>
@@ -558,101 +561,110 @@ function BrilliantCourseSection({
               <img
                 src={meta.pathImage}
                 alt=""
-                className="max-w-[76px] max-h-[76px] object-contain drop-shadow-sm select-none pointer-events-none"
+                className="max-w-[72px] max-h-[72px] object-contain drop-shadow-sm select-none pointer-events-none"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── Connected Topic Cards Stack (Skrinshotdagi kabi 1:1 toza va nozik) ── */}
+      {/* ── Connected Topic Cards Stack (Brilliant 1:1 nisbat va padding) ── */}
       <div className="br-topics-track">
-        {items.map((item, idx) => {
-          const isLocked = item.state === 'locked'
-          const isDone = item.state === 'done'
+        {(() => {
+          const hasSectionActivity = section.doneCount > 0 || items.some((it) => it.progressPct > 0)
+          return items.map((item, idx) => {
+            const isLocked = item.state === 'locked'
+            const isDone = item.state === 'done'
+            const showNewBadge = Boolean(item.isNew && !isDone && !isLocked)
+            const eyebrowPadClass = showNewBadge ? 'pr-14' : isLocked ? 'pr-7' : ''
+            const showProgressTrack =
+              isDone ||
+              item.progressPct > 0 ||
+              (meta.kind === 'curriculum' && hasSectionActivity && !isLocked)
 
-          return (
-            <div key={item.key} className="br-topic-node">
-              <button
-                type="button"
-                disabled={isLocked}
-                onClick={() => !isLocked && item.onClick()}
-                className="br-topic-card"
-              >
-                {/* Yashil NEW belgisi (o'ng burchakda) */}
-                {item.isNew && !isDone && !isLocked && (
-                  <span className="br-new-badge absolute top-3.5 right-4">
-                    {newLabel}
-                  </span>
-                )}
-
-                {/* Qulflangan holat */}
-                {isLocked && (
-                  <Lock
-                    size={14}
-                    strokeWidth={2}
-                    className="text-pmuted absolute top-4 right-4"
-                  />
-                )}
-
-                {/* Chap tomondagi 3D Mavzu rasmi */}
-                <div className="relative size-[58px] shrink-0 flex items-center justify-center select-none">
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="max-w-full max-h-full object-contain pointer-events-none"
-                    loading="lazy"
-                  />
-                  {isDone && (
-                    <span
-                      className="absolute -bottom-1 -right-1 grid size-5 place-items-center rounded-full text-white shadow-xs"
-                      style={{ background: 'var(--br-green)' }}
-                    >
-                      <Check size={12} strokeWidth={2.75} />
+            return (
+              <div key={item.key} className="br-topic-node">
+                <button
+                  type="button"
+                  disabled={isLocked}
+                  onClick={() => !isLocked && item.onClick()}
+                  className="br-topic-card"
+                >
+                  {/* Yashil NEW belgisi (o'ng burchakda) */}
+                  {showNewBadge && (
+                    <span className="br-new-badge absolute top-3 right-3.5">
+                      {newLabel}
                     </span>
                   )}
-                </div>
 
-                {/* O'ng tomondagi toza matnlar va nozik progress chiziqcha */}
-                <div className="min-w-0 flex-1 pr-8">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="block text-[11px] font-bold text-psubtle uppercase tracking-wider">
-                      {item.gradeLabel}
-                    </span>
-                    {item.count > 1 && item.done > 0 && (
-                      <span className="text-[11px] font-semibold text-pmuted tabular-nums">
-                        {item.done}/{item.count}
+                  {/* Qulflangan holat */}
+                  {isLocked && (
+                    <Lock
+                      size={14}
+                      strokeWidth={2}
+                      className="text-pmuted absolute top-3.5 right-4"
+                    />
+                  )}
+
+                  {/* Chap tomondagi 3D Mavzu rasmi (Brilliant 1:1 ~68dp) */}
+                  <div className="relative size-[68px] shrink-0 flex items-center justify-center select-none">
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="max-w-full max-h-full object-contain pointer-events-none"
+                      loading="lazy"
+                    />
+                    {isDone && (
+                      <span
+                        className="absolute -bottom-0.5 -right-0.5 grid size-5 place-items-center rounded-full text-white shadow-xs"
+                        style={{ background: 'var(--br-green)' }}
+                      >
+                        <Check size={12} strokeWidth={2.75} />
                       </span>
                     )}
                   </div>
 
-                  {/* Qalin mavzu nomi */}
-                  <p className="mt-0.5 text-[16px] font-bold text-pfg leading-snug line-clamp-2">
-                    {item.title}
-                  </p>
-
-                  {/* Nozik 3.5px progress chizig'i — faqat real progress bo'lganda ko'rsatiladi */}
-                  {(isDone || item.progressPct > 0) && (
-                    <div className="br-card-progress-track">
-                      <div
-                        className="br-card-progress-bar"
-                        style={{
-                          width: isDone ? '100%' : `${item.progressPct}%`,
-                          background: isDone ? 'var(--br-green)' : 'var(--br-accent)',
-                        }}
-                      />
+                  {/* O'ng tomondagi toza matnlar va nozik progress chiziqcha */}
+                  <div className="min-w-0 flex-1">
+                    <div className={`flex items-center justify-between gap-2 ${eyebrowPadClass}`}>
+                      <span className="block text-[11.5px] font-semibold text-psubtle uppercase tracking-[0.04em]">
+                        {item.gradeLabel}
+                      </span>
+                      {item.count > 1 && item.done > 0 && (
+                        <span className="text-[11px] font-semibold text-pmuted tabular-nums">
+                          {item.done}/{item.count}
+                        </span>
+                      )}
                     </div>
-                  )}
-                </div>
-              </button>
 
-              {/* Kartalar orasidagi ingichka markaziy vertikal connector */}
-              {idx < items.length - 1 && (
-                <div className="br-connector" aria-hidden="true" />
-              )}
-            </div>
-          )
-        })}
+                    {/* Qalin mavzu nomi (keng joy — bejiz sinmaydi) */}
+                    <p className="mt-1 text-[16px] font-bold text-pfg leading-[1.3] line-clamp-2">
+                      {item.title}
+                    </p>
+
+                    {/* Nozik progress chizig'i (faol bo'limda 0% boshlang'ich nuqtasi bilan) */}
+                    {showProgressTrack && (
+                      <div className="br-card-progress-track">
+                        <div
+                          className="br-card-progress-bar"
+                          style={{
+                            width: isDone ? '100%' : item.progressPct > 0 ? `${item.progressPct}%` : '5px',
+                            background: isDone ? 'var(--br-green)' : 'var(--br-accent)',
+                          }}
+                        />
+                      </div>
+                    )}
+                  </div>
+                </button>
+
+                {/* Kartalar orasidagi 3px vertikal connector */}
+                {idx < items.length - 1 && (
+                  <div className="br-connector" aria-hidden="true" />
+                )}
+              </div>
+            )
+          })
+        })()}
       </div>
     </section>
   )
@@ -769,6 +781,8 @@ function YhqTopics() {
     handleSelectTab,
   } = useBrilliantScrollNavigation(sections)
   const { pinnedId, togglePin } = usePinnedPath('yhq', sections)
+  const activeSec = sections.find((s) => s.meta.id === activePathId) ?? sections[0]
+  const activeTone: BrilliantSectionTone = activeSec ? getBrilliantPathTone(activeSec.meta.pathImage) : 'blue'
 
   return (
     <div className="br-courses-page pb-16">
@@ -787,14 +801,18 @@ function YhqTopics() {
         />
       </PageHeader>
 
+      {sections.length > 0 && (
+        <div className="br-sticky-top-glow" data-tone={activeTone} aria-hidden="true" />
+      )}
+
       {/* Jami uzun ro'yxat bo'lib qoladi (Brilliant 1:1) */}
-      <div className="flex flex-col gap-6">
-        {sections.map((sec, idx) => (
+      <div className="relative z-[1] flex flex-col gap-4">
+        {sections.map((sec) => (
           <BrilliantCourseSection
             key={sec.meta.id}
             section={sec}
             lang={lang}
-            tone={getSectionTone(idx)}
+            tone={getBrilliantPathTone(sec.meta.pathImage)}
             isActiveSection={sec.meta.id === activePathId}
             isPinned={sec.meta.id === pinnedId}
             onPin={() => togglePin(sec.meta.id)}
@@ -824,6 +842,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const userId = useAppStore((s) => s.user?.id)
   const darslikMastery = useDarslikMastery()
   const litByUser = useLessonsStore((s) => s.byUser[userId ?? 'guest'])
+  const readByUser = useLessonsStore((s) => s.readByUser[userId ?? '0'] ?? s.readByUser.guest)
 
   const isV2 = config.testSessionsV2Enabled
   const [topicsFailed, setTopicsFailed] = useState(false)
@@ -864,11 +883,13 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       return DARSLIK_BLOCKS.map((block, bIdx) => {
         const outline = getBlockOutline(block.id)
         const meta = getDarslikBlockPathMeta(block, bIdx, outline.length)
-        const headingTitle = lang === 'ru' ? `Блок ${block.id}. ${block.titleRu}` : `${block.id}-blok. ${block.titleUz}`
+        const headingTitle = lang === 'ru' ? block.titleRu : block.titleUz
 
         let doneTopics = 0
+        const readList = readByUser?.[DARSLIK_PROGRESS_MODULE_OFFSET + block.id] ?? []
         const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {
           const isPassed = darslikMastery.passed.has(sectionKey(block.id, itemIdx))
+          const isRead = !isPassed && readList.includes(itemIdx)
           if (isPassed) doneTopics++
           const parsed = parseOutlineTopicHeading(rawTopicTitle, block.id, itemIdx, lang)
           const img = getBrilliantTopicImage(parsed.cleanTitle, globalImgIdx++)
@@ -880,7 +901,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             image: img,
             done: isPassed ? 1 : 0,
             count: 1,
-            progressPct: isPassed ? 100 : 0,
+            progressPct: isPassed ? 100 : isRead ? 35 : 0,
             state: isPassed ? 'done' : 'active',
             isNew: itemIdx === 0 && meta.isNew,
             onClick: () => navigate(`/darslik/rus-tili?block=${block.id}&section=${itemIdx}`),
@@ -902,7 +923,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
       return RUSADABIYOT_BLOCKS.map((block, bIdx) => {
         const outline = getRusadabiyotBlockOutline(block.id)
         const meta = getRusadabiyotBlockPathMeta(block, bIdx, outline.length)
-        const headingTitle = lang === 'ru' ? `Эпоха ${block.id}. ${block.titleRu}` : `${block.id}-davr. ${block.titleUz}`
+        const headingTitle = lang === 'ru' ? block.titleRu : block.titleUz
         const isEraDone = (litByUser?.[RUSADABIYOT_PROGRESS_MODULE_OFFSET + block.id]?.length ?? 0) > 0
 
         const items: TopicCardItem[] = outline.map((rawTopicTitle, itemIdx) => {
@@ -934,7 +955,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     }
 
     return []
-  }, [subjectId, lang, darslikMastery.passed, litByUser, navigate])
+  }, [subjectId, lang, darslikMastery.passed, litByUser, readByUser, navigate])
 
   // 2. Amaliy testlar / umumiy fan mavzulari
   const rows = useMemo(() => {
@@ -1052,6 +1073,8 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     handleSelectTab,
   } = useBrilliantScrollNavigation(allSections)
   const { pinnedId, togglePin } = usePinnedPath(subjectId, allSections)
+  const activeSec = allSections.find((s) => s.meta.id === activePathId) ?? allSections[0]
+  const activeTone: BrilliantSectionTone = activeSec ? getBrilliantPathTone(activeSec.meta.pathImage) : 'blue'
 
   return (
     <div className="br-courses-page pb-16">
@@ -1070,14 +1093,18 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         />
       </PageHeader>
 
+      {allSections.length > 0 && (
+        <div className="br-sticky-top-glow" data-tone={activeTone} aria-hidden="true" />
+      )}
+
       {/* Jami uzun ro'yxat bo'lib chiqadi (barcha boblar ketma-ket) */}
-      <div className="flex flex-col gap-6">
-        {allSections.map((sec, idx) => (
+      <div className="relative z-[1] flex flex-col gap-4">
+        {allSections.map((sec) => (
           <BrilliantCourseSection
             key={sec.meta.id}
             section={sec}
             lang={lang}
-            tone={getSectionTone(idx)}
+            tone={getBrilliantPathTone(sec.meta.pathImage)}
             isActiveSection={sec.meta.id === activePathId}
             isPinned={sec.meta.id === pinnedId}
             onPin={() => togglePin(sec.meta.id)}

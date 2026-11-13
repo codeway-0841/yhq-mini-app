@@ -8,15 +8,16 @@
   --br-blue-tint: #edf2fe;
   --br-accent: #3557ff;
   --br-accent-tint: #eef3ff;
-  --br-green: #18a94b;
+  --br-green: #1ea84c;
   --br-card-bg: #ffffff;
-  --br-card-border: #e6e8ec;
+  --br-card-border: #e2e5ea;
   --br-card-hover-border: #cbd5e1;
-  --br-card-lip: #e2e4e9;
+  --br-card-lip: #d5dbe3;
   --br-tray-bg: #f8fafc;
-  --br-connector-color: #e2e8f0;
+  --br-connector-color: #dde3ea;
   --br-subtle: #94a3b8;
-  --br-header-gradient: linear-gradient(180deg, #eff4ff 0%, rgba(239, 244, 255, 0.35) 65%, transparent 100%);
+  --br-glow-start: rgba(53, 87, 255, 0.14);
+  --br-glow-mid: rgba(53, 87, 255, 0.05);
   width: 100%;
   min-width: 0;
   flex-shrink: 0;
@@ -24,46 +25,65 @@
 }
 
 body[data-theme='dark'] .br-courses-page {
-  --br-blue: #4f75ff;
-  --br-blue-tint: rgba(79, 117, 255, 0.15);
-  --br-accent: #4f75ff;
-  --br-accent-tint: rgba(79, 117, 255, 0.16);
-  --br-green: #22c55e;
-  --br-card-bg: #181a1f;
-  --br-card-border: rgba(255, 255, 255, 0.08);
-  --br-card-hover-border: rgba(255, 255, 255, 0.18);
-  --br-card-lip: rgba(0, 0, 0, 0.4);
+  --br-blue: #456dff;
+  --br-blue-tint: #080f28;
+  --br-accent: #456dff;
+  --br-accent-tint: #080f28;
+  --br-green: #1ea84c;
+  --br-card-bg: #1c1c1c;
+  --br-card-border: #333333;
+  --br-card-hover-border: #48484c;
+  --br-card-lip: #333333;
   --br-tray-bg: rgba(255, 255, 255, 0.03);
-  --br-connector-color: rgba(255, 255, 255, 0.15);
-  --br-subtle: #64748b;
-  --br-header-gradient: linear-gradient(180deg, rgba(53, 87, 255, 0.12) 0%, rgba(53, 87, 255, 0.03) 65%, transparent 100%);
+  --br-connector-color: #2c2c2c;
+  --br-subtle: #8b92a1;
+  --br-glow-start: #080f28;
+  --br-glow-mid: rgba(8, 15, 40, 0.45);
+}
+
+.br-courses-page [data-tone='orange'] {
+  --br-accent: #f26b1d;
+  --br-accent-tint: #fff1e6;
+  --br-glow-start: rgba(242, 107, 29, 0.14);
+  --br-glow-mid: rgba(242, 107, 29, 0.05);
+}
+
+body[data-theme='dark'] .br-courses-page [data-tone='orange'] {
+  --br-accent: #ff8d23;
+  --br-accent-tint: #291502;
+  --br-glow-start: #291502;
+  --br-glow-mid: rgba(41, 21, 2, 0.45);
 }
 
 .br-courses-page [data-tone='amber'] {
   --br-accent: #e59d00;
   --br-accent-tint: #fef7e0;
-  --br-header-gradient: linear-gradient(180deg, #fef8e4 0%, rgba(254, 248, 228, 0.35) 65%, transparent 100%);
+  --br-glow-start: rgba(229, 157, 0, 0.14);
+  --br-glow-mid: rgba(229, 157, 0, 0.05);
 }
 
 body[data-theme='dark'] .br-courses-page [data-tone='amber'] {
-  --br-accent: #f6b31f;
-  --br-accent-tint: rgba(246, 179, 31, 0.16);
-  --br-header-gradient: linear-gradient(180deg, rgba(246, 179, 31, 0.13) 0%, rgba(246, 179, 31, 0.03) 65%, transparent 100%);
+  --br-accent: #f5b400;
+  --br-accent-tint: #261b04;
+  --br-glow-start: #261b04;
+  --br-glow-mid: rgba(38, 27, 4, 0.45);
 }
 
 .br-courses-page [data-tone='purple'] {
   --br-accent: #8a4cff;
   --br-accent-tint: #f3edff;
-  --br-header-gradient: linear-gradient(180deg, #f5efff 0%, rgba(245, 239, 255, 0.35) 65%, transparent 100%);
+  --br-glow-start: rgba(138, 76, 255, 0.14);
+  --br-glow-mid: rgba(138, 76, 255, 0.05);
 }
 
 body[data-theme='dark'] .br-courses-page [data-tone='purple'] {
-  --br-accent: #a07bff;
-  --br-accent-tint: rgba(138, 76, 255, 0.18);
-  --br-header-gradient: linear-gradient(180deg, rgba(138, 76, 255, 0.15) 0%, rgba(138, 76, 255, 0.03) 65%, transparent 100%);
+  --br-accent: #a06bff;
+  --br-accent-tint: #1d1035;
+  --br-glow-start: #1d1035;
+  --br-glow-mid: rgba(29, 16, 53, 0.45);
 }
 
-/* ── Top Header & Horizontal Tabs (Brilliant App 1:1 — Solid, Zero Blur Ghosting) ── */
+/* ── Top Header & Horizontal Tabs (Brilliant App 1:1 — Solid, Zero Divider) ── */
 .br-courses-page .page-header {
   background: var(--p-canvas, #ffffff) !important;
   -webkit-backdrop-filter: none !important;
@@ -75,16 +95,36 @@ body[data-theme='dark'] .br-courses-page [data-tone='purple'] {
 .br-path-strip {
   width: 100%;
   background: var(--p-canvas, #ffffff);
-  border-bottom: 1px solid var(--br-card-border);
+  border-bottom: none;
+}
+
+/* Sticky Atmospheric Glow anchored directly below the horizontal tab bar */
+.br-sticky-top-glow {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 310px;
+  margin-bottom: -310px;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    var(--br-glow-start) 0%,
+    var(--br-glow-start) 60%,
+    var(--br-glow-mid) 78%,
+    transparent 100%
+  );
+  transition: opacity 0.25s ease;
 }
 
 .br-path-strip-scroll {
   position: relative;
   display: flex;
   align-items: stretch;
+  gap: 12px;
   width: 100%;
   overflow-x: auto;
-  padding: 8px 14px 0;
+  padding: 6px 20px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
@@ -97,18 +137,20 @@ body[data-theme='dark'] .br-courses-page [data-tone='purple'] {
 .br-path-tab-wrap {
   display: flex;
   align-items: center;
+  gap: 12px;
   flex-shrink: 0;
 }
 
 .br-path-tab-divider {
-  width: 1px;
-  height: 42px;
-  background-color: #f1f5f9;
-  margin: 0 4px 14px;
+  width: 1.5px;
+  height: 56px;
+  border-radius: 999px;
+  background-color: #e2e8f0;
+  margin: 0 2px 12px;
 }
 
 body[data-theme='dark'] .br-path-tab-divider {
-  background-color: rgba(255, 255, 255, 0.07);
+  background-color: rgba(255, 255, 255, 0.13);
 }
 
 .br-path-tab {
@@ -116,8 +158,8 @@ body[data-theme='dark'] .br-path-tab-divider {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 86px;
-  padding: 0 4px 10px;
+  width: 92px;
+  padding: 0 0 11px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -126,22 +168,27 @@ body[data-theme='dark'] .br-path-tab-divider {
 }
 
 .br-path-tab-box {
-  width: 76px;
-  height: 56px;
+  width: 92px;
+  height: 60px;
   border-radius: 16px;
-  border: 1.5px solid #eceff4;
+  border: 2px solid #e6e9ef;
   background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   transition:
     border-color 0.18s ease,
-    background-color 0.18s ease;
+    background-color 0.18s ease,
+    transform 80ms ease;
 }
 
 body[data-theme='dark'] .br-path-tab-box {
-  border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.03);
+  border-color: #333333;
+  background: #1c1c1c;
+}
+
+.br-path-tab:active .br-path-tab-box {
+  transform: scale(0.97);
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-box {
@@ -160,11 +207,15 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-box {
   font-weight: 600;
   color: #64748b;
   text-align: center;
-  max-width: 82px;
+  max-width: 92px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   transition: color 0.18s ease;
+}
+
+body[data-theme='dark'] .br-path-tab-label {
+  color: #9aa0ac;
 }
 
 .br-path-tab[data-active='true'] .br-path-tab-label {
@@ -179,9 +230,9 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 .br-path-tab-indicator {
   position: absolute;
   bottom: 0;
-  left: 14px;
-  right: 14px;
-  height: 3px;
+  left: 10px;
+  right: 10px;
+  height: 3.5px;
   border-radius: 999px;
   background: var(--br-accent);
   opacity: 0;
@@ -192,7 +243,7 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
   opacity: 1;
 }
 
-/* ── Path Section Hero (Gradient background, Text left, 3D Art right) ───── */
+/* ── Path Section Hero (24px panjara, gradient tepa, Pin ★ o'ngda, 3D rasm) ── */
 .br-path-section {
   width: 100%;
   display: flex;
@@ -204,8 +255,8 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 .br-path-hero-wrap {
   position: relative;
   width: 100%;
-  padding: 24px 16px 12px;
-  background: var(--br-header-gradient);
+  padding: 22px 24px 16px;
+  background: transparent;
   scroll-margin-top: 165px;
 }
 
@@ -218,8 +269,8 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 
 .br-path-hero-art {
   position: relative;
-  width: 84px;
-  height: 84px;
+  width: 72px;
+  height: 72px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -227,12 +278,12 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
 }
 
 .br-pin-btn {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 999px;
-  border: 1px solid var(--br-card-border);
-  background: var(--br-card-bg);
-  color: var(--br-subtle);
+  border: 1.5px solid #cbd5e1;
+  background: #f8fafc;
+  color: #64748b;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -246,20 +297,21 @@ body[data-theme='dark'] .br-path-tab[data-active='true'] .br-path-tab-label {
     background-color 150ms ease;
 }
 
+body[data-theme='dark'] .br-pin-btn {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #9aa0ac;
+}
+
 .br-pin-btn:active {
   transform: scale(0.94);
 }
 
-.br-pin-btn[aria-pressed='true'] {
-  color: #f59e0b;
-  border-color: rgba(245, 158, 11, 0.42);
-  background: rgba(245, 158, 11, 0.12);
-}
-
+.br-pin-btn[aria-pressed='true'],
 body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
-  color: #fbbf24;
-  border-color: rgba(251, 191, 36, 0.45);
-  background: rgba(251, 191, 36, 0.16);
+  color: #141414;
+  border-color: #f5b400;
+  background: #f5b400;
 }
 
 /* ── "NEW" Green Pill Badge (Brilliant App 1:1) ──────────────────────────── */
@@ -267,14 +319,14 @@ body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 7px;
+  padding: 3px 9px;
   border-radius: 999px;
   background: var(--br-green);
   color: #ffffff;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.04em;
-  line-height: 1.3;
+  line-height: 1.25;
   flex-shrink: 0;
 }
 
@@ -284,7 +336,7 @@ body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 6px 16px 24px;
+  padding: 4px 24px 20px;
 }
 
 .br-topic-node {
@@ -295,7 +347,7 @@ body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   max-width: 580px;
 }
 
-/* Card 1:1 with Brilliant screenshot */
+/* Card 1:1 with Brilliant screenshot (3D tactile push-button: 2px border + 6px bottom lip) */
 .br-topic-card {
   position: relative;
   width: 100%;
@@ -303,28 +355,29 @@ body[data-theme='dark'] .br-pin-btn[aria-pressed='true'] {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 16px 20px;
-  border-radius: 20px;
+  padding: 15px 20px;
+  border-radius: 18px;
   background: var(--br-card-bg);
-  border: 1px solid var(--br-card-border);
+  border: 2px solid var(--br-card-border);
+  border-bottom: 6px solid var(--br-card-lip);
   text-align: left;
   cursor: pointer;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  transition: transform 100ms cubic-bezier(0.2, 0, 0, 1), border-color 0.12s ease, box-shadow 0.12s ease;
-}
-
-body[data-theme='dark'] .br-topic-card {
-  box-shadow: none;
+  transition:
+    transform 75ms cubic-bezier(0.2, 0, 0, 1),
+    border-bottom-width 75ms cubic-bezier(0.2, 0, 0, 1),
+    margin-bottom 75ms cubic-bezier(0.2, 0, 0, 1),
+    border-color 0.12s ease;
 }
 
 .br-topic-card:hover:not(:disabled) {
   border-color: var(--br-card-hover-border);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  border-bottom-color: var(--br-card-hover-border);
 }
 
 .br-topic-card:active:not(:disabled) {
-  transform: translateY(2px);
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  margin-bottom: 4px;
 }
 
 .br-topic-card:disabled {
@@ -332,31 +385,33 @@ body[data-theme='dark'] .br-topic-card {
   cursor: not-allowed;
 }
 
-/* Connector line between consecutive topic cards (2px thick, clean light gray) */
+/* Connector line between consecutive topic cards (3px crisp vertical bar, 20px tall) */
 .br-connector {
-  width: 2px;
-  height: 22px;
+  width: 3px;
+  height: 20px;
+  border-radius: 999px;
   background: var(--br-connector-color);
   flex-shrink: 0;
 }
 
-/* Mini Progress Bar inside Card (Brilliant App 1:1: thin 3.5px line) */
+/* Mini Progress Bar inside Card (Brilliant App 1:1: 140dp × 4dp track + 5px starter cap) */
 .br-card-progress-track {
   width: 100%;
   max-width: 140px;
-  height: 3.5px;
+  height: 4px;
   border-radius: 999px;
-  background-color: #e2e8f0;
+  background-color: #e2e6ed;
   overflow: hidden;
-  margin-top: 6px;
+  margin-top: 9px;
 }
 
 body[data-theme='dark'] .br-card-progress-track {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: #494949;
 }
 
 .br-card-progress-bar {
   height: 100%;
+  min-width: 5px;
   border-radius: 999px;
   background-color: var(--br-accent);
   transition: width 0.3s ease;

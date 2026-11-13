@@ -18,6 +18,7 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useSubjectStore } from '../../../src/shared/store/useSubjectStore'
 import { useLessonsStore } from '../../../src/shared/store/useLessonsStore'
 import { useQuestionsStore } from '../../../src/shared/store/useQuestionsStore'
+import { DARSLIK_PROGRESS_MODULE_OFFSET } from '../../../src/content/darslik-rustili'
 import { RUSADABIYOT_PROGRESS_MODULE_OFFSET } from '../../../src/content/darslik-rusadabiyot'
 import { modules } from '../../../src/content/modules'
 import lessonMap from '../../../src/content/lessonMap.yhq.json'
@@ -162,10 +163,31 @@ describe('TopicsPage Brilliant parity & multi-subject routing', () => {
     expect(container.textContent).not.toMatch(/\bGR \d+\b/)
     expect(container.textContent).toMatch(/1-BLOK/)
     expect(container.querySelectorAll('.br-card-progress-track').length).toBe(0)
+    expect(container.querySelector('.br-sticky-top-glow')).toHaveAttribute('data-tone', 'blue')
 
     const firstCard = container.querySelector('.br-topic-card') as HTMLButtonElement
     fireEvent.click(firstCard)
     expect(mockNavigate).toHaveBeenCalledWith('/darslik/rus-tili?block=1&section=0')
+  })
+
+  it('rus tili: faol boshlangan blokda o\'qilgan (35%) va keyingi (5px nuqta) progress chizig\'i chiqadi', () => {
+    useSubjectStore.setState({ subjectId: 'rustili' })
+    const modId = DARSLIK_PROGRESS_MODULE_OFFSET + 1
+    useLessonsStore.setState({
+      byUser: { [UID]: { [modId]: [0] } },
+      readByUser: { [UID]: { [modId]: [1] } },
+    })
+
+    const { container } = render(<TopicsPage />)
+    const firstBlock = container.querySelector('#br-path-darslik-block-1')!
+    const tracks = firstBlock.querySelectorAll('.br-card-progress-track')
+    const bars = firstBlock.querySelectorAll('.br-card-progress-bar')
+
+    // 1-blokda barcha mavzularda track ko'rinadi (tugallangan 100%, o'qilgan 35%, keyingilarida 5px nuqta)
+    expect(tracks.length).toBeGreaterThan(2)
+    expect((bars[0] as HTMLElement).style.width).toBe('100%')
+    expect((bars[1] as HTMLElement).style.width).toBe('35%')
+    expect((bars[2] as HTMLElement).style.width).toBe('5px')
   })
 
   it('rus adabiyot: real store mastery bilan ishlaydi va &section= bilan xaritasiga o\'tadi', () => {
@@ -228,11 +250,11 @@ describe('TopicsPage Brilliant parity & multi-subject routing', () => {
     // 1 ta mavzuda real progress bor -> faqat 1 ta progress bar ko'rinadi
     expect(container.querySelectorAll('.br-card-progress-track').length).toBe(1)
 
-    // Har xil seksiyalar Brilliant rang siklidan foydalanadi (blue, amber, ...)
+    // Har xil seksiyalar ikonka rangiga mos Brilliant ohanglaridan foydalanadi (blue, orange, ...)
     const sectionElList = container.querySelectorAll('.br-path-section')
     expect(sectionElList[0]).toHaveAttribute('data-tone', 'blue')
     if (sectionElList[1]) {
-      expect(sectionElList[1]).toHaveAttribute('data-tone', 'amber')
+      expect(sectionElList[1]).toHaveAttribute('data-tone', 'orange')
     }
 
     const firstCard = container.querySelector('.br-topic-card') as HTMLButtonElement

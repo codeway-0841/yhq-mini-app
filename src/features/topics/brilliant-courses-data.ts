@@ -23,25 +23,56 @@ export interface BrilliantPathMeta {
  */
 export const BRILLIANT_PATH_IMAGES = [
   '/brilliant/courses/path-icon-01.png',
+  '/brilliant/courses/path-icon-12.png',
   '/brilliant/courses/path-icon-02.png',
+  '/brilliant/courses/path-icon-09.png',
+  '/brilliant/courses/path-icon-13.png',
   '/brilliant/courses/path-icon-03.png',
   '/brilliant/courses/path-icon-04.png',
+  '/brilliant/courses/path-icon-10.png',
   '/brilliant/courses/path-icon-05.png',
   '/brilliant/courses/path-icon-06.png',
+  '/brilliant/courses/path-icon-11.png',
   '/brilliant/courses/path-icon-07.png',
   '/brilliant/courses/path-icon-08.png',
-  '/brilliant/courses/path-icon-09.png',
-  '/brilliant/courses/path-icon-10.png',
-  '/brilliant/courses/path-icon-11.png',
-  '/brilliant/courses/path-icon-12.png',
-  '/brilliant/courses/path-icon-13.png',
+  '/brilliant/courses/path-icon-19.png',
   '/brilliant/courses/path-icon-14.png',
   '/brilliant/courses/path-icon-15.png',
   '/brilliant/courses/path-icon-16.png',
   '/brilliant/courses/path-icon-17.png',
   '/brilliant/courses/path-icon-18.png',
-  '/brilliant/courses/path-icon-19.png',
 ] as const
+
+export type BrilliantSectionTone = 'blue' | 'orange' | 'amber' | 'purple'
+
+const ORANGE_PATH_ICONS = new Set([
+  'path-icon-12.png',
+  'path-data.png',
+])
+
+const AMBER_PATH_ICONS = new Set([
+  'path-icon-13.png',
+  'path-science.png',
+])
+
+const PURPLE_PATH_ICONS = new Set([
+  'path-icon-09.png',
+  'path-icon-10.png',
+  'path-icon-11.png',
+  'path-icon-19.png',
+  'path-cs.png',
+  'path-python.png',
+  'path-technology.png',
+])
+
+/** Path ikonasining haqiqiy rangiga mos aksent ohangini qaytaradi (ikonka ↔ chegara uyg'unligi) */
+export function getBrilliantPathTone(pathImage: string): BrilliantSectionTone {
+  const fileName = pathImage.split('/').pop() ?? ''
+  if (ORANGE_PATH_ICONS.has(fileName)) return 'orange'
+  if (AMBER_PATH_ICONS.has(fileName)) return 'amber'
+  if (PURPLE_PATH_ICONS.has(fileName)) return 'purple'
+  return 'blue'
+}
 
 /**
  * Brilliant.org /courses/ sahifasidan yuklab olingan BARCHA 68 ta unikal 3D bob/mavzu illyustratsiyalari.
@@ -350,7 +381,7 @@ export function getSubjectChapterPathMeta(
       titleRu: 'Механика: Основы кинематики',
       descUz: "Jismlar harakati, tezlik, tezlanish va trayektoriya qonuniyatlarini vizual masalalarda o'rganing",
       descRu: 'Изучите законы движения тел, скорости, ускорения и траектории на наглядных задачах',
-      img: '/brilliant/courses/path-icon-13.png',
+      img: '/brilliant/courses/path-icon-01.png',
       isNew: true,
     },
     '02': {
@@ -360,7 +391,7 @@ export function getSubjectChapterPathMeta(
       titleRu: 'Силы: Динамика и статика',
       descUz: "Nyuton qonunlari, kuchlar muvozanati, ishqalanish va butun olam tortishish qonunini tahlil qiling",
       descRu: 'Разберите законы Ньютона, равновесие сил, трение и всемирное тяготение',
-      img: '/brilliant/courses/path-icon-01.png',
+      img: '/brilliant/courses/path-icon-13.png',
     },
     '03': {
       shortUz: 'Impuls',
