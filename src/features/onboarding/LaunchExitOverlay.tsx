@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import SplashScreen from './SplashScreen'
 import { onLaunchDismissed } from './launch-exit'
 
-/** index.css `.splash-exit` davomiyligi bilan bir xil. */
-const FADE_MS = 300
+/** index.css `.splash-screen-exiting` radial parda davomiyligi bilan bir xil. */
+const FADE_MS = 560
 
 /**
  * Launch ekranining "chiqish" nusxasi — video'dagi kabi ko'k ekran ilova

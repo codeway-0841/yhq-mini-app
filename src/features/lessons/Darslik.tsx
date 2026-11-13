@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { goBack } from '../../shared/lib/navigation'
 import { Check, ChevronLeft, ChevronRight, AlertTriangle } from 'lucide-react'
 import { modules, MODULE_TOPICS } from '../../content/modules'
 import { lessons } from '../../content/lessons'
 import lessonMap from '../../../shared/lesson-map.yhq.json'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
-import { useDailyStore } from '../../shared/store/useDailyStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -17,6 +15,7 @@ import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLau
 import { canReadLesson } from './lesson-access'
 import LessonReader from './LessonReader'
 import ModuleComplete, { type CompletedModule } from './ModuleComplete'
+import { DarslikTopPills } from './DarslikTopPills'
 import {
   BrilliantHeroIllustration,
   BrilliantLessonRowIcon,
@@ -69,7 +68,6 @@ export default function Darslik() {
   const tt = useT(settings.language)
   const ru = settings.language === 'ru'
   const subjectId = useSubjectStore((s) => s.subjectId)
-  const streak = useDailyStore((s) => s.streaks[subjectId] ?? 0)
   const totalDone = modules.reduce((sum, m) => sum + (lessons[m.id] ?? []).filter((_, i) => doneFor[m.id]?.includes(i)).length, 0)
   const markDone = useLessonsStore((s) => s.markDone)
 
@@ -264,54 +262,15 @@ export default function Darslik() {
       <div
         data-testid="brilliant-darslik-screen"
         style={{ '--yhq-accent': theme.accent } as CSSProperties}
-        className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[max(0.35rem,var(--safe-bottom,0px))] mx-auto max-w-[430px] select-none overflow-y-auto"
+        className="yhq-home-screen w-full flex-1 h-full max-h-full flex flex-col px-4 pt-[max(0.5rem,var(--safe-top,0px))] pb-[calc(5.2rem+var(--safe-bottom,0px))] lg:pb-6 mx-auto max-w-[430px] select-none overflow-y-auto"
       >
         {/* Top: Status bar + Header */}
         <div className="yhq-home-header flex flex-col shrink-0">
-          {/* 1. Top status bar: left [ n key ] and right [ n lightning ] */}
-          <div className="yhq-home-status flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => goBack(navigate)}
-                aria-label={tt('darslikBack')}
-                className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer"
-              >
-                <ChevronLeft size={24} strokeWidth={2.25} />
-              </button>
-              <div className="yhq-home-pill inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 px-3.5 select-none">
-                <span className="text-[15px] font-extrabold tabular-nums">
-                  {Math.max(1, totalDone)}
-                </span>
-                {/* Golden key icon */}
-                <svg viewBox="0 0 16 24" className="h-[19px] w-3 shrink-0" aria-hidden="true">
-                  <path d="M8 1.5 V13" stroke="#f6b31f" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M8 4 H12 M8 8 H11.5" stroke="#f6b31f" strokeWidth="2.6" strokeLinecap="round" />
-                  <path d="M8 11 L13.5 14 V20 L8 23 L2.5 20 V14 Z" fill="#f6b31f" />
-                  <circle cx="8" cy="17" r="2" fill="#fff" />
-                </svg>
-              </div>
-            </div>
-
-            <div
-              data-testid="brilliant-streak-pill"
-              className="yhq-home-pill inline-flex h-[38px] items-center gap-1.5 rounded-full border-2 px-3.5"
-            >
-              {streak > 0 && (
-                <span className="text-[15px] font-extrabold tabular-nums">
-                  {streak}
-                </span>
-              )}
-              {/* Lightning icon: lime when the streak is alive, faint outline at 0 */}
-              <svg viewBox="0 0 18 22" className="size-4 shrink-0" aria-hidden="true">
-                {streak > 0 ? (
-                  <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="#d4e82a" stroke="#b9cf1c" strokeWidth="1.1" strokeLinejoin="round" />
-                ) : (
-                  <polygon points="10,1 2,12 8.5,12 7,21 16,9.5 9.5,9.5" fill="none" stroke="#dddddd" strokeWidth="1.3" strokeLinejoin="round" />
-                )}
-              </svg>
-            </div>
-          </div>
+          {/* 1. Top status bar: Brilliant-style [ N key ] and [ N lightning ] */}
+          <DarslikTopPills
+            subjectId={subjectId}
+            completedCount={totalDone}
+          />
 
           {/* 2. Centered header matching Brilliant Android: Title + LEVEL / RECOMMENDED subtitle */}
           <div className="flex flex-col items-center text-center px-4 mt-2">

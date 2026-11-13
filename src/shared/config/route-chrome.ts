@@ -14,9 +14,16 @@ export interface RouteChrome {
 }
 
 export const TAB_ROOT_PATHS = ['/', '/testlar', '/octagon', '/rejimlar'] as const
+export const DOCK_HOME_PATHS = ['/darslik', '/darslik/rus-tili'] as const
 
 const TAB_CHROME: RouteChrome = {
   mode: 'tab',
+  bottomNavigation: true,
+  shell: 'standard',
+}
+
+const COURSE_HOME_CHROME: RouteChrome = {
+  mode: 'detail',
   bottomNavigation: true,
   shell: 'standard',
 }
@@ -57,6 +64,10 @@ export function getRouteChrome(pathname: string): RouteChrome {
 
   if ((TAB_ROOT_PATHS as readonly string[]).includes(normalized)) {
     return TAB_CHROME
+  }
+
+  if ((DOCK_HOME_PATHS as readonly string[]).includes(normalized)) {
+    return COURSE_HOME_CHROME
   }
 
 

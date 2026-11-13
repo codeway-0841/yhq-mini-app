@@ -114,4 +114,31 @@ describe('Design System SSOT Guard (Rule 14)', () => {
 
     expect(violations).toEqual([])
   })
+
+  it('bottom sheets in src/index.css must not render a top inset hairline highlight', () => {
+    const indexCss = fs.readFileSync(path.join(srcDir, 'index.css'), 'utf-8')
+    const sheetMotionMatch = indexCss.match(/\.dialog-sheet-motion\s*>\s*:first-child\s*\{[\s\S]*?\}/)
+
+    expect(sheetMotionMatch).not.toBeNull()
+    const block = sheetMotionMatch![0]
+    expect(block).not.toMatch(/inset\s+0\s+1px/)
+    expect(block).not.toMatch(/border-top\s*:/)
+  })
+
+  it('modal and sheet surfaces must not pair bg-white with dark:bg-* on ModalShell or sheet wrappers', () => {
+    const violations: { file: string; line: number; text: string }[] = []
+    const modalSurfacePattern = /(?:ModalShell[^>]*surfaceClassName|dialog-sheet-motion)[^\n]*/
+
+    for (const file of srcFiles) {
+      const content = fs.readFileSync(file, 'utf-8')
+      const lines = content.split('\n')
+      lines.forEach((line, idx) => {
+        if (modalSurfacePattern.test(line) && /\bbg-white\b/.test(line) && /\bdark:bg-/.test(line)) {
+          violations.push({ file: path.relative(srcDir, file), line: idx + 1, text: line.trim() })
+        }
+      })
+    }
+
+    expect(violations).toEqual([])
+  })
 })

@@ -188,6 +188,11 @@
       html, body, #root { width: 100%; height: 100%; margin: 0; }
       html, body { background: #0d1117; }
       html[data-theme='light'], html[data-theme='light'] body { background: #f0f3f6; }
+      @property --kivvi-splash-cut {
+        syntax: '<percentage>';
+        inherits: false;
+        initial-value: -48%;
+      }
       #kivvi-splash-screen {
         position: fixed; inset: 0; z-index: 99999;
         display: flex; align-items: center; justify-content: center;
@@ -220,15 +225,59 @@
         position: relative; z-index: 2;
         display: block; width: min(28vw, 122px); height: auto;
         filter: drop-shadow(0 10px 30px rgba(3, 27, 78, 0.32));
-        /* Belgi QIMIRLAMAYDI (2026-10 qarori: video kabi statik) */
+        will-change: transform, opacity;
       }
+      @media (prefers-reduced-motion: no-preference) {
+        .splash-mark {
+          animation: kivvi-splash-mark-in 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+      }
+      @keyframes kivvi-splash-mark-in {
+        from { opacity: 0.72; transform: scale(0.92); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+      /* Brilliant uslubidagi silliq ochilish: yuqoridan pastga yumshoq radial parda + belgining mayin so'nishi */
       .splash-screen-exiting {
         pointer-events: none;
-        animation: kivvi-splash-fade-out 340ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        -webkit-mask-image: radial-gradient(
+          135% 98% at 50% 0%,
+          transparent 0%,
+          transparent var(--kivvi-splash-cut),
+          rgba(0, 0, 0, 0.42) calc(var(--kivvi-splash-cut) + 22%),
+          #000 calc(var(--kivvi-splash-cut) + 44%)
+        );
+        mask-image: radial-gradient(
+          135% 98% at 50% 0%,
+          transparent 0%,
+          transparent var(--kivvi-splash-cut),
+          rgba(0, 0, 0, 0.42) calc(var(--kivvi-splash-cut) + 22%),
+          #000 calc(var(--kivvi-splash-cut) + 44%)
+        );
+        animation: kivvi-splash-curtain-out 560ms cubic-bezier(0.32, 0.08, 0.24, 1) forwards;
       }
-      @keyframes kivvi-splash-fade-out {
+      .splash-screen-exiting .splash-mark {
+        animation: kivvi-splash-mark-out 300ms cubic-bezier(0.4, 0, 0.6, 1) forwards;
+      }
+      @keyframes kivvi-splash-curtain-out {
+        0%   { --kivvi-splash-cut: -48%; opacity: 1; }
+        82%  { --kivvi-splash-cut: 98%; opacity: 0.96; }
+        100% { --kivvi-splash-cut: 118%; opacity: 0; }
+      }
+      @keyframes kivvi-splash-mark-out {
         from { opacity: 1; transform: scale(1); }
-        to   { opacity: 0; transform: scale(1.05); }
+        to   { opacity: 0; transform: scale(0.92); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .splash-screen-exiting {
+          -webkit-mask-image: none;
+          mask-image: none;
+          animation: kivvi-splash-fade-reduced 160ms ease-out forwards;
+        }
+        .splash-screen-exiting .splash-mark { animation: none; }
+      }
+      @keyframes kivvi-splash-fade-reduced {
+        from { opacity: 1; }
+        to   { opacity: 0; }
       }
     </style>
   </head>
@@ -370,15 +419,17 @@
           if (dismissed || isPreview) return;
           dismissed = true;
           splash.classList.add('splash-screen-exiting');
-          splash.addEventListener('animationend', function() {
+          splash.addEventListener('animationend', function(e) {
+            if (e.target !== splash) return;
             cancelAnimationFrame(raf);
             window.removeEventListener('resize', resize);
             if (splash.parentNode) splash.parentNode.removeChild(splash);
-          }, { once: true });
+          });
           setTimeout(function() {
             cancelAnimationFrame(raf);
+            window.removeEventListener('resize', resize);
             if (splash.parentNode) splash.parentNode.removeChild(splash);
-          }, 450);
+          }, 640);
         }
 
         window.__kivviDismissSplash = dismiss;

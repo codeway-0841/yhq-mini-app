@@ -12,6 +12,7 @@ vi.mock('../../../src/features/darslik-rustili/CourseMapPage', () => ({ default:
 vi.mock('../../../src/features/lessons', () => ({
   BrilliantHeroIllustration: () => <span />,
   BrilliantLessonRowIcon: ({ state }: { state: string }) => <span data-testid={`node-${state}`} />,
+  DarslikTopPills: () => <div className="rus-home-status" />,
   getBrilliantTheme: () => ({ accent: '#3557ff', dotColor: '#3557ff', buttonBg: '#3557ff', buttonText: '#fff', buttonShadow: '#223', checkBg: '#839cff' }),
   lessonLaunchOrigin: () => ({ x: 0, y: 0, size: 44, sink: 36 }),
   LessonLaunch: () => null,
@@ -29,7 +30,7 @@ describe('Russian course home', () => {
     render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
     await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
     expect(screen.getByRole('heading', { name: DARSLIK_BLOCKS[0].titleUz })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Orqaga' })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Orqaga' })).not.toBeInTheDocument()
     expect(screen.queryByText('🔑')).not.toBeInTheDocument()
     expect(screen.queryByText('⚡')).not.toBeInTheDocument()
 

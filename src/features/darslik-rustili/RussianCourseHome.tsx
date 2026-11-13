@@ -1,13 +1,12 @@
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
-import { ChevronLeft } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../content/darslik-rustili'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
-import { goBack } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme, LessonLaunch, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
+import { BrilliantHeroIllustration, BrilliantLessonRowIcon, DarslikTopPills, getBrilliantTheme, LessonLaunch, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
 import { sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
 import CourseMapPage from './CourseMapPage'
@@ -139,16 +138,11 @@ export default function RussianCourseHome() {
       <main className="rus-home yhq-home" style={{ '--yhq-accent': theme.accent } as CSSProperties} data-testid="russian-course-home" onClick={(event) => { if ((event.target as HTMLElement).closest('button')) playSound('click') }}>
         <div className="rus-home-inner">
           <header className="rus-home-header">
-            <div className="rus-home-status">
-              <button
-                className="rus-home-back"
-                type="button"
-                onClick={() => goBack(navigate)}
-                aria-label={ru ? 'Назад' : 'Orqaga'}
-              >
-                <ChevronLeft size={24} strokeWidth={2.25} />
-              </button>
-            </div>
+            <DarslikTopPills
+              subjectId={RUSSIAN_SUBJECT_ID}
+              completedCount={mastery.passed.size}
+              className="rus-home-status"
+            />
             <div
               className="rus-home-title-btn"
               role="button"

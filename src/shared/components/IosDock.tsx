@@ -34,7 +34,10 @@ export default function IosDock() {
   const tt = useT(lang)
   const modalCount = useModalCount()
 
-  const isTabRoot = isTabRootRoute(location.pathname)
+  const hasRusMapOpen =
+    location.pathname === '/darslik/rus-tili' &&
+    new URLSearchParams(location.search).has('block')
+  const isTabRoot = isTabRootRoute(location.pathname) && !hasRusMapOpen
   const isVisible = isTabRoot && modalCount === 0
 
   const navItems: NavItem[] = useMemo(() => [
@@ -104,7 +107,7 @@ export default function IosDock() {
         <div className="mx-auto flex max-w-[480px] items-center justify-around">
           {navItems.map((item) => {
             const isActive = item.path === '/'
-              ? location.pathname === '/'
+              ? location.pathname === '/' || location.pathname === '/darslik' || location.pathname === '/darslik/rus-tili'
               : location.pathname.startsWith(item.path)
             const Icon = item.icon
 

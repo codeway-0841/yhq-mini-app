@@ -43,11 +43,21 @@ function getAvatarGradient(name: string): string {
   return AVATAR_GRADIENTS[Math.abs(hash) % AVATAR_GRADIENTS.length]
 }
 
-function getDaysLeftInWeek(): number {
+export function getDaysLeftInWeek(): number {
   const now = new Date()
   const tashkentTime = new Date(now.getTime() + 5 * 3600 * 1000)
   const day = tashkentTime.getUTCDay()
   return day === 0 ? 1 : 7 - day
+}
+
+/** KIVVI ligasini Brilliant ligasiga moslashtiradi (default: hydrogen). */
+export function resolveBrilliantLeagueId(rawLeague?: string | null): BrilliantLeagueId {
+  const raw = (rawLeague || 'bronze').toLowerCase()
+  if (raw === 'silver') return 'lithium'
+  if (raw === 'gold') return 'carbon'
+  if (raw === 'platinum') return 'neon'
+  const found = BRILLIANT_LEAGUES.find((l) => l.id === raw)
+  return found ? found.id : 'hydrogen'
 }
 
 /**
@@ -116,14 +126,10 @@ export const LeagueLeaderboardCard = memo(function LeagueLeaderboardCard() {
   }, [user?.id])
 
   // KIVVI ligasini Brilliant ligasiga moslashtirish (default: hydrogen)
-  const currentTierId: BrilliantLeagueId = useMemo(() => {
-    const raw = (weekly?.myLeague || storeLeague || 'bronze').toLowerCase()
-    if (raw === 'silver') return 'lithium'
-    if (raw === 'gold') return 'carbon'
-    if (raw === 'platinum') return 'neon'
-    const found = BRILLIANT_LEAGUES.find((l) => l.id === raw)
-    return found ? found.id : 'hydrogen'
-  }, [weekly?.myLeague, storeLeague])
+  const currentTierId: BrilliantLeagueId = useMemo(
+    () => resolveBrilliantLeagueId(weekly?.myLeague || storeLeague),
+    [weekly?.myLeague, storeLeague],
+  )
 
   const daysLeft = useMemo(() => getDaysLeftInWeek(), [])
 

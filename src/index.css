@@ -368,6 +368,12 @@ body[data-theme='light'] .hero-gradient-card {
 
    Animatsiya `no-preference` ichida: reduced-motion / `data-no-animation`
    bo'lsa elementlar darhol YAKUNIY sokin holatda turadi. */
+@property --kivvi-splash-cut {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: -48%;
+}
+
 :root {
   --splash-bg: #0d3fd6;
   --splash-bg-center: #3884ff;
@@ -446,35 +452,63 @@ body[data-theme='light'] .hero-gradient-card {
   width: min(28vw, 122px);
   height: auto;
   filter: drop-shadow(0 10px 30px rgba(3, 27, 78, 0.32));
+  will-change: transform, opacity;
 }
 
-/* Splash belgisi STATIK — video kabi qimirlamaydi (2026-10 qarori).
-   Ilgari bu yerda `splashMarkBreathe` animatsiyasi bor edi. */
+@media (prefers-reduced-motion: no-preference) {
+  .splash-mark {
+    animation: splashMarkIn 420ms cubic-bezier(0.22, 1, 0.36, 1) var(--splash-shift, 0ms) both;
+  }
+}
 
+@keyframes splashMarkIn {
+  from { opacity: 0.72; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Brilliant uslubidagi silliq ochilish: yuqoridan pastga yumshoq radial parda + belgining mayin so'nishi */
 .splash-screen-exiting {
   pointer-events: none;
-  animation: splashFadeOut 340ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  -webkit-mask-image: radial-gradient(
+    135% 98% at 50% 0%,
+    transparent 0%,
+    transparent var(--kivvi-splash-cut),
+    rgba(0, 0, 0, 0.42) calc(var(--kivvi-splash-cut) + 22%),
+    #000 calc(var(--kivvi-splash-cut) + 44%)
+  );
+  mask-image: radial-gradient(
+    135% 98% at 50% 0%,
+    transparent 0%,
+    transparent var(--kivvi-splash-cut),
+    rgba(0, 0, 0, 0.42) calc(var(--kivvi-splash-cut) + 22%),
+    #000 calc(var(--kivvi-splash-cut) + 44%)
+  );
+  animation: splashCurtainOut 560ms cubic-bezier(0.32, 0.08, 0.24, 1) forwards;
+}
+
+.splash-screen-exiting .splash-mark {
+  animation: splashMarkOut 300ms cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }
 
 body[data-no-animation='true'] .splash-cell,
 body[data-no-animation='true'] .splash-grid,
 body[data-no-animation='true'] .splash-cell-grid,
-body[data-no-animation='true'] .splash-mark { animation: none; }
+body[data-no-animation='true'] .splash-mark,
+body[data-no-animation='true'] .splash-screen-exiting {
+  animation: none;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
 
-/* CHIQISH CROSS-FADE (video 00:03–00:04): splash unmount bo'lgach uning
-   so'nayotgan nusxasi ilova ustida silliq erib (blur + scale) ochiladi —
-   dashboard'ga uzluksiz o'tish */
-@keyframes splashFadeOut {
-  from {
-    opacity: 1;
-    transform: scale(1);
-    filter: blur(0px);
-  }
-  to {
-    opacity: 0;
-    transform: scale(1.04);
-    filter: blur(4px);
-  }
+@keyframes splashCurtainOut {
+  0%   { --kivvi-splash-cut: -48%; opacity: 1; }
+  82%  { --kivvi-splash-cut: 98%; opacity: 0.96; }
+  100% { --kivvi-splash-cut: 118%; opacity: 0; }
+}
+
+@keyframes splashMarkOut {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(0.92); }
 }
 
 .splash-exit {
@@ -482,11 +516,16 @@ body[data-no-animation='true'] .splash-mark { animation: none; }
   inset: 0;
   z-index: 70;
   pointer-events: none;
-  animation: splashFadeOut 340ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .splash-exit { display: none; }
+  .splash-screen-exiting {
+    -webkit-mask-image: none;
+    mask-image: none;
+    animation: none;
+  }
+  .splash-screen-exiting .splash-mark { animation: none; }
 }
 
 @keyframes splashFloat {
@@ -1688,9 +1727,7 @@ body[data-no-animation='true'] .animate-premiumIn { animation: none; }
   border-top-right-radius: var(--radius-dialog-sheet) !important;
   transform-origin: center bottom;
   animation: dialogSheetIn 360ms var(--ease-apple-spring) both;
-  box-shadow:
-    0 -18px 54px -28px rgb(0 0 0 / 0.52),
-    inset 0 1px 0 var(--p-line-strong);
+  box-shadow: 0 -18px 54px -28px rgb(0 0 0 / 0.52);
 }
 
 /* Claude mobile'dagi sokin grabber: faqat BO'SH handle bar'ning geometriyasini

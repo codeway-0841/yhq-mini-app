@@ -130,14 +130,27 @@ describe('IosDock component', () => {
     expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
-  it('qonun (allowlist): dock FAQAT 4 tab-root\'da — /profil, /biletlar, /mavzular yashirin', () => {
-    for (const path of ['/profil', '/biletlar', '/mavzular', '/kutubxona', '/reyting', '/xatolar', '/premium', '/shop', '/darslik', '/qidiruv', '/grafik']) {
+  it('qonun (allowlist): dock /profil, /biletlar, /mavzular va boshqa detail sahifalarda yashirin', () => {
+    for (const path of ['/profil', '/biletlar', '/mavzular', '/kutubxona', '/reyting', '/xatolar', '/premium', '/shop', '/darslik/rus-tili?block=1', '/darslik/rus-adabiyot', '/qidiruv', '/grafik']) {
       const { unmount } = render(
         <MemoryRouter initialEntries={[path]}>
           <IosDock />
         </MemoryRouter>,
       )
       expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' }), path).not.toBeInTheDocument()
+      unmount()
+    }
+  })
+
+  it('Darslik Home sahifalarida (/darslik, /darslik/rus-tili) pastki navbar ko\'rinadi', () => {
+    for (const path of ['/darslik', '/darslik/rus-tili']) {
+      const { unmount } = render(
+        <MemoryRouter initialEntries={[path]}>
+          <IosDock />
+        </MemoryRouter>,
+      )
+      expect(screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })).toBeInTheDocument()
+      expect(screen.getByRole('button', { name: /Bosh sahifa/i })).toHaveAttribute('aria-current', 'page')
       unmount()
     }
   })
