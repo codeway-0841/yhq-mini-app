@@ -836,40 +836,47 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
 
         {/* Boolean holatlar */}
         <div className="flex flex-wrap justify-center gap-1.5">
-          {[
-            { label: 'Select', active: selected, toggle: () => setSelected((v) => !v) },
-            {
-              label: 'Completed',
-              active: completed,
-              toggle: () => {
-                const next = !completed
-                setCompleted(next)
-                if (next) fireBoth('kojiDisappear', 'koji_disappear')
-                else if (!padlock && !level) fireBoth('kojiAppear', 'koji_appear')
+          {(() => {
+            const syncMascotVisibility = (nextCompleted: boolean, nextPadlock: boolean, nextLevel: boolean) => {
+              const wasHidden = completed || padlock || level
+              const willHide = nextCompleted || nextPadlock || nextLevel
+              if (!wasHidden && willHide) fireBoth('kojiDisappear', 'koji_disappear')
+              else if (wasHidden && !willHide) fireBoth('kojiAppear', 'koji_appear')
+            }
+            return [
+              { label: 'Select', active: selected, toggle: () => setSelected((v) => !v) },
+              {
+                label: 'Completed',
+                active: completed,
+                toggle: () => {
+                  const next = !completed
+                  setCompleted(next)
+                  syncMascotVisibility(next, padlock, level)
+                },
               },
-            },
-            { label: 'Mastered', active: mastered, toggle: () => setMastered((v) => !v) },
-            {
-              label: 'Padlock',
-              active: padlock,
-              toggle: () => {
-                const next = !padlock
-                setPadlock(next)
-                if (next && !completed) fireBoth('kojiDisappear', 'koji_disappear')
+              { label: 'Mastered', active: mastered, toggle: () => setMastered((v) => !v) },
+              {
+                label: 'Padlock',
+                active: padlock,
+                toggle: () => {
+                  const next = !padlock
+                  setPadlock(next)
+                  syncMascotVisibility(completed, next, level)
+                },
               },
-            },
-            {
-              label: 'Level',
-              active: level,
-              toggle: () => {
-                const next = !level
-                setLevel(next)
-                if (next) fireBoth('kojiDisappear', 'koji_disappear')
+              {
+                label: 'Level',
+                active: level,
+                toggle: () => {
+                  const next = !level
+                  setLevel(next)
+                  syncMascotVisibility(completed, padlock, next)
+                },
               },
-            },
-            { label: 'Premium', active: premiumNode, toggle: () => setPremiumNode((v) => !v) },
-            { label: 'ProgressCheck', active: progressCheck, toggle: () => setProgressCheck((v) => !v) },
-          ].map((btn) => (
+              { label: 'Premium', active: premiumNode, toggle: () => setPremiumNode((v) => !v) },
+              { label: 'ProgressCheck', active: progressCheck, toggle: () => setProgressCheck((v) => !v) },
+            ]
+          })().map((btn) => (
             <button
               key={btn.label}
               type="button"

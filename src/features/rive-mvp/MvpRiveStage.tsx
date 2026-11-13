@@ -104,6 +104,7 @@ export const MvpRiveStage = memo(function MvpRiveStage({
     let disposed = false
     let rive: Rive | null = null
     let observer: ResizeObserver | null = null
+    let frame = 0
     setFailed(false)
 
     void Promise.all([loadBrilliantRiveRuntime(), getBrilliantBuffer(file)])
@@ -127,6 +128,7 @@ export const MvpRiveStage = memo(function MvpRiveStage({
           ...(stateMachine ? { stateMachines: stateMachine } : {}),
           autoplay: true,
           autoBind: false,
+          useOffscreenRenderer: true,
           layout: new Layout({
             fit: fit === 'cover' ? Fit.Cover : Fit.Contain,
             alignment: Alignment.Center,
@@ -208,24 +210,19 @@ export const MvpRiveStage = memo(function MvpRiveStage({
                       }
                     }
                   }
-                  if (vmTriggers) {
-                    for (const tr of vmTriggers) {
-                      try {
-                        inst.trigger(tr)?.trigger()
-                      } catch {
-                        /* optional */
-                      }
-                    }
-                  }
                 }
               } catch {
                 /* some .riv files use SM inputs only */
               }
             }
 
-            // 2) StateMachine inputs
+            // Rive starts advancing the state machine after onLoad returns; delay triggers 2 frames.
+            const pendingVmTrigs = vmTriggers ? [...vmTriggers] : null
+            const pendingSmTrigs = smTriggers ? [...smTriggers] : null
+            const instForTriggers = vmInstRef.current
             const smName = stateMachine ?? rive.stateMachineNames?.[0]
-            if (smName) {
+            const smInputsForTriggers = (() => {
+              if (!smName) return null
               try {
                 const inputs = rive.stateMachineInputs(smName) ?? []
                 const byName = new Map(inputs.map((inp) => [inp.name, inp]))
@@ -239,14 +236,32 @@ export const MvpRiveStage = memo(function MvpRiveStage({
                   const inp = byName.get(k)
                   if (inp) inp.value = v
                 }
-                if (smTriggers) {
-                  for (const tr of smTriggers) {
-                    byName.get(tr)?.fire?.()
-                  }
-                }
+                return byName
               } catch {
-                /* ignore */
+                return null
               }
+            })()
+
+            if (pendingVmTrigs?.length || pendingSmTrigs?.length) {
+              frame = requestAnimationFrame(() => {
+                frame = requestAnimationFrame(() => {
+                  if (disposed) return
+                  if (pendingVmTrigs && instForTriggers) {
+                    for (const tr of pendingVmTrigs) {
+                      try {
+                        instForTriggers.trigger(tr)?.trigger()
+                      } catch {
+                        /* optional */
+                      }
+                    }
+                  }
+                  if (pendingSmTrigs && smInputsForTriggers) {
+                    for (const tr of pendingSmTrigs) {
+                      smInputsForTriggers.get(tr)?.fire?.()
+                    }
+                  }
+                })
+              })
             }
           },
           onLoadError: () => {
@@ -265,6 +280,7 @@ export const MvpRiveStage = memo(function MvpRiveStage({
 
     return () => {
       disposed = true
+      if (frame) cancelAnimationFrame(frame)
       observer?.disconnect()
       riveRef.current = null
       vmInstRef.current = null

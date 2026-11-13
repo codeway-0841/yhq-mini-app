@@ -207,6 +207,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const nodeTriggerRef = useRef(nodeTrigger)
   const nodeTriggerSeqRef = useRef(nodeTriggerSeq)
   const lastFiredTriggerRef = useRef<{ name: string; seq: number } | null>(null)
+  const wasIcpHiddenRef = useRef(false)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -239,6 +240,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
     let disposed = false
     let rive: Rive | null = null
     let observer: ResizeObserver | null = null
+    let frame = 0
     setFailed(false)
 
     void Promise.all([
@@ -263,6 +265,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         stateMachines: cfg.stateMachine,
         autoplay: true,
         autoBind: false,
+        useOffscreenRenderer: true,
         layout: new Layout({ fit: activeFit, alignment: Alignment.Center }),
         onLoad: () => {
           if (disposed || !rive) return
@@ -352,6 +355,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
           } else if (kind === 'icp-node') {
             const comp = nodeCompletedRef.current
             const locked = !comp && nodeLockedRef.current
+            const hidden = comp || locked || nodeLevelRef.current
+            wasIcpHiddenRef.current = hidden
             setNum('color', variantRef.current)
             setBool('completed', comp)
             setBool('padlock', locked)
@@ -365,8 +370,17 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             setBool('cursorDown', false)
             setBool('startIdle', true)
             setNum('icon', locked ? 3 : comp && !nodeLevelRef.current ? 1 : 0)
-            lastFiredTriggerRef.current = { name: nodeTriggerRef.current, seq: nodeTriggerSeqRef.current }
-            fire(nodeTriggerRef.current)
+            const initialTrig = nodeTriggerRef.current
+            const initialSeq = nodeTriggerSeqRef.current
+            lastFiredTriggerRef.current = { name: initialTrig, seq: initialSeq }
+            if (initialTrig !== 'kojiAppear' || !hidden) {
+              // Rive starts advancing the state machine after onLoad returns; delay trigger 2 frames.
+              frame = requestAnimationFrame(() => {
+                frame = requestAnimationFrame(() => {
+                  if (!disposed) fire(initialTrig)
+                })
+              })
+            }
           } else if (kind === 'progress-endstate') {
             setNum('color', variantRef.current)
             fire(progressTriggerRef.current)
@@ -396,9 +410,11 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
 
     return () => {
       disposed = true
+      if (frame) cancelAnimationFrame(frame)
       observer?.disconnect()
       instanceRef.current = null
       lastFiredTriggerRef.current = null
+      wasIcpHiddenRef.current = false
       rive?.cleanup()
     }
   }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
@@ -407,6 +423,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
     const inst = instanceRef.current as unknown as {
       boolean?: (n: string) => { value: boolean } | null
       number?: (n: string) => { value: number } | null
+      trigger?: (n: string) => { trigger: () => void } | null
     } | null
     if (!inst) return
     try {
@@ -425,6 +442,11 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         setB('premiumNode', nodePremium)
         setB('select', nodeSelect)
         setN('icon', locked ? 3 : nodeCompleted && !nodeLevel ? 1 : 0)
+        const hidden = nodeCompleted || locked || nodeLevel
+        if (hidden !== wasIcpHiddenRef.current) {
+          wasIcpHiddenRef.current = hidden
+          inst.trigger?.(hidden ? 'kojiDisappear' : 'kojiAppear')?.trigger()
+        }
       }
     } catch { /* ignore */ }
   }, [dark, kind, nodeCompleted, nodeLocked, nodeLevel, nodeProgressCheck, nodeMastered, nodePremium, nodeSelect])
