@@ -110,14 +110,20 @@ describe('Telegram ichida', () => {
   })
 
   it('syncTelegramSafeArea: insets mavjud bo\'lganda --safe-top va --safe-bottom o\'rnatadi', async () => {
-    const { syncTelegramSafeArea } = await import('../../../src/platform/telegram')
-    const rootStyle = document.documentElement.style
+    vi.useFakeTimers()
+    try {
+      const { syncTelegramSafeArea } = await import('../../../src/platform/telegram')
+      const rootStyle = document.documentElement.style
 
-    const tg = webApp()
-    tg.contentSafeAreaInset = { top: 96, bottom: 34, left: 0, right: 0 }
-    syncTelegramSafeArea()
-    expect(rootStyle.getPropertyValue('--safe-top')).toBe('96px')
-    expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
+      const tg = webApp()
+      tg.contentSafeAreaInset = { top: 96, bottom: 34, left: 0, right: 0 }
+      syncTelegramSafeArea()
+      expect(rootStyle.getPropertyValue('--safe-top')).toBe('96px')
+      expect(rootStyle.getPropertyValue('--safe-bottom')).toBe('34px')
+      vi.runAllTimers()
+    } finally {
+      vi.useRealTimers()
+    }
   })
 
   it('syncTelegramTheme: dark/light temalarda headerColor va meta theme-color sinxronlanadi', async () => {
