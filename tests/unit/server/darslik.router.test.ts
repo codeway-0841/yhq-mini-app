@@ -30,6 +30,7 @@ vi.mock('../../../server/modules/ai-courses/meta-generator', () => ({
 }))
 
 import darslikRouter from '../../../server/modules/darslik/darslik.router'
+import { config } from '../../../server/config'
 import { errorHandler } from '../../../server/middleware/error-handler'
 import { firstTopicCheck } from '../../../server/modules/darslik/first-topic'
 import { block01Checks } from '../../../server/modules/darslik/curated/block-01'
@@ -76,6 +77,7 @@ function answersFor(check: DarslikCheck): DarslikAnswers {
 }
 
 beforeEach(() => {
+  config.ai.metaApiKey = 'unit-test-meta-key'
   repo.passed.mockReset().mockResolvedValue([])
   repo.check.mockReset().mockResolvedValue(null)
   repo.checkRecord.mockReset().mockResolvedValue(null)

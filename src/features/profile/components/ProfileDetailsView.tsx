@@ -500,9 +500,9 @@ export function ProfileDetailsView({
 
         {/* ── Bitta yaxlit blok (Ismingizdan Jinsgacha) ── */}
         <div className="w-full px-4 pb-24">
-          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] p-3 space-y-2.5 shadow-sm">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] divide-y divide-pline shadow-sm">
             {/* Ismingiz */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
+            <div className="px-5 py-3 transition-colors focus-within:bg-[rgb(var(--p-primary-rgb)/0.04)]">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Имя' : 'Ismingiz'}
               </label>
@@ -511,13 +511,13 @@ export function ProfileDetailsView({
                 value={editFirstName}
                 onChange={(e) => setEditFirstName(e.target.value)}
                 maxLength={32}
-                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                className="w-full bg-transparent text-[15px] font-bold text-pfg outline-none leading-tight mt-0.5"
                 placeholder={ru ? 'Имя' : 'Ismingiz'}
               />
             </div>
 
             {/* Familiya */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
+            <div className="px-5 py-3 transition-colors focus-within:bg-[rgb(var(--p-primary-rgb)/0.04)]">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Фамилия' : 'Familiya'}
               </label>
@@ -526,13 +526,13 @@ export function ProfileDetailsView({
                 value={editLastName}
                 onChange={(e) => setEditLastName(e.target.value)}
                 maxLength={32}
-                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                className="w-full bg-transparent text-[15px] font-bold text-pfg outline-none leading-tight mt-0.5"
                 placeholder={ru ? 'Фамилия' : 'Familiya'}
               />
             </div>
 
             {/* Username */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
+            <div className="px-5 py-3 transition-colors focus-within:bg-[rgb(var(--p-primary-rgb)/0.04)]">
               <label className="block text-[11px] font-medium text-pmuted">
                 Username
               </label>
@@ -541,13 +541,13 @@ export function ProfileDetailsView({
                 value={editUsername}
                 onChange={(e) => setEditUsername(e.target.value)}
                 maxLength={32}
-                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                className="w-full bg-transparent text-[15px] font-bold text-pfg outline-none leading-tight mt-0.5"
                 placeholder="@username"
               />
             </div>
 
             {/* Yosh */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
+            <div className="px-5 py-3 transition-colors focus-within:bg-[rgb(var(--p-primary-rgb)/0.04)]">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Возраст' : 'Yosh'}
               </label>
@@ -557,7 +557,7 @@ export function ProfileDetailsView({
                 value={editAge}
                 onChange={(e) => setEditAge(e.target.value)}
                 maxLength={3}
-                className="w-full bg-transparent text-[14.5px] font-bold text-pfg outline-none leading-tight"
+                className="w-full bg-transparent text-[15px] font-bold text-pfg outline-none leading-tight mt-0.5"
                 placeholder="28"
               />
             </div>
@@ -571,13 +571,13 @@ export function ProfileDetailsView({
                 setSelectedOccupationTemp(editOccupation)
                 setShowOccupationSheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2.5 flex items-center justify-between active:scale-[0.99] transition-transform cursor-pointer"
+              className="w-full text-left px-5 py-3 flex items-center justify-between active:bg-psurface transition-colors cursor-pointer"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
                   {ru ? 'Род деятельности' : 'Faoliyat turi'}
                 </span>
-                <span className="block text-[14.5px] font-bold text-pfg leading-tight mt-0.5">
+                <span className="block text-[15px] font-bold text-pfg leading-tight mt-0.5">
                   {editOccupation || (ru ? 'Выберите' : 'Tanlang')}
                 </span>
               </div>
@@ -585,8 +585,8 @@ export function ProfileDetailsView({
             </button>
 
             {/* Jins */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 flex items-center justify-between">
-              <span className="text-[12px] font-medium text-pmuted">
+            <div className="px-5 py-2.5 flex items-center justify-between">
+              <span className="text-[14px] font-medium text-pmuted">
                 {ru ? 'Пол' : 'Jins'}
               </span>
               <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-200/70 dark:bg-pcard border border-[var(--p-line-strong)] gap-1">
@@ -736,7 +736,7 @@ export function ProfileDetailsView({
 
         {/* Address Fields inside SINGLE rounded card at TOP */}
         <div className="w-full px-4 mt-3 pb-24">
-          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] p-3 space-y-2.5 shadow-sm">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] divide-y divide-pline shadow-sm">
             {/* Mamlakat (Clickable -> Opens Country Sheet) */}
             <button
               type="button"
@@ -746,7 +746,7 @@ export function ProfileDetailsView({
                 setSelectedCountryTemp(editCountry)
                 setShowCountrySheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+              className="w-full text-left px-5 py-3.5 flex items-center justify-between active:bg-psurface transition-colors cursor-pointer"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
@@ -768,7 +768,7 @@ export function ProfileDetailsView({
                 setSelectedRegionTemp(editRegion)
                 setShowRegionSheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+              className="w-full text-left px-5 py-3.5 flex items-center justify-between active:bg-psurface transition-colors cursor-pointer"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">
@@ -790,7 +790,7 @@ export function ProfileDetailsView({
                 setSelectedDistrictTemp(editDistrict)
                 setShowDistrictSheet(true)
               }}
-              className="w-full text-left rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-3 flex items-center justify-between active:scale-[0.99] transition-transform"
+              className="w-full text-left px-5 py-3.5 flex items-center justify-between active:bg-psurface transition-colors cursor-pointer"
             >
               <div>
                 <span className="block text-[11px] font-medium text-pmuted">

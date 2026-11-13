@@ -214,7 +214,7 @@ describe('darslik mastery — birinchi pass va idempotentlik', () => {
 })
 
 describe('darslik mastery — XP shifti va v1 moslik', () => {
-  it('kunlik XP shifti to‘lgan bo‘lsa XP bermaydi, lekin mastery yoziladi', async () => {
+  it('kunlik XP shifti to‘lgan bo‘lsa ham darslik XPsini to‘liq beradi va mastery yoziladi', async () => {
     await resetUser(IDS.cap)
     await db.insert(dailyLimits).values({
       userId: IDS.cap,
@@ -225,13 +225,13 @@ describe('darslik mastery — XP shifti va v1 moslik', () => {
 
     const res = await submitCorrect(IDS.cap, '1:0')
     expect(res.status).toBe(200)
-    expect(res.body).toMatchObject({ passed: true, xpEarned: 0 })
-    expect(await xpOf(IDS.cap)).toBe(0)
-    expect((await todaysLimit(IDS.cap))?.xpEarned).toBe(500)
+    expect(res.body).toMatchObject({ passed: true, xpEarned: 90 })
+    expect(await xpOf(IDS.cap)).toBe(90)
+    expect((await todaysLimit(IDS.cap))?.xpEarned).toBe(590)
     expect(await masteryRows(IDS.cap)).toHaveLength(1)
   })
 
-  it('shiftga qisman joy qolsa faqat qolgan qism beriladi', async () => {
+  it('shiftga qisman joy qolganda ham darslik XPsi cheklanmaydi', async () => {
     await resetUser(IDS.partialCap)
     await db.insert(dailyLimits).values({
       userId: IDS.partialCap,
@@ -242,9 +242,9 @@ describe('darslik mastery — XP shifti va v1 moslik', () => {
 
     const res = await submitCorrect(IDS.partialCap, '1:0')
     expect(res.status).toBe(200)
-    expect(res.body).toMatchObject({ passed: true, xpEarned: 10, xp: 10 })
-    expect(await xpOf(IDS.partialCap)).toBe(10)
-    expect((await todaysLimit(IDS.partialCap))?.xpEarned).toBe(500)
+    expect(res.body).toMatchObject({ passed: true, xpEarned: 90, xp: 90 })
+    expect(await xpOf(IDS.partialCap)).toBe(90)
+    expect((await todaysLimit(IDS.partialCap))?.xpEarned).toBe(580)
   })
 
   it('v1 mastery keyingi mavzuni ochadi va v2 qatori qo‘shiladi', async () => {
