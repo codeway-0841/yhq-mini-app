@@ -624,7 +624,7 @@ function AskKojiAiMvp({ ctx }: { ctx: ExtraMvpCtx }) {
       <div className="mx-auto flex w-full max-w-[393px] flex-col items-center gap-4 px-4 pt-12">
         {/* Brilliant uses both 52x52 floating FAB and 140px tutor header */}
         <div className="flex items-center gap-4">
-          <div className="size-[52px] rounded-full bg-psurface border border-pline flex items-center justify-center overflow-hidden">
+          <div className="size-[52px] rounded-full bg-psurface shadow-xs flex items-center justify-center overflow-hidden">
             <MvpRiveStage
               file="ask_koji.410199b8.riv"
               artboard="MAIN_AskKoji_52x52"
@@ -669,7 +669,7 @@ function AskKojiAiMvp({ ctx }: { ctx: ExtraMvpCtx }) {
                 setPulseVm((p) => ({ name: tr.id, seq: p.seq + 1 }))
                 playSound('click')
               }}
-              className="rounded-full border border-plineStrong bg-psurface px-3 py-1.5 text-[12px] font-bold text-pfg cursor-pointer active:scale-95"
+              className="rounded-full bg-psurface px-3 py-1.5 text-[12px] font-bold text-pfg shadow-xs cursor-pointer active:scale-95"
             >
               {tr.label}
             </button>
@@ -899,7 +899,7 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
               key={tr.label}
               type="button"
               onClick={() => fireBoth(tr.vm, tr.sm)}
-              className="rounded-full border border-plineStrong bg-psurface px-2.5 py-1 text-[11px] font-bold text-pfg cursor-pointer active:scale-95"
+              className="rounded-full bg-psurface px-2.5 py-1 text-[11px] font-bold text-pfg shadow-xs cursor-pointer active:scale-95"
             >
               {tr.label}
             </button>
@@ -929,7 +929,7 @@ function InsertionAndLoadersMvp({
         onPrimaryClick={onReplay}
         onSecondaryClick={onClose}
       >
-        <div className="mx-auto mt-8 h-[410px] w-full max-w-[350px] rounded-2xl overflow-hidden border border-pline bg-pcard/40 p-2">
+        <div className="mx-auto mt-8 h-[410px] w-full max-w-[350px] rounded-2xl overflow-hidden bg-[rgb(var(--p-card-rgb)/0.4)] p-2 shadow-xs">
           <MvpRiveStage
             file="level-insertion-acceptance.0b247613.riv"
             artboard="levelInsertion_Animation"

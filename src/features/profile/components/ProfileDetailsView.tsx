@@ -500,9 +500,9 @@ export function ProfileDetailsView({
 
         {/* ── Bitta yaxlit blok (Ismingizdan Jinsgacha) ── */}
         <div className="w-full px-4 pb-24">
-          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] p-3 space-y-2.5 shadow-sm">
             {/* Ismingiz */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Имя' : 'Ismingiz'}
               </label>
@@ -517,7 +517,7 @@ export function ProfileDetailsView({
             </div>
 
             {/* Familiya */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Фамилия' : 'Familiya'}
               </label>
@@ -532,7 +532,7 @@ export function ProfileDetailsView({
             </div>
 
             {/* Username */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
               <label className="block text-[11px] font-medium text-pmuted">
                 Username
               </label>
@@ -547,7 +547,7 @@ export function ProfileDetailsView({
             </div>
 
             {/* Yosh */}
-            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-pprimary/30 transition-all">
+            <div className="rounded-2xl bg-[#f0f3f6] dark:bg-psurface px-4 py-2 focus-within:ring-2 focus-within:ring-[rgb(var(--p-primary-rgb)/0.3)] transition-all">
               <label className="block text-[11px] font-medium text-pmuted">
                 {ru ? 'Возраст' : 'Yosh'}
               </label>
@@ -589,7 +589,7 @@ export function ProfileDetailsView({
               <span className="text-[12px] font-medium text-pmuted">
                 {ru ? 'Пол' : 'Jins'}
               </span>
-              <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-200/70 dark:bg-pcard border border-pline/40 gap-1">
+              <div className="w-32 grid grid-cols-2 p-1 rounded-xl bg-gray-200/70 dark:bg-pcard border border-[var(--p-line-strong)] gap-1">
                 <button
                   type="button"
                   onClick={() => {
@@ -633,7 +633,7 @@ export function ProfileDetailsView({
         </div>
 
         {/* ── Fixed Bottom CTA: SAQLASH ── */}
-        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-[rgb(var(--p-canvas-rgb)/0.95)] to-transparent z-20 pointer-events-auto">
           <div className="w-full max-w-lg mx-auto">
             <Button
               block
@@ -736,7 +736,7 @@ export function ProfileDetailsView({
 
         {/* Address Fields inside SINGLE rounded card at TOP */}
         <div className="w-full px-4 mt-3 pb-24">
-          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 p-3 space-y-2.5 shadow-sm">
+          <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] p-3 space-y-2.5 shadow-sm">
             {/* Mamlakat (Clickable -> Opens Country Sheet) */}
             <button
               type="button"
@@ -806,7 +806,7 @@ export function ProfileDetailsView({
         </div>
 
         {/* ── Fixed Bottom CTA: SAQLASH ── */}
-        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+        <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-[rgb(var(--p-canvas-rgb)/0.95)] to-transparent z-20 pointer-events-auto">
           <div className="w-full max-w-lg mx-auto">
             <Button
               block
@@ -1120,7 +1120,7 @@ export function ProfileDetailsView({
               </div>
 
               {/* Details Card */}
-              <div className="mt-4 overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 divide-y divide-pline shadow-sm">
+              <div className="mt-4 overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] divide-y divide-pline shadow-sm">
                 <div className="flex items-center justify-between px-5 py-3.5">
                   <span className="text-[14px] font-medium text-pmuted">
                     {ru ? 'Возраст:' : 'Yosh:'}
@@ -1175,7 +1175,7 @@ export function ProfileDetailsView({
 
             {/* ── SLIDE 2: Manzil ── */}
             <div className="w-1/2 shrink-0 px-4 flex flex-col mt-3">
-              <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-pline/40 divide-y divide-pline shadow-sm">
+              <div className="overflow-hidden rounded-3xl bg-white dark:bg-pcard border border-[var(--p-line-strong)] divide-y divide-pline shadow-sm">
                 <div className="flex items-center justify-between px-5 py-3.5">
                   <span className="text-[14px] font-medium text-pmuted">
                     {ru ? 'Страна:' : 'Mamlakat:'}
@@ -1208,7 +1208,7 @@ export function ProfileDetailsView({
         </div>
 
       {/* ── Fixed Bottom CTA: TAHRIRLASH (Rasmdagidek toza oq pill) ── */}
-      <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-pcanvas/95 to-transparent z-20 pointer-events-auto">
+      <div className="fixed bottom-0 inset-x-0 p-4 pb-[max(1rem,var(--safe-bottom,0px))] bg-gradient-to-t from-pcanvas via-[rgb(var(--p-canvas-rgb)/0.95)] to-transparent z-20 pointer-events-auto">
         <div className="w-full max-w-lg mx-auto">
           <button
             type="button"

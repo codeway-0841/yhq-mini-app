@@ -71,7 +71,7 @@ export default function AiTestHub() {
               className="relative rounded-2xl bg-pcard w-full flex items-center gap-3.5 p-4 active:scale-[0.98] transition-[background-color,transform] duration-150 text-left shadow-xs hover:bg-psurface"
             >
               {!t.attempted && (
-                <span className="absolute -top-2 right-3 rounded-full border border-pline bg-psurface px-2 py-0.5 text-[11px] font-semibold text-pprimary">
+                <span className="absolute -top-2 right-3 rounded-full bg-[rgb(var(--p-primary-rgb)/0.12)] px-2 py-0.5 text-[11px] font-semibold text-pprimary">
                   {tt('aiTestNew')}
                 </span>
               )}

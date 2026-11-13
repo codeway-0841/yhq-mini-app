@@ -27,6 +27,9 @@ test.describe('axe a11y', () => {
     await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
       route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
     )
+    await page.addInitScript(() => {
+      localStorage.setItem('yhq-onboarded', '1')
+    })
     await page.goto('/app.html#/')
     await expect(
       page.getByRole('button', { name: /Telegram orqali kirish/i }),

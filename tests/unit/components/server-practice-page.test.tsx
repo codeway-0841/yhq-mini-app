@@ -240,9 +240,9 @@ describe('ServerPracticePage vertical slice', () => {
 
     render(<MemoryRouter><ServerPracticePage mode="random20" /></MemoryRouter>)
 
-    // Boy natija modali ochiladi (legacy paritet: donut + tahlil tugmasi)
-    expect(await screen.findByRole('heading', { name: 'Natijalar' })).toBeInTheDocument()
-    fireEvent.click(screen.getByText(/Xatolarni tahlil qilish/))
+    // Boy natija modali ochiladi (Brilliant endstate)
+    expect(await screen.findByRole('heading', { name: /Mukammal natija!|A'lo mashq!|Yaxshi urinish!/ })).toBeInTheDocument()
+    fireEvent.click(screen.getByText(/Xatolar tahlili/))
 
     // Review: default 'faqat xatolar' filtri — faqat 2-savol ko'rinadi
     expect(await screen.findByRole('heading', { name: 'Imtihon tahlili' })).toBeInTheDocument()
@@ -264,7 +264,7 @@ describe('ServerPracticePage vertical slice', () => {
     // Dialogdagi tasdiq (ikkinchi 'Yakunlash')
     fireEvent.click(screen.getAllByText('Yakunlash')[1])
     await waitFor(() => expect(api.finishTestSession).toHaveBeenCalledTimes(1))
-    expect(await screen.findByRole('heading', { name: 'Natijalar' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: /Mukammal natija!|A'lo mashq!|Yaxshi urinish!/ })).toBeInTheDocument()
   })
 
   it('finishes a mock exam automatically after 2 wrong answers', async () => {
@@ -314,7 +314,7 @@ describe('ServerPracticePage vertical slice', () => {
     fireEvent.click(screen.getByText('Variant B'))
     expect(await screen.findByText('Mock savol ikki')).toBeInTheDocument()
     fireEvent.click(screen.getByText('Variant B'))
-    expect(await screen.findByRole('heading', { name: 'Natijalar' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: /Mukammal natija!|A'lo mashq!|Yaxshi urinish!/ })).toBeInTheDocument()
     expect(api.finishTestSession).toHaveBeenCalled()
   })
 

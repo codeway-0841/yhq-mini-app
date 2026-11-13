@@ -135,7 +135,7 @@ beforeAll(async () => {
 afterAll(cleanup)
 
 describe('darslik mastery — birinchi pass va idempotentlik', () => {
-  it('birinchi pass mastery v2, 32 XP va daily_limits yozadi', async () => {
+  it('birinchi pass mastery v2, 90 XP va daily_limits yozadi', async () => {
     await resetUser(IDS.first)
     expect((await getProgress(IDS.first)).body.passed).toEqual([])
 
@@ -149,13 +149,13 @@ describe('darslik mastery — birinchi pass va idempotentlik', () => {
       passed: true,
       correct: 6,
       total: 6,
-      xpEarned: 32,
-      xp: 32,
+      xpEarned: 90,
+      xp: 90,
       alreadyPassed: false,
     })
 
-    expect(await xpOf(IDS.first)).toBe(32)
-    expect((await todaysLimit(IDS.first))?.xpEarned).toBe(32)
+    expect(await xpOf(IDS.first)).toBe(90)
+    expect((await todaysLimit(IDS.first))?.xpEarned).toBe(90)
 
     const rows = await masteryRows(IDS.first)
     expect(rows).toHaveLength(1)
@@ -179,10 +179,10 @@ describe('darslik mastery — birinchi pass va idempotentlik', () => {
     const first = await submitCorrect(IDS.duplicate, '1:0')
     const second = await submitCorrect(IDS.duplicate, '1:0')
 
-    expect(first.body).toMatchObject({ passed: true, xpEarned: 32, alreadyPassed: false })
-    expect(second.body).toMatchObject({ passed: true, xpEarned: 0, xp: 32, alreadyPassed: true })
-    expect(await xpOf(IDS.duplicate)).toBe(32)
-    expect((await todaysLimit(IDS.duplicate))?.xpEarned).toBe(32)
+    expect(first.body).toMatchObject({ passed: true, xpEarned: 90, alreadyPassed: false })
+    expect(second.body).toMatchObject({ passed: true, xpEarned: 0, xp: 90, alreadyPassed: true })
+    expect(await xpOf(IDS.duplicate)).toBe(90)
+    expect((await todaysLimit(IDS.duplicate))?.xpEarned).toBe(90)
     expect(await masteryRows(IDS.duplicate)).toHaveLength(1)
 
     // Takroriy submit kunlik hisoblagichni ikki marta oshirmaydi.
@@ -206,9 +206,9 @@ describe('darslik mastery — birinchi pass va idempotentlik', () => {
 
     expect([left.status, right.status]).toEqual([200, 200])
     const earned = [left.body.xpEarned, right.body.xpEarned].sort((a, b) => a - b)
-    expect(earned).toEqual([0, 32])
-    expect(await xpOf(IDS.parallel)).toBe(32)
-    expect((await todaysLimit(IDS.parallel))?.xpEarned).toBe(32)
+    expect(earned).toEqual([0, 90])
+    expect(await xpOf(IDS.parallel)).toBe(90)
+    expect((await todaysLimit(IDS.parallel))?.xpEarned).toBe(90)
     expect(await masteryRows(IDS.parallel)).toHaveLength(1)
   })
 })
@@ -262,7 +262,7 @@ describe('darslik mastery — XP shifti va v1 moslik', () => {
 
     const res = await submitCorrect(IDS.v1, '1:1')
     expect(res.status).toBe(200)
-    expect(res.body).toMatchObject({ passed: true, xpEarned: 32 })
+    expect(res.body).toMatchObject({ passed: true, xpEarned: 90 })
 
     const rows = await masteryRows(IDS.v1)
     expect(rows).toHaveLength(2)
@@ -323,7 +323,7 @@ describe('darslik kesh invalidation — curated va admin', () => {
       revision: checkRes.body.revision,
     })
     expect(fresh.status).toBe(200)
-    expect(fresh.body).toMatchObject({ passed: true, xpEarned: 32 })
+    expect(fresh.body).toMatchObject({ passed: true, xpEarned: 90 })
     expect(await masteryRows(IDS.revision)).toHaveLength(1)
   })
 

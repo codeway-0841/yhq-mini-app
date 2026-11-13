@@ -1,4 +1,4 @@
-import { RiveCanvas } from '../mascot-studio/RiveCanvas'
+import { RiveCanvas } from '../mascot-studio'
 
 export type KojiMode = 'reminders' | 'workout' | 'testimonial' | 'place' | 'hero'
 

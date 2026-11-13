@@ -150,7 +150,7 @@ describe('sw.js rasm keshi', () => {
     await requestImage('/images/q002.jpg')
 
     expect(caches.store.get('yhq-img-v1')?.entries.size).toBe(1)
-    expect(caches.store.get('yhq-app-v4')?.entries.size ?? 0).toBe(0)
+    expect(caches.store.get('yhq-app-v10')?.entries.size ?? 0).toBe(0)
   })
 
   it('cap oshganda eng eski yozuvlar o\'chadi', async () => {
@@ -180,10 +180,10 @@ describe('sw.js rasm keshi', () => {
   })
 })
 
-describe('sw.js navigatsiya shell kalitlari (v4)', () => {
+describe('sw.js navigatsiya shell kalitlari (v10)', () => {
   it('/app.html shell o‘z path kalitida saqlanadi va offline’da shu path’ga beriladi', async () => {
     await requestNavigate('/app.html')
-    const appCache = caches.store.get('yhq-app-v4')!
+    const appCache = caches.store.get('yhq-app-v10')!
     expect(appCache.entries.has('https://app.test/app.html')).toBe(true)
 
     const res = await requestNavigate('/app.html', true)
@@ -200,26 +200,26 @@ describe('sw.js navigatsiya shell kalitlari (v4)', () => {
 describe('sw.js question vs explanation cache boundaries (ID 09)', () => {
   it('/api/questions full-bank HECH QACHON keshlanmaydi (v2 contraction bypass)', async () => {
     await requestRoute('/api/questions?subject=yhq')
-    const appCache = caches.store.get('yhq-app-v4')
+    const appCache = caches.store.get('yhq-app-v10')
     expect(appCache?.entries.has('https://app.test/api/questions?subject=yhq')).toBeFalsy()
   })
 
   it('/api/topics metadata katalogi offline fallback uchun keshlanadi', async () => {
     await requestRoute('/api/topics?subject=yhq')
-    const appCache = caches.store.get('yhq-app-v4')
+    const appCache = caches.store.get('yhq-app-v10')
     expect(appCache?.entries.has('https://app.test/api/topics?subject=yhq')).toBe(true)
   })
 
   it('/api/questions/:id/explanation post-answer endpointi HECH QACHON keshlanmaydi (bypass)', async () => {
     await requestRoute('/api/questions/123/explanation')
-    const appCache = caches.store.get('yhq-app-v4')
+    const appCache = caches.store.get('yhq-app-v10')
     expect(appCache?.entries.has('https://app.test/api/questions/123/explanation')).toBeFalsy()
   })
 
   it('Cache-Control: private, no-store javoblar storable orqali keshga saqlanmaydi', async () => {
     fetchMock.mockResolvedValueOnce(makeResponse(200, '{"text":"explanation"}', { 'cache-control': 'private, no-store' }))
     await requestRoute('/api/custom-data')
-    const appCache = caches.store.get('yhq-app-v4')
+    const appCache = caches.store.get('yhq-app-v10')
     expect(appCache?.entries.size ?? 0).toBe(0)
   })
 })

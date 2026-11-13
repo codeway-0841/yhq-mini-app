@@ -194,7 +194,7 @@ export function BrilliantLevelCheckShell({
   return (
     <div className="flex min-h-[100dvh] w-full flex-col bg-pcanvas text-pfg pt-[var(--safe-top,0px)]">
       {/* InContentNavbar */}
-      <header className="sticky top-0 z-20 flex h-14 w-full items-center gap-3 bg-pcanvas px-4">
+      <header className="sticky top-[var(--safe-top,0px)] z-20 flex h-14 w-full items-center gap-3 bg-pcanvas px-4">
         <button
           type="button"
           onClick={onClose}

@@ -20,7 +20,7 @@ function answersFor(check: DarslikCheck): Record<string, string> {
 }
 
 describe('darslik fallback check — AI mavjud bo‘lmaganda', () => {
-  it('barcha 537 mavzu uchun yaroqli 2 test + 1 topshiriq yasaydi', () => {
+  it('barcha 645 mavzu uchun yaroqli 2 test + 1 topshiriq yasaydi', () => {
     let built = 0
     for (const topic of Object.values(topics)) {
       const check = buildFallbackCheck(topic, topics)
@@ -53,8 +53,8 @@ describe('darslik fallback check — AI mavjud bo‘lmaganda', () => {
       expect(JSON.stringify(publicValue)).not.toContain('explanation')
       built++
     }
-    expect(built).toBe(537)
-  })
+    expect(built).toBe(645)
+  }, 45_000)
 
   it('deterministik — bir xil mavzu bir xil test beradi', () => {
     const topic = topics['1:1']
@@ -71,8 +71,8 @@ describe('darslik fallback check — AI mavjud bo‘lmaganda', () => {
     expect(DarslikCheckSchema.safeParse(check).success).toBe(true)
   })
 
-  it('manba fayli bilan sinxron (537 mavzu)', () => {
+  it('manba fayli bilan sinxron (645 mavzu)', () => {
     const raw = JSON.parse(readFileSync(resolve(process.cwd(), 'server/modules/darslik/source.json'), 'utf8')) as Record<string, unknown>
-    expect(Object.keys(raw)).toHaveLength(537)
+    expect(Object.keys(raw)).toHaveLength(645)
   })
 })

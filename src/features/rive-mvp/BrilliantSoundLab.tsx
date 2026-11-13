@@ -70,7 +70,7 @@ export function BrilliantSoundLab({ lang }: BrilliantSoundLabProps) {
                 setLastPlayed(null)
               }}
               aria-label={lang === 'ru' ? 'Остановить' : 'To‘xtatish'}
-              className="flex size-8 items-center justify-center rounded-full border border-plineStrong bg-psurface text-pmuted hover:text-pfg cursor-pointer active:scale-95"
+              className="flex size-8 items-center justify-center rounded-full bg-psurface text-pmuted shadow-xs hover:text-pfg cursor-pointer active:scale-95"
             >
               <VolumeX size={14} />
             </button>
@@ -78,7 +78,7 @@ export function BrilliantSoundLab({ lang }: BrilliantSoundLabProps) {
           <button
             type="button"
             onClick={() => setExpanded((v) => !v)}
-            className="rounded-full border border-plineStrong bg-psurface px-2.5 py-1 text-[11px] font-bold text-pfg cursor-pointer"
+            className="rounded-full bg-psurface px-2.5 py-1 text-[11px] font-bold text-pfg shadow-xs cursor-pointer"
           >
             {expanded
               ? lang === 'ru' ? 'Скрыть' : 'Yopish'

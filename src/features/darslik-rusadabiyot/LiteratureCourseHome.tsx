@@ -9,10 +9,8 @@ import {
   type DarslikBlockMeta,
 } from '../../content/darslik-rusadabiyot'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { parseMarkdown, type MdBlock } from '../darslik-rustili/markdown'
-import { MarkdownView } from '../darslik-rustili/MarkdownView'
+import { parseMarkdown, MarkdownView, type MdBlock } from '../darslik-rustili'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
-import '../darslik-rustili/russian-course-home.css'
 
 interface AuthorItem {
   name: string

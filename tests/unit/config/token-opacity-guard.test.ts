@@ -68,9 +68,9 @@ describe('design token + opacity modifier', () => {
     expect(offenders, `Token + opacity topildi:\n${offenders.join('\n')}`).toEqual([])
   })
 
-  it('reviews header dark foni triplet orqali beriladi (regressiya)', () => {
+  it('reviews header dark foni shaffof bo\'lmagan bg-pcanvas orqali beriladi (regressiya)', () => {
     const page = fs.readFileSync(path.join(SRC, 'features/reviews/ReviewsPage.tsx'), 'utf8')
-    expect(page).toContain('dark:bg-[rgb(var(--p-canvas-rgb)/0.9)]')
+    expect(page).toContain('dark:bg-pcanvas')
     expect(page).not.toContain('dark:bg-background/90')
   })
 })

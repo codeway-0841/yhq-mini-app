@@ -90,6 +90,7 @@ async function openGraph(page: Page, workspace: unknown) {
   await page.goto('/app.html#/grafik')
   const canvas = page.locator(CANVAS)
   await expect(canvas).toBeVisible({ timeout: 15_000 })
+  await page.locator('#kivvi-splash-screen').waitFor({ state: 'detached', timeout: 10_000 }).catch(() => {})
 
   // Canvas o'lchami + shriftlar tayyor bo'lguncha kutish (chizma determinizmi)
   await page.waitForFunction(() => {

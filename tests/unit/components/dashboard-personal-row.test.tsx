@@ -39,22 +39,22 @@ function renderBar(over: Partial<React.ComponentProps<typeof TopBar>> = {}) {
 }
 
 describe('Dashboard "Personal" qatori (video 1:1)', () => {
-  it('shaxs pill, fan pill, tema doirasi', () => {
+  it('shaxs doirasi, fan pill, tema doirasi', () => {
     useSubjectStore.getState().setSubject('yhq')
     const { container } = renderBar()
     const pills = container.querySelectorAll('.dash-top-pill')
     const circles = container.querySelectorAll('.dash-top-circle')
-    expect(pills).toHaveLength(2)
-    expect(circles).toHaveLength(1)
+    expect(pills).toHaveLength(1)
+    expect(circles).toHaveLength(2)
   })
 
-  it('avatar doirasi video o\'lchamida (30px) va ism pill ichida turadi', () => {
+  it('avatar doirasi video o\'lchamida va doira tugma ichida turadi', () => {
     const { container } = renderBar()
     const avatar = container.querySelector('.dash-top-avatar')
     expect(avatar).toBeTruthy()
-    expect(avatar!.closest('.dash-top-pill')).toBeTruthy()
+    expect(avatar!.closest('.dash-top-circle')).toBeTruthy()
     expect(avatar!.querySelector('svg')).toBeTruthy()   // to'ldirilgan odam glifi
-    expect(screen.getByText('Ali')).toBeTruthy()
+    expect(screen.getByRole('button', { name: /Profil: Ali/ })).toBeTruthy()
   })
 
   it('shaxs pill → profil, fan pill → fan tanlash', () => {
@@ -77,7 +77,7 @@ describe('Dashboard "Personal" qatori (video 1:1)', () => {
 
   it('tanga/do\'kon qatordan olib tashlangan (coin Profil orqali ochiladi)', () => {
     const { container } = renderBar()
-    expect(container.querySelectorAll('.dash-top-circle')).toHaveLength(1)
+    expect(container.querySelectorAll('.dash-top-circle')).toHaveLength(2)
     expect(screen.queryByRole('button', { name: /Do'kon/ })).toBeNull()
   })
 

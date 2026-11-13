@@ -699,7 +699,7 @@ export default function BrilliantMvpPage() {
                 return !d
               })
             }}
-            className="inline-flex h-9 items-center gap-1.5 rounded-full border border-plineStrong bg-psurface px-3 text-[12px] font-bold text-pfg cursor-pointer"
+            className="inline-flex h-9 items-center gap-1.5 rounded-full bg-psurface px-3 text-[12px] font-bold text-pfg shadow-xs cursor-pointer"
           >
             {dark ? <Sun size={14} /> : <Moon size={14} />}
             <span>{dark ? 'Light' : 'Dark'}</span>
@@ -814,7 +814,7 @@ export default function BrilliantMvpPage() {
                         <div className="mt-0.5 text-[11px] font-semibold text-pmuted truncate">
                           {lang === 'ru' ? item.layoutRu : item.layoutUz}
                         </div>
-                        <div className="mt-1 text-[10px] font-mono text-pmuted/75 truncate">
+                        <div className="mt-1 text-[10px] font-mono text-psubtle truncate">
                           {item.meta}
                         </div>
                       </div>
@@ -845,7 +845,7 @@ export default function BrilliantMvpPage() {
               type="button"
               onClick={replay}
               aria-label="Replay"
-              className="flex h-9 items-center gap-1 rounded-full border border-plineStrong bg-pcard/95 px-3 text-[12px] font-bold text-pfg shadow-md active:scale-95 cursor-pointer"
+              className="flex h-9 items-center gap-1 rounded-full bg-[rgb(var(--p-card-rgb)/0.95)] px-3 text-[12px] font-bold text-pfg shadow-md active:scale-95 cursor-pointer"
             >
               <RotateCcw size={13} />
               <span>{lang === 'ru' ? 'Повтор' : 'Qayta'}</span>
@@ -855,10 +855,10 @@ export default function BrilliantMvpPage() {
               onClick={() => setDrawerOpen((o) => !o)}
               aria-label="Sozlamalar"
               className={cn(
-                'flex size-9 items-center justify-center rounded-full border shadow-md active:scale-95 cursor-pointer',
+                'flex size-9 items-center justify-center rounded-full shadow-md active:scale-95 cursor-pointer',
                 drawerOpen
-                  ? 'border-pprimary bg-[#3557ff] text-white'
-                  : 'border-plineStrong bg-pcard/95 text-pfg',
+                  ? 'bg-[#3557ff] text-white'
+                  : 'bg-[rgb(var(--p-card-rgb)/0.95)] text-pfg',
               )}
             >
               <SlidersHorizontal size={15} />
@@ -867,7 +867,7 @@ export default function BrilliantMvpPage() {
               type="button"
               onClick={closeScreen}
               aria-label="Yopish"
-              className="flex size-9 items-center justify-center rounded-full border border-plineStrong bg-pcard/95 text-pfg shadow-md active:scale-95 cursor-pointer"
+              className="flex size-9 items-center justify-center rounded-full bg-[rgb(var(--p-card-rgb)/0.95)] text-pfg shadow-md active:scale-95 cursor-pointer"
             >
               <X size={16} />
             </button>
@@ -1074,7 +1074,7 @@ export default function BrilliantMvpPage() {
                   RiveEvent Log ({eventsLog.length})
                 </div>
                 {eventsLog.length === 0 ? (
-                  <div className="text-[11px] text-pmuted/70">Event kutilmoqda...</div>
+                  <div className="text-[11px] text-psubtle">Event kutilmoqda...</div>
                 ) : (
                   <div className="flex flex-wrap gap-1">
                     {eventsLog.map((ev, idx) => (

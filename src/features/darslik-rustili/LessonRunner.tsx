@@ -666,14 +666,14 @@ export default function LessonRunner({
             {!lesson && (
               <>
                 <div className="flex w-full max-w-[340px] items-stretch justify-center gap-2 pt-1">
-                  <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 border border-pline">
+                  <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 shadow-xs">
                     <span className="text-[10px] font-extrabold uppercase tracking-wider text-psuccess">
                       {tt('rusDarslikQuizCorrect')}
                     </span>
                     <p className="mt-0.5 text-[18px] font-extrabold tabular-nums text-psuccess">{accuracyPct}%</p>
                   </div>
 
-                  <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 border border-pline">
+                  <div className="flex flex-1 flex-col items-center justify-center rounded-2xl bg-pcard px-2.5 py-2.5 shadow-xs">
                     <span className="text-[10px] font-extrabold uppercase tracking-wider text-pmuted">
                       {tt('rusDarslikReviewTitle')}
                     </span>
@@ -691,7 +691,7 @@ export default function LessonRunner({
                   type="button"
                   onClick={() => setShowReview((v) => !v)}
                   aria-expanded={showReview}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-pline bg-psurface px-3.5 py-1.5 text-[12px] font-bold text-pfg transition-colors hover:border-plineStrong cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-psurface px-3.5 py-1.5 text-[12px] font-bold text-pfg shadow-xs transition-colors cursor-pointer"
                 >
                   <span>{tt('rusDarslikReviewTitle')}</span>
                   <ChevronDown
@@ -706,7 +706,7 @@ export default function LessonRunner({
                       const item = result.feedback.find((entry) => entry.id === question.id)
                       const correct = item?.correct ?? false
                       return (
-                        <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs border border-pline">
+                        <div key={question.id} className="rounded-2xl bg-pcard p-3.5 shadow-xs">
                           <div className="flex items-center justify-between gap-2">
                             <p className="text-[10.5px] font-bold uppercase tracking-wide text-psubtle">
                               {questionIndex + 1}/{check.questions.length} · {tt(EXERCISE_LABEL[question.kind])}

@@ -52,7 +52,7 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
               type="button"
               onClick={onStay}
               aria-label="Yopish"
-              className="fixed right-4 top-[calc(var(--safe-top,0px)+12px)] z-30 flex size-9 items-center justify-center rounded-full bg-pcard/90 text-pmuted border border-pline hover:text-pfg cursor-pointer"
+              className="fixed right-4 top-[calc(var(--safe-top,0px)+12px)] z-30 flex size-9 items-center justify-center rounded-full bg-pcard text-pmuted shadow-xs hover:text-pfg cursor-pointer"
             >
               <X size={18} strokeWidth={2.4} />
             </button>
@@ -99,7 +99,7 @@ export default function ModuleComplete({ completion, lang, onContinue, onStay }:
             {tt(courseDone ? 'pathCourseDoneHint' : 'pathMilestoneHint')}
           </p>
           {next && (
-            <div className="module-next-preview mt-1 flex w-full items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left border border-pline">
+            <div className="module-next-preview mt-1 flex w-full items-center gap-3 rounded-2xl bg-pcard p-3.5 text-left shadow-xs">
               <div className="size-12 flex-none flex items-center justify-center">
                 <BrilliantEndstateRive
                   kind="icp-node"

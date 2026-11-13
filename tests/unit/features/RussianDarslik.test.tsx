@@ -70,6 +70,16 @@ function checkElement(): HTMLElement {
   return document.querySelector<HTMLElement>('[data-testid="topic-check"]')!
 }
 
+async function waitForCheck(): Promise<HTMLElement> {
+  let found: HTMLElement | null = null
+  await waitFor(() => {
+    const el = document.querySelector<HTMLElement>('[data-testid="topic-check"]')
+    expect(el).toBeTruthy()
+    found = el
+  }, { timeout: 4000 })
+  return found!
+}
+
 async function answerCheck(quiz: HTMLElement) {
   await within(quiz).findByText(CHECK.questions[0].prompt)
   const submit = within(quiz).getByRole('button', { name: 'Tekshirish' })
@@ -82,6 +92,17 @@ async function answerCheck(quiz: HTMLElement) {
   fireEvent.change(within(quiz).getByPlaceholderText('Javobingizni yozing'), { target: { value: '3' } })
   expect(submit).toBeEnabled()
   fireEvent.click(submit)
+}
+
+async function waitForReader(expectedText?: string): Promise<HTMLElement> {
+  let found: HTMLElement | null = null
+  await waitFor(() => {
+    const el = document.querySelector<HTMLElement>('.lesson-reader')
+    expect(el).toBeTruthy()
+    if (expectedText) expect(el!.textContent).toContain(expectedText)
+    found = el
+  }, { timeout: 4500 })
+  return found!
 }
 
 async function waitReaderReady(reader: HTMLElement) {
@@ -170,10 +191,7 @@ describe('RussianDarslikPage — learning path', () => {
     expect(screen.getByText('3–5 daqiqa')).toBeInTheDocument()
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
 
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
     await waitReaderReady(reader)
     expect(within(reader).getAllByText(/ЗВУКИ И БУКВЫ/).length).toBeGreaterThan(0)
     expect(within(reader).queryByRole('heading', { name: /ГЛАСНЫЕ И СОГЛАСНЫЕ/ })).not.toBeInTheDocument()
@@ -181,10 +199,10 @@ describe('RussianDarslikPage — learning path', () => {
     // O'qishning o'zi yetarli emas: server testi ochiladi, mavzu hali "passed" emas.
     fireEvent.click(await advanceToPractice(reader))
     expect(useLessonsStore.getState().readByUser[uid][moduleIdOf(1)]).toEqual([0])
-    expect(checkElement()).toBeTruthy()
+    const quiz = await waitForCheck()
     await waitFor(() => expect(api.getDarslikCheck).toHaveBeenCalledWith('1:0'))
 
-    await answerCheck(checkElement())
+    await answerCheck(quiz)
 
     await waitFor(() => expect(api.submitDarslikCheck).toHaveBeenCalled())
     expect(api.submitDarslikCheck).toHaveBeenCalledWith('1:0', expect.objectContaining({ q1: '1', q2: '2', q3: '3' }))
@@ -207,14 +225,12 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
 
     fireEvent.click(await advanceToPractice(reader))
-    await within(checkElement()).findByText(CHECK.questions[0].prompt)
-    fireEvent.click(within(checkElement()).getByRole('button', { name: 'Testni yopish' }))
+    const quiz = await waitForCheck()
+    await within(quiz).findByText(CHECK.questions[0].prompt)
+    fireEvent.click(within(quiz).getByRole('button', { name: 'Testni yopish' }))
     expect(document.querySelector('[data-testid="topic-check"]')).not.toBeInTheDocument()
     expect(document.querySelector('.lesson-reader')).toBeInTheDocument()
 
@@ -233,13 +249,11 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
 
     fireEvent.click(await advanceToPractice(reader))
-    await answerCheck(checkElement())
+    const quiz = await waitForCheck()
+    await answerCheck(quiz)
 
     expect(await screen.findByText('Test o‘tilmadi')).toBeInTheDocument()
     expect(pathNode(1, 1)).toHaveAttribute('aria-disabled', 'true')
@@ -256,10 +270,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
 
     fireEvent.click(await advanceToPractice(reader))
     expect(await screen.findByText('Test vaqtincha mavjud emas. Keyinroq qayta urinib ko‘ring.')).toBeInTheDocument()
@@ -274,10 +285,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
 
     fireEvent.click(await advanceToPractice(reader))
     expect(await screen.findByText('Mavzu qulflangan')).toBeInTheDocument()
@@ -290,11 +298,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
-    await waitFor(() => {
-      expect(reader.textContent).toContain(`1-blok · 1/${getBlockOutline(1).length}`)
-    })
-
+    const reader = await waitForReader(`1-blok · 1/${getBlockOutline(1).length}`)
     await waitReaderReady(reader)
     fireEvent.click(within(reader).getByRole('button', { name: 'Mundarija' }))
     expect(within(reader).getByRole('button', { name: /1\. ЗВУКИ И БУКВЫ/ })).not.toBeDisabled()
@@ -352,7 +356,7 @@ describe('RussianDarslikPage — learning path', () => {
 
     fireEvent.click(pathNode(1, 0))
     fireEvent.click(await screen.findByRole('button', { name: 'Boshlash' }))
-    const reader = document.querySelector('.lesson-reader') as HTMLElement
+    const reader = await waitForReader()
     await waitReaderReady(reader)
     expect(within(reader).getByRole('button', { name: 'Talaffuzni eshitish' })).toBeInTheDocument()
   })

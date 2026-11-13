@@ -67,9 +67,9 @@ describe('Daily Streak Temporal State Machine & Freeze Protection', () => {
       expect(calcNextStreak('2026-08-14', '2026-08-16', 10, false)).toBe(1)
     })
 
-    it('preserves and increments streak for Premium users on 1-day miss (Streak Freeze)', () => {
-      // Premium user: missed 1 day (15th), resumes on 16th -> streak continues
-      expect(calcNextStreak('2026-08-14', '2026-08-16', 10, true)).toBe(11)
+    it('preserves (does not increment) streak for Premium/charge users on 1-day miss', () => {
+      // Missed 1 day (15th) with protection -> streak preserved at 10
+      expect(calcNextStreak('2026-08-14', '2026-08-16', 10, true)).toBe(10)
     })
 
     it('resets streak to 1 for Premium users if 2 or more days are missed', () => {

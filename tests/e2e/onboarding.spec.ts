@@ -95,6 +95,7 @@ test.describe('Login first-launch layout', () => {
     )
     await page.addInitScript(() => {
       localStorage.clear()
+      localStorage.setItem('yhq-onboarded', '1')
       delete (window as { Telegram?: unknown }).Telegram
     })
   })

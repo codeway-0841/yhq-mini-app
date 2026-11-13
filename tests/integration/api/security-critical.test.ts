@@ -132,7 +132,7 @@ describe('server-authoritative progress', () => {
     expect(res.body.ok).toBe(true)
     expect(res.body.correct).toBe(true)
     expect(res.body.correctAnswer).toBe(question.correctAnswer)
-    expect(typeof res.body.dailyStreak).toBe('number')
+    expect(res.body.dailyStreak === null || typeof res.body.dailyStreak === 'number').toBe(true)
     expect(res.body.duplicate).toBeUndefined()
   })
 

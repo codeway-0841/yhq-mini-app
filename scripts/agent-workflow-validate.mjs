@@ -19,7 +19,7 @@ for (const name of ['kivvi-qa', 'kivvi-memory', 'kivvi-workflow']) {
   assert.ok(!/TODO|\[INSERT|\[REPLACE/.test(text), `${name}: scaffold remains`)
 }
 for (const path of ['docs/agent-context/architecture.md', 'docs/agent-context/backend.md',
-  'docs/agent-context/design.md', 'docs/agent-context/memory.md', '.codex/agents/kivvi-qa.toml']) {
+  'docs/agent-context/design.md', 'docs/agent-context/memory.md', '.agents/skills/kivvi-qa/SKILL.md']) {
   assert.ok(existsSync(resolve(root, path)), `Missing ${path}`)
 }
 for (const args of [['unit'], ['unknown'], ['unit', '../outside.test.ts'],

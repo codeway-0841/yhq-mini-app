@@ -51,7 +51,7 @@ describe('TopicsPage', () => {
   it('birinchi dars ochiq, keyingisi QULFLANGAN (oldingisi tugamagan)', () => {
     render(<TopicsPage />)
 
-    const lessons = screen.getAllByRole('button').filter((b) => /-dars\./.test(b.textContent ?? ''))
+    const lessons = screen.getAllByRole('button').filter((b) => /-DARS/.test(b.textContent ?? ''))
     expect(lessons.length).toBeGreaterThan(1)
     expect(lessons[0]).not.toBeDisabled()
     expect(lessons[1]).toBeDisabled()
@@ -61,14 +61,14 @@ describe('TopicsPage', () => {
     useLessonsStore.setState({ byUser: { [UID]: { [firstModId]: [firstLessonIdx] } } })
     render(<TopicsPage />)
 
-    const lessons = screen.getAllByRole('button').filter((b) => /-dars\./.test(b.textContent ?? ''))
+    const lessons = screen.getAllByRole('button').filter((b) => /-DARS/.test(b.textContent ?? ''))
     expect(lessons[1]).not.toBeDisabled()
   })
 
   it('dars bosilganda curated savol id\'lari bilan test ochiladi', () => {
     render(<TopicsPage />)
 
-    const firstLesson = screen.getAllByRole('button').find((b) => /-dars\./.test(b.textContent ?? ''))!
+    const firstLesson = screen.getAllByRole('button').find((b) => /-DARS/.test(b.textContent ?? ''))!
     fireEvent.click(firstLesson)
 
     expect(mockNavigate).toHaveBeenCalledTimes(1)
@@ -82,7 +82,7 @@ describe('TopicsPage', () => {
     render(<TopicsPage />)
 
     const locked = screen.getAllByRole('button')
-      .filter((b) => /-dars\./.test(b.textContent ?? ''))
+      .filter((b) => /-DARS/.test(b.textContent ?? ''))
       .find((b) => (b as HTMLButtonElement).disabled)!
     fireEvent.click(locked)
 
@@ -102,7 +102,7 @@ describe('TopicsPage v2 (server selectors)', () => {
   it('dars bosilganda server lesson selector bilan ochiladi (master ID YO\'Q)', () => {
     render(<TopicsPage />)
 
-    const firstLesson = screen.getAllByRole('button').find((b) => /-dars\./.test(b.textContent ?? ''))!
+    const firstLesson = screen.getAllByRole('button').find((b) => /-DARS/.test(b.textContent ?? ''))!
     fireEvent.click(firstLesson)
 
     expect(mockNavigate).toHaveBeenCalledTimes(1)

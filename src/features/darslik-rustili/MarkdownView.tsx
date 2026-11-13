@@ -139,7 +139,7 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
               <span>Ловушка для экзамена</span>
             </div>
             <div className="text-[14px] leading-relaxed text-slate-200">
-              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+              <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
         )
@@ -153,7 +153,7 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
               <span>Важная памятка</span>
             </div>
             <div className="text-[14px] leading-relaxed text-slate-200">
-              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+              <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
         )
@@ -167,7 +167,7 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
               <span>Разбор произведения</span>
             </div>
             <div className="text-[14px] leading-relaxed text-slate-200">
-              <InlineText text={quoteText.replace(/^[⚠️💡📖\s]+/, '')} />
+              <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
         )

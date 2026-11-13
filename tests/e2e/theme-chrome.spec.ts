@@ -16,7 +16,7 @@ for (const width of [320, 390]) {
       localStorage.setItem('yhq-app-store', JSON.stringify(saved))
     })
     await page.goto('/app.html#/')
-    const toggle = page.locator('.theme-toggle-btn')
+    const toggle = page.getByRole('button', { name: /Dark mode|Light mode/ })
     await expect(toggle).toBeVisible({ timeout: 15000 })
     await expect(page.locator('body')).toHaveAttribute('data-theme', 'light')
     await page.evaluate(() => document.fonts.ready)
@@ -28,19 +28,25 @@ for (const width of [320, 390]) {
       const colors = await page.evaluate(() => {
         const headerEl = document.querySelector('header')!
         const headerCs = getComputedStyle(headerEl)
+        const probe = document.createElement('div')
+        probe.style.backgroundColor = 'var(--p-canvas)'
+        probe.style.display = 'none'
+        document.body.appendChild(probe)
+        const canvasBg = getComputedStyle(probe).backgroundColor
+        probe.remove()
         return {
-          root: getComputedStyle(document.documentElement).backgroundColor,
+          canvasBg,
           header: headerCs.backgroundColor,
           headerBackdrop: headerCs.backdropFilter,
           canvas: getComputedStyle(document.body).getPropertyValue('--p-canvas').trim(),
           meta: document.querySelector('meta[name="theme-color"]')?.getAttribute('content'),
         }
       })
-      // Native header kontrakti (2026-09-15 PageHeader): shaffof-blur fon —
-      // opaque EMAS (root !== header), orqa blur (bleed native xiralashadi),
-      // divider scroll-CSS orqali (boshlang'ichda shaffof).
-      expect(colors.header).not.toBe(colors.root)
-      expect(colors.headerBackdrop).not.toBe('none')
+      // Native header kontrakti (AGENTS.md + index.css): to'liq no-shaffof (bg-pcanvas),
+      // backdrop-blur va divider yo'q.
+      expect(colors.header).toBe(colors.canvasBg)
+      expect(colors.header).not.toBe('rgba(0, 0, 0, 0)')
+      expect(colors.headerBackdrop).toBe('none')
       expect(colors.meta).toBe(colors.canvas)
       const after = await page.locator('header').boundingBox()
       expect(after?.y).toBe(before?.y)

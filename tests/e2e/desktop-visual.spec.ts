@@ -46,6 +46,7 @@ test.beforeEach(async ({ page: _page }, testInfo) => {
 async function gotoSettled(page: Page, hash: string) {
   await page.goto(`/app.html#${hash}`)
   await expect(page.locator('.route-page')).toBeVisible({ timeout: 15000 })
+  await page.locator('#kivvi-splash-screen').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {})
   // Count-up (900ms) + prefetch tugashini kutamiz — aks holda raqamlar
   // yarim yo'lda ushlanib snapshot flaky bo'ladi.
   await page.waitForTimeout(1800)
@@ -93,16 +94,28 @@ test.describe('Desktop visual baseline', () => {
     await expect(page).toHaveScreenshot('profil.png', SHOT_OPTS)
   })
 
-  test('onboarding fan tanlash — 2-ustun grid', async ({ page }) => {
+  test('onboarding fan tanlash — qiziqishlar', async ({ page }) => {
     await injectTelegramWebApp(page, {}, { onboarded: false })
     await page.goto('/app.html#/')
-    await page.getByRole('button', { name: 'Boshlash' }).first().click()
-    await page.waitForTimeout(1200)
+    await page.getByRole('button', { name: 'Continue' }).click({ timeout: 15000 })
+    await page.getByRole('radio', { name: /Student/i }).click()
+    await page.getByRole('button', { name: 'Continue' }).click()
+    await expect(
+      page.getByRole('heading', { name: /Which are you most interested in/i }),
+    ).toBeVisible()
+    await page.waitForTimeout(500)
     await expect(page).toHaveScreenshot('onboarding-subjects.png', SHOT_OPTS)
   })
 
   test('login — fullscreen split (mehmon)', async ({ page }) => {
     // Telegram'siz mehmon — LoginPage (API mock'siz: fallback zanjiri login'ga tushadi)
+    await page.addInitScript(() => {
+      try {
+        localStorage.setItem('yhq-onboarded', '1')
+      } catch {
+        // ignore
+      }
+    })
     await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
       route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
     )
@@ -110,7 +123,8 @@ test.describe('Desktop visual baseline', () => {
     await expect(
       page.getByRole('button', { name: /Telegram orqali kirish/i }),
     ).toBeVisible({ timeout: 20000 })
-    await page.waitForTimeout(1000)
+    await page.locator('#kivvi-splash-screen').waitFor({ state: 'detached', timeout: 10000 }).catch(() => {})
+    await page.waitForTimeout(600)
     await expect(page).toHaveScreenshot('login.png', SHOT_OPTS)
   })
 })

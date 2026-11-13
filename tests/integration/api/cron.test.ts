@@ -19,7 +19,7 @@ import { eq, and, inArray } from 'drizzle-orm'
 
 const { createApp } = await import('../../../server/app')
 const { db } = await import('../../../server/db/connection')
-const { users, progress, dailyRecords, jobRuns, leagueRolloverLog } = await import('../../../server/schema')
+const { users, progress, dailyLimits, dailyRecords, jobRuns, leagueRolloverLog } = await import('../../../server/schema')
 const { usersRepository } = await import('../../../server/modules/users/users.repository')
 const { weekStartTashkent } = await import('../../../server/modules/leaderboard/leaderboard.repository')
 const request = (await import('supertest')).default
@@ -47,6 +47,11 @@ async function daily(userId: string, correct: number) {
     .onConflictDoUpdate({
       target: [dailyRecords.userId, dailyRecords.date, dailyRecords.subjectId],
       set: { answered: correct, correct },
+    })
+  await db.insert(dailyLimits).values({ userId, date: dayInPrevWeek, xpEarned: correct, coinsEarned: 0 })
+    .onConflictDoUpdate({
+      target: [dailyLimits.userId, dailyLimits.date],
+      set: { xpEarned: correct },
     })
 }
 

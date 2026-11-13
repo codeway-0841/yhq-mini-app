@@ -66,6 +66,9 @@ test.describe('Past ekran (1440x700 laptop)', () => {
     await page.route('https://telegram.org/js/telegram-web-app.js', (route) =>
       route.fulfill({ status: 200, contentType: 'application/javascript', body: '' }),
     )
+    await page.addInitScript(() => {
+      localStorage.setItem('yhq-onboarded', '1')
+    })
     await page.goto('/app.html#/')
     const cta = page.getByRole('button', { name: /Telegram orqali kirish/i })
     await expect(cta).toBeVisible({ timeout: 20000 })

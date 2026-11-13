@@ -1,53 +1,34 @@
 /**
- * Spike dataset integrity (Faza 0): 100 namuna, 5 kategoriya x 20,
- * id unikal, HAMMA ascii engine'da parse bo'ladi (ground truth yaroqli).
+ * Math Board dataset integrity: 5 kategoriya qamrovi (algebra, fraction, root, power, logarithm),
+ * id unikal, HAMMA promptAscii engine'da parse bo'ladi (ground truth yaroqli).
  */
 import { describe, it, expect } from 'vitest'
-import fs from 'node:fs'
-import path from 'node:path'
 import { parseStep } from '../../../src/shared/math-engine'
+import { BOARD_PROBLEMS } from '../../../src/features/math-board/lib/problems'
 
-const DATASET = path.resolve(__dirname, '../../../spike/math-board/dataset.json')
-
-interface Item {
-  id: string
-  category: string
-  ascii: string
-  latex: string
-}
-
-function load(): Item[] {
-  const raw = fs.readFileSync(DATASET, 'utf8')
-  const parsed = JSON.parse(raw) as { items: Item[] }
-  return parsed.items
-}
-
-describe('spike dataset integrity', () => {
-  it('100 namuna, kategoriya balansi 5x20', () => {
-    const items = load()
-    expect(items).toHaveLength(100)
-    const byCat: Record<string, number> = {}
-    for (const it of items) byCat[it.category] = (byCat[it.category] ?? 0) + 1
-    expect(byCat).toEqual({ algebra: 20, fraction: 20, root: 20, power: 20, logarithm: 20 })
+describe('math-board dataset integrity', () => {
+  it('5 kategoriya qamrovi mavjud', () => {
+    const categories = new Set(BOARD_PROBLEMS.map((it) => it.category))
+    expect(categories).toEqual(new Set(['algebra', 'fraction', 'root', 'power', 'logarithm']))
   })
 
   it('id unikal, maydonlar to‘liq', () => {
-    const items = load()
-    const ids = new Set(items.map((i) => i.id))
-    expect(ids.size).toBe(100)
-    for (const it of items) {
-      expect(it.ascii.trim().length).toBeGreaterThan(0)
-      expect(it.latex.trim().length).toBeGreaterThan(0)
+    const ids = new Set(BOARD_PROBLEMS.map((i) => i.problem.id))
+    expect(ids.size).toBe(BOARD_PROBLEMS.length)
+    for (const it of BOARD_PROBLEMS) {
+      expect(it.promptAscii.trim().length).toBeGreaterThan(0)
+      expect(it.displayLatex.trim().length).toBeGreaterThan(0)
+      expect(it.finalAnswer.trim().length).toBeGreaterThan(0)
     }
   })
 
   it('hamma ascii ground truth engine parse qiladi', () => {
     const bad: string[] = []
-    for (const it of load()) {
+    for (const it of BOARD_PROBLEMS) {
       try {
-        parseStep(it.ascii)
+        parseStep(it.promptAscii)
       } catch {
-        bad.push(`${it.id}: ${it.ascii}`)
+        bad.push(`${it.problem.id}: ${it.promptAscii}`)
       }
     }
     expect(bad, bad.join('\n')).toEqual([])

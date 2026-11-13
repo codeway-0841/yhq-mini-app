@@ -33,9 +33,9 @@ beforeAll(async () => {
   }
   await db.update(users).set({ tariff: 'premium' }).where(eq(users.id, U_2DAYS_AGO))
 
-  await db.insert(dailyStreaks).values({ userId: U_YESTERDAY, subjectId: 'yhq', streak: 5, lastDailyDate: '2026-08-19' })
-  await db.insert(dailyStreaks).values({ userId: U_2DAYS_AGO, subjectId: 'yhq', streak: 8, lastDailyDate: '2026-08-18' })
-  await db.insert(dailyStreaks).values({ userId: U_NO_COINS,  subjectId: 'yhq', streak: 3, lastDailyDate: '2026-08-19' })
+  await db.insert(dailyStreaks).values({ userId: U_YESTERDAY, subjectId: 'yhq', streak: 5, charges: 0, lastDailyDate: '2026-08-19' })
+  await db.insert(dailyStreaks).values({ userId: U_2DAYS_AGO, subjectId: 'yhq', streak: 8, charges: 1, lastDailyDate: '2026-08-18' })
+  await db.insert(dailyStreaks).values({ userId: U_NO_COINS,  subjectId: 'yhq', streak: 3, charges: 0, lastDailyDate: '2026-08-19' })
 
   await db.insert(userCoins).values({ userId: U_YESTERDAY, balance: 200 })
   await db.insert(userCoins).values({ userId: U_2DAYS_AGO, balance: 30 })
@@ -51,16 +51,16 @@ describe('streakSaveRiskForUsers', () => {
     const r = risk.get(U_YESTERDAY)
     expect(r).toBeDefined()
     expect(r!.gapDaysTomorrow).toBe(1)
-    expect(r!.premium).toBe(false)
+    expect(r!.charges).toBe(0)
     expect(r!.balance).toBe(200)
   })
 
-  it('2 kun oldin faol bo\'lgan premium user uchun gapDaysTomorrow=2', async () => {
+  it('2 kun oldin faol bo\'lgan zaryadli user uchun gapDaysTomorrow=2', async () => {
     const risk = await cronRepository.streakSaveRiskForUsers(IDS, TODAY)
     const r = risk.get(U_2DAYS_AGO)
     expect(r).toBeDefined()
     expect(r!.gapDaysTomorrow).toBe(2)
-    expect(r!.premium).toBe(true)
+    expect(r!.charges).toBe(1)
     expect(r!.balance).toBe(30)
   })
 
