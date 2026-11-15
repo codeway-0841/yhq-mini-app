@@ -267,4 +267,41 @@ describe('CourseMapPage — kurs xaritasi', () => {
     expect(block1Section.querySelector('.cmap-pill')).toHaveClass('is-current')
     expect(block2Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
   })
+
+  it('sarlavha markazida bob rasmi, mashq tugmasi va aqlli sakrash tugmasini ko‘rsatadi', async () => {
+    render(<CourseMapPage />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const barArt = document.querySelector<HTMLElement>('.cmap-bar-art')!
+    expect(barArt).toHaveAttribute('data-visible', 'true')
+    expect(barArt.querySelector('img')).toHaveAttribute('src', expect.stringContaining('/brilliant/hero_'))
+
+    const jumpBtn = document.querySelector<HTMLButtonElement>('.cmap-jump')!
+    expect(jumpBtn).toHaveAttribute('data-visible', 'false')
+
+    const currentNode = nodesOf(1)[0]
+    vi.spyOn(Element.prototype, 'getBoundingClientRect').mockImplementation(function (this: Element) {
+      if (this === currentNode) return { top: -200, bottom: -60, height: 124 } as DOMRect
+      if (this.classList.contains('cmap-bar')) return { top: 0, bottom: 52, height: 52 } as DOMRect
+      if (this.classList.contains('cmap-sheet')) return { top: 640, bottom: 780, height: 140 } as DOMRect
+      return { top: 200, bottom: 324, height: 124 } as DOMRect
+    })
+    fireEvent.scroll(window)
+    await waitFor(() => {
+      expect(jumpBtn).toHaveAttribute('data-visible', 'true')
+      expect(jumpBtn).toHaveAttribute('data-dir', 'up')
+    })
+
+    // Yopiq keyingi bobdagi mavzu bosilsa ham 1-bob pill faol qoladi
+    const block1Section = document.querySelector<HTMLElement>('#cmap-level-1')!.closest('.cmap-level')!
+    const block2Section = document.querySelector<HTMLElement>('#cmap-level-2')!.closest('.cmap-level')!
+    fireEvent.click(nodesOf(2)[0])
+    expect(block1Section.querySelector('.cmap-pill')).toHaveClass('is-current')
+    expect(block2Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
+
+    const fab = screen.getByRole('button', { name: 'Shaxsiy mashq' })
+    expect(fab).toBeEnabled()
+    fireEvent.click(fab)
+    await waitFor(() => expect(screen.getByText('Mashq yuklanmoqda…')).toBeInTheDocument(), { timeout: 2500 })
+  })
 })

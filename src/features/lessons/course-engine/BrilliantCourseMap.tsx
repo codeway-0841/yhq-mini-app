@@ -15,9 +15,8 @@ import {
 import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
 import { useT } from '../../../shared/i18n'
 import { playSound } from '../../../shared/lib/sounds'
-import { PathMascot } from '../LessonToken'
 import { BrilliantKeyIcon } from '../DarslikTopPills'
-import { getBrilliantTheme } from '../BrilliantLevelsCarousel'
+import { BrilliantHeroIllustration, getBrilliantTheme } from '../BrilliantLevelsCarousel'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from '../LessonLaunch'
 import { preloadBrilliantTransitionAssets, resolveBrilliantRiveColor, startLessonTransition } from '../lesson-transition'
 import { CourseMapNodeArt } from './CourseMapNodeArt'
@@ -108,6 +107,7 @@ export function BrilliantCourseMap({
     () => new Set(blocks.map((block) => block.id)),
   )
   const [scrolled, setScrolled] = useState(false)
+  const [jumpDir, setJumpDir] = useState<'up' | 'down' | null>(null)
 
   const rootRef = useRef<HTMLDivElement>(null)
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -242,18 +242,39 @@ export function BrilliantCourseMap({
     }
   }, [blocks.length])
 
-  /* Scroll — karta ekran tubidagi eng yaqin mavzuga ergashadi. */
+  /* Scroll — karta ekran tubidagi eng yaqin mavzuga ergashadi va joriy tugun ko'rinmasa sakrash tugmasini ko'rsatadi. */
   useEffect(() => {
     let frame = 0
     const measure = () => {
       frame = 0
+      const scrollerRect = getPageScroller()?.getBoundingClientRect()
+      const headerBottom = (rootRef.current?.querySelector<HTMLElement>('.cmap-bar')?.getBoundingClientRect().bottom
+        ?? (scrollerRect?.top ?? 0) + 56) + 58
+      const sheetHeight = sheetRef.current?.offsetHeight ?? 120
+      const sheetTop = sheetRef.current?.getBoundingClientRect().top
+        ?? (scrollerRect?.bottom ?? window.innerHeight) - sheetHeight - 20
+
+      const curEl = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
+      let nextJump: 'up' | 'down' | null = null
+      if (curEl) {
+        const curRect = curEl.getBoundingClientRect()
+        if (curRect.height > 0) {
+          const curMid = curRect.top + curRect.height / 2
+          if (curMid < headerBottom) nextJump = 'up'
+          else if (curRect.top > sheetTop - 20) nextJump = 'down'
+        } else if (pageScrollY() > 80) {
+          nextJump = 'up'
+        }
+      } else if (blocks.length > 0 && pageScrollY() > 80) {
+        nextJump = 'up'
+      }
+      setJumpDir((prev) => (prev === nextJump ? prev : nextJump))
+
       if (pageScrollY() < 80) {
         setFocus((prev) => (prev === null ? prev : null))
         return
       }
-      const sheetHeight = sheetRef.current?.offsetHeight ?? 120
-      const ceiling = (getPageScroller()?.getBoundingClientRect().bottom ?? window.innerHeight)
-        - sheetHeight - 144
+      const ceiling = (scrollerRect?.bottom ?? window.innerHeight) - sheetHeight - 144
       let best: { blockId: number; idx: number } | null = null
       for (const [key, el] of nodeRefs.current) {
         const rect = el.getBoundingClientRect()
@@ -279,17 +300,20 @@ export function BrilliantCourseMap({
       window.removeEventListener('resize', onScroll)
       if (frame) window.cancelAnimationFrame(frame)
     }
-  }, [openBlocks, lang])
+  }, [openBlocks, lang, currentBlock.id, currentIdx, blocks.length])
 
   const jumpMap = useCallback(() => {
-    if (scrolled) {
-      setPicked(null)
+    setPicked(null)
+    openBlock(currentBlock.id)
+    window.requestAnimationFrame(() => {
+      const target = nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
+      if (target && typeof target.scrollIntoView === 'function') {
+        target.scrollIntoView({ block: 'center', behavior: 'smooth' })
+        return
+      }
       scrollPageToTop('smooth')
-      return
-    }
-    nodeRefs.current.get(keyOf(currentBlock.id, currentIdx))
-      ?.scrollIntoView({ block: 'center', behavior: 'smooth' })
-  }, [scrolled, currentBlock.id, currentIdx])
+    })
+  }, [openBlock, currentBlock.id, currentIdx])
 
   useEffect(() => {
     const clear = () => setPicked(null)
@@ -462,6 +486,43 @@ export function BrilliantCourseMap({
     openSection(activeCheck, false)
   }, [activeLocked, activeDone, activeCheck, hasPractice, currentBlock.id, currentIdx, openSection, renderOverlay])
 
+  const startPracticeFab = useCallback(() => {
+    if (!hasPractice || pendingEntry) return
+    const targetBlock = activeLocked ? currentBlock : activeBlock
+    const targetIdx = activeLocked
+      ? Math.max(0, currentIdx)
+      : activeCheck
+        ? Math.max(0, activeBlock.sections.length - 1)
+        : Math.min(active.idx, Math.max(0, activeBlock.sections.length - 1))
+    const targetSection = targetBlock.sections[targetIdx]
+    if (!targetSection) return
+    playSound('start-lesson')
+    track(`${trackEventPrefix}_open_practice`, {
+      subject_id: subjectId,
+      block_id: targetBlock.id,
+      section_idx: targetIdx,
+      quiz: true,
+      source: 'fab',
+    })
+    scheduleEntry(targetBlock.id, targetIdx, () => {
+      setWarmUpLaunch({ blockId: targetBlock.id, idx: targetIdx })
+      setOverlay({ blockId: targetBlock.id, idx: targetIdx, quiz: true, practiceMode: true })
+      setPracticeReady(false)
+    })
+  }, [
+    hasPractice,
+    pendingEntry,
+    activeLocked,
+    currentBlock,
+    currentIdx,
+    activeBlock,
+    activeCheck,
+    active.idx,
+    trackEventPrefix,
+    subjectId,
+    scheduleEntry,
+  ])
+
   const closeOverlay = useCallback(() => {
     setOverlay(null)
     setPracticeReady(false)
@@ -530,8 +591,8 @@ export function BrilliantCourseMap({
           </span>
         </div>
 
-        <span className="cmap-bar-art" data-visible={scrolled ? 'true' : 'false'} aria-hidden="true">
-          {selectedMeta ? <PathMascot animation="idle" /> : <img src="/darslik-map/course-art.png" alt="" width={40} height={48} />}
+        <span className="cmap-bar-art" data-visible="true" aria-hidden="true">
+          <BrilliantHeroIllustration moduleId={activeBlock.id} className="cmap-bar-art-img" />
         </span>
 
         <button
@@ -550,11 +611,7 @@ export function BrilliantCourseMap({
 
       <div className="cmap-layout mx-auto w-full">
         <section className="cmap-hero">
-          {selectedMeta ? (
-            <span className="cmap-hero-mascot"><PathMascot animation="wave" /></span>
-          ) : (
-            <img className="cmap-hero-art" src="/darslik-map/course-art.png" alt="" width={80} height={96} />
-          )}
+          <BrilliantHeroIllustration moduleId={activeBlock.id} className="cmap-hero-art" />
           <h1 className="cmap-hero-title">
             {selectedMeta ? (isRu ? selectedMeta.titleRu : selectedMeta.titleUz) : courseTitle}
           </h1>
@@ -585,7 +642,12 @@ export function BrilliantCourseMap({
             const locked = lockedFor(block.id)
             const blockTheme = getBrilliantTheme(((block.id - 1) % 8) + 1)
             const blockNodeColor = resolveBrilliantRiveColor(blockTheme.accent)
-            const isCurrentLevel = block.id === activeBlock.id
+            const highlightBlockId = !picked && initialBlockId
+              ? initialBlockId
+              : activeLocked
+                ? currentBlock.id
+                : activeBlock.id
+            const isCurrentLevel = block.id === highlightBlockId
             const isOpen = openBlocks.has(block.id)
             return (
               <section
@@ -787,11 +849,75 @@ export function BrilliantCourseMap({
         </div>
       </div>
 
-      <button type="button" className="cmap-jump" data-scrolled={scrolled ? 'true' : 'false'} onClick={jumpMap} aria-label={scrolled ? 'Tepaga qaytish' : 'Mavzularga o‘tish'}>
+      <button
+        type="button"
+        className="cmap-jump"
+        data-visible={jumpDir ? 'true' : 'false'}
+        data-dir={jumpDir ?? 'down'}
+        aria-hidden={!jumpDir || undefined}
+        tabIndex={jumpDir ? 0 : -1}
+        onClick={jumpMap}
+        aria-label={
+          jumpDir === 'up'
+            ? (isRu ? 'Вернуться к текущему уроку' : 'Joriy darsga qaytish')
+            : (isRu ? 'Перейти к текущему уроку' : 'Joriy darsga o‘tish')
+        }
+      >
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <path d="m5 9 7 7 7-7" />
         </svg>
       </button>
+
+      {hasPractice && activeSections.length > 0 && (
+        <button
+          type="button"
+          className="cmap-practice-fab"
+          data-launching={pendingEntry || launch || warmUpLaunch ? 'true' : 'false'}
+          disabled={Boolean(pendingEntry)}
+          onClick={startPracticeFab}
+          aria-label={isRu ? 'Персональная тренировка' : 'Shaxsiy mashq'}
+          title={isRu ? 'Персональная тренировка' : 'Shaxsiy mashq'}
+        >
+          <svg viewBox="0 0 84 84" width="76" height="76" fill="none" aria-hidden="true">
+            <defs>
+              <radialGradient id={`${sheenWideId}-pad-shadow`} cx="50%" cy="50%" r="50%">
+                <stop offset="25%" stopColor="#000" stopOpacity="0.28" />
+                <stop offset="100%" stopColor="#000" stopOpacity="0" />
+              </radialGradient>
+              <linearGradient id={`${sheenWideId}-bar`} x1="16" y1="22" x2="66" y2="54" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#9d8dff" />
+                <stop offset="52%" stopColor="#f292c4" />
+                <stop offset="100%" stopColor="#ffd16b" />
+              </linearGradient>
+              <linearGradient id={`${sheenWideId}-plate-l`} x1="20" y1="16" x2="40" y2="38" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#c5bbff" />
+                <stop offset="100%" stopColor="#8575ef" />
+              </linearGradient>
+              <linearGradient id={`${sheenWideId}-plate-r`} x1="46" y1="30" x2="68" y2="52" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#ffd97e" />
+                <stop offset="100%" stopColor="#f398a6" />
+              </linearGradient>
+            </defs>
+            {/* 3D grey circular pedestal */}
+            <ellipse className="cmap-fab-lip" cx="42" cy="61.5" rx="26" ry="13.5" fill="#707078" />
+            <ellipse className="cmap-fab-face" cx="42" cy="57.5" rx="26" ry="13.5" fill="#a2a2aa" />
+            <ellipse cx="42" cy="57.5" rx="19" ry="9" fill={`url(#${sheenWideId}-pad-shadow)`} />
+            {/* 3D angled gradient dumbbell */}
+            <g transform="translate(42 36) rotate(-32) translate(-42 -36)">
+              <rect x="30" y="32.5" width="24" height="7" rx="3.5" fill={`url(#${sheenWideId}-bar)`} />
+              {/* left plate */}
+              <rect x="23" y="24" width="9" height="24" rx="4.5" fill="#7161d8" />
+              <ellipse cx="24" cy="36" rx="5.5" ry="12" fill={`url(#${sheenWideId}-plate-l)`} />
+              <ellipse cx="22.5" cy="36" rx="3" ry="6.5" fill="#d9d2ff" opacity="0.55" />
+              {/* right inner collar + main cap */}
+              <rect x="51" y="25.5" width="7" height="21" rx="3.5" fill="#f097ad" />
+              <rect x="54" y="23.5" width="9" height="25" rx="4.5" fill="#ea8e76" />
+              <ellipse cx="62" cy="36" rx="5.5" ry="12.5" fill={`url(#${sheenWideId}-plate-r)`} />
+              <ellipse cx="62.5" cy="36" rx="2.6" ry="5.5" fill="#fff3c4" opacity="0.7" />
+            </g>
+          </svg>
+        </button>
+      )}
 
       {launch && (() => {
         const launchTheme = getBrilliantTheme((((launch.target.block.id - 1) % 8) + 1))

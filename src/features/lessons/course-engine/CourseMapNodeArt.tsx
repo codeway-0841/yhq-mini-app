@@ -119,9 +119,9 @@ export function CourseMapNodeArt({
           updateTheme()
           setInput(inputs, 'color', s.color)
           setInput(inputs, 'level', s.levelReview)
-          setInput(inputs, 'padlock', !s.completed && s.locked)
+          setInput(inputs, 'padlock', false)
           setInput(inputs, 'completed', s.completed)
-          setInput(inputs, 'icon', !s.completed && s.locked ? 3 : s.completed && !s.levelReview ? 1 : 0)
+          setInput(inputs, 'icon', s.completed && !s.levelReview ? 1 : 0)
           setInput(inputs, 'select', s.selected)
           setInput(inputs, 'hover', false)
           setInput(inputs, 'cursor_down', false)
@@ -181,9 +181,9 @@ export function CourseMapNodeArt({
       try {
         setInput(inputs, 'color', color)
         setInput(inputs, 'level', levelReview)
-        setInput(inputs, 'padlock', !completed && locked)
+        setInput(inputs, 'padlock', false)
         setInput(inputs, 'completed', completed)
-        setInput(inputs, 'icon', !completed && locked ? 3 : completed && !levelReview ? 1 : 0)
+        setInput(inputs, 'icon', completed && !levelReview ? 1 : 0)
         setInput(inputs, 'select', selected)
         if (entering && !wasEnteringRef.current) {
           const trig = current && !completed && !locked ? 'koji_enter_lesson' : 'koji_appear_enter'
