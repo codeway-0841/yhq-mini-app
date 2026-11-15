@@ -811,10 +811,10 @@ describe('testSessionsService security invariants', () => {
 
     expect(recordAnswer).toHaveBeenCalledWith(expect.objectContaining({
       streakQualified: true,
-      chargeUnitQualified: 3,
+      chargeUnitQualified: 1,
       allowDailyChargeMilestone: true,
     }))
-    expect(touchActivity).toHaveBeenCalledWith('user-1', expect.any(String), 'yhq', 0, 0, TX, 3)
+    expect(touchActivity).toHaveBeenCalledWith('user-1', expect.any(String), 'yhq', 0, 0, TX, 1)
     expect(result.attempt.dailyStreak).toBe(3)
     expect(result.attempt.xpEarned).toBe(0)
   })

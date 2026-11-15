@@ -691,7 +691,7 @@ const UZ = {
   hw3Title: "Bosqichlar",
   hw3Desc: "7, 14, 30 va undan ortiq kun — har bir bosqichda sizni yutuq kutadi.",
   hw4Title: "Seriya zaryadi 🔋",
-  hw4Desc: "Har 3 ta tugallangan dars/test sessiyasi (yoki umumiy testlarda 20 ta savol) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta, zaxira maks. 2 ta, kuymaydi). Kun o‘tkazilsa seriyangizni avtomatik saqlaydi!",
+  hw4Desc: "1 ta dars/to‘liq test sessiyasi (yoki kuniga kamida 20 ta test savoli) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta, zaxira maks. 2 ta, kuymaydi). Kun o‘tkazilsa seriyangizni avtomatik saqlaydi!",
   monthsList: "Yanvar|Fevral|Mart|Aprel|May|Iyun|Iyul|Avgust|Sentabr|Oktabr|Noyabr|Dekabr",
   weekdaysList: "Du|Se|Cho|Pa|Ju|Sha|Ya",
   // Yutuqlar (Achievements) & Gamifikatsiya
@@ -1911,7 +1911,7 @@ const RU: Record<Keys, string> = {
   hw3Title: "Этапы",
   hw3Desc: "7, 14, 30 и более дней — на каждом этапе вас ждёт награда.",
   hw4Title: "Заряд серии 🔋",
-  hw4Desc: "За каждые 3 завершённых урока или полных теста (либо 20 ответов в общей практике) начисляется +1 заряд (макс. 1 в день, запас до 2, не сгорают). Если пропустите день, заряд автоматически сохранит серию!",
+  hw4Desc: "За 1 завершённый урок/полный тест (либо минимум 20 ответов на тесты за день) начисляется +1 заряд (макс. 1 в день, запас до 2, не сгорают). Если пропустите день, заряд автоматически сохранит серию!",
   monthsList: "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь",
   weekdaysList: "Пн|Вт|Ср|Чт|Пт|Сб|Вс",
   // Достижения & Геймификация

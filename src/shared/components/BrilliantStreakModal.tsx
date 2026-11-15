@@ -278,8 +278,8 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
             bg: 'bg-[rgb(var(--p-warning-rgb)/0.12)]',
             title: isRu ? 'Как получить заряд' : 'Qanday qo‘lga kiritiladi',
             desc: isRu
-              ? 'За каждые 3 завершённых урока или полных теста (либо 20 ответов за день) начисляется +1 заряд (макс. 1 в день).'
-              : 'Har 3 ta tugallangan dars/test sessiyasi (yoki kuniga 20 ta test savoli) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta).',
+              ? 'За 1 завершённый урок или полный тест (либо минимум 20 ответов за день) начисляется +1 заряд (макс. 1 в день).'
+              : '1 ta dars yoki to‘liq test sessiyasi (yoki kuniga kamida 20 ta test savoli) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta).',
           },
           {
             icon: CalendarCheck2,

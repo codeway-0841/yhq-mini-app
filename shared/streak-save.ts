@@ -8,7 +8,7 @@
  *   3) Interaktiv darsni muvaffaqiyatli tugatish.
  *
  * Seriya Zaryadi (batareya) yig'ish qoidasi (barcha fanlarda global):
- *   - Har STREAK_CHARGE_UNITS_REQUIRED (3) ta to'liq dars/test sessiyasi tugatilganda
+ *   - STREAK_CHARGE_UNITS_REQUIRED (1) ta to'liq dars/test sessiyasi tugatilganda
  *     YOKI bir kunda kamida STREAK_CHARGE_DAILY_MIN_ANSWERS (20) ta test savoli
  *     yechilganda +1 zaryad beriladi.
  *   - Maksimum STREAK_CHARGE_MAX (2) ta batareya saqlanadi; hech qachon kuymaydi.
@@ -27,7 +27,7 @@ export const STREAK_DAILY_MIN_ANSWERS = 15
 export const STREAK_COMPLETION_MIN_QUESTIONS = 5
 export const STREAK_CHARGE_DAILY_MIN_ANSWERS = 20
 export const STREAK_CHARGE_MAX = 2
-export const STREAK_CHARGE_UNITS_REQUIRED = 3
+export const STREAK_CHARGE_UNITS_REQUIRED = 1
 
 export type StreakOutcome = 'continue' | 'charge_save' | 'reset'
 

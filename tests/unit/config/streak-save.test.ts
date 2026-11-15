@@ -35,7 +35,7 @@ describe('decideStreakOutcome (Brilliant 1:1 Streak Charge)', () => {
 
   it('Brilliant 1:1 global konstantalar', () => {
     expect(STREAK_CHARGE_MAX).toBe(2)
-    expect(STREAK_CHARGE_UNITS_REQUIRED).toBe(3)
+    expect(STREAK_CHARGE_UNITS_REQUIRED).toBe(1)
     expect(STREAK_CHARGE_DAILY_MIN_ANSWERS).toBe(20)
   })
 })
@@ -50,7 +50,7 @@ describe('doesTestAnswerQualifyStreak & doesTestAnswerQualifyChargeUnit', () => 
     expect(doesTestAnswerQualifyStreak({ mode: 'single', answeredInSession: 1, totalQuestions: 1, completed: true })).toBe(false)
   })
 
-  it("to'liq test (>=5 savol) 1 birlik, >=20 javob esa to'liq +1 batareya (3 birlik) beradi (single mustasno)", () => {
+  it("to'liq test (>=5 savol) yoki kuniga >=20 javob +1 batareya (1 birlik) beradi (single mustasno)", () => {
     expect(doesTestAnswerQualifyChargeUnit({ mode: 'ticket', totalQuestions: 10, completed: true })).toBe(true)
     expect(doesTestAnswerQualifyChargeUnit({ mode: 'adaptive', totalQuestions: 5, completed: true })).toBe(true)
     expect(doesTestAnswerQualifyChargeUnit({ mode: 'ticket', totalQuestions: 10, completed: false })).toBe(false)

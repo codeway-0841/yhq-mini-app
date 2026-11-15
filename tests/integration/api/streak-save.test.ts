@@ -115,50 +115,42 @@ describe("Brilliant 1:1 Streak Charge — sarflash va saqlash (coin yechilmaydi)
   })
 })
 
-describe("Brilliant 1:1 Streak Charge — global yig‘ish qoidasi (3 birlik = +1, kuniga max 1)", () => {
-  it("bir kunda 3 ta dars/sessiya = +1 batareya; o‘sha kuni yana 3 ta dars qo‘shimcha batareya bermaydi", async () => {
+describe("Brilliant 1:1 Streak Charge — global yig‘ish qoidasi (1 dars/sessiya = +1, kuniga max 1)", () => {
+  it("bir kunda 1 ta dars/sessiya = +1 batareya; o‘sha kuni yana darslar qo‘shimcha batareya bermaydi", async () => {
     await seedStreak(U_FREE, '2026-05-10', 4, 0, 0, null)
 
     const u1 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
-    expect(u1.chargeEarned).toBe(false)
-    expect(u1.streakCharges).toBe(0)
+    expect(u1.chargeEarned).toBe(true)
+    expect(u1.streakCharges).toBe(1)
 
+    // Shu kunning o'zida 2, 3, 4-darslar: kunlik limit = 1 batareya
     const u2 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
-    expect(u2.chargeEarned).toBe(false)
-    expect(u2.streakCharges).toBe(0)
-
     const u3 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
-    expect(u3.chargeEarned).toBe(true)
-    expect(u3.streakCharges).toBe(1)
-
-    // Shu kunning o'zida 4, 5, 6-darslar: kunlik limit = 1 batareya
     const u4 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
-    const u5 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
-    const u6 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    expect(u2.chargeEarned).toBe(false)
+    expect(u3.chargeEarned).toBe(false)
     expect(u4.chargeEarned).toBe(false)
-    expect(u5.chargeEarned).toBe(false)
-    expect(u6.chargeEarned).toBe(false)
-    expect(u6.streakCharges).toBe(1)
+    expect(u4.streakCharges).toBe(1)
 
-    // Ertasi kuni yana 3 ta birlik -> 2-batareya beriladi
-    await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
-    await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
+    // Ertasi kuni yana 1 ta dars/sessiya -> 2-batareya beriladi
     const d2 = await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
     expect(d2.chargeEarned).toBe(true)
     expect(d2.streakCharges).toBe(2)
   })
 
-  it('turli fanlardagi birliklar global tarzda qo‘shiladi (yhq + rustili + fizika)', async () => {
+  it('turli fanlardagi batareyalar global hisobda bitta limitga yoziladi (yhq + rustili)', async () => {
     await seedStreak(U_GLOBAL, '2026-06-01', 2, 0, 0, null)
 
     const a = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'yhq', 6, 6, undefined, true)
     const b = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'rustili', 6, 6, undefined, true)
-    const c = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'fizika', 6, 6, undefined, true)
+    const c = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-03', 'fizika', 6, 6, undefined, true)
 
-    expect(a.chargeEarned).toBe(false)
+    expect(a.chargeEarned).toBe(true)
+    expect(a.streakCharges).toBe(1)
     expect(b.chargeEarned).toBe(false)
+    expect(b.streakCharges).toBe(1)
     expect(c.chargeEarned).toBe(true)
-    expect(c.streakCharges).toBe(1)
+    expect(c.streakCharges).toBe(2)
   })
 
   it('kuniga 20 ta test savoli yechilganda (0 progressdan ham) darhol +1 batareya beriladi (kuniga max 1)', async () => {

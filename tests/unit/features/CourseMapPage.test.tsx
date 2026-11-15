@@ -249,4 +249,22 @@ describe('CourseMapPage — kurs xaritasi', () => {
       vi.useRealTimers()
     }
   })
+
+  it('har bir bob o‘z rangini saqlaydi, yuqori bar pilllari va faol bob ramkasi almashadi', async () => {
+    render(<CourseMapPage initialBlockId={2} />)
+    await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
+
+    const block1Section = document.querySelector<HTMLElement>('#cmap-level-1')!.closest('.cmap-level')!
+    const block2Section = document.querySelector<HTMLElement>('#cmap-level-2')!.closest('.cmap-level')!
+    expect(block1Section).toHaveAttribute('data-block-node-color', '1')
+    expect(block2Section).toHaveAttribute('data-block-node-color', '4')
+    expect(block2Section.querySelector('.cmap-pill')).toHaveClass('is-current')
+    expect(block1Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
+    expect(document.querySelector('.cmap-bar [aria-label^="Kalitlar"]')).not.toBeNull()
+    expect(document.querySelector('.cmap-bar [aria-label^="Seriya"]')).not.toBeNull()
+
+    fireEvent.click(nodesOf(1)[0])
+    expect(block1Section.querySelector('.cmap-pill')).toHaveClass('is-current')
+    expect(block2Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
+  })
 })

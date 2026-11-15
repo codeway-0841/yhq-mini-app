@@ -6,9 +6,17 @@ import { goBack } from '../../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller, pageScrollY, scrollPageToTop } from '../../../shared/lib/page-scroll'
 import { track } from '../../../shared/lib/analytics'
 import { useAppStore } from '../../../shared/store/useAppStore'
+import {
+  isSubjectExtendedOnDate,
+  selectDailyStreak,
+  todayStr,
+  useDailyStore,
+} from '../../../shared/store/useDailyStore'
+import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
 import { useT } from '../../../shared/i18n'
 import { playSound } from '../../../shared/lib/sounds'
 import { PathMascot } from '../LessonToken'
+import { BrilliantKeyIcon } from '../DarslikTopPills'
 import { getBrilliantTheme } from '../BrilliantLevelsCarousel'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from '../LessonLaunch'
 import { preloadBrilliantTransitionAssets, resolveBrilliantRiveColor, startLessonTransition } from '../lesson-transition'
@@ -30,6 +38,9 @@ const NODE_ART = {
 }
 
 const keyOf = (blockId: number, idx: number) => `${blockId}:${idx}`
+
+const isAllCapsTitle = (title: string) =>
+  title.length > 0 && title === title.toUpperCase() && title !== title.toLowerCase()
 
 /**
  * Brilliant 1:1 umumiy kurs xaritasi dvigateli (barcha fanlar uchun SSOT):
@@ -62,6 +73,16 @@ export function BrilliantCourseMap({
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
+  const isPremium = useAppStore((s) => s.tariff === 'premium')
+  const streak = useDailyStore((s) => selectDailyStreak(s, subjectId))
+  const globalExtendedDate = useDailyStore((s) => s.globalExtendedDate)
+  const activityKey = useDailyStore((s) => s.activityKey)
+  const extendedDates = useDailyStore((s) => s.extendedDates)
+  const isExtendedToday = isSubjectExtendedOnDate(
+    { globalExtendedDate, activityKey, extendedDates },
+    todayStr(),
+    subjectId,
+  )
   const tt = useT(lang)
   const isRu = lang === 'ru'
   const passed = progress.passed
@@ -164,7 +185,10 @@ export function BrilliantCourseMap({
     })
   }, [])
 
-  const active = picked ?? focus ?? { blockId: currentBlock.id, idx: currentIdx }
+  const fallbackIdx = initialSectionIdx !== undefined
+    ? initialSectionIdx
+    : (initialBlockId && initialBlockId !== currentBlock.id ? 0 : currentIdx)
+  const active = picked ?? focus ?? { blockId: initialBlockId ?? currentBlock.id, idx: fallbackIdx }
   const activeBlock = blocks.find((b) => b.id === active.blockId) ?? currentBlock
   const sheetTheme = getBrilliantTheme((((active.blockId - 1) % 8) + 1))
   const mapTheme = getBrilliantTheme((((initialBlockId ?? active.blockId) - 1) % 8) + 1)
@@ -485,20 +509,43 @@ export function BrilliantCourseMap({
       }}
     >
       <header className="cmap-bar">
-        <button
-          type="button"
-          className="cmap-bar-back"
-          onClick={() => (onBackHome ? onBackHome() : goBack(navigate))}
-          aria-label={tt('backWord')}
-        >
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path d="M19 12H5M11 18l-6-6 6-6" />
-          </svg>
-        </button>
+        <div className="cmap-bar-left">
+          <button
+            type="button"
+            className="cmap-bar-back"
+            onClick={() => (onBackHome ? onBackHome() : goBack(navigate))}
+            aria-label={tt('backWord')}
+          >
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M19 12H5M11 18l-6-6 6-6" />
+            </svg>
+          </button>
+
+          <span
+            className="cmap-bar-pill"
+            aria-label={isRu ? `Ключи: ${isPremium ? Math.max(1, doneTotal) : 1}` : `Kalitlar: ${isPremium ? Math.max(1, doneTotal) : 1}`}
+          >
+            <span className="cmap-bar-pill-n">{isPremium ? Math.max(1, doneTotal) : 1}</span>
+            <BrilliantKeyIcon size={17} />
+          </span>
+        </div>
 
         <span className="cmap-bar-art" data-visible={scrolled ? 'true' : 'false'} aria-hidden="true">
           {selectedMeta ? <PathMascot animation="idle" /> : <img src="/darslik-map/course-art.png" alt="" width={40} height={48} />}
         </span>
+
+        <button
+          type="button"
+          className="cmap-bar-pill cmap-streak"
+          onClick={() => navigate('/streak')}
+          aria-label={isRu ? `Серия: ${streak}` : `Seriya: ${streak}`}
+        >
+          <span className="cmap-streak-n">{streak}</span>
+          <BrilliantStreakIcon
+            size={16}
+            className={isExtendedToday ? 'text-[#A8D31D]' : 'text-[#7b7b82]'}
+          />
+        </button>
       </header>
 
       <div className="cmap-layout mx-auto w-full">
@@ -536,7 +583,9 @@ export function BrilliantCourseMap({
             const done = doneFor(block.id)
             const complete = sections.length > 0 && done.length >= sections.length
             const locked = lockedFor(block.id)
-            const isCurrentLevel = block.id === (initialBlockId ?? currentBlock.id)
+            const blockTheme = getBrilliantTheme(((block.id - 1) % 8) + 1)
+            const blockNodeColor = resolveBrilliantRiveColor(blockTheme.accent)
+            const isCurrentLevel = block.id === activeBlock.id
             const isOpen = openBlocks.has(block.id)
             return (
               <section
@@ -544,6 +593,12 @@ export function BrilliantCourseMap({
                 className="cmap-level"
                 data-complete={complete ? 'true' : 'false'}
                 data-open={isOpen ? 'true' : 'false'}
+                data-block-node-color={blockNodeColor}
+                style={{
+                  '--cmap-ring': blockTheme.accent,
+                  '--cmap-deep': blockTheme.buttonShadow,
+                  '--cmap-accent': blockTheme.accent,
+                } as CSSProperties}
                 aria-labelledby={`cmap-level-${block.id}`}
               >
                 <div className="cmap-level-sticky">
@@ -601,13 +656,18 @@ export function BrilliantCourseMap({
                                   disappearing={Boolean(
                                     entryTarget && isCurrent && !(entryTarget.blockId === block.id && entryTarget.idx === idx),
                                   )}
-                                  color={nodeColor}
+                                  color={blockNodeColor}
                                 />
                               ) : (
                                 <img className="cmap-node-art" src={art} alt="" width={128} height={134} loading="lazy" />
                               )}
                             </span>
-                            <span className="cmap-node-label">{section.title}</span>
+                            <span
+                              className="cmap-node-label"
+                              data-allcaps={isAllCapsTitle(section.title) ? 'true' : undefined}
+                            >
+                              {section.title}
+                            </span>
                           </button>
                         </li>
                       )
@@ -639,7 +699,7 @@ export function BrilliantCourseMap({
                                 entering={Boolean(
                                   entryTarget && entryTarget.blockId === block.id && (entryTarget.idx === sections.length || (warmUpLaunch && warmUpLaunch.idx === sections.length - 1)),
                                 )}
-                                color={nodeColor}
+                                color={blockNodeColor}
                               />
                             ) : (
                               <img className="cmap-node-art" src={NODE_ART.check} alt="" width={128} height={134} loading="lazy" />
@@ -665,7 +725,13 @@ export function BrilliantCourseMap({
               data-locked={activeLocked ? 'true' : 'false'}
               data-done={activeDone ? 'true' : 'false'}
             >
-              <p className="cmap-sheet-title" aria-live="polite">{activeTitle}</p>
+              <p
+                className="cmap-sheet-title"
+                aria-live="polite"
+                data-allcaps={isAllCapsTitle(activeTitle) ? 'true' : undefined}
+              >
+                {activeTitle}
+              </p>
               <div className="cmap-sheet-actions">
                 <button
                   type="button"
