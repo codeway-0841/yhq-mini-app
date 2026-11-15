@@ -72,6 +72,7 @@ const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
 const mascotStudioChunk = () => import('./features/mascot-studio/MascotStudioPage')
 const riveMvpChunk      = () => import('./features/rive-mvp/BrilliantMvpPage')
+const lessonTransitionHostChunk = () => import('./features/lessons/LessonTransitionHost')
 
 const TestPage        = lazy(testPageChunk)
 const TestlarPage     = lazy(testlarChunk)
@@ -86,6 +87,7 @@ const TopicsPage      = lazy(topicsChunk)
 const AdaptivePage    = lazy(adaptiveChunk)
 const OctagonPage    = lazy(octagonChunk)
 const AdminPage      = lazy(adminChunk)
+const LessonTransitionHost = lazy(lessonTransitionHostChunk)
 const LeaderboardPage = lazy(leaderboardChunk)
 const XatolarPage     = lazy(xatolarChunk)
 const StreakPage      = lazy(streakChunk)
@@ -391,7 +393,7 @@ export default function App() {
         <AchievementCelebrationModal />
         <AchievementDetailSheet />
         {/* Kontekstli sharh so'rovi — faqat boshqa modal yopilgach ko'rinadi */}
-        <ReviewPromptSheet />
+        <ReviewPromptSheet /><Suspense fallback={null}><LessonTransitionHost /></Suspense>
         <MobileAppShell>
           <Routes>
             <Route path="/"           element={<Dashboard />} />

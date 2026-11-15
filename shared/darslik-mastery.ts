@@ -196,7 +196,6 @@ export type DarslikCheckResult = {
   lessonXpEarned?: number
   xp?: number | null
   dailyStreak?: number
-  coinSaved?: boolean
   chargeSaved?: boolean
   chargeEarned?: boolean
   streakCharges?: number

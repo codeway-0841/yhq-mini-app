@@ -14,9 +14,8 @@
  */
 import { sql, type SQL } from 'drizzle-orm'
 import {
-  STREAK_CHARGE_EARN_EVERY,
   STREAK_CHARGE_MAX,
-  STREAK_SAVE_COST,
+  STREAK_CHARGE_UNITS_REQUIRED,
 } from '../../../shared/streak-save'
 
 interface Ctx {
@@ -50,29 +49,47 @@ export function prevChargesSql({ userId }: Ctx): SQL {
                        LIMIT 1), 0)`
 }
 
+/** Upsert'gacha bo'lgan global zaryad yig'ish progressi (0..2) */
+export function prevChargeProgressSql({ userId }: Ctx): SQL {
+  return sql`COALESCE((SELECT s.charge_progress FROM daily_streaks s
+                       WHERE s.user_id = ${userId}
+                       ORDER BY s.last_daily_date DESC NULLS LAST, s.updated_at DESC, s.streak DESC
+                       LIMIT 1), 0)`
+}
+
+/** Oxirgi marta zaryad olingan kalendar sana (NULL — hali olinmagan) */
+export function prevLastChargeEarnedDateSql({ userId }: Ctx): SQL {
+  return sql`(SELECT s.last_charge_earned_date FROM daily_streaks s
+              WHERE s.user_id = ${userId}
+              ORDER BY s.last_daily_date DESC NULLS LAST, s.updated_at DESC, s.streak DESC
+              LIMIT 1)`
+}
+
 /** Ketma-ket TO'LIQ o'tkazib yuborilgan kunlar soni (0 = kecha faol bo'lgan) */
 export function gapDaysSql(ctx: Ctx): SQL {
   return sql`((${ctx.date}::date - ${prevDateSql(ctx)}::date) - 1)`
 }
 
-/** Shu chaqiruvda 1 ta Streak Charge sarflanib seriya saqlanadimi? */
+/** Shu chaqiruvda `gapDays` ta Streak Charge sarflanib seriya saqlanadimi? */
 export function chargeSaveEligibleSql(ctx: Ctx): SQL {
+  const gap = gapDaysSql(ctx)
   return sql`COALESCE((
-    ${gapDaysSql(ctx)} = 1
-    AND ${prevChargesSql(ctx)} > 0
+    ${gap} >= 1
+    AND ${prevChargesSql(ctx)} >= ${gap}
   ), false)`
 }
 
-/**
- * Shu chaqiruvda zaryad yo'qligi sababli coin yechib streak saqlanadimi?
- * Har doim TRUE/FALSE (NULL emas).
- */
-export function coinSaveEligibleSql(ctx: Ctx): SQL {
-  const gap = gapDaysSql(ctx)
+/** Shu chaqiruvda +`unitDelta` zaryad birligi qo'shilishi mumkinmi (kuniga max 1 batareya, limit 2)? */
+export function canCreditChargeUnitSql(ctx: Ctx, unitDelta: SQL, chargeEligible: SQL): SQL {
+  const prevDate = prevDateSql(ctx)
+  const prevCharges = prevChargesSql(ctx)
+  const prevEarned = prevLastChargeEarnedDateSql(ctx)
   return sql`COALESCE((
-    ${gap} = 1
-    AND ${prevChargesSql(ctx)} <= 0
-    AND COALESCE((SELECT c.balance FROM user_coins c WHERE c.user_id = ${ctx.userId}), 0) >= ${STREAK_SAVE_COST}::int
+    (${unitDelta})::int > 0
+    AND NOT (${chargeEligible})
+    AND ((${prevDate}) IS NULL OR (${prevDate}) <= ${ctx.date})
+    AND (${prevCharges}) < ${STREAK_CHARGE_MAX}::int
+    AND ((${prevEarned}) IS NULL OR (${prevEarned}) < ${ctx.date})
   ), false)`
 }
 
@@ -83,9 +100,9 @@ export function lastDailyDateValueSql(ctx: Ctx): SQL {
 
 /**
  * `streak` ustunining yangi qiymati (INSERT ham, ON CONFLICT UPDATE ham bir xil global formulani ishlatadi).
- * Zaryad yoki coin bilan saqlanganda seriya SAQLANADI (o'smaydi!).
+ * Zaryad bilan saqlanganda seriya SAQLANADI (o'smaydi!).
  */
-export function streakValueSql(ctx: Ctx, chargeEligible: SQL, coinEligible: SQL): SQL {
+export function streakValueSql(ctx: Ctx, chargeEligible: SQL): SQL {
   const gap = gapDaysSql(ctx)
   const prevDate = prevDateSql(ctx)
   const prevStreak = prevStreakSql(ctx)
@@ -96,33 +113,85 @@ export function streakValueSql(ctx: Ctx, chargeEligible: SQL, coinEligible: SQL)
       THEN 1
     WHEN ${gap} = 0
       THEN (${prevStreak}) + 1
-    WHEN ${chargeEligible} OR ${coinEligible}
+    WHEN ${chargeEligible}
       THEN (${prevStreak})
     ELSE 1
   END`
 }
 
 /**
- * `charges` ustunining yangi qiymati (INSERT ham, ON CONFLICT UPDATE ham global snapshot'ga tayanadi).
- *  - Shu kunda qayta faollik (boshqa fanda bo'lsa ham) -> o'zgarmaydi
- *  - gapDays = 1 + charge > 0 -> 1 ta zaryad sarflanadi
- *  - gapDays = 0 va yangi streak 7 ga karrali -> +1 zaryad (max STREAK_CHARGE_MAX)
+ * `charges` ustunining yangi qiymati:
+ *  - gapDays >= 1 va charges >= gapDays -> gapDays ta zaryad sarflanadi
+ *  - Birlik sharti + kuniga max 1 ta batareya + progress == 3 -> +1 zaryad (max 2)
  *  - Qolgan barcha holat -> saqlanadi (zaryad eskirmaydi)
  */
-export function chargesValueSql(ctx: Ctx, chargeEligible: SQL): SQL {
+export function chargesValueSql(
+  ctx: Ctx,
+  chargeEligible: SQL,
+  unitDelta: SQL,
+): SQL {
   const gap = gapDaysSql(ctx)
   const prevDate = prevDateSql(ctx)
-  const prevStreak = prevStreakSql(ctx)
   const prevCharges = prevChargesSql(ctx)
+  const prevProgress = prevChargeProgressSql(ctx)
+  const creditUnit = canCreditChargeUnitSql(ctx, unitDelta, chargeEligible)
   return sql`CASE
-    WHEN (${prevDate}) >= ${ctx.date}
+    WHEN (${prevDate}) > ${ctx.date}
       THEN (${prevCharges})
     WHEN ${chargeEligible}
-      THEN GREATEST(0, (${prevCharges}) - 1)
-    WHEN ${gap} = 0
-      AND (((${prevStreak}) + 1) % ${STREAK_CHARGE_EARN_EVERY}::int = 0)
+      THEN GREATEST(0, (${prevCharges}) - GREATEST(1, (${gap})::int))
+    WHEN ${creditUnit}
+      AND ((${prevProgress}) + (${unitDelta})::int) >= ${STREAK_CHARGE_UNITS_REQUIRED}::int
       THEN LEAST(${STREAK_CHARGE_MAX}::int, (${prevCharges}) + 1)
     ELSE (${prevCharges})
+  END`
+}
+
+/** `charge_progress` ustunining yangi qiymati (0..2) */
+export function chargeProgressValueSql(
+  ctx: Ctx,
+  chargeEligible: SQL,
+  unitDelta: SQL,
+): SQL {
+  const prevDate = prevDateSql(ctx)
+  const prevCharges = prevChargesSql(ctx)
+  const prevProgress = prevChargeProgressSql(ctx)
+  const prevEarned = prevLastChargeEarnedDateSql(ctx)
+  const creditUnit = canCreditChargeUnitSql(ctx, unitDelta, chargeEligible)
+  return sql`CASE
+    WHEN (${prevDate}) > ${ctx.date}
+      THEN (${prevProgress})
+    WHEN ${chargeEligible}
+      THEN (${prevProgress})
+    WHEN (${prevCharges}) >= ${STREAK_CHARGE_MAX}::int
+      OR ((${prevEarned}) IS NOT NULL AND (${prevEarned}) >= ${ctx.date})
+      THEN 0
+    WHEN ${creditUnit}
+      AND ((${prevProgress}) + (${unitDelta})::int) >= ${STREAK_CHARGE_UNITS_REQUIRED}::int
+      THEN 0
+    WHEN ${creditUnit}
+      THEN (${prevProgress}) + (${unitDelta})::int
+    ELSE (${prevProgress})
+  END`
+}
+
+/** `last_charge_earned_date` ustunining yangi qiymati */
+export function lastChargeEarnedDateValueSql(
+  ctx: Ctx,
+  chargeEligible: SQL,
+  unitDelta: SQL,
+): SQL {
+  const prevDate = prevDateSql(ctx)
+  const prevProgress = prevChargeProgressSql(ctx)
+  const prevEarned = prevLastChargeEarnedDateSql(ctx)
+  const creditUnit = canCreditChargeUnitSql(ctx, unitDelta, chargeEligible)
+  return sql`CASE
+    WHEN (${prevDate}) > ${ctx.date}
+      THEN (${prevEarned})
+    WHEN ${creditUnit}
+      AND ((${prevProgress}) + (${unitDelta})::int) >= ${STREAK_CHARGE_UNITS_REQUIRED}::int
+      THEN ${ctx.date}
+    ELSE (${prevEarned})
   END`
 }
 
@@ -130,11 +199,9 @@ export function chargesValueSql(ctx: Ctx, chargeEligible: SQL): SQL {
  * `RETURNING` ichida shu chaqiruvda yangi zaryad berildimi?
  * `daily_streaks.charges` = upsert'dan KEYINGI qiymat; `prevChargesSql` = OLDINGI.
  */
-export function chargeEarnedReturningSql(ctx: Ctx, chargeEligible: SQL): SQL {
+export function chargeEarnedReturningSql(ctx: Ctx): SQL {
   return sql`COALESCE((
-    NOT (${chargeEligible})
-    AND ${gapDaysSql(ctx)} = 0
-    AND (daily_streaks.streak % ${STREAK_CHARGE_EARN_EVERY}::int = 0)
-    AND daily_streaks.charges > ${prevChargesSql(ctx)}
+    daily_streaks.charges > ${prevChargesSql(ctx)}
+    AND daily_streaks.last_charge_earned_date = ${ctx.date}
   ), false)`
 }

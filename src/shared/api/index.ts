@@ -849,7 +849,7 @@ export const api = {
     request<{ stats: AchievementStats }>('GET', `/achievements/${uid(userId)}`),
 
   touchDailyActivity: (userId: string, data: { subjectId: string }) =>
-    request<{ ok: true; dailyStreak: number; coinSaved?: boolean; streakCharges?: number }>('POST', `/daily/${uid(userId)}/activity`, data),
+    request<{ ok: true; dailyStreak: number; streakCharges?: number }>('POST', `/daily/${uid(userId)}/activity`, data),
 
   // ── Spaced Repetition (Adaptive Mode) Cards ────────────────────────────
   getCards: (userId: string, subjectId: string) =>
@@ -1529,8 +1529,10 @@ export interface ResultResponse {
   coinsEarned?: number
   /** #40: mint'dan keyingi server balansi (wrong javobda null) */
   coinBalance?: number | null
-  /** Streak coin-save: shu javob uzilgan seriyani 50 coin evaziga saqladi */
-  coinSaved?: boolean
+  /** Seriya Zaryadi (Brilliant 1:1): shu javob zaryad bilan saqlandi / +1 zaryad olindi */
+  chargeSaved?: boolean
+  chargeEarned?: boolean
+  streakCharges?: number
   /** Umrbod XP (server hisobi) va shu javobda berilgani */
   xp?: number | null
   xpEarned?: number

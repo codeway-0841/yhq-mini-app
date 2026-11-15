@@ -12,6 +12,7 @@ import { BrilliantCourseHome, type BrilliantCourseLevel } from './BrilliantCours
 import { BrilliantCourseMap } from './course-engine/BrilliantCourseMap'
 import { courseSectionKey } from './course-engine/course-progress'
 import type { CourseBlockMeta } from './course-engine/types'
+import { preloadBrilliantTransitionAssets } from './lesson-transition'
 
 interface SubjectBrilliantHomeProps {
   subjectId: string
@@ -30,6 +31,7 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
   const realUserId = useAppStore((s) => s.user?.id)
 
   const topics = useQuestionsStore((s) => s.topics)
+  const questionsLoaded = useQuestionsStore((s) => s.loaded)
   const storedSubjectId = useQuestionsStore((s) => s.subjectId)
   const loadTopics = useQuestionsStore((s) => s.loadTopics)
   const loadQuestions = useQuestionsStore((s) => s.load)
@@ -40,6 +42,7 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
   const wasMap = useRef(false)
 
   useEffect(() => {
+    preloadBrilliantTransitionAssets()
     let cancelled = false
     setSolvedByTopic({})
     setLoadingTopics(true)
@@ -48,8 +51,11 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
       .finally(() => {
         if (!cancelled) setLoadingTopics(false)
       })
+    if (!config.testSessionsV2Enabled && (!questionsLoaded || storedSubjectId !== subjectId)) {
+      void loadQuestions(lang, subjectId).catch(() => undefined)
+    }
     return () => { cancelled = true }
-  }, [subjectId, loadTopics])
+  }, [subjectId, lang, loadTopics, loadQuestions, questionsLoaded, storedSubjectId])
 
   useEffect(() => {
     if (!realUserId) {
@@ -102,7 +108,7 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
     for (const ch of definedChapters) grouped.set(ch.id, [])
 
     for (const topic of sorted) {
-      const chId = definedChapters.length > 0 ? getTopicChapterId(subjectId, topic.slug) : 'all'
+      const chId = definedChapters.length > 0 ? getTopicChapterId(subjectId, topic.slug, topic.nameUz) : 'all'
       const bucket = grouped.get(chId)
       if (bucket) bucket.push(topic)
       else leftover.push(topic)
@@ -208,7 +214,9 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
       })
       return
     }
-    await loadQuestions(lang, subjectId).catch(() => undefined)
+    if (!questionsLoaded || storedSubjectId !== subjectId) {
+      await loadQuestions(lang, subjectId).catch(() => undefined)
+    }
     navigate(`/test/${topic.id}`)
   }
 

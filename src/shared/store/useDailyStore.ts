@@ -47,10 +47,6 @@ interface DailyState {
   /** Bugungi faollik belgilangan fan: `${date}|${subjectId}` */
   activityKey: string | null
   /**
-   * Streak coin-save yuz berdi — server uzilgan seriyani coin evaziga saqladi.
-   */
-  coinSaved: boolean
-  /**
    * Bugungi birinchi faollikda seriya ochilganda Brilliant Streak + Streak Charge
    * modalini ko'rsatish uchun bir martalik qiymat (persist qilinmaydi).
    */
@@ -69,10 +65,8 @@ interface DailyState {
     date: string,
     subjectId: string,
     dailyStreak: number,
-    coinSaved?: boolean,
     meta?: DailyChargeMeta,
   ) => void
-  clearCoinSaved: () => void
   clearCelebration: () => void
   triggerStreakCelebration: (
     streak: number,
@@ -121,7 +115,6 @@ export const useDailyStore = create<DailyState>()(
       charges: {},
       extendedDates: {},
       activityKey: null,
-      coinSaved: false,
       celebrationStreak: null,
       celebrationMeta: null,
 
@@ -171,7 +164,6 @@ export const useDailyStore = create<DailyState>()(
               extendedDates: res.dailyStreak > 0
                 ? { ...(s.extendedDates ?? {}), [subjectId]: date }
                 : s.extendedDates,
-              coinSaved: res.coinSaved === true ? true : s.coinSaved,
             }
           })
         } catch { /* offline */ }
@@ -185,12 +177,11 @@ export const useDailyStore = create<DailyState>()(
         charges: {},
         extendedDates: {},
         activityKey: null,
-        coinSaved: false,
         celebrationStreak: null,
         celebrationMeta: null,
       }),
 
-      applyServerResult: (date, subjectId, dailyStreak, coinSaved, meta) => {
+      applyServerResult: (date, subjectId, dailyStreak, meta) => {
         const key = doneKeyOf(date, subjectId)
         set((s) => {
           const nextCharges = typeof meta?.streakCharges === 'number'
@@ -207,7 +198,6 @@ export const useDailyStore = create<DailyState>()(
             streaks: { ...s.streaks, [subjectId]: dailyStreak },
             charges: { ...s.charges, [subjectId]: nextCharges },
             extendedDates: { ...(s.extendedDates ?? {}), [subjectId]: date },
-            coinSaved: coinSaved === true ? true : s.coinSaved,
             celebrationStreak: shouldCelebrate ? dailyStreak : s.celebrationStreak,
             celebrationMeta: shouldCelebrate
               ? {
@@ -221,7 +211,6 @@ export const useDailyStore = create<DailyState>()(
         })
       },
 
-      clearCoinSaved: () => set({ coinSaved: false }),
       clearCelebration: () => set({ celebrationStreak: null, celebrationMeta: null }),
       triggerStreakCelebration: (streak, meta) => {
         if (streak <= 0) return
@@ -238,7 +227,7 @@ export const useDailyStore = create<DailyState>()(
     }),
     {
       name:    'yhq-daily',
-      version: 3,
+      version: 4,
       migrate: (state: unknown) => {
         const s = (state ?? {}) as { doneKey?: string | null; dailyStreak?: number; globalStreak?: number | null; globalCharges?: number | null; globalExtendedDate?: string | null; streaks?: Record<string, number>; charges?: Record<string, number>; extendedDates?: Record<string, string> }
         const streaks = s.streaks ?? {}
@@ -256,7 +245,6 @@ export const useDailyStore = create<DailyState>()(
           charges,
           extendedDates,
           activityKey: null,
-          coinSaved: false,
           celebrationStreak: null,
           celebrationMeta: null,
         }

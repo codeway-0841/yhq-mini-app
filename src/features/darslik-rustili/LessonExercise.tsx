@@ -99,8 +99,8 @@ export default function LessonExercise({
                     : isSelected && outcome === 'revealed'
                     ? 'bg-psurface text-pfg ring-2 ring-pmuted'
                     : isSelected
-                    ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pfg ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)]'
-                    : 'bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface',
+                    ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pfg ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)] active:shadow-[0_1px_0_var(--p-primary)]'
+                    : 'bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] active:shadow-[0_1px_0_var(--p-line)] hover:bg-psurface',
                 )}
               >
                 <span
@@ -125,11 +125,13 @@ export default function LessonExercise({
 
   if (exercise.kind === 'input') {
     const text = typeof value === 'string' ? value : ''
+    const isNumericPrompt = /(?:запиши\s+число|сколько\s+(?:звуков|букв|слогов)|число\s+звуков|raqam\s+yoz)/i.test(exercise.prompt)
     return (
       <div className="flex flex-col gap-2.5 rounded-3xl bg-pcard p-3.5 shadow-xs">
         <div className="relative">
           <input
             type="text"
+            inputMode={isNumericPrompt ? 'numeric' : 'text'}
             disabled={locked}
             value={text}
             onChange={(event) => onChange(event.target.value)}
@@ -145,7 +147,7 @@ export default function LessonExercise({
             className="w-full rounded-2xl bg-psurface px-4 py-3.5 text-[16px] font-semibold text-pfg outline-none ring-2 ring-transparent transition-all placeholder:font-normal placeholder:text-psubtle focus:bg-pcanvas focus:ring-pprimary disabled:opacity-70"
           />
         </div>
-        {!locked && (
+        {!locked && !isNumericPrompt && (
           <div className="flex flex-wrap items-center justify-between gap-2 pt-0.5" aria-hidden="true">
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="mr-1 text-[11px] font-bold uppercase tracking-wider text-psubtle">

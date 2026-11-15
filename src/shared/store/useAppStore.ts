@@ -31,13 +31,15 @@ function syncAvatarState(localAvatar: string | null, user: ApiUser): string | nu
 
 export interface ApplyAnswerInput {
   questionId:   number
-  correct:      boolean
-  subjectId:    string
-  date:         string
-  dailyStreak:  number | null
-  coinSaved?:   boolean
-  coinBalance?: number | null
-  xp?:          number | null
+  correct:       boolean
+  subjectId:     string
+  date:          string
+  dailyStreak:   number | null
+  chargeSaved?:  boolean
+  chargeEarned?: boolean
+  streakCharges?: number
+  coinBalance?:  number | null
+  xp?:           number | null
 }
 
 export interface ApplySessionAnswerInput {
@@ -45,7 +47,6 @@ export interface ApplySessionAnswerInput {
   subjectId: string
   date: string
   dailyStreak: number | null
-  coinSaved?: boolean
   chargeSaved?: boolean
   chargeEarned?: boolean
   streakCharges?: number
@@ -140,7 +141,10 @@ export const useAppStore = create<AppState>()(
   persist(
     (set, get) => {
       const applyAnswer = (input: ApplyAnswerInput) => {
-        const { questionId, correct, subjectId, date, dailyStreak, coinSaved, coinBalance, xp } = input
+        const {
+          questionId, correct, subjectId, date, dailyStreak,
+          chargeSaved, chargeEarned, streakCharges, coinBalance, xp,
+        } = input
         const wKey = questionKey(subjectId, questionId)
         const wasWrong = correct && (get().wrongByTicket[wKey] ?? 0) > 0
 
@@ -166,7 +170,11 @@ export const useAppStore = create<AppState>()(
         })
 
         if (dailyStreak !== null) {
-          useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak, coinSaved)
+          useDailyStore.getState().applyServerResult(date, subjectId, dailyStreak, {
+            chargeSaved,
+            chargeEarned,
+            streakCharges,
+          })
         }
 
         const userId = get().user?.id
@@ -217,7 +225,7 @@ export const useAppStore = create<AppState>()(
           }))
           if (input.dailyStreak !== null) {
             useDailyStore.getState().applyServerResult(
-              input.date, input.subjectId, input.dailyStreak, input.coinSaved,
+              input.date, input.subjectId, input.dailyStreak,
               {
                 chargeSaved: input.chargeSaved,
                 chargeEarned: input.chargeEarned,
@@ -285,7 +293,9 @@ export const useAppStore = create<AppState>()(
                   subjectId,
                   date: todayStr(),
                   dailyStreak: serverData.dailyStreak,
-                  coinSaved: serverData.coinSaved,
+                  chargeSaved: serverData.chargeSaved,
+                  chargeEarned: serverData.chargeEarned,
+                  streakCharges: serverData.streakCharges,
                   ...extras,
                 })
               } else if (extras.coinBalance !== undefined || extras.xp !== undefined) {

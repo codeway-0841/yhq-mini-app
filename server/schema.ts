@@ -681,8 +681,12 @@ export const dailyStreaks = pgTable('daily_streaks', {
   subjectId:     text('subject_id').notNull(),
   /** Shu fan bo'yicha ketma-ket bajarilgan kunlar soni */
   streak:        integer('streak').default(0).notNull(),
-  /** Seriya himoya zaryadlari (0..2) — kun o'tkazilganda 1 tasi avtomatik saqlaydi */
-  charges:       integer('charges').default(0).notNull(),
+  /** Seriya himoya zaryadlari (0..2) — kun o'tkazilganda avtomatik saqlaydi, hech qachon kuymaydi */
+  charges:              integer('charges').default(0).notNull(),
+  /** Navbatdagi zaryadgacha tugatilgan dars/test sessiyalar soni (0..2, 3 bo'lganda +1 zaryad) */
+  chargeProgress:       integer('charge_progress').default(0).notNull(),
+  /** Oxirgi zaryad olingan sana ('YYYY-MM-DD') — kuniga ko'pi bilan 1 ta zaryad beriladi */
+  lastChargeEarnedDate: text('last_charge_earned_date'),
   /** Shu fan bo'yicha oxirgi kunlik faollik sanasi — 'YYYY-MM-DD' */
   lastDailyDate: text('last_daily_date'),
   updatedAt:     timestamp('updated_at').defaultNow().$onUpdateFn(() => new Date()).notNull(),
@@ -690,6 +694,8 @@ export const dailyStreaks = pgTable('daily_streaks', {
   unique('uq_daily_streak').on(t.userId, t.subjectId),
   check('chk_daily_streak_nonnegative', sql`${t.streak} >= 0`),
   check('chk_daily_streak_charges_range', sql`${t.charges} >= 0 AND ${t.charges} <= 2`),
+  check('chk_daily_streak_charge_progress_range', sql`${t.chargeProgress} >= 0 AND ${t.chargeProgress} <= 2`),
+  check('chk_daily_streak_earned_date_fmt', sql`${t.lastChargeEarnedDate} IS NULL OR ${t.lastChargeEarnedDate} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
   check('chk_daily_streak_date_fmt', sql`${t.lastDailyDate} IS NULL OR ${t.lastDailyDate} ~ '^\\d{4}-\\d{2}-\\d{2}$'`),
 ])
 

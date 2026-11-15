@@ -15,6 +15,8 @@ vi.mock('../../../src/features/lessons', () => ({
   DarslikTopPills: () => <div className="rus-home-status" />,
   getBrilliantTheme: () => ({ accent: '#3557ff', dotColor: '#3557ff', buttonBg: '#3557ff', buttonText: '#fff', buttonShadow: '#223', checkBg: '#839cff' }),
   lessonLaunchOrigin: () => ({ x: 0, y: 0, size: 44, sink: 36 }),
+  preloadBrilliantTransitionAssets: () => {},
+  startLessonTransition: () => false,
   LessonLaunch: () => null,
 }))
 

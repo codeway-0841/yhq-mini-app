@@ -184,7 +184,7 @@ beforeEach(() => {
     settings: { ...useAppStore.getState().settings, language: 'uz' },
     xp: 100,
   })
-  useDailyStore.setState({ streaks: {}, activityKey: null, coinSaved: false })
+  useDailyStore.setState({ streaks: {}, activityKey: null })
 
   vi.spyOn(api, 'getDarslikCheck').mockResolvedValue(CHECK)
   vi.spyOn(api, 'getAchievements').mockRejectedValue(new Error('achievements skipped in unit test'))

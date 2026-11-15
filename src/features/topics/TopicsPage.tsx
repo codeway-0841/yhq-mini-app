@@ -25,6 +25,7 @@ import { goBack } from '../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller } from '../../shared/lib/page-scroll'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { Check, Lock, Star } from 'lucide-react'
+import { getBrilliantTheme, lessonLaunchOrigin, preloadBrilliantTransitionAssets, startLessonTransition } from '../lessons'
 import { getTopicChapterId, sortTopicsForTickets } from '../tickets'
 import {
   YHQ_BRILLIANT_PATHS,
@@ -48,6 +49,17 @@ interface LessonMeta {
 
 type LessonState = 'done' | 'active' | 'locked'
 
+function buildCardOrigin(triggerEl?: HTMLElement | null) {
+  if (!triggerEl) return undefined
+  const origin = lessonLaunchOrigin(triggerEl)
+  const rect = triggerEl.getBoundingClientRect()
+  if (rect.width > 0 && rect.height > 0) {
+    origin.x = rect.left + Math.min(48, rect.width / 2)
+    origin.y = rect.top + rect.height / 2
+  }
+  return origin
+}
+
 interface TopicCardItem {
   key: string | number
   gradeLabel: string
@@ -58,7 +70,7 @@ interface TopicCardItem {
   progressPct: number
   state: LessonState
   isNew?: boolean
-  onClick: () => void
+  onClick: (triggerEl?: HTMLElement | null) => void
 }
 
 interface PathSectionData {
@@ -587,7 +599,7 @@ function BrilliantCourseSection({
                 <button
                   type="button"
                   disabled={isLocked}
-                  onClick={() => !isLocked && item.onClick()}
+                  onClick={(event) => !isLocked && item.onClick(event.currentTarget)}
                   className="br-topic-card"
                 >
                   {/* Yashil NEW belgisi (o'ng burchakda) */}
@@ -677,8 +689,13 @@ function YhqTopics() {
   const user = useAppStore((s) => s.user)
   const tt = useT(settings.language)
   const lang = settings.language
+  const noAnimation = settings.noAnimation
   const uid = user?.id ?? '0'
   const lessonsProg = useLessonsStore((s) => s.byUser[uid])
+
+  useEffect(() => {
+    preloadBrilliantTransitionAssets()
+  }, [])
 
   const visibleByMod = useMemo(() => {
     const perMod: Record<number, LessonMeta[]> = {}
@@ -697,9 +714,9 @@ function YhqTopics() {
   }, [lang])
 
   const startLesson = useCallback(
-    (modId: number, l: LessonMeta) => {
+    (modId: number, l: LessonMeta, triggerEl?: HTMLElement | null) => {
       const lessonTitle = lang === 'ru' ? `Урок ${l.idx + 1}: ${l.title}` : `${l.idx + 1}-dars: ${l.title}`
-      navigate(
+      const goTest = () => navigate(
         '/test/1',
         config.testSessionsV2Enabled
           ? {
@@ -713,8 +730,21 @@ function YhqTopics() {
               state: { questionIds: l.ids, title: lessonTitle },
             },
       )
+      const reduced = noAnimation || (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches)
+      const modTheme = getBrilliantTheme(((modId - 1) % 8) + 1)
+      const origin = buildCardOrigin(triggerEl)
+      if (!reduced && startLessonTransition({
+        kind: 'lesson',
+        origin,
+        lang,
+        accent: modTheme.accent,
+        onReveal: goTest,
+      })) {
+        return
+      }
+      goTest()
     },
-    [lang, navigate],
+    [lang, navigate, noAnimation],
   )
 
   const sections = useMemo<PathSectionData[]>(() => {
@@ -747,7 +777,7 @@ function YhqTopics() {
           progressPct: isDone ? 100 : 0,
           state: st,
           isNew: i === 0 && pMeta.isNew,
-          onClick: () => startLesson(mod.id, l),
+          onClick: (triggerEl) => startLesson(mod.id, l, triggerEl),
         }
       })
 
@@ -839,10 +869,34 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
   const retry = useQuestionsStore((s) => s.retry)
   const tt = useT(settings.language)
   const lang = settings.language
+  const noAnimation = settings.noAnimation
   const userId = useAppStore((s) => s.user?.id)
   const darslikMastery = useDarslikMastery()
   const litByUser = useLessonsStore((s) => s.byUser[userId ?? 'guest'])
   const readByUser = useLessonsStore((s) => s.readByUser[userId ?? '0'] ?? s.readByUser.guest)
+
+  useEffect(() => {
+    preloadBrilliantTransitionAssets()
+  }, [])
+
+  const launchCourseDestination = useCallback(
+    (to: string, blockNumber: number, triggerEl?: HTMLElement | null) => {
+      const reduced = noAnimation || (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches)
+      const theme = getBrilliantTheme(((blockNumber - 1) % 8) + 1)
+      const origin = buildCardOrigin(triggerEl)
+      if (!reduced && startLessonTransition({
+        kind: 'lesson',
+        origin,
+        lang,
+        accent: theme.accent,
+        onReveal: () => navigate(to),
+      })) {
+        return
+      }
+      navigate(to)
+    },
+    [lang, navigate, noAnimation],
+  )
 
   const isV2 = config.testSessionsV2Enabled
   const [topicsFailed, setTopicsFailed] = useState(false)
@@ -904,7 +958,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             progressPct: isPassed ? 100 : isRead ? 35 : 0,
             state: isPassed ? 'done' : 'active',
             isNew: itemIdx === 0 && meta.isNew,
-            onClick: () => navigate(`/darslik/rus-tili?block=${block.id}&section=${itemIdx}`),
+            onClick: (triggerEl) => launchCourseDestination(`/darslik/rus-tili?block=${block.id}&section=${itemIdx}`, block.id, triggerEl),
           }
         })
 
@@ -940,7 +994,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             progressPct: isEraDone ? 100 : 0,
             state: isEraDone ? 'done' : 'active',
             isNew: itemIdx === 0 && meta.isNew,
-            onClick: () => navigate(`/darslik/rus-adabiyot?block=${block.id}&section=${itemIdx}`),
+            onClick: (triggerEl) => launchCourseDestination(`/darslik/rus-adabiyot?block=${block.id}&section=${itemIdx}`, block.id, triggerEl),
           }
         })
 
@@ -955,7 +1009,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
     }
 
     return []
-  }, [subjectId, lang, darslikMastery.passed, litByUser, readByUser, navigate])
+  }, [subjectId, lang, darslikMastery.passed, litByUser, readByUser, launchCourseDestination])
 
   // 2. Amaliy testlar / umumiy fan mavzulari
   const rows = useMemo(() => {
@@ -1048,7 +1102,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
             progressPct: pct,
             state: st,
             isNew: itemIdx === 0 && meta.isNew,
-            onClick: () => navigate(`/darslik?block=${chIdx + 1}&section=${itemIdx}`),
+            onClick: (triggerEl) => launchCourseDestination(`/darslik?block=${chIdx + 1}&section=${itemIdx}`, chIdx + 1, triggerEl),
           }
         })
 
@@ -1061,7 +1115,7 @@ function SubjectTopics({ subjectId }: { subjectId: string }) {
         }
       })
       .filter((s): s is PathSectionData => s !== null)
-  }, [rows, subjectId, lang, navigate])
+  }, [rows, subjectId, lang, launchCourseDestination])
 
   const allSections = useMemo(
     () => [...curriculumSections, ...practiceSections],

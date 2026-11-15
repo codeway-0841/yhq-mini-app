@@ -6,6 +6,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme } from './BrilliantLevelsCarousel'
 import { DarslikTopPills } from './DarslikTopPills'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
+import { preloadBrilliantTransitionAssets, startLessonTransition } from './lesson-transition'
 import './learning-path.css'
 import './brilliant-course-home.css'
 
@@ -89,6 +90,7 @@ export function BrilliantCourseHome({
 
   // Subject almashganda selected carousel indeksini va sahifa scrollini reset qilamiz
   useEffect(() => {
+    preloadBrilliantTransitionAssets()
     setSelected(null)
     setLaunch(null)
     scrollPageToTop()
@@ -178,6 +180,17 @@ export function BrilliantCourseHome({
     if (!source.querySelector('.learning-mascot')) {
       origin.x = rect.left + Math.min(28, rect.width / 2)
       origin.y = rect.top + rect.height / 2
+    }
+    if (
+      startLessonTransition({
+        kind: 'lesson',
+        origin,
+        lang,
+        accent: theme.accent,
+        onReveal: () => onLaunchLevel(level, activeItem),
+      })
+    ) {
+      return
     }
     setLaunch({ level, activeItem, origin })
   }

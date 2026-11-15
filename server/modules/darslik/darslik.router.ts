@@ -218,7 +218,6 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
   let lessonXpEarned = 0
   let xp: number | null = null
   let dailyStreak: number | undefined
-  let coinSaved: boolean | undefined
   let chargeSaved: boolean | undefined
   let chargeEarned: boolean | undefined
   let streakCharges: number | undefined
@@ -241,9 +240,10 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
         DARSLIK_SUBJECT_ID,
         result.total,
         result.correct,
+        undefined,
+        !alreadyPassed,
       )
       dailyStreak = daily.dailyStreak
-      coinSaved = daily.coinSaved
       chargeSaved = daily.chargeSaved
       chargeEarned = daily.chargeEarned
       streakCharges = daily.streakCharges
@@ -258,7 +258,6 @@ router.post('/darslik/:topicId/submit', dbRateLimit({ maxPerMinute: 20, bucket: 
     lessonXpEarned,
     xp,
     dailyStreak,
-    coinSaved,
     chargeSaved,
     chargeEarned,
     streakCharges,

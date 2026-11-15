@@ -102,6 +102,20 @@ export async function loadBrilliantRiveRuntime() {
   return mod
 }
 
+export function preloadBrilliantEndstateAssets(
+  kinds: readonly BrilliantEndstateKind[] = ['lesson-loader', 'warm-up'],
+): void {
+  if (typeof window === 'undefined' || typeof fetch !== 'function') return
+  void loadBrilliantRiveRuntime().catch(() => undefined)
+  const seen = new Set<string>()
+  for (const kind of kinds) {
+    const file = KIND[kind]?.file
+    if (!file || seen.has(file)) continue
+    seen.add(file)
+    void getBrilliantBuffer(file).catch(() => undefined)
+  }
+}
+
 export interface BrilliantEndstateRiveProps {
   kind: BrilliantEndstateKind
   label: string
@@ -208,6 +222,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const nodeTriggerSeqRef = useRef(nodeTriggerSeq)
   const lastFiredTriggerRef = useRef<{ name: string; seq: number } | null>(null)
   const wasIcpHiddenRef = useRef(false)
+  const fitRef = useRef(fit)
   const onEventRef = useRef(onRiveEvent)
   const [failed, setFailed] = useState(false)
   darkRef.current = dark
@@ -231,6 +246,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   nodePremiumRef.current = nodePremium
   nodeTriggerRef.current = nodeTrigger
   nodeTriggerSeqRef.current = nodeTriggerSeq
+  fitRef.current = fit
   onEventRef.current = onRiveEvent
 
   useEffect(() => {
@@ -255,7 +271,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         }
       }
       const activeFit =
-        (fit ?? ('defaultFit' in cfg ? (cfg as { defaultFit?: 'contain' | 'cover' }).defaultFit : 'contain')) === 'cover'
+        (fitRef.current ?? ('defaultFit' in cfg ? (cfg as { defaultFit?: 'contain' | 'cover' }).defaultFit : 'contain')) === 'cover'
           ? Fit.Cover
           : Fit.Contain
       rive = new RiveCtor({

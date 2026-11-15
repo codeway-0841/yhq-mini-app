@@ -1,6 +1,6 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronDown, ChevronLeft, Lock, RefreshCw, X, XCircle,
+  CheckCircle2, ChevronDown, ChevronLeft, Lock, RefreshCw, X, XCircle, Zap,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import ModalShell from '../../shared/components/ModalShell'
@@ -291,7 +291,6 @@ export default function LessonRunner({
             today,
             RUSSIAN_SUBJECT_ID,
             graded.dailyStreak,
-            graded.coinSaved === true,
             {
               suppressCelebration: true,
               chargeSaved: graded.chargeSaved,
@@ -456,7 +455,12 @@ export default function LessonRunner({
       </div>
       <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
       {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
-      <span className="rus-lesson-dots" aria-hidden="true"><i /><i /><i /></span>
+      <span className="rus-lesson-dots" aria-hidden="true">
+        {[1, 2, 3].map((step) => (
+          <i key={step} data-active={combo >= step ? 'true' : undefined} />
+        ))}
+      </span>
+      <Zap size={16} strokeWidth={2.2} className="rus-lesson-lightning" data-hot={combo >= 2 ? 'true' : undefined} aria-hidden="true" />
     </header>
   ) : (
     <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
@@ -774,19 +778,21 @@ export default function LessonRunner({
               </p>
             )}
 
-            <h3 id="lesson-runner-title" ref={headingRef} tabIndex={-1} className="mb-7 mt-8 text-[20px] font-semibold leading-relaxed text-pfg focus-visible:outline-none sm:text-[22px]">{current.prompt}</h3>
+            <div key={current.id} className="rus-lesson-question-enter">
+              <h3 id="lesson-runner-title" ref={headingRef} tabIndex={-1} className="mb-7 mt-8 text-[20px] font-semibold leading-relaxed text-pfg focus-visible:outline-none sm:text-[22px]">{current.prompt}</h3>
 
-            <div>
-              <LessonExercise
-                key={current.id}
-                exercise={current}
-                value={revealed && feedback && (current.kind === 'mcq' || current.kind === 'listening') ? String(current.options.indexOf(feedback.correctAnswer)) : answers[current.id] ?? answerOrEmpty(current)}
-                outcome={phase === 'feedback' ? (revealed ? 'revealed' : feedback?.correct ? 'correct' : 'wrong') : undefined}
-                onChange={setAnswer}
-                disabled={phase === 'feedback' || checking}
-                onSpeak={playAudio}
-                speaking={speaking}
-              />
+              <div>
+                <LessonExercise
+                  key={current.id}
+                  exercise={current}
+                  value={revealed && feedback && (current.kind === 'mcq' || current.kind === 'listening') ? String(current.options.indexOf(feedback.correctAnswer)) : answers[current.id] ?? answerOrEmpty(current)}
+                  outcome={phase === 'feedback' ? (revealed ? 'revealed' : feedback?.correct ? 'correct' : 'wrong') : undefined}
+                  onChange={setAnswer}
+                  disabled={phase === 'feedback' || checking}
+                  onSpeak={playAudio}
+                  speaking={speaking}
+                />
+              </div>
             </div>
 
             {answerError && (
@@ -806,7 +812,7 @@ export default function LessonRunner({
           data-state={phase !== 'feedback' || !feedback ? 'exercise' : revealed ? 'revealed' : feedback.correct ? 'correct' : 'wrong'}>
           <div className="relative mx-auto w-full max-w-[460px]">
             {phase === 'feedback' && feedback && (
-              <div ref={feedbackRef} data-testid="lesson-feedback" data-correct={feedback.correct ? 'true' : 'false'} data-revealed={revealed ? 'true' : 'false'} role="status" aria-live="polite" className="mb-5 flex items-center justify-between gap-3">
+              <div ref={feedbackRef} data-testid="lesson-feedback" data-correct={feedback.correct ? 'true' : 'false'} data-revealed={revealed ? 'true' : 'false'} role="status" aria-live="polite" className="rus-feedback-pop mb-5 flex items-center justify-between gap-3">
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <p className="text-[20px] font-extrabold leading-tight text-pfg">{revealed ? tt('rusDarslikAnswerShown') : feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}</p>

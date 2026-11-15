@@ -67,39 +67,41 @@ describe('Daily Streak Temporal State Machine & Freeze Protection', () => {
       expect(calcNextStreak('2026-08-14', '2026-08-16', 10, false)).toBe(1)
     })
 
-    it('preserves (does not increment) streak for Premium/charge users on 1-day miss', () => {
+    it('preserves (does not increment) streak for charge users on 1-day miss', () => {
       // Missed 1 day (15th) with protection -> streak preserved at 10
-      expect(calcNextStreak('2026-08-14', '2026-08-16', 10, true)).toBe(10)
+      expect(calcNextStreak('2026-08-14', '2026-08-16', 10, 1)).toBe(10)
     })
 
-    it('resets streak to 1 for Premium users if 2 or more days are missed', () => {
-      // Premium user: last was 13th, today is 16th (missed 14th and 15th)
-      expect(calcNextStreak('2026-08-13', '2026-08-16', 20, true)).toBe(1)
+    it('preserves streak on 2 consecutive missed days when 2 charges are held, resets if only 1 charge', () => {
+      // Last active 13th, today is 16th (missed 14th and 15th -> gapDays=2)
+      expect(calcNextStreak('2026-08-13', '2026-08-16', 20, 2)).toBe(20)
+      expect(calcNextStreak('2026-08-13', '2026-08-16', 20, 1)).toBe(1)
     })
   })
 
   describe('effectiveStreak — Read-Time Streak Display Logic', () => {
     it('returns 0 when there is no recorded streak', () => {
-      expect(effectiveStreak(null, '2026-08-16', 0, false)).toBe(0)
+      expect(effectiveStreak(null, '2026-08-16', 0, 0)).toBe(0)
     })
 
     it('returns current streak if user was active today or yesterday', () => {
-      expect(effectiveStreak('2026-08-16', '2026-08-16', 5, false)).toBe(5)
-      expect(effectiveStreak('2026-08-15', '2026-08-16', 5, false)).toBe(5)
+      expect(effectiveStreak('2026-08-16', '2026-08-16', 5, 0)).toBe(5)
+      expect(effectiveStreak('2026-08-15', '2026-08-16', 5, 0)).toBe(5)
     })
 
-    it('returns 0 for Free users if last active was 2+ days ago', () => {
-      expect(effectiveStreak('2026-08-14', '2026-08-16', 12, false)).toBe(0)
-      expect(effectiveStreak('2026-08-01', '2026-08-16', 12, false)).toBe(0)
+    it('returns 0 when 0 charges and last active was 2+ days ago', () => {
+      expect(effectiveStreak('2026-08-14', '2026-08-16', 12, 0)).toBe(0)
+      expect(effectiveStreak('2026-08-01', '2026-08-16', 12, 0)).toBe(0)
     })
 
-    it('maintains frozen streak on read-time for Premium users if exactly 1 day missed', () => {
-      // Premium user viewing app today (16th) having missed yesterday (15th)
-      expect(effectiveStreak('2026-08-14', '2026-08-16', 14, true)).toBe(14)
+    it('maintains frozen streak on read-time when charges cover missed days', () => {
+      expect(effectiveStreak('2026-08-14', '2026-08-16', 14, 1)).toBe(14)
+      expect(effectiveStreak('2026-08-13', '2026-08-16', 14, 2)).toBe(14)
     })
 
-    it('returns 0 for Premium users if 2+ days missed', () => {
-      expect(effectiveStreak('2026-08-13', '2026-08-16', 14, true)).toBe(0)
+    it('returns 0 if missed days exceed held charges', () => {
+      expect(effectiveStreak('2026-08-13', '2026-08-16', 14, 1)).toBe(0)
+      expect(effectiveStreak('2026-08-12', '2026-08-16', 14, 2)).toBe(0)
     })
   })
 

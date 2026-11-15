@@ -125,7 +125,7 @@ export function CourseMapNodeArt({
           setInput(inputs, 'select', s.selected)
           setInput(inputs, 'hover', false)
           setInput(inputs, 'cursor_down', false)
-          setInput(inputs, 'start_idle', false)
+          setInput(inputs, 'start_idle', s.current && !s.completed && !s.locked && !s.entering && !s.disappearing)
           resize()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
@@ -195,6 +195,9 @@ export function CourseMapNodeArt({
         } else if (!entering && wasEnteringRef.current && current && !completed && !locked) {
           inputs.find((input) => input.name === 'koji_exit_lesson')?.fire()
           wasAppearedRef.current = true
+        } else if (!entering && wasEnteringRef.current && (completed || locked)) {
+          inputs.find((input) => input.name === 'koji_disappear')?.fire()
+          wasAppearedRef.current = false
         } else if (current && !completed && !locked && !disappearing) {
           if (!wasAppearedRef.current) {
             inputs.find((input) => input.name === 'koji_appear')?.fire()

@@ -269,8 +269,8 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
             bg: 'bg-[rgb(var(--p-success-rgb)/0.12)]',
             title: isRu ? 'Автоматическая защита' : 'Avtomatik himoya',
             desc: isRu
-              ? 'Если вы пропустите один день занятий, заряд серии сработает автоматически и сохранит вашу текущую серию.'
-              : 'Agar biror kun mashg‘ulotni o‘tkazib yuborsangiz, seriya zaryadi avtomatik ishga tushadi va seriyangizni saqlab qoladi.',
+              ? 'Если вы пропустите день занятий, заряд серии сработает автоматически и сохранит вашу текущую серию (2 заряда защищают до 2 дней подряд).'
+              : 'Agar dars kunini o‘tkazib yuborsangiz, seriya zaryadi avtomatik ishga tushadi va seriyangizni saqlab qoladi (2 ta zaryad 2 kungacha ketma-ket himoya qiladi).',
           },
           {
             icon: Zap,
@@ -278,8 +278,8 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
             bg: 'bg-[rgb(var(--p-warning-rgb)/0.12)]',
             title: isRu ? 'Как получить заряд' : 'Qanday qo‘lga kiritiladi',
             desc: isRu
-              ? 'Заряды серии выдаются за стабильное выполнение ежедневных целей и достижение новых рубежей.'
-              : 'Seriya zaryadlari kunlik maqsadlarni muntazam bajarish va yangi seriya bosqichlariga yetganda beriladi.',
+              ? 'За каждые 3 завершённых урока или полных теста (либо 20 ответов за день) начисляется +1 заряд (макс. 1 в день).'
+              : 'Har 3 ta tugallangan dars/test sessiyasi (yoki kuniga 20 ta test savoli) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta).',
           },
           {
             icon: CalendarCheck2,
@@ -360,8 +360,8 @@ export const BrilliantStreakModal = memo(function BrilliantStreakModal({
                       ? `Пропущенный день закрыт зарядом — серия сохранена (${charges ?? 0}/2 заряда осталось).`
                       : `O'tkazib yuborilgan kun zaryad bilan yopildi — seriyangiz saqlandi (${charges ?? 0}/2 zaryad qoldi).`)
                   : (isRu
-                      ? 'С зарядом серии вы можете пропустить день обучения, не потеряв свою серию.'
-                      : 'Seriya zaryadi bilan bir kunlik mashg‘ulotni o‘tkazib yuborsangiz ham seriyangiz yo‘qolmaydi.')
+                      ? 'Каждый заряд серии сохраняет вашу серию при пропуске дня обучения (макс. 2 заряда — до 2 дней подряд).'
+                      : 'Har bir seriya zaryadi mashg‘ulotni o‘tkazib yuborgan kuningizda seriyangizni saqlab qoladi (maks. 2 ta zaryad — 2 kungacha ketma-ket).')
               }
               dark={dark}
               nonce={riveNonce}

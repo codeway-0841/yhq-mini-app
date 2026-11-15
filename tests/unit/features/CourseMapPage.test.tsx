@@ -194,7 +194,7 @@ describe('CourseMapPage — kurs xaritasi', () => {
     await waitFor(() => expect(document.querySelector('[data-testid="topic-check"]')).not.toBeNull(), { timeout: 4000 })
   })
 
-  it('Boshlash tugmasi 1000ms to‘liq kirish animatsiyasini kutadi va spin ko‘rsatadi', async () => {
+  it('Boshlash tugmasi 520ms to‘liq kirish animatsiyasini kutadi va spin ko‘rsatadi', async () => {
     render(<CourseMapPage initialBlockId={1} />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
@@ -207,10 +207,10 @@ describe('CourseMapPage — kurs xaritasi', () => {
       expect(startBtn).toHaveAttribute('aria-busy', 'true')
       expect(startBtn.querySelector('.cmap-start-spinner')).not.toBeNull()
 
-      await vi.advanceTimersByTimeAsync(900)
+      await vi.advanceTimersByTimeAsync(480)
       expect(screen.queryByRole('dialog', { name: 'Dars ochilmoqda' })).toBeNull()
 
-      await vi.advanceTimersByTimeAsync(150)
+      await vi.advanceTimersByTimeAsync(60)
       expect(screen.getByRole('dialog', { name: 'Dars ochilmoqda' })).toBeInTheDocument()
       expect(startBtn).not.toBeDisabled()
     } finally {
@@ -218,7 +218,7 @@ describe('CourseMapPage — kurs xaritasi', () => {
     }
   })
 
-  it('Mashqni boshlash 850ms da ochiladi va joriy tugunni yopiq holatda ushlab turadi', async () => {
+  it('Mashqni boshlash 420ms da ochiladi va joriy tugunni yopiq holatda ushlab turadi', async () => {
     vi.mocked(api.getDarslikProgress).mockResolvedValue({ passed: ['1:0'] })
     render(<CourseMapPage initialBlockId={1} />)
     await waitFor(() => expect(nodesOf(1)[1]).toHaveAttribute('aria-current', 'step'))
@@ -233,10 +233,10 @@ describe('CourseMapPage — kurs xaritasi', () => {
       fireEvent.click(practiceBtn)
 
       expect(practiceBtn).toBeDisabled()
-      await vi.advanceTimersByTimeAsync(800)
+      await vi.advanceTimersByTimeAsync(380)
       expect(screen.queryByText('Mashq yuklanmoqda…')).toBeNull()
 
-      await vi.advanceTimersByTimeAsync(100)
+      await vi.advanceTimersByTimeAsync(60)
       expect(screen.getByText('Mashq yuklanmoqda…')).toBeInTheDocument()
 
       act(() => {

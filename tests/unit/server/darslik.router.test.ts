@@ -88,7 +88,6 @@ beforeEach(() => {
   repo.passWithXp.mockReset().mockResolvedValue({ passedNow: true, xp: 190, xpEarned: 90, lessonXpEarned: 90 })
   daily.touchActivity.mockReset().mockResolvedValue({
     dailyStreak: 4,
-    coinSaved: false,
     chargeSaved: false,
     chargeEarned: false,
     streakCharges: 0,
@@ -166,7 +165,7 @@ describe('darslik router — curated pilot darsi', () => {
       topicId: '1:0',
       xp: 90,
     }))
-    expect(daily.touchActivity).toHaveBeenCalledWith('u1', expect.any(String), 'rustili', 6, 6)
+    expect(daily.touchActivity).toHaveBeenCalledWith('u1', expect.any(String), 'rustili', 6, 6, undefined, true)
   })
 
   it('revision mos kelsa submit o‘tadi, eski revision 409 qaytaradi', async () => {

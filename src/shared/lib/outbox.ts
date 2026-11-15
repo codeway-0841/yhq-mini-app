@@ -120,8 +120,10 @@ export interface ResultSyncInfo {
   correctAnswer?: string | null
   dailyStreak:    number | null
   duplicate:      boolean
-  /** Server shu javob bilan uzilgan seriyani coin evaziga saqladi */
-  coinSaved?:     boolean
+  /** Server shu javob bilan Seriya Zaryadi holatini yangiladi */
+  chargeSaved?:   boolean
+  chargeEarned?:  boolean
+  streakCharges?: number
   coinsEarned?:   number
   coinBalance?:   number | null
   xp?:            number | null
@@ -162,7 +164,9 @@ async function execute(userId: string, entry: OutboxEntry): Promise<void> {
         correctAnswer:  res.correctAnswer,
         dailyStreak:    res.dailyStreak,
         duplicate:      !!res.duplicate,
-        coinSaved:      res.coinSaved,
+        chargeSaved:    res.chargeSaved,
+        chargeEarned:   res.chargeEarned,
+        streakCharges:  res.streakCharges,
         coinsEarned:    res.coinsEarned,
         coinBalance:    res.coinBalance,
         xp:             res.xp,

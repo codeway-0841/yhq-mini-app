@@ -3,15 +3,17 @@ import { createPortal } from 'react-dom'
 import type { Lang } from '../../../shared/i18n'
 import BrilliantEndstateRive from '../../../shared/components/BrilliantEndstateRive'
 import { registerModal } from '../../../shared/lib/navigation'
+import { resolveBrilliantRiveColor } from '../lesson-transition'
 
-export const PRACTICE_WARMUP_REVEAL_MS = 1200
-export const PRACTICE_WARMUP_MS = 1450
+export const PRACTICE_WARMUP_REVEAL_MS = 750
+export const PRACTICE_WARMUP_MS = 1050
 
 export default function PracticeWarmUpLaunch({
   lang,
   accent,
   colorVariant,
   isReady = true,
+  zIndex = 65,
   onReveal,
   onFinish,
   onCancel,
@@ -20,6 +22,7 @@ export default function PracticeWarmUpLaunch({
   accent?: string
   colorVariant?: number
   isReady?: boolean
+  zIndex?: number
   onReveal: () => void
   onFinish: () => void
   onCancel: () => void
@@ -30,21 +33,7 @@ export default function PracticeWarmUpLaunch({
   const [fading, setFading] = useState(false)
   const [minTimeElapsed, setMinTimeElapsed] = useState(false)
 
-  // Fan/Bob accent rangiga mos Brilliant Rive rangi (0..5)
-  const resolvedColor =
-    colorVariant !== undefined
-      ? colorVariant
-      : accent === '#f6b31f' || accent === 'var(--p-warning)'
-      ? 4 // Sariq / Oltin
-      : accent === '#8a4cff' || accent === 'var(--p-purple)'
-      ? 5 // Binafsha
-      : accent === '#22c55e' || accent === 'var(--p-success)'
-      ? 0 // Yashil
-      : accent === '#ef4444' || accent === 'var(--p-danger)'
-      ? 2 // Qizil
-      : accent === '#f97316'
-      ? 3 // To'q sariq
-      : 1 // Moviy / Ko'k (Brilliant Blue)
+  const resolvedColor = resolveBrilliantRiveColor(accent, colorVariant)
 
   const dark =
     typeof document !== 'undefined' &&
@@ -66,11 +55,15 @@ export default function PracticeWarmUpLaunch({
     if (!minTimeElapsed || !isReady || fading) return
     setFading(true)
     callbacks.current.onReveal()
+  }, [minTimeElapsed, isReady, fading])
+
+  useEffect(() => {
+    if (!fading) return
     const timer = window.setTimeout(() => {
       callbacks.current.onFinish()
     }, 320)
     return () => window.clearTimeout(timer)
-  }, [minTimeElapsed, isReady, fading])
+  }, [fading])
 
   const label = lang === 'ru' ? 'Загрузка разминки…' : 'Mashq yuklanmoqda…'
 
@@ -79,16 +72,16 @@ export default function PracticeWarmUpLaunch({
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-all duration-300 ease-out ${
-        fading ? 'opacity-0 scale-[1.015] pointer-events-none' : 'opacity-100 scale-100'
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity duration-300 ease-out animate-in fade-in duration-75 ${
+        fading ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       style={{
-        zIndex: 65,
+        zIndex,
         paddingTop: 'max(env(safe-area-inset-top, 0px), var(--safe-top, 0px))',
         paddingBottom: 'max(env(safe-area-inset-bottom, 0px), var(--safe-bottom, 0px))',
       }}
     >
-      {/* Center: Rive Dumbbell + Minimal Label */}
+      {/* Center: Rive Dumbbell + pastidagi xira yuklanish yozuvi (1:1 Brilliant ko'rinishi) */}
       <main
         className="flex flex-col items-center justify-center px-4"
         aria-labelledby={titleId}
@@ -103,10 +96,7 @@ export default function PracticeWarmUpLaunch({
           />
         </div>
 
-        <p
-          id={titleId}
-          className="mt-5 text-[17px] sm:text-[18px] font-medium text-pmuted select-none tracking-normal text-center"
-        >
+        <p id={titleId} className="mt-2 text-center text-[15px] font-medium text-pmuted">
           {label}
         </p>
       </main>

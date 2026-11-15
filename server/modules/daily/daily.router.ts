@@ -104,7 +104,7 @@ router.post(
 
     const { subjectId } = req.body as z.infer<typeof ActivitySchema>
     const state = await dailyRepository.getToday(uid, tashkentDate(), subjectId)
-    res.json({ ok: true, dailyStreak: state.dailyStreak, coinSaved: false, streakCharges: state.streakCharges })
+    res.json({ ok: true, dailyStreak: state.dailyStreak, streakCharges: state.streakCharges })
   }),
 )
 

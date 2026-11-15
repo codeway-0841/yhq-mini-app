@@ -11,6 +11,16 @@ export { BrilliantHeroIllustration, BrilliantLessonRowIcon, getBrilliantTheme } 
 export { DarslikTopPills, BrilliantKeyIcon, BrilliantBoltBadge } from './DarslikTopPills'
 export { default as LessonLaunch, lessonLaunchOrigin } from './LessonLaunch'
 export type { LaunchOrigin } from './LessonLaunch'
+export { default as LessonTransitionHost } from './LessonTransitionHost'
+export {
+  startLessonTransition,
+  isLessonTransitionHostMounted,
+  cancelLessonTransition,
+  resolveBrilliantRiveColor,
+  preloadBrilliantTransitionAssets,
+  type LessonTransitionKind,
+  type LessonTransitionInput,
+} from './lesson-transition'
 export { BrilliantCourseHome, type BrilliantCourseItem, type BrilliantCourseLevel } from './BrilliantCourseHome'
 export { default as SubjectBrilliantHome } from './SubjectBrilliantHome'
 export { BrilliantCourseMap } from './course-engine/BrilliantCourseMap'

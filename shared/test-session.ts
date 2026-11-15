@@ -164,7 +164,6 @@ export interface TestAnswerResponse {
     xpEarned: number
     coinsEarned: number
     coinBalance: number | null
-    coinSaved: boolean
     chargeSaved?: boolean
     chargeEarned?: boolean
     streakCharges?: number

@@ -382,7 +382,6 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           subjectId,
           date: today,
           dailyStreak: response.attempt.dailyStreak,
-          coinSaved: response.attempt.coinSaved,
           chargeSaved: response.attempt.chargeSaved,
           chargeEarned: response.attempt.chargeEarned,
           streakCharges: response.attempt.streakCharges,

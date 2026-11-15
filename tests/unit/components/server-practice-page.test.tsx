@@ -45,7 +45,7 @@ describe('ServerPracticePage vertical slice', () => {
         xpEarned: 10,
         coinsEarned: 1,
         coinBalance: 1,
-        coinSaved: false,
+        chargeSaved: false,
       },
       append: [{
         position: 1,
@@ -82,7 +82,7 @@ describe('ServerPracticePage vertical slice', () => {
 
   it('dars mashqidagi xatoda savolda qolib, yordam va keyingi savolni taklif qiladi', async () => {
     vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
-      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false },
+      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0 },
       append: [{ position: 1, deliveryToken: 'v1.delivery-token-for-position-one', expiresAt: EXPIRES, text: 'Keyingi server savoli', options: [{ id: 'F1', text: 'A' }, { id: 'F2', text: 'B' }], media: null, topic: null }],
       session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 1, total: 20, expiresAt: EXPIRES },
     })
@@ -100,7 +100,7 @@ describe('ServerPracticePage vertical slice', () => {
     const first = { position: 0, deliveryToken: 'v1.delivery-token-for-position-zero', expiresAt: EXPIRES, text: 'Yakuniy savol', options: [{ id: 'F1', text: 'To‘g‘ri' }, { id: 'F2', text: 'Xato' }], media: null, topic: null }
     vi.mocked(api.createTestSession).mockResolvedValueOnce({ session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 0, total: 1, expiresAt: EXPIRES }, questions: [first], review: [] })
     vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
-      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false },
+      attempt: { position: 0, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 0, xpEarned: 0, coinsEarned: 0, coinBalance: 0 },
       append: [], session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'completed', answered: 1, total: 1, expiresAt: EXPIRES },
     })
     render(<MemoryRouter><ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} /></MemoryRouter>)
@@ -284,7 +284,7 @@ describe('ServerPracticePage vertical slice', () => {
     const wrongAttempt = (position: number, done: boolean) => ({
       attempt: {
         position, correct: false, correctOptionId: 'F1', duplicate: false,
-        dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false,
+        dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0,
       },
       append: done ? [] : [{
         position: 1,
@@ -359,7 +359,7 @@ describe('ServerPracticePage vertical slice', () => {
     vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
       attempt: {
         position: 1, correct: false, correctOptionId: 'F1', duplicate: false,
-        dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0, coinSaved: false,
+        dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0,
       },
       append: [],
       session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 1, total: 3, expiresAt: EXPIRES },
@@ -417,7 +417,7 @@ describe('ServerPracticePage vertical slice', () => {
     vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
       attempt: {
         position: 0, correct: true, correctOptionId: 'F1', duplicate: false,
-        dailyStreak: 1, xp: 10, xpEarned: 10, coinsEarned: 1, coinBalance: 1, coinSaved: false,
+        dailyStreak: 1, xp: 10, xpEarned: 10, coinsEarned: 1, coinBalance: 1,
       },
       append: [],
       session: { id: SESSION_ID, subjectId: 'yhq', mode: 'random', status: 'active', answered: 1, total: 20, expiresAt: EXPIRES },

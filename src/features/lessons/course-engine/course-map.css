@@ -489,6 +489,13 @@ body[data-theme='dark'] .cmap {
   pointer-events: auto;
 }
 
+.cmap-sheet[data-launching='true'] {
+  transform: translate(-50%, calc(100% + 60px + var(--safe-bottom, 0px)));
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.24s cubic-bezier(0.4, 0, 1, 1), opacity 0.16s ease-out;
+}
+
 .cmap-sheet-title {
   margin: 0;
   display: grid;
@@ -537,8 +544,8 @@ body[data-theme='dark'] .cmap {
 }
 
 .cmap-start:active:not(:disabled) {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0 0 var(--cta-lip);
+  transform: translateY(4px);
+  box-shadow: 0 0 0 0 var(--cta-lip);
   transition: transform 60ms ease-out, box-shadow 60ms ease-out;
 }
 
@@ -626,24 +633,30 @@ body[data-theme='dark'] .cmap {
   --cta-lip: #7265aa;
   color: #221131;
 }
-.cmap[data-themed='true'] .cmap-sheet[data-ahead='true'] .cmap-start { --cta-face: var(--cmap-button); --cta-lip: var(--cmap-button-shadow); color: var(--cmap-button-text); }
+/* ahead gradient preserved for all themes */
 
 .cmap-jump {
   position: fixed;
-  left: max(24px, calc(var(--cmap-center, 50%) - 172px));
+  left: max(12px, calc(var(--cmap-center, 50%) - 204px));
   bottom: calc(40px + var(--safe-bottom, 0px));
   z-index: 25;
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   border: 2px solid var(--cmap-edge);
   border-radius: 50%;
   background: var(--cmap-surface);
   color: var(--cmap-ink);
+  box-shadow: 0 3px 0 var(--cmap-edge);
   cursor: pointer;
-  transition: bottom 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: bottom 0.36s cubic-bezier(0.22, 1, 0.36, 1), transform 80ms ease-out, box-shadow 80ms ease-out;
+}
+
+.cmap-jump:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--cmap-edge);
 }
 
 .cmap-jump[data-scrolled='true'] {
@@ -659,8 +672,12 @@ body[data-theme='dark'] .cmap {
 
 .cmap-jump[data-scrolled='true'] svg { transform: rotate(180deg); }
 
+.cmap-map { animation: cmap-map-enter 260ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes cmap-map-enter { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {
   .cmap-jump { transition: none; }
+  .cmap-sheet { transition: none; }
+  .cmap-map { animation: none; }
   .cmap-start-sheen-mover { animation: none; opacity: 0; }
 }
 

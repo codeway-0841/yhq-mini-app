@@ -16,13 +16,13 @@ import { db, executeRows, type DB } from '../../db/connection'
 import { dailyRecords, dailyStreaks } from '../../schema'
 import {
   chargeEarnedReturningSql,
+  chargeProgressValueSql,
   chargeSaveEligibleSql,
   chargesValueSql,
-  coinSaveEligibleSql,
+  lastChargeEarnedDateValueSql,
   lastDailyDateValueSql,
   streakValueSql,
 } from './streak-save-sql'
-import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 
 /** 'YYYY-MM-DD' dan oldingi kun (UTC parse — vaqt zonasi tushunchasiz) */
 export function prevDate(date: string): string {
@@ -31,31 +31,47 @@ export function prevDate(date: string): string {
   return d.toISOString().slice(0, 10)
 }
 
+function diffDays(later: string, earlier: string): number {
+  const msA = Date.parse(`${later}T00:00:00Z`)
+  const msB = Date.parse(`${earlier}T00:00:00Z`)
+  return Math.round((msA - msB) / 86_400_000)
+}
+
 /** 1 kunlik tanaffus sanasi (zaryad bilan kechirilishi mumkin) */
 export function isFrozenDay(lastDailyDate: string, today: string): boolean {
   return lastDailyDate === prevDate(prevDate(today))
 }
 
 /** Yangi dailyStreak qiymati (sof funksiya — unit test uchun) */
-export function calcNextStreak(lastDailyDate: string | null, date: string, current: number, hasCharge = false): number {
-  if (lastDailyDate === date)             return current
-  if (lastDailyDate === prevDate(date))   return current + 1
+export function calcNextStreak(
+  lastDailyDate: string | null,
+  date: string,
+  current: number,
+  charges: number | boolean = 0,
+): number {
+  if (!lastDailyDate) return 1
+  if (lastDailyDate === date) return current
+  const delta = diffDays(date, lastDailyDate)
+  if (delta <= 0) return current
+  if (delta === 1) return current + 1
+  const gapDays = delta - 1
+  const availableCharges = typeof charges === 'number' ? charges : (charges ? 1 : 0)
   // Zaryad bilan saqlanganda seriya saqlanadi (o'smaydi!)
-  if (hasCharge && lastDailyDate && isFrozenDay(lastDailyDate, date)) return current
+  if (gapDays >= 1 && availableCharges >= gapDays) return current
   return 1
 }
 
 /**
  * O'qishdagi streak: kecha yoki bugun faol bo'lsa joriy seriya;
- * 1 kun o'tkazilgan va `charges > 0` bo'lsa himoyalangan joriy seriya; aks holda 0.
+ * o'tkazib yuborilgan kunlar soni <= `charges` bo'lsa himoyalangan joriy seriya; aks holda 0.
  */
 export function effectiveStreak(lastDailyDate: string | null, today: string, current: number, charges = 0): number {
   if (!lastDailyDate) return 0
-  if (lastDailyDate < prevDate(today)) {
-    if (charges > 0 && lastDailyDate === prevDate(prevDate(today))) return current
-    return 0
-  }
-  return current
+  const delta = diffDays(today, lastDailyDate)
+  if (delta <= 1) return current
+  const gapDays = delta - 1
+  if (gapDays >= 1 && charges >= gapDays) return current
+  return 0
 }
 
 /** Sanalar ro'yxatidagi eng uzun ketma-ket kunlar seriyasi (saralangan, unikal) */
@@ -132,7 +148,7 @@ export const dailyRepository = {
    * yoki interaktiv dars yakuni) orqali chaqiriladi.
    *
    * Streak idempotent: bir xil kun qayta kelsa o'zgarmaydi (kun ko'chsa +1).
-   * Uzilish (gap=1) -> avval `charges`, zaryad 0 bo'lsa 100 coin (`coin_save`).
+   * Uzilish (`gapDays >= 1`) -> `charges >= gapDays` bo'lsa zaryad sarflanib seriya saqlanadi.
    */
   async touchActivity(
     userId:    string,
@@ -141,19 +157,21 @@ export const dailyRepository = {
     answeredDelta = 0,
     correctDelta  = 0,
     txOrDb:    DB = db,
+    chargeUnits: boolean | number = false,
   ): Promise<{
     dailyStreak: number
-    coinSaved: boolean
     chargeSaved: boolean
     chargeEarned: boolean
     streakCharges: number
   }> {
     const ctx = { userId, subjectId, date }
     const chargeEligible = chargeSaveEligibleSql(ctx)
-    const coinEligible = coinSaveEligibleSql(ctx)
+    const rawUnits = typeof chargeUnits === 'number'
+      ? Math.max(0, Math.trunc(chargeUnits))
+      : (chargeUnits ? 1 : 0)
+    const unitDelta = sql`${rawUnits}::int`
     const rows = await executeRows<{
       daily_streak: number
-      coin_saved: boolean
       charge_saved: boolean
       charge_earned: boolean
       streak_charges: number
@@ -166,40 +184,32 @@ export const dailyRepository = {
           correct = daily_records.correct + EXCLUDED.correct
         RETURNING id
       ), streak_upsert AS (
-        INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
+        INSERT INTO daily_streaks (
+          user_id, subject_id, streak, charges, charge_progress, last_charge_earned_date, last_daily_date, updated_at
+        )
         VALUES (
           ${userId},
           ${subjectId},
-          ${streakValueSql(ctx, chargeEligible, coinEligible)},
-          ${chargesValueSql(ctx, chargeEligible)},
+          ${streakValueSql(ctx, chargeEligible)},
+          ${chargesValueSql(ctx, chargeEligible, unitDelta)},
+          ${chargeProgressValueSql(ctx, chargeEligible, unitDelta)},
+          ${lastChargeEarnedDateValueSql(ctx, chargeEligible, unitDelta)},
           ${lastDailyDateValueSql(ctx)},
           now()
         )
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
-          charges = ${chargesValueSql(ctx, chargeEligible)},
+          streak = ${streakValueSql(ctx, chargeEligible)},
+          charges = ${chargesValueSql(ctx, chargeEligible, unitDelta)},
+          charge_progress = ${chargeProgressValueSql(ctx, chargeEligible, unitDelta)},
+          last_charge_earned_date = ${lastChargeEarnedDateValueSql(ctx, chargeEligible, unitDelta)},
           last_daily_date = ${lastDailyDateValueSql(ctx)},
           updated_at = now()
         RETURNING streak, charges,
           (${chargeEligible}) AS charge_saved,
-          ${chargeEarnedReturningSql(ctx, chargeEligible)} AS charge_earned,
-          (${coinEligible}) AS coin_saved
-      ), save_ledger AS (
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
-        WHERE (SELECT coin_saved FROM streak_upsert)
-        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
-        RETURNING id
-      ), coin_debit AS (
-        UPDATE user_coins SET
-          balance = balance - ${STREAK_SAVE_COST}::int,
-          updated_at = now()
-        WHERE user_id = ${userId} AND EXISTS (SELECT 1 FROM save_ledger)
-        RETURNING balance
+          ${chargeEarnedReturningSql(ctx)} AS charge_earned
       )
       SELECT
         (SELECT streak FROM streak_upsert)::int AS daily_streak,
-        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved,
         COALESCE((SELECT charge_saved FROM streak_upsert), false) AS charge_saved,
         COALESCE((SELECT charge_earned FROM streak_upsert), false) AS charge_earned,
         COALESCE((SELECT charges FROM streak_upsert), 0)::int AS streak_charges
@@ -209,7 +219,6 @@ export const dailyRepository = {
     if (!Number.isFinite(value)) throw new Error('Daily streak upsert returned no value')
     return {
       dailyStreak:   value,
-      coinSaved:     rows[0]?.coin_saved === true,
       chargeSaved:   rows[0]?.charge_saved === true,
       chargeEarned:  rows[0]?.charge_earned === true,
       streakCharges: Number(rows[0]?.streak_charges ?? 0),

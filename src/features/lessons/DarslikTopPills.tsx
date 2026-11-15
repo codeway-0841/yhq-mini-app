@@ -221,13 +221,23 @@ export function buildStreakWeekDays({
   if (streak > 0 && activeSet.size > 0) {
     const todayMinus1 = shiftIsoDate(today, -1).date
     const todayMinus2 = shiftIsoDate(today, -2).date
+    const todayMinus3 = shiftIsoDate(today, -3).date
     let cursor: string | null = activeSet.has(today)
       ? today
       : activeSet.has(todayMinus1)
         ? todayMinus1
         : activeSet.has(todayMinus2)
           ? todayMinus2
-          : null
+          : activeSet.has(todayMinus3)
+            ? todayMinus3
+            : null
+
+    if (cursor && cursor !== today && cursor !== todayMinus1) {
+      for (const offset of [-1, -2]) {
+        const d = shiftIsoDate(today, offset).date
+        if (d > cursor) savedDates.add(d)
+      }
+    }
 
     let counted = 0
     while (cursor && counted < streak) {
@@ -241,6 +251,13 @@ export function buildStreakWeekDays({
       if (counted < streak && activeSet.has(prev2)) {
         savedDates.add(prev1)
         cursor = prev2
+        continue
+      }
+      const prev3 = shiftIsoDate(cursor, -3).date
+      if (counted < streak && activeSet.has(prev3)) {
+        savedDates.add(prev1)
+        savedDates.add(prev2)
+        cursor = prev3
         continue
       }
       break

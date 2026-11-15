@@ -3,7 +3,7 @@ import { db } from '../../db/connection'
 import {
   analyticsEvents, answerTokens, auditLogs, dailyLimits, dailyRecords, dailyStreaks, jobRuns,
   leagueRolloverLog, linkCodes, loginHistory, otpCodes, progress, rateLimits,
-  sessions, telegramLoginCodes, userCoins,
+  sessions, telegramLoginCodes,
   testSessions,
 } from '../../schema'
 import { authRepository } from '../auth/auth.repository'
@@ -82,13 +82,12 @@ export const cronRepository = {
   },
 
   /**
-   * Streak Zaryad / Coin-save ogohlantirishi uchun: har user "ENG SO'NGGI faollik
-   * sanasi" + joriy zaryadlari (`charges`) + coin balansi.
+   * Streak Zaryadi ogohlantirishi uchun: har user "ENG SO'NGGI faollik
+   * sanasi" + joriy zaryadlari (`charges`).
    */
   async streakSaveRiskForUsers(userIds: string[], today: string): Promise<Map<string, {
     gapDaysTomorrow: number
     charges: number
-    balance: number
   }>> {
     if (userIds.length === 0) return new Map()
 
@@ -108,17 +107,9 @@ export const cronRepository = {
       )
     const lastActive = lastActiveRows.filter((r): r is { userId: string; lastActive: string; charges: number } => r.lastActive != null)
 
-    const balances = await db
-      .select({ userId: userCoins.userId, balance: userCoins.balance })
-      .from(userCoins)
-      .where(inArray(userCoins.userId, userIds))
-
-    const balanceOf = new Map(balances.map((r) => [r.userId, r.balance]))
-
     return new Map(lastActive.map((r) => [r.userId, {
       gapDaysTomorrow: Math.floor((new Date(`${today}T00:00:00Z`).getTime() - new Date(`${r.lastActive}T00:00:00Z`).getTime()) / 86_400_000),
       charges: Number(r.charges ?? 0),
-      balance: balanceOf.get(r.userId) ?? 0,
     }]))
   },
 

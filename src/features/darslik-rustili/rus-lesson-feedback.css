@@ -1,17 +1,33 @@
 .rus-lesson-runner {
   background: #fff;
-  animation: rus-lesson-in 260ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: rus-lesson-in 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 @keyframes rus-lesson-in {
   from {
-    opacity: 0.94;
-    transform: scale(0.988);
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0) scale(1);
   }
+}
+
+.rus-lesson-question-enter {
+  animation: rus-question-enter 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes rus-question-enter {
+  from { opacity: 0; transform: translateX(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+.rus-feedback-pop {
+  animation: rus-feedback-pop 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes rus-feedback-pop {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
 }
 
 .rus-lesson-header {
@@ -34,10 +50,12 @@
   cursor: pointer;
 }
 .rus-lesson-progress { height: 12px; flex: 1; overflow: hidden; border-radius: 999px; background: #dedede; }
-.rus-lesson-progress span { display: block; height: 100%; border-radius: inherit; background: #21c65b; transition: width 180ms ease; }
+.rus-lesson-progress span { display: block; height: 100%; border-radius: inherit; background: #21c65b; transition: width 360ms cubic-bezier(0.22, 1, 0.36, 1); }
 .rus-lesson-dots { display: flex; gap: 7px; }
-.rus-lesson-dots i { display: block; width: 10px; height: 10px; border-radius: 50%; background: #dedede; }
-.rus-lesson-lightning { flex: none; color: #aaa; }
+.rus-lesson-dots i { display: block; width: 10px; height: 10px; border-radius: 50%; background: #dedede; transition: background-color 200ms ease, transform 220ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+.rus-lesson-dots i[data-active='true'] { background: #21c65b; transform: scale(1.22); }
+.rus-lesson-lightning { flex: none; color: #aaa; transition: color 200ms ease, transform 220ms cubic-bezier(0.34, 1.56, 0.64, 1); }
+.rus-lesson-lightning[data-hot='true'] { color: #f59e0b; fill: #f59e0b; transform: scale(1.15); }
 body[data-theme='dark'] .rus-lesson-progress { background: #3c3c3c; }
 body[data-theme='dark'] .rus-lesson-dots i { background: #1f1f1f; }
 body[data-theme='dark'] .rus-lesson-lightning { color: #3c3c3c; }
@@ -48,6 +66,7 @@ body[data-theme='dark'] .rus-lesson-dock[data-state='exercise'] {
   background: #111;
 }
 
+.rus-lesson-dock { transition: background-color 220ms ease; }
 .rus-lesson-dock[data-state='wrong'] { background: #fff2c4; }
 .rus-lesson-dock[data-state='correct'] { background: #d8f5df; }
 .rus-lesson-dock[data-state='revealed'] { background: #ececec; }
@@ -62,6 +81,18 @@ body[data-theme='dark'] .rus-lesson-dock[data-state='revealed'] { background: #3
   min-height: 52px;
   border-radius: 999px;
   font-weight: 700;
+  transition: transform 80ms ease-out, box-shadow 80ms ease-out, background-color 160ms ease;
+}
+.rus-lesson-dock .rus-lesson-action:active:not(:disabled),
+.rus-lesson-dock .rus-lesson-check:active:not(:disabled) {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+.rus-lesson-dock[data-state='correct'] .rus-lesson-secondary,
+.rus-lesson-dock[data-state='wrong'] .rus-lesson-secondary {
+  background: #fff;
+  color: #111;
+  box-shadow: 0 3px 0 rgb(0 0 0 / 0.12);
 }
 .rus-lesson-dock .rus-lesson-check {
   background: #e7e7e7;
@@ -96,4 +127,4 @@ body[data-theme='dark'] .rus-lesson-dock .rus-lesson-secondary {
   background: rgb(255 255 255 / 12%);
   color: white;
 }
-@media (prefers-reduced-motion: reduce) { .rus-lesson-progress span { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .rus-lesson-runner, .rus-lesson-question-enter, .rus-feedback-pop { animation: none; } .rus-lesson-progress span, .rus-lesson-dots i, .rus-lesson-dock { transition: none; } }

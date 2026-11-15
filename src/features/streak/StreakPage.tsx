@@ -16,7 +16,7 @@ import { BrilliantStreakIcon } from '../../shared/components/BrilliantStreakIcon
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
 import { api, type DailyHistory } from '../../shared/api'
-import { selectDailyStreak, useDailyStore, todayStr } from '../../shared/store/useDailyStore'
+import { selectDailyCharges, selectDailyStreak, useDailyStore, todayStr } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useT } from '../../shared/i18n'
@@ -45,11 +45,11 @@ export default function StreakPage() {
   const navigate  = useNavigate()
   const lang      = useAppStore((s) => s.settings.language)
   const userId    = useAppStore((s) => s.user?.id)
-  const isPremium = useAppStore((s) => s.tariff === 'premium')
   const subject   = useSubjectStore((s) => s.subject)
   const tt        = useT(lang)
 
   const previewParam = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('preview') : null
+  const isPreviewMode = import.meta.env.DEV || previewParam !== null
   const today     = todayStr()
   const [history, setHistory]     = useState<DailyHistory | null>(null)
   const [month, setMonth]         = useState(() => today.slice(0, 7))          // 'YYYY-MM'
@@ -76,8 +76,9 @@ export default function StreakPage() {
       previewParam === 'progress' ||
       previewParam === 'rate',
   )
-  // Server javobi kelgunicha — lokal (cache) global streak darhol ko'rinadi, 0 emas
+  // Server javobi kelgunicha — lokal (cache) global streak va zaryad darhol ko'rinadi
   const cachedStreak = useDailyStore((s) => selectDailyStreak(s, subject.id))
+  const cachedCharges = useDailyStore((s) => selectDailyCharges(s, subject.id))
 
 
   const subjectId = subject.id
@@ -167,58 +168,60 @@ export default function StreakPage() {
         <p className="text-[12.5px] sm:text-[13px] text-psubtle mt-1.5 sm:mt-2 font-medium">
           {streak > 0 ? tt('intizomStreakGood') : tt('intizomStreakStart')}
         </p>
-        <div className="mt-2.5 flex flex-wrap items-center justify-center gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              setModalMode('both')
-              setShowCelebration(true)
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-          >
-            {lang === 'ru' ? 'Анимация серии ✨' : 'Seriya animatsiyasi ✨'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setModalMode('charge')
-              setShowCelebration(true)
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-[#A8D31D] hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-          >
-            {lang === 'ru' ? 'Заряд серии 🔋' : 'Seriya zaryadi 🔋'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setModalMode('lesson')
-              setShowCelebration(true)
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pprimary hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-          >
-            {lang === 'ru' ? 'Урок пройден 💎' : 'Dars yakuni 💎'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setModalMode('progress')
-              setShowCelebration(true)
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-psuccess hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-          >
-            {lang === 'ru' ? 'Проверка уровня 🛡️' : 'Bosqich imtihoni 🛡️'}
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setModalMode('rate')
-              setShowCelebration(true)
-            }}
-            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
-          >
-            {lang === 'ru' ? 'Оценка и замки ⭐' : 'Baholash ⭐'}
-          </button>
-        </div>
+        {isPreviewMode && (
+          <div className="mt-2.5 flex flex-wrap items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setModalMode('both')
+                setShowCelebration(true)
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+            >
+              {lang === 'ru' ? 'Анимация серии ✨' : 'Seriya animatsiyasi ✨'}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setModalMode('charge')
+                setShowCelebration(true)
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-[#A8D31D] hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+            >
+              {lang === 'ru' ? 'Заряд серии 🔋' : 'Seriya zaryadi 🔋'}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setModalMode('lesson')
+                setShowCelebration(true)
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pprimary hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+            >
+              {lang === 'ru' ? 'Урок пройден 💎' : 'Dars yakuni 💎'}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setModalMode('progress')
+                setShowCelebration(true)
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-psuccess hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+            >
+              {lang === 'ru' ? 'Проверка уровня 🛡️' : 'Bosqich imtihoni 🛡️'}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setModalMode('rate')
+                setShowCelebration(true)
+              }}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-psurface text-xs font-bold text-pwarning hover:opacity-85 transition-all cursor-pointer shadow-xs active:scale-95"
+            >
+              {lang === 'ru' ? 'Оценка и замки ⭐' : 'Baholash ⭐'}
+            </button>
+          </div>
+        )}
         <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 bg-psurface rounded-full px-3 py-1 sm:px-3.5 sm:py-1.5">
           <Trophy size={13} strokeWidth={1.75} className="text-pwarning" />
           <span className="text-[11.5px] sm:text-[12px] font-semibold text-psubtle">
@@ -236,13 +239,12 @@ export default function StreakPage() {
         >
           <BatteryCharging size={14} strokeWidth={2} />
           <span className="text-[11px] sm:text-[11.5px] font-semibold">
-            {isPremium
-              ? lang === 'ru'
-                ? 'Заряд серии активен (2/2 — Premium защита)'
-                : 'Seriya zaryadi faol (2/2 — Premium himoya)'
-              : lang === 'ru'
-                ? 'Заряд серии активен (1/2 — защита монетами)'
-                : 'Seriya zaryadi faol (1/2 — tanga himoyasi)'}
+            {(() => {
+              const c = history?.streakCharges ?? cachedCharges
+              return lang === 'ru'
+                ? `Заряд серии: ${c}/2`
+                : `Seriya zaryadi: ${c}/2`
+            })()}
           </span>
         </button>
       </div>
@@ -379,6 +381,7 @@ export default function StreakPage() {
       {showCelebration && (
         <BrilliantStreakModal
           streak={streak > 0 ? streak : 1}
+          charges={history?.streakCharges ?? cachedCharges}
           initialView={
             modalMode === 'charge'
               ? 'charge'
@@ -391,7 +394,7 @@ export default function StreakPage() {
                     : 'streak'
           }
           showCharge={modalMode === 'both'}
-          showPreviewTabs
+          showPreviewTabs={isPreviewMode}
           onClose={() => setShowCelebration(false)}
         />
       )}

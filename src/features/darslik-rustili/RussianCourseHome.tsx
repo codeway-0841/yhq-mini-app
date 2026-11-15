@@ -6,7 +6,7 @@ import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { playSound } from '../../shared/lib/sounds'
 import { useAppStore } from '../../shared/store/useAppStore'
-import { BrilliantHeroIllustration, BrilliantLessonRowIcon, DarslikTopPills, getBrilliantTheme, LessonLaunch, lessonLaunchOrigin, type LaunchOrigin } from '../lessons'
+import { BrilliantHeroIllustration, BrilliantLessonRowIcon, DarslikTopPills, getBrilliantTheme, LessonLaunch, lessonLaunchOrigin, preloadBrilliantTransitionAssets, startLessonTransition, type LaunchOrigin } from '../lessons'
 import { sectionKey } from './progress'
 import { useDarslikMastery } from './useDarslikMastery'
 import CourseMapPage from './CourseMapPage'
@@ -78,7 +78,19 @@ export default function RussianCourseHome() {
         origin.x = rect.left + Math.min(28, rect.width / 2)
         origin.y = rect.top + rect.height / 2
       }
-      setLaunch({ blockId: block.id, origin })
+      const targetBlockId = block.id
+      if (
+        startLessonTransition?.({
+          kind: 'lesson',
+          origin,
+          lang,
+          accent: theme.accent,
+          onReveal: () => navigate({ pathname: location.pathname, search: `?block=${targetBlockId}` }),
+        })
+      ) {
+        return
+      }
+      setLaunch({ blockId: targetBlockId, origin })
     }
   }
   const change = (next: number) => setSelected(Math.max(0, Math.min(DARSLIK_BLOCKS.length - 1, next)))
@@ -104,6 +116,7 @@ export default function RussianCourseHome() {
     }
   }
   useEffect(() => {
+    preloadBrilliantTransitionAssets?.()
     scrollPageToTop()
   }, [])
 

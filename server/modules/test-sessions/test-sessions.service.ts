@@ -8,7 +8,7 @@ import { dailyRepository } from '../daily/daily.repository'
 import { questionsRepository } from '../questions/questions.repository'
 import { bossRepository } from '../boss/boss.repository'
 import { bossPeriodKey, BOSS_DAMAGE_PER_CORRECT } from '../../../shared/boss-battle'
-import { doesTestAnswerQualifyStreak } from '../../../shared/streak-save'
+import { doesTestAnswerQualifyStreak, getTestAnswerChargeUnits } from '../../../shared/streak-save'
 import { tashkentDate } from '../../utils/date'
 import { Sentry } from '../../utils/sentry'
 import { getExamPreset } from '../../../shared/exam-presets'
@@ -478,6 +478,12 @@ export const testSessionsService = {
         totalQuestions: row.totalQuestions,
         completed: status === 'completed',
       })
+      const chargeUnits = getTestAnswerChargeUnits({
+        mode: row.mode,
+        answeredInSession: answeredCount,
+        totalQuestions: row.totalQuestions,
+        completed: status === 'completed',
+      })
       const today = tashkentDate()
 
       const progressResult = await progressRepository.recordAnswer({
@@ -490,20 +496,22 @@ export const testSessionsService = {
         elapsedMs: input.elapsedMs,
         txOrDb: tx,
         streakQualified: streakQualifies,
+        chargeUnitQualified: chargeUnits,
+        allowDailyChargeMilestone: row.mode !== 'single',
       })
       if (!progressResult.updated) throw new AppError(404, 'progress_not_initialized')
 
       // Takroriy savolda XP/coin anti-farm gate ishlagan bo'lsa ham, bilet tugashi yoki
-      // 15-javob urinishiga yetgan foydalanuvchiga kunlik streak baribir yoziladi.
+      // 15/20-javob marrasiga yetgan foydalanuvchiga kunlik streak/zaryad baribir yoziladi.
       let dailyStreak = progressResult.dailyStreak
-      let coinSaved = progressResult.coinSaved
       let chargeSaved = progressResult.chargeSaved
       let chargeEarned = progressResult.chargeEarned
       let streakCharges = progressResult.streakCharges
-      if (streakQualifies && dailyStreak === null && progressResult.reason !== 'replay') {
-        const fallbackDaily = await dailyRepository.touchActivity(userId, today, row.subjectId, 0, 0, tx)
+      if ((streakQualifies || chargeUnits > 0) && dailyStreak === null && progressResult.reason !== 'replay') {
+        const fallbackDaily = await dailyRepository.touchActivity(
+          userId, today, row.subjectId, 0, 0, tx, chargeUnits,
+        )
         dailyStreak = fallbackDaily.dailyStreak
-        coinSaved = coinSaved || fallbackDaily.coinSaved
         chargeSaved = chargeSaved || fallbackDaily.chargeSaved
         chargeEarned = chargeEarned || fallbackDaily.chargeEarned
         streakCharges = fallbackDaily.streakCharges
@@ -565,7 +573,6 @@ export const testSessionsService = {
           xpEarned: progressResult.xpEarned,
           coinsEarned: progressResult.coinsMinted,
           coinBalance: progressResult.coinBalance,
-          coinSaved,
           chargeSaved,
           chargeEarned,
           streakCharges,

@@ -14,6 +14,8 @@ import AppearanceModal from '../../shared/components/AppearanceModal'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { selectDailyStreak, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
+import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { api, avatarSrcFor, type AchievementStats } from '../../shared/api'
 import { useT } from '../../shared/i18n'
@@ -65,12 +67,14 @@ export default function Profil() {
   const customAvatar   = useAppStore((s) => s.customAvatar)
   const coins          = useAppStore((s) => s.coins)
   const xp             = useAppStore((s) => s.xp)
-  const streak         = useAppStore((s) => s.streak)
+  const subjectId      = useSubjectStore((s) => s.subject.id)
+  const cachedDailyStreak = useDailyStore((s) => selectDailyStreak(s, subjectId))
   const tt = useT(settings.language)
   const level = levelFromXp(xp)
 
   // ── Yutuqlar (Achievements & Stats) ──────────────────────────────────
   const [achStats, setAchStats] = useState<AchievementStats | null>(null)
+  const [dailyBestStreak, setDailyBestStreak] = useState(0)
   const [showAchievementsModal, setShowAchievementsModal] = useState(false)
   const [achievementsInitialTab, setAchievementsInitialTab] = useState<TabKey>('all')
 
@@ -78,7 +82,12 @@ export default function Profil() {
     const uid = user?.id
     if (!uid || uid === '0') return
     api.getAchievements(uid).then((d) => setAchStats(d.stats)).catch(() => {})
-  }, [user?.id, settings.language])
+    api.getDailyHistory(uid, todayStr(), subjectId, { global: true })
+      .then((d) => setDailyBestStreak(Math.max(d.bestStreak, d.dailyStreak)))
+      .catch(() => {})
+  }, [user?.id, settings.language, subjectId])
+
+  const maxStreak = Math.max(achStats?.bestStreak ?? 0, dailyBestStreak, cachedDailyStreak)
 
   const handleOpenAchievements = (tab: TabKey = 'all') => {
     setAchievementsInitialTab(tab)
@@ -507,7 +516,7 @@ export default function Profil() {
         >
           <div className="flex items-center gap-2">
             <span className="font-display text-[26px] font-extrabold leading-none tracking-tight text-pfg tabular-nums">
-              {streak || 0}
+              {maxStreak}
             </span>
             <BrilliantStreakIcon className="size-6 shrink-0 text-[#A8D31D]" />
           </div>

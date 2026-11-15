@@ -1,62 +1,47 @@
 import { describe, expect, it } from 'vitest'
 import {
+  STREAK_CHARGE_DAILY_MIN_ANSWERS,
   STREAK_CHARGE_MAX,
+  STREAK_CHARGE_UNITS_REQUIRED,
   STREAK_DAILY_MIN_ANSWERS,
-  STREAK_SAVE_COST,
   decideStreakOutcome,
+  doesTestAnswerQualifyChargeUnit,
   doesTestAnswerQualifyStreak,
-  isChargeEarnMilestone,
-  isCoinSaveStage,
+  getTestAnswerChargeUnits,
 } from '../../../shared/streak-save'
 
-describe('decideStreakOutcome (Streak Charge + Coin Save)', () => {
-  const d = (gapDays: number, charges: number, balance: number) =>
-    decideStreakOutcome({ gapDays, charges, balance })
+describe('decideStreakOutcome (Brilliant 1:1 Streak Charge)', () => {
+  const d = (gapDays: number, charges: number) =>
+    decideStreakOutcome({ gapDays, charges })
 
-  it("gapDays=0 — seriya oddiy davom etadi (zaryad va coin tegilmaydi)", () => {
-    expect(d(0, 0, 0)).toBe('continue')
-    expect(d(0, 2, 0)).toBe('continue')
+  it("gapDays<=0 — seriya oddiy davom etadi (zaryad sarflanmaydi)", () => {
+    expect(d(0, 0)).toBe('continue')
+    expect(d(0, 2)).toBe('continue')
+    expect(d(-1, 1)).toBe('continue')
   })
 
-  it('gapDays=1 + zaryad bor (charges > 0) — zaryad sarflanadi, coin tegilmaydi', () => {
-    expect(d(1, 1, 0)).toBe('charge_save')
-    expect(d(1, STREAK_CHARGE_MAX, 500)).toBe('charge_save')
+  it('gapDays>=1 va charges >= gapDays — zaryad sarflanib seriya saqlanadi', () => {
+    expect(d(1, 1)).toBe('charge_save')
+    expect(d(1, STREAK_CHARGE_MAX)).toBe('charge_save')
+    expect(d(2, 2)).toBe('charge_save')
   })
 
-  it("gapDays=1 + zaryad 0 + balans yetarli — coin bilan saqlanadi", () => {
-    expect(d(1, 0, STREAK_SAVE_COST)).toBe('coin_save')
-    expect(d(1, 0, STREAK_SAVE_COST + 10)).toBe('coin_save')
+  it('charges < gapDays — coin fallback yo‘q, reset (zaryad saqlanib qoladi)', () => {
+    expect(d(1, 0)).toBe('reset')
+    expect(d(2, 1)).toBe('reset')
+    expect(d(2, 0)).toBe('reset')
+    expect(d(3, 2)).toBe('reset')
   })
 
-  it("gapDays=1 + zaryad 0 + balans yetmaydi — reset", () => {
-    expect(d(1, 0, STREAK_SAVE_COST - 1)).toBe('reset')
-    expect(d(1, 0, 0)).toBe('reset')
-  })
-
-  it("gapDays>=2 — zaryad yoki balansdan qat'i nazar reset", () => {
-    expect(d(2, 2, 10_000)).toBe('reset')
-    expect(d(3, 2, 10_000)).toBe('reset')
-    expect(d(10, 0, 10_000)).toBe('reset')
-  })
-
-  it('narx 100 coin va max 2 ta zaryad', () => {
-    expect(STREAK_SAVE_COST).toBe(100)
+  it('Brilliant 1:1 global konstantalar', () => {
     expect(STREAK_CHARGE_MAX).toBe(2)
+    expect(STREAK_CHARGE_UNITS_REQUIRED).toBe(3)
+    expect(STREAK_CHARGE_DAILY_MIN_ANSWERS).toBe(20)
   })
 })
 
-describe('isCoinSaveStage', () => {
-  it('faqat (gapDays=1, charges=0) coin bosqichi', () => {
-    expect(isCoinSaveStage(1, 0)).toBe(true)
-    expect(isCoinSaveStage(1, 1)).toBe(false)
-    expect(isCoinSaveStage(1, 2)).toBe(false)
-    expect(isCoinSaveStage(2, 0)).toBe(false)
-    expect(isCoinSaveStage(0, 0)).toBe(false)
-  })
-})
-
-describe('doesTestAnswerQualifyStreak & isChargeEarnMilestone', () => {
-  it('kamida 15 javob YOKI to\'liq bilet (>=5 savol) tugaganda true', () => {
+describe('doesTestAnswerQualifyStreak & doesTestAnswerQualifyChargeUnit', () => {
+  it("kamida 15 javob YOKI to'liq bilet (>=5 savol) tugaganda streak true", () => {
     expect(STREAK_DAILY_MIN_ANSWERS).toBe(15)
     expect(doesTestAnswerQualifyStreak({ mode: 'marathon', answeredInSession: 14, totalQuestions: 100, completed: false })).toBe(false)
     expect(doesTestAnswerQualifyStreak({ mode: 'marathon', answeredInSession: 15, totalQuestions: 100, completed: false })).toBe(true)
@@ -65,10 +50,17 @@ describe('doesTestAnswerQualifyStreak & isChargeEarnMilestone', () => {
     expect(doesTestAnswerQualifyStreak({ mode: 'single', answeredInSession: 1, totalQuestions: 1, completed: true })).toBe(false)
   })
 
-  it('har 7 kunlik seriyada +1 zaryad bosqichi', () => {
-    expect(isChargeEarnMilestone(7)).toBe(true)
-    expect(isChargeEarnMilestone(14)).toBe(true)
-    expect(isChargeEarnMilestone(1)).toBe(false)
-    expect(isChargeEarnMilestone(6)).toBe(false)
+  it("to'liq test (>=5 savol) 1 birlik, >=20 javob esa to'liq +1 batareya (3 birlik) beradi (single mustasno)", () => {
+    expect(doesTestAnswerQualifyChargeUnit({ mode: 'ticket', totalQuestions: 10, completed: true })).toBe(true)
+    expect(doesTestAnswerQualifyChargeUnit({ mode: 'adaptive', totalQuestions: 5, completed: true })).toBe(true)
+    expect(doesTestAnswerQualifyChargeUnit({ mode: 'ticket', totalQuestions: 10, completed: false })).toBe(false)
+    expect(doesTestAnswerQualifyChargeUnit({ mode: 'ticket', totalQuestions: 4, completed: true })).toBe(false)
+    expect(doesTestAnswerQualifyChargeUnit({ mode: 'single', totalQuestions: 5, completed: true })).toBe(false)
+
+    expect(getTestAnswerChargeUnits({ mode: 'topic', answeredInSession: 19, totalQuestions: 25, completed: false })).toBe(0)
+    expect(getTestAnswerChargeUnits({ mode: 'topic', answeredInSession: 20, totalQuestions: 25, completed: false })).toBe(STREAK_CHARGE_UNITS_REQUIRED)
+    expect(getTestAnswerChargeUnits({ mode: 'random', answeredInSession: 25, totalQuestions: 25, completed: true })).toBe(STREAK_CHARGE_UNITS_REQUIRED)
+    expect(getTestAnswerChargeUnits({ mode: 'ticket', answeredInSession: 10, totalQuestions: 10, completed: true })).toBe(1)
+    expect(getTestAnswerChargeUnits({ mode: 'single', answeredInSession: 20, totalQuestions: 20, completed: true })).toBe(0)
   })
 })

@@ -1,24 +1,28 @@
 /**
- * Streak coin-save — integration (real test DB).
+ * Brilliant 1:1 Streak Charge (Zaryad) — integration (real test DB).
  *
- * Qamrov: bosqichlar (premium bepul kun / coin kun / reset), balans yetmasligi,
- * idempotentlik (kuniga 1 marta), ledger yozuvi, javob yo'lida NET delta
- * (mint + save bitta user_coins yozuvida — mint yo'qolmasligi shart).
+ * Qamrov:
+ *   - Har 3 ta tugallangan dars/test birligi -> +1 zaryad (max 2, kuymaydi)
+ *   - Kuniga ko'pi bilan 1 ta batareya (`lastChargeEarnedDate < today`)
+ *   - Barcha fanlar bo'yicha global qoida (rus-tili + yhq/fizika birga hisoblanadi; Free == Premium)
+ *   - Sessiyasiz 20 ta savol marrasi (+1 birlik)
+ *   - Uzilish (`gapDays >= 1`): `charges >= gapDays` -> sarflanib seriya saqlanadi, coin yechilmaydi;
+ *     `charges < gapDays` -> seriya 1 ga tushadi, mavjud zaryadlar kuymaydi
  */
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
-import { and, eq } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import { db } from '../../../server/db/connection'
-import { users, dailyStreaks, userCoins, coinTransactions } from '../../../server/schema'
+import { users, dailyStreaks, userCoins } from '../../../server/schema'
 import { usersRepository } from '../../../server/modules/users/users.repository'
 import { dailyRepository } from '../../../server/modules/daily/daily.repository'
 import { progressRepository } from '../../../server/modules/progress/progress.repository'
-import { STREAK_SAVE_COST } from '../../../shared/streak-save'
 import { COINS_PER_CORRECT_ANSWER } from '../../../shared/shop-items'
+import { STREAK_CHARGE_DAILY_MIN_ANSWERS } from '../../../shared/streak-save'
 
-const U_FREE_RICH = '990000007001'   // premium emas, balans yetarli
-const U_FREE_POOR = '990000007002'   // premium emas, balans yetmaydi
-const U_PREMIUM   = '990000007003'   // premium
-const IDS = [U_FREE_RICH, U_FREE_POOR, U_PREMIUM]
+const U_FREE    = '990000007001'
+const U_GLOBAL  = '990000007002'
+const U_PREMIUM = '990000007003'
+const IDS = [U_FREE, U_GLOBAL, U_PREMIUM]
 
 const SUBJ = 'yhq'
 
@@ -26,13 +30,22 @@ async function cleanup() {
   for (const id of IDS) await db.delete(users).where(eq(users.id, id))
 }
 
-/** Streak qatorini aniq holatga qo'yadi (oxirgi faollik sanasi + seriya + zaryad) */
-async function seedStreak(userId: string, lastDate: string, streak: number, charges = 0) {
+async function seedStreak(
+  userId: string,
+  lastDate: string,
+  streak: number,
+  charges = 0,
+  chargeProgress = 0,
+  lastChargeEarnedDate: string | null = null,
+) {
   await db.insert(dailyStreaks)
-    .values({ userId, subjectId: SUBJ, streak, charges, lastDailyDate: lastDate, updatedAt: new Date() })
+    .values({
+      userId, subjectId: SUBJ, streak, charges, chargeProgress, lastChargeEarnedDate,
+      lastDailyDate: lastDate, updatedAt: new Date(),
+    })
     .onConflictDoUpdate({
       target: [dailyStreaks.userId, dailyStreaks.subjectId],
-      set: { streak, charges, lastDailyDate: lastDate, updatedAt: new Date() },
+      set: { streak, charges, chargeProgress, lastChargeEarnedDate, lastDailyDate: lastDate, updatedAt: new Date() },
     })
 }
 
@@ -56,128 +69,125 @@ beforeAll(async () => {
 
 afterAll(cleanup)
 
-describe("streak charge + coin-save — faollik (touchActivity) yo'li", () => {
-  it('zaryad 0 + 1 kun uzilish + balans yetarli → coin yechiladi, seriya saqlanadi (o\'smaydi)', async () => {
-    await seedStreak(U_FREE_RICH, '2026-08-10', 5, 0)
-    await seedCoins(U_FREE_RICH, 200)
+describe("Brilliant 1:1 Streak Charge — sarflash va saqlash (coin yechilmaydi)", () => {
+  it("zaryad 0 + 1 kun uzilish (balans katta bo'lsa ham) → coin yechilmaydi, seriya 1 ga reset", async () => {
+    await seedStreak(U_FREE, '2026-08-10', 9, 0)
+    await seedCoins(U_FREE, 500)
 
-    const res = await dailyRepository.touchActivity(U_FREE_RICH, '2026-08-12', SUBJ, 15, 10)
+    const res = await dailyRepository.touchActivity(U_FREE, '2026-08-12', SUBJ, 15, 10)
 
-    expect(res.coinSaved).toBe(true)
     expect(res.chargeSaved).toBe(false)
-    expect(res.dailyStreak).toBe(5)
-    expect(await balanceOf(U_FREE_RICH)).toBe(200 - STREAK_SAVE_COST)
-  })
-
-  it("bir kunda takroriy faollik coin'ni IKKI marta yechmaydi (idempotent)", async () => {
-    await seedStreak(U_FREE_RICH, '2026-08-20', 5, 0)
-    await seedCoins(U_FREE_RICH, 200)
-
-    await dailyRepository.touchActivity(U_FREE_RICH, '2026-08-22', SUBJ, 15, 10)
-    const afterFirst = await balanceOf(U_FREE_RICH)
-    const second = await dailyRepository.touchActivity(U_FREE_RICH, '2026-08-22', SUBJ, 1, 1)
-
-    expect(second.coinSaved).toBe(false)
-    expect(await balanceOf(U_FREE_RICH)).toBe(afterFirst)
-  })
-
-  it('zaryad 0 + balans yetmaydi → seriya 1 ga tushadi, coin tegilmaydi', async () => {
-    await seedStreak(U_FREE_POOR, '2026-08-10', 9, 0)
-    await seedCoins(U_FREE_POOR, STREAK_SAVE_COST - 1)
-
-    const res = await dailyRepository.touchActivity(U_FREE_POOR, '2026-08-12', SUBJ, 15, 5)
-
-    expect(res.coinSaved).toBe(false)
     expect(res.dailyStreak).toBe(1)
-    expect(await balanceOf(U_FREE_POOR)).toBe(STREAK_SAVE_COST - 1)
+    expect(res.streakCharges).toBe(0)
+    expect(await balanceOf(U_FREE)).toBe(500)
   })
 
-  it('zaryad bor (charges=1) + 1 kun uzilish → zaryad sarflanadi, seriya SAQLANADI (coin tegilmaydi)', async () => {
-    await seedStreak(U_PREMIUM, '2026-08-10', 7, 1)
-    await seedCoins(U_PREMIUM, 200)
+  it('zaryad 1 + 1 kun uzilish → 1 ta zaryad sarflanadi, seriya SAQLANADI (o‘smaydi), coin tegilmaydi', async () => {
+    await seedStreak(U_FREE, '2026-08-20', 7, 1)
+    await seedCoins(U_FREE, 200)
 
-    const res = await dailyRepository.touchActivity(U_PREMIUM, '2026-08-12', SUBJ, 15, 10)
+    const res = await dailyRepository.touchActivity(U_FREE, '2026-08-22', SUBJ, 15, 10)
 
     expect(res.chargeSaved).toBe(true)
-    expect(res.coinSaved).toBe(false)
     expect(res.dailyStreak).toBe(7)
     expect(res.streakCharges).toBe(0)
-    expect(await balanceOf(U_PREMIUM)).toBe(200)
+    expect(await balanceOf(U_FREE)).toBe(200)
   })
 
-  it('2+ kun uzilish → zaryad ham, coin ham ishlamaydi (reset)', async () => {
-    await seedStreak(U_PREMIUM, '2026-08-01', 20, 2)
-    await seedCoins(U_PREMIUM, 10_000)
+  it('zaryad 2 + ketma-ket 2 kun uzilish → 2 ta zaryad sarflanib seriya SAQLANADI', async () => {
+    await seedStreak(U_PREMIUM, '2026-08-01', 12, 2)
 
-    const res = await dailyRepository.touchActivity(U_PREMIUM, '2026-08-06', SUBJ, 15, 10)
+    const res = await dailyRepository.touchActivity(U_PREMIUM, '2026-08-04', SUBJ, 15, 10)
 
-    expect(res.coinSaved).toBe(false)
+    expect(res.chargeSaved).toBe(true)
+    expect(res.dailyStreak).toBe(12)
+    expect(res.streakCharges).toBe(0)
+  })
+
+  it('zaryad 1 + ketma-ket 2 kun uzilish → yetarli zaryad yo‘q (reset), lekin mavjud 1 ta zaryad kuymaydi', async () => {
+    await seedStreak(U_PREMIUM, '2026-08-10', 20, 1)
+
+    const res = await dailyRepository.touchActivity(U_PREMIUM, '2026-08-13', SUBJ, 15, 10)
+
     expect(res.chargeSaved).toBe(false)
     expect(res.dailyStreak).toBe(1)
-    expect(res.streakCharges).toBe(2)
-    expect(await balanceOf(U_PREMIUM)).toBe(10_000)
-  })
-
-  it('7-kunlik faol seriyada +1 zaryad beriladi (max 2)', async () => {
-    await seedStreak(U_FREE_RICH, '2026-05-10', 6, 0)
-    const res = await dailyRepository.touchActivity(U_FREE_RICH, '2026-05-11', SUBJ, 15, 10)
-
-    expect(res.dailyStreak).toBe(7)
-    expect(res.chargeEarned).toBe(true)
     expect(res.streakCharges).toBe(1)
-  })
-
-  it('coin yechilganda ledgerga streak_save qatori yoziladi', async () => {
-    await seedStreak(U_FREE_RICH, '2026-07-10', 3, 0)
-    await seedCoins(U_FREE_RICH, 500)
-
-    await dailyRepository.touchActivity(U_FREE_RICH, '2026-07-12', SUBJ, 15, 10)
-
-    const rows = await db.select({ delta: coinTransactions.delta, refId: coinTransactions.refId })
-      .from(coinTransactions)
-      .where(and(eq(coinTransactions.userId, U_FREE_RICH), eq(coinTransactions.reason, 'streak_save')))
-
-    const hit = rows.find((r) => r.refId === `${SUBJ}:2026-07-12`)
-    expect(hit).toBeDefined()
-    expect(hit!.delta).toBe(-STREAK_SAVE_COST)
   })
 })
 
-describe("streak coin-save — javob (recordAnswer) yo'li", () => {
-  it("1 ta javob (< 15 va streakQualified=false) streak yozmaydi; streakQualified=true da NET delta saqlanadi", async () => {
-    await seedStreak(U_FREE_RICH, '2026-06-10', 4, 0)
-    await seedCoins(U_FREE_RICH, 500)
+describe("Brilliant 1:1 Streak Charge — global yig‘ish qoidasi (3 birlik = +1, kuniga max 1)", () => {
+  it("bir kunda 3 ta dars/sessiya = +1 batareya; o‘sha kuni yana 3 ta dars qo‘shimcha batareya bermaydi", async () => {
+    await seedStreak(U_FREE, '2026-05-10', 4, 0, 0, null)
 
-    const singleAns = await progressRepository.recordAnswer({
-      userId: U_FREE_RICH, correct: true, questionId: 987654,
-      date: '2026-06-12', subjectId: SUBJ, clientToken: `streak-single-${Date.now()}`,
-    })
-    expect(singleAns.dailyStreak).toBeNull()
-    expect(singleAns.coinSaved).toBe(false)
-    expect(await balanceOf(U_FREE_RICH)).toBe(500 + COINS_PER_CORRECT_ANSWER)
+    const u1 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    expect(u1.chargeEarned).toBe(false)
+    expect(u1.streakCharges).toBe(0)
 
-    const qualified = await progressRepository.recordAnswer({
-      userId: U_FREE_RICH, correct: true, questionId: 987656,
-      date: '2026-06-12', subjectId: SUBJ, clientToken: `streak-net-${Date.now()}`,
-      streakQualified: true,
-    })
-    expect(qualified.coinSaved).toBe(true)
-    expect(qualified.dailyStreak).toBe(4)
-    expect(await balanceOf(U_FREE_RICH)).toBe(500 + COINS_PER_CORRECT_ANSWER * 2 - STREAK_SAVE_COST)
+    const u2 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    expect(u2.chargeEarned).toBe(false)
+    expect(u2.streakCharges).toBe(0)
+
+    const u3 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    expect(u3.chargeEarned).toBe(true)
+    expect(u3.streakCharges).toBe(1)
+
+    // Shu kunning o'zida 4, 5, 6-darslar: kunlik limit = 1 batareya
+    const u4 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    const u5 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    const u6 = await dailyRepository.touchActivity(U_FREE, '2026-05-11', SUBJ, 6, 6, undefined, true)
+    expect(u4.chargeEarned).toBe(false)
+    expect(u5.chargeEarned).toBe(false)
+    expect(u6.chargeEarned).toBe(false)
+    expect(u6.streakCharges).toBe(1)
+
+    // Ertasi kuni yana 3 ta birlik -> 2-batareya beriladi
+    await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
+    await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
+    const d2 = await dailyRepository.touchActivity(U_FREE, '2026-05-12', SUBJ, 6, 6, undefined, true)
+    expect(d2.chargeEarned).toBe(true)
+    expect(d2.streakCharges).toBe(2)
   })
 
-  it('javob yo\'lida balans yetmasa — seriya reset, coin tegilmaydi (mint baribir bo\'ladi)', async () => {
-    await seedStreak(U_FREE_POOR, '2026-06-10', 8, 0)
-    await seedCoins(U_FREE_POOR, STREAK_SAVE_COST - 1)
+  it('turli fanlardagi birliklar global tarzda qo‘shiladi (yhq + rustili + fizika)', async () => {
+    await seedStreak(U_GLOBAL, '2026-06-01', 2, 0, 0, null)
 
-    const res = await progressRepository.recordAnswer({
-      userId: U_FREE_POOR, correct: true, questionId: 987655,
-      date: '2026-06-12', subjectId: SUBJ, clientToken: `streak-poor-${Date.now()}`,
-      streakQualified: true,
+    const a = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'yhq', 6, 6, undefined, true)
+    const b = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'rustili', 6, 6, undefined, true)
+    const c = await dailyRepository.touchActivity(U_GLOBAL, '2026-06-02', 'fizika', 6, 6, undefined, true)
+
+    expect(a.chargeEarned).toBe(false)
+    expect(b.chargeEarned).toBe(false)
+    expect(c.chargeEarned).toBe(true)
+    expect(c.streakCharges).toBe(1)
+  })
+
+  it('kuniga 20 ta test savoli yechilganda (0 progressdan ham) darhol +1 batareya beriladi (kuniga max 1)', async () => {
+    await seedStreak(U_GLOBAL, '2026-07-01', 5, 0, 0, null)
+    await seedCoins(U_GLOBAL, 100)
+
+    const baseQ = 980_000
+    for (let i = 1; i < STREAK_CHARGE_DAILY_MIN_ANSWERS; i++) {
+      const r = await progressRepository.recordAnswer({
+        userId: U_GLOBAL, correct: true, questionId: baseQ + i,
+        date: '2026-07-02', subjectId: SUBJ, clientToken: `q20-${Date.now()}-${i}`,
+      })
+      expect(r.chargeEarned).toBe(false)
+    }
+
+    const r20 = await progressRepository.recordAnswer({
+      userId: U_GLOBAL, correct: true, questionId: baseQ + STREAK_CHARGE_DAILY_MIN_ANSWERS,
+      date: '2026-07-02', subjectId: SUBJ, clientToken: `q20-${Date.now()}-20`,
     })
+    expect(r20.chargeEarned).toBe(true)
+    expect(r20.streakCharges).toBe(1)
 
-    expect(res.coinSaved).toBe(false)
-    expect(res.dailyStreak).toBe(1)
-    expect(await balanceOf(U_FREE_POOR)).toBe(STREAK_SAVE_COST - 1 + COINS_PER_CORRECT_ANSWER)
+    // Shu kunning o'zida 21..25 savollar qo'shimcha batareya bermaydi (kuniga max 1)
+    const r25 = await progressRepository.recordAnswer({
+      userId: U_GLOBAL, correct: true, questionId: baseQ + 25,
+      date: '2026-07-02', subjectId: SUBJ, clientToken: `q20-${Date.now()}-25`,
+    })
+    expect(r25.chargeEarned).toBe(false)
+    expect(r25.streakCharges).toBe(1)
+    expect(await balanceOf(U_GLOBAL)).toBe(100 + COINS_PER_CORRECT_ANSWER * (STREAK_CHARGE_DAILY_MIN_ANSWERS + 1))
   })
 })

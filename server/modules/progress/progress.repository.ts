@@ -9,12 +9,17 @@ import { COINS_PER_CORRECT_ANSWER, COINS_PER_MISTAKE_FIXED } from '../../../shar
 import {
   XP_FIRST_CORRECT, XP_MISTAKE_FIXED, COINS_DAILY_ANSWER_CAP,
 } from '../../../shared/xp'
-import { STREAK_DAILY_MIN_ANSWERS, STREAK_SAVE_COST } from '../../../shared/streak-save'
+import {
+  STREAK_CHARGE_DAILY_MIN_ANSWERS,
+  STREAK_CHARGE_UNITS_REQUIRED,
+  STREAK_DAILY_MIN_ANSWERS,
+} from '../../../shared/streak-save'
 import {
   chargeEarnedReturningSql,
+  chargeProgressValueSql,
   chargeSaveEligibleSql,
   chargesValueSql,
-  coinSaveEligibleSql,
+  lastChargeEarnedDateValueSql,
   lastDailyDateValueSql,
   streakValueSql,
 } from '../daily/streak-save-sql'
@@ -104,13 +109,16 @@ export const progressRepository = {
     txOrDb?:       DB
     /** Server-tasdiqlangan sessiya yakuni (to'liq bilet yoki >= 15 sessiya javobi). */
     streakQualified?: boolean
+    /** Server-tasdiqlangan zaryad birligi (`number`: 0/1/3; `undefined` = faqat kunlik 20 savol qoidasi). */
+    chargeUnitQualified?: boolean | number
+    /** Kuniga 20 ta savol marrasida darhol +1 batareya berish (`single` bundan mustasno) */
+    allowDailyChargeMilestone?: boolean
   }): Promise<{
     updated: boolean
     dailyStreak: number | null
     duplicate: boolean
     reason?: 'replay' | 'gate'
     coinBalance: number | null
-    coinSaved: boolean
     chargeSaved: boolean
     chargeEarned: boolean
     streakCharges: number
@@ -136,8 +144,12 @@ export const progressRepository = {
 
     const ctx = { userId, subjectId, date }
     const chargeEligible = chargeSaveEligibleSql(ctx)
-    const coinEligible = coinSaveEligibleSql(ctx)
     const streakQualifiedFlag = Boolean(input.streakQualified)
+    const allowDailyMilestone = input.allowDailyChargeMilestone !== false
+    const explicitChargeUnits = typeof input.chargeUnitQualified === 'number'
+      ? Math.max(0, Math.trunc(input.chargeUnitQualified))
+      : (input.chargeUnitQualified ? 1 : 0)
+    const unitDelta = sql`COALESCE((SELECT charge_units FROM streak_qualified), 0)::int`
 
     const rows = await executeRows<{
       proceed: boolean
@@ -145,7 +157,6 @@ export const progressRepository = {
       daily_streak: number | null
       token_inserted: boolean
       coin_balance: number | null
-      coin_saved: boolean
       charge_saved: boolean
       charge_earned: boolean
       streak_charges: number | null
@@ -282,46 +293,58 @@ export const progressRepository = {
       ), streak_qualified AS (
         -- Streak barcha fanlar bo'yicha bugun >= 15 ta savolga urinish YOKI
         -- server-tasdiqlangan to'liq bilet/test yakunlanganda beriladi.
-        SELECT (
-          EXISTS (SELECT 1 FROM record_upsert)
-          AND (
-            ${streakQualifiedFlag}::boolean
-            OR (
-              COALESCE((
-                SELECT SUM(dr.answered) FROM daily_records dr
-                WHERE dr.user_id = ${userId} AND dr.date = ${date} AND dr.subject_id <> ${subjectId}
-              ), 0) + (SELECT answered FROM record_upsert)
-            ) >= ${STREAK_DAILY_MIN_ANSWERS}::int
-          )
-        ) AS ok
+        -- Zaryad birligi: to'liq sessiya/dars YOKI sessiyasiz rejimda kunlik 20 ta savol marrasi.
+        SELECT
+          (
+            EXISTS (SELECT 1 FROM record_upsert)
+            AND (
+              ${streakQualifiedFlag}::boolean
+              OR (
+                COALESCE((
+                  SELECT SUM(dr.answered) FROM daily_records dr
+                  WHERE dr.user_id = ${userId} AND dr.date = ${date} AND dr.subject_id <> ${subjectId}
+                ), 0) + (SELECT answered FROM record_upsert)
+              ) >= ${STREAK_DAILY_MIN_ANSWERS}::int
+            )
+          ) AS ok,
+          (
+            CASE
+              WHEN NOT EXISTS (SELECT 1 FROM record_upsert) THEN 0
+              WHEN ${allowDailyMilestone}::boolean
+                AND (
+                  COALESCE((
+                    SELECT SUM(dr.answered) FROM daily_records dr
+                    WHERE dr.user_id = ${userId} AND dr.date = ${date} AND dr.subject_id <> ${subjectId}
+                  ), 0) + (SELECT answered FROM record_upsert)
+                ) >= ${STREAK_CHARGE_DAILY_MIN_ANSWERS}::int
+                THEN ${STREAK_CHARGE_UNITS_REQUIRED}::int
+              ELSE ${explicitChargeUnits}::int
+            END
+          ) AS charge_units
       ), streak_upsert AS (
-        INSERT INTO daily_streaks (user_id, subject_id, streak, charges, last_daily_date, updated_at)
+        INSERT INTO daily_streaks (
+          user_id, subject_id, streak, charges, charge_progress, last_charge_earned_date, last_daily_date, updated_at
+        )
         SELECT
           ${userId},
           ${subjectId},
-          ${streakValueSql(ctx, chargeEligible, coinEligible)},
-          ${chargesValueSql(ctx, chargeEligible)},
+          ${streakValueSql(ctx, chargeEligible)},
+          ${chargesValueSql(ctx, chargeEligible, unitDelta)},
+          ${chargeProgressValueSql(ctx, chargeEligible, unitDelta)},
+          ${lastChargeEarnedDateValueSql(ctx, chargeEligible, unitDelta)},
           ${lastDailyDateValueSql(ctx)},
           now()
-        WHERE (SELECT ok FROM streak_qualified)
+        WHERE (SELECT ok FROM streak_qualified) OR COALESCE((SELECT charge_units FROM streak_qualified), 0) > 0
         ON CONFLICT (user_id, subject_id) DO UPDATE SET
-          streak = ${streakValueSql(ctx, chargeEligible, coinEligible)},
-          charges = ${chargesValueSql(ctx, chargeEligible)},
+          streak = ${streakValueSql(ctx, chargeEligible)},
+          charges = ${chargesValueSql(ctx, chargeEligible, unitDelta)},
+          charge_progress = ${chargeProgressValueSql(ctx, chargeEligible, unitDelta)},
+          last_charge_earned_date = ${lastChargeEarnedDateValueSql(ctx, chargeEligible, unitDelta)},
           last_daily_date = ${lastDailyDateValueSql(ctx)},
           updated_at = now()
         RETURNING streak, charges,
           (${chargeEligible}) AS charge_saved,
-          ${chargeEarnedReturningSql(ctx, chargeEligible)} AS charge_earned,
-          (${coinEligible}) AS coin_saved
-      ), save_ledger AS (
-        -- Idempotentlik gate'i: kuniga BITTA streak_save. Debit shu CTE
-        -- natijasiga bog'langani uchun o'sha kundagi keyingi javoblar
-        -- coin'ni qayta yechmaydi (ON CONFLICT DO NOTHING → qator yo'q).
-        INSERT INTO coin_transactions (user_id, delta, reason, ref_id)
-        SELECT ${userId}, ${-STREAK_SAVE_COST}, 'streak_save', ${`${subjectId}:${date}`}
-        WHERE (SELECT coin_saved FROM streak_upsert)
-        ON CONFLICT (user_id, reason, ref_id) DO NOTHING
-        RETURNING id
+          ${chargeEarnedReturningSql(ctx)} AS charge_earned
       ), coin_mint AS (
         -- Javoblardan kuniga olinadigan coin cheklangan (COINS_DAILY_ANSWER_CAP).
         -- Yangi to'g'ri javob: COINS_PER_CORRECT_ANSWER.
@@ -342,29 +365,11 @@ export const progressRepository = {
           ELSE 0
         END AS amount
       ), coin_award AS (
-        -- FIXPLAN #40: coin MINT — FAQAT gate'dan o'tgan TO'G'RI javob uchun
-        -- (EXISTS prog: anti-farm gate, kunlik kredit va token replay'ning
-        -- BARCHASI coin'ni ham to'xtatadi — farming qiymati ball bilan birga
-        -- cheklangan). Consumable idempotency: 'answer'+clientToken ref —
-        -- replay'da prog yo'q → qayta mint yo'q (ledger ikki marta yozilmaydi).
-        --
-        -- MINT VA STREAK-SAVE DEBIT BITTA YOZUVDA (net delta) — SABAB:
-        -- Postgres bitta statementda BIR QATORGA ikkita alohida upsert/UPDATE
-        -- CTE qo'llasa FAQAT BITTASI saqlanadi, ikkinchisi JIMGINA yo'qoladi
-        -- (real DB'da tekshirilgan). Alohida debit CTE mint'ni yo'q qilardi.
         INSERT INTO user_coins (user_id, balance, updated_at)
-        SELECT ${userId},
-          GREATEST(0,
-            (SELECT amount FROM coin_mint)
-            - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END)
-          ),
-          now()
+        SELECT ${userId}, (SELECT amount FROM coin_mint), now()
         WHERE (SELECT amount FROM coin_mint) > 0
-           OR EXISTS (SELECT 1 FROM save_ledger)
         ON CONFLICT (user_id) DO UPDATE SET
-          balance = user_coins.balance
-            + (SELECT amount FROM coin_mint)
-            - (CASE WHEN EXISTS (SELECT 1 FROM save_ledger) THEN ${STREAK_SAVE_COST}::int ELSE 0 END),
+          balance = user_coins.balance + (SELECT amount FROM coin_mint),
           updated_at = now()
         RETURNING balance
       ), coin_ledger AS (
@@ -398,7 +403,6 @@ export const progressRepository = {
         (SELECT streak::int FROM streak_upsert) AS daily_streak,
         EXISTS (SELECT 1 FROM tok) AS token_inserted,
         (SELECT balance::int FROM coin_award) AS coin_balance,
-        EXISTS (SELECT 1 FROM save_ledger) AS coin_saved,
         COALESCE((SELECT charge_saved FROM streak_upsert), false) AS charge_saved,
         COALESCE((SELECT charge_earned FROM streak_upsert), false) AS charge_earned,
         (SELECT charges::int FROM streak_upsert) AS streak_charges,
@@ -415,7 +419,7 @@ export const progressRepository = {
       if (!existing) {
         return {
           updated: false, dailyStreak: null, duplicate: false,
-          coinBalance: null, coinSaved: false, chargeSaved: false, chargeEarned: false, streakCharges: 0,
+          coinBalance: null, chargeSaved: false, chargeEarned: false, streakCharges: 0,
           xp: null, xpEarned: 0, coinsMinted: 0,
         }
       }
@@ -424,7 +428,7 @@ export const progressRepository = {
       const reason = token !== null && row?.token_inserted === false ? 'replay' : 'gate'
       return {
         updated: true, dailyStreak: null, duplicate: true, reason,
-        coinBalance: null, coinSaved: false, chargeSaved: false, chargeEarned: false, streakCharges: 0,
+        coinBalance: null, chargeSaved: false, chargeEarned: false, streakCharges: 0,
         xp: existing.xp ?? null, xpEarned: 0, coinsMinted: 0,
       }
     }
@@ -437,7 +441,6 @@ export const progressRepository = {
       dailyStreak,
       duplicate: false,
       coinBalance,
-      coinSaved: row?.coin_saved === true,
       chargeSaved: row?.charge_saved === true,
       chargeEarned: row?.charge_earned === true,
       streakCharges: row?.streak_charges != null ? Number(row.streak_charges) : 0,

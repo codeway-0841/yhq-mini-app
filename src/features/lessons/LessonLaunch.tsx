@@ -2,9 +2,10 @@ import { useEffect, useId, useRef, useState } from 'react'
 import DialogOverlay from '../../shared/components/DialogOverlay'
 import { useT, type Lang } from '../../shared/i18n'
 import BrilliantEndstateRive from '../../shared/components/BrilliantEndstateRive'
+import { resolveBrilliantRiveColor } from './lesson-transition'
 
-export const LESSON_LAUNCH_REVEAL_MS = 1350
-export const LESSON_LAUNCH_MS = 1600
+export const LESSON_LAUNCH_REVEAL_MS = 950
+export const LESSON_LAUNCH_MS = 1200
 export type LaunchOrigin = { x: number; y: number; size: number; sink: number; hasMascot?: boolean }
 
 export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
@@ -25,7 +26,7 @@ export function lessonLaunchOrigin(node: HTMLElement | null): LaunchOrigin {
  * - Silliq 320ms crossfade bilan to'g'ridan-to'g'ri darsga o'tadi.
  */
 export default function LessonLaunch({
-  origin: _origin,
+  origin,
   lang,
   onReveal,
   onFinish,
@@ -33,12 +34,16 @@ export default function LessonLaunch({
   accent,
   colorVariant,
   isLevel = false,
+  isReady = true,
+  zIndex = 65,
 }: {
   origin: LaunchOrigin
   lang: Lang
   accent?: string
   colorVariant?: number
   isLevel?: boolean
+  isReady?: boolean
+  zIndex?: number
   onReveal: () => void
   onFinish: () => void
   onCancel: () => void
@@ -48,55 +53,45 @@ export default function LessonLaunch({
   const callbacks = useRef({ onReveal, onFinish, onCancel })
   callbacks.current = { onReveal, onFinish, onCancel }
   const [fading, setFading] = useState(false)
+  const [minTimeElapsed, setMinTimeElapsed] = useState(false)
 
-  // Fan/Bob accent rangiga mos Brilliant Rive rangi (0..5)
-  const resolvedColor =
-    colorVariant !== undefined
-      ? colorVariant
-      : accent === '#f6b31f' || accent === 'var(--p-warning)'
-      ? 4 // Sariq / Oltin
-      : accent === '#8a4cff' || accent === 'var(--p-purple)'
-      ? 5 // Binafsha
-      : accent === '#22c55e' || accent === 'var(--p-success)'
-      ? 0 // Yashil
-      : accent === '#ef4444' || accent === 'var(--p-danger)'
-      ? 2 // Qizil
-      : accent === '#f97316'
-      ? 3 // To'q sariq
-      : 1 // Standart Royal Blue
+  const resolvedColor = resolveBrilliantRiveColor(accent, colorVariant)
 
   const dark =
     typeof document !== 'undefined' &&
     (document.body.dataset.theme === 'dark' || document.documentElement.classList.contains('dark'))
 
   useEffect(() => {
-    const revealTimer = window.setTimeout(() => {
-      setFading(true)
-      callbacks.current.onReveal()
-    }, LESSON_LAUNCH_REVEAL_MS)
+    const minTimer = window.setTimeout(() => setMinTimeElapsed(true), LESSON_LAUNCH_REVEAL_MS)
+    return () => window.clearTimeout(minTimer)
+  }, [])
 
+  useEffect(() => {
+    if (!minTimeElapsed || !isReady || fading) return
+    setFading(true)
+    callbacks.current.onReveal()
+  }, [minTimeElapsed, isReady, fading])
+
+  useEffect(() => {
+    if (!fading) return
     const finishTimer = window.setTimeout(() => {
       callbacks.current.onFinish()
-    }, LESSON_LAUNCH_MS)
-
-    return () => {
-      window.clearTimeout(revealTimer)
-      window.clearTimeout(finishTimer)
-    }
-  }, [])
+    }, Math.max(0, LESSON_LAUNCH_MS - LESSON_LAUNCH_REVEAL_MS))
+    return () => window.clearTimeout(finishTimer)
+  }, [fading])
 
   return (
     <DialogOverlay
       onClose={() => callbacks.current.onCancel()}
       position="center"
-      zIndex={65}
+      zIndex={zIndex}
       labelId={titleId}
-      backdropClassName="bg-pcanvas transition-opacity duration-300"
+      backdropClassName="bg-pcanvas transition-opacity duration-[240ms]"
       className="lesson-launch-overlay !p-0"
     >
       <div
-        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-all duration-300 ease-out animate-in fade-in duration-200 ${
-          fading ? 'opacity-0 scale-[1.015] pointer-events-none' : 'opacity-100 scale-100'
+        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity duration-[240ms] ease-out animate-in fade-in duration-75 ${
+          fading ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
         style={{
           paddingTop: 'max(env(safe-area-inset-top, 0px), var(--safe-top, 0px))',
@@ -111,8 +106,11 @@ export default function LessonLaunch({
         <main
           className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
           aria-labelledby={titleId}
+          style={{
+            transformOrigin: `${Math.round(origin.x)}px ${Math.round(origin.y)}px`,
+          }}
         >
-          <div className="relative size-full max-w-[560px] flex items-center justify-center scale-110 sm:scale-115">
+          <div className="relative size-full max-w-[520px] flex items-center justify-center">
             <BrilliantEndstateRive
               kind="lesson-loader"
               fit="cover"

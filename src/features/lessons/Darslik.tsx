@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, type CSSProperties } from 'react'
+import { useState, useEffect, useMemo, useRef, useCallback, type CSSProperties } from 'react'
 import { Navigate, useNavigate, useLocation } from 'react-router-dom'
 import { DEFAULT_SUBJECT_ID, RUSSIAN_LITERATURE_SUBJECT_ID, RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import SubjectBrilliantHome from './SubjectBrilliantHome'
@@ -14,6 +14,10 @@ import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
 import { type PathSelection } from './LearningPath'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
+import { preloadBrilliantTransitionAssets, startLessonTransition } from './lesson-transition'
+import { BrilliantCourseMap } from './course-engine/BrilliantCourseMap'
+import type { CourseBlockMeta } from './course-engine/types'
+import { courseSectionKey } from './course-engine/course-progress'
 import { canReadLesson } from './lesson-access'
 import LessonReader from './LessonReader'
 import ModuleComplete, { type CompletedModule } from './ModuleComplete'
@@ -29,10 +33,21 @@ import './learning-path.css'
 type Mod = typeof modules[number]
 
 export default function Darslik() {
+  const location = useLocation()
   const subjectId = useSubjectStore((s) => s.subjectId)
   if (subjectId === RUSSIAN_SUBJECT_ID) return <Navigate to="/darslik/rus-tili" replace />
   if (subjectId === RUSSIAN_LITERATURE_SUBJECT_ID) return <Navigate to="/darslik/rus-adabiyot" replace />
   if (subjectId !== DEFAULT_SUBJECT_ID) return <SubjectBrilliantHome subjectId={subjectId} />
+  const searchParams = new URLSearchParams(location.search ?? '')
+  const requestedBlock = Number(searchParams.get('block'))
+  const requestedSectionRaw = searchParams.get('section')
+  const requestedSection = requestedSectionRaw !== null && Number.isInteger(Number(requestedSectionRaw))
+    ? Number(requestedSectionRaw)
+    : undefined
+  const mapMod = Number.isFinite(requestedBlock) ? modules.find((m) => m.id === requestedBlock) : undefined
+  if (mapMod) {
+    return <YhqCourseMap initialBlockId={mapMod.id} initialSectionIdx={requestedSection} />
+  }
   return <YhqDarslikHome />
 }
 
@@ -119,6 +134,10 @@ function YhqDarslikHome() {
   }, [completion])
 
   useEffect(() => {
+    preloadBrilliantTransitionAssets()
+  }, [])
+
+  useEffect(() => {
     if (pendingFocusModId.current === activeMod.id && !reader) {
       pendingFocusModId.current = null
       document.getElementById(`lesson-module-title-${activeMod.id}`)?.focus({ preventScroll: true })
@@ -163,6 +182,19 @@ function YhqDarslikHome() {
     if (list) list.scrollTop = Math.max(0, activeLessonIdx - 1) * 68
   }, [activeMod.id, activeLessonIdx])
 
+  const navigateWithTransition = (to: string, state: unknown, modThemeAccent = theme.accent) => {
+    const reduced = settings.noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    if (!reduced && startLessonTransition({
+      kind: 'warmup',
+      lang: settings.language,
+      accent: modThemeAccent,
+      onReveal: () => navigate(to, { state }),
+    })) {
+      return
+    }
+    navigate(to, { state })
+  }
+
   const practiceLesson = (mod: Mod, lessonIdx: number) => {
     if (!canReadLesson(isPremium, mod.id, lessonIdx)) { requestPremium(); return }
     const map = lessonMap as Record<string, number[]>
@@ -171,13 +203,11 @@ function YhqDarslikHome() {
       const lessonTitle = (lessons[mod.id] && lessons[mod.id][lessonIdx])
         ? (ru ? lessons[mod.id][lessonIdx].titleRu : lessons[mod.id][lessonIdx].titleUz)
         : `${lessonIdx + 1}-dars`
-      navigate('/test/1', {
-        state: {
-          questionIds: lessonQuestionIds,
-          mode: 'lesson',
-          serverSelector: { type: 'lesson', moduleId: mod.id, lessonIndex: lessonIdx },
-          title: `${lessonTitle} — ${ru ? 'практика' : 'mashq'}`,
-        },
+      navigateWithTransition('/test/1', {
+        questionIds: lessonQuestionIds,
+        mode: 'lesson',
+        serverSelector: { type: 'lesson', moduleId: mod.id, lessonIndex: lessonIdx },
+        title: `${lessonTitle} — ${ru ? 'практика' : 'mashq'}`,
       })
       return
     }
@@ -189,13 +219,11 @@ function YhqDarslikHome() {
     const map = lessonMap as Record<string, number[]>
     const curatedIds = [...new Set((lessons[mod.id] ?? []).flatMap((_, idx) => map[`${mod.id}:${idx}`] ?? []))]
     if (curatedIds.length) {
-      navigate('/test/1', {
-        state: {
-          questionIds: curatedIds,
-          mode: 'module',
-          serverSelector: { type: 'module', moduleId: mod.id },
-          title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}`,
-        },
+      navigateWithTransition('/test/1', {
+        questionIds: curatedIds,
+        mode: 'module',
+        serverSelector: { type: 'module', moduleId: mod.id },
+        title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}`,
       })
       return
     }
@@ -206,7 +234,7 @@ function YhqDarslikHome() {
       showToast(tt('darslikNoQuestions'))
       return
     }
-    navigate('/test/1', { state: { questionIds: ids, title: `${ru ? mod.titleRu : mod.title} — ${ru ? 'практика' : 'mashq'}` } })
+    navigateWithTransition('/test/1', { questionIds: ids, title: `${ru ? mod.titleRu : mod.title} — ${ru ? 'практика' : 'mashq'}` })
   }
 
   const openLessonAt = (mod: Mod, idx: number, triggerEl?: HTMLButtonElement | null) => {
@@ -601,5 +629,180 @@ function YhqDarslikHome() {
       )}
       </div>
     </div>
+  )
+}
+
+function YhqPracticeTrigger({ onTrigger }: { onTrigger: () => void }) {
+  const triggerRef = useRef(onTrigger)
+  triggerRef.current = onTrigger
+  useEffect(() => {
+    triggerRef.current()
+  }, [])
+  return null
+}
+
+function YhqCourseMap({ initialBlockId, initialSectionIdx }: { initialBlockId: number; initialSectionIdx?: number }) {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const settings = useAppStore((s) => s.settings)
+  const isPremium = useAppStore((s) => s.tariff === 'premium')
+  const userId = useAppStore((s) => s.user?.id) ?? '0'
+  const doneFor = useLessonsStore((s) => s.byUser[userId] ?? {})
+  const markDone = useLessonsStore((s) => s.markDone)
+  const ru = settings.language === 'ru'
+  const tt = useT(settings.language)
+  const [completion, setCompletion] = useState<CompletedModule | null>(null)
+
+  const blocks = useMemo<CourseBlockMeta[]>(() => modules.map((mod) => ({
+    id: mod.id,
+    titleUz: mod.title,
+    titleRu: mod.titleRu,
+    sections: (lessons[mod.id] ?? []).map((lesson, idx) => ({
+      key: idx,
+      title: ru ? lesson.titleRu : lesson.titleUz,
+    })),
+  })), [ru])
+
+  const passed = useMemo(() => {
+    const next = new Set<string>()
+    for (const mod of modules) {
+      for (const idx of doneFor[mod.id] ?? []) {
+        next.add(courseSectionKey(mod.id, idx))
+      }
+    }
+    return next
+  }, [doneFor])
+
+  const openPracticeTest = (mod: Mod, lessonIdx: number) => {
+    const map = lessonMap as Record<string, number[]>
+    const ids = map[`${mod.id}:${lessonIdx}`] ?? []
+    const fallbackIds = ids.length > 0
+      ? ids
+      : [...new Set((lessons[mod.id] ?? []).flatMap((_, idx) => map[`${mod.id}:${idx}`] ?? []))]
+    if (fallbackIds.length === 0) return
+    const lessonObj = lessons[mod.id]?.[lessonIdx]
+    const title = lessonObj
+      ? (ru ? lessonObj.titleRu : lessonObj.titleUz)
+      : (ru ? mod.titleRu : mod.title)
+    const state = ids.length > 0
+      ? {
+          questionIds: ids,
+          mode: 'lesson',
+          serverSelector: { type: 'lesson', moduleId: mod.id, lessonIndex: lessonIdx },
+          title: `${title} — ${ru ? 'практика' : 'mashq'}`,
+        }
+      : {
+          questionIds: fallbackIds,
+          mode: 'module',
+          serverSelector: { type: 'module', moduleId: mod.id },
+          title: `${ru ? mod.titleRu : mod.title} — ${tt('pathLevelCheck')}`,
+        }
+    const reduced = settings.noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+    const modTheme = getBrilliantTheme(((mod.id - 1) % 8) + 1)
+    if (!reduced && startLessonTransition({
+      kind: 'warmup',
+      lang: settings.language,
+      accent: modTheme.accent,
+      onReveal: () => navigate('/test/1', { state }),
+    })) {
+      return
+    }
+    navigate('/test/1', { state })
+  }
+
+  return (
+    <>
+      <BrilliantCourseMap
+        key={`${initialBlockId}:${initialSectionIdx ?? ''}`}
+        subjectId={DEFAULT_SUBJECT_ID}
+        blocks={blocks}
+        progress={{ passed, lockSequential: false, loading: false, error: false, refresh: () => {} }}
+        courseTitle={ru ? 'Правила ПДД' : 'YHQ darsligi'}
+        courseSubtitle={ru ? 'Все темы курса' : 'Kursning barcha mavzulari'}
+        sectionCountLabel={ru ? 'уроков' : 'dars'}
+        unitLabelUz="MODUL"
+        unitLabelRu="МОДУЛЬ"
+        initialBlockId={initialBlockId}
+        initialSectionIdx={initialSectionIdx}
+        includeUnitCheck={false}
+        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        renderOverlay={(ctx) => {
+          const mod = modules.find((m) => m.id === ctx.block.id)
+          if (!mod) return null
+          if (!canReadLesson(isPremium, mod.id, ctx.sectionIdx)) {
+            return (
+              <YhqPracticeTrigger
+                key={`premium:${mod.id}:${ctx.sectionIdx}`}
+                onTrigger={() => {
+                  ctx.close()
+                  navigate('/premium')
+                }}
+              />
+            )
+          }
+          if (ctx.practiceMode) {
+            return (
+              <YhqPracticeTrigger
+                key={`${mod.id}:${ctx.sectionIdx}`}
+                onTrigger={() => {
+                  ctx.close()
+                  openPracticeTest(mod, ctx.sectionIdx)
+                }}
+              />
+            )
+          }
+          return (
+            <LessonReader
+              mod={mod}
+              lessonIdx={ctx.sectionIdx}
+              onClose={ctx.close}
+              onPremium={() => { ctx.close(); navigate('/premium') }}
+              onDone={(idx) => {
+                if (!canReadLesson(useAppStore.getState().tariff === 'premium', mod.id, idx)) {
+                  ctx.close()
+                  navigate('/premium')
+                  return
+                }
+                const list = lessons[mod.id] ?? []
+                const previous = useLessonsStore.getState().byUser[userId]?.[mod.id] ?? []
+                const wasDone = list.every((_, i) => previous.includes(i))
+                markDone(userId, mod.id, idx)
+                if (!wasDone && list.every((_, i) => i === idx || previous.includes(i))) {
+                  const progress = useLessonsStore.getState().byUser[userId] ?? {}
+                  const courseDone = modules.every((m) => (lessons[m.id] ?? []).every((_, i) => progress[m.id]?.includes(i)))
+                  ctx.close()
+                  setCompletion({
+                    finished: mod,
+                    next: courseDone ? undefined : modules[modules.findIndex((m) => m.id === mod.id) + 1],
+                    courseDone,
+                  })
+                }
+              }}
+              onPractice={(idx) => {
+                if (!canReadLesson(isPremium, mod.id, idx)) {
+                  ctx.close()
+                  navigate('/premium')
+                  return
+                }
+                ctx.close()
+                openPracticeTest(mod, idx)
+              }}
+            />
+          )
+        }}
+      />
+      {completion && (
+        <ModuleComplete
+          completion={completion}
+          lang={settings.language}
+          onContinue={() => {
+            const nextId = completion.next?.id
+            setCompletion(null)
+            if (nextId) navigate({ pathname: location.pathname, search: `?block=${nextId}` }, { replace: true })
+          }}
+          onStay={() => setCompletion(null)}
+        />
+      )}
+    </>
   )
 }

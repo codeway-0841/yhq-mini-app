@@ -691,7 +691,7 @@ const UZ = {
   hw3Title: "Bosqichlar",
   hw3Desc: "7, 14, 30 va undan ortiq kun — har bir bosqichda sizni yutuq kutadi.",
   hw4Title: "Seriya zaryadi 🔋",
-  hw4Desc: "Har 7 kunlik faol seriyada 1 ta Seriya zaryadi to‘planadi (maks. 2 ta). Kun o‘tkazilsa avval zaryad, zaryad bo‘lmasa 100 tanga seriyangizni saqlaydi!",
+  hw4Desc: "Har 3 ta tugallangan dars/test sessiyasi (yoki umumiy testlarda 20 ta savol) uchun +1 zaryad beriladi (kuniga ko‘pi bilan 1 ta, zaxira maks. 2 ta, kuymaydi). Kun o‘tkazilsa seriyangizni avtomatik saqlaydi!",
   monthsList: "Yanvar|Fevral|Mart|Aprel|May|Iyun|Iyul|Avgust|Sentabr|Oktabr|Noyabr|Dekabr",
   weekdaysList: "Du|Se|Cho|Pa|Ju|Sha|Ya",
   // Yutuqlar (Achievements) & Gamifikatsiya
@@ -794,7 +794,6 @@ const UZ = {
   smsOptInLabel: "SMS eslatma va yangiliklar",
   leagueTab: "Liga", allTimeTab: "Umumiy",
   dailyTab: "Kunlik", weeklyTab: "Haftalik", monthlyTab: "Oylik",
-  streakSavedToast: "🔋 Seriya zaryadi ishladi — 100 tanga evaziga seriyangiz saqlandi!",
   leagueBronze: "Bronza", leagueSilver: "Kumush", leagueGold: "Oltin", leaguePlat: "Platina",
   leagueWeekInfo: "Dushanba kuni top 30% yuqoriga, pastki 30% pastga suriladi",
   promoteZone: "Yuqori ligaga chiqish zonasi", demoteZone: "Pastga tushish zonasi",
@@ -1912,7 +1911,7 @@ const RU: Record<Keys, string> = {
   hw3Title: "Этапы",
   hw3Desc: "7, 14, 30 и более дней — на каждом этапе вас ждёт награда.",
   hw4Title: "Заряд серии 🔋",
-  hw4Desc: "За каждые 7 дней активной серии начисляется 1 заряд серии (макс. 2). Если пропустите 1 день, сначала сработает заряд, иначе — 100 монет!",
+  hw4Desc: "За каждые 3 завершённых урока или полных теста (либо 20 ответов в общей практике) начисляется +1 заряд (макс. 1 в день, запас до 2, не сгорают). Если пропустите день, заряд автоматически сохранит серию!",
   monthsList: "Январь|Февраль|Март|Апрель|Май|Июнь|Июль|Август|Сентябрь|Октябрь|Ноябрь|Декабрь",
   weekdaysList: "Пн|Вт|Ср|Чт|Пт|Сб|Вс",
   // Достижения & Геймификация
@@ -2015,7 +2014,6 @@ const RU: Record<Keys, string> = {
   smsOptInLabel: "SMS-уведомления и новости",
   leagueTab: "Лига", allTimeTab: "Всё время",
   dailyTab: "День", weeklyTab: "Неделя", monthlyTab: "Месяц",
-  streakSavedToast: "🔋 Сработал заряд серии — серия сохранена за 100 монет!",
   leagueBronze: "Бронза", leagueSilver: "Серебро", leagueGold: "Золото", leaguePlat: "Платина",
   leagueWeekInfo: "В понедельник топ 30% поднимаются, последние 30% падают",
   promoteZone: "Зона повышения", demoteZone: "Зона понижения",

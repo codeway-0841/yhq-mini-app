@@ -185,6 +185,23 @@ describe('DarslikTopPills', () => {
     expect(days[4].isToday).toBe(true)
   })
 
+  it('marks two consecutive missed days as battery-saved when protected by 2 charges', () => {
+    const days = buildStreakWeekDays({
+      today: '2026-11-15',
+      streak: 4,
+      isExtendedToday: true,
+      historyRows: [
+        { date: '2026-11-11', subjectId: 'rustili', answered: 6, correct: 6, fixed: 0 },
+        { date: '2026-11-12', subjectId: 'rustili', answered: 6, correct: 6, fixed: 0 },
+        // 2026-11-13 and 2026-11-14 missed -> both protected by 2 battery charges!
+        { date: '2026-11-15', subjectId: 'rustili', answered: 6, correct: 6, fixed: 0 },
+      ],
+      ru: false,
+    })
+
+    expect(days.map((d) => d.status)).toEqual(['completed', 'completed', 'saved', 'saved', 'completed'])
+  })
+
   it('syncs server streak, battery charges, extended state, and bestStreak on mount', async () => {
     const today = todayStr()
     const dPrev1 = new Date(`${today}T00:00:00.000Z`)

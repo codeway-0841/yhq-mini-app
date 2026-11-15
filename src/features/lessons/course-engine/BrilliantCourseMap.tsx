@@ -11,6 +11,7 @@ import { playSound } from '../../../shared/lib/sounds'
 import { PathMascot } from '../LessonToken'
 import { getBrilliantTheme } from '../BrilliantLevelsCarousel'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from '../LessonLaunch'
+import { preloadBrilliantTransitionAssets, resolveBrilliantRiveColor, startLessonTransition } from '../lesson-transition'
 import { CourseMapNodeArt } from './CourseMapNodeArt'
 import PracticeWarmUpLaunch from './PracticeWarmUpLaunch'
 import { courseSectionKey, getLockedSectionIndices, getNextCourseSection } from './course-progress'
@@ -94,6 +95,10 @@ export function BrilliantCourseMap({
   const entryTimerRef = useRef<number | null>(null)
 
   useEffect(() => {
+    preloadBrilliantTransitionAssets()
+  }, [])
+
+  useEffect(() => {
     setOpenBlocks((prev) => {
       if (blocks.length === 0) return prev
       const next = new Set(prev)
@@ -163,7 +168,7 @@ export function BrilliantCourseMap({
   const activeBlock = blocks.find((b) => b.id === active.blockId) ?? currentBlock
   const sheetTheme = getBrilliantTheme((((active.blockId - 1) % 8) + 1))
   const mapTheme = getBrilliantTheme((((initialBlockId ?? active.blockId) - 1) % 8) + 1)
-  const nodeColor = mapTheme.accent === '#f6b31f' ? 4 : mapTheme.accent === '#8a4cff' ? 5 : 1
+  const nodeColor = resolveBrilliantRiveColor(mapTheme.accent)
   const selectedMeta = initialBlockId ? blocks.find((b) => b.id === initialBlockId) : undefined
 
   const activeSections = activeBlock.sections
@@ -323,7 +328,7 @@ export function BrilliantCourseMap({
       return
     }
     const isCurrentNode = blockId === currentBlock.id && idx === currentIdx
-    const delayMs = isCurrentNode ? 1000 : 850
+    const delayMs = isCurrentNode ? 520 : 420
     setPendingEntry({ blockId, idx })
     entryTimerRef.current = window.setTimeout(() => {
       entryTimerRef.current = null
@@ -354,13 +359,13 @@ export function BrilliantCourseMap({
     }
 
     const launchNow = () => {
-      const reduced = !initialBlockId || noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+      const reduced = noAnimation || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
       const resolvedQuiz = quiz || activeCheck
       if (reduced) {
         if (renderOverlay) {
           setOverlay({ blockId: activeBlock.id, idx: safeIdx, quiz: resolvedQuiz, practiceMode: false })
         } else {
-          onOpenSection?.({ block: activeBlock, sectionIdx: safeIdx, section, quiz: resolvedQuiz, practiceMode: false })
+          onOpenSection?.({ block: activeBlock, sectionIdx: safeIdx, section, quiz: resolvedQuiz, practiceMode })
         }
         return
       }
@@ -370,6 +375,30 @@ export function BrilliantCourseMap({
         const rect = node.getBoundingClientRect()
         origin.x = rect.left + rect.width / 2
         origin.y = rect.top + rect.height / 2
+      }
+      const revealTarget = () => {
+        if (renderOverlay) {
+          setOverlay({ blockId: activeBlock.id, idx: safeIdx, quiz: resolvedQuiz, practiceMode: false })
+        } else {
+          onOpenSection?.({ block: activeBlock, sectionIdx: safeIdx, section, quiz: resolvedQuiz, practiceMode })
+        }
+      }
+      const launchTheme = getBrilliantTheme((((activeBlock.id - 1) % 8) + 1))
+      const launchColor = resolveBrilliantRiveColor(launchTheme.accent)
+      if (
+        !renderOverlay &&
+        startLessonTransition({
+          kind: practiceMode ? 'warmup' : 'lesson',
+          origin,
+          lang,
+          accent: launchTheme.accent,
+          colorVariant: launchColor,
+          isLevel: Boolean(resolvedQuiz),
+          onReveal: revealTarget,
+          onCancel: () => setMapResetEpoch((n) => n + 1),
+        })
+      ) {
+        return
       }
       setLaunch({
         origin,
@@ -389,7 +418,7 @@ export function BrilliantCourseMap({
     activeBlock,
     renderOverlay,
     scheduleEntry,
-    initialBlockId,
+    lang,
     noAnimation,
     onOpenSection,
   ])
@@ -402,7 +431,7 @@ export function BrilliantCourseMap({
       }
       return
     }
-    if (((activeDone && hasPractice) || activeCheck) && renderOverlay) {
+    if ((activeDone && (hasPractice || !renderOverlay)) || (activeCheck && renderOverlay)) {
       openSection(true, true)
       return
     }
@@ -626,11 +655,12 @@ export function BrilliantCourseMap({
             )
           })}
 
-          {openBlocks.has(active.blockId) && activeSections.length > 0 && (
+          {activeSections.length > 0 && (
             <div
               className="cmap-sheet"
               ref={sheetRef}
-              data-open={scrolled || Boolean(initialBlockId) || Boolean(picked) ? 'true' : 'false'}
+              data-open="true"
+              data-launching={pendingEntry || launch || warmUpLaunch ? 'true' : 'false'}
               data-ahead={activeLocked || activeAhead ? 'true' : 'false'}
               data-locked={activeLocked ? 'true' : 'false'}
               data-done={activeDone ? 'true' : 'false'}
@@ -699,7 +729,7 @@ export function BrilliantCourseMap({
 
       {launch && (() => {
         const launchTheme = getBrilliantTheme((((launch.target.block.id - 1) % 8) + 1))
-        const launchColor = launchTheme.accent === '#f6b31f' ? 4 : launchTheme.accent === '#8a4cff' ? 5 : 1
+        const launchColor = resolveBrilliantRiveColor(launchTheme.accent)
         return (
           <LessonLaunch
             origin={launch.origin}
@@ -749,7 +779,7 @@ export function BrilliantCourseMap({
 
       {warmUpLaunch && (() => {
         const warmUpTheme = getBrilliantTheme((((warmUpLaunch.blockId - 1) % 8) + 1))
-        const warmUpColor = warmUpTheme.accent === '#f6b31f' ? 4 : warmUpTheme.accent === '#8a4cff' ? 5 : 1
+        const warmUpColor = resolveBrilliantRiveColor(warmUpTheme.accent)
         return (
           <PracticeWarmUpLaunch
             lang={lang}

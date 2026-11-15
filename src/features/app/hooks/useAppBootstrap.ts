@@ -232,10 +232,12 @@ export function useAppBootstrap(): AppBootstrapState {
         questionId:   info.questionId,
         correct:      info.correct,
         subjectId:    info.subjectId,
-        date:         info.date,
-        dailyStreak:  info.dailyStreak,
-        coinSaved:    info.coinSaved,
-        coinBalance:  info.coinBalance,
+        date:          info.date,
+        dailyStreak:   info.dailyStreak,
+        chargeSaved:   info.chargeSaved,
+        chargeEarned:  info.chargeEarned,
+        streakCharges: info.streakCharges,
+        coinBalance:   info.coinBalance,
         xp:           info.xp,
       })
     })

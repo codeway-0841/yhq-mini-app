@@ -1,0 +1,4 @@
+ALTER TABLE "daily_streaks" ADD COLUMN "charge_progress" integer DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE "daily_streaks" ADD COLUMN "last_charge_earned_date" text;--> statement-breakpoint
+ALTER TABLE "daily_streaks" ADD CONSTRAINT "chk_daily_streak_charge_progress_range" CHECK ("daily_streaks"."charge_progress" >= 0 AND "daily_streaks"."charge_progress" <= 2);--> statement-breakpoint
+ALTER TABLE "daily_streaks" ADD CONSTRAINT "chk_daily_streak_earned_date_fmt" CHECK ("daily_streaks"."last_charge_earned_date" IS NULL OR "daily_streaks"."last_charge_earned_date" ~ '^\d{4}-\d{2}-\d{2}$');

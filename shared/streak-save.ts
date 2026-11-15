@@ -1,29 +1,35 @@
 /**
- * Streak va Streak Charge (Zaryad) qoidalari — server + client YAGONA MANBA.
+ * Streak va Streak Charge (Zaryad) qoidalari — server + client YAGONA MANBA (Brilliant 1:1).
  *
  * Kunlik faollik sharti:
  *   1) Test rejimida kamida 1 ta to'liq sessiyani (bilet/mavzu/mock/imtihon,
  *      >= 5 savol; `single` bundan mustasno) yakunlash, YOKI
- *   2) Marafon / Attestatsiya / Milliy sertifikat / testlarda kuniga kamida
- *      15 ta savol yechish (xato yoki to'g'ri farqsiz).
+ *   2) Kuniga kamida 15 ta savol yechish, YOKI
+ *   3) Interaktiv darsni muvaffaqiyatli tugatish.
+ *
+ * Seriya Zaryadi (batareya) yig'ish qoidasi (barcha fanlarda global):
+ *   - Har STREAK_CHARGE_UNITS_REQUIRED (3) ta to'liq dars/test sessiyasi tugatilganda
+ *     YOKI bir kunda kamida STREAK_CHARGE_DAILY_MIN_ANSWERS (20) ta test savoli
+ *     yechilganda +1 zaryad beriladi.
+ *   - Maksimum STREAK_CHARGE_MAX (2) ta batareya saqlanadi; hech qachon kuymaydi.
+ *   - Bir kalendar kunda ko'pi bilan 1 ta batareya beriladi (`lastChargeEarnedDate < today`).
  *
  * Uzilish va Zaryad bosqichlari (gapDays = ketma-ket TO'LIQ o'tkazib yuborilgan kunlar):
- *   gapDays <= 0                → seriya +1 (yangi kunda); har 7 kunda +1 zaryad (max 2)
- *   gapDays == 1 + charges > 0  → 1 ta zaryad sarflanadi, seriya SAQLANADI (o'smaydi)
- *   gapDays == 1 + charges == 0 → STREAK_SAVE_COST (100 coin) evaziga saqlanadi (o'smaydi)
- *   qolgan barcha holat         → reset (streak = 1, coin tegilmaydi)
+ *   gapDays <= 0                → seriya +1 (yangi kunda) / o'zgarmaydi (shu kunda)
+ *   gapDays >= 1 && charges >= gapDays → gapDays ta zaryad sarflanadi, seriya SAQLANADI (o'smaydi)
+ *   gapDays >= 1 && charges < gapDays  → reset (streak = 1, mavjud zaryadlar kuymaydi)
  *
  * Server SQL (`server/modules/daily/streak-save-sql.ts`) shu jadval bilan
  * BIR XIL qaror beradi — biri o'zgarsa ikkinchisi ham o'zgarishi shart.
  */
 
-export const STREAK_SAVE_COST = 100
 export const STREAK_DAILY_MIN_ANSWERS = 15
 export const STREAK_COMPLETION_MIN_QUESTIONS = 5
+export const STREAK_CHARGE_DAILY_MIN_ANSWERS = 20
 export const STREAK_CHARGE_MAX = 2
-export const STREAK_CHARGE_EARN_EVERY = 7
+export const STREAK_CHARGE_UNITS_REQUIRED = 3
 
-export type StreakOutcome = 'continue' | 'charge_save' | 'coin_save' | 'reset'
+export type StreakOutcome = 'continue' | 'charge_save' | 'reset'
 
 /** Test sessiyasidagi javob streak shartini bajardimi? */
 export function doesTestAnswerQualifyStreak(input: {
@@ -37,24 +43,39 @@ export function doesTestAnswerQualifyStreak(input: {
   return input.completed && input.totalQuestions >= STREAK_COMPLETION_MIN_QUESTIONS
 }
 
-/** Shu seriya bosqichida yangi zaryad beriladimi (har 7 kunda +1) */
-export function isChargeEarnMilestone(nextStreak: number): boolean {
-  return nextStreak > 0 && nextStreak % STREAK_CHARGE_EARN_EVERY === 0
+/** Test sessiyasidagi javob zaryad hisoblagichi uchun nechta birlik (`0`, `1`, yoki to'liq `3`) beradi? */
+export function getTestAnswerChargeUnits(input: {
+  mode: string
+  answeredInSession?: number
+  totalQuestions: number
+  completed: boolean
+}): number {
+  if (input.mode === 'single') return 0
+  if (
+    (input.answeredInSession ?? 0) >= STREAK_CHARGE_DAILY_MIN_ANSWERS
+    || (input.completed && input.totalQuestions >= STREAK_CHARGE_DAILY_MIN_ANSWERS)
+  ) {
+    return STREAK_CHARGE_UNITS_REQUIRED
+  }
+  return input.completed && input.totalQuestions >= STREAK_COMPLETION_MIN_QUESTIONS ? 1 : 0
 }
 
-/** `gapDays === 1` va zaryad 0 bo'lganda coin bilan saqlash bosqichiga tushadi */
-export function isCoinSaveStage(gapDays: number, charges: number): boolean {
-  return gapDays === 1 && charges <= 0
+/** Test sessiyasi zaryad hisoblagichi uchun kamida 1 birlik beradimi? */
+export function doesTestAnswerQualifyChargeUnit(input: {
+  mode: string
+  answeredInSession?: number
+  totalQuestions: number
+  completed: boolean
+}): boolean {
+  return getTestAnswerChargeUnits(input) > 0
 }
 
 export function decideStreakOutcome(input: {
   gapDays: number
   charges: number
-  balance: number
 }): StreakOutcome {
-  const { gapDays, charges, balance } = input
+  const { gapDays, charges } = input
   if (gapDays <= 0) return 'continue'
-  if (gapDays !== 1) return 'reset'
-  if (charges > 0) return 'charge_save'
-  return balance >= STREAK_SAVE_COST ? 'coin_save' : 'reset'
+  if (charges >= gapDays) return 'charge_save'
+  return 'reset'
 }

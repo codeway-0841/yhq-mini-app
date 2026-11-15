@@ -24,7 +24,7 @@ import { cronRepository } from './cron.repository'
 import { distributeWeeklyPrizes } from '../leaderboard/tournament-prize.service'
 import { bossRepository } from '../boss/boss.repository'
 import { bossPeriodKey } from '../../../shared/boss-battle'
-import { decideStreakOutcome, STREAK_SAVE_COST } from '../../../shared/streak-save'
+import { decideStreakOutcome } from '../../../shared/streak-save'
 
 const router = Router()
 
@@ -73,26 +73,23 @@ async function runDailyReminder(): Promise<CronRunResult> {
 
     // Personalized: har userning eng uzun streak'i (xabarga kiritiladi)
     const streakOf = await cronRepository.topStreaksForUsers(targets)
-    // Streak coin-save: bugun ham o'tkazib yuborilsa nima bo'lishini oldindan
-    // ogohlantirish (foydalanuvchi coin avtomatik yechilishini bilishi shart).
+    // Streak Zaryadi: bugun ham o'tkazib yuborilsa zaryad saqlab qoladimi yoki yo'qmi
     const riskOf = await cronRepository.streakSaveRiskForUsers(targets, today)
 
     const bot = new Bot(token)
     const keyboard = () => new InlineKeyboard().webApp('🔥 Mashqni boshlash', APP_URL)
-    const coinSaveWarning = (uid: string): string => {
+    const chargeRiskWarning = (uid: string): string => {
       const risk = riskOf.get(uid)
       if (!risk) return ''
       const outcome = decideStreakOutcome({
-        gapDays: risk.gapDaysTomorrow, charges: risk.charges, balance: risk.balance,
+        gapDays: risk.gapDaysTomorrow, charges: risk.charges,
       })
       if (outcome === 'charge_save') {
-        return `\n\n🔋 Seriya zaryadingiz bor — bugun qolib ketsa, 1 ta zaryad seriyangizni saqlab qoladi.`
-      }
-      if (outcome === 'coin_save') {
-        return `\n\n🧊 Bugun ham mashq qilmasangiz, ${STREAK_SAVE_COST} coin evaziga seriyangiz saqlanadi.`
+        const needed = Math.max(1, risk.gapDaysTomorrow)
+        return `\n\n🔋 Seriya zaryadingiz bor — bugun qolib ketsa, ${needed} ta zaryad seriyangizni saqlab qoladi.`
       }
       if (outcome === 'reset' && risk.gapDaysTomorrow <= 1) {
-        return `\n\n⚠️ Zaryad va ${STREAK_SAVE_COST} coin yo'q — seriyangiz saqlanmaydi, 0 ga tushadi.`
+        return `\n\n⚠️ Seriya zaryadingiz yo'q — bugun mashq qilmasangiz seriyangiz 0 ga tushadi.`
       }
       return ''
     }
@@ -101,9 +98,9 @@ async function runDailyReminder(): Promise<CronRunResult> {
       if (s > 0) {
         return (
           `🔥 ${s} kunlik seriyangiz xavf ostida!\n\n` +
-          `Bugun hali mashq qilmadingiz — 1 ta bilet yoki 15 ta savol seriyangizni saqlab qoladi. ` +
+          `Bugun hali mashq qilmadingiz — 1 ta dars, to'liq bilet yoki 15 ta savol seriyangizni saqlab qoladi. ` +
           `1 kun o'tkazilsa intizom 0 ga tushadi!` +
-          coinSaveWarning(uid)
+          chargeRiskWarning(uid)
         )
       }
       return (

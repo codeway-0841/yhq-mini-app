@@ -36,11 +36,13 @@ export interface SubmitServerPayload {
 export interface SubmitServerSuccess {
   outcome:    SubmitOutcome
   serverData: {
-    correct:     boolean | null
-    dailyStreak: number | null
-    coinSaved?:  boolean
-    coinBalance?: number | null
-    xp?:         number | null
+    correct:       boolean | null
+    dailyStreak:   number | null
+    chargeSaved?:  boolean
+    chargeEarned?: boolean
+    streakCharges?: number
+    coinBalance?:  number | null
+    xp?:           number | null
   }
 }
 
@@ -81,11 +83,13 @@ export const answerService = {
       return {
         outcome,
         serverData: {
-          correct:     res.correct,
-          dailyStreak: res.dailyStreak,
-          coinSaved:   res.coinSaved,
-          coinBalance: res.coinBalance,
-          xp:          res.xp,
+          correct:       res.correct,
+          dailyStreak:   res.dailyStreak,
+          chargeSaved:   res.chargeSaved,
+          chargeEarned:  res.chargeEarned,
+          streakCharges: res.streakCharges,
+          coinBalance:   res.coinBalance,
+          xp:            res.xp,
         },
       }
     } catch (err) {
