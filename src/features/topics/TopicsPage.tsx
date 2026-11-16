@@ -6,6 +6,7 @@ import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { api } from '../../shared/api'
 import { config } from '../../shared/config'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import { useT } from '../../shared/i18n'
 import { modules } from '../../content/modules'
 import { lessons as lessonsData } from '../../content/lessons'
@@ -492,7 +493,7 @@ function BrilliantPathTabs({
               >
                 <div className="br-path-tab-box">
                   <img
-                    src={meta.pathImage}
+                    src={resolveCdnUrl(meta.pathImage) ?? meta.pathImage}
                     alt=""
                     className="size-9 object-contain select-none pointer-events-none"
                   />
@@ -571,7 +572,7 @@ function BrilliantCourseSection({
 
             <div className="br-path-hero-art">
               <img
-                src={meta.pathImage}
+                src={resolveCdnUrl(meta.pathImage) ?? meta.pathImage}
                 alt=""
                 className="max-w-[72px] max-h-[72px] object-contain drop-shadow-sm select-none pointer-events-none"
               />
@@ -621,7 +622,7 @@ function BrilliantCourseSection({
                   {/* Chap tomondagi 3D Mavzu rasmi (Brilliant 1:1 ~68dp) */}
                   <div className="relative size-[68px] shrink-0 flex items-center justify-center select-none">
                     <img
-                      src={item.image}
+                      src={resolveCdnUrl(item.image) ?? item.image}
                       alt=""
                       className="max-w-full max-h-full object-contain pointer-events-none"
                       loading="lazy"

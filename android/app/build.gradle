@@ -43,13 +43,14 @@ android {
             if (keystorePropsFile.exists()) {
                 signingConfig signingConfigs.release
             }
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     // APK chiqish fayl nomi: kivvi-debug.apk / kivvi-release.apk
-    // Og'ir media fayllar (yhq, math-print, physics-print, kutubxona) CDN orqali
-    // yuklanadi — APK hajmini 18-20MB ga tushirish uchun bundle ichidan chiqariladi.
+    // Og'ir/duplikat/demo media fayllar APK hajmini kamaytirish uchun bundle ichidan chiqariladi
+    // (CDN orqali yuklanadi: yhq, authors, math-print, physics-print, kutubxona, demo .riv).
     applicationVariants.all { variant ->
         variant.outputs.all {
             outputFileName = "kivvi-${variant.buildType.name}.apk"
@@ -57,11 +58,63 @@ android {
         variant.mergeAssetsProvider.configure {
             doLast {
                 delete fileTree(dir: outputDir, includes: [
+                    // CDN / R2 orqali yuklanib CacheStorage'da keshlanadigan og'ir media papkalar
                     'public/images/yhq/**',
+                    'public/images/authors/**',
+                    'public/images/signs/**',
+                    'public/images/onboarding/**',
                     'public/math-print/**',
                     'public/physics-print/**',
                     'public/kutubxona/**',
-                    'public/mediapipe/**'
+                    'public/mediapipe/**',
+                    'public/badges/**',
+                    'public/leagues/**',
+                    'public/lessons/**',
+                    'public/pdfjs/**',
+                    'public/brilliant/courses/**',
+                    // Play Store, OpenGraph, Telegram bot va ishlatilmaydigan debug/duplikat rasmlar
+                    'public/images/kivvi-mascot-cutout.png',
+                    'public/images/brand-wordmark.png',
+                    'public/images/google-play-feature-graphic.png',
+                    'public/images/onboarding-mascot.webp',
+                    'public/images/og-cover.png',
+                    'public/images/brand-badge.png',
+                    'public/images/boss/**',
+                    'public/playstore/**',
+                    'public/playstore-icon-*.png',
+                    'public/Download_on_the_App_Store_Badge.svg',
+                    'public/Google_Play_Store_badge_EN.svg',
+                    'public/darslik-map/node-active.png',
+                    'public/darslik-map/node-active-anim.png',
+                    // Duplikat, ishlatilmaydigan, demo (/maskotlar, /rive-mvp) va ikkilamchi promo .riv lar
+                    // (Asosiy + Onboarding .riv hamda darslik-map APK ichida 0ms oflayn qoladi)
+                    'public/brilliant/post_checkout_apr_01_26.riv',
+                    'public/brilliant/koji-gameboard.e2320c48.riv',
+                    'public/brilliant/rux-koji-briefcase.ed4e6e67.riv',
+                    'public/brilliant/rux-koji-book.bc252df9.riv',
+                    'public/brilliant/onboarding-koji.4bd87127.riv',
+                    'public/brilliant/nux_revamp.d192d940.riv',
+                    'public/brilliant/lesson-loader.ac940c03.riv',
+                    'public/brilliant/push_opt_in_apr_22_26.riv',
+                    'public/brilliant/nux-refresh.62cd2c8c.riv',
+                    'public/brilliant/nux-koji-onboarding.6a89f9a2.riv',
+                    'public/brilliant/level-insertion-acceptance.0b247613.riv',
+                    'public/brilliant/rux_long_apr_22_26.riv',
+                    'public/brilliant/rux_short_apr_22_26.riv',
+                    'public/brilliant/nux_koji_reactions_v2.c14662ad.riv',
+                    'public/brilliant/nux-koji.2611eb62.riv',
+                    'public/brilliant/ask_koji.410199b8.riv',
+                    'public/brilliant/koji-speech-bubble.5abaf0ba.riv',
+                    'public/brilliant/nux_loaders.51875c1e.riv',
+                    'public/brilliant/personalized-practice-nudge.8d7e7c26.riv',
+                    'public/brilliant/post-checkout-flow-premium-pro.a15dbd04.riv',
+                    'public/brilliant/new_year_endstate_promo.32852c2a.riv',
+                    'public/brilliant/level-insertion-intro.fb376b71.riv',
+                    'public/brilliant/leagues-badges.45867fa0.riv',
+                    'public/brilliant/level-check.e74e7d3c.riv',
+                    'public/brilliant/lcr-koji-transition.c8f8f68d.riv',
+                    'public/brilliant/level-check-assessment-intro.1dfae46f.riv',
+                    'public/brilliant/koji-jump-back-in.7a4d3c18.riv'
                 ])
             }
         }

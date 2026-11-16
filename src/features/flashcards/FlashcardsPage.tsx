@@ -13,6 +13,7 @@ import { ChevronLeft, RotateCcw, PartyPopper, TrafficCone, Check, X } from 'luci
 import { signCategories, getSignsByCategory } from '../../content/signs'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import { useT } from '../../shared/i18n'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
@@ -203,7 +204,7 @@ export default function FlashcardsPage() {
             <div className="flip-face rounded-3xl bg-pcard p-6 flex flex-col items-center justify-center gap-4 shadow-xl">
               <div className="w-40 h-40 rounded-2xl bg-pcard flex items-center justify-center shadow-xs">
                 {current.image
-                  ? <img src={current.image} alt={currentName} className="w-32 h-32 object-contain" />
+                  ? <img src={resolveCdnUrl(current.image) ?? current.image} alt={currentName} className="w-32 h-32 object-contain" />
                   : <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />}
               </div>
               <p className="text-[11px] font-semibold text-psubtle">

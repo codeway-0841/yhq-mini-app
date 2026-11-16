@@ -268,7 +268,7 @@ describe('CourseMapPage — kurs xaritasi', () => {
     expect(block2Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
   })
 
-  it('sarlavha markazida bob rasmi, mashq tugmasi va aqlli sakrash tugmasini ko‘rsatadi', async () => {
+  it('sarlavha markazida bob rasmi, aqlli sakrash tugmasi va kartaga mos balandlikni ko‘rsatadi', async () => {
     render(<CourseMapPage />)
     await waitFor(() => expect(api.getDarslikProgress).toHaveBeenCalled())
 
@@ -298,10 +298,7 @@ describe('CourseMapPage — kurs xaritasi', () => {
     fireEvent.click(nodesOf(2)[0])
     expect(block1Section.querySelector('.cmap-pill')).toHaveClass('is-current')
     expect(block2Section.querySelector('.cmap-pill')).not.toHaveClass('is-current')
-
-    const fab = screen.getByRole('button', { name: 'Shaxsiy mashq' })
-    expect(fab).toBeEnabled()
-    fireEvent.click(fab)
-    await waitFor(() => expect(screen.getByText('Mashq yuklanmoqda…')).toBeInTheDocument(), { timeout: 2500 })
+    expect(document.querySelector('.cmap')).toHaveAttribute('style', expect.stringContaining('--cmap-sheet-h'))
+    expect(screen.queryByRole('button', { name: 'Shaxsiy mashq' })).toBeNull()
   })
 })

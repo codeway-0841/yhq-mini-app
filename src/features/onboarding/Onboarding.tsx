@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { ChevronLeft } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import { SignalIndicator } from './illustrations/SignalIndicator'
 import { KojiMascot } from './KojiMascot'
 import {
@@ -311,7 +312,7 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                       >
                         <div className="flex size-[42px] shrink-0 items-center justify-center">
                           <img
-                            src={item.icon}
+                            src={resolveCdnUrl(item.icon) ?? item.icon}
                             alt=""
                             className="max-h-full max-w-full object-contain"
                           />
@@ -404,7 +405,7 @@ export default function Onboarding({ onDone }: OnboardingProps) {
                       >
                         <div className="flex size-[38px] shrink-0 items-center justify-center">
                           <img
-                            src={item.icon}
+                            src={resolveCdnUrl(item.icon) ?? item.icon}
                             alt=""
                             className="max-h-full max-w-full object-contain"
                           />

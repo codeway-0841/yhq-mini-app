@@ -1,4 +1,5 @@
 import { RiveCanvas } from '../mascot-studio'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 
 export type KojiMode = 'reminders' | 'workout' | 'testimonial' | 'place' | 'hero'
 
@@ -21,7 +22,7 @@ export function KojiMascot({ mode, className = '' }: KojiMascotProps) {
     return (
       <div className={`relative flex items-center justify-center select-none ${className}`}>
         <img
-          src="/images/onboarding/hero_rocket.png"
+          src={resolveCdnUrl('/images/onboarding/hero_rocket.png') ?? '/images/onboarding/hero_rocket.png'}
           alt="Brilliant Rocket"
           className="max-h-full max-w-full object-contain animate-koji-float"
         />
@@ -33,7 +34,7 @@ export function KojiMascot({ mode, className = '' }: KojiMascotProps) {
     return (
       <div className={`relative flex items-center justify-center select-none ${className}`}>
         <img
-          src="/images/onboarding/place_cards.png"
+          src={resolveCdnUrl('/images/onboarding/place_cards.png') ?? '/images/onboarding/place_cards.png'}
           alt="You're in the right place"
           className="max-h-full max-w-full object-contain animate-koji-float"
         />
@@ -47,7 +48,7 @@ export function KojiMascot({ mode, className = '' }: KojiMascotProps) {
         {/* Asl dialog kartochkasi va mascot */}
         <div className="relative flex items-center justify-center">
           <img
-            src="/images/onboarding/notification_prompt.png"
+            src={resolveCdnUrl('/images/onboarding/notification_prompt.png') ?? '/images/onboarding/notification_prompt.png'}
             alt="Reach your daily goal with reminders"
             className="max-h-full max-w-full object-contain"
           />

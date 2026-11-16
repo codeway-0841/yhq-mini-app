@@ -217,16 +217,22 @@ export function BrilliantCourseMap({
         ? (renderOverlay ? tt('pathReview') : tt('rusDarslikStartPractice'))
         : tt('pathStart')
 
-  /* Panel balandligi (sticky karta uchun) va markazi (pastdagi varaq uchun). */
+  /* Panel balandligi (sticky karta uchun), markazi va pastki karta balandligi (sakrash tugmasi uchun). */
   useEffect(() => {
     const root = rootRef.current
     const header = root?.querySelector<HTMLElement>('.cmap-bar')
     if (!root || !header) return
+    const sheet = sheetRef.current
     const measure = () => {
       root.style.setProperty('--cmap-header', `${header.getBoundingClientRect().height}px`)
       const rect = root.getBoundingClientRect()
       const pill = root.querySelector<HTMLElement>('.cmap-pill')?.getBoundingClientRect()
       root.style.setProperty('--cmap-center', `${Math.round(pill ? pill.left + pill.width / 2 : rect.left + rect.width / 2)}px`)
+      if (sheet) {
+        root.style.setProperty('--cmap-sheet-h', `${Math.round(sheet.offsetHeight)}px`)
+      } else {
+        root.style.removeProperty('--cmap-sheet-h')
+      }
     }
     measure()
     window.addEventListener('resize', measure)
@@ -236,11 +242,12 @@ export function BrilliantCourseMap({
     const observer = new ResizeObserver(measure)
     observer.observe(header)
     observer.observe(root)
+    if (sheet) observer.observe(sheet)
     return () => {
       window.removeEventListener('resize', measure)
       observer.disconnect()
     }
-  }, [blocks.length])
+  }, [blocks.length, activeSections.length, activeTitle, activeDone, hasPractice])
 
   /* Scroll — karta ekran tubidagi eng yaqin mavzuga ergashadi va joriy tugun ko'rinmasa sakrash tugmasini ko'rsatadi. */
   useEffect(() => {
@@ -485,43 +492,6 @@ export function BrilliantCourseMap({
     }
     openSection(activeCheck, false)
   }, [activeLocked, activeDone, activeCheck, hasPractice, currentBlock.id, currentIdx, openSection, renderOverlay])
-
-  const startPracticeFab = useCallback(() => {
-    if (!hasPractice || pendingEntry) return
-    const targetBlock = activeLocked ? currentBlock : activeBlock
-    const targetIdx = activeLocked
-      ? Math.max(0, currentIdx)
-      : activeCheck
-        ? Math.max(0, activeBlock.sections.length - 1)
-        : Math.min(active.idx, Math.max(0, activeBlock.sections.length - 1))
-    const targetSection = targetBlock.sections[targetIdx]
-    if (!targetSection) return
-    playSound('start-lesson')
-    track(`${trackEventPrefix}_open_practice`, {
-      subject_id: subjectId,
-      block_id: targetBlock.id,
-      section_idx: targetIdx,
-      quiz: true,
-      source: 'fab',
-    })
-    scheduleEntry(targetBlock.id, targetIdx, () => {
-      setWarmUpLaunch({ blockId: targetBlock.id, idx: targetIdx })
-      setOverlay({ blockId: targetBlock.id, idx: targetIdx, quiz: true, practiceMode: true })
-      setPracticeReady(false)
-    })
-  }, [
-    hasPractice,
-    pendingEntry,
-    activeLocked,
-    currentBlock,
-    currentIdx,
-    activeBlock,
-    activeCheck,
-    active.idx,
-    trackEventPrefix,
-    subjectId,
-    scheduleEntry,
-  ])
 
   const closeOverlay = useCallback(() => {
     setOverlay(null)
@@ -867,57 +837,6 @@ export function BrilliantCourseMap({
           <path d="m5 9 7 7 7-7" />
         </svg>
       </button>
-
-      {hasPractice && activeSections.length > 0 && (
-        <button
-          type="button"
-          className="cmap-practice-fab"
-          data-launching={pendingEntry || launch || warmUpLaunch ? 'true' : 'false'}
-          disabled={Boolean(pendingEntry)}
-          onClick={startPracticeFab}
-          aria-label={isRu ? 'Персональная тренировка' : 'Shaxsiy mashq'}
-          title={isRu ? 'Персональная тренировка' : 'Shaxsiy mashq'}
-        >
-          <svg viewBox="0 0 84 84" width="76" height="76" fill="none" aria-hidden="true">
-            <defs>
-              <radialGradient id={`${sheenWideId}-pad-shadow`} cx="50%" cy="50%" r="50%">
-                <stop offset="25%" stopColor="#000" stopOpacity="0.28" />
-                <stop offset="100%" stopColor="#000" stopOpacity="0" />
-              </radialGradient>
-              <linearGradient id={`${sheenWideId}-bar`} x1="16" y1="22" x2="66" y2="54" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="#9d8dff" />
-                <stop offset="52%" stopColor="#f292c4" />
-                <stop offset="100%" stopColor="#ffd16b" />
-              </linearGradient>
-              <linearGradient id={`${sheenWideId}-plate-l`} x1="20" y1="16" x2="40" y2="38" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="#c5bbff" />
-                <stop offset="100%" stopColor="#8575ef" />
-              </linearGradient>
-              <linearGradient id={`${sheenWideId}-plate-r`} x1="46" y1="30" x2="68" y2="52" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="#ffd97e" />
-                <stop offset="100%" stopColor="#f398a6" />
-              </linearGradient>
-            </defs>
-            {/* 3D grey circular pedestal */}
-            <ellipse className="cmap-fab-lip" cx="42" cy="61.5" rx="26" ry="13.5" fill="#707078" />
-            <ellipse className="cmap-fab-face" cx="42" cy="57.5" rx="26" ry="13.5" fill="#a2a2aa" />
-            <ellipse cx="42" cy="57.5" rx="19" ry="9" fill={`url(#${sheenWideId}-pad-shadow)`} />
-            {/* 3D angled gradient dumbbell */}
-            <g transform="translate(42 36) rotate(-32) translate(-42 -36)">
-              <rect x="30" y="32.5" width="24" height="7" rx="3.5" fill={`url(#${sheenWideId}-bar)`} />
-              {/* left plate */}
-              <rect x="23" y="24" width="9" height="24" rx="4.5" fill="#7161d8" />
-              <ellipse cx="24" cy="36" rx="5.5" ry="12" fill={`url(#${sheenWideId}-plate-l)`} />
-              <ellipse cx="22.5" cy="36" rx="3" ry="6.5" fill="#d9d2ff" opacity="0.55" />
-              {/* right inner collar + main cap */}
-              <rect x="51" y="25.5" width="7" height="21" rx="3.5" fill="#f097ad" />
-              <rect x="54" y="23.5" width="9" height="25" rx="4.5" fill="#ea8e76" />
-              <ellipse cx="62" cy="36" rx="5.5" ry="12.5" fill={`url(#${sheenWideId}-plate-r)`} />
-              <ellipse cx="62.5" cy="36" rx="2.6" ry="5.5" fill="#fff3c4" opacity="0.7" />
-            </g>
-          </svg>
-        </button>
-      )}
 
       {launch && (() => {
         const launchTheme = getBrilliantTheme((((launch.target.block.id - 1) % 8) + 1))

@@ -3,6 +3,7 @@ import type { RoadSign } from '../../../content/signs'
 import { TrafficCone, ExternalLink } from 'lucide-react'
 import ModalShell from '../../../shared/components/ModalShell'
 import { Button } from '../../../shared/components/ui/button'
+import { resolveCdnUrl } from '../../../shared/config/cdn'
 
 // ── Lazy signs chunk (audit HIGH-3) ─────────────────────────────────────────
 // signs.ts statik import TestPage chunk'iga ~565KB (2 til × ~300KB) qo'shardi —
@@ -76,7 +77,7 @@ function SignDetailModal({ sign, onClose }: { sign: RoadSign; onClose: () => voi
 
         <div className="size-36 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3">
           {sign.image ? (
-            <img src={sign.image} alt={sign.name} className="w-full h-full object-contain" />
+            <img src={resolveCdnUrl(sign.image) ?? sign.image} alt={sign.name} className="w-full h-full object-contain" />
           ) : (
             <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />
           )}
@@ -224,7 +225,7 @@ function renderInlineMarkdown(text: string, onSignClick: (code: string) => void,
             title={`${label} — ma'lumotlarini ko'rish`}
           >
             {sign?.image ? (
-              <img src={sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
+              <img src={resolveCdnUrl(sign.image) ?? sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
             ) : (
               <TrafficCone size={13} className="inline-block flex-shrink-0 text-blue-500" />
             )}
@@ -304,7 +305,7 @@ function parsePlainRoadSigns(text: string, onSignClick: (code: string) => void, 
           title={`${label} — ma'lumotlarini ko'rish`}
         >
           {sign.image ? (
-            <img src={sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
+            <img src={resolveCdnUrl(sign.image) ?? sign.image} alt={code} className="size-4 object-contain inline-block flex-shrink-0" />
           ) : (
             <TrafficCone size={13} className="inline-block flex-shrink-0 text-blue-500" />
           )}

@@ -674,7 +674,7 @@ function GenericEndstateMvp({
       >
         <BrilliantRiveContainer className="aspect-square">
           <MvpRiveStage
-            file="post_checkout_apr_01_26.riv"
+            file="post-checkout-flow-premium-pro.a15dbd04.riv"
             artboard="MAIN_PostCheckoutFlow"
             stateMachine="PostCheckoutFlow"
             viewModel="PostCheckoutFlowVM"

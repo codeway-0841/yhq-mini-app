@@ -7,6 +7,7 @@ import { signCategories, getSignsByCategory, searchSigns, type RoadSign, type Si
 import { rulesChapters } from '../../content/rules'
 import { getSignCategoryIcon } from '../../shared/config/sign-category-icons'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import ModalShell from '../../shared/components/ModalShell'
 
 function renderBoldText(str: string) {
@@ -77,7 +78,7 @@ function SignModal({ sign, onClose, lang }: { sign: RoadSign; onClose: () => voi
         </div>
         <div className="size-40 mx-auto rounded-2xl bg-white/95 shadow-md flex items-center justify-center mb-4 p-3 relative z-10">
           {sign.image ? (
-            <img src={sign.image} alt={signName} className="w-full h-full object-contain" />
+            <img src={resolveCdnUrl(sign.image) ?? sign.image} alt={signName} className="w-full h-full object-contain" />
           ) : (
             <TrafficCone size={48} strokeWidth={1.5} className="text-stone-400" />
           )}
@@ -170,7 +171,7 @@ function SignsGrid({
             >
               <div className="w-16 h-16 rounded-xl bg-white/95 shadow-2xs flex items-center justify-center mb-2 p-1.5 overflow-hidden">
                 {sign.image ? (
-                  <img src={sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
+                  <img src={resolveCdnUrl(sign.image) ?? sign.image} alt={signName} className="w-full h-full object-contain" loading="lazy" />
                 ) : (
                   <TrafficCone size={24} strokeWidth={1.5} className="text-stone-400" />
                 )}

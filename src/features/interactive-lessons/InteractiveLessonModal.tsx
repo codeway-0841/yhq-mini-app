@@ -4,6 +4,7 @@ import { registerModal } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import Confetti from '../../shared/components/Confetti'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 
@@ -23,6 +24,7 @@ export function InteractiveLessonModal({
   onChapterComplete
 }: InteractiveLessonModalProps) {
   const [rewardClaimed, setRewardClaimed] = useState<{ chapter: number; coins: number; xp: number } | null>(null)
+  const resolvedPath = resolveCdnUrl(path) ?? path
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
 
@@ -117,7 +119,7 @@ export function InteractiveLessonModal({
           )}
 
           <a
-            href={path}
+            href={resolvedPath}
             target="_blank"
             rel="noopener noreferrer"
             title="Alohida oynada ochish"
@@ -147,7 +149,7 @@ export function InteractiveLessonModal({
       {/* Embedded Lesson Canvas */}
       <div className="flex-1 w-full h-full relative bg-[#0c1017]">
         <iframe
-          src={path}
+          src={resolvedPath}
           title={title}
           className="w-full h-full border-0 absolute inset-0"
           allow="autoplay; fullscreen"

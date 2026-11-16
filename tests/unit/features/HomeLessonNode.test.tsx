@@ -2,13 +2,16 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { render, waitFor } from '@testing-library/react'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 
-const mocks = vi.hoisted(() => ({ instances: [] as Array<{
-  inputs: Array<{ name: string; value: boolean | number; fire: ReturnType<typeof vi.fn> }>
-  cleanup: ReturnType<typeof vi.fn>
-  pause: ReturnType<typeof vi.fn>
-  play: ReturnType<typeof vi.fn>
-  drawFrame: ReturnType<typeof vi.fn>
-}> }))
+const mocks = vi.hoisted(() => ({
+  configs: [] as Array<{ useOffscreenRenderer?: boolean }>,
+  instances: [] as Array<{
+    inputs: Array<{ name: string; value: boolean | number; fire: ReturnType<typeof vi.fn> }>
+    cleanup: ReturnType<typeof vi.fn>
+    pause: ReturnType<typeof vi.fn>
+    play: ReturnType<typeof vi.fn>
+    drawFrame: ReturnType<typeof vi.fn>
+  }>,
+}))
 
 vi.mock('@rive-app/webgl2-course', () => {
   class MockRive {
@@ -18,7 +21,11 @@ vi.mock('@rive-app/webgl2-course', () => {
     play = vi.fn()
     drawFrame = vi.fn()
     resizeDrawingSurfaceToCanvas = vi.fn()
-    constructor(config: { onLoad: () => void }) { mocks.instances.push(this); queueMicrotask(config.onLoad) }
+    constructor(config: { onLoad: () => void; useOffscreenRenderer?: boolean }) {
+      mocks.configs.push(config)
+      mocks.instances.push(this)
+      queueMicrotask(config.onLoad)
+    }
     stateMachineInputs() { return this.inputs }
   }
   const api = { Rive: MockRive, RuntimeLoader: { setWasmUrl: vi.fn(), setWasmFallbackUrl: vi.fn() }, Layout: class {}, Fit: { Contain: 'contain' }, Alignment: { Center: 'center' } }
@@ -30,6 +37,7 @@ vi.mock('@rive-app/webgl2-course/rive_fallback.wasm?url', () => ({ default: '/ri
 import { HomeLessonNode } from '../../../src/features/lessons/HomeLessonNode'
 
 beforeEach(() => {
+  mocks.configs.length = 0
   mocks.instances.length = 0
   useAppStore.setState({ settings: { ...useAppStore.getState().settings, noAnimation: false } })
   vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, arrayBuffer: async () => new ArrayBuffer(8) }))
@@ -45,6 +53,7 @@ describe('HomeLessonNode', () => {
     expect(rive.inputs.find((input) => input.name === 'color')?.value).toBe(4)
     expect(rive.inputs.find((input) => input.name === 'select')?.value).toBe(true)
     expect(rive.inputs.find((input) => input.name === 'koji_appear')?.fire).toHaveBeenCalledOnce()
+    expect(mocks.configs[0]?.useOffscreenRenderer).toBe(true)
     view.unmount()
     expect(rive.cleanup).toHaveBeenCalledOnce()
   })
@@ -79,5 +88,21 @@ describe('HomeLessonNode', () => {
     expect(darkInput?.value).toBe(false)
     document.body.dataset.theme = 'dark'
     await waitFor(() => expect(darkInput?.value).toBe(true))
+  })
+
+  it('sekin yuklanishda (>160ms) bo‘sh joy o‘rniga fallback belgisini ko‘rsatadi', async () => {
+    vi.useFakeTimers()
+    try {
+      vi.resetModules()
+      vi.stubGlobal('fetch', vi.fn().mockImplementation(() => new Promise(() => {})))
+      const { HomeLessonNode: FreshNode } = await import('../../../src/features/lessons/HomeLessonNode')
+      const view = render(<FreshNode color={1} fallback="/darslik-map/node-active-ring.svg" />)
+      expect(view.container.querySelector('img')).toBeNull()
+
+      await vi.advanceTimersByTimeAsync(170)
+      expect(view.container.querySelector('img')?.getAttribute('src')).toBe('/darslik-map/node-active-ring.svg')
+    } finally {
+      vi.useRealTimers()
+    }
   })
 })

@@ -16,6 +16,7 @@ import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { Button } from '../../shared/components/ui/button'
 import { MarkdownView, parseMarkdown, type MdBlock } from '../darslik-rustili'
+import { formatImageSrc } from '../test'
 import {
   BrilliantCourseHome,
   BrilliantCourseMap,
@@ -267,7 +268,7 @@ function LiteratureEraReaderOverlay({
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-psurface text-xs font-medium text-pfg transition-transform shrink-0 active:scale-95 cursor-pointer"
               >
                 <img
-                  src={author.img}
+                  src={formatImageSrc(author.img) ?? author.img}
                   alt={author.name}
                   className="size-4 rounded-full object-cover"
                   loading="lazy"

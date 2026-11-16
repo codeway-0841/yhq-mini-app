@@ -801,7 +801,7 @@ function IcpNodeMvp({ ctx }: { ctx: ExtraMvpCtx }) {
           >
             <div className="h-[134px] w-[128px] shrink-0">
               <MvpRiveStage
-                file="koji-gameboard.e2320c48.riv"
+                file="/darslik-map/koji-gameboard.riv"
                 artboard="Gameboard Node"
                 stateMachine="node_all"
                 smTriggers={NODE_ALL_INIT_TRIGS}

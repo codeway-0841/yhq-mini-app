@@ -173,6 +173,7 @@ function prefetchRouteChunks() {
       // Achievement badge'lar asosiy sahifa chunk'laridan SO'NG keshga olinadi —
       // Profil'ga birinchi kirishda rasmlar bir zumda chiqadi va JS yuklanishiga xalaqit bermaydi.
       void import('./shared/lib/badge-preload').then((m) => m.preloadAchievementImages())
+      void import('./shared/lib/rive-preload').then((m) => m.preloadSecondaryRiveAssets())
     }
   }
 

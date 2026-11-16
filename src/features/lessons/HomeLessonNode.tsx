@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import type { Rive, StateMachineInput } from '@rive-app/webgl2-course'
+import { useRiveFallbackState } from '../../shared/hooks/useRiveFallbackState'
 import { useAppStore } from '../../shared/store/useAppStore'
 
 let asset: Promise<ArrayBuffer> | null = null
@@ -40,8 +41,7 @@ export function HomeLessonNode({
   )
   reducedMotionRef.current = reducedMotion
 
-  const [ready, setReady] = useState(false)
-  const [failed, setFailed] = useState(false)
+  const { status, showFallback, beginLoading, markReady, markError } = useRiveFallbackState()
 
   const setInput = (name: string, value: boolean | number) => {
     const input = inputsRef.current.find((item) => item.name === name)
@@ -49,8 +49,7 @@ export function HomeLessonNode({
   }
 
   useEffect(() => {
-    setReady(false)
-    setFailed(false)
+    beginLoading()
     const element = canvas.current
     if (!element) return
     let disposed = false
@@ -127,15 +126,12 @@ export function HomeLessonNode({
             frame = requestAnimationFrame(() => {
               if (disposed || !instance) return
               fireAppearAndSettle()
-              setReady(true)
+              markReady()
             })
           })
         },
         onLoadError: () => {
-          if (!disposed) {
-            setReady(false)
-            setFailed(true)
-          }
+          if (!disposed) markError()
         },
       })
       if (typeof ResizeObserver !== 'undefined') {
@@ -143,10 +139,7 @@ export function HomeLessonNode({
         resizeObserver.observe(element)
       }
     }).catch(() => {
-      if (!disposed) {
-        setReady(false)
-        setFailed(true)
-      }
+      if (!disposed) markError()
     })
     return () => {
       disposed = true
@@ -157,7 +150,7 @@ export function HomeLessonNode({
       themeObserver?.disconnect()
       instance?.cleanup()
     }
-  }, [])
+  }, [beginLoading, markReady, markError])
 
   useEffect(() => {
     const instance = instanceRef.current
@@ -195,8 +188,8 @@ export function HomeLessonNode({
       onPointerEnter={() => setInput('hover', true)}
       onPointerLeave={() => setInput('hover', false)}
     >
-      <canvas ref={canvas} className="absolute inset-0 h-full w-full" style={{ visibility: ready ? 'visible' : 'hidden' }} />
-      {failed && !ready && <img src={fallback} alt="" className="h-full w-full object-contain" />}
+      <canvas ref={canvas} className="absolute inset-0 h-full w-full" style={{ visibility: status === 'ready' ? 'visible' : 'hidden' }} />
+      {showFallback && <img src={fallback} alt="" className="h-full w-full object-contain" />}
     </span>
   )
 }

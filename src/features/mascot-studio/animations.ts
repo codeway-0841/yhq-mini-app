@@ -94,7 +94,7 @@ export const MASCOT_ANIMATIONS: readonly MascotAnimation[] = [
   },
   {
     id: 'celebration',
-    file: 'post_checkout_apr_01_26.riv',
+    file: 'post-checkout-flow-premium-pro.a15dbd04.riv',
     titleKey: 'mascotCelebrationTitle',
     descriptionKey: 'mascotCelebrationDesc',
     poster: '/brilliant/mascot_done.png',

@@ -15,6 +15,7 @@ import { libraryBooks, librarySubjectLabel } from '../../content/library'
 import { haptics } from '../../platform/haptics'
 import { openExternalLink } from '../../platform/open-link'
 import { Button } from '../../shared/components/ui/button'
+import { resolveCdnUrl } from '../../shared/config/cdn'
 import { useT } from '../../shared/i18n'
 import { track } from '../../shared/lib/analytics'
 import { goBack } from '../../shared/lib/navigation'
@@ -106,10 +107,10 @@ export default function LibraryReaderPage() {
           useWorkerFetch: false,
           // Darsliklardagi CID/Cyrillic matn va nostandart shriftlar original
           // ko'rinishda chiqishi uchun (public/pdfjs — copy-pdfjs-assets.mjs).
-          cMapUrl: '/pdfjs/cmaps/',
+          cMapUrl: resolveCdnUrl('/pdfjs/cmaps/') ?? '/pdfjs/cmaps/',
           cMapPacked: true,
-          standardFontDataUrl: '/pdfjs/standard_fonts/',
-          wasmUrl: '/pdfjs/wasm/',
+          standardFontDataUrl: resolveCdnUrl('/pdfjs/standard_fonts/') ?? '/pdfjs/standard_fonts/',
+          wasmUrl: resolveCdnUrl('/pdfjs/wasm/') ?? '/pdfjs/wasm/',
         })
         loadingTask.onProgress = ({ loaded, total }: { loaded: number; total: number }) => {
           if (!disposed && total > 0) setProgress(Math.min(100, Math.round((loaded / total) * 100)))

@@ -4,6 +4,7 @@ import { cn } from '../../shared/lib/cn'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
+import { formatImageSrc } from '../test'
 import { parseInline, parseMarkdown, type MdBlock, type MdInline, type QuizQuestion } from './markdown'
 
 function Inline({ parts, className }: { parts: MdInline[]; className?: string }) {
@@ -187,7 +188,7 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
         <figure className="my-6 flex flex-col items-center">
           <div className="relative overflow-hidden rounded-2xl border border-purple-500/30 bg-slate-900/90 shadow-2xl max-w-xs sm:max-w-sm w-full group">
             <img
-              src={block.src}
+              src={formatImageSrc(block.src) ?? block.src}
               alt={block.alt}
               className="w-full object-cover max-h-72 sm:max-h-80 transition-transform duration-500 group-hover:scale-105"
               loading="lazy"

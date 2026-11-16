@@ -1,22 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import type { Rive } from '@rive-app/webgl2-course'
+import { fetchRiveAssetBuffer, resolveCdnUrl } from '../../shared/config/cdn'
+import { useRiveFallbackState } from '../../shared/hooks/useRiveFallbackState'
 import './rive-canvas.css'
 
-type CanvasStatus = 'loading' | 'ready' | 'error'
-
 let wasmConfigured = false
-const rivBufferCache = new Map<string, Promise<ArrayBuffer>>()
 
 function getRivBuffer(file: string): Promise<ArrayBuffer> {
-  let p = rivBufferCache.get(file)
-  if (!p) {
-    p = fetch(`/brilliant/${file}`).then((r) => {
-      if (!r.ok) throw new Error(`Failed to load /brilliant/${file}: HTTP ${r.status}`)
-      return r.arrayBuffer()
-    })
-    rivBufferCache.set(file, p)
-  }
-  return p
+  return fetchRiveAssetBuffer(file)
 }
 
 export function RiveCanvas({
@@ -51,7 +42,7 @@ export function RiveCanvas({
   const stateMachineRef = useRef(stateMachine)
   const artboardRef = useRef(artboard)
   const playRef = useRef(play)
-  const [status, setStatus] = useState<CanvasStatus>('loading')
+  const { status, showFallback, canvasVisibilityClass, beginLoading, markReady, markError } = useRiveFallbackState()
   animationRef.current = animation
   stateMachineRef.current = stateMachine
   artboardRef.current = artboard
@@ -63,13 +54,13 @@ export function RiveCanvas({
     let disposed = false
     let instance: Rive | null = null
     let resizeObserver: ResizeObserver | null = null
-    setStatus('loading')
+    beginLoading()
 
     void Promise.all([
       import('@rive-app/webgl2-course'),
       import('@rive-app/webgl2-course/rive.wasm?url'),
       import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
-      getRivBuffer(file).catch(() => null),
+      getRivBuffer(file),
     ]).then(async ([pkg, wasmMod, fallbackWasmMod, buffer]) => {
       const riveModule = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
       const { Rive, RuntimeLoader, Layout, Fit, Alignment } = riveModule
@@ -97,6 +88,7 @@ export function RiveCanvas({
         canvas,
         artboard: artboardRef.current,
         autoplay: playRef.current,
+        useOffscreenRenderer: true,
         layout: new Layout({
           fit: fit === 'cover' ? Fit.Cover : Fit.Contain,
           alignment: alignMode,
@@ -124,10 +116,10 @@ export function RiveCanvas({
             instance.pause()
           }
           riveRef.current = instance
-          setStatus('ready')
+          markReady()
         },
         onLoadError: () => {
-          if (!disposed) setStatus('error')
+          if (!disposed) markError()
         },
       }
       if (stateMachineRef.current) {
@@ -135,11 +127,7 @@ export function RiveCanvas({
       } else if (animationRef.current) {
         riveConfig.animations = [animationRef.current]
       }
-      if (buffer) {
-        riveConfig.buffer = buffer.slice(0)
-      } else {
-        riveConfig.src = `/brilliant/${file}`
-      }
+      riveConfig.buffer = buffer.slice(0)
       instance = new Rive(riveConfig)
       if (typeof ResizeObserver !== 'undefined') {
         resizeObserver = new ResizeObserver(() => {
@@ -148,7 +136,7 @@ export function RiveCanvas({
         resizeObserver.observe(canvas)
       }
     }).catch(() => {
-      if (!disposed) setStatus('error')
+      if (!disposed) markError()
     })
 
     return () => {
@@ -157,7 +145,7 @@ export function RiveCanvas({
       riveRef.current = null
       instance?.cleanup()
     }
-  }, [file, fit, alignment, artboard])
+  }, [file, fit, alignment, artboard, beginLoading, markReady, markError])
 
   useEffect(() => {
     const instance = riveRef.current
@@ -218,9 +206,9 @@ export function RiveCanvas({
 
   return (
     <div ref={hostRef} className={`mascot-canvas-host ${className}`} role="img" aria-label={label}>
-      <canvas ref={canvasRef} className="mascot-canvas" aria-hidden="true" />
-      {status === 'error' && poster && (
-        <img src={poster} alt="" className="mascot-canvas-poster" />
+      <canvas ref={canvasRef} className={`mascot-canvas ${canvasVisibilityClass}`} aria-hidden="true" />
+      {showFallback && poster && (
+        <img src={resolveCdnUrl(poster) ?? poster} alt="" className="mascot-canvas-poster" />
       )}
       {status === 'error' && !poster && (
         <span className="mascot-canvas-error" aria-hidden="true">!</span>

@@ -6,6 +6,7 @@ import { leaderboardPageCaches } from '../../../shared/lib/leaderboard-cache'
 import type { LeagueWeekly } from '../../../shared/api'
 import { haptics } from '../../../platform/haptics'
 import { Skeleton } from '../../../shared/components/ui/skeleton'
+import { resolveCdnUrl } from '../../../shared/config/cdn'
 import { cn } from '../../../shared/lib/cn'
 
 export const BRILLIANT_LEAGUES = [
@@ -76,9 +77,10 @@ export function LeagueShield({
   className?: string
 }) {
   const resolvedId = BRILLIANT_LEAGUES.some((l) => l.id === tierId) ? tierId : 'hydrogen'
-  const imgSrc = locked
+  const rawImgSrc = locked
     ? `/leagues/locked-${resolvedId}.png?v=${LEAGUE_ASSET_VER}`
     : `/leagues/${resolvedId}.png?v=${LEAGUE_ASSET_VER}`
+  const imgSrc = resolveCdnUrl(rawImgSrc) ?? rawImgSrc
 
   return (
     <div
@@ -92,7 +94,8 @@ export function LeagueShield({
         loading="eager"
         decoding="async"
         onError={(e) => {
-          e.currentTarget.src = locked ? LOCKED_SHIELD_IMG : '/leagues/hydrogen.png'
+          const fallback = locked ? LOCKED_SHIELD_IMG : '/leagues/hydrogen.png'
+          e.currentTarget.src = resolveCdnUrl(fallback) ?? fallback
         }}
       />
     </div>

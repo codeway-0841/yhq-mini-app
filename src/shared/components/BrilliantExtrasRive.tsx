@@ -1,5 +1,6 @@
-import { memo, useEffect, useRef, useState, type ReactNode } from 'react'
+import { memo, useEffect, useRef, type ReactNode } from 'react'
 import type { Rive } from '@rive-app/webgl2-course'
+import { useRiveFallbackState } from '../hooks/useRiveFallbackState'
 import { getBrilliantBuffer, loadBrilliantRiveRuntime } from './BrilliantEndstateRive'
 
 export type BrilliantExtrasKind =
@@ -89,7 +90,7 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
   const boltRef = useRef(boltVisible)
   const variantRef = useRef(variant)
   const darkRef = useRef(dark)
-  const [failed, setFailed] = useState(false)
+  const { showFallback, canvasVisibilityClass, beginLoading, markReady, markError } = useRiveFallbackState()
 
   levelRef.current = leagueLevel
   stateRef.current = leagueState
@@ -105,7 +106,7 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
     let disposed = false
     let rive: Rive | null = null
     let observer: ResizeObserver | null = null
-    setFailed(false)
+    beginLoading()
 
     void Promise.all([
       loadBrilliantRiveRuntime(),
@@ -125,10 +126,12 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
         artboard: cfg.artboard,
         stateMachines: cfg.stateMachine,
         autoplay: true,
+        useOffscreenRenderer: true,
         layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
         onLoad: () => {
           if (disposed || !rive) return
           resize()
+          markReady()
           const inputs = rive.stateMachineInputs(cfg.stateMachine) ?? []
           const byName = new Map(inputs.map((inp) => [inp.name, inp]))
 
@@ -158,26 +161,26 @@ export const BrilliantExtrasRive = memo(function BrilliantExtrasRive({
             byName.get('Entry')?.fire?.()
           }
         },
-        onLoadError: () => { if (!disposed) setFailed(true) },
+        onLoadError: () => { if (!disposed) markError() },
       })
 
       if (typeof ResizeObserver !== 'undefined') {
         observer = new ResizeObserver(resize)
         observer.observe(canvas)
       }
-    }).catch(() => { if (!disposed) setFailed(true) })
+    }).catch(() => { if (!disposed) markError() })
 
     return () => {
       disposed = true
       observer?.disconnect()
       rive?.cleanup()
     }
-  }, [kind, leagueLevel, leagueState, locked, boltVisible, variant, dark, nonce])
+  }, [kind, leagueLevel, leagueState, locked, boltVisible, variant, dark, nonce, beginLoading, markReady, markError])
 
   return (
     <div className={`relative ${className}`} role="img" aria-label={label}>
-      <canvas ref={canvasRef} className="absolute inset-0 size-full" aria-hidden="true" />
-      {failed && <div className="absolute inset-0 flex items-center justify-center">{fallback}</div>}
+      <canvas ref={canvasRef} className={`absolute inset-0 size-full ${canvasVisibilityClass}`} aria-hidden="true" />
+      {showFallback && fallback && <div className="absolute inset-0 flex items-center justify-center">{fallback}</div>}
     </div>
   )
 })

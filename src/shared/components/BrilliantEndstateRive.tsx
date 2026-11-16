@@ -1,5 +1,7 @@
-import { memo, useEffect, useRef, useState, type ReactNode } from 'react'
+import { memo, useEffect, useRef, type ReactNode } from 'react'
 import type { Rive } from '@rive-app/webgl2-course'
+import { fetchRiveAssetBuffer } from '../config/cdn'
+import { useRiveFallbackState } from '../hooks/useRiveFallbackState'
 
 /**
  * Brilliant `endstates.*.riv` hamda `progress-check.*.riv` artboardlarini view-model orqali ishga tushiradi.
@@ -70,19 +72,9 @@ const KIND = {
 } as const
 
 let wasmConfigured = false
-const bufferCache = new Map<string, Promise<ArrayBuffer>>()
 
 export function getBrilliantBuffer(file: string): Promise<ArrayBuffer> {
-  let promise = bufferCache.get(file)
-  if (!promise) {
-    promise = fetch(`/brilliant/${file}`).then((r) => {
-      if (!r.ok) throw new Error(`Failed to load /brilliant/${file}: HTTP ${r.status}`)
-      return r.arrayBuffer()
-    })
-    promise.catch(() => { bufferCache.delete(file) })
-    bufferCache.set(file, promise)
-  }
-  return promise
+  return fetchRiveAssetBuffer(file)
 }
 
 export async function loadBrilliantRiveRuntime() {
@@ -224,7 +216,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
   const wasIcpHiddenRef = useRef(false)
   const fitRef = useRef(fit)
   const onEventRef = useRef(onRiveEvent)
-  const [failed, setFailed] = useState(false)
+  const { showFallback, canvasVisibilityClass, beginLoading, markReady, markError } = useRiveFallbackState()
   darkRef.current = dark
   variantRef.current = variant
   lessonTriggerRef.current = lessonTrigger
@@ -257,7 +249,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
     let rive: Rive | null = null
     let observer: ResizeObserver | null = null
     let frame = 0
-    setFailed(false)
+    beginLoading()
 
     void Promise.all([
       loadBrilliantRiveRuntime(),
@@ -286,6 +278,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
         onLoad: () => {
           if (disposed || !rive) return
           resize()
+          markReady()
           if (EventType?.RiveEvent) {
             try {
               rive.on(EventType.RiveEvent, (ev) => {
@@ -416,13 +409,13 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
             fire(practiceTriggerRef.current)
           }
         },
-        onLoadError: () => { if (!disposed) setFailed(true) },
+        onLoadError: () => { if (!disposed) markError() },
       })
       if (typeof ResizeObserver !== 'undefined') {
         observer = new ResizeObserver(resize)
         observer.observe(canvas)
       }
-    }).catch(() => { if (!disposed) setFailed(true) })
+    }).catch(() => { if (!disposed) markError() })
 
     return () => {
       disposed = true
@@ -433,7 +426,7 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       wasIcpHiddenRef.current = false
       rive?.cleanup()
     }
-  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle])
+  }, [kind, variant, nonce, lessonTrigger, isLevel, levelNumber, skillCheckMastered, practiceTrigger, progressTrigger, correctNum, totalNum, levelTitle, beginLoading, markReady, markError])
 
   useEffect(() => {
     const inst = instanceRef.current as unknown as {
@@ -497,8 +490,8 @@ export const BrilliantEndstateRive = memo(function BrilliantEndstateRive({
       onPointerDown={() => setIcpPointer('cursorDown', true)}
       onPointerUp={() => setIcpPointer('cursorDown', false)}
     >
-      <canvas ref={canvasRef} className="absolute inset-0 size-full" aria-hidden="true" />
-      {failed && <div className="absolute inset-0 flex items-center justify-center">{fallback}</div>}
+      <canvas ref={canvasRef} className={`absolute inset-0 size-full ${canvasVisibilityClass}`} aria-hidden="true" />
+      {showFallback && fallback && <div className="absolute inset-0 flex items-center justify-center">{fallback}</div>}
     </div>
   )
 })
