@@ -12,7 +12,6 @@ import {
   Hash,
   Brain,
   NotebookText,
-  Camera,
   LineChart,
 
   PenLine,
@@ -82,7 +81,6 @@ export default function ModesPage() {
     ...(['matematika', 'fizika'].includes(subject.id)
       ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
       : []),
-    { icon: Camera,        label: tt('snapSolveTitle'), onClick: () => navigate('/ai-tutor') },
     { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
 
     { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },

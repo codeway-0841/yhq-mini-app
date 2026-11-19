@@ -179,6 +179,7 @@ export type DarslikAnswerFeedback = {
   correct: boolean
   explanation: string
   correctAnswer: string
+  hint?: string
   xpEarned?: number
   xp?: number | null
   topicXpTotal?: number

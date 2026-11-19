@@ -87,17 +87,17 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'paragraph':
       return (
-        <p className="whitespace-pre-line text-[14.5px] leading-[1.72] text-pmuted">
+        <p className="whitespace-pre-line text-[16px] leading-[1.7] text-pfg">
           <InlineText text={block.lines.join('\n')} />
         </p>
       )
 
     case 'list':
       return block.ordered ? (
-        <ol className="flex flex-col gap-2 pl-0.5">
+        <ol className="flex flex-col gap-2.5 pl-0.5">
           {block.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-2.5 text-[14.5px] leading-[1.68] text-pmuted">
-              <span className="mt-0.5 grid size-5 flex-none place-items-center rounded-lg bg-[rgb(var(--p-primary-rgb)/0.12)] text-[11px] font-extrabold tabular-nums text-pprimary">
+            <li key={i} className="flex items-start gap-2.5 text-[15.5px] leading-[1.68] text-pfg">
+              <span className="mt-1 grid size-5 flex-none place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.12)] text-[11px] font-extrabold tabular-nums text-pprimary">
                 {i + 1}
               </span>
               <span className="min-w-0 flex-1 whitespace-pre-line">
@@ -107,13 +107,13 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
           ))}
         </ol>
       ) : (
-        <ul className="flex flex-col gap-2 pl-0.5">
+        <ul className="flex flex-col gap-2.5 pl-0.5">
           {block.items.map((item, i) => (
-            <li key={i} className="flex items-start gap-2.5 text-[14.5px] leading-[1.68] text-pmuted">
+            <li key={i} className="flex items-start gap-2.5 text-[15.5px] leading-[1.68] text-pfg">
               <span
                 aria-hidden="true"
                 className={cn(
-                  'mt-[9px] size-2 flex-none rounded-full',
+                  'mt-[10px] size-2 flex-none rounded-full',
                   item.checked === true ? 'bg-psuccess' : 'bg-pprimary',
                 )}
               />
@@ -134,12 +134,12 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
       if (isTrap) {
         return (
-          <div className="my-3 rounded-2xl border border-rose-500/30 bg-gradient-to-r from-rose-950/30 to-amber-950/20 p-4 shadow-sm">
-            <div className="flex items-center gap-2 mb-1.5 text-rose-400 font-bold text-xs uppercase tracking-wider">
-              <AlertTriangle className="size-4 shrink-0 text-rose-400" />
+          <div className="my-2 rounded-2xl border-l-4 border-pwarning bg-[rgb(var(--p-warning-rgb)/0.12)] px-4 py-3.5 text-pfg">
+            <div className="mb-1.5 flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-pwarning">
+              <AlertTriangle className="size-4 shrink-0 text-pwarning" />
               <span>Ловушка для экзамена</span>
             </div>
-            <div className="text-[14px] leading-relaxed text-slate-200">
+            <div className="text-[15px] leading-[1.65] text-pfg">
               <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
@@ -148,12 +148,12 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
       if (isTip) {
         return (
-          <div className="my-3 rounded-2xl border border-purple-500/30 bg-gradient-to-r from-purple-950/30 to-indigo-950/20 p-4 shadow-sm">
-            <div className="flex items-center gap-2 mb-1.5 text-purple-300 font-bold text-xs uppercase tracking-wider">
-              <Lightbulb className="size-4 shrink-0 text-amber-300" />
+          <div className="my-2 rounded-2xl border-l-4 border-pprimary bg-[rgb(var(--p-primary-rgb)/0.10)] px-4 py-3.5 text-pfg">
+            <div className="mb-1.5 flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-pprimary">
+              <Lightbulb className="size-4 shrink-0 text-pprimary" />
               <span>Важная памятка</span>
             </div>
-            <div className="text-[14px] leading-relaxed text-slate-200">
+            <div className="text-[15px] leading-[1.65] text-pfg">
               <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
@@ -162,12 +162,12 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
       if (isBook) {
         return (
-          <div className="my-3 rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-950/30 to-teal-950/20 p-4 shadow-sm">
-            <div className="flex items-center gap-2 mb-1.5 text-emerald-300 font-bold text-xs uppercase tracking-wider">
-              <BookOpen className="size-4 shrink-0 text-emerald-400" />
+          <div className="my-2 rounded-2xl border-l-4 border-psuccess bg-[rgb(var(--p-success-rgb)/0.10)] px-4 py-3.5 text-pfg">
+            <div className="mb-1.5 flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-psuccess">
+              <BookOpen className="size-4 shrink-0 text-psuccess" />
               <span>Разбор произведения</span>
             </div>
-            <div className="text-[14px] leading-relaxed text-slate-200">
+            <div className="text-[15px] leading-[1.65] text-pfg">
               <InlineText text={quoteText.replace(/^(?:⚠️|💡|📖|\s)+/u, '')} />
             </div>
           </div>
@@ -175,8 +175,8 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
       }
 
       return (
-        <blockquote className="rounded-2xl border-l-4 border-purple-500 bg-purple-500/10 px-4 py-3 shadow-2xs">
-          <span className="whitespace-pre-line text-[14px] font-medium leading-[1.68] text-slate-200">
+        <blockquote className="rounded-2xl border-l-4 border-pprimary bg-psurface px-4 py-3.5 text-pfg">
+          <span className="whitespace-pre-line text-[15.5px] font-semibold leading-[1.68] text-pfg">
             <InlineText text={quoteText} />
           </span>
         </blockquote>
@@ -185,23 +185,24 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'image':
       return (
-        <figure className="my-6 flex flex-col items-center">
-          <div className="relative overflow-hidden rounded-2xl border border-purple-500/30 bg-slate-900/90 shadow-2xl max-w-xs sm:max-w-sm w-full group">
+        <figure className="my-5 flex flex-col items-center">
+          <div className="group relative w-full max-w-xs overflow-hidden rounded-2xl bg-psurface shadow-xs sm:max-w-sm">
             <img
               src={formatImageSrc(block.src) ?? block.src}
               alt={block.alt}
-              className="w-full object-cover max-h-72 sm:max-h-80 transition-transform duration-500 group-hover:scale-105"
+              className="max-h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105 sm:max-h-80"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent pointer-events-none" />
-            <div className="absolute bottom-2.5 left-3 right-3 text-left">
-              <span className="text-xs font-bold text-slate-100 drop-shadow">
-                {block.alt}
-              </span>
-            </div>
+            {block.alt && (
+              <div className="bg-[rgb(0_0_0/0.55)] px-3 py-2 text-left">
+                <span className="text-xs font-bold text-white">
+                  {block.alt}
+                </span>
+              </div>
+            )}
           </div>
           {block.caption && (
-            <figcaption className="mt-2 text-center text-xs font-medium text-slate-400 italic max-w-sm">
+            <figcaption className="mt-2 max-w-sm text-center text-xs font-medium italic text-pmuted">
               {block.caption}
             </figcaption>
           )}
@@ -210,8 +211,8 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
 
     case 'table':
       return (
-        <div className="overflow-x-auto rounded-2xl bg-psurface p-1">
-          <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-[13.5px]">
+        <div className="overflow-x-auto rounded-2xl bg-psurface p-1.5">
+          <table className="w-full border-collapse overflow-hidden rounded-xl text-left text-[14px]">
             <thead>
               <tr className="bg-pcard">
                 {block.head.map((cell, i) => (
@@ -225,7 +226,7 @@ function BlockView({ block, anchor }: { block: MdBlock; anchor: string }) {
               {block.rows.map((row, r) => (
                 <tr key={r} className="align-top odd:bg-pcanvas even:bg-pcard">
                   {row.map((cell, c) => (
-                    <td key={c} className="border-b border-pline px-3.5 py-2 text-pmuted last:border-b-0">
+                    <td key={c} className="border-b border-pline px-3.5 py-2.5 text-pfg last:border-b-0">
                       <InlineText text={cell} />
                     </td>
                   ))}
@@ -279,17 +280,17 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
   const allAnswered = answeredCount === questions.length && questions.length > 0
 
   return (
-    <div className="my-6 rounded-2xl border border-purple-500/30 bg-gradient-to-b from-purple-950/20 to-slate-900/60 p-4 sm:p-5 shadow-lg">
-      <div className="flex items-center justify-between border-b border-purple-500/20 pb-3 mb-4">
-        <div className="flex items-center gap-2">
-          <span className="grid size-8 place-items-center rounded-xl bg-purple-500/20 text-purple-300">
+    <div className="my-5 rounded-3xl bg-psurface p-4 sm:p-5">
+      <div className="mb-4 flex items-center justify-between border-b border-pline pb-3">
+        <div className="flex items-center gap-2.5">
+          <span className="grid size-8 place-items-center rounded-xl bg-[rgb(var(--p-primary-rgb)/0.14)] text-pprimary">
             <Award className="size-4" />
           </span>
           <div>
-            <h4 className="text-sm font-bold text-slate-100">
+            <h4 className="text-sm font-bold text-pfg">
               {ru ? 'Интерактивный тест' : 'Interaktiv test'}
             </h4>
-            <p className="text-xs text-slate-400">
+            <p className="text-xs text-pmuted">
               {answeredCount}/{questions.length} {ru ? 'отвечено' : 'yechildi'}
               {answeredCount > 0 && ` • ${correctCount} ${ru ? 'правильно' : "to'g'ri"}`}
             </p>
@@ -297,8 +298,9 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
         </div>
         {answeredCount > 0 && (
           <button
+            type="button"
             onClick={handleReset}
-            className="flex items-center gap-1.5 rounded-lg border border-slate-700/60 bg-slate-800/80 px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 transition-colors"
+            className="flex cursor-pointer items-center gap-1.5 rounded-full bg-pcard px-3 py-1.5 text-xs font-semibold text-pfg shadow-2xs transition-opacity hover:opacity-85"
           >
             <RotateCcw className="size-3.5" />
             <span>{ru ? 'Заново' : 'Qayta'}</span>
@@ -306,7 +308,7 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
         )}
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-4">
         {questions.map((q, qIdx) => {
           const selected = selectedAnswers[qIdx]
           const isAnswered = selected !== undefined
@@ -314,34 +316,34 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
           return (
             <div
               key={qIdx}
-              className="flex flex-col gap-3 rounded-xl border border-slate-800/80 bg-slate-900/40 p-3.5 sm:p-4"
+              className="flex flex-col gap-3 rounded-2xl bg-pcard p-3.5 shadow-2xs sm:p-4"
             >
               <div className="flex items-start gap-2.5">
-                <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-md bg-purple-500/20 text-[11px] font-bold text-purple-300">
+                <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-[rgb(var(--p-primary-rgb)/0.12)] text-[11px] font-extrabold text-pprimary">
                   {qIdx + 1}
                 </span>
-                <p className="text-sm font-medium text-slate-200 leading-relaxed">
+                <p className="text-[14.5px] font-semibold leading-relaxed text-pfg">
                   {q.q}
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+              <div className="mt-1 grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {q.o.map((opt, optIdx) => {
                   const isSelected = selected === optIdx
                   const isCorrectOpt = q.a === optIdx
 
                   let btnStyle =
-                    'border-slate-800 bg-slate-800/40 text-slate-300 hover:border-slate-700 hover:bg-slate-800/80'
+                    'bg-psurface text-pfg hover:bg-[rgb(var(--p-primary-rgb)/0.08)]'
 
                   if (isAnswered) {
                     if (isCorrectOpt) {
                       btnStyle =
-                        'border-emerald-500/80 bg-emerald-500/15 text-emerald-200 font-semibold shadow-xs'
+                        'bg-[rgb(var(--p-success-rgb)/0.16)] text-pfg font-semibold'
                     } else if (isSelected) {
                       btnStyle =
-                        'border-rose-500/80 bg-rose-500/15 text-rose-200 line-through decoration-rose-400 font-medium'
+                        'bg-[rgb(var(--p-warning-rgb)/0.18)] text-pfg font-medium'
                     } else {
-                      btnStyle = 'border-slate-800/40 bg-slate-900/30 text-slate-500 opacity-60'
+                      btnStyle = 'bg-psurface text-pmuted opacity-55'
                     }
                   }
 
@@ -349,23 +351,24 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
 
                   return (
                     <button
+                      type="button"
                       key={optIdx}
                       disabled={isAnswered}
                       onClick={() => handleSelect(qIdx, optIdx, q.a)}
                       className={cn(
-                        'flex items-center justify-between gap-2.5 rounded-xl border px-3.5 py-2.5 text-left text-xs sm:text-[13px] transition-all min-h-[44px]',
+                        'flex min-h-[44px] cursor-pointer items-center justify-between gap-2.5 rounded-2xl px-3.5 py-2.5 text-left text-[13.5px] transition-all disabled:cursor-default',
                         btnStyle,
                       )}
                     >
-                      <div className="flex items-center gap-2 min-w-0 flex-1">
+                      <div className="flex min-w-0 flex-1 items-center gap-2.5">
                         <span
                           className={cn(
-                            'grid size-5 shrink-0 place-items-center rounded-md text-[10px] font-bold',
-                            isSelected && isCorrectOpt
-                              ? 'bg-emerald-500 text-white'
-                              : isSelected
-                                ? 'bg-rose-500 text-white'
-                                : 'bg-slate-700/50 text-slate-400',
+                            'grid size-6 shrink-0 place-items-center rounded-full text-[11px] font-extrabold',
+                            isAnswered && isCorrectOpt
+                              ? 'bg-psuccess text-white'
+                              : isAnswered && isSelected
+                                ? 'bg-pwarning text-white'
+                                : 'bg-pcard text-pmuted',
                           )}
                         >
                           {letter}
@@ -373,10 +376,10 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
                         <span className="leading-snug">{opt}</span>
                       </div>
                       {isAnswered && isCorrectOpt && (
-                        <CheckCircle2 className="size-4 shrink-0 text-emerald-400" />
+                        <CheckCircle2 className="size-4 shrink-0 text-psuccess" />
                       )}
                       {isAnswered && isSelected && !isCorrectOpt && (
-                        <XCircle className="size-4 shrink-0 text-rose-400" />
+                        <XCircle className="size-4 shrink-0 text-pwarning" />
                       )}
                     </button>
                   )
@@ -384,10 +387,10 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
               </div>
 
               {isAnswered && q.e && (
-                <div className="mt-1 flex items-start gap-2 rounded-xl border border-purple-500/20 bg-purple-950/20 px-3 py-2 text-xs text-purple-200/90 leading-relaxed">
-                  <Lightbulb className="size-4 shrink-0 text-amber-400 mt-0.5" />
+                <div className="mt-1 flex items-start gap-2 rounded-2xl bg-psurface px-3.5 py-2.5 text-[13px] leading-relaxed text-pfg">
+                  <Lightbulb className="mt-0.5 size-4 shrink-0 text-pwarning" />
                   <div>
-                    <span className="font-semibold text-purple-300">
+                    <span className="font-bold">
                       {ru ? 'Объяснение:' : 'Izoh:'}{' '}
                     </span>
                     <span>{q.e}</span>
@@ -400,12 +403,12 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
       </div>
 
       {allAnswered && (
-        <div className="mt-5 rounded-xl border border-purple-500/30 bg-purple-500/10 p-4 text-center">
-          <p className="text-sm font-bold text-slate-100">
+        <div className="mt-4 rounded-2xl bg-[rgb(var(--p-success-rgb)/0.14)] p-4 text-center">
+          <p className="text-sm font-bold text-pfg">
             {correctCount === questions.length
               ? ru
-                ? '🎉 Превосходно! Все ответы верны!'
-                : "🎉 Ajoyib! Barcha javoblar to'g'ri!"
+                ? 'Превосходно! Все ответы верны!'
+                : "Ajoyib! Barcha javoblar to‘g‘ri!"
               : `${ru ? 'Тест завершён! Результат:' : 'Test yakunlandi! Natija:'} ${correctCount} / ${questions.length} (${Math.round((correctCount / questions.length) * 100)}%)`}
           </p>
         </div>

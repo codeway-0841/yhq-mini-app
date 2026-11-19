@@ -7,7 +7,7 @@
  *  KPI: banner'dagi track('premium_click') saqlanadi.
  */
 import { useState } from 'react'
-import { Sparkles, Bot, Palette, HeartCrack, Zap, Check, CheckCircle2, Gift, Star, Ticket } from 'lucide-react'
+import { Sparkles, Palette, HeartCrack, Zap, Check, CheckCircle2, Gift, Star, Ticket } from 'lucide-react'
 import { PremiumIcon } from '../../shared/components/PremiumIcon'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
@@ -26,7 +26,6 @@ import { Button } from '../../shared/components/ui/button'
 
 const BENEFITS = [
   { icon: Sparkles,   uz: 'Reklamasiz tajriba',                 ru: 'Без рекламы' },
-  { icon: Bot,        uz: 'AI Tutor — chuqur tushuntirishlar', ru: 'ИИ-тьютор — подробные объяснения' },
   { icon: Palette,    uz: `${ACCENT_THEMES.filter((t) => t.premium).length} ta eksklyuziv tema`, ru: `${ACCENT_THEMES.filter((t) => t.premium).length} эксклюзивных тем` },
   { icon: HeartCrack, uz: "Xatolar bo'yicha chuqur tahlil",       ru: 'Глубокий анализ ошибок' },
   { icon: Zap,        uz: 'Cheksiz mashq rejimlari',            ru: 'Безлимитные режимы практики' },

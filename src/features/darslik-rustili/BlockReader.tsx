@@ -1,20 +1,21 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, BookOpen, CheckCircle2, ChevronLeft, HelpCircle, List as ListIcon, Lock, Volume2, X } from 'lucide-react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { ArrowRight, CheckCircle2, ChevronLeft, HelpCircle, Lightbulb, List as ListIcon, Lock, Sparkles, Volume2, X } from 'lucide-react'
 import { getBlockOutline, loadDarslikBlock, type DarslikBlockMeta } from '../../content/darslik-rustili'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useT } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
+import { playSound } from '../../shared/lib/sounds'
+import { haptics } from '../../platform/haptics'
+import { Button } from '../../shared/components/ui/button'
+import { BrilliantReaderHeader, BrilliantStagePill, type BrilliantLessonStage } from '../../shared/components/BrilliantLessonChrome'
 import { PathMascot } from '../lessons'
 import { MarkdownView } from './MarkdownView'
-import { buildLessonPages, extractOutline, extractSectionBlocks, parseMarkdown, plainText, type MdBlock } from './markdown'
+import { buildLessonPages, extractDiscoveryChallenge, extractOutline, extractSectionBlocks, parseMarkdown, plainText, type DiscoveryChallenge, type MdBlock } from './markdown'
 import { nextSection } from './progress'
 import TopicCheck from './TopicCheck'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
-import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
-
-const Tutor = lazy(() => import('../ai-tutor').then((module) => ({ default: module.SocraticChatSheet })))
 
 interface BlockReaderProps {
   block: DarslikBlockMeta
@@ -41,6 +42,7 @@ interface BlockReaderProps {
 }
 
 const EMPTY_BLOCKS: readonly MdBlock[] = []
+const FALLBACK_STEP = { kind: 'blocks' as const, stage: 'intro' as const, blocks: EMPTY_BLOCKS }
 
 function extractSpeechText(blocks: readonly MdBlock[]): string {
   const parts: string[] = []
@@ -86,9 +88,9 @@ export function BlockReader({
   const [attempt, setAttempt] = useState(0)
   const [tocOpen, setTocOpen] = useState(false)
   const [pageIndex, setPageIndex] = useState(0)
+  const [tryPicked, setTryPicked] = useState<number | null>(null)
   const [quizOpen, setQuizOpen] = useState(false)
   const [speaking, setSpeaking] = useState(false)
-  const [showTutor, setShowTutor] = useState(false)
   const bodyRef = useRef<HTMLDivElement | null>(null)
 
   // Android hardware back / Telegram BackButton — o'quvchini yopadi.
@@ -114,6 +116,24 @@ export function BlockReader({
   const outline = useMemo(() => extractOutline(blocks), [blocks])
   const sectionBlocks = useMemo(() => extractSectionBlocks(blocks, sectionIndex), [blocks, sectionIndex])
   const lessonPages = useMemo(() => buildLessonPages(sectionBlocks), [sectionBlocks])
+  const discovery = useMemo(() => extractDiscoveryChallenge(sectionBlocks), [sectionBlocks])
+  const readerSteps = useMemo(() => {
+    type ReaderStep =
+      | { kind: 'blocks'; stage: BrilliantLessonStage; blocks: readonly MdBlock[] }
+      | { kind: 'try'; stage: 'try'; challenge: DiscoveryChallenge }
+
+    const steps: ReaderStep[] = lessonPages.map((pageBlocks, idx) => ({
+      kind: 'blocks',
+      stage: idx === 0 ? 'intro' : idx === lessonPages.length - 1 && lessonPages.length > 1 ? 'synthesis' : 'concept',
+      blocks: pageBlocks,
+    }))
+    if (discovery && steps.length >= 2) {
+      steps.splice(1, 0, { kind: 'try', stage: 'try', challenge: discovery })
+    } else if (discovery && steps.length === 1) {
+      steps.push({ kind: 'try', stage: 'try', challenge: discovery })
+    }
+    return steps
+  }, [lessonPages, discovery])
   const fallbackTitles = useMemo(() => getBlockOutline(block.id), [block.id])
   const total = outline.length || fallbackTitles.length
   const current = outline[sectionIndex]
@@ -133,7 +153,7 @@ export function BlockReader({
   useEffect(() => {
     stopSpeaking()
     setPageIndex(0)
-    setShowTutor(false)
+    setTryPicked(null)
     scrollToTop()
     setTocOpen(false)
   }, [block.id, sectionIndex, source, scrollToTop])
@@ -157,13 +177,15 @@ export function BlockReader({
 
   const blockLabel = isRu ? `Блок ${block.id}` : `${block.id}-blok`
   const position = `${Math.min(sectionIndex + 1, total || 1)}/${total || 1}`
-  const pageCount = Math.max(1, lessonPages.length)
+  const pageCount = Math.max(1, readerSteps.length)
   const safePageIndex = Math.min(pageIndex, pageCount - 1)
   const isLastPage = safePageIndex >= pageCount - 1
-  const currentCardBlocks = lessonPages[safePageIndex] ?? EMPTY_BLOCKS
+  const currentStep = readerSteps[safePageIndex] ?? FALLBACK_STEP
   const speechText = useMemo(
-    () => extractSpeechText(currentCardBlocks) || sectionTitle,
-    [currentCardBlocks, sectionTitle],
+    () => (currentStep.kind === 'try'
+      ? (isRu ? currentStep.challenge.promptRu : currentStep.challenge.promptUz)
+      : extractSpeechText(currentStep.blocks)) || sectionTitle,
+    [currentStep, isRu, sectionTitle],
   )
 
   const openPractice = () => {
@@ -196,77 +218,28 @@ export function BlockReader({
 
   return (
     <div className="lesson-reader fixed inset-0 z-50 flex flex-col bg-pcanvas">
-      <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 safe-top">
-        <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
-          <button
-            type="button"
-            onClick={onClose}
-            aria-label={tt('rusDarslikCloseReader')}
-            className="flex size-10 shrink-0 cursor-pointer items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none"
-          >
-            <ChevronLeft size={21} strokeWidth={2.25} />
-          </button>
-
-          <div className="min-w-0 flex-1">
-            <div className="mb-1.5 flex items-center justify-between gap-2">
-              <p className="truncate text-[11px] font-extrabold uppercase tracking-wider text-pprimary">
-                {blockLabel} · {position}
-              </p>
-              <span className="shrink-0 text-[11px] font-bold tabular-nums text-pmuted">
-                {tt('rusDarslikTheoryStep')
-                  .replace('{current}', String(safePageIndex + 1))
-                  .replace('{total}', String(pageCount))}
-              </span>
-            </div>
-
-            {/* Segmented Story Progress Bar */}
-            <div
-              className="flex w-full items-center gap-1.5"
-              role="progressbar"
-              aria-label={tt('rusDarslikTheoryProgress')}
-              aria-valuemin={1}
-              aria-valuemax={pageCount}
-              aria-valuenow={safePageIndex + 1}
-            >
-              {Array.from({ length: pageCount }).map((_, idx) => {
-                const isCompleted = idx < safePageIndex
-                const isActive = idx === safePageIndex
-                return (
-                  <div
-                    key={idx}
-                    aria-hidden="true"
-                    className="h-2 flex-1 overflow-hidden rounded-full bg-psurface"
-                  >
-                    <div
-                      className={cn(
-                        'h-full rounded-full transition-all duration-300',
-                        isCompleted
-                          ? 'w-full bg-psuccess'
-                          : isActive
-                            ? 'w-full bg-pprimary'
-                            : 'w-0 bg-transparent',
-                      )}
-                    />
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-
+      <BrilliantReaderHeader
+        onClose={onClose}
+        closeLabel={tt('rusDarslikCloseReader')}
+        current={safePageIndex + 1}
+        total={pageCount}
+        progressLabel={tt('rusDarslikTheoryProgress')}
+        hot={isLastPage || tryPicked !== null}
+        trailing={
           <button
             type="button"
             onClick={toggleToc}
             aria-label={tocOpen ? tt('rusDarslikHideContents') : tt('rusDarslikContents')}
             aria-expanded={tocOpen}
             className={cn(
-              'grid size-10 shrink-0 cursor-pointer place-items-center rounded-full transition-colors',
-              tocOpen ? 'bg-pprimary text-ponprimary shadow-xs' : 'bg-psurface text-pfg',
+              'grid size-9 shrink-0 cursor-pointer place-items-center rounded-full transition-colors',
+              tocOpen ? 'bg-pprimary text-ponprimary' : 'bg-psurface text-pmuted hover:text-pfg',
             )}
           >
             {tocOpen ? <X size={18} strokeWidth={2.2} /> : <ListIcon size={18} strokeWidth={2.2} />}
           </button>
-        </div>
-      </div>
+        }
+      />
 
       <div ref={bodyRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
         {tocOpen && (
@@ -327,52 +300,150 @@ export function BlockReader({
             ))}
           </div>
         ) : (
-          <article className="mx-auto w-full max-w-[560px] pb-5" aria-labelledby="rus-lesson-topic-title">
-            {safePageIndex === 0 && <div className="flex min-h-[180px] items-center justify-center py-8 sm:min-h-[220px]" aria-hidden="true"><div className="grid size-28 -rotate-6 place-items-center rounded-3xl bg-amber-400 text-blue-900 shadow-[8px_8px_0_#d39914]"><BookOpen size={64} strokeWidth={1.7} /></div></div>}
+          <article className="mx-auto w-full max-w-[560px] pb-6" aria-labelledby="rus-lesson-topic-title">
+            {safePageIndex === 0 && (
+              <div className="flex flex-col items-center justify-center py-6 sm:py-8" aria-hidden="true">
+                <div className="grid size-24 place-items-center rounded-full bg-psurface shadow-xs">
+                  <span className="relative block size-16">
+                    <PathMascot variant="avatar" animation="wave" />
+                  </span>
+                </div>
+              </div>
+            )}
+
+            <div className="mb-2 flex items-center justify-between gap-2">
+              <div className="flex min-w-0 items-center gap-2">
+                <BrilliantStagePill stage={currentStep.stage} />
+                <span className="truncate text-[11.5px] font-bold text-pmuted">
+                  {blockLabel} · {position}
+                </span>
+              </div>
+              <span className="shrink-0 text-[11.5px] font-bold tabular-nums text-pmuted">
+                {tt('rusDarslikTheoryStep')
+                  .replace('{current}', String(safePageIndex + 1))
+                  .replace('{total}', String(pageCount))}
+              </span>
+            </div>
+
             <div className="mb-5 flex items-start gap-3">
-              <h1 id="rus-lesson-topic-title" className="min-w-0 flex-1 font-display text-[28px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[32px]">{sectionTitle}</h1>
-              <button type="button" onClick={handleSpeakCard} aria-label={tt('rusDarslikListenExample')} className={cn('grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg', speaking && 'text-pprimary')}><Volume2 size={20} className={cn(speaking && 'animate-pulse')} /></button>
+              <h1 id="rus-lesson-topic-title" className="min-w-0 flex-1 font-display text-[26px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[30px]">{sectionTitle}</h1>
+              <button type="button" onClick={handleSpeakCard} aria-label={tt('rusDarslikListenExample')} className={cn('grid size-10 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg transition-colors hover:opacity-85', speaking && 'text-pprimary')}><Volume2 size={20} className={cn(speaking && 'animate-pulse')} /></button>
             </div>
 
             <section
               key={`${block.id}:${sectionIndex}:${safePageIndex}`}
               data-testid="micro-lesson-card"
               data-lesson-step={safePageIndex + 1}
-              className="py-2 text-[17px] leading-relaxed text-pfg"
+              data-lesson-stage={currentStep.stage}
+              className="py-1 text-[17px] leading-relaxed text-pfg"
             >
-              <MarkdownView blocks={currentCardBlocks} />
+              {currentStep.kind === 'try' ? (
+                <div className="flex flex-col gap-4 rounded-3xl bg-psurface p-4 sm:p-5">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-pprimary">
+                      <Sparkles size={14} strokeWidth={2.5} />
+                      {tt('rusQuickTryHint')}
+                    </span>
+                  </div>
+                  <p className="text-[17px] font-bold leading-snug text-pfg">
+                    {isRu ? currentStep.challenge.promptRu : currentStep.challenge.promptUz}
+                  </p>
+                  <div className="flex flex-col gap-2.5" role="radiogroup" aria-label={tt('lessonStageTry')}>
+                    {currentStep.challenge.options.map((opt, optIdx) => {
+                      const answered = tryPicked !== null
+                      const isPicked = tryPicked === optIdx
+                      const isRight = optIdx === currentStep.challenge.correctIdx
+                      return (
+                        <button
+                          key={optIdx}
+                          type="button"
+                          onClick={() => {
+                            if (answered) return
+                            setTryPicked(optIdx)
+                            const ok = optIdx === currentStep.challenge.correctIdx
+                            playSound(ok ? 'success' : 'error')
+                            if (ok) haptics.success()
+                            else haptics.error()
+                          }}
+                          className={cn(
+                            'flex min-h-[50px] w-full cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 text-left text-[15.5px] font-semibold transition-[transform,background-color,opacity]',
+                            !answered
+                              ? 'bg-pcard text-pfg shadow-2xs hover:bg-[rgb(var(--p-primary-rgb)/0.08)]'
+                              : isRight
+                                ? 'bg-[rgb(var(--p-success-rgb)/0.16)] text-pfg'
+                                : isPicked
+                                  ? 'bg-[rgb(var(--p-warning-rgb)/0.18)] text-pfg'
+                                  : 'bg-pcard text-pmuted opacity-55',
+                          )}
+                        >
+                          <span
+                            className={cn(
+                              'grid size-6 shrink-0 place-items-center rounded-full border-2 text-[11px] font-extrabold transition-colors',
+                              !answered
+                                ? 'border-plineStrong text-transparent'
+                                : isRight
+                                  ? 'border-psuccess bg-psuccess text-white'
+                                  : isPicked
+                                    ? 'border-pwarning bg-pwarning text-white'
+                                    : 'border-pline text-transparent',
+                            )}
+                          >
+                            {answered && isRight ? '✓' : answered && isPicked ? '!' : ''}
+                          </span>
+                          <span className="min-w-0 flex-1">{opt}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                  {tryPicked !== null && (
+                    <div
+                      className={cn(
+                        'flex items-start gap-2.5 rounded-2xl p-3.5 text-[14px] leading-relaxed text-pfg',
+                        tryPicked === currentStep.challenge.correctIdx
+                          ? 'bg-[rgb(var(--p-success-rgb)/0.14)]'
+                          : 'bg-[rgb(var(--p-warning-rgb)/0.14)]',
+                      )}
+                    >
+                      <Lightbulb size={18} className={cn('mt-0.5 shrink-0', tryPicked === currentStep.challenge.correctIdx ? 'text-psuccess' : 'text-pwarning')} />
+                      <div className="min-w-0 flex-1">
+                        <p className="font-extrabold">
+                          {tryPicked === currentStep.challenge.correctIdx ? tt('rusQuickTryRight') : tt('rusQuickTryWrong')}
+                        </p>
+                        <p className="mt-0.5 text-pmuted">
+                          {isRu ? currentStep.challenge.explanationRu : currentStep.challenge.explanationUz}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <MarkdownView blocks={currentStep.blocks} />
+              )}
             </section>
           </article>
         )}
       </div>
 
-      <div className="border-t border-pline bg-pcanvas px-3.5 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
+      <div className="bg-pcanvas px-3.5 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
         <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
-          <button type="button" className="relative block size-12 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => setShowTutor(true)}><PathMascot variant="avatar" animation="idle" /></button>
           <button
             type="button"
             disabled={safePageIndex === 0 || failed || source === null}
             onClick={previousPage}
             aria-label={tt('rusDarslikPreviousStep')}
-            className="grid size-12 shrink-0 cursor-pointer place-items-center rounded-2xl bg-psurface text-pfg shadow-[0_3px_0_var(--p-line)] transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
+            className="grid size-14 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg transition-[transform,opacity] active:translate-y-[1px] disabled:cursor-not-allowed disabled:opacity-40"
           >
             <ChevronLeft size={21} strokeWidth={2.25} />
           </button>
 
-          <button
+          <Button
             type="button"
+            variant={isLastPage ? 'primary' : 'secondary'}
+            size="lg"
+            block
+            className="min-w-0 flex-1"
             disabled={failed || source === null}
             onClick={nextPage}
-            className={cn(
-              'flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-full px-4 py-3.5 text-[14.5px] font-extrabold transition-all active:translate-y-[2px] active:shadow-none disabled:cursor-not-allowed disabled:opacity-50',
-              !isLastPage
-                ? 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]'
-                : passed
-                  ? 'bg-psuccess text-white shadow-[0_4px_0_color-mix(in_srgb,var(--p-success)_65%,#0f172a)]'
-                  : read
-                    ? 'bg-pwarning text-white shadow-[0_4px_0_color-mix(in_srgb,var(--p-warning)_65%,#0f172a)]'
-                    : 'bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)]',
-            )}
           >
             {isLastPage
               ? passed
@@ -386,13 +457,9 @@ export function BlockReader({
                   ? tt('rusDarslikQuizOpen')
                   : tt('rusDarslikStartPractice')
               : tt('rusDarslikTheoryContinue')}
-          </button>
+          </Button>
         </div>
       </div>
-
-      {showTutor && !quizOpen && <Suspense fallback={null}><Tutor isOpen onClose={() => setShowTutor(false)} zIndex={80} variant="lesson"
-        mascot={<PathMascot variant="avatar" animation="idle" />}
-        context={{ subjectId: RUSSIAN_SUBJECT_ID, topicName: sectionTitle, questionText: speechText.slice(0, 3000) }} /></Suspense>}
 
       {quizOpen && (
         <TopicCheck

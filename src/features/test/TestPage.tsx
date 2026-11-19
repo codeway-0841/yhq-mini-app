@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo, useSyncExternalStore } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
-import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal } from 'lucide-react'
+import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal, PenTool } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
 import QuestionsLoadError from '../../shared/components/QuestionsLoadError'
@@ -45,6 +45,10 @@ import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
 import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { splitLessonPhases } from '../../shared/components/BrilliantCompletionContent'
+import { BrilliantExitDialog } from '../../shared/components/BrilliantLessonChrome'
+import { BrilliantPracticeFeedbackDock, BrilliantPracticeHeader } from '../../shared/components/BrilliantPracticeChrome'
+import { PathMascot } from '../lessons'
 import { clearDrawingSession } from './components/drawing-model'
 
 export default function TestPage() {
@@ -67,6 +71,7 @@ export default function TestPage() {
 
   const subjectId      = useSubjectStore((s) => s.subjectId)
   const mode           = (location.state?.mode as string | undefined) ?? null
+  const isCoursePractice = mode === 'lesson' || mode === 'module' || mode === 'topic'
   const examPreset     = resolveExamMode(mode, subjectId)
   const isOfficialExam = Boolean(examPreset) || mode === 'exam'
 
@@ -94,9 +99,9 @@ export default function TestPage() {
   const [zoomed, setZoomed]             = useState(false)
   const [confirmExit, setConfirmExit]   = useState(false)
   const [showExplain, setShowExplain]   = useState(false)
+  const [stagedChoice, setStagedChoice] = useState<string | null>(null)
   const [dbExplanation, setDbExplanation]     = useState<string | null>(null)
   const [loadingDbExplain, setLoadingDbExplain] = useState(false)
-  const [showAiTutor, setShowAiTutor]   = useState(false)
   const [showMenu, setShowMenu] = useState(false)
   const [confirmFinish, setConfirmFinish] = useState(false)
   const [drawingOpen, setDrawingOpen] = useState(false)
@@ -157,7 +162,6 @@ export default function TestPage() {
       setSlideDirection(direction ?? (i > current ? 'left' : i < current ? 'right' : null))
       setCurrent(i)
       setShowExplain(false)
-      setShowAiTutor(false)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps -- cancelAutoNext is initialized by useTestAnswerFlow below
   }, [activeQuestions.length, current])
@@ -187,12 +191,12 @@ export default function TestPage() {
     answerTimer,
     goTo,
     onToast: handleToast,
-    pauseAutoNext: showExplain || showAiTutor || showMenu || showSettings || confirmFinish || confirmExit || drawingOpen || isFinished,
+    pauseAutoNext: showExplain || showMenu || showSettings || confirmFinish || confirmExit || drawingOpen || isFinished,
   })
 
   useEffect(() => {
-    if (mode === 'lesson' && answers[current] === 'wrong') cancelAutoNext()
-  }, [answers, cancelAutoNext, current, mode])
+    if (isCoursePractice && answers[current] != null) cancelAutoNext()
+  }, [answers, cancelAutoNext, current, isCoursePractice])
 
   // ── Session save — snapshot persistence (haqiqiy answer-flow state bilan) ──
   useTestSessionSave({
@@ -269,7 +273,6 @@ export default function TestPage() {
     !calculatorOpen &&
     !formulasOpen &&
     !showExplain &&
-    !showAiTutor &&
     !showMenu &&
     !confirmFinish &&
     !confirmExit &&
@@ -468,53 +471,78 @@ export default function TestPage() {
     return topic ? (settings?.language === 'ru' ? topic.nameRu : topic.nameUz) : ''
   })()
 
+  const courseOutcomes: Record<number, 'correct' | 'wrong'> = {}
+  answers.forEach((st, idx) => {
+    if (st === 'correct' || st === 'wrong') courseOutcomes[idx] = st
+  })
+  const answeredTotal = answers.filter(Boolean).length
+  const { phase1Count: legacyPhase1Count, phase2Count: legacyPhase2Count } = splitLessonPhases(activeQuestions.length, true)
+  const isLegacyPhase2 = isCoursePractice && legacyPhase2Count > 0 && current >= legacyPhase1Count
+  const handleLegacyCourseContinue = () => {
+    setStagedChoice(null)
+    if (current + 1 < activeQuestions.length) goTo(current + 1, 'left')
+    else { setIsFinished(true); setShowResults(true) }
+  }
+
   return (
-    <div className="relative flex flex-col bg-pcanvas">
-      <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
-        <div className={`mx-auto flex w-full items-center justify-between gap-3 px-4 py-2 ${q.image ? 'max-w-6xl' : 'max-w-2xl'}`}>
-          <button type="button" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')} className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer [&_svg]:size-6">
-            {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
-          </button>
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
-              <Timer size={16} className={timerIconTone} aria-hidden="true" />
-              <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
-                <span key={Math.floor(timerLeft / 60)} className={`inline-block text-base font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
-              </span>
+    <div className={`relative flex flex-col bg-pcanvas ${isCoursePractice ? 'min-h-[100dvh]' : ''}`}>
+      {isCoursePractice ? (
+        <BrilliantPracticeHeader
+          currentIndex={current}
+          total={activeQuestions.length}
+          answeredCount={answeredTotal}
+          outcomes={courseOutcomes}
+          onClose={handleBack}
+          closeLabel={confirmExit ? tt('cancelExit') : tt('backWord')}
+          language={settings.language}
+        />
+      ) : (
+        <div className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] pt-[var(--safe-top,0px)] page-header">
+          <div className={`mx-auto flex w-full items-center justify-between gap-3 px-4 py-2 ${q.image ? 'max-w-6xl' : 'max-w-2xl'}`}>
+            <button type="button" onClick={handleBack} aria-label={confirmExit ? tt('cancelExit') : tt('backWord')} className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer [&_svg]:size-6">
+              {confirmExit ? <X className="text-pdanger" /> : <ChevronLeft />}
+            </button>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2" role="timer" aria-live="off" aria-label={`${tt('timeRemaining')}: ${timer}`}>
+                <Timer size={16} className={timerIconTone} aria-hidden="true" />
+                <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
+                  <span key={Math.floor(timerLeft / 60)} className={`inline-block text-base font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
+                </span>
+              </div>
+              {mode === 'mock' && (
+                <span className={`text-xs font-medium tabular-nums ${wrongCount > 0 ? 'text-pdanger' : 'text-pmuted'}`}>
+                  {wrongCount}/2 {tt('testErrors')}
+                </span>
+              )}
+              {import.meta.env.DEV && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    const len = activeQuestions.length
+                    restoreState(
+                      Array(len).fill('correct'),
+                      Array(len).fill('a'),
+                      Array(len).fill('a'),
+                      30,
+                      10,
+                      [],
+                    )
+                    setIsFinished(true)
+                    setShowResults(true)
+                  }}
+                  className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
+                  title="Dev: Test Yakuni (Demo)"
+                >
+                  ⚡ Yakun
+                </button>
+              )}
             </div>
-            {mode === 'mock' && (
-              <span className={`text-xs font-medium tabular-nums ${wrongCount > 0 ? 'text-pdanger' : 'text-pmuted'}`}>
-                {wrongCount}/2 {tt('testErrors')}
-              </span>
-            )}
-            {import.meta.env.DEV && (
-              <button
-                type="button"
-                onClick={() => {
-                  const len = activeQuestions.length
-                  restoreState(
-                    Array(len).fill('correct'),
-                    Array(len).fill('a'),
-                    Array(len).fill('a'),
-                    30,
-                    10,
-                    [],
-                  )
-                  setIsFinished(true)
-                  setShowResults(true)
-                }}
-                className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
-                title="Dev: Test Yakuni (Demo)"
-              >
-                ⚡ Yakun
-              </button>
-            )}
+            <button type="button" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="grid size-11 shrink-0 place-items-center rounded-full bg-psurface text-pfg transition-colors hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5">
+              <MoreHorizontal />
+            </button>
           </div>
-          <button type="button" onClick={() => { cancelAutoNext(); setShowMenu(true) }} aria-label={tt('testMenu')} aria-haspopup="dialog" aria-expanded={showMenu} className="grid size-12 shrink-0 place-items-center rounded-full bg-white text-gray-700 shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 hover:scale-105 transition-all duration-150 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer [&_svg]:size-5">
-            <MoreHorizontal />
-          </button>
         </div>
-      </div>
+      )}
 
       {toast && (
         <div role="status" className="mx-4 mt-2 flex items-center justify-center gap-2 rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.12)] px-3.5 py-2.5 text-center text-[12.5px] font-medium text-pfg shadow-xs">
@@ -523,7 +551,7 @@ export default function TestPage() {
         </div>
       )}
 
-      {coinPop > 0 && (
+      {!isCoursePractice && coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
           <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.18)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold shadow-xs">
             <CoinIcon size={14} />
@@ -532,10 +560,10 @@ export default function TestPage() {
         </div>
       )}
 
-      <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />
+      {!isCoursePractice && <QuestionStrip total={activeQuestions.length} current={current} answers={answers} onSelect={goTo} />}
 
       <div
-        className="flex-1 px-4 pb-4 touch-pan-y overflow-x-hidden"
+        className={`flex-1 px-4 touch-pan-y overflow-x-hidden ${isCoursePractice ? 'pb-48' : 'pb-4'}`}
         {...touchHandlers}
       >
         <div
@@ -545,14 +573,22 @@ export default function TestPage() {
             !settings?.noAnimation && !isSwiping
               ? (slideDirection === 'left' ? 'animate-slide-in-right' : slideDirection === 'right' ? 'animate-slide-in-left' : '')
               : ''
-          } ${q.image ? 'max-w-6xl lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-4' : 'max-w-2xl'}`}
+          } ${q.image ? 'max-w-6xl lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-4' : isCoursePractice ? 'max-w-[540px]' : 'max-w-2xl'}`}
         >
           <div className="lg:col-start-1 lg:row-start-1">
-            <div className="flex items-center gap-2 mb-2">
-              <p className="min-w-0 flex-1 text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
-                {current + 1} / {activeQuestions.length}
-                {topicLabel ? ` · ${topicLabel}` : ''}
-              </p>
+            <div className={isCoursePractice ? 'flex items-center gap-2 mb-3' : 'flex items-center gap-2 mb-2'}>
+              {isCoursePractice ? (
+                <div className="flex min-w-0 flex-1 items-center gap-1.5 text-[12.5px] font-semibold text-pmuted" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
+                  {topicLabel && <span className="truncate">{topicLabel}</span>}
+                  {topicLabel && <span aria-hidden="true">·</span>}
+                  <span className="shrink-0 tabular-nums">{current + 1} / {activeQuestions.length}</span>
+                </div>
+              ) : (
+                <p className="min-w-0 flex-1 text-xs text-pmuted font-medium" aria-label={`${tt('question')} ${current + 1} ${tt('of')} ${activeQuestions.length}${topicLabel ? `, ${topicLabel}` : ''}`}>
+                  {current + 1} / {activeQuestions.length}
+                  {topicLabel ? ` · ${topicLabel}` : ''}
+                </p>
+              )}
               <button type="button"
                 onClick={(e) => {
                   e.stopPropagation()
@@ -562,19 +598,40 @@ export default function TestPage() {
                 }}
                 aria-label={tt(speaking ? 'stopReading' : 'readQuestion')}
                 aria-pressed={speaking}
-                className={`grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
+                className={isCoursePractice
+                  ? `grid size-9 flex-none shrink-0 place-items-center rounded-full bg-psurface transition-colors cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted hover:text-pfg'}`
+                  : `grid size-10 flex-none shrink-0 place-items-center rounded-full bg-psurface transition-colors cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted hover:text-pfg'}`}
               >
-                {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={18} strokeWidth={2} />}
+                {speaking ? <Square size={15} fill="currentColor" /> : <Volume2 size={17} strokeWidth={2} />}
               </button>
               <button type="button" onClick={() => toggleSaved(q.id)} aria-label={isSaved ? tt('removeSaved') : tt('saveBtn')} aria-pressed={isSaved}
-                className="grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white text-pmuted shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer">
-                <Bookmark size={18} fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
+                className={isCoursePractice
+                  ? 'grid size-9 flex-none shrink-0 place-items-center rounded-full bg-psurface text-pmuted hover:text-pfg transition-colors cursor-pointer'
+                  : 'grid size-10 flex-none shrink-0 place-items-center rounded-full bg-psurface text-pmuted hover:text-pfg transition-colors cursor-pointer'}>
+                <Bookmark size={17} fill={isSaved ? 'currentColor' : 'none'} className={isSaved ? 'text-pwarning' : ''} />
               </button>
+              {isCoursePractice && (
+                <button
+                  type="button"
+                  onClick={() => { cancelAutoNext(); setDrawingOpen((v) => !v) }}
+                  aria-label={tt('practiceTools')}
+                  aria-pressed={drawingOpen}
+                  className={`grid size-9 flex-none shrink-0 place-items-center rounded-full transition-colors cursor-pointer ${
+                    drawingOpen
+                      ? 'bg-[rgb(var(--p-primary-rgb)/0.14)] text-pprimary'
+                      : 'bg-psurface text-pmuted hover:text-pfg'
+                  }`}
+                >
+                  <PenTool size={16} strokeWidth={2} />
+                </button>
+              )}
             </div>
             <MathText
               as="p"
               text={q.text}
-              className="mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px] lg:text-[20px]"
+              className={isCoursePractice
+                ? 'mb-6 text-left font-display font-bold leading-[1.35] tracking-[-0.015em] text-pfg text-[20px]'
+                : 'mb-4 text-left font-display font-semibold leading-relaxed tracking-[-0.015em] text-pfg text-[18px] lg:text-[20px]'}
             />
 
           </div>
@@ -590,7 +647,7 @@ export default function TestPage() {
               aria-label={tt('zoomImage')}>
               <img src={formatImageSrc(q.image)} alt={`${tt('question')} ${current + 1}`} loading="eager" decoding="async"
                 className="block h-auto w-full max-w-full max-h-[min(30svh,240px)] lg:max-h-[min(56svh,520px)] shrink-0 object-contain" />
-              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-xs shadow-xs transition-colors group-hover:bg-black/85">
+              <div className="pointer-events-none absolute right-2.5 top-2.5 flex items-center gap-1 rounded-full bg-black/75 px-2.5 py-1 text-[10px] font-semibold text-white shadow-xs transition-colors group-hover:bg-black/85">
                 <ZoomIn size={11} strokeWidth={1.75} />
                 <span>{settings.language === 'ru' ? 'Увеличить' : 'Kattalashtirish'}</span>
               </div>
@@ -598,24 +655,33 @@ export default function TestPage() {
           )}
           <div className="lg:col-start-1 lg:row-start-2">
             {q.options.map((opt, i) => (
-              <OptionButton key={`${q.id}_${opt.id}`} indexLabel={String.fromCharCode(65 + i)} option={opt} state={getOptionState(opt.id)}
-                onSelect={() => handleSelect(opt.id)} answered={!!selected} />
+              <OptionButton
+                key={`${q.id}_${opt.id}`}
+                indexLabel={String.fromCharCode(65 + i)}
+                variant={isCoursePractice ? 'brilliant' : 'classic'}
+                phase2={isLegacyPhase2}
+                selected={isCoursePractice && !selected && stagedChoice === opt.id}
+                option={opt}
+                state={getOptionState(opt.id)}
+                onSelect={() => {
+                  if (isCoursePractice) setStagedChoice(opt.id)
+                  else handleSelect(opt.id)
+                }}
+                answered={!!selected}
+              />
             ))}
           </div>
         </div>
       </div>
 
-      {(isLast || allAnswered) && (
+      {!isCoursePractice && (isLast || allAnswered) && (
         <div className="pointer-events-none fixed inset-x-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 mx-auto flex max-w-2xl items-end justify-start gap-4">
           <Button onClick={handleYakunlash} className="pointer-events-auto shadow-lg">
             <Check size={15} aria-hidden="true" />{tt('finish')}
           </Button>
         </div>
       )}
-      {/* Maskot — qalam-dock (fixed right-4) TAGIDA: dock javobda 6.5rem'ga
-          ko'tariladi (raised), maskot 1.5rem'da qoladi → desktop'da ham
-          stacked rail, mobilda avvalgi ko'rinish (container cheti = right-4). */}
-      {selected && !drawingOpen && (
+      {!isCoursePractice && selected && !drawingOpen && (
         <Button variant="ghost" onPointerDown={cancelAutoNext} onClick={() => { playSound('hint'); handleOpenExplain() }}
           aria-label={tt('whyThis')} title={tt('whyThis')} aria-expanded={showExplain} aria-haspopup="dialog"
           className="fixed right-4 bottom-[calc(1.5rem+var(--safe-bottom,0px))] z-40 pointer-events-auto h-16 w-16 shrink-0 rounded-full p-0 hover:bg-transparent">
@@ -623,14 +689,39 @@ export default function TestPage() {
           <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
         </Button>
       )}
-      {mode === 'lesson' && answers[current] === 'wrong' && !drawingOpen && !showExplain && !showAiTutor && !isFinished && !showResults && (
-        <LessonMistakeFeedback language={settings.language} onAsk={() => { cancelAutoNext(); setShowAiTutor(true) }} onContinue={() => {
+      {isCoursePractice && !drawingOpen && !showExplain && !isFinished && !showResults ? (
+        <BrilliantPracticeFeedbackDock
+          answeredStatus={answers[current] as 'correct' | 'wrong' | 'pending' | null}
+          isPhase2={isLegacyPhase2}
+          xpEarned={answers[current] === 'correct' ? 15 : 0}
+          language={settings.language}
+          mascotSlot={(
+            <PathMascot
+              variant="avatar"
+              animation={answers[current] === 'correct' ? 'happy' : answers[current] === 'wrong' ? 'oops' : 'idle'}
+            />
+          )}
+          canCheck={Boolean(stagedChoice) && !selected}
+          onCheck={() => {
+            if (!stagedChoice || selected) return
+            const choice = stagedChoice
+            setStagedChoice(null)
+            handleSelect(choice)
+          }}
+          onExplain={() => { playSound('hint'); handleOpenExplain() }}
+          onContinue={handleLegacyCourseContinue}
+          continueLabel={current + 1 >= activeQuestions.length
+            ? (settings.language === 'ru' ? 'Завершить' : 'Yakunlash')
+            : (settings.language === 'ru' ? 'Продолжить' : 'Davom etish')}
+        />
+      ) : mode === 'lesson' && answers[current] === 'wrong' && !drawingOpen && !showExplain && !isFinished && !showResults && (
+        <LessonMistakeFeedback language={settings.language} onContinue={() => {
           if (current + 1 < activeQuestions.length) goTo(current + 1, 'left')
           else handleYakunlash()
         }} />
       )}
 
-      {!isFinished && !showResults && (
+      {!isFinished && !showResults && (!isCoursePractice || drawingOpen) && (
         <TestDrawingLayer
           open={drawingOpen}
           onOpenChange={(nextOpen) => { cancelAutoNext(); setDrawingOpen(nextOpen) }}
@@ -666,7 +757,6 @@ export default function TestPage() {
       {showExplain && (
         <TestExplanation loading={loadingDbExplain} text={dbExplanation} lesson={explanation?.lesson}
           language={settings.language} onClose={() => setShowExplain(false)}
-          onOpenAi={() => { cancelAutoNext(); setShowExplain(false); setShowAiTutor(true) }}
           onOpenLesson={explanation ? () => navigate('/darslik', { state: { moduleId: explanation.modId, lessonIdx: 0 } }) : undefined} />
       )}
 
@@ -693,17 +783,26 @@ export default function TestPage() {
           </Button>
         </SheetBody>
       </Sheet>
-      <ConfirmDialog
-        open={confirmExit}
-        title={settings.language === 'ru' ? 'Выйти из теста?' : 'Testdan chiqilsinmi?'}
-        description={settings.language === 'ru'
-          ? 'Отвеченные вопросы сохранены — тест можно продолжить позже.'
-          : 'Berilgan javoblar saqlangan — testni keyin davom ettirish mumkin.'}
-        confirmLabel={settings.language === 'ru' ? 'Выйти' : 'Chiqish'}
-        cancelLabel={settings.language === 'ru' ? 'Остаться' : 'Qolish'}
-        onClose={() => setConfirmExit(false)}
-        onConfirm={() => { setConfirmExit(false); goBack(navigate) }}
-      />
+      {isCoursePractice ? (
+        <BrilliantExitDialog
+          open={confirmExit}
+          onStay={() => setConfirmExit(false)}
+          onLeave={() => { setConfirmExit(false); goBack(navigate) }}
+          mascot={<span className="relative block size-16"><PathMascot variant="avatar" animation="thinking" /></span>}
+        />
+      ) : (
+        <ConfirmDialog
+          open={confirmExit}
+          title={settings.language === 'ru' ? 'Выйти из теста?' : 'Testdan chiqilsinmi?'}
+          description={settings.language === 'ru'
+            ? 'Отвеченные вопросы сохранены — тест можно продолжить позже.'
+            : 'Berilgan javoblar saqlangan — testni keyin davom ettirish mumkin.'}
+          confirmLabel={settings.language === 'ru' ? 'Выйти' : 'Chiqish'}
+          cancelLabel={settings.language === 'ru' ? 'Остаться' : 'Qolish'}
+          onClose={() => setConfirmExit(false)}
+          onConfirm={() => { setConfirmExit(false); goBack(navigate) }}
+        />
+      )}
       <ConfirmDialog open={confirmFinish && !showResults} title={tt('testFinishTitle')}
         description={answers.some((a) => a === null || a === 'unanswered')
           ? tt('testFinishUnanswered').replace('{count}', String(answers.filter((a) => a === null || a === 'unanswered').length))
@@ -727,6 +826,8 @@ export default function TestPage() {
         earnedXp={earnedXpTotal}
         earnedCoins={earnedCoinsTotal}
         examPresetId={examPreset?.id ?? (mode?.startsWith('exam:') ? mode.slice('exam:'.length) : null)}
+        endstateChain={isCoursePractice}
+        onOpenPremium={() => navigate('/premium')}
 
         showSettings={showSettings}
         onCloseSettings={() => setShowSettings(false)}
@@ -739,14 +840,9 @@ export default function TestPage() {
         activeStrike={activeStrike}
         onDismissStrike={dismissStrike}
 
-        showAiTutor={showAiTutor}
-        onCloseAiTutor={() => setShowAiTutor(false)}
-        currentQuestion={q}
-        selectedOption={selected}
-        isAnswerCorrect={answers[current] === 'correct'}
-
         zoomed={zoomed}
         onCloseZoom={() => setZoomed(false)}
+        currentQuestion={q}
         currentIndex={current}
         sessionKey={sessionKey}
       />

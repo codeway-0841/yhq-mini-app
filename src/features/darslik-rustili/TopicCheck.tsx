@@ -3,10 +3,12 @@ import LessonRunner from './LessonRunner'
 interface TopicCheckProps {
   topicId: string
   title: string
+  mode?: 'lesson' | 'practice'
   onClose: () => void
   /** Server testdan o'tilganda (bir marta) */
   onPassed: () => void
   onNext?: () => void
+  onOpenPremium?: () => void
   hasNext: boolean
   /** Server 403 qaytardi — progress eskirgan bo'lishi mumkin */
   onLocked?: () => void

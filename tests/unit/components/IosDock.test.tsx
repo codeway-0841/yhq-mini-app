@@ -21,7 +21,7 @@ describe('IosDock component', () => {
     vi.clearAllMocks()
   })
 
-  it('renders all 5 tabs on dashboard route', () => {
+  it('renders all 4 tabs on dashboard route', () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <IosDock />
@@ -31,37 +31,9 @@ describe('IosDock component', () => {
     expect(screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })).toBeInTheDocument()
     expect(screen.getByText('Bosh')).toBeInTheDocument()
     expect(screen.getByText('Testlar')).toBeInTheDocument()
-    // Markaz AI tugma — matnsiz (icon-only), nom aria-label'da
-    expect(screen.getByRole('button', { name: 'AI Yechish' })).toBeInTheDocument()
     expect(screen.getByText('Duel')).toBeInTheDocument()
     expect(screen.getByText('Menyu')).toBeInTheDocument()
-  })
-
-  it('markaziy kamera tugmada oq halqa (ring) va ✨ nishon YO‘Q', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <IosDock />
-      </MemoryRouter>,
-    )
-
-    const aiBtn = screen.getByRole('button', { name: /AI Yechish/i })
-    expect(aiBtn.className).not.toMatch(/ring-4|ring-pcanvas/)
-    expect(aiBtn.textContent).not.toContain('✨')
-  })
-
-  it('kamera tugmasi nav ichida markazda (3-o\'rinda) joylashgan', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <IosDock />
-      </MemoryRouter>,
-    )
-
-    const nav = screen.getByRole('navigation', { name: 'Asosiy navigatsiya' })
-    const cameraBtn = screen.getByRole('button', { name: 'AI Yechish' })
-
-    // Kamera tugmasi nav ichida markazda joylashadi
-    expect(nav).toContainElement(cameraBtn)
-    expect(cameraBtn).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /AI Yechish/i })).not.toBeInTheDocument()
   })
 
   it('marks active tab with aria-current="page"', () => {
@@ -104,20 +76,6 @@ describe('IosDock component', () => {
 
     expect(mockNavigate).toHaveBeenCalledWith('/rejimlar')
     expect(haptics.selection).toHaveBeenCalledTimes(1)
-  })
-
-  it('clicking center AI button navigates to /ai-tutor and triggers medium impact haptics', () => {
-    render(
-      <MemoryRouter initialEntries={['/']}>
-        <IosDock />
-      </MemoryRouter>,
-    )
-
-    const aiBtn = screen.getByRole('button', { name: /AI Yechish/i })
-    fireEvent.click(aiBtn)
-
-    expect(mockNavigate).toHaveBeenCalledWith('/ai-tutor')
-    expect(haptics.impact).toHaveBeenCalledWith('medium')
   })
 
   it('hides dock on test solving routes like /test/123', () => {
@@ -200,16 +158,6 @@ describe('IosDock component', () => {
       expect(pill).toBeInTheDocument()
       unmount()
     }
-  })
-
-  it('hides dock on camera AI tutor screen /ai-tutor (fullscreen flow, own back button)', () => {
-    render(
-      <MemoryRouter initialEntries={['/ai-tutor']}>
-        <IosDock />
-      </MemoryRouter>,
-    )
-
-    expect(screen.queryByRole('navigation', { name: 'Asosiy navigatsiya' })).not.toBeInTheDocument()
   })
 
   it('hides dock while reading a library PDF', () => {

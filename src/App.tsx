@@ -51,7 +51,7 @@ const formulasChunk        = () => import('./features/formulas/FormulasPage')
 const searchChunk           = () => import('./features/search/SearchPage')
 const aiTestHubChunk        = () => import('./features/ai-test/AiTestHub')
 const aiTestSessionChunk    = () => import('./features/ai-test/AiTestSession')
-const snapSolveChunk        = () => import('./features/ai-tutor/SnapSolveHub')
+
 const notFoundChunk        = () => import('./shared/components/NotFound')
 // Onboarding — FAQAT birinchi kirishda ko'rinadi, lekin statik import bo'lgani
 // uchun har bir userning entry bundle'ida yotardi.
@@ -100,7 +100,6 @@ const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
 const AiTestHub       = lazy(aiTestHubChunk)
 const AiTestSession   = lazy(aiTestSessionChunk)
-const SnapSolveHub    = lazy(snapSolveChunk)
 const NotFound        = lazy(notFoundChunk)
 const Onboarding      = lazy(onboardingChunk)
 const LoginPage       = lazy(loginChunk)
@@ -137,7 +136,7 @@ const routeChunkPrefetchers = [
   formulasChunk, searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   interactiveLessonsChunk, reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
-  aiTestHubChunk, aiTestSessionChunk, snapSolveChunk, camaiChunk, mathBoardChunk, graphChunk,
+  aiTestHubChunk, aiTestSessionChunk, camaiChunk, mathBoardChunk, graphChunk,
   liveListChunk, mascotStudioChunk, riveMvpChunk, notFoundChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
@@ -435,8 +434,8 @@ export default function App() {
             <Route path="/live" element={<LiveListPage />} />
             <Route path="/live/:id" element={<LiveRoomPage />} />
 
-            <Route path="/ai-tutor"   element={<SnapSolveHub />} />
-            <Route path="/snap-solve" element={<Navigate to="/ai-tutor" replace />} />
+
+
             <Route path="/sharhlar"   element={<ReviewsPage />} />
             <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
             <Route path="/maskotlar" element={<MascotStudioPage />} />

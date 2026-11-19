@@ -255,3 +255,13 @@ body[data-theme='dark'] .brilliant-streak-bg-glow::before {
 .brilliant-streak-day-label[data-animate='true'] {
   animation: endstateStreakDayBounce 833ms forwards;
 }
+
+body[data-no-animation='true'] .brilliant-xp-pulse,
+body[data-no-animation='true'] .brilliant-upsell-copy-in,
+body[data-no-animation='true'] .brilliant-streak-bg-glow::before,
+body[data-no-animation='true'] .brilliant-streak-outline[data-animate='true'],
+body[data-no-animation='true'] .brilliant-streak-bg-circle[data-animate='true'],
+body[data-no-animation='true'] .brilliant-streak-bolt[data-animate='true'],
+body[data-no-animation='true'] .brilliant-streak-day-label[data-animate='true'] {
+  animation: none !important;
+}

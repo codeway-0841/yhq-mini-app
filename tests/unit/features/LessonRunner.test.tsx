@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { fireEvent, render, screen, waitFor, within } from '@testing-library/react'
 import LessonRunner from '../../../src/features/darslik-rustili/LessonRunner'
 import { ApiError, api } from '../../../src/shared/api'
+import { invalidateLeaderboardCache } from '../../../src/shared/lib/leaderboard-cache'
 import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { useDailyStore } from '../../../src/shared/store/useDailyStore'
 import type {
@@ -22,11 +23,6 @@ vi.mock('../../../src/shared/lib/speech', () => ({
 }))
 vi.mock('../../../src/shared/lib/analytics', () => ({
   track: analytics.track,
-}))
-vi.mock('../../../src/features/ai-tutor', () => ({
-  SocraticChatSheet: ({ context, onClose }: { context: { questionText: string; subjectId: string }; onClose: () => void }) => (
-    <div data-testid="lesson-tutor"><span>{context.subjectId}: {context.questionText}</span><button onClick={onClose}>Yopish yordam</button></div>
-  ),
 }))
 
 const CHECK: DarslikPublicCheck = {
@@ -103,24 +99,29 @@ function resultFor(passed: boolean): DarslikCheckResult {
 }
 
 function renderRunner(overrides: Partial<{
+  mode: 'lesson' | 'practice'
   onClose: () => void
   onPassed: () => void
   onNext: () => void
+  onOpenPremium: () => void
 }> = {}) {
   const onClose = overrides.onClose ?? vi.fn()
   const onPassed = overrides.onPassed ?? vi.fn()
   const onNext = overrides.onNext ?? vi.fn()
+  const onOpenPremium = overrides.onOpenPremium ?? vi.fn()
   render(
     <LessonRunner
       topicId="1:0"
       title="ЗВУКИ И БУКВЫ"
+      mode={overrides.mode}
       onClose={onClose}
       onPassed={onPassed}
       onNext={onNext}
+      onOpenPremium={onOpenPremium}
       hasNext
     />,
   )
-  return { onClose, onPassed, onNext }
+  return { onClose, onPassed, onNext, onOpenPremium }
 }
 
 async function continueExercise(runner: HTMLElement) {
@@ -175,6 +176,7 @@ async function completeLesson(runner: HTMLElement) {
 }
 
 beforeEach(() => {
+  invalidateLeaderboardCache()
   speech.speak.mockReset()
   speech.stopSpeaking.mockReset()
   analytics.track.mockReset()
@@ -184,10 +186,19 @@ beforeEach(() => {
     settings: { ...useAppStore.getState().settings, language: 'uz' },
     xp: 100,
   })
-  useDailyStore.setState({ streaks: {}, activityKey: null })
+  useDailyStore.setState({
+    globalStreak: 0,
+    globalCharges: 0,
+    globalExtendedDate: null,
+    streaks: {},
+    charges: {},
+    extendedDates: {},
+    activityKey: null,
+  })
 
   vi.spyOn(api, 'getDarslikCheck').mockResolvedValue(CHECK)
   vi.spyOn(api, 'getAchievements').mockRejectedValue(new Error('achievements skipped in unit test'))
+  vi.spyOn(api, 'getLeagueWeekly').mockRejectedValue(new Error('weekly league skipped in unit test'))
   vi.spyOn(api, 'checkDarslikExercise').mockImplementation(async (_topicId, exerciseId, answer) => {
     const expected = EXPECTED[exerciseId]
     const actual = Array.isArray(expected)
@@ -204,15 +215,6 @@ afterEach(() => {
 })
 
 describe('LessonRunner — v2 Duolingo oqimi', () => {
-  it('mascot orqali joriy savol konteksti bilan yordamchini ochadi va yopadi', async () => {
-    renderRunner()
-    const runner = await screen.findByTestId('lesson-runner')
-    fireEvent.click(within(runner).getByRole('button', { name: 'AI yordamchidan so‘rash' }))
-    const tutor = await screen.findByTestId('lesson-tutor')
-    expect(within(tutor).getByText('rustili: Что мы произносим и слышим?')).toBeInTheDocument()
-    fireEvent.click(within(tutor).getByRole('button', { name: 'Yopish yordam' }))
-    expect(screen.queryByTestId('lesson-tutor')).not.toBeInTheDocument()
-  })
   it('xato javob, javobni ko‘rish va izohni alohida ko‘rsatadi', async () => {
     const { onPassed } = renderRunner()
     const runner = await screen.findByTestId('lesson-runner')
@@ -291,7 +293,7 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     expect(within(result).queryByText('Mavzu darsi')).not.toBeInTheDocument()
     expect(within(result).getByText('Dars yakunlandi!')).toBeInTheDocument()
     expect(within(result).getByText('Jami XP')).toBeInTheDocument()
-    expect(within(result).getByText('+75')).toBeInTheDocument()
+    expect(within(result).getByText('75')).toBeInTheDocument()
     expect(within(result).queryByRole('button', { name: 'Qayta urinish' })).not.toBeInTheDocument()
     expect(within(result).queryByRole('button', { name: 'Mavzuga qaytish' })).not.toBeInTheDocument()
     expect(onPassed).toHaveBeenCalledTimes(1)
@@ -304,14 +306,21 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     }))
     expect(useAppStore.getState().xp).toBe(175)
     expect(useDailyStore.getState().streaks.rustili).toBe(4)
-    expect(useDailyStore.getState().celebrationStreak).toBeNull()
     expect(analytics.track).toHaveBeenCalledWith('lesson_start', expect.any(Object))
     expect(analytics.track).toHaveBeenCalledWith('exercise_answer', expect.objectContaining({ correct: true }))
     expect(analytics.track).toHaveBeenCalledWith('lesson_complete', expect.any(Object))
     expect(analytics.track).toHaveBeenCalledWith('check_passed', expect.any(Object))
 
+    expect(result).toHaveAttribute('data-endstate', 'lesson')
     fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
-    expect(useDailyStore.getState().celebrationStreak).toBe(4)
+    expect(result).toHaveAttribute('data-endstate', 'streak')
+    expect(within(result).getByText('4 kunlik seriya!')).toBeInTheDocument()
+
+    fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
+    expect(result).toHaveAttribute('data-endstate', 'charge')
+    expect(within(result).getByText('Seriya zaryadingiz: 1/2')).toBeInTheDocument()
+
+    fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
     expect(onNext).toHaveBeenCalledTimes(1)
   })
 
@@ -372,5 +381,119 @@ describe('LessonRunner — v2 Duolingo oqimi', () => {
     const mascotHappy = runner.querySelector('.learning-mascot')
     expect(mascotHappy).toHaveAttribute('data-variant', 'avatar')
     expect(mascotHappy).toHaveAttribute('data-animation', 'happy')
+  })
+
+  it('dars o‘rtasida X bosilganda chiqish tasdiq oynasini ochadi', async () => {
+    const { onClose } = renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+
+    fireEvent.click(within(runner).getByRole('button', { name: 'Testni yopish' }))
+    expect(onClose).not.toHaveBeenCalled()
+    expect(await screen.findByText('Chiqsangiz, joriy dars progressi va XP yo‘qoladi.')).toBeInTheDocument()
+
+    fireEvent.click(screen.getByRole('button', { name: 'O‘rganishda davom etish' }))
+    await waitFor(() => expect(screen.queryByText('Chiqsangiz, joriy dars progressi va XP yo‘qoladi.')).not.toBeInTheDocument())
+    expect(onClose).not.toHaveBeenCalled()
+
+    fireEvent.click(within(runner).getByRole('button', { name: 'Testni yopish' }))
+    fireEvent.click(await screen.findByRole('button', { name: 'Chiqish' }))
+    expect(onClose).toHaveBeenCalledTimes(1)
+  })
+
+  it('1-fazada micro-hint va report bayrog‘ini ko‘rsatadi, 2-faza xatosida Qayta urinishsiz Noto‘g‘ri beradi', async () => {
+    renderRunner()
+    const runner = await screen.findByTestId('lesson-runner')
+
+    // Phase 1: q1 xato → Amber sheet, micro-hint, report flag, Qayta urinish bor
+    await answerMcq(runner, 'Буквы')
+    expect(within(runner).getByText('Shoshilmang — savoldagi kalit so‘zga qarab variantlarni qayta solishtiring.')).toBeInTheDocument()
+    const reportBtn = within(runner).getByRole('button', { name: 'Xato haqida xabar berish' })
+    fireEvent.click(reportBtn)
+    expect(reportBtn).toHaveAttribute('aria-pressed', 'true')
+    expect(within(runner).getByRole('button', { name: 'Qayta urinish' })).toBeInTheDocument()
+
+    // q1 to'g'ri → q2 to'g'ri → Phase 2 (q3, dot 0)
+    fireEvent.click(within(runner).getByRole('button', { name: 'Qayta urinish' }))
+    await answerMcq(runner, 'Звуки')
+    await continueExercise(runner)
+    await answerInput(runner, '3')
+    await continueExercise(runner)
+
+    expect(runner).toHaveAttribute('data-stage', 'phase2')
+    expect(within(runner).queryByRole('button', { name: 'AI yordamchidan so‘rash' })).not.toBeInTheDocument()
+
+    // Phase 2 Dot 0 xato: Try again yo'q, Noto'g'ri + Nima uchun? + Davom etish bor
+    fireEvent.click(within(runner).getByRole('button', { name: 'слышим', exact: true }))
+    fireEvent.click(within(runner).getByRole('button', { name: 'Tekshirish' }))
+    await within(runner).findByTestId('lesson-feedback')
+    expect(within(runner).getByText('Noto‘g‘ri')).toBeInTheDocument()
+    expect(within(runner).queryByRole('button', { name: 'Qayta urinish' })).not.toBeInTheDocument()
+    expect(within(runner).getByRole('button', { name: 'Nima uchun?' })).toBeInTheDocument()
+    const dots = runner.querySelectorAll('.rus-lesson-dots i')
+    expect(dots[0]).toHaveAttribute('data-status', 'wrong')
+
+    await continueExercise(runner)
+    await answerMatch(runner)
+    expect(runner.querySelectorAll('.rus-lesson-dots i')[1]).toHaveAttribute('data-status', 'correct')
+  })
+
+  it('bepul foydalanuvchida 5 bosqichli Endstate zanjiri (Dars → Seriya → Zaryad → Liga → Nudge) ni ochadi', async () => {
+    useAppStore.setState({ tariff: 'free', league: 'gold' })
+    vi.mocked(api.getLeagueWeekly).mockResolvedValue({
+      myLeague: 'gold',
+      weekStart: '2026-11-16',
+      entries: [
+        { rank: 1, userId: 'u1', name: 'Shanice M', score: 150, streak: 5, isYou: false },
+        { rank: 2, userId: 'u2', name: 'Melissa K', score: 110, streak: 4, isYou: false },
+        { rank: 3, userId: 'lesson-runner-test', name: 'Ruslan A', score: 100, streak: 4, isYou: true },
+        { rank: 4, userId: 'u4', name: 'Terri L', score: 90, streak: 2, isYou: false },
+      ],
+    })
+    vi.mocked(api.submitDarslikCheck).mockResolvedValue({
+      ...resultFor(true),
+      xpEarned: 75,
+      chargeEarned: true,
+    })
+
+    const onOpenPremium = vi.fn()
+    renderRunner({ onOpenPremium })
+    const runner = await screen.findByTestId('lesson-runner')
+    await completeLesson(runner)
+
+    const res = await screen.findByTestId('lesson-result')
+    expect(res).toHaveAttribute('data-endstate', 'lesson')
+    fireEvent.click(within(res).getByRole('button', { name: 'Davom etish' }))
+
+    expect(res).toHaveAttribute('data-endstate', 'streak')
+    fireEvent.click(within(res).getByRole('button', { name: 'Davom etish' }))
+
+    expect(res).toHaveAttribute('data-endstate', 'charge')
+    fireEvent.click(within(res).getByRole('button', { name: 'Davom etish' }))
+
+    expect(res).toHaveAttribute('data-endstate', 'league')
+    expect(within(res).getByText('Ajoyib!')).toBeInTheDocument()
+    expect(within(res).getByText('Ruslan A')).toBeInTheDocument()
+    expect(within(res).getByText('175 XP')).toBeInTheDocument()
+    fireEvent.click(within(res).getByRole('button', { name: 'Davom etish' }))
+
+    expect(res).toHaveAttribute('data-endstate', 'nudge')
+    expect(within(res).getByText('Shaxsiy mashqlar bilan tezroq o‘rganing')).toBeInTheDocument()
+    fireEvent.click(within(res).getByRole('button', { name: 'Batafsil' }))
+    expect(onOpenPremium).toHaveBeenCalledTimes(1)
+  })
+
+  it('practice rejimida markazlashgan 3 ta nuqta (barsiz) va Ajoyib yakunini ko‘rsatadi', async () => {
+    renderRunner({ mode: 'practice' })
+    const runner = await screen.findByTestId('lesson-runner')
+
+    expect(runner).toHaveAttribute('data-mode', 'practice')
+    expect(runner.querySelector('.rus-lesson-progress')).toBeNull()
+    expect(runner.querySelectorAll('.rus-practice-dots i')).toHaveLength(3)
+    expect(within(runner).queryByRole('button', { name: 'AI yordamchidan so‘rash' })).not.toBeInTheDocument()
+
+    await completeLesson(runner)
+    const res = await screen.findByTestId('lesson-result')
+    expect(within(res).getByText('Ajoyib!')).toBeInTheDocument()
+    expect(within(res).getByText('Shu sur’atda davom eting')).toBeInTheDocument()
   })
 })

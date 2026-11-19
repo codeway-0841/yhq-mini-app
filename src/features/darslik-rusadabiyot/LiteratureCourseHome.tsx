@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { ArrowLeft, CheckCircle2, User, Volume2 } from 'lucide-react'
+import { ArrowRight, CheckCircle2, ChevronLeft, User, Volume2, VolumeX } from 'lucide-react'
 import { RUSSIAN_LITERATURE_SUBJECT_ID } from '../../../shared/subjects'
 import {
   RUSADABIYOT_BLOCKS,
@@ -15,11 +15,18 @@ import { speak, stopSpeaking } from '../../shared/lib/speech'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
 import { Button } from '../../shared/components/ui/button'
-import { MarkdownView, parseMarkdown, type MdBlock } from '../darslik-rustili'
+import {
+  BrilliantExitDialog,
+  BrilliantReaderHeader,
+  BrilliantStagePill,
+  type BrilliantLessonStage,
+} from '../../shared/components/BrilliantLessonChrome'
+import { buildLessonPages, MarkdownView, parseMarkdown, type MdBlock } from '../darslik-rustili'
 import { formatImageSrc } from '../test'
 import {
   BrilliantCourseHome,
   BrilliantCourseMap,
+  PathMascot,
   courseSectionKey,
   type BrilliantCourseLevel,
   type CourseBlockMeta,
@@ -123,11 +130,31 @@ function LiteratureEraReaderOverlay({
   const selectedBlock = RUSADABIYOT_BLOCKS.find((b) => b.id === blockId)
   const [blockContent, setBlockContent] = useState('')
   const [blocksParsed, setBlocksParsed] = useState<MdBlock[]>([])
+  const [pageIndex, setPageIndex] = useState(0)
+  const [showExitConfirm, setShowExitConfirm] = useState(false)
   const [loading, setLoading] = useState(true)
   const [speaking, setSpeaking] = useState(false)
-  const containerRef = useRef<HTMLDivElement>(null)
-  const closeRef = useRef(onClose)
-  closeRef.current = onClose
+  const bodyRef = useRef<HTMLDivElement>(null)
+  const pages = useMemo(() => {
+    const built = buildLessonPages(blocksParsed, 3)
+    return built.length > 0 ? built : [blocksParsed]
+  }, [blocksParsed])
+  const pageCount = Math.max(1, pages.length)
+  const safePageIndex = Math.min(pageIndex, pageCount - 1)
+  const isLastPage = safePageIndex >= pageCount - 1
+  const currentBlocks = pages[safePageIndex] ?? []
+  const stage: BrilliantLessonStage = isLastPage ? 'synthesis' : safePageIndex === 0 ? 'intro' : 'concept'
+
+  const closeRef = useRef(() => onClose())
+  closeRef.current = () => {
+    stopSpeaking()
+    setSpeaking(false)
+    if (safePageIndex > 0 && !isLastPage) {
+      setShowExitConfirm(true)
+      return
+    }
+    onClose()
+  }
 
   useEffect(() => {
     const id = Symbol('literature-era-reader')
@@ -139,6 +166,7 @@ function LiteratureEraReaderOverlay({
     markRead(userId, RUSADABIYOT_PROGRESS_MODULE_OFFSET + selectedBlock.id, 0)
     let cancelled = false
     setLoading(true)
+    setPageIndex(0)
     loadRusadabiyotBlock(selectedBlock.id)
       .then((text) => {
         if (cancelled) return
@@ -158,16 +186,13 @@ function LiteratureEraReaderOverlay({
   }, [selectedBlock, userId, markRead])
 
   useEffect(() => {
-    if (loading || !initialSectionTitle || !containerRef.current) return
-    const headings = containerRef.current.querySelectorAll('h1, h2, h3, h4')
+    if (loading || !initialSectionTitle || pages.length === 0) return
     const needle = initialSectionTitle.toLowerCase().trim()
-    for (const h of headings) {
-      if (h.textContent?.toLowerCase().includes(needle)) {
-        h.scrollIntoView({ behavior: 'auto', block: 'start' })
-        return
-      }
-    }
-  }, [loading, initialSectionTitle])
+    const matchIdx = pages.findIndex((chunk) =>
+      chunk.some((b) => JSON.stringify(b).toLowerCase().includes(needle)),
+    )
+    if (matchIdx >= 0) setPageIndex(matchIdx)
+  }, [loading, initialSectionTitle, pages])
 
   useEffect(() => {
     const tg = getTelegramWebApp()
@@ -194,6 +219,10 @@ function LiteratureEraReaderOverlay({
 
   if (!selectedBlock) return null
 
+  const scrollBodyTop = () => {
+    bodyRef.current?.scrollTo({ top: 0, behavior: 'auto' })
+  }
+
   const toggleSpeech = () => {
     if (speaking) {
       stopSpeaking()
@@ -205,120 +234,171 @@ function LiteratureEraReaderOverlay({
     }
   }
 
-  const scrollToAuthor = (name: string) => {
-    const headings = containerRef.current?.querySelectorAll('h1, h2, h3, h4, figure') ?? []
-    for (const h of headings) {
-      if (h.textContent?.toLowerCase().includes(name.toLowerCase())) {
-        h.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        return
-      }
+  const jumpToAuthor = (name: string) => {
+    const needle = name.toLowerCase()
+    const idx = pages.findIndex((chunk) =>
+      chunk.some((b) => JSON.stringify(b).toLowerCase().includes(needle)),
+    )
+    if (idx >= 0) {
+      setPageIndex(idx)
+      scrollBodyTop()
     }
+  }
+
+  const handleAdvance = () => {
+    stopSpeaking()
+    setSpeaking(false)
+    if (!isLastPage) {
+      setPageIndex((p) => Math.min(p + 1, pageCount - 1))
+      scrollBodyTop()
+      return
+    }
+    onMarkDone()
+    if (onNextEra) onNextEra()
+    else onClose()
   }
 
   const authors = ERA_AUTHORS[selectedBlock.id] ?? []
 
   return (
-    <div ref={containerRef} role="dialog" aria-modal="true" className="fixed inset-0 z-50 overflow-y-auto bg-pcanvas text-pfg">
-      <header className="sticky top-0 z-20 pt-[calc(0.75rem+var(--safe-top,0px))] pb-3 px-4 bg-pcanvas">
-        <div className="max-w-3xl mx-auto flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2 min-w-0">
-            <button
-              type="button"
-              onClick={onClose}
-              className="flex size-10 shrink-0 items-center justify-center -ml-1 rounded-xl text-pfg hover:bg-psurface active:scale-90 transition-all cursor-pointer"
-              aria-label={ru ? 'Назад' : 'Orqaga'}
-            >
-              <ArrowLeft className="w-5 h-5" />
-            </button>
-            <div className="min-w-0">
-              <div className="text-[11px] font-extrabold uppercase tracking-wider text-pprimary">
-                {ru ? `Эпоха ${selectedBlock.id}` : `Davr ${selectedBlock.id}`}
-              </div>
-              <h1 className="text-base font-bold text-pfg truncate">
-                {ru ? selectedBlock.titleRu : selectedBlock.titleUz}
-              </h1>
-            </div>
-          </div>
-
+    <div role="dialog" aria-modal="true" className="fixed inset-0 z-50 flex flex-col bg-pcanvas text-pfg">
+      <BrilliantReaderHeader
+        onClose={() => closeRef.current()}
+        closeLabel={ru ? 'Закрыть' : 'Yopish'}
+        current={safePageIndex + 1}
+        total={pageCount}
+        progressLabel={ru ? 'Прогресс чтения' : 'O‘qish progressi'}
+        hot={isLastPage}
+        trailing={
           <button
             type="button"
             onClick={toggleSpeech}
-            className={`size-10 rounded-xl flex items-center justify-center shrink-0 transition-colors cursor-pointer ${
-              speaking
-                ? 'bg-pprimary text-white'
-                : 'bg-psurface text-pmuted hover:text-pfg'
+            className={`grid size-9 shrink-0 cursor-pointer place-items-center rounded-full transition-colors ${
+              speaking ? 'bg-pprimary text-white' : 'bg-psurface text-pmuted hover:text-pfg'
             }`}
             aria-label={ru ? 'Озвучить' : 'Ovoz berish'}
           >
-            <Volume2 className="w-4 h-4" />
+            {speaking ? <VolumeX className="size-4" /> : <Volume2 className="size-4" />}
           </button>
-        </div>
+        }
+      />
 
-        {authors.length > 1 && (
-          <div className="max-w-3xl mx-auto mt-2.5 flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-            <span className="text-[11px] font-semibold text-pmuted shrink-0 flex items-center gap-1">
-              <User className="size-3 text-pprimary" />
-              {ru ? 'Авторы:' : 'Mualliflar:'}
+      <div ref={bodyRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-3">
+        <article className="mx-auto w-full max-w-[560px] pb-6">
+          <div className="mb-2 flex items-center justify-between gap-2">
+            <div className="flex min-w-0 items-center gap-2">
+              <BrilliantStagePill stage={stage} />
+              <span className="truncate text-[11.5px] font-bold text-pmuted">
+                {ru ? `Эпоха ${selectedBlock.id}` : `Davr ${selectedBlock.id}`}
+              </span>
+            </div>
+            <span className="shrink-0 text-[11.5px] font-bold tabular-nums text-pmuted">
+              {safePageIndex + 1} / {pageCount}
             </span>
-            {authors.map((author) => (
-              <button
-                type="button"
-                key={author.name}
-                onClick={() => scrollToAuthor(author.name)}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-psurface text-xs font-medium text-pfg transition-transform shrink-0 active:scale-95 cursor-pointer"
-              >
-                <img
-                  src={formatImageSrc(author.img) ?? author.img}
-                  alt={author.name}
-                  className="size-4 rounded-full object-cover"
-                  loading="lazy"
-                />
-                <span>{author.name}</span>
-              </button>
-            ))}
           </div>
-        )}
-      </header>
 
-      <main className="max-w-3xl mx-auto px-4 py-4 pb-[calc(6rem+var(--safe-bottom,0px))]">
-        {loading ? (
-          <div className="py-24 text-center">
-            <div className="inline-block size-8 animate-spin rounded-full border-2 border-pprimary border-t-transparent mb-3" />
-            <p className="text-pmuted text-sm font-medium">
-              {ru ? 'Загрузка академического конспекта...' : 'Akademik konspekt yuklanmoqda...'}
-            </p>
-          </div>
-        ) : (
-          <>
-            <div className="max-w-none text-pfg">
-              <MarkdownView blocks={blocksParsed} />
-            </div>
+          <h1 className="mb-3 font-display text-[24px] font-extrabold leading-tight tracking-tight text-pfg sm:text-[28px]">
+            {ru ? selectedBlock.titleRu : selectedBlock.titleUz}
+          </h1>
 
-            <div className="mt-8 pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-              <Button
-                variant="primary"
-                size="lg"
-                className="flex-1"
-                onClick={() => {
-                  onMarkDone()
-                  if (onNextEra) onNextEra()
-                  else onClose()
-                }}
-              >
-                <CheckCircle2 className="w-4 h-4 mr-1.5 inline-block" />
-                {onNextEra
-                  ? (ru ? 'Завершить и перейти дальше' : 'Tugatish va keyingisiga o‘tish')
-                  : (ru ? 'Завершить курс' : 'Kursni yakunlash')}
-              </Button>
-              {isDone && (
-                <Button variant="secondary" size="lg" onClick={onClose}>
-                  {ru ? 'К карте эпох' : 'Davrlar xaritasiga'}
-                </Button>
-              )}
+          {authors.length > 1 && (
+            <div className="no-scrollbar mb-5 flex items-center gap-2 overflow-x-auto pb-1">
+              <span className="flex shrink-0 items-center gap-1 text-[11px] font-bold text-pmuted">
+                <User className="size-3 text-pprimary" />
+                {ru ? 'Авторы:' : 'Mualliflar:'}
+              </span>
+              {authors.map((author) => (
+                <button
+                  type="button"
+                  key={author.name}
+                  onClick={() => jumpToAuthor(author.name)}
+                  className="inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full bg-psurface px-2.5 py-1 text-[12px] font-semibold text-pfg transition-opacity active:opacity-75"
+                >
+                  <img
+                    src={formatImageSrc(author.img) ?? author.img}
+                    alt={author.name}
+                    className="size-4 rounded-full object-cover"
+                    loading="lazy"
+                  />
+                  <span>{author.name}</span>
+                </button>
+              ))}
             </div>
-          </>
-        )}
-      </main>
+          )}
+
+          {loading ? (
+            <div className="flex flex-col gap-2.5 rounded-3xl bg-pcard p-5" aria-busy="true">
+              {[90, 100, 76, 86, 62].map((w, i) => (
+                <div key={i} className="h-3.5 rounded-full bg-psurface" style={{ width: `${w}%` }} />
+              ))}
+            </div>
+          ) : (
+            <div key={safePageIndex} className="max-w-none text-[16.5px] leading-relaxed text-pfg">
+              <MarkdownView blocks={currentBlocks} />
+            </div>
+          )}
+        </article>
+      </div>
+
+      <div className="bg-pcanvas px-4 pb-[calc(0.875rem+var(--safe-bottom,0px))] pt-2.5">
+        <div className="mx-auto flex w-full max-w-[560px] items-center gap-2.5">
+          {safePageIndex > 0 && (
+            <button
+              type="button"
+              onClick={() => {
+                stopSpeaking()
+                setSpeaking(false)
+                setPageIndex((p) => Math.max(0, p - 1))
+                scrollBodyTop()
+              }}
+              aria-label={ru ? 'Назад' : 'Orqaga'}
+              className="grid size-14 shrink-0 cursor-pointer place-items-center rounded-full bg-psurface text-pfg transition-[transform,opacity] active:translate-y-[1px]"
+            >
+              <ChevronLeft size={21} strokeWidth={2.25} />
+            </button>
+          )}
+          <Button
+            type="button"
+            variant={isLastPage ? 'primary' : 'secondary'}
+            size="lg"
+            block
+            className="min-w-0 flex-1"
+            disabled={loading}
+            onClick={handleAdvance}
+          >
+            {isLastPage ? (
+              <>
+                <CheckCircle2 size={18} strokeWidth={2.4} />
+                <span>
+                  {onNextEra
+                    ? (ru ? 'Следующая эпоха' : 'Keyingi davr')
+                    : (ru ? 'Завершить курс' : 'Kursni yakunlash')}
+                </span>
+              </>
+            ) : (
+              <>
+                <span>{ru ? 'Продолжить' : 'Davom etish'}</span>
+                <ArrowRight size={18} strokeWidth={2.4} />
+              </>
+            )}
+          </Button>
+          {isLastPage && isDone && (
+            <Button variant="secondary" size="lg" onClick={onClose} className="shrink-0">
+              {ru ? 'Карта' : 'Xarita'}
+            </Button>
+          )}
+        </div>
+      </div>
+
+      <BrilliantExitDialog
+        open={showExitConfirm}
+        onStay={() => setShowExitConfirm(false)}
+        onLeave={() => {
+          setShowExitConfirm(false)
+          onClose()
+        }}
+        mascot={<span className="relative block size-16"><PathMascot variant="avatar" animation="thinking" /></span>}
+      />
     </div>
   )
 }

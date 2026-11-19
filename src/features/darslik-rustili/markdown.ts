@@ -325,9 +325,16 @@ export function extractSectionBlocks(blocks: MdBlock[], sectionIndex: number): M
   return embeddedPractice < 0 ? section : section.slice(0, embeddedPractice)
 }
 
+function isLeadInBlock(block: MdBlock): boolean {
+  if (block.kind !== 'paragraph') return false
+  const text = plainText(block.lines.join(' '))
+  return text.length > 0 && text.length <= 72 && text.endsWith(':')
+}
+
 /**
  * Nazariyani mobilga mos qisqa kartalarga bo'ladi. Heading keyingi izoh bilan
- * birga qoladi; dividerlar vizual sahifa chegarasi sifatida ishlaydi.
+ * birga qoladi; `Например:` kabi ikki nuqtali kirish satri keyingi misol
+ * blokidan uzilib yolg'iz qolmaydi; dividerlar sahifa chegarasi bo'ladi.
  */
 export function buildLessonPages(blocks: MdBlock[], maxBlocks = 4): MdBlock[][] {
   const content = blocks[0]?.kind === 'heading' ? blocks.slice(1) : blocks
@@ -340,17 +347,112 @@ export function buildLessonPages(blocks: MdBlock[], maxBlocks = 4): MdBlock[][] 
     page = []
   }
 
-  for (const block of content) {
+  for (let idx = 0; idx < content.length; idx++) {
+    const block = content[idx]
     if (block.kind === 'divider') {
       flush()
       continue
     }
     if (block.kind === 'heading' && page.length >= 2) flush()
     if (page.length >= maxBlocks) flush()
+    // Kirish satri ("Например:") keyingi blok bilan birga qolishi uchun oxirgi o'rinda flush qilamiz.
+    if (isLeadInBlock(block) && idx + 1 < content.length && content[idx + 1]?.kind !== 'divider') {
+      const needRoom = page.length + 2 > maxBlocks
+      if (needRoom && page.length > 0) flush()
+    }
     page.push(block)
   }
   flush()
 
   // Juda qisqa yoki noodatiy manba ham bo'sh lesson bermasin.
   return pages.length ? pages : [content.length ? content : blocks]
+}
+
+export interface DiscoveryChallenge {
+  promptUz: string
+  promptRu: string
+  options: string[]
+  correctIdx: number
+  explanationUz: string
+  explanationRu: string
+}
+
+/**
+ * Dars bo'limi ichidan yakuniy xulosadan OLDIN foydalanuvchiga kichik
+ * «Sinab ko‘r» (Try before synthesis) interaktiv topshiriq chiqaradi.
+ * Faqat matnning o'zidagi aniq fakt/test asosida yaratiladi.
+ */
+export function extractDiscoveryChallenge(blocks: readonly MdBlock[]): DiscoveryChallenge | null {
+  for (const block of blocks) {
+    if (block.kind === 'quiz' && block.questions.length > 0) {
+      const q = block.questions[0]
+      if (q.o.length >= 2 && q.a >= 0 && q.a < q.o.length) {
+        return {
+          promptUz: q.q,
+          promptRu: q.q,
+          options: q.o,
+          correctIdx: q.a,
+          explanationUz: q.e || q.o[q.a],
+          explanationRu: q.e || q.o[q.a],
+        }
+      }
+    }
+  }
+
+  // Harf va tovush soni farq qiladigan so'zlar («ёлка — 4 буквы, 5 звуков»)
+  const joinedLines: string[] = []
+  for (const block of blocks) {
+    if (block.kind === 'paragraph' || block.kind === 'quote') {
+      joinedLines.push(...block.lines)
+    } else if (block.kind === 'list') {
+      joinedLines.push(...block.items.map((item) => item.text))
+    }
+  }
+
+  for (const rawLine of joinedLines) {
+    const clean = plainText(rawLine)
+    const match = clean.match(/([А-ЯЁа-яё-]{2,})\s*[—–-]\s*(\d+)\s*букв[а-я]*[\s,;]+(\d+)\s*звук/u)
+    if (!match) continue
+    const word = match[1]
+    const letters = Number(match[2])
+    const sounds = Number(match[3])
+    if (letters === sounds || sounds <= 0 || letters <= 0) continue
+    const third = sounds > letters ? sounds + 1 : Math.max(1, sounds - 1)
+    const nums = Array.from(new Set([letters, sounds, third])).sort((a, b) => a - b)
+    const options = nums.map(String)
+    const correctIdx = options.indexOf(String(sounds))
+    if (correctIdx < 0 || options.length < 2) continue
+    return {
+      promptUz: `«${word}» so‘zida ${letters} ta harf bor. Sizningcha, nechta tovush eshitiladi?`,
+      promptRu: `В слове «${word}» ${letters} букв. Как думаете, сколько в нём звуков?`,
+      options,
+      correctIdx,
+      explanationUz: `«${word}» — ${letters} ta harf, lekin ${sounds} ta tovush!`,
+      explanationRu: `«${word}» — ${letters} букв, но ${sounds} звуков!`,
+    }
+  }
+
+  // Tengsizlik qoidasi («буква ≠ звук»)
+  for (const block of blocks) {
+    if (block.kind !== 'quote') continue
+    const text = plainText(block.lines.join(' ')).replace(/[.!]+$/, '')
+    const neqMatch = text.match(/^(.+?)\s*≠\s*(.+)$/u)
+    if (!neqMatch) continue
+    const left = neqMatch[1].trim()
+    const right = neqMatch[2].trim()
+    if (!left || !right || left.length > 32 || right.length > 32) continue
+    return {
+      promptUz: `Qaysi fikr to‘g‘ri deb o‘ylaysiz?`,
+      promptRu: `Какое утверждение верно?`,
+      options: [
+        `${left} = ${right}`,
+        `${left} ≠ ${right}`,
+      ],
+      correctIdx: 1,
+      explanationUz: `Eslab qoling: ${left} ≠ ${right}. Ular har doim ham teng bo‘lavermaydi.`,
+      explanationRu: `Запомните: ${left} ≠ ${right}. Они не всегда совпадают.`,
+    }
+  }
+
+  return null
 }

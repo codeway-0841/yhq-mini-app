@@ -3,9 +3,8 @@ import { Volume2 } from 'lucide-react'
 import { speak, stopSpeaking } from '../../../shared/lib/speech'
 import { Button } from '../../../shared/components/ui/button'
 
-export function LessonMistakeFeedback({ language, onAsk, onContinue }: {
+export function LessonMistakeFeedback({ language, onContinue }: {
   language: 'uz' | 'ru'
-  onAsk: () => void
   onContinue: () => void
 }) {
   const ru = language === 'ru'
@@ -18,7 +17,6 @@ export function LessonMistakeFeedback({ language, onAsk, onContinue }: {
         <button type="button" onClick={() => speak(message, language)} className="grid size-9 shrink-0 place-items-center rounded-full bg-psurface" aria-label={ru ? 'Прослушать подсказку' : 'Yordamni tinglash'}><Volume2 size={17} /></button>
       </div>
       <div className="mt-2 flex gap-2">
-        <Button variant="secondary" size="sm" onClick={() => { stopSpeaking(); onAsk() }} className="flex-1">{ru ? 'Спросить ИИ' : 'AI yordam'}</Button>
         <Button size="sm" onClick={() => { stopSpeaking(); onContinue() }} className="flex-1">{ru ? 'Дальше' : 'Davom etish'}</Button>
       </div>
     </div>

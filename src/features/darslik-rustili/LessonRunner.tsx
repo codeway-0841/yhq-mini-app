@@ -1,6 +1,6 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronDown, ChevronLeft, Lock, RefreshCw, X, XCircle, Zap,
+  CheckCircle2, ChevronDown, ChevronLeft, Dumbbell, Flag, Lock, RefreshCw, RotateCcw, X, XCircle, Zap,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import ModalShell from '../../shared/components/ModalShell'
@@ -9,7 +9,8 @@ import { useDailyStore, isSubjectExtendedOnDate, selectDailyCharges, todayStr } 
 import { useT, type Keys } from '../../shared/i18n'
 import { registerModal } from '../../shared/lib/navigation'
 import { cn } from '../../shared/lib/cn'
-import { ApiError, api } from '../../shared/api'
+import { ApiError, api, type LeagueWeekly } from '../../shared/api'
+import { leaderboardPageCaches } from '../../shared/lib/leaderboard-cache'
 import { track } from '../../shared/lib/analytics'
 import type { AchievementDef } from '../../shared/config/achievements'
 import { checkAndCelebrateAchievements } from '../../shared/lib/achievement-detector'
@@ -18,8 +19,26 @@ import { playSound } from '../../shared/lib/sounds'
 import { haptics } from '../../platform/haptics'
 import { speak, stopSpeaking, isSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
 import { PathMascot } from '../lessons'
+import {
+  BRILLIANT_LEAGUES,
+  LeagueShield,
+  getDaysLeftInWeek,
+  resolveBrilliantLeagueId,
+} from '../profile'
 import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstateShell'
-import { BrilliantCompletionStage } from '../../shared/components/BrilliantCompletionContent'
+import {
+  BrilliantConfettiBurstIcon,
+  BrilliantMissedTargetIcon,
+} from '../../shared/components/BrilliantPracticeChrome'
+import {
+  BrilliantChargeStage,
+  BrilliantCompletionStage,
+  BrilliantLeagueStage,
+  BrilliantPracticeNudgeStage,
+  BrilliantStreakStage,
+  buildLeagueClimb,
+  splitLessonPhases,
+} from '../../shared/components/BrilliantCompletionContent'
 import LessonExercise from './LessonExercise'
 import './rus-lesson-feedback.css'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
@@ -36,7 +55,7 @@ import {
 
 type LoadError = 'locked' | 'unavailable' | 'network'
 type Phase = 'exercise' | 'feedback'
-const Tutor = lazy(() => import('../ai-tutor').then((module) => ({ default: module.SocraticChatSheet })))
+type EndstateStep = 'lesson' | 'streak' | 'charge' | 'league' | 'nudge'
 
 const EXERCISE_LABEL: Record<DarslikPublicExercise['kind'], Keys> = {
   mcq: 'rusDarslikExerciseMcq',
@@ -57,10 +76,12 @@ function classifyError(error: unknown): LoadError {
 interface LessonRunnerProps {
   topicId: string
   title: string
+  mode?: 'lesson' | 'practice'
   onClose: () => void
   /** Server testdan o'tilganda (bir marta) */
   onPassed: () => void
   onNext?: () => void
+  onOpenPremium?: () => void
   hasNext: boolean
   /** Server 403 qaytardi — progress eskirgan bo'lishi mumkin */
   onLocked?: () => void
@@ -86,6 +107,36 @@ function answerText(exercise: DarslikPublicExercise, value: DarslikAnswerValue |
   return Array.isArray(value) ? value.join(' ') : value
 }
 
+function practiceDotForIndex(index: number, total: number, dotCount: number): number {
+  if (total <= 0 || dotCount <= 1) return 0
+  return Math.min(dotCount - 1, Math.floor((index * dotCount) / total))
+}
+
+function deriveMicroHint(
+  exercise: DarslikPublicExercise,
+  feedback: DarslikAnswerFeedback,
+  tt: (key: Keys) => string,
+): string {
+  if (feedback.hint?.trim()) return feedback.hint.trim()
+  const raw = feedback.explanation?.trim() ?? ''
+  const firstSentence = raw.split(/(?<=[.!?])\s+/)[0]?.trim() ?? ''
+  const ans = feedback.correctAnswer.trim().toLowerCase()
+  const leaksAnswer = ans.length > 1 && firstSentence.toLowerCase().includes(ans)
+  if (firstSentence.length > 15 && !leaksAnswer) return firstSentence
+
+  switch (exercise.kind) {
+    case 'input':
+      return tt('rusDarslikHintInput')
+    case 'word_bank':
+      return tt('rusDarslikHintWordBank')
+    case 'match':
+      return tt('rusDarslikHintMatch')
+    case 'mcq':
+    case 'listening':
+      return tt('rusDarslikHintMcq')
+  }
+}
+
 /**
  * Yagona dars oqimi: yuklash → mashqlar → darhol feedback → natija.
  *
@@ -97,14 +148,20 @@ function answerText(exercise: DarslikPublicExercise, value: DarslikAnswerValue |
 export default function LessonRunner({
   topicId,
   title,
+  mode = 'lesson',
   onClose,
   onPassed,
   onNext,
+  onOpenPremium,
   hasNext,
   onLocked,
   onReady,
 }: LessonRunnerProps) {
+  const isPractice = mode === 'practice'
   const lang = useAppStore((state) => state.settings.language)
+  const tariff = useAppStore((state) => state.tariff)
+  const userId = useAppStore((state) => state.user?.id) ?? '0'
+  const storeLeague = useAppStore((state) => state.league)
   const tt = useT(lang)
   const closeRef = useRef(onClose)
   closeRef.current = onClose
@@ -129,13 +186,20 @@ export default function LessonRunner({
   const [feedback, setFeedback] = useState<DarslikAnswerFeedback | null>(null)
   const [revealed, setRevealed] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
-  const [showTutor, setShowTutor] = useState(false)
+  const [showExitConfirm, setShowExitConfirm] = useState(false)
+  const [stepOutcomes, setStepOutcomes] = useState<Record<number, 'correct' | 'wrong'>>({})
+  const [reported, setReported] = useState<Record<string, boolean>>({})
   const [checking, setChecking] = useState(false)
   const [answerError, setAnswerError] = useState(false)
   const [combo, setCombo] = useState(0)
   const [earnedLessonXp, setEarnedLessonXp] = useState(0)
   const [lastCheckXp, setLastCheckXp] = useState(0)
-  const pendingStreakRef = useRef<{
+  const [endstateIdx, setEndstateIdx] = useState(0)
+  const [streakGlow, setStreakGlow] = useState(false)
+  const [weeklyLeague, setWeeklyLeague] = useState<LeagueWeekly | null>(() => leaderboardPageCaches.weekly.peek())
+  const preLessonScoreRef = useRef<number | null>(null)
+  const [sessionXpDelta, setSessionXpDelta] = useState(0)
+  const [endstateStreak, setEndstateStreak] = useState<{
     streak: number
     showCharge: boolean
     charges: number
@@ -153,8 +217,21 @@ export default function LessonRunner({
 
   const lesson = check?.format === 'lesson'
   const total = check?.questions.length ?? 0
+  const { phase1Count, phase2Count } = useMemo(() => splitLessonPhases(total, Boolean(lesson) && !isPractice), [isPractice, lesson, total])
+  const isPhase2 = Boolean(lesson && phase2Count > 0 && index >= phase1Count)
+  const isCheckpointStep = Boolean(lesson && (isPractice || isPhase2))
+  const dotIdx = isPhase2 ? index - phase1Count : -1
   const current = check?.questions[index]
   const currentAnswered = current ? isDarslikPublicAnswerComplete(current, answers[current.id]) : false
+
+  const requestClose = useCallback(() => {
+    if (lesson && check && !result && !loadError && !loading) {
+      setShowExitConfirm(true)
+      return
+    }
+    onClose()
+  }, [check, lesson, loadError, loading, onClose, result])
+  closeRef.current = requestClose
 
   useEffect(() => {
     const id = Symbol('rus-lesson-runner')
@@ -163,14 +240,14 @@ export default function LessonRunner({
 
   useEffect(() => {
     const escape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && !showExplanation && !showTutor) {
+      if (event.key === 'Escape' && !showExplanation && !showExitConfirm) {
         event.preventDefault()
         closeRef.current()
       }
     }
     document.addEventListener('keydown', escape)
     return () => document.removeEventListener('keydown', escape)
-  }, [showExplanation, showTutor])
+  }, [showExplanation, showExitConfirm])
 
   useEffect(() => subscribeSpeaking(() => setSpeaking(isSpeaking())), [])
   useEffect(() => () => stopSpeaking(), [])
@@ -191,18 +268,36 @@ export default function LessonRunner({
     setFeedback(null)
     setRevealed(false)
     setShowExplanation(false)
-    setShowTutor(false)
+    setShowExitConfirm(false)
+    setStepOutcomes({})
+    setReported({})
+    setEndstateIdx(0)
+    setStreakGlow(false)
+    setEndstateStreak(null)
+    setSessionXpDelta(0)
     setShowReview(false)
     setAnswerError(false)
     setSubmitError(false)
     setCombo(0)
     setEarnedLessonXp(0)
     setLastCheckXp(0)
-    pendingStreakRef.current = null
     pendingAchievementsRef.current = []
     completionFlushedRef.current = false
     startedTracked.current = false
     passedNotified.current = false
+
+    if (userId && userId !== '0') {
+      leaderboardPageCaches.weekly.fetch(userId)
+        .then((data) => {
+          if (cancelled) return
+          setWeeklyLeague(data)
+          const youRow = data.entries.find((e) => e.isYou || e.userId === userId)
+          if (youRow && preLessonScoreRef.current === null) {
+            preLessonScoreRef.current = youRow.score
+          }
+        })
+        .catch(() => {})
+    }
 
     api.getDarslikCheck(topicId)
       .then((loaded) => {
@@ -227,7 +322,7 @@ export default function LessonRunner({
       .finally(() => { if (!cancelled) setLoading(false) })
 
     return () => { cancelled = true }
-  }, [topicId, reload])
+  }, [topicId, reload, userId])
 
   // Yangi mashqda scroll tepaga va sarlavhaga fokus (klaviatura/screen reader).
   useEffect(() => {
@@ -258,9 +353,11 @@ export default function LessonRunner({
         ? await api.submitDarslikCheck(topicId, answers, check.revision)
         : await api.submitDarslikCheck(topicId, answers)
       setResult(graded)
+      setEndstateIdx(0)
+      setStreakGlow(false)
       track('lesson_complete', {
         topic_id: topicId,
-        format: lesson ? 'lesson' : 'legacy',
+        format: lesson ? (isPractice ? 'practice' : 'lesson') : 'legacy',
         correct: graded.correct,
         total: graded.total,
       })
@@ -272,6 +369,7 @@ export default function LessonRunner({
           passedNotified.current = true
           onPassed()
         }
+        setSessionXpDelta(graded.xpEarned ?? (earnedLessonXp || 0))
         if (typeof graded.xp === 'number') useAppStore.setState({ xp: graded.xp })
         if (typeof graded.dailyStreak === 'number') {
           const today = todayStr()
@@ -279,13 +377,13 @@ export default function LessonRunner({
           const charges = graded.streakCharges ?? selectDailyCharges(useDailyStore.getState(), RUSSIAN_SUBJECT_ID)
           const showCharge = Boolean(graded.chargeSaved || graded.chargeEarned || charges > 0)
           if (!alreadyDone && graded.dailyStreak > 0) {
-            pendingStreakRef.current = {
+            setEndstateStreak({
               streak: graded.dailyStreak,
               showCharge,
               charges,
               chargeSaved: Boolean(graded.chargeSaved),
               chargeEarned: Boolean(graded.chargeEarned),
-            }
+            })
           }
           useDailyStore.getState().applyServerResult(
             today,
@@ -341,7 +439,7 @@ export default function LessonRunner({
     } finally {
       setSubmitting(false)
     }
-  }, [answers, check, lesson, onPassed, submitting, topicId])
+  }, [answers, check, earnedLessonXp, isPractice, lesson, onPassed, submitting, topicId])
 
   const checkAnswer = useCallback(async () => {
     const value = current ? answers[current.id] : undefined
@@ -354,6 +452,7 @@ export default function LessonRunner({
         : await api.checkDarslikExercise(topicId, current.id, value)
       setFeedback(graded)
       setPhase('feedback')
+      setStepOutcomes((previous) => ({ ...previous, [index]: graded.correct ? 'correct' : 'wrong' }))
       const stepXp = graded.xpEarned ?? 0
       setLastCheckXp(stepXp)
       if (typeof graded.xp === 'number') useAppStore.setState({ xp: graded.xp })
@@ -421,13 +520,19 @@ export default function LessonRunner({
     setFeedback(null)
     setRevealed(false)
     setShowExplanation(false)
+    setShowExitConfirm(false)
+    setStepOutcomes({})
+    setReported({})
+    setEndstateIdx(0)
+    setStreakGlow(false)
+    setEndstateStreak(null)
+    setSessionXpDelta(0)
     setResult(null)
     setAnswerError(false)
     setSubmitError(false)
     setCombo(0)
     setEarnedLessonXp(0)
     setLastCheckXp(0)
-    pendingStreakRef.current = null
     pendingAchievementsRef.current = []
     completionFlushedRef.current = false
     passedNotified.current = false
@@ -442,28 +547,62 @@ export default function LessonRunner({
     [answers, check],
   )
 
-  const progressPercent = total > 0
-    ? Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, total)) * 100)
-    : 0
+  const phase1ProgressPct = useMemo(() => {
+    if (total <= 0) return 0
+    if (phase2Count === 0) {
+      return Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, total)) * 100)
+    }
+    if (isPhase2) return 100
+    return Math.round(((index + (phase === 'feedback' ? 1 : 0)) / Math.max(1, phase1Count)) * 100)
+  }, [index, isPhase2, phase, phase1Count, phase2Count, total])
+
+  const practiceDotCount = Math.min(3, Math.max(1, total))
+  const currentPracticeDot = practiceDotForIndex(index, total, practiceDotCount)
 
   const header = lesson && check && !result ? (
     <header className="rus-lesson-header pt-[calc(0.625rem+var(--safe-top,0px))]">
-      <button type="button" onClick={onClose} aria-label={tt('rusDarslikQuizClose')} className="rus-lesson-close"><X size={24} /></button>
-      <div className="rus-lesson-progress" role="progressbar" aria-label={tt('rusDarslikLessonProgress')}
-        aria-valuemin={0} aria-valuemax={total} aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}>
-        <span style={{ width: `${Math.max(3, progressPercent)}%` }} />
-      </div>
+      <button type="button" onClick={requestClose} aria-label={tt('rusDarslikQuizClose')} className="rus-lesson-close"><X size={24} /></button>
+      {!isPractice && (
+        <div className="rus-lesson-progress" role="progressbar" aria-label={tt('rusDarslikLessonProgress')}
+          aria-valuemin={0} aria-valuemax={total} aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}>
+          <span style={{ width: `${Math.max(4, phase1ProgressPct)}%` }} />
+        </div>
+      )}
       <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
       {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
-      <span className="rus-lesson-dots" aria-hidden="true">
-        {[1, 2, 3].map((step) => (
-          <i key={step} data-active={combo >= step ? 'true' : undefined} />
-        ))}
+      <span
+        className={cn('rus-lesson-dots', isPractice && 'rus-practice-dots')}
+        aria-hidden="true"
+        data-phase2={isCheckpointStep ? 'true' : undefined}
+      >
+        {isPractice
+          ? Array.from({ length: practiceDotCount }, (_, dot) => {
+              const indices = Array.from({ length: total }, (__, qIdx) => qIdx).filter(
+                (qIdx) => practiceDotForIndex(qIdx, total, practiceDotCount) === dot,
+              )
+              const hasWrong = indices.some((qIdx) => stepOutcomes[qIdx] === 'wrong')
+              const allCorrect = indices.length > 0 && indices.every((qIdx) => stepOutcomes[qIdx] === 'correct')
+              const status = hasWrong ? 'wrong' : allCorrect ? 'correct' : undefined
+              return (
+                <i
+                  key={dot}
+                  data-status={status}
+                  data-current={currentPracticeDot === dot ? 'true' : undefined}
+                />
+              )
+            })
+          : (phase2Count > 0 ? Array.from({ length: phase2Count }, (_, d) => d) : [0, 1, 2]).map((dot) => (
+              <i
+                key={dot}
+                data-status={phase2Count > 0 ? stepOutcomes[phase1Count + dot] : (combo >= dot + 1 ? 'correct' : undefined)}
+                data-current={phase2Count > 0 && isPhase2 && dotIdx === dot ? 'true' : undefined}
+              />
+            ))}
       </span>
-      <Zap size={16} strokeWidth={2.2} className="rus-lesson-lightning" data-hot={combo >= 2 ? 'true' : undefined} aria-hidden="true" />
+      <Zap size={16} strokeWidth={2.2} className="rus-lesson-lightning" data-hot={isCheckpointStep && (!isPractice || index > 0 || phase === 'feedback') || combo >= 2 ? 'true' : undefined} aria-hidden="true" />
     </header>
   ) : (
-    <div className="border-b border-pline bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
+    <div className="bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
       <div className="mx-auto flex w-full max-w-[520px] items-center gap-3">
         <button
           type="button"
@@ -528,7 +667,7 @@ export default function LessonRunner({
             >
               <div
                 className="h-full rounded-full bg-psuccess transition-[width] duration-300 ease-out"
-                style={{ width: `${Math.max(8, progressPercent)}%` }}
+                style={{ width: `${Math.max(8, phase1ProgressPct)}%` }}
               />
             </div>
           </div>
@@ -596,77 +735,201 @@ export default function LessonRunner({
     const dark = typeof document !== 'undefined' && document.body.dataset.theme === 'dark'
     const blockNum = Number(topicId.split(':')[0])
     const colorVariant = Number.isFinite(blockNum) && blockNum > 0 ? (blockNum - 1) % 6 : 0
+    const isRu = lang === 'ru'
+
     const heading = result.passed
-      ? (lesson ? tt('rusDarslikLessonPassed') : tt('rusDarslikQuizPassed'))
+      ? (lesson ? (isPractice ? tt('rusDarslikPracticePassed') : tt('rusDarslikLessonPassed')) : tt('rusDarslikQuizPassed'))
       : (lesson ? tt('rusDarslikLessonFailed') : tt('rusDarslikQuizFailed'))
 
-    const isRu = lang === 'ru'
-    const primaryLabel = result.passed
-      ? (lesson ? tt('rusDarslikLessonContinue') : (hasNext && onNext ? tt('rusDarslikQuizNextTopic') : tt('rusDarslikQuizBackToTopic')))
-      : tt('rusDarslikQuizRetry')
-    const primaryAction = result.passed
-      ? (hasNext && onNext ? onNext : onClose)
-      : retry
-    const handlePrimary = () => {
-      completionFlushedRef.current = true
-      if (result.passed && pendingStreakRef.current) {
-        const pending = pendingStreakRef.current
-        pendingStreakRef.current = null
-        useDailyStore.getState().triggerStreakCelebration(pending.streak, pending)
+    const totalLessonXp = result.lessonXpEarned ?? (earnedLessonXp || result.xpEarned || 0)
+    const leagueClimb = !isPractice
+      ? buildLeagueClimb(weeklyLeague, userId, sessionXpDelta, preLessonScoreRef.current)
+      : null
+    const leagueTierId = resolveBrilliantLeagueId(weeklyLeague?.myLeague || storeLeague)
+    const leagueTier = BRILLIANT_LEAGUES.find((l) => l.id === leagueTierId) ?? BRILLIANT_LEAGUES[0]
+
+    const endstateQueue: EndstateStep[] = ['lesson']
+    if (lesson && result.passed) {
+      if (endstateStreak && endstateStreak.streak > 0) {
+        endstateQueue.push('streak')
+        if (endstateStreak.showCharge) endstateQueue.push('charge')
       }
+      if (leagueClimb) endstateQueue.push('league')
+      if (tariff !== 'premium') endstateQueue.push('nudge')
+    }
+    const currentEndstate: EndstateStep = lesson && result.passed
+      ? (endstateQueue[Math.min(endstateIdx, endstateQueue.length - 1)] ?? 'lesson')
+      : 'lesson'
+
+    const finishEndstate = (openPremium = false) => {
+      completionFlushedRef.current = true
       if (result.passed && pendingAchievementsRef.current.length > 0) {
         const pendingAchievements = pendingAchievementsRef.current
         pendingAchievementsRef.current = []
         useAchievementCelebrationStore.getState().triggerCelebration(pendingAchievements)
       }
-      primaryAction()
+      if (openPremium) {
+        if (onOpenPremium) {
+          onOpenPremium()
+        } else {
+          if (typeof window !== 'undefined') window.location.hash = '#/premium'
+          onClose()
+        }
+        return
+      }
+      if (result.passed) {
+        if (hasNext && onNext) onNext()
+        else onClose()
+      } else {
+        retry()
+      }
     }
-    const secondaryLabel = !lesson ? (result.passed ? tt('rusDarslikQuizRetry') : tt('rusDarslikQuizBackToTopic')) : undefined
-    const handleSecondary = !lesson ? (result.passed ? retry : onClose) : undefined
-    const totalLessonXp = result.lessonXpEarned ?? (earnedLessonXp || result.xpEarned || 0)
+
+    const handlePrimary = () => {
+      if (!result.passed) {
+        finishEndstate(false)
+        return
+      }
+      if (lesson && currentEndstate === 'nudge') {
+        finishEndstate(true)
+        return
+      }
+      if (lesson && endstateIdx + 1 < endstateQueue.length) {
+        playSound('click')
+        haptics.impact('light')
+        setEndstateIdx((prev) => prev + 1)
+        return
+      }
+      finishEndstate(false)
+    }
+
+    const primaryLabel = !result.passed
+      ? tt('rusDarslikQuizRetry')
+      : !lesson
+      ? (hasNext && onNext ? tt('rusDarslikQuizNextTopic') : tt('rusDarslikQuizBackToTopic'))
+      : currentEndstate === 'nudge'
+      ? tt('rusDarslikLearnMore')
+      : tt('rusDarslikLessonContinue')
+
+    const secondaryLabel = !lesson
+      ? (result.passed ? tt('rusDarslikQuizRetry') : tt('rusDarslikQuizBackToTopic'))
+      : currentEndstate === 'nudge'
+      ? tt('rusDarslikRemindLater')
+      : undefined
+    const handleSecondary = !lesson
+      ? (result.passed ? retry : onClose)
+      : currentEndstate === 'nudge'
+      ? () => finishEndstate(false)
+      : undefined
+
+    const streakTitle = endstateStreak
+      ? endstateStreak.streak <= 1
+        ? (isRu ? 'Вы начали новую серию!' : 'Yangi seriyani boshladingiz!')
+        : (isRu ? `Серия ${endstateStreak.streak} дн.!` : `${endstateStreak.streak} kunlik seriya!`)
+      : ''
 
     return (
       <>
         <BrilliantEndstateShell
           data-testid={lesson ? 'lesson-result' : 'topic-check'}
           data-result={result.passed ? 'passed' : 'failed'}
+          data-endstate={lesson && result.passed ? currentEndstate : undefined}
           role="dialog"
           aria-modal="true"
           className="fixed inset-0 z-[60]"
+          viewportClassName={currentEndstate === 'streak' && streakGlow ? 'brilliant-streak-bg-glow' : undefined}
+          primaryVariant={lesson && currentEndstate !== 'nudge' ? 'secondary' : 'primary'}
           primaryLabel={primaryLabel}
           onPrimaryClick={handlePrimary}
           secondaryLabel={secondaryLabel}
           onSecondaryClick={handleSecondary}
         >
-          <BrilliantCompletionStage
-            mode={lesson ? 'lesson' : 'practice'}
-            heading={heading}
-            subtitle={lesson ? undefined : title}
-            xpLabel={isRu ? 'Всего XP' : 'Jami XP'}
-            dark={dark}
-            variant={colorVariant}
-            lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
-            isLevel={false}
-            skillCheckMastered={false}
-            practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
-            showXp={Boolean(lesson && result.passed && totalLessonXp > 0)}
-            earnedXp={totalLessonXp}
-            animateXpCount={false}
-            fallback={
-              lesson ? (
-                <PathMascot variant="avatar" animation={result.passed ? 'celebrate' : 'oops'} />
-              ) : (
-                <span className={cn(
-                  'grid size-20 place-items-center rounded-3xl',
-                  result.passed
-                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
-                    : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
-                )}>
-                  {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
+          {lesson && result.passed && currentEndstate === 'streak' && endstateStreak ? (
+            <BrilliantStreakStage
+              streak={endstateStreak.streak}
+              heading={streakTitle}
+              lang={isRu ? 'ru' : 'uz'}
+              dark={dark}
+              nonce={endstateIdx}
+              onGlowChange={setStreakGlow}
+            />
+          ) : lesson && result.passed && currentEndstate === 'charge' && endstateStreak ? (
+            <BrilliantChargeStage
+              heading={
+                endstateStreak.chargeSaved
+                  ? (isRu ? 'Заряд спас вашу серию!' : 'Seriya zaryadi seriyangizni saqladi!')
+                  : (endstateStreak.chargeEarned || endstateStreak.charges === undefined)
+                    ? (isRu ? 'Вы получили 1 заряд серии!' : '1 ta Seriya zaryadini oldingiz!')
+                    : (isRu ? `Заряды серии: ${endstateStreak.charges}/2` : `Seriya zaryadingiz: ${endstateStreak.charges}/2`)
+              }
+              description={
+                endstateStreak.chargeSaved
+                  ? (isRu
+                      ? `Пропущенный день закрыт зарядом — серия сохранена (${endstateStreak.charges}/2 заряда осталось).`
+                      : `O‘tkazib yuborilgan kun zaryad bilan yopildi — seriyangiz saqlandi (${endstateStreak.charges}/2 zaryad qoldi).`)
+                  : (isRu
+                      ? 'Каждый заряд серии сохраняет вашу серию при пропуске дня обучения (макс. 2 заряда — до 2 дней подряд).'
+                      : 'Har bir seriya zaryadi mashg‘ulotni o‘tkazib yuborgan kuningizda seriyangizni saqlab qoladi (maks. 2 ta zaryad).')
+              }
+              dark={dark}
+              nonce={endstateIdx}
+            />
+          ) : lesson && result.passed && currentEndstate === 'league' && leagueClimb ? (
+            <BrilliantLeagueStage
+              heading={tt('rusDarslikLeagueHeading')}
+              subtitle={tt('rusDarslikLeagueDaysLeft')
+                .replace('{league}', `${leagueTier.name} Liga`)
+                .replace('{days}', String(getDaysLeftInWeek()))}
+              leagueLevel={leagueTier.level}
+              entries={leagueClimb.entries}
+              oldRank={leagueClimb.oldRank}
+              dark={dark}
+              nonce={endstateIdx}
+              fallback={<LeagueShield tierId={leagueTier.id} size={96} />}
+            />
+          ) : lesson && result.passed && currentEndstate === 'nudge' ? (
+            <BrilliantPracticeNudgeStage
+              heading={tt('rusDarslikPracticeNudgeTitle')}
+              description={tt('rusDarslikPracticeNudgeDesc')}
+              dark={dark}
+              nonce={endstateIdx}
+              fallback={
+                <span className="grid size-24 place-items-center rounded-3xl bg-psurface text-pprimary shadow-xs">
+                  <Dumbbell size={44} strokeWidth={2.2} />
                 </span>
-              )
-            }
-          >
+              }
+            />
+          ) : (
+            <BrilliantCompletionStage
+              mode={lesson && isPractice ? 'practice' : lesson ? 'lesson' : 'practice'}
+              heading={heading}
+              subtitle={lesson ? (isPractice && result.passed ? tt('rusDarslikPracticeSubtitle') : undefined) : title}
+              xpLabel={isRu ? 'Всего XP' : 'Jami XP'}
+              dark={dark}
+              variant={colorVariant}
+              lessonTrigger={result.passed ? (accuracyPct === 100 ? 'koji360' : 'kojiFlip') : 'kojiFail'}
+              isLevel={false}
+              skillCheckMastered={false}
+              practiceTrigger={result.passed ? (accuracyPct === 100 ? 'play100' : 'play50Plus') : 'playFailure'}
+              showXp={Boolean(lesson && result.passed && totalLessonXp > 0)}
+              earnedXp={totalLessonXp}
+              xpStyle={lesson ? 'total' : 'delta'}
+              animateXpCount={false}
+              fallback={
+                lesson ? (
+                  <PathMascot variant="avatar" animation={result.passed ? 'celebrate' : 'oops'} />
+                ) : (
+                  <span className={cn(
+                    'grid size-20 place-items-center rounded-3xl',
+                    result.passed
+                      ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-psuccess'
+                      : 'bg-[rgb(var(--p-danger-rgb)/0.12)] text-pdanger',
+                  )}>
+                    {result.passed ? <CheckCircle2 size={42} strokeWidth={2.2} /> : <XCircle size={42} strokeWidth={2.2} />}
+                  </span>
+                )
+              }
+            >
             {!lesson && (
               <>
                 <div className="flex w-full max-w-[340px] items-stretch justify-center gap-2 pt-1">
@@ -746,6 +1009,7 @@ export default function LessonRunner({
               </>
             )}
           </BrilliantCompletionStage>
+          )}
         </BrilliantEndstateShell>
       </>
     )
@@ -754,19 +1018,48 @@ export default function LessonRunner({
   if (lesson) {
     if (!current) return null
     const isLast = index + 1 >= check.questions.length
+    const isPhase1WrongDock = Boolean(!isCheckpointStep && phase === 'feedback' && feedback && !feedback.correct && !revealed)
+    const isPhase2WrongDock = Boolean(isCheckpointStep && phase === 'feedback' && feedback && !feedback.correct && !revealed)
+    const isReported = Boolean(reported[current.id])
+    const reportButton = (
+      <button
+        type="button"
+        aria-label={tt('rusDarslikReportIssue')}
+        aria-pressed={isReported}
+        onClick={() => {
+          playSound('click')
+          setReported((previous) => ({ ...previous, [current.id]: true }))
+          track('lesson_report_issue', { topic_id: topicId, exercise_id: current.id })
+        }}
+        className="inline-flex h-9 items-center gap-1.5 rounded-full px-2 text-pmuted transition-colors hover:text-pfg cursor-pointer shrink-0"
+      >
+        <Flag size={16} strokeWidth={2.2} className={isReported ? 'text-pprimary fill-current' : undefined} />
+        {isReported && <span className="text-[11px] font-bold text-pfg">{tt('rusDarslikReported')}</span>}
+      </button>
+    )
+    const continueLabel = submitting
+      ? tt('rusDarslikCheckSubmitting')
+      : revealed
+      ? tt('rusDarslikSkipExplanation')
+      : isLast
+      ? tt('rusDarslikLessonFinish')
+      : tt('rusDarslikLessonContinue')
+
     return (
       <div
         className="rus-lesson-runner fixed inset-0 z-[60] flex flex-col bg-pcanvas"
         data-testid="lesson-runner"
         data-format="lesson"
+        data-mode={mode}
         data-phase={phase}
+        data-stage={isCheckpointStep ? 'phase2' : 'phase1'}
         role="dialog"
         aria-modal="true"
         aria-labelledby="lesson-runner-title"
       >
         {header}
 
-        <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 pb-[calc(6.5rem+var(--safe-bottom,0px))]">
+        <div ref={scrollRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4 pb-[calc(7.5rem+var(--safe-bottom,0px))]">
           <div className="mx-auto w-full max-w-[460px]">
             {checkUpdated && (
               <p
@@ -779,20 +1072,48 @@ export default function LessonRunner({
             )}
 
             <div key={current.id} className="rus-lesson-question-enter">
-              <h3 id="lesson-runner-title" ref={headingRef} tabIndex={-1} className="mb-7 mt-8 text-[20px] font-semibold leading-relaxed text-pfg focus-visible:outline-none sm:text-[22px]">{current.prompt}</h3>
+              <h3
+                id="lesson-runner-title"
+                ref={headingRef}
+                tabIndex={-1}
+                className={cn(
+                  'mb-6 mt-5 leading-snug text-pfg focus-visible:outline-none',
+                  isCheckpointStep
+                    ? 'text-[22px] font-bold tracking-tight sm:text-[24px]'
+                    : 'text-[19px] font-semibold sm:text-[21px]',
+                )}
+              >
+                {current.prompt}
+              </h3>
 
               <div>
                 <LessonExercise
                   key={current.id}
                   exercise={current}
                   value={revealed && feedback && (current.kind === 'mcq' || current.kind === 'listening') ? String(current.options.indexOf(feedback.correctAnswer)) : answers[current.id] ?? answerOrEmpty(current)}
-                  outcome={phase === 'feedback' ? (revealed ? 'revealed' : feedback?.correct ? 'correct' : 'wrong') : undefined}
+                  outcome={phase === 'feedback' ? (revealed ? 'revealed' : feedback?.correct ? 'correct' : isCheckpointStep ? 'phase2_wrong' : 'wrong') : undefined}
                   onChange={setAnswer}
                   disabled={phase === 'feedback' || checking}
                   onSpeak={playAudio}
                   speaking={speaking}
                 />
               </div>
+
+              {!isCheckpointStep && phase === 'exercise' && currentAnswered && (
+                <div className="mt-3 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      playSound('skip')
+                      setAnswer(answerOrEmpty(current))
+                    }}
+                    className="inline-flex cursor-pointer items-center gap-1.5 rounded-full px-2.5 py-1 text-[13px] font-semibold text-pmuted transition-colors hover:text-pfg"
+                  >
+                    <RotateCcw size={14} strokeWidth={2.2} />
+                    {tt('rusDarslikStartOver')}
+                  </button>
+                </div>
+              )}
             </div>
 
             {answerError && (
@@ -808,55 +1129,255 @@ export default function LessonRunner({
           </div>
         </div>
 
-        <div className="rus-lesson-dock rounded-t-3xl px-4 py-5 pb-[calc(1.25rem+var(--safe-bottom,0px))]"
-          data-state={phase !== 'feedback' || !feedback ? 'exercise' : revealed ? 'revealed' : feedback.correct ? 'correct' : 'wrong'}>
+        <div
+          className="rus-lesson-dock rounded-t-3xl px-4 py-4 pb-[calc(1.125rem+var(--safe-bottom,0px))]"
+          data-state={
+            phase !== 'feedback' || !feedback
+              ? 'exercise'
+              : revealed
+              ? 'revealed'
+              : feedback.correct
+              ? 'correct'
+              : isCheckpointStep
+              ? 'phase2-wrong'
+              : 'wrong'
+          }
+        >
           <div className="relative mx-auto w-full max-w-[460px]">
-            {phase === 'feedback' && feedback && (
-              <div ref={feedbackRef} data-testid="lesson-feedback" data-correct={feedback.correct ? 'true' : 'false'} data-revealed={revealed ? 'true' : 'false'} role="status" aria-live="polite" className="rus-feedback-pop mb-5 flex items-center justify-between gap-3">
-                <div className="min-w-0">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <p className="text-[20px] font-extrabold leading-tight text-pfg">{revealed ? tt('rusDarslikAnswerShown') : feedback.correct ? tt('rusDarslikLessonCorrect') : tt('rusDarslikLessonWrong')}</p>
-                    {feedback.correct && !revealed && lastCheckXp > 0 && (
-                      <span
-                        data-testid="lesson-check-xp"
-                        className="inline-flex items-center rounded-full bg-[#29cc57]/15 px-2.5 py-0.5 text-[12px] font-extrabold text-[#29cc57] tabular-nums"
-                      >
-                        +{lastCheckXp} XP
-                      </span>
-                    )}
-                  </div>
-                  {revealed && <p className="mt-1 break-words text-[15px] font-semibold text-pfg">{feedback.correctAnswer}</p>}</div>
-                {feedback.correct || revealed
-                  ? <Button variant="secondary" onClick={() => { playSound('hint'); setShowExplanation(true) }} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikWhy')}</Button>
-                  : <Button variant="secondary" onClick={() => { playSound('hint'); setRevealed(true) }} className="rus-lesson-secondary shrink-0 rounded-full">{tt('rusDarslikSeeAnswer')}</Button>}
+            {isPhase1WrongDock && (
+              <div className="rus-koji-overhang" aria-hidden="true">
+                <PathMascot variant="avatar" animation="oops" />
               </div>
             )}
-            {phase === 'exercise' ? <div className="flex items-center gap-3"><button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation="idle" /></button><Button size="lg" block className="rus-lesson-check flex-1" onClick={() => { void checkAnswer() }} disabled={!currentAnswered || checking}>{checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}</Button></div>
-              : feedback && !feedback.correct && !revealed ? <div className="flex items-center gap-3">
-                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation="oops" /></button>
-                <Button size="lg" className="rus-lesson-action min-w-0 flex-1" onClick={() => { playSound('skip'); setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) })); setFeedback(null); setPhase('exercise') }}>{tt('rusDarslikTryAgain')}</Button>
-              </div> : <div className="flex items-center gap-3">
-                <button type="button" className="relative block size-20 shrink-0" aria-label={tt('darslikAskTutor')} onClick={() => { playSound('hint'); setShowTutor(true) }}><PathMascot variant="avatar" animation={feedback?.correct ? 'happy' : 'idle'} /></button>
-                <Button size="lg" block onClick={() => { playSound('continue'); continueLesson() }} disabled={submitting} className="rus-lesson-action flex-1">
-                  {submitting ? tt('rusDarslikCheckSubmitting') : revealed ? tt('rusDarslikSkipExplanation') : isLast ? tt('rusDarslikLessonFinish') : tt('rusDarslikLessonContinue')}
+
+            {phase === 'feedback' && feedback && (
+              <div
+                ref={feedbackRef}
+                data-testid="lesson-feedback"
+                data-correct={feedback.correct ? 'true' : 'false'}
+                data-revealed={revealed ? 'true' : 'false'}
+                role="status"
+                aria-live="polite"
+                className={cn(
+                  'rus-feedback-pop mb-4 flex items-start justify-between gap-3',
+                  isPhase1WrongDock && 'pt-3',
+                )}
+              >
+                {isPhase1WrongDock ? (
+                  <>
+                    <div className="min-w-0 flex-1">
+                      <span className="sr-only">{tt('rusDarslikLessonWrong')}</span>
+                      <p className="text-[15.5px] font-semibold leading-snug text-pfg">
+                        {deriveMicroHint(current, feedback, tt)}
+                      </p>
+                    </div>
+                    {reportButton}
+                  </>
+                ) : isPhase2WrongDock ? (
+                  <>
+                    <div className="flex min-w-0 flex-1 items-center gap-2.5">
+                      <BrilliantMissedTargetIcon />
+                      <p className="text-[19px] font-extrabold leading-tight text-pfg">{tt('rusDarslikIncorrect')}</p>
+                      <span className="sr-only">{tt('rusDarslikLessonWrong')}</span>
+                    </div>
+                    {reportButton}
+                  </>
+                ) : revealed ? (
+                  <>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-[19px] font-extrabold leading-tight text-pfg">{tt('rusDarslikAnswerShown')}</p>
+                      <p className="mt-1 break-words text-[14.5px] font-medium text-pmuted">{feedback.correctAnswer}</p>
+                    </div>
+                    <div className="flex shrink-0 items-center gap-1.5">
+                      {reportButton}
+                      <Button
+                        variant="secondary"
+                        onClick={() => { playSound('hint'); setShowExplanation(true) }}
+                        className="rus-lesson-secondary shrink-0 rounded-full px-5"
+                      >
+                        {tt('rusDarslikWhy')}
+                      </Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex min-w-0 flex-1 items-center gap-2.5 flex-wrap">
+                      {isCheckpointStep && <BrilliantConfettiBurstIcon />}
+                      <p className="text-[20px] font-extrabold leading-tight text-pfg">{tt('rusDarslikLessonCorrect')}</p>
+                      {lastCheckXp > 0 && (
+                        <span
+                          data-testid="lesson-check-xp"
+                          className="text-[14px] font-extrabold text-[#21c65b] tabular-nums"
+                        >
+                          +{lastCheckXp} XP
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex shrink-0 items-center gap-1.5">
+                      {reportButton}
+                      {!isCheckpointStep && (
+                        <Button
+                          variant="secondary"
+                          onClick={() => { playSound('hint'); setShowExplanation(true) }}
+                          className="rus-lesson-secondary shrink-0 rounded-full px-5"
+                        >
+                          {tt('rusDarslikWhy')}
+                        </Button>
+                      )}
+                    </div>
+                  </>
+                )}
+              </div>
+            )}
+
+            {phase === 'exercise' ? (
+              <div className="flex items-center gap-3">
+                {!isCheckpointStep && (
+                  <div className="relative block size-14 shrink-0" aria-hidden="true">
+                    <PathMascot variant="avatar" animation="idle" />
+                  </div>
+                )}
+                <Button
+                  size="lg"
+                  block
+                  sheen={false}
+                  className="rus-lesson-check flex-1"
+                  onClick={() => { void checkAnswer() }}
+                  disabled={!currentAnswered || checking}
+                >
+                  {checking ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}
                 </Button>
-              </div>}
+              </div>
+            ) : isPhase1WrongDock ? (
+              <div className="flex items-center gap-3">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  onClick={() => { playSound('hint'); setRevealed(true) }}
+                  className="rus-lesson-secondary min-w-0 flex-[0.44] rounded-full"
+                >
+                  {tt('rusDarslikSeeAnswer')}
+                </Button>
+                <Button
+                  size="lg"
+                  sheen={false}
+                  className="rus-lesson-action min-w-0 flex-[0.56]"
+                  onClick={() => {
+                    playSound('skip')
+                    setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) }))
+                    setFeedback(null)
+                    setPhase('exercise')
+                  }}
+                >
+                  {tt('rusDarslikTryAgain')}
+                </Button>
+              </div>
+            ) : isPhase2WrongDock ? (
+              <div className="flex items-center gap-3">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  onClick={() => { playSound('hint'); setShowExplanation(true) }}
+                  className="rus-lesson-secondary min-w-0 flex-[0.36] rounded-full"
+                >
+                  {tt('rusDarslikWhy')}
+                </Button>
+                <Button
+                  size="lg"
+                  block
+                  sheen={false}
+                  onClick={() => { playSound('continue'); continueLesson() }}
+                  disabled={submitting}
+                  className="rus-lesson-action min-w-0 flex-[0.64]"
+                >
+                  {continueLabel}
+                </Button>
+              </div>
+            ) : isCheckpointStep && feedback?.correct && !revealed ? (
+              <div className="flex items-center gap-3">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  onClick={() => { playSound('hint'); setShowExplanation(true) }}
+                  className="rus-lesson-secondary min-w-0 flex-[0.34] rounded-full"
+                >
+                  {tt('rusDarslikWhy')}
+                </Button>
+                <Button
+                  size="lg"
+                  block
+                  sheen={false}
+                  onClick={() => { playSound('continue'); continueLesson() }}
+                  disabled={submitting}
+                  className="rus-lesson-action min-w-0 flex-[0.66]"
+                >
+                  {continueLabel}
+                </Button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-3">
+                {!isCheckpointStep && (
+                  <div className="relative block size-14 shrink-0" aria-hidden="true">
+                    <PathMascot variant="avatar" animation={feedback?.correct ? 'happy' : 'idle'} />
+                  </div>
+                )}
+                <Button
+                  size="lg"
+                  block
+                  sheen={false}
+                  onClick={() => { playSound('continue'); continueLesson() }}
+                  disabled={submitting}
+                  className="rus-lesson-action flex-1"
+                >
+                  {continueLabel}
+                </Button>
+              </div>
+            )}
           </div>
         </div>
-        {showExplanation && feedback && <ModalShell title={tt('rusDarslikQuizExplanation')} onClose={() => setShowExplanation(false)} zIndex={80} footer={<Button size="lg" block onClick={() => setShowExplanation(false)}>{tt('rusDarslikGotIt')}</Button>}>
+
+        {showExitConfirm && (
+          <ModalShell
+            title={tt('rusDarslikExitTitle')}
+            showHeader={false}
+            showHandle={false}
+            onClose={() => setShowExitConfirm(false)}
+            zIndex={85}
+          >
+            <div className="pt-2 pb-1">
+              <h3 className="font-display text-[22px] font-extrabold tracking-tight text-pfg">
+                {tt('rusDarslikExitTitle')}
+              </h3>
+              <p className="mt-2 text-[15px] leading-relaxed text-pmuted">
+                {tt('rusDarslikExitSubtitle')}
+              </p>
+              <Button
+                variant="secondary"
+                size="lg"
+                block
+                className="mt-6 rounded-full"
+                onClick={() => setShowExitConfirm(false)}
+              >
+                {tt('rusDarslikKeepLearning')}
+              </Button>
+              <button
+                type="button"
+                onClick={() => {
+                  setShowExitConfirm(false)
+                  onClose()
+                }}
+                className="mt-3 flex h-11 w-full cursor-pointer items-center justify-center rounded-full text-[16px] font-bold text-[#e5645c] transition-opacity hover:opacity-80 active:opacity-60"
+              >
+                {tt('rusDarslikQuitLesson')}
+              </button>
+            </div>
+          </ModalShell>
+        )}
+
+        {showExplanation && feedback && <ModalShell title={tt('rusDarslikQuizExplanation')} onClose={() => setShowExplanation(false)} zIndex={80} footer={<Button variant="secondary" size="lg" block onClick={() => setShowExplanation(false)}>{tt('rusDarslikGotIt')}</Button>}>
           <p className="py-5 text-[17px] leading-relaxed text-pfg">{feedback.explanation}</p>
           <div className="rounded-2xl bg-pcard p-4 text-[15px] leading-relaxed text-pfg"><p className="font-bold">{current.prompt}</p><p className="mt-3">{tt('rusDarslikQuizCorrectAnswer')}: <strong>{feedback.correctAnswer}</strong></p></div>
         </ModalShell>}
-        {showTutor && <Suspense fallback={null}><Tutor isOpen onClose={() => setShowTutor(false)} zIndex={80} variant="lesson"
-          mascot={<PathMascot variant="avatar" animation="idle" />} context={{
-          subjectId: RUSSIAN_SUBJECT_ID,
-          topicName: title,
-          questionText: current.prompt,
-          options: current.kind === 'mcq' || current.kind === 'listening'
-            ? Object.fromEntries(current.options.map((option, optionIndex) => [String(optionIndex + 1), option]))
-            : undefined,
-          userSelectedOption: answers[current.id] === undefined ? undefined : answerText(current, answers[current.id]),
-        }} /></Suspense>}
       </div>
     )
   }
@@ -913,7 +1434,7 @@ export default function LessonRunner({
         </div>
       </div>
 
-      <div className="border-t border-pline bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
+      <div className="bg-pcanvas px-4 py-3 pb-[calc(0.75rem+var(--safe-bottom,0px))]">
         <div className="mx-auto w-full max-w-[460px]">
           <Button size="lg" block onClick={() => { void submit() }} disabled={!legacyAnswered || submitting}>
             {submitting ? tt('rusDarslikCheckSubmitting') : tt('rusDarslikCheckSubmit')}

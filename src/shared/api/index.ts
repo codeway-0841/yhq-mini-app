@@ -1031,30 +1031,6 @@ export const api = {
       }
     }>('POST', '/ai-courses/golden-publish', { run }, 30_000),
 
-  // ── AI Tutor (Snap & Solve + Socratic Tutor) ────────────────────────────
-  /** Rasmdan masalani yechish (Multimodal Vision AI) */
-  solvePhoto: (data: { image: string; mimeType?: 'image/jpeg' | 'image/png' | 'image/webp'; subjectHint?: string; language?: 'uz' | 'ru' }) =>
-    request<{
-      ok: true
-      solution: {
-        ocrText: string
-        detectedSubject: string
-        subjectName: string
-        finalAnswer: string
-        steps: { stepNumber: number; title: string; explanation: string; formula?: string }[]
-        keyConcept: string
-      }
-      quota: TutorQuota
-    }>('POST', '/tutor/solve-photo', data, 65_000),
-
-  /** AI Tutor kvota holatini olish */
-  getTutorQuota: () =>
-    request<{ ok: true; quota: TutorQuota }>('GET', '/tutor/quota'),
-
-  /** Grafik rasmini AI (Gemini Vision) tahlil qiladi — matnli javob (LaTeX) */
-  analyzeGraph: (data: { image: string; language?: 'uz' | 'ru'; context?: string }) =>
-    request<{ ok: true; analysis: string }>('POST', '/tutor/graph-analyze', data, 65_000),
-
   // ── Matematik doska (Faza 4: qo'lyozma recognition proxy) ─────────────
   /** Doskadagi qo'lyozmani LaTeX'ga o'girish (server Gemini proxy, 65s timeout) */
   recognizeHandwriting: (data: { image: string; mimeType?: 'image/jpeg' | 'image/png' | 'image/webp'; category?: string; language?: 'uz' | 'ru' }) =>
@@ -1606,16 +1582,6 @@ export interface DailyHistory {
   dailyStreak:    number
   bestStreak:     number
   streakCharges?: number
-}
-
-export interface TutorQuota {
-  isPremium: boolean
-  photoSolvesUsed: number
-  photoSolvesLimit: number
-  photoSolvesRemaining: number
-  chatMessagesUsed: number
-  chatMessagesLimit: number
-  chatMessagesRemaining: number
 }
 
 /** AI Kunlik Test — /today ro'yxat elementi (javob kalitlarisiz meta) */

@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
-import { ChevronLeft, Maximize2, Sparkles, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, Maximize2, X } from 'lucide-react'
 import { registerModal } from '../../shared/lib/navigation'
 import { haptics } from '../../platform/haptics'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useLessonsStore } from '../../shared/store/useLessonsStore'
+import { useT } from '../../shared/i18n'
 import { resolveCdnUrl } from '../../shared/config/cdn'
 import Confetti from '../../shared/components/Confetti'
-import { CoinIcon } from '../../shared/components/CoinIcon'
+import { BrilliantExitDialog, BrilliantSparkle } from '../../shared/components/BrilliantLessonChrome'
 
 interface InteractiveLessonModalProps {
   path: string
@@ -24,9 +25,14 @@ export function InteractiveLessonModal({
   onChapterComplete
 }: InteractiveLessonModalProps) {
   const [rewardClaimed, setRewardClaimed] = useState<{ chapter: number; coins: number; xp: number } | null>(null)
+  const [showExitConfirm, setShowExitConfirm] = useState(false)
+  const lang = useAppStore((s) => s.settings.language)
+  const tt = useT(lang)
   const resolvedPath = resolveCdnUrl(path) ?? path
   const onCloseRef = useRef(onClose)
   onCloseRef.current = onClose
+  const rewardClaimedRef = useRef(rewardClaimed)
+  rewardClaimedRef.current = rewardClaimed
 
   const onCompleteRef = useRef(onChapterComplete)
   onCompleteRef.current = onChapterComplete
@@ -35,7 +41,8 @@ export function InteractiveLessonModal({
   useEffect(() => {
     const modalId = Symbol('interactive-lesson-modal')
     const unregister = registerModal(modalId, () => {
-      onCloseRef.current()
+      if (rewardClaimedRef.current) onCloseRef.current()
+      else setShowExitConfirm(true)
     })
     return () => {
       unregister()
@@ -81,40 +88,48 @@ export function InteractiveLessonModal({
     }
   }, [subjectId])
 
+  const handleCloseAttempt = () => {
+    if (rewardClaimed) {
+      onClose()
+      return
+    }
+    setShowExitConfirm(true)
+  }
+
   return (
-    <div className="fixed inset-0 z-50 bg-[#0c1017] text-white flex flex-col overflow-hidden animate-fadeIn">
+    <div className="fixed inset-0 z-50 flex flex-col overflow-hidden bg-pcanvas text-pfg animate-fadeIn">
       {/* Confetti celebration when reward is claimed */}
       {rewardClaimed && (
-        <div className="absolute inset-0 pointer-events-none z-50">
+        <div className="pointer-events-none absolute inset-0 z-50">
           <Confetti count={35} />
         </div>
       )}
 
-      {/* Top Header bar with Safe Area support */}
-      <div className="flex items-center justify-between px-3 py-2.5 bg-[#131924] border-b border-white/10 safe-top">
+      {/* Top Header bar — unified Brilliant 1:1 chrome with Safe Area support */}
+      <div className="safe-top mx-auto flex min-h-[58px] w-full max-w-[960px] items-center justify-between gap-2.5 bg-pcanvas px-3.5 py-2">
         <button
-          onClick={onClose}
-          aria-label="Orqaga"
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/15 active:scale-95 transition-all text-sm font-medium cursor-pointer"
+          type="button"
+          onClick={handleCloseAttempt}
+          aria-label={tt('darslikClose')}
+          className="grid size-9 shrink-0 cursor-pointer place-items-center rounded-full text-pmuted transition-colors hover:bg-psurface hover:text-pfg"
         >
-          <ChevronLeft size={18} strokeWidth={2.2} />
-          <span>Chiqish</span>
+          <X size={21} strokeWidth={2.35} />
         </button>
 
-        <div className="flex items-center gap-2 min-w-0 px-2 text-center">
-          <span className="text-sm font-semibold truncate max-w-[180px] sm:max-w-xs">{title}</span>
+        <div className="min-w-0 flex-1 px-1 text-center">
+          <span className="block truncate font-display text-[15px] font-extrabold text-pfg">{title}</span>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           {rewardClaimed ? (
-            <div className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-semibold animate-pulse">
-              <CheckCircle2 size={14} />
+            <div className="flex items-center gap-1 rounded-full bg-[rgb(var(--p-success-rgb)/0.16)] px-3 py-1 text-xs font-extrabold text-psuccess">
+              <CheckCircle2 size={14} strokeWidth={2.4} />
               <span>+{rewardClaimed.coins}</span>
             </div>
           ) : (
-            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-500/15 text-amber-300 border border-amber-500/25 text-xs font-semibold">
-              <CoinIcon size={14} />
-              <span>+25 tanga</span>
+            <div className="flex items-center gap-1.5 rounded-full bg-psurface px-3 py-1 text-xs font-extrabold text-pfg">
+              <BrilliantSparkle size={14} />
+              <span>{tt('interactiveRewardChip').replace('{coins}', '25')}</span>
             </div>
           )}
 
@@ -122,8 +137,9 @@ export function InteractiveLessonModal({
             href={resolvedPath}
             target="_blank"
             rel="noopener noreferrer"
-            title="Alohida oynada ochish"
-            className="p-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all cursor-pointer"
+            title={tt('interactiveOpenExternal')}
+            aria-label={tt('interactiveOpenExternal')}
+            className="grid size-9 place-items-center rounded-full bg-psurface text-pmuted transition-colors hover:text-pfg"
           >
             <Maximize2 size={16} />
           </a>
@@ -132,30 +148,45 @@ export function InteractiveLessonModal({
 
       {/* Reward Toast Banner */}
       {rewardClaimed && (
-        <div className="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white flex items-center justify-between text-xs font-semibold shadow-lg animate-slideDown">
+        <div className="flex items-center justify-between bg-psuccess px-4 py-2 text-xs font-bold text-white animate-slideDown">
           <div className="flex items-center gap-2">
-            <Sparkles size={16} className="text-amber-200" />
-            <span>Bob yakunlandi! +{rewardClaimed.coins} tanga va +{rewardClaimed.xp} XP qo'shildi!</span>
+            <BrilliantSparkle size={15} className="text-white" />
+            <span>
+              {tt('interactiveChapterDoneToast')
+                .replace('{coins}', String(rewardClaimed.coins))
+                .replace('{xp}', String(rewardClaimed.xp))}
+            </span>
           </div>
           <button
+            type="button"
             onClick={() => setRewardClaimed(null)}
-            className="px-2 py-0.5 rounded bg-black/20 hover:bg-black/30 font-bold"
+            aria-label={tt('darslikClose')}
+            className="grid size-6 cursor-pointer place-items-center rounded-full bg-[rgb(0_0_0/0.2)] text-white"
           >
-            ✕
+            <X size={14} />
           </button>
         </div>
       )}
 
       {/* Embedded Lesson Canvas */}
-      <div className="flex-1 w-full h-full relative bg-[#0c1017]">
+      <div className="relative h-full w-full flex-1 bg-[#0c1017]">
         <iframe
           src={resolvedPath}
           title={title}
-          className="w-full h-full border-0 absolute inset-0"
+          className="absolute inset-0 h-full w-full border-0"
           allow="autoplay; fullscreen"
           allowFullScreen
         />
       </div>
+
+      <BrilliantExitDialog
+        open={showExitConfirm}
+        onStay={() => setShowExitConfirm(false)}
+        onLeave={() => {
+          setShowExitConfirm(false)
+          onClose()
+        }}
+      />
     </div>
   )
 }

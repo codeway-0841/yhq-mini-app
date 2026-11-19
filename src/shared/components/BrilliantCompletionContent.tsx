@@ -4,13 +4,18 @@ import {
   type BrilliantLessonTrigger,
   type BrilliantPracticeTrigger,
 } from './BrilliantEndstateRive'
+import { BrilliantExtrasRive } from './BrilliantExtrasRive'
 import { BrilliantCopyContainer, BrilliantRiveContainer } from './BrilliantEndstateShell'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../lib/sounds'
 import { cn } from '../lib/cn'
 
 function prefersReducedMotion() {
-  return typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  if (typeof window === 'undefined') return false
+  return Boolean(
+    window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ||
+      document.body?.dataset.noAnimation === 'true',
+  )
 }
 
 /** XP sonini 0 dan target ga silliq sanaydi (Brilliant AnimatedCounter) */
@@ -18,10 +23,14 @@ export function AnimatedXpCounter({
   active,
   end,
   duration = 650,
+  prefix = '+',
+  className,
 }: {
   active: boolean
   end: number
   duration?: number
+  prefix?: string
+  className?: string
 }) {
   const [val, setVal] = useState(0)
   const [pulsing, setPulsing] = useState(false)
@@ -59,10 +68,11 @@ export function AnimatedXpCounter({
     <span
       className={cn(
         'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
+        className,
         pulsing && 'brilliant-xp-pulse',
       )}
     >
-      +{val}
+      {prefix}{val}
     </span>
   )
 }
@@ -208,6 +218,7 @@ export function BrilliantCompletionStage({
   practiceStats,
   showXp = true,
   earnedXp = 0,
+  xpStyle = 'delta',
   animateXpCount = true,
   compact = false,
   fallback,
@@ -236,6 +247,8 @@ export function BrilliantCompletionStage({
   }
   showXp?: boolean
   earnedXp?: number
+  /** 'delta': yashil `+N` va oltin yulduz (umumiy), 'total': oq/qora `N` va yashil yulduz (Brilliant 1:1 dars yakuni) */
+  xpStyle?: 'delta' | 'total'
   animateXpCount?: boolean
   compact?: boolean
   fallback?: ReactNode
@@ -295,7 +308,9 @@ export function BrilliantCompletionStage({
       <BrilliantRiveContainer
         className={cn(
           'aspect-square',
-          compact && '!h-[clamp(172px,30dvh,272px)] !min-h-[172px] !p-3',
+          compact
+            ? '!h-[clamp(172px,30dvh,272px)] !min-h-[172px] !p-3'
+            : practiceStats && '!h-[clamp(210px,36dvh,290px)] !min-h-[210px] !p-3',
         )}
       >
         <BrilliantEndstateRive
@@ -333,92 +348,105 @@ export function BrilliantCompletionStage({
 
         {(showXp || practiceStats) && (
           <div
-            className="relative flex w-full max-w-[360px] flex-col items-center gap-2 py-2 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            className="relative flex w-full max-w-[360px] flex-col items-center gap-2 py-2 transition-[transform,opacity] duration-500 ease-out"
             style={{
               opacity: statsVisible ? 1 : 0,
               transform: statsVisible ? 'translateY(0)' : 'translateY(28px)',
             }}
           >
-            {/* MAIN_xp-starburst (Brilliant exact 226x174px) */}
-            {statsVisible && (
-              <div
-                className="pointer-events-none absolute left-1/2 -top-6 h-[174px] w-[226px] -translate-x-1/2"
-                aria-hidden="true"
-              >
-                <BrilliantEndstateRive
-                  kind="xp"
-                  dark={dark}
-                  nonce={xpNonce}
-                  label="XP starburst"
-                  className="size-full"
-                />
-              </div>
-            )}
+            <div className="relative mt-1 flex flex-col items-center gap-1.5">
+              {/* MAIN_xp-starburst (faqat XP raqami ortida — sarlavha va pastdagi 3-ustun statistikaga kirmaydi) */}
+              {statsVisible && (
+                <div
+                  className="pointer-events-none absolute left-1/2 top-1/2 h-[96px] w-[164px] -translate-x-1/2 -translate-y-1/2 overflow-hidden"
+                  aria-hidden="true"
+                >
+                  <BrilliantEndstateRive
+                    kind="xp"
+                    dark={dark}
+                    nonce={xpNonce}
+                    label="XP starburst"
+                    className="size-full scale-[0.78]"
+                  />
+                </div>
+              )}
 
-            <span className="relative z-10 text-[12px] font-bold uppercase tracking-wider text-pmuted">
-              {practiceStats
-                ? showXp && earnedXp > 0
-                  ? xpLabel
-                  : practiceStats.isRu
-                    ? 'Общий результат'
-                    : 'Yakuniy natija'
-                : xpLabel}
-            </span>
+              <span className="relative z-10 text-[12px] font-bold uppercase tracking-wider text-pmuted">
+                {practiceStats
+                  ? showXp && earnedXp > 0
+                    ? xpLabel
+                    : practiceStats.isRu
+                      ? 'Общий результат'
+                      : 'Yakuniy natija'
+                  : xpLabel}
+              </span>
 
-            <div className="relative z-10 inline-flex items-center justify-center">
-              {practiceStats ? (
-                showXp && earnedXp > 0 ? (
-                  <div className="inline-flex items-center justify-center">
+              <div className="relative z-10 inline-flex items-center justify-center">
+                {practiceStats ? (
+                  showXp && earnedXp > 0 ? (
+                    <div className="inline-flex items-center justify-center">
+                      {animateXpCount ? (
+                        <AnimatedXpCounter active={statsVisible} end={earnedXp} />
+                      ) : (
+                        <span
+                          className={cn(
+                            'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
+                            statsVisible && 'brilliant-xp-pulse',
+                          )}
+                        >
+                          +{earnedXp}
+                        </span>
+                      )}
+                      <span className="ml-2 inline-flex items-center text-[#f6b31f]">
+                        <BrilliantSparkleStar size={24} />
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="inline-flex items-baseline justify-center gap-1.5">
+                      <span className="text-[40px] sm:text-[44px] leading-none font-black tracking-tight text-pfg tabular-nums">
+                        <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" />
+                      </span>
+                      <span className="ml-2 inline-flex items-center text-[#f6b31f]">
+                        <BrilliantSparkleStar size={24} />
+                      </span>
+                    </div>
+                  )
+                ) : (
+                  <>
                     {animateXpCount ? (
-                      <AnimatedXpCounter active={statsVisible} end={earnedXp} />
+                      <AnimatedXpCounter
+                        active={statsVisible}
+                        end={earnedXp}
+                        prefix={xpStyle === 'total' ? '' : '+'}
+                        className={xpStyle === 'total' ? 'text-[44px] font-black text-pfg' : undefined}
+                      />
                     ) : (
                       <span
                         className={cn(
-                          'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
+                          'inline-block leading-none tracking-tight tabular-nums',
+                          xpStyle === 'total'
+                            ? 'text-[44px] font-black text-pfg'
+                            : 'text-[40px] font-extrabold text-[#29cc57]',
                           statsVisible && 'brilliant-xp-pulse',
                         )}
                       >
-                        +{earnedXp}
+                        {xpStyle === 'total' ? earnedXp : `+${earnedXp}`}
                       </span>
                     )}
-                    <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                      <BrilliantSparkleStar size={24} />
+                    <span className="ml-2 inline-flex items-center">
+                      <BrilliantSparkleStar
+                        size={xpStyle === 'total' ? 20 : 24}
+                        className={xpStyle === 'total' ? 'text-[#21c65b]' : 'text-[#f6b31f]'}
+                      />
                     </span>
-                  </div>
-                ) : (
-                  <div className="inline-flex items-baseline justify-center gap-1.5">
-                    <span className="text-[40px] sm:text-[44px] leading-none font-black tracking-tight text-pfg tabular-nums">
-                      <AnimatedNumber active={statsVisible} end={practiceStats.percent} suffix="%" />
-                    </span>
-                    <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                      <BrilliantSparkleStar size={24} />
-                    </span>
-                  </div>
-                )
-              ) : (
-                <>
-                  {animateXpCount ? (
-                    <AnimatedXpCounter active={statsVisible} end={earnedXp} />
-                  ) : (
-                    <span
-                      className={cn(
-                        'inline-block text-[40px] leading-none font-extrabold tracking-tight text-[#29cc57] tabular-nums',
-                        statsVisible && 'brilliant-xp-pulse',
-                      )}
-                    >
-                      +{earnedXp}
-                    </span>
-                  )}
-                  <span className="ml-2 inline-flex items-center text-[#f6b31f]">
-                    <BrilliantSparkleStar size={24} />
-                  </span>
-                </>
-              )}
+                  </>
+                )}
+              </div>
             </div>
 
             {/* Kak XP uslubidagi 3-ustunli animatsiyali statistika (Bloksiz, toza Brilliant minimalist) */}
             {practiceStats && (
-              <div className="relative z-10 mt-2.5 flex w-full items-center justify-center gap-6 sm:gap-8">
+              <div className="relative z-10 mt-6 flex w-full items-center justify-center gap-7 sm:gap-9">
                 {/* To'g'ri (Green) */}
                 <div className="flex flex-col items-center justify-center">
                   <span className="text-[26px] sm:text-[28px] font-black leading-none text-[#29cc57] tabular-nums">
@@ -755,4 +783,215 @@ export function BrilliantChargeStage({
       </BrilliantCopyContainer>
     </>
   )
+}
+
+export interface LeagueStageEntry {
+  rank: number
+  userId: string
+  name: string
+  score: number
+  isYou?: boolean
+}
+
+const LEAGUE_ROW_COLORS = ['#f5b800', '#22c55e', '#f87171', '#3557ff', '#a855f7', '#0ea5e9'] as const
+
+function rowAvatarColor(name: string): string {
+  let hash = 0
+  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) | 0
+  return LEAGUE_ROW_COLORS[Math.abs(hash) % LEAGUE_ROW_COLORS.length]
+}
+
+/** Brilliant 1:1 Liga ko'tarilish endstate sahnasi (`Fantastic! · Carbon League · live rank climb`) */
+export function BrilliantLeagueStage({
+  heading,
+  subtitle,
+  leagueLevel = 1,
+  entries,
+  oldRank,
+  dark,
+  nonce = 0,
+  titleId,
+  fallback,
+}: {
+  heading: string
+  subtitle: string
+  leagueLevel?: number
+  entries: LeagueStageEntry[]
+  oldRank?: number
+  dark: boolean
+  nonce?: number
+  titleId?: string
+  fallback?: ReactNode
+}) {
+  const reduced = prefersReducedMotion()
+  const [climbed, setClimbed] = useState(reduced)
+
+  useEffect(() => {
+    if (prefersReducedMotion()) {
+      setClimbed(true)
+      return
+    }
+    setClimbed(false)
+    const timer = setTimeout(() => {
+      setClimbed(true)
+      playSound('xp-tally')
+    }, 320)
+    return () => clearTimeout(timer)
+  }, [nonce, entries])
+
+  const youEntry = entries.find((e) => e.isYou)
+  const newRank = youEntry?.rank ?? oldRank ?? 1
+  const rankChanged = typeof oldRank === 'number' && oldRank > newRank
+
+  return (
+    <div className="mx-auto flex w-full max-w-[400px] flex-1 flex-col items-center justify-center px-4 pb-3 pt-2">
+      <div className="relative mx-auto flex h-[170px] w-[190px] shrink-0 items-center justify-center">
+        <BrilliantExtrasRive
+          kind="league"
+          leagueLevel={leagueLevel}
+          leagueState="promote"
+          dark={dark}
+          nonce={nonce}
+          label={heading}
+          className="size-full"
+          fallback={fallback}
+        />
+      </div>
+
+      <h1 id={titleId} className="mt-1 text-center text-[28px] font-extrabold leading-tight tracking-tight text-pfg">
+        {heading}
+      </h1>
+      <p className="mt-1.5 text-center text-[13.5px] font-semibold text-pmuted">
+        {subtitle}
+      </p>
+
+      <div className="mt-5 flex w-full flex-col gap-1.5">
+        {entries.map((entry) => {
+          const isYou = Boolean(entry.isYou)
+          const initial = (entry.name.trim()[0] || '?').toUpperCase()
+          const shownRank = isYou && rankChanged && !climbed ? oldRank : entry.rank
+          return (
+            <div
+              key={`${entry.userId}:${entry.rank}`}
+              data-you={isYou ? 'true' : undefined}
+              className={cn(
+                'flex items-center gap-3 rounded-2xl px-3.5 py-2.5 transition-[transform,opacity,background-color] duration-500 ease-out',
+                isYou
+                  ? 'bg-pcard shadow-lg scale-[1.02]'
+                  : 'bg-transparent opacity-85',
+              )}
+              style={
+                isYou
+                  ? { transform: climbed ? 'translateY(0)' : 'translateY(14px)' }
+                  : undefined
+              }
+            >
+              <span
+                className={cn(
+                  'w-6 text-center text-[14px] font-extrabold tabular-nums',
+                  entry.rank <= 3 || isYou ? 'text-[#21c65b]' : 'text-pmuted',
+                )}
+              >
+                {shownRank}
+              </span>
+              <span
+                className="grid size-9 shrink-0 place-items-center rounded-full text-[14px] font-extrabold text-white"
+                style={{ backgroundColor: rowAvatarColor(entry.name) }}
+                aria-hidden="true"
+              >
+                {initial}
+              </span>
+              <span className={cn('min-w-0 flex-1 truncate text-[14.5px]', isYou ? 'font-bold text-pfg' : 'font-semibold text-pfg')}>
+                {entry.name}
+              </span>
+              <span className={cn('shrink-0 text-[14px] font-bold tabular-nums', isYou ? 'text-pfg' : 'text-pmuted')}>
+                {entry.score} XP
+              </span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+/** Brilliant 1:1 Shaxsiy mashqlar (Premium Nudge) endstate sahnasi */
+export function BrilliantPracticeNudgeStage({
+  heading,
+  description,
+  dark,
+  nonce = 0,
+  titleId,
+  fallback,
+}: {
+  heading: string
+  description: string
+  dark: boolean
+  nonce?: number
+  titleId?: string
+  fallback?: ReactNode
+}) {
+  return (
+    <>
+      <BrilliantRiveContainer className="aspect-square">
+        <BrilliantExtrasRive
+          kind="practice-nudge"
+          dark={dark}
+          nonce={nonce}
+          label={heading}
+          className="size-full"
+          fallback={fallback}
+        />
+      </BrilliantRiveContainer>
+      <BrilliantCopyContainer className="justify-center pb-5 px-5 gap-3">
+        <h1 id={titleId} className="text-[26px] font-extrabold leading-tight tracking-tight text-pfg">
+          {heading}
+        </h1>
+        <p className="text-[15px] leading-relaxed text-pmuted">{description}</p>
+      </BrilliantCopyContainer>
+    </>
+  )
+}
+
+export function splitLessonPhases(total: number, isLesson: boolean) {
+  if (!isLesson || total <= 3) return { phase1Count: total, phase2Count: 0 }
+  const phase2Count = total >= 5 ? 3 : 2
+  return { phase1Count: total - phase2Count, phase2Count }
+}
+
+export function buildLeagueClimb(
+  weekly: { entries?: LeagueStageEntry[] } | null | undefined,
+  userId: string,
+  sessionXpDelta: number,
+  preScoreSnapshot: number | null,
+): { entries: LeagueStageEntry[]; oldRank?: number } | null {
+  const raw = weekly?.entries ?? []
+  if (raw.length === 0) return null
+  const youIndex = raw.findIndex((e) => e.isYou || (userId && e.userId === userId))
+  if (youIndex < 0) return null
+
+  const oldRank = raw[youIndex].rank
+  const minRank = Math.min(...raw.map((e) => e.rank))
+  const mapped: LeagueStageEntry[] = raw.map((e, i) => {
+    const isYou = i === youIndex
+    const shouldAddSession = isYou && preScoreSnapshot !== null && e.score === preScoreSnapshot
+    return {
+      rank: e.rank,
+      userId: e.userId,
+      name: e.name,
+      score: shouldAddSession ? e.score + sessionXpDelta : e.score,
+      isYou,
+    }
+  })
+
+  mapped.sort((a, b) => (b.score !== a.score ? b.score - a.score : (a.isYou ? -1 : b.isYou ? 1 : a.rank - b.rank)))
+  const ranked = mapped.map((entry, idx) => ({ ...entry, rank: minRank + idx }))
+  const updatedYouIdx = ranked.findIndex((e) => e.isYou)
+  if (updatedYouIdx < 0) return null
+
+  const start = Math.max(0, Math.min(updatedYouIdx - 2, ranked.length - 4))
+  return {
+    entries: ranked.slice(start, start + 4),
+    oldRank,
+  }
 }

@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   buildLessonPages,
+  extractDiscoveryChallenge,
   extractOutline,
   extractSectionBlocks,
   parseInline,
@@ -129,5 +130,30 @@ describe('mundarija va hajm', () => {
 
     expect(pages.length).toBeGreaterThan(1)
     expect(pages.every((page) => page.length <= 3)).toBe(true)
+  })
+
+  it('kirish satrini («Например:») keyingi misoldan ajratib yolg‘iz qoldirmaydi', () => {
+    const blocks = parseMarkdown('# 1. Mavzu\n\nA\n\nB\n\nC\n\nНапример:\n\n**дом** — 3 буквы и 3 звука.')
+    const pages = buildLessonPages(extractSectionBlocks(blocks, 0), 4)
+
+    expect(pages).toHaveLength(2)
+    expect(pages[0]).toHaveLength(3)
+    expect(pages[1]).toHaveLength(2)
+    expect(plainText(pages[1][0].kind === 'paragraph' ? pages[1][0].lines[0] : '')).toBe('Например:')
+  })
+
+  it('dars bo‘limidan Try (Sinab ko‘r) kashfiyot savolini ajratadi', () => {
+    const mismatch = parseMarkdown('# 1. Звуки\n\n- **ёлка** — 4 буквы, 5 звуков.')
+    const ch = extractDiscoveryChallenge(mismatch)
+    expect(ch).not.toBeNull()
+    expect(ch?.options).toContain('5')
+    expect(ch?.options[ch.correctIdx]).toBe('5')
+
+    const quoteOnly = parseMarkdown('# 1. Звуки\n\n> буква ≠ звук.')
+    const ch2 = extractDiscoveryChallenge(quoteOnly)
+    expect(ch2?.options[ch2.correctIdx]).toBe('буква ≠ звук')
+
+    const plainOnly = parseMarkdown('# 1. Matn\n\nOddiy ta’rif.')
+    expect(extractDiscoveryChallenge(plainOnly)).toBeNull()
   })
 })

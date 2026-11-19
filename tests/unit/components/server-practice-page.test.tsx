@@ -89,6 +89,7 @@ describe('ServerPracticePage vertical slice', () => {
     render(<MemoryRouter><ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} /></MemoryRouter>)
     expect(await screen.findByText('Server bergan savol')).toBeInTheDocument()
     fireEvent.click(screen.getByText('Variant ikki'))
+    fireEvent.click(screen.getByRole('button', { name: 'Tekshirish' }))
     expect(await screen.findByText('Javob xato. Keling, birga tushunib olamiz.')).toBeInTheDocument()
     expect(screen.getByText('Server bergan savol')).toBeInTheDocument()
     expect(useServerTestSessionStore.getState().snapshot?.answers[0]).toBe('wrong')
@@ -106,6 +107,7 @@ describe('ServerPracticePage vertical slice', () => {
     render(<MemoryRouter><ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} /></MemoryRouter>)
     expect(await screen.findByText('Yakuniy savol')).toBeInTheDocument()
     fireEvent.click(screen.getByText('Xato'))
+    fireEvent.click(screen.getByRole('button', { name: 'Tekshirish' }))
     expect(await screen.findByText('Javob xato. Keling, birga tushunib olamiz.')).toBeInTheDocument()
     expect(screen.getByText('Yakuniy savol')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
@@ -434,5 +436,112 @@ describe('ServerPracticePage vertical slice', () => {
       SESSION_ID,
       expect.objectContaining({ position: 0, language: 'uz' }),
     )
+  })
+
+  it('topic rejimida Brilliant 1:1 2-fazali bar, yashil feedback dock va yakuniy endstate karuselini ochadi', async () => {
+    vi.mocked(api.createTestSession).mockResolvedValueOnce({
+      session: { id: SESSION_ID, subjectId: 'fizika', mode: 'topic', status: 'active', answered: 0, total: 1, expiresAt: EXPIRES },
+      questions: [{
+        position: 0,
+        deliveryToken: 'v1.topic-pos-0',
+        expiresAt: EXPIRES,
+        text: 'Fizika savoli bir',
+        options: [{ id: 'F1', text: 'Nyuton' }, { id: 'F2', text: 'Joul' }],
+        media: null,
+        topic: { id: 77 },
+      }],
+      review: [],
+    })
+    vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+      attempt: {
+        position: 0,
+        correct: true,
+        correctOptionId: 'F1',
+        duplicate: false,
+        dailyStreak: 4,
+        xp: 40,
+        xpEarned: 15,
+        coinsEarned: 1,
+        coinBalance: 10,
+        chargeSaved: false,
+        chargeEarned: true,
+        streakCharges: 1,
+      },
+      append: [],
+      session: { id: SESSION_ID, subjectId: 'fizika', mode: 'topic', status: 'completed', answered: 1, total: 1, expiresAt: EXPIRES },
+    })
+
+    render(
+      <MemoryRouter>
+        <ServerPracticePage mode="topic" selector={{ type: 'topic', topicId: 77 }} title="Kuch va Nyuton" />
+      </MemoryRouter>,
+    )
+
+    expect(await screen.findByText('Fizika savoli bir')).toBeInTheDocument()
+    expect(screen.getByRole('progressbar', { name: 'Mashq progressi' })).toBeInTheDocument()
+    const checkBtn = screen.getByRole('button', { name: 'Tekshirish' })
+    expect(checkBtn).toBeDisabled()
+    expect(screen.queryByText('Yakunlash')).not.toBeInTheDocument()
+
+    fireEvent.click(screen.getByText('Nyuton'))
+    expect(checkBtn).not.toBeDisabled()
+    fireEvent.click(checkBtn)
+    const dock = await screen.findByTestId('practice-feedback-dock')
+    expect(dock).toHaveAttribute('data-state', 'correct')
+    expect(dock).toHaveTextContent('To‘g‘ri!')
+    expect(dock).toHaveTextContent('+15 XP')
+
+    fireEvent.click(screen.getByRole('button', { name: 'Yakunlash' }))
+    expect(await screen.findByRole('heading', { name: 'Mukammal natija!' })).toBeInTheDocument()
+  })
+
+  it('lesson rejimida 4 savoldan oxirgi checkpoint nuqtada xato qilinsa Charcoal feedback ko‘rsatadi', async () => {
+    const fourQuestions = [0, 1, 2, 3].map((position) => ({
+      position,
+      deliveryToken: `v1.p2-tok-${position}`,
+      expiresAt: EXPIRES,
+      text: `Dars savoli ${position + 1}`,
+      options: [{ id: 'F1', text: 'Togri' }, { id: 'F2', text: 'Notogri' }],
+      media: null,
+      topic: null,
+    }))
+    vi.mocked(api.createTestSession).mockResolvedValueOnce({
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'lesson', status: 'active', answered: 0, total: 4, expiresAt: EXPIRES },
+      questions: fourQuestions,
+      review: [],
+    })
+    for (let p = 0; p < 3; p += 1) {
+      vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+        attempt: { position: p, correct: true, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 10, xpEarned: 15, coinsEarned: 0, coinBalance: 0 },
+        append: [],
+        session: { id: SESSION_ID, subjectId: 'yhq', mode: 'lesson', status: 'active', answered: p + 1, total: 4, expiresAt: EXPIRES },
+      })
+    }
+    vi.mocked(api.submitTestSessionAnswer).mockResolvedValueOnce({
+      attempt: { position: 3, correct: false, correctOptionId: 'F1', duplicate: false, dailyStreak: 1, xp: 10, xpEarned: 0, coinsEarned: 0, coinBalance: 0 },
+      append: [],
+      session: { id: SESSION_ID, subjectId: 'yhq', mode: 'lesson', status: 'completed', answered: 4, total: 4, expiresAt: EXPIRES },
+    })
+
+    render(
+      <MemoryRouter>
+        <ServerPracticePage mode="lesson" selector={{ type: 'lesson', moduleId: 1, lessonIndex: 0 }} title="Belgilar" />
+      </MemoryRouter>,
+    )
+
+    for (let p = 0; p < 3; p += 1) {
+      expect(await screen.findByText(`Dars savoli ${p + 1}`)).toBeInTheDocument()
+      fireEvent.click(screen.getByText('Togri'))
+      fireEvent.click(screen.getByRole('button', { name: 'Tekshirish' }))
+      await screen.findByTestId('practice-feedback-dock')
+      fireEvent.click(screen.getByRole('button', { name: 'Davom etish' }))
+    }
+
+    expect(await screen.findByText('Dars savoli 4')).toBeInTheDocument()
+    fireEvent.click(screen.getByText('Notogri'))
+    fireEvent.click(screen.getByRole('button', { name: 'Tekshirish' }))
+    const p2Dock = await screen.findByTestId('practice-feedback-dock')
+    expect(p2Dock).toHaveAttribute('data-state', 'phase2-wrong')
+    expect(p2Dock).toHaveTextContent('Noto‘g‘ri')
   })
 })

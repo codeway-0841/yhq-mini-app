@@ -10,7 +10,7 @@ interface LessonExerciseProps {
   value: DarslikAnswerValue | undefined
   onChange: (value: DarslikAnswerValue) => void
   disabled?: boolean
-  outcome?: 'correct' | 'wrong' | 'revealed'
+  outcome?: 'correct' | 'wrong' | 'phase2_wrong' | 'revealed'
   onSpeak?: (text: string) => void
   speaking?: boolean
   /** Natija ekranida javobni ko'rsatish uchun (o'zgartirish o'chiriladi). */
@@ -18,10 +18,6 @@ interface LessonExerciseProps {
 }
 
 const CYRILLIC_HELPER_KEYS = ['ё', 'ъ', 'ь', 'й', 'э', 'ю', 'я'] as const
-
-function numberLabel(index: number): string {
-  return String(index + 1)
-}
 
 function usedRightValues(value: DarslikAnswerValue | undefined): Set<string> {
   if (!Array.isArray(value)) return new Set()
@@ -91,30 +87,48 @@ export default function LessonExercise({
                 aria-pressed={isSelected}
                 aria-label={option}
                 className={cn(
-                  'group flex w-full cursor-pointer items-center gap-3.5 rounded-2xl px-4 py-3.5 text-left text-[15px] font-semibold leading-snug transition-all active:translate-y-[2px] disabled:cursor-default',
+                  'group flex w-full cursor-pointer items-center gap-3.5 rounded-2xl px-4 py-3.5 text-left text-[15px] font-semibold leading-snug transition-[transform,background-color,border-color,opacity] duration-150 ease-out active:translate-y-[1px] disabled:cursor-default',
                   isSelected && outcome === 'correct'
-                    ? 'bg-[rgb(var(--p-success-rgb)/0.14)] text-pfg ring-2 ring-psuccess'
+                    ? 'border-2 border-psuccess bg-[rgb(var(--p-success-rgb)/0.14)] text-pfg'
                     : isSelected && outcome === 'wrong'
-                    ? 'bg-[rgb(var(--p-warning-rgb)/0.14)] text-pfg ring-2 ring-pwarning'
+                    ? 'border-2 border-[#eab308] bg-[rgb(234_179_8/0.14)] text-pfg'
+                    : isSelected && outcome === 'phase2_wrong'
+                    ? 'border-2 border-[rgb(var(--p-danger-rgb)/0.6)] bg-psurface text-pfg'
                     : isSelected && outcome === 'revealed'
-                    ? 'bg-psurface text-pfg ring-2 ring-pmuted'
+                    ? 'border-2 border-psuccess bg-psurface text-pfg'
                     : isSelected
-                    ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] text-pfg ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)] active:shadow-[0_1px_0_var(--p-primary)]'
-                    : 'bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] active:shadow-[0_1px_0_var(--p-line)] hover:bg-psurface',
+                    ? 'border-2 border-pprimary bg-[rgb(var(--p-primary-rgb)/0.1)] text-pfg shadow-[0_2px_0_var(--p-primary)]'
+                    : outcome
+                    ? 'bg-pcard text-pfg opacity-55 shadow-none'
+                    : 'bg-pcard text-pfg shadow-[0_2px_0_0_rgb(0_0_0/0.06)] dark:shadow-[0_2px_0_0_rgb(0_0_0/0.35)] hover:bg-psurface',
                 )}
               >
                 <span
+                  aria-hidden="true"
                   className={cn(
-                    'grid size-7 shrink-0 place-items-center rounded-xl text-[12px] font-extrabold tabular-nums transition-colors',
-                    isSelected
-                      ? 'bg-pprimary text-ponprimary shadow-2xs'
-                      : 'bg-psurface text-pmuted group-hover:text-pfg',
+                    'grid size-5 shrink-0 place-items-center rounded-full transition-colors',
+                    isSelected && outcome === 'correct'
+                      ? 'bg-psuccess text-white'
+                      : isSelected && outcome === 'wrong'
+                      ? 'bg-pwarning text-white'
+                      : isSelected && outcome === 'phase2_wrong'
+                      ? 'bg-[rgb(var(--p-danger-rgb)/0.85)] text-white'
+                      : isSelected && outcome === 'revealed'
+                      ? 'bg-psuccess text-white'
+                      : isSelected
+                      ? 'bg-pprimary ring-2 ring-[rgb(var(--p-primary-rgb)/0.25)]'
+                      : 'border-2 border-pline bg-transparent group-hover:border-pmuted',
                   )}
                 >
-                  {numberLabel(optionIndex)}
+                  {isSelected && outcome && (outcome === 'wrong' || outcome === 'phase2_wrong')
+                    ? <X size={12} strokeWidth={3} />
+                    : isSelected && (outcome === 'correct' || outcome === 'revealed')
+                    ? <Check size={12} strokeWidth={3} />
+                    : isSelected
+                    ? <span className="size-2 rounded-full bg-white" />
+                    : null}
                 </span>
                 <span className="min-w-0 flex-1 break-words">{option}</span>
-                {isSelected && outcome && (outcome === 'wrong' ? <X aria-hidden="true" className="text-pwarning" /> : <Check aria-hidden="true" className={outcome === 'correct' ? 'text-psuccess' : 'text-pmuted'} />)}
               </button>
             )
           })}
@@ -231,10 +245,10 @@ export default function LessonExercise({
                 disabled={locked || isUsed}
                 onClick={() => onChange([...chosen, token])}
                 className={cn(
-                  'rounded-xl px-3.5 py-2.5 text-[14px] font-bold transition-all',
+                  'rounded-xl px-3.5 py-2.5 text-[14px] font-bold transition-[transform,background-color,opacity]',
                   isUsed
                     ? 'cursor-default bg-psurface text-psubtle opacity-40'
-                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
+                    : 'cursor-pointer bg-pcard text-pfg shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
                 )}
               >
                 {token}
@@ -300,12 +314,12 @@ export default function LessonExercise({
                 }}
                 aria-pressed={isActive}
                 className={cn(
-                  'flex min-h-[64px] cursor-pointer flex-col justify-center rounded-2xl px-3 py-2.5 text-left transition-all active:translate-y-[2px]',
+                  'flex min-h-[64px] cursor-pointer flex-col justify-center rounded-2xl px-3 py-2.5 text-left transition-[transform,background-color,border-color] active:translate-y-[2px]',
                   isActive
-                    ? 'bg-[rgb(var(--p-primary-rgb)/0.12)] ring-2 ring-pprimary shadow-[0_3px_0_var(--p-primary)]'
+                    ? 'border-2 border-pprimary bg-[rgb(var(--p-primary-rgb)/0.12)] shadow-[0_3px_0_var(--p-primary)]'
                     : matched
-                      ? 'bg-[rgb(var(--p-success-rgb)/0.10)] ring-2 ring-[rgb(var(--p-success-rgb)/0.45)] shadow-[0_3px_0_rgb(var(--p-success-rgb)/0.45)]'
-                      : 'bg-pcard ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface',
+                      ? 'border-2 border-[rgb(var(--p-success-rgb)/0.45)] bg-[rgb(var(--p-success-rgb)/0.10)] shadow-[0_3px_0_rgb(var(--p-success-rgb)/0.45)]'
+                      : 'bg-pcard shadow-[0_3px_0_var(--p-line)] hover:bg-psurface',
                 )}
               >
                 <div className="flex items-center justify-between gap-1.5">
@@ -352,10 +366,10 @@ export default function LessonExercise({
                   assignRight(target, right)
                 }}
                 className={cn(
-                  'flex min-h-[64px] items-center justify-between gap-2 rounded-2xl px-3 py-2.5 text-left text-[13.5px] font-semibold leading-snug transition-all',
+                  'flex min-h-[64px] items-center justify-between gap-2 rounded-2xl px-3 py-2.5 text-left text-[13.5px] font-semibold leading-snug transition-[transform,background-color,opacity]',
                   isUsed
                     ? 'cursor-default bg-[rgb(var(--p-success-rgb)/0.08)] text-psuccess opacity-65'
-                    : 'cursor-pointer bg-pcard text-pfg ring-1 ring-pline shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
+                    : 'cursor-pointer bg-pcard text-pfg shadow-[0_3px_0_var(--p-line)] hover:bg-psurface active:translate-y-[2px] active:shadow-none',
                 )}
               >
                 <span className="break-words">{right}</span>

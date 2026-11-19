@@ -31,7 +31,7 @@ describe('route chrome registry', () => {
   })
 
   it('AI va canvas route-larni workspace sifatida belgilaydi', () => {
-    for (const pathname of ['/ai-tutor', '/ai-test', '/ai-test/session-1', '/camai', '/doska']) {
+    for (const pathname of ['/ai-test', '/ai-test/session-1', '/camai', '/doska']) {
       expect(getRouteChrome(pathname), pathname).toMatchObject({
         mode: 'workspace',
         bottomNavigation: false,
@@ -43,7 +43,7 @@ describe('route chrome registry', () => {
 
   it('trailing slash route siyosatini o\'zgartirmaydi', () => {
     expect(getRouteChrome('/testlar/')).toEqual(getRouteChrome('/testlar'))
-    expect(getRouteChrome('/ai-tutor/')).toEqual(getRouteChrome('/ai-tutor'))
+    expect(getRouteChrome('/ai-test/')).toEqual(getRouteChrome('/ai-test'))
   })
 })
 

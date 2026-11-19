@@ -1,18 +1,19 @@
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
-import { AlertTriangle, Bookmark, ChevronLeft, RotateCcw, Square, Timer, Volume2 } from 'lucide-react'
+import { AlertTriangle, Bookmark, ChevronLeft, PenTool, RotateCcw, Square, Timer, Volume2 } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import type {
   CreateTestSessionInput,
   DeliveredTestQuestion,
   TestSessionResponse,
 } from '../../../shared/test-session'
-import { api, ApiError } from '../../shared/api'
+import { api, ApiError, type LeagueWeekly } from '../../shared/api'
 import { Button } from '../../shared/components/ui/button'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import MathText from '../../shared/components/MathText'
 import { goBack } from '../../shared/lib/navigation'
+import { leaderboardPageCaches } from '../../shared/lib/leaderboard-cache'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { isSpeaking, speak, stopSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
@@ -26,15 +27,18 @@ import {
 } from '../../shared/store/useServerTestSessionStore'
 import { useSubjectStore } from '../../shared/store/useSubjectStore'
 import { getSubjectBrilliantColor } from '../../shared/config/subjects'
+import { PathMascot } from '../lessons'
 import OptionButton from './OptionButton'
 import QuestionStrip from './QuestionStrip'
-import ResultsModal from './ResultsModal'
-import AiTutorModal from './components/AiTutorModal'
+import ResultsModal, { type PracticeEndstateStreak } from './ResultsModal'
 import ExamReviewModal, { type ExamReviewItem } from './components/ExamReviewModal'
 import TestExplanation from './components/TestExplanation'
 import TestHelperAvatar from './components/TestHelperAvatar'
 import { LessonMistakeFeedback } from './components/LessonMistakeFeedback'
 import { BrilliantEndstateRive } from '../../shared/components/BrilliantEndstateRive'
+import { splitLessonPhases } from '../../shared/components/BrilliantCompletionContent'
+import { BrilliantExitDialog } from '../../shared/components/BrilliantLessonChrome'
+import { BrilliantPracticeFeedbackDock, BrilliantPracticeHeader } from '../../shared/components/BrilliantPracticeChrome'
 import TestDrawingLayer from './components/TestDrawingLayer'
 import TestCalculatorSheet from './components/TestCalculatorSheet'
 import TestFormulasSheet from './components/TestFormulasSheet'
@@ -155,19 +159,20 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   const [coinPop, setCoinPop] = useState(0)
   const [earnedXpTotal, setEarnedXpTotal] = useState(0)
   const [earnedCoinsTotal, setEarnedCoinsTotal] = useState(0)
-  const pendingStreakRef = useRef<{
-    streak: number
-    showCharge: boolean
-    charges: number
-    chargeSaved: boolean
-    chargeEarned: boolean
-  } | null>(null)
+  const [lastAttemptXp, setLastAttemptXp] = useState(0)
+  const [lastAttemptCoins, setLastAttemptCoins] = useState(0)
+  const [stagedChoice, setStagedChoice] = useState<string | null>(null)
+  const [weeklyLeague, setWeeklyLeague] = useState<LeagueWeekly | null>(() => leaderboardPageCaches.weekly.peek())
+  const preLessonScoreRef = useRef<number | null>(null)
+  const [endstateStreakState, setEndstateStreakState] = useState<PracticeEndstateStreak | null>(null)
+  const pendingStreakRef = useRef<PracticeEndstateStreak | null>(null)
   const flushPendingStreak = useCallback(() => {
     const pending = pendingStreakRef.current
     if (!pending) return
     pendingStreakRef.current = null
     useDailyStore.getState().triggerStreakCelebration(pending.streak, pending)
   }, [])
+  const isCoursePractice = mode === 'lesson' || mode === 'module' || mode === 'topic'
   const [zoomed, setZoomed] = useState<string | null>(null)
   const [confirmExit, setConfirmExit] = useState(false)
   const [confirmFinish, setConfirmFinish] = useState(false)
@@ -178,7 +183,6 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   const [scratchpadOpen, setScratchpadOpen] = useState(false)
   const [savedPositions, setSavedPositions] = useState<Set<number>>(new Set())
   const [showExplain, setShowExplain] = useState(false)
-  const [showAiTutor, setShowAiTutor] = useState(false)
   const [dbExplanation, setDbExplanation] = useState<string | null>(null)
   const [loadingDbExplain, setLoadingDbExplain] = useState(false)
   const [slideDirection, setSlideDirection] = useState<'left' | 'right' | null>(null)
@@ -190,6 +194,22 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     setSnapshot(next)
     useServerTestSessionStore.getState().save(next)
   }, [])
+
+  useEffect(() => {
+    if (!isCoursePractice || !userId || userId === '0') return
+    let cancelled = false
+    leaderboardPageCaches.weekly.fetch(userId)
+      .then((data) => {
+        if (cancelled) return
+        setWeeklyLeague(data)
+        const youRow = data.entries.find((e) => e.isYou || e.userId === userId)
+        if (youRow && preLessonScoreRef.current === null) {
+          preLessonScoreRef.current = youRow.score
+        }
+      })
+      .catch(() => {})
+    return () => { cancelled = true }
+  }, [isCoursePractice, userId])
 
   useEffect(() => {
     if (!userId) return
@@ -272,22 +292,24 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
 
   const reviewItems = useMemo((): ExamReviewItem[] => {
     if (!snapshot) return []
+    const topicsList = Array.isArray(storeTopics) ? storeTopics : []
     return buildV2ReviewItems(snapshot, (topicId) => {
       if (topicId == null) return undefined
-      const topic = storeTopics.find((t) => t.id === topicId)
+      const topic = topicsList.find((t) => t.id === topicId)
       return topic ? (settings.language === 'ru' ? topic.nameRu : topic.nameUz) : `#${topicId}`
     })
   }, [snapshot, storeTopics, settings.language])
 
   const topicBreakdown = useMemo(() => {
     if (!snapshot) return undefined
+    const topicsList = Array.isArray(storeTopics) ? storeTopics : []
     return buildTopicBreakdown(
       snapshot.questions.map((q) => ({
         topicId: q.topic?.id ?? null,
         status: (snapshot.answers[q.position] === 'correct' ? 'correct'
           : snapshot.answers[q.position] === 'wrong' ? 'incorrect' : 'unanswered') as 'correct' | 'incorrect' | 'unanswered',
       })),
-      storeTopics,
+      topicsList,
       settings.language,
       isRu ? 'Общие' : 'Umumiy',
     )
@@ -350,9 +372,12 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       // bo'lsa). firstAvailable faqat resume/zaxira uchun — aks holda strip'da
       // sakrab yurganda kutilmagan orqaga sakrash bo'lardi.
       const delivered = new Set(next.questions.map((item) => item.position))
-      next.current = mode === 'lesson' && !response.attempt.correct
-        ? position : delivered.has(position + 1) ? position + 1 : firstAvailable(next)
+      next.current = isCoursePractice
+        ? position
+        : delivered.has(position + 1) ? position + 1 : firstAvailable(next)
       persist(next)
+      setLastAttemptXp(response.attempt.xpEarned ?? 0)
+      setLastAttemptCoins(response.attempt.coinsEarned ?? 0)
       if (response.attempt.correct) {
         haptics.success()
         playSound('success')
@@ -369,13 +394,15 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           && !isSubjectExtendedOnDate(useDailyStore.getState(), today, subjectId)
         ) {
           const charges = response.attempt.streakCharges ?? selectDailyCharges(useDailyStore.getState(), subjectId)
-          pendingStreakRef.current = {
+          const streakSnapshot: PracticeEndstateStreak = {
             streak: response.attempt.dailyStreak,
             showCharge: Boolean(response.attempt.chargeSaved || response.attempt.chargeEarned || charges > 0),
             charges,
             chargeSaved: Boolean(response.attempt.chargeSaved),
             chargeEarned: Boolean(response.attempt.chargeEarned),
           }
+          pendingStreakRef.current = streakSnapshot
+          setEndstateStreakState(streakSnapshot)
         }
         applySessionAnswer({
           correct: response.attempt.correct,
@@ -392,7 +419,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         setEarnedXpTotal((value) => value + response.attempt.xpEarned)
         setEarnedCoinsTotal((value) => value + response.attempt.coinsEarned)
       }
-      if ((response.session.status === 'completed' || next.answers.every(Boolean)) && !(mode === 'lesson' && !response.attempt.correct)) {
+      if (!isCoursePractice && (response.session.status === 'completed' || next.answers.every(Boolean))) {
         setFinished(true)
         setShowResults(true)
       }
@@ -416,7 +443,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     } finally {
       setSubmitting(false)
     }
-  }, [applySessionAnswer, isRu, mode, persist, question, snapshot, subjectId, submitting])
+  }, [applySessionAnswer, isCoursePractice, isRu, mode, persist, question, snapshot, subjectId, submitting])
 
   const finish = useCallback(async () => {
     if (!snapshot) return
@@ -426,11 +453,11 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
   }, [snapshot])
 
   const handleTimeUp = useCallback(() => {
-    if (!snapshot || finished) return
+    if (!snapshot || finished || isCoursePractice) return
     void api.finishTestSession(snapshot.sessionId, 'completed').catch(() => undefined)
     setFinished(true)
     setShowResults(true)
-  }, [finished, snapshot])
+  }, [finished, isCoursePractice, snapshot])
 
   const handleBack = useCallback(() => {
     if (!snapshot || finished) {
@@ -524,7 +551,6 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     setEarnedCoinsTotal(0)
     setSavedPositions(new Set())
     setShowExplain(false)
-    setShowAiTutor(false)
     setDbExplanation(null)
     setSessionInvalid(false)
     setError(null)
@@ -563,7 +589,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     canSwipeRight,
     enabled: settings.swipeToNavigate !== false && !finished && !loading && Boolean(snapshot)
       && !drawingOpen && !scratchpadOpen && !zoomed && !calculatorOpen && !formulasOpen && !showReview
-      && !showExplain && !showAiTutor,
+      && !showExplain,
   })
 
   if (loading || !snapshot || !question) {
@@ -616,6 +642,11 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           earnedXp={earnedXpTotal}
           earnedCoins={earnedCoinsTotal}
           examPresetId={selector.type === 'exam' ? selector.presetId : null}
+          endstateChain={isCoursePractice}
+          endstateStreak={endstateStreakState}
+          weeklyLeague={weeklyLeague}
+          preLessonScore={preLessonScoreRef.current}
+          onOpenPremium={() => { flushPendingStreak(); navigate('/premium') }}
           onRetry={() => { flushPendingStreak(); void retryTest() }}
           onFinish={() => { flushPendingStreak(); goBack(navigate) }}
           onGoToQuestion={goToResultQuestion}
@@ -632,49 +663,96 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     )
   }
 
+  const courseOutcomes: Record<number, 'correct' | 'wrong'> = {}
+  snapshot.answers.forEach((st, idx) => {
+    if (st === 'correct' || st === 'wrong') courseOutcomes[idx] = st
+  })
+  const { phase1Count, phase2Count } = splitLessonPhases(snapshot.total, true)
+  const isPhase2Step = isCoursePractice && phase2Count > 0 && position >= phase1Count
+  const handleCourseContinue = () => {
+    if (snapshot.answers.every(Boolean)) {
+      setFinished(true)
+      setShowResults(true)
+      return
+    }
+    const next = snapshot.questions.some((item) => item.position === position + 1) ? position + 1 : firstAvailable(snapshot)
+    setSlideDirection('left')
+    setShowExplain(false)
+    setLastAttemptXp(0)
+    setLastAttemptCoins(0)
+    setStagedChoice(null)
+    persist({ ...snapshot, current: next })
+  }
+
   return (
-    <div className="relative flex flex-col bg-pcanvas">
-      <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
-        <div className="flex w-full items-center justify-between px-4 py-2">
-          <button type="button" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer [&_svg]:size-6"><ChevronLeft /></button>
-          <div className="text-center">
-            <p className="text-sm font-semibold text-pfg">
-              {title ?? (mode === 'saved' || mode === 'mistakes'
-                ? (mode === 'saved'
-                    ? (isRu ? 'Сохранённые' : 'Saqlanganlar')
-                    : (isRu ? 'Работа над ошибками' : 'Xatolarni tuzatish'))
-                : (isRu ? `Практика · ${snapshot.total}` : `Mashq · ${snapshot.total}`))}
-            </p>
-            <p className="flex items-center justify-center gap-1 text-xs text-pmuted"><Timer size={12} className={timerIconTone} />
-              <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
-                <span key={Math.floor(timerLeft / 60)} className={`inline-block font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
-              </span> · {answeredCount}/{snapshot.total}
-              {mode === 'mock' && (
-                <span className={wrongCount > 0 ? 'font-semibold text-pdanger' : undefined}> · {wrongCount}/2 {isRu ? 'ошибки' : 'xato'}</span>
+    <div className="relative flex min-h-[100dvh] flex-col bg-pcanvas">
+      {isCoursePractice ? (
+        <BrilliantPracticeHeader
+          currentIndex={position}
+          total={snapshot.total}
+          answeredCount={answeredCount}
+          outcomes={courseOutcomes}
+          onClose={handleBack}
+          closeLabel={isRu ? 'Назад' : 'Orqaga'}
+          language={settings.language}
+          devAction={import.meta.env.DEV ? (
+            <button
+              type="button"
+              onClick={() => {
+                snapshot.answers = Array(snapshot.total).fill('correct')
+                setFinished(true)
+                setShowResults(true)
+              }}
+              className="shrink-0 rounded-full bg-psurface px-2 py-0.5 text-[10px] font-bold tracking-wide text-pmuted hover:text-pfg"
+              title="Dev: Yakun"
+            >
+              DEV
+            </button>
+          ) : undefined}
+        />
+      ) : (
+        <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] page-header pt-[var(--safe-top,0px)]">
+          <div className="flex w-full items-center justify-between px-4 py-2">
+            <button type="button" onClick={handleBack} aria-label={isRu ? 'Назад' : 'Orqaga'} className="flex size-10 shrink-0 items-center justify-center text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer [&_svg]:size-6"><ChevronLeft /></button>
+            <div className="text-center">
+              <p className="text-sm font-semibold text-pfg">
+                {title ?? (mode === 'saved' || mode === 'mistakes'
+                  ? (mode === 'saved'
+                      ? (isRu ? 'Сохранённые' : 'Saqlanganlar')
+                      : (isRu ? 'Работа над ошибками' : 'Xatolarni tuzatish'))
+                  : (isRu ? `Практика · ${snapshot.total}` : `Mashq · ${snapshot.total}`))}
+              </p>
+              <p className="flex items-center justify-center gap-1 text-xs text-pmuted"><Timer size={12} className={timerIconTone} />
+                <span className={timerLeft <= 60 ? 'animate-pulse' : undefined}>
+                  <span key={Math.floor(timerLeft / 60)} className={`inline-block font-semibold tabular-nums animate-swapRollIn ${timerTone}`}>{timer}</span>
+                </span> · {answeredCount}/{snapshot.total}
+                {mode === 'mock' && (
+                  <span className={wrongCount > 0 ? 'font-semibold text-pdanger' : undefined}> · {wrongCount}/2 {isRu ? 'ошибки' : 'xato'}</span>
+                )}
+              </p>
+            </div>
+            <div className="flex items-center gap-1.5">
+              {import.meta.env.DEV && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    snapshot.answers = Array(snapshot.total).fill('correct')
+                    setFinished(true)
+                  }}
+                  className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
+                  title="Dev: Test Yakuni (Demo)"
+                >
+                  ⚡ Yakun
+                </button>
               )}
-            </p>
+              <Button variant="secondary" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
+            </div>
           </div>
-          <div className="flex items-center gap-1.5">
-            {import.meta.env.DEV && (
-              <button
-                type="button"
-                onClick={() => {
-                  snapshot.answers = Array(snapshot.total).fill('correct')
-                  setFinished(true)
-                }}
-                className="shrink-0 rounded-md bg-amber-500/20 px-2 py-1 text-[11px] font-bold text-amber-500 hover:bg-amber-500/30 transition-colors"
-                title="Dev: Test Yakuni (Demo)"
-              >
-                ⚡ Yakun
-              </button>
-            )}
-            <Button variant="secondary" onClick={handleFinishPress}>{isRu ? 'Завершить' : 'Yakunlash'}</Button>
-          </div>
-        </div>
-      </header>
+        </header>
+      )}
 
       {error && <div role="alert" className="mx-auto mt-3 flex max-w-2xl items-center gap-2 rounded-2xl bg-[rgb(var(--p-danger-rgb)/0.10)] px-4 py-3 text-sm text-pdanger"><AlertTriangle size={16} />{error}</div>}
-      {coinPop > 0 && (
+      {!isCoursePractice && coinPop > 0 && (
         <div key={coinPop} className="coin-pop" aria-hidden>
           <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(var(--p-gold-rgb)/0.18)] px-3 py-1.5 text-[13px] font-semibold tabular-nums text-pgold shadow-xs">
             <CoinIcon size={14} />
@@ -682,34 +760,46 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           </span>
         </div>
       )}
-      <QuestionStrip
-        total={snapshot.total}
-        current={position}
-        answers={snapshot.answers}
-        onSelect={(next) => {
-          if (snapshot.questions.some((item) => item.position === next)) {
-            setSlideDirection(next > position ? 'left' : next < position ? 'right' : null)
-            setShowExplain(false)
-            persist({ ...snapshot, current: next })
-          }
-        }}
-      />
+      {!isCoursePractice && (
+        <QuestionStrip
+          total={snapshot.total}
+          current={position}
+          answers={snapshot.answers}
+          onSelect={(next) => {
+            if (snapshot.questions.some((item) => item.position === next)) {
+              setSlideDirection(next > position ? 'left' : next < position ? 'right' : null)
+              setShowExplain(false)
+              persist({ ...snapshot, current: next })
+            }
+          }}
+        />
+      )}
 
       <main
-        className="flex-1 px-4 pb-4 pt-2 touch-pan-y overflow-x-hidden"
+        className={`flex-1 px-4 pt-2 touch-pan-y overflow-x-hidden ${isCoursePractice ? 'pb-48' : 'pb-4'}`}
         {...touchHandlers}
       >
         <div
           key={position}
           style={isSwiping ? { transform: `translate3d(${dragOffset}px, 0, 0)`, transition: 'none' } : undefined}
-          className={`mx-auto max-w-2xl ${
+          className={`mx-auto ${isCoursePractice ? 'max-w-[540px]' : 'max-w-2xl'} ${
             !settings?.noAnimation && !isSwiping
               ? (slideDirection === 'left' ? 'animate-slide-in-right' : slideDirection === 'right' ? 'animate-slide-in-left' : '')
               : ''
           }`}
         >
-          <div className="mb-2 flex items-center gap-2">
-            <p className="min-w-0 flex-1 text-xs font-medium text-pmuted">{position + 1} / {snapshot.total}</p>
+          <div className={isCoursePractice ? 'mb-3 flex items-center gap-2' : 'mb-2 flex items-center gap-2'}>
+            {isCoursePractice ? (
+              <div className="flex min-w-0 flex-1 items-center gap-1.5 text-[12.5px] font-semibold text-pmuted">
+                {title && <span className="truncate">{title}</span>}
+                {title && <span aria-hidden="true">·</span>}
+                <span className="shrink-0 tabular-nums">{position + 1} / {snapshot.total}</span>
+              </div>
+            ) : (
+              <p className="min-w-0 flex-1 text-xs font-medium text-pmuted">
+                {position + 1} / {snapshot.total}
+              </p>
+            )}
             <button
               type="button"
               onClick={() => {
@@ -719,21 +809,46 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
               }}
               aria-label={speaking ? (isRu ? 'Остановить' : 'Ovozni to‘xtatish') : (isRu ? 'Озвучить вопрос' : 'Savolni o‘qib berish')}
               aria-pressed={speaking}
-              className={`grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted'}`}
+              className={isCoursePractice
+                ? `grid size-9 flex-none shrink-0 place-items-center rounded-full bg-psurface transition-colors cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted hover:text-pfg'}`
+                : `grid size-10 flex-none shrink-0 place-items-center rounded-full bg-psurface transition-colors cursor-pointer ${speaking ? 'text-pprimary' : 'text-pmuted hover:text-pfg'}`}
             >
-              {speaking ? <Square size={16} fill="currentColor" /> : <Volume2 size={18} strokeWidth={2} />}
+              {speaking ? <Square size={15} fill="currentColor" /> : <Volume2 size={17} strokeWidth={2} />}
             </button>
             <button
               type="button"
               onClick={() => void toggleSave()}
               aria-label={savedPositions.has(position) ? (isRu ? 'Убрать из сохранённых' : 'Saqlanganlardan olish') : (isRu ? 'Сохранить' : 'Saqlash')}
               aria-pressed={savedPositions.has(position)}
-              className="grid size-10 flex-none shrink-0 place-items-center rounded-full bg-white text-pmuted shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-black/[0.04] dark:bg-white/10 dark:text-white dark:border-white/10 dark:shadow-none active:scale-95 transition-all cursor-pointer"
+              className={isCoursePractice
+                ? 'grid size-9 flex-none shrink-0 place-items-center rounded-full bg-psurface text-pmuted hover:text-pfg transition-colors cursor-pointer'
+                : 'grid size-10 flex-none shrink-0 place-items-center rounded-full bg-psurface text-pmuted hover:text-pfg transition-colors cursor-pointer'}
             >
-              <Bookmark size={18} fill={savedPositions.has(position) ? 'currentColor' : 'none'} className={savedPositions.has(position) ? 'text-pwarning' : ''} />
+              <Bookmark size={17} fill={savedPositions.has(position) ? 'currentColor' : 'none'} className={savedPositions.has(position) ? 'text-pwarning' : ''} />
             </button>
+            {isCoursePractice && (
+              <button
+                type="button"
+                onClick={() => setDrawingOpen((v) => !v)}
+                aria-label={isRu ? 'Инструменты' : 'Vositalar'}
+                aria-pressed={drawingOpen}
+                className={`grid size-9 flex-none shrink-0 place-items-center rounded-full transition-colors cursor-pointer ${
+                  drawingOpen
+                    ? 'bg-[rgb(var(--p-primary-rgb)/0.14)] text-pprimary'
+                    : 'bg-psurface text-pmuted hover:text-pfg'
+                }`}
+              >
+                <PenTool size={16} strokeWidth={2} />
+              </button>
+            )}
           </div>
-          <MathText as="p" text={question.text} className="mb-5 text-left font-display text-[18px] font-semibold leading-relaxed text-pfg" />
+          <MathText
+            as="p"
+            text={question.text}
+            className={isCoursePractice
+              ? 'mb-6 text-left font-display text-[20px] font-bold leading-[1.35] tracking-[-0.015em] text-pfg'
+              : 'mb-5 text-left font-display text-[18px] font-semibold leading-relaxed text-pfg'}
+          />
           {question.media && (
             <img
               src={formatImageSrc(question.media)} alt=""
@@ -749,8 +864,14 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
               key={`${position}:${option.id}`}
               option={option}
               indexLabel={String.fromCharCode(65 + index)}
+              variant={isCoursePractice ? 'brilliant' : 'classic'}
+              phase2={isPhase2Step}
+              selected={isCoursePractice && selected === null && stagedChoice === option.id}
               state={optionState(option.id)}
-              onSelect={() => void submit(option.id)}
+              onSelect={() => {
+                if (isCoursePractice) setStagedChoice(option.id)
+                else void submit(option.id)
+              }}
               answered={selected !== null || submitting}
             />
           ))}
@@ -770,7 +891,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       {zoomed && (
         <ImageZoomModal src={zoomed} alt={isRu ? 'Изображение вопроса' : 'Savol rasmi'} onClose={() => setZoomed(null)} />
       )}
-      {!finished && (
+      {!finished && (!isCoursePractice || drawingOpen) && (
         <TestDrawingLayer
           open={drawingOpen}
           onOpenChange={setDrawingOpen}
@@ -801,7 +922,7 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
         subjectId={subjectId}
       />
       {/* Maskot — qalam-dock (fixed right-4) TAGIDA (TestPage bilan bir xil rail). */}
-      {answer !== null && !drawingOpen && (
+      {!isCoursePractice && answer !== null && !drawingOpen && (
         <Button
           variant="ghost" onClick={openExplain}
           aria-label={isRu ? 'Почему так?' : 'Nega shunday?'}
@@ -812,23 +933,54 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           <span aria-hidden="true" className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-pcard text-sm font-bold text-pfg shadow-sm">?</span>
         </Button>
       )}
-      {mode === 'lesson' && answer === 'wrong' && !drawingOpen && !showExplain && !showAiTutor && !finished && !showResults && (
-        <LessonMistakeFeedback language={settings.language} onAsk={() => setShowAiTutor(true)} onContinue={() => {
-          if (snapshot.answers.every(Boolean)) { setFinished(true); setShowResults(true); return }
-          const next = snapshot.questions.some((item) => item.position === position + 1) ? position + 1 : firstAvailable(snapshot)
-          setSlideDirection('left')
-          persist({ ...snapshot, current: next })
-        }} />
+      {isCoursePractice && !drawingOpen && !showExplain && !finished && !showResults ? (
+        <BrilliantPracticeFeedbackDock
+          answeredStatus={answer as 'correct' | 'wrong' | 'pending' | null}
+          isPhase2={isPhase2Step}
+          xpEarned={lastAttemptXp}
+          coinsEarned={lastAttemptCoins}
+          language={settings.language}
+          mascotSlot={(
+            <PathMascot
+              variant="avatar"
+              animation={answer === 'correct' ? 'happy' : answer === 'wrong' ? 'oops' : 'idle'}
+            />
+          )}
+          canCheck={Boolean(stagedChoice) && selected === null}
+          checking={submitting}
+          onCheck={() => {
+            if (!stagedChoice || submitting || selected !== null) return
+            const choice = stagedChoice
+            setStagedChoice(null)
+            void submit(choice)
+          }}
+          onExplain={() => { playSound('hint'); openExplain() }}
+          onContinue={handleCourseContinue}
+          continueLabel={snapshot.answers.every(Boolean) && answer === 'correct'
+            ? (isRu ? 'Завершить' : 'Yakunlash')
+            : (isRu ? 'Продолжить' : 'Davom etish')}
+        />
+      ) : mode === 'lesson' && answer === 'wrong' && !drawingOpen && !showExplain && !finished && !showResults && (
+        <LessonMistakeFeedback language={settings.language} onContinue={handleCourseContinue} />
       )}
-      <ConfirmDialog
-        open={confirmExit}
-        title={isRu ? 'Выйти из теста?' : 'Testdan chiqilsinmi?'}
-        description={isRu ? 'Отвеченные вопросы сохранены — тест можно продолжить позже.' : 'Berilgan javoblar saqlangan — testni keyin davom ettirish mumkin.'}
-        confirmLabel={isRu ? 'Выйти' : 'Chiqish'}
-        cancelLabel={isRu ? 'Остаться' : 'Qolish'}
-        onClose={() => setConfirmExit(false)}
-        onConfirm={() => { setConfirmExit(false); goBack(navigate) }}
-      />
+      {isCoursePractice ? (
+        <BrilliantExitDialog
+          open={confirmExit}
+          onStay={() => setConfirmExit(false)}
+          onLeave={() => { setConfirmExit(false); goBack(navigate) }}
+          mascot={<span className="relative block size-16"><PathMascot variant="avatar" animation="thinking" /></span>}
+        />
+      ) : (
+        <ConfirmDialog
+          open={confirmExit}
+          title={isRu ? 'Выйти из теста?' : 'Testdan chiqilsinmi?'}
+          description={isRu ? 'Отвеченные вопросы сохранены — тест можно продолжить позже.' : 'Berilgan javoblar saqlangan — testni keyin davom ettirish mumkin.'}
+          confirmLabel={isRu ? 'Выйти' : 'Chiqish'}
+          cancelLabel={isRu ? 'Остаться' : 'Qolish'}
+          onClose={() => setConfirmExit(false)}
+          onConfirm={() => { setConfirmExit(false); goBack(navigate) }}
+        />
+      )}
       <ConfirmDialog
         open={confirmFinish && !finished}
         title={isRu ? 'Завершить тест?' : 'Test yakunlansinmi?'}
@@ -846,21 +998,6 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
           text={dbExplanation}
           language={settings.language}
           onClose={() => setShowExplain(false)}
-          onOpenAi={() => { setShowExplain(false); setShowAiTutor(true) }}
-        />
-      )}
-      {showAiTutor && (
-        <AiTutorModal
-          sessionRef={{
-            sessionId: snapshot.sessionId,
-            position: question.position,
-            deliveryToken: question.deliveryToken,
-            expiresAt: question.expiresAt,
-          }}
-          selectedOptionId={snapshot.selected[question.position] ?? null}
-          isCorrect={snapshot.answers[question.position] === 'correct'}
-          language={settings.language}
-          onClose={() => setShowAiTutor(false)}
         />
       )}
     </div>

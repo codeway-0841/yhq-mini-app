@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
-import { Home, BookOpen, Camera, Swords, LayoutGrid } from 'lucide-react'
+import { Home, BookOpen, Swords, LayoutGrid } from 'lucide-react'
 import { useModalCount } from '../lib/navigation'
 import { useAppStore } from '../store/useAppStore'
 import { useT } from '../i18n'
@@ -15,16 +15,15 @@ export { isTabRootRoute, TAB_ROOT_PATHS } from '../config/route-chrome'
  *
  * Brilliant 1:1 uslubi:
  * - Pastki qismga yopishgan to'liq kenglikdagi navigatsiya paneli (edge-to-edge).
- * - Markazda Kamera (AI Yechish) joylashgan: 5 ta mutanosib bo'lim (2 chap + 1 markaz + 2 o'ng).
+ * - 4 ta asosiy bo'lim: Bosh, Testlar, Duel, Menyu.
  * - Faol bo'lim ikonasida Brilliant'ga xos yumshoq squircle/pill fon, qora/oq matn va qalin shrift.
  */
 interface NavItem {
   id: string
   path: string
-  labelKey: 'home' | 'testlarTitle' | 'snapSolveTitle' | 'duelTitle' | 'menuTitle'
+  labelKey: 'home' | 'testlarTitle' | 'duelTitle' | 'menuTitle'
   shortLabel: { uz: string; ru: string }
   icon: typeof Home
-  isCenter?: boolean
 }
 
 export default function IosDock() {
@@ -56,14 +55,6 @@ export default function IosDock() {
       icon: BookOpen,
     },
     {
-      id: 'ai-tutor',
-      path: '/ai-tutor',
-      labelKey: 'snapSolveTitle',
-      shortLabel: { uz: 'AI Yechish', ru: 'Решить AI' },
-      icon: Camera,
-      isCenter: true,
-    },
-    {
       id: 'octagon',
       path: '/octagon',
       labelKey: 'duelTitle',
@@ -81,11 +72,7 @@ export default function IosDock() {
 
   const handleNav = useCallback((item: NavItem) => {
     playSound('click')
-    if (item.isCenter) {
-      haptics.impact('medium')
-    } else {
-      haptics.selection()
-    }
+    haptics.selection()
     navigate(item.path)
   }, [navigate])
 
@@ -100,9 +87,8 @@ export default function IosDock() {
     >
       <nav
         role="navigation"
-        aria-label="Asosiy navigatsiya"
+        aria-label={lang === 'ru' ? 'Основная навигация' : 'Asosiy navigatsiya'}
         className="pointer-events-auto w-full bg-pcanvas pt-2.5 pb-[max(1.35rem,calc(var(--safe-bottom,0px)+0.65rem))] px-1 select-none"
-        style={{ backgroundColor: 'var(--p-canvas)' }}
       >
         <div className="mx-auto flex max-w-[480px] items-center justify-around">
           {navItems.map((item) => {
@@ -116,10 +102,10 @@ export default function IosDock() {
                 key={item.id}
                 type="button"
                 onClick={() => handleNav(item)}
-                aria-label={item.isCenter ? item.shortLabel[lang] : tt(item.labelKey)}
+                aria-label={tt(item.labelKey)}
                 aria-current={isActive ? 'page' : undefined}
                 title={tt(item.labelKey)}
-                className="group relative flex min-w-0 flex-1 flex-col items-center justify-center py-0.5 touch-manipulation transition-transform duration-150 active:scale-95 focus-visible:outline-none"
+                className="group relative flex min-w-0 flex-1 flex-col items-center justify-center py-0.5 touch-manipulation transition-opacity duration-150 active:opacity-75 focus-visible:outline-none"
               >
                 {/* Brilliant 1:1 nav pill: faqat faol tabda yumaloq pill fon, qolgan barchasi bir xil neytral */}
                 <span

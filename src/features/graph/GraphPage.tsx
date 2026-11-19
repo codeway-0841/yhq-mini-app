@@ -9,7 +9,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import {
-  Bookmark, Camera, Copy, FlaskConical, MessageSquareQuote,
+  Bookmark, Copy, FlaskConical,
   Redo2, RotateCcw, Table2, Undo2, Wand2,
 } from 'lucide-react'
 import GraphCanvas, { type GraphSeries, type TangentOverlay, type IntegralOverlay } from './components/GraphCanvas'
@@ -21,7 +21,6 @@ import SavedGraphsSheet from './components/SavedGraphsSheet'
 import AnalysisCard, { type AnalysisOption } from './components/AnalysisCard'
 import TableSheet from './components/TableSheet'
 import LabSheet from './components/LabSheet'
-import GraphAiSheet from './components/GraphAiSheet'
 import { useGraphStore, defaultRange } from './useGraphStore'
 import { curveColor } from './curve-colors'
 import {
@@ -38,7 +37,6 @@ import {
   linearRegression,
   type MarkerPoint,
 } from './lib/math'
-import { buildGraphChatContext } from './lib/chat-context'
 import type { GraphPreset } from '../../content/graph-presets'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
@@ -47,7 +45,6 @@ import { useT, t, type Lang } from '../../shared/i18n'
 import { track } from '../../shared/lib/analytics'
 import { useToast } from '../../shared/components/ToastContainer'
 import { haptics } from '../../platform/haptics'
-import { SocraticChatSheet } from '../ai-tutor'
 import { api } from '../../shared/api'
 import { GRAPH_MAX_EXPRESSIONS } from '../../../shared/contracts/graph'
 
@@ -121,9 +118,7 @@ export default function GraphPage() {
   const [savedOpen, setSavedOpen] = useState(false)
   const [tableOpen, setTableOpen] = useState(false)
   const [labOpen, setLabOpen] = useState(false)
-  const [aiOpen, setAiOpen] = useState(false)
   const [pickMode, setPickMode] = useState(false)
-  const [chatOpen, setChatOpen] = useState(false)
   const [activeId, setActiveId] = useState<string | null>(null)
   const [analysisId, setAnalysisId] = useState<string | null>(null)
   const [sharedTitle, setSharedTitle] = useState<string | null>(null)
@@ -132,7 +127,6 @@ export default function GraphPage() {
   const [anim, setAnim] = useState<Anim | null>(null)
 
   const inputEls = useRef(new Map<string, HTMLInputElement>())
-  const canvasElRef = useRef<HTMLCanvasElement | null>(null)
   const bootRef = useRef(false)
   const editingRef = useRef<string | null>(null)
   const animRef = useRef<Anim | null>(null)
@@ -213,8 +207,6 @@ export default function GraphPage() {
     ),
     [compiled],
   )
-
-  const hasParsed = useMemo(() => compiled.entries.some((e) => e.parsed && e.visible), [compiled])
 
   const analysisEntry = useMemo(
     () => validEntries.find((e) => e.id === analysisId) ?? validEntries[0] ?? null,
@@ -442,25 +434,6 @@ export default function GraphPage() {
 
   const readOnly = sharedTitle !== null
 
-  const chatContext = useMemo(
-    () => buildGraphChatContext({
-      expressions,
-      xVar,
-      vars: effVars,
-      language,
-      analysis: {
-        derivative: analysis.derivative,
-        tangent: analysis.tangent,
-        x0: effX0,
-        integral: analysis.integral,
-        a: analysis.a,
-        b: analysis.b,
-        rects: analysis.rects,
-      },
-    }),
-    [expressions, xVar, effVars, language, analysis, effX0],
-  )
-
   // Deep-link: ?e=<ifoda>&x=<o'zgaruvchi> yoki ?g=<share kod>
   useEffect(() => {
     if (bootRef.current) return
@@ -662,7 +635,6 @@ export default function GraphPage() {
               pointPick={pickMode}
               onPointPick={handlePointPick}
               secant={secantOverlay}
-              canvasRef={canvasElRef}
               onSize={handleCanvasSize}
               ariaLabel={`${tt('graphTitle')}: ${expressions.map((e) => e.expr).join(', ')}`}
             />
@@ -682,51 +654,29 @@ export default function GraphPage() {
           </div>
         </div>
 
-        {(hasParsed || points.length > 0) && (
-          <div className="mt-3 grid grid-cols-2 gap-2 lg:grid-cols-4">
-            {hasParsed && (
-              <button
-                type="button"
-                onClick={() => { setChatOpen(true); track('graph_ai_chat') }}
-                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-              >
-                <MessageSquareQuote size={16} strokeWidth={1.75} />
-                {tt('graphAiDiscuss')}
-              </button>
-            )}
-            {validEntries.length > 0 && (
-              <button
-                type="button"
-                onClick={() => setTableOpen(true)}
-                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-              >
-                <Table2 size={16} strokeWidth={1.75} />
-                {tt('graphTable')}
-              </button>
-            )}
+        <div className="mt-3 grid grid-cols-2 gap-2 lg:grid-cols-4">
+          {validEntries.length > 0 && (
             <button
               type="button"
-              onClick={() => setLabOpen(true)}
+              onClick={() => setTableOpen(true)}
               className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
             >
-              <FlaskConical size={16} strokeWidth={1.75} />
-              {tt('graphLab')}
-              {points.length > 0 && (
-                <span className="rounded-lg bg-psurface px-1.5 font-mono text-[11px] text-psubtle">{points.length}</span>
-              )}
+              <Table2 size={16} strokeWidth={1.75} />
+              {tt('graphTable')}
             </button>
-            {hasParsed && (
-              <button
-                type="button"
-                onClick={() => { setAiOpen(true); track('graph_ai_vision') }}
-                className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
-              >
-                <Camera size={16} strokeWidth={1.75} />
-                {tt('graphAiVision')}
-              </button>
+          )}
+          <button
+            type="button"
+            onClick={() => setLabOpen(true)}
+            className="flex h-11 items-center justify-center gap-2 rounded-2xl bg-psurface text-[13px] font-semibold text-pmuted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary"
+          >
+            <FlaskConical size={16} strokeWidth={1.75} />
+            {tt('graphLab')}
+            {points.length > 0 && (
+              <span className="rounded-lg bg-psurface px-1.5 font-mono text-[11px] text-psubtle">{points.length}</span>
             )}
-          </div>
-        )}
+          </button>
+        </div>
 
         {explicitVars.length > 1 && (
           <div className="mt-3 flex items-center gap-1.5 overflow-x-auto pb-0.5 [&::-webkit-scrollbar]:hidden" style={{ scrollbarWidth: 'none' }}>
@@ -897,20 +847,6 @@ export default function GraphPage() {
         onClear={() => { snapshot(); clearPoints() }}
         pickMode={pickMode}
         onPickMode={setPickMode}
-      />
-      <GraphAiSheet
-        open={aiOpen}
-        onClose={() => setAiOpen(false)}
-        language={language}
-        canvasRef={canvasElRef}
-        context={chatContext.questionText}
-        onPremium={() => navigate('/premium')}
-      />
-      <SocraticChatSheet
-        isOpen={chatOpen}
-        onClose={() => setChatOpen(false)}
-        context={chatContext}
-        initialPrompt={tt('graphAiPrompt')}
       />
     </div>
   )

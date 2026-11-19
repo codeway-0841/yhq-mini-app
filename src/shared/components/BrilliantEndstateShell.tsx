@@ -14,6 +14,7 @@ export interface BrilliantEndstateShellProps extends HTMLAttributes<HTMLDivEleme
   /** Ikkinchi (ixtiyoriy) tugma */
   secondaryLabel?: string
   onSecondaryClick?: () => void
+  secondaryVariant?: 'secondary' | 'ghost' | 'outline'
   /** Viewport foni modifikatori (masalan iridescent yoki streak radial glow) */
   viewportClassName?: string
   /** Sticky pastki panel orqasidagi foni */
@@ -40,6 +41,7 @@ export function BrilliantEndstateShell({
   primaryVariant = 'primary',
   secondaryLabel,
   onSecondaryClick,
+  secondaryVariant = 'secondary',
   viewportClassName,
   footerBgClassName,
   footerCaption,
@@ -107,10 +109,11 @@ export function BrilliantEndstateShell({
             {secondaryLabel && onSecondaryClick && (
               <Button
                 type="button"
-                variant="secondary"
-                size="lg"
+                variant={secondaryVariant}
+                size={secondaryVariant === 'ghost' ? 'default' : 'lg'}
                 block
                 onClick={onSecondaryClick}
+                className={secondaryVariant === 'ghost' ? 'text-[15.5px] font-bold text-pmuted hover:text-pfg' : undefined}
               >
                 {secondaryLabel}
               </Button>

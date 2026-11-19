@@ -44,4 +44,13 @@ describe('MarkdownView', () => {
     expect(document.querySelector('ol')).toBeTruthy()
     expect(screen.getAllByRole('listitem')).toHaveLength(2)
   })
+
+  it('iqtibos va paragraf Light/Dark mos text-pfg kontrast tokenidan foydalanadi', () => {
+    const { container } = render(<MarkdownView source={'Oddiy matn\n\n> буква ≠ звук.'} />)
+    const quote = screen.getByText(/буква ≠ звук/).closest('blockquote')!
+    expect(quote).toBeTruthy()
+    expect(quote.className).toContain('text-pfg')
+    expect(container.innerHTML).not.toContain('text-slate-200')
+    expect(container.innerHTML).not.toContain('purple-950')
+  })
 })

@@ -1,4 +1,5 @@
 import { useMemo } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { darslikTopicId } from '../../../shared/darslik-mastery'
 import { DARSLIK_BLOCKS, DARSLIK_PROGRESS_MODULE_OFFSET, getBlockOutline, getDarslikBlock } from '../../content/darslik-rustili'
@@ -28,6 +29,7 @@ export default function CourseMapPage({
   initialSectionIdx?: number
   onBackHome?: () => void
 } = {}) {
+  const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const readByUser = useLessonsStore((s) => s.readByUser)
@@ -77,8 +79,13 @@ export default function CourseMapPage({
               key={`${ctx.block.id}:${ctx.sectionIdx}`}
               topicId={darslikTopicId(ctx.block.id, ctx.sectionIdx)}
               title={ctx.section.title}
+              mode="practice"
               onReady={ctx.onPracticeReady}
               onClose={ctx.close}
+              onOpenPremium={() => {
+                ctx.close()
+                navigate('/premium')
+              }}
               onPassed={() => {
                 markRead(userId, DARSLIK_PROGRESS_MODULE_OFFSET + ctx.block.id, ctx.sectionIdx)
                 mastery.markPassed(darslikTopicId(ctx.block.id, ctx.sectionIdx))

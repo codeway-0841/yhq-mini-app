@@ -34,7 +34,6 @@ import analyticsRouter   from './modules/analytics/analytics.router'
 import dailyRouter       from './modules/daily/daily.router'
 import cronRouter        from './modules/cron/cron.router'
 import achievementsRouter from './modules/achievements/achievements.router'
-import tutorRouter        from './modules/tutor/tutor.router'
 import adminRouter        from './modules/admin/admin.router'
 import promoRouter        from './modules/promo/promo.router'
 import coinsRouter        from './modules/coins/coins.router'
@@ -81,10 +80,6 @@ export function createApp() {
   // Sertifikat PNG base64 (canvas.toDataURL) odatda 300KB'dan oshadi — umumiy
   // 300kb limit 413 qaytarardi (audit H-9). share/image bilan bir kategoriya.
   app.use('/api/certificate/send', express.json({ limit: '5mb' }))
-  // AI Tutor suratdan yechish (Snap & Solve) — siqilgan base64 rasm yuklanadi (~1-3MB)
-  app.use('/api/tutor/solve-photo', express.json({ limit: '6mb' }))
-  // AI Tutor grafik tahlili — canvas PNG base64 (grafik quruvchi)
-  app.use('/api/tutor/graph-analyze', express.json({ limit: '6mb' }))
   // LiveKit webhook — imzo xom body'dan tekshiriladi (live.router'da), shuning
   // uchun global json parser'dan OLDIN raw ushlanadi (req._body flag keyingi
   // parser'larni o'tkazib yuboradi — admin/questions pattern'i bilan bir xil).
@@ -196,7 +191,6 @@ export function createApp() {
   app.use('/api', analyticsRouter)
   app.use('/api', dailyRouter)
   app.use('/api', achievementsRouter)
-  app.use('/api', tutorRouter)
   app.use('/api', adminRouter)
   app.use('/api', promoRouter)
   app.use('/api', coinsRouter)

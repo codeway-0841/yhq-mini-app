@@ -171,6 +171,8 @@ describe('RussianDarslikPage — v2 pilot darsi', () => {
     expect(useLessonsStore.getState().byUser[uid]?.[moduleIdOf(1)]).toContain(0)
 
     fireEvent.click(within(result).getByRole('button', { name: 'Davom etish' }))
+    expect(await screen.findByText(/3 kunlik seriya/i)).toBeInTheDocument()
+    fireEvent.click(screen.getByTestId('lesson-result').querySelector('button:last-of-type') ?? screen.getAllByRole('button', { name: 'Davom etish' }).slice(-1)[0])
     await waitFor(() => expect(reader.textContent).toContain(`1-blok · 2/${getBlockOutline(1).length}`))
   }, 30_000)
 })

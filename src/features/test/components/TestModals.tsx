@@ -1,9 +1,8 @@
-import type { Question } from '../../../shared/api'
+import type { LeagueWeekly, Question } from '../../../shared/api'
 import { useT } from '../../../shared/i18n'
 import TestImageAnnotatorModal from './TestImageAnnotatorModal'
 import SettingsModal from '../../../shared/components/SettingsModal'
-import ResultsModal, { type QuestionResult } from '../ResultsModal'
-import AiTutorModal from './AiTutorModal'
+import ResultsModal, { type PracticeEndstateStreak, type QuestionResult } from '../ResultsModal'
 import AntiCheatModal from './AntiCheatModal'
 import ExamReviewModal, { type ExamReviewItem } from './ExamReviewModal'
 import { formatImageSrc } from '../hooks/useImagePreload'
@@ -23,6 +22,11 @@ interface TestModalsProps {
   earnedXp?:           number
   earnedCoins?:        number
   examPresetId?:       string | null
+  endstateChain?:      boolean
+  endstateStreak?:     PracticeEndstateStreak | null
+  weeklyLeague?:       LeagueWeekly | null
+  preLessonScore?:     number | null
+  onOpenPremium?:      () => void
 
   // Settings
   showSettings:        boolean
@@ -38,16 +42,10 @@ interface TestModalsProps {
   activeStrike:        number | null
   onDismissStrike:     () => void
 
-  // AI Tutor
-  showAiTutor:         boolean
-  onCloseAiTutor:      () => void
-  currentQuestion?:    Question
-  selectedOption:      string | null
-  isAnswerCorrect:     boolean
-
   // Image Zoom
   zoomed:              boolean
   onCloseZoom:         () => void
+  currentQuestion?:    Question
   currentIndex:        number
   sessionKey?:         string
 }
@@ -66,6 +64,11 @@ export default function TestModals({
   earnedXp,
   earnedCoins,
   examPresetId,
+  endstateChain,
+  endstateStreak,
+  weeklyLeague,
+  preLessonScore,
+  onOpenPremium,
 
   showSettings,
   onCloseSettings,
@@ -78,14 +81,9 @@ export default function TestModals({
   activeStrike,
   onDismissStrike,
 
-  showAiTutor,
-  onCloseAiTutor,
-  currentQuestion,
-  selectedOption,
-  isAnswerCorrect,
-
   zoomed,
   onCloseZoom,
+  currentQuestion,
   currentIndex,
   sessionKey = 'default',
 }: TestModalsProps) {
@@ -106,6 +104,11 @@ export default function TestModals({
           earnedXp={earnedXp}
           earnedCoins={earnedCoins}
           examPresetId={examPresetId}
+          endstateChain={endstateChain}
+          endstateStreak={endstateStreak}
+          weeklyLeague={weeklyLeague}
+          preLessonScore={preLessonScore}
+          onOpenPremium={onOpenPremium}
         />
       )}
 
@@ -124,16 +127,6 @@ export default function TestModals({
           strike={activeStrike}
           language={language}
           onDismiss={onDismissStrike}
-        />
-      )}
-
-      {showAiTutor && currentQuestion && selectedOption && (
-        <AiTutorModal
-          questionId={currentQuestion.id}
-          selectedOptionId={selectedOption}
-          isCorrect={isAnswerCorrect}
-          onClose={onCloseAiTutor}
-          language={language}
         />
       )}
 
