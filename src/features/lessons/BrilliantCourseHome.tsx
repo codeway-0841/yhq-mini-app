@@ -43,6 +43,14 @@ interface BrilliantCourseHomeProps {
   stageLabelRu?: string
   startLabelUz?: string
   startLabelRu?: string
+  /** Nuqta (dot) tugmalari uchun aria-label; default — daraja sarlavhasi */
+  getDotLabel?: (level: BrilliantCourseLevel, ru: boolean) => string
+  /** Nuqtalar konteyneri aria-label (default — karusel yorlig'i bilan bir xil) */
+  dotsLabelUz?: string
+  dotsLabelRu?: string
+  /** Sarlavha-tugma aria-label (default — daraja sarlavhasi) */
+  titleButtonLabelUz?: string
+  titleButtonLabelRu?: string
 }
 
 /**
@@ -67,6 +75,11 @@ export function BrilliantCourseHome({
   stageLabelRu = 'Выбор блока',
   startLabelUz = 'Boshlash',
   startLabelRu = 'Начать',
+  getDotLabel,
+  dotsLabelUz,
+  dotsLabelRu,
+  titleButtonLabelUz,
+  titleButtonLabelRu,
 }: BrilliantCourseHomeProps) {
   const sheenId1 = useId()
   const sheenId2 = useId()
@@ -249,7 +262,7 @@ export function BrilliantCourseHome({
               tabIndex={0}
               onClick={(event) => start(event.currentTarget)}
               onKeyDown={(e) => { if (e.key === 'Enter') start(e.currentTarget) }}
-              aria-label={ru ? level.titleRu : level.titleUz}
+              aria-label={ru ? (titleButtonLabelRu ?? level.titleRu) : (titleButtonLabelUz ?? level.titleUz)}
             >
               <h1>{ru ? level.titleRu : level.titleUz}</h1>
               <div className="rus-home-level">{ru ? level.levelLabelRu : level.levelLabelUz}</div>
@@ -306,14 +319,14 @@ export function BrilliantCourseHome({
             </div>
 
             {levels.length > 1 && (
-              <div className="rus-home-dots" aria-label={ru ? stageLabelRu : stageLabelUz}>
+              <div className="rus-home-dots" aria-label={ru ? (dotsLabelRu ?? stageLabelRu) : (dotsLabelUz ?? stageLabelUz)}>
                 <div className="rus-home-dots-window" style={levels.length < VISIBLE_DOTS ? { width: `${levels.length * 15}px` } : undefined}>
                   <div className="rus-home-dots-track" style={{ '--dot-shift': dotShift } as CSSProperties}>
                     {levels.map((item, i) => (
                       <button
                         type="button"
                         key={item.id}
-                        aria-label={ru ? item.titleRu : item.titleUz}
+                        aria-label={getDotLabel ? getDotLabel(item, ru) : (ru ? item.titleRu : item.titleUz)}
                         aria-current={i === index ? 'true' : undefined}
                         onClick={() => change(i)}
                       >

@@ -1090,7 +1090,7 @@ export function ProfileDetailsView({
         {/* ── DUAL-SLIDE HORIZONTAL CONTAINER (0 qupollik, to'liq silliq) ── */}
         <div className="w-full max-w-lg mx-auto overflow-hidden mt-2">
           <div
-            className="flex w-[200%] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]"
+            className="flex w-[200%] transition-transform duration-300 [transition-timing-function:cubic-bezier(0.16,1,0.3,1)]"
             style={{
               transform: activeTab === 'info' ? 'translateX(0%)' : 'translateX(-50%)',
             }}

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
-  CheckCircle2, ChevronDown, ChevronLeft, Dumbbell, Flag, Lock, RefreshCw, RotateCcw, X, XCircle, Zap,
+  CheckCircle2, ChevronDown, ChevronLeft, Dumbbell, Flag, Lock, RefreshCw, RotateCcw, XCircle,
 } from 'lucide-react'
 import { Button } from '../../shared/components/ui/button'
 import ModalShell from '../../shared/components/ModalShell'
@@ -29,6 +29,8 @@ import { BrilliantEndstateShell } from '../../shared/components/BrilliantEndstat
 import {
   BrilliantConfettiBurstIcon,
   BrilliantMissedTargetIcon,
+  BrilliantPracticeHeader,
+  type BrilliantPracticeDot,
 } from '../../shared/components/BrilliantPracticeChrome'
 import {
   BrilliantChargeStage,
@@ -40,7 +42,6 @@ import {
   splitLessonPhases,
 } from '../../shared/components/BrilliantCompletionContent'
 import LessonExercise from './LessonExercise'
-import './rus-lesson-feedback.css'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import {
   DARSLIK_LESSON_XP_MAX,
@@ -559,48 +560,49 @@ export default function LessonRunner({
   const practiceDotCount = Math.min(3, Math.max(1, total))
   const currentPracticeDot = practiceDotForIndex(index, total, practiceDotCount)
 
+  const headerDots: BrilliantPracticeDot[] = isPractice
+    ? Array.from({ length: practiceDotCount }, (_, dot) => {
+        const indices = Array.from({ length: total }, (__, qIdx) => qIdx).filter(
+          (qIdx) => practiceDotForIndex(qIdx, total, practiceDotCount) === dot,
+        )
+        const hasWrong = indices.some((qIdx) => stepOutcomes[qIdx] === 'wrong')
+        const allCorrect = indices.length > 0 && indices.every((qIdx) => stepOutcomes[qIdx] === 'correct')
+        return {
+          status: hasWrong ? 'wrong' : allCorrect ? 'correct' : undefined,
+          current: currentPracticeDot === dot,
+        }
+      })
+    : (phase2Count > 0 ? Array.from({ length: phase2Count }, (_, d) => d) : [0, 1, 2]).map((dot) => ({
+        status: phase2Count > 0 ? stepOutcomes[phase1Count + dot] : (combo >= dot + 1 ? 'correct' : undefined),
+        current: phase2Count > 0 && isPhase2 && dotIdx === dot,
+      }))
+
   const header = lesson && check && !result ? (
-    <header className="rus-lesson-header pt-[calc(0.625rem+var(--safe-top,0px))]">
-      <button type="button" onClick={requestClose} aria-label={tt('rusDarslikQuizClose')} className="rus-lesson-close"><X size={24} /></button>
-      {!isPractice && (
-        <div className="rus-lesson-progress" role="progressbar" aria-label={tt('rusDarslikLessonProgress')}
-          aria-valuemin={0} aria-valuemax={total} aria-valuenow={index + (phase === 'feedback' ? 1 : 0)}>
-          <span style={{ width: `${Math.max(4, phase1ProgressPct)}%` }} />
-        </div>
+    <BrilliantPracticeHeader
+      currentIndex={index}
+      total={total}
+      answeredCount={Object.keys(stepOutcomes).length}
+      outcomes={stepOutcomes}
+      onClose={requestClose}
+      closeLabel={tt('rusDarslikQuizClose')}
+      language={lang}
+      hideProgressBar={isPractice}
+      centeredDots={isPractice}
+      dots={headerDots}
+      dotsClassName={cn('rus-lesson-dots', isPractice && 'rus-practice-dots')}
+      progressClassName="rus-lesson-progress"
+      progressLabel={tt('rusDarslikLessonProgress')}
+      progressValue={index + (phase === 'feedback' ? 1 : 0)}
+      progressMax={total}
+      progressPct={Math.max(4, phase1ProgressPct)}
+      streakHot={(isCheckpointStep && (!isPractice || index > 0 || phase === 'feedback')) || combo >= 2}
+      srStatus={(
+        <>
+          <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
+          {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
+        </>
       )}
-      <span className="sr-only">{Math.min(index + 1, total)}/{total}</span>
-      {combo >= 2 && <span className="sr-only" data-testid="lesson-combo">{tt('rusDarslikLessonCombo').replace('{count}', String(combo))}</span>}
-      <span
-        className={cn('rus-lesson-dots', isPractice && 'rus-practice-dots')}
-        aria-hidden="true"
-        data-phase2={isCheckpointStep ? 'true' : undefined}
-      >
-        {isPractice
-          ? Array.from({ length: practiceDotCount }, (_, dot) => {
-              const indices = Array.from({ length: total }, (__, qIdx) => qIdx).filter(
-                (qIdx) => practiceDotForIndex(qIdx, total, practiceDotCount) === dot,
-              )
-              const hasWrong = indices.some((qIdx) => stepOutcomes[qIdx] === 'wrong')
-              const allCorrect = indices.length > 0 && indices.every((qIdx) => stepOutcomes[qIdx] === 'correct')
-              const status = hasWrong ? 'wrong' : allCorrect ? 'correct' : undefined
-              return (
-                <i
-                  key={dot}
-                  data-status={status}
-                  data-current={currentPracticeDot === dot ? 'true' : undefined}
-                />
-              )
-            })
-          : (phase2Count > 0 ? Array.from({ length: phase2Count }, (_, d) => d) : [0, 1, 2]).map((dot) => (
-              <i
-                key={dot}
-                data-status={phase2Count > 0 ? stepOutcomes[phase1Count + dot] : (combo >= dot + 1 ? 'correct' : undefined)}
-                data-current={phase2Count > 0 && isPhase2 && dotIdx === dot ? 'true' : undefined}
-              />
-            ))}
-      </span>
-      <Zap size={16} strokeWidth={2.2} className="rus-lesson-lightning" data-hot={isCheckpointStep && (!isPractice || index > 0 || phase === 'feedback') || combo >= 2 ? 'true' : undefined} aria-hidden="true" />
-    </header>
+    />
   ) : (
     <div className="bg-pcanvas px-3.5 py-2.5 pt-[calc(0.625rem+var(--safe-top,0px))]">
       <div className="mx-auto flex w-full max-w-[520px] items-center gap-3">
@@ -1047,7 +1049,7 @@ export default function LessonRunner({
 
     return (
       <div
-        className="rus-lesson-runner fixed inset-0 z-[60] flex flex-col bg-pcanvas"
+        className="brilliant-practice-runner fixed inset-0 z-[60] flex flex-col bg-pcanvas"
         data-testid="lesson-runner"
         data-format="lesson"
         data-mode={mode}
@@ -1071,7 +1073,7 @@ export default function LessonRunner({
               </p>
             )}
 
-            <div key={current.id} className="rus-lesson-question-enter">
+            <div key={current.id} className="brilliant-practice-question-enter">
               <h3
                 id="lesson-runner-title"
                 ref={headingRef}
@@ -1130,7 +1132,7 @@ export default function LessonRunner({
         </div>
 
         <div
-          className="rus-lesson-dock rounded-t-3xl px-4 py-4 pb-[calc(1.125rem+var(--safe-bottom,0px))]"
+          className="brilliant-practice-dock rounded-t-3xl px-4 py-4 pb-[calc(1.125rem+var(--safe-bottom,0px))]"
           data-state={
             phase !== 'feedback' || !feedback
               ? 'exercise'
@@ -1145,7 +1147,7 @@ export default function LessonRunner({
         >
           <div className="relative mx-auto w-full max-w-[460px]">
             {isPhase1WrongDock && (
-              <div className="rus-koji-overhang" aria-hidden="true">
+              <div className="brilliant-practice-koji-overhang" aria-hidden="true">
                 <PathMascot variant="avatar" animation="oops" />
               </div>
             )}
@@ -1159,7 +1161,7 @@ export default function LessonRunner({
                 role="status"
                 aria-live="polite"
                 className={cn(
-                  'rus-feedback-pop mb-4 flex items-start justify-between gap-3',
+                  'brilliant-practice-feedback-pop mb-4 flex items-start justify-between gap-3',
                   isPhase1WrongDock && 'pt-3',
                 )}
               >
@@ -1193,7 +1195,7 @@ export default function LessonRunner({
                       <Button
                         variant="secondary"
                         onClick={() => { playSound('hint'); setShowExplanation(true) }}
-                        className="rus-lesson-secondary shrink-0 rounded-full px-5"
+                        className="brilliant-practice-secondary shrink-0 rounded-full px-5"
                       >
                         {tt('rusDarslikWhy')}
                       </Button>
@@ -1219,7 +1221,7 @@ export default function LessonRunner({
                         <Button
                           variant="secondary"
                           onClick={() => { playSound('hint'); setShowExplanation(true) }}
-                          className="rus-lesson-secondary shrink-0 rounded-full px-5"
+                          className="brilliant-practice-secondary shrink-0 rounded-full px-5"
                         >
                           {tt('rusDarslikWhy')}
                         </Button>
@@ -1241,7 +1243,7 @@ export default function LessonRunner({
                   size="lg"
                   block
                   sheen={false}
-                  className="rus-lesson-check flex-1"
+                  className="brilliant-practice-check flex-1"
                   onClick={() => { void checkAnswer() }}
                   disabled={!currentAnswered || checking}
                 >
@@ -1254,14 +1256,14 @@ export default function LessonRunner({
                   variant="secondary"
                   size="lg"
                   onClick={() => { playSound('hint'); setRevealed(true) }}
-                  className="rus-lesson-secondary min-w-0 flex-[0.44] rounded-full"
+                  className="brilliant-practice-secondary min-w-0 flex-[0.44] rounded-full"
                 >
                   {tt('rusDarslikSeeAnswer')}
                 </Button>
                 <Button
                   size="lg"
                   sheen={false}
-                  className="rus-lesson-action min-w-0 flex-[0.56]"
+                  className="brilliant-practice-action min-w-0 flex-[0.56]"
                   onClick={() => {
                     playSound('skip')
                     setAnswers(previous => ({ ...previous, [current.id]: answerOrEmpty(current) }))
@@ -1278,7 +1280,7 @@ export default function LessonRunner({
                   variant="secondary"
                   size="lg"
                   onClick={() => { playSound('hint'); setShowExplanation(true) }}
-                  className="rus-lesson-secondary min-w-0 flex-[0.36] rounded-full"
+                  className="brilliant-practice-secondary min-w-0 flex-[0.36] rounded-full"
                 >
                   {tt('rusDarslikWhy')}
                 </Button>
@@ -1288,7 +1290,7 @@ export default function LessonRunner({
                   sheen={false}
                   onClick={() => { playSound('continue'); continueLesson() }}
                   disabled={submitting}
-                  className="rus-lesson-action min-w-0 flex-[0.64]"
+                  className="brilliant-practice-action min-w-0 flex-[0.64]"
                 >
                   {continueLabel}
                 </Button>
@@ -1299,7 +1301,7 @@ export default function LessonRunner({
                   variant="secondary"
                   size="lg"
                   onClick={() => { playSound('hint'); setShowExplanation(true) }}
-                  className="rus-lesson-secondary min-w-0 flex-[0.34] rounded-full"
+                  className="brilliant-practice-secondary min-w-0 flex-[0.34] rounded-full"
                 >
                   {tt('rusDarslikWhy')}
                 </Button>
@@ -1309,7 +1311,7 @@ export default function LessonRunner({
                   sheen={false}
                   onClick={() => { playSound('continue'); continueLesson() }}
                   disabled={submitting}
-                  className="rus-lesson-action min-w-0 flex-[0.66]"
+                  className="brilliant-practice-action min-w-0 flex-[0.66]"
                 >
                   {continueLabel}
                 </Button>
@@ -1327,7 +1329,7 @@ export default function LessonRunner({
                   sheen={false}
                   onClick={() => { playSound('continue'); continueLesson() }}
                   disabled={submitting}
-                  className="rus-lesson-action flex-1"
+                  className="brilliant-practice-action flex-1"
                 >
                   {continueLabel}
                 </Button>

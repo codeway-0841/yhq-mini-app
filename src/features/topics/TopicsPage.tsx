@@ -661,7 +661,7 @@ function BrilliantCourseSection({
                         <div
                           className="br-card-progress-bar"
                           style={{
-                            width: isDone ? '100%' : item.progressPct > 0 ? `${item.progressPct}%` : '5px',
+                            transform: `scaleX(${isDone ? 1 : item.progressPct > 0 ? Math.min(1, item.progressPct / 100) : 0.04})`,
                             background: isDone ? 'var(--br-green)' : 'var(--br-accent)',
                           }}
                         />

@@ -467,11 +467,22 @@ body[data-theme='dark'] .br-card-progress-track {
 }
 
 .br-card-progress-bar {
+  width: 100%;
   height: 100%;
-  min-width: 5px;
   border-radius: 999px;
   background-color: var(--br-accent);
-  transition: width 0.3s ease;
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+body[data-no-animation='true'] .br-card-progress-bar {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .br-card-progress-bar {
+    transition: none;
+  }
 }
 
 /* Desktop optimization for larger screens */

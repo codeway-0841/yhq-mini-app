@@ -86,11 +86,11 @@ export default function LessonLaunch({
       position="center"
       zIndex={zIndex}
       labelId={titleId}
-      backdropClassName="bg-pcanvas transition-opacity duration-[240ms]"
+      backdropClassName="bg-pcanvas transition-opacity [transition-duration:240ms]"
       className="lesson-launch-overlay !p-0"
     >
       <div
-        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity duration-[240ms] ease-out animate-in fade-in duration-75 ${
+        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity [transition-duration:240ms] ease-out animate-in fade-in duration-75 ${
           fading ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
         style={{

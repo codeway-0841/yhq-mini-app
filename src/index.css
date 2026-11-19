@@ -840,13 +840,13 @@ body[data-theme='light'] .ios-glass {
 
   --p-fg:          #ffffff; --p-fg-rgb: 255 255 255;   /* Primary text */
   --p-muted:       #a1a1a1; --p-muted-rgb: 161 161 161;   /* Secondary text (Brilliant 1:1) */
-  --p-subtle:      #777777;   /* Tertiary text (Brilliant 1:1) */
+  --p-subtle:      #8a8a8a;   /* Tertiary text (WCAG AA >= 4.5 on #1e1e1e) */
   --p-disabled:    #575b66;   /* Disabled text */
   --p-link:        #456dff;   /* Link (Brilliant dark blue) */
 
   /* Aksent — Brilliant Blue (data-accent bilan almashadi) */
-  --p-primary:     #456dff;
-  --p-primary-rgb: 69 109 255;
+  --p-primary:     #3557ff;
+  --p-primary-rgb: 53 87 255;
   --p-on-primary:  #ffffff; --p-on-primary-rgb: 255 255 255;
   --p-glow:        transparent;   /* v3: glow tizimdan chiqarildi */
 

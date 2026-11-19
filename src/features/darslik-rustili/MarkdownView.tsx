@@ -356,7 +356,7 @@ function InteractiveQuizBlock({ questions }: { questions: QuizQuestion[] }) {
                       disabled={isAnswered}
                       onClick={() => handleSelect(qIdx, optIdx, q.a)}
                       className={cn(
-                        'flex min-h-[44px] cursor-pointer items-center justify-between gap-2.5 rounded-2xl px-3.5 py-2.5 text-left text-[13.5px] transition-all disabled:cursor-default',
+                        'flex min-h-[44px] cursor-pointer items-center justify-between gap-2.5 rounded-2xl px-3.5 py-2.5 text-left text-[13.5px] transition-colors duration-150 disabled:cursor-default',
                         btnStyle,
                       )}
                     >

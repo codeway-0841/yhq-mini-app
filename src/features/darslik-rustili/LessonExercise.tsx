@@ -51,7 +51,7 @@ export default function LessonExercise({
               onClick={() => onSpeak?.(exercise.audioText)}
               aria-label={tt('rusDarslikLessonListen')}
               className={cn(
-                'grid size-16 shrink-0 cursor-pointer place-items-center rounded-2xl bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-all active:translate-y-[2px] active:shadow-[0_2px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] disabled:cursor-not-allowed disabled:opacity-50',
+                'grid size-16 shrink-0 cursor-pointer place-items-center rounded-2xl bg-pprimary text-ponprimary shadow-[0_4px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-[transform,box-shadow,opacity] duration-150 active:translate-y-[2px] active:shadow-[0_2px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] disabled:cursor-not-allowed disabled:opacity-50',
                 speaking && 'ring-4 ring-[rgb(var(--p-primary-rgb)/0.24)]',
               )}
             >
@@ -63,7 +63,7 @@ export default function LessonExercise({
                   <span
                     key={idx}
                     className={cn(
-                      'w-1 rounded-full transition-all duration-300',
+                      'w-1 rounded-full transition-[height,background-color] duration-300',
                       speaking ? 'animate-pulse bg-pprimary' : 'bg-[rgb(var(--p-primary-rgb)/0.28)]',
                     )}
                     style={{ height: speaking ? `${h}px` : `${Math.max(8, Math.round(h * 0.55))}px` }}
@@ -158,7 +158,7 @@ export default function LessonExercise({
             autoCapitalize="off"
             spellCheck={false}
             enterKeyHint="done"
-            className="w-full rounded-2xl bg-psurface px-4 py-3.5 text-[16px] font-semibold text-pfg outline-none ring-2 ring-transparent transition-all placeholder:font-normal placeholder:text-psubtle focus:bg-pcanvas focus:ring-pprimary disabled:opacity-70"
+            className="w-full rounded-2xl bg-psurface px-4 py-3.5 text-[16px] font-semibold text-pfg outline-none ring-2 ring-transparent transition-[background-color,box-shadow] duration-150 placeholder:font-normal placeholder:text-psubtle focus:bg-pcanvas focus:ring-pprimary disabled:opacity-70"
           />
         </div>
         {!locked && !isNumericPrompt && (
@@ -173,7 +173,7 @@ export default function LessonExercise({
                   type="button"
                   tabIndex={-1}
                   onClick={() => onChange(text + char)}
-                  className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-[13.5px] font-bold text-pfg shadow-[0_2px_0_var(--p-line)] transition-all active:translate-y-[1px] active:shadow-none"
+                  className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-[13.5px] font-bold text-pfg shadow-[0_2px_0_var(--p-line)] transition-[transform,box-shadow] duration-150 active:translate-y-[1px] active:shadow-none"
                 >
                   {char}
                 </button>
@@ -227,7 +227,7 @@ export default function LessonExercise({
               disabled={locked}
               onClick={() => onChange(chosen.filter((_, itemIndex) => itemIndex !== index))}
               aria-label={tt('rusDarslikLessonRemoveToken').replace('{token}', token)}
-              className="flex cursor-pointer items-center rounded-xl bg-pprimary px-3 py-2 text-[14px] font-bold text-ponprimary shadow-[0_3px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-all active:translate-y-[1px] active:shadow-none disabled:opacity-70"
+              className="flex cursor-pointer items-center rounded-xl bg-pprimary px-3 py-2 text-[14px] font-bold text-ponprimary shadow-[0_3px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-[transform,box-shadow,opacity] duration-150 active:translate-y-[1px] active:shadow-none disabled:opacity-70"
             >
               {token}
             </button>

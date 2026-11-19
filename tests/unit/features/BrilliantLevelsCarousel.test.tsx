@@ -38,7 +38,7 @@ describe('BrilliantLevelsCarousel primitives', () => {
   it('renders 3D isometric lesson row icons for done, current, and upcoming states', () => {
     for (const state of ['done', 'current', 'upcoming'] as const) {
       const { container, unmount } = render(<BrilliantLessonRowIcon state={state} />)
-      expect(container.querySelector('img, svg')).toBeInTheDocument()
+      expect(container.querySelector('img, svg, canvas')).toBeInTheDocument()
       unmount()
     }
   })

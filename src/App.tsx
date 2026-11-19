@@ -131,7 +131,7 @@ const routeChunkPrefetchers = [
   // 1-to'lqin (Core tab-root va birlamchi oqimlar — Data Saver / 2G da faqat shular tortiladi):
   testlarChunk, octagonChunk, modesChunk, testPageChunk, profilChunk, biletlarChunk,
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
-  topicsChunk, darslikChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
+  topicsChunk, darslikChunk, lessonTransitionHostChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
   streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, flashcardsChunk,
   formulasChunk, searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   interactiveLessonsChunk, reviewsChunk,

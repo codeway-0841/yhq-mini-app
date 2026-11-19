@@ -9,15 +9,25 @@ import { useAppStore } from '../../../src/shared/store/useAppStore'
 import { api } from '../../../src/shared/api'
 
 vi.mock('../../../src/features/darslik-rustili/CourseMapPage', () => ({ default: ({ initialBlockId, onBackHome }: { initialBlockId: number; onBackHome: () => void }) => <div><span>map {initialBlockId}</span><button onClick={onBackHome}>back to blocks</button></div> }))
-vi.mock('../../../src/features/lessons', () => ({
+vi.mock('../../../src/features/lessons/BrilliantLevelsCarousel', async (importOriginal) => ({
+  ...await importOriginal<typeof import('../../../src/features/lessons/BrilliantLevelsCarousel')>(),
   BrilliantHeroIllustration: () => <span />,
   BrilliantLessonRowIcon: ({ state }: { state: string }) => <span data-testid={`node-${state}`} />,
-  DarslikTopPills: () => <div className="rus-home-status" />,
   getBrilliantTheme: () => ({ accent: '#3557ff', dotColor: '#3557ff', buttonBg: '#3557ff', buttonText: '#fff', buttonShadow: '#223', checkBg: '#839cff' }),
+}))
+vi.mock('../../../src/features/lessons/DarslikTopPills', async (importOriginal) => ({
+  ...await importOriginal<typeof import('../../../src/features/lessons/DarslikTopPills')>(),
+  DarslikTopPills: () => <div className="rus-home-status" />,
+}))
+vi.mock('../../../src/features/lessons/LessonLaunch', async (importOriginal) => ({
+  ...await importOriginal<typeof import('../../../src/features/lessons/LessonLaunch')>(),
+  default: () => null,
   lessonLaunchOrigin: () => ({ x: 0, y: 0, size: 44, sink: 36 }),
+}))
+vi.mock('../../../src/features/lessons/lesson-transition', async (importOriginal) => ({
+  ...await importOriginal<typeof import('../../../src/features/lessons/lesson-transition')>(),
   preloadBrilliantTransitionAssets: () => {},
   startLessonTransition: () => false,
-  LessonLaunch: () => null,
 }))
 
 beforeEach(() => {
@@ -69,7 +79,7 @@ describe('Russian course home', () => {
     document.body.dataset.theme = 'dark'
     const view = render(<MemoryRouter initialEntries={['/darslik/rus-tili']}><RussianCourseHome /></MemoryRouter>)
     await waitFor(() => expect(screen.getByRole('button', { name: 'Boshlash' })).toBeEnabled())
-    expect(document.body.style.backgroundColor).toBe('rgb(17, 17, 17)')
+    expect(document.body.style.backgroundColor).toBe('rgb(20, 20, 20)')
     await act(async () => {
       document.body.dataset.theme = 'light'
       await Promise.resolve()

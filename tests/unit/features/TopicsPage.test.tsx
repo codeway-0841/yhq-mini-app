@@ -184,11 +184,11 @@ describe('TopicsPage Brilliant parity & multi-subject routing', () => {
     const tracks = firstBlock.querySelectorAll('.br-card-progress-track')
     const bars = firstBlock.querySelectorAll('.br-card-progress-bar')
 
-    // 1-blokda barcha mavzularda track ko'rinadi (tugallangan 100%, o'qilgan 35%, keyingilarida 5px nuqta)
+    // 1-blokda barcha mavzularda track ko'rinadi (tugallangan 100%, o'qilgan 35%, keyingilarida boshlang'ich nuqta)
     expect(tracks.length).toBeGreaterThan(2)
-    expect((bars[0] as HTMLElement).style.width).toBe('100%')
-    expect((bars[1] as HTMLElement).style.width).toBe('35%')
-    expect((bars[2] as HTMLElement).style.width).toBe('5px')
+    expect((bars[0] as HTMLElement).style.transform).toBe('scaleX(1)')
+    expect((bars[1] as HTMLElement).style.transform).toBe('scaleX(0.35)')
+    expect((bars[2] as HTMLElement).style.transform).toBe('scaleX(0.04)')
   })
 
   it('rus adabiyot: real store mastery bilan ishlaydi va &section= bilan xaritasiga o\'tadi', () => {

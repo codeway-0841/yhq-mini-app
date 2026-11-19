@@ -28,6 +28,11 @@ export function BrilliantConfettiBurstIcon() {
   )
 }
 
+export interface BrilliantPracticeDot {
+  status?: 'correct' | 'wrong'
+  current?: boolean
+}
+
 export interface BrilliantPracticeHeaderProps {
   currentIndex: number
   total: number
@@ -37,10 +42,21 @@ export interface BrilliantPracticeHeaderProps {
   closeLabel: string
   language: 'uz' | 'ru'
   devAction?: ReactNode
+  hideProgressBar?: boolean
+  centeredDots?: boolean
+  dots?: BrilliantPracticeDot[]
+  dotsClassName?: string
+  progressClassName?: string
+  progressLabel?: string
+  progressValue?: number
+  progressMax?: number
+  progressPct?: number
+  streakHot?: boolean
+  srStatus?: ReactNode
 }
 
 /**
- * Brilliant 1:1 2-fazali mashq tepasi: faqat 3 toza element — X | 11px yashil bar + checkpoint nuqtalari | ⚡.
+ * Brilliant 1:1 2-fazali mashq va dars tepasi: faqat 3 toza element — X | 11px yashil bar + checkpoint nuqtalari | ⚡.
  */
 export function BrilliantPracticeHeader({
   currentIndex,
@@ -51,14 +67,34 @@ export function BrilliantPracticeHeader({
   closeLabel,
   language,
   devAction,
+  hideProgressBar = false,
+  centeredDots = false,
+  dots,
+  dotsClassName,
+  progressClassName,
+  progressLabel,
+  progressValue,
+  progressMax,
+  progressPct,
+  streakHot: streakHotOverride,
+  srStatus,
 }: BrilliantPracticeHeaderProps) {
   const isRu = language === 'ru'
   const safeTotal = Math.max(1, total)
   const { phase1Count, phase2Count } = splitLessonPhases(safeTotal, true)
   const isPhase2 = phase2Count > 0 && currentIndex >= phase1Count
   const phase1Completed = Math.min(currentIndex + (outcomes[currentIndex] ? 1 : 0), phase1Count)
-  const phase1Pct = phase1Count > 0 ? Math.round((phase1Completed / phase1Count) * 100) : 100
-  const streakHot = answeredCount >= safeTotal || isPhase2
+  const computedPct = phase1Count > 0 ? Math.round((phase1Completed / phase1Count) * 100) : 100
+  const barPct = progressPct ?? Math.max(phase1Completed > 0 ? computedPct : 6, 6)
+  const streakHot = streakHotOverride ?? (answeredCount >= safeTotal || isPhase2)
+  const resolvedDots: BrilliantPracticeDot[] | null = dots
+    ? dots
+    : phase2Count > 0
+      ? Array.from({ length: phase2Count }, (_, idx) => {
+          const pos = phase1Count + idx
+          return { status: outcomes[pos], current: currentIndex === pos }
+        })
+      : null
 
   return (
     <header className="sticky top-0 z-30 -mt-[var(--safe-top-body,0px)] lg:mt-0 bg-pcanvas pt-[var(--safe-top,0px)]">
@@ -73,30 +109,34 @@ export function BrilliantPracticeHeader({
         </button>
 
         <div className="flex min-w-0 flex-1 items-center gap-2.5">
-          <div
-            className="brilliant-practice-progress"
-            role="progressbar"
-            aria-label={isRu ? 'Прогресс практики' : 'Mashq progressi'}
-            aria-valuemin={1}
-            aria-valuemax={safeTotal}
-            aria-valuenow={Math.min(currentIndex + 1, safeTotal)}
-          >
-            <span style={{ width: `${Math.max(phase1Completed > 0 ? phase1Pct : 6, 6)}%` }} />
-          </div>
+          {!hideProgressBar && (
+            <div
+              className={cn('brilliant-practice-progress', progressClassName)}
+              role="progressbar"
+              aria-label={progressLabel ?? (isRu ? 'Прогресс практики' : 'Mashq progressi')}
+              aria-valuemin={progressValue !== undefined ? 0 : 1}
+              aria-valuemax={progressMax ?? safeTotal}
+              aria-valuenow={progressValue ?? Math.min(currentIndex + 1, safeTotal)}
+            >
+              <span style={{ transform: `scaleX(${Math.max(0, Math.min(1, barPct / 100))})` }} />
+            </div>
+          )}
 
-          {phase2Count > 0 && (
-            <div className="brilliant-practice-dots" aria-hidden="true">
-              {Array.from({ length: phase2Count }).map((_, idx) => {
-                const pos = phase1Count + idx
-                const status = outcomes[pos]
-                return (
-                  <i
-                    key={pos}
-                    data-current={currentIndex === pos ? 'true' : undefined}
-                    data-status={status}
-                  />
-                )
-              })}
+          {srStatus}
+
+          {resolvedDots && resolvedDots.length > 0 && (
+            <div
+              className={cn('brilliant-practice-dots', dotsClassName)}
+              data-centered={centeredDots ? 'true' : undefined}
+              aria-hidden="true"
+            >
+              {resolvedDots.map((dot, idx) => (
+                <i
+                  key={idx}
+                  data-current={dot.current ? 'true' : undefined}
+                  data-status={dot.status}
+                />
+              ))}
             </div>
           )}
         </div>

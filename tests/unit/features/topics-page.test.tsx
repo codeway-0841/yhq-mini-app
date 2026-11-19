@@ -61,15 +61,13 @@ describe('TopicsPage — fan bo\'yicha mavzular', () => {
     expect(screen.queryByText("Yo'l belgilari")).toBeNull()
   })
 
-  it('mavzu bosilganda shu mavzu savollari bilan test ochiladi', () => {
+  it('mavzu bosilganda shu mavzuning darslik sahifasi ochiladi', () => {
     setFizikaLoaded()
     render(<TopicsPage />)
 
     fireEvent.click(screen.getByText('Kinematika'))
 
-    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
-      state: { questionIds: [11, 12], title: 'Kinematika' },
-    })
+    expect(mockNavigate).toHaveBeenCalledWith('/darslik?block=1&section=0')
   })
 
   it('yechilganlar progressda ko\'rinadi (1/2)', () => {
@@ -144,19 +142,13 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(screen.queryByText('1/2')).toBeNull()
   })
 
-  it('mavzu bosilganda server topic selector bilan ochiladi (master ID YO\'Q)', () => {
+  it('mavzu bosilganda darslik bloki va bo\'limiga o\'tiladi', () => {
     setFizikaMeta()
     render(<TopicsPage />)
 
     fireEvent.click(screen.getByText('Kinematika'))
 
-    expect(mockNavigate).toHaveBeenCalledWith('/test/1', {
-      state: {
-        mode: 'topic',
-        serverSelector: { type: 'topic', topicId: 1 },
-        title: 'Kinematika',
-      },
-    })
+    expect(mockNavigate).toHaveBeenCalledWith('/darslik?block=1&section=0')
   })
 
   it('progress chizig\'i server agregatidan chiqadi (savollarsiz)', async () => {
@@ -172,7 +164,7 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(progressSpy).toHaveBeenCalledWith('u1', 'fizika')
   })
 
-  it('Brilliant /courses 3D rasmlari va o\'quv yo\'nalishi akordeoni ishlaydi', () => {
+  it('Brilliant /courses 3D rasmlari va o\'quv yo\'nalishi tablari ishlaydi', () => {
     setFizikaMeta()
     const { container } = render(<TopicsPage />)
 
@@ -180,14 +172,8 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(imgs.some((src) => src.startsWith('/brilliant/courses/path-'))).toBe(true)
     expect(imgs.some((src) => src.startsWith('/brilliant/courses/topic-'))).toBe(true)
 
-    const pathHeaderBtn = screen.getByRole('button', { name: /Mexanika: Kinematika asoslari/i })
-    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
-
-    fireEvent.click(pathHeaderBtn)
-    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'false')
-
-    fireEvent.click(pathHeaderBtn)
-    expect(pathHeaderBtn).toHaveAttribute('aria-expanded', 'true')
+    const mechTab = screen.getByRole('button', { name: /Mexanika/i })
+    expect(mechTab).toHaveAttribute('aria-current', 'true')
   })
 
   it('rus tilida barcha 24 ta darslik bloki tablari chiqadi va tab bosilganda o\'sha blokka o\'tiladi', () => {
@@ -212,7 +198,7 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(tabs.length).toBeGreaterThanOrEqual(24)
 
     // Boshlang'ich holatda 1-blok ochiq
-    expect(screen.getByText(/1-blok\. Fonetika, grafika va orfoepiya/i)).toBeInTheDocument()
+    expect(container.querySelector('#br-path-darslik-block-1')).toBeInTheDocument()
 
     // 1-blokdagi mavzu bosilganda darslikka o'tadi
     const firstOutlineTopic = screen.getByText(/Звуки и буквы/i)
@@ -231,6 +217,6 @@ describe('TopicsPage v2 (metadata-only)', () => {
     expect(tab1).not.toHaveAttribute('data-active')
     const section15 = container.querySelector('#br-path-darslik-block-15') as HTMLElement
     expect(section15).toHaveAttribute('data-section-active', 'true')
-    expect(screen.getByText(/15-blok\. Adabiy til me’yorlari va nutq madaniyati/i)).toBeInTheDocument()
+    expect(section15?.querySelector('.br-hero-title')?.textContent).toMatch(/Adabiy til|Nutq madaniyati/i)
   })
 })

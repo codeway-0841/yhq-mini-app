@@ -449,7 +449,7 @@ function YhqDarslikHome() {
                   className="p-1 cursor-pointer flex items-center justify-center"
                 >
                   <span
-                    className={`block rounded-full transition-all duration-300 ${
+                    className={`block rounded-full transition-[width,height,background-color] duration-300 ${
                       isActive ? 'size-2' : 'size-1.5'
                     }`}
                     style={{
