@@ -235,9 +235,10 @@ export default function LessonRunner({
   closeRef.current = requestClose
 
   useEffect(() => {
+    if (showExitConfirm) return
     const id = Symbol('rus-lesson-runner')
     return registerModal(id, () => closeRef.current())
-  }, [])
+  }, [showExitConfirm])
 
   useEffect(() => {
     const escape = (event: KeyboardEvent) => {

@@ -54,9 +54,11 @@ export default function LessonReader({ mod, lessonIdx, onClose, onDone, onPracti
 
   useEffect(() => { if (!allowed) onPremiumRef.current() }, [allowed])
   useEffect(() => {
+    if (showExitConfirm) return
     const unregister = registerModal(Symbol('lesson-reader'), () => onCloseRef.current())
-    return () => { unregister(); stopSpeaking() }
-  }, [])
+    return unregister
+  }, [showExitConfirm])
+  useEffect(() => () => stopSpeaking(), [])
   useEffect(() => { stopSpeaking(); setIsPlaying(false) }, [idx, step])
 
   if (!lesson || !allowed) return null
@@ -81,6 +83,7 @@ export default function LessonReader({ mod, lessonIdx, onClose, onDone, onPracti
     }
     onClose()
   }
+  onCloseRef.current = handleRequestClose
 
   return (
     <div className="lesson-reader fixed inset-0 z-50 flex flex-col bg-pcanvas text-pfg">

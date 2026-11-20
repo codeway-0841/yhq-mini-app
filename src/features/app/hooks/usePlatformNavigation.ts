@@ -1,34 +1,83 @@
 import { useEffect, useRef } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, useNavigationType } from 'react-router-dom'
 import { goBack, useModalCount } from '../../../shared/lib/navigation'
+import { pageScrollY, scrollPageTo } from '../../../shared/lib/page-scroll'
 import { syncTelegramTheme } from '../../../platform/telegram'
 import { bindAppBackButton } from '../../../platform/native'
 
+const scrollPositions = new Map<string, number>()
+
+function saveScrollPosition(key: string, y: number): void {
+  if (scrollPositions.has(key)) scrollPositions.delete(key)
+  scrollPositions.set(key, y)
+  if (scrollPositions.size > 40) {
+    const oldest = scrollPositions.keys().next().value
+    if (oldest !== undefined) scrollPositions.delete(oldest)
+  }
+}
+
 /**
  * Platform/Navigation integratsiyasi — Telegram BackButton, APK hardware back,
- * modal stack kuzatuvi, iOS repaint fix va sahifa almashinuvi animatsiyalari.
+ * modal stack kuzatuvi, scroll tiklash (POP) va sahifa almashinuvi animatsiyalari.
  */
 export function usePlatformNavigation() {
   const location = useLocation()
   const navigate = useNavigate()
+  const navigationType = useNavigationType()
   const atHome = location.pathname === '/'
   const modalCount = useModalCount()
+  const activeKeyRef = useRef(location.key)
+  activeKeyRef.current = location.key
 
-  // Sahifa almashganda tepadan boshlash — body scroll (min-h-screen) saqlanmasin
+  // Joriy sahifa scroll pozitsiyasini kuzatib borish (orqaga qaytganda tiklash uchun)
   useEffect(() => {
-    window.scrollTo(0, 0)
-    // Telegram iOS fullscreen repaint fix (Issue #2061: orqaga qaytganda tepa soha repaintsiz oq/bo'sh qolmasligi uchun)
-    const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent))
-    if (isIos) {
-      requestAnimationFrame(() => {
-        window.scrollBy(0, 1)
-        window.scrollBy(0, -1)
-      })
+    const onScroll = () => {
+      saveScrollPosition(activeKeyRef.current, pageScrollY())
     }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    document.addEventListener('scroll', onScroll, { passive: true, capture: true })
+    return () => {
+      window.removeEventListener('scroll', onScroll)
+      document.removeEventListener('scroll', onScroll, true)
+    }
+  }, [])
+
+  // Sahifa almashganda: POP (orqaga) da oldingi scroll pozitsiyasini tiklash,
+  // yangi PUSH/REPLACE da tepadan boshlash.
+  const pageRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const el = pageRef.current
+    const isPop = navigationType === 'POP'
+    const targetY = isPop ? (scrollPositions.get(location.key) ?? 0) : 0
+
+    if (isPop && targetY > 0) {
+      if (el) el.scrollTop = targetY
+      requestAnimationFrame(() => {
+        scrollPageTo(targetY, 'auto')
+      })
+    } else {
+      window.scrollTo(0, 0)
+      if (el) el.scrollTop = 0
+      // Telegram iOS fullscreen repaint fix (Issue #2061)
+      const isIos = typeof navigator !== 'undefined' && (/iPhone|iPad|iPod/i.test(navigator.userAgent))
+      if (isIos) {
+        requestAnimationFrame(() => {
+          window.scrollBy(0, 1)
+          window.scrollBy(0, -1)
+        })
+      }
+    }
+
+    if (el) {
+      el.classList.remove('route-page')
+      void el.offsetWidth // reflow — CSS animatsiyani qayta boshlaydi
+      el.classList.add('route-page')
+    }
+
     // Har bir sahifa navigatsiyasida Telegram status bar & header rangini qayta mustahkamlash
     const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
     syncTelegramTheme(isDark)
-  }, [location.pathname])
+  }, [location.pathname, location.key, navigationType])
 
   // Platforma "orqaga" tugmasi — Telegram'da TG BackButton, APK'da hardware back.
   // visible: sub-sahifada bo'lsa YOKI biror modal/sheet ochiq bo'lsa (bosh sahifada ham).
@@ -36,19 +85,6 @@ export function usePlatformNavigation() {
   useEffect(() => {
     return bindAppBackButton(shouldShowBack, () => goBack(navigate))
   }, [shouldShowBack, navigate])
-
-  // Sahifa o'tishida scroll reset + transition — key={pathname} EMAS (audit L11b):
-  // key har navigatsiyada BUTUN sahifani REMOUNT qilardi (komponent state'lari
-  // yo'qolardi); animation endi class restart bilan (remount'siz, perf saqlanadi).
-  const pageRef = useRef<HTMLDivElement>(null)
-  useEffect(() => {
-    const el = pageRef.current
-    if (!el) return
-    el.scrollTop = 0
-    el.classList.remove('route-page')
-    void el.offsetWidth // reflow — CSS animatsiyani qayta boshlaydi
-    el.classList.add('route-page')
-  }, [location.pathname])
 
   return {
     pageRef,

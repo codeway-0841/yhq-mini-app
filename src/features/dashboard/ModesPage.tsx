@@ -1,5 +1,6 @@
 import { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { goBack } from '../../shared/lib/navigation'
 import {
   BookOpen,
   Ticket,
@@ -78,11 +79,7 @@ export default function ModesPage() {
   ]
 
   const handleBack = useCallback(() => {
-    if (window.history.length > 1) {
-      navigate(-1)
-    } else {
-      navigate('/')
-    }
+    goBack(navigate)
   }, [navigate])
 
   return (

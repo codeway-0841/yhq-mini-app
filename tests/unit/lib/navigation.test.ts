@@ -79,4 +79,16 @@ describe('navigation — modal stack & safe back handling', () => {
     goBack(navigate)
     expect(navigate).toHaveBeenCalledWith(-1)
   })
+
+  it('goBack history.state.idx === 0 boʻlganda bosh sahifaga (/) xavfsiz qaytaradi', () => {
+    const prevState = window.history.state
+    window.history.replaceState({ idx: 0 }, '')
+    try {
+      const navigate = vi.fn()
+      goBack(navigate)
+      expect(navigate).toHaveBeenCalledWith('/', { replace: true })
+    } finally {
+      window.history.replaceState(prevState, '')
+    }
+  })
 })

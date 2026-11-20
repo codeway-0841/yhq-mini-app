@@ -157,9 +157,10 @@ function LiteratureEraReaderOverlay({
   }
 
   useEffect(() => {
+    if (showExitConfirm) return
     const id = Symbol('literature-era-reader')
     return registerModal(id, () => closeRef.current())
-  }, [])
+  }, [showExitConfirm])
 
   useEffect(() => {
     if (!selectedBlock) return

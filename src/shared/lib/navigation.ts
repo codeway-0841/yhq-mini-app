@@ -109,7 +109,14 @@ export function goBack(navigate?: NavigateFunction): void {
     return
   }
   if (navigate) {
-    navigate(-1)
+    const stateIdx = typeof window !== 'undefined'
+      ? (window.history.state as { idx?: number } | null)?.idx
+      : undefined
+    if (typeof stateIdx === 'number' && stateIdx <= 0) {
+      navigate('/', { replace: true })
+    } else {
+      navigate(-1)
+    }
   } else if (typeof window !== 'undefined' && window.history) {
     window.history.back()
   }
