@@ -14,7 +14,6 @@
 
 import { useAppStore }         from './useAppStore'
 import { useDailyStore }       from './useDailyStore'
-import { useAdaptiveStore }    from './useAdaptiveStore'
 import { useTestSessionStore } from './useTestSessionStore'
 import { useServerTestSessionStore } from './useServerTestSessionStore'
 import { emitAccountReset }    from '../lib/account-events'
@@ -29,7 +28,6 @@ import { invalidateAchievementsCache } from '../lib/achievements-cache'
 export const ACCOUNT_STORAGE_KEYS = [
   'yhq-app-store',
   'yhq-daily',
-  'yhq-adaptive-store',
   'yhq-test-session',
   'yhq-server-test-session',
   // AI kunlik test sessiyasi (javoblar qoralamasi — features/ai-test)
@@ -47,8 +45,6 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-level-seen',
   'yhq-goal',
   'yhq-formula-favs',
-  // CamAi o'qituvchi savollari qoralamasi (features/camai — user-scoped)
-  'yhq-camai-custom',
   // "Sharh yozdim / keyinroq" holati (shared/store/useReviewPromptStore) —
   // aynan shu akkaunt haqidagi ma'lumot, keyingi akkauntga o'tmasligi shart
   'yhq-review-prompt',
@@ -77,7 +73,6 @@ export const ACCOUNT_STORAGE_PREFIXES = [
 export function resetAccountState(): void {
   useAppStore.getState().resetAccount()
   useDailyStore.getState().resetAccount()
-  useAdaptiveStore.getState().resetAll()
   useTestSessionStore.getState().clear()
   useServerTestSessionStore.getState().clear()
   invalidateLeaderboardCache() // isYou bayroqlari yangi account'niki bo'lsin

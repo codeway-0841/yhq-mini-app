@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react'
 import {
-  BookOpen, GraduationCap, Ticket, Brain, CheckCircle2, ChevronRight,
+  BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight,
 
 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
@@ -84,7 +84,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
 
 
   const openMistakes = summary?.unresolvedMistakes ?? mistakesCount
-  const dueReviews = summary?.dueNow ?? 0
+  const dueReviews = 0
   const remainingSessionItems = resume && session
     ? Math.max(1, session.answers.filter((answer) => answer === null).length)
     : 0
@@ -183,14 +183,14 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
         </button>
         <button
           type="button"
-          onClick={() => navigate('/adaptive')}
-          aria-label={tt('adaptiveTitle')}
+          onClick={() => navigate('/xatolar')}
+          aria-label={tt('mistakes')}
           className={`home-learning-shortcut app-card-interactive ${interactive}`}
         >
           <div className="home-learning-shortcut-icon">
-            <Brain size={19} strokeWidth={2} />
+            <HeartCrack size={19} strokeWidth={2} />
           </div>
-          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('dashboardReviewShort')}</span>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('mistakes')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
       </div>

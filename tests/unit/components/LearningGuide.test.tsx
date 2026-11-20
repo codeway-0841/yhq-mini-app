@@ -41,7 +41,7 @@ describe('learning guide', () => {
     expect(buttons[0]).toHaveTextContent('O‘rganish')
     expect(buttons[1]).toHaveTextContent('Darslik')
     expect(buttons[2]).toHaveTextContent('Biletlar')
-    expect(buttons[3]).toHaveTextContent('Takrorlash')
+    expect(buttons[3]).toHaveTextContent('Xatolar')
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
 
     fireEvent.click(buttons[1])
@@ -201,7 +201,7 @@ describe('learning guide', () => {
     expect(screen.getByTestId('destination')).toHaveTextContent('/darslik')
   })
 
-  it.each([['Biletlar', '/biletlar'], ['Aqlli takrorlash', '/adaptive']])('opens %s from the dashboard', (label, path) => {
+  it.each([['Biletlar', '/biletlar'], ['Xatolar', '/xatolar']])('opens %s from the dashboard', (label, path) => {
     guide()
     fireEvent.click(screen.getByRole('button', { name: new RegExp(label) }))
     expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe(path)

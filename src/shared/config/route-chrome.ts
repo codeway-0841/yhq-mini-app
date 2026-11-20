@@ -47,7 +47,7 @@ const IMMERSIVE_CHROME: RouteChrome = {
 }
 
 
-const WORKSPACE_PREFIXES = ['/ai-test', '/camai'] as const
+const WORKSPACE_PREFIXES = ['/ai-test'] as const
 const IMMERSIVE_PREFIXES = ['/test/', '/octagon/', '/belgilar-oyini', '/kutubxona/kitob/', '/live/'] as const
 
 function normalizePathname(pathname: string): string {

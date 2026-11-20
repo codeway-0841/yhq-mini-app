@@ -152,9 +152,8 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(read('features/ai-test/AiTestHub.tsx')).toContain('lg:grid-cols-2')
   })
 
-  it('batch-5: Qidiruv/Adaptive desktop', () => {
+  it('batch-5: Qidiruv desktop', () => {
     expect(read('features/search/SearchPage.tsx')).toContain('lg:grid-cols-2')
-    expect(read('features/adaptive/AdaptivePage.tsx')).toContain('lg:max-w-2xl')
   })
 
   it('batch-8: Admin keng kontent (NotFound/Sheet tayyor)', () => {

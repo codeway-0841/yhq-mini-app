@@ -819,3 +819,67 @@ describe('testSessionsService security invariants', () => {
     expect(result.attempt.xpEarned).toBe(0)
   })
 })
+
+describe('testSessionsService lifecycle guards', () => {
+  beforeEach(() => {
+    vi.clearAllMocks()
+    repo.lockOwned.mockResolvedValue(session())
+    repo.lockBankVersion.mockResolvedValue(1)
+    repo.listAttempts.mockResolvedValue([])
+    repo.findAttempt.mockResolvedValue(null)
+    repo.setStatus.mockResolvedValue(undefined)
+  })
+
+  it('rejects a new answer on a completed session without side effects', async () => {
+    repo.lockOwned.mockResolvedValue(session({ status: 'completed' }))
+
+    await expect(testSessionsService.answer('user-1', SESSION_ID, validAnswer()))
+      .rejects.toMatchObject<AppError>({ statusCode: 409, message: 'test_session_completed' })
+    expect(repo.insertAttempt).not.toHaveBeenCalled()
+    expect(recordAnswer).not.toHaveBeenCalled()
+  })
+
+  it('finish is idempotent for the same final status and does not rewrite it', async () => {
+    repo.lockOwned.mockResolvedValue(session({ status: 'completed' }))
+
+    const result = await testSessionsService.finish('user-1', SESSION_ID, 'completed')
+
+    expect(result.status).toBe('completed')
+    expect(repo.setStatus).not.toHaveBeenCalled()
+  })
+
+  it('finish cannot flip a completed session to abandoned', async () => {
+    repo.lockOwned.mockResolvedValue(session({ status: 'completed' }))
+
+    await expect(testSessionsService.finish('user-1', SESSION_ID, 'abandoned'))
+      .rejects.toMatchObject<AppError>({ statusCode: 409, message: 'test_session_completed' })
+    expect(repo.setStatus).not.toHaveBeenCalled()
+  })
+
+  it('finish rejects an expired session and an unknown or foreign session', async () => {
+    repo.lockOwned.mockResolvedValue(session({ status: 'expired' }))
+    await expect(testSessionsService.finish('user-1', SESSION_ID, 'completed'))
+      .rejects.toMatchObject<AppError>({ statusCode: 410, message: 'test_session_expired' })
+
+    repo.lockOwned.mockResolvedValue(null)
+    await expect(testSessionsService.finish('user-2', SESSION_ID, 'completed'))
+      .rejects.toMatchObject<AppError>({ statusCode: 404, message: 'test_session_not_found' })
+    expect(repo.setStatus).not.toHaveBeenCalled()
+  })
+
+  it('resume fails closed when a stored attempt has no canonical correct option', async () => {
+    repo.listAttempts.mockResolvedValue([
+      { position: 0, selectedOptionId: 'F1', correct: false, resultPayload: {} },
+    ])
+
+    await expect(testSessionsService.resume('user-1', SESSION_ID))
+      .rejects.toMatchObject<AppError>({ statusCode: 409, message: 'test_attempt_incomplete' })
+  })
+
+  it('resume rejects a non-active session', async () => {
+    repo.lockOwned.mockResolvedValue(session({ status: 'completed' }))
+
+    await expect(testSessionsService.resume('user-1', SESSION_ID))
+      .rejects.toMatchObject<AppError>({ statusCode: 409, message: 'test_session_completed' })
+  })
+})

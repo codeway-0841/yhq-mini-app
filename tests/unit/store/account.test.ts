@@ -9,7 +9,6 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { ensureAccountOwner, resetAccountState, ACCOUNT_STORAGE_KEYS, ACCOUNT_STORAGE_PREFIXES } from '../../../src/shared/store/account'
 import { useAppStore }         from '../../../src/shared/store/useAppStore'
 import { useDailyStore }       from '../../../src/shared/store/useDailyStore'
-import { useAdaptiveStore }    from '../../../src/shared/store/useAdaptiveStore'
 import { useTestSessionStore } from '../../../src/shared/store/useTestSessionStore'
 import { useServerTestSessionStore } from '../../../src/shared/store/useServerTestSessionStore'
 import type { ApiUser } from '../../../src/shared/api'
@@ -34,7 +33,6 @@ beforeEach(() => {
 function seedUserA(): void {
   useAppStore.setState({ user: userA, tariff: 'premium', streak: 7, xp: 60, league: 'gold', totalCorrect: 42, displayName: 'Anvar_aka' })
   useDailyStore.setState({ streaks: { yhq: 5 }, activityKey: '2026-08-07|yhq' })
-  useAdaptiveStore.setState({ cardsBySubject: { yhq: { 1: {} as never } } })
   useTestSessionStore.getState().save({ mode: 'exam', index: 3 } as never)
   useServerTestSessionStore.setState({ snapshot: {
     sessionId: '4f491c27-ae03-42ae-9ce9-1b6f0eb75299', subjectId: 'yhq', mode: 'random20',
@@ -71,7 +69,6 @@ describe('ensureAccountOwner', () => {
     expect(app.totalCorrect).toBe(0)
     expect(app.displayName).toBeNull()
     expect(useDailyStore.getState().streaks).toEqual({})
-    expect(useAdaptiveStore.getState().cardsBySubject).toEqual({})
     expect(useTestSessionStore.getState().session).toBeNull()
     expect(useServerTestSessionStore.getState().snapshot).toBeNull()
   })
@@ -88,7 +85,6 @@ describe('resetAccountState', () => {
   it('ACCOUNT_STORAGE_KEYS barcha account-scoped store persist nomlarini qamraydi', () => {
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-app-store')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-daily')
-    expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-adaptive-store')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-server-test-session')
     expect(ACCOUNT_STORAGE_KEYS).toContain('yhq-session')   // Bearer sessiya ham reset'da o'chadi (MF-3)

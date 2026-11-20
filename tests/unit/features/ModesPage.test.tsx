@@ -100,7 +100,7 @@ describe('ModesPage', () => {
     })
   })
 
-  it('Aqlli takrorlash kartasi chiqadi va mos marshrutga olib boradi, Tezkor test esa olib tashlangan', () => {
+  it('Aqlli takrorlash, CamAi va Tezkor test kartalari olib tashlangan', () => {
     render(
       <ToastProvider>
         <MemoryRouter>
@@ -110,11 +110,8 @@ describe('ModesPage', () => {
     )
 
     expect(screen.queryByRole('button', { name: 'Tezkor test' })).toBeNull()
-
-    const adaptiveBtn = screen.getByRole('button', { name: 'Aqlli takrorlash' })
-    expect(adaptiveBtn).toBeTruthy()
-    fireEvent.click(adaptiveBtn)
-    expect(mockNavigate).toHaveBeenCalledWith('/adaptive')
+    expect(screen.queryByRole('button', { name: 'Aqlli takrorlash' })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'CamAi' })).toBeNull()
   })
 
   it('KIVVI Drive faqat YHQ fanida ko‘rinadi va alohida simulyatorga olib boradi', () => {

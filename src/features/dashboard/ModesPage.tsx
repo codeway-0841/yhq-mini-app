@@ -11,9 +11,6 @@ import {
   Bookmark,
   Signpost,
   Hash,
-  Brain,
-
-  ScanFace,
   Radio,
   CarFront,
   Clapperboard,
@@ -72,9 +69,6 @@ export default function ModesPage() {
         ]
       : []),
     { icon: Hash,          label: tt('numeric'),       onClick: goMode('numeric', tt('numeric')) },
-    { icon: Brain,         label: tt('adaptiveTitle'), onClick: () => navigate('/adaptive') },
-
-    { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
     { icon: Radio,         label: tt('liveTitle'),        onClick: () => navigate('/live') },
   ]
 

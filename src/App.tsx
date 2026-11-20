@@ -36,7 +36,6 @@ const belgilarChunk        = () => import('./features/signs/Belgilar')
 const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
 const profilChunk          = () => import('./features/profile/Profil')
 const topicsChunk          = () => import('./features/topics/TopicsPage')
-const adaptiveChunk        = () => import('./features/adaptive/AdaptivePage')
 const octagonChunk         = () => import('./features/octagon/OctagonPage')
 const adminChunk           = () => import('./features/admin/AdminPage')
 const leaderboardChunk     = () => import('./features/leaderboard/LeaderboardPage')
@@ -63,7 +62,6 @@ const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
 const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
 
-const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
 const mascotStudioChunk = () => import('./features/mascot-studio/MascotStudioPage')
@@ -80,7 +78,6 @@ const Belgilar        = lazy(belgilarChunk)
 const SignsGamePage   = lazy(signsGameChunk)
 const Profil          = lazy(profilChunk)
 const TopicsPage      = lazy(topicsChunk)
-const AdaptivePage    = lazy(adaptiveChunk)
 const OctagonPage    = lazy(octagonChunk)
 const AdminPage      = lazy(adminChunk)
 const LessonTransitionHost = lazy(lessonTransitionHostChunk)
@@ -104,7 +101,6 @@ const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
 const LibraryReaderPage = lazy(libraryReaderChunk)
 
-const CamAiPage        = lazy(camaiChunk)
 const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).default }))
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
 const ReviewsPage      = lazy(reviewsChunk)
@@ -124,11 +120,11 @@ const routeChunkPrefetchers = [
   testlarChunk, octagonChunk, modesChunk, testPageChunk, profilChunk, biletlarChunk,
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
   topicsChunk, darslikChunk, lessonTransitionHostChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
-  streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, flashcardsChunk,
+  streakChunk, leaderboardChunk, statistikaChunk, flashcardsChunk,
   searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
-  aiTestHubChunk, aiTestSessionChunk, camaiChunk,
+  aiTestHubChunk, aiTestSessionChunk,
   liveListChunk, mascotStudioChunk, riveMvpChunk, notFoundChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
@@ -404,7 +400,6 @@ export default function App() {
             <Route path="/belgilar-oyini" element={<SignsGamePage />} />
             <Route path="/profil"     element={<Profil />} />
             <Route path="/mavzular"   element={<TopicsPage />} />
-            <Route path="/adaptive"   element={<AdaptivePage />} />
             <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
             <Route path="/reyting"    element={<LeaderboardPage />} />
             <Route path="/xatolar"    element={<XatolarPage />} />
@@ -419,7 +414,6 @@ export default function App() {
             <Route path="/ai-test"    element={<AiTestHub />} />
             <Route path="/ai-test/:id" element={<AiTestSession />} />
 
-            <Route path="/camai" element={<CamAiPage />} />
             <Route path="/live" element={<LiveListPage />} />
             <Route path="/live/:id" element={<LiveRoomPage />} />
 
