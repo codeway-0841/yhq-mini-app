@@ -167,57 +167,68 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
 
   const isRu = lang === 'ru'
   const heroModuleId = typeof currentTopic?.id === 'number' ? ((currentTopic.id - 1) % 8) + 1 : 1
+  const darslikArtId = ((heroModuleId % 8) + 1)
 
   return (
     <div className="home-learning-guide px-4 lg:px-0 pb-1">
-      {/* 1. Markaziy Brilliant Big-Illustration Showcase kartasi */}
+      {/* 1. Markaziy Obsidian Orbital Theater + Royal Blue 3D Action Dock */}
       <section className="home-learning-hero">
-        <div className="home-learning-step">
-          <div className="home-showcase-stage">
-            <div className="home-showcase-topbar">
-              <span className={`home-learning-eyebrow ${badgeTone}`}>
+        <div className="kivvi-theater-shell">
+          <div className="kivvi-theater-stage">
+            {/* Orbital konsentrik halqalar (sof vektor geometriya) */}
+            <svg viewBox="0 0 220 220" fill="none" className="kivvi-orbit-rings" aria-hidden="true">
+              <circle cx="110" cy="110" r="98" stroke="white" strokeWidth="1.2" strokeDasharray="6 8" />
+              <circle cx="110" cy="110" r="72" stroke="white" strokeWidth="1" strokeDasharray="3 6" />
+              <circle cx="110" cy="110" r="46" stroke="white" strokeWidth="1" />
+              <circle cx="110" cy="12" r="4" fill="#A8D31D" />
+              <circle cx="182" cy="110" r="3" fill="#6e8cff" />
+            </svg>
+
+            <div className="kivvi-theater-top">
+              <span className={`kivvi-live-tag ${badgeTone}`}>
+                <span className="kivvi-live-dot" aria-hidden="true" />
                 {contextLabel ?? (isRu ? 'План на сегодня' : 'Bugungi reja')}
               </span>
               {!expired && plan.estimatedMinutes > 0 && (
-                <span className="rounded-full border-2 border-pline bg-pcard px-2.5 py-0.5 text-[11px] font-extrabold tabular-nums text-pmuted">
+                <span className="kivvi-time-chip">
                   ~{plan.estimatedMinutes} {isRu ? 'мин' : 'daq'}
                 </span>
               )}
             </div>
-            <BrilliantHeroIllustration moduleId={heroModuleId} className="home-showcase-art" />
-          </div>
 
-          <div className="home-learning-path-row">
-            <span className="home-learning-token" aria-hidden="true">
-              {allComplete && !resume ? (
-                <img src="/darslik-map/node-completed.svg" alt="" width={48} height={50} className="home-learning-disk" />
-              ) : (
-                <span className="home-learning-disk-wrap">
-                  <img src="/darslik-map/node-active-base.png" alt="" width={48} height={50} className="home-learning-disk" />
-                  <span className="home-learning-mascot">
+            <div className="kivvi-theater-body">
+              <div className="kivvi-theater-copy">
+                <h2 className="kivvi-theater-title">{title}</h2>
+                {description && <p className="kivvi-theater-desc">{description}</p>}
+              </div>
+
+              <div className="kivvi-theater-visual" aria-hidden="true">
+                <BrilliantHeroIllustration moduleId={heroModuleId} className="kivvi-theater-art" />
+                {!allComplete || resume ? (
+                  <span className="kivvi-theater-koji">
                     <PathMascot animation="idle" variant="tile" />
                   </span>
-                </span>
-              )}
-            </span>
-            <div className="min-w-0 flex-1">
-              <h2 className="text-[16.5px] font-extrabold leading-snug tracking-[-0.02em] text-pfg truncate">{title}</h2>
-              {description && <p className="mt-0.5 text-[12px] leading-snug text-pmuted line-clamp-2">{description}</p>}
+                ) : (
+                  <span className="kivvi-theater-koji text-[#4ade80]">
+                    <CheckCircle2 size={18} strokeWidth={2.5} />
+                  </span>
+                )}
+              </div>
             </div>
-            {plan.kind === 'completed' && <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
 
-          <button
-            type="button"
-            data-testid="brilliant-start-button"
-            onClick={() => { haptics.impact('light'); start() }}
-            className="home-learning-start select-none"
-            style={{
-              backgroundColor: theme.buttonBg,
-              color: theme.buttonText,
-              boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
-            }}
-          >
+          <div className="kivvi-theater-dock">
+            <button
+              type="button"
+              data-testid="brilliant-start-button"
+              onClick={() => { haptics.impact('light'); start() }}
+              className="home-learning-start select-none"
+              style={{
+                backgroundColor: theme.buttonBg,
+                color: theme.buttonText,
+                boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
+              }}
+            >
             <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] select-none z-0">
               <span className="absolute top-0 left-0 w-[150px] h-full animate-brilliant-sheen">
                 <svg viewBox="0 0 150 56" width="150" height="56" fill="none" className="h-full w-[150px]" aria-hidden="true">
@@ -241,81 +252,101 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
 
 
 
-          {completedTopics.length > 0 && <details className="mt-4 border-t border-pline pt-3">
-            <summary className="cursor-pointer text-[13px] font-semibold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>
-            <div className="mt-2">
-              {completedTopics.map((topic) => <button key={topic.id} onClick={() => navigate(topic.path, {state: topic.state})} className={`flex min-h-11 w-full items-center gap-3 rounded-xl px-2 py-2 text-left text-[14px] text-pfg ${interactive}`}>
-                <CheckCircle2 size={18} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />{topic.title}
-              </button>)}
-            </div>
-          </details>}
+            {completedTopics.length > 0 && <details className="mt-3 border-t border-pline pt-2.5">
+              <summary className="cursor-pointer text-[12.5px] font-bold text-pmuted">{tt('guideCompletedTopics')} · {completedTopics.length}</summary>
+              <div className="mt-2">
+                {completedTopics.map((topic) => <button key={topic.id} onClick={() => navigate(topic.path, {state: topic.state})} className={`flex min-h-10 w-full items-center gap-3 rounded-xl px-2 py-1.5 text-left text-[13.5px] text-pfg ${interactive}`}>
+                  <CheckCircle2 size={16} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />{topic.title}
+                </button>)}
+              </div>
+            </details>}
+          </div>
         </div>
       </section>
 
-      {/* 2. Pastki ixcham 2×2 Brilliant kartalar (1-ekranga sig'adi) */}
-      <div className="mt-2.5 grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-3">
-        <button type="button" onClick={() => openShortcut(learnPath)} className={`home-bento-card ${interactive}`}>
-          <div className="home-bento-icon is-learn">
-            <BookOpen size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('dashboardLearn')}</span>
-            <span className="home-bento-sub">{isRu ? 'Темы' : 'Mavzular'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-        </button>
-
+      {/* 2. Asymmetric Swiss Bento Dock (Row 1: 7+5 Featured, Row 2: 6+6 Compact; Desktop: 4-col) */}
+      <div className="mt-2.5 grid grid-cols-12 gap-2 lg:grid-cols-4 lg:gap-3">
+        {/* Darslik — 7 ustun, jonli Brilliant illyustratsiyasi bilan */}
         <button
           type="button"
           onClick={() => openShortcut(darslikPath)}
           aria-label={tt('lessons')}
-          className={`home-bento-card ${interactive}`}
+          className={`kivvi-bento-feature col-span-7 lg:col-span-1 ${interactive}`}
         >
-          <div className="home-bento-icon is-lessons">
-            <GraduationCap size={17} strokeWidth={2.2} />
+          <span className="inline-flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-[0.08em] text-[#16a34a] dark:text-[#4ade80]">
+            <GraduationCap size={13} strokeWidth={2.4} aria-hidden="true" />
+            {isRu ? 'Интерактив' : 'Interaktiv'}
+          </span>
+          <div className="pr-14">
+            <span className="block text-[16px] font-extrabold tracking-[-0.02em] text-pfg leading-tight">
+              {tt('lessons')}
+            </span>
+            <span className="mt-0.5 block text-[11px] font-semibold text-pmuted">
+              {isRu ? 'Пошаговый курс' : 'Bosqichma-bosqich'}
+            </span>
           </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('lessons')}</span>
-            <span className="home-bento-sub">{isRu ? 'Курс' : 'Kurs'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
+          <BrilliantHeroIllustration moduleId={darslikArtId} className="kivvi-darslik-peek" />
         </button>
 
-        <button type="button" onClick={() => openShortcut('/biletlar')} className={`home-bento-card ${interactive}`}>
-          <div className="home-bento-icon is-tickets">
-            <Ticket size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('tickets')}</span>
-            <span className="home-bento-sub">{isRu ? 'Экзамен' : 'Imtihon'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-        </button>
-
+        {/* Xatolar — 5 ustun, katta arxitektura raqamli alert karta */}
         <button
           type="button"
           onClick={() => openShortcut('/xatolar')}
           aria-label={tt('mistakes')}
-          className={`home-bento-card ${interactive}`}
+          className={`kivvi-bento-feature col-span-5 lg:col-span-1 ${openMistakes > 0 ? 'is-mistakes-alert' : ''} ${interactive}`}
         >
-          <div className="home-bento-icon is-mistakes">
-            <HeartCrack size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('mistakes')}</span>
-            <span className="home-bento-sub">
-              {openMistakes > 0
-                ? isRu ? 'Повторить' : 'Tuzatish'
-                : isRu ? 'Чисто' : 'Toza'}
+          <div className="flex items-center justify-between gap-1">
+            <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-[0.08em] text-[#e11d48] dark:text-[#fb7185]">
+              <HeartCrack size={13} strokeWidth={2.4} aria-hidden="true" />
+              {tt('mistakes')}
             </span>
+            <ChevronRight size={14} className="text-pmuted opacity-55" aria-hidden="true" />
           </div>
-          {openMistakes > 0 ? (
-            <span className="home-bento-badge" aria-hidden="true">
-              {openMistakes > 99 ? '99+' : openMistakes}
-            </span>
-          ) : (
-            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-          )}
+          <div className="flex items-baseline justify-between gap-1">
+            {openMistakes > 0 ? (
+              <span className="kivvi-mistake-big">{openMistakes > 99 ? '99+' : openMistakes}</span>
+            ) : (
+              <span className="inline-flex items-center gap-1 text-[15px] font-extrabold text-[#16a34a] dark:text-[#4ade80]">
+                <CheckCircle2 size={17} strokeWidth={2.5} />
+                {isRu ? 'Чисто' : 'Toza'}
+              </span>
+            )}
+            {openMistakes > 0 && (
+              <span className="text-[10.5px] font-bold text-pmuted">
+                {isRu ? 'откр.' : 'ochiq'}
+              </span>
+            )}
+          </div>
+        </button>
+
+        {/* O'rganish — 6 ustun ixcham pill karta */}
+        <button
+          type="button"
+          onClick={() => openShortcut(learnPath)}
+          className={`kivvi-bento-pill col-span-6 lg:col-span-1 ${interactive}`}
+        >
+          <span className="kivvi-pill-icon is-learn">
+            <BookOpen size={17} strokeWidth={2.2} />
+          </span>
+          <span className="min-w-0 flex-1 truncate text-[14px] font-extrabold tracking-[-0.015em] text-pfg">
+            {tt('dashboardLearn')}
+          </span>
+          <ChevronRight size={15} className="shrink-0 text-pmuted opacity-55" aria-hidden="true" />
+        </button>
+
+        {/* Biletlar — 6 ustun ixcham pill karta */}
+        <button
+          type="button"
+          onClick={() => openShortcut('/biletlar')}
+          className={`kivvi-bento-pill col-span-6 lg:col-span-1 ${interactive}`}
+        >
+          <span className="kivvi-pill-icon is-tickets">
+            <Ticket size={17} strokeWidth={2.2} />
+          </span>
+          <span className="min-w-0 flex-1 truncate text-[14px] font-extrabold tracking-[-0.015em] text-pfg">
+            {tt('tickets')}
+          </span>
+          <ChevronRight size={15} className="shrink-0 text-pmuted opacity-55" aria-hidden="true" />
         </button>
       </div>
     </div>

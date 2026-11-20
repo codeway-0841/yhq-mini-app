@@ -7,10 +7,11 @@ import { useSubjectStore } from '../../../shared/store/useSubjectStore'
 import { haptics } from '../../../platform/haptics'
 import type { LearningSummary } from '../../../shared/api'
 
-const DAYS_UZ = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya'] as const
-const DAYS_RU = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] as const
+const DAYS_UZ = ['D', 'S', 'Ch', 'P', 'J', 'Sh', 'Y'] as const
+const DAYS_RU = ['П', 'В', 'С', 'Ч', 'П', 'С', 'В'] as const
+const SEGMENTS = 12
 
-// ── Brilliant 1:1 ixcham 7-kunlik Seriya + Tayyorgarlik kartasi (1-ekranga sig'adi) ──
+// ── KIVVI Kinetic Horizon: Direct-on-canvas Readiness + 7-kunlik yulduzcha chiziq ──
 export const ProgressCard = memo(function ProgressCard({ summary, streak = 0, lang, onStreakPreview }: {
   summary: LearningSummary
   streak?: number
@@ -31,8 +32,10 @@ export const ProgressCard = memo(function ProgressCard({ summary, streak = 0, la
 
   const total = summary.totalQuestions > 0 ? summary.totalQuestions : 0
   const progressPct = total > 0 ? summary.readinessPercent : 0
-  const shown = useCountUp(progressPct, 700)
-  const barWidth = total > 0 ? Math.max(shown, summary.mastered > 0 ? 4 : 0) : 0
+  const shown = useCountUp(progressPct, 750)
+  const filledSegments = total > 0
+    ? Math.max(summary.mastered > 0 ? 1 : 0, Math.round((shown / 100) * SEGMENTS))
+    : 0
 
   const jsDay = new Date().getDay()
   const todayIdx = jsDay === 0 ? 6 : jsDay - 1
@@ -42,85 +45,78 @@ export const ProgressCard = memo(function ProgressCard({ summary, streak = 0, la
   const activeStartIdx = streak > 0 ? Math.max(0, lastActiveIdx - streak + 1) : 99
 
   return (
-    <section className="mx-4 lg:mx-0 mb-2.5">
-      <div className="brilliant-progress-card">
-        {/* Yuqori qator: Seriya + Tayyorgarlik */}
-        <div className="flex items-center justify-between gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              haptics.impact('light')
-              onStreakPreview?.()
-            }}
-            className="flex items-center gap-1.5 text-left cursor-pointer touch-manipulation active:scale-95 transition-transform"
-            aria-label={isRu ? `Серия: ${streak}` : `Seriya: ${streak}`}
-          >
-            <span className="font-display text-[24px] font-extrabold leading-none tracking-[-0.03em] tabular-nums text-pfg">
+    <section className="mx-4 lg:mx-0 mb-3 pt-0.5">
+      {/* Yuqori qator: Katta arxitektura foiz + O'ngda jonli 7-kunlik seriya kapsulasi */}
+      <div className="flex items-end justify-between gap-3">
+        <div className="min-w-0">
+          <p className="text-[10.5px] font-extrabold uppercase tracking-[0.1em] text-pmuted">
+            {tt('readinessTitle')}
+          </p>
+          <div className="mt-0.5 flex items-baseline gap-2">
+            <span className="font-display text-[38px] font-black leading-none tracking-[-0.045em] tabular-nums text-pfg">
+              {total > 0 ? shown : '—'}
+              {total > 0 && <span className="text-[20px] font-extrabold text-[#3557ff] dark:text-[#6e8cff]">%</span>}
+            </span>
+            <span className="font-mono text-[11.5px] font-bold tabular-nums text-pmuted">
+              {summary.mastered}/{total || '…'}
+            </span>
+          </div>
+        </div>
+
+        {/* Jonli 7-kunlik Seriya Kapsulasi */}
+        <button
+          type="button"
+          onClick={() => {
+            haptics.impact('light')
+            onStreakPreview?.()
+          }}
+          className="kivvi-streak-pod"
+          aria-label={isRu ? `Серия: ${streak}` : `Seriya: ${streak}`}
+        >
+          <div className="flex items-center justify-between gap-2 w-full">
+            <span className="inline-flex items-center gap-1 text-[13px] font-black tabular-nums text-pfg">
+              <BrilliantStreakIcon size={14} className={streak > 0 ? 'text-[#A8D31D]' : 'text-pmuted'} />
               {streak}
             </span>
-            <BrilliantStreakIcon
-              size={18}
-              className={streak > 0 ? 'text-[#A8D31D]' : 'text-pmuted'}
-            />
-            <span className="text-[12px] font-bold text-pmuted leading-none">
-              {isRu ? 'дн. серия' : 'kun seriya'}
-            </span>
-          </button>
-
-          <div className="inline-flex items-center gap-1 rounded-full border-2 border-pline bg-psurface/60 px-2.5 py-0.5">
-            <span className="text-[12px] font-extrabold tabular-nums text-[#3557ff] dark:text-[#6e8cff]">
-              {total > 0 ? `${shown}%` : '—'}
-            </span>
-            <span className="text-[11px] font-bold tabular-nums text-pmuted">
-              · {summary.mastered}/{total || '…'}
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.06em] text-pmuted">
+              {isRu ? 'серия' : 'seriya'}
             </span>
           </div>
-        </div>
-
-        {/* 7-kunlik ixcham haftalik chiziq */}
-        <div className="mt-2.5 grid grid-cols-7 gap-1" aria-label={isRu ? 'Недельная серия' : 'Haftalik seriya'}>
-          {dayLabels.map((label, idx) => {
-            const isToday = idx === todayIdx
-            const isDone = streak > 0 && idx <= lastActiveIdx && idx >= activeStartIdx
-            return (
-              <div key={label} className="flex flex-col items-center gap-0.5">
+          <div className="mt-1.5 flex items-center gap-[5px]" aria-hidden="true">
+            {dayLabels.map((letter, idx) => {
+              const isToday = idx === todayIdx
+              const isDone = streak > 0 && idx <= lastActiveIdx && idx >= activeStartIdx
+              return (
                 <span
-                  className={`flex size-7 items-center justify-center rounded-full border-2 transition-colors ${
-                    isDone
-                      ? 'border-[#8eb812] bg-[#A8D31D] text-white'
-                      : isToday
-                        ? 'border-dashed border-[#3557ff] bg-pcard text-[#3557ff] dark:border-[#6e8cff] dark:text-[#6e8cff]'
-                        : 'border-pline bg-psurface text-pmuted/60'
-                  }`}
+                  key={`${letter}-${idx}`}
+                  className={`kivvi-day-dot ${isDone ? 'is-done' : isToday ? 'is-today' : ''}`}
                 >
-                  <BrilliantStreakIcon
-                    size={12}
-                    className={isDone ? 'text-white' : isToday ? 'text-[#3557ff] dark:text-[#6e8cff] opacity-60' : 'opacity-30'}
-                  />
+                  {letter}
                 </span>
-                <span className={`text-[9.5px] font-extrabold leading-none ${isToday ? 'text-pfg' : 'text-pmuted'}`}>
-                  {label}
-                </span>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Ixcham progress bar */}
-        <div className="mt-2.5 flex items-center gap-2">
-          <span className="text-[10px] font-extrabold uppercase tracking-[0.06em] text-pmuted shrink-0">
-            {tt('readinessTitle')}
-          </span>
-          <div className="h-[6px] flex-1 overflow-hidden rounded-full bg-psurface">
-            <div
-              className="h-full rounded-full bg-[#3557ff] transition-[width] duration-700 ease-out"
-              style={{
-                width: `${barWidth}%`,
-                boxShadow: barWidth > 0 ? 'inset 0 -1.5px 0 #2643d8' : undefined,
-              }}
-            />
+              )
+            })}
           </div>
-        </div>
+        </button>
+      </div>
+
+      {/* 12-segmentli Braun / Swiss Precision Progress Meter */}
+      <div className="mt-2.5 grid grid-cols-12 gap-[5px]" aria-hidden="true">
+        {Array.from({ length: SEGMENTS }, (_, idx) => {
+          const active = idx < filledSegments
+          const isHead = idx === filledSegments - 1 && filledSegments > 0
+          return (
+            <span
+              key={idx}
+              className={`h-[6px] rounded-full transition-all duration-500 ${
+                isHead
+                  ? 'bg-[#A8D31D]'
+                  : active
+                    ? 'bg-[#3557ff]'
+                    : 'bg-pline/80 dark:bg-psurface'
+              }`}
+            />
+          )
+        })}
       </div>
     </section>
   )
