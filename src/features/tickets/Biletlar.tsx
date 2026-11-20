@@ -3,6 +3,8 @@ import { useState, useMemo, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
 import { PageHeader } from '../../shared/components/ui/page-header'
+import { Button } from '../../shared/components/ui/button'
+import { haptics } from '../../platform/haptics'
 import { config } from '../../shared/config'
 import { api } from '../../shared/api'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -247,24 +249,61 @@ export default function Biletlar() {
         })
   }
 
+  const firstUnlocked = useMemo(
+    () => filtered.find((t) => !(isTicketPremium(t.id) && !isPremium)) ?? filtered[0] ?? null,
+    [filtered, isPremium],
+  )
+
   return (
     <>
-      <PageHeader title={tt('tickets')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
-      <div className="px-4 pb-4">
+      <PageHeader title={tt('tickets')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-3" />
+      <div className="px-4 pb-6">
 
-      <div className="flex gap-2 mb-3 bg-psurface p-1 rounded-2xl">
-        {TABS.map((t) => (
-          <button key={t.id} onClick={() => setTab(t.id)}
-            className={`flex-1 min-h-11 py-2 rounded-xl text-sm font-semibold transition-colors ${
-              tab === t.id ? 'bg-pprimary text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
-            }`}>
-            {t.label}
-          </button>
-        ))}
-      </div>
+      {TABS.length > 1 && (
+        <div className="flex gap-1.5 mb-3.5 bg-psurface p-1 rounded-full border-2 border-pline">
+          {TABS.map((t) => (
+            <button key={t.id} onClick={() => { haptics.impact('light'); setTab(t.id) }}
+              className={`flex-1 min-h-10 py-1.5 rounded-full text-[13.5px] font-bold transition-colors cursor-pointer touch-manipulation ${
+                tab === t.id ? 'bg-pfg text-pcanvas' : 'text-pmuted hover:text-pfg'
+              }`}>
+              {t.label}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {tab === 'all' && firstUnlocked && (
+        <div className="mb-4 rounded-[24px] border-2 border-pline bg-pcard p-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+          <div className="flex items-center justify-between gap-3">
+            <div className="min-w-0 flex-1">
+              <p className="text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#3557ff] dark:text-[#6e8cff]">
+                {isRu ? 'Экзаменационные билеты' : 'Imtihon biletlari'}
+              </p>
+              <p className="mt-1 truncate text-[17px] font-extrabold tracking-[-0.015em] text-pfg">
+                {isRu ? 'Начать экзамен' : 'Imtihonni boshlash'}
+              </p>
+              <p className="mt-0.5 text-[12px] font-semibold tabular-nums text-pmuted">
+                {filtered.length} {isRu ? 'билетов' : 'ta bilet'} · {firstUnlocked.questionCount} {tt('question')}
+              </p>
+            </div>
+            <Button
+              type="button"
+              variant="primary"
+              size="sm"
+              className="shrink-0"
+              onClick={() => {
+                haptics.impact('light')
+                handleTicket(firstUnlocked)
+              }}
+            >
+              {tt('pathStart')}
+            </Button>
+          </div>
+        </div>
+      )}
 
       {subjectChapters && topics.length > 0 && (
-        <div className="flex gap-1.5 overflow-x-auto no-scrollbar pb-2 mb-3 -mx-4 px-4">
+        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2.5 mb-2.5 -mx-4 px-4">
           {subjectChapters.map((ch) => {
             const isSelected = selectedChapter === ch.id
             const count = chapterCounts[ch.id] ?? 0
@@ -272,15 +311,18 @@ export default function Biletlar() {
             return (
               <button
                 key={ch.id}
-                onClick={() => setSelectedChapter(ch.id)}
-                className={`whitespace-nowrap px-3 py-1.5 min-h-11 inline-flex items-center rounded-xl text-xs font-semibold transition-all shrink-0 ${
+                onClick={() => {
+                  haptics.impact('light')
+                  setSelectedChapter(ch.id)
+                }}
+                className={`whitespace-nowrap px-3.5 py-1.5 min-h-10 inline-flex items-center rounded-full border-2 text-[12.5px] font-bold transition-all shrink-0 cursor-pointer touch-manipulation ${
                   isSelected
-                    ? 'bg-pprimary text-ponprimary shadow-xs'
-                    : 'bg-psurface text-pmuted hover:text-pfg hover:bg-pcard'
+                    ? 'bg-pfg text-pcanvas border-pfg'
+                    : 'bg-pcard text-pmuted border-pline hover:text-pfg'
                 }`}
               >
                 {isRu ? ch.labelRu : ch.labelUz}
-                {count > 0 && <span className="ml-1 opacity-75 text-[10.5px]">({count})</span>}
+                {count > 0 && <span className="ml-1 opacity-75 text-[11px] tabular-nums">({count})</span>}
               </button>
             )
           })}
@@ -293,42 +335,58 @@ export default function Biletlar() {
           const wrongCount = ticket.questionIds.filter((qid) => (wrongByTicket[questionKey(subjectId, qid)] ?? 0) > 0).length
           const locked = isTicketPremium(ticket.id) && !isPremium
           return (
-            <button key={ticket.id} onClick={() => handleTicket(ticket)}
-              className="relative flex flex-col items-center justify-center rounded-2xl bg-pcard shadow-xs hover:bg-psurface p-2.5 min-h-[82px] active:scale-95 transition-all overflow-hidden text-center">
+            <button key={ticket.id} onClick={() => { haptics.impact('light'); handleTicket(ticket) }}
+              className={`relative flex flex-col items-center justify-center rounded-[20px] border-2 bg-pcard p-2.5 min-h-[86px] text-center overflow-hidden cursor-pointer touch-manipulation transition-[transform,box-shadow,border-color] duration-100 active:translate-y-[2px] ${
+                locked
+                  ? 'border-pline/80 opacity-85 shadow-[0_2px_0_var(--p-line)] active:shadow-none'
+                  : 'border-pline shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:shadow-[0_1px_0_var(--p-line)] hover:border-plinestrong'
+              }`}>
               {locked && (
-                <span className="absolute top-1.5 left-1.5 text-pwarning" aria-label="Premium">
-                  <Lock size={13} strokeWidth={2} />
+                <span className="absolute top-1.5 right-1.5 flex size-5 items-center justify-center rounded-full bg-psurface text-pwarning" aria-label="Premium">
+                  <Lock size={11} strokeWidth={2.4} />
                 </span>
               )}
               {/* Raqamli badge FAQAT "Xatolar" tabinda ko'rinadi (qizil) */}
               {tab === 'errors' && wrongCount > 0 && (
-                <span className="absolute top-1.5 right-1.5 bg-pdanger text-white text-[9.5px] font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center shadow-xs">
+                <span className="absolute top-1.5 right-1.5 bg-pdanger text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full min-w-[18px] text-center tabular-nums">
                   {wrongCount}
                 </span>
               )}
-              <span className="text-sm font-bold text-pfg">{ticket.title}</span>
+              <span className="text-[14px] font-extrabold tracking-[-0.01em] text-pfg">{ticket.title}</span>
               {ticket.subtitle && (
-                <span className="text-[10px] font-medium text-pprimary mt-0.5 max-w-full px-1 truncate line-clamp-1 leading-tight" title={ticket.subtitle}>
+                <span className="text-[10.5px] font-bold text-[#3557ff] dark:text-[#6e8cff] mt-0.5 max-w-full px-1 truncate line-clamp-1 leading-tight" title={ticket.subtitle}>
                   {ticket.subtitle}
                 </span>
               )}
-              <span className="text-[10.5px] text-pmuted mt-0.5">{ticket.questionCount} {tt('question')}</span>
+              <span className="text-[11px] font-semibold text-pmuted mt-1 tabular-nums">{ticket.questionCount} {tt('question')}</span>
             </button>
           )
         })}
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center text-pmuted py-16 text-sm">
+        <div className="text-center text-pmuted py-12 text-sm">
           {isV2 && catalogFailed ? (
-            <button
+            <Button
               type="button"
+              variant="secondary"
+              size="default"
               onClick={() => setCatalogRetry((c) => c + 1)}
-              className="rounded-2xl bg-psurface px-6 py-3 text-sm font-semibold text-pfg hover:bg-pcard active:scale-[0.98] transition-all shadow-xs"
             >
               {isRu ? 'Повторить' : 'Qayta urinish'}
-            </button>
-          ) : tab === 'errors' ? tt('noErrors') : tt('loadingDots')}
+            </Button>
+          ) : tab === 'errors' ? (
+            tt('noErrors')
+          ) : (
+            <>
+              <span className="sr-only">{tt('loadingDots')}</span>
+              <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6" aria-hidden="true">
+                {Array.from({ length: 6 }, (_, i) => (
+                  <div key={i} className="h-[86px] rounded-[20px] border-2 border-pline bg-pcard animate-pulse" />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>
