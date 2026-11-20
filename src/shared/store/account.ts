@@ -47,12 +47,6 @@ export const ACCOUNT_STORAGE_KEYS = [
   'yhq-level-seen',
   'yhq-goal',
   'yhq-formula-favs',
-  // Grafik quruvchi workspace'i (ifodalar/slayderlar — user-scoped)
-  'yhq-graph',
-
-
-  // Matematik doska sessiyasi (Faza 1 skelet — features/math-board)
-  'yhq-math-board',
   // CamAi o'qituvchi savollari qoralamasi (features/camai — user-scoped)
   'yhq-camai-custom',
   // "Sharh yozdim / keyinroq" holati (shared/store/useReviewPromptStore) —
@@ -73,8 +67,6 @@ export const ACCOUNT_STORAGE_PREFIXES = [
   'yhq-signs-best-',
   // Test chizmalari sessiya-key bilan saqlanadi; boshqa akkauntga sizmasin.
   'yhq-test-drawing-v2:',
-  // Matematik doska chizmalari (features/math-board) — account switch'da tozalanadi.
-  'yhq-math-board-drawing:',
 ] as const
 
 /**

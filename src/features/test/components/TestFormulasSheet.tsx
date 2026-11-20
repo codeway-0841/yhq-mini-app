@@ -1,9 +1,8 @@
 import { useState, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Search, BookOpen, X, LineChart } from 'lucide-react'
+import { Search, BookOpen, X } from 'lucide-react'
 import { Sheet, SheetBody, SheetHeader, SheetTitle } from '../../../shared/components/ui/sheet'
 import { useT, type Lang } from '../../../shared/i18n'
-import { FORMULA_SUBJECTS, FORMULA_PLOTS, type FormulaSubject, type FormulaTopic } from '../../../content/formulas'
+import { FORMULA_SUBJECTS, type FormulaSubject, type FormulaTopic } from '../../../content/formulas'
 
 interface TestFormulasSheetProps {
   open: boolean
@@ -19,15 +18,7 @@ export default function TestFormulasSheet({
   subjectId,
 }: TestFormulasSheetProps) {
   const tt = useT(language)
-  const navigate = useNavigate()
   const [search, setSearch] = useState('')
-
-  const openGraph = (formulaId: string): void => {
-    const plot = FORMULA_PLOTS[formulaId]
-    if (!plot) return
-    onClose()
-    navigate(`/grafik?e=${encodeURIComponent(plot.expr)}&x=${encodeURIComponent(plot.xVar)}`)
-  }
 
   // Fan mosligi: agar subjectId 'matematika', 'fizika' kabi bo'lsa o'shani tanlaymiz,
   // aks holda birinchi mavjud fan.
@@ -183,16 +174,6 @@ export default function TestFormulasSheet({
                     {language === 'ru' ? f.titleRu : f.title}
                   </span>
                   <div className="flex items-center gap-1.5">
-                    {FORMULA_PLOTS[f.id] && (
-                      <button
-                        type="button"
-                        onClick={() => openGraph(f.id)}
-                        aria-label={tt('graphTitle')}
-                        className="grid size-7 place-items-center rounded-lg bg-psurface text-pmuted transition-colors hover:text-pprimary"
-                      >
-                        <LineChart size={14} />
-                      </button>
-                    )}
                     <span className="text-[10px] text-pmuted font-medium bg-psurface px-2 py-0.5 rounded-full shadow-2xs">
                       {f.topicName}
                     </span>

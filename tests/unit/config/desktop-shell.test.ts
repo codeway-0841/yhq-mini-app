@@ -152,19 +152,13 @@ describe('Desktop App Shell (production, sidebar + responsive container)', () =>
     expect(read('features/ai-test/AiTestHub.tsx')).toContain('lg:grid-cols-2')
   })
 
-  it('batch-5: Formulalar/Qidiruv/Adaptive desktop', () => {
-    const formulas = read('features/formulas/FormulasPage.tsx')
-    expect(formulas).toContain('sm:grid-cols-3')
-    expect(formulas).toContain('xl:grid-cols-4')
+  it('batch-5: Qidiruv/Adaptive desktop', () => {
     expect(read('features/search/SearchPage.tsx')).toContain('lg:grid-cols-2')
     expect(read('features/adaptive/AdaptivePage.tsx')).toContain('lg:max-w-2xl')
   })
 
-  it('batch-8: Admin keng kontent, Graph baland kanvas (NotFound/Sheet tayyor)', () => {
+  it('batch-8: Admin keng kontent (NotFound/Sheet tayyor)', () => {
     expect(read('features/admin/AdminPage.tsx')).toContain('lg:max-w-2xl')
-    const graph = read('features/graph/GraphPage.tsx')
-    expect(graph).toContain('lg:h-[58vh]')
-    expect(graph).toContain('lg:grid-cols-4')
   })
 
   it('batch-6: Onboarding desktop split + var-rang opacity fix (onboarding/login)', () => {

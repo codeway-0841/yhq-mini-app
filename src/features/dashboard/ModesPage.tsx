@@ -11,13 +11,9 @@ import {
   Signpost,
   Hash,
   Brain,
-  NotebookText,
-  LineChart,
 
-  PenLine,
   ScanFace,
   Radio,
-  Sparkles,
   CarFront,
   Clapperboard,
 } from 'lucide-react'
@@ -65,7 +61,6 @@ export default function ModesPage() {
     { icon: Swords,        label: tt('duelTitle'),     onClick: () => navigate('/octagon') },
     { icon: HeartCrack,    label: tt('mistakes'),      onClick: () => navigate('/xatolar') },
     { icon: GraduationCap, label: tt('lessons'),       onClick: () => navigate(subject.id === 'rustili' ? '/darslik/rus-tili' : subject.id === 'rusadabiyot' ? '/darslik/rus-adabiyot' : '/darslik') },
-    { icon: Sparkles,      label: tt('interactiveLessons'), onClick: () => navigate('/interaktiv') },
     { icon: Clapperboard,   label: tt('mascotStudioTitle'), onClick: () => navigate('/maskotlar') },
     { icon: LibraryBig,    label: tt('library'),       onClick: () => navigate('/kutubxona') },
     { icon: Bookmark,      label: tt('saved'),         onClick: goSaved },
@@ -77,11 +72,6 @@ export default function ModesPage() {
       : []),
     { icon: Hash,          label: tt('numeric'),       onClick: goMode('numeric', tt('numeric')) },
     { icon: Brain,         label: tt('adaptiveTitle'), onClick: () => navigate('/adaptive') },
-    { icon: NotebookText,  label: tt('cheatsheets'),   onClick: () => navigate('/shpargalkalar') },
-    ...(['matematika', 'fizika'].includes(subject.id)
-      ? [{ icon: LineChart, label: tt('graphTitle'),   onClick: () => navigate('/grafik') }]
-      : []),
-    { icon: PenLine,       label: tt('mathBoardTitle'), onClick: () => navigate('/doska') },
 
     { icon: ScanFace,      label: tt('camaiTitle'),       onClick: () => navigate('/camai') },
     { icon: Radio,         label: tt('liveTitle'),        onClick: () => navigate('/live') },

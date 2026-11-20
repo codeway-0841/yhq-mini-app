@@ -34,9 +34,6 @@ const envSchema = z.object({
 
   /** Integratsiyalar (optional — yo'q bo'lsa feature o'chiq) */
   GEMINI_API_KEY: z.string().optional(),
-  /** Math Board kvota o'chirgichi — TEST uchun 'true' (hammaga bepul).
-   *  Production default: kvota YOQILGAN. Prod'da 'true' bo'lsa boot FATAL. */
-  MATH_BOARD_QUOTA_DISABLED: z.enum(['true', 'false']).optional().default('false'),
   /** Meta Model API (AI Kurslar real generatsiyasi) — yo'q bo'lsa mock fallback */
   META_API_KEY:  z.string().optional(),
   CRON_SECRET:    z.string().optional(),
@@ -280,10 +277,7 @@ export const config = {
 
   /** AI Tutor (Gemini) — yo'q bo'lsa endpoint 503 qaytaradi */
   ai: {
-    geminiApiKey: env.GEMINI_API_KEY,
-    /** Math Board kvota — prod default ON; 'true' faqat test/dev uchun */
-    mathBoardQuotaDisabled: env.MATH_BOARD_QUOTA_DISABLED === 'true',
-    /** Meta Model API (AI Kurslar) — yo'q bo'lsa deterministik mock outline */
+    geminiApiKey: env.GEMINI_API_KEY,    /** Meta Model API (AI Kurslar) — yo'q bo'lsa deterministik mock outline */
     metaApiKey: env.META_API_KEY,
   },
 

@@ -46,8 +46,6 @@ import testSessionsRouter from './modules/test-sessions/test-sessions.router'
 import certificateRouter  from './modules/certificate/certificate.router'
 import storageRouter      from './modules/storage/storage.router'
 import shareRouter        from './modules/share/share.router'
-import graphsRouter       from './modules/graphs/graphs.router'
-import mathBoardRouter    from './modules/math-board/math-board.router'
 import liveRouter          from './modules/live/live.router'
 import { paymentRouter }  from './modules/payments/payment.router'
 import reviewsRouter      from './modules/reviews/reviews.router'
@@ -84,12 +82,7 @@ export function createApp() {
   // uchun global json parser'dan OLDIN raw ushlanadi (req._body flag keyingi
   // parser'larni o'tkazib yuboradi — admin/questions pattern'i bilan bir xil).
   // LiveKit webhook'lar `application/webhook+json` yuboradi (application/json EMAS).
-  app.use('/api/live/webhook', express.raw({ type: ['application/json', 'application/webhook+json'], limit: '100kb' }))
-  // Matematik doska qo'lyozma snapshot PNG base64 (BoardCanvas, 512px)
-  app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))
-  // Matematik doska blokli recognition (Faza 4: N blok/rasm, 6mb jami)
-  app.use('/api/math-board/recognize-blocks', express.json({ limit: '6mb' }))
-  app.use(express.json({ limit: '300kb' }))
+  app.use('/api/live/webhook', express.raw({ type: ['application/json', 'application/webhook+json'], limit: '100kb' }))  app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))  app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
   // Bo'lmasa rate limiter barcha foydalanuvchini bitta bucket'ga soladi.
@@ -204,8 +197,6 @@ export function createApp() {
   app.use('/api', certificateRouter)
   app.use('/api', storageRouter)
   app.use('/api', shareRouter)
-  app.use('/api', graphsRouter)
-  app.use('/api', mathBoardRouter)
   app.use('/api', liveRouter)
   app.use('/api/payments', paymentRouter)
   app.use('/api', reviewsRouter)

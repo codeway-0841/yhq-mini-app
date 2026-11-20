@@ -47,7 +47,6 @@ const shopChunk            = () => import('./features/shop/ShopPage')
 const statistikaChunk      = () => import('./features/stats/StatistikaPage')
 
 const flashcardsChunk      = () => import('./features/flashcards/FlashcardsPage')
-const formulasChunk        = () => import('./features/formulas/FormulasPage')
 const searchChunk           = () => import('./features/search/SearchPage')
 const aiTestHubChunk        = () => import('./features/ai-test/AiTestHub')
 const aiTestSessionChunk    = () => import('./features/ai-test/AiTestSession')
@@ -63,13 +62,10 @@ const resetPasswordChunk   = () => import('./features/auth/pages/ResetPasswordPa
 const modesChunk           = () => import('./features/dashboard/ModesPage')
 const libraryChunk         = () => import('./features/library/LibraryPage')
 const libraryReaderChunk   = () => import('./features/library/LibraryReaderPage')
-const graphChunk           = () => import('./features/graph/GraphPage')
 
-const mathBoardChunk       = () => import('./features/math-board/MathBoardPage')
 const camaiChunk           = () => import('./features/camai/CamAiPage')
 const liveListChunk        = () => import('./features/live/LivePages')
 const reviewsChunk         = () => import('./features/reviews/ReviewsPage')
-const interactiveLessonsChunk = () => import('./features/interactive-lessons/InteractiveLessonsPage')
 const mascotStudioChunk = () => import('./features/mascot-studio/MascotStudioPage')
 const riveMvpChunk      = () => import('./features/rive-mvp/BrilliantMvpPage')
 const lessonTransitionHostChunk = () => import('./features/lessons/LessonTransitionHost')
@@ -96,7 +92,6 @@ const ShopPage        = lazy(shopChunk)
 const StatistikaPage  = lazy(statistikaChunk)
 
 const FlashcardsPage  = lazy(flashcardsChunk)
-const FormulasPage    = lazy(formulasChunk)
 const SearchPage      = lazy(searchChunk)
 const AiTestHub       = lazy(aiTestHubChunk)
 const AiTestSession   = lazy(aiTestSessionChunk)
@@ -108,14 +103,11 @@ const ResetPasswordPage = lazy(resetPasswordChunk)
 const ModesPage        = lazy(modesChunk)
 const LibraryPage      = lazy(libraryChunk)
 const LibraryReaderPage = lazy(libraryReaderChunk)
-const GraphPage        = lazy(graphChunk)
 
-const MathBoardPage    = lazy(mathBoardChunk)
 const CamAiPage        = lazy(camaiChunk)
 const LiveListPage     = lazy(async () => ({ default: (await liveListChunk()).default }))
 const LiveRoomPage     = lazy(async () => ({ default: (await liveListChunk()).LiveRoomRoute }))
 const ReviewsPage      = lazy(reviewsChunk)
-const InteractiveLessonsPage = lazy(interactiveLessonsChunk)
 const MascotStudioPage = lazy(mascotStudioChunk)
 const BrilliantMvpPage = lazy(riveMvpChunk)
 
@@ -133,10 +125,10 @@ const routeChunkPrefetchers = [
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
   topicsChunk, darslikChunk, lessonTransitionHostChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
   streakChunk, leaderboardChunk, statistikaChunk, adaptiveChunk, flashcardsChunk,
-  formulasChunk, searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
-  interactiveLessonsChunk, reviewsChunk,
+  searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
+  reviewsChunk,
   // 3-to'lqin (Og'ir AI/Studio vositalar va kam kiriladigan auth/admin sahifalar):
-  aiTestHubChunk, aiTestSessionChunk, camaiChunk, mathBoardChunk, graphChunk,
+  aiTestHubChunk, aiTestSessionChunk, camaiChunk,
   liveListChunk, mascotStudioChunk, riveMvpChunk, notFoundChunk, onboardingChunk, loginChunk,
   verifyEmailChunk, resetPasswordChunk, adminChunk,
 ]
@@ -423,13 +415,10 @@ export default function App() {
             <Route path="/statistika" element={<StatistikaPage />} />
 
             <Route path="/flashcards" element={<FlashcardsPage />} />
-            <Route path="/shpargalkalar" element={<FormulasPage />} />
-            <Route path="/grafik"     element={<GraphPage />} />
             <Route path="/qidiruv"    element={<SearchPage />} />
             <Route path="/ai-test"    element={<AiTestHub />} />
             <Route path="/ai-test/:id" element={<AiTestSession />} />
 
-            <Route path="/doska" element={<MathBoardPage />} />
             <Route path="/camai" element={<CamAiPage />} />
             <Route path="/live" element={<LiveListPage />} />
             <Route path="/live/:id" element={<LiveRoomPage />} />
@@ -437,7 +426,6 @@ export default function App() {
 
 
             <Route path="/sharhlar"   element={<ReviewsPage />} />
-            <Route path="/interaktiv" element={<InteractiveLessonsPage />} />
             <Route path="/maskotlar" element={<MascotStudioPage />} />
             <Route path="/mvp"       element={<BrilliantMvpPage />} />
             <Route path="/rive-mvp"  element={<BrilliantMvpPage />} />

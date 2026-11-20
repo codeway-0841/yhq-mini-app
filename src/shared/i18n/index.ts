@@ -204,11 +204,6 @@ const UZ = {
   mistakeFixDesc: "Xato tuzatish",
   premiumTagline: "Reklamasiz + cheksiz mashq + batafsil tahlil",
   tryWord: "Sinash",
-  // Interaktiv darslik (Papermorph animated engine)
-  interactiveLessons: "Interaktiv Darslik",
-  interactiveLessonsDesc: "3Blue1Brown uslubidagi jonli animatsiyalar va diktor ovozi",
-  interactiveLessonsCta: "Animatsion darsni ochish",
-  interactiveLessonsReward: "Dars yakunlandi! +{coins} tanga va +{xp} XP hisobingizga qo'shildi!",
   // ── KIVVI Drive — interaktiv yo‘l vaziyatlari ──
   driveTitle: "KIVVI Drive",
   driveMode: "Haydash simulyatori",
@@ -236,75 +231,24 @@ const UZ = {
   driveRightHandTitle: "O‘ng qo‘l qoidasi",
   driveRightHandPrompt: "Teng chorrahada kimning ustunligi bor?",
   driveRightHandRule: "Teng ahamiyatli chorrahada o‘ng tomondan kelayotgan transportga yo‘l beriladi. Sariq mashina birinchi yuradi.",
-  // Shpargalkalar (formulalar)
-  cheatsheets: "Shpargalkalar", cheatsheetsDesc: "Barcha fanlar uchun formulalar to'plami",
+
   searchFormula: "Qidirish...", favFormulas: "Sevimli formulalarim",
   formulasWord: "formula", notFoundF: "Hech narsa topilmadi",
-  // Grafik quruvchi (y = sin(x), fizika formulalari)
-  graphTitle: "Grafik quruvchi", graphSubtitle: "Funksiya yozing — grafik darhol chiziladi",
-  graphAddFunction: "Funksiya qo'shish", graphExprPlaceholder: "Masalan: sin(x) yoki v0 + a*t",
-  graphXAxis: "X o'qi", graphVariables: "Parametrlar", graphPresets: "Tayyor grafiklar",
-  graphPresetMath: "Matematika", graphPresetPhysics: "Fizika",
-  graphResetView: "Ko'rinishni tiklash", graphSave: "Saqlash", graphSaved: "Saqlandi",
-  graphSaveName: "Grafik nomi", graphSavedGraphs: "Saqlangan grafiklar",
-  graphNoSaved: "Hali saqlangan grafiklar yo'q", graphDelete: "O'chirish",
-  graphDeleteConfirm: "Bu grafik o'chirilsinmi?", graphCancel: "Bekor qilish",
-  graphShare: "Ulashish", graphShareCopied: "Havola nusxalandi",
-  graphReadOnly: "Ulashilgan grafik — faqat ko'rish", graphCopyToMy: "O'zimga nusxalash",
-  graphClose: "Yopish", graphColor: "Rangni almashtirish", graphToggleVisible: "Ko'rinishini almashtirish",
-  graphTokenPad: "Tez kiritish", graphLimitReached: "Saqlash limiti (20 ta) to'ldi",
-  graphSaveOffline: "Saqlash uchun internet kerak", graphOpenError: "Grafik yuklanmadi",
-  graphAddHint: "Funksiya yozing — masalan sin(x)",
-  graphTraceHint: "Grafikni bosing — nuqta qiymati ko'rinadi",
-  // Matematik doska (Chiron-analog, Faza 1 skelet)
-  mathBoardTitle: "Matematik doska", mathBoardSubtitle: "Qadam-baqadam yeching — har qator tekshiriladi",
-  mathBoardComingSoon: "Tez orada — doska dvigateli Faza 2'da keladi",
-  // Matematik doska MVP (Faza 3)
-  mathBoardProblem: "Masala", mathBoardInputLabel: "Keyingi qadamni yozing",
-  mathBoardAccept: "Qabul qilish", mathBoardUndo: "Oxirgisini o'chirish",
-  mathBoardNeedProof: "Aniq isbot topilmadi — qadamni exact shaklda yozing (qavslarni oching, soddalashtiring).",
-  mathBoardSolved: "Yechildi!", mathBoardSolvedHint: "Yakuniy javob topildi. Yangi masalani sinab ko'ring.",
-  mathBoardCorrect: "To'g'ri", mathBoardProbably: "To'g'ri ko'rinadi",
-  mathBoardUncertain: "Noaniq — soha farqi", mathBoardWrong: "Noto'g'ri", mathBoardInvalid: "Davomi emas",
-  mathBoardDomain: "Aniqlanmagan", mathBoardSyntax: "Yozuv xatosi",
-  mathBoardUnknown: "Noaniq", mathBoardChecking: "Tekshirilmoqda…",
-  // Matematik doska chizish + recognition (Faza 4)
-  mathBoardTypeTab: "Yozish", mathBoardDrawTab: "Chizish",
-  mathBoardDrawHint: "Barmoq/stylus bilan bitta ifodani yozing",
-  mathBoardRecognize: "Tanish", mathBoardRecognizing: "Tanilmoqda…",
-  mathBoardEmptyCanvas: "Avval doskaga yozing",
-  mathBoardConfirmTitle: "Tanish natijasi — tekshirib to'g'rilang",
-  mathBoardUseResult: "Kiritishga o'tkazish", mathBoardTryAgain: "Qayta urinish",
-  mathBoardBlockFailed: "Tanilmadi — aniqroq yozib qayta urining",
-  // Matematik doska completion (Faza 6)
-  mathBoardNext: "Keyingi masala", mathBoardViewSolution: "Yechimni ko'rish",
-  mathBoardSolutionTitle: "Qabul qilingan yechim",
-  // Matematik doska Faza 3 (toolbar/FAB/overlay)
-  mathBoardHelp: "Yordam", mathBoardFabMenu: "Amallar", mathBoardFabClose: "Yopish",
-  mathBoardLassoSoon: "Lasso (tez orada)",
-  mathBoardQuotaFree: "Bugungi bepul limit tugadi (kuniga 2 ta) — ertaga qayting yoki Premium oling.",
-  mathBoardQuotaDaily: "Bugungi limit tugadi — ertaga qayta urining.",
-  mathBoardAiOff: "AI tanish hozircha o'chiq — birozdan keyin qayta urining.",
-  mathBoardServerOld: "Server eski — backend'ni qayta ishga tushiring (yangi endpoint topilmadi).",
-  mathBoardUnreadable: "AI o'qiy olmadi — raqamlarni aniqroq, bir-biriga tegizmay yozing.",
-  mathBoardOffline: "Internet yo'q — tanish va AI hint ishlamaydi (lokal tekshirish ishlaydi)",
-  mathBoardPersistFailed: "Chizma saqlanmadi — qurilma xotirasi to'lgan bo'lishi mumkin. Sahifa yangilansa chizma yo'qoladi.",
-  // Matematik doska lokal hintlar (Faza 5)
-  mathBoardHint: "Maslahat",
-  mathBoardHintArithmetic: "Arifmetikani qayta tekshiring — yopiq hisob noto'g'ri chiqdi.",
-  mathBoardHintDivZero: "Nolga bo'lish mumkin emas — maxrajni tekshiring.",
-  mathBoardHintLogDomain: "Logarifm argumenti musbat bo'lishi shart.",
-  mathBoardHintLogBase: "Logarifm asosi musbat va 1 dan farqli bo'lishi shart.",
-  mathBoardHintSqrt: "Manfiy sonning haqiqiy ildizi yo'q.",
-  mathBoardHintDomain: "Funksiya domeni buzildi — kiritilgan qiymat ruxsat etilmagan.",
-  mathBoardHintExtraneous: "Begona ildiz bo'lishi mumkin — kvadratga ko'tarishda har ildizni tekshiring.",
-  mathBoardHintNotFollow: "Bu qadam oldingisidan kelib chiqmaydi — o'tishni qayta ko'ring.",
-  mathBoardHintUnrelated: "O'zi to'g'ri, lekin bu masalaga aloqasi yo'q.",
-  mathBoardHintKind: "Shaklni saqlang — ifodaga ifoda, tenglamaga tenglama bilan davom eting.",
-  mathBoardHintUncertain: "Qiymatlar mos, lekin aniqlanmagan nuqta bor (masalan x=0) — shu nuqtani alohida tekshiring.",
-  mathBoardHintEmpty: "Avval qadamni yozing.",
-  mathBoardHintSyntax: "Yozuvda xatolik — qavslar va belgilarni tekshiring.",
-  mathBoardHintFallback: "Qadamni kichikroq bo'laklarga bo'lib, har birini alohida tekshiring.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // CamAi — sinfda kamera orqali adolatli tasodifiy tanlov (client-only o'yin)
   camaiTitle: "CamAi", camaiSubtitle: "Kamera o'quvchini tanlaydi — savolga javob beradi",
   camaiSourceBank: "Savol banki", camaiSourceCustom: "O'z savollarim",
@@ -330,31 +274,29 @@ const UZ = {
   camaiRename: "Ism yozish", camaiSave: "Saqlash", camaiCancel: "Bekor qilish",
   camaiEndlessHint: "Savollar tugamaydi — o'yinni xohlagan payt \"Yakunlash\" bilan to'xtatasiz",
   camaiRestart: "Qayta boshlash", camaiNewSetup: "Yangi sozlash",
-  mathBoardAskAi: "AI'dan so'rash", mathBoardAskingAi: "AI o'ylamoqda…",
-  mathBoardAiHintTitle: "AI savoli",
-  graphErrEmpty: "Ifoda bo'sh", graphErrTooLong: "Ifoda juda uzun (200 belgidan oshmasin)",
-  graphErrTooComplex: "Ifoda juda murakkab", graphErrUnexpectedEnd: "Ifoda tugallanmagan",
-  graphErrToken: "Kutilmagan belgi: {token}", graphErrFunction: "Noto'g'ri funksiya: {name}",
-  graphErrArity: "Argumentlar soni noto'g'ri: {name}", graphErrSyntax: "Ifodada xatolik",
+
+
+
+
   // Grafik tahlili (hosila/urinma/integral) va AI chat
-  graphAnalysis: "Tahlil", graphAnalysisFor: "Funksiya",
-  graphDerivative: "Hosila (f′)", graphTangent: "Urinma",
-  graphIntegral: "Integral (yuza)", graphAreaValue: "Yuza",
-  graphRiemannValue: "Riemann yig'indisi",
+
+
+
+
   // Grafik: undo/redo, jadval, animatsiya, markerlar
-  graphUndo: "Qaytarish", graphRedo: "Takrorlash",
-  graphTable: "Jadval", graphCopyTable: "Jadvalni nusxalash", graphCopied: "Nusxalandi",
-  graphPlay: "O'ynatish", graphPause: "To'xtatish", graphPointAnim: "Nuqta harakati",
-  graphMarkers: "Xarakterli nuqtalar",
-  graphRoots: "Ildizlar", graphExtrema: "Ekstremumlar", graphIntersections: "Kesishmalar",
-  graphRecent: "So'nggi",
-  graphModesHint: "Polyar: r=… · Parametrik: x=…; y=… · Implicit: x²+y²=1 · Tengsizlik: y>x²",
+
+
+
+
+
+
+
   // Lab (o'lchov nuqtalari + regression), sekant va AI-vision
-  graphLab: "Lab", graphLabAdd: "Nuqta qo'shish", graphLabPick: "Bosib qo'shish",
-  graphLabPickHint: "Grafikni bosing — o'lchov nuqtasi qo'shiladi",
-  graphLabEmpty: "Hali nuqtalar yo'q", graphLabClear: "Tozalash",
-  graphLabRegression: "Regressiya", graphLabSlope: "Qiyalik k", graphLabIntercept: "Kesish b",
-  graphSecant: "Sekant (h → 0)", graphSecantAnim: "h ni kichraytirish",
+
+
+
+
+
   // Test
   question: "savol", finish: "Yakunlash", prev: "Oldingi", next: "Keyingi",
   unanswered: "Javobsiz", results: "Natijalar", retry: "Qayta",
@@ -1428,11 +1370,6 @@ const RU: Record<Keys, string> = {
   mistakeFixDesc: "Исправление ошибок",
   premiumTagline: "Без рекламы + безлимитная практика + аналитика",
   tryWord: "Попробовать",
-  // Интерактивный учебник (Papermorph animated engine)
-  interactiveLessons: "Интерактивный учебник",
-  interactiveLessonsDesc: "Живые анимации и голос диктора в стиле 3Blue1Brown",
-  interactiveLessonsCta: "Открыть интерактивный урок",
-  interactiveLessonsReward: "Урок завершен! +{coins} монет и +{xp} XP начислено!",
   // ── KIVVI Drive — интерактивные дорожные ситуации ──
   driveTitle: "KIVVI Drive",
   driveMode: "Симулятор вождения",
@@ -1460,75 +1397,24 @@ const RU: Record<Keys, string> = {
   driveRightHandTitle: "Правило правой руки",
   driveRightHandPrompt: "У кого приоритет на равнозначном перекрёстке?",
   driveRightHandRule: "На равнозначном перекрёстке уступают транспорту справа. Жёлтая машина едет первой.",
-  // Шпаргалки (формулы)
-  cheatsheets: "Шпаргалки", cheatsheetsDesc: "Формулы по всем предметам",
+
   searchFormula: "Поиск...", favFormulas: "Избранные формулы",
   formulasWord: "формул", notFoundF: "Ничего не найдено",
-  // Конструктор графиков (y = sin(x), формулы физики)
-  graphTitle: "Конструктор графиков", graphSubtitle: "Введите функцию — график построится сразу",
-  graphAddFunction: "Добавить функцию", graphExprPlaceholder: "Например: sin(x) или v0 + a*t",
-  graphXAxis: "Ось X", graphVariables: "Параметры", graphPresets: "Готовые графики",
-  graphPresetMath: "Математика", graphPresetPhysics: "Физика",
-  graphResetView: "Сбросить вид", graphSave: "Сохранить", graphSaved: "Сохранено",
-  graphSaveName: "Название графика", graphSavedGraphs: "Сохранённые графики",
-  graphNoSaved: "Пока нет сохранённых графиков", graphDelete: "Удалить",
-  graphDeleteConfirm: "Удалить этот график?", graphCancel: "Отмена",
-  graphShare: "Поделиться", graphShareCopied: "Ссылка скопирована",
-  graphReadOnly: "Общий график — только просмотр", graphCopyToMy: "Скопировать себе",
-  graphClose: "Закрыть", graphColor: "Сменить цвет", graphToggleVisible: "Показать/скрыть",
-  graphTokenPad: "Быстрый ввод", graphLimitReached: "Лимит сохранений (20) достигнут",
-  graphSaveOffline: "Для сохранения нужен интернет", graphOpenError: "Не удалось загрузить график",
-  graphAddHint: "Введите функцию — например sin(x)",
-  graphTraceHint: "Нажмите на график — увидите значение точки",
-  // Математическая доска (Chiron-аналог, скелет Фазы 1)
-  mathBoardTitle: "Мат. доска", mathBoardSubtitle: "Решайте по шагам — каждая строка проверяется",
-  mathBoardComingSoon: "Скоро — движок доски появится в Фазе 2",
-  // Математическая доска MVP (Фаза 3)
-  mathBoardProblem: "Задача", mathBoardInputLabel: "Введите следующий шаг",
-  mathBoardAccept: "Принять", mathBoardUndo: "Отменить последний",
-  mathBoardNeedProof: "Строгого доказательства нет — запишите шаг в точной форме (раскройте скобки, упростите).",
-  mathBoardSolved: "Решено!", mathBoardSolvedHint: "Ответ найден. Попробуйте новую задачу.",
-  mathBoardCorrect: "Верно", mathBoardProbably: "Похоже, верно",
-  mathBoardUncertain: "Неясно — разница областей", mathBoardWrong: "Неверно", mathBoardInvalid: "Не следует",
-  mathBoardDomain: "Не определено", mathBoardSyntax: "Ошибка записи",
-  mathBoardUnknown: "Неясно", mathBoardChecking: "Проверка…",
-  // Математическая доска: рисование + recognition (Фаза 4)
-  mathBoardTypeTab: "Ввод", mathBoardDrawTab: "Рисунок",
-  mathBoardDrawHint: "Напишите одно выражение пальцем/стилусом",
-  mathBoardRecognize: "Распознать", mathBoardRecognizing: "Распознаём…",
-  mathBoardEmptyCanvas: "Сначала напишите на доске",
-  mathBoardConfirmTitle: "Результат — проверьте и исправьте",
-  mathBoardUseResult: "Перенести во ввод", mathBoardTryAgain: "Повторить",
-  mathBoardBlockFailed: "Не распознано — напишите чётче и повторите",
-  // Математическая доска: завершение (Фаза 6)
-  mathBoardNext: "Следующая задача", mathBoardViewSolution: "Посмотреть решение",
-  mathBoardSolutionTitle: "Принятое решение",
-  // Математическая доска Фаза 3 (тулбар/FAB/оверлей)
-  mathBoardHelp: "Помощь", mathBoardFabMenu: "Действия", mathBoardFabClose: "Закрыть",
-  mathBoardLassoSoon: "Лассо (скоро)",
-  mathBoardQuotaFree: "Бесплатный лимит на сегодня исчерпан (2 в день) — возвращайтесь завтра или возьмите Premium.",
-  mathBoardQuotaDaily: "Дневной лимит исчерпан — попробуйте завтра.",
-  mathBoardAiOff: "Распознавание AI временно недоступно — попробуйте позже.",
-  mathBoardServerOld: "Сервер устарел — перезапустите backend (новый endpoint не найден).",
-  mathBoardUnreadable: "AI не смог прочитать — пишите цифры чётче, не сливая друг с другом.",
-  mathBoardOffline: "Нет интернета — распознавание и AI-подсказки недоступны (локальная проверка работает)",
-  mathBoardPersistFailed: "Рисунок не сохранён — возможно, память переполнена. При перезагрузке рисунок пропадёт.",
-  // Математическая доска: локальные подсказки (Фаза 5)
-  mathBoardHint: "Подсказка",
-  mathBoardHintArithmetic: "Перепроверьте арифметику — закрытое вычисление неверно.",
-  mathBoardHintDivZero: "На ноль делить нельзя — проверьте знаменатель.",
-  mathBoardHintLogDomain: "Аргумент логарифма должен быть положительным.",
-  mathBoardHintLogBase: "Основание логарифма положительно и не равно 1.",
-  mathBoardHintSqrt: "У отрицательного числа нет действительного корня.",
-  mathBoardHintDomain: "Нарушена область определения — значение недопустимо.",
-  mathBoardHintExtraneous: "Возможен посторонний корень — проверяйте каждый корень после возведения в квадрат.",
-  mathBoardHintNotFollow: "Этот шаг не следует из предыдущего — пересмотрите переход.",
-  mathBoardHintUnrelated: "Само по себе верно, но к задаче не относится.",
-  mathBoardHintKind: "Сохраняйте форму — выражение продолжайте выражением, уравнение уравнением.",
-  mathBoardHintUncertain: "Значения совпадают, но есть неопределённая точка (например x=0) — проверьте её отдельно.",
-  mathBoardHintEmpty: "Сначала запишите шаг.",
-  mathBoardHintSyntax: "Ошибка записи — проверьте скобки и знаки.",
-  mathBoardHintFallback: "Разбейте шаг на мелкие части и проверяйте каждую отдельно.",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // CamAi — честный случайный выбор ученика через камеру (client-only игра)
   camaiTitle: "CamAi", camaiSubtitle: "Камера выбирает ученика — он отвечает на вопрос",
   camaiSourceBank: "Банк вопросов", camaiSourceCustom: "Мои вопросы",
@@ -1554,31 +1440,29 @@ const RU: Record<Keys, string> = {
   camaiRename: "Ввести имя", camaiSave: "Сохранить", camaiCancel: "Отмена",
   camaiEndlessHint: "Вопросы не заканчиваются — остановите игру кнопкой «Завершить», когда захотите",
   camaiRestart: "Начать заново", camaiNewSetup: "Новые настройки",
-  mathBoardAskAi: "Спросить AI", mathBoardAskingAi: "AI думает…",
-  mathBoardAiHintTitle: "Вопрос AI",
-  graphErrEmpty: "Пустое выражение", graphErrTooLong: "Выражение слишком длинное (до 200 символов)",
-  graphErrTooComplex: "Выражение слишком сложное", graphErrUnexpectedEnd: "Выражение не завершено",
-  graphErrToken: "Неожиданный символ: {token}", graphErrFunction: "Неверная функция: {name}",
-  graphErrArity: "Неверное число аргументов: {name}", graphErrSyntax: "Ошибка в выражении",
+
+
+
+
   // Анализ графика (производная/касательная/интеграл) и AI-чат
-  graphAnalysis: "Анализ", graphAnalysisFor: "Функция",
-  graphDerivative: "Производная (f′)", graphTangent: "Касательная",
-  graphIntegral: "Интеграл (площадь)", graphAreaValue: "Площадь",
-  graphRiemannValue: "Сумма Римана",
+
+
+
+
   // График: undo/redo, таблица, анимация, маркеры
-  graphUndo: "Отменить", graphRedo: "Вернуть",
-  graphTable: "Таблица", graphCopyTable: "Скопировать таблицу", graphCopied: "Скопировано",
-  graphPlay: "Запустить", graphPause: "Пауза", graphPointAnim: "Движение точки",
-  graphMarkers: "Характерные точки",
-  graphRoots: "Корни", graphExtrema: "Экстремумы", graphIntersections: "Пересечения",
-  graphRecent: "Недавние",
-  graphModesHint: "Полярные: r=… · Параметрические: x=…; y=… · Неявные: x²+y²=1 · Неравенства: y>x²",
+
+
+
+
+
+
+
   // Lab (точки измерений + регрессия), секущая и AI-vision
-  graphLab: "Лаборатория", graphLabAdd: "Добавить точку", graphLabPick: "Добавлять нажатием",
-  graphLabPickHint: "Нажмите на график — точка измерения добавится",
-  graphLabEmpty: "Пока нет точек", graphLabClear: "Очистить",
-  graphLabRegression: "Регрессия", graphLabSlope: "Наклон k", graphLabIntercept: "Сдвиг b",
-  graphSecant: "Секущая (h → 0)", graphSecantAnim: "Уменьшать h",
+
+
+
+
+
   question: "вопрос", finish: "Завершить", prev: "Назад", next: "Далее",
   unanswered: "Без ответа", results: "Результаты", retry: "Ещё раз",
   correct: "Правильно", wrong: "Ошибка", passed: "Сдано ✓", failed: "Не сдано ✗",

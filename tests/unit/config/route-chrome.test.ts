@@ -31,7 +31,7 @@ describe('route chrome registry', () => {
   })
 
   it('AI va canvas route-larni workspace sifatida belgilaydi', () => {
-    for (const pathname of ['/ai-test', '/ai-test/session-1', '/camai', '/doska']) {
+    for (const pathname of ['/ai-test', '/ai-test/session-1', '/camai']) {
       expect(getRouteChrome(pathname), pathname).toMatchObject({
         mode: 'workspace',
         bottomNavigation: false,
