@@ -9,7 +9,7 @@ import {
   loadRusadabiyotBlock,
 } from '../../content/darslik-rusadabiyot'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
-import { registerModal } from '../../shared/lib/navigation'
+import { COURSE_HOME_BACK_STATE, leaveCourseMap, registerModal } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { speak, stopSpeaking } from '../../shared/lib/speech'
 import { useAppStore } from '../../shared/store/useAppStore'
@@ -501,7 +501,7 @@ export default function LiteratureCourseHome() {
         initialBlockId={selectedBlock.id}
         initialSectionIdx={requestedSection}
         includeUnitCheck={false}
-        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        onBackHome={() => leaveCourseMap(navigate, location)}
         renderOverlay={(ctx) => {
           const currentIdx = RUSADABIYOT_BLOCKS.findIndex((b) => b.id === ctx.block.id)
           const nextEra = currentIdx >= 0 ? RUSADABIYOT_BLOCKS[currentIdx + 1] : undefined
@@ -537,7 +537,7 @@ export default function LiteratureCourseHome() {
       cardLabelRu="Темы эпохи"
       stageLabelUz="Davr tanlash"
       stageLabelRu="Выбор эпохи"
-      onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` })}
+      onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` }, { state: COURSE_HOME_BACK_STATE })}
     />
   )
 }

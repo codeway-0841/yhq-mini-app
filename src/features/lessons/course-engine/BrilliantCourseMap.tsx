@@ -2,6 +2,8 @@ import {
   useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type CSSProperties,
 } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { ChevronLeft } from 'lucide-react'
+import { haptics } from '../../../platform/haptics'
 import { goBack } from '../../../shared/lib/navigation'
 import { addPageScrollListener, getPageScroller, pageScrollY, scrollPageToTop } from '../../../shared/lib/page-scroll'
 import { track } from '../../../shared/lib/analytics'
@@ -560,12 +562,19 @@ export function BrilliantCourseMap({
           <button
             type="button"
             className="cmap-bar-back"
-            onClick={() => (onBackHome ? onBackHome() : goBack(navigate))}
+            onClick={() => {
+              haptics.impact('light')
+              if (entryTimerRef.current !== null) {
+                window.clearTimeout(entryTimerRef.current)
+                entryTimerRef.current = null
+                setPendingEntry(null)
+              }
+              if (onBackHome) onBackHome()
+              else goBack(navigate)
+            }}
             aria-label={tt('backWord')}
           >
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M19 12H5M11 18l-6-6 6-6" />
-            </svg>
+            <ChevronLeft size={26} strokeWidth={2.25} aria-hidden="true" />
           </button>
 
           <span

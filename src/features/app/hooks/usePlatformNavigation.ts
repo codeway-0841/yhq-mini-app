@@ -69,7 +69,7 @@ export function usePlatformNavigation() {
       }
     }
 
-    if (el) {
+    if (el && !isPop) {
       el.classList.remove('route-page')
       void el.offsetWidth // reflow — CSS animatsiyani qayta boshlaydi
       el.classList.add('route-page')

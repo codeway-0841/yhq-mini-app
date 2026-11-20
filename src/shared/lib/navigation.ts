@@ -1,5 +1,21 @@
 import { useSyncExternalStore } from 'react'
-import type { NavigateFunction } from 'react-router-dom'
+import type { Location, NavigateFunction } from 'react-router-dom'
+
+export const COURSE_HOME_BACK_STATE = { fromCourseHome: true } as const
+
+/**
+ * Kurs xaritasidan kurs bosh sahifasiga xavfsiz qaytish:
+ * - Bosh sahifadan PUSH bilan kirilgan bo'lsa `navigate(-1)` orqali history stack'ni toza pop qiladi (dublikat qoldirmaydi).
+ * - To'g'ridan-to'g'ri deep-link/reload bilan kirilgan bo'lsa `replace: true` bilan kurs bosh sahifasiga o'tadi.
+ */
+export function leaveCourseMap(navigate: NavigateFunction, location: Pick<Location, 'pathname' | 'state'>): void {
+  const fromCourseHome = Boolean((location.state as { fromCourseHome?: boolean } | null)?.fromCourseHome)
+  if (fromCourseHome) {
+    navigate(-1)
+    return
+  }
+  navigate({ pathname: location.pathname }, { replace: true })
+}
 
 export interface ModalEntry {
   id: symbol

@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { RUSSIAN_SUBJECT_ID } from '../../../shared/subjects'
 import { DARSLIK_BLOCKS, getBlockOutline } from '../../content/darslik-rustili'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
+import { COURSE_HOME_BACK_STATE, leaveCourseMap } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { BrilliantCourseHome, type BrilliantCourseLevel } from '../lessons'
@@ -124,7 +125,7 @@ export default function RussianCourseHome() {
         initialBlockId={mapBlock.id}
         initialSectionIdx={requestedSection}
         mastery={mastery}
-        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        onBackHome={() => leaveCourseMap(navigate, location)}
       />
     )
   }
@@ -145,7 +146,7 @@ export default function RussianCourseHome() {
       onLaunchLevel={(level) => {
         const activeIdx = level.items.findIndex((item) => !item.done)
         const sectionQuery = activeIdx >= 0 ? `&section=${activeIdx}` : ''
-        navigate({ pathname: location.pathname, search: `?block=${level.id}${sectionQuery}` })
+        navigate({ pathname: location.pathname, search: `?block=${level.id}${sectionQuery}` }, { state: COURSE_HOME_BACK_STATE })
       }}
     />
   )

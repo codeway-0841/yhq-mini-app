@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { getSubject } from '../../shared/config/subjects'
 import { config } from '../../shared/config'
 import { api, type DbTopic } from '../../shared/api'
+import { COURSE_HOME_BACK_STATE, leaveCourseMap } from '../../shared/lib/navigation'
 import { scrollPageToTop } from '../../shared/lib/page-scroll'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
@@ -244,7 +245,7 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
         initialBlockId={mapBlock.id}
         initialSectionIdx={requestedSection}
         includeUnitCheck={false}
-        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        onBackHome={() => leaveCourseMap(navigate, location)}
         onOpenSection={({ section }) => { void launchTopicQuiz(section.key) }}
       />
     )
@@ -258,7 +259,7 @@ export default function SubjectBrilliantHome({ subjectId }: SubjectBrilliantHome
       loading={loadingTopics && levels.length === 0}
       defaultLevelIndex={defaultLevelIndex}
       onLaunchLevel={(level) => {
-        navigate({ pathname: location.pathname, search: `?block=${level.id}` })
+        navigate({ pathname: location.pathname, search: `?block=${level.id}` }, { state: COURSE_HOME_BACK_STATE })
       }}
       testId={`subject-brilliant-home-${subjectId}`}
       emptyFallback={

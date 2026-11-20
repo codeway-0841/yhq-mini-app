@@ -80,25 +80,30 @@ body[data-theme='dark'] .cmap {
     margin: calc(-1 * var(--safe-top-body, 0px)) -1rem 0;
     padding: var(--safe-top, 0px) 16px 0;
     background: var(--cmap-surface);
+    touch-action: manipulation;
   }
 }
 
 .cmap-bar-left {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
 
 .cmap-bar-back {
   display: grid;
   place-items: center;
-  width: 28px;
-  height: 28px;
+  width: 44px;
+  height: 44px;
+  margin-left: -10px;
   padding: 0;
   border: 0;
+  border-radius: 9999px;
   background: none;
   color: var(--cmap-ink);
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition: transform 0.16s ease;
 }
 

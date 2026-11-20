@@ -2,6 +2,7 @@ import { render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { usePlatformNavigation } from '../../../src/features/app/hooks/usePlatformNavigation'
+import { COURSE_HOME_BACK_STATE, leaveCourseMap } from '../../../src/shared/lib/navigation'
 
 function Harness() {
   const { pageRef } = usePlatformNavigation()
@@ -31,5 +32,15 @@ describe('usePlatformNavigation', () => {
       </MemoryRouter>,
     )
     expect(scrollTo).toHaveBeenCalledWith(0, 0)
+  })
+
+  it('leaveCourseMap kurs bosh sahifasidan kirilganda navigate(-1), deep-linkda replace qiladi', () => {
+    const navigate = vi.fn()
+    leaveCourseMap(navigate, { pathname: '/darslik-rustili', state: COURSE_HOME_BACK_STATE })
+    expect(navigate).toHaveBeenCalledWith(-1)
+
+    navigate.mockClear()
+    leaveCourseMap(navigate, { pathname: '/darslik-rustili', state: null })
+    expect(navigate).toHaveBeenCalledWith({ pathname: '/darslik-rustili' }, { replace: true })
   })
 })

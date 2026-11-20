@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { ChevronLeft } from 'lucide-react'
+import { haptics } from '../../../platform/haptics'
 import { cn } from '../../lib/cn'
 
 /**
@@ -49,9 +50,12 @@ export function PageHeader({
         {onBack && (
           <button
             type="button"
-            onClick={onBack}
+            onClick={() => {
+              haptics.impact('light')
+              onBack()
+            }}
             aria-label={backLabel ?? 'Orqaga'}
-            className="flex size-10 shrink-0 items-center justify-center -ml-1 text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer"
+            className="flex size-11 shrink-0 items-center justify-center -ml-2 rounded-full text-pfg hover:opacity-80 active:scale-90 transition-transform focus-visible:outline-none cursor-pointer touch-manipulation [-webkit-tap-highlight-color:transparent]"
           >
             <ChevronLeft size={24} strokeWidth={2.25} />
           </button>

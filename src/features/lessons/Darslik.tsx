@@ -12,6 +12,7 @@ import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { getTelegramWebApp, syncTelegramTheme } from '../../platform/telegram'
 import { haptics } from '../../platform/haptics'
+import { leaveCourseMap } from '../../shared/lib/navigation'
 import { type PathSelection } from './LearningPath'
 import LessonLaunch, { lessonLaunchOrigin, type LaunchOrigin } from './LessonLaunch'
 import { preloadBrilliantTransitionAssets, startLessonTransition } from './lesson-transition'
@@ -725,7 +726,7 @@ function YhqCourseMap({ initialBlockId, initialSectionIdx }: { initialBlockId: n
         initialBlockId={initialBlockId}
         initialSectionIdx={initialSectionIdx}
         includeUnitCheck={false}
-        onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
+        onBackHome={() => leaveCourseMap(navigate, location)}
         renderOverlay={(ctx) => {
           const mod = modules.find((m) => m.id === ctx.block.id)
           if (!mod) return null
