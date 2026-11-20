@@ -30,7 +30,10 @@ export function useDarslikMastery(enabled = true): DarslikMastery {
   const markDone = useLessonsStore((state) => state.markDone)
   const syncUserModules = useLessonsStore((state) => state.syncUserModules)
   const [serverPassed, setServerPassed] = useState<Set<string> | null>(null)
-  const [loading, setLoading] = useState(enabled)
+  const [loading, setLoading] = useState(() => {
+    if (!enabled || !userId || userId === '0') return false
+    return useLessonsStore.getState().byUser[userId]?.[DARSLIK_PROGRESS_MODULE_OFFSET + DARSLIK_BLOCKS[0].id] === undefined
+  })
   const [error, setError] = useState(false)
   const [reloadToken, setReloadToken] = useState(0)
 
@@ -62,7 +65,9 @@ export function useDarslikMastery(enabled = true): DarslikMastery {
       return
     }
     let cancelled = false
-    setLoading(true)
+    const hasSnapshot =
+      useLessonsStore.getState().byUser[userId]?.[DARSLIK_PROGRESS_MODULE_OFFSET + DARSLIK_BLOCKS[0].id] !== undefined
+    if (!hasSnapshot) setLoading(true)
     setError(false)
     api.getDarslikProgress()
       .then((result) => {
