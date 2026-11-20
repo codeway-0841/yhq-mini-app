@@ -114,8 +114,8 @@ body[data-theme='dark'] .rus-home-dots-track span {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 48px;
-  height: 48px;
+  min-height: 52px;
+  height: 52px;
   margin-top: 16px;
   border-radius: 999px;
   font-size: 16px;
@@ -176,7 +176,7 @@ body[data-theme='dark'] [data-app-shell]:has(.rus-home) {
   .rus-home-card { padding: 12px 14px 14px; border-radius: 20px; }
   .rus-home-rows { gap: 4px; }
   .rus-home-row { min-height: 56px; height: 56px; gap: 12px; }
-  .rus-home-start { margin-top: 10px; min-height: 44px; height: 44px; }
+  .rus-home-start { margin-top: 10px; min-height: 48px; height: 48px; }
 }
 
 @media (min-width: 1024px) {

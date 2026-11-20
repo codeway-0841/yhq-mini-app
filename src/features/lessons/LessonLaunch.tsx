@@ -53,6 +53,7 @@ export default function LessonLaunch({
   const callbacks = useRef({ onReveal, onFinish, onCancel })
   callbacks.current = { onReveal, onFinish, onCancel }
   const [fading, setFading] = useState(false)
+  const [entered, setEntered] = useState(false)
   const [minTimeElapsed, setMinTimeElapsed] = useState(false)
 
   const resolvedColor = resolveBrilliantRiveColor(accent, colorVariant)
@@ -62,8 +63,12 @@ export default function LessonLaunch({
     (document.body.dataset.theme === 'dark' || document.documentElement.classList.contains('dark'))
 
   useEffect(() => {
+    const raf = window.requestAnimationFrame(() => setEntered(true))
     const minTimer = window.setTimeout(() => setMinTimeElapsed(true), LESSON_LAUNCH_REVEAL_MS)
-    return () => window.clearTimeout(minTimer)
+    return () => {
+      window.cancelAnimationFrame(raf)
+      window.clearTimeout(minTimer)
+    }
   }, [])
 
   useEffect(() => {
@@ -102,15 +107,17 @@ export default function LessonLaunch({
           {tt('pathLaunching')}
         </span>
 
-        {/* Center: Rive Koji Lesson Loader (Native 393x852 mobil artboard, to'liq ekran, yozuvsiz) */}
+        {/* Center: Rive Koji Lesson Loader (Native 393x852 mobil artboard, tugundan kengayib kiradi) */}
         <main
-          className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none"
+          className={`absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none transition-transform [transition-duration:260ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${
+            entered ? 'scale-100' : 'scale-[0.86]'
+          }`}
           aria-labelledby={titleId}
           style={{
             transformOrigin: `${Math.round(origin.x)}px ${Math.round(origin.y)}px`,
           }}
         >
-          <div className="relative size-full max-w-[520px] flex items-center justify-center">
+          <div className="relative size-full max-w-[440px] flex items-center justify-center">
             <BrilliantEndstateRive
               kind="lesson-loader"
               fit="cover"

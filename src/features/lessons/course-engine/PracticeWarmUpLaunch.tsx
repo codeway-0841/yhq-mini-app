@@ -72,7 +72,7 @@ export default function PracticeWarmUpLaunch({
       role="dialog"
       aria-modal="true"
       aria-labelledby={titleId}
-      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity duration-300 ease-out motion-safe:animate-in motion-safe:fade-in duration-75 ${
+      className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity [transition-duration:240ms] ease-out motion-safe:animate-in motion-safe:fade-in duration-75 ${
         fading ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       style={{

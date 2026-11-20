@@ -141,7 +141,11 @@ export default function RussianCourseHome() {
       titleButtonLabelUz="Bobni boshlash"
       titleButtonLabelRu="Начать блок"
       getDotLabel={(level, ru) => `${ru ? 'Блок' : 'Bob'} ${level.id}: ${ru ? level.titleRu : level.titleUz}`}
-      onLaunchLevel={(level) => navigate({ pathname: location.pathname, search: `?block=${level.id}` })}
+      onLaunchLevel={(level) => {
+        const activeIdx = level.items.findIndex((item) => !item.done)
+        const sectionQuery = activeIdx >= 0 ? `&section=${activeIdx}` : ''
+        navigate({ pathname: location.pathname, search: `?block=${level.id}${sectionQuery}` })
+      }}
     />
   )
 }

@@ -1,5 +1,5 @@
 import {
-  useCallback, useEffect, useId, useMemo, useRef, useState, type CSSProperties,
+  useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState, type CSSProperties,
 } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { goBack } from '../../../shared/lib/navigation'
@@ -337,25 +337,36 @@ export function BrilliantCourseMap({
     openBlock(currentBlock.id)
   }, [progress.loading, currentBlock.id, openBlock])
 
-  /* Birinchi ochilishda joriy/tanlangan mavzuga suriladi. */
-  useEffect(() => {
-    if (progress.loading || autoScrolled.current || blocks.length === 0) return
+  /* Birinchi ochilishda joriy/tanlangan mavzuga paintdan OLDIN darhol suriladi. */
+  useLayoutEffect(() => {
+    const hasExplicitSection =
+      initialSectionIdx !== undefined &&
+      Number.isInteger(initialSectionIdx) &&
+      initialSectionIdx >= 0
+    if (progress.loading) {
+      if (hasExplicitSection && blocks.length > 0) {
+        const blockId = initialBlockId ?? blocks[0].id
+        const button = nodeRefs.current.get(keyOf(blockId, initialSectionIdx))
+        if (button && typeof button.scrollIntoView === 'function') {
+          button.scrollIntoView({ block: 'center', behavior: 'auto' })
+        }
+      }
+      return
+    }
+    if (autoScrolled.current || blocks.length === 0) return
     autoScrolled.current = true
     const blockId = initialBlockId ?? currentBlock.id
     const targetBlock = blocks.find((b) => b.id === blockId) ?? currentBlock
     const blockSections = targetBlock.sections
     const firstIncomplete = blockSections.findIndex((_, idx) => !passed.has(courseSectionKey(blockId, idx)))
     const hasValidInitialSection =
-      initialSectionIdx !== undefined &&
-      Number.isInteger(initialSectionIdx) &&
-      initialSectionIdx >= 0 &&
+      hasExplicitSection &&
       initialSectionIdx < blockSections.length
     const idx = hasValidInitialSection
       ? initialSectionIdx
       : initialBlockId
         ? Math.max(0, firstIncomplete)
         : currentIdx
-    if (initialBlockId || hasValidInitialSection) setPicked({ blockId, idx })
     if (!initialBlockId && !hasValidInitialSection && blockId === blocks[0].id) return
     const button = nodeRefs.current.get(keyOf(blockId, idx))
     if (button && typeof button.scrollIntoView === 'function') {
