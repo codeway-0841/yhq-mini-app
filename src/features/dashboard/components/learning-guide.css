@@ -1,9 +1,9 @@
-/* ── Brilliant 1:1 Dashboard Card & Showcase System ──────────────────────── */
+/* ── Brilliant 1:1 One-Screen (Zero-Scroll) Dashboard System ─────────────── */
 
 .brilliant-progress-card {
-  padding: 15px 16px 16px;
+  padding: 11px 14px 12px;
   border: 2px solid var(--p-line);
-  border-radius: 24px;
+  border-radius: 22px;
   background: var(--p-card);
   box-shadow: 0 3px 0 var(--p-line);
 }
@@ -12,18 +12,18 @@
 }
 
 .home-learning-hero { padding: 0; }
-.home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
+.home-learning-hero-heading { padding: 4px 2px 10px; text-align: left; }
 
-/* ── Markaziy Brilliant Big-Illustration Showcase Karta ── */
+/* ── Markaziy Brilliant Showcase Karta (ixcham, 1-ekranga mos) ── */
 .home-learning-step {
-  padding: 14px 16px 18px;
+  padding: 12px 14px 14px;
   border: 2px solid var(--p-line);
-  border-radius: 28px;
+  border-radius: 24px;
   background: var(--p-card);
-  box-shadow: 0 4px 0 var(--p-line);
+  box-shadow: 0 3px 0 var(--p-line);
 }
 [data-theme='dark'] .home-learning-step {
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .home-showcase-stage {
@@ -32,10 +32,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 152px;
-  padding: 12px 14px 10px;
-  margin-bottom: 14px;
-  border-radius: 20px;
+  min-height: 102px;
+  padding: 8px 12px 6px;
+  margin-bottom: 10px;
+  border-radius: 18px;
   background: var(--p-surface);
   overflow: hidden;
 }
@@ -46,14 +46,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .home-learning-eyebrow {
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   line-height: 1.2;
 }
 .home-learning-eyebrow.is-primary { color: #3557ff; }
@@ -64,8 +64,8 @@
 [data-theme='dark'] .home-learning-eyebrow.is-success { color: #4ade80; }
 
 .home-showcase-art {
-  width: 156px;
-  height: 122px;
+  width: 114px;
+  height: 86px;
   object-fit: contain;
   display: block;
 }
@@ -73,7 +73,7 @@
 .home-learning-path-row {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 11px;
   width: 100%;
 }
 
@@ -81,9 +81,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 58px;
-  width: 58px;
-  height: 61px;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 50px;
   position: relative;
 }
 .home-learning-disk-wrap {
@@ -91,22 +91,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 58px;
-  height: 61px;
+  width: 48px;
+  height: 50px;
 }
 .home-learning-disk {
-  width: 58px;
-  height: 61px;
+  width: 48px;
+  height: 50px;
   object-fit: contain;
   display: block;
 }
 .home-learning-mascot {
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 50%;
   transform: translateX(-50%);
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 27px;
   pointer-events: none;
   z-index: 2;
 }
@@ -133,10 +133,10 @@
   justify-content: center;
   gap: 8px;
   width: 100%;
-  height: 54px;
-  margin-top: 16px;
+  height: 48px;
+  margin-top: 12px;
   border-radius: 9999px;
-  font-size: 16.5px;
+  font-size: 15.5px;
   font-weight: 700;
   color: #ffffff;
   transition: transform 90ms ease-out, filter 90ms ease-out;
@@ -158,17 +158,16 @@
   cursor: not-allowed;
 }
 
-/* ── Pastki Brilliant 2×2 Tezkor Bo'limlar ── */
+/* ── Pastki ixcham 2×2 gorizontal Brilliant kartalar (1-ekranga to'liq sig'adi) ── */
 .home-bento-card {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 98px;
-  padding: 13px 13px 14px;
+  align-items: center;
+  gap: 9px;
+  min-height: 56px;
+  padding: 9px 10px;
   border: 2px solid var(--p-line);
-  border-radius: 22px;
+  border-radius: 18px;
   background: var(--p-card);
   box-shadow: 0 3px 0 var(--p-line);
   text-align: left;
@@ -193,20 +192,13 @@
   }
 }
 
-.home-bento-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  width: 100%;
-}
-
 .home-bento-icon {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
   place-items: center;
-  border-radius: 12px;
+  border-radius: 11px;
   background: var(--p-surface);
   color: var(--p-fg);
 }
@@ -222,13 +214,14 @@
 
 .home-bento-body {
   min-width: 0;
+  flex: 1;
 }
 .home-bento-title {
   display: block;
-  font-size: 15.5px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: -0.015em;
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--p-fg);
   white-space: nowrap;
   overflow: hidden;
@@ -236,10 +229,10 @@
 }
 .home-bento-sub {
   display: block;
-  margin-top: 3px;
-  font-size: 11.5px;
+  margin-top: 2px;
+  font-size: 10.5px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   color: var(--p-muted);
   white-space: nowrap;
   overflow: hidden;
@@ -250,13 +243,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  height: 22px;
-  padding: 0 7px;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 6px;
   border-radius: 9999px;
   background: #fee2e2;
   color: #dc2626;
-  font-size: 11.5px;
+  font-size: 11px;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
   line-height: 1;
@@ -268,19 +261,21 @@
 }
 
 .home-bento-chevron {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   color: var(--p-muted);
   opacity: 0.5;
   flex-shrink: 0;
 }
 
 @media (max-width: 359px) {
-  .home-bento-card { min-height: 90px; padding: 11px; }
-  .home-showcase-art { width: 136px; height: 108px; }
+  .home-showcase-art { width: 96px; height: 74px; }
+  .home-showcase-stage { min-height: 88px; }
+  .home-bento-card { min-height: 52px; padding: 8px; gap: 7px; }
 }
 @media (min-width: 1024px) {
-  .home-learning-step { padding: 20px 22px 22px; }
+  .home-learning-step { padding: 18px 20px 20px; }
+  .home-showcase-art { width: 148px; height: 114px; }
   .home-learning-path-row { gap: 16px; }
 }
 @media (min-width: 600px) {
