@@ -206,6 +206,7 @@ export default function LessonRunner({
     charges: number
     chargeSaved: boolean
     chargeEarned: boolean
+    streakExtended?: boolean
   } | null>(null)
   const pendingAchievementsRef = useRef<AchievementDef[]>([])
   const completionFlushedRef = useRef(false)
@@ -378,13 +379,14 @@ export default function LessonRunner({
           const alreadyDone = isSubjectExtendedOnDate(useDailyStore.getState(), today, RUSSIAN_SUBJECT_ID)
           const charges = graded.streakCharges ?? selectDailyCharges(useDailyStore.getState(), RUSSIAN_SUBJECT_ID)
           const showCharge = Boolean(graded.chargeSaved || graded.chargeEarned || charges > 0)
-          if (!alreadyDone && graded.dailyStreak > 0) {
+          if ((!alreadyDone && graded.dailyStreak > 0) || graded.chargeEarned || graded.chargeSaved) {
             setEndstateStreak({
               streak: graded.dailyStreak,
               showCharge,
               charges,
               chargeSaved: Boolean(graded.chargeSaved),
               chargeEarned: Boolean(graded.chargeEarned),
+              streakExtended: !alreadyDone && graded.dailyStreak > 0,
             })
           }
           useDailyStore.getState().applyServerResult(
@@ -753,10 +755,10 @@ export default function LessonRunner({
 
     const endstateQueue: EndstateStep[] = ['lesson']
     if (lesson && result.passed) {
-      if (endstateStreak && endstateStreak.streak > 0) {
+      if (endstateStreak && endstateStreak.streakExtended !== false && endstateStreak.streak > 0) {
         endstateQueue.push('streak')
-        if (endstateStreak.showCharge) endstateQueue.push('charge')
       }
+      if (endstateStreak?.showCharge) endstateQueue.push('charge')
       if (leagueClimb) endstateQueue.push('league')
       if (tariff !== 'premium') endstateQueue.push('nudge')
     }

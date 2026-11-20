@@ -1,5 +1,5 @@
 import { ACHIEVEMENTS, isUnlocked, type AchievementDef } from '../config/achievements'
-import type { AchievementStats } from '../api'
+import { api, type AchievementStats } from '../api'
 import { useAchievementCelebrationStore } from '../store/useAchievementCelebrationStore'
 
 const STORAGE_KEY = 'kivvi_celebrated_badges'
@@ -20,6 +20,34 @@ export function markBadgesCelebrated(ids: string[]): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]))
   } catch {
     // ignore
+  }
+}
+
+/**
+ * Ilova ochilganda / profil yuklanganda mavjud yutuqlarni bazaviy holat sifatida saqlaydi,
+ * shunda keyingi ochilgan har bir yangi yutuq tantanali ko'rsatiladi.
+ */
+export function seedCelebratedBaseline(stats: AchievementStats | null | undefined): void {
+  if (!stats) return
+  try {
+    if (localStorage.getItem(STORAGE_KEY) !== null) return
+    const currentlyUnlocked = ACHIEVEMENTS.filter((a) => isUnlocked(a, stats)).map((a) => a.id)
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(currentlyUnlocked))
+  } catch {
+    // ignore
+  }
+}
+
+/**
+ * Serverdan yangi yutuq statistikasini olib, yangi ochilgan yutuq bo'lsa tantanali modalni chiqaradi.
+ */
+export async function refreshAndCelebrateAchievements(userId: string | undefined | null): Promise<AchievementDef[]> {
+  if (!userId || userId === '0') return []
+  try {
+    const { stats } = await api.getAchievements(userId)
+    return checkAndCelebrateAchievements(stats)
+  } catch {
+    return []
   }
 }
 

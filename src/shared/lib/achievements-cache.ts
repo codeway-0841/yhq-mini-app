@@ -1,4 +1,5 @@
 import { api, type AchievementStats } from '../api'
+import { seedCelebratedBaseline } from './achievement-detector'
 import { createTtlCache, type TtlCache } from './ttl-cache'
 
 let owner: string | undefined
@@ -20,6 +21,7 @@ export function fetchAchievements(userId: string) {
     if (!result?.stats || !Array.isArray(result.stats.subjectAccuracy)) {
       throw new Error('Invalid achievements response')
     }
+    seedCelebratedBaseline(result.stats)
     return result.stats
   })
 }

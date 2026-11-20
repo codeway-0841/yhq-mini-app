@@ -1,6 +1,7 @@
-import { useState, useEffect, useCallback, useMemo, useSyncExternalStore } from 'react'
+import { useState, useEffect, useCallback, useMemo, useRef, useSyncExternalStore } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { goBack } from '../../shared/lib/navigation'
+import { refreshAndCelebrateAchievements } from '../../shared/lib/achievement-detector'
 import { Bookmark, Flag, BarChart2, X, Volume2, Square, ZoomIn, ChevronLeft, Timer, AlertTriangle, Check, MoreHorizontal, PenTool } from 'lucide-react'
 import { CoinIcon } from '../../shared/components/CoinIcon'
 import SettingsIcon from '../../shared/components/SettingsIcon'
@@ -94,6 +95,17 @@ export default function TestPage() {
   const [showSettings, setShowSettings] = useState(false)
   const [showResults, setShowResults]   = useState(false)
   const [isFinished, setIsFinished]     = useState(false)
+  const achCheckedRef = useRef(false)
+  useEffect(() => {
+    if (!isFinished) {
+      achCheckedRef.current = false
+      return
+    }
+    if (achCheckedRef.current) return
+    achCheckedRef.current = true
+    const uid = useAppStore.getState().user?.id
+    void refreshAndCelebrateAchievements(uid)
+  }, [isFinished])
   const [showReview, setShowReview]     = useState(false)
   const [toast, setToast]               = useState<string | null>(null)
   const [zoomed, setZoomed]             = useState(false)

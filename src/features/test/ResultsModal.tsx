@@ -34,6 +34,7 @@ export interface PracticeEndstateStreak {
   charges: number
   chargeSaved: boolean
   chargeEarned: boolean
+  streakExtended?: boolean
 }
 
 type EndstateStep = 'summary' | 'streak' | 'charge' | 'league' | 'nudge'
@@ -130,12 +131,14 @@ export default function ResultsModal({
 
   const endstateQueue: EndstateStep[] = ['summary']
   if (endstateChain && passed) {
-    if (endstateStreak && endstateStreak.streak > 0) {
+    if (endstateStreak && endstateStreak.streakExtended !== false && endstateStreak.streak > 0) {
       endstateQueue.push('streak')
-      if (endstateStreak.showCharge) endstateQueue.push('charge')
     }
+    if (endstateStreak?.showCharge) endstateQueue.push('charge')
     if (leagueClimb) endstateQueue.push('league')
     if (tariff !== 'premium') endstateQueue.push('nudge')
+  } else if (passed && (endstateStreak?.chargeEarned || endstateStreak?.chargeSaved)) {
+    endstateQueue.push('charge')
   }
   const currentStep: EndstateStep = endstateQueue[Math.min(stepIdx, endstateQueue.length - 1)] ?? 'summary'
 
@@ -251,10 +254,16 @@ export default function ResultsModal({
           />
         ) : currentStep === 'charge' ? (
           <BrilliantChargeStage
-            heading={isRu ? 'Вы получили Заряд серии!' : 'Seriya zaryadini oldingiz!'}
-            description={isRu
-              ? 'Заряды сохраняют вашу серию, если вы пропустите день.'
-              : 'Kunni o‘tkazib yuborsangiz ham, zaryad seriyangizni saqlab qoladi.'}
+            heading={endstateStreak?.chargeSaved
+              ? (isRu ? 'Серия сохранена!' : 'Seriya saqlandi!')
+              : (isRu ? 'Вы получили Заряд серии!' : 'Seriya zaryadini oldingiz!')}
+            description={endstateStreak?.chargeSaved
+              ? (isRu
+                  ? 'Заряд серии спас вашу серию за вчерашний день.'
+                  : 'Seriya zaryadi kechagi kun uchun seriyangizni saqlab qoldi.')
+              : (isRu
+                  ? 'Заряды сохраняют вашу серию, если вы пропустите день.'
+                  : 'Kunni o‘tkazib yuborsangiz ham, zaryad seriyangizni saqlab qoladi.')}
             dark={dark}
           />
         ) : currentStep === 'league' && leagueClimb ? (

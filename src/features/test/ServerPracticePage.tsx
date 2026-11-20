@@ -13,11 +13,12 @@ import { ConfirmDialog } from '../../shared/components/ui/dialog'
 import ImageZoomModal from '../../shared/components/ImageZoomModal'
 import MathText from '../../shared/components/MathText'
 import { goBack } from '../../shared/lib/navigation'
+import { refreshAndCelebrateAchievements } from '../../shared/lib/achievement-detector'
 import { leaderboardPageCaches } from '../../shared/lib/leaderboard-cache'
 import { haptics } from '../../platform/haptics'
 import { playSound } from '../../shared/lib/sounds'
 import { isSpeaking, speak, stopSpeaking, subscribeSpeaking } from '../../shared/lib/speech'
-import { isSubjectExtendedOnDate, selectDailyCharges, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
+import { isSubjectExtendedOnDate, selectDailyCharges, selectDailyStreak, todayStr, useDailyStore } from '../../shared/store/useDailyStore'
 import { useAppStore } from '../../shared/store/useAppStore'
 import { useQuestionsStore } from '../../shared/store/useQuestionsStore'
 import {
@@ -276,6 +277,18 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
     void useQuestionsStore.getState().loadTopics(subjectId).catch(() => {})
   }, [finished, subjectId])
 
+  const achCheckedRef = useRef(false)
+  useEffect(() => {
+    if (!finished) {
+      achCheckedRef.current = false
+      return
+    }
+    if (achCheckedRef.current) return
+    achCheckedRef.current = true
+    const userId = useAppStore.getState().user?.id
+    void refreshAndCelebrateAchievements(userId)
+  }, [finished])
+
   const sessionId = snapshot?.sessionId
 
   // Bookmark holati (server — sessiya proof orqali; master ID siz)
@@ -388,18 +401,21 @@ export default function ServerPracticePage({ mode, selector: selectorProp, title
       if (response.attempt.coinsEarned > 0) setCoinPop((value) => value + 1)
       if (!response.attempt.duplicate) {
         const today = todayStr()
+        const alreadyDone = isSubjectExtendedOnDate(useDailyStore.getState(), today, subjectId)
+        const chargeEvent = Boolean(response.attempt.chargeSaved || response.attempt.chargeEarned)
         if (
-          typeof response.attempt.dailyStreak === 'number'
-          && response.attempt.dailyStreak > 0
-          && !isSubjectExtendedOnDate(useDailyStore.getState(), today, subjectId)
+          (typeof response.attempt.dailyStreak === 'number' && response.attempt.dailyStreak > 0 && !alreadyDone)
+          || chargeEvent
         ) {
+          const streak = response.attempt.dailyStreak ?? selectDailyStreak(useDailyStore.getState(), subjectId)
           const charges = response.attempt.streakCharges ?? selectDailyCharges(useDailyStore.getState(), subjectId)
           const streakSnapshot: PracticeEndstateStreak = {
-            streak: response.attempt.dailyStreak,
-            showCharge: Boolean(response.attempt.chargeSaved || response.attempt.chargeEarned || charges > 0),
+            streak,
+            showCharge: Boolean(chargeEvent || charges > 0),
             charges,
             chargeSaved: Boolean(response.attempt.chargeSaved),
             chargeEarned: Boolean(response.attempt.chargeEarned),
+            streakExtended: typeof response.attempt.dailyStreak === 'number' && response.attempt.dailyStreak > 0 && !alreadyDone,
           }
           pendingStreakRef.current = streakSnapshot
           setEndstateStreakState(streakSnapshot)
