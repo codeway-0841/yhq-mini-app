@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react'
 import {
-  BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight, Clock3, ArrowRight,
+  BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight,
 
 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
@@ -169,90 +169,79 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
 
   return (
     <div className="home-learning-guide px-4 lg:px-0 pb-3">
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 lg:gap-4">
-        <button type="button" onClick={() => openShortcut(learnPath)} className={`home-bento-card is-learn ${interactive}`}>
-          <div className="home-bento-top">
-            <div className="home-bento-icon is-learn">
-              <BookOpen size={20} strokeWidth={2.2} />
-            </div>
-            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
+      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-3.5">
+        <button type="button" onClick={() => openShortcut(learnPath)} className={`home-bento-card ${interactive}`}>
+          <div className="home-bento-icon is-learn">
+            <BookOpen size={19} strokeWidth={2.2} />
           </div>
           <div className="home-bento-body">
             <span className="home-bento-title">{tt('dashboardLearn')}</span>
-            <span className="home-bento-sub">{isRu ? 'Темы и практика' : 'Mavzular bo‘yicha'}</span>
+            <span className="home-bento-sub">{isRu ? 'Темы' : 'Mavzular'}</span>
           </div>
+          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
         </button>
 
         <button
           type="button"
           onClick={() => openShortcut(darslikPath)}
           aria-label={tt('lessons')}
-          className={`home-bento-card is-lessons ${interactive}`}
+          className={`home-bento-card ${interactive}`}
         >
-          <div className="home-bento-top">
-            <div className="home-bento-icon is-lessons">
-              <GraduationCap size={20} strokeWidth={2.2} />
-            </div>
-            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
+          <div className="home-bento-icon is-lessons">
+            <GraduationCap size={19} strokeWidth={2.2} />
           </div>
           <div className="home-bento-body">
             <span className="home-bento-title">{tt('lessons')}</span>
-            <span className="home-bento-sub">{isRu ? 'Интерактивный курс' : 'Interaktiv kurs'}</span>
+            <span className="home-bento-sub">{isRu ? 'Курс' : 'Kurs'}</span>
           </div>
+          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
         </button>
 
-        <button type="button" onClick={() => openShortcut('/biletlar')} className={`home-bento-card is-tickets ${interactive}`}>
-          <div className="home-bento-top">
-            <div className="home-bento-icon is-tickets">
-              <Ticket size={20} strokeWidth={2.2} />
-            </div>
-            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
+        <button type="button" onClick={() => openShortcut('/biletlar')} className={`home-bento-card ${interactive}`}>
+          <div className="home-bento-icon is-tickets">
+            <Ticket size={19} strokeWidth={2.2} />
           </div>
           <div className="home-bento-body">
             <span className="home-bento-title">{tt('tickets')}</span>
-            <span className="home-bento-sub">{isRu ? 'Экзамен по билетам' : 'Imtihon biletlari'}</span>
+            <span className="home-bento-sub">{isRu ? 'Экзамен' : 'Imtihon'}</span>
           </div>
+          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
         </button>
 
         <button
           type="button"
           onClick={() => openShortcut('/xatolar')}
           aria-label={tt('mistakes')}
-          className={`home-bento-card is-mistakes ${interactive}`}
+          className={`home-bento-card ${interactive}`}
         >
-          <div className="home-bento-top">
-            <div className="home-bento-icon is-mistakes">
-              <HeartCrack size={20} strokeWidth={2.2} />
-            </div>
-            {openMistakes > 0 ? (
-              <span className="home-bento-badge" aria-hidden="true">
-                {openMistakes > 99 ? '99+' : openMistakes}
-              </span>
-            ) : (
-              <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-            )}
+          <div className="home-bento-icon is-mistakes">
+            <HeartCrack size={19} strokeWidth={2.2} />
           </div>
           <div className="home-bento-body">
             <span className="home-bento-title">{tt('mistakes')}</span>
             <span className="home-bento-sub">
               {openMistakes > 0
-                ? isRu ? `${openMistakes} открытых` : `${openMistakes} ta ochiq`
-                : isRu ? 'Всё исправлено' : 'Barchasi toza'}
+                ? isRu ? 'Повторить' : 'Tuzatish'
+                : isRu ? 'Чисто' : 'Toza'}
             </span>
           </div>
+          {openMistakes > 0 ? (
+            <span className="home-bento-badge" aria-hidden="true">
+              {openMistakes > 99 ? '99+' : openMistakes}
+            </span>
+          ) : (
+            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
+          )}
         </button>
       </div>
 
-      <section className="home-learning-hero mt-4">
+      <section className="home-learning-hero mt-3.5">
         <div className="home-learning-step">
-          {(contextLabel || plan.estimatedMinutes > 0) && (
+          {contextLabel && (
             <div className="mb-3 flex items-center justify-between gap-2">
-              {contextLabel ? (
-                <span className={`home-learning-pill ${badgeTone}`}>{contextLabel}</span>
-              ) : <span />}
+              <span className={`home-learning-eyebrow ${badgeTone}`}>{contextLabel}</span>
               {!expired && plan.estimatedMinutes > 0 && (
-                <span className="inline-flex items-center gap-1 rounded-full bg-psurface px-2.5 py-1 text-[11px] font-bold tabular-nums text-pmuted">
-                  <Clock3 size={12} strokeWidth={2.3} aria-hidden="true" />
+                <span className="text-[11.5px] font-bold tabular-nums text-pmuted">
                   ~{plan.estimatedMinutes} {isRu ? 'мин' : 'daq'}
                 </span>
               )}
@@ -261,10 +250,10 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
               {allComplete && !resume ? (
-                <img src="/darslik-map/node-completed.svg" alt="" width={72} height={75} className="home-learning-disk" />
+                <img src="/darslik-map/node-completed.svg" alt="" width={68} height={71} className="home-learning-disk" />
               ) : (
                 <span className="home-learning-disk-wrap">
-                  <img src="/darslik-map/node-active-base.png" alt="" width={72} height={75} className="home-learning-disk" />
+                  <img src="/darslik-map/node-active-base.png" alt="" width={68} height={71} className="home-learning-disk" />
                   <span className="home-learning-mascot">
                     <PathMascot animation="idle" variant="tile" />
                   </span>
@@ -273,7 +262,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
             </span>
             <div className="min-w-0 flex-1">
               <h2 className="text-[18px] font-extrabold leading-snug tracking-[-0.02em] text-pfg">{title}</h2>
-              {description && <p className="mt-1 text-[12.5px] leading-relaxed text-pmuted">{description}</p>}
+              {description && <p className="mt-1 text-[13px] leading-relaxed text-pmuted">{description}</p>}
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
@@ -306,7 +295,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
                 </svg>
               </span>
             </span>
-            <span className="relative z-10 inline-flex items-center gap-2">{actionLabel}<ArrowRight size={18} strokeWidth={2.5} aria-hidden="true" /></span>
+            <span className="relative z-10">{actionLabel}</span>
           </button>
 
 
