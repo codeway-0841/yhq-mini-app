@@ -24,12 +24,12 @@ export interface DarslikMastery {
  * saqlanadi. API vaqtincha ishlamasa, lokal cache (eski progress) bilan
  * ko'rsatiladi — o'qish davom etadi, lekin yangi test server talab qiladi.
  */
-export function useDarslikMastery(): DarslikMastery {
+export function useDarslikMastery(enabled = true): DarslikMastery {
   const userId = useAppStore((state) => state.user?.id) ?? '0'
   const byUser = useLessonsStore((state) => state.byUser)
   const markDone = useLessonsStore((state) => state.markDone)
   const [serverPassed, setServerPassed] = useState<Set<string> | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(enabled)
   const [error, setError] = useState(false)
   const [reloadToken, setReloadToken] = useState(0)
 
@@ -51,6 +51,10 @@ export function useDarslikMastery(): DarslikMastery {
   }, [byUser, userId])
 
   useEffect(() => {
+    if (!enabled) {
+      setLoading(false)
+      return
+    }
     if (!userId || userId === '0') {
       setServerPassed(null)
       setLoading(false)
@@ -72,7 +76,7 @@ export function useDarslikMastery(): DarslikMastery {
         if (!cancelled) setLoading(false)
       })
     return () => { cancelled = true }
-  }, [userId, reloadToken])
+  }, [enabled, userId, reloadToken])
 
   const passed = serverPassed ?? localPassed
 

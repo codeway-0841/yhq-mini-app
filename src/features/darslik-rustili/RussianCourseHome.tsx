@@ -123,6 +123,7 @@ export default function RussianCourseHome() {
         key={`${mapBlock.id}:${requestedSection ?? ''}`}
         initialBlockId={mapBlock.id}
         initialSectionIdx={requestedSection}
+        mastery={mastery}
         onBackHome={() => navigate({ pathname: location.pathname }, { replace: true })}
       />
     )

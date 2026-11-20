@@ -86,7 +86,11 @@ export function BrilliantCourseMap({
   const isRu = lang === 'ru'
   const passed = progress.passed
 
-  const [picked, setPicked] = useState<{ blockId: number; idx: number } | null>(null)
+  const [picked, setPicked] = useState<{ blockId: number; idx: number } | null>(() => (
+    initialSectionIdx !== undefined && Number.isInteger(initialSectionIdx) && initialSectionIdx >= 0
+      ? { blockId: initialBlockId ?? blocks[0]?.id ?? 1, idx: initialSectionIdx }
+      : null
+  ))
   const [focus, setFocus] = useState<{ blockId: number; idx: number } | null>(null)
   const [overlay, setOverlay] = useState<{ blockId: number; idx: number; quiz: boolean; practiceMode: boolean } | null>(null)
   const [launch, setLaunch] = useState<{

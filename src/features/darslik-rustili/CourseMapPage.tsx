@@ -10,7 +10,7 @@ import { BrilliantCourseMap, type CourseBlockMeta } from '../lessons'
 import { BlockReader } from './BlockReader'
 import TopicCheck from './TopicCheck'
 import { lockedSectionsInBlock } from './progress'
-import { useDarslikMastery } from './useDarslikMastery'
+import { useDarslikMastery, type DarslikMastery } from './useDarslikMastery'
 
 const EMPTY_SECTIONS: number[] = []
 const EMPTY_READ: Record<number, number[]> = {}
@@ -24,17 +24,20 @@ export default function CourseMapPage({
   initialBlockId,
   initialSectionIdx,
   onBackHome,
+  mastery: externalMastery,
 }: {
   initialBlockId?: number
   initialSectionIdx?: number
   onBackHome?: () => void
+  mastery?: DarslikMastery
 } = {}) {
   const navigate = useNavigate()
   const lang = useAppStore((s) => s.settings.language)
   const userId = useAppStore((s) => s.user?.id) ?? '0'
   const readByUser = useLessonsStore((s) => s.readByUser)
   const markRead = useLessonsStore((s) => s.markRead)
-  const mastery = useDarslikMastery()
+  const internalMastery = useDarslikMastery(!externalMastery)
+  const mastery = externalMastery ?? internalMastery
   const tt = useT(lang)
   const readMap = readByUser[userId] ?? EMPTY_READ
 

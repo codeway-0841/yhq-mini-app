@@ -91,11 +91,12 @@ export default function LessonLaunch({
       position="center"
       zIndex={zIndex}
       labelId={titleId}
+      lockBodyScroll={false}
       backdropClassName="bg-pcanvas transition-opacity [transition-duration:240ms]"
       className="lesson-launch-overlay !p-0"
     >
       <div
-        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none transition-opacity [transition-duration:240ms] ease-out motion-safe:animate-in motion-safe:fade-in duration-75 ${
+        className={`fixed inset-0 flex flex-col items-center justify-center bg-pcanvas text-pfg select-none touch-none transition-opacity [transition-duration:240ms] ease-out motion-safe:animate-in motion-safe:fade-in duration-75 ${
           fading ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
         style={{

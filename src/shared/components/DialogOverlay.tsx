@@ -30,6 +30,7 @@ interface Props {
   canDismiss?: (reason: CloseReason) => boolean
   /** document.body ga portal qilish (default: true). CSS Stacking Context tuzoqlarini yo'qotadi */
   portal?: boolean
+  lockBodyScroll?: boolean
 }
 
 /**
@@ -91,6 +92,7 @@ export default function DialogOverlay({
   closeOnBackdrop = true,
   canDismiss,
   portal = true,
+  lockBodyScroll = true,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
   const sheetRef = useRef<HTMLDivElement>(null)
@@ -156,7 +158,7 @@ export default function DialogOverlay({
   useIsomorphicLayoutEffect(() => {
     const id = idRef.current
     dialogStack.push(id)
-    lockScroll()
+    if (lockBodyScroll) lockScroll()
     prevFocusRef.current = document.activeElement
 
     // Global navigation modal stack ro'yxatiga qo'shish (Telegram BackButton & Android hardware back uchun)
@@ -168,7 +170,7 @@ export default function DialogOverlay({
       unregister()
       const i = dialogStack.indexOf(id)
       if (i >= 0) dialogStack.splice(i, 1)
-      unlockScroll()
+      if (lockBodyScroll) unlockScroll()
 
       if (closeTimerRef.current !== null) {
         window.clearTimeout(closeTimerRef.current)
@@ -179,7 +181,7 @@ export default function DialogOverlay({
       const prev = prevFocusRef.current
       if (prev instanceof HTMLElement && document.contains(prev)) prev.focus()
     }
-  }, [requestClose])
+  }, [requestClose, lockBodyScroll])
 
   // Escape — FAQAT eng yuqoridagi overlay (nested'da pastki yopilmaydi)
   useEffect(() => {
