@@ -276,7 +276,7 @@ export default function XatolarPage() {
                       onClick={() => {
                         haptics.impact('light')
                         if (isV2) startPracticeTopicV2(g.topicId, g.name)
-                        else startPracticeV1((g as { ids: number[] }).ids, g.name)
+                        else if ('ids' in g) startPracticeV1(g.ids, g.name)
                       }}
                       className="w-full px-4 py-3.5 text-left active:bg-psurface transition-colors cursor-pointer touch-manipulation"
                     >
