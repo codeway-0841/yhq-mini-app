@@ -420,6 +420,7 @@ export function IdleScreen({
 
   const ru = language === 'ru'
   const connected = connection === 'open'
+  const rank = getDuelRank(totalWins, tt)
   const onlineLabel = !connected
     ? (connection === 'failed' ? (ru ? 'Нет соединения' : 'Aloqa uzildi') : (ru ? 'Подключение…' : 'Ulanmoqda…'))
     : effectiveOnlineCount > 0 ? `${effectiveOnlineCount} ${ru ? 'онлайн' : 'onlayn'}`
@@ -439,7 +440,32 @@ export function IdleScreen({
               </span>
             )}
           </div>
-          <ArenaArtwork />
+
+          {/* Haqiqiy VS Arena sahnasi: Siz vs Raqib */}
+          <div className="arena-vs-stage">
+            <div className="arena-vs-fighter">
+              <div className="arena-vs-avatar is-you">
+                {user?.photoUrl ? (
+                  <img src={avatarSrcFor(user) ?? user.photoUrl} alt={user.firstName} className="size-full object-cover" />
+                ) : (
+                  <span>{(user?.firstName?.[0] ?? 'S').toUpperCase()}</span>
+                )}
+              </div>
+              <strong className="arena-vs-name">{user?.firstName || (ru ? 'Вы' : 'Siz')}</strong>
+              <span className={cn('arena-vs-rank', rank.color)}>{rank.title}</span>
+            </div>
+
+            <div className="arena-vs-badge" aria-hidden="true">VS</div>
+
+            <div className="arena-vs-fighter">
+              <div className="arena-vs-avatar is-opp" aria-hidden="true">?</div>
+              <strong className="arena-vs-name">{ru ? 'Соперник' : 'Raqib'}</strong>
+              <span className="arena-vs-rank bg-pcard text-pmuted border border-pline">
+                {ru ? 'Поиск 1:1' : '1:1 qidiruv'}
+              </span>
+            </div>
+          </div>
+
           <div className="arena-hero-copy">
             <h2>{ru ? 'Готовы к дуэли?' : 'Duelga tayyormisiz?'}</h2>
           </div>
