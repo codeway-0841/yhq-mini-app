@@ -30,9 +30,9 @@ interface IdleScreenProps {
 }
 
 function getDuelRank(wins: number, tt: ReturnType<typeof import('../../../shared/i18n')['useT']>): { title: string; color: string } {
-  if (wins >= 30) return { title: tt('duelRankChampion'), color: 'text-amber-500 bg-amber-500/15' }
-  if (wins >= 15) return { title: tt('duelRankGladiator'), color: 'text-purple-400 bg-purple-500/15' }
-  if (wins >= 5)  return { title: tt('duelRankFighter'),   color: 'text-blue-400 bg-blue-500/15' }
+  if (wins >= 30) return { title: tt('duelRankChampion'), color: 'text-[#d97706] dark:text-[#fbbf24] bg-[#fef3c7] dark:bg-[rgba(251,191,36,0.16)]' }
+  if (wins >= 15) return { title: tt('duelRankGladiator'), color: 'text-[#7c3aed] dark:text-[#a78bfa] bg-[#ede9fe] dark:bg-[rgba(167,139,250,0.16)]' }
+  if (wins >= 5)  return { title: tt('duelRankFighter'),   color: 'text-[#3557ff] dark:text-[#6e8cff] bg-[#e0e7ff] dark:bg-[rgba(110,140,255,0.16)]' }
   return { title: tt('duelRankNovice'), color: 'text-pmuted bg-psurface' }
 }
 
@@ -431,7 +431,7 @@ export function IdleScreen({
       <div className="lg:col-span-7 flex flex-col gap-3">
         <section className="arena-hero" aria-label={ru ? 'Быстрая дуэль' : 'Tezkor duel'}>
           <div className="arena-hero-top">
-            <span className="arena-mode">1 : 1</span>
+            <span className="arena-mode">DUEL · 1 VS 1</span>
             {connection !== 'failed' && (
               <span className="arena-live" role="status">
                 <i data-connected={connected && effectiveOnlineCount > 0} />
@@ -444,12 +444,12 @@ export function IdleScreen({
             <h2>{ru ? 'Готовы к дуэли?' : 'Duelga tayyormisiz?'}</h2>
           </div>
           <div className="arena-rules">
-            <span><Layers size={15} />10 {ru ? 'вопросов' : 'savol'}</span>
-            <span><Clock3 size={15} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span>
+            <span><Layers size={14} strokeWidth={2.2} />10 {ru ? 'вопросов' : 'savol'}</span>
+            <span><Clock3 size={14} strokeWidth={2.2} />15 {ru ? 'сек / вопрос' : 'soniya / savol'}</span>
           </div>
           <Button
             type="button"
-            variant="secondary"
+            variant="primary"
             size="lg"
             block
             onClick={() => { playSound('click'); haptics.impact('heavy'); onFind() }}
@@ -465,12 +465,14 @@ export function IdleScreen({
           className="arena-friend"
           onClick={() => { playSound('click'); haptics.impact('light'); setSubview('invite') }}
         >
-          <UserPlus size={22} strokeWidth={1.75} className="shrink-0 text-pmuted" />
+          <span className="arena-icon-box is-friend" aria-hidden="true">
+            <UserPlus size={20} strokeWidth={2.2} />
+          </span>
           <span>
             <strong>{ru ? 'С другом' : 'Do‘st bilan'}</strong>
             <small>{ru ? 'Пригласить или ввести код' : 'Taklif qiling yoki kod kiriting'}</small>
           </span>
-          <ArrowRight size={18} className="shrink-0 text-pmuted" />
+          <ArrowRight size={17} className="shrink-0 text-pmuted opacity-60" />
         </button>
       </div>
 
@@ -481,14 +483,18 @@ export function IdleScreen({
             <h2>{ru ? 'Твоя арена' : 'Sening arenang'}</h2>
           </div>
           <div className="arena-nav">
-            <button type="button" onClick={() => setSubview('battles')}>
-              <Swords size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+            <button type="button" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('battles') }}>
+              <span className="arena-icon-box is-battles mb-3" aria-hidden="true">
+                <Swords size={20} strokeWidth={2.2} />
+              </span>
               <strong>{ru ? 'Мои бои' : 'Janglarim'}</strong>
               <small>{totalWins} {ru ? 'побед' : 'g‘alaba'}</small>
               <ArrowRight size={16} className="text-pmuted" />
             </button>
-            <button type="button" onClick={() => setSubview('leaderboard')}>
-              <Trophy size={22} strokeWidth={1.75} className="mb-2.5 text-pmuted" />
+            <button type="button" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('leaderboard') }}>
+              <span className="arena-icon-box is-trophy mb-3" aria-hidden="true">
+                <Trophy size={20} strokeWidth={2.2} />
+              </span>
               <strong>{tt('duelLeaderboardTab')}</strong>
               <small>{ru ? 'Лучшие игроки' : 'Eng kuchlilar'}</small>
               <ArrowRight size={16} className="text-pmuted" />
@@ -496,8 +502,10 @@ export function IdleScreen({
           </div>
         </div>
 
-        <button type="button" className="arena-online-row" onClick={() => setSubview('online')}>
-          <Users size={18} strokeWidth={1.75} className="text-pmuted" />
+        <button type="button" className="arena-online-row" onClick={() => { playSound('click'); haptics.impact('light'); setSubview('online') }}>
+          <span className="arena-icon-box is-online" aria-hidden="true">
+            <Users size={19} strokeWidth={2.2} />
+          </span>
           <span>{ru ? 'Игроки онлайн' : 'Onlayn o‘yinchilar'}</span>
           <span>{connected ? effectiveOnlineCount : '—'}</span>
           <ArrowRight size={16} className="text-pmuted" />
