@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react'
 import {
-  BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight,
+  BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight, Clock3,
 
 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
@@ -18,6 +18,7 @@ import { resumeRouteState, selectDailyPlan } from '../next-step'
 import { PathMascot, getBrilliantTheme } from '../../lessons'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
+import { haptics } from '../../../platform/haptics'
 import './learning-guide.css'
 
 export function LearningGuide({ summary, mistakesCount = 0 }: {
@@ -152,51 +153,81 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
       : tt('allTests')
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
+  const openShortcut = (path: string) => {
+    haptics.impact('light')
+    navigate(path)
+  }
+
+  const badgeTone =
+    expired || plan.kind === 'mistakes'
+      ? 'is-danger'
+      : plan.kind === 'completed'
+        ? 'is-success'
+        : 'is-primary'
+
   return (
     <div className="home-learning-guide px-4 lg:px-0 pb-3">
       <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
-        <button type="button" onClick={() => navigate(learnPath)} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
-          <div className="home-learning-shortcut-icon">
-            <BookOpen size={19} strokeWidth={2} />
+        <button type="button" onClick={() => openShortcut(learnPath)} className={`home-learning-shortcut ${interactive}`}>
+          <div className="home-learning-shortcut-icon is-learn">
+            <BookOpen size={19} strokeWidth={2.1} />
           </div>
           <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('dashboardLearn')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
           type="button"
-          onClick={() => navigate(darslikPath)}
+          onClick={() => openShortcut(darslikPath)}
           aria-label={tt('lessons')}
-          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+          className={`home-learning-shortcut ${interactive}`}
         >
-          <div className="home-learning-shortcut-icon">
-            <GraduationCap size={19} strokeWidth={2} />
+          <div className="home-learning-shortcut-icon is-lessons">
+            <GraduationCap size={19} strokeWidth={2.1} />
           </div>
           <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('lessons')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
-        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
-          <div className="home-learning-shortcut-icon">
-            <Ticket size={19} strokeWidth={2} />
+        <button type="button" onClick={() => openShortcut('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
+          <div className="home-learning-shortcut-icon is-tickets">
+            <Ticket size={19} strokeWidth={2.1} />
           </div>
           <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('tickets')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
         <button
           type="button"
-          onClick={() => navigate('/xatolar')}
+          onClick={() => openShortcut('/xatolar')}
           aria-label={tt('mistakes')}
-          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+          className={`home-learning-shortcut ${interactive}`}
         >
-          <div className="home-learning-shortcut-icon">
-            <HeartCrack size={19} strokeWidth={2} />
+          <div className="home-learning-shortcut-icon is-mistakes">
+            <HeartCrack size={19} strokeWidth={2.1} />
           </div>
           <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('mistakes')}</span>
+          {openMistakes > 0 && (
+            <span className="home-learning-shortcut-badge" aria-hidden="true">
+              {openMistakes > 99 ? '99+' : openMistakes}
+            </span>
+          )}
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
       </div>
 
       <section className="home-learning-hero mt-4">
         <div className="home-learning-step">
+          {(contextLabel || plan.estimatedMinutes > 0) && (
+            <div className="mb-3 flex items-center justify-between gap-2">
+              {contextLabel ? (
+                <span className={`home-learning-pill ${badgeTone}`}>{contextLabel}</span>
+              ) : <span />}
+              {!expired && plan.estimatedMinutes > 0 && (
+                <span className="inline-flex items-center gap-1 text-[11.5px] font-semibold tabular-nums text-pmuted">
+                  <Clock3 size={12.5} strokeWidth={2.2} aria-hidden="true" />
+                  ~{plan.estimatedMinutes} {lang === 'ru' ? 'мин' : 'daq'}
+                </span>
+              )}
+            </div>
+          )}
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
               {allComplete && !resume ? (
@@ -211,16 +242,15 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
               )}
             </span>
             <div className="min-w-0 flex-1">
-              {contextLabel && <p className="text-[11.5px] leading-normal text-pmuted">{contextLabel}</p>}
-              <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
-              {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
+              <h2 className="text-[17px] font-bold leading-snug tracking-[-0.01em] text-pfg">{title}</h2>
+              {description && <p className="mt-1 text-[12.5px] leading-relaxed text-pmuted">{description}</p>}
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
           <button
             type="button"
             data-testid="brilliant-start-button"
-            onClick={start}
+            onClick={() => { haptics.impact('light'); start() }}
             className="home-learning-start select-none"
             style={{
               backgroundColor: theme.buttonBg,

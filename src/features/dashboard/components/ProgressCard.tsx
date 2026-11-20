@@ -2,10 +2,12 @@ import { memo, useLayoutEffect, useRef } from 'react'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
 import { initWaveGrid } from '../../../shared/lib/wave-grid'
+import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
+import { haptics } from '../../../platform/haptics'
 import type { LearningSummary } from '../../../shared/api'
 
 // ── Hero: umumiy progress ───────────────────────────────────────────────────
-export const ProgressCard = memo(function ProgressCard({ summary, lang }: {
+export const ProgressCard = memo(function ProgressCard({ summary, streak = 0, lang, onStreakPreview }: {
   summary: LearningSummary
   streak?: number
   lang: 'uz' | 'ru'
@@ -64,30 +66,42 @@ export const ProgressCard = memo(function ProgressCard({ summary, lang }: {
 
       {/* Kontent */}
       <div className="relative z-[2]">
-        <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
-          <p className="text-[12.5px] font-medium text-white/80">{tt('readinessTitle')}</p>
+        <div className="mb-1.5 flex items-center justify-between gap-2">
+          <p className="text-[12.5px] font-semibold tracking-[0.01em] text-white/85">{tt('readinessTitle')}</p>
+          <button
+            type="button"
+            onClick={() => {
+              haptics.impact('light')
+              onStreakPreview?.()
+            }}
+            className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-1 text-[12px] font-bold tabular-nums text-white backdrop-blur-[2px] transition-transform active:scale-95 cursor-pointer touch-manipulation"
+            aria-label={lang === 'ru' ? `Серия: ${streak}` : `Seriya: ${streak}`}
+          >
+            <BrilliantStreakIcon size={14} className={streak > 0 ? 'text-[#C6F432]' : 'text-white/75'} />
+            <span>{streak}</span>
+          </button>
         </div>
 
-        <div className="flex items-baseline gap-2">
-          <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
-            {total > 0 ? shown : '—'}
-          </span>
-          {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
-        </div>
-
-        <div className="mt-3 flex items-center gap-3">
-          <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
-            <div
-              className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
-              style={{ width: `${shown}%` }}
-            />
+        <div className="flex items-end justify-between gap-3">
+          <div className="flex items-baseline gap-1.5">
+            <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
+              {total > 0 ? shown : '—'}
+            </span>
+            {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
           </div>
-          <span className="shrink-0 text-[12px] font-semibold tabular-nums text-white/90">
+          <span className="mb-1 rounded-full bg-black/20 px-2.5 py-0.5 text-[11.5px] font-semibold tabular-nums text-white/90">
             {summary.mastered} / {total || '…'}
           </span>
         </div>
 
-
+        <div className="mt-3.5">
+          <div className="h-[6px] w-full overflow-hidden rounded-full bg-black/30">
+            <div
+              className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
+              style={{ width: `${Math.max(shown, total > 0 && summary.mastered > 0 ? 3 : 0)}%` }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   )
