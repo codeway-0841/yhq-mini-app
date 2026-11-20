@@ -28,6 +28,7 @@ export function useDarslikMastery(enabled = true): DarslikMastery {
   const userId = useAppStore((state) => state.user?.id) ?? '0'
   const byUser = useLessonsStore((state) => state.byUser)
   const markDone = useLessonsStore((state) => state.markDone)
+  const syncUserModules = useLessonsStore((state) => state.syncUserModules)
   const [serverPassed, setServerPassed] = useState<Set<string> | null>(null)
   const [loading, setLoading] = useState(enabled)
   const [error, setError] = useState(false)
@@ -66,8 +67,19 @@ export function useDarslikMastery(enabled = true): DarslikMastery {
     api.getDarslikProgress()
       .then((result) => {
         if (cancelled) return
-        setServerPassed(new Set(result.passed))
+        const nextPassed = new Set(result.passed)
+        setServerPassed(nextPassed)
         setError(false)
+        const syncedModules: Record<number, number[]> = {}
+        for (const block of DARSLIK_BLOCKS) {
+          const total = getBlockOutline(block.id).length
+          const done: number[] = []
+          for (let idx = 0; idx < total; idx++) {
+            if (nextPassed.has(darslikTopicId(block.id, idx))) done.push(idx)
+          }
+          syncedModules[DARSLIK_PROGRESS_MODULE_OFFSET + block.id] = done
+        }
+        syncUserModules(userId, syncedModules)
       })
       .catch(() => {
         if (!cancelled) setError(true)
@@ -76,7 +88,7 @@ export function useDarslikMastery(enabled = true): DarslikMastery {
         if (!cancelled) setLoading(false)
       })
     return () => { cancelled = true }
-  }, [enabled, userId, reloadToken])
+  }, [enabled, userId, reloadToken, syncUserModules])
 
   const passed = serverPassed ?? localPassed
 

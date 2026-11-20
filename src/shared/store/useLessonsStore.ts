@@ -19,6 +19,7 @@ interface LessonsState {
    */
   readByUser: Record<string, Record<number, number[]>>
   markDone: (userId: string, moduleId: number, lessonIdx: number) => void
+  syncUserModules: (userId: string, modules: Record<number, number[]>) => void
   markRead: (userId: string, moduleId: number, lessonIdx: number) => void
   doneFor:  (userId: string, moduleId: number) => number[]
   readFor:  (userId: string, moduleId: number) => number[]
@@ -43,6 +44,29 @@ export const useLessonsStore = create<LessonsState>()(
               ...userMap,
               [moduleId]: [...list, lessonIdx].sort((a, b) => a - b),
             },
+          },
+        }))
+      },
+
+      syncUserModules(userId, modules) {
+        if (!userId) return
+        const userMap = get().byUser[userId] ?? {}
+        let changed = false
+        const nextUserMap: Record<number, number[]> = { ...userMap }
+        for (const [rawId, rawList] of Object.entries(modules)) {
+          const moduleId = Number(rawId)
+          const sorted = [...new Set(rawList)].sort((a, b) => a - b)
+          const prev = userMap[moduleId] ?? []
+          if (prev.length !== sorted.length || prev.some((v, i) => v !== sorted[i])) {
+            nextUserMap[moduleId] = sorted
+            changed = true
+          }
+        }
+        if (!changed) return
+        set((s) => ({
+          byUser: {
+            ...s.byUser,
+            [userId]: nextUserMap,
           },
         }))
       },
