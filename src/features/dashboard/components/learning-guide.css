@@ -1,27 +1,254 @@
-.home-learning-hero { padding: 4px 0 2px; }
+.home-learning-hero { padding: 2px 0 4px; }
 .home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
+
+/* ── Bento Shortcut Kartalar (Brilliant + Apple Design Award taktil his) ── */
+.home-bento-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 108px;
+  padding: 13px 13px 14px;
+  border: 1.5px solid var(--p-line);
+  border-radius: 22px;
+  background: var(--p-card);
+  box-shadow: 0 3px 0 var(--p-line);
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 110ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 110ms ease-out, border-color 160ms ease;
+}
+.home-bento-card::after {
+  content: '';
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  width: 84px;
+  height: 84px;
+  border-radius: 9999px;
+  opacity: 0.14;
+  pointer-events: none;
+  transition: transform 240ms ease, opacity 240ms ease;
+}
+.home-bento-card.is-learn::after { background: radial-gradient(circle, #3557ff 0%, transparent 72%); }
+.home-bento-card.is-lessons::after { background: radial-gradient(circle, #10b981 0%, transparent 72%); }
+.home-bento-card.is-tickets::after { background: radial-gradient(circle, #f59e0b 0%, transparent 72%); }
+.home-bento-card.is-mistakes::after { background: radial-gradient(circle, #ef4444 0%, transparent 72%); }
+
+[data-theme='dark'] .home-bento-card {
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.45);
+}
+[data-theme='dark'] .home-bento-card::after {
+  opacity: 0.22;
+}
+
+.home-bento-card:active {
+  transform: translateY(2px) scale(0.985);
+  box-shadow: 0 1px 0 var(--p-line);
+}
+[data-theme='dark'] .home-bento-card:active {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-bento-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 0 var(--p-line), 0 14px 28px -16px rgba(15, 23, 42, 0.28);
+  }
+  .home-bento-card:hover::after {
+    transform: scale(1.18);
+    opacity: 0.22;
+  }
+}
+
+.home-bento-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.home-bento-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 14px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: transform 180ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.home-bento-card:active .home-bento-icon {
+  transform: scale(0.92);
+}
+.home-bento-icon.is-learn {
+  background: linear-gradient(135deg, #3557ff 0%, #5b78ff 100%);
+  color: #ffffff;
+}
+.home-bento-icon.is-lessons {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: #ffffff;
+}
+.home-bento-icon.is-tickets {
+  background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+  color: #ffffff;
+}
+.home-bento-icon.is-mistakes {
+  background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%);
+  color: #ffffff;
+}
+
+.home-bento-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 9999px;
+  background: rgba(239, 68, 68, 0.14);
+  color: #dc2626;
+  font-size: 11.5px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+[data-theme='dark'] .home-bento-badge {
+  background: rgba(248, 113, 113, 0.22);
+  color: #fca5a5;
+}
+
+.home-bento-chevron {
+  width: 16px;
+  height: 16px;
+  color: var(--p-muted);
+  opacity: 0.55;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .home-bento-card:hover .home-bento-chevron {
+    transform: translateX(2px);
+    opacity: 0.95;
+  }
+}
+
+.home-bento-body {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+}
+.home-bento-title {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  color: var(--p-fg);
+}
+.home-bento-sub {
+  display: block;
+  margin-top: 3px;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--p-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Spotlight "Bugungi reja" kartasi ── */
 .home-learning-step {
-  padding: 16px 16px 16px;
-  border: 2px solid var(--p-line);
+  position: relative;
+  overflow: hidden;
+  padding: 16px 16px 18px;
+  border: 1.5px solid var(--p-line);
   border-radius: 26px;
   background: var(--p-card);
+  box-shadow: 0 4px 0 var(--p-line);
 }
+[data-theme='dark'] .home-learning-step {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.45);
+}
+.home-learning-step::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -24px;
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(53, 87, 255, 0.14) 0%, transparent 72%);
+  pointer-events: none;
+}
+[data-theme='dark'] .home-learning-step::before {
+  background: radial-gradient(circle, rgba(99, 132, 255, 0.2) 0%, transparent 72%);
+}
+
+.home-learning-pill {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  padding: 5px 11px;
+  border-radius: 9999px;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.home-learning-pill.is-primary {
+  background: rgba(53, 87, 255, 0.12);
+  color: #3557ff;
+}
+.home-learning-pill.is-danger {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+.home-learning-pill.is-success {
+  background: rgba(16, 185, 129, 0.13);
+  color: #059669;
+}
+[data-theme='dark'] .home-learning-pill.is-primary {
+  background: rgba(99, 132, 255, 0.2);
+  color: #93b0ff;
+}
+[data-theme='dark'] .home-learning-pill.is-danger {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fca5a5;
+}
+[data-theme='dark'] .home-learning-pill.is-success {
+  background: rgba(52, 211, 153, 0.2);
+  color: #6ee7b7;
+}
+
 .home-learning-start {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: 100%;
   height: 56px;
-  margin-top: 14px;
+  margin-top: 16px;
   border-radius: 9999px;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 16.5px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
   color: #ffffff;
   transition: transform 100ms ease-out, filter 100ms ease-out;
   cursor: pointer;
   user-select: none;
+  touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 .home-learning-start:hover:not(:disabled) {
@@ -36,148 +263,47 @@
   opacity: .55;
   cursor: not-allowed;
 }
-.home-learning-path-row { display: flex; align-items: center; gap: 12px; width: 100%; position: relative; padding: 2px 0; }
-.home-learning-shortcut {
+
+.home-learning-path-row {
   position: relative;
-  min-height: 70px;
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  padding: 10px 26px 10px 11px;
-  border: 2px solid var(--p-line);
-  border-radius: 20px;
-  background: var(--p-card);
-  text-align: left;
-  cursor: pointer;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 120ms ease-out, border-color 160ms ease, box-shadow 160ms ease;
+  gap: 14px;
+  width: 100%;
+  padding: 2px 0;
 }
-.home-learning-shortcut:active {
-  transform: scale(0.97);
+
+.home-learning-token {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 76px;
+  position: relative;
 }
-.home-learning-shortcut-icon {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  flex: 0 0 36px;
-  place-items: center;
-  border-radius: 12px;
-  background: var(--p-surface);
-  color: var(--p-subtle);
-  transition: transform 160ms cubic-bezier(0.2, 0.8, 0.4, 1), background-color 160ms ease;
-}
-.home-learning-shortcut-icon.is-learn {
-  background: rgba(53, 87, 255, 0.12);
-  color: #3557ff;
-}
-.home-learning-shortcut-icon.is-lessons {
-  background: rgba(16, 185, 129, 0.13);
-  color: #059669;
-}
-.home-learning-shortcut-icon.is-tickets {
-  background: rgba(245, 158, 11, 0.14);
-  color: #d97706;
-}
-.home-learning-shortcut-icon.is-mistakes {
-  background: rgba(239, 68, 68, 0.12);
-  color: #dc2626;
-}
-[data-theme='dark'] .home-learning-shortcut-icon.is-learn {
-  background: rgba(99, 132, 255, 0.18);
-  color: #82a0ff;
-}
-[data-theme='dark'] .home-learning-shortcut-icon.is-lessons {
-  background: rgba(16, 185, 129, 0.18);
-  color: #34d399;
-}
-[data-theme='dark'] .home-learning-shortcut-icon.is-tickets {
-  background: rgba(245, 158, 11, 0.18);
-  color: #fbbf24;
-}
-[data-theme='dark'] .home-learning-shortcut-icon.is-mistakes {
-  background: rgba(239, 68, 68, 0.18);
-  color: #f87171;
-}
-.home-learning-shortcut-badge {
+.home-learning-disk-wrap {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 22px;
-  height: 20px;
-  padding: 0 6px;
-  border-radius: 9999px;
-  background: rgba(239, 68, 68, 0.14);
-  color: #dc2626;
-  font-size: 11px;
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
+  width: 72px;
+  height: 75px;
 }
-[data-theme='dark'] .home-learning-shortcut-badge {
-  background: rgba(248, 113, 113, 0.2);
-  color: #fca5a5;
+.home-learning-disk {
+  width: 72px;
+  height: 75px;
+  object-fit: contain;
+  display: block;
 }
-.home-learning-pill {
-  display: inline-flex;
-  align-items: center;
-  max-width: 100%;
-  padding: 4px 10px;
-  border-radius: 9999px;
-  font-size: 11.5px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.home-learning-pill.is-primary {
-  background: rgba(53, 87, 255, 0.11);
-  color: #3557ff;
-}
-.home-learning-pill.is-danger {
-  background: rgba(239, 68, 68, 0.11);
-  color: #dc2626;
-}
-.home-learning-pill.is-success {
-  background: rgba(16, 185, 129, 0.12);
-  color: #059669;
-}
-[data-theme='dark'] .home-learning-pill.is-primary {
-  background: rgba(99, 132, 255, 0.18);
-  color: #82a0ff;
-}
-[data-theme='dark'] .home-learning-pill.is-danger {
-  background: rgba(248, 113, 113, 0.18);
-  color: #fca5a5;
-}
-[data-theme='dark'] .home-learning-pill.is-success {
-  background: rgba(52, 211, 153, 0.18);
-  color: #6ee7b7;
-}
-.home-learning-shortcut-chevron { position: absolute; top: 50%; right: 9px; width: 14px; height: 14px; color: var(--p-muted); opacity: 0.56; transform: translateY(-50%); transition: transform 180ms ease, opacity 180ms ease; }
-@media (min-width: 390px) {
-  .home-learning-shortcut { min-height: 78px; gap: 11px; padding: 12px 34px 12px 12px; }
-  .home-learning-shortcut-icon { width: 36px; height: 36px; flex-basis: 36px; }
-  .home-learning-shortcut-chevron { right: 11px; width: 15px; height: 15px; }
-}
-@media (hover: hover) and (pointer: fine) {
-  .home-learning-shortcut:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.32); }
-  .home-learning-shortcut:hover .home-learning-shortcut-chevron { transform: translate(2px, -50%); opacity: 0.9; }
-}
-.home-learning-shortcut:active .home-learning-shortcut-icon { transform: scale(0.92); }
-@media (max-width: 359px) { .home-learning-hero-heading h1 { font-size: 20px; } .home-learning-step { padding: 10px; } .home-learning-shortcut { min-height: 72px; gap: 9px; padding: 10px 30px 10px 10px; } .home-learning-shortcut-icon { width: 32px; height: 32px; flex-basis: 32px; } }
-/* Desktop: karta ichi nafasli (gap-4 ritmiga mos) — mobil zichligicha qoladi */
-@media (min-width: 1024px) { .home-learning-step { padding: 20px; } .home-learning-path-row { gap: 14px; } }
-@media (min-width: 600px) { .home-learning-hero { width: 100%; } }
-.home-learning-token { display: flex; align-items: center; justify-content: center; flex: 0 0 64px; width: 64px; height: 68px; position: relative; }
-.home-learning-disk-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 67px; }
-.home-learning-disk { width: 64px; height: 67px; object-fit: contain; display: block; }
 .home-learning-mascot {
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   pointer-events: none;
   z-index: 2;
 }
@@ -195,13 +321,23 @@
   border-radius: 0;
   background: transparent;
 }
-.daily-plan-metrics { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.daily-plan-metrics span { display: inline-flex; min-height: 28px; align-items: center; gap: 5px; border-radius: 0.75rem; background: var(--p-surface); padding: 5px 9px; color: var(--p-muted); font-size: 11px; font-weight: 700; line-height: 1; }
-.daily-plan-metrics svg { width: 13px; height: 13px; color: var(--p-subtle); }
+
+@media (max-width: 359px) {
+  .home-bento-card { min-height: 98px; padding: 11px; }
+  .home-bento-icon { width: 36px; height: 36px; border-radius: 12px; }
+  .home-learning-step { padding: 14px; }
+}
+@media (min-width: 1024px) {
+  .home-learning-step { padding: 22px; }
+  .home-learning-path-row { gap: 16px; }
+}
+@media (min-width: 600px) {
+  .home-learning-hero { width: 100%; }
+}
+
 @keyframes learning-orbit { to { stroke-dashoffset: -100; } }
 @media (prefers-reduced-motion: no-preference) {
   body:not([data-no-animation='true']) .home-learning-token .learning-tile[data-state='current'] .learning-orbit {
     animation: learning-orbit 2.4s linear infinite;
   }
 }
-
