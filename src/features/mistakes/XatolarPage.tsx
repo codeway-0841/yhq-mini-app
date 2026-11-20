@@ -157,15 +157,28 @@ export default function XatolarPage() {
   )
 
   const topHardV2 = serverOverview?.top ?? []
+  const loadingV2 = isV2 && serverOverview === null
+  const isRu = lang === 'ru'
+  const activeTopics = isV2 ? byTopicV2 : byTopicV1
+  const maxTopicCount = Math.max(1, ...activeTopics.map((g) => g.count))
+  const estimatedMin = Math.max(2, Math.min(15, Math.ceil(total * 0.6)))
 
   return (
     <>
-      <PageHeader title={tt('mistakesTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-4" />
-      <div className="px-4 pb-4">
+      <PageHeader title={tt('mistakesTitle')} size="lg" onBack={() => goBack(navigate)} backLabel={tt('backWord')} className="mb-3" />
+      <div className="px-4 pb-6">
+
+      {/* v2 yuklanish skeleton — bo'sh holat chaqnashini oldini oladi */}
+      {loadingV2 && (
+        <div className="space-y-3" aria-busy="true">
+          <div className="h-[172px] rounded-[26px] border-2 border-pline bg-pcard animate-pulse" />
+          <div className="h-[88px] rounded-[24px] border-2 border-pline bg-pcard animate-pulse" />
+        </div>
+      )}
 
       {/* Bo'sh holat */}
-      {total === 0 && (
-        <div className="rounded-2xl bg-pcard p-8 flex flex-col items-center text-center shadow-xs">
+      {!loadingV2 && total === 0 && (
+        <div className="rounded-[26px] border-2 border-pline bg-pcard p-8 flex flex-col items-center text-center shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
           <div className="size-32 flex items-center justify-center mb-2">
             <BrilliantEndstateRive
               kind="review-complete"
@@ -176,17 +189,26 @@ export default function XatolarPage() {
               fallback={<HeartCrack size={26} className="text-pmuted" />}
             />
           </div>
-          <p className="text-[17px] font-semibold text-pfg">{tt('mistakesEmptyTitle')}</p>
-          <p className="text-[12px] text-psubtle mt-1.5">{tt('mistakesEmptyDesc')}</p>
+          <p className="text-[19px] font-extrabold tracking-[-0.02em] text-pfg">{tt('mistakesEmptyTitle')}</p>
+          <p className="text-[13px] font-medium text-pmuted mt-1.5 max-w-[260px] leading-relaxed">{tt('mistakesEmptyDesc')}</p>
         </div>
       )}
 
-      {total > 0 && (
+      {!loadingV2 && total > 0 && (
         <>
-          {/* Umumiy holat + "Barchasini mashq qilish" */}
-          <div className="rounded-2xl bg-pcard p-4 mb-4 shadow-xs">
-            <div className="flex items-center gap-3 mb-3.5">
-              <div className="size-14 flex items-center justify-center flex-shrink-0">
+          {/* Umumiy holat + "Barchasini mashq qilish" (Brilliant 1:1 karta) */}
+          <div className="rounded-[26px] border-2 border-pline bg-pcard p-5 mb-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+            <div className="flex items-center justify-between gap-2 mb-3">
+              <span className="text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#e11d48] dark:text-[#fb7185]">
+                {isRu ? 'Открытые ошибки' : 'Ochiq xatolar'}
+              </span>
+              <span className="text-[11.5px] font-bold tabular-nums text-pmuted">
+                ~{estimatedMin} {isRu ? 'мин' : 'daq'}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-3.5 mb-4">
+              <div className="size-16 flex items-center justify-center flex-shrink-0">
                 <BrilliantEndstateRive
                   kind="review-mistakes"
                   totalNum={total}
@@ -195,25 +217,27 @@ export default function XatolarPage() {
                   dark={typeof document !== 'undefined' && document.body.dataset.theme === 'dark'}
                   label="Review Mistakes"
                   className="size-full"
-                  fallback={<HeartCrack size={22} className="text-pmuted" />}
+                  fallback={<HeartCrack size={24} className="text-pmuted" />}
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[24px] font-semibold text-pfg leading-none">{total}</p>
-                <p className="text-[11px] text-psubtle mt-1">{total} {tt('unansweredWord')}</p>
+                <p className="font-display text-[36px] font-extrabold tracking-[-0.03em] tabular-nums text-pfg leading-none">
+                  {total}
+                </p>
+                <p className="text-[13px] font-semibold text-pmuted mt-1">{tt('unansweredWord')}</p>
               </div>
             </div>
-            <Button block size="lg" onClick={() => isV2 ? startPracticeAllV2() : startPracticeV1(
+            <Button block size="lg" variant="primary" onClick={() => isV2 ? startPracticeAllV2() : startPracticeV1(
               wrongQuestions.map((q) => q.id), tt('fixMistakes'), 'mistakes',
             )}>
-              <Play size={16} strokeWidth={1.75} />
+              <Play size={16} strokeWidth={2.2} />
               {tt('practiceAll')}
             </Button>
           </div>
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <div className="rounded-2xl bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-xs">
+            <div className="rounded-[24px] border-2 border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
               <div className="size-14 flex items-center justify-center flex-shrink-0">
                 <BrilliantExtrasRive
                   kind="practice-nudge"
@@ -224,13 +248,13 @@ export default function XatolarPage() {
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-[14px] font-semibold text-pfg">{tt('premiumMistakesTitle')}</p>
-                <p className="text-[11px] text-psubtle mt-1 leading-snug">{tt('premiumMistakesDesc')}</p>
+                <p className="text-[14.5px] font-extrabold text-pfg leading-snug">{tt('premiumMistakesTitle')}</p>
+                <p className="text-[12px] font-medium text-pmuted mt-0.5 leading-snug">{tt('premiumMistakesDesc')}</p>
               </div>
               <Button
                 size="sm"
                 variant="secondary"
-                className="flex-shrink-0 font-bold tracking-tight text-[12.5px] px-3.5 py-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+                className="flex-shrink-0"
                 onClick={() => {
                   haptics.impact('light')
                   setShowSubscriptionModal(true)
@@ -240,23 +264,38 @@ export default function XatolarPage() {
               </Button>
             </div>
           )}
-          {isPremium && (isV2 ? byTopicV2.length > 0 : byTopicV1.length > 0) && (
+          {isPremium && activeTopics.length > 0 && (
             <>
-              <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5">{tt('byTopicsWord')}</p>
-              <div className="rounded-2xl bg-pcard overflow-hidden mb-4 shadow-xs divide-y divide-pline">
-                {(isV2 ? byTopicV2 : byTopicV1).map((g) => (
-                  <button
-                    key={g.topicId}
-                    onClick={() => isV2 ? startPracticeTopicV2(g.topicId, g.name) : startPracticeV1((g as any).ids, g.name)}
-                    className="w-full flex items-center gap-3 px-4 py-3.5 text-left active:bg-psurface transition-colors"
-                  >
-                    <span className="flex-1 text-[13px] font-semibold text-pfg truncate">{g.name}</span>
-                    <span className="bg-[rgb(var(--p-danger-rgb)/0.15)] text-pdanger text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
-                      {g.count}
-                    </span>
-                    <span className="text-[11px] font-semibold text-psubtle flex-shrink-0">{tt('practiceWord')} ›</span>
-                  </button>
-                ))}
+              <p className="text-[11px] font-extrabold text-pmuted uppercase tracking-[0.08em] mb-2 px-0.5">{tt('byTopicsWord')}</p>
+              <div className="rounded-[24px] border-2 border-pline bg-pcard overflow-hidden mb-5 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] divide-y divide-pline">
+                {activeTopics.map((g) => {
+                  const pct = Math.max(8, Math.round((g.count / maxTopicCount) * 100))
+                  return (
+                    <button
+                      key={g.topicId}
+                      onClick={() => {
+                        haptics.impact('light')
+                        if (isV2) startPracticeTopicV2(g.topicId, g.name)
+                        else startPracticeV1((g as { ids: number[] }).ids, g.name)
+                      }}
+                      className="w-full px-4 py-3.5 text-left active:bg-psurface transition-colors cursor-pointer touch-manipulation"
+                    >
+                      <div className="flex items-center gap-3">
+                        <span className="flex-1 text-[14px] font-bold text-pfg truncate">{g.name}</span>
+                        <span className="bg-[#fee2e2] dark:bg-[rgba(248,113,113,0.2)] text-[#dc2626] dark:text-[#fca5a5] text-[11.5px] font-extrabold px-2.5 py-0.5 rounded-full flex-shrink-0 tabular-nums">
+                          {g.count}
+                        </span>
+                        <span className="text-[12px] font-bold text-pmuted flex-shrink-0">{tt('practiceWord')} ›</span>
+                      </div>
+                      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-psurface">
+                        <div
+                          className="h-full rounded-full bg-[#e11d48] dark:bg-[#fb7185]"
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                    </button>
+                  )
+                })}
               </div>
             </>
           )}
@@ -264,53 +303,53 @@ export default function XatolarPage() {
           {/* Top-10 eng qiyin savollar */}
           {isPremium && (isV2 ? topHardV2.length > 0 : topHardV1.length > 0) && (
             <>
-              <p className="text-[10px] font-semibold text-psubtle uppercase tracking-[0.12em] mb-1.5 flex items-center gap-1.5">
-                <Flame size={12} className="text-pmuted" />
+              <p className="text-[11px] font-extrabold text-pmuted uppercase tracking-[0.08em] mb-2 px-0.5 flex items-center gap-1.5">
+                <Flame size={13} className="text-[#e11d48] dark:text-[#fb7185]" />
                 {tt('topMistakes')}
               </p>
-              <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:items-start">
+              <div className="flex flex-col gap-2.5 lg:grid lg:grid-cols-2 lg:items-start">
                 {isV2 ? (
                   topHardV2.map((item, i) => (
                     <button
                       key={item.launchToken || i}
-                      onClick={() => startPracticeSingleV2(item.launchToken)}
-                      className="rounded-2xl bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform shadow-xs hover:bg-psurface"
+                      onClick={() => { haptics.impact('light'); startPracticeSingleV2(item.launchToken) }}
+                      className="rounded-[20px] border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
                     >
-                      <span className="w-6 text-center text-[12px] font-semibold text-psubtle flex-shrink-0 tabular-nums">
+                      <span className="flex size-7 items-center justify-center rounded-full bg-psurface text-[12px] font-extrabold text-pfg flex-shrink-0 tabular-nums">
                         {i + 1}
                       </span>
                       <span
-                        className="flex-1 min-w-0 text-[12px] font-semibold text-pfg leading-snug"
+                        className="flex-1 min-w-0 text-[13px] font-bold text-pfg leading-snug"
                         style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}
                       >
                         <MathText text={item.text} />
                       </span>
-                      <span className="bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                      <span className="bg-[rgb(var(--p-warning-rgb)/0.16)] text-pwarning text-[11px] font-extrabold px-2.5 py-0.5 rounded-full flex-shrink-0 tabular-nums">
                         {item.count} {tt('timesWord')}
                       </span>
-                      <ChevronRight size={15} className="text-psubtle flex-shrink-0" />
+                      <ChevronRight size={16} className="text-pmuted flex-shrink-0" />
                     </button>
                   ))
                 ) : (
                   topHardV1.map(({ q, count }, i) => (
                     <button
                       key={q.id}
-                      onClick={() => startPracticeV1([q.id], tt('topMistakes'))}
-                      className="rounded-2xl bg-pcard p-3.5 flex items-center gap-3 text-left active:scale-[0.99] transition-transform shadow-xs hover:bg-psurface"
+                      onClick={() => { haptics.impact('light'); startPracticeV1([q.id], tt('topMistakes')) }}
+                      className="rounded-[20px] border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
                     >
-                      <span className="w-6 text-center text-[12px] font-semibold text-psubtle flex-shrink-0 tabular-nums">
+                      <span className="flex size-7 items-center justify-center rounded-full bg-psurface text-[12px] font-extrabold text-pfg flex-shrink-0 tabular-nums">
                         {i + 1}
                       </span>
                       <span
-                        className="flex-1 min-w-0 text-[12px] font-semibold text-pfg leading-snug"
+                        className="flex-1 min-w-0 text-[13px] font-bold text-pfg leading-snug"
                         style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}
                       >
                         <MathText text={q.text} />
                       </span>
-                      <span className="bg-[rgb(var(--p-warning-rgb)/0.15)] text-pwarning text-[11px] font-semibold px-2.5 py-0.5 rounded-full flex-shrink-0">
+                      <span className="bg-[rgb(var(--p-warning-rgb)/0.16)] text-pwarning text-[11px] font-extrabold px-2.5 py-0.5 rounded-full flex-shrink-0 tabular-nums">
                         {count} {tt('timesWord')}
                       </span>
-                      <ChevronRight size={15} className="text-psubtle flex-shrink-0" />
+                      <ChevronRight size={16} className="text-pmuted flex-shrink-0" />
                     </button>
                   ))
                 )}
