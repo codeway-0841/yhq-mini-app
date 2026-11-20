@@ -348,6 +348,7 @@ export function BrilliantCourseMap({
         const blockId = initialBlockId ?? blocks[0].id
         const button = nodeRefs.current.get(keyOf(blockId, initialSectionIdx))
         if (button && typeof button.scrollIntoView === 'function') {
+          autoScrolled.current = true
           button.scrollIntoView({ block: 'center', behavior: 'auto' })
         }
       }

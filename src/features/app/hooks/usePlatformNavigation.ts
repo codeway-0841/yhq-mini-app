@@ -49,13 +49,14 @@ export function usePlatformNavigation() {
     const el = pageRef.current
     const isPop = navigationType === 'POP'
     const targetY = isPop ? (scrollPositions.get(location.key) ?? 0) : 0
+    const hasScrollTarget = Boolean(location.hash) || new URLSearchParams(location.search).has('section')
 
     if (isPop && targetY > 0) {
       if (el) el.scrollTop = targetY
       requestAnimationFrame(() => {
         scrollPageTo(targetY, 'auto')
       })
-    } else {
+    } else if (!hasScrollTarget) {
       window.scrollTo(0, 0)
       if (el) el.scrollTop = 0
       // Telegram iOS fullscreen repaint fix (Issue #2061)
@@ -77,7 +78,7 @@ export function usePlatformNavigation() {
     // Har bir sahifa navigatsiyasida Telegram status bar & header rangini qayta mustahkamlash
     const isDark = typeof document !== 'undefined' && document.body.dataset.theme !== 'light'
     syncTelegramTheme(isDark)
-  }, [location.pathname, location.key, navigationType])
+  }, [location.pathname, location.search, location.hash, location.key, navigationType])
 
   // Platforma "orqaga" tugmasi — Telegram'da TG BackButton, APK'da hardware back.
   // visible: sub-sahifada bo'lsa YOKI biror modal/sheet ochiq bo'lsa (bosh sahifada ham).
