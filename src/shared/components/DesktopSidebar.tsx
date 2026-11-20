@@ -130,7 +130,7 @@ export default function DesktopSidebar() {
         title={collapsed ? label : undefined}
         aria-current={isActive ? 'page' : undefined}
         className={cn(
-          'group flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-[14px] font-medium transition-all duration-150 ease-out cursor-pointer',
+          'group flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-[14px] font-medium transition-[transform,background-color,color] duration-150 ease-out cursor-pointer',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas',
           'active:scale-[0.99]',
           collapsed && 'justify-center px-2',
@@ -253,7 +253,7 @@ export default function DesktopSidebar() {
                 onClick={() => handleNav('/premium')}
                 aria-label={isPremium ? 'Kivvi Pro' : tt('upgrade')}
                 title={isPremium ? 'Kivvi Pro' : tt('upgrade')}
-                className="grid size-10 w-full place-items-center rounded-xl bg-sky-100/90 text-sky-600 transition-all duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:text-sky-400 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
+                className="grid size-10 w-full place-items-center rounded-xl bg-sky-100/90 text-sky-600 transition-[transform,background-color,color] duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:text-sky-400 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
               >
                 <PremiumIcon size={18} className="shrink-0" />
               </button>
@@ -261,7 +261,7 @@ export default function DesktopSidebar() {
             <button
               type="button"
               onClick={() => handleNav('/premium')}
-              className="group relative flex w-full items-center gap-3 rounded-2xl bg-sky-100/90 p-3 text-left transition-all duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
+              className="group relative flex w-full items-center gap-3 rounded-2xl bg-sky-100/90 p-3 text-left transition-[transform,background-color] duration-150 ease-out hover:bg-sky-200/80 active:scale-[0.99] dark:bg-sky-900/40 dark:hover:bg-sky-900/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer shadow-2xs"
             >
               <PremiumIcon size={20} className="shrink-0 text-sky-600 dark:text-sky-400" />
               <div className="min-w-0 flex-1">
@@ -291,7 +291,7 @@ export default function DesktopSidebar() {
               aria-label={name}
               title={collapsed ? name : undefined}
               className={cn(
-                'flex w-full items-center gap-2.5 rounded-xl px-2 py-2 text-left transition-all duration-150 ease-out hover:bg-psurface active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer',
+                'flex w-full items-center gap-2.5 rounded-xl px-2 py-2 text-left transition-[transform,background-color] duration-150 ease-out hover:bg-psurface active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary cursor-pointer',
                 collapsed && 'justify-center px-0',
                 userDropdownOpen && 'bg-psurface',
               )}
@@ -321,7 +321,7 @@ export default function DesktopSidebar() {
 
             {/* Upward Popover Dropdown Menu (collapsed holatda o'ngga ochiladi) */}
             {userDropdownOpen && (
-              <div className={cn('absolute bottom-full inset-x-0 mb-2 z-50 overflow-hidden rounded-2xl border border-pline bg-pcard p-1.5 shadow-2xl backdrop-blur-xl animate-in fade-in duration-150', collapsed && 'inset-x-auto left-full ml-2 w-56 bottom-0 mb-0')}>
+              <div className={cn('absolute bottom-full inset-x-0 mb-2 z-50 overflow-hidden rounded-2xl border border-pline bg-pcard p-1.5 shadow-2xl motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 duration-150', collapsed && 'inset-x-auto left-full ml-2 w-56 bottom-0 mb-0')}>
                 <button
                   type="button"
                   onClick={() => {

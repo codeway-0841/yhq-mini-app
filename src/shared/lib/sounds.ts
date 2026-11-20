@@ -53,23 +53,34 @@ export function resolveBrilliantSound(kind: SoundKind): BrilliantSoundId {
   return LEGACY_TO_BRILLIANT[kind as LegacySoundKind] ?? 'assessment-click-option-1'
 }
 
-/** Hozircha faqat asosiy hodisa tovushlari faol: to‘g‘ri/xato, toggle, A/B/C/D variant, yakun/XP, streak va liga */
+/** Barcha Brilliant UI/o‘yin hodisalari uchun faol tovushlar (faqat eski shovqinli `click` o‘chirilgan) */
 export const ACTIVE_SOUNDS = new Set<BrilliantSoundId>([
+  'continue',
+  'start-lesson',
+  'skip',
+  'hint',
   'correct',
   'incorrect',
   'lesson-failed',
+  'drag-started',
+  'drag-released',
+  'highlight-node',
   'toggle-on',
   'toggle-off',
   'assessment-click-option-1',
   'assessment-click-option-2',
   'assessment-click-option-3',
   'assessment-click-option-4',
+  'assessment-dont-know',
+  'assessment-submit',
+  'diagnostic-answer',
   'lightweight-choice',
   'endstate',
   'diagnostic-complete',
   'xp-tally',
   'tutor-xp-countup-start',
   'tutor-xp-countup-stop',
+  'router-koji-recommendation',
 ])
 
 const MUTED_LEGACY_KINDS = new Set<SoundKind>(['click'])

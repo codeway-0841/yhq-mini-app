@@ -194,7 +194,7 @@ export default function AdminPromoTab() {
             return (
               <div
                 key={c.id}
-                className={`rounded-2xl bg-pcard p-4 shadow-xs transition-all ${
+                className={`rounded-2xl bg-pcard p-4 shadow-xs transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                   !c.isActive ? 'opacity-60 bg-[rgb(var(--p-surface-rgb)/0.5)]' : ''
                 }`}
               >
@@ -295,7 +295,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('premium_days')}
-                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex items-center justify-center gap-1.5 ${
                       promoType === 'premium_days'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -306,7 +306,7 @@ export default function AdminPromoTab() {
                   <button
                     type="button"
                     onClick={() => setPromoType('discount_percent')}
-                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-all flex items-center justify-center gap-1.5 ${
+                    className={`py-2.5 min-h-10 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex items-center justify-center gap-1.5 ${
                       promoType === 'discount_percent'
                         ? 'bg-ppurple text-ponprimary border-ppurple'
                         : 'bg-card border-pline text-pmuted'
@@ -355,7 +355,7 @@ export default function AdminPromoTab() {
                         key={p}
                         type="button"
                         onClick={() => setPercent(p)}
-                        className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
+                        className={`py-2 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                           percent === p
                             ? 'bg-ppurple text-ponprimary border-ppurple'
                             : 'bg-card border-pline text-pmuted'
@@ -387,7 +387,7 @@ export default function AdminPromoTab() {
                         key={d}
                         type="button"
                         onClick={() => setDays(d)}
-                        className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
+                        className={`py-2 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                           days === d
                             ? 'bg-ppurple text-ponprimary border-ppurple'
                             : 'bg-card border-pline text-pmuted'
@@ -401,7 +401,7 @@ export default function AdminPromoTab() {
                     <button
                       type="button"
                       onClick={() => setDays(365)}
-                      className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
+                      className={`py-2 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                         days === 365
                           ? 'bg-ppurple text-ponprimary border-ppurple'
                           : 'bg-card border-pline text-pmuted'
@@ -438,7 +438,7 @@ export default function AdminPromoTab() {
                       key={idx}
                       type="button"
                       onClick={() => setMaxUses(it.val)}
-                      className={`py-2 rounded-xl text-xs font-semibold border transition-all ${
+                      className={`py-2 rounded-xl text-xs font-semibold border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                         maxUses === it.val
                           ? 'bg-ppurple text-ponprimary border-ppurple'
                           : 'bg-card border-pline text-pmuted'

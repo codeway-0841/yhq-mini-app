@@ -30,13 +30,20 @@ describe('shared/lib/sounds — Brilliant.org 1:1 audio mapping', () => {
     }
   })
 
-  it('faqat ruxsat etilgan tovushlar faol (to‘g‘ri/xato, toggle, A/B/C/D variant, yakun/XP/streak/liga faol; qo‘pol tugma kliklari o‘chirilgan)', () => {
+  it('barcha Brilliant hodisa tovushlari faol; faqat eski generic click o‘chirilgan', () => {
     const enabled: SoundKind[] = [
+      'continue',
+      'start-lesson',
+      'skip',
+      'hint',
       'correct',
       'incorrect',
       'success',
       'error',
       'lesson-failed',
+      'drag-started',
+      'drag-released',
+      'highlight-node',
       'toggle',
       'toggle-on',
       'toggle-off',
@@ -44,6 +51,9 @@ describe('shared/lib/sounds — Brilliant.org 1:1 audio mapping', () => {
       'assessment-click-option-2',
       'assessment-click-option-3',
       'assessment-click-option-4',
+      'assessment-dont-know',
+      'assessment-submit',
+      'diagnostic-answer',
       'lightweight-choice',
       'endstate',
       'win',
@@ -53,15 +63,9 @@ describe('shared/lib/sounds — Brilliant.org 1:1 audio mapping', () => {
       'coins',
       'tutor-xp-countup-start',
       'tutor-xp-countup-stop',
+      'router-koji-recommendation',
     ]
-    const muted: SoundKind[] = [
-      'click',
-      'continue',
-      'skip',
-      'hint',
-      'start-lesson',
-      'highlight-node',
-    ]
+    const muted: SoundKind[] = ['click']
 
     for (const k of enabled) expect(isActiveSound(k)).toBe(true)
     for (const k of muted) expect(isActiveSound(k)).toBe(false)

@@ -102,7 +102,7 @@ export default function AdminUsersTab() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="ID, ism, username yoki telefon orqali qidirish..."
-            className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
+            className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
           />
         </div>
       </div>
@@ -242,7 +242,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 7)}
-                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -254,7 +254,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 30)}
-                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -266,7 +266,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 90)}
-                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -278,7 +278,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', 365)}
-                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-all shadow-xs"
+                  className="rounded-2xl bg-pcard w-full p-3 text-left flex items-center justify-between text-xs font-semibold hover:bg-psurface transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 >
                   <span className="flex items-center gap-1.5">
                     <PremiumIcon size={13} className="text-ppurple" />
@@ -290,7 +290,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('premium', null)}
-                  className="rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.1)] w-full p-3 text-left flex items-center justify-between text-xs font-semibold border border-[rgb(var(--p-warning-rgb)/0.4)] text-pfg hover:bg-[rgb(var(--p-warning-rgb)/0.15)] transition-all shadow-xs"
+                  className="rounded-2xl bg-[rgb(var(--p-warning-rgb)/0.1)] w-full p-3 text-left flex items-center justify-between text-xs font-semibold border border-[rgb(var(--p-warning-rgb)/0.4)] text-pfg hover:bg-[rgb(var(--p-warning-rgb)/0.15)] transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 >
                   <span>⭐ Umrbod Premium (Lifetime)</span>
                   <span className="text-pwarning font-semibold text-[11px]">VIP</span>
@@ -299,7 +299,7 @@ export default function AdminUsersTab() {
                 <button
                   type="button"
                   onClick={() => handleGrant('free', null)}
-                  className="w-full p-3 rounded-2xl border border-[rgb(var(--p-danger-rgb)/0.3)] bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger text-center text-xs font-semibold hover:bg-[rgb(var(--p-danger-rgb)/0.2)] transition-all mt-2"
+                  className="w-full p-3 rounded-2xl border border-[rgb(var(--p-danger-rgb)/0.3)] bg-[rgb(var(--p-danger-rgb)/0.1)] text-pdanger text-center text-xs font-semibold hover:bg-[rgb(var(--p-danger-rgb)/0.2)] transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out mt-2"
                 >
                   Bekor qilish (Oddiy Free hisob)
                 </button>

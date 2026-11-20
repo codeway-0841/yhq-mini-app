@@ -246,14 +246,14 @@ export default function BulkImportModal({
           <div className="flex items-center gap-2">
             <button
               onClick={() => downloadTemplate('csv')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-all shadow-xs"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
             >
               <FileSpreadsheet size={12} strokeWidth={1.75} />
               CSV (.csv)
             </button>
             <button
               onClick={() => downloadTemplate('json')}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-all shadow-xs"
+              className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-psurface text-[11px] font-semibold text-pfg hover:text-ppurple active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
             >
               <FileCode size={12} strokeWidth={1.75} />
               JSON (.json)
@@ -266,7 +266,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={() => setActiveTab('csv')}
-            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
               activeTab === 'csv' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -277,7 +277,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={() => setActiveTab('text')}
-            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
               activeTab === 'text' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -288,7 +288,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={() => setActiveTab('json')}
-            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
+            className={`py-2 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
               activeTab === 'json' ? 'bg-ppurple text-ponprimary shadow-md' : 'text-pmuted hover:text-pfg'
             }`}
           >
@@ -310,7 +310,7 @@ export default function BulkImportModal({
               />
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-5 text-center cursor-pointer bg-card transition-all active:scale-[0.99]"
+                className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-5 text-center cursor-pointer bg-card transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out active:scale-[0.99]"
               >
                 <FileSpreadsheet size={28} className="mx-auto text-ppurple mb-1.5" />
                 <p className="text-xs font-semibold text-pfg">
@@ -333,7 +333,7 @@ export default function BulkImportModal({
                   }}
                   rows={4}
                   placeholder={`Savol,Variant A,Variant B,Variant C,To'g'ri\n"1-savol","A","B","C","A"`}
-                  className="w-full mt-1.5 bg-card border border-pline rounded-2xl p-2.5 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                  className="w-full mt-1.5 bg-card border border-pline rounded-2xl p-2.5 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
                 />
               </details>
             </div>
@@ -349,7 +349,7 @@ export default function BulkImportModal({
                 }}
                 rows={6}
                 placeholder={`1. Avtomobilning maksimal tezligi qancha?\nA) 70 km/soat\nB) 90 km/soat\nC) 110 km/soat\nTo'g'ri: B\n\n2. Keyingi savol matni...\nA) Variant 1\nB) Variant 2\nJavob: A`}
-                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
               <p className="text-[10px] text-pmuted flex items-start gap-1">
                 <Lightbulb size={11} strokeWidth={1.75} className="mt-px flex-none" />
@@ -368,7 +368,7 @@ export default function BulkImportModal({
                 }}
                 rows={6}
                 placeholder={`[\n  {\n    "question": "Savol matni?",\n    "options": ["Variant A", "Variant B", "Variant C"],\n    "answer": "A"\n  }\n]`}
-                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
             </div>
           )}
@@ -386,7 +386,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('all')}
-                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold transition-all ${
+                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                       filterTab === 'all'
                         ? 'bg-fg text-bg'
                         : 'bg-psurface text-pmuted hover:text-pfg shadow-2xs'
@@ -397,7 +397,7 @@ export default function BulkImportModal({
                   <button
                     type="button"
                     onClick={() => setFilterTab('valid')}
-                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                    className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                       filterTab === 'valid'
                         ? 'bg-pprimary text-ponprimary'
                         : 'bg-[rgb(var(--p-primary-rgb)/0.1)] border border-[rgb(var(--p-primary-rgb)/0.3)] text-pprimary'
@@ -409,7 +409,7 @@ export default function BulkImportModal({
                     <button
                       type="button"
                       onClick={() => setFilterTab('invalid')}
-                      className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-all ${
+                      className={`px-2.5 py-1 min-h-10 rounded-xl text-[11px] font-semibold flex items-center gap-1 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                         filterTab === 'invalid'
                           ? 'bg-pdanger text-white'
                           : 'bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger'
@@ -441,7 +441,7 @@ export default function BulkImportModal({
                 {displayList.map((q, idx) => (
                   <div
                     key={q.id_temp}
-                    className={`p-3 rounded-2xl border text-xs transition-all ${
+                    className={`p-3 rounded-2xl border text-xs transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                       q.isValid ? 'bg-card border-pline' : 'bg-[rgb(var(--p-danger-rgb)/0.1)] border-[rgb(var(--p-danger-rgb)/0.3)]'
                     }`}
                   >
@@ -476,7 +476,7 @@ export default function BulkImportModal({
                             key={optKey}
                             type="button"
                             onClick={() => updateQuestionAnswer(q.id_temp, optKey)}
-                            className={`p-1.5 rounded-xl border text-left text-[11px] truncate flex items-center gap-1.5 transition-all ${
+                            className={`p-1.5 rounded-xl border text-left text-[11px] truncate flex items-center gap-1.5 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                               isCorrect
                                 ? 'bg-[rgb(var(--p-primary-rgb)/0.2)] border-pprimary text-pfg font-semibold'
                                 : 'bg-psurface border-pline text-pmuted hover:text-pfg'
@@ -513,7 +513,7 @@ export default function BulkImportModal({
           <button
             type="button"
             onClick={onClose}
-            className="flex-1 py-3 rounded-2xl bg-psurface text-xs font-semibold text-pmuted hover:text-pfg active:scale-95 transition-all"
+            className="flex-1 py-3 rounded-2xl bg-psurface text-xs font-semibold text-pmuted hover:text-pfg active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
           >
             Bekor qilish
           </button>

@@ -93,7 +93,7 @@ export default function AdminOrdersTab() {
             <button
               key={s || 'all'}
               onClick={() => setFilter(s)}
-              className={`px-2 py-1 min-h-10 rounded-lg text-[10px] font-semibold transition-all ${
+              className={`px-2 py-1 min-h-10 rounded-lg text-[10px] font-semibold transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                 filter === s ? 'bg-ppurple text-ponprimary' : 'bg-psurface text-pmuted'
               }`}>
               {s === '' ? '∞' : tt(s === 'new' ? 'orderStatusNew' : s === 'contacted' ? 'orderStatusContacted' : s === 'delivered' ? 'orderStatusDelivered' : 'orderStatusCancelled')}

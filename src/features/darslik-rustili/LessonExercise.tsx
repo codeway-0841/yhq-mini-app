@@ -3,7 +3,16 @@ import { Check, Eraser, Link2, Volume2, X } from 'lucide-react'
 import { cn } from '../../shared/lib/cn'
 import { useT } from '../../shared/i18n'
 import { useAppStore } from '../../shared/store/useAppStore'
+import { playSound, type SoundKind } from '../../shared/lib/sounds'
+import { haptics } from '../../platform/haptics'
 import type { DarslikAnswerValue, DarslikPublicExercise } from '../../../shared/darslik-mastery'
+
+const OPTION_SOUNDS: readonly SoundKind[] = [
+  'assessment-click-option-1',
+  'assessment-click-option-2',
+  'assessment-click-option-3',
+  'assessment-click-option-4',
+]
 
 interface LessonExerciseProps {
   exercise: DarslikPublicExercise
@@ -83,7 +92,11 @@ export default function LessonExercise({
                 key={exercise.id + ':' + optionIndex}
                 type="button"
                 disabled={locked}
-                onClick={() => onChange(String(optionIndex))}
+                onClick={() => {
+                  playSound(OPTION_SOUNDS[optionIndex % OPTION_SOUNDS.length])
+                  haptics.impact('light')
+                  onChange(String(optionIndex))
+                }}
                 aria-pressed={isSelected}
                 aria-label={option}
                 className={cn(
@@ -172,7 +185,11 @@ export default function LessonExercise({
                   key={char}
                   type="button"
                   tabIndex={-1}
-                  onClick={() => onChange(text + char)}
+                  onClick={() => {
+                    playSound('lightweight-choice')
+                    haptics.impact('light')
+                    onChange(text + char)
+                  }}
                   className="grid size-8 cursor-pointer place-items-center rounded-xl bg-psurface text-[13.5px] font-bold text-pfg shadow-[0_2px_0_var(--p-line)] transition-[transform,box-shadow] duration-150 active:translate-y-[1px] active:shadow-none"
                 >
                   {char}
@@ -225,7 +242,11 @@ export default function LessonExercise({
               key={token + ':' + index}
               type="button"
               disabled={locked}
-              onClick={() => onChange(chosen.filter((_, itemIndex) => itemIndex !== index))}
+              onClick={() => {
+                playSound('drag-started')
+                haptics.selection()
+                onChange(chosen.filter((_, itemIndex) => itemIndex !== index))
+              }}
               aria-label={tt('rusDarslikLessonRemoveToken').replace('{token}', token)}
               className="flex cursor-pointer items-center rounded-xl bg-pprimary px-3 py-2 text-[14px] font-bold text-ponprimary shadow-[0_3px_0_color-mix(in_srgb,var(--p-primary)_62%,#0f172a)] transition-[transform,box-shadow,opacity] duration-150 active:translate-y-[1px] active:shadow-none disabled:opacity-70"
             >
@@ -243,7 +264,11 @@ export default function LessonExercise({
                 key={token + ':' + index}
                 type="button"
                 disabled={locked || isUsed}
-                onClick={() => onChange([...chosen, token])}
+                onClick={() => {
+                  playSound('drag-released')
+                  haptics.selection()
+                  onChange([...chosen, token])
+                }}
                 className={cn(
                   'rounded-xl px-3.5 py-2.5 text-[14px] font-bold transition-[transform,background-color,opacity]',
                   isUsed
@@ -305,6 +330,8 @@ export default function LessonExercise({
                 type="button"
                 disabled={locked}
                 onClick={() => {
+                  playSound('drag-started')
+                  haptics.selection()
                   if (matched) {
                     const next = [...selection]
                     next[leftIndex] = ''
@@ -363,6 +390,8 @@ export default function LessonExercise({
                 onClick={() => {
                   const target = activeLeft ?? selection.findIndex(item => !item)
                   if (target < 0) return
+                  playSound('drag-released')
+                  haptics.impact('light')
                   assignRight(target, right)
                 }}
                 className={cn(

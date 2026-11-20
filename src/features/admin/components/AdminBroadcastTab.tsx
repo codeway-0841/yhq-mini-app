@@ -345,7 +345,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                   setTarget(key)
                   haptics.impact('light')
                 }}
-                className={`p-3 rounded-2xl border text-left transition-all flex items-start gap-2.5 ${
+                className={`p-3 rounded-2xl border text-left transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex items-start gap-2.5 ${
                   isSelected
                     ? 'bg-[rgb(var(--p-purple-rgb)/0.15)] border-ppurple shadow-sm'
                     : 'bg-psurface border-pline hover:border-[rgb(var(--p-purple-rgb)/0.4)] text-pmuted'
@@ -377,7 +377,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               key={i}
               type="button"
               onClick={() => applyTemplate(tpl)}
-              className="px-3 py-1.5 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-all flex-shrink-0 shadow-2xs"
+              className="px-3 py-1.5 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center gap-1.5 whitespace-nowrap active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex-shrink-0 shadow-2xs"
             >
               {tpl.icon}
               <span>{tpl.title}</span>
@@ -400,7 +400,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
               onChange={(e) => setText(e.target.value)}
               rows={6}
               placeholder="Xabar matnini kiriting (masalan: 🎁 Katta aksiya boshlandi!)..."
-              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
             />
             {/* Emoji Toolbar */}
             <div className="flex items-center gap-1.5 overflow-x-auto py-1 no-scrollbar">
@@ -409,7 +409,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                   key={em}
                   type="button"
                   onClick={() => insertEmoji(em)}
-                  className="px-2 py-1 rounded-lg bg-psurface text-xs hover:scale-110 active:scale-95 transition-all shadow-2xs"
+                  className="px-2 py-1 rounded-lg bg-psurface text-xs hover:scale-110 active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-2xs"
                 >
                   {em}
                 </button>
@@ -428,7 +428,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 <button
                   type="button"
                   onClick={() => setImageMode('upload')}
-                  className={`px-2 py-0.5 rounded-lg transition-all ${
+                  className={`px-2 py-0.5 rounded-lg transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                     imageMode === 'upload' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                   }`}
                 >
@@ -437,7 +437,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 <button
                   type="button"
                   onClick={() => setImageMode('url')}
-                  className={`px-2 py-0.5 rounded-lg transition-all ${
+                  className={`px-2 py-0.5 rounded-lg transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                     imageMode === 'url' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                   }`}
                 >
@@ -478,7 +478,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
+                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -486,7 +486,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
+                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -496,7 +496,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-4 text-center cursor-pointer bg-card transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-4 text-center cursor-pointer bg-card transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={20} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>
@@ -510,7 +510,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={imageUrl}
                 onChange={(e) => setImageUrl(e.target.value)}
                 placeholder="https://example.com/banner.jpg"
-                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
             )}
           </div>
@@ -525,7 +525,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={buttonText}
                 onChange={(e) => setButtonText(e.target.value)}
                 placeholder="📱 Ilovani ochish"
-                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
             </div>
 
@@ -539,7 +539,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={buttonUrl}
                 onChange={(e) => setButtonUrl(e.target.value)}
                 placeholder="Bo'sh qolsa ilova ochiladi"
-                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
             </div>
           </div>
@@ -556,13 +556,13 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
                 value={testTgId}
                 onChange={(e) => setTestTgId(e.target.value)}
                 placeholder="Telegram ID raqamingiz (masalan: 123456789)"
-                className="flex-1 bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-all"
+                className="flex-1 bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg font-mono focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               />
               <button
                 type="button"
                 disabled={sending || !text.trim() || !testTgId.trim()}
                 onClick={handleSendTest}
-                className="px-3 py-2 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 disabled:opacity-40 transition-all whitespace-nowrap flex items-center gap-1 shadow-2xs"
+                className="px-3 py-2 rounded-xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 disabled:opacity-40 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out whitespace-nowrap flex items-center gap-1 shadow-2xs"
               >
                 {sending ? <Loader2 size={13} className="motion-safe:animate-spin" /> : <Send size={13} />}
                 <span>Test</span>
@@ -656,7 +656,7 @@ export default function AdminBroadcastTab({ lang: _lang, currentUserId }: AdminB
         <div className="rounded-2xl bg-pcard p-3 space-y-2 shadow-xs">
           <div className="h-1.5 bg-psurface rounded-full overflow-hidden">
             <div
-              className="h-full bg-ppurple rounded-full transition-all"
+              className="h-full bg-ppurple rounded-full transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
               style={{ width: `${Math.round(((bulkProgress.sent + bulkProgress.blocked + bulkProgress.failed) / Math.max(bulkProgress.total, 1)) * 100)}%` }}
             />
           </div>

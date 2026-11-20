@@ -7,7 +7,7 @@ import {
 import { BrilliantExtrasRive } from './BrilliantExtrasRive'
 import { BrilliantCopyContainer, BrilliantRiveContainer } from './BrilliantEndstateShell'
 import { haptics } from '../../platform/haptics'
-import { playSound } from '../lib/sounds'
+import { playLoopingSound, playSound, stopSound } from '../lib/sounds'
 import { cn } from '../lib/cn'
 
 function prefersReducedMotion() {
@@ -48,7 +48,9 @@ export function AnimatedXpCounter({
     }
     let raf = 0
     let startTs: number | null = null
+    let finished = false
     setPulsing(false)
+    if (end > 0) playLoopingSound('tutor-xp-countup-start')
     const tick = (ts: number) => {
       if (startTs === null) startTs = ts
       const p = Math.min(1, (ts - startTs) / duration)
@@ -56,12 +58,20 @@ export function AnimatedXpCounter({
       if (p < 1) {
         raf = requestAnimationFrame(tick)
       } else {
+        finished = true
         setVal(end)
         setPulsing(true)
+        if (end > 0) {
+          stopSound('tutor-xp-countup-start')
+          playSound('tutor-xp-countup-stop')
+        }
       }
     }
     raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+    return () => {
+      cancelAnimationFrame(raf)
+      if (!finished && end > 0) stopSound('tutor-xp-countup-start')
+    }
   }, [active, end, duration])
 
   return (
@@ -302,7 +312,7 @@ export function BrilliantCompletionStage({
 
   return (
     <div
-      className="flex flex-col transition-transform duration-500 ease-in-out"
+      className="flex flex-col transition-transform duration-500 ease-in-out motion-reduce:transition-none"
       style={{ transform: untranslated ? 'translateY(0%)' : 'translateY(30%)' }}
     >
       <BrilliantRiveContainer
@@ -332,7 +342,7 @@ export function BrilliantCompletionStage({
 
       <BrilliantCopyContainer className={compact ? '!min-h-0 gap-2.5 pb-2' : 'gap-3.5 pb-4'}>
         <div
-          className="space-y-1 transition-opacity duration-500 ease-out"
+          className="space-y-1 transition-opacity duration-500 ease-out motion-reduce:transition-none"
           style={{ opacity: titleVisible ? 1 : 0 }}
         >
           <h1
@@ -348,7 +358,7 @@ export function BrilliantCompletionStage({
 
         {(showXp || practiceStats) && (
           <div
-            className="relative flex w-full max-w-[360px] flex-col items-center gap-2 py-2 transition-[transform,opacity] duration-500 ease-out"
+            className="relative flex w-full max-w-[360px] flex-col items-center gap-2 py-2 transition-[transform,opacity] duration-500 ease-out motion-reduce:transition-none"
             style={{
               opacity: statsVisible ? 1 : 0,
               transform: statsVisible ? 'translateY(0)' : 'translateY(28px)',

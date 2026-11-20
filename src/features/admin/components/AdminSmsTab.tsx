@@ -162,7 +162,7 @@ export default function AdminSmsTab() {
               {c.status !== 'sent' && (
                 <>
                   <div className="h-1.5 bg-psurface rounded-full overflow-hidden">
-                    <div className="h-full bg-ppurple rounded-full transition-all" style={{ width: `${pct}%` }} />
+                    <div className="h-full bg-ppurple rounded-full transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out" style={{ width: `${pct}%` }} />
                   </div>
                   <button
                     onClick={() => handleSend(c.id)}

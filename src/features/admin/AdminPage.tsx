@@ -67,7 +67,7 @@ export default function AdminPage() {
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveTab(tab.id)}
-                  className={`py-2 px-0.5 rounded-xl text-[10px] font-semibold flex flex-col items-center gap-1 transition-all cursor-pointer ${
+                  className={`py-2 px-0.5 rounded-xl text-[10px] font-semibold flex flex-col items-center gap-1 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out cursor-pointer ${
                     isActive
                       ? 'bg-ppurple text-ponprimary shadow-md scale-[1.02]'
                       : 'text-pmuted hover:text-pfg'

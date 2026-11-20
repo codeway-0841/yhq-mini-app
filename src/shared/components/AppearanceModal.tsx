@@ -83,7 +83,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   setActiveTab(tab.key)
                 }}
                 className={cn(
-                  'flex-1 py-1.5 text-center text-[13px] rounded-full transition-all duration-150',
+                  'flex-1 py-1.5 text-center text-[13px] rounded-full transition-[background-color,color,box-shadow] duration-150 ease-out',
                   isActive
                     ? 'bg-[#383838] text-white shadow-[0_2px_0_0_#000000] dark:bg-[#f2f2f2] dark:text-[#141414] dark:shadow-[0_2px_0_0_#b3b3b3] font-bold'
                     : 'text-pmuted font-semibold hover:text-pfg'
@@ -107,7 +107,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectTheme('light')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentTheme === 'light'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -139,7 +139,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectTheme('dark')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentTheme === 'dark'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -183,7 +183,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectChart('line')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentChart === 'line'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -230,7 +230,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectChart('bars')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3 transition-all text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col justify-between shadow-2xs group active:scale-[0.98]',
                     currentChart === 'bars'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -281,7 +281,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('default')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3.5 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'default'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -314,7 +314,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('red')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3.5 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'red'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -345,7 +345,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('green')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3.5 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'green'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'
@@ -376,7 +376,7 @@ export default function AppearanceModal({ onClose, initialTab = 'theme' }: Appea
                   type="button"
                   onClick={() => selectIcon('pro')}
                   className={cn(
-                    'bg-pcard rounded-2xl p-3.5 transition-all text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
+                    'bg-pcard rounded-2xl p-3.5 transition-[transform,box-shadow,background-color] duration-150 ease-out text-left flex flex-col items-center shadow-2xs group active:scale-[0.98]',
                     currentIcon === 'pro'
                       ? 'ring-2 ring-pprimary shadow-md'
                       : 'hover:shadow-xs'

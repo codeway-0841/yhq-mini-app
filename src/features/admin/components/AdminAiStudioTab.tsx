@@ -303,7 +303,7 @@ export default function AdminAiStudioTab() {
         <button
           type="button"
           onClick={() => setMode('custom_text')}
-          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
             mode === 'custom_text'
               ? 'bg-ppurple text-ponprimary shadow-md'
               : 'text-pmuted hover:text-pfg'
@@ -316,7 +316,7 @@ export default function AdminAiStudioTab() {
         <button
           type="button"
           onClick={() => setMode('topic')}
-          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
+          className={`py-2.5 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-2 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
             mode === 'topic'
               ? 'bg-ppurple text-ponprimary shadow-md'
               : 'text-pmuted hover:text-pfg'
@@ -338,7 +338,7 @@ export default function AdminAiStudioTab() {
                 key={s.id}
                 type="button"
                 onClick={() => setSelectedSubject(s.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-all shadow-xs ${
+                className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 whitespace-nowrap transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs ${
                   isSelected
                     ? 'text-white shadow-sm scale-[1.02]'
                     : 'bg-psurface text-pmuted hover:text-pfg'
@@ -367,7 +367,7 @@ export default function AdminAiStudioTab() {
               onChange={(e) => setPromptText(e.target.value)}
               rows={6}
               placeholder="O'zingiz yozgan qoidalar, darslikdan parcha yoki qonun moddalarini kiriting..."
-              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl p-3 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
             />
           </div>
         ) : (
@@ -380,7 +380,7 @@ export default function AdminAiStudioTab() {
               value={promptText}
               onChange={(e) => setPromptText(e.target.value)}
               placeholder="Masalan: Chorrahada burilish qoidalari..."
-              className="w-full bg-card border border-pline rounded-2xl px-3 py-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+              className="w-full bg-card border border-pline rounded-2xl px-3 py-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
             />
 
             {/* Sample Topics Suggestions */}
@@ -393,7 +393,7 @@ export default function AdminAiStudioTab() {
                       key={i}
                       type="button"
                       onClick={() => setPromptText(topic)}
-                      className="px-2 py-1 rounded-lg bg-psurface text-[10px] text-pmuted hover:text-pfg active:scale-95 transition-all text-left shadow-2xs"
+                      className="px-2 py-1 rounded-lg bg-psurface text-[10px] text-pmuted hover:text-pfg active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out text-left shadow-2xs"
                     >
                       <Lightbulb size={10} strokeWidth={1.75} className="inline mr-1" />
                       {topic}
@@ -416,7 +416,7 @@ export default function AdminAiStudioTab() {
                   key={c}
                   type="button"
                   onClick={() => setCount(c)}
-                  className={`py-1.5 rounded-xl text-xs font-semibold transition-all border ${
+                  className={`py-1.5 rounded-xl text-xs font-semibold transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out border ${
                     count === c
                       ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
                       : 'bg-card border-pline text-pmuted hover:text-pfg'
@@ -437,7 +437,7 @@ export default function AdminAiStudioTab() {
                   key={d}
                   type="button"
                   onClick={() => setDifficulty(d)}
-                  className={`py-1.5 rounded-xl text-[11px] font-semibold transition-all border ${
+                  className={`py-1.5 rounded-xl text-[11px] font-semibold transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out border ${
                     difficulty === d
                       ? 'bg-ppurple text-ponprimary border-ppurple shadow-sm'
                       : 'bg-card border-pline text-pmuted hover:text-pfg'
@@ -491,7 +491,7 @@ export default function AdminAiStudioTab() {
               <button
                 type="button"
                 onClick={() => setActiveLangTab('uz')}
-                className={`px-2.5 py-1 rounded-lg transition-all ${
+                className={`px-2.5 py-1 rounded-lg transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                   activeLangTab === 'uz' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                 }`}
               >
@@ -500,7 +500,7 @@ export default function AdminAiStudioTab() {
               <button
                 type="button"
                 onClick={() => setActiveLangTab('ru')}
-                className={`px-2.5 py-1 rounded-lg transition-all ${
+                className={`px-2.5 py-1 rounded-lg transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                   activeLangTab === 'ru' ? 'bg-ppurple text-ponprimary shadow-xs' : 'text-pmuted hover:text-pfg'
                 }`}
               >
@@ -552,7 +552,7 @@ export default function AdminAiStudioTab() {
                         else updateQuestion(q.id, { questionRu: val })
                       }}
                       rows={2}
-                      className="w-full bg-card border border-pline rounded-xl p-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                      className="w-full bg-card border border-pline rounded-xl p-2.5 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
                     />
                   </div>
 
@@ -567,7 +567,7 @@ export default function AdminAiStudioTab() {
                         return (
                           <div
                             key={opt.id}
-                            className={`flex items-center gap-2 p-2 rounded-xl border transition-all ${
+                            className={`flex items-center gap-2 p-2 rounded-xl border transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                               isCorrect ? 'bg-[rgb(var(--p-success-rgb)/0.1)] border-[rgb(var(--p-success-rgb)/0.4)]' : 'bg-card border-pline'
                             }`}
                           >
@@ -609,7 +609,7 @@ export default function AdminAiStudioTab() {
                       value={q.explanation || ''}
                       onChange={(e) => updateQuestion(q.id, { explanation: e.target.value })}
                       placeholder="Nega aynan shu javob to'g'ri ekanligi tushuntirishi..."
-                      className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-all"
+                      className="w-full bg-card border border-pline rounded-xl px-3 py-2 text-xs text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
                     />
                   </div>
 
@@ -667,7 +667,7 @@ export default function AdminAiStudioTab() {
             <button
               type="button"
               onClick={handleAddBlankQuestion}
-              className="py-3 px-4 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center justify-center gap-1.5 transition-all shadow-xs"
+              className="py-3 px-4 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard flex items-center justify-center gap-1.5 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
             >
               <Plus size={16} />
               <span>Yangi bo'sh savol qo'shish</span>

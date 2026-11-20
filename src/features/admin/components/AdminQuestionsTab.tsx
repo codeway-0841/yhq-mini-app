@@ -142,7 +142,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           </button>
           <button
             onClick={() => setBulkImporting(true)}
-            className="px-3 py-2.5 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 transition-all flex items-center gap-1 shadow-xs"
+            className="px-3 py-2.5 rounded-2xl bg-psurface text-xs font-semibold text-pfg hover:bg-pcard active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex items-center gap-1 shadow-xs"
             title="Ommaviy yuklash"
           >
             <Upload size={14} className="text-ppurple" />
@@ -171,7 +171,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 setPage(0)
                 haptics.impact('light')
               }}
-              className={`px-3.5 py-2.5 rounded-2xl text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-all flex-shrink-0 ${
+              className={`px-3.5 py-2.5 rounded-2xl text-xs font-semibold flex items-center gap-2 whitespace-nowrap transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out flex-shrink-0 ${
                 isSelected
                   ? 'text-white shadow-md scale-[1.02]'
                   : 'bg-psurface text-pmuted hover:text-pfg shadow-xs'
@@ -206,7 +206,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder={`${currentSubjectObj.name} savollaridan qidirish...`}
-          className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-all"
+          className="w-full bg-card border border-pline rounded-2xl pl-10 pr-4 py-3 text-base font-semibold text-pfg focus:outline-none focus:border-ppurple transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
         />
       </div>
 
@@ -296,7 +296,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 type="button"
                 disabled={page === 0}
                 onClick={() => setPage((p) => Math.max(0, p - 1))}
-                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-all shadow-xs"
+                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 aria-label="Oldingi sahifa"
               >
                 ‹
@@ -308,7 +308,7 @@ export default function AdminQuestionsTab({ lang }: AdminQuestionsTabProps) {
                 type="button"
                 disabled={(page + 1) * PAGE_SIZE >= total}
                 onClick={() => setPage((p) => p + 1)}
-                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-all shadow-xs"
+                className="px-4 py-2 rounded-xl bg-psurface text-sm font-semibold text-pfg disabled:opacity-40 active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-xs"
                 aria-label="Keyingi sahifa"
               >
                 ›
@@ -586,7 +586,7 @@ function QuestionForm({
                 <button
                   type="button"
                   onClick={() => setImageMode('upload')}
-                  className={`px-2 py-0.5 rounded-md transition-all ${
+                  className={`px-2 py-0.5 rounded-md transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                     imageMode === 'upload' ? 'bg-ppurple text-ponprimary' : 'text-pmuted hover:text-pfg'
                   }`}
                 >
@@ -595,7 +595,7 @@ function QuestionForm({
                 <button
                   type="button"
                   onClick={() => setImageMode('url')}
-                  className={`px-2 py-0.5 rounded-md transition-all ${
+                  className={`px-2 py-0.5 rounded-md transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out ${
                     imageMode === 'url' ? 'bg-ppurple text-ponprimary' : 'text-pmuted hover:text-pfg'
                   }`}
                 >
@@ -636,7 +636,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={() => fileInputRef.current?.click()}
-                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-all shadow-2xs"
+                        className="grid size-10 place-items-center rounded-xl bg-psurface text-pmuted hover:text-pfg active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out shadow-2xs"
                         title="Boshqa rasm tanlash"
                       >
                         <RotateCw size={13} />
@@ -644,7 +644,7 @@ function QuestionForm({
                       <button
                         type="button"
                         onClick={removeImage}
-                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-all"
+                        className="grid size-10 place-items-center rounded-xl bg-[rgb(var(--p-danger-rgb)/0.1)] border border-[rgb(var(--p-danger-rgb)/0.3)] text-pdanger hover:bg-[rgb(var(--p-danger-rgb)/0.2)] active:scale-95 transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out"
                         title="O'chirish"
                       >
                         <Trash2 size={13} />
@@ -654,7 +654,7 @@ function QuestionForm({
                 ) : (
                   <div
                     onClick={() => fileInputRef.current?.click()}
-                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-3.5 text-center cursor-pointer bg-psurface transition-all active:scale-[0.99] flex flex-col items-center justify-center gap-1"
+                    className="border-2 border-dashed border-pline hover:border-[rgb(var(--p-purple-rgb)/0.6)] rounded-2xl p-3.5 text-center cursor-pointer bg-psurface transition-[transform,background-color,border-color,color,opacity] duration-150 ease-out active:scale-[0.99] flex flex-col items-center justify-center gap-1"
                   >
                     <Upload size={18} className="text-ppurple" />
                     <p className="text-xs font-semibold text-pfg">Rasmni yuklash uchun bosing</p>

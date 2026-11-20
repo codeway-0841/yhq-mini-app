@@ -15,10 +15,21 @@ export type PathMascotAnimation =
 
 export type PathMascotVariant = 'tile' | 'avatar'
 
-const RIVE_ANIMATION: Record<PathMascotAnimation, string> = {
-  idle: 'wave_oneBubble', wave: 'powerUp_one', happy: 'powerUp_two',
-  oops: 'wave_oneBubble', thinking: 'wave_oneBubble', celebrate: 'powerUp_three',
-  level_up: 'powerUp_three', sleep: 'wave_oneBubble',
+interface MascotSpec {
+  file: string
+  artboard?: string
+  animation: string
+}
+
+const RIVE_MASCOT_CONFIG: Record<PathMascotAnimation, MascotSpec> = {
+  idle:      { file: 'koji_speech_apr_22_26.riv', artboard: 'MAIN_KojiSpeech', animation: 'wave_oneBubble' },
+  wave:      { file: 'koji_speech_apr_22_26.riv', artboard: 'MAIN_KojiSpeech', animation: 'powerUp_one' },
+  happy:     { file: 'koji_speech_apr_22_26.riv', artboard: 'MAIN_KojiSpeech', animation: 'powerUp_two' },
+  celebrate: { file: 'koji_speech_apr_22_26.riv', artboard: 'MAIN_KojiSpeech', animation: 'powerUp_three' },
+  level_up:  { file: 'koji_speech_apr_22_26.riv', artboard: 'MAIN_KojiSpeech', animation: 'powerUp_three' },
+  oops:      { file: 'nux-koji.2611eb62.riv', artboard: 'koji', animation: 'what_loss-idle' },
+  thinking:  { file: 'ask_koji.410199b8.riv', animation: 'lookUp' },
+  sleep:     { file: 'nux_koji_reactions_v2.c14662ad.riv', artboard: 'Koji Reaction Daily Habit', animation: 'Tea Idle' },
 }
 
 export function PathMascot({
@@ -30,11 +41,13 @@ export function PathMascot({
 } = {}) {
   const noAnimation = useAppStore((s) => s.settings.noAnimation)
   const reducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  const spec = RIVE_MASCOT_CONFIG[animation] ?? RIVE_MASCOT_CONFIG.idle
   return (
     <span className="learning-mascot" data-variant={variant} data-animation={animation} aria-hidden="true">
       <RiveCanvas
-        file="koji_speech_apr_22_26.riv"
-        animation={RIVE_ANIMATION[animation] || 'wave_oneBubble'}
+        file={spec.file}
+        artboard={spec.artboard}
+        animation={spec.animation}
         label="Koji"
         fit="contain"
         play={!noAnimation && !reducedMotion}

@@ -281,7 +281,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
         >
             {/* SINOV rejimi banneri + Premium upsell */}
             {preview && (
-              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">
+              <div className="flex-none flex items-center justify-between gap-2 mb-3 rounded-2xl px-3.5 py-2.5 motion-safe:animate-fadeIn bg-[rgb(var(--p-warning-rgb)/0.12)] shadow-xs">
                 <span className="flex items-center gap-1.5 text-[11px] font-semibold text-pwarning">
                   <Timer size={12} strokeWidth={1.75} />
                   {tt('themePreviewing')}
@@ -315,7 +315,7 @@ export default function SettingsModal({ onClose, initialPicker = null }: { onClo
                       playSound('chime') // tema unlock — tema-mos chime
                       setPicker(null)
                     }}
-                    className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-all active:scale-[0.98] ${
+                    className={`flex items-center gap-3 w-full rounded-2xl p-3.5 text-left transition-[transform,background-color,box-shadow] duration-150 ease-out active:scale-[0.98] ${
                       selected ? 'ring-2 ring-pprimary bg-pcard shadow-md' :
                       preview === theme.id ? 'ring-2 ring-pwarning bg-pcard shadow-md' : 'bg-pcard shadow-2xs hover:bg-psurface'
                     }`}
