@@ -6,6 +6,8 @@ import { PathMascot } from '../LessonToken'
 const NODE_RIVE = '/darslik-map/koji-gameboard.riv'
 const MACHINE = 'node_all'
 let nodeBuffer: Promise<ArrayBuffer> | null = null
+let riveModulePromise: Promise<typeof import('@rive-app/webgl2-course')> | null = null
+let assetsPreloaded = false
 
 function getNodeBuffer() {
   if (!nodeBuffer) {
@@ -18,6 +20,42 @@ function getNodeBuffer() {
     })
   }
   return nodeBuffer
+}
+
+function getRiveRuntime() {
+  if (!riveModulePromise) {
+    riveModulePromise = Promise.all([
+      import('@rive-app/webgl2-course'),
+      import('@rive-app/webgl2-course/rive.wasm?url'),
+      import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
+    ]).then(([pkg, wasmModule, fallbackWasmModule]) => {
+      const rive = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
+      rive.RuntimeLoader.setWasmUrl(wasmModule.default)
+      rive.RuntimeLoader.setWasmFallbackUrl(fallbackWasmModule.default)
+      void rive.RuntimeLoader.awaitInstance().catch(() => {})
+      return rive
+    }).catch((error: unknown) => {
+      riveModulePromise = null
+      throw error
+    })
+  }
+  return riveModulePromise
+}
+
+/**
+ * Ilova ochilishida Rive WebGL2 WASM + Koji gameboard `.riv` + asosiy disk rasmini
+ * fon rejimida oldindan qizdiradi (1–3 sekundlik birinchi kadr kechikishini yo'qotadi).
+ */
+export function preloadCourseMapNodeArt(): void {
+  if (assetsPreloaded || typeof window === 'undefined') return
+  assetsPreloaded = true
+  void getRiveRuntime().catch(() => {})
+  void getNodeBuffer().catch(() => {})
+  for (const src of ['/darslik-map/node-active-base.png', '/darslik-map/node-completed.svg']) {
+    const img = new Image()
+    img.decoding = 'async'
+    img.src = src
+  }
 }
 
 function isDarkTheme() {
@@ -65,6 +103,7 @@ export function CourseMapNodeArt({
     typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,
   )
   const [ready, setReady] = useState(false)
+  const [failed, setFailed] = useState(false)
 
   useEffect(() => {
     const media = window.matchMedia?.('(prefers-reduced-motion: reduce)')
@@ -77,6 +116,7 @@ export function CourseMapNodeArt({
 
   useEffect(() => {
     setReady(false)
+    setFailed(false)
     const canvas = canvasRef.current
     if (!canvas || noAnimation || reducedMotion) return
 
@@ -87,15 +127,10 @@ export function CourseMapNodeArt({
     let frame = 0
 
     void Promise.all([
-      import('@rive-app/webgl2-course'),
-      import('@rive-app/webgl2-course/rive.wasm?url'),
-      import('@rive-app/webgl2-course/rive_fallback.wasm?url'),
+      getRiveRuntime(),
       getNodeBuffer(),
-    ]).then(([pkg, wasmModule, fallbackWasmModule, buffer]) => {
+    ]).then(([rive, buffer]) => {
       if (disposed) return
-      const rive = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
-      rive.RuntimeLoader.setWasmUrl(wasmModule.default)
-      rive.RuntimeLoader.setWasmFallbackUrl(fallbackWasmModule.default)
       const resize = () => {
         if (instance && canvas.clientWidth > 0 && canvas.clientHeight > 0) {
           try { instance.resizeDrawingSurfaceToCanvas() } catch { /* Canvas may already be detached. */ }
@@ -129,37 +164,45 @@ export function CourseMapNodeArt({
           resize()
           themeObserver = new MutationObserver(updateTheme)
           themeObserver.observe(document.body, { attributes: true, attributeFilter: ['data-theme'] })
-          // Rive starts the state machine after onLoad; fire the mascot trigger once it is running.
+          // Rive state machine onLoad dan keyingi birinchi kadrda ishga tushadi.
           frame = window.requestAnimationFrame(() => {
-            frame = window.requestAnimationFrame(() => {
-              if (disposed) return
-              const state = latestRef.current
-              if (state.entering) {
-                const trig = state.current && !state.completed && !state.locked
-                  ? 'koji_enter_lesson'
-                  : 'koji_appear_enter'
-                inputs.find((input) => input.name === trig)?.fire()
-                wasEnteringRef.current = true
-                wasAppearedRef.current = false
-              } else if (state.disappearing) {
-                inputs.find((input) => input.name === 'koji_disappear')?.fire()
-                wasDisappearingRef.current = true
-                wasAppearedRef.current = false
-              } else if (state.current && !state.completed && !state.locked) {
-                inputs.find((input) => input.name === 'koji_appear')?.fire()
-                wasAppearedRef.current = true
-              }
-              setReady(true)
-            })
+            if (disposed) return
+            const state = latestRef.current
+            if (state.entering) {
+              const trig = state.current && !state.completed && !state.locked
+                ? 'koji_enter_lesson'
+                : 'koji_appear_enter'
+              inputs.find((input) => input.name === trig)?.fire()
+              wasEnteringRef.current = true
+              wasAppearedRef.current = false
+            } else if (state.disappearing) {
+              inputs.find((input) => input.name === 'koji_disappear')?.fire()
+              wasDisappearingRef.current = true
+              wasAppearedRef.current = false
+            } else if (state.current && !state.completed && !state.locked) {
+              inputs.find((input) => input.name === 'koji_appear')?.fire()
+              wasAppearedRef.current = true
+            }
+            setReady(true)
           })
         },
-        onLoadError: () => { if (!disposed) setReady(false) },
+        onLoadError: () => {
+          if (!disposed) {
+            setReady(false)
+            setFailed(true)
+          }
+        },
       })
       if (typeof ResizeObserver !== 'undefined') {
         resizeObserver = new ResizeObserver(resize)
         resizeObserver.observe(canvas)
       }
-    }).catch(() => { if (!disposed) setReady(false) })
+    }).catch(() => {
+      if (!disposed) {
+        setReady(false)
+        setFailed(true)
+      }
+    })
 
     return () => {
       disposed = true
@@ -231,8 +274,18 @@ export function CourseMapNodeArt({
         onPointerDown={() => setInput(inputsRef.current, 'cursor_down', true)}
         onPointerUp={() => setInput(inputsRef.current, 'cursor_down', false)}
       />
-      {!ready && <img className="cmap-node-art" src={src} alt="" width={128} height={134} loading="lazy" />}
-      {current && !ready && (
+      {!ready && (
+        <img
+          className="cmap-node-art"
+          src={src}
+          alt=""
+          width={128}
+          height={134}
+          loading="eager"
+          decoding="async"
+        />
+      )}
+      {current && !ready && (failed || noAnimation || reducedMotion) && (
         <span className="cmap-node-mascot" aria-hidden="true">
           <PathMascot animation="idle" variant="tile" />
         </span>

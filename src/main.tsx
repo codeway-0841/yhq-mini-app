@@ -48,3 +48,13 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(() => { /* some WebViews */ })
   })
 }
+
+// Rive WebGL2 WASM + Koji gameboard assetlarini ilk bo'sh kadrda qizdirish —
+// Dashboard va Darslikdagi maskotlar 1–3s kutmasdan darhol ochiladi (boshlang'ich bundle'ni kattalashtirmaydi).
+if (typeof window !== 'undefined') {
+  window.setTimeout(() => {
+    void import('./features/lessons/course-engine/CourseMapNodeArt')
+      .then((m) => m.preloadCourseMapNodeArt())
+      .catch(() => {})
+  }, 0)
+}
