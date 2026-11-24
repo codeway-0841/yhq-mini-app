@@ -74,6 +74,20 @@ export function effectiveStreak(lastDailyDate: string | null, today: string, cur
   return 0
 }
 
+/**
+ * O'qishdagi qolgan batareyalar (zaryad): o'tkazib yuborilgan kunlar (`gapDays`)
+ * mavjud batareyalar hisobidan himoyalangan bo'lsa, darhol `charges - gapDays` ko'rsatiladi.
+ * Yetarli bo'lmasa (streak reset), mavjud batareyalar kuymaydi va saqlanib qoladi.
+ */
+export function effectiveCharges(lastDailyDate: string | null, today: string, charges = 0): number {
+  const safeCharges = Math.max(0, charges)
+  if (!lastDailyDate || safeCharges === 0) return safeCharges
+  const delta = diffDays(today, lastDailyDate)
+  const gapDays = delta - 1
+  if (gapDays >= 1 && safeCharges >= gapDays) return safeCharges - gapDays
+  return safeCharges
+}
+
 /** Sanalar ro'yxatidagi eng uzun ketma-ket kunlar seriyasi (saralangan, unikal) */
 export function calcBestStreak(dates: string[]): number {
   let best = 0, run = 0, prev = ''
@@ -134,12 +148,12 @@ export const dailyRepository = {
       : null
 
     const row = await readStreak(userId)
-    const streakCharges = row?.charges ?? 0
+    const rawCharges = row?.charges ?? 0
 
     return {
       record,
-      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges),
-      streakCharges,
+      dailyStreak: effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, rawCharges),
+      streakCharges: effectiveCharges(row?.lastDailyDate ?? null, date, rawCharges),
     }
   },
 
@@ -264,8 +278,9 @@ export const dailyRepository = {
     const row = await readStreak(userId)
     // Yozuvda answered > 0 bo'lsa o'sha kun faol hisoblanadi (addFixed answered=0 yozadi)
     const activeDates = rows.filter((r) => r.answered > 0).map((r) => r.date)
-    const streakCharges = row?.charges ?? 0
-    const dailyStreak = effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, streakCharges)
+    const rawCharges = row?.charges ?? 0
+    const dailyStreak = effectiveStreak(row?.lastDailyDate ?? null, date, row?.streak ?? 0, rawCharges)
+    const streakCharges = effectiveCharges(row?.lastDailyDate ?? null, date, rawCharges)
 
     return {
       rows,

@@ -162,7 +162,7 @@ export function chargeProgressValueSql(
     WHEN (${prevDate}) > ${ctx.date}
       THEN (${prevProgress})
     WHEN ${chargeEligible}
-      THEN (${prevProgress})
+      THEN 0
     WHEN (${prevCharges}) >= ${STREAK_CHARGE_MAX}::int
       OR ((${prevEarned}) IS NOT NULL AND (${prevEarned}) >= ${ctx.date})
       THEN 0
@@ -188,6 +188,8 @@ export function lastChargeEarnedDateValueSql(
   return sql`CASE
     WHEN (${prevDate}) > ${ctx.date}
       THEN (${prevEarned})
+    WHEN ${chargeEligible}
+      THEN ${ctx.date}
     WHEN ${creditUnit}
       AND ((${prevProgress}) + (${unitDelta})::int) >= ${STREAK_CHARGE_UNITS_REQUIRED}::int
       THEN ${ctx.date}

@@ -4,6 +4,7 @@ import {
   isFrozenDay,
   calcNextStreak,
   effectiveStreak,
+  effectiveCharges,
   calcBestStreak,
 } from '../../../server/modules/daily/daily.repository'
 
@@ -102,6 +103,25 @@ describe('Daily Streak Temporal State Machine & Freeze Protection', () => {
     it('returns 0 if missed days exceed held charges', () => {
       expect(effectiveStreak('2026-08-13', '2026-08-16', 14, 1)).toBe(0)
       expect(effectiveStreak('2026-08-12', '2026-08-16', 14, 2)).toBe(0)
+    })
+  })
+
+  describe('effectiveCharges — Read-Time Remaining Battery Display', () => {
+    it('keeps charges untouched when active today or yesterday', () => {
+      expect(effectiveCharges('2026-08-16', '2026-08-16', 2)).toBe(2)
+      expect(effectiveCharges('2026-08-15', '2026-08-16', 2)).toBe(2)
+    })
+
+    it('subtracts pending consumed charges for 1 or 2 fully missed days', () => {
+      // Missed 15th (1 day) with 2 charges -> 1 remaining
+      expect(effectiveCharges('2026-08-14', '2026-08-16', 2)).toBe(1)
+      // Missed 14th & 15th (2 days) with 2 charges -> 0 remaining
+      expect(effectiveCharges('2026-08-13', '2026-08-16', 2)).toBe(0)
+    })
+
+    it('preserves existing charges when gap exceeds charges (streak reset)', () => {
+      // Missed 2 days with only 1 charge -> streak resets, 1 charge is not burned
+      expect(effectiveCharges('2026-08-13', '2026-08-16', 1)).toBe(1)
     })
   })
 

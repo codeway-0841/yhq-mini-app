@@ -155,7 +155,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   return (
     <div className="home-learning-guide px-4 lg:px-0 pb-3">
       <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
-        <button type="button" onClick={() => navigate(learnPath)} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+        <button type="button" onClick={() => navigate(learnPath)} className={`home-learning-shortcut ${interactive}`}>
           <div className="home-learning-shortcut-icon">
             <BookOpen size={19} strokeWidth={2} />
           </div>
@@ -166,7 +166,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           type="button"
           onClick={() => navigate(darslikPath)}
           aria-label={tt('lessons')}
-          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+          className={`home-learning-shortcut ${interactive}`}
         >
           <div className="home-learning-shortcut-icon">
             <GraduationCap size={19} strokeWidth={2} />
@@ -174,7 +174,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('lessons')}</span>
           <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
         </button>
-        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut ${interactive}`}>
           <div className="home-learning-shortcut-icon">
             <Ticket size={19} strokeWidth={2} />
           </div>
@@ -185,7 +185,7 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           type="button"
           onClick={() => navigate('/xatolar')}
           aria-label={tt('mistakes')}
-          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+          className={`home-learning-shortcut ${interactive}`}
         >
           <div className="home-learning-shortcut-icon">
             <HeartCrack size={19} strokeWidth={2} />
