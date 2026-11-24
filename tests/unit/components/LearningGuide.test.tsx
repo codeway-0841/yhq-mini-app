@@ -75,8 +75,8 @@ describe('learning guide', () => {
     ;(config as { testSessionsV2Enabled: boolean }).testSessionsV2Enabled = true
     useSubjectStore.getState().setSubject('rustili')
     guide(7)
-    expect(screen.getByText(/Tuzatilmagan xatolar: 7 ta/)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: 'Bugungi rejani boshlash' }))
+    expect(screen.getByText(/7 ta xato — tuzating/)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Boshlash' }))
     const target = JSON.parse(screen.getByTestId('destination').textContent!)
     expect(target).toEqual({
       path: '/test/1',

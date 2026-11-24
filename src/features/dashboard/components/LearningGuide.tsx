@@ -1,7 +1,6 @@
-import { useEffect, useId, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight,
-
 } from 'lucide-react'
 import { remainingSeconds, testDurationSeconds } from '../../../shared/lib/test-session'
 import { useNavigate } from 'react-router-dom'
@@ -15,7 +14,8 @@ import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState, selectDailyPlan } from '../next-step'
-import { PathMascot, getBrilliantTheme } from '../../lessons'
+import { CourseMapNodeArt } from '../../lessons'
+import { Button } from '../../../shared/components/ui/button'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
 import './learning-guide.css'
@@ -34,8 +34,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   const session = useTestSessionStore((s) => s.session)
   const done = useLessonsStore((s) => userId ? s.byUser[userId] : undefined)
   const tt = useT(lang)
-  const sheenId1 = useId()
-  const sheenId2 = useId()
   const resume = resumeRouteState(session, subject.id)
   const [now, setNow] = useState(Date.now)
   const deadline = resume && session ? session.startedAt + testDurationSeconds(session.mode) * 1000 : null
@@ -95,8 +93,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
     hasCurrentTopic: !!currentTopic,
     allTopicsComplete: allComplete,
   })
-  const topicTheme = typeof currentTopic?.id === 'number' ? getBrilliantTheme((((currentTopic.id - 1) % 8) + 1)) : getBrilliantTheme(1)
-  const theme = plan.kind === 'topic' ? topicTheme : getBrilliantTheme(1)
   const hasContinue = !!resume || (!allComplete && completedTopics.length > 0) || (subject.id !== 'yhq' && !!currentTopic && 'questionIds' in currentTopic.state && currentTopic.state.questionIds.some((id) => answered.has(`${subject.id}:${id}`))) || (subject.id === 'yhq' && !!currentTopic && (done?.[currentTopic.id]?.length ?? 0) > 0)
   const title = expired ? tt('guideExpiredTest')
     : plan.kind === 'resume' ? (session?.title || tt('guideResumeTest'))
@@ -199,55 +195,37 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
         <div className="home-learning-step">
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
-              {allComplete && !resume ? (
-                <img src="/darslik-map/node-completed.svg" alt="" width={64} height={67} className="home-learning-disk" />
-              ) : (
-                <span className="home-learning-disk-wrap">
-                  <img src="/darslik-map/node-active-base.png" alt="" width={64} height={67} className="home-learning-disk" />
-                  <span className="home-learning-mascot">
-                    <PathMascot animation="idle" variant="tile" />
-                  </span>
-                </span>
-              )}
+              <CourseMapNodeArt
+                current={!(allComplete && !resume)}
+                src={allComplete && !resume ? '/darslik-map/node-completed.svg' : '/darslik-map/node-active-base.png'}
+                completed={allComplete && !resume}
+                selected
+                color={1}
+              />
             </span>
             <div className="min-w-0 flex-1">
-              {contextLabel && <p className="text-[11.5px] leading-normal text-pmuted">{contextLabel}</p>}
-              <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
-              {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
+              {contextLabel && (
+                <p className="text-[11px] font-bold uppercase tracking-[0.06em] text-pprimary">
+                  {contextLabel}
+                </p>
+              )}
+              <h2 className={`text-[17px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
+              {description && <p className="mt-0.5 text-[12.5px] leading-snug text-pmuted">{description}</p>}
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          <button
+          <Button
             type="button"
+            variant="primary"
+            size="lg"
+            block
+            sheen
             data-testid="brilliant-start-button"
             onClick={start}
-            className="home-learning-start select-none"
-            style={{
-              backgroundColor: theme.buttonBg,
-              color: theme.buttonText,
-              boxShadow: `inset 0 -4px 0 ${theme.buttonShadow}`,
-            }}
+            className="mt-4"
           >
-            <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] select-none z-0">
-              <span className="absolute top-0 left-0 w-[150px] h-full animate-brilliant-sheen">
-                <svg viewBox="0 0 150 56" width="150" height="56" fill="none" className="h-full w-[150px]" aria-hidden="true">
-                  <defs>
-                    <linearGradient id={sheenId1} x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.27" stopColor="#F5EFFF" />
-                      <stop offset="0.71" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                    <linearGradient id={sheenId2} x1="140.826" y1="-28.1328" x2="140.826" y2="121.867" gradientUnits="userSpaceOnUse">
-                      <stop offset="0.081302" stopColor="#F5EFFF" />
-                      <stop offset="0.570844" stopColor="white" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <rect opacity="0.4" x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill={`url(#${sheenId1})`} />
-                  <rect opacity="0.4" x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill={`url(#${sheenId2})`} />
-                </svg>
-              </span>
-            </span>
-            <span className="relative z-10">{actionLabel}</span>
-          </button>
+            {actionLabel}
+          </Button>
 
 
 

@@ -1,37 +1,7 @@
 .home-learning-hero { padding: 4px 0 2px; }
 .home-learning-hero-heading { padding: 4px 2px 12px; text-align: left; }
-.home-learning-step { padding: 14px 16px 16px; border: 2px solid var(--p-line-strong); border-radius: 28px; background: var(--p-card); box-shadow: 0 2px 0 var(--p-line-strong); }
-.home-learning-start {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 56px;
-  margin-top: 14px;
-  border-radius: 9999px;
-  font-size: 17px;
-  font-weight: 700;
-  color: #ffffff;
-  transition: transform 100ms ease-out, filter 100ms ease-out;
-  cursor: pointer;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
-.home-learning-start:hover:not(:disabled) {
-  filter: brightness(1.06);
-}
-.home-learning-start:active:not(:disabled) {
-  transform: translateY(2px);
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.22) !important;
-  transition: transform 60ms ease-out, box-shadow 60ms ease-out;
-}
-.home-learning-start:disabled {
-  opacity: .55;
-  cursor: not-allowed;
-}
-.home-learning-path-row { display: flex; align-items: center; gap: 12px; width: 100%; position: relative; padding: 2px 0; }
+.home-learning-step { padding: 14px 16px 18px; border: 2px solid var(--p-line-strong); border-radius: 28px; background: var(--p-card); box-shadow: 0 2px 0 var(--p-line-strong); }
+.home-learning-path-row { display: flex; align-items: center; gap: 14px; width: 100%; position: relative; padding: 2px 0; }
 .home-learning-shortcut {
   position: relative;
   min-height: 72px;
@@ -71,27 +41,48 @@
 /* Desktop: karta ichi nafasli (gap-4 ritmiga mos) — mobil zichligicha qoladi */
 @media (min-width: 1024px) { .home-learning-step { padding: 20px; } .home-learning-path-row { gap: 14px; } }
 @media (min-width: 600px) { .home-learning-hero { width: 100%; } }
-.home-learning-token { display: flex; align-items: center; justify-content: center; flex: 0 0 64px; width: 64px; height: 68px; position: relative; }
-.home-learning-disk-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 67px; }
-.home-learning-disk { width: 64px; height: 67px; object-fit: contain; display: block; }
-.home-learning-mascot {
+.home-learning-token {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 84px;
+  width: 84px;
+  height: 88px;
+  position: relative;
+}
+.home-learning-token .cmap-node-rive {
   position: absolute;
-  top: 3px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-2px);
+  pointer-events: none;
+}
+.home-learning-token .cmap-node-art {
+  position: relative;
+  width: 84px;
+  height: 88px;
+  display: block;
+  object-fit: contain;
+}
+.home-learning-token .cmap-node-mascot {
+  position: absolute;
+  top: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   pointer-events: none;
   z-index: 2;
 }
-.home-learning-mascot .learning-mascot {
+.home-learning-token .cmap-node-mascot .learning-mascot {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.home-learning-mascot .mascot-canvas-host {
+.home-learning-token .cmap-node-mascot .mascot-canvas-host {
   width: 100%;
   height: 100%;
   overflow: visible;
