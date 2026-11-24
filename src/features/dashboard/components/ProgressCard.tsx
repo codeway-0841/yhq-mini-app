@@ -1,127 +1,94 @@
-import { memo } from 'react'
+import { memo, useLayoutEffect, useRef } from 'react'
 import { useT } from '../../../shared/i18n'
 import { useCountUp } from '../../../shared/hooks/useCountUp'
-import { BrilliantStreakIcon } from '../../../shared/components/BrilliantStreakIcon'
-import { isSubjectExtendedOnDate, todayStr, useDailyStore } from '../../../shared/store/useDailyStore'
-import { useSubjectStore } from '../../../shared/store/useSubjectStore'
-import { haptics } from '../../../platform/haptics'
+import { initWaveGrid } from '../../../shared/lib/wave-grid'
 import type { LearningSummary } from '../../../shared/api'
 
-const DAYS_UZ = ['Du', 'Se', 'Ch', 'Pa', 'Ju', 'Sh', 'Ya'] as const
-const DAYS_RU = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'] as const
-
-// ── Brilliant 1:1 ixcham 7-kunlik Seriya + Tayyorgarlik kartasi (1-ekranga sig'adi) ──
-export const ProgressCard = memo(function ProgressCard({ summary, streak = 0, lang, onStreakPreview }: {
+// ── Hero: umumiy progress ───────────────────────────────────────────────────
+export const ProgressCard = memo(function ProgressCard({ summary, lang }: {
   summary: LearningSummary
   streak?: number
   lang: 'uz' | 'ru'
   onStreakPreview?: () => void
 }) {
   const tt = useT(lang)
-  const isRu = lang === 'ru'
-  const subjectId = useSubjectStore((s) => s.subjectId)
-  const globalExtendedDate = useDailyStore((s) => s.globalExtendedDate)
-  const activityKey = useDailyStore((s) => s.activityKey)
-  const extendedDates = useDailyStore((s) => s.extendedDates)
-  const extendedToday = isSubjectExtendedOnDate(
-    { globalExtendedDate, activityKey, extendedDates },
-    todayStr(),
-    subjectId,
-  )
-
   const total = summary.totalQuestions > 0 ? summary.totalQuestions : 0
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+
   const progressPct = total > 0 ? summary.readinessPercent : 0
-  const shown = useCountUp(progressPct, 700)
-  const barWidth = total > 0 ? Math.max(shown, summary.mastered > 0 ? 4 : 0) : 0
+  const shown = useCountUp(progressPct, 900)
 
-  const jsDay = new Date().getDay()
-  const todayIdx = jsDay === 0 ? 6 : jsDay - 1
-  const dayLabels = isRu ? DAYS_RU : DAYS_UZ
+  useLayoutEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+    let cleanup: (() => void) | null = null
 
-  const lastActiveIdx = extendedToday ? todayIdx : todayIdx - 1
-  const activeStartIdx = streak > 0 ? Math.max(0, lastActiveIdx - streak + 1) : 99
+    if (typeof IntersectionObserver !== 'undefined') {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const [entry] = entries
+          if (entry.isIntersecting) {
+            if (!cleanup) cleanup = initWaveGrid(canvas)
+          } else {
+            if (cleanup) {
+              cleanup()
+              cleanup = null
+            }
+          }
+        },
+        { threshold: 0.05 },
+      )
+      observer.observe(canvas)
+      return () => {
+        observer.disconnect()
+        if (cleanup) cleanup()
+      }
+    }
+
+    cleanup = initWaveGrid(canvas)
+    return () => {
+      if (cleanup) cleanup()
+    }
+  }, [])
 
   return (
-    <section className="mx-4 lg:mx-0 mb-2.5">
-      <div className="brilliant-progress-card">
-        {/* Yuqori qator: Seriya + Tayyorgarlik */}
-        <div className="flex items-center justify-between gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              haptics.impact('light')
-              onStreakPreview?.()
-            }}
-            className="flex items-center gap-1.5 text-left cursor-pointer touch-manipulation active:scale-95 transition-transform"
-            aria-label={isRu ? `Серия: ${streak}` : `Seriya: ${streak}`}
-          >
-            <span className="font-display text-[24px] font-extrabold leading-none tracking-[-0.03em] tabular-nums text-pfg">
-              {streak}
-            </span>
-            <BrilliantStreakIcon
-              size={18}
-              className={streak > 0 ? 'text-[#A8D31D]' : 'text-pmuted'}
-            />
-            <span className="text-[12px] font-bold text-pmuted leading-none">
-              {isRu ? 'дн. серия' : 'kun seriya'}
-            </span>
-          </button>
-
-          <div className="inline-flex items-center gap-1 rounded-full border-2 border-pline bg-psurface/60 px-2.5 py-0.5">
-            <span className="text-[12px] font-extrabold tabular-nums text-[#3557ff] dark:text-[#6e8cff]">
-              {total > 0 ? `${shown}%` : '—'}
-            </span>
-            <span className="text-[11px] font-bold tabular-nums text-pmuted">
-              · {summary.mastered}/{total || '…'}
-            </span>
-          </div>
-        </div>
-
-        {/* 7-kunlik ixcham haftalik chiziq */}
-        <div className="mt-2.5 grid grid-cols-7 gap-1" aria-label={isRu ? 'Недельная серия' : 'Haftalik seriya'}>
-          {dayLabels.map((label, idx) => {
-            const isToday = idx === todayIdx
-            const isDone = streak > 0 && idx <= lastActiveIdx && idx >= activeStartIdx
-            return (
-              <div key={label} className="flex flex-col items-center gap-0.5">
-                <span
-                  className={`flex size-7 items-center justify-center rounded-full border-2 transition-colors ${
-                    isDone
-                      ? 'border-[#8eb812] bg-[#A8D31D] text-white'
-                      : isToday
-                        ? 'border-dashed border-[#3557ff] bg-pcard text-[#3557ff] dark:border-[#6e8cff] dark:text-[#6e8cff]'
-                        : 'border-pline bg-psurface text-pmuted/60'
-                  }`}
-                >
-                  <BrilliantStreakIcon
-                    size={12}
-                    className={isDone ? 'text-white' : isToday ? 'text-[#3557ff] dark:text-[#6e8cff] opacity-60' : 'opacity-30'}
-                  />
-                </span>
-                <span className={`text-[9.5px] font-extrabold leading-none ${isToday ? 'text-pfg' : 'text-pmuted'}`}>
-                  {label}
-                </span>
-              </div>
-            )
-          })}
-        </div>
-
-        {/* Ixcham progress bar */}
-        <div className="mt-2.5 flex items-center gap-2">
-          <span className="text-[10px] font-extrabold uppercase tracking-[0.06em] text-pmuted shrink-0">
-            {tt('readinessTitle')}
-          </span>
-          <div className="h-[6px] flex-1 overflow-hidden rounded-full bg-psurface">
-            <div
-              className="h-full rounded-full bg-[#3557ff] transition-[width] duration-700 ease-out"
-              style={{
-                width: `${barWidth}%`,
-                boxShadow: barWidth > 0 ? 'inset 0 -1.5px 0 #2643d8' : undefined,
-              }}
-            />
-          </div>
-        </div>
+    <div className="hero-gradient-card relative mx-4 lg:mx-0 mb-4 overflow-hidden px-4 py-3 sm:px-5 sm:py-4">
+      {/* Organik to'lqinli to'r: Canvas 2D liquid mesh */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <canvas
+          ref={canvasRef}
+          className="pointer-events-none absolute inset-0 h-full w-full block"
+          aria-hidden="true"
+        />
       </div>
-    </section>
+
+      {/* Kontent */}
+      <div className="relative z-[2]">
+        <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
+          <p className="text-[12.5px] font-medium text-white/80">{tt('readinessTitle')}</p>
+        </div>
+
+        <div className="flex items-baseline gap-2">
+          <span className="font-display text-[44px] font-bold leading-none tracking-[-0.03em] tabular-nums text-white">
+            {total > 0 ? shown : '—'}
+          </span>
+          {total > 0 && <span className="font-display text-[22px] font-semibold text-white/75">%</span>}
+        </div>
+
+        <div className="mt-3 flex items-center gap-3">
+          <div className="h-[5px] flex-1 overflow-hidden rounded-full bg-black/35">
+            <div
+              className="h-full rounded-full bg-white transition-[width] duration-700 ease-out"
+              style={{ width: `${shown}%` }}
+            />
+          </div>
+          <span className="shrink-0 text-[12px] font-semibold tabular-nums text-white/90">
+            {summary.mastered} / {total || '…'}
+          </span>
+        </div>
+
+
+      </div>
+    </div>
   )
 })

@@ -127,7 +127,7 @@ export default function Dashboard() {
           )}
 
           {/* Progress va O'quv yo'li */}
-          <div className="max-w-3xl mx-auto lg:px-4">
+          <div className="max-w-3xl mx-auto space-y-2 lg:px-4">
             <ProgressCard
               summary={learningSummary}
               streak={dailyStreak}

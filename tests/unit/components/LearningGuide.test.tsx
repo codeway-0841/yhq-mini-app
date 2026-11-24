@@ -37,14 +37,14 @@ beforeEach(() => {
 describe('learning guide', () => {
   it('orders shortcuts, modes and continue block for the dashboard', () => {
     guide()
-    expect(screen.getByRole('button', { name: /O‘rganish/ })).toBeInTheDocument()
-    const darslikBtn = screen.getByRole('button', { name: 'Darslik' })
-    expect(darslikBtn).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /Biletlar/ })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Xatolar' })).toBeInTheDocument()
+    const buttons = screen.getAllByRole('button')
+    expect(buttons[0]).toHaveTextContent('O‘rganish')
+    expect(buttons[1]).toHaveTextContent('Darslik')
+    expect(buttons[2]).toHaveTextContent('Biletlar')
+    expect(buttons[3]).toHaveTextContent('Xatolar')
     expect(screen.getByRole('heading', { name: "Yo'l belgilari" })).toBeInTheDocument()
 
-    fireEvent.click(darslikBtn)
+    fireEvent.click(buttons[1])
     expect(JSON.parse(screen.getByTestId('destination').textContent!).path).toBe('/darslik')
   })
 

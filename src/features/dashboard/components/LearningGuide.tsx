@@ -15,10 +15,9 @@ import { useQuestionsStore } from '../../../shared/store/useQuestionsStore'
 import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState, selectDailyPlan } from '../next-step'
-import { BrilliantHeroIllustration, PathMascot, getBrilliantTheme } from '../../lessons'
+import { PathMascot, getBrilliantTheme } from '../../lessons'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
-import { haptics } from '../../../platform/haptics'
 import './learning-guide.css'
 
 export function LearningGuide({ summary, mistakesCount = 0 }: {
@@ -153,47 +152,58 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
       : tt('allTests')
   const interactive = 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pprimary focus-visible:ring-offset-2 focus-visible:ring-offset-pcanvas'
 
-  const openShortcut = (path: string) => {
-    haptics.impact('light')
-    navigate(path)
-  }
-
-  const badgeTone =
-    expired || plan.kind === 'mistakes'
-      ? 'is-danger'
-      : plan.kind === 'completed'
-        ? 'is-success'
-        : 'is-primary'
-
-  const isRu = lang === 'ru'
-  const heroModuleId = typeof currentTopic?.id === 'number' ? ((currentTopic.id - 1) % 8) + 1 : 1
-
   return (
-    <div className="home-learning-guide px-4 lg:px-0 pb-1">
-      {/* 1. Markaziy Brilliant Big-Illustration Showcase kartasi */}
-      <section className="home-learning-hero">
-        <div className="home-learning-step">
-          <div className="home-showcase-stage">
-            <div className="home-showcase-topbar">
-              <span className={`home-learning-eyebrow ${badgeTone}`}>
-                {contextLabel ?? (isRu ? 'План на сегодня' : 'Bugungi reja')}
-              </span>
-              {!expired && plan.estimatedMinutes > 0 && (
-                <span className="rounded-full border-2 border-pline bg-pcard px-2.5 py-0.5 text-[11px] font-extrabold tabular-nums text-pmuted">
-                  ~{plan.estimatedMinutes} {isRu ? 'мин' : 'daq'}
-                </span>
-              )}
-            </div>
-            <BrilliantHeroIllustration moduleId={heroModuleId} className="home-showcase-art" />
+    <div className="home-learning-guide px-4 lg:px-0 pb-3">
+      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-4 lg:gap-4">
+        <button type="button" onClick={() => navigate(learnPath)} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+          <div className="home-learning-shortcut-icon">
+            <BookOpen size={19} strokeWidth={2} />
           </div>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('dashboardLearn')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          onClick={() => navigate(darslikPath)}
+          aria-label={tt('lessons')}
+          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+        >
+          <div className="home-learning-shortcut-icon">
+            <GraduationCap size={19} strokeWidth={2} />
+          </div>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('lessons')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
+        </button>
+        <button type="button" onClick={() => navigate('/biletlar')} className={`home-learning-shortcut app-card-interactive ${interactive}`}>
+          <div className="home-learning-shortcut-icon">
+            <Ticket size={19} strokeWidth={2} />
+          </div>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('tickets')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          onClick={() => navigate('/xatolar')}
+          aria-label={tt('mistakes')}
+          className={`home-learning-shortcut app-card-interactive ${interactive}`}
+        >
+          <div className="home-learning-shortcut-icon">
+            <HeartCrack size={19} strokeWidth={2} />
+          </div>
+          <span className="min-w-0 flex-1 text-[14px] xs:text-[15px] font-bold leading-tight text-pfg truncate xs:text-clip">{tt('mistakes')}</span>
+          <ChevronRight className="home-learning-shortcut-chevron" aria-hidden="true" />
+        </button>
+      </div>
 
+      <section className="home-learning-hero mt-4">
+        <div className="home-learning-step">
           <div className="home-learning-path-row">
             <span className="home-learning-token" aria-hidden="true">
               {allComplete && !resume ? (
-                <img src="/darslik-map/node-completed.svg" alt="" width={48} height={50} className="home-learning-disk" />
+                <img src="/darslik-map/node-completed.svg" alt="" width={64} height={67} className="home-learning-disk" />
               ) : (
                 <span className="home-learning-disk-wrap">
-                  <img src="/darslik-map/node-active-base.png" alt="" width={48} height={50} className="home-learning-disk" />
+                  <img src="/darslik-map/node-active-base.png" alt="" width={64} height={67} className="home-learning-disk" />
                   <span className="home-learning-mascot">
                     <PathMascot animation="idle" variant="tile" />
                   </span>
@@ -201,16 +211,16 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
               )}
             </span>
             <div className="min-w-0 flex-1">
-              <h2 className="text-[16.5px] font-extrabold leading-snug tracking-[-0.02em] text-pfg truncate">{title}</h2>
-              {description && <p className="mt-0.5 text-[12px] leading-snug text-pmuted line-clamp-2">{description}</p>}
+              {contextLabel && <p className="text-[11.5px] leading-normal text-pmuted">{contextLabel}</p>}
+              <h2 className={`text-[16px] font-bold leading-snug text-pfg ${contextLabel ? 'mt-0.5' : ''}`}>{title}</h2>
+              {description && <p className="mt-0.5 text-[11.5px] leading-relaxed text-pmuted">{description}</p>}
             </div>
-            {plan.kind === 'completed' && <CheckCircle2 size={20} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
+            {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-
           <button
             type="button"
             data-testid="brilliant-start-button"
-            onClick={() => { haptics.impact('light'); start() }}
+            onClick={start}
             className="home-learning-start select-none"
             style={{
               backgroundColor: theme.buttonBg,
@@ -251,73 +261,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
           </details>}
         </div>
       </section>
-
-      {/* 2. Pastki ixcham 2×2 Brilliant kartalar (1-ekranga sig'adi) */}
-      <div className="mt-2.5 grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-3">
-        <button type="button" onClick={() => openShortcut(learnPath)} className={`home-bento-card ${interactive}`}>
-          <div className="home-bento-icon is-learn">
-            <BookOpen size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('dashboardLearn')}</span>
-            <span className="home-bento-sub">{isRu ? 'Темы' : 'Mavzular'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-        </button>
-
-        <button
-          type="button"
-          onClick={() => openShortcut(darslikPath)}
-          aria-label={tt('lessons')}
-          className={`home-bento-card ${interactive}`}
-        >
-          <div className="home-bento-icon is-lessons">
-            <GraduationCap size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('lessons')}</span>
-            <span className="home-bento-sub">{isRu ? 'Курс' : 'Kurs'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-        </button>
-
-        <button type="button" onClick={() => openShortcut('/biletlar')} className={`home-bento-card ${interactive}`}>
-          <div className="home-bento-icon is-tickets">
-            <Ticket size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('tickets')}</span>
-            <span className="home-bento-sub">{isRu ? 'Экзамен' : 'Imtihon'}</span>
-          </div>
-          <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-        </button>
-
-        <button
-          type="button"
-          onClick={() => openShortcut('/xatolar')}
-          aria-label={tt('mistakes')}
-          className={`home-bento-card ${interactive}`}
-        >
-          <div className="home-bento-icon is-mistakes">
-            <HeartCrack size={17} strokeWidth={2.2} />
-          </div>
-          <div className="home-bento-body">
-            <span className="home-bento-title">{tt('mistakes')}</span>
-            <span className="home-bento-sub">
-              {openMistakes > 0
-                ? isRu ? 'Повторить' : 'Tuzatish'
-                : isRu ? 'Чисто' : 'Toza'}
-            </span>
-          </div>
-          {openMistakes > 0 ? (
-            <span className="home-bento-badge" aria-hidden="true">
-              {openMistakes > 99 ? '99+' : openMistakes}
-            </span>
-          ) : (
-            <ChevronRight className="home-bento-chevron" aria-hidden="true" />
-          )}
-        </button>
-      </div>
     </div>
   )
 }
