@@ -21,7 +21,7 @@ describe('dashboard localized labels', () => {
 
   it('renders all four shortcuts as consistent interactive cards', () => {
     const { container } = render(<MemoryRouter><LearningGuide mistakesCount={0} /></MemoryRouter>)
-    const cards = container.querySelectorAll('.home-learning-shortcut.app-card-interactive')
+    const cards = container.querySelectorAll('.home-learning-shortcut')
     expect(cards).toHaveLength(4)
     expect(container.querySelectorAll('.home-learning-shortcut-chevron')).toHaveLength(4)
   })

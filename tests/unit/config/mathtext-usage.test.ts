@@ -19,10 +19,8 @@ import path from 'node:path'
 const SRC = path.resolve(__dirname, '../../../src')
 
 const COVERED = [
-  'features/adaptive/AdaptivePage.tsx',
   'features/mistakes/XatolarPage.tsx',
   'features/octagon/components/RoundScreen.tsx',
-
   'features/search/SearchPage.tsx',
   'features/ai-test/components/TaskCards.tsx',
   'features/ai-test/AiTestSession.tsx',

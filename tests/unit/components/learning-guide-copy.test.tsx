@@ -16,8 +16,8 @@ beforeEach(() => {
 })
 
 it.each([
-  ['uz', 'Xatolar ustida ishlang', 'Tuzatilmagan xatolar: 3 ta. Avval shularni yoping — eng katta o‘sish shu yerdan boshlanadi.', 'Bugungi rejani boshlash'],
-  ['ru', 'Работа над ошибками', 'Неисправленных ошибок: 3. Начните с них — здесь самый быстрый рост.', 'Начать план на сегодня'],
+  ['uz', 'Xatolarni tuzating', '3 ta xato — tuzating', 'Boshlash'],
+  ['ru', 'Исправьте ошибки', '3 ошибок — исправьте', 'Начать'],
 ] as const)('shows concise mistake review copy in %s', (language, title, hint, action) => {
   useSubjectStore.getState().setSubject('rustili')
   useQuestionsStore.setState({ subjectId: 'rustili', loaded: true, questions: [], topics: [] })
@@ -29,8 +29,8 @@ it.each([
 })
 
 describe.each([
-  ['uz', 'Keyingi mavzu', 'Darsni boshlash', 'Tugallanmagan test', 'Testni davom ettirish', 'Test vaqti tugagan'],
-  ['ru', 'Следующая тема', 'Начать урок', 'Незавершённый тест', 'Продолжить тест', 'Время теста истекло'],
+  ['uz', 'Keyingi dars', 'Boshlash', 'Tugallanmagan test', 'Davom etish', 'Test vaqti tugagan'],
+  ['ru', 'Следующий урок', 'Начать', 'Незавершённый тест', 'Продолжить', 'Время теста истекло'],
 ] as const)('learning guide context in %s', (language, nextTopic, startLesson, pendingTest, continueTest, expired) => {
   beforeEach(() => {
     useAppStore.setState((s) => ({ settings: { ...s.settings, language } }))

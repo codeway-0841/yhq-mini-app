@@ -171,14 +171,14 @@ export default function XatolarPage() {
       {/* v2 yuklanish skeleton — bo'sh holat chaqnashini oldini oladi */}
       {loadingV2 && (
         <div className="space-y-3" aria-busy="true">
-          <div className="h-[172px] rounded-[26px] border-2 border-pline bg-pcard animate-pulse" />
-          <div className="h-[88px] rounded-[24px] border-2 border-pline bg-pcard animate-pulse" />
+          <div className="h-[172px] rounded-3xl border-2 border-pline bg-pcard animate-pulse" />
+          <div className="h-[88px] rounded-3xl border-2 border-pline bg-pcard animate-pulse" />
         </div>
       )}
 
       {/* Bo'sh holat */}
       {!loadingV2 && total === 0 && (
-        <div className="rounded-[26px] border-2 border-pline bg-pcard p-8 flex flex-col items-center text-center shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+        <div className="rounded-3xl border-2 border-pline bg-pcard p-8 flex flex-col items-center text-center shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
           <div className="size-32 flex items-center justify-center mb-2">
             <BrilliantEndstateRive
               kind="review-complete"
@@ -197,7 +197,7 @@ export default function XatolarPage() {
       {!loadingV2 && total > 0 && (
         <>
           {/* Umumiy holat + "Barchasini mashq qilish" (Brilliant 1:1 karta) */}
-          <div className="rounded-[26px] border-2 border-pline bg-pcard p-5 mb-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+          <div className="rounded-3xl border-2 border-pline bg-pcard p-5 mb-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
             <div className="flex items-center justify-between gap-2 mb-3">
               <span className="text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#e11d48] dark:text-[#fb7185]">
                 {isRu ? 'Открытые ошибки' : 'Ochiq xatolar'}
@@ -237,7 +237,7 @@ export default function XatolarPage() {
 
           {/* Mavzular kesimi + Top-10 tahlil — PREMIUM funksiya */}
           {!isPremium && (
-            <div className="rounded-[24px] border-2 border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+            <div className="rounded-3xl border-2 border-pline bg-pcard w-full p-4 mb-4 flex items-center gap-3 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
               <div className="size-14 flex items-center justify-center flex-shrink-0">
                 <BrilliantExtrasRive
                   kind="practice-nudge"
@@ -267,7 +267,7 @@ export default function XatolarPage() {
           {isPremium && activeTopics.length > 0 && (
             <>
               <p className="text-[11px] font-extrabold text-pmuted uppercase tracking-[0.08em] mb-2 px-0.5">{tt('byTopicsWord')}</p>
-              <div className="rounded-[24px] border-2 border-pline bg-pcard overflow-hidden mb-5 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] divide-y divide-pline">
+              <div className="rounded-3xl border-2 border-pline bg-pcard overflow-hidden mb-5 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] divide-y divide-pline">
                 {activeTopics.map((g) => {
                   const pct = Math.max(8, Math.round((g.count / maxTopicCount) * 100))
                   return (
@@ -313,7 +313,7 @@ export default function XatolarPage() {
                     <button
                       key={item.launchToken || i}
                       onClick={() => { haptics.impact('light'); startPracticeSingleV2(item.launchToken) }}
-                      className="rounded-[20px] border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
+                      className="rounded-2xl border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
                     >
                       <span className="flex size-7 items-center justify-center rounded-full bg-psurface text-[12px] font-extrabold text-pfg flex-shrink-0 tabular-nums">
                         {i + 1}
@@ -335,7 +335,7 @@ export default function XatolarPage() {
                     <button
                       key={q.id}
                       onClick={() => { haptics.impact('light'); startPracticeV1([q.id], tt('topMistakes')) }}
-                      className="rounded-[20px] border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
+                      className="rounded-2xl border-2 border-pline bg-pcard p-3.5 flex items-center gap-3 text-left shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:translate-y-[2px] active:shadow-[0_1px_0_var(--p-line)] transition-[transform,box-shadow] cursor-pointer touch-manipulation"
                     >
                       <span className="flex size-7 items-center justify-center rounded-full bg-psurface text-[12px] font-extrabold text-pfg flex-shrink-0 tabular-nums">
                         {i + 1}

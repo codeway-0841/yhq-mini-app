@@ -32,7 +32,7 @@ function getRiveRuntime() {
       const rive = ((pkg as { default?: unknown }).default ?? pkg) as typeof import('@rive-app/webgl2-course')
       rive.RuntimeLoader.setWasmUrl(wasmModule.default)
       rive.RuntimeLoader.setWasmFallbackUrl(fallbackWasmModule.default)
-      void rive.RuntimeLoader.awaitInstance().catch(() => {})
+      void rive.RuntimeLoader.awaitInstance?.()?.catch?.(() => {})
       return rive
     }).catch((error: unknown) => {
       riveModulePromise = null

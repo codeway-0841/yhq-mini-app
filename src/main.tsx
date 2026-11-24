@@ -53,7 +53,7 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
 // Dashboard va Darslikdagi maskotlar 1–3s kutmasdan darhol ochiladi (boshlang'ich bundle'ni kattalashtirmaydi).
 if (typeof window !== 'undefined') {
   window.setTimeout(() => {
-    void import('./features/lessons/course-engine/CourseMapNodeArt')
+    void import('./features/lessons')
       .then((m) => m.preloadCourseMapNodeArt())
       .catch(() => {})
   }, 0)

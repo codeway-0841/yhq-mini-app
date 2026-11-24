@@ -126,7 +126,6 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
         navigate('/xatolar')
       }
     }
-    else if (plan.kind === 'review') navigate('/adaptive')
     else if (plan.kind === 'topic' && currentTopic) navigate(currentTopic.path, { state: currentTopic.state })
     else if (plan.kind === 'completed' && topicChoices[0]) navigate(topicChoices[0].path, {state: topicChoices[0].state})
     else navigate('/testlar')

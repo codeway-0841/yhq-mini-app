@@ -273,7 +273,7 @@ export default function Biletlar() {
       )}
 
       {tab === 'all' && firstUnlocked && (
-        <div className="mb-4 rounded-[24px] border-2 border-pline bg-pcard p-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
+        <div className="mb-4 rounded-3xl border-2 border-pline bg-pcard p-4 shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)]">
           <div className="flex items-center justify-between gap-3">
             <div className="min-w-0 flex-1">
               <p className="text-[11px] font-extrabold uppercase tracking-[0.08em] text-[#3557ff] dark:text-[#6e8cff]">
@@ -336,9 +336,9 @@ export default function Biletlar() {
           const locked = isTicketPremium(ticket.id) && !isPremium
           return (
             <button key={ticket.id} onClick={() => { haptics.impact('light'); handleTicket(ticket) }}
-              className={`relative flex flex-col items-center justify-center rounded-[20px] border-2 bg-pcard p-2.5 min-h-[86px] text-center overflow-hidden cursor-pointer touch-manipulation transition-[transform,box-shadow,border-color] duration-100 active:translate-y-[2px] ${
+              className={`relative flex flex-col items-center justify-center rounded-2xl border-2 bg-pcard p-2.5 min-h-[86px] text-center overflow-hidden cursor-pointer touch-manipulation transition-[transform,box-shadow,border-color] duration-100 active:translate-y-[2px] ${
                 locked
-                  ? 'border-pline/80 opacity-85 shadow-[0_2px_0_var(--p-line)] active:shadow-none'
+                  ? 'border-pline opacity-85 shadow-[0_2px_0_var(--p-line)] active:shadow-none'
                   : 'border-pline shadow-[0_3px_0_var(--p-line)] dark:shadow-[0_3px_0_rgba(0,0,0,0.5)] active:shadow-[0_1px_0_var(--p-line)] hover:border-plinestrong'
               }`}>
               {locked && (
@@ -382,7 +382,7 @@ export default function Biletlar() {
               <span className="sr-only">{tt('loadingDots')}</span>
               <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6" aria-hidden="true">
                 {Array.from({ length: 6 }, (_, i) => (
-                  <div key={i} className="h-[86px] rounded-[20px] border-2 border-pline bg-pcard animate-pulse" />
+                  <div key={i} className="h-[86px] rounded-2xl border-2 border-pline bg-pcard animate-pulse" />
                 ))}
               </div>
             </>
