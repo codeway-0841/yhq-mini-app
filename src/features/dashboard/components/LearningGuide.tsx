@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
 import {
   BookOpen, GraduationCap, Ticket, HeartCrack, CheckCircle2, ChevronRight,
 } from 'lucide-react'
@@ -15,7 +15,6 @@ import { useT } from '../../../shared/i18n'
 import { modules } from '../../../content/modules'
 import { resumeRouteState, selectDailyPlan } from '../next-step'
 import { CourseMapNodeArt } from '../../lessons'
-import { Button } from '../../../shared/components/ui/button'
 import type { LearningSummary } from '../../../shared/api'
 import { track } from '../../../shared/lib/analytics'
 import './learning-guide.css'
@@ -34,6 +33,8 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
   const session = useTestSessionStore((s) => s.session)
   const done = useLessonsStore((s) => userId ? s.byUser[userId] : undefined)
   const tt = useT(lang)
+  const sheenWideId = useId()
+  const sheenNarrowId = useId()
   const resume = resumeRouteState(session, subject.id)
   const [now, setNow] = useState(Date.now)
   const deadline = resume && session ? session.startedAt + testDurationSeconds(session.mode) * 1000 : null
@@ -214,18 +215,32 @@ export function LearningGuide({ summary, mistakesCount = 0 }: {
             </div>
             {plan.kind === 'completed' && <CheckCircle2 size={19} className="shrink-0 text-psuccess" aria-label={tt('pathDone')} />}
           </div>
-          <Button
+          <button
             type="button"
-            variant="primary"
-            size="lg"
-            block
-            sheen
             data-testid="brilliant-start-button"
             onClick={start}
-            className="mt-4"
+            className={`home-cmap-start ${interactive}`}
           >
-            {actionLabel}
-          </Button>
+            <span className="home-cmap-start-sheen" aria-hidden="true">
+              <span className="home-cmap-start-sheen-mover">
+                <svg viewBox="0 0 150 56" width="150" height="56" fill="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id={sheenWideId} x1="100.5" y1="-58.6328" x2="100.5" y2="91.3672" gradientUnits="userSpaceOnUse">
+                      <stop offset="27%" stopColor="#f5efff" />
+                      <stop offset="71%" stopColor="#fff" stopOpacity="0" />
+                    </linearGradient>
+                    <linearGradient id={sheenNarrowId} x1="140.826" y1="-28.1328" x2="140.826" y2="121.8672" gradientUnits="userSpaceOnUse">
+                      <stop offset="8%" stopColor="#f5efff" />
+                      <stop offset="57%" stopColor="#fff" stopOpacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="75" y="-58.6328" width="51" height="150" transform="rotate(30 75 -58.6328)" fill={`url(#${sheenWideId})`} opacity=".4" />
+                  <rect x="127.826" y="-28.1328" width="26" height="150" transform="rotate(30 127.826 -28.1328)" fill={`url(#${sheenNarrowId})`} opacity=".4" />
+                </svg>
+              </span>
+            </span>
+            <span className="home-cmap-start-label">{actionLabel}</span>
+          </button>
 
 
 
