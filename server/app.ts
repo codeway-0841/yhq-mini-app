@@ -82,7 +82,8 @@ export function createApp() {
   // uchun global json parser'dan OLDIN raw ushlanadi (req._body flag keyingi
   // parser'larni o'tkazib yuboradi — admin/questions pattern'i bilan bir xil).
   // LiveKit webhook'lar `application/webhook+json` yuboradi (application/json EMAS).
-  app.use('/api/live/webhook', express.raw({ type: ['application/json', 'application/webhook+json'], limit: '100kb' }))  app.use('/api/math-board/recognize', express.json({ limit: '6mb' }))  app.use(express.json({ limit: '300kb' }))
+  app.use('/api/live/webhook', express.raw({ type: ['application/json', 'application/webhook+json'], limit: '100kb' }))
+  app.use(express.json({ limit: '300kb' }))
 
   // Vercel/Render load balancer ortida — req.ip X-Forwarded-For'dan o'qilsin.
   // Bo'lmasa rate limiter barcha foydalanuvchini bitta bucket'ga soladi.
