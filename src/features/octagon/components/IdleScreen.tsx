@@ -13,6 +13,7 @@ import { getDuelHistory, type DuelHistoryRecord } from '../duel-history'
 import { DuelLeaderboardView } from './DuelLeaderboardView'
 import { PageHeader } from '../../../shared/components/ui/page-header'
 import { BossCard } from '../../boss'
+import { BattleRoyaleCard } from '../../royale'
 
 interface IdleScreenProps {
   tt: ReturnType<typeof import('../../../shared/i18n')['useT']>
@@ -504,8 +505,9 @@ export function IdleScreen({
         </button>
       </div>
 
-      {/* Haftalik jang (Boss Battle) — duel kirganda pastda ko'rinadi */}
-      <div className="lg:col-span-12 w-full pt-1">
+      {/* KIVVI Battle Royale (100+ jonli turnir) va Haftalik jang (Boss Battle) */}
+      <div className="lg:col-span-12 w-full pt-1 flex flex-col gap-3">
+        <BattleRoyaleCard />
         <BossCard />
       </div>
     </div>

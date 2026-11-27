@@ -37,6 +37,7 @@ const signsGameChunk       = () => import('./features/signs-game/SignsGamePage')
 const profilChunk          = () => import('./features/profile/Profil')
 const topicsChunk          = () => import('./features/topics/TopicsPage')
 const octagonChunk         = () => import('./features/octagon/OctagonPage')
+const royaleChunk          = () => import('./features/royale/BattleRoyalePage')
 const adminChunk           = () => import('./features/admin/AdminPage')
 const leaderboardChunk     = () => import('./features/leaderboard/LeaderboardPage')
 const xatolarChunk         = () => import('./features/mistakes/XatolarPage')
@@ -79,6 +80,7 @@ const SignsGamePage   = lazy(signsGameChunk)
 const Profil          = lazy(profilChunk)
 const TopicsPage      = lazy(topicsChunk)
 const OctagonPage    = lazy(octagonChunk)
+const BattleRoyalePage = lazy(royaleChunk)
 const AdminPage      = lazy(adminChunk)
 const LessonTransitionHost = lazy(lessonTransitionHostChunk)
 const LeaderboardPage = lazy(leaderboardChunk)
@@ -119,7 +121,7 @@ const routeChunkPrefetchers = [
   // 1-to'lqin (Core tab-root va birlamchi oqimlar — Data Saver / 2G da faqat shular tortiladi):
   testlarChunk, octagonChunk, modesChunk, testPageChunk, profilChunk, biletlarChunk,
   // 2-to'lqin (Asosiy ta'lim va iqtisodiyot sahifalari):
-  topicsChunk, darslikChunk, lessonTransitionHostChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk,
+  topicsChunk, darslikChunk, lessonTransitionHostChunk, xatolarChunk, belgilarChunk, shopChunk, premiumChunk, royaleChunk,
   streakChunk, leaderboardChunk, statistikaChunk, flashcardsChunk,
   searchChunk, signsGameChunk, courseMapChunk, literatureMapChunk, libraryChunk, libraryReaderChunk,
   reviewsChunk,
@@ -401,6 +403,7 @@ export default function App() {
             <Route path="/profil"     element={<Profil />} />
             <Route path="/mavzular"   element={<TopicsPage />} />
             <Route path="/octagon/:duelCode?" element={<OctagonPage />} />
+            <Route path="/royale"     element={<BattleRoyalePage />} />
             <Route path="/reyting"    element={<LeaderboardPage />} />
             <Route path="/xatolar"    element={<XatolarPage />} />
             <Route path="/streak"     element={<StreakPage />} />

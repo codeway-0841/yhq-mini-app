@@ -42,6 +42,15 @@ import {
   handleReaction,
   handleLeaveQueue,
 } from './octagon.engine'
+import {
+  getRoyaleLobbyStatus,
+  getRoyaleStats,
+  handleRoyaleAnswer,
+  handleRoyaleDisconnect,
+  joinRoyale,
+  leaveRoyale,
+  startRoyaleNow,
+} from './royale.engine'
 
 // ── Connection hardening limitlari ─────────────────────────────────────────
 
@@ -81,12 +90,14 @@ let totalMessages = 0
 
 export function getOctagonStats(wssClients: number): Record<string, number> {
   const engineStats = getEngineStats()
+  const royaleStats = getRoyaleStats()
   return {
     clients: wssClients,
     totalConnections,
     totalMessages,
     onlineUsers: connsByUser.size,
     ...engineStats,
+    ...royaleStats,
   }
 }
 
@@ -462,6 +473,63 @@ function parseWsMessage(raw: unknown): Record<string, unknown> | null {
           handleLeaveQueue(state.userId)
           return
         }
+
+        // ── KIVVI Battle Royale (100+ kishilik jonli turnir — coinsiz) ────
+        if (msg.type === 'royale_status') {
+          const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
+            ? String(msg.subjectId)
+            : DEFAULT_SUBJECT_ID
+          send(ws, { type: 'royale_lobby', ...getRoyaleLobbyStatus(subjectId) })
+          return
+        }
+
+        if (msg.type === 'royale_join') {
+          void (async () => {
+            try {
+              let uid = String(msg.userId ?? state.userId ?? '')
+              const name = String(msg.name ?? "Noma'lum").slice(0, MAX_NAME_LEN)
+              if (isAuthEnforced()) {
+                const resolved = state.authed && state.userId ? state.userId : await resolveWsUserId(msg)
+                if (!resolved) {
+                  send(ws, { type: 'error', message: 'auth_failed' })
+                  ws.close(4001, 'Unauthorized')
+                  return
+                }
+                uid = resolved
+              }
+              if (!WS_USER_ID_RE.test(uid)) {
+                send(ws, { type: 'error', message: 'invalid_user' })
+                return
+              }
+              if (!markAuthed(uid)) return
+              const subjectId = SUBJECT_IDS.includes(String(msg.subjectId))
+                ? String(msg.subjectId)
+                : DEFAULT_SUBJECT_ID
+              joinRoyale(ws, uid, name, subjectId)
+            } catch (err) {
+              Sentry.captureException(err, { tags: { ws: 'royale_join' } })
+              send(ws, { type: 'error', message: 'internal_error' })
+            }
+          })()
+          return
+        }
+
+        if (msg.type === 'royale_start_now' && state.userId) {
+          startRoyaleNow(state.userId)
+          return
+        }
+
+        if (msg.type === 'royale_answer' && state.userId) {
+          const round = Number(msg.round)
+          const optionId = String(msg.optionId ?? '')
+          handleRoyaleAnswer(state.userId, round, optionId)
+          return
+        }
+
+        if (msg.type === 'royale_leave' && state.userId) {
+          leaveRoyale(state.userId)
+          return
+        }
       } catch (err) {
         console.error('[octagon.gateway] unhandled sync error in ws.on(message):', err)
         Sentry.captureException(err, { tags: { ws: 'message_sync_error' } })
@@ -481,6 +549,7 @@ function parseWsMessage(raw: unknown): Record<string, unknown> | null {
       if (!userId) return
 
       leaveDuelByUser(userId, ws)
+      handleRoyaleDisconnect(ws, userId)
 
       const matchId = playerToMatch.get(userId)
       if (matchId) {

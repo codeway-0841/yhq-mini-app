@@ -1,4 +1,11 @@
 import type { LeaderboardEntry } from '../api'
+import type {
+  RoyaleFinishedPayload,
+  RoyaleLobbySnapshot,
+  RoyalePhase,
+  RoyalePlayerStatus,
+  RoyaleRevealPayload,
+} from '../../../shared/battle-royale'
 
 /** Duel savol payload'i — server WS orqali (javob kalitisiz).
  *  Client full-bank lookup'siz chizadi (question-bank-protection v2). */
@@ -31,6 +38,12 @@ export type OctagonMsg =
   | { type: 'reaction'; senderId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
   | { type: 'online_players'; players: LeaderboardEntry[]; count: number }
   | { type: 'opp_disconnected' }
+  | ({ type: 'royale_lobby' } & RoyaleLobbySnapshot)
+  | { type: 'royale_state'; roomId: string; subjectId: string; phase: RoyalePhase; countdownSec: number; totalPlayers: number; aliveCount: number; totalRounds: number }
+  | { type: 'royale_question'; roomId: string; round: number; totalRounds: number; questionId: number; timeLimit: number; aliveCount: number; totalPlayers: number; yourStatus: RoyalePlayerStatus; shieldsLeft: number; question?: DuelQuestion | null }
+  | { type: 'royale_answer_ack'; roomId: string; round: number; optionId: string }
+  | ({ type: 'royale_reveal' } & RoyaleRevealPayload)
+  | ({ type: 'royale_finished' } & RoyaleFinishedPayload)
   | { type: 'pong' }
   | { type: 'error'; message: string }
 
@@ -43,6 +56,11 @@ export type OctagonSend =
   | { type: 'answer';      matchId: string; index: number; optionId: string }
   | { type: 'reaction';    matchId: string; kind: 'emoji' | 'phrase' | 'prop'; content: string }
   | { type: 'leave_queue'; userId: string }
+  | { type: 'royale_status'; subjectId: string }
+  | { type: 'royale_join'; userId: string; name: string; subjectId: string; initData?: string; sessionToken?: string }
+  | { type: 'royale_start_now' }
+  | { type: 'royale_answer'; round: number; optionId: string }
+  | { type: 'royale_leave' }
 
 type Listener = (msg: OctagonMsg) => void
 
